@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "phase": "6",
+    "title": "Semantic Reconstruction Synthesis",
+    "timestamp": "2025-12-31T11:06:59.493473"
+  },
+  "findings": {
+    "middle_semantics": {
+      "hub_specific_middles": 1,
+      "slot_restricted_middles": 10,
+      "affix_constrained_middles": 10,
+      "resonance": "YELLOW"
+    },
+    "affix_operators": {
+      "operator_candidates": 6,
+      "functional_clusters": 4,
+      "resonance": "GREEN"
+    },
+    "entry_signatures": {
+      "entry_clusters": 8,
+      "a_specific_middles": 4,
+      "b_specific_middles": 16,
+      "differentiation_strength": "STRONG",
+      "resonance": "GREEN"
+    }
+  },
+  "semantic_model": {
+    "structure": "MIDDLE-CENTRIC",
+    "description": "Semantic meaning primarily carried by middles, with affixes as operators/modifiers",
+    "axes": [
+      {
+        "name": "HUB_ASSOCIATION",
+        "description": "Middles associate with specific hub categories",
+        "evidence": "1 hub-specific middles identified"
+      },
+      {
+        "name": "POSITIONAL_ROLE",
+        "description": "Some middles/affixes are slot-restricted",
+        "evidence": "10 slot-restricted middles"
+      },
+      {
+        "name": "A_VS_B_SEMANTIC_SPACE",
+        "description": "Currier A and B have distinct vocabulary profiles",
+        "evidence": "4 A-specific, 16 B-specific middles"
+      }
+    ],
+    "affix_operators": [
+      {
+        "affix": "ts",
+        "type": "POSITION_MARKER",
+        "behavior": "early_bias",
+        "evidence": "mean_slot=3.95"
+      },
+      {
+        "affix": "of",
+        "type": "POSITION_MARKER",
+        "behavior": "early_bias",
+        "evidence": "mean_slot=3.48"
+      },
+      {
+        "affix": "op",
+        "type": "POSITION_MARKER",
+        "behavior": "early_bias",
+        "evidence": "mean_slot=3.6"
+      },
+      {
+        "affix": "cp",
+        "type": "POSITION_MARKER",
+        "behavior": "early_bias",
+        "evidence": "mean_slot=3.71"
+      },
+      {
+        "affix": "fc",
+        "type": "POSITION_MARKER",
+        "behavior": "early_bias",
+        "evidence": "mean_slot=3.38"
+      }
+    ]
+  },
+  "implications": [
+    "Affixes show systematic positional effects -> operator semantics recoverable",
+    "A vs B show different semantic profiles -> confirms definitional vs applicational split",
+    "Entry clusters exist -> content-structure alignment present"
+  ],
+  "overall_status": "GREEN - Semantic structure is mappable (2/3 GREEN findings)"
+}

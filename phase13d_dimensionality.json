@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "phase": "13D",
+    "title": "Dimensionality Analysis",
+    "timestamp": "2025-12-31T13:47:46.248900"
+  },
+  "pca_variance_explained": {
+    "1_component": 1.0,
+    "2_component": 1.0,
+    "3_component": 1.0,
+    "4_component": 1.0
+  },
+  "optimal_dimensionality": 1,
+  "structure_type": "LINEAR",
+  "axis_characteristics": [
+    {
+      "axis": 1,
+      "variance_explained": 1.0,
+      "dominant_feature": "hub_score",
+      "direction": "negative"
+    }
+  ],
+  "MATCHES_TRIA_PRIMA": "NO",
+  "MATCHES_ELEMENTAL": "NO",
+  "interpretation": "State space exhibits 1-dimensional structure. Does not match classical alchemical ontologies. Primary axes: ['hub_score']"
+}

@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "phase": "N4",
+    "title": "Structural Constraints",
+    "timestamp": "2025-12-31T09:15:15.370015",
+    "dependencies": []
+  },
+  "findings": {
+    "constraints_tested": 6,
+    "compatible_count": 5,
+    "incompatible_count": 1,
+    "constraint_details": [
+      {
+        "constraint": "Position constraints (q first-only)",
+        "observed": "q appears first 98.7% of time",
+        "naibbe_compatible": false,
+        "reasoning": "Random chunking would distribute q across positions"
+      },
+      {
+        "constraint": "Currier A/B separation (14.1% overlap)",
+        "observed": "14.1% vocabulary overlap",
+        "naibbe_compatible": true,
+        "reasoning": "If A and B encrypt different Latin texts, separation would exist"
+      },
+      {
+        "constraint": "Three-part entry structure",
+        "observed": "71.2% method agreement",
+        "naibbe_compatible": true,
+        "reasoning": "Cipher does not affect document structure"
+      },
+      {
+        "constraint": "Heading words as category labels",
+        "observed": "Hub headings shorter (4.0 vs 6.8 chars)",
+        "naibbe_compatible": true,
+        "reasoning": "If plaintext has headings, cipher preserves them"
+      },
+      {
+        "constraint": "B references A (INFINITE asymmetry)",
+        "observed": "809 A words in B body, 0 B-only in A",
+        "naibbe_compatible": true,
+        "reasoning": "Reference structure is plaintext property, survives encryption"
+      },
+      {
+        "constraint": "Extremely low repetition (0.1-0.3%)",
+        "observed": "Trigram repetition < 0.3%",
+        "naibbe_compatible": true,
+        "reasoning": "Verbose cipher with 36 representations REDUCES repetition"
+      }
+    ]
+  },
+  "summary": {
+    "key_results": [
+      "Constraints tested: 6",
+      "Naibbe-compatible: 5",
+      "Naibbe-incompatible: 1"
+    ],
+    "implications": [
+      "Position constraints (q first-only) argue AGAINST Naibbe"
+    ]
+  }
+}

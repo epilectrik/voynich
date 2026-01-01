@@ -1,0 +1,351 @@
+{
+  "timestamp": "2025-12-30T14:02:34.773319",
+  "methodology": "Zodiac phonetic test with control comparison",
+  "zodiac_matches": {
+    "f70r1": {
+      "zodiac_sign": "Pisces",
+      "candidates_tested": 40,
+      "best_constellation_match": {
+        "voynich_word": "ofchon",
+        "target": "fische",
+        "language": "german",
+        "sign": "Pisces",
+        "score": 3.25
+      },
+      "best_month_match": {
+        "voynich_word": "oteodas",
+        "target": "martius",
+        "score": 2.75
+      }
+    },
+    "f70r2": {
+      "zodiac_sign": "Pisces",
+      "candidates_tested": 82,
+      "best_constellation_match": {
+        "voynich_word": "csoeky",
+        "target": "pisces",
+        "language": "latin",
+        "sign": "Pisces",
+        "score": 3.0
+      },
+      "best_month_match": {
+        "voynich_word": "forar",
+        "target": "februar",
+        "score": 3.3
+      }
+    },
+    "f70v1": {
+      "zodiac_sign": "Pisces",
+      "candidates_tested": 37,
+      "best_constellation_match": {
+        "voynich_word": "oalcheg",
+        "target": "fische",
+        "language": "german",
+        "sign": "Pisces",
+        "score": 2.69
+      },
+      "best_month_match": {
+        "voynich_word": "oamr",
+        "target": "mars",
+        "score": 3.5
+      }
+    },
+    "f70v2": {
+      "zodiac_sign": "Aries",
+      "candidates_tested": 55,
+      "best_constellation_match": {
+        "voynich_word": "oteosal",
+        "target": "arietis",
+        "language": "latin",
+        "sign": "Aries",
+        "score": 3.25
+      },
+      "best_month_match": {
+        "voynich_word": "otral",
+        "target": "avril",
+        "score": 3.5
+      }
+    },
+    "f71r": {
+      "zodiac_sign": "Taurus",
+      "candidates_tested": 37,
+      "best_constellation_match": {
+        "voynich_word": "o*teor",
+        "target": "toro",
+        "language": "italian",
+        "sign": "Taurus",
+        "score": 4.47
+      },
+      "best_month_match": {
+        "voynich_word": "opalsar",
+        "target": "aprilis",
+        "score": 3.58
+      }
+    },
+    "f71v": {
+      "zodiac_sign": "Taurus",
+      "candidates_tested": 33,
+      "best_constellation_match": {
+        "voynich_word": "oroj",
+        "target": "toro",
+        "language": "italian",
+        "sign": "Taurus",
+        "score": 3.5
+      },
+      "best_month_match": {
+        "voynich_word": "opalar",
+        "target": "aprile",
+        "score": 3.33
+      }
+    },
+    "f72r1": {
+      "zodiac_sign": "Gemini",
+      "candidates_tested": 28,
+      "best_constellation_match": {
+        "voynich_word": "sheolaiin",
+        "target": "zwillinge",
+        "language": "german",
+        "sign": "Gemini",
+        "score": 2.4
+      },
+      "best_month_match": {
+        "voynich_word": "ainam",
+        "target": "maius",
+        "score": 3.17
+      }
+    },
+    "f72r2": {
+      "zodiac_sign": "Cancer",
+      "candidates_tested": 48,
+      "best_constellation_match": {
+        "voynich_word": "chosan",
+        "target": "cancer",
+        "language": "latin",
+        "sign": "Cancer",
+        "score": 3.0
+      },
+      "best_month_match": {
+        "voynich_word": "olcthey",
+        "target": "juillet",
+        "score": 2.53
+      }
+    },
+    "f72r3": {
+      "zodiac_sign": "Leo",
+      "candidates_tested": 75,
+      "best_constellation_match": {
+        "voynich_word": "o*eolaiin",
+        "target": "leone",
+        "language": "italian",
+        "sign": "Leo",
+        "score": 3.96
+      },
+      "best_month_match": {
+        "voynich_word": "ot**o*",
+        "target": "aout",
+        "score": 4.08
+      }
+    },
+    "f72v1": {
+      "zodiac_sign": "Virgo",
+      "candidates_tested": 50,
+      "best_constellation_match": {
+        "voynich_word": "topar",
+        "target": "virgo",
+        "language": "latin",
+        "sign": "Virgo",
+        "score": 2.5
+      },
+      "best_month_match": {
+        "voynich_word": "ok*s*t*",
+        "target": "agosto",
+        "score": 3.0
+      }
+    },
+    "f72v2": {
+      "zodiac_sign": "Libra",
+      "candidates_tested": 63,
+      "best_constellation_match": {
+        "voynich_word": "alalar",
+        "target": "librae",
+        "language": "latin",
+        "sign": "Libra",
+        "score": 3.33
+      },
+      "best_month_match": {
+        "voynich_word": "okeory",
+        "target": "oktober",
+        "score": 3.02
+      }
+    },
+    "f72v3": {
+      "zodiac_sign": "Scorpio",
+      "candidates_tested": 70,
+      "best_constellation_match": {
+        "voynich_word": "chokory",
+        "target": "scorpio",
+        "language": "latin",
+        "sign": "Scorpio",
+        "score": 2.87
+      },
+      "best_month_match": {
+        "voynich_word": "etoteear",
+        "target": "ottobre",
+        "score": 3.53
+      }
+    },
+    "f73r": {
+      "zodiac_sign": "Sagittarius",
+      "candidates_tested": 39,
+      "best_constellation_match": {
+        "voynich_word": "shetch",
+        "target": "schutze",
+        "language": "german",
+        "sign": "Sagittarius",
+        "score": 3.16
+      },
+      "best_month_match": {
+        "voynich_word": "cheteeeor",
+        "target": "december",
+        "score": 2.69
+      }
+    },
+    "f73v": {
+      "zodiac_sign": "Capricorn",
+      "candidates_tested": 34,
+      "best_constellation_match": {
+        "voynich_word": "otarchor",
+        "target": "capricorni",
+        "language": "latin",
+        "sign": "Capricorn",
+        "score": 2.8
+      },
+      "best_month_match": {
+        "voynich_word": "otedchor",
+        "target": "december",
+        "score": 3.13
+      }
+    }
+  },
+  "control_matches": {
+    "f105r": {
+      "candidates_tested": 75,
+      "best_plant_match": {
+        "voynich_word": "raiis",
+        "target": "iris",
+        "score": 4.47
+      }
+    },
+    "f18r": {
+      "candidates_tested": 18,
+      "best_plant_match": {
+        "voynich_word": "darode",
+        "target": "elder",
+        "score": 3.17
+      }
+    },
+    "f4r": {
+      "candidates_tested": 7,
+      "best_plant_match": {
+        "voynich_word": "shyshol",
+        "target": "hyssop",
+        "score": 3.36
+      }
+    },
+    "f39r": {
+      "candidates_tested": 40,
+      "best_plant_match": {
+        "voynich_word": "okalchem",
+        "target": "chamomile",
+        "score": 3.19
+      }
+    },
+    "f35r": {
+      "candidates_tested": 13,
+      "best_plant_match": {
+        "voynich_word": "dainl",
+        "target": "dill",
+        "score": 3.3
+      }
+    },
+    "f32v": {
+      "candidates_tested": 15,
+      "best_plant_match": {
+        "voynich_word": "cphos",
+        "target": "hyssop",
+        "score": 3.03
+      }
+    },
+    "f21v": {
+      "candidates_tested": 13,
+      "best_plant_match": {
+        "voynich_word": "ckholy",
+        "target": "hyssop",
+        "score": 3.2
+      }
+    },
+    "f17r": {
+      "candidates_tested": 30,
+      "best_plant_match": {
+        "voynich_word": "fshody",
+        "target": "hyssop",
+        "score": 3.2
+      }
+    },
+    "f112r": {
+      "candidates_tested": 90,
+      "best_plant_match": {
+        "voynich_word": "alkeear",
+        "target": "elder",
+        "score": 3.21
+      }
+    },
+    "f93r": {
+      "candidates_tested": 73,
+      "best_plant_match": {
+        "voynich_word": "olkeer",
+        "target": "elder",
+        "score": 3.5
+      }
+    },
+    "f15r": {
+      "candidates_tested": 17,
+      "best_plant_match": {
+        "voynich_word": "chtols",
+        "target": "hyssop",
+        "score": 3.2
+      }
+    },
+    "f100r": {
+      "candidates_tested": 69,
+      "best_plant_match": {
+        "voynich_word": "areso",
+        "target": "iris",
+        "score": 3.8
+      }
+    }
+  },
+  "comparison": {
+    "zodiac_statistics": {
+      "folios_tested": 14,
+      "average_best_score": 3.16,
+      "max_score": 4.47,
+      "high_matches_gte_3": 9,
+      "very_high_matches_gte_4": 1
+    },
+    "control_statistics": {
+      "folios_tested": 12,
+      "average_best_score": 3.39,
+      "max_score": 4.47,
+      "high_matches_gte_3": 12,
+      "very_high_matches_gte_4": 1
+    },
+    "comparison": {
+      "avg_difference": -0.23,
+      "zodiac_better": false,
+      "significance": "Not significant"
+    },
+    "verdict": "INCONCLUSIVE",
+    "explanation": "Mixed results"
+  }
+}

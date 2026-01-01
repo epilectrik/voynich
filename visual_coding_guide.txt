@@ -1,0 +1,167 @@
+======================================================================
+VISUAL CODING GUIDE FOR VOYNICH PILOT STUDY
+======================================================================
+
+This guide accompanies visual_data_template.csv
+Code each folio by entering values in the corresponding column.
+
+CRITICAL: Use UNDETERMINED when:
+  - Damage obscures the feature
+  - Artistic ambiguity prevents clear determination
+  - Feature falls between categories
+
+DO NOT use UNDETERMINED when:
+  - Feature is clearly absent (use ABSENT or NO)
+  - You're uncertain about identification (make best judgment)
+
+======================================================================
+FEATURE DEFINITIONS
+======================================================================
+
+--- root_present ---
+Description: Any root structure visible below stem/soil line
+Values: PRESENT, ABSENT, UNDETERMINED
+
+--- root_type ---
+Description: Root morphology type
+Values: NONE, SINGLE_TAPROOT, BRANCHING, BULBOUS, FIBROUS, UNDETERMINED
+Only code if: root_present=PRESENT
+
+--- root_prominence ---
+Description: <20% / 20-40% / >40% of plant height
+Values: SMALL, MEDIUM, LARGE, NA, UNDETERMINED
+Only code if: root_present=PRESENT
+
+--- root_color_distinct ---
+Description: Root colored differently from stem
+Values: YES, NO, UNDETERMINED
+Only code if: root_present=PRESENT
+
+--- stem_count ---
+Description: Number of main stems from root/base
+Values: 1, 2, 3_PLUS, UNDETERMINED
+
+--- stem_type ---
+Description: Predominant stem pattern
+Values: STRAIGHT, CURVED, BRANCHING, TWINING, UNDETERMINED
+
+--- stem_thickness ---
+Description: Line-like / visible width / trunk-like
+Values: THIN, MEDIUM, THICK, UNDETERMINED
+
+--- stem_color_distinct ---
+Description: Stem differs from leaves in color
+Values: YES, NO, UNDETERMINED
+
+--- leaf_present ---
+Description: Any leaf structures visible
+Values: PRESENT, ABSENT, UNDETERMINED
+
+--- leaf_count_category ---
+Description: Count of distinct leaves
+Values: NONE, FEW_1_5, MEDIUM_6_15, MANY_16_PLUS, UNDETERMINED
+Only code if: leaf_present=PRESENT
+
+--- leaf_shape ---
+Description: Predominant leaf shape
+Values: ROUND, OVAL, LANCEOLATE, LOBED, COMPOUND, SERRATED, NEEDLE, MIXED, UNDETERMINED
+Only code if: leaf_present=PRESENT
+
+--- leaf_arrangement ---
+Description: Leaf positioning pattern
+Values: ALTERNATE, OPPOSITE, BASAL, WHORLED, SCATTERED, NA, UNDETERMINED
+Only code if: leaf_present=PRESENT
+
+--- leaf_size_relative ---
+Description: Relative to overall plant
+Values: SMALL, MEDIUM, LARGE, MIXED, UNDETERMINED
+Only code if: leaf_present=PRESENT
+
+--- leaf_color_uniform ---
+Description: Single color vs multiple
+Values: YES, NO, UNDETERMINED
+Only code if: leaf_present=PRESENT
+
+--- flower_present ---
+Description: Any flower/bud visible
+Values: PRESENT, ABSENT, UNDETERMINED
+
+--- flower_count ---
+Description: Count of distinct flowers
+Values: NONE, 1, 2_5, 6_PLUS, UNDETERMINED
+Only code if: flower_present=PRESENT
+
+--- flower_position ---
+Description: Where flowers appear on plant
+Values: NONE, TERMINAL, AXILLARY, THROUGHOUT, UNDETERMINED
+Only code if: flower_present=PRESENT
+
+--- flower_color_distinct ---
+Description: Flower differs from leaves in color
+Values: YES, NO, UNDETERMINED
+Only code if: flower_present=PRESENT
+
+--- flower_shape ---
+Description: Flower structure type
+Values: NONE, SIMPLE, COMPOUND, RADIAL, IRREGULAR, UNDETERMINED
+Only code if: flower_present=PRESENT
+
+--- plant_count ---
+Description: Distinct plants on folio
+Values: 1, 2, 3_PLUS, UNDETERMINED
+
+--- container_present ---
+Description: Plant in pot/container
+Values: PRESENT, ABSENT, UNDETERMINED
+
+--- plant_symmetry ---
+Description: Left-right mirror symmetry
+Values: SYMMETRIC, ASYMMETRIC, UNDETERMINED
+
+--- overall_complexity ---
+Description: <5 / 5-15 / >15 distinct elements
+Values: SIMPLE, MODERATE, COMPLEX, UNDETERMINED
+NOTE: Compound feature - not single visual dimension
+
+--- identifiable_impression ---
+Description: Looks like a real plant
+Values: YES, NO, UNCERTAIN
+NOTE: Subjective compound judgment
+
+--- drawing_completeness ---
+Description: Drawing condition
+Values: COMPLETE, PARTIAL, FRAGMENTARY, UNDETERMINED
+
+======================================================================
+DECISION RULES
+======================================================================
+
+BRANCHING vs FIBROUS root:
+  BRANCHING: 2+ distinct thick branches
+  FIBROUS: Many thin similar roots
+
+LOBED vs COMPOUND leaf:
+  LOBED: Single leaf with deep indentations >25%
+  COMPOUND: Multiple distinct leaflets
+
+SERRATED vs LOBED:
+  SERRATED: Shallow teeth <25% into leaf
+  LOBED: Deep cuts >25%
+
+SIMPLE vs MODERATE complexity:
+  SIMPLE: <5 distinct elements
+  MODERATE: 5-15 elements
+  COMPLEX: >15 elements
+
+TERMINAL vs AXILLARY flower:
+  TERMINAL: At stem tips
+  AXILLARY: At leaf/stem junction
+
+======================================================================
+MANUSCRIPT ACCESS
+======================================================================
+
+Yale Digital Library: https://brbl-dl.library.yale.edu/vufind/Record/3519597
+Folio naming: 'f38r' = folio 38 recto, 'f38v' = folio 38 verso
+
+======================================================================

@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "phase": "21D",
+    "title": "Recipe Comparison Matrix",
+    "timestamp": "2025-12-31T17:59:51.691284"
+  },
+  "dimensions": [
+    "loop_depth",
+    "dominant_cycle",
+    "threshold_diversity",
+    "hold_transition_ratio",
+    "stability_emphasis",
+    "recovery_aggressiveness",
+    "kernel_k_density",
+    "kernel_h_density",
+    "kernel_e_density",
+    "hazard_proximity",
+    "tempo",
+    "complexity_score"
+  ],
+  "matrix": {
+    "recipe_5": {
+      "recipe_id": 5,
+      "member_count": 1,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "MEDIUM",
+      "hold_transition_ratio": 57.0,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "LOW",
+      "kernel_k_density": 0.1,
+      "kernel_h_density": 0.3,
+      "kernel_e_density": 0.0,
+      "hazard_proximity": "MODERATE",
+      "tempo": "FAST",
+      "complexity_score": 11
+    },
+    "recipe_7": {
+      "recipe_id": 7,
+      "member_count": 1,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "MEDIUM",
+      "hold_transition_ratio": 45.2,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "LOW",
+      "kernel_k_density": 0.0,
+      "kernel_h_density": 0.3,
+      "kernel_e_density": 0.0,
+      "hazard_proximity": "MODERATE",
+      "tempo": "FAST",
+      "complexity_score": 11
+    },
+    "recipe_6": {
+      "recipe_id": 6,
+      "member_count": 1,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "LOW",
+      "hold_transition_ratio": 99.9,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "LOW",
+      "kernel_k_density": 0.3,
+      "kernel_h_density": 0.3,
+      "kernel_e_density": 0.0,
+      "hazard_proximity": "LOW",
+      "tempo": "FAST",
+      "complexity_score": 11
+    },
+    "recipe_8": {
+      "recipe_id": 8,
+      "member_count": 1,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "HIGH",
+      "hold_transition_ratio": 46.8,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "LOW",
+      "kernel_k_density": 0.1,
+      "kernel_h_density": 0.3,
+      "kernel_e_density": 0.0,
+      "hazard_proximity": "MODERATE",
+      "tempo": "FAST",
+      "complexity_score": 11
+    },
+    "recipe_2": {
+      "recipe_id": 2,
+      "member_count": 40,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "LOW",
+      "hold_transition_ratio": 99.9,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "LOW",
+      "kernel_k_density": 0.3,
+      "kernel_h_density": 0.4,
+      "kernel_e_density": 0.0,
+      "hazard_proximity": "LOW",
+      "tempo": "SLOW",
+      "complexity_score": 16
+    },
+    "recipe_3": {
+      "recipe_id": 3,
+      "member_count": 12,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "HIGH",
+      "hold_transition_ratio": 4.9,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "LOW",
+      "kernel_k_density": 0.1,
+      "kernel_h_density": 0.3,
+      "kernel_e_density": 0.0,
+      "hazard_proximity": "MODERATE",
+      "tempo": "MEDIUM",
+      "complexity_score": 16
+    },
+    "recipe_4": {
+      "recipe_id": 4,
+      "member_count": 4,
+      "loop_depth": 1,
+      "dominant_cycle": 4,
+      "threshold_diversity": "HIGH",
+      "hold_transition_ratio": 2.5,
+      "stability_emphasis": "LOW",
+      "recovery_aggressiveness": "MODERATE",
+      "kernel_k_density": 0.1,
+      "kernel_h_density": 0.3,
+      "kernel_e_density": 0.1,
+      "hazard_proximity": "MODERATE",
+      "tempo": "FAST",
+      "complexity_score": 16
+    },
+    "recipe_1": {
+      "recipe_id": 1,
+      "member_count": 3,
+      "loop_depth": 1,
+      "dominant_cycle": 3,
+      "threshold_diversity": "HIGH",
+      "hold_transition_ratio": 1.9,
+      "stability_emphasis": "HIGH",
+      "recovery_aggressiveness": "HIGH",
+      "kernel_k_density": 0.0,
+      "kernel_h_density": 0.2,
+      "kernel_e_density": 0.3,
+      "hazard_proximity": "MODERATE",
+      "tempo": "FAST",
+      "complexity_score": 16
+    }
+  },
+  "analysis": {
+    "clusters_by_tempo": {
+      "FAST": [
+        5,
+        7,
+        6,
+        8,
+        4,
+        1
+      ],
+      "SLOW": [
+        2
+      ],
+      "MEDIUM": [
+        3
+      ]
+    },
+    "complexity_ordering": [
+      5,
+      7,
+      6,
+      8,
+      2,
+      3,
+      4,
+      1
+    ],
+    "variant_groups": [
+      {
+        "cycle": 4,
+        "recipes": [
+          5,
+          7,
+          6,
+          8,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "most_distinct": 2,
+    "most_similar_pair": [
+      5,
+      7
+    ]
+  },
+  "STRUCTURAL_DIVERSITY": "HIGH"
+}

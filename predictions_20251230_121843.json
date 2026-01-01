@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-12-30T12:18:43.387727",
+  "methodology": "Conservative category labels, pre-registered predictions",
+  "folios": {
+    "f5r": {
+      "expected_dominant_prefix": "PLANT",
+      "expected_prefix_ratio": 0.3,
+      "expected_process_ratio": 0.1,
+      "expected_domain": "botanical/medicinal plants",
+      "illustration": "Large plant with roots and multiple leaves"
+    },
+    "f70r": {
+      "expected_dominant_prefix": "TIME",
+      "expected_prefix_ratio": 0.25,
+      "expected_process_ratio": 0.05,
+      "expected_domain": "astronomical/timing content",
+      "illustration": "Circular zodiac diagram with figures"
+    },
+    "f89r": {
+      "expected_dominant_prefix": "PLANT",
+      "expected_prefix_ratio": 0.2,
+      "expected_process_ratio": 0.15,
+      "expected_domain": "preparation instructions",
+      "illustration": "Short paragraphs with star markers"
+    }
+  }
+}

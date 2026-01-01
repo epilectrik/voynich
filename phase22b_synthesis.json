@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "phase": "22B",
+    "title": "Control-Signature Extraction & Process Class Analysis",
+    "timestamp": "2025-12-31T21:15:00.000000",
+    "status": "FROZEN"
+  },
+  "FROZEN_CONCLUSION": {
+    "statement": "The Voynich Manuscript encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, using universal 2-cycle regulation and hazard-aware ordering.",
+    "frozen_date": "2025-12-31",
+    "confidence": "HIGH",
+    "supporting_evidence": [
+      "Universal 2-cycle structure (CV=0.00 across 83 folios)",
+      "Kernel dominance k in 100% of folios",
+      "High hazard density (mean 0.58) with all 5 failure classes represented",
+      "Family coherence F-ratio 2.54 (HIGH discriminability)",
+      "Continuous closed-loop control: PLAUSIBLE (only non-excluded process class)",
+      "Mean 106.7 cycles per folio (cyclic operation confirmed)",
+      "Terminal state STATE-C in 57.8% of folios (stability-seeking)"
+    ],
+    "structural_invariants": [
+      {
+        "property": "dominant_cycle_order",
+        "value": 2,
+        "cv": 0.0,
+        "interpretation": "Universal 2-cycle regulation"
+      },
+      {
+        "property": "intervention_diversity",
+        "value": 5.94,
+        "cv": 0.04,
+        "interpretation": "Fixed operational vocabulary"
+      },
+      {
+        "property": "kernel_distance_mean",
+        "value": 1.38,
+        "cv": 0.05,
+        "interpretation": "Kernel-centric operation"
+      }
+    ],
+    "excluded_process_classes": [
+      "Mechanical timing systems",
+      "Astronomical/calendrical",
+      "Biological cultivation",
+      "Open-loop control"
+    ],
+    "plausible_process_classes": [
+      "Continuous closed-loop control",
+      "Discrete batch processing"
+    ]
+  },
+  "QUANTITATIVE_SUMMARY": {
+    "folios_analyzed": 83,
+    "total_instructions": 75248,
+    "signature_dimensions": 19,
+    "invariants_detected": 3,
+    "outliers_detected": 15,
+    "family_f_ratio": 2.54,
+    "optimal_clusters": 2,
+    "silhouette_score": 0.255,
+    "null_models_computed": 5
+  },
+  "KEY_METRICS": {
+    "mean_cycle_count": 106.73,
+    "mean_link_density": 0.38,
+    "mean_hazard_density": 0.58,
+    "mean_kernel_contact_ratio": 0.62,
+    "reset_ratio": 0.036,
+    "terminal_statec_ratio": 0.578
+  },
+  "VALIDATION_CHECKLIST": {
+    "coverage": "83/83 folios (100%)",
+    "completeness": "All dimensions computed, nulls documented",
+    "consistency": "Same algorithm applied to all folios",
+    "reproducibility": "All methods documented in metadata",
+    "null_comparison": "5 shuffled baselines computed",
+    "semantic_quarantine": "No physical/metaphorical language in outputs"
+  },
+  "NEXT_PHASE": "Domain expert inspection of recipe structure and historical comparison"
+}

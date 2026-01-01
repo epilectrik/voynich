@@ -1,0 +1,139 @@
+{
+  "folio": "f57r",
+  "total_tokens": 258,
+  "hazard_contacts": {
+    "PHASE_ORDERING": [
+      6,
+      7,
+      15,
+      16,
+      25,
+      26,
+      39,
+      40,
+      50,
+      51,
+      61,
+      62,
+      129,
+      130,
+      138,
+      139,
+      147,
+      148
+    ],
+    "COMPOSITION_JUMP": [
+      27,
+      28,
+      84,
+      85,
+      179,
+      180,
+      187,
+      188,
+      191,
+      192,
+      193,
+      195,
+      196,
+      206,
+      207,
+      216,
+      217,
+      225,
+      226
+    ],
+    "RATE_MISMATCH": [
+      52,
+      53,
+      181,
+      189,
+      197
+    ]
+  },
+  "navigation_sequences": [
+    {
+      "positions": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "length": 4
+    },
+    {
+      "positions": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "length": 4
+    },
+    {
+      "positions": [
+        179,
+        180,
+        181
+      ],
+      "length": 3
+    },
+    {
+      "positions": [
+        187,
+        188,
+        189
+      ],
+      "length": 3
+    },
+    {
+      "positions": [
+        191,
+        192,
+        193
+      ],
+      "length": 3
+    },
+    {
+      "positions": [
+        195,
+        196,
+        197
+      ],
+      "length": 3
+    }
+  ],
+  "positional_distribution": {
+    "PHASE_ORDERING": {
+      "Q1": 12,
+      "Q2": 1,
+      "Q3": 5,
+      "Q4": 0
+    },
+    "COMPOSITION_JUMP": {
+      "Q1": 2,
+      "Q2": 2,
+      "Q3": 7,
+      "Q4": 8
+    },
+    "CONTAINMENT_TIMING": {
+      "Q1": 0,
+      "Q2": 0,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "ENERGY_OVERSHOOT": {
+      "Q1": 0,
+      "Q2": 0,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "RATE_MISMATCH": {
+      "Q1": 2,
+      "Q2": 0,
+      "Q3": 2,
+      "Q4": 1
+    }
+  },
+  "dominant_hazard": "COMPOSITION_JUMP"
+}

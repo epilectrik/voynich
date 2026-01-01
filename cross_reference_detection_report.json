@@ -1,0 +1,2555 @@
+{
+  "metadata": {
+    "analysis": "Phase 17 Task 6: Cross-Reference Detection",
+    "timestamp": "2025-12-30T15:42:19.311893",
+    "currier_a_entries": 114,
+    "currier_b_entries": 83
+  },
+  "shared_vocabulary_analysis": {
+    "total_shared": 1497,
+    "only_in_a": 3473,
+    "only_in_b": 5668,
+    "overlap_jaccard": 0.1407,
+    "a_heading_appears_in_b_body": {
+      "count": 12,
+      "examples": [
+        {
+          "word": "oeeeos",
+          "a_total": 1,
+          "b_total": 1,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "dl",
+          "a_total": 4,
+          "b_total": 16,
+          "a_part1_frac": 0.75,
+          "b_part1_frac": 0.312,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "oldar",
+          "a_total": 3,
+          "b_total": 4,
+          "a_part1_frac": 0.667,
+          "b_part1_frac": 0.25,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "rairal",
+          "a_total": 1,
+          "b_total": 1,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "ksheey",
+          "a_total": 1,
+          "b_total": 2,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "pchear",
+          "a_total": 1,
+          "b_total": 1,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "lchedy",
+          "a_total": 1,
+          "b_total": 119,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.286,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "oes",
+          "a_total": 1,
+          "b_total": 1,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "loeees",
+          "a_total": 1,
+          "b_total": 1,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "oltchey",
+          "a_total": 1,
+          "b_total": 2,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "qotchar",
+          "a_total": 4,
+          "b_total": 1,
+          "a_part1_frac": 0.75,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        },
+        {
+          "word": "salo",
+          "a_total": 1,
+          "b_total": 1,
+          "a_part1_frac": 1.0,
+          "b_part1_frac": 0.0,
+          "a_in_part1": true,
+          "b_in_body": true
+        }
+      ]
+    },
+    "shared_word_sample": [
+      {
+        "word": "cphoal",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 0.0,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "tsho",
+        "a_total": 5,
+        "b_total": 2,
+        "a_part1_frac": 0.4,
+        "b_part1_frac": 0.5,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "shar",
+        "a_total": 12,
+        "b_total": 27,
+        "a_part1_frac": 0.583,
+        "b_part1_frac": 0.148,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "chokal",
+        "a_total": 6,
+        "b_total": 2,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 1.0,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "okolchy",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 1.0,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "oeeeos",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 1.0,
+        "b_part1_frac": 0.0,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "dl",
+        "a_total": 4,
+        "b_total": 16,
+        "a_part1_frac": 0.75,
+        "b_part1_frac": 0.312,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "oldar",
+        "a_total": 3,
+        "b_total": 4,
+        "a_part1_frac": 0.667,
+        "b_part1_frac": 0.25,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "pshol",
+        "a_total": 3,
+        "b_total": 2,
+        "a_part1_frac": 0.333,
+        "b_part1_frac": 0.5,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "ockhody",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 1.0,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "okos",
+        "a_total": 3,
+        "b_total": 2,
+        "a_part1_frac": 0.333,
+        "b_part1_frac": 1.0,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "rairal",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 1.0,
+        "b_part1_frac": 0.0,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "oiin",
+        "a_total": 14,
+        "b_total": 28,
+        "a_part1_frac": 0.357,
+        "b_part1_frac": 0.286,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "chokaiin",
+        "a_total": 10,
+        "b_total": 16,
+        "a_part1_frac": 0.4,
+        "b_part1_frac": 0.312,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "olr",
+        "a_total": 1,
+        "b_total": 8,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 0.125,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "qotyshey",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 0.0,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "okchey",
+        "a_total": 13,
+        "b_total": 22,
+        "a_part1_frac": 0.154,
+        "b_part1_frac": 0.364,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "kody",
+        "a_total": 3,
+        "b_total": 7,
+        "a_part1_frac": 0.333,
+        "b_part1_frac": 0.286,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "oeees",
+        "a_total": 5,
+        "b_total": 2,
+        "a_part1_frac": 0.6,
+        "b_part1_frac": 0.0,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "qotyl",
+        "a_total": 1,
+        "b_total": 2,
+        "a_part1_frac": 1.0,
+        "b_part1_frac": 0.5,
+        "a_in_part1": true,
+        "b_in_body": false
+      },
+      {
+        "word": "dcheos",
+        "a_total": 1,
+        "b_total": 1,
+        "a_part1_frac": 1.0,
+        "b_part1_frac": 1.0,
+        "a_in_part1": true,
+        "b_in_body": false
+      },
+      {
+        "word": "pchor",
+        "a_total": 7,
+        "b_total": 7,
+        "a_part1_frac": 0.714,
+        "b_part1_frac": 0.429,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "chckhhy",
+        "a_total": 3,
+        "b_total": 5,
+        "a_part1_frac": 0.667,
+        "b_part1_frac": 0.4,
+        "a_in_part1": true,
+        "b_in_body": true
+      },
+      {
+        "word": "tcheody",
+        "a_total": 3,
+        "b_total": 3,
+        "a_part1_frac": 0.333,
+        "b_part1_frac": 0.333,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "acthy",
+        "a_total": 1,
+        "b_total": 4,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 0.0,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "keody",
+        "a_total": 6,
+        "b_total": 17,
+        "a_part1_frac": 0.167,
+        "b_part1_frac": 0.294,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "chokody",
+        "a_total": 2,
+        "b_total": 1,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 1.0,
+        "a_in_part1": false,
+        "b_in_body": false
+      },
+      {
+        "word": "shory",
+        "a_total": 6,
+        "b_total": 1,
+        "a_part1_frac": 0.5,
+        "b_part1_frac": 0.0,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "olo",
+        "a_total": 3,
+        "b_total": 4,
+        "a_part1_frac": 0.333,
+        "b_part1_frac": 0.25,
+        "a_in_part1": false,
+        "b_in_body": true
+      },
+      {
+        "word": "ly",
+        "a_total": 2,
+        "b_total": 14,
+        "a_part1_frac": 0.0,
+        "b_part1_frac": 0.357,
+        "a_in_part1": false,
+        "b_in_body": true
+      }
+    ]
+  },
+  "heading_words_in_b": {
+    "a_heading_candidates": 30,
+    "appear_in_b": 24,
+    "appear_in_b_body": 17,
+    "cross_reference_rate": 0.567,
+    "details": {
+      "shod": {
+        "total_in_b": 7,
+        "b_part1": 3,
+        "b_part2": 2,
+        "b_part3": 2,
+        "b_body_fraction": 0.571,
+        "appears_in_b_body": true,
+        "b_folios": 6
+      },
+      "odain": {
+        "total_in_b": 15,
+        "b_part1": 3,
+        "b_part2": 2,
+        "b_part3": 10,
+        "b_body_fraction": 0.8,
+        "appears_in_b_body": true,
+        "b_folios": 12
+      },
+      "octhody": {
+        "total_in_b": 2,
+        "b_part1": 1,
+        "b_part2": 1,
+        "b_part3": 0,
+        "b_body_fraction": 0.5,
+        "appears_in_b_body": false,
+        "b_folios": 2
+      },
+      "ychy": {
+        "total_in_b": 1,
+        "b_part1": 0,
+        "b_part2": 1,
+        "b_part3": 0,
+        "b_body_fraction": 1.0,
+        "appears_in_b_body": true,
+        "b_folios": 1
+      },
+      "qotchar": {
+        "total_in_b": 1,
+        "b_part1": 0,
+        "b_part2": 0,
+        "b_part3": 1,
+        "b_body_fraction": 1.0,
+        "appears_in_b_body": true,
+        "b_folios": 1
+      },
+      "rar": {
+        "total_in_b": 29,
+        "b_part1": 7,
+        "b_part2": 12,
+        "b_part3": 10,
+        "b_body_fraction": 0.759,
+        "appears_in_b_body": true,
+        "b_folios": 20
+      },
+      "dl": {
+        "total_in_b": 16,
+        "b_part1": 5,
+        "b_part2": 6,
+        "b_part3": 5,
+        "b_body_fraction": 0.688,
+        "appears_in_b_body": true,
+        "b_folios": 14
+      },
+      "oral": {
+        "total_in_b": 12,
+        "b_part1": 6,
+        "b_part2": 2,
+        "b_part3": 4,
+        "b_body_fraction": 0.5,
+        "appears_in_b_body": false,
+        "b_folios": 12
+      },
+      "chary": {
+        "total_in_b": 2,
+        "b_part1": 1,
+        "b_part2": 0,
+        "b_part3": 1,
+        "b_body_fraction": 0.5,
+        "appears_in_b_body": false,
+        "b_folios": 2
+      },
+      "qoeol": {
+        "total_in_b": 1,
+        "b_part1": 0,
+        "b_part2": 0,
+        "b_part3": 1,
+        "b_body_fraction": 1.0,
+        "appears_in_b_body": true,
+        "b_folios": 1
+      },
+      "qod": {
+        "total_in_b": 5,
+        "b_part1": 1,
+        "b_part2": 3,
+        "b_part3": 1,
+        "b_body_fraction": 0.8,
+        "appears_in_b_body": true,
+        "b_folios": 5
+      },
+      "opchor": {
+        "total_in_b": 2,
+        "b_part1": 0,
+        "b_part2": 2,
+        "b_part3": 0,
+        "b_body_fraction": 1.0,
+        "appears_in_b_body": true,
+        "b_folios": 2
+      },
+      "okody": {
+        "total_in_b": 7,
+        "b_part1": 4,
+        "b_part2": 2,
+        "b_part3": 1,
+        "b_body_fraction": 0.429,
+        "appears_in_b_body": false,
+        "b_folios": 5
+      },
+      "pcho": {
+        "total_in_b": 2,
+        "b_part1": 0,
+        "b_part2": 2,
+        "b_part3": 0,
+        "b_body_fraction": 1.0,
+        "appears_in_b_body": true,
+        "b_folios": 2
+      },
+      "ytchey": {
+        "total_in_b": 6,
+        "b_part1": 1,
+        "b_part2": 3,
+        "b_part3": 2,
+        "b_body_fraction": 0.833,
+        "appears_in_b_body": true,
+        "b_folios": 5
+      },
+      "ldy": {
+        "total_in_b": 22,
+        "b_part1": 3,
+        "b_part2": 6,
+        "b_part3": 13,
+        "b_body_fraction": 0.864,
+        "appears_in_b_body": true,
+        "b_folios": 18
+      },
+      "cheoky": {
+        "total_in_b": 7,
+        "b_part1": 3,
+        "b_part2": 2,
+        "b_part3": 2,
+        "b_body_fraction": 0.571,
+        "appears_in_b_body": true,
+        "b_folios": 7
+      },
+      "orar": {
+        "total_in_b": 13,
+        "b_part1": 5,
+        "b_part2": 3,
+        "b_part3": 5,
+        "b_body_fraction": 0.615,
+        "appears_in_b_body": true,
+        "b_folios": 13
+      },
+      "tshor": {
+        "total_in_b": 1,
+        "b_part1": 1,
+        "b_part2": 0,
+        "b_part3": 0,
+        "b_body_fraction": 0.0,
+        "appears_in_b_body": false,
+        "b_folios": 1
+      },
+      "chcphy": {
+        "total_in_b": 8,
+        "b_part1": 4,
+        "b_part2": 1,
+        "b_part3": 3,
+        "b_body_fraction": 0.5,
+        "appears_in_b_body": false,
+        "b_folios": 8
+      },
+      "cphar": {
+        "total_in_b": 1,
+        "b_part1": 0,
+        "b_part2": 1,
+        "b_part3": 0,
+        "b_body_fraction": 1.0,
+        "appears_in_b_body": true,
+        "b_folios": 1
+      },
+      "r*": {
+        "total_in_b": 1,
+        "b_part1": 1,
+        "b_part2": 0,
+        "b_part3": 0,
+        "b_body_fraction": 0.0,
+        "appears_in_b_body": false,
+        "b_folios": 1
+      },
+      "qoteody": {
+        "total_in_b": 8,
+        "b_part1": 3,
+        "b_part2": 2,
+        "b_part3": 3,
+        "b_body_fraction": 0.625,
+        "appears_in_b_body": true,
+        "b_folios": 6
+      },
+      "pchor": {
+        "total_in_b": 7,
+        "b_part1": 3,
+        "b_part2": 2,
+        "b_part3": 2,
+        "b_body_fraction": 0.571,
+        "appears_in_b_body": true,
+        "b_folios": 7
+      }
+    },
+    "cross_reference_candidates": [
+      "shod",
+      "odain",
+      "ychy",
+      "qotchar",
+      "rar",
+      "dl",
+      "qoeol",
+      "qod",
+      "opchor",
+      "pcho",
+      "ytchey",
+      "ldy",
+      "cheoky",
+      "orar",
+      "cphar",
+      "qoteody",
+      "pchor"
+    ]
+  },
+  "directional_asymmetry": {
+    "a_part1_vocab_size": 2309,
+    "b_body_vocab_size": 5335,
+    "a_headings_in_b_body": {
+      "count": 809,
+      "exclusive_to_b_body": 249,
+      "examples": [
+        "sar",
+        "shty",
+        "chep",
+        "qokedy",
+        "key",
+        "tsho",
+        "lchey",
+        "akal",
+        "ain",
+        "qokchor",
+        "otar",
+        "arody",
+        "dairal",
+        "kcho",
+        "shar",
+        "opy",
+        "cheodaiin",
+        "ykeol",
+        "chty",
+        "oeeeos"
+      ]
+    },
+    "b_only_in_a_part1": {
+      "count": 0,
+      "examples": []
+    },
+    "a_only_in_b_body": {
+      "count": 0,
+      "examples": []
+    },
+    "asymmetry_ratio": "INF",
+    "interpretation": {
+      "direction": "B_REFERENCES_A",
+      "evidence": "A headings appear in B body 809 times, B-only words in A Part 1: 0"
+    }
+  },
+  "entry_level_correlations": {
+    "b_entries_analyzed": 83,
+    "entries_with_correlation": 83,
+    "mean_max_jaccard": 0.0986,
+    "max_jaccard_found": 0.1412,
+    "top_correlations": [
+      {
+        "b_folio": "f33v",
+        "b_word_count": 125,
+        "top_a_matches": [
+          {
+            "a_folio": "f54v",
+            "jaccard": 0.1412,
+            "shared_words": 24,
+            "shared_examples": [
+              "dol",
+              "cheol",
+              "ar",
+              "oky",
+              "dy",
+              "cthey",
+              "okaiin",
+              "dal",
+              "or",
+              "dam"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.113,
+            "shared_words": 27,
+            "shared_examples": [
+              "sar",
+              "dol",
+              "cheol",
+              "dy",
+              "cthey",
+              "shol",
+              "okaiin",
+              "okar",
+              "dal",
+              "or"
+            ]
+          },
+          {
+            "a_folio": "f27r",
+            "jaccard": 0.1104,
+            "shared_words": 17,
+            "shared_examples": [
+              "otal",
+              "cham",
+              "dar",
+              "dam",
+              "keey",
+              "dy",
+              "cthey",
+              "shol",
+              "dain",
+              "chor"
+            ]
+          },
+          {
+            "a_folio": "f54r",
+            "jaccard": 0.1073,
+            "shared_words": 19,
+            "shared_examples": [
+              "sar",
+              "dol",
+              "oky",
+              "okar",
+              "dal",
+              "or",
+              "dam",
+              "chor",
+              "sh",
+              "chey"
+            ]
+          },
+          {
+            "a_folio": "f8r",
+            "jaccard": 0.1065,
+            "shared_words": 23,
+            "shared_examples": [
+              "dol",
+              "dy",
+              "cthey",
+              "shol",
+              "okar",
+              "or",
+              "dam",
+              "chor",
+              "chy",
+              "dain"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1412
+      },
+      {
+        "b_folio": "f107v",
+        "b_word_count": 552,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1305,
+            "shared_words": 71,
+            "shared_examples": [
+              "shoky",
+              "cheol",
+              "qokaly",
+              "ar",
+              "lchedy",
+              "chol",
+              "qotal",
+              "qokair",
+              "qotaiin",
+              "okeey"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.1119,
+            "shared_words": 60,
+            "shared_examples": [
+              "cheol",
+              "opcheol",
+              "ar",
+              "cheor",
+              "chol",
+              "toy",
+              "qokedy",
+              "okeey",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.106,
+            "shared_words": 62,
+            "shared_examples": [
+              "shoky",
+              "cheol",
+              "qokaly",
+              "ar",
+              "teol",
+              "chol",
+              "cheor",
+              "ytar",
+              "aldy",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1049,
+            "shared_words": 47,
+            "shared_examples": [
+              "shoky",
+              "cheol",
+              "cheor",
+              "chol",
+              "dy",
+              "ain",
+              "shol",
+              "qoy",
+              "okaiin",
+              "otar"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.1006,
+            "shared_words": 48,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "okeey",
+              "oky",
+              "ain",
+              "dy",
+              "oteos",
+              "okar"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1305
+      },
+      {
+        "b_folio": "f86v5",
+        "b_word_count": 420,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1302,
+            "shared_words": 63,
+            "shared_examples": [
+              "shoky",
+              "om",
+              "ar",
+              "chol",
+              "qotal",
+              "os",
+              "qotaiin",
+              "ypar",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.1156,
+            "shared_words": 60,
+            "shared_examples": [
+              "shoky",
+              "qoar",
+              "ykeeshy",
+              "ar",
+              "chol",
+              "ytar",
+              "dy",
+              "okaiin",
+              "otar",
+              "okar"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1091,
+            "shared_words": 42,
+            "shared_examples": [
+              "shoky",
+              "sal",
+              "chol",
+              "os",
+              "dy",
+              "okaiin",
+              "yteey",
+              "otar",
+              "okar",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.1033,
+            "shared_words": 41,
+            "shared_examples": [
+              "sal",
+              "chol",
+              "dy",
+              "shea",
+              "dal",
+              "cheey",
+              "acthy",
+              "or",
+              "kchol",
+              "sheol"
+            ]
+          },
+          {
+            "a_folio": "f54v",
+            "jaccard": 0.1025,
+            "shared_words": 33,
+            "shared_examples": [
+              "sal",
+              "om",
+              "ar",
+              "chol",
+              "oky",
+              "dy",
+              "okaiin",
+              "dal",
+              "or",
+              "ytal"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1302
+      },
+      {
+        "b_folio": "f76r",
+        "b_word_count": 707,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1222,
+            "shared_words": 71,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "lchedy",
+              "chol",
+              "os",
+              "qotaiin",
+              "chaly",
+              "okeey",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.1066,
+            "shared_words": 61,
+            "shared_examples": [
+              "cheedy",
+              "dol",
+              "cheol",
+              "ydaiin",
+              "ar",
+              "cheor",
+              "chol",
+              "qokedy",
+              "as",
+              "okeey"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.1041,
+            "shared_words": 53,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "os",
+              "okeey",
+              "oky"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.1014,
+            "shared_words": 63,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "chaly",
+              "otey",
+              "dalchdy",
+              "aldy",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.0947,
+            "shared_words": 46,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "cheor",
+              "chol",
+              "os",
+              "dy",
+              "ain",
+              "shol"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1222
+      },
+      {
+        "b_folio": "f81r",
+        "b_word_count": 249,
+        "top_a_matches": [
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.1217,
+            "shared_words": 37,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "chol",
+              "okeey",
+              "dy",
+              "shol",
+              "chety",
+              "qokol"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1149,
+            "shared_words": 34,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "chol",
+              "dy",
+              "ain",
+              "shol",
+              "okaiin",
+              "otar"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1139,
+            "shared_words": 46,
+            "shared_examples": [
+              "cheol",
+              "ry",
+              "ar",
+              "chol",
+              "lchedy",
+              "qotal",
+              "qotaiin",
+              "okeey",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f17v",
+            "jaccard": 0.1115,
+            "shared_words": 29,
+            "shared_examples": [
+              "sar",
+              "dol",
+              "chol",
+              "okeey",
+              "dy",
+              "shol",
+              "okaiin",
+              "otar",
+              "okar",
+              "sor"
+            ]
+          },
+          {
+            "a_folio": "f99v",
+            "jaccard": 0.1093,
+            "shared_words": 33,
+            "shared_examples": [
+              "dol",
+              "cheol",
+              "chol",
+              "otey",
+              "dy",
+              "shol",
+              "okaiin",
+              "qokol",
+              "or",
+              "oteol"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1217
+      },
+      {
+        "b_folio": "f78v",
+        "b_word_count": 363,
+        "top_a_matches": [
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1206,
+            "shared_words": 41,
+            "shared_examples": [
+              "sal",
+              "ols",
+              "dol",
+              "cheor",
+              "dy",
+              "ain",
+              "shol",
+              "otar",
+              "okar",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.1073,
+            "shared_words": 38,
+            "shared_examples": [
+              "sal",
+              "dol",
+              "cheor",
+              "okeey",
+              "dy",
+              "shol",
+              "chety",
+              "dal",
+              "teeol",
+              "cheey"
+            ]
+          },
+          {
+            "a_folio": "f17v",
+            "jaccard": 0.1003,
+            "shared_words": 31,
+            "shared_examples": [
+              "dol",
+              "cheor",
+              "okeey",
+              "dy",
+              "shol",
+              "otar",
+              "okar",
+              "dal",
+              "sor",
+              "cheey"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.0987,
+            "shared_words": 45,
+            "shared_examples": [
+              "ar",
+              "lchedy",
+              "okeey",
+              "ain",
+              "dy",
+              "shol",
+              "olkeey",
+              "chety",
+              "okar",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f99v",
+            "jaccard": 0.0935,
+            "shared_words": 33,
+            "shared_examples": [
+              "ols",
+              "dol",
+              "dy",
+              "shol",
+              "dal",
+              "otaly",
+              "or",
+              "qokaiin",
+              "arol",
+              "dam"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1206
+      },
+      {
+        "b_folio": "f94r",
+        "b_word_count": 95,
+        "top_a_matches": [
+          {
+            "a_folio": "f45r",
+            "jaccard": 0.1192,
+            "shared_words": 18,
+            "shared_examples": [
+              "qokaiin",
+              "otal",
+              "qoky",
+              "dar",
+              "qokal",
+              "chol",
+              "kar",
+              "dal",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1082,
+            "shared_words": 25,
+            "shared_examples": [
+              "cheor",
+              "chol",
+              "dy",
+              "okaiin",
+              "otar",
+              "qokol",
+              "okar",
+              "dal",
+              "or",
+              "qokaiin"
+            ]
+          },
+          {
+            "a_folio": "f54v",
+            "jaccard": 0.1018,
+            "shared_words": 17,
+            "shared_examples": [
+              "qokaiin",
+              "aiin",
+              "dar",
+              "dam",
+              "cheor",
+              "chol",
+              "qokal",
+              "okal",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.0943,
+            "shared_words": 23,
+            "shared_examples": [
+              "cheor",
+              "chol",
+              "dy",
+              "qokol",
+              "dal",
+              "or",
+              "kar",
+              "okal",
+              "chy",
+              "chey"
+            ]
+          },
+          {
+            "a_folio": "f37r",
+            "jaccard": 0.0921,
+            "shared_words": 14,
+            "shared_examples": [
+              "qokaiin",
+              "otal",
+              "chol",
+              "daiir",
+              "oky",
+              "dy",
+              "ykaiin",
+              "okaiin",
+              "chy",
+              "daiin"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1192
+      },
+      {
+        "b_folio": "f40r",
+        "b_word_count": 111,
+        "top_a_matches": [
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1174,
+            "shared_words": 27,
+            "shared_examples": [
+              "kchey",
+              "dy",
+              "okaiin",
+              "qokol",
+              "okar",
+              "dal",
+              "kaiin",
+              "or",
+              "daram",
+              "chdy"
+            ]
+          },
+          {
+            "a_folio": "f54v",
+            "jaccard": 0.1078,
+            "shared_words": 18,
+            "shared_examples": [
+              "aiin",
+              "dar",
+              "om",
+              "ar",
+              "qokar",
+              "aim",
+              "dam",
+              "qokal",
+              "okal",
+              "oky"
+            ]
+          },
+          {
+            "a_folio": "f45r",
+            "jaccard": 0.1039,
+            "shared_words": 16,
+            "shared_examples": [
+              "qoky",
+              "dar",
+              "om",
+              "kaiin",
+              "qokal",
+              "kchey",
+              "kar",
+              "oky",
+              "dy",
+              "ykaiin"
+            ]
+          },
+          {
+            "a_folio": "f88r",
+            "jaccard": 0.0969,
+            "shared_words": 22,
+            "shared_examples": [
+              "om",
+              "ar",
+              "oky",
+              "okaiin",
+              "qokol",
+              "dal",
+              "ychey",
+              "or",
+              "tor",
+              "otor"
+            ]
+          },
+          {
+            "a_folio": "f23v",
+            "jaccard": 0.0952,
+            "shared_words": 16,
+            "shared_examples": [
+              "ol",
+              "dar",
+              "ar",
+              "tor",
+              "al",
+              "otor",
+              "dam",
+              "okal",
+              "dy",
+              "okol"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1174
+      },
+      {
+        "b_folio": "f80r",
+        "b_word_count": 610,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1152,
+            "shared_words": 65,
+            "shared_examples": [
+              "cheol",
+              "qotal",
+              "qokair",
+              "qotaiin",
+              "oky",
+              "dy",
+              "olkeey",
+              "chety",
+              "okar",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.0911,
+            "shared_words": 45,
+            "shared_examples": [
+              "sal",
+              "dol",
+              "cheol",
+              "shckhey",
+              "oky",
+              "dy",
+              "cthey",
+              "okar",
+              "rar",
+              "sor"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0873,
+            "shared_words": 49,
+            "shared_examples": [
+              "dol",
+              "cheol",
+              "ydaiin",
+              "qokedy",
+              "oky",
+              "dy",
+              "cthey",
+              "qo",
+              "day",
+              "okar"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0872,
+            "shared_words": 53,
+            "shared_examples": [
+              "cheol",
+              "teol",
+              "otey",
+              "dy",
+              "okaiin",
+              "okar",
+              "otar",
+              "alom",
+              "dal",
+              "cheoly"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.0856,
+            "shared_words": 41,
+            "shared_examples": [
+              "sal",
+              "dol",
+              "cheol",
+              "teol",
+              "dy",
+              "cthey",
+              "qotol",
+              "chety",
+              "dal",
+              "cheey"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1152
+      },
+      {
+        "b_folio": "f103v",
+        "b_word_count": 522,
+        "top_a_matches": [
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.1144,
+            "shared_words": 50,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "cheol",
+              "ar",
+              "chol",
+              "okeey",
+              "oky",
+              "ain",
+              "dy",
+              "keeol"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1054,
+            "shared_words": 55,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "chol",
+              "lchedy",
+              "qotal",
+              "qotaiin",
+              "okeey",
+              "oky",
+              "ain",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f99v",
+            "jaccard": 0.0922,
+            "shared_words": 39,
+            "shared_examples": [
+              "cheol",
+              "chol",
+              "otey",
+              "dy",
+              "shol",
+              "okaiin",
+              "dal",
+              "otaly",
+              "or",
+              "qokaiin"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.0909,
+            "shared_words": 39,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "cheol",
+              "chol",
+              "okeey",
+              "dy",
+              "shol",
+              "chety",
+              "dal",
+              "teeol"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0894,
+            "shared_words": 50,
+            "shared_examples": [
+              "sar",
+              "qoar",
+              "cheol",
+              "ar",
+              "chol",
+              "otey",
+              "dy",
+              "shol",
+              "aram",
+              "okaiin"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1144
+      },
+      {
+        "b_folio": "f104r",
+        "b_word_count": 503,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1132,
+            "shared_words": 67,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "chol",
+              "qotal",
+              "os",
+              "qokair",
+              "qotaiin",
+              "oky",
+              "ain",
+              "olkeey"
+            ]
+          },
+          {
+            "a_folio": "f89v2",
+            "jaccard": 0.0942,
+            "shared_words": 52,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "cheor",
+              "qotal",
+              "okaiin",
+              "okar",
+              "sheos",
+              "dal",
+              "sor",
+              "cheey"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0848,
+            "shared_words": 54,
+            "shared_examples": [
+              "sar",
+              "qoar",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "okaiin",
+              "otar",
+              "okar",
+              "alam"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.0845,
+            "shared_words": 42,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "cheor",
+              "chol",
+              "os",
+              "ain",
+              "okaiin",
+              "otar",
+              "qokol",
+              "okar"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0829,
+            "shared_words": 49,
+            "shared_examples": [
+              "cheedy",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "qokedy",
+              "oky",
+              "ain",
+              "cheodal",
+              "qokol"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1132
+      },
+      {
+        "b_folio": "f107r",
+        "b_word_count": 602,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1131,
+            "shared_words": 70,
+            "shared_examples": [
+              "cheol",
+              "om",
+              "ar",
+              "lchedy",
+              "chol",
+              "qotal",
+              "qotaiin",
+              "acphey",
+              "okeey",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.1024,
+            "shared_words": 67,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "ytar",
+              "aldy",
+              "dy",
+              "pchdy",
+              "shol"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.0902,
+            "shared_words": 48,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "cheor",
+              "chol",
+              "oaiin",
+              "okeey",
+              "dy",
+              "cho",
+              "shol",
+              "qokchey"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0877,
+            "shared_words": 54,
+            "shared_examples": [
+              "cheol",
+              "opcheol",
+              "ar",
+              "cheor",
+              "chol",
+              "qokedy",
+              "okeey",
+              "chedain",
+              "dy",
+              "ain"
+            ]
+          },
+          {
+            "a_folio": "f89v2",
+            "jaccard": 0.0875,
+            "shared_words": 51,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "otaram",
+              "cheor",
+              "qotal",
+              "okeey",
+              "dy",
+              "cho",
+              "okaiin",
+              "okar"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1131
+      },
+      {
+        "b_folio": "f39v",
+        "b_word_count": 175,
+        "top_a_matches": [
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1127,
+            "shared_words": 31,
+            "shared_examples": [
+              "dol",
+              "cheor",
+              "chol",
+              "ain",
+              "dy",
+              "qoy",
+              "okaiin",
+              "otar",
+              "okar",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f54v",
+            "jaccard": 0.109,
+            "shared_words": 23,
+            "shared_examples": [
+              "dol",
+              "ar",
+              "cheor",
+              "chol",
+              "dy",
+              "okaiin",
+              "dal",
+              "or",
+              "qokaiin",
+              "dam"
+            ]
+          },
+          {
+            "a_folio": "f17v",
+            "jaccard": 0.0996,
+            "shared_words": 24,
+            "shared_examples": [
+              "dol",
+              "cheor",
+              "chol",
+              "okeey",
+              "dy",
+              "okaiin",
+              "otar",
+              "okar",
+              "dal",
+              "sor"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.0979,
+            "shared_words": 38,
+            "shared_examples": [
+              "ar",
+              "chol",
+              "okeey",
+              "ain",
+              "dy",
+              "cho",
+              "okar",
+              "dal",
+              "or",
+              "sheky"
+            ]
+          },
+          {
+            "a_folio": "f37r",
+            "jaccard": 0.0964,
+            "shared_words": 19,
+            "shared_examples": [
+              "ar",
+              "chol",
+              "qokchy",
+              "dy",
+              "okaiin",
+              "sor",
+              "or",
+              "qokaiin",
+              "dain",
+              "shor"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1127
+      },
+      {
+        "b_folio": "f106v",
+        "b_word_count": 638,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1124,
+            "shared_words": 75,
+            "shared_examples": [
+              "cheol",
+              "ry",
+              "ar",
+              "lchedy",
+              "chol",
+              "os",
+              "qotaiin",
+              "okeey",
+              "oky",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1028,
+            "shared_words": 58,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "cheol",
+              "chol",
+              "os",
+              "ain",
+              "cthey",
+              "dy",
+              "shol",
+              "okaiin"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.0958,
+            "shared_words": 57,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "cheol",
+              "ar",
+              "chol",
+              "os",
+              "okeey",
+              "oky",
+              "dy",
+              "ain"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0917,
+            "shared_words": 65,
+            "shared_examples": [
+              "sar",
+              "qoar",
+              "cheol",
+              "ry",
+              "ar",
+              "chol",
+              "ytar",
+              "aldy",
+              "dy",
+              "kshar"
+            ]
+          },
+          {
+            "a_folio": "f89v2",
+            "jaccard": 0.0853,
+            "shared_words": 54,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "okeey",
+              "dy",
+              "cthey",
+              "cho",
+              "okaiin",
+              "okar",
+              "sheos",
+              "dal"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1124
+      },
+      {
+        "b_folio": "f82r",
+        "b_word_count": 362,
+        "top_a_matches": [
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1123,
+            "shared_words": 41,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "cheor",
+              "chol",
+              "dy",
+              "okaldy",
+              "qokol",
+              "okar"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1097,
+            "shared_words": 52,
+            "shared_examples": [
+              "cheol",
+              "qokaly",
+              "ar",
+              "ry",
+              "lchedy",
+              "chol",
+              "qotal",
+              "qotaiin",
+              "okeey",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.101,
+            "shared_words": 40,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "shckhey",
+              "okeey",
+              "dy"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.1003,
+            "shared_words": 38,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "cheor",
+              "chol",
+              "okeey",
+              "dy",
+              "qokol",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f102r2",
+            "jaccard": 0.1003,
+            "shared_words": 34,
+            "shared_examples": [
+              "dol",
+              "cheol",
+              "cheor",
+              "chol",
+              "okeey",
+              "qokol",
+              "dal",
+              "qokeol",
+              "sor",
+              "cheey"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1123
+      },
+      {
+        "b_folio": "f81v",
+        "b_word_count": 351,
+        "top_a_matches": [
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1114,
+            "shared_words": 40,
+            "shared_examples": [
+              "sar",
+              "sal",
+              "dol",
+              "cheol",
+              "dy",
+              "shol",
+              "chekal",
+              "okaiin",
+              "yteey",
+              "otar"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0941,
+            "shared_words": 43,
+            "shared_examples": [
+              "cheedy",
+              "dol",
+              "cheol",
+              "ar",
+              "qokedy",
+              "okeey",
+              "oky",
+              "dy",
+              "shol",
+              "sheeky"
+            ]
+          },
+          {
+            "a_folio": "f54v",
+            "jaccard": 0.0936,
+            "shared_words": 28,
+            "shared_examples": [
+              "sal",
+              "dol",
+              "cheol",
+              "ar",
+              "oky",
+              "dy",
+              "okaiin",
+              "yar",
+              "dal",
+              "or"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.0926,
+            "shared_words": 44,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "lchedy",
+              "okeey",
+              "oky",
+              "dy",
+              "shol",
+              "olkeey",
+              "okar",
+              "dal"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0911,
+            "shared_words": 46,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "ar",
+              "teol",
+              "dy",
+              "pchdy",
+              "shol",
+              "okaiin",
+              "otar",
+              "okar"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1114
+      },
+      {
+        "b_folio": "f79r",
+        "b_word_count": 521,
+        "top_a_matches": [
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.1106,
+            "shared_words": 48,
+            "shared_examples": [
+              "shoky",
+              "sal",
+              "dol",
+              "cheol",
+              "cheor",
+              "chol",
+              "os",
+              "dy",
+              "ain",
+              "shol"
+            ]
+          },
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1087,
+            "shared_words": 59,
+            "shared_examples": [
+              "shoky",
+              "cheol",
+              "ry",
+              "ar",
+              "chol",
+              "qotal",
+              "os",
+              "qotaiin",
+              "okeey",
+              "oky"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0988,
+            "shared_words": 57,
+            "shared_examples": [
+              "shoky",
+              "cheol",
+              "ry",
+              "ar",
+              "teol",
+              "chol",
+              "cheor",
+              "otey",
+              "dy",
+              "pchdy"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0979,
+            "shared_words": 52,
+            "shared_examples": [
+              "cheedy",
+              "dol",
+              "cheol",
+              "ry",
+              "ar",
+              "cheor",
+              "chol",
+              "qody",
+              "qokedy",
+              "okeey"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.0931,
+            "shared_words": 42,
+            "shared_examples": [
+              "sal",
+              "dol",
+              "cheol",
+              "teol",
+              "cheor",
+              "chol",
+              "okeey",
+              "dy",
+              "shol",
+              "qokol"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1106
+      },
+      {
+        "b_folio": "f86v6",
+        "b_word_count": 534,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1095,
+            "shared_words": 61,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "qoal",
+              "chol",
+              "qotal",
+              "qotaiin",
+              "oky",
+              "dy",
+              "ain",
+              "shol"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.1017,
+            "shared_words": 60,
+            "shared_examples": [
+              "sar",
+              "cphol",
+              "cheol",
+              "ar",
+              "cheor",
+              "chol",
+              "ytar",
+              "dalor",
+              "dy",
+              "shol"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.0873,
+            "shared_words": 40,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "cheor",
+              "chol",
+              "dy",
+              "ain",
+              "shol",
+              "okaiin",
+              "yteey",
+              "otar"
+            ]
+          },
+          {
+            "a_folio": "f99v",
+            "jaccard": 0.0794,
+            "shared_words": 37,
+            "shared_examples": [
+              "cheol",
+              "chol",
+              "dy",
+              "shol",
+              "okaiin",
+              "qokol",
+              "dal",
+              "or",
+              "qokaiin",
+              "okeeey"
+            ]
+          },
+          {
+            "a_folio": "f99r",
+            "jaccard": 0.0789,
+            "shared_words": 37,
+            "shared_examples": [
+              "sar",
+              "cheol",
+              "chol",
+              "oky",
+              "dy",
+              "ain",
+              "shol",
+              "qotol",
+              "qokol",
+              "okar"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1095
+      },
+      {
+        "b_folio": "f108r",
+        "b_word_count": 580,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1068,
+            "shared_words": 61,
+            "shared_examples": [
+              "okeeam",
+              "cheol",
+              "om",
+              "ar",
+              "qoal",
+              "lchedy",
+              "chol",
+              "qotal",
+              "qotaiin",
+              "key"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0927,
+            "shared_words": 52,
+            "shared_examples": [
+              "cheedy",
+              "cheol",
+              "ar",
+              "chol",
+              "qody",
+              "qokedy",
+              "key",
+              "okeey",
+              "chedain",
+              "ain"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.084,
+            "shared_words": 42,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "chol",
+              "okeey",
+              "ain",
+              "cthey",
+              "okar",
+              "qokeol",
+              "chockhey",
+              "or"
+            ]
+          },
+          {
+            "a_folio": "f99v",
+            "jaccard": 0.0839,
+            "shared_words": 40,
+            "shared_examples": [
+              "qokeo",
+              "cheol",
+              "olal",
+              "chol",
+              "shol",
+              "okaiin",
+              "qokol",
+              "dal",
+              "qokeol",
+              "or"
+            ]
+          },
+          {
+            "a_folio": "f101r1",
+            "jaccard": 0.0806,
+            "shared_words": 39,
+            "shared_examples": [
+              "cheol",
+              "chol",
+              "okeey",
+              "cthey",
+              "shol",
+              "qokchey",
+              "yteol",
+              "qokol",
+              "dal",
+              "qokeol"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1068
+      },
+      {
+        "b_folio": "f116r",
+        "b_word_count": 650,
+        "top_a_matches": [
+          {
+            "a_folio": "f58v",
+            "jaccard": 0.1066,
+            "shared_words": 60,
+            "shared_examples": [
+              "cheol",
+              "ar",
+              "lchedy",
+              "chol",
+              "os",
+              "qotaiin",
+              "qotal",
+              "okeey",
+              "oky",
+              "ain"
+            ]
+          },
+          {
+            "a_folio": "f102v2",
+            "jaccard": 0.0878,
+            "shared_words": 43,
+            "shared_examples": [
+              "sar",
+              "dol",
+              "cheol",
+              "ar",
+              "chol",
+              "os",
+              "okeey",
+              "oky",
+              "ain",
+              "okar"
+            ]
+          },
+          {
+            "a_folio": "f58r",
+            "jaccard": 0.0826,
+            "shared_words": 50,
+            "shared_examples": [
+              "sar",
+              "cphol",
+              "cheol",
+              "ar",
+              "chol",
+              "otey",
+              "aram",
+              "okaiin",
+              "otar",
+              "okar"
+            ]
+          },
+          {
+            "a_folio": "f89v1",
+            "jaccard": 0.0771,
+            "shared_words": 36,
+            "shared_examples": [
+              "sar",
+              "dol",
+              "cheol",
+              "chol",
+              "os",
+              "ain",
+              "okaiin",
+              "otar",
+              "okar",
+              "cheey"
+            ]
+          },
+          {
+            "a_folio": "f89r2",
+            "jaccard": 0.0747,
+            "shared_words": 42,
+            "shared_examples": [
+              "cheedy",
+              "dol",
+              "cheol",
+              "ar",
+              "chol",
+              "qokedy",
+              "okeey",
+              "oky",
+              "ain",
+              "sheeky"
+            ]
+          }
+        ],
+        "max_jaccard": 0.1066
+      }
+    ],
+    "interpretation": "SOME_CORRELATION"
+  },
+  "summary": {
+    "key_findings": [
+      "Shared vocabulary: 1497 words (Jaccard: 0.1407)",
+      "17 A heading words appear in B body (cross-references?)",
+      "Directional asymmetry: B_REFERENCES_A",
+      "Asymmetry ratio: INF",
+      "Entry correlation: SOME_CORRELATION (mean Jaccard: 0.0986)",
+      "Max entry-entry Jaccard: 0.1412"
+    ],
+    "cross_reference_evidence": {
+      "a_headings_in_b_body": 17,
+      "cross_reference_rate": 0.567,
+      "direction": "B_REFERENCES_A"
+    },
+    "constraints_for_decipherment": [
+      "A and B share 1497 words (14.1% Jaccard)",
+      "Cross-reference direction: B_REFERENCES_A",
+      "Entry-level correlation: SOME_CORRELATION",
+      "17 A heading words found in B body text"
+    ]
+  }
+}

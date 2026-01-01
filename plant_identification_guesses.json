@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "title": "Plant Identification Guesses",
+    "description": "Speculative plant identifications based on visual features, assuming 15th century European (likely Italian) origin",
+    "last_modified": "2025-12-30",
+    "confidence_scale": "LOW/MEDIUM/HIGH - based on distinctiveness of features"
+  },
+  "identifications": {
+    "f38r": {
+      "primary_guess": "Borage family (Boraginaceae) or Arum",
+      "alternative_guesses": ["Comfrey (Symphytum)", "Arum/Cuckoo-pint", "Stylized fern"],
+      "confidence": "LOW",
+      "reasoning": "Single large lobed leaf with white stem is unusual. The white comma-shaped markings could represent spots or stylized venation. Arum species have single large leaves and were common in medieval herbals. The white/pale stem and prominent root also fit Arum.",
+      "medieval_use": "Arum was used medicinally (though toxic). Comfrey for wound healing.",
+      "notes": "The white markings are very distinctive - may be artistic convention rather than botanical accuracy"
+    },
+    "f9v": {
+      "primary_guess": "Myrtle (Myrtus communis)",
+      "alternative_guesses": ["Privet (Ligustrum)", "Box (Buxus)", "Periwinkle (Vinca)"],
+      "confidence": "MEDIUM",
+      "reasoning": "Opposite oval leaves, branching woody stem, small flowers at leaf axils. Myrtle was extremely common in medieval Mediterranean gardens and herbals. The leaf shape and arrangement are consistent.",
+      "medieval_use": "Myrtle: perfume, medicine, sacred plant. Symbol of love and immortality.",
+      "notes": "Very typical herbal-style depiction of a shrubby plant"
+    }
+  }
+}

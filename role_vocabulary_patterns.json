@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "phase": "E4",
+    "title": "Pattern Analysis",
+    "timestamp": "2025-12-31T09:15:14.554036",
+    "dependencies": [
+      "E1",
+      "E2"
+    ]
+  },
+  "findings": {
+    "opener_morphology": {
+      "prefix_distribution": [
+        [
+          "qo",
+          8
+        ],
+        [
+          "ok",
+          4
+        ],
+        [
+          "yk",
+          3
+        ],
+        [
+          "ai",
+          1
+        ],
+        [
+          "da",
+          1
+        ],
+        [
+          "ty",
+          1
+        ],
+        [
+          "ta",
+          1
+        ],
+        [
+          "ch",
+          1
+        ]
+      ],
+      "suffix_distribution": [
+        [
+          "ar",
+          5
+        ],
+        [
+          "al",
+          3
+        ],
+        [
+          "ly",
+          3
+        ],
+        [
+          "ir",
+          2
+        ],
+        [
+          "eey",
+          2
+        ],
+        [
+          "ol",
+          1
+        ],
+        [
+          "ain",
+          1
+        ],
+        [
+          "or",
+          1
+        ],
+        [
+          "ty",
+          1
+        ],
+        [
+          "ky",
+          1
+        ]
+      ]
+    },
+    "support_morphology": {
+      "prefix_distribution": [
+        [
+          "ot",
+          3
+        ],
+        [
+          "ch",
+          3
+        ],
+        [
+          "qo",
+          2
+        ],
+        [
+          "ta",
+          1
+        ],
+        [
+          "yt",
+          1
+        ],
+        [
+          "ar",
+          1
+        ],
+        [
+          "al",
+          1
+        ],
+        [
+          "sh",
+          1
+        ],
+        [
+          "da",
+          1
+        ],
+        [
+          "ai",
+          1
+        ]
+      ],
+      "suffix_distribution": [
+        [
+          "al",
+          5
+        ],
+        [
+          "ar",
+          4
+        ],
+        [
+          "ey",
+          1
+        ],
+        [
+          "ly",
+          1
+        ],
+        [
+          "ky",
+          1
+        ],
+        [
+          "ol",
+          1
+        ],
+        [
+          "aiin",
+          1
+        ],
+        [
+          "ty",
+          1
+        ]
+      ]
+    },
+    "cosine_similarity": 0.421
+  },
+  "summary": {
+    "key_results": [
+      "Opener dominant prefixes: [('qo', 8), ('ok', 4), ('yk', 3)]",
+      "Support dominant prefixes: [('ot', 3), ('ch', 3), ('qo', 2)]",
+      "Prefix signature cosine similarity: 0.421"
+    ],
+    "implications": []
+  }
+}

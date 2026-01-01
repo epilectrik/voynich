@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "phase": "H6",
+    "title": "Decision Matrix",
+    "timestamp": "2025-12-30T21:43:38.288854"
+  },
+  "evidence_summary": {
+    "A": [
+      "Visual clusters have diverse headings (entity names)",
+      "Many-to-one cardinality (possible aliases for entities)"
+    ],
+    "B": [
+      "Headings show structural patterns (consistent with codes)",
+      "Many shared substrings (50) - morphological system",
+      "Hubs have shorter headings (generic categories)",
+      "Many strongly co-cited pairs (48) - category system",
+      "20 candidate alias pairs found"
+    ],
+    "C": [
+      "Co-cited pairs are visually dissimilar (functional grouping)"
+    ],
+    "D": []
+  },
+  "model_scores": {
+    "A": 2,
+    "B": 5,
+    "C": 1,
+    "D": 0
+  },
+  "classification": "B",
+  "confidence": "HIGH",
+  "well_fitting_headings": [],
+  "anomalous_headings": [],
+  "classification_description": "Category/class labels (headings identify categories or types)"
+}

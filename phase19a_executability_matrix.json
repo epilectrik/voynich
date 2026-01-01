@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "phase": "19A",
+    "title": "Executability Analysis",
+    "timestamp": "2025-12-31T16:35:37.278340"
+  },
+  "tokens_tested": 480,
+  "baseline": {
+    "convergence_rate": 0.085,
+    "mean_cycle_length": 0.15,
+    "total_violations": 0
+  },
+  "classification": {
+    "EXECUTABLE": 20,
+    "NON_EXECUTABLE": 0,
+    "AMBIGUOUS": 460
+  },
+  "non_executable_candidates": [],
+  "ambiguous_candidates": [
+    {
+      "token": "k",
+      "frequency": 9505,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.065,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "h",
+      "frequency": 6163,
+      "convergence_delta": 0.025,
+      "cycle_delta": 0.05,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "e",
+      "frequency": 4542,
+      "convergence_delta": 0.04,
+      "cycle_delta": 0.085,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "daiin",
+      "frequency": 3020,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.085,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "ch",
+      "frequency": 2940,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.095,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "t",
+      "frequency": 2764,
+      "convergence_delta": 0.02,
+      "cycle_delta": 0.03,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "ol",
+      "frequency": 2198,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.07,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "chedy",
+      "frequency": 1740,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.08,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "shedy",
+      "frequency": 1517,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.065,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "ar",
+      "frequency": 1375,
+      "convergence_delta": 0.025,
+      "cycle_delta": 0.05,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "or",
+      "frequency": 1333,
+      "convergence_delta": 0.04,
+      "cycle_delta": 0.06,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "chol",
+      "frequency": 1323,
+      "convergence_delta": 0.035,
+      "cycle_delta": 0.055,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "al",
+      "frequency": 1277,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.075,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "d",
+      "frequency": 1191,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.085,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "chey",
+      "frequency": 1151,
+      "convergence_delta": 0.04,
+      "cycle_delta": 0.055,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "dar",
+      "frequency": 1091,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.09,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "r",
+      "frequency": 1043,
+      "convergence_delta": 0.035,
+      "cycle_delta": 0.03,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "l",
+      "frequency": 1034,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.075,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "dy",
+      "frequency": 960,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.075,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    },
+    {
+      "token": "ee",
+      "frequency": 945,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.08,
+      "violation_delta": 0,
+      "classification": "AMBIGUOUS"
+    }
+  ],
+  "sample_executable": [
+    {
+      "token": "aiin",
+      "frequency": 1398,
+      "convergence_delta": 0.06,
+      "cycle_delta": 0.095,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "o",
+      "frequency": 1383,
+      "convergence_delta": 0.055,
+      "cycle_delta": 0.095,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "s",
+      "frequency": 1124,
+      "convergence_delta": 0.055,
+      "cycle_delta": 0.075,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "dal",
+      "frequency": 909,
+      "convergence_delta": 0.055,
+      "cycle_delta": 0.085,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "ck",
+      "frequency": 819,
+      "convergence_delta": 0.055,
+      "cycle_delta": 0.085,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "kch",
+      "frequency": 640,
+      "convergence_delta": 0.06,
+      "cycle_delta": 0.1,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "dain",
+      "frequency": 620,
+      "convergence_delta": 0.06,
+      "cycle_delta": 0.095,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "otal",
+      "frequency": 446,
+      "convergence_delta": 0.045,
+      "cycle_delta": 0.065,
+      "violation_delta": 1,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "oteey",
+      "frequency": 413,
+      "convergence_delta": 0.055,
+      "cycle_delta": 0.085,
+      "violation_delta": 0,
+      "classification": "EXECUTABLE"
+    },
+    {
+      "token": "cho",
+      "frequency": 321,
+      "convergence_delta": 0.05,
+      "cycle_delta": 0.07,
+      "violation_delta": 2,
+      "classification": "EXECUTABLE"
+    }
+  ],
+  "IDENTIFIER_SIGNAL": "NONE",
+  "INTERPRETATION": "Of 480 tokens tested, 0 (0.0%) show non-executable behavior. Identifier signal: NONE."
+}

@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "phase": "H5.1",
+    "title": "Mutual Exclusivity",
+    "timestamp": "2025-12-30T21:43:38.206922"
+  },
+  "candidate_aliases": [
+    {
+      "folio1": "f21v",
+      "folio2": "f28v",
+      "heading1": "toldshy",
+      "heading2": "kshol",
+      "classifier_similarity": 0.9830946376448946,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f17r",
+      "folio2": "f89r2",
+      "heading1": "fshody",
+      "heading2": "odory",
+      "classifier_similarity": 0.9790437224523767,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f8r",
+      "folio2": "f47r",
+      "heading1": "pshol",
+      "heading2": "pchair",
+      "classifier_similarity": 0.977573934732588,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f2v",
+      "folio2": "f56r",
+      "heading1": "kooiin",
+      "heading2": "otchal",
+      "classifier_similarity": 0.9750996253946191,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f7r",
+      "folio2": "f20r",
+      "heading1": "fchodaiin",
+      "heading2": "kdchody",
+      "classifier_similarity": 0.972825549372696,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f7r",
+      "folio2": "f56r",
+      "heading1": "fchodaiin",
+      "heading2": "otchal",
+      "classifier_similarity": 0.9706433306998625,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f9r",
+      "folio2": "f42v",
+      "heading1": "tydlo",
+      "heading2": "tcho",
+      "classifier_similarity": 0.9689081693089808,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f8v",
+      "folio2": "f27r",
+      "heading1": "cthod",
+      "heading2": "ksor",
+      "classifier_similarity": 0.9686904476546732,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f30v",
+      "folio2": "f42r",
+      "heading1": "cthscthain",
+      "heading2": "sho",
+      "classifier_similarity": 0.968670807973504,
+      "visual_similarity": 0.43478260869565216,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f2v",
+      "folio2": "f7r",
+      "heading1": "kooiin",
+      "heading2": "fchodaiin",
+      "classifier_similarity": 0.9670405222507159,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f89r2",
+      "folio2": "f89v2",
+      "heading1": "odory",
+      "heading2": "choeesy",
+      "classifier_similarity": 0.9666534455986306,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f7r",
+      "folio2": "f49r",
+      "heading1": "fchodaiin",
+      "heading2": "poshol",
+      "classifier_similarity": 0.9664074358094811,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f27r",
+      "folio2": "f30v",
+      "heading1": "ksor",
+      "heading2": "cthscthain",
+      "classifier_similarity": 0.9661704326323288,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f3r",
+      "folio2": "f10v",
+      "heading1": "tsheos",
+      "heading2": "paiin",
+      "classifier_similarity": 0.9656998397929768,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f8r",
+      "folio2": "f27r",
+      "heading1": "pshol",
+      "heading2": "ksor",
+      "classifier_similarity": 0.9644546087551857,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f10r",
+      "folio2": "f15v",
+      "heading1": "pchocthy",
+      "heading2": "poror",
+      "classifier_similarity": 0.9641318341519797,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f6r",
+      "folio2": "f42r",
+      "heading1": "foar",
+      "heading2": "sho",
+      "classifier_similarity": 0.9633525671269398,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f8r",
+      "folio2": "f8v",
+      "heading1": "pshol",
+      "heading2": "cthod",
+      "classifier_similarity": 0.96298756195393,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f6r",
+      "folio2": "f9r",
+      "heading1": "foar",
+      "heading2": "tydlo",
+      "classifier_similarity": 0.9624611813044767,
+      "visual_similarity": null,
+      "mutually_exclusive": true
+    },
+    {
+      "folio1": "f20v",
+      "folio2": "f42r",
+      "heading1": "faiis",
+      "heading2": "sho",
+      "classifier_similarity": 0.9620771876408345,
+      "visual_similarity": 0.4782608695652174,
+      "mutually_exclusive": true
+    }
+  ],
+  "total_pairs_tested": 6328
+}

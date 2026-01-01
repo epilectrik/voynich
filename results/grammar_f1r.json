@@ -1,0 +1,171 @@
+{
+  "folio": "f1r",
+  "meanings": {
+    "daiin": {
+      "latin": "folia",
+      "category": "nouns"
+    },
+    "okchey": {
+      "latin": "habet",
+      "category": "verbs"
+    },
+    "dain": {
+      "latin": "flos",
+      "category": "nouns"
+    },
+    "y": {
+      "latin": "semen",
+      "category": "nouns"
+    },
+    "shol": {
+      "latin": "facit",
+      "category": "verbs"
+    },
+    "or": {
+      "latin": "curat",
+      "category": "verbs"
+    },
+    "shody": {
+      "latin": "sanat",
+      "category": "verbs"
+    },
+    "chor": {
+      "latin": "prodest",
+      "category": "verbs"
+    },
+    "cthy": {
+      "latin": "aqua",
+      "category": "nouns"
+    },
+    "shey": {
+      "latin": "succus",
+      "category": "nouns"
+    },
+    "kor": {
+      "latin": "nocet",
+      "category": "verbs"
+    },
+    "dan": {
+      "latin": "crescit",
+      "category": "verbs"
+    },
+    "okan": {
+      "latin": "cortex",
+      "category": "nouns"
+    },
+    "*": {
+      "latin": "oleum",
+      "category": "nouns"
+    },
+    "s": {
+      "latin": "sal",
+      "category": "nouns"
+    },
+    "ckhey": {
+      "latin": "nascitur",
+      "category": "verbs"
+    },
+    "she": {
+      "latin": "pulvis",
+      "category": "nouns"
+    },
+    "sho": {
+      "latin": "natura",
+      "category": "nouns"
+    },
+    "chey": {
+      "latin": "cum",
+      "category": "preps"
+    },
+    "dar": {
+      "latin": "in",
+      "category": "preps"
+    },
+    "kaiin": {
+      "latin": "virtus",
+      "category": "nouns"
+    },
+    "dal": {
+      "latin": "morbus",
+      "category": "nouns"
+    },
+    "fachys": {
+      "latin": "dolor",
+      "category": "nouns"
+    },
+    "ykal": {
+      "latin": "de",
+      "category": "preps"
+    },
+    "ar": {
+      "latin": "febris",
+      "category": "nouns"
+    },
+    "ataiin": {
+      "latin": "ex",
+      "category": "preps"
+    },
+    "shory": {
+      "latin": "venenum",
+      "category": "nouns"
+    },
+    "cthres": {
+      "latin": "ad",
+      "category": "preps"
+    },
+    "sholdy": {
+      "latin": "remedium",
+      "category": "nouns"
+    },
+    "sory": {
+      "latin": "per",
+      "category": "preps"
+    },
+    "ckhar": {
+      "latin": "medicina",
+      "category": "nouns"
+    },
+    "kair": {
+      "latin": "pro",
+      "category": "preps"
+    },
+    "chtaiin": {
+      "latin": "est",
+      "category": "verbs"
+    },
+    "shar": {
+      "latin": "sine",
+      "category": "preps"
+    },
+    "are": {
+      "latin": "sunt",
+      "category": "verbs"
+    },
+    "syaiir": {
+      "latin": "contra",
+      "category": "preps"
+    },
+    "sheky": {
+      "latin": "radix",
+      "category": "nouns"
+    },
+    "ykaiin": {
+      "latin": "herba",
+      "category": "nouns"
+    },
+    "shod": {
+      "latin": "et",
+      "category": "conj"
+    },
+    "cthoary": {
+      "latin": "magnus",
+      "category": "adj"
+    },
+    "cthes": {
+      "latin": "sed",
+      "category": "conj"
+    }
+  },
+  "coverage": 0.37735849056603776,
+  "grammar_score": 1.0
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "phase": "14C",
+    "title": "Collapse Tests",
+    "timestamp": "2025-12-31T14:15:02.453331"
+  },
+  "baseline": {
+    "converges": true,
+    "convergence_rate": 1.0,
+    "settles": true,
+    "cycle_rate": 0.94,
+    "total_tested": 50
+  },
+  "without_STATE_A": {
+    "converges": true,
+    "convergence_rate": 1.0,
+    "settles": true,
+    "cycle_rate": 0.94,
+    "total_tested": 50,
+    "behavior_change": "minimal change - A is interface"
+  },
+  "without_STATE_B": {
+    "converges": true,
+    "convergence_rate": 1.0,
+    "settles": true,
+    "cycle_rate": 0.94,
+    "total_tested": 50,
+    "behavior_change": "minimal change - B is interface"
+  },
+  "without_STATE_D": {
+    "converges": true,
+    "convergence_rate": 1.0,
+    "settles": true,
+    "cycle_rate": 1.0,
+    "total_tested": 50,
+    "behavior_change": "minimal change - D is interface"
+  },
+  "binary_collapse": {
+    "best_pairing": "STATE-C + STATE-A",
+    "best_pairing_results": {
+      "converges": true,
+      "convergence_rate": 1.0,
+      "settles": true,
+      "cycle_rate": 1.0,
+      "total_tested": 50
+    },
+    "all_pairings": {
+      "STATE-C + STATE-A": 1.0,
+      "STATE-C + STATE-B": 1.0,
+      "STATE-C + STATE-D": 1.0
+    }
+  },
+  "STATE_C_alone": {
+    "converges": true,
+    "convergence_rate": 1.0,
+    "settles": true,
+    "cycle_rate": 1.0,
+    "total_tested": 50,
+    "trivial": true,
+    "remaining_structure": "trivial - all converges"
+  },
+  "SEMANTIC_KERNEL": {
+    "essential_states": [
+      "STATE-C"
+    ],
+    "interface_states": [
+      "STATE-A",
+      "STATE-B",
+      "STATE-D"
+    ],
+    "minimum_viable_system": "STATE-C alone is sufficient - system is fundamentally monostate"
+  }
+}

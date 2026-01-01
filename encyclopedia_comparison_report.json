@@ -1,0 +1,263 @@
+{
+  "timestamp": "2025-12-30T15:09:40.861585",
+  "methodology": "Genre profile comparison against medieval reference works",
+  "profiles": {
+    "ISIDORE_ETYMOLOGIAE": {
+      "description": "Isidore of Seville Etymologiae - short definitional entries with etymology focus",
+      "characteristics": [
+        "Etymology-focused openings",
+        "Short definitional units",
+        "Technical vocabulary"
+      ]
+    },
+    "BARTHOLOMAEUS_DE_PROPRIETATIBUS": {
+      "description": "Bartholomaeus Anglicus De proprietatibus rerum - longer expository entries",
+      "characteristics": [
+        "Property listing structure",
+        "Longer expository units",
+        "Cross-references"
+      ]
+    },
+    "HILDEGARD_PHYSICA": {
+      "description": "Hildegard of Bingen Physica - plant/animal entries with medical focus",
+      "characteristics": [
+        "Nature-focused entries",
+        "Medical applications",
+        "Variable length"
+      ]
+    },
+    "GENERIC_HERBAL": {
+      "description": "Generic medieval herbal - plant name, properties, uses",
+      "characteristics": [
+        "Plant name heading",
+        "Properties section",
+        "Uses/applications section"
+      ]
+    },
+    "GENERIC_RECIPE": {
+      "description": "Generic recipe collection - imperative, short, highly repetitive",
+      "characteristics": [
+        "Imperative openings",
+        "Ingredient lists",
+        "Procedural structure"
+      ]
+    }
+  },
+  "currier_a": {
+    "section": "Currier A",
+    "metrics": {
+      "entry_count": 114,
+      "mean_entry_length": 124.17,
+      "entry_length_cv": 0.557,
+      "vocab_diversity": 0.351,
+      "opening_consistency": 0.149,
+      "three_part_structure": true,
+      "three_part_scores": {
+        "first_vs_middle": 0.09,
+        "middle_vs_last": 0.093,
+        "first_vs_last": 0.132
+      },
+      "repetition_rate": 0.001,
+      "total_words": 14155,
+      "unique_words": 4970
+    },
+    "genre_scores": {
+      "ISIDORE_ETYMOLOGIAE": {
+        "score": 33.3,
+        "details": {
+          "entry_length": 0.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.5,
+          "opening": 0.5,
+          "three_part": 0.0,
+          "repetition": 0.0
+        },
+        "description": "Isidore of Seville Etymologiae - short definitional entries with etymology focus"
+      },
+      "BARTHOLOMAEUS_DE_PROPRIETATIBUS": {
+        "score": 66.7,
+        "details": {
+          "entry_length": 1.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.0,
+          "opening": 1.0,
+          "three_part": 1.0,
+          "repetition": 0.0
+        },
+        "description": "Bartholomaeus Anglicus De proprietatibus rerum - longer expository entries"
+      },
+      "HILDEGARD_PHYSICA": {
+        "score": 75.0,
+        "details": {
+          "entry_length": 1.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.5,
+          "opening": 1.0,
+          "three_part": 1.0,
+          "repetition": 0.0
+        },
+        "description": "Hildegard of Bingen Physica - plant/animal entries with medical focus"
+      },
+      "GENERIC_HERBAL": {
+        "score": 83.3,
+        "details": {
+          "entry_length": 1.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 1.0,
+          "opening": 1.0,
+          "three_part": 1.0,
+          "repetition": 0.0
+        },
+        "description": "Generic medieval herbal - plant name, properties, uses"
+      },
+      "GENERIC_RECIPE": {
+        "score": 33.3,
+        "details": {
+          "entry_length": 0.0,
+          "entry_cv": 0.5,
+          "vocab_diversity": 1.0,
+          "opening": 0.5,
+          "three_part": 0.0,
+          "repetition": 0.0
+        },
+        "description": "Generic recipe collection - imperative, short, highly repetitive"
+      }
+    },
+    "ranked_genres": [
+      [
+        "GENERIC_HERBAL",
+        83.3
+      ],
+      [
+        "HILDEGARD_PHYSICA",
+        75.0
+      ],
+      [
+        "BARTHOLOMAEUS_DE_PROPRIETATIBUS",
+        66.7
+      ],
+      [
+        "ISIDORE_ETYMOLOGIAE",
+        33.3
+      ],
+      [
+        "GENERIC_RECIPE",
+        33.3
+      ]
+    ],
+    "best_fit": "GENERIC_HERBAL",
+    "best_score": 83.3
+  },
+  "currier_b": {
+    "section": "Currier B",
+    "metrics": {
+      "entry_count": 83,
+      "mean_entry_length": 351.86,
+      "entry_length_cv": 0.573,
+      "vocab_diversity": 0.245,
+      "opening_consistency": 0.205,
+      "three_part_structure": true,
+      "three_part_scores": {
+        "first_vs_middle": 0.083,
+        "middle_vs_last": 0.066,
+        "first_vs_last": 0.086
+      },
+      "repetition_rate": 0.0024,
+      "total_words": 29204,
+      "unique_words": 7165
+    },
+    "genre_scores": {
+      "ISIDORE_ETYMOLOGIAE": {
+        "score": 33.3,
+        "details": {
+          "entry_length": 0.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.0,
+          "opening": 1.0,
+          "three_part": 0.0,
+          "repetition": 0.0
+        },
+        "description": "Isidore of Seville Etymologiae - short definitional entries with etymology focus"
+      },
+      "BARTHOLOMAEUS_DE_PROPRIETATIBUS": {
+        "score": 50.0,
+        "details": {
+          "entry_length": 0.5,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.0,
+          "opening": 0.5,
+          "three_part": 1.0,
+          "repetition": 0.0
+        },
+        "description": "Bartholomaeus Anglicus De proprietatibus rerum - longer expository entries"
+      },
+      "HILDEGARD_PHYSICA": {
+        "score": 50.0,
+        "details": {
+          "entry_length": 0.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.0,
+          "opening": 1.0,
+          "three_part": 1.0,
+          "repetition": 0.0
+        },
+        "description": "Hildegard of Bingen Physica - plant/animal entries with medical focus"
+      },
+      "GENERIC_HERBAL": {
+        "score": 50.0,
+        "details": {
+          "entry_length": 0.0,
+          "entry_cv": 1.0,
+          "vocab_diversity": 0.0,
+          "opening": 1.0,
+          "three_part": 1.0,
+          "repetition": 0.0
+        },
+        "description": "Generic medieval herbal - plant name, properties, uses"
+      },
+      "GENERIC_RECIPE": {
+        "score": 41.7,
+        "details": {
+          "entry_length": 0.0,
+          "entry_cv": 0.5,
+          "vocab_diversity": 1.0,
+          "opening": 1.0,
+          "three_part": 0.0,
+          "repetition": 0.0
+        },
+        "description": "Generic recipe collection - imperative, short, highly repetitive"
+      }
+    },
+    "ranked_genres": [
+      [
+        "BARTHOLOMAEUS_DE_PROPRIETATIBUS",
+        50.0
+      ],
+      [
+        "HILDEGARD_PHYSICA",
+        50.0
+      ],
+      [
+        "GENERIC_HERBAL",
+        50.0
+      ],
+      [
+        "GENERIC_RECIPE",
+        41.7
+      ],
+      [
+        "ISIDORE_ETYMOLOGIAE",
+        33.3
+      ]
+    ],
+    "best_fit": "BARTHOLOMAEUS_DE_PROPRIETATIBUS",
+    "best_score": 50.0
+  },
+  "overall_assessment": {
+    "currier_a_profile": "GENERIC_HERBAL",
+    "currier_a_score": 83.3,
+    "currier_b_profile": "BARTHOLOMAEUS_DE_PROPRIETATIBUS",
+    "currier_b_score": 50.0,
+    "interpretation": "Bifurcated structure: A=labeled herbal, B=expository encyclopedia"
+  }
+}

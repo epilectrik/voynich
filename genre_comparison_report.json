@@ -1,0 +1,510 @@
+{
+  "currier_a": {
+    "name": "Currier A",
+    "word_count": 14155,
+    "line_count": 1577,
+    "paragraph_count": 10677,
+    "measured_features": {
+      "sequence_stats": {
+        "mean": 8.98,
+        "median": 8,
+        "std": 4.67,
+        "min": 1,
+        "max": 38,
+        "count": 1577
+      },
+      "repetition": {
+        "total_trigrams": 11013,
+        "unique_trigrams": 11001,
+        "repeated_patterns": 12,
+        "repetition_rate": 0.001,
+        "duplicate_instance_rate": 0.001,
+        "most_repeated": [
+          {
+            "pattern": "chol daiin cthy",
+            "count": 2
+          },
+          {
+            "pattern": "chol chy chaiin",
+            "count": 2
+          },
+          {
+            "pattern": "cthor chol chor",
+            "count": 2
+          },
+          {
+            "pattern": "chaiin chcthy ctho",
+            "count": 2
+          },
+          {
+            "pattern": "daiin qotchy qotor",
+            "count": 2
+          },
+          {
+            "pattern": "daiin cthy dy",
+            "count": 2
+          },
+          {
+            "pattern": "daiin qokor okeor",
+            "count": 2
+          },
+          {
+            "pattern": "daiin cthor chol",
+            "count": 2
+          },
+          {
+            "pattern": "sho cthy daiin",
+            "count": 2
+          },
+          {
+            "pattern": "chol daiin chkaiin",
+            "count": 2
+          }
+        ]
+      },
+      "position_entropy": {
+        "first_position_entropy": 9.23,
+        "middle_position_entropy": 10.21,
+        "last_position_entropy": 9.64,
+        "average_entropy": 9.44,
+        "top_first_words": [
+          [
+            "daiin",
+            57
+          ],
+          [
+            "sho",
+            29
+          ],
+          [
+            "or",
+            19
+          ],
+          [
+            "qotchy",
+            17
+          ],
+          [
+            "ychor",
+            14
+          ],
+          [
+            "chol",
+            13
+          ],
+          [
+            "dor",
+            13
+          ],
+          [
+            "dain",
+            12
+          ],
+          [
+            "shor",
+            12
+          ],
+          [
+            "dchor",
+            12
+          ]
+        ],
+        "top_last_words": [
+          [
+            "daiin",
+            53
+          ],
+          [
+            "dy",
+            19
+          ],
+          [
+            "dal",
+            17
+          ],
+          [
+            "dam",
+            11
+          ],
+          [
+            "cthy",
+            11
+          ],
+          [
+            "dar",
+            10
+          ],
+          [
+            "chody",
+            9
+          ],
+          [
+            "aiin",
+            9
+          ],
+          [
+            "chor",
+            8
+          ],
+          [
+            "dain",
+            8
+          ]
+        ]
+      },
+      "vocabulary_reuse": {
+        "unique_words": 4970,
+        "words_in_multi_contexts": 1280,
+        "multi_context_rate": 0.258,
+        "mean_contexts_per_word": 2.85,
+        "max_contexts": 477,
+        "most_reused": [
+          [
+            "daiin",
+            477
+          ],
+          [
+            "chol",
+            259
+          ],
+          [
+            "chor",
+            193
+          ],
+          [
+            "dy",
+            145
+          ],
+          [
+            "chy",
+            119
+          ],
+          [
+            "shol",
+            117
+          ],
+          [
+            "ol",
+            117
+          ],
+          [
+            "sho",
+            116
+          ],
+          [
+            "cthy",
+            105
+          ],
+          [
+            "dar",
+            105
+          ]
+        ]
+      }
+    },
+    "genre_scores": {
+      "MEDICAL_RECIPES": 25.0,
+      "NARRATIVE": 50.0,
+      "ASTRONOMICAL_TABLES": 0.0,
+      "LITURGICAL": 25.0
+    },
+    "best_fit_genre": "NARRATIVE",
+    "best_fit_score": 50.0
+  },
+  "currier_b": {
+    "name": "Currier B",
+    "word_count": 29204,
+    "line_count": 2457,
+    "paragraph_count": 22012,
+    "measured_features": {
+      "sequence_stats": {
+        "mean": 11.89,
+        "median": 12,
+        "std": 4.95,
+        "min": 1,
+        "max": 125,
+        "count": 2457
+      },
+      "repetition": {
+        "total_trigrams": 24297,
+        "unique_trigrams": 24231,
+        "repeated_patterns": 62,
+        "repetition_rate": 0.003,
+        "duplicate_instance_rate": 0.003,
+        "most_repeated": [
+          {
+            "pattern": "ol shedy qokedy",
+            "count": 3
+          },
+          {
+            "pattern": "shedy qokedy qokeedy",
+            "count": 3
+          },
+          {
+            "pattern": "sheedy qokedy chedy",
+            "count": 3
+          },
+          {
+            "pattern": "ol chedy qokain",
+            "count": 3
+          },
+          {
+            "pattern": "or aiin otaiin",
+            "count": 2
+          },
+          {
+            "pattern": "dar ar al",
+            "count": 2
+          },
+          {
+            "pattern": "saiin or aiin",
+            "count": 2
+          },
+          {
+            "pattern": "or aiin chody",
+            "count": 2
+          },
+          {
+            "pattern": "chey or aiin",
+            "count": 2
+          },
+          {
+            "pattern": "or aiin okaiin",
+            "count": 2
+          }
+        ]
+      },
+      "position_entropy": {
+        "first_position_entropy": 9.29,
+        "middle_position_entropy": 10.19,
+        "last_position_entropy": 9.5,
+        "average_entropy": 9.4,
+        "top_first_words": [
+          [
+            "daiin",
+            87
+          ],
+          [
+            "saiin",
+            49
+          ],
+          [
+            "sain",
+            35
+          ],
+          [
+            "dain",
+            34
+          ],
+          [
+            "qokeedy",
+            31
+          ],
+          [
+            "dshedy",
+            29
+          ],
+          [
+            "qokeey",
+            26
+          ],
+          [
+            "sor",
+            26
+          ],
+          [
+            "sol",
+            26
+          ],
+          [
+            "qokaiin",
+            23
+          ]
+        ],
+        "top_last_words": [
+          [
+            "aiin",
+            66
+          ],
+          [
+            "qokaiin",
+            65
+          ],
+          [
+            "daiin",
+            44
+          ],
+          [
+            "otaiin",
+            37
+          ],
+          [
+            "okaiin",
+            35
+          ],
+          [
+            "chedy",
+            26
+          ],
+          [
+            "al",
+            26
+          ],
+          [
+            "ar",
+            22
+          ],
+          [
+            "qotaiin",
+            21
+          ],
+          [
+            "saiin",
+            20
+          ]
+        ]
+      },
+      "vocabulary_reuse": {
+        "unique_words": 7165,
+        "words_in_multi_contexts": 2100,
+        "multi_context_rate": 0.293,
+        "mean_contexts_per_word": 4.08,
+        "max_contexts": 493,
+        "most_reused": [
+          [
+            "chedy",
+            493
+          ],
+          [
+            "ol",
+            436
+          ],
+          [
+            "aiin",
+            432
+          ],
+          [
+            "shedy",
+            408
+          ],
+          [
+            "daiin",
+            405
+          ],
+          [
+            "qokaiin",
+            403
+          ],
+          [
+            "or",
+            276
+          ],
+          [
+            "ar",
+            276
+          ],
+          [
+            "qokeedy",
+            274
+          ],
+          [
+            "chey",
+            262
+          ]
+        ]
+      }
+    },
+    "genre_scores": {
+      "MEDICAL_RECIPES": 25.0,
+      "NARRATIVE": 37.5,
+      "ASTRONOMICAL_TABLES": 12.5,
+      "LITURGICAL": 37.5
+    },
+    "best_fit_genre": "NARRATIVE",
+    "best_fit_score": 37.5
+  },
+  "genre_profiles": {
+    "MEDICAL_RECIPES": {
+      "description": "Medieval medical/pharmaceutical recipes",
+      "procedure_length": [
+        3,
+        7
+      ],
+      "repetition_rate": [
+        0.15,
+        0.4
+      ],
+      "position_entropy": [
+        0.5,
+        2.0
+      ],
+      "vocabulary_reuse": [
+        3,
+        10
+      ],
+      "typical_pattern": "Ingredient -> Process -> Application"
+    },
+    "NARRATIVE": {
+      "description": "Narrative prose text",
+      "procedure_length": [
+        10,
+        30
+      ],
+      "repetition_rate": [
+        0.01,
+        0.1
+      ],
+      "position_entropy": [
+        2.5,
+        4.0
+      ],
+      "vocabulary_reuse": [
+        1,
+        3
+      ],
+      "typical_pattern": "Variable ordering, few stereotypes"
+    },
+    "ASTRONOMICAL_TABLES": {
+      "description": "Astronomical/calendrical tables",
+      "procedure_length": [
+        1,
+        4
+      ],
+      "repetition_rate": [
+        0.4,
+        0.8
+      ],
+      "position_entropy": [
+        0.1,
+        1.0
+      ],
+      "vocabulary_reuse": [
+        5,
+        20
+      ],
+      "typical_pattern": "Listing, enumeration, fixed format"
+    },
+    "LITURGICAL": {
+      "description": "Religious/liturgical formulae",
+      "procedure_length": [
+        5,
+        15
+      ],
+      "repetition_rate": [
+        0.3,
+        0.6
+      ],
+      "position_entropy": [
+        0.5,
+        1.5
+      ],
+      "vocabulary_reuse": [
+        5,
+        15
+      ],
+      "typical_pattern": "Fixed formulaic phrases, invocations"
+    }
+  },
+  "timestamp": "2025-12-30T14:04:23.724792",
+  "methodology": "Structural genre comparison - NO SEMANTIC CLAIMS"
+}

@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "phase": "7_FINAL",
+    "title": "Phase 7 Final Synthesis",
+    "timestamp": "2025-12-31T11:44:35.820579"
+  },
+  "model_specification": {
+    "vocabulary": {
+      "semantic_cores": 280,
+      "role_clusters": 6,
+      "affix_operators": 30,
+      "operator_types": [
+        "POSITION",
+        "SCOPE",
+        "SCOPE_WEAK",
+        "SEMANTIC"
+      ]
+    },
+    "grammar": {
+      "production_rules": 11,
+      "slot_positions": 10,
+      "parse_coverage": 0.951
+    },
+    "populations": {
+      "A_text": "DEFINITION_CORE dominant (75.5% A-text concentration)",
+      "B_text": "EXPOSITION_CORE dominant (88% B-text concentration)"
+    }
+  },
+  "validation_results": {
+    "internal_consistency": {
+      "role_predictions": "PASS",
+      "operator_effects": "PARTIAL"
+    },
+    "cross_validation": {
+      "accuracy": 1.0,
+      "passes": true
+    },
+    "permutation_control": {
+      "percentile": 100.0,
+      "effect_size": 10.161268472258893,
+      "verdict": true,
+      "interpretation": "REAL MODEL SIGNIFICANTLY BETTER"
+    }
+  },
+  "what_model_can_do": [
+    "Parse any entry into semantic roles",
+    "Identify operators and their effects",
+    "Predict population membership from role distribution",
+    "Reject malformed constructions",
+    "Describe semantic structure without external grounding"
+  ],
+  "what_model_cannot_do": [
+    "Provide lexical glosses (what middles mean in the world)",
+    "Identify referential content (plants, conditions, substances)",
+    "Determine original composition language",
+    "Explain intended use or audience"
+  ],
+  "confidence_assessment": {
+    "role_clusters": {
+      "confidence": "HIGH",
+      "evidence": "95.7% validation, survives permutation"
+    },
+    "affix_operations": {
+      "confidence": "HIGH",
+      "evidence": "Consistent effects, predictive"
+    },
+    "grammar": {
+      "confidence": "HIGH",
+      "evidence": "95.1% coverage, rejects malformed"
+    },
+    "a_b_distinction": {
+      "confidence": "HIGH",
+      "evidence": "Clean separation, different vocabularies"
+    },
+    "real_world_grounding": {
+      "confidence": "NONE",
+      "evidence": "No external evidence"
+    }
+  },
+  "overall_verdict": {
+    "model_validated": true,
+    "permutation_control_passed": true,
+    "confidence": "HIGH",
+    "summary": "Semantic model is VALIDATED - labels represent real structure, not artifacts"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "phase": "C5.2",
+    "title": "Correlation Reinterpretation",
+    "timestamp": "2025-12-30T22:11:43.492980"
+  },
+  "prefix_analyses": {
+    "ko": {
+      "prior_correlation": {
+        "feature": "leaf_shape",
+        "V": 0.61,
+        "percentile": 83.6
+      },
+      "categories_with_prefix": [],
+      "categories_with_visual_data": 0,
+      "category_level_feature_mode": null,
+      "category_level_agreement": null,
+      "interpretation": "INSUFFICIENT_DATA"
+    },
+    "po": {
+      "prior_correlation": {
+        "feature": "root_type",
+        "V": 0.2,
+        "percentile": 0
+      },
+      "categories_with_prefix": [],
+      "categories_with_visual_data": 0,
+      "category_level_feature_mode": null,
+      "category_level_agreement": null,
+      "interpretation": "INSUFFICIENT_DATA"
+    }
+  },
+  "category_level_correlations": {},
+  "summary": {
+    "prior_correlations_analyzed": 2,
+    "stronger_at_category_level": 0,
+    "conclusion": "Category-level analysis may reveal different patterns than folio-level"
+  }
+}

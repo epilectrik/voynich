@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "phase": "16A",
+    "title": "Control Grammar Extraction",
+    "timestamp": "2025-12-31T15:26:15.647027"
+  },
+  "state_space": {
+    "stable_states": 4,
+    "essential_state": 1,
+    "interface_states": 3,
+    "attractor_type": "SINGLE_STABLE",
+    "convergence_rate": 1.0,
+    "oscillation_rate": 0.952,
+    "dimensionality": 1,
+    "structure": "LINEAR"
+  },
+  "cycle_structure": {
+    "dominant_length": 4,
+    "secondary_length": 3,
+    "total_4_cycles": 500,
+    "total_3_cycles": 56,
+    "cycle_anchors": [
+      "s"
+    ],
+    "canonical_operator_sequence": [
+      "qo",
+      "qo",
+      "qo"
+    ],
+    "role": "MAINTENANCE_LOOPS"
+  },
+  "transition_rules": {
+    "reversibility": 0.946,
+    "commutativity": 0.877,
+    "ladder_to_cycle_rate": 0.977,
+    "internal_forbidden_count": 17,
+    "internal_forbidden_transitions": [
+      [
+        "shey",
+        "aiin"
+      ],
+      [
+        "shey",
+        "al"
+      ],
+      [
+        "shey",
+        "c"
+      ],
+      [
+        "chol",
+        "r"
+      ],
+      [
+        "chedy",
+        "ee"
+      ],
+      [
+        "dy",
+        "aiin"
+      ],
+      [
+        "dy",
+        "chey"
+      ],
+      [
+        "l",
+        "chol"
+      ],
+      [
+        "or",
+        "dal"
+      ],
+      [
+        "chey",
+        "chedy"
+      ],
+      [
+        "chey",
+        "shedy"
+      ],
+      [
+        "ar",
+        "dal"
+      ],
+      [
+        "c",
+        "ee"
+      ],
+      [
+        "he",
+        "t"
+      ],
+      [
+        "he",
+        "or"
+      ],
+      [
+        "shedy",
+        "aiin"
+      ],
+      [
+        "shedy",
+        "o"
+      ]
+    ],
+    "macro_forbidden_count": 2,
+    "mandatory_waypoint": "STATE-C"
+  },
+  "repetition_characteristics": {
+    "mean": 13.67,
+    "median": 7.0,
+    "std_dev": 23.06,
+    "max": 350,
+    "distribution": "BIMODAL",
+    "hub_mean": 22.95,
+    "spoke_mean": 8.69,
+    "a_text_mean": 9.23,
+    "b_text_mean": 19.35,
+    "termination": "EXTERNAL",
+    "ratio_hub_to_spoke": 2.6409666283084006
+  },
+  "error_tolerance": {
+    "skip_convergence": 0.68,
+    "wrong_entry_convergence": 1.0,
+    "most_perturbation_recovery": 1,
+    "max_recovery_steps": 20,
+    "resilience": "HIGH"
+  },
+  "hub_structure": {
+    "hub_count": 7,
+    "hub_nodes": [
+      "k",
+      "h",
+      "e",
+      "t",
+      "daiin",
+      "ch",
+      "ol"
+    ],
+    "core_within_core": [
+      "k",
+      "h",
+      "e"
+    ],
+    "top_centrality": {
+      "k": 4846.85,
+      "h": 2968.45,
+      "e": 2180.43
+    },
+    "total_nodes": 29,
+    "fully_connected": true
+  },
+  "abstract_signature": "CONTROL_GRAMMAR_SIGNATURE:\n  Attractor: SINGLE_STABLE (100% convergence, 95% cyclic)\n  Cycle: QUATERNARY_DOMINANT (500+ 4-cycles, 56 3-cycles)\n  Reversibility: VERY_HIGH (94.6%)\n  Commutativity: VERY_HIGH (87.7%)\n  Collapse: EXTREME (97.7% ladder->cycle)\n  Forbidden: 17 micro-transitions + 2 macro-transitions\n  Repetition: BIMODAL (hub 2.64x spoke, no decay)\n  Termination: EXTERNAL\n  Recovery: HIGH (1-20 steps)",
+  "CONTROL_GRAMMAR_SUMMARY": {
+    "attractor_type": "SINGLE_STABLE",
+    "cycle_structure": "QUATERNARY_DOMINANT_WITH_TERNARY",
+    "reversibility": 0.946,
+    "commutativity": 0.877,
+    "collapse_rate": 0.977,
+    "forbidden_transitions": 19,
+    "error_recovery": "HIGH",
+    "termination": "EXTERNAL"
+  }
+}

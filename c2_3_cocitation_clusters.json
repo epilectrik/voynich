@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "phase": "C2.3",
+    "title": "Co-Citation Clusters",
+    "timestamp": "2025-12-30T22:11:43.438978"
+  },
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "size": 15,
+      "members": [
+        "kor",
+        "paiin",
+        "par",
+        "pcheodar",
+        "pcheol",
+        "pcheor",
+        "pchodaiin",
+        "pchor",
+        "pol",
+        "poraiin",
+        "pshol",
+        "sho",
+        "tcho",
+        "tol",
+        "tor"
+      ],
+      "interpretation": "FUNCTIONAL_GROUP"
+    },
+    {
+      "cluster_id": 2,
+      "size": 17,
+      "members": [
+        "f101r1",
+        "f10v",
+        "f14r",
+        "f19r",
+        "f21r",
+        "f22r",
+        "f29r",
+        "f35v",
+        "f42r",
+        "f42v",
+        "f52v",
+        "f54v",
+        "f58r",
+        "f58v",
+        "f8r",
+        "f90v1",
+        "f96r"
+      ],
+      "interpretation": "FUNCTIONAL_GROUP"
+    }
+  ],
+  "adjacency": {
+    "pol": [
+      "tor",
+      "pcheol",
+      "pcheor",
+      "pshol",
+      "tol",
+      "paiin",
+      "pchor",
+      "poraiin",
+      "sho",
+      "par"
+    ],
+    "tol": [
+      "tor",
+      "pcheol",
+      "pshol",
+      "pchor",
+      "paiin",
+      "kor",
+      "poraiin",
+      "sho",
+      "pol"
+    ],
+    "pchor": [
+      "tor",
+      "tcho",
+      "tol",
+      "pchor",
+      "sho",
+      "pol"
+    ],
+    "tor": [
+      "pcheol",
+      "pshol",
+      "tol",
+      "paiin",
+      "pchor",
+      "kor",
+      "sho",
+      "pol"
+    ],
+    "sho": [
+      "tor",
+      "pcheodar",
+      "pcheor",
+      "pchodaiin",
+      "tol",
+      "paiin",
+      "pchor",
+      "pol",
+      "par"
+    ],
+    "paiin": [
+      "tor",
+      "tol",
+      "kor",
+      "sho",
+      "pol",
+      "par"
+    ],
+    "kor": [
+      "tor",
+      "tol",
+      "paiin",
+      "par"
+    ],
+    "par": [
+      "pcheor",
+      "paiin",
+      "kor",
+      "sho",
+      "pol"
+    ],
+    "pcheol": [
+      "tor",
+      "tol",
+      "pol"
+    ],
+    "pcheor": [
+      "sho",
+      "pol",
+      "par"
+    ],
+    "pshol": [
+      "tor",
+      "tol",
+      "pol"
+    ],
+    "tcho": [
+      "pchor"
+    ],
+    "pcheodar": [
+      "sho"
+    ],
+    "poraiin": [
+      "tol",
+      "pol"
+    ],
+    "pchodaiin": [
+      "sho"
+    ],
+    "f35v": [
+      "f58r",
+      "f90v1",
+      "f22r",
+      "f10v",
+      "f42r"
+    ],
+    "f58r": [
+      "f58v",
+      "f35v",
+      "f10v",
+      "f96r"
+    ],
+    "f90v1": [
+      "f35v",
+      "f22r",
+      "f42r"
+    ],
+    "f42r": [
+      "f35v",
+      "f19r",
+      "f14r",
+      "f90v1",
+      "f22r",
+      "f54v",
+      "f58v",
+      "f21r",
+      "f52v",
+      "f96r",
+      "f10v"
+    ],
+    "f10v": [
+      "f96r",
+      "f35v",
+      "f58r",
+      "f58v",
+      "f22r",
+      "f42r"
+    ],
+    "f58v": [
+      "f19r",
+      "f58r",
+      "f22r",
+      "f29r",
+      "f21r",
+      "f52v",
+      "f8r",
+      "f96r",
+      "f10v",
+      "f101r1",
+      "f42r"
+    ],
+    "f96r": [
+      "f19r",
+      "f58r",
+      "f58v",
+      "f21r",
+      "f52v",
+      "f8r",
+      "f22r",
+      "f10v",
+      "f101r1",
+      "f42r"
+    ],
+    "f22r": [
+      "f35v",
+      "f19r",
+      "f90v1",
+      "f29r",
+      "f58v",
+      "f21r",
+      "f52v",
+      "f8r",
+      "f96r",
+      "f10v",
+      "f101r1",
+      "f42r"
+    ],
+    "f8r": [
+      "f58v",
+      "f22r",
+      "f96r"
+    ],
+    "f42v": [
+      "f21r",
+      "f52v",
+      "f19r"
+    ],
+    "f52v": [
+      "f96r",
+      "f19r",
+      "f21r",
+      "f58v",
+      "f42v",
+      "f22r",
+      "f42r"
+    ],
+    "f54v": [
+      "f42r"
+    ],
+    "f29r": [
+      "f58v",
+      "f22r"
+    ],
+    "f101r1": [
+      "f58v",
+      "f96r",
+      "f22r"
+    ],
+    "f19r": [
+      "f22r",
+      "f21r",
+      "f58v",
+      "f52v",
+      "f42v",
+      "f96r",
+      "f42r"
+    ],
+    "f21r": [
+      "f96r",
+      "f19r",
+      "f58v",
+      "f52v",
+      "f42v",
+      "f22r",
+      "f42r"
+    ],
+    "f14r": [
+      "f42r"
+    ]
+  },
+  "summary": {
+    "nodes_in_adjacency": 32,
+    "clusters_found": 2,
+    "largest_cluster_size": 17,
+    "singleton_nodes": 0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "phase": "10D",
+    "title": "Operation Class Formalization",
+    "timestamp": "2025-12-31T12:51:30.957935"
+  },
+  "operation_classes": {
+    "CYCLIC_BIDIRECTIONAL": {
+      "member_operators": [
+        "ts",
+        "sa",
+        "op",
+        "yp",
+        "ol",
+        "pc",
+        "ke",
+        "ra",
+        "qo",
+        "al",
+        "so",
+        "ct",
+        "ta",
+        "ar",
+        "ka",
+        "ot",
+        "ch",
+        "lk",
+        "dy",
+        "ko",
+        "or",
+        "sh",
+        "fc",
+        "od",
+        "da",
+        "yk",
+        "ok"
+      ],
+      "member_count": 27,
+      "statistics": {
+        "mean_reversibility": 0.986,
+        "mean_commutativity_rate": 0.757,
+        "mean_mean_position": 4.424,
+        "mean_entry_initial_rate": 0.125,
+        "mean_entry_terminal_rate": 0.195,
+        "mean_cycle_participation": 625.148
+      },
+      "behavior_type": "cyclic",
+      "hub_effect": "shifting",
+      "dominant_hub": "unknown",
+      "typical_position": "initial",
+      "reversibility": "high",
+      "cycle_role": "oscillator",
+      "structural_meaning": "Marks reversible transformation states - operations that can be undone or repeated"
+    },
+    "DIRECTIONAL_INITIATORS": {
+      "member_operators": [
+        "cf"
+      ],
+      "member_count": 1,
+      "statistics": {
+        "mean_reversibility": 0.817,
+        "mean_commutativity_rate": 0.389,
+        "mean_mean_position": 3.15,
+        "mean_entry_initial_rate": 0.235,
+        "mean_entry_terminal_rate": 0.052,
+        "mean_cycle_participation": 15.0
+      },
+      "behavior_type": "cyclic",
+      "hub_effect": "shifting",
+      "dominant_hub": "unknown",
+      "typical_position": "initial",
+      "reversibility": "high",
+      "cycle_role": "initiator",
+      "structural_meaning": "Begins transformation sequences - marks entry into process"
+    },
+    "DIRECTIONAL_TERMINATORS": {
+      "member_operators": [
+        "am"
+      ],
+      "member_count": 1,
+      "statistics": {
+        "mean_reversibility": 0.995,
+        "mean_commutativity_rate": 0.4,
+        "mean_mean_position": 3.95,
+        "mean_entry_initial_rate": 0.123,
+        "mean_entry_terminal_rate": 0.142,
+        "mean_cycle_participation": 32.0
+      },
+      "behavior_type": "cyclic",
+      "hub_effect": "shifting",
+      "dominant_hub": "unknown",
+      "typical_position": "initial",
+      "reversibility": "high",
+      "cycle_role": "terminator",
+      "structural_meaning": "Completes transformation sequences - marks process conclusion"
+    }
+  },
+  "class_count": 3,
+  "classical_operation_match": "PARTIAL",
+  "classical_interpretation": "Detected 3 operation classes. Partially matches classical alchemical operation count (typically 7-12 operations)."
+}

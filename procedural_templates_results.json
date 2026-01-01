@@ -1,0 +1,497 @@
+{
+  "timestamp": "2025-12-30T13:07:59.609861",
+  "template_counts": {
+    "PREPARATION": 1476,
+    "PREPARATION_2": 1483,
+    "APPLICATION": 0,
+    "APPLICATION_TIMED": 0,
+    "FULL_RECIPE": 0,
+    "FULL_RECIPE_TIMED": 0,
+    "LIQUID_PREP": 30,
+    "LIQUID_PLANT": 2,
+    "LIQUID_FULL": 2,
+    "TIMING": 28,
+    "CELESTIAL_TIMING": 0,
+    "BODY_STATE": 0,
+    "BODY_PROCESS": 0,
+    "DOUBLE_PROCESS": 31548,
+    "PLANT_CHAIN": 57
+  },
+  "template_definitions": {
+    "PREPARATION": {
+      "pattern": [
+        "PLANT",
+        "PROCESS",
+        "STATE"
+      ],
+      "description": "Basic herb preparation"
+    },
+    "PREPARATION_2": {
+      "pattern": [
+        "PLANT",
+        "PROCESS"
+      ],
+      "description": "Simple herb + action"
+    },
+    "APPLICATION": {
+      "pattern": [
+        "PROCESS",
+        "BODY"
+      ],
+      "description": "Action applied to body"
+    },
+    "APPLICATION_TIMED": {
+      "pattern": [
+        "PROCESS",
+        "BODY",
+        "TIME"
+      ],
+      "description": "Timed body application"
+    },
+    "FULL_RECIPE": {
+      "pattern": [
+        "PLANT",
+        "PROCESS",
+        "BODY"
+      ],
+      "description": "Complete preparation to application"
+    },
+    "FULL_RECIPE_TIMED": {
+      "pattern": [
+        "PLANT",
+        "PROCESS",
+        "BODY",
+        "TIME"
+      ],
+      "description": "Full recipe with timing"
+    },
+    "LIQUID_PREP": {
+      "pattern": [
+        "LIQUID",
+        "PROCESS"
+      ],
+      "description": "Liquid preparation"
+    },
+    "LIQUID_PLANT": {
+      "pattern": [
+        "LIQUID",
+        "PLANT"
+      ],
+      "description": "Liquid with herb"
+    },
+    "LIQUID_FULL": {
+      "pattern": [
+        "LIQUID",
+        "PLANT",
+        "PROCESS"
+      ],
+      "description": "Herb in liquid prepared"
+    },
+    "TIMING": {
+      "pattern": [
+        "TIME",
+        "PROCESS"
+      ],
+      "description": "When to do action"
+    },
+    "CELESTIAL_TIMING": {
+      "pattern": [
+        "CELESTIAL",
+        "BODY"
+      ],
+      "description": "Astrological timing for body"
+    },
+    "BODY_STATE": {
+      "pattern": [
+        "BODY",
+        "PLANT"
+      ],
+      "description": "Body treatment with herb"
+    },
+    "BODY_PROCESS": {
+      "pattern": [
+        "BODY",
+        "PROCESS"
+      ],
+      "description": "Body undergoing process"
+    },
+    "DOUBLE_PROCESS": {
+      "pattern": [
+        "PROCESS",
+        "PROCESS"
+      ],
+      "description": "Sequential actions"
+    },
+    "PLANT_CHAIN": {
+      "pattern": [
+        "PLANT",
+        "PLANT"
+      ],
+      "description": "Multiple herbs"
+    }
+  },
+  "section_distribution": {
+    "HERBAL": {
+      "PREPARATION": 485,
+      "PREPARATION_2": 489,
+      "LIQUID_PREP": 5,
+      "TIMING": 17,
+      "DOUBLE_PROCESS": 8777,
+      "PLANT_CHAIN": 26
+    },
+    "RECIPES": {
+      "PREPARATION": 645,
+      "PREPARATION_2": 648,
+      "LIQUID_PREP": 22,
+      "LIQUID_PLANT": 1,
+      "LIQUID_FULL": 1,
+      "TIMING": 11,
+      "DOUBLE_PROCESS": 16449,
+      "PLANT_CHAIN": 21
+    },
+    "ZODIAC": {
+      "PREPARATION": 38,
+      "PREPARATION_2": 38,
+      "DOUBLE_PROCESS": 536,
+      "PLANT_CHAIN": 3
+    },
+    "BIOLOGICAL": {
+      "PREPARATION": 308,
+      "PREPARATION_2": 308,
+      "LIQUID_PREP": 3,
+      "LIQUID_PLANT": 1,
+      "LIQUID_FULL": 1,
+      "DOUBLE_PROCESS": 5786,
+      "PLANT_CHAIN": 7
+    }
+  },
+  "procedure_type_counts": {
+    "PREPARATION_PROCEDURES": 2993,
+    "APPLICATION_PROCEDURES": 0,
+    "TIMING_PROCEDURES": 28,
+    "COMPOUND_PROCEDURES": 0
+  },
+  "boundary_categories": {
+    "starts": {
+      "PROCESS": 34628,
+      "OTHER": 1561,
+      "PLANT": 1636,
+      "TIME": 33,
+      "CELESTIAL": 45,
+      "LIQUID": 37
+    },
+    "ends": {
+      "PROCESS": 34628,
+      "OTHER": 1561,
+      "PLANT": 1636,
+      "TIME": 33,
+      "CELESTIAL": 45,
+      "LIQUID": 37
+    }
+  },
+  "top_2_sequences": [
+    [
+      [
+        "PROCESS",
+        "PROCESS"
+      ],
+      31548
+    ],
+    [
+      [
+        "PROCESS",
+        "PLANT"
+      ],
+      1518
+    ],
+    [
+      [
+        "PLANT",
+        "PROCESS"
+      ],
+      1483
+    ],
+    [
+      [
+        "OTHER",
+        "PROCESS"
+      ],
+      1280
+    ],
+    [
+      [
+        "PROCESS",
+        "OTHER"
+      ],
+      1250
+    ],
+    [
+      [
+        "OTHER",
+        "OTHER"
+      ],
+      213
+    ],
+    [
+      [
+        "PLANT",
+        "OTHER"
+      ],
+      84
+    ],
+    [
+      [
+        "PLANT",
+        "PLANT"
+      ],
+      57
+    ],
+    [
+      [
+        "OTHER",
+        "PLANT"
+      ],
+      56
+    ],
+    [
+      [
+        "PROCESS",
+        "CELESTIAL"
+      ],
+      40
+    ],
+    [
+      [
+        "CELESTIAL",
+        "PROCESS"
+      ],
+      38
+    ],
+    [
+      [
+        "PROCESS",
+        "LIQUID"
+      ],
+      33
+    ],
+    [
+      [
+        "PROCESS",
+        "TIME"
+      ],
+      30
+    ],
+    [
+      [
+        "LIQUID",
+        "PROCESS"
+      ],
+      30
+    ],
+    [
+      [
+        "TIME",
+        "PROCESS"
+      ],
+      28
+    ],
+    [
+      [
+        "LIQUID",
+        "OTHER"
+      ],
+      5
+    ],
+    [
+      [
+        "CELESTIAL",
+        "OTHER"
+      ],
+      4
+    ],
+    [
+      [
+        "PLANT",
+        "LIQUID"
+      ],
+      3
+    ],
+    [
+      [
+        "PLANT",
+        "CELESTIAL"
+      ],
+      2
+    ],
+    [
+      [
+        "OTHER",
+        "CELESTIAL"
+      ],
+      2
+    ]
+  ],
+  "top_3_sequences": [
+    [
+      [
+        "PROCESS",
+        "PROCESS",
+        "PROCESS"
+      ],
+      28889
+    ],
+    [
+      [
+        "PROCESS",
+        "PLANT",
+        "PROCESS"
+      ],
+      1375
+    ],
+    [
+      [
+        "PROCESS",
+        "PROCESS",
+        "PLANT"
+      ],
+      1289
+    ],
+    [
+      [
+        "PLANT",
+        "PROCESS",
+        "PROCESS"
+      ],
+      1288
+    ],
+    [
+      [
+        "PROCESS",
+        "OTHER",
+        "PROCESS"
+      ],
+      1109
+    ],
+    [
+      [
+        "OTHER",
+        "PROCESS",
+        "PROCESS"
+      ],
+      1091
+    ],
+    [
+      [
+        "PROCESS",
+        "PROCESS",
+        "OTHER"
+      ],
+      1082
+    ],
+    [
+      [
+        "PLANT",
+        "PROCESS",
+        "PLANT"
+      ],
+      119
+    ],
+    [
+      [
+        "OTHER",
+        "OTHER",
+        "OTHER"
+      ],
+      114
+    ],
+    [
+      [
+        "OTHER",
+        "PROCESS",
+        "OTHER"
+      ],
+      94
+    ],
+    [
+      [
+        "OTHER",
+        "OTHER",
+        "PROCESS"
+      ],
+      90
+    ],
+    [
+      [
+        "OTHER",
+        "PROCESS",
+        "PLANT"
+      ],
+      85
+    ],
+    [
+      [
+        "PROCESS",
+        "OTHER",
+        "OTHER"
+      ],
+      85
+    ],
+    [
+      [
+        "PROCESS",
+        "PLANT",
+        "OTHER"
+      ],
+      78
+    ],
+    [
+      [
+        "PLANT",
+        "OTHER",
+        "PROCESS"
+      ],
+      73
+    ],
+    [
+      [
+        "PLANT",
+        "PROCESS",
+        "OTHER"
+      ],
+      66
+    ],
+    [
+      [
+        "PLANT",
+        "PLANT",
+        "PROCESS"
+      ],
+      55
+    ],
+    [
+      [
+        "PROCESS",
+        "PLANT",
+        "PLANT"
+      ],
+      54
+    ],
+    [
+      [
+        "OTHER",
+        "PLANT",
+        "PROCESS"
+      ],
+      48
+    ],
+    [
+      [
+        "PROCESS",
+        "OTHER",
+        "PLANT"
+      ],
+      47
+    ]
+  ],
+  "total_procedures": 34626
+}

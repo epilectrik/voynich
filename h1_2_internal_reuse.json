@@ -1,0 +1,6000 @@
+{
+  "metadata": {
+    "phase": "H1.2",
+    "title": "Internal Reuse Patterns",
+    "timestamp": "2025-12-30T21:43:38.125905"
+  },
+  "shared_substrings": {
+    "ch": {
+      "count": 44,
+      "headings": [
+        "pchafdan",
+        "kchsy",
+        "pydchdom",
+        "kocheor",
+        "poldchody",
+        "fochof",
+        "okchshy",
+        "tdokchcfhy",
+        "fchodaiin",
+        "tchodar",
+        "tolchd",
+        "fchoiin",
+        "pchocthy",
+        "pcheodar",
+        "chosaroshol",
+        "kcheat",
+        "pdychoiin",
+        "tcholdchy",
+        "pchodaiin",
+        "pochaiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f24v",
+        "f30r",
+        "f10r",
+        "f17v",
+        "f19r",
+        "f11v",
+        "f56v",
+        "f100r",
+        "f52r",
+        "f4r",
+        "f54v",
+        "f87v",
+        "f25r",
+        "f90r2",
+        "f23r",
+        "f101r1",
+        "f32r",
+        "f7r"
+      ]
+    },
+    "ho": {
+      "count": 37,
+      "headings": [
+        "cthoo",
+        "sho",
+        "kshol",
+        "poldchody",
+        "fochof",
+        "kodshol",
+        "tshodpy",
+        "fchodaiin",
+        "tchodar",
+        "fchoiin",
+        "pchocthy",
+        "chosaroshol",
+        "pdychoiin",
+        "tcholdchy",
+        "pchodaiin",
+        "tshor",
+        "porshols",
+        "tocphol",
+        "tshol",
+        "kshody"
+      ],
+      "folios": [
+        "f14r",
+        "f24v",
+        "f10r",
+        "f17v",
+        "f19r",
+        "f11v",
+        "f8v",
+        "f100r",
+        "f37v",
+        "f37r",
+        "f15r",
+        "f25r",
+        "f44v",
+        "f49r",
+        "f53v",
+        "f7r",
+        "f93r",
+        "f11r",
+        "f28r",
+        "f42v"
+      ]
+    },
+    "sh": {
+      "count": 23,
+      "headings": [
+        "tsheos",
+        "sho",
+        "kshol",
+        "possheody",
+        "polyshy",
+        "okchshy",
+        "kodshol",
+        "tshodpy",
+        "psheoas",
+        "chosaroshol",
+        "psheot",
+        "poalshsal",
+        "tshor",
+        "porshols",
+        "tshol",
+        "kshody",
+        "poshody",
+        "poshol",
+        "torshor",
+        "fshody"
+      ],
+      "folios": [
+        "f3r",
+        "f87r",
+        "f93v",
+        "f100r",
+        "f37v",
+        "f21v",
+        "f7v",
+        "f15r",
+        "f96v",
+        "f49r",
+        "f44v",
+        "f53v",
+        "f93r",
+        "f11r",
+        "f13r",
+        "f47v",
+        "f5r",
+        "f42r",
+        "f44r",
+        "f17r"
+      ]
+    },
+    "od": {
+      "count": 23,
+      "headings": [
+        "poldchody",
+        "possheody",
+        "kodshol",
+        "tshodpy",
+        "fchodaiin",
+        "tchodar",
+        "dordod",
+        "pcheodar",
+        "kodam",
+        "pchodaiin",
+        "podairol",
+        "pocheody",
+        "kshody",
+        "cthod",
+        "pchodar",
+        "kodalchy",
+        "poshody",
+        "podaiin",
+        "kdchody",
+        "kcheodaiin"
+      ],
+      "folios": [
+        "f14r",
+        "f24v",
+        "f23v",
+        "f17v",
+        "f53r",
+        "f11v",
+        "f8v",
+        "f93v",
+        "f37v",
+        "f102r1",
+        "f4r",
+        "f54r",
+        "f54v",
+        "f7r",
+        "f93r",
+        "f28r",
+        "f5r",
+        "f44r",
+        "f20r",
+        "f17r"
+      ]
+    },
+    "ol": {
+      "count": 23,
+      "headings": [
+        "kshol",
+        "poldchody",
+        "polyshy",
+        "okolyd",
+        "kodshol",
+        "tolchd",
+        "chosaroshol",
+        "tcholdchy",
+        "podairol",
+        "porshols",
+        "tocphol",
+        "tshol",
+        "tolor",
+        "pcheol",
+        "poleeol",
+        "poshol",
+        "pol",
+        "fcholdy",
+        "toldshy",
+        "pchodol"
+      ],
+      "folios": [
+        "f38r",
+        "f58v",
+        "f23v",
+        "f17v",
+        "f11v",
+        "f100r",
+        "f37r",
+        "f21v",
+        "f18v",
+        "f22r",
+        "f7v",
+        "f25r",
+        "f49r",
+        "f101r1",
+        "f93r",
+        "f11r",
+        "f51r",
+        "f90r1",
+        "f100v",
+        "f88v"
+      ]
+    },
+    "ai": {
+      "count": 21,
+      "headings": [
+        "faiis",
+        "sairaly",
+        "cphdaithy",
+        "poraiin",
+        "fchodaiin",
+        "koaiin",
+        "pdrairdy",
+        "cthscthain",
+        "pochaiin",
+        "podairol",
+        "koair",
+        "poeeaiin",
+        "pchraiin",
+        "kydainy",
+        "paiin",
+        "podaiin",
+        "pchair",
+        "kcheodaiin",
+        "lsais",
+        "pchodaiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f102r2",
+        "f23v",
+        "f29r",
+        "f10v",
+        "f54r",
+        "f3v",
+        "f2r",
+        "f7r",
+        "f18r",
+        "f30v",
+        "f20v",
+        "f22v",
+        "f101v2",
+        "f25v",
+        "f90v2",
+        "f32v",
+        "f19v",
+        "f13v"
+      ]
+    },
+    "or": {
+      "count": 21,
+      "headings": [
+        "kocheor",
+        "okoramog",
+        "poraiin",
+        "dordod",
+        "kor",
+        "tshor",
+        "porshols",
+        "korary",
+        "porory",
+        "tolor",
+        "pchor",
+        "okoraldy",
+        "torshor",
+        "poror",
+        "otorchety",
+        "pcheor",
+        "tor",
+        "odory",
+        "fochor",
+        "pysaiinor"
+      ],
+      "folios": [
+        "f38r",
+        "f89v1",
+        "f96r",
+        "f19r",
+        "f24r",
+        "f29r",
+        "f58r",
+        "f102r1",
+        "f15r",
+        "f53v",
+        "f99r",
+        "f13r",
+        "f27r",
+        "f5v",
+        "f88r",
+        "f15v",
+        "f22v",
+        "f90v1",
+        "f89r2",
+        "f9v"
+      ]
+    },
+    "cho": {
+      "count": 20,
+      "headings": [
+        "poldchody",
+        "fochof",
+        "fchodaiin",
+        "tchodar",
+        "fchoiin",
+        "pchocthy",
+        "chosaroshol",
+        "pdychoiin",
+        "tcholdchy",
+        "pchodaiin",
+        "pchooiin",
+        "pchor",
+        "tcho",
+        "pchodar",
+        "kdchody",
+        "choeesy",
+        "okchop",
+        "fcholdy",
+        "pchodol",
+        "fochor"
+      ],
+      "folios": [
+        "f14r",
+        "f24v",
+        "f10r",
+        "f17v",
+        "f19r",
+        "f11v",
+        "f100r",
+        "f25r",
+        "f7r",
+        "f42v",
+        "f51r",
+        "f28r",
+        "f27v",
+        "f14v",
+        "f38v",
+        "f89v2",
+        "f4v",
+        "f20r",
+        "f9v",
+        "f21r"
+      ]
+    },
+    "in": {
+      "count": 17,
+      "headings": [
+        "poeeaiin",
+        "fchodaiin",
+        "koaiin",
+        "fchoiin",
+        "pchraiin",
+        "kooiin",
+        "cthscthain",
+        "kcheodaiin",
+        "pchooiin",
+        "pdychoiin",
+        "pchodaiin",
+        "pochaiin",
+        "pysaiinor",
+        "kydainy",
+        "paiin",
+        "podaiin",
+        "poraiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f14v",
+        "f2v",
+        "f3v",
+        "f30v",
+        "f54r",
+        "f25v",
+        "f2r",
+        "f32v",
+        "f19v",
+        "f7r",
+        "f29r",
+        "f29v",
+        "f22v",
+        "f4v",
+        "f10v",
+        "f32r"
+      ]
+    },
+    "po": {
+      "count": 17,
+      "headings": [
+        "poeeaiin",
+        "porshols",
+        "poleeol",
+        "poshol",
+        "pol",
+        "pocheody",
+        "porory",
+        "poshody",
+        "poldchody",
+        "poror",
+        "possheody",
+        "polyshy",
+        "poalshsal",
+        "pochaiin",
+        "podairol",
+        "podaiin",
+        "poraiin"
+      ],
+      "folios": [
+        "f54r",
+        "f22r",
+        "f7v",
+        "f23v",
+        "f25v",
+        "f51v",
+        "f49r",
+        "f19v",
+        "f16r",
+        "f15v",
+        "f11v",
+        "f24r",
+        "f87r",
+        "f29r",
+        "f102v2",
+        "f93v",
+        "f90r1"
+      ]
+    },
+    "ii": {
+      "count": 16,
+      "headings": [
+        "faiis",
+        "fchodaiin",
+        "poeeaiin",
+        "koaiin",
+        "fchoiin",
+        "pchraiin",
+        "kooiin",
+        "kcheodaiin",
+        "pchooiin",
+        "pdychoiin",
+        "pchodaiin",
+        "pochaiin",
+        "pysaiinor",
+        "paiin",
+        "podaiin",
+        "poraiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f14v",
+        "f2v",
+        "f3v",
+        "f54r",
+        "f20v",
+        "f25v",
+        "f32v",
+        "f19v",
+        "f7r",
+        "f29r",
+        "f29v",
+        "f22v",
+        "f4v",
+        "f10v",
+        "f32r"
+      ]
+    },
+    "iin": {
+      "count": 15,
+      "headings": [
+        "poeeaiin",
+        "fchodaiin",
+        "koaiin",
+        "fchoiin",
+        "pchraiin",
+        "kooiin",
+        "kcheodaiin",
+        "pchooiin",
+        "pdychoiin",
+        "pchodaiin",
+        "pochaiin",
+        "pysaiinor",
+        "paiin",
+        "podaiin",
+        "poraiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f14v",
+        "f2v",
+        "f3v",
+        "f54r",
+        "f25v",
+        "f32v",
+        "f19v",
+        "f7r",
+        "f29r",
+        "f29v",
+        "f22v",
+        "f4v",
+        "f10v",
+        "f32r"
+      ]
+    },
+    "sho": {
+      "count": 15,
+      "headings": [
+        "tshodpy",
+        "tshor",
+        "porshols",
+        "poshol",
+        "torshor",
+        "sho",
+        "tshol",
+        "kshody",
+        "poshody",
+        "kshol",
+        "chosaroshol",
+        "fshody",
+        "tsho",
+        "pshol",
+        "kodshol"
+      ],
+      "folios": [
+        "f13r",
+        "f51v",
+        "f15r",
+        "f8r",
+        "f49r",
+        "f44v",
+        "f100r",
+        "f53v",
+        "f102v2",
+        "f93r",
+        "f11r",
+        "f5r",
+        "f42r",
+        "f44r",
+        "f37v",
+        "f17r",
+        "f28v"
+      ]
+    },
+    "da": {
+      "count": 14,
+      "headings": [
+        "fchodaiin",
+        "tchodar",
+        "pchafdan",
+        "cphdaithy",
+        "pcheodar",
+        "kcheodaiin",
+        "pchodar",
+        "kodam",
+        "pykydal",
+        "pchodaiin",
+        "kodalchy",
+        "podairol",
+        "kydainy",
+        "podaiin"
+      ],
+      "folios": [
+        "f4r",
+        "f14r",
+        "f54r",
+        "f24v",
+        "f54v",
+        "f23v",
+        "f2r",
+        "f32v",
+        "f90v2",
+        "f53r",
+        "f36r",
+        "f7r",
+        "f28r",
+        "f45r"
+      ]
+    },
+    "he": {
+      "count": 14,
+      "headings": [
+        "psheoas",
+        "pcheol",
+        "tsheos",
+        "pocheody",
+        "pcheodar",
+        "kcheodaiin",
+        "pcheey",
+        "kcheat",
+        "kocheor",
+        "otorchety",
+        "pcheor",
+        "possheody",
+        "psheot",
+        "okchesy"
+      ],
+      "folios": [
+        "f54v",
+        "f87v",
+        "f30r",
+        "f5v",
+        "f3r",
+        "f32v",
+        "f56v",
+        "f88r",
+        "f16r",
+        "f47v",
+        "f96v",
+        "f101r1",
+        "f93v",
+        "f90v1"
+      ]
+    },
+    "pc": {
+      "count": 14,
+      "headings": [
+        "pcheol",
+        "pchafdan",
+        "pchraiin",
+        "pchodaiin",
+        "pchocthy",
+        "pchair",
+        "pcheodar",
+        "pcharasy",
+        "pcheey",
+        "pchooiin",
+        "pcheor",
+        "pchor",
+        "pchodol",
+        "pchodar"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f54v",
+        "f87v",
+        "f47r",
+        "f10r",
+        "f17v",
+        "f19r",
+        "f36r",
+        "f101r1",
+        "f21r",
+        "f4v",
+        "f28r",
+        "f90v1",
+        "f52v",
+        "f36v"
+      ]
+    },
+    "pch": {
+      "count": 14,
+      "headings": [
+        "pcheol",
+        "pchafdan",
+        "pchraiin",
+        "pchodaiin",
+        "pchocthy",
+        "pchair",
+        "pcheodar",
+        "pcharasy",
+        "pcheey",
+        "pchooiin",
+        "pcheor",
+        "pchor",
+        "pchodol",
+        "pchodar"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f54v",
+        "f87v",
+        "f47r",
+        "f10r",
+        "f17v",
+        "f19r",
+        "f36r",
+        "f101r1",
+        "f21r",
+        "f4v",
+        "f28r",
+        "f90v1",
+        "f52v",
+        "f36v"
+      ]
+    },
+    "ko": {
+      "count": 13,
+      "headings": [
+        "kodshol",
+        "koaiin",
+        "korary",
+        "kooiin",
+        "kocheor",
+        "koar",
+        "kor",
+        "okoraldy",
+        "kodam",
+        "kodalchy",
+        "okolyd",
+        "koair",
+        "okoramog"
+      ],
+      "folios": [
+        "f4r",
+        "f99r",
+        "f2v",
+        "f3v",
+        "f89v1",
+        "f5v",
+        "f13v",
+        "f53r",
+        "f6v",
+        "f45v",
+        "f93r",
+        "f29v",
+        "f88v",
+        "f58r"
+      ]
+    },
+    "aii": {
+      "count": 12,
+      "headings": [
+        "faiis",
+        "fchodaiin",
+        "poeeaiin",
+        "koaiin",
+        "pchraiin",
+        "kcheodaiin",
+        "pchodaiin",
+        "pochaiin",
+        "pysaiinor",
+        "paiin",
+        "podaiin",
+        "poraiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f54r",
+        "f3v",
+        "f20v",
+        "f25v",
+        "f32v",
+        "f19v",
+        "f7r",
+        "f29r",
+        "f22v",
+        "f10v"
+      ]
+    },
+    "hod": {
+      "count": 12,
+      "headings": [
+        "tshodpy",
+        "fchodaiin",
+        "kdchody",
+        "tchodar",
+        "pchodol",
+        "kshody",
+        "poldchody",
+        "fshody",
+        "cthod",
+        "pchodaiin",
+        "pchodar",
+        "poshody"
+      ],
+      "folios": [
+        "f14r",
+        "f24v",
+        "f51v",
+        "f17v",
+        "f11v",
+        "f8v",
+        "f7r",
+        "f5r",
+        "f37v",
+        "f44r",
+        "f20r",
+        "f28r",
+        "f17r"
+      ]
+    },
+    "eo": {
+      "count": 11,
+      "headings": [
+        "psheoas",
+        "pcheol",
+        "poleeol",
+        "tsheos",
+        "pocheody",
+        "pcheodar",
+        "kcheodaiin",
+        "kocheor",
+        "pcheor",
+        "possheody",
+        "psheot"
+      ],
+      "folios": [
+        "f54v",
+        "f5v",
+        "f3r",
+        "f32v",
+        "f96v",
+        "f47v",
+        "f16r",
+        "f101r1",
+        "f93v",
+        "f90r1",
+        "f90v1"
+      ]
+    },
+    "aiin": {
+      "count": 11,
+      "headings": [
+        "poeeaiin",
+        "fchodaiin",
+        "koaiin",
+        "pchraiin",
+        "kcheodaiin",
+        "pchodaiin",
+        "pochaiin",
+        "pysaiinor",
+        "paiin",
+        "podaiin",
+        "poraiin"
+      ],
+      "folios": [
+        "f16v",
+        "f14r",
+        "f54r",
+        "f3v",
+        "f25v",
+        "f32v",
+        "f19v",
+        "f7r",
+        "f29r",
+        "f22v",
+        "f10v"
+      ]
+    },
+    "dy": {
+      "count": 11,
+      "headings": [
+        "kdchody",
+        "pdrairdy",
+        "pocheody",
+        "kshody",
+        "fcholdy",
+        "poldchody",
+        "fshody",
+        "pdychoiin",
+        "possheody",
+        "okoraldy",
+        "poshody"
+      ],
+      "folios": [
+        "f14v",
+        "f51v",
+        "f89v1",
+        "f25r",
+        "f16r",
+        "f11v",
+        "f5r",
+        "f18r",
+        "f37v",
+        "f93v",
+        "f20r",
+        "f17r"
+      ]
+    },
+    "heo": {
+      "count": 10,
+      "headings": [
+        "psheoas",
+        "pcheol",
+        "tsheos",
+        "pocheody",
+        "pcheodar",
+        "kcheodaiin",
+        "kocheor",
+        "pcheor",
+        "possheody",
+        "psheot"
+      ],
+      "folios": [
+        "f54v",
+        "f5v",
+        "f3r",
+        "f32v",
+        "f96v",
+        "f47v",
+        "f16r",
+        "f101r1",
+        "f93v",
+        "f90v1"
+      ]
+    },
+    "oda": {
+      "count": 10,
+      "headings": [
+        "fchodaiin",
+        "tchodar",
+        "pcheodar",
+        "kcheodaiin",
+        "pchodar",
+        "kodam",
+        "pchodaiin",
+        "kodalchy",
+        "podairol",
+        "podaiin"
+      ],
+      "folios": [
+        "f4r",
+        "f14r",
+        "f54r",
+        "f24v",
+        "f54v",
+        "f23v",
+        "f32v",
+        "f53r",
+        "f7r",
+        "f28r"
+      ]
+    },
+    "che": {
+      "count": 10,
+      "headings": [
+        "pcheol",
+        "pocheody",
+        "pcheodar",
+        "kcheodaiin",
+        "pcheey",
+        "kcheat",
+        "kocheor",
+        "otorchety",
+        "pcheor",
+        "okchesy"
+      ],
+      "folios": [
+        "f54v",
+        "f87v",
+        "f30r",
+        "f5v",
+        "f32v",
+        "f88r",
+        "f56v",
+        "f16r",
+        "f101r1",
+        "f90v1"
+      ]
+    },
+    "ar": {
+      "count": 10,
+      "headings": [
+        "tchodar",
+        "korary",
+        "pcheodar",
+        "chosaroshol",
+        "par",
+        "pcharasy",
+        "koar",
+        "otaramy",
+        "pchodar",
+        "foar"
+      ],
+      "folios": [
+        "f54v",
+        "f24v",
+        "f6r",
+        "f6v",
+        "f45v",
+        "f99v",
+        "f100r",
+        "f35v",
+        "f28r",
+        "f36v"
+      ]
+    },
+    "hol": {
+      "count": 10,
+      "headings": [
+        "porshols",
+        "poshol",
+        "tocphol",
+        "tshol",
+        "fcholdy",
+        "chosaroshol",
+        "kshol",
+        "tcholdchy",
+        "pshol",
+        "kodshol"
+      ],
+      "folios": [
+        "f8r",
+        "f25r",
+        "f49r",
+        "f102v2",
+        "f93r",
+        "f11r",
+        "f100r",
+        "f51r",
+        "f28v",
+        "f37r"
+      ]
+    },
+    "to": {
+      "count": 10,
+      "headings": [
+        "tolchd",
+        "torshor",
+        "tocphol",
+        "tolor",
+        "otorchety",
+        "toealchs",
+        "tor",
+        "toldshy",
+        "tol",
+        "told"
+      ],
+      "folios": [
+        "f13r",
+        "f18v",
+        "f21v",
+        "f38r",
+        "f58v",
+        "f88r",
+        "f96r",
+        "f90r2",
+        "f100v",
+        "f37r"
+      ]
+    },
+    "hy": {
+      "count": 9,
+      "headings": [
+        "polyshy",
+        "pchocthy",
+        "fachys",
+        "toldshy",
+        "kodalchy",
+        "okchshy",
+        "cphdaithy",
+        "tcholdchy",
+        "tdokchcfhy"
+      ],
+      "folios": [
+        "f4r",
+        "f21v",
+        "f89r1",
+        "f7v",
+        "f90v2",
+        "f10r",
+        "f1r",
+        "f52r",
+        "f51r"
+      ]
+    },
+    "ra": {
+      "count": 9,
+      "headings": [
+        "korary",
+        "pdrairdy",
+        "pchraiin",
+        "sairaly",
+        "pcharasy",
+        "okoraldy",
+        "otaramy",
+        "okoramog",
+        "poraiin"
+      ],
+      "folios": [
+        "f16v",
+        "f89v1",
+        "f45v",
+        "f29r",
+        "f18r",
+        "f99v",
+        "f99r",
+        "f101v2",
+        "f36v"
+      ]
+    },
+    "kc": {
+      "count": 7,
+      "headings": [
+        "kchsy",
+        "okchop",
+        "kcheodaiin",
+        "okchshy",
+        "kcheat",
+        "okchesy",
+        "tdokchcfhy"
+      ],
+      "folios": [
+        "f89r1",
+        "f38v",
+        "f30r",
+        "f32v",
+        "f56v",
+        "f52r",
+        "f1v"
+      ]
+    },
+    "kch": {
+      "count": 7,
+      "headings": [
+        "kchsy",
+        "okchop",
+        "kcheodaiin",
+        "okchshy",
+        "kcheat",
+        "okchesy",
+        "tdokchcfhy"
+      ],
+      "folios": [
+        "f89r1",
+        "f38v",
+        "f30r",
+        "f32v",
+        "f56v",
+        "f52r",
+        "f1v"
+      ]
+    },
+    "dai": {
+      "count": 7,
+      "headings": [
+        "fchodaiin",
+        "cphdaithy",
+        "kcheodaiin",
+        "pchodaiin",
+        "podairol",
+        "kydainy",
+        "podaiin"
+      ],
+      "folios": [
+        "f14r",
+        "f54r",
+        "f23v",
+        "f2r",
+        "f32v",
+        "f90v2",
+        "f7r"
+      ]
+    },
+    "al": {
+      "count": 7,
+      "headings": [
+        "sairaly",
+        "toealchs",
+        "okoraldy",
+        "otchal",
+        "pykydal",
+        "kodalchy",
+        "poalshsal"
+      ],
+      "folios": [
+        "f4r",
+        "f89v1",
+        "f90r2",
+        "f87r",
+        "f56r",
+        "f45r",
+        "f101v2"
+      ]
+    },
+    "ody": {
+      "count": 7,
+      "headings": [
+        "kdchody",
+        "pocheody",
+        "kshody",
+        "poldchody",
+        "fshody",
+        "possheody",
+        "poshody"
+      ],
+      "folios": [
+        "f51v",
+        "f16r",
+        "f11v",
+        "f5r",
+        "f37v",
+        "f93v",
+        "f20r",
+        "f17r"
+      ]
+    },
+    "oc": {
+      "count": 7,
+      "headings": [
+        "pchocthy",
+        "pocheody",
+        "tocphol",
+        "kocheor",
+        "fochof",
+        "pochaiin",
+        "fochor"
+      ],
+      "folios": [
+        "f9v",
+        "f5v",
+        "f10r",
+        "f19v",
+        "f16r",
+        "f27v",
+        "f37r"
+      ]
+    },
+    "chod": {
+      "count": 7,
+      "headings": [
+        "fchodaiin",
+        "kdchody",
+        "tchodar",
+        "pchodol",
+        "poldchody",
+        "pchodaiin",
+        "pchodar"
+      ],
+      "folios": [
+        "f14r",
+        "f24v",
+        "f17v",
+        "f11v",
+        "f7r",
+        "f20r",
+        "f28r"
+      ]
+    },
+    "shol": {
+      "count": 7,
+      "headings": [
+        "porshols",
+        "poshol",
+        "tshol",
+        "chosaroshol",
+        "kshol",
+        "pshol",
+        "kodshol"
+      ],
+      "folios": [
+        "f8r",
+        "f49r",
+        "f102v2",
+        "f93r",
+        "f11r",
+        "f100r",
+        "f28v"
+      ]
+    },
+    "ok": {
+      "count": 7,
+      "headings": [
+        "okchop",
+        "okchshy",
+        "okoramog",
+        "okoraldy",
+        "okchesy",
+        "okolyd",
+        "tdokchcfhy"
+      ],
+      "folios": [
+        "f89r1",
+        "f38v",
+        "f99r",
+        "f89v1",
+        "f30r",
+        "f88v",
+        "f52r"
+      ]
+    },
+    "oa": {
+      "count": 6,
+      "headings": [
+        "psheoas",
+        "koaiin",
+        "koar",
+        "poalshsal",
+        "koair",
+        "foar"
+      ],
+      "folios": [
+        "f3v",
+        "f96v",
+        "f13v",
+        "f6v",
+        "f87r",
+        "f6r"
+      ]
+    },
+    "pcho": {
+      "count": 6,
+      "headings": [
+        "pchodaiin",
+        "pchocthy",
+        "pchooiin",
+        "pchor",
+        "pchodol",
+        "pchodar"
+      ],
+      "folios": [
+        "f14r",
+        "f19r",
+        "f10r",
+        "f17v",
+        "f21r",
+        "f4v",
+        "f28r",
+        "f52v"
+      ]
+    },
+    "cheo": {
+      "count": 6,
+      "headings": [
+        "pcheol",
+        "pocheody",
+        "pcheodar",
+        "kcheodaiin",
+        "kocheor",
+        "pcheor"
+      ],
+      "folios": [
+        "f54v",
+        "f5v",
+        "f32v",
+        "f16r",
+        "f101r1",
+        "f90v1"
+      ]
+    },
+    "ld": {
+      "count": 6,
+      "headings": [
+        "fcholdy",
+        "poldchody",
+        "okoraldy",
+        "tcholdchy",
+        "told",
+        "toldshy"
+      ],
+      "folios": [
+        "f21v",
+        "f18v",
+        "f89v1",
+        "f25r",
+        "f11v",
+        "f51r"
+      ]
+    },
+    "ha": {
+      "count": 6,
+      "headings": [
+        "pchafdan",
+        "pchair",
+        "cthscthain",
+        "pcharasy",
+        "otchal",
+        "pochaiin"
+      ],
+      "folios": [
+        "f30v",
+        "f47r",
+        "f19v",
+        "f36r",
+        "f56r",
+        "f36v"
+      ]
+    },
+    "hs": {
+      "count": 5,
+      "headings": [
+        "kchsy",
+        "cthscthain",
+        "toealchs",
+        "okchshy",
+        "poalshsal"
+      ],
+      "folios": [
+        "f89r1",
+        "f30v",
+        "f90r2",
+        "f87r",
+        "f1v"
+      ]
+    },
+    "yd": {
+      "count": 5,
+      "headings": [
+        "pydchdom",
+        "tydlo",
+        "pykydal",
+        "okolyd",
+        "kydainy"
+      ],
+      "folios": [
+        "f2r",
+        "f23r",
+        "f9r",
+        "f88v",
+        "f45r"
+      ]
+    },
+    "ts": {
+      "count": 5,
+      "headings": [
+        "tshodpy",
+        "tshor",
+        "tsheos",
+        "tshol",
+        "tsho"
+      ],
+      "folios": [
+        "f15r",
+        "f3r",
+        "f44v",
+        "f53v",
+        "f11r",
+        "f44r"
+      ]
+    },
+    "os": {
+      "count": 5,
+      "headings": [
+        "tsheos",
+        "poshol",
+        "chosaroshol",
+        "possheody",
+        "poshody"
+      ],
+      "folios": [
+        "f51v",
+        "f3r",
+        "f49r",
+        "f93v",
+        "f100r"
+      ]
+    },
+    "tsh": {
+      "count": 5,
+      "headings": [
+        "tshodpy",
+        "tshor",
+        "tsheos",
+        "tshol",
+        "tsho"
+      ],
+      "folios": [
+        "f15r",
+        "f3r",
+        "f44v",
+        "f53v",
+        "f11r",
+        "f44r"
+      ]
+    }
+  },
+  "heading_ngram_sets": {
+    "f1r": {
+      "heading": "fachys",
+      "ngrams": [
+        "fach",
+        "hys",
+        "chy",
+        "ch",
+        "fa",
+        "achy",
+        "ys",
+        "fac",
+        "chys",
+        "ac",
+        "ach",
+        "hy"
+      ]
+    },
+    "f1v": {
+      "heading": "kchsy",
+      "ngrams": [
+        "kch",
+        "hs",
+        "kchs",
+        "chs",
+        "hsy",
+        "sy",
+        "ch",
+        "chsy",
+        "kc"
+      ]
+    },
+    "f2r": {
+      "heading": "kydainy",
+      "ngrams": [
+        "yd",
+        "iny",
+        "ainy",
+        "dai",
+        "ky",
+        "yda",
+        "dain",
+        "ain",
+        "ydai",
+        "ny",
+        "in",
+        "da",
+        "ai",
+        "kyd",
+        "kyda"
+      ]
+    },
+    "f2v": {
+      "heading": "kooiin",
+      "ngrams": [
+        "ooi",
+        "ko",
+        "ooii",
+        "oo",
+        "oiin",
+        "iin",
+        "oi",
+        "ii",
+        "kooi",
+        "in",
+        "oii",
+        "koo"
+      ]
+    },
+    "f3r": {
+      "heading": "tsheos",
+      "ngrams": [
+        "ts",
+        "eos",
+        "eo",
+        "heo",
+        "she",
+        "os",
+        "heos",
+        "tshe",
+        "tsh",
+        "sheo",
+        "he",
+        "sh"
+      ]
+    },
+    "f3v": {
+      "heading": "koaiin",
+      "ngrams": [
+        "ko",
+        "koa",
+        "oai",
+        "oa",
+        "aii",
+        "koai",
+        "iin",
+        "ii",
+        "in",
+        "ai",
+        "oaii",
+        "aiin"
+      ]
+    },
+    "f4r": {
+      "heading": "kodalchy",
+      "ngrams": [
+        "ko",
+        "koda",
+        "al",
+        "kod",
+        "oda",
+        "lc",
+        "chy",
+        "dalc",
+        "ch",
+        "od",
+        "alch",
+        "lch",
+        "dal",
+        "da",
+        "odal",
+        "lchy",
+        "alc",
+        "hy"
+      ]
+    },
+    "f4v": {
+      "heading": "pchooiin",
+      "ngrams": [
+        "ooi",
+        "hoo",
+        "ooii",
+        "oo",
+        "cho",
+        "hooi",
+        "iin",
+        "oi",
+        "pch",
+        "pc",
+        "ch",
+        "in",
+        "pcho",
+        "choo",
+        "ii",
+        "oii",
+        "ho",
+        "oiin"
+      ]
+    },
+    "f5r": {
+      "heading": "kshody",
+      "ngrams": [
+        "sho",
+        "dy",
+        "hod",
+        "ody",
+        "od",
+        "ks",
+        "shod",
+        "hody",
+        "ksh",
+        "ho",
+        "sh",
+        "ksho"
+      ]
+    },
+    "f5v": {
+      "heading": "kocheor",
+      "ngrams": [
+        "ko",
+        "che",
+        "cheo",
+        "eor",
+        "eo",
+        "oc",
+        "heo",
+        "heor",
+        "ch",
+        "koc",
+        "koch",
+        "he",
+        "or",
+        "oche",
+        "och"
+      ]
+    },
+    "f6r": {
+      "heading": "foar",
+      "ngrams": [
+        "ar",
+        "fo",
+        "oar",
+        "foa",
+        "oa",
+        "foar"
+      ]
+    },
+    "f6v": {
+      "heading": "koar",
+      "ngrams": [
+        "ko",
+        "koa",
+        "ar",
+        "koar",
+        "oar",
+        "oa"
+      ]
+    },
+    "f7r": {
+      "heading": "fchodaiin",
+      "ngrams": [
+        "cho",
+        "dai",
+        "in",
+        "ho",
+        "hod",
+        "oda",
+        "iin",
+        "od",
+        "odai",
+        "ii",
+        "fc",
+        "fch",
+        "fcho",
+        "hoda",
+        "ch",
+        "chod",
+        "daii",
+        "ai",
+        "aiin",
+        "aii",
+        "da"
+      ]
+    },
+    "f7v": {
+      "heading": "polyshy",
+      "ngrams": [
+        "ol",
+        "poly",
+        "pol",
+        "lysh",
+        "shy",
+        "yshy",
+        "ysh",
+        "olys",
+        "po",
+        "ys",
+        "lys",
+        "ly",
+        "sh",
+        "hy",
+        "oly"
+      ]
+    },
+    "f8r": {
+      "heading": "pshol",
+      "ngrams": [
+        "ol",
+        "sho",
+        "hol",
+        "psh",
+        "ps",
+        "psho",
+        "ho",
+        "sh",
+        "shol"
+      ]
+    },
+    "f8v": {
+      "heading": "cthod",
+      "ngrams": [
+        "tho",
+        "thod",
+        "hod",
+        "cth",
+        "ct",
+        "od",
+        "ctho",
+        "th",
+        "ho"
+      ]
+    },
+    "f9r": {
+      "heading": "tydlo",
+      "ngrams": [
+        "yd",
+        "lo",
+        "ty",
+        "ydl",
+        "tydl",
+        "dlo",
+        "dl",
+        "ydlo",
+        "tyd"
+      ]
+    },
+    "f9v": {
+      "heading": "fochor",
+      "ngrams": [
+        "cho",
+        "foch",
+        "oc",
+        "fo",
+        "chor",
+        "ch",
+        "ocho",
+        "or",
+        "ho",
+        "hor",
+        "och",
+        "foc"
+      ]
+    },
+    "f10r": {
+      "heading": "pchocthy",
+      "ngrams": [
+        "oct",
+        "cho",
+        "hoct",
+        "cthy",
+        "oc",
+        "hoc",
+        "pch",
+        "pc",
+        "ch",
+        "ct",
+        "cth",
+        "thy",
+        "th",
+        "octh",
+        "pcho",
+        "ho",
+        "hy",
+        "choc"
+      ]
+    },
+    "f10v": {
+      "heading": "paiin",
+      "ngrams": [
+        "pai",
+        "paii",
+        "aii",
+        "iin",
+        "ii",
+        "in",
+        "ai",
+        "pa",
+        "aiin"
+      ]
+    },
+    "f11r": {
+      "heading": "tshol",
+      "ngrams": [
+        "ts",
+        "ol",
+        "sho",
+        "hol",
+        "tsho",
+        "tsh",
+        "ho",
+        "sh",
+        "shol"
+      ]
+    },
+    "f11v": {
+      "heading": "poldchody",
+      "ngrams": [
+        "ld",
+        "cho",
+        "hody",
+        "ho",
+        "ldch",
+        "dch",
+        "ldc",
+        "dy",
+        "hod",
+        "od",
+        "oldc",
+        "old",
+        "dc",
+        "ol",
+        "ch",
+        "chod",
+        "po",
+        "pol",
+        "dcho",
+        "ody",
+        "pold"
+      ]
+    },
+    "f13r": {
+      "heading": "torshor",
+      "ngrams": [
+        "tors",
+        "ors",
+        "rs",
+        "sho",
+        "shor",
+        "orsh",
+        "tor",
+        "to",
+        "rsho",
+        "rsh",
+        "or",
+        "ho",
+        "hor",
+        "sh"
+      ]
+    },
+    "f13v": {
+      "heading": "koair",
+      "ngrams": [
+        "ko",
+        "air",
+        "koa",
+        "oai",
+        "ir",
+        "koai",
+        "oair",
+        "oa",
+        "ai"
+      ]
+    },
+    "f14r": {
+      "heading": "pchodaiin",
+      "ngrams": [
+        "cho",
+        "dai",
+        "pc",
+        "in",
+        "ho",
+        "hod",
+        "oda",
+        "iin",
+        "pch",
+        "od",
+        "odai",
+        "ii",
+        "pcho",
+        "hoda",
+        "ch",
+        "chod",
+        "daii",
+        "ai",
+        "aiin",
+        "aii",
+        "da"
+      ]
+    },
+    "f14v": {
+      "heading": "pdychoiin",
+      "ngrams": [
+        "dych",
+        "cho",
+        "choi",
+        "in",
+        "ho",
+        "ycho",
+        "dy",
+        "iin",
+        "oi",
+        "ii",
+        "hoii",
+        "hoi",
+        "pdyc",
+        "ch",
+        "pdy",
+        "yc",
+        "oiin",
+        "ych",
+        "dyc",
+        "oii",
+        "pd"
+      ]
+    },
+    "f15r": {
+      "heading": "tshor",
+      "ngrams": [
+        "ts",
+        "shor",
+        "sho",
+        "tsho",
+        "tsh",
+        "or",
+        "ho",
+        "hor",
+        "sh"
+      ]
+    },
+    "f15v": {
+      "heading": "poror",
+      "ngrams": [
+        "ro",
+        "oro",
+        "oror",
+        "por",
+        "po",
+        "or",
+        "ror",
+        "poro"
+      ]
+    },
+    "f16r": {
+      "heading": "pocheody",
+      "ngrams": [
+        "che",
+        "cheo",
+        "dy",
+        "poc",
+        "poch",
+        "oc",
+        "eo",
+        "heo",
+        "eod",
+        "ch",
+        "od",
+        "eody",
+        "po",
+        "heod",
+        "oche",
+        "he",
+        "ody",
+        "och"
+      ]
+    },
+    "f16v": {
+      "heading": "pchraiin",
+      "ngrams": [
+        "chr",
+        "raii",
+        "hr",
+        "ra",
+        "aii",
+        "chra",
+        "iin",
+        "rai",
+        "pch",
+        "pc",
+        "ch",
+        "in",
+        "hra",
+        "ii",
+        "hrai",
+        "ai",
+        "pchr",
+        "aiin"
+      ]
+    },
+    "f17r": {
+      "heading": "fshody",
+      "ngrams": [
+        "sho",
+        "dy",
+        "hod",
+        "ody",
+        "fsh",
+        "fsho",
+        "od",
+        "shod",
+        "fs",
+        "hody",
+        "ho",
+        "sh"
+      ]
+    },
+    "f17v": {
+      "heading": "pchodol",
+      "ngrams": [
+        "ol",
+        "odo",
+        "cho",
+        "hodo",
+        "hod",
+        "odol",
+        "pch",
+        "do",
+        "pc",
+        "ch",
+        "od",
+        "dol",
+        "chod",
+        "pcho",
+        "ho"
+      ]
+    },
+    "f18r": {
+      "heading": "pdrairdy",
+      "ngrams": [
+        "air",
+        "pdr",
+        "ra",
+        "ir",
+        "dy",
+        "dra",
+        "dr",
+        "irdy",
+        "rai",
+        "pdra",
+        "rd",
+        "drai",
+        "ird",
+        "rair",
+        "ai",
+        "rdy",
+        "pd",
+        "aird"
+      ]
+    },
+    "f18v": {
+      "heading": "told",
+      "ngrams": [
+        "ol",
+        "ld",
+        "told",
+        "tol",
+        "to",
+        "old"
+      ]
+    },
+    "f19r": {
+      "heading": "pchor",
+      "ngrams": [
+        "cho",
+        "pcho",
+        "pch",
+        "pc",
+        "ch",
+        "chor",
+        "or",
+        "ho",
+        "hor"
+      ]
+    },
+    "f19v": {
+      "heading": "pochaiin",
+      "ngrams": [
+        "hai",
+        "haii",
+        "ocha",
+        "aii",
+        "poc",
+        "poch",
+        "oc",
+        "iin",
+        "chai",
+        "ii",
+        "ch",
+        "in",
+        "ha",
+        "po",
+        "ai",
+        "cha",
+        "och",
+        "aiin"
+      ]
+    },
+    "f20r": {
+      "heading": "kdchody",
+      "ngrams": [
+        "dc",
+        "dch",
+        "cho",
+        "kd",
+        "dy",
+        "hod",
+        "ody",
+        "ch",
+        "od",
+        "chod",
+        "kdc",
+        "dcho",
+        "hody",
+        "ho",
+        "kdch"
+      ]
+    },
+    "f20v": {
+      "heading": "faiis",
+      "ngrams": [
+        "fai",
+        "is",
+        "iis",
+        "aii",
+        "fa",
+        "faii",
+        "ii",
+        "ai",
+        "aiis"
+      ]
+    },
+    "f21r": {
+      "heading": "pchor",
+      "ngrams": [
+        "cho",
+        "pcho",
+        "pch",
+        "pc",
+        "ch",
+        "chor",
+        "or",
+        "ho",
+        "hor"
+      ]
+    },
+    "f21v": {
+      "heading": "toldshy",
+      "ngrams": [
+        "ol",
+        "ld",
+        "dsh",
+        "ldsh",
+        "old",
+        "ds",
+        "olds",
+        "dshy",
+        "told",
+        "lds",
+        "tol",
+        "to",
+        "sh",
+        "hy",
+        "shy"
+      ]
+    },
+    "f22r": {
+      "heading": "pol",
+      "ngrams": [
+        "ol",
+        "po",
+        "pol"
+      ]
+    },
+    "f22v": {
+      "heading": "pysaiinor",
+      "ngrams": [
+        "in",
+        "sai",
+        "iin",
+        "ysa",
+        "ys",
+        "ii",
+        "pys",
+        "pysa",
+        "saii",
+        "sa",
+        "ino",
+        "ai",
+        "no",
+        "inor",
+        "nor",
+        "aiin",
+        "aii",
+        "py",
+        "iino",
+        "ysai",
+        "or"
+      ]
+    },
+    "f23r": {
+      "heading": "pydchdom",
+      "ngrams": [
+        "dc",
+        "yd",
+        "dch",
+        "pyd",
+        "hdo",
+        "chdo",
+        "dchd",
+        "do",
+        "ch",
+        "py",
+        "om",
+        "pydc",
+        "hd",
+        "ydch",
+        "hdom",
+        "dom",
+        "ydc",
+        "chd"
+      ]
+    },
+    "f23v": {
+      "heading": "podairol",
+      "ngrams": [
+        "ro",
+        "ol",
+        "air",
+        "dair",
+        "dai",
+        "ir",
+        "oda",
+        "iro",
+        "irol",
+        "od",
+        "rol",
+        "po",
+        "poda",
+        "da",
+        "ai",
+        "odai",
+        "pod",
+        "airo"
+      ]
+    },
+    "f24r": {
+      "heading": "porory",
+      "ngrams": [
+        "ro",
+        "ry",
+        "rory",
+        "oro",
+        "oror",
+        "ory",
+        "por",
+        "po",
+        "or",
+        "ror",
+        "poro"
+      ]
+    },
+    "f24v": {
+      "heading": "tchodar",
+      "ngrams": [
+        "odar",
+        "tch",
+        "cho",
+        "hod",
+        "oda",
+        "ar",
+        "dar",
+        "hoda",
+        "ch",
+        "od",
+        "tcho",
+        "chod",
+        "tc",
+        "da",
+        "ho"
+      ]
+    },
+    "f25r": {
+      "heading": "fcholdy",
+      "ngrams": [
+        "fch",
+        "ol",
+        "ld",
+        "hol",
+        "cho",
+        "oldy",
+        "dy",
+        "fcho",
+        "chol",
+        "ch",
+        "hold",
+        "fc",
+        "ho",
+        "ldy",
+        "old"
+      ]
+    },
+    "f25v": {
+      "heading": "poeeaiin",
+      "ngrams": [
+        "poee",
+        "oee",
+        "eea",
+        "ea",
+        "aii",
+        "eai",
+        "oe",
+        "iin",
+        "ii",
+        "poe",
+        "in",
+        "eeai",
+        "po",
+        "ee",
+        "eaii",
+        "ai",
+        "oeea",
+        "aiin"
+      ]
+    },
+    "f27r": {
+      "heading": "ksor",
+      "ngrams": [
+        "kso",
+        "so",
+        "sor",
+        "ks",
+        "or",
+        "ksor"
+      ]
+    },
+    "f27v": {
+      "heading": "fochof",
+      "ngrams": [
+        "of",
+        "cho",
+        "foch",
+        "chof",
+        "oc",
+        "fo",
+        "ch",
+        "hof",
+        "ocho",
+        "ho",
+        "och",
+        "foc"
+      ]
+    },
+    "f28r": {
+      "heading": "pchodar",
+      "ngrams": [
+        "odar",
+        "cho",
+        "hod",
+        "oda",
+        "ar",
+        "dar",
+        "hoda",
+        "pch",
+        "pc",
+        "ch",
+        "od",
+        "chod",
+        "da",
+        "pcho",
+        "ho"
+      ]
+    },
+    "f28v": {
+      "heading": "kshol",
+      "ngrams": [
+        "ol",
+        "sho",
+        "hol",
+        "shol",
+        "ks",
+        "ksh",
+        "ho",
+        "sh",
+        "ksho"
+      ]
+    },
+    "f29r": {
+      "heading": "poraiin",
+      "ngrams": [
+        "raii",
+        "ra",
+        "aii",
+        "pora",
+        "iin",
+        "rai",
+        "por",
+        "in",
+        "po",
+        "ii",
+        "orai",
+        "ai",
+        "or",
+        "aiin",
+        "ora"
+      ]
+    },
+    "f29v": {
+      "heading": "kooiin",
+      "ngrams": [
+        "ooi",
+        "ko",
+        "ooii",
+        "oo",
+        "oiin",
+        "iin",
+        "oi",
+        "ii",
+        "kooi",
+        "in",
+        "oii",
+        "koo"
+      ]
+    },
+    "f30r": {
+      "heading": "okchesy",
+      "ngrams": [
+        "ches",
+        "che",
+        "kch",
+        "ok",
+        "okc",
+        "esy",
+        "hesy",
+        "es",
+        "ch",
+        "sy",
+        "hes",
+        "kche",
+        "he",
+        "okch",
+        "kc"
+      ]
+    },
+    "f30v": {
+      "heading": "cthscthain",
+      "ngrams": [
+        "thsc",
+        "hsct",
+        "tha",
+        "ct",
+        "in",
+        "hai",
+        "sc",
+        "cth",
+        "hain",
+        "ctha",
+        "ths",
+        "hsc",
+        "th",
+        "ai",
+        "sct",
+        "hs",
+        "scth",
+        "ain",
+        "thai",
+        "ha",
+        "cths"
+      ]
+    },
+    "f32r": {
+      "heading": "fchoiin",
+      "ngrams": [
+        "fch",
+        "oii",
+        "cho",
+        "fcho",
+        "iin",
+        "oi",
+        "choi",
+        "ch",
+        "in",
+        "ii",
+        "hoii",
+        "fc",
+        "ho",
+        "hoi",
+        "oiin"
+      ]
+    },
+    "f32v": {
+      "heading": "kcheodaiin",
+      "ngrams": [
+        "dai",
+        "eod",
+        "kche",
+        "in",
+        "he",
+        "kch",
+        "oda",
+        "iin",
+        "od",
+        "odai",
+        "ii",
+        "eo",
+        "heo",
+        "ch",
+        "daii",
+        "heod",
+        "che",
+        "ai",
+        "aiin",
+        "cheo",
+        "aii",
+        "eoda",
+        "da",
+        "kc"
+      ]
+    },
+    "f35r": {
+      "heading": "cthoo",
+      "ngrams": [
+        "tho",
+        "hoo",
+        "oo",
+        "thoo",
+        "cth",
+        "ct",
+        "ctho",
+        "th",
+        "ho"
+      ]
+    },
+    "f35v": {
+      "heading": "par",
+      "ngrams": [
+        "par",
+        "pa",
+        "ar"
+      ]
+    },
+    "f36r": {
+      "heading": "pchafdan",
+      "ngrams": [
+        "chaf",
+        "an",
+        "hafd",
+        "afda",
+        "afd",
+        "fdan",
+        "pch",
+        "pc",
+        "ch",
+        "dan",
+        "fd",
+        "ha",
+        "af",
+        "da",
+        "fda",
+        "pcha",
+        "cha",
+        "haf"
+      ]
+    },
+    "f36v": {
+      "heading": "pcharasy",
+      "ngrams": [
+        "ara",
+        "char",
+        "rasy",
+        "aras",
+        "ra",
+        "ar",
+        "pch",
+        "pc",
+        "ch",
+        "sy",
+        "ras",
+        "ha",
+        "pcha",
+        "har",
+        "hara",
+        "as",
+        "cha",
+        "asy"
+      ]
+    },
+    "f37r": {
+      "heading": "tocphol",
+      "ngrams": [
+        "cp",
+        "ol",
+        "cpho",
+        "hol",
+        "ocp",
+        "oc",
+        "phol",
+        "ph",
+        "to",
+        "cph",
+        "pho",
+        "tocp",
+        "toc",
+        "ho",
+        "ocph"
+      ]
+    },
+    "f37v": {
+      "heading": "kshody",
+      "ngrams": [
+        "sho",
+        "dy",
+        "hod",
+        "ody",
+        "od",
+        "ks",
+        "shod",
+        "hody",
+        "ksh",
+        "ho",
+        "sh",
+        "ksho"
+      ]
+    },
+    "f38r": {
+      "heading": "tolor",
+      "ngrams": [
+        "ol",
+        "olo",
+        "tolo",
+        "olor",
+        "lo",
+        "lor",
+        "tol",
+        "or",
+        "to"
+      ]
+    },
+    "f38v": {
+      "heading": "okchop",
+      "ngrams": [
+        "kch",
+        "ok",
+        "cho",
+        "okc",
+        "okch",
+        "ch",
+        "kcho",
+        "chop",
+        "hop",
+        "ho",
+        "kc",
+        "op"
+      ]
+    },
+    "f42r": {
+      "heading": "sho",
+      "ngrams": [
+        "ho",
+        "sh",
+        "sho"
+      ]
+    },
+    "f42v": {
+      "heading": "tcho",
+      "ngrams": [
+        "cho",
+        "ch",
+        "tcho",
+        "tc",
+        "tch",
+        "ho"
+      ]
+    },
+    "f44r": {
+      "heading": "tshodpy",
+      "ngrams": [
+        "ts",
+        "dp",
+        "sho",
+        "dpy",
+        "hod",
+        "odpy",
+        "tsho",
+        "od",
+        "py",
+        "tsh",
+        "shod",
+        "hodp",
+        "ho",
+        "odp",
+        "sh"
+      ]
+    },
+    "f44v": {
+      "heading": "tsho",
+      "ngrams": [
+        "ts",
+        "sho",
+        "tsho",
+        "tsh",
+        "ho",
+        "sh"
+      ]
+    },
+    "f45r": {
+      "heading": "pykydal",
+      "ngrams": [
+        "yd",
+        "da",
+        "al",
+        "pyky",
+        "yky",
+        "ky",
+        "yda",
+        "ykyd",
+        "py",
+        "dal",
+        "yk",
+        "pyk",
+        "kyd",
+        "kyda",
+        "ydal"
+      ]
+    },
+    "f45v": {
+      "heading": "korary",
+      "ngrams": [
+        "ko",
+        "orar",
+        "ry",
+        "ary",
+        "ra",
+        "ar",
+        "rar",
+        "kora",
+        "kor",
+        "rary",
+        "or",
+        "ora"
+      ]
+    },
+    "f47r": {
+      "heading": "pchair",
+      "ngrams": [
+        "hai",
+        "air",
+        "ir",
+        "chai",
+        "hair",
+        "pch",
+        "pc",
+        "ch",
+        "pcha",
+        "ha",
+        "ai",
+        "cha"
+      ]
+    },
+    "f47v": {
+      "heading": "psheot",
+      "ngrams": [
+        "ot",
+        "psh",
+        "sheo",
+        "heot",
+        "ps",
+        "eo",
+        "heo",
+        "she",
+        "eot",
+        "pshe",
+        "he",
+        "sh"
+      ]
+    },
+    "f49r": {
+      "heading": "poshol",
+      "ngrams": [
+        "ol",
+        "sho",
+        "pos",
+        "hol",
+        "posh",
+        "osh",
+        "osho",
+        "os",
+        "po",
+        "ho",
+        "sh",
+        "shol"
+      ]
+    },
+    "f51r": {
+      "heading": "tcholdchy",
+      "ngrams": [
+        "ld",
+        "cho",
+        "chol",
+        "chy",
+        "ho",
+        "hy",
+        "ldch",
+        "dch",
+        "dchy",
+        "hol",
+        "ldc",
+        "oldc",
+        "tc",
+        "old",
+        "dc",
+        "ol",
+        "ch",
+        "tcho",
+        "tch",
+        "hold"
+      ]
+    },
+    "f51v": {
+      "heading": "poshody",
+      "ngrams": [
+        "sho",
+        "pos",
+        "posh",
+        "dy",
+        "osh",
+        "hod",
+        "ody",
+        "osho",
+        "os",
+        "od",
+        "po",
+        "shod",
+        "hody",
+        "ho",
+        "sh"
+      ]
+    },
+    "f52r": {
+      "heading": "tdokchcfhy",
+      "ngrams": [
+        "cfh",
+        "hc",
+        "fhy",
+        "okch",
+        "hy",
+        "dok",
+        "kch",
+        "fh",
+        "chc",
+        "dokc",
+        "hcfh",
+        "kc",
+        "ok",
+        "okc",
+        "chcf",
+        "do",
+        "ch",
+        "tdok",
+        "hcf",
+        "td",
+        "kchc",
+        "cf",
+        "cfhy",
+        "tdo"
+      ]
+    },
+    "f52v": {
+      "heading": "pchor",
+      "ngrams": [
+        "cho",
+        "pcho",
+        "pch",
+        "pc",
+        "ch",
+        "chor",
+        "or",
+        "ho",
+        "hor"
+      ]
+    },
+    "f53r": {
+      "heading": "kodam",
+      "ngrams": [
+        "ko",
+        "dam",
+        "koda",
+        "kod",
+        "am",
+        "odam",
+        "oda",
+        "od",
+        "da"
+      ]
+    },
+    "f53v": {
+      "heading": "tshor",
+      "ngrams": [
+        "ts",
+        "shor",
+        "sho",
+        "tsho",
+        "tsh",
+        "or",
+        "ho",
+        "hor",
+        "sh"
+      ]
+    },
+    "f54r": {
+      "heading": "podaiin",
+      "ngrams": [
+        "dai",
+        "aii",
+        "oda",
+        "iin",
+        "poda",
+        "od",
+        "in",
+        "po",
+        "ii",
+        "da",
+        "ai",
+        "odai",
+        "daii",
+        "pod",
+        "aiin"
+      ]
+    },
+    "f54v": {
+      "heading": "pcheodar",
+      "ngrams": [
+        "pche",
+        "odar",
+        "che",
+        "cheo",
+        "oda",
+        "eo",
+        "ar",
+        "heo",
+        "pch",
+        "pc",
+        "ch",
+        "od",
+        "eod",
+        "dar",
+        "heod",
+        "da",
+        "he",
+        "eoda"
+      ]
+    },
+    "f56r": {
+      "heading": "otchal",
+      "ngrams": [
+        "ot",
+        "al",
+        "tch",
+        "chal",
+        "hal",
+        "otch",
+        "ch",
+        "tcha",
+        "ha",
+        "tc",
+        "otc",
+        "cha"
+      ]
+    },
+    "f56v": {
+      "heading": "kcheat",
+      "ngrams": [
+        "chea",
+        "che",
+        "kch",
+        "hea",
+        "ea",
+        "at",
+        "ch",
+        "kche",
+        "heat",
+        "he",
+        "kc",
+        "eat"
+      ]
+    },
+    "f58r": {
+      "heading": "kor",
+      "ngrams": [
+        "ko",
+        "or",
+        "kor"
+      ]
+    },
+    "f58v": {
+      "heading": "tol",
+      "ngrams": [
+        "ol",
+        "to",
+        "tol"
+      ]
+    },
+    "f87r": {
+      "heading": "poalshsal",
+      "ngrams": [
+        "sal",
+        "poa",
+        "oals",
+        "shs",
+        "hsal",
+        "sh",
+        "al",
+        "lshs",
+        "oa",
+        "poal",
+        "sa",
+        "po",
+        "hsa",
+        "shsa",
+        "alsh",
+        "hs",
+        "ls",
+        "lsh",
+        "als",
+        "oal"
+      ]
+    },
+    "f87v": {
+      "heading": "pcheey",
+      "ngrams": [
+        "pche",
+        "che",
+        "chee",
+        "hee",
+        "eey",
+        "heey",
+        "pch",
+        "pc",
+        "ch",
+        "ey",
+        "ee",
+        "he"
+      ]
+    },
+    "f88r": {
+      "heading": "otorchety",
+      "ngrams": [
+        "orc",
+        "ty",
+        "he",
+        "to",
+        "hety",
+        "chet",
+        "het",
+        "rche",
+        "rch",
+        "et",
+        "orch",
+        "oto",
+        "ch",
+        "che",
+        "ot",
+        "rc",
+        "otor",
+        "tor",
+        "ety",
+        "torc",
+        "or"
+      ]
+    },
+    "f88v": {
+      "heading": "okolyd",
+      "ngrams": [
+        "ko",
+        "ol",
+        "yd",
+        "oko",
+        "koly",
+        "ok",
+        "lyd",
+        "olyd",
+        "kol",
+        "okol",
+        "ly",
+        "oly"
+      ]
+    },
+    "f89r1": {
+      "heading": "okchshy",
+      "ngrams": [
+        "kch",
+        "hs",
+        "ok",
+        "kchs",
+        "chsh",
+        "chs",
+        "okc",
+        "hshy",
+        "ch",
+        "hsh",
+        "okch",
+        "kc",
+        "sh",
+        "hy",
+        "shy"
+      ]
+    },
+    "f89r2": {
+      "heading": "odory",
+      "ngrams": [
+        "dory",
+        "odo",
+        "ry",
+        "odor",
+        "dor",
+        "do",
+        "ory",
+        "od",
+        "or"
+      ]
+    },
+    "f89v2": {
+      "heading": "choeesy",
+      "ngrams": [
+        "choe",
+        "oee",
+        "hoee",
+        "cho",
+        "eesy",
+        "esy",
+        "oe",
+        "es",
+        "ch",
+        "sy",
+        "ees",
+        "ee",
+        "hoe",
+        "oees",
+        "ho"
+      ]
+    },
+    "f89v1": {
+      "heading": "okoraldy",
+      "ngrams": [
+        "ko",
+        "oko",
+        "al",
+        "ld",
+        "okor",
+        "ok",
+        "ral",
+        "ra",
+        "dy",
+        "rald",
+        "aldy",
+        "ald",
+        "kora",
+        "kor",
+        "oral",
+        "or",
+        "ldy",
+        "ora"
+      ]
+    },
+    "f90r1": {
+      "heading": "poleeol",
+      "ngrams": [
+        "eol",
+        "ol",
+        "olee",
+        "ole",
+        "pol",
+        "leeo",
+        "eeol",
+        "pole",
+        "eo",
+        "po",
+        "ee",
+        "lee",
+        "eeo",
+        "le"
+      ]
+    },
+    "f90r2": {
+      "heading": "toealchs",
+      "ngrams": [
+        "al",
+        "toea",
+        "hs",
+        "lchs",
+        "ea",
+        "eal",
+        "chs",
+        "lc",
+        "oe",
+        "toe",
+        "ch",
+        "alch",
+        "oea",
+        "lch",
+        "oeal",
+        "ealc",
+        "to",
+        "alc"
+      ]
+    },
+    "f90v2": {
+      "heading": "cphdaithy",
+      "ngrams": [
+        "hda",
+        "dai",
+        "hdai",
+        "thy",
+        "cph",
+        "aith",
+        "hy",
+        "dait",
+        "ph",
+        "cphd",
+        "it",
+        "ait",
+        "th",
+        "hd",
+        "ai",
+        "ithy",
+        "phd",
+        "phda",
+        "cp",
+        "ith",
+        "da"
+      ]
+    },
+    "f90v1": {
+      "heading": "pcheor",
+      "ngrams": [
+        "pche",
+        "che",
+        "cheo",
+        "eor",
+        "eo",
+        "heo",
+        "pch",
+        "pc",
+        "ch",
+        "heor",
+        "he",
+        "or"
+      ]
+    },
+    "f93r": {
+      "heading": "kodshol",
+      "ngrams": [
+        "ko",
+        "ol",
+        "sho",
+        "kod",
+        "hol",
+        "ds",
+        "kods",
+        "shol",
+        "odsh",
+        "od",
+        "dsh",
+        "dsho",
+        "ho",
+        "sh",
+        "ods"
+      ]
+    },
+    "f93v": {
+      "heading": "possheody",
+      "ngrams": [
+        "oss",
+        "eod",
+        "sheo",
+        "he",
+        "sh",
+        "poss",
+        "dy",
+        "od",
+        "eo",
+        "heo",
+        "she",
+        "os",
+        "po",
+        "heod",
+        "ssh",
+        "ss",
+        "sshe",
+        "pos",
+        "eody",
+        "ossh",
+        "ody"
+      ]
+    },
+    "f96r": {
+      "heading": "tor",
+      "ngrams": [
+        "or",
+        "to",
+        "tor"
+      ]
+    },
+    "f96v": {
+      "heading": "psheoas",
+      "ngrams": [
+        "oas",
+        "psh",
+        "sheo",
+        "eoas",
+        "ps",
+        "eo",
+        "eoa",
+        "heo",
+        "she",
+        "oa",
+        "pshe",
+        "he",
+        "as",
+        "sh",
+        "heoa"
+      ]
+    },
+    "f99r": {
+      "heading": "okoramog",
+      "ngrams": [
+        "amog",
+        "ko",
+        "oko",
+        "okor",
+        "am",
+        "ok",
+        "mo",
+        "ra",
+        "mog",
+        "ramo",
+        "og",
+        "ram",
+        "kor",
+        "kora",
+        "or",
+        "oram",
+        "amo",
+        "ora"
+      ]
+    },
+    "f99v": {
+      "heading": "otaramy",
+      "ngrams": [
+        "ara",
+        "ot",
+        "aram",
+        "am",
+        "ramy",
+        "my",
+        "tar",
+        "ra",
+        "ar",
+        "tara",
+        "ota",
+        "ram",
+        "ta",
+        "otar",
+        "amy"
+      ]
+    },
+    "f100r": {
+      "heading": "chosaroshol",
+      "ngrams": [
+        "sho",
+        "cho",
+        "aro",
+        "chos",
+        "ros",
+        "rosh",
+        "ho",
+        "sh",
+        "shol",
+        "ro",
+        "hol",
+        "aros",
+        "osh",
+        "hosa",
+        "hos",
+        "saro",
+        "ol",
+        "ch",
+        "os",
+        "sa",
+        "osa",
+        "ar",
+        "osar",
+        "sar",
+        "osho"
+      ]
+    },
+    "f100v": {
+      "heading": "tolchd",
+      "ngrams": [
+        "ol",
+        "tolc",
+        "lchd",
+        "olch",
+        "lc",
+        "ch",
+        "olc",
+        "lch",
+        "hd",
+        "tol",
+        "to",
+        "chd"
+      ]
+    },
+    "f101r1": {
+      "heading": "pcheol",
+      "ngrams": [
+        "eol",
+        "ol",
+        "pche",
+        "che",
+        "cheo",
+        "eo",
+        "heol",
+        "heo",
+        "pch",
+        "pc",
+        "ch",
+        "he"
+      ]
+    },
+    "f101v2": {
+      "heading": "sairaly",
+      "ngrams": [
+        "al",
+        "air",
+        "raly",
+        "ral",
+        "ra",
+        "ir",
+        "sair",
+        "iral",
+        "sa",
+        "sai",
+        "ai",
+        "ira",
+        "aly",
+        "ly",
+        "aira"
+      ]
+    },
+    "f102r1": {
+      "heading": "dordod",
+      "ngrams": [
+        "rdo",
+        "ord",
+        "ordo",
+        "dod",
+        "rdod",
+        "dor",
+        "do",
+        "rd",
+        "od",
+        "dord",
+        "or"
+      ]
+    },
+    "f102r2": {
+      "heading": "lsais",
+      "ngrams": [
+        "is",
+        "ais",
+        "lsai",
+        "sais",
+        "lsa",
+        "ls",
+        "sa",
+        "sai",
+        "ai"
+      ]
+    },
+    "f102v2": {
+      "heading": "porshols",
+      "ngrams": [
+        "ols",
+        "ol",
+        "ors",
+        "rs",
+        "sho",
+        "hol",
+        "pors",
+        "ls",
+        "hols",
+        "orsh",
+        "por",
+        "rsho",
+        "po",
+        "rsh",
+        "or",
+        "ho",
+        "sh",
+        "shol"
+      ]
+    },
+    "f102v1": {
+      "heading": "ker",
+      "ngrams": [
+        "ker",
+        "er",
+        "ke"
+      ]
+    }
+  },
+  "heading_clusters": [
+    {
+      "threshold": 0.5,
+      "num_clusters": 92,
+      "clusters": {
+        "78": [
+          {
+            "folio": "f1r",
+            "heading": "fachys"
+          }
+        ],
+        "72": [
+          {
+            "folio": "f1v",
+            "heading": "kchsy"
+          }
+        ],
+        "47": [
+          {
+            "folio": "f2r",
+            "heading": "kydainy"
+          }
+        ],
+        "31": [
+          {
+            "folio": "f2v",
+            "heading": "kooiin"
+          },
+          {
+            "folio": "f29v",
+            "heading": "kooiin"
+          }
+        ],
+        "89": [
+          {
+            "folio": "f3r",
+            "heading": "tsheos"
+          }
+        ],
+        "35": [
+          {
+            "folio": "f3v",
+            "heading": "koaiin"
+          }
+        ],
+        "43": [
+          {
+            "folio": "f4r",
+            "heading": "kodalchy"
+          }
+        ],
+        "32": [
+          {
+            "folio": "f4v",
+            "heading": "pchooiin"
+          }
+        ],
+        "53": [
+          {
+            "folio": "f5r",
+            "heading": "kshody"
+          },
+          {
+            "folio": "f17r",
+            "heading": "fshody"
+          },
+          {
+            "folio": "f37v",
+            "heading": "kshody"
+          },
+          {
+            "folio": "f51v",
+            "heading": "poshody"
+          }
+        ],
+        "85": [
+          {
+            "folio": "f5v",
+            "heading": "kocheor"
+          }
+        ],
+        "5": [
+          {
+            "folio": "f6r",
+            "heading": "foar"
+          }
+        ],
+        "6": [
+          {
+            "folio": "f6v",
+            "heading": "koar"
+          }
+        ],
+        "33": [
+          {
+            "folio": "f7r",
+            "heading": "fchodaiin"
+          },
+          {
+            "folio": "f14r",
+            "heading": "pchodaiin"
+          },
+          {
+            "folio": "f54r",
+            "heading": "podaiin"
+          }
+        ],
+        "28": [
+          {
+            "folio": "f7v",
+            "heading": "polyshy"
+          }
+        ],
+        "59": [
+          {
+            "folio": "f8r",
+            "heading": "pshol"
+          },
+          {
+            "folio": "f28v",
+            "heading": "kshol"
+          }
+        ],
+        "50": [
+          {
+            "folio": "f8v",
+            "heading": "cthod"
+          },
+          {
+            "folio": "f35r",
+            "heading": "cthoo"
+          }
+        ],
+        "10": [
+          {
+            "folio": "f9r",
+            "heading": "tydlo"
+          }
+        ],
+        "65": [
+          {
+            "folio": "f9v",
+            "heading": "fochor"
+          },
+          {
+            "folio": "f27v",
+            "heading": "fochof"
+          }
+        ],
+        "67": [
+          {
+            "folio": "f10r",
+            "heading": "pchocthy"
+          }
+        ],
+        "36": [
+          {
+            "folio": "f10v",
+            "heading": "paiin"
+          }
+        ],
+        "56": [
+          {
+            "folio": "f11r",
+            "heading": "tshol"
+          },
+          {
+            "folio": "f15r",
+            "heading": "tshor"
+          },
+          {
+            "folio": "f44v",
+            "heading": "tsho"
+          },
+          {
+            "folio": "f53v",
+            "heading": "tshor"
+          }
+        ],
+        "52": [
+          {
+            "folio": "f11v",
+            "heading": "poldchody"
+          },
+          {
+            "folio": "f20r",
+            "heading": "kdchody"
+          }
+        ],
+        "54": [
+          {
+            "folio": "f13r",
+            "heading": "torshor"
+          }
+        ],
+        "7": [
+          {
+            "folio": "f13v",
+            "heading": "koair"
+          }
+        ],
+        "30": [
+          {
+            "folio": "f14v",
+            "heading": "pdychoiin"
+          },
+          {
+            "folio": "f32r",
+            "heading": "fchoiin"
+          }
+        ],
+        "12": [
+          {
+            "folio": "f15v",
+            "heading": "poror"
+          },
+          {
+            "folio": "f24r",
+            "heading": "porory"
+          }
+        ],
+        "86": [
+          {
+            "folio": "f16r",
+            "heading": "pocheody"
+          }
+        ],
+        "37": [
+          {
+            "folio": "f16v",
+            "heading": "pchraiin"
+          }
+        ],
+        "69": [
+          {
+            "folio": "f17v",
+            "heading": "pchodol"
+          }
+        ],
+        "3": [
+          {
+            "folio": "f18r",
+            "heading": "pdrairdy"
+          }
+        ],
+        "21": [
+          {
+            "folio": "f18v",
+            "heading": "told"
+          },
+          {
+            "folio": "f58v",
+            "heading": "tol"
+          }
+        ],
+        "66": [
+          {
+            "folio": "f19r",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f21r",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f52v",
+            "heading": "pchor"
+          }
+        ],
+        "39": [
+          {
+            "folio": "f19v",
+            "heading": "pochaiin"
+          }
+        ],
+        "42": [
+          {
+            "folio": "f20v",
+            "heading": "faiis"
+          }
+        ],
+        "22": [
+          {
+            "folio": "f21v",
+            "heading": "toldshy"
+          }
+        ],
+        "26": [
+          {
+            "folio": "f22r",
+            "heading": "pol"
+          }
+        ],
+        "41": [
+          {
+            "folio": "f22v",
+            "heading": "pysaiinor"
+          }
+        ],
+        "11": [
+          {
+            "folio": "f23r",
+            "heading": "pydchdom"
+          }
+        ],
+        "45": [
+          {
+            "folio": "f23v",
+            "heading": "podairol"
+          }
+        ],
+        "68": [
+          {
+            "folio": "f24v",
+            "heading": "tchodar"
+          },
+          {
+            "folio": "f28r",
+            "heading": "pchodar"
+          }
+        ],
+        "63": [
+          {
+            "folio": "f25r",
+            "heading": "fcholdy"
+          }
+        ],
+        "40": [
+          {
+            "folio": "f25v",
+            "heading": "poeeaiin"
+          }
+        ],
+        "20": [
+          {
+            "folio": "f27r",
+            "heading": "ksor"
+          }
+        ],
+        "38": [
+          {
+            "folio": "f29r",
+            "heading": "poraiin"
+          }
+        ],
+        "74": [
+          {
+            "folio": "f30r",
+            "heading": "okchesy"
+          }
+        ],
+        "51": [
+          {
+            "folio": "f30v",
+            "heading": "cthscthain"
+          }
+        ],
+        "34": [
+          {
+            "folio": "f32v",
+            "heading": "kcheodaiin"
+          }
+        ],
+        "8": [
+          {
+            "folio": "f35v",
+            "heading": "par"
+          }
+        ],
+        "79": [
+          {
+            "folio": "f36r",
+            "heading": "pchafdan"
+          }
+        ],
+        "81": [
+          {
+            "folio": "f36v",
+            "heading": "pcharasy"
+          }
+        ],
+        "25": [
+          {
+            "folio": "f37r",
+            "heading": "tocphol"
+          }
+        ],
+        "23": [
+          {
+            "folio": "f38r",
+            "heading": "tolor"
+          }
+        ],
+        "75": [
+          {
+            "folio": "f38v",
+            "heading": "okchop"
+          }
+        ],
+        "57": [
+          {
+            "folio": "f42r",
+            "heading": "sho"
+          }
+        ],
+        "70": [
+          {
+            "folio": "f42v",
+            "heading": "tcho"
+          }
+        ],
+        "58": [
+          {
+            "folio": "f44r",
+            "heading": "tshodpy"
+          }
+        ],
+        "48": [
+          {
+            "folio": "f45r",
+            "heading": "pykydal"
+          }
+        ],
+        "17": [
+          {
+            "folio": "f45v",
+            "heading": "korary"
+          }
+        ],
+        "80": [
+          {
+            "folio": "f47r",
+            "heading": "pchair"
+          }
+        ],
+        "88": [
+          {
+            "folio": "f47v",
+            "heading": "psheot"
+          },
+          {
+            "folio": "f96v",
+            "heading": "psheoas"
+          }
+        ],
+        "60": [
+          {
+            "folio": "f49r",
+            "heading": "poshol"
+          }
+        ],
+        "64": [
+          {
+            "folio": "f51r",
+            "heading": "tcholdchy"
+          }
+        ],
+        "77": [
+          {
+            "folio": "f52r",
+            "heading": "tdokchcfhy"
+          }
+        ],
+        "44": [
+          {
+            "folio": "f53r",
+            "heading": "kodam"
+          }
+        ],
+        "84": [
+          {
+            "folio": "f54v",
+            "heading": "pcheodar"
+          }
+        ],
+        "82": [
+          {
+            "folio": "f56r",
+            "heading": "otchal"
+          }
+        ],
+        "76": [
+          {
+            "folio": "f56v",
+            "heading": "kcheat"
+          }
+        ],
+        "18": [
+          {
+            "folio": "f58r",
+            "heading": "kor"
+          }
+        ],
+        "4": [
+          {
+            "folio": "f87r",
+            "heading": "poalshsal"
+          }
+        ],
+        "87": [
+          {
+            "folio": "f87v",
+            "heading": "pcheey"
+          }
+        ],
+        "91": [
+          {
+            "folio": "f88r",
+            "heading": "otorchety"
+          }
+        ],
+        "29": [
+          {
+            "folio": "f88v",
+            "heading": "okolyd"
+          }
+        ],
+        "73": [
+          {
+            "folio": "f89r1",
+            "heading": "okchshy"
+          }
+        ],
+        "13": [
+          {
+            "folio": "f89r2",
+            "heading": "odory"
+          }
+        ],
+        "71": [
+          {
+            "folio": "f89v2",
+            "heading": "choeesy"
+          }
+        ],
+        "15": [
+          {
+            "folio": "f89v1",
+            "heading": "okoraldy"
+          }
+        ],
+        "27": [
+          {
+            "folio": "f90r1",
+            "heading": "poleeol"
+          }
+        ],
+        "46": [
+          {
+            "folio": "f90r2",
+            "heading": "toealchs"
+          }
+        ],
+        "49": [
+          {
+            "folio": "f90v2",
+            "heading": "cphdaithy"
+          }
+        ],
+        "83": [
+          {
+            "folio": "f90v1",
+            "heading": "pcheor"
+          },
+          {
+            "folio": "f101r1",
+            "heading": "pcheol"
+          }
+        ],
+        "61": [
+          {
+            "folio": "f93r",
+            "heading": "kodshol"
+          }
+        ],
+        "90": [
+          {
+            "folio": "f93v",
+            "heading": "possheody"
+          }
+        ],
+        "19": [
+          {
+            "folio": "f96r",
+            "heading": "tor"
+          }
+        ],
+        "16": [
+          {
+            "folio": "f99r",
+            "heading": "okoramog"
+          }
+        ],
+        "9": [
+          {
+            "folio": "f99v",
+            "heading": "otaramy"
+          }
+        ],
+        "62": [
+          {
+            "folio": "f100r",
+            "heading": "chosaroshol"
+          }
+        ],
+        "24": [
+          {
+            "folio": "f100v",
+            "heading": "tolchd"
+          }
+        ],
+        "1": [
+          {
+            "folio": "f101v2",
+            "heading": "sairaly"
+          }
+        ],
+        "14": [
+          {
+            "folio": "f102r1",
+            "heading": "dordod"
+          }
+        ],
+        "2": [
+          {
+            "folio": "f102r2",
+            "heading": "lsais"
+          }
+        ],
+        "55": [
+          {
+            "folio": "f102v2",
+            "heading": "porshols"
+          }
+        ],
+        "92": [
+          {
+            "folio": "f102v1",
+            "heading": "ker"
+          }
+        ]
+      }
+    },
+    {
+      "threshold": 0.7,
+      "num_clusters": 73,
+      "clusters": {
+        "63": [
+          {
+            "folio": "f1r",
+            "heading": "fachys"
+          }
+        ],
+        "58": [
+          {
+            "folio": "f1v",
+            "heading": "kchsy"
+          },
+          {
+            "folio": "f89r1",
+            "heading": "okchshy"
+          }
+        ],
+        "40": [
+          {
+            "folio": "f2r",
+            "heading": "kydainy"
+          }
+        ],
+        "28": [
+          {
+            "folio": "f2v",
+            "heading": "kooiin"
+          },
+          {
+            "folio": "f4v",
+            "heading": "pchooiin"
+          },
+          {
+            "folio": "f29v",
+            "heading": "kooiin"
+          }
+        ],
+        "70": [
+          {
+            "folio": "f3r",
+            "heading": "tsheos"
+          },
+          {
+            "folio": "f47v",
+            "heading": "psheot"
+          },
+          {
+            "folio": "f96v",
+            "heading": "psheoas"
+          }
+        ],
+        "30": [
+          {
+            "folio": "f3v",
+            "heading": "koaiin"
+          },
+          {
+            "folio": "f10v",
+            "heading": "paiin"
+          }
+        ],
+        "36": [
+          {
+            "folio": "f4r",
+            "heading": "kodalchy"
+          }
+        ],
+        "46": [
+          {
+            "folio": "f5r",
+            "heading": "kshody"
+          },
+          {
+            "folio": "f17r",
+            "heading": "fshody"
+          },
+          {
+            "folio": "f37v",
+            "heading": "kshody"
+          },
+          {
+            "folio": "f51v",
+            "heading": "poshody"
+          }
+        ],
+        "68": [
+          {
+            "folio": "f5v",
+            "heading": "kocheor"
+          },
+          {
+            "folio": "f16r",
+            "heading": "pocheody"
+          },
+          {
+            "folio": "f54v",
+            "heading": "pcheodar"
+          },
+          {
+            "folio": "f90v1",
+            "heading": "pcheor"
+          },
+          {
+            "folio": "f101r1",
+            "heading": "pcheol"
+          }
+        ],
+        "5": [
+          {
+            "folio": "f6r",
+            "heading": "foar"
+          },
+          {
+            "folio": "f6v",
+            "heading": "koar"
+          }
+        ],
+        "29": [
+          {
+            "folio": "f7r",
+            "heading": "fchodaiin"
+          },
+          {
+            "folio": "f14r",
+            "heading": "pchodaiin"
+          },
+          {
+            "folio": "f32v",
+            "heading": "kcheodaiin"
+          },
+          {
+            "folio": "f54r",
+            "heading": "podaiin"
+          }
+        ],
+        "25": [
+          {
+            "folio": "f7v",
+            "heading": "polyshy"
+          }
+        ],
+        "49": [
+          {
+            "folio": "f8r",
+            "heading": "pshol"
+          },
+          {
+            "folio": "f28v",
+            "heading": "kshol"
+          },
+          {
+            "folio": "f49r",
+            "heading": "poshol"
+          },
+          {
+            "folio": "f93r",
+            "heading": "kodshol"
+          }
+        ],
+        "43": [
+          {
+            "folio": "f8v",
+            "heading": "cthod"
+          },
+          {
+            "folio": "f35r",
+            "heading": "cthoo"
+          }
+        ],
+        "9": [
+          {
+            "folio": "f9r",
+            "heading": "tydlo"
+          }
+        ],
+        "52": [
+          {
+            "folio": "f9v",
+            "heading": "fochor"
+          },
+          {
+            "folio": "f27v",
+            "heading": "fochof"
+          }
+        ],
+        "54": [
+          {
+            "folio": "f10r",
+            "heading": "pchocthy"
+          }
+        ],
+        "48": [
+          {
+            "folio": "f11r",
+            "heading": "tshol"
+          },
+          {
+            "folio": "f15r",
+            "heading": "tshor"
+          },
+          {
+            "folio": "f42r",
+            "heading": "sho"
+          },
+          {
+            "folio": "f44r",
+            "heading": "tshodpy"
+          },
+          {
+            "folio": "f44v",
+            "heading": "tsho"
+          },
+          {
+            "folio": "f53v",
+            "heading": "tshor"
+          }
+        ],
+        "45": [
+          {
+            "folio": "f11v",
+            "heading": "poldchody"
+          },
+          {
+            "folio": "f20r",
+            "heading": "kdchody"
+          }
+        ],
+        "47": [
+          {
+            "folio": "f13r",
+            "heading": "torshor"
+          },
+          {
+            "folio": "f102v2",
+            "heading": "porshols"
+          }
+        ],
+        "6": [
+          {
+            "folio": "f13v",
+            "heading": "koair"
+          }
+        ],
+        "27": [
+          {
+            "folio": "f14v",
+            "heading": "pdychoiin"
+          },
+          {
+            "folio": "f32r",
+            "heading": "fchoiin"
+          }
+        ],
+        "11": [
+          {
+            "folio": "f15v",
+            "heading": "poror"
+          },
+          {
+            "folio": "f24r",
+            "heading": "porory"
+          }
+        ],
+        "31": [
+          {
+            "folio": "f16v",
+            "heading": "pchraiin"
+          },
+          {
+            "folio": "f29r",
+            "heading": "poraiin"
+          }
+        ],
+        "55": [
+          {
+            "folio": "f17v",
+            "heading": "pchodol"
+          },
+          {
+            "folio": "f24v",
+            "heading": "tchodar"
+          },
+          {
+            "folio": "f28r",
+            "heading": "pchodar"
+          }
+        ],
+        "3": [
+          {
+            "folio": "f18r",
+            "heading": "pdrairdy"
+          }
+        ],
+        "19": [
+          {
+            "folio": "f18v",
+            "heading": "told"
+          },
+          {
+            "folio": "f21v",
+            "heading": "toldshy"
+          },
+          {
+            "folio": "f58v",
+            "heading": "tol"
+          }
+        ],
+        "53": [
+          {
+            "folio": "f19r",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f21r",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f52v",
+            "heading": "pchor"
+          }
+        ],
+        "32": [
+          {
+            "folio": "f19v",
+            "heading": "pochaiin"
+          }
+        ],
+        "35": [
+          {
+            "folio": "f20v",
+            "heading": "faiis"
+          }
+        ],
+        "23": [
+          {
+            "folio": "f22r",
+            "heading": "pol"
+          }
+        ],
+        "34": [
+          {
+            "folio": "f22v",
+            "heading": "pysaiinor"
+          }
+        ],
+        "10": [
+          {
+            "folio": "f23r",
+            "heading": "pydchdom"
+          }
+        ],
+        "38": [
+          {
+            "folio": "f23v",
+            "heading": "podairol"
+          }
+        ],
+        "51": [
+          {
+            "folio": "f25r",
+            "heading": "fcholdy"
+          },
+          {
+            "folio": "f51r",
+            "heading": "tcholdchy"
+          }
+        ],
+        "33": [
+          {
+            "folio": "f25v",
+            "heading": "poeeaiin"
+          }
+        ],
+        "18": [
+          {
+            "folio": "f27r",
+            "heading": "ksor"
+          }
+        ],
+        "59": [
+          {
+            "folio": "f30r",
+            "heading": "okchesy"
+          }
+        ],
+        "44": [
+          {
+            "folio": "f30v",
+            "heading": "cthscthain"
+          }
+        ],
+        "7": [
+          {
+            "folio": "f35v",
+            "heading": "par"
+          }
+        ],
+        "64": [
+          {
+            "folio": "f36r",
+            "heading": "pchafdan"
+          }
+        ],
+        "66": [
+          {
+            "folio": "f36v",
+            "heading": "pcharasy"
+          }
+        ],
+        "22": [
+          {
+            "folio": "f37r",
+            "heading": "tocphol"
+          }
+        ],
+        "20": [
+          {
+            "folio": "f38r",
+            "heading": "tolor"
+          }
+        ],
+        "60": [
+          {
+            "folio": "f38v",
+            "heading": "okchop"
+          }
+        ],
+        "56": [
+          {
+            "folio": "f42v",
+            "heading": "tcho"
+          }
+        ],
+        "41": [
+          {
+            "folio": "f45r",
+            "heading": "pykydal"
+          }
+        ],
+        "15": [
+          {
+            "folio": "f45v",
+            "heading": "korary"
+          }
+        ],
+        "65": [
+          {
+            "folio": "f47r",
+            "heading": "pchair"
+          }
+        ],
+        "62": [
+          {
+            "folio": "f52r",
+            "heading": "tdokchcfhy"
+          }
+        ],
+        "37": [
+          {
+            "folio": "f53r",
+            "heading": "kodam"
+          }
+        ],
+        "67": [
+          {
+            "folio": "f56r",
+            "heading": "otchal"
+          }
+        ],
+        "61": [
+          {
+            "folio": "f56v",
+            "heading": "kcheat"
+          }
+        ],
+        "16": [
+          {
+            "folio": "f58r",
+            "heading": "kor"
+          }
+        ],
+        "4": [
+          {
+            "folio": "f87r",
+            "heading": "poalshsal"
+          }
+        ],
+        "69": [
+          {
+            "folio": "f87v",
+            "heading": "pcheey"
+          }
+        ],
+        "72": [
+          {
+            "folio": "f88r",
+            "heading": "otorchety"
+          }
+        ],
+        "26": [
+          {
+            "folio": "f88v",
+            "heading": "okolyd"
+          }
+        ],
+        "12": [
+          {
+            "folio": "f89r2",
+            "heading": "odory"
+          }
+        ],
+        "57": [
+          {
+            "folio": "f89v2",
+            "heading": "choeesy"
+          }
+        ],
+        "14": [
+          {
+            "folio": "f89v1",
+            "heading": "okoraldy"
+          },
+          {
+            "folio": "f99r",
+            "heading": "okoramog"
+          }
+        ],
+        "24": [
+          {
+            "folio": "f90r1",
+            "heading": "poleeol"
+          }
+        ],
+        "39": [
+          {
+            "folio": "f90r2",
+            "heading": "toealchs"
+          }
+        ],
+        "42": [
+          {
+            "folio": "f90v2",
+            "heading": "cphdaithy"
+          }
+        ],
+        "71": [
+          {
+            "folio": "f93v",
+            "heading": "possheody"
+          }
+        ],
+        "17": [
+          {
+            "folio": "f96r",
+            "heading": "tor"
+          }
+        ],
+        "8": [
+          {
+            "folio": "f99v",
+            "heading": "otaramy"
+          }
+        ],
+        "50": [
+          {
+            "folio": "f100r",
+            "heading": "chosaroshol"
+          }
+        ],
+        "21": [
+          {
+            "folio": "f100v",
+            "heading": "tolchd"
+          }
+        ],
+        "1": [
+          {
+            "folio": "f101v2",
+            "heading": "sairaly"
+          }
+        ],
+        "13": [
+          {
+            "folio": "f102r1",
+            "heading": "dordod"
+          }
+        ],
+        "2": [
+          {
+            "folio": "f102r2",
+            "heading": "lsais"
+          }
+        ],
+        "73": [
+          {
+            "folio": "f102v1",
+            "heading": "ker"
+          }
+        ]
+      }
+    },
+    {
+      "threshold": 0.9,
+      "num_clusters": 30,
+      "clusters": {
+        "26": [
+          {
+            "folio": "f1r",
+            "heading": "fachys"
+          }
+        ],
+        "25": [
+          {
+            "folio": "f1v",
+            "heading": "kchsy"
+          },
+          {
+            "folio": "f30r",
+            "heading": "okchesy"
+          },
+          {
+            "folio": "f38v",
+            "heading": "okchop"
+          },
+          {
+            "folio": "f52r",
+            "heading": "tdokchcfhy"
+          },
+          {
+            "folio": "f56v",
+            "heading": "kcheat"
+          },
+          {
+            "folio": "f89r1",
+            "heading": "okchshy"
+          }
+        ],
+        "20": [
+          {
+            "folio": "f2r",
+            "heading": "kydainy"
+          },
+          {
+            "folio": "f45r",
+            "heading": "pykydal"
+          }
+        ],
+        "17": [
+          {
+            "folio": "f2v",
+            "heading": "kooiin"
+          },
+          {
+            "folio": "f3v",
+            "heading": "koaiin"
+          },
+          {
+            "folio": "f4v",
+            "heading": "pchooiin"
+          },
+          {
+            "folio": "f7r",
+            "heading": "fchodaiin"
+          },
+          {
+            "folio": "f10v",
+            "heading": "paiin"
+          },
+          {
+            "folio": "f14r",
+            "heading": "pchodaiin"
+          },
+          {
+            "folio": "f14v",
+            "heading": "pdychoiin"
+          },
+          {
+            "folio": "f16v",
+            "heading": "pchraiin"
+          },
+          {
+            "folio": "f19v",
+            "heading": "pochaiin"
+          },
+          {
+            "folio": "f20v",
+            "heading": "faiis"
+          },
+          {
+            "folio": "f22v",
+            "heading": "pysaiinor"
+          },
+          {
+            "folio": "f25v",
+            "heading": "poeeaiin"
+          },
+          {
+            "folio": "f29r",
+            "heading": "poraiin"
+          },
+          {
+            "folio": "f29v",
+            "heading": "kooiin"
+          },
+          {
+            "folio": "f32r",
+            "heading": "fchoiin"
+          },
+          {
+            "folio": "f32v",
+            "heading": "kcheodaiin"
+          },
+          {
+            "folio": "f54r",
+            "heading": "podaiin"
+          }
+        ],
+        "28": [
+          {
+            "folio": "f3r",
+            "heading": "tsheos"
+          },
+          {
+            "folio": "f5v",
+            "heading": "kocheor"
+          },
+          {
+            "folio": "f16r",
+            "heading": "pocheody"
+          },
+          {
+            "folio": "f47v",
+            "heading": "psheot"
+          },
+          {
+            "folio": "f54v",
+            "heading": "pcheodar"
+          },
+          {
+            "folio": "f87v",
+            "heading": "pcheey"
+          },
+          {
+            "folio": "f90v1",
+            "heading": "pcheor"
+          },
+          {
+            "folio": "f93v",
+            "heading": "possheody"
+          },
+          {
+            "folio": "f96v",
+            "heading": "psheoas"
+          },
+          {
+            "folio": "f101r1",
+            "heading": "pcheol"
+          }
+        ],
+        "18": [
+          {
+            "folio": "f4r",
+            "heading": "kodalchy"
+          },
+          {
+            "folio": "f23v",
+            "heading": "podairol"
+          },
+          {
+            "folio": "f53r",
+            "heading": "kodam"
+          }
+        ],
+        "23": [
+          {
+            "folio": "f5r",
+            "heading": "kshody"
+          },
+          {
+            "folio": "f8r",
+            "heading": "pshol"
+          },
+          {
+            "folio": "f11r",
+            "heading": "tshol"
+          },
+          {
+            "folio": "f11v",
+            "heading": "poldchody"
+          },
+          {
+            "folio": "f13r",
+            "heading": "torshor"
+          },
+          {
+            "folio": "f15r",
+            "heading": "tshor"
+          },
+          {
+            "folio": "f17r",
+            "heading": "fshody"
+          },
+          {
+            "folio": "f20r",
+            "heading": "kdchody"
+          },
+          {
+            "folio": "f28v",
+            "heading": "kshol"
+          },
+          {
+            "folio": "f37v",
+            "heading": "kshody"
+          },
+          {
+            "folio": "f42r",
+            "heading": "sho"
+          },
+          {
+            "folio": "f44r",
+            "heading": "tshodpy"
+          },
+          {
+            "folio": "f44v",
+            "heading": "tsho"
+          },
+          {
+            "folio": "f49r",
+            "heading": "poshol"
+          },
+          {
+            "folio": "f51v",
+            "heading": "poshody"
+          },
+          {
+            "folio": "f53v",
+            "heading": "tshor"
+          },
+          {
+            "folio": "f93r",
+            "heading": "kodshol"
+          },
+          {
+            "folio": "f100r",
+            "heading": "chosaroshol"
+          },
+          {
+            "folio": "f102v2",
+            "heading": "porshols"
+          }
+        ],
+        "4": [
+          {
+            "folio": "f6r",
+            "heading": "foar"
+          },
+          {
+            "folio": "f6v",
+            "heading": "koar"
+          },
+          {
+            "folio": "f13v",
+            "heading": "koair"
+          }
+        ],
+        "15": [
+          {
+            "folio": "f7v",
+            "heading": "polyshy"
+          },
+          {
+            "folio": "f22r",
+            "heading": "pol"
+          },
+          {
+            "folio": "f90r1",
+            "heading": "poleeol"
+          }
+        ],
+        "22": [
+          {
+            "folio": "f8v",
+            "heading": "cthod"
+          },
+          {
+            "folio": "f30v",
+            "heading": "cthscthain"
+          },
+          {
+            "folio": "f35r",
+            "heading": "cthoo"
+          }
+        ],
+        "7": [
+          {
+            "folio": "f9r",
+            "heading": "tydlo"
+          }
+        ],
+        "24": [
+          {
+            "folio": "f9v",
+            "heading": "fochor"
+          },
+          {
+            "folio": "f10r",
+            "heading": "pchocthy"
+          },
+          {
+            "folio": "f17v",
+            "heading": "pchodol"
+          },
+          {
+            "folio": "f19r",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f21r",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f24v",
+            "heading": "tchodar"
+          },
+          {
+            "folio": "f25r",
+            "heading": "fcholdy"
+          },
+          {
+            "folio": "f27v",
+            "heading": "fochof"
+          },
+          {
+            "folio": "f28r",
+            "heading": "pchodar"
+          },
+          {
+            "folio": "f42v",
+            "heading": "tcho"
+          },
+          {
+            "folio": "f51r",
+            "heading": "tcholdchy"
+          },
+          {
+            "folio": "f52v",
+            "heading": "pchor"
+          },
+          {
+            "folio": "f89v2",
+            "heading": "choeesy"
+          }
+        ],
+        "9": [
+          {
+            "folio": "f15v",
+            "heading": "poror"
+          },
+          {
+            "folio": "f24r",
+            "heading": "porory"
+          }
+        ],
+        "2": [
+          {
+            "folio": "f18r",
+            "heading": "pdrairdy"
+          }
+        ],
+        "13": [
+          {
+            "folio": "f18v",
+            "heading": "told"
+          },
+          {
+            "folio": "f21v",
+            "heading": "toldshy"
+          },
+          {
+            "folio": "f38r",
+            "heading": "tolor"
+          },
+          {
+            "folio": "f58v",
+            "heading": "tol"
+          },
+          {
+            "folio": "f100v",
+            "heading": "tolchd"
+          }
+        ],
+        "8": [
+          {
+            "folio": "f23r",
+            "heading": "pydchdom"
+          }
+        ],
+        "12": [
+          {
+            "folio": "f27r",
+            "heading": "ksor"
+          }
+        ],
+        "5": [
+          {
+            "folio": "f35v",
+            "heading": "par"
+          }
+        ],
+        "27": [
+          {
+            "folio": "f36r",
+            "heading": "pchafdan"
+          },
+          {
+            "folio": "f36v",
+            "heading": "pcharasy"
+          },
+          {
+            "folio": "f47r",
+            "heading": "pchair"
+          },
+          {
+            "folio": "f56r",
+            "heading": "otchal"
+          }
+        ],
+        "14": [
+          {
+            "folio": "f37r",
+            "heading": "tocphol"
+          }
+        ],
+        "11": [
+          {
+            "folio": "f45v",
+            "heading": "korary"
+          },
+          {
+            "folio": "f58r",
+            "heading": "kor"
+          },
+          {
+            "folio": "f89v1",
+            "heading": "okoraldy"
+          },
+          {
+            "folio": "f96r",
+            "heading": "tor"
+          },
+          {
+            "folio": "f99r",
+            "heading": "okoramog"
+          }
+        ],
+        "3": [
+          {
+            "folio": "f87r",
+            "heading": "poalshsal"
+          }
+        ],
+        "29": [
+          {
+            "folio": "f88r",
+            "heading": "otorchety"
+          }
+        ],
+        "16": [
+          {
+            "folio": "f88v",
+            "heading": "okolyd"
+          }
+        ],
+        "10": [
+          {
+            "folio": "f89r2",
+            "heading": "odory"
+          },
+          {
+            "folio": "f102r1",
+            "heading": "dordod"
+          }
+        ],
+        "19": [
+          {
+            "folio": "f90r2",
+            "heading": "toealchs"
+          }
+        ],
+        "21": [
+          {
+            "folio": "f90v2",
+            "heading": "cphdaithy"
+          }
+        ],
+        "6": [
+          {
+            "folio": "f99v",
+            "heading": "otaramy"
+          }
+        ],
+        "1": [
+          {
+            "folio": "f101v2",
+            "heading": "sairaly"
+          },
+          {
+            "folio": "f102r2",
+            "heading": "lsais"
+          }
+        ],
+        "30": [
+          {
+            "folio": "f102v1",
+            "heading": "ker"
+          }
+        ]
+      }
+    }
+  ],
+  "substring_heading_mapping": {
+    "ch": [
+      "pchafdan",
+      "kchsy",
+      "pydchdom",
+      "kocheor",
+      "poldchody",
+      "fochof",
+      "okchshy",
+      "tdokchcfhy",
+      "fchodaiin",
+      "tchodar",
+      "tolchd",
+      "fchoiin",
+      "pchocthy",
+      "pcheodar",
+      "chosaroshol",
+      "kcheat",
+      "pdychoiin",
+      "tcholdchy",
+      "pchodaiin",
+      "pochaiin"
+    ],
+    "ho": [
+      "cthoo",
+      "sho",
+      "kshol",
+      "poldchody",
+      "fochof",
+      "kodshol",
+      "tshodpy",
+      "fchodaiin",
+      "tchodar",
+      "fchoiin",
+      "pchocthy",
+      "chosaroshol",
+      "pdychoiin",
+      "tcholdchy",
+      "pchodaiin",
+      "tshor",
+      "porshols",
+      "tocphol",
+      "tshol",
+      "kshody"
+    ],
+    "sh": [
+      "tsheos",
+      "sho",
+      "kshol",
+      "possheody",
+      "polyshy",
+      "okchshy",
+      "kodshol",
+      "tshodpy",
+      "psheoas",
+      "chosaroshol",
+      "psheot",
+      "poalshsal",
+      "tshor",
+      "porshols",
+      "tshol",
+      "kshody",
+      "poshody",
+      "poshol",
+      "torshor",
+      "fshody"
+    ],
+    "od": [
+      "poldchody",
+      "possheody",
+      "kodshol",
+      "tshodpy",
+      "fchodaiin",
+      "tchodar",
+      "dordod",
+      "pcheodar",
+      "kodam",
+      "pchodaiin",
+      "podairol",
+      "pocheody",
+      "kshody",
+      "cthod",
+      "pchodar",
+      "kodalchy",
+      "poshody",
+      "podaiin",
+      "kdchody",
+      "kcheodaiin"
+    ],
+    "ol": [
+      "kshol",
+      "poldchody",
+      "polyshy",
+      "okolyd",
+      "kodshol",
+      "tolchd",
+      "chosaroshol",
+      "tcholdchy",
+      "podairol",
+      "porshols",
+      "tocphol",
+      "tshol",
+      "tolor",
+      "pcheol",
+      "poleeol",
+      "poshol",
+      "pol",
+      "fcholdy",
+      "toldshy",
+      "pchodol"
+    ],
+    "ai": [
+      "faiis",
+      "sairaly",
+      "cphdaithy",
+      "poraiin",
+      "fchodaiin",
+      "koaiin",
+      "pdrairdy",
+      "cthscthain",
+      "pochaiin",
+      "podairol",
+      "koair",
+      "poeeaiin",
+      "pchraiin",
+      "kydainy",
+      "paiin",
+      "podaiin",
+      "pchair",
+      "kcheodaiin",
+      "lsais",
+      "pchodaiin"
+    ],
+    "or": [
+      "kocheor",
+      "okoramog",
+      "poraiin",
+      "dordod",
+      "kor",
+      "tshor",
+      "porshols",
+      "korary",
+      "porory",
+      "tolor",
+      "pchor",
+      "okoraldy",
+      "torshor",
+      "poror",
+      "otorchety",
+      "pcheor",
+      "tor",
+      "odory",
+      "fochor",
+      "pysaiinor"
+    ],
+    "cho": [
+      "poldchody",
+      "fochof",
+      "fchodaiin",
+      "tchodar",
+      "fchoiin",
+      "pchocthy",
+      "chosaroshol",
+      "pdychoiin",
+      "tcholdchy",
+      "pchodaiin",
+      "pchooiin",
+      "pchor",
+      "tcho",
+      "pchodar",
+      "kdchody",
+      "choeesy",
+      "okchop",
+      "fcholdy",
+      "pchodol",
+      "fochor"
+    ],
+    "in": [
+      "poeeaiin",
+      "fchodaiin",
+      "koaiin",
+      "fchoiin",
+      "pchraiin",
+      "kooiin",
+      "cthscthain",
+      "kcheodaiin",
+      "pchooiin",
+      "pdychoiin",
+      "pchodaiin",
+      "pochaiin",
+      "pysaiinor",
+      "kydainy",
+      "paiin",
+      "podaiin",
+      "poraiin"
+    ],
+    "po": [
+      "poeeaiin",
+      "porshols",
+      "poleeol",
+      "poshol",
+      "pol",
+      "pocheody",
+      "porory",
+      "poshody",
+      "poldchody",
+      "poror",
+      "possheody",
+      "polyshy",
+      "poalshsal",
+      "pochaiin",
+      "podairol",
+      "podaiin",
+      "poraiin"
+    ],
+    "ii": [
+      "faiis",
+      "fchodaiin",
+      "poeeaiin",
+      "koaiin",
+      "fchoiin",
+      "pchraiin",
+      "kooiin",
+      "kcheodaiin",
+      "pchooiin",
+      "pdychoiin",
+      "pchodaiin",
+      "pochaiin",
+      "pysaiinor",
+      "paiin",
+      "podaiin",
+      "poraiin"
+    ],
+    "iin": [
+      "poeeaiin",
+      "fchodaiin",
+      "koaiin",
+      "fchoiin",
+      "pchraiin",
+      "kooiin",
+      "kcheodaiin",
+      "pchooiin",
+      "pdychoiin",
+      "pchodaiin",
+      "pochaiin",
+      "pysaiinor",
+      "paiin",
+      "podaiin",
+      "poraiin"
+    ],
+    "sho": [
+      "tshodpy",
+      "tshor",
+      "porshols",
+      "poshol",
+      "torshor",
+      "sho",
+      "tshol",
+      "kshody",
+      "poshody",
+      "kshol",
+      "chosaroshol",
+      "fshody",
+      "tsho",
+      "pshol",
+      "kodshol"
+    ],
+    "da": [
+      "fchodaiin",
+      "tchodar",
+      "pchafdan",
+      "cphdaithy",
+      "pcheodar",
+      "kcheodaiin",
+      "pchodar",
+      "kodam",
+      "pykydal",
+      "pchodaiin",
+      "kodalchy",
+      "podairol",
+      "kydainy",
+      "podaiin"
+    ],
+    "he": [
+      "psheoas",
+      "pcheol",
+      "tsheos",
+      "pocheody",
+      "pcheodar",
+      "kcheodaiin",
+      "pcheey",
+      "kcheat",
+      "kocheor",
+      "otorchety",
+      "pcheor",
+      "possheody",
+      "psheot",
+      "okchesy"
+    ],
+    "pc": [
+      "pcheol",
+      "pchafdan",
+      "pchraiin",
+      "pchodaiin",
+      "pchocthy",
+      "pchair",
+      "pcheodar",
+      "pcharasy",
+      "pcheey",
+      "pchooiin",
+      "pcheor",
+      "pchor",
+      "pchodol",
+      "pchodar"
+    ],
+    "pch": [
+      "pcheol",
+      "pchafdan",
+      "pchraiin",
+      "pchodaiin",
+      "pchocthy",
+      "pchair",
+      "pcheodar",
+      "pcharasy",
+      "pcheey",
+      "pchooiin",
+      "pcheor",
+      "pchor",
+      "pchodol",
+      "pchodar"
+    ],
+    "ko": [
+      "kodshol",
+      "koaiin",
+      "korary",
+      "kooiin",
+      "kocheor",
+      "koar",
+      "kor",
+      "okoraldy",
+      "kodam",
+      "kodalchy",
+      "okolyd",
+      "koair",
+      "okoramog"
+    ],
+    "aii": [
+      "faiis",
+      "fchodaiin",
+      "poeeaiin",
+      "koaiin",
+      "pchraiin",
+      "kcheodaiin",
+      "pchodaiin",
+      "pochaiin",
+      "pysaiinor",
+      "paiin",
+      "podaiin",
+      "poraiin"
+    ],
+    "hod": [
+      "tshodpy",
+      "fchodaiin",
+      "kdchody",
+      "tchodar",
+      "pchodol",
+      "kshody",
+      "poldchody",
+      "fshody",
+      "cthod",
+      "pchodaiin",
+      "pchodar",
+      "poshody"
+    ],
+    "eo": [
+      "psheoas",
+      "pcheol",
+      "poleeol",
+      "tsheos",
+      "pocheody",
+      "pcheodar",
+      "kcheodaiin",
+      "kocheor",
+      "pcheor",
+      "possheody",
+      "psheot"
+    ],
+    "aiin": [
+      "poeeaiin",
+      "fchodaiin",
+      "koaiin",
+      "pchraiin",
+      "kcheodaiin",
+      "pchodaiin",
+      "pochaiin",
+      "pysaiinor",
+      "paiin",
+      "podaiin",
+      "poraiin"
+    ],
+    "dy": [
+      "kdchody",
+      "pdrairdy",
+      "pocheody",
+      "kshody",
+      "fcholdy",
+      "poldchody",
+      "fshody",
+      "pdychoiin",
+      "possheody",
+      "okoraldy",
+      "poshody"
+    ],
+    "heo": [
+      "psheoas",
+      "pcheol",
+      "tsheos",
+      "pocheody",
+      "pcheodar",
+      "kcheodaiin",
+      "kocheor",
+      "pcheor",
+      "possheody",
+      "psheot"
+    ],
+    "oda": [
+      "fchodaiin",
+      "tchodar",
+      "pcheodar",
+      "kcheodaiin",
+      "pchodar",
+      "kodam",
+      "pchodaiin",
+      "kodalchy",
+      "podairol",
+      "podaiin"
+    ],
+    "che": [
+      "pcheol",
+      "pocheody",
+      "pcheodar",
+      "kcheodaiin",
+      "pcheey",
+      "kcheat",
+      "kocheor",
+      "otorchety",
+      "pcheor",
+      "okchesy"
+    ],
+    "ar": [
+      "tchodar",
+      "korary",
+      "pcheodar",
+      "chosaroshol",
+      "par",
+      "pcharasy",
+      "koar",
+      "otaramy",
+      "pchodar",
+      "foar"
+    ],
+    "hol": [
+      "porshols",
+      "poshol",
+      "tocphol",
+      "tshol",
+      "fcholdy",
+      "chosaroshol",
+      "kshol",
+      "tcholdchy",
+      "pshol",
+      "kodshol"
+    ],
+    "to": [
+      "tolchd",
+      "torshor",
+      "tocphol",
+      "tolor",
+      "otorchety",
+      "toealchs",
+      "tor",
+      "toldshy",
+      "tol",
+      "told"
+    ],
+    "hy": [
+      "polyshy",
+      "pchocthy",
+      "fachys",
+      "toldshy",
+      "kodalchy",
+      "okchshy",
+      "cphdaithy",
+      "tcholdchy",
+      "tdokchcfhy"
+    ],
+    "ra": [
+      "korary",
+      "pdrairdy",
+      "pchraiin",
+      "sairaly",
+      "pcharasy",
+      "okoraldy",
+      "otaramy",
+      "okoramog",
+      "poraiin"
+    ],
+    "kc": [
+      "kchsy",
+      "okchop",
+      "kcheodaiin",
+      "okchshy",
+      "kcheat",
+      "okchesy",
+      "tdokchcfhy"
+    ],
+    "kch": [
+      "kchsy",
+      "okchop",
+      "kcheodaiin",
+      "okchshy",
+      "kcheat",
+      "okchesy",
+      "tdokchcfhy"
+    ],
+    "dai": [
+      "fchodaiin",
+      "cphdaithy",
+      "kcheodaiin",
+      "pchodaiin",
+      "podairol",
+      "kydainy",
+      "podaiin"
+    ],
+    "al": [
+      "sairaly",
+      "toealchs",
+      "okoraldy",
+      "otchal",
+      "pykydal",
+      "kodalchy",
+      "poalshsal"
+    ],
+    "ody": [
+      "kdchody",
+      "pocheody",
+      "kshody",
+      "poldchody",
+      "fshody",
+      "possheody",
+      "poshody"
+    ],
+    "oc": [
+      "pchocthy",
+      "pocheody",
+      "tocphol",
+      "kocheor",
+      "fochof",
+      "pochaiin",
+      "fochor"
+    ],
+    "chod": [
+      "fchodaiin",
+      "kdchody",
+      "tchodar",
+      "pchodol",
+      "poldchody",
+      "pchodaiin",
+      "pchodar"
+    ],
+    "shol": [
+      "porshols",
+      "poshol",
+      "tshol",
+      "chosaroshol",
+      "kshol",
+      "pshol",
+      "kodshol"
+    ],
+    "ok": [
+      "okchop",
+      "okchshy",
+      "okoramog",
+      "okoraldy",
+      "okchesy",
+      "okolyd",
+      "tdokchcfhy"
+    ],
+    "oa": [
+      "psheoas",
+      "koaiin",
+      "koar",
+      "poalshsal",
+      "koair",
+      "foar"
+    ],
+    "pcho": [
+      "pchodaiin",
+      "pchocthy",
+      "pchooiin",
+      "pchor",
+      "pchodol",
+      "pchodar"
+    ],
+    "cheo": [
+      "pcheol",
+      "pocheody",
+      "pcheodar",
+      "kcheodaiin",
+      "kocheor",
+      "pcheor"
+    ],
+    "ld": [
+      "fcholdy",
+      "poldchody",
+      "okoraldy",
+      "tcholdchy",
+      "told",
+      "toldshy"
+    ],
+    "ha": [
+      "pchafdan",
+      "pchair",
+      "cthscthain",
+      "pcharasy",
+      "otchal",
+      "pochaiin"
+    ],
+    "hs": [
+      "kchsy",
+      "cthscthain",
+      "toealchs",
+      "okchshy",
+      "poalshsal"
+    ],
+    "yd": [
+      "pydchdom",
+      "tydlo",
+      "pykydal",
+      "okolyd",
+      "kydainy"
+    ],
+    "ts": [
+      "tshodpy",
+      "tshor",
+      "tsheos",
+      "tshol",
+      "tsho"
+    ],
+    "os": [
+      "tsheos",
+      "poshol",
+      "chosaroshol",
+      "possheody",
+      "poshody"
+    ],
+    "tsh": [
+      "tshodpy",
+      "tshor",
+      "tsheos",
+      "tshol",
+      "tsho"
+    ]
+  }
+}

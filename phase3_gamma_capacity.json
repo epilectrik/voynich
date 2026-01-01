@@ -1,0 +1,30 @@
+{
+  "measure": "gamma_information_capacity",
+  "gamma_token_count": 77,
+  "metrics": {
+    "total_gamma_occurrences": 11855,
+    "unique_gamma_types": 77,
+    "gamma_vocabulary_utilization": 1.0,
+    "gamma_entropy_bits": 6.02635477814245,
+    "gamma_max_entropy_bits": 6.266786540694901,
+    "gamma_normalized_entropy": 0.9616339632774868,
+    "bits_per_gamma_token": 6.02635477814245
+  },
+  "per_entry_stats": {
+    "avg_gamma_per_entry": 60.17766497461929,
+    "median_gamma_per_entry": 36,
+    "max_gamma_per_entry": 252,
+    "min_gamma_per_entry": 7,
+    "entries_with_zero_gamma": 0,
+    "avg_total_tokens_per_entry": 220.0964467005076,
+    "gamma_fraction_of_text": 0.27341497728268643,
+    "gamma_bits_per_entry": 362.6519588572525
+  },
+  "comparison_to_full_corpus": {
+    "full_corpus_entropy": 10.903059080237513,
+    "gamma_entropy": 6.02635477814245,
+    "entropy_ratio": 0.552721464113278,
+    "gamma_is_more_uniform": true,
+    "interpretation": "GAMMA tokens near-uniformly distributed - maximum information density"
+  }
+}

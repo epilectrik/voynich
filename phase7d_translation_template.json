@@ -1,0 +1,5274 @@
+{
+  "metadata": {
+    "phase": "7D",
+    "title": "Translation Template",
+    "timestamp": "2025-12-31T11:44:18.067253"
+  },
+  "output_format_spec": {
+    "layer1_description": "STRICT format - used for validation, no speculation",
+    "layer2_description": "SPECULATIVE annotations - flagged, never used as evidence"
+  },
+  "sample_translations_layer1": [
+    {
+      "folio_id": "f45r",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "pykydal",
+          "middle": "ykyda",
+          "prefix": null,
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "shaikhy",
+          "middle": "haikh",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "oty",
+          "middle": "t",
+          "prefix": "ot",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "shey",
+          "middle": "he",
+          "prefix": "sh",
+          "suffix": "ey",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "qop",
+          "middle": "o",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "char",
+          "middle": "ha",
+          "prefix": "ch",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "opchal",
+          "middle": "pcha",
+          "prefix": "op",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "ypchar",
+          "middle": "pcha",
+          "prefix": "yp",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "ofchar",
+          "middle": "fcha",
+          "prefix": "of",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shackhy",
+          "middle": "hackh",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ypchor",
+          "middle": "pcho",
+          "prefix": "yp",
+          "suffix": "or",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shor",
+          "middle": "ho",
+          "prefix": "sh",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cthy",
+          "middle": "th",
+          "prefix": "ct",
+          "suffix": "hy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qoky",
+          "middle": "ok",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qokol",
+          "middle": "oko",
+          "prefix": "qo",
+          "suffix": "ol",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "of",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "sho",
+            "strength": 0.3333
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.4209
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.5555555555555556,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.4444444444444444
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "pykydal",
+          "middle": "ykyda"
+        },
+        {
+          "slot": 1,
+          "token": "shaikhy",
+          "middle": "haikh"
+        },
+        {
+          "slot": 6,
+          "token": "opchal",
+          "middle": "pcha"
+        },
+        {
+          "slot": 7,
+          "token": "ypchar",
+          "middle": "pcha"
+        },
+        {
+          "slot": 8,
+          "token": "ofchar",
+          "middle": "fcha"
+        },
+        {
+          "slot": 9,
+          "token": "shackhy",
+          "middle": "hackh"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 9,
+        "unmapped_tokens": 6,
+        "mapping_rate": 0.6
+      }
+    },
+    {
+      "folio_id": "f53r",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "kodam",
+          "middle": "oda",
+          "prefix": "ko",
+          "suffix": "am",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "chocthody",
+          "middle": "hocthod",
+          "prefix": "ch",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "oty",
+          "middle": "t",
+          "prefix": "ot",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "oky",
+          "middle": "k",
+          "prefix": "ok",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "kadam",
+          "middle": "ada",
+          "prefix": "ka",
+          "suffix": "am",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "dol",
+          "middle": "o",
+          "prefix": "do",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "dain",
+          "middle": "ai",
+          "prefix": "da",
+          "suffix": "ain",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "schoshe",
+          "middle": "chosh",
+          "prefix": "sc",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "oty",
+          "middle": "t",
+          "prefix": "ot",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cho",
+          "middle": "h",
+          "prefix": "ch",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "she",
+          "middle": "h",
+          "prefix": "sh",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "scho",
+          "middle": "ch",
+          "prefix": "sc",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shoar",
+          "middle": "hoa",
+          "prefix": "sh",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chokan",
+          "middle": "hoka",
+          "prefix": "ch",
+          "suffix": "an",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.7272727272727273,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.2727272727272727
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 1,
+          "token": "chocthody",
+          "middle": "hocthod"
+        },
+        {
+          "slot": 4,
+          "token": "kadam",
+          "middle": "ada"
+        },
+        {
+          "slot": 7,
+          "token": "schoshe",
+          "middle": "chosh"
+        },
+        {
+          "slot": 9,
+          "token": "shoar",
+          "middle": "hoa"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 11,
+        "unmapped_tokens": 4,
+        "mapping_rate": 0.7333333333333333
+      }
+    },
+    {
+      "folio_id": "f19r",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "pchor",
+          "middle": "cho",
+          "prefix": "pc",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "qodchy",
+          "middle": "odch",
+          "prefix": "qo",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "qotshy",
+          "middle": "otsh",
+          "prefix": "qo",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "dy",
+          "middle": "dy",
+          "prefix": null,
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "tchy",
+          "middle": "ch",
+          "prefix": "tc",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "qotchy",
+          "middle": "otch",
+          "prefix": "qo",
+          "suffix": "hy",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "qoky",
+          "middle": "ok",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "dchydy",
+          "middle": "chyd",
+          "prefix": "dc",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dshy",
+          "middle": "sh",
+          "prefix": null,
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chor",
+          "middle": "ho",
+          "prefix": "ch",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "tchy",
+          "middle": "ch",
+          "prefix": "tc",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chol",
+          "middle": "ho",
+          "prefix": "ch",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dytchy",
+          "middle": "ytch",
+          "prefix": null,
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chordy",
+          "middle": "hord",
+          "prefix": "ch",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.7,
+        "DEFINITION_CORE": 0.1,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.2
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 1,
+          "token": "qodchy",
+          "middle": "odch"
+        },
+        {
+          "slot": 2,
+          "token": "qotshy",
+          "middle": "otsh"
+        },
+        {
+          "slot": 8,
+          "token": "dchydy",
+          "middle": "chyd"
+        },
+        {
+          "slot": 9,
+          "token": "dytchy",
+          "middle": "ytch"
+        },
+        {
+          "slot": 9,
+          "token": "chordy",
+          "middle": "hord"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 10,
+        "unmapped_tokens": 5,
+        "mapping_rate": 0.6666666666666666
+      }
+    },
+    {
+      "folio_id": "f87r",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "poalshsal",
+          "middle": "oalshsa",
+          "prefix": "po",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "shocphor",
+          "middle": "hocpho",
+          "prefix": "sh",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "ypchocpheosaiin",
+          "middle": "pchocpheosaii",
+          "prefix": "yp",
+          "suffix": "aiin",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "oteodal",
+          "middle": "teoda",
+          "prefix": "ot",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "saiin",
+          "middle": "aii",
+          "prefix": "sa",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "poal",
+          "middle": "oa",
+          "prefix": "po",
+          "suffix": "al",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "shsal",
+          "middle": "hsa",
+          "prefix": "sh",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "ypcho",
+          "middle": "pch",
+          "prefix": "yp",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "cpheo",
+          "middle": "phe",
+          "prefix": "cp",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dcheeckhos",
+          "middle": "cheeckho",
+          "prefix": "dc",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chety",
+          "middle": "het",
+          "prefix": "ch",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cthodal",
+          "middle": "thoda",
+          "prefix": "ct",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "yteodam",
+          "middle": "teoda",
+          "prefix": null,
+          "suffix": "am",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cpheckhy",
+          "middle": "pheckh",
+          "prefix": "cp",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "syty",
+          "middle": "yt",
+          "prefix": "sy",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "cp",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "sho",
+            "strength": 0.3907
+          },
+          {
+            "affix": "cp",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.3907
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "po",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.2707
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "po",
+            "position": "prefix",
+            "slot": 5,
+            "hub": "sho",
+            "strength": 0.2707
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.0,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 1.0
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "poalshsal",
+          "middle": "oalshsa"
+        },
+        {
+          "slot": 1,
+          "token": "shocphor",
+          "middle": "hocpho"
+        },
+        {
+          "slot": 2,
+          "token": "ypchocpheosaiin",
+          "middle": "pchocpheosaii"
+        },
+        {
+          "slot": 3,
+          "token": "oteodal",
+          "middle": "teoda"
+        },
+        {
+          "slot": 6,
+          "token": "shsal",
+          "middle": "hsa"
+        },
+        {
+          "slot": 8,
+          "token": "cpheo",
+          "middle": "phe"
+        },
+        {
+          "slot": 9,
+          "token": "dcheeckhos",
+          "middle": "cheeckho"
+        },
+        {
+          "slot": 9,
+          "token": "cthodal",
+          "middle": "thoda"
+        },
+        {
+          "slot": 9,
+          "token": "yteodam",
+          "middle": "teoda"
+        },
+        {
+          "slot": 9,
+          "token": "cpheckhy",
+          "middle": "pheckh"
+        },
+        {
+          "slot": 9,
+          "token": "syty",
+          "middle": "yt"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 4,
+        "unmapped_tokens": 11,
+        "mapping_rate": 0.26666666666666666
+      }
+    },
+    {
+      "folio_id": "f15r",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "tshor",
+          "middle": "sho",
+          "prefix": "ts",
+          "suffix": "or",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "shey",
+          "middle": "he",
+          "prefix": "sh",
+          "suffix": "ey",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "tchaly",
+          "middle": "chal",
+          "prefix": "tc",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "shy",
+          "middle": "h",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "chtols",
+          "middle": "htol",
+          "prefix": "ch",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "otchor",
+          "middle": "tcho",
+          "prefix": "ot",
+          "suffix": "or",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "qokchor",
+          "middle": "okcho",
+          "prefix": "qo",
+          "suffix": "or",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "oly",
+          "middle": "l",
+          "prefix": "ol",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "okor",
+          "middle": "ko",
+          "prefix": "ok",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shy",
+          "middle": "h",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "koly",
+          "middle": "ol",
+          "prefix": "ko",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qokaiin",
+          "middle": "okaii",
+          "prefix": "qo",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qotchy",
+          "middle": "otch",
+          "prefix": "qo",
+          "suffix": "hy",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "tydy",
+          "middle": "yd",
+          "prefix": null,
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "ts",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.4167
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.5,
+        "DEFINITION_CORE": 0.25,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.25
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 2,
+          "token": "tchaly",
+          "middle": "chal"
+        },
+        {
+          "slot": 4,
+          "token": "chtols",
+          "middle": "htol"
+        },
+        {
+          "slot": 9,
+          "token": "tydy",
+          "middle": "yd"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 12,
+        "unmapped_tokens": 3,
+        "mapping_rate": 0.8
+      }
+    },
+    {
+      "folio_id": "f37v",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "kshody",
+          "middle": "shod",
+          "prefix": "ks",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "qocthy",
+          "middle": "octh",
+          "prefix": "qo",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "qotoldy",
+          "middle": "otold",
+          "prefix": "qo",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "chopdain",
+          "middle": "hopdai",
+          "prefix": "ch",
+          "suffix": "ain",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "sol",
+          "middle": "o",
+          "prefix": "so",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "tshody",
+          "middle": "shod",
+          "prefix": "ts",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "dor",
+          "middle": "o",
+          "prefix": "do",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "chol",
+          "middle": "ho",
+          "prefix": "ch",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "cthor",
+          "middle": "tho",
+          "prefix": "ct",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "oscho",
+          "middle": "sch",
+          "prefix": "os",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chor",
+          "middle": "ho",
+          "prefix": "ch",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "orchochar",
+          "middle": "rchocha",
+          "prefix": "or",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "oschochor",
+          "middle": "schocho",
+          "prefix": "os",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qokchon",
+          "middle": "okcho",
+          "prefix": "qo",
+          "suffix": "on",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "ts",
+            "position": "prefix",
+            "slot": 5,
+            "hub": "sho",
+            "strength": 0.4167
+          }
+        ],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 4,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.7142857142857143,
+        "DEFINITION_CORE": 0.14285714285714285,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.14285714285714285
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "kshody",
+          "middle": "shod"
+        },
+        {
+          "slot": 1,
+          "token": "qocthy",
+          "middle": "octh"
+        },
+        {
+          "slot": 2,
+          "token": "qotoldy",
+          "middle": "otold"
+        },
+        {
+          "slot": 3,
+          "token": "chopdain",
+          "middle": "hopdai"
+        },
+        {
+          "slot": 5,
+          "token": "tshody",
+          "middle": "shod"
+        },
+        {
+          "slot": 9,
+          "token": "oscho",
+          "middle": "sch"
+        },
+        {
+          "slot": 9,
+          "token": "orchochar",
+          "middle": "rchocha"
+        },
+        {
+          "slot": 9,
+          "token": "oschochor",
+          "middle": "schocho"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 7,
+        "unmapped_tokens": 8,
+        "mapping_rate": 0.4666666666666667
+      }
+    },
+    {
+      "folio_id": "f22v",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "pysaiinor",
+          "middle": "ysaiino",
+          "prefix": null,
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "ofchar",
+          "middle": "fcha",
+          "prefix": "of",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "oky",
+          "middle": "k",
+          "prefix": "ok",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "tchy",
+          "middle": "ch",
+          "prefix": "tc",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "otdy",
+          "middle": "td",
+          "prefix": "ot",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "sor",
+          "middle": "o",
+          "prefix": "so",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "shy",
+          "middle": "h",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "qod",
+          "middle": "o",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "posaiinor",
+          "middle": "osaiino",
+          "prefix": "po",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "q*d",
+          "middle": "*",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "sho",
+          "middle": "h",
+          "prefix": "sh",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ykaiin",
+          "middle": "kaii",
+          "prefix": "yk",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qotchy",
+          "middle": "otch",
+          "prefix": "qo",
+          "suffix": "hy",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "kchy",
+          "middle": "ch",
+          "prefix": "kc",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "of",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "sho",
+            "strength": 0.3333
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 4,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "po",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "sho",
+            "strength": 0.2707
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.7,
+        "DEFINITION_CORE": 0.1,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.2
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "pysaiinor",
+          "middle": "ysaiino"
+        },
+        {
+          "slot": 1,
+          "token": "ofchar",
+          "middle": "fcha"
+        },
+        {
+          "slot": 4,
+          "token": "otdy",
+          "middle": "td"
+        },
+        {
+          "slot": 8,
+          "token": "posaiinor",
+          "middle": "osaiino"
+        },
+        {
+          "slot": 9,
+          "token": "q*d",
+          "middle": "*"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 10,
+        "unmapped_tokens": 5,
+        "mapping_rate": 0.6666666666666666
+      }
+    },
+    {
+      "folio_id": "f11v",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "poldchody",
+          "middle": "oldchod",
+          "prefix": "po",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "shcphy",
+          "middle": "hcph",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "shordy",
+          "middle": "hord",
+          "prefix": "sh",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "qoty",
+          "middle": "ot",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "shol",
+          "middle": "ho",
+          "prefix": "sh",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "cphar",
+          "middle": "pha",
+          "prefix": "cp",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "dan",
+          "middle": "a",
+          "prefix": "da",
+          "suffix": "an",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "dany",
+          "middle": "an",
+          "prefix": "da",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "shol",
+          "middle": "ho",
+          "prefix": "sh",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dy",
+          "middle": "dy",
+          "prefix": null,
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chckhy",
+          "middle": "hckh",
+          "prefix": "ch",
+          "suffix": "hy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shcthy",
+          "middle": "hcth",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "EXPOSITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dam",
+          "middle": "a",
+          "prefix": "da",
+          "suffix": "am",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ykchy",
+          "middle": "kch",
+          "prefix": "yk",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "cp",
+            "position": "prefix",
+            "slot": 5,
+            "hub": "sho",
+            "strength": 0.3907
+          }
+        ],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "po",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.2707
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 4,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 4,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.5,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.1,
+        "RESTRICTED_CORE": 0.4
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "poldchody",
+          "middle": "oldchod"
+        },
+        {
+          "slot": 1,
+          "token": "shcphy",
+          "middle": "hcph"
+        },
+        {
+          "slot": 2,
+          "token": "shordy",
+          "middle": "hord"
+        },
+        {
+          "slot": 5,
+          "token": "cphar",
+          "middle": "pha"
+        },
+        {
+          "slot": 7,
+          "token": "dany",
+          "middle": "an"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 10,
+        "unmapped_tokens": 5,
+        "mapping_rate": 0.6666666666666666
+      }
+    },
+    {
+      "folio_id": "f87v",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "pcheey",
+          "middle": "chee",
+          "prefix": "pc",
+          "suffix": "eey",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "cphodar",
+          "middle": "phoda",
+          "prefix": "cp",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "shody",
+          "middle": "hod",
+          "prefix": "sh",
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "dcheody",
+          "middle": "cheod",
+          "prefix": "dc",
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "todor",
+          "middle": "odo",
+          "prefix": "to",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "ochepchody",
+          "middle": "chepchod",
+          "prefix": null,
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "oldar",
+          "middle": "lda",
+          "prefix": "ol",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "ppcheey",
+          "middle": "pchee",
+          "prefix": null,
+          "suffix": "eey",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cpheodar",
+          "middle": "pheoda",
+          "prefix": "cp",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "schey",
+          "middle": "che",
+          "prefix": "sc",
+          "suffix": "ey",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ctheey",
+          "middle": "thee",
+          "prefix": "ct",
+          "suffix": "eey",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qocthsy",
+          "middle": "ocths",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dcheoky",
+          "middle": "cheok",
+          "prefix": "dc",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "scth",
+          "middle": "ct",
+          "prefix": "sc",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "cp",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.3907
+          },
+          {
+            "affix": "cp",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.3907
+          }
+        ],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.2857142857142857,
+        "DEFINITION_CORE": 0.14285714285714285,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.5714285714285714
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 2,
+          "token": "cphodar",
+          "middle": "phoda"
+        },
+        {
+          "slot": 5,
+          "token": "todor",
+          "middle": "odo"
+        },
+        {
+          "slot": 6,
+          "token": "ochepchody",
+          "middle": "chepchod"
+        },
+        {
+          "slot": 8,
+          "token": "ppcheey",
+          "middle": "pchee"
+        },
+        {
+          "slot": 9,
+          "token": "cpheodar",
+          "middle": "pheoda"
+        },
+        {
+          "slot": 9,
+          "token": "qocthsy",
+          "middle": "ocths"
+        },
+        {
+          "slot": 9,
+          "token": "dcheoky",
+          "middle": "cheok"
+        },
+        {
+          "slot": 9,
+          "token": "scth",
+          "middle": "ct"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 7,
+        "unmapped_tokens": 8,
+        "mapping_rate": 0.4666666666666667
+      }
+    },
+    {
+      "folio_id": "f49r",
+      "population": "A",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "poshol",
+          "middle": "osho",
+          "prefix": "po",
+          "suffix": "ol",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "dy",
+          "middle": "dy",
+          "prefix": null,
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "shor",
+          "middle": "ho",
+          "prefix": "sh",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "shol",
+          "middle": "ho",
+          "prefix": "sh",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "shtchy",
+          "middle": "htch",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "shorpchor",
+          "middle": "horpcho",
+          "prefix": "sh",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "opchor",
+          "middle": "pcho",
+          "prefix": "op",
+          "suffix": "or",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "shorkchy",
+          "middle": "horkch",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "py",
+          "middle": "py",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chol",
+          "middle": "ho",
+          "prefix": "ch",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chor",
+          "middle": "ho",
+          "prefix": "ch",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "pchor",
+          "middle": "cho",
+          "prefix": "pc",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "kchy",
+          "middle": "ch",
+          "prefix": "kc",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "pychol",
+          "middle": "ycho",
+          "prefix": null,
+          "suffix": "ol",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "pashol",
+          "middle": "asho",
+          "prefix": null,
+          "suffix": "ol",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.319
+          }
+        ],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "po",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.2707
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 4,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.75,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.25
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "poshol",
+          "middle": "osho"
+        },
+        {
+          "slot": 4,
+          "token": "shtchy",
+          "middle": "htch"
+        },
+        {
+          "slot": 5,
+          "token": "shorpchor",
+          "middle": "horpcho"
+        },
+        {
+          "slot": 7,
+          "token": "shorkchy",
+          "middle": "horkch"
+        },
+        {
+          "slot": 8,
+          "token": "py",
+          "middle": "py"
+        },
+        {
+          "slot": 9,
+          "token": "pychol",
+          "middle": "ycho"
+        },
+        {
+          "slot": 9,
+          "token": "pashol",
+          "middle": "asho"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 8,
+        "unmapped_tokens": 7,
+        "mapping_rate": 0.5333333333333333
+      }
+    },
+    {
+      "folio_id": "f106v",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "fsheda",
+          "middle": "shed",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "loain",
+          "middle": "oai",
+          "prefix": "lo",
+          "suffix": "ain",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "opaiiral",
+          "middle": "paiira",
+          "prefix": "op",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "oteo",
+          "middle": "te",
+          "prefix": "ot",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "chopchy",
+          "middle": "hopch",
+          "prefix": "ch",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "otair",
+          "middle": "tai",
+          "prefix": "ot",
+          "suffix": "ir",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "kar",
+          "middle": "a",
+          "prefix": "ka",
+          "suffix": "ar",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "alalor",
+          "middle": "lalo",
+          "prefix": "al",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "aiin",
+          "middle": "ii",
+          "prefix": "ai",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "aly",
+          "middle": "l",
+          "prefix": "al",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "looin",
+          "middle": "ooi",
+          "prefix": "lo",
+          "suffix": "in",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "oteodaiin",
+          "middle": "teodaii",
+          "prefix": "ot",
+          "suffix": "aiin",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "alm",
+          "middle": "l",
+          "prefix": "al",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.319
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "al",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "al",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2722
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.3333333333333333,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.6666666666666666
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 1,
+          "token": "loain",
+          "middle": "oai"
+        },
+        {
+          "slot": 2,
+          "token": "opaiiral",
+          "middle": "paiira"
+        },
+        {
+          "slot": 5,
+          "token": "chopchy",
+          "middle": "hopch"
+        },
+        {
+          "slot": 8,
+          "token": "alalor",
+          "middle": "lalo"
+        },
+        {
+          "slot": 9,
+          "token": "looin",
+          "middle": "ooi"
+        },
+        {
+          "slot": 9,
+          "token": "oteodaiin",
+          "middle": "teodaii"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 9,
+        "unmapped_tokens": 6,
+        "mapping_rate": 0.6
+      }
+    },
+    {
+      "folio_id": "f116r",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "kchdpy",
+          "middle": "chdp",
+          "prefix": "kc",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "shey",
+          "middle": "he",
+          "prefix": "sh",
+          "suffix": "ey",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "qokain",
+          "middle": "okai",
+          "prefix": "qo",
+          "suffix": "ain",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "otalshedy",
+          "middle": "talshed",
+          "prefix": "ot",
+          "suffix": "edy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "q*teey",
+          "middle": "*tee",
+          "prefix": null,
+          "suffix": "eey",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "shear",
+          "middle": "hea",
+          "prefix": "sh",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "ain",
+          "middle": "i",
+          "prefix": "ai",
+          "suffix": "ain",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "or",
+          "middle": "or",
+          "prefix": "or",
+          "suffix": "or",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "llory",
+          "middle": "lor",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "amom",
+          "middle": "mo",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qokaiin",
+          "middle": "okaii",
+          "prefix": "qo",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "otalshdy",
+          "middle": "talshd",
+          "prefix": "ot",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "aiin",
+          "middle": "ii",
+          "prefix": "ai",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "oain",
+          "middle": "ai",
+          "prefix": null,
+          "suffix": "ain",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cheer",
+          "middle": "hee",
+          "prefix": "ch",
+          "suffix": "er",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "prefix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2722
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.3333333333333333,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.6666666666666666
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "kchdpy",
+          "middle": "chdp"
+        },
+        {
+          "slot": 3,
+          "token": "otalshedy",
+          "middle": "talshed"
+        },
+        {
+          "slot": 4,
+          "token": "q*teey",
+          "middle": "*tee"
+        },
+        {
+          "slot": 8,
+          "token": "llory",
+          "middle": "lor"
+        },
+        {
+          "slot": 9,
+          "token": "amom",
+          "middle": "mo"
+        },
+        {
+          "slot": 9,
+          "token": "otalshdy",
+          "middle": "talshd"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 9,
+        "unmapped_tokens": 6,
+        "mapping_rate": 0.6
+      }
+    },
+    {
+      "folio_id": "f76v",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "polarar",
+          "middle": "olara",
+          "prefix": "po",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "okor",
+          "middle": "ko",
+          "prefix": "ok",
+          "suffix": "or",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "opcheey",
+          "middle": "pchee",
+          "prefix": "op",
+          "suffix": "eey",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "yteey",
+          "middle": "tee",
+          "prefix": null,
+          "suffix": "eey",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "opchaly",
+          "middle": "pchal",
+          "prefix": "op",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "lshedy",
+          "middle": "shed",
+          "prefix": null,
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "qofchdal",
+          "middle": "ofchda",
+          "prefix": "qo",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "lkodol",
+          "middle": "kodo",
+          "prefix": null,
+          "suffix": "ol",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "opa",
+          "middle": "p",
+          "prefix": "op",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "korols",
+          "middle": "orol",
+          "prefix": "ko",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "lkodal",
+          "middle": "koda",
+          "prefix": null,
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "korolr",
+          "middle": "orol",
+          "prefix": "ko",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qopchdal",
+          "middle": "opchda",
+          "prefix": "qo",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "opako",
+          "middle": "pak",
+          "prefix": "op",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "rols",
+          "middle": "ol",
+          "prefix": "ro",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 4,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.319
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "po",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.2707
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.5,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.5
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "polarar",
+          "middle": "olara"
+        },
+        {
+          "slot": 2,
+          "token": "opcheey",
+          "middle": "pchee"
+        },
+        {
+          "slot": 4,
+          "token": "opchaly",
+          "middle": "pchal"
+        },
+        {
+          "slot": 6,
+          "token": "qofchdal",
+          "middle": "ofchda"
+        },
+        {
+          "slot": 7,
+          "token": "lkodol",
+          "middle": "kodo"
+        },
+        {
+          "slot": 8,
+          "token": "opa",
+          "middle": "p"
+        },
+        {
+          "slot": 9,
+          "token": "korols",
+          "middle": "orol"
+        },
+        {
+          "slot": 9,
+          "token": "lkodal",
+          "middle": "koda"
+        },
+        {
+          "slot": 9,
+          "token": "korolr",
+          "middle": "orol"
+        },
+        {
+          "slot": 9,
+          "token": "qopchdal",
+          "middle": "opchda"
+        },
+        {
+          "slot": 9,
+          "token": "opako",
+          "middle": "pak"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 4,
+        "unmapped_tokens": 11,
+        "mapping_rate": 0.26666666666666666
+      }
+    },
+    {
+      "folio_id": "f86v4",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "opor",
+          "middle": "po",
+          "prefix": "op",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "os",
+          "middle": "os",
+          "prefix": "os",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "sheody",
+          "middle": "heod",
+          "prefix": "sh",
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "pchedar",
+          "middle": "cheda",
+          "prefix": "pc",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "odsheo",
+          "middle": "dshe",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "qody",
+          "middle": "od",
+          "prefix": "qo",
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "cheepchdy",
+          "middle": "heepchd",
+          "prefix": "ch",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "lpchedy",
+          "middle": "pched",
+          "prefix": null,
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "olkar",
+          "middle": "lka",
+          "prefix": "ol",
+          "suffix": "ar",
+          "middle_role": "EXPOSITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shdar",
+          "middle": "hda",
+          "prefix": "sh",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dchdor",
+          "middle": "chdo",
+          "prefix": "dc",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qopcher",
+          "middle": "opche",
+          "prefix": "qo",
+          "suffix": "er",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "cher",
+          "middle": "he",
+          "prefix": "ch",
+          "suffix": "er",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "oseeedar",
+          "middle": "seeeda",
+          "prefix": "os",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "odaiin",
+          "middle": "daii",
+          "prefix": null,
+          "suffix": "aiin",
+          "middle_role": "DEFINITION_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.319
+          }
+        ],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.1111111111111111,
+        "DEFINITION_CORE": 0.1111111111111111,
+        "EXPOSITION_CORE": 0.1111111111111111,
+        "RESTRICTED_CORE": 0.6666666666666666
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "opor",
+          "middle": "po"
+        },
+        {
+          "slot": 4,
+          "token": "odsheo",
+          "middle": "dshe"
+        },
+        {
+          "slot": 6,
+          "token": "cheepchdy",
+          "middle": "heepchd"
+        },
+        {
+          "slot": 9,
+          "token": "dchdor",
+          "middle": "chdo"
+        },
+        {
+          "slot": 9,
+          "token": "qopcher",
+          "middle": "opche"
+        },
+        {
+          "slot": 9,
+          "token": "oseeedar",
+          "middle": "seeeda"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 9,
+        "unmapped_tokens": 6,
+        "mapping_rate": 0.6
+      }
+    },
+    {
+      "folio_id": "f41v",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "keerodal",
+          "middle": "eeroda",
+          "prefix": "ke",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "teerodal",
+          "middle": "eeroda",
+          "prefix": "te",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "keesh",
+          "middle": "ees",
+          "prefix": "ke",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "dal",
+          "middle": "a",
+          "prefix": "da",
+          "suffix": "al",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "pcheody",
+          "middle": "cheod",
+          "prefix": "pc",
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "qofcheepy",
+          "middle": "ofcheep",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "ofchdy",
+          "middle": "fchd",
+          "prefix": "of",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "cfhekchdy",
+          "middle": "fhekchd",
+          "prefix": "cf",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "ypchedy",
+          "middle": "pched",
+          "prefix": "yp",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chepchefy",
+          "middle": "hepchef",
+          "prefix": "ch",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shdchdy",
+          "middle": "hdchd",
+          "prefix": "sh",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qotal",
+          "middle": "ota",
+          "prefix": "qo",
+          "suffix": "al",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dar",
+          "middle": "a",
+          "prefix": "da",
+          "suffix": "ar",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "chepchefyshdchdy",
+          "middle": "hepchefyshdchd",
+          "prefix": "ch",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qofchecpy",
+          "middle": "ofchecp",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "of",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.3333
+          },
+          {
+            "affix": "cf",
+            "position": "prefix",
+            "slot": 7,
+            "hub": "pol",
+            "strength": 0.3158
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.4,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.6
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "keerodal",
+          "middle": "eeroda"
+        },
+        {
+          "slot": 1,
+          "token": "teerodal",
+          "middle": "eeroda"
+        },
+        {
+          "slot": 2,
+          "token": "keesh",
+          "middle": "ees"
+        },
+        {
+          "slot": 5,
+          "token": "qofcheepy",
+          "middle": "ofcheep"
+        },
+        {
+          "slot": 6,
+          "token": "ofchdy",
+          "middle": "fchd"
+        },
+        {
+          "slot": 7,
+          "token": "cfhekchdy",
+          "middle": "fhekchd"
+        },
+        {
+          "slot": 9,
+          "token": "chepchefy",
+          "middle": "hepchef"
+        },
+        {
+          "slot": 9,
+          "token": "shdchdy",
+          "middle": "hdchd"
+        },
+        {
+          "slot": 9,
+          "token": "chepchefyshdchdy",
+          "middle": "hepchefyshdchd"
+        },
+        {
+          "slot": 9,
+          "token": "qofchecpy",
+          "middle": "ofchecp"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 5,
+        "unmapped_tokens": 10,
+        "mapping_rate": 0.3333333333333333
+      }
+    },
+    {
+      "folio_id": "f82v",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "otechdy",
+          "middle": "techd",
+          "prefix": "ot",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "otedy",
+          "middle": "ted",
+          "prefix": "ot",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "oty",
+          "middle": "t",
+          "prefix": "ot",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "otedal",
+          "middle": "teda",
+          "prefix": "ot",
+          "suffix": "al",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "tokol",
+          "middle": "oko",
+          "prefix": "to",
+          "suffix": "ol",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "olfchedy",
+          "middle": "lfched",
+          "prefix": "ol",
+          "suffix": "edy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "qokeedy",
+          "middle": "okeed",
+          "prefix": "qo",
+          "suffix": "eedy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "qokedal",
+          "middle": "okeda",
+          "prefix": "qo",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shol",
+          "middle": "ho",
+          "prefix": "sh",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qotal",
+          "middle": "ota",
+          "prefix": "qo",
+          "suffix": "al",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "otdal",
+          "middle": "tda",
+          "prefix": "ot",
+          "suffix": "al",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dal",
+          "middle": "a",
+          "prefix": "da",
+          "suffix": "al",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "olshedy",
+          "middle": "lshed",
+          "prefix": "ol",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dol",
+          "middle": "o",
+          "prefix": "do",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 0,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 4,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 4,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.4464
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.4209
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 5,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.36363636363636365,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.6363636363636364
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "otechdy",
+          "middle": "techd"
+        },
+        {
+          "slot": 6,
+          "token": "olfchedy",
+          "middle": "lfched"
+        },
+        {
+          "slot": 8,
+          "token": "qokedal",
+          "middle": "okeda"
+        },
+        {
+          "slot": 9,
+          "token": "otdal",
+          "middle": "tda"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 11,
+        "unmapped_tokens": 4,
+        "mapping_rate": 0.7333333333333333
+      }
+    },
+    {
+      "folio_id": "f108r",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "teodeear",
+          "middle": "eodeea",
+          "prefix": "te",
+          "suffix": "ar",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "qopchety",
+          "middle": "opchet",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "okeeoly",
+          "middle": "keeol",
+          "prefix": "ok",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "okchdpchy",
+          "middle": "kchdpch",
+          "prefix": "ok",
+          "suffix": "hy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "todasihx",
+          "middle": "odasih",
+          "prefix": "to",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "opasy",
+          "middle": "pas",
+          "prefix": "op",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "olpair",
+          "middle": "lpai",
+          "prefix": "ol",
+          "suffix": "ir",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "ody",
+          "middle": "d",
+          "prefix": null,
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "otedy",
+          "middle": "ted",
+          "prefix": "ot",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "kedydy",
+          "middle": "edyd",
+          "prefix": "ke",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "teodeeor",
+          "middle": "eodeeo",
+          "prefix": "te",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "todashx",
+          "middle": "odash",
+          "prefix": "to",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "oparyolpairody",
+          "middle": "paryolpairod",
+          "prefix": "op",
+          "suffix": "dy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "okchd",
+          "middle": "kch",
+          "prefix": "ok",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "pchy",
+          "middle": "ch",
+          "prefix": "pc",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 5,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.319
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.296
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.5,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.5
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "teodeear",
+          "middle": "eodeea"
+        },
+        {
+          "slot": 1,
+          "token": "qopchety",
+          "middle": "opchet"
+        },
+        {
+          "slot": 2,
+          "token": "okeeoly",
+          "middle": "keeol"
+        },
+        {
+          "slot": 3,
+          "token": "okchdpchy",
+          "middle": "kchdpch"
+        },
+        {
+          "slot": 4,
+          "token": "todasihx",
+          "middle": "odasih"
+        },
+        {
+          "slot": 5,
+          "token": "opasy",
+          "middle": "pas"
+        },
+        {
+          "slot": 6,
+          "token": "olpair",
+          "middle": "lpai"
+        },
+        {
+          "slot": 9,
+          "token": "kedydy",
+          "middle": "edyd"
+        },
+        {
+          "slot": 9,
+          "token": "teodeeor",
+          "middle": "eodeeo"
+        },
+        {
+          "slot": 9,
+          "token": "todashx",
+          "middle": "odash"
+        },
+        {
+          "slot": 9,
+          "token": "oparyolpairody",
+          "middle": "paryolpairod"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 4,
+        "unmapped_tokens": 11,
+        "mapping_rate": 0.26666666666666666
+      }
+    },
+    {
+      "folio_id": "f31r",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "keedey",
+          "middle": "eede",
+          "prefix": "ke",
+          "suffix": "ey",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "qofchedy",
+          "middle": "ofched",
+          "prefix": "qo",
+          "suffix": "edy",
+          "middle_role": "UNMAPPED",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "shees",
+          "middle": "hee",
+          "prefix": "sh",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "aiin",
+          "middle": "ii",
+          "prefix": "ai",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "qokeefcy",
+          "middle": "okeefc",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "chepakeo",
+          "middle": "hepake",
+          "prefix": "ch",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "qokeepey",
+          "middle": "okeepe",
+          "prefix": "qo",
+          "suffix": "ey",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "chepa",
+          "middle": "hep",
+          "prefix": "ch",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "keo",
+          "middle": "e",
+          "prefix": "ke",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shee",
+          "middle": "he",
+          "prefix": "sh",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "saiin",
+          "middle": "aii",
+          "prefix": "sa",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qokeefch",
+          "middle": "okeefc",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "dcheey",
+          "middle": "chee",
+          "prefix": "dc",
+          "suffix": "eey",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiin",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "okeedy",
+          "middle": "keed",
+          "prefix": "ok",
+          "suffix": "eedy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [],
+        "SCOPE": [],
+        "SEMANTIC": [
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.296
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.375,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.625
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "keedey",
+          "middle": "eede"
+        },
+        {
+          "slot": 1,
+          "token": "qofchedy",
+          "middle": "ofched"
+        },
+        {
+          "slot": 4,
+          "token": "qokeefcy",
+          "middle": "okeefc"
+        },
+        {
+          "slot": 5,
+          "token": "chepakeo",
+          "middle": "hepake"
+        },
+        {
+          "slot": 6,
+          "token": "qokeepey",
+          "middle": "okeepe"
+        },
+        {
+          "slot": 7,
+          "token": "chepa",
+          "middle": "hep"
+        },
+        {
+          "slot": 9,
+          "token": "qokeefch",
+          "middle": "okeefc"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 8,
+        "unmapped_tokens": 7,
+        "mapping_rate": 0.5333333333333333
+      }
+    },
+    {
+      "folio_id": "f84r",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "lmyl",
+          "middle": "my",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "okal",
+          "middle": "ka",
+          "prefix": "ok",
+          "suffix": "al",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "oldal",
+          "middle": "lda",
+          "prefix": "ol",
+          "suffix": "al",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "or",
+          "middle": "or",
+          "prefix": "or",
+          "suffix": "or",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "shekar",
+          "middle": "heka",
+          "prefix": "sh",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "ydy",
+          "middle": "d",
+          "prefix": "yd",
+          "suffix": "dy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "okedy",
+          "middle": "ked",
+          "prefix": "ok",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "oloy",
+          "middle": "lo",
+          "prefix": "ol",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "loly",
+          "middle": "ol",
+          "prefix": "lo",
+          "suffix": null,
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "doiis",
+          "middle": "oii",
+          "prefix": "do",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "doiir",
+          "middle": "oii",
+          "prefix": "do",
+          "suffix": "ir",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "daiis",
+          "middle": "aii",
+          "prefix": "da",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ol",
+          "middle": "ol",
+          "prefix": "ol",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "shy",
+          "middle": "h",
+          "prefix": "sh",
+          "suffix": "hy",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "otedy",
+          "middle": "ted",
+          "prefix": "ot",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [],
+        "SCOPE": [
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 1,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "al",
+            "position": "suffix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.4209
+          },
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 2,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "or",
+            "position": "prefix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 3,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 4,
+            "hub": "tol",
+            "strength": 0.2887
+          },
+          {
+            "affix": "ok",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.296
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 7,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "sh",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "tol",
+            "strength": 0.2887
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.35714285714285715,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.6428571428571429
+      },
+      "parse_status": "PARTIAL",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "lmyl",
+          "middle": "my"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 14,
+        "unmapped_tokens": 1,
+        "mapping_rate": 0.9333333333333333
+      }
+    },
+    {
+      "folio_id": "f115v",
+      "population": "B",
+      "hub_context": null,
+      "token_count": 15,
+      "slot_structure": [
+        {
+          "slot": 0,
+          "token": "tchedor",
+          "middle": "chedo",
+          "prefix": "tc",
+          "suffix": "or",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TOPIC_POSITION"
+        },
+        {
+          "slot": 1,
+          "token": "otchedy",
+          "middle": "tched",
+          "prefix": "ot",
+          "suffix": "edy",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 2,
+          "token": "qotees",
+          "middle": "otee",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "PRIMARY_CONTENT"
+        },
+        {
+          "slot": 3,
+          "token": "ytain",
+          "middle": "tai",
+          "prefix": null,
+          "suffix": "ain",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 4,
+          "token": "qoty",
+          "middle": "ot",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 5,
+          "token": "qotad",
+          "middle": "ota",
+          "prefix": "qo",
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "SECONDARY_CONTENT"
+        },
+        {
+          "slot": 6,
+          "token": "opoloiin",
+          "middle": "poloii",
+          "prefix": "op",
+          "suffix": "iin",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 7,
+          "token": "qetdain",
+          "middle": "etdai",
+          "prefix": null,
+          "suffix": "ain",
+          "middle_role": "UNMAPPED",
+          "slot_role": "MODIFIER_POSITION"
+        },
+        {
+          "slot": 8,
+          "token": "ol",
+          "middle": "ol",
+          "prefix": "ol",
+          "suffix": "ol",
+          "middle_role": "FLEXIBLE_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "roiin",
+          "middle": "oii",
+          "prefix": "ro",
+          "suffix": "iin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "om",
+          "middle": "om",
+          "prefix": null,
+          "suffix": null,
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ytaiin",
+          "middle": "taii",
+          "prefix": null,
+          "suffix": "aiin",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "qotar",
+          "middle": "ota",
+          "prefix": "qo",
+          "suffix": "ar",
+          "middle_role": "RESTRICTED_CORE",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "op",
+          "middle": "op",
+          "prefix": "op",
+          "suffix": null,
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        },
+        {
+          "slot": 9,
+          "token": "ofaiin",
+          "middle": "faii",
+          "prefix": "of",
+          "suffix": "aiin",
+          "middle_role": "UNMAPPED",
+          "slot_role": "TERMINAL_POSITION"
+        }
+      ],
+      "operators": {
+        "POSITION": [
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 6,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "op",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.319
+          },
+          {
+            "affix": "of",
+            "position": "prefix",
+            "slot": 9,
+            "hub": "sho",
+            "strength": 0.3333
+          }
+        ],
+        "SCOPE": [
+          {
+            "affix": "ot",
+            "position": "prefix",
+            "slot": 1,
+            "hub": "sho",
+            "strength": 0.4464
+          }
+        ],
+        "SEMANTIC": [
+          {
+            "affix": "or",
+            "position": "suffix",
+            "slot": 0,
+            "hub": "tol",
+            "strength": 0.2722
+          },
+          {
+            "affix": "ol",
+            "position": "prefix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2924
+          },
+          {
+            "affix": "ol",
+            "position": "suffix",
+            "slot": 8,
+            "hub": "tol",
+            "strength": 0.2924
+          }
+        ],
+        "UNKNOWN": []
+      },
+      "role_distribution": {
+        "FLEXIBLE_CORE": 0.1,
+        "DEFINITION_CORE": 0.0,
+        "EXPOSITION_CORE": 0.0,
+        "RESTRICTED_CORE": 0.9
+      },
+      "parse_status": "FAILED",
+      "unmapped_tokens": [
+        {
+          "slot": 0,
+          "token": "tchedor",
+          "middle": "chedo"
+        },
+        {
+          "slot": 6,
+          "token": "opoloiin",
+          "middle": "poloii"
+        },
+        {
+          "slot": 7,
+          "token": "qetdain",
+          "middle": "etdai"
+        },
+        {
+          "slot": 9,
+          "token": "op",
+          "middle": "op"
+        },
+        {
+          "slot": 9,
+          "token": "ofaiin",
+          "middle": "faii"
+        }
+      ],
+      "coverage": {
+        "mapped_tokens": 10,
+        "unmapped_tokens": 5,
+        "mapping_rate": 0.6666666666666666
+      }
+    }
+  ],
+  "sample_annotations_layer2": [
+    {
+      "folio_id": "f45r",
+      "semantic_summary_model_internal": "A-type entry with FLEXIBLE_CORE emphasis under tol-scope",
+      "speculative_notes": [
+        "WARNING: This is speculative interpretation, not validated evidence.",
+        "Dominant middle role: FLEXIBLE_CORE (55.6%)",
+        "Dominant hub association: tol"
+      ]
+    },
+    {
+      "folio_id": "f53r",
+      "semantic_summary_model_internal": "A-type entry with FLEXIBLE_CORE emphasis under sho-scope",
+      "speculative_notes": [
+        "WARNING: This is speculative interpretation, not validated evidence.",
+        "Dominant middle role: FLEXIBLE_CORE (72.7%)",
+        "Dominant hub association: sho"
+      ]
+    },
+    {
+      "folio_id": "f19r",
+      "semantic_summary_model_internal": "A-type entry with FLEXIBLE_CORE emphasis",
+      "speculative_notes": [
+        "WARNING: This is speculative interpretation, not validated evidence.",
+        "Dominant middle role: FLEXIBLE_CORE (70.0%)",
+        "No dominant hub detected"
+      ]
+    },
+    {
+      "folio_id": "f87r",
+      "semantic_summary_model_internal": "A-type entry with RESTRICTED_CORE emphasis under tol-scope",
+      "speculative_notes": [
+        "WARNING: This is speculative interpretation, not validated evidence.",
+        "Dominant middle role: RESTRICTED_CORE (100.0%)",
+        "Dominant hub association: tol"
+      ]
+    },
+    {
+      "folio_id": "f15r",
+      "semantic_summary_model_internal": "A-type entry with FLEXIBLE_CORE emphasis under sho-scope",
+      "speculative_notes": [
+        "WARNING: This is speculative interpretation, not validated evidence.",
+        "Dominant middle role: FLEXIBLE_CORE (50.0%)",
+        "Dominant hub association: sho"
+      ]
+    }
+  ],
+  "coverage_stats": {
+    "token_coverage": 0.57,
+    "entry_coverage": 0.0,
+    "gap_types": {
+      "unmapped_middles": 129,
+      "partial_parses": 1,
+      "failed_parses": 19
+    }
+  }
+}

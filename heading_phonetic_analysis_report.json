@@ -1,0 +1,548 @@
+{
+  "metadata": {
+    "title": "Heading Word Phonetic Structure Analysis",
+    "phase": "Phase 18, Task 5",
+    "date": "2025-12-30T16:17:31.802822",
+    "purpose": "Internal structural analysis of heading words (NO external matching)",
+    "n_entries_analyzed": 114,
+    "n_headings": 114,
+    "n_body_words": 14041
+  },
+  "length_distribution": {
+    "headings": {
+      "mean": 6.43,
+      "std": 1.77,
+      "min": 2,
+      "max": 11,
+      "median": 6.0,
+      "mode": 7
+    },
+    "body": {
+      "mean": 5.1,
+      "std": 1.71,
+      "min": 2,
+      "max": 17,
+      "median": 5.0,
+      "mode": 5
+    },
+    "comparison": {
+      "heading_longer": true,
+      "length_difference": 1.33
+    }
+  },
+  "character_frequency": {
+    "heading_char_counts": {
+      "o": 126,
+      "h": 81,
+      "c": 55,
+      "a": 48,
+      "p": 47,
+      "d": 46,
+      "r": 46,
+      "s": 44,
+      "i": 43,
+      "y": 42,
+      "l": 34,
+      "t": 32,
+      "k": 29,
+      "e": 23,
+      "n": 19,
+      "f": 12,
+      "m": 4,
+      "*": 1,
+      "g": 1
+    },
+    "body_char_counts": {
+      "o": 11185,
+      "h": 8266,
+      "c": 6544,
+      "y": 5705,
+      "e": 4934,
+      "a": 4872,
+      "i": 4434,
+      "d": 3933,
+      "l": 3740,
+      "k": 3548,
+      "r": 3105,
+      "s": 2992,
+      "t": 2921,
+      "n": 2224,
+      "q": 1411,
+      "p": 583,
+      "m": 569,
+      "*": 381,
+      "f": 227,
+      "g": 58
+    },
+    "enriched_in_headings": [
+      {
+        "char": "p",
+        "heading_freq": 0.0641,
+        "body_freq": 0.0081,
+        "ratio": 7.88
+      },
+      {
+        "char": "f",
+        "heading_freq": 0.0164,
+        "body_freq": 0.0032,
+        "ratio": 5.17
+      }
+    ],
+    "enriched_in_body": [
+      {
+        "char": "q",
+        "heading_freq": 0,
+        "body_freq": 0.0197,
+        "ratio": 0.0
+      },
+      {
+        "char": "e",
+        "heading_freq": 0.0314,
+        "body_freq": 0.0688,
+        "ratio": 0.46
+      }
+    ]
+  },
+  "compositional_analysis": {
+    "prefix_distribution": {
+      "headings": {
+        "po": 17,
+        "pc": 16,
+        "ko": 11,
+        "to": 9,
+        "ts": 6,
+        "ok": 6,
+        "ks": 4,
+        "kc": 3,
+        "fo": 3,
+        "fc": 3,
+        "ps": 3,
+        "ct": 3,
+        "py": 3,
+        "tc": 3,
+        "ot": 3
+      },
+      "body": {
+        "ch": 987,
+        "sh": 459,
+        "da": 456,
+        "qo": 408,
+        "ct": 265,
+        "ok": 236,
+        "ot": 224,
+        "do": 118,
+        "ol": 106,
+        "yt": 101,
+        "dy": 99,
+        "kc": 94,
+        "yk": 90,
+        "dc": 80,
+        "tc": 62
+      }
+    },
+    "suffix_distribution": {
+      "headings": {
+        "or": 15,
+        "ol": 13,
+        "y": 12,
+        "dy": 11,
+        "aiin": 10,
+        "hy": 8,
+        "s": 7,
+        "ar": 6,
+        "iin": 5,
+        "d": 5,
+        "ho": 3,
+        "al": 3,
+        "ir": 2,
+        "lo": 1,
+        "m": 1
+      },
+      "body": {
+        "hy": 669,
+        "ol": 605,
+        "or": 566,
+        "aiin": 548,
+        "y": 406,
+        "dy": 286,
+        "ar": 232,
+        "ey": 195,
+        "s": 168,
+        "ho": 164,
+        "al": 131,
+        "ain": 123,
+        "m": 106,
+        "d": 99,
+        "eey": 92
+      }
+    },
+    "grammar_compliance": {
+      "headings_following_grammar": 99,
+      "headings_total": 114,
+      "headings_rate": 0.868,
+      "body_following_grammar": 3780,
+      "body_total": 5000,
+      "body_rate": 0.756
+    },
+    "heading_only_affixes": {
+      "prefixes": [
+        "r*",
+        "pa",
+        "pd",
+        "kd"
+      ],
+      "suffixes": [
+        "oo",
+        "at"
+      ]
+    },
+    "prefix_enrichment_in_headings": [
+      {
+        "prefix": "pd",
+        "heading_count": 2,
+        "heading_rate": 0.0175,
+        "body_rate": 0.0,
+        "enrichment_ratio": "inf"
+      },
+      {
+        "prefix": "pa",
+        "heading_count": 2,
+        "heading_rate": 0.0175,
+        "body_rate": 0.0,
+        "enrichment_ratio": "inf"
+      },
+      {
+        "prefix": "po",
+        "heading_count": 17,
+        "heading_rate": 0.1491,
+        "body_rate": 0.0022,
+        "enrichment_ratio": 67.78
+      },
+      {
+        "prefix": "ps",
+        "heading_count": 3,
+        "heading_rate": 0.0263,
+        "body_rate": 0.0006,
+        "enrichment_ratio": 43.86
+      },
+      {
+        "prefix": "fa",
+        "heading_count": 2,
+        "heading_rate": 0.0175,
+        "body_rate": 0.0004,
+        "enrichment_ratio": 43.86
+      },
+      {
+        "prefix": "py",
+        "heading_count": 3,
+        "heading_rate": 0.0263,
+        "body_rate": 0.001,
+        "enrichment_ratio": 26.32
+      },
+      {
+        "prefix": "pc",
+        "heading_count": 16,
+        "heading_rate": 0.1404,
+        "body_rate": 0.0058,
+        "enrichment_ratio": 24.2
+      },
+      {
+        "prefix": "ts",
+        "heading_count": 6,
+        "heading_rate": 0.0526,
+        "body_rate": 0.0024,
+        "enrichment_ratio": 21.93
+      },
+      {
+        "prefix": "fo",
+        "heading_count": 3,
+        "heading_rate": 0.0263,
+        "body_rate": 0.0016,
+        "enrichment_ratio": 16.45
+      },
+      {
+        "prefix": "fc",
+        "heading_count": 3,
+        "heading_rate": 0.0263,
+        "body_rate": 0.0022,
+        "enrichment_ratio": 11.96
+      }
+    ]
+  },
+  "spelling_consistency": {
+    "unique_headings": 109,
+    "total_entries": 114,
+    "repeated_headings": {
+      "kooiin": 2,
+      "kshody": 2,
+      "tshor": 2,
+      "pchor": 3
+    },
+    "repeated_count": 4,
+    "uniqueness_rate": 0.956,
+    "near_duplicates_edit_distance_1": [
+      {
+        "word1": "cthoo",
+        "word2": "cthod",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "poror",
+        "word2": "porory",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "fochof",
+        "word2": "fochor",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "ker",
+        "word2": "kor",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "pchodaiin",
+        "word2": "fchodaiin",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "tshol",
+        "word2": "pshol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "tshol",
+        "word2": "kshol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "tshol",
+        "word2": "tsho",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "tshol",
+        "word2": "tshor",
+        "count1": 1,
+        "count2": 2
+      },
+      {
+        "word1": "pchodar",
+        "word2": "pcheodar",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "pchodar",
+        "word2": "tchodar",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "pol",
+        "word2": "tol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "fshody",
+        "word2": "kshody",
+        "count1": 1,
+        "count2": 2
+      },
+      {
+        "word1": "sho",
+        "word2": "tsho",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "told",
+        "word2": "tol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "pshol",
+        "word2": "kshol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "pshol",
+        "word2": "poshol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "tor",
+        "word2": "tol",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "tor",
+        "word2": "kor",
+        "count1": 1,
+        "count2": 1
+      },
+      {
+        "word1": "koaiin",
+        "word2": "kooiin",
+        "count1": 1,
+        "count2": 2
+      }
+    ],
+    "interpretation": "HIGH_VARIATION"
+  },
+  "cross_entry_patterns": {
+    "prefixes_with_multiple_entries": 19,
+    "high_similarity_prefixes": [],
+    "low_similarity_prefixes": [
+      {
+        "prefix": "ot",
+        "n_entries": 3,
+        "mean_jaccard": 0.0739,
+        "max_jaccard": 0.1086,
+        "folios": [
+          "f56r",
+          "f88r",
+          "f99v"
+        ]
+      },
+      {
+        "prefix": "fc",
+        "n_entries": 3,
+        "mean_jaccard": 0.0728,
+        "max_jaccard": 0.0827,
+        "folios": [
+          "f7r",
+          "f25r",
+          "f32r"
+        ]
+      },
+      {
+        "prefix": "ok",
+        "n_entries": 6,
+        "mean_jaccard": 0.0724,
+        "max_jaccard": 0.1226,
+        "folios": [
+          "f30r",
+          "f38v",
+          "f88v",
+          "f89r1",
+          "f89v1"
+        ]
+      },
+      {
+        "prefix": "ps",
+        "n_entries": 3,
+        "mean_jaccard": 0.0684,
+        "max_jaccard": 0.0952,
+        "folios": [
+          "f8r",
+          "f47v",
+          "f96v"
+        ]
+      },
+      {
+        "prefix": "ko",
+        "n_entries": 11,
+        "mean_jaccard": 0.0645,
+        "max_jaccard": 0.1221,
+        "folios": [
+          "f2v",
+          "f3v",
+          "f4r",
+          "f5v",
+          "f6v"
+        ]
+      },
+      {
+        "prefix": "po",
+        "n_entries": 17,
+        "mean_jaccard": 0.0644,
+        "max_jaccard": 0.1481,
+        "folios": [
+          "f7v",
+          "f11v",
+          "f15v",
+          "f16r",
+          "f19v"
+        ]
+      },
+      {
+        "prefix": "ch",
+        "n_entries": 2,
+        "mean_jaccard": 0.0543,
+        "max_jaccard": 0.0543,
+        "folios": [
+          "f89v2",
+          "f100r"
+        ]
+      },
+      {
+        "prefix": "fo",
+        "n_entries": 3,
+        "mean_jaccard": 0.0526,
+        "max_jaccard": 0.0828,
+        "folios": [
+          "f6r",
+          "f9v",
+          "f27v"
+        ]
+      },
+      {
+        "prefix": "to",
+        "n_entries": 9,
+        "mean_jaccard": 0.0523,
+        "max_jaccard": 0.1094,
+        "folios": [
+          "f13r",
+          "f18v",
+          "f21v",
+          "f37r",
+          "f38r"
+        ]
+      },
+      {
+        "prefix": "tc",
+        "n_entries": 3,
+        "mean_jaccard": 0.0476,
+        "max_jaccard": 0.0599,
+        "folios": [
+          "f24v",
+          "f42v",
+          "f51r"
+        ]
+      }
+    ],
+    "interpretation": "No strong taxonomic clustering detected"
+  },
+  "key_findings": {
+    "heading_mean_length": 6.43,
+    "body_mean_length": 5.1,
+    "headings_longer_than_body": true,
+    "heading_grammar_compliance": 0.868,
+    "body_grammar_compliance": 0.756,
+    "spelling_uniqueness": 0.956,
+    "near_duplicate_count": 20,
+    "taxonomic_clustering": "No strong taxonomic clustering detected"
+  },
+  "constraints": [
+    "Headings average 6.43 chars (body: 5.1)",
+    "Heading grammar compliance: 86.8%",
+    "Heading uniqueness: 95.6% unique",
+    "Spelling variation: HIGH_VARIATION",
+    "No strong taxonomic clustering detected"
+  ]
+}

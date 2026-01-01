@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "title": "Correlation Engine Configuration",
+    "phase": "Data Recovery Phase, Task 4",
+    "date": "2025-12-30T16:49:44.757595"
+  },
+  "thresholds": {
+    "bonferroni_alpha": 0.01,
+    "null_model_permutations": 1000,
+    "null_model_threshold_percentile": 99,
+    "undetermined_rate_threshold": 0.3
+  },
+  "excluded_features": [
+    "overall_complexity",
+    "identifiable_impression"
+  ],
+  "tests_available": [
+    "chi_square_test",
+    "fisher_exact_2x2",
+    "test_categorical_association",
+    "test_continuous_correlation",
+    "null_model_test"
+  ],
+  "status": "READY - awaiting visual data"
+}

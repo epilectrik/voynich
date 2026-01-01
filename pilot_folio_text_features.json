@@ -1,0 +1,8454 @@
+{
+  "metadata": {
+    "title": "Pilot Folio Text Features for Visual Correlation Study",
+    "phase": "Phase 18, Task 2",
+    "date": "2025-12-30T16:07:41.562145",
+    "folio_count": 30,
+    "purpose": "Text features for visual-text correlation analysis"
+  },
+  "summary_statistics": {
+    "total_pilot_folios": 30,
+    "headings_unique_to_folio": 20,
+    "headings_appearing_in_b": 5,
+    "mean_word_count": 95.3,
+    "mean_prefix_diversity": 26.4
+  },
+  "pilot_folios": {
+    "f38r": {
+      "folio_id": "f38r",
+      "word_count": 42,
+      "unique_word_count": 39,
+      "vocabulary_richness": 0.9286,
+      "part1_word_count": 14,
+      "part1_vocabulary": [
+        "oly",
+        "cthar",
+        "okseey",
+        "choiin",
+        "otaiin",
+        "okshey",
+        "okshol",
+        "chodys",
+        "qokor",
+        "chody",
+        "ytoiin",
+        "oky",
+        "chockhy",
+        "tolor"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 14,
+      "part2_vocabulary": [
+        "chy",
+        "ychok",
+        "daiin",
+        "otaiin",
+        "chckh",
+        "chey",
+        "okaiin",
+        "chka",
+        "sy",
+        "chkor",
+        "qokchol",
+        "chokokor",
+        "ychokchey",
+        "odaiin"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 14,
+      "part3_vocabulary": [
+        "daiin",
+        "okoy",
+        "sho",
+        "chochor",
+        "chey",
+        "chor",
+        "kain",
+        "kos",
+        "dain",
+        "ysho",
+        "ckholdy",
+        "okor",
+        "ctho",
+        "rodaiin"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "tolor",
+      "heading_prefix": "to",
+      "heading_suffix": "or",
+      "heading_length": 5,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f38r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "to": 1,
+        "ch": 13,
+        "ok": 7,
+        "ol": 1,
+        "yt": 1,
+        "ot": 2,
+        "ct": 2,
+        "qo": 2,
+        "yc": 2,
+        "od": 1,
+        "da": 3,
+        "sy": 1,
+        "ro": 1,
+        "ka": 1,
+        "ck": 1,
+        "ys": 1,
+        "sh": 1,
+        "ko": 1
+      },
+      "prefix_diversity": 18,
+      "top_3_prefixes": [
+        "ch",
+        "ok",
+        "da"
+      ],
+      "suffix_counts": {
+        "or": 7,
+        "hy": 2,
+        "y": 4,
+        "iin": 2,
+        "ol": 2,
+        "eey": 1,
+        "s": 2,
+        "aiin": 7,
+        "ar": 1,
+        "ey": 4,
+        "dy": 2,
+        "ok": 1,
+        "kh": 1,
+        "ka": 1,
+        "ain": 2,
+        "ho": 3
+      },
+      "suffix_diversity": 16,
+      "top_3_suffixes": [
+        "or",
+        "aiin",
+        "y"
+      ],
+      "part1_words_in_b": 9,
+      "cross_reference_candidates": [
+        {
+          "word": "oly",
+          "b_entry_count": 25,
+          "b_folios": [
+            "f34r",
+            "f40v",
+            "f41v",
+            "f48v",
+            "f66r"
+          ]
+        },
+        {
+          "word": "cthar",
+          "b_entry_count": 6,
+          "b_folios": [
+            "f48r",
+            "f55v",
+            "f76r",
+            "f113r",
+            "f113v"
+          ]
+        },
+        {
+          "word": "otaiin",
+          "b_entry_count": 54,
+          "b_folios": [
+            "f33r",
+            "f43r",
+            "f43v",
+            "f48r",
+            "f50r"
+          ]
+        },
+        {
+          "word": "okshey",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f75v",
+            "f79r",
+            "f80v",
+            "f95v1",
+            "f104r"
+          ]
+        },
+        {
+          "word": "qokor",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f33v",
+            "f66r",
+            "f75v",
+            "f77r",
+            "f78r"
+          ]
+        },
+        {
+          "word": "chody",
+          "b_entry_count": 33,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39v",
+            "f43r",
+            "f43v"
+          ]
+        },
+        {
+          "word": "ytoiin",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f105v"
+          ]
+        },
+        {
+          "word": "oky",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f31v",
+            "f33v",
+            "f34r",
+            "f39r",
+            "f40r"
+          ]
+        },
+        {
+          "word": "chockhy",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f57r",
+            "f104v",
+            "f113r",
+            "f113v",
+            "f114v"
+          ]
+        }
+      ],
+      "opening_word": "tolor",
+      "closing_word": "chochor",
+      "section": "H"
+    },
+    "f25r": {
+      "folio_id": "f25r",
+      "word_count": 48,
+      "unique_word_count": 46,
+      "vocabulary_richness": 0.9583,
+      "part1_word_count": 16,
+      "part1_vocabulary": [
+        "ckhy",
+        "fcholdy",
+        "chrky",
+        "soshy",
+        "daiin",
+        "cpholdy",
+        "otor",
+        "chotchy",
+        "chor",
+        "sho",
+        "ocholdy",
+        "sy",
+        "qod",
+        "cky",
+        "shair",
+        "shody"
+      ],
+      "part1_dominant_prefix": "sh",
+      "part2_word_count": 16,
+      "part2_vocabulary": [
+        "dein",
+        "chain",
+        "shachy",
+        "chy",
+        "daiin",
+        "shain",
+        "chkain",
+        "dan",
+        "kchy",
+        "dchckhy",
+        "chsky",
+        "sheear",
+        "dain",
+        "cheesees",
+        "qotshy",
+        "qotchy"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 16,
+      "part3_vocabulary": [
+        "chan",
+        "chaiin",
+        "qotcheaiin",
+        "otosy",
+        "shocthy",
+        "daiin",
+        "cthor",
+        "cthain",
+        "chotaiin",
+        "ytchey",
+        "dchain",
+        "dair",
+        "otaiir",
+        "qotaiin",
+        "qotchain",
+        "okal"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "fcholdy",
+      "heading_prefix": "fc",
+      "heading_suffix": "dy",
+      "heading_length": 7,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f23r",
+        "f25r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "fc": 1,
+        "so": 1,
+        "da": 6,
+        "ck": 2,
+        "sh": 7,
+        "oc": 1,
+        "cp": 1,
+        "sy": 1,
+        "ot": 3,
+        "ch": 11,
+        "qo": 6,
+        "kc": 1,
+        "de": 1,
+        "dc": 2,
+        "yt": 1,
+        "ct": 2,
+        "ok": 1
+      },
+      "prefix_diversity": 17,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "da"
+      ],
+      "suffix_counts": {
+        "dy": 4,
+        "hy": 10,
+        "aiin": 7,
+        "y": 5,
+        "or": 3,
+        "ir": 3,
+        "d": 1,
+        "ho": 1,
+        "ain": 7,
+        "s": 1,
+        "ar": 1,
+        "in": 1,
+        "an": 2,
+        "ey": 1,
+        "al": 1
+      },
+      "suffix_diversity": 15,
+      "top_3_suffixes": [
+        "hy",
+        "aiin",
+        "ain"
+      ],
+      "part1_words_in_b": 9,
+      "cross_reference_candidates": [
+        {
+          "word": "ckhy",
+          "b_entry_count": 10,
+          "b_folios": [
+            "f34v",
+            "f39r",
+            "f40v",
+            "f43v",
+            "f48r"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "otor",
+          "b_entry_count": 19,
+          "b_folios": [
+            "f33r",
+            "f39v",
+            "f40r",
+            "f50v",
+            "f78r"
+          ]
+        },
+        {
+          "word": "chotchy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f108v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "sho",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f55r",
+            "f75r",
+            "f86v4",
+            "f95v1",
+            "f103v"
+          ]
+        },
+        {
+          "word": "sy",
+          "b_entry_count": 9,
+          "b_folios": [
+            "f66r",
+            "f66v",
+            "f75r",
+            "f76r",
+            "f76v"
+          ]
+        },
+        {
+          "word": "qod",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f34r",
+            "f50v",
+            "f75r",
+            "f104r",
+            "f111r"
+          ]
+        },
+        {
+          "word": "shody",
+          "b_entry_count": 20,
+          "b_folios": [
+            "f26v",
+            "f33r",
+            "f39v",
+            "f40v",
+            "f43r"
+          ]
+        }
+      ],
+      "opening_word": "fcholdy",
+      "closing_word": "otosy",
+      "section": "H"
+    },
+    "f11r": {
+      "folio_id": "f11r",
+      "word_count": 57,
+      "unique_word_count": 46,
+      "vocabulary_richness": 0.807,
+      "part1_word_count": 19,
+      "part1_vocabulary": [
+        "daiin",
+        "shey",
+        "schoal",
+        "shfydaiin",
+        "shoyty",
+        "cphy",
+        "kshy",
+        "cfhy",
+        "ytchy",
+        "qodory",
+        "qodor",
+        "ytchoky",
+        "tchody",
+        "fy",
+        "tshol",
+        "shcfhydaiin",
+        "socthody",
+        "chody",
+        "kchol"
+      ],
+      "part1_dominant_prefix": "sh",
+      "part2_word_count": 19,
+      "part2_vocabulary": [
+        "cthy",
+        "chaiin",
+        "chy",
+        "shor",
+        "dy",
+        "daiin",
+        "ded",
+        "chol",
+        "dor",
+        "qoty",
+        "kchy",
+        "dky",
+        "ykychy",
+        "dain",
+        "dchol",
+        "choty",
+        "tchol",
+        "dod"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 19,
+      "part3_vocabulary": [
+        "dsy",
+        "ykchor",
+        "cthy",
+        "chaiin",
+        "okchol",
+        "dy",
+        "daiin",
+        "ds",
+        "chodl",
+        "dair",
+        "chody",
+        "odl",
+        "qotchy",
+        "otol",
+        "shcphy"
+      ],
+      "part3_dominant_prefix": "da",
+      "heading_word": "tshol",
+      "heading_prefix": "ts",
+      "heading_suffix": "ol",
+      "heading_length": 5,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f11r",
+        "f20v",
+        "f23r",
+        "f23v",
+        "f51r",
+        "f99r"
+      ],
+      "heading_in_b": true,
+      "heading_b_entry_count": 1,
+      "heading_b_folios": [
+        "f50r"
+      ],
+      "prefix_counts": {
+        "ts": 1,
+        "sc": 1,
+        "cf": 1,
+        "sh": 6,
+        "cp": 1,
+        "tc": 2,
+        "fy": 1,
+        "ch": 8,
+        "so": 1,
+        "qo": 4,
+        "ks": 1,
+        "da": 7,
+        "yt": 2,
+        "kc": 2,
+        "ct": 4,
+        "do": 2,
+        "yk": 2,
+        "de": 1,
+        "dc": 1,
+        "dy": 3,
+        "dk": 1,
+        "od": 1,
+        "ds": 2,
+        "ot": 1,
+        "ok": 1
+      },
+      "prefix_diversity": 25,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "sh"
+      ],
+      "suffix_counts": {
+        "ol": 7,
+        "al": 1,
+        "hy": 13,
+        "aiin": 9,
+        "ey": 1,
+        "dy": 7,
+        "y": 8,
+        "or": 4,
+        "ain": 1,
+        "d": 2,
+        "l": 2,
+        "s": 1,
+        "ir": 1
+      },
+      "suffix_diversity": 13,
+      "top_3_suffixes": [
+        "hy",
+        "aiin",
+        "y"
+      ],
+      "part1_words_in_b": 10,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "shey",
+          "b_entry_count": 51,
+          "b_folios": [
+            "f31r",
+            "f39r",
+            "f43v",
+            "f46r",
+            "f46v"
+          ]
+        },
+        {
+          "word": "cphy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34v",
+            "f86v6",
+            "f114r"
+          ]
+        },
+        {
+          "word": "kshy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f39v",
+            "f86v6",
+            "f103r"
+          ]
+        },
+        {
+          "word": "ytchy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f48r",
+            "f86v5",
+            "f105r"
+          ]
+        },
+        {
+          "word": "qodor",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f41r"
+          ]
+        },
+        {
+          "word": "tchody",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f86v3",
+            "f95v2",
+            "f95v1"
+          ]
+        },
+        {
+          "word": "tshol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f50r"
+          ]
+        },
+        {
+          "word": "chody",
+          "b_entry_count": 33,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39v",
+            "f43r",
+            "f43v"
+          ]
+        },
+        {
+          "word": "kchol",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f78r",
+            "f86v5",
+            "f111r",
+            "f113r"
+          ]
+        }
+      ],
+      "opening_word": "tshol",
+      "closing_word": "dy",
+      "section": "H"
+    },
+    "f11v": {
+      "folio_id": "f11v",
+      "word_count": 57,
+      "unique_word_count": 53,
+      "vocabulary_richness": 0.9298,
+      "part1_word_count": 19,
+      "part1_vocabulary": [
+        "shol",
+        "cphar",
+        "dam",
+        "shordy",
+        "dany",
+        "dy",
+        "daiin",
+        "dan",
+        "dchy",
+        "qoty",
+        "poldchody",
+        "shcthy",
+        "ykchy",
+        "chckhy",
+        "dain",
+        "otchor",
+        "shcphy"
+      ],
+      "part1_dominant_prefix": "sh",
+      "part2_word_count": 19,
+      "part2_vocabulary": [
+        "dar",
+        "dchy",
+        "tan",
+        "kchy",
+        "oky",
+        "tchey",
+        "chol",
+        "ton",
+        "soydy",
+        "ctho",
+        "qoky",
+        "chololor",
+        "chololar",
+        "chololer",
+        "qokchor",
+        "qokchd",
+        "t*",
+        "chyky",
+        "tchy"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 19,
+      "part3_vocabulary": [
+        "chold",
+        "loydy",
+        "chor",
+        "dor",
+        "shyarg",
+        "ycheor",
+        "ddy",
+        "arg",
+        "qoteey",
+        "shy",
+        "qotchor",
+        "dy",
+        "cthor",
+        "arm",
+        "cthey",
+        "schold",
+        "cthoy",
+        "qot",
+        "ksho"
+      ],
+      "part3_dominant_prefix": "qo",
+      "heading_word": "poldchody",
+      "heading_prefix": "po",
+      "heading_suffix": "dy",
+      "heading_length": 9,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f11v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "po": 1,
+        "sh": 7,
+        "qo": 7,
+        "cp": 1,
+        "da": 6,
+        "dy": 3,
+        "ch": 8,
+        "yk": 1,
+        "dc": 2,
+        "ot": 1,
+        "kc": 1,
+        "tc": 2,
+        "ok": 1,
+        "ct": 4,
+        "ta": 1,
+        "t*": 1,
+        "to": 1,
+        "so": 1,
+        "dd": 1,
+        "ar": 2,
+        "lo": 1,
+        "yc": 1,
+        "ks": 1,
+        "do": 1,
+        "sc": 1
+      },
+      "prefix_diversity": 25,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "qo"
+      ],
+      "suffix_counts": {
+        "dy": 8,
+        "hy": 9,
+        "y": 6,
+        "ol": 3,
+        "ar": 3,
+        "an": 2,
+        "aiin": 1,
+        "am": 1,
+        "ain": 1,
+        "or": 8,
+        "d": 3,
+        "er": 1,
+        "ho": 2,
+        "ey": 2,
+        "t*": 1,
+        "on": 1,
+        "eey": 1,
+        "rg": 2,
+        "ot": 1,
+        "m": 1
+      },
+      "suffix_diversity": 20,
+      "top_3_suffixes": [
+        "hy",
+        "dy",
+        "or"
+      ],
+      "part1_words_in_b": 14,
+      "cross_reference_candidates": [
+        {
+          "word": "shol",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f33v",
+            "f39r",
+            "f40v",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "cphar",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f78v"
+          ]
+        },
+        {
+          "word": "dam",
+          "b_entry_count": 40,
+          "b_folios": [
+            "f33r",
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v"
+          ]
+        },
+        {
+          "word": "dy",
+          "b_entry_count": 58,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f33r",
+            "f33v",
+            "f34v"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "dan",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f86v4",
+            "f95r1"
+          ]
+        },
+        {
+          "word": "dchy",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f77v",
+            "f79r"
+          ]
+        },
+        {
+          "word": "qoty",
+          "b_entry_count": 32,
+          "b_folios": [
+            "f39v",
+            "f46v",
+            "f66r",
+            "f75r",
+            "f76r"
+          ]
+        },
+        {
+          "word": "shcthy",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f26r",
+            "f66r",
+            "f76r",
+            "f77v",
+            "f79r"
+          ]
+        },
+        {
+          "word": "ykchy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34r",
+            "f50v",
+            "f86v6"
+          ]
+        }
+      ],
+      "opening_word": "poldchody",
+      "closing_word": "chold",
+      "section": "H"
+    },
+    "f5v": {
+      "folio_id": "f5v",
+      "word_count": 58,
+      "unique_word_count": 49,
+      "vocabulary_richness": 0.8448,
+      "part1_word_count": 19,
+      "part1_vocabulary": [
+        "daiin",
+        "chor",
+        "dain",
+        "dchol",
+        "pshod",
+        "chol",
+        "ytchey",
+        "char",
+        "chols",
+        "kocheor",
+        "cheor",
+        "ytoiiin",
+        "chot*",
+        "cthor",
+        "ychopordg",
+        "chots",
+        "chodaiin",
+        "otaiin",
+        "sy"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 19,
+      "part2_vocabulary": [
+        "do",
+        "daiin",
+        "ykoiin",
+        "qotor",
+        "darchor",
+        "shees",
+        "otol",
+        "dm",
+        "dd",
+        "shol",
+        "qotcho",
+        "daiir",
+        "qo",
+        "shy",
+        "otchor",
+        "ychopordm",
+        "qo*",
+        "ytor",
+        "ychopor"
+      ],
+      "part2_dominant_prefix": "qo",
+      "part3_word_count": 20,
+      "part3_vocabulary": [
+        "dairodg",
+        "dal",
+        "dairodm",
+        "daiin",
+        "okchy",
+        "cthor",
+        "otof",
+        "chol",
+        "chor",
+        "chotaiin",
+        "cheotol",
+        "shokeeol",
+        "otchol",
+        "taiin",
+        "okchykaiin",
+        "otol",
+        "dairodd"
+      ],
+      "part3_dominant_prefix": "da",
+      "heading_word": "kocheor",
+      "heading_prefix": "ko",
+      "heading_suffix": "or",
+      "heading_length": 7,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f5v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ko": 1,
+        "ch": 13,
+        "yt": 3,
+        "ps": 1,
+        "da": 11,
+        "dc": 1,
+        "sy": 1,
+        "ot": 7,
+        "ct": 2,
+        "yc": 3,
+        "sh": 4,
+        "dm": 1,
+        "qo": 4,
+        "do": 1,
+        "dd": 1,
+        "yk": 1,
+        "ok": 2,
+        "ta": 1
+      },
+      "prefix_diversity": 18,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "ot"
+      ],
+      "suffix_counts": {
+        "or": 11,
+        "ey": 1,
+        "d": 3,
+        "s": 3,
+        "aiin": 9,
+        "iin": 2,
+        "ar": 1,
+        "ol": 10,
+        "y": 1,
+        "ain": 1,
+        "dg": 2,
+        "t*": 1,
+        "hy": 2,
+        "m": 3,
+        "ho": 1,
+        "ir": 1,
+        "qo": 1,
+        "do": 1,
+        "o*": 1,
+        "of": 2,
+        "al": 1
+      },
+      "suffix_diversity": 21,
+      "top_3_suffixes": [
+        "or",
+        "ol",
+        "aiin"
+      ],
+      "part1_words_in_b": 13,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "dain",
+          "b_entry_count": 44,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f40r",
+            "f43r",
+            "f48r"
+          ]
+        },
+        {
+          "word": "dchol",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f26v",
+            "f79r",
+            "f81r",
+            "f86v5",
+            "f115r"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        },
+        {
+          "word": "ytchey",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f46v",
+            "f78v",
+            "f86v5",
+            "f86v3",
+            "f116r"
+          ]
+        },
+        {
+          "word": "char",
+          "b_entry_count": 27,
+          "b_folios": [
+            "f34r",
+            "f34v",
+            "f46v",
+            "f55r",
+            "f75r"
+          ]
+        },
+        {
+          "word": "chols",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f95v2",
+            "f115r"
+          ]
+        },
+        {
+          "word": "cheor",
+          "b_entry_count": 24,
+          "b_folios": [
+            "f31v",
+            "f34v",
+            "f39v",
+            "f41v",
+            "f46r"
+          ]
+        },
+        {
+          "word": "cthor",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f80v",
+            "f82v",
+            "f113v"
+          ]
+        }
+      ],
+      "opening_word": "kocheor",
+      "closing_word": "dairodm",
+      "section": "H"
+    },
+    "f10v": {
+      "folio_id": "f10v",
+      "word_count": 63,
+      "unique_word_count": 49,
+      "vocabulary_richness": 0.7778,
+      "part1_word_count": 21,
+      "part1_vocabulary": [
+        "daiin",
+        "dain",
+        "chcthor",
+        "otydy",
+        "ckhy",
+        "ytey",
+        "sain",
+        "cthy",
+        "dy",
+        "dsho",
+        "cthor",
+        "qotchodaiin",
+        "paiin",
+        "choiin",
+        "chodaiin",
+        "sheo",
+        "qoty",
+        "oty",
+        "pcheey",
+        "qot"
+      ],
+      "part1_dominant_prefix": "da",
+      "part2_word_count": 21,
+      "part2_vocabulary": [
+        "ykeey",
+        "qotchytor",
+        "ytor",
+        "ty",
+        "dy",
+        "daiin",
+        "sho",
+        "shcthey",
+        "chol",
+        "kchol",
+        "tor",
+        "ol",
+        "olty",
+        "dain",
+        "qotchey",
+        "qotor",
+        "shoiin",
+        "qotchy"
+      ],
+      "part2_dominant_prefix": "qo",
+      "part3_word_count": 21,
+      "part3_vocabulary": [
+        "daiin",
+        "chor",
+        "ky",
+        "aiin",
+        "dain",
+        "chy",
+        "chckhan",
+        "chol",
+        "shcthy",
+        "qokol",
+        "qotol",
+        "qotoiin",
+        "shoiin",
+        "qoty",
+        "choraiin",
+        "chyky",
+        "cheky",
+        "qokchy",
+        "qokchyky"
+      ],
+      "part3_dominant_prefix": "qo",
+      "heading_word": "paiin",
+      "heading_prefix": "pa",
+      "heading_suffix": "aiin",
+      "heading_length": 5,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f10v",
+        "f35r"
+      ],
+      "heading_in_b": true,
+      "heading_b_entry_count": 6,
+      "heading_b_folios": [
+        "f39v",
+        "f80r",
+        "f86v6",
+        "f105r",
+        "f105v",
+        "f107v"
+      ],
+      "prefix_counts": {
+        "pa": 1,
+        "da": 8,
+        "sh": 6,
+        "pc": 1,
+        "qo": 15,
+        "ct": 2,
+        "ot": 2,
+        "sa": 1,
+        "dy": 2,
+        "ck": 1,
+        "ch": 12,
+        "ds": 1,
+        "yt": 2,
+        "kc": 1,
+        "ol": 2,
+        "ty": 1,
+        "to": 1,
+        "yk": 1,
+        "ky": 2,
+        "ai": 1
+      },
+      "prefix_diversity": 20,
+      "top_3_prefixes": [
+        "qo",
+        "ch",
+        "da"
+      ],
+      "suffix_counts": {
+        "aiin": 10,
+        "eo": 1,
+        "eey": 2,
+        "y": 10,
+        "or": 7,
+        "dy": 3,
+        "ain": 4,
+        "hy": 7,
+        "iin": 4,
+        "ot": 1,
+        "ho": 2,
+        "ey": 3,
+        "ol": 8,
+        "an": 1
+      },
+      "suffix_diversity": 14,
+      "top_3_suffixes": [
+        "aiin",
+        "y",
+        "ol"
+      ],
+      "part1_words_in_b": 16,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "dain",
+          "b_entry_count": 44,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f40r",
+            "f43r",
+            "f48r"
+          ]
+        },
+        {
+          "word": "otydy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f106v"
+          ]
+        },
+        {
+          "word": "ckhy",
+          "b_entry_count": 10,
+          "b_folios": [
+            "f34v",
+            "f39r",
+            "f40v",
+            "f43v",
+            "f48r"
+          ]
+        },
+        {
+          "word": "ytey",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f34r",
+            "f41r",
+            "f43r",
+            "f46r",
+            "f81v"
+          ]
+        },
+        {
+          "word": "sain",
+          "b_entry_count": 34,
+          "b_folios": [
+            "f75r",
+            "f76r",
+            "f76v",
+            "f77r",
+            "f77v"
+          ]
+        },
+        {
+          "word": "cthy",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f33v",
+            "f34v",
+            "f46r",
+            "f46v",
+            "f84v"
+          ]
+        },
+        {
+          "word": "dy",
+          "b_entry_count": 58,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f33r",
+            "f33v",
+            "f34v"
+          ]
+        },
+        {
+          "word": "cthor",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f80v",
+            "f82v",
+            "f113v"
+          ]
+        },
+        {
+          "word": "paiin",
+          "b_entry_count": 6,
+          "b_folios": [
+            "f39v",
+            "f80r",
+            "f86v6",
+            "f105r",
+            "f105v"
+          ]
+        }
+      ],
+      "opening_word": "paiin",
+      "closing_word": "ky",
+      "section": "H"
+    },
+    "f38v": {
+      "folio_id": "f38v",
+      "word_count": 65,
+      "unique_word_count": 50,
+      "vocabulary_richness": 0.7692,
+      "part1_word_count": 21,
+      "part1_vocabulary": [
+        "okchop",
+        "okeaiin",
+        "daiin",
+        "shey",
+        "keo",
+        "chor",
+        "aiin",
+        "oteol",
+        "oiin",
+        "key",
+        "chol",
+        "char",
+        "okom",
+        "sho",
+        "shotol",
+        "okeey",
+        "choiin",
+        "ldy",
+        "okam",
+        "choldy"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 21,
+      "part2_vocabulary": [
+        "dody",
+        "qokchy",
+        "oteeol",
+        "keey",
+        "daiin",
+        "keor",
+        "chol",
+        "okeey",
+        "qoty",
+        "aiin",
+        "dair",
+        "chotey",
+        "keordaiin",
+        "aiiin",
+        "oky",
+        "qokeey",
+        "okey",
+        "tody"
+      ],
+      "part2_dominant_prefix": "qo",
+      "part3_word_count": 23,
+      "part3_vocabulary": [
+        "or",
+        "sor",
+        "tey",
+        "daiin",
+        "aiin",
+        "dain",
+        "chy",
+        "dais",
+        "key",
+        "char",
+        "keeey",
+        "qolchy",
+        "sho",
+        "oaiin",
+        "chokaiin",
+        "chody",
+        "qol",
+        "daiiin",
+        "chshol",
+        "cheod",
+        "daldy"
+      ],
+      "part3_dominant_prefix": "da",
+      "heading_word": "okchop",
+      "heading_prefix": "ok",
+      "heading_suffix": "op",
+      "heading_length": 6,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f38v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ok": 8,
+        "ch": 14,
+        "sh": 4,
+        "ot": 2,
+        "ai": 4,
+        "da": 12,
+        "ke": 7,
+        "oi": 1,
+        "ld": 1,
+        "qo": 6,
+        "to": 1,
+        "do": 1,
+        "te": 1,
+        "or": 1,
+        "so": 1,
+        "oa": 1
+      },
+      "prefix_diversity": 16,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "ok"
+      ],
+      "suffix_counts": {
+        "op": 1,
+        "ol": 8,
+        "eey": 6,
+        "or": 4,
+        "aiin": 13,
+        "ar": 2,
+        "iin": 4,
+        "ey": 6,
+        "eo": 1,
+        "ho": 2,
+        "dy": 6,
+        "m": 1,
+        "am": 1,
+        "ir": 1,
+        "y": 2,
+        "hy": 3,
+        "d": 1,
+        "ain": 2,
+        "s": 1
+      },
+      "suffix_diversity": 19,
+      "top_3_suffixes": [
+        "aiin",
+        "ol",
+        "eey"
+      ],
+      "part1_words_in_b": 17,
+      "cross_reference_candidates": [
+        {
+          "word": "okeaiin",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f108v"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "shey",
+          "b_entry_count": 51,
+          "b_folios": [
+            "f31r",
+            "f39r",
+            "f43v",
+            "f46r",
+            "f46v"
+          ]
+        },
+        {
+          "word": "keo",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f31r",
+            "f94r",
+            "f106v",
+            "f111r"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "aiin",
+          "b_entry_count": 77,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r"
+          ]
+        },
+        {
+          "word": "oteol",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f41v",
+            "f43r"
+          ]
+        },
+        {
+          "word": "oiin",
+          "b_entry_count": 20,
+          "b_folios": [
+            "f75v",
+            "f76r",
+            "f77v",
+            "f79v",
+            "f80r"
+          ]
+        },
+        {
+          "word": "key",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f34v",
+            "f50v",
+            "f75v",
+            "f80v",
+            "f103r"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        }
+      ],
+      "opening_word": "okchop",
+      "closing_word": "oaiin",
+      "section": "H"
+    },
+    "f5r": {
+      "folio_id": "f5r",
+      "word_count": 66,
+      "unique_word_count": 55,
+      "vocabulary_richness": 0.8333,
+      "part1_word_count": 22,
+      "part1_vocabulary": [
+        "chey",
+        "dkchy",
+        "ochey",
+        "pchoy",
+        "chkoy",
+        "oka*or",
+        "olsy",
+        "dkshy",
+        "otol",
+        "dy",
+        "sho",
+        "oaiin",
+        "chody",
+        "kchody",
+        "qokaiin",
+        "ckhoy",
+        "cthey",
+        "oka*os",
+        "okey",
+        "kshody",
+        "fchoy",
+        "oar"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 22,
+      "part2_vocabulary": [
+        "daiin",
+        "qoaiin",
+        "sheody",
+        "chy",
+        "chocthy",
+        "qotcho",
+        "cho",
+        "otchy",
+        "tshy",
+        "cheor",
+        "shody",
+        "oteeen",
+        "cthy",
+        "dy",
+        "oteee*",
+        "chan",
+        "otan",
+        "qotchody",
+        "otain",
+        "ok**or",
+        "cheody"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 22,
+      "part3_vocabulary": [
+        "qotoeey",
+        "keey",
+        "daiin",
+        "chey",
+        "kchy",
+        "qoaiin",
+        "qotcheo",
+        "cheokchy",
+        "qoykeeey",
+        "cheor",
+        "shody",
+        "cthy",
+        "dy",
+        "sho",
+        "teey",
+        "cheo",
+        "qoeor",
+        "cholols",
+        "shodaiin",
+        "qoeeey",
+        "shotshy"
+      ],
+      "part3_dominant_prefix": "qo",
+      "heading_word": "kshody",
+      "heading_prefix": "ks",
+      "heading_suffix": "dy",
+      "heading_length": 6,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f5r",
+        "f37v",
+        "f53v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ks": 1,
+        "fc": 1,
+        "ch": 15,
+        "oa": 2,
+        "ol": 1,
+        "dk": 2,
+        "dy": 3,
+        "kc": 2,
+        "pc": 1,
+        "oc": 1,
+        "ok": 4,
+        "qo": 10,
+        "sh": 8,
+        "ck": 1,
+        "ct": 3,
+        "ot": 6,
+        "da": 2,
+        "ts": 1,
+        "te": 1,
+        "ke": 1
+      },
+      "prefix_diversity": 20,
+      "top_3_prefixes": [
+        "ch",
+        "qo",
+        "sh"
+      ],
+      "suffix_counts": {
+        "dy": 11,
+        "y": 5,
+        "aiin": 7,
+        "ar": 1,
+        "hy": 12,
+        "ey": 5,
+        "ho": 5,
+        "or": 5,
+        "ol": 1,
+        "s": 2,
+        "an": 2,
+        "en": 1,
+        "e*": 1,
+        "ain": 1,
+        "eo": 2,
+        "eey": 5
+      },
+      "suffix_diversity": 16,
+      "top_3_suffixes": [
+        "hy",
+        "dy",
+        "aiin"
+      ],
+      "part1_words_in_b": 12,
+      "cross_reference_candidates": [
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "ochey",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34r",
+            "f108v",
+            "f111r"
+          ]
+        },
+        {
+          "word": "otol",
+          "b_entry_count": 27,
+          "b_folios": [
+            "f48r",
+            "f55r",
+            "f55v",
+            "f75r",
+            "f75v"
+          ]
+        },
+        {
+          "word": "dy",
+          "b_entry_count": 58,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f33r",
+            "f33v",
+            "f34v"
+          ]
+        },
+        {
+          "word": "sho",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f55r",
+            "f75r",
+            "f86v4",
+            "f95v1",
+            "f103v"
+          ]
+        },
+        {
+          "word": "oaiin",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f26r",
+            "f55v",
+            "f79v",
+            "f103r",
+            "f107r"
+          ]
+        },
+        {
+          "word": "chody",
+          "b_entry_count": 33,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39v",
+            "f43r",
+            "f43v"
+          ]
+        },
+        {
+          "word": "kchody",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f31v",
+            "f66r",
+            "f86v5"
+          ]
+        },
+        {
+          "word": "qokaiin",
+          "b_entry_count": 59,
+          "b_folios": [
+            "f39r",
+            "f39v",
+            "f40v",
+            "f46r",
+            "f50r"
+          ]
+        },
+        {
+          "word": "cthey",
+          "b_entry_count": 15,
+          "b_folios": [
+            "f26r",
+            "f33v",
+            "f41r",
+            "f43v",
+            "f46v"
+          ]
+        }
+      ],
+      "opening_word": "kshody",
+      "closing_word": "cheokchy",
+      "section": "H"
+    },
+    "f36r": {
+      "folio_id": "f36r",
+      "word_count": 70,
+      "unique_word_count": 64,
+      "vocabulary_richness": 0.9143,
+      "part1_word_count": 23,
+      "part1_vocabulary": [
+        "daiin",
+        "chty",
+        "dair",
+        "tor",
+        "qooldy",
+        "qotchy",
+        "chl",
+        "chol",
+        "cphor",
+        "qotaiin",
+        "cthy",
+        "shaiin",
+        "shor",
+        "dy",
+        "pchafdan",
+        "ytaiin",
+        "soiin",
+        "oral",
+        "qorain",
+        "choldy",
+        "chcfhal",
+        "chafdan",
+        "tchy"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 23,
+      "part2_vocabulary": [
+        "daiin",
+        "dar",
+        "dchy",
+        "cphy",
+        "qor",
+        "dolsain",
+        "qoypchol",
+        "chy",
+        "chol",
+        "shy",
+        "sain",
+        "gaiin",
+        "chytaroiin",
+        "podaiir",
+        "rom",
+        "fchom",
+        "ctholy",
+        "cphyqoypchol",
+        "som",
+        "dol",
+        "sy",
+        "cy"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 24,
+      "part3_vocabulary": [
+        "otaro",
+        "qorchol",
+        "chaiin",
+        "daiin",
+        "okaiin",
+        "dain",
+        "an",
+        "cthol",
+        "okoldy",
+        "sold",
+        "cho",
+        "qotol",
+        "dy",
+        "cthor",
+        "dan",
+        "yd",
+        "ykaiin",
+        "ykaiiin",
+        "ytodaly",
+        "okchy",
+        "okol",
+        "ytchor",
+        "ytorory"
+      ],
+      "part3_dominant_prefix": "ok",
+      "heading_word": "pchafdan",
+      "heading_prefix": "pc",
+      "heading_suffix": "an",
+      "heading_length": 8,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f36r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "pc": 1,
+        "qo": 8,
+        "ch": 12,
+        "so": 3,
+        "cp": 3,
+        "sh": 3,
+        "ct": 5,
+        "da": 7,
+        "or": 1,
+        "yt": 4,
+        "dy": 2,
+        "to": 1,
+        "tc": 1,
+        "ga": 1,
+        "do": 2,
+        "sa": 1,
+        "po": 1,
+        "ro": 1,
+        "cy": 1,
+        "dc": 1,
+        "fc": 1,
+        "sy": 1,
+        "ok": 4,
+        "yk": 2,
+        "an": 1,
+        "yd": 1,
+        "ot": 1
+      },
+      "prefix_diversity": 27,
+      "top_3_prefixes": [
+        "ch",
+        "qo",
+        "da"
+      ],
+      "suffix_counts": {
+        "an": 4,
+        "ain": 4,
+        "al": 2,
+        "iin": 3,
+        "or": 6,
+        "aiin": 10,
+        "hy": 9,
+        "ir": 2,
+        "dy": 5,
+        "y": 6,
+        "ol": 10,
+        "l": 1,
+        "m": 3,
+        "ar": 1,
+        "ho": 1,
+        "d": 2,
+        "ro": 1
+      },
+      "suffix_diversity": 17,
+      "top_3_suffixes": [
+        "aiin",
+        "ol",
+        "hy"
+      ],
+      "part1_words_in_b": 19,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chty",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f34r",
+            "f66r",
+            "f66v",
+            "f80r",
+            "f80v"
+          ]
+        },
+        {
+          "word": "dair",
+          "b_entry_count": 39,
+          "b_folios": [
+            "f31v",
+            "f39r",
+            "f41r",
+            "f46v",
+            "f50r"
+          ]
+        },
+        {
+          "word": "tor",
+          "b_entry_count": 12,
+          "b_folios": [
+            "f40r",
+            "f46v",
+            "f48v",
+            "f55v",
+            "f79r"
+          ]
+        },
+        {
+          "word": "qotchy",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f41r",
+            "f75r",
+            "f77v",
+            "f80r",
+            "f84r"
+          ]
+        },
+        {
+          "word": "chl",
+          "b_entry_count": 19,
+          "b_folios": [
+            "f39r",
+            "f39v",
+            "f75v",
+            "f77r",
+            "f78r"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        },
+        {
+          "word": "cphor",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f115v"
+          ]
+        },
+        {
+          "word": "qotaiin",
+          "b_entry_count": 43,
+          "b_folios": [
+            "f50r",
+            "f76r",
+            "f76v",
+            "f77r",
+            "f77v"
+          ]
+        },
+        {
+          "word": "cthy",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f33v",
+            "f34v",
+            "f46r",
+            "f46v",
+            "f84v"
+          ]
+        }
+      ],
+      "opening_word": "pchafdan",
+      "closing_word": "otaro",
+      "section": "H"
+    },
+    "f30v": {
+      "folio_id": "f30v",
+      "word_count": 75,
+      "unique_word_count": 65,
+      "vocabulary_richness": 0.8667,
+      "part1_word_count": 25,
+      "part1_vocabulary": [
+        "dal",
+        "daiin",
+        "sheaiin",
+        "ctholdy",
+        "shekchor",
+        "cthol",
+        "chy",
+        "keorol",
+        "she",
+        "cthschain",
+        "chocthey",
+        "keor",
+        "chokeor",
+        "qotchor",
+        "shosaiin",
+        "shor",
+        "sho",
+        "ol",
+        "chepchy",
+        "doiin",
+        "chotchol",
+        "chory",
+        "kchor",
+        "cthscthain"
+      ],
+      "part1_dominant_prefix": "sh",
+      "part2_word_count": 25,
+      "part2_vocabulary": [
+        "daiin",
+        "cheofdy",
+        "dar",
+        "chor",
+        "chokeody",
+        "dair",
+        "chtocthy",
+        "chokchy",
+        "dain",
+        "choty",
+        "chtoithy",
+        "dairy",
+        "kcho",
+        "chkol",
+        "dy",
+        "sho",
+        "chokol",
+        "checkhy",
+        "shoty",
+        "ytor",
+        "qotchod",
+        "qokeeor",
+        "cheoldy",
+        "cheol",
+        "otchey"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 25,
+      "part3_vocabulary": [
+        "otcheor",
+        "chakchy",
+        "daiin",
+        "oyshy",
+        "chor",
+        "tcho",
+        "chokcheey",
+        "shol",
+        "sheoldy",
+        "kchydy",
+        "shokchotcho",
+        "ctho",
+        "cheor",
+        "qotchor",
+        "sho",
+        "cheotol",
+        "sos",
+        "kchody",
+        "sol",
+        "cphoaiin",
+        "sheey",
+        "cphey",
+        "cheol"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "cthscthain",
+      "heading_prefix": "ct",
+      "heading_suffix": "ain",
+      "heading_length": 10,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f30v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ct": 5,
+        "sh": 13,
+        "ch": 24,
+        "qo": 4,
+        "kc": 4,
+        "ke": 2,
+        "ol": 1,
+        "da": 10,
+        "do": 1,
+        "ot": 2,
+        "yt": 1,
+        "dy": 1,
+        "tc": 1,
+        "so": 3,
+        "oy": 1,
+        "cp": 2
+      },
+      "prefix_diversity": 16,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "da"
+      ],
+      "suffix_counts": {
+        "ain": 3,
+        "aiin": 8,
+        "ey": 3,
+        "ho": 7,
+        "hy": 8,
+        "or": 13,
+        "he": 1,
+        "y": 4,
+        "ol": 11,
+        "dy": 8,
+        "iin": 1,
+        "al": 1,
+        "ar": 1,
+        "d": 1,
+        "ir": 1,
+        "s": 2,
+        "eey": 2
+      },
+      "suffix_diversity": 17,
+      "top_3_suffixes": [
+        "or",
+        "ol",
+        "aiin"
+      ],
+      "part1_words_in_b": 15,
+      "cross_reference_candidates": [
+        {
+          "word": "dal",
+          "b_entry_count": 59,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f39r"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "sheaiin",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f111v",
+            "f116r"
+          ]
+        },
+        {
+          "word": "cthol",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f82r",
+            "f83r",
+            "f113v"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "she",
+          "b_entry_count": 10,
+          "b_folios": [
+            "f39r",
+            "f43r",
+            "f46r",
+            "f48r",
+            "f50r"
+          ]
+        },
+        {
+          "word": "chocthey",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f114v"
+          ]
+        },
+        {
+          "word": "keor",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f75r",
+            "f106v",
+            "f113r",
+            "f115r"
+          ]
+        },
+        {
+          "word": "shosaiin",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f106r",
+            "f113r"
+          ]
+        },
+        {
+          "word": "shor",
+          "b_entry_count": 20,
+          "b_folios": [
+            "f34v",
+            "f39v",
+            "f46r",
+            "f50v",
+            "f66r"
+          ]
+        }
+      ],
+      "opening_word": "cthscthain",
+      "closing_word": "kchody",
+      "section": "H"
+    },
+    "f22v": {
+      "folio_id": "f22v",
+      "word_count": 90,
+      "unique_word_count": 73,
+      "vocabulary_richness": 0.8111,
+      "part1_word_count": 30,
+      "part1_vocabulary": [
+        "sor",
+        "daiin",
+        "q*d",
+        "kchy",
+        "ky",
+        "otchol",
+        "oky",
+        "otam",
+        "qotchy",
+        "otdy",
+        "otchaiin",
+        "otchyky",
+        "shy",
+        "otchy",
+        "ytchol",
+        "ofchar",
+        "cthy",
+        "qoky",
+        "sho",
+        "pysaiinor",
+        "ytchyd",
+        "ychy",
+        "otchyd",
+        "dshor",
+        "posaiinor",
+        "ykaiin",
+        "shoty",
+        "kchorl",
+        "qod",
+        "tchy"
+      ],
+      "part1_dominant_prefix": "ot",
+      "part2_word_count": 30,
+      "part2_vocabulary": [
+        "daiin",
+        "chor",
+        "dor",
+        "ychor",
+        "shytchor",
+        "qotchy",
+        "ykcheor",
+        "daii**",
+        "chol",
+        "teeol",
+        "qokol",
+        "saiin",
+        "tchol",
+        "shy",
+        "tchor",
+        "shody",
+        "cthy",
+        "qoky",
+        "okshor",
+        "qokchol",
+        "dam",
+        "ytaiin",
+        "otaiin",
+        "chory",
+        "qokchy",
+        "fshor",
+        "odaiin"
+      ],
+      "part2_dominant_prefix": "qo",
+      "part3_word_count": 30,
+      "part3_vocabulary": [
+        "or",
+        "ytal",
+        "daiin",
+        "olshey",
+        "shotoly",
+        "ykchy",
+        "orytal",
+        "otydy",
+        "qotchy",
+        "shol",
+        "chy",
+        "saiinchy",
+        "chocthy",
+        "chkoldy",
+        "saiin",
+        "ctho",
+        "cthy",
+        "dy",
+        "sho",
+        "sokaiin",
+        "okchain",
+        "ychky",
+        "daldalol",
+        "oty",
+        "dory",
+        "olshly",
+        "qokchy"
+      ],
+      "part3_dominant_prefix": "da",
+      "heading_word": "pysaiinor",
+      "heading_prefix": "py",
+      "heading_suffix": "or",
+      "heading_length": 9,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f22v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "py": 1,
+        "of": 1,
+        "ok": 3,
+        "tc": 3,
+        "ot": 11,
+        "so": 2,
+        "sh": 9,
+        "qo": 10,
+        "po": 1,
+        "q*": 1,
+        "da": 10,
+        "yk": 3,
+        "kc": 2,
+        "yt": 4,
+        "ds": 1,
+        "yc": 3,
+        "ct": 5,
+        "ky": 1,
+        "sa": 3,
+        "od": 1,
+        "do": 2,
+        "fs": 1,
+        "ch": 6,
+        "te": 1,
+        "or": 2,
+        "dy": 1,
+        "ol": 2
+      },
+      "prefix_diversity": 27,
+      "top_3_prefixes": [
+        "ot",
+        "qo",
+        "da"
+      ],
+      "suffix_counts": {
+        "or": 13,
+        "ar": 1,
+        "y": 12,
+        "hy": 19,
+        "dy": 5,
+        "d": 4,
+        "ho": 3,
+        "aiin": 16,
+        "l": 1,
+        "ol": 9,
+        "am": 2,
+        "**": 1,
+        "al": 2,
+        "ain": 1,
+        "ey": 1
+      },
+      "suffix_diversity": 15,
+      "top_3_suffixes": [
+        "hy",
+        "aiin",
+        "or"
+      ],
+      "part1_words_in_b": 20,
+      "cross_reference_candidates": [
+        {
+          "word": "sor",
+          "b_entry_count": 24,
+          "b_folios": [
+            "f39v",
+            "f50r",
+            "f75r",
+            "f75v",
+            "f76r"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "kchy",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f31r",
+            "f34r",
+            "f66v",
+            "f86v6",
+            "f103r"
+          ]
+        },
+        {
+          "word": "ky",
+          "b_entry_count": 13,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f66r",
+            "f75v",
+            "f76r"
+          ]
+        },
+        {
+          "word": "otchol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "oky",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f31v",
+            "f33v",
+            "f34r",
+            "f39r",
+            "f40r"
+          ]
+        },
+        {
+          "word": "otam",
+          "b_entry_count": 31,
+          "b_folios": [
+            "f31v",
+            "f33r",
+            "f33v",
+            "f34v",
+            "f43r"
+          ]
+        },
+        {
+          "word": "qotchy",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f41r",
+            "f75r",
+            "f77v",
+            "f80r",
+            "f84r"
+          ]
+        },
+        {
+          "word": "otdy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f84v"
+          ]
+        },
+        {
+          "word": "shy",
+          "b_entry_count": 28,
+          "b_folios": [
+            "f26r",
+            "f34r",
+            "f39v",
+            "f40r",
+            "f43r"
+          ]
+        }
+      ],
+      "opening_word": "pysaiinor",
+      "closing_word": "chy",
+      "section": "H"
+    },
+    "f9v": {
+      "folio_id": "f9v",
+      "word_count": 94,
+      "unique_word_count": 77,
+      "vocabulary_richness": 0.8191,
+      "part1_word_count": 31,
+      "part1_vocabulary": [
+        "daiin",
+        "chor",
+        "qoaiin",
+        "qofol",
+        "oky",
+        "shol",
+        "tchy",
+        "dchor",
+        "qopchypcho",
+        "chol",
+        "ytey",
+        "oeees",
+        "opy",
+        "oporody",
+        "ykey",
+        "cthy",
+        "shor",
+        "dy",
+        "cthor",
+        "qokaiin",
+        "cfhol",
+        "ykaiin",
+        "chkaiin",
+        "otaiin",
+        "oty",
+        "fochor",
+        "kaiin",
+        "cphol"
+      ],
+      "part1_dominant_prefix": "qo",
+      "part2_word_count": 31,
+      "part2_vocabulary": [
+        "yky",
+        "daiin",
+        "ky",
+        "chty",
+        "dain",
+        "qotor",
+        "olcpholy",
+        "ypcheey",
+        "otol",
+        "ypchy",
+        "cthod",
+        "ar",
+        "qochol",
+        "chol",
+        "ypchchy",
+        "otchy",
+        "te",
+        "olcfholy",
+        "to",
+        "yko",
+        "cthor",
+        "choy",
+        "ksheody",
+        "pchor",
+        "chody",
+        "taiin",
+        "toldy",
+        "yteytchy",
+        "daiiin",
+        "odol"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 32,
+      "part3_vocabulary": [
+        "otal",
+        "daiin",
+        "chor",
+        "dor",
+        "tor",
+        "ychor",
+        "oky",
+        "ckhy",
+        "daly",
+        "chy",
+        "rokyd",
+        "qo",
+        "chol",
+        "daim",
+        "qokcho",
+        "dary",
+        "okykaiin",
+        "ytoldy",
+        "cthey",
+        "chkaiin",
+        "chykyty",
+        "soiin",
+        "kchol",
+        "oty",
+        "chshoty",
+        "ctchy",
+        "chyty",
+        "kaiin",
+        "kyty"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "fochor",
+      "heading_prefix": "fo",
+      "heading_suffix": "or",
+      "heading_length": 6,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f9v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "fo": 1,
+        "op": 2,
+        "sh": 2,
+        "da": 11,
+        "qo": 8,
+        "cf": 1,
+        "cp": 2,
+        "dc": 1,
+        "ch": 16,
+        "ct": 6,
+        "dy": 1,
+        "ot": 7,
+        "yk": 4,
+        "ok": 3,
+        "oe": 1,
+        "yt": 3,
+        "tc": 1,
+        "ka": 2,
+        "to": 3,
+        "ta": 1,
+        "pc": 1,
+        "yp": 3,
+        "ol": 2,
+        "te": 1,
+        "ar": 1,
+        "ky": 2,
+        "od": 1,
+        "ks": 1,
+        "do": 1,
+        "so": 1,
+        "ro": 1,
+        "kc": 1,
+        "yc": 1,
+        "ck": 1
+      },
+      "prefix_diversity": 34,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "qo"
+      ],
+      "suffix_counts": {
+        "or": 13,
+        "dy": 6,
+        "y": 18,
+        "aiin": 16,
+        "ho": 2,
+        "ol": 12,
+        "ey": 3,
+        "hy": 10,
+        "s": 1,
+        "eey": 1,
+        "te": 1,
+        "ar": 1,
+        "iin": 2,
+        "to": 1,
+        "ain": 1,
+        "d": 2,
+        "ko": 1,
+        "al": 1,
+        "m": 1,
+        "qo": 1
+      },
+      "suffix_diversity": 20,
+      "top_3_suffixes": [
+        "y",
+        "aiin",
+        "or"
+      ],
+      "part1_words_in_b": 25,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "qoaiin",
+          "b_entry_count": 15,
+          "b_folios": [
+            "f31r",
+            "f50v",
+            "f55v",
+            "f76r",
+            "f86v4"
+          ]
+        },
+        {
+          "word": "qofol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "oky",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f31v",
+            "f33v",
+            "f34r",
+            "f39r",
+            "f40r"
+          ]
+        },
+        {
+          "word": "shol",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f33v",
+            "f39r",
+            "f40v",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "tchy",
+          "b_entry_count": 6,
+          "b_folios": [
+            "f40v",
+            "f50v",
+            "f76v",
+            "f86v4",
+            "f111r"
+          ]
+        },
+        {
+          "word": "dchor",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f78v"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        },
+        {
+          "word": "ytey",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f34r",
+            "f41r",
+            "f43r",
+            "f46r",
+            "f81v"
+          ]
+        }
+      ],
+      "opening_word": "fochor",
+      "closing_word": "chor",
+      "section": "H"
+    },
+    "f90v2": {
+      "folio_id": "f90v2",
+      "word_count": 95,
+      "unique_word_count": 90,
+      "vocabulary_richness": 0.9474,
+      "part1_word_count": 31,
+      "part1_vocabulary": [
+        "ctheod",
+        "ofchedal",
+        "cphdaithy",
+        "s*",
+        "sam",
+        "r*",
+        "ykeey",
+        "ckheeos",
+        "cthod",
+        "opol",
+        "ikheeos",
+        "cphdachy",
+        "sheas",
+        "sheor",
+        "cthdacthy",
+        "raiin",
+        "opolraiin",
+        "on",
+        "shese",
+        "shodaiin",
+        "shere",
+        "qokoor",
+        "rs",
+        "opchedol",
+        "ofchedol",
+        "sheos",
+        "podchey",
+        "oin",
+        "qocfhey",
+        "cheey"
+      ],
+      "part1_dominant_prefix": "sh",
+      "part2_word_count": 31,
+      "part2_vocabulary": [
+        "o*",
+        "keey",
+        "oteeysaiin",
+        "cpheol",
+        "dshcheal",
+        "chy",
+        "qoar",
+        "ain",
+        "tchody",
+        "saiin",
+        "okeeey",
+        "shy",
+        "olols",
+        "chos",
+        "okeeom",
+        "oteey",
+        "okeey",
+        "ol",
+        "tcheody",
+        "sheom",
+        "qokeeor",
+        "qok*as",
+        "soiin",
+        "sheey",
+        "keeos",
+        "tchos",
+        "cheeor",
+        "podch*y",
+        "sheol",
+        "cheol"
+      ],
+      "part2_dominant_prefix": "sh",
+      "part3_word_count": 33,
+      "part3_vocabulary": [
+        "sheeyl",
+        "daiin",
+        "shey",
+        "dar",
+        "dain",
+        "qodar",
+        "qokeol",
+        "ykeeol",
+        "sheody",
+        "qokchy",
+        "qkeody",
+        "sheocthy",
+        "qokeey",
+        "oteey",
+        "oteeol",
+        "alols",
+        "teeas",
+        "chodar",
+        "choy",
+        "cheys",
+        "sheocty",
+        "chody",
+        "sal",
+        "tol",
+        "cpheal",
+        "sheeal",
+        "chom",
+        "sheol",
+        "teeos",
+        "cheal"
+      ],
+      "part3_dominant_prefix": "sh",
+      "heading_word": "cphdaithy",
+      "heading_prefix": "cp",
+      "heading_suffix": "hy",
+      "heading_length": 9,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f90v2"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "cp": 4,
+        "qo": 9,
+        "op": 3,
+        "ra": 1,
+        "of": 2,
+        "rs": 1,
+        "sh": 19,
+        "s*": 1,
+        "ct": 3,
+        "r*": 1,
+        "po": 2,
+        "ik": 1,
+        "ch": 12,
+        "yk": 2,
+        "oe": 1,
+        "oi": 1,
+        "sa": 4,
+        "ck": 1,
+        "on": 1,
+        "so": 1,
+        "o*": 1,
+        "ai": 1,
+        "ke": 2,
+        "ol": 2,
+        "tc": 3,
+        "ok": 3,
+        "ot": 4,
+        "ds": 1,
+        "al": 1,
+        "da": 3,
+        "to": 1,
+        "te": 2,
+        "qk": 1
+      },
+      "prefix_diversity": 33,
+      "top_3_prefixes": [
+        "sh",
+        "ch",
+        "qo"
+      ],
+      "suffix_counts": {
+        "hy": 7,
+        "ey": 4,
+        "ol": 13,
+        "aiin": 7,
+        "s": 15,
+        "se": 1,
+        "al": 6,
+        "s*": 1,
+        "r*": 1,
+        "re": 1,
+        "or": 4,
+        "d": 2,
+        "eey": 9,
+        "in": 1,
+        "am": 1,
+        "on": 1,
+        "iin": 1,
+        "y": 3,
+        "o*": 1,
+        "ain": 2,
+        "m": 3,
+        "dy": 6,
+        "ar": 4,
+        "l": 1
+      },
+      "suffix_diversity": 24,
+      "top_3_suffixes": [
+        "s",
+        "ol",
+        "eey"
+      ],
+      "part1_words_in_b": 13,
+      "cross_reference_candidates": [
+        {
+          "word": "sam",
+          "b_entry_count": 6,
+          "b_folios": [
+            "f83r",
+            "f86v4",
+            "f103r",
+            "f111v",
+            "f112r"
+          ]
+        },
+        {
+          "word": "r*",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f66r"
+          ]
+        },
+        {
+          "word": "ykeey",
+          "b_entry_count": 23,
+          "b_folios": [
+            "f31r",
+            "f39r",
+            "f41v",
+            "f48r",
+            "f50r"
+          ]
+        },
+        {
+          "word": "opol",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f81r",
+            "f106v"
+          ]
+        },
+        {
+          "word": "sheas",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f106v"
+          ]
+        },
+        {
+          "word": "sheor",
+          "b_entry_count": 24,
+          "b_folios": [
+            "f50r",
+            "f66r",
+            "f75v",
+            "f76v",
+            "f77v"
+          ]
+        },
+        {
+          "word": "raiin",
+          "b_entry_count": 43,
+          "b_folios": [
+            "f31r",
+            "f34v",
+            "f43r",
+            "f46r",
+            "f66r"
+          ]
+        },
+        {
+          "word": "shese",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f26r"
+          ]
+        },
+        {
+          "word": "shodaiin",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f85r1",
+            "f85r2",
+            "f104v",
+            "f106r",
+            "f107v"
+          ]
+        },
+        {
+          "word": "sheos",
+          "b_entry_count": 9,
+          "b_folios": [
+            "f26r",
+            "f85r2",
+            "f86v4",
+            "f95v1",
+            "f104r"
+          ]
+        }
+      ],
+      "opening_word": "cphdaithy",
+      "closing_word": "daiin",
+      "section": "H"
+    },
+    "f32v": {
+      "folio_id": "f32v",
+      "word_count": 97,
+      "unique_word_count": 79,
+      "vocabulary_richness": 0.8144,
+      "part1_word_count": 32,
+      "part1_vocabulary": [
+        "or",
+        "kechy",
+        "ochofchody",
+        "daiin",
+        "odar",
+        "chey",
+        "tcho",
+        "chr",
+        "dain",
+        "cholkechy",
+        "chy",
+        "ocho",
+        "chol",
+        "chofchody",
+        "cheytcho",
+        "daiir",
+        "dainoam",
+        "daiioam",
+        "qotaiin",
+        "teor",
+        "shor",
+        "dsho",
+        "ka",
+        "chckhy",
+        "shokey",
+        "fchody",
+        "kcheodaiin",
+        "ldy",
+        "daiinym",
+        "tchy"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 32,
+      "part2_vocabulary": [
+        "chaiin",
+        "daiin",
+        "dchy",
+        "chor",
+        "dor",
+        "sheaiin",
+        "chokchy",
+        "dain",
+        "dchol",
+        "dorg",
+        "chy",
+        "dcho",
+        "okchan",
+        "qotcho",
+        "qo",
+        "dorm",
+        "chol",
+        "cphor",
+        "she",
+        "shy",
+        "rchy",
+        "qotchor",
+        "dchodaiin",
+        "dchcthy",
+        "qokaiin",
+        "shal",
+        "orchr",
+        "kaiin",
+        "ksho"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 33,
+      "part3_vocabulary": [
+        "daiin",
+        "chor",
+        "otchol",
+        "qotdy",
+        "dain",
+        "cfhy",
+        "qotchy",
+        "cthol",
+        "chy",
+        "chocthy",
+        "cthaiin",
+        "key",
+        "ar",
+        "chol",
+        "keol",
+        "otchy",
+        "qotaiin",
+        "ctho",
+        "shckhy",
+        "shar",
+        "shokeol",
+        "dy",
+        "sho",
+        "ol",
+        "cphos",
+        "skey",
+        "otshchor",
+        "da",
+        "odan",
+        "cphol"
+      ],
+      "part3_dominant_prefix": "da",
+      "heading_word": "kcheodaiin",
+      "heading_prefix": "kc",
+      "heading_suffix": "aiin",
+      "heading_length": 10,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f32v"
+      ],
+      "heading_in_b": true,
+      "heading_b_entry_count": 1,
+      "heading_b_folios": [
+        "f113r"
+      ],
+      "prefix_counts": {
+        "kc": 1,
+        "ch": 18,
+        "ke": 3,
+        "qo": 8,
+        "da": 16,
+        "oc": 2,
+        "fc": 1,
+        "od": 2,
+        "tc": 2,
+        "ld": 1,
+        "te": 1,
+        "sh": 11,
+        "ds": 1,
+        "ka": 2,
+        "or": 2,
+        "do": 4,
+        "dc": 5,
+        "rc": 1,
+        "ok": 1,
+        "ks": 1,
+        "cp": 3,
+        "ot": 3,
+        "ct": 3,
+        "cf": 1,
+        "sk": 1,
+        "ar": 1,
+        "dy": 1,
+        "ol": 1
+      },
+      "prefix_diversity": 28,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "sh"
+      ],
+      "suffix_counts": {
+        "aiin": 16,
+        "ol": 10,
+        "hy": 17,
+        "am": 2,
+        "dy": 6,
+        "ho": 10,
+        "m": 2,
+        "ar": 3,
+        "ey": 4,
+        "ain": 4,
+        "or": 11,
+        "ir": 1,
+        "ka": 1,
+        "r": 2,
+        "qo": 1,
+        "rg": 1,
+        "an": 2,
+        "al": 1,
+        "he": 1,
+        "s": 1,
+        "da": 1
+      },
+      "suffix_diversity": 21,
+      "top_3_suffixes": [
+        "hy",
+        "aiin",
+        "or"
+      ],
+      "part1_words_in_b": 21,
+      "cross_reference_candidates": [
+        {
+          "word": "or",
+          "b_entry_count": 75,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "kechy",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f104v",
+            "f111v"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "odar",
+          "b_entry_count": 17,
+          "b_folios": [
+            "f26v",
+            "f46r",
+            "f55r",
+            "f75r",
+            "f85r2"
+          ]
+        },
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "tcho",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f55r",
+            "f77v",
+            "f113r"
+          ]
+        },
+        {
+          "word": "chr",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f77r",
+            "f77v",
+            "f111r",
+            "f113r"
+          ]
+        },
+        {
+          "word": "dain",
+          "b_entry_count": 44,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f40r",
+            "f43r",
+            "f48r"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        }
+      ],
+      "opening_word": "kcheodaiin",
+      "closing_word": "chy",
+      "section": "H"
+    },
+    "f17r": {
+      "folio_id": "f17r",
+      "word_count": 99,
+      "unique_word_count": 95,
+      "vocabulary_richness": 0.9596,
+      "part1_word_count": 33,
+      "part1_vocabulary": [
+        "or",
+        "ckhody",
+        "shoky",
+        "okchom",
+        "chor",
+        "dor",
+        "otchol",
+        "qodar",
+        "ydair",
+        "okor",
+        "oldckhy",
+        "dody",
+        "shol",
+        "chy",
+        "daram",
+        "chol",
+        "odair",
+        "qokol",
+        "otchy",
+        "okshy",
+        "ydar",
+        "opydy",
+        "tcho*",
+        "chop",
+        "qodcthy",
+        "ydarchom",
+        "ypod",
+        "choky",
+        "qodam",
+        "fshody"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 33,
+      "part2_vocabulary": [
+        "qofcho",
+        "choto*",
+        "chor",
+        "opydg",
+        "qof",
+        "dair",
+        "qor",
+        "ypchy",
+        "tsho",
+        "opydm",
+        "opchordy",
+        "cphor",
+        "cho",
+        "olaiin",
+        "otay",
+        "chekem",
+        "otydd",
+        "cthy",
+        "shor",
+        "cthey",
+        "qody",
+        "som",
+        "qokcheor",
+        "chekeg",
+        "ksheo",
+        "ychekchy",
+        "tchom",
+        "ypaim",
+        "cphaldy",
+        "dsa"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 33,
+      "part3_vocabulary": [
+        "das",
+        "dcheor",
+        "daiin",
+        "odar",
+        "dar",
+        "chear",
+        "okaiin",
+        "ykchy",
+        "otchol",
+        "dain",
+        "ychody",
+        "chotom",
+        "doiiin",
+        "mpchy",
+        "ain",
+        "dchchy",
+        "chol",
+        "chypcham",
+        "chckho",
+        "ymol",
+        "chckhy",
+        "ydol",
+        "mol",
+        "soy",
+        "dshy",
+        "d*",
+        "cthar",
+        "daiiin",
+        "dychear",
+        "ychod"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "fshody",
+      "heading_prefix": "fs",
+      "heading_suffix": "dy",
+      "heading_length": 6,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f17r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "fs": 1,
+        "da": 8,
+        "yd": 4,
+        "op": 4,
+        "yp": 3,
+        "ch": 20,
+        "ot": 5,
+        "do": 3,
+        "ol": 2,
+        "sh": 3,
+        "ok": 4,
+        "qo": 10,
+        "ck": 1,
+        "od": 3,
+        "or": 1,
+        "tc": 2,
+        "so": 2,
+        "yc": 3,
+        "ct": 3,
+        "cp": 2,
+        "ts": 1,
+        "ks": 1,
+        "ds": 3,
+        "mp": 1,
+        "d*": 1,
+        "dc": 2,
+        "dy": 1,
+        "sc": 1,
+        "yk": 1,
+        "mo": 1,
+        "ym": 1,
+        "ai": 1
+      },
+      "prefix_diversity": 32,
+      "top_3_prefixes": [
+        "ch",
+        "qo",
+        "da"
+      ],
+      "suffix_counts": {
+        "dy": 8,
+        "am": 3,
+        "m": 10,
+        "d": 3,
+        "op": 1,
+        "hy": 15,
+        "ar": 9,
+        "ir": 3,
+        "y": 5,
+        "or": 11,
+        "ol": 9,
+        "s": 2,
+        "o*": 2,
+        "aiin": 3,
+        "dg": 1,
+        "ey": 1,
+        "ho": 4,
+        "eg": 1,
+        "of": 1,
+        "eo": 1,
+        "sa": 1,
+        "d*": 1,
+        "ain": 2,
+        "iin": 2
+      },
+      "suffix_diversity": 24,
+      "top_3_suffixes": [
+        "hy",
+        "or",
+        "m"
+      ],
+      "part1_words_in_b": 20,
+      "cross_reference_candidates": [
+        {
+          "word": "or",
+          "b_entry_count": 75,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "shoky",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f79r",
+            "f82v",
+            "f86v5",
+            "f107v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "dor",
+          "b_entry_count": 19,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f41r",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "otchol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "qodar",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f41r",
+            "f78r",
+            "f85r2",
+            "f86v6",
+            "f94v"
+          ]
+        },
+        {
+          "word": "ydair",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "okor",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f43r",
+            "f76v",
+            "f82r"
+          ]
+        },
+        {
+          "word": "dody",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f34r",
+            "f85r2",
+            "f85v2",
+            "f112r",
+            "f114r"
+          ]
+        },
+        {
+          "word": "shol",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f33v",
+            "f39r",
+            "f40v",
+            "f43r",
+            "f46r"
+          ]
+        }
+      ],
+      "opening_word": "fshody",
+      "closing_word": "ychod",
+      "section": "H"
+    },
+    "f18r": {
+      "folio_id": "f18r",
+      "word_count": 100,
+      "unique_word_count": 77,
+      "vocabulary_richness": 0.77,
+      "part1_word_count": 33,
+      "part1_vocabulary": [
+        "orchey",
+        "or",
+        "dal",
+        "diiin",
+        "daiin",
+        "dar",
+        "darodsf",
+        "dor",
+        "chor",
+        "ockhor",
+        "dain",
+        "fyoar",
+        "pdrairdy",
+        "daram",
+        "chol",
+        "okchal",
+        "yoar",
+        "darode",
+        "chykchy",
+        "darod*",
+        "ytchar",
+        "dyl",
+        "dy",
+        "otshol",
+        "chckhy",
+        "o*or",
+        "om",
+        "qokchol",
+        "ykchol",
+        "qokchor"
+      ],
+      "part1_dominant_prefix": "da",
+      "part2_word_count": 33,
+      "part2_vocabulary": [
+        "dal",
+        "chcthy",
+        "dar",
+        "chey",
+        "chor",
+        "ytol",
+        "dair",
+        "dain",
+        "okeor",
+        "ychykchor",
+        "cthol",
+        "cthaiin",
+        "tchor",
+        "okain",
+        "cthy",
+        "oshor",
+        "shaiin",
+        "shor",
+        "cthor",
+        "doldy",
+        "ckhol",
+        "ychy",
+        "ytcharg",
+        "doldaiin",
+        "dolaiin",
+        "chlol",
+        "olody",
+        "sholdy",
+        "ykchol",
+        "qokchor"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 34,
+      "part3_vocabulary": [
+        "or",
+        "daiin",
+        "dar",
+        "chor",
+        "chokchy",
+        "ychair",
+        "cthal",
+        "kchaiin",
+        "chcthal",
+        "cthol",
+        "chol",
+        "chckhol",
+        "okshal",
+        "okal",
+        "dary",
+        "ydaiin",
+        "cthy",
+        "shaiin",
+        "shor",
+        "dy",
+        "chekhol",
+        "cthor",
+        "ol",
+        "olydaiin",
+        "qokchol",
+        "chykald",
+        "chorm",
+        "cthar",
+        "ychekchy",
+        "sotchaiin"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "pdrairdy",
+      "heading_prefix": "pd",
+      "heading_suffix": "dy",
+      "heading_length": 8,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f18r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "pd": 1,
+        "da": 16,
+        "yo": 1,
+        "yk": 2,
+        "ch": 18,
+        "oc": 1,
+        "do": 4,
+        "om": 1,
+        "o*": 1,
+        "dy": 4,
+        "fy": 1,
+        "ot": 1,
+        "qo": 6,
+        "ok": 7,
+        "di": 1,
+        "or": 3,
+        "yt": 4,
+        "ct": 9,
+        "tc": 1,
+        "sh": 5,
+        "yc": 4,
+        "kc": 2,
+        "os": 1,
+        "ck": 1,
+        "ol": 3,
+        "yd": 1,
+        "so": 1
+      },
+      "prefix_diversity": 27,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "ct"
+      ],
+      "suffix_counts": {
+        "dy": 8,
+        "sf": 1,
+        "ar": 8,
+        "ol": 16,
+        "hy": 10,
+        "or": 19,
+        "al": 8,
+        "d*": 1,
+        "m": 4,
+        "l": 1,
+        "de": 1,
+        "am": 1,
+        "aiin": 11,
+        "iin": 1,
+        "ain": 3,
+        "ey": 2,
+        "rg": 1,
+        "ir": 2,
+        "y": 1,
+        "d": 1
+      },
+      "suffix_diversity": 20,
+      "top_3_suffixes": [
+        "or",
+        "ol",
+        "aiin"
+      ],
+      "part1_words_in_b": 19,
+      "cross_reference_candidates": [
+        {
+          "word": "orchey",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f33v",
+            "f75r",
+            "f80r",
+            "f86v6"
+          ]
+        },
+        {
+          "word": "or",
+          "b_entry_count": 75,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "dal",
+          "b_entry_count": 59,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f39r"
+          ]
+        },
+        {
+          "word": "diiin",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f105v"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "dar",
+          "b_entry_count": 69,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r"
+          ]
+        },
+        {
+          "word": "dor",
+          "b_entry_count": 19,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f41r",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "dain",
+          "b_entry_count": 44,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f40r",
+            "f43r",
+            "f48r"
+          ]
+        },
+        {
+          "word": "daram",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f34r",
+            "f34v",
+            "f40r",
+            "f104r",
+            "f111r"
+          ]
+        }
+      ],
+      "opening_word": "pdrairdy",
+      "closing_word": "kchaiin",
+      "section": "H"
+    },
+    "f9r": {
+      "folio_id": "f9r",
+      "word_count": 101,
+      "unique_word_count": 92,
+      "vocabulary_richness": 0.9109,
+      "part1_word_count": 33,
+      "part1_vocabulary": [
+        "orchey",
+        "or",
+        "chaiin",
+        "rod",
+        "sary",
+        "sshy",
+        "okchody",
+        "chey",
+        "cphy",
+        "ram",
+        "okor",
+        "choly",
+        "chokcho",
+        "qotod",
+        "toiin",
+        "cthod",
+        "chol",
+        "shy",
+        "oykeey",
+        "yshy",
+        "cthy",
+        "shor",
+        "dy",
+        "cthor",
+        "okoiin",
+        "ytaiin",
+        "choiin",
+        "otaiin",
+        "toeoky",
+        "tydlo"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 33,
+      "part2_vocabulary": [
+        "or",
+        "sor",
+        "cthyaiin",
+        "ral",
+        "daiin",
+        "chor",
+        "dor",
+        "ytol",
+        "otchol",
+        "otdy",
+        "shol",
+        "dayty",
+        "cfhodoral",
+        "chol",
+        "kcho",
+        "cho",
+        "ot",
+        "chokoiin",
+        "shar",
+        "cthy",
+        "shaiin",
+        "shor",
+        "dy",
+        "shydal",
+        "cthoaiin",
+        "pshoain",
+        "oshy",
+        "shoiin",
+        "otar",
+        "dsholdy"
+      ],
+      "part2_dominant_prefix": "sh",
+      "part3_word_count": 35,
+      "part3_vocabulary": [
+        "dal",
+        "daiin",
+        "dchy",
+        "aiin",
+        "qotchy",
+        "ytchas",
+        "chshocthy",
+        "choctoy",
+        "ochocthy",
+        "chy",
+        "ocho",
+        "chytchy",
+        "qotcho",
+        "chodykchy",
+        "chkor",
+        "qotol",
+        "saiin",
+        "tchol",
+        "chocthoy",
+        "ytchar",
+        "okaind",
+        "okain",
+        "cthy",
+        "chodar",
+        "koraiin",
+        "cthey",
+        "chkar",
+        "ytor",
+        "olsho",
+        "chyky"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "tydlo",
+      "heading_prefix": "ty",
+      "heading_suffix": "lo",
+      "heading_length": 5,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f9r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ty": 1,
+        "ch": 23,
+        "ct": 10,
+        "or": 4,
+        "sh": 8,
+        "od": 1,
+        "sa": 2,
+        "ss": 1,
+        "oy": 1,
+        "yt": 5,
+        "ok": 6,
+        "to": 2,
+        "dy": 2,
+        "cp": 1,
+        "qo": 5,
+        "ot": 5,
+        "ra": 2,
+        "ro": 1,
+        "ys": 1,
+        "do": 1,
+        "da": 4,
+        "os": 1,
+        "kc": 1,
+        "so": 1,
+        "ds": 1,
+        "ps": 1,
+        "cf": 1,
+        "sy": 1,
+        "tc": 2,
+        "ai": 1,
+        "ko": 1,
+        "ol": 1,
+        "oc": 2,
+        "dc": 1
+      },
+      "prefix_diversity": 34,
+      "top_3_prefixes": [
+        "ch",
+        "ct",
+        "sh"
+      ],
+      "suffix_counts": {
+        "lo": 1,
+        "y": 9,
+        "or": 11,
+        "ey": 3,
+        "hy": 19,
+        "aiin": 13,
+        "eey": 1,
+        "ol": 7,
+        "dy": 6,
+        "iin": 5,
+        "d": 5,
+        "am": 1,
+        "ho": 6,
+        "ar": 5,
+        "ot": 1,
+        "ain": 2,
+        "ir": 1,
+        "al": 4,
+        "s": 1
+      },
+      "suffix_diversity": 19,
+      "top_3_suffixes": [
+        "hy",
+        "aiin",
+        "or"
+      ],
+      "part1_words_in_b": 22,
+      "cross_reference_candidates": [
+        {
+          "word": "orchey",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f33v",
+            "f75r",
+            "f80r",
+            "f86v6"
+          ]
+        },
+        {
+          "word": "or",
+          "b_entry_count": 75,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chaiin",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f55v",
+            "f80v",
+            "f86v5",
+            "f95r1",
+            "f106v"
+          ]
+        },
+        {
+          "word": "rod",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f106r"
+          ]
+        },
+        {
+          "word": "sary",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f26v",
+            "f48v",
+            "f66r",
+            "f85r2"
+          ]
+        },
+        {
+          "word": "sshy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85v2"
+          ]
+        },
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "cphy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34v",
+            "f86v6",
+            "f114r"
+          ]
+        },
+        {
+          "word": "ram",
+          "b_entry_count": 15,
+          "b_folios": [
+            "f75r",
+            "f80r",
+            "f82r",
+            "f83r",
+            "f84r"
+          ]
+        },
+        {
+          "word": "okor",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f43r",
+            "f76v",
+            "f82r"
+          ]
+        }
+      ],
+      "opening_word": "tydlo",
+      "closing_word": "ytchar",
+      "section": "H"
+    },
+    "f20v": {
+      "folio_id": "f20v",
+      "word_count": 103,
+      "unique_word_count": 83,
+      "vocabulary_richness": 0.8058,
+      "part1_word_count": 34,
+      "part1_vocabulary": [
+        "checthy",
+        "okoy",
+        "chcthy",
+        "cphy",
+        "qotchy",
+        "pofochey",
+        "otol",
+        "shol",
+        "chy",
+        "ar",
+        "chol",
+        "fochey",
+        "shy",
+        "po",
+        "opchy",
+        "sho",
+        "qopy",
+        "opydy",
+        "sos",
+        "shokchol",
+        "ykaiin",
+        "tol",
+        "choiin",
+        "chodaiin",
+        "okchy",
+        "faiisar",
+        "kchol",
+        "oty",
+        "qoty",
+        "cheol"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 34,
+      "part2_vocabulary": [
+        "or",
+        "shos",
+        "daiin",
+        "dar",
+        "cheockhy",
+        "aiin",
+        "fol",
+        "chockhy",
+        "shol",
+        "doiiin",
+        "shocthy",
+        "cthaiin",
+        "chol",
+        "char",
+        "tshol",
+        "fchodchy",
+        "otchy",
+        "chos",
+        "cthy",
+        "chcphy",
+        "shor",
+        "dy",
+        "sho",
+        "dan",
+        "cheo*y",
+        "fshodchy",
+        "otor",
+        "folchol",
+        "cheos"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 35,
+      "part3_vocabulary": [
+        "shd*oty",
+        "tey",
+        "choraly",
+        "daiin",
+        "sheoy",
+        "chey",
+        "chor",
+        "ykchy",
+        "shokaiin",
+        "keody",
+        "ytchy",
+        "chy",
+        "chocthy",
+        "ar",
+        "chol",
+        "cho",
+        "shd",
+        "cholshd",
+        "cheoy",
+        "cthy",
+        "shain",
+        "sho",
+        "okoiin",
+        "ety",
+        "soaiin",
+        "ds",
+        "d*",
+        "teody",
+        "qoty",
+        "chory"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "faiis",
+      "heading_prefix": "fa",
+      "heading_suffix": "s",
+      "heading_length": 5,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f20v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "fa": 2,
+        "ar": 2,
+        "ok": 3,
+        "sh": 19,
+        "po": 2,
+        "op": 2,
+        "qo": 4,
+        "ch": 30,
+        "cp": 2,
+        "fo": 3,
+        "so": 2,
+        "yk": 2,
+        "ot": 4,
+        "kc": 1,
+        "to": 2,
+        "or": 1,
+        "ai": 1,
+        "da": 6,
+        "ts": 1,
+        "fs": 1,
+        "dy": 1,
+        "fc": 1,
+        "do": 1,
+        "ct": 3,
+        "te": 2,
+        "ds": 1,
+        "ke": 1,
+        "d*": 1,
+        "yt": 1,
+        "et": 1
+      },
+      "prefix_diversity": 30,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "da"
+      ],
+      "suffix_counts": {
+        "s": 8,
+        "ar": 5,
+        "y": 12,
+        "hy": 24,
+        "ey": 4,
+        "dy": 5,
+        "po": 1,
+        "aiin": 10,
+        "ol": 16,
+        "iin": 3,
+        "ho": 5,
+        "or": 5,
+        "an": 1,
+        "ain": 1,
+        "d": 2,
+        "d*": 1
+      },
+      "suffix_diversity": 16,
+      "top_3_suffixes": [
+        "hy",
+        "ol",
+        "y"
+      ],
+      "part1_words_in_b": 25,
+      "cross_reference_candidates": [
+        {
+          "word": "checthy",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f31r",
+            "f31v",
+            "f34r",
+            "f75r",
+            "f76r"
+          ]
+        },
+        {
+          "word": "okoy",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f34v",
+            "f84v"
+          ]
+        },
+        {
+          "word": "chcthy",
+          "b_entry_count": 38,
+          "b_folios": [
+            "f34r",
+            "f34v",
+            "f43v",
+            "f46r",
+            "f46v"
+          ]
+        },
+        {
+          "word": "cphy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34v",
+            "f86v6",
+            "f114r"
+          ]
+        },
+        {
+          "word": "qotchy",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f41r",
+            "f75r",
+            "f77v",
+            "f80r",
+            "f84r"
+          ]
+        },
+        {
+          "word": "otol",
+          "b_entry_count": 27,
+          "b_folios": [
+            "f48r",
+            "f55r",
+            "f55v",
+            "f75r",
+            "f75v"
+          ]
+        },
+        {
+          "word": "shol",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f33v",
+            "f39r",
+            "f40v",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "ar",
+          "b_entry_count": 74,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        }
+      ],
+      "opening_word": "faiis",
+      "closing_word": "chory",
+      "section": "H"
+    },
+    "f2r": {
+      "folio_id": "f2r",
+      "word_count": 103,
+      "unique_word_count": 84,
+      "vocabulary_richness": 0.8155,
+      "part1_word_count": 34,
+      "part1_vocabulary": [
+        "otchal",
+        "chaiin",
+        "dal",
+        "daiin",
+        "cth",
+        "chor",
+        "chaindy",
+        "cphy",
+        "ytchaiin",
+        "shaiidy",
+        "otochor",
+        "chy",
+        "chtod",
+        "chol",
+        "ypchol",
+        "qotaiin",
+        "ctho",
+        "cthy",
+        "shor",
+        "ckholsy",
+        "dy",
+        "dorchory",
+        "dan",
+        "chokaiin",
+        "cthey",
+        "chtoddy",
+        "chkar",
+        "chan",
+        "shodaiin",
+        "ydy"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 34,
+      "part2_vocabulary": [
+        "sor",
+        "daiirol",
+        "yky",
+        "dchy",
+        "qokey",
+        "fodan",
+        "dain",
+        "dchol",
+        "daind",
+        "dlssho",
+        "kol",
+        "dkol",
+        "ckhy",
+        "shol",
+        "olsheey",
+        "chol",
+        "so",
+        "ytsh",
+        "saiin",
+        "daiirdl",
+        "daiildy",
+        "cthy",
+        "shaiin",
+        "qoy",
+        "shor",
+        "yksh",
+        "dan",
+        "ytoldy",
+        "ykody",
+        "kydain"
+      ],
+      "part2_dominant_prefix": "da",
+      "part3_word_count": 35,
+      "part3_vocabulary": [
+        "dal",
+        "daiin",
+        "chcthy",
+        "sheky",
+        "chor",
+        "chey",
+        "aiin",
+        "chety",
+        "an",
+        "ckhor",
+        "shol",
+        "ykeey",
+        "chy",
+        "yor",
+        "keol",
+        "saiin",
+        "qoky",
+        "dan",
+        "cthor",
+        "sho",
+        "cthey",
+        "shan",
+        "chan",
+        "sal",
+        "olsaiin",
+        "ytoain",
+        "sheey",
+        "okol",
+        "chyky",
+        "cholaiin"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "kydainy",
+      "heading_prefix": "ky",
+      "heading_suffix": "y",
+      "heading_length": 7,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f2r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ky": 2,
+        "yp": 2,
+        "da": 16,
+        "ot": 2,
+        "ck": 3,
+        "do": 1,
+        "ch": 21,
+        "sh": 12,
+        "ct": 7,
+        "qo": 4,
+        "yd": 1,
+        "dy": 1,
+        "cp": 1,
+        "al": 1,
+        "yt": 4,
+        "sa": 4,
+        "dk": 1,
+        "so": 2,
+        "dc": 2,
+        "ko": 2,
+        "fo": 1,
+        "yk": 4,
+        "ol": 2,
+        "dl": 1,
+        "ke": 1,
+        "ai": 1,
+        "yc": 1,
+        "ok": 1,
+        "yo": 1,
+        "an": 1
+      },
+      "prefix_diversity": 30,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "sh"
+      ],
+      "suffix_counts": {
+        "y": 10,
+        "ol": 13,
+        "aiin": 16,
+        "al": 5,
+        "ar": 1,
+        "or": 10,
+        "hy": 9,
+        "th": 1,
+        "ho": 3,
+        "ey": 4,
+        "dy": 8,
+        "d": 2,
+        "s": 1,
+        "an": 8,
+        "ain": 4,
+        "sh": 2,
+        "eey": 4,
+        "so": 1,
+        "l": 1
+      },
+      "suffix_diversity": 19,
+      "top_3_suffixes": [
+        "aiin",
+        "ol",
+        "y"
+      ],
+      "part1_words_in_b": 20,
+      "cross_reference_candidates": [
+        {
+          "word": "chaiin",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f55v",
+            "f80v",
+            "f86v5",
+            "f95r1",
+            "f106v"
+          ]
+        },
+        {
+          "word": "dal",
+          "b_entry_count": 59,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f39r"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "cphy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34v",
+            "f86v6",
+            "f114r"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        },
+        {
+          "word": "qotaiin",
+          "b_entry_count": 43,
+          "b_folios": [
+            "f50r",
+            "f76r",
+            "f76v",
+            "f77r",
+            "f77v"
+          ]
+        },
+        {
+          "word": "cthy",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f33v",
+            "f34v",
+            "f46r",
+            "f46v",
+            "f84v"
+          ]
+        },
+        {
+          "word": "shor",
+          "b_entry_count": 20,
+          "b_folios": [
+            "f34v",
+            "f39v",
+            "f46r",
+            "f50v",
+            "f66r"
+          ]
+        }
+      ],
+      "opening_word": "kydainy",
+      "closing_word": "ytoain",
+      "section": "H"
+    },
+    "f47v": {
+      "folio_id": "f47v",
+      "word_count": 104,
+      "unique_word_count": 87,
+      "vocabulary_richness": 0.8365,
+      "part1_word_count": 34,
+      "part1_vocabulary": [
+        "pcheot",
+        "chkchy",
+        "sary",
+        "daiin",
+        "daindy",
+        "dainy",
+        "dor",
+        "otchol",
+        "cphy",
+        "teechy",
+        "chopchy",
+        "oteol",
+        "kol",
+        "cholsho",
+        "shol",
+        "dsheey",
+        "psheot",
+        "char",
+        "qotol",
+        "shy",
+        "cheor",
+        "daiijy",
+        "cthy",
+        "daiiy",
+        "sho",
+        "sal",
+        "sheey",
+        "dcheey",
+        "chory",
+        "qoty"
+      ],
+      "part1_dominant_prefix": "da",
+      "part2_word_count": 34,
+      "part2_vocabulary": [
+        "chodaly",
+        "sary",
+        "daiin",
+        "chor",
+        "tcho",
+        "dair",
+        "chety",
+        "qotcheeo",
+        "dain",
+        "shees",
+        "dsholy",
+        "chol",
+        "ltchey",
+        "saiin",
+        "qotcheey",
+        "shy",
+        "dcholy",
+        "cheor",
+        "dcthy",
+        "pchodaiin",
+        "dy",
+        "chody",
+        "cheotar",
+        "dochod",
+        "sal",
+        "chotcho",
+        "ody",
+        "sy",
+        "qotcheea",
+        "tchy"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 36,
+      "part3_vocabulary": [
+        "otal",
+        "chaiin",
+        "daiin",
+        "dar",
+        "dchy",
+        "chochy",
+        "chdychy",
+        "ytchotchy",
+        "tchey",
+        "chy",
+        "key",
+        "chdlty",
+        "chol",
+        "cho",
+        "cholety",
+        "chdlcty",
+        "oteey",
+        "keesy",
+        "chokeesy",
+        "otcho",
+        "dshy",
+        "chdlety",
+        "otcha",
+        "otald",
+        "chotchol",
+        "dcheey",
+        "ctchey",
+        "ctheey",
+        "cthchey",
+        "chyky"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "psheot",
+      "heading_prefix": "ps",
+      "heading_suffix": "ot",
+      "heading_length": 6,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f47v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ps": 1,
+        "ch": 34,
+        "sa": 5,
+        "pc": 2,
+        "ds": 3,
+        "sh": 6,
+        "cp": 1,
+        "ot": 8,
+        "da": 15,
+        "dc": 5,
+        "do": 2,
+        "qo": 5,
+        "ko": 1,
+        "ke": 3,
+        "ct": 4,
+        "te": 1,
+        "od": 1,
+        "sy": 1,
+        "lt": 1,
+        "tc": 3,
+        "dy": 1,
+        "yt": 1
+      },
+      "prefix_diversity": 22,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "ot"
+      ],
+      "suffix_counts": {
+        "ot": 2,
+        "or": 4,
+        "ho": 7,
+        "hy": 17,
+        "al": 3,
+        "y": 20,
+        "eey": 7,
+        "ey": 6,
+        "dy": 7,
+        "aiin": 10,
+        "ol": 10,
+        "ar": 3,
+        "s": 1,
+        "d": 2,
+        "ir": 1,
+        "ea": 1,
+        "ain": 1,
+        "eo": 1,
+        "ha": 1
+      },
+      "suffix_diversity": 19,
+      "top_3_suffixes": [
+        "y",
+        "hy",
+        "aiin"
+      ],
+      "part1_words_in_b": 26,
+      "cross_reference_candidates": [
+        {
+          "word": "sary",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f26v",
+            "f48v",
+            "f66r",
+            "f85r2"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "daindy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f81v",
+            "f85v2",
+            "f114r"
+          ]
+        },
+        {
+          "word": "dainy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f75r"
+          ]
+        },
+        {
+          "word": "dor",
+          "b_entry_count": 19,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f41r",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "otchol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "cphy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34v",
+            "f86v6",
+            "f114r"
+          ]
+        },
+        {
+          "word": "chopchy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f106v"
+          ]
+        },
+        {
+          "word": "oteol",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f41v",
+            "f43r"
+          ]
+        },
+        {
+          "word": "kol",
+          "b_entry_count": 16,
+          "b_folios": [
+            "f43v",
+            "f66r",
+            "f75r",
+            "f75v",
+            "f76r"
+          ]
+        }
+      ],
+      "opening_word": "psheot",
+      "closing_word": "cthchey",
+      "section": "H"
+    },
+    "f24v": {
+      "folio_id": "f24v",
+      "word_count": 117,
+      "unique_word_count": 111,
+      "vocabulary_richness": 0.9487,
+      "part1_word_count": 39,
+      "part1_vocabulary": [
+        "okchom",
+        "ear",
+        "ydals",
+        "ok",
+        "chocfhey",
+        "ocpho",
+        "ckhor",
+        "otol",
+        "oko*am",
+        "oesearees",
+        "oporaiin",
+        "dchor",
+        "cho",
+        "dchees",
+        "chcth",
+        "okokom",
+        "shy",
+        "opod",
+        "otchos",
+        "chocfhy",
+        "chocfhhg",
+        "chcphy",
+        "dchar",
+        "raiin",
+        "otaiir",
+        "shod",
+        "tchodar",
+        "odchees",
+        "octhol",
+        "okcho"
+      ],
+      "part1_dominant_prefix": "ok",
+      "part2_word_count": 39,
+      "part2_vocabulary": [
+        "or",
+        "dlos",
+        "kochky",
+        "chcthy",
+        "dar",
+        "okaiin",
+        "chor",
+        "olom",
+        "ydal",
+        "cfharasr",
+        "tochol",
+        "ycheol",
+        "olor",
+        "shol",
+        "ckheod",
+        "oeor",
+        "chol",
+        "keol",
+        "oro",
+        "sain",
+        "dlor",
+        "okoeos",
+        "tchar",
+        "shor",
+        "choy",
+        "yd",
+        "osearees",
+        "sh",
+        "daid",
+        "om"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 39,
+      "part3_vocabulary": [
+        "do",
+        "ctheod",
+        "cto",
+        "chear",
+        "cheeodam",
+        "odor",
+        "otchol",
+        "ok",
+        "dchol",
+        "okoeor",
+        "cheekdam",
+        "doar",
+        "dchal",
+        "qokch",
+        "okokchal",
+        "chol",
+        "ot",
+        "okchal",
+        "ctho",
+        "cheor",
+        "odaiim",
+        "ydaiin",
+        "dchey",
+        "oeeey",
+        "kchod",
+        "dy",
+        "sho",
+        "okodaiin",
+        "qok*",
+        "olodal"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "tchodar",
+      "heading_prefix": "tc",
+      "heading_suffix": "ar",
+      "heading_length": 7,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f24v",
+        "f28r"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "tc": 2,
+        "ch": 18,
+        "op": 5,
+        "sh": 8,
+        "oc": 4,
+        "ok": 15,
+        "ra": 1,
+        "yd": 5,
+        "ck": 2,
+        "dc": 6,
+        "ot": 6,
+        "od": 4,
+        "oe": 3,
+        "os": 3,
+        "ea": 1,
+        "dl": 2,
+        "al": 1,
+        "or": 3,
+        "ol": 3,
+        "to": 1,
+        "cf": 3,
+        "yc": 2,
+        "da": 2,
+        "ko": 1,
+        "sa": 1,
+        "om": 1,
+        "ke": 1,
+        "ct": 3,
+        "qo": 3,
+        "ks": 1,
+        "fo": 1,
+        "do": 3,
+        "dy": 1,
+        "kc": 1
+      },
+      "prefix_diversity": 34,
+      "top_3_prefixes": [
+        "ch",
+        "ok",
+        "sh"
+      ],
+      "suffix_counts": {
+        "ar": 10,
+        "hg": 1,
+        "m": 8,
+        "d": 7,
+        "hy": 4,
+        "dy": 3,
+        "aiin": 8,
+        "ey": 2,
+        "ok": 2,
+        "am": 6,
+        "ho": 8,
+        "s": 10,
+        "or": 12,
+        "ol": 13,
+        "ir": 2,
+        "th": 1,
+        "al": 7,
+        "sh": 1,
+        "ro": 1,
+        "r": 2,
+        "y": 2,
+        "ain": 1,
+        "to": 1,
+        "ch": 1,
+        "k*": 1,
+        "eey": 1,
+        "do": 1,
+        "ot": 1
+      },
+      "suffix_diversity": 28,
+      "top_3_suffixes": [
+        "ol",
+        "or",
+        "ar"
+      ],
+      "part1_words_in_b": 17,
+      "cross_reference_candidates": [
+        {
+          "word": "ear",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f55v",
+            "f104v"
+          ]
+        },
+        {
+          "word": "ok",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f26r",
+            "f48v",
+            "f75r",
+            "f80v"
+          ]
+        },
+        {
+          "word": "ckhor",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f114v"
+          ]
+        },
+        {
+          "word": "otol",
+          "b_entry_count": 27,
+          "b_folios": [
+            "f48r",
+            "f55r",
+            "f55v",
+            "f75r",
+            "f75v"
+          ]
+        },
+        {
+          "word": "oporaiin",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f106r",
+            "f113v"
+          ]
+        },
+        {
+          "word": "dchor",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f78v"
+          ]
+        },
+        {
+          "word": "cho",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f34v",
+            "f39v",
+            "f48v",
+            "f105r",
+            "f106r"
+          ]
+        },
+        {
+          "word": "dchees",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f105r"
+          ]
+        },
+        {
+          "word": "chcth",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f34r",
+            "f81v"
+          ]
+        },
+        {
+          "word": "shy",
+          "b_entry_count": 28,
+          "b_folios": [
+            "f26r",
+            "f34r",
+            "f39v",
+            "f40r",
+            "f43r"
+          ]
+        }
+      ],
+      "opening_word": "tchodar",
+      "closing_word": "odaiim",
+      "section": "H"
+    },
+    "f56r": {
+      "folio_id": "f56r",
+      "word_count": 127,
+      "unique_word_count": 103,
+      "vocabulary_richness": 0.811,
+      "part1_word_count": 42,
+      "part1_vocabulary": [
+        "otchal",
+        "chchsty",
+        "keey",
+        "chey",
+        "chor",
+        "olchey",
+        "chal",
+        "chokeey",
+        "shokaiin",
+        "cphy",
+        "choty",
+        "esedy",
+        "chy",
+        "key",
+        "chol",
+        "choksy",
+        "chkor",
+        "kar",
+        "shedy",
+        "qokeey",
+        "chchsy",
+        "chykey",
+        "qotchor",
+        "chokchey",
+        "sho",
+        "chochor",
+        "chokchol",
+        "kor",
+        "chkar",
+        "ychocphy"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 42,
+      "part2_vocabulary": [
+        "chodaly",
+        "dal",
+        "keey",
+        "daiin",
+        "shey",
+        "chey",
+        "okaiin",
+        "chotchey",
+        "kcheey",
+        "tchey",
+        "shol",
+        "chok",
+        "rokak",
+        "cho",
+        "tchol",
+        "shy",
+        "otchy",
+        "ykcho",
+        "cheytchol",
+        "otchor",
+        "chotcheytchol",
+        "rokaiin",
+        "dchey",
+        "chot",
+        "dy",
+        "cheeckhody",
+        "sho",
+        "choy",
+        "kesy",
+        "ykcha"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 43,
+      "part3_vocabulary": [
+        "kchal",
+        "kchey",
+        "chotol",
+        "kchar",
+        "daiin",
+        "qoke",
+        "chey",
+        "chor",
+        "sotodan",
+        "qokcheey",
+        "tcho",
+        "chokeey",
+        "chokchy",
+        "tchotchol",
+        "qotchy",
+        "kchoar",
+        "cthol",
+        "chol",
+        "keol",
+        "cho",
+        "schey",
+        "tchol",
+        "chos",
+        "cthy",
+        "dy",
+        "cthor",
+        "sho",
+        "kcharm",
+        "shykcheey",
+        "sh"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "otchal",
+      "heading_prefix": "ot",
+      "heading_suffix": "al",
+      "heading_length": 6,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f2r",
+        "f3v",
+        "f56r",
+        "f90r1"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ot": 5,
+        "ch": 48,
+        "es": 1,
+        "yc": 2,
+        "cp": 1,
+        "sh": 11,
+        "ko": 2,
+        "ka": 2,
+        "ke": 5,
+        "ol": 1,
+        "qo": 8,
+        "ok": 3,
+        "da": 6,
+        "yk": 2,
+        "dy": 2,
+        "dc": 1,
+        "kc": 9,
+        "sc": 3,
+        "tc": 6,
+        "yt": 2,
+        "ro": 2,
+        "ct": 3,
+        "ee": 1,
+        "so": 1
+      },
+      "prefix_diversity": 24,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "kc"
+      ],
+      "suffix_counts": {
+        "al": 4,
+        "y": 13,
+        "edy": 2,
+        "hy": 15,
+        "ho": 9,
+        "or": 13,
+        "ey": 14,
+        "ol": 16,
+        "aiin": 9,
+        "ar": 5,
+        "eey": 9,
+        "dy": 5,
+        "ha": 1,
+        "ot": 1,
+        "yt": 2,
+        "ok": 1,
+        "ak": 1,
+        "s": 1,
+        "sh": 1,
+        "eo": 1,
+        "m": 1,
+        "ke": 1,
+        "eg": 1,
+        "an": 1
+      },
+      "suffix_diversity": 24,
+      "top_3_suffixes": [
+        "ol",
+        "hy",
+        "ey"
+      ],
+      "part1_words_in_b": 28,
+      "cross_reference_candidates": [
+        {
+          "word": "keey",
+          "b_entry_count": 24,
+          "b_folios": [
+            "f31r",
+            "f33v",
+            "f34r",
+            "f55r",
+            "f55v"
+          ]
+        },
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "olchey",
+          "b_entry_count": 21,
+          "b_folios": [
+            "f39r",
+            "f40v",
+            "f41v",
+            "f75r",
+            "f75v"
+          ]
+        },
+        {
+          "word": "chal",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f75r",
+            "f76r",
+            "f77v",
+            "f81v",
+            "f83v"
+          ]
+        },
+        {
+          "word": "chokeey",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f66r",
+            "f107v",
+            "f112r",
+            "f112v",
+            "f114v"
+          ]
+        },
+        {
+          "word": "shokaiin",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f75r",
+            "f76v",
+            "f106v"
+          ]
+        },
+        {
+          "word": "cphy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34v",
+            "f86v6",
+            "f114r"
+          ]
+        },
+        {
+          "word": "choty",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f43v",
+            "f66r",
+            "f79r",
+            "f86v6",
+            "f106v"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        }
+      ],
+      "opening_word": "otchal",
+      "closing_word": "daiin",
+      "section": "H"
+    },
+    "f42r": {
+      "folio_id": "f42r",
+      "word_count": 174,
+      "unique_word_count": 139,
+      "vocabulary_richness": 0.7989,
+      "part1_word_count": 58,
+      "part1_vocabulary": [
+        "cthachchy",
+        "chees",
+        "sholkaiin",
+        "dal",
+        "kary",
+        "shotaiin",
+        "ofaiin",
+        "dar",
+        "otcheey",
+        "dainry",
+        "pchear",
+        "kshaiin",
+        "otchol",
+        "daiiry",
+        "chockhy",
+        "dorain",
+        "pcho",
+        "chary",
+        "kchodan",
+        "cthachcthy",
+        "shol",
+        "tsho",
+        "cthol",
+        "chy",
+        "cthaiin",
+        "cthokchodan",
+        "yshol",
+        "char",
+        "chetar",
+        "cha"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 58,
+      "part2_vocabulary": [
+        "dal",
+        "tsh",
+        "daiin",
+        "dar",
+        "daindy",
+        "dcky",
+        "kcheo",
+        "dain",
+        "kshey",
+        "pydaiin",
+        "qotor",
+        "choty",
+        "otol",
+        "dckhy",
+        "shol",
+        "cthol",
+        "chy",
+        "dchooy",
+        "chol",
+        "cho",
+        "shot",
+        "cheam",
+        "shokshey",
+        "daiijy",
+        "sheor",
+        "pchody",
+        "shaiin",
+        "cthor",
+        "sho",
+        "otshey"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 58,
+      "part3_vocabulary": [
+        "shos",
+        "chaiin",
+        "shear",
+        "daiin",
+        "chotol",
+        "shoky",
+        "tchaiin",
+        "chor",
+        "chal",
+        "shs",
+        "chokchy",
+        "chety",
+        "shns",
+        "kchaiin",
+        "shol",
+        "ckhy",
+        "kolschees",
+        "ksher",
+        "ckhey",
+        "ain",
+        "rain",
+        "ctoiin",
+        "chol",
+        "cthaiin",
+        "kshes",
+        "cho",
+        "shy",
+        "chos",
+        "cthy",
+        "chot"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "sho",
+      "heading_prefix": "sh",
+      "heading_suffix": "ho",
+      "heading_length": 3,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f1r",
+        "f2r",
+        "f2v",
+        "f3r",
+        "f3v",
+        "f4v",
+        "f5r",
+        "f7v",
+        "f8r",
+        "f8v",
+        "f10v",
+        "f13v",
+        "f14r",
+        "f15r",
+        "f15v",
+        "f16r",
+        "f17v",
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v",
+        "f22v",
+        "f23v",
+        "f24v",
+        "f25r",
+        "f27r",
+        "f27v",
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v",
+        "f30r",
+        "f30v",
+        "f32r",
+        "f32v",
+        "f35r",
+        "f35v",
+        "f37r",
+        "f37v",
+        "f38r",
+        "f38v",
+        "f42r",
+        "f42v",
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v",
+        "f47r",
+        "f47v",
+        "f49r",
+        "f49v",
+        "f54r",
+        "f56r",
+        "f56v",
+        "f58v",
+        "f87r",
+        "f90r1",
+        "f93r",
+        "f96r",
+        "f100r",
+        "f101r1",
+        "f101v2",
+        "f102v2",
+        "f102v1"
+      ],
+      "heading_in_b": true,
+      "heading_b_entry_count": 14,
+      "heading_b_folios": [
+        "f55r",
+        "f75r",
+        "f86v4",
+        "f95v1",
+        "f103v",
+        "f104v",
+        "f105v",
+        "f106r",
+        "f106v",
+        "f107v",
+        "f108r",
+        "f111v",
+        "f114v",
+        "f115v"
+      ],
+      "prefix_counts": {
+        "sh": 31,
+        "of": 1,
+        "ct": 15,
+        "ot": 7,
+        "pc": 3,
+        "ck": 5,
+        "ts": 3,
+        "so": 3,
+        "ka": 2,
+        "ch": 48,
+        "da": 19,
+        "to": 1,
+        "qo": 6,
+        "do": 3,
+        "ks": 5,
+        "ta": 1,
+        "ys": 1,
+        "et": 2,
+        "kc": 3,
+        "dc": 4,
+        "py": 1,
+        "ol": 2,
+        "ai": 1,
+        "ra": 1,
+        "os": 1,
+        "ok": 2,
+        "od": 1,
+        "tc": 1,
+        "ko": 1
+      },
+      "prefix_diversity": 29,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "da"
+      ],
+      "suffix_counts": {
+        "ho": 11,
+        "aiin": 26,
+        "hy": 16,
+        "eey": 3,
+        "ar": 11,
+        "ol": 25,
+        "y": 18,
+        "ain": 10,
+        "al": 3,
+        "or": 10,
+        "s": 12,
+        "ir": 1,
+        "ha": 2,
+        "am": 3,
+        "an": 4,
+        "eo": 2,
+        "dy": 6,
+        "ot": 2,
+        "ey": 4,
+        "sh": 1,
+        "er": 1,
+        "iin": 2,
+        "o*": 1
+      },
+      "suffix_diversity": 23,
+      "top_3_suffixes": [
+        "aiin",
+        "ol",
+        "y"
+      ],
+      "part1_words_in_b": 32,
+      "cross_reference_candidates": [
+        {
+          "word": "chees",
+          "b_entry_count": 19,
+          "b_folios": [
+            "f26v",
+            "f39r",
+            "f41r",
+            "f43v",
+            "f76v"
+          ]
+        },
+        {
+          "word": "dal",
+          "b_entry_count": 59,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f39r"
+          ]
+        },
+        {
+          "word": "kary",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f75r",
+            "f78r",
+            "f85v2",
+            "f95r2",
+            "f104r"
+          ]
+        },
+        {
+          "word": "shotaiin",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f86v6"
+          ]
+        },
+        {
+          "word": "ofaiin",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f85r2",
+            "f95r1",
+            "f115v"
+          ]
+        },
+        {
+          "word": "dar",
+          "b_entry_count": 69,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r"
+          ]
+        },
+        {
+          "word": "otcheey",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f76v",
+            "f105r",
+            "f107r"
+          ]
+        },
+        {
+          "word": "pchear",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f103v"
+          ]
+        },
+        {
+          "word": "otchol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "chockhy",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f57r",
+            "f104v",
+            "f113r",
+            "f113v",
+            "f114v"
+          ]
+        }
+      ],
+      "opening_word": "sho",
+      "closing_word": "kolschees",
+      "section": "H"
+    },
+    "f49v": {
+      "folio_id": "f49v",
+      "word_count": 189,
+      "unique_word_count": 141,
+      "vocabulary_richness": 0.746,
+      "part1_word_count": 63,
+      "part1_vocabulary": [
+        "cphokchol",
+        "koddy",
+        "daiin",
+        "chcthy",
+        "dar",
+        "chokchy",
+        "sheeod",
+        "kshodaiin",
+        "dain",
+        "dchol",
+        "chcfhey",
+        "qotchy",
+        "qokdy",
+        "r*",
+        "shol",
+        "ckhy",
+        "ochor",
+        "cthol",
+        "ckhey",
+        "qoteey",
+        "qo",
+        "chcfhhy",
+        "otchy",
+        "shckhy",
+        "kshor",
+        "cthy",
+        "dl",
+        "sho",
+        "dan",
+        "cheo"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 63,
+      "part2_vocabulary": [
+        "chokeeodol",
+        "rcheey",
+        "daiin",
+        "chokeeody",
+        "chor",
+        "aiin",
+        "chokam",
+        "chokchy",
+        "qokg",
+        "cheokchetchor",
+        "dchol",
+        "choty",
+        "choka*",
+        "kchos",
+        "otol",
+        "qokeol",
+        "kol",
+        "tchotchey",
+        "shol",
+        "okchokol",
+        "qokm",
+        "dcho",
+        "qotcho",
+        "chcthey",
+        "chotchody",
+        "chol",
+        "fchochor",
+        "cho",
+        "tchol",
+        "chols"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 63,
+      "part3_vocabulary": [
+        "chaiin",
+        "okeaiin",
+        "jls",
+        "dal",
+        "daiin",
+        "chokaly",
+        "chey",
+        "chor",
+        "rchsheesy",
+        "chokchy",
+        "aiin",
+        "chkalchy",
+        "dain",
+        "chokeeoky",
+        "chy",
+        "chariin",
+        "rchseesy",
+        "daisin",
+        "chol",
+        "cho",
+        "rchshesy",
+        "dls",
+        "cher",
+        "tchor",
+        "chnkaiin",
+        "choteey",
+        "chain",
+        "qotcheol",
+        "ches",
+        "dy"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "r*",
+      "heading_prefix": "r*",
+      "heading_suffix": "r*",
+      "heading_length": 2,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f49v",
+        "f90v2"
+      ],
+      "heading_in_b": true,
+      "heading_b_entry_count": 1,
+      "heading_b_folios": [
+        "f66r"
+      ],
+      "prefix_counts": {
+        "r*": 2,
+        "ks": 6,
+        "sh": 13,
+        "cp": 1,
+        "ch": 71,
+        "qo": 16,
+        "ct": 4,
+        "ck": 2,
+        "ko": 2,
+        "ok": 5,
+        "da": 19,
+        "ot": 3,
+        "do": 2,
+        "oc": 2,
+        "dl": 2,
+        "dc": 9,
+        "kc": 5,
+        "qk": 1,
+        "fc": 2,
+        "tc": 4,
+        "op": 1,
+        "rc": 5,
+        "oa": 3,
+        "ai": 2,
+        "dy": 3,
+        "jl": 1,
+        "so": 1,
+        "yk": 2
+      },
+      "prefix_diversity": 28,
+      "top_3_prefixes": [
+        "ch",
+        "da",
+        "qo"
+      ],
+      "suffix_counts": {
+        "r*": 2,
+        "or": 14,
+        "ol": 28,
+        "hy": 21,
+        "ey": 6,
+        "d": 4,
+        "ho": 18,
+        "dy": 8,
+        "am": 2,
+        "aiin": 26,
+        "ar": 5,
+        "y": 11,
+        "eey": 5,
+        "an": 2,
+        "s": 7,
+        "eo": 8,
+        "l": 2,
+        "qo": 1,
+        "ain": 3,
+        "a*": 1,
+        "al": 3,
+        "og": 2,
+        "m": 2,
+        "ch": 1,
+        "et": 2,
+        "kg": 1,
+        "in": 2,
+        "iin": 1,
+        "er": 1
+      },
+      "suffix_diversity": 29,
+      "top_3_suffixes": [
+        "ol",
+        "aiin",
+        "hy"
+      ],
+      "part1_words_in_b": 38,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chcthy",
+          "b_entry_count": 38,
+          "b_folios": [
+            "f34r",
+            "f34v",
+            "f43v",
+            "f46r",
+            "f46v"
+          ]
+        },
+        {
+          "word": "dar",
+          "b_entry_count": 69,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r"
+          ]
+        },
+        {
+          "word": "chokchy",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f108r",
+            "f113r"
+          ]
+        },
+        {
+          "word": "sheeod",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f113r"
+          ]
+        },
+        {
+          "word": "dain",
+          "b_entry_count": 44,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f40r",
+            "f43r",
+            "f48r"
+          ]
+        },
+        {
+          "word": "dchol",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f26v",
+            "f79r",
+            "f81r",
+            "f86v5",
+            "f115r"
+          ]
+        },
+        {
+          "word": "chcfhey",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f39r",
+            "f75v",
+            "f111v"
+          ]
+        },
+        {
+          "word": "qotchy",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f41r",
+            "f75r",
+            "f77v",
+            "f80r",
+            "f84r"
+          ]
+        },
+        {
+          "word": "qokdy",
+          "b_entry_count": 4,
+          "b_folios": [
+            "f46r",
+            "f48r",
+            "f78v",
+            "f105r"
+          ]
+        }
+      ],
+      "opening_word": "r*",
+      "closing_word": "ykchokeor",
+      "section": "H"
+    },
+    "f51v": {
+      "folio_id": "f51v",
+      "word_count": 108,
+      "unique_word_count": 94,
+      "vocabulary_richness": 0.8704,
+      "part1_word_count": 36,
+      "part1_vocabulary": [
+        "ytal",
+        "ckhody",
+        "sody",
+        "daiin",
+        "qokey",
+        "dchol",
+        "ytam",
+        "oteo",
+        "chy",
+        "cheodar",
+        "tchody",
+        "ytchody",
+        "qodal",
+        "qokol",
+        "qotol",
+        "saiin",
+        "cthy",
+        "dy",
+        "shokog",
+        "dscheey",
+        "chckhey",
+        "qotal",
+        "poshody",
+        "saiindy",
+        "shodaiin",
+        "dykaiin",
+        "otaiin",
+        "dshody",
+        "seodaiin",
+        "qokodar"
+      ],
+      "part1_dominant_prefix": "qo",
+      "part2_word_count": 36,
+      "part2_vocabulary": [
+        "todaiin",
+        "daiin",
+        "dar",
+        "ycthol",
+        "qokal",
+        "shodol",
+        "okor",
+        "otol",
+        "cheadar",
+        "otykal",
+        "olcheety",
+        "ytody",
+        "ctheody",
+        "ytady",
+        "otykol",
+        "chol",
+        "cho",
+        "qokol",
+        "qotol",
+        "shakam",
+        "ykol",
+        "qotaiin",
+        "chod",
+        "oteodaiin",
+        "dary",
+        "choldaiin",
+        "qokcheody",
+        "chokog",
+        "shakom",
+        "qocphy"
+      ],
+      "part2_dominant_prefix": "qo",
+      "part3_word_count": 36,
+      "part3_vocabulary": [
+        "chockhey",
+        "solcheety",
+        "daiin",
+        "chey",
+        "chor",
+        "ykhor",
+        "qokal",
+        "olkeeody",
+        "ckhor",
+        "chockhy",
+        "ykeey",
+        "tcholol",
+        "shee*",
+        "ofal",
+        "olkeeady",
+        "qodaiin",
+        "ckheol",
+        "qokody",
+        "fold",
+        "cheodain",
+        "dy",
+        "shain",
+        "yfal",
+        "ckhol",
+        "ycheoky",
+        "ykeol",
+        "olkee",
+        "kcholol",
+        "cfhl",
+        "sheo"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "poshody",
+      "heading_prefix": "po",
+      "heading_suffix": "dy",
+      "heading_length": 7,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f51v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "po": 1,
+        "qo": 18,
+        "se": 1,
+        "ds": 2,
+        "sa": 3,
+        "sh": 9,
+        "dy": 4,
+        "ck": 4,
+        "ch": 17,
+        "da": 8,
+        "ct": 3,
+        "ka": 1,
+        "tc": 2,
+        "yt": 5,
+        "dc": 1,
+        "ot": 7,
+        "so": 2,
+        "to": 1,
+        "yk": 4,
+        "ok": 3,
+        "yc": 2,
+        "ol": 4,
+        "yf": 1,
+        "of": 1,
+        "cf": 1,
+        "kc": 1,
+        "fo": 1,
+        "oc": 1
+      },
+      "prefix_diversity": 28,
+      "top_3_prefixes": [
+        "qo",
+        "ch",
+        "sh"
+      ],
+      "suffix_counts": {
+        "dy": 17,
+        "ar": 5,
+        "aiin": 21,
+        "al": 8,
+        "eey": 3,
+        "ol": 19,
+        "hy": 7,
+        "ey": 4,
+        "d": 3,
+        "am": 2,
+        "eo": 2,
+        "og": 2,
+        "m": 1,
+        "y": 4,
+        "or": 4,
+        "ho": 1,
+        "ee": 1,
+        "l": 1,
+        "ain": 2,
+        "e*": 1
+      },
+      "suffix_diversity": 20,
+      "top_3_suffixes": [
+        "aiin",
+        "ol",
+        "dy"
+      ],
+      "part1_words_in_b": 23,
+      "cross_reference_candidates": [
+        {
+          "word": "ytal",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f34v",
+            "f76r",
+            "f77v",
+            "f86v6",
+            "f86v5"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "qokey",
+          "b_entry_count": 36,
+          "b_folios": [
+            "f31r",
+            "f40v",
+            "f41r",
+            "f66r",
+            "f75r"
+          ]
+        },
+        {
+          "word": "dchol",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f26v",
+            "f79r",
+            "f81r",
+            "f86v5",
+            "f115r"
+          ]
+        },
+        {
+          "word": "ytam",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f33v",
+            "f43r",
+            "f48v",
+            "f79v",
+            "f86v5"
+          ]
+        },
+        {
+          "word": "oteo",
+          "b_entry_count": 6,
+          "b_folios": [
+            "f43v",
+            "f106v",
+            "f108v",
+            "f111r",
+            "f113v"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "cheodar",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f104r",
+            "f108r"
+          ]
+        },
+        {
+          "word": "tchody",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f86v3",
+            "f95v2",
+            "f95v1"
+          ]
+        },
+        {
+          "word": "qodal",
+          "b_entry_count": 2,
+          "b_folios": [
+            "f85r1",
+            "f104r"
+          ]
+        }
+      ],
+      "opening_word": "poshody",
+      "closing_word": "cheodaiin",
+      "section": "H"
+    },
+    "f45v": {
+      "folio_id": "f45v",
+      "word_count": 109,
+      "unique_word_count": 100,
+      "vocabulary_richness": 0.9174,
+      "part1_word_count": 36,
+      "part1_vocabulary": [
+        "or",
+        "daiin",
+        "chey",
+        "chor",
+        "ky",
+        "ykchy",
+        "fsholom",
+        "ykar",
+        "kol",
+        "qokchy",
+        "chy",
+        "cthod",
+        "nlald",
+        "qotol",
+        "ctho",
+        "cthy",
+        "kolchey",
+        "shor",
+        "okchol",
+        "dod",
+        "dy",
+        "okolon",
+        "opchaiin",
+        "yd",
+        "qotal",
+        "chko",
+        "korary",
+        "chky",
+        "okol",
+        "olald"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 36,
+      "part2_vocabulary": [
+        "tam",
+        "daiin",
+        "dar",
+        "qokey",
+        "aiin",
+        "dail",
+        "dair",
+        "ls",
+        "dain",
+        "shoto",
+        "tod",
+        "chem",
+        "cheg",
+        "okchar",
+        "ss",
+        "oty*",
+        "cphor",
+        "qotol",
+        "saiin",
+        "shy",
+        "otytam",
+        "ytchdy",
+        "dy",
+        "py",
+        "tchtcho",
+        "ykaryd",
+        "raiin",
+        "dshy",
+        "dol",
+        "choiin"
+      ],
+      "part2_dominant_prefix": "da",
+      "part3_word_count": 37,
+      "part3_vocabulary": [
+        "or",
+        "otyol",
+        "daiin",
+        "chor",
+        "ychor",
+        "otshy",
+        "oky",
+        "ykcheor",
+        "ytchy",
+        "tchtchokchol",
+        "sa",
+        "qokom",
+        "oeal",
+        "chol",
+        "pchom",
+        "oair",
+        "ykchom",
+        "cthychol",
+        "cthy",
+        "dy",
+        "sho",
+        "oaiin",
+        "yksheor",
+        "ytchom",
+        "ytchord",
+        "ol",
+        "tsholol",
+        "orchor",
+        "oaiir",
+        "odal"
+      ],
+      "part3_dominant_prefix": "yt",
+      "heading_word": "korary",
+      "heading_prefix": "ko",
+      "heading_suffix": "y",
+      "heading_length": 6,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f45v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ko": 3,
+        "ch": 14,
+        "fs": 1,
+        "sh": 4,
+        "yk": 6,
+        "do": 3,
+        "op": 1,
+        "ol": 2,
+        "nl": 1,
+        "to": 2,
+        "ok": 7,
+        "da": 7,
+        "ct": 5,
+        "dy": 3,
+        "qo": 7,
+        "or": 3,
+        "ky": 1,
+        "yd": 1,
+        "lo": 1,
+        "ot": 8,
+        "py": 1,
+        "ta": 1,
+        "ss": 1,
+        "ai": 1,
+        "cp": 1,
+        "yt": 5,
+        "ls": 1,
+        "sa": 2,
+        "ra": 1,
+        "tc": 2,
+        "kc": 1,
+        "ds": 2,
+        "od": 1,
+        "pc": 1,
+        "oa": 3,
+        "oe": 1,
+        "yc": 1,
+        "sy": 1,
+        "ts": 1,
+        "dc": 1
+      },
+      "prefix_diversity": 40,
+      "top_3_prefixes": [
+        "ch",
+        "ot",
+        "ok"
+      ],
+      "suffix_counts": {
+        "y": 10,
+        "ko": 1,
+        "ol": 14,
+        "ey": 3,
+        "m": 7,
+        "or": 15,
+        "hy": 11,
+        "d": 8,
+        "aiin": 8,
+        "dy": 5,
+        "on": 1,
+        "ho": 3,
+        "ar": 4,
+        "al": 4,
+        "ain": 1,
+        "il": 1,
+        "ir": 3,
+        "iin": 2,
+        "to": 1,
+        "am": 2,
+        "y*": 1,
+        "s": 2,
+        "eg": 1,
+        "sa": 1
+      },
+      "suffix_diversity": 24,
+      "top_3_suffixes": [
+        "or",
+        "ol",
+        "hy"
+      ],
+      "part1_words_in_b": 20,
+      "cross_reference_candidates": [
+        {
+          "word": "or",
+          "b_entry_count": 75,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "chor",
+          "b_entry_count": 29,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "ky",
+          "b_entry_count": 13,
+          "b_folios": [
+            "f33v",
+            "f39v",
+            "f66r",
+            "f75v",
+            "f76r"
+          ]
+        },
+        {
+          "word": "ykchy",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f34r",
+            "f50v",
+            "f86v6"
+          ]
+        },
+        {
+          "word": "ykar",
+          "b_entry_count": 20,
+          "b_folios": [
+            "f33v",
+            "f34r",
+            "f34v",
+            "f39r",
+            "f39v"
+          ]
+        },
+        {
+          "word": "kol",
+          "b_entry_count": 16,
+          "b_folios": [
+            "f43v",
+            "f66r",
+            "f75r",
+            "f75v",
+            "f76r"
+          ]
+        },
+        {
+          "word": "qokchy",
+          "b_entry_count": 28,
+          "b_folios": [
+            "f31r",
+            "f33r",
+            "f34v",
+            "f39v",
+            "f55v"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        }
+      ],
+      "opening_word": "korary",
+      "closing_word": "daiin",
+      "section": "H"
+    },
+    "f3v": {
+      "folio_id": "f3v",
+      "word_count": 110,
+      "unique_word_count": 101,
+      "vocabulary_richness": 0.9182,
+      "part1_word_count": 36,
+      "part1_vocabulary": [
+        "olytol",
+        "qotoa",
+        "do",
+        "dar",
+        "qotoy",
+        "chear",
+        "qodar",
+        "okor",
+        "shol",
+        "seees",
+        "chol",
+        "cphor",
+        "qoteeol",
+        "okom",
+        "qotchol",
+        "okeeor",
+        "okal",
+        "cphar",
+        "oly",
+        "ees",
+        "ckhol",
+        "sches",
+        "okai*",
+        "sha",
+        "daiida",
+        "dol",
+        "cheeykam",
+        "okai",
+        "oai*",
+        "okchor"
+      ],
+      "part1_dominant_prefix": "ok",
+      "part2_word_count": 36,
+      "part2_vocabulary": [
+        "or",
+        "cpham",
+        "otchal",
+        "chodaly",
+        "eear",
+        "kchom",
+        "cfham",
+        "ch",
+        "yeeear",
+        "cheareen",
+        "dor",
+        "chor",
+        "een",
+        "ykchy",
+        "ckhy*",
+        "chearee*",
+        "ckhy",
+        "chy",
+        "chekeol",
+        "char",
+        "kar",
+        "ckha",
+        "chs",
+        "cheor",
+        "tchor",
+        "otcham",
+        "os",
+        "kor",
+        "cham",
+        "chom"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 38,
+      "part3_vocabulary": [
+        "kcham",
+        "ytcheear",
+        "daiin",
+        "chor",
+        "osh",
+        "dain",
+        "sheam",
+        "ytchy",
+        "cthal",
+        "ochor",
+        "ckhy",
+        "chol",
+        "chckhol",
+        "yty",
+        "ochar",
+        "tchor",
+        "yteam",
+        "shar",
+        "ykeam",
+        "cthy",
+        "sho",
+        "shockho",
+        "yteeaiir",
+        "chodair",
+        "qokshol",
+        "oka",
+        "chky",
+        "okeol",
+        "qokcha",
+        "chodaiin"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "koaiin",
+      "heading_prefix": "ko",
+      "heading_suffix": "aiin",
+      "heading_length": 6,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f3v",
+        "f17v",
+        "f29v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ko": 2,
+        "cp": 3,
+        "qo": 8,
+        "sh": 7,
+        "ck": 6,
+        "yk": 3,
+        "ol": 2,
+        "da": 6,
+        "ok": 10,
+        "do": 3,
+        "ch": 25,
+        "se": 1,
+        "oa": 1,
+        "sc": 1,
+        "ee": 5,
+        "kc": 3,
+        "tc": 4,
+        "ye": 1,
+        "ot": 2,
+        "yc": 1,
+        "or": 1,
+        "os": 2,
+        "ka": 1,
+        "cf": 1,
+        "yt": 5,
+        "ct": 3,
+        "oc": 3
+      },
+      "prefix_diversity": 27,
+      "top_3_prefixes": [
+        "ch",
+        "ok",
+        "qo"
+      ],
+      "suffix_counts": {
+        "aiin": 5,
+        "or": 17,
+        "y": 7,
+        "ha": 3,
+        "ol": 14,
+        "ar": 12,
+        "oa": 1,
+        "dy": 1,
+        "da": 1,
+        "m": 6,
+        "s": 6,
+        "am": 9,
+        "ai": 1,
+        "i*": 2,
+        "eey": 1,
+        "al": 3,
+        "do": 1,
+        "en": 2,
+        "hy": 7,
+        "e*": 1,
+        "y*": 1,
+        "kh": 1,
+        "ch": 1,
+        "ka": 1,
+        "ir": 2,
+        "ho": 2,
+        "sh": 1,
+        "ain": 1
+      },
+      "suffix_diversity": 28,
+      "top_3_suffixes": [
+        "or",
+        "ol",
+        "ar"
+      ],
+      "part1_words_in_b": 24,
+      "cross_reference_candidates": [
+        {
+          "word": "do",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f50v",
+            "f85r2",
+            "f114r"
+          ]
+        },
+        {
+          "word": "dar",
+          "b_entry_count": 69,
+          "b_folios": [
+            "f26r",
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r"
+          ]
+        },
+        {
+          "word": "qotoy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f114v"
+          ]
+        },
+        {
+          "word": "chear",
+          "b_entry_count": 16,
+          "b_folios": [
+            "f34v",
+            "f46r",
+            "f76r",
+            "f79r",
+            "f83v"
+          ]
+        },
+        {
+          "word": "qodar",
+          "b_entry_count": 7,
+          "b_folios": [
+            "f41r",
+            "f78r",
+            "f85r2",
+            "f86v6",
+            "f94v"
+          ]
+        },
+        {
+          "word": "okor",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f43r",
+            "f76v",
+            "f82r"
+          ]
+        },
+        {
+          "word": "shol",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f33v",
+            "f39r",
+            "f40v",
+            "f43r",
+            "f46r"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        },
+        {
+          "word": "cphor",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f115v"
+          ]
+        },
+        {
+          "word": "qoteeol",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f82r",
+            "f113v",
+            "f115r"
+          ]
+        }
+      ],
+      "opening_word": "koaiin",
+      "closing_word": "ykeam",
+      "section": "H"
+    },
+    "f29v": {
+      "folio_id": "f29v",
+      "word_count": 112,
+      "unique_word_count": 92,
+      "vocabulary_richness": 0.8214,
+      "part1_word_count": 37,
+      "part1_vocabulary": [
+        "olals",
+        "daiin",
+        "cth",
+        "shey",
+        "chey",
+        "cthold",
+        "otey",
+        "otshy",
+        "kooiin",
+        "qotchy",
+        "als",
+        "cthol",
+        "ytshor",
+        "chol",
+        "cho",
+        "she",
+        "chetchy",
+        "shy",
+        "dary",
+        "cthy",
+        "qotcheaiin",
+        "shor",
+        "ol",
+        "ssheotey",
+        "taiin",
+        "shytchy",
+        "kor",
+        "odaiin",
+        "cthyshy",
+        "ytchor"
+      ],
+      "part1_dominant_prefix": "ct",
+      "part2_word_count": 37,
+      "part2_vocabulary": [
+        "oltchy",
+        "chaiin",
+        "daiin",
+        "dar",
+        "sheky",
+        "okaiin",
+        "chshy",
+        "otol",
+        "qodcho",
+        "chocthy",
+        "qotcho",
+        "cthod",
+        "tochan",
+        "dchor",
+        "chol",
+        "cho",
+        "ctos",
+        "shot",
+        "shy",
+        "chs",
+        "shotsho",
+        "shody",
+        "chain",
+        "cthy",
+        "shaiin",
+        "shdy",
+        "dy",
+        "sho",
+        "cthosh",
+        "shan"
+      ],
+      "part2_dominant_prefix": "sh",
+      "part3_word_count": 38,
+      "part3_vocabulary": [
+        "qekeochor",
+        "daiin",
+        "cth",
+        "dar",
+        "shotchos",
+        "chor",
+        "okaiin",
+        "cholody",
+        "chyt",
+        "dain",
+        "cthody",
+        "chyd",
+        "chy",
+        "octhy",
+        "chykar",
+        "chteos",
+        "cho",
+        "chcth",
+        "ykch*",
+        "tchor",
+        "ydaiin",
+        "ykchn",
+        "sho",
+        "oaiin",
+        "qokeo",
+        "ykaiin",
+        "chokor",
+        "dol",
+        "otody",
+        "qokoiin"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "kooiin",
+      "heading_prefix": "ko",
+      "heading_suffix": "iin",
+      "heading_length": 6,
+      "heading_unique_to_folio": false,
+      "heading_a_folios": [
+        "f2v",
+        "f29v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "ko": 3,
+        "sh": 18,
+        "ch": 26,
+        "ol": 3,
+        "ct": 14,
+        "da": 7,
+        "tc": 3,
+        "al": 1,
+        "qo": 6,
+        "sc": 1,
+        "yt": 2,
+        "od": 1,
+        "ta": 1,
+        "ot": 5,
+        "sy": 2,
+        "ss": 1,
+        "ys": 1,
+        "ok": 2,
+        "to": 2,
+        "dc": 1,
+        "kc": 1,
+        "yk": 5,
+        "dy": 1,
+        "do": 1,
+        "yd": 1,
+        "oa": 1,
+        "oc": 1,
+        "qe": 1
+      },
+      "prefix_diversity": 28,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "ct"
+      ],
+      "suffix_counts": {
+        "iin": 2,
+        "or": 12,
+        "hy": 18,
+        "s": 8,
+        "th": 3,
+        "ho": 11,
+        "aiin": 15,
+        "ol": 8,
+        "ey": 5,
+        "d": 3,
+        "y": 5,
+        "he": 1,
+        "ot": 1,
+        "sh": 1,
+        "on": 1,
+        "ain": 2,
+        "an": 2,
+        "ar": 3,
+        "dy": 6,
+        "n": 1,
+        "ee": 1,
+        "h*": 1,
+        "yt": 1,
+        "eo": 1
+      },
+      "suffix_diversity": 24,
+      "top_3_suffixes": [
+        "hy",
+        "aiin",
+        "or"
+      ],
+      "part1_words_in_b": 22,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "shey",
+          "b_entry_count": 51,
+          "b_folios": [
+            "f31r",
+            "f39r",
+            "f43v",
+            "f46r",
+            "f46v"
+          ]
+        },
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "otey",
+          "b_entry_count": 27,
+          "b_folios": [
+            "f34r",
+            "f43r",
+            "f43v",
+            "f66r",
+            "f75r"
+          ]
+        },
+        {
+          "word": "qotchy",
+          "b_entry_count": 11,
+          "b_folios": [
+            "f41r",
+            "f75r",
+            "f77v",
+            "f80r",
+            "f84r"
+          ]
+        },
+        {
+          "word": "als",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f31v",
+            "f94r",
+            "f116r"
+          ]
+        },
+        {
+          "word": "cthol",
+          "b_entry_count": 3,
+          "b_folios": [
+            "f82r",
+            "f83r",
+            "f113v"
+          ]
+        },
+        {
+          "word": "chol",
+          "b_entry_count": 48,
+          "b_folios": [
+            "f31v",
+            "f34r",
+            "f39r",
+            "f39v",
+            "f41v"
+          ]
+        },
+        {
+          "word": "cho",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f34v",
+            "f39v",
+            "f48v",
+            "f105r",
+            "f106r"
+          ]
+        },
+        {
+          "word": "she",
+          "b_entry_count": 10,
+          "b_folios": [
+            "f39r",
+            "f43r",
+            "f46r",
+            "f48r",
+            "f50r"
+          ]
+        }
+      ],
+      "opening_word": "kooiin",
+      "closing_word": "sy",
+      "section": "H"
+    },
+    "f4v": {
+      "folio_id": "f4v",
+      "word_count": 112,
+      "unique_word_count": 98,
+      "vocabulary_richness": 0.875,
+      "part1_word_count": 37,
+      "part1_vocabulary": [
+        "chaiin",
+        "choaiin",
+        "daiin",
+        "chey",
+        "olchey",
+        "chopchy",
+        "chapchy",
+        "chy",
+        "pchooiin",
+        "oaram",
+        "qodaiin",
+        "dlod",
+        "ar",
+        "shkchor",
+        "cho",
+        "kshea",
+        "kchoy",
+        "qokshy",
+        "chkchor",
+        "qocthy",
+        "am",
+        "cthy",
+        "shaiin",
+        "shor",
+        "sho",
+        "ol",
+        "cthey",
+        "pchaoiin",
+        "ksheo",
+        "choteol"
+      ],
+      "part1_dominant_prefix": "ch",
+      "part2_word_count": 37,
+      "part2_vocabulary": [
+        "ytchoy",
+        "torchy",
+        "sheeor",
+        "pydy",
+        "olaen",
+        "shoky",
+        "cto",
+        "shey",
+        "chcthy",
+        "chey",
+        "chor",
+        "daiin",
+        "chokchy",
+        "cphy",
+        "cphydy",
+        "cthol",
+        "shokchy",
+        "iiincheom",
+        "cph",
+        "dy",
+        "otoiin",
+        "cth*",
+        "sho",
+        "torshy",
+        "qooko",
+        "cthory",
+        "olain",
+        "cphody",
+        "chodain",
+        "qotchoiin"
+      ],
+      "part2_dominant_prefix": "ch",
+      "part3_word_count": 38,
+      "part3_vocabulary": [
+        "keey",
+        "daiin",
+        "qokey",
+        "qokoy",
+        "chokeody",
+        "shooy",
+        "qookoiiin",
+        "ochodo",
+        "ochody",
+        "shtaiin",
+        "oteody",
+        "chy",
+        "key",
+        "choteody",
+        "chol",
+        "char",
+        "qotol",
+        "cheom",
+        "cheor",
+        "chytey",
+        "chtody",
+        "shody",
+        "shar",
+        "chykey",
+        "sho",
+        "shokcheor",
+        "chokody",
+        "okeol",
+        "shodaiin",
+        "otaiin"
+      ],
+      "part3_dominant_prefix": "ch",
+      "heading_word": "pchooiin",
+      "heading_prefix": "pc",
+      "heading_suffix": "iin",
+      "heading_length": 8,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f4v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "pc": 2,
+        "ks": 2,
+        "kc": 2,
+        "ch": 30,
+        "do": 1,
+        "dl": 1,
+        "ol": 5,
+        "ct": 6,
+        "sh": 22,
+        "da": 4,
+        "qo": 11,
+        "ar": 1,
+        "am": 1,
+        "oa": 1,
+        "ot": 5,
+        "yt": 1,
+        "cp": 4,
+        "od": 2,
+        "to": 2,
+        "py": 1,
+        "dy": 1,
+        "ii": 1,
+        "ok": 2,
+        "ke": 2,
+        "oc": 2
+      },
+      "prefix_diversity": 25,
+      "top_3_prefixes": [
+        "ch",
+        "sh",
+        "qo"
+      ],
+      "suffix_counts": {
+        "iin": 5,
+        "eo": 3,
+        "y": 8,
+        "hy": 15,
+        "s": 1,
+        "d": 2,
+        "ea": 1,
+        "ol": 6,
+        "ey": 9,
+        "or": 11,
+        "dy": 16,
+        "ho": 5,
+        "aiin": 12,
+        "ar": 3,
+        "am": 2,
+        "eey": 2,
+        "to": 1,
+        "ain": 2,
+        "h*": 1,
+        "ph": 1,
+        "en": 2,
+        "ko": 1,
+        "m": 2,
+        "do": 1
+      },
+      "suffix_diversity": 24,
+      "top_3_suffixes": [
+        "dy",
+        "hy",
+        "aiin"
+      ],
+      "part1_words_in_b": 26,
+      "cross_reference_candidates": [
+        {
+          "word": "chaiin",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f55v",
+            "f80v",
+            "f86v5",
+            "f95r1",
+            "f106v"
+          ]
+        },
+        {
+          "word": "choaiin",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f86v5",
+            "f86v3",
+            "f104r",
+            "f106v",
+            "f114v"
+          ]
+        },
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "chey",
+          "b_entry_count": 62,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34r",
+            "f34v"
+          ]
+        },
+        {
+          "word": "olchey",
+          "b_entry_count": 21,
+          "b_folios": [
+            "f39r",
+            "f40v",
+            "f41v",
+            "f75r",
+            "f75v"
+          ]
+        },
+        {
+          "word": "chopchy",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f106v"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "qodaiin",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f50v",
+            "f75r",
+            "f85r1",
+            "f85r2",
+            "f86v5"
+          ]
+        },
+        {
+          "word": "ar",
+          "b_entry_count": 74,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "cho",
+          "b_entry_count": 14,
+          "b_folios": [
+            "f34v",
+            "f39v",
+            "f48v",
+            "f105r",
+            "f106r"
+          ]
+        }
+      ],
+      "opening_word": "pchooiin",
+      "closing_word": "chytey",
+      "section": "H"
+    },
+    "f23v": {
+      "folio_id": "f23v",
+      "word_count": 113,
+      "unique_word_count": 97,
+      "vocabulary_richness": 0.8584,
+      "part1_word_count": 37,
+      "part1_vocabulary": [
+        "daiin",
+        "eees",
+        "okaiin",
+        "podairol",
+        "chal",
+        "p**irol",
+        "otchol",
+        "tor",
+        "qotcholm",
+        "otchm",
+        "odaiiily",
+        "otol",
+        "chy",
+        "qoteotor",
+        "opcholotol",
+        "otchg",
+        "qot*tor",
+        "okeeor",
+        "chcphy",
+        "dy",
+        "sho",
+        "oldaiin",
+        "ol",
+        "qokchey",
+        "shoaldy",
+        "qotchar",
+        "odaiinly",
+        "okchafdy",
+        "dol",
+        "qoteo"
+      ],
+      "part1_dominant_prefix": "qo",
+      "part2_word_count": 37,
+      "part2_vocabulary": [
+        "dal",
+        "daiin",
+        "dar",
+        "chear",
+        "oaldary",
+        "dor",
+        "dair",
+        "olsar",
+        "dain",
+        "shol",
+        "ylg",
+        "oiin",
+        "oldal",
+        "qotchold",
+        "mar",
+        "shkshy",
+        "tshol",
+        "qokol",
+        "otchor",
+        "qotchol",
+        "of",
+        "shor",
+        "sho",
+        "ol",
+        "qokor",
+        "qokaiin",
+        "sol",
+        "sholol",
+        "dol",
+        "otor"
+      ],
+      "part2_dominant_prefix": "da",
+      "part3_word_count": 39,
+      "part3_vocabulary": [
+        "or",
+        "chees",
+        "doroiin",
+        "ctho*",
+        "dal",
+        "kshol",
+        "dar",
+        "chor",
+        "dor",
+        "okaiin",
+        "otshy",
+        "aiior",
+        "otol",
+        "cthol",
+        "chy",
+        "okald",
+        "oiin",
+        "ar",
+        "chol",
+        "doraiin",
+        "olol",
+        "qotol",
+        "oro",
+        "olols",
+        "oloiir",
+        "okal",
+        "yokaiin",
+        "olaiior",
+        "oldar",
+        "qoto"
+      ],
+      "part3_dominant_prefix": "ol",
+      "heading_word": "podairol",
+      "heading_prefix": "po",
+      "heading_suffix": "ol",
+      "heading_length": 8,
+      "heading_unique_to_folio": true,
+      "heading_a_folios": [
+        "f23v"
+      ],
+      "heading_in_b": false,
+      "heading_b_entry_count": 0,
+      "heading_b_folios": [],
+      "prefix_counts": {
+        "po": 1,
+        "od": 2,
+        "sh": 8,
+        "op": 2,
+        "ot": 9,
+        "ol": 15,
+        "ch": 9,
+        "qo": 14,
+        "p*": 1,
+        "al": 1,
+        "dy": 1,
+        "ok": 11,
+        "do": 7,
+        "to": 1,
+        "yc": 1,
+        "ee": 2,
+        "da": 10,
+        "of": 2,
+        "ma": 1,
+        "oa": 1,
+        "ts": 1,
+        "oi": 2,
+        "so": 1,
+        "yl": 2,
+        "ar": 1,
+        "or": 2,
+        "ks": 1,
+        "ct": 2,
+        "yo": 1,
+        "ai": 1
+      },
+      "prefix_diversity": 30,
+      "top_3_prefixes": [
+        "ol",
+        "qo",
+        "ok"
+      ],
+      "suffix_counts": {
+        "ol": 27,
+        "y": 5,
+        "dy": 4,
+        "hy": 6,
+        "ar": 8,
+        "ho": 3,
+        "al": 6,
+        "or": 18,
+        "ey": 2,
+        "m": 2,
+        "eo": 1,
+        "hg": 1,
+        "aiin": 9,
+        "s": 5,
+        "d": 2,
+        "of": 1,
+        "ir": 2,
+        "iin": 3,
+        "lg": 1,
+        "ain": 1,
+        "am": 1,
+        "to": 1,
+        "o*": 1,
+        "en": 1,
+        "ro": 2
+      },
+      "suffix_diversity": 25,
+      "top_3_suffixes": [
+        "ol",
+        "or",
+        "aiin"
+      ],
+      "part1_words_in_b": 22,
+      "cross_reference_candidates": [
+        {
+          "word": "daiin",
+          "b_entry_count": 81,
+          "b_folios": [
+            "f26r",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f33v"
+          ]
+        },
+        {
+          "word": "eees",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f39r",
+            "f43v",
+            "f83v",
+            "f86v5",
+            "f108v"
+          ]
+        },
+        {
+          "word": "okaiin",
+          "b_entry_count": 65,
+          "b_folios": [
+            "f31r",
+            "f33r",
+            "f33v",
+            "f34r",
+            "f39v"
+          ]
+        },
+        {
+          "word": "chal",
+          "b_entry_count": 18,
+          "b_folios": [
+            "f75r",
+            "f76r",
+            "f77v",
+            "f81v",
+            "f83v"
+          ]
+        },
+        {
+          "word": "otchol",
+          "b_entry_count": 1,
+          "b_folios": [
+            "f85r1"
+          ]
+        },
+        {
+          "word": "tor",
+          "b_entry_count": 12,
+          "b_folios": [
+            "f40r",
+            "f46v",
+            "f48v",
+            "f55v",
+            "f79r"
+          ]
+        },
+        {
+          "word": "otol",
+          "b_entry_count": 27,
+          "b_folios": [
+            "f48r",
+            "f55r",
+            "f55v",
+            "f75r",
+            "f75v"
+          ]
+        },
+        {
+          "word": "chy",
+          "b_entry_count": 35,
+          "b_folios": [
+            "f26v",
+            "f31r",
+            "f33v",
+            "f34v",
+            "f43v"
+          ]
+        },
+        {
+          "word": "okeeor",
+          "b_entry_count": 5,
+          "b_folios": [
+            "f48v",
+            "f82r",
+            "f108v",
+            "f111v",
+            "f112r"
+          ]
+        },
+        {
+          "word": "chcphy",
+          "b_entry_count": 8,
+          "b_folios": [
+            "f39r",
+            "f76r",
+            "f78v",
+            "f86v6",
+            "f105r"
+          ]
+        }
+      ],
+      "opening_word": "podairol",
+      "closing_word": "ofainos",
+      "section": "H"
+    }
+  }
+}

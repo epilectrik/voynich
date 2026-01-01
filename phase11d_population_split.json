@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "phase": "11D",
+    "title": "A/B Population Quantitative Split",
+    "timestamp": "2025-12-31T12:51:32.092851"
+  },
+  "a_text": {
+    "entry_count": 114,
+    "slot_count": {
+      "mean": 321.23,
+      "variance": 23741.02
+    },
+    "operator_count": {
+      "mean": 32.66,
+      "variance": 78.01
+    },
+    "cycle_participation": {
+      "mean": 247.47,
+      "variance": 16833.32
+    },
+    "preferred_integers": [
+      321,
+      296,
+      257
+    ]
+  },
+  "b_text": {
+    "entry_count": 112,
+    "slot_count": {
+      "mean": 751.97,
+      "variance": 300972.45
+    },
+    "operator_count": {
+      "mean": 47.26,
+      "variance": 227.64
+    },
+    "cycle_participation": {
+      "mean": 616.71,
+      "variance": 247765.33
+    },
+    "preferred_integers": [
+      216,
+      430,
+      222
+    ]
+  },
+  "comparison": {
+    "a_variance_total": 23819.03,
+    "b_variance_total": 301200.09,
+    "a_more_fixed": true,
+    "effect_size": 0.921
+  },
+  "interpretation": "A-text shows lower variance (more fixed cardinalities) consistent with definitions. B-text shows higher variance consistent with procedural operations."
+}

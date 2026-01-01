@@ -1,0 +1,7216 @@
+{
+  "metadata": {
+    "phase": "C1.2",
+    "title": "Category Classifier Profiles",
+    "timestamp": "2025-12-30T22:11:43.393989"
+  },
+  "categories": {
+    "chosaroshol": {
+      "folios": [
+        "f100r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.031,
+        0.0,
+        0.3643,
+        0.0,
+        0.0,
+        0.0,
+        0.0853,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0388,
+        0.0543,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1163,
+        0.062,
+        0.0,
+        0.1318,
+        0.0698,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0465
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3643
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1318
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1163
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0853
+        },
+        {
+          "prefix": "so",
+          "weight": 0.0698
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.868,
+      "category_type": "mid"
+    },
+    "tolchd": {
+      "folios": [
+        "f100v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4337,
+        0.0,
+        0.0,
+        0.0602,
+        0.0723,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0723,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0964,
+        0.0482,
+        0.0,
+        0.0723,
+        0.1084,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0361
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4337
+        },
+        {
+          "prefix": "so",
+          "weight": 0.1084
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0964
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0723
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0723
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.772,
+      "category_type": "mid"
+    },
+    "pcheol": {
+      "folios": [
+        "f101r1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2609,
+        0.0,
+        0.0,
+        0.0435,
+        0.0807,
+        0.0,
+        0.0435,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1242,
+        0.0932,
+        0.0435,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0932,
+        0.0,
+        0.0,
+        0.2174,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2609
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2174
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1242
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.0932
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0932
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.009,
+      "category_type": "mid"
+    },
+    "sairaly": {
+      "folios": [
+        "f101v2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2642,
+        0.0,
+        0.0,
+        0.0755,
+        0.1069,
+        0.0,
+        0.0503,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0881,
+        0.1069,
+        0.0881,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1572,
+        0.0,
+        0.0,
+        0.0629,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2642
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1572
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1069
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.1069
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0881
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.155,
+      "category_type": "mid"
+    },
+    "dordod": {
+      "folios": [
+        "f102r1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1176,
+        0.0,
+        0.0,
+        0.0,
+        0.1294,
+        0.0,
+        0.1294,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0824,
+        0.0941,
+        0.0471,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2118,
+        0.0,
+        0.0,
+        0.1294,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0588
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2118
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1294
+        },
+        {
+          "prefix": "do",
+          "weight": 0.1294
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1294
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1176
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.209,
+      "category_type": "mid"
+    },
+    "lsais": {
+      "folios": [
+        "f102r2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1531,
+        0.051,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.102,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.051,
+        0.0,
+        0.1429,
+        0.102,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2143,
+        0.0,
+        0.0,
+        0.102,
+        0.0816,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2143
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1531
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1429
+        },
+        {
+          "prefix": "do",
+          "weight": 0.102
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.102
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.176,
+      "category_type": "mid"
+    },
+    "ker": {
+      "folios": [
+        "f102v1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2574,
+        0.0594,
+        0.0,
+        0.0,
+        0.1089,
+        0.0,
+        0.0495,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0891,
+        0.0594,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2376,
+        0.0,
+        0.0,
+        0.1386,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2574
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.2376
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1386
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1089
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0891
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.0,
+      "category_type": "mid"
+    },
+    "porshols": {
+      "folios": [
+        "f102v2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2162,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0473,
+        0.0,
+        0.0,
+        0.2568,
+        0.0541,
+        0.0743,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1284,
+        0.0473,
+        0.0,
+        0.1757,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ok",
+          "weight": 0.2568
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.2162
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1757
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1284
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0743
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.051,
+      "category_type": "mid"
+    },
+    "pchocthy": {
+      "folios": [
+        "f10r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3226,
+        0.0,
+        0.0,
+        0.1613,
+        0.129,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0968,
+        0.0484,
+        0.0,
+        0.0,
+        0.0,
+        0.1774,
+        0.0,
+        0.0,
+        0.0645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3226
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1774
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1613
+        },
+        {
+          "prefix": "da",
+          "weight": 0.129
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0968
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.991,
+      "category_type": "mid"
+    },
+    "paiin": {
+      "folios": [
+        "f10v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2553,
+        0.0,
+        0.0,
+        0.0426,
+        0.1702,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0426,
+        0.0426,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3191,
+        0.0,
+        0.0,
+        0.1277,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.3191
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.2553
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1702
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1277
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0426
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.839,
+      "category_type": "hub"
+    },
+    "tshol": {
+      "folios": [
+        "f11r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2286,
+        0.0,
+        0.0,
+        0.1143,
+        0.2,
+        0.0,
+        0.0571,
+        0.0,
+        0.0,
+        0.0571,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1143,
+        0.0,
+        0.0,
+        0.1714,
+        0.0,
+        0.0571,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2286
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1714
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1143
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1143
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.124,
+      "category_type": "mid"
+    },
+    "poldchody": {
+      "folios": [
+        "f11v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0513,
+        0.0,
+        0.2051,
+        0.0,
+        0.0,
+        0.1026,
+        0.1538,
+        0.0513,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0256,
+        0.0,
+        0.1795,
+        0.0,
+        0.0,
+        0.1795,
+        0.0,
+        0.0513,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2051
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1795
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1795
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1538
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1026
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.069,
+      "category_type": "mid"
+    },
+    "torshor": {
+      "folios": [
+        "f13r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0926,
+        0.0,
+        0.0,
+        0.0,
+        0.0926,
+        0.0926,
+        0.0926,
+        0.0,
+        0.0,
+        0.0741,
+        0.0,
+        0.0,
+        0.0,
+        0.1111,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2037,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0741
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2037
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1111
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.0926
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0926
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.228,
+      "category_type": "mid"
+    },
+    "koair": {
+      "folios": [
+        "f13v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1525,
+        0.0,
+        0.0,
+        0.0339,
+        0.1525,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0508,
+        0.0,
+        0.0678,
+        0.0,
+        0.1017,
+        0.0678,
+        0.1186,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1695,
+        0.0,
+        0.0,
+        0.0847,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.1695
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1525
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1525
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1186
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1017
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.174,
+      "category_type": "mid"
+    },
+    "pchodaiin": {
+      "folios": [
+        "f14r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2321,
+        0.0,
+        0.0,
+        0.0,
+        0.1786,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0536,
+        0.0,
+        0.0,
+        0.0,
+        0.0893,
+        0.0536,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1071,
+        0.0,
+        0.0,
+        0.125,
+        0.0714,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0893
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2321
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1786
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.125
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1071
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0893
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.137,
+      "category_type": "mid"
+    },
+    "pdychoiin": {
+      "folios": [
+        "f14v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2115,
+        0.0,
+        0.0,
+        0.0962,
+        0.1731,
+        0.0577,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1346,
+        0.0,
+        0.1538,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0577,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1154
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2115
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1731
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1538
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1346
+        },
+        {
+          "prefix": "yk",
+          "weight": 0.1154
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.161,
+      "category_type": "mid"
+    },
+    "tshor": {
+      "folios": [
+        "f15r",
+        "f53v"
+      ],
+      "folio_count": 2,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1732,
+        0.0,
+        0.0254,
+        0.1057,
+        0.1163,
+        0.0,
+        0.0316,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0316,
+        0.0,
+        0.0571,
+        0.0,
+        0.0529,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1269,
+        0.019,
+        0.0,
+        0.2179,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0424,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "sh",
+          "weight": 0.2179
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1732
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1269
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1163
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1057
+        }
+      ],
+      "within_category_variance": 0.000363,
+      "mean_entropy": 3.096,
+      "category_type": "mid"
+    },
+    "poror": {
+      "folios": [
+        "f15v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3404,
+        0.0,
+        0.0,
+        0.1915,
+        0.1064,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0638,
+        0.1277,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1064,
+        0.0,
+        0.0,
+        0.0638,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3404
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1915
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1277
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1064
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1064
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.013,
+      "category_type": "mid"
+    },
+    "pocheody": {
+      "folios": [
+        "f16r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2245,
+        0.0,
+        0.0,
+        0.0,
+        0.1837,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0612,
+        0.0,
+        0.0816,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1429,
+        0.0,
+        0.0,
+        0.1837,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0612,
+        0.0612
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2245
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1837
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1837
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1429
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0816
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.16,
+      "category_type": "mid"
+    },
+    "pchraiin": {
+      "folios": [
+        "f16v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4677,
+        0.0,
+        0.0,
+        0.0645,
+        0.0806,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0645,
+        0.0968,
+        0.0,
+        0.0,
+        0.0,
+        0.1129,
+        0.0,
+        0.0,
+        0.0323,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0806
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4677
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1129
+        },
+        {
+          "prefix": "pc",
+          "weight": 0.0968
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0806
+        },
+        {
+          "prefix": "yk",
+          "weight": 0.0806
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.692,
+      "category_type": "mid"
+    },
+    "fshody": {
+      "folios": [
+        "f17r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3774,
+        0.0,
+        0.0,
+        0.0,
+        0.1509,
+        0.0,
+        0.0566,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0755,
+        0.0,
+        0.0943,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1887,
+        0.0,
+        0.0,
+        0.0566,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3774
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1887
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1509
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0943
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0755
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.976,
+      "category_type": "mid"
+    },
+    "pchodol": {
+      "folios": [
+        "f17v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3103,
+        0.0,
+        0.0,
+        0.0948,
+        0.0603,
+        0.0,
+        0.0517,
+        0.0,
+        0.0,
+        0.0431,
+        0.0,
+        0.0,
+        0.0,
+        0.1552,
+        0.0862,
+        0.069,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0603,
+        0.0,
+        0.0,
+        0.069,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3103
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1552
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0948
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.0862
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.069
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.006,
+      "category_type": "mid"
+    },
+    "pdrairdy": {
+      "folios": [
+        "f18r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2609,
+        0.0,
+        0.0,
+        0.1304,
+        0.2319,
+        0.0,
+        0.058,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1014,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.087,
+        0.0,
+        0.0,
+        0.0725,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.058,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2609
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2319
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1304
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1014
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.087
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.067,
+      "category_type": "mid"
+    },
+    "told": {
+      "folios": [
+        "f18v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0833,
+        0.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0625,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3333,
+        0.0,
+        0.0,
+        0.1458,
+        0.0,
+        0.0,
+        0.0625,
+        0.0,
+        0.0,
+        0.1458
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.3333
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1458
+        },
+        {
+          "prefix": "yk",
+          "weight": 0.1458
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.0833
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.107,
+      "category_type": "mid"
+    },
+    "pchor": {
+      "folios": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_count": 3,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2702,
+        0.0312,
+        0.0208,
+        0.1057,
+        0.1076,
+        0.0,
+        0.0282,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0155,
+        0.0,
+        0.0518,
+        0.0116,
+        0.0,
+        0.0,
+        0.0,
+        0.1524,
+        0.026,
+        0.0,
+        0.1065,
+        0.0,
+        0.0282,
+        0.0155,
+        0.0,
+        0.0,
+        0.0286
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2702
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1524
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1076
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1065
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1057
+        }
+      ],
+      "within_category_variance": 0.000496,
+      "mean_entropy": 3.071,
+      "category_type": "hub"
+    },
+    "pochaiin": {
+      "folios": [
+        "f19v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1562,
+        0.0,
+        0.0,
+        0.0781,
+        0.1719,
+        0.0,
+        0.0469,
+        0.0,
+        0.0,
+        0.0469,
+        0.0,
+        0.0,
+        0.0,
+        0.0938,
+        0.0,
+        0.1094,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2344,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0625,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2344
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1719
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1562
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1094
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0938
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.14,
+      "category_type": "mid"
+    },
+    "fachys": {
+      "folios": [
+        "f1r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1771,
+        0.0469,
+        0.0677,
+        0.099,
+        0.151,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0625,
+        0.0,
+        0.0938,
+        0.0,
+        0.0521,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "sh",
+          "weight": 0.25
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1771
+        },
+        {
+          "prefix": "da",
+          "weight": 0.151
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.099
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0938
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.053,
+      "category_type": "isolate"
+    },
+    "kchsy": {
+      "folios": [
+        "f1v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3239,
+        0.0,
+        0.0,
+        0.0845,
+        0.1268,
+        0.0,
+        0.1268,
+        0.0,
+        0.0,
+        0.0282,
+        0.0,
+        0.0563,
+        0.0,
+        0.0704,
+        0.0704,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1127,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3239
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1268
+        },
+        {
+          "prefix": "do",
+          "weight": 0.1268
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1127
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0845
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.959,
+      "category_type": "isolate"
+    },
+    "kdchody": {
+      "folios": [
+        "f20r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4304,
+        0.0,
+        0.0,
+        0.0253,
+        0.0886,
+        0.0506,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0759,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1646,
+        0.0,
+        0.0,
+        0.1139,
+        0.0,
+        0.0506,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4304
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1646
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1139
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0886
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0759
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.789,
+      "category_type": "mid"
+    },
+    "faiis": {
+      "folios": [
+        "f20v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.027,
+        0.0,
+        0.4054,
+        0.0,
+        0.0,
+        0.0405,
+        0.0811,
+        0.0,
+        0.0,
+        0.0,
+        0.0405,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0405,
+        0.0,
+        0.0541,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0541,
+        0.0,
+        0.0,
+        0.2568,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4054
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2568
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0811
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0541
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0541
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.594,
+      "category_type": "mid"
+    },
+    "toldshy": {
+      "folios": [
+        "f21v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.375,
+        0.0208,
+        0.0,
+        0.0625,
+        0.1667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.125,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0417,
+        0.0417,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.375
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.125
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0625
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.745,
+      "category_type": "mid"
+    },
+    "pol": {
+      "folios": [
+        "f22r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.1333,
+        0.2,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.12,
+        0.0933,
+        0.0667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.0667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.2
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1333
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.12
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1067
+        },
+        {
+          "prefix": "do",
+          "weight": 0.1067
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.225,
+      "category_type": "hub"
+    },
+    "pysaiinor": {
+      "folios": [
+        "f22v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0833,
+        0.1667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.1833,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0,
+        0.15,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.05
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ot",
+          "weight": 0.1833
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.15
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.15,
+      "category_type": "mid"
+    },
+    "pydchdom": {
+      "folios": [
+        "f23r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.122,
+        0.0,
+        0.0,
+        0.0,
+        0.3049,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1098,
+        0.0976,
+        0.0488,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1585,
+        0.0,
+        0.0,
+        0.0366,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.122
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.3049
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1585
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.122
+        },
+        {
+          "prefix": "yk",
+          "weight": 0.122
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1098
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.018,
+      "category_type": "mid"
+    },
+    "podairol": {
+      "folios": [
+        "f23v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1084,
+        0.0,
+        0.0,
+        0.0,
+        0.1205,
+        0.0,
+        0.0843,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1325,
+        0.1807,
+        0.1084,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1687,
+        0.0,
+        0.0,
+        0.0964,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ol",
+          "weight": 0.1807
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1687
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1325
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1205
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1084
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.134,
+      "category_type": "mid"
+    },
+    "porory": {
+      "folios": [
+        "f24r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2941,
+        0.0353,
+        0.0,
+        0.1294,
+        0.0941,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1059,
+        0.0,
+        0.0471,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1882,
+        0.0471,
+        0.0,
+        0.0588,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2941
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1882
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1294
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1059
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0941
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.962,
+      "category_type": "mid"
+    },
+    "tchodar": {
+      "folios": [
+        "f24v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3396,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1132,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.283,
+        0.0,
+        0.1132,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1509,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3396
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.283
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1509
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.1132
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1132
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.065,
+      "category_type": "mid"
+    },
+    "fcholdy": {
+      "folios": [
+        "f25r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2683,
+        0.0488,
+        0.0,
+        0.0488,
+        0.1463,
+        0.0488,
+        0.0,
+        0.0244,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0732,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1463,
+        0.0,
+        0.0,
+        0.1707,
+        0.0244,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2683
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1707
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1463
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1463
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0732
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.931,
+      "category_type": "mid"
+    },
+    "poeeaiin": {
+      "folios": [
+        "f25v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2143,
+        0.0714,
+        0.0,
+        0.0,
+        0.2857,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0238,
+        0.0,
+        0.0,
+        0.0238,
+        0.0,
+        0.2381,
+        0.0,
+        0.0,
+        0.1429,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.2857
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.2381
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.2143
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1429
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.0714
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.884,
+      "category_type": "mid"
+    },
+    "ksor": {
+      "folios": [
+        "f27r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.378,
+        0.0,
+        0.0,
+        0.0854,
+        0.1341,
+        0.0366,
+        0.0,
+        0.0,
+        0.0,
+        0.061,
+        0.0366,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0488,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1585,
+        0.0,
+        0.061,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.378
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1585
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1341
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0854
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.061
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.843,
+      "category_type": "mid"
+    },
+    "fochof": {
+      "folios": [
+        "f27v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2676,
+        0.0,
+        0.0,
+        0.0563,
+        0.0,
+        0.1268,
+        0.0563,
+        0.0,
+        0.0,
+        0.1549,
+        0.0,
+        0.0,
+        0.0,
+        0.0845,
+        0.0,
+        0.0423,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2113,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2676
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2113
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.1549
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.1268
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0845
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.998,
+      "category_type": "mid"
+    },
+    "pchodar": {
+      "folios": [
+        "f28r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2364,
+        0.0,
+        0.0,
+        0.1273,
+        0.0727,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0364,
+        0.0,
+        0.0,
+        0.0,
+        0.0727,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1091,
+        0.0,
+        0.0,
+        0.1455,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2364
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.2
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1455
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1273
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1091
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.072,
+      "category_type": "mid"
+    },
+    "kshol": {
+      "folios": [
+        "f28v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3968,
+        0.0,
+        0.0,
+        0.0317,
+        0.1587,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0317,
+        0.0,
+        0.0,
+        0.0,
+        0.1429,
+        0.0,
+        0.0,
+        0.1429,
+        0.0,
+        0.0317,
+        0.0,
+        0.0317,
+        0.0,
+        0.0317
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3968
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1587
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1429
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1429
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0317
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.663,
+      "category_type": "mid"
+    },
+    "poraiin": {
+      "folios": [
+        "f29r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3571,
+        0.0,
+        0.0,
+        0.0357,
+        0.0357,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0357,
+        0.0,
+        0.0357,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0357,
+        0.0,
+        0.2143,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3571
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.25
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.2143
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0357
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0357
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.628,
+      "category_type": "mid"
+    },
+    "kooiin": {
+      "folios": [
+        "f29v",
+        "f2v"
+      ],
+      "folio_count": 2,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3871,
+        0.0,
+        0.0,
+        0.0778,
+        0.0977,
+        0.0,
+        0.0221,
+        0.0,
+        0.0,
+        0.0441,
+        0.0,
+        0.024,
+        0.0,
+        0.0,
+        0.0167,
+        0.0498,
+        0.0074,
+        0.0,
+        0.0,
+        0.0,
+        0.0775,
+        0.0,
+        0.0,
+        0.1515,
+        0.0,
+        0.0167,
+        0.0,
+        0.0,
+        0.0,
+        0.0278
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3871
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1515
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0977
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0778
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0775
+        }
+      ],
+      "within_category_variance": 0.000682,
+      "mean_entropy": 2.688,
+      "category_type": "mid"
+    },
+    "kydainy": {
+      "folios": [
+        "f2r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2958,
+        0.0423,
+        0.0,
+        0.0986,
+        0.2254,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0563,
+        0.0563,
+        0.0,
+        0.169,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0563
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2958
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2254
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.169
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0986
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0563
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.92,
+      "category_type": "isolate"
+    },
+    "okchesy": {
+      "folios": [
+        "f30r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4505,
+        0.0,
+        0.0,
+        0.0,
+        0.044,
+        0.0659,
+        0.033,
+        0.0,
+        0.0,
+        0.0,
+        0.0769,
+        0.0,
+        0.0,
+        0.044,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1099,
+        0.0,
+        0.0,
+        0.0989,
+        0.044,
+        0.0,
+        0.0,
+        0.0,
+        0.033,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4505
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1099
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0989
+        },
+        {
+          "prefix": "ke",
+          "weight": 0.0769
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.0659
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.661,
+      "category_type": "mid"
+    },
+    "cthscthain": {
+      "folios": [
+        "f30v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3478,
+        0.0,
+        0.029,
+        0.0725,
+        0.1449,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.058,
+        0.029,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.029,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.058,
+        0.0,
+        0.0,
+        0.1884,
+        0.0435,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3478
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1884
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1449
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0725
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.058
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.779,
+      "category_type": "mid"
+    },
+    "fchoiin": {
+      "folios": [
+        "f32r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.0667,
+        0.2267,
+        0.0667,
+        0.08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0533,
+        0.0667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.16,
+        0.0,
+        0.0,
+        0.12,
+        0.0,
+        0.0533,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.2267
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.16
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.12
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1067
+        },
+        {
+          "prefix": "do",
+          "weight": 0.08
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.144,
+      "category_type": "mid"
+    },
+    "kcheodaiin": {
+      "folios": [
+        "f32v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2432,
+        0.0,
+        0.0405,
+        0.0405,
+        0.2162,
+        0.0676,
+        0.0541,
+        0.0,
+        0.0,
+        0.0,
+        0.0405,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0405,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1081,
+        0.0,
+        0.0,
+        0.1486,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2432
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2162
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1486
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1081
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.0676
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.97,
+      "category_type": "mid"
+    },
+    "cthoo": {
+      "folios": [
+        "f35r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3235,
+        0.0,
+        0.0,
+        0.1029,
+        0.2059,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0441,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1618,
+        0.0,
+        0.0588,
+        0.1029,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3235
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2059
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1618
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1029
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1029
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.919,
+      "category_type": "mid"
+    },
+    "par": {
+      "folios": [
+        "f35v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0256,
+        0.0,
+        0.4103,
+        0.0,
+        0.0,
+        0.0,
+        0.1538,
+        0.0897,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0385,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0769,
+        0.0,
+        0.0,
+        0.0769,
+        0.0256,
+        0.1026,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4103
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1538
+        },
+        {
+          "prefix": "tc",
+          "weight": 0.1026
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.0897
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0769
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.716,
+      "category_type": "hub"
+    },
+    "pchafdan": {
+      "folios": [
+        "f36r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2667,
+        0.0,
+        0.0667,
+        0.1111,
+        0.1556,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0889,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1778,
+        0.0,
+        0.0,
+        0.0667,
+        0.0667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2667
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1778
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1556
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1111
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0889
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.113,
+      "category_type": "mid"
+    },
+    "pcharasy": {
+      "folios": [
+        "f36v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2115,
+        0.0577,
+        0.0,
+        0.0,
+        0.1923,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1731,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1154,
+        0.0,
+        0.0,
+        0.0577,
+        0.0,
+        0.0577,
+        0.0,
+        0.0,
+        0.0,
+        0.1346
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2115
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1923
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1731
+        },
+        {
+          "prefix": "yk",
+          "weight": 0.1346
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1154
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.152,
+      "category_type": "mid"
+    },
+    "tocphol": {
+      "folios": [
+        "f37r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1096,
+        0.0,
+        0.0,
+        0.0548,
+        0.1507,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0411,
+        0.0,
+        0.0548,
+        0.0,
+        0.1233,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2466,
+        0.0,
+        0.0,
+        0.1233,
+        0.0,
+        0.0,
+        0.0274,
+        0.0,
+        0.0,
+        0.0685
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2466
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1507
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1233
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1233
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1096
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.059,
+      "category_type": "mid"
+    },
+    "kshody": {
+      "folios": [
+        "f37v",
+        "f5r"
+      ],
+      "folio_count": 2,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2649,
+        0.0,
+        0.0,
+        0.0602,
+        0.1232,
+        0.0,
+        0.029,
+        0.0,
+        0.0,
+        0.0208,
+        0.0,
+        0.0,
+        0.0,
+        0.0417,
+        0.0,
+        0.0625,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1984,
+        0.0,
+        0.0,
+        0.1341,
+        0.0362,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.029
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2649
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1984
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1341
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1232
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0625
+        }
+      ],
+      "within_category_variance": 0.000839,
+      "mean_entropy": 3.0,
+      "category_type": "mid"
+    },
+    "tolor": {
+      "folios": [
+        "f38r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3939,
+        0.0,
+        0.0,
+        0.0606,
+        0.0909,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2121,
+        0.0303,
+        0.0606,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0606,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0303,
+        0.0,
+        0.0606,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3939
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.2121
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0909
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0606
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0606
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.719,
+      "category_type": "mid"
+    },
+    "okchop": {
+      "folios": [
+        "f38v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2642,
+        0.0,
+        0.0,
+        0.0,
+        0.2264,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1321,
+        0.0,
+        0.0,
+        0.1509,
+        0.0,
+        0.0377,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1132,
+        0.0,
+        0.0,
+        0.0755,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2642
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2264
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1509
+        },
+        {
+          "prefix": "ke",
+          "weight": 0.1321
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1132
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.942,
+      "category_type": "mid"
+    },
+    "tsheos": {
+      "folios": [
+        "f3r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0577,
+        0.1058,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0577,
+        0.0385,
+        0.0769,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0962,
+        0.0385,
+        0.0,
+        0.0,
+        0.0,
+        0.0288,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.25
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.25
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1058
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0962
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0769
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.936,
+      "category_type": "isolate"
+    },
+    "koaiin": {
+      "folios": [
+        "f3v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3623,
+        0.087,
+        0.0435,
+        0.0,
+        0.087,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1449,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1159,
+        0.0,
+        0.0,
+        0.1014,
+        0.0,
+        0.058,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3623
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1449
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1159
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1014
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.087
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.013,
+      "category_type": "isolate"
+    },
+    "sho": {
+      "folios": [
+        "f42r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3478,
+        0.0362,
+        0.0,
+        0.1087,
+        0.1377,
+        0.029,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0507,
+        0.0217,
+        0.0,
+        0.0,
+        0.0,
+        0.0435,
+        0.0,
+        0.0,
+        0.2246,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3478
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2246
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1377
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1087
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0507
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.74,
+      "category_type": "hub"
+    },
+    "tcho": {
+      "folios": [
+        "f42v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4066,
+        0.0,
+        0.0,
+        0.0769,
+        0.0659,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0879,
+        0.0,
+        0.0549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0879,
+        0.0549,
+        0.0,
+        0.1099,
+        0.0,
+        0.0549,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4066
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1099
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0879
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0879
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0769
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.865,
+      "category_type": "mid"
+    },
+    "tshodpy": {
+      "folios": [
+        "f44r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1754,
+        0.0,
+        0.0,
+        0.0,
+        0.0877,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0702,
+        0.0,
+        0.1579,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2632,
+        0.0,
+        0.0,
+        0.1579,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0877
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2632
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1754
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1579
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1579
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0877
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.092,
+      "category_type": "mid"
+    },
+    "tsho": {
+      "folios": [
+        "f44v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1039,
+        0.0,
+        0.0,
+        0.1818,
+        0.0649,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0909,
+        0.0,
+        0.1299,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1039,
+        0.0,
+        0.0,
+        0.2078,
+        0.0,
+        0.0649,
+        0.0,
+        0.0,
+        0.0,
+        0.0519
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "sh",
+          "weight": 0.2078
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1818
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1299
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1039
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1039
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.175,
+      "category_type": "mid"
+    },
+    "pykydal": {
+      "folios": [
+        "f45r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1159,
+        0.0,
+        0.0,
+        0.0725,
+        0.2319,
+        0.0,
+        0.058,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0725,
+        0.0,
+        0.1014,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1739,
+        0.0,
+        0.0,
+        0.087,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.087
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.2319
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1739
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1159
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1014
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.087
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.147,
+      "category_type": "mid"
+    },
+    "korary": {
+      "folios": [
+        "f45v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2295,
+        0.0,
+        0.0,
+        0.082,
+        0.1148,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0492,
+        0.0,
+        0.1148,
+        0.0,
+        0.1311,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1148,
+        0.0,
+        0.0,
+        0.0656,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0984
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2295
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1311
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1148
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1148
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1148
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.2,
+      "category_type": "mid"
+    },
+    "pchair": {
+      "folios": [
+        "f47r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4267,
+        0.04,
+        0.0,
+        0.04,
+        0.16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0533,
+        0.0,
+        0.0,
+        0.0,
+        0.0533,
+        0.04,
+        0.04,
+        0.04,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4267
+        },
+        {
+          "prefix": "da",
+          "weight": 0.16
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1067
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.0533
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0533
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.672,
+      "category_type": "mid"
+    },
+    "psheot": {
+      "folios": [
+        "f47v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4,
+        0.0,
+        0.0,
+        0.0471,
+        0.1765,
+        0.0588,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0353,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0941,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0588,
+        0.0588,
+        0.0,
+        0.0706,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1765
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0941
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0706
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.0588
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.784,
+      "category_type": "mid"
+    },
+    "poshol": {
+      "folios": [
+        "f49r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3982,
+        0.0,
+        0.0,
+        0.0,
+        0.0619,
+        0.0708,
+        0.0265,
+        0.0,
+        0.0,
+        0.0265,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0354,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1504,
+        0.0,
+        0.0,
+        0.2035,
+        0.0,
+        0.0265,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3982
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2035
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1504
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.0708
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0619
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.622,
+      "category_type": "mid"
+    },
+    "r*": {
+      "folios": [
+        "f49v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0282,
+        0.1338,
+        0.0634,
+        0.0,
+        0.0,
+        0.0,
+        0.0352,
+        0.0,
+        0.0,
+        0.0,
+        0.0352,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1127,
+        0.0,
+        0.0,
+        0.0915,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.5
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1338
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1127
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0915
+        },
+        {
+          "prefix": "dc",
+          "weight": 0.0634
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": null,
+      "category_type": "mid"
+    },
+    "kodalchy": {
+      "folios": [
+        "f4r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2632,
+        0.0,
+        0.0351,
+        0.1053,
+        0.0877,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0351,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1579,
+        0.0,
+        0.0,
+        0.2456,
+        0.0,
+        0.0702,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2632
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2456
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1579
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1053
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0877
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.968,
+      "category_type": "isolate"
+    },
+    "pchooiin": {
+      "folios": [
+        "f4v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3371,
+        0.0,
+        0.0449,
+        0.0674,
+        0.0449,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0562,
+        0.0562,
+        0.0225,
+        0.0,
+        0.0,
+        0.0,
+        0.1236,
+        0.0,
+        0.0,
+        0.2472,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3371
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2472
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1236
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0674
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.0562
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.748,
+      "category_type": "isolate"
+    },
+    "tcholdchy": {
+      "folios": [
+        "f51r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0921,
+        0.1579,
+        0.0789,
+        0.0,
+        0.1447,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0789,
+        0.0,
+        0.0921,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2105,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0526,
+        0.0,
+        0.0,
+        0.0,
+        0.0921
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2105
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.1579
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1447
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.0921
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0921
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.167,
+      "category_type": "mid"
+    },
+    "poshody": {
+      "folios": [
+        "f51v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2394,
+        0.0563,
+        0.0,
+        0.0,
+        0.1127,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0563,
+        0.0986,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2535,
+        0.0,
+        0.0,
+        0.1268,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0563
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2535
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.2394
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1268
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1127
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0986
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.068,
+      "category_type": "mid"
+    },
+    "tdokchcfhy": {
+      "folios": [
+        "f52r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.1833,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1167,
+        0.0,
+        0.1333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0833,
+        0.0,
+        0.0,
+        0.05,
+        0.05
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.1833
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1333
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1167
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.175,
+      "category_type": "mid"
+    },
+    "kodam": {
+      "folios": [
+        "f53r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1818,
+        0.0,
+        0.0,
+        0.0909,
+        0.0727,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1091,
+        0.0,
+        0.1818,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1636,
+        0.0,
+        0.0364,
+        0.0545,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1091
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.1818
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1818
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1636
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1091
+        },
+        {
+          "prefix": "yk",
+          "weight": 0.1091
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.125,
+      "category_type": "mid"
+    },
+    "podaiin": {
+      "folios": [
+        "f54r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2564,
+        0.0641,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0769,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0769,
+        0.0,
+        0.1154,
+        0.0769,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2564
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1667
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1154
+        },
+        {
+          "prefix": "do",
+          "weight": 0.0769
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.135,
+      "category_type": "mid"
+    },
+    "pcheodar": {
+      "folios": [
+        "f54v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2714,
+        0.0429,
+        0.0714,
+        0.0571,
+        0.1571,
+        0.0429,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0857,
+        0.0571,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2143,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2714
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.2143
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1571
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0857
+        },
+        {
+          "prefix": "cp",
+          "weight": 0.0714
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.993,
+      "category_type": "mid"
+    },
+    "otchal": {
+      "folios": [
+        "f56r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4615,
+        0.0,
+        0.0,
+        0.0,
+        0.0577,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0865,
+        0.0481,
+        0.0,
+        0.0,
+        0.0288,
+        0.0,
+        0.0481,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0769,
+        0.0,
+        0.0288,
+        0.1058,
+        0.0,
+        0.0577,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4615
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1058
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.0865
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0769
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0577
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.639,
+      "category_type": "mid"
+    },
+    "kcheat": {
+      "folios": [
+        "f56v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2875,
+        0.05,
+        0.0,
+        0.025,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.125,
+        0.0,
+        0.0,
+        0.1625,
+        0.0,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2875
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1625
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.15
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.125
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.983,
+      "category_type": "mid"
+    },
+    "kor": {
+      "folios": [
+        "f58r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0505,
+        0.0614,
+        0.0,
+        0.2744,
+        0.0,
+        0.0,
+        0.0,
+        0.1155,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0578,
+        0.0686,
+        0.1191,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1191,
+        0.0,
+        0.0,
+        0.1336,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2744
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1336
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1191
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1191
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1155
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.112,
+      "category_type": "hub"
+    },
+    "tol": {
+      "folios": [
+        "f58v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0608,
+        0.0456,
+        0.0,
+        0.1489,
+        0.0,
+        0.0,
+        0.0,
+        0.0912,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1489,
+        0.0395,
+        0.0426,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2553,
+        0.0,
+        0.0,
+        0.1155,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0517
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2553
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1489
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1489
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1155
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0912
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.044,
+      "category_type": "hub"
+    },
+    "kocheor": {
+      "folios": [
+        "f5v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2766,
+        0.0,
+        0.0,
+        0.0426,
+        0.234,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0213,
+        0.0,
+        0.0426,
+        0.0,
+        0.1489,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0851,
+        0.0,
+        0.0,
+        0.0851,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0638,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2766
+        },
+        {
+          "prefix": "da",
+          "weight": 0.234
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1489
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0851
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0851
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.937,
+      "category_type": "isolate"
+    },
+    "foar": {
+      "folios": [
+        "f6r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3281,
+        0.0469,
+        0.0,
+        0.125,
+        0.1094,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0625,
+        0.0625,
+        0.0625,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0469,
+        0.0,
+        0.0,
+        0.1562,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3281
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1562
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.125
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1094
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0625
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.971,
+      "category_type": "mid"
+    },
+    "koar": {
+      "folios": [
+        "f6v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3011,
+        0.0,
+        0.0,
+        0.1398,
+        0.0968,
+        0.0,
+        0.0538,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.043,
+        0.0,
+        0.0538,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.172,
+        0.0,
+        0.0,
+        0.0645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0753,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3011
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.172
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1398
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0968
+        },
+        {
+          "prefix": "yc",
+          "weight": 0.0753
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.022,
+      "category_type": "mid"
+    },
+    "fchodaiin": {
+      "folios": [
+        "f7r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4286,
+        0.0,
+        0.0,
+        0.0,
+        0.0714,
+        0.0357,
+        0.0,
+        0.0,
+        0.0,
+        0.0536,
+        0.0536,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0714,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.125,
+        0.0,
+        0.0,
+        0.1607,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4286
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1607
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.125
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0714
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0714
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.745,
+      "category_type": "mid"
+    },
+    "polyshy": {
+      "folios": [
+        "f7v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2958,
+        0.0,
+        0.0,
+        0.0423,
+        0.1408,
+        0.0,
+        0.0986,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0986,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0986,
+        0.0,
+        0.0,
+        0.1972,
+        0.0,
+        0.0282,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2958
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1972
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1408
+        },
+        {
+          "prefix": "do",
+          "weight": 0.0986
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0986
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.988,
+      "category_type": "mid"
+    },
+    "poalshsal": {
+      "folios": [
+        "f87r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1975,
+        0.0617,
+        0.0,
+        0.0988,
+        0.0864,
+        0.0617,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0617,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0617,
+        0.0988,
+        0.0,
+        0.1975,
+        0.0741,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.1975
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1975
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0988
+        },
+        {
+          "prefix": "sa",
+          "weight": 0.0988
+        },
+        {
+          "prefix": "da",
+          "weight": 0.0864
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.16,
+      "category_type": "mid"
+    },
+    "pcheey": {
+      "folios": [
+        "f87v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1404,
+        0.0,
+        0.0,
+        0.193,
+        0.1053,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0877,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2281,
+        0.0877,
+        0.0877,
+        0.0702,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2281
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.193
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1404
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1053
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.0877
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.205,
+      "category_type": "mid"
+    },
+    "otorchety": {
+      "folios": [
+        "f88r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3358,
+        0.0,
+        0.0,
+        0.0,
+        0.0803,
+        0.0,
+        0.0438,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0657,
+        0.0511,
+        0.0949,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1168,
+        0.1022,
+        0.0,
+        0.1095,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3358
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1168
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1095
+        },
+        {
+          "prefix": "sa",
+          "weight": 0.1022
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0949
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.015,
+      "category_type": "mid"
+    },
+    "okolyd": {
+      "folios": [
+        "f88v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2838,
+        0.0,
+        0.0,
+        0.0,
+        0.1689,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0473,
+        0.0338,
+        0.1149,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1959,
+        0.0338,
+        0.0,
+        0.0878,
+        0.0338,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2838
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1959
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1689
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1149
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0878
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.897,
+      "category_type": "mid"
+    },
+    "okchshy": {
+      "folios": [
+        "f89r1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3,
+        0.02,
+        0.0,
+        0.0,
+        0.24,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0333,
+        0.0267,
+        0.0333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2067,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0333
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3
+        },
+        {
+          "prefix": "da",
+          "weight": 0.24
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.2067
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1067
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0333
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.68,
+      "category_type": "mid"
+    },
+    "odory": {
+      "folios": [
+        "f89r2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3319,
+        0.0,
+        0.0,
+        0.0,
+        0.1595,
+        0.0,
+        0.0388,
+        0.0,
+        0.0,
+        0.0,
+        0.0431,
+        0.0,
+        0.0,
+        0.1293,
+        0.0,
+        0.056,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1638,
+        0.0,
+        0.0,
+        0.0776,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3319
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1638
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1595
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1293
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0776
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.91,
+      "category_type": "mid"
+    },
+    "okoraldy": {
+      "folios": [
+        "f89v1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2192,
+        0.0,
+        0.0,
+        0.0479,
+        0.226,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1096,
+        0.0479,
+        0.0616,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.137,
+        0.0479,
+        0.0,
+        0.1027,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "da",
+          "weight": 0.226
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.2192
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.137
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1096
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1027
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.036,
+      "category_type": "mid"
+    },
+    "choeesy": {
+      "folios": [
+        "f89v2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3021,
+        0.0,
+        0.0,
+        0.0,
+        0.2344,
+        0.0,
+        0.0469,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1354,
+        0.0,
+        0.0573,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1146,
+        0.0,
+        0.0,
+        0.0677,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0417
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3021
+        },
+        {
+          "prefix": "da",
+          "weight": 0.2344
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1354
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1146
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.0677
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.884,
+      "category_type": "mid"
+    },
+    "pshol": {
+      "folios": [
+        "f8r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3934,
+        0.041,
+        0.0,
+        0.041,
+        0.1557,
+        0.041,
+        0.041,
+        0.0,
+        0.0,
+        0.0492,
+        0.0,
+        0.0,
+        0.0,
+        0.0574,
+        0.0,
+        0.0246,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1557,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3934
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1557
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1557
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0574
+        },
+        {
+          "prefix": "kc",
+          "weight": 0.0492
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.702,
+      "category_type": "mid"
+    },
+    "cthod": {
+      "folios": [
+        "f8v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.4245,
+        0.0,
+        0.0,
+        0.0943,
+        0.1038,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0283,
+        0.0,
+        0.0,
+        0.0,
+        0.0377,
+        0.0,
+        0.0755,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0283,
+        0.0,
+        0.1698,
+        0.0377,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.4245
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1698
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1038
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.0943
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0755
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.661,
+      "category_type": "mid"
+    },
+    "poleeol": {
+      "folios": [
+        "f90r1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1739,
+        0.0,
+        0.0,
+        0.0,
+        0.087,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1304,
+        0.0,
+        0.0435,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2899,
+        0.0,
+        0.0,
+        0.1594,
+        0.0,
+        0.0,
+        0.058,
+        0.0,
+        0.0,
+        0.058
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2899
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1739
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1594
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1304
+        },
+        {
+          "prefix": "da",
+          "weight": 0.087
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.953,
+      "category_type": "mid"
+    },
+    "toealchs": {
+      "folios": [
+        "f90r2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0769,
+        0.0,
+        0.1282,
+        0.0769,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0769,
+        0.0769,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2821,
+        0.0769,
+        0.0,
+        0.0769,
+        0.0769,
+        0.0,
+        0.0513,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.2821
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1282
+        },
+        {
+          "prefix": "ar",
+          "weight": 0.0769
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.0769
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0769
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.107,
+      "category_type": "mid"
+    },
+    "pcheor": {
+      "folios": [
+        "f90v1"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2162,
+        0.0,
+        0.0,
+        0.0946,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1216,
+        0.1081,
+        0.0541,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1622,
+        0.0,
+        0.0,
+        0.2432,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "sh",
+          "weight": 0.2432
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.2162
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1622
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1216
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.1081
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.111,
+      "category_type": "mid"
+    },
+    "cphdaithy": {
+      "folios": [
+        "f90v2"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1967,
+        0.0,
+        0.0656,
+        0.0492,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0492,
+        0.0,
+        0.0656,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1475,
+        0.0656,
+        0.0,
+        0.3115,
+        0.0,
+        0.0492,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "sh",
+          "weight": 0.3115
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1967
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1475
+        },
+        {
+          "prefix": "cp",
+          "weight": 0.0656
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0656
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.949,
+      "category_type": "mid"
+    },
+    "kodshol": {
+      "folios": [
+        "f93r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2614,
+        0.0682,
+        0.0,
+        0.1023,
+        0.0739,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0398,
+        0.0398,
+        0.0795,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0795,
+        0.0,
+        0.0,
+        0.2159,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0398,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2614
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.2159
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1023
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0795
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.0795
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.998,
+      "category_type": "mid"
+    },
+    "possheody": {
+      "folios": [
+        "f93v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1467,
+        0.0533,
+        0.0,
+        0.1467,
+        0.1333,
+        0.0533,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1867,
+        0.0,
+        0.0,
+        0.1067,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "qo",
+          "weight": 0.1867
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1467
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1467
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1333
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.1067
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.199,
+      "category_type": "mid"
+    },
+    "tor": {
+      "folios": [
+        "f96r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3165,
+        0.0886,
+        0.0253,
+        0.1013,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.038,
+        0.1266,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0886,
+        0.0,
+        0.0,
+        0.1519,
+        0.0,
+        0.0,
+        0.0633,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3165
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.1519
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1266
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1013
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.0886
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.958,
+      "category_type": "hub"
+    },
+    "psheoas": {
+      "folios": [
+        "f96v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2326,
+        0.1163,
+        0.0,
+        0.1628,
+        0.1163,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0465,
+        0.0465,
+        0.093,
+        0.0,
+        0.0698,
+        0.1163,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2326
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1628
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.1163
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1163
+        },
+        {
+          "prefix": "so",
+          "weight": 0.1163
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.167,
+      "category_type": "mid"
+    },
+    "okoramog": {
+      "folios": [
+        "f99r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.1944,
+        0.1042,
+        0.0,
+        0.0,
+        0.1042,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2569,
+        0.0486,
+        0.0486,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1042,
+        0.0,
+        0.0,
+        0.0903,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0486
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ok",
+          "weight": 0.2569
+        },
+        {
+          "prefix": "ch",
+          "weight": 0.1944
+        },
+        {
+          "prefix": "ck",
+          "weight": 0.1042
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1042
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1042
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.067,
+      "category_type": "mid"
+    },
+    "otaramy": {
+      "folios": [
+        "f99v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0898,
+        0.0,
+        0.0,
+        0.0,
+        0.1018,
+        0.0,
+        0.0479,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2814,
+        0.1257,
+        0.0958,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1976,
+        0.0,
+        0.0,
+        0.0599,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ok",
+          "weight": 0.2814
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1976
+        },
+        {
+          "prefix": "ol",
+          "weight": 0.1257
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1018
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0958
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.053,
+      "category_type": "mid"
+    },
+    "tydlo": {
+      "folios": [
+        "f9r"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.3651,
+        0.0,
+        0.0,
+        0.1587,
+        0.0635,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0952,
+        0.0,
+        0.0794,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0794,
+        0.0317,
+        0.0,
+        0.127,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.3651
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1587
+        },
+        {
+          "prefix": "sh",
+          "weight": 0.127
+        },
+        {
+          "prefix": "ok",
+          "weight": 0.0952
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.0794
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 2.981,
+      "category_type": "mid"
+    },
+    "fochor": {
+      "folios": [
+        "f9v"
+      ],
+      "folio_count": 1,
+      "mean_prefix_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.2759,
+        0.0,
+        0.0,
+        0.1034,
+        0.1897,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0517,
+        0.0,
+        0.1207,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1379,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0517,
+        0.0,
+        0.0,
+        0.069
+      ],
+      "dominant_prefixes": [
+        {
+          "prefix": "ch",
+          "weight": 0.2759
+        },
+        {
+          "prefix": "da",
+          "weight": 0.1897
+        },
+        {
+          "prefix": "qo",
+          "weight": 0.1379
+        },
+        {
+          "prefix": "ot",
+          "weight": 0.1207
+        },
+        {
+          "prefix": "ct",
+          "weight": 0.1034
+        }
+      ],
+      "within_category_variance": 0.0,
+      "mean_entropy": 3.059,
+      "category_type": "mid"
+    }
+  },
+  "summary": {
+    "total_categories": 109,
+    "prefix_dimensions": 33,
+    "hub_categories": 8,
+    "isolate_categories": 8,
+    "hub_mean_variance": 0.000496,
+    "isolate_mean_variance": null
+  }
+}

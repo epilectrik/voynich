@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "generated": "2025-12-30T23:30:32.323011",
+    "source": "annotation_data_manager",
+    "cohesion_thresholds": {
+      "significant": 0.7,
+      "suggestive": 0.55
+    }
+  },
+  "group_cohesion": {
+    "same_cluster": {
+      "n_records": 2,
+      "cohesion_score": 1.0,
+      "outlier_rate": null,
+      "is_hypothesis": true,
+      "is_foil": false
+    },
+    "same_hub_type": {
+      "n_records": 5,
+      "cohesion_score": 1.0,
+      "outlier_rate": null,
+      "is_hypothesis": true,
+      "is_foil": false
+    },
+    "random": {
+      "n_records": 11,
+      "cohesion_score": 0.667,
+      "outlier_rate": 1.0,
+      "is_hypothesis": false,
+      "is_foil": false
+    },
+    "same_category": {
+      "n_records": 4,
+      "cohesion_score": 1.0,
+      "outlier_rate": null,
+      "is_hypothesis": true,
+      "is_foil": false
+    },
+    "same_prefix": {
+      "n_records": 1,
+      "cohesion_score": null,
+      "outlier_rate": 1.0,
+      "is_hypothesis": true,
+      "is_foil": false
+    },
+    "stratified_random": {
+      "n_records": 2,
+      "cohesion_score": 1.0,
+      "outlier_rate": null,
+      "is_hypothesis": false,
+      "is_foil": false
+    }
+  }
+}

@@ -1,0 +1,92 @@
+Loading Voynich corpus...
+Loaded 37957 words from 225 folios
+
+============================================================
+VOYNICH MANUSCRIPT STATISTICAL ANALYSIS
+============================================================
+
+--- Basic Statistics ---
+  total_words: 37957
+  unique_words: 8151
+  total_characters: 191959
+  unique_characters: 21
+  num_folios: 225
+  languages: ['NA', 'B', 'A']
+  hands: ['NA', '1', 'X', '4', '5', 'Y', '2', '3']
+  sections: ['B', 'S', 'H', 'A', 'P', 'Z', 'C', 'T']
+
+--- Entropy Measures ---
+  H1 (character entropy): 3.8707 bits
+  H2 (conditional entropy): 2.3745 bits
+  Word entropy: 10.4680 bits
+  Note: Natural languages typically have H2 between 3-4
+        Voynichese is known for H2 around 2 (highly predictable)
+
+--- Zipf's Law ---
+  Zipf coefficient: -1.0057
+  Note: Natural language ~ -1.0
+
+--- Top 10 Most Frequent Words ---
+  daiin: 863
+  ol: 537
+  chedy: 501
+  aiin: 469
+  shedy: 426
+  chol: 396
+  or: 363
+  ar: 349
+  chey: 344
+  dar: 318
+
+--- Top 10 Most Frequent Characters ---
+  'o': 25484
+  'e': 20084
+  'h': 17865
+  'y': 17678
+  'a': 14285
+  'c': 13322
+  'd': 12991
+  'i': 11737
+  'k': 10945
+  'l': 10527
+
+--- Word Length Distribution ---
+  Length 0: 17
+  Length 1: 801
+  Length 2: 2286
+  Length 3: 3543
+  Length 4: 6846
+  Length 5: 9626
+  Length 6: 7589
+  Length 7: 4488
+  Length 8: 1803
+  Length 9: 670
+  Length 10: 204
+  Length 11: 47
+  Length 12: 25
+  Length 13: 8
+  Length 14: 2
+
+--- First Character Distribution (Top 10) ---
+  'o': 8538
+  'c': 6921
+  'q': 5393
+  's': 4555
+  'd': 3674
+  'a': 1957
+  'y': 1910
+  'l': 1371
+  'k': 1166
+  't': 981
+
+--- Last Character Distribution (Top 10) ---
+  'y': 15427
+  'n': 6064
+  'l': 5912
+  'r': 5689
+  's': 1348
+  'o': 1173
+  'm': 1061
+  'd': 635
+  'e': 92
+  'a': 91

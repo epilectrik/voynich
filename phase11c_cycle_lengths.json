@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "phase": "11C",
+    "title": "Cycle Length Analysis",
+    "timestamp": "2025-12-31T12:51:31.867211"
+  },
+  "cycle_length_distribution": {
+    "1": 21368,
+    "2": 17124,
+    "3": 13221,
+    "4": 12325,
+    "5": 9936,
+    "6": 8728,
+    "7": 7829,
+    "8": 7220,
+    "9": 6677,
+    "10": 6430,
+    "11": 4231,
+    "12": 2533,
+    "13": 974,
+    "14": 389,
+    "15": 143
+  },
+  "preferred_lengths": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "alignment_with_known": {
+    "tria_prima_3": 13221,
+    "elemental_4": 12325,
+    "planetary_7": 7829,
+    "zodiacal_12": 2533
+  },
+  "alignment_scores": {
+    "tria_prima_3": 2.22,
+    "elemental_4": 2.07,
+    "planetary_7": 1.31,
+    "zodiacal_12": 0.42
+  },
+  "interpretation": "Strong alignment with: tria_prima_3, elemental_4. Cycle structure matches alchemical patterns."
+}

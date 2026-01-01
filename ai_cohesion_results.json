@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "assessor": "AI (Claude)",
+    "date": "2025-12-31",
+    "method": "Visual inspection of plant illustrations for similarity in leaf shape, root type, growth form, flower type"
+  },
+  "assessments": [
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": ["f58v", "f10v", "f21r", "f52v"],
+      "cohesion_score": 0.0,
+      "notes": "Very different leaf shapes (round vs wavy vs oval vs lanceolate), different growth forms"
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": ["f35v", "f19r", "f21r", "f52v"],
+      "cohesion_score": 0.0,
+      "notes": "Dramatically different leaf types (star vs fern vs oval vs pointed)"
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": ["f58v", "f10v", "f19r", "f52v"],
+      "cohesion_score": 0.0,
+      "notes": "Different leaf shapes and structures"
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": ["f58v", "f10v", "f19r", "f21r"],
+      "cohesion_score": 0.0,
+      "notes": "Different leaf shapes and structures"
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": ["f10v", "f19r", "f21r", "f52v"],
+      "cohesion_score": 0.0,
+      "notes": "Different leaf shapes and structures"
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "support",
+      "folio_ids": ["f58r", "f42r"],
+      "cohesion_score": 0.5,
+      "notes": "Both have prominent roots, but leaf shapes different (lobed vs arrowhead)"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f10v", "f15r", "f22r", "f58r"],
+      "cohesion_score": 0.0,
+      "notes": "All different structures and leaf types"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f22r", "f24v", "f4v", "f53v"],
+      "cohesion_score": 0.0,
+      "notes": "Very different, f4v especially stylized/unusual"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f17r", "f37v", "f49v", "f51v"],
+      "cohesion_score": 0.0,
+      "notes": "All different leaf shapes and structures"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f11r", "f3v", "f53v", "f9r"],
+      "cohesion_score": 0.0,
+      "notes": "Different structures"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f18r", "f29v", "f36r", "f58v"],
+      "cohesion_score": 0.0,
+      "notes": "Different plants"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f11r", "f15r", "f2v", "f36r"],
+      "cohesion_score": 0.0,
+      "notes": "Very different, f2v has distinctive single large round leaf"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f10v", "f19r", "f30v", "f9v"],
+      "cohesion_score": 0.0,
+      "notes": "All different"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f25r", "f30v", "f4v", "f58r"],
+      "cohesion_score": 0.0,
+      "notes": "All different"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": ["f20v", "f21r", "f49v", "f9v"],
+      "cohesion_score": 0.0,
+      "notes": "All different"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "pchor",
+      "folio_ids": ["f19r", "f21r", "f52v"],
+      "cohesion_score": 0.0,
+      "notes": "All different leaf shapes (fern vs oval vs lanceolate)"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "folio_ids": ["f2v", "f29v"],
+      "cohesion_score": 0.0,
+      "notes": "Very different - f2v single huge round leaf vs f29v multiple serrated leaves"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "kshody",
+      "folio_ids": ["f5r", "f37v"],
+      "cohesion_score": 0.0,
+      "notes": "Very different - large wavy rosette vs tall triangular leaves"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "tshor",
+      "folio_ids": ["f15r", "f53v"],
+      "cohesion_score": 0.0,
+      "notes": "Different leaf shapes and structures"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "koaiin",
+      "folio_ids": ["f38v", "f3v"],
+      "cohesion_score": 0.0,
+      "notes": "Different structures"
+    }
+  ],
+  "summary": {
+    "same_hub_type": {
+      "n_groups": 6,
+      "mean_cohesion": 0.083,
+      "scores": [0.0, 0.0, 0.0, 0.0, 0.0, 0.5]
+    },
+    "random": {
+      "n_groups": 9,
+      "mean_cohesion": 0.0,
+      "scores": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "same_category": {
+      "n_groups": 5,
+      "mean_cohesion": 0.0,
+      "scores": [0.0, 0.0, 0.0, 0.0, 0.0]
+    }
+  }
+}

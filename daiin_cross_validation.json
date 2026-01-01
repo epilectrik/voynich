@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "phase": "A5",
+    "title": "Cross-Validation",
+    "timestamp": "2025-12-31T09:15:12.428162",
+    "dependencies": [
+      "A1",
+      "A2",
+      "A3",
+      "A4"
+    ]
+  },
+  "findings": {
+    "currier_a": {
+      "count": 477,
+      "mean_position": 0.525,
+      "std_position": 0.285,
+      "part_distribution": {
+        "part1": 145,
+        "part2": 152,
+        "part3": 180
+      }
+    },
+    "currier_b": {
+      "count": 405,
+      "mean_position": 0.486,
+      "std_position": 0.281,
+      "part_distribution": {
+        "part1": 134,
+        "part2": 144,
+        "part3": 127
+      }
+    },
+    "hub_entries": {
+      "count": 49,
+      "mean_position": 0.504,
+      "std_position": 0.277,
+      "part_distribution": {
+        "part1": 14,
+        "part2": 18,
+        "part3": 17
+      }
+    },
+    "isolate_entries": {
+      "count": 870,
+      "mean_position": 0.504,
+      "std_position": 0.283,
+      "part_distribution": {
+        "part1": 279,
+        "part2": 292,
+        "part3": 299
+      }
+    },
+    "ks_test": {
+      "statistic": 0.0826,
+      "p_value": 0.0941,
+      "consistent_across_currier": "True"
+    }
+  },
+  "summary": {
+    "key_results": [
+      "Currier A: 477 occurrences, mean pos 0.525",
+      "Currier B: 405 occurrences, mean pos 0.486",
+      "KS test p-value: 0.0941 (consistent behavior)"
+    ],
+    "implications": [
+      "'daiin' behaves consistently across Currier A and B"
+    ]
+  }
+}

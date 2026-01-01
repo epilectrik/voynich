@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "phase": "15A",
+    "title": "STATE-C Internal Topology",
+    "timestamp": "2025-12-31T15:02:29.577719"
+  },
+  "total_nodes": 29,
+  "active_internal_nodes": 29,
+  "internal_connectivity": {
+    "fully_connected": true,
+    "total_internal_edges": 27249,
+    "mean_internal_degree": 939.62,
+    "internal_clusters": 1,
+    "cluster_sizes": {
+      "cluster_0": 29
+    }
+  },
+  "node_roles": {
+    "hubs": [
+      {
+        "node": "k",
+        "degree": 9694
+      },
+      {
+        "node": "h",
+        "degree": 5937
+      },
+      {
+        "node": "e",
+        "degree": 4362
+      },
+      {
+        "node": "t",
+        "degree": 2748
+      },
+      {
+        "node": "daiin",
+        "degree": 2741
+      },
+      {
+        "node": "ch",
+        "degree": 2596
+      },
+      {
+        "node": "ol",
+        "degree": 2146
+      }
+    ],
+    "hubs_count": 7,
+    "spokes": [
+      {
+        "node": "d",
+        "degree": 1117
+      },
+      {
+        "node": "chey",
+        "degree": 1095
+      },
+      {
+        "node": "s",
+        "degree": 1080
+      },
+      {
+        "node": "l",
+        "degree": 1066
+      },
+      {
+        "node": "dar",
+        "degree": 1063
+      },
+      {
+        "node": "r",
+        "degree": 1006
+      },
+      {
+        "node": "ee",
+        "degree": 937
+      },
+      {
+        "node": "dal",
+        "degree": 908
+      },
+      {
+        "node": "dy",
+        "degree": 895
+      },
+      {
+        "node": "shey",
+        "degree": 861
+      }
+    ],
+    "spokes_count": 14,
+    "bridges": [
+      {
+        "node": "chedy",
+        "degree": 1852
+      },
+      {
+        "node": "shedy",
+        "degree": 1675
+      },
+      {
+        "node": "o",
+        "degree": 1352
+      },
+      {
+        "node": "aiin",
+        "degree": 1300
+      },
+      {
+        "node": "ar",
+        "degree": 1287
+      },
+      {
+        "node": "chol",
+        "degree": 1272
+      },
+      {
+        "node": "or",
+        "degree": 1251
+      },
+      {
+        "node": "al",
+        "degree": 1196
+      }
+    ],
+    "bridges_count": 8
+  },
+  "internal_forbidden": {
+    "count": 17,
+    "examples": [
+      [
+        "shey",
+        "aiin"
+      ],
+      [
+        "shey",
+        "al"
+      ],
+      [
+        "shey",
+        "c"
+      ],
+      [
+        "chol",
+        "r"
+      ],
+      [
+        "chedy",
+        "ee"
+      ],
+      [
+        "dy",
+        "aiin"
+      ],
+      [
+        "dy",
+        "chey"
+      ],
+      [
+        "l",
+        "chol"
+      ],
+      [
+        "or",
+        "dal"
+      ],
+      [
+        "chey",
+        "chedy"
+      ],
+      [
+        "chey",
+        "shedy"
+      ],
+      [
+        "ar",
+        "dal"
+      ],
+      [
+        "c",
+        "ee"
+      ],
+      [
+        "he",
+        "t"
+      ],
+      [
+        "he",
+        "or"
+      ],
+      [
+        "shedy",
+        "aiin"
+      ],
+      [
+        "shedy",
+        "o"
+      ]
+    ]
+  },
+  "centrality_hierarchy": [
+    {
+      "rank": 1,
+      "node": "k",
+      "score": 4846.85
+    },
+    {
+      "rank": 2,
+      "node": "h",
+      "score": 2968.45
+    },
+    {
+      "rank": 3,
+      "node": "e",
+      "score": 2180.43
+    },
+    {
+      "rank": 4,
+      "node": "t",
+      "score": 1373.99
+    },
+    {
+      "rank": 5,
+      "node": "daiin",
+      "score": 1367.37
+    },
+    {
+      "rank": 6,
+      "node": "ch",
+      "score": 1294.45
+    },
+    {
+      "rank": 7,
+      "node": "ol",
+      "score": 1072.97
+    },
+    {
+      "rank": 8,
+      "node": "chedy",
+      "score": 925.97
+    },
+    {
+      "rank": 9,
+      "node": "shedy",
+      "score": 837.27
+    },
+    {
+      "rank": 10,
+      "node": "o",
+      "score": 675.93
+    },
+    {
+      "rank": 11,
+      "node": "ar",
+      "score": 643.26
+    },
+    {
+      "rank": 12,
+      "node": "aiin",
+      "score": 641.3
+    },
+    {
+      "rank": 13,
+      "node": "chol",
+      "score": 635.96
+    },
+    {
+      "rank": 14,
+      "node": "or",
+      "score": 624.25
+    },
+    {
+      "rank": 15,
+      "node": "al",
+      "score": 597.76
+    }
+  ],
+  "CORE_WITHIN_CORE": [
+    "k",
+    "h",
+    "e"
+  ],
+  "INTERPRETATION": "STATE-C has 1 internal cluster(s). 7 hub nodes dominate internal traffic. Core within core: ['k', 'h', 'e']. Fully connected internal structure."
+}

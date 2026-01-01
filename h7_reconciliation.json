@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "phase": "H7",
+    "title": "Reconciliation with Visual Correlations",
+    "timestamp": "2025-12-30T21:43:38.289853"
+  },
+  "prior_correlations": {
+    "ko_leaf": {
+      "V": 0.61,
+      "percentile": 83.6
+    },
+    "po_root": {
+      "V": 0.2,
+      "percentile": 0
+    }
+  },
+  "hub_vs_singleton_analysis": {
+    "hub_folios_coded": 2,
+    "isolate_folios_coded": 27,
+    "ko_prefix": {
+      "in_hubs": 0,
+      "in_isolates": 4,
+      "distribution": "ISOLATE_CONCENTRATED"
+    },
+    "po_prefix": {
+      "in_hubs": 0,
+      "in_isolates": 3,
+      "distribution": "ISOLATE_CONCENTRATED"
+    }
+  },
+  "interpretation": "Heading system classified as CATEGORY LABELS. Visual correlations (ko-leaf, po-root) should be interpreted at category level, not entity level. Correlations may reflect morphological marking of plant categories."
+}

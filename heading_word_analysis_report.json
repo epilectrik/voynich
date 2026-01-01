@@ -1,0 +1,1273 @@
+{
+  "metadata": {
+    "analysis": "Phase 17 Task 5: Heading Word Deep Analysis",
+    "corpus": "Currier A",
+    "timestamp": "2025-12-30T15:40:37.433210",
+    "valid_entries": 114
+  },
+  "known_candidate_inventory": {
+    "pchor": {
+      "total_occurrences": 7,
+      "in_currier_a": 7,
+      "in_currier_b": 0,
+      "part1_count": 5,
+      "part2_count": 2,
+      "part3_count": 0,
+      "entry_initial_count": 3,
+      "folios_containing": 7,
+      "part1_concentration": 0.714,
+      "entry_initial_rate": 0.429,
+      "prefix": "pc",
+      "suffix": "or",
+      "length": 5
+    },
+    "kooiin": {
+      "total_occurrences": 2,
+      "in_currier_a": 2,
+      "in_currier_b": 0,
+      "part1_count": 2,
+      "part2_count": 0,
+      "part3_count": 0,
+      "entry_initial_count": 2,
+      "folios_containing": 2,
+      "part1_concentration": 1.0,
+      "entry_initial_rate": 1.0,
+      "prefix": "ko",
+      "suffix": "iin",
+      "length": 6
+    },
+    "tshor": {
+      "total_occurrences": 3,
+      "in_currier_a": 3,
+      "in_currier_b": 0,
+      "part1_count": 3,
+      "part2_count": 0,
+      "part3_count": 0,
+      "entry_initial_count": 2,
+      "folios_containing": 3,
+      "part1_concentration": 1.0,
+      "entry_initial_rate": 0.667,
+      "prefix": "ts",
+      "suffix": "or",
+      "length": 5
+    }
+  },
+  "expanded_heading_detection": {
+    "high_part1_concentration": {
+      "criterion": ">70% of occurrences in Part 1",
+      "count": 30,
+      "candidates": [
+        {
+          "word": "chadaiin",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "ch",
+          "suffix": "aiin",
+          "length": 8
+        },
+        {
+          "word": "kshor",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "ks",
+          "suffix": "or",
+          "length": 5
+        },
+        {
+          "word": "otshol",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "ot",
+          "suffix": "ol",
+          "length": 6
+        },
+        {
+          "word": "scho",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "sc",
+          "suffix": "ho",
+          "length": 4
+        },
+        {
+          "word": "chykchy",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "ch",
+          "suffix": "hy",
+          "length": 7
+        },
+        {
+          "word": "chary",
+          "total": 4,
+          "part1_fraction": 1.0,
+          "part1_count": 4,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "ch",
+          "suffix": "ry",
+          "length": 5
+        },
+        {
+          "word": "octhody",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "oc",
+          "suffix": "dy",
+          "length": 7
+        },
+        {
+          "word": "opchor",
+          "total": 5,
+          "part1_fraction": 1.0,
+          "part1_count": 5,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 5,
+          "prefix": "op",
+          "suffix": "or",
+          "length": 6
+        },
+        {
+          "word": "tshor",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 2,
+          "folios": 3,
+          "prefix": "ts",
+          "suffix": "or",
+          "length": 5
+        },
+        {
+          "word": "ldy",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 3,
+          "prefix": "ld",
+          "suffix": "dy",
+          "length": 3
+        },
+        {
+          "word": "r*",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 0,
+          "entry_initial_count": 1,
+          "folios": 2,
+          "prefix": "r*",
+          "suffix": "r*",
+          "length": 2
+        },
+        {
+          "word": "orar",
+          "total": 7,
+          "part1_fraction": 0.857,
+          "part1_count": 6,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 5,
+          "prefix": "or",
+          "suffix": "ar",
+          "length": 4
+        },
+        {
+          "word": "cphar",
+          "total": 5,
+          "part1_fraction": 0.8,
+          "part1_count": 4,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 5,
+          "prefix": "cp",
+          "suffix": "ar",
+          "length": 5
+        },
+        {
+          "word": "ytchey",
+          "total": 5,
+          "part1_fraction": 0.8,
+          "part1_count": 4,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 5,
+          "prefix": "yt",
+          "suffix": "ey",
+          "length": 6
+        },
+        {
+          "word": "okody",
+          "total": 5,
+          "part1_fraction": 0.8,
+          "part1_count": 4,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 5,
+          "prefix": "ok",
+          "suffix": "dy",
+          "length": 5
+        },
+        {
+          "word": "odain",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "od",
+          "suffix": "ain",
+          "length": 5
+        },
+        {
+          "word": "shom",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "sh",
+          "suffix": "om",
+          "length": 4
+        },
+        {
+          "word": "pcho",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "pc",
+          "suffix": "ho",
+          "length": 4
+        },
+        {
+          "word": "ychy",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "yc",
+          "suffix": "hy",
+          "length": 4
+        },
+        {
+          "word": "dl",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "dl",
+          "suffix": "dl",
+          "length": 2
+        },
+        {
+          "word": "qotchar",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "qo",
+          "suffix": "ar",
+          "length": 7
+        },
+        {
+          "word": "chcphy",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "ch",
+          "suffix": "hy",
+          "length": 6
+        },
+        {
+          "word": "qod",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "qo",
+          "suffix": "od",
+          "length": 3
+        },
+        {
+          "word": "oral",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "or",
+          "suffix": "al",
+          "length": 4
+        },
+        {
+          "word": "cheoky",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "ch",
+          "suffix": "ky",
+          "length": 6
+        },
+        {
+          "word": "rar",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 0,
+          "part3_count": 1,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "ra",
+          "suffix": "ar",
+          "length": 3
+        },
+        {
+          "word": "qoteody",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "qo",
+          "suffix": "dy",
+          "length": 7
+        },
+        {
+          "word": "qoeol",
+          "total": 4,
+          "part1_fraction": 0.75,
+          "part1_count": 3,
+          "part2_count": 1,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 4,
+          "prefix": "qo",
+          "suffix": "ol",
+          "length": 5
+        },
+        {
+          "word": "shod",
+          "total": 7,
+          "part1_fraction": 0.714,
+          "part1_count": 5,
+          "part2_count": 2,
+          "part3_count": 0,
+          "entry_initial_count": 0,
+          "folios": 7,
+          "prefix": "sh",
+          "suffix": "od",
+          "length": 4
+        },
+        {
+          "word": "pchor",
+          "total": 7,
+          "part1_fraction": 0.714,
+          "part1_count": 5,
+          "part2_count": 2,
+          "part3_count": 0,
+          "entry_initial_count": 3,
+          "folios": 7,
+          "prefix": "pc",
+          "suffix": "or",
+          "length": 5
+        }
+      ]
+    },
+    "part1_only": {
+      "criterion": "100% in Part 1, min 2 occurrences",
+      "count": 11,
+      "candidates": [
+        {
+          "word": "opchor",
+          "count": 5,
+          "prefix": "op",
+          "suffix": "or",
+          "length": 6
+        },
+        {
+          "word": "chary",
+          "count": 4,
+          "prefix": "ch",
+          "suffix": "ry",
+          "length": 5
+        },
+        {
+          "word": "chadaiin",
+          "count": 3,
+          "prefix": "ch",
+          "suffix": "aiin",
+          "length": 8
+        },
+        {
+          "word": "kshor",
+          "count": 3,
+          "prefix": "ks",
+          "suffix": "or",
+          "length": 5
+        },
+        {
+          "word": "otshol",
+          "count": 3,
+          "prefix": "ot",
+          "suffix": "ol",
+          "length": 6
+        },
+        {
+          "word": "scho",
+          "count": 3,
+          "prefix": "sc",
+          "suffix": "ho",
+          "length": 4
+        },
+        {
+          "word": "chykchy",
+          "count": 3,
+          "prefix": "ch",
+          "suffix": "hy",
+          "length": 7
+        },
+        {
+          "word": "octhody",
+          "count": 3,
+          "prefix": "oc",
+          "suffix": "dy",
+          "length": 7
+        },
+        {
+          "word": "tshor",
+          "count": 3,
+          "prefix": "ts",
+          "suffix": "or",
+          "length": 5
+        },
+        {
+          "word": "ldy",
+          "count": 3,
+          "prefix": "ld",
+          "suffix": "dy",
+          "length": 3
+        },
+        {
+          "word": "r*",
+          "count": 3,
+          "prefix": "r*",
+          "suffix": "r*",
+          "length": 2
+        }
+      ]
+    },
+    "entry_initial": {
+      "criterion": "Appears entry-initial 2+ times",
+      "count": 4,
+      "candidates": [
+        {
+          "word": "pchor",
+          "entry_initial_count": 3,
+          "total_occurrences": 7,
+          "entry_initial_rate": 0.429,
+          "prefix": "pc",
+          "suffix": "or"
+        },
+        {
+          "word": "kooiin",
+          "entry_initial_count": 2,
+          "total_occurrences": 2,
+          "entry_initial_rate": 1.0,
+          "prefix": "ko",
+          "suffix": "iin"
+        },
+        {
+          "word": "kshody",
+          "entry_initial_count": 2,
+          "total_occurrences": 3,
+          "entry_initial_rate": 0.667,
+          "prefix": "ks",
+          "suffix": "dy"
+        },
+        {
+          "word": "tshor",
+          "entry_initial_count": 2,
+          "total_occurrences": 3,
+          "entry_initial_rate": 0.667,
+          "prefix": "ts",
+          "suffix": "or"
+        }
+      ]
+    }
+  },
+  "structural_patterns": {
+    "length_statistics": {
+      "mean": 4.9,
+      "std": 1.49,
+      "min": 2,
+      "max": 8,
+      "mode": 5
+    },
+    "prefix_distribution": [
+      [
+        "ch",
+        5
+      ],
+      [
+        "qo",
+        4
+      ],
+      [
+        "or",
+        2
+      ],
+      [
+        "sh",
+        2
+      ],
+      [
+        "pc",
+        2
+      ],
+      [
+        "ks",
+        1
+      ],
+      [
+        "ot",
+        1
+      ],
+      [
+        "sc",
+        1
+      ],
+      [
+        "oc",
+        1
+      ],
+      [
+        "op",
+        1
+      ]
+    ],
+    "suffix_distribution": [
+      [
+        "or",
+        4
+      ],
+      [
+        "dy",
+        4
+      ],
+      [
+        "ar",
+        4
+      ],
+      [
+        "hy",
+        3
+      ],
+      [
+        "ol",
+        2
+      ],
+      [
+        "ho",
+        2
+      ],
+      [
+        "od",
+        2
+      ],
+      [
+        "aiin",
+        1
+      ],
+      [
+        "ry",
+        1
+      ],
+      [
+        "r*",
+        1
+      ]
+    ],
+    "structural_diversity": {
+      "prefix_concentration": 0.167,
+      "suffix_concentration": 0.133,
+      "is_diverse": true,
+      "interpretation": "Structurally DIVERSE (suggesting proper names)"
+    }
+  },
+  "heading_body_relationship": {
+    "entries_with_heading": 66,
+    "entries_without_heading": 48,
+    "part2_prefix_after_heading": [
+      [
+        "ch",
+        546
+      ],
+      [
+        "sh",
+        272
+      ],
+      [
+        "da",
+        239
+      ],
+      [
+        "qo",
+        239
+      ],
+      [
+        "ok",
+        162
+      ],
+      [
+        "ct",
+        112
+      ],
+      [
+        "ot",
+        108
+      ],
+      [
+        "ol",
+        79
+      ],
+      [
+        "do",
+        74
+      ],
+      [
+        "yk",
+        50
+      ]
+    ],
+    "part3_suffix_after_heading": [
+      [
+        "ol",
+        404
+      ],
+      [
+        "aiin",
+        318
+      ],
+      [
+        "or",
+        302
+      ],
+      [
+        "hy",
+        247
+      ],
+      [
+        "dy",
+        183
+      ],
+      [
+        "ey",
+        166
+      ],
+      [
+        "ar",
+        136
+      ],
+      [
+        "al",
+        136
+      ],
+      [
+        "eey",
+        120
+      ],
+      [
+        "ho",
+        84
+      ]
+    ],
+    "heading_associated_prefixes": [
+      {
+        "prefix": "of",
+        "ratio": 4.22,
+        "with_heading_rate": 0.0024,
+        "without_heading_rate": 0.0006
+      },
+      {
+        "prefix": "oi",
+        "ratio": 3.61,
+        "with_heading_rate": 0.0041,
+        "without_heading_rate": 0.0011
+      },
+      {
+        "prefix": "ee",
+        "ratio": 3.31,
+        "with_heading_rate": 0.0038,
+        "without_heading_rate": 0.0011
+      },
+      {
+        "prefix": "lo",
+        "ratio": 3.31,
+        "with_heading_rate": 0.0038,
+        "without_heading_rate": 0.0011
+      },
+      {
+        "prefix": "qe",
+        "ratio": 3.01,
+        "with_heading_rate": 0.0017,
+        "without_heading_rate": 0.0006
+      },
+      {
+        "prefix": "et",
+        "ratio": 3.01,
+        "with_heading_rate": 0.0017,
+        "without_heading_rate": 0.0006
+      },
+      {
+        "prefix": "ka",
+        "ratio": 2.41,
+        "with_heading_rate": 0.0041,
+        "without_heading_rate": 0.0017
+      },
+      {
+        "prefix": "os",
+        "ratio": 2.41,
+        "with_heading_rate": 0.0041,
+        "without_heading_rate": 0.0017
+      },
+      {
+        "prefix": "am",
+        "ratio": 2.41,
+        "with_heading_rate": 0.0014,
+        "without_heading_rate": 0.0006
+      },
+      {
+        "prefix": "yd",
+        "ratio": 2.21,
+        "with_heading_rate": 0.0038,
+        "without_heading_rate": 0.0017
+      },
+      {
+        "prefix": "oe",
+        "ratio": 2.21,
+        "with_heading_rate": 0.0038,
+        "without_heading_rate": 0.0017
+      },
+      {
+        "prefix": "ke",
+        "ratio": 2.14,
+        "with_heading_rate": 0.011,
+        "without_heading_rate": 0.0051
+      },
+      {
+        "prefix": "rc",
+        "ratio": 1.81,
+        "with_heading_rate": 0.0021,
+        "without_heading_rate": 0.0011
+      },
+      {
+        "prefix": "ps",
+        "ratio": 1.81,
+        "with_heading_rate": 0.001,
+        "without_heading_rate": 0.0006
+      },
+      {
+        "prefix": "qc",
+        "ratio": 1.81,
+        "with_heading_rate": 0.001,
+        "without_heading_rate": 0.0006
+      }
+    ],
+    "interpretation": "66 entries have heading words in Part 1"
+  },
+  "one_to_one_test": {
+    "total_part1_vocabulary": 2309,
+    "unique_to_one_entry": {
+      "count": 1809,
+      "fraction": 0.783,
+      "top_examples": [
+        {
+          "word": "sa",
+          "entry_count": 1,
+          "prefix": "sa",
+          "suffix": "sa"
+        },
+        {
+          "word": "aj",
+          "entry_count": 1,
+          "prefix": "aj",
+          "suffix": "aj"
+        },
+        {
+          "word": "fy",
+          "entry_count": 1,
+          "prefix": "fy",
+          "suffix": "fy"
+        },
+        {
+          "word": "sm",
+          "entry_count": 1,
+          "prefix": "sm",
+          "suffix": "sm"
+        },
+        {
+          "word": "po",
+          "entry_count": 1,
+          "prefix": "po",
+          "suffix": "po"
+        },
+        {
+          "word": "to",
+          "entry_count": 1,
+          "prefix": "to",
+          "suffix": "to"
+        },
+        {
+          "word": "ds",
+          "entry_count": 1,
+          "prefix": "ds",
+          "suffix": "ds"
+        },
+        {
+          "word": "ka",
+          "entry_count": 1,
+          "prefix": "ka",
+          "suffix": "ka"
+        },
+        {
+          "word": "dd",
+          "entry_count": 1,
+          "prefix": "dd",
+          "suffix": "dd"
+        },
+        {
+          "word": "yd",
+          "entry_count": 1,
+          "prefix": "yd",
+          "suffix": "yd"
+        },
+        {
+          "word": "ls",
+          "entry_count": 1,
+          "prefix": "ls",
+          "suffix": "ls"
+        },
+        {
+          "word": "lr",
+          "entry_count": 1,
+          "prefix": "lr",
+          "suffix": "lr"
+        },
+        {
+          "word": "rs",
+          "entry_count": 1,
+          "prefix": "rs",
+          "suffix": "rs"
+        },
+        {
+          "word": "s*",
+          "entry_count": 1,
+          "prefix": "s*",
+          "suffix": "s*"
+        },
+        {
+          "word": "on",
+          "entry_count": 1,
+          "prefix": "on",
+          "suffix": "on"
+        },
+        {
+          "word": "ch",
+          "entry_count": 1,
+          "prefix": "ch",
+          "suffix": "ch"
+        },
+        {
+          "word": "are",
+          "entry_count": 1,
+          "prefix": "ar",
+          "suffix": "re"
+        },
+        {
+          "word": "ar*",
+          "entry_count": 1,
+          "prefix": "ar",
+          "suffix": "r*"
+        },
+        {
+          "word": "sh*",
+          "entry_count": 1,
+          "prefix": "sh",
+          "suffix": "h*"
+        },
+        {
+          "word": "scy",
+          "entry_count": 1,
+          "prefix": "sc",
+          "suffix": "cy"
+        }
+      ]
+    },
+    "in_few_entries_2_3": {
+      "count": 308,
+      "examples": [
+        {
+          "word": "ykal",
+          "entry_count": 3,
+          "prefix": "yk",
+          "suffix": "al"
+        },
+        {
+          "word": "shory",
+          "entry_count": 3,
+          "prefix": "sh",
+          "suffix": "ry"
+        },
+        {
+          "word": "sholdy",
+          "entry_count": 2,
+          "prefix": "sh",
+          "suffix": "dy"
+        },
+        {
+          "word": "ykor",
+          "entry_count": 3,
+          "prefix": "yk",
+          "suffix": "or"
+        },
+        {
+          "word": "sory",
+          "entry_count": 2,
+          "prefix": "so",
+          "suffix": "ry"
+        },
+        {
+          "word": "kain",
+          "entry_count": 2,
+          "prefix": "ka",
+          "suffix": "ain"
+        },
+        {
+          "word": "ory",
+          "entry_count": 3,
+          "prefix": "or",
+          "suffix": "ry"
+        },
+        {
+          "word": "ary",
+          "entry_count": 2,
+          "prefix": "ar",
+          "suffix": "ry"
+        },
+        {
+          "word": "sheky",
+          "entry_count": 2,
+          "prefix": "sh",
+          "suffix": "ky"
+        },
+        {
+          "word": "cthes",
+          "entry_count": 2,
+          "prefix": "ct",
+          "suffix": "es"
+        },
+        {
+          "word": "daraiin",
+          "entry_count": 2,
+          "prefix": "da",
+          "suffix": "aiin"
+        },
+        {
+          "word": "oteor",
+          "entry_count": 2,
+          "prefix": "ot",
+          "suffix": "or"
+        },
+        {
+          "word": "otear",
+          "entry_count": 2,
+          "prefix": "ot",
+          "suffix": "ar"
+        },
+        {
+          "word": "cthaiin",
+          "entry_count": 2,
+          "prefix": "ct",
+          "suffix": "aiin"
+        },
+        {
+          "word": "ydar",
+          "entry_count": 2,
+          "prefix": "yd",
+          "suffix": "ar"
+        },
+        {
+          "word": "sh",
+          "entry_count": 3,
+          "prefix": "sh",
+          "suffix": "sh"
+        },
+        {
+          "word": "chocthy",
+          "entry_count": 3,
+          "prefix": "ch",
+          "suffix": "hy"
+        },
+        {
+          "word": "okcho",
+          "entry_count": 2,
+          "prefix": "ok",
+          "suffix": "ho"
+        },
+        {
+          "word": "chadaiin",
+          "entry_count": 3,
+          "prefix": "ch",
+          "suffix": "aiin"
+        },
+        {
+          "word": "otchal",
+          "entry_count": 2,
+          "prefix": "ot",
+          "suffix": "al"
+        }
+      ]
+    },
+    "in_many_entries_4_plus": {
+      "count": 192,
+      "examples": [
+        {
+          "word": "daiin",
+          "entry_count": 83,
+          "prefix": "da",
+          "suffix": "aiin"
+        },
+        {
+          "word": "chol",
+          "entry_count": 48,
+          "prefix": "ch",
+          "suffix": "ol"
+        },
+        {
+          "word": "chor",
+          "entry_count": 47,
+          "prefix": "ch",
+          "suffix": "or"
+        },
+        {
+          "word": "dy",
+          "entry_count": 43,
+          "prefix": "dy",
+          "suffix": "dy"
+        },
+        {
+          "word": "shor",
+          "entry_count": 33,
+          "prefix": "sh",
+          "suffix": "or"
+        },
+        {
+          "word": "shol",
+          "entry_count": 32,
+          "prefix": "sh",
+          "suffix": "ol"
+        },
+        {
+          "word": "chy",
+          "entry_count": 30,
+          "prefix": "ch",
+          "suffix": "hy"
+        },
+        {
+          "word": "cthy",
+          "entry_count": 30,
+          "prefix": "ct",
+          "suffix": "hy"
+        },
+        {
+          "word": "or",
+          "entry_count": 29,
+          "prefix": "or",
+          "suffix": "or"
+        },
+        {
+          "word": "sho",
+          "entry_count": 27,
+          "prefix": "sh",
+          "suffix": "ho"
+        },
+        {
+          "word": "shy",
+          "entry_count": 26,
+          "prefix": "sh",
+          "suffix": "hy"
+        },
+        {
+          "word": "ol",
+          "entry_count": 25,
+          "prefix": "ol",
+          "suffix": "ol"
+        },
+        {
+          "word": "dain",
+          "entry_count": 25,
+          "prefix": "da",
+          "suffix": "ain"
+        },
+        {
+          "word": "dar",
+          "entry_count": 24,
+          "prefix": "da",
+          "suffix": "ar"
+        },
+        {
+          "word": "chey",
+          "entry_count": 24,
+          "prefix": "ch",
+          "suffix": "ey"
+        },
+        {
+          "word": "dal",
+          "entry_count": 23,
+          "prefix": "da",
+          "suffix": "al"
+        },
+        {
+          "word": "shey",
+          "entry_count": 21,
+          "prefix": "sh",
+          "suffix": "ey"
+        },
+        {
+          "word": "oty",
+          "entry_count": 21,
+          "prefix": "ot",
+          "suffix": "ty"
+        },
+        {
+          "word": "oky",
+          "entry_count": 19,
+          "prefix": "ok",
+          "suffix": "ky"
+        },
+        {
+          "word": "otol",
+          "entry_count": 18,
+          "prefix": "ot",
+          "suffix": "ol"
+        }
+      ]
+    },
+    "interpretation": {
+      "pattern": "MOSTLY_UNIQUE",
+      "suggests": "Proper names (unique identifiers)"
+    }
+  },
+  "summary": {
+    "total_heading_candidates": 30,
+    "part1_only_words": 11,
+    "entry_initial_words": 4,
+    "key_findings": [
+      "Known candidates (pchor, kooiin, tshor) confirmed as Part 1 concentrated",
+      "30 words have >70% Part 1 concentration",
+      "11 words appear ONLY in Part 1",
+      "Heading words are structurally diverse (suggesting proper names)",
+      "78.3% of Part 1 vocabulary is unique to single entries",
+      "Pattern suggests: Proper names (unique identifiers)"
+    ],
+    "top_heading_candidates": [
+      "chadaiin",
+      "kshor",
+      "otshol",
+      "scho",
+      "chykchy",
+      "chary",
+      "octhody",
+      "opchor",
+      "tshor",
+      "ldy",
+      "r*",
+      "orar",
+      "cphar",
+      "ytchey",
+      "okody"
+    ],
+    "constraints_for_decipherment": [
+      "Heading words concentrate in Part 1",
+      "Structural pattern: Structurally DIVERSE (suggesting proper names)",
+      "One-to-one pattern: MOSTLY_UNIQUE",
+      "Certain prefixes associate with headings"
+    ]
+  }
+}

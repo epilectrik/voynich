@@ -1,0 +1,1899 @@
+{
+  "timestamp": "2025-12-30T13:08:36.903612",
+  "summary": {
+    "total_matches": 34592,
+    "exact_matches": 8628,
+    "structural_matches": 13189,
+    "thematic_matches": 12775,
+    "recipe_parallels": 49650
+  },
+  "matches_by_category": {
+    "fumigation": [
+      {
+        "latin": "fumigare matricem",
+        "english": "fumigate the womb",
+        "pattern": "qokedy",
+        "type": "THEMATIC",
+        "count": 273,
+        "sections": {
+          "HERBAL": 40,
+          "BIOLOGICAL": 165,
+          "RECIPES": 68
+        },
+        "examples": [
+          "qokedy"
+        ]
+      },
+      {
+        "latin": "fumigare matricem",
+        "english": "fumigate the womb",
+        "pattern": "qokeedy",
+        "type": "THEMATIC",
+        "count": 306,
+        "sections": {
+          "HERBAL": 10,
+          "BIOLOGICAL": 154,
+          "RECIPES": 142
+        },
+        "examples": [
+          "qokeedy"
+        ]
+      },
+      {
+        "latin": "in sede fumigationis",
+        "english": "in the fumigation seat",
+        "pattern": "qokaiin",
+        "type": "STRUCTURAL",
+        "count": 263,
+        "sections": {
+          "HERBAL": 34,
+          "BIOLOGICAL": 88,
+          "RECIPES": 141
+        },
+        "examples": [
+          "qokaiin"
+        ]
+      },
+      {
+        "latin": "calefacere",
+        "english": "to heat/warm",
+        "pattern": "ke-",
+        "type": "EXACT",
+        "count": 365,
+        "sections": {
+          "HERBAL": 104,
+          "RECIPES": 200,
+          "ZODIAC": 3,
+          "BIOLOGICAL": 58
+        },
+        "examples": [
+          "kechy",
+          "keol",
+          "keor",
+          "keey",
+          "keeo"
+        ]
+      },
+      {
+        "latin": "calefacere",
+        "english": "to heat/warm",
+        "pattern": "kee-",
+        "type": "EXACT",
+        "count": 201,
+        "sections": {
+          "HERBAL": 47,
+          "RECIPES": 122,
+          "ZODIAC": 1,
+          "BIOLOGICAL": 31
+        },
+        "examples": [
+          "keey",
+          "keeees",
+          "keeo",
+          "keeor"
+        ]
+      }
+    ],
+    "womb_terms": [
+      {
+        "latin": "matrix",
+        "english": "womb/uterus",
+        "pattern": "qo-",
+        "type": "STRUCTURAL",
+        "count": 5261,
+        "sections": {
+          "HERBAL": 1041,
+          "RECIPES": 2571,
+          "ZODIAC": 14,
+          "BIOLOGICAL": 1635
+        },
+        "examples": [
+          "qotcham",
+          "qo",
+          "qopal",
+          "qokey",
+          "qoty",
+          "qoteeey",
+          "qotcho",
+          "qoky",
+          "qoy",
+          "qotaiin"
+        ]
+      },
+      {
+        "latin": "uterus",
+        "english": "womb",
+        "pattern": "qo-",
+        "type": "STRUCTURAL",
+        "count": 5261,
+        "sections": {
+          "HERBAL": 1041,
+          "RECIPES": 2571,
+          "ZODIAC": 14,
+          "BIOLOGICAL": 1635
+        },
+        "examples": [
+          "qotcham",
+          "qo",
+          "qopal",
+          "qokey",
+          "qoty",
+          "qoteeey",
+          "qotcho",
+          "qoky",
+          "qoy",
+          "qotaiin"
+        ]
+      }
+    ],
+    "menstrual": [
+      {
+        "latin": "menstruum",
+        "english": "menses/menstrual flow",
+        "pattern": "ol-",
+        "type": "STRUCTURAL",
+        "count": 1608,
+        "sections": {
+          "HERBAL": 267,
+          "RECIPES": 719,
+          "ZODIAC": 7,
+          "BIOLOGICAL": 615
+        },
+        "examples": [
+          "ol",
+          "oldain",
+          "oltchey",
+          "olsaiin",
+          "olchsy",
+          "olsheey"
+        ]
+      },
+      {
+        "latin": "emmenagogum",
+        "english": "emmenagogue (induces menstruation)",
+        "pattern": "chol",
+        "type": "THEMATIC",
+        "count": 804,
+        "sections": {
+          "HERBAL": 467,
+          "RECIPES": 294,
+          "ZODIAC": 13,
+          "BIOLOGICAL": 30
+        },
+        "examples": [
+          "chol",
+          "**chol",
+          "otchol"
+        ]
+      }
+    ],
+    "preparations": [
+      {
+        "latin": "lavare",
+        "english": "to wash",
+        "pattern": "lch",
+        "type": "EXACT",
+        "count": 731,
+        "sections": {
+          "HERBAL": 95,
+          "RECIPES": 362,
+          "ZODIAC": 5,
+          "BIOLOGICAL": 269
+        },
+        "examples": [
+          "dalchy",
+          "olchad",
+          "olchy",
+          "lchody",
+          "kodalchy",
+          "dolchey",
+          "dolchds",
+          "olchoiin",
+          "rchealcham",
+          "olchsy"
+        ]
+      },
+      {
+        "latin": "lavare",
+        "english": "to wash",
+        "pattern": "lche",
+        "type": "EXACT",
+        "count": 505,
+        "sections": {
+          "HERBAL": 41,
+          "RECIPES": 248,
+          "ZODIAC": 3,
+          "BIOLOGICAL": 213
+        },
+        "examples": [
+          "olcheol",
+          "qotolcheo",
+          "otolchey",
+          "orlchey",
+          "dolchey",
+          "dalchedy",
+          "otcholcheaiin",
+          "lchey",
+          "dolcheey",
+          "olchedy"
+        ]
+      },
+      {
+        "latin": "pessarium",
+        "english": "pessary (vaginal suppository)",
+        "pattern": "pch-",
+        "type": "STRUCTURAL",
+        "count": 254,
+        "sections": {
+          "HERBAL": 73,
+          "RECIPES": 142,
+          "BIOLOGICAL": 39
+        },
+        "examples": [
+          "pchar",
+          "pchy",
+          "pchey",
+          "pcheey",
+          "pcheoldom",
+          "pcheol",
+          "pchooiin",
+          "pchor"
+        ]
+      },
+      {
+        "latin": "oleum",
+        "english": "oil",
+        "pattern": "-ol",
+        "type": "EXACT",
+        "count": 3589,
+        "sections": {
+          "HERBAL": 1178,
+          "RECIPES": 1579,
+          "ZODIAC": 31,
+          "BIOLOGICAL": 801
+        },
+        "examples": [
+          "ol",
+          "otchol",
+          "chol",
+          "cfhol",
+          "kol",
+          "oteol",
+          "shol"
+        ]
+      },
+      {
+        "latin": "succus",
+        "english": "juice/sap",
+        "pattern": "sh-",
+        "type": "EXACT",
+        "count": 3237,
+        "sections": {
+          "HERBAL": 1021,
+          "RECIPES": 1410,
+          "ZODIAC": 33,
+          "BIOLOGICAL": 773
+        },
+        "examples": [
+          "shory",
+          "sholdy",
+          "shody",
+          "sheky",
+          "shod",
+          "sh",
+          "shodary",
+          "shol",
+          "shar"
+        ]
+      },
+      {
+        "latin": "decoctio",
+        "english": "decoction",
+        "pattern": "kee-",
+        "type": "STRUCTURAL",
+        "count": 201,
+        "sections": {
+          "HERBAL": 47,
+          "RECIPES": 122,
+          "ZODIAC": 1,
+          "BIOLOGICAL": 31
+        },
+        "examples": [
+          "keey",
+          "keeees",
+          "keeo",
+          "keeor"
+        ]
+      },
+      {
+        "latin": "pulvis",
+        "english": "powder",
+        "pattern": "dch",
+        "type": "STRUCTURAL",
+        "count": 341,
+        "sections": {
+          "HERBAL": 165,
+          "RECIPES": 131,
+          "ZODIAC": 7,
+          "BIOLOGICAL": 38
+        },
+        "examples": [
+          "dchor",
+          "dchar",
+          "dchol",
+          "dcho",
+          "dchaiin",
+          "dchy"
+        ]
+      }
+    ],
+    "timing": [
+      {
+        "latin": "luna crescente",
+        "english": "waxing moon",
+        "pattern": "ok-",
+        "type": "THEMATIC",
+        "count": 2485,
+        "sections": {
+          "HERBAL": 620,
+          "RECIPES": 1410,
+          "ZODIAC": 100,
+          "BIOLOGICAL": 355
+        },
+        "examples": [
+          "okchey",
+          "oksho",
+          "okol",
+          "okain",
+          "okaiir",
+          "okay",
+          "oky",
+          "okan",
+          "okchoy"
+        ]
+      },
+      {
+        "latin": "luna crescente",
+        "english": "waxing moon",
+        "pattern": "al-",
+        "type": "THEMATIC",
+        "count": 502,
+        "sections": {
+          "HERBAL": 76,
+          "RECIPES": 351,
+          "ZODIAC": 34,
+          "BIOLOGICAL": 41
+        },
+        "examples": [
+          "alaiin",
+          "als",
+          "alg",
+          "alys",
+          "aldy",
+          "al"
+        ]
+      },
+      {
+        "latin": "ante cibum",
+        "english": "before food",
+        "pattern": "ot-",
+        "type": "THEMATIC",
+        "count": 2428,
+        "sections": {
+          "HERBAL": 517,
+          "RECIPES": 1478,
+          "ZODIAC": 118,
+          "BIOLOGICAL": 315
+        },
+        "examples": [
+          "otchol",
+          "otairin",
+          "otcho",
+          "otol",
+          "oteey",
+          "otchal",
+          "otaiin",
+          "oteos",
+          "oteol",
+          "otoaiin"
+        ]
+      }
+    ],
+    "herbs": [
+      {
+        "latin": "artemisia",
+        "english": "mugwort",
+        "pattern": "ch-",
+        "type": "THEMATIC",
+        "count": 5977,
+        "sections": {
+          "HERBAL": 2103,
+          "RECIPES": 2943,
+          "ZODIAC": 111,
+          "BIOLOGICAL": 820
+        },
+        "examples": [
+          "chtaiin",
+          "chor",
+          "chodain",
+          "chocthy",
+          "chol",
+          "chear",
+          "chdy"
+        ]
+      }
+    ]
+  },
+  "recipe_parallels": [
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "ar",
+        "ataiin",
+        "shol",
+        "shory"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shol",
+          "sh-"
+        ],
+        [
+          "shory",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "ataiin",
+        "shol",
+        "shory",
+        "cthres"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shol",
+          "sh-"
+        ],
+        [
+          "shory",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shol",
+        "shory",
+        "cthres",
+        "y"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shol",
+          "sh-"
+        ],
+        [
+          "shory",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chtaiin",
+        "shar",
+        "are",
+        "cthar"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chtaiin",
+          "ch-"
+        ],
+        [
+          "cthar",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shar",
+        "are",
+        "cthar",
+        "cthar"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "cthar",
+          "ct-"
+        ],
+        [
+          "cthar",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "are",
+        "cthar",
+        "cthar",
+        "dan"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "cthar",
+          "ct-"
+        ],
+        [
+          "cthar",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "cthar",
+        "cthar",
+        "dan",
+        "syaiir"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "cthar",
+          "ct-"
+        ],
+        [
+          "cthar",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "sheky",
+        "or",
+        "ykaiin",
+        "shod"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "sheky",
+          "sh-"
+        ],
+        [
+          "shod",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "ykaiin",
+        "shod",
+        "cthoary",
+        "cthes"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "cthoary",
+          "ct-"
+        ],
+        [
+          "cthes",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shod",
+        "cthoary",
+        "cthes",
+        "daraiin"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "cthoary",
+          "ct-"
+        ],
+        [
+          "cthes",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "cthoary",
+        "cthes",
+        "daraiin",
+        "sa"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "cthoary",
+          "ct-"
+        ],
+        [
+          "cthes",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "dair",
+        "y",
+        "chear",
+        "cthaiin"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chear",
+          "ch-"
+        ],
+        [
+          "cthaiin",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "y",
+        "chear",
+        "cthaiin",
+        "cphar"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chear",
+          "ch-"
+        ],
+        [
+          "cthaiin",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chear",
+        "cthaiin",
+        "cphar",
+        "cfhaiin"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chear",
+          "ch-"
+        ],
+        [
+          "cthaiin",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shol",
+        "cphoy",
+        "oydar",
+        "sh"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shol",
+          "sh-"
+        ],
+        [
+          "sh",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "sh",
+        "s",
+        "cfhoaiin",
+        "shodary"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "sh",
+          "sh-"
+        ],
+        [
+          "shodary",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "cfhoaiin",
+        "shodary",
+        "yshey",
+        "shody"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shodary",
+          "sh-"
+        ],
+        [
+          "shody",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shodary",
+        "yshey",
+        "shody",
+        "okchoy"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shodary",
+          "sh-"
+        ],
+        [
+          "shody",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shody",
+        "okchoy",
+        "otchol",
+        "chocthy"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "otchol",
+          "ol"
+        ],
+        [
+          "chocthy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "okchoy",
+        "otchol",
+        "chocthy",
+        "oschy"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "otchol",
+          "ol"
+        ],
+        [
+          "chocthy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "otchol",
+        "chocthy",
+        "oschy",
+        "dain"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "otchol",
+          "ol"
+        ],
+        [
+          "chocthy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chocthy",
+        "oschy",
+        "dain",
+        "chor"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chocthy",
+          "ch-"
+        ],
+        [
+          "chor",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chocthy",
+        "oschy",
+        "dain",
+        "chor"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chocthy",
+          "ch-"
+        ],
+        [
+          "chor",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chocthy",
+        "oschy",
+        "dain",
+        "chor"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chocthy",
+          "ch-"
+        ],
+        [
+          "chor",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "daiin",
+        "shos",
+        "cfhol",
+        "shody"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shos",
+          "sh-"
+        ],
+        [
+          "shody",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shos",
+        "cfhol",
+        "shody",
+        "dain"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shos",
+          "sh-"
+        ],
+        [
+          "shody",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shodain",
+        "sckhey",
+        "daiin",
+        "shoy"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shodain",
+          "sh-"
+        ],
+        [
+          "shoy",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "oiin",
+        "chol",
+        "odaiin",
+        "chodain"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chodain",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "oiin",
+        "chol",
+        "odaiin",
+        "chodain"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chol",
+          "ol"
+        ],
+        [
+          "chodain",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "oiin",
+        "chol",
+        "odaiin",
+        "chodain"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chodain",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chol",
+        "odaiin",
+        "chodain",
+        "chdy"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 3,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chol",
+        "odaiin",
+        "chodain",
+        "chdy"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 3,
+      "matched_parts": [
+        [
+          "chol",
+          "ol"
+        ],
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chol",
+        "odaiin",
+        "chodain",
+        "chdy"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 3,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "odaiin",
+        "chodain",
+        "chdy",
+        "okain"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "odaiin",
+        "chodain",
+        "chdy",
+        "okain"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "odaiin",
+        "chodain",
+        "chdy",
+        "okain"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chodain",
+        "chdy",
+        "okain",
+        "dan"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chodain",
+        "chdy",
+        "okain",
+        "dan"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chodain",
+        "chdy",
+        "okain",
+        "dan"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chodain",
+          "ch-"
+        ],
+        [
+          "chdy",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chdy",
+        "okain",
+        "dan",
+        "cthy"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chdy",
+          "ch-"
+        ],
+        [
+          "cthy",
+          "ct-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shckhey",
+        "ckeor",
+        "chor",
+        "shey"
+      ],
+      "trotula_pattern": "Accipe succum Y, applica ad matricem",
+      "english": "Take juice of Y, apply to womb",
+      "structure": [
+        "INGREDIENT",
+        "APPLICATION",
+        "TARGET"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "shckhey",
+          "sh-"
+        ],
+        [
+          "shey",
+          "sh-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "ckeor",
+        "chor",
+        "shey",
+        "kol"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chor",
+          "ch-"
+        ],
+        [
+          "kol",
+          "ol"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chor",
+        "shey",
+        "kol",
+        "chol"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chor",
+          "ch-"
+        ],
+        [
+          "chol",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chor",
+        "shey",
+        "kol",
+        "chol"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 3,
+      "matched_parts": [
+        [
+          "chor",
+          "ch-"
+        ],
+        [
+          "kol",
+          "ol"
+        ],
+        [
+          "chol",
+          "ol"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "chor",
+        "shey",
+        "kol",
+        "chol"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chor",
+          "ch-"
+        ],
+        [
+          "chol",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shey",
+        "kol",
+        "chol",
+        "chol"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chol",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shey",
+        "kol",
+        "chol",
+        "chol"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 3,
+      "matched_parts": [
+        [
+          "kol",
+          "ol"
+        ],
+        [
+          "chol",
+          "ol"
+        ],
+        [
+          "chol",
+          "ol"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "shey",
+        "kol",
+        "chol",
+        "chol"
+      ],
+      "trotula_pattern": "Lava matricem cum decocto herbe",
+      "english": "Wash womb with herb decoction",
+      "structure": [
+        "PROCESS",
+        "TARGET",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chol",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "kol",
+        "chol",
+        "chol",
+        "kor"
+      ],
+      "trotula_pattern": "Recipe: herbam X, decoque in aqua, et fac fumigationem",
+      "english": "Take herb X, boil in water, and make fumigation",
+      "structure": [
+        "INGREDIENT",
+        "PROCESS",
+        "MEDIUM",
+        "APPLICATION"
+      ],
+      "match_count": 2,
+      "matched_parts": [
+        [
+          "chol",
+          "ch-"
+        ],
+        [
+          "chol",
+          "ch-"
+        ]
+      ]
+    },
+    {
+      "folio": "f1r",
+      "section": "HERBAL",
+      "voynich_sequence": [
+        "kol",
+        "chol",
+        "chol",
+        "kor"
+      ],
+      "trotula_pattern": "Fiat pessarium ex oleo Z",
+      "english": "Make pessary from oil of Z",
+      "structure": [
+        "PROCESS",
+        "MEDIUM",
+        "INGREDIENT"
+      ],
+      "match_count": 3,
+      "matched_parts": [
+        [
+          "kol",
+          "ol"
+        ],
+        [
+          "chol",
+          "ol"
+        ],
+        [
+          "chol",
+          "ol"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "phase": "12E",
+    "title": "Novelty Detection",
+    "timestamp": "2025-12-31T13:04:21.715424"
+  },
+  "voynich_metrics": {
+    "reversibility": 0.946,
+    "commutativity": 0.732,
+    "ladder_collapse_rate": 0.977
+  },
+  "historical_baselines": {
+    "scholastic": {
+      "reversibility": "50-70%",
+      "commutativity": "20-40%"
+    },
+    "paracelsian": {
+      "reversibility": "70-85%",
+      "commutativity": "40-60%"
+    }
+  },
+  "deviation_analysis": {
+    "scholastic_reversibility_sds": 2.46,
+    "scholastic_commutativity_sds": 3.32,
+    "paracelsian_reversibility_sds": 0.96,
+    "paracelsian_commutativity_sds": 1.32
+  },
+  "exceeds_known_traditions": false,
+  "novel_features": [
+    "Extreme reversibility (94.6%)",
+    "High commutativity (73.2%)",
+    "Near-universal ladder-to-cycle collapse (97.7%)"
+  ],
+  "VERDICT": "EXCEEDS_SCHOLASTIC_ONLY",
+  "label": "Paracelsian or post-Paracelsian",
+  "interpretation": "Voynich metrics exceed scholastic expectations but may fit extreme Paracelsian practice."
+}

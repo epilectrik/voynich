@@ -1,0 +1,677 @@
+{
+  "metadata": {
+    "phase": "H4.1",
+    "title": "Co-Citation Structure",
+    "timestamp": "2025-12-30T21:43:38.194922"
+  },
+  "cocitation_matrix": {
+    "f35v": {
+      "f58r": 2,
+      "f54r": 1,
+      "f90v1": 2,
+      "f42r": 2,
+      "f87v": 1,
+      "f96r": 1
+    },
+    "f10v": {
+      "f58r": 3,
+      "f35v": 3,
+      "f58v": 2,
+      "f96r": 2,
+      "f22r": 2,
+      "f54r": 1,
+      "f87v": 1,
+      "f90v1": 1,
+      "f19r": 1,
+      "f42r": 2,
+      "f21r": 1,
+      "f52v": 1,
+      "f29r": 1
+    },
+    "f58r": {
+      "f58v": 3,
+      "f96r": 2,
+      "f87v": 1,
+      "f90v1": 1
+    },
+    "f58v": {
+      "f96r": 5,
+      "f8r": 2,
+      "f90v1": 1
+    },
+    "f42v": {
+      "f54r": 1,
+      "f52v": 2,
+      "f58v": 1
+    },
+    "f42r": {
+      "f54r": 1,
+      "f42v": 1,
+      "f54v": 2,
+      "f58v": 3,
+      "f53v": 1,
+      "f7r": 1,
+      "f90v1": 2,
+      "f52v": 2,
+      "f96r": 2,
+      "f44v": 1
+    },
+    "f22r": {
+      "f58v": 8,
+      "f96r": 4,
+      "f52v": 2,
+      "f8r": 2,
+      "f35v": 3,
+      "f54v": 1,
+      "f42r": 5,
+      "f54r": 1,
+      "f90v1": 2,
+      "f29r": 2,
+      "f44v": 1
+    },
+    "f101r1": {
+      "f19r": 1,
+      "f21r": 1,
+      "f42v": 1,
+      "f52v": 1,
+      "f58v": 3,
+      "f96r": 2,
+      "f58r": 1,
+      "f10v": 1,
+      "f22r": 3,
+      "f8r": 1,
+      "f54v": 1,
+      "f42r": 1,
+      "f29r": 1,
+      "f44v": 1
+    },
+    "f19r": {
+      "f21r": 7,
+      "f42v": 2,
+      "f52v": 7,
+      "f22r": 2,
+      "f96r": 3,
+      "f58v": 3,
+      "f42r": 2,
+      "f90v1": 1,
+      "f32v": 1
+    },
+    "f21r": {
+      "f42v": 2,
+      "f52v": 7,
+      "f22r": 2,
+      "f96r": 3,
+      "f58v": 3,
+      "f42r": 2,
+      "f90v1": 1,
+      "f32v": 1
+    },
+    "f29r": {
+      "f58v": 2,
+      "f42r": 1,
+      "f44v": 1
+    },
+    "f52v": {
+      "f96r": 3,
+      "f58v": 3,
+      "f90v1": 1
+    },
+    "f8r": {
+      "f96r": 2
+    },
+    "f54v": {
+      "f58v": 1
+    },
+    "f15r": {
+      "f53v": 1,
+      "f7r": 1,
+      "f42r": 1,
+      "f28v": 1
+    },
+    "f53v": {
+      "f7r": 1
+    },
+    "f28v": {
+      "f53v": 1,
+      "f7r": 1,
+      "f42r": 1
+    },
+    "f87v": {
+      "f90v1": 1
+    },
+    "f14r": {
+      "f44v": 1,
+      "f42r": 2,
+      "f58v": 1
+    },
+    "f13r": {
+      "f22r": 1,
+      "f58v": 1
+    },
+    "f32v": {
+      "f58v": 1,
+      "f42v": 1,
+      "f52v": 1
+    }
+  },
+  "strongly_cocited_pairs": [
+    {
+      "folio1": "f22r",
+      "folio2": "f58v",
+      "heading1": "pol",
+      "heading2": "tol",
+      "cocitation_count": 8
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f21r",
+      "heading1": "pchor",
+      "heading2": "pchor",
+      "cocitation_count": 7
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f52v",
+      "heading1": "pchor",
+      "heading2": "pchor",
+      "cocitation_count": 7
+    },
+    {
+      "folio1": "f21r",
+      "folio2": "f52v",
+      "heading1": "pchor",
+      "heading2": "pchor",
+      "cocitation_count": 7
+    },
+    {
+      "folio1": "f58v",
+      "folio2": "f96r",
+      "heading1": "tol",
+      "heading2": "tor",
+      "cocitation_count": 5
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f42r",
+      "heading1": "pol",
+      "heading2": "sho",
+      "cocitation_count": 5
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f96r",
+      "heading1": "pol",
+      "heading2": "tor",
+      "cocitation_count": 4
+    },
+    {
+      "folio1": "f10v",
+      "folio2": "f58r",
+      "heading1": "paiin",
+      "heading2": "kor",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f10v",
+      "folio2": "f35v",
+      "heading1": "paiin",
+      "heading2": "par",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f58r",
+      "folio2": "f58v",
+      "heading1": "kor",
+      "heading2": "tol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f42r",
+      "folio2": "f58v",
+      "heading1": "sho",
+      "heading2": "tol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f35v",
+      "heading1": "pol",
+      "heading2": "par",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f101r1",
+      "folio2": "f58v",
+      "heading1": "pcheol",
+      "heading2": "tol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f101r1",
+      "folio2": "f22r",
+      "heading1": "pcheol",
+      "heading2": "pol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f96r",
+      "heading1": "pchor",
+      "heading2": "tor",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f58v",
+      "heading1": "pchor",
+      "heading2": "tol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f21r",
+      "folio2": "f96r",
+      "heading1": "pchor",
+      "heading2": "tor",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f21r",
+      "folio2": "f58v",
+      "heading1": "pchor",
+      "heading2": "tol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f52v",
+      "folio2": "f96r",
+      "heading1": "pchor",
+      "heading2": "tor",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f52v",
+      "folio2": "f58v",
+      "heading1": "pchor",
+      "heading2": "tol",
+      "cocitation_count": 3
+    },
+    {
+      "folio1": "f35v",
+      "folio2": "f58r",
+      "heading1": "par",
+      "heading2": "kor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f35v",
+      "folio2": "f90v1",
+      "heading1": "par",
+      "heading2": "pcheor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f35v",
+      "folio2": "f42r",
+      "heading1": "par",
+      "heading2": "sho",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f10v",
+      "folio2": "f58v",
+      "heading1": "paiin",
+      "heading2": "tol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f10v",
+      "folio2": "f96r",
+      "heading1": "paiin",
+      "heading2": "tor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f10v",
+      "folio2": "f22r",
+      "heading1": "paiin",
+      "heading2": "pol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f10v",
+      "folio2": "f42r",
+      "heading1": "paiin",
+      "heading2": "sho",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f58r",
+      "folio2": "f96r",
+      "heading1": "kor",
+      "heading2": "tor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f58v",
+      "folio2": "f8r",
+      "heading1": "tol",
+      "heading2": "pshol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f42v",
+      "folio2": "f52v",
+      "heading1": "tcho",
+      "heading2": "pchor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f42r",
+      "folio2": "f54v",
+      "heading1": "sho",
+      "heading2": "pcheodar",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f42r",
+      "folio2": "f90v1",
+      "heading1": "sho",
+      "heading2": "pcheor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f42r",
+      "folio2": "f52v",
+      "heading1": "sho",
+      "heading2": "pchor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f42r",
+      "folio2": "f96r",
+      "heading1": "sho",
+      "heading2": "tor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f52v",
+      "heading1": "pol",
+      "heading2": "pchor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f8r",
+      "heading1": "pol",
+      "heading2": "pshol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f90v1",
+      "heading1": "pol",
+      "heading2": "pcheor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f22r",
+      "folio2": "f29r",
+      "heading1": "pol",
+      "heading2": "poraiin",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f101r1",
+      "folio2": "f96r",
+      "heading1": "pcheol",
+      "heading2": "tor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f42v",
+      "heading1": "pchor",
+      "heading2": "tcho",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f22r",
+      "heading1": "pchor",
+      "heading2": "pol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f19r",
+      "folio2": "f42r",
+      "heading1": "pchor",
+      "heading2": "sho",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f21r",
+      "folio2": "f42v",
+      "heading1": "pchor",
+      "heading2": "tcho",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f21r",
+      "folio2": "f22r",
+      "heading1": "pchor",
+      "heading2": "pol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f21r",
+      "folio2": "f42r",
+      "heading1": "pchor",
+      "heading2": "sho",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f29r",
+      "folio2": "f58v",
+      "heading1": "poraiin",
+      "heading2": "tol",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f8r",
+      "folio2": "f96r",
+      "heading1": "pshol",
+      "heading2": "tor",
+      "cocitation_count": 2
+    },
+    {
+      "folio1": "f14r",
+      "folio2": "f42r",
+      "heading1": "pchodaiin",
+      "heading2": "sho",
+      "cocitation_count": 2
+    }
+  ],
+  "cocitation_analysis": [
+    {
+      "pair": "pol <-> tol",
+      "cocitation_count": 8,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "ol"
+      ],
+      "ngram_overlap": 0.2
+    },
+    {
+      "pair": "pchor <-> pchor",
+      "cocitation_count": 7,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "cho",
+        "pch",
+        "pc",
+        "ch",
+        "or",
+        "ho",
+        "hor"
+      ],
+      "ngram_overlap": 1.0
+    },
+    {
+      "pair": "pchor <-> pchor",
+      "cocitation_count": 7,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "cho",
+        "pch",
+        "pc",
+        "ch",
+        "or",
+        "ho",
+        "hor"
+      ],
+      "ngram_overlap": 1.0
+    },
+    {
+      "pair": "pchor <-> pchor",
+      "cocitation_count": 7,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "cho",
+        "pch",
+        "pc",
+        "ch",
+        "or",
+        "ho",
+        "hor"
+      ],
+      "ngram_overlap": 1.0
+    },
+    {
+      "pair": "tol <-> tor",
+      "cocitation_count": 5,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "to"
+      ],
+      "ngram_overlap": 0.2
+    },
+    {
+      "pair": "pol <-> sho",
+      "cocitation_count": 5,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "pol <-> tor",
+      "cocitation_count": 4,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "paiin <-> kor",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "paiin <-> par",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "pa"
+      ],
+      "ngram_overlap": 0.1111111111111111
+    },
+    {
+      "pair": "kor <-> tol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "sho <-> tol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "pol <-> par",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "pcheol <-> tol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "ol"
+      ],
+      "ngram_overlap": 0.09090909090909091
+    },
+    {
+      "pair": "pcheol <-> pol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "ol"
+      ],
+      "ngram_overlap": 0.09090909090909091
+    },
+    {
+      "pair": "pchor <-> tor",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "or"
+      ],
+      "ngram_overlap": 0.1111111111111111
+    },
+    {
+      "pair": "pchor <-> tol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "pchor <-> tor",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "or"
+      ],
+      "ngram_overlap": 0.1111111111111111
+    },
+    {
+      "pair": "pchor <-> tol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    },
+    {
+      "pair": "pchor <-> tor",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [
+        "or"
+      ],
+      "ngram_overlap": 0.1111111111111111
+    },
+    {
+      "pair": "pchor <-> tol",
+      "cocitation_count": 3,
+      "visual_data_available": false,
+      "shared_ngrams": [],
+      "ngram_overlap": 0.0
+    }
+  ]
+}

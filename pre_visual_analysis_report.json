@@ -1,0 +1,722 @@
+{
+  "metadata": {
+    "title": "Pre-Visual Analysis Report",
+    "phase": "Visual Coding Phase, Task 4",
+    "date": "2025-12-30T17:39:12.381495",
+    "purpose": "Establish baselines and power limitations BEFORE visual coding"
+  },
+  "pilot_summary": {
+    "n_folios": 30,
+    "n_visual_features": 24,
+    "n_unique_heading_prefixes": 24,
+    "testable_prefixes": [
+      "po",
+      "ko"
+    ]
+  },
+  "text_statistics": {
+    "heading_prefix_distribution": {
+      "total_unique_prefixes": 24,
+      "prefix_counts": {
+        "ko": 4,
+        "po": 3,
+        "pc": 2,
+        "to": 1,
+        "fc": 1,
+        "ts": 1,
+        "pa": 1,
+        "ok": 1,
+        "ks": 1,
+        "ct": 1,
+        "py": 1,
+        "fo": 1,
+        "cp": 1,
+        "kc": 1,
+        "fs": 1,
+        "pd": 1,
+        "ty": 1,
+        "fa": 1,
+        "ky": 1,
+        "ps": 1,
+        "tc": 1,
+        "ot": 1,
+        "sh": 1,
+        "r*": 1
+      },
+      "prefix_folios": {
+        "to": [
+          "f38r"
+        ],
+        "fc": [
+          "f25r"
+        ],
+        "ts": [
+          "f11r"
+        ],
+        "po": [
+          "f11v",
+          "f51v",
+          "f23v"
+        ],
+        "ko": [
+          "f5v",
+          "f45v",
+          "f3v",
+          "f29v"
+        ],
+        "pa": [
+          "f10v"
+        ],
+        "ok": [
+          "f38v"
+        ],
+        "ks": [
+          "f5r"
+        ],
+        "pc": [
+          "f36r",
+          "f4v"
+        ],
+        "ct": [
+          "f30v"
+        ],
+        "py": [
+          "f22v"
+        ],
+        "fo": [
+          "f9v"
+        ],
+        "cp": [
+          "f90v2"
+        ],
+        "kc": [
+          "f32v"
+        ],
+        "fs": [
+          "f17r"
+        ],
+        "pd": [
+          "f18r"
+        ],
+        "ty": [
+          "f9r"
+        ],
+        "fa": [
+          "f20v"
+        ],
+        "ky": [
+          "f2r"
+        ],
+        "ps": [
+          "f47v"
+        ],
+        "tc": [
+          "f24v"
+        ],
+        "ot": [
+          "f56r"
+        ],
+        "sh": [
+          "f42r"
+        ],
+        "r*": [
+          "f49v"
+        ]
+      },
+      "prefixes_with_power": [
+        "po",
+        "ko"
+      ],
+      "prefixes_insufficient_power": [
+        "to",
+        "fc",
+        "ts",
+        "pa",
+        "ok",
+        "ks",
+        "pc",
+        "ct",
+        "py",
+        "fo",
+        "cp",
+        "kc",
+        "fs",
+        "pd",
+        "ty",
+        "fa",
+        "ky",
+        "ps",
+        "tc",
+        "ot",
+        "sh",
+        "r*"
+      ]
+    },
+    "dominant_prefix_distribution": {
+      "part1": {
+        "unique_prefixes": 7,
+        "prefix_counts": {
+          "ch": 15,
+          "sh": 5,
+          "da": 3,
+          "qo": 3,
+          "ok": 2,
+          "ot": 1,
+          "ct": 1
+        },
+        "top_prefix": [
+          "ch",
+          15
+        ],
+        "prefixes_with_power": [
+          "ch",
+          "sh",
+          "da",
+          "qo"
+        ]
+      },
+      "part2": {
+        "unique_prefixes": 4,
+        "prefix_counts": {
+          "ch": 19,
+          "qo": 5,
+          "sh": 3,
+          "da": 3
+        },
+        "top_prefix": [
+          "ch",
+          19
+        ],
+        "prefixes_with_power": [
+          "ch",
+          "qo",
+          "sh",
+          "da"
+        ]
+      },
+      "part3": {
+        "unique_prefixes": 7,
+        "prefix_counts": {
+          "ch": 18,
+          "da": 5,
+          "qo": 3,
+          "ok": 1,
+          "sh": 1,
+          "yt": 1,
+          "ol": 1
+        },
+        "top_prefix": [
+          "ch",
+          18
+        ],
+        "prefixes_with_power": [
+          "ch",
+          "da",
+          "qo"
+        ]
+      }
+    },
+    "word_count_distribution": {
+      "n": 30,
+      "min": 42,
+      "max": 189,
+      "mean": 95.26666666666667,
+      "median": 100,
+      "std": 32.38099579829022,
+      "quartiles": {
+        "q1": 66,
+        "q2": 100,
+        "q3": 110
+      },
+      "strata": {
+        "short": 10,
+        "medium": 10,
+        "long": 10
+      }
+    },
+    "vocabulary_profiles": {
+      "part_sizes": {
+        "part1": 538,
+        "part2": 506,
+        "part3": 509
+      },
+      "pairwise_overlap": {
+        "part1_part2": 134,
+        "part1_part3": 147,
+        "part2_part3": 132
+      },
+      "all_three_overlap": 87,
+      "part1_exclusive": 344,
+      "part2_exclusive": 327,
+      "part3_exclusive": 317,
+      "total_unique": 1227
+    }
+  },
+  "null_distributions": {
+    "root_present": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3521,
+      "null_std": 0.1168,
+      "threshold_95": 0.5533,
+      "threshold_99": 0.6565
+    },
+    "root_type": {
+      "n_categories": 6,
+      "null_mean_cramers_v": 0.4122,
+      "null_std": 0.0525,
+      "threshold_95": 0.5004,
+      "threshold_99": 0.5419
+    },
+    "root_prominence": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3577,
+      "null_std": 0.0811,
+      "threshold_95": 0.4947,
+      "threshold_99": 0.5523
+    },
+    "root_color_distinct": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3561,
+      "null_std": 0.1194,
+      "threshold_95": 0.5595,
+      "threshold_99": 0.6647
+    },
+    "stem_count": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3621,
+      "null_std": 0.08,
+      "threshold_95": 0.5041,
+      "threshold_99": 0.5514
+    },
+    "stem_type": {
+      "n_categories": 5,
+      "null_mean_cramers_v": 0.3654,
+      "null_std": 0.0541,
+      "threshold_95": 0.4647,
+      "threshold_99": 0.5002
+    },
+    "stem_thickness": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3605,
+      "null_std": 0.08,
+      "threshold_95": 0.499,
+      "threshold_99": 0.5467
+    },
+    "stem_nodes": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3481,
+      "null_std": 0.1226,
+      "threshold_95": 0.5493,
+      "threshold_99": 0.6455
+    },
+    "leaf_present": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3542,
+      "null_std": 0.1207,
+      "threshold_95": 0.5607,
+      "threshold_99": 0.6437
+    },
+    "leaf_count_category": {
+      "n_categories": 4,
+      "null_mean_cramers_v": 0.3674,
+      "null_std": 0.0669,
+      "threshold_95": 0.4796,
+      "threshold_99": 0.5409
+    },
+    "leaf_shape": {
+      "n_categories": 10,
+      "null_mean_cramers_v": 0.5419,
+      "null_std": 0.0532,
+      "threshold_95": 0.629,
+      "threshold_99": 0.6732
+    },
+    "leaf_arrangement": {
+      "n_categories": 5,
+      "null_mean_cramers_v": 0.3647,
+      "null_std": 0.057,
+      "threshold_95": 0.4616,
+      "threshold_99": 0.5073
+    },
+    "leaf_color_variation": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3523,
+      "null_std": 0.1173,
+      "threshold_95": 0.557,
+      "threshold_99": 0.6303
+    },
+    "flower_present": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3498,
+      "null_std": 0.1227,
+      "threshold_95": 0.5633,
+      "threshold_99": 0.66
+    },
+    "flower_count": {
+      "n_categories": 4,
+      "null_mean_cramers_v": 0.3648,
+      "null_std": 0.0669,
+      "threshold_95": 0.4799,
+      "threshold_99": 0.5232
+    },
+    "flower_position": {
+      "n_categories": 4,
+      "null_mean_cramers_v": 0.3629,
+      "null_std": 0.0633,
+      "threshold_95": 0.4719,
+      "threshold_99": 0.5207
+    },
+    "flower_shape": {
+      "n_categories": 6,
+      "null_mean_cramers_v": 0.4112,
+      "null_std": 0.0548,
+      "threshold_95": 0.5018,
+      "threshold_99": 0.5408
+    },
+    "flower_color_distinct": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3523,
+      "null_std": 0.1228,
+      "threshold_95": 0.558,
+      "threshold_99": 0.6531
+    },
+    "plant_count": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3609,
+      "null_std": 0.0805,
+      "threshold_95": 0.5044,
+      "threshold_99": 0.5658
+    },
+    "container_present": {
+      "n_categories": 2,
+      "null_mean_cramers_v": 0.3488,
+      "null_std": 0.1181,
+      "threshold_95": 0.5422,
+      "threshold_99": 0.6376
+    },
+    "symmetry": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.358,
+      "null_std": 0.0808,
+      "threshold_95": 0.4917,
+      "threshold_99": 0.5523
+    },
+    "complexity": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3625,
+      "null_std": 0.0786,
+      "threshold_95": 0.5018,
+      "threshold_99": 0.578
+    },
+    "artistic_style": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3606,
+      "null_std": 0.0844,
+      "threshold_95": 0.504,
+      "threshold_99": 0.5666
+    },
+    "text_integration": {
+      "n_categories": 3,
+      "null_mean_cramers_v": 0.3628,
+      "null_std": 0.0816,
+      "threshold_95": 0.5007,
+      "threshold_99": 0.5728
+    }
+  },
+  "power_analysis": {
+    "per_prefix": {
+      "ko": {
+        "n_folios": 4,
+        "power_adequate": true,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "TESTABLE"
+      },
+      "po": {
+        "n_folios": 3,
+        "power_adequate": true,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "TESTABLE"
+      },
+      "pc": {
+        "n_folios": 2,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "to": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "fc": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ts": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "pa": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ok": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ks": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ct": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "py": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "fo": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "cp": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "kc": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "fs": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "pd": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ty": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "fa": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ky": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ps": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "tc": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "ot": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "sh": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      },
+      "r*": {
+        "n_folios": 1,
+        "power_adequate": false,
+        "minimum_detectable_v": 0.562,
+        "recommendation": "INSUFFICIENT_POWER"
+      }
+    },
+    "overall": {
+      "n_folios": 30,
+      "n_features_tested": 24,
+      "bonferroni_alpha": 0.00208,
+      "minimum_detectable_effect": {
+        "uncorrected": 0.562,
+        "bonferroni_corrected": 0.562,
+        "interpretation": "LARGE"
+      },
+      "power_limitations": [
+        "Only prefixes with >=3 folios are testable",
+        "Minimum detectable Cramér's V ≈ 0.562 (Bonferroni)",
+        "Small effects (V < 0.3) likely undetectable",
+        "Wide confidence intervals expected"
+      ],
+      "recommendations": [
+        "Focus on prefixes with 3+ folios (po=3, ko=4)",
+        "Report effect sizes with confidence intervals",
+        "Interpret null results as \"inconclusive\" not \"no effect\"",
+        "Consider this a pilot for larger study"
+      ]
+    }
+  },
+  "prefix_coverage": {
+    "by_source": {
+      "heading_prefix": {
+        "unique_prefixes": 24,
+        "prefixes_with_power": [
+          "po",
+          "ko"
+        ],
+        "prefixes_insufficient": [
+          "to",
+          "fc",
+          "ts",
+          "pa",
+          "ok",
+          "ks",
+          "pc",
+          "ct",
+          "py",
+          "fo",
+          "cp",
+          "kc",
+          "fs",
+          "pd",
+          "ty",
+          "fa",
+          "ky",
+          "ps",
+          "tc",
+          "ot",
+          "sh",
+          "r*"
+        ],
+        "coverage_rate": 0.08333333333333333
+      },
+      "part1_dominant_prefix": {
+        "unique_prefixes": 7,
+        "prefixes_with_power": [
+          "ch",
+          "sh",
+          "da",
+          "qo"
+        ],
+        "prefixes_insufficient": [
+          "ot",
+          "ok",
+          "ct"
+        ],
+        "coverage_rate": 0.5714285714285714
+      },
+      "part2_dominant_prefix": {
+        "unique_prefixes": 4,
+        "prefixes_with_power": [
+          "ch",
+          "qo",
+          "sh",
+          "da"
+        ],
+        "prefixes_insufficient": [],
+        "coverage_rate": 1.0
+      },
+      "part3_dominant_prefix": {
+        "unique_prefixes": 7,
+        "prefixes_with_power": [
+          "ch",
+          "da",
+          "qo"
+        ],
+        "prefixes_insufficient": [
+          "ok",
+          "sh",
+          "yt",
+          "ol"
+        ],
+        "coverage_rate": 0.42857142857142855
+      }
+    },
+    "heading_vs_part1_overlap": 4,
+    "heading_only": [
+      "py",
+      "ks",
+      "fc",
+      "fa",
+      "ts",
+      "po",
+      "cp",
+      "pc",
+      "ky",
+      "r*",
+      "ko",
+      "fo",
+      "ty",
+      "kc",
+      "tc",
+      "to",
+      "pa",
+      "ps",
+      "pd",
+      "fs"
+    ],
+    "part1_only": [
+      "qo",
+      "da",
+      "ch"
+    ],
+    "testable_hypotheses": {
+      "po_root": true,
+      "ko_leaf": true,
+      "ch_leaf": true
+    }
+  },
+  "key_findings": {
+    "testable_primary_hypotheses": [
+      "H1: po->root (3 folios, marginally testable)",
+      "H4: ko->leaf (4 folios, testable)"
+    ],
+    "power_limitations": [
+      "Only LARGE effects detectable (V >= 0.5 after Bonferroni)",
+      "Most heading prefixes have only 1 folio (untestable)",
+      "Null model threshold at 99th percentile: V ~ 0.65"
+    ],
+    "recommendations": [
+      "Prioritize po and ko prefix tests",
+      "Use dominant body prefixes for more power",
+      "Interpret all results as preliminary",
+      "Plan larger validation study if patterns found"
+    ]
+  }
+}

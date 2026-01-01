@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "phase": "14B",
+    "title": "Perturbation Tests",
+    "timestamp": "2025-12-31T14:15:02.002195"
+  },
+  "repetition_violations": {
+    "skip_repetition": {
+      "still_converges": true,
+      "convergence_rate": 0.68,
+      "effect": "delayed"
+    },
+    "extra_repetition": {
+      "still_converges": true,
+      "convergence_rate": 1.0,
+      "effect": "same"
+    },
+    "normal_convergence_rate": 1.0
+  },
+  "rare_transition_forcing": {
+    "rare_transitions_found": 11,
+    "rarest_transitions": [
+      {
+        "from": "STATE-A",
+        "to": "STATE-D",
+        "count": 1,
+        "frequency": 0.0001
+      },
+      {
+        "from": "STATE-B",
+        "to": "STATE-B",
+        "count": 4,
+        "frequency": 0.0005
+      },
+      {
+        "from": "STATE-D",
+        "to": "STATE-A",
+        "count": 4,
+        "frequency": 0.0005
+      },
+      {
+        "from": "STATE-D",
+        "to": "STATE-B",
+        "count": 4,
+        "frequency": 0.0005
+      },
+      {
+        "from": "STATE-B",
+        "to": "STATE-D",
+        "count": 8,
+        "frequency": 0.001
+      }
+    ],
+    "recovery_times_from_each_state": {
+      "STATE-A": 20,
+      "STATE-B": 1,
+      "STATE-D": 1
+    },
+    "worst_case_recovery": 20,
+    "unrecoverable_states": []
+  },
+  "near_forbidden_probing": {
+    "minimum_path_A_to_B": [
+      "STATE-A",
+      "STATE-D",
+      "STATE-B"
+    ],
+    "minimum_path_B_to_A": [
+      "STATE-B",
+      "STATE-C",
+      "STATE-A"
+    ],
+    "path_length_A_to_B": 2,
+    "path_length_B_to_A": 2,
+    "mandatory_waypoint": "STATE-C",
+    "interpretation": "STATE-C serves as mandatory waypoint between A and B"
+  },
+  "initiator_terminator_bypass": {
+    "typical_initiator_state": "STATE-C",
+    "initiator_state_distribution": {
+      "STATE-C": 76,
+      "STATE-D": 4,
+      "STATE-B": 2,
+      "STATE-A": 1
+    },
+    "typical_terminator_state": "STATE-C",
+    "terminator_state_distribution": {
+      "STATE-C": 77,
+      "STATE-B": 3,
+      "STATE-D": 3
+    },
+    "without_initiator": {
+      "converges": true,
+      "convergence_rate": 1.0
+    },
+    "with_initiator": {
+      "convergence_rate": 1.0
+    },
+    "initiator_essential": false
+  },
+  "CONTROL_LOGIC_INSIGHTS": [
+    "Repetitions are NOT essential for convergence - system is resilient to compression",
+    "Extra repetitions have no effect - system tolerates redundancy",
+    "STATE-C is mandatory waypoint between forbidden states - central processing hub",
+    "Initiator state is conventional, not essential - system is robust to entry point"
+  ],
+  "PERTURBATION_RESILIENCE": "HIGH"
+}

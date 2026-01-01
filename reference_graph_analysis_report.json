@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "title": "B->A Reference Graph Analysis",
+    "phase": "Phase 18, Task 4",
+    "date": "2025-12-30T16:12:34.298887",
+    "purpose": "Analyze semantic dependency between Currier B and A entries"
+  },
+  "graph_statistics": {
+    "basic_counts": {
+      "n_a_nodes": 114,
+      "n_b_nodes": 83,
+      "n_edges": 151,
+      "density": 0.016
+    },
+    "a_node_in_degree": {
+      "mean": 1.32,
+      "std": 3.65,
+      "max": 26,
+      "min": 0,
+      "median": 0.0
+    },
+    "b_node_out_degree": {
+      "mean": 1.82,
+      "std": 1.8,
+      "max": 6,
+      "min": 0,
+      "median": 1.0
+    },
+    "edge_weights": {
+      "mean": 1.2,
+      "max": 4,
+      "total": 181
+    },
+    "isolated_nodes": {
+      "a_isolated_count": 85,
+      "a_isolated_folios": [
+        "f1r",
+        "f1v",
+        "f2r",
+        "f2v",
+        "f3r",
+        "f3v",
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v",
+        "f6r",
+        "f6v",
+        "f7v",
+        "f8v",
+        "f9r",
+        "f9v",
+        "f10r",
+        "f11v",
+        "f13v",
+        "f14v"
+      ],
+      "b_isolated_count": 22,
+      "b_isolated_folios": [
+        "f26r",
+        "f26v",
+        "f33v",
+        "f39r",
+        "f41v",
+        "f43r",
+        "f46r",
+        "f50v",
+        "f57r",
+        "f66v",
+        "f76r",
+        "f78v",
+        "f82r",
+        "f83v",
+        "f85r2",
+        "f85v2",
+        "f86v3",
+        "f94r",
+        "f95r1",
+        "f95v2"
+      ]
+    },
+    "most_referenced_a": [
+      {
+        "folio": "f58v",
+        "in_degree": 26,
+        "heading": "tol"
+      },
+      {
+        "folio": "f22r",
+        "in_degree": 16,
+        "heading": "pol"
+      },
+      {
+        "folio": "f42r",
+        "in_degree": 14,
+        "heading": "sho"
+      },
+      {
+        "folio": "f96r",
+        "in_degree": 12,
+        "heading": "tor"
+      },
+      {
+        "folio": "f35v",
+        "in_degree": 9,
+        "heading": "par"
+      },
+      {
+        "folio": "f58r",
+        "in_degree": 8,
+        "heading": "kor"
+      },
+      {
+        "folio": "f19r",
+        "in_degree": 7,
+        "heading": "pchor"
+      },
+      {
+        "folio": "f21r",
+        "in_degree": 7,
+        "heading": "pchor"
+      },
+      {
+        "folio": "f52v",
+        "in_degree": 7,
+        "heading": "pchor"
+      },
+      {
+        "folio": "f10v",
+        "in_degree": 6,
+        "heading": "paiin"
+      }
+    ],
+    "most_referencing_b": [
+      {
+        "folio": "f103v",
+        "out_degree": 6
+      },
+      {
+        "folio": "f105v",
+        "out_degree": 6
+      },
+      {
+        "folio": "f113r",
+        "out_degree": 6
+      },
+      {
+        "folio": "f77v",
+        "out_degree": 5
+      },
+      {
+        "folio": "f79r",
+        "out_degree": 5
+      },
+      {
+        "folio": "f80r",
+        "out_degree": 5
+      },
+      {
+        "folio": "f80v",
+        "out_degree": 5
+      },
+      {
+        "folio": "f86v5",
+        "out_degree": 5
+      },
+      {
+        "folio": "f95v1",
+        "out_degree": 5
+      },
+      {
+        "folio": "f105r",
+        "out_degree": 5
+      }
+    ]
+  },
+  "co_citation_analysis": {
+    "n_b_with_multiple_references": 32,
+    "mean_references_per_b": 2.48,
+    "top_co_cited_pairs": [
+      {
+        "a1": "f22r",
+        "a2": "f58v",
+        "a1_heading": "pol",
+        "a2_heading": "tol",
+        "co_citation_count": 8
+      },
+      {
+        "a1": "f19r",
+        "a2": "f21r",
+        "a1_heading": "pchor",
+        "a2_heading": "pchor",
+        "co_citation_count": 7
+      },
+      {
+        "a1": "f19r",
+        "a2": "f52v",
+        "a1_heading": "pchor",
+        "a2_heading": "pchor",
+        "co_citation_count": 7
+      },
+      {
+        "a1": "f21r",
+        "a2": "f52v",
+        "a1_heading": "pchor",
+        "a2_heading": "pchor",
+        "co_citation_count": 7
+      },
+      {
+        "a1": "f58v",
+        "a2": "f96r",
+        "a1_heading": "tol",
+        "a2_heading": "tor",
+        "co_citation_count": 5
+      },
+      {
+        "a1": "f22r",
+        "a2": "f42r",
+        "a1_heading": "pol",
+        "a2_heading": "sho",
+        "co_citation_count": 5
+      },
+      {
+        "a1": "f22r",
+        "a2": "f96r",
+        "a1_heading": "pol",
+        "a2_heading": "tor",
+        "co_citation_count": 4
+      },
+      {
+        "a1": "f10v",
+        "a2": "f35v",
+        "a1_heading": "paiin",
+        "a2_heading": "par",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f10v",
+        "a2": "f58r",
+        "a1_heading": "paiin",
+        "a2_heading": "kor",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f58r",
+        "a2": "f58v",
+        "a1_heading": "kor",
+        "a2_heading": "tol",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f19r",
+        "a2": "f96r",
+        "a1_heading": "pchor",
+        "a2_heading": "tor",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f21r",
+        "a2": "f96r",
+        "a1_heading": "pchor",
+        "a2_heading": "tor",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f52v",
+        "a2": "f96r",
+        "a1_heading": "pchor",
+        "a2_heading": "tor",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f101r1",
+        "a2": "f58v",
+        "a1_heading": "pcheol",
+        "a2_heading": "tol",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f101r1",
+        "a2": "f22r",
+        "a1_heading": "pcheol",
+        "a2_heading": "pol",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f22r",
+        "a2": "f35v",
+        "a1_heading": "pol",
+        "a2_heading": "par",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f19r",
+        "a2": "f58v",
+        "a1_heading": "pchor",
+        "a2_heading": "tol",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f21r",
+        "a2": "f58v",
+        "a1_heading": "pchor",
+        "a2_heading": "tol",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f52v",
+        "a2": "f58v",
+        "a1_heading": "pchor",
+        "a2_heading": "tol",
+        "co_citation_count": 3
+      },
+      {
+        "a1": "f42r",
+        "a2": "f58v",
+        "a1_heading": "sho",
+        "a2_heading": "tol",
+        "co_citation_count": 3
+      }
+    ],
+    "most_co_cited_a": [
+      {
+        "folio": "f58v",
+        "heading": "tol",
+        "total_co_citations": 43
+      },
+      {
+        "folio": "f22r",
+        "heading": "pol",
+        "total_co_citations": 41
+      },
+      {
+        "folio": "f42r",
+        "heading": "sho",
+        "total_co_citations": 35
+      },
+      {
+        "folio": "f19r",
+        "heading": "pchor",
+        "total_co_citations": 30
+      },
+      {
+        "folio": "f21r",
+        "heading": "pchor",
+        "total_co_citations": 30
+      },
+      {
+        "folio": "f52v",
+        "heading": "pchor",
+        "total_co_citations": 30
+      },
+      {
+        "folio": "f96r",
+        "heading": "tor",
+        "total_co_citations": 29
+      },
+      {
+        "folio": "f10v",
+        "heading": "paiin",
+        "total_co_citations": 22
+      },
+      {
+        "folio": "f101r1",
+        "heading": "pcheol",
+        "total_co_citations": 19
+      },
+      {
+        "folio": "f35v",
+        "heading": "par",
+        "total_co_citations": 15
+      }
+    ]
+  },
+  "positional_analysis": {
+    "position_correlation": {
+      "spearman_r": -0.1715,
+      "p_value": 0.035260989960126075,
+      "interpretation": "Sequential pattern"
+    },
+    "reference_by_position": {
+      "early_b_to_early_a": 2,
+      "early_b_to_middle_a": 5,
+      "early_b_to_late_a": 16,
+      "middle_b_to_early_a": 8,
+      "middle_b_to_middle_a": 20,
+      "middle_b_to_late_a": 30,
+      "late_b_to_early_a": 12,
+      "late_b_to_middle_a": 33,
+      "late_b_to_late_a": 25
+    },
+    "interpretation": "DISTRIBUTED"
+  },
+  "key_findings": {
+    "total_edges": 151,
+    "a_entries_referenced": 29,
+    "a_entries_isolated": 85,
+    "b_entries_referencing": 61,
+    "mean_a_in_degree": 1.32,
+    "mean_b_out_degree": 1.82,
+    "positional_pattern": "DISTRIBUTED"
+  }
+}

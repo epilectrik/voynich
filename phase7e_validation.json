@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "phase": "7E",
+    "title": "Model Validation",
+    "timestamp": "2025-12-31T11:44:35.820579"
+  },
+  "consistency_checks": {
+    "role_validation": {
+      "role_a_ratios": {
+        "EXPOSITION_CORE": 0.12028725314183124,
+        "RESTRICTED_CORE": 0.2418987563496234,
+        "DEFINITION_CORE": 0.7189716312056738,
+        "FLEXIBLE_CORE": 0.3915508704679764
+      },
+      "definition_core_in_a": 0.7189716312056738,
+      "exposition_core_in_a": 0.12028725314183124,
+      "definition_core_passes": true,
+      "exposition_core_passes": true,
+      "overall_pass": true
+    },
+    "operator_validation": {
+      "scope_hub_accuracy": 0.0,
+      "scope_hub_passes": false,
+      "position_early_rate": 0.07516040329972502,
+      "position_passes": false,
+      "samples": {
+        "scope": 6392,
+        "position": 1091
+      }
+    }
+  },
+  "cross_validation": {
+    "holdout_size": 45,
+    "predictions_made": 37,
+    "population_accuracy": 1.0,
+    "passes_threshold": true
+  },
+  "permutation_control": {
+    "n_permutations": 100,
+    "real_model": {
+      "definition_a_ratio": 0.7189716312056738,
+      "exposition_a_ratio": 0.12028725314183124,
+      "separation_score": 0.5986843780638426
+    },
+    "permuted_model": {
+      "mean_separation": 0.07482914007060631,
+      "std_separation": 0.0515541184078941,
+      "max_separation": 0.23080769305484816,
+      "min_separation": 0.0005794678736854575
+    },
+    "comparison": {
+      "real_percentile": 100.0,
+      "effect_size_d": 10.161268472258893,
+      "real_exceeds_all_permuted": true,
+      "interpretation": "REAL MODEL SIGNIFICANTLY BETTER"
+    },
+    "verdict": {
+      "passes": true,
+      "confidence": "HIGH"
+    }
+  },
+  "predict_then_check": {
+    "slot_completion": {
+      "predictions_made": 10,
+      "correct": 5,
+      "accuracy": 0.5,
+      "legal_slot0_middles": 5
+    },
+    "malformed_rejection": {
+      "malformed_tested": 4,
+      "rejected": 1,
+      "rejection_rate": 0.25
+    }
+  },
+  "limitations": {
+    "token_coverage": {
+      "total_tokens": 47762,
+      "mapped_tokens": 34933,
+      "coverage_rate": 0.7313973451698003
+    },
+    "unmapped_middles": {
+      "count": 6107,
+      "top_10": [
+        [
+          "*",
+          36
+        ],
+        [
+          "oai",
+          24
+        ],
+        [
+          "teee",
+          23
+        ],
+        [
+          "po",
+          23
+        ],
+        [
+          "ckhe",
+          22
+        ],
+        [
+          "odai",
+          22
+        ],
+        [
+          "hekaii",
+          22
+        ],
+        [
+          "fa",
+          22
+        ],
+        [
+          "air",
+          21
+        ],
+        [
+          "kar",
+          21
+        ]
+      ]
+    },
+    "unmapped_affixes": {
+      "count": 57,
+      "top_10": [
+        [
+          "qo",
+          6165
+        ],
+        [
+          "aiin",
+          5515
+        ],
+        [
+          "dy",
+          3235
+        ],
+        [
+          "edy",
+          3159
+        ],
+        [
+          "hy",
+          2867
+        ],
+        [
+          "da",
+          2823
+        ],
+        [
+          "ey",
+          2585
+        ],
+        [
+          "eey",
+          2126
+        ],
+        [
+          "ain",
+          1895
+        ],
+        [
+          "eedy",
+          1359
+        ]
+      ]
+    },
+    "known_limitations": [
+      "No external grounding for semantic cores",
+      "Affix compositionality rate only 20%",
+      "Hub assignments based on limited hub folios (N=9)",
+      "RESTRICTED_CORE is largest category but least differentiated"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "phase": "18D",
+    "title": "Kernel Distance Analysis",
+    "timestamp": "2025-12-31T16:13:10.821365"
+  },
+  "distance_distribution": {
+    "distance_1": {
+      "count": 6,
+      "percentage": 100.0
+    },
+    "distance_2": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "distance_3_plus": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "by_nearest_kernel": {
+    "k_adjacent": {
+      "count": 6,
+      "transitions": [
+        "shey -> c",
+        "chol -> r",
+        "l -> chol",
+        "c -> ee",
+        "he -> t",
+        "shedy -> o"
+      ]
+    },
+    "h_adjacent": {
+      "count": 0,
+      "transitions": []
+    },
+    "e_adjacent": {
+      "count": 0,
+      "transitions": []
+    }
+  },
+  "clustering": "KERNEL_ADJACENT",
+  "INTERPRETATION": "Failures cluster at kernel boundaries - dangerous edge conditions around control points",
+  "physical_meaning": {
+    "KERNEL_ADJACENT": "Failures prevented near control room - protecting core operations",
+    "PERIPHERAL": "Failures prevented at edges - protecting auxiliary operations",
+    "DISTRIBUTED": "Failures prevented throughout - comprehensive safety system"
+  }
+}

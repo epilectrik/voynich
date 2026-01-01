@@ -1,0 +1,2346 @@
+{
+  "metadata": {
+    "last_updated": "2025-12-31T07:47:35.360443",
+    "total_records": 85
+  },
+  "records": [
+    {
+      "annotation_id": "703bfb72-35eb-40d6-b77f-cfe2b3c32ac7",
+      "mode": "B",
+      "folio_ids": [
+        "f36r",
+        "f38v",
+        "f9v",
+        "f42r"
+      ],
+      "folio_positions": {
+        "f38v": "A",
+        "f9v": "B",
+        "f42r": "C",
+        "f36r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 13049,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:20:36.142260",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_cluster",
+      "group_basis": "cluster_1",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "354a5548-af9a-49d0-ac79-d9b1c54809d6",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f35v",
+        "f45v",
+        "f30v"
+      ],
+      "folio_positions": {
+        "f45v": "A",
+        "f30v": "B",
+        "f58v": "C",
+        "f35v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 9413,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:21:07.481174",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "5c106e0b-d54d-462b-b4b5-bb74cfcfce49",
+      "mode": "B",
+      "folio_ids": [
+        "f4v",
+        "f42r",
+        "f35v",
+        "f20v"
+      ],
+      "folio_positions": {
+        "f20v": "A",
+        "f35v": "B",
+        "f42r": "C",
+        "f4v": "D"
+      },
+      "question_id": "most_similar_pair",
+      "response": "A-D",
+      "response_time_ms": 14730,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:21:31.454822",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "b5f079f9-4b60-4554-b13b-0254a1d478c1",
+      "mode": "B",
+      "folio_ids": [
+        "f2r",
+        "f45v",
+        "f30v",
+        "f42r"
+      ],
+      "folio_positions": {
+        "f42r": "A",
+        "f45v": "B",
+        "f2r": "C",
+        "f30v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "A",
+      "response_time_ms": 15831,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:21:47.298943",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "c8a71cc7-8bc4-4c26-b07c-1809d0415aaa",
+      "mode": "B",
+      "folio_ids": [
+        "f2v",
+        "f29v",
+        "f38r",
+        "f30v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f38r": "B",
+        "f30v": "C",
+        "f2v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 11597,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:22:18.056166",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "942f7ceb-cdd4-4e9d-882e-97449dcc6e9c",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f29v",
+        "f37v",
+        "f15r"
+      ],
+      "folio_positions": {
+        "f58v": "A",
+        "f15r": "B",
+        "f29v": "C",
+        "f37v": "D"
+      },
+      "question_id": "most_similar_pair",
+      "response": "ALL_SIMILAR",
+      "response_time_ms": 29558,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:23:11.957515",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "3d06bd25-9298-4b87-b2fd-ae533e459295",
+      "mode": "B",
+      "folio_ids": [
+        "f9v",
+        "f11r",
+        "f2v",
+        "f38v"
+      ],
+      "folio_positions": {
+        "f38v": "A",
+        "f9v": "B",
+        "f11r": "C",
+        "f2v": "D"
+      },
+      "question_id": "most_similar_pair",
+      "response": "A-B",
+      "response_time_ms": 10711,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:23:58.739661",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "9561f709-26c4-4cf1-9d51-7f2cfc30b5a8",
+      "mode": "B",
+      "folio_ids": [
+        "f22v",
+        "f9r",
+        "f19r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f52v": "A",
+        "f22v": "B",
+        "f19r": "C",
+        "f9r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "C",
+      "response_time_ms": 12011,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:24:36.498778",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_prefix",
+      "group_basis": "pc",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "5e76b4a2-24fe-4f70-9040-e040962a255b",
+      "mode": "B",
+      "folio_ids": [
+        "f35v",
+        "f22v",
+        "f11r",
+        "f25r"
+      ],
+      "folio_positions": {
+        "f22v": "A",
+        "f11r": "B",
+        "f25r": "C",
+        "f35v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 10733,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:24:47.238352",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "stratified_random",
+      "group_basis": "stratified",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "fdfc68d8-4bae-4f7c-a052-fcf425937f63",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f35v",
+        "f19r",
+        "f17r"
+      ],
+      "folio_positions": {
+        "f35v": "A",
+        "f58v": "B",
+        "f19r": "C",
+        "f17r": "D"
+      },
+      "question_id": "best_leaf_description",
+      "response": "mixed leaf forms",
+      "response_time_ms": 20655,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:25:22.059761",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "7d37764c-9a16-4e9d-b553-dd28c92ea703",
+      "mode": "B",
+      "folio_ids": [
+        "f52v",
+        "f32v",
+        "f38r",
+        "f21r"
+      ],
+      "folio_positions": {
+        "f32v": "A",
+        "f52v": "B",
+        "f21r": "C",
+        "f38r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 16681,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:25:38.759759",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "d30c041d-92e1-420a-a346-f537e6f29be8",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f35v",
+        "f5v",
+        "f21r"
+      ],
+      "folio_positions": {
+        "f35v": "A",
+        "f21r": "B",
+        "f58v": "C",
+        "f5v": "D"
+      },
+      "question_id": "most_similar_pair",
+      "response": "A-D",
+      "response_time_ms": 15121,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:26:16.165403",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "64c4f145-5c59-4535-bb9f-2f1d376ee853",
+      "mode": "B",
+      "folio_ids": [
+        "f38v",
+        "f3v",
+        "f2r",
+        "f38r"
+      ],
+      "folio_positions": {
+        "f3v": "A",
+        "f2r": "B",
+        "f38r": "C",
+        "f38v": "D"
+      },
+      "question_id": "best_leaf_description",
+      "response": "lobed/divided leaves",
+      "response_time_ms": 25871,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:26:42.050748",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_category",
+      "group_basis": "koaiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "b247b976-5c4e-473b-8701-5d24d0b26b73",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f35v",
+        "f52v",
+        "f51v"
+      ],
+      "folio_positions": {
+        "f35v": "A",
+        "f52v": "B",
+        "f58v": "C",
+        "f51v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 13922,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:27:03.930021",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "b1369148-d814-4621-9831-925a6af4ba32",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f35v",
+        "f45v",
+        "f24v"
+      ],
+      "folio_positions": {
+        "f45v": "A",
+        "f24v": "B",
+        "f58v": "C",
+        "f35v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 7020,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:27:10.966483",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "7362f85a-5948-4edd-8924-12e5e99307d8",
+      "mode": "B",
+      "folio_ids": [
+        "f15r",
+        "f53v",
+        "f25r",
+        "f9r"
+      ],
+      "folio_positions": {
+        "f15r": "A",
+        "f53v": "B",
+        "f25r": "C",
+        "f9r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 7751,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:27:18.732882",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_category",
+      "group_basis": "tshor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "bf8a16de-e45d-4fa8-9d88-7cddd86bd313",
+      "mode": "B",
+      "folio_ids": [
+        "f2v",
+        "f29v",
+        "f22r",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f53v": "A",
+        "f2v": "B",
+        "f22r": "C",
+        "f29v": "D"
+      },
+      "question_id": "most_similar_pair",
+      "response": "A-D",
+      "response_time_ms": 17720,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:27:46.434004",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "c7b50d25-b742-481a-aa5c-469a4557fef6",
+      "mode": "B",
+      "folio_ids": [
+        "f35v",
+        "f32v",
+        "f9v",
+        "f11r"
+      ],
+      "folio_positions": {
+        "f11r": "A",
+        "f9v": "B",
+        "f35v": "C",
+        "f32v": "D"
+      },
+      "question_id": "most_similar_pair",
+      "response": "B-D",
+      "response_time_ms": 14175,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:28:12.268263",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "stratified_random",
+      "group_basis": "stratified",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "015290ad-e1f0-4ed7-8486-6522cd292e83",
+      "mode": "B",
+      "folio_ids": [
+        "f30v",
+        "f18r",
+        "f11r",
+        "f47v"
+      ],
+      "folio_positions": {
+        "f47v": "A",
+        "f11r": "B",
+        "f18r": "C",
+        "f30v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "MIXED",
+      "response_time_ms": 9876,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:28:22.161814",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "2c3e015f-cb96-4cf4-b4c5-5b1db47c33e1",
+      "mode": "B",
+      "folio_ids": [
+        "f5r",
+        "f30v",
+        "f36r",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f5r": "A",
+        "f30v": "B",
+        "f9v": "C",
+        "f36r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 7373,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:29:12.795040",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "a825ff8a-afd3-4a2b-acfc-e530a699300d",
+      "mode": "B",
+      "folio_ids": [
+        "f2v",
+        "f18r",
+        "f49v",
+        "f4v"
+      ],
+      "folio_positions": {
+        "f49v": "A",
+        "f4v": "B",
+        "f18r": "C",
+        "f2v": "D"
+      },
+      "question_id": "best_leaf_description",
+      "response": "mixed leaf forms",
+      "response_time_ms": 15230,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-30T23:29:28.037036",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "fda24273-485d-4d62-bc94-f5e5bb18f4d6",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f30v",
+        "f19r",
+        "f9r"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f10v": "B",
+        "f9r": "C",
+        "f30v": "D"
+      },
+      "question_id": "best_leaf_description",
+      "response": "lobed/divided leaves",
+      "response_time_ms": 12687,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:29:51.376312",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "same_cluster",
+      "group_basis": "cluster_3",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "51b09521-5b13-4df9-ac0a-92a482356f38",
+      "mode": "B",
+      "folio_ids": [
+        "f47v",
+        "f22v",
+        "f23v",
+        "f25r"
+      ],
+      "folio_positions": {
+        "f25r": "A",
+        "f22v": "B",
+        "f47v": "C",
+        "f23v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 8202,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:29:59.592798",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "cc00e621-8391-406c-b34c-f81797190e58",
+      "mode": "B",
+      "folio_ids": [
+        "f45v",
+        "f25r",
+        "f22v",
+        "f11r"
+      ],
+      "folio_positions": {
+        "f11r": "A",
+        "f45v": "B",
+        "f25r": "C",
+        "f22v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "A",
+      "response_time_ms": 10843,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:30:10.448346",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "63945071-fd7e-4279-93b6-28e768595659",
+      "mode": "B",
+      "folio_ids": [
+        "f15r",
+        "f9v",
+        "f29v",
+        "f22r"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f15r": "B",
+        "f9v": "C",
+        "f22r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 10872,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-30T23:30:28.406072",
+      "session_id": "a929aec8-dfd6-4f0a-add5-965e20279a96",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "58e103e4-93e5-46ec-b401-6693c8f66998",
+      "mode": "B",
+      "folio_ids": [
+        "f20v",
+        "f21r",
+        "f49v",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f9v": "A",
+        "f49v": "B",
+        "f20v": "C",
+        "f21r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 48988,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:20:59.766876",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT"
+      ]
+    },
+    {
+      "annotation_id": "80812acb-f078-4aab-9535-74c78a908b78",
+      "mode": "B",
+      "folio_ids": [
+        "f20v",
+        "f21r",
+        "f49v",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f9v": "A",
+        "f49v": "B",
+        "f20v": "C",
+        "f21r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "MIXED",
+      "response_time_ms": 16408,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:21:16.188055",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "0c977dcb-1d5a-41a6-9fab-9abfde58f714",
+      "mode": "B",
+      "folio_ids": [
+        "f20v",
+        "f21r",
+        "f49v",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f9v": "A",
+        "f49v": "B",
+        "f20v": "C",
+        "f21r": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "MIXED",
+      "response_time_ms": 26432,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:21:42.627606",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "546566c3-381a-4f6d-abf3-ec2255c58fe1",
+      "mode": "B",
+      "folio_ids": [
+        "f35v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f21r": "A",
+        "f52v": "B",
+        "f19r": "C",
+        "f35v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "C",
+      "response_time_ms": 19370,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:22:02.021715",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "c263735d-c324-48d1-8732-cbc552dd75cc",
+      "mode": "B",
+      "folio_ids": [
+        "f35v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f21r": "A",
+        "f52v": "B",
+        "f19r": "C",
+        "f35v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 17752,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:22:19.783875",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "38cecf13-5fb0-435c-9c8a-f3ad677c99b0",
+      "mode": "B",
+      "folio_ids": [
+        "f35v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f21r": "A",
+        "f52v": "B",
+        "f19r": "C",
+        "f35v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 8609,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:22:28.399020",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "e3baa84b-b149-4d9e-9c2a-fb17a27ee20e",
+      "mode": "B",
+      "folio_ids": [
+        "f11r",
+        "f15r",
+        "f2v",
+        "f36r"
+      ],
+      "folio_positions": {
+        "f36r": "A",
+        "f15r": "B",
+        "f11r": "C",
+        "f2v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "C",
+      "response_time_ms": 18637,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:22:47.062906",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "3bb74eda-8eef-4d31-bf73-588830409e5c",
+      "mode": "B",
+      "folio_ids": [
+        "f11r",
+        "f15r",
+        "f2v",
+        "f36r"
+      ],
+      "folio_positions": {
+        "f36r": "A",
+        "f15r": "B",
+        "f11r": "C",
+        "f2v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 9088,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:22:56.158231",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "2af0fd75-9581-4a13-9392-18b803878a8f",
+      "mode": "B",
+      "folio_ids": [
+        "f11r",
+        "f15r",
+        "f2v",
+        "f36r"
+      ],
+      "folio_positions": {
+        "f36r": "A",
+        "f15r": "B",
+        "f11r": "C",
+        "f2v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "NO",
+      "response_time_ms": 12266,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:23:08.434835",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "e7d9b4d5-4f51-40d3-8a85-5b9644f37b8e",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f21r"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f21r": "B",
+        "f58v": "C",
+        "f19r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 10936,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:23:19.391043",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "01fef670-78f9-48aa-a4dc-38ded36d4104",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f21r"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f21r": "B",
+        "f58v": "C",
+        "f19r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 16747,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:23:36.145795",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "d9b1e80f-bc3c-4c0d-836d-81332ef74726",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f21r"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f21r": "B",
+        "f58v": "C",
+        "f19r": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "MIXED",
+      "response_time_ms": 9010,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:23:45.164253",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "9572346e-ae06-4952-ac03-017f536e3d1f",
+      "mode": "B",
+      "folio_ids": [
+        "f22r",
+        "f24v",
+        "f4v",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f4v": "A",
+        "f53v": "B",
+        "f24v": "C",
+        "f22r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "C",
+      "response_time_ms": 17038,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:24:02.230269",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "3f071ee7-3c2e-4a54-a71c-99868bfb194f",
+      "mode": "B",
+      "folio_ids": [
+        "f22r",
+        "f24v",
+        "f4v",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f4v": "A",
+        "f53v": "B",
+        "f24v": "C",
+        "f22r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "MIXED",
+      "response_time_ms": 10132,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:24:12.369520",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "9aac6db3-ab53-4c53-9fb4-9fa035b4395b",
+      "mode": "B",
+      "folio_ids": [
+        "f22r",
+        "f24v",
+        "f4v",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f4v": "A",
+        "f53v": "B",
+        "f24v": "C",
+        "f22r": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "MIXED",
+      "response_time_ms": 12066,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:24:24.443553",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "74ba59ed-2be8-4cbb-9583-332586f9f6b7",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f19r": "B",
+        "f52v": "C",
+        "f58v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "B",
+      "response_time_ms": 8122,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:24:32.584958",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "e6cd096a-ac5e-4ecd-8f15-4af91a15087c",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f19r": "B",
+        "f52v": "C",
+        "f58v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 7608,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:24:40.200916",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "b3ae0175-c4ab-4b1a-a7f6-edc4c5871672",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f19r": "B",
+        "f52v": "C",
+        "f58v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 16461,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:24:56.669771",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "38c1d2fb-77f3-447b-b944-5c73862005bf",
+      "mode": "B",
+      "folio_ids": [
+        "f25r",
+        "f30v",
+        "f4v",
+        "f58r"
+      ],
+      "folio_positions": {
+        "f25r": "A",
+        "f58r": "B",
+        "f30v": "C",
+        "f4v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "C",
+      "response_time_ms": 18334,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:25:15.033795",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "c81617dc-9952-4c29-8fa2-73313cc7b238",
+      "mode": "B",
+      "folio_ids": [
+        "f25r",
+        "f30v",
+        "f4v",
+        "f58r"
+      ],
+      "folio_positions": {
+        "f25r": "A",
+        "f58r": "B",
+        "f30v": "C",
+        "f4v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 12711,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:25:27.757354",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "c3b91dc2-1aa7-4bf1-8ede-287ed916438e",
+      "mode": "B",
+      "folio_ids": [
+        "f25r",
+        "f30v",
+        "f4v",
+        "f58r"
+      ],
+      "folio_positions": {
+        "f25r": "A",
+        "f58r": "B",
+        "f30v": "C",
+        "f4v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 11661,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:25:39.426652",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "f1fdfc3b-c6c7-48f9-a49b-1de41c96f290",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f21r": "A",
+        "f52v": "B",
+        "f10v": "C",
+        "f58v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 20481,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:25:59.928067",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "673272de-a6ca-408b-8f85-05d81759b512",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f21r": "A",
+        "f52v": "B",
+        "f10v": "C",
+        "f58v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 13122,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:26:13.058198",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "0a52c15c-a16b-4b08-ab62-49d91eba7109",
+      "mode": "B",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f21r": "A",
+        "f52v": "B",
+        "f10v": "C",
+        "f58v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 6252,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:26:19.319686",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "29760249-0dae-449b-8667-c1dff72328d8",
+      "mode": "B",
+      "folio_ids": [
+        "f5r",
+        "f37v"
+      ],
+      "folio_positions": {
+        "f5r": "A",
+        "f37v": "B"
+      },
+      "question_id": "outlier_detection",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 83134,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:27:42.473459",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "kshody",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT",
+        "REVIEW"
+      ]
+    },
+    {
+      "annotation_id": "c06d853c-350d-4c90-bc17-6a1372106fd8",
+      "mode": "B",
+      "folio_ids": [
+        "f5r",
+        "f37v"
+      ],
+      "folio_positions": {
+        "f5r": "A",
+        "f37v": "B"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 36465,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:28:18.947135",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "kshody",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT"
+      ]
+    },
+    {
+      "annotation_id": "7144b468-eb9b-429e-9944-38d51a7034ea",
+      "mode": "B",
+      "folio_ids": [
+        "f5r",
+        "f37v"
+      ],
+      "folio_positions": {
+        "f5r": "A",
+        "f37v": "B"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "NO",
+      "response_time_ms": 11832,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:28:30.788198",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "kshody",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "34a5db41-fa2a-496d-96c8-3b29c87baf6c",
+      "mode": "B",
+      "folio_ids": [
+        "f2v",
+        "f29v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f2v": "B"
+      },
+      "question_id": "outlier_detection",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 47566,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:29:18.491478",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT"
+      ]
+    },
+    {
+      "annotation_id": "4fc465c2-7197-4322-a02e-94626fdd79b4",
+      "mode": "B",
+      "folio_ids": [
+        "f2v",
+        "f29v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f2v": "B"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 5856,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:29:24.356146",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "bddddb2c-ebec-4e74-b38b-48f2c5db8372",
+      "mode": "B",
+      "folio_ids": [
+        "f2v",
+        "f29v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f2v": "B"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_CLEARLY",
+      "response_time_ms": 8809,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:29:33.179383",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "69e9d7a9-4e40-4788-be5e-74194ee32d2a",
+      "mode": "B",
+      "folio_ids": [
+        "f11r",
+        "f3v",
+        "f53v",
+        "f9r"
+      ],
+      "folio_positions": {
+        "f11r": "A",
+        "f3v": "B",
+        "f9r": "C",
+        "f53v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "B",
+      "response_time_ms": 18071,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:29:51.279614",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "57c8a712-501b-43a7-99ca-2f037c7f6d6b",
+      "mode": "B",
+      "folio_ids": [
+        "f11r",
+        "f3v",
+        "f53v",
+        "f9r"
+      ],
+      "folio_positions": {
+        "f11r": "A",
+        "f3v": "B",
+        "f9r": "C",
+        "f53v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_CLEARLY",
+      "response_time_ms": 19633,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:30:10.921954",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "02f0a321-9167-4f34-83a7-2e06b75df731",
+      "mode": "B",
+      "folio_ids": [
+        "f11r",
+        "f3v",
+        "f53v",
+        "f9r"
+      ],
+      "folio_positions": {
+        "f11r": "A",
+        "f3v": "B",
+        "f9r": "C",
+        "f53v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_CLEARLY",
+      "response_time_ms": 14007,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:30:24.947320",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "ca0b4c8e-3fb3-492c-93fd-e4f236d60ee9",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f30v",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f9v": "B",
+        "f30v": "C",
+        "f10v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "A",
+      "response_time_ms": 9666,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:30:34.639606",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "d7c08a3c-ef4d-4e39-b63f-4caf177a9beb",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f30v",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f9v": "B",
+        "f30v": "C",
+        "f10v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 7920,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:30:42.569107",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "ffe85809-6eb3-4b55-8ea2-761546647de8",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f30v",
+        "f9v"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f9v": "B",
+        "f30v": "C",
+        "f10v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 5971,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:30:48.550143",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "1a9f7ca2-da29-4895-a49a-cf5fdea0c183",
+      "mode": "B",
+      "folio_ids": [
+        "f18r",
+        "f29v",
+        "f36r",
+        "f58v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f58v": "B",
+        "f18r": "C",
+        "f36r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "NONE_STAND_OUT",
+      "response_time_ms": 36230,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:31:24.814736",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT"
+      ]
+    },
+    {
+      "annotation_id": "e74a3931-3002-4fe7-87a6-bc872e59400e",
+      "mode": "B",
+      "folio_ids": [
+        "f18r",
+        "f29v",
+        "f36r",
+        "f58v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f58v": "B",
+        "f18r": "C",
+        "f36r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 18138,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:31:42.961765",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "7299e7e4-1ab0-4e9d-8156-196d7ea0a66f",
+      "mode": "B",
+      "folio_ids": [
+        "f18r",
+        "f29v",
+        "f36r",
+        "f58v"
+      ],
+      "folio_positions": {
+        "f29v": "A",
+        "f58v": "B",
+        "f18r": "C",
+        "f36r": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 7889,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:31:50.861566",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "7447f17a-47f7-4433-8d2d-a072f6f80091",
+      "mode": "B",
+      "folio_ids": [
+        "f38v",
+        "f3v"
+      ],
+      "folio_positions": {
+        "f38v": "A",
+        "f3v": "B"
+      },
+      "question_id": "outlier_detection",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 271178,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:36:22.059023",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "koaiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT",
+        "REVIEW"
+      ]
+    },
+    {
+      "annotation_id": "f1e2b88e-1744-4952-a2ce-0b05d50fd9e6",
+      "mode": "B",
+      "folio_ids": [
+        "f38v",
+        "f3v"
+      ],
+      "folio_positions": {
+        "f38v": "A",
+        "f3v": "B"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 9386,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:36:31.466914",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "koaiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "cfc0e357-b8d0-4839-9d92-9934b283682d",
+      "mode": "B",
+      "folio_ids": [
+        "f38v",
+        "f3v"
+      ],
+      "folio_positions": {
+        "f38v": "A",
+        "f3v": "B"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "NO",
+      "response_time_ms": 318762,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:41:50.243922",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "koaiin",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT",
+        "REVIEW"
+      ]
+    },
+    {
+      "annotation_id": "ed845ee7-0eb0-4c0d-9702-9b0e0602c030",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f15r",
+        "f22r",
+        "f58r"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f58r": "B",
+        "f15r": "C",
+        "f22r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "A",
+      "response_time_ms": 98693,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:43:28.965221",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT",
+        "REVIEW"
+      ]
+    },
+    {
+      "annotation_id": "84dd3d54-ebeb-485c-9f02-554f82ecdb17",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f15r",
+        "f22r",
+        "f58r"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f58r": "B",
+        "f15r": "C",
+        "f22r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "YES_CLEARLY",
+      "response_time_ms": 10501,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:43:39.476842",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "7eadf4b2-4b94-4cf8-9c42-61f7873ef103",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f15r",
+        "f22r",
+        "f58r"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f58r": "B",
+        "f15r": "C",
+        "f22r": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "NO",
+      "response_time_ms": 9434,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:43:48.921107",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "6428f5ab-7ed8-4613-9844-e94dfb6ec6ab",
+      "mode": "B",
+      "folio_ids": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f21r": "B",
+        "f52v": "C"
+      },
+      "question_id": "outlier_detection",
+      "response": "A",
+      "response_time_ms": 12537,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:44:01.482702",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "pchor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "bb54959a-cb67-4369-932e-14da32c532bc",
+      "mode": "B",
+      "folio_ids": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f21r": "B",
+        "f52v": "C"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 11391,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:44:12.884378",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "pchor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "38dc4c47-e9b5-4951-8e3b-d2294fad1eef",
+      "mode": "B",
+      "folio_ids": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f19r": "A",
+        "f21r": "B",
+        "f52v": "C"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_SOMEWHAT",
+      "response_time_ms": 8210,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:44:21.106085",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "pchor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "5ffbfd2f-5b45-4ac1-b37b-6ea87eb7eb60",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f21r": "B",
+        "f52v": "C",
+        "f19r": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 10948,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:44:32.072750",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "db207797-f1cd-450d-8bb6-08261d1894ec",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f21r": "B",
+        "f52v": "C",
+        "f19r": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "MIXED",
+      "response_time_ms": 10592,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:44:42.675730",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "ddbc0bcb-85f2-4f2a-8301-a298e26fcdb5",
+      "mode": "B",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "folio_positions": {
+        "f10v": "A",
+        "f21r": "B",
+        "f52v": "C",
+        "f19r": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "MIXED",
+      "response_time_ms": 16528,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:44:59.216008",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "474c6599-fbee-448d-83a6-efe200dc9897",
+      "mode": "B",
+      "folio_ids": [
+        "f58r",
+        "f42r"
+      ],
+      "folio_positions": {
+        "f42r": "A",
+        "f58r": "B"
+      },
+      "question_id": "outlier_detection",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 21291,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:45:20.528217",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "support",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "ffdef42c-48de-49a6-8660-490ebecf9e9b",
+      "mode": "B",
+      "folio_ids": [
+        "f58r",
+        "f42r"
+      ],
+      "folio_positions": {
+        "f42r": "A",
+        "f58r": "B"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 40985,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:46:01.536869",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "support",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT"
+      ]
+    },
+    {
+      "annotation_id": "0d4a3954-167a-4cf3-ac34-bd5a86c1609e",
+      "mode": "B",
+      "folio_ids": [
+        "f58r",
+        "f42r"
+      ],
+      "folio_positions": {
+        "f42r": "A",
+        "f58r": "B"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 7254,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:46:08.804795",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_hub_type",
+      "group_basis": "support",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "ebd8cb12-0d38-4211-87ad-a7dcbd89a2eb",
+      "mode": "B",
+      "folio_ids": [
+        "f15r",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f15r": "A",
+        "f53v": "B"
+      },
+      "question_id": "outlier_detection",
+      "response": "CANNOT_TELL",
+      "response_time_ms": 8327,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:46:17.154647",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "tshor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "3b257070-6ecb-4a8b-8ea1-db481daadd1c",
+      "mode": "B",
+      "folio_ids": [
+        "f15r",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f15r": "A",
+        "f53v": "B"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "NO",
+      "response_time_ms": 5730,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:46:22.896820",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "tshor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "b91abc82-b126-4f81-b30e-1b5c204aeabc",
+      "mode": "B",
+      "folio_ids": [
+        "f15r",
+        "f53v"
+      ],
+      "folio_positions": {
+        "f15r": "A",
+        "f53v": "B"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "NO",
+      "response_time_ms": 9613,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:46:32.526215",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "same_category",
+      "group_basis": "tshor",
+      "is_null_group": false,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "38c81a22-43bd-4e3b-aa93-e3be2bcd2c23",
+      "mode": "B",
+      "folio_ids": [
+        "f17r",
+        "f37v",
+        "f49v",
+        "f51v"
+      ],
+      "folio_positions": {
+        "f49v": "A",
+        "f37v": "B",
+        "f17r": "C",
+        "f51v": "D"
+      },
+      "question_id": "outlier_detection",
+      "response": "D",
+      "response_time_ms": 11154,
+      "response_weight": 1.0,
+      "timestamp": "2025-12-31T07:46:43.711104",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    },
+    {
+      "annotation_id": "baf07135-98dd-4ef7-a3c2-77b3fe0bb3fd",
+      "mode": "B",
+      "folio_ids": [
+        "f17r",
+        "f37v",
+        "f49v",
+        "f51v"
+      ],
+      "folio_positions": {
+        "f49v": "A",
+        "f37v": "B",
+        "f17r": "C",
+        "f51v": "D"
+      },
+      "question_id": "compare_leaf_similarity",
+      "response": "MIXED",
+      "response_time_ms": 36165,
+      "response_weight": 0.5,
+      "timestamp": "2025-12-31T07:47:19.887855",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": [
+        "HESITANT"
+      ]
+    },
+    {
+      "annotation_id": "ce7e3cb6-3c16-4338-83d8-ad5d514a26c3",
+      "mode": "B",
+      "folio_ids": [
+        "f17r",
+        "f37v",
+        "f49v",
+        "f51v"
+      ],
+      "folio_positions": {
+        "f49v": "A",
+        "f37v": "B",
+        "f17r": "C",
+        "f51v": "D"
+      },
+      "question_id": "compare_root_similarity",
+      "response": "YES_CLEARLY",
+      "response_time_ms": 15459,
+      "response_weight": 0.75,
+      "timestamp": "2025-12-31T07:47:35.360443",
+      "session_id": "6038127f-1d71-49b0-8e7c-e9d8090c8b5d",
+      "group_type": "random",
+      "group_basis": "random",
+      "is_null_group": true,
+      "is_foil_group": false,
+      "is_duplicate_check": false,
+      "flags": []
+    }
+  ]
+}

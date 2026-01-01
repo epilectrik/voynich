@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "phase": "A6",
+    "title": "daiin Analysis Synthesis",
+    "timestamp": "2025-12-31T09:15:12.429164",
+    "dependencies": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ]
+  },
+  "findings": {
+    "classification": "DETERMINER",
+    "confidence": "HIGH",
+    "positional_constraint_ratio": 0.002,
+    "context_restriction_score": 0.0376,
+    "consistent_across_sections": "True",
+    "cipher_compatibility": {
+      "naibbe_compatible": true,
+      "reasoning": "Weak constraints compatible with cipher hypothesis"
+    }
+  },
+  "summary": {
+    "key_results": [
+      "Final classification: DETERMINER (HIGH confidence)",
+      "Positional constraint ratio: 0.002",
+      "Context restriction: 0.0376",
+      "Consistent across Currier A/B: True"
+    ],
+    "implications": [
+      "Weak constraints compatible with cipher hypothesis"
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "phase": "A1",
+    "title": "Frequency Baseline",
+    "timestamp": "2025-12-31T09:15:12.132161",
+    "dependencies": []
+  },
+  "findings": {
+    "daiin_total_occurrences": 919,
+    "daiin_rank": 1,
+    "daiin_currier_a": 477,
+    "daiin_currier_b": 405,
+    "entries_containing_daiin": 214,
+    "total_entries": 227,
+    "percent_entries_with_daiin": 94.3,
+    "top_20_words": [
+      {
+        "word": "daiin",
+        "count": 919,
+        "currier_a": 477,
+        "currier_b": 405,
+        "prefix": "da",
+        "suffix": "aiin",
+        "length": 5
+      },
+      {
+        "word": "ol",
+        "count": 567,
+        "currier_a": 117,
+        "currier_b": 436,
+        "prefix": "ol",
+        "suffix": "ol",
+        "length": 2
+      },
+      {
+        "word": "aiin",
+        "count": 565,
+        "currier_a": 94,
+        "currier_b": 432,
+        "prefix": "ai",
+        "suffix": "aiin",
+        "length": 4
+      },
+      {
+        "word": "chedy",
+        "count": 504,
+        "currier_a": 3,
+        "currier_b": 493,
+        "prefix": "ch",
+        "suffix": "edy",
+        "length": 5
+      },
+      {
+        "word": "qokaiin",
+        "count": 429,
+        "currier_a": 26,
+        "currier_b": 403,
+        "prefix": "qo",
+        "suffix": "aiin",
+        "length": 7
+      },
+      {
+        "word": "shedy",
+        "count": 416,
+        "currier_a": 3,
+        "currier_b": 408,
+        "prefix": "sh",
+        "suffix": "edy",
+        "length": 5
+      },
+      {
+        "word": "or",
+        "count": 399,
+        "currier_a": 103,
+        "currier_b": 276,
+        "prefix": "or",
+        "suffix": "or",
+        "length": 2
+      },
+      {
+        "word": "chol",
+        "count": 395,
+        "currier_a": 259,
+        "currier_b": 115,
+        "prefix": "ch",
+        "suffix": "ol",
+        "length": 4
+      },
+      {
+        "word": "ar",
+        "count": 382,
+        "currier_a": 56,
+        "currier_b": 276,
+        "prefix": "ar",
+        "suffix": "ar",
+        "length": 2
+      },
+      {
+        "word": "chey",
+        "count": 374,
+        "currier_a": 92,
+        "currier_b": 262,
+        "prefix": "ch",
+        "suffix": "ey",
+        "length": 4
+      },
+      {
+        "word": "dar",
+        "count": 356,
+        "currier_a": 105,
+        "currier_b": 217,
+        "prefix": "da",
+        "suffix": "ar",
+        "length": 3
+      },
+      {
+        "word": "dy",
+        "count": 313,
+        "currier_a": 145,
+        "currier_b": 127,
+        "prefix": "dy",
+        "suffix": "dy",
+        "length": 2
+      },
+      {
+        "word": "okaiin",
+        "count": 297,
+        "currier_a": 39,
+        "currier_b": 250,
+        "prefix": "ok",
+        "suffix": "aiin",
+        "length": 6
+      },
+      {
+        "word": "dal",
+        "count": 293,
+        "currier_a": 103,
+        "currier_b": 159,
+        "prefix": "da",
+        "suffix": "al",
+        "length": 3
+      },
+      {
+        "word": "shey",
+        "count": 291,
+        "currier_a": 64,
+        "currier_b": 212,
+        "prefix": "sh",
+        "suffix": "ey",
+        "length": 4
+      },
+      {
+        "word": "al",
+        "count": 286,
+        "currier_a": 32,
+        "currier_b": 223,
+        "prefix": "al",
+        "suffix": "al",
+        "length": 2
+      },
+      {
+        "word": "qokeey",
+        "count": 284,
+        "currier_a": 40,
+        "currier_b": 239,
+        "prefix": "qo",
+        "suffix": "eey",
+        "length": 6
+      },
+      {
+        "word": "qokeedy",
+        "count": 274,
+        "currier_a": 0,
+        "currier_b": 274,
+        "prefix": "qo",
+        "suffix": "eedy",
+        "length": 7
+      },
+      {
+        "word": "qokain",
+        "count": 258,
+        "currier_a": 4,
+        "currier_b": 254,
+        "prefix": "qo",
+        "suffix": "ain",
+        "length": 6
+      },
+      {
+        "word": "saiin",
+        "count": 256,
+        "currier_a": 59,
+        "currier_b": 190,
+        "prefix": "sa",
+        "suffix": "aiin",
+        "length": 5
+      }
+    ],
+    "daiin_variants_total": 1248
+  },
+  "summary": {
+    "key_results": [
+      "'daiin' appears 919 times (rank #1)",
+      "Distribution: 477 in A, 405 in B",
+      "Present in 214 of 227 entries (94.3%)"
+    ],
+    "implications": []
+  }
+}

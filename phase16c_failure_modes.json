@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "phase": "16C",
+    "title": "Failure Mode Mapping",
+    "timestamp": "2025-12-31T15:26:15.650024"
+  },
+  "forbidden_count": 17,
+  "forbidden_transitions": [
+    "shey -> aiin",
+    "shey -> al",
+    "shey -> c",
+    "chol -> r",
+    "chedy -> ee",
+    "dy -> aiin",
+    "dy -> chey",
+    "l -> chol",
+    "or -> dal",
+    "chey -> chedy",
+    "chey -> shedy",
+    "ar -> dal",
+    "c -> ee",
+    "he -> t",
+    "he -> or",
+    "shedy -> aiin",
+    "shedy -> o"
+  ],
+  "process_used": "P1_REFLUX_DISTILLATION",
+  "mappings": [
+    {
+      "transition": "shey -> aiin",
+      "node_a_interpretation": "slow_cooling_phase",
+      "node_b_interpretation": "crystallization_phase",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "OCCLUSION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "shey -> al",
+      "node_a_interpretation": "slow_cooling_phase",
+      "node_b_interpretation": "mother_liquor_handling",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "CO_PRECIPITATION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "shey -> c",
+      "node_a_interpretation": "slow_cooling_phase",
+      "node_b_interpretation": "nucleation_control",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "SUPERSATURATION_CRASH",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "chol -> r",
+      "node_a_interpretation": "dissolution_phase",
+      "node_b_interpretation": "rapid_cooling",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "OILING_OUT",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "chedy -> ee",
+      "node_a_interpretation": "purification_stage",
+      "node_b_interpretation": "equilibration",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "INSUFFICIENT_NUCLEATION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "dy -> aiin",
+      "node_a_interpretation": "drying_phase",
+      "node_b_interpretation": "crystallization_phase",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "EXCESS_NUCLEATION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "dy -> chey",
+      "node_a_interpretation": "drying_phase",
+      "node_b_interpretation": "controlled_cooling",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "POLYMORPHIC_SWITCH",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "l -> chol",
+      "node_a_interpretation": "state_l",
+      "node_b_interpretation": "dissolution_phase",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "AGGLOMERATION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "or -> dal",
+      "node_a_interpretation": "crystallizer_vessel",
+      "node_b_interpretation": "drainage",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "BREAKAGE",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "chey -> chedy",
+      "node_a_interpretation": "controlled_cooling",
+      "node_b_interpretation": "purification_stage",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "REDISSOLUTION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "chey -> shedy",
+      "node_a_interpretation": "controlled_cooling",
+      "node_b_interpretation": "slow_purification",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "THERMAL_DECOMPOSITION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "ar -> dal",
+      "node_a_interpretation": "recovery_stage",
+      "node_b_interpretation": "drainage",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "INCOMPLETE_SEPARATION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "c -> ee",
+      "node_a_interpretation": "nucleation_control",
+      "node_b_interpretation": "equilibration",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "OCCLUSION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "he -> t",
+      "node_a_interpretation": "heating_phase",
+      "node_b_interpretation": "temperature_control",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "CO_PRECIPITATION",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "he -> or",
+      "node_a_interpretation": "heating_phase",
+      "node_b_interpretation": "crystallizer_vessel",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "SUPERSATURATION_CRASH",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "shedy -> aiin",
+      "node_a_interpretation": "slow_purification",
+      "node_b_interpretation": "crystallization_phase",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "OILING_OUT",
+      "plausibility": "MEDIUM"
+    },
+    {
+      "transition": "shedy -> o",
+      "node_a_interpretation": "slow_purification",
+      "node_b_interpretation": "operation_cycle",
+      "process": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "potential_failure_mode": "INSUFFICIENT_NUCLEATION",
+      "plausibility": "MEDIUM"
+    }
+  ],
+  "failure_mode_distribution": {
+    "OCCLUSION": 2,
+    "CO_PRECIPITATION": 2,
+    "SUPERSATURATION_CRASH": 2,
+    "OILING_OUT": 2,
+    "INSUFFICIENT_NUCLEATION": 2,
+    "EXCESS_NUCLEATION": 1,
+    "POLYMORPHIC_SWITCH": 1,
+    "AGGLOMERATION": 1,
+    "BREAKAGE": 1,
+    "REDISSOLUTION": 1,
+    "THERMAL_DECOMPOSITION": 1,
+    "INCOMPLETE_SEPARATION": 1
+  },
+  "overall_coherence": "MEDIUM",
+  "INTERPRETATION": "The 17 forbidden micro-transitions map to physical failure modes in P1_REFLUX_DISTILLATION.\nThese represent empirically discovered 'don't do this' rules - transitions that lead to process failure.\nThe distribution of failure modes suggests the author documented real operational failures."
+}

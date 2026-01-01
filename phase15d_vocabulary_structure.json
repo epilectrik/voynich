@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "phase": "15D",
+    "title": "Vocabulary Structure",
+    "timestamp": "2025-12-31T15:36:11.540536"
+  },
+  "nodes": 28,
+  "total_occurrences": 55523,
+  "frequency_distribution": {
+    "shape": "ZIPF",
+    "zipf_exponent": -0.73,
+    "most_frequent": [
+      {
+        "node": "k",
+        "freq": 9505
+      },
+      {
+        "node": "h",
+        "freq": 6163
+      },
+      {
+        "node": "e",
+        "freq": 4542
+      },
+      {
+        "node": "daiin",
+        "freq": 3020
+      },
+      {
+        "node": "ch",
+        "freq": 2940
+      },
+      {
+        "node": "t",
+        "freq": 2764
+      },
+      {
+        "node": "ol",
+        "freq": 2198
+      },
+      {
+        "node": "chedy",
+        "freq": 1740
+      },
+      {
+        "node": "shedy",
+        "freq": 1517
+      },
+      {
+        "node": "aiin",
+        "freq": 1398
+      }
+    ],
+    "least_frequent": [
+      {
+        "node": "eo",
+        "freq": 930
+      },
+      {
+        "node": "dal",
+        "freq": 909
+      },
+      {
+        "node": "shey",
+        "freq": 906
+      },
+      {
+        "node": "he",
+        "freq": 904
+      },
+      {
+        "node": "ed",
+        "freq": 857
+      }
+    ]
+  },
+  "co_occurrence_clusters": {
+    "cluster_count": 1,
+    "clusters": [
+      {
+        "id": 0,
+        "members": [
+          "h",
+          "e",
+          "dar",
+          "dy",
+          "daiin",
+          "aiin",
+          "t",
+          "eo",
+          "r",
+          "ch"
+        ],
+        "size": 28
+      }
+    ]
+  },
+  "operator_affinity": {
+    "k": {
+      "qo": 7573,
+      "ol": 892,
+      "ch": 368,
+      "al": 106,
+      "sh": 102
+    },
+    "e": {
+      "ch": 1724,
+      "sh": 1030,
+      "ok": 589,
+      "ot": 441,
+      "yk": 139
+    },
+    "daiin": {
+      "da": 3020
+    },
+    "t": {
+      "qo": 2267,
+      "ch": 155,
+      "ol": 64,
+      "sh": 42,
+      "dy": 28
+    },
+    "ch": {
+      "ot": 599,
+      "ok": 498,
+      "op": 400,
+      "ol": 367,
+      "yk": 153
+    },
+    "ol": {
+      "ol": 1743,
+      "ch": 135,
+      "ot": 87,
+      "ok": 64,
+      "sh": 58
+    },
+    "chedy": {
+      "ch": 1736,
+      "ol": 3,
+      "yp": 1
+    },
+    "h": {
+      "ct": 958,
+      "pc": 319,
+      "ts": 148,
+      "fc": 95,
+      "cf": 55
+    },
+    "shedy": {
+      "sh": 1517
+    },
+    "ar": {
+      "ar": 1028,
+      "ot": 93,
+      "ok": 87,
+      "ch": 46,
+      "op": 20
+    }
+  },
+  "hub_correlation": {
+    "hub_headings_found": [],
+    "correlation_computed": false,
+    "note": "Hub correlation requires additional hub folio data"
+  },
+  "population_bias": {
+    "a_biased": [
+      {
+        "node": "chol",
+        "a_ratio": 0.662
+      }
+    ],
+    "b_biased": [
+      {
+        "node": "chedy",
+        "a_ratio": 0.037
+      },
+      {
+        "node": "shedy",
+        "a_ratio": 0.042
+      },
+      {
+        "node": "ed",
+        "a_ratio": 0.062
+      },
+      {
+        "node": "al",
+        "a_ratio": 0.305
+      },
+      {
+        "node": "ar",
+        "a_ratio": 0.333
+      }
+    ],
+    "neutral": [
+      {
+        "node": "h",
+        "a_ratio": 0.579
+      },
+      {
+        "node": "e",
+        "a_ratio": 0.54
+      },
+      {
+        "node": "dar",
+        "a_ratio": 0.47
+      },
+      {
+        "node": "dy",
+        "a_ratio": 0.579
+      },
+      {
+        "node": "aiin",
+        "a_ratio": 0.364
+      },
+      {
+        "node": "daiin",
+        "a_ratio": 0.578
+      },
+      {
+        "node": "t",
+        "a_ratio": 0.493
+      },
+      {
+        "node": "eo",
+        "a_ratio": 0.425
+      },
+      {
+        "node": "r",
+        "a_ratio": 0.504
+      },
+      {
+        "node": "ch",
+        "a_ratio": 0.571
+      }
+    ],
+    "a_biased_count": 1,
+    "b_biased_count": 5,
+    "neutral_count": 22
+  },
+  "VOCABULARY_STRUCTURE": "ZIPF frequency distribution (exponent -0.73). 1 co-occurrence clusters. A-biased: 1, B-biased: 5, Neutral: 22."
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "phase": "A4",
+    "title": "Functional Classification",
+    "timestamp": "2025-12-31T09:15:12.389163",
+    "dependencies": [
+      "A1",
+      "A2",
+      "A3"
+    ]
+  },
+  "findings": {
+    "evidence": {
+      "closing_suffix_rate": 0.314,
+      "precedes_long_word_rate": 0.467,
+      "consecutive_daiin_rate": 0.002,
+      "prefix_match_rate": 0.113
+    },
+    "hypothesis_scores": {
+      "CLAUSE_MARKER": 3,
+      "DETERMINER": 5,
+      "CONJUNCTION": 1,
+      "CONTENT_WORD": 0
+    },
+    "classification": "DETERMINER",
+    "confidence": "HIGH"
+  },
+  "summary": {
+    "key_results": [
+      "Classification: DETERMINER (confidence: HIGH)",
+      "Scores: CLAUSE_MARKER=3, DETERMINER=5, CONJUNCTION=1, CONTENT=0"
+    ],
+    "implications": [
+      "'daiin' most likely functions as DETERMINER"
+    ]
+  }
+}

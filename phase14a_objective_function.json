@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "phase": "14A",
+    "title": "Objective Function Inference",
+    "timestamp": "2025-12-31T14:15:01.715643"
+  },
+  "candidate_scores_per_state": {
+    "STABILITY": {
+      "STATE-A": 0.1176,
+      "STATE-B": 0.0615,
+      "STATE-C": 26.186,
+      "STATE-D": 0.2054
+    },
+    "REFINEMENT": {
+      "STATE-A": 0.463,
+      "STATE-B": 0.535,
+      "STATE-C": 0.498,
+      "STATE-D": 0.519
+    },
+    "CENTRALITY": {
+      "STATE-A": 16.78,
+      "STATE-B": 19.69,
+      "STATE-C": 1450.68,
+      "STATE-D": 50.48
+    },
+    "HOMOGENEITY": {
+      "STATE-A": 0.05,
+      "STATE-B": 0.0667,
+      "STATE-C": 0.0385,
+      "STATE-D": 0.0435
+    },
+    "VOLATILITY_TO_FIXATION": {
+      "STATE-A": 1.2475,
+      "STATE-B": 0.9448,
+      "STATE-C": 1.037,
+      "STATE-D": 1.008
+    }
+  },
+  "monotonicity_analysis": {
+    "STABILITY": {
+      "mean_correlation": -0.02,
+      "std_correlation": 0.118,
+      "positive_fraction": 0.366
+    },
+    "REFINEMENT": {
+      "mean_correlation": 0.03,
+      "std_correlation": 0.12,
+      "positive_fraction": 0.598
+    },
+    "CENTRALITY": {
+      "mean_correlation": -0.02,
+      "std_correlation": 0.118,
+      "positive_fraction": 0.366
+    },
+    "HOMOGENEITY": {
+      "mean_correlation": 0.009,
+      "std_correlation": 0.115,
+      "positive_fraction": 0.518
+    },
+    "VOLATILITY_TO_FIXATION": {
+      "mean_correlation": -0.028,
+      "std_correlation": 0.119,
+      "positive_fraction": 0.346
+    }
+  },
+  "convergence_alignment": {
+    "STABILITY": {
+      "state_c_position": 1.0,
+      "at_maximum": true,
+      "at_minimum": false
+    },
+    "REFINEMENT": {
+      "state_c_position": 0.486,
+      "at_maximum": false,
+      "at_minimum": false
+    },
+    "CENTRALITY": {
+      "state_c_position": 1.0,
+      "at_maximum": true,
+      "at_minimum": false
+    },
+    "HOMOGENEITY": {
+      "state_c_position": 0.0,
+      "at_maximum": false,
+      "at_minimum": true
+    },
+    "VOLATILITY_TO_FIXATION": {
+      "state_c_position": 0.305,
+      "at_maximum": false,
+      "at_minimum": false
+    }
+  },
+  "forbidden_transition_explanation": {
+    "STABILITY": {
+      "a_b_gap": 0.056,
+      "a_c_gap": 26.068,
+      "b_c_gap": 26.124,
+      "explains_forbidden": false
+    },
+    "REFINEMENT": {
+      "a_b_gap": 0.072,
+      "a_c_gap": 0.035,
+      "b_c_gap": 0.037,
+      "explains_forbidden": true
+    },
+    "CENTRALITY": {
+      "a_b_gap": 2.91,
+      "a_c_gap": 1433.9,
+      "b_c_gap": 1430.99,
+      "explains_forbidden": false
+    },
+    "HOMOGENEITY": {
+      "a_b_gap": 0.017,
+      "a_c_gap": 0.012,
+      "b_c_gap": 0.028,
+      "explains_forbidden": true
+    },
+    "VOLATILITY_TO_FIXATION": {
+      "a_b_gap": 0.303,
+      "a_c_gap": 0.21,
+      "b_c_gap": 0.092,
+      "explains_forbidden": true
+    }
+  },
+  "candidate_rankings": [
+    {
+      "rank": 1,
+      "candidate": "STABILITY",
+      "score": 0.52,
+      "correlation": -0.02
+    },
+    {
+      "rank": 2,
+      "candidate": "CENTRALITY",
+      "score": 0.52,
+      "correlation": -0.02
+    },
+    {
+      "rank": 3,
+      "candidate": "HOMOGENEITY",
+      "score": 0.509,
+      "correlation": 0.009
+    },
+    {
+      "rank": 4,
+      "candidate": "REFINEMENT",
+      "score": 0.03,
+      "correlation": 0.03
+    },
+    {
+      "rank": 5,
+      "candidate": "VOLATILITY_TO_FIXATION",
+      "score": 0.028,
+      "correlation": -0.028
+    }
+  ],
+  "BEST_CANDIDATE": {
+    "name": "STABILITY",
+    "correlation": -0.02,
+    "direction": "MINIMIZE",
+    "explanation": "The system seeks the most stable configuration - STATE-C has highest repetition depth and tightest cycles."
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "generated": "2025-12-31T06:52:08.283045",
+    "total_groups": 20,
+    "by_type": {
+      "same_hub_type": 6,
+      "random": 9,
+      "same_category": 5
+    },
+    "closer_role_status": "UNTESTABLE",
+    "closer_reason": "Only 1 folio available (f22r); f96r is text-only",
+    "closer_implication": "CLOSER visual coherence cannot be independently validated"
+  },
+  "hub_role_summary": {
+    "OPENER": {
+      "folios": [
+        "f58v",
+        "f35v",
+        "f10v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "count": 6,
+      "testable": true
+    },
+    "CLOSER": {
+      "folios": [
+        "f22r"
+      ],
+      "count": 1,
+      "testable": false
+    },
+    "SUPPORT": {
+      "folios": [
+        "f58r",
+        "f42r"
+      ],
+      "count": 2,
+      "testable": true
+    }
+  },
+  "groups": [
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f21r",
+        "f52v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": [
+        "f35v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f52v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": [
+        "f58v",
+        "f10v",
+        "f19r",
+        "f21r"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "opener",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "same_hub_type",
+      "group_basis": "support",
+      "folio_ids": [
+        "f58r",
+        "f42r"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false,
+      "note": "SUPPORT has only 2 folios - limited test"
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f10v",
+        "f15r",
+        "f22r",
+        "f58r"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f22r",
+        "f24v",
+        "f4v",
+        "f53v"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f17r",
+        "f37v",
+        "f49v",
+        "f51v"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f11r",
+        "f3v",
+        "f53v",
+        "f9r"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f18r",
+        "f29v",
+        "f36r",
+        "f58v"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f11r",
+        "f15r",
+        "f2v",
+        "f36r"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f10v",
+        "f19r",
+        "f30v",
+        "f9v"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f25r",
+        "f30v",
+        "f4v",
+        "f58r"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "random",
+      "group_basis": "random",
+      "folio_ids": [
+        "f20v",
+        "f21r",
+        "f49v",
+        "f9v"
+      ],
+      "is_null_group": true,
+      "is_foil_group": false
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "pchor",
+      "folio_ids": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false,
+      "note": "Category has only 3 folios"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "kooiin",
+      "folio_ids": [
+        "f2v",
+        "f29v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false,
+      "note": "Category has only 2 folios"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "kshody",
+      "folio_ids": [
+        "f5r",
+        "f37v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false,
+      "note": "Category has only 2 folios"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "tshor",
+      "folio_ids": [
+        "f15r",
+        "f53v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false,
+      "note": "Category has only 2 folios"
+    },
+    {
+      "group_type": "same_category",
+      "group_basis": "koaiin",
+      "folio_ids": [
+        "f38v",
+        "f3v"
+      ],
+      "is_null_group": false,
+      "is_foil_group": false,
+      "note": "Category has only 2 folios"
+    }
+  ]
+}

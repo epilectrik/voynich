@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "phase": "10C",
+    "title": "Alchemical Signature Detection",
+    "timestamp": "2025-12-31T12:51:30.957935"
+  },
+  "patterns": {
+    "short_cycles": {
+      "count": 1441,
+      "total_occurrences": 3806,
+      "top_10": [
+        [
+          [
+            "k",
+            "chedy"
+          ],
+          83
+        ],
+        [
+          [
+            "k",
+            "shedy"
+          ],
+          78
+        ],
+        [
+          [
+            "k",
+            "h"
+          ],
+          75
+        ],
+        [
+          [
+            "k",
+            "ck"
+          ],
+          40
+        ],
+        [
+          [
+            "k",
+            "e"
+          ],
+          38
+        ],
+        [
+          [
+            "k",
+            "t"
+          ],
+          37
+        ],
+        [
+          [
+            "h",
+            "k"
+          ],
+          35
+        ],
+        [
+          [
+            "k",
+            "ch"
+          ],
+          31
+        ],
+        [
+          [
+            "k",
+            "shey"
+          ],
+          28
+        ],
+        [
+          [
+            "h",
+            "daiin"
+          ],
+          24
+        ]
+      ],
+      "interpretation": "oscillatory_behavior"
+    },
+    "ladder_to_cycle": {
+      "total_ladders": 98100,
+      "count": 95866,
+      "cycle_return_rate": 0.977,
+      "interpretation": "ladders_collapse_to_cycles"
+    },
+    "attractor_states": {
+      "count": 475,
+      "top_attractors": [
+        [
+          "h",
+          668
+        ],
+        [
+          "k",
+          642
+        ],
+        [
+          "e",
+          566
+        ],
+        [
+          "ch",
+          472
+        ],
+        [
+          "daiin",
+          413
+        ],
+        [
+          "t",
+          339
+        ],
+        [
+          "ol",
+          316
+        ],
+        [
+          "s",
+          271
+        ],
+        [
+          "o",
+          270
+        ],
+        [
+          "or",
+          269
+        ]
+      ],
+      "convergence_rate": 0.385,
+      "interpretation": "strong_attractors"
+    },
+    "reversible_pairs": {
+      "total_pairs_tested": 242,
+      "reversible_count": 229,
+      "rate": 0.946,
+      "top_reversible": [
+        [
+          [
+            "ct",
+            "ka"
+          ],
+          1.0,
+          6,
+          6
+        ],
+        [
+          [
+            "ch",
+            "pc"
+          ],
+          1.0,
+          91,
+          91
+        ],
+        [
+          [
+            "ko",
+            "ot"
+          ],
+          1.0,
+          25,
+          25
+        ],
+        [
+          [
+            "am",
+            "qo"
+          ],
+          1.0,
+          23,
+          23
+        ],
+        [
+          [
+            "lk",
+            "op"
+          ],
+          1.0,
+          13,
+          13
+        ],
+        [
+          [
+            "ka",
+            "sh"
+          ],
+          0.99,
+          123,
+          124
+        ],
+        [
+          [
+            "da",
+            "sa"
+          ],
+          0.99,
+          67,
+          68
+        ],
+        [
+          [
+            "ok",
+            "sa"
+          ],
+          0.99,
+          121,
+          120
+        ],
+        [
+          [
+            "ch",
+            "sh"
+          ],
+          0.98,
+          1167,
+          1144
+        ],
+        [
+          [
+            "ok",
+            "ot"
+          ],
+          0.98,
+          482,
+          491
+        ]
+      ],
+      "interpretation": "paired_operations"
+    }
+  },
+  "signature_scores": {
+    "short_cycles": 1.0,
+    "ladder_to_cycle": 1.0,
+    "attractor_states": 1.0,
+    "reversible_pairs": 1.0
+  },
+  "signature_match": "STRONG",
+  "total_score": 1.0,
+  "interpretation": "System exhibits strong alchemical transformation signatures: cyclical processes, ladder-to-cycle collapse, attractor states, and reversible pairs. Consistent with medieval alchemical operation grammar."
+}

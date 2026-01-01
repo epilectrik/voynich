@@ -1,0 +1,585 @@
+{
+  "baseline": {
+    "metrics": {
+      "baseline_mi": 0.5246535938465703,
+      "baseline_entropy": 6.02635477814245,
+      "baseline_mi_normalized": 0.08705985843207996
+    },
+    "gamma_sequence_length": 11855,
+    "unique_gamma": 77
+  },
+  "transformations": {
+    "prefix_collapse_2": {
+      "transformation": "prefix_collapse_2",
+      "hypothesis": "Cipher varies suffixes; roots carry meaning",
+      "parameters": {
+        "prefix_length": 2
+      },
+      "metrics": {
+        "transformed_mi": 0.05523726797913501,
+        "transformed_entropy": 3.583525846600334,
+        "unique_classes": 21
+      }
+    },
+    "prefix_collapse_3": {
+      "transformation": "prefix_collapse_3",
+      "hypothesis": "Cipher varies suffixes; roots carry meaning",
+      "parameters": {
+        "prefix_length": 3
+      },
+      "metrics": {
+        "transformed_mi": 0.19454291729459255,
+        "transformed_entropy": 4.830026787061267,
+        "unique_classes": 43
+      }
+    },
+    "suffix_collapse_2": {
+      "transformation": "suffix_collapse_2",
+      "hypothesis": "Cipher varies prefixes; suffixes carry meaning",
+      "parameters": {
+        "suffix_length": 2
+      },
+      "metrics": {
+        "transformed_mi": 0.032192367999834694,
+        "transformed_entropy": 3.2799560927812554,
+        "unique_classes": 14
+      }
+    },
+    "suffix_collapse_3": {
+      "transformation": "suffix_collapse_3",
+      "hypothesis": "Cipher varies prefixes; suffixes carry meaning",
+      "parameters": {
+        "suffix_length": 3
+      },
+      "metrics": {
+        "transformed_mi": 0.1867351805326655,
+        "transformed_entropy": 4.765443014876293,
+        "unique_classes": 40
+      }
+    },
+    "morphological_family": {
+      "transformation": "morphological_family_collapse",
+      "hypothesis": "Morphological families = cipher equivalence classes",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.05523726797913501,
+        "transformed_entropy": 3.583525846600334,
+        "unique_classes": 21,
+        "families_created": 10
+      },
+      "family_mapping": {
+        "qo": [
+          "qokchy",
+          "qokal",
+          "qoky",
+          "qoty",
+          "qokedy",
+          "qokeey",
+          "qotedy",
+          "qotaiin",
+          "qokol",
+          "qotchy",
+          "qokar",
+          "qokey"
+        ],
+        "da": [
+          "dal",
+          "dain",
+          "dam",
+          "dar",
+          "dair"
+        ],
+        "sa": [
+          "sar",
+          "sal",
+          "saiin"
+        ],
+        "ok": [
+          "okeedy",
+          "okar",
+          "oky",
+          "okedy",
+          "okaiin",
+          "okol",
+          "okeey",
+          "okal"
+        ],
+        "ot": [
+          "oteedy",
+          "oteey",
+          "otain",
+          "otaiin",
+          "oty",
+          "otal",
+          "otol"
+        ],
+        "sh": [
+          "shey",
+          "shor",
+          "shol",
+          "shckhy",
+          "shy",
+          "sheey",
+          "sheedy",
+          "sheol"
+        ],
+        "ch": [
+          "chcthy",
+          "cheody",
+          "chor",
+          "cheo",
+          "chey",
+          "chol",
+          "chckhy",
+          "cheky",
+          "chody",
+          "cheol",
+          "char",
+          "chedy",
+          "cho",
+          "cheey",
+          "chy",
+          "chdy"
+        ],
+        "or": [
+          "or",
+          "oraiin"
+        ],
+        "ct": [
+          "cthy",
+          "cthol",
+          "cthey"
+        ],
+        "do": [
+          "dol",
+          "dor"
+        ]
+      }
+    },
+    "length_collapse": {
+      "transformation": "length_collapse",
+      "hypothesis": "Length carries meaning; characters are noise",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.012069859530571995,
+        "transformed_entropy": 2.3269022653395637,
+        "unique_classes": 6
+      },
+      "length_distribution": {
+        "4": 3104,
+        "2": 1559,
+        "5": 3139,
+        "6": 2193,
+        "3": 1726,
+        "7": 134
+      }
+    },
+    "final_char": {
+      "transformation": "final_char_collapse",
+      "hypothesis": "Final character = grammatical marker",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.007264649368129213,
+        "transformed_entropy": 2.031710748289788,
+        "unique_classes": 6
+      },
+      "final_char_distribution": {
+        "l": 3036,
+        "r": 1717,
+        "y": 4950,
+        "n": 1780,
+        "o": 167,
+        "m": 205
+      }
+    },
+    "first_char": {
+      "transformation": "first_char_collapse",
+      "hypothesis": "First character = category marker",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.017290349032094563,
+        "transformed_entropy": 2.604077017687219,
+        "unique_classes": 10
+      },
+      "first_char_distribution": {
+        "s": 1616,
+        "o": 3077,
+        "d": 1509,
+        "c": 3091,
+        "k": 219,
+        "a": 355,
+        "q": 1712,
+        "t": 70,
+        "r": 130,
+        "l": 76
+      }
+    },
+    "middle_collapse": {
+      "transformation": "middle_collapse",
+      "hypothesis": "Middle carries core meaning; edges are markers",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.3069595652571021,
+        "transformed_entropy": 5.302202579336011,
+        "unique_classes": 54
+      }
+    },
+    "vc_pattern": {
+      "transformation": "vc_pattern_collapse",
+      "hypothesis": "Vowel/consonant pattern encodes; characters are variants",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.14261362961895013,
+        "transformed_entropy": 4.565865272248806,
+        "unique_classes": 32
+      },
+      "top_patterns": {
+        "VC": 1287,
+        "CVC": 1152,
+        "CCVC": 986,
+        "CCVV": 713,
+        "VCVVVC": 667,
+        "CCVCV": 661,
+        "CVVVC": 588,
+        "VCVC": 582,
+        "CVCVC": 468,
+        "CCV": 362,
+        "CVCVCV": 336,
+        "CVVC": 333,
+        "CCVVV": 324,
+        "CCCCCV": 308,
+        "CCVVC": 307,
+        "CVCVVV": 279,
+        "CV": 272,
+        "VCVVV": 266,
+        "CCCV": 254,
+        "CVCV": 236
+      }
+    },
+    "random_control": {
+      "transformation": "random_collapse_control",
+      "hypothesis": "CONTROL: Random grouping should not increase MI",
+      "parameters": {
+        "n_classes": 20,
+        "seed": 42
+      },
+      "metrics": {
+        "transformed_mi": 0.04203031368780208,
+        "transformed_entropy": 4.041365595086472,
+        "unique_classes": 19
+      }
+    },
+    "frequency_band": {
+      "transformation": "frequency_band_collapse",
+      "hypothesis": "Frequency bands correspond to semantic classes",
+      "parameters": {
+        "n_bands": 5
+      },
+      "metrics": {
+        "transformed_mi": 0.0012197675964514868,
+        "transformed_entropy": 2.1272953402117993,
+        "unique_classes": 5
+      }
+    },
+    "positional": {
+      "transformation": "positional_collapse",
+      "hypothesis": "Position in entry encodes function",
+      "parameters": {},
+      "metrics": {
+        "transformed_mi": 0.0,
+        "transformed_entropy": -0.0,
+        "unique_classes": 1
+      }
+    }
+  },
+  "mi_analysis": {
+    "baseline_mi": 0.5246535938465703,
+    "transformations": [
+      {
+        "name": "middle_collapse",
+        "new_mi": 0.3069595652571021,
+        "mi_delta": -0.21769402858946818,
+        "mi_ratio": 0.5850709284321978,
+        "unique_classes": 54,
+        "entropy": 5.302202579336011
+      },
+      {
+        "name": "prefix_collapse_3",
+        "new_mi": 0.19454291729459255,
+        "mi_delta": -0.33011067655197773,
+        "mi_ratio": 0.37080260113777985,
+        "unique_classes": 43,
+        "entropy": 4.830026787061267
+      },
+      {
+        "name": "suffix_collapse_3",
+        "new_mi": 0.1867351805326655,
+        "mi_delta": -0.3379184133139048,
+        "mi_ratio": 0.3559209023302227,
+        "unique_classes": 40,
+        "entropy": 4.765443014876293
+      },
+      {
+        "name": "vc_pattern",
+        "new_mi": 0.14261362961895013,
+        "mi_delta": -0.38203996422762015,
+        "mi_ratio": 0.2718243642883652,
+        "unique_classes": 32,
+        "entropy": 4.565865272248806
+      },
+      {
+        "name": "prefix_collapse_2",
+        "new_mi": 0.05523726797913501,
+        "mi_delta": -0.46941632586743526,
+        "mi_ratio": 0.10528331193570094,
+        "unique_classes": 21,
+        "entropy": 3.583525846600334
+      },
+      {
+        "name": "morphological_family",
+        "new_mi": 0.05523726797913501,
+        "mi_delta": -0.46941632586743526,
+        "mi_ratio": 0.10528331193570094,
+        "unique_classes": 21,
+        "entropy": 3.583525846600334
+      },
+      {
+        "name": "random_control",
+        "new_mi": 0.04203031368780208,
+        "mi_delta": -0.4826232801587682,
+        "mi_ratio": 0.08011059903288002,
+        "unique_classes": 19,
+        "entropy": 4.041365595086472
+      },
+      {
+        "name": "suffix_collapse_2",
+        "new_mi": 0.032192367999834694,
+        "mi_delta": -0.4924612258467356,
+        "mi_ratio": 0.0613592823482098,
+        "unique_classes": 14,
+        "entropy": 3.2799560927812554
+      },
+      {
+        "name": "first_char",
+        "new_mi": 0.017290349032094563,
+        "mi_delta": -0.5073632448144757,
+        "mi_ratio": 0.0329557430557713,
+        "unique_classes": 10,
+        "entropy": 2.604077017687219
+      },
+      {
+        "name": "length_collapse",
+        "new_mi": 0.012069859530571995,
+        "mi_delta": -0.5125837343159982,
+        "mi_ratio": 0.023005388073452718,
+        "unique_classes": 6,
+        "entropy": 2.3269022653395637
+      },
+      {
+        "name": "final_char",
+        "new_mi": 0.007264649368129213,
+        "mi_delta": -0.5173889444784411,
+        "mi_ratio": 0.013846563624709844,
+        "unique_classes": 6,
+        "entropy": 2.031710748289788
+      },
+      {
+        "name": "frequency_band",
+        "new_mi": 0.0012197675964514868,
+        "mi_delta": -0.5234338262501188,
+        "mi_ratio": 0.002324900869369048,
+        "unique_classes": 5,
+        "entropy": 2.1272953402117993
+      },
+      {
+        "name": "positional",
+        "new_mi": 0.0,
+        "mi_delta": -0.5246535938465703,
+        "mi_ratio": 0.0,
+        "unique_classes": 1,
+        "entropy": -0.0
+      }
+    ],
+    "best_transformation": {
+      "name": "middle_collapse",
+      "new_mi": 0.3069595652571021,
+      "mi_delta": -0.21769402858946818,
+      "mi_ratio": 0.5850709284321978,
+      "unique_classes": 54,
+      "entropy": 5.302202579336011
+    },
+    "significant_increases": [],
+    "interpretation": "NO transformation significantly increased MI. The cipher diffusion is robust - no obvious equivalence class structure."
+  },
+  "constraint_checks": {
+    "prefix_collapse_2": {
+      "transformation": "prefix_collapse_2",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "prefix_collapse_3": {
+      "transformation": "prefix_collapse_3",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "suffix_collapse_2": {
+      "transformation": "suffix_collapse_2",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "suffix_collapse_3": {
+      "transformation": "suffix_collapse_3",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "morphological_family": {
+      "transformation": "morphological_family",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "length_collapse": {
+      "transformation": "length_collapse",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "final_char": {
+      "transformation": "final_char",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "first_char": {
+      "transformation": "first_char",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "middle_collapse": {
+      "transformation": "middle_collapse",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "vc_pattern": {
+      "transformation": "vc_pattern",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "random_control": {
+      "transformation": "random_control",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "frequency_band": {
+      "transformation": "frequency_band",
+      "length_preserved": true,
+      "non_empty": true,
+      "has_variety": true,
+      "all_preserved": true
+    },
+    "positional": {
+      "all_preserved": true
+    }
+  },
+  "synthesis": {
+    "phase": "Phase 4: Cipher Reversal Probe",
+    "timestamp": "2025-12-31T10:30:50.036215",
+    "central_question": "Can we find transformations that increase MI?",
+    "baseline_mi": 0.5246535938465703,
+    "key_findings": [
+      "No transformation significantly increased MI"
+    ],
+    "transformation_ranking": [
+      {
+        "rank": 1,
+        "name": "middle_collapse",
+        "mi_delta": -0.217694,
+        "mi_ratio": 0.59
+      },
+      {
+        "rank": 2,
+        "name": "prefix_collapse_3",
+        "mi_delta": -0.330111,
+        "mi_ratio": 0.37
+      },
+      {
+        "rank": 3,
+        "name": "suffix_collapse_3",
+        "mi_delta": -0.337918,
+        "mi_ratio": 0.36
+      },
+      {
+        "rank": 4,
+        "name": "vc_pattern",
+        "mi_delta": -0.38204,
+        "mi_ratio": 0.27
+      },
+      {
+        "rank": 5,
+        "name": "prefix_collapse_2",
+        "mi_delta": -0.469416,
+        "mi_ratio": 0.11
+      },
+      {
+        "rank": 6,
+        "name": "morphological_family",
+        "mi_delta": -0.469416,
+        "mi_ratio": 0.11
+      },
+      {
+        "rank": 7,
+        "name": "random_control",
+        "mi_delta": -0.482623,
+        "mi_ratio": 0.08
+      },
+      {
+        "rank": 8,
+        "name": "suffix_collapse_2",
+        "mi_delta": -0.492461,
+        "mi_ratio": 0.06
+      },
+      {
+        "rank": 9,
+        "name": "first_char",
+        "mi_delta": -0.507363,
+        "mi_ratio": 0.03
+      },
+      {
+        "rank": 10,
+        "name": "length_collapse",
+        "mi_delta": -0.512584,
+        "mi_ratio": 0.02
+      }
+    ],
+    "implications": [
+      "Cipher diffusion is robust against tested transformations"
+    ],
+    "next_steps": [
+      "Consider that semantic recovery may require external key"
+    ],
+    "resonance_assessment": {
+      "mi_increase": "RED",
+      "overall": "RED - Cipher remains opaque"
+    },
+    "interpretation": "NO transformation significantly increased MI. The cipher diffusion is robust - no obvious equivalence class structure."
+  }
+}

@@ -1,0 +1,752 @@
+{
+  "metadata": {
+    "title": "Visual-Text Correlation Analysis Results",
+    "phase": "Visual Coding Phase - Post-Coding Analysis",
+    "date": "2025-12-30T21:31:15.236053",
+    "analysis_parameters": {
+      "null_permutations": 1000,
+      "alpha": 0.05,
+      "cramers_v_threshold": 0.3,
+      "null_percentile_threshold": 99
+    }
+  },
+  "data_quality": {
+    "n_folios": 30,
+    "n_features": 24,
+    "issues": [],
+    "missing_per_feature": {},
+    "undetermined_per_feature": {
+      "stem_thickness": 1,
+      "stem_color_distinct": 1,
+      "flower_position": 3,
+      "flower_shape": 3,
+      "flower_color_distinct": 3,
+      "root_prominence": 1,
+      "root_color_distinct": 1
+    },
+    "features_with_high_missing": [],
+    "features_with_high_undetermined": [],
+    "data_quality": "GOOD"
+  },
+  "hypothesis_tests": {
+    "primary_hypotheses": {
+      "H1": {
+        "hypothesis_id": "H1",
+        "statement": "Prefix 'po' correlates with root features",
+        "prefix": "po",
+        "feature_results": [
+          {
+            "visual_feature": "root_present",
+            "correlation": {
+              "prefix": "po",
+              "visual_feature": "root_present",
+              "n_with_prefix": 3,
+              "n_without_prefix": 27,
+              "visual_categories": [
+                "NO",
+                "YES"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  26
+                ]
+              ],
+              "chi_square": 0.1149,
+              "df": 1,
+              "cramers_v": 0.0619,
+              "with_prefix_distribution": {
+                "YES": 3
+              },
+              "without_prefix_distribution": {
+                "YES": 26,
+                "NO": 1
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.0619,
+              "null_mean": 0.108,
+              "null_std": 0.1438,
+              "null_95th": 0.5571,
+              "null_99th": 0.5571,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.0619,
+              "v_threshold": 0.3,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 99,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          },
+          {
+            "visual_feature": "root_type",
+            "correlation": {
+              "prefix": "po",
+              "visual_feature": "root_type",
+              "n_with_prefix": 3,
+              "n_without_prefix": 27,
+              "visual_categories": [
+                "BRANCHING",
+                "BULBOUS",
+                "FIBROUS",
+                "NONE",
+                "SINGLE"
+              ],
+              "contingency_table": [
+                [
+                  3,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  19,
+                  3,
+                  1,
+                  1,
+                  3
+                ]
+              ],
+              "chi_square": 1.2121,
+              "df": 4,
+              "cramers_v": 0.201,
+              "with_prefix_distribution": {
+                "BRANCHING": 3
+              },
+              "without_prefix_distribution": {
+                "BRANCHING": 19,
+                "SINGLE": 3,
+                "BULBOUS": 3,
+                "NONE": 1,
+                "FIBROUS": 1
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.201,
+              "null_mean": 0.329,
+              "null_std": 0.1602,
+              "null_95th": 0.6321,
+              "null_99th": 0.7115,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.201,
+              "v_threshold": 0.3,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 99,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          }
+        ],
+        "overall_result": "NOT_SUPPORTED",
+        "prediction": "Folios with 'po' heading prefix will show distinctive root morphology (e.g., BULBOUS or BRANCHING more frequently than other prefixes)"
+      },
+      "H2": {
+        "hypothesis_id": "H2",
+        "statement": "Prefix 'ch' correlates with leaf features",
+        "prefix": "ch",
+        "feature_results": [
+          {
+            "visual_feature": "leaf_present",
+            "error": "Insufficient visual categories"
+          },
+          {
+            "visual_feature": "leaf_shape",
+            "correlation": {
+              "prefix": "ch",
+              "visual_feature": "leaf_shape",
+              "n_with_prefix": 0,
+              "n_without_prefix": 30,
+              "visual_categories": [
+                "COMPOUND",
+                "LANCEOLATE",
+                "LOBED",
+                "MIXED",
+                "NEEDLE",
+                "OVAL",
+                "ROUND",
+                "SERRATED"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  4,
+                  8,
+                  1,
+                  1,
+                  5,
+                  6,
+                  3
+                ]
+              ],
+              "chi_square": 0.0,
+              "df": 7,
+              "cramers_v": 0.0,
+              "with_prefix_distribution": {},
+              "without_prefix_distribution": {
+                "LANCEOLATE": 4,
+                "COMPOUND": 2,
+                "LOBED": 8,
+                "OVAL": 5,
+                "ROUND": 6,
+                "NEEDLE": 1,
+                "MIXED": 1,
+                "SERRATED": 3
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.0,
+              "null_mean": 0.0,
+              "null_std": 0.0,
+              "null_95th": 0.0,
+              "null_99th": 0.0,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.0,
+              "v_threshold": 0.3,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 99,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          },
+          {
+            "visual_feature": "leaf_count_category",
+            "error": "Insufficient visual categories"
+          }
+        ],
+        "overall_result": "NOT_SUPPORTED",
+        "prediction": "Entries with 'ch' as dominant body prefix will show prominent leaf features"
+      },
+      "H3": {
+        "hypothesis_id": "H3",
+        "statement": "Prefix 'qo' correlates with flower features",
+        "prefix": "qo",
+        "feature_results": [
+          {
+            "visual_feature": "flower_present",
+            "correlation": {
+              "prefix": "qo",
+              "visual_feature": "flower_present",
+              "n_with_prefix": 0,
+              "n_without_prefix": 30,
+              "visual_categories": [
+                "NO",
+                "YES"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  27
+                ]
+              ],
+              "chi_square": 0.0,
+              "df": 1,
+              "cramers_v": 0.0,
+              "with_prefix_distribution": {},
+              "without_prefix_distribution": {
+                "YES": 27,
+                "NO": 3
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.0,
+              "null_mean": 0.0,
+              "null_std": 0.0,
+              "null_95th": 0.0,
+              "null_99th": 0.0,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.0,
+              "v_threshold": 0.3,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 99,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          },
+          {
+            "visual_feature": "flower_shape",
+            "correlation": {
+              "prefix": "qo",
+              "visual_feature": "flower_shape",
+              "n_with_prefix": 0,
+              "n_without_prefix": 27,
+              "visual_categories": [
+                "IRREGULAR",
+                "ROUND",
+                "SPIKED",
+                "STAR"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  11,
+                  9,
+                  3,
+                  4
+                ]
+              ],
+              "chi_square": 0.0,
+              "df": 3,
+              "cramers_v": 0.0,
+              "with_prefix_distribution": {},
+              "without_prefix_distribution": {
+                "IRREGULAR": 11,
+                "ROUND": 9,
+                "SPIKED": 3,
+                "STAR": 4
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.0,
+              "null_mean": 0.0,
+              "null_std": 0.0,
+              "null_95th": 0.0,
+              "null_99th": 0.0,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.0,
+              "v_threshold": 0.3,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 99,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          },
+          {
+            "visual_feature": "flower_count",
+            "correlation": {
+              "prefix": "qo",
+              "visual_feature": "flower_count",
+              "n_with_prefix": 0,
+              "n_without_prefix": 30,
+              "visual_categories": [
+                "FEW",
+                "MANY",
+                "NONE",
+                "ONE"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  7,
+                  11,
+                  3,
+                  9
+                ]
+              ],
+              "chi_square": 0.0,
+              "df": 3,
+              "cramers_v": 0.0,
+              "with_prefix_distribution": {},
+              "without_prefix_distribution": {
+                "ONE": 9,
+                "MANY": 11,
+                "FEW": 7,
+                "NONE": 3
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.0,
+              "null_mean": 0.0,
+              "null_std": 0.0,
+              "null_95th": 0.0,
+              "null_99th": 0.0,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.0,
+              "v_threshold": 0.3,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 99,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          }
+        ],
+        "overall_result": "NOT_SUPPORTED",
+        "prediction": "Entries with 'qo' as dominant prefix will show prominent flower features"
+      }
+    },
+    "secondary_hypotheses": {
+      "H4": {
+        "hypothesis_id": "H4",
+        "statement": "Prefix 'ko' correlates with leaf features",
+        "prefix": "ko",
+        "feature_results": [
+          {
+            "visual_feature": "leaf_present",
+            "error": "Insufficient visual categories"
+          },
+          {
+            "visual_feature": "leaf_shape",
+            "correlation": {
+              "prefix": "ko",
+              "visual_feature": "leaf_shape",
+              "n_with_prefix": 4,
+              "n_without_prefix": 26,
+              "visual_categories": [
+                "COMPOUND",
+                "LANCEOLATE",
+                "LOBED",
+                "MIXED",
+                "NEEDLE",
+                "OVAL",
+                "ROUND",
+                "SERRATED"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2
+                ],
+                [
+                  2,
+                  4,
+                  6,
+                  1,
+                  1,
+                  5,
+                  6,
+                  1
+                ]
+              ],
+              "chi_square": 11.25,
+              "df": 7,
+              "cramers_v": 0.6124,
+              "with_prefix_distribution": {
+                "LOBED": 2,
+                "SERRATED": 2
+              },
+              "without_prefix_distribution": {
+                "LANCEOLATE": 4,
+                "COMPOUND": 2,
+                "LOBED": 6,
+                "OVAL": 5,
+                "ROUND": 6,
+                "NEEDLE": 1,
+                "MIXED": 1,
+                "SERRATED": 1
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.6124,
+              "null_mean": 0.4784,
+              "null_std": 0.1323,
+              "null_95th": 0.7189,
+              "null_99th": 0.8145,
+              "percentile": 83.6,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.6124,
+              "v_threshold": 0.2,
+              "meets_v_criterion": true,
+              "null_percentile": 83.6,
+              "null_threshold": 95,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "MODERATE"
+            }
+          }
+        ],
+        "overall_result": "PARTIALLY_SUPPORTED",
+        "prediction": "Folios with 'ko' heading will show similar leaf patterns"
+      },
+      "H5": {
+        "hypothesis_id": "H5",
+        "statement": "Prefix 'ct' correlates with stem features",
+        "prefix": "ct",
+        "feature_results": [
+          {
+            "visual_feature": "stem_type",
+            "correlation": {
+              "prefix": "ct",
+              "visual_feature": "stem_type",
+              "n_with_prefix": 1,
+              "n_without_prefix": 29,
+              "visual_categories": [
+                "BRANCHING",
+                "MULTIPLE",
+                "SINGLE"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  6,
+                  9,
+                  14
+                ]
+              ],
+              "chi_square": 2.069,
+              "df": 2,
+              "cramers_v": 0.2626,
+              "with_prefix_distribution": {
+                "MULTIPLE": 1
+              },
+              "without_prefix_distribution": {
+                "MULTIPLE": 9,
+                "BRANCHING": 6,
+                "SINGLE": 14
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.2626,
+              "null_mean": 0.2515,
+              "null_std": 0.0633,
+              "null_95th": 0.3714,
+              "null_99th": 0.3714,
+              "percentile": 48.2,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.2626,
+              "v_threshold": 0.2,
+              "meets_v_criterion": true,
+              "null_percentile": 48.2,
+              "null_threshold": 95,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "MODERATE"
+            }
+          },
+          {
+            "visual_feature": "stem_count",
+            "error": "Insufficient visual categories"
+          }
+        ],
+        "overall_result": "PARTIALLY_SUPPORTED",
+        "prediction": "Low power - exploratory only"
+      },
+      "H6": {
+        "hypothesis_id": "H6",
+        "statement": "Prefix 'ok' correlates with stem or overall structure",
+        "prefix": "ok",
+        "feature_results": [
+          {
+            "visual_feature": "stem_type",
+            "correlation": {
+              "prefix": "ok",
+              "visual_feature": "stem_type",
+              "n_with_prefix": 1,
+              "n_without_prefix": 29,
+              "visual_categories": [
+                "BRANCHING",
+                "MULTIPLE",
+                "SINGLE"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  10,
+                  13
+                ]
+              ],
+              "chi_square": 1.1823,
+              "df": 2,
+              "cramers_v": 0.1985,
+              "with_prefix_distribution": {
+                "SINGLE": 1
+              },
+              "without_prefix_distribution": {
+                "MULTIPLE": 10,
+                "BRANCHING": 6,
+                "SINGLE": 13
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.1985,
+              "null_mean": 0.2548,
+              "null_std": 0.066,
+              "null_95th": 0.3714,
+              "null_99th": 0.3714,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.1985,
+              "v_threshold": 0.2,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 95,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          },
+          {
+            "visual_feature": "plant_symmetry",
+            "correlation": {
+              "prefix": "ok",
+              "visual_feature": "plant_symmetry",
+              "n_with_prefix": 1,
+              "n_without_prefix": 29,
+              "visual_categories": [
+                "ASYMMETRIC",
+                "BILATERAL",
+                "RADIAL"
+              ],
+              "contingency_table": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  12,
+                  13,
+                  4
+                ]
+              ],
+              "chi_square": 1.1823,
+              "df": 2,
+              "cramers_v": 0.1985,
+              "with_prefix_distribution": {
+                "BILATERAL": 1
+              },
+              "without_prefix_distribution": {
+                "ASYMMETRIC": 12,
+                "BILATERAL": 13,
+                "RADIAL": 4
+              }
+            },
+            "null_model": {
+              "observed_cramers_v": 0.1985,
+              "null_mean": 0.2447,
+              "null_std": 0.0883,
+              "null_95th": 0.4734,
+              "null_99th": 0.4734,
+              "percentile": 0.0,
+              "significant_at_95": false,
+              "significant_at_99": false
+            },
+            "evaluation": {
+              "cramers_v": 0.1985,
+              "v_threshold": 0.2,
+              "meets_v_criterion": false,
+              "null_percentile": 0.0,
+              "null_threshold": 95,
+              "meets_null_criterion": false,
+              "both_criteria_met": false,
+              "interpretation": "WEAK"
+            }
+          }
+        ],
+        "overall_result": "NOT_SUPPORTED",
+        "prediction": "Low power - exploratory only"
+      }
+    },
+    "structural_hypotheses": {},
+    "summary": {
+      "total_hypotheses_tested": 6,
+      "supported": 0,
+      "partially_supported": 2,
+      "not_supported": 4,
+      "overall_outcome": "PARTIAL_SUCCESS"
+    }
+  },
+  "conclusions": {
+    "overall_outcome": "PARTIAL_SUCCESS",
+    "interpretation": "Some pre-registered hypotheses showed partial support. Results are suggestive but not conclusive. Statistical power limitations may explain weak effects.",
+    "next_steps": [
+      "Code additional folios to increase statistical power",
+      "Refine visual coding categories based on observed distributions",
+      "Consider alternative prefix groupings"
+    ],
+    "null_predictions": {
+      "description": "Expected results if NO visual-text correlation exists",
+      "predictions": [
+        "Visual features distributed randomly across prefix categories",
+        "No significant chi-square results after Bonferroni correction",
+        "All correlations below 95th percentile of null model",
+        "Hub vs isolated entries have similar complexity distributions",
+        "No clustering by heading prefix in visual feature space"
+      ],
+      "implication": "If null predictions hold, visual features do not track text prefixes"
+    },
+    "limitations": [
+      "Small sample size (30 folios)",
+      "Power limited to large effects only",
+      "Most heading prefixes appear only once",
+      "Visual coding by single coder (reliability not verified)"
+    ]
+  }
+}

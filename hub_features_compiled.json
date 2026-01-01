@@ -1,0 +1,955 @@
+{
+  "metadata": {
+    "generated": "2025-12-31T06:54:14.165346",
+    "visual_features_analyzed": 17,
+    "hub_folios_total": 9,
+    "hub_folios_with_visual_coding": 2,
+    "hub_folios_missing_visual_coding": [
+      "f58v",
+      "f35v",
+      "f19r",
+      "f21r",
+      "f52v",
+      "f22r",
+      "f58r"
+    ]
+  },
+  "hub_folio_features": {
+    "f58v": {
+      "role": "opener",
+      "heading": "tol",
+      "prefix": "to",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f35v": {
+      "role": "opener",
+      "heading": "par",
+      "prefix": "pa",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f10v": {
+      "role": "opener",
+      "heading": "paiin",
+      "prefix": "pa",
+      "features": {
+        "root_present": "PRESENT",
+        "root_type": "FIBROUS",
+        "root_prominence": "SMALL",
+        "stem_count": "1",
+        "stem_type": "BRANCHING",
+        "stem_thickness": "MEDIUM",
+        "leaf_present": "PRESENT",
+        "leaf_count_category": "MANY_16_PLUS",
+        "leaf_shape": "MIXED",
+        "leaf_arrangement": "ALTERNATE",
+        "leaf_size_relative": "MEDIUM",
+        "flower_present": "PRESENT",
+        "flower_count": "6_PLUS",
+        "flower_position": "TERMINAL",
+        "flower_shape": "SIMPLE",
+        "plant_symmetry": "ASYMMETRIC",
+        "overall_complexity": "COMPLEX"
+      },
+      "has_visual_coding": true
+    },
+    "f19r": {
+      "role": "opener",
+      "heading": "pchor",
+      "prefix": "pc",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f21r": {
+      "role": "opener",
+      "heading": "pchor",
+      "prefix": "pc",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f52v": {
+      "role": "opener",
+      "heading": "pchor",
+      "prefix": "pc",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f22r": {
+      "role": "closer",
+      "heading": "pol",
+      "prefix": "po",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f58r": {
+      "role": "support",
+      "heading": "kor",
+      "prefix": "ko",
+      "features": {},
+      "has_visual_coding": false
+    },
+    "f42r": {
+      "role": "support",
+      "heading": "sho",
+      "prefix": "sh",
+      "features": {
+        "root_present": "PRESENT",
+        "root_type": "BRANCHING",
+        "root_prominence": "MEDIUM",
+        "stem_count": "1",
+        "stem_type": "STRAIGHT",
+        "stem_thickness": "THIN",
+        "leaf_present": "PRESENT",
+        "leaf_count_category": "FEW_1_5",
+        "leaf_shape": "LOBED",
+        "leaf_arrangement": "NA",
+        "leaf_size_relative": "LARGE",
+        "flower_present": "PRESENT",
+        "flower_count": "1",
+        "flower_position": "AXILLARY",
+        "flower_shape": "SIMPLE",
+        "plant_symmetry": "ASYMMETRIC",
+        "overall_complexity": "MODERATE"
+      },
+      "has_visual_coding": true
+    }
+  },
+  "role_feature_profiles": {
+    "opener": {
+      "folio_count": 1,
+      "features": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "distribution": {
+            "PRESENT": 1
+          }
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "distribution": {
+            "FIBROUS": 1
+          }
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "distribution": {
+            "SMALL": 1
+          }
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "distribution": {
+            "1": 1
+          }
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "distribution": {
+            "BRANCHING": 1
+          }
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "distribution": {
+            "MEDIUM": 1
+          }
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "distribution": {
+            "PRESENT": 1
+          }
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "distribution": {
+            "MANY_16_PLUS": 1
+          }
+        },
+        "leaf_shape": {
+          "mode": "MIXED",
+          "agreement": 1.0,
+          "distribution": {
+            "MIXED": 1
+          }
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "distribution": {
+            "ALTERNATE": 1
+          }
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "distribution": {
+            "MEDIUM": 1
+          }
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "distribution": {
+            "PRESENT": 1
+          }
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "distribution": {
+            "6_PLUS": 1
+          }
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "distribution": {
+            "TERMINAL": 1
+          }
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "distribution": {
+            "SIMPLE": 1
+          }
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "distribution": {
+            "ASYMMETRIC": 1
+          }
+        },
+        "overall_complexity": {
+          "mode": "COMPLEX",
+          "agreement": 1.0,
+          "distribution": {
+            "COMPLEX": 1
+          }
+        }
+      }
+    },
+    "closer": {
+      "folio_count": 0,
+      "features": {
+        "root_present": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "root_type": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "root_prominence": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "stem_count": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "stem_type": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "stem_thickness": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "leaf_present": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "leaf_count_category": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "leaf_shape": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "leaf_arrangement": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "leaf_size_relative": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "flower_present": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "flower_count": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "flower_position": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "flower_shape": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "plant_symmetry": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        },
+        "overall_complexity": {
+          "mode": null,
+          "agreement": 0,
+          "distribution": {}
+        }
+      }
+    },
+    "support": {
+      "folio_count": 1,
+      "features": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "distribution": {
+            "PRESENT": 1
+          }
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "distribution": {
+            "BRANCHING": 1
+          }
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "distribution": {
+            "MEDIUM": 1
+          }
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "distribution": {
+            "1": 1
+          }
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "distribution": {
+            "STRAIGHT": 1
+          }
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "distribution": {
+            "THIN": 1
+          }
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "distribution": {
+            "PRESENT": 1
+          }
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "distribution": {
+            "FEW_1_5": 1
+          }
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "distribution": {
+            "LOBED": 1
+          }
+        },
+        "leaf_arrangement": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "distribution": {
+            "NA": 1
+          }
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "distribution": {
+            "LARGE": 1
+          }
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "distribution": {
+            "PRESENT": 1
+          }
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "distribution": {
+            "1": 1
+          }
+        },
+        "flower_position": {
+          "mode": "AXILLARY",
+          "agreement": 1.0,
+          "distribution": {
+            "AXILLARY": 1
+          }
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "distribution": {
+            "SIMPLE": 1
+          }
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "distribution": {
+            "ASYMMETRIC": 1
+          }
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "distribution": {
+            "MODERATE": 1
+          }
+        }
+      }
+    }
+  },
+  "feature_discrimination": {
+    "ranked_features": [
+      {
+        "rank": 1,
+        "feature": "root_type",
+        "score": 1.0,
+        "role_dominant_values": {
+          "FIBROUS": "opener",
+          "BRANCHING": "support"
+        },
+        "contingency": {
+          "FIBROUS": {
+            "opener": 1
+          },
+          "BRANCHING": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "feature": "root_prominence",
+        "score": 1.0,
+        "role_dominant_values": {
+          "SMALL": "opener",
+          "MEDIUM": "support"
+        },
+        "contingency": {
+          "SMALL": {
+            "opener": 1
+          },
+          "MEDIUM": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "feature": "stem_type",
+        "score": 1.0,
+        "role_dominant_values": {
+          "BRANCHING": "opener",
+          "STRAIGHT": "support"
+        },
+        "contingency": {
+          "BRANCHING": {
+            "opener": 1
+          },
+          "STRAIGHT": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 4,
+        "feature": "stem_thickness",
+        "score": 1.0,
+        "role_dominant_values": {
+          "MEDIUM": "opener",
+          "THIN": "support"
+        },
+        "contingency": {
+          "MEDIUM": {
+            "opener": 1
+          },
+          "THIN": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 5,
+        "feature": "leaf_count_category",
+        "score": 1.0,
+        "role_dominant_values": {
+          "MANY_16_PLUS": "opener",
+          "FEW_1_5": "support"
+        },
+        "contingency": {
+          "MANY_16_PLUS": {
+            "opener": 1
+          },
+          "FEW_1_5": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 6,
+        "feature": "leaf_shape",
+        "score": 1.0,
+        "role_dominant_values": {
+          "MIXED": "opener",
+          "LOBED": "support"
+        },
+        "contingency": {
+          "MIXED": {
+            "opener": 1
+          },
+          "LOBED": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 7,
+        "feature": "leaf_arrangement",
+        "score": 1.0,
+        "role_dominant_values": {
+          "ALTERNATE": "opener"
+        },
+        "contingency": {
+          "ALTERNATE": {
+            "opener": 1
+          },
+          "NA": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 8,
+        "feature": "leaf_size_relative",
+        "score": 1.0,
+        "role_dominant_values": {
+          "MEDIUM": "opener",
+          "LARGE": "support"
+        },
+        "contingency": {
+          "MEDIUM": {
+            "opener": 1
+          },
+          "LARGE": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 9,
+        "feature": "flower_count",
+        "score": 1.0,
+        "role_dominant_values": {
+          "6_PLUS": "opener",
+          "1": "support"
+        },
+        "contingency": {
+          "6_PLUS": {
+            "opener": 1
+          },
+          "1": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 10,
+        "feature": "flower_position",
+        "score": 1.0,
+        "role_dominant_values": {
+          "TERMINAL": "opener",
+          "AXILLARY": "support"
+        },
+        "contingency": {
+          "TERMINAL": {
+            "opener": 1
+          },
+          "AXILLARY": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 11,
+        "feature": "overall_complexity",
+        "score": 1.0,
+        "role_dominant_values": {
+          "COMPLEX": "opener",
+          "MODERATE": "support"
+        },
+        "contingency": {
+          "COMPLEX": {
+            "opener": 1
+          },
+          "MODERATE": {
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 12,
+        "feature": "root_present",
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "PRESENT": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 13,
+        "feature": "stem_count",
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "1": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 14,
+        "feature": "leaf_present",
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "PRESENT": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 15,
+        "feature": "flower_present",
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "PRESENT": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 16,
+        "feature": "flower_shape",
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "SIMPLE": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      {
+        "rank": 17,
+        "feature": "plant_symmetry",
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "ASYMMETRIC": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      }
+    ],
+    "by_feature": {
+      "root_present": {
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "PRESENT": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      "root_type": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "FIBROUS": "opener",
+          "BRANCHING": "support"
+        },
+        "contingency": {
+          "FIBROUS": {
+            "opener": 1
+          },
+          "BRANCHING": {
+            "support": 1
+          }
+        }
+      },
+      "root_prominence": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "SMALL": "opener",
+          "MEDIUM": "support"
+        },
+        "contingency": {
+          "SMALL": {
+            "opener": 1
+          },
+          "MEDIUM": {
+            "support": 1
+          }
+        }
+      },
+      "stem_count": {
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "1": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      "stem_type": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "BRANCHING": "opener",
+          "STRAIGHT": "support"
+        },
+        "contingency": {
+          "BRANCHING": {
+            "opener": 1
+          },
+          "STRAIGHT": {
+            "support": 1
+          }
+        }
+      },
+      "stem_thickness": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "MEDIUM": "opener",
+          "THIN": "support"
+        },
+        "contingency": {
+          "MEDIUM": {
+            "opener": 1
+          },
+          "THIN": {
+            "support": 1
+          }
+        }
+      },
+      "leaf_present": {
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "PRESENT": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      "leaf_count_category": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "MANY_16_PLUS": "opener",
+          "FEW_1_5": "support"
+        },
+        "contingency": {
+          "MANY_16_PLUS": {
+            "opener": 1
+          },
+          "FEW_1_5": {
+            "support": 1
+          }
+        }
+      },
+      "leaf_shape": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "MIXED": "opener",
+          "LOBED": "support"
+        },
+        "contingency": {
+          "MIXED": {
+            "opener": 1
+          },
+          "LOBED": {
+            "support": 1
+          }
+        }
+      },
+      "leaf_arrangement": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "ALTERNATE": "opener"
+        },
+        "contingency": {
+          "ALTERNATE": {
+            "opener": 1
+          },
+          "NA": {
+            "support": 1
+          }
+        }
+      },
+      "leaf_size_relative": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "MEDIUM": "opener",
+          "LARGE": "support"
+        },
+        "contingency": {
+          "MEDIUM": {
+            "opener": 1
+          },
+          "LARGE": {
+            "support": 1
+          }
+        }
+      },
+      "flower_present": {
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "PRESENT": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      "flower_count": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "6_PLUS": "opener",
+          "1": "support"
+        },
+        "contingency": {
+          "6_PLUS": {
+            "opener": 1
+          },
+          "1": {
+            "support": 1
+          }
+        }
+      },
+      "flower_position": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "TERMINAL": "opener",
+          "AXILLARY": "support"
+        },
+        "contingency": {
+          "TERMINAL": {
+            "opener": 1
+          },
+          "AXILLARY": {
+            "support": 1
+          }
+        }
+      },
+      "flower_shape": {
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "SIMPLE": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      "plant_symmetry": {
+        "score": 0,
+        "role_dominant_values": {},
+        "contingency": {
+          "ASYMMETRIC": {
+            "opener": 1,
+            "support": 1
+          }
+        }
+      },
+      "overall_complexity": {
+        "score": 1.0,
+        "role_dominant_values": {
+          "COMPLEX": "opener",
+          "MODERATE": "support"
+        },
+        "contingency": {
+          "COMPLEX": {
+            "opener": 1
+          },
+          "MODERATE": {
+            "support": 1
+          }
+        }
+      }
+    }
+  },
+  "priority_coding_needed": [
+    "f58v",
+    "f35v",
+    "f19r",
+    "f21r",
+    "f52v",
+    "f22r",
+    "f58r"
+  ]
+}

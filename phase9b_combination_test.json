@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "phase": "9B",
+    "title": "Combination Explosion Test",
+    "timestamp": "2025-12-31T12:31:49.729559"
+  },
+  "tests": {
+    "B1_core_reuse": {
+      "flexible_cores_analyzed": 352,
+      "mean_operator_paths_per_core": 21.34,
+      "max_operator_paths": 364,
+      "top_5_flexible_cores": [
+        [
+          "h",
+          364
+        ],
+        [
+          "e",
+          291
+        ],
+        [
+          "ch",
+          285
+        ],
+        [
+          "k",
+          214
+        ],
+        [
+          "he",
+          154
+        ]
+      ],
+      "interpretation": "high_reuse",
+      "alchemy_prediction": ">5 operator combinations per core",
+      "pharmacology_prediction": "<3 operator combinations per core"
+    },
+    "B2_vocab_operation_ratio": {
+      "unique_middles": 3459,
+      "unique_operator_combinations": 3113,
+      "middle_to_operation_ratio": 1.111,
+      "interpretation": "vocabulary_dominant",
+      "alchemy_prediction": "ratio < 0.5 (few cores, many operations)",
+      "pharmacology_prediction": "ratio > 1.0 (many cores, fewer operations)"
+    },
+    "B3_combination_depth": {
+      "a_entries_analyzed": 114,
+      "b_entries_analyzed": 111,
+      "a_mean_unique_middles": 73.75,
+      "b_mean_unique_middles": 136.46,
+      "a_mean_unique_operators": 49.15,
+      "b_mean_unique_operators": 67.76,
+      "a_entry_middle_to_operator_ratio": 1.501,
+      "b_entry_middle_to_operator_ratio": 2.014,
+      "interpretation": "middle_heavy",
+      "alchemy_prediction": "Low middle count, high operator count in B",
+      "pharmacology_prediction": "Higher middle count, moderate operator count in B"
+    }
+  },
+  "verdict": {
+    "pharmacology_compatible": false,
+    "alchemy_compatible": false,
+    "discriminators": [
+      "B1: Operator paths/core 21.3 > 4.5 rules out pharmacology",
+      "B3: B-entry middle/operator ratio 2.01 > 1.5 rules out alchemy"
+    ],
+    "discriminator_strength": "STRONG"
+  }
+}

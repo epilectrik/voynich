@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "phase": "19C",
+    "title": "Positional Rigidity Analysis",
+    "timestamp": "2025-12-31T16:35:37.281330"
+  },
+  "candidates_analyzed": 0,
+  "classification_counts": {
+    "REFERENCE_LIKE": 0,
+    "OPERATIONAL": 0,
+    "MIXED": 0
+  },
+  "reference_like_tokens": {},
+  "operational_tokens": {},
+  "mixed_tokens": {},
+  "POSITIONAL_SIGNAL": "NONE",
+  "INTERPRETATION": "0 tokens show reference-like positional rigidity out of 0 analyzed (0.0%). Signal: NONE."
+}

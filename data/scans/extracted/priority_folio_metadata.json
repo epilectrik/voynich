@@ -1,0 +1,84 @@
+{
+  "description": "Priority folios for comparative annotation system",
+  "purpose": {
+    "multi_folio_categories": {
+      "pchor": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "tshor": [
+        "f15r",
+        "f53v"
+      ],
+      "kooiin": [
+        "f2v",
+        "f29v"
+      ],
+      "kshody": [
+        "f37v",
+        "f5r"
+      ]
+    },
+    "hub_categories": {
+      "tol": {
+        "folio": "f58v",
+        "in_degree": 34,
+        "role": "opener"
+      },
+      "pol": {
+        "folio": "f22r",
+        "in_degree": 25,
+        "role": "closer"
+      },
+      "tor": {
+        "folio": "f96r",
+        "in_degree": 14,
+        "role": "closer"
+      },
+      "kor": {
+        "folio": "f58r",
+        "in_degree": 10,
+        "role": "support"
+      },
+      "par": {
+        "folio": "f35v",
+        "in_degree": 9,
+        "role": "opener"
+      }
+    }
+  },
+  "extraction_results": {
+    "requested": [
+      "f19r",
+      "f21r",
+      "f52v",
+      "f15r",
+      "f53v",
+      "f2v",
+      "f37v",
+      "f58v",
+      "f22r",
+      "f96r",
+      "f58r",
+      "f35v"
+    ],
+    "already_present": [],
+    "newly_extracted": [
+      "f19r",
+      "f21r",
+      "f52v",
+      "f15r",
+      "f53v",
+      "f2v",
+      "f37v",
+      "f58v",
+      "f22r",
+      "f96r",
+      "f58r",
+      "f35v"
+    ],
+    "failed": []
+  },
+  "total_available": 42
+}

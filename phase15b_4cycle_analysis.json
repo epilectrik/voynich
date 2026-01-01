@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "phase": "15B",
+    "title": "Length-4 Cycle Analysis",
+    "timestamp": "2025-12-31T15:36:00.442601"
+  },
+  "total_4_cycles": 30265,
+  "unique_4_cycles": 30265,
+  "total_3_cycles": 3968,
+  "node_participation": {
+    "h": 4355,
+    "e": 4355,
+    "dar": 4355,
+    "daiin": 4355,
+    "eo": 4355,
+    "ch": 4355,
+    "s": 4355,
+    "ed": 4355,
+    "d": 4355,
+    "ol": 4355,
+    "k": 4355,
+    "r": 4353,
+    "ee": 4353,
+    "l": 4353,
+    "al": 4352
+  },
+  "cycle_anchors": [],
+  "example_4_cycles": [
+    [
+      "h",
+      "h",
+      "e",
+      "e"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "dar"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "dy"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "daiin"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "aiin"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "t"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "eo"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "r"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "ch"
+    ],
+    [
+      "h",
+      "h",
+      "e",
+      "chedy"
+    ]
+  ],
+  "example_3_cycles": [
+    [
+      "h",
+      "h",
+      "e"
+    ],
+    [
+      "h",
+      "h",
+      "dar"
+    ],
+    [
+      "h",
+      "h",
+      "dy"
+    ],
+    [
+      "h",
+      "h",
+      "daiin"
+    ],
+    [
+      "h",
+      "h",
+      "aiin"
+    ],
+    [
+      "h",
+      "h",
+      "t"
+    ],
+    [
+      "h",
+      "h",
+      "eo"
+    ],
+    [
+      "h",
+      "h",
+      "ch"
+    ],
+    [
+      "h",
+      "h",
+      "r"
+    ],
+    [
+      "h",
+      "h",
+      "chedy"
+    ]
+  ],
+  "operator_patterns": {
+    "total_sequences_found": 5374,
+    "most_common_sequences": [
+      {
+        "sequence": [
+          "qo",
+          "qo",
+          "qo"
+        ],
+        "count": 131
+      },
+      {
+        "sequence": [
+          "qo",
+          "sh",
+          "qo"
+        ],
+        "count": 74
+      },
+      {
+        "sequence": [
+          "qo",
+          "ch",
+          "qo"
+        ],
+        "count": 72
+      },
+      {
+        "sequence": [
+          "sh",
+          "qo",
+          "qo"
+        ],
+        "count": 62
+      },
+      {
+        "sequence": [
+          "qo",
+          "qo",
+          "ch"
+        ],
+        "count": 55
+      },
+      {
+        "sequence": [
+          "ot",
+          "ot",
+          "ot"
+        ],
+        "count": 54
+      },
+      {
+        "sequence": [
+          "ok",
+          "ok",
+          "ok"
+        ],
+        "count": 49
+      },
+      {
+        "sequence": [
+          "sh",
+          "qo",
+          "sh"
+        ],
+        "count": 43
+      },
+      {
+        "sequence": [
+          "ch",
+          "ch",
+          "da"
+        ],
+        "count": 37
+      },
+      {
+        "sequence": [
+          "ch",
+          "qo",
+          "qo"
+        ],
+        "count": 36
+      }
+    ],
+    "canonical_sequence": [
+      "qo",
+      "qo",
+      "qo"
+    ]
+  },
+  "relationship_to_quantitative": {
+    "matches_elemental_4": true,
+    "also_has_3_cycles": 3968,
+    "3_to_4_ratio": 0.131
+  },
+  "INTERPRETATION": "Found 30265 4-cycles among STATE-C nodes. Cycle anchors: []. Also found 3968 3-cycles (tria prima). Most common operator sequence: ['qo', 'qo', 'qo']."
+}

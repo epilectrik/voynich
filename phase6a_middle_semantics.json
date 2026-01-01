@@ -1,0 +1,1206 @@
+{
+  "metadata": {
+    "phase": "6A",
+    "title": "Middle Semantics via Differential Context",
+    "timestamp": "2025-12-31T11:06:57.636146"
+  },
+  "middle_hub_matrix": {
+    "hubs_analyzed": [
+      "pol",
+      "pchor",
+      "sho",
+      "paiin",
+      "kor",
+      "par",
+      "tol",
+      "tor"
+    ],
+    "middles_analyzed": 100,
+    "hub_specific_middles": [
+      "ldai"
+    ],
+    "sample": {
+      "ka": {
+        "hub_profile": {
+          "pol": 0.1821,
+          "pchor": 0.0473,
+          "sho": 0.2629,
+          "paiin": 0.0808,
+          "kor": 0.1216,
+          "par": 0.0779,
+          "tol": 0.3452,
+          "tor": 0.1733
+        },
+        "total_count": 1373,
+        "entropy": 3.08,
+        "hub_specific": false
+      },
+      "ar": {
+        "hub_profile": {
+          "pol": 0.1783,
+          "pchor": 0.0925,
+          "sho": 0.26,
+          "paiin": 0.0683,
+          "kor": 0.0817,
+          "par": 0.0975,
+          "tol": 0.3033,
+          "tor": 0.1683
+        },
+        "total_count": 1200,
+        "entropy": 3.108,
+        "hub_specific": false
+      },
+      "taii": {
+        "hub_profile": {
+          "pol": 0.251,
+          "pchor": 0.1697,
+          "sho": 0.3876,
+          "paiin": 0.1131,
+          "kor": 0.0552,
+          "par": 0.0621,
+          "tol": 0.2869,
+          "tor": 0.1862
+        },
+        "total_count": 725,
+        "entropy": 3.268,
+        "hub_specific": false
+      },
+      "ho": {
+        "hub_profile": {
+          "pol": 0.0643,
+          "pchor": 0.095,
+          "sho": 0.5669,
+          "paiin": 0.0281,
+          "kor": 0.1365,
+          "par": 0.0357,
+          "tol": 0.2092,
+          "tor": 0.1259
+        },
+        "total_count": 3422,
+        "entropy": 2.599,
+        "hub_specific": false
+      },
+      "hor": {
+        "hub_profile": {
+          "pol": 0.0,
+          "pchor": 0.0299,
+          "sho": 0.7463,
+          "paiin": 0.0,
+          "kor": 0.209,
+          "par": 0.0448,
+          "tol": 0.209,
+          "tor": 0.0746
+        },
+        "total_count": 67,
+        "entropy": 1.891,
+        "hub_specific": false
+      },
+      "hold": {
+        "hub_profile": {
+          "pol": 0.0667,
+          "pchor": 0.1167,
+          "sho": 0.2667,
+          "paiin": 0.0,
+          "kor": 0.1333,
+          "par": 0.0,
+          "tol": 0.3833,
+          "tor": 0.1
+        },
+        "total_count": 60,
+        "entropy": 2.381,
+        "hub_specific": false
+      },
+      "ko": {
+        "hub_profile": {
+          "pol": 0.0909,
+          "pchor": 0.0561,
+          "sho": 0.3617,
+          "paiin": 0.0251,
+          "kor": 0.1025,
+          "par": 0.0232,
+          "tol": 0.2863,
+          "tor": 0.1799
+        },
+        "total_count": 517,
+        "entropy": 2.636,
+        "hub_specific": false
+      },
+      "or": {
+        "hub_profile": {
+          "pol": 0.1793,
+          "pchor": 0.0827,
+          "sho": 0.2733,
+          "paiin": 0.0809,
+          "kor": 0.1427,
+          "par": 0.0879,
+          "tol": 0.3159,
+          "tor": 0.2376
+        },
+        "total_count": 1149,
+        "entropy": 3.274,
+        "hub_specific": false
+      },
+      "kha": {
+        "hub_profile": {
+          "pol": 0.0,
+          "pchor": 0.1471,
+          "sho": 0.3529,
+          "paiin": 0.0,
+          "kor": 0.1471,
+          "par": 0.0,
+          "tol": 0.5588,
+          "tor": 0.2059
+        },
+        "total_count": 34,
+        "entropy": 2.282,
+        "hub_specific": false
+      },
+      "ai": {
+        "hub_profile": {
+          "pol": 0.1725,
+          "pchor": 0.076,
+          "sho": 0.3904,
+          "paiin": 0.0581,
+          "kor": 0.0892,
+          "par": 0.0766,
+          "tol": 0.2743,
+          "tor": 0.1653
+        },
+        "total_count": 1670,
+        "entropy": 3.024,
+        "hub_specific": false
+      },
+      "htaii": {
+        "hub_profile": {
+          "pol": 0.1739,
+          "pchor": 0.1304,
+          "sho": 0.5217,
+          "paiin": 0.0,
+          "kor": 0.2174,
+          "par": 0.0,
+          "tol": 0.6522,
+          "tor": 0.0
+        },
+        "total_count": 23,
+        "entropy": 2.193,
+        "hub_specific": false
+      },
+      "ha": {
+        "hub_profile": {
+          "pol": 0.2119,
+          "pchor": 0.1357,
+          "sho": 0.4723,
+          "paiin": 0.0249,
+          "kor": 0.0803,
+          "par": 0.09,
+          "tol": 0.3213,
+          "tor": 0.1316
+        },
+        "total_count": 722,
+        "entropy": 3.025,
+        "hub_specific": false
+      },
+      "tha": {
+        "hub_profile": {
+          "pol": 0.0187,
+          "pchor": 0.0841,
+          "sho": 0.514,
+          "paiin": 0.0,
+          "kor": 0.2617,
+          "par": 0.0,
+          "tol": 0.4673,
+          "tor": 0.0561
+        },
+        "total_count": 107,
+        "entropy": 2.153,
+        "hub_specific": false
+      },
+      "an": {
+        "hub_profile": {
+          "pol": 0.2,
+          "pchor": 0.05,
+          "sho": 0.45,
+          "paiin": 0.0,
+          "kor": 0.1,
+          "par": 0.1,
+          "tol": 0.4,
+          "tor": 0.25
+        },
+        "total_count": 20,
+        "entropy": 2.892,
+        "hub_specific": false
+      },
+      "hek": {
+        "hub_profile": {
+          "pol": 0.1424,
+          "pchor": 0.0552,
+          "sho": 0.2413,
+          "paiin": 0.0959,
+          "kor": 0.1773,
+          "par": 0.064,
+          "tol": 0.3837,
+          "tor": 0.1483
+        },
+        "total_count": 344,
+        "entropy": 3.085,
+        "hub_specific": false
+      },
+      "kaii": {
+        "hub_profile": {
+          "pol": 0.3143,
+          "pchor": 0.1295,
+          "sho": 0.3454,
+          "paiin": 0.1425,
+          "kor": 0.1209,
+          "par": 0.1088,
+          "tol": 0.3627,
+          "tor": 0.2142
+        },
+        "total_count": 1158,
+        "entropy": 3.561,
+        "hub_specific": false
+      },
+      "the": {
+        "hub_profile": {
+          "pol": 0.0693,
+          "pchor": 0.0396,
+          "sho": 0.4554,
+          "paiin": 0.0149,
+          "kor": 0.1584,
+          "par": 0.0297,
+          "tol": 0.2327,
+          "tor": 0.1485
+        },
+        "total_count": 202,
+        "entropy": 2.528,
+        "hub_specific": false
+      },
+      "araii": {
+        "hub_profile": {
+          "pol": 0.2456,
+          "pchor": 0.0,
+          "sho": 0.3333,
+          "paiin": 0.1228,
+          "kor": 0.1404,
+          "par": 0.0351,
+          "tol": 0.4561,
+          "tor": 0.0526
+        },
+        "total_count": 57,
+        "entropy": 2.705,
+        "hub_specific": false
+      },
+      "sa": {
+        "hub_profile": {
+          "pol": 0.0769,
+          "pchor": 0.0,
+          "sho": 0.1538,
+          "paiin": 0.0,
+          "kor": 0.1795,
+          "par": 0.0,
+          "tol": 0.3333,
+          "tor": 0.0256
+        },
+        "total_count": 39,
+        "entropy": 1.808,
+        "hub_specific": false
+      },
+      "sy": {
+        "hub_profile": {
+          "pol": 0.0278,
+          "pchor": 0.0926,
+          "sho": 0.5185,
+          "paiin": 0.0556,
+          "kor": 0.2685,
+          "par": 0.0,
+          "tol": 0.2037,
+          "tor": 0.1111
+        },
+        "total_count": 108,
+        "entropy": 2.514,
+        "hub_specific": false
+      }
+    }
+  },
+  "middle_slot_distribution": {
+    "middles_analyzed": 100,
+    "slot_restricted_middles": [
+      "htaii",
+      "araii",
+      "thaii",
+      "pha",
+      "os",
+      "fho",
+      "hosh",
+      "es",
+      "hodai",
+      "ckhe",
+      "ph",
+      "ldai",
+      "d*",
+      "eea",
+      "hetai",
+      "kh",
+      "hcthaii",
+      "oche"
+    ],
+    "sample": {
+      "ka": {
+        "slot_profile": {
+          "0": 0.091,
+          "1": 0.104,
+          "2": 0.095,
+          "3": 0.103,
+          "4": 0.108,
+          "5": 0.091,
+          "6": 0.082,
+          "7": 0.1,
+          "8": 0.103,
+          "9": 0.124
+        },
+        "total": 1373,
+        "max_deviation": 0.024,
+        "slot_restricted": false
+      },
+      "ar": {
+        "slot_profile": {
+          "0": 0.098,
+          "1": 0.087,
+          "2": 0.089,
+          "3": 0.082,
+          "4": 0.088,
+          "5": 0.126,
+          "6": 0.099,
+          "7": 0.113,
+          "8": 0.1,
+          "9": 0.118
+        },
+        "total": 1200,
+        "max_deviation": 0.026,
+        "slot_restricted": false
+      },
+      "taii": {
+        "slot_profile": {
+          "0": 0.105,
+          "1": 0.113,
+          "2": 0.069,
+          "3": 0.094,
+          "4": 0.099,
+          "5": 0.09,
+          "6": 0.126,
+          "7": 0.099,
+          "8": 0.08,
+          "9": 0.126
+        },
+        "total": 725,
+        "max_deviation": 0.031,
+        "slot_restricted": false
+      },
+      "ho": {
+        "slot_profile": {
+          "0": 0.085,
+          "1": 0.098,
+          "2": 0.102,
+          "3": 0.096,
+          "4": 0.114,
+          "5": 0.11,
+          "6": 0.108,
+          "7": 0.095,
+          "8": 0.094,
+          "9": 0.098
+        },
+        "total": 3422,
+        "max_deviation": 0.015,
+        "slot_restricted": false
+      },
+      "hor": {
+        "slot_profile": {
+          "0": 0.179,
+          "1": 0.194,
+          "2": 0.09,
+          "3": 0.06,
+          "4": 0.104,
+          "5": 0.045,
+          "6": 0.06,
+          "7": 0.09,
+          "8": 0.075,
+          "9": 0.104
+        },
+        "total": 67,
+        "max_deviation": 0.094,
+        "slot_restricted": false
+      },
+      "hold": {
+        "slot_profile": {
+          "0": 0.2,
+          "1": 0.167,
+          "2": 0.067,
+          "3": 0.033,
+          "4": 0.167,
+          "5": 0.1,
+          "6": 0.033,
+          "7": 0.0,
+          "8": 0.05,
+          "9": 0.183
+        },
+        "total": 60,
+        "max_deviation": 0.1,
+        "slot_restricted": false
+      },
+      "ko": {
+        "slot_profile": {
+          "0": 0.083,
+          "1": 0.093,
+          "2": 0.13,
+          "3": 0.13,
+          "4": 0.089,
+          "5": 0.089,
+          "6": 0.064,
+          "7": 0.075,
+          "8": 0.112,
+          "9": 0.135
+        },
+        "total": 517,
+        "max_deviation": 0.036,
+        "slot_restricted": false
+      },
+      "or": {
+        "slot_profile": {
+          "0": 0.102,
+          "1": 0.078,
+          "2": 0.116,
+          "3": 0.101,
+          "4": 0.116,
+          "5": 0.068,
+          "6": 0.1,
+          "7": 0.107,
+          "8": 0.1,
+          "9": 0.112
+        },
+        "total": 1149,
+        "max_deviation": 0.032,
+        "slot_restricted": false
+      },
+      "kha": {
+        "slot_profile": {
+          "0": 0.147,
+          "1": 0.059,
+          "2": 0.029,
+          "3": 0.0,
+          "4": 0.118,
+          "5": 0.059,
+          "6": 0.206,
+          "7": 0.088,
+          "8": 0.206,
+          "9": 0.088
+        },
+        "total": 34,
+        "max_deviation": 0.106,
+        "slot_restricted": false
+      },
+      "ai": {
+        "slot_profile": {
+          "0": 0.09,
+          "1": 0.086,
+          "2": 0.083,
+          "3": 0.112,
+          "4": 0.093,
+          "5": 0.096,
+          "6": 0.118,
+          "7": 0.113,
+          "8": 0.102,
+          "9": 0.106
+        },
+        "total": 1670,
+        "max_deviation": 0.018,
+        "slot_restricted": false
+      },
+      "htaii": {
+        "slot_profile": {
+          "0": 0.217,
+          "1": 0.174,
+          "2": 0.174,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.043,
+          "7": 0.261,
+          "8": 0.087,
+          "9": 0.043
+        },
+        "total": 23,
+        "max_deviation": 0.161,
+        "slot_restricted": true
+      },
+      "ha": {
+        "slot_profile": {
+          "0": 0.112,
+          "1": 0.102,
+          "2": 0.06,
+          "3": 0.115,
+          "4": 0.109,
+          "5": 0.102,
+          "6": 0.116,
+          "7": 0.076,
+          "8": 0.097,
+          "9": 0.109
+        },
+        "total": 722,
+        "max_deviation": 0.04,
+        "slot_restricted": false
+      },
+      "tha": {
+        "slot_profile": {
+          "0": 0.131,
+          "1": 0.093,
+          "2": 0.103,
+          "3": 0.056,
+          "4": 0.084,
+          "5": 0.075,
+          "6": 0.065,
+          "7": 0.065,
+          "8": 0.187,
+          "9": 0.14
+        },
+        "total": 107,
+        "max_deviation": 0.087,
+        "slot_restricted": false
+      },
+      "an": {
+        "slot_profile": {
+          "0": 0.1,
+          "1": 0.2,
+          "2": 0.0,
+          "3": 0.05,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.1,
+          "7": 0.2,
+          "8": 0.25,
+          "9": 0.1
+        },
+        "total": 20,
+        "max_deviation": 0.15,
+        "slot_restricted": false
+      },
+      "hek": {
+        "slot_profile": {
+          "0": 0.096,
+          "1": 0.093,
+          "2": 0.084,
+          "3": 0.113,
+          "4": 0.076,
+          "5": 0.035,
+          "6": 0.142,
+          "7": 0.116,
+          "8": 0.134,
+          "9": 0.11
+        },
+        "total": 344,
+        "max_deviation": 0.065,
+        "slot_restricted": false
+      },
+      "kaii": {
+        "slot_profile": {
+          "0": 0.027,
+          "1": 0.093,
+          "2": 0.099,
+          "3": 0.103,
+          "4": 0.098,
+          "5": 0.11,
+          "6": 0.127,
+          "7": 0.11,
+          "8": 0.1,
+          "9": 0.133
+        },
+        "total": 1158,
+        "max_deviation": 0.073,
+        "slot_restricted": false
+      },
+      "the": {
+        "slot_profile": {
+          "0": 0.035,
+          "1": 0.134,
+          "2": 0.04,
+          "3": 0.153,
+          "4": 0.153,
+          "5": 0.059,
+          "6": 0.094,
+          "7": 0.079,
+          "8": 0.099,
+          "9": 0.153
+        },
+        "total": 202,
+        "max_deviation": 0.065,
+        "slot_restricted": false
+      },
+      "araii": {
+        "slot_profile": {
+          "0": 0.158,
+          "1": 0.316,
+          "2": 0.07,
+          "3": 0.07,
+          "4": 0.018,
+          "5": 0.246,
+          "6": 0.035,
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.088
+        },
+        "total": 57,
+        "max_deviation": 0.216,
+        "slot_restricted": true
+      },
+      "sa": {
+        "slot_profile": {
+          "0": 0.154,
+          "1": 0.103,
+          "2": 0.026,
+          "3": 0.026,
+          "4": 0.026,
+          "5": 0.154,
+          "6": 0.026,
+          "7": 0.231,
+          "8": 0.205,
+          "9": 0.051
+        },
+        "total": 39,
+        "max_deviation": 0.131,
+        "slot_restricted": false
+      },
+      "sy": {
+        "slot_profile": {
+          "0": 0.009,
+          "1": 0.204,
+          "2": 0.065,
+          "3": 0.148,
+          "4": 0.102,
+          "5": 0.12,
+          "6": 0.102,
+          "7": 0.111,
+          "8": 0.111,
+          "9": 0.028
+        },
+        "total": 108,
+        "max_deviation": 0.104,
+        "slot_restricted": false
+      }
+    }
+  },
+  "middle_affix_compatibility": {
+    "middles_analyzed": 100,
+    "constrained_middles": [
+      "ka",
+      "ar",
+      "taii",
+      "ho",
+      "hor",
+      "hold",
+      "ko",
+      "or",
+      "kha",
+      "ai",
+      "htaii",
+      "ha",
+      "tha",
+      "an",
+      "hek",
+      "kaii",
+      "the",
+      "araii",
+      "sa",
+      "sy",
+      "hck",
+      "oii",
+      "tee",
+      "teo",
+      "aii",
+      "ol",
+      "tea",
+      "hea",
+      "thaii",
+      "pha",
+      "air",
+      "da",
+      "pho",
+      "sh",
+      "she",
+      "hod",
+      "kcho",
+      "tcho",
+      "hocth",
+      "os",
+      "kch",
+      "fho",
+      "h*",
+      "eod",
+      "dai",
+      "phe",
+      "tai",
+      "hosh",
+      "es",
+      "ksh",
+      "sho",
+      "hodai",
+      "ckhe",
+      "ckh",
+      "khe",
+      "odaii",
+      "ph",
+      "ldai",
+      "d*",
+      "ii",
+      "daii",
+      "hd",
+      "kai",
+      "th",
+      "od",
+      "hckhe",
+      "keo",
+      "he",
+      "kho",
+      "hoda",
+      "ch",
+      "hodaii",
+      "cho",
+      "eea",
+      "che",
+      "hokai",
+      "hekai",
+      "hetai",
+      "arai",
+      "kh",
+      "cha",
+      "hcthaii",
+      "oto",
+      "thol",
+      "to",
+      "aiii",
+      "haii",
+      "ro",
+      "hoaii",
+      "tho",
+      "chee",
+      "kche",
+      "okaii",
+      "kee",
+      "oshe",
+      "ee",
+      "hto",
+      "ok",
+      "oche",
+      "hot"
+    ],
+    "sample": {
+      "ka": {
+        "top_prefixes": {
+          "ok": 1025,
+          "yk": 182
+        },
+        "top_suffixes": {
+          "ar": 639,
+          "al": 546,
+          "am": 122,
+          "an": 26,
+          "y": 11
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 5,
+        "constrained": true
+      },
+      "ar": {
+        "top_prefixes": {
+          "da": 97
+        },
+        "top_suffixes": {
+          "y": 162
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "taii": {
+        "top_prefixes": {
+          "ota": 563,
+          "ct": 1
+        },
+        "top_suffixes": {
+          "aiin": 708
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "ho": {
+        "top_prefixes": {
+          "cho": 2347,
+          "sho": 1074
+        },
+        "top_suffixes": {
+          "ol": 1928,
+          "or": 1068,
+          "om": 63,
+          "y": 55
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 4,
+        "constrained": true
+      },
+      "hor": {
+        "top_prefixes": {
+          "cho": 43,
+          "sho": 24
+        },
+        "top_suffixes": {
+          "y": 65
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "hold": {
+        "top_prefixes": {
+          "cho": 32,
+          "sho": 28
+        },
+        "top_suffixes": {
+          "dy": 60
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "ko": {
+        "top_prefixes": {
+          "oko": 391,
+          "yk": 69
+        },
+        "top_suffixes": {
+          "ol": 304,
+          "or": 139,
+          "y": 19,
+          "om": 12
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 4,
+        "constrained": true
+      },
+      "or": {
+        "top_prefixes": {
+          "qo": 1
+        },
+        "top_suffixes": {
+          "y": 40
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "kha": {
+        "top_prefixes": {
+          "ok": 1
+        },
+        "top_suffixes": {
+          "al": 12,
+          "ar": 11,
+          "am": 10,
+          "y": 1
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 4,
+        "constrained": true
+      },
+      "ai": {
+        "top_prefixes": {
+          "dai": 1020
+        },
+        "top_suffixes": {
+          "ain": 1024
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "htaii": {
+        "top_prefixes": {
+          "ch": 18,
+          "sh": 5
+        },
+        "top_suffixes": {
+          "aiin": 20
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "ha": {
+        "top_prefixes": {
+          "cha": 507,
+          "sha": 213
+        },
+        "top_suffixes": {
+          "ar": 354,
+          "al": 209,
+          "am": 88,
+          "an": 56,
+          "y": 1
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 5,
+        "constrained": true
+      },
+      "tha": {
+        "top_prefixes": {
+          "ct": 107
+        },
+        "top_suffixes": {
+          "ar": 68,
+          "al": 25,
+          "an": 7,
+          "am": 5
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 4,
+        "constrained": true
+      },
+      "an": {
+        "top_prefixes": {
+          "da": 3
+        },
+        "top_suffixes": {
+          "y": 2
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "hek": {
+        "top_prefixes": {
+          "che": 215,
+          "she": 129
+        },
+        "top_suffixes": {
+          "y": 337
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "kaii": {
+        "top_prefixes": {
+          "ok": 798,
+          "yk": 156
+        },
+        "top_suffixes": {
+          "aiin": 1124
+        },
+        "prefix_diversity": 2,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "the": {
+        "top_prefixes": {
+          "ct": 200
+        },
+        "top_suffixes": {
+          "y": 181
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "araii": {
+        "top_prefixes": {
+          "da": 14
+        },
+        "top_suffixes": {
+          "aiin": 52
+        },
+        "prefix_diversity": 1,
+        "suffix_diversity": 1,
+        "constrained": true
+      },
+      "sa": {
+        "top_prefixes": {},
+        "top_suffixes": {
+          "al": 12,
+          "ar": 8,
+          "an": 2,
+          "am": 2
+        },
+        "prefix_diversity": 0,
+        "suffix_diversity": 4,
+        "constrained": true
+      },
+      "sy": {
+        "top_prefixes": {},
+        "top_suffixes": {
+          "y": 108
+        },
+        "prefix_diversity": 0,
+        "suffix_diversity": 1,
+        "constrained": true
+      }
+    }
+  },
+  "pairwise_differential": {
+    "clusters_found": 5,
+    "cluster_membership": {
+      "cluster_5": [
+        "ka",
+        "taii",
+        "kha",
+        "ai",
+        "htaii",
+        "ha",
+        "tha",
+        "kaii",
+        "araii",
+        "sa",
+        "oii",
+        "tee",
+        "teo",
+        "aii",
+        "tea",
+        "hea",
+        "thaii",
+        "pha",
+        "air",
+        "da",
+        "pho",
+        "kcho",
+        "dai",
+        "phe",
+        "tai",
+        "odaii",
+        "ldai",
+        "ii",
+        "daii",
+        "kai",
+        "eea",
+        "hekai",
+        "hetai",
+        "arai",
+        "cha",
+        "hcthaii",
+        "aiii",
+        "haii",
+        "chee",
+        "ee"
+      ],
+      "cluster_1": [
+        "ar",
+        "hor",
+        "or",
+        "an",
+        "hek",
+        "the",
+        "sy",
+        "hck",
+        "ol",
+        "she",
+        "os",
+        "h*",
+        "es",
+        "ckhe",
+        "d*",
+        "hckhe",
+        "he",
+        "che",
+        "thol",
+        "kche",
+        "okaii",
+        "oshe",
+        "ok",
+        "oche",
+        "hot"
+      ],
+      "cluster_4": [
+        "ho",
+        "hold",
+        "hod",
+        "eod",
+        "hodai",
+        "hd",
+        "od",
+        "hoda",
+        "hodaii",
+        "hokai",
+        "hoaii"
+      ],
+      "cluster_3": [
+        "ko",
+        "tcho",
+        "fho",
+        "sho",
+        "khe",
+        "keo",
+        "kho",
+        "cho",
+        "oto",
+        "to",
+        "ro",
+        "tho",
+        "kee",
+        "hto"
+      ],
+      "cluster_2": [
+        "sh",
+        "hocth",
+        "kch",
+        "hosh",
+        "ksh",
+        "ckh",
+        "ph",
+        "th",
+        "ch",
+        "kh"
+      ]
+    },
+    "cluster_sizes": {
+      "cluster_5": 40,
+      "cluster_1": 25,
+      "cluster_4": 11,
+      "cluster_3": 14,
+      "cluster_2": 10
+    }
+  },
+  "semantic_axes_detected": {
+    "axis_hub_specificity": {
+      "count": 1,
+      "examples": [
+        "ldai"
+      ]
+    },
+    "axis_slot_restriction": {
+      "count": 18,
+      "examples": [
+        "htaii",
+        "araii",
+        "thaii",
+        "pha",
+        "os",
+        "fho",
+        "hosh",
+        "es",
+        "hodai",
+        "ckhe"
+      ]
+    },
+    "axis_affix_constraint": {
+      "count": 100,
+      "examples": [
+        "ka",
+        "ar",
+        "taii",
+        "ho",
+        "hor",
+        "hold",
+        "ko",
+        "or",
+        "kha",
+        "ai"
+      ]
+    }
+  }
+}

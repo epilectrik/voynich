@@ -1,0 +1,3731 @@
+{
+  "metadata": {
+    "analysis": "Phase 17 Task 1: Exhaustive Three-Part Structure Analysis",
+    "corpus": "Currier A",
+    "timestamp": "2025-12-30T15:36:25.449880",
+    "total_entries": 114,
+    "valid_entries": 114,
+    "min_entry_words": 9
+  },
+  "boundary_detection": {
+    "methods_used": [
+      "fixed_thirds",
+      "vocabulary_shift",
+      "prefix_clustering"
+    ],
+    "average_method_agreement": 0.712,
+    "sample_results": {
+      "f1r": {
+        "entry_length": 291,
+        "fixed_thirds": {
+          "boundary1": 97,
+          "boundary2": 194
+        },
+        "vocabulary_shift": {
+          "boundary1": 84,
+          "boundary2": 137
+        },
+        "prefix_clustering": {
+          "boundary1": 97,
+          "boundary2": 194
+        },
+        "agreement": {
+          "boundary1_agreement": 1.0,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.778
+        }
+      },
+      "f1v": {
+        "entry_length": 101,
+        "fixed_thirds": {
+          "boundary1": 33,
+          "boundary2": 66
+        },
+        "vocabulary_shift": {
+          "boundary1": 19,
+          "boundary2": 68
+        },
+        "prefix_clustering": {
+          "boundary1": 33,
+          "boundary2": 66
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 1.0,
+          "overall_agreement": 0.778
+        }
+      },
+      "f2r": {
+        "entry_length": 103,
+        "fixed_thirds": {
+          "boundary1": 34,
+          "boundary2": 68
+        },
+        "vocabulary_shift": {
+          "boundary1": 14,
+          "boundary2": 87
+        },
+        "prefix_clustering": {
+          "boundary1": 34,
+          "boundary2": 68
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.556
+        }
+      },
+      "f2v": {
+        "entry_length": 74,
+        "fixed_thirds": {
+          "boundary1": 24,
+          "boundary2": 48
+        },
+        "vocabulary_shift": {
+          "boundary1": 11,
+          "boundary2": 25
+        },
+        "prefix_clustering": {
+          "boundary1": 24,
+          "boundary2": 48
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.556
+        }
+      },
+      "f3r": {
+        "entry_length": 129,
+        "fixed_thirds": {
+          "boundary1": 43,
+          "boundary2": 86
+        },
+        "vocabulary_shift": {
+          "boundary1": 58,
+          "boundary2": 91
+        },
+        "prefix_clustering": {
+          "boundary1": 43,
+          "boundary2": 86
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 1.0,
+          "overall_agreement": 0.778
+        }
+      },
+      "f3v": {
+        "entry_length": 110,
+        "fixed_thirds": {
+          "boundary1": 36,
+          "boundary2": 72
+        },
+        "vocabulary_shift": {
+          "boundary1": 35,
+          "boundary2": 88
+        },
+        "prefix_clustering": {
+          "boundary1": 36,
+          "boundary2": 72
+        },
+        "agreement": {
+          "boundary1_agreement": 1.0,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.778
+        }
+      },
+      "f4r": {
+        "entry_length": 73,
+        "fixed_thirds": {
+          "boundary1": 24,
+          "boundary2": 48
+        },
+        "vocabulary_shift": {
+          "boundary1": 34,
+          "boundary2": 60
+        },
+        "prefix_clustering": {
+          "boundary1": 24,
+          "boundary2": 48
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.556
+        }
+      },
+      "f4v": {
+        "entry_length": 112,
+        "fixed_thirds": {
+          "boundary1": 37,
+          "boundary2": 74
+        },
+        "vocabulary_shift": {
+          "boundary1": 22,
+          "boundary2": 60
+        },
+        "prefix_clustering": {
+          "boundary1": 37,
+          "boundary2": 74
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.556
+        }
+      },
+      "f5r": {
+        "entry_length": 66,
+        "fixed_thirds": {
+          "boundary1": 22,
+          "boundary2": 44
+        },
+        "vocabulary_shift": {
+          "boundary1": 13,
+          "boundary2": 37
+        },
+        "prefix_clustering": {
+          "boundary1": 22,
+          "boundary2": 44
+        },
+        "agreement": {
+          "boundary1_agreement": 0.556,
+          "boundary2_agreement": 0.556,
+          "overall_agreement": 0.556
+        }
+      },
+      "f5v": {
+        "entry_length": 58,
+        "fixed_thirds": {
+          "boundary1": 19,
+          "boundary2": 38
+        },
+        "vocabulary_shift": {
+          "boundary1": 22,
+          "boundary2": 34
+        },
+        "prefix_clustering": {
+          "boundary1": 19,
+          "boundary2": 38
+        },
+        "agreement": {
+          "boundary1_agreement": 1.0,
+          "boundary2_agreement": 1.0,
+          "overall_agreement": 1.0
+        }
+      }
+    },
+    "interpretation": "Methods show moderate agreement; fixed thirds serves as reliable baseline"
+  },
+  "vocabulary_distribution": {
+    "prefix_enrichment": {
+      "fa": {
+        "part1": 2.016,
+        "part2": 0.0,
+        "part3": 0.985
+      },
+      "yk": {
+        "part1": 0.777,
+        "part2": 0.859,
+        "part3": 1.356
+      },
+      "ar": {
+        "part1": 0.956,
+        "part2": 0.925,
+        "part3": 1.115
+      },
+      "at": {
+        "part1": 0.432,
+        "part2": 0.0,
+        "part3": 2.532
+      },
+      "sh": {
+        "part1": 1.009,
+        "part2": 1.079,
+        "part3": 0.915
+      },
+      "ct": {
+        "part1": 0.991,
+        "part2": 0.959,
+        "part3": 1.049
+      },
+      "ko": {
+        "part1": 1.139,
+        "part2": 1.08,
+        "part3": 0.787
+      },
+      "fy": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "yt": {
+        "part1": 1.081,
+        "part2": 0.996,
+        "part3": 0.926
+      },
+      "so": {
+        "part1": 0.948,
+        "part2": 0.899,
+        "part3": 1.15
+      },
+      "ck": {
+        "part1": 1.008,
+        "part2": 0.884,
+        "part3": 1.106
+      },
+      "or": {
+        "part1": 1.315,
+        "part2": 0.71,
+        "part3": 0.975
+      },
+      "ka": {
+        "part1": 0.898,
+        "part2": 0.709,
+        "part3": 1.385
+      },
+      "ch": {
+        "part1": 0.957,
+        "part2": 1.001,
+        "part3": 1.041
+      },
+      "da": {
+        "part1": 0.902,
+        "part2": 1.011,
+        "part3": 1.085
+      },
+      "sy": {
+        "part1": 1.18,
+        "part2": 1.032,
+        "part3": 0.793
+      },
+      "sa": {
+        "part1": 0.981,
+        "part2": 0.918,
+        "part3": 1.098
+      },
+      "oo": {
+        "part1": 1.512,
+        "part2": 0.378,
+        "part3": 1.108
+      },
+      "ot": {
+        "part1": 1.287,
+        "part2": 0.897,
+        "part3": 0.82
+      },
+      "ro": {
+        "part1": 0.733,
+        "part2": 1.099,
+        "part3": 1.164
+      },
+      "ok": {
+        "part1": 0.883,
+        "part2": 0.966,
+        "part3": 1.148
+      },
+      "od": {
+        "part1": 0.949,
+        "part2": 0.924,
+        "part3": 1.123
+      },
+      "ol": {
+        "part1": 0.893,
+        "part2": 1.061,
+        "part3": 1.045
+      },
+      "cp": {
+        "part1": 1.306,
+        "part2": 1.113,
+        "part3": 0.591
+      },
+      "cf": {
+        "part1": 1.512,
+        "part2": 0.978,
+        "part3": 0.521
+      },
+      "yd": {
+        "part1": 1.084,
+        "part2": 0.799,
+        "part3": 1.115
+      },
+      "ai": {
+        "part1": 0.663,
+        "part2": 0.995,
+        "part3": 1.334
+      },
+      "oy": {
+        "part1": 0.504,
+        "part2": 1.176,
+        "part3": 1.313
+      },
+      "sc": {
+        "part1": 0.974,
+        "part2": 0.974,
+        "part3": 1.052
+      },
+      "ys": {
+        "part1": 0.945,
+        "part2": 0.661,
+        "part3": 1.385
+      },
+      "os": {
+        "part1": 1.167,
+        "part2": 0.796,
+        "part3": 1.037
+      },
+      "te": {
+        "part1": 0.593,
+        "part2": 0.83,
+        "part3": 1.564
+      },
+      "es": {
+        "part1": 2.016,
+        "part2": 1.008,
+        "part3": 0.0
+      },
+      "ks": {
+        "part1": 1.099,
+        "part2": 1.264,
+        "part3": 0.645
+      },
+      "d*": {
+        "part1": 0.233,
+        "part2": 1.395,
+        "part3": 1.364
+      },
+      "oi": {
+        "part1": 0.864,
+        "part2": 1.512,
+        "part3": 0.633
+      },
+      "kc": {
+        "part1": 0.807,
+        "part2": 1.168,
+        "part3": 1.024
+      },
+      "do": {
+        "part1": 0.802,
+        "part2": 1.159,
+        "part3": 1.038
+      },
+      "ke": {
+        "part1": 0.744,
+        "part2": 0.953,
+        "part3": 1.295
+      },
+      "yc": {
+        "part1": 0.68,
+        "part2": 1.148,
+        "part3": 1.168
+      },
+      "tc": {
+        "part1": 0.898,
+        "part2": 1.209,
+        "part3": 0.895
+      },
+      "ps": {
+        "part1": 1.209,
+        "part2": 0.806,
+        "part3": 0.985
+      },
+      "dy": {
+        "part1": 1.101,
+        "part2": 0.937,
+        "part3": 0.963
+      },
+      "dc": {
+        "part1": 1.061,
+        "part2": 1.077,
+        "part3": 0.864
+      },
+      "rc": {
+        "part1": 0.394,
+        "part2": 1.052,
+        "part3": 1.541
+      },
+      "po": {
+        "part1": 2.111,
+        "part2": 0.399,
+        "part3": 0.502
+      },
+      "dl": {
+        "part1": 1.512,
+        "part2": 0.756,
+        "part3": 0.739
+      },
+      "to": {
+        "part1": 1.168,
+        "part2": 1.214,
+        "part3": 0.627
+      },
+      "ts": {
+        "part1": 1.092,
+        "part2": 1.26,
+        "part3": 0.657
+      },
+      "py": {
+        "part1": 1.323,
+        "part2": 1.512,
+        "part3": 0.185
+      },
+      "ec": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "k*": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "oc": {
+        "part1": 1.028,
+        "part2": 0.967,
+        "part3": 1.005
+      },
+      "de": {
+        "part1": 0.504,
+        "part2": 1.109,
+        "part3": 1.379
+      },
+      "e*": {
+        "part1": 0.0,
+        "part2": 1.008,
+        "part3": 1.97
+      },
+      "am": {
+        "part1": 1.099,
+        "part2": 0.687,
+        "part3": 1.209
+      },
+      "aj": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "lk": {
+        "part1": 2.519,
+        "part2": 0.0,
+        "part3": 0.492
+      },
+      "dk": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "lo": {
+        "part1": 0.777,
+        "part2": 1.123,
+        "part3": 1.097
+      },
+      "qo": {
+        "part1": 1.036,
+        "part2": 1.029,
+        "part3": 0.936
+      },
+      "lc": {
+        "part1": 0.605,
+        "part2": 1.008,
+        "part3": 1.379
+      },
+      "ky": {
+        "part1": 0.648,
+        "part2": 1.296,
+        "part3": 1.055
+      },
+      "ak": {
+        "part1": 1.008,
+        "part2": 1.008,
+        "part3": 0.985
+      },
+      "ta": {
+        "part1": 1.027,
+        "part2": 1.027,
+        "part3": 0.948
+      },
+      "yp": {
+        "part1": 1.689,
+        "part2": 0.978,
+        "part3": 0.348
+      },
+      "al": {
+        "part1": 0.835,
+        "part2": 0.835,
+        "part3": 1.322
+      },
+      "fo": {
+        "part1": 0.864,
+        "part2": 1.44,
+        "part3": 0.703
+      },
+      "yo": {
+        "part1": 0.864,
+        "part2": 0.324,
+        "part3": 1.794
+      },
+      "an": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "pc": {
+        "part1": 1.822,
+        "part2": 0.969,
+        "part3": 0.227
+      },
+      "ls": {
+        "part1": 0.504,
+        "part2": 1.764,
+        "part3": 0.739
+      },
+      "ss": {
+        "part1": 1.209,
+        "part2": 0.907,
+        "part3": 0.886
+      },
+      "qa": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ao": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "op": {
+        "part1": 1.724,
+        "part2": 0.899,
+        "part3": 0.391
+      },
+      "of": {
+        "part1": 1.601,
+        "part2": 0.711,
+        "part3": 0.695
+      },
+      "ek": {
+        "part1": 1.344,
+        "part2": 0.672,
+        "part3": 0.985
+      },
+      "se": {
+        "part1": 1.008,
+        "part2": 1.512,
+        "part3": 0.492
+      },
+      "oa": {
+        "part1": 1.052,
+        "part2": 0.92,
+        "part3": 1.028
+      },
+      "ee": {
+        "part1": 1.08,
+        "part2": 1.404,
+        "part3": 0.528
+      },
+      "ye": {
+        "part1": 0.0,
+        "part2": 2.016,
+        "part3": 0.985
+      },
+      "ty": {
+        "part1": 1.008,
+        "part2": 1.68,
+        "part3": 0.328
+      },
+      "ii": {
+        "part1": 0.756,
+        "part2": 0.756,
+        "part3": 1.477
+      },
+      "fc": {
+        "part1": 1.251,
+        "part2": 1.46,
+        "part3": 0.306
+      },
+      "dm": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "dd": {
+        "part1": 0.504,
+        "part2": 1.008,
+        "part3": 1.477
+      },
+      "ya": {
+        "part1": 1.209,
+        "part2": 0.605,
+        "part3": 1.182
+      },
+      "sk": {
+        "part1": 0.336,
+        "part2": 1.344,
+        "part3": 1.313
+      },
+      "oh": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "oe": {
+        "part1": 1.363,
+        "part2": 0.83,
+        "part3": 0.811
+      },
+      "ry": {
+        "part1": 1.134,
+        "part2": 0.378,
+        "part3": 1.477
+      },
+      "ja": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "cs": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "md": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "qk": {
+        "part1": 0.683,
+        "part2": 1.073,
+        "part3": 1.239
+      },
+      "ds": {
+        "part1": 1.163,
+        "part2": 0.93,
+        "part3": 0.909
+      },
+      "et": {
+        "part1": 1.008,
+        "part2": 0.864,
+        "part3": 1.126
+      },
+      "el": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "ra": {
+        "part1": 1.443,
+        "part2": 0.687,
+        "part3": 0.873
+      },
+      "yr": {
+        "part1": 1.008,
+        "part2": 0.0,
+        "part3": 1.97
+      },
+      "oq": {
+        "part1": 0.0,
+        "part2": 0.756,
+        "part3": 2.216
+      },
+      "pa": {
+        "part1": 1.728,
+        "part2": 0.864,
+        "part3": 0.422
+      },
+      "t*": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "dp": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "pd": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "yf": {
+        "part1": 0.756,
+        "part2": 1.512,
+        "part3": 0.739
+      },
+      "rs": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "dt": {
+        "part1": 1.512,
+        "part2": 0.504,
+        "part3": 0.985
+      },
+      "co": {
+        "part1": 0.756,
+        "part2": 2.267,
+        "part3": 0.0
+      },
+      "eo": {
+        "part1": 1.008,
+        "part2": 1.512,
+        "part3": 0.492
+      },
+      "sp": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "fs": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "mp": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "mo": {
+        "part1": 1.512,
+        "part2": 0.0,
+        "part3": 1.477
+      },
+      "ym": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "pe": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "om": {
+        "part1": 1.099,
+        "part2": 1.374,
+        "part3": 0.537
+      },
+      "o*": {
+        "part1": 0.465,
+        "part2": 1.86,
+        "part3": 0.682
+      },
+      "di": {
+        "part1": 1.008,
+        "part2": 0.0,
+        "part3": 1.97
+      },
+      "sm": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "td": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "q*": {
+        "part1": 0.432,
+        "part2": 1.728,
+        "part3": 0.844
+      },
+      "kd": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ld": {
+        "part1": 1.512,
+        "part2": 0.504,
+        "part3": 0.985
+      },
+      "qy": {
+        "part1": 1.008,
+        "part2": 0.504,
+        "part3": 1.477
+      },
+      "p*": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ma": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "yl": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "qe": {
+        "part1": 0.605,
+        "part2": 1.814,
+        "part3": 0.591
+      },
+      "ql": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ea": {
+        "part1": 2.016,
+        "part2": 1.008,
+        "part3": 0.0
+      },
+      "ly": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "a*": {
+        "part1": 0.0,
+        "part2": 2.267,
+        "part3": 0.739
+      },
+      "rn": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ga": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "cy": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "qt": {
+        "part1": 0.756,
+        "part2": 2.267,
+        "part3": 0.0
+      },
+      "tk": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "la": {
+        "part1": 0.0,
+        "part2": 1.008,
+        "part3": 1.97
+      },
+      "nl": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "lt": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "r*": {
+        "part1": 2.267,
+        "part2": 0.0,
+        "part3": 0.739
+      },
+      "jl": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "qc": {
+        "part1": 0.432,
+        "part2": 1.728,
+        "part3": 0.844
+      },
+      "lr": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ay": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "th": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "ad": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "ac": {
+        "part1": 0.0,
+        "part2": 1.209,
+        "part3": 1.773
+      },
+      "yq": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "oj": {
+        "part1": 2.016,
+        "part2": 1.008,
+        "part3": 0.0
+      },
+      "pp": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "dg": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "sq": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "pi": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "as": {
+        "part1": 1.008,
+        "part2": 2.016,
+        "part3": 0.0
+      },
+      "qn": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "y*": {
+        "part1": 0.756,
+        "part2": 1.512,
+        "part3": 0.739
+      },
+      "pk": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "sf": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ed": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "lp": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "s*": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ik": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "on": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "st": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "dr": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "cc": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "qp": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "og": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "l*": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      }
+    },
+    "suffix_enrichment": {
+      "ys": {
+        "part1": 0.955,
+        "part2": 0.955,
+        "part3": 1.088
+      },
+      "al": {
+        "part1": 0.917,
+        "part2": 0.943,
+        "part3": 1.138
+      },
+      "ar": {
+        "part1": 1.152,
+        "part2": 0.927,
+        "part3": 0.923
+      },
+      "aiin": {
+        "part1": 0.998,
+        "part2": 0.97,
+        "part3": 1.032
+      },
+      "ol": {
+        "part1": 0.865,
+        "part2": 1.096,
+        "part3": 1.039
+      },
+      "ry": {
+        "part1": 1.471,
+        "part2": 0.887,
+        "part3": 0.65
+      },
+      "es": {
+        "part1": 1.025,
+        "part2": 0.999,
+        "part3": 0.976
+      },
+      "or": {
+        "part1": 1.06,
+        "part2": 0.987,
+        "part3": 0.954
+      },
+      "dy": {
+        "part1": 1.035,
+        "part2": 1.012,
+        "part3": 0.954
+      },
+      "o*": {
+        "part1": 1.209,
+        "part2": 1.058,
+        "part3": 0.739
+      },
+      "ir": {
+        "part1": 0.933,
+        "part2": 1.077,
+        "part3": 0.99
+      },
+      "re": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "an": {
+        "part1": 0.809,
+        "part2": 1.23,
+        "part3": 0.962
+      },
+      "ain": {
+        "part1": 0.806,
+        "part2": 1.034,
+        "part3": 1.157
+      },
+      "r*": {
+        "part1": 2.159,
+        "part2": 0.0,
+        "part3": 0.844
+      },
+      "na": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "n*": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "ky": {
+        "part1": 0.91,
+        "part2": 1.004,
+        "part3": 1.084
+      },
+      "od": {
+        "part1": 1.249,
+        "part2": 1.008,
+        "part3": 0.749
+      },
+      "sa": {
+        "part1": 0.504,
+        "part2": 1.008,
+        "part3": 1.477
+      },
+      "*r": {
+        "part1": 1.814,
+        "part2": 1.209,
+        "part3": 0.0
+      },
+      "sy": {
+        "part1": 1.285,
+        "part2": 0.756,
+        "part3": 0.96
+      },
+      "iin": {
+        "part1": 1.013,
+        "part2": 0.952,
+        "part3": 1.034
+      },
+      "eey": {
+        "part1": 0.955,
+        "part2": 0.942,
+        "part3": 1.101
+      },
+      "os": {
+        "part1": 1.035,
+        "part2": 1.035,
+        "part3": 0.932
+      },
+      "ty": {
+        "part1": 1.129,
+        "part2": 1.003,
+        "part3": 0.871
+      },
+      "hy": {
+        "part1": 1.089,
+        "part2": 0.933,
+        "part3": 0.979
+      },
+      "ho": {
+        "part1": 0.819,
+        "part2": 1.08,
+        "part3": 1.099
+      },
+      "oy": {
+        "part1": 1.029,
+        "part2": 1.122,
+        "part3": 0.853
+      },
+      "sh": {
+        "part1": 0.626,
+        "part2": 1.668,
+        "part3": 0.713
+      },
+      "h*": {
+        "part1": 1.099,
+        "part2": 0.55,
+        "part3": 1.343
+      },
+      "cy": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "ey": {
+        "part1": 0.953,
+        "part2": 0.957,
+        "part3": 1.087
+      },
+      "**": {
+        "part1": 0.802,
+        "part2": 0.925,
+        "part3": 1.266
+      },
+      "ls": {
+        "part1": 0.967,
+        "part2": 1.008,
+        "part3": 1.024
+      },
+      "in": {
+        "part1": 0.796,
+        "part2": 1.432,
+        "part3": 0.777
+      },
+      "he": {
+        "part1": 1.251,
+        "part2": 0.938,
+        "part3": 0.815
+      },
+      "d*": {
+        "part1": 0.605,
+        "part2": 0.907,
+        "part3": 1.477
+      },
+      "*n": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "om": {
+        "part1": 0.977,
+        "part2": 1.088,
+        "part3": 0.937
+      },
+      "am": {
+        "part1": 1.069,
+        "part2": 0.972,
+        "part3": 0.96
+      },
+      "eo": {
+        "part1": 0.843,
+        "part2": 1.123,
+        "part3": 1.033
+      },
+      "yd": {
+        "part1": 0.864,
+        "part2": 1.037,
+        "part3": 1.097
+      },
+      "to": {
+        "part1": 1.209,
+        "part2": 0.756,
+        "part3": 1.034
+      },
+      "ly": {
+        "part1": 1.111,
+        "part2": 1.018,
+        "part3": 0.874
+      },
+      "ds": {
+        "part1": 1.008,
+        "part2": 1.209,
+        "part3": 0.788
+      },
+      "as": {
+        "part1": 0.975,
+        "part2": 0.78,
+        "part3": 1.239
+      },
+      "ta": {
+        "part1": 1.814,
+        "part2": 0.0,
+        "part3": 1.182
+      },
+      "t*": {
+        "part1": 1.814,
+        "part2": 0.605,
+        "part3": 0.591
+      },
+      "ok": {
+        "part1": 0.576,
+        "part2": 1.008,
+        "part3": 1.407
+      },
+      "ro": {
+        "part1": 1.36,
+        "part2": 0.756,
+        "part3": 0.886
+      },
+      "*o": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "ay": {
+        "part1": 1.099,
+        "part2": 1.374,
+        "part3": 0.537
+      },
+      "aj": {
+        "part1": 1.814,
+        "part2": 1.008,
+        "part3": 0.197
+      },
+      "do": {
+        "part1": 0.92,
+        "part2": 1.314,
+        "part3": 0.771
+      },
+      "ao": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "qo": {
+        "part1": 1.134,
+        "part2": 1.134,
+        "part3": 0.739
+      },
+      "ee": {
+        "part1": 1.067,
+        "part2": 0.889,
+        "part3": 1.043
+      },
+      "lo": {
+        "part1": 1.273,
+        "part2": 1.432,
+        "part3": 0.311
+      },
+      "ha": {
+        "part1": 0.477,
+        "part2": 1.273,
+        "part3": 1.244
+      },
+      "ny": {
+        "part1": 0.93,
+        "part2": 0.698,
+        "part3": 1.364
+      },
+      "th": {
+        "part1": 1.512,
+        "part2": 0.432,
+        "part3": 1.055
+      },
+      "nd": {
+        "part1": 1.296,
+        "part2": 0.432,
+        "part3": 1.266
+      },
+      "so": {
+        "part1": 0.252,
+        "part2": 2.267,
+        "part3": 0.492
+      },
+      "dl": {
+        "part1": 1.163,
+        "part2": 0.698,
+        "part3": 1.136
+      },
+      "hr": {
+        "part1": 0.55,
+        "part2": 0.825,
+        "part3": 1.612
+      },
+      "iy": {
+        "part1": 1.512,
+        "part2": 0.0,
+        "part3": 1.477
+      },
+      "mm": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "mg": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ag": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "mo": {
+        "part1": 1.512,
+        "part2": 0.756,
+        "part3": 0.739
+      },
+      "go": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ot": {
+        "part1": 0.465,
+        "part2": 1.628,
+        "part3": 0.909
+      },
+      "eg": {
+        "part1": 0.864,
+        "part2": 1.296,
+        "part3": 0.844
+      },
+      "em": {
+        "part1": 0.648,
+        "part2": 0.864,
+        "part3": 1.477
+      },
+      "oa": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "da": {
+        "part1": 0.962,
+        "part2": 0.687,
+        "part3": 1.343
+      },
+      "ai": {
+        "part1": 1.008,
+        "part2": 0.0,
+        "part3": 1.97
+      },
+      "i*": {
+        "part1": 1.209,
+        "part2": 0.0,
+        "part3": 1.773
+      },
+      "en": {
+        "part1": 0.336,
+        "part2": 1.848,
+        "part3": 0.821
+      },
+      "hs": {
+        "part1": 0.648,
+        "part2": 1.08,
+        "part3": 1.266
+      },
+      "e*": {
+        "part1": 0.465,
+        "part2": 1.628,
+        "part3": 0.909
+      },
+      "y*": {
+        "part1": 0.756,
+        "part2": 1.512,
+        "part3": 0.739
+      },
+      "kh": {
+        "part1": 0.605,
+        "part2": 1.814,
+        "part3": 0.591
+      },
+      "ch": {
+        "part1": 1.601,
+        "part2": 0.711,
+        "part3": 0.695
+      },
+      "ka": {
+        "part1": 0.302,
+        "part2": 1.209,
+        "part3": 1.477
+      },
+      "im": {
+        "part1": 0.55,
+        "part2": 0.825,
+        "part3": 1.612
+      },
+      "yr": {
+        "part1": 1.134,
+        "part2": 0.378,
+        "part3": 1.477
+      },
+      "ea": {
+        "part1": 0.504,
+        "part2": 0.672,
+        "part3": 1.806
+      },
+      "ph": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ko": {
+        "part1": 0.756,
+        "part2": 0.907,
+        "part3": 1.33
+      },
+      "ts": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "dg": {
+        "part1": 1.134,
+        "part2": 1.134,
+        "part3": 0.739
+      },
+      "dm": {
+        "part1": 0.825,
+        "part2": 1.649,
+        "part3": 0.537
+      },
+      "dd": {
+        "part1": 0.605,
+        "part2": 1.814,
+        "part3": 0.591
+      },
+      "of": {
+        "part1": 1.26,
+        "part2": 1.008,
+        "part3": 0.739
+      },
+      "*y": {
+        "part1": 0.916,
+        "part2": 1.008,
+        "part3": 1.074
+      },
+      "ad": {
+        "part1": 1.374,
+        "part2": 0.0,
+        "part3": 1.612
+      },
+      "jy": {
+        "part1": 1.728,
+        "part2": 1.296,
+        "part3": 0.0
+      },
+      "og": {
+        "part1": 1.099,
+        "part2": 1.649,
+        "part3": 0.269
+      },
+      "er": {
+        "part1": 0.756,
+        "part2": 1.134,
+        "part3": 1.108
+      },
+      "ld": {
+        "part1": 0.938,
+        "part2": 0.834,
+        "part3": 1.223
+      },
+      "ns": {
+        "part1": 0.504,
+        "part2": 1.512,
+        "part3": 0.985
+      },
+      "se": {
+        "part1": 1.512,
+        "part2": 0.0,
+        "part3": 1.477
+      },
+      "hd": {
+        "part1": 0.907,
+        "part2": 0.907,
+        "part3": 1.182
+      },
+      "is": {
+        "part1": 1.512,
+        "part2": 0.648,
+        "part3": 0.844
+      },
+      "py": {
+        "part1": 2.217,
+        "part2": 0.806,
+        "part3": 0.0
+      },
+      "ed": {
+        "part1": 1.512,
+        "part2": 1.008,
+        "part3": 0.492
+      },
+      "ep": {
+        "part1": 0.756,
+        "part2": 1.512,
+        "part3": 0.739
+      },
+      "rd": {
+        "part1": 0.0,
+        "part2": 1.008,
+        "part3": 1.97
+      },
+      "rg": {
+        "part1": 0.432,
+        "part2": 1.728,
+        "part3": 0.844
+      },
+      "rm": {
+        "part1": 0.0,
+        "part2": 1.728,
+        "part3": 1.266
+      },
+      "hl": {
+        "part1": 0.504,
+        "part2": 1.344,
+        "part3": 1.149
+      },
+      "el": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "te": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "fy": {
+        "part1": 1.344,
+        "part2": 1.008,
+        "part3": 0.657
+      },
+      "on": {
+        "part1": 2.016,
+        "part2": 0.672,
+        "part3": 0.328
+      },
+      "hm": {
+        "part1": 2.267,
+        "part2": 0.0,
+        "part3": 0.739
+      },
+      "hg": {
+        "part1": 2.267,
+        "part2": 0.0,
+        "part3": 0.739
+      },
+      "la": {
+        "part1": 2.419,
+        "part2": 0.0,
+        "part3": 0.591
+      },
+      "edy": {
+        "part1": 1.152,
+        "part2": 1.008,
+        "part3": 0.844
+      },
+      "lg": {
+        "part1": 0.432,
+        "part2": 1.296,
+        "part3": 1.266
+      },
+      "lm": {
+        "part1": 0.825,
+        "part2": 0.825,
+        "part3": 1.343
+      },
+      "ss": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "lr": {
+        "part1": 0.756,
+        "part2": 2.267,
+        "part3": 0.0
+      },
+      "qy": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "et": {
+        "part1": 0.605,
+        "part2": 2.419,
+        "part3": 0.0
+      },
+      "op": {
+        "part1": 2.419,
+        "part2": 0.605,
+        "part3": 0.0
+      },
+      "ym": {
+        "part1": 1.008,
+        "part2": 2.016,
+        "part3": 0.0
+      },
+      "oj": {
+        "part1": 1.86,
+        "part2": 0.698,
+        "part3": 0.455
+      },
+      "sf": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "yl": {
+        "part1": 1.008,
+        "part2": 1.008,
+        "part3": 0.985
+      },
+      "de": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "fd": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "sm": {
+        "part1": 1.209,
+        "part2": 1.209,
+        "part3": 0.591
+      },
+      "*t": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "rl": {
+        "part1": 0.756,
+        "part2": 0.0,
+        "part3": 2.216
+      },
+      "oq": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "po": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "it": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "no": {
+        "part1": 1.728,
+        "part2": 0.432,
+        "part3": 0.844
+      },
+      "*d": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "ng": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "hk": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "nm": {
+        "part1": 1.008,
+        "part2": 0.0,
+        "part3": 1.97
+      },
+      "il": {
+        "part1": 1.89,
+        "part2": 0.378,
+        "part3": 0.739
+      },
+      "*k": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "yk": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "*s": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "sr": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "id": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "k*": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "ii": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "fo": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "rr": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "eedy": {
+        "part1": 1.008,
+        "part2": 1.008,
+        "part3": 0.985
+      },
+      "rs": {
+        "part1": 2.016,
+        "part2": 0.0,
+        "part3": 0.985
+      },
+      "ra": {
+        "part1": 1.728,
+        "part2": 0.864,
+        "part3": 0.422
+      },
+      "gy": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "co": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "a*": {
+        "part1": 0.55,
+        "part2": 1.649,
+        "part3": 0.806
+      },
+      "hn": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "yt": {
+        "part1": 0.0,
+        "part2": 2.016,
+        "part3": 0.985
+      },
+      "oo": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "nl": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "rn": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "qd": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "aq": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "yf": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "dr": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "di": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "kg": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "km": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "oc": {
+        "part1": 0.0,
+        "part2": 1.512,
+        "part3": 1.477
+      },
+      "ri": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ek": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "ak": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ke": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "at": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "oi": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "*m": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "nr": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "my": {
+        "part1": 2.016,
+        "part2": 0.0,
+        "part3": 0.985
+      },
+      "m*": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "md": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "gi": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "*l": {
+        "part1": 1.512,
+        "part2": 1.512,
+        "part3": 0.0
+      },
+      "ms": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "ef": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "l*": {
+        "part1": 1.512,
+        "part2": 0.0,
+        "part3": 1.477
+      },
+      "s*": {
+        "part1": 2.016,
+        "part2": 1.008,
+        "part3": 0.0
+      },
+      "oe": {
+        "part1": 1.512,
+        "part2": 0.0,
+        "part3": 1.477
+      },
+      "ma": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "tp": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "tl": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "hh": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "g*": {
+        "part1": 0.0,
+        "part2": 0.0,
+        "part3": 2.954
+      },
+      "ne": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "fh": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "ck": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "lp": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "yo": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      },
+      "*e": {
+        "part1": 0.0,
+        "part2": 3.023,
+        "part3": 0.0
+      },
+      "sn": {
+        "part1": 3.023,
+        "part2": 0.0,
+        "part3": 0.0
+      }
+    },
+    "enriched_prefixes_by_part": {
+      "part1": [
+        {
+          "prefix": "pd",
+          "enrichment": 3.023,
+          "count": 5
+        },
+        {
+          "prefix": "lk",
+          "enrichment": 2.519,
+          "count": 5
+        },
+        {
+          "prefix": "po",
+          "enrichment": 2.111,
+          "count": 37
+        },
+        {
+          "prefix": "fa",
+          "enrichment": 2.016,
+          "count": 4
+        }
+      ],
+      "part2": [],
+      "part3": [
+        {
+          "prefix": "at",
+          "enrichment": 2.532,
+          "count": 6
+        },
+        {
+          "prefix": "oq",
+          "enrichment": 2.216,
+          "count": 6
+        }
+      ]
+    },
+    "avoided_prefixes_by_part": {
+      "part1": [
+        {
+          "prefix": "oq",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "ac",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "d*",
+          "enrichment": 0.233,
+          "count": 1
+        },
+        {
+          "prefix": "sk",
+          "enrichment": 0.336,
+          "count": 1
+        },
+        {
+          "prefix": "rc",
+          "enrichment": 0.394,
+          "count": 3
+        },
+        {
+          "prefix": "at",
+          "enrichment": 0.432,
+          "count": 1
+        },
+        {
+          "prefix": "q*",
+          "enrichment": 0.432,
+          "count": 1
+        },
+        {
+          "prefix": "qc",
+          "enrichment": 0.432,
+          "count": 1
+        },
+        {
+          "prefix": "o*",
+          "enrichment": 0.465,
+          "count": 2
+        }
+      ],
+      "part2": [
+        {
+          "prefix": "fa",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "at",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "lk",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "pd",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "yo",
+          "enrichment": 0.324,
+          "count": 3
+        },
+        {
+          "prefix": "oo",
+          "enrichment": 0.378,
+          "count": 1
+        },
+        {
+          "prefix": "ry",
+          "enrichment": 0.378,
+          "count": 1
+        },
+        {
+          "prefix": "po",
+          "enrichment": 0.399,
+          "count": 7
+        }
+      ],
+      "part3": [
+        {
+          "prefix": "dk",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "pd",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "prefix": "py",
+          "enrichment": 0.185,
+          "count": 1
+        },
+        {
+          "prefix": "pc",
+          "enrichment": 0.227,
+          "count": 6
+        },
+        {
+          "prefix": "fc",
+          "enrichment": 0.306,
+          "count": 3
+        },
+        {
+          "prefix": "ty",
+          "enrichment": 0.328,
+          "count": 2
+        },
+        {
+          "prefix": "yp",
+          "enrichment": 0.348,
+          "count": 4
+        },
+        {
+          "prefix": "op",
+          "enrichment": 0.391,
+          "count": 16
+        },
+        {
+          "prefix": "pa",
+          "enrichment": 0.422,
+          "count": 1
+        },
+        {
+          "prefix": "lk",
+          "enrichment": 0.492,
+          "count": 1
+        }
+      ]
+    },
+    "enriched_suffixes_by_part": {
+      "part1": [
+        {
+          "suffix": "la",
+          "enrichment": 2.419,
+          "count": 4
+        },
+        {
+          "suffix": "op",
+          "enrichment": 2.419,
+          "count": 4
+        },
+        {
+          "suffix": "py",
+          "enrichment": 2.217,
+          "count": 11
+        },
+        {
+          "suffix": "r*",
+          "enrichment": 2.159,
+          "count": 5
+        },
+        {
+          "suffix": "on",
+          "enrichment": 2.016,
+          "count": 6
+        }
+      ],
+      "part2": [
+        {
+          "suffix": "et",
+          "enrichment": 2.419,
+          "count": 4
+        },
+        {
+          "suffix": "so",
+          "enrichment": 2.267,
+          "count": 9
+        }
+      ],
+      "part3": []
+    },
+    "avoided_suffixes_by_part": {
+      "part1": [
+        {
+          "suffix": "rm",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "so",
+          "enrichment": 0.252,
+          "count": 1
+        },
+        {
+          "suffix": "ka",
+          "enrichment": 0.302,
+          "count": 1
+        },
+        {
+          "suffix": "en",
+          "enrichment": 0.336,
+          "count": 2
+        },
+        {
+          "suffix": "rg",
+          "enrichment": 0.432,
+          "count": 1
+        },
+        {
+          "suffix": "lg",
+          "enrichment": 0.432,
+          "count": 1
+        },
+        {
+          "suffix": "ot",
+          "enrichment": 0.465,
+          "count": 4
+        },
+        {
+          "suffix": "e*",
+          "enrichment": 0.465,
+          "count": 2
+        },
+        {
+          "suffix": "ha",
+          "enrichment": 0.477,
+          "count": 3
+        }
+      ],
+      "part2": [
+        {
+          "suffix": "r*",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "ta",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "i*",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "ad",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "la",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "yr",
+          "enrichment": 0.378,
+          "count": 1
+        },
+        {
+          "suffix": "il",
+          "enrichment": 0.378,
+          "count": 1
+        },
+        {
+          "suffix": "th",
+          "enrichment": 0.432,
+          "count": 2
+        },
+        {
+          "suffix": "nd",
+          "enrichment": 0.432,
+          "count": 1
+        },
+        {
+          "suffix": "no",
+          "enrichment": 0.432,
+          "count": 1
+        }
+      ],
+      "part3": [
+        {
+          "suffix": "*r",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "jy",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "py",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "et",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "op",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "*l",
+          "enrichment": 0.0,
+          "count": 0
+        },
+        {
+          "suffix": "aj",
+          "enrichment": 0.197,
+          "count": 1
+        },
+        {
+          "suffix": "og",
+          "enrichment": 0.269,
+          "count": 1
+        },
+        {
+          "suffix": "lo",
+          "enrichment": 0.311,
+          "count": 2
+        },
+        {
+          "suffix": "on",
+          "enrichment": 0.328,
+          "count": 1
+        }
+      ]
+    },
+    "part_totals": {
+      "1": 4682,
+      "2": 4682,
+      "3": 4791
+    }
+  },
+  "part_specific_vocabulary": {
+    "part1_vocabulary": {
+      "interpretation": "Words appearing >80% in Part 1 (heading candidates)",
+      "count": 12,
+      "words": [
+        {
+          "word": "orar",
+          "total": 7,
+          "part1_fraction": 0.857,
+          "prefix": "or",
+          "suffix": "ar"
+        },
+        {
+          "word": "opchor",
+          "total": 5,
+          "part1_fraction": 1.0,
+          "prefix": "op",
+          "suffix": "or"
+        },
+        {
+          "word": "chary",
+          "total": 4,
+          "part1_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "ry"
+        },
+        {
+          "word": "chadaiin",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "aiin"
+        },
+        {
+          "word": "kshor",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "ks",
+          "suffix": "or"
+        },
+        {
+          "word": "otshol",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "ot",
+          "suffix": "ol"
+        },
+        {
+          "word": "scho",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "sc",
+          "suffix": "ho"
+        },
+        {
+          "word": "chykchy",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "hy"
+        },
+        {
+          "word": "octhody",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "oc",
+          "suffix": "dy"
+        },
+        {
+          "word": "tshor",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "ts",
+          "suffix": "or"
+        },
+        {
+          "word": "ldy",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "ld",
+          "suffix": "dy"
+        },
+        {
+          "word": "r*",
+          "total": 3,
+          "part1_fraction": 1.0,
+          "prefix": "r*",
+          "suffix": "r*"
+        }
+      ]
+    },
+    "part2_vocabulary": {
+      "interpretation": "Words appearing >80% in Part 2 (descriptor candidates)",
+      "count": 14,
+      "words": [
+        {
+          "word": "ycheol",
+          "total": 6,
+          "part2_fraction": 0.833,
+          "prefix": "yc",
+          "suffix": "ol"
+        },
+        {
+          "word": "shees",
+          "total": 5,
+          "part2_fraction": 1.0,
+          "prefix": "sh",
+          "suffix": "es"
+        },
+        {
+          "word": "chokol",
+          "total": 5,
+          "part2_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "ol"
+        },
+        {
+          "word": "so",
+          "total": 4,
+          "part2_fraction": 1.0,
+          "prefix": "so",
+          "suffix": "so"
+        },
+        {
+          "word": "tcheol",
+          "total": 4,
+          "part2_fraction": 1.0,
+          "prefix": "tc",
+          "suffix": "ol"
+        },
+        {
+          "word": "chodaly",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "ly"
+        },
+        {
+          "word": "kshey",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "ks",
+          "suffix": "ey"
+        },
+        {
+          "word": "chtol",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "ol"
+        },
+        {
+          "word": "teeol",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "te",
+          "suffix": "ol"
+        },
+        {
+          "word": "chkol",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "ol"
+        },
+        {
+          "word": "qotam",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "qo",
+          "suffix": "am"
+        },
+        {
+          "word": "okchar",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "ok",
+          "suffix": "ar"
+        },
+        {
+          "word": "sodar",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "so",
+          "suffix": "ar"
+        },
+        {
+          "word": "chekal",
+          "total": 3,
+          "part2_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "al"
+        }
+      ]
+    },
+    "part3_vocabulary": {
+      "interpretation": "Words appearing >80% in Part 3 (application candidates)",
+      "count": 7,
+      "words": [
+        {
+          "word": "cthal",
+          "total": 6,
+          "part3_fraction": 0.833,
+          "prefix": "ct",
+          "suffix": "al"
+        },
+        {
+          "word": "okaldy",
+          "total": 6,
+          "part3_fraction": 0.833,
+          "prefix": "ok",
+          "suffix": "dy"
+        },
+        {
+          "word": "kam",
+          "total": 5,
+          "part3_fraction": 1.0,
+          "prefix": "ka",
+          "suffix": "am"
+        },
+        {
+          "word": "daiim",
+          "total": 4,
+          "part3_fraction": 1.0,
+          "prefix": "da",
+          "suffix": "im"
+        },
+        {
+          "word": "ykchody",
+          "total": 4,
+          "part3_fraction": 1.0,
+          "prefix": "yk",
+          "suffix": "dy"
+        },
+        {
+          "word": "koraiin",
+          "total": 3,
+          "part3_fraction": 1.0,
+          "prefix": "ko",
+          "suffix": "aiin"
+        },
+        {
+          "word": "cheodain",
+          "total": 3,
+          "part3_fraction": 1.0,
+          "prefix": "ch",
+          "suffix": "ain"
+        }
+      ]
+    },
+    "uniform_vocabulary": {
+      "interpretation": "Words distributed evenly (<40% in any part) - grammatical/structural",
+      "count": 120,
+      "words": [
+        {
+          "word": "daiin",
+          "total": 477,
+          "max_fraction": 0.377,
+          "prefix": "da",
+          "suffix": "aiin"
+        },
+        {
+          "word": "chol",
+          "total": 259,
+          "max_fraction": 0.39,
+          "prefix": "ch",
+          "suffix": "ol"
+        },
+        {
+          "word": "chor",
+          "total": 193,
+          "max_fraction": 0.347,
+          "prefix": "ch",
+          "suffix": "or"
+        },
+        {
+          "word": "dy",
+          "total": 145,
+          "max_fraction": 0.359,
+          "prefix": "dy",
+          "suffix": "dy"
+        },
+        {
+          "word": "chy",
+          "total": 119,
+          "max_fraction": 0.378,
+          "prefix": "ch",
+          "suffix": "hy"
+        },
+        {
+          "word": "shol",
+          "total": 117,
+          "max_fraction": 0.359,
+          "prefix": "sh",
+          "suffix": "ol"
+        },
+        {
+          "word": "ol",
+          "total": 117,
+          "max_fraction": 0.376,
+          "prefix": "ol",
+          "suffix": "ol"
+        },
+        {
+          "word": "sho",
+          "total": 116,
+          "max_fraction": 0.379,
+          "prefix": "sh",
+          "suffix": "ho"
+        },
+        {
+          "word": "cthy",
+          "total": 105,
+          "max_fraction": 0.371,
+          "prefix": "ct",
+          "suffix": "hy"
+        },
+        {
+          "word": "dain",
+          "total": 104,
+          "max_fraction": 0.365,
+          "prefix": "da",
+          "suffix": "ain"
+        },
+        {
+          "word": "or",
+          "total": 103,
+          "max_fraction": 0.388,
+          "prefix": "or",
+          "suffix": "or"
+        },
+        {
+          "word": "dal",
+          "total": 103,
+          "max_fraction": 0.359,
+          "prefix": "da",
+          "suffix": "al"
+        },
+        {
+          "word": "shey",
+          "total": 64,
+          "max_fraction": 0.375,
+          "prefix": "sh",
+          "suffix": "ey"
+        },
+        {
+          "word": "saiin",
+          "total": 59,
+          "max_fraction": 0.339,
+          "prefix": "sa",
+          "suffix": "aiin"
+        },
+        {
+          "word": "dor",
+          "total": 58,
+          "max_fraction": 0.397,
+          "prefix": "do",
+          "suffix": "or"
+        },
+        {
+          "word": "ar",
+          "total": 56,
+          "max_fraction": 0.357,
+          "prefix": "ar",
+          "suffix": "ar"
+        },
+        {
+          "word": "qotchy",
+          "total": 55,
+          "max_fraction": 0.382,
+          "prefix": "qo",
+          "suffix": "hy"
+        },
+        {
+          "word": "dam",
+          "total": 50,
+          "max_fraction": 0.36,
+          "prefix": "da",
+          "suffix": "am"
+        },
+        {
+          "word": "chody",
+          "total": 49,
+          "max_fraction": 0.388,
+          "prefix": "ch",
+          "suffix": "dy"
+        },
+        {
+          "word": "cthey",
+          "total": 47,
+          "max_fraction": 0.383,
+          "prefix": "ct",
+          "suffix": "ey"
+        },
+        {
+          "word": "sheol",
+          "total": 44,
+          "max_fraction": 0.386,
+          "prefix": "sh",
+          "suffix": "ol"
+        },
+        {
+          "word": "sheey",
+          "total": 41,
+          "max_fraction": 0.39,
+          "prefix": "sh",
+          "suffix": "eey"
+        },
+        {
+          "word": "cheey",
+          "total": 38,
+          "max_fraction": 0.395,
+          "prefix": "ch",
+          "suffix": "eey"
+        },
+        {
+          "word": "kol",
+          "total": 36,
+          "max_fraction": 0.361,
+          "prefix": "ko",
+          "suffix": "ol"
+        },
+        {
+          "word": "qoky",
+          "total": 34,
+          "max_fraction": 0.382,
+          "prefix": "qo",
+          "suffix": "ky"
+        },
+        {
+          "word": "sheor",
+          "total": 30,
+          "max_fraction": 0.333,
+          "prefix": "sh",
+          "suffix": "or"
+        },
+        {
+          "word": "tol",
+          "total": 26,
+          "max_fraction": 0.385,
+          "prefix": "to",
+          "suffix": "ol"
+        },
+        {
+          "word": "ctho",
+          "total": 25,
+          "max_fraction": 0.36,
+          "prefix": "ct",
+          "suffix": "ho"
+        },
+        {
+          "word": "ky",
+          "total": 23,
+          "max_fraction": 0.391,
+          "prefix": "ky",
+          "suffix": "ky"
+        },
+        {
+          "word": "sal",
+          "total": 23,
+          "max_fraction": 0.391,
+          "prefix": "sa",
+          "suffix": "al"
+        },
+        {
+          "word": "chckhy",
+          "total": 23,
+          "max_fraction": 0.391,
+          "prefix": "ch",
+          "suffix": "hy"
+        },
+        {
+          "word": "chcthy",
+          "total": 22,
+          "max_fraction": 0.364,
+          "prefix": "ch",
+          "suffix": "hy"
+        },
+        {
+          "word": "qokey",
+          "total": 21,
+          "max_fraction": 0.381,
+          "prefix": "qo",
+          "suffix": "ey"
+        },
+        {
+          "word": "kor",
+          "total": 19,
+          "max_fraction": 0.368,
+          "prefix": "ko",
+          "suffix": "or"
+        },
+        {
+          "word": "dan",
+          "total": 19,
+          "max_fraction": 0.368,
+          "prefix": "da",
+          "suffix": "an"
+        },
+        {
+          "word": "qotor",
+          "total": 19,
+          "max_fraction": 0.368,
+          "prefix": "qo",
+          "suffix": "or"
+        },
+        {
+          "word": "chal",
+          "total": 18,
+          "max_fraction": 0.389,
+          "prefix": "ch",
+          "suffix": "al"
+        },
+        {
+          "word": "chom",
+          "total": 18,
+          "max_fraction": 0.389,
+          "prefix": "ch",
+          "suffix": "om"
+        },
+        {
+          "word": "okeor",
+          "total": 18,
+          "max_fraction": 0.389,
+          "prefix": "ok",
+          "suffix": "or"
+        },
+        {
+          "word": "otchor",
+          "total": 17,
+          "max_fraction": 0.353,
+          "prefix": "ot",
+          "suffix": "or"
+        },
+        {
+          "word": "qotchol",
+          "total": 16,
+          "max_fraction": 0.375,
+          "prefix": "qo",
+          "suffix": "ol"
+        },
+        {
+          "word": "okey",
+          "total": 16,
+          "max_fraction": 0.375,
+          "prefix": "ok",
+          "suffix": "ey"
+        },
+        {
+          "word": "okchor",
+          "total": 15,
+          "max_fraction": 0.333,
+          "prefix": "ok",
+          "suffix": "or"
+        },
+        {
+          "word": "ody",
+          "total": 15,
+          "max_fraction": 0.333,
+          "prefix": "od",
+          "suffix": "dy"
+        },
+        {
+          "word": "daiir",
+          "total": 14,
+          "max_fraction": 0.357,
+          "prefix": "da",
+          "suffix": "ir"
+        },
+        {
+          "word": "ytaiin",
+          "total": 13,
+          "max_fraction": 0.385,
+          "prefix": "yt",
+          "suffix": "aiin"
+        },
+        {
+          "word": "chs",
+          "total": 13,
+          "max_fraction": 0.385,
+          "prefix": "ch",
+          "suffix": "hs"
+        },
+        {
+          "word": "yty",
+          "total": 13,
+          "max_fraction": 0.385,
+          "prefix": "yt",
+          "suffix": "ty"
+        },
+        {
+          "word": "qoaiin",
+          "total": 13,
+          "max_fraction": 0.385,
+          "prefix": "qo",
+          "suffix": "aiin"
+        },
+        {
+          "word": "qockhey",
+          "total": 13,
+          "max_fraction": 0.385,
+          "prefix": "qo",
+          "suffix": "ey"
+        }
+      ]
+    }
+  },
+  "part_length_analysis": {
+    "statistics_by_part": {
+      "part1": {
+        "mean": 41.07,
+        "std": 23.03,
+        "min": 14,
+        "max": 147,
+        "cv": 0.561
+      },
+      "part2": {
+        "mean": 41.07,
+        "std": 23.03,
+        "min": 14,
+        "max": 147,
+        "cv": 0.561
+      },
+      "part3": {
+        "mean": 42.03,
+        "std": 23.08,
+        "min": 14,
+        "max": 149,
+        "cv": 0.549
+      }
+    },
+    "mean_length_ratios": {
+      "part1": 0.33,
+      "part2": 0.33,
+      "part3": 0.339
+    },
+    "deviation_from_equal_thirds": {
+      "part1": 0.003,
+      "part2": 0.003,
+      "part3": 0.006
+    },
+    "dominant_part": null,
+    "interpretation": "Parts are roughly equal",
+    "entry_count": 114
+  },
+  "transition_patterns": {
+    "part1_to_part2": {
+      "word_transitions": [
+        {
+          "bigram": "daiin -> shos",
+          "count": 1
+        },
+        {
+          "bigram": "sochey -> chokody",
+          "count": 1
+        },
+        {
+          "bigram": "chan -> saiin",
+          "count": 1
+        },
+        {
+          "bigram": "qotsho -> otchy",
+          "count": 1
+        },
+        {
+          "bigram": "chol -> oky",
+          "count": 1
+        },
+        {
+          "bigram": "chear -> een",
+          "count": 1
+        },
+        {
+          "bigram": "shain -> qotchol",
+          "count": 1
+        },
+        {
+          "bigram": "sheey -> cto",
+          "count": 1
+        },
+        {
+          "bigram": "oka*os -> ok**or",
+          "count": 1
+        },
+        {
+          "bigram": "chot* -> shy",
+          "count": 1
+        },
+        {
+          "bigram": "sheor -> chocthy",
+          "count": 1
+        },
+        {
+          "bigram": "os -> dajy",
+          "count": 1
+        },
+        {
+          "bigram": "qotchy -> chald",
+          "count": 1
+        },
+        {
+          "bigram": "choschy -> dain",
+          "count": 1
+        },
+        {
+          "bigram": "sol -> kol",
+          "count": 1
+        },
+        {
+          "bigram": "otchar -> etaiin",
+          "count": 1
+        },
+        {
+          "bigram": "chcthod -> shor",
+          "count": 1
+        },
+        {
+          "bigram": "kaiin -> cthor",
+          "count": 1
+        },
+        {
+          "bigram": "dy -> sor",
+          "count": 1
+        },
+        {
+          "bigram": "ytey -> kchol",
+          "count": 1
+        }
+      ],
+      "prefix_transitions": [
+        {
+          "prefix_bigram": "ch- -> da-",
+          "count": 4
+        },
+        {
+          "prefix_bigram": "ch- -> sh-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "sh- -> ch-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "da- -> ch-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "ch- -> ch-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "ch- -> sa-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ch- -> ok-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "sh- -> qo-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "sh- -> ct-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "qo- -> qo-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "sh- -> sh-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ot- -> ok-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "qo- -> da-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ct- -> ch-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "da- -> yk-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "da- -> sh-",
+          "count": 1
+        },
+        {
+          "prefix_bigram": "so- -> ch-",
+          "count": 1
+        },
+        {
+          "prefix_bigram": "qo- -> ot-",
+          "count": 1
+        },
+        {
+          "prefix_bigram": "ch- -> ee-",
+          "count": 1
+        },
+        {
+          "prefix_bigram": "ok- -> ok-",
+          "count": 1
+        }
+      ],
+      "unique_transitions": 114,
+      "total_transitions": 114
+    },
+    "part2_to_part3": {
+      "word_transitions": [
+        {
+          "bigram": "dain -> ckhyds",
+          "count": 1
+        },
+        {
+          "bigram": "dolchieody -> olchoees",
+          "count": 1
+        },
+        {
+          "bigram": "daiirdl -> qoky",
+          "count": 1
+        },
+        {
+          "bigram": "chckom -> dor",
+          "count": 1
+        },
+        {
+          "bigram": "oporar -> ofchsy",
+          "count": 1
+        },
+        {
+          "bigram": "chekeol -> oka",
+          "count": 1
+        },
+        {
+          "bigram": "daiin -> cthom",
+          "count": 1
+        },
+        {
+          "bigram": "daiin -> qookoiiin",
+          "count": 1
+        },
+        {
+          "bigram": "shody -> qoaiin",
+          "count": 1
+        },
+        {
+          "bigram": "shol -> daiin",
+          "count": 1
+        },
+        {
+          "bigram": "ckhaiin -> shea",
+          "count": 1
+        },
+        {
+          "bigram": "shy -> qokam",
+          "count": 1
+        },
+        {
+          "bigram": "shody -> shol",
+          "count": 1
+        },
+        {
+          "bigram": "cheor -> odaiin",
+          "count": 1
+        },
+        {
+          "bigram": "chol -> chey",
+          "count": 1
+        },
+        {
+          "bigram": "chal -> daiin",
+          "count": 1
+        },
+        {
+          "bigram": "chol -> chytchy",
+          "count": 1
+        },
+        {
+          "bigram": "chol -> ctchy",
+          "count": 1
+        },
+        {
+          "bigram": "yky -> qotchor",
+          "count": 1
+        },
+        {
+          "bigram": "chol -> qokchyky",
+          "count": 1
+        }
+      ],
+      "prefix_transitions": [
+        {
+          "prefix_bigram": "sh- -> qo-",
+          "count": 6
+        },
+        {
+          "prefix_bigram": "ch- -> da-",
+          "count": 4
+        },
+        {
+          "prefix_bigram": "ch- -> ok-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "ch- -> ch-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "qo- -> da-",
+          "count": 3
+        },
+        {
+          "prefix_bigram": "da- -> qo-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ch- -> do-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "da- -> ct-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "sh- -> da-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "sh- -> sh-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ch- -> od-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ch- -> ct-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ct- -> ch-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "do- -> ch-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "qo- -> ot-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "sh- -> ot-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "ol- -> sh-",
+          "count": 2
+        },
+        {
+          "prefix_bigram": "da- -> ck-",
+          "count": 1
+        },
+        {
+          "prefix_bigram": "do- -> ol-",
+          "count": 1
+        },
+        {
+          "prefix_bigram": "op- -> of-",
+          "count": 1
+        }
+      ],
+      "unique_transitions": 114,
+      "total_transitions": 114
+    },
+    "comparison": {
+      "more_varied_transition": "Part2→Part3",
+      "ratio": 1.0
+    }
+  },
+  "entry_type_clustering": {
+    "total_entries_analyzed": 114,
+    "unique_cluster_types": 9,
+    "top_clusters": [
+      {
+        "cluster_key": "ch_medium",
+        "member_count": 32,
+        "example_folios": [
+          "f1v",
+          "f2r",
+          "f3r",
+          "f4v",
+          "f6r"
+        ]
+      },
+      {
+        "cluster_key": "ch_long",
+        "member_count": 15,
+        "example_folios": [
+          "f8r",
+          "f17v",
+          "f42r",
+          "f49v",
+          "f58r"
+        ]
+      },
+      {
+        "cluster_key": "ch_short",
+        "member_count": 12,
+        "example_folios": [
+          "f4r",
+          "f5r",
+          "f5v",
+          "f7r",
+          "f13v"
+        ]
+      },
+      {
+        "cluster_key": "qo_medium",
+        "member_count": 10,
+        "example_folios": [
+          "f9v",
+          "f19v",
+          "f23v",
+          "f37r",
+          "f37v"
+        ]
+      },
+      {
+        "cluster_key": "da_medium",
+        "member_count": 8,
+        "example_folios": [
+          "f14r",
+          "f18r",
+          "f22r",
+          "f23r",
+          "f32r"
+        ]
+      },
+      {
+        "cluster_key": "sh_medium",
+        "member_count": 7,
+        "example_folios": [
+          "f8v",
+          "f13r",
+          "f18v",
+          "f44v",
+          "f49r"
+        ]
+      },
+      {
+        "cluster_key": "ot_medium",
+        "member_count": 5,
+        "example_folios": [
+          "f14v",
+          "f22v",
+          "f36v",
+          "f44r",
+          "f52r"
+        ]
+      },
+      {
+        "cluster_key": "sh_short",
+        "member_count": 4,
+        "example_folios": [
+          "f11r",
+          "f11v",
+          "f25r",
+          "f30v"
+        ]
+      },
+      {
+        "cluster_key": "ct_medium",
+        "member_count": 3,
+        "example_folios": [
+          "f29v",
+          "f87r",
+          "f87v"
+        ]
+      }
+    ],
+    "section_length_distribution": {
+      "T": {
+        "long": 3
+      },
+      "H": {
+        "medium": 67,
+        "short": 23,
+        "long": 5
+      },
+      "P": {
+        "long": 14,
+        "medium": 2
+      }
+    },
+    "opening_prefix_distribution": [
+      [
+        "po",
+        17
+      ],
+      [
+        "pc",
+        16
+      ],
+      [
+        "ko",
+        11
+      ],
+      [
+        "to",
+        9
+      ],
+      [
+        "ts",
+        6
+      ],
+      [
+        "ok",
+        6
+      ],
+      [
+        "ks",
+        4
+      ],
+      [
+        "kc",
+        3
+      ],
+      [
+        "fo",
+        3
+      ],
+      [
+        "fc",
+        3
+      ],
+      [
+        "ps",
+        3
+      ],
+      [
+        "ct",
+        3
+      ],
+      [
+        "py",
+        3
+      ],
+      [
+        "tc",
+        3
+      ],
+      [
+        "ot",
+        3
+      ]
+    ],
+    "closing_suffix_distribution": [
+      [
+        "aiin",
+        18
+      ],
+      [
+        "ol",
+        12
+      ],
+      [
+        "or",
+        11
+      ],
+      [
+        "ey",
+        7
+      ],
+      [
+        "hy",
+        7
+      ],
+      [
+        "dy",
+        6
+      ],
+      [
+        "eey",
+        5
+      ],
+      [
+        "am",
+        4
+      ],
+      [
+        "ry",
+        4
+      ],
+      [
+        "ain",
+        3
+      ],
+      [
+        "im",
+        3
+      ],
+      [
+        "ky",
+        3
+      ],
+      [
+        "os",
+        3
+      ],
+      [
+        "ly",
+        3
+      ],
+      [
+        "iin",
+        3
+      ]
+    ]
+  },
+  "summary": {
+    "three_part_structure_validated": true,
+    "key_findings": [
+      "Part 1 has 4 enriched prefixes",
+      "Part 2 has 0 enriched prefixes",
+      "Part 3 has 2 enriched prefixes",
+      "12 words are Part 1-specific (heading candidates)",
+      "Parts are parts are roughly equal",
+      "Boundary detection methods agree at 71.2% rate"
+    ],
+    "constraints_for_decipherment": [
+      "Three-part entry structure is real and consistent",
+      "Part 1 vocabulary is distinct from Parts 2-3",
+      "Transition patterns exist at part boundaries",
+      "Entry types cluster by opening prefix and length"
+    ]
+  }
+}

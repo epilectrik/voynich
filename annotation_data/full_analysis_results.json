@@ -1,0 +1,370 @@
+{
+  "mode_a_aggregated": {
+    "f25r": {
+      "flower_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f4v": {
+      "root_type": {
+        "mode": "BULBOUS",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "BULBOUS": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      },
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f22v": {
+      "root_type": {
+        "mode": "BRANCHING",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "BRANCHING": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "5+",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "5+": 1.0
+        }
+      }
+    },
+    "f9r": {
+      "plant_symmetry": {
+        "mode": "ASYMMETRIC",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "ASYMMETRIC": 1.0
+        }
+      }
+    },
+    "f2r": {
+      "leaf_shape": {
+        "mode": "NEEDLE",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "NEEDLE": 1.0
+        }
+      }
+    },
+    "f35v": {
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f29v": {
+      "flower_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f10v": {
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f36r": {
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f51v": {
+      "leaf_shape": {
+        "mode": "SERRATED",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "SERRATED": 0.75
+        }
+      },
+      "plant_symmetry": {
+        "mode": "BILATERAL",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "BILATERAL": 1.0
+        }
+      }
+    },
+    "f15r": {
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "plant_symmetry": {
+        "mode": "ASYMMETRIC",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "ASYMMETRIC": 0.75
+        }
+      }
+    },
+    "f17r": {
+      "leaf_shape": {
+        "mode": "LANCEOLATE",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "LANCEOLATE": 0.75
+        }
+      },
+      "flower_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f19r": {
+      "leaf_shape": {
+        "mode": "LANCEOLATE",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "LANCEOLATE": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f56r": {
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "plant_symmetry": {
+        "mode": "ASYMMETRIC",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "ASYMMETRIC": 1.0
+        }
+      }
+    },
+    "f11v": {
+      "leaf_shape": {
+        "mode": "MIXED",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "MIXED": 0.75
+        }
+      }
+    }
+  },
+  "mode_b_statistics": {
+    "same_cluster": {
+      "n_records": 2,
+      "coherent_rate": null,
+      "outlier_detected_rate": null,
+      "similarity_cohesion": 1.0,
+      "overall_cohesion": 1.0,
+      "avg_response_time_ms": 12868.0,
+      "is_hypothesis": true
+    },
+    "same_hub_type": {
+      "n_records": 5,
+      "coherent_rate": null,
+      "outlier_detected_rate": null,
+      "similarity_cohesion": 1.0,
+      "overall_cohesion": 1.0,
+      "avg_response_time_ms": 13226.2,
+      "is_hypothesis": true
+    },
+    "random": {
+      "n_records": 11,
+      "coherent_rate": null,
+      "outlier_detected_rate": 1.0,
+      "similarity_cohesion": 0.667,
+      "overall_cohesion": 0.333,
+      "avg_response_time_ms": 13627.9,
+      "is_hypothesis": false
+    },
+    "same_category": {
+      "n_records": 4,
+      "coherent_rate": null,
+      "outlier_detected_rate": null,
+      "similarity_cohesion": 1.0,
+      "overall_cohesion": 1.0,
+      "avg_response_time_ms": 15734.8,
+      "is_hypothesis": true
+    },
+    "same_prefix": {
+      "n_records": 1,
+      "coherent_rate": null,
+      "outlier_detected_rate": 1.0,
+      "similarity_cohesion": null,
+      "overall_cohesion": null,
+      "avg_response_time_ms": 12011.0,
+      "is_hypothesis": true
+    },
+    "stratified_random": {
+      "n_records": 2,
+      "coherent_rate": null,
+      "outlier_detected_rate": null,
+      "similarity_cohesion": 1.0,
+      "overall_cohesion": 1.0,
+      "avg_response_time_ms": 12454.0,
+      "is_hypothesis": false
+    }
+  },
+  "hypothesis_tests": {
+    "same_hub_type": {
+      "hypothesis_cohesion": 1.0,
+      "null_cohesion": 0.286,
+      "effect_size": 1.896,
+      "percentile": 99.3,
+      "p_value": 0.0438,
+      "significant": true,
+      "n_hypothesis": 5,
+      "n_null": 11
+    }
+  },
+  "foil_calibration": {
+    "status": "NO_FOIL_DATA",
+    "message": "No foil group responses recorded"
+  },
+  "reliability": {
+    "intra_annotator_consistency": 1.0,
+    "duplicate_checks_total": 2,
+    "duplicate_checks_matched": 2,
+    "status": "GOOD"
+  },
+  "success_criteria": {
+    "mode_a_reliability": true,
+    "mode_a_clear_majority": true,
+    "mode_b_category_significant": false,
+    "mode_b_prefix_significant": false,
+    "foil_calibration_passed": false,
+    "overall_success": false
+  }
+}

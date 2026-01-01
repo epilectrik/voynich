@@ -1,0 +1,711 @@
+{
+  "body_prefixes": {
+    "qo": {
+      "meaning": "womb/uterus",
+      "confidence": "HIGH",
+      "bio_enrichment": 31.077741874168407
+    },
+    "ol": {
+      "meaning": "menstrual flow/fluid",
+      "confidence": "MEDIUM",
+      "bio_enrichment": 38.24626865671642
+    },
+    "so": {
+      "meaning": "health/healing state",
+      "confidence": "MEDIUM",
+      "herb_enrichment": 22.78820375335121
+    },
+    "pc": {
+      "meaning": "chest/pectoral",
+      "confidence": "LOW"
+    }
+  },
+  "gallows_meanings": {
+    "lch": {
+      "meaning": "WASH/CLEANSE",
+      "confidence": "HIGH",
+      "evidence": "'l' suggests liquid/lavare; 25% in BIOLOGICAL (bathing)",
+      "count": 224,
+      "bio_pct": 25.0,
+      "herb_pct": 24.107142857142858,
+      "recipe_pct": 50.0
+    },
+    "lche": {
+      "meaning": "WASH/CLEANSE",
+      "confidence": "HIGH",
+      "evidence": "'l' suggests liquid/lavare; 42% in BIOLOGICAL (bathing)",
+      "count": 505,
+      "bio_pct": 42.17821782178218,
+      "herb_pct": 8.118811881188119,
+      "recipe_pct": 49.10891089108911
+    },
+    "cth": {
+      "meaning": "PURIFY (with water)",
+      "confidence": "MEDIUM",
+      "evidence": "'cth' related to water prefix; 53% in HERBAL",
+      "count": 936,
+      "bio_pct": 12.286324786324785,
+      "herb_pct": 53.098290598290596,
+      "recipe_pct": 34.294871794871796
+    },
+    "tch": {
+      "meaning": "PREPARE/TREAT",
+      "confidence": "MEDIUM",
+      "evidence": "Most common in HERBAL (63%); general preparation",
+      "count": 661,
+      "bio_pct": 4.992435703479576,
+      "herb_pct": 63.086232980332824,
+      "recipe_pct": 30.408472012102873
+    },
+    "ckh": {
+      "meaning": "PROCESS/WORK",
+      "confidence": "MEDIUM",
+      "evidence": "High in RECIPES (42%); cooking/processing",
+      "count": 652,
+      "bio_pct": 22.699386503067483,
+      "herb_pct": 34.8159509202454,
+      "recipe_pct": 42.17791411042945
+    },
+    "kch": {
+      "meaning": "STRENGTHEN/POTENT",
+      "confidence": "LOW",
+      "evidence": "Enriched in HERBAL (57%); intensifier",
+      "count": 729,
+      "bio_pct": 7.270233196159122,
+      "herb_pct": 57.338820301783265,
+      "recipe_pct": 33.33333333333333
+    },
+    "pch": {
+      "meaning": "APPLY (to body)",
+      "confidence": "MEDIUM",
+      "evidence": "Often followed by BODY terms",
+      "count": 335,
+      "bio_pct": 6.26865671641791,
+      "herb_pct": 36.71641791044776,
+      "recipe_pct": 56.11940298507463
+    },
+    "cph": {
+      "meaning": "PRESS/EXTRACT",
+      "confidence": "LOW",
+      "evidence": "'p' suggests pressing; 0% liquid context",
+      "count": 208,
+      "bio_pct": 8.653846153846153,
+      "herb_pct": 50.0,
+      "recipe_pct": 40.86538461538461
+    },
+    "fch": {
+      "meaning": "FILTER/STRAIN",
+      "confidence": "LOW",
+      "evidence": "'f' sound suggests filtering; appears with liquids",
+      "count": 97,
+      "bio_pct": 4.123711340206185,
+      "herb_pct": 53.608247422680414,
+      "recipe_pct": 42.2680412371134
+    },
+    "dch": {
+      "meaning": "GRIND/CRUSH",
+      "confidence": "LOW",
+      "evidence": "Appears with plant terms; preparation step",
+      "count": 317,
+      "bio_pct": 11.35646687697161,
+      "herb_pct": 47.63406940063091,
+      "recipe_pct": 38.801261829652994
+    }
+  },
+  "plant_candidates": [
+    {
+      "word": "e",
+      "folio": "f49v",
+      "folio_count": 3,
+      "corpus_count": 3,
+      "enrichment": 1.0,
+      "prefix": null
+    },
+    {
+      "word": "chordy",
+      "folio": "f19r",
+      "folio_count": 2,
+      "corpus_count": 2,
+      "enrichment": 1.0,
+      "prefix": "ch"
+    },
+    {
+      "word": "cheked",
+      "folio": "f41r",
+      "folio_count": 2,
+      "corpus_count": 2,
+      "enrichment": 1.0,
+      "prefix": "ch"
+    },
+    {
+      "word": "k",
+      "folio": "f57v",
+      "folio_count": 10,
+      "corpus_count": 13,
+      "enrichment": 0.7692307692307693,
+      "prefix": null
+    },
+    {
+      "word": "c",
+      "folio": "f57v",
+      "folio_count": 5,
+      "corpus_count": 7,
+      "enrichment": 0.7142857142857143,
+      "prefix": null
+    },
+    {
+      "word": "*",
+      "folio": "f57v",
+      "folio_count": 26,
+      "corpus_count": 38,
+      "enrichment": 0.6842105263157895,
+      "prefix": null
+    },
+    {
+      "word": "x",
+      "folio": "f57v",
+      "folio_count": 6,
+      "corpus_count": 9,
+      "enrichment": 0.6666666666666666,
+      "prefix": null
+    },
+    {
+      "word": "damo",
+      "folio": "f3r",
+      "folio_count": 2,
+      "corpus_count": 3,
+      "enrichment": 0.6666666666666666,
+      "prefix": "da"
+    },
+    {
+      "word": "choshy",
+      "folio": "f49r",
+      "folio_count": 2,
+      "corpus_count": 3,
+      "enrichment": 0.6666666666666666,
+      "prefix": "ch"
+    },
+    {
+      "word": "shodal",
+      "folio": "f54r",
+      "folio_count": 2,
+      "corpus_count": 3,
+      "enrichment": 0.6666666666666666,
+      "prefix": "sh"
+    },
+    {
+      "word": "t",
+      "folio": "f57v",
+      "folio_count": 5,
+      "corpus_count": 8,
+      "enrichment": 0.625,
+      "prefix": null
+    },
+    {
+      "word": "f",
+      "folio": "f66r",
+      "folio_count": 4,
+      "corpus_count": 8,
+      "enrichment": 0.5,
+      "prefix": null
+    },
+    {
+      "word": "chekedy",
+      "folio": "f41r",
+      "folio_count": 2,
+      "corpus_count": 4,
+      "enrichment": 0.5,
+      "prefix": "ch"
+    },
+    {
+      "word": "chotor",
+      "folio": "f56v",
+      "folio_count": 2,
+      "corpus_count": 4,
+      "enrichment": 0.5,
+      "prefix": "ch"
+    }
+  ],
+  "folio_dominant": {
+    "f10r": {
+      "word": "daiin",
+      "count": 5
+    },
+    "f10v": {
+      "word": "daiin",
+      "count": 8
+    },
+    "f11r": {
+      "word": "daiin",
+      "count": 7
+    },
+    "f11v": {
+      "word": "shol",
+      "count": 2
+    },
+    "f13r": {
+      "word": "chol",
+      "count": 3
+    },
+    "f13v": {
+      "word": "chy",
+      "count": 3
+    },
+    "f14r": {
+      "word": "daiin",
+      "count": 3
+    },
+    "f14v": {
+      "word": "daiin",
+      "count": 7
+    },
+    "f15r": {
+      "word": "daiin",
+      "count": 5
+    },
+    "f15v": {
+      "word": "chor",
+      "count": 5
+    },
+    "f16r": {
+      "word": "daiin",
+      "count": 3
+    },
+    "f16v": {
+      "word": "chol",
+      "count": 4
+    },
+    "f17r": {
+      "word": "chol",
+      "count": 2
+    },
+    "f17v": {
+      "word": "chol",
+      "count": 8
+    },
+    "f18r": {
+      "word": "dar",
+      "count": 5
+    },
+    "f18v": {
+      "word": "shy",
+      "count": 2
+    },
+    "f19r": {
+      "word": "daiin",
+      "count": 8
+    },
+    "f19v": {
+      "word": "daiin",
+      "count": 9
+    },
+    "f1r": {
+      "word": "daiin",
+      "count": 7
+    },
+    "f1v": {
+      "word": "chol",
+      "count": 5
+    }
+  },
+  "translations": {
+    "f78r": {
+      "voynich": [
+        "tshedor",
+        "shedy",
+        "qopchedy",
+        "qokedy",
+        "dy",
+        "qokol",
+        "oky",
+        "qokeedy",
+        "qokedy",
+        "shedy",
+        "tchedy",
+        "otar",
+        "olkedy",
+        "dam",
+        "qckhedy",
+        "cheky",
+        "dol",
+        "chedy",
+        "qokedy",
+        "qokain"
+      ],
+      "translations": [
+        [
+          "tshedor",
+          "dry",
+          "MEDIUM"
+        ],
+        [
+          "shedy",
+          "juice/sap -ed/done",
+          "HIGH"
+        ],
+        [
+          "qopchedy",
+          "womb apply -ed/done",
+          "MEDIUM"
+        ],
+        [
+          "qokedy",
+          "womb -ed/done heat",
+          "HIGH"
+        ],
+        [
+          "dy",
+          "-ed/done",
+          "HIGH"
+        ],
+        [
+          "qokol",
+          "womb oil",
+          "MEDIUM"
+        ],
+        [
+          "oky",
+          "sky/celestial",
+          "MEDIUM"
+        ],
+        [
+          "qokeedy",
+          "womb -ed/done steam",
+          "HIGH"
+        ],
+        [
+          "qokedy",
+          "womb -ed/done heat",
+          "HIGH"
+        ],
+        [
+          "shedy",
+          "juice/sap -ed/done",
+          "HIGH"
+        ],
+        [
+          "tchedy",
+          "-ed/done prepare",
+          "MEDIUM"
+        ],
+        [
+          "otar",
+          "time/season",
+          "HIGH"
+        ],
+        [
+          "olkedy",
+          "oil -ed/done heat",
+          "MEDIUM"
+        ],
+        [
+          "dam",
+          "leaf",
+          "HIGH"
+        ],
+        [
+          "qckhedy",
+          "process -ed/done",
+          "MEDIUM"
+        ],
+        [
+          "cheky",
+          "herb",
+          "HIGH"
+        ],
+        [
+          "dol",
+          "oil",
+          "MEDIUM"
+        ],
+        [
+          "chedy",
+          "herb -ed/done",
+          "HIGH"
+        ],
+        [
+          "qokedy",
+          "womb -ed/done heat",
+          "HIGH"
+        ],
+        [
+          "qokain",
+          "womb -tion",
+          "HIGH"
+        ]
+      ],
+      "fluent": "Take juice/sap -ed/done, juice/sap -ed/done, leaf. womb -ed/done heat, womb -ed/done steam. for the womb apply -ed/done, womb oil. at sky/celestial, time/season."
+    },
+    "f1r": {
+      "voynich": [
+        "fachys",
+        "ykal",
+        "ar",
+        "ataiin",
+        "shol",
+        "shory",
+        "cthres",
+        "y",
+        "kor",
+        "sholdy",
+        "sory",
+        "ckhar",
+        "or",
+        "y",
+        "kair",
+        "chtaiin",
+        "shar",
+        "are",
+        "cthar",
+        "cthar"
+      ],
+      "translations": [
+        [
+          "fachys",
+          "[fachys]",
+          "UNKNOWN"
+        ],
+        [
+          "ykal",
+          "cycle",
+          "MEDIUM"
+        ],
+        [
+          "ar",
+          "air",
+          "MEDIUM"
+        ],
+        [
+          "ataiin",
+          "-place",
+          "HIGH"
+        ],
+        [
+          "shol",
+          "juice/sap oil",
+          "MEDIUM"
+        ],
+        [
+          "shory",
+          "juice/sap benefit",
+          "MEDIUM"
+        ],
+        [
+          "cthres",
+          "purify",
+          "MEDIUM"
+        ],
+        [
+          "y",
+          "[y]",
+          "UNKNOWN"
+        ],
+        [
+          "kor",
+          "benefit",
+          "MEDIUM"
+        ],
+        [
+          "sholdy",
+          "juice/sap -ed/done oil",
+          "MEDIUM"
+        ],
+        [
+          "sory",
+          "health",
+          "MEDIUM"
+        ],
+        [
+          "ckhar",
+          "air process",
+          "MEDIUM"
+        ],
+        [
+          "or",
+          "benefit",
+          "MEDIUM"
+        ],
+        [
+          "y",
+          "[y]",
+          "UNKNOWN"
+        ],
+        [
+          "kair",
+          "[kair]",
+          "UNKNOWN"
+        ],
+        [
+          "chtaiin",
+          "herb -place",
+          "HIGH"
+        ],
+        [
+          "shar",
+          "juice/sap",
+          "HIGH"
+        ],
+        [
+          "are",
+          "air",
+          "MEDIUM"
+        ],
+        [
+          "cthar",
+          "air purify",
+          "MEDIUM"
+        ],
+        [
+          "cthar",
+          "air purify",
+          "MEDIUM"
+        ]
+      ],
+      "fluent": "Take juice/sap oil, juice/sap benefit, juice/sap -ed/done oil. for the health. at cycle."
+    },
+    "f99r": {
+      "voynich": [
+        "okoramog",
+        "okary",
+        "darar",
+        "oky",
+        "salo",
+        "oro",
+        "ain",
+        "okor",
+        "salol",
+        "skeeal",
+        "okary",
+        "okolo",
+        "otalam",
+        "otoldy",
+        "pcheody",
+        "oteody",
+        "daiin",
+        "cpheey",
+        "tshol",
+        "dal"
+      ],
+      "translations": [
+        [
+          "okoramog",
+          "sky/celestial benefit",
+          "MEDIUM"
+        ],
+        [
+          "okary",
+          "sky/celestial",
+          "MEDIUM"
+        ],
+        [
+          "darar",
+          "leaf",
+          "HIGH"
+        ],
+        [
+          "oky",
+          "sky/celestial",
+          "MEDIUM"
+        ],
+        [
+          "salo",
+          "seed",
+          "MEDIUM"
+        ],
+        [
+          "oro",
+          "benefit",
+          "MEDIUM"
+        ],
+        [
+          "ain",
+          "-tion",
+          "MEDIUM"
+        ],
+        [
+          "okor",
+          "sky/celestial benefit",
+          "MEDIUM"
+        ],
+        [
+          "salol",
+          "seed oil",
+          "MEDIUM"
+        ],
+        [
+          "skeeal",
+          "steam",
+          "HIGH"
+        ],
+        [
+          "okary",
+          "sky/celestial",
+          "MEDIUM"
+        ],
+        [
+          "okolo",
+          "sky/celestial oil",
+          "MEDIUM"
+        ],
+        [
+          "otalam",
+          "time/season",
+          "HIGH"
+        ],
+        [
+          "otoldy",
+          "time/season -ed/done oil",
+          "MEDIUM"
+        ],
+        [
+          "pcheody",
+          "apply -ed/done",
+          "MEDIUM"
+        ],
+        [
+          "oteody",
+          "time/season -ed/done flow",
+          "MEDIUM"
+        ],
+        [
+          "daiin",
+          "leaf",
+          "HIGH"
+        ],
+        [
+          "cpheey",
+          "moist press",
+          "LOW"
+        ],
+        [
+          "tshol",
+          "oil",
+          "MEDIUM"
+        ],
+        [
+          "dal",
+          "leaf",
+          "HIGH"
+        ]
+      ],
+      "fluent": "Take leaf, seed, seed oil. steam, moist press. at sky/celestial benefit, sky/celestial."
+    }
+  },
+  "coherence": {
+    "f78r": {
+      "high_pct": 60.0,
+      "elements_present": 4,
+      "coherence": "COHERENT - reads as medical instruction"
+    },
+    "f1r": {
+      "high_pct": 15.0,
+      "elements_present": 3,
+      "coherence": "COHERENT - reads as medical instruction"
+    },
+    "f99r": {
+      "high_pct": 25.0,
+      "elements_present": 3,
+      "coherence": "COHERENT - reads as medical instruction"
+    }
+  }
+}

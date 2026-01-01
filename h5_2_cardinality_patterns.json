@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "phase": "H5.2",
+    "title": "Cardinality Patterns",
+    "timestamp": "2025-12-30T21:43:38.288854"
+  },
+  "one_heading_many_clusters": [],
+  "many_headings_one_cluster": [
+    {
+      "cluster_id": 6,
+      "headings": [
+        "pdrairdy",
+        "okchop",
+        "sho",
+        "poshody",
+        "kcheodaiin",
+        "tolor",
+        "podairol"
+      ],
+      "num_headings": 7,
+      "interpretation": "POSSIBLE_ALIASES or SUBTYPES"
+    },
+    {
+      "cluster_id": 4,
+      "headings": [
+        "fcholdy",
+        "fochor",
+        "kydainy"
+      ],
+      "num_headings": 3,
+      "interpretation": "POSSIBLE_ALIASES or SUBTYPES"
+    },
+    {
+      "cluster_id": 1,
+      "headings": [
+        "pchafdan",
+        "tydlo",
+        "paiin",
+        "psheot"
+      ],
+      "num_headings": 4,
+      "interpretation": "POSSIBLE_ALIASES or SUBTYPES"
+    },
+    {
+      "cluster_id": 5,
+      "headings": [
+        "tshol",
+        "pysaiinor",
+        "pchooiin",
+        "poldchody"
+      ],
+      "num_headings": 4,
+      "interpretation": "POSSIBLE_ALIASES or SUBTYPES"
+    },
+    {
+      "cluster_id": 2,
+      "headings": [
+        "faiis",
+        "cthscthain",
+        "kshody",
+        "korary"
+      ],
+      "num_headings": 4,
+      "interpretation": "POSSIBLE_ALIASES or SUBTYPES"
+    },
+    {
+      "cluster_id": 3,
+      "headings": [
+        "kooiin",
+        "tchodar",
+        "fshody"
+      ],
+      "num_headings": 3,
+      "interpretation": "POSSIBLE_ALIASES or SUBTYPES"
+    }
+  ],
+  "interpretation": "ALIASES_OR_SUBTYPES_DOMINANT"
+}

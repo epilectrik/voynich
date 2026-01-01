@@ -1,0 +1,531 @@
+{
+  "metadata": {
+    "phase": "20C",
+    "title": "Canonical Recipe Extraction",
+    "timestamp": "2025-12-31T19:49:46.868788"
+  },
+  "total_b_traces": 83,
+  "recipe_families_found": 8,
+  "families": [
+    {
+      "family_id": 6,
+      "member_count": 53,
+      "member_folios": [
+        "f31r",
+        "f34r",
+        "f40v",
+        "f43r",
+        "f46v",
+        "f50r",
+        "f55v",
+        "f75r",
+        "f75v",
+        "f76r",
+        "f76v",
+        "f77r",
+        "f77v",
+        "f78r",
+        "f78v",
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v",
+        "f81r",
+        "f81v",
+        "f82r",
+        "f82v",
+        "f83r",
+        "f83v",
+        "f84r",
+        "f84v",
+        "f85r1",
+        "f86v6",
+        "f95r1",
+        "f95v1",
+        "f103r",
+        "f103v",
+        "f104r",
+        "f104v",
+        "f105r",
+        "f106r",
+        "f106v",
+        "f107r",
+        "f107v",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v",
+        "f112r",
+        "f112v",
+        "f113r",
+        "f113v",
+        "f114r",
+        "f114v",
+        "f115r",
+        "f115v",
+        "f116r"
+      ],
+      "canonical_folio": "f82v",
+      "canonical_length": 1270,
+      "canonical_first_tokens": [
+        "otechdy",
+        "otechdy",
+        "otechdy",
+        "otedy",
+        "otedy",
+        "otedy",
+        "daiin",
+        "oty",
+        "daiin",
+        "oty"
+      ],
+      "mandatory_classes": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18
+      ],
+      "optional_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        14,
+        15,
+        21,
+        23
+      ],
+      "mean_length": 1172.9,
+      "length_std": 496.6
+    },
+    {
+      "family_id": 3,
+      "member_count": 11,
+      "member_folios": [
+        "f33r",
+        "f33v",
+        "f39v",
+        "f40r",
+        "f48v",
+        "f55r",
+        "f85v2",
+        "f94r",
+        "f94v",
+        "f95r2",
+        "f95v2"
+      ],
+      "canonical_folio": "f40r",
+      "canonical_length": 293,
+      "canonical_first_tokens": [
+        "pchey",
+        "keodar",
+        "aldydy",
+        "qoky",
+        "okal",
+        "shdy",
+        "olkedy",
+        "opches",
+        "ar",
+        "ordaiin"
+      ],
+      "mandatory_classes": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "optional_classes": [
+        5,
+        6,
+        8,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "mean_length": 315.8,
+      "length_std": 125.6
+    },
+    {
+      "family_id": 1,
+      "member_count": 7,
+      "member_folios": [
+        "f31v",
+        "f41v",
+        "f48r",
+        "f50v",
+        "f86v5",
+        "f86v3",
+        "f105v"
+      ],
+      "canonical_folio": "f50v",
+      "canonical_length": 358,
+      "canonical_first_tokens": [
+        "tchy",
+        "do",
+        "ldar",
+        "shotchdy",
+        "qokchdy",
+        "opchedy",
+        "qokol",
+        "shor",
+        "ofar",
+        "fardam"
+      ],
+      "mandatory_classes": [
+        7,
+        8,
+        10,
+        11,
+        12,
+        16,
+        27,
+        28,
+        29,
+        30
+      ],
+      "optional_classes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        13,
+        14,
+        15,
+        17
+      ],
+      "mean_length": 573.0,
+      "length_std": 318.3
+    },
+    {
+      "family_id": 5,
+      "member_count": 5,
+      "member_folios": [
+        "f34v",
+        "f39r",
+        "f43v",
+        "f46r",
+        "f66r"
+      ],
+      "canonical_folio": "f39r",
+      "canonical_length": 617,
+      "canonical_first_tokens": [
+        "tedo",
+        "chshd",
+        "cphhofy",
+        "chdain",
+        "shey",
+        "fsey",
+        "dy",
+        "orain",
+        "cheepaiin",
+        "ofy"
+      ],
+      "mandatory_classes": [
+        2,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "optional_classes": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        15,
+        19,
+        23,
+        25,
+        26
+      ],
+      "mean_length": 684.2,
+      "length_std": 207.2
+    },
+    {
+      "family_id": 4,
+      "member_count": 3,
+      "member_folios": [
+        "f26r",
+        "f26v",
+        "f41r"
+      ],
+      "canonical_folio": "f26v",
+      "canonical_length": 355,
+      "canonical_first_tokens": [
+        "pchedar",
+        "qodary",
+        "pcheety",
+        "sair",
+        "shedy",
+        "ypchedy",
+        "ypchdy",
+        "qopy",
+        "shdy",
+        "pchedar"
+      ],
+      "mandatory_classes": [
+        7,
+        10,
+        11,
+        12,
+        21,
+        28,
+        29,
+        31,
+        38,
+        42
+      ],
+      "optional_classes": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        14,
+        15,
+        16,
+        17
+      ],
+      "mean_length": 328.7,
+      "length_std": 49.0
+    },
+    {
+      "family_id": 2,
+      "member_count": 2,
+      "member_folios": [
+        "f85r2",
+        "f86v4"
+      ],
+      "canonical_folio": "f85r2",
+      "canonical_length": 290,
+      "canonical_first_tokens": [
+        "odchdy",
+        "otedy",
+        "opoees",
+        "ar",
+        "chcthy",
+        "otchdy",
+        "otedy",
+        "otar",
+        "chepaiin",
+        "otadar"
+      ],
+      "mandatory_classes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        16
+      ],
+      "optional_classes": [
+        2,
+        7,
+        8,
+        13,
+        14,
+        22,
+        23,
+        24,
+        25,
+        36
+      ],
+      "mean_length": 355.0,
+      "length_std": 65.0
+    },
+    {
+      "family_id": 7,
+      "member_count": 1,
+      "member_folios": [
+        "f57r"
+      ],
+      "canonical_folio": "f57r",
+      "canonical_length": 254,
+      "canonical_first_tokens": [
+        "poeeo",
+        "ckhey",
+        "odain",
+        "cheop",
+        "sheody",
+        "shocfhey",
+        "dy",
+        "sheep",
+        "cheody",
+        "yodam"
+      ],
+      "mandatory_classes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        12,
+        16,
+        17,
+        18
+      ],
+      "optional_classes": [],
+      "mean_length": 254.0,
+      "length_std": 0.0
+    },
+    {
+      "family_id": 8,
+      "member_count": 1,
+      "member_folios": [
+        "f66v"
+      ],
+      "canonical_folio": "f66v",
+      "canonical_length": 229,
+      "canonical_first_tokens": [
+        "okeodof",
+        "sheod",
+        "ychoopy",
+        "opch",
+        "dal",
+        "dorshefy",
+        "ytody",
+        "daldeam",
+        "okeodof",
+        "sheod"
+      ],
+      "mandatory_classes": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "optional_classes": [],
+      "mean_length": 229.0,
+      "length_std": 0.0
+    }
+  ],
+  "shared_subsequences": [
+    {
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "count": 3057
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        7
+      ],
+      "count": 463
+    },
+    {
+      "pattern": [
+        7,
+        0,
+        0
+      ],
+      "count": 446
+    },
+    {
+      "pattern": [
+        0,
+        7,
+        0
+      ],
+      "count": 380
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        38
+      ],
+      "count": 329
+    },
+    {
+      "pattern": [
+        31,
+        0,
+        0
+      ],
+      "count": 319
+    },
+    {
+      "pattern": [
+        44,
+        0,
+        0
+      ],
+      "count": 295
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        44
+      ],
+      "count": 281
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        31
+      ],
+      "count": 278
+    },
+    {
+      "pattern": [
+        0,
+        31,
+        0
+      ],
+      "count": 266
+    }
+  ],
+  "recipe_grammar": {
+    "hierarchical": true,
+    "common_openings": [
+      0,
+      7
+    ]
+  },
+  "REPERTOIRE_SIZE": 8,
+  "INTERPRETATION": "Extracted 8 distinct recipe families from 83 B-text traces. Mean family size: 10.4 entries."
+}

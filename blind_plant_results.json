@@ -1,0 +1,623 @@
+{
+  "timestamp": "2025-12-30T13:30:50.114010",
+  "methodology": "Blind dual-path analysis",
+  "folios_analyzed": 5,
+  "results": [
+    {
+      "folio": "f1v",
+      "text_analysis": {
+        "folio": "f1v",
+        "path": "TEXT-FIRST",
+        "humoral_indicators": {
+          "HOT": 5,
+          "COLD": 2,
+          "DRY": 7,
+          "WET": 4
+        },
+        "gynecological_indicators": 6,
+        "preparation_types": [
+          "washing",
+          "preparing",
+          "purifying",
+          "heating",
+          "steaming"
+        ],
+        "predicted_class": "HOT-GYNECOLOGICAL",
+        "reasoning": [
+          "HOT markers (5) > COLD (2)",
+          "Strong gynecological focus (6 markers)"
+        ]
+      },
+      "illustration_analysis": {
+        "folio": "f1v",
+        "path": "ILLUSTRATION-FIRST",
+        "observed_features": {
+          "description": "Plant with broad leaves, purple-tinged flowers, dark berries or fruits",
+          "leaf_shape": "ovate to elliptical, pointed tips",
+          "root_type": "thick tuberous root",
+          "flower_color": "purple or violet",
+          "distinctive": "berry-like fruits, dark colored"
+        },
+        "matching_plants": [
+          {
+            "plant": "belladonna",
+            "score": 8,
+            "reasons": [
+              "Leaf shape matches: ovate, pointed",
+              "Root type matches: thick tuberous",
+              "Flower color matches: purple",
+              "Distinctive feature matches: dark berries"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 3,
+            "reasons": [
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "mallow",
+            "score": 1,
+            "reasons": [
+              "Flower color matches: pink or white"
+            ]
+          }
+        ]
+      },
+      "convergence": {
+        "folio": "f1v",
+        "text_prediction": "HOT-GYNECOLOGICAL",
+        "top_illustration_matches": [
+          {
+            "plant": "belladonna",
+            "score": 8,
+            "reasons": [
+              "Leaf shape matches: ovate, pointed",
+              "Root type matches: thick tuberous",
+              "Flower color matches: purple",
+              "Distinctive feature matches: dark berries"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 3,
+            "reasons": [
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "mallow",
+            "score": 1,
+            "reasons": [
+              "Flower color matches: pink or white"
+            ]
+          }
+        ],
+        "convergence_result": "CONVERGENT",
+        "proposed_identification": "belladonna",
+        "alternatives": [
+          "hellebore"
+        ],
+        "coherence_check": "STRONG - gynecological uses match context"
+      },
+      "alternative_test": {
+        "folio": "f1v",
+        "proposed": "belladonna",
+        "alternatives": [
+          "hellebore"
+        ],
+        "alternative_tests": [
+          {
+            "alternative": "hellebore",
+            "humoral_same": true,
+            "gyn_overlap": false,
+            "breaks_coherence": false
+          }
+        ],
+        "final_recommendation": "UNCERTAIN - multiple plants fit equally well"
+      }
+    },
+    {
+      "folio": "f2r",
+      "text_analysis": {
+        "folio": "f2r",
+        "path": "TEXT-FIRST",
+        "humoral_indicators": {
+          "HOT": 1,
+          "COLD": 2,
+          "DRY": 7,
+          "WET": 3
+        },
+        "gynecological_indicators": 2,
+        "preparation_types": [
+          "washing",
+          "preparing",
+          "purifying"
+        ],
+        "predicted_class": "COLD-MOISTENING",
+        "reasoning": [
+          "COLD markers (2) > HOT (1)"
+        ]
+      },
+      "illustration_analysis": {
+        "folio": "f2r",
+        "path": "ILLUSTRATION-FIRST",
+        "observed_features": {
+          "description": "Plant with deeply divided leaves, yellow flowers",
+          "leaf_shape": "palmately divided, multiple lobes",
+          "root_type": "thick taproot",
+          "flower_color": "yellow",
+          "distinctive": "compound leaves, buttercup-like"
+        },
+        "matching_plants": [
+          {
+            "plant": "hellebore",
+            "score": 4,
+            "reasons": [
+              "Leaf shape matches: palmate, deeply divided",
+              "Root type matches: black root"
+            ]
+          },
+          {
+            "plant": "rue",
+            "score": 4,
+            "reasons": [
+              "Flower color matches: yellow",
+              "Distinctive feature matches: strong smell, bluish leaves"
+            ]
+          },
+          {
+            "plant": "waterlily",
+            "score": 3,
+            "reasons": [
+              "Distinctive feature matches: aquatic, floating leaves"
+            ]
+          },
+          {
+            "plant": "buttercup",
+            "score": 3,
+            "reasons": [
+              "Leaf shape matches: palmately divided",
+              "Flower color matches: yellow"
+            ]
+          },
+          {
+            "plant": "belladonna",
+            "score": 2,
+            "reasons": [
+              "Root type matches: thick tuberous"
+            ]
+          },
+          {
+            "plant": "mugwort",
+            "score": 2,
+            "reasons": [
+              "Leaf shape matches: deeply divided"
+            ]
+          }
+        ]
+      },
+      "convergence": {
+        "folio": "f2r",
+        "text_prediction": "COLD-MOISTENING",
+        "top_illustration_matches": [
+          {
+            "plant": "hellebore",
+            "score": 4,
+            "reasons": [
+              "Leaf shape matches: palmate, deeply divided",
+              "Root type matches: black root"
+            ]
+          },
+          {
+            "plant": "rue",
+            "score": 4,
+            "reasons": [
+              "Flower color matches: yellow",
+              "Distinctive feature matches: strong smell, bluish leaves"
+            ]
+          },
+          {
+            "plant": "waterlily",
+            "score": 3,
+            "reasons": [
+              "Distinctive feature matches: aquatic, floating leaves"
+            ]
+          }
+        ],
+        "convergence_result": "CONVERGENT",
+        "proposed_identification": "waterlily",
+        "alternatives": [],
+        "coherence_check": "MODERATE - some gynecological context"
+      },
+      "alternative_test": {
+        "folio": "f2r",
+        "proposed": "waterlily",
+        "alternatives": [],
+        "alternative_tests": [],
+        "final_recommendation": "ACCEPT waterlily - all alternatives break coherence"
+      }
+    },
+    {
+      "folio": "f3v",
+      "text_analysis": {
+        "folio": "f3v",
+        "path": "TEXT-FIRST",
+        "humoral_indicators": {
+          "HOT": 7,
+          "COLD": 0,
+          "DRY": 7,
+          "WET": 4
+        },
+        "gynecological_indicators": 8,
+        "preparation_types": [
+          "preparing",
+          "heating",
+          "steaming"
+        ],
+        "predicted_class": "HOT-GYNECOLOGICAL",
+        "reasoning": [
+          "HOT markers (7) > COLD (0)",
+          "Strong gynecological focus (8 markers)"
+        ]
+      },
+      "illustration_analysis": {
+        "folio": "f3v",
+        "path": "ILLUSTRATION-FIRST",
+        "observed_features": {
+          "description": "Plant with large basal leaves, tall flowering stalk",
+          "leaf_shape": "large, palmate, deeply lobed",
+          "root_type": "thick black root",
+          "flower_color": "green or dark purple",
+          "distinctive": "very large leaves, dark root"
+        },
+        "matching_plants": [
+          {
+            "plant": "belladonna",
+            "score": 6,
+            "reasons": [
+              "Root type matches: thick tuberous",
+              "Flower color matches: purple",
+              "Distinctive feature matches: dark berries"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 5,
+            "reasons": [
+              "Leaf shape matches: palmate, deeply divided",
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "mallow",
+            "score": 3,
+            "reasons": [
+              "Leaf shape matches: rounded, lobed",
+              "Flower color matches: pink or white"
+            ]
+          },
+          {
+            "plant": "waterlily",
+            "score": 3,
+            "reasons": [
+              "Distinctive feature matches: aquatic, floating leaves"
+            ]
+          },
+          {
+            "plant": "rue",
+            "score": 3,
+            "reasons": [
+              "Distinctive feature matches: strong smell, bluish leaves"
+            ]
+          },
+          {
+            "plant": "mugwort",
+            "score": 2,
+            "reasons": [
+              "Leaf shape matches: deeply divided"
+            ]
+          }
+        ]
+      },
+      "convergence": {
+        "folio": "f3v",
+        "text_prediction": "HOT-GYNECOLOGICAL",
+        "top_illustration_matches": [
+          {
+            "plant": "belladonna",
+            "score": 6,
+            "reasons": [
+              "Root type matches: thick tuberous",
+              "Flower color matches: purple",
+              "Distinctive feature matches: dark berries"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 5,
+            "reasons": [
+              "Leaf shape matches: palmate, deeply divided",
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "mallow",
+            "score": 3,
+            "reasons": [
+              "Leaf shape matches: rounded, lobed",
+              "Flower color matches: pink or white"
+            ]
+          }
+        ],
+        "convergence_result": "CONVERGENT",
+        "proposed_identification": "belladonna",
+        "alternatives": [
+          "hellebore"
+        ],
+        "coherence_check": "STRONG - gynecological uses match context"
+      },
+      "alternative_test": {
+        "folio": "f3v",
+        "proposed": "belladonna",
+        "alternatives": [
+          "hellebore"
+        ],
+        "alternative_tests": [
+          {
+            "alternative": "hellebore",
+            "humoral_same": true,
+            "gyn_overlap": false,
+            "breaks_coherence": false
+          }
+        ],
+        "final_recommendation": "UNCERTAIN - multiple plants fit equally well"
+      }
+    },
+    {
+      "folio": "f5v",
+      "text_analysis": {
+        "folio": "f5v",
+        "path": "TEXT-FIRST",
+        "humoral_indicators": {
+          "HOT": 2,
+          "COLD": 2,
+          "DRY": 6,
+          "WET": 4
+        },
+        "gynecological_indicators": 5,
+        "preparation_types": [
+          "washing",
+          "purifying",
+          "heating"
+        ],
+        "predicted_class": "HOT-DRY",
+        "reasoning": [
+          "HOT (2) and DRY (6) dominant"
+        ]
+      },
+      "illustration_analysis": {
+        "folio": "f5v",
+        "path": "ILLUSTRATION-FIRST",
+        "observed_features": {
+          "description": "Plant with rounded leaves, pink or white flowers",
+          "leaf_shape": "rounded, kidney-shaped",
+          "root_type": "fibrous root system",
+          "flower_color": "pink or white",
+          "distinctive": "soft fuzzy leaves, mucilaginous"
+        },
+        "matching_plants": [
+          {
+            "plant": "mallow",
+            "score": 8,
+            "reasons": [
+              "Leaf shape matches: rounded, lobed",
+              "Root type matches: fibrous",
+              "Flower color matches: pink or white",
+              "Distinctive feature matches: mucilaginous, soft"
+            ]
+          },
+          {
+            "plant": "waterlily",
+            "score": 6,
+            "reasons": [
+              "Leaf shape matches: rounded, floating",
+              "Flower color matches: white",
+              "Distinctive feature matches: aquatic, floating leaves"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 3,
+            "reasons": [
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "rue",
+            "score": 3,
+            "reasons": [
+              "Distinctive feature matches: strong smell, bluish leaves"
+            ]
+          },
+          {
+            "plant": "buttercup",
+            "score": 2,
+            "reasons": [
+              "Root type matches: fibrous"
+            ]
+          }
+        ]
+      },
+      "convergence": {
+        "folio": "f5v",
+        "text_prediction": "HOT-DRY",
+        "top_illustration_matches": [
+          {
+            "plant": "mallow",
+            "score": 8,
+            "reasons": [
+              "Leaf shape matches: rounded, lobed",
+              "Root type matches: fibrous",
+              "Flower color matches: pink or white",
+              "Distinctive feature matches: mucilaginous, soft"
+            ]
+          },
+          {
+            "plant": "waterlily",
+            "score": 6,
+            "reasons": [
+              "Leaf shape matches: rounded, floating",
+              "Flower color matches: white",
+              "Distinctive feature matches: aquatic, floating leaves"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 3,
+            "reasons": [
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          }
+        ],
+        "convergence_result": "CONVERGENT",
+        "proposed_identification": "hellebore",
+        "alternatives": [],
+        "coherence_check": "STRONG - gynecological uses match context"
+      },
+      "alternative_test": {
+        "folio": "f5v",
+        "proposed": "hellebore",
+        "alternatives": [],
+        "alternative_tests": [],
+        "final_recommendation": "ACCEPT hellebore - all alternatives break coherence"
+      }
+    },
+    {
+      "folio": "f6r",
+      "text_analysis": {
+        "folio": "f6r",
+        "path": "TEXT-FIRST",
+        "humoral_indicators": {
+          "HOT": 0,
+          "COLD": 4,
+          "DRY": 6,
+          "WET": 3
+        },
+        "gynecological_indicators": 2,
+        "preparation_types": [
+          "washing",
+          "preparing",
+          "purifying"
+        ],
+        "predicted_class": "COLD-MOISTENING",
+        "reasoning": [
+          "COLD markers (4) > HOT (0)"
+        ]
+      },
+      "illustration_analysis": {
+        "folio": "f6r",
+        "path": "ILLUSTRATION-FIRST",
+        "observed_features": {
+          "description": "Aquatic or water-associated plant, floating leaves",
+          "leaf_shape": "rounded, floating",
+          "root_type": "aquatic roots",
+          "flower_color": "white or pale",
+          "distinctive": "water habitat, lily-like"
+        },
+        "matching_plants": [
+          {
+            "plant": "waterlily",
+            "score": 5,
+            "reasons": [
+              "Leaf shape matches: rounded, floating",
+              "Root type matches: aquatic",
+              "Flower color matches: white"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 3,
+            "reasons": [
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "mallow",
+            "score": 3,
+            "reasons": [
+              "Leaf shape matches: rounded, lobed",
+              "Flower color matches: pink or white"
+            ]
+          }
+        ]
+      },
+      "convergence": {
+        "folio": "f6r",
+        "text_prediction": "COLD-MOISTENING",
+        "top_illustration_matches": [
+          {
+            "plant": "waterlily",
+            "score": 5,
+            "reasons": [
+              "Leaf shape matches: rounded, floating",
+              "Root type matches: aquatic",
+              "Flower color matches: white"
+            ]
+          },
+          {
+            "plant": "hellebore",
+            "score": 3,
+            "reasons": [
+              "Root type matches: black root",
+              "Flower color matches: white, green, or purple"
+            ]
+          },
+          {
+            "plant": "mallow",
+            "score": 3,
+            "reasons": [
+              "Leaf shape matches: rounded, lobed",
+              "Flower color matches: pink or white"
+            ]
+          }
+        ],
+        "convergence_result": "CONVERGENT",
+        "proposed_identification": "waterlily",
+        "alternatives": [
+          "mallow"
+        ],
+        "coherence_check": "MODERATE - some gynecological context"
+      },
+      "alternative_test": {
+        "folio": "f6r",
+        "proposed": "waterlily",
+        "alternatives": [
+          "mallow"
+        ],
+        "alternative_tests": [
+          {
+            "alternative": "mallow",
+            "humoral_same": true,
+            "gyn_overlap": false,
+            "breaks_coherence": false
+          }
+        ],
+        "final_recommendation": "UNCERTAIN - multiple plants fit equally well"
+      }
+    }
+  ],
+  "summary": {
+    "high_confidence": 2,
+    "medium_confidence": 0,
+    "low_confidence": 3
+  }
+}

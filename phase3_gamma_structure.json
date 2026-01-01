@@ -1,0 +1,554 @@
+{
+  "measure": "gamma_internal_structure",
+  "morphological_analysis": {
+    "prefix_groups": {
+      "ch": {
+        "tokens": [
+          "cho",
+          "chy",
+          "char",
+          "cheky",
+          "cheo",
+          "chckhy",
+          "chor",
+          "cheody",
+          "cheey",
+          "chol",
+          "chedy",
+          "chey",
+          "cheol",
+          "chdy",
+          "chcthy",
+          "chody"
+        ],
+        "count": 16
+      },
+      "qo": {
+        "tokens": [
+          "qoty",
+          "qokar",
+          "qokeey",
+          "qokal",
+          "qotchy",
+          "qoky",
+          "qokchy",
+          "qotedy",
+          "qokedy",
+          "qokey",
+          "qokol",
+          "qotaiin"
+        ],
+        "count": 12
+      },
+      "sh": {
+        "tokens": [
+          "shy",
+          "sheedy",
+          "shckhy",
+          "sheey",
+          "shey",
+          "shor",
+          "shol",
+          "sheol"
+        ],
+        "count": 8
+      },
+      "ok": {
+        "tokens": [
+          "okaiin",
+          "okar",
+          "oky",
+          "okol",
+          "okeey",
+          "okal",
+          "okedy",
+          "okeedy"
+        ],
+        "count": 8
+      },
+      "ot": {
+        "tokens": [
+          "oteey",
+          "oteedy",
+          "otain",
+          "otol",
+          "otal",
+          "oty",
+          "otaiin"
+        ],
+        "count": 7
+      },
+      "da": {
+        "tokens": [
+          "dair",
+          "dar",
+          "dain",
+          "dam",
+          "dal"
+        ],
+        "count": 5
+      },
+      "ct": {
+        "tokens": [
+          "cthy",
+          "cthey",
+          "cthol"
+        ],
+        "count": 3
+      },
+      "sa": {
+        "tokens": [
+          "sar",
+          "sal",
+          "saiin"
+        ],
+        "count": 3
+      },
+      "do": {
+        "tokens": [
+          "dol",
+          "dor"
+        ],
+        "count": 2
+      },
+      "or": {
+        "tokens": [
+          "or",
+          "oraiin"
+        ],
+        "count": 2
+      }
+    },
+    "suffix_groups": {
+      "dy": {
+        "tokens": [
+          "keedy",
+          "sheedy",
+          "cheody",
+          "oteedy",
+          "chedy",
+          "qotedy",
+          "okedy",
+          "chdy",
+          "qokedy",
+          "okeedy",
+          "chody",
+          "dy"
+        ],
+        "count": 12
+      },
+      "in": {
+        "tokens": [
+          "okaiin",
+          "taiin",
+          "lkaiin",
+          "dain",
+          "otain",
+          "raiin",
+          "kaiin",
+          "odaiin",
+          "saiin",
+          "qotaiin",
+          "oraiin",
+          "otaiin"
+        ],
+        "count": 12
+      },
+      "ol": {
+        "tokens": [
+          "cthol",
+          "dol",
+          "sol",
+          "chol",
+          "otol",
+          "okol",
+          "cheol",
+          "qokol",
+          "ol",
+          "shol",
+          "sheol"
+        ],
+        "count": 11
+      },
+      "ey": {
+        "tokens": [
+          "qokeey",
+          "cthey",
+          "oteey",
+          "cheey",
+          "chey",
+          "sheey",
+          "okeey",
+          "shey",
+          "qokey"
+        ],
+        "count": 9
+      },
+      "hy": {
+        "tokens": [
+          "cthy",
+          "shy",
+          "chy",
+          "shckhy",
+          "chckhy",
+          "qotchy",
+          "qokchy",
+          "chcthy"
+        ],
+        "count": 8
+      },
+      "al": {
+        "tokens": [
+          "qokal",
+          "al",
+          "otal",
+          "okal",
+          "dal",
+          "sal"
+        ],
+        "count": 6
+      },
+      "ar": {
+        "tokens": [
+          "sar",
+          "qokar",
+          "dar",
+          "char",
+          "okar"
+        ],
+        "count": 5
+      },
+      "or": {
+        "tokens": [
+          "chor",
+          "or",
+          "shor",
+          "dor"
+        ],
+        "count": 4
+      },
+      "ky": {
+        "tokens": [
+          "cheky",
+          "qoky",
+          "oky"
+        ],
+        "count": 3
+      },
+      "ty": {
+        "tokens": [
+          "qoty",
+          "oty"
+        ],
+        "count": 2
+      }
+    },
+    "avg_token_length": 4.467532467532467,
+    "length_distribution": {
+      "4": 19,
+      "5": 22,
+      "3": 13,
+      "6": 17,
+      "2": 5,
+      "7": 1
+    },
+    "largest_prefix_group": 16,
+    "largest_suffix_group": 12,
+    "morphology_productive": true
+  },
+  "clustering": {},
+  "cooccurrence_within_gamma": {
+    "adjacent_pairs": [
+      {
+        "pair": [
+          "chedy",
+          "ol"
+        ],
+        "count": 60
+      },
+      {
+        "pair": [
+          "ol",
+          "or"
+        ],
+        "count": 50
+      },
+      {
+        "pair": [
+          "chedy",
+          "qokedy"
+        ],
+        "count": 49
+      },
+      {
+        "pair": [
+          "chedy",
+          "qokeey"
+        ],
+        "count": 46
+      },
+      {
+        "pair": [
+          "chey",
+          "ol"
+        ],
+        "count": 42
+      },
+      {
+        "pair": [
+          "al",
+          "ol"
+        ],
+        "count": 37
+      },
+      {
+        "pair": [
+          "okaiin",
+          "ol"
+        ],
+        "count": 36
+      },
+      {
+        "pair": [
+          "chedy",
+          "dar"
+        ],
+        "count": 36
+      },
+      {
+        "pair": [
+          "chol",
+          "shol"
+        ],
+        "count": 33
+      },
+      {
+        "pair": [
+          "chol",
+          "chor"
+        ],
+        "count": 32
+      },
+      {
+        "pair": [
+          "chedy",
+          "dal"
+        ],
+        "count": 31
+      },
+      {
+        "pair": [
+          "cheol",
+          "ol"
+        ],
+        "count": 30
+      },
+      {
+        "pair": [
+          "chey",
+          "okaiin"
+        ],
+        "count": 29
+      },
+      {
+        "pair": [
+          "ol",
+          "qokedy"
+        ],
+        "count": 29
+      },
+      {
+        "pair": [
+          "chedy",
+          "qokal"
+        ],
+        "count": 29
+      },
+      {
+        "pair": [
+          "cheol",
+          "chol"
+        ],
+        "count": 28
+      },
+      {
+        "pair": [
+          "dar",
+          "ol"
+        ],
+        "count": 28
+      },
+      {
+        "pair": [
+          "chey",
+          "shey"
+        ],
+        "count": 28
+      },
+      {
+        "pair": [
+          "ol",
+          "shey"
+        ],
+        "count": 28
+      },
+      {
+        "pair": [
+          "okeey",
+          "qokeey"
+        ],
+        "count": 27
+      }
+    ],
+    "same_entry_pairs": [
+      {
+        "pair": [
+          "chol",
+          "chor"
+        ],
+        "count": 104
+      },
+      {
+        "pair": [
+          "dar",
+          "or"
+        ],
+        "count": 102
+      },
+      {
+        "pair": [
+          "chol",
+          "dy"
+        ],
+        "count": 101
+      },
+      {
+        "pair": [
+          "ol",
+          "or"
+        ],
+        "count": 97
+      },
+      {
+        "pair": [
+          "dar",
+          "ol"
+        ],
+        "count": 95
+      },
+      {
+        "pair": [
+          "chol",
+          "ol"
+        ],
+        "count": 94
+      },
+      {
+        "pair": [
+          "chol",
+          "or"
+        ],
+        "count": 94
+      },
+      {
+        "pair": [
+          "dar",
+          "dy"
+        ],
+        "count": 94
+      },
+      {
+        "pair": [
+          "chey",
+          "ol"
+        ],
+        "count": 93
+      },
+      {
+        "pair": [
+          "dy",
+          "ol"
+        ],
+        "count": 92
+      },
+      {
+        "pair": [
+          "chol",
+          "dar"
+        ],
+        "count": 91
+      },
+      {
+        "pair": [
+          "dy",
+          "or"
+        ],
+        "count": 90
+      },
+      {
+        "pair": [
+          "chey",
+          "chol"
+        ],
+        "count": 88
+      },
+      {
+        "pair": [
+          "dal",
+          "dar"
+        ],
+        "count": 86
+      },
+      {
+        "pair": [
+          "chor",
+          "dy"
+        ],
+        "count": 85
+      },
+      {
+        "pair": [
+          "chey",
+          "or"
+        ],
+        "count": 84
+      },
+      {
+        "pair": [
+          "chey",
+          "dy"
+        ],
+        "count": 84
+      },
+      {
+        "pair": [
+          "chol",
+          "dal"
+        ],
+        "count": 83
+      },
+      {
+        "pair": [
+          "chol",
+          "shol"
+        ],
+        "count": 83
+      },
+      {
+        "pair": [
+          "chey",
+          "dar"
+        ],
+        "count": 83
+      }
+    ],
+    "total_adjacent_pairs": 2527,
+    "total_cooccur_pairs": 2926
+  },
+  "independence_test": {
+    "average_mutual_information": 0.0006450964511181323,
+    "mi_interpretation": "NEAR-ZERO mutual information - GAMMA tokens are essentially independent",
+    "pairs_tested": 1965
+  },
+  "interpretation": "GAMMA shows productive morphology (shared affixes) - compositional structure | GAMMA tokens nearly independent (MI=0.001) - label system"
+}

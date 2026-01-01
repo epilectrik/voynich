@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "phase": "11_SYNTHESIS",
+    "title": "Quantitative Semantics Probe Synthesis",
+    "timestamp": "2025-12-31T12:51:32.107395"
+  },
+  "cardinality_findings": {
+    "significant_cardinalities": [
+      7,
+      8,
+      40,
+      12,
+      28,
+      30
+    ],
+    "interpretation": "Significant peaks at: 7 (planetary week/metals), 8 (known hub count), 12 (zodiacal year). Suggests numerical encoding of alchemical concepts."
+  },
+  "repetition_findings": {
+    "non_random": true,
+    "preferred_counts": [
+      2,
+      3
+    ]
+  },
+  "cycle_findings": {
+    "preferred_lengths": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "alignment_scores": {
+      "tria_prima_3": 2.22,
+      "elemental_4": 2.07,
+      "planetary_7": 1.31,
+      "zodiacal_12": 0.42
+    }
+  },
+  "population_split": {
+    "a_more_fixed": true,
+    "effect_size": 0.921
+  },
+  "astro_geometry": {
+    "common_divisions": [
+      13,
+      10,
+      12
+    ],
+    "semantic_alignment": 0.33
+  },
+  "verdict": {
+    "verdict": "QUANTITATIVE_ENCODING_CONFIRMED",
+    "confidence": "HIGH",
+    "signal_count": 4,
+    "interpretation": "Detected 4/4 strong quantitative encoding signals. Numbers are encoded behaviorally through repetition and cycle length."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "title": "pchor Investigation Report",
+    "phase": "Visual Coding Phase, Task 6",
+    "date": "2025-12-30T17:31:13.859816",
+    "purpose": "Investigate duplicate heading anomaly (f19r, f21r, f52v)"
+  },
+  "folios_analyzed": [
+    "f19r",
+    "f21r",
+    "f52v"
+  ],
+  "vocabulary_comparison": {
+    "pairwise_comparisons": [
+      {
+        "pair": "f19r <-> f21r",
+        "jaccard": 0.0417,
+        "shared_count": 4,
+        "unique_to_first": 43,
+        "unique_to_second": 49,
+        "shared_words": [
+          "cthor",
+          "daiin",
+          "pchor",
+          "ty"
+        ],
+        "interpretation": "DISTINCT"
+      },
+      {
+        "pair": "f19r <-> f52v",
+        "jaccard": 0.0392,
+        "shared_count": 4,
+        "unique_to_first": 43,
+        "unique_to_second": 55,
+        "shared_words": [
+          "cthor",
+          "daiin",
+          "pchor",
+          "tchor"
+        ],
+        "interpretation": "DISTINCT"
+      },
+      {
+        "pair": "f21r <-> f52v",
+        "jaccard": 0.0667,
+        "shared_count": 7,
+        "unique_to_first": 46,
+        "unique_to_second": 52,
+        "shared_words": [
+          "cheol",
+          "cheor",
+          "cthor",
+          "daiin",
+          "ol",
+          "pchor",
+          "sheol"
+        ],
+        "interpretation": "DISTINCT"
+      }
+    ],
+    "average_jaccard": 0.0492,
+    "interpretation": "VOCABULARIES_DISTINCT"
+  },
+  "part_by_part_comparison": {
+    "part1": {
+      "pairwise": [
+        {
+          "pair": "f19r <-> f21r",
+          "jaccard": 0.0526
+        },
+        {
+          "pair": "f19r <-> f52v",
+          "jaccard": 0.0256
+        },
+        {
+          "pair": "f21r <-> f52v",
+          "jaccard": 0.0256
+        }
+      ],
+      "average_jaccard": 0.0346
+    },
+    "part2": {
+      "pairwise": [
+        {
+          "pair": "f19r <-> f21r",
+          "jaccard": 0.0256
+        },
+        {
+          "pair": "f19r <-> f52v",
+          "jaccard": 0.0
+        },
+        {
+          "pair": "f21r <-> f52v",
+          "jaccard": 0.0811
+        }
+      ],
+      "average_jaccard": 0.0356
+    },
+    "part3": {
+      "pairwise": [
+        {
+          "pair": "f19r <-> f21r",
+          "jaccard": 0.0256
+        },
+        {
+          "pair": "f19r <-> f52v",
+          "jaccard": 0.0256
+        },
+        {
+          "pair": "f21r <-> f52v",
+          "jaccard": 0.0256
+        }
+      ],
+      "average_jaccard": 0.0256
+    }
+  },
+  "prefix_profile_comparison": {
+    "top_prefixes_per_folio": {
+      "f19r": [
+        "ch",
+        "da",
+        "qo",
+        "sh",
+        "dy"
+      ],
+      "f21r": [
+        "ch",
+        "qo",
+        "sh",
+        "ot",
+        "ct"
+      ],
+      "f52v": [
+        "ch",
+        "ct",
+        "qo",
+        "ck",
+        "sh"
+      ]
+    },
+    "shared_top_prefixes": [
+      "ch",
+      "qo",
+      "sh"
+    ],
+    "profile_similarities": [
+      {
+        "pair": "f19r <-> f21r",
+        "cosine_similarity": 0.8221
+      },
+      {
+        "pair": "f19r <-> f52v",
+        "cosine_similarity": 0.7649
+      },
+      {
+        "pair": "f21r <-> f52v",
+        "cosine_similarity": 0.8682
+      }
+    ],
+    "average_profile_similarity": 0.8184,
+    "interpretation": "PROFILES_SIMILAR"
+  },
+  "b_reference_analysis": {
+    "pchor_reference_counts": {
+      "f19r": {
+        "in_degree": 7,
+        "heading": "pchor"
+      },
+      "f21r": {
+        "in_degree": 7,
+        "heading": "pchor"
+      },
+      "f52v": {
+        "in_degree": 7,
+        "heading": "pchor"
+      }
+    },
+    "pchor_co_citation_pairs": [
+      {
+        "a1": "f19r",
+        "a2": "f21r",
+        "co_citation_count": 7
+      },
+      {
+        "a1": "f19r",
+        "a2": "f52v",
+        "co_citation_count": 7
+      },
+      {
+        "a1": "f21r",
+        "a2": "f52v",
+        "co_citation_count": 7
+      }
+    ],
+    "always_co_cited": true,
+    "interpretation": "ALWAYS_CITED_TOGETHER"
+  },
+  "hypothesis_analysis": {
+    "hypotheses": [
+      {
+        "id": "H1",
+        "statement": "pchor entries describe the SAME PLANT with different depictions",
+        "support_level": "WEAK",
+        "evidence": {
+          "vocabulary_similar": false,
+          "prefix_profiles_similar": true,
+          "always_cocited": true
+        },
+        "prediction": "Visual illustrations should show similar plant morphology"
+      },
+      {
+        "id": "H2",
+        "statement": "pchor is a CATEGORY LABEL, not a unique plant identifier",
+        "support_level": "STRONG",
+        "evidence": {
+          "vocabulary_distinct": true,
+          "always_cocited": true
+        },
+        "prediction": "Visual illustrations may show different plants in same category"
+      },
+      {
+        "id": "H3",
+        "statement": "pchor entries describe VARIANTS or SUBSPECIES of same plant",
+        "support_level": "WEAK",
+        "evidence": {
+          "partial_vocabulary_overlap": false,
+          "avg_jaccard": 0.0492
+        },
+        "prediction": "Visual illustrations should show related but distinct plants"
+      },
+      {
+        "id": "H4",
+        "statement": "pchor duplication is an ENCODING ERROR or intentional redundancy",
+        "support_level": "UNLIKELY",
+        "evidence": {
+          "highly_similar_content": false
+        },
+        "prediction": "Visual illustrations may be very similar or identical"
+      }
+    ],
+    "most_likely": "H2",
+    "requires_visual_confirmation": true
+  },
+  "key_findings": {
+    "average_vocabulary_overlap": 0.0492,
+    "shared_top_prefixes": [
+      "ch",
+      "qo",
+      "sh"
+    ],
+    "always_cocited": true,
+    "most_likely_explanation": "H2"
+  },
+  "recommendations": {
+    "visual_comparison_needed": true,
+    "priority": "HIGH",
+    "specific_checks": [
+      "Compare plant morphology across all three folios",
+      "Check if illustrations show same, similar, or different plants",
+      "Note any visual markers that might indicate category vs identity"
+    ]
+  }
+}

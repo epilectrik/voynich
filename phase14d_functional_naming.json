@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "phase": "14D",
+    "title": "Functional Axis Naming (Abstract)",
+    "timestamp": "2025-12-31T14:15:02.454334"
+  },
+  "primary_axis": {
+    "name": "STABILITY_GRADIENT",
+    "direction": "MINIMIZE stability level",
+    "interpretation": "The system performs oscillatory fixation along the STABILITY_GRADIENT"
+  },
+  "state_roles": {
+    "STATE-C": {
+      "functional_role": "PROCESSING_HUB",
+      "description": "mandatory central waypoint for all transformations"
+    },
+    "STATE-A": {
+      "functional_role": "INTERFACE_BUFFER",
+      "description": "interface state for processing"
+    },
+    "STATE-B": {
+      "functional_role": "INTERFACE_BUFFER",
+      "description": "interface state for processing"
+    },
+    "STATE-D": {
+      "functional_role": "INTERFACE_BUFFER",
+      "description": "interface state for processing"
+    }
+  },
+  "forbidden_transition_meaning": {
+    "states": "STATE-A \u2194 STATE-B",
+    "interpretation": "A\u2194B is forbidden because these states represent incompatible processing modes; transformation must pass through STATE-C (processing hub) to convert between them"
+  },
+  "objective_function": {
+    "name": "MINIMIZE_STABILITY",
+    "achieved_at": "STATE-C",
+    "mechanism": "System decreases stability level through iterative processing until STATE-C optimum reached"
+  },
+  "FUNCTIONAL_CHARACTERIZATION": "The Voynich semantic state machine operates along a STABILITY_GRADIENT, minimizing stability level. STATE-C serves as PROCESSING_HUB (mandatory central waypoint for all transformations). The forbidden A\u2194B transition enforces oscillatory fixation discipline. System resilience is HIGH."
+}

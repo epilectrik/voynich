@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "phase": "10B",
+    "title": "Operator Interaction Graph",
+    "timestamp": "2025-12-31T12:51:29.840030"
+  },
+  "graph_statistics": {
+    "total_nodes": 3458,
+    "total_edges": 32602,
+    "total_edge_weight": 120466,
+    "mean_out_degree": 34.88,
+    "mean_in_degree": 34.91
+  },
+  "hub_nodes": {
+    "count": 270,
+    "examples": [
+      "ch",
+      "ar",
+      "shol",
+      "or",
+      "y",
+      "kor",
+      "ol",
+      "a",
+      "ytaiin",
+      "r",
+      "h",
+      "t",
+      "shar",
+      "dan",
+      "o",
+      "kain",
+      "ory",
+      "shor",
+      "ary",
+      "ai"
+    ]
+  },
+  "source_nodes": {
+    "count": 0,
+    "top_10": []
+  },
+  "sink_nodes": {
+    "count": 0,
+    "top_10": []
+  },
+  "attractor_states": {
+    "count": 473,
+    "top_10": [
+      [
+        "h",
+        667,
+        6133
+      ],
+      [
+        "k",
+        641,
+        9497
+      ],
+      [
+        "e",
+        566,
+        4540
+      ],
+      [
+        "ch",
+        471,
+        2929
+      ],
+      [
+        "daiin",
+        413,
+        3020
+      ],
+      [
+        "t",
+        338,
+        2759
+      ],
+      [
+        "ol",
+        316,
+        2196
+      ],
+      [
+        "o",
+        270,
+        1383
+      ],
+      [
+        "s",
+        270,
+        1121
+      ],
+      [
+        "or",
+        269,
+        1332
+      ]
+    ]
+  },
+  "top_transitions": [
+    {
+      "from": "k",
+      "to": "k",
+      "weight": 1264,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "h",
+      "to": "k",
+      "weight": 599,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "h",
+      "to": "h",
+      "weight": 519,
+      "dominant_operator": "ct"
+    },
+    {
+      "from": "shedy",
+      "to": "k",
+      "weight": 427,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "k",
+      "to": "h",
+      "weight": 420,
+      "dominant_operator": "lc"
+    },
+    {
+      "from": "chedy",
+      "to": "k",
+      "weight": 384,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "k",
+      "to": "e",
+      "weight": 334,
+      "dominant_operator": "ch"
+    },
+    {
+      "from": "ch",
+      "to": "k",
+      "weight": 300,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "e",
+      "to": "e",
+      "weight": 297,
+      "dominant_operator": "ch"
+    },
+    {
+      "from": "k",
+      "to": "chedy",
+      "weight": 281,
+      "dominant_operator": "ch"
+    },
+    {
+      "from": "k",
+      "to": "shedy",
+      "weight": 278,
+      "dominant_operator": "sh"
+    },
+    {
+      "from": "e",
+      "to": "k",
+      "weight": 265,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "k",
+      "to": "t",
+      "weight": 246,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "e",
+      "to": "h",
+      "weight": 231,
+      "dominant_operator": "ct"
+    },
+    {
+      "from": "t",
+      "to": "k",
+      "weight": 229,
+      "dominant_operator": "qo"
+    },
+    {
+      "from": "ch",
+      "to": "h",
+      "weight": 223,
+      "dominant_operator": "ct"
+    },
+    {
+      "from": "k",
+      "to": "ol",
+      "weight": 217,
+      "dominant_operator": "ol"
+    },
+    {
+      "from": "daiin",
+      "to": "h",
+      "weight": 214,
+      "dominant_operator": "ct"
+    },
+    {
+      "from": "k",
+      "to": "daiin",
+      "weight": 212,
+      "dominant_operator": "da"
+    },
+    {
+      "from": "shey",
+      "to": "k",
+      "weight": 203,
+      "dominant_operator": "qo"
+    }
+  ]
+}

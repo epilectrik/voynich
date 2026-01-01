@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "phase": "9_SYNTHESIS",
+    "title": "Constraint Collision Analysis Synthesis",
+    "timestamp": "2025-12-31T12:31:50.139945"
+  },
+  "test_summary": {
+    "9A_Symmetry": {
+      "pharmacology_compatible": false,
+      "alchemy_compatible": true,
+      "strength": "STRONG"
+    },
+    "9B_Combination": {
+      "pharmacology_compatible": false,
+      "alchemy_compatible": false,
+      "strength": "STRONG"
+    },
+    "9C_Outcome": {
+      "pharmacology_compatible": false,
+      "alchemy_compatible": true,
+      "strength": "STRONG"
+    }
+  },
+  "compatibility_scores": {
+    "pharmacology": "0/3",
+    "alchemy": "2/3"
+  },
+  "discriminators": [
+    "9A_Symmetry: A2: Reversal legality 62.6% > 35% rules out pharmacology",
+    "9A_Symmetry: A3: Commutativity 87.7% > 45% rules out pharmacology",
+    "9B_Combination: B1: Operator paths/core 21.3 > 4.5 rules out pharmacology",
+    "9B_Combination: B3: B-entry middle/operator ratio 2.01 > 1.5 rules out alchemy",
+    "9C_Outcome: C1: Terminal/middle entropy ratio 0.982 > 0.98 rules out pharmacology",
+    "9C_Outcome: C2: Terminal role concentration 12.8% < 35% rules out pharmacology"
+  ],
+  "final_verdict": "ALCHEMY_FAVORED",
+  "verdict_reason": "Alchemy compatible with 2/3, Pharmacology 0/3",
+  "interpretation": "Evidence leans toward alchemical encoding but some pharmacological patterns remain compatible.",
+  "implications": [
+    "Proceed with alchemical grounding attempts",
+    "Entry structure should map to: material -> operation -> conditions -> result",
+    "Hub categories likely represent stages or metals",
+    "Operator sequences may be cyclical/recursive"
+  ]
+}

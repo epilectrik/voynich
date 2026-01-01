@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "phase": "12A",
+    "title": "Operation Canon Size Test",
+    "timestamp": "2025-12-31T13:04:21.552590"
+  },
+  "surface_operator_count": 27,
+  "functional_cluster_count": 11,
+  "behavioral_clusters": {
+    "by_feature": {
+      "count": 11,
+      "clusters": {
+        "cluster_0": [
+          "ts"
+        ],
+        "cluster_1": [
+          "op"
+        ],
+        "cluster_2": [
+          "yp"
+        ],
+        "cluster_3": [
+          "ol"
+        ],
+        "cluster_4": [
+          "ta"
+        ],
+        "cluster_5": [
+          "ko"
+        ],
+        "cluster_6": [
+          "ok",
+          "ot",
+          "qo",
+          "sh",
+          "ch",
+          "da"
+        ],
+        "cluster_7": [
+          "ke",
+          "lk",
+          "ra",
+          "od"
+        ],
+        "cluster_8": [
+          "pc",
+          "fc"
+        ],
+        "cluster_9": [
+          "yk",
+          "so",
+          "ka"
+        ],
+        "cluster_10": [
+          "dy",
+          "al",
+          "ar",
+          "or",
+          "sa",
+          "ct"
+        ]
+      }
+    },
+    "by_hub_effect": {
+      "count": 1,
+      "clusters": {
+        "cluster_0": [
+          "ct",
+          "ok",
+          "fc",
+          "al",
+          "ke",
+          "ts",
+          "yp",
+          "ta",
+          "ra",
+          "qo",
+          "ko",
+          "dy",
+          "ch",
+          "pc",
+          "so",
+          "da",
+          "sh",
+          "ar",
+          "od",
+          "ka",
+          "ot",
+          "op",
+          "or",
+          "yk",
+          "ol",
+          "sa",
+          "lk"
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "scholastic_expected": "7-12",
+    "paracelsian_expected": "3-6",
+    "scholastic_fit": 1.0,
+    "paracelsian_fit": 0.167
+  },
+  "VERDICT": "SCHOLASTIC",
+  "interpretation": "Cluster count 11 closer to scholastic range (7, 12)"
+}

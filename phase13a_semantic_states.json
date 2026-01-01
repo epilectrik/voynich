@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "phase": "13A",
+    "title": "Semantic State Inference",
+    "timestamp": "2025-12-31T13:47:45.713545"
+  },
+  "total_candidates_analyzed": 3458,
+  "nodes_with_sufficient_traffic": 1068,
+  "stable_states_identified": 4,
+  "clustering_quality": {
+    "silhouette_score": 0.707,
+    "optimal_k": 4
+  },
+  "states": {
+    "STATE-A": {
+      "member_count": 50,
+      "member_nodes": [
+        "choch",
+        "rsho",
+        "tes",
+        "okyd",
+        "x",
+        "olc",
+        "eeeo",
+        "chees",
+        "dc",
+        "alc",
+        "nal",
+        "iral",
+        "ocph",
+        "eech",
+        "ydam",
+        "oees",
+        "osh",
+        "eeor",
+        "rod",
+        "eedy"
+      ],
+      "convergence_probability": 0.497,
+      "operator_reachability": {
+        "in": 8.9,
+        "out": 8.9
+      },
+      "stability_score": 0.255,
+      "asymmetry": -0.006,
+      "hub_score": 16.78
+    },
+    "STATE-B": {
+      "member_count": 16,
+      "member_nodes": [
+        "ay",
+        "hoch",
+        "oror",
+        "ict",
+        "ead",
+        "yl",
+        "odeey",
+        "cheg",
+        "orar",
+        "hch",
+        "ldy",
+        "saim",
+        "yc",
+        "g",
+        "the",
+        "ly"
+      ],
+      "convergence_probability": 0.529,
+      "operator_reachability": {
+        "in": 9.8,
+        "out": 10.1
+      },
+      "stability_score": 0.004,
+      "asymmetry": 0.059,
+      "hub_score": 19.69
+    },
+    "STATE-C": {
+      "member_count": 46,
+      "member_nodes": [
+        "ar",
+        "o",
+        "or",
+        "okeey",
+        "ke",
+        "a",
+        "s",
+        "c",
+        "eo",
+        "r",
+        "ch",
+        "chey",
+        "d",
+        "saiin",
+        "dy",
+        "i",
+        "shedy",
+        "k",
+        "sh",
+        "ee"
+      ],
+      "convergence_probability": 0.5,
+      "operator_reachability": {
+        "in": 238.7,
+        "out": 234.2
+      },
+      "stability_score": 0.037,
+      "asymmetry": 0.0,
+      "hub_score": 1450.68
+    },
+    "STATE-D": {
+      "member_count": 956,
+      "member_nodes": [
+        "eeso",
+        "sheck",
+        "cheo",
+        "lkl",
+        "in",
+        "oef",
+        "dm",
+        "shdy",
+        "olk",
+        "san",
+        "shal",
+        "sheey",
+        "octh",
+        "keed",
+        "kchy",
+        "alk",
+        "eokch",
+        "sol",
+        "ds",
+        "ofc"
+      ],
+      "convergence_probability": 0.499,
+      "operator_reachability": {
+        "in": 18.7,
+        "out": 18.9
+      },
+      "stability_score": 0.009,
+      "asymmetry": -0.001,
+      "hub_score": 50.48
+    }
+  },
+  "state_classification": {
+    "STATE-A": "OSCILLATORY",
+    "STATE-B": "TRANSIENT",
+    "STATE-C": "TRANSIENT",
+    "STATE-D": "TRANSIENT"
+  },
+  "node_features_sample": {
+    "eeso": {
+      "convergence": 0.5,
+      "predecessor_count": 3,
+      "successor_count": 2,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 5.0,
+      "in_degree": 5,
+      "out_degree": 5,
+      "total_degree": 10
+    },
+    "ay": {
+      "convergence": 0.533,
+      "predecessor_count": 5,
+      "successor_count": 5,
+      "stability": 0.0,
+      "asymmetry": 0.067,
+      "hub_score": 7.48,
+      "in_degree": 8,
+      "out_degree": 7,
+      "total_degree": 15
+    },
+    "sheck": {
+      "convergence": 0.5,
+      "predecessor_count": 3,
+      "successor_count": 3,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 5.0,
+      "in_degree": 5,
+      "out_degree": 5,
+      "total_degree": 10
+    },
+    "cheo": {
+      "convergence": 0.495,
+      "predecessor_count": 25,
+      "successor_count": 23,
+      "stability": 0.096,
+      "asymmetry": -0.01,
+      "hub_score": 51.5,
+      "in_degree": 51,
+      "out_degree": 52,
+      "total_degree": 103
+    },
+    "lkl": {
+      "convergence": 0.5,
+      "predecessor_count": 10,
+      "successor_count": 10,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 24.0,
+      "in_degree": 24,
+      "out_degree": 24,
+      "total_degree": 48
+    },
+    "in": {
+      "convergence": 0.497,
+      "predecessor_count": 40,
+      "successor_count": 43,
+      "stability": 0.093,
+      "asymmetry": -0.007,
+      "hub_score": 74.5,
+      "in_degree": 74,
+      "out_degree": 75,
+      "total_degree": 149
+    },
+    "oef": {
+      "convergence": 0.5,
+      "predecessor_count": 2,
+      "successor_count": 3,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 6.0,
+      "in_degree": 6,
+      "out_degree": 6,
+      "total_degree": 12
+    },
+    "dm": {
+      "convergence": 0.5,
+      "predecessor_count": 6,
+      "successor_count": 9,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 9.0,
+      "in_degree": 9,
+      "out_degree": 9,
+      "total_degree": 18
+    },
+    "shdy": {
+      "convergence": 0.502,
+      "predecessor_count": 49,
+      "successor_count": 53,
+      "stability": 0.006,
+      "asymmetry": 0.003,
+      "hub_score": 155.5,
+      "in_degree": 156,
+      "out_degree": 155,
+      "total_degree": 311
+    },
+    "olk": {
+      "convergence": 0.5,
+      "predecessor_count": 44,
+      "successor_count": 53,
+      "stability": 0.02,
+      "asymmetry": 0.0,
+      "hub_score": 102.0,
+      "in_degree": 102,
+      "out_degree": 102,
+      "total_degree": 204
+    },
+    "san": {
+      "convergence": 0.5,
+      "predecessor_count": 5,
+      "successor_count": 6,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 8.0,
+      "in_degree": 8,
+      "out_degree": 8,
+      "total_degree": 16
+    },
+    "shal": {
+      "convergence": 0.5,
+      "predecessor_count": 23,
+      "successor_count": 26,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 58.0,
+      "in_degree": 58,
+      "out_degree": 58,
+      "total_degree": 116
+    },
+    "sheey": {
+      "convergence": 0.501,
+      "predecessor_count": 121,
+      "successor_count": 100,
+      "stability": 0.0,
+      "asymmetry": 0.001,
+      "hub_score": 464.5,
+      "in_degree": 465,
+      "out_degree": 464,
+      "total_degree": 929
+    },
+    "octh": {
+      "convergence": 0.5,
+      "predecessor_count": 19,
+      "successor_count": 20,
+      "stability": 0.081,
+      "asymmetry": 0.0,
+      "hub_score": 37.0,
+      "in_degree": 37,
+      "out_degree": 37,
+      "total_degree": 74
+    },
+    "keed": {
+      "convergence": 0.5,
+      "predecessor_count": 29,
+      "successor_count": 28,
+      "stability": 0.029,
+      "asymmetry": 0.0,
+      "hub_score": 69.0,
+      "in_degree": 69,
+      "out_degree": 69,
+      "total_degree": 138
+    },
+    "kchy": {
+      "convergence": 0.5,
+      "predecessor_count": 27,
+      "successor_count": 38,
+      "stability": 0.029,
+      "asymmetry": 0.0,
+      "hub_score": 102.0,
+      "in_degree": 102,
+      "out_degree": 102,
+      "total_degree": 204
+    },
+    "alk": {
+      "convergence": 0.5,
+      "predecessor_count": 20,
+      "successor_count": 24,
+      "stability": 0.027,
+      "asymmetry": 0.0,
+      "hub_score": 37.0,
+      "in_degree": 37,
+      "out_degree": 37,
+      "total_degree": 74
+    },
+    "eokch": {
+      "convergence": 0.5,
+      "predecessor_count": 4,
+      "successor_count": 5,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 7.0,
+      "in_degree": 7,
+      "out_degree": 7,
+      "total_degree": 14
+    },
+    "sol": {
+      "convergence": 0.499,
+      "predecessor_count": 101,
+      "successor_count": 64,
+      "stability": 0.0,
+      "asymmetry": -0.002,
+      "hub_score": 260.5,
+      "in_degree": 260,
+      "out_degree": 261,
+      "total_degree": 521
+    },
+    "ds": {
+      "convergence": 0.5,
+      "predecessor_count": 4,
+      "successor_count": 6,
+      "stability": 0.0,
+      "asymmetry": 0.0,
+      "hub_score": 8.0,
+      "in_degree": 8,
+      "out_degree": 8,
+      "total_degree": 16
+    }
+  }
+}

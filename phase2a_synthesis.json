@@ -1,0 +1,24 @@
+{
+  "phase": "Phase 2A: Forbidden Adjacency & Layer Map",
+  "timestamp": "2025-12-31T10:02:15.866725",
+  "key_findings": [
+    "Found 0 strong exclusions and 2484 strong attractions",
+    "ALPHA-BETA transitions rare (p=0.018, 0.003) - suggests weak layer separation"
+  ],
+  "layer_model": {
+    "ALPHA (structural)": 3,
+    "BETA (grammatical)": 1,
+    "GAMMA (content)": 77,
+    "DELTA (unknown)": 21
+  },
+  "grammar_rules": [],
+  "implications_for_phase3": [
+    "GAMMA layer (77 tokens) is candidate semantic payload - calculate information density for GAMMA only"
+  ],
+  "resonance_assessment": {
+    "layer_separation": "YELLOW",
+    "daiin_isolation": "RED",
+    "beta_expansion": "YELLOW",
+    "overall": "RED - No significant new structure"
+  }
+}

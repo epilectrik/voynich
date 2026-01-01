@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "phase": "19D",
+    "title": "Cardinality Constraints",
+    "timestamp": "2025-12-31T16:35:37.304609"
+  },
+  "candidates_analyzed": 0,
+  "classification_counts": {
+    "IDENTIFIER_LIKE": 0,
+    "OPERATIONAL": 0,
+    "AMBIGUOUS": 0
+  },
+  "identifier_like_tokens": {},
+  "operational_tokens": {},
+  "ambiguous_tokens": {},
+  "CARDINALITY_SIGNAL": "NONE",
+  "INTERPRETATION": "0 tokens show identifier-like cardinality patterns out of 0 analyzed (0.0%). Signal: NONE."
+}

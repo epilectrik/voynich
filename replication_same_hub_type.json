@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "generated": "2025-12-31T07:48:06.031316",
+    "total_mode_b_records": 85
+  },
+  "group_statistics": {
+    "same_cluster": {
+      "n_records": 2,
+      "mean_cohesion": 1.0,
+      "std_cohesion": 0.0
+    },
+    "same_hub_type": {
+      "n_records": 23,
+      "mean_cohesion": 0.391304347826087,
+      "std_cohesion": 0.4142573695686849
+    },
+    "random": {
+      "n_records": 38,
+      "mean_cohesion": 0.3684210526315789,
+      "std_cohesion": 0.3952299551546208
+    },
+    "same_category": {
+      "n_records": 19,
+      "mean_cohesion": 0.48026315789473684,
+      "std_cohesion": 0.4180609175083488
+    },
+    "same_prefix": {
+      "n_records": 1,
+      "mean_cohesion": 0.0,
+      "std_cohesion": 0
+    },
+    "stratified_random": {
+      "n_records": 2,
+      "mean_cohesion": 0.75,
+      "std_cohesion": 0.25
+    }
+  },
+  "tests": {
+    "all_hypothesis_vs_null": {
+      "hypothesis_mean": 0.44722222222222224,
+      "null_mean": 0.3875,
+      "observed_difference": 0.05972222222222223,
+      "p_value": 0.2593,
+      "effect_size": 0.1448419126757012,
+      "percentile": 74.07000000000001,
+      "n_permutations": 10000,
+      "n_hypothesis": 45,
+      "n_null": 40
+    },
+    "same_hub_type_vs_random": {
+      "hypothesis_mean": 0.391304347826087,
+      "null_mean": 0.3684210526315789,
+      "observed_difference": 0.022883295194508046,
+      "p_value": 0.4291,
+      "effect_size": 0.05652213567661196,
+      "percentile": 57.089999999999996,
+      "n_permutations": 10000,
+      "n_hypothesis": 23,
+      "n_null": 38,
+      "status": "FAILED",
+      "interpretation": "Replication failed: p > 0.10 or small effect size"
+    },
+    "same_category_vs_random": {
+      "hypothesis_mean": 0.48026315789473684,
+      "null_mean": 0.3684210526315789,
+      "observed_difference": 0.11184210526315791,
+      "p_value": 0.1753,
+      "effect_size": 0.27492762103725815,
+      "percentile": 82.47,
+      "n_permutations": 10000,
+      "n_hypothesis": 19,
+      "n_null": 38,
+      "status": "FAILED",
+      "interpretation": "Replication failed: p > 0.10 or small effect size"
+    }
+  },
+  "replication_result": {
+    "primary_test": "same_hub_type_vs_random",
+    "status": "FAILED",
+    "interpretation": "Replication failed: p > 0.10 or small effect size",
+    "vocabulary_analysis_validity": "EXPLORATORY_ONLY"
+  },
+  "closer_role_status": {
+    "status": "UNTESTABLE",
+    "reason": "Only 1 folio available (f22r); f96r is text-only",
+    "implication": "CLOSER visual coherence cannot be independently validated"
+  }
+}

@@ -1,0 +1,3903 @@
+{
+  "metadata": {
+    "phase": "C1.1",
+    "title": "Category Visual Profiles",
+    "timestamp": "2025-12-30T22:11:43.375977"
+  },
+  "categories": {
+    "tolor": {
+      "folios": [
+        "f38r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "AXILLARY",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "fochor": {
+      "folios": [
+        "f9v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "OPPOSITE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "AXILLARY",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "otchal": {
+      "folios": [
+        "f56r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "UNDETERMINED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "SERRATED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "BASAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "RADIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "PARTIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "koaiin": {
+      "folios": [
+        "f3v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "UNDETERMINED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "CURVED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "ROUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "UNDETERMINED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "PARTIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "sho": {
+      "folios": [
+        "f42r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "AXILLARY",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "paiin": {
+      "folios": [
+        "f10v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "MIXED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "COMPLEX",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "poldchody": {
+      "folios": [
+        "f11v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BULBOUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "2",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "CURVED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "poshody": {
+      "folios": [
+        "f51v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LANCEOLATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "podairol": {
+      "folios": [
+        "f23v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "ROUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "RADIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "kocheor": {
+      "folios": [
+        "f5v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "NEEDLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "BASAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "2",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "COMPLEX",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "korary": {
+      "folios": [
+        "f45v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BULBOUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LANCEOLATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "OPPOSITE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "kooiin": {
+      "folios": [
+        "f29v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "3_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "COMPOUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "BASAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "kydainy": {
+      "folios": [
+        "f2r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "pchooiin": {
+      "folios": [
+        "f4v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "SERRATED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "kshody": {
+      "folios": [
+        "f5r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LANCEOLATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "OPPOSITE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "2",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "COMPLEX",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "fcholdy": {
+      "folios": [
+        "f25r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "OPPOSITE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "AXILLARY",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "tshol": {
+      "folios": [
+        "f11r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BULBOUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "SERRATED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "okchop": {
+      "folios": [
+        "f38v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "RADIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "pchafdan": {
+      "folios": [
+        "f36r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "3_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "THROUGHOUT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "COMPOUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "COMPLEX",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "cthscthain": {
+      "folios": [
+        "f30v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "UNDETERMINED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "COMPOUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "OPPOSITE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "PARTIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "pysaiinor": {
+      "folios": [
+        "f22v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BULBOUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "SERRATED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "kcheodaiin": {
+      "folios": [
+        "f32v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "fshody": {
+      "folios": [
+        "f17r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THICK",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "pdrairdy": {
+      "folios": [
+        "f18r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THICK",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "OVAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "2_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "tydlo": {
+      "folios": [
+        "f9r"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "TWINING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "COMPOUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "faiis": {
+      "folios": [
+        "f20v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "NA",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "UNDETERMINED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "BRANCHING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LANCEOLATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "6_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "IRREGULAR",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "PARTIAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "psheot": {
+      "folios": [
+        "f47v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "SMALL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "TWINING",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MANY_16_PLUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "ALTERNATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "ASYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "tchodar": {
+      "folios": [
+        "f24v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "FIBROUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "THICK",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "NO",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "FEW_1_5",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "LOBED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "BASAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "UNDETERMINED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "NONE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "SIMPLE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    },
+    "r*": {
+      "folios": [
+        "f49v"
+      ],
+      "folio_count": 1,
+      "visual_profile": {
+        "root_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_type": {
+          "mode": "BULBOUS",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_prominence": {
+          "mode": "LARGE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "root_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_type": {
+          "mode": "STRAIGHT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_thickness": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "stem_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_count_category": {
+          "mode": "MEDIUM_6_15",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_shape": {
+          "mode": "ROUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_arrangement": {
+          "mode": "WHORLED",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_size_relative": {
+          "mode": "MEDIUM",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "leaf_color_uniform": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_present": {
+          "mode": "PRESENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_position": {
+          "mode": "TERMINAL",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_color_distinct": {
+          "mode": "YES",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "flower_shape": {
+          "mode": "COMPOUND",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_count": {
+          "mode": "1",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "container_present": {
+          "mode": "ABSENT",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "plant_symmetry": {
+          "mode": "SYMMETRIC",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "overall_complexity": {
+          "mode": "MODERATE",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "identifiable_impression": {
+          "mode": "UNCERTAIN",
+          "agreement": 1.0,
+          "unique_values": 1
+        },
+        "drawing_completeness": {
+          "mode": "COMPLETE",
+          "agreement": 1.0,
+          "unique_values": 1
+        }
+      },
+      "internal_consistency": 1.0
+    }
+  },
+  "summary": {
+    "total_categories": 29,
+    "multi_folio_categories": 0,
+    "single_folio_categories": 29,
+    "multi_folio_list": [],
+    "mean_internal_consistency": null,
+    "visual_features_analyzed": 25
+  }
+}

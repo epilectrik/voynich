@@ -1,0 +1,2237 @@
+{
+  "metadata": {
+    "generated": "2025-12-31T06:54:16.402782",
+    "transcription_records": 122235,
+    "hub_folios_analyzed": 9
+  },
+  "corpora_summary": {
+    "role_token_counts": {
+      "opener": 1979,
+      "closer": 316,
+      "support": 1212
+    },
+    "role_folio_counts": {
+      "opener": 6,
+      "closer": 1,
+      "support": 2
+    },
+    "baseline_token_count": 118653
+  },
+  "role_enriched_tokens": {
+    "opener": [
+      {
+        "token": "chordy",
+        "enrichment": 359.736,
+        "role_count": 6,
+        "baseline_count": 1
+      },
+      {
+        "token": "chcthor",
+        "enrichment": 239.824,
+        "role_count": 4,
+        "baseline_count": 1
+      },
+      {
+        "token": "okeoaiin",
+        "enrichment": 179.868,
+        "role_count": 3,
+        "baseline_count": 1
+      },
+      {
+        "token": "shoeor",
+        "enrichment": 179.868,
+        "role_count": 3,
+        "baseline_count": 1
+      },
+      {
+        "token": "qotoiin",
+        "enrichment": 119.912,
+        "role_count": 6,
+        "baseline_count": 3
+      },
+      {
+        "token": "shekealy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "qotcheeaiin",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "tch",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "olty",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "qotchytor",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "qokchyky",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "chckhan",
+        "enrichment": "INF",
+        "role_count": 4,
+        "baseline_count": 0
+      },
+      {
+        "token": "dchydy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "otytchy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "qolody",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "daiinol",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "oeeockhy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "otolosheey",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "chosy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "ocphal",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      }
+    ],
+    "closer": [
+      {
+        "token": "oldor",
+        "enrichment": 563.226,
+        "role_count": 3,
+        "baseline_count": 2
+      },
+      {
+        "token": "dpchy",
+        "enrichment": 375.484,
+        "role_count": 3,
+        "baseline_count": 3
+      },
+      {
+        "token": "cthoiin",
+        "enrichment": 281.613,
+        "role_count": 3,
+        "baseline_count": 4
+      },
+      {
+        "token": "ypchol",
+        "enrichment": 225.291,
+        "role_count": 3,
+        "baseline_count": 5
+      },
+      {
+        "token": "cphal",
+        "enrichment": 225.291,
+        "role_count": 3,
+        "baseline_count": 5
+      },
+      {
+        "token": "schor",
+        "enrichment": 187.742,
+        "role_count": 3,
+        "baseline_count": 6
+      },
+      {
+        "token": "ocphy",
+        "enrichment": 160.922,
+        "role_count": 3,
+        "baseline_count": 7
+      },
+      {
+        "token": "dykaiin",
+        "enrichment": 160.922,
+        "role_count": 3,
+        "baseline_count": 7
+      },
+      {
+        "token": "dsheor",
+        "enrichment": 160.922,
+        "role_count": 3,
+        "baseline_count": 7
+      },
+      {
+        "token": "ctholy",
+        "enrichment": 160.922,
+        "role_count": 3,
+        "baseline_count": 7
+      },
+      {
+        "token": "okoly",
+        "enrichment": 140.807,
+        "role_count": 3,
+        "baseline_count": 8
+      },
+      {
+        "token": "ctheor",
+        "enrichment": 125.161,
+        "role_count": 3,
+        "baseline_count": 9
+      },
+      {
+        "token": "cfhy",
+        "enrichment": 102.405,
+        "role_count": 3,
+        "baseline_count": 11
+      },
+      {
+        "token": "fcholy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "ctholo",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "pchaiin",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "chdoly",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "yckhody",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "odchaiin",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "opchol",
+        "enrichment": 66.262,
+        "role_count": 3,
+        "baseline_count": 17
+      }
+    ],
+    "support": [
+      {
+        "token": "arary",
+        "enrichment": 195.797,
+        "role_count": 4,
+        "baseline_count": 2
+      },
+      {
+        "token": "pchear",
+        "enrichment": 195.797,
+        "role_count": 4,
+        "baseline_count": 2
+      },
+      {
+        "token": "sholy",
+        "enrichment": 146.848,
+        "role_count": 6,
+        "baseline_count": 4
+      },
+      {
+        "token": "choeky",
+        "enrichment": 146.848,
+        "role_count": 3,
+        "baseline_count": 2
+      },
+      {
+        "token": "sholar",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "otshaiin",
+        "enrichment": "INF",
+        "role_count": 4,
+        "baseline_count": 0
+      },
+      {
+        "token": "daiiry",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "toshy",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "chtshar",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "dorain",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "kshaiin",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "kchodan",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "chkchory",
+        "enrichment": "INF",
+        "role_count": 4,
+        "baseline_count": 0
+      },
+      {
+        "token": "dodaiin",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "tsh",
+        "enrichment": "INF",
+        "role_count": 4,
+        "baseline_count": 0
+      },
+      {
+        "token": "cthochy",
+        "enrichment": "INF",
+        "role_count": 4,
+        "baseline_count": 0
+      },
+      {
+        "token": "otchoty",
+        "enrichment": "INF",
+        "role_count": 4,
+        "baseline_count": 0
+      },
+      {
+        "token": "kolschees",
+        "enrichment": "INF",
+        "role_count": 3,
+        "baseline_count": 0
+      },
+      {
+        "token": "pydaiin",
+        "enrichment": 97.899,
+        "role_count": 4,
+        "baseline_count": 4
+      },
+      {
+        "token": "odan",
+        "enrichment": 78.319,
+        "role_count": 4,
+        "baseline_count": 5
+      }
+    ]
+  },
+  "role_exclusive_tokens": {
+    "opener": [
+      "chofaly",
+      "chckhan",
+      "chokeea",
+      "pchshy",
+      "kcholy",
+      "qokeeen",
+      "sarols",
+      "yokeeo",
+      "sheolkeal",
+      "oscheos",
+      "shockheey",
+      "ofaror",
+      "cpheodor",
+      "ofychey",
+      "tolain",
+      "olkaly",
+      "tolair",
+      "ykeea",
+      "qotalody",
+      "chkcheey",
+      "sarg",
+      "tcheain",
+      "orky",
+      "oorchor",
+      "opsheas",
+      "co",
+      "tcholy",
+      "otyky",
+      "qotalor",
+      "opcheas",
+      "chcphol",
+      "parchor",
+      "ainarals",
+      "osocthor",
+      "talar",
+      "chochar",
+      "kool",
+      "dchydy",
+      "oleeckhey",
+      "ckheeey",
+      "talchos",
+      "otolosheey",
+      "sheoikhy",
+      "qotalojy",
+      "chteeor",
+      "ocphal",
+      "tchotchor",
+      "otytchy",
+      "qokals",
+      "tcheaiin",
+      "qotcheeaiin",
+      "dalychs",
+      "dalas",
+      "sarm",
+      "schokey",
+      "tolsheo",
+      "qotais",
+      "qokalcheol",
+      "fychey",
+      "qotchytor",
+      "kolyky",
+      "qokalar",
+      "otals",
+      "ylam",
+      "ocphsheas",
+      "qofcheal",
+      "oishy",
+      "poaly",
+      "chokshol",
+      "oscheor",
+      "pchofy",
+      "ykeain",
+      "sholoiin",
+      "alkeain",
+      "org",
+      "cthodaiis",
+      "qolody",
+      "esechor",
+      "eeokeey",
+      "totchy",
+      "keal",
+      "pchofychy",
+      "aropam",
+      "ckshy",
+      "cthodaiin",
+      "chhy",
+      "tch",
+      "chosy",
+      "fchokshy",
+      "q*t",
+      "chocthor",
+      "qoekar",
+      "okorair",
+      "dchold",
+      "qetair",
+      "tchykchy",
+      "t**eor",
+      "alaiinom",
+      "qokchyky",
+      "shopalchedy",
+      "qokalchal",
+      "tcholshol",
+      "chocphar",
+      "olty",
+      "chkalar",
+      "shopolchedy",
+      "roaiin",
+      "daiinol",
+      "chocphor",
+      "qoetaly",
+      "aiphey",
+      "oetalchg",
+      "yfair",
+      "psheey",
+      "shekealy",
+      "oeeockhy",
+      "sheeeor",
+      "qotalom",
+      "faiir",
+      "ck*har",
+      "tshaiin",
+      "polol",
+      "tas",
+      "ofasar",
+      "chkcheean",
+      "dorl",
+      "tolchory",
+      "qoekaly",
+      "taldar",
+      "qotchodaiin",
+      "cphaiiin",
+      "cthodaiir",
+      "chkcheeen",
+      "yqokaly",
+      "qokaiinos"
+    ],
+    "closer": [
+      "opchys",
+      "pololshy",
+      "ctholo",
+      "ckhydom",
+      "do*iin",
+      "chokshchy",
+      "odchaiin",
+      "choldchy",
+      "ykalokain",
+      "ctheen",
+      "ychokshchy",
+      "o*aiino",
+      "dachy",
+      "oraiino",
+      "chdoly",
+      "pchaiin",
+      "dydain",
+      "ska",
+      "dochy",
+      "fcholy",
+      "ycholdchy",
+      "yckhody"
+    ],
+    "support": [
+      "qocphody",
+      "csees",
+      "qocthaiin",
+      "sheeetchy",
+      "ksher",
+      "qokalos",
+      "ckhachchy",
+      "dtshol",
+      "okals",
+      "kshes",
+      "ytaipam",
+      "dshodal",
+      "yteochy",
+      "opcheear",
+      "olekar",
+      "qokalchar",
+      "otoralchy",
+      "aleedy",
+      "chotais",
+      "oqotaltaly",
+      "cthachchy",
+      "dalols",
+      "chtaldy",
+      "cholraly",
+      "toshy",
+      "olkeal",
+      "otakar",
+      "yroleeey",
+      "daiiry",
+      "oqotaly",
+      "otery",
+      "achaly",
+      "olfcham",
+      "typchey",
+      "sharal",
+      "chkchory",
+      "aroda*m",
+      "sholalam",
+      "ofadain",
+      "okalsalchey",
+      "opsheolaiin",
+      "ta*eiin",
+      "qoaiir",
+      "ta*ain",
+      "ytolkal",
+      "yshealkair",
+      "chalolky",
+      "ytashy",
+      "shns",
+      "schocthey",
+      "chairal",
+      "sholkaiin",
+      "pydaly",
+      "sholteol",
+      "som*",
+      "kshaiin",
+      "otalchal",
+      "oteodchy",
+      "chtshar",
+      "choro*",
+      "dodaiin",
+      "odshchol",
+      "cheoekar",
+      "tsh",
+      "shoekar",
+      "ctoiin",
+      "cthsho",
+      "dalchor",
+      "odalaly",
+      "opolkeor",
+      "yssheol",
+      "ysheockhy",
+      "ytalody",
+      "chckaiin",
+      "kolschees",
+      "qoainr",
+      "sheoctham",
+      "oraldar",
+      "qtchaly",
+      "ykechod",
+      "choltam",
+      "sholar",
+      "etoiin",
+      "olaraly",
+      "chofchol",
+      "chaltar",
+      "dshaly",
+      "cholaly",
+      "tshaly",
+      "odalar",
+      "schocthhy",
+      "otarchol",
+      "cthachcthy",
+      "qtar",
+      "ealam",
+      "qokalam",
+      "qoctaiin",
+      "sysheos",
+      "olseem",
+      "arodaim",
+      "oteory",
+      "ykeesey",
+      "cholkeey",
+      "chypaldy",
+      "ytaipom",
+      "shoarar",
+      "ofadaiin",
+      "ochaly",
+      "otshaiin",
+      "olchocfhy",
+      "otchoty",
+      "somy",
+      "qotaily",
+      "olchokal",
+      "dorain",
+      "cthochy",
+      "dchooy",
+      "cthokchodan",
+      "dainry",
+      "dalaldam",
+      "arairaly",
+      "oleeam",
+      "olseeg",
+      "shokshey",
+      "shalom",
+      "choltaly",
+      "qopaiim",
+      "ytalar",
+      "dytal",
+      "toleeshal",
+      "solaraly",
+      "qotoly",
+      "ytchaly",
+      "airaldy",
+      "okalys",
+      "cholfy",
+      "dcky",
+      "choldal",
+      "kchodan",
+      "qopaim",
+      "dtor",
+      "ysholshy",
+      "shaly",
+      "dchairam",
+      "shokalol"
+    ]
+  },
+  "validation": {
+    "rules": {
+      "min_folios_per_role": 3,
+      "min_tokens_per_role": 500
+    },
+    "violations": [
+      {
+        "rule": "min_folios_per_role",
+        "role": "closer",
+        "actual": 1,
+        "required": 3,
+        "status": "VIOLATED"
+      },
+      {
+        "rule": "min_tokens_per_role",
+        "role": "closer",
+        "actual": 316,
+        "required": 500,
+        "status": "VIOLATED"
+      },
+      {
+        "rule": "min_folios_per_role",
+        "role": "support",
+        "actual": 2,
+        "required": 3,
+        "status": "VIOLATED"
+      }
+    ],
+    "valid": false,
+    "note": "Replication (Workstream 1) must also pass for confirmatory status"
+  },
+  "enrichment_detail": {
+    "opener": [
+      [
+        "tol",
+        {
+          "role_count": 5,
+          "role_rate": 0.002527,
+          "baseline_count": 155,
+          "baseline_rate": 0.001306,
+          "enrichment": 1.934
+        }
+      ],
+      [
+        "shokchy",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 25,
+          "baseline_rate": 0.000211,
+          "enrichment": 4.796
+        }
+      ],
+      [
+        "opaiin",
+        {
+          "role_count": 4,
+          "role_rate": 0.002021,
+          "baseline_count": 31,
+          "baseline_rate": 0.000261,
+          "enrichment": 7.736
+        }
+      ],
+      [
+        "chofaly",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ypar",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 9,
+          "baseline_rate": 7.6e-05,
+          "enrichment": 13.324
+        }
+      ],
+      [
+        "ypal",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 5,
+          "baseline_rate": 4.2e-05,
+          "enrichment": 23.982
+        }
+      ],
+      [
+        "opal",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 32,
+          "baseline_rate": 0.00027,
+          "enrichment": 3.747
+        }
+      ],
+      [
+        "opaldaiin",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 1,
+          "baseline_rate": 8e-06,
+          "enrichment": 119.912
+        }
+      ],
+      [
+        "dair",
+        {
+          "role_count": 4,
+          "role_rate": 0.002021,
+          "baseline_count": 332,
+          "baseline_rate": 0.002798,
+          "enrichment": 0.722
+        }
+      ],
+      [
+        "or",
+        {
+          "role_count": 9,
+          "role_rate": 0.004548,
+          "baseline_count": 1088,
+          "baseline_rate": 0.00917,
+          "enrichment": 0.496
+        }
+      ],
+      [
+        "sheaiin",
+        {
+          "role_count": 4,
+          "role_rate": 0.002021,
+          "baseline_count": 27,
+          "baseline_rate": 0.000228,
+          "enrichment": 8.882
+        }
+      ],
+      [
+        "tair",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 33,
+          "baseline_rate": 0.000278,
+          "enrichment": 3.634
+        }
+      ],
+      [
+        "y",
+        {
+          "role_count": 21,
+          "role_rate": 0.010611,
+          "baseline_count": 418,
+          "baseline_rate": 0.003523,
+          "enrichment": 3.012
+        }
+      ],
+      [
+        "qotalody",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "saiin",
+        {
+          "role_count": 7,
+          "role_rate": 0.003537,
+          "baseline_count": 549,
+          "baseline_rate": 0.004627,
+          "enrichment": 0.764
+        }
+      ],
+      [
+        "okeody",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 107,
+          "baseline_rate": 0.000902,
+          "enrichment": 1.121
+        }
+      ],
+      [
+        "qotair",
+        {
+          "role_count": 3,
+          "role_rate": 0.001516,
+          "baseline_count": 14,
+          "baseline_rate": 0.000118,
+          "enrichment": 12.848
+        }
+      ],
+      [
+        "ar",
+        {
+          "role_count": 26,
+          "role_rate": 0.013138,
+          "baseline_count": 972,
+          "baseline_rate": 0.008192,
+          "enrichment": 1.604
+        }
+      ],
+      [
+        "alor",
+        {
+          "role_count": 4,
+          "role_rate": 0.002021,
+          "baseline_count": 20,
+          "baseline_rate": 0.000169,
+          "enrichment": 11.991
+        }
+      ],
+      [
+        "orky",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "oshaiin",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 3,
+          "baseline_rate": 2.5e-05,
+          "enrichment": 19.985
+        }
+      ],
+      [
+        "qotalojy",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "todal",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 2,
+          "baseline_rate": 1.7e-05,
+          "enrichment": 59.956
+        }
+      ],
+      [
+        "qotain",
+        {
+          "role_count": 5,
+          "role_rate": 0.002527,
+          "baseline_count": 140,
+          "baseline_rate": 0.00118,
+          "enrichment": 2.141
+        }
+      ],
+      [
+        "sho",
+        {
+          "role_count": 13,
+          "role_rate": 0.006569,
+          "baseline_count": 385,
+          "baseline_rate": 0.003245,
+          "enrichment": 2.024
+        }
+      ],
+      [
+        "ckheey",
+        {
+          "role_count": 4,
+          "role_rate": 0.002021,
+          "baseline_count": 26,
+          "baseline_rate": 0.000219,
+          "enrichment": 9.224
+        }
+      ],
+      [
+        "qokeol",
+        {
+          "role_count": 7,
+          "role_rate": 0.003537,
+          "baseline_count": 147,
+          "baseline_rate": 0.001239,
+          "enrichment": 2.855
+        }
+      ],
+      [
+        "okey",
+        {
+          "role_count": 4,
+          "role_rate": 0.002021,
+          "baseline_count": 192,
+          "baseline_rate": 0.001618,
+          "enrichment": 1.249
+        }
+      ],
+      [
+        "qokalchal",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "daly",
+        {
+          "role_count": 6,
+          "role_rate": 0.003032,
+          "baseline_count": 93,
+          "baseline_rate": 0.000784,
+          "enrichment": 3.868
+        }
+      ],
+      [
+        "aim",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 23,
+          "baseline_rate": 0.000194,
+          "enrichment": 5.214
+        }
+      ],
+      [
+        "shockheey",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "aiin",
+        {
+          "role_count": 14,
+          "role_rate": 0.007074,
+          "baseline_count": 1343,
+          "baseline_rate": 0.011319,
+          "enrichment": 0.625
+        }
+      ],
+      [
+        "okair",
+        {
+          "role_count": 3,
+          "role_rate": 0.001516,
+          "baseline_count": 65,
+          "baseline_rate": 0.000548,
+          "enrichment": 2.767
+        }
+      ],
+      [
+        "dairal",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 15,
+          "baseline_rate": 0.000126,
+          "enrichment": 3.997
+        }
+      ],
+      [
+        "qokal",
+        {
+          "role_count": 19,
+          "role_rate": 0.009601,
+          "baseline_count": 680,
+          "baseline_rate": 0.005731,
+          "enrichment": 1.675
+        }
+      ],
+      [
+        "qokaiin",
+        {
+          "role_count": 7,
+          "role_rate": 0.003537,
+          "baseline_count": 1056,
+          "baseline_rate": 0.0089,
+          "enrichment": 0.397
+        }
+      ],
+      [
+        "qokaly",
+        {
+          "role_count": 6,
+          "role_rate": 0.003032,
+          "baseline_count": 39,
+          "baseline_rate": 0.000329,
+          "enrichment": 9.224
+        }
+      ],
+      [
+        "okar",
+        {
+          "role_count": 8,
+          "role_rate": 0.004042,
+          "baseline_count": 411,
+          "baseline_rate": 0.003464,
+          "enrichment": 1.167
+        }
+      ],
+      [
+        "olkaly",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "okal",
+        {
+          "role_count": 18,
+          "role_rate": 0.009096,
+          "baseline_count": 449,
+          "baseline_rate": 0.003784,
+          "enrichment": 2.404
+        }
+      ],
+      [
+        "al",
+        {
+          "role_count": 11,
+          "role_rate": 0.005558,
+          "baseline_count": 744,
+          "baseline_rate": 0.00627,
+          "enrichment": 0.886
+        }
+      ],
+      [
+        "faiir",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ofaror",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "qotaiin",
+        {
+          "role_count": 7,
+          "role_rate": 0.003537,
+          "baseline_count": 288,
+          "baseline_rate": 0.002427,
+          "enrichment": 1.457
+        }
+      ],
+      [
+        "sholy",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 4,
+          "baseline_rate": 3.4e-05,
+          "enrichment": 29.978
+        }
+      ],
+      [
+        "yqokaly",
+        {
+          "role_count": 2,
+          "role_rate": 0.001011,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "okaly",
+        {
+          "role_count": 8,
+          "role_rate": 0.004042,
+          "baseline_count": 58,
+          "baseline_rate": 0.000489,
+          "enrichment": 8.27
+        }
+      ],
+      [
+        "ofasar",
+        {
+          "role_count": 1,
+          "role_rate": 0.000505,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "qokair",
+        {
+          "role_count": 9,
+          "role_rate": 0.004548,
+          "baseline_count": 39,
+          "baseline_rate": 0.000329,
+          "enrichment": 13.836
+        }
+      ]
+    ],
+    "closer": [
+      [
+        "pol",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 68,
+          "baseline_rate": 0.000573,
+          "enrichment": 11.044
+        }
+      ],
+      [
+        "olshy",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 5,
+          "baseline_rate": 4.2e-05,
+          "enrichment": 150.194
+        }
+      ],
+      [
+        "fcholy",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "shol",
+        {
+          "role_count": 9,
+          "role_rate": 0.028481,
+          "baseline_count": 558,
+          "baseline_rate": 0.004703,
+          "enrichment": 6.056
+        }
+      ],
+      [
+        "dpchy",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 3,
+          "baseline_rate": 2.5e-05,
+          "enrichment": 375.484
+        }
+      ],
+      [
+        "oty",
+        {
+          "role_count": 6,
+          "role_rate": 0.018987,
+          "baseline_count": 372,
+          "baseline_rate": 0.003135,
+          "enrichment": 6.056
+        }
+      ],
+      [
+        "okoly",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 8,
+          "baseline_rate": 6.7e-05,
+          "enrichment": 140.807
+        }
+      ],
+      [
+        "daiin",
+        {
+          "role_count": 33,
+          "role_rate": 0.10443,
+          "baseline_count": 2848,
+          "baseline_rate": 0.024003,
+          "enrichment": 4.351
+        }
+      ],
+      [
+        "opchy",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 46,
+          "baseline_rate": 0.000388,
+          "enrichment": 24.488
+        }
+      ],
+      [
+        "s",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 816,
+          "baseline_rate": 0.006877,
+          "enrichment": 0.92
+        }
+      ],
+      [
+        "ocphy",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 7,
+          "baseline_rate": 5.9e-05,
+          "enrichment": 160.922
+        }
+      ],
+      [
+        "pololshy",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "opchys",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ol",
+        {
+          "role_count": 8,
+          "role_rate": 0.025316,
+          "baseline_count": 1707,
+          "baseline_rate": 0.014386,
+          "enrichment": 1.76
+        }
+      ],
+      [
+        "oiin",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 83,
+          "baseline_rate": 0.0007,
+          "enrichment": 4.524
+        }
+      ],
+      [
+        "o",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 232,
+          "baseline_rate": 0.001955,
+          "enrichment": 3.237
+        }
+      ],
+      [
+        "kor",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 70,
+          "baseline_rate": 0.00059,
+          "enrichment": 10.728
+        }
+      ],
+      [
+        "qokchol",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 51,
+          "baseline_rate": 0.00043,
+          "enrichment": 22.087
+        }
+      ],
+      [
+        "otaiin",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 536,
+          "baseline_rate": 0.004517,
+          "enrichment": 1.401
+        }
+      ],
+      [
+        "cthor",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 136,
+          "baseline_rate": 0.001146,
+          "enrichment": 8.283
+        }
+      ],
+      [
+        "dain",
+        {
+          "role_count": 7,
+          "role_rate": 0.022152,
+          "baseline_count": 581,
+          "baseline_rate": 0.004897,
+          "enrichment": 4.524
+        }
+      ],
+      [
+        "ckhydom",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "aiin",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 1343,
+          "baseline_rate": 0.011319,
+          "enrichment": 0.28
+        }
+      ],
+      [
+        "okaiin",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 770,
+          "baseline_rate": 0.00649,
+          "enrichment": 0.488
+        }
+      ],
+      [
+        "ckhy",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 120,
+          "baseline_rate": 0.001011,
+          "enrichment": 6.258
+        }
+      ],
+      [
+        "dom",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 23,
+          "baseline_rate": 0.000194,
+          "enrichment": 32.651
+        }
+      ],
+      [
+        "oloiin",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 9,
+          "baseline_rate": 7.6e-05,
+          "enrichment": 41.72
+        }
+      ],
+      [
+        "okor",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 97,
+          "baseline_rate": 0.000818,
+          "enrichment": 3.871
+        }
+      ],
+      [
+        "qokol",
+        {
+          "role_count": 5,
+          "role_rate": 0.015823,
+          "baseline_count": 296,
+          "baseline_rate": 0.002495,
+          "enrichment": 6.343
+        }
+      ],
+      [
+        "dykaiin",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 7,
+          "baseline_rate": 5.9e-05,
+          "enrichment": 160.922
+        }
+      ],
+      [
+        "okchy",
+        {
+          "role_count": 7,
+          "role_rate": 0.022152,
+          "baseline_count": 109,
+          "baseline_rate": 0.000919,
+          "enrichment": 24.114
+        }
+      ],
+      [
+        "cthol",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 195,
+          "baseline_rate": 0.001643,
+          "enrichment": 5.777
+        }
+      ],
+      [
+        "ctholo",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "dar",
+        {
+          "role_count": 6,
+          "role_rate": 0.018987,
+          "baseline_count": 1054,
+          "baseline_rate": 0.008883,
+          "enrichment": 2.137
+        }
+      ],
+      [
+        "shain",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 26,
+          "baseline_rate": 0.000219,
+          "enrichment": 43.325
+        }
+      ],
+      [
+        "pchaiin",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ofchy",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 9,
+          "baseline_rate": 7.6e-05,
+          "enrichment": 41.72
+        }
+      ],
+      [
+        "cfhy",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 11,
+          "baseline_rate": 9.3e-05,
+          "enrichment": 102.405
+        }
+      ],
+      [
+        "doroiin",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 3,
+          "baseline_rate": 2.5e-05,
+          "enrichment": 250.323
+        }
+      ],
+      [
+        "ypchol",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 5,
+          "baseline_rate": 4.2e-05,
+          "enrichment": 225.291
+        }
+      ],
+      [
+        "sy",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 105,
+          "baseline_rate": 0.000885,
+          "enrichment": 10.728
+        }
+      ],
+      [
+        "schor",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 6,
+          "baseline_rate": 5.1e-05,
+          "enrichment": 187.742
+        }
+      ],
+      [
+        "doraiin",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 7,
+          "baseline_rate": 5.9e-05,
+          "enrichment": 53.641
+        }
+      ],
+      [
+        "qokchy",
+        {
+          "role_count": 6,
+          "role_rate": 0.018987,
+          "baseline_count": 224,
+          "baseline_rate": 0.001888,
+          "enrichment": 10.058
+        }
+      ],
+      [
+        "chor",
+        {
+          "role_count": 6,
+          "role_rate": 0.018987,
+          "baseline_count": 699,
+          "baseline_rate": 0.005891,
+          "enrichment": 3.223
+        }
+      ],
+      [
+        "oldor",
+        {
+          "role_count": 3,
+          "role_rate": 0.009494,
+          "baseline_count": 2,
+          "baseline_rate": 1.7e-05,
+          "enrichment": 563.226
+        }
+      ],
+      [
+        "oky",
+        {
+          "role_count": 6,
+          "role_rate": 0.018987,
+          "baseline_count": 312,
+          "baseline_rate": 0.00263,
+          "enrichment": 7.221
+        }
+      ],
+      [
+        "y",
+        {
+          "role_count": 4,
+          "role_rate": 0.012658,
+          "baseline_count": 418,
+          "baseline_rate": 0.003523,
+          "enrichment": 3.593
+        }
+      ],
+      [
+        "choldchy",
+        {
+          "role_count": 2,
+          "role_rate": 0.006329,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ycholdchy",
+        {
+          "role_count": 1,
+          "role_rate": 0.003165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ]
+    ],
+    "support": [
+      [
+        "kor",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 70,
+          "baseline_rate": 0.00059,
+          "enrichment": 2.797
+        }
+      ],
+      [
+        "cholfy",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "shopchy",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 3,
+          "baseline_rate": 2.5e-05,
+          "enrichment": 65.266
+        }
+      ],
+      [
+        "otoralchy",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "chofchol",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "sholy",
+        {
+          "role_count": 6,
+          "role_rate": 0.00495,
+          "baseline_count": 4,
+          "baseline_rate": 3.4e-05,
+          "enrichment": 146.848
+        }
+      ],
+      [
+        "otaly",
+        {
+          "role_count": 4,
+          "role_rate": 0.0033,
+          "baseline_count": 53,
+          "baseline_rate": 0.000447,
+          "enrichment": 7.389
+        }
+      ],
+      [
+        "dal",
+        {
+          "role_count": 23,
+          "role_rate": 0.018977,
+          "baseline_count": 831,
+          "baseline_rate": 0.007004,
+          "enrichment": 2.71
+        }
+      ],
+      [
+        "m",
+        {
+          "role_count": 1,
+          "role_rate": 0.000825,
+          "baseline_count": 40,
+          "baseline_rate": 0.000337,
+          "enrichment": 2.447
+        }
+      ],
+      [
+        "dalm",
+        {
+          "role_count": 1,
+          "role_rate": 0.000825,
+          "baseline_count": 1,
+          "baseline_rate": 8e-06,
+          "enrichment": 97.899
+        }
+      ],
+      [
+        "dshodal",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "or",
+        {
+          "role_count": 3,
+          "role_rate": 0.002475,
+          "baseline_count": 1088,
+          "baseline_rate": 0.00917,
+          "enrichment": 0.27
+        }
+      ],
+      [
+        "ckhy",
+        {
+          "role_count": 4,
+          "role_rate": 0.0033,
+          "baseline_count": 120,
+          "baseline_rate": 0.001011,
+          "enrichment": 3.263
+        }
+      ],
+      [
+        "olchear",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 1,
+          "baseline_rate": 8e-06,
+          "enrichment": 195.797
+        }
+      ],
+      [
+        "char",
+        {
+          "role_count": 16,
+          "role_rate": 0.013201,
+          "baseline_count": 216,
+          "baseline_rate": 0.00182,
+          "enrichment": 7.252
+        }
+      ],
+      [
+        "tal",
+        {
+          "role_count": 6,
+          "role_rate": 0.00495,
+          "baseline_count": 68,
+          "baseline_rate": 0.000573,
+          "enrichment": 8.638
+        }
+      ],
+      [
+        "ytal",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 43,
+          "baseline_rate": 0.000362,
+          "enrichment": 4.553
+        }
+      ],
+      [
+        "ytar",
+        {
+          "role_count": 5,
+          "role_rate": 0.004125,
+          "baseline_count": 67,
+          "baseline_rate": 0.000565,
+          "enrichment": 7.306
+        }
+      ],
+      [
+        "olchokal",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ykechod",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "dalaldam",
+        {
+          "role_count": 1,
+          "role_rate": 0.000825,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "ytam",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 40,
+          "baseline_rate": 0.000337,
+          "enrichment": 4.895
+        }
+      ],
+      [
+        "choty",
+        {
+          "role_count": 10,
+          "role_rate": 0.008251,
+          "baseline_count": 112,
+          "baseline_rate": 0.000944,
+          "enrichment": 8.741
+        }
+      ],
+      [
+        "otchy",
+        {
+          "role_count": 3,
+          "role_rate": 0.002475,
+          "baseline_count": 151,
+          "baseline_rate": 0.001273,
+          "enrichment": 1.945
+        }
+      ],
+      [
+        "shoty",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 21,
+          "baseline_rate": 0.000177,
+          "enrichment": 9.324
+        }
+      ],
+      [
+        "s",
+        {
+          "role_count": 9,
+          "role_rate": 0.007426,
+          "baseline_count": 816,
+          "baseline_rate": 0.006877,
+          "enrichment": 1.08
+        }
+      ],
+      [
+        "dalal",
+        {
+          "role_count": 3,
+          "role_rate": 0.002475,
+          "baseline_count": 12,
+          "baseline_rate": 0.000101,
+          "enrichment": 24.475
+        }
+      ],
+      [
+        "dam",
+        {
+          "role_count": 3,
+          "role_rate": 0.002475,
+          "baseline_count": 303,
+          "baseline_rate": 0.002554,
+          "enrichment": 0.969
+        }
+      ],
+      [
+        "dshor",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 38,
+          "baseline_rate": 0.00032,
+          "enrichment": 5.153
+        }
+      ],
+      [
+        "cholar",
+        {
+          "role_count": 1,
+          "role_rate": 0.000825,
+          "baseline_count": 4,
+          "baseline_rate": 3.4e-05,
+          "enrichment": 24.475
+        }
+      ],
+      [
+        "aiin",
+        {
+          "role_count": 10,
+          "role_rate": 0.008251,
+          "baseline_count": 1343,
+          "baseline_rate": 0.011319,
+          "enrichment": 0.729
+        }
+      ],
+      [
+        "shalom",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "shaly",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "dalchy",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 4,
+          "baseline_rate": 3.4e-05,
+          "enrichment": 48.949
+        }
+      ],
+      [
+        "oteom",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 3,
+          "baseline_rate": 2.5e-05,
+          "enrichment": 65.266
+        }
+      ],
+      [
+        "sholalam",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "sholar",
+        {
+          "role_count": 3,
+          "role_rate": 0.002475,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "qor",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 75,
+          "baseline_rate": 0.000632,
+          "enrichment": 2.611
+        }
+      ],
+      [
+        "dchairam",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "otar",
+        {
+          "role_count": 8,
+          "role_rate": 0.006601,
+          "baseline_count": 432,
+          "baseline_rate": 0.003641,
+          "enrichment": 1.813
+        }
+      ],
+      [
+        "ar",
+        {
+          "role_count": 18,
+          "role_rate": 0.014851,
+          "baseline_count": 972,
+          "baseline_rate": 0.008192,
+          "enrichment": 1.813
+        }
+      ],
+      [
+        "al",
+        {
+          "role_count": 5,
+          "role_rate": 0.004125,
+          "baseline_count": 744,
+          "baseline_rate": 0.00627,
+          "enrichment": 0.658
+        }
+      ],
+      [
+        "arary",
+        {
+          "role_count": 4,
+          "role_rate": 0.0033,
+          "baseline_count": 2,
+          "baseline_rate": 1.7e-05,
+          "enrichment": 195.797
+        }
+      ],
+      [
+        "ytalar",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "cham",
+        {
+          "role_count": 5,
+          "role_rate": 0.004125,
+          "baseline_count": 61,
+          "baseline_rate": 0.000514,
+          "enrichment": 8.024
+        }
+      ],
+      [
+        "torchey",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 1,
+          "baseline_rate": 8e-06,
+          "enrichment": 195.797
+        }
+      ],
+      [
+        "otaiin",
+        {
+          "role_count": 6,
+          "role_rate": 0.00495,
+          "baseline_count": 536,
+          "baseline_rate": 0.004517,
+          "enrichment": 1.096
+        }
+      ],
+      [
+        "chary",
+        {
+          "role_count": 4,
+          "role_rate": 0.0033,
+          "baseline_count": 15,
+          "baseline_rate": 0.000126,
+          "enrichment": 26.106
+        }
+      ],
+      [
+        "oteory",
+        {
+          "role_count": 2,
+          "role_rate": 0.00165,
+          "baseline_count": 0,
+          "baseline_rate": 0.0,
+          "enrichment": "INF"
+        }
+      ],
+      [
+        "otal",
+        {
+          "role_count": 8,
+          "role_rate": 0.006601,
+          "baseline_count": 427,
+          "baseline_rate": 0.003599,
+          "enrichment": 1.834
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,752 @@
+{
+  "metadata": {
+    "phase": "22",
+    "title": "Full Recipe Enumeration",
+    "timestamp": "2025-12-31T19:54:26.985853"
+  },
+  "statistics": {
+    "total_folios": 83,
+    "total_instructions": 75248,
+    "mean_instructions_per_folio": 906.6024096385543,
+    "identical_folio_groups": 0,
+    "all_unique": true
+  },
+  "folios": [
+    {
+      "folio": "f26r",
+      "family": 1,
+      "tokens": 260,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f26v",
+      "family": 1,
+      "tokens": 355,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f31r",
+      "family": 2,
+      "tokens": 298,
+      "notes": [
+        "energy-heavy"
+      ]
+    },
+    {
+      "folio": "f31v",
+      "family": 3,
+      "tokens": 305,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f33r",
+      "family": 4,
+      "tokens": 216,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f33v",
+      "family": 4,
+      "tokens": 430,
+      "notes": [
+        "link-heavy",
+        "high cycling",
+        "rate-focused"
+      ]
+    },
+    {
+      "folio": "f34r",
+      "family": 2,
+      "tokens": 430,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f34v",
+      "family": 5,
+      "tokens": 441,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f39r",
+      "family": 5,
+      "tokens": 617,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "rate-focused"
+      ]
+    },
+    {
+      "folio": "f39v",
+      "family": 4,
+      "tokens": 562,
+      "notes": [
+        "link-heavy",
+        "rate-focused"
+      ]
+    },
+    {
+      "folio": "f40r",
+      "family": 4,
+      "tokens": 293,
+      "notes": [
+        "link-heavy",
+        "high cycling",
+        "rate-focused",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f40v",
+      "family": 2,
+      "tokens": 301,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f41r",
+      "family": 1,
+      "tokens": 371,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f41v",
+      "family": 3,
+      "tokens": 279,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f43r",
+      "family": 2,
+      "tokens": 687,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f43v",
+      "family": 5,
+      "tokens": 701,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f46r",
+      "family": 5,
+      "tokens": 599,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f46v",
+      "family": 2,
+      "tokens": 508,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f48r",
+      "family": 3,
+      "tokens": 330,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f48v",
+      "family": 4,
+      "tokens": 479,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f50r",
+      "family": 2,
+      "tokens": 427,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f50v",
+      "family": 3,
+      "tokens": 358,
+      "notes": [
+        "link-heavy",
+        "high cycling"
+      ]
+    },
+    {
+      "folio": "f55r",
+      "family": 4,
+      "tokens": 364,
+      "notes": [
+        "link-heavy",
+        "high cycling"
+      ]
+    },
+    {
+      "folio": "f55v",
+      "family": 2,
+      "tokens": 304,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f57r",
+      "family": 6,
+      "tokens": 254,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f66r",
+      "family": 5,
+      "tokens": 1063,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "max-repetition-8",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f66v",
+      "family": 7,
+      "tokens": 229,
+      "notes": [
+        "link-heavy",
+        "rate-focused"
+      ]
+    },
+    {
+      "folio": "f75r",
+      "family": 2,
+      "tokens": 1646,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f75v",
+      "family": 2,
+      "tokens": 1841,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "max-repetition-6",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f76r",
+      "family": 2,
+      "tokens": 2222,
+      "notes": [
+        "energy-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f76v",
+      "family": 2,
+      "tokens": 1604,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "family": 2,
+      "tokens": 1294,
+      "notes": [
+        "energy-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f77v",
+      "family": 2,
+      "tokens": 1334,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f78r",
+      "family": 2,
+      "tokens": 1179,
+      "notes": [
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f78v",
+      "family": 2,
+      "tokens": 1153,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f79r",
+      "family": 2,
+      "tokens": 1503,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f79v",
+      "family": 2,
+      "tokens": 1420,
+      "notes": [
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f80r",
+      "family": 2,
+      "tokens": 1735,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f80v",
+      "family": 2,
+      "tokens": 1528,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f81r",
+      "family": 2,
+      "tokens": 837,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f81v",
+      "family": 2,
+      "tokens": 1035,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f82r",
+      "family": 2,
+      "tokens": 1168,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f82v",
+      "family": 2,
+      "tokens": 1270,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f83r",
+      "family": 2,
+      "tokens": 1373,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f83v",
+      "family": 2,
+      "tokens": 1021,
+      "notes": [
+        "energy-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f84r",
+      "family": 2,
+      "tokens": 1413,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f84v",
+      "family": 2,
+      "tokens": 1391,
+      "notes": [
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f85r1",
+      "family": 2,
+      "tokens": 662,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f85r2",
+      "family": 8,
+      "tokens": 290,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f85v2",
+      "family": 4,
+      "tokens": 343,
+      "notes": [
+        "link-heavy",
+        "high cycling"
+      ]
+    },
+    {
+      "folio": "f86v3",
+      "family": 3,
+      "tokens": 770,
+      "notes": [
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f86v4",
+      "family": 8,
+      "tokens": 420,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f86v5",
+      "family": 3,
+      "tokens": 800,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f86v6",
+      "family": 2,
+      "tokens": 965,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f94r",
+      "family": 4,
+      "tokens": 163,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f94v",
+      "family": 4,
+      "tokens": 195,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f95r1",
+      "family": 2,
+      "tokens": 199,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f95r2",
+      "family": 4,
+      "tokens": 240,
+      "notes": [
+        "high cycling"
+      ]
+    },
+    {
+      "folio": "f95v1",
+      "family": 2,
+      "tokens": 234,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f95v2",
+      "family": 4,
+      "tokens": 189,
+      "notes": [
+        "link-heavy",
+        "high cycling"
+      ]
+    },
+    {
+      "folio": "f103r",
+      "family": 2,
+      "tokens": 1139,
+      "notes": [
+        "energy-heavy"
+      ]
+    },
+    {
+      "folio": "f103v",
+      "family": 2,
+      "tokens": 1007,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f104r",
+      "family": 2,
+      "tokens": 940,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f104v",
+      "family": 2,
+      "tokens": 909,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f105r",
+      "family": 2,
+      "tokens": 745,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f105v",
+      "family": 3,
+      "tokens": 1169,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f106r",
+      "family": 2,
+      "tokens": 1293,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f106v",
+      "family": 2,
+      "tokens": 1836,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f107r",
+      "family": 2,
+      "tokens": 1464,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f107v",
+      "family": 2,
+      "tokens": 1356,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f108r",
+      "family": 2,
+      "tokens": 1454,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f108v",
+      "family": 2,
+      "tokens": 1685,
+      "notes": [
+        "energy-heavy",
+        "link-heavy",
+        "high repetition density"
+      ]
+    },
+    {
+      "folio": "f111r",
+      "family": 2,
+      "tokens": 1800,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f111v",
+      "family": 2,
+      "tokens": 2199,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f112r",
+      "family": 2,
+      "tokens": 1496,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f112v",
+      "family": 2,
+      "tokens": 1647,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f113r",
+      "family": 2,
+      "tokens": 1868,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f113v",
+      "family": 2,
+      "tokens": 1416,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f114r",
+      "family": 2,
+      "tokens": 1334,
+      "notes": [
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f114v",
+      "family": 2,
+      "tokens": 769,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f115r",
+      "family": 2,
+      "tokens": 929,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f115v",
+      "family": 2,
+      "tokens": 817,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    },
+    {
+      "folio": "f116r",
+      "family": 2,
+      "tokens": 1078,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ]
+    }
+  ],
+  "validation": {
+    "all_entries_have_enable_exit": true,
+    "forbidden_transitions_checked": true,
+    "round_trip_compilable": true
+  }
+}
