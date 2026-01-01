@@ -1,0 +1,330 @@
+{
+  "timestamp": "2025-12-30T14:32:21.450971",
+  "methodology": "Explanatory genre profile comparison",
+  "genre_profiles": {
+    "SCHOLASTIC_COMMENTARY": {
+      "description": "Thesis-objection-response structure (e.g., Aquinas, Lombard)",
+      "expected_ranges": {
+        "sequence_length": [
+          8,
+          20
+        ],
+        "repetition_rate": [
+          0.05,
+          0.15
+        ],
+        "position_entropy": [
+          2.0,
+          3.5
+        ],
+        "vocabulary_concentration": [
+          0.03,
+          0.06
+        ],
+        "connectivity": [
+          0.35,
+          0.55
+        ]
+      },
+      "characteristics": [
+        "Technical vocabulary",
+        "High cross-reference",
+        "Structured argument format"
+      ]
+    },
+    "NATURAL_PHILOSOPHY": {
+      "description": "Category-property-cause structure (e.g., Aristotle, Averroes)",
+      "expected_ranges": {
+        "sequence_length": [
+          10,
+          25
+        ],
+        "repetition_rate": [
+          0.02,
+          0.08
+        ],
+        "position_entropy": [
+          2.5,
+          4.0
+        ],
+        "vocabulary_concentration": [
+          0.02,
+          0.05
+        ],
+        "connectivity": [
+          0.4,
+          0.6
+        ]
+      },
+      "characteristics": [
+        "Category-property structure",
+        "Systematic coverage",
+        "Causal explanations"
+      ]
+    },
+    "DESCRIPTIVE_HERBAL": {
+      "description": "Plant-property-use structure (e.g., Dioscorides, Macer)",
+      "expected_ranges": {
+        "sequence_length": [
+          5,
+          15
+        ],
+        "repetition_rate": [
+          0.08,
+          0.2
+        ],
+        "position_entropy": [
+          1.5,
+          3.0
+        ],
+        "vocabulary_concentration": [
+          0.03,
+          0.07
+        ],
+        "connectivity": [
+          0.25,
+          0.45
+        ]
+      },
+      "characteristics": [
+        "Plant-property-use structure",
+        "Moderately formulaic",
+        "Sequential plant coverage"
+      ]
+    },
+    "ASTROLOGICAL_MEDICAL": {
+      "description": "Celestial-body-effect structure (e.g., Alcabitius, medieval iatromathematics)",
+      "expected_ranges": {
+        "sequence_length": [
+          6,
+          18
+        ],
+        "repetition_rate": [
+          0.1,
+          0.25
+        ],
+        "position_entropy": [
+          1.5,
+          3.0
+        ],
+        "vocabulary_concentration": [
+          0.04,
+          0.08
+        ],
+        "connectivity": [
+          0.3,
+          0.5
+        ]
+      },
+      "characteristics": [
+        "Celestial-body correspondences",
+        "Conditional relationships",
+        "Temporal markers"
+      ]
+    },
+    "ENCYCLOPEDIA": {
+      "description": "Topic-subtopic organization (e.g., Isidore, Vincent of Beauvais)",
+      "expected_ranges": {
+        "sequence_length": [
+          4,
+          12
+        ],
+        "repetition_rate": [
+          0.03,
+          0.12
+        ],
+        "position_entropy": [
+          2.0,
+          4.0
+        ],
+        "vocabulary_concentration": [
+          0.02,
+          0.04
+        ],
+        "connectivity": [
+          0.2,
+          0.4
+        ]
+      },
+      "characteristics": [
+        "Topic-subtopic organization",
+        "High vocabulary diversity",
+        "Variable sequence length"
+      ]
+    }
+  },
+  "currier_b": {
+    "word_count": 29204,
+    "sequence_count": 2457,
+    "metrics": {
+      "sequence_length": 11.89,
+      "repetition_rate": 0.0026,
+      "position_entropy": 9.29,
+      "vocabulary_concentration": 0.0227,
+      "connectivity": 0.2931
+    },
+    "genre_scores": {
+      "SCHOLASTIC_COMMENTARY": {
+        "score": 30.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 0.5,
+          "connectivity": 0.0
+        }
+      },
+      "NATURAL_PHILOSOPHY": {
+        "score": 40.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 1.0,
+          "connectivity": 0.0
+        }
+      },
+      "DESCRIPTIVE_HERBAL": {
+        "score": 50.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 0.5,
+          "connectivity": 1.0
+        }
+      },
+      "ASTROLOGICAL_MEDICAL": {
+        "score": 30.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 0.0,
+          "connectivity": 0.5
+        }
+      },
+      "ENCYCLOPEDIA": {
+        "score": 60.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 1.0,
+          "connectivity": 1.0
+        }
+      }
+    },
+    "ranked_genres": [
+      [
+        "ENCYCLOPEDIA",
+        60.0
+      ],
+      [
+        "DESCRIPTIVE_HERBAL",
+        50.0
+      ],
+      [
+        "NATURAL_PHILOSOPHY",
+        40.0
+      ],
+      [
+        "SCHOLASTIC_COMMENTARY",
+        30.0
+      ],
+      [
+        "ASTROLOGICAL_MEDICAL",
+        30.0
+      ]
+    ],
+    "best_fit": "ENCYCLOPEDIA",
+    "best_score": 60.0
+  },
+  "currier_a": {
+    "word_count": 14155,
+    "sequence_count": 1577,
+    "metrics": {
+      "sequence_length": 8.98,
+      "repetition_rate": 0.0011,
+      "position_entropy": 9.23,
+      "vocabulary_concentration": 0.0467,
+      "connectivity": 0.2575
+    },
+    "genre_scores": {
+      "SCHOLASTIC_COMMENTARY": {
+        "score": 40.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 1.0,
+          "connectivity": 0.0
+        }
+      },
+      "NATURAL_PHILOSOPHY": {
+        "score": 30.0,
+        "feature_scores": {
+          "sequence_length": 0.5,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 1.0,
+          "connectivity": 0.0
+        }
+      },
+      "DESCRIPTIVE_HERBAL": {
+        "score": 60.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 1.0,
+          "connectivity": 1.0
+        }
+      },
+      "ASTROLOGICAL_MEDICAL": {
+        "score": 50.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 1.0,
+          "connectivity": 0.5
+        }
+      },
+      "ENCYCLOPEDIA": {
+        "score": 40.0,
+        "feature_scores": {
+          "sequence_length": 1.0,
+          "repetition_rate": 0.0,
+          "position_entropy": 0.0,
+          "vocabulary_concentration": 0.0,
+          "connectivity": 1.0
+        }
+      }
+    },
+    "ranked_genres": [
+      [
+        "DESCRIPTIVE_HERBAL",
+        60.0
+      ],
+      [
+        "ASTROLOGICAL_MEDICAL",
+        50.0
+      ],
+      [
+        "SCHOLASTIC_COMMENTARY",
+        40.0
+      ],
+      [
+        "ENCYCLOPEDIA",
+        40.0
+      ],
+      [
+        "NATURAL_PHILOSOPHY",
+        30.0
+      ]
+    ],
+    "best_fit": "DESCRIPTIVE_HERBAL",
+    "best_score": 60.0
+  }
+}

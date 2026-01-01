@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "phase": "13E",
+    "title": "Executability Test",
+    "timestamp": "2025-12-31T13:47:46.640367"
+  },
+  "simulations_run": 183,
+  "convergence": {
+    "converged_percent": 100.0,
+    "mean_steps_to_convergence": "N/A",
+    "final_state_distribution": {
+      "STATE-C": 77,
+      "STATE-B": 3,
+      "STATE-D": 3
+    }
+  },
+  "oscillation": {
+    "settled_to_cycle_percent": 95.2,
+    "cycle_length_distribution": {
+      "1": 77,
+      "2": 2
+    }
+  },
+  "forbidden_violations": {
+    "a_text_violation_count": 0,
+    "b_text_violation_count": 1
+  },
+  "a_text_validity": {
+    "valid_starting_states_percent": 100.0,
+    "total_tested": 100
+  },
+  "b_text_validity": {
+    "valid_execution_traces_percent": 98.8,
+    "total_tested": 83
+  },
+  "SYSTEM_IS_EXECUTABLE": "YES",
+  "EXECUTION_TYPE": "PURIFICATION_ENGINE"
+}

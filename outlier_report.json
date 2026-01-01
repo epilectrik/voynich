@@ -1,0 +1,388 @@
+{
+  "outliers": [
+    {
+      "folio": "f33r",
+      "family": 4,
+      "notes": [
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "compression_ratio",
+          "z_score": 2.06,
+          "value": 0.032
+        },
+        {
+          "dimension": "phase_ordering_rigidity",
+          "z_score": -2.28,
+          "value": 0.066
+        }
+      ]
+    },
+    {
+      "folio": "f48r",
+      "family": 3,
+      "notes": [
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "link_density",
+          "z_score": 2.78,
+          "value": 0.576
+        },
+        {
+          "dimension": "kernel_distance_mean",
+          "z_score": 2.83,
+          "value": 1.58
+        },
+        {
+          "dimension": "kernel_contact_ratio",
+          "z_score": -2.78,
+          "value": 0.424
+        },
+        {
+          "dimension": "hazard_density",
+          "z_score": -2.65,
+          "value": 0.406
+        }
+      ]
+    },
+    {
+      "folio": "f57r",
+      "family": 6,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "intervention_diversity",
+          "z_score": -3.95,
+          "value": 5.0
+        },
+        {
+          "dimension": "reset_present",
+          "z_score": 5.16,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "folio": "f76r",
+      "family": 2,
+      "notes": [
+        "energy-heavy",
+        "high repetition density"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "cycle_count",
+          "z_score": 2.05,
+          "value": 253.0
+        },
+        {
+          "dimension": "hazard_adjacency_count",
+          "z_score": 2.86,
+          "value": 1552.0
+        },
+        {
+          "dimension": "near_miss_count",
+          "z_score": 2.18,
+          "value": 61.0
+        },
+        {
+          "dimension": "total_length",
+          "z_score": 2.38,
+          "value": 2222.0
+        }
+      ]
+    },
+    {
+      "folio": "f83v",
+      "family": 2,
+      "notes": [
+        "energy-heavy",
+        "high repetition density"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "link_density",
+          "z_score": -2.59,
+          "value": 0.204
+        },
+        {
+          "dimension": "kernel_distance_mean",
+          "z_score": -2.64,
+          "value": 1.2
+        },
+        {
+          "dimension": "kernel_contact_ratio",
+          "z_score": 2.59,
+          "value": 0.796
+        },
+        {
+          "dimension": "hazard_density",
+          "z_score": 2.86,
+          "value": 0.771
+        }
+      ]
+    },
+    {
+      "folio": "f85v2",
+      "family": 4,
+      "notes": [
+        "link-heavy",
+        "high cycling"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "mean_cycle_length",
+          "z_score": -3.16,
+          "value": 2.41
+        },
+        {
+          "dimension": "cycle_regularity",
+          "z_score": -4.39,
+          "value": 0.687
+        },
+        {
+          "dimension": "link_density",
+          "z_score": 2.47,
+          "value": 0.554
+        },
+        {
+          "dimension": "kernel_distance_mean",
+          "z_score": 2.4,
+          "value": 1.55
+        },
+        {
+          "dimension": "kernel_contact_ratio",
+          "z_score": -2.47,
+          "value": 0.446
+        },
+        {
+          "dimension": "hazard_density",
+          "z_score": -2.57,
+          "value": 0.411
+        },
+        {
+          "dimension": "phase_ordering_rigidity",
+          "z_score": 3.03,
+          "value": 0.297
+        }
+      ]
+    },
+    {
+      "folio": "f86v4",
+      "family": 8,
+      "notes": [
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "mean_cycle_length",
+          "z_score": -3.13,
+          "value": 2.43
+        },
+        {
+          "dimension": "cycle_regularity",
+          "z_score": -2.86,
+          "value": 1.647
+        }
+      ]
+    },
+    {
+      "folio": "f94v",
+      "family": 4,
+      "notes": [
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "cycle_regularity",
+          "z_score": -2.14,
+          "value": 2.1
+        },
+        {
+          "dimension": "intervention_frequency",
+          "z_score": 2.79,
+          "value": 11.7
+        },
+        {
+          "dimension": "compression_ratio",
+          "z_score": 2.49,
+          "value": 0.036
+        }
+      ]
+    },
+    {
+      "folio": "f95r2",
+      "family": 4,
+      "notes": [
+        "high cycling"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "intervention_diversity",
+          "z_score": -3.95,
+          "value": 5.0
+        },
+        {
+          "dimension": "phase_ordering_rigidity",
+          "z_score": -2.03,
+          "value": 0.077
+        }
+      ]
+    },
+    {
+      "folio": "f95v2",
+      "family": 4,
+      "notes": [
+        "link-heavy",
+        "high cycling"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "mean_cycle_length",
+          "z_score": 2.09,
+          "value": 6.12
+        },
+        {
+          "dimension": "intervention_frequency",
+          "z_score": 4.2,
+          "value": 14.62
+        },
+        {
+          "dimension": "compression_ratio",
+          "z_score": 2.59,
+          "value": 0.037
+        }
+      ]
+    },
+    {
+      "folio": "f105r",
+      "family": 2,
+      "notes": [
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "link_density",
+          "z_score": 2.02,
+          "value": 0.523
+        },
+        {
+          "dimension": "kernel_contact_ratio",
+          "z_score": -2.02,
+          "value": 0.477
+        }
+      ]
+    },
+    {
+      "folio": "f105v",
+      "family": 3,
+      "notes": [
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "cycle_count",
+          "z_score": 2.07,
+          "value": 254.0
+        },
+        {
+          "dimension": "link_density",
+          "z_score": 2.21,
+          "value": 0.536
+        },
+        {
+          "dimension": "max_consecutive_link",
+          "z_score": 4.81,
+          "value": 37.0
+        },
+        {
+          "dimension": "kernel_distance_mean",
+          "z_score": 2.26,
+          "value": 1.54
+        },
+        {
+          "dimension": "kernel_contact_ratio",
+          "z_score": -2.21,
+          "value": 0.464
+        },
+        {
+          "dimension": "hazard_density",
+          "z_score": -2.41,
+          "value": 0.422
+        }
+      ]
+    },
+    {
+      "folio": "f111r",
+      "family": 2,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "secondary_cycle_order",
+          "z_score": 2.01,
+          "value": 11.0
+        },
+        {
+          "dimension": "near_miss_count",
+          "z_score": 2.41,
+          "value": 65.0
+        }
+      ]
+    },
+    {
+      "folio": "f111v",
+      "family": 2,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "hazard_adjacency_count",
+          "z_score": 2.45,
+          "value": 1407.0
+        },
+        {
+          "dimension": "near_miss_count",
+          "z_score": 3.23,
+          "value": 79.0
+        },
+        {
+          "dimension": "total_length",
+          "z_score": 2.34,
+          "value": 2199.0
+        }
+      ]
+    },
+    {
+      "folio": "f115v",
+      "family": 2,
+      "notes": [
+        "energy-heavy",
+        "link-heavy"
+      ],
+      "anomalous_dimensions": [
+        {
+          "dimension": "max_consecutive_link",
+          "z_score": 4.47,
+          "value": 35.0
+        },
+        {
+          "dimension": "phase_ordering_rigidity",
+          "z_score": 2.16,
+          "value": 0.259
+        }
+      ]
+    }
+  ],
+  "outlier_count": 15
+}

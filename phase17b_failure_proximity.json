@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "phase": "17B",
+    "title": "Kernel Proximity to Forbidden Transitions",
+    "timestamp": "2025-12-31T15:51:24.447660"
+  },
+  "total_forbidden_transitions": 17,
+  "kernel_failure_proximity": {
+    "k": {
+      "as_source": 0,
+      "as_target": 0,
+      "one_step_away_source": 2,
+      "one_step_away_target": 4,
+      "forbidden_involving": [],
+      "adjacent_forbidden": [
+        "shey -> c -> [k]",
+        "chol -> r -> [k]",
+        "[k] -> l -> chol",
+        "[k] -> c -> ee",
+        "he -> t -> [k]",
+        "shedy -> o -> [k]"
+      ],
+      "failure_role": "BOUNDARY_ADJACENT"
+    },
+    "h": {
+      "as_source": 0,
+      "as_target": 0,
+      "one_step_away_source": 2,
+      "one_step_away_target": 4,
+      "forbidden_involving": [],
+      "adjacent_forbidden": [
+        "shey -> c -> [h]",
+        "chol -> r -> [h]",
+        "[h] -> l -> chol",
+        "[h] -> c -> ee",
+        "he -> t -> [h]",
+        "shedy -> o -> [h]"
+      ],
+      "failure_role": "BOUNDARY_ADJACENT"
+    },
+    "e": {
+      "as_source": 0,
+      "as_target": 0,
+      "one_step_away_source": 2,
+      "one_step_away_target": 4,
+      "forbidden_involving": [],
+      "adjacent_forbidden": [
+        "shey -> c -> [e]",
+        "chol -> r -> [e]",
+        "[e] -> l -> chol",
+        "[e] -> c -> ee",
+        "he -> t -> [e]",
+        "shedy -> o -> [e]"
+      ],
+      "failure_role": "BOUNDARY_ADJACENT"
+    }
+  },
+  "physical_interpretation": {
+    "k": "Near operational boundaries - adjacent to failure modes",
+    "h": "Near operational boundaries - adjacent to failure modes",
+    "e": "Near operational boundaries - adjacent to failure modes"
+  },
+  "distillation_failure_mapping": {
+    "TRIGGER_POINT": "This control point, if mishandled, causes flooding/weeping",
+    "VULNERABLE_TARGET": "Process failures lead away from this state",
+    "BOUNDARY_ADJACENT": "Operates near critical regime boundaries",
+    "STABLE": "Robust operating point",
+    "ISOLATED_SAFE": "Core stability - never directly involved in failures"
+  }
+}

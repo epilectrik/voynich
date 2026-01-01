@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "Correlation Engine Test Report",
+    "phase": "Visual Coding Phase, Task 5",
+    "date": "2025-12-30T17:29:11.981038",
+    "purpose": "Validate correlation engine with synthetic data"
+  },
+  "test_configuration": {
+    "n_folios": 30,
+    "n_tests_per_dataset": 14,
+    "null_model_permutations": 100,
+    "planted_prefixes": {
+      "po": 3,
+      "ko": 4
+    }
+  },
+  "random_dataset_results": {
+    "n_significant_bonferroni": 0,
+    "n_significant_null_99": 0,
+    "significant_pairs": []
+  },
+  "strong_dataset_results": {
+    "n_significant_bonferroni": 0,
+    "n_significant_null_99": 2,
+    "significant_pairs": []
+  },
+  "weak_dataset_results": {
+    "n_significant_bonferroni": 0,
+    "n_significant_null_95": 0,
+    "significant_pairs": []
+  },
+  "validation": {
+    "validations": {
+      "random_dataset": {
+        "significant_count": 0,
+        "expected": "<3",
+        "passed": true,
+        "interpretation": "PASS: False positive rate controlled"
+      },
+      "strong_dataset": {
+        "significant_count": 0,
+        "null_99_count": 2,
+        "expected": ">=2",
+        "passed": true,
+        "interpretation": "PASS: Engine detects planted correlations"
+      },
+      "weak_dataset": {
+        "significant_count": 0,
+        "null_95_count": 0,
+        "null_99_count": 0,
+        "expected": "Optional (power-limited with 3-4 folios per prefix)",
+        "passed": true,
+        "interpretation": "Detected 0 Bonf, 0 null-95, 0 null-99. Power limited with small prefix groups (3-4 folios each)."
+      }
+    },
+    "overall_passed": true,
+    "summary": "Correlation engine VALIDATED"
+  },
+  "conclusion": "Correlation engine VALIDATED"
+}

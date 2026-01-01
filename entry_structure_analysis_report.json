@@ -1,0 +1,5322 @@
+{
+  "timestamp": "2025-12-30T15:03:01.934563",
+  "methodology": "Entry structure characterization using folio-based segmentation",
+  "currier_a": {
+    "section": "Currier A",
+    "word_count": 14155,
+    "entry_count": 114,
+    "length_analysis": {
+      "entry_count": 114,
+      "mean_length": 124.17,
+      "std_length": 69.14,
+      "coefficient_of_variation": 0.557,
+      "min_length": 42,
+      "max_length": 443,
+      "q1": 87,
+      "median": 103,
+      "q3": 131,
+      "length_distribution": {
+        "1-50": 2,
+        "51-100": 50,
+        "101-200": 50,
+        "201-300": 9,
+        "301-500": 3,
+        "500+": 0
+      },
+      "raw_lengths": [
+        42,
+        48,
+        56,
+        57,
+        57,
+        58,
+        60,
+        62,
+        63,
+        65,
+        66,
+        70,
+        72,
+        73,
+        74,
+        75,
+        75,
+        75,
+        76,
+        76,
+        76,
+        77,
+        78,
+        81,
+        82,
+        82,
+        83,
+        85,
+        87,
+        88,
+        88,
+        88,
+        89,
+        90,
+        91,
+        92,
+        94,
+        94,
+        95,
+        95,
+        95,
+        96,
+        97,
+        97,
+        98,
+        99,
+        99,
+        100,
+        100,
+        100,
+        100,
+        100,
+        101,
+        101,
+        101,
+        102,
+        103,
+        103,
+        103,
+        103,
+        104,
+        105,
+        105,
+        105,
+        105,
+        108,
+        109,
+        110,
+        110,
+        112,
+        112,
+        113,
+        113,
+        114,
+        115,
+        116,
+        117,
+        119,
+        121,
+        121,
+        124,
+        125,
+        127,
+        127,
+        129,
+        131,
+        133,
+        135,
+        135,
+        139,
+        143,
+        149,
+        162,
+        164,
+        164,
+        174,
+        174,
+        177,
+        189,
+        198
+      ]
+    },
+    "opening_patterns": {
+      "top_opening_words": [
+        [
+          "pchor",
+          3
+        ],
+        [
+          "tshor",
+          2
+        ],
+        [
+          "kooiin",
+          2
+        ],
+        [
+          "kshody",
+          2
+        ],
+        [
+          "chosaroshol",
+          1
+        ],
+        [
+          "tolchd",
+          1
+        ],
+        [
+          "pcheol",
+          1
+        ],
+        [
+          "sairaly",
+          1
+        ],
+        [
+          "dordod",
+          1
+        ],
+        [
+          "lsais",
+          1
+        ],
+        [
+          "ker",
+          1
+        ],
+        [
+          "porshols",
+          1
+        ],
+        [
+          "pchocthy",
+          1
+        ],
+        [
+          "paiin",
+          1
+        ],
+        [
+          "tshol",
+          1
+        ],
+        [
+          "poldchody",
+          1
+        ],
+        [
+          "torshor",
+          1
+        ],
+        [
+          "koair",
+          1
+        ],
+        [
+          "pchodaiin",
+          1
+        ],
+        [
+          "pdychoiin",
+          1
+        ],
+        [
+          "poror",
+          1
+        ],
+        [
+          "pocheody",
+          1
+        ],
+        [
+          "pchraiin",
+          1
+        ],
+        [
+          "fshody",
+          1
+        ],
+        [
+          "pchodol",
+          1
+        ],
+        [
+          "pdrairdy",
+          1
+        ],
+        [
+          "told",
+          1
+        ],
+        [
+          "pochaiin",
+          1
+        ],
+        [
+          "fachys",
+          1
+        ],
+        [
+          "kchsy",
+          1
+        ]
+      ],
+      "top_opening_prefixes": [
+        [
+          "po",
+          17
+        ],
+        [
+          "pc",
+          16
+        ],
+        [
+          "ko",
+          11
+        ],
+        [
+          "to",
+          9
+        ],
+        [
+          "ts",
+          6
+        ],
+        [
+          "ok",
+          6
+        ],
+        [
+          "ks",
+          4
+        ],
+        [
+          "kc",
+          3
+        ],
+        [
+          "py",
+          3
+        ],
+        [
+          "tc",
+          3
+        ],
+        [
+          "fc",
+          3
+        ],
+        [
+          "fo",
+          3
+        ],
+        [
+          "ct",
+          3
+        ],
+        [
+          "ps",
+          3
+        ],
+        [
+          "ch",
+          2
+        ],
+        [
+          "pa",
+          2
+        ],
+        [
+          "pd",
+          2
+        ],
+        [
+          "fa",
+          2
+        ],
+        [
+          "ot",
+          2
+        ],
+        [
+          "sa",
+          1
+        ]
+      ],
+      "top_opening_suffixes": [
+        [
+          "in",
+          16
+        ],
+        [
+          "or",
+          15
+        ],
+        [
+          "ol",
+          13
+        ],
+        [
+          "dy",
+          11
+        ],
+        [
+          "hy",
+          8
+        ],
+        [
+          "ar",
+          6
+        ],
+        [
+          "sy",
+          4
+        ],
+        [
+          "ry",
+          3
+        ],
+        [
+          "ho",
+          3
+        ],
+        [
+          "al",
+          3
+        ],
+        [
+          "od",
+          2
+        ],
+        [
+          "is",
+          2
+        ],
+        [
+          "ir",
+          2
+        ],
+        [
+          "hd",
+          1
+        ],
+        [
+          "ly",
+          1
+        ],
+        [
+          "er",
+          1
+        ],
+        [
+          "ls",
+          1
+        ],
+        [
+          "ld",
+          1
+        ],
+        [
+          "ys",
+          1
+        ],
+        [
+          "om",
+          1
+        ]
+      ],
+      "prefix_enrichment": [
+        {
+          "prefix": "po",
+          "opening_count": 17,
+          "total_count": 53,
+          "enrichment": 39.83
+        },
+        {
+          "prefix": "pc",
+          "opening_count": 16,
+          "total_count": 78,
+          "enrichment": 25.47
+        },
+        {
+          "prefix": "ps",
+          "opening_count": 3,
+          "total_count": 15,
+          "enrichment": 24.83
+        },
+        {
+          "prefix": "py",
+          "opening_count": 3,
+          "total_count": 16,
+          "enrichment": 23.28
+        },
+        {
+          "prefix": "ts",
+          "opening_count": 6,
+          "total_count": 36,
+          "enrichment": 20.69
+        },
+        {
+          "prefix": "fo",
+          "opening_count": 3,
+          "total_count": 21,
+          "enrichment": 17.74
+        },
+        {
+          "prefix": "fc",
+          "opening_count": 3,
+          "total_count": 29,
+          "enrichment": 12.84
+        },
+        {
+          "prefix": "ks",
+          "opening_count": 4,
+          "total_count": 55,
+          "enrichment": 9.03
+        },
+        {
+          "prefix": "ko",
+          "opening_count": 11,
+          "total_count": 154,
+          "enrichment": 8.87
+        },
+        {
+          "prefix": "to",
+          "opening_count": 9,
+          "total_count": 132,
+          "enrichment": 8.47
+        },
+        {
+          "prefix": "tc",
+          "opening_count": 3,
+          "total_count": 165,
+          "enrichment": 2.26
+        },
+        {
+          "prefix": "kc",
+          "opening_count": 3,
+          "total_count": 176,
+          "enrichment": 2.12
+        },
+        {
+          "prefix": "ok",
+          "opening_count": 6,
+          "total_count": 545,
+          "enrichment": 1.37
+        },
+        {
+          "prefix": "ct",
+          "opening_count": 3,
+          "total_count": 555,
+          "enrichment": 0.67
+        }
+      ],
+      "heading_candidates": [
+        {
+          "word": "pchor",
+          "opening_count": 3,
+          "total_count": 7,
+          "opening_fraction": 0.43
+        }
+      ],
+      "sample_first_5": [
+        [
+          "chosaroshol",
+          "ches",
+          "aroshol",
+          "chos",
+          "sochorcfhy"
+        ],
+        [
+          "tolchd",
+          "chols",
+          "opchor",
+          "rolsy",
+          "solsy"
+        ],
+        [
+          "pcheol",
+          "cheol",
+          "ol",
+          "shey",
+          "qockhol"
+        ],
+        [
+          "sairaly",
+          "otaldy",
+          "otal",
+          "yta",
+          "yty"
+        ],
+        [
+          "dordod",
+          "orolaly",
+          "dardsh",
+          "otodeeodor",
+          "polaiin"
+        ],
+        [
+          "lsais",
+          "amg",
+          "cheey",
+          "cfhey",
+          "por"
+        ],
+        [
+          "ker",
+          "ron**",
+          "ykeody",
+          "okeody",
+          "okeody"
+        ],
+        [
+          "porshols",
+          "soe",
+          "dy",
+          "soaidy",
+          "otolky"
+        ],
+        [
+          "pchocthy",
+          "shor",
+          "octhody",
+          "chorchy",
+          "pchodol"
+        ],
+        [
+          "paiin",
+          "daiin",
+          "sheo",
+          "pcheey",
+          "qoty"
+        ],
+        [
+          "tshol",
+          "schoal",
+          "cfhy",
+          "shfydaiin",
+          "cphy"
+        ],
+        [
+          "poldchody",
+          "shcphy",
+          "shordy",
+          "qoty",
+          "shol"
+        ],
+        [
+          "torshor",
+          "opchy",
+          "shol",
+          "dy",
+          "qopchy"
+        ],
+        [
+          "koair",
+          "chtoiin",
+          "otchy",
+          "kchod",
+          "otol"
+        ],
+        [
+          "pchodaiin",
+          "chopol",
+          "shoiin",
+          "daiin",
+          "dain"
+        ],
+        [
+          "pdychoiin",
+          "yfodain",
+          "otyshy",
+          "dy",
+          "ypchor"
+        ],
+        [
+          "tshor",
+          "shey",
+          "tchaly",
+          "shy",
+          "chtols"
+        ],
+        [
+          "poror",
+          "orshy",
+          "choiin",
+          "dtchan",
+          "opchor"
+        ],
+        [
+          "pocheody",
+          "qopchey",
+          "sykaiin",
+          "opchy",
+          "dor"
+        ],
+        [
+          "pchraiin",
+          "otchor",
+          "chpchol",
+          "chpchey",
+          "pchocty"
+        ],
+        [
+          "fshody",
+          "daram",
+          "ydarchom",
+          "opydy",
+          "ypod"
+        ],
+        [
+          "pchodol",
+          "chor",
+          "fchy",
+          "opydaiin",
+          "odaldy"
+        ],
+        [
+          "pdrairdy",
+          "darodsf",
+          "yoar",
+          "ykchol",
+          "dar"
+        ],
+        [
+          "told",
+          "shar",
+          "ytshy",
+          "otchdal",
+          "dchal"
+        ],
+        [
+          "pchor",
+          "qodchy",
+          "qotshy",
+          "dy",
+          "tchy"
+        ],
+        [
+          "pochaiin",
+          "cthor",
+          "chpcheos",
+          "opchey",
+          "py"
+        ],
+        [
+          "fachys",
+          "ykal",
+          "ar",
+          "ataiin",
+          "shol"
+        ],
+        [
+          "kchsy",
+          "chadaiin",
+          "ol",
+          "oltchey",
+          "char"
+        ],
+        [
+          "kdchody",
+          "chopy",
+          "cheey",
+          "qotchol",
+          "qotoeey"
+        ],
+        [
+          "faiis",
+          "ar",
+          "okoy",
+          "shy",
+          "pofochey"
+        ]
+      ]
+    },
+    "closing_patterns": {
+      "top_closing_words": [
+        [
+          "daiin",
+          6
+        ],
+        [
+          "chor",
+          3
+        ],
+        [
+          "chory",
+          2
+        ],
+        [
+          "chy",
+          2
+        ],
+        [
+          "otolchey",
+          1
+        ],
+        [
+          "kolshey",
+          1
+        ],
+        [
+          "otch***",
+          1
+        ],
+        [
+          "oly",
+          1
+        ],
+        [
+          "odalydary",
+          1
+        ],
+        [
+          "cheol",
+          1
+        ],
+        [
+          "oraiin",
+          1
+        ],
+        [
+          "odaiin",
+          1
+        ],
+        [
+          "ky",
+          1
+        ],
+        [
+          "dy",
+          1
+        ],
+        [
+          "chold",
+          1
+        ],
+        [
+          "okorory",
+          1
+        ],
+        [
+          "yol",
+          1
+        ],
+        [
+          "ykeody",
+          1
+        ],
+        [
+          "dykshy",
+          1
+        ],
+        [
+          "daky",
+          1
+        ],
+        [
+          "qok*or",
+          1
+        ],
+        [
+          "oaoror",
+          1
+        ],
+        [
+          "ychod",
+          1
+        ],
+        [
+          "shor",
+          1
+        ],
+        [
+          "kchaiin",
+          1
+        ],
+        [
+          "ytol",
+          1
+        ],
+        [
+          "tchor",
+          1
+        ],
+        [
+          "cheaiin",
+          1
+        ],
+        [
+          "dchaiin",
+          1
+        ],
+        [
+          "chodar",
+          1
+        ]
+      ],
+      "top_closing_prefixes": [
+        [
+          "ch",
+          19
+        ],
+        [
+          "dai",
+          9
+        ],
+        [
+          "yk",
+          7
+        ],
+        [
+          "ot",
+          6
+        ],
+        [
+          "che",
+          6
+        ],
+        [
+          "od",
+          4
+        ],
+        [
+          "dc",
+          4
+        ],
+        [
+          "sc",
+          4
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "ok",
+          3
+        ],
+        [
+          "sho",
+          3
+        ],
+        [
+          "yt",
+          3
+        ],
+        [
+          "ct",
+          3
+        ],
+        [
+          "ko",
+          2
+        ],
+        [
+          "dy",
+          2
+        ],
+        [
+          "da",
+          2
+        ],
+        [
+          "oa",
+          2
+        ],
+        [
+          "yc",
+          2
+        ],
+        [
+          "kc",
+          2
+        ],
+        [
+          "tc",
+          2
+        ]
+      ],
+      "top_closing_suffixes": [
+        [
+          "in",
+          24
+        ],
+        [
+          "ey",
+          12
+        ],
+        [
+          "ol",
+          12
+        ],
+        [
+          "or",
+          11
+        ],
+        [
+          "hy",
+          7
+        ],
+        [
+          "dy",
+          6
+        ],
+        [
+          "ry",
+          4
+        ],
+        [
+          "am",
+          4
+        ],
+        [
+          "ly",
+          3
+        ],
+        [
+          "ky",
+          3
+        ],
+        [
+          "os",
+          3
+        ],
+        [
+          "im",
+          3
+        ],
+        [
+          "ar",
+          2
+        ],
+        [
+          "sy",
+          2
+        ],
+        [
+          "es",
+          2
+        ],
+        [
+          "**",
+          1
+        ],
+        [
+          "ld",
+          1
+        ],
+        [
+          "od",
+          1
+        ],
+        [
+          "al",
+          1
+        ],
+        [
+          "ko",
+          1
+        ]
+      ],
+      "suffix_enrichment": [
+        {
+          "suffix": "im",
+          "closing_count": 3,
+          "total_count": 33,
+          "enrichment": 11.29
+        },
+        {
+          "suffix": "ry",
+          "closing_count": 4,
+          "total_count": 150,
+          "enrichment": 3.31
+        },
+        {
+          "suffix": "ly",
+          "closing_count": 3,
+          "total_count": 196,
+          "enrichment": 1.9
+        },
+        {
+          "suffix": "am",
+          "closing_count": 4,
+          "total_count": 280,
+          "enrichment": 1.77
+        },
+        {
+          "suffix": "os",
+          "closing_count": 3,
+          "total_count": 225,
+          "enrichment": 1.66
+        },
+        {
+          "suffix": "in",
+          "closing_count": 24,
+          "total_count": 2029,
+          "enrichment": 1.47
+        },
+        {
+          "suffix": "ky",
+          "closing_count": 3,
+          "total_count": 259,
+          "enrichment": 1.44
+        },
+        {
+          "suffix": "ey",
+          "closing_count": 12,
+          "total_count": 1160,
+          "enrichment": 1.28
+        },
+        {
+          "suffix": "or",
+          "closing_count": 11,
+          "total_count": 1409,
+          "enrichment": 0.97
+        },
+        {
+          "suffix": "ol",
+          "closing_count": 12,
+          "total_count": 1849,
+          "enrichment": 0.81
+        },
+        {
+          "suffix": "dy",
+          "closing_count": 6,
+          "total_count": 965,
+          "enrichment": 0.77
+        },
+        {
+          "suffix": "hy",
+          "closing_count": 7,
+          "total_count": 1316,
+          "enrichment": 0.66
+        }
+      ],
+      "conclusion_candidates": [],
+      "sample_last_5": [
+        [
+          "chol",
+          "cheol",
+          "cho",
+          "chckheody",
+          "otolchey"
+        ],
+        [
+          "orey",
+          "cheeal",
+          "daiin",
+          "cheky",
+          "chory"
+        ],
+        [
+          "ysho",
+          "qykeeol",
+          "odor",
+          "ykeeol",
+          "kolshey"
+        ],
+        [
+          "chol",
+          "qkos",
+          "ot",
+          "qkar",
+          "otch***"
+        ],
+        [
+          "arody",
+          "oldaiin",
+          "sody",
+          "chockhy",
+          "oly"
+        ],
+        [
+          "qkeead",
+          "de*d*loy",
+          "ra**l*r*",
+          "koldarod",
+          "odalydary"
+        ],
+        [
+          "okchody",
+          "ysaiin",
+          "ckhey",
+          "qoor",
+          "cheol"
+        ],
+        [
+          "yotaiin",
+          "cheor",
+          "cheekey",
+          "orain",
+          "oraiin"
+        ],
+        [
+          "rodaiin",
+          "daiin",
+          "qotchy",
+          "qotor",
+          "odaiin"
+        ],
+        [
+          "daiin",
+          "dain",
+          "chckhan",
+          "chy",
+          "ky"
+        ],
+        [
+          "dsy",
+          "qotchy",
+          "okchol",
+          "cthy",
+          "dy"
+        ],
+        [
+          "dor",
+          "cthey",
+          "schold",
+          "cthoy",
+          "chold"
+        ],
+        [
+          "okchal",
+          "daldy",
+          "sotchy",
+          "kchy",
+          "okorory"
+        ],
+        [
+          "chy",
+          "kchey",
+          "kchor",
+          "dal",
+          "yol"
+        ],
+        [
+          "chodalm",
+          "sodaiin",
+          "chy",
+          "kchy",
+          "ykeody"
+        ],
+        [
+          "dykchy",
+          "ctholdg",
+          "dchckhy",
+          "ctholdm",
+          "dykshy"
+        ],
+        [
+          "chaiin",
+          "chy",
+          "koldaky",
+          "kol",
+          "daky"
+        ],
+        [
+          "cthy",
+          "daiin",
+          "cthor",
+          "chol",
+          "chor"
+        ],
+        [
+          "qokchor",
+          "dl",
+          "dy",
+          "shey",
+          "qok*or"
+        ],
+        [
+          "otor",
+          "chody",
+          "sokar",
+          "oaorar",
+          "oaoror"
+        ],
+        [
+          "doiiin",
+          "daiin",
+          "ychody",
+          "chotom",
+          "ychod"
+        ],
+        [
+          "chkeey",
+          "okeor",
+          "char",
+          "okeom",
+          "shor"
+        ],
+        [
+          "okal",
+          "dar",
+          "cthor",
+          "ychekchy",
+          "kchaiin"
+        ],
+        [
+          "ykol",
+          "dom",
+          "yko",
+          "dysh",
+          "ytol"
+        ],
+        [
+          "osocthor",
+          "ytchor",
+          "or",
+          "octhor",
+          "tchor"
+        ],
+        [
+          "ytaiin",
+          "otcholcheaiin",
+          "cthol",
+          "otchol",
+          "cheaiin"
+        ],
+        [
+          "chotey",
+          "e*eo",
+          "cho",
+          "cheor",
+          "dchaiin"
+        ],
+        [
+          "dal",
+          "chody",
+          "schody",
+          "pol",
+          "chodar"
+        ],
+        [
+          "dar",
+          "ochaiin",
+          "chor",
+          "cheey",
+          "tchey"
+        ],
+        [
+          "okoiin",
+          "chey",
+          "cphol",
+          "chor",
+          "chory"
+        ]
+      ]
+    },
+    "internal_structure": {
+      "prefix_position_stats": [
+        {
+          "prefix": "po",
+          "count": 53,
+          "mean_position": 0.243,
+          "std_position": 0.291,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "pc",
+          "count": 78,
+          "mean_position": 0.269,
+          "std_position": 0.262,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yp",
+          "count": 34,
+          "mean_position": 0.277,
+          "std_position": 0.274,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "op",
+          "count": 121,
+          "mean_position": 0.306,
+          "std_position": 0.292,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "py",
+          "count": 16,
+          "mean_position": 0.323,
+          "std_position": 0.265,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fc",
+          "count": 29,
+          "mean_position": 0.341,
+          "std_position": 0.264,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "of",
+          "count": 34,
+          "mean_position": 0.355,
+          "std_position": 0.317,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cf",
+          "count": 34,
+          "mean_position": 0.369,
+          "std_position": 0.263,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cp",
+          "count": 125,
+          "mean_position": 0.395,
+          "std_position": 0.289,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ps",
+          "count": 15,
+          "mean_position": 0.401,
+          "std_position": 0.31,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ty",
+          "count": 18,
+          "mean_position": 0.405,
+          "std_position": 0.214,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "ts",
+          "count": 36,
+          "mean_position": 0.418,
+          "std_position": 0.314,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "to",
+          "count": 132,
+          "mean_position": 0.421,
+          "std_position": 0.253,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dl",
+          "count": 12,
+          "mean_position": 0.423,
+          "std_position": 0.266,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ee",
+          "count": 28,
+          "mean_position": 0.432,
+          "std_position": 0.236,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "ks",
+          "count": 55,
+          "mean_position": 0.437,
+          "std_position": 0.272,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ot",
+          "count": 496,
+          "mean_position": 0.44,
+          "std_position": 0.297,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fo",
+          "count": 21,
+          "mean_position": 0.44,
+          "std_position": 0.255,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ko",
+          "count": 154,
+          "mean_position": 0.45,
+          "std_position": 0.309,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ota",
+          "count": 131,
+          "mean_position": 0.451,
+          "std_position": 0.295,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "qo",
+          "count": 709,
+          "mean_position": 0.453,
+          "std_position": 0.281,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "oe",
+          "count": 51,
+          "mean_position": 0.454,
+          "std_position": 0.253,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "om",
+          "count": 11,
+          "mean_position": 0.457,
+          "std_position": 0.257,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "sy",
+          "count": 41,
+          "mean_position": 0.464,
+          "std_position": 0.282,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ra",
+          "count": 44,
+          "mean_position": 0.465,
+          "std_position": 0.305,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ds",
+          "count": 65,
+          "mean_position": 0.467,
+          "std_position": 0.291,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "or",
+          "count": 200,
+          "mean_position": 0.473,
+          "std_position": 0.316,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "qe",
+          "count": 10,
+          "mean_position": 0.477,
+          "std_position": 0.212,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "sh",
+          "count": 648,
+          "mean_position": 0.478,
+          "std_position": 0.284,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "oi",
+          "count": 28,
+          "mean_position": 0.483,
+          "std_position": 0.234,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "ta",
+          "count": 53,
+          "mean_position": 0.483,
+          "std_position": 0.265,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "sho",
+          "count": 599,
+          "mean_position": 0.488,
+          "std_position": 0.288,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dc",
+          "count": 188,
+          "mean_position": 0.488,
+          "std_position": 0.289,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yt",
+          "count": 249,
+          "mean_position": 0.491,
+          "std_position": 0.294,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dy",
+          "count": 184,
+          "mean_position": 0.491,
+          "std_position": 0.286,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "oc",
+          "count": 100,
+          "mean_position": 0.492,
+          "std_position": 0.308,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "os",
+          "count": 57,
+          "mean_position": 0.493,
+          "std_position": 0.285,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ss",
+          "count": 10,
+          "mean_position": 0.5,
+          "std_position": 0.264,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "tc",
+          "count": 165,
+          "mean_position": 0.5,
+          "std_position": 0.263,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "oa",
+          "count": 46,
+          "mean_position": 0.506,
+          "std_position": 0.288,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "da",
+          "count": 446,
+          "mean_position": 0.508,
+          "std_position": 0.285,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yd",
+          "count": 53,
+          "mean_position": 0.508,
+          "std_position": 0.307,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ck",
+          "count": 219,
+          "mean_position": 0.509,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "am",
+          "count": 22,
+          "mean_position": 0.509,
+          "std_position": 0.316,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ch",
+          "count": 1932,
+          "mean_position": 0.51,
+          "std_position": 0.292,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ct",
+          "count": 555,
+          "mean_position": 0.511,
+          "std_position": 0.29,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "sa",
+          "count": 191,
+          "mean_position": 0.513,
+          "std_position": 0.308,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ar",
+          "count": 98,
+          "mean_position": 0.515,
+          "std_position": 0.323,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "so",
+          "count": 185,
+          "mean_position": 0.515,
+          "std_position": 0.308,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "qok",
+          "count": 610,
+          "mean_position": 0.515,
+          "std_position": 0.261,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        }
+      ],
+      "initial_prefixes": [
+        {
+          "prefix": "po",
+          "count": 53,
+          "mean_position": 0.243,
+          "std_position": 0.291,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "pc",
+          "count": 78,
+          "mean_position": 0.269,
+          "std_position": 0.262,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yp",
+          "count": 34,
+          "mean_position": 0.277,
+          "std_position": 0.274,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "DISTRIBUTED"
+        }
+      ],
+      "final_prefixes": [],
+      "medial_prefixes": [
+        {
+          "prefix": "op",
+          "count": 121,
+          "mean_position": 0.306,
+          "std_position": 0.292,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "py",
+          "count": 16,
+          "mean_position": 0.323,
+          "std_position": 0.265,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fc",
+          "count": 29,
+          "mean_position": 0.341,
+          "std_position": 0.264,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "of",
+          "count": 34,
+          "mean_position": 0.355,
+          "std_position": 0.317,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cf",
+          "count": 34,
+          "mean_position": 0.369,
+          "std_position": 0.263,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cp",
+          "count": 125,
+          "mean_position": 0.395,
+          "std_position": 0.289,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ps",
+          "count": 15,
+          "mean_position": 0.401,
+          "std_position": 0.31,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ty",
+          "count": 18,
+          "mean_position": 0.405,
+          "std_position": 0.214,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "ts",
+          "count": 36,
+          "mean_position": 0.418,
+          "std_position": 0.314,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "to",
+          "count": 132,
+          "mean_position": 0.421,
+          "std_position": 0.253,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dl",
+          "count": 12,
+          "mean_position": 0.423,
+          "std_position": 0.266,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ee",
+          "count": 28,
+          "mean_position": 0.432,
+          "std_position": 0.236,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "ks",
+          "count": 55,
+          "mean_position": 0.437,
+          "std_position": 0.272,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ot",
+          "count": 496,
+          "mean_position": 0.44,
+          "std_position": 0.297,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fo",
+          "count": 21,
+          "mean_position": 0.44,
+          "std_position": 0.255,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        }
+      ],
+      "overall_position_entropy": 3.322,
+      "max_position_entropy": 3.322,
+      "entropy_ratio": 1.0
+    },
+    "entry_types": {
+      "entry_count": 114,
+      "length_groups": {
+        "SHORT": {
+          "count": 47,
+          "mean_diversity": 0.36,
+          "top_opening_prefixes": [
+            [
+              "pc",
+              8
+            ],
+            [
+              "po",
+              6
+            ],
+            [
+              "to",
+              6
+            ],
+            [
+              "ko",
+              5
+            ],
+            [
+              "ts",
+              3
+            ]
+          ],
+          "top_closing_suffixes": [
+            [
+              "in",
+              9
+            ],
+            [
+              "or",
+              6
+            ],
+            [
+              "dy",
+              5
+            ],
+            [
+              "hy",
+              5
+            ],
+            [
+              "ol",
+              4
+            ]
+          ],
+          "top_dominant_prefixes": [
+            [
+              "ch",
+              29
+            ],
+            [
+              "qo",
+              6
+            ],
+            [
+              "qok",
+              2
+            ],
+            [
+              "ot",
+              2
+            ],
+            [
+              "dai",
+              2
+            ]
+          ]
+        },
+        "MEDIUM": {
+          "count": 53,
+          "mean_diversity": 0.301,
+          "top_opening_prefixes": [
+            [
+              "po",
+              10
+            ],
+            [
+              "pc",
+              7
+            ],
+            [
+              "ko",
+              4
+            ],
+            [
+              "ts",
+              3
+            ],
+            [
+              "tc",
+              3
+            ]
+          ],
+          "top_closing_suffixes": [
+            [
+              "in",
+              12
+            ],
+            [
+              "ey",
+              7
+            ],
+            [
+              "ol",
+              5
+            ],
+            [
+              "or",
+              5
+            ],
+            [
+              "ry",
+              3
+            ]
+          ],
+          "top_dominant_prefixes": [
+            [
+              "ch",
+              38
+            ],
+            [
+              "dai",
+              3
+            ],
+            [
+              "ct",
+              3
+            ],
+            [
+              "qok",
+              2
+            ],
+            [
+              "che",
+              2
+            ]
+          ]
+        },
+        "LONG": {
+          "count": 14,
+          "mean_diversity": 0.197,
+          "top_opening_prefixes": [
+            [
+              "ok",
+              3
+            ],
+            [
+              "ko",
+              2
+            ],
+            [
+              "pc",
+              1
+            ],
+            [
+              "sa",
+              1
+            ],
+            [
+              "po",
+              1
+            ]
+          ],
+          "top_closing_suffixes": [
+            [
+              "in",
+              3
+            ],
+            [
+              "ol",
+              3
+            ],
+            [
+              "ey",
+              2
+            ],
+            [
+              "**",
+              1
+            ],
+            [
+              "er",
+              1
+            ]
+          ],
+          "top_dominant_prefixes": [
+            [
+              "che",
+              4
+            ],
+            [
+              "ch",
+              4
+            ],
+            [
+              "oke",
+              2
+            ],
+            [
+              "sh",
+              1
+            ],
+            [
+              "qok",
+              1
+            ]
+          ]
+        }
+      },
+      "common_templates": [
+        [
+          [
+            "pc",
+            "ey"
+          ],
+          4
+        ],
+        [
+          [
+            "pc",
+            "in"
+          ],
+          4
+        ],
+        [
+          [
+            "po",
+            "in"
+          ],
+          3
+        ],
+        [
+          [
+            "ts",
+            "dy"
+          ],
+          3
+        ],
+        [
+          [
+            "pc",
+            "or"
+          ],
+          3
+        ],
+        [
+          [
+            "po",
+            "ol"
+          ],
+          3
+        ],
+        [
+          [
+            "to",
+            "ry"
+          ],
+          2
+        ],
+        [
+          [
+            "po",
+            "or"
+          ],
+          2
+        ],
+        [
+          [
+            "to",
+            "ol"
+          ],
+          2
+        ],
+        [
+          [
+            "po",
+            "os"
+          ],
+          2
+        ],
+        [
+          [
+            "ks",
+            "hy"
+          ],
+          2
+        ],
+        [
+          [
+            "ct",
+            "in"
+          ],
+          2
+        ],
+        [
+          [
+            "to",
+            "in"
+          ],
+          2
+        ],
+        [
+          [
+            "ok",
+            "in"
+          ],
+          2
+        ],
+        [
+          [
+            "ko",
+            "am"
+          ],
+          2
+        ],
+        [
+          [
+            "ko",
+            "ey"
+          ],
+          2
+        ],
+        [
+          [
+            "ch",
+            "ey"
+          ],
+          1
+        ],
+        [
+          [
+            "sa",
+            "**"
+          ],
+          1
+        ],
+        [
+          [
+            "do",
+            "ly"
+          ],
+          1
+        ],
+        [
+          [
+            "ls",
+            "ry"
+          ],
+          1
+        ]
+      ],
+      "sample_features": [
+        {
+          "entry_idx": 0,
+          "folio": "f100r",
+          "length": 177,
+          "opening_prefix": "ch",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.243,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.198
+        },
+        {
+          "entry_idx": 1,
+          "folio": "f100v",
+          "length": 110,
+          "opening_prefix": "to",
+          "closing_suffix": "ry",
+          "prefix_diversity": 0.291,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.2
+        },
+        {
+          "entry_idx": 2,
+          "folio": "f101r1",
+          "length": 241,
+          "opening_prefix": "pc",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.237,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.116
+        },
+        {
+          "entry_idx": 3,
+          "folio": "f101v2",
+          "length": 275,
+          "opening_prefix": "sa",
+          "closing_suffix": "**",
+          "prefix_diversity": 0.222,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.091
+        },
+        {
+          "entry_idx": 4,
+          "folio": "f102r1",
+          "length": 131,
+          "opening_prefix": "do",
+          "closing_suffix": "ly",
+          "prefix_diversity": 0.313,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.092
+        },
+        {
+          "entry_idx": 5,
+          "folio": "f102r2",
+          "length": 164,
+          "opening_prefix": "ls",
+          "closing_suffix": "ry",
+          "prefix_diversity": 0.28,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.067
+        },
+        {
+          "entry_idx": 6,
+          "folio": "f102v1",
+          "length": 162,
+          "opening_prefix": "ke",
+          "closing_suffix": "ol",
+          "prefix_diversity": 0.29,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.111
+        },
+        {
+          "entry_idx": 7,
+          "folio": "f102v2",
+          "length": 259,
+          "opening_prefix": "po",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.189,
+          "dominant_prefix": "oke",
+          "dominant_fraction": 0.108
+        },
+        {
+          "entry_idx": 8,
+          "folio": "f10r",
+          "length": 103,
+          "opening_prefix": "pc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.379,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.194
+        },
+        {
+          "entry_idx": 9,
+          "folio": "f10v",
+          "length": 63,
+          "opening_prefix": "pa",
+          "closing_suffix": "ky",
+          "prefix_diversity": 0.365,
+          "dominant_prefix": "qo",
+          "dominant_fraction": 0.175
+        },
+        {
+          "entry_idx": 10,
+          "folio": "f11r",
+          "length": 57,
+          "opening_prefix": "ts",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.456,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.14
+        },
+        {
+          "entry_idx": 11,
+          "folio": "f11v",
+          "length": 57,
+          "opening_prefix": "po",
+          "closing_suffix": "ld",
+          "prefix_diversity": 0.491,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.14
+        },
+        {
+          "entry_idx": 12,
+          "folio": "f13r",
+          "length": 82,
+          "opening_prefix": "to",
+          "closing_suffix": "ry",
+          "prefix_diversity": 0.366,
+          "dominant_prefix": "qo",
+          "dominant_fraction": 0.085
+        },
+        {
+          "entry_idx": 13,
+          "folio": "f13v",
+          "length": 75,
+          "opening_prefix": "ko",
+          "closing_suffix": "ol",
+          "prefix_diversity": 0.36,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.107
+        },
+        {
+          "entry_idx": 14,
+          "folio": "f14r",
+          "length": 88,
+          "opening_prefix": "pc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.375,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.125
+        },
+        {
+          "entry_idx": 15,
+          "folio": "f14v",
+          "length": 88,
+          "opening_prefix": "pd",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.318,
+          "dominant_prefix": "dy",
+          "dominant_fraction": 0.136
+        },
+        {
+          "entry_idx": 16,
+          "folio": "f15r",
+          "length": 103,
+          "opening_prefix": "ts",
+          "closing_suffix": "ky",
+          "prefix_diversity": 0.35,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.175
+        },
+        {
+          "entry_idx": 17,
+          "folio": "f15v",
+          "length": 75,
+          "opening_prefix": "po",
+          "closing_suffix": "or",
+          "prefix_diversity": 0.387,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.2
+        },
+        {
+          "entry_idx": 18,
+          "folio": "f16r",
+          "length": 100,
+          "opening_prefix": "po",
+          "closing_suffix": "or",
+          "prefix_diversity": 0.38,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.11
+        },
+        {
+          "entry_idx": 19,
+          "folio": "f16v",
+          "length": 83,
+          "opening_prefix": "pc",
+          "closing_suffix": "or",
+          "prefix_diversity": 0.325,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.349
+        },
+        {
+          "entry_idx": 20,
+          "folio": "f17r",
+          "length": 99,
+          "opening_prefix": "fs",
+          "closing_suffix": "od",
+          "prefix_diversity": 0.364,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.162
+        },
+        {
+          "entry_idx": 21,
+          "folio": "f17v",
+          "length": 164,
+          "opening_prefix": "pc",
+          "closing_suffix": "or",
+          "prefix_diversity": 0.28,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.159
+        },
+        {
+          "entry_idx": 22,
+          "folio": "f18r",
+          "length": 100,
+          "opening_prefix": "pd",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.31,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.16
+        },
+        {
+          "entry_idx": 23,
+          "folio": "f18v",
+          "length": 81,
+          "opening_prefix": "to",
+          "closing_suffix": "ol",
+          "prefix_diversity": 0.333,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.111
+        },
+        {
+          "entry_idx": 24,
+          "folio": "f19r",
+          "length": 85,
+          "opening_prefix": "pc",
+          "closing_suffix": "or",
+          "prefix_diversity": 0.306,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.176
+        },
+        {
+          "entry_idx": 25,
+          "folio": "f19v",
+          "length": 87,
+          "opening_prefix": "po",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.31,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.103
+        },
+        {
+          "entry_idx": 26,
+          "folio": "f1r",
+          "length": 291,
+          "opening_prefix": "fa",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.206,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.093
+        },
+        {
+          "entry_idx": 27,
+          "folio": "f1v",
+          "length": 101,
+          "opening_prefix": "kc",
+          "closing_suffix": "ar",
+          "prefix_diversity": 0.356,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.208
+        },
+        {
+          "entry_idx": 28,
+          "folio": "f20r",
+          "length": 105,
+          "opening_prefix": "kd",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.276,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.21
+        },
+        {
+          "entry_idx": 29,
+          "folio": "f20v",
+          "length": 103,
+          "opening_prefix": "fa",
+          "closing_suffix": "ry",
+          "prefix_diversity": 0.32,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.223
+        },
+        {
+          "entry_idx": 30,
+          "folio": "f21r",
+          "length": 114,
+          "opening_prefix": "pc",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.316,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.175
+        },
+        {
+          "entry_idx": 31,
+          "folio": "f21v",
+          "length": 62,
+          "opening_prefix": "to",
+          "closing_suffix": "ol",
+          "prefix_diversity": 0.387,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.29
+        },
+        {
+          "entry_idx": 32,
+          "folio": "f22r",
+          "length": 124,
+          "opening_prefix": "po",
+          "closing_suffix": "al",
+          "prefix_diversity": 0.339,
+          "dominant_prefix": "dai",
+          "dominant_fraction": 0.097
+        },
+        {
+          "entry_idx": 33,
+          "folio": "f22v",
+          "length": 90,
+          "opening_prefix": "py",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.344,
+          "dominant_prefix": "ot",
+          "dominant_fraction": 0.089
+        },
+        {
+          "entry_idx": 34,
+          "folio": "f23r",
+          "length": 121,
+          "opening_prefix": "py",
+          "closing_suffix": "ko",
+          "prefix_diversity": 0.273,
+          "dominant_prefix": "dai",
+          "dominant_fraction": 0.124
+        },
+        {
+          "entry_idx": 35,
+          "folio": "f23v",
+          "length": 113,
+          "opening_prefix": "po",
+          "closing_suffix": "os",
+          "prefix_diversity": 0.31,
+          "dominant_prefix": "ol",
+          "dominant_fraction": 0.133
+        },
+        {
+          "entry_idx": 36,
+          "folio": "f24r",
+          "length": 127,
+          "opening_prefix": "po",
+          "closing_suffix": "ly",
+          "prefix_diversity": 0.315,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.11
+        },
+        {
+          "entry_idx": 37,
+          "folio": "f24v",
+          "length": 117,
+          "opening_prefix": "tc",
+          "closing_suffix": "im",
+          "prefix_diversity": 0.333,
+          "dominant_prefix": "ok",
+          "dominant_fraction": 0.128
+        },
+        {
+          "entry_idx": 38,
+          "folio": "f25r",
+          "length": 48,
+          "opening_prefix": "fc",
+          "closing_suffix": "sy",
+          "prefix_diversity": 0.438,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.208
+        },
+        {
+          "entry_idx": 39,
+          "folio": "f25v",
+          "length": 60,
+          "opening_prefix": "po",
+          "closing_suffix": "ol",
+          "prefix_diversity": 0.4,
+          "dominant_prefix": "dai",
+          "dominant_fraction": 0.183
+        },
+        {
+          "entry_idx": 40,
+          "folio": "f27r",
+          "length": 102,
+          "opening_prefix": "ks",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.284,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.245
+        },
+        {
+          "entry_idx": 41,
+          "folio": "f27v",
+          "length": 95,
+          "opening_prefix": "fo",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.305,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.179
+        },
+        {
+          "entry_idx": 42,
+          "folio": "f28r",
+          "length": 76,
+          "opening_prefix": "pc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.342,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.171
+        },
+        {
+          "entry_idx": 43,
+          "folio": "f28v",
+          "length": 76,
+          "opening_prefix": "ks",
+          "closing_suffix": "ly",
+          "prefix_diversity": 0.316,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.263
+        },
+        {
+          "entry_idx": 44,
+          "folio": "f29r",
+          "length": 72,
+          "opening_prefix": "po",
+          "closing_suffix": "om",
+          "prefix_diversity": 0.347,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.208
+        },
+        {
+          "entry_idx": 45,
+          "folio": "f29v",
+          "length": 112,
+          "opening_prefix": "ko",
+          "closing_suffix": "sy",
+          "prefix_diversity": 0.286,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.214
+        },
+        {
+          "entry_idx": 46,
+          "folio": "f2r",
+          "length": 103,
+          "opening_prefix": "ky",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.33,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.184
+        },
+        {
+          "entry_idx": 47,
+          "folio": "f2v",
+          "length": 74,
+          "opening_prefix": "ko",
+          "closing_suffix": "he",
+          "prefix_diversity": 0.243,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.365
+        },
+        {
+          "entry_idx": 48,
+          "folio": "f30r",
+          "length": 116,
+          "opening_prefix": "ok",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.293,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.216
+        },
+        {
+          "entry_idx": 49,
+          "folio": "f30v",
+          "length": 75,
+          "opening_prefix": "ct",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.267,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.213
+        }
+      ]
+    }
+  },
+  "currier_b": {
+    "section": "Currier B",
+    "word_count": 29204,
+    "entry_count": 83,
+    "length_analysis": {
+      "entry_count": 83,
+      "mean_length": 351.86,
+      "std_length": 201.6,
+      "coefficient_of_variation": 0.573,
+      "min_length": 81,
+      "max_length": 787,
+      "q1": 138,
+      "median": 365,
+      "q3": 521,
+      "length_distribution": {
+        "1-50": 0,
+        "51-100": 5,
+        "101-200": 25,
+        "201-300": 6,
+        "301-500": 23,
+        "500+": 24
+      },
+      "raw_lengths": [
+        81,
+        84,
+        88,
+        93,
+        95,
+        105,
+        105,
+        111,
+        113,
+        114,
+        118,
+        123,
+        125,
+        125,
+        126,
+        128,
+        130,
+        132,
+        134,
+        138,
+        138,
+        144,
+        145,
+        150,
+        151,
+        155,
+        171,
+        175,
+        191,
+        193,
+        206,
+        211,
+        215,
+        223,
+        249,
+        266,
+        325,
+        336,
+        351,
+        362,
+        363,
+        365,
+        371,
+        377,
+        417,
+        420,
+        421,
+        425,
+        427,
+        430,
+        430,
+        442,
+        460,
+        465,
+        467,
+        468,
+        481,
+        493,
+        494,
+        503,
+        517,
+        517,
+        521,
+        522,
+        523,
+        534,
+        538,
+        552,
+        560,
+        571,
+        572,
+        580,
+        590,
+        602,
+        610,
+        619,
+        638,
+        650,
+        680,
+        686,
+        707,
+        784,
+        787
+      ]
+    },
+    "opening_patterns": {
+      "top_opening_words": [
+        [
+          "pchey",
+          3
+        ],
+        [
+          "tchedy",
+          3
+        ],
+        [
+          "pchedal",
+          2
+        ],
+        [
+          "pchedar",
+          2
+        ],
+        [
+          "pol",
+          1
+        ],
+        [
+          "pchdar",
+          1
+        ],
+        [
+          "pchdoiin",
+          1
+        ],
+        [
+          "paiin",
+          1
+        ],
+        [
+          "polairy",
+          1
+        ],
+        [
+          "pshdar",
+          1
+        ],
+        [
+          "fsheda",
+          1
+        ],
+        [
+          "pchdlar",
+          1
+        ],
+        [
+          "kaisar",
+          1
+        ],
+        [
+          "teodeear",
+          1
+        ],
+        [
+          "kcholchdar",
+          1
+        ],
+        [
+          "koshey",
+          1
+        ],
+        [
+          "folchey",
+          1
+        ],
+        [
+          "keeoal",
+          1
+        ],
+        [
+          "pchesfchy",
+          1
+        ],
+        [
+          "folorarom",
+          1
+        ],
+        [
+          "tchedol",
+          1
+        ],
+        [
+          "pchdol",
+          1
+        ],
+        [
+          "fshdar",
+          1
+        ],
+        [
+          "tchedor",
+          1
+        ],
+        [
+          "kchdpy",
+          1
+        ],
+        [
+          "psheoky",
+          1
+        ],
+        [
+          "keedey",
+          1
+        ],
+        [
+          "podair",
+          1
+        ],
+        [
+          "tshdar",
+          1
+        ],
+        [
+          "tar",
+          1
+        ]
+      ],
+      "top_opening_prefixes": [
+        [
+          "pc",
+          17
+        ],
+        [
+          "po",
+          11
+        ],
+        [
+          "tc",
+          7
+        ],
+        [
+          "ps",
+          5
+        ],
+        [
+          "kc",
+          4
+        ],
+        [
+          "ke",
+          3
+        ],
+        [
+          "ts",
+          3
+        ],
+        [
+          "ks",
+          3
+        ],
+        [
+          "pd",
+          3
+        ],
+        [
+          "pa",
+          2
+        ],
+        [
+          "fs",
+          2
+        ],
+        [
+          "te",
+          2
+        ],
+        [
+          "fo",
+          2
+        ],
+        [
+          "ta",
+          2
+        ],
+        [
+          "to",
+          2
+        ],
+        [
+          "ot",
+          2
+        ],
+        [
+          "ka",
+          1
+        ],
+        [
+          "ko",
+          1
+        ],
+        [
+          "ra",
+          1
+        ],
+        [
+          "oke",
+          1
+        ]
+      ],
+      "top_opening_suffixes": [
+        [
+          "dy",
+          19
+        ],
+        [
+          "ar",
+          14
+        ],
+        [
+          "in",
+          8
+        ],
+        [
+          "ey",
+          7
+        ],
+        [
+          "al",
+          5
+        ],
+        [
+          "hy",
+          5
+        ],
+        [
+          "or",
+          5
+        ],
+        [
+          "ry",
+          4
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "ky",
+          2
+        ],
+        [
+          "ir",
+          2
+        ],
+        [
+          "da",
+          1
+        ],
+        [
+          "om",
+          1
+        ],
+        [
+          "py",
+          1
+        ],
+        [
+          "do",
+          1
+        ],
+        [
+          "eo",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "hs",
+          1
+        ],
+        [
+          "ly",
+          1
+        ],
+        [
+          "yl",
+          1
+        ]
+      ],
+      "prefix_enrichment": [
+        {
+          "prefix": "pd",
+          "opening_count": 3,
+          "total_count": 17,
+          "enrichment": 62.09
+        },
+        {
+          "prefix": "ps",
+          "opening_count": 5,
+          "total_count": 45,
+          "enrichment": 39.1
+        },
+        {
+          "prefix": "pc",
+          "opening_count": 17,
+          "total_count": 255,
+          "enrichment": 23.46
+        },
+        {
+          "prefix": "po",
+          "opening_count": 11,
+          "total_count": 177,
+          "enrichment": 21.87
+        },
+        {
+          "prefix": "ks",
+          "opening_count": 3,
+          "total_count": 49,
+          "enrichment": 21.54
+        },
+        {
+          "prefix": "ts",
+          "opening_count": 3,
+          "total_count": 62,
+          "enrichment": 17.03
+        },
+        {
+          "prefix": "tc",
+          "opening_count": 7,
+          "total_count": 182,
+          "enrichment": 13.53
+        },
+        {
+          "prefix": "kc",
+          "opening_count": 4,
+          "total_count": 127,
+          "enrichment": 11.08
+        },
+        {
+          "prefix": "ke",
+          "opening_count": 3,
+          "total_count": 373,
+          "enrichment": 2.83
+        }
+      ],
+      "heading_candidates": [],
+      "sample_first_5": [
+        [
+          "pchedal",
+          "shdy",
+          "yteechypchy",
+          "otey",
+          "ylshey"
+        ],
+        [
+          "pol",
+          "dar",
+          "olfchey",
+          "qoky",
+          "dy"
+        ],
+        [
+          "pchdar",
+          "chedy",
+          "char",
+          "qopchedy",
+          "ocphedy"
+        ],
+        [
+          "pchdoiin",
+          "opcheedy",
+          "orar",
+          "oltcheey",
+          "opchedy"
+        ],
+        [
+          "paiin",
+          "dar",
+          "chcphy",
+          "qokeey",
+          "qopaiin"
+        ],
+        [
+          "polairy",
+          "oair",
+          "olpcheey",
+          "ykaiin",
+          "olpchedy"
+        ],
+        [
+          "pshdar",
+          "shoefy",
+          "yteedy",
+          "shol",
+          "korchy"
+        ],
+        [
+          "fsheda",
+          "loain",
+          "opaiiral",
+          "oteo",
+          "daiin"
+        ],
+        [
+          "pchdlar",
+          "sheolor",
+          "ykeeol",
+          "qokchy",
+          "otor"
+        ],
+        [
+          "kaisar",
+          "olkeeey",
+          "otalkchy",
+          "lkaiin",
+          "otedy"
+        ],
+        [
+          "teodeear",
+          "qopchety",
+          "okeeoly",
+          "okchdpchy",
+          "todasihx"
+        ],
+        [
+          "pchedal",
+          "qokeedar",
+          "otedy",
+          "qokeedy",
+          "lky"
+        ],
+        [
+          "kcholchdar",
+          "shar",
+          "aiip",
+          "chepchedy",
+          "chetalshy"
+        ],
+        [
+          "koshey",
+          "qokal",
+          "chckheal",
+          "opcheodair",
+          "alkain"
+        ],
+        [
+          "folchey",
+          "qokeey",
+          "ykair",
+          "xar",
+          "ally"
+        ],
+        [
+          "keeoal",
+          "chool",
+          "opal",
+          "otalair",
+          "fcheol"
+        ],
+        [
+          "pchesfchy",
+          "ypcheedy",
+          "fchdy",
+          "chetar",
+          "qopchedaiin"
+        ],
+        [
+          "folorarom",
+          "otchey",
+          "qotar",
+          "air",
+          "otair"
+        ],
+        [
+          "tchedol",
+          "doiros",
+          "pcheos",
+          "ytaiin",
+          "okody"
+        ],
+        [
+          "pchdol",
+          "dar",
+          "chedain",
+          "chodalr",
+          "fcheey"
+        ],
+        [
+          "fshdar",
+          "qopchol",
+          "qochedain",
+          "otedy",
+          "cheopolteeedy"
+        ],
+        [
+          "tchedor",
+          "otchedy",
+          "qotees",
+          "ytain",
+          "qoty"
+        ],
+        [
+          "kchdpy",
+          "shey",
+          "qokain",
+          "otalshedy",
+          "q*teey"
+        ],
+        [
+          "psheoky",
+          "odaiir",
+          "qoy",
+          "ofseod",
+          "chypchey"
+        ],
+        [
+          "pchedar",
+          "qodary",
+          "o*iiin",
+          "pcheety",
+          "sair"
+        ],
+        [
+          "keedey",
+          "qofchedy",
+          "shees",
+          "aiin",
+          "qokeefcy"
+        ],
+        [
+          "podair",
+          "sheedy",
+          "otedy",
+          "oteedy",
+          "qotolcheo"
+        ],
+        [
+          "tshdar",
+          "shdor",
+          "shepchdy",
+          "cphody",
+          "yfoldy"
+        ],
+        [
+          "tar",
+          "ar",
+          "daiin",
+          "ydain",
+          "cthey"
+        ],
+        [
+          "pcheoepchy",
+          "olar",
+          "yl",
+          "yfody",
+          "okedody"
+        ]
+      ]
+    },
+    "closing_patterns": {
+      "top_closing_words": [
+        [
+          "chedy",
+          4
+        ],
+        [
+          "aiin",
+          4
+        ],
+        [
+          "qokaiin",
+          2
+        ],
+        [
+          "saiin",
+          2
+        ],
+        [
+          "okeey",
+          2
+        ],
+        [
+          "raiin",
+          2
+        ],
+        [
+          "otaiin",
+          2
+        ],
+        [
+          "orol",
+          2
+        ],
+        [
+          "al",
+          2
+        ],
+        [
+          "otaiir",
+          1
+        ],
+        [
+          "ain",
+          1
+        ],
+        [
+          "dcheoeiin",
+          1
+        ],
+        [
+          "ar",
+          1
+        ],
+        [
+          "chyckh",
+          1
+        ],
+        [
+          "ckhary",
+          1
+        ],
+        [
+          "otalal",
+          1
+        ],
+        [
+          "cheokaiin",
+          1
+        ],
+        [
+          "kaiin",
+          1
+        ],
+        [
+          "ydchedy",
+          1
+        ],
+        [
+          "ykchedaiin",
+          1
+        ],
+        [
+          "otal",
+          1
+        ],
+        [
+          "pshey",
+          1
+        ],
+        [
+          "aiicthy",
+          1
+        ],
+        [
+          "qoair",
+          1
+        ],
+        [
+          "okeeey",
+          1
+        ],
+        [
+          "keeyoram",
+          1
+        ],
+        [
+          "ykcheolchcthy",
+          1
+        ],
+        [
+          "qokyl",
+          1
+        ],
+        [
+          "taraiin",
+          1
+        ],
+        [
+          "dal",
+          1
+        ]
+      ],
+      "top_closing_prefixes": [
+        [
+          "che",
+          7
+        ],
+        [
+          "ota",
+          7
+        ],
+        [
+          "ai",
+          7
+        ],
+        [
+          "ok",
+          5
+        ],
+        [
+          "qok",
+          4
+        ],
+        [
+          "oke",
+          4
+        ],
+        [
+          "ot",
+          4
+        ],
+        [
+          "al",
+          4
+        ],
+        [
+          "sa",
+          3
+        ],
+        [
+          "or",
+          3
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "ra",
+          2
+        ],
+        [
+          "ar",
+          2
+        ],
+        [
+          "ch",
+          2
+        ],
+        [
+          "ka",
+          2
+        ],
+        [
+          "yd",
+          2
+        ],
+        [
+          "yk",
+          2
+        ],
+        [
+          "ke",
+          2
+        ],
+        [
+          "da",
+          2
+        ],
+        [
+          "sh",
+          2
+        ]
+      ],
+      "top_closing_suffixes": [
+        [
+          "in",
+          21
+        ],
+        [
+          "dy",
+          18
+        ],
+        [
+          "al",
+          11
+        ],
+        [
+          "ey",
+          5
+        ],
+        [
+          "hy",
+          4
+        ],
+        [
+          "ar",
+          3
+        ],
+        [
+          "am",
+          3
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "ir",
+          2
+        ],
+        [
+          "ry",
+          2
+        ],
+        [
+          "or",
+          2
+        ],
+        [
+          "kh",
+          1
+        ],
+        [
+          "yl",
+          1
+        ],
+        [
+          "ej",
+          1
+        ],
+        [
+          "ty",
+          1
+        ],
+        [
+          "eg",
+          1
+        ],
+        [
+          "ny",
+          1
+        ],
+        [
+          "no",
+          1
+        ],
+        [
+          "ly",
+          1
+        ],
+        [
+          "do",
+          1
+        ]
+      ],
+      "suffix_enrichment": [
+        {
+          "suffix": "al",
+          "closing_count": 11,
+          "total_count": 1750,
+          "enrichment": 2.21
+        },
+        {
+          "suffix": "am",
+          "closing_count": 3,
+          "total_count": 632,
+          "enrichment": 1.67
+        },
+        {
+          "suffix": "in",
+          "closing_count": 21,
+          "total_count": 5625,
+          "enrichment": 1.31
+        },
+        {
+          "suffix": "hy",
+          "closing_count": 4,
+          "total_count": 1308,
+          "enrichment": 1.08
+        },
+        {
+          "suffix": "dy",
+          "closing_count": 18,
+          "total_count": 6290,
+          "enrichment": 1.01
+        },
+        {
+          "suffix": "ey",
+          "closing_count": 5,
+          "total_count": 3060,
+          "enrichment": 0.57
+        },
+        {
+          "suffix": "ol",
+          "closing_count": 3,
+          "total_count": 2042,
+          "enrichment": 0.52
+        },
+        {
+          "suffix": "ar",
+          "closing_count": 3,
+          "total_count": 2305,
+          "enrichment": 0.46
+        }
+      ],
+      "conclusion_candidates": [],
+      "sample_last_5": [
+        [
+          "darchedy",
+          "qokey",
+          "qoty",
+          "dar",
+          "chedy"
+        ],
+        [
+          "raly",
+          "oraiin",
+          "chary",
+          "taiin",
+          "qokaiin"
+        ],
+        [
+          "ar",
+          "chedy",
+          "qokaiin",
+          "otaiin",
+          "saiin"
+        ],
+        [
+          "ycheeo",
+          "chey",
+          "okeeey",
+          "qokeeey",
+          "okeey"
+        ],
+        [
+          "otoiis",
+          "chedaiin",
+          "otair",
+          "otaly",
+          "otaiir"
+        ],
+        [
+          "cheody",
+          "oaiir",
+          "aiin",
+          "okshey",
+          "ain"
+        ],
+        [
+          "char",
+          "oky",
+          "cheokam",
+          "okaiin",
+          "qokaiin"
+        ],
+        [
+          "shky",
+          "dcheoaiin",
+          "shty",
+          "gcheoaiin",
+          "dcheoeiin"
+        ],
+        [
+          "otchy",
+          "qoky",
+          "otaily",
+          "cheey",
+          "aiin"
+        ],
+        [
+          "qoy",
+          "ycheosaiin",
+          "ockhy",
+          "dyqoy",
+          "raiin"
+        ],
+        [
+          "chdar",
+          "or",
+          "okam",
+          "chdarar",
+          "ar"
+        ],
+        [
+          "lshy",
+          "otedy",
+          "olcheir",
+          "ol",
+          "chedy"
+        ],
+        [
+          "dair",
+          "qokal",
+          "otain",
+          "okal",
+          "otaiin"
+        ],
+        [
+          "saiin",
+          "okaiin",
+          "okal",
+          "aiin",
+          "chyckh"
+        ],
+        [
+          "oi*n",
+          "yky",
+          "okeeeyteey",
+          "shekar",
+          "ckhary"
+        ],
+        [
+          "oty",
+          "ary",
+          "otar",
+          "oaral",
+          "aiin"
+        ],
+        [
+          "okalal",
+          "loary",
+          "oir",
+          "ody",
+          "otalal"
+        ],
+        [
+          "cheokain",
+          "lkeey",
+          "ltal",
+          "keedy",
+          "cheokaiin"
+        ],
+        [
+          "chdar",
+          "chedy",
+          "chocthy",
+          "daiin",
+          "otaiin"
+        ],
+        [
+          "choty",
+          "o**y",
+          "akeey",
+          "otaiin",
+          "kaiin"
+        ],
+        [
+          "dchedy",
+          "kody",
+          "qokeedy",
+          "chols",
+          "ydchedy"
+        ],
+        [
+          "chody",
+          "qokaiin",
+          "dary",
+          "cholaiim",
+          "ykchedaiin"
+        ],
+        [
+          "chckhy",
+          "qol",
+          "ain",
+          "ary",
+          "aiin"
+        ],
+        [
+          "shese",
+          "aiin",
+          "sheos",
+          "cheody",
+          "otal"
+        ],
+        [
+          "shody",
+          "peshy",
+          "tody",
+          "dy",
+          "pshey"
+        ],
+        [
+          "cheky",
+          "okedam",
+          "okedar",
+          "oteor",
+          "aiicthy"
+        ],
+        [
+          "qoear",
+          "oraiin",
+          "cheom",
+          "cheam",
+          "qoair"
+        ],
+        [
+          "or",
+          "cheekaiin",
+          "okain",
+          "ar",
+          "okeeey"
+        ],
+        [
+          "al",
+          "keey",
+          "oram",
+          "taral",
+          "keeyoram"
+        ],
+        [
+          "chol",
+          "chedy",
+          "ykcheol",
+          "chcthy",
+          "ykcheolchcthy"
+        ]
+      ]
+    },
+    "internal_structure": {
+      "prefix_position_stats": [
+        {
+          "prefix": "fo",
+          "count": 11,
+          "mean_position": 0.268,
+          "std_position": 0.226,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "pd",
+          "count": 17,
+          "mean_position": 0.27,
+          "std_position": 0.214,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "yp",
+          "count": 51,
+          "mean_position": 0.322,
+          "std_position": 0.299,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "of",
+          "count": 67,
+          "mean_position": 0.373,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "as",
+          "count": 13,
+          "mean_position": 0.376,
+          "std_position": 0.281,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yo",
+          "count": 18,
+          "mean_position": 0.388,
+          "std_position": 0.297,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cs",
+          "count": 19,
+          "mean_position": 0.39,
+          "std_position": 0.261,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ry",
+          "count": 12,
+          "mean_position": 0.39,
+          "std_position": 0.213,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "do",
+          "count": 162,
+          "mean_position": 0.408,
+          "std_position": 0.305,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "pc",
+          "count": 255,
+          "mean_position": 0.419,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cf",
+          "count": 14,
+          "mean_position": 0.419,
+          "std_position": 0.258,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yl",
+          "count": 19,
+          "mean_position": 0.42,
+          "std_position": 0.3,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fc",
+          "count": 62,
+          "mean_position": 0.42,
+          "std_position": 0.276,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ky",
+          "count": 14,
+          "mean_position": 0.426,
+          "std_position": 0.243,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "o*",
+          "count": 18,
+          "mean_position": 0.428,
+          "std_position": 0.318,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "op",
+          "count": 317,
+          "mean_position": 0.431,
+          "std_position": 0.292,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "sc",
+          "count": 34,
+          "mean_position": 0.436,
+          "std_position": 0.275,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "oe",
+          "count": 74,
+          "mean_position": 0.438,
+          "std_position": 0.302,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "oc",
+          "count": 105,
+          "mean_position": 0.443,
+          "std_position": 0.314,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ts",
+          "count": 62,
+          "mean_position": 0.444,
+          "std_position": 0.255,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "rs",
+          "count": 25,
+          "mean_position": 0.447,
+          "std_position": 0.26,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "am",
+          "count": 94,
+          "mean_position": 0.449,
+          "std_position": 0.283,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ps",
+          "count": 45,
+          "mean_position": 0.45,
+          "std_position": 0.268,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "de",
+          "count": 31,
+          "mean_position": 0.451,
+          "std_position": 0.268,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ro",
+          "count": 118,
+          "mean_position": 0.453,
+          "std_position": 0.293,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cp",
+          "count": 56,
+          "mean_position": 0.455,
+          "std_position": 0.27,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dk",
+          "count": 19,
+          "mean_position": 0.456,
+          "std_position": 0.294,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ty",
+          "count": 14,
+          "mean_position": 0.456,
+          "std_position": 0.268,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "qo",
+          "count": 1933,
+          "mean_position": 0.459,
+          "std_position": 0.286,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "om",
+          "count": 19,
+          "mean_position": 0.46,
+          "std_position": 0.328,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ck",
+          "count": 48,
+          "mean_position": 0.465,
+          "std_position": 0.285,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "at",
+          "count": 15,
+          "mean_position": 0.467,
+          "std_position": 0.271,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ot",
+          "count": 1077,
+          "mean_position": 0.471,
+          "std_position": 0.31,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ee",
+          "count": 67,
+          "mean_position": 0.474,
+          "std_position": 0.276,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "qe",
+          "count": 66,
+          "mean_position": 0.478,
+          "std_position": 0.298,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "rc",
+          "count": 54,
+          "mean_position": 0.478,
+          "std_position": 0.26,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dc",
+          "count": 132,
+          "mean_position": 0.479,
+          "std_position": 0.307,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "da",
+          "count": 680,
+          "mean_position": 0.48,
+          "std_position": 0.294,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "od",
+          "count": 172,
+          "mean_position": 0.481,
+          "std_position": 0.292,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ds",
+          "count": 101,
+          "mean_position": 0.486,
+          "std_position": 0.297,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "dai",
+          "count": 682,
+          "mean_position": 0.487,
+          "std_position": 0.28,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fa",
+          "count": 22,
+          "mean_position": 0.487,
+          "std_position": 0.313,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "kc",
+          "count": 127,
+          "mean_position": 0.488,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ch",
+          "count": 1728,
+          "mean_position": 0.489,
+          "std_position": 0.289,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "qok",
+          "count": 2806,
+          "mean_position": 0.492,
+          "std_position": 0.283,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "lo",
+          "count": 212,
+          "mean_position": 0.492,
+          "std_position": 0.288,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yt",
+          "count": 319,
+          "mean_position": 0.493,
+          "std_position": 0.313,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ko",
+          "count": 77,
+          "mean_position": 0.495,
+          "std_position": 0.289,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "to",
+          "count": 154,
+          "mean_position": 0.499,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "sh",
+          "count": 2170,
+          "mean_position": 0.5,
+          "std_position": 0.277,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        }
+      ],
+      "initial_prefixes": [
+        {
+          "prefix": "fo",
+          "count": 11,
+          "mean_position": 0.268,
+          "std_position": 0.226,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "pd",
+          "count": 17,
+          "mean_position": 0.27,
+          "std_position": 0.214,
+          "position_type": "ENTRY_INITIAL",
+          "spread": "CONCENTRATED"
+        }
+      ],
+      "final_prefixes": [],
+      "medial_prefixes": [
+        {
+          "prefix": "yp",
+          "count": 51,
+          "mean_position": 0.322,
+          "std_position": 0.299,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "of",
+          "count": 67,
+          "mean_position": 0.373,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "as",
+          "count": 13,
+          "mean_position": 0.376,
+          "std_position": 0.281,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yo",
+          "count": 18,
+          "mean_position": 0.388,
+          "std_position": 0.297,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cs",
+          "count": 19,
+          "mean_position": 0.39,
+          "std_position": 0.261,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ry",
+          "count": 12,
+          "mean_position": 0.39,
+          "std_position": 0.213,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "do",
+          "count": 162,
+          "mean_position": 0.408,
+          "std_position": 0.305,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "pc",
+          "count": 255,
+          "mean_position": 0.419,
+          "std_position": 0.278,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "cf",
+          "count": 14,
+          "mean_position": 0.419,
+          "std_position": 0.258,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "yl",
+          "count": 19,
+          "mean_position": 0.42,
+          "std_position": 0.3,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "fc",
+          "count": 62,
+          "mean_position": 0.42,
+          "std_position": 0.276,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "ky",
+          "count": 14,
+          "mean_position": 0.426,
+          "std_position": 0.243,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "CONCENTRATED"
+        },
+        {
+          "prefix": "o*",
+          "count": 18,
+          "mean_position": 0.428,
+          "std_position": 0.318,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "op",
+          "count": 317,
+          "mean_position": 0.431,
+          "std_position": 0.292,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        },
+        {
+          "prefix": "sc",
+          "count": 34,
+          "mean_position": 0.436,
+          "std_position": 0.275,
+          "position_type": "ENTRY_MEDIAL",
+          "spread": "DISTRIBUTED"
+        }
+      ],
+      "overall_position_entropy": 3.322,
+      "max_position_entropy": 3.322,
+      "entropy_ratio": 1.0
+    },
+    "entry_types": {
+      "entry_count": 83,
+      "length_groups": {
+        "SHORT": {
+          "count": 5,
+          "mean_diversity": 0.36,
+          "top_opening_prefixes": [
+            [
+              "tc",
+              2
+            ],
+            [
+              "ts",
+              1
+            ],
+            [
+              "ke",
+              1
+            ],
+            [
+              "ks",
+              1
+            ]
+          ],
+          "top_closing_suffixes": [
+            [
+              "ey",
+              2
+            ],
+            [
+              "al",
+              2
+            ],
+            [
+              "dy",
+              1
+            ]
+          ],
+          "top_dominant_prefixes": [
+            [
+              "che",
+              2
+            ],
+            [
+              "ol",
+              1
+            ],
+            [
+              "ch",
+              1
+            ],
+            [
+              "ok",
+              1
+            ]
+          ]
+        },
+        "MEDIUM": {
+          "count": 25,
+          "mean_diversity": 0.303,
+          "top_opening_prefixes": [
+            [
+              "pc",
+              6
+            ],
+            [
+              "po",
+              4
+            ],
+            [
+              "ps",
+              3
+            ],
+            [
+              "ks",
+              2
+            ],
+            [
+              "ke",
+              1
+            ]
+          ],
+          "top_closing_suffixes": [
+            [
+              "in",
+              5
+            ],
+            [
+              "hy",
+              4
+            ],
+            [
+              "dy",
+              4
+            ],
+            [
+              "al",
+              3
+            ],
+            [
+              "am",
+              2
+            ]
+          ],
+          "top_dominant_prefixes": [
+            [
+              "ch",
+              7
+            ],
+            [
+              "che",
+              5
+            ],
+            [
+              "ok",
+              3
+            ],
+            [
+              "qok",
+              3
+            ],
+            [
+              "ot",
+              3
+            ]
+          ]
+        },
+        "LONG": {
+          "count": 53,
+          "mean_diversity": 0.142,
+          "top_opening_prefixes": [
+            [
+              "pc",
+              11
+            ],
+            [
+              "po",
+              7
+            ],
+            [
+              "tc",
+              4
+            ],
+            [
+              "kc",
+              3
+            ],
+            [
+              "pa",
+              2
+            ]
+          ],
+          "top_closing_suffixes": [
+            [
+              "in",
+              16
+            ],
+            [
+              "dy",
+              13
+            ],
+            [
+              "al",
+              6
+            ],
+            [
+              "ar",
+              3
+            ],
+            [
+              "ol",
+              3
+            ]
+          ],
+          "top_dominant_prefixes": [
+            [
+              "qok",
+              22
+            ],
+            [
+              "sh",
+              10
+            ],
+            [
+              "che",
+              7
+            ],
+            [
+              "qo",
+              3
+            ],
+            [
+              "ch",
+              3
+            ]
+          ]
+        }
+      },
+      "common_templates": [
+        [
+          [
+            "pc",
+            "dy"
+          ],
+          5
+        ],
+        [
+          [
+            "po",
+            "in"
+          ],
+          4
+        ],
+        [
+          [
+            "po",
+            "dy"
+          ],
+          4
+        ],
+        [
+          [
+            "pc",
+            "in"
+          ],
+          3
+        ],
+        [
+          [
+            "pc",
+            "ey"
+          ],
+          2
+        ],
+        [
+          [
+            "kc",
+            "in"
+          ],
+          2
+        ],
+        [
+          [
+            "pc",
+            "al"
+          ],
+          2
+        ],
+        [
+          [
+            "tc",
+            "in"
+          ],
+          2
+        ],
+        [
+          [
+            "ks",
+            "in"
+          ],
+          2
+        ],
+        [
+          [
+            "tc",
+            "dy"
+          ],
+          2
+        ],
+        [
+          [
+            "pc",
+            "ol"
+          ],
+          2
+        ],
+        [
+          [
+            "ot",
+            "dy"
+          ],
+          2
+        ],
+        [
+          [
+            "tc",
+            "al"
+          ],
+          2
+        ],
+        [
+          [
+            "pa",
+            "ir"
+          ],
+          1
+        ],
+        [
+          [
+            "ps",
+            "in"
+          ],
+          1
+        ],
+        [
+          [
+            "fs",
+            "in"
+          ],
+          1
+        ],
+        [
+          [
+            "ka",
+            "in"
+          ],
+          1
+        ],
+        [
+          [
+            "te",
+            "ar"
+          ],
+          1
+        ],
+        [
+          [
+            "ko",
+            "kh"
+          ],
+          1
+        ],
+        [
+          [
+            "fo",
+            "ry"
+          ],
+          1
+        ]
+      ],
+      "sample_features": [
+        {
+          "entry_idx": 0,
+          "folio": "f103r",
+          "length": 619,
+          "opening_prefix": "pc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.102,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.144
+        },
+        {
+          "entry_idx": 1,
+          "folio": "f103v",
+          "length": 522,
+          "opening_prefix": "po",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.109,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.125
+        },
+        {
+          "entry_idx": 2,
+          "folio": "f104r",
+          "length": 503,
+          "opening_prefix": "pc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.125,
+          "dominant_prefix": "qo",
+          "dominant_fraction": 0.115
+        },
+        {
+          "entry_idx": 3,
+          "folio": "f104v",
+          "length": 517,
+          "opening_prefix": "pc",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.118,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.149
+        },
+        {
+          "entry_idx": 4,
+          "folio": "f105r",
+          "length": 425,
+          "opening_prefix": "pa",
+          "closing_suffix": "ir",
+          "prefix_diversity": 0.169,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.066
+        },
+        {
+          "entry_idx": 5,
+          "folio": "f105v",
+          "length": 467,
+          "opening_prefix": "po",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.169,
+          "dominant_prefix": "ai",
+          "dominant_fraction": 0.084
+        },
+        {
+          "entry_idx": 6,
+          "folio": "f106r",
+          "length": 538,
+          "opening_prefix": "ps",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.11,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.087
+        },
+        {
+          "entry_idx": 7,
+          "folio": "f106v",
+          "length": 638,
+          "opening_prefix": "fs",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.111,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.11
+        },
+        {
+          "entry_idx": 8,
+          "folio": "f107r",
+          "length": 602,
+          "opening_prefix": "pc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.116,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.078
+        },
+        {
+          "entry_idx": 9,
+          "folio": "f107v",
+          "length": 552,
+          "opening_prefix": "ka",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.105,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.138
+        },
+        {
+          "entry_idx": 10,
+          "folio": "f108r",
+          "length": 580,
+          "opening_prefix": "te",
+          "closing_suffix": "ar",
+          "prefix_diversity": 0.103,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.117
+        },
+        {
+          "entry_idx": 11,
+          "folio": "f108v",
+          "length": 680,
+          "opening_prefix": "pc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.1,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.134
+        },
+        {
+          "entry_idx": 12,
+          "folio": "f111r",
+          "length": 787,
+          "opening_prefix": "kc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.089,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.118
+        },
+        {
+          "entry_idx": 13,
+          "folio": "f111v",
+          "length": 784,
+          "opening_prefix": "ko",
+          "closing_suffix": "kh",
+          "prefix_diversity": 0.082,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.117
+        },
+        {
+          "entry_idx": 14,
+          "folio": "f112r",
+          "length": 523,
+          "opening_prefix": "fo",
+          "closing_suffix": "ry",
+          "prefix_diversity": 0.13,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.09
+        },
+        {
+          "entry_idx": 15,
+          "folio": "f112v",
+          "length": 571,
+          "opening_prefix": "ke",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.1,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.116
+        },
+        {
+          "entry_idx": 16,
+          "folio": "f113r",
+          "length": 686,
+          "opening_prefix": "pc",
+          "closing_suffix": "al",
+          "prefix_diversity": 0.118,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.13
+        },
+        {
+          "entry_idx": 17,
+          "folio": "f113v",
+          "length": 590,
+          "opening_prefix": "fo",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.119,
+          "dominant_prefix": "ot",
+          "dominant_fraction": 0.083
+        },
+        {
+          "entry_idx": 18,
+          "folio": "f114r",
+          "length": 572,
+          "opening_prefix": "tc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.122,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.096
+        },
+        {
+          "entry_idx": 19,
+          "folio": "f114v",
+          "length": 430,
+          "opening_prefix": "pc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.144,
+          "dominant_prefix": "qo",
+          "dominant_fraction": 0.158
+        },
+        {
+          "entry_idx": 20,
+          "folio": "f115r",
+          "length": 517,
+          "opening_prefix": "fs",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.124,
+          "dominant_prefix": "qo",
+          "dominant_fraction": 0.132
+        },
+        {
+          "entry_idx": 21,
+          "folio": "f115v",
+          "length": 494,
+          "opening_prefix": "tc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.138,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.111
+        },
+        {
+          "entry_idx": 22,
+          "folio": "f116r",
+          "length": 650,
+          "opening_prefix": "kc",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.106,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.115
+        },
+        {
+          "entry_idx": 23,
+          "folio": "f26r",
+          "length": 105,
+          "opening_prefix": "ps",
+          "closing_suffix": "al",
+          "prefix_diversity": 0.41,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.095
+        },
+        {
+          "entry_idx": 24,
+          "folio": "f26v",
+          "length": 114,
+          "opening_prefix": "pc",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.377,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.132
+        },
+        {
+          "entry_idx": 25,
+          "folio": "f31r",
+          "length": 126,
+          "opening_prefix": "ke",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.246,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.159
+        },
+        {
+          "entry_idx": 26,
+          "folio": "f31v",
+          "length": 138,
+          "opening_prefix": "po",
+          "closing_suffix": "ir",
+          "prefix_diversity": 0.29,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.159
+        },
+        {
+          "entry_idx": 27,
+          "folio": "f33r",
+          "length": 81,
+          "opening_prefix": "ts",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.42,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.111
+        },
+        {
+          "entry_idx": 28,
+          "folio": "f33v",
+          "length": 125,
+          "opening_prefix": "ta",
+          "closing_suffix": "am",
+          "prefix_diversity": 0.336,
+          "dominant_prefix": "ok",
+          "dominant_fraction": 0.096
+        },
+        {
+          "entry_idx": 29,
+          "folio": "f34r",
+          "length": 171,
+          "opening_prefix": "pc",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.234,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.129
+        },
+        {
+          "entry_idx": 30,
+          "folio": "f34v",
+          "length": 144,
+          "opening_prefix": "ks",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.299,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.146
+        },
+        {
+          "entry_idx": 31,
+          "folio": "f39r",
+          "length": 193,
+          "opening_prefix": "te",
+          "closing_suffix": "yl",
+          "prefix_diversity": 0.249,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.145
+        },
+        {
+          "entry_idx": 32,
+          "folio": "f39v",
+          "length": 175,
+          "opening_prefix": "pd",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.269,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.08
+        },
+        {
+          "entry_idx": 33,
+          "folio": "f40r",
+          "length": 111,
+          "opening_prefix": "pc",
+          "closing_suffix": "al",
+          "prefix_diversity": 0.315,
+          "dominant_prefix": "ok",
+          "dominant_fraction": 0.144
+        },
+        {
+          "entry_idx": 34,
+          "folio": "f40v",
+          "length": 118,
+          "opening_prefix": "pc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.339,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.136
+        },
+        {
+          "entry_idx": 35,
+          "folio": "f41r",
+          "length": 150,
+          "opening_prefix": "pc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.28,
+          "dominant_prefix": "qok",
+          "dominant_fraction": 0.12
+        },
+        {
+          "entry_idx": 36,
+          "folio": "f41v",
+          "length": 84,
+          "opening_prefix": "ke",
+          "closing_suffix": "ey",
+          "prefix_diversity": 0.357,
+          "dominant_prefix": "ol",
+          "dominant_fraction": 0.119
+        },
+        {
+          "entry_idx": 37,
+          "folio": "f43r",
+          "length": 215,
+          "opening_prefix": "ta",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.228,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.098
+        },
+        {
+          "entry_idx": 38,
+          "folio": "f43v",
+          "length": 206,
+          "opening_prefix": "pd",
+          "closing_suffix": "or",
+          "prefix_diversity": 0.257,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.107
+        },
+        {
+          "entry_idx": 39,
+          "folio": "f46r",
+          "length": 211,
+          "opening_prefix": "pc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.232,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.185
+        },
+        {
+          "entry_idx": 40,
+          "folio": "f46v",
+          "length": 145,
+          "opening_prefix": "po",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.276,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.124
+        },
+        {
+          "entry_idx": 41,
+          "folio": "f48r",
+          "length": 123,
+          "opening_prefix": "ps",
+          "closing_suffix": "ej",
+          "prefix_diversity": 0.333,
+          "dominant_prefix": "yt",
+          "dominant_fraction": 0.073
+        },
+        {
+          "entry_idx": 42,
+          "folio": "f48v",
+          "length": 155,
+          "opening_prefix": "pc",
+          "closing_suffix": "ry",
+          "prefix_diversity": 0.265,
+          "dominant_prefix": "ot",
+          "dominant_fraction": 0.09
+        },
+        {
+          "entry_idx": 43,
+          "folio": "f50r",
+          "length": 130,
+          "opening_prefix": "ps",
+          "closing_suffix": "ty",
+          "prefix_diversity": 0.292,
+          "dominant_prefix": "ol",
+          "dominant_fraction": 0.1
+        },
+        {
+          "entry_idx": 44,
+          "folio": "f50v",
+          "length": 125,
+          "opening_prefix": "tc",
+          "closing_suffix": "dy",
+          "prefix_diversity": 0.336,
+          "dominant_prefix": "ok",
+          "dominant_fraction": 0.16
+        },
+        {
+          "entry_idx": 45,
+          "folio": "f55r",
+          "length": 151,
+          "opening_prefix": "po",
+          "closing_suffix": "in",
+          "prefix_diversity": 0.278,
+          "dominant_prefix": "ch",
+          "dominant_fraction": 0.119
+        },
+        {
+          "entry_idx": 46,
+          "folio": "f55v",
+          "length": 128,
+          "opening_prefix": "kc",
+          "closing_suffix": "am",
+          "prefix_diversity": 0.305,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.094
+        },
+        {
+          "entry_idx": 47,
+          "folio": "f57r",
+          "length": 132,
+          "opening_prefix": "po",
+          "closing_suffix": "hy",
+          "prefix_diversity": 0.318,
+          "dominant_prefix": "che",
+          "dominant_fraction": 0.182
+        },
+        {
+          "entry_idx": 48,
+          "folio": "f66r",
+          "length": 427,
+          "opening_prefix": "ra",
+          "closing_suffix": "eg",
+          "prefix_diversity": 0.171,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.126
+        },
+        {
+          "entry_idx": 49,
+          "folio": "f66v",
+          "length": 134,
+          "opening_prefix": "oke",
+          "closing_suffix": "al",
+          "prefix_diversity": 0.276,
+          "dominant_prefix": "sh",
+          "dominant_fraction": 0.142
+        }
+      ]
+    }
+  }
+}

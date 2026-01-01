@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "phase": "13C",
+    "title": "Quantitative State Depth",
+    "timestamp": "2025-12-31T13:47:46.239189"
+  },
+  "per_state_metrics": {
+    "STATE-A": {
+      "mean_cycle_length": 38.47,
+      "repetition_depth": 4.64,
+      "mean_position_in_entry": 0.463,
+      "operator_diversity": 19,
+      "sample_size": 275
+    },
+    "STATE-B": {
+      "mean_cycle_length": 66.96,
+      "repetition_depth": 4.18,
+      "mean_position_in_entry": 0.535,
+      "operator_diversity": 14,
+      "sample_size": 332
+    },
+    "STATE-C": {
+      "mean_cycle_length": 4.0,
+      "repetition_depth": 130.93,
+      "mean_position_in_entry": 0.498,
+      "operator_diversity": 25,
+      "sample_size": 29591
+    },
+    "STATE-D": {
+      "mean_cycle_length": 44.53,
+      "repetition_depth": 9.35,
+      "mean_position_in_entry": 0.519,
+      "operator_diversity": 22,
+      "sample_size": 1492
+    }
+  },
+  "state_ordering": {
+    "by_processing_depth": [
+      "STATE-A",
+      "STATE-C",
+      "STATE-D",
+      "STATE-B"
+    ],
+    "by_refinement_level": [
+      "STATE-B",
+      "STATE-D",
+      "STATE-A",
+      "STATE-C"
+    ]
+  },
+  "position_variance": 0.0007,
+  "QUANTITATIVE_DIFFERENTIATION": "WEAK",
+  "interpretation": {
+    "early_states": [
+      "STATE-A",
+      "STATE-C",
+      "STATE-D"
+    ],
+    "late_states": [
+      "STATE-C",
+      "STATE-D",
+      "STATE-B"
+    ],
+    "high_diversity_states": [
+      "STATE-C",
+      "STATE-D",
+      "STATE-A"
+    ]
+  }
+}

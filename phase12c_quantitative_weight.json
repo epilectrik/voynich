@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "phase": "12C",
+    "title": "Quantitative Weighting Pattern",
+    "timestamp": "2025-12-31T13:04:21.552590"
+  },
+  "alignment_scores": {
+    "tria_prima_3": 2.22,
+    "elemental_4": 2.07,
+    "planetary_7": 1.31,
+    "zodiacal_12": 0.42
+  },
+  "significant_cardinalities": [
+    7,
+    8,
+    40,
+    12,
+    28,
+    30
+  ],
+  "derived_metrics": {
+    "tria_prima_dominance": 1.314,
+    "scholastic_balance": 0.633,
+    "has_key_numbers": {
+      "3": false,
+      "4": false,
+      "7": true,
+      "12": true
+    }
+  },
+  "VERDICT": "PARACELSIAN_TRIA_PRIMA",
+  "interpretation": "Strong tria prima (3) dominance (2.22x enrichment). Consistent with Paracelsian salt/sulfur/mercury framework."
+}

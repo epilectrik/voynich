@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "phase": "12B",
+    "title": "Substance vs State Emphasis",
+    "timestamp": "2025-12-31T13:04:21.552590"
+  },
+  "attractor_count": 473,
+  "top_5_attractors": [
+    [
+      "h",
+      667
+    ],
+    [
+      "k",
+      641
+    ],
+    [
+      "e",
+      566
+    ],
+    [
+      "ch",
+      471
+    ],
+    [
+      "daiin",
+      413
+    ]
+  ],
+  "top_5_concentration": 0.436,
+  "gini_coefficient": 0,
+  "thresholds": {
+    "substance_signature": "Gini > 0.7, top-5 > 50%",
+    "state_signature": "Gini < 0.5, top-5 < 30%"
+  },
+  "VERDICT": "MIXED",
+  "interpretation": "Intermediate attractor distribution (Gini=0.00, top-5=43.6%). Neither purely substance nor state focused."
+}

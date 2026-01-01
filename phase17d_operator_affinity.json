@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "phase": "17D",
+    "title": "Kernel Operator Affinity",
+    "timestamp": "2025-12-31T15:51:24.643816"
+  },
+  "kernel_operator_profiles": {
+    "k": {
+      "self_operators": {
+        "qo": 3466,
+        "ol": 479,
+        "ch": 186,
+        "sh": 72,
+        "al": 66,
+        "oe": 28,
+        "so": 18,
+        "lo": 16,
+        "to": 15,
+        "do": 10
+      },
+      "incoming_operators": {
+        "qo": 754,
+        "ch": 685,
+        "sh": 633,
+        "ok": 300,
+        "ot": 233,
+        "ol": 217,
+        "da": 164,
+        "yk": 80,
+        "lc": 70,
+        "ke": 69
+      },
+      "outgoing_operators": {
+        "qo": 720,
+        "ch": 705,
+        "sh": 391,
+        "ok": 184,
+        "ot": 141,
+        "ol": 138,
+        "da": 130,
+        "lc": 57,
+        "so": 42,
+        "do": 39
+      },
+      "dominant_self": [
+        "qo",
+        3466
+      ],
+      "dominant_incoming": [
+        "qo",
+        754
+      ],
+      "dominant_outgoing": [
+        "qo",
+        720
+      ],
+      "total_self": 4424,
+      "total_incoming": 4014,
+      "total_outgoing": 3029
+    },
+    "h": {
+      "self_operators": {
+        "ct": 648,
+        "lc": 366,
+        "dc": 361,
+        "tc": 356,
+        "pc": 336,
+        "kc": 311,
+        "yc": 310,
+        "ck": 270,
+        "cp": 188,
+        "ys": 120
+      },
+      "incoming_operators": {
+        "ch": 675,
+        "sh": 365,
+        "qo": 363,
+        "da": 246,
+        "ok": 182,
+        "ot": 180,
+        "ct": 102,
+        "ol": 91,
+        "dc": 63,
+        "ai": 57
+      },
+      "outgoing_operators": {
+        "ch": 487,
+        "qo": 460,
+        "sh": 301,
+        "ot": 120,
+        "ok": 112,
+        "ct": 109,
+        "da": 81,
+        "ol": 78,
+        "yk": 53,
+        "ke": 52
+      },
+      "dominant_self": [
+        "ct",
+        648
+      ],
+      "dominant_incoming": [
+        "ch",
+        675
+      ],
+      "dominant_outgoing": [
+        "ch",
+        487
+      ],
+      "total_self": 3833,
+      "total_incoming": 3296,
+      "total_outgoing": 2604
+    },
+    "e": {
+      "self_operators": {
+        "ch": 3365,
+        "sh": 2201,
+        "ok": 1177,
+        "ot": 1030,
+        "yk": 365,
+        "ke": 300,
+        "qo": 159,
+        "te": 102,
+        "oe": 102,
+        "de": 42
+      },
+      "incoming_operators": {
+        "qo": 1343,
+        "ch": 1304,
+        "ok": 719,
+        "sh": 627,
+        "ot": 564,
+        "da": 515,
+        "ol": 421,
+        "ai": 207,
+        "sa": 198,
+        "yk": 163
+      },
+      "outgoing_operators": {
+        "qo": 1664,
+        "ch": 1132,
+        "sh": 559,
+        "ok": 470,
+        "ot": 398,
+        "da": 209,
+        "ol": 201,
+        "ke": 138,
+        "yk": 117,
+        "lc": 115
+      },
+      "dominant_self": [
+        "ch",
+        3365
+      ],
+      "dominant_incoming": [
+        "qo",
+        1343
+      ],
+      "dominant_outgoing": [
+        "qo",
+        1664
+      ],
+      "total_self": 9021,
+      "total_incoming": 8065,
+      "total_outgoing": 6292
+    }
+  },
+  "control_interpretation": {
+    "k": {
+      "interpretations": [
+        "Primarily receives HEAT_ACTION - apply/maintain heat (3466x)",
+        "Preceded by HEAT_ACTION - apply/maintain heat (754x)",
+        "Followed by HEAT_ACTION - apply/maintain heat (720x)"
+      ],
+      "control_type": "HEAT_CONTROLLED"
+    },
+    "h": {
+      "interpretations": [
+        "Primarily receives CUT_ACTION - separate/divide (648x)",
+        "Preceded by CHANNEL_ACTION - direct flow/vapor (675x)",
+        "Followed by CHANNEL_ACTION - direct flow/vapor (487x)"
+      ],
+      "control_type": "POSITION_CONTROLLED"
+    },
+    "e": {
+      "interpretations": [
+        "Primarily receives CHANNEL_ACTION - direct flow/vapor (3365x)",
+        "Preceded by HEAT_ACTION - apply/maintain heat (1343x)",
+        "Followed by HEAT_ACTION - apply/maintain heat (1664x)"
+      ],
+      "control_type": "FLOW_CONTROLLED"
+    }
+  },
+  "operator_meanings": {
+    "qo": "HEAT_ACTION - apply/maintain heat",
+    "ch": "CHANNEL_ACTION - direct flow/vapor",
+    "sh": "SHIFT_ACTION - change state/position",
+    "da": "DOSE_ACTION - add/adjust quantity",
+    "ol": "HOLD_ACTION - maintain/stabilize",
+    "ot": "OUTPUT_ACTION - release/transfer",
+    "ok": "KEEP_ACTION - retain/preserve",
+    "ct": "CUT_ACTION - separate/divide",
+    "al": "ALTER_ACTION - modify/adjust",
+    "ar": "ARRANGE_ACTION - position/order"
+  },
+  "physical_mapping": {
+    "HEAT_CONTROLLED": "Response to thermal energy input (fire adjustment)",
+    "FLOW_CONTROLLED": "Response to material flow (valve/restriction)",
+    "POSITION_CONTROLLED": "Response to positioning (apparatus arrangement)"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "phase": "11A",
+    "title": "Cardinality Fingerprints",
+    "timestamp": "2025-12-31T12:51:31.264176"
+  },
+  "distributions": {
+    "slot_count": {
+      "mean": 534.69,
+      "std": 455.53,
+      "min": 6,
+      "max": 2222,
+      "peaks": {
+        "2": 470.87,
+        "3": 470.87,
+        "4": 480.68,
+        "7": 510.11,
+        "8": 519.92,
+        "12": 539.54,
+        "28": 618.01,
+        "30": 657.25,
+        "40": 725.92
+      }
+    },
+    "operator_count": {
+      "mean": 58.09,
+      "peaks": {
+        "28": 5.87,
+        "30": 8.12,
+        "40": 36.56
+      }
+    },
+    "middle_count": {
+      "mean": 104.24,
+      "peaks": {
+        "7": 2.43,
+        "8": 2.43,
+        "12": 6.08,
+        "28": 37.72,
+        "30": 43.81,
+        "40": 73.01
+      }
+    }
+  },
+  "significant_cardinalities": [
+    7,
+    8,
+    40,
+    12,
+    28,
+    30
+  ],
+  "interpretation": "Significant peaks at: 7 (planetary week/metals), 8 (known hub count), 12 (zodiacal year). Suggests numerical encoding of alchemical concepts."
+}

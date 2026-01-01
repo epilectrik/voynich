@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "phase": "15C",
+    "title": "Repetition Analysis",
+    "timestamp": "2025-12-31T15:36:00.708552"
+  },
+  "mean_repetitions": 13.92,
+  "median_repetitions": 7.0,
+  "std_dev": 23.37,
+  "min_max": [
+    2,
+    350
+  ],
+  "distribution_shape": "BIMODAL",
+  "total_repetition_events": 3969,
+  "repetition_by_role": {
+    "hub_nodes_mean": 23.13,
+    "spoke_nodes_mean": 9.2,
+    "hub_count": 1344,
+    "spoke_count": 2625
+  },
+  "repetition_by_entry_type": {
+    "a_text_mean": 9.33,
+    "b_text_mean": 19.71,
+    "a_count": 1664,
+    "b_count": 1835
+  },
+  "quantitative_interpretation": {
+    "130_meaningful": true,
+    "factorizations_checked": {
+      "130 = 2 x 5 x 13": true,
+      "130 ~ 128 = 2^7": true,
+      "130 ~ 4 x 32": true,
+      "130 ~ 3 x 43": true
+    },
+    "interpretation": "130 ~ 2^7 suggests binary depth encoding"
+  },
+  "termination_mechanism": {
+    "natural_decay_detected": "False",
+    "external_halt_likely": true,
+    "analysis": "No clear termination signal - may halt externally"
+  },
+  "most_repeated_nodes": [
+    {
+      "node": "k",
+      "mean_reps": 49.23,
+      "max_reps": 350
+    },
+    {
+      "node": "h",
+      "mean_reps": 28.51,
+      "max_reps": 125
+    },
+    {
+      "node": "e",
+      "mean_reps": 22.58,
+      "max_reps": 141
+    },
+    {
+      "node": "shedy",
+      "mean_reps": 20.74,
+      "max_reps": 108
+    },
+    {
+      "node": "chedy",
+      "mean_reps": 20.2,
+      "max_reps": 92
+    },
+    {
+      "node": "t",
+      "mean_reps": 17.76,
+      "max_reps": 131
+    },
+    {
+      "node": "ch",
+      "mean_reps": 14.58,
+      "max_reps": 88
+    },
+    {
+      "node": "daiin",
+      "mean_reps": 14.3,
+      "max_reps": 73
+    },
+    {
+      "node": "ol",
+      "mean_reps": 13.08,
+      "max_reps": 87
+    },
+    {
+      "node": "ed",
+      "mean_reps": 11.21,
+      "max_reps": 59
+    }
+  ],
+  "INTERPRETATION": "Mean repetition 13.92 (median 7.0). Distribution is BIMODAL. Hub nodes: mean 23.13 reps. External termination likely."
+}

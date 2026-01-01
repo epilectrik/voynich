@@ -1,0 +1,292 @@
+{
+  "metadata": {
+    "generated": "2025-12-30T23:30:32.321000",
+    "source": "annotation_data_manager",
+    "aggregation_thresholds": {
+      "clear": 0.6,
+      "weak": 0.5
+    }
+  },
+  "folios": {
+    "f25r": {
+      "flower_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f4v": {
+      "root_type": {
+        "mode": "BULBOUS",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "BULBOUS": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      },
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f22v": {
+      "root_type": {
+        "mode": "BRANCHING",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "BRANCHING": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "5+",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "5+": 1.0
+        }
+      }
+    },
+    "f9r": {
+      "plant_symmetry": {
+        "mode": "ASYMMETRIC",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "ASYMMETRIC": 1.0
+        }
+      }
+    },
+    "f2r": {
+      "leaf_shape": {
+        "mode": "NEEDLE",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "NEEDLE": 1.0
+        }
+      }
+    },
+    "f35v": {
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f29v": {
+      "flower_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f10v": {
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f36r": {
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f51v": {
+      "leaf_shape": {
+        "mode": "SERRATED",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "SERRATED": 0.75
+        }
+      },
+      "plant_symmetry": {
+        "mode": "BILATERAL",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "BILATERAL": 1.0
+        }
+      }
+    },
+    "f15r": {
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "plant_symmetry": {
+        "mode": "ASYMMETRIC",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "ASYMMETRIC": 0.75
+        }
+      }
+    },
+    "f17r": {
+      "leaf_shape": {
+        "mode": "LANCEOLATE",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "LANCEOLATE": 0.75
+        }
+      },
+      "flower_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      }
+    },
+    "f19r": {
+      "leaf_shape": {
+        "mode": "LANCEOLATE",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "LANCEOLATE": 1.0
+        }
+      },
+      "overall_complexity": {
+        "mode": "3-4",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "3-4": 1.0
+        }
+      }
+    },
+    "f56r": {
+      "root_present": {
+        "mode": "YES",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "YES": 1.0
+        }
+      },
+      "plant_symmetry": {
+        "mode": "ASYMMETRIC",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 1.0,
+        "all_responses": {
+          "ASYMMETRIC": 1.0
+        }
+      }
+    },
+    "f11v": {
+      "leaf_shape": {
+        "mode": "MIXED",
+        "agreement": 1.0,
+        "status": "CLEAR",
+        "n_responses": 1,
+        "total_weight": 0.75,
+        "all_responses": {
+          "MIXED": 0.75
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "phase": "17C",
+    "title": "Kernel Recovery Paths",
+    "timestamp": "2025-12-31T15:51:24.538617"
+  },
+  "simulation_parameters": {
+    "num_simulations": 5000,
+    "max_steps_per_walk": 50,
+    "starting_nodes": 17
+  },
+  "recovery_statistics": {
+    "k": {
+      "mean_steps_to_reach": 2.36,
+      "times_first_reached": 33,
+      "reach_rate": 0.1941,
+      "min_steps": 1,
+      "max_steps": 7
+    },
+    "h": {
+      "mean_steps_to_reach": 2.39,
+      "times_first_reached": 44,
+      "reach_rate": 0.2588,
+      "min_steps": 1,
+      "max_steps": 6
+    },
+    "e": {
+      "mean_steps_to_reach": 2.35,
+      "times_first_reached": 93,
+      "reach_rate": 0.5471,
+      "min_steps": 1,
+      "max_steps": 9
+    }
+  },
+  "first_reached_distribution": {
+    "e": 93,
+    "h": 44,
+    "k": 33
+  },
+  "total_successful_recoveries": 170,
+  "functional_roles": {
+    "k": "SECONDARY_ATTRACTOR",
+    "h": "SECONDARY_ATTRACTOR",
+    "e": "HOME_POSITION"
+  },
+  "chain_analysis": {
+    "common_intermediates": [
+      [
+        "r",
+        6
+      ],
+      [
+        "l",
+        5
+      ],
+      [
+        "t",
+        4
+      ],
+      [
+        "o",
+        2
+      ],
+      [
+        "f",
+        2
+      ],
+      [
+        "d",
+        1
+      ],
+      [
+        "s",
+        1
+      ],
+      [
+        "p",
+        1
+      ],
+      [
+        "q",
+        1
+      ]
+    ],
+    "example_chains": [
+      {
+        "start": "l",
+        "reached": "e",
+        "steps": 2,
+        "path": [
+          "l",
+          "l",
+          "e"
+        ]
+      },
+      {
+        "start": "j",
+        "reached": "e",
+        "steps": 1,
+        "path": [
+          "j",
+          "e"
+        ]
+      },
+      {
+        "start": "g",
+        "reached": "h",
+        "steps": 1,
+        "path": [
+          "g",
+          "h"
+        ]
+      },
+      {
+        "start": "a",
+        "reached": "h",
+        "steps": 3,
+        "path": [
+          "a",
+          "l",
+          "d",
+          "h"
+        ]
+      },
+      {
+        "start": "q",
+        "reached": "e",
+        "steps": 1,
+        "path": [
+          "q",
+          "e"
+        ]
+      }
+    ]
+  },
+  "physical_interpretation": {
+    "HOME_POSITION": "Primary operating point - system naturally returns here",
+    "PRIMARY_ATTRACTOR": "Most common convergence point",
+    "QUICK_STABILIZER": "Fastest path to stability - emergency recovery",
+    "SECONDARY_ATTRACTOR": "Alternative stable state",
+    "SPECIALIZED_STATE": "Reached only under specific conditions"
+  }
+}

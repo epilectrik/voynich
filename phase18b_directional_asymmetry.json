@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "phase": "18B",
+    "title": "Directional Asymmetry Analysis",
+    "timestamp": "2025-12-31T16:13:10.819366"
+  },
+  "bidirectional_forbidden": {
+    "count": 17,
+    "transitions": [
+      {
+        "source": "shey",
+        "target": "aiin",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "shey",
+        "target": "al",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "shey",
+        "target": "c",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "chol",
+        "target": "r",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "chedy",
+        "target": "ee",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "dy",
+        "target": "aiin",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "dy",
+        "target": "chey",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "l",
+        "target": "chol",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "or",
+        "target": "dal",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "chey",
+        "target": "chedy",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "chey",
+        "target": "shedy",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "ar",
+        "target": "dal",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "c",
+        "target": "ee",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "he",
+        "target": "t",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "he",
+        "target": "or",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "shedy",
+        "target": "aiin",
+        "pattern": "MUTUAL_EXCLUSION"
+      },
+      {
+        "source": "shedy",
+        "target": "o",
+        "pattern": "MUTUAL_EXCLUSION"
+      }
+    ],
+    "interpretation": "States that cannot be adjacent in either direction - incompatible operations"
+  },
+  "unidirectional_forward": {
+    "count": 0,
+    "transitions": [],
+    "interpretation": "One-way gates - can reach B from A via other paths but not directly"
+  },
+  "asymmetry_ratio": 0.0,
+  "pattern_classification": "MUTUAL_EXCLUSIONS_DOMINANT - Most failures are incompatible state pairs",
+  "physical_meaning": {
+    "MUTUAL_EXCLUSION": "These two states cannot follow each other - represents fundamentally incompatible operations",
+    "CAUSAL_HAZARD": "Cannot go from A to B directly, but B can lead back to A - represents dangerous shortcuts"
+  }
+}

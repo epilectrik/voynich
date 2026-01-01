@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "phase": "9C",
+    "title": "Outcome Encoding Test",
+    "timestamp": "2025-12-31T12:31:50.139945"
+  },
+  "tests": {
+    "C1_terminal_constraint": {
+      "terminal_slot_entropy": 7.6911,
+      "middle_slot_entropy": 7.832,
+      "terminal_to_middle_entropy_ratio": 0.982,
+      "terminal_vocabulary_size": 1339,
+      "middle_vocabulary_size": 1738,
+      "interpretation": "uniform_distribution",
+      "pharmacology_prediction": "ratio < 0.8 (terminals more constrained)",
+      "alchemy_prediction": "ratio > 0.9 (similar throughout)"
+    },
+    "C2_terminal_clustering": {
+      "unique_terminal_middles": 1339,
+      "total_terminal_positions": 24080,
+      "top_2_concentration": 0.1284,
+      "top_5_concentration": 0.2248,
+      "top_2_role_concentration": 0.1284,
+      "most_common_terminal_middles": [
+        [
+          "k",
+          1835
+        ],
+        [
+          "h",
+          1256
+        ],
+        [
+          "e",
+          1105
+        ],
+        [
+          "daiin",
+          639
+        ],
+        [
+          "ch",
+          579
+        ],
+        [
+          "t",
+          496
+        ],
+        [
+          "ol",
+          493
+        ],
+        [
+          "aiin",
+          358
+        ],
+        [
+          "ar",
+          314
+        ],
+        [
+          "chedy",
+          313
+        ]
+      ],
+      "interpretation": "distributed",
+      "pharmacology_prediction": ">60% in 1-2 role clusters",
+      "alchemy_prediction": "Distributed across 4+ clusters"
+    },
+    "C3_ending_emphasis": {
+      "b_entries_analyzed": 83,
+      "mean_initial_operator_density": 0.209,
+      "mean_terminal_operator_density": 0.208,
+      "terminal_operator_density_ratio": 0.9954,
+      "interpretation": "even_distribution",
+      "pharmacology_prediction": "Terminal density > Initial (building to outcome)",
+      "alchemy_prediction": "Even or Initial > Terminal (setup matters)"
+    }
+  },
+  "verdict": {
+    "pharmacology_compatible": false,
+    "alchemy_compatible": true,
+    "discriminators": [
+      "C1: Terminal/middle entropy ratio 0.982 > 0.98 rules out pharmacology",
+      "C2: Terminal role concentration 12.8% < 35% rules out pharmacology"
+    ],
+    "discriminator_strength": "STRONG"
+  }
+}

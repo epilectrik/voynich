@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "phase": "N3",
+    "title": "Section Enrichment Survival",
+    "timestamp": "2025-12-31T09:15:15.291408",
+    "dependencies": []
+  },
+  "findings": {
+    "theoretical_analysis": {
+      "naibbe_preserves_word_identity": true,
+      "section_enrichment_should_survive": true,
+      "reasoning": "Same plaintext word always maps to recognizable ciphertext patterns"
+    },
+    "observed_enrichment": {
+      "T": {
+        "total_tokens": 1941,
+        "enriched_count": 44,
+        "max_enrichment": 16.4,
+        "top_enriched": [
+          {
+            "word": "dalar",
+            "enrichment": 16.4
+          },
+          {
+            "word": "ykaly",
+            "enrichment": 15.38
+          },
+          {
+            "word": "chaly",
+            "enrichment": 14.76
+          },
+          {
+            "word": "chekchy",
+            "enrichment": 12.3
+          },
+          {
+            "word": "dalal",
+            "enrichment": 10.55
+          }
+        ]
+      },
+      "H": {
+        "total_tokens": 13960,
+        "enriched_count": 288,
+        "max_enrichment": 3.42,
+        "top_enriched": [
+          {
+            "word": "chotchey",
+            "enrichment": 3.42
+          },
+          {
+            "word": "cth",
+            "enrichment": 3.42
+          },
+          {
+            "word": "ykody",
+            "enrichment": 3.42
+          },
+          {
+            "word": "shan",
+            "enrichment": 3.42
+          },
+          {
+            "word": "kchokchy",
+            "enrichment": 3.42
+          }
+        ]
+      },
+      "C": {
+        "total_tokens": 3291,
+        "enriched_count": 94,
+        "max_enrichment": 14.51,
+        "top_enriched": [
+          {
+            "word": "opaiir",
+            "enrichment": 14.51
+          },
+          {
+            "word": "otodar",
+            "enrichment": 9.68
+          },
+          {
+            "word": "okeod",
+            "enrichment": 8.29
+          },
+          {
+            "word": "ytody",
+            "enrichment": 7.26
+          },
+          {
+            "word": "otedaiin",
+            "enrichment": 7.26
+          }
+        ]
+      },
+      "A": {
+        "total_tokens": 1263,
+        "enriched_count": 25,
+        "max_enrichment": 11.34,
+        "top_enriched": [
+          {
+            "word": "oteodaiin",
+            "enrichment": 11.34
+          },
+          {
+            "word": "ofar",
+            "enrichment": 11.34
+          },
+          {
+            "word": "oteeos",
+            "enrichment": 10.31
+          },
+          {
+            "word": "ykor",
+            "enrichment": 9.45
+          },
+          {
+            "word": "yteody",
+            "enrichment": 7.56
+          }
+        ]
+      },
+      "Z": {
+        "total_tokens": 1748,
+        "enriched_count": 57,
+        "max_enrichment": 27.32,
+        "top_enriched": [
+          {
+            "word": "oteas",
+            "enrichment": 27.32
+          },
+          {
+            "word": "oteotey",
+            "enrichment": 20.49
+          },
+          {
+            "word": "okoly",
+            "enrichment": 13.66
+          },
+          {
+            "word": "otalaiin",
+            "enrichment": 13.66
+          },
+          {
+            "word": "oteodal",
+            "enrichment": 13.66
+          }
+        ]
+      },
+      "B": {
+        "total_tokens": 8878,
+        "enriched_count": 188,
+        "max_enrichment": 5.38,
+        "top_enriched": [
+          {
+            "word": "qolchedy",
+            "enrichment": 5.38
+          },
+          {
+            "word": "saino",
+            "enrichment": 5.38
+          },
+          {
+            "word": "qolshey",
+            "enrichment": 5.38
+          },
+          {
+            "word": "qoly",
+            "enrichment": 5.38
+          },
+          {
+            "word": "shtol",
+            "enrichment": 5.38
+          }
+        ]
+      },
+      "P": {
+        "total_tokens": 3432,
+        "enriched_count": 120,
+        "max_enrichment": 13.92,
+        "top_enriched": [
+          {
+            "word": "olchor",
+            "enrichment": 13.92
+          },
+          {
+            "word": "qoeol",
+            "enrichment": 11.13
+          },
+          {
+            "word": "qockhol",
+            "enrichment": 10.82
+          },
+          {
+            "word": "qkol",
+            "enrichment": 10.44
+          },
+          {
+            "word": "da*",
+            "enrichment": 10.44
+          }
+        ]
+      },
+      "S": {
+        "total_tokens": 13249,
+        "enriched_count": 220,
+        "max_enrichment": 3.6,
+        "top_enriched": [
+          {
+            "word": "loty",
+            "enrichment": 3.6
+          },
+          {
+            "word": "lraiin",
+            "enrichment": 3.6
+          },
+          {
+            "word": "qotear",
+            "enrichment": 3.6
+          },
+          {
+            "word": "pal",
+            "enrichment": 3.6
+          },
+          {
+            "word": "okeeshy",
+            "enrichment": 3.6
+          }
+        ]
+      }
+    },
+    "compatibility": "COMPATIBLE",
+    "reasoning": "Section-conditioned vocabulary is a plaintext property that survives encryption"
+  },
+  "summary": {
+    "key_results": [
+      "Sections analyzed: 8",
+      "Theoretical: Section enrichment SHOULD survive Naibbe encryption",
+      "Verdict: This constraint is COMPATIBLE with Naibbe"
+    ],
+    "implications": [
+      "Section enrichment cannot rule out Naibbe hypothesis"
+    ]
+  }
+}

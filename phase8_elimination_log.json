@@ -1,0 +1,13 @@
+[
+  {
+    "domain_id": "D5",
+    "domain_name": "Logical/Inferential Rule System",
+    "score": 2.0,
+    "elimination_reason": "3 FAIL scores (threshold: <2)",
+    "failed_tests": [
+      "C - Operator Scope Alignment",
+      "D - Role Distribution Fit",
+      "F - Hub Category Fit"
+    ]
+  }
+]

@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "phase": "17A",
+    "title": "Kernel Position in 4-Cycle",
+    "timestamp": "2025-12-31T15:51:24.381933"
+  },
+  "total_4_cycles_sampled": 5687,
+  "total_primitive_sequences": 225,
+  "total_nodes": 20,
+  "kernel_position_analysis": {
+    "k": {
+      "position_distribution": {
+        "pos_0_HEAT": 0.2484,
+        "pos_1_VAPORIZE": 0.252,
+        "pos_2_CONDENSE": 0.2511,
+        "pos_3_RETURN": 0.2484
+      },
+      "position_counts": {
+        "0": 1756,
+        "1": 1781,
+        "3": 1756,
+        "2": 1775
+      },
+      "dominant_position": 1,
+      "dominant_stage": "VAPORIZE",
+      "total_appearances": 7068,
+      "example_cycles": [
+        {
+          "cycle": [
+            "k",
+            "o",
+            "x",
+            "r"
+          ],
+          "position": 0
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "x",
+            "t"
+          ],
+          "position": 0
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "x",
+            "c"
+          ],
+          "position": 0
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "y",
+            "y"
+          ],
+          "position": 0
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "y",
+            "h"
+          ],
+          "position": 0
+        }
+      ]
+    },
+    "h": {
+      "position_distribution": {
+        "pos_0_HEAT": 0.2481,
+        "pos_1_VAPORIZE": 0.2517,
+        "pos_2_CONDENSE": 0.2521,
+        "pos_3_RETURN": 0.2481
+      },
+      "position_counts": {
+        "3": 1949,
+        "2": 1980,
+        "1": 1977,
+        "0": 1949
+      },
+      "dominant_position": 2,
+      "dominant_stage": "CONDENSE",
+      "total_appearances": 7855,
+      "example_cycles": [
+        {
+          "cycle": [
+            "k",
+            "o",
+            "y",
+            "h"
+          ],
+          "position": 3
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "o",
+            "h"
+          ],
+          "position": 3
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "h",
+            "y"
+          ],
+          "position": 2
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "h",
+            "c"
+          ],
+          "position": 2
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "h",
+            "h"
+          ],
+          "position": 2
+        }
+      ]
+    },
+    "e": {
+      "position_distribution": {
+        "pos_0_HEAT": 0.2482,
+        "pos_1_VAPORIZE": 0.2523,
+        "pos_2_CONDENSE": 0.2513,
+        "pos_3_RETURN": 0.2482
+      },
+      "position_counts": {
+        "3": 1982,
+        "2": 2007,
+        "1": 2015,
+        "0": 1982
+      },
+      "dominant_position": 1,
+      "dominant_stage": "VAPORIZE",
+      "total_appearances": 7986,
+      "example_cycles": [
+        {
+          "cycle": [
+            "k",
+            "o",
+            "y",
+            "e"
+          ],
+          "position": 3
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "o",
+            "e"
+          ],
+          "position": 3
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "h",
+            "e"
+          ],
+          "position": 3
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "e",
+            "y"
+          ],
+          "position": 2
+        },
+        {
+          "cycle": [
+            "k",
+            "o",
+            "e",
+            "s"
+          ],
+          "position": 2
+        }
+      ]
+    }
+  },
+  "ROLE_HYPOTHESIS": {
+    "k": "PHASE_CHANGER - manages VAPORIZE stage",
+    "h": "PHASE_REVERSER - handles CONDENSE stage",
+    "e": "PHASE_CHANGER - manages VAPORIZE stage"
+  },
+  "stage_mapping": {
+    "0": "HEAT - energy input",
+    "1": "VAPORIZE - phase change up",
+    "2": "CONDENSE - phase change down",
+    "3": "RETURN - cycle completion"
+  }
+}

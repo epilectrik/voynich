@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "phase": "INT",
+    "title": "Integration Synthesis",
+    "timestamp": "2025-12-31T09:15:15.374009",
+    "dependencies": [
+      "A6",
+      "E5",
+      "N5"
+    ]
+  },
+  "findings": {
+    "test_a_summary": {
+      "classification": "DETERMINER",
+      "cipher_compatible": true
+    },
+    "test_e_summary": {
+      "differentiation_strength": "MODERATE"
+    },
+    "test_n_summary": {
+      "verdict": "PARTIALLY_COMPATIBLE"
+    },
+    "cross_test_implications": [
+      "Hub role vocabulary differentiation suggests organized plaintext structure"
+    ],
+    "translation_pathway": "Limited progress; may require external breakthroughs"
+  },
+  "summary": {
+    "key_results": [
+      "daiin: DETERMINER",
+      "Role differentiation: MODERATE",
+      "Naibbe compatibility: PARTIALLY_COMPATIBLE",
+      "Recommended pathway: Limited progress; may require external breakthroughs"
+    ],
+    "implications": [
+      "Hub role vocabulary differentiation suggests organized plaintext structure"
+    ]
+  }
+}

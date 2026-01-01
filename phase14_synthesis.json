@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "phase": "14_SYNTHESIS",
+    "title": "Functional Axis Reconstruction",
+    "timestamp": "2025-12-31T14:15:02.454334"
+  },
+  "FUNCTIONAL_RECONSTRUCTION": {
+    "objective_function": {
+      "name": "STABILITY",
+      "confidence": "MEDIUM",
+      "evidence": "correlation=-0.02, direction=MINIMIZE"
+    },
+    "system_architecture": {
+      "essential_states": 1,
+      "interface_states": 3,
+      "semantic_kernel": "STATE-C alone is sufficient - system is fundamentally monostate"
+    },
+    "control_logic": {
+      "convergence_mechanism": "System decreases stability level through iterative processing until STATE-C optimum reached",
+      "forbidden_transition_purpose": "A\u2194B is forbidden because these states represent incompatible processing modes; transformation must pass through STATE-C (processing hub) to convert between them",
+      "perturbation_resilience": "HIGH"
+    },
+    "functional_interpretation": "The Voynich state machine optimizes STABILITY by processing through 1 essential states along a 1D STABILITY_GRADIENT. STATE-C serves as PROCESSING_HUB. The forbidden A\u2194B transition enforces System decreases stability level through iterative processing. The system is designed for repeatable, convergent, error-tolerant transformation processing."
+  },
+  "STATE_ROLE_SUMMARY": {
+    "STATE-C": "PROCESSING_HUB",
+    "STATE-A": "INTERFACE_BUFFER",
+    "STATE-B": "INTERFACE_BUFFER",
+    "STATE-D": "INTERFACE_BUFFER"
+  },
+  "KEY_INSIGHTS": [
+    "Repetitions are NOT essential for convergence - system is resilient to compression",
+    "Extra repetitions have no effect - system tolerates redundancy",
+    "STATE-C is mandatory waypoint between forbidden states - central processing hub",
+    "Initiator state is conventional, not essential - system is robust to entry point"
+  ],
+  "AXIS_CHARACTERIZATION": {
+    "name": "STABILITY_GRADIENT",
+    "direction": "MINIMIZE stability level",
+    "interpretation": "The system performs oscillatory fixation along the STABILITY_GRADIENT"
+  },
+  "SUCCESS_METRICS": {
+    "objective_identified": "False",
+    "perturbation_tests_informative": true,
+    "collapse_tests_discriminate": true,
+    "functional_naming_complete": true
+  }
+}

@@ -1,0 +1,4051 @@
+{
+  "metadata": {
+    "phase": "C4.1",
+    "title": "B Reference Context Extraction",
+    "timestamp": "2025-12-30T22:11:43.454979"
+  },
+  "contexts": [
+    {
+      "b_folio": "f31r",
+      "a_heading": "tol",
+      "position_in_entry": 183,
+      "relative_position": 0.61,
+      "position_label": "MIDDLE",
+      "context": "shcthey okeol daiir sheeo shcthey okeol daiir sheeo shcthey okeol tol shso okedy okedy qokedy qokeedy dar shedshey tok shso okedy",
+      "context_before": "shcthey okeol daiir sheeo shcthey okeol daiir sheeo shcthey okeol",
+      "context_after": "shso okedy okedy qokedy qokeedy dar shedshey tok shso okedy"
+    },
+    {
+      "b_folio": "f31v",
+      "a_heading": "kor",
+      "position_in_entry": 254,
+      "relative_position": 0.833,
+      "position_label": "END",
+      "context": "dar seoar al kar oeeeos cheos aiin o ekeey okeo kor oteol ain dar choar al kar oeeeos cheos aiin ockhey",
+      "context_before": "dar seoar al kar oeeeos cheos aiin o ekeey okeo",
+      "context_after": "oteol ain dar choar al kar oeeeos cheos aiin ockhey"
+    },
+    {
+      "b_folio": "f31v",
+      "a_heading": "kor",
+      "position_in_entry": 266,
+      "relative_position": 0.872,
+      "position_label": "END",
+      "context": "ain dar choar al kar oeeeos cheos aiin ockhey okeo kor okeol ain dar choar al kar oeeeos cheos aiin octhey",
+      "context_before": "ain dar choar al kar oeeeos cheos aiin ockhey okeo",
+      "context_after": "okeol ain dar choar al kar oeeeos cheos aiin octhey"
+    },
+    {
+      "b_folio": "f31v",
+      "a_heading": "kor",
+      "position_in_entry": 278,
+      "relative_position": 0.911,
+      "position_label": "END",
+      "context": "ain dar choar al kar oeeeos cheos aiin octhey okeo kor oteol ain saiin ar ckheos chedy okeey qoear oraiin cheom",
+      "context_before": "ain dar choar al kar oeeeos cheos aiin octhey okeo",
+      "context_after": "oteol ain saiin ar ckheos chedy okeey qoear oraiin cheom"
+    },
+    {
+      "b_folio": "f33r",
+      "a_heading": "kor",
+      "position_in_entry": 134,
+      "relative_position": 0.62,
+      "position_label": "MIDDLE",
+      "context": "cheedy chkeey far aiin s pair or aiin otaiin ol kor aiin okal otal chdal shekal qakar otam pair or aiin",
+      "context_before": "cheedy chkeey far aiin s pair or aiin otaiin ol",
+      "context_after": "aiin okal otal chdal shekal qakar otam pair or aiin"
+    },
+    {
+      "b_folio": "f34r",
+      "a_heading": "tol",
+      "position_in_entry": 302,
+      "relative_position": 0.702,
+      "position_label": "END",
+      "context": "kaldaiin cheky cthdaly otchedy chty saiin char aiin okor ar tol qokar chckhy chdal ked qokar ar daiin dam char aiin",
+      "context_before": "kaldaiin cheky cthdaly otchedy chty saiin char aiin okor ar",
+      "context_after": "qokar chckhy chdal ked qokar ar daiin dam char aiin"
+    },
+    {
+      "b_folio": "f34r",
+      "a_heading": "tol",
+      "position_in_entry": 315,
+      "relative_position": 0.733,
+      "position_label": "END",
+      "context": "chdal ked qokar ar daiin dam char aiin okor ar tol qokar chckhy chdal ked qokar ar daiin dam char aiin",
+      "context_before": "chdal ked qokar ar daiin dam char aiin okor ar",
+      "context_after": "qokar chckhy chdal ked qokar ar daiin dam char aiin"
+    },
+    {
+      "b_folio": "f34r",
+      "a_heading": "tol",
+      "position_in_entry": 327,
+      "relative_position": 0.76,
+      "position_label": "END",
+      "context": "chckhy chdal ked qokar ar daiin dam char aiin okorar tol qokar chckhy chdal ked qokar ar daiin dam ykeo lor",
+      "context_before": "chckhy chdal ked qokar ar daiin dam char aiin okorar",
+      "context_after": "qokar chckhy chdal ked qokar ar daiin dam ykeo lor"
+    },
+    {
+      "b_folio": "f34v",
+      "a_heading": "tol",
+      "position_in_entry": 41,
+      "relative_position": 0.093,
+      "position_label": "BEGINNING",
+      "context": "kschdy chdy chcfchy shdy qopchdy shdydy chdalchdy ypchdy chcthdy spaiin tol qokchy dychedy okchy chckhdy chdaiin ckhy loees ykar aiin oldam",
+      "context_before": "kschdy chdy chcfchy shdy qopchdy shdydy chdalchdy ypchdy chcthdy spaiin",
+      "context_after": "qokchy dychedy okchy chckhdy chdaiin ckhy loees ykar aiin oldam"
+    },
+    {
+      "b_folio": "f34v",
+      "a_heading": "tol",
+      "position_in_entry": 52,
+      "relative_position": 0.118,
+      "position_label": "BEGINNING",
+      "context": "qokchy dychedy okchy chckhdy chdaiin ckhy loees ykar aiin oldam tol qokchy dychedy okchy chckhdy chdaiin ckhy loees ykar aiin oldam",
+      "context_before": "qokchy dychedy okchy chckhdy chdaiin ckhy loees ykar aiin oldam",
+      "context_after": "qokchy dychedy okchy chckhdy chdaiin ckhy loees ykar aiin oldam"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 50,
+      "relative_position": 0.089,
+      "position_label": "BEGINNING",
+      "context": "air sheykaiiin ofchy kar or aiin dolky oshdy sor shy kor chol qoty kchdy olky dor chdy ykar olkedaiin ody dy",
+      "context_before": "air sheykaiiin ofchy kar or aiin dolky oshdy sor shy",
+      "context_after": "chol qoty kchdy olky dor chdy ykar olkedaiin ody dy"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 198,
+      "relative_position": 0.352,
+      "position_label": "MIDDLE",
+      "context": "ytedykor or sheky kain otar or aiin okaiin ckhol ol kor otor opchy ytedy kor or sheky kain otar or aiin",
+      "context_before": "ytedykor or sheky kain otar or aiin okaiin ckhol ol",
+      "context_after": "otor opchy ytedy kor or sheky kain otar or aiin"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 202,
+      "relative_position": 0.359,
+      "position_label": "MIDDLE",
+      "context": "otar or aiin okaiin ckhol ol kor otor opchy ytedy kor or sheky kain otar or aiin okaiin ckhol olkor otor",
+      "context_before": "otar or aiin okaiin ckhol ol kor otor opchy ytedy",
+      "context_after": "or sheky kain otar or aiin okaiin ckhol olkor otor"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 215,
+      "relative_position": 0.383,
+      "position_label": "MIDDLE",
+      "context": "kain otar or aiin okaiin ckhol olkor otor ofchy ytedy kor or sheky kain otar or aiin okaiin ckhol ol kor",
+      "context_before": "kain otar or aiin okaiin ckhol olkor otor ofchy ytedy",
+      "context_after": "or sheky kain otar or aiin okaiin ckhol ol kor"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 225,
+      "relative_position": 0.4,
+      "position_label": "MIDDLE",
+      "context": "kor or sheky kain otar or aiin okaiin ckhol ol kor otor opchy ytedy kor or sheky kain otar or aiin",
+      "context_before": "kor or sheky kain otar or aiin okaiin ckhol ol",
+      "context_after": "otor opchy ytedy kor or sheky kain otar or aiin"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 229,
+      "relative_position": 0.407,
+      "position_label": "MIDDLE",
+      "context": "otar or aiin okaiin ckhol ol kor otor opchy ytedy kor or sheky kain otar or aiin okaiin ckhol ol kor",
+      "context_before": "otar or aiin okaiin ckhol ol kor otor opchy ytedy",
+      "context_after": "or sheky kain otar or aiin okaiin ckhol ol kor"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "kor",
+      "position_in_entry": 239,
+      "relative_position": 0.425,
+      "position_label": "MIDDLE",
+      "context": "kor or sheky kain otar or aiin okaiin ckhol ol kor otor opchy lkedy okchey shorqoy kam cho ckhcfhhy or aly",
+      "context_before": "kor or sheky kain otar or aiin okaiin ckhol ol",
+      "context_after": "otor opchy lkedy okchey shorqoy kam cho ckhcfhhy or aly"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "paiin",
+      "position_in_entry": 486,
+      "relative_position": 0.865,
+      "position_label": "END",
+      "context": "dy sarol chedy shekam qokar chl ykeedy chckhy dalor dy paiin alaiin otal chd okar am okar cheodal ockhy paiin alaiin",
+      "context_before": "dy sarol chedy shekam qokar chl ykeedy chckhy dalor dy",
+      "context_after": "alaiin otal chd okar am okar cheodal ockhy paiin alaiin"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "paiin",
+      "position_in_entry": 495,
+      "relative_position": 0.881,
+      "position_label": "END",
+      "context": "dy paiin alaiin otal chd okar am okar cheodal ockhy paiin alaiin otal chd okar am okar cheodal ockhy paiin alaiin",
+      "context_before": "dy paiin alaiin otal chd okar am okar cheodal ockhy",
+      "context_after": "alaiin otal chd okar am okar cheodal ockhy paiin alaiin"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "paiin",
+      "position_in_entry": 504,
+      "relative_position": 0.897,
+      "position_label": "END",
+      "context": "ockhy paiin alaiin otal chd okar am okar cheodal ockhy paiin alaiin otafchm okaram okar cheodal ockhy paiin olaiin otal chd",
+      "context_before": "ockhy paiin alaiin otal chd okar am okar cheodal ockhy",
+      "context_after": "alaiin otafchm okaram okar cheodal ockhy paiin olaiin otal chd"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "paiin",
+      "position_in_entry": 511,
+      "relative_position": 0.909,
+      "position_label": "END",
+      "context": "okar cheodal ockhy paiin alaiin otafchm okaram okar cheodal ockhy paiin olaiin otal chd okaram okar cheodal ockhy dain ockhedy otedy",
+      "context_before": "okar cheodal ockhy paiin alaiin otafchm okaram okar cheodal ockhy",
+      "context_after": "olaiin otal chd okaram okar cheodal ockhy dain ockhedy otedy"
+    },
+    {
+      "b_folio": "f39v",
+      "a_heading": "par",
+      "position_in_entry": 287,
+      "relative_position": 0.511,
+      "position_label": "MIDDLE",
+      "context": "aly shody pardy shedy qokar sheedy oraly olaiir okar ar par dy shedy qokar sheedy oraly olaiir okar ar pardy shedy",
+      "context_before": "aly shody pardy shedy qokar sheedy oraly olaiir okar ar",
+      "context_after": "dy shedy qokar sheedy oraly olaiir okar ar pardy shedy"
+    },
+    {
+      "b_folio": "f40r",
+      "a_heading": "tor",
+      "position_in_entry": 154,
+      "relative_position": 0.526,
+      "position_label": "MIDDLE",
+      "context": "qokar okar okol ol chedy qokchd ar ar or dam tor or ar shokor om olshedy qokam chdy kar oraiin tor",
+      "context_before": "qokar okar okol ol chedy qokchd ar ar or dam",
+      "context_after": "or ar shokor om olshedy qokam chdy kar oraiin tor"
+    },
+    {
+      "b_folio": "f40r",
+      "a_heading": "tor",
+      "position_in_entry": 164,
+      "relative_position": 0.56,
+      "position_label": "MIDDLE",
+      "context": "tor or ar shokor om olshedy qokam chdy kar oraiin tor or ar shok or am olshdy qokam chdy kar oraiin",
+      "context_before": "tor or ar shokor om olshedy qokam chdy kar oraiin",
+      "context_after": "or ar shok or am olshdy qokam chdy kar oraiin"
+    },
+    {
+      "b_folio": "f40r",
+      "a_heading": "tor",
+      "position_in_entry": 175,
+      "relative_position": 0.597,
+      "position_label": "MIDDLE",
+      "context": "or ar shok or am olshdy qokam chdy kar oraiin tor or ar shokoram olshedy qokaim chdy kar oraiin yaiin chekaiin",
+      "context_before": "or ar shok or am olshdy qokam chdy kar oraiin",
+      "context_after": "or ar shokoram olshedy qokaim chdy kar oraiin yaiin chekaiin"
+    },
+    {
+      "b_folio": "f40v",
+      "a_heading": "kor",
+      "position_in_entry": 93,
+      "relative_position": 0.308,
+      "position_label": "BEGINNING",
+      "context": "chodaiin chkal ykedy okal chodaiin chkalykedy okal tchy pchody pchdy kor ol tchy pchody pchdy kor ol tchy pchody pchdy kor",
+      "context_before": "chodaiin chkal ykedy okal chodaiin chkalykedy okal tchy pchody pchdy",
+      "context_after": "ol tchy pchody pchdy kor ol tchy pchody pchdy kor"
+    },
+    {
+      "b_folio": "f40v",
+      "a_heading": "kor",
+      "position_in_entry": 98,
+      "relative_position": 0.325,
+      "position_label": "BEGINNING",
+      "context": "chkalykedy okal tchy pchody pchdy kor ol tchy pchody pchdy kor ol tchy pchody pchdy kor ol tchkaiin tchedy qokaiin oraiin",
+      "context_before": "chkalykedy okal tchy pchody pchdy kor ol tchy pchody pchdy",
+      "context_after": "ol tchy pchody pchdy kor ol tchkaiin tchedy qokaiin oraiin"
+    },
+    {
+      "b_folio": "f40v",
+      "a_heading": "kor",
+      "position_in_entry": 103,
+      "relative_position": 0.341,
+      "position_label": "MIDDLE",
+      "context": "kor ol tchy pchody pchdy kor ol tchy pchody pchdy kor ol tchkaiin tchedy qokaiin oraiin tchkaiin tchedy qokaiin oraiin tchkaiin",
+      "context_before": "kor ol tchy pchody pchdy kor ol tchy pchody pchdy",
+      "context_after": "ol tchkaiin tchedy qokaiin oraiin tchkaiin tchedy qokaiin oraiin tchkaiin"
+    },
+    {
+      "b_folio": "f41r",
+      "a_heading": "par",
+      "position_in_entry": 232,
+      "relative_position": 0.617,
+      "position_label": "MIDDLE",
+      "context": "shedy parchdy kchey yteedy qokeody ykedy chkedy qokedy chedy qokedy par chdy kchey yteedy qokeody okedy chkedy qokedy chedy qokedy porchdy",
+      "context_before": "shedy parchdy kchey yteedy qokeody ykedy chkedy qokedy chedy qokedy",
+      "context_after": "chdy kchey yteedy qokeody okedy chkedy qokedy chedy qokedy porchdy"
+    },
+    {
+      "b_folio": "f43v",
+      "a_heading": "tol",
+      "position_in_entry": 239,
+      "relative_position": 0.34,
+      "position_label": "MIDDLE",
+      "context": "chtey tolkchdy okedy qokedol shedy okedal shedy pchdol otey dalorain tol keedy okedy qokedal shedy okedal shedy pchdol otey cfhalorain tolkchdy",
+      "context_before": "chtey tolkchdy okedy qokedol shedy okedal shedy pchdol otey dalorain",
+      "context_after": "keedy okedy qokedal shedy okedal shedy pchdol otey cfhalorain tolkchdy"
+    },
+    {
+      "b_folio": "f46v",
+      "a_heading": "tor",
+      "position_in_entry": 299,
+      "relative_position": 0.586,
+      "position_label": "MIDDLE",
+      "context": "chedy olaiin qotedy sheedy qokaldy qokedy dair chody cthhy m tor aiir char shedy olaiin qotedy sheedy qokaldy qokedy dair chody",
+      "context_before": "chedy olaiin qotedy sheedy qokaldy qokedy dair chody cthhy m",
+      "context_after": "aiir char shedy olaiin qotedy sheedy qokaldy qokedy dair chody"
+    },
+    {
+      "b_folio": "f48r",
+      "a_heading": "tol",
+      "position_in_entry": 138,
+      "relative_position": 0.416,
+      "position_label": "MIDDLE",
+      "context": "otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy ctheety r tol keol dain otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy",
+      "context_before": "otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy ctheety r",
+      "context_after": "keol dain otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy"
+    },
+    {
+      "b_folio": "f48r",
+      "a_heading": "tol",
+      "position_in_entry": 151,
+      "relative_position": 0.455,
+      "position_label": "MIDDLE",
+      "context": "otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy ctheety r tol keol daiin otaiin yteedy chet ytedy tedy qokdy tshdy chetedy",
+      "context_before": "otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy ctheety r",
+      "context_after": "keol daiin otaiin yteedy chet ytedy tedy qokdy tshdy chetedy"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tor",
+      "position_in_entry": 338,
+      "relative_position": 0.704,
+      "position_label": "END",
+      "context": "chkey okedy chckhedy ykedy oldy otoly chey taly takar otam tor shody okal otchedy cheky oly loldy lol otchdy otoldy ytam",
+      "context_before": "chkey okedy chckhedy ykedy oldy otoly chey taly takar otam",
+      "context_after": "shody okal otchedy cheky oly loldy lol otchdy otoldy ytam"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tor",
+      "position_in_entry": 350,
+      "relative_position": 0.729,
+      "position_label": "END",
+      "context": "okal otchedy cheky oly loldy lol otchdy otoldy ytam otedy tor shody okal otchedy cheky oly loldy lol otchdy otoldy ytam",
+      "context_before": "okal otchedy cheky oly loldy lol otchdy otoldy ytam otedy",
+      "context_after": "shody okal otchedy cheky oly loldy lol otchdy otoldy ytam"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tor",
+      "position_in_entry": 362,
+      "relative_position": 0.754,
+      "position_label": "END",
+      "context": "okal otchedy cheky oly loldy lol otchdy otoldy ytam otedy tor shody okal otchedy cheky oly loldy lol otchdy otoldy ytam",
+      "context_before": "okal otchedy cheky oly loldy lol otchdy otoldy ytam otedy",
+      "context_after": "shody okal otchedy cheky oly loldy lol otchdy otoldy ytam"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tor",
+      "position_in_entry": 374,
+      "relative_position": 0.779,
+      "position_label": "END",
+      "context": "okal otchedy cheky oly loldy lol otchdy otoldy ytam otedy tor shody okal otchedy chaky ody loldy lol otchdy otoldy ytam",
+      "context_before": "okal otchedy cheky oly loldy lol otchdy otoldy ytam otedy",
+      "context_after": "shody okal otchedy chaky ody loldy lol otchdy otoldy ytam"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "kor",
+      "position_in_entry": 82,
+      "relative_position": 0.171,
+      "position_label": "BEGINNING",
+      "context": "otchody ykchdy otary otedy cthdy okain chety cho olkeey alchey kor y keody olkchey chody chedy daly okeeor aiin otar air",
+      "context_before": "otchody ykchdy otary otedy cthdy okain chety cho olkeey alchey",
+      "context_after": "y keody olkchey chody chedy daly okeeor aiin otar air"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "kor",
+      "position_in_entry": 95,
+      "relative_position": 0.198,
+      "position_label": "BEGINNING",
+      "context": "olkchey chody chedy daly okeeor aiin otar air am alchey kor ykeody olkeeey chody chedy daly okeeor aiin otar air am",
+      "context_before": "olkchey chody chedy daly okeeor aiin otar air am alchey",
+      "context_after": "ykeody olkeeey chody chedy daly okeeor aiin otar air am"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tol",
+      "position_in_entry": 386,
+      "relative_position": 0.804,
+      "position_label": "END",
+      "context": "okal otchedy chaky ody loldy lol otchdy otoldy ytam otady tol chedy ytedy ykeol chdy chdor chtol chdy ytchedal cthey okar",
+      "context_before": "okal otchedy chaky ody loldy lol otchdy otoldy ytam otady",
+      "context_after": "chedy ytedy ykeol chdy chdor chtol chdy ytchedal cthey okar"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tol",
+      "position_in_entry": 411,
+      "relative_position": 0.856,
+      "position_label": "END",
+      "context": "ytedy ykeol chdychdor chtol chdy ytchedal cthey okar ar ary tol chedy ytedy ykeol chdy chdor chtol chdy ytchedal cthey okar",
+      "context_before": "ytedy ykeol chdychdor chtol chdy ytchedal cthey okar ar ary",
+      "context_after": "chedy ytedy ykeol chdy chdor chtol chdy ytchedal cthey okar"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tol",
+      "position_in_entry": 424,
+      "relative_position": 0.883,
+      "position_label": "END",
+      "context": "ykeol chdy chdor chtol chdy ytchedal cthey okar ar ary tol chedy ytedy ykeal chdy chdor chtol chdy ytchedal cthey okar",
+      "context_before": "ykeol chdy chdor chtol chdy ytchedal cthey okar ar ary",
+      "context_after": "chedy ytedy ykeal chdy chdor chtol chdy ytchedal cthey okar"
+    },
+    {
+      "b_folio": "f48v",
+      "a_heading": "tol",
+      "position_in_entry": 437,
+      "relative_position": 0.91,
+      "position_label": "END",
+      "context": "ykeal chdy chdor chtol chdy ytchedal cthey okar ar ary tol chedy ytedy ykeol chdy chdor chtol chdy ytchedal cthey okar",
+      "context_before": "ykeal chdy chdor chtol chdy ytchedal cthey okar ar ary",
+      "context_after": "chedy ytedy ykeol chdy chdor chtol chdy ytchedal cthey okar"
+    },
+    {
+      "b_folio": "f50r",
+      "a_heading": "tshol",
+      "position_in_entry": 78,
+      "relative_position": 0.183,
+      "position_label": "BEGINNING",
+      "context": "ockhody shos alol dy kar oky daiiin okar ar okar tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol",
+      "context_before": "ockhody shos alol dy kar oky daiiin okar ar okar",
+      "context_after": "kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol"
+    },
+    {
+      "b_folio": "f50r",
+      "a_heading": "tshol",
+      "position_in_entry": 88,
+      "relative_position": 0.206,
+      "position_label": "BEGINNING",
+      "context": "tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol",
+      "context_before": "tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam",
+      "context_after": "kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol"
+    },
+    {
+      "b_folio": "f50r",
+      "a_heading": "tshol",
+      "position_in_entry": 98,
+      "relative_position": 0.23,
+      "position_label": "BEGINNING",
+      "context": "tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol",
+      "context_before": "tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam",
+      "context_after": "kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol"
+    },
+    {
+      "b_folio": "f50r",
+      "a_heading": "tshol",
+      "position_in_entry": 108,
+      "relative_position": 0.253,
+      "position_label": "BEGINNING",
+      "context": "tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tshol kar shedy okeody qokedy chody kchdy pchdy chkaiin odam tshol",
+      "context_before": "tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam",
+      "context_after": "kar shedy okeody qokedy chody kchdy pchdy chkaiin odam tshol"
+    },
+    {
+      "b_folio": "f50r",
+      "a_heading": "tshol",
+      "position_in_entry": 118,
+      "relative_position": 0.276,
+      "position_label": "BEGINNING",
+      "context": "tshol kar shedy okeody qokedy chody kchdy pchdy chkaiin odam tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tchdy",
+      "context_before": "tshol kar shedy okeody qokedy chody kchdy pchdy chkaiin odam",
+      "context_after": "kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam tchdy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "tcho",
+      "position_in_entry": 150,
+      "relative_position": 0.41,
+      "position_label": "MIDDLE",
+      "context": "okaror olkam yoraiin okal chol kchoy pchtchdy oekaiin okaror olkam tcho daiin sho kedy kedy okol chdy tchodaiin sho kedy kedy",
+      "context_before": "okaror olkam yoraiin okal chol kchoy pchtchdy oekaiin okaror olkam",
+      "context_after": "daiin sho kedy kedy okol chdy tchodaiin sho kedy kedy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "tcho",
+      "position_in_entry": 163,
+      "relative_position": 0.445,
+      "position_label": "MIDDLE",
+      "context": "kedy kedy okol chdy tchodaiin sho kedy kedy okol chdy tcho daiin sho keey kedy okol chdy tchedor cheolkedy chody kshdy",
+      "context_before": "kedy kedy okol chdy tchodaiin sho kedy kedy okol chdy",
+      "context_after": "daiin sho keey kedy okol chdy tchedor cheolkedy chody kshdy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "sho",
+      "position_in_entry": 152,
+      "relative_position": 0.415,
+      "position_label": "MIDDLE",
+      "context": "yoraiin okal chol kchoy pchtchdy oekaiin okaror olkam tcho daiin sho kedy kedy okol chdy tchodaiin sho kedy kedy okol chdy",
+      "context_before": "yoraiin okal chol kchoy pchtchdy oekaiin okaror olkam tcho daiin",
+      "context_after": "kedy kedy okol chdy tchodaiin sho kedy kedy okol chdy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "sho",
+      "position_in_entry": 158,
+      "relative_position": 0.432,
+      "position_label": "MIDDLE",
+      "context": "okaror olkam tcho daiin sho kedy kedy okol chdy tchodaiin sho kedy kedy okol chdy tcho daiin sho keey kedy okol",
+      "context_before": "okaror olkam tcho daiin sho kedy kedy okol chdy tchodaiin",
+      "context_after": "kedy kedy okol chdy tcho daiin sho keey kedy okol"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "sho",
+      "position_in_entry": 165,
+      "relative_position": 0.451,
+      "position_label": "MIDDLE",
+      "context": "okol chdy tchodaiin sho kedy kedy okol chdy tcho daiin sho keey kedy okol chdy tchedor cheolkedy chody kshdy qotchdy qokchdy",
+      "context_before": "okol chdy tchodaiin sho kedy kedy okol chdy tcho daiin",
+      "context_after": "keey kedy okol chdy tchedor cheolkedy chody kshdy qotchdy qokchdy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "podaiin",
+      "position_in_entry": 0,
+      "relative_position": 0.0,
+      "position_label": "BEGINNING",
+      "context": "podaiin shekchy qofair okar yk chcpaiin qokchdy or arod podaiin shekchy",
+      "context_before": "",
+      "context_after": "shekchy qofair okar yk chcpaiin qokchdy or arod podaiin shekchy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "podaiin",
+      "position_in_entry": 9,
+      "relative_position": 0.025,
+      "position_label": "BEGINNING",
+      "context": "podaiin shekchy qofair okar yk chcpaiin qokchdy or arod podaiin shekchy qofair okar yk chepaiin qokchdy or arod podaiin shekchy",
+      "context_before": "podaiin shekchy qofair okar yk chcpaiin qokchdy or arod",
+      "context_after": "shekchy qofair okar yk chepaiin qokchdy or arod podaiin shekchy"
+    },
+    {
+      "b_folio": "f55r",
+      "a_heading": "podaiin",
+      "position_in_entry": 18,
+      "relative_position": 0.049,
+      "position_label": "BEGINNING",
+      "context": "arod podaiin shekchy qofair okar yk chepaiin qokchdy or arod podaiin shekchy qofair okar yk chepaiin qokchdy or arod okair or",
+      "context_before": "arod podaiin shekchy qofair okar yk chepaiin qokchdy or arod",
+      "context_after": "shekchy qofair okar yk chepaiin qokchdy or arod okair or"
+    },
+    {
+      "b_folio": "f55v",
+      "a_heading": "tor",
+      "position_in_entry": 162,
+      "relative_position": 0.529,
+      "position_label": "MIDDLE",
+      "context": "okchd daiin sheakey or air ** kchey pchal araldy dary tor ch*dy qokaiin okar qol otarcho cthar talody okary tarch chedy",
+      "context_before": "okchd daiin sheakey or air ** kchey pchal araldy dary",
+      "context_after": "ch*dy qokaiin okar qol otarcho cthar talody okary tarch chedy"
+    },
+    {
+      "b_folio": "f66r",
+      "a_heading": "r*",
+      "position_in_entry": 147,
+      "relative_position": 0.135,
+      "position_label": "BEGINNING",
+      "context": "r r f t f f c c e c r* * * r* x x x x t t t",
+      "context_before": "r r f t f f c c e c",
+      "context_after": "* * r* x x x x t t t"
+    },
+    {
+      "b_folio": "f66r",
+      "a_heading": "r*",
+      "position_in_entry": 150,
+      "relative_position": 0.138,
+      "position_label": "BEGINNING",
+      "context": "t f f c c e c r* * * r* x x x x t t t t o o",
+      "context_before": "t f f c c e c r* * *",
+      "context_after": "x x x x t t t t o o"
+    },
+    {
+      "b_folio": "f75r",
+      "a_heading": "sho",
+      "position_in_entry": 576,
+      "relative_position": 0.349,
+      "position_label": "MIDDLE",
+      "context": "shokaiin chy otshedy qokain chedy dshedy qokar sheedy l ch sho kain chy okshedy qokain chedy pchedar shepchy lshedary dal shal",
+      "context_before": "shokaiin chy otshedy qokain chedy dshedy qokar sheedy l ch",
+      "context_after": "kain chy okshedy qokain chedy pchedar shepchy lshedary dal shal"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 677,
+      "relative_position": 0.374,
+      "position_label": "MIDDLE",
+      "context": "rkal ykedy ykedy ykedy olkchy olkchy olkchy otoly otoly otoly tol sheor qokal dar olked orol kchey otain olchey okar sheky",
+      "context_before": "rkal ykedy ykedy ykedy olkchy olkchy olkchy otoly otoly otoly",
+      "context_after": "sheor qokal dar olked orol kchey otain olchey okar sheky"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 702,
+      "relative_position": 0.388,
+      "position_label": "MIDDLE",
+      "context": "dar olked orol kchey otain olchey okar cheky dedy kedy tol sheor qokal dar olked orol kchey otaiin olchey okar sheky",
+      "context_before": "dar olked orol kchey otain olchey okar cheky dedy kedy",
+      "context_after": "sheor qokal dar olked orol kchey otaiin olchey okar sheky"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 727,
+      "relative_position": 0.402,
+      "position_label": "MIDDLE",
+      "context": "dar olked orol kchey otaiin olchey okar sheky dedy kedy tol sheor qokal dar olked orol kchey otain olchey okar sheky",
+      "context_before": "dar olked orol kchey otaiin olchey okar sheky dedy kedy",
+      "context_after": "sheor qokal dar olked orol kchey otain olchey okar sheky"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 1163,
+      "relative_position": 0.643,
+      "position_label": "MIDDLE",
+      "context": "qoky dy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol",
+      "context_before": "qoky dy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal",
+      "context_after": "olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 1173,
+      "relative_position": 0.648,
+      "position_label": "MIDDLE",
+      "context": "tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol olchedy ychey qotain shckhy qokedy qokedy lsheckhy qokaiin dal tol",
+      "context_before": "tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal",
+      "context_after": "olchedy ychey qotain shckhy qokedy qokedy lsheckhy qokaiin dal tol"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 1183,
+      "relative_position": 0.654,
+      "position_label": "MIDDLE",
+      "context": "tol olchedy ychey qotain shckhy qokedy qokedy lsheckhy qokaiin dal tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol",
+      "context_before": "tol olchedy ychey qotain shckhy qokedy qokedy lsheckhy qokaiin dal",
+      "context_after": "olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 1193,
+      "relative_position": 0.659,
+      "position_label": "MIDDLE",
+      "context": "tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol",
+      "context_before": "tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal",
+      "context_after": "olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 1203,
+      "relative_position": 0.665,
+      "position_label": "MIDDLE",
+      "context": "tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal tol olchedy qokain olshey qokain dar ol shedy qokedy qokeedy qokar",
+      "context_before": "tol olchedy ychey qotain sheckhy qokedy qokedy lsheckhy qokain dal",
+      "context_after": "olchedy qokain olshey qokain dar ol shedy qokedy qokeedy qokar"
+    },
+    {
+      "b_folio": "f75v",
+      "a_heading": "tol",
+      "position_in_entry": 1395,
+      "relative_position": 0.771,
+      "position_label": "END",
+      "context": "qoky lpchdy qotchdy lol kolkedy qokedy qoky lpchdy qotchdy lol tol kedy qokedy qoky lpchdy qotchdy lol kol kedy qokedy qoky",
+      "context_before": "qoky lpchdy qotchdy lol kolkedy qokedy qoky lpchdy qotchdy lol",
+      "context_after": "kedy qokedy qoky lpchdy qotchdy lol kol kedy qokedy qoky"
+    },
+    {
+      "b_folio": "f76v",
+      "a_heading": "tol",
+      "position_in_entry": 1330,
+      "relative_position": 0.827,
+      "position_label": "END",
+      "context": "cphey otcheey oty s aiin otary ychees alchedy qokeedy lshedy tol chedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy tolchedy",
+      "context_before": "cphey otcheey oty s aiin otary ychees alchedy qokeedy lshedy",
+      "context_after": "chedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy tolchedy"
+    },
+    {
+      "b_folio": "f76v",
+      "a_heading": "tol",
+      "position_in_entry": 1349,
+      "relative_position": 0.839,
+      "position_label": "END",
+      "context": "lshedy tolchedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy tol chedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy tol",
+      "context_before": "lshedy tolchedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy",
+      "context_after": "chedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy tol"
+    },
+    {
+      "b_folio": "f76v",
+      "a_heading": "tol",
+      "position_in_entry": 1359,
+      "relative_position": 0.845,
+      "position_label": "END",
+      "context": "tol chedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy tol chedy lchedy qoky saiin olor daiin cheol teey lshety okeey",
+      "context_before": "tol chedy lchedy qoky saiin olor ychees alchedy qokeedy lshedy",
+      "context_after": "chedy lchedy qoky saiin olor daiin cheol teey lshety okeey"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "tol",
+      "position_in_entry": 61,
+      "relative_position": 0.047,
+      "position_label": "BEGINNING",
+      "context": "dar air ol qokol chey qopchedy qopchedy dylches olkedy loly tol chd ar shey qotaiin qotedy qokol chdy qokain chetey sal",
+      "context_before": "dar air ol qokol chey qopchedy qopchedy dylches olkedy loly",
+      "context_after": "chd ar shey qotaiin qotedy qokol chdy qokain chetey sal"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "tol",
+      "position_in_entry": 81,
+      "relative_position": 0.062,
+      "position_label": "BEGINNING",
+      "context": "sal tolchdar shey qotaiin qotedy qokol chdy qokain chetey sal tol chd ar shey qotaiin qotedy qokol chdy qokain chetey sal",
+      "context_before": "sal tolchdar shey qotaiin qotedy qokol chdy qokain chetey sal",
+      "context_after": "chd ar shey qotaiin qotedy qokol chdy qokain chetey sal"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "tol",
+      "position_in_entry": 92,
+      "relative_position": 0.071,
+      "position_label": "BEGINNING",
+      "context": "chd ar shey qotaiin qotedy qokol chdy qokain chetey sal tol chd ar shey qotaiin qotedy qokol chdy qokain chetey sal",
+      "context_before": "chd ar shey qotaiin qotedy qokol chdy qokain chetey sal",
+      "context_after": "chd ar shey qotaiin qotedy qokol chdy qokain chetey sal"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 20,
+      "relative_position": 0.015,
+      "position_label": "BEGINNING",
+      "context": "oto* otol dchdy dchdy dchdy soral s oral s oral pol darair ol qokol chey qopchedy qopchedy dylches olkedy loly paldarairal",
+      "context_before": "oto* otol dchdy dchdy dchdy soral s oral s oral",
+      "context_after": "darair ol qokol chey qopchedy qopchedy dylches olkedy loly paldarairal"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 38,
+      "relative_position": 0.029,
+      "position_label": "BEGINNING",
+      "context": "olkedy loly paldarairal qokol chey qopchedy qopchedy dylches alkedy laly pol dar air ol qokol chey qopchedy qopchedy dy lches olkedy",
+      "context_before": "olkedy loly paldarairal qokol chey qopchedy qopchedy dylches alkedy laly",
+      "context_after": "dar air ol qokol chey qopchedy qopchedy dy lches olkedy"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 50,
+      "relative_position": 0.039,
+      "position_label": "BEGINNING",
+      "context": "air ol qokol chey qopchedy qopchedy dy lches olkedy loly pol dar air ol qokol chey qopchedy qopchedy dylches olkedy loly",
+      "context_before": "air ol qokol chey qopchedy qopchedy dy lches olkedy loly",
+      "context_after": "dar air ol qokol chey qopchedy qopchedy dylches olkedy loly"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 954,
+      "relative_position": 0.736,
+      "position_label": "END",
+      "context": "cheedy cheey lchedy teeolain chey qoteedy qokain cheedy cheey lchedy pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy",
+      "context_before": "cheedy cheey lchedy teeolain chey qoteedy qokain cheedy cheey lchedy",
+      "context_after": "shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 963,
+      "relative_position": 0.742,
+      "position_label": "END",
+      "context": "lchedy pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy",
+      "context_before": "lchedy pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol",
+      "context_after": "shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 972,
+      "relative_position": 0.749,
+      "position_label": "END",
+      "context": "qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy",
+      "context_before": "qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol",
+      "context_after": "shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy"
+    },
+    {
+      "b_folio": "f77r",
+      "a_heading": "pol",
+      "position_in_entry": 981,
+      "relative_position": 0.756,
+      "position_label": "END",
+      "context": "qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol olaiin cheey",
+      "context_before": "qol pol shedy qoeedy qokaiin chcphey qol ltaiin shedy qol",
+      "context_after": "shedy qoeedy qokaiin chcphey qol ltaiin shedy qol olaiin cheey"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "tcho",
+      "position_in_entry": 846,
+      "relative_position": 0.633,
+      "position_label": "MIDDLE",
+      "context": "qoked olsheor olchdy y chedy qotedy qoked ol sheor olchdy tcho dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty",
+      "context_before": "qoked olsheor olchdy y chedy qotedy qoked ol sheor olchdy",
+      "context_after": "dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "tcho",
+      "position_in_entry": 866,
+      "relative_position": 0.648,
+      "position_label": "MIDDLE",
+      "context": "qoty tchydchy lshedy daly dal dsheedy pcheol lfol olcheedy qoty tcho dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty",
+      "context_before": "qoty tchydchy lshedy daly dal dsheedy pcheol lfol olcheedy qoty",
+      "context_after": "dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "tcho",
+      "position_in_entry": 877,
+      "relative_position": 0.656,
+      "position_label": "MIDDLE",
+      "context": "dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty tcho dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty",
+      "context_before": "dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty",
+      "context_after": "dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "tcho",
+      "position_in_entry": 1082,
+      "relative_position": 0.81,
+      "position_label": "END",
+      "context": "qokal dary tchor sheeey qokain qokain sheol qokeedy qokal dary tcho r sheey qokain qokain sheol qokeedy qokal dary qotchy qokal",
+      "context_before": "qokal dary tchor sheeey qokain qokain sheol qokeedy qokal dary",
+      "context_after": "r sheey qokain qokain sheol qokeedy qokal dary qotchy qokal"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "pcheol",
+      "position_in_entry": 852,
+      "relative_position": 0.638,
+      "position_label": "MIDDLE",
+      "context": "qoked ol sheor olchdy tcho dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty tchydchy lshedy daly dal dsheedy pcheol",
+      "context_before": "qoked ol sheor olchdy tcho dchy lshedy daly dal dsheedy",
+      "context_after": "lfol ol cheedy qoty tchydchy lshedy daly dal dsheedy pcheol"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "pcheol",
+      "position_in_entry": 862,
+      "relative_position": 0.645,
+      "position_label": "MIDDLE",
+      "context": "pcheol lfol ol cheedy qoty tchydchy lshedy daly dal dsheedy pcheol lfol olcheedy qoty tcho dchy lshedy daly dal dsheedy pcheol",
+      "context_before": "pcheol lfol ol cheedy qoty tchydchy lshedy daly dal dsheedy",
+      "context_after": "lfol olcheedy qoty tcho dchy lshedy daly dal dsheedy pcheol"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "pcheol",
+      "position_in_entry": 872,
+      "relative_position": 0.653,
+      "position_label": "MIDDLE",
+      "context": "pcheol lfol olcheedy qoty tcho dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty tcho dchy lshedy daly dal dsheedy",
+      "context_before": "pcheol lfol olcheedy qoty tcho dchy lshedy daly dal dsheedy",
+      "context_after": "lfol ol cheedy qoty tcho dchy lshedy daly dal dsheedy"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "pcheol",
+      "position_in_entry": 883,
+      "relative_position": 0.661,
+      "position_label": "MIDDLE",
+      "context": "lfol ol cheedy qoty tcho dchy lshedy daly dal dsheedy pcheol lfol ol cheedy qoty shey ol sheey qokedy lchedy qokaiin",
+      "context_before": "lfol ol cheedy qoty tcho dchy lshedy daly dal dsheedy",
+      "context_after": "lfol ol cheedy qoty shey ol sheey qokedy lchedy qokaiin"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "pchor",
+      "position_in_entry": 601,
+      "relative_position": 0.45,
+      "position_label": "MIDDLE",
+      "context": "qokal sal chedy sheq fchor qotasolky darory qokal salchedy shey pchor qotas olky darory qokal s alchedy shey pchor qotas olky",
+      "context_before": "qokal sal chedy sheq fchor qotasolky darory qokal salchedy shey",
+      "context_after": "qotas olky darory qokal s alchedy shey pchor qotas olky"
+    },
+    {
+      "b_folio": "f77v",
+      "a_heading": "pchor",
+      "position_in_entry": 609,
+      "relative_position": 0.456,
+      "position_label": "MIDDLE",
+      "context": "salchedy shey pchor qotas olky darory qokal s alchedy shey pchor qotas olky dar ory dalohey qol chedy oqokain olkaiin chckhy",
+      "context_before": "salchedy shey pchor qotas olky darory qokal s alchedy shey",
+      "context_after": "qotas olky dar ory dalohey qol chedy oqokain olkaiin chckhy"
+    },
+    {
+      "b_folio": "f78r",
+      "a_heading": "poraiin",
+      "position_in_entry": 696,
+      "relative_position": 0.59,
+      "position_label": "MIDDLE",
+      "context": "ofchedy taly po*ain ol qokeedy kchol tchalolkee yfchey ofchedy taly poraiin ol qokeedy kchol tchal olkee yfchey ofchedy taly po rain",
+      "context_before": "ofchedy taly po*ain ol qokeedy kchol tchalolkee yfchey ofchedy taly",
+      "context_after": "ol qokeedy kchol tchal olkee yfchey ofchedy taly po rain"
+    },
+    {
+      "b_folio": "f78r",
+      "a_heading": "tol",
+      "position_in_entry": 322,
+      "relative_position": 0.273,
+      "position_label": "BEGINNING",
+      "context": "otedy ol tedy chckhedy qokedy ol kedy qokain okedy kedy tol dy qoteedy dy qokedy olkedy qokain okedy kedy toldy qotchdy",
+      "context_before": "otedy ol tedy chckhedy qokedy ol kedy qokain okedy kedy",
+      "context_after": "dy qoteedy dy qokedy olkedy qokain okedy kedy toldy qotchdy"
+    },
+    {
+      "b_folio": "f78r",
+      "a_heading": "tol",
+      "position_in_entry": 340,
+      "relative_position": 0.288,
+      "position_label": "BEGINNING",
+      "context": "kedy toldy qotchdy dy qokedy ol kedy qokain okedy kedy tol dy qoteedy dy dchedaly qokedy ol kedy qokain okedy kedy",
+      "context_before": "kedy toldy qotchdy dy qokedy ol kedy qokain okedy kedy",
+      "context_after": "dy qoteedy dy dchedaly qokedy ol kedy qokain okedy kedy"
+    },
+    {
+      "b_folio": "f78r",
+      "a_heading": "tol",
+      "position_in_entry": 351,
+      "relative_position": 0.298,
+      "position_label": "BEGINNING",
+      "context": "dy qoteedy dy dchedaly qokedy ol kedy qokain okedy kedy tol dy qoteedy dy sor checkhy or chckhdy dol kedy qokededy",
+      "context_before": "dy qoteedy dy dchedaly qokedy ol kedy qokain okedy kedy",
+      "context_after": "dy qoteedy dy sor checkhy or chckhdy dol kedy qokededy"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 739,
+      "relative_position": 0.49,
+      "position_label": "MIDDLE",
+      "context": "tal chear y shal y chedar oikhy scthey tal chear pol shar shar pchey otshey okaos aiin okshey dalkeeey ry pol",
+      "context_before": "tal chear y shal y chedar oikhy scthey tal chear",
+      "context_after": "shar shar pchey otshey okaos aiin okshey dalkeeey ry pol"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 749,
+      "relative_position": 0.496,
+      "position_label": "MIDDLE",
+      "context": "pol shar shar pchey otshey okaos aiin okshey dalkeeey ry pol shar sheir pchey otshey okaos aiin okshey dalkeeeyry pol shar",
+      "context_before": "pol shar shar pchey otshey okaos aiin okshey dalkeeey ry",
+      "context_after": "shar sheir pchey otshey okaos aiin okshey dalkeeeyry pol shar"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 758,
+      "relative_position": 0.502,
+      "position_label": "MIDDLE",
+      "context": "ry pol shar sheir pchey otshey okaos aiin okshey dalkeeeyry pol shar shar pchey otshey okaos aiin okshey dalkeeey ry pol",
+      "context_before": "ry pol shar sheir pchey otshey okaos aiin okshey dalkeeeyry",
+      "context_after": "shar shar pchey otshey okaos aiin okshey dalkeeey ry pol"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 768,
+      "relative_position": 0.509,
+      "position_label": "MIDDLE",
+      "context": "pol shar shar pchey otshey okaos aiin okshey dalkeeey ry pol shar shar pchey otshey okaos aiin okshey dalkeeey ry lchey",
+      "context_before": "pol shar shar pchey otshey okaos aiin okshey dalkeeey ry",
+      "context_after": "shar shar pchey otshey okaos aiin okshey dalkeeey ry lchey"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 1080,
+      "relative_position": 0.716,
+      "position_label": "END",
+      "context": "yshedy qotal ysheey olon y shedy qotal y sheey olon pol shey oltshedy sheol ykeey okeey cheor sheedy ol polshey oltshedy",
+      "context_before": "yshedy qotal ysheey olon y shedy qotal y sheey olon",
+      "context_after": "shey oltshedy sheol ykeey okeey cheor sheedy ol polshey oltshedy"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 1208,
+      "relative_position": 0.801,
+      "position_label": "END",
+      "context": "qotas sheey teol oteedy lcheol kchedy qotas sheey teol oteedy pol chedy shedy qoteedy qotain ody chekes otal polchedy shedy qoteedy",
+      "context_before": "qotas sheey teol oteedy lcheol kchedy qotas sheey teol oteedy",
+      "context_after": "chedy shedy qoteedy qotain ody chekes otal polchedy shedy qoteedy"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 1313,
+      "relative_position": 0.87,
+      "position_label": "END",
+      "context": "l cheol ol ol sheey olsheey shol keey okchey dain pol olkeeey sheol qokeey pol olkeeey sheol qokeey pol olkeeysheol qokeey",
+      "context_before": "l cheol ol ol sheey olsheey shol keey okchey dain",
+      "context_after": "olkeeey sheol qokeey pol olkeeey sheol qokeey pol olkeeysheol qokeey"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 1317,
+      "relative_position": 0.873,
+      "position_label": "END",
+      "context": "sheey olsheey shol keey okchey dain pol olkeeey sheol qokeey pol olkeeey sheol qokeey pol olkeeysheol qokeey pol olkeeey sheol qokeey",
+      "context_before": "sheey olsheey shol keey okchey dain pol olkeeey sheol qokeey",
+      "context_after": "olkeeey sheol qokeey pol olkeeysheol qokeey pol olkeeey sheol qokeey"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 1321,
+      "relative_position": 0.875,
+      "position_label": "END",
+      "context": "okchey dain pol olkeeey sheol qokeey pol olkeeey sheol qokeey pol olkeeysheol qokeey pol olkeeey sheol qokeey polkeey qokol otshdy olky",
+      "context_before": "okchey dain pol olkeeey sheol qokeey pol olkeeey sheol qokeey",
+      "context_after": "olkeeysheol qokeey pol olkeeey sheol qokeey polkeey qokol otshdy olky"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pol",
+      "position_in_entry": 1324,
+      "relative_position": 0.877,
+      "position_label": "END",
+      "context": "olkeeey sheol qokeey pol olkeeey sheol qokeey pol olkeeysheol qokeey pol olkeeey sheol qokeey polkeey qokol otshdy olky orkar shecphhdy olkal",
+      "context_before": "olkeeey sheol qokeey pol olkeeey sheol qokeey pol olkeeysheol qokeey",
+      "context_after": "olkeeey sheol qokeey polkeey qokol otshdy olky orkar shecphhdy olkal"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "tor",
+      "position_in_entry": 29,
+      "relative_position": 0.019,
+      "position_label": "BEGINNING",
+      "context": "toraiin shedy *chor or shek otar pchdy opchalor otal shedy tor ain shedy pchor or shek otar peedy opchalor otal shedy",
+      "context_before": "toraiin shedy *chor or shek otar pchdy opchalor otal shedy",
+      "context_after": "ain shedy pchor or shek otar peedy opchalor otal shedy"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pchor",
+      "position_in_entry": 2,
+      "relative_position": 0.001,
+      "position_label": "BEGINNING",
+      "context": "torain shedy pchor or shek otar pchdy opcholor otal shedy torain shedy pchor",
+      "context_before": "torain shedy",
+      "context_after": "or shek otar pchdy opcholor otal shedy torain shedy pchor"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pchor",
+      "position_in_entry": 12,
+      "relative_position": 0.008,
+      "position_label": "BEGINNING",
+      "context": "pchor or shek otar pchdy opcholor otal shedy torain shedy pchor or shek otarpeedy opcholor otal shedy toraiin shedy *chor or",
+      "context_before": "pchor or shek otar pchdy opcholor otal shedy torain shedy",
+      "context_after": "or shek otarpeedy opcholor otal shedy toraiin shedy *chor or"
+    },
+    {
+      "b_folio": "f79r",
+      "a_heading": "pchor",
+      "position_in_entry": 32,
+      "relative_position": 0.021,
+      "position_label": "BEGINNING",
+      "context": "or shek otar pchdy opchalor otal shedy tor ain shedy pchor or shek otar peedy opchalor otal shedy qoteedy lshdy otchedy",
+      "context_before": "or shek otar pchdy opchalor otal shedy tor ain shedy",
+      "context_after": "or shek otar peedy opchalor otal shedy qoteedy lshdy otchedy"
+    },
+    {
+      "b_folio": "f79v",
+      "a_heading": "pol",
+      "position_in_entry": 1217,
+      "relative_position": 0.854,
+      "position_label": "END",
+      "context": "ysheey olshey oltshsy shepshey y sheey ol shey oltshsey sheepshey pol ol shal kain okeey lkeey qokal otchsdy okechdy pol ol",
+      "context_before": "ysheey olshey oltshsy shepshey y sheey ol shey oltshsey sheepshey",
+      "context_after": "ol shal kain okeey lkeey qokal otchsdy okechdy pol ol"
+    },
+    {
+      "b_folio": "f79v",
+      "a_heading": "pol",
+      "position_in_entry": 1226,
+      "relative_position": 0.86,
+      "position_label": "END",
+      "context": "sheepshey pol ol shal kain okeey lkeey qokal otchsdy okechdy pol ol shalkain okeey lkeey qokal otchrdy okeshdy pol ol shal",
+      "context_before": "sheepshey pol ol shal kain okeey lkeey qokal otchsdy okechdy",
+      "context_after": "ol shalkain okeey lkeey qokal otchrdy okeshdy pol ol shal"
+    },
+    {
+      "b_folio": "f79v",
+      "a_heading": "pol",
+      "position_in_entry": 1234,
+      "relative_position": 0.866,
+      "position_label": "END",
+      "context": "otchsdy okechdy pol ol shalkain okeey lkeey qokal otchrdy okeshdy pol ol shal taiin okeey lkeey qokal otchsdy okeshdy pol ol",
+      "context_before": "otchsdy okechdy pol ol shalkain okeey lkeey qokal otchrdy okeshdy",
+      "context_after": "ol shal taiin okeey lkeey qokal otchsdy okeshdy pol ol"
+    },
+    {
+      "b_folio": "f79v",
+      "a_heading": "pol",
+      "position_in_entry": 1243,
+      "relative_position": 0.872,
+      "position_label": "END",
+      "context": "okeshdy pol ol shal taiin okeey lkeey qokal otchsdy okeshdy pol ol shal tain okeey lkeey qokal otchsdy okeshdy olkeeey qokeey",
+      "context_before": "okeshdy pol ol shal taiin okeey lkeey qokal otchsdy okeshdy",
+      "context_after": "ol shal tain okeey lkeey qokal otchsdy okeshdy olkeeey qokeey"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "tor",
+      "position_in_entry": 1185,
+      "relative_position": 0.679,
+      "position_label": "END",
+      "context": "olor qokaiin ol shey qotar alom sor olky qoty ty tor cheyky totol opchedy qokain sheky qokain ol sor olky qotytytor",
+      "context_before": "olor qokaiin ol shey qotar alom sor olky qoty ty",
+      "context_after": "cheyky totol opchedy qokain sheky qokain ol sor olky qotytytor"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "tor",
+      "position_in_entry": 1207,
+      "relative_position": 0.692,
+      "position_label": "END",
+      "context": "totol opchedy qokain sheky qokain ol sor olky qoty ty tor chey ky totol opchedy qokaiin sheky qokaiin ol sor olky",
+      "context_before": "totol opchedy qokain sheky qokain ol sor olky qoty ty",
+      "context_after": "chey ky totol opchedy qokaiin sheky qokaiin ol sor olky"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "tor",
+      "position_in_entry": 1220,
+      "relative_position": 0.699,
+      "position_label": "END",
+      "context": "totol opchedy qokaiin sheky qokaiin ol sor olky qoty ty tor cheyky t otol opchedy qokain sheky qokain ol qokeedy qokail",
+      "context_before": "totol opchedy qokaiin sheky qokaiin ol sor olky qoty ty",
+      "context_after": "cheyky t otol opchedy qokain sheky qokain ol qokeedy qokail"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "pcheol",
+      "position_in_entry": 811,
+      "relative_position": 0.465,
+      "position_label": "MIDDLE",
+      "context": "chty pcheolkal dal korchy qotey qoty rchedy qokal olkalshedy chty pcheol kal dal korchy qotey qoty rchedy qokal olkal shedy chty",
+      "context_before": "chty pcheolkal dal korchy qotey qoty rchedy qokal olkalshedy chty",
+      "context_after": "kal dal korchy qotey qoty rchedy qokal olkal shedy chty"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "pcheol",
+      "position_in_entry": 822,
+      "relative_position": 0.471,
+      "position_label": "MIDDLE",
+      "context": "kal dal korchy qotey qoty rchedy qokal olkal shedy chty pcheol kal dal korchy qotey qoty rchedy qokal olkal shedy chty",
+      "context_before": "kal dal korchy qotey qoty rchedy qokal olkal shedy chty",
+      "context_after": "kal dal korchy qotey qoty rchedy qokal olkal shedy chty"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "tol",
+      "position_in_entry": 1305,
+      "relative_position": 0.748,
+      "position_label": "END",
+      "context": "checkhy oroly tolkain otal chedy qokar ol shedy checkhy oroly tol kaiin otal chedy qokar ol shedy checkhy oroly tolkain otal",
+      "context_before": "checkhy oroly tolkain otal chedy qokar ol shedy checkhy oroly",
+      "context_after": "kaiin otal chedy qokar ol shedy checkhy oroly tolkain otal"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "paiin",
+      "position_in_entry": 342,
+      "relative_position": 0.196,
+      "position_label": "BEGINNING",
+      "context": "shkeol qokar sheky chetain ol olkar okain sheky qokal dal paiin sheol qokain chety qokeedy qokar shcthy qotol shecthy qokain olkam",
+      "context_before": "shkeol qokar sheky chetain ol olkar okain sheky qokal dal",
+      "context_after": "sheol qokain chety qokeedy qokar shcthy qotol shecthy qokain olkam"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "paiin",
+      "position_in_entry": 353,
+      "relative_position": 0.202,
+      "position_label": "BEGINNING",
+      "context": "sheol qokain chety qokeedy qokar shcthy qotol shecthy qokain olkam paiin sheal qokain chety qokeedy qokar shcthy qotal shecthy qokain olkam",
+      "context_before": "sheol qokain chety qokeedy qokar shcthy qotol shecthy qokain olkam",
+      "context_after": "sheal qokain chety qokeedy qokar shcthy qotal shecthy qokain olkam"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "paiin",
+      "position_in_entry": 364,
+      "relative_position": 0.209,
+      "position_label": "BEGINNING",
+      "context": "sheal qokain chety qokeedy qokar shcthy qotal shecthy qokain olkam paiin sheol qokaiin chety qokeedy qokar shcthy qotol sheckhy qokaiin olkam",
+      "context_before": "sheal qokain chety qokeedy qokar shcthy qotal shecthy qokain olkam",
+      "context_after": "sheol qokaiin chety qokeedy qokar shcthy qotol sheckhy qokaiin olkam"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "paiin",
+      "position_in_entry": 375,
+      "relative_position": 0.215,
+      "position_label": "BEGINNING",
+      "context": "sheol qokaiin chety qokeedy qokar shcthy qotol sheckhy qokaiin olkam paiin sheol qokain chety qokeedy qokar shcthy qotol sheckhy qokain olkam",
+      "context_before": "sheol qokaiin chety qokeedy qokar shcthy qotol sheckhy qokaiin olkam",
+      "context_after": "sheol qokain chety qokeedy qokar shcthy qotol sheckhy qokain olkam"
+    },
+    {
+      "b_folio": "f80r",
+      "a_heading": "kor",
+      "position_in_entry": 1043,
+      "relative_position": 0.598,
+      "position_label": "MIDDLE",
+      "context": "y cthcthey r cheky shepchedy qokor ol qockhey olchey qokedy kor oiin y olkeey lsheol qokeey shedy qol shedy qokaiin shey",
+      "context_before": "y cthcthey r cheky shepchedy qokor ol qockhey olchey qokedy",
+      "context_after": "oiin y olkeey lsheol qokeey shedy qol shedy qokaiin shey"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 688,
+      "relative_position": 0.45,
+      "position_label": "MIDDLE",
+      "context": "ysheey qo ras ol cheey daiin shey qokaiin ol okaiin tor kain okal yrchey qokal olor aiin okal otam tor kain",
+      "context_before": "ysheey qo ras ol cheey daiin shey qokaiin ol okaiin",
+      "context_after": "kain okal yrchey qokal olor aiin okal otam tor kain"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 697,
+      "relative_position": 0.456,
+      "position_label": "MIDDLE",
+      "context": "okaiin tor kain okal yrchey qokal olor aiin okal otam tor kain okal y rchey qokal olor aiin okal otag tor",
+      "context_before": "okaiin tor kain okal yrchey qokal olor aiin okal otam",
+      "context_after": "kain okal y rchey qokal olor aiin okal otag tor"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 707,
+      "relative_position": 0.463,
+      "position_label": "MIDDLE",
+      "context": "tor kain okal y rchey qokal olor aiin okal otag tor kaiin okal yrchey qokal oloraiin okal otam tor kain okal",
+      "context_before": "tor kain okal y rchey qokal olor aiin okal otag",
+      "context_after": "kaiin okal yrchey qokal oloraiin okal otam tor kain okal"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 715,
+      "relative_position": 0.468,
+      "position_label": "MIDDLE",
+      "context": "okal otag tor kaiin okal yrchey qokal oloraiin okal otam tor kain okal y rchey qokal olor aiin okal otam dchedy",
+      "context_before": "okal otag tor kaiin okal yrchey qokal oloraiin okal otam",
+      "context_after": "kain okal y rchey qokal olor aiin okal otam dchedy"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 1400,
+      "relative_position": 0.916,
+      "position_label": "END",
+      "context": "qokain ol cheeor olar chey tchar ol chedy qotal olchedy tor arol ar shckhy lkol otol chedy qokain chckhy qokal tor",
+      "context_before": "qokain ol cheeor olar chey tchar ol chedy qotal olchedy",
+      "context_after": "arol ar shckhy lkol otol chedy qokain chckhy qokal tor"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 1410,
+      "relative_position": 0.923,
+      "position_label": "END",
+      "context": "tor arol ar shckhy lkol otol chedy qokain chckhy qokal tor or ol ar shckhy lkol otol chedy qokain chckhy qokal",
+      "context_before": "tor arol ar shckhy lkol otol chedy qokain chckhy qokal",
+      "context_after": "or ol ar shckhy lkol otol chedy qokain chckhy qokal"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 1421,
+      "relative_position": 0.93,
+      "position_label": "END",
+      "context": "or ol ar shckhy lkol otol chedy qokain chckhy qokal tor arol ar shckhy lkol otol chedy qokaiin chckhy qokal tor",
+      "context_before": "or ol ar shckhy lkol otol chedy qokain chckhy qokal",
+      "context_after": "arol ar shckhy lkol otol chedy qokaiin chckhy qokal tor"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tor",
+      "position_in_entry": 1431,
+      "relative_position": 0.937,
+      "position_label": "END",
+      "context": "tor arol ar shckhy lkol otol chedy qokaiin chckhy qokal tor ar ol ar shckhy lkol otol chedy qokain chckhy qokal",
+      "context_before": "tor arol ar shckhy lkol otol chedy qokaiin chckhy qokal",
+      "context_after": "ar ol ar shckhy lkol otol chedy qokain chckhy qokal"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pcheol",
+      "position_in_entry": 156,
+      "relative_position": 0.102,
+      "position_label": "BEGINNING",
+      "context": "okeedy chedy olkeedy oithy qokaiin shckhy qotain ol tcheol kedy pcheol kain shedy qokaiin otey qokedy chedy tcheol kedy pcheol kain",
+      "context_before": "okeedy chedy olkeedy oithy qokaiin shckhy qotain ol tcheol kedy",
+      "context_after": "kain shedy qokaiin otey qokedy chedy tcheol kedy pcheol kain"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pcheol",
+      "position_in_entry": 165,
+      "relative_position": 0.108,
+      "position_label": "BEGINNING",
+      "context": "kedy pcheol kain shedy qokaiin otey qokedy chedy tcheol kedy pcheol kain shedy qokaiin otey qokedy chedy tcheol kedy pcheol kaiin",
+      "context_before": "kedy pcheol kain shedy qokaiin otey qokedy chedy tcheol kedy",
+      "context_after": "kain shedy qokaiin otey qokedy chedy tcheol kedy pcheol kaiin"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pcheol",
+      "position_in_entry": 174,
+      "relative_position": 0.114,
+      "position_label": "BEGINNING",
+      "context": "kedy pcheol kain shedy qokaiin otey qokedy chedy tcheol kedy pcheol kaiin shedy qokaiin otey qokedy chedy tcheol kedy pcheol kain",
+      "context_before": "kedy pcheol kain shedy qokaiin otey qokedy chedy tcheol kedy",
+      "context_after": "kaiin shedy qokaiin otey qokedy chedy tcheol kedy pcheol kain"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pcheol",
+      "position_in_entry": 183,
+      "relative_position": 0.12,
+      "position_label": "BEGINNING",
+      "context": "kedy pcheol kaiin shedy qokaiin otey qokedy chedy tcheol kedy pcheol kain shedy qokaiin otey qokedy chedy polshol tchey qokol shedy",
+      "context_before": "kedy pcheol kaiin shedy qokaiin otey qokedy chedy tcheol kedy",
+      "context_after": "kain shedy qokaiin otey qokedy chedy polshol tchey qokol shedy"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pshol",
+      "position_in_entry": 900,
+      "relative_position": 0.589,
+      "position_label": "MIDDLE",
+      "context": "lchedy shedy lchey qoty cheyqy taiin chey lchedy shedy olchey pshol kain olkar shey qokain dal oltaiin okain shal qoty pshol",
+      "context_before": "lchedy shedy lchey qoty cheyqy taiin chey lchedy shedy olchey",
+      "context_after": "kain olkar shey qokain dal oltaiin okain shal qoty pshol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pshol",
+      "position_in_entry": 910,
+      "relative_position": 0.596,
+      "position_label": "MIDDLE",
+      "context": "pshol kain olkar shey qokain dal oltaiin okain shal qoty pshol kain olkar shey qokain dol oltaiin okain shal qoty pshol",
+      "context_before": "pshol kain olkar shey qokain dal oltaiin okain shal qoty",
+      "context_after": "kain olkar shey qokain dol oltaiin okain shal qoty pshol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pshol",
+      "position_in_entry": 920,
+      "relative_position": 0.602,
+      "position_label": "MIDDLE",
+      "context": "pshol kain olkar shey qokain dol oltaiin okain shal qoty pshol kaiin olkar shey qokaiin dal oltaiin okain shal qoty pshol",
+      "context_before": "pshol kain olkar shey qokain dol oltaiin okain shal qoty",
+      "context_after": "kaiin olkar shey qokaiin dal oltaiin okain shal qoty pshol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pshol",
+      "position_in_entry": 930,
+      "relative_position": 0.609,
+      "position_label": "MIDDLE",
+      "context": "pshol kaiin olkar shey qokaiin dal oltaiin okain shal qoty pshol kain olkar shey qokain dal oltaiin okain shal qoty olcheol",
+      "context_before": "pshol kaiin olkar shey qokaiin dal oltaiin okain shal qoty",
+      "context_after": "kain olkar shey qokain dal oltaiin okain shal qoty olcheol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 261,
+      "relative_position": 0.171,
+      "position_label": "BEGINNING",
+      "context": "qokaiin shedy qokain sheol qokchdy qokchdy qoty dy tchdy qol tol tal taldain chcthy qokal dol checthy qokal ly tchdy qol",
+      "context_before": "qokaiin shedy qokain sheol qokchdy qokchdy qoty dy tchdy qol",
+      "context_after": "tal taldain chcthy qokal dol checthy qokal ly tchdy qol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 272,
+      "relative_position": 0.178,
+      "position_label": "BEGINNING",
+      "context": "tal taldain chcthy qokal dol checthy qokal ly tchdy qol tol tal tal dain chckhy qokal dol checthy qokal ly tady",
+      "context_before": "tal taldain chcthy qokal dol checthy qokal ly tchdy qol",
+      "context_after": "tal tal dain chckhy qokal dol checthy qokal ly tady"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 284,
+      "relative_position": 0.186,
+      "position_label": "BEGINNING",
+      "context": "tal dain chckhy qokal dol checthy qokal ly tady qol tol tal tal daiin chcthy qokal dal checthy qokal ly tchdy",
+      "context_before": "tal dain chckhy qokal dol checthy qokal ly tady qol",
+      "context_after": "tal tal daiin chcthy qokal dal checthy qokal ly tchdy"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 296,
+      "relative_position": 0.194,
+      "position_label": "BEGINNING",
+      "context": "tal daiin chcthy qokal dal checthy qokal ly tchdy qol tol tal tal dain chcthy qokal dal checthy qokal ly sol",
+      "context_before": "tal daiin chcthy qokal dal checthy qokal ly tchdy qol",
+      "context_after": "tal tal dain chcthy qokal dal checthy qokal ly sol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 342,
+      "relative_position": 0.224,
+      "position_label": "BEGINNING",
+      "context": "ol sol sheey qokaiin shcthy dolshedy qokal shecthy qotain ol tol sheedy qokar olky rorcheey sheckhy qotain chedy rol tol sheedy",
+      "context_before": "ol sol sheey qokaiin shcthy dolshedy qokal shecthy qotain ol",
+      "context_after": "sheedy qokar olky rorcheey sheckhy qotain chedy rol tol sheedy"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 351,
+      "relative_position": 0.23,
+      "position_label": "BEGINNING",
+      "context": "ol tol sheedy qokar olky rorcheey sheckhy qotain chedy rol tol sheedy qokar olky ror cheey sheckhy qotain chedy rol tol",
+      "context_before": "ol tol sheedy qokar olky rorcheey sheckhy qotain chedy rol",
+      "context_after": "sheedy qokar olky ror cheey sheckhy qotain chedy rol tol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 361,
+      "relative_position": 0.236,
+      "position_label": "BEGINNING",
+      "context": "tol sheedy qokar olky ror cheey sheckhy qotain chedy rol tol sheedy qokar olky ror cheey sheckhy qotaiin chedy rol tol",
+      "context_before": "tol sheedy qokar olky ror cheey sheckhy qotain chedy rol",
+      "context_after": "sheedy qokar olky ror cheey sheckhy qotaiin chedy rol tol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 371,
+      "relative_position": 0.243,
+      "position_label": "BEGINNING",
+      "context": "tol sheedy qokar olky ror cheey sheckhy qotaiin chedy rol tol sheedy qokar olky ror cheey sheckhy qotain chedy rol ycheol",
+      "context_before": "tol sheedy qokar olky ror cheey sheckhy qotaiin chedy rol",
+      "context_after": "sheedy qokar olky ror cheey sheckhy qotain chedy rol ycheol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 482,
+      "relative_position": 0.315,
+      "position_label": "BEGINNING",
+      "context": "otal qopshedy qoty lchedy qopal or qotaiin chty lchedy saly tol chey qoteedy otal dain ol dal qotain chty lchedy daly",
+      "context_before": "otal qopshedy qoty lchedy qopal or qotaiin chty lchedy saly",
+      "context_after": "chey qoteedy otal dain ol dal qotain chty lchedy daly"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 493,
+      "relative_position": 0.323,
+      "position_label": "BEGINNING",
+      "context": "chey qoteedy otal dain ol dal qotain chty lchedy daly tol chey qoteedy otal dain ol dal qotaiin chty lchedy saly",
+      "context_before": "chey qoteedy otal dain ol dal qotain chty lchedy daly",
+      "context_after": "chey qoteedy otal dain ol dal qotaiin chty lchedy saly"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 504,
+      "relative_position": 0.33,
+      "position_label": "BEGINNING",
+      "context": "chey qoteedy otal dain ol dal qotaiin chty lchedy saly tol chey qoteedy otal daiin ol dal qotaiin chty lchedy s",
+      "context_before": "chey qoteedy otal dain ol dal qotaiin chty lchedy saly",
+      "context_after": "chey qoteedy otal daiin ol dal qotaiin chty lchedy s"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 517,
+      "relative_position": 0.338,
+      "position_label": "MIDDLE",
+      "context": "otal daiin ol dal qotaiin chty lchedy s al y tol chey qoteedy otal dain ol dal cheol key qotar dy",
+      "context_before": "otal daiin ol dal qotaiin chty lchedy s al y",
+      "context_after": "chey qoteedy otal dain ol dal cheol key qotar dy"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 1176,
+      "relative_position": 0.77,
+      "position_label": "END",
+      "context": "qoly dol sheyr shey olshey cthor yleedy olkain shcthy qoly tol oltain olkar y qol qol kain okiin ol kain shey",
+      "context_before": "qoly dol sheyr shey olshey cthor yleedy olkain shcthy qoly",
+      "context_after": "oltain olkar y qol qol kain okiin ol kain shey"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 1188,
+      "relative_position": 0.777,
+      "position_label": "END",
+      "context": "olkar y qol qol kain okiin ol kain shey ldy tol oltain olkar y qol qol kain okiin ol kain shey",
+      "context_before": "olkar y qol qol kain okiin ol kain shey ldy",
+      "context_after": "oltain olkar y qol qol kain okiin ol kain shey"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 1200,
+      "relative_position": 0.785,
+      "position_label": "END",
+      "context": "olkar y qol qol kain okiin ol kain shey ldy tol oltoiin olkar yqol qol kaiin okaiin olkaiin shey ldy tol",
+      "context_before": "olkar y qol qol kain okiin ol kain shey ldy",
+      "context_after": "oltoiin olkar yqol qol kaiin okaiin olkaiin shey ldy tol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "tol",
+      "position_in_entry": 1210,
+      "relative_position": 0.792,
+      "position_label": "END",
+      "context": "tol oltoiin olkar yqol qol kaiin okaiin olkaiin shey ldy tol oltain olkar y qol qol kain okiin ol kain shey",
+      "context_before": "tol oltoiin olkar yqol qol kaiin okaiin olkaiin shey ldy",
+      "context_after": "oltain olkar y qol qol kain okiin ol kain shey"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 206,
+      "relative_position": 0.135,
+      "position_label": "BEGINNING",
+      "context": "kchey stolpchy polshol tchey qokol shedy qotshey saly kchey stolpchy pol shol tchey qokol shedy qotshey saly kchey stol pchy polshol",
+      "context_before": "kchey stolpchy polshol tchey qokol shedy qotshey saly kchey stolpchy",
+      "context_after": "shol tchey qokol shedy qotshey saly kchey stol pchy polshol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1002,
+      "relative_position": 0.656,
+      "position_label": "MIDDLE",
+      "context": "qokaiin olkaiin olkaiin ol keeol qokain olkain olkain ol keeol pol or olkain ockhy qokaiin okain okar shey qolky pol or",
+      "context_before": "qokaiin olkaiin olkaiin ol keeol qokain olkain olkain ol keeol",
+      "context_after": "or olkain ockhy qokaiin okain okar shey qolky pol or"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1011,
+      "relative_position": 0.662,
+      "position_label": "MIDDLE",
+      "context": "keeol pol or olkain ockhy qokaiin okain okar shey qolky pol or olkain ockhy qokaiin okain okar shey qolky pol or",
+      "context_before": "keeol pol or olkain ockhy qokaiin okain okar shey qolky",
+      "context_after": "or olkain ockhy qokaiin okain okar shey qolky pol or"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1020,
+      "relative_position": 0.668,
+      "position_label": "MIDDLE",
+      "context": "qolky pol or olkain ockhy qokaiin okain okar shey qolky pol or olkaiin ockhy qokaiin okaiin okar shey qolky pol or",
+      "context_before": "qolky pol or olkain ockhy qokaiin okain okar shey qolky",
+      "context_after": "or olkaiin ockhy qokaiin okaiin okar shey qolky pol or"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1029,
+      "relative_position": 0.673,
+      "position_label": "END",
+      "context": "qolky pol or olkaiin ockhy qokaiin okaiin okar shey qolky pol or olkain oikhy qokaiin okain okar shey qolky qol oloiin",
+      "context_before": "qolky pol or olkaiin ockhy qokaiin okaiin okar shey qolky",
+      "context_after": "or olkain oikhy qokaiin okain okar shey qolky qol oloiin"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1278,
+      "relative_position": 0.836,
+      "position_label": "END",
+      "context": "shky ololchey polshdy qokeedy shky ololchey polshdy qokeedy shky ololchey pol kedy lsheckhy olky ot olkchy rchey qcthy rchey ral polkedy",
+      "context_before": "shky ololchey polshdy qokeedy shky ololchey polshdy qokeedy shky ololchey",
+      "context_after": "kedy lsheckhy olky ot olkchy rchey qcthy rchey ral polkedy"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1297,
+      "relative_position": 0.849,
+      "position_label": "END",
+      "context": "ral polkedy lsheckhy olky ot olkchy rchey qcthy rchey ral pol kedy lsheckhy olky ot olkchy rchey qcthy rchey ral pol",
+      "context_before": "ral polkedy lsheckhy olky ot olkchy rchey qcthy rchey ral",
+      "context_after": "kedy lsheckhy olky ot olkchy rchey qcthy rchey ral pol"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1307,
+      "relative_position": 0.855,
+      "position_label": "END",
+      "context": "pol kedy lsheckhy olky ot olkchy rchey qcthy rchey ral pol kedy l sheckhy olky ot olkchy r chey qcthy rchey",
+      "context_before": "pol kedy lsheckhy olky ot olkchy rchey qcthy rchey ral",
+      "context_after": "kedy l sheckhy olky ot olkchy r chey qcthy rchey"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1442,
+      "relative_position": 0.944,
+      "position_label": "END",
+      "context": "ar ol ar shckhy lkol otol chedy qokain chckhy qokal pol al aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_before": "ar ol ar shckhy lkol otol chedy qokain chckhy qokal",
+      "context_after": "al aiin olkal shar shedy qokol chdy ldol dar al"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1453,
+      "relative_position": 0.951,
+      "position_label": "END",
+      "context": "al aiin olkal shar shedy qokol chdy ldol dar al pol ol aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_before": "al aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_after": "ol aiin olkal shar shedy qokol chdy ldol dar al"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1464,
+      "relative_position": 0.958,
+      "position_label": "END",
+      "context": "ol aiin olkal shar shedy qokol chdy ldol dar al pol al aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_before": "ol aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_after": "al aiin olkal shar shedy qokol chdy ldol dar al"
+    },
+    {
+      "b_folio": "f80v",
+      "a_heading": "pol",
+      "position_in_entry": 1475,
+      "relative_position": 0.965,
+      "position_label": "END",
+      "context": "al aiin olkal shar shedy qokol chdy ldol dar al pol al aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_before": "al aiin olkal shar shedy qokol chdy ldol dar al",
+      "context_after": "al aiin olkal shar shedy qokol chdy ldol dar al"
+    },
+    {
+      "b_folio": "f81r",
+      "a_heading": "par",
+      "position_in_entry": 600,
+      "relative_position": 0.715,
+      "position_label": "END",
+      "context": "soiin chey lchey parody shecphy cheol qotal dar otedy oly par ody shecphy cheol qotaldar otedy oly parody shecphy cheol qotal",
+      "context_before": "soiin chey lchey parody shecphy cheol qotal dar otedy oly",
+      "context_after": "ody shecphy cheol qotaldar otedy oly parody shecphy cheol qotal"
+    },
+    {
+      "b_folio": "f81r",
+      "a_heading": "par",
+      "position_in_entry": 614,
+      "relative_position": 0.732,
+      "position_label": "END",
+      "context": "qotaldar otedy oly parody shecphy cheol qotal dar otedy oly par ody shecphy cheol qotal dar otedy oly sar shedy qol",
+      "context_before": "qotaldar otedy oly parody shecphy cheol qotal dar otedy oly",
+      "context_after": "ody shecphy cheol qotal dar otedy oly sar shedy qol"
+    },
+    {
+      "b_folio": "f81v",
+      "a_heading": "pol",
+      "position_in_entry": 375,
+      "relative_position": 0.361,
+      "position_label": "MIDDLE",
+      "context": "dairam polshy ashyteed qop okeedy otedy okshedy qoty dair am pol shy oshy teed qop okeedy okshedy qoky dair am pol",
+      "context_before": "dairam polshy ashyteed qop okeedy otedy okshedy qoty dair am",
+      "context_after": "shy oshy teed qop okeedy okshedy qoky dair am pol"
+    },
+    {
+      "b_folio": "f81v",
+      "a_heading": "pol",
+      "position_in_entry": 385,
+      "relative_position": 0.371,
+      "position_label": "MIDDLE",
+      "context": "pol shy oshy teed qop okeedy okshedy qoky dair am pol shy oshyteed qop okeedy okedy okshedy qoky dais am oshey",
+      "context_before": "pol shy oshy teed qop okeedy okshedy qoky dair am",
+      "context_after": "shy oshyteed qop okeedy okedy okshedy qoky dais am oshey"
+    },
+    {
+      "b_folio": "f81v",
+      "a_heading": "par",
+      "position_in_entry": 0,
+      "relative_position": 0.0,
+      "position_label": "BEGINNING",
+      "context": "par shey keedy shekal dal dar ol pchedy shek dain ofal",
+      "context_before": "",
+      "context_after": "shey keedy shekal dal dar ol pchedy shek dain ofal"
+    },
+    {
+      "b_folio": "f81v",
+      "a_heading": "par",
+      "position_in_entry": 12,
+      "relative_position": 0.012,
+      "position_label": "BEGINNING",
+      "context": "keedy shekal dal dar ol pchedy shek dain ofal sheky par shey teedy shekal dal dar ol pchedy shek dain ofalsheky",
+      "context_before": "keedy shekal dal dar ol pchedy shek dain ofal sheky",
+      "context_after": "shey teedy shekal dal dar ol pchedy shek dain ofalsheky"
+    },
+    {
+      "b_folio": "f81v",
+      "a_heading": "par",
+      "position_in_entry": 23,
+      "relative_position": 0.022,
+      "position_label": "BEGINNING",
+      "context": "shey teedy shekal dal dar ol pchedy shek dain ofalsheky par shey keedy shekal dal dar ol pchedy shek daiin ofal",
+      "context_before": "shey teedy shekal dal dar ol pchedy shek dain ofalsheky",
+      "context_after": "shey keedy shekal dal dar ol pchedy shek daiin ofal"
+    },
+    {
+      "b_folio": "f81v",
+      "a_heading": "par",
+      "position_in_entry": 35,
+      "relative_position": 0.034,
+      "position_label": "BEGINNING",
+      "context": "keedy shekal dal dar ol pchedy shek daiin ofal sheky par shey keedy shekal dal dar ol pchedy shek dain ofal",
+      "context_before": "keedy shekal dal dar ol pchedy shek daiin ofal sheky",
+      "context_after": "shey keedy shekal dal dar ol pchedy shek dain ofal"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 242,
+      "relative_position": 0.19,
+      "position_label": "BEGINNING",
+      "context": "chedy qotal shedy qotey qokal shoky qokal chedy qotal shedy pcheol dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol",
+      "context_before": "chedy qotal shedy qotey qokal shoky qokal chedy qotal shedy",
+      "context_after": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 253,
+      "relative_position": 0.199,
+      "position_label": "BEGINNING",
+      "context": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol pcheol dar qokeey cheeky qokal dal chedy pchdy rol qotedy rol",
+      "context_before": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol",
+      "context_after": "dar qokeey cheeky qokal dal chedy pchdy rol qotedy rol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 264,
+      "relative_position": 0.208,
+      "position_label": "BEGINNING",
+      "context": "dar qokeey cheeky qokal dal chedy pchdy rol qotedy rol pcheol dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol",
+      "context_before": "dar qokeey cheeky qokal dal chedy pchdy rol qotedy rol",
+      "context_after": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 275,
+      "relative_position": 0.216,
+      "position_label": "BEGINNING",
+      "context": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol pcheol dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol",
+      "context_before": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol",
+      "context_after": "dar qokeey cheeky qokol dal shedy pchdy rol qotedy rol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 1225,
+      "relative_position": 0.964,
+      "position_label": "END",
+      "context": "chey r alchey chol olkol chckhy dal chckhy olkain olkeeyr pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin",
+      "context_before": "chey r alchey chol olkol chckhy dal chckhy olkain olkeeyr",
+      "context_after": "shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 1229,
+      "relative_position": 0.967,
+      "position_label": "END",
+      "context": "olkol chckhy dal chckhy olkain olkeeyr pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin",
+      "context_before": "olkol chckhy dal chckhy olkain olkeeyr pcheol shedy qokaiin sholdy",
+      "context_after": "shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 1233,
+      "relative_position": 0.97,
+      "position_label": "END",
+      "context": "olkain olkeeyr pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy okalchy okalchy okalchy",
+      "context_before": "olkain olkeeyr pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy",
+      "context_after": "shedy qokaiin sholdy pcheol shedy qokaiin sholdy okalchy okalchy okalchy"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pcheol",
+      "position_in_entry": 1237,
+      "relative_position": 0.973,
+      "position_label": "END",
+      "context": "qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy okalchy okalchy okalchy olkeedy olkeedy olkeedy okain",
+      "context_before": "qokaiin sholdy pcheol shedy qokaiin sholdy pcheol shedy qokaiin sholdy",
+      "context_after": "shedy qokaiin sholdy okalchy okalchy okalchy olkeedy olkeedy olkeedy okain"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "tol",
+      "position_in_entry": 619,
+      "relative_position": 0.487,
+      "position_label": "MIDDLE",
+      "context": "qokedy rsheedar oinaly tolsheol qokedy qolkedy rshedy qokedy rsheedar oinoly tol sheol qokedy qol kedy rshedy qokedy rshee dar ainaly tolsheol",
+      "context_before": "qokedy rsheedar oinaly tolsheol qokedy qolkedy rshedy qokedy rsheedar oinoly",
+      "context_after": "sheol qokedy qol kedy rshedy qokedy rshee dar ainaly tolsheol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pol",
+      "position_in_entry": 928,
+      "relative_position": 0.73,
+      "position_label": "END",
+      "context": "qokechedy qotar daiin chey qoky shedy qokaiin olkeedy qokechedy qotar pol olor chey qokain shedy qokain olchesy ol r aindar pol",
+      "context_before": "qokechedy qotar daiin chey qoky shedy qokaiin olkeedy qokechedy qotar",
+      "context_after": "olor chey qokain shedy qokain olchesy ol r aindar pol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pol",
+      "position_in_entry": 938,
+      "relative_position": 0.738,
+      "position_label": "END",
+      "context": "pol olor chey qokain shedy qokain olchesy ol r aindar pol olor chey qokain shedy qokeiin dlchery ol r aindar pol",
+      "context_before": "pol olor chey qokain shedy qokain olchesy ol r aindar",
+      "context_after": "olor chey qokain shedy qokeiin dlchery ol r aindar pol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pol",
+      "position_in_entry": 948,
+      "relative_position": 0.746,
+      "position_label": "END",
+      "context": "pol olor chey qokain shedy qokeiin dlchery ol r aindar pol olor chey qokaiin shedy qokaiin dlchesy ol raiin dar pol",
+      "context_before": "pol olor chey qokain shedy qokeiin dlchery ol r aindar",
+      "context_after": "olor chey qokaiin shedy qokaiin dlchesy ol raiin dar pol"
+    },
+    {
+      "b_folio": "f82v",
+      "a_heading": "pol",
+      "position_in_entry": 958,
+      "relative_position": 0.754,
+      "position_label": "END",
+      "context": "pol olor chey qokaiin shedy qokaiin dlchesy ol raiin dar pol olor chey qokain shedy qokain olchesy ol r ain dar",
+      "context_before": "pol olor chey qokaiin shedy qokaiin dlchesy ol raiin dar",
+      "context_after": "olor chey qokain shedy qokain olchesy ol r ain dar"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "tol",
+      "position_in_entry": 907,
+      "relative_position": 0.656,
+      "position_label": "MIDDLE",
+      "context": "otal qokeedy qolchey qokeey qokedy chedy otal otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey",
+      "context_before": "otal qokeedy qolchey qokeey qokedy chedy otal otchey qokeey qoky",
+      "context_after": "shedy qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "tol",
+      "position_in_entry": 913,
+      "relative_position": 0.661,
+      "position_label": "MIDDLE",
+      "context": "otal otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey",
+      "context_before": "otal otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky",
+      "context_after": "shedy qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "tol",
+      "position_in_entry": 919,
+      "relative_position": 0.665,
+      "position_label": "MIDDLE",
+      "context": "qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky tol shedy qekyldgy dain chedy",
+      "context_before": "qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky",
+      "context_after": "shedy qokylddy otchey qokeey qoky tol shedy qekyldgy dain chedy"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "tol",
+      "position_in_entry": 925,
+      "relative_position": 0.669,
+      "position_label": "MIDDLE",
+      "context": "qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky tol shedy qekyldgy dain chedy qokeedy shckhedy shckhedy dain chedy qoreedy",
+      "context_before": "qokylddy otchey qokeey qoky tol shedy qokylddy otchey qokeey qoky",
+      "context_after": "shedy qekyldgy dain chedy qokeedy shckhedy shckhedy dain chedy qoreedy"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "pchor",
+      "position_in_entry": 287,
+      "relative_position": 0.208,
+      "position_label": "BEGINNING",
+      "context": "shecthedchy qoky chedy chary pchedal otedy shecthedshy qoky chedy chary pchor checphedy qokedy lsheedy qokchdy r shedkedy qofshdy qopy pchor checphedy",
+      "context_before": "shecthedchy qoky chedy chary pchedal otedy shecthedshy qoky chedy chary",
+      "context_after": "checphedy qokedy lsheedy qokchdy r shedkedy qofshdy qopy pchor checphedy"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "pchor",
+      "position_in_entry": 296,
+      "relative_position": 0.214,
+      "position_label": "BEGINNING",
+      "context": "chary pchor checphedy qokedy lsheedy qokchdy r shedkedy qofshdy qopy pchor checphedy qokedy lsheedy qokchdy rshedkedy qopshdy qopy pchor checphedy qokedy",
+      "context_before": "chary pchor checphedy qokedy lsheedy qokchdy r shedkedy qofshdy qopy",
+      "context_after": "checphedy qokedy lsheedy qokchdy rshedkedy qopshdy qopy pchor checphedy qokedy"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "pchor",
+      "position_in_entry": 304,
+      "relative_position": 0.22,
+      "position_label": "BEGINNING",
+      "context": "qofshdy qopy pchor checphedy qokedy lsheedy qokchdy rshedkedy qopshdy qopy pchor checphedy qokedy lshedy qokchdy rshed kedy qopshdy qopy pchor checphedy",
+      "context_before": "qofshdy qopy pchor checphedy qokedy lsheedy qokchdy rshedkedy qopshdy qopy",
+      "context_after": "checphedy qokedy lshedy qokchdy rshed kedy qopshdy qopy pchor checphedy"
+    },
+    {
+      "b_folio": "f83r",
+      "a_heading": "pchor",
+      "position_in_entry": 313,
+      "relative_position": 0.226,
+      "position_label": "BEGINNING",
+      "context": "qopy pchor checphedy qokedy lshedy qokchdy rshed kedy qopshdy qopy pchor checphedy qokedy lsheedy qokchdy r shedkedy qofshdy qopy olkeey rchs",
+      "context_before": "qopy pchor checphedy qokedy lshedy qokchdy rshed kedy qopshdy qopy",
+      "context_after": "checphedy qokedy lsheedy qokchdy r shedkedy qofshdy qopy olkeey rchs"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tor",
+      "position_in_entry": 191,
+      "relative_position": 0.135,
+      "position_label": "BEGINNING",
+      "context": "qokedy qokeedy qokedy chedy okain chey qokedy dar olar dy tor shedy tedy rol ol cheol shedy shckhy qokal olkedy tor",
+      "context_before": "qokedy qokeedy qokedy chedy okain chey qokedy dar olar dy",
+      "context_after": "shedy tedy rol ol cheol shedy shckhy qokal olkedy tor"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tor",
+      "position_in_entry": 201,
+      "relative_position": 0.142,
+      "position_label": "BEGINNING",
+      "context": "tor shedy tedy rol ol cheol shedy shckhy qokal olkedy tor shedytedy ol olcheol shedy sckhy qokal olkedy tor shedy tedy",
+      "context_before": "tor shedy tedy rol ol cheol shedy shckhy qokal olkedy",
+      "context_after": "shedytedy ol olcheol shedy sckhy qokal olkedy tor shedy tedy"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tor",
+      "position_in_entry": 209,
+      "relative_position": 0.147,
+      "position_label": "BEGINNING",
+      "context": "qokal olkedy tor shedytedy ol olcheol shedy sckhy qokal olkedy tor shedy tedy rol ol cheol shedy shckhy qokal olkedy tor",
+      "context_before": "qokal olkedy tor shedytedy ol olcheol shedy sckhy qokal olkedy",
+      "context_after": "shedy tedy rol ol cheol shedy shckhy qokal olkedy tor"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tor",
+      "position_in_entry": 219,
+      "relative_position": 0.155,
+      "position_label": "BEGINNING",
+      "context": "tor shedy tedy rol ol cheol shedy shckhy qokal olkedy tor shedytedy o*l ol cheol shedy shckhy qokal olkedy pchol cphol",
+      "context_before": "tor shedy tedy rol ol cheol shedy shckhy qokal olkedy",
+      "context_after": "shedytedy o*l ol cheol shedy shckhy qokal olkedy pchol cphol"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tor",
+      "position_in_entry": 448,
+      "relative_position": 0.316,
+      "position_label": "BEGINNING",
+      "context": "qokey lshedy qokaiin chol cheky okal y chey okal chedy tor y otshedy qokey l shedy qotchsdy ykeedy qokal ol shedy",
+      "context_before": "qokey lshedy qokaiin chol cheky okal y chey okal chedy",
+      "context_after": "y otshedy qokey l shedy qotchsdy ykeedy qokal ol shedy"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "pshol",
+      "position_in_entry": 364,
+      "relative_position": 0.257,
+      "position_label": "BEGINNING",
+      "context": "chedy qokey s ol yqokain qolkeey qotedy qokain shedy salchedy pshol pchcfhdy qokeedy dy qokedy daiin shckhedy qokaiin checthy dar checthy",
+      "context_before": "chedy qokey s ol yqokain qolkeey qotedy qokain shedy salchedy",
+      "context_after": "pchcfhdy qokeedy dy qokedy daiin shckhedy qokaiin checthy dar checthy"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "pshol",
+      "position_in_entry": 387,
+      "relative_position": 0.273,
+      "position_label": "BEGINNING",
+      "context": "qokeedy dy qokedy daiin shckhedy qokaiin checthy dar checthy am pshol pchcfhdy qokeedy dy qokedy daiin shckhedy qokaiin checthy dar checthy",
+      "context_before": "qokeedy dy qokedy daiin shckhedy qokaiin checthy dar checthy am",
+      "context_after": "pchcfhdy qokeedy dy qokedy daiin shckhedy qokaiin checthy dar checthy"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tol",
+      "position_in_entry": 86,
+      "relative_position": 0.061,
+      "position_label": "BEGINNING",
+      "context": "chedy qokeey otedy dytedy okeedy olshed opshed ykshedy qotedy opoly tol or sheey chckhdy schckhy dal yshedy otedy qol or ol",
+      "context_before": "chedy qokeey otedy dytedy okeedy olshed opshed ykshedy qotedy opoly",
+      "context_after": "or sheey chckhdy schckhy dal yshedy otedy qol or ol"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tol",
+      "position_in_entry": 112,
+      "relative_position": 0.079,
+      "position_label": "BEGINNING",
+      "context": "schckhy dal yshedy otedy qol or ol eedy qokeey orody tol or sheey chckhdy schckhy dal yshedy otedy qol or oleedy",
+      "context_before": "schckhy dal yshedy otedy qol or ol eedy qokeey orody",
+      "context_after": "or sheey chckhdy schckhy dal yshedy otedy qol or oleedy"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "tol",
+      "position_in_entry": 125,
+      "relative_position": 0.088,
+      "position_label": "BEGINNING",
+      "context": "chckhdy schckhy dal yshedy otedy qol or oleedy qokeey oroly tol or sheey chckhdy schckhy dal y shedy otedy qol or",
+      "context_before": "chckhdy schckhy dal yshedy otedy qol or oleedy qokeey oroly",
+      "context_after": "or sheey chckhdy schckhy dal y shedy otedy qol or"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "pol",
+      "position_in_entry": 558,
+      "relative_position": 0.394,
+      "position_label": "MIDDLE",
+      "context": "qotedy rshedy qolchey oteey qol shedy ol dain ol or pol tar shedy qokedy okal shey qokar chckhy otchey qokchedy chey",
+      "context_before": "qotedy rshedy qolchey oteey qol shedy ol dain ol or",
+      "context_after": "tar shedy qokedy okal shey qokar chckhy otchey qokchedy chey"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "pol",
+      "position_in_entry": 570,
+      "relative_position": 0.402,
+      "position_label": "MIDDLE",
+      "context": "shedy qokedy okal shey qokar chckhy otchey qokchedy chey qokaiin pol tar shedy qokedy okal shey qokarchckhy otchey qokchedy ecphey qokaiin",
+      "context_before": "shedy qokedy okal shey qokar chckhy otchey qokchedy chey qokaiin",
+      "context_after": "tar shedy qokedy okal shey qokarchckhy otchey qokchedy ecphey qokaiin"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "pol",
+      "position_in_entry": 581,
+      "relative_position": 0.41,
+      "position_label": "MIDDLE",
+      "context": "tar shedy qokedy okal shey qokarchckhy otchey qokchedy ecphey qokaiin pol tar shedy qokedy okal shey qokar chckhy otchey qokchedy chey",
+      "context_before": "tar shedy qokedy okal shey qokarchckhy otchey qokchedy ecphey qokaiin",
+      "context_after": "tar shedy qokedy okal shey qokar chckhy otchey qokchedy chey"
+    },
+    {
+      "b_folio": "f84r",
+      "a_heading": "pol",
+      "position_in_entry": 593,
+      "relative_position": 0.418,
+      "position_label": "MIDDLE",
+      "context": "shedy qokedy okal shey qokar chckhy otchey qokchedy chey qokaiin pol tar shedy qokedy okal shey qokar chckhy otchey qokchedy chey",
+      "context_before": "shedy qokedy okal shey qokar chckhy otchey qokchedy chey qokaiin",
+      "context_after": "tar shedy qokedy okal shey qokar chckhy otchey qokchedy chey"
+    },
+    {
+      "b_folio": "f84v",
+      "a_heading": "kor",
+      "position_in_entry": 30,
+      "relative_position": 0.022,
+      "position_label": "BEGINNING",
+      "context": "okiiny sol okaly s oiin okeeey s ol okal y kor shedy otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar",
+      "context_before": "okiiny sol okaly s oiin okeeey s ol okal y",
+      "context_after": "shedy otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar"
+    },
+    {
+      "b_folio": "f84v",
+      "a_heading": "kor",
+      "position_in_entry": 36,
+      "relative_position": 0.026,
+      "position_label": "BEGINNING",
+      "context": "s ol okal y kor shedy otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar",
+      "context_before": "s ol okal y kor shedy otedy qotedy otedar cfhdorol",
+      "context_after": "shedy otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar"
+    },
+    {
+      "b_folio": "f84v",
+      "a_heading": "kor",
+      "position_in_entry": 42,
+      "relative_position": 0.031,
+      "position_label": "BEGINNING",
+      "context": "otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar cfhdarol kor shedy otedy qotedy otedar",
+      "context_before": "otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar cfhdorol",
+      "context_after": "shedy otedy qotedy otedar cfhdarol kor shedy otedy qotedy otedar"
+    },
+    {
+      "b_folio": "f84v",
+      "a_heading": "kor",
+      "position_in_entry": 48,
+      "relative_position": 0.035,
+      "position_label": "BEGINNING",
+      "context": "otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar cfhdarol kor shedy otedy qotedy otedar cfhd ar ol oteey qokeey okey",
+      "context_before": "otedy qotedy otedar cfhdorol kor shedy otedy qotedy otedar cfhdarol",
+      "context_after": "shedy otedy qotedy otedar cfhd ar ol oteey qokeey okey"
+    },
+    {
+      "b_folio": "f84v",
+      "a_heading": "kor",
+      "position_in_entry": 760,
+      "relative_position": 0.557,
+      "position_label": "MIDDLE",
+      "context": "shedy cthy korol orar ychckhy qokeey olkaiin okol shedy cthy kor ol orar ychckhy ycheey okeedy olkain olchey saiin oly dshedy",
+      "context_before": "shedy cthy korol orar ychckhy qokeey olkaiin okol shedy cthy",
+      "context_after": "ol orar ychckhy ycheey okeedy olkain olchey saiin oly dshedy"
+    },
+    {
+      "b_folio": "f84v",
+      "a_heading": "tol",
+      "position_in_entry": 1118,
+      "relative_position": 0.819,
+      "position_label": "END",
+      "context": "chedy okedy lol dorchy shor ol okain shedy ol shedy tol okeedy chedy okedy lol darchy qokey sol kedy okey lkain",
+      "context_before": "chedy okedy lol dorchy shor ol okain shedy ol shedy",
+      "context_after": "okeedy chedy okedy lol darchy qokey sol kedy okey lkain"
+    },
+    {
+      "b_folio": "f85r1",
+      "a_heading": "podaiin",
+      "position_in_entry": 568,
+      "relative_position": 0.858,
+      "position_label": "END",
+      "context": "chdy chdy otal otchdy otalom chdy otal otchdy otal om podaiin shdar ypchdar dar ypchdy qopol dar keshor dchdal cholairy podaiin",
+      "context_before": "chdy chdy otal otchdy otalom chdy otal otchdy otal om",
+      "context_after": "shdar ypchdar dar ypchdy qopol dar keshor dchdal cholairy podaiin"
+    },
+    {
+      "b_folio": "f85r1",
+      "a_heading": "podaiin",
+      "position_in_entry": 578,
+      "relative_position": 0.873,
+      "position_label": "END",
+      "context": "podaiin shdar ypchdar dar ypchdy qopol dar keshor dchdal cholairy podaiin shdar pchdar dar ypchdy qopol dar keshar dchdal cholairy ytor",
+      "context_before": "podaiin shdar ypchdar dar ypchdy qopol dar keshor dchdal cholairy",
+      "context_after": "shdar pchdar dar ypchdy qopol dar keshar dchdal cholairy ytor"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "tol",
+      "position_in_entry": 350,
+      "relative_position": 0.818,
+      "position_label": "END",
+      "context": "sheey qokey or aiin sheeor sar al ol sheey qockheey tol shs or aiin ol keeod lcheody okedy qokeody qoaiin al",
+      "context_before": "sheey qokey or aiin sheeor sar al ol sheey qockheey",
+      "context_after": "shs or aiin ol keeod lcheody okedy qokeody qoaiin al"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "tol",
+      "position_in_entry": 361,
+      "relative_position": 0.843,
+      "position_label": "END",
+      "context": "shs or aiin ol keeod lcheody okedy qokeody qoaiin al tol shsor aiin ol keeod lcheody okedy qokeody qoaino** tol shes",
+      "context_before": "shs or aiin ol keeod lcheody okedy qokeody qoaiin al",
+      "context_after": "shsor aiin ol keeod lcheody okedy qokeody qoaino** tol shes"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "tol",
+      "position_in_entry": 370,
+      "relative_position": 0.864,
+      "position_label": "END",
+      "context": "al tol shsor aiin ol keeod lcheody okedy qokeody qoaino** tol shes or aiin ol keeod lcheody okedy qokeody qoain ar",
+      "context_before": "al tol shsor aiin ol keeod lcheody okedy qokeody qoaino**",
+      "context_after": "shes or aiin ol keeod lcheody okedy qokeody qoain ar"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "sho",
+      "position_in_entry": 246,
+      "relative_position": 0.575,
+      "position_label": "MIDDLE",
+      "context": "dtedair chody sheos otedos qokechy pchdeedy dan ol dol oty sho pol otoldyl pchedar ar ocpor otees oes aiin olkeor dar",
+      "context_before": "dtedair chody sheos otedos qokechy pchdeedy dan ol dol oty",
+      "context_after": "pol otoldyl pchedar ar ocpor otees oes aiin olkeor dar"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "sho",
+      "position_in_entry": 280,
+      "relative_position": 0.654,
+      "position_label": "MIDDLE",
+      "context": "dtodair chody sheos otedor qokechy pchdady dan ol dol oty sho pol opoldyl pchsodar oedy qokeol qoeol oqokeol dar ol olair",
+      "context_before": "dtodair chody sheos otedor qokechy pchdady dan ol dol oty",
+      "context_after": "pol opoldyl pchsodar oedy qokeol qoeol oqokeol dar ol olair"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "pcheodar",
+      "position_in_entry": 15,
+      "relative_position": 0.035,
+      "position_label": "BEGINNING",
+      "context": "qody cheepchdy lpchedy olkar shdar dchdor qopcher cher oseeedar odaiin pcheodar chdair orarorchy shar opchsey otedy chcphhy chedy sar shed odar",
+      "context_before": "qody cheepchdy lpchedy olkar shdar dchdor qopcher cher oseeedar odaiin",
+      "context_after": "chdair orarorchy shar opchsey otedy chcphhy chedy sar shed odar"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "pcheodar",
+      "position_in_entry": 55,
+      "relative_position": 0.129,
+      "position_label": "BEGINNING",
+      "context": "cheepchedy *pchedy olkar shdar dchdor qopches ches or eeedar odaiin pcheodar chdair or arorchey shar opchshy otedy chcphey chedy sas shed",
+      "context_before": "cheepchedy *pchedy olkar shdar dchdor qopches ches or eeedar odaiin",
+      "context_after": "chdair or arorchey shar opchshy otedy chcphey chedy sas shed"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "pcheodar",
+      "position_in_entry": 300,
+      "relative_position": 0.701,
+      "position_label": "END",
+      "context": "olair am chsodar oedy qokeol qoeol oqokeol dar ol olairam pcheodar oedy qokeol qoeol oqokeol dar ol ol air am ycseol",
+      "context_before": "olair am chsodar oedy qokeol qoeol oqokeol dar ol olairam",
+      "context_after": "oedy qokeol qoeol oqokeol dar ol ol air am ycseol"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "pol",
+      "position_in_entry": 247,
+      "relative_position": 0.577,
+      "position_label": "MIDDLE",
+      "context": "chody sheos otedos qokechy pchdeedy dan ol dol oty sho pol otoldyl pchedar ar ocpor otees oes aiin olkeor dar air",
+      "context_before": "chody sheos otedos qokechy pchdeedy dan ol dol oty sho",
+      "context_after": "otoldyl pchedar ar ocpor otees oes aiin olkeor dar air"
+    },
+    {
+      "b_folio": "f86v4",
+      "a_heading": "pol",
+      "position_in_entry": 281,
+      "relative_position": 0.657,
+      "position_label": "MIDDLE",
+      "context": "chody sheos otedor qokechy pchdady dan ol dol oty sho pol opoldyl pchsodar oedy qokeol qoeol oqokeol dar ol olair am",
+      "context_before": "chody sheos otedor qokechy pchdady dan ol dol oty sho",
+      "context_after": "opoldyl pchsodar oedy qokeol qoeol oqokeol dar ol olair am"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "pol",
+      "position_in_entry": 392,
+      "relative_position": 0.405,
+      "position_label": "MIDDLE",
+      "context": "dalol ytal dar aiin chol olkchey lkar otal qotar dam pol shopchey pchecfhey or aiiin qokaiin cholkar pol sheopchey pchcfhy or",
+      "context_before": "dalol ytal dar aiin chol olkchey lkar otal qotar dam",
+      "context_after": "shopchey pchecfhey or aiiin qokaiin cholkar pol sheopchey pchcfhy or"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "pol",
+      "position_in_entry": 399,
+      "relative_position": 0.413,
+      "position_label": "MIDDLE",
+      "context": "otal qotar dam pol shopchey pchecfhey or aiiin qokaiin cholkar pol sheopchey pchcfhy or aiin qokaiin cholkar pdaiin otol podaiin ocphey",
+      "context_before": "otal qotar dam pol shopchey pchecfhey or aiiin qokaiin cholkar",
+      "context_after": "sheopchey pchcfhy or aiin qokaiin cholkar pdaiin otol podaiin ocphey"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "podaiin",
+      "position_in_entry": 408,
+      "relative_position": 0.422,
+      "position_label": "MIDDLE",
+      "context": "cholkar pol sheopchey pchcfhy or aiin qokaiin cholkar pdaiin otol podaiin ocphey opchor olkshed qofod opdaiin adar dairody pdainy otol podaiin",
+      "context_before": "cholkar pol sheopchey pchcfhy or aiin qokaiin cholkar pdaiin otol",
+      "context_after": "ocphey opchor olkshed qofod opdaiin adar dairody pdainy otol podaiin"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "podaiin",
+      "position_in_entry": 418,
+      "relative_position": 0.432,
+      "position_label": "MIDDLE",
+      "context": "podaiin ocphey opchor olkshed qofod opdaiin adar dairody pdainy otol podaiin ocphey opchor olkshed qofod opdaiin adar dairody oreeey lkeeor daiin",
+      "context_before": "podaiin ocphey opchor olkshed qofod opdaiin adar dairody pdainy otol",
+      "context_after": "ocphey opchor olkshed qofod opdaiin adar dairody oreeey lkeeor daiin"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "paiin",
+      "position_in_entry": 949,
+      "relative_position": 0.981,
+      "position_label": "END",
+      "context": "shor qoky chorolk chakaiin qoal kaiin qoaiin or aiin ykedy paiin otar otolkshy qokshey ar otalky chear aiodam paiin otar otol",
+      "context_before": "shor qoky chorolk chakaiin qoal kaiin qoaiin or aiin ykedy",
+      "context_after": "otar otolkshy qokshey ar otalky chear aiodam paiin otar otol"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "paiin",
+      "position_in_entry": 957,
+      "relative_position": 0.99,
+      "position_label": "END",
+      "context": "aiin ykedy paiin otar otolkshy qokshey ar otalky chear aiodam paiin otar otol kshy qok shey ar otalky chear aiadam",
+      "context_before": "aiin ykedy paiin otar otolkshy qokshey ar otalky chear aiodam",
+      "context_after": "otar otol kshy qok shey ar otalky chear aiadam"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "par",
+      "position_in_entry": 343,
+      "relative_position": 0.355,
+      "position_label": "MIDDLE",
+      "context": "taiin okaiin qokaiin yteey otaiin chey okam qokar qokaiin okaiin par or aiin dar aiiin qckhear shoifhy qotedy opchdy olain ar",
+      "context_before": "taiin okaiin qokaiin yteey otaiin chey okam qokar qokaiin okaiin",
+      "context_after": "or aiin dar aiiin qckhear shoifhy qotedy opchdy olain ar"
+    },
+    {
+      "b_folio": "f86v6",
+      "a_heading": "par",
+      "position_in_entry": 356,
+      "relative_position": 0.368,
+      "position_label": "MIDDLE",
+      "context": "dar aiiin qckhear shoifhy qotedy opchdy olain ar alkar am par oraiin dar aiin qckhear shocfhy qotedy opchdy olaiin ar alkar",
+      "context_before": "dar aiiin qckhear shoifhy qotedy opchdy olain ar alkar am",
+      "context_after": "oraiin dar aiin qckhear shocfhy qotedy opchdy olaiin ar alkar"
+    },
+    {
+      "b_folio": "f86v5",
+      "a_heading": "tor",
+      "position_in_entry": 147,
+      "relative_position": 0.184,
+      "position_label": "BEGINNING",
+      "context": "otol kshdy qopcheey shdar fchcfhy octhal shckhy otshey opor shey tor ar otar aiin chdy tar cheeg octhal shckhy otshey opor",
+      "context_before": "otol kshdy qopcheey shdar fchcfhy octhal shckhy otshey opor shey",
+      "context_after": "ar otar aiin chdy tar cheeg octhal shckhy otshey opor"
+    },
+    {
+      "b_folio": "f86v5",
+      "a_heading": "tor",
+      "position_in_entry": 159,
+      "relative_position": 0.199,
+      "position_label": "BEGINNING",
+      "context": "otar aiin chdy tar cheeg octhal shckhy otshey opor shey tor ar otar aiin chdy tar cheem lkaiin otain r al",
+      "context_before": "otar aiin chdy tar cheeg octhal shckhy otshey opor shey",
+      "context_after": "ar otar aiin chdy tar cheem lkaiin otain r al"
+    },
+    {
+      "b_folio": "f86v5",
+      "a_heading": "tol",
+      "position_in_entry": 638,
+      "relative_position": 0.797,
+      "position_label": "END",
+      "context": "olkeeeary odaiin otches chey chodaiin shedy otal kchol shy olkeeeary tol kaiin ytchdy chol ytedy ytain qodaiin ytody ykeshy ar tol",
+      "context_before": "olkeeeary odaiin otches chey chodaiin shedy otal kchol shy olkeeeary",
+      "context_after": "kaiin ytchdy chol ytedy ytain qodaiin ytody ykeshy ar tol"
+    },
+    {
+      "b_folio": "f86v5",
+      "a_heading": "tol",
+      "position_in_entry": 648,
+      "relative_position": 0.809,
+      "position_label": "END",
+      "context": "tol kaiin ytchdy chol ytedy ytain qodaiin ytody ykeshy ar tol kaiin ytchdy chol ytedy ytaiin qodaiin ytody ykeshy ar dshey",
+      "context_before": "tol kaiin ytchdy chol ytedy ytain qodaiin ytody ykeshy ar",
+      "context_after": "kaiin ytchdy chol ytedy ytaiin qodaiin ytody ykeshy ar dshey"
+    },
+    {
+      "b_folio": "f86v5",
+      "a_heading": "pchor",
+      "position_in_entry": 559,
+      "relative_position": 0.698,
+      "position_label": "END",
+      "context": "air shoar pshody shody qopchy ocfhdy dar olpshy dam shey pchor ypchor aiin otar shody pchykar ytar odar oeees aral om",
+      "context_before": "air shoar pshody shody qopchy ocfhdy dar olpshy dam shey",
+      "context_after": "ypchor aiin otar shody pchykar ytar odar oeees aral om"
+    },
+    {
+      "b_folio": "f86v5",
+      "a_heading": "pchor",
+      "position_in_entry": 570,
+      "relative_position": 0.712,
+      "position_label": "END",
+      "context": "ypchor aiin otar shody pchykar ytar odar oeees aral om pchor ypchor aiin otar shody pchykar ytar odar oches aral om",
+      "context_before": "ypchor aiin otar shody pchykar ytar odar oeees aral om",
+      "context_after": "ypchor aiin otar shody pchykar ytar odar oches aral om"
+    },
+    {
+      "b_folio": "f94v",
+      "a_heading": "par",
+      "position_in_entry": 114,
+      "relative_position": 0.582,
+      "position_label": "MIDDLE",
+      "context": "toky shey qokaiin pchedaiin sheocthy daiin cphedy pchd oteey qotchy par ar pchedaiin sheocthy daiin cphedy pchd oteey qotchy parar ytar",
+      "context_before": "toky shey qokaiin pchedaiin sheocthy daiin cphedy pchd oteey qotchy",
+      "context_after": "ar pchedaiin sheocthy daiin cphedy pchd oteey qotchy parar ytar"
+    },
+    {
+      "b_folio": "f95r2",
+      "a_heading": "tor",
+      "position_in_entry": 88,
+      "relative_position": 0.367,
+      "position_label": "MIDDLE",
+      "context": "chckhy qokol chkar ol otaiin ofar okaiin aram daiin shody tor or okain chckhey daiin shody tor or okain chckhey daiin",
+      "context_before": "chckhy qokol chkar ol otaiin ofar okaiin aram daiin shody",
+      "context_after": "or okain chckhey daiin shody tor or okain chckhey daiin"
+    },
+    {
+      "b_folio": "f95r2",
+      "a_heading": "tor",
+      "position_in_entry": 94,
+      "relative_position": 0.392,
+      "position_label": "MIDDLE",
+      "context": "okaiin aram daiin shody tor or okain chckhey daiin shody tor or okain chckhey daiin shody tor or okain chckhey tshod",
+      "context_before": "okaiin aram daiin shody tor or okain chckhey daiin shody",
+      "context_after": "or okain chckhey daiin shody tor or okain chckhey tshod"
+    },
+    {
+      "b_folio": "f95r2",
+      "a_heading": "tor",
+      "position_in_entry": 100,
+      "relative_position": 0.417,
+      "position_label": "MIDDLE",
+      "context": "okain chckhey daiin shody tor or okain chckhey daiin shody tor or okain chckhey tshod qokal ody chcfhol okal chedy dalshdy",
+      "context_before": "okain chckhey daiin shody tor or okain chckhey daiin shody",
+      "context_after": "or okain chckhey tshod qokal ody chcfhol okal chedy dalshdy"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "kshol",
+      "position_in_entry": 154,
+      "relative_position": 0.655,
+      "position_label": "MIDDLE",
+      "context": "qodaiin fcho daiin chtal dar okedy okchedy tshey taiin ol kshol kshed qokeeod raiin qokeey qoko skchdy tshey taiin ol kshol",
+      "context_before": "qodaiin fcho daiin chtal dar okedy okchedy tshey taiin ol",
+      "context_after": "kshed qokeeod raiin qokeey qoko skchdy tshey taiin ol kshol"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "kshol",
+      "position_in_entry": 164,
+      "relative_position": 0.698,
+      "position_label": "END",
+      "context": "kshol kshed qokeeod raiin qokeey qoko skchdy tshey taiin ol kshol kshed qokeeod raiin qokeey qokoskchdy sain sheyk chody kchedaiin chedaiin",
+      "context_before": "kshol kshed qokeeod raiin qokeey qoko skchdy tshey taiin ol",
+      "context_after": "kshed qokeeod raiin qokeey qokoskchdy sain sheyk chody kchedaiin chedaiin"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "sho",
+      "position_in_entry": 204,
+      "relative_position": 0.868,
+      "position_label": "END",
+      "context": "qokain pshedar shedy kshedy qotches oraiin shekaiin otaiin tshes qokain sho tshey s aiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal",
+      "context_before": "qokain pshedar shedy kshedy qotches oraiin shekaiin otaiin tshes qokain",
+      "context_after": "tshey s aiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "sho",
+      "position_in_entry": 215,
+      "relative_position": 0.915,
+      "position_label": "END",
+      "context": "tshey s aiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal sho tshey saiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal lshee",
+      "context_before": "tshey s aiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal",
+      "context_after": "tshey saiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal lshee"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "fchodaiin",
+      "position_in_entry": 137,
+      "relative_position": 0.583,
+      "position_label": "MIDDLE",
+      "context": "tar otar chdy kchdy dol kaiin otardy dchody sheos qodaiin fchodaiin chtal dar okedy okchedy dchody sheos qodaiin fcho daiin chtal",
+      "context_before": "tar otar chdy kchdy dol kaiin otardy dchody sheos qodaiin",
+      "context_after": "chtal dar okedy okchedy dchody sheos qodaiin fcho daiin chtal"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "tshor",
+      "position_in_entry": 20,
+      "relative_position": 0.085,
+      "position_label": "BEGINNING",
+      "context": "choepaiin oekshy qofchdaiin shoy far okshy okaiin ar alfshe* okshy tshor qoksh qokain otar oty qokedy otal ytchdy qokar am okshy",
+      "context_before": "choepaiin oekshy qofchdaiin shoy far okshy okaiin ar alfshe* okshy",
+      "context_after": "qoksh qokain otar oty qokedy otal ytchdy qokar am okshy"
+    },
+    {
+      "b_folio": "f95v1",
+      "a_heading": "tshor",
+      "position_in_entry": 31,
+      "relative_position": 0.132,
+      "position_label": "BEGINNING",
+      "context": "qoksh qokain otar oty qokedy otal ytchdy qokar am okshy tshor qoksh qokaiin otar oty qokedy otal ytchdy qokar am tchody",
+      "context_before": "qoksh qokain otar oty qokedy otal ytchdy qokar am okshy",
+      "context_after": "qoksh qokaiin otar oty qokedy otal ytchdy qokar am tchody"
+    },
+    {
+      "b_folio": "f103r",
+      "a_heading": "tol",
+      "position_in_entry": 24,
+      "relative_position": 0.021,
+      "position_label": "BEGINNING",
+      "context": "shdy ytechy pchy otey ylshy qoteey qotal shedy yshdal *** tol dal dy yshdal dain okal pchedal shdy ytechy pchy otey",
+      "context_before": "shdy ytechy pchy otey ylshy qoteey qotal shedy yshdal ***",
+      "context_after": "dal dy yshdal dain okal pchedal shdy ytechy pchy otey"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pol",
+      "position_in_entry": 0,
+      "relative_position": 0.0,
+      "position_label": "BEGINNING",
+      "context": "pol dar olfchey qoky dy qokeey qokeey daiin okeedaky qotear shedy",
+      "context_before": "",
+      "context_after": "dar olfchey qoky dy qokeey qokeey daiin okeedaky qotear shedy"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pol",
+      "position_in_entry": 24,
+      "relative_position": 0.024,
+      "position_label": "BEGINNING",
+      "context": "olfchey qoky dy qokeey qokeey daiin okeedaky qotear shedy dal pol dar olpchey qoky dy qokeey qokeey daiin okeedaky qotear shedy",
+      "context_before": "olfchey qoky dy qokeey qokeey daiin okeedaky qotear shedy dal",
+      "context_after": "dar olpchey qoky dy qokeey qokeey daiin okeedaky qotear shedy"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pol",
+      "position_in_entry": 290,
+      "relative_position": 0.286,
+      "position_label": "BEGINNING",
+      "context": "shed sal sheal shedy okeedy qokeey lol shedy pchor pchedy pol sheedy opalam sal sheal shedy okeedy qokeey lol shedy pchor",
+      "context_before": "shed sal sheal shedy okeedy qokeey lol shedy pchor pchedy",
+      "context_after": "sheedy opalam sal sheal shedy okeedy qokeey lol shedy pchor"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pol",
+      "position_in_entry": 302,
+      "relative_position": 0.298,
+      "position_label": "BEGINNING",
+      "context": "opalam sal sheal shedy okeedy qokeey lol shedy pchor pchedy pol sheedy opalam dain cseey olshy otey olshedy qotshdy okeey lr",
+      "context_before": "opalam sal sheal shedy okeedy qokeey lol shedy pchor pchedy",
+      "context_after": "sheedy opalam dain cseey olshy otey olshedy qotshdy okeey lr"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pol",
+      "position_in_entry": 440,
+      "relative_position": 0.434,
+      "position_label": "MIDDLE",
+      "context": "cheeey lchealaiin or daiin chey lkeey chalkar cheeyl chealaiin or pol char otar okain shaikhy oteal okain qotal shedy qokeey lolain",
+      "context_before": "cheeey lchealaiin or daiin chey lkeey chalkar cheeyl chealaiin or",
+      "context_after": "char otar okain shaikhy oteal okain qotal shedy qokeey lolain"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pol",
+      "position_in_entry": 451,
+      "relative_position": 0.445,
+      "position_label": "MIDDLE",
+      "context": "char otar okain shaikhy oteal okain qotal shedy qokeey lolain pol char otar okaiin shackhy oteal okaiin qotal shedy qokeey lolaiin",
+      "context_before": "char otar okain shaikhy oteal okain qotal shedy qokeey lolain",
+      "context_after": "char otar okaiin shackhy oteal okaiin qotal shedy qokeey lolaiin"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "sho",
+      "position_in_entry": 328,
+      "relative_position": 0.324,
+      "position_label": "BEGINNING",
+      "context": "olshy otey olshedy qotshdy okeey lraiin otan olshey teeol sheol sho qokeedy shedy qokey oshedy oteedy qokain otar aiin otam teeol",
+      "context_before": "olshy otey olshedy qotshdy okeey lraiin otan olshey teeol sheol",
+      "context_after": "qokeedy shedy qokey oshedy oteedy qokain otar aiin otam teeol"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "sho",
+      "position_in_entry": 340,
+      "relative_position": 0.336,
+      "position_label": "MIDDLE",
+      "context": "shedy qokey oshedy oteedy qokain otar aiin otam teeol sheol sho qokeedy shedy qokey oshedy oteedy qokaiin otar aiin otam tchedal",
+      "context_before": "shedy qokey oshedy oteedy qokain otar aiin otam teeol sheol",
+      "context_after": "qokeedy shedy qokey oshedy oteedy qokaiin otar aiin otam tchedal"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "sho",
+      "position_in_entry": 656,
+      "relative_position": 0.648,
+      "position_label": "MIDDLE",
+      "context": "shey okain chey okeedy por aiin y olcheey chey lkchdy sho chcthy sal araiin qokeey olcheeey chey lkchdy sho chcthy sal",
+      "context_before": "shey okain chey okeedy por aiin y olcheey chey lkchdy",
+      "context_after": "chcthy sal araiin qokeey olcheeey chey lkchdy sho chcthy sal"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "sho",
+      "position_in_entry": 664,
+      "relative_position": 0.655,
+      "position_label": "MIDDLE",
+      "context": "chey lkchdy sho chcthy sal araiin qokeey olcheeey chey lkchdy sho chcthy sal araiin qokeey olcheeey chey lkchdy sho chcthy sal",
+      "context_before": "chey lkchdy sho chcthy sal araiin qokeey olcheeey chey lkchdy",
+      "context_after": "chcthy sal araiin qokeey olcheeey chey lkchdy sho chcthy sal"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "sho",
+      "position_in_entry": 672,
+      "relative_position": 0.663,
+      "position_label": "MIDDLE",
+      "context": "chey lkchdy sho chcthy sal araiin qokeey olcheeey chey lkchdy sho chcthy sal ar aiin qokeey pchear okain opchedy pchol fchedy",
+      "context_before": "chey lkchdy sho chcthy sal araiin qokeey olcheeey chey lkchdy",
+      "context_after": "chcthy sal ar aiin qokeey pchear okain opchedy pchol fchedy"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pchor",
+      "position_in_entry": 288,
+      "relative_position": 0.284,
+      "position_label": "BEGINNING",
+      "context": "qoky qokal shed sal sheal shedy okeedy qokeey lol shedy pchor pchedy pol sheedy opalam sal sheal shedy okeedy qokeey lol",
+      "context_before": "qoky qokal shed sal sheal shedy okeedy qokeey lol shedy",
+      "context_after": "pchedy pol sheedy opalam sal sheal shedy okeedy qokeey lol"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pchor",
+      "position_in_entry": 300,
+      "relative_position": 0.296,
+      "position_label": "BEGINNING",
+      "context": "pol sheedy opalam sal sheal shedy okeedy qokeey lol shedy pchor pchedy pol sheedy opalam dain cseey olshy otey olshedy qotshdy",
+      "context_before": "pol sheedy opalam sal sheal shedy okeedy qokeey lol shedy",
+      "context_after": "pchedy pol sheedy opalam dain cseey olshy otey olshedy qotshdy"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pcheor",
+      "position_in_entry": 127,
+      "relative_position": 0.125,
+      "position_label": "BEGINNING",
+      "context": "ol qoteedy okeedy ycheey qokeey okeey lkees ol qoteedy okeedy pcheor olkeey cheky qokshdy qokaiin okechdy qopchdy qotedy qokain oly pcheor",
+      "context_before": "ol qoteedy okeedy ycheey qokeey okeey lkees ol qoteedy okeedy",
+      "context_after": "olkeey cheky qokshdy qokaiin okechdy qopchdy qotedy qokain oly pcheor"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pcheor",
+      "position_in_entry": 137,
+      "relative_position": 0.135,
+      "position_label": "BEGINNING",
+      "context": "pcheor olkeey cheky qokshdy qokaiin okechdy qopchdy qotedy qokain oly pcheor ol*eey cheky qokshdy qokaiin okechdy qopchdy qotedy qokaiin oly pcheor",
+      "context_before": "pcheor olkeey cheky qokshdy qokaiin okechdy qopchdy qotedy qokain oly",
+      "context_after": "ol*eey cheky qokshdy qokaiin okechdy qopchdy qotedy qokaiin oly pcheor"
+    },
+    {
+      "b_folio": "f103v",
+      "a_heading": "pcheor",
+      "position_in_entry": 147,
+      "relative_position": 0.145,
+      "position_label": "BEGINNING",
+      "context": "pcheor ol*eey cheky qokshdy qokaiin okechdy qopchdy qotedy qokaiin oly pcheor olkeey cheky qokshdy qokaiin okechdy qopchdy qotedy qokaiin oly doin",
+      "context_before": "pcheor ol*eey cheky qokshdy qokaiin okechdy qopchdy qotedy qokaiin oly",
+      "context_after": "olkeey cheky qokshdy qokaiin okechdy qopchdy qotedy qokaiin oly doin"
+    },
+    {
+      "b_folio": "f104r",
+      "a_heading": "tol",
+      "position_in_entry": 203,
+      "relative_position": 0.215,
+      "position_label": "BEGINNING",
+      "context": "ycheeoy qokecho qokol cheeo dam ycheeoy qokecho qokol cheeo dam tol chedal cheockay otyd os l air shdy qokchd octheody cholfor",
+      "context_before": "ycheeoy qokecho qokol cheeo dam ycheeoy qokecho qokol cheeo dam",
+      "context_after": "chedal cheockay otyd os l air shdy qokchd octheody cholfor"
+    },
+    {
+      "b_folio": "f104r",
+      "a_heading": "tol",
+      "position_in_entry": 215,
+      "relative_position": 0.228,
+      "position_label": "BEGINNING",
+      "context": "cheockay otyd os l air shdy qokchd octheody cholfor otalr tol chedal cheockhy otyd osl air shdy qokchd octheody cholfor otalr",
+      "context_before": "cheockay otyd os l air shdy qokchd octheody cholfor otalr",
+      "context_after": "chedal cheockhy otyd osl air shdy qokchd octheody cholfor otalr"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "pcheor",
+      "position_in_entry": 377,
+      "relative_position": 0.412,
+      "position_label": "MIDDLE",
+      "context": "ytaiin otcheochy sarain dcheeoy qokaiin qokaiin lkar ytaiin otcheochy saraiin pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ols",
+      "context_before": "ytaiin otcheochy sarain dcheeoy qokaiin qokaiin lkar ytaiin otcheochy saraiin",
+      "context_after": "chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ols"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "pcheor",
+      "position_in_entry": 390,
+      "relative_position": 0.427,
+      "position_label": "MIDDLE",
+      "context": "cholkshedy qotol sheedy qokchy qotched sho fchor ols aiin chekal pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ols",
+      "context_before": "cholkshedy qotol sheedy qokchy qotched sho fchor ols aiin chekal",
+      "context_after": "chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ols"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "sho",
+      "position_in_entry": 385,
+      "relative_position": 0.421,
+      "position_label": "MIDDLE",
+      "context": "otcheochy saraiin pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ols aiin chekal pcheor chol chpcheor cholkshedy qotol sheedy",
+      "context_before": "otcheochy saraiin pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched",
+      "context_after": "fchor ols aiin chekal pcheor chol chpcheor cholkshedy qotol sheedy"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "sho",
+      "position_in_entry": 398,
+      "relative_position": 0.435,
+      "position_label": "MIDDLE",
+      "context": "aiin chekal pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched sho fchor ols aiin chekal or sheeo lcheedy qokeey qochey qotcheedy",
+      "context_before": "aiin chekal pcheor chol chpcheor cholkshedy qotol sheedy qokchy qotched",
+      "context_after": "fchor ols aiin chekal or sheeo lcheedy qokeey qochey qotcheedy"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "sho",
+      "position_in_entry": 544,
+      "relative_position": 0.595,
+      "position_label": "MIDDLE",
+      "context": "qodaiin chodar chochs pchoror shor sheol sheol sheol qokchedy chdor sho r aiin chpchs aiin al pchoror shor sheol sheol sheol",
+      "context_before": "qodaiin chodar chochs pchoror shor sheol sheol sheol qokchedy chdor",
+      "context_after": "r aiin chpchs aiin al pchoror shor sheol sheol sheol"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "par",
+      "position_in_entry": 244,
+      "relative_position": 0.267,
+      "position_label": "BEGINNING",
+      "context": "polchechy oteoy chotchs cheeta oteeey oteedy qoty ched l cheol par oltedy chedam polchechy oteoy chotchs cheeta otchey oteedy qoty chedl",
+      "context_before": "polchechy oteoy chotchs cheeta oteeey oteedy qoty ched l cheol",
+      "context_after": "oltedy chedam polchechy oteoy chotchs cheeta otchey oteedy qoty chedl"
+    },
+    {
+      "b_folio": "f104v",
+      "a_heading": "par",
+      "position_in_entry": 256,
+      "relative_position": 0.28,
+      "position_label": "BEGINNING",
+      "context": "chedam polchechy oteoy chotchs cheeta otchey oteedy qoty chedl cheol par altedy chedam ycheol cheody qoeechdy qokeol qotaiin chedar cheo lkaiin",
+      "context_before": "chedam polchechy oteoy chotchs cheeta otchey oteedy qoty chedl cheol",
+      "context_after": "altedy chedam ycheol cheody qoeechdy qokeol qotaiin chedar cheo lkaiin"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "pcheor",
+      "position_in_entry": 465,
+      "relative_position": 0.622,
+      "position_label": "MIDDLE",
+      "context": "am ols dchees opchey aeeodeey chefchey dchees opchey aeeodchy chefchey pcheor ain ckheey okeeey paiin ar aiiin chpaiikey sheo pcheey dal",
+      "context_before": "am ols dchees opchey aeeodeey chefchey dchees opchey aeeodchy chefchey",
+      "context_after": "ain ckheey okeeey paiin ar aiiin chpaiikey sheo pcheey dal"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "pcheor",
+      "position_in_entry": 478,
+      "relative_position": 0.639,
+      "position_label": "MIDDLE",
+      "context": "okeeey paiin ar aiiin chpaiikey sheo pcheey dal daiin dam pcheor aiin ckheey okeeey paiin araiin chpainkey sheo pcheey dal daiin",
+      "context_before": "okeeey paiin ar aiiin chpaiikey sheo pcheey dal daiin dam",
+      "context_after": "aiin ckheey okeeey paiin araiin chpainkey sheo pcheey dal daiin"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "pcheey",
+      "position_in_entry": 474,
+      "relative_position": 0.634,
+      "position_label": "MIDDLE",
+      "context": "chefchey pcheor ain ckheey okeeey paiin ar aiiin chpaiikey sheo pcheey dal daiin dam pcheor aiin ckheey okeeey paiin araiin chpainkey",
+      "context_before": "chefchey pcheor ain ckheey okeeey paiin ar aiiin chpaiikey sheo",
+      "context_after": "dal daiin dam pcheor aiin ckheey okeeey paiin araiin chpainkey"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "pcheey",
+      "position_in_entry": 486,
+      "relative_position": 0.65,
+      "position_label": "MIDDLE",
+      "context": "daiin dam pcheor aiin ckheey okeeey paiin araiin chpainkey sheo pcheey dal daiin dam deeedy cheodkedy chedy decthdy daiiils airols deeedy",
+      "context_before": "daiin dam pcheor aiin ckheey okeeey paiin araiin chpainkey sheo",
+      "context_after": "dal daiin dam deeedy cheodkedy chedy decthdy daiiils airols deeedy"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "paiin",
+      "position_in_entry": 0,
+      "relative_position": 0.0,
+      "position_label": "BEGINNING",
+      "context": "paiin dar chcphy qokeey qopaiin ypcheeey saraisl in cheedy kaiin arody",
+      "context_before": "",
+      "context_after": "dar chcphy qokeey qopaiin ypcheeey saraisl in cheedy kaiin arody"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "paiin",
+      "position_in_entry": 17,
+      "relative_position": 0.023,
+      "position_label": "BEGINNING",
+      "context": "in cheedy kaiin arody eey saraisl aiin cheedy kaiin arody paiin dar chcphy qokeey qopaiin ypcheeey sarairl aiin cheedy kaiin arody",
+      "context_before": "in cheedy kaiin arody eey saraisl aiin cheedy kaiin arody",
+      "context_after": "dar chcphy qokeey qopaiin ypcheeey sarairl aiin cheedy kaiin arody"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "paiin",
+      "position_in_entry": 469,
+      "relative_position": 0.627,
+      "position_label": "MIDDLE",
+      "context": "aeeodeey chefchey dchees opchey aeeodchy chefchey pcheor ain ckheey okeeey paiin ar aiiin chpaiikey sheo pcheey dal daiin dam pcheor aiin",
+      "context_before": "aeeodeey chefchey dchees opchey aeeodchy chefchey pcheor ain ckheey okeeey",
+      "context_after": "ar aiiin chpaiikey sheo pcheey dal daiin dam pcheor aiin"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "paiin",
+      "position_in_entry": 482,
+      "relative_position": 0.644,
+      "position_label": "MIDDLE",
+      "context": "chpaiikey sheo pcheey dal daiin dam pcheor aiin ckheey okeeey paiin araiin chpainkey sheo pcheey dal daiin dam deeedy cheodkedy chedy",
+      "context_before": "chpaiikey sheo pcheey dal daiin dam pcheor aiin ckheey okeeey",
+      "context_after": "araiin chpainkey sheo pcheey dal daiin dam deeedy cheodkedy chedy"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "kor",
+      "position_in_entry": 701,
+      "relative_position": 0.937,
+      "position_label": "END",
+      "context": "aralkam ypchedy okaiir opcheedy qokair dar kol otar ol qokal kor orol pchey ofory ypchedy okaiir opcheedy qokair dar kal otar",
+      "context_before": "aralkam ypchedy okaiir opcheedy qokair dar kol otar ol qokal",
+      "context_after": "orol pchey ofory ypchedy okaiir opcheedy qokair dar kal otar"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "kor",
+      "position_in_entry": 714,
+      "relative_position": 0.955,
+      "position_label": "END",
+      "context": "ofory ypchedy okaiir opcheedy qokair dar kal otar ol qokal kor orol pchey ofory dyteey otedaiin otar ol chedy ted qotar",
+      "context_before": "ofory ypchedy okaiir opcheedy qokair dar kal otar ol qokal",
+      "context_after": "orol pchey ofory dyteey otedaiin otar ol chedy ted qotar"
+    },
+    {
+      "b_folio": "f105r",
+      "a_heading": "par",
+      "position_in_entry": 128,
+      "relative_position": 0.171,
+      "position_label": "BEGINNING",
+      "context": "por arody shedeeey qopchedy qody qoteody aiin yteody qokor olpshedy par arody shedeeey qopchedy qody qoteody aiin yteody qokor olpshedy ysheeody",
+      "context_before": "por arody shedeeey qopchedy qody qoteody aiin yteody qokor olpshedy",
+      "context_after": "arody shedeeey qopchedy qody qoteody aiin yteody qokor olpshedy ysheeody"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "tor",
+      "position_in_entry": 863,
+      "relative_position": 0.738,
+      "position_label": "END",
+      "context": "odor aiil otaiin oeoar ar al odor ainl otaiin tdol tor oaldar aiir otokeedy karody qoeedy sho qopchedy daiin opairam tdol",
+      "context_before": "odor aiil otaiin oeoar ar al odor ainl otaiin tdol",
+      "context_after": "oaldar aiir otokeedy karody qoeedy sho qopchedy daiin opairam tdol"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "tor",
+      "position_in_entry": 884,
+      "relative_position": 0.756,
+      "position_label": "END",
+      "context": "toroaldar oiir okokeedy karody qoeedy sho qopchedy daiin opairam tdol tor oaldar aiir okokeedy karody qoeedy sho qopchedy daiin opairam dchedy",
+      "context_before": "toroaldar oiir okokeedy karody qoeedy sho qopchedy daiin opairam tdol",
+      "context_after": "oaldar aiir okokeedy karody qoeedy sho qopchedy daiin opairam dchedy"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "pchor",
+      "position_in_entry": 545,
+      "relative_position": 0.466,
+      "position_label": "MIDDLE",
+      "context": "olkaiin olr aiin chey lraiin lkl dl lklor daiin olkaiin pchor chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim pchor",
+      "context_before": "olkaiin olr aiin chey lraiin lkl dl lklor daiin olkaiin",
+      "context_after": "chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim pchor"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "pchor",
+      "position_in_entry": 555,
+      "relative_position": 0.474,
+      "position_label": "MIDDLE",
+      "context": "pchor chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim pchor chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim pchor",
+      "context_before": "pchor chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim",
+      "context_after": "chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim pchor"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "pchor",
+      "position_in_entry": 565,
+      "relative_position": 0.483,
+      "position_label": "MIDDLE",
+      "context": "pchor chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim pchor chedaiin okaiin chol kal qolkaiin oltchdy qopchsd opair orair karaim",
+      "context_before": "pchor chedaiin okaiin cholkal qolkaiin oltchdy qopchsd opair orair karaim",
+      "context_after": "chedaiin okaiin chol kal qolkaiin oltchdy qopchsd opair orair karaim"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "sho",
+      "position_in_entry": 869,
+      "relative_position": 0.743,
+      "position_label": "END",
+      "context": "odor ainl otaiin tdol tor oaldar aiir otokeedy karody qoeedy sho qopchedy daiin opairam tdol toroaldar oiir okokeedy karody qoeedy sho",
+      "context_before": "odor ainl otaiin tdol tor oaldar aiir otokeedy karody qoeedy",
+      "context_after": "qopchedy daiin opairam tdol toroaldar oiir okokeedy karody qoeedy sho"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "sho",
+      "position_in_entry": 879,
+      "relative_position": 0.751,
+      "position_label": "END",
+      "context": "sho qopchedy daiin opairam tdol toroaldar oiir okokeedy karody qoeedy sho qopchedy daiin opairam tdol tor oaldar aiir okokeedy karody qoeedy",
+      "context_before": "sho qopchedy daiin opairam tdol toroaldar oiir okokeedy karody qoeedy",
+      "context_after": "qopchedy daiin opairam tdol tor oaldar aiir okokeedy karody qoeedy"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "sho",
+      "position_in_entry": 890,
+      "relative_position": 0.761,
+      "position_label": "END",
+      "context": "qopchedy daiin opairam tdol tor oaldar aiir okokeedy karody qoeedy sho qopchedy daiin opairam dchedy cheey qokor otaiin otair otair okeedy",
+      "context_before": "qopchedy daiin opairam tdol tor oaldar aiir okokeedy karody qoeedy",
+      "context_after": "qopchedy daiin opairam dchedy cheey qokor otaiin otair otair okeedy"
+    },
+    {
+      "b_folio": "f105v",
+      "a_heading": "paiin",
+      "position_in_entry": 745,
+      "relative_position": 0.637,
+      "position_label": "MIDDLE",
+      "context": "lkol fchedypaiin alcheey okaiin otar oto daiin ckheol lkol pchedy paiin kchdaldy alfo lfcheedy ofaiis opchey fchedy qotor oeeeodr qopar aifhhy",
+      "context_before": "lkol fchedypaiin alcheey okaiin otar oto daiin ckheol lkol pchedy",
+      "context_after": "kchdaldy alfo lfcheedy ofaiis opchey fchedy qotor oeeeodr qopar aifhhy"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "sho",
+      "position_in_entry": 876,
+      "relative_position": 0.677,
+      "position_label": "END",
+      "context": "ral cheol oraiin yshar chkar aiinky ral cheol oraiin poral sho keeody qokain chckhy olteeedy qopches al karchy qotedary poral shokeeody",
+      "context_before": "ral cheol oraiin yshar chkar aiinky ral cheol oraiin poral",
+      "context_after": "keeody qokain chckhy olteeedy qopches al karchy qotedary poral shokeeody"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "sho",
+      "position_in_entry": 895,
+      "relative_position": 0.692,
+      "position_label": "END",
+      "context": "poral shokeeody qokain chckhy olteeedy qopches al karchy qotedary poral sho keeody qokaiin chckhy olteeedy qopches al karchy qotedary ycheol chokaiin",
+      "context_before": "poral shokeeody qokain chckhy olteeedy qopches al karchy qotedary poral",
+      "context_after": "keeody qokaiin chckhy olteeedy qopches al karchy qotedary ycheol chokaiin"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "sho",
+      "position_in_entry": 949,
+      "relative_position": 0.734,
+      "position_label": "END",
+      "context": "qotar ain tcheorsho lkshey lpcheorolpchey oporaiin chpchy qopcheody qotarain tcheor sho lkshey lpcheo rol pchey oporaiin chpchy qopcheody qotar aiin okaiin",
+      "context_before": "qotar ain tcheorsho lkshey lpcheorolpchey oporaiin chpchy qopcheody qotarain tcheor",
+      "context_after": "lkshey lpcheo rol pchey oporaiin chpchy qopcheody qotar aiin okaiin"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "sho",
+      "position_in_entry": 1032,
+      "relative_position": 0.798,
+      "position_label": "END",
+      "context": "opchy shoteeody shotchey yteey sholpaiin opchdy lchdy dal pshodaiin opchy sho teeody shotchey yteey sholfaiin opchdy lchdy dol ycheool cheeey ol",
+      "context_before": "opchy shoteeody shotchey yteey sholpaiin opchdy lchdy dal pshodaiin opchy",
+      "context_after": "teeody shotchey yteey sholfaiin opchdy lchdy dol ycheool cheeey ol"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "pcheol",
+      "position_in_entry": 337,
+      "relative_position": 0.261,
+      "position_label": "BEGINNING",
+      "context": "okeey lcheedy olkeey qokeeo dchedy okeey lcheedy olkeey qokeeo dchedy pcheol sheokaiin otey qokeeor sheo aiin otchey pcheo ror aiin daiin",
+      "context_before": "okeey lcheedy olkeey qokeeo dchedy okeey lcheedy olkeey qokeeo dchedy",
+      "context_after": "sheokaiin otey qokeeor sheo aiin otchey pcheo ror aiin daiin"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "pcheol",
+      "position_in_entry": 349,
+      "relative_position": 0.27,
+      "position_label": "BEGINNING",
+      "context": "otey qokeeor sheo aiin otchey pcheo ror aiin daiin opal pcheol sheokaiin otey qokeeor sheodaiin otchey pcheoror aiin daiin opal pcheol",
+      "context_before": "otey qokeeor sheo aiin otchey pcheo ror aiin daiin opal",
+      "context_after": "sheokaiin otey qokeeor sheodaiin otchey pcheoror aiin daiin opal pcheol"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "pcheol",
+      "position_in_entry": 359,
+      "relative_position": 0.278,
+      "position_label": "BEGINNING",
+      "context": "pcheol sheokaiin otey qokeeor sheodaiin otchey pcheoror aiin daiin opal pcheol sheokaiin otey qokeeor sheo aiin otchey pcheo ror aiin daiin",
+      "context_before": "pcheol sheokaiin otey qokeeor sheodaiin otchey pcheoror aiin daiin opal",
+      "context_after": "sheokaiin otey qokeeor sheo aiin otchey pcheo ror aiin daiin"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "pcheodar",
+      "position_in_entry": 1128,
+      "relative_position": 0.872,
+      "position_label": "END",
+      "context": "cheol shory dai al sheod shedy chol chedy cheal shory pcheodar shol kain okshchedy qoteey shotchy qoty lpaiin shedy lar pcheodar",
+      "context_before": "cheol shory dai al sheod shedy chol chedy cheal shory",
+      "context_after": "shol kain okshchedy qoteey shotchy qoty lpaiin shedy lar pcheodar"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "pcheodar",
+      "position_in_entry": 1138,
+      "relative_position": 0.88,
+      "position_label": "END",
+      "context": "pcheodar shol kain okshchedy qoteey shotchy qoty lpaiin shedy lar pcheodar shol kain okeechedy qoteey shotchy qoty lpaiin shedylar pcheodar shal",
+      "context_before": "pcheodar shol kain okshchedy qoteey shotchy qoty lpaiin shedy lar",
+      "context_after": "shol kain okeechedy qoteey shotchy qoty lpaiin shedylar pcheodar shal"
+    },
+    {
+      "b_folio": "f106r",
+      "a_heading": "pcheodar",
+      "position_in_entry": 1147,
+      "relative_position": 0.887,
+      "position_label": "END",
+      "context": "lar pcheodar shol kain okeechedy qoteey shotchy qoty lpaiin shedylar pcheodar shal kaiin okshchedy qoteey shotchy qoty lpaiin shedy lar daiiral",
+      "context_before": "lar pcheodar shol kain okeechedy qoteey shotchy qoty lpaiin shedylar",
+      "context_after": "shal kaiin okshchedy qoteey shotchy qoty lpaiin shedy lar daiiral"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "tsho",
+      "position_in_entry": 389,
+      "relative_position": 0.212,
+      "position_label": "BEGINNING",
+      "context": "tshodaiin sholkais orainkar aiin shtchy qopchdy qopchy lolkair shear am tsho daiin shol kair oraiin kar aiin shtchy qopchdy qopchy lol",
+      "context_before": "tshodaiin sholkais orainkar aiin shtchy qopchdy qopchy lolkair shear am",
+      "context_after": "daiin shol kair oraiin kar aiin shtchy qopchdy qopchy lol"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "sho",
+      "position_in_entry": 1076,
+      "relative_position": 0.585,
+      "position_label": "MIDDLE",
+      "context": "qokeey oarar olcheo odaiin sheotal shoor qokeey oarar olcheo odaiin sho tal shoar qokeey oarar psheody olkeedy qokor sheos choty qotaiin",
+      "context_before": "qokeey oarar olcheo odaiin sheotal shoor qokeey oarar olcheo odaiin",
+      "context_after": "tal shoar qokeey oarar psheody olkeedy qokor sheos choty qotaiin"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 1308,
+      "relative_position": 0.711,
+      "position_label": "END",
+      "context": "olaiin chey dychy choaiin ody qotar chey olaiin chey dychy pchodaiin kcheeor al ky shcthy otos ar odal pcheody qotaiin otor",
+      "context_before": "olaiin chey dychy choaiin ody qotar chey olaiin chey dychy",
+      "context_after": "kcheeor al ky shcthy otos ar odal pcheody qotaiin otor"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 1320,
+      "relative_position": 0.718,
+      "position_label": "END",
+      "context": "al ky shcthy otos ar odal pcheody qotaiin otor alodam pchodaiin kcheeor al ky shcthy otor ar odal pcheody qotaiin otor",
+      "context_before": "al ky shcthy otos ar odal pcheody qotaiin otor alodam",
+      "context_after": "kcheeor al ky shcthy otor ar odal pcheody qotaiin otor"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 1332,
+      "relative_position": 0.724,
+      "position_label": "END",
+      "context": "al ky shcthy otor ar odal pcheody qotaiin otor alodam pchodaiin kcheeoral ky shcthy otos ar edal pcheody qotaiin otor alodam",
+      "context_before": "al ky shcthy otor ar odal pcheody qotaiin otor alodam",
+      "context_after": "kcheeoral ky shcthy otos ar edal pcheody qotaiin otor alodam"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 1343,
+      "relative_position": 0.73,
+      "position_label": "END",
+      "context": "kcheeoral ky shcthy otos ar edal pcheody qotaiin otor alodam pchodaiin kcheeoral ky shcthy otos ar adal pcheody qotaiin otor alodam",
+      "context_before": "kcheeoral ky shcthy otos ar edal pcheody qotaiin otor alodam",
+      "context_after": "kcheeoral ky shcthy otos ar adal pcheody qotaiin otor alodam"
+    },
+    {
+      "b_folio": "f106v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 1354,
+      "relative_position": 0.736,
+      "position_label": "END",
+      "context": "kcheeoral ky shcthy otos ar adal pcheody qotaiin otor alodam pchodaiin kcheear al ky shcthy otor ar odal pcheody qotaiin otor",
+      "context_before": "kcheeoral ky shcthy otos ar adal pcheody qotaiin otor alodam",
+      "context_after": "kcheear al ky shcthy otor ar odal pcheody qotaiin otor"
+    },
+    {
+      "b_folio": "f107r",
+      "a_heading": "torshor",
+      "position_in_entry": 207,
+      "relative_position": 0.141,
+      "position_label": "BEGINNING",
+      "context": "okaiin chckhy okeedy otcheey ytaiin cheotchey okaiin chckhy okeedy otcheey torshor sheeey oteeol qokeey qokedy lkaiin qokaiin qokor al okirolcy tarshor",
+      "context_before": "okaiin chckhy okeedy otcheey ytaiin cheotchey okaiin chckhy okeedy otcheey",
+      "context_after": "sheeey oteeol qokeey qokedy lkaiin qokaiin qokor al okirolcy tarshor"
+    },
+    {
+      "b_folio": "f107r",
+      "a_heading": "tol",
+      "position_in_entry": 465,
+      "relative_position": 0.318,
+      "position_label": "BEGINNING",
+      "context": "am tolshosor olkeedy qotaiin otalar opcheol qeeoy shey kair otaiinam tol shosor olkeedy qotaiin otalar opcheol qeeoy shey kais otaiin am",
+      "context_before": "am tolshosor olkeedy qotaiin otalar opcheol qeeoy shey kair otaiinam",
+      "context_after": "shosor olkeedy qotaiin otalar opcheol qeeoy shey kais otaiin am"
+    },
+    {
+      "b_folio": "f107r",
+      "a_heading": "pol",
+      "position_in_entry": 666,
+      "relative_position": 0.455,
+      "position_label": "MIDDLE",
+      "context": "palalchky okil cheol kair lkain qokeeokair dar aiin pchodlkaiiin olpy pol alchky okol cheol kair lkaiin qokeeo kair dar aiin pchod",
+      "context_before": "palalchky okil cheol kair lkain qokeeokair dar aiin pchodlkaiiin olpy",
+      "context_after": "alchky okol cheol kair lkaiin qokeeo kair dar aiin pchod"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "tol",
+      "position_in_entry": 131,
+      "relative_position": 0.097,
+      "position_label": "BEGINNING",
+      "context": "shocthy otaiin alkaiin dain cheky okechy qokain shocthy otaiin alkaiin tol sheockhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiim",
+      "context_before": "shocthy otaiin alkaiin dain cheky okechy qokain shocthy otaiin alkaiin",
+      "context_after": "sheockhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiim"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "tol",
+      "position_in_entry": 142,
+      "relative_position": 0.105,
+      "position_label": "BEGINNING",
+      "context": "sheockhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiim tol sheeckhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiiil",
+      "context_before": "sheockhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiim",
+      "context_after": "sheeckhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiiil"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "tol",
+      "position_in_entry": 153,
+      "relative_position": 0.113,
+      "position_label": "BEGINNING",
+      "context": "sheeckhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiiil tol sheockhedy qotal chdor otechdy teol tedaiin opchedy qopchdy ytar aiinm",
+      "context_before": "sheeckhedy qotol chdor otechdy teol tedaiin opchedy qopchdy ytar aiiil",
+      "context_after": "sheockhedy qotal chdor otechdy teol tedaiin opchedy qopchdy ytar aiinm"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "tol",
+      "position_in_entry": 458,
+      "relative_position": 0.338,
+      "position_label": "MIDDLE",
+      "context": "tolkol lkar aiiraly parair okal opcho okal opaiin otedy qokeody tol kal lkar aiiraly saiin or ykeear chckhy okaiin okal qoklaiin",
+      "context_before": "tolkol lkar aiiraly parair okal opcho okal opaiin otedy qokeody",
+      "context_after": "kal lkar aiiraly saiin or ykeear chckhy okaiin okal qoklaiin"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "tol",
+      "position_in_entry": 812,
+      "relative_position": 0.599,
+      "position_label": "MIDDLE",
+      "context": "ltam tolkeeedy okeol cheody qokeey qokchedy qotyshey qcthey lty ltam tol keeedy okeol cheody qokeey qokchedy qoky shey qcthey lty ltam",
+      "context_before": "ltam tolkeeedy okeol cheody qokeey qokchedy qotyshey qcthey lty ltam",
+      "context_after": "keeedy okeol cheody qokeey qokchedy qoky shey qcthey lty ltam"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "tol",
+      "position_in_entry": 982,
+      "relative_position": 0.724,
+      "position_label": "END",
+      "context": "polchedy olkeey lkey chcthy lkar shedy qokaiin chedy qokeedy lol tol chey lcheor sheol qokaiin olkeedy okar ar olkain odain tolchey",
+      "context_before": "polchedy olkeey lkey chcthy lkar shedy qokaiin chedy qokeedy lol",
+      "context_after": "chey lcheor sheol qokaiin olkeedy okar ar olkain odain tolchey"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "paiin",
+      "position_in_entry": 164,
+      "relative_position": 0.121,
+      "position_label": "BEGINNING",
+      "context": "sheockhedy qotal chdor otechdy teol tedaiin opchedy qopchdy ytar aiinm paiin okaiin qokaiy olkeedy qokeey qotaiin oky lkal okaiin aiin qokaldy",
+      "context_before": "sheockhedy qotal chdor otechdy teol tedaiin opchedy qopchdy ytar aiinm",
+      "context_after": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal okaiin aiin qokaldy"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "paiin",
+      "position_in_entry": 175,
+      "relative_position": 0.129,
+      "position_label": "BEGINNING",
+      "context": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal okaiin aiin qokaldy paiin okaiin qokaiy olkeedy qokeey qotaiin oky lkal otaiin aiin qokaldy",
+      "context_before": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal okaiin aiin qokaldy",
+      "context_after": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal otaiin aiin qokaldy"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "paiin",
+      "position_in_entry": 186,
+      "relative_position": 0.137,
+      "position_label": "BEGINNING",
+      "context": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal otaiin aiin qokaldy paiin okaiin qokaiy olkeedy qokeey qotaiin oky lkal okaiin aiin qokaldy",
+      "context_before": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal otaiin aiin qokaldy",
+      "context_after": "okaiin qokaiy olkeedy qokeey qotaiin oky lkal okaiin aiin qokaldy"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "poraiin",
+      "position_in_entry": 1011,
+      "relative_position": 0.746,
+      "position_label": "END",
+      "context": "tal chey lcheor sheol qokaiin olkeedy okar ar olkaiin odaiin poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary poraiin",
+      "context_before": "tal chey lcheor sheol qokaiin olkeedy okar ar olkaiin odaiin",
+      "context_after": "okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary poraiin"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "poraiin",
+      "position_in_entry": 1021,
+      "relative_position": 0.753,
+      "position_label": "END",
+      "context": "poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary poraiin",
+      "context_before": "poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary",
+      "context_after": "okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary poraiin"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "poraiin",
+      "position_in_entry": 1031,
+      "relative_position": 0.76,
+      "position_label": "END",
+      "context": "poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary dain",
+      "context_before": "poraiin okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary",
+      "context_after": "okal chedy qolkeey lpcheedy qokol rol keedy okaiin otary dain"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "sho",
+      "position_in_entry": 755,
+      "relative_position": 0.557,
+      "position_label": "MIDDLE",
+      "context": "olkeeo raral oldy dal okain okchey qokshy okol lkshedy taraiin sho qokar cheey qokam dal okain okchey qokshy okol lkshedy taraiin",
+      "context_before": "olkeeo raral oldy dal okain okchey qokshy okol lkshedy taraiin",
+      "context_after": "qokar cheey qokam dal okain okchey qokshy okol lkshedy taraiin"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "sho",
+      "position_in_entry": 766,
+      "relative_position": 0.565,
+      "position_label": "MIDDLE",
+      "context": "qokar cheey qokam dal okain okchey qokshy okol lkshedy taraiin sho qokar cheey qokam dal okaiin okchey qokshy okol lkshedy tar",
+      "context_before": "qokar cheey qokam dal okain okchey qokshy okol lkshedy taraiin",
+      "context_after": "qokar cheey qokam dal okaiin okchey qokshy okol lkshedy tar"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "sho",
+      "position_in_entry": 778,
+      "relative_position": 0.574,
+      "position_label": "MIDDLE",
+      "context": "cheey qokam dal okaiin okchey qokshy okol lkshedy tar aiin sho qokar cheey qokam ycheor cheol lcheedy raraiin ycheor cheol lcheedy",
+      "context_before": "cheey qokam dal okaiin okchey qokshy okol lkshedy tar aiin",
+      "context_after": "qokar cheey qokam ycheor cheol lcheedy raraiin ycheor cheol lcheedy"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "pol",
+      "position_in_entry": 1157,
+      "relative_position": 0.853,
+      "position_label": "END",
+      "context": "lkaiin orain oloeeey qokain orain oloeeey qokain oraiin oloeeey qokaiin pol keeeo kaiis qokeey chckhy lkchaly lkeey opchey rar aiin cheokaly",
+      "context_before": "lkaiin orain oloeeey qokain orain oloeeey qokain oraiin oloeeey qokaiin",
+      "context_after": "keeeo kaiis qokeey chckhy lkchaly lkeey opchey rar aiin cheokaly"
+    },
+    {
+      "b_folio": "f107v",
+      "a_heading": "pol",
+      "position_in_entry": 1178,
+      "relative_position": 0.869,
+      "position_label": "END",
+      "context": "polkeeeo kaiir qokeey chckhy lkchaly lkeey opchey rar aiin cheokaly pol keeeo kaiir qokeey chckhy lkchaly lkeey opchey rar aiin cheokaly",
+      "context_before": "polkeeeo kaiir qokeey chckhy lkchaly lkeey opchey rar aiin cheokaly",
+      "context_after": "keeeo kaiir qokeey chckhy lkchaly lkeey opchey rar aiin cheokaly"
+    },
+    {
+      "b_folio": "f108r",
+      "a_heading": "sho",
+      "position_in_entry": 1097,
+      "relative_position": 0.754,
+      "position_label": "END",
+      "context": "otedy qeeey chey porol tedo lchdain qokar otedy otarar yty sho qotedy oteedy okedy porol tedo lchdain qokar otedy otarar oty",
+      "context_before": "otedy qeeey chey porol tedo lchdain qokar otedy otarar yty",
+      "context_after": "qotedy oteedy okedy porol tedo lchdain qokar otedy otarar oty"
+    },
+    {
+      "b_folio": "f108r",
+      "a_heading": "sho",
+      "position_in_entry": 1108,
+      "relative_position": 0.762,
+      "position_label": "END",
+      "context": "qotedy oteedy okedy porol tedo lchdain qokar otedy otarar oty sho qotedy oteedy okedy porol tedo lchdaiin qokar otedy otarar yty",
+      "context_before": "qotedy oteedy okedy porol tedo lchdain qokar otedy otarar oty",
+      "context_after": "qotedy oteedy okedy porol tedo lchdaiin qokar otedy otarar yty"
+    },
+    {
+      "b_folio": "f108r",
+      "a_heading": "sho",
+      "position_in_entry": 1119,
+      "relative_position": 0.77,
+      "position_label": "END",
+      "context": "qotedy oteedy okedy porol tedo lchdaiin qokar otedy otarar yty sho qotedy oteedy okedy okar aiin okeedy qokeedy okeeom cheykeeed chol",
+      "context_before": "qotedy oteedy okedy porol tedo lchdaiin qokar otedy otarar yty",
+      "context_after": "qotedy oteedy okedy okar aiin okeedy qokeedy okeeom cheykeeed chol"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "tol",
+      "position_in_entry": 1035,
+      "relative_position": 0.614,
+      "position_label": "MIDDLE",
+      "context": "chey lchs shed qokeedy oteey qokedy qokeedy cheedy qokeedar oldy tol shey ochey qokeey qotedy choteey qokey chol keedy lkedy lchedy",
+      "context_before": "chey lchs shed qokeedy oteey qokedy qokeedy cheedy qokeedar oldy",
+      "context_after": "shey ochey qokeey qotedy choteey qokey chol keedy lkedy lchedy"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "tol",
+      "position_in_entry": 1057,
+      "relative_position": 0.627,
+      "position_label": "MIDDLE",
+      "context": "tolshey ochey qokeey qotedy chotchy qokey cholkeedy lkedy lchedy qokeey tol shey ochey qokeey qotedy chotchy qokey chol keedy lkedy lchedy",
+      "context_before": "tolshey ochey qokeey qotedy chotchy qokey cholkeedy lkedy lchedy qokeey",
+      "context_after": "shey ochey qokeey qotedy chotchy qokey chol keedy lkedy lchedy"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "pol",
+      "position_in_entry": 902,
+      "relative_position": 0.535,
+      "position_label": "MIDDLE",
+      "context": "chedeey qokeedy cheam dar chey o cheol chedeey qokeedy cheam pol shedaiin qokeoy keol chokeol qotedy qoteedy dar raiin shedy qotain",
+      "context_before": "chedeey qokeedy cheam dar chey o cheol chedeey qokeedy cheam",
+      "context_after": "shedaiin qokeoy keol chokeol qotedy qoteedy dar raiin shedy qotain"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "pol",
+      "position_in_entry": 925,
+      "relative_position": 0.549,
+      "position_label": "MIDDLE",
+      "context": "qokeey keol chokeon qotedy qoteedy dar raiin shedy qotain oteedy pol shedaiin qokeoy keol chokeol qotedy qoteedy dar raiin shedy qotaiin",
+      "context_before": "qokeey keol chokeon qotedy qoteedy dar raiin shedy qotain oteedy",
+      "context_after": "shedaiin qokeoy keol chokeol qotedy qoteedy dar raiin shedy qotaiin"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "pcheor",
+      "position_in_entry": 433,
+      "relative_position": 0.257,
+      "position_label": "BEGINNING",
+      "context": "olaiin chedy qokeey lor aiin chey keear aral olaiin chedy pcheor okear sheey qokeey ykeealkey raraiin opsholal shedy ofaramoty pcheor okear",
+      "context_before": "olaiin chedy qokeey lor aiin chey keear aral olaiin chedy",
+      "context_after": "okear sheey qokeey ykeealkey raraiin opsholal shedy ofaramoty pcheor okear"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "pcheor",
+      "position_in_entry": 442,
+      "relative_position": 0.262,
+      "position_label": "BEGINNING",
+      "context": "chedy pcheor okear sheey qokeey ykeealkey raraiin opsholal shedy ofaramoty pcheor okear sheey qokeey ykeealkey rar aiin opsholal shedy ofaramoty pcheor",
+      "context_before": "chedy pcheor okear sheey qokeey ykeealkey raraiin opsholal shedy ofaramoty",
+      "context_after": "okear sheey qokeey ykeealkey rar aiin opsholal shedy ofaramoty pcheor"
+    },
+    {
+      "b_folio": "f108v",
+      "a_heading": "pcheor",
+      "position_in_entry": 452,
+      "relative_position": 0.268,
+      "position_label": "BEGINNING",
+      "context": "pcheor okear sheey qokeey ykeealkey rar aiin opsholal shedy ofaramoty pcheor otear sheey qokeey ykeealkey raraiin opsholal shedy ofaramoky okeey lshey",
+      "context_before": "pcheor okear sheey qokeey ykeealkey rar aiin opsholal shedy ofaramoty",
+      "context_after": "otear sheey qokeey ykeealkey raraiin opsholal shedy ofaramoky okeey lshey"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "tor",
+      "position_in_entry": 1606,
+      "relative_position": 0.728,
+      "position_label": "END",
+      "context": "ain alr ar olor polchey lkarshar okain qokain shalkl dy tor chey keedy lteedy raldl polchey lkarshar ykain qokain shalky dy",
+      "context_before": "ain alr ar olor polchey lkarshar okain qokain shalkl dy",
+      "context_after": "chey keedy lteedy raldl polchey lkarshar ykain qokain shalky dy"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 320,
+      "relative_position": 0.145,
+      "position_label": "BEGINNING",
+      "context": "oteaiin fcheeo lkain okeey l lcheedy otal kain chedain al sho otchey cheol kechy chcthey okain ol lkeey qokain checkhy chedar",
+      "context_before": "oteaiin fcheeo lkain okeey l lcheedy otal kain chedain al",
+      "context_after": "otchey cheol kechy chcthey okain ol lkeey qokain checkhy chedar"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 332,
+      "relative_position": 0.15,
+      "position_label": "BEGINNING",
+      "context": "cheol kechy chcthey okain ol lkeey qokain checkhy chedar am sho otchey cheol kechy chcthey okain al lkeey qokain checkhy chedaram",
+      "context_before": "cheol kechy chcthey okain ol lkeey qokain checkhy chedar am",
+      "context_after": "otchey cheol kechy chcthey okain al lkeey qokain checkhy chedaram"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 343,
+      "relative_position": 0.155,
+      "position_label": "BEGINNING",
+      "context": "otchey cheol kechy chcthey okain al lkeey qokain checkhy chedaram sho otchey cheol kechy chcthey okaiin ol lkeey qokaiin checkhy chedar",
+      "context_before": "otchey cheol kechy chcthey okain al lkeey qokain checkhy chedaram",
+      "context_after": "otchey cheol kechy chcthey okaiin ol lkeey qokaiin checkhy chedar"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 355,
+      "relative_position": 0.161,
+      "position_label": "BEGINNING",
+      "context": "cheol kechy chcthey okaiin ol lkeey qokaiin checkhy chedar am sho otchey cheol kechy chcthey okain al lkeey qokain checkhy chedar",
+      "context_before": "cheol kechy chcthey okaiin ol lkeey qokaiin checkhy chedar am",
+      "context_after": "otchey cheol kechy chcthey okain al lkeey qokain checkhy chedar"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 510,
+      "relative_position": 0.231,
+      "position_label": "BEGINNING",
+      "context": "qokain chedkain shedaitain chald qear ain shey okeeey qokaiin checkhy sho lchal sheeay shckhey kshar tar qearain shey okeeey qokaiin checkhy",
+      "context_before": "qokain chedkain shedaitain chald qear ain shey okeeey qokaiin checkhy",
+      "context_after": "lchal sheeay shckhey kshar tar qearain shey okeeey qokaiin checkhy"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 521,
+      "relative_position": 0.236,
+      "position_label": "BEGINNING",
+      "context": "lchal sheeay shckhey kshar tar qearain shey okeeey qokaiin checkhy sho lchal sheey shckhey kshartar qear aiin shey okeeey qokaiin checkhy",
+      "context_before": "lchal sheeay shckhey kshar tar qearain shey okeeey qokaiin checkhy",
+      "context_after": "lchal sheey shckhey kshartar qear aiin shey okeeey qokaiin checkhy"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 532,
+      "relative_position": 0.241,
+      "position_label": "BEGINNING",
+      "context": "lchal sheey shckhey kshartar qear aiin shey okeeey qokaiin checkhy sho lchal sheay shckhey kshar tar qoar ain shey okchey qokaiin",
+      "context_before": "lchal sheey shckhey kshartar qear aiin shey okeeey qokaiin checkhy",
+      "context_after": "lchal sheay shckhey kshar tar qoar ain shey okchey qokaiin"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "sho",
+      "position_in_entry": 544,
+      "relative_position": 0.246,
+      "position_label": "BEGINNING",
+      "context": "sheay shckhey kshar tar qoar ain shey okchey qokaiin aeckhy sho lchal sheay shckhey kshartar sheaiin okaiin chckhy cheol kedy chetar",
+      "context_before": "sheay shckhey kshar tar qoar ain shey okchey qokaiin aeckhy",
+      "context_after": "lchal sheay shckhey kshartar sheaiin okaiin chckhy cheol kedy chetar"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "pol",
+      "position_in_entry": 1915,
+      "relative_position": 0.868,
+      "position_label": "END",
+      "context": "daiin teodaiin cheeal olaiin or dain teeodain chee*l olaiin or pol laiin okain sheal pchedain opchey polshy okshey opchedy qopchais alky",
+      "context_before": "daiin teodaiin cheeal olaiin or dain teeodain chee*l olaiin or",
+      "context_after": "laiin okain sheal pchedain opchey polshy okshey opchedy qopchais alky"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "pol",
+      "position_in_entry": 1936,
+      "relative_position": 0.877,
+      "position_label": "END",
+      "context": "pollaiin okain sheal pchedain opchey polshy okshey opchedy qopchair alky pol laiin okaiin sheal pchedaiin opchey polshy okshey opchedy qopchair alky",
+      "context_before": "pollaiin okain sheal pchedain opchey polshy okshey opchedy qopchair alky",
+      "context_after": "laiin okaiin sheal pchedaiin opchey polshy okshey opchedy qopchair alky"
+    },
+    {
+      "b_folio": "f111v",
+      "a_heading": "par",
+      "position_in_entry": 728,
+      "relative_position": 0.33,
+      "position_label": "BEGINNING",
+      "context": "faraiinam qokaiin sheol qokaiin chckhey lchedy okaral qotal shedy otaiin par aiin am qokain sheol qokain chckhey lchedy okar al qotal",
+      "context_before": "faraiinam qokaiin sheol qokaiin chckhey lchedy okaral qotal shedy otaiin",
+      "context_after": "aiin am qokain sheol qokain chckhey lchedy okar al qotal"
+    },
+    {
+      "b_folio": "f112v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 458,
+      "relative_position": 0.277,
+      "position_label": "BEGINNING",
+      "context": "aiin am pchodain okeedy qokeedy olkeedy qokain sheey qokedar aiinam pchodaiin okeedy qokeedy olkeedy qokaiin sheey qokedar aiin am pchodain okeedy",
+      "context_before": "aiin am pchodain okeedy qokeedy olkeedy qokain sheey qokedar aiinam",
+      "context_after": "okeedy qokeedy olkeedy qokaiin sheey qokedar aiin am pchodain okeedy"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "tcho",
+      "position_in_entry": 1766,
+      "relative_position": 0.942,
+      "position_label": "END",
+      "context": "oram tchoarorshy qokaiin shey chckhhy sheolkchy qokeol kaiin checkhy ralchs tcho ararshy qokaiin shey chckhey sheol kchy qokeol kaiin checkhy ralchs",
+      "context_before": "oram tchoarorshy qokaiin shey chckhhy sheolkchy qokeol kaiin checkhy ralchs",
+      "context_after": "ararshy qokaiin shey chckhey sheol kchy qokeol kaiin checkhy ralchs"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "kcheodaiin",
+      "position_in_entry": 1482,
+      "relative_position": 0.79,
+      "position_label": "END",
+      "context": "sheor qoteey daiin okchedy sheos aiin pcheockhy lkchey qofsheeey lkeody kcheodaiin por sheed qopoeey pokeey rair aly pcheockhy lkchey qofsheey lkeody",
+      "context_before": "sheor qoteey daiin okchedy sheos aiin pcheockhy lkchey qofsheeey lkeody",
+      "context_after": "por sheed qopoeey pokeey rair aly pcheockhy lkchey qofsheey lkeody"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "kcheodaiin",
+      "position_in_entry": 1505,
+      "relative_position": 0.803,
+      "position_label": "END",
+      "context": "por sheed qopoeey pokeey rair aly pcheockhy lkchey qofsheeey lkeody kcheodaiin por sheed qopoeey pokeey rair aly tarar cheey cheokeol chcheey",
+      "context_before": "por sheed qopoeey pokeey rair aly pcheockhy lkchey qofsheeey lkeody",
+      "context_after": "por sheed qopoeey pokeey rair aly tarar cheey cheokeol chcheey"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "tol",
+      "position_in_entry": 1021,
+      "relative_position": 0.545,
+      "position_label": "MIDDLE",
+      "context": "pchodair shotedy qopchody chfchol kchdaiin chpchshdy rair shedy qokchey sairy tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tol",
+      "context_before": "pchodair shotedy qopchody chfchol kchdaiin chpchshdy rair shedy qokchey sairy",
+      "context_after": "cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tol"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "tol",
+      "position_in_entry": 1031,
+      "relative_position": 0.55,
+      "position_label": "MIDDLE",
+      "context": "tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tol",
+      "context_before": "tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy",
+      "context_after": "cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tol"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "tol",
+      "position_in_entry": 1041,
+      "relative_position": 0.555,
+      "position_label": "MIDDLE",
+      "context": "tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tol cheshy lkchedy lchod chal charl keeody oteeo loaiin okeedy tol",
+      "context_before": "tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy",
+      "context_after": "cheshy lkchedy lchod chal charl keeody oteeo loaiin okeedy tol"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "tol",
+      "position_in_entry": 1051,
+      "relative_position": 0.561,
+      "position_label": "MIDDLE",
+      "context": "tol cheshy lkchedy lchod chal charl keeody oteeo loaiin okeedy tol cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tchol",
+      "context_before": "tol cheshy lkchedy lchod chal charl keeody oteeo loaiin okeedy",
+      "context_after": "cheshy lkchedy lchod chal char lkeeody oteeo loaiin okeedy tchol"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "pchor",
+      "position_in_entry": 1585,
+      "relative_position": 0.845,
+      "position_label": "END",
+      "context": "qoees okeeody pcheodaiin sholkeechy or alkar otchedy cheol tcheor qokchedy pchor aral pcheodaiin shol keechy ar alkar otched cheol tchear qokchedy",
+      "context_before": "qoees okeeody pcheodaiin sholkeechy or alkar otchedy cheol tcheor qokchedy",
+      "context_after": "aral pcheodaiin shol keechy ar alkar otched cheol tchear qokchedy"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "pchor",
+      "position_in_entry": 1596,
+      "relative_position": 0.851,
+      "position_label": "END",
+      "context": "aral pcheodaiin shol keechy ar alkar otched cheol tchear qokchedy pchor aral pcheodaiin sholkeechy ar alkar otchedy cheol tcheot qokchedy pchor",
+      "context_before": "aral pcheodaiin shol keechy ar alkar otched cheol tchear qokchedy",
+      "context_after": "aral pcheodaiin sholkeechy ar alkar otchedy cheol tcheot qokchedy pchor"
+    },
+    {
+      "b_folio": "f113r",
+      "a_heading": "pchor",
+      "position_in_entry": 1606,
+      "relative_position": 0.857,
+      "position_label": "END",
+      "context": "pchor aral pcheodaiin sholkeechy ar alkar otchedy cheol tcheot qokchedy pchor aral ykcheor cseeod lkar ar al s aiin cheeey ol",
+      "context_before": "pchor aral pcheodaiin sholkeechy ar alkar otchedy cheol tcheot qokchedy",
+      "context_after": "aral ykcheor cseeod lkar ar al s aiin cheeey ol"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "tsho",
+      "position_in_entry": 1050,
+      "relative_position": 0.739,
+      "position_label": "END",
+      "context": "lor chemy otain ofaral olkaiin okar okeeedy tshedy qokeedy otcheypchedy tsho lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey pchedy tsho",
+      "context_before": "lor chemy otain ofaral olkaiin okar okeeedy tshedy qokeedy otcheypchedy",
+      "context_after": "lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey pchedy tsho"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "tsho",
+      "position_in_entry": 1060,
+      "relative_position": 0.746,
+      "position_label": "END",
+      "context": "tsho lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey pchedy tsho lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey p chedy",
+      "context_before": "tsho lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey pchedy",
+      "context_after": "lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey p chedy"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "tsho",
+      "position_in_entry": 1071,
+      "relative_position": 0.754,
+      "position_label": "END",
+      "context": "lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey p chedy tsho lteam qol aiin olaiin oteeey lchedy qokair ydaiin qol aiin",
+      "context_before": "lteam ofaral olkaiin okar okeeedy tshedy qokeedy otchey p chedy",
+      "context_after": "lteam qol aiin olaiin oteeey lchedy qokair ydaiin qol aiin"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "poraiin",
+      "position_in_entry": 379,
+      "relative_position": 0.267,
+      "position_label": "BEGINNING",
+      "context": "chedy otsheody arl olchey oror solchedy otsheody arl olchey oror poraiin otar ar okol shedy qokchedy otchdy qotor qoteedar roral fchee",
+      "context_before": "chedy otsheody arl olchey oror solchedy otsheody arl olchey oror",
+      "context_after": "otar ar okol shedy qokchedy otchdy qotor qoteedar roral fchee"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "poraiin",
+      "position_in_entry": 391,
+      "relative_position": 0.275,
+      "position_label": "BEGINNING",
+      "context": "ar okol shedy qokchedy otchdy qotor qoteedar roral fchee llor poraiin otar ar okal shedy qokchedy otchdy qotar qoteedar raral fchee",
+      "context_before": "ar okol shedy qokchedy otchdy qotor qoteedar roral fchee llor",
+      "context_after": "otar ar okal shedy qokchedy otchdy qotar qoteedar raral fchee"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "poraiin",
+      "position_in_entry": 403,
+      "relative_position": 0.284,
+      "position_label": "BEGINNING",
+      "context": "ar okal shedy qokchedy otchdy qotar qoteedar raral fchee llor poraiin otar ar okol shedy qokchedy otchdy qotor qoteedar raral fchee",
+      "context_before": "ar okal shedy qokchedy otchdy qotar qoteedar raral fchee llor",
+      "context_after": "otar ar okol shedy qokchedy otchdy qotor qoteedar raral fchee"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pol",
+      "position_in_entry": 1205,
+      "relative_position": 0.849,
+      "position_label": "END",
+      "context": "aiin okaiin araiin cheody dair aiin okain ar aiin cheody pol keeo dy qoeees aiin oraiin oteol fchedy oteeey dar otakeol",
+      "context_before": "aiin okaiin araiin cheody dair aiin okain ar aiin cheody",
+      "context_after": "keeo dy qoeees aiin oraiin oteol fchedy oteeey dar otakeol"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pol",
+      "position_in_entry": 1217,
+      "relative_position": 0.857,
+      "position_label": "END",
+      "context": "dy qoeees aiin oraiin oteol fchedy oteeey dar otakeol ol pol keeody qoeees aiin oraiin oteol fchedy otchey dar ota keol",
+      "context_before": "dy qoeees aiin oraiin oteol fchedy oteeey dar otakeol ol",
+      "context_after": "keeody qoeees aiin oraiin oteol fchedy otchey dar ota keol"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pol",
+      "position_in_entry": 1229,
+      "relative_position": 0.865,
+      "position_label": "END",
+      "context": "qoeees aiin oraiin oteol fchedy otchey dar ota keol ol pol keeody qoeees aiin or aiin oteol fchedy oteeey dar otakeol",
+      "context_before": "qoeees aiin oraiin oteol fchedy otchey dar ota keol ol",
+      "context_after": "keeody qoeees aiin or aiin oteol fchedy oteeey dar otakeol"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pcheol",
+      "position_in_entry": 458,
+      "relative_position": 0.323,
+      "position_label": "BEGINNING",
+      "context": "okal okaiin olo *ar ar okeey oeky otcheedaiin ol tchdy pcheol kcheor raiin cheey qokaram *ar ar okeey oeky atcheedaiin ol",
+      "context_before": "okal okaiin olo *ar ar okeey oeky otcheedaiin ol tchdy",
+      "context_after": "kcheor raiin cheey qokaram *ar ar okeey oeky atcheedaiin ol"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pcheol",
+      "position_in_entry": 470,
+      "relative_position": 0.331,
+      "position_label": "MIDDLE",
+      "context": "raiin cheey qokaram *ar ar okeey oeky atcheedaiin ol tchdy pcheol kcheor raiin cheey qokaram *ar ar okeey oeky otcheedaiin ol",
+      "context_before": "raiin cheey qokaram *ar ar okeey oeky atcheedaiin ol tchdy",
+      "context_after": "kcheor raiin cheey qokaram *ar ar okeey oeky otcheedaiin ol"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pcheol",
+      "position_in_entry": 482,
+      "relative_position": 0.339,
+      "position_label": "MIDDLE",
+      "context": "raiin cheey qokaram *ar ar okeey oeky otcheedaiin ol tchdy pcheol kcheor raiin cheey qokar am daiin chl lkeey lkaiin chdain",
+      "context_before": "raiin cheey qokaram *ar ar okeey oeky otcheedaiin ol tchdy",
+      "context_after": "kcheor raiin cheey qokar am daiin chl lkeey lkaiin chdain"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pcheol",
+      "position_in_entry": 748,
+      "relative_position": 0.527,
+      "position_label": "MIDDLE",
+      "context": "loar cheos olkeey lcheey loar cheor tokary lkchey lkeedy otey pcheol qopchey cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy",
+      "context_before": "loar cheos olkeey lcheey loar cheor tokary lkchey lkeedy otey",
+      "context_after": "qopchey cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pcheol",
+      "position_in_entry": 760,
+      "relative_position": 0.535,
+      "position_label": "MIDDLE",
+      "context": "cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy ote pcheol qopchey cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy",
+      "context_before": "cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy ote",
+      "context_after": "qopchey cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy"
+    },
+    {
+      "b_folio": "f113v",
+      "a_heading": "pcheol",
+      "position_in_entry": 772,
+      "relative_position": 0.544,
+      "position_label": "MIDDLE",
+      "context": "cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy otey pcheol qopchey cthol opaiin ol keeor opshedy qotam okiin al keechy",
+      "context_before": "cthol opaiin ol keeor opshedy qotam tokary lkchey lkeedy otey",
+      "context_after": "qopchey cthol opaiin ol keeor opshedy qotam okiin al keechy"
+    },
+    {
+      "b_folio": "f114r",
+      "a_heading": "pcheor",
+      "position_in_entry": 19,
+      "relative_position": 0.014,
+      "position_label": "BEGINNING",
+      "context": "tche pcheos ytaiin okody yteeed oteeodl opaiin okarol tchedol dairor pcheor ytaiin otody yteeed oteeodl o*aiin okarol deedar qoteeddy dair okedy",
+      "context_before": "tche pcheos ytaiin okody yteeed oteeodl opaiin okarol tchedol dairor",
+      "context_after": "ytaiin otody yteeed oteeodl o*aiin okarol deedar qoteeddy dair okedy"
+    },
+    {
+      "b_folio": "f114v",
+      "a_heading": "sho",
+      "position_in_entry": 501,
+      "relative_position": 0.647,
+      "position_label": "MIDDLE",
+      "context": "aiin chetam tchedy shdo qotched chees ar aiin chetam pchdair sho qopchey otcheed chedy qopcheos ocpheody opchdy qopairam pchdair sho qopchey",
+      "context_before": "aiin chetam tchedy shdo qotched chees ar aiin chetam pchdair",
+      "context_after": "qopchey otcheed chedy qopcheos ocpheody opchdy qopairam pchdair sho qopchey"
+    },
+    {
+      "b_folio": "f114v",
+      "a_heading": "sho",
+      "position_in_entry": 510,
+      "relative_position": 0.659,
+      "position_label": "MIDDLE",
+      "context": "pchdair sho qopchey otcheed chedy qopcheos ocpheody opchdy qopairam pchdair sho qopchey otcheed chedy qopcheor ocpheody opchdy qopairam ycheey qoochy qolcheey",
+      "context_before": "pchdair sho qopchey otcheed chedy qopcheos ocpheody opchdy qopairam pchdair",
+      "context_after": "qopchey otcheed chedy qopcheor ocpheody opchdy qopairam ycheey qoochy qolcheey"
+    },
+    {
+      "b_folio": "f114v",
+      "a_heading": "pol",
+      "position_in_entry": 199,
+      "relative_position": 0.257,
+      "position_label": "BEGINNING",
+      "context": "daiin chcthdy tchedy qotaiin chdy qotedy tedaiin chepched otol shedain pol otam tchedy qotaiin chdy qotedy tedaiin chepched otol shedaiin pol",
+      "context_before": "daiin chcthdy tchedy qotaiin chdy qotedy tedaiin chepched otol shedain",
+      "context_after": "otam tchedy qotaiin chdy qotedy tedaiin chepched otol shedaiin pol"
+    },
+    {
+      "b_folio": "f114v",
+      "a_heading": "pol",
+      "position_in_entry": 209,
+      "relative_position": 0.27,
+      "position_label": "BEGINNING",
+      "context": "pol otam tchedy qotaiin chdy qotedy tedaiin chepched otol shedaiin pol otam* ochedy choaiin chcty chedal daiin ytar otchedy qotaiin dain",
+      "context_before": "pol otam tchedy qotaiin chdy qotedy tedaiin chepched otol shedaiin",
+      "context_after": "otam* ochedy choaiin chcty chedal daiin ytar otchedy qotaiin dain"
+    },
+    {
+      "b_folio": "f115r",
+      "a_heading": "pchodar",
+      "position_in_entry": 608,
+      "relative_position": 0.654,
+      "position_label": "MIDDLE",
+      "context": "llsaiin aroro chees fshedy shdalky cheedar qopchedy qopchedyd lksho ror pchodar olchedyo fshedy shdalky cheedar qopchedy qopchedyd lksho ror pchodar olchedyo",
+      "context_before": "llsaiin aroro chees fshedy shdalky cheedar qopchedy qopchedyd lksho ror",
+      "context_after": "olchedyo fshedy shdalky cheedar qopchedy qopchedyd lksho ror pchodar olchedyo"
+    },
+    {
+      "b_folio": "f115r",
+      "a_heading": "pchodar",
+      "position_in_entry": 617,
+      "relative_position": 0.664,
+      "position_label": "MIDDLE",
+      "context": "ror pchodar olchedyo fshedy shdalky cheedar qopchedy qopchedyd lksho ror pchodar olchedyo dsheodar sheo qokecheos cheos rchar qokchar qol cheey lkedy",
+      "context_before": "ror pchodar olchedyo fshedy shdalky cheedar qopchedy qopchedyd lksho ror",
+      "context_after": "olchedyo dsheodar sheo qokecheos cheos rchar qokchar qol cheey lkedy"
+    },
+    {
+      "b_folio": "f115v",
+      "a_heading": "sho",
+      "position_in_entry": 179,
+      "relative_position": 0.219,
+      "position_label": "BEGINNING",
+      "context": "chotaiin chol keedy qotchy chody qotaiin lkchey lchey ros saiin sho sheody okaiin dalchedy oteeo chedy saiin sho sheody okaiin dalchedy",
+      "context_before": "chotaiin chol keedy qotchy chody qotaiin lkchey lchey ros saiin",
+      "context_after": "sheody okaiin dalchedy oteeo chedy saiin sho sheody okaiin dalchedy"
+    },
+    {
+      "b_folio": "f115v",
+      "a_heading": "sho",
+      "position_in_entry": 186,
+      "relative_position": 0.227,
+      "position_label": "BEGINNING",
+      "context": "lchey ros saiin sho sheody okaiin dalchedy oteeo chedy saiin sho sheody okaiin dalchedy oteeo chedy tchdor shor ail chodaiin chkol",
+      "context_before": "lchey ros saiin sho sheody okaiin dalchedy oteeo chedy saiin",
+      "context_after": "sheody okaiin dalchedy oteeo chedy tchdor shor ail chodaiin chkol"
+    },
+    {
+      "b_folio": "f115v",
+      "a_heading": "tol",
+      "position_in_entry": 226,
+      "relative_position": 0.276,
+      "position_label": "BEGINNING",
+      "context": "ysheed lchedy lkchedy soraiin pchdarody pcheed rar tcheody polched lpchdy tol rchees cphor orair kol pchdarody pcheed rar tcheody polched lpchdy",
+      "context_before": "ysheed lchedy lkchedy soraiin pchdarody pcheed rar tcheody polched lpchdy",
+      "context_after": "rchees cphor orair kol pchdarody pcheed rar tcheody polched lpchdy"
+    },
+    {
+      "b_folio": "f115v",
+      "a_heading": "tol",
+      "position_in_entry": 237,
+      "relative_position": 0.289,
+      "position_label": "BEGINNING",
+      "context": "rchees cphor orair kol pchdarody pcheed rar tcheody polched lpchdy tol rchees cphor orair kol okeeokain lkeeey lkor sheedy chockhy qockheedy",
+      "context_before": "rchees cphor orair kol pchdarody pcheed rar tcheody polched lpchdy",
+      "context_after": "rchees cphor orair kol okeeokain lkeeey lkor sheedy chockhy qockheedy"
+    },
+    {
+      "b_folio": "f115v",
+      "a_heading": "pchodaiin",
+      "position_in_entry": 324,
+      "relative_position": 0.396,
+      "position_label": "MIDDLE",
+      "context": "lcho racthy pchodain chotain choky lchain lpchdain dalchedy qotalchedy qopchedy pchodaiin chotaiin choky lchaiin lpchdaiin dal chedy qotal chedy qopchedy yshedy",
+      "context_before": "lcho racthy pchodain chotain choky lchain lpchdain dalchedy qotalchedy qopchedy",
+      "context_after": "chotaiin choky lchaiin lpchdaiin dal chedy qotal chedy qopchedy yshedy"
+    },
+    {
+      "b_folio": "f116r",
+      "a_heading": "tol",
+      "position_in_entry": 155,
+      "relative_position": 0.142,
+      "position_label": "BEGINNING",
+      "context": "pchol chdy teody otey qo qokaiin qoteey tokaiin otedy to tol rotydy dar yteedy chedy qokeey qokain qotody oteedar otedy ldy",
+      "context_before": "pchol chdy teody otey qo qokaiin qoteey tokaiin otedy to",
+      "context_after": "rotydy dar yteedy chedy qokeey qokain qotody oteedar otedy ldy"
+    }
+  ],
+  "summary": {
+    "b_folios_analyzed": 61,
+    "contexts_extracted": 399,
+    "position_distribution": {
+      "MIDDLE": 136,
+      "END": 126,
+      "BEGINNING": 137
+    },
+    "most_referenced_headings": [
+      [
+        "tol",
+        81
+      ],
+      [
+        "pol",
+        65
+      ],
+      [
+        "sho",
+        42
+      ],
+      [
+        "tor",
+        34
+      ],
+      [
+        "pcheol",
+        27
+      ],
+      [
+        "kor",
+        24
+      ],
+      [
+        "pchor",
+        19
+      ],
+      [
+        "paiin",
+        18
+      ],
+      [
+        "par",
+        15
+      ],
+      [
+        "pcheor",
+        11
+      ]
+    ],
+    "mean_references_per_b_folio": 6.54
+  }
+}

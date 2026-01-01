@@ -1,0 +1,195 @@
+{
+  "adjacency_counts": {
+    "UNKNOWN->UNKNOWN": 16992,
+    "UNKNOWN->DELTA": 2039,
+    "DELTA->UNKNOWN": 2011,
+    "UNKNOWN->GAMMA": 6752,
+    "GAMMA->UNKNOWN": 6742,
+    "GAMMA->DELTA": 1235,
+    "UNKNOWN->BETA": 556,
+    "BETA->GAMMA": 291,
+    "GAMMA->GAMMA": 3490,
+    "BETA->UNKNOWN": 564,
+    "UNKNOWN->ALPHA": 163,
+    "ALPHA->UNKNOWN": 141,
+    "ALPHA->GAMMA": 69,
+    "DELTA->GAMMA": 1253,
+    "GAMMA->BETA": 299,
+    "GAMMA->ALPHA": 49,
+    "DELTA->ALPHA": 8,
+    "ALPHA->DELTA": 12,
+    "BETA->DELTA": 16,
+    "DELTA->DELTA": 449,
+    "ALPHA->BETA": 4,
+    "ALPHA->ALPHA": 1,
+    "BETA->BETA": 2,
+    "BETA->ALPHA": 3,
+    "DELTA->BETA": 21
+  },
+  "adjacency_probabilities": {
+    "ALPHA->ALPHA": {
+      "count": 1,
+      "probability": 0.004405286343612335,
+      "l1_total": 227
+    },
+    "ALPHA->BETA": {
+      "count": 4,
+      "probability": 0.01762114537444934,
+      "l1_total": 227
+    },
+    "ALPHA->GAMMA": {
+      "count": 69,
+      "probability": 0.3039647577092511,
+      "l1_total": 227
+    },
+    "ALPHA->DELTA": {
+      "count": 12,
+      "probability": 0.05286343612334802,
+      "l1_total": 227
+    },
+    "ALPHA->UNKNOWN": {
+      "count": 141,
+      "probability": 0.6211453744493393,
+      "l1_total": 227
+    },
+    "BETA->ALPHA": {
+      "count": 3,
+      "probability": 0.003424657534246575,
+      "l1_total": 876
+    },
+    "BETA->BETA": {
+      "count": 2,
+      "probability": 0.00228310502283105,
+      "l1_total": 876
+    },
+    "BETA->GAMMA": {
+      "count": 291,
+      "probability": 0.3321917808219178,
+      "l1_total": 876
+    },
+    "BETA->DELTA": {
+      "count": 16,
+      "probability": 0.0182648401826484,
+      "l1_total": 876
+    },
+    "BETA->UNKNOWN": {
+      "count": 564,
+      "probability": 0.6438356164383562,
+      "l1_total": 876
+    },
+    "GAMMA->ALPHA": {
+      "count": 49,
+      "probability": 0.004147270418958951,
+      "l1_total": 11815
+    },
+    "GAMMA->BETA": {
+      "count": 299,
+      "probability": 0.025306813372831145,
+      "l1_total": 11815
+    },
+    "GAMMA->GAMMA": {
+      "count": 3490,
+      "probability": 0.29538721963605585,
+      "l1_total": 11815
+    },
+    "GAMMA->DELTA": {
+      "count": 1235,
+      "probability": 0.10452814219212865,
+      "l1_total": 11815
+    },
+    "GAMMA->UNKNOWN": {
+      "count": 6742,
+      "probability": 0.5706305543800254,
+      "l1_total": 11815
+    },
+    "DELTA->ALPHA": {
+      "count": 8,
+      "probability": 0.002137894174238375,
+      "l1_total": 3742
+    },
+    "DELTA->BETA": {
+      "count": 21,
+      "probability": 0.005611972207375735,
+      "l1_total": 3742
+    },
+    "DELTA->GAMMA": {
+      "count": 1253,
+      "probability": 0.3348476750400855,
+      "l1_total": 3742
+    },
+    "DELTA->DELTA": {
+      "count": 449,
+      "probability": 0.11998931052912881,
+      "l1_total": 3742
+    },
+    "DELTA->UNKNOWN": {
+      "count": 2011,
+      "probability": 0.5374131480491716,
+      "l1_total": 3742
+    },
+    "UNKNOWN->ALPHA": {
+      "count": 163,
+      "probability": 0.006150479209116293,
+      "l1_total": 26502
+    },
+    "UNKNOWN->BETA": {
+      "count": 556,
+      "probability": 0.020979548713304656,
+      "l1_total": 26502
+    },
+    "UNKNOWN->GAMMA": {
+      "count": 6752,
+      "probability": 0.25477322466228963,
+      "l1_total": 26502
+    },
+    "UNKNOWN->DELTA": {
+      "count": 2039,
+      "probability": 0.07693758961587804,
+      "l1_total": 26502
+    },
+    "UNKNOWN->UNKNOWN": {
+      "count": 16992,
+      "probability": 0.6411591577994113,
+      "l1_total": 26502
+    }
+  },
+  "legal_transitions": [],
+  "forbidden_transitions": [],
+  "transition_matrix": {
+    "ALPHA": {
+      "ALPHA": 0.004405286343612335,
+      "BETA": 0.01762114537444934,
+      "GAMMA": 0.3039647577092511,
+      "DELTA": 0.05286343612334802,
+      "UNKNOWN": 0.6211453744493393
+    },
+    "BETA": {
+      "ALPHA": 0.003424657534246575,
+      "BETA": 0.00228310502283105,
+      "GAMMA": 0.3321917808219178,
+      "DELTA": 0.0182648401826484,
+      "UNKNOWN": 0.6438356164383562
+    },
+    "GAMMA": {
+      "ALPHA": 0.004147270418958951,
+      "BETA": 0.025306813372831145,
+      "GAMMA": 0.29538721963605585,
+      "DELTA": 0.10452814219212865,
+      "UNKNOWN": 0.5706305543800254
+    },
+    "DELTA": {
+      "ALPHA": 0.002137894174238375,
+      "BETA": 0.005611972207375735,
+      "GAMMA": 0.3348476750400855,
+      "DELTA": 0.11998931052912881,
+      "UNKNOWN": 0.5374131480491716
+    },
+    "UNKNOWN": {
+      "ALPHA": 0.006150479209116293,
+      "BETA": 0.020979548713304656,
+      "GAMMA": 0.25477322466228963,
+      "DELTA": 0.07693758961587804,
+      "UNKNOWN": 0.6411591577994113
+    }
+  }
+}

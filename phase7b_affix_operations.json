@@ -1,0 +1,699 @@
+{
+  "metadata": {
+    "phase": "7B",
+    "title": "Affix Operator Formalization",
+    "timestamp": "2025-12-31T11:19:43.713994"
+  },
+  "summary": {
+    "total_affixes": 30,
+    "position_markers": 6,
+    "scope_operators": 16,
+    "semantic_modifiers": 8,
+    "compositionality_rate": 0.2
+  },
+  "operation_type_definitions": {
+    "POSITION": "Controls slot placement within entry (entry-initial, entry-final, etc.)",
+    "SCOPE": "Modifies hub/category association (strong effect >40%)",
+    "SCOPE_WEAK": "Weak hub/category association (30-40%)",
+    "SEMANTIC": "General semantic content modifier (no strong positional/hub bias)",
+    "UNKNOWN": "Insufficient data for classification"
+  },
+  "affix_operation_table": {
+    "yk": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward tol (30.3%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.303,
+      "mean_slot": 4.85,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.077,
+      "entry_final_rate": 0.122,
+      "cluster": "cluster_3",
+      "total_count": 1043
+    },
+    "ar": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward tol (31.4%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.3143,
+      "mean_slot": 4.99,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.095,
+      "entry_final_rate": 0.135,
+      "cluster": "cluster_3",
+      "total_count": 105
+    },
+    "sh": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "tol",
+      "hub_strength": 0.2887,
+      "mean_slot": 4.51,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.107,
+      "entry_final_rate": 0.066,
+      "cluster": "cluster_3",
+      "total_count": 575
+    },
+    "sha": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward sho (41.0%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.4103,
+      "mean_slot": 4.8,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_2",
+      "total_count": 273
+    },
+    "ota": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "tol",
+      "hub_strength": 0.2849,
+      "mean_slot": 4.62,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_3",
+      "total_count": 1604
+    },
+    "qe": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward tol (38.3%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.3833,
+      "mean_slot": 4.4,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.089,
+      "entry_final_rate": 0.101,
+      "cluster": "cluster_3",
+      "total_count": 60
+    },
+    "ch": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward sho (32.5%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.3252,
+      "mean_slot": 4.44,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.088,
+      "entry_final_rate": 0.106,
+      "cluster": "cluster_3",
+      "total_count": 1599
+    },
+    "or": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "tol",
+      "hub_strength": 0.2722,
+      "mean_slot": 4.45,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.106,
+      "entry_final_rate": 0.119,
+      "cluster": "cluster_3",
+      "total_count": 371
+    },
+    "ts": {
+      "affix_position": "prefix",
+      "operation_type": "POSITION",
+      "operation_effect": "entry-initial marker (mean_slot=3.95)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.4167,
+      "mean_slot": 3.95,
+      "early_bias": true,
+      "late_bias": false,
+      "entry_initial_rate": 0.167,
+      "entry_final_rate": 0.039,
+      "cluster": "cluster_2",
+      "total_count": 144
+    },
+    "oko": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward sho (37.3%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.3729,
+      "mean_slot": 4.44,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_2",
+      "total_count": 354
+    },
+    "she": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "tol",
+      "hub_strength": 0.2906,
+      "mean_slot": 4.35,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_3",
+      "total_count": 4029
+    },
+    "ot": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward sho (44.6%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.4464,
+      "mean_slot": 4.22,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.133,
+      "entry_final_rate": 0.101,
+      "cluster": "cluster_2",
+      "total_count": 1100
+    },
+    "cha": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward sho (54.6%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.546,
+      "mean_slot": 4.43,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_2",
+      "total_count": 619
+    },
+    "dai": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward sho (42.7%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.4267,
+      "mean_slot": 4.63,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_2",
+      "total_count": 3112
+    },
+    "qok": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward tol (32.1%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.321,
+      "mean_slot": 4.43,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_3",
+      "total_count": 7034
+    },
+    "oke": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward tol (32.1%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.3206,
+      "mean_slot": 4.71,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_3",
+      "total_count": 1856
+    },
+    "ok": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "sho",
+      "hub_strength": 0.296,
+      "mean_slot": 4.81,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.088,
+      "entry_final_rate": 0.124,
+      "cluster": "cluster_3",
+      "total_count": 2446
+    },
+    "cp": {
+      "affix_position": "prefix",
+      "operation_type": "POSITION",
+      "operation_effect": "entry-initial marker (mean_slot=3.71)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.3907,
+      "mean_slot": 3.71,
+      "early_bias": true,
+      "late_bias": false,
+      "entry_initial_rate": 0.212,
+      "entry_final_rate": 0.041,
+      "cluster": "cluster_2",
+      "total_count": 151
+    },
+    "cf": {
+      "affix_position": "prefix",
+      "operation_type": "POSITION",
+      "operation_effect": "entry-initial marker (mean_slot=3.16)",
+      "hub_dominant": "pol",
+      "hub_strength": 0.3158,
+      "mean_slot": 3.16,
+      "early_bias": true,
+      "late_bias": false,
+      "entry_initial_rate": 0.26,
+      "entry_final_rate": 0.0,
+      "cluster": "cluster_4",
+      "total_count": 19
+    },
+    "che": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "tol",
+      "hub_strength": 0.2946,
+      "mean_slot": 4.67,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_3",
+      "total_count": 5540
+    },
+    "ara": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward pol (30.7%)",
+      "hub_dominant": "pol",
+      "hub_strength": 0.3071,
+      "mean_slot": 4.89,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_4",
+      "total_count": 127
+    },
+    "ote": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE_WEAK",
+      "operation_effect": "weak hub association toward tol (31.5%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.3154,
+      "mean_slot": 4.23,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_3",
+      "total_count": 1528
+    },
+    "sho": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward sho (52.8%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.5282,
+      "mean_slot": 4.32,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_2",
+      "total_count": 1367
+    },
+    "ol": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "tol",
+      "hub_strength": 0.2924,
+      "mean_slot": 4.68,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.1,
+      "entry_final_rate": 0.104,
+      "cluster": "cluster_3",
+      "total_count": 1669
+    },
+    "po": {
+      "affix_position": "prefix",
+      "operation_type": "SEMANTIC",
+      "operation_effect": "general content modifier",
+      "hub_dominant": "sho",
+      "hub_strength": 0.2707,
+      "mean_slot": 4.16,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.213,
+      "entry_final_rate": 0.035,
+      "cluster": "cluster_1",
+      "total_count": 229
+    },
+    "al": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward tol (42.1%)",
+      "hub_dominant": "tol",
+      "hub_strength": 0.4209,
+      "mean_slot": 4.93,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0.076,
+      "entry_final_rate": 0.126,
+      "cluster": "cluster_3",
+      "total_count": 335
+    },
+    "cho": {
+      "affix_position": "prefix",
+      "operation_type": "SCOPE",
+      "operation_effect": "hub association toward sho (53.0%)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.5296,
+      "mean_slot": 4.5,
+      "early_bias": false,
+      "late_bias": false,
+      "entry_initial_rate": 0,
+      "entry_final_rate": 0,
+      "cluster": "cluster_2",
+      "total_count": 3129
+    },
+    "fc": {
+      "affix_position": "prefix",
+      "operation_type": "POSITION",
+      "operation_effect": "entry-initial marker (mean_slot=3.38)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.3874,
+      "mean_slot": 3.38,
+      "early_bias": true,
+      "late_bias": false,
+      "entry_initial_rate": 0.226,
+      "entry_final_rate": 0.022,
+      "cluster": "cluster_1",
+      "total_count": 111
+    },
+    "op": {
+      "affix_position": "prefix",
+      "operation_type": "POSITION",
+      "operation_effect": "entry-initial marker (mean_slot=3.60)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.319,
+      "mean_slot": 3.6,
+      "early_bias": true,
+      "late_bias": false,
+      "entry_initial_rate": 0.238,
+      "entry_final_rate": 0.057,
+      "cluster": "cluster_1",
+      "total_count": 489
+    },
+    "of": {
+      "affix_position": "prefix",
+      "operation_type": "POSITION",
+      "operation_effect": "entry-initial marker (mean_slot=3.48)",
+      "hub_dominant": "sho",
+      "hub_strength": 0.3333,
+      "mean_slot": 3.48,
+      "early_bias": true,
+      "late_bias": false,
+      "entry_initial_rate": 0.222,
+      "entry_final_rate": 0.062,
+      "cluster": "cluster_1",
+      "total_count": 93
+    }
+  },
+  "compositionality_tests": [
+    {
+      "pair": "da-aiin",
+      "count": 937,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-hy",
+      "count": 821,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-aiin",
+      "count": 757,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-ol",
+      "count": 732,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "SEMANTIC",
+      "compositional": true
+    },
+    {
+      "pair": "ol-ol",
+      "count": 628,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "SEMANTIC",
+      "compositional": true
+    },
+    {
+      "pair": "ch-ey",
+      "count": 615,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-edy",
+      "count": 598,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-y",
+      "count": 579,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ai-aiin",
+      "count": 567,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-dy",
+      "count": 553,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-ol",
+      "count": 533,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "SEMANTIC",
+      "compositional": false
+    },
+    {
+      "pair": "qo-edy",
+      "count": 533,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-or",
+      "count": 478,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "SEMANTIC",
+      "compositional": true
+    },
+    {
+      "pair": "sh-hy",
+      "count": 459,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "sh-edy",
+      "count": 457,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-eey",
+      "count": 452,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-aiin",
+      "count": 448,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-eedy",
+      "count": 422,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "or-or",
+      "count": 410,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "SEMANTIC",
+      "compositional": true
+    },
+    {
+      "pair": "sh-ey",
+      "count": 405,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    }
+  ],
+  "irregular_combinations": [
+    {
+      "pair": "da-aiin",
+      "count": 937,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-hy",
+      "count": 821,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-aiin",
+      "count": 757,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-ey",
+      "count": 615,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-edy",
+      "count": 598,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-y",
+      "count": 579,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ai-aiin",
+      "count": 567,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-dy",
+      "count": 553,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-ol",
+      "count": 533,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "SEMANTIC",
+      "compositional": false
+    },
+    {
+      "pair": "qo-edy",
+      "count": 533,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "sh-hy",
+      "count": 459,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "sh-edy",
+      "count": 457,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-eey",
+      "count": 452,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "ch-aiin",
+      "count": 448,
+      "prefix_type": "SCOPE_WEAK",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "qo-eedy",
+      "count": 422,
+      "prefix_type": "UNKNOWN",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    },
+    {
+      "pair": "sh-ey",
+      "count": 405,
+      "prefix_type": "SEMANTIC",
+      "suffix_type": "UNKNOWN",
+      "compositional": false
+    }
+  ]
+}

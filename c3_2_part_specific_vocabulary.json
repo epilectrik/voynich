@@ -1,0 +1,1054 @@
+{
+  "metadata": {
+    "phase": "C3.2",
+    "title": "Part-Specific Vocabulary by Category",
+    "timestamp": "2025-12-30T22:11:43.440977"
+  },
+  "categories": {
+    "chosaroshol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tolchd": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pcheol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "sairaly": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "dordod": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "lsais": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "ker": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "porshols": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchocthy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "paiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 18,
+      "part3_unique_words": 19,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tshol": {
+      "folio_count": 1,
+      "part1_unique_words": 19,
+      "part2_unique_words": 18,
+      "part3_unique_words": 15,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poldchody": {
+      "folio_count": 1,
+      "part1_unique_words": 17,
+      "part2_unique_words": 19,
+      "part3_unique_words": 19,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "torshor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "koair": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchodaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pdychoiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tshor": {
+      "folio_count": 2,
+      "part1_unique_words": 37,
+      "part2_unique_words": 39,
+      "part3_unique_words": 39,
+      "part1_dominant_words": [
+        "shey",
+        "tshor"
+      ],
+      "part2_dominant_words": [],
+      "part3_dominant_words": [
+        "kchy"
+      ]
+    },
+    "poror": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 19,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pocheody": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchraiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fshody": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchodol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pdrairdy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "told": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchor": {
+      "folio_count": 3,
+      "part1_unique_words": 57,
+      "part2_unique_words": 56,
+      "part3_unique_words": 58,
+      "part1_dominant_words": [
+        "pchor"
+      ],
+      "part2_dominant_words": [
+        "cheol"
+      ],
+      "part3_dominant_words": []
+    },
+    "pochaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fachys": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kchsy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kdchody": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "faiis": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "toldshy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 16,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pysaiinor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pydchdom": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "podairol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "porory": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tchodar": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fcholdy": {
+      "folio_count": 1,
+      "part1_unique_words": 16,
+      "part2_unique_words": 16,
+      "part3_unique_words": 16,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poeeaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 18,
+      "part2_unique_words": 18,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "ksor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fochof": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchodar": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kshol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poraiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kooiin": {
+      "folio_count": 2,
+      "part1_unique_words": 38,
+      "part2_unique_words": 38,
+      "part3_unique_words": 39,
+      "part1_dominant_words": [
+        "kooiin"
+      ],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kydainy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "okchesy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "cthscthain": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fchoiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kcheodaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "cthoo": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "par": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchafdan": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pcharasy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tocphol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kshody": {
+      "folio_count": 2,
+      "part1_unique_words": 39,
+      "part2_unique_words": 39,
+      "part3_unique_words": 39,
+      "part1_dominant_words": [
+        "kshody"
+      ],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tolor": {
+      "folio_count": 1,
+      "part1_unique_words": 14,
+      "part2_unique_words": 14,
+      "part3_unique_words": 14,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "okchop": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 18,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tsheos": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "koaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "sho": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tcho": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tshodpy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tsho": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pykydal": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "korary": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchair": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "psheot": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poshol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "r*": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kodalchy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pchooiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tcholdchy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poshody": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tdokchcfhy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kodam": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "podaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pcheodar": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "otchal": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kcheat": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kocheor": {
+      "folio_count": 1,
+      "part1_unique_words": 19,
+      "part2_unique_words": 19,
+      "part3_unique_words": 17,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "foar": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "koar": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fchodaiin": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "polyshy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poalshsal": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pcheey": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "otorchety": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "okolyd": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "okchshy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "odory": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "okoraldy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "choeesy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pshol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "cthod": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "poleeol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "toealchs": {
+      "folio_count": 1,
+      "part1_unique_words": 17,
+      "part2_unique_words": 18,
+      "part3_unique_words": 19,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "pcheor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "cphdaithy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "kodshol": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "possheody": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "psheoas": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "okoramog": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "otaramy": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "tydlo": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    },
+    "fochor": {
+      "folio_count": 1,
+      "part1_unique_words": 20,
+      "part2_unique_words": 20,
+      "part3_unique_words": 20,
+      "part1_dominant_words": [],
+      "part2_dominant_words": [],
+      "part3_dominant_words": []
+    }
+  },
+  "global_analysis": {
+    "part1_dominant_words": [
+      {
+        "word": "ytchey",
+        "ratio": 0.8
+      },
+      {
+        "word": "choiin",
+        "ratio": 0.71
+      },
+      {
+        "word": "pchor",
+        "ratio": 0.71
+      }
+    ],
+    "part2_dominant_words": [
+      {
+        "word": "ycheol",
+        "ratio": 0.83
+      },
+      {
+        "word": "ychol",
+        "ratio": 0.8
+      }
+    ],
+    "part3_dominant_words": [
+      {
+        "word": "okaldy",
+        "ratio": 0.83
+      },
+      {
+        "word": "cthal",
+        "ratio": 0.83
+      },
+      {
+        "word": "okchy",
+        "ratio": 0.82
+      }
+    ],
+    "interpretation": {
+      "part1": "IDENTIFICATION/NAMING",
+      "part2": "PROPERTIES/DESCRIPTION",
+      "part3": "APPLICATIONS/USES"
+    }
+  },
+  "summary": {
+    "categories_analyzed": 109,
+    "global_part1_dominant_count": 3,
+    "global_part2_dominant_count": 2,
+    "global_part3_dominant_count": 3
+  }
+}

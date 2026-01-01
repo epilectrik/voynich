@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "phase": "8",
+    "title": "Domain Overlay Stress-Testing Synthesis",
+    "timestamp": "2025-12-31T12:19:07.374817"
+  },
+  "summary": {
+    "domains_tested": 7,
+    "eliminated": 1,
+    "survivors": 6
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "domain_id": "D1",
+      "domain_name": "Pharmacology / Materia Medica",
+      "score": 6.0
+    },
+    {
+      "rank": 2,
+      "domain_id": "D2",
+      "domain_name": "Alchemical Transformation Grammar",
+      "score": 6.0
+    },
+    {
+      "rank": 3,
+      "domain_id": "D3",
+      "domain_name": "Medical Diagnostics",
+      "score": 5.5
+    },
+    {
+      "rank": 4,
+      "domain_id": "D6",
+      "domain_name": "Astrological Influence Grammar",
+      "score": 5.5
+    },
+    {
+      "rank": 5,
+      "domain_id": "D4",
+      "domain_name": "Natural Property Classification",
+      "score": 4.0
+    },
+    {
+      "rank": 6,
+      "domain_id": "D7",
+      "domain_name": "Agricultural Process Encoding",
+      "score": 3.5
+    }
+  ],
+  "interpretation": "DOMAIN-GENERAL: Multiple domains survive, suggesting the system may be a general encoding framework.",
+  "what_survivors_share": [],
+  "implications": [
+    "Best fit: Pharmacology / Materia Medica (score 6.0/6.0)",
+    "A/B split represents definition vs application workflow",
+    "8 hubs represent major categorical divisions",
+    "Abstraction is intentional and domain-appropriate"
+  ],
+  "external_evidence_needed": [
+    "Identification of ANY single word/symbol meaning",
+    "Match between entry structure and known medieval texts",
+    "Correlation between hub categories and documented classification systems"
+  ]
+}

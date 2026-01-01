@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "phase": "Phase 5: Compositional Decoding Probe",
+    "timestamp": "2025-12-31T10:50:04.119861",
+    "experiments_completed": 4
+  },
+  "key_findings": [
+    "Middle extraction preserves 57% MI using fixed_1_1 method",
+    "1725 middles appear in multiple token shells - TRUE compositional structure",
+    "Affix co-occurrence is constrained: 20 forbidden, 20 preferred combinations",
+    "1 structural affixes identified (low MI + positional bias)",
+    "Slots have constrained vocabulary (mean entropy=5.73)",
+    "Slot transitions are constrained (mean ratio=95.13%)",
+    "Middle embedding shows STRONG_CLUSTERS - categorical semantics"
+  ],
+  "resonance_assessment": {
+    "middle_extraction": "GREEN",
+    "compositional_structure": "GREEN",
+    "affix_constraints": "GREEN",
+    "structural_scaffolding": "GREEN",
+    "slot_vocabulary": "GREEN",
+    "transition_constraints": "GREEN",
+    "positional_grammar": "YELLOW",
+    "semantic_gradients": "YELLOW"
+  },
+  "implications": [
+    "Middles ARE the semantic cores - can proceed with middle-based analysis",
+    "Structural affixes mark positions, not meaning - separate from semantic analysis"
+  ],
+  "overall_status": "GREEN - Strong compositional structure detected"
+}

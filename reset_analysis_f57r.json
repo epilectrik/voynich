@@ -1,0 +1,38 @@
+{
+  "folio": "f57r",
+  "total_tokens": 258,
+  "reset_candidates": [],
+  "best_reset": {
+    "position": 60,
+    "method": "type_distribution_shift",
+    "diff_score": 26,
+    "confidence": "LOW"
+  },
+  "segments": {
+    "pre_reset": {
+      "length": 60,
+      "kernel_contact_ratio": 0.6666666666666666,
+      "pattern": "stable",
+      "mean_distance": 1.6666666666666667
+    },
+    "post_reset": {
+      "length": 198,
+      "kernel_contact_ratio": 0.8080808080808081,
+      "pattern": "stable",
+      "mean_distance": 1.3838383838383839
+    },
+    "structural_similarity": true
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "REPAIR_MANEUVER",
+      "evidence": "Pre-reset distance > post-reset distance (recovery from deviation)",
+      "confidence": "MEDIUM"
+    },
+    {
+      "hypothesis": "RESTART_PROTOCOL",
+      "evidence": "Structurally similar before and after reset",
+      "confidence": "HIGH"
+    }
+  ]
+}

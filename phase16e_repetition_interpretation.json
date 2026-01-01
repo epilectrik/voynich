@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "phase": "16E",
+    "title": "Repetition Interpretation",
+    "timestamp": "2025-12-31T15:26:15.652025"
+  },
+  "process": "Reflux Distillation / Azeotropic Systems",
+  "process_id": "P1_REFLUX_DISTILLATION",
+  "repetition_characteristics": {
+    "hub_mean": 22.95,
+    "spoke_mean": 8.69,
+    "ratio": 2.6409666283084006,
+    "a_text_mean": 9.23,
+    "b_text_mean": 19.35,
+    "maximum": 350,
+    "distribution": "BIMODAL",
+    "termination": "EXTERNAL"
+  },
+  "interpretation": {
+    "repetition_as": "REFLUX_RATIO",
+    "bimodal_explanation": {
+      "hub_22x": "Core separation steps (reflux) require high return ratio for purity",
+      "spoke_8x": "Auxiliary steps (feeding, takeoff) need less repetition"
+    },
+    "max_350_meaning": "Extreme reflux ratio for very high purity separation (>99.9%)",
+    "a_vs_b": "A-text (definitions) = column specs; B-text (procedures) = active separation protocols"
+  },
+  "PHYSICAL_COHERENCE": "HIGH",
+  "DETAILED_INTERPRETATION": "REPETITION AS REFLUX_RATIO:\n\nThe bimodal repetition structure (hub 22.95x vs spoke 8.69x) maps to REFLUX_RATIO in Reflux Distillation / Azeotropic Systems.\n\nBIMODAL DISTRIBUTION:\n- Hub nodes (22.95x): Core separation steps (reflux) require high return ratio for purity\n- Spoke nodes (8.69x): Auxiliary steps (feeding, takeoff) need less repetition\n\nThe 2.64x ratio between hub and spoke repetition reflects the difference between\nprimary processing (requiring many iterations) and auxiliary operations (fewer iterations).\n\nMAXIMUM 350 MEANING:\nThe maximum repetition of 350 (for node 'k') represents: Extreme reflux ratio for very high purity separation (>99.9%)\n\nThis is consistent with 'k' being the most central node (centrality 4847) -\nthe primary action/state that everything passes through most often.\n\nA-TEXT vs B-TEXT:\nA-text (definitions) = column specs; B-text (procedures) = active separation protocols\n\nA-text (9.23x mean): Contains specifications/definitions requiring fewer but more precise repetitions.\nB-text (19.35x mean): Contains procedures/protocols requiring more iterative processing.\nThe 2.1x ratio (B/A) confirms B-text as operational content vs A-text as reference content.\n\nEXTERNAL TERMINATION:\nThe absence of natural decay signal means the operator/system determines when processing is complete.\nThis matches Reflux Distillation / Azeotropic Systems where purity/quality is checked externally."
+}

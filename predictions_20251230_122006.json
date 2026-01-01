@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-12-30T12:20:06.928417",
+  "methodology": "Conservative category labels, pre-registered predictions",
+  "folios": {
+    "f5r": {
+      "expected_dominant_prefix": "PLANT",
+      "expected_prefix_ratio": 0.3,
+      "expected_process_ratio": 0.1,
+      "expected_domain": "botanical/medicinal plants",
+      "illustration": "Large plant with roots and multiple leaves"
+    },
+    "f71r": {
+      "expected_dominant_prefix": "TIME",
+      "expected_prefix_ratio": 0.25,
+      "expected_process_ratio": 0.05,
+      "expected_domain": "astronomical/timing content",
+      "illustration": "Taurus bull diagram with female figures holding stars"
+    },
+    "f99r": {
+      "expected_dominant_prefix": "PLANT",
+      "expected_prefix_ratio": 0.2,
+      "expected_process_ratio": 0.15,
+      "expected_domain": "preparation instructions",
+      "illustration": "Dense text paragraphs with star markers (recipe format)"
+    }
+  }
+}

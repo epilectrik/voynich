@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "phase": "6C",
+    "title": "Entry-Level Semantic Signatures",
+    "timestamp": "2025-12-31T11:06:58.680869"
+  },
+  "entry_features_summary": {
+    "total_entries": 227,
+    "feature_dimensions": 85,
+    "sample": {
+      "f1r": {
+        "word_count": 1059,
+        "gamma_density": 0.0,
+        "hub_mentions": 21,
+        "unique_middles": 178,
+        "prefix_diversity": 26,
+        "suffix_diversity": 15,
+        "currier": "A"
+      },
+      "f1v": {
+        "word_count": 281,
+        "gamma_density": 0.0,
+        "hub_mentions": 3,
+        "unique_middles": 63,
+        "prefix_diversity": 18,
+        "suffix_diversity": 10,
+        "currier": "A"
+      },
+      "f2r": {
+        "word_count": 296,
+        "gamma_density": 0.0,
+        "hub_mentions": 3,
+        "unique_middles": 71,
+        "prefix_diversity": 20,
+        "suffix_diversity": 12,
+        "currier": "A"
+      },
+      "f2v": {
+        "word_count": 258,
+        "gamma_density": 0.0,
+        "hub_mentions": 12,
+        "unique_middles": 49,
+        "prefix_diversity": 12,
+        "suffix_diversity": 11,
+        "currier": "A"
+      },
+      "f3r": {
+        "word_count": 344,
+        "gamma_density": 0.0,
+        "hub_mentions": 3,
+        "unique_middles": 76,
+        "prefix_diversity": 24,
+        "suffix_diversity": 12,
+        "currier": "A"
+      },
+      "f3v": {
+        "word_count": 359,
+        "gamma_density": 0.0,
+        "hub_mentions": 7,
+        "unique_middles": 71,
+        "prefix_diversity": 22,
+        "suffix_diversity": 11,
+        "currier": "A"
+      },
+      "f4r": {
+        "word_count": 206,
+        "gamma_density": 0.0,
+        "hub_mentions": 0,
+        "unique_middles": 47,
+        "prefix_diversity": 14,
+        "suffix_diversity": 12,
+        "currier": "A"
+      },
+      "f4v": {
+        "word_count": 326,
+        "gamma_density": 0.0,
+        "hub_mentions": 16,
+        "unique_middles": 84,
+        "prefix_diversity": 20,
+        "suffix_diversity": 12,
+        "currier": "A"
+      },
+      "f5r": {
+        "word_count": 164,
+        "gamma_density": 0.0,
+        "hub_mentions": 9,
+        "unique_middles": 46,
+        "prefix_diversity": 21,
+        "suffix_diversity": 10,
+        "currier": "A"
+      },
+      "f5v": {
+        "word_count": 181,
+        "gamma_density": 0.0,
+        "hub_mentions": 0,
+        "unique_middles": 39,
+        "prefix_diversity": 16,
+        "suffix_diversity": 9,
+        "currier": "A"
+      }
+    }
+  },
+  "entry_clusters": {
+    "clusters_found": 8,
+    "cluster_analysis": {
+      "cluster_3": {
+        "size": 57,
+        "currier_a": 57,
+        "currier_b": 0,
+        "a_ratio": 1.0,
+        "members": [
+          "f1r",
+          "f2r",
+          "f2v",
+          "f3r",
+          "f3v",
+          "f4r",
+          "f5v",
+          "f6r",
+          "f6v",
+          "f7v"
+        ]
+      },
+      "cluster_1": {
+        "size": 30,
+        "currier_a": 30,
+        "currier_b": 0,
+        "a_ratio": 1.0,
+        "members": [
+          "f1v",
+          "f51r",
+          "f51v",
+          "f53v",
+          "f54v",
+          "f87r",
+          "f87v",
+          "f88r",
+          "f88v",
+          "f89r1"
+        ]
+      },
+      "cluster_2": {
+        "size": 26,
+        "currier_a": 24,
+        "currier_b": 2,
+        "a_ratio": 0.923,
+        "members": [
+          "f4v",
+          "f5r",
+          "f7r",
+          "f8r",
+          "f11v",
+          "f13r",
+          "f13v",
+          "f14r",
+          "f14v",
+          "f16r"
+        ]
+      },
+      "cluster_8": {
+        "size": 44,
+        "currier_a": 0,
+        "currier_b": 44,
+        "a_ratio": 0.0,
+        "members": [
+          "f26r",
+          "f26v",
+          "f31r",
+          "f31v",
+          "f34r",
+          "f41r",
+          "f41v",
+          "f43r",
+          "f43v",
+          "f46v"
+        ]
+      },
+      "cluster_7": {
+        "size": 40,
+        "currier_a": 0,
+        "currier_b": 40,
+        "a_ratio": 0.0,
+        "members": [
+          "f33r",
+          "f33v",
+          "f34v",
+          "f39r",
+          "f39v",
+          "f40r",
+          "f40v",
+          "f46r",
+          "f50r",
+          "f50v"
+        ]
+      },
+      "cluster_4": {
+        "size": 28,
+        "currier_a": 3,
+        "currier_b": 25,
+        "a_ratio": 0.107,
+        "members": [
+          "f52r",
+          "f57v",
+          "f58r",
+          "f58v",
+          "f66v",
+          "f67r1",
+          "f67v2",
+          "f67v1",
+          "f68r3",
+          "f68v3"
+        ]
+      },
+      "cluster_5": {
+        "size": 1,
+        "currier_a": 0,
+        "currier_b": 1,
+        "a_ratio": 0.0,
+        "members": [
+          "f65r"
+        ]
+      },
+      "cluster_6": {
+        "size": 1,
+        "currier_a": 0,
+        "currier_b": 1,
+        "a_ratio": 0.0,
+        "members": [
+          "f116v"
+        ]
+      }
+    }
+  },
+  "a_vs_b_comparison": {
+    "a_entries": 114,
+    "b_entries": 83,
+    "a_mean_length": 323.9,
+    "b_mean_length": 908.4,
+    "middle_enrichment": {
+      "aii": {
+        "a_rate": 0.06799,
+        "b_rate": 0.03341,
+        "b_enrichment": 0.491,
+        "significant": true
+      },
+      "ho": {
+        "a_rate": 0.07944,
+        "b_rate": 0.01137,
+        "b_enrichment": 0.143,
+        "significant": true
+      },
+      "hed": {
+        "a_rate": 0.00044,
+        "b_rate": 0.04741,
+        "b_enrichment": 107.431,
+        "significant": true
+      },
+      "he": {
+        "a_rate": 0.02058,
+        "b_rate": 0.02984,
+        "b_enrichment": 1.45,
+        "significant": false
+      },
+      "ol": {
+        "a_rate": 0.01081,
+        "b_rate": 0.02197,
+        "b_enrichment": 2.032,
+        "significant": true
+      },
+      "ai": {
+        "a_rate": 0.01781,
+        "b_rate": 0.01492,
+        "b_enrichment": 0.838,
+        "significant": false
+      },
+      "heo": {
+        "a_rate": 0.02162,
+        "b_rate": 0.01218,
+        "b_enrichment": 0.563,
+        "significant": false
+      },
+      "ii": {
+        "a_rate": 0.00766,
+        "b_rate": 0.01709,
+        "b_enrichment": 2.231,
+        "significant": true
+      },
+      "ka": {
+        "a_rate": 0.00684,
+        "b_rate": 0.01552,
+        "b_enrichment": 2.269,
+        "significant": true
+      },
+      "oka": {
+        "a_rate": 0.00337,
+        "b_rate": 0.01806,
+        "b_enrichment": 5.354,
+        "significant": true
+      },
+      "hee": {
+        "a_rate": 0.00924,
+        "b_rate": 0.01344,
+        "b_enrichment": 1.456,
+        "significant": false
+      },
+      "ta": {
+        "a_rate": 0.00558,
+        "b_rate": 0.01392,
+        "b_enrichment": 2.494,
+        "significant": true
+      },
+      "ar": {
+        "a_rate": 0.00536,
+        "b_rate": 0.01228,
+        "b_enrichment": 2.292,
+        "significant": true
+      },
+      "kaii": {
+        "a_rate": 0.00605,
+        "b_rate": 0.01387,
+        "b_enrichment": 2.292,
+        "significant": true
+      },
+      "or": {
+        "a_rate": 0.00993,
+        "b_rate": 0.01162,
+        "b_enrichment": 1.17,
+        "significant": false
+      },
+      "okee": {
+        "a_rate": 0.00457,
+        "b_rate": 0.01442,
+        "b_enrichment": 3.154,
+        "significant": true
+      },
+      "okaii": {
+        "a_rate": 0.00296,
+        "b_rate": 0.01479,
+        "b_enrichment": 4.99,
+        "significant": true
+      },
+      "kee": {
+        "a_rate": 0.00593,
+        "b_rate": 0.01048,
+        "b_enrichment": 1.769,
+        "significant": false
+      },
+      "oked": {
+        "a_rate": 9e-05,
+        "b_rate": 0.01473,
+        "b_enrichment": 155.734,
+        "significant": true
+      },
+      "ched": {
+        "a_rate": 6e-05,
+        "b_rate": 0.01414,
+        "b_enrichment": 224.248,
+        "significant": true
+      },
+      "al": {
+        "a_rate": 0.00394,
+        "b_rate": 0.01016,
+        "b_enrichment": 2.578,
+        "significant": true
+      },
+      "dy": {
+        "a_rate": 0.01384,
+        "b_rate": 0.00601,
+        "b_enrichment": 0.435,
+        "significant": true
+      },
+      "okai": {
+        "a_rate": 0.00063,
+        "b_rate": 0.01221,
+        "b_enrichment": 19.362,
+        "significant": true
+      },
+      "cho": {
+        "a_rate": 0.02024,
+        "b_rate": 0.00237,
+        "b_enrichment": 0.117,
+        "significant": true
+      },
+      "taii": {
+        "a_rate": 0.00526,
+        "b_rate": 0.00772,
+        "b_enrichment": 1.467,
+        "significant": false
+      },
+      "ha": {
+        "a_rate": 0.00864,
+        "b_rate": 0.00581,
+        "b_enrichment": 0.672,
+        "significant": false
+      },
+      "che": {
+        "a_rate": 0.0069,
+        "b_rate": 0.00702,
+        "b_enrichment": 1.016,
+        "significant": false
+      },
+      "hckh": {
+        "a_rate": 0.00274,
+        "b_rate": 0.00899,
+        "b_enrichment": 3.279,
+        "significant": true
+      },
+      "hd": {
+        "a_rate": 0.00132,
+        "b_rate": 0.00839,
+        "b_enrichment": 6.336,
+        "significant": true
+      }
+    },
+    "a_specific_middles": [
+      "aii",
+      "ho",
+      "dy",
+      "cho"
+    ],
+    "b_specific_middles": [
+      "hed",
+      "ol",
+      "ii",
+      "ka",
+      "oka",
+      "ta",
+      "ar",
+      "kaii",
+      "okee",
+      "okaii",
+      "oked",
+      "ched",
+      "al",
+      "okai",
+      "hckh",
+      "hd"
+    ],
+    "differentiation_strength": "STRONG"
+  },
+  "cross_entry_patterns": {
+    "transitions_analyzed": 226,
+    "mean_jaccard": 0.0936,
+    "std_jaccard": 0.0463,
+    "high_overlap_transitions": [],
+    "narrative_flow": "WEAK"
+  }
+}

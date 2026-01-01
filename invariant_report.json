@@ -1,0 +1,24 @@
+{
+  "grammar_invariants": [],
+  "manuscript_invariants": [
+    {
+      "dimension": "dominant_cycle_order",
+      "mean": 2.0,
+      "std": 0.0,
+      "cv": 0.0
+    },
+    {
+      "dimension": "intervention_diversity",
+      "mean": 5.94,
+      "std": 0.238,
+      "cv": 0.04
+    },
+    {
+      "dimension": "kernel_distance_mean",
+      "mean": 1.383,
+      "std": 0.069,
+      "cv": 0.05
+    }
+  ],
+  "total_invariants": 3
+}

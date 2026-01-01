@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "phase": "C2.1",
+    "title": "Category Hierarchy",
+    "timestamp": "2025-12-30T22:11:43.433990"
+  },
+  "hierarchy": {
+    "tor": {
+      "type": "hub",
+      "in_degree": 14,
+      "possible_children": [],
+      "shared_substrings": [
+        "or",
+        "to"
+      ]
+    },
+    "tol": {
+      "type": "hub",
+      "in_degree": 34,
+      "possible_children": [],
+      "shared_substrings": [
+        "to"
+      ]
+    },
+    "pchor": {
+      "type": "hub",
+      "in_degree": 7,
+      "possible_children": [],
+      "shared_substrings": [
+        "or",
+        "cho",
+        "pc",
+        "pch",
+        "pcho"
+      ]
+    },
+    "paiin": {
+      "type": "hub",
+      "in_degree": 7,
+      "possible_children": [],
+      "shared_substrings": [
+        "ai",
+        "in",
+        "ii",
+        "iin",
+        "aii",
+        "aiin"
+      ]
+    },
+    "kor": {
+      "type": "hub",
+      "in_degree": 10,
+      "possible_children": [],
+      "shared_substrings": [
+        "or",
+        "ko"
+      ]
+    },
+    "sho": {
+      "type": "hub",
+      "in_degree": 19,
+      "possible_children": [
+        {
+          "heading": "pshol",
+          "type": "mid",
+          "contains_hub_as": "substring"
+        },
+        {
+          "heading": "tsho",
+          "type": "mid",
+          "contains_hub_as": "substring"
+        },
+        {
+          "heading": "kshody",
+          "type": "isolate",
+          "contains_hub_as": "substring"
+        }
+      ],
+      "shared_substrings": [
+        "ho",
+        "sh",
+        "sho"
+      ]
+    },
+    "pol": {
+      "type": "hub",
+      "in_degree": 25,
+      "possible_children": [],
+      "shared_substrings": [
+        "ol",
+        "po"
+      ]
+    },
+    "par": {
+      "type": "hub",
+      "in_degree": 9,
+      "possible_children": [],
+      "shared_substrings": [
+        "ar"
+      ]
+    }
+  },
+  "relationships": [
+    {
+      "parent": "sho",
+      "child": "pshol",
+      "parent_type": "hub",
+      "child_type": "mid",
+      "relationship": "SUBSTRING_CONTAINMENT"
+    },
+    {
+      "parent": "sho",
+      "child": "tsho",
+      "parent_type": "hub",
+      "child_type": "mid",
+      "relationship": "SUBSTRING_CONTAINMENT"
+    },
+    {
+      "parent": "sho",
+      "child": "kshody",
+      "parent_type": "hub",
+      "child_type": "isolate",
+      "relationship": "SUBSTRING_CONTAINMENT"
+    }
+  ],
+  "summary": {
+    "hub_headings_analyzed": 8,
+    "total_relationships": 3,
+    "root_categories": [
+      "sho"
+    ],
+    "leaf_categories_count": 3,
+    "max_hierarchy_depth": 2
+  }
+}

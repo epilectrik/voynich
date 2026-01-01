@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "phase": "11B",
+    "title": "Repetition as Quantity",
+    "timestamp": "2025-12-31T12:51:31.503954"
+  },
+  "patterns": {
+    "doubled_sequences": {
+      "count": 6694,
+      "examples": [
+        [
+          "f1r",
+          [
+            "yd",
+            "yd"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "yd",
+            "yd"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "ch",
+            "sh"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "ot",
+            "da"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "da",
+            "ot"
+          ]
+        ]
+      ]
+    },
+    "tripled_sequences": {
+      "count": 1771,
+      "examples": [
+        [
+          "f1r",
+          [
+            "ot",
+            "da"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "da",
+            "ot"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "ot",
+            "da"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "da",
+            "ot"
+          ]
+        ],
+        [
+          "f1r",
+          [
+            "ot",
+            "da"
+          ]
+        ]
+      ]
+    },
+    "n_fold_distribution": {
+      "2": 6694,
+      "3": 1771
+    }
+  },
+  "population_distribution": {
+    "a_text_doubled": 3040,
+    "b_text_doubled": 3654,
+    "ratio": 0.83
+  },
+  "non_random_repetition": true,
+  "preferred_counts": [
+    2,
+    3
+  ],
+  "interpretation": "Strong repetition patterns detected. Doubled sequences are common, suggesting quantity encoding through repetition (e.g., 'do this twice')."
+}

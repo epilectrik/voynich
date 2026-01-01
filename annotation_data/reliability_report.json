@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "generated": "2025-12-30T23:30:32.323011",
+    "source": "annotation_data_manager",
+    "thresholds": {
+      "acceptable": 0.75,
+      "good": 0.85
+    }
+  },
+  "reliability": {
+    "intra_annotator_consistency": 1.0,
+    "duplicate_checks_total": 2,
+    "duplicate_checks_matched": 2,
+    "status": "GOOD"
+  }
+}

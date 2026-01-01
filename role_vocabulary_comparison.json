@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "phase": "E2",
+    "title": "Vocabulary Comparison",
+    "timestamp": "2025-12-31T09:15:12.446165",
+    "dependencies": [
+      "E1"
+    ]
+  },
+  "findings": {
+    "jaccard_similarities": {
+      "opener_support": 0.132,
+      "opener_baseline": 0.132,
+      "support_baseline": 0.096
+    },
+    "enriched_tokens": {
+      "opener": [
+        {
+          "word": "qokeol",
+          "group_count": 4,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "ol"
+        },
+        {
+          "word": "ykar",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "yk",
+          "suffix": "ar"
+        },
+        {
+          "word": "qotain",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "ain"
+        },
+        {
+          "word": "qokal",
+          "group_count": 10,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "al"
+        },
+        {
+          "word": "qokaly",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "ly"
+        },
+        {
+          "word": "okaly",
+          "group_count": 5,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "ok",
+          "suffix": "ly"
+        },
+        {
+          "word": "qokair",
+          "group_count": 6,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "ir"
+        },
+        {
+          "word": "ykaly",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "yk",
+          "suffix": "ly"
+        },
+        {
+          "word": "air",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "ai",
+          "suffix": "ir"
+        },
+        {
+          "word": "qotal",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "al"
+        },
+        {
+          "word": "okeor",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "ok",
+          "suffix": "or"
+        },
+        {
+          "word": "dalar",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "da",
+          "suffix": "ar"
+        },
+        {
+          "word": "qokar",
+          "group_count": 7,
+          "baseline_count": 1,
+          "enrichment": 17.08,
+          "prefix": "qo",
+          "suffix": "ar"
+        },
+        {
+          "word": "ty",
+          "group_count": 4,
+          "baseline_count": 1,
+          "enrichment": 9.76,
+          "prefix": "ty",
+          "suffix": "ty"
+        },
+        {
+          "word": "tar",
+          "group_count": 4,
+          "baseline_count": 1,
+          "enrichment": 9.76,
+          "prefix": "ta",
+          "suffix": "ar"
+        },
+        {
+          "word": "okar",
+          "group_count": 4,
+          "baseline_count": 1,
+          "enrichment": 9.76,
+          "prefix": "ok",
+          "suffix": "ar"
+        },
+        {
+          "word": "qokeey",
+          "group_count": 7,
+          "baseline_count": 2,
+          "enrichment": 8.54,
+          "prefix": "qo",
+          "suffix": "eey"
+        },
+        {
+          "word": "okal",
+          "group_count": 10,
+          "baseline_count": 3,
+          "enrichment": 8.13,
+          "prefix": "ok",
+          "suffix": "al"
+        },
+        {
+          "word": "ykeey",
+          "group_count": 3,
+          "baseline_count": 1,
+          "enrichment": 7.32,
+          "prefix": "yk",
+          "suffix": "eey"
+        },
+        {
+          "word": "cheky",
+          "group_count": 3,
+          "baseline_count": 1,
+          "enrichment": 7.32,
+          "prefix": "ch",
+          "suffix": "ky"
+        }
+      ],
+      "support": [
+        {
+          "word": "tal",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "ta",
+          "suffix": "al"
+        },
+        {
+          "word": "ytar",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "yt",
+          "suffix": "ar"
+        },
+        {
+          "word": "otey",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "ot",
+          "suffix": "ey"
+        },
+        {
+          "word": "qokaly",
+          "group_count": 3,
+          "baseline_count": 0,
+          "enrichment": Infinity,
+          "prefix": "qo",
+          "suffix": "ly"
+        },
+        {
+          "word": "chal",
+          "group_count": 8,
+          "baseline_count": 4,
+          "enrichment": 7.57,
+          "prefix": "ch",
+          "suffix": "al"
+        },
+        {
+          "word": "otal",
+          "group_count": 4,
+          "baseline_count": 2,
+          "enrichment": 7.57,
+          "prefix": "ot",
+          "suffix": "al"
+        },
+        {
+          "word": "otar",
+          "group_count": 3,
+          "baseline_count": 2,
+          "enrichment": 5.68,
+          "prefix": "ot",
+          "suffix": "ar"
+        },
+        {
+          "word": "ar",
+          "group_count": 9,
+          "baseline_count": 6,
+          "enrichment": 5.68,
+          "prefix": "ar",
+          "suffix": "ar"
+        },
+        {
+          "word": "qoky",
+          "group_count": 3,
+          "baseline_count": 2,
+          "enrichment": 5.68,
+          "prefix": "qo",
+          "suffix": "ky"
+        },
+        {
+          "word": "al",
+          "group_count": 3,
+          "baseline_count": 3,
+          "enrichment": 3.78,
+          "prefix": "al",
+          "suffix": "al"
+        },
+        {
+          "word": "sheol",
+          "group_count": 3,
+          "baseline_count": 3,
+          "enrichment": 3.78,
+          "prefix": "sh",
+          "suffix": "ol"
+        },
+        {
+          "word": "dal",
+          "group_count": 11,
+          "baseline_count": 13,
+          "enrichment": 3.2,
+          "prefix": "da",
+          "suffix": "al"
+        },
+        {
+          "word": "aiin",
+          "group_count": 5,
+          "baseline_count": 6,
+          "enrichment": 3.15,
+          "prefix": "ai",
+          "suffix": "aiin"
+        },
+        {
+          "word": "choty",
+          "group_count": 3,
+          "baseline_count": 4,
+          "enrichment": 2.84,
+          "prefix": "ch",
+          "suffix": "ty"
+        },
+        {
+          "word": "char",
+          "group_count": 6,
+          "baseline_count": 11,
+          "enrichment": 2.06,
+          "prefix": "ch",
+          "suffix": "ar"
+        }
+      ]
+    },
+    "exclusive_tokens": {
+      "opener_exclusive": [
+        "chokeeor",
+        "qokchyky",
+        "tcheain",
+        "cthody",
+        "chkol",
+        "kcholy",
+        "fchokshy",
+        "ckheol",
+        "shoeor",
+        "cthain",
+        "sydy",
+        "tchykchy",
+        "opcheas",
+        "otair",
+        "chordy",
+        "sheoldy",
+        "qokalar",
+        "opaldaiin",
+        "cthodaiir",
+        "otolosheey"
+      ],
+      "support_exclusive": [
+        "cholkeey",
+        "shedy",
+        "odshchol",
+        "dainry",
+        "chotair",
+        "chypaldy",
+        "kshes",
+        "chekaiin",
+        "ykechod",
+        "schocthhy",
+        "pchody",
+        "qokaldy",
+        "dshaly",
+        "arairaly",
+        "olkeal",
+        "pchdy",
+        "chaltar",
+        "qokalos",
+        "csees",
+        "dalchdy"
+      ],
+      "opener_exclusive_count": 311,
+      "support_exclusive_count": 265
+    }
+  },
+  "summary": {
+    "key_results": [
+      "Opener-Support Jaccard: 0.132",
+      "Opener enriched tokens: 40",
+      "Support enriched tokens: 15",
+      "Opener-exclusive: 311, Support-exclusive: 265"
+    ],
+    "implications": []
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "title": "Reference-Weighted Predictions",
+    "phase": "Data Recovery Phase, Task 2",
+    "date": "2025-12-30T16:45:18.540031",
+    "purpose": "Test hypothesis that highly-referenced A entries are foundational"
+  },
+  "stratification": {
+    "method": "Quartile-based stratification by B in-degree",
+    "strata": {
+      "high_reference": {
+        "n_entries": 28,
+        "sample_folios": [
+          "f58v",
+          "f22r",
+          "f42r",
+          "f96r",
+          "f35v"
+        ],
+        "in_degree_stats": {
+          "mean": 4,
+          "max": 26
+        }
+      },
+      "medium_reference": {
+        "n_entries": 57,
+        "sample_folios": [
+          "f16v",
+          "f17r",
+          "f17v",
+          "f18r",
+          "f18v"
+        ],
+        "in_degree_stats": {
+          "mean": 0,
+          "max": 0
+        }
+      },
+      "low_reference": {
+        "n_entries": 29,
+        "sample_folios": [
+          "f56r",
+          "f56v",
+          "f5r",
+          "f5v",
+          "f6r"
+        ],
+        "in_degree_stats": {
+          "mean": 0,
+          "max": 0
+        }
+      }
+    }
+  },
+  "text_based_tests": [
+    {
+      "test": "word_count_by_stratum",
+      "hypothesis": "High-reference entries have shorter word counts",
+      "results_by_stratum": {
+        "high_reference": {
+          "n": 28,
+          "mean": 145.1,
+          "std": 98.2,
+          "median": 104.0,
+          "min": 57,
+          "max": 443
+        },
+        "medium_reference": {
+          "n": 57,
+          "mean": 102.6,
+          "std": 36.4,
+          "median": 100,
+          "min": 42,
+          "max": 291
+        },
+        "low_reference": {
+          "n": 29,
+          "mean": 146.3,
+          "std": 75.0,
+          "median": 119,
+          "min": 56,
+          "max": 360
+        }
+      },
+      "effect": "HIGH_SHORTER",
+      "difference": -1.2,
+      "prediction_supported": true
+    },
+    {
+      "test": "prefix_commonality_by_stratum",
+      "hypothesis": "High-reference entries have more common prefixes",
+      "results_by_stratum": {
+        "high_reference": {
+          "n": 28,
+          "mean_commonality": 0.0155,
+          "top_prefixes": [
+            "pc",
+            "po",
+            "to",
+            "pa",
+            "ko"
+          ]
+        },
+        "medium_reference": {
+          "n": 57,
+          "mean_commonality": 0.0081,
+          "top_prefixes": [
+            "pc",
+            "po",
+            "ko",
+            "to",
+            "ts"
+          ]
+        },
+        "low_reference": {
+          "n": 29,
+          "mean_commonality": 0.0236,
+          "top_prefixes": [
+            "po",
+            "ok",
+            "ot",
+            "ko",
+            "fo"
+          ]
+        }
+      },
+      "effect": "HIGH_LESS_COMMON",
+      "ratio": 0.66,
+      "prediction_supported": false
+    },
+    {
+      "test": "heading_length_by_stratum",
+      "hypothesis": "High-reference entries may have different heading lengths",
+      "results_by_stratum": {
+        "high_reference": {
+          "n": 28,
+          "mean": 5.71,
+          "std": 2.24,
+          "median": 5.0
+        },
+        "medium_reference": {
+          "n": 57,
+          "mean": 6.63,
+          "std": 1.59,
+          "median": 7
+        },
+        "low_reference": {
+          "n": 29,
+          "mean": 6.72,
+          "std": 1.49,
+          "median": 7
+        }
+      },
+      "effect": "HIGH_SHORTER_HEADINGS",
+      "difference": -1.01,
+      "interpretation": "Shorter headings might indicate simpler/foundational entities"
+    },
+    {
+      "test": "vocabulary_richness_by_stratum",
+      "hypothesis": "High-reference entries have simpler vocabulary (lower richness)",
+      "results_by_stratum": {
+        "high_reference": {
+          "n": 28,
+          "mean": 0.8225,
+          "std": 0.0648
+        },
+        "medium_reference": {
+          "n": 57,
+          "mean": 0.8461,
+          "std": 0.0584
+        },
+        "low_reference": {
+          "n": 29,
+          "mean": 0.8463,
+          "std": 0.0535
+        }
+      },
+      "effect": "HIGH_LOWER_RICHNESS",
+      "difference": -0.0238,
+      "prediction_supported": true
+    },
+    {
+      "test": "b_discussion_breadth",
+      "hypothesis": "Highly-referenced entries by definition have more B contexts",
+      "results_by_stratum": {
+        "high_reference": {
+          "n": 28,
+          "referenced_count": 10,
+          "isolation_rate": 0.643,
+          "mean_in_degree": 4,
+          "max_in_degree": 26
+        },
+        "medium_reference": {
+          "n": 57,
+          "referenced_count": 0,
+          "isolation_rate": 1.0,
+          "mean_in_degree": 0,
+          "max_in_degree": 0
+        },
+        "low_reference": {
+          "n": 29,
+          "referenced_count": 0,
+          "isolation_rate": 1.0,
+          "mean_in_degree": 0,
+          "max_in_degree": 0
+        }
+      },
+      "note": "This is definitionally true for high-reference stratum"
+    }
+  ],
+  "text_summary": {
+    "total_tests": 5,
+    "predictions_supported": 2,
+    "key_findings": [
+      {
+        "test": "word_count_by_stratum",
+        "effect": "HIGH_SHORTER",
+        "supported": true
+      },
+      {
+        "test": "prefix_commonality_by_stratum",
+        "effect": "HIGH_LESS_COMMON",
+        "supported": false
+      },
+      {
+        "test": "heading_length_by_stratum",
+        "effect": "HIGH_SHORTER_HEADINGS",
+        "supported": "N/A"
+      },
+      {
+        "test": "vocabulary_richness_by_stratum",
+        "effect": "HIGH_LOWER_RICHNESS",
+        "supported": true
+      },
+      {
+        "test": "b_discussion_breadth",
+        "effect": "N/A",
+        "supported": "N/A"
+      }
+    ]
+  },
+  "visual_predictions": {
+    "prediction_status": "LOCKED",
+    "lock_date": "2025-12-30T16:45:18.540031",
+    "lock_note": "These predictions were generated BEFORE visual coding. Do NOT modify.",
+    "predictions": [
+      {
+        "id": "VP1",
+        "prediction": "High-reference entries have lower visual complexity",
+        "operationalization": "complexity feature SIMPLE > MODERATE > COMPLEX",
+        "expected_direction": "high_reference mean complexity < low_reference mean",
+        "rationale": "Foundational entities may be depicted more simply"
+      },
+      {
+        "id": "VP2",
+        "prediction": "High-reference entries have more symmetric illustrations",
+        "operationalization": "symmetry feature SYMMETRIC vs ASYMMETRIC",
+        "expected_direction": "higher SYMMETRIC rate in high_reference",
+        "rationale": "Archetypal/canonical depictions may be more regularized"
+      },
+      {
+        "id": "VP3",
+        "prediction": "High-reference entries depict fewer distinct plant parts",
+        "operationalization": "Count of PRESENT plant features (root, stem, leaf, flower)",
+        "expected_direction": "high_reference mean part_count < low_reference mean",
+        "rationale": "Simpler entities may have fewer depicted components"
+      },
+      {
+        "id": "VP4",
+        "prediction": "High-reference entries have single stems more often",
+        "operationalization": "stem_count feature 1 vs 2 vs 3+",
+        "expected_direction": "higher stem_count=1 rate in high_reference",
+        "rationale": "Foundational plants may have simpler structure"
+      },
+      {
+        "id": "VP5",
+        "prediction": "High-reference entries have simpler root types",
+        "operationalization": "root_type SINGLE_TAPROOT vs BRANCHING/FIBROUS",
+        "expected_direction": "higher SINGLE_TAPROOT rate in high_reference",
+        "rationale": "Basic/archetypal plants often depicted with single root"
+      }
+    ],
+    "success_criteria": {
+      "minimum_predictions_supported": 2,
+      "required_effect_size": "Cramer V >= 0.2 or mean difference > 0.5 SD",
+      "significance_level": "p < 0.05 after Bonferroni correction (5 tests -> p < 0.01)"
+    },
+    "failure_interpretation": "If fewer than 2 predictions supported, either: (1) reference count does not predict visual complexity, (2) illustrations are symbolic rather than morphological, or (3) our foundational-entity hypothesis is incorrect"
+  },
+  "interpretation": {
+    "text_findings": "See text_based_tests for detailed results",
+    "visual_status": "PREDICTIONS LOCKED - awaiting visual coding",
+    "next_step": "Complete visual coding, then test visual predictions"
+  }
+}

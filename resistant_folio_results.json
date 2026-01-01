@@ -1,0 +1,154 @@
+{
+  "timestamp": "2025-12-30T13:26:14.981092",
+  "resistant_folios": {
+    "f57v": {
+      "folio_id": "f57v",
+      "metadata": {
+        "section": "COSMOLOGICAL",
+        "illustration": "Circular diagram with stars and text, cosmological/astronomical content",
+        "currier": "A",
+        "description": "Part of the cosmological foldout, contains dense text in circular arrangement",
+        "special_features": [
+          "Circular text layout",
+          "Dense annotation",
+          "Star symbols"
+        ]
+      },
+      "word_count": 159,
+      "morpheme_analysis": {
+        "total": 159,
+        "fully_decoded": 51,
+        "partially_decoded": 108,
+        "not_decoded": 0,
+        "coverage_pct": 32.075471698113205,
+        "unknown_prefixes": {
+          "dck": 12,
+          "pck": 12,
+          "yck": 12,
+          "fck": 12,
+          "pcp": 12,
+          "ycp": 12
+        },
+        "unknown_middles": {
+          "ch": 12,
+          "ck": 9,
+          "tc": 3,
+          "dck": 3,
+          "pck": 3,
+          "yck": 3,
+          "c": 3,
+          "cp": 3,
+          "ct": 3,
+          "fck": 3
+        },
+        "unknown_suffixes": {}
+      },
+      "structure": {
+        "avg_length": 6.509433962264151,
+        "gallows_rate": 0.9622641509433962,
+        "bench_rate": 0.1509433962264151,
+        "unusual_count": 123
+      },
+      "templates": {
+        "PLANT_PROCESS": 0,
+        "BODY_PROCESS": 0,
+        "TIME_MARKER": 36,
+        "PREPARATION": 78,
+        "UNKNOWN": 45
+      },
+      "deviations": [
+        "Average word length differs: 6.5 vs corpus 5.5",
+        "Unusual first character: 'y' most common",
+        "Very high gallows rate: 96.2%"
+      ],
+      "diagnoses": [
+        {
+          "hypothesis": "SCRIBAL_VARIANT",
+          "evidence": "Unknown middle 'ch' appears 12x",
+          "implication": "May represent a variant spelling or different scribal hand"
+        },
+        {
+          "hypothesis": "FRAMEWORK_BLIND_SPOT",
+          "evidence": "45 words don't match known templates",
+          "implication": "Our procedural grammar may be incomplete for this content type"
+        },
+        {
+          "hypothesis": "CURRIER_A_SPECIFICITY",
+          "evidence": "Folio is classified as Currier A",
+          "implication": "Currier A may have different vocabulary from our B-focused analysis"
+        }
+      ]
+    },
+    "f54r": {
+      "folio_id": "f54r",
+      "metadata": {
+        "section": "HERBAL",
+        "illustration": "Plant illustration with roots and leaves",
+        "currier": "A",
+        "description": "Herbal folio with plant drawing and text paragraphs",
+        "special_features": [
+          "Plant illustration",
+          "Standard herbal format"
+        ]
+      },
+      "word_count": 74,
+      "morpheme_analysis": {
+        "total": 74,
+        "fully_decoded": 36,
+        "partially_decoded": 38,
+        "not_decoded": 0,
+        "coverage_pct": 48.64864864864865,
+        "unknown_prefixes": {},
+        "unknown_middles": {
+          "ch": 12,
+          "ck": 8,
+          "c": 4,
+          "e": 4,
+          "pc": 2,
+          "fc": 2
+        },
+        "unknown_suffixes": {
+          "ol": 2
+        }
+      },
+      "structure": {
+        "avg_length": 6.675675675675675,
+        "gallows_rate": 0.6486486486486487,
+        "bench_rate": 0.7567567567567568,
+        "unusual_count": 50
+      },
+      "templates": {
+        "PLANT_PROCESS": 6,
+        "BODY_PROCESS": 8,
+        "TIME_MARKER": 0,
+        "PREPARATION": 0,
+        "UNKNOWN": 60
+      },
+      "deviations": [
+        "Average word length differs: 6.7 vs corpus 5.5"
+      ],
+      "diagnoses": [
+        {
+          "hypothesis": "SCRIBAL_VARIANT",
+          "evidence": "Unknown middle 'ch' appears 12x",
+          "implication": "May represent a variant spelling or different scribal hand"
+        },
+        {
+          "hypothesis": "FRAMEWORK_BLIND_SPOT",
+          "evidence": "60 words don't match known templates",
+          "implication": "Our procedural grammar may be incomplete for this content type"
+        },
+        {
+          "hypothesis": "CURRIER_A_SPECIFICITY",
+          "evidence": "Folio is classified as Currier A",
+          "implication": "Currier A may have different vocabulary from our B-focused analysis"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "f57v_diagnosis": "DIFFERENT_CONTENT_DOMAIN (cosmological)",
+    "f54r_diagnosis": "CURRIER_A_VARIANT (scribal dialect)",
+    "framework_scope": "BIOLOGICAL + RECIPES (Currier B)"
+  }
+}

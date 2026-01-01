@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "phase": "10_SYNTHESIS",
+    "title": "Alchemical Operation Semantics Synthesis",
+    "timestamp": "2025-12-31T12:51:30.957935"
+  },
+  "operator_clustering": {
+    "clusters_found": 3,
+    "classical_match": "PARTIAL",
+    "high_reversibility_count": 29,
+    "position_markers_count": 7
+  },
+  "graph_structure": {
+    "hub_nodes": 270,
+    "attractor_states": 473,
+    "source_sink_asymmetry": 0
+  },
+  "alchemical_signatures": {
+    "signature_match": "STRONG",
+    "total_score": 1.0,
+    "key_patterns": [
+      "short_cycles",
+      "ladder_to_cycle",
+      "attractor_states",
+      "reversible_pairs"
+    ]
+  },
+  "operation_classes": {
+    "count": 3,
+    "classical_interpretation": "Detected 3 operation classes. Partially matches classical alchemical operation count (typically 7-12 operations)."
+  },
+  "verdict": {
+    "verdict": "WEAK_ALCHEMICAL",
+    "confidence": "LOW",
+    "interpretation": "Weak alchemical signatures. May require alternative analytical frame."
+  }
+}

@@ -1,0 +1,1880 @@
+{
+  "metadata": {
+    "phase": "C4.3",
+    "title": "B Entry Structure Analysis",
+    "timestamp": "2025-12-30T22:11:43.485980"
+  },
+  "entries": {
+    "f31r": {
+      "word_count": 126,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0079
+    },
+    "f31v": {
+      "word_count": 138,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "kor",
+        "kor",
+        "kor"
+      ],
+      "position_sequence": [
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "kor",
+        "kor",
+        "kor"
+      ],
+      "reference_density": 0.0217
+    },
+    "f33r": {
+      "word_count": 81,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "kor"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0123
+    },
+    "f34r": {
+      "word_count": 171,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "reference_density": 0.0175
+    },
+    "f34v": {
+      "word_count": 144,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "tol",
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0139
+    },
+    "f39v": {
+      "word_count": 175,
+      "total_a_references": 12,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "kor",
+        "kor",
+        "kor",
+        "kor",
+        "kor",
+        "kor",
+        "kor",
+        "par",
+        "paiin",
+        "paiin",
+        "paiin",
+        "paiin"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "kor"
+      ],
+      "closing_references": [
+        "paiin",
+        "paiin",
+        "paiin",
+        "paiin"
+      ],
+      "reference_density": 0.0686
+    },
+    "f40r": {
+      "word_count": 111,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tor",
+        "tor",
+        "tor"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.027
+    },
+    "f40v": {
+      "word_count": 118,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "kor",
+        "kor",
+        "kor"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "kor",
+        "kor"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0254
+    },
+    "f41r": {
+      "word_count": 150,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "par"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0067
+    },
+    "f43v": {
+      "word_count": 206,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0049
+    },
+    "f46v": {
+      "word_count": 145,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tor"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0069
+    },
+    "f48r": {
+      "word_count": 123,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0163
+    },
+    "f48v": {
+      "word_count": 155,
+      "total_a_references": 10,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "kor",
+        "kor",
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "tol",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "kor",
+        "kor"
+      ],
+      "closing_references": [
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "tol",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "reference_density": 0.0645
+    },
+    "f50r": {
+      "word_count": 130,
+      "total_a_references": 5,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tshol",
+        "tshol",
+        "tshol",
+        "tshol",
+        "tshol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "tshol",
+        "tshol",
+        "tshol",
+        "tshol",
+        "tshol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0385
+    },
+    "f55r": {
+      "word_count": 151,
+      "total_a_references": 8,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "podaiin",
+        "podaiin",
+        "podaiin",
+        "tcho",
+        "sho",
+        "sho",
+        "tcho",
+        "sho"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "podaiin",
+        "podaiin",
+        "podaiin"
+      ],
+      "closing_references": [],
+      "reference_density": 0.053
+    },
+    "f55v": {
+      "word_count": 128,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tor"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0078
+    },
+    "f66r": {
+      "word_count": 427,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "r*",
+        "r*"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "r*",
+        "r*"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0047
+    },
+    "f75r": {
+      "word_count": 560,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "sho"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0018
+    },
+    "f75v": {
+      "word_count": 465,
+      "total_a_references": 9,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "tol"
+      ],
+      "reference_density": 0.0194
+    },
+    "f76v": {
+      "word_count": 468,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "reference_density": 0.0064
+    },
+    "f77r": {
+      "word_count": 365,
+      "total_a_references": 10,
+      "unique_a_headings": 2,
+      "headings_referenced": [
+        "pol",
+        "pol",
+        "pol",
+        "tol",
+        "tol",
+        "tol",
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "pol",
+        "pol",
+        "pol",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "closing_references": [
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0274
+    },
+    "f77v": {
+      "word_count": 417,
+      "total_a_references": 10,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "pchor",
+        "pchor",
+        "tcho",
+        "pcheol",
+        "pcheol",
+        "tcho",
+        "pcheol",
+        "tcho",
+        "pcheol",
+        "tcho"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "tcho"
+      ],
+      "reference_density": 0.024
+    },
+    "f78r": {
+      "word_count": 377,
+      "total_a_references": 4,
+      "unique_a_headings": 2,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol",
+        "poraiin"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0106
+    },
+    "f79r": {
+      "word_count": 521,
+      "total_a_references": 14,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "pchor",
+        "pchor",
+        "tor",
+        "pchor",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "pchor",
+        "pchor",
+        "tor",
+        "pchor"
+      ],
+      "closing_references": [
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0269
+    },
+    "f79v": {
+      "word_count": 481,
+      "total_a_references": 4,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0083
+    },
+    "f80r": {
+      "word_count": 610,
+      "total_a_references": 11,
+      "unique_a_headings": 5,
+      "headings_referenced": [
+        "paiin",
+        "paiin",
+        "paiin",
+        "paiin",
+        "pcheol",
+        "pcheol",
+        "kor",
+        "tor",
+        "tor",
+        "tor",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "paiin",
+        "paiin",
+        "paiin",
+        "paiin"
+      ],
+      "closing_references": [
+        "tor",
+        "tor",
+        "tor",
+        "tol"
+      ],
+      "reference_density": 0.018
+    },
+    "f80v": {
+      "word_count": 493,
+      "total_a_references": 44,
+      "unique_a_headings": 5,
+      "headings_referenced": [
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "pshol",
+        "pshol",
+        "pshol",
+        "pshol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "pol",
+        "pol",
+        "pol",
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "closing_references": [
+        "pol",
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "pol",
+        "pol",
+        "pol",
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0892
+    },
+    "f81r": {
+      "word_count": 249,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "par",
+        "par"
+      ],
+      "position_sequence": [
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "par",
+        "par"
+      ],
+      "reference_density": 0.008
+    },
+    "f81v": {
+      "word_count": 351,
+      "total_a_references": 6,
+      "unique_a_headings": 2,
+      "headings_referenced": [
+        "par",
+        "par",
+        "par",
+        "par",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "par",
+        "par",
+        "par",
+        "par"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0171
+    },
+    "f82v": {
+      "word_count": 430,
+      "total_a_references": 13,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "tol",
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol"
+      ],
+      "closing_references": [
+        "pol",
+        "pol",
+        "pol",
+        "pol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol"
+      ],
+      "reference_density": 0.0302
+    },
+    "f83r": {
+      "word_count": 442,
+      "total_a_references": 8,
+      "unique_a_headings": 2,
+      "headings_referenced": [
+        "pchor",
+        "pchor",
+        "pchor",
+        "pchor",
+        "tol",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "pchor",
+        "pchor",
+        "pchor",
+        "pchor"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0181
+    },
+    "f84r": {
+      "word_count": 460,
+      "total_a_references": 14,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol",
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "pshol",
+        "pshol",
+        "tor",
+        "pol",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "tol",
+        "tol",
+        "tol",
+        "tor",
+        "tor",
+        "tor",
+        "tor",
+        "pshol",
+        "pshol",
+        "tor"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0304
+    },
+    "f84v": {
+      "word_count": 421,
+      "total_a_references": 6,
+      "unique_a_headings": 2,
+      "headings_referenced": [
+        "kor",
+        "kor",
+        "kor",
+        "kor",
+        "kor",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "END"
+      ],
+      "opening_references": [
+        "kor",
+        "kor",
+        "kor",
+        "kor"
+      ],
+      "closing_references": [
+        "tol"
+      ],
+      "reference_density": 0.0143
+    },
+    "f85r1": {
+      "word_count": 371,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "podaiin",
+        "podaiin"
+      ],
+      "position_sequence": [
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "podaiin",
+        "podaiin"
+      ],
+      "reference_density": 0.0054
+    },
+    "f86v4": {
+      "word_count": 223,
+      "total_a_references": 10,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "pcheodar",
+        "pcheodar",
+        "sho",
+        "pol",
+        "sho",
+        "pol",
+        "pcheodar",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "pcheodar",
+        "pcheodar"
+      ],
+      "closing_references": [
+        "pcheodar",
+        "tol",
+        "tol",
+        "tol"
+      ],
+      "reference_density": 0.0448
+    },
+    "f86v6": {
+      "word_count": 534,
+      "total_a_references": 8,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "par",
+        "par",
+        "pol",
+        "pol",
+        "podaiin",
+        "podaiin",
+        "paiin",
+        "paiin"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "paiin",
+        "paiin"
+      ],
+      "reference_density": 0.015
+    },
+    "f86v5": {
+      "word_count": 420,
+      "total_a_references": 6,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "tor",
+        "tor",
+        "pchor",
+        "pchor",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "tor",
+        "tor"
+      ],
+      "closing_references": [
+        "pchor",
+        "pchor",
+        "tol",
+        "tol"
+      ],
+      "reference_density": 0.0143
+    },
+    "f94v": {
+      "word_count": 113,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "par"
+      ],
+      "position_sequence": [
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0088
+    },
+    "f95r2": {
+      "word_count": 93,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tor",
+        "tor",
+        "tor"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0323
+    },
+    "f95v1": {
+      "word_count": 138,
+      "total_a_references": 7,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "tshor",
+        "tshor",
+        "fchodaiin",
+        "kshol",
+        "kshol",
+        "sho",
+        "sho"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "tshor",
+        "tshor"
+      ],
+      "closing_references": [
+        "kshol",
+        "sho",
+        "sho"
+      ],
+      "reference_density": 0.0507
+    },
+    "f103r": {
+      "word_count": 619,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0016
+    },
+    "f103v": {
+      "word_count": 522,
+      "total_a_references": 16,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "pol",
+        "pol",
+        "pcheor",
+        "pcheor",
+        "pcheor",
+        "pchor",
+        "pol",
+        "pchor",
+        "pol",
+        "sho",
+        "sho",
+        "pol",
+        "pol",
+        "sho",
+        "sho",
+        "sho"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "pol",
+        "pol",
+        "pcheor",
+        "pcheor",
+        "pcheor",
+        "pchor",
+        "pol",
+        "pchor",
+        "pol",
+        "sho"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0307
+    },
+    "f104r": {
+      "word_count": 503,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "tol",
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.004
+    },
+    "f104v": {
+      "word_count": 517,
+      "total_a_references": 7,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "par",
+        "par",
+        "pcheor",
+        "sho",
+        "pcheor",
+        "sho",
+        "sho"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "par",
+        "par"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0135
+    },
+    "f105r": {
+      "word_count": 425,
+      "total_a_references": 11,
+      "unique_a_headings": 5,
+      "headings_referenced": [
+        "paiin",
+        "paiin",
+        "par",
+        "pcheor",
+        "paiin",
+        "pcheey",
+        "pcheor",
+        "paiin",
+        "pcheey",
+        "kor",
+        "kor"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "paiin",
+        "paiin",
+        "par"
+      ],
+      "closing_references": [
+        "kor",
+        "kor"
+      ],
+      "reference_density": 0.0259
+    },
+    "f105v": {
+      "word_count": 467,
+      "total_a_references": 9,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "pchor",
+        "pchor",
+        "pchor",
+        "paiin",
+        "tor",
+        "sho",
+        "sho",
+        "tor",
+        "sho"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "tor",
+        "sho",
+        "sho",
+        "tor",
+        "sho"
+      ],
+      "reference_density": 0.0193
+    },
+    "f106r": {
+      "word_count": 538,
+      "total_a_references": 10,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "pcheodar",
+        "pcheodar",
+        "pcheodar"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "pcheol",
+        "pcheol",
+        "pcheol"
+      ],
+      "closing_references": [
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "pcheodar",
+        "pcheodar",
+        "pcheodar"
+      ],
+      "reference_density": 0.0186
+    },
+    "f106v": {
+      "word_count": 638,
+      "total_a_references": 7,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "tsho",
+        "sho",
+        "pchodaiin",
+        "pchodaiin",
+        "pchodaiin",
+        "pchodaiin",
+        "pchodaiin"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "tsho"
+      ],
+      "closing_references": [
+        "pchodaiin",
+        "pchodaiin",
+        "pchodaiin",
+        "pchodaiin",
+        "pchodaiin"
+      ],
+      "reference_density": 0.011
+    },
+    "f107r": {
+      "word_count": 602,
+      "total_a_references": 3,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "torshor",
+        "tol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "torshor",
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.005
+    },
+    "f107v": {
+      "word_count": 552,
+      "total_a_references": 17,
+      "unique_a_headings": 5,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol",
+        "paiin",
+        "paiin",
+        "paiin",
+        "tol",
+        "sho",
+        "sho",
+        "sho",
+        "tol",
+        "tol",
+        "poraiin",
+        "poraiin",
+        "poraiin",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "tol",
+        "tol",
+        "tol",
+        "paiin",
+        "paiin",
+        "paiin"
+      ],
+      "closing_references": [
+        "tol",
+        "poraiin",
+        "poraiin",
+        "poraiin",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0308
+    },
+    "f108r": {
+      "word_count": 580,
+      "total_a_references": 3,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "sho",
+        "sho",
+        "sho"
+      ],
+      "position_sequence": [
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "sho",
+        "sho",
+        "sho"
+      ],
+      "reference_density": 0.0052
+    },
+    "f108v": {
+      "word_count": 680,
+      "total_a_references": 7,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "pcheor",
+        "pcheor",
+        "pcheor",
+        "pol",
+        "pol",
+        "tol",
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "pcheor",
+        "pcheor",
+        "pcheor"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0103
+    },
+    "f111v": {
+      "word_count": 784,
+      "total_a_references": 12,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "par",
+        "tor",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "sho",
+        "par"
+      ],
+      "closing_references": [
+        "tor",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0153
+    },
+    "f112v": {
+      "word_count": 571,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "pchodaiin"
+      ],
+      "position_sequence": [
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "pchodaiin"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0018
+    },
+    "f113r": {
+      "word_count": 686,
+      "total_a_references": 10,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "tol",
+        "tol",
+        "tol",
+        "tol",
+        "kcheodaiin",
+        "kcheodaiin",
+        "pchor",
+        "pchor",
+        "pchor",
+        "tcho"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [],
+      "closing_references": [
+        "kcheodaiin",
+        "kcheodaiin",
+        "pchor",
+        "pchor",
+        "pchor",
+        "tcho"
+      ],
+      "reference_density": 0.0146
+    },
+    "f113v": {
+      "word_count": 590,
+      "total_a_references": 15,
+      "unique_a_headings": 4,
+      "headings_referenced": [
+        "poraiin",
+        "poraiin",
+        "poraiin",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "pcheol",
+        "tsho",
+        "tsho",
+        "tsho",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "MIDDLE",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END",
+        "END"
+      ],
+      "opening_references": [
+        "poraiin",
+        "poraiin",
+        "poraiin",
+        "pcheol"
+      ],
+      "closing_references": [
+        "tsho",
+        "tsho",
+        "tsho",
+        "pol",
+        "pol",
+        "pol"
+      ],
+      "reference_density": 0.0254
+    },
+    "f114r": {
+      "word_count": 572,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "pcheor"
+      ],
+      "position_sequence": [
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "pcheor"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0017
+    },
+    "f114v": {
+      "word_count": 430,
+      "total_a_references": 4,
+      "unique_a_headings": 2,
+      "headings_referenced": [
+        "pol",
+        "pol",
+        "sho",
+        "sho"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "pol",
+        "pol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0093
+    },
+    "f115r": {
+      "word_count": 517,
+      "total_a_references": 2,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "pchodar",
+        "pchodar"
+      ],
+      "position_sequence": [
+        "MIDDLE",
+        "MIDDLE"
+      ],
+      "opening_references": [],
+      "closing_references": [],
+      "reference_density": 0.0039
+    },
+    "f115v": {
+      "word_count": 494,
+      "total_a_references": 5,
+      "unique_a_headings": 3,
+      "headings_referenced": [
+        "sho",
+        "sho",
+        "tol",
+        "tol",
+        "pchodaiin"
+      ],
+      "position_sequence": [
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "BEGINNING",
+        "MIDDLE"
+      ],
+      "opening_references": [
+        "sho",
+        "sho",
+        "tol",
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0101
+    },
+    "f116r": {
+      "word_count": 650,
+      "total_a_references": 1,
+      "unique_a_headings": 1,
+      "headings_referenced": [
+        "tol"
+      ],
+      "position_sequence": [
+        "BEGINNING"
+      ],
+      "opening_references": [
+        "tol"
+      ],
+      "closing_references": [],
+      "reference_density": 0.0015
+    }
+  },
+  "patterns": {
+    "starts_with_reference": 37,
+    "ends_with_reference": 29,
+    "single_reference_entries": 12,
+    "multi_reference_entries": 49,
+    "mean_references_per_entry": 6.54
+  },
+  "summary": {
+    "b_entries_analyzed": 61,
+    "total_a_references": 399,
+    "structural_pattern": "MULTI_REFERENCE"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "phase": "15E",
+    "title": "Minimal Semantic Units",
+    "timestamp": "2025-12-31T15:36:11.542547"
+  },
+  "atomicity": {
+    "single_char_nodes": [
+      "h",
+      "e",
+      "t",
+      "r",
+      "o",
+      "s",
+      "d",
+      "l",
+      "k"
+    ],
+    "single_char_count": 9,
+    "double_char_nodes": [
+      "dy",
+      "eo",
+      "ch",
+      "ee",
+      "ed",
+      "he",
+      "ol",
+      "al",
+      "ar",
+      "or"
+    ],
+    "double_char_count": 10,
+    "composite_nodes": [
+      {
+        "node": "dar",
+        "decomposition": [
+          "d",
+          "ar"
+        ]
+      },
+      {
+        "node": "daiin",
+        "decomposition": [
+          "d",
+          "aiin"
+        ]
+      },
+      {
+        "node": "dal",
+        "decomposition": [
+          "d",
+          "al"
+        ]
+      },
+      {
+        "node": "chol",
+        "decomposition": [
+          "ch",
+          "ol"
+        ]
+      }
+    ],
+    "composite_count": 4,
+    "all_atomic": false
+  },
+  "internal_morphology": {
+    "shared_prefixes": {
+      "d": 4,
+      "c": 4,
+      "ch": 4,
+      "da": 3,
+      "a": 3,
+      "e": 3
+    },
+    "shared_suffixes": {
+      "y": 5,
+      "l": 4,
+      "r": 3,
+      "dy": 3
+    },
+    "decomposable_count": 4
+  },
+  "generative_analysis": {
+    "primitive_count": 19,
+    "primitives": [
+      "h",
+      "e",
+      "dy",
+      "t",
+      "eo",
+      "ch",
+      "r",
+      "o",
+      "ee",
+      "ed",
+      "s",
+      "d",
+      "he",
+      "ol",
+      "l",
+      "al",
+      "k",
+      "ar",
+      "or"
+    ],
+    "coverage": 0.679
+  },
+  "irreducible_core": {
+    "count": 25,
+    "members": [
+      "h",
+      "e",
+      "dy",
+      "aiin",
+      "daiin",
+      "t",
+      "eo",
+      "r",
+      "ch",
+      "chedy",
+      "o",
+      "ee",
+      "s",
+      "ed",
+      "d",
+      "he",
+      "ol",
+      "shedy",
+      "l",
+      "k"
+    ]
+  },
+  "character_inventory": {
+    "unique_characters": 14,
+    "character_frequencies": {
+      "e": 10,
+      "h": 8,
+      "d": 8,
+      "a": 6,
+      "y": 5,
+      "o": 5,
+      "l": 5,
+      "r": 4,
+      "i": 4,
+      "c": 4,
+      "s": 3,
+      "n": 2,
+      "t": 1,
+      "k": 1
+    }
+  },
+  "SEMANTIC_PRIMITIVES": "9 single-char primitives: ['h', 'e', 't', 'r', 'o', 's', 'd', 'l', 'k']. 10 two-char units. 4 decomposable composites. Irreducible core: 25 nodes."
+}

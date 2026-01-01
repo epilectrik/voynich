@@ -1,0 +1,397 @@
+{
+  "timestamp": "2025-12-30T13:08:12.691076",
+  "current_stats": {
+    "high": 11,
+    "medium": 20,
+    "low": 13,
+    "high_pct": 25.0
+  },
+  "upgrades": [
+    {
+      "morpheme": "ol",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in BIOLOGICAL (2.1x)",
+        "High frequency (1608 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "so",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 4,
+      "reasons": [
+        "Strong enrichment in BIOLOGICAL (1.9x)",
+        "Moderate frequency (373 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "ok",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in ZODIAC (2.2x)",
+        "High frequency (2485 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "yk",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in ZODIAC (2.5x)",
+        "High frequency (630 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "ar",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in ZODIAC (2.9x)",
+        "High frequency (508 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "cth",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in HERBAL (2.3x)",
+        "High frequency (503 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "sa",
+      "position": "prefix",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 4,
+      "reasons": [
+        "Moderate enrichment in ZODIAC (1.5x)",
+        "High frequency (514 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "or",
+      "position": "prefix",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 3,
+      "reasons": [
+        "High frequency (608 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "yt",
+      "position": "prefix",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in ZODIAC (1.9x)",
+        "High frequency (530 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "cth",
+      "position": "middle",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 4,
+      "reasons": [
+        "Moderate enrichment in HERBAL (1.7x)",
+        "High frequency (945 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "tch",
+      "position": "middle",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 4,
+      "reasons": [
+        "Moderate enrichment in HERBAL (1.7x)",
+        "High frequency (992 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "ed",
+      "position": "middle",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 5,
+      "reasons": [
+        "Strong enrichment in BIOLOGICAL (2.1x)",
+        "High frequency (5012 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "eo",
+      "position": "middle",
+      "from": "MEDIUM",
+      "to": "UPGRADE to HIGH",
+      "score": 4,
+      "reasons": [
+        "Strong enrichment in ZODIAC (1.9x)",
+        "High frequency (3452 occurrences)"
+      ]
+    },
+    {
+      "morpheme": "kch",
+      "position": "middle",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 4,
+      "reasons": [
+        "Moderate enrichment in HERBAL (1.5x)",
+        "High frequency (1094 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "dch",
+      "position": "middle",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 3,
+      "reasons": [
+        "Moderate enrichment in HERBAL (1.6x)",
+        "Moderate frequency (341 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "sch",
+      "position": "middle",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 3,
+      "reasons": [
+        "Strong enrichment in HERBAL (1.8x)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "cph",
+      "position": "middle",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 3,
+      "reasons": [
+        "Moderate enrichment in HERBAL (1.6x)",
+        "Moderate frequency (217 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "o",
+      "position": "middle",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 3,
+      "reasons": [
+        "High frequency (21910 occurrences)",
+        "Consistent preceding context"
+      ]
+    },
+    {
+      "morpheme": "a",
+      "position": "middle",
+      "from": "LOW",
+      "to": "UPGRADE to MEDIUM",
+      "score": 3,
+      "reasons": [
+        "High frequency (13618 occurrences)",
+        "Consistent preceding context"
+      ]
+    }
+  ],
+  "new_mappings": {
+    "prefixes": {
+      "eo": {
+        "category": "STATE",
+        "meaning": "flow/flowing",
+        "confidence": "MEDIUM",
+        "evidence": "Appears in flow-related contexts"
+      },
+      "ai": {
+        "category": "TIME",
+        "meaning": "marker/at",
+        "confidence": "MEDIUM",
+        "evidence": "Frequent in time expressions"
+      },
+      "od": {
+        "category": "PLANT",
+        "meaning": "root",
+        "confidence": "LOW",
+        "evidence": "Appears with plant terms"
+      }
+    },
+    "middles": {
+      "ke": {
+        "category": "STATE",
+        "meaning": "heat/heated",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.2x (heating procedures)"
+      },
+      "kee": {
+        "category": "STATE",
+        "meaning": "steam/steamed",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.3x (fumigation)"
+      },
+      "ol": {
+        "category": "STATE",
+        "meaning": "oil",
+        "confidence": "HIGH",
+        "evidence": "HERBAL 1.7x, medium context"
+      },
+      "al": {
+        "category": "STATE",
+        "meaning": "celestial/stellar",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC enriched"
+      }
+    },
+    "suffixes": {
+      "ol": {
+        "function": "material marker",
+        "confidence": "MEDIUM",
+        "evidence": "Appears with substance terms"
+      },
+      "or": {
+        "function": "agent/benefit",
+        "confidence": "MEDIUM",
+        "evidence": "Often follows process words"
+      }
+    }
+  },
+  "expanded_vocabulary": {
+    "chol": {
+      "meaning": "hot herb",
+      "confidence": "HIGH",
+      "evidence": "ch=herb + ol=oil, very common"
+    },
+    "shol": {
+      "meaning": "juice-oil",
+      "confidence": "HIGH",
+      "evidence": "sh=juice + ol=oil"
+    },
+    "cthol": {
+      "meaning": "water-oil",
+      "confidence": "MEDIUM",
+      "evidence": "cth=water + ol=oil"
+    },
+    "dol": {
+      "meaning": "leaf-oil",
+      "confidence": "MEDIUM",
+      "evidence": "da=leaf + ol=oil"
+    },
+    "qokey": {
+      "meaning": "womb heating (ongoing)",
+      "confidence": "HIGH",
+      "evidence": "qo=womb + ke=heat + y"
+    },
+    "qolkedy": {
+      "meaning": "womb-oil heated",
+      "confidence": "MEDIUM",
+      "evidence": "qo=womb + ol=oil + ke=heat + dy"
+    },
+    "olkeedy": {
+      "meaning": "menses steamed",
+      "confidence": "MEDIUM",
+      "evidence": "ol=menses + kee=steam + dy"
+    },
+    "okeedy": {
+      "meaning": "sky steamed",
+      "confidence": "MEDIUM",
+      "evidence": "ok=sky + kee + dy"
+    },
+    "otaly": {
+      "meaning": "at time",
+      "confidence": "HIGH",
+      "evidence": "ot=time + al=at + y"
+    },
+    "otar": {
+      "meaning": "time-marker",
+      "confidence": "HIGH",
+      "evidence": "ot=time + ar"
+    },
+    "lchedy": {
+      "meaning": "washed-done",
+      "confidence": "HIGH",
+      "evidence": "lch=wash + ed + y"
+    },
+    "tchedy": {
+      "meaning": "prepared-done",
+      "confidence": "HIGH",
+      "evidence": "tch=prepare + ed + y"
+    },
+    "ckhedy": {
+      "meaning": "processed-done",
+      "confidence": "MEDIUM",
+      "evidence": "ckh=process + ed + y"
+    },
+    "kaiin": {
+      "meaning": "heat-place",
+      "confidence": "MEDIUM",
+      "evidence": "ke + aiin=place"
+    },
+    "taiin": {
+      "meaning": "earth-place",
+      "confidence": "MEDIUM",
+      "evidence": "t + aiin=place"
+    },
+    "saiin": {
+      "meaning": "seed-place",
+      "confidence": "MEDIUM",
+      "evidence": "sa=seed + aiin=place"
+    },
+    "cthor": {
+      "meaning": "water-benefit",
+      "confidence": "MEDIUM",
+      "evidence": "cth=water + or=benefit"
+    },
+    "shor": {
+      "meaning": "juice-benefit",
+      "confidence": "MEDIUM",
+      "evidence": "sh=juice + or=benefit"
+    }
+  },
+  "projected_stats": {
+    "high": 22,
+    "medium": 17,
+    "low": 5,
+    "high_pct": 50.0
+  },
+  "combined_stats": {
+    "total": 62,
+    "high": 29,
+    "high_pct": 46.774193548387096
+  }
+}

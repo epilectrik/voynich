@@ -1,0 +1,717 @@
+{
+  "competing_hypotheses": {
+    "qo": {
+      "primary": {
+        "meaning": "womb/uterus",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.60x enrichment"
+      },
+      "alternative": {
+        "meaning": "internal cavity",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Generic body container"
+      }
+    },
+    "ol": {
+      "primary": {
+        "meaning": "menstrual flow",
+        "confidence": "MEDIUM",
+        "evidence": "BIOLOGICAL 2.1x enrichment"
+      },
+      "alternative": {
+        "meaning": "bodily fluid (generic)",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Could be any humor"
+      }
+    },
+    "so": {
+      "primary": {
+        "meaning": "health/healing",
+        "confidence": "MEDIUM",
+        "evidence": "HERBAL co-occurrence"
+      },
+      "alternative": {
+        "meaning": "state/condition",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Abstract state marker"
+      }
+    },
+    "pc": {
+      "primary": {
+        "meaning": "chest/pectoral",
+        "confidence": "LOW",
+        "evidence": "Latin pectus connection"
+      },
+      "alternative": {
+        "meaning": "vessel/container",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Generic container"
+      }
+    },
+    "ch": {
+      "primary": {
+        "meaning": "herb/plant",
+        "confidence": "HIGH",
+        "evidence": "HERBAL section dominant"
+      },
+      "alternative": {
+        "meaning": "material/substance",
+        "confidence": "MEDIUM",
+        "evidence": "Generic material"
+      }
+    },
+    "sh": {
+      "primary": {
+        "meaning": "juice/sap",
+        "confidence": "HIGH",
+        "evidence": "Liquid context"
+      },
+      "alternative": {
+        "meaning": "extract/essence",
+        "confidence": "MEDIUM",
+        "evidence": "Processed plant"
+      }
+    },
+    "da": {
+      "primary": {
+        "meaning": "leaf",
+        "confidence": "HIGH",
+        "evidence": "HERBAL 1.5x enrichment"
+      },
+      "alternative": {
+        "meaning": "green part",
+        "confidence": "MEDIUM",
+        "evidence": "Generic plant part"
+      }
+    },
+    "sa": {
+      "primary": {
+        "meaning": "seed",
+        "confidence": "MEDIUM",
+        "evidence": "Context inference"
+      },
+      "alternative": {
+        "meaning": "small part",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Diminutive marker"
+      }
+    },
+    "ot": {
+      "primary": {
+        "meaning": "time/season",
+        "confidence": "HIGH",
+        "evidence": "ZODIAC 2.4x enrichment"
+      },
+      "alternative": {
+        "meaning": "cycle/period",
+        "confidence": "MEDIUM",
+        "evidence": "Recurring pattern"
+      }
+    },
+    "ok": {
+      "primary": {
+        "meaning": "sky/celestial",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC 1.9x enrichment"
+      },
+      "alternative": {
+        "meaning": "sequence/order",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Ordering marker"
+      }
+    },
+    "ct": {
+      "primary": {
+        "meaning": "water",
+        "confidence": "HIGH",
+        "evidence": "HERBAL 2.4x enrichment"
+      },
+      "alternative": {
+        "meaning": "dilution medium",
+        "confidence": "MEDIUM",
+        "evidence": "Processing liquid"
+      }
+    },
+    "cth": {
+      "primary": {
+        "meaning": "purify",
+        "confidence": "MEDIUM",
+        "evidence": "Water-related"
+      },
+      "alternative": {
+        "meaning": "dilute",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Adding water"
+      }
+    },
+    "lch": {
+      "primary": {
+        "meaning": "wash/cleanse",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.01x (bathing)"
+      },
+      "alternative": {
+        "meaning": "prepare wet",
+        "confidence": "MEDIUM",
+        "evidence": "Generic wet processing"
+      }
+    },
+    "lche": {
+      "primary": {
+        "meaning": "wash/cleanse",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.31x"
+      },
+      "alternative": {
+        "meaning": "rinse thoroughly",
+        "confidence": "MEDIUM",
+        "evidence": "Intensive washing"
+      }
+    },
+    "tch": {
+      "primary": {
+        "meaning": "prepare/treat",
+        "confidence": "MEDIUM",
+        "evidence": "HERBAL 63%"
+      },
+      "alternative": {
+        "meaning": "process (generic)",
+        "confidence": "MEDIUM",
+        "evidence": "General preparation"
+      }
+    },
+    "ckh": {
+      "primary": {
+        "meaning": "process/work",
+        "confidence": "MEDIUM",
+        "evidence": "RECIPES 42%"
+      },
+      "alternative": {
+        "meaning": "transform",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Change state"
+      }
+    },
+    "kch": {
+      "primary": {
+        "meaning": "strengthen/potent",
+        "confidence": "LOW",
+        "evidence": "HERBAL 57%"
+      },
+      "alternative": {
+        "meaning": "intensify",
+        "confidence": "PLAUSIBLE",
+        "evidence": "Generic amplifier"
+      }
+    },
+    "pch": {
+      "primary": {
+        "meaning": "apply (to body)",
+        "confidence": "MEDIUM",
+        "evidence": "Followed by BODY"
+      },
+      "alternative": {
+        "meaning": "administer",
+        "confidence": "MEDIUM",
+        "evidence": "Give treatment"
+      }
+    }
+  },
+  "blind_test": [
+    {
+      "folio": "f3r",
+      "section": "HERBAL",
+      "words": [
+        "tsheos",
+        "qopal",
+        "chol",
+        "cthol",
+        "daimm",
+        "ycheor",
+        "chor",
+        "dam",
+        "qotcham",
+        "cham",
+        "ochor",
+        "qocheor",
+        "chol",
+        "daiin",
+        "cthy"
+      ],
+      "paraphrase": "BODY-womb/uterus PLANT-herb/plant PROCESS-purify PLANT-leaf PLANT-herb/plant PLANT-leaf PROCESS-prepare/treat PLANT-herb/plant BODY-womb/uterus PLANT-herb/plant PLANT-leaf PROCESS-purify",
+      "translations": [
+        {
+          "word": "tsheos",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "qopal",
+          "parts": [
+            "BODY:womb/uterus"
+          ],
+          "category": "BODY"
+        },
+        {
+          "word": "chol",
+          "parts": [
+            "PLANT:herb/plant"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "cthol",
+          "parts": [
+            "PROCESS:purify",
+            "PROCESS:purify"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "daimm",
+          "parts": [
+            "PLANT:leaf"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "ycheor",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "chor",
+          "parts": [
+            "PLANT:herb/plant"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "dam",
+          "parts": [
+            "PLANT:leaf"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "qotcham",
+          "parts": [
+            "PROCESS:prepare/treat",
+            "PROCESS:womb/uterus"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "cham",
+          "parts": [
+            "PLANT:herb/plant"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "ochor",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "qocheor",
+          "parts": [
+            "BODY:womb/uterus"
+          ],
+          "category": "BODY"
+        },
+        {
+          "word": "chol",
+          "parts": [
+            "PLANT:herb/plant"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "daiin",
+          "parts": [
+            "PLANT:leaf",
+            "GRAM:-place"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "cthy",
+          "parts": [
+            "PROCESS:purify",
+            "PROCESS:purify"
+          ],
+          "category": "PROCESS"
+        }
+      ],
+      "expected_content": "plant illustration with text describing properties",
+      "match_result": "PARTIAL"
+    },
+    {
+      "folio": "f49r",
+      "section": "HERBAL",
+      "words": [
+        "poshol",
+        "dy",
+        "shor",
+        "shol",
+        "shtchy",
+        "shorpchor",
+        "opchor",
+        "shorkchy",
+        "qotor",
+        "sho",
+        "chotchy",
+        "choshy",
+        "qopchor",
+        "qo",
+        "dor"
+      ],
+      "paraphrase": "PLANT-juice/sap PLANT-juice/sap PROCESS-prepare/treat PROCESS-apply (to body) PROCESS-apply (to body) PROCESS-strengthen/potent BODY-womb/uterus PLANT-juice/sap PROCESS-prepare/treat PLANT-herb/plant PROCESS-apply (to body) BODY-womb/uterus",
+      "translations": [
+        {
+          "word": "poshol",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "dy",
+          "parts": [
+            "GRAM:-ed/done"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "shor",
+          "parts": [
+            "PLANT:juice/sap"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "shol",
+          "parts": [
+            "PLANT:juice/sap"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "shtchy",
+          "parts": [
+            "PROCESS:prepare/treat",
+            "PROCESS:juice/sap"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "shorpchor",
+          "parts": [
+            "PROCESS:apply (to body)",
+            "PROCESS:juice/sap"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "opchor",
+          "parts": [
+            "PROCESS:apply (to body)"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "shorkchy",
+          "parts": [
+            "PROCESS:strengthen/potent",
+            "PROCESS:juice/sap"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "qotor",
+          "parts": [
+            "BODY:womb/uterus"
+          ],
+          "category": "BODY"
+        },
+        {
+          "word": "sho",
+          "parts": [
+            "PLANT:juice/sap"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "chotchy",
+          "parts": [
+            "PROCESS:prepare/treat",
+            "PROCESS:herb/plant"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "choshy",
+          "parts": [
+            "PLANT:herb/plant"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "qopchor",
+          "parts": [
+            "PROCESS:apply (to body)",
+            "PROCESS:womb/uterus"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "qo",
+          "parts": [
+            "BODY:womb/uterus"
+          ],
+          "category": "BODY"
+        },
+        {
+          "word": "dor",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        }
+      ],
+      "expected_content": "plant illustration with text describing properties",
+      "match_result": "PARTIAL"
+    },
+    {
+      "folio": "f88r",
+      "section": "RECIPES",
+      "words": [
+        "otorchety",
+        "oral",
+        "orald",
+        "oldar",
+        "otoky",
+        "otaly",
+        "dorsheoy",
+        "ctheol",
+        "qockhey",
+        "dory",
+        "sheor",
+        "sholfchor",
+        "dal",
+        "chckhod",
+        "sal"
+      ],
+      "paraphrase": "TIME-time/season BODY-menstrual flow TIME-time/season TIME-time/season PROCESS-purify PROCESS-womb/uterus PLANT-juice/sap PROCESS-juice/sap PLANT-leaf PROCESS-process/work PLANT-seed",
+      "translations": [
+        {
+          "word": "otorchety",
+          "parts": [
+            "TIME:time/season"
+          ],
+          "category": "TIME"
+        },
+        {
+          "word": "oral",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "orald",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "oldar",
+          "parts": [
+            "BODY:menstrual flow"
+          ],
+          "category": "BODY"
+        },
+        {
+          "word": "otoky",
+          "parts": [
+            "TIME:time/season"
+          ],
+          "category": "TIME"
+        },
+        {
+          "word": "otaly",
+          "parts": [
+            "TIME:time/season"
+          ],
+          "category": "TIME"
+        },
+        {
+          "word": "dorsheoy",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "ctheol",
+          "parts": [
+            "PROCESS:purify",
+            "PROCESS:purify"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "qockhey",
+          "parts": [
+            "PROCESS:womb/uterus",
+            "GRAM:-ing"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "dory",
+          "parts": [
+            "UNKNOWN"
+          ],
+          "category": "OTHER"
+        },
+        {
+          "word": "sheor",
+          "parts": [
+            "PLANT:juice/sap"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "sholfchor",
+          "parts": [
+            "PROCESS:juice/sap"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "dal",
+          "parts": [
+            "PLANT:leaf"
+          ],
+          "category": "PLANT"
+        },
+        {
+          "word": "chckhod",
+          "parts": [
+            "PROCESS:process/work",
+            "PROCESS:herb/plant"
+          ],
+          "category": "PROCESS"
+        },
+        {
+          "word": "sal",
+          "parts": [
+            "PLANT:seed"
+          ],
+          "category": "PLANT"
+        }
+      ],
+      "expected_content": "preparation instructions",
+      "match_result": "PARTIAL"
+    }
+  ],
+  "minimal_pairs": {
+    "total_found": 50,
+    "prefix_pairs": 50,
+    "gallows_pairs": 0
+  },
+  "narrative_test": {
+    "gynecological": {
+      "forced_changes": 3,
+      "coherence_markers": 3,
+      "sample_translation": [
+        "[tshedor]",
+        "extract -ed",
+        "womb [pche] -ed",
+        "womb -ed",
+        "-ed",
+        "womb",
+        "sky/celestial",
+        "womb -ed",
+        "womb -ed",
+        "extract -ed"
+      ]
+    },
+    "balneological": {
+      "forced_changes": 3,
+      "coherence_markers": 1,
+      "sample_translation": [
+        "[tshedor]",
+        "infusion -ed",
+        "body [pche] -ed",
+        "body -ed",
+        "-ed",
+        "body",
+        "sky/celestial",
+        "body -ed",
+        "body -ed",
+        "infusion -ed"
+      ]
+    },
+    "alchemical": {
+      "forced_changes": 3,
+      "coherence_markers": 2,
+      "sample_translation": [
+        "[tshedor]",
+        "tincture -ed",
+        "vessel [pche] -ed",
+        "vessel -ed",
+        "-ed",
+        "vessel",
+        "sky/celestial",
+        "vessel -ed",
+        "vessel -ed",
+        "tincture -ed"
+      ]
+    }
+  },
+  "confidence_tagged": {
+    "total_words": 294,
+    "structural_pct": 100,
+    "relational_pct": 25.510204081632654,
+    "lexical_high_pct": 43.197278911564624,
+    "lexical_medium_pct": 17.006802721088434,
+    "lexical_speculative_pct": 39.1156462585034,
+    "lexical_unknown_pct": 30.952380952380953
+  },
+  "propagation": {
+    "f1r": {
+      "section": "HERBAL",
+      "words_tested": 30,
+      "meaning_attempts": 10,
+      "meaning_hits": 7,
+      "coherence_ratio": 0.7,
+      "verdict": "PROPAGATES"
+    },
+    "f69r": {
+      "section": "ZODIAC",
+      "words_tested": 30,
+      "meaning_attempts": 20,
+      "meaning_hits": 15,
+      "coherence_ratio": 0.75,
+      "verdict": "PROPAGATES"
+    },
+    "f67r1": {
+      "section": "RECIPES",
+      "words_tested": 30,
+      "meaning_attempts": 9,
+      "meaning_hits": 7,
+      "coherence_ratio": 0.7777777777777778,
+      "verdict": "PROPAGATES"
+    }
+  }
+}

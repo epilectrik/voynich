@@ -1,0 +1,3343 @@
+{
+  "metadata": {
+    "phase": "H2.1",
+    "title": "Classifier Signatures per Heading",
+    "timestamp": "2025-12-30T21:43:38.168419"
+  },
+  "heading_signatures": {
+    "prefix_order": [
+      "al",
+      "ar",
+      "cf",
+      "ch",
+      "ck",
+      "cp",
+      "ct",
+      "da",
+      "dc",
+      "do",
+      "fc",
+      "fo",
+      "kc",
+      "ke",
+      "ko",
+      "lc",
+      "ok",
+      "ol",
+      "ot",
+      "pc",
+      "pd",
+      "po",
+      "ps",
+      "qo",
+      "sa",
+      "sc",
+      "sh",
+      "so",
+      "tc",
+      "to",
+      "ts",
+      "yc",
+      "yk"
+    ],
+    "signatures": {
+      "f1r": {
+        "heading": "fachys",
+        "entropy": 3.0531631575145295
+      },
+      "f1v": {
+        "heading": "kchsy",
+        "entropy": 2.9592816689009283
+      },
+      "f2r": {
+        "heading": "kydainy",
+        "entropy": 2.9204931920770503
+      },
+      "f2v": {
+        "heading": "kooiin",
+        "entropy": 2.475976407412763
+      },
+      "f3r": {
+        "heading": "tsheos",
+        "entropy": 2.9363019142176494
+      },
+      "f3v": {
+        "heading": "koaiin",
+        "entropy": 3.0131365885905725
+      },
+      "f4r": {
+        "heading": "kodalchy",
+        "entropy": 2.9684693150129506
+      },
+      "f4v": {
+        "heading": "pchooiin",
+        "entropy": 2.74848675847906
+      },
+      "f5r": {
+        "heading": "kshody",
+        "entropy": 2.966047170040018
+      },
+      "f5v": {
+        "heading": "kocheor",
+        "entropy": 2.9374417177832313
+      },
+      "f6r": {
+        "heading": "foar",
+        "entropy": 2.9709534622768587
+      },
+      "f6v": {
+        "heading": "koar",
+        "entropy": 3.021969806156795
+      },
+      "f7r": {
+        "heading": "fchodaiin",
+        "entropy": 2.7447291874582067
+      },
+      "f7v": {
+        "heading": "polyshy",
+        "entropy": 2.9876439611241628
+      },
+      "f8r": {
+        "heading": "pshol",
+        "entropy": 2.70242459654557
+      },
+      "f8v": {
+        "heading": "cthod",
+        "entropy": 2.6605721172432455
+      },
+      "f9r": {
+        "heading": "tydlo",
+        "entropy": 2.981037468583669
+      },
+      "f9v": {
+        "heading": "fochor",
+        "entropy": 3.0588350426188393
+      },
+      "f10r": {
+        "heading": "pchocthy",
+        "entropy": 2.991424363665078
+      },
+      "f10v": {
+        "heading": "paiin",
+        "entropy": 2.838624531032849
+      },
+      "f11r": {
+        "heading": "tshol",
+        "entropy": 3.1240244208650214
+      },
+      "f11v": {
+        "heading": "poldchody",
+        "entropy": 3.069278579557406
+      },
+      "f13r": {
+        "heading": "torshor",
+        "entropy": 3.228129103402309
+      },
+      "f13v": {
+        "heading": "koair",
+        "entropy": 3.1741054491895415
+      },
+      "f14r": {
+        "heading": "pchodaiin",
+        "entropy": 3.1373854188736714
+      },
+      "f14v": {
+        "heading": "pdychoiin",
+        "entropy": 3.1610416491696776
+      },
+      "f15r": {
+        "heading": "tshor",
+        "entropy": 3.0980634222114367
+      },
+      "f15v": {
+        "heading": "poror",
+        "entropy": 3.0126700594367466
+      },
+      "f16r": {
+        "heading": "pocheody",
+        "entropy": 3.1597775868765656
+      },
+      "f16v": {
+        "heading": "pchraiin",
+        "entropy": 2.691939736535675
+      },
+      "f17r": {
+        "heading": "fshody",
+        "entropy": 2.9760602214445617
+      },
+      "f17v": {
+        "heading": "pchodol",
+        "entropy": 3.0056416570298228
+      },
+      "f18r": {
+        "heading": "pdrairdy",
+        "entropy": 3.067320631966208
+      },
+      "f18v": {
+        "heading": "told",
+        "entropy": 3.106982203751711
+      },
+      "f19r": {
+        "heading": "pchor",
+        "entropy": 3.114971890159623
+      },
+      "f19v": {
+        "heading": "pochaiin",
+        "entropy": 3.13996579831029
+      },
+      "f20r": {
+        "heading": "kdchody",
+        "entropy": 2.7885827559492613
+      },
+      "f20v": {
+        "heading": "faiis",
+        "entropy": 2.5940883274633086
+      },
+      "f21r": {
+        "heading": "pchor",
+        "entropy": 2.9665166251603283
+      },
+      "f21v": {
+        "heading": "toldshy",
+        "entropy": 2.744517253099888
+      },
+      "f22r": {
+        "heading": "pol",
+        "entropy": 3.225012010211799
+      },
+      "f22v": {
+        "heading": "pysaiinor",
+        "entropy": 3.149910739046993
+      },
+      "f23r": {
+        "heading": "pydchdom",
+        "entropy": 3.0179443111053224
+      },
+      "f23v": {
+        "heading": "podairol",
+        "entropy": 3.1338688857661654
+      },
+      "f24r": {
+        "heading": "porory",
+        "entropy": 2.9617169249881727
+      },
+      "f24v": {
+        "heading": "tchodar",
+        "entropy": 3.0654570491454316
+      },
+      "f25r": {
+        "heading": "fcholdy",
+        "entropy": 2.9312185955880636
+      },
+      "f25v": {
+        "heading": "poeeaiin",
+        "entropy": 2.884348497601694
+      },
+      "f27r": {
+        "heading": "ksor",
+        "entropy": 2.8434730085341746
+      },
+      "f27v": {
+        "heading": "fochof",
+        "entropy": 2.998325605391469
+      },
+      "f28r": {
+        "heading": "pchodar",
+        "entropy": 3.072297077246217
+      },
+      "f28v": {
+        "heading": "kshol",
+        "entropy": 2.6627626481176327
+      },
+      "f29r": {
+        "heading": "poraiin",
+        "entropy": 2.627539248688392
+      },
+      "f29v": {
+        "heading": "kooiin",
+        "entropy": 2.9005391572126675
+      },
+      "f30r": {
+        "heading": "okchesy",
+        "entropy": 2.6607696664156966
+      },
+      "f30v": {
+        "heading": "cthscthain",
+        "entropy": 2.779124090421418
+      },
+      "f32r": {
+        "heading": "fchoiin",
+        "entropy": 3.143826160488843
+      },
+      "f32v": {
+        "heading": "kcheodaiin",
+        "entropy": 2.9697021721956713
+      },
+      "f35r": {
+        "heading": "cthoo",
+        "entropy": 2.9185611484549776
+      },
+      "f35v": {
+        "heading": "par",
+        "entropy": 2.716359695213931
+      },
+      "f36r": {
+        "heading": "pchafdan",
+        "entropy": 3.1127128430698425
+      },
+      "f36v": {
+        "heading": "pcharasy",
+        "entropy": 3.15215034835311
+      },
+      "f37r": {
+        "heading": "tocphol",
+        "entropy": 3.059200232393253
+      },
+      "f37v": {
+        "heading": "kshody",
+        "entropy": 3.034612302888042
+      },
+      "f38r": {
+        "heading": "tolor",
+        "entropy": 2.719460244415019
+      },
+      "f38v": {
+        "heading": "okchop",
+        "entropy": 2.942240026036578
+      },
+      "f42r": {
+        "heading": "sho",
+        "entropy": 2.7395378035201254
+      },
+      "f42v": {
+        "heading": "tcho",
+        "entropy": 2.8650215413921543
+      },
+      "f44r": {
+        "heading": "tshodpy",
+        "entropy": 3.092038689661482
+      },
+      "f44v": {
+        "heading": "tsho",
+        "entropy": 3.1745927883327942
+      },
+      "f45r": {
+        "heading": "pykydal",
+        "entropy": 3.146803433070811
+      },
+      "f45v": {
+        "heading": "korary",
+        "entropy": 3.1998279719739053
+      },
+      "f47r": {
+        "heading": "pchair",
+        "entropy": 2.671565523569597
+      },
+      "f47v": {
+        "heading": "psheot",
+        "entropy": 2.784141084903165
+      },
+      "f49r": {
+        "heading": "poshol",
+        "entropy": 2.6223498133305063
+      },
+      "f51r": {
+        "heading": "tcholdchy",
+        "entropy": 3.167044182510126
+      },
+      "f51v": {
+        "heading": "poshody",
+        "entropy": 3.067728491524384
+      },
+      "f52r": {
+        "heading": "tdokchcfhy",
+        "entropy": 3.17549842042059
+      },
+      "f52v": {
+        "heading": "pchor",
+        "entropy": 3.130920993047887
+      },
+      "f53r": {
+        "heading": "kodam",
+        "entropy": 3.1249608054632994
+      },
+      "f53v": {
+        "heading": "tshor",
+        "entropy": 3.0942569978521766
+      },
+      "f54r": {
+        "heading": "podaiin",
+        "entropy": 3.1351410956976644
+      },
+      "f54v": {
+        "heading": "pcheodar",
+        "entropy": 2.9932787713362896
+      },
+      "f56r": {
+        "heading": "otchal",
+        "entropy": 2.6388062680020443
+      },
+      "f56v": {
+        "heading": "kcheat",
+        "entropy": 2.9829546575088433
+      },
+      "f58r": {
+        "heading": "kor",
+        "entropy": 3.1123812029648956
+      },
+      "f58v": {
+        "heading": "tol",
+        "entropy": 3.0435192570374014
+      },
+      "f87r": {
+        "heading": "poalshsal",
+        "entropy": 3.1596052947799658
+      },
+      "f87v": {
+        "heading": "pcheey",
+        "entropy": 3.2046348394524666
+      },
+      "f88r": {
+        "heading": "otorchety",
+        "entropy": 3.015493735296919
+      },
+      "f88v": {
+        "heading": "okolyd",
+        "entropy": 2.89700995805856
+      },
+      "f89r1": {
+        "heading": "okchshy",
+        "entropy": 2.679678852810319
+      },
+      "f89r2": {
+        "heading": "odory",
+        "entropy": 2.9102165891000773
+      },
+      "f89v2": {
+        "heading": "choeesy",
+        "entropy": 2.883584388557757
+      },
+      "f89v1": {
+        "heading": "okoraldy",
+        "entropy": 3.0357534438195737
+      },
+      "f90r1": {
+        "heading": "poleeol",
+        "entropy": 2.9527581584569673
+      },
+      "f90r2": {
+        "heading": "toealchs",
+        "entropy": 3.1072586087445213
+      },
+      "f90v2": {
+        "heading": "cphdaithy",
+        "entropy": 2.948764878348178
+      },
+      "f90v1": {
+        "heading": "pcheor",
+        "entropy": 3.111119932901184
+      },
+      "f93r": {
+        "heading": "kodshol",
+        "entropy": 2.997787283178484
+      },
+      "f93v": {
+        "heading": "possheody",
+        "entropy": 3.1988152646801846
+      },
+      "f96r": {
+        "heading": "tor",
+        "entropy": 2.95806883279533
+      },
+      "f96v": {
+        "heading": "psheoas",
+        "entropy": 3.1669580256547487
+      },
+      "f99r": {
+        "heading": "okoramog",
+        "entropy": 3.067030942624983
+      },
+      "f99v": {
+        "heading": "otaramy",
+        "entropy": 3.052679462363392
+      },
+      "f100r": {
+        "heading": "chosaroshol",
+        "entropy": 2.867739844451234
+      },
+      "f100v": {
+        "heading": "tolchd",
+        "entropy": 2.771667480787579
+      },
+      "f101r1": {
+        "heading": "pcheol",
+        "entropy": 3.0092271176047625
+      },
+      "f101v2": {
+        "heading": "sairaly",
+        "entropy": 3.155152069015791
+      },
+      "f102r1": {
+        "heading": "dordod",
+        "entropy": 3.2090480657456
+      },
+      "f102r2": {
+        "heading": "lsais",
+        "entropy": 3.176094597745808
+      },
+      "f102v2": {
+        "heading": "porshols",
+        "entropy": 3.0505498387225485
+      },
+      "f102v1": {
+        "heading": "ker",
+        "entropy": 2.999691068824043
+      }
+    }
+  },
+  "entropy_distribution": {
+    "mean": 2.9781412944585735,
+    "median": 3.0056416570298228,
+    "std": 0.16939544669304557,
+    "min": 2.475976407412763,
+    "max": 3.228129103402309
+  },
+  "dendrogram_structure": {
+    "folios": [
+      "f1r",
+      "f1v",
+      "f2r",
+      "f2v",
+      "f3r",
+      "f3v",
+      "f4r",
+      "f4v",
+      "f5r",
+      "f5v",
+      "f6r",
+      "f6v",
+      "f7r",
+      "f7v",
+      "f8r",
+      "f8v",
+      "f9r",
+      "f9v",
+      "f10r",
+      "f10v",
+      "f11r",
+      "f11v",
+      "f13r",
+      "f13v",
+      "f14r",
+      "f14v",
+      "f15r",
+      "f15v",
+      "f16r",
+      "f16v",
+      "f17r",
+      "f17v",
+      "f18r",
+      "f18v",
+      "f19r",
+      "f19v",
+      "f20r",
+      "f20v",
+      "f21r",
+      "f21v",
+      "f22r",
+      "f22v",
+      "f23r",
+      "f23v",
+      "f24r",
+      "f24v",
+      "f25r",
+      "f25v",
+      "f27r",
+      "f27v",
+      "f28r",
+      "f28v",
+      "f29r",
+      "f29v",
+      "f30r",
+      "f30v",
+      "f32r",
+      "f32v",
+      "f35r",
+      "f35v",
+      "f36r",
+      "f36v",
+      "f37r",
+      "f37v",
+      "f38r",
+      "f38v",
+      "f42r",
+      "f42v",
+      "f44r",
+      "f44v",
+      "f45r",
+      "f45v",
+      "f47r",
+      "f47v",
+      "f49r",
+      "f51r",
+      "f51v",
+      "f52r",
+      "f52v",
+      "f53r",
+      "f53v",
+      "f54r",
+      "f54v",
+      "f56r",
+      "f56v",
+      "f58r",
+      "f58v",
+      "f87r",
+      "f87v",
+      "f88r",
+      "f88v",
+      "f89r1",
+      "f89r2",
+      "f89v2",
+      "f89v1",
+      "f90r1",
+      "f90r2",
+      "f90v2",
+      "f90v1",
+      "f93r",
+      "f93v",
+      "f96r",
+      "f96v",
+      "f99r",
+      "f99v",
+      "f100r",
+      "f100v",
+      "f101r1",
+      "f101v2",
+      "f102r1",
+      "f102r2",
+      "f102v2",
+      "f102v1"
+    ],
+    "headings": [
+      "fachys",
+      "kchsy",
+      "kydainy",
+      "kooiin",
+      "tsheos",
+      "koaiin",
+      "kodalchy",
+      "pchooiin",
+      "kshody",
+      "kocheor",
+      "foar",
+      "koar",
+      "fchodaiin",
+      "polyshy",
+      "pshol",
+      "cthod",
+      "tydlo",
+      "fochor",
+      "pchocthy",
+      "paiin",
+      "tshol",
+      "poldchody",
+      "torshor",
+      "koair",
+      "pchodaiin",
+      "pdychoiin",
+      "tshor",
+      "poror",
+      "pocheody",
+      "pchraiin",
+      "fshody",
+      "pchodol",
+      "pdrairdy",
+      "told",
+      "pchor",
+      "pochaiin",
+      "kdchody",
+      "faiis",
+      "pchor",
+      "toldshy",
+      "pol",
+      "pysaiinor",
+      "pydchdom",
+      "podairol",
+      "porory",
+      "tchodar",
+      "fcholdy",
+      "poeeaiin",
+      "ksor",
+      "fochof",
+      "pchodar",
+      "kshol",
+      "poraiin",
+      "kooiin",
+      "okchesy",
+      "cthscthain",
+      "fchoiin",
+      "kcheodaiin",
+      "cthoo",
+      "par",
+      "pchafdan",
+      "pcharasy",
+      "tocphol",
+      "kshody",
+      "tolor",
+      "okchop",
+      "sho",
+      "tcho",
+      "tshodpy",
+      "tsho",
+      "pykydal",
+      "korary",
+      "pchair",
+      "psheot",
+      "poshol",
+      "tcholdchy",
+      "poshody",
+      "tdokchcfhy",
+      "pchor",
+      "kodam",
+      "tshor",
+      "podaiin",
+      "pcheodar",
+      "otchal",
+      "kcheat",
+      "kor",
+      "tol",
+      "poalshsal",
+      "pcheey",
+      "otorchety",
+      "okolyd",
+      "okchshy",
+      "odory",
+      "choeesy",
+      "okoraldy",
+      "poleeol",
+      "toealchs",
+      "cphdaithy",
+      "pcheor",
+      "kodshol",
+      "possheody",
+      "tor",
+      "psheoas",
+      "okoramog",
+      "otaramy",
+      "chosaroshol",
+      "tolchd",
+      "pcheol",
+      "sairaly",
+      "dordod",
+      "lsais",
+      "porshols",
+      "ker"
+    ],
+    "linkage_matrix": [
+      [
+        39.0,
+        51.0,
+        0.01690536235510598,
+        2.0
+      ],
+      [
+        30.0,
+        92.0,
+        0.020956277547623636,
+        2.0
+      ],
+      [
+        14.0,
+        72.0,
+        0.022426065267411865,
+        2.0
+      ],
+      [
+        3.0,
+        83.0,
+        0.02490037460538097,
+        2.0
+      ],
+      [
+        12.0,
+        36.0,
+        0.02717445062730406,
+        2.0
+      ],
+      [
+        16.0,
+        67.0,
+        0.031091830691019506,
+        2.0
+      ],
+      [
+        15.0,
+        48.0,
+        0.03130955234532684,
+        2.0
+      ],
+      [
+        55.0,
+        66.0,
+        0.03132919202649598,
+        2.0
+      ],
+      [
+        4.0,
+        19.0,
+        0.03430016020702353,
+        2.0
+      ],
+      [
+        18.0,
+        27.0,
+        0.035868165848019995,
+        2.0
+      ],
+      [
+        74.0,
+        117.0,
+        0.03758402989223181,
+        3.0
+      ],
+      [
+        119.0,
+        120.0,
+        0.03955916805518031,
+        4.0
+      ],
+      [
+        90.0,
+        91.0,
+        0.039898979569927606,
+        2.0
+      ],
+      [
+        8.0,
+        38.0,
+        0.040095941407804925,
+        2.0
+      ],
+      [
+        10.0,
+        99.0,
+        0.040938480483672435,
+        2.0
+      ],
+      [
+        7.0,
+        37.0,
+        0.04270286612588703,
+        2.0
+      ],
+      [
+        86.0,
+        95.0,
+        0.04270551734784889,
+        2.0
+      ],
+      [
+        93.0,
+        114.0,
+        0.04565645251846301,
+        3.0
+      ],
+      [
+        76.0,
+        121.0,
+        0.04711757914005216,
+        3.0
+      ],
+      [
+        71.0,
+        79.0,
+        0.04898156662308939,
+        2.0
+      ],
+      [
+        62.0,
+        68.0,
+        0.050200559029252134,
+        2.0
+      ],
+      [
+        115.0,
+        124.0,
+        0.05049525351235665,
+        6.0
+      ],
+      [
+        58.0,
+        113.0,
+        0.05097807369842533,
+        3.0
+      ],
+      [
+        116.0,
+        123.0,
+        0.05130439975279714,
+        5.0
+      ],
+      [
+        89.0,
+        105.0,
+        0.05195826583705343,
+        2.0
+      ],
+      [
+        53.0,
+        127.0,
+        0.053416998478643174,
+        3.0
+      ],
+      [
+        54.0,
+        136.0,
+        0.05382903715121392,
+        6.0
+      ],
+      [
+        34.0,
+        63.0,
+        0.056174861397637166,
+        2.0
+      ],
+      [
+        98.0,
+        107.0,
+        0.05632937228362478,
+        2.0
+      ],
+      [
+        6.0,
+        52.0,
+        0.0567763040751621,
+        2.0
+      ],
+      [
+        11.0,
+        44.0,
+        0.05755578818904805,
+        2.0
+      ],
+      [
+        46.0,
+        57.0,
+        0.06005165530677947,
+        2.0
+      ],
+      [
+        125.0,
+        130.0,
+        0.06060498189425536,
+        5.0
+      ],
+      [
+        60.0,
+        82.0,
+        0.06129954295663964,
+        2.0
+      ],
+      [
+        31.0,
+        64.0,
+        0.062395215819537775,
+        2.0
+      ],
+      [
+        20.0,
+        21.0,
+        0.06359335209566297,
+        2.0
+      ],
+      [
+        112.0,
+        131.0,
+        0.06644134772506087,
+        4.0
+      ],
+      [
+        13.0,
+        26.0,
+        0.0664484413246692,
+        2.0
+      ],
+      [
+        106.0,
+        118.0,
+        0.06680763834090947,
+        3.0
+      ],
+      [
+        128.0,
+        138.0,
+        0.0669475518713055,
+        5.0
+      ],
+      [
+        59.0,
+        73.0,
+        0.06979808428390022,
+        2.0
+      ],
+      [
+        94.0,
+        145.0,
+        0.07329289950188903,
+        6.0
+      ],
+      [
+        2.0,
+        135.0,
+        0.07340182932461377,
+        4.0
+      ],
+      [
+        41.0,
+        77.0,
+        0.07581191050817737,
+        2.0
+      ],
+      [
+        144.0,
+        155.0,
+        0.07783622501198129,
+        6.0
+      ],
+      [
+        1.0,
+        81.0,
+        0.07881681747192493,
+        2.0
+      ],
+      [
+        137.0,
+        139.0,
+        0.07975512269555143,
+        8.0
+      ],
+      [
+        50.0,
+        126.0,
+        0.08150045192422378,
+        3.0
+      ],
+      [
+        9.0,
+        17.0,
+        0.08298813519618731,
+        2.0
+      ],
+      [
+        85.0,
+        108.0,
+        0.08325782361212064,
+        2.0
+      ],
+      [
+        134.0,
+        152.0,
+        0.08447757154081703,
+        11.0
+      ],
+      [
+        43.0,
+        109.0,
+        0.08496133378094062,
+        2.0
+      ],
+      [
+        122.0,
+        143.0,
+        0.0861393362300443,
+        4.0
+      ],
+      [
+        153.0,
+        159.0,
+        0.08713932404065086,
+        10.0
+      ],
+      [
+        29.0,
+        151.0,
+        0.08904420230855607,
+        4.0
+      ],
+      [
+        140.0,
+        148.0,
+        0.08910137850299726,
+        4.0
+      ],
+      [
+        129.0,
+        133.0,
+        0.09133815750654595,
+        4.0
+      ],
+      [
+        24.0,
+        28.0,
+        0.09198059549093762,
+        2.0
+      ],
+      [
+        166.0,
+        167.0,
+        0.09224291926104208,
+        14.0
+      ],
+      [
+        154.0,
+        162.0,
+        0.094320996841323,
+        8.0
+      ],
+      [
+        78.0,
+        165.0,
+        0.09513669901715979,
+        5.0
+      ],
+      [
+        42.0,
+        70.0,
+        0.09591815558661809,
+        2.0
+      ],
+      [
+        157.0,
+        168.0,
+        0.09853528713976759,
+        10.0
+      ],
+      [
+        101.0,
+        160.0,
+        0.09915858412280028,
+        4.0
+      ],
+      [
+        161.0,
+        172.0,
+        0.10666646496158372,
+        10.0
+      ],
+      [
+        23.0,
+        35.0,
+        0.10688025067192664,
+        2.0
+      ],
+      [
+        97.0,
+        142.0,
+        0.10910245959957354,
+        3.0
+      ],
+      [
+        47.0,
+        149.0,
+        0.11119714277146717,
+        5.0
+      ],
+      [
+        32.0,
+        150.0,
+        0.11141730454319138,
+        3.0
+      ],
+      [
+        163.0,
+        171.0,
+        0.11253131682009745,
+        25.0
+      ],
+      [
+        103.0,
+        111.0,
+        0.11388267614115222,
+        2.0
+      ],
+      [
+        5.0,
+        147.0,
+        0.11441959756005193,
+        3.0
+      ],
+      [
+        175.0,
+        181.0,
+        0.11772500984374708,
+        13.0
+      ],
+      [
+        25.0,
+        132.0,
+        0.12077476654464181,
+        3.0
+      ],
+      [
+        170.0,
+        177.0,
+        0.12201615581360307,
+        12.0
+      ],
+      [
+        146.0,
+        173.0,
+        0.12423239451196907,
+        7.0
+      ],
+      [
+        169.0,
+        180.0,
+        0.12816047329293334,
+        9.0
+      ],
+      [
+        65.0,
+        187.0,
+        0.12833846808899413,
+        13.0
+      ],
+      [
+        141.0,
+        179.0,
+        0.1284998392937856,
+        5.0
+      ],
+      [
+        100.0,
+        178.0,
+        0.13353675896200629,
+        3.0
+      ],
+      [
+        84.0,
+        182.0,
+        0.13777236712522004,
+        26.0
+      ],
+      [
+        40.0,
+        56.0,
+        0.13809938850100323,
+        2.0
+      ],
+      [
+        87.0,
+        102.0,
+        0.13999366575493533,
+        2.0
+      ],
+      [
+        185.0,
+        190.0,
+        0.14124879293505851,
+        26.0
+      ],
+      [
+        96.0,
+        110.0,
+        0.14258241915449643,
+        2.0
+      ],
+      [
+        104.0,
+        164.0,
+        0.14318610914172553,
+        3.0
+      ],
+      [
+        69.0,
+        80.0,
+        0.1437601304717665,
+        2.0
+      ],
+      [
+        45.0,
+        183.0,
+        0.1486798110561538,
+        3.0
+      ],
+      [
+        176.0,
+        193.0,
+        0.149708772097355,
+        30.0
+      ],
+      [
+        174.0,
+        194.0,
+        0.149940854388302,
+        4.0
+      ],
+      [
+        189.0,
+        192.0,
+        0.15480416571997782,
+        12.0
+      ],
+      [
+        61.0,
+        186.0,
+        0.15495307129874572,
+        4.0
+      ],
+      [
+        188.0,
+        196.0,
+        0.15749826501164751,
+        33.0
+      ],
+      [
+        184.0,
+        201.0,
+        0.16169806304593087,
+        33.0
+      ],
+      [
+        22.0,
+        33.0,
+        0.16371168894863308,
+        2.0
+      ],
+      [
+        156.0,
+        199.0,
+        0.16735864821053115,
+        4.0
+      ],
+      [
+        205.0,
+        206.0,
+        0.17156174310407984,
+        66.0
+      ],
+      [
+        0.0,
+        158.0,
+        0.1844590771139788,
+        3.0
+      ],
+      [
+        191.0,
+        209.0,
+        0.20846897584996002,
+        71.0
+      ],
+      [
+        203.0,
+        207.0,
+        0.21254498898156962,
+        14.0
+      ],
+      [
+        198.0,
+        202.0,
+        0.22385147673602715,
+        7.0
+      ],
+      [
+        210.0,
+        211.0,
+        0.2241592749761449,
+        74.0
+      ],
+      [
+        212.0,
+        213.0,
+        0.2285520023265251,
+        21.0
+      ],
+      [
+        195.0,
+        214.0,
+        0.2507447421569237,
+        76.0
+      ],
+      [
+        208.0,
+        215.0,
+        0.25208458721446625,
+        25.0
+      ],
+      [
+        204.0,
+        216.0,
+        0.25718274638554456,
+        80.0
+      ],
+      [
+        75.0,
+        217.0,
+        0.3009327514596221,
+        26.0
+      ],
+      [
+        49.0,
+        218.0,
+        0.30115848421760344,
+        81.0
+      ],
+      [
+        200.0,
+        220.0,
+        0.30922601069024885,
+        84.0
+      ],
+      [
+        88.0,
+        219.0,
+        0.3129728328197612,
+        27.0
+      ],
+      [
+        221.0,
+        222.0,
+        0.3155878973711253,
+        111.0
+      ],
+      [
+        197.0,
+        223.0,
+        0.3887707230281634,
+        113.0
+      ]
+    ]
+  },
+  "substring_cluster_overlap": {
+    "ch": {
+      "headings": [
+        "kchsy",
+        "kocheor",
+        "fchodaiin",
+        "pchocthy",
+        "poldchody",
+        "pchodaiin",
+        "pdychoiin",
+        "pochaiin",
+        "pydchdom",
+        "tchodar",
+        "fochof",
+        "fchoiin",
+        "pchafdan",
+        "tcholdchy",
+        "tdokchcfhy",
+        "pcheodar",
+        "kcheat",
+        "okchshy",
+        "chosaroshol",
+        "tolchd"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ho": {
+      "headings": [
+        "kshody",
+        "fchodaiin",
+        "pchocthy",
+        "tshol",
+        "poldchody",
+        "pchodaiin",
+        "pdychoiin",
+        "tshor",
+        "tchodar",
+        "fochof",
+        "kshol",
+        "fchoiin",
+        "cthoo",
+        "tocphol",
+        "sho",
+        "tshodpy",
+        "tcholdchy",
+        "kodshol",
+        "chosaroshol",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "sh": {
+      "headings": [
+        "tsheos",
+        "kshody",
+        "polyshy",
+        "tshol",
+        "torshor",
+        "tshor",
+        "fshody",
+        "kshol",
+        "sho",
+        "tshodpy",
+        "psheot",
+        "poshol",
+        "poshody",
+        "poalshsal",
+        "okchshy",
+        "kodshol",
+        "possheody",
+        "psheoas",
+        "chosaroshol",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "od": {
+      "headings": [
+        "kodalchy",
+        "kshody",
+        "fchodaiin",
+        "cthod",
+        "poldchody",
+        "pchodaiin",
+        "pocheody",
+        "kdchody",
+        "podairol",
+        "tchodar",
+        "pchodar",
+        "kcheodaiin",
+        "tshodpy",
+        "poshody",
+        "kodam",
+        "podaiin",
+        "pcheodar",
+        "kodshol",
+        "possheody",
+        "dordod"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ol": {
+      "headings": [
+        "polyshy",
+        "tshol",
+        "poldchody",
+        "pchodol",
+        "toldshy",
+        "pol",
+        "podairol",
+        "fcholdy",
+        "kshol",
+        "tocphol",
+        "tolor",
+        "poshol",
+        "tcholdchy",
+        "okolyd",
+        "poleeol",
+        "kodshol",
+        "chosaroshol",
+        "tolchd",
+        "pcheol",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ai": {
+      "headings": [
+        "kydainy",
+        "koaiin",
+        "fchodaiin",
+        "paiin",
+        "koair",
+        "pchodaiin",
+        "pchraiin",
+        "pdrairdy",
+        "pochaiin",
+        "faiis",
+        "podairol",
+        "poeeaiin",
+        "poraiin",
+        "cthscthain",
+        "kcheodaiin",
+        "pchair",
+        "podaiin",
+        "cphdaithy",
+        "sairaly",
+        "lsais"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "or": {
+      "headings": [
+        "kocheor",
+        "fochor",
+        "torshor",
+        "tshor",
+        "poror",
+        "pchor",
+        "pysaiinor",
+        "porory",
+        "poraiin",
+        "tolor",
+        "korary",
+        "kor",
+        "otorchety",
+        "odory",
+        "okoraldy",
+        "pcheor",
+        "tor",
+        "okoramog",
+        "dordod",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "cho": {
+      "headings": [
+        "pchooiin",
+        "fchodaiin",
+        "fochor",
+        "pchocthy",
+        "poldchody",
+        "pchodaiin",
+        "pdychoiin",
+        "pchodol",
+        "pchor",
+        "kdchody",
+        "tchodar",
+        "fcholdy",
+        "fochof",
+        "pchodar",
+        "fchoiin",
+        "okchop",
+        "tcho",
+        "tcholdchy",
+        "choeesy",
+        "chosaroshol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "in": {
+      "headings": [
+        "kydainy",
+        "kooiin",
+        "koaiin",
+        "pchooiin",
+        "fchodaiin",
+        "paiin",
+        "pchodaiin",
+        "pdychoiin",
+        "pchraiin",
+        "pochaiin",
+        "pysaiinor",
+        "poeeaiin",
+        "poraiin",
+        "cthscthain",
+        "fchoiin",
+        "kcheodaiin",
+        "podaiin"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "po": {
+      "headings": [
+        "polyshy",
+        "poldchody",
+        "poror",
+        "pocheody",
+        "pochaiin",
+        "pol",
+        "podairol",
+        "porory",
+        "poeeaiin",
+        "poraiin",
+        "poshol",
+        "poshody",
+        "podaiin",
+        "poalshsal",
+        "poleeol",
+        "possheody",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ii": {
+      "headings": [
+        "kooiin",
+        "koaiin",
+        "pchooiin",
+        "fchodaiin",
+        "paiin",
+        "pchodaiin",
+        "pdychoiin",
+        "pchraiin",
+        "pochaiin",
+        "faiis",
+        "pysaiinor",
+        "poeeaiin",
+        "poraiin",
+        "fchoiin",
+        "kcheodaiin",
+        "podaiin"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "iin": {
+      "headings": [
+        "kooiin",
+        "koaiin",
+        "pchooiin",
+        "fchodaiin",
+        "paiin",
+        "pchodaiin",
+        "pdychoiin",
+        "pchraiin",
+        "pochaiin",
+        "pysaiinor",
+        "poeeaiin",
+        "poraiin",
+        "fchoiin",
+        "kcheodaiin",
+        "podaiin"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "sho": {
+      "headings": [
+        "kshody",
+        "pshol",
+        "tshol",
+        "torshor",
+        "tshor",
+        "fshody",
+        "kshol",
+        "sho",
+        "tshodpy",
+        "tsho",
+        "poshol",
+        "poshody",
+        "kodshol",
+        "chosaroshol",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "da": {
+      "headings": [
+        "kydainy",
+        "kodalchy",
+        "fchodaiin",
+        "pchodaiin",
+        "podairol",
+        "tchodar",
+        "pchodar",
+        "kcheodaiin",
+        "pchafdan",
+        "pykydal",
+        "kodam",
+        "podaiin",
+        "pcheodar",
+        "cphdaithy"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "he": {
+      "headings": [
+        "tsheos",
+        "kocheor",
+        "pocheody",
+        "okchesy",
+        "kcheodaiin",
+        "psheot",
+        "pcheodar",
+        "kcheat",
+        "pcheey",
+        "otorchety",
+        "pcheor",
+        "possheody",
+        "psheoas",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "pc": {
+      "headings": [
+        "pchooiin",
+        "pchocthy",
+        "pchodaiin",
+        "pchraiin",
+        "pchodol",
+        "pchor",
+        "pchodar",
+        "pchafdan",
+        "pcharasy",
+        "pchair",
+        "pcheodar",
+        "pcheey",
+        "pcheor",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "pch": {
+      "headings": [
+        "pchooiin",
+        "pchocthy",
+        "pchodaiin",
+        "pchraiin",
+        "pchodol",
+        "pchor",
+        "pchodar",
+        "pchafdan",
+        "pcharasy",
+        "pchair",
+        "pcheodar",
+        "pcheey",
+        "pcheor",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ko": {
+      "headings": [
+        "kooiin",
+        "koaiin",
+        "kodalchy",
+        "kocheor",
+        "koar",
+        "koair",
+        "korary",
+        "kodam",
+        "kor",
+        "okolyd",
+        "okoraldy",
+        "kodshol",
+        "okoramog"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "aii": {
+      "headings": [
+        "koaiin",
+        "fchodaiin",
+        "paiin",
+        "pchodaiin",
+        "pchraiin",
+        "pochaiin",
+        "faiis",
+        "pysaiinor",
+        "poeeaiin",
+        "poraiin",
+        "kcheodaiin",
+        "podaiin"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "hod": {
+      "headings": [
+        "kshody",
+        "fchodaiin",
+        "cthod",
+        "poldchody",
+        "pchodaiin",
+        "fshody",
+        "pchodol",
+        "kdchody",
+        "tchodar",
+        "pchodar",
+        "tshodpy",
+        "poshody"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "eo": {
+      "headings": [
+        "tsheos",
+        "kocheor",
+        "pocheody",
+        "kcheodaiin",
+        "psheot",
+        "pcheodar",
+        "poleeol",
+        "pcheor",
+        "possheody",
+        "psheoas",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "aiin": {
+      "headings": [
+        "koaiin",
+        "fchodaiin",
+        "paiin",
+        "pchodaiin",
+        "pchraiin",
+        "pochaiin",
+        "pysaiinor",
+        "poeeaiin",
+        "poraiin",
+        "kcheodaiin",
+        "podaiin"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "dy": {
+      "headings": [
+        "kshody",
+        "poldchody",
+        "pdychoiin",
+        "pocheody",
+        "fshody",
+        "pdrairdy",
+        "kdchody",
+        "fcholdy",
+        "poshody",
+        "okoraldy",
+        "possheody"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "heo": {
+      "headings": [
+        "tsheos",
+        "kocheor",
+        "pocheody",
+        "kcheodaiin",
+        "psheot",
+        "pcheodar",
+        "pcheor",
+        "possheody",
+        "psheoas",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "oda": {
+      "headings": [
+        "kodalchy",
+        "fchodaiin",
+        "pchodaiin",
+        "podairol",
+        "tchodar",
+        "pchodar",
+        "kcheodaiin",
+        "kodam",
+        "podaiin",
+        "pcheodar"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "che": {
+      "headings": [
+        "kocheor",
+        "pocheody",
+        "okchesy",
+        "kcheodaiin",
+        "pcheodar",
+        "kcheat",
+        "pcheey",
+        "otorchety",
+        "pcheor",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ar": {
+      "headings": [
+        "foar",
+        "koar",
+        "tchodar",
+        "pchodar",
+        "par",
+        "pcharasy",
+        "korary",
+        "pcheodar",
+        "otaramy",
+        "chosaroshol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "hol": {
+      "headings": [
+        "pshol",
+        "tshol",
+        "fcholdy",
+        "kshol",
+        "tocphol",
+        "poshol",
+        "tcholdchy",
+        "kodshol",
+        "chosaroshol",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "to": {
+      "headings": [
+        "torshor",
+        "told",
+        "toldshy",
+        "tocphol",
+        "tolor",
+        "tol",
+        "otorchety",
+        "toealchs",
+        "tor",
+        "tolchd"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "hy": {
+      "headings": [
+        "fachys",
+        "kodalchy",
+        "polyshy",
+        "pchocthy",
+        "toldshy",
+        "tcholdchy",
+        "tdokchcfhy",
+        "okchshy",
+        "cphdaithy"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ra": {
+      "headings": [
+        "pchraiin",
+        "pdrairdy",
+        "poraiin",
+        "pcharasy",
+        "korary",
+        "okoraldy",
+        "okoramog",
+        "otaramy",
+        "sairaly"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "kc": {
+      "headings": [
+        "kchsy",
+        "okchesy",
+        "kcheodaiin",
+        "okchop",
+        "tdokchcfhy",
+        "kcheat",
+        "okchshy"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "kch": {
+      "headings": [
+        "kchsy",
+        "okchesy",
+        "kcheodaiin",
+        "okchop",
+        "tdokchcfhy",
+        "kcheat",
+        "okchshy"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "dai": {
+      "headings": [
+        "kydainy",
+        "fchodaiin",
+        "pchodaiin",
+        "podairol",
+        "kcheodaiin",
+        "podaiin",
+        "cphdaithy"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "al": {
+      "headings": [
+        "kodalchy",
+        "pykydal",
+        "otchal",
+        "poalshsal",
+        "okoraldy",
+        "toealchs",
+        "sairaly"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ody": {
+      "headings": [
+        "kshody",
+        "poldchody",
+        "pocheody",
+        "fshody",
+        "kdchody",
+        "poshody",
+        "possheody"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "oc": {
+      "headings": [
+        "kocheor",
+        "fochor",
+        "pchocthy",
+        "pocheody",
+        "pochaiin",
+        "fochof",
+        "tocphol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "chod": {
+      "headings": [
+        "fchodaiin",
+        "poldchody",
+        "pchodaiin",
+        "pchodol",
+        "kdchody",
+        "tchodar",
+        "pchodar"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "shol": {
+      "headings": [
+        "pshol",
+        "tshol",
+        "kshol",
+        "poshol",
+        "kodshol",
+        "chosaroshol",
+        "porshols"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ok": {
+      "headings": [
+        "okchesy",
+        "okchop",
+        "tdokchcfhy",
+        "okolyd",
+        "okchshy",
+        "okoraldy",
+        "okoramog"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "oa": {
+      "headings": [
+        "koaiin",
+        "foar",
+        "koar",
+        "koair",
+        "poalshsal",
+        "psheoas"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "pcho": {
+      "headings": [
+        "pchooiin",
+        "pchocthy",
+        "pchodaiin",
+        "pchodol",
+        "pchor",
+        "pchodar"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "cheo": {
+      "headings": [
+        "kocheor",
+        "pocheody",
+        "kcheodaiin",
+        "pcheodar",
+        "pcheor",
+        "pcheol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ld": {
+      "headings": [
+        "poldchody",
+        "told",
+        "toldshy",
+        "fcholdy",
+        "tcholdchy",
+        "okoraldy"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ha": {
+      "headings": [
+        "pochaiin",
+        "cthscthain",
+        "pchafdan",
+        "pcharasy",
+        "pchair",
+        "otchal"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "hs": {
+      "headings": [
+        "kchsy",
+        "cthscthain",
+        "poalshsal",
+        "okchshy",
+        "toealchs"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "yd": {
+      "headings": [
+        "kydainy",
+        "tydlo",
+        "pydchdom",
+        "pykydal",
+        "okolyd"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "ts": {
+      "headings": [
+        "tsheos",
+        "tshol",
+        "tshor",
+        "tshodpy",
+        "tsho"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "os": {
+      "headings": [
+        "tsheos",
+        "poshol",
+        "poshody",
+        "possheody",
+        "chosaroshol"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    },
+    "tsh": {
+      "headings": [
+        "tsheos",
+        "tshol",
+        "tshor",
+        "tshodpy",
+        "tsho"
+      ],
+      "clusters": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "same_cluster": true
+    }
+  },
+  "classifier_clusters": {
+    "1": [
+      {
+        "folio": "f1r",
+        "heading": "fachys"
+      },
+      {
+        "folio": "f1v",
+        "heading": "kchsy"
+      },
+      {
+        "folio": "f2r",
+        "heading": "kydainy"
+      },
+      {
+        "folio": "f2v",
+        "heading": "kooiin"
+      },
+      {
+        "folio": "f3r",
+        "heading": "tsheos"
+      },
+      {
+        "folio": "f3v",
+        "heading": "koaiin"
+      },
+      {
+        "folio": "f4r",
+        "heading": "kodalchy"
+      },
+      {
+        "folio": "f4v",
+        "heading": "pchooiin"
+      },
+      {
+        "folio": "f5r",
+        "heading": "kshody"
+      },
+      {
+        "folio": "f5v",
+        "heading": "kocheor"
+      },
+      {
+        "folio": "f6r",
+        "heading": "foar"
+      },
+      {
+        "folio": "f6v",
+        "heading": "koar"
+      },
+      {
+        "folio": "f7r",
+        "heading": "fchodaiin"
+      },
+      {
+        "folio": "f7v",
+        "heading": "polyshy"
+      },
+      {
+        "folio": "f8r",
+        "heading": "pshol"
+      },
+      {
+        "folio": "f8v",
+        "heading": "cthod"
+      },
+      {
+        "folio": "f9r",
+        "heading": "tydlo"
+      },
+      {
+        "folio": "f9v",
+        "heading": "fochor"
+      },
+      {
+        "folio": "f10r",
+        "heading": "pchocthy"
+      },
+      {
+        "folio": "f10v",
+        "heading": "paiin"
+      },
+      {
+        "folio": "f11r",
+        "heading": "tshol"
+      },
+      {
+        "folio": "f11v",
+        "heading": "poldchody"
+      },
+      {
+        "folio": "f13r",
+        "heading": "torshor"
+      },
+      {
+        "folio": "f13v",
+        "heading": "koair"
+      },
+      {
+        "folio": "f14r",
+        "heading": "pchodaiin"
+      },
+      {
+        "folio": "f14v",
+        "heading": "pdychoiin"
+      },
+      {
+        "folio": "f15r",
+        "heading": "tshor"
+      },
+      {
+        "folio": "f15v",
+        "heading": "poror"
+      },
+      {
+        "folio": "f16r",
+        "heading": "pocheody"
+      },
+      {
+        "folio": "f16v",
+        "heading": "pchraiin"
+      },
+      {
+        "folio": "f17r",
+        "heading": "fshody"
+      },
+      {
+        "folio": "f17v",
+        "heading": "pchodol"
+      },
+      {
+        "folio": "f18r",
+        "heading": "pdrairdy"
+      },
+      {
+        "folio": "f18v",
+        "heading": "told"
+      },
+      {
+        "folio": "f19r",
+        "heading": "pchor"
+      },
+      {
+        "folio": "f19v",
+        "heading": "pochaiin"
+      },
+      {
+        "folio": "f20r",
+        "heading": "kdchody"
+      },
+      {
+        "folio": "f20v",
+        "heading": "faiis"
+      },
+      {
+        "folio": "f21r",
+        "heading": "pchor"
+      },
+      {
+        "folio": "f21v",
+        "heading": "toldshy"
+      },
+      {
+        "folio": "f22r",
+        "heading": "pol"
+      },
+      {
+        "folio": "f22v",
+        "heading": "pysaiinor"
+      },
+      {
+        "folio": "f23r",
+        "heading": "pydchdom"
+      },
+      {
+        "folio": "f23v",
+        "heading": "podairol"
+      },
+      {
+        "folio": "f24r",
+        "heading": "porory"
+      },
+      {
+        "folio": "f24v",
+        "heading": "tchodar"
+      },
+      {
+        "folio": "f25r",
+        "heading": "fcholdy"
+      },
+      {
+        "folio": "f25v",
+        "heading": "poeeaiin"
+      },
+      {
+        "folio": "f27r",
+        "heading": "ksor"
+      },
+      {
+        "folio": "f27v",
+        "heading": "fochof"
+      },
+      {
+        "folio": "f28r",
+        "heading": "pchodar"
+      },
+      {
+        "folio": "f28v",
+        "heading": "kshol"
+      },
+      {
+        "folio": "f29r",
+        "heading": "poraiin"
+      },
+      {
+        "folio": "f29v",
+        "heading": "kooiin"
+      },
+      {
+        "folio": "f30r",
+        "heading": "okchesy"
+      },
+      {
+        "folio": "f30v",
+        "heading": "cthscthain"
+      },
+      {
+        "folio": "f32r",
+        "heading": "fchoiin"
+      },
+      {
+        "folio": "f32v",
+        "heading": "kcheodaiin"
+      },
+      {
+        "folio": "f35r",
+        "heading": "cthoo"
+      },
+      {
+        "folio": "f35v",
+        "heading": "par"
+      },
+      {
+        "folio": "f36r",
+        "heading": "pchafdan"
+      },
+      {
+        "folio": "f36v",
+        "heading": "pcharasy"
+      },
+      {
+        "folio": "f37r",
+        "heading": "tocphol"
+      },
+      {
+        "folio": "f37v",
+        "heading": "kshody"
+      },
+      {
+        "folio": "f38r",
+        "heading": "tolor"
+      },
+      {
+        "folio": "f38v",
+        "heading": "okchop"
+      },
+      {
+        "folio": "f42r",
+        "heading": "sho"
+      },
+      {
+        "folio": "f42v",
+        "heading": "tcho"
+      },
+      {
+        "folio": "f44r",
+        "heading": "tshodpy"
+      },
+      {
+        "folio": "f44v",
+        "heading": "tsho"
+      },
+      {
+        "folio": "f45r",
+        "heading": "pykydal"
+      },
+      {
+        "folio": "f45v",
+        "heading": "korary"
+      },
+      {
+        "folio": "f47r",
+        "heading": "pchair"
+      },
+      {
+        "folio": "f47v",
+        "heading": "psheot"
+      },
+      {
+        "folio": "f49r",
+        "heading": "poshol"
+      },
+      {
+        "folio": "f51r",
+        "heading": "tcholdchy"
+      },
+      {
+        "folio": "f51v",
+        "heading": "poshody"
+      },
+      {
+        "folio": "f52r",
+        "heading": "tdokchcfhy"
+      },
+      {
+        "folio": "f52v",
+        "heading": "pchor"
+      },
+      {
+        "folio": "f53r",
+        "heading": "kodam"
+      },
+      {
+        "folio": "f53v",
+        "heading": "tshor"
+      },
+      {
+        "folio": "f54r",
+        "heading": "podaiin"
+      },
+      {
+        "folio": "f54v",
+        "heading": "pcheodar"
+      },
+      {
+        "folio": "f56r",
+        "heading": "otchal"
+      },
+      {
+        "folio": "f56v",
+        "heading": "kcheat"
+      },
+      {
+        "folio": "f58r",
+        "heading": "kor"
+      },
+      {
+        "folio": "f58v",
+        "heading": "tol"
+      },
+      {
+        "folio": "f87r",
+        "heading": "poalshsal"
+      },
+      {
+        "folio": "f87v",
+        "heading": "pcheey"
+      },
+      {
+        "folio": "f88r",
+        "heading": "otorchety"
+      },
+      {
+        "folio": "f88v",
+        "heading": "okolyd"
+      },
+      {
+        "folio": "f89r1",
+        "heading": "okchshy"
+      },
+      {
+        "folio": "f89r2",
+        "heading": "odory"
+      },
+      {
+        "folio": "f89v2",
+        "heading": "choeesy"
+      },
+      {
+        "folio": "f89v1",
+        "heading": "okoraldy"
+      },
+      {
+        "folio": "f90r1",
+        "heading": "poleeol"
+      },
+      {
+        "folio": "f90r2",
+        "heading": "toealchs"
+      },
+      {
+        "folio": "f90v2",
+        "heading": "cphdaithy"
+      },
+      {
+        "folio": "f90v1",
+        "heading": "pcheor"
+      },
+      {
+        "folio": "f93r",
+        "heading": "kodshol"
+      },
+      {
+        "folio": "f93v",
+        "heading": "possheody"
+      },
+      {
+        "folio": "f96r",
+        "heading": "tor"
+      },
+      {
+        "folio": "f96v",
+        "heading": "psheoas"
+      },
+      {
+        "folio": "f99r",
+        "heading": "okoramog"
+      },
+      {
+        "folio": "f99v",
+        "heading": "otaramy"
+      },
+      {
+        "folio": "f100r",
+        "heading": "chosaroshol"
+      },
+      {
+        "folio": "f100v",
+        "heading": "tolchd"
+      },
+      {
+        "folio": "f101r1",
+        "heading": "pcheol"
+      },
+      {
+        "folio": "f101v2",
+        "heading": "sairaly"
+      },
+      {
+        "folio": "f102r1",
+        "heading": "dordod"
+      },
+      {
+        "folio": "f102r2",
+        "heading": "lsais"
+      },
+      {
+        "folio": "f102v2",
+        "heading": "porshols"
+      },
+      {
+        "folio": "f102v1",
+        "heading": "ker"
+      }
+    ]
+  }
+}

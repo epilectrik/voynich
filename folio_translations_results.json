@@ -1,0 +1,1352 @@
+{
+  "timestamp": "2025-12-30T13:08:22.611248",
+  "folios": {
+    "f78r": {
+      "section": "BIOLOGICAL",
+      "word_count": 294,
+      "confidence_summary": {
+        "HIGH": 122,
+        "MEDIUM": 156,
+        "LOW": 12,
+        "UNKNOWN": 4
+      },
+      "templates_found": {
+        "GENERAL": 7,
+        "PREPARATION": 7,
+        "BODY_TREATMENT": 11,
+        "APPLICATION": 13,
+        "TIMED_TREATMENT": 3
+      },
+      "lines": [
+        {
+          "line": 1,
+          "voynich": "tshedor shedy qopchedy qokedy dy qokol oky okchdldlo",
+          "glosses": [
+            "dry",
+            "juice-[done]",
+            "womb-apply-[done]",
+            "womb-heat-[done]",
+            "[done]",
+            "womb-oil",
+            "sky",
+            "sky-whole"
+          ],
+          "procedural": "dry JUICE WOMB applyED WOMB heatED dy WOMB oil SKY SKY whole"
+        },
+        {
+          "line": 2,
+          "voynich": "qokeedy qokedy shedy tchedy otar olkedy dam okchdy",
+          "glosses": [
+            "womb-steam-[done]",
+            "womb-heat-[done]",
+            "juice-[done]",
+            "prepare-[done]",
+            "time",
+            "menses-heat-[done]",
+            "leaf",
+            "sky-[done]"
+          ],
+          "procedural": "WOMB steamED WOMB heatED JUICE prepareED TIME MENSES heatED LEAF SKY"
+        },
+        {
+          "line": 3,
+          "voynich": "qckhedy cheky dol chedy qokedy qokain olkedy daraloikhy",
+          "glosses": [
+            "treated-[done]",
+            "herb",
+            "oil",
+            "herb-[done]",
+            "womb-heat-[done]",
+            "womb-[action]",
+            "menses-heat-[done]",
+            "leaf-celestial"
+          ],
+          "procedural": "treatedED HERB oil HERB WOMB heatED WOMB process MENSES heatED LEAF celestial"
+        },
+        {
+          "line": 4,
+          "voynich": "yteedy qotal dol shedy qokedar chcthhy otor dor or dchedaly",
+          "glosses": [
+            "world-moist-[done]",
+            "womb",
+            "oil",
+            "juice-[done]",
+            "womb-heat",
+            "herb-purify",
+            "time",
+            "[dor]",
+            "gold/benefit",
+            "grind"
+          ],
+          "procedural": "WORLD moistED WOMB oil JUICE WOMB heat HERB purify TIME dor GOLD/BENEFIT grind"
+        },
+        {
+          "line": 5,
+          "voynich": "qokal otedy qokedy qokedy dal qokedy qokedy s kam otasodlory orory",
+          "glosses": [
+            "womb",
+            "time-[done]",
+            "womb-heat-[done]",
+            "womb-heat-[done]",
+            "leaf",
+            "womb-heat-[done]",
+            "womb-heat-[done]",
+            "[s]",
+            "one",
+            "time-benefit",
+            "gold/benefit-benefit"
+          ],
+          "procedural": "WOMB TIME WOMB heatED WOMB heatED LEAF WOMB heatED WOMB heatED s one TIME benefit GOLD/BENEFIT benefit"
+        },
+        {
+          "line": 6,
+          "voynich": "dshedy qokedy okar qokedy shedy ykedy shedy qoky okaral",
+          "glosses": [
+            "[done]",
+            "womb-heat-[done]",
+            "sky",
+            "womb-heat-[done]",
+            "juice-[done]",
+            "cycle-[done]",
+            "juice-[done]",
+            "womb",
+            "sky-one"
+          ],
+          "procedural": "dshedy WOMB heatED SKY WOMB heatED JUICE CYCLE JUICE WOMB SKY one"
+        },
+        {
+          "line": 7,
+          "voynich": "schedy keedy qokedy chckhd qokain chedy qotedy dy",
+          "glosses": [
+            "processed-[done]",
+            "steam-[done]",
+            "womb-heat-[done]",
+            "herb-process",
+            "womb-[action]",
+            "herb-[done]",
+            "womb-[done]",
+            "[done]"
+          ],
+          "procedural": "processedED steamED WOMB heatED HERB process WOMB process HERB WOMB dy"
+        },
+        {
+          "line": 8,
+          "voynich": "dshedy deedy qokeedy otedy otal tedy otey oloiin",
+          "glosses": [
+            "[done]",
+            "moist-[done]",
+            "womb-steam-[done]",
+            "time-[done]",
+            "time",
+            "[done]",
+            "time-[ongoing]",
+            "menses-whole"
+          ],
+          "procedural": "dshedy moistED WOMB steamED TIME TIME tedy TIME MENSES whole"
+        },
+        {
+          "line": 9,
+          "voynich": "qoky okeedy sheety qoteedy otey shckhedy sokol or",
+          "glosses": [
+            "womb",
+            "sky-moist-[done]",
+            "juice-moist",
+            "womb-moist-[done]",
+            "time-[ongoing]",
+            "juice-treated-[done]",
+            "health-oil",
+            "gold/benefit"
+          ],
+          "procedural": "WOMB SKY moistED JUICE moist WOMB moistED TIME JUICE treatedED HEALTH oil GOLD/BENEFIT"
+        },
+        {
+          "line": 10,
+          "voynich": "dor shekedy qokol kechdy otedy ol tedy chckhedy",
+          "glosses": [
+            "[dor]",
+            "juice-heat-[done]",
+            "womb-oil",
+            "heat-[done]",
+            "time-[done]",
+            "menses",
+            "[done]",
+            "herb-treated-[done]"
+          ],
+          "procedural": "dor JUICE heatED WOMB oil heatED TIME MENSES tedy HERB treatedED"
+        },
+        {
+          "line": 11,
+          "voynich": "qokedy ol kedy qokain okedy kedy tol dy qoteedy dy",
+          "glosses": [
+            "womb-heat-[done]",
+            "menses",
+            "heat-[done]",
+            "womb-[action]",
+            "sky-[done]",
+            "heat-[done]",
+            "oil",
+            "[done]",
+            "womb-moist-[done]",
+            "[done]"
+          ],
+          "procedural": "WOMB heatED MENSES heatED WOMB process SKY heatED oil dy WOMB moistED dy"
+        },
+        {
+          "line": 12,
+          "voynich": "sor checkhy or chckhdy dol kedy qokededy qokan ol",
+          "glosses": [
+            "health",
+            "herb",
+            "gold/benefit",
+            "herb-process-[done]",
+            "oil",
+            "heat-[done]",
+            "womb-heat-[done]",
+            "womb-one",
+            "menses"
+          ],
+          "procedural": "HEALTH HERB GOLD/BENEFIT HERB processED oil heatED WOMB heatED WOMB one MENSES"
+        },
+        {
+          "line": 13,
+          "voynich": "dchckhedy qokchdy qokedy okedy dal or okeed olkain",
+          "glosses": [
+            "treated-[done]",
+            "womb-potent-[done]",
+            "womb-heat-[done]",
+            "sky-[done]",
+            "leaf",
+            "gold/benefit",
+            "sky-dry",
+            "menses-[action]"
+          ],
+          "procedural": "treatedED WOMB potentED WOMB heatED SKY LEAF GOLD/BENEFIT SKY dry MENSES process"
+        },
+        {
+          "line": 14,
+          "voynich": "qokol oted okain ched or alory",
+          "glosses": [
+            "womb-oil",
+            "time-dry",
+            "sky-[action]",
+            "herb-dry",
+            "gold/benefit",
+            "star-benefit"
+          ],
+          "procedural": "WOMB oil TIME dry SKY process HERB dry GOLD/BENEFIT STAR benefit"
+        },
+        {
+          "line": 15,
+          "voynich": "soiin kar kedy pchey tchdoltdy",
+          "glosses": [
+            "health",
+            "[kar]",
+            "heat-[done]",
+            "chest-[ongoing]",
+            "prepare-[done]"
+          ],
+          "procedural": "HEALTH kar heatED CHEST prepareED"
+        },
+        {
+          "line": 16,
+          "voynich": "ol chedy qokain dar ar okain",
+          "glosses": [
+            "menses",
+            "herb-[done]",
+            "womb-[action]",
+            "leaf",
+            "air",
+            "sky-[action]"
+          ],
+          "procedural": "MENSES HERB WOMB process LEAF AIR SKY process"
+        },
+        {
+          "line": 17,
+          "voynich": "y ches aiin okeedy qokain chl",
+          "glosses": [
+            "[y]",
+            "herb",
+            "[place]",
+            "sky-moist-[done]",
+            "womb-[action]",
+            "herb"
+          ],
+          "procedural": "y HERB place SKY moistED WOMB process HERB"
+        },
+        {
+          "line": 18,
+          "voynich": "sol shedy dal shdy qokychdy",
+          "glosses": [
+            "health",
+            "juice-[done]",
+            "leaf",
+            "juice-[done]",
+            "womb-[done]"
+          ],
+          "procedural": "HEALTH JUICE LEAF JUICE WOMB"
+        },
+        {
+          "line": 19,
+          "voynich": "qchedy qokain cheeky lokeedy",
+          "glosses": [
+            "[done]",
+            "womb-[action]",
+            "herb-moist",
+            "steam-[done]"
+          ],
+          "procedural": "qchedy WOMB process HERB moist steamED"
+        },
+        {
+          "line": 20,
+          "voynich": "yched qokain daiin chckhdy lr",
+          "glosses": [
+            "dry",
+            "womb-[action]",
+            "leaf",
+            "herb-process-[done]",
+            "[lr]"
+          ],
+          "procedural": "dry WOMB process LEAF HERB processED lr"
+        },
+        {
+          "line": 21,
+          "voynich": "sain sheor ol kchdy roiin okeedy",
+          "glosses": [
+            "seed",
+            "juice",
+            "menses",
+            "potent-[done]",
+            "whole",
+            "sky-moist-[done]"
+          ],
+          "procedural": "SEED JUICE MENSES potentED whole SKY moistED"
+        },
+        {
+          "line": 22,
+          "voynich": "qokeedy kedy qokeey qokedy olol",
+          "glosses": [
+            "womb-steam-[done]",
+            "heat-[done]",
+            "womb-heat-[ongoing]",
+            "womb-heat-[done]",
+            "menses-oil"
+          ],
+          "procedural": "WOMB steamED heatED WOMB heatING WOMB heatED MENSES oil"
+        },
+        {
+          "line": 23,
+          "voynich": "sokeedy keol loroin olkeey raiin",
+          "glosses": [
+            "health-steam-[done]",
+            "heat",
+            "benefit",
+            "menses-heat-[ongoing]",
+            "[place]"
+          ],
+          "procedural": "HEALTH steamED heat benefit MENSES heatING place"
+        },
+        {
+          "line": 24,
+          "voynich": "sol shey kary or csedy qeedar ain aol",
+          "glosses": [
+            "health",
+            "juice-[ongoing]",
+            "one",
+            "gold/benefit",
+            "[done]",
+            "dry",
+            "[action]",
+            "oil"
+          ],
+          "procedural": "HEALTH JUICE one GOLD/BENEFIT csedy dry process oil"
+        },
+        {
+          "line": 25,
+          "voynich": "daiin chckhal daiil aldy",
+          "glosses": [
+            "leaf",
+            "herb-process",
+            "leaf",
+            "star-[done]"
+          ],
+          "procedural": "LEAF HERB process LEAF STAR"
+        },
+        {
+          "line": 26,
+          "voynich": "porain ol qokeedy kchol tchal olkee yfchey ofchedy taly",
+          "glosses": [
+            "benefit-[action]",
+            "menses",
+            "womb-steam-[done]",
+            "potent",
+            "prepare",
+            "menses-steam",
+            "filter-[ongoing]",
+            "filter-[done]",
+            "celestial"
+          ],
+          "procedural": "benefit process MENSES WOMB steamED potent prepare MENSES steam filterING filterED celestial"
+        },
+        {
+          "line": 27,
+          "voynich": "s sheky ol kedy chckhy dain oty qokor oky dain chy ol",
+          "glosses": [
+            "[s]",
+            "juice",
+            "menses",
+            "heat-[done]",
+            "herb",
+            "leaf",
+            "time",
+            "womb",
+            "sky",
+            "leaf",
+            "herb",
+            "menses"
+          ],
+          "procedural": "s JUICE MENSES heatED HERB LEAF TIME WOMB SKY LEAF HERB MENSES"
+        },
+        {
+          "line": 28,
+          "voynich": "qokeedy qokey daiin olkain dal chedy ololdal chchty tedy",
+          "glosses": [
+            "womb-steam-[done]",
+            "womb-[ongoing]",
+            "leaf",
+            "menses-[action]",
+            "leaf",
+            "herb-[done]",
+            "menses-oil",
+            "herb",
+            "[done]"
+          ],
+          "procedural": "WOMB steamED WOMB LEAF MENSES process LEAF HERB MENSES oil HERB tedy"
+        },
+        {
+          "line": 29,
+          "voynich": "solkeedy sheckhy qokedy otal shedy otar olchedy cthdy",
+          "glosses": [
+            "health-steam-[done]",
+            "juice",
+            "womb-heat-[done]",
+            "time",
+            "juice-[done]",
+            "time",
+            "menses-[done]",
+            "water-pure-[done]"
+          ],
+          "procedural": "HEALTH steamED JUICE WOMB heatED TIME JUICE TIME MENSES WATER-PURE"
+        },
+        {
+          "line": 30,
+          "voynich": "qokedy ckhdy qokain chedy dalky lkain ykeedy okaly dy",
+          "glosses": [
+            "womb-heat-[done]",
+            "process-[done]",
+            "womb-[action]",
+            "herb-[done]",
+            "leaf",
+            "liquid-[action]",
+            "cycle-moist-[done]",
+            "sky-celestial",
+            "[done]"
+          ],
+          "procedural": "WOMB heatED processED WOMB process HERB LEAF LIQUID process CYCLE moistED SKY celestial dy"
+        },
+        {
+          "line": 31,
+          "voynich": "ytedy daiin ykedy yolsheey qokchy okal ol keedy dyky",
+          "glosses": [
+            "world-[done]",
+            "leaf",
+            "cycle-[done]",
+            "oil-[ongoing]",
+            "womb",
+            "sky",
+            "menses",
+            "steam-[done]",
+            "[dyky]"
+          ],
+          "procedural": "WORLD LEAF CYCLE oilING WOMB SKY MENSES steamED dyky"
+        },
+        {
+          "line": 32,
+          "voynich": "dshedy qokeedy qopchedy qokaly dar okaiin okeeal am",
+          "glosses": [
+            "[done]",
+            "womb-steam-[done]",
+            "womb-apply-[done]",
+            "womb-celestial",
+            "leaf",
+            "sky-[place]",
+            "sky-moist",
+            "one"
+          ],
+          "procedural": "dshedy WOMB steamED WOMB applyED WOMB celestial LEAF SKY place SKY moist one"
+        },
+        {
+          "line": 33,
+          "voynich": "y sain checkhy qokain cheeky daiin daiin ytees oly",
+          "glosses": [
+            "[y]",
+            "seed",
+            "herb",
+            "womb-[action]",
+            "herb-moist",
+            "leaf",
+            "leaf",
+            "world-moist",
+            "menses"
+          ],
+          "procedural": "y SEED HERB WOMB process HERB moist LEAF LEAF WORLD moist MENSES"
+        },
+        {
+          "line": 34,
+          "voynich": "qotchedy lchedy lchedy kedy qol saiin ckhain or",
+          "glosses": [
+            "womb-prepare-[done]",
+            "wash-[done]",
+            "wash-[done]",
+            "heat-[done]",
+            "womb",
+            "seed",
+            "process-[action]",
+            "gold/benefit"
+          ],
+          "procedural": "WOMB prepareED washED washED heatED WOMB SEED process process GOLD/BENEFIT"
+        },
+        {
+          "line": 35,
+          "voynich": "osal ol s aiin shes aiin oly",
+          "glosses": [
+            "whole",
+            "menses",
+            "[s]",
+            "[place]",
+            "juice",
+            "[place]",
+            "menses"
+          ],
+          "procedural": "whole MENSES s place JUICE place MENSES"
+        },
+        {
+          "line": 36,
+          "voynich": "sar aiin oteedy ol aiin chedy",
+          "glosses": [
+            "seed",
+            "[place]",
+            "time-moist-[done]",
+            "menses",
+            "[place]",
+            "herb-[done]"
+          ],
+          "procedural": "SEED place TIME moistED MENSES place HERB"
+        },
+        {
+          "line": 37,
+          "voynich": "qotaiin qokaiin okedy lkeedy",
+          "glosses": [
+            "womb-[place]",
+            "womb-[place]",
+            "sky-[done]",
+            "liquid-moist-[done]"
+          ],
+          "procedural": "WOMB place WOMB place SKY LIQUID moistED"
+        },
+        {
+          "line": 38,
+          "voynich": "shedy qol shedy qokaiin drol",
+          "glosses": [
+            "juice-[done]",
+            "womb",
+            "juice-[done]",
+            "womb-[place]",
+            "oil"
+          ],
+          "procedural": "JUICE WOMB JUICE WOMB place oil"
+        },
+        {
+          "line": 39,
+          "voynich": "ykain chdar chedy qokain dy",
+          "glosses": [
+            "cycle-[action]",
+            "herb",
+            "herb-[done]",
+            "womb-[action]",
+            "[done]"
+          ],
+          "procedural": "CYCLE process HERB HERB WOMB process dy"
+        },
+        {
+          "line": 40,
+          "voynich": "dain chfaiin opaly kotaly",
+          "glosses": [
+            "leaf",
+            "herb-[place]",
+            "celestial",
+            "celestial"
+          ],
+          "procedural": "LEAF HERB place celestial celestial"
+        },
+        {
+          "line": 41,
+          "voynich": "lchedy pchedy qokaiin dar",
+          "glosses": [
+            "wash-[done]",
+            "chest-[done]",
+            "womb-[place]",
+            "leaf"
+          ],
+          "procedural": "washED CHEST WOMB place LEAF"
+        }
+      ],
+      "fluent_reconstruction": [
+        {
+          "line": 1,
+          "text": "Juice (dry/whole/apply/oil/heat). for the womb. at sky."
+        },
+        {
+          "line": 2,
+          "text": "Leaf and juice (steam/prepare/heat). for the womb and menses. at sky/time."
+        },
+        {
+          "line": 3,
+          "text": "Herb and leaf (treated/celestial/heat/oil). for the womb and menses."
+        },
+        {
+          "line": 4,
+          "text": "Herb and juice (purify/grind/moist/oil/heat). for the womb. at time."
+        },
+        {
+          "line": 5,
+          "text": "Leaf (benefit/heat/one). for the womb. at time."
+        },
+        {
+          "line": 6,
+          "text": "Juice (heat/one). for the womb. at sky/cycle."
+        },
+        {
+          "line": 7,
+          "text": "Herb (processed/heat/steam/process). for the womb."
+        },
+        {
+          "line": 8,
+          "text": "for the womb and menses. at time."
+        },
+        {
+          "line": 9,
+          "text": "Juice (oil/moist/treated). for the womb and health. at sky/time."
+        },
+        {
+          "line": 10,
+          "text": "Herb and juice (heat/treated/oil). for the womb and menses. at time."
+        },
+        {
+          "line": 11,
+          "text": "for the womb and menses. at sky."
+        },
+        {
+          "line": 12,
+          "text": "Herb (oil/one/heat/process). for the womb and menses and health."
+        },
+        {
+          "line": 13,
+          "text": "Leaf (dry/treated/potent/heat). for the womb and menses. at sky."
+        },
+        {
+          "line": 14,
+          "text": "Herb (benefit/oil/dry). for the womb. at sky/time/star."
+        },
+        {
+          "line": 15,
+          "text": "for the chest and health."
+        },
+        {
+          "line": 16,
+          "text": "Herb and leaf. for the womb and menses. at sky/air."
+        },
+        {
+          "line": 17,
+          "text": "Herb (moist). for the womb. at sky."
+        },
+        {
+          "line": 18,
+          "text": "Leaf and juice. for the womb and health."
+        },
+        {
+          "line": 19,
+          "text": "Herb (moist/steam). for the womb."
+        },
+        {
+          "line": 20,
+          "text": "Herb and leaf (dry/process). for the womb."
+        },
+        {
+          "line": 21,
+          "text": "Seed and juice (moist/potent/whole). for the menses. at sky."
+        },
+        {
+          "line": 22,
+          "text": "for the womb and menses."
+        },
+        {
+          "line": 23,
+          "text": "for the menses and health."
+        },
+        {
+          "line": 24,
+          "text": "Juice (oil/one/dry). for the health."
+        },
+        {
+          "line": 25,
+          "text": "Herb and leaf (process). at star."
+        },
+        {
+          "line": 26,
+          "text": "for the womb and menses."
+        },
+        {
+          "line": 27,
+          "text": "Leaf and herb and juice (heat). for the womb and menses. at sky/time."
+        },
+        {
+          "line": 28,
+          "text": "Herb and leaf (steam/oil). for the womb and menses."
+        },
+        {
+          "line": 29,
+          "text": "Juice (steam/heat). for the womb and menses and health. at time."
+        },
+        {
+          "line": 30,
+          "text": "Herb and leaf (moist/heat/celestial/process). for the womb. at sky/cycle."
+        },
+        {
+          "line": 31,
+          "text": "Leaf (oil/steam). for the womb and menses. at sky/cycle."
+        },
+        {
+          "line": 32,
+          "text": "Leaf (celestial/moist/steam/one/apply). for the womb. at sky."
+        },
+        {
+          "line": 33,
+          "text": "Seed and herb and leaf (moist). for the womb and menses."
+        },
+        {
+          "line": 34,
+          "text": "Seed (wash/heat/prepare/process). for the womb."
+        },
+        {
+          "line": 35,
+          "text": "Juice (whole). for the menses."
+        },
+        {
+          "line": 36,
+          "text": "Seed and herb (moist). for the menses. at time."
+        },
+        {
+          "line": 37,
+          "text": "for the womb. at sky."
+        },
+        {
+          "line": 38,
+          "text": "Juice (oil). for the womb."
+        },
+        {
+          "line": 39,
+          "text": "Herb. for the womb. at cycle."
+        },
+        {
+          "line": 40,
+          "text": "Herb and leaf (celestial)."
+        },
+        {
+          "line": 41,
+          "text": "Leaf (wash). for the womb and chest."
+        }
+      ]
+    },
+    "f5r": {
+      "section": "HERBAL",
+      "word_count": 56,
+      "confidence_summary": {
+        "HIGH": 13,
+        "MEDIUM": 41,
+        "LOW": 1,
+        "UNKNOWN": 1
+      },
+      "templates_found": {
+        "PREPARATION": 2,
+        "TIMED_TREATMENT": 1,
+        "GENERAL": 2,
+        "BODY_TREATMENT": 1,
+        "LIQUID_HERB": 1
+      },
+      "lines": [
+        {
+          "line": 1,
+          "voynich": "kshody fchoy chkoy oaiin oar olsy chody dkshy dy",
+          "glosses": [
+            "whole-[done]",
+            "filter",
+            "herb-whole",
+            "whole-[place]",
+            "whole",
+            "menses",
+            "herb-whole-[done]",
+            "[dkshy]",
+            "[done]"
+          ],
+          "procedural": "wholeED filter HERB whole whole place whole MENSES HERB wholeED dkshy dy"
+        },
+        {
+          "line": 2,
+          "voynich": "ochey okey qokaiin sho ckhoy cthey chey oka*or otol",
+          "glosses": [
+            "whole-[ongoing]",
+            "sky-[ongoing]",
+            "womb-[place]",
+            "juice-whole",
+            "process",
+            "water-pure-[ongoing]",
+            "herb-[ongoing]",
+            "sky-one",
+            "time-oil"
+          ],
+          "procedural": "wholeING SKY WOMB place JUICE whole process WATER-PURE HERB SKY one TIME oil"
+        },
+        {
+          "line": 3,
+          "voynich": "qoaiin otan chy daiin oteeen cho cthy otchy qotcho dy",
+          "glosses": [
+            "womb-[place]",
+            "time-one",
+            "herb",
+            "leaf",
+            "time-moist",
+            "herb-whole",
+            "water-pure",
+            "time",
+            "womb-prepare",
+            "[done]"
+          ],
+          "procedural": "WOMB place TIME one HERB LEAF TIME moist HERB whole WATER-PURE TIME WOMB prepare dy"
+        },
+        {
+          "line": 4,
+          "voynich": "otain sheody chan s cheor chocthy",
+          "glosses": [
+            "time-[action]",
+            "juice-flow-[done]",
+            "herb-one",
+            "[s]",
+            "herb",
+            "herb-whole"
+          ],
+          "procedural": "TIME process JUICE flowED HERB one s HERB HERB whole"
+        },
+        {
+          "line": 5,
+          "voynich": "tshy shody qoaiin cholols sho qotcheo daiin shodaiin",
+          "glosses": [
+            "[tshy]",
+            "juice-whole-[done]",
+            "womb-[place]",
+            "herb-oil",
+            "juice-whole",
+            "womb-prepare",
+            "leaf",
+            "juice-whole-[place]"
+          ],
+          "procedural": "tshy JUICE wholeED WOMB place HERB oil JUICE whole WOMB prepare LEAF JUICE whole place"
+        },
+        {
+          "line": 6,
+          "voynich": "sho cheor chey qoeeey qoykeeey qoeor cthy shotshy dy",
+          "glosses": [
+            "juice-whole",
+            "herb",
+            "herb-[ongoing]",
+            "womb-moist-[ongoing]",
+            "womb-steam-[ongoing]",
+            "womb",
+            "water-pure",
+            "juice-whole",
+            "[done]"
+          ],
+          "procedural": "JUICE whole HERB HERB WOMB moistING WOMB steamING WOMB WATER-PURE JUICE whole dy"
+        },
+        {
+          "line": 7,
+          "voynich": "qotoeey keey cheo kchy shody",
+          "glosses": [
+            "womb-whole-[ongoing]",
+            "heat-[ongoing]",
+            "herb-flow",
+            "[kchy]",
+            "juice-whole-[done]"
+          ],
+          "procedural": "WOMB wholeING heatING HERB flow kchy JUICE wholeED"
+        }
+      ],
+      "fluent_reconstruction": [
+        {
+          "line": 1,
+          "text": "Herb (filter/whole). applied to menses."
+        },
+        {
+          "line": 2,
+          "text": "Herb and juice (process/oil/one/whole). applied to womb. at sky/time."
+        },
+        {
+          "line": 3,
+          "text": "Herb and leaf (moist/one/prepare/whole). applied to womb. at time."
+        },
+        {
+          "line": 4,
+          "text": "Herb and juice (flow/one/whole). at time."
+        },
+        {
+          "line": 5,
+          "text": "Leaf and herb and juice (oil/prepare/whole). applied to womb."
+        },
+        {
+          "line": 6,
+          "text": "Herb and juice (moist/steam/whole). applied to womb."
+        },
+        {
+          "line": 7,
+          "text": "Herb and juice (flow/heat/whole). applied to womb."
+        }
+      ]
+    },
+    "f99r": {
+      "section": "RECIPES",
+      "word_count": 197,
+      "confidence_summary": {
+        "HIGH": 55,
+        "MEDIUM": 124,
+        "LOW": 16,
+        "UNKNOWN": 2
+      },
+      "templates_found": {
+        "GENERAL": 7,
+        "FULL_RECIPE": 2,
+        "PREPARATION": 7,
+        "APPLICATION": 1,
+        "BODY_TREATMENT": 2
+      },
+      "lines": [
+        {
+          "line": 0,
+          "voynich": "okoramog oparal tsholdy yteoldy",
+          "glosses": [
+            "sky-benefit",
+            "whole",
+            "oil-[done]",
+            "world-oil-[done]"
+          ],
+          "procedural": "SKY benefit whole oilED WORLD oilED"
+        },
+        {
+          "line": 1,
+          "voynich": "okary pcheody oteody daiin cpheey tshol dal cfheol olaiin rar oaro okos tolsasy",
+          "glosses": [
+            "sky-one",
+            "chest-flow-[done]",
+            "time-flow-[done]",
+            "leaf",
+            "press-[ongoing]",
+            "oil",
+            "leaf",
+            "well-treated",
+            "menses-[place]",
+            "[rar]",
+            "whole",
+            "sky-whole",
+            "oil"
+          ],
+          "procedural": "SKY one CHEST flowED TIME flowED LEAF pressING oil LEAF well-treated MENSES place rar whole SKY whole oil"
+        },
+        {
+          "line": 2,
+          "voynich": "darar raroshy shor sshor sheol kol sheol qoeol shol kol ckhol ckhory aloly oekey",
+          "glosses": [
+            "leaf",
+            "whole",
+            "juice",
+            "[sshor]",
+            "juice-oil",
+            "oil",
+            "juice-oil",
+            "womb-oil",
+            "juice-oil",
+            "oil",
+            "process",
+            "process",
+            "star-oil",
+            "whole-[ongoing]"
+          ],
+          "procedural": "LEAF whole JUICE sshor JUICE oil oil JUICE oil WOMB oil JUICE oil oil process process STAR oil wholeING"
+        },
+        {
+          "line": 3,
+          "voynich": "oky dcheor chs al yckhy okeol ckhor oraiin chor qokeeor chory ooror dor chockhhy",
+          "glosses": [
+            "sky",
+            "grind",
+            "herb",
+            "star",
+            "[yckhy]",
+            "sky-oil",
+            "process",
+            "gold/benefit-[place]",
+            "herb",
+            "womb-steam",
+            "herb-benefit",
+            "benefit",
+            "[dor]",
+            "herb-process"
+          ],
+          "procedural": "SKY grind HERB STAR yckhy SKY oil process GOLD/BENEFIT place HERB WOMB steam HERB benefit benefit dor HERB process"
+        },
+        {
+          "line": 4,
+          "voynich": "salo qokeor chol ykol cheey chody ckhol daiin okeoly daiin ckhy choky rchey ot",
+          "glosses": [
+            "seed-whole",
+            "womb-heat",
+            "herb-oil",
+            "cycle-oil",
+            "herb-[ongoing]",
+            "herb-whole-[done]",
+            "process",
+            "leaf",
+            "sky-oil",
+            "leaf",
+            "[ckhy]",
+            "herb-whole",
+            "[ongoing]",
+            "time"
+          ],
+          "procedural": "SEED whole WOMB heat HERB oil CYCLE oil HERB HERB wholeED process LEAF SKY oil LEAF ckhy HERB whole rchey TIME"
+        },
+        {
+          "line": 5,
+          "voynich": "oro ain oky okeoly kodaiin opchey qoky dor otchor opsho okeol sheol oteoefol saiiny",
+          "glosses": [
+            "gold/benefit-whole",
+            "[action]",
+            "sky",
+            "sky-oil",
+            "whole-[place]",
+            "apply-[ongoing]",
+            "womb",
+            "[dor]",
+            "time",
+            "whole",
+            "sky-oil",
+            "juice-oil",
+            "time-oil",
+            "seed"
+          ],
+          "procedural": "GOLD/BENEFIT whole process SKY SKY oil whole place applyING WOMB dor TIME whole SKY oil JUICE oil TIME oil SEED"
+        },
+        {
+          "line": 6,
+          "voynich": "okor yteold dsheol ckhey ckheol okeol ctheol qokey ckhol okeol okeey dald rory",
+          "glosses": [
+            "sky",
+            "world-oil",
+            "oil",
+            "process-[ongoing]",
+            "treated",
+            "sky-oil",
+            "water-pure-oil",
+            "womb-[ongoing]",
+            "process",
+            "sky-oil",
+            "sky-[ongoing]",
+            "leaf",
+            "benefit"
+          ],
+          "procedural": "SKY WORLD oil oil processING treated SKY oil WATER-PURE oil WOMB process SKY oil SKY LEAF benefit"
+        },
+        {
+          "line": 7,
+          "voynich": "salol cheotchy tol cheody qokol okoly okoldy qokoly qokal okchol qokold dam",
+          "glosses": [
+            "seed-oil",
+            "herb-flow",
+            "oil",
+            "herb-flow-[done]",
+            "womb-oil",
+            "sky-oil",
+            "sky-oil-[done]",
+            "womb-oil",
+            "womb",
+            "sky-oil",
+            "womb-oil",
+            "leaf"
+          ],
+          "procedural": "SEED oil HERB flow oil HERB flowED WOMB oil SKY oil SKY oilED WOMB oil WOMB SKY oil WOMB oil LEAF"
+        },
+        {
+          "line": 8,
+          "voynich": "skeeal chees okeey qotol sheol daiin qotol okeol",
+          "glosses": [
+            "steam",
+            "herb-moist",
+            "sky-[ongoing]",
+            "womb-oil",
+            "juice-oil",
+            "leaf",
+            "womb-oil",
+            "sky-oil"
+          ],
+          "procedural": "steam HERB moist SKY WOMB oil JUICE oil LEAF WOMB oil SKY oil"
+        },
+        {
+          "line": 9,
+          "voynich": "okary tsheeor cpheol ckey pchol ckhey ypchol chor choly qotocthey qkory",
+          "glosses": [
+            "sky-one",
+            "moist",
+            "press",
+            "[ongoing]",
+            "chest-oil",
+            "process-[ongoing]",
+            "apply",
+            "herb",
+            "herb-oil",
+            "womb-purify-[ongoing]",
+            "benefit"
+          ],
+          "procedural": "SKY one moist press ckey CHEST oil processING apply HERB HERB oil WOMB purifyING benefit"
+        },
+        {
+          "line": 10,
+          "voynich": "okolo sol sheol keshey qokeeey chs chey dolchey ctheey daiin cheom",
+          "glosses": [
+            "sky-oil",
+            "health",
+            "juice-oil",
+            "heat-[ongoing]",
+            "womb-steam-[ongoing]",
+            "herb",
+            "herb-[ongoing]",
+            "wash-[ongoing]",
+            "water-pure-[ongoing]",
+            "leaf",
+            "herb-flow"
+          ],
+          "procedural": "SKY oil HEALTH JUICE oil heatING WOMB steamING HERB HERB washING WATER-PURE LEAF HERB flow"
+        },
+        {
+          "line": 11,
+          "voynich": "otalam daiin cheeokeey checkhey dor oldy sheey keody okeeey s aiin ols",
+          "glosses": [
+            "time-celestial",
+            "leaf",
+            "herb-heat-[ongoing]",
+            "herb-process-[ongoing]",
+            "[dor]",
+            "menses-[done]",
+            "juice-[ongoing]",
+            "heat-[done]",
+            "sky-moist-[ongoing]",
+            "[s]",
+            "[place]",
+            "menses"
+          ],
+          "procedural": "TIME celestial LEAF HERB heatING HERB processING dor MENSES JUICE heatED SKY moistING s place MENSES"
+        },
+        {
+          "line": 12,
+          "voynich": "otoldy qokey chkeey chey ckhey ckhey ykeey oiin air chody oeksa",
+          "glosses": [
+            "time-oil-[done]",
+            "womb-[ongoing]",
+            "herb-heat-[ongoing]",
+            "herb-[ongoing]",
+            "process-[ongoing]",
+            "process-[ongoing]",
+            "cycle-[ongoing]",
+            "whole",
+            "one",
+            "herb-whole-[done]",
+            "whole"
+          ],
+          "procedural": "TIME oilED WOMB HERB heatING HERB processING processING CYCLE whole one HERB wholeED whole"
+        },
+        {
+          "line": 13,
+          "voynich": "tol keey ctheey",
+          "glosses": [
+            "oil",
+            "heat-[ongoing]",
+            "water-pure-[ongoing]"
+          ],
+          "procedural": "oil heatING WATER-PURE"
+        },
+        {
+          "line": 14,
+          "voynich": "ykeol okeol o ckheo chol cheodal okeo r olcheem orar",
+          "glosses": [
+            "cycle-oil",
+            "sky-oil",
+            "whole",
+            "treated",
+            "herb-oil",
+            "herb-flow",
+            "sky-flow",
+            "[r]",
+            "menses-moist",
+            "gold/benefit"
+          ],
+          "procedural": "CYCLE oil SKY oil whole treated HERB oil HERB flow SKY flow r MENSES moist GOLD/BENEFIT"
+        },
+        {
+          "line": 15,
+          "voynich": "okeeey keey keeor okeey daiin okeols aiin olaiir oolsal",
+          "glosses": [
+            "sky-moist-[ongoing]",
+            "heat-[ongoing]",
+            "steam",
+            "sky-[ongoing]",
+            "leaf",
+            "sky-oil",
+            "[place]",
+            "menses-one",
+            "oil"
+          ],
+          "procedural": "SKY moistING heatING steam SKY LEAF SKY oil place MENSES one oil"
+        },
+        {
+          "line": 16,
+          "voynich": "qokeeo okeey qokeey okesy qokeeo sar sheseky or al",
+          "glosses": [
+            "womb-steam",
+            "sky-[ongoing]",
+            "womb-heat-[ongoing]",
+            "sky",
+            "womb-steam",
+            "seed",
+            "juice",
+            "gold/benefit",
+            "star"
+          ],
+          "procedural": "WOMB steam SKY WOMB heatING SKY WOMB steam SEED JUICE GOLD/BENEFIT STAR"
+        },
+        {
+          "line": 17,
+          "voynich": "yshain ykhey octhey dy daiin okor okeey shcty sh",
+          "glosses": [
+            "[action]",
+            "cycle-[ongoing]",
+            "purify-[ongoing]",
+            "[done]",
+            "leaf",
+            "sky",
+            "sky-[ongoing]",
+            "juice",
+            "juice"
+          ],
+          "procedural": "process CYCLE purifyING dy LEAF SKY SKY JUICE JUICE"
+        },
+        {
+          "line": 18,
+          "voynich": "ychor ols or am air om",
+          "glosses": [
+            "[ychor]",
+            "menses",
+            "gold/benefit",
+            "one",
+            "one",
+            "whole"
+          ],
+          "procedural": "ychor MENSES GOLD/BENEFIT one one whole"
+        }
+      ],
+      "fluent_reconstruction": [
+        {
+          "line": 0,
+          "text": "at sky."
+        },
+        {
+          "line": 1,
+          "text": "Leaf (flow/press/one/whole/well-treated/oil). applied to menses and chest. at sky/time."
+        },
+        {
+          "line": 2,
+          "text": "Leaf and juice (process/oil/whole). applied to womb. at star."
+        },
+        {
+          "line": 3,
+          "text": "Herb (grind/steam/process/benefit/oil). applied to womb. at sky/star."
+        },
+        {
+          "line": 4,
+          "text": "Seed and herb and leaf (process/heat/oil/whole). applied to womb. at sky/time/cycle."
+        },
+        {
+          "line": 5,
+          "text": "Seed and juice (apply/oil/whole). applied to womb. at sky/time."
+        },
+        {
+          "line": 6,
+          "text": "Leaf (benefit/oil/treated/process). applied to womb. at sky."
+        },
+        {
+          "line": 7,
+          "text": "Seed and herb and leaf (flow/oil). applied to womb. at sky."
+        },
+        {
+          "line": 8,
+          "text": "Leaf and herb and juice (moist/steam/oil). applied to womb. at sky."
+        },
+        {
+          "line": 9,
+          "text": "Herb (press/purify/moist/one/process/benefit/apply/oil). applied to womb and chest. at sky."
+        },
+        {
+          "line": 10,
+          "text": "Leaf and herb and juice (wash/flow/steam/oil/heat). applied to womb and health. at sky."
+        },
+        {
+          "line": 11,
+          "text": "Herb and leaf and juice (moist/heat/celestial/process). applied to menses. at sky/time."
+        },
+        {
+          "line": 12,
+          "text": "Herb (one/whole/process/oil/heat). applied to womb. at time/cycle."
+        },
+        {
+          "line": 13,
+          "text": "oil | heatING | WATER-PURE"
+        },
+        {
+          "line": 14,
+          "text": "Herb (flow/moist/whole/treated/oil). applied to menses. at sky/cycle."
+        },
+        {
+          "line": 15,
+          "text": "Leaf (moist/one/steam/oil/heat). applied to menses. at sky."
+        },
+        {
+          "line": 16,
+          "text": "Seed and juice (steam/heat). applied to womb. at sky/star."
+        },
+        {
+          "line": 17,
+          "text": "Leaf and juice (purify). at sky/cycle."
+        },
+        {
+          "line": 18,
+          "text": "applied to menses."
+        }
+      ]
+    }
+  }
+}

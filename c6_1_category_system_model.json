@@ -1,0 +1,5851 @@
+{
+  "metadata": {
+    "phase": "C6.1",
+    "title": "Category System Model",
+    "timestamp": "2025-12-30T22:11:43.492980"
+  },
+  "model": {
+    "total_categories": 109,
+    "hub_categories": 8,
+    "hierarchy_depth": 2,
+    "primary_organizing_principle": "MIXED",
+    "high_confidence_definitions": 29,
+    "category_definitions": {
+      "kooiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "3_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "COMPOUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "BASAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3871
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1515
+          },
+          {
+            "prefix": "da",
+            "weight": 0.0977
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "tolor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "AXILLARY",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3939
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.2121
+          },
+          {
+            "prefix": "da",
+            "weight": 0.0909
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "pchafdan": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "3_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "THROUGHOUT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "COMPOUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "COMPLEX",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2667
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1778
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1556
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "okchesy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4505
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1099
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.0989
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchodar": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2364
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.2
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1455
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 2
+      },
+      "koair": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.1695
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1525
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1525
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "foar": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3281
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1562
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.125
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "otorchety": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3358
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1168
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1095
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pysaiinor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BULBOUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "SERRATED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1833
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1667
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1667
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "tolchd": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4337
+          },
+          {
+            "prefix": "so",
+            "weight": 0.1084
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.0964
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "podairol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "ROUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "RADIAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ol",
+            "weight": 0.1807
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1687
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1325
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "pshol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3934
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1557
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1557
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 6
+      },
+      "sairaly": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2642
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1572
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1069
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchraiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4677
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1129
+          },
+          {
+            "prefix": "pc",
+            "weight": 0.0968
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "poalshsal": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.1975
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1975
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.0988
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kodalchy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2632
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2456
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1579
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "poraiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3571
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.25
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.2143
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "MEDIUM",
+        "b_occurrences": 7
+      },
+      "choeesy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3021
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2344
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1354
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kodam": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.1818
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1818
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1636
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "tshol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BULBOUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "SERRATED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2286
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1714
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "HIGH",
+        "b_occurrences": 5
+      },
+      "tor": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3165
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1519
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1266
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "MEDIUM",
+        "b_occurrences": 34
+      },
+      "toldshy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.375
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1667
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1667
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fshody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THICK",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3774
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1887
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1509
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "pocheody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2245
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1837
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1837
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pdychoiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2115
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1731
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1538
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchodaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2321
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1786
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.125
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "MEDIUM",
+        "b_occurrences": 7
+      },
+      "pcheey": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2281
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.193
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1404
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 2
+      },
+      "dordod": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2118
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1294
+          },
+          {
+            "prefix": "do",
+            "weight": 0.1294
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "chosaroshol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3643
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1318
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1163
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "cthscthain": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "UNDETERMINED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "COMPOUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "OPPOSITE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "PARTIAL",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3478
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1884
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1449
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "koar": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3011
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.172
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1398
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kydainy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2958
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2254
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.169
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "korary": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BULBOUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LANCEOLATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "OPPOSITE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2295
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1311
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1148
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "porory": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2941
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1882
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1294
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pol": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.2
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1333
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.12
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "MEDIUM",
+        "b_occurrences": 65
+      },
+      "tcho": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4066
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1099
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.0879
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 7
+      },
+      "kcheodaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2432
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2162
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1486
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "HIGH",
+        "b_occurrences": 2
+      },
+      "poeeaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.2857
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.2381
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2143
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "r*": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BULBOUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "ROUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "WHORLED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "COMPOUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.5
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1338
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1127
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "HIGH",
+        "b_occurrences": 2
+      },
+      "poldchody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BULBOUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "2",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "CURVED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2051
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1795
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1795
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "okchshy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3
+          },
+          {
+            "prefix": "da",
+            "weight": 0.24
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.2067
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pykydal": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.2319
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1739
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1159
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "tchodar": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THICK",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "BASAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "UNDETERMINED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3396
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.283
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1509
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "faiis": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "UNDETERMINED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LANCEOLATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "PARTIAL",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.4054
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2568
+          },
+          {
+            "prefix": "da",
+            "weight": 0.0811
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "cthod": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4245
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1698
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1038
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "koaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "UNDETERMINED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "CURVED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "ROUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "UNDETERMINED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "PARTIAL",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3623
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1449
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1159
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "kcheat": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2875
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1625
+          },
+          {
+            "prefix": "kc",
+            "weight": 0.15
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "okchop": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "RADIAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2642
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2264
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1509
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "torshor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2037
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1667
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1111
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 1
+      },
+      "pchair": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4267
+          },
+          {
+            "prefix": "da",
+            "weight": 0.16
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1067
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pochaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2344
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1719
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1562
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchooiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "SERRATED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3371
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2472
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1236
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "poshol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3982
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2035
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1504
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kdchody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4304
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1646
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1139
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fchoiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.2267
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.16
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.12
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fchodaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4286
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1607
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.125
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 1
+      },
+      "tdokchcfhy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.1833
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1667
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1667
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fcholdy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "OPPOSITE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "AXILLARY",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2683
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1707
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1463
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "pcheol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2609
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2174
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1242
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 27
+      },
+      "cthoo": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3235
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2059
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1618
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "tsheos": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.25
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.25
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1058
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "okolyd": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2838
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1959
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1689
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchor": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2702
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1524
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1076
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 19
+      },
+      "pydchdom": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.3049
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1585
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.122
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kor": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2744
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1336
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1191
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 24
+      },
+      "podaiin": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2564
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1667
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1667
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 7
+      },
+      "kchsy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3239
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1268
+          },
+          {
+            "prefix": "do",
+            "weight": 0.1268
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "otchal": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "NONE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "UNDETERMINED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "SERRATED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "BASAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "RADIAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "PARTIAL",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.4615
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1058
+          },
+          {
+            "prefix": "kc",
+            "weight": 0.0865
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "lsais": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2143
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1531
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1429
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kshody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LANCEOLATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "OPPOSITE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "2",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "COMPLEX",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2649
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1984
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1341
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "tocphol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2466
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1507
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1233
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "okoramog": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ok",
+            "weight": 0.2569
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1944
+          },
+          {
+            "prefix": "ck",
+            "weight": 0.1042
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "sho": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "NA",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "AXILLARY",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3478
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2246
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1377
+          }
+        ],
+        "children": [
+          "pshol",
+          "tsho",
+          "kshody"
+        ],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "HIGH",
+        "b_occurrences": 42
+      },
+      "polyshy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2958
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1972
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1408
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fochor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "OPPOSITE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "AXILLARY",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2759
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1897
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1379
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "par": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.4103
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1538
+          },
+          {
+            "prefix": "tc",
+            "weight": 0.1026
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 15
+      },
+      "otaramy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ok",
+            "weight": 0.2814
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1976
+          },
+          {
+            "prefix": "ol",
+            "weight": 0.1257
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "tsho": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "sh",
+            "weight": 0.2078
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1818
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1299
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "MEDIUM",
+        "b_occurrences": 4
+      },
+      "possheody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.1867
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1467
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1467
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pcheodar": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2714
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.2143
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1571
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "END",
+        "confidence": "MEDIUM",
+        "b_occurrences": 6
+      },
+      "tshor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "sh",
+            "weight": 0.2179
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1732
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1269
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 2
+      },
+      "pcheor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "sh",
+            "weight": 0.2432
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2162
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1622
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 11
+      },
+      "poleeol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2899
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1739
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1594
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "psheot": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "TWINING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.4
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1765
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.0941
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "tshodpy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2632
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1754
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1579
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "paiin": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MANY_16_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "MIXED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "COMPLEX",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.3191
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2553
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1702
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "HIGH",
+        "b_occurrences": 18
+      },
+      "tcholdchy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2105
+          },
+          {
+            "prefix": "ck",
+            "weight": 0.1579
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1447
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "ker": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2574
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.2376
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1386
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "cphdaithy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "sh",
+            "weight": 0.3115
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1967
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1475
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pdrairdy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THICK",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "NO",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "OVAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "2_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2609
+          },
+          {
+            "prefix": "da",
+            "weight": 0.2319
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1304
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "tydlo": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "FIBROUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "TWINING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "THIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LOBED",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "COMPOUND",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.3651
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1587
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.127
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "toealchs": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2821
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1282
+          },
+          {
+            "prefix": "ar",
+            "weight": 0.0769
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kodshol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2614
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2159
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1023
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "ksor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.378
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1585
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1341
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fochof": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2676
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.2113
+          },
+          {
+            "prefix": "kc",
+            "weight": 0.1549
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "psheoas": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2326
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1628
+          },
+          {
+            "prefix": "ck",
+            "weight": 0.1163
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "porshols": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ok",
+            "weight": 0.2568
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2162
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1757
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pcharasy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.2115
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1923
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1731
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchocthy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3226
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1774
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1613
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "tol": {
+        "type": "hub",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.2553
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1489
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1489
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "BEGINNING",
+        "confidence": "MEDIUM",
+        "b_occurrences": 81
+      },
+      "kocheor": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "MEDIUM_6_15",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "NEEDLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "BASAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "IRREGULAR",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "2",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "ASYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "COMPLEX",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2766
+          },
+          {
+            "prefix": "da",
+            "weight": 0.234
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1489
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "poshody": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "feature": "root_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_type",
+            "value": "BRANCHING",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_prominence",
+            "value": "SMALL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "root_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_type",
+            "value": "STRAIGHT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_thickness",
+            "value": "MEDIUM",
+            "agreement": 1.0
+          },
+          {
+            "feature": "stem_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_count_category",
+            "value": "FEW_1_5",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_shape",
+            "value": "LANCEOLATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_arrangement",
+            "value": "ALTERNATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_size_relative",
+            "value": "LARGE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "leaf_color_uniform",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_present",
+            "value": "PRESENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_count",
+            "value": "6_PLUS",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_position",
+            "value": "TERMINAL",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_color_distinct",
+            "value": "YES",
+            "agreement": 1.0
+          },
+          {
+            "feature": "flower_shape",
+            "value": "SIMPLE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_count",
+            "value": "1",
+            "agreement": 1.0
+          },
+          {
+            "feature": "container_present",
+            "value": "ABSENT",
+            "agreement": 1.0
+          },
+          {
+            "feature": "plant_symmetry",
+            "value": "SYMMETRIC",
+            "agreement": 1.0
+          },
+          {
+            "feature": "overall_complexity",
+            "value": "MODERATE",
+            "agreement": 1.0
+          },
+          {
+            "feature": "identifiable_impression",
+            "value": "UNCERTAIN",
+            "agreement": 1.0
+          },
+          {
+            "feature": "drawing_completeness",
+            "value": "COMPLETE",
+            "agreement": 1.0
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.2535
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2394
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1268
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "HIGH"
+      },
+      "okoraldy": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "da",
+            "weight": 0.226
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.2192
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.137
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "kshol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3968
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1587
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1429
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": "MIDDLE",
+        "confidence": "MEDIUM",
+        "b_occurrences": 2
+      },
+      "odory": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3319
+          },
+          {
+            "prefix": "qo",
+            "weight": 0.1638
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1595
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "poror": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3404
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.1915
+          },
+          {
+            "prefix": "ot",
+            "weight": 0.1277
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "told": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "qo",
+            "weight": 0.3333
+          },
+          {
+            "prefix": "da",
+            "weight": 0.1667
+          },
+          {
+            "prefix": "sh",
+            "weight": 0.1458
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "fachys": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "sh",
+            "weight": 0.25
+          },
+          {
+            "prefix": "ch",
+            "weight": 0.1771
+          },
+          {
+            "prefix": "da",
+            "weight": 0.151
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      },
+      "pchodol": {
+        "type": "isolate",
+        "defining_features": [
+          {
+            "prefix": "ch",
+            "weight": 0.3103
+          },
+          {
+            "prefix": "ok",
+            "weight": 0.1552
+          },
+          {
+            "prefix": "ct",
+            "weight": 0.0948
+          }
+        ],
+        "children": [],
+        "functional_role_in_B": null,
+        "confidence": "MEDIUM"
+      }
+    }
+  }
+}

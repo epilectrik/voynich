@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "phase": "16D",
+    "title": "4-Cycle Interpretation",
+    "timestamp": "2025-12-31T15:26:15.652025"
+  },
+  "process": "Reflux Distillation / Azeotropic Systems",
+  "process_id": "P1_REFLUX_DISTILLATION",
+  "cycle_anchor": "s",
+  "canonical_operator": [
+    "qo",
+    "qo",
+    "qo"
+  ],
+  "stage_mapping": [
+    {
+      "stage": 1,
+      "name": "HEAT",
+      "description": "Apply heat to liquid in flask",
+      "action": "energy_input"
+    },
+    {
+      "stage": 2,
+      "name": "VAPORIZE",
+      "description": "Liquid converts to vapor",
+      "action": "phase_change_up"
+    },
+    {
+      "stage": 3,
+      "name": "CONDENSE",
+      "description": "Vapor contacts condenser, liquefies",
+      "action": "phase_change_down"
+    },
+    {
+      "stage": 4,
+      "name": "RETURN",
+      "description": "Condensate returns to flask",
+      "action": "cycle_completion"
+    }
+  ],
+  "anchor_interpretation": "RETURN stage - where everything cycles back",
+  "operator_interpretation": {
+    "qo": "heating_action",
+    "qo-qo-qo": "Sustained heating to maintain reflux - continuous energy input"
+  },
+  "example_cycles_analyzed": 10,
+  "PHYSICAL_COHERENCE": "HIGH",
+  "INTERPRETATION": "The dominant 4-cycle structure maps to the 4-stage physical process of Reflux Distillation / Azeotropic Systems.\n\nSTAGE SEQUENCE:\nHEAT -> VAPORIZE -> CONDENSE -> RETURN -> (repeat)\n\nANCHOR NODE 's':\nThe cycle anchor 's' corresponds to the RETURN stage -\nRETURN stage - where everything cycles back\n\nOPERATOR 'qo':\nThe canonical sequence [qo, qo, qo] represents Sustained heating to maintain reflux - continuous energy input.\nThis explains why 'qo' appears so frequently (7573 times with node 'k') -\nit's the primary control action maintaining the process in its operating regime.\n\nCYCLE MEANING:\nEach 4-cycle is not a sequence of steps but a MAINTENANCE LOOP -\nthe process naturally cycles through these stages to maintain purity/quality.\nThe 500+ distinct 4-cycles represent different operating conditions or variants."
+}

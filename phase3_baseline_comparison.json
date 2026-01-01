@@ -1,0 +1,56 @@
+{
+  "measure": "baseline_comparison",
+  "comparisons": {
+    "NATURAL_LANGUAGE_CONTENT": {
+      "description": "Content words in natural language text",
+      "match_score": 0.499,
+      "component_scores": {
+        "entropy": 0.938,
+        "mutual_information": 0.006,
+        "bits_per_entry": 0.551
+      }
+    },
+    "TECHNICAL_TERMINOLOGY": {
+      "description": "Domain-specific technical vocabulary",
+      "match_score": 0.522,
+      "component_scores": {
+        "entropy": 0.838,
+        "mutual_information": 0.506,
+        "bits_per_entry": 0.221
+      }
+    },
+    "MNEMONIC_SYSTEM": {
+      "description": "Memory aid with limited vocabulary",
+      "match_score": 0.668,
+      "component_scores": {
+        "entropy": 0.988,
+        "mutual_information": 0.906,
+        "bits_per_entry": 0.11
+      }
+    },
+    "LABEL_SYSTEM": {
+      "description": "Categorical labels or markers",
+      "match_score": 0.685,
+      "component_scores": {
+        "entropy": 1.0,
+        "mutual_information": 1.0,
+        "bits_per_entry": 0.055
+      }
+    },
+    "CIPHER_OUTPUT": {
+      "description": "Encrypted natural language",
+      "match_score": 0.805,
+      "component_scores": {
+        "entropy": 1.0,
+        "mutual_information": 1.0,
+        "bits_per_entry": 0.414
+      }
+    }
+  },
+  "best_match": {
+    "system": "CIPHER_OUTPUT",
+    "score": 0.805,
+    "description": "Encrypted natural language"
+  },
+  "interpretation": "GAMMA tokens most closely resemble CIPHER_OUTPUT (match score: 0.81)"
+}

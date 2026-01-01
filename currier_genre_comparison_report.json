@@ -1,0 +1,574 @@
+{
+  "timestamp": "2025-12-30T14:46:00.048506",
+  "methodology": "Separate genre diagnostics for Currier A vs B",
+  "currier_a": {
+    "name": "Currier A",
+    "word_count": 14155,
+    "sequence_count": 1577,
+    "sequence_length": {
+      "count": 1577,
+      "mean": 8.98,
+      "std": 4.67,
+      "min": 1,
+      "max": 38,
+      "median": 8,
+      "distribution": {
+        "9": 172,
+        "8": 166,
+        "7": 163,
+        "10": 146,
+        "6": 142,
+        "5": 130,
+        "11": 119,
+        "4": 104,
+        "12": 95,
+        "13": 62
+      }
+    },
+    "repetition": {
+      "2gram": {
+        "total": 12578,
+        "unique": 11801,
+        "repeated_patterns": 470,
+        "repetition_rate": 0.0398,
+        "duplicate_instance_rate": 0.0618,
+        "most_repeated": [
+          {
+            "pattern": "chol daiin",
+            "count": 29
+          },
+          {
+            "pattern": "daiin cthy",
+            "count": 11
+          },
+          {
+            "pattern": "shol daiin",
+            "count": 10
+          },
+          {
+            "pattern": "or aiin",
+            "count": 10
+          },
+          {
+            "pattern": "chor daiin",
+            "count": 9
+          }
+        ]
+      },
+      "3gram": {
+        "total": 11013,
+        "unique": 11001,
+        "repeated_patterns": 12,
+        "repetition_rate": 0.0011,
+        "duplicate_instance_rate": 0.0011,
+        "most_repeated": [
+          {
+            "pattern": "chol daiin cthy",
+            "count": 2
+          },
+          {
+            "pattern": "chol chy chaiin",
+            "count": 2
+          },
+          {
+            "pattern": "cthor chol chor",
+            "count": 2
+          },
+          {
+            "pattern": "chaiin chcthy ctho",
+            "count": 2
+          },
+          {
+            "pattern": "daiin qotchy qotor",
+            "count": 2
+          }
+        ]
+      },
+      "4gram": {
+        "total": 9477,
+        "unique": 9477,
+        "repeated_patterns": 0,
+        "repetition_rate": 0.0,
+        "duplicate_instance_rate": 0.0,
+        "most_repeated": []
+      },
+      "near_duplicates": 7032
+    },
+    "positional_entropy": {
+      "word_entropy": {
+        "first_position": 9.23,
+        "last_position": 9.64,
+        "overall": 10.55
+      },
+      "prefix_entropy": {
+        "first_position": 5.14,
+        "last_position": 5.03,
+        "overall": 4.9
+      },
+      "suffix_entropy": {
+        "first_position": 4.09,
+        "last_position": 4.93,
+        "overall": 4.56
+      },
+      "top_first_words": [
+        [
+          "daiin",
+          57
+        ],
+        [
+          "sho",
+          29
+        ],
+        [
+          "or",
+          19
+        ],
+        [
+          "qotchy",
+          17
+        ],
+        [
+          "ychor",
+          14
+        ],
+        [
+          "chol",
+          13
+        ],
+        [
+          "dor",
+          13
+        ],
+        [
+          "dain",
+          12
+        ],
+        [
+          "shor",
+          12
+        ],
+        [
+          "dchor",
+          12
+        ]
+      ],
+      "top_last_words": [
+        [
+          "daiin",
+          53
+        ],
+        [
+          "dy",
+          19
+        ],
+        [
+          "dal",
+          17
+        ],
+        [
+          "dam",
+          11
+        ],
+        [
+          "cthy",
+          11
+        ],
+        [
+          "dar",
+          10
+        ],
+        [
+          "chody",
+          9
+        ],
+        [
+          "aiin",
+          9
+        ],
+        [
+          "chor",
+          8
+        ],
+        [
+          "dain",
+          8
+        ]
+      ]
+    },
+    "vocabulary": {
+      "total_tokens": 14155,
+      "unique_words": 4970,
+      "type_token_ratio": 0.3511,
+      "words_for_50_pct": 232,
+      "words_for_90_pct": 3555,
+      "concentration_50": 0.0467,
+      "concentration_90": 0.7153,
+      "zipf_correlation": -0.9399,
+      "zipf_exponent": -0.7356
+    },
+    "genre_scores": {
+      "MEDICAL_RECIPES": 37.5,
+      "NARRATIVE": 25.0,
+      "ASTRONOMICAL_TABLES": 0.0,
+      "LITURGICAL": 50.0,
+      "LABELS_CAPTIONS": 37.5
+    },
+    "best_fit_genre": "LITURGICAL",
+    "best_fit_score": 50.0
+  },
+  "currier_b": {
+    "name": "Currier B",
+    "word_count": 29204,
+    "sequence_count": 2457,
+    "sequence_length": {
+      "count": 2457,
+      "mean": 11.89,
+      "std": 4.95,
+      "min": 1,
+      "max": 125,
+      "median": 12,
+      "distribution": {
+        "12": 301,
+        "13": 286,
+        "11": 257,
+        "10": 221,
+        "14": 210,
+        "15": 196,
+        "9": 161,
+        "16": 131,
+        "8": 120,
+        "7": 111
+      }
+    },
+    "repetition": {
+      "2gram": {
+        "total": 26747,
+        "unique": 23438,
+        "repeated_patterns": 1708,
+        "repetition_rate": 0.0729,
+        "duplicate_instance_rate": 0.1237,
+        "most_repeated": [
+          {
+            "pattern": "or aiin",
+            "count": 36
+          },
+          {
+            "pattern": "ol chedy",
+            "count": 23
+          },
+          {
+            "pattern": "ol aiin",
+            "count": 21
+          },
+          {
+            "pattern": "ar aiin",
+            "count": 20
+          },
+          {
+            "pattern": "ar al",
+            "count": 19
+          }
+        ]
+      },
+      "3gram": {
+        "total": 24297,
+        "unique": 24231,
+        "repeated_patterns": 62,
+        "repetition_rate": 0.0026,
+        "duplicate_instance_rate": 0.0027,
+        "most_repeated": [
+          {
+            "pattern": "ol shedy qokedy",
+            "count": 3
+          },
+          {
+            "pattern": "shedy qokedy qokeedy",
+            "count": 3
+          },
+          {
+            "pattern": "sheedy qokedy chedy",
+            "count": 3
+          },
+          {
+            "pattern": "ol chedy qokain",
+            "count": 3
+          },
+          {
+            "pattern": "or aiin otaiin",
+            "count": 2
+          }
+        ]
+      },
+      "4gram": {
+        "total": 21866,
+        "unique": 21864,
+        "repeated_patterns": 2,
+        "repetition_rate": 0.0001,
+        "duplicate_instance_rate": 0.0001,
+        "most_repeated": [
+          {
+            "pattern": "ol shedy qokedy qokeedy",
+            "count": 2
+          },
+          {
+            "pattern": "shedy qokedy qokeedy chedy",
+            "count": 2
+          }
+        ]
+      },
+      "near_duplicates": 26445
+    },
+    "positional_entropy": {
+      "word_entropy": {
+        "first_position": 9.29,
+        "last_position": 9.5,
+        "overall": 10.43
+      },
+      "prefix_entropy": {
+        "first_position": 5.13,
+        "last_position": 5.15,
+        "overall": 4.86
+      },
+      "suffix_entropy": {
+        "first_position": 3.66,
+        "last_position": 4.18,
+        "overall": 3.98
+      },
+      "top_first_words": [
+        [
+          "daiin",
+          87
+        ],
+        [
+          "saiin",
+          49
+        ],
+        [
+          "sain",
+          35
+        ],
+        [
+          "dain",
+          34
+        ],
+        [
+          "qokeedy",
+          31
+        ],
+        [
+          "dshedy",
+          29
+        ],
+        [
+          "qokeey",
+          26
+        ],
+        [
+          "sor",
+          26
+        ],
+        [
+          "sol",
+          26
+        ],
+        [
+          "qokaiin",
+          23
+        ]
+      ],
+      "top_last_words": [
+        [
+          "aiin",
+          66
+        ],
+        [
+          "qokaiin",
+          65
+        ],
+        [
+          "daiin",
+          44
+        ],
+        [
+          "otaiin",
+          37
+        ],
+        [
+          "okaiin",
+          35
+        ],
+        [
+          "chedy",
+          26
+        ],
+        [
+          "al",
+          26
+        ],
+        [
+          "ar",
+          22
+        ],
+        [
+          "qotaiin",
+          21
+        ],
+        [
+          "saiin",
+          20
+        ]
+      ]
+    },
+    "vocabulary": {
+      "total_tokens": 29204,
+      "unique_words": 7165,
+      "type_token_ratio": 0.2453,
+      "words_for_50_pct": 163,
+      "words_for_90_pct": 4245,
+      "concentration_50": 0.0227,
+      "concentration_90": 0.5925,
+      "zipf_correlation": -0.951,
+      "zipf_exponent": -0.8522
+    },
+    "genre_scores": {
+      "MEDICAL_RECIPES": 25.0,
+      "NARRATIVE": 62.5,
+      "ASTRONOMICAL_TABLES": 12.5,
+      "LITURGICAL": 50.0,
+      "LABELS_CAPTIONS": 37.5
+    },
+    "best_fit_genre": "NARRATIVE",
+    "best_fit_score": 62.5
+  },
+  "comparison": {
+    "sequence_length": {
+      "a": 8.98,
+      "b": 11.89,
+      "difference": 2.91,
+      "a_shorter": true
+    },
+    "repetition_rate": {
+      "a": 0.0011,
+      "b": 0.0026,
+      "difference": 0.0015,
+      "a_more_repetitive": false
+    },
+    "position_entropy": {
+      "a": 9.23,
+      "b": 9.29,
+      "difference": 0.06,
+      "a_lower_entropy": true
+    },
+    "vocabulary_concentration": {
+      "a": 0.0467,
+      "b": 0.0227,
+      "difference": -0.024,
+      "a_more_concentrated": true
+    },
+    "genre_fit": {
+      "a_best": "LITURGICAL",
+      "a_score": 50.0,
+      "b_best": "NARRATIVE",
+      "b_score": 62.5,
+      "same_genre": false
+    },
+    "hypothesis_test": {
+      "hypothesis": "Currier A is more formulaic than Currier B",
+      "evidence_count": 3,
+      "verdict": "CONFIRMED",
+      "explanation": "Currier A shows 3/4 formulaic characteristics"
+    }
+  },
+  "genre_profiles": {
+    "MEDICAL_RECIPES": {
+      "sequence_length": [
+        3,
+        7
+      ],
+      "repetition_rate": [
+        0.15,
+        0.4
+      ],
+      "position_entropy": [
+        0.5,
+        2.0
+      ],
+      "concentration_50": [
+        0.01,
+        0.05
+      ]
+    },
+    "NARRATIVE": {
+      "sequence_length": [
+        10,
+        30
+      ],
+      "repetition_rate": [
+        0.01,
+        0.1
+      ],
+      "position_entropy": [
+        2.5,
+        4.0
+      ],
+      "concentration_50": [
+        0.01,
+        0.03
+      ]
+    },
+    "ASTRONOMICAL_TABLES": {
+      "sequence_length": [
+        1,
+        4
+      ],
+      "repetition_rate": [
+        0.4,
+        0.8
+      ],
+      "position_entropy": [
+        0.1,
+        1.0
+      ],
+      "concentration_50": [
+        0.005,
+        0.02
+      ]
+    },
+    "LITURGICAL": {
+      "sequence_length": [
+        5,
+        15
+      ],
+      "repetition_rate": [
+        0.3,
+        0.6
+      ],
+      "position_entropy": [
+        0.5,
+        1.5
+      ],
+      "concentration_50": [
+        0.02,
+        0.06
+      ]
+    },
+    "LABELS_CAPTIONS": {
+      "sequence_length": [
+        1,
+        5
+      ],
+      "repetition_rate": [
+        0.05,
+        0.25
+      ],
+      "position_entropy": [
+        1.0,
+        3.0
+      ],
+      "concentration_50": [
+        0.02,
+        0.08
+      ]
+    }
+  }
+}

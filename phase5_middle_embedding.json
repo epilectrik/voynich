@@ -1,0 +1,141 @@
+{
+  "cooccurrence_stats": {
+    "matrix_shape": [
+      305,
+      305
+    ],
+    "total_cooccurrences": 6019077,
+    "sparsity": 0.012147272238645526,
+    "mean_cooccurrence": 129.40772910507928,
+    "max_cooccurrence": 150040.0
+  },
+  "clustering_analysis": {
+    "top_10_singular_values": [
+      0.4628,
+      0.2067,
+      0.1254,
+      0.1161,
+      0.0891,
+      0.0737,
+      0.0589,
+      0.057,
+      0.0539,
+      0.0463
+    ],
+    "variance_explained_top10": [
+      0.6355,
+      0.1268,
+      0.0466,
+      0.04,
+      0.0236,
+      0.0161,
+      0.0103,
+      0.0096,
+      0.0086,
+      0.0064
+    ],
+    "cumulative_variance_top10": [
+      0.6355,
+      0.7623,
+      0.8089,
+      0.8489,
+      0.8725,
+      0.8886,
+      0.8989,
+      0.9085,
+      0.9172,
+      0.9235
+    ]
+  },
+  "gradient_detection": {
+    "structure_type": "STRONG_CLUSTERS",
+    "top_component_dominance": 0.6355,
+    "three_component_coverage": 0.8089,
+    "component1_extremes": {
+      "negative_end": [
+        [
+          "dan",
+          -0.1641
+        ],
+        [
+          "do",
+          -0.1487
+        ],
+        [
+          "cthy",
+          -0.1368
+        ],
+        [
+          "cho",
+          -0.1192
+        ],
+        [
+          "ho",
+          -0.118
+        ],
+        [
+          "oct",
+          -0.1176
+        ],
+        [
+          "cphy",
+          -0.1116
+        ],
+        [
+          "hol",
+          -0.1074
+        ],
+        [
+          "octh",
+          -0.1025
+        ],
+        [
+          "cheo",
+          -0.1021
+        ]
+      ],
+      "positive_end": [
+        [
+          "shedy",
+          0.1011
+        ],
+        [
+          "eck",
+          0.1031
+        ],
+        [
+          "kedy",
+          0.1041
+        ],
+        [
+          "sol",
+          0.1085
+        ],
+        [
+          "tain",
+          0.111
+        ],
+        [
+          "lsh",
+          0.1119
+        ],
+        [
+          "pol",
+          0.1193
+        ],
+        [
+          "lk",
+          0.1198
+        ],
+        [
+          "ect",
+          0.1211
+        ],
+        [
+          "qol",
+          0.1377
+        ]
+      ]
+    }
+  }
+}

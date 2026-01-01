@@ -1,0 +1,407 @@
+{
+  "pilot_study_folios": [
+    "f38r",
+    "f25r",
+    "f11r",
+    "f11v",
+    "f5v",
+    "f10v",
+    "f38v",
+    "f5r",
+    "f36r",
+    "f30v",
+    "f22v",
+    "f9v",
+    "f90v2",
+    "f32v",
+    "f17r",
+    "f18r",
+    "f9r",
+    "f20v",
+    "f2r",
+    "f47v",
+    "f24v",
+    "f56r",
+    "f42r",
+    "f49v",
+    "f51v",
+    "f45v",
+    "f3v",
+    "f29v",
+    "f4v",
+    "f23v"
+  ],
+  "selection_criteria": {
+    "population": "Currier A",
+    "section": "Herbal (H)",
+    "total_available": 95,
+    "selected": 30,
+    "short_entries": [
+      "f38r",
+      "f25r",
+      "f11r",
+      "f11v",
+      "f5v",
+      "f10v",
+      "f38v",
+      "f5r",
+      "f36r",
+      "f30v"
+    ],
+    "medium_entries": [
+      "f22v",
+      "f9v",
+      "f90v2",
+      "f32v",
+      "f17r",
+      "f18r",
+      "f9r",
+      "f20v",
+      "f2r",
+      "f47v"
+    ],
+    "long_entries": [
+      "f24v",
+      "f56r",
+      "f42r",
+      "f49v",
+      "f51v",
+      "f45v",
+      "f3v",
+      "f29v",
+      "f4v",
+      "f23v"
+    ],
+    "word_count_range": {
+      "short_cutoff": 88,
+      "long_cutoff": 105
+    },
+    "prefix_diversity": 24
+  },
+  "folio_details": [
+    {
+      "folio_id": "f38r",
+      "section": "H",
+      "word_count": 42,
+      "opening_word": "tolor",
+      "opening_prefix": "to",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f25r",
+      "section": "H",
+      "word_count": 48,
+      "opening_word": "fcholdy",
+      "opening_prefix": "fc",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f11r",
+      "section": "H",
+      "word_count": 57,
+      "opening_word": "tshol",
+      "opening_prefix": "ts",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f11v",
+      "section": "H",
+      "word_count": 57,
+      "opening_word": "poldchody",
+      "opening_prefix": "po",
+      "heading_candidates": [
+        {
+          "word": "shol",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f5v",
+      "section": "H",
+      "word_count": 58,
+      "opening_word": "kocheor",
+      "opening_prefix": "ko",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f10v",
+      "section": "H",
+      "word_count": 63,
+      "opening_word": "paiin",
+      "opening_prefix": "pa",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f38v",
+      "section": "H",
+      "word_count": 65,
+      "opening_word": "okchop",
+      "opening_prefix": "ok",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f5r",
+      "section": "H",
+      "word_count": 66,
+      "opening_word": "kshody",
+      "opening_prefix": "ks",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f36r",
+      "section": "H",
+      "word_count": 70,
+      "opening_word": "pchafdan",
+      "opening_prefix": "pc",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f30v",
+      "section": "H",
+      "word_count": 75,
+      "opening_word": "cthscthain",
+      "opening_prefix": "ct",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f22v",
+      "section": "H",
+      "word_count": 90,
+      "opening_word": "pysaiinor",
+      "opening_prefix": "py",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f9v",
+      "section": "H",
+      "word_count": 94,
+      "opening_word": "fochor",
+      "opening_prefix": "fo",
+      "heading_candidates": [
+        {
+          "word": "cphol",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f90v2",
+      "section": "H",
+      "word_count": 95,
+      "opening_word": "cphdaithy",
+      "opening_prefix": "cp",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f32v",
+      "section": "H",
+      "word_count": 97,
+      "opening_word": "kcheodaiin",
+      "opening_prefix": "kc",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f17r",
+      "section": "H",
+      "word_count": 99,
+      "opening_word": "fshody",
+      "opening_prefix": "fs",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f18r",
+      "section": "H",
+      "word_count": 100,
+      "opening_word": "pdrairdy",
+      "opening_prefix": "pd",
+      "heading_candidates": [
+        {
+          "word": "chckhy",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f9r",
+      "section": "H",
+      "word_count": 101,
+      "opening_word": "tydlo",
+      "opening_prefix": "ty",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f20v",
+      "section": "H",
+      "word_count": 103,
+      "opening_word": "faiis",
+      "opening_prefix": "fa",
+      "heading_candidates": [
+        {
+          "word": "shy",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f2r",
+      "section": "H",
+      "word_count": 103,
+      "opening_word": "kydainy",
+      "opening_prefix": "ky",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f47v",
+      "section": "H",
+      "word_count": 104,
+      "opening_word": "psheot",
+      "opening_prefix": "ps",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f24v",
+      "section": "H",
+      "word_count": 117,
+      "opening_word": "tchodar",
+      "opening_prefix": "tc",
+      "heading_candidates": [
+        {
+          "word": "okam",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f56r",
+      "section": "H",
+      "word_count": 127,
+      "opening_word": "otchal",
+      "opening_prefix": "ot",
+      "heading_candidates": [
+        {
+          "word": "chy",
+          "part1_count": 3,
+          "total_count": 3
+        }
+      ]
+    },
+    {
+      "folio_id": "f42r",
+      "section": "H",
+      "word_count": 174,
+      "opening_word": "sho",
+      "opening_prefix": "sh",
+      "heading_candidates": [
+        {
+          "word": "char",
+          "part1_count": 2,
+          "total_count": 2
+        },
+        {
+          "word": "shor",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f49v",
+      "section": "H",
+      "word_count": 189,
+      "opening_word": "r*",
+      "opening_prefix": "r*",
+      "heading_candidates": [
+        {
+          "word": "r*",
+          "part1_count": 2,
+          "total_count": 2
+        },
+        {
+          "word": "sho",
+          "part1_count": 3,
+          "total_count": 4
+        },
+        {
+          "word": "cthy",
+          "part1_count": 2,
+          "total_count": 2
+        },
+        {
+          "word": "choky",
+          "part1_count": 2,
+          "total_count": 2
+        },
+        {
+          "word": "dar",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f51v",
+      "section": "H",
+      "word_count": 108,
+      "opening_word": "poshody",
+      "opening_prefix": "po",
+      "heading_candidates": [
+        {
+          "word": "saiin",
+          "part1_count": 2,
+          "total_count": 2
+        },
+        {
+          "word": "cthy",
+          "part1_count": 2,
+          "total_count": 2
+        }
+      ]
+    },
+    {
+      "folio_id": "f45v",
+      "section": "H",
+      "word_count": 109,
+      "opening_word": "korary",
+      "opening_prefix": "ko",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f3v",
+      "section": "H",
+      "word_count": 110,
+      "opening_word": "koaiin",
+      "opening_prefix": "ko",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f29v",
+      "section": "H",
+      "word_count": 112,
+      "opening_word": "kooiin",
+      "opening_prefix": "ko",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f4v",
+      "section": "H",
+      "word_count": 112,
+      "opening_word": "pchooiin",
+      "opening_prefix": "pc",
+      "heading_candidates": []
+    },
+    {
+      "folio_id": "f23v",
+      "section": "H",
+      "word_count": 113,
+      "opening_word": "podairol",
+      "opening_prefix": "po",
+      "heading_candidates": []
+    }
+  ]
+}

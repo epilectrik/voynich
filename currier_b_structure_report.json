@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "analysis": "Phase 17 Task 2: Currier B Structure Comparison",
+    "timestamp": "2025-12-30T15:38:45.804517",
+    "currier_a_entries": 114,
+    "currier_b_entries": 83
+  },
+  "currier_b_structure_tests": {
+    "2_part": {
+      "n_parts": 2,
+      "analyzed_entries": 83,
+      "enriched_prefixes_per_part": {
+        "1": 0,
+        "2": 0
+      },
+      "total_enriched": 0,
+      "max_enrichment_per_part": {
+        "1": 1.767,
+        "2": 1.712
+      },
+      "position_entropy": {
+        "1": 4.833,
+        "2": 4.874
+      },
+      "part_totals": {
+        "1": 14580,
+        "2": 14624
+      }
+    },
+    "3_part": {
+      "n_parts": 3,
+      "analyzed_entries": 83,
+      "enriched_prefixes_per_part": {
+        "1": 3,
+        "2": 1,
+        "3": 3
+      },
+      "total_enriched": 7,
+      "max_enrichment_per_part": {
+        "1": 2.579,
+        "2": 2.006,
+        "3": 2.386
+      },
+      "position_entropy": {
+        "1": 4.806,
+        "2": 4.859,
+        "3": 4.872
+      },
+      "part_totals": {
+        "1": 9706,
+        "2": 9706,
+        "3": 9792
+      }
+    },
+    "4_part": {
+      "n_parts": 4,
+      "analyzed_entries": 83,
+      "enriched_prefixes_per_part": {
+        "1": 7,
+        "2": 3,
+        "3": 3,
+        "4": 4
+      },
+      "total_enriched": 17,
+      "max_enrichment_per_part": {
+        "1": 3.445,
+        "2": 3.215,
+        "3": 3.215,
+        "4": 2.63
+      },
+      "position_entropy": {
+        "1": 4.82,
+        "2": 4.814,
+        "3": 4.843,
+        "4": 4.877
+      },
+      "part_totals": {
+        "1": 7267,
+        "2": 7267,
+        "3": 7267,
+        "4": 7403
+      }
+    }
+  },
+  "currier_b_position_analysis": {
+    "opening_closing_divergence": 0.0356,
+    "opening_prefixes": [
+      {
+        "prefix": "yp",
+        "enrichment": 2.438
+      },
+      {
+        "prefix": "fo",
+        "enrichment": 2.261
+      },
+      {
+        "prefix": "pd",
+        "enrichment": 2.048
+      },
+      {
+        "prefix": "yl",
+        "enrichment": 1.832
+      },
+      {
+        "prefix": "om",
+        "enrichment": 1.832
+      },
+      {
+        "prefix": "do",
+        "enrichment": 1.689
+      },
+      {
+        "prefix": "of",
+        "enrichment": 1.633
+      },
+      {
+        "prefix": "fc",
+        "enrichment": 1.604
+      },
+      {
+        "prefix": "as",
+        "enrichment": 1.53
+      },
+      {
+        "prefix": "oc",
+        "enrichment": 1.516
+      }
+    ],
+    "closing_prefixes": [
+      {
+        "prefix": "oo",
+        "enrichment": 3.014
+      },
+      {
+        "prefix": "oq",
+        "enrichment": 2.612
+      },
+      {
+        "prefix": "le",
+        "enrichment": 2.512
+      },
+      {
+        "prefix": "ya",
+        "enrichment": 1.827
+      },
+      {
+        "prefix": "ss",
+        "enrichment": 1.782
+      },
+      {
+        "prefix": "ys",
+        "enrichment": 1.773
+      },
+      {
+        "prefix": "ac",
+        "enrichment": 1.747
+      },
+      {
+        "prefix": "ly",
+        "enrichment": 1.674
+      },
+      {
+        "prefix": "om",
+        "enrichment": 1.586
+      },
+      {
+        "prefix": "ak",
+        "enrichment": 1.507
+      }
+    ],
+    "interpretation": "LOW divergence (continuous)",
+    "bin_totals": {
+      "0": 2960,
+      "1": 2912,
+      "2": 2927,
+      "3": 2913,
+      "4": 2912,
+      "5": 2926,
+      "6": 2926,
+      "7": 2914,
+      "8": 2925,
+      "9": 2889
+    }
+  },
+  "a_vs_b_comparison": {
+    "currier_a": {
+      "entry_count": 114,
+      "mean_length": 124.2,
+      "std_length": 69.1,
+      "cv_length": 0.557,
+      "best_part_structure": 4,
+      "enriched_prefixes_at_best": 21,
+      "opening_closing_divergence": 0.0893,
+      "opening_prefix_count": 10,
+      "closing_prefix_count": 6
+    },
+    "currier_b": {
+      "entry_count": 83,
+      "mean_length": 351.9,
+      "std_length": 201.6,
+      "cv_length": 0.573,
+      "best_part_structure": 4,
+      "enriched_prefixes_at_best": 17,
+      "opening_closing_divergence": 0.0356,
+      "opening_prefix_count": 10,
+      "closing_prefix_count": 10
+    },
+    "comparison": {
+      "b_to_a_length_ratio": 2.83,
+      "structure_difference": "SAME",
+      "b_more_continuous": "True",
+      "heading_vocabulary_comparison": {
+        "a_opening_prefixes": 10,
+        "b_opening_prefixes": 10,
+        "a_has_more_distinct_openings": false
+      }
+    }
+  },
+  "vocabulary_overlap_by_position": {
+    "opening": {
+      "shared_count": 447,
+      "only_a_count": 1160,
+      "only_b_count": 1866,
+      "jaccard": 0.129,
+      "shared_examples": [
+        "qokeod",
+        "osal",
+        "daiin",
+        "ok",
+        "qoteeol",
+        "otaldy",
+        "otar",
+        "choky",
+        "chokam",
+        "cheo",
+        "doiin",
+        "ocphy",
+        "dcheo",
+        "qoor",
+        "okam",
+        "loiin",
+        "chs",
+        "dold",
+        "qo",
+        "soaiin"
+      ]
+    },
+    "middle": {
+      "shared_count": 1003,
+      "only_a_count": 2265,
+      "only_b_count": 3934,
+      "jaccard": 0.139,
+      "shared_examples": [
+        "kcheo",
+        "shecthy",
+        "chctho",
+        "qotaiir",
+        "ydam",
+        "che**",
+        "qokeod",
+        "choar",
+        "ch*ky",
+        "cheeody",
+        "ychain",
+        "daiin",
+        "ok",
+        "qoteeol",
+        "soraiin",
+        "okaldy",
+        "toldy",
+        "chcthaiin",
+        "choror",
+        "tchoky"
+      ]
+    },
+    "closing": {
+      "shared_count": 428,
+      "only_a_count": 1005,
+      "only_b_count": 1768,
+      "jaccard": 0.134,
+      "shared_examples": [
+        "shecthy",
+        "olchedy",
+        "cheeody",
+        "daiin",
+        "ok",
+        "soraiin",
+        "ytchol",
+        "otar",
+        "okeeol",
+        "choky",
+        "cheo",
+        "dcheo",
+        "qoor",
+        "okam",
+        "qoteeey",
+        "chs",
+        "sosar",
+        "aiiin",
+        "okeo",
+        "olkeey"
+      ]
+    }
+  },
+  "currier_b_structure_determination": {
+    "structure_type": "THREE_PART",
+    "structure_clarity": "CLEAR",
+    "evidence": {
+      "3_part_enriched": 7,
+      "2_part_enriched": 0,
+      "opening_closing_divergence": 0.0356
+    },
+    "interpretation": "Currier B shows THREE_PART structure with CLEAR evidence"
+  },
+  "summary": {
+    "key_findings": [
+      "Currier B has 83 entries averaging 351.9 words",
+      "B entries are 2.83x longer than A",
+      "B structure type: THREE_PART (CLEAR)",
+      "B has 10 opening-specific prefixes vs A's 10",
+      "Opening vocabulary Jaccard (A-B): 0.129",
+      "Middle vocabulary Jaccard (A-B): 0.139",
+      "B is MORE continuous than A"
+    ],
+    "structural_differences": {
+      "A_has_clearer_3_part": true,
+      "A_has_more_distinct_openings": false,
+      "entries_are_different_length": "True"
+    },
+    "constraints_for_decipherment": [
+      "Currier B has different structure than A",
+      "B structure is THREE_PART",
+      "B entries are 2.83x longer",
+      "A and B share vocabulary but distribution differs by position"
+    ]
+  }
+}

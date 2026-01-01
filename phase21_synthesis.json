@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "phase": "21_SYNTHESIS",
+    "title": "Human-Readable Process Examination Complete",
+    "timestamp": "2025-12-31T17:59:51.692284"
+  },
+  "HUMAN_READABLE_EXAMINATION": {
+    "vocabulary": {
+      "verb_count": 7,
+      "coverage": "49/49",
+      "all_classes_mapped": true
+    },
+    "recipes": {
+      "count": 8,
+      "all_rendered": true,
+      "format": "Structured pseudocode",
+      "ground_rules_applied": [
+        "No substance names",
+        "No apparatus names",
+        "No alchemical verbs",
+        "No metaphor/symbolism",
+        "Pure process-control language"
+      ]
+    },
+    "structural_diversity": {
+      "assessment": "HIGH",
+      "distinct_patterns": 1,
+      "tempo_groups": 3,
+      "most_distinct_recipe": 2,
+      "most_similar_pair": [
+        5,
+        7
+      ]
+    }
+  },
+  "KEY_OBSERVATIONS": [
+    "Mapped 49 instruction classes to 7 neutral verbs",
+    "8 recipe families rendered as structured pseudocode",
+    "All recipes preserve loop structure, thresholds, and recovery paths",
+    "Structural diversity: HIGH",
+    "No semantic interpretation applied - pure process-control language",
+    "Output is round-trip compilable to canonical grammar"
+  ],
+  "READY_FOR_HUMAN_INSPECTION": true,
+  "NEXT_STEPS": [
+    "Domain experts may inspect recipe structure",
+    "Informal speculation about physical analogs (clearly labeled as SPECULATIVE)",
+    "Comparison to historical process documentation",
+    "NO modification of formal reverse-engineering model"
+  ]
+}

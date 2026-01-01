@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "phase": "13B",
+    "title": "State Transition Grammar",
+    "timestamp": "2025-12-31T13:47:46.014204"
+  },
+  "transition_matrix_summary": {
+    "states": 4,
+    "operators": 29,
+    "total_transitions_recorded": 7946
+  },
+  "reversible_pairs": {
+    "count": 3,
+    "examples": [
+      {
+        "states": [
+          "STATE-A",
+          "STATE-C"
+        ],
+        "forward_ops": [
+          [
+            "qo",
+            11
+          ]
+        ],
+        "backward_ops": [
+          [
+            "ok",
+            6
+          ],
+          [
+            "qo",
+            7
+          ]
+        ]
+      },
+      {
+        "states": [
+          "STATE-B",
+          "STATE-C"
+        ],
+        "forward_ops": [
+          [
+            "sh",
+            9
+          ],
+          [
+            "ok",
+            6
+          ],
+          [
+            "qo",
+            20
+          ]
+        ],
+        "backward_ops": [
+          [
+            "or",
+            17
+          ]
+        ]
+      },
+      {
+        "states": [
+          "STATE-C",
+          "STATE-D"
+        ],
+        "forward_ops": [
+          [
+            "ol",
+            6
+          ],
+          [
+            "sh",
+            163
+          ],
+          [
+            "da",
+            6
+          ]
+        ],
+        "backward_ops": [
+          [
+            "ol",
+            21
+          ],
+          [
+            "or",
+            19
+          ],
+          [
+            "sh",
+            31
+          ]
+        ]
+      }
+    ]
+  },
+  "forbidden_transitions": {
+    "count": 2,
+    "examples": [
+      [
+        "STATE-A",
+        "STATE-B"
+      ],
+      [
+        "STATE-B",
+        "STATE-A"
+      ]
+    ]
+  },
+  "state_flow_classification": {
+    "STATE-A": "oscillatory",
+    "STATE-B": "oscillatory",
+    "STATE-C": "oscillatory",
+    "STATE-D": "oscillatory"
+  },
+  "state_classification_counts": {
+    "oscillatory": 4
+  },
+  "PURIFICATION_ENGINE_SIGNATURE": "NO",
+  "signature_components": {
+    "has_absorbing_states": false,
+    "has_oscillatory_core": true,
+    "has_forbidden_zones": true
+  }
+}

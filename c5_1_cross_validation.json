@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "phase": "C5.1",
+    "title": "Visual-Classifier-Citation Alignment",
+    "timestamp": "2025-12-30T22:11:43.490969"
+  },
+  "category_alignment": {
+    "tolor": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "fochor": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 5,
+      "cocit_cluster": null
+    },
+    "otchal": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "koaiin": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "sho": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": true,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": 1
+    },
+    "paiin": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": true,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": 1
+    },
+    "poldchody": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "poshody": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "podairol": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 4,
+      "cocit_cluster": null
+    },
+    "kocheor": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 5,
+      "cocit_cluster": null
+    },
+    "korary": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 5,
+      "cocit_cluster": null
+    },
+    "kooiin": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "kydainy": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "pchooiin": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "kshody": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "fcholdy": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "tshol": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "okchop": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "pchafdan": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "cthscthain": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "pysaiinor": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 5,
+      "cocit_cluster": null
+    },
+    "kcheodaiin": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "fshody": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "pdrairdy": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 3,
+      "cocit_cluster": null
+    },
+    "tydlo": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "faiis": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "psheot": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "tchodar": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    },
+    "r*": {
+      "has_visual": true,
+      "has_classifier_cluster": true,
+      "has_cocit_cluster": false,
+      "visual_consistency": 1.0,
+      "classifier_cluster": 1,
+      "cocit_cluster": null
+    }
+  },
+  "global_alignment": {
+    "visual_classifier_correlation": {
+      "1": 1.0,
+      "5": 1.0,
+      "3": 1.0,
+      "4": 1.0
+    },
+    "interpretation": "PARTIAL_ALIGNMENT"
+  },
+  "summary": {
+    "categories_with_all_data": 29,
+    "mean_visual_consistency": 1.0,
+    "alignment_assessment": "PARTIAL_ALIGNMENT"
+  }
+}

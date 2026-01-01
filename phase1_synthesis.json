@@ -1,0 +1,69 @@
+{
+  "phase": "Phase 1: daiin Abuse Battery",
+  "timestamp": "2025-12-31T09:50:18.017735",
+  "key_findings": [
+    {
+      "source": "experiment_0_control",
+      "finding": "daiin deletion similar to control - frequency-proportional effect"
+    },
+    {
+      "source": "experiment_0_control",
+      "finding": "Structure impact similar to control - no special structural role detected"
+    },
+    {
+      "source": "experiment_1_deletion",
+      "finding": "daiin appears in 97.5% of entries - confirms ubiquitous grammatical role"
+    },
+    {
+      "source": "experiment_1_deletion",
+      "finding": "Hub references SURVIVE daiin deletion - category structure independent of daiin"
+    },
+    {
+      "source": "experiment_2_scope",
+      "finding": "Average chunk length 39.7 - chunks larger than typical phrases"
+    },
+    {
+      "source": "experiment_3_clustering",
+      "finding": "2 hub words appear after daiin - daiin may introduce category references"
+    },
+    {
+      "source": "experiment_3_clustering",
+      "finding": "Low diversity (0.06) in post-daiin tokens - daiin may have restricted collocations"
+    },
+    {
+      "source": "experiment_3_clustering",
+      "finding": "Different tokens follow daiin in A vs B - section-specific content patterns"
+    },
+    {
+      "source": "experiment_4_replacement",
+      "finding": "Best fit: THIS (demonstrative - \"this plant\", \"this symptom\") with score 0.677"
+    },
+    {
+      "source": "experiment_4_replacement",
+      "finding": "Multiple plausible interpretations - daiin is ambiguous"
+    },
+    {
+      "source": "experiment_5_anti_daiin",
+      "finding": "Found 20 frequent words that NEVER appear near daiin - possible different grammatical class"
+    },
+    {
+      "source": "experiment_5_anti_daiin",
+      "finding": "Hubs in anti-daiin set: ['par'] - structural separation between categories and determiners"
+    },
+    {
+      "source": "experiment_5_anti_daiin",
+      "finding": "Anti-daiin words are longer (5.2 chars) - possibly different word class"
+    }
+  ],
+  "daiin_role_assessment": {
+    "grammatical": true,
+    "structural": false,
+    "scope_operator": false,
+    "determiner_like": false,
+    "avoids_hubs": true
+  },
+  "next_directions": [
+    "Map hub-daiin complementarity - may reveal syntactic layers"
+  ],
+  "resonance_score": "PENDING_HUMAN_ASSESSMENT"
+}

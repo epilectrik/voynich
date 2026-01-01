@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "title": "Pre-Coding Hypothesis Registration",
+    "phase": "Visual Coding Phase, Task 3",
+    "date": "2025-12-30",
+    "status": "LOCKED",
+    "purpose": "Register hypotheses BEFORE visual coding to prevent p-hacking",
+    "modification_policy": "NO MODIFICATIONS ALLOWED after visual coding begins"
+  },
+  "primary_hypotheses": {
+    "H1": {
+      "id": "H1",
+      "statement": "Prefix 'po' correlates with root features",
+      "prefix_tested": "po",
+      "visual_features_tested": ["root_present", "root_type"],
+      "rationale": "po is highly enriched in Part 1 (opening words). May mark root-defined entities.",
+      "pilot_coverage": {
+        "folios_with_po_heading": ["f11v", "f51v", "f23v"],
+        "count": 3
+      },
+      "success_criterion": {
+        "cramers_v_minimum": 0.3,
+        "null_percentile_minimum": 99,
+        "interpretation": "STRONG correlation if both criteria met"
+      },
+      "prediction": "Folios with 'po' heading prefix will show distinctive root morphology (e.g., BULBOUS or BRANCHING more frequently than other prefixes)"
+    },
+    "H2": {
+      "id": "H2",
+      "statement": "Prefix 'ch' correlates with leaf features",
+      "prefix_tested": "ch",
+      "visual_features_tested": ["leaf_present", "leaf_shape", "leaf_count_category"],
+      "rationale": "ch is the most common body prefix across both Currier A and B. May mark leafy plants.",
+      "pilot_coverage": {
+        "note": "ch appears as dominant body prefix in many entries, not just heading",
+        "test_approach": "Use part1_dominant_prefix or part2_dominant_prefix"
+      },
+      "success_criterion": {
+        "cramers_v_minimum": 0.3,
+        "null_percentile_minimum": 99,
+        "interpretation": "STRONG correlation if both criteria met"
+      },
+      "prediction": "Entries with 'ch' as dominant body prefix will show prominent leaf features"
+    },
+    "H3": {
+      "id": "H3",
+      "statement": "Prefix 'qo' correlates with flower features",
+      "prefix_tested": "qo",
+      "visual_features_tested": ["flower_present", "flower_shape", "flower_count"],
+      "rationale": "qo shows 2.6x enrichment in biological section. May mark flowering plants.",
+      "pilot_coverage": {
+        "note": "Check part dominant prefixes for qo",
+        "test_approach": "Use dominant prefix across parts"
+      },
+      "success_criterion": {
+        "cramers_v_minimum": 0.3,
+        "null_percentile_minimum": 99,
+        "interpretation": "STRONG correlation if both criteria met"
+      },
+      "prediction": "Entries with 'qo' as dominant prefix will show prominent flower features"
+    }
+  },
+  "secondary_hypotheses": {
+    "H4": {
+      "id": "H4",
+      "statement": "Prefix 'ko' correlates with leaf features",
+      "prefix_tested": "ko",
+      "visual_features_tested": ["leaf_present", "leaf_shape"],
+      "rationale": "ko appears frequently in heading words. 4 folios in pilot have ko heading.",
+      "pilot_coverage": {
+        "folios_with_ko_heading": ["f5v", "f45v", "f3v", "f29v"],
+        "count": 4
+      },
+      "success_criterion": {
+        "cramers_v_minimum": 0.2,
+        "null_percentile_minimum": 95,
+        "interpretation": "MODERATE correlation if criteria met"
+      },
+      "prediction": "Folios with 'ko' heading will show similar leaf patterns"
+    },
+    "H5": {
+      "id": "H5",
+      "statement": "Prefix 'ct' correlates with stem features",
+      "prefix_tested": "ct",
+      "visual_features_tested": ["stem_type", "stem_count"],
+      "rationale": "ct shows positional tendencies (final-position enrichment).",
+      "pilot_coverage": {
+        "folios_with_ct_heading": ["f30v"],
+        "count": 1,
+        "power_warning": "Only 1 folio - insufficient for reliable test"
+      },
+      "success_criterion": {
+        "cramers_v_minimum": 0.2,
+        "null_percentile_minimum": 95,
+        "interpretation": "MODERATE correlation if criteria met"
+      },
+      "prediction": "Low power - exploratory only"
+    },
+    "H6": {
+      "id": "H6",
+      "statement": "Prefix 'ok' correlates with stem or overall structure",
+      "prefix_tested": "ok",
+      "visual_features_tested": ["stem_type", "plant_symmetry"],
+      "rationale": "ok shows zodiac enrichment (1.9x). May mark structured plants.",
+      "pilot_coverage": {
+        "folios_with_ok_heading": ["f38v"],
+        "count": 1,
+        "power_warning": "Only 1 folio - insufficient for reliable test"
+      },
+      "success_criterion": {
+        "cramers_v_minimum": 0.2,
+        "null_percentile_minimum": 95,
+        "interpretation": "MODERATE correlation if criteria met"
+      },
+      "prediction": "Low power - exploratory only"
+    }
+  },
+  "structural_hypotheses": {
+    "S1": {
+      "id": "S1",
+      "statement": "Hub entities have simpler illustrations than isolated entries",
+      "test_method": "Compare overall_complexity scores between HUB and ISOLATED groups",
+      "groups": {
+        "HUB": ["f42r", "f10v"],
+        "ISOLATED": ["all other 28 folios"]
+      },
+      "rationale": "Foundational entities (frequently referenced) may depict common/simple plants",
+      "prediction": "HUB entries will have lower complexity scores on average",
+      "caveat": "Only 2 HUB entries - limited statistical power"
+    },
+    "S2": {
+      "id": "S2",
+      "statement": "Isolated early folios have distinct visual profiles",
+      "test_method": "Compare visual feature distributions between early isolated and rest",
+      "groups": {
+        "early_isolated": ["f2r", "f3v", "f4v", "f5r", "f5v"],
+        "rest": ["remaining 25 folios"]
+      },
+      "rationale": "Early folios never referenced by B - may be introductory or different content",
+      "prediction": "Early isolated folios may show different root/leaf/flower distributions"
+    },
+    "S3": {
+      "id": "S3",
+      "statement": "Heading prefix predicts overall illustration type",
+      "test_method": "Cluster folios by visual features, compare to heading prefix groups",
+      "rationale": "If prefixes encode morphological information, visual clusters should align",
+      "prediction": "Folios with same heading prefix will cluster together visually"
+    }
+  },
+  "null_predictions": {
+    "description": "Expected results if NO visual-text correlation exists",
+    "predictions": [
+      "Visual features distributed randomly across prefix categories",
+      "No significant chi-square results after Bonferroni correction",
+      "All correlations below 95th percentile of null model",
+      "Hub vs isolated entries have similar complexity distributions",
+      "No clustering by heading prefix in visual feature space"
+    ],
+    "implication": "If null predictions hold, visual features do not track text prefixes"
+  },
+  "pre_registration_commitment": {
+    "analysis_plan": "Run all tests specified above with no modifications",
+    "correction_method": "Bonferroni correction for multiple comparisons",
+    "null_model": "1000 permutations shuffling visual assignments",
+    "reporting": "Report ALL results, including negative findings",
+    "success_criteria": {
+      "overall_success": ">=3 correlations at p<0.01 (Bonferroni) AND >=1 at null 99th percentile",
+      "partial_success": "1-2 significant correlations",
+      "failure": "<1 significant correlation or all explained by null model"
+    }
+  },
+  "pilot_prefix_coverage": {
+    "heading_prefixes_in_pilot": {
+      "po": 3,
+      "ko": 4,
+      "pc": 2,
+      "to": 1,
+      "fc": 1,
+      "ts": 1,
+      "pa": 1,
+      "ok": 1,
+      "ks": 1,
+      "ct": 1,
+      "py": 1,
+      "fo": 1,
+      "cp": 1,
+      "kc": 1,
+      "fs": 1,
+      "pd": 1,
+      "ty": 1,
+      "fa": 1,
+      "ky": 1,
+      "ps": 1,
+      "tc": 1,
+      "ot": 1,
+      "sh": 1,
+      "r*": 1
+    },
+    "prefixes_with_power": {
+      ">=3_folios": ["po", "ko"],
+      "2_folios": ["pc"],
+      "1_folio": ["all others"]
+    },
+    "power_assessment": "Only po (3) and ko (4) have sufficient representation for reliable prefix-specific tests"
+  }
+}

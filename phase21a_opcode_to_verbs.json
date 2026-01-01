@@ -1,0 +1,1179 @@
+{
+  "metadata": {
+    "phase": "21A",
+    "title": "Opcode to Verb Mapping",
+    "timestamp": "2025-12-31T17:59:51.683665"
+  },
+  "verb_set": {
+    "count": 7,
+    "verbs": [
+      "ANCHOR_STATE",
+      "APPLY_ENERGY",
+      "CONTINUE_CYCLE",
+      "LINK",
+      "SET_RATE",
+      "SHIFT_MODE",
+      "SUSTAIN_ENERGY"
+    ],
+    "definitions": {
+      "ANCHOR_STATE": "Lock onto stable state",
+      "APPLY_ENERGY": "Initiate energy input to the system",
+      "CONTINUE_CYCLE": "Proceed with cycle iteration",
+      "LINK": "Connect operations in sequence",
+      "SET_RATE": "Configure flow/transfer rate",
+      "SHIFT_MODE": "Transition between modes",
+      "SUSTAIN_ENERGY": "Maintain current energy level"
+    }
+  },
+  "mappings": [
+    {
+      "class_id": 1,
+      "members": [
+        "qokaly",
+        "qokeed",
+        "qokair",
+        "qoeey",
+        "qotam",
+        "qopchy",
+        "qoteol",
+        "qodar"
+      ],
+      "member_count": 8,
+      "representative": "qokaly",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY"
+      },
+      "frequency": 346
+    },
+    {
+      "class_id": 2,
+      "members": [
+        "shky",
+        "chty",
+        "shes",
+        "chan",
+        "choy",
+        "shek",
+        "shod",
+        "shee"
+      ],
+      "member_count": 8,
+      "representative": "shky",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE"
+      },
+      "frequency": 317
+    },
+    {
+      "class_id": 3,
+      "members": [
+        "sheeky",
+        "choly",
+        "choiin",
+        "sheos",
+        "chkeey",
+        "chodar",
+        "chory",
+        "cheeor",
+        "shedal",
+        "cheeo",
+        "sheeol",
+        "chkal",
+        "chkar"
+      ],
+      "member_count": 13,
+      "representative": "sheeky",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 551
+    },
+    {
+      "class_id": 4,
+      "members": [
+        "qolchey",
+        "chotchy",
+        "cheodaiin",
+        "chckhedy",
+        "qokshedy",
+        "qokechy",
+        "chedain",
+        "shocthy",
+        "chokeey",
+        "checkhey",
+        "cheeody",
+        "chotar",
+        "qokeeol",
+        "qolchedy",
+        "chcphy"
+      ],
+      "member_count": 15,
+      "representative": "qolchey",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 553
+    },
+    {
+      "class_id": 5,
+      "members": [
+        "qotchdy",
+        "qockhey",
+        "qotchey",
+        "qotchedy",
+        "qokchol",
+        "qopchdy",
+        "qokeeody",
+        "qotchol",
+        "qotchor"
+      ],
+      "member_count": 9,
+      "representative": "qotchdy",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY",
+        "SUFFIX": "VARIANT"
+      },
+      "frequency": 488
+    },
+    {
+      "class_id": 6,
+      "members": [
+        "shodaiin",
+        "shecthy",
+        "chkaiin",
+        "chocthy",
+        "chokchy",
+        "chockhy",
+        "chokaiin",
+        "shedaiin",
+        "chdaiin",
+        "chckhdy",
+        "shckhey"
+      ],
+      "member_count": 11,
+      "representative": "shodaiin",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SUFFIX": "EXTENDED",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 658
+    },
+    {
+      "class_id": 7,
+      "members": [
+        "qokaiin",
+        "qokeedy",
+        "qokedy",
+        "qokeey",
+        "qokain",
+        "qotedy",
+        "qotaiin",
+        "qoteedy",
+        "qokchy",
+        "qotchy",
+        "qokchdy"
+      ],
+      "member_count": 11,
+      "representative": "qokaiin",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "SUSTAIN_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY",
+        "SUFFIX": "EXTENDED",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 6376
+    },
+    {
+      "class_id": 8,
+      "members": [
+        "qotal",
+        "qotar",
+        "qokeol",
+        "qotain",
+        "qotol",
+        "qoteey",
+        "qokor"
+      ],
+      "member_count": 7,
+      "representative": "qotal",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY",
+        "SUFFIX": "TERMINAL"
+      },
+      "frequency": 1075
+    },
+    {
+      "class_id": 9,
+      "members": [
+        "qokal",
+        "qol",
+        "qokar",
+        "qoky",
+        "qokey",
+        "qokol",
+        "qoty"
+      ],
+      "member_count": 7,
+      "representative": "qokal",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "SUSTAIN_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY",
+        "SUFFIX": "TERMINAL"
+      },
+      "frequency": 3207
+    },
+    {
+      "class_id": 10,
+      "members": [
+        "chey",
+        "shey",
+        "chor",
+        "shol",
+        "chy",
+        "chdy",
+        "sho",
+        "shy",
+        "shor",
+        "char",
+        "cheo"
+      ],
+      "member_count": 11,
+      "representative": "chey",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "SUSTAIN_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 5962
+    },
+    {
+      "class_id": 11,
+      "members": [
+        "cheky",
+        "shody",
+        "chear",
+        "sheor",
+        "shdy",
+        "chal",
+        "sheo",
+        "sheky",
+        "choty",
+        "choky",
+        "chos",
+        "shar",
+        "ches",
+        "chees",
+        "cheal"
+      ],
+      "member_count": 15,
+      "representative": "cheky",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 2104
+    },
+    {
+      "class_id": 12,
+      "members": [
+        "cheey",
+        "cheol",
+        "chckhy",
+        "sheey",
+        "sheol",
+        "cheor",
+        "chody",
+        "sheedy",
+        "chcthy",
+        "cheody",
+        "shckhy",
+        "cheedy",
+        "chaiin",
+        "sheody"
+      ],
+      "member_count": 14,
+      "representative": "cheey",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "SUSTAIN_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 4443
+    },
+    {
+      "class_id": 13,
+      "members": [
+        "cham",
+        "shed",
+        "ched",
+        "chdar",
+        "chky",
+        "chain",
+        "chdal",
+        "shal",
+        "sheal",
+        "chom"
+      ],
+      "member_count": 10,
+      "representative": "cham",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE"
+      },
+      "frequency": 610
+    },
+    {
+      "class_id": 14,
+      "members": [
+        "daly",
+        "dary",
+        "aly",
+        "ary"
+      ],
+      "member_count": 4,
+      "representative": "daly",
+      "functional_role": "FLOW_OPERATOR",
+      "verb": "SET_RATE",
+      "modifiers": {
+        "PREFIX": "LINK"
+      },
+      "frequency": 354
+    },
+    {
+      "class_id": 15,
+      "members": [
+        "qo",
+        "she",
+        "chl",
+        "qor",
+        "sh",
+        "chs"
+      ],
+      "member_count": 6,
+      "representative": "qo",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY"
+      },
+      "frequency": 451
+    },
+    {
+      "class_id": 16,
+      "members": [
+        "checkhy",
+        "chodaiin",
+        "qodaiin",
+        "sheckhy",
+        "chckhey",
+        "chedaiin",
+        "qokchedy",
+        "checthy",
+        "qokeody",
+        "qopchedy",
+        "qokchey",
+        "qokeeey"
+      ],
+      "member_count": 12,
+      "representative": "checkhy",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 1383
+    },
+    {
+      "class_id": 17,
+      "members": [
+        "shcthy",
+        "cheos",
+        "chedar",
+        "chety",
+        "cheeky",
+        "shear",
+        "chedal",
+        "shaiin"
+      ],
+      "member_count": 8,
+      "representative": "shcthy",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE"
+      },
+      "frequency": 659
+    },
+    {
+      "class_id": 18,
+      "members": [
+        "qokam",
+        "qotor",
+        "qoaiin",
+        "qotey",
+        "qokeor",
+        "qockhy",
+        "qokeeo",
+        "qoeedy",
+        "qody"
+      ],
+      "member_count": 9,
+      "representative": "qokam",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "APPLY_ENERGY",
+      "modifiers": {
+        "PREFIX": "ENERGY"
+      },
+      "frequency": 632
+    },
+    {
+      "class_id": 19,
+      "members": [
+        "ychey",
+        "orain",
+        "lshey",
+        "ychor",
+        "tchol",
+        "lchdy",
+        "ytchy",
+        "cphol",
+        "tchdy",
+        "teedy",
+        "opchy",
+        "ockhy",
+        "odain"
+      ],
+      "member_count": 13,
+      "representative": "ychey",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SCOPE": "BROAD"
+      },
+      "frequency": 668
+    },
+    {
+      "class_id": 20,
+      "members": [
+        "teey",
+        "lky",
+        "rain",
+        "orol",
+        "ror",
+        "yky",
+        "cphy",
+        "key",
+        "teol",
+        "ytal",
+        "ykal",
+        "kair",
+        "ytol",
+        "oar",
+        "odal",
+        "ytor",
+        "ytey",
+        "ytam",
+        "ram",
+        "ykol"
+      ],
+      "member_count": 20,
+      "representative": "teey",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SCOPE": "BROAD"
+      },
+      "frequency": 968
+    },
+    {
+      "class_id": 21,
+      "members": [
+        "opchdy",
+        "ykeody",
+        "ycheol",
+        "lkchedy",
+        "yteody",
+        "ytchor",
+        "dcheey",
+        "rchedy",
+        "ypchedy",
+        "pcheol",
+        "ychedy",
+        "pchedar",
+        "ykeeody",
+        "lcheey",
+        "fchedy",
+        "opaiin"
+      ],
+      "member_count": 16,
+      "representative": "opchdy",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SUFFIX": "VARIANT",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 662
+    },
+    {
+      "class_id": 22,
+      "members": [
+        "laiin",
+        "ykeol",
+        "yshey",
+        "doiin",
+        "ycheo",
+        "pchor",
+        "dshor",
+        "dshey",
+        "octhy",
+        "ychol",
+        "keeol",
+        "tain",
+        "pchey",
+        "sary",
+        "pchdy",
+        "ckhor",
+        "tey",
+        "dsho",
+        "opar",
+        "orar",
+        "tair"
+      ],
+      "member_count": 21,
+      "representative": "laiin",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SUFFIX": "EXTENDED",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 804
+    },
+    {
+      "class_id": 23,
+      "members": [
+        "olkal",
+        "olkey",
+        "oteo",
+        "olain",
+        "okeal",
+        "okeo",
+        "oteeo",
+        "olar",
+        "okary",
+        "olchy",
+        "okees"
+      ],
+      "member_count": 11,
+      "representative": "olkal",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "LINK",
+        "SUFFIX": "TERMINAL",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 414
+    },
+    {
+      "class_id": 24,
+      "members": [
+        "cthody",
+        "cthaiin",
+        "olshey",
+        "ctheey",
+        "cthedy"
+      ],
+      "member_count": 5,
+      "representative": "cthody",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SUFFIX": "VARIANT"
+      },
+      "frequency": 233
+    },
+    {
+      "class_id": 25,
+      "members": [
+        "okeeol",
+        "okody",
+        "okeeo",
+        "okchol",
+        "otody",
+        "okeeor",
+        "okeeody",
+        "oteor",
+        "oteeody",
+        "otedar",
+        "otshedy"
+      ],
+      "member_count": 11,
+      "representative": "okeeol",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SUFFIX": "TERMINAL",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 474
+    },
+    {
+      "class_id": 26,
+      "members": [
+        "dan",
+        "aral",
+        "aldy",
+        "daim",
+        "ot",
+        "arol",
+        "arody"
+      ],
+      "member_count": 7,
+      "representative": "dan",
+      "functional_role": "FLOW_OPERATOR",
+      "verb": "SET_RATE",
+      "modifiers": {
+        "PREFIX": "LINK"
+      },
+      "frequency": 301
+    },
+    {
+      "class_id": 27,
+      "members": [
+        "okeeey",
+        "okchdy",
+        "okair",
+        "otair",
+        "daiir",
+        "okaly",
+        "okchor",
+        "okeor",
+        "oteos",
+        "otchor",
+        "otaly",
+        "daiiin",
+        "daldy",
+        "araiin"
+      ],
+      "member_count": 14,
+      "representative": "okeeey",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 896
+    },
+    {
+      "class_id": 28,
+      "members": [
+        "dy",
+        "s",
+        "l",
+        "d"
+      ],
+      "member_count": 4,
+      "representative": "dy",
+      "functional_role": "FREQUENT_OPERATOR",
+      "verb": "CONTINUE_CYCLE",
+      "modifiers": {
+        "SUFFIX": "VARIANT"
+      },
+      "frequency": 2146
+    },
+    {
+      "class_id": 29,
+      "members": [
+        "dar",
+        "dal",
+        "dain",
+        "otal",
+        "oteey",
+        "cho"
+      ],
+      "member_count": 6,
+      "representative": "dar",
+      "functional_role": "FLOW_OPERATOR",
+      "verb": "SET_RATE",
+      "modifiers": {
+        "PREFIX": "LINK"
+      },
+      "frequency": 3632
+    },
+    {
+      "class_id": 30,
+      "members": [
+        "chol",
+        "ar"
+      ],
+      "member_count": 2,
+      "representative": "chol",
+      "functional_role": "FLOW_OPERATOR",
+      "verb": "SET_RATE",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SUFFIX": "TERMINAL"
+      },
+      "frequency": 2318
+    },
+    {
+      "class_id": 31,
+      "members": [
+        "chedy",
+        "shedy",
+        "al"
+      ],
+      "member_count": 3,
+      "representative": "chedy",
+      "functional_role": "ENERGY_OPERATOR",
+      "verb": "SUSTAIN_ENERGY",
+      "modifiers": {
+        "PREFIX": "PHASE",
+        "SUFFIX": "VARIANT"
+      },
+      "frequency": 4013
+    },
+    {
+      "class_id": 32,
+      "members": [
+        "daiin"
+      ],
+      "member_count": 1,
+      "representative": "daiin",
+      "functional_role": "CORE_CONTROL",
+      "verb": "ANCHOR_STATE",
+      "modifiers": {
+        "PREFIX": "LINK",
+        "SUFFIX": "EXTENDED",
+        "SCOPE": "UNIQUE"
+      },
+      "frequency": 3020
+    },
+    {
+      "class_id": 33,
+      "members": [
+        "ol"
+      ],
+      "member_count": 1,
+      "representative": "ol",
+      "functional_role": "CORE_CONTROL",
+      "verb": "ANCHOR_STATE",
+      "modifiers": {
+        "PREFIX": "LINK",
+        "SUFFIX": "TERMINAL",
+        "SCOPE": "UNIQUE"
+      },
+      "frequency": 1732
+    },
+    {
+      "class_id": 34,
+      "members": [
+        "aiin",
+        "o"
+      ],
+      "member_count": 2,
+      "representative": "aiin",
+      "functional_role": "HIGH_IMPACT",
+      "verb": "SHIFT_MODE",
+      "modifiers": {
+        "SUFFIX": "EXTENDED"
+      },
+      "frequency": 1605
+    },
+    {
+      "class_id": 35,
+      "members": [
+        "or"
+      ],
+      "member_count": 1,
+      "representative": "or",
+      "functional_role": "FREQUENT_OPERATOR",
+      "verb": "CONTINUE_CYCLE",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SCOPE": "UNIQUE"
+      },
+      "frequency": 1103
+    },
+    {
+      "class_id": 36,
+      "members": [
+        "okeody",
+        "otchey",
+        "okchey",
+        "oteody",
+        "otchol",
+        "otchdy",
+        "otchedy",
+        "okchedy"
+      ],
+      "member_count": 8,
+      "representative": "okeody",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SUFFIX": "VARIANT"
+      },
+      "frequency": 788
+    },
+    {
+      "class_id": 37,
+      "members": [
+        "olaiin",
+        "olchedy",
+        "olkeedy",
+        "olkaiin",
+        "olkeey",
+        "olkedy",
+        "olchey",
+        "olkain",
+        "olshedy"
+      ],
+      "member_count": 9,
+      "representative": "olaiin",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "LINK",
+        "SUFFIX": "EXTENDED"
+      },
+      "frequency": 1109
+    },
+    {
+      "class_id": 38,
+      "members": [
+        "okaiin",
+        "otaiin",
+        "okeey",
+        "otedy",
+        "okedy",
+        "okain",
+        "okeedy",
+        "oteedy"
+      ],
+      "member_count": 8,
+      "representative": "okaiin",
+      "functional_role": "FREQUENT_OPERATOR",
+      "verb": "CONTINUE_CYCLE",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SUFFIX": "EXTENDED"
+      },
+      "frequency": 3832
+    },
+    {
+      "class_id": 39,
+      "members": [
+        "okal",
+        "otar",
+        "okar",
+        "oty",
+        "dair",
+        "oky",
+        "dam",
+        "otol",
+        "okol",
+        "okey",
+        "otey"
+      ],
+      "member_count": 11,
+      "representative": "okal",
+      "functional_role": "FREQUENT_OPERATOR",
+      "verb": "CONTINUE_CYCLE",
+      "modifiers": {
+        "PREFIX": "OUTPUT",
+        "SUFFIX": "TERMINAL",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 3573
+    },
+    {
+      "class_id": 40,
+      "members": [
+        "cthy",
+        "cthol",
+        "oly",
+        "cthey",
+        "cthor"
+      ],
+      "member_count": 5,
+      "representative": "cthy",
+      "functional_role": "FREQUENT_OPERATOR",
+      "verb": "CONTINUE_CYCLE",
+      "modifiers": {},
+      "frequency": 1129
+    },
+    {
+      "class_id": 41,
+      "members": [
+        "otain",
+        "okeol",
+        "otchy",
+        "otam",
+        "oteol",
+        "otor",
+        "okchy",
+        "okor",
+        "okam"
+      ],
+      "member_count": 9,
+      "representative": "otain",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "OUTPUT"
+      },
+      "frequency": 1285
+    },
+    {
+      "class_id": 42,
+      "members": [
+        "ckhey",
+        "dchedy",
+        "oaiin",
+        "ytedy",
+        "ykeedy",
+        "lkedy",
+        "dchor",
+        "opchey",
+        "aiiin",
+        "yteedy",
+        "dchol",
+        "yteey",
+        "kchdy",
+        "ycheey",
+        "ykchy",
+        "ykedy",
+        "lkain",
+        "tchey",
+        "odar",
+        "kchor",
+        "kchol",
+        "keol",
+        "ydaiin",
+        "ytar",
+        "kchey",
+        "aiir",
+        "tchor",
+        "keody",
+        "ckhol",
+        "kchedy",
+        "soiin",
+        "dchey"
+      ],
+      "member_count": 32,
+      "representative": "ckhey",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SCOPE": "BROAD"
+      },
+      "frequency": 2512
+    },
+    {
+      "class_id": 43,
+      "members": [
+        "tedy",
+        "sain",
+        "kedy",
+        "keey",
+        "taiin",
+        "lchey",
+        "ckhy",
+        "lkeey",
+        "kain",
+        "ykar",
+        "dchy",
+        "kchy",
+        "lkar",
+        "sair",
+        "tchy",
+        "oiin"
+      ],
+      "member_count": 16,
+      "representative": "tedy",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SUFFIX": "VARIANT",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 1963
+    },
+    {
+      "class_id": 44,
+      "members": [
+        "saiin",
+        "lchedy",
+        "kaiin",
+        "raiin",
+        "odaiin",
+        "keedy",
+        "ykeey",
+        "lkaiin",
+        "oraiin",
+        "opchedy",
+        "ykaiin",
+        "ytaiin",
+        "lshedy",
+        "dshedy",
+        "lkeedy",
+        "pchedy",
+        "tchedy"
+      ],
+      "member_count": 17,
+      "representative": "saiin",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SUFFIX": "EXTENDED",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 3437
+    },
+    {
+      "class_id": 45,
+      "members": [
+        "y",
+        "r",
+        "am"
+      ],
+      "member_count": 3,
+      "representative": "y",
+      "functional_role": "FREQUENT_OPERATOR",
+      "verb": "CONTINUE_CYCLE",
+      "modifiers": {},
+      "frequency": 1047
+    },
+    {
+      "class_id": 46,
+      "members": [
+        "dol",
+        "sar",
+        "sol",
+        "ain",
+        "dor",
+        "air",
+        "sal",
+        "kar",
+        "sor",
+        "tol",
+        "ody",
+        "tar",
+        "lol",
+        "lor",
+        "kol"
+      ],
+      "member_count": 15,
+      "representative": "dol",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SUFFIX": "TERMINAL",
+        "SCOPE": "BROAD"
+      },
+      "frequency": 2965
+    },
+    {
+      "class_id": 47,
+      "members": [
+        "",
+        "ty",
+        "dl",
+        "om",
+        "ly",
+        "lo",
+        "ry",
+        "do",
+        "m"
+      ],
+      "member_count": 9,
+      "representative": "",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {},
+      "frequency": 475
+    },
+    {
+      "class_id": 48,
+      "members": [
+        "sy",
+        "kal",
+        "rol",
+        "ldy",
+        "os",
+        "yty",
+        "tor",
+        "kor",
+        "tal",
+        "rar",
+        "ky",
+        "pol",
+        "ral",
+        "ory"
+      ],
+      "member_count": 14,
+      "representative": "sy",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "SCOPE": "BROAD"
+      },
+      "frequency": 1109
+    },
+    {
+      "class_id": 49,
+      "members": [
+        "olor",
+        "oldy",
+        "olky",
+        "cthar",
+        "olol",
+        "ols",
+        "olkar",
+        "ctho"
+      ],
+      "member_count": 8,
+      "representative": "olor",
+      "functional_role": "AUXILIARY",
+      "verb": "LINK",
+      "modifiers": {
+        "PREFIX": "LINK"
+      },
+      "frequency": 584
+    }
+  ],
+  "coverage": "49/49",
+  "VOCABULARY_COMPLETE": true
+}

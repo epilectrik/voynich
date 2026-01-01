@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "phase": "16B",
+    "title": "Process Class Comparison",
+    "timestamp": "2025-12-31T15:26:15.648029"
+  },
+  "comparisons": {
+    "P1_REFLUX_DISTILLATION": {
+      "process": "Reflux Distillation / Azeotropic Systems",
+      "scores": {
+        "cycle_structure": 0.5,
+        "attractor_type": 1.0,
+        "reversibility": 1.0,
+        "forbidden_modes": 0.5,
+        "repetition_logic": 1.0,
+        "error_tolerance": 1.0,
+        "collapse_rate": 1.0
+      },
+      "total_score": 6.0,
+      "max_score": 7.0,
+      "percentage": 0.8571428571428571,
+      "alignments": [
+        "4-cycle structure matches",
+        "Single stable attractor matches",
+        "Reversibility 85% close to observed 95%",
+        "Forbidden count 17 somewhat matches range (3, 10)",
+        "Bimodal repetition matches",
+        "External termination matches",
+        "High error tolerance matches",
+        "High completion rate consistent with 97.7% collapse"
+      ],
+      "misalignments": [
+        "No 3-cycle structure"
+      ],
+      "verdict": "STRONG_MATCH"
+    },
+    "P2_FRACTIONAL_CRYSTALLIZATION": {
+      "process": "Fractional Crystallization with Back-cycling",
+      "scores": {
+        "cycle_structure": 1.0,
+        "attractor_type": 1.0,
+        "reversibility": 1.0,
+        "forbidden_modes": 0.5,
+        "repetition_logic": 1.0,
+        "error_tolerance": 0.0,
+        "collapse_rate": 1.0
+      },
+      "total_score": 5.5,
+      "max_score": 7.0,
+      "percentage": 0.7857142857142857,
+      "alignments": [
+        "4-cycle structure matches",
+        "3-cycle (tria prima) present",
+        "Single stable attractor matches",
+        "Reversibility 95% close to observed 95%",
+        "Forbidden count 17 somewhat matches range (4, 12)",
+        "Bimodal repetition matches",
+        "External termination matches",
+        "High completion rate consistent with 97.7% collapse"
+      ],
+      "misalignments": [
+        "Low error tolerance expected"
+      ],
+      "verdict": "PARTIAL_MATCH"
+    },
+    "P3_SOLVENT_EXTRACTION": {
+      "process": "Solvent Extraction with Re-equilibration",
+      "scores": {
+        "cycle_structure": 0.5,
+        "attractor_type": 1.0,
+        "reversibility": 1.0,
+        "forbidden_modes": 0.0,
+        "repetition_logic": 0.5,
+        "error_tolerance": 0.0,
+        "collapse_rate": 1.0
+      },
+      "total_score": 4.0,
+      "max_score": 7.0,
+      "percentage": 0.5714285714285714,
+      "alignments": [
+        "4-cycle structure matches",
+        "Single stable attractor matches",
+        "Reversibility 90% close to observed 95%",
+        "External termination matches",
+        "High completion rate consistent with 97.7% collapse"
+      ],
+      "misalignments": [
+        "No 3-cycle structure",
+        "17 forbidden transitions outside expected range (3, 8)",
+        "Uniform repetition expected",
+        "Low error tolerance expected"
+      ],
+      "verdict": "WEAK_MATCH"
+    },
+    "P4_FERMENTATION": {
+      "process": "Fermentation / Biochemical Process Control",
+      "scores": {
+        "cycle_structure": 1.0,
+        "attractor_type": 1.0,
+        "reversibility": 0.0,
+        "forbidden_modes": 1.0,
+        "repetition_logic": 1.0,
+        "error_tolerance": 1.0,
+        "collapse_rate": 0.5
+      },
+      "total_score": 5.5,
+      "max_score": 7.0,
+      "percentage": 0.7857142857142857,
+      "alignments": [
+        "4-cycle structure matches",
+        "3-cycle (tria prima) present",
+        "Single stable attractor matches",
+        "17 forbidden transitions within expected range (10, 30)",
+        "Bimodal repetition matches",
+        "External termination matches",
+        "High error tolerance matches",
+        "Partial collapse rate alignment"
+      ],
+      "misalignments": [
+        "Reversibility 60% differs from 95%"
+      ],
+      "verdict": "PARTIAL_MATCH"
+    },
+    "P5_METALLURGICAL_ANNEALING": {
+      "process": "Metallurgical Annealing / Tempering",
+      "scores": {
+        "cycle_structure": 1.0,
+        "attractor_type": 1.0,
+        "reversibility": 1.0,
+        "forbidden_modes": 0.5,
+        "repetition_logic": 1.0,
+        "error_tolerance": 0.0,
+        "collapse_rate": 1.0
+      },
+      "total_score": 5.5,
+      "max_score": 7.0,
+      "percentage": 0.7857142857142857,
+      "alignments": [
+        "4-cycle structure matches",
+        "3-cycle (tria prima) present",
+        "Single stable attractor matches",
+        "Reversibility 85% close to observed 95%",
+        "Forbidden count 17 somewhat matches range (5, 15)",
+        "Bimodal repetition matches",
+        "External termination matches",
+        "High completion rate consistent with 97.7% collapse"
+      ],
+      "misalignments": [
+        "Low error tolerance expected"
+      ],
+      "verdict": "PARTIAL_MATCH"
+    }
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "process_id": "P1_REFLUX_DISTILLATION",
+      "score": 6.0,
+      "verdict": "STRONG_MATCH"
+    },
+    {
+      "rank": 2,
+      "process_id": "P2_FRACTIONAL_CRYSTALLIZATION",
+      "score": 5.5,
+      "verdict": "PARTIAL_MATCH"
+    },
+    {
+      "rank": 3,
+      "process_id": "P4_FERMENTATION",
+      "score": 5.5,
+      "verdict": "PARTIAL_MATCH"
+    },
+    {
+      "rank": 4,
+      "process_id": "P5_METALLURGICAL_ANNEALING",
+      "score": 5.5,
+      "verdict": "PARTIAL_MATCH"
+    },
+    {
+      "rank": 5,
+      "process_id": "P3_SOLVENT_EXTRACTION",
+      "score": 4.0,
+      "verdict": "WEAK_MATCH"
+    }
+  ],
+  "best_match": {
+    "process_id": "P1_REFLUX_DISTILLATION",
+    "process_name": "Reflux Distillation / Azeotropic Systems",
+    "score": 6.0,
+    "verdict": "STRONG_MATCH",
+    "key_alignments": [
+      "4-cycle structure matches",
+      "Single stable attractor matches",
+      "Reversibility 85% close to observed 95%",
+      "Forbidden count 17 somewhat matches range (3, 10)",
+      "Bimodal repetition matches"
+    ],
+    "key_misalignments": [
+      "No 3-cycle structure"
+    ]
+  },
+  "process_definitions": {
+    "P1_REFLUX_DISTILLATION": {
+      "name": "Reflux Distillation / Azeotropic Systems",
+      "description": "Continuous vapor-liquid cycling for separation/purification"
+    },
+    "P2_FRACTIONAL_CRYSTALLIZATION": {
+      "name": "Fractional Crystallization with Back-cycling",
+      "description": "Temperature cycling for purification via repeated crystallization"
+    },
+    "P3_SOLVENT_EXTRACTION": {
+      "name": "Solvent Extraction with Re-equilibration",
+      "description": "Phase contact cycling for separation via partition"
+    },
+    "P4_FERMENTATION": {
+      "name": "Fermentation / Biochemical Process Control",
+      "description": "Living system maintenance within viable regime"
+    },
+    "P5_METALLURGICAL_ANNEALING": {
+      "name": "Metallurgical Annealing / Tempering",
+      "description": "Temperature cycling for phase transformation and stress relief"
+    }
+  }
+}

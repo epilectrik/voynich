@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "phase": "20B",
+    "title": "Parameter Scaling Analysis",
+    "timestamp": "2025-12-31T19:49:46.774691"
+  },
+  "scaling_type": "THRESHOLD",
+  "evidence": {
+    "mean_linear_correlation": 0.4238,
+    "mean_log_correlation": 0.4545,
+    "threshold_pattern_ratio": 0.92,
+    "tokens_with_thresholds": 46
+  },
+  "saturation_analysis": {
+    "saturation_candidates": [
+      {
+        "token": "daiin",
+        "max_reps": 73,
+        "mean_reps": 14.11,
+        "saturation_likely": true
+      },
+      {
+        "token": "chedy",
+        "max_reps": 92,
+        "mean_reps": 19.51,
+        "saturation_likely": true
+      },
+      {
+        "token": "ol",
+        "max_reps": 79,
+        "mean_reps": 12.37,
+        "saturation_likely": true
+      },
+      {
+        "token": "shedy",
+        "max_reps": 108,
+        "mean_reps": 19.96,
+        "saturation_likely": true
+      },
+      {
+        "token": "aiin",
+        "max_reps": 44,
+        "mean_reps": 9.63,
+        "saturation_likely": false
+      },
+      {
+        "token": "chol",
+        "max_reps": 39,
+        "mean_reps": 8.14,
+        "saturation_likely": false
+      },
+      {
+        "token": "chey",
+        "max_reps": 61,
+        "mean_reps": 8.92,
+        "saturation_likely": true
+      },
+      {
+        "token": "or",
+        "max_reps": 35,
+        "mean_reps": 7.77,
+        "saturation_likely": false
+      },
+      {
+        "token": "dar",
+        "max_reps": 51,
+        "mean_reps": 7.09,
+        "saturation_likely": true
+      },
+      {
+        "token": "qokaiin",
+        "max_reps": 52,
+        "mean_reps": 13.84,
+        "saturation_likely": true
+      }
+    ],
+    "saturation_threshold_estimate": 50
+  },
+  "repetition_semantics": {
+    "interpretation": "LEVEL_SELECT",
+    "explanation": "Repetitions select discrete operating levels",
+    "confidence": "MEDIUM"
+  },
+  "parameter_quantization": {
+    "discrete_levels_detected": 10,
+    "natural_break_points": [
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "continuous_range": [
+      1,
+      3020
+    ]
+  },
+  "threshold_patterns": [
+    {
+      "token": "daiin",
+      "breaks": [
+        45
+      ],
+      "levels": 2
+    },
+    {
+      "token": "chedy",
+      "breaks": [
+        38,
+        44,
+        48,
+        52,
+        59,
+        65,
+        70
+      ],
+      "levels": 8
+    },
+    {
+      "token": "ol",
+      "breaks": [
+        25,
+        35,
+        44,
+        47,
+        65,
+        76
+      ],
+      "levels": 7
+    },
+    {
+      "token": "shedy",
+      "breaks": [
+        21,
+        40,
+        44,
+        50,
+        57,
+        61,
+        68,
+        72,
+        79
+      ],
+      "levels": 10
+    },
+    {
+      "token": "aiin",
+      "breaks": [
+        23,
+        37
+      ],
+      "levels": 3
+    },
+    {
+      "token": "chol",
+      "breaks": [
+        28,
+        33
+      ],
+      "levels": 3
+    },
+    {
+      "token": "chey",
+      "breaks": [
+        20,
+        33,
+        52
+      ],
+      "levels": 4
+    },
+    {
+      "token": "or",
+      "breaks": [
+        27,
+        31
+      ],
+      "levels": 3
+    },
+    {
+      "token": "dar",
+      "breaks": [
+        17,
+        27,
+        40
+      ],
+      "levels": 4
+    },
+    {
+      "token": "qokaiin",
+      "breaks": [
+        33,
+        37,
+        41,
+        44,
+        48
+      ],
+      "levels": 6
+    }
+  ],
+  "INTERPRETATION": "Repetition scaling is THRESHOLD. Primary semantics: LEVEL_SELECT. 46 tokens show threshold behavior with natural breaks at [9, 10, 12, 13, 14]."
+}

@@ -1,0 +1,62 @@
+{
+  "aggregate_metrics": {
+    "reset_ratio": 0.036,
+    "mean_hazard_density": 0.582,
+    "mean_cycle_count": 106.73,
+    "cycle_variance": 71.25,
+    "recovery_present": true,
+    "terminal_statec_ratio": 0.578
+  },
+  "exclusions": [
+    {
+      "process_class": "Mechanical timing systems",
+      "status": "SOFT_EXCLUDED",
+      "triggers": [
+        "insufficient reset pattern"
+      ],
+      "justification": "Some timing characteristics but not conclusive"
+    },
+    {
+      "process_class": "Astronomical/calendrical",
+      "status": "SOFT_EXCLUDED",
+      "triggers": [
+        "missing symbolic encoding patterns"
+      ],
+      "justification": "No clear astronomical number patterns"
+    },
+    {
+      "process_class": "Biological cultivation",
+      "status": "SOFT_EXCLUDED",
+      "triggers": [
+        "high variance in cycle structure"
+      ],
+      "justification": "Cultivation requires growth/decay asymmetry"
+    },
+    {
+      "process_class": "Open-loop control",
+      "status": "SOFT_EXCLUDED",
+      "triggers": [
+        "some recovery ops present"
+      ],
+      "justification": "System shows closed-loop characteristics"
+    },
+    {
+      "process_class": "Discrete batch processing",
+      "status": "PLAUSIBLE",
+      "supporting_features": [
+        "some terminal variation"
+      ],
+      "justification": "Cannot rule out batch-like segments"
+    },
+    {
+      "process_class": "Continuous closed-loop control",
+      "status": "PLAUSIBLE",
+      "supporting_features": [
+        "cyclic structure (mean 106.7 cycles)",
+        "hazard density 0.58",
+        "kernel-centric operation"
+      ],
+      "justification": "Signature compatible with closed-loop thermal/chemical control"
+    }
+  ]
+}

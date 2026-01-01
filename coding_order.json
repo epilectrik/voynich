@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "title": "Visual Coding Order",
+    "date": "2025-12-30T17:40:29.946673",
+    "total_folios": 30,
+    "priority_counts": {
+      "HIGH": 12,
+      "MEDIUM": 16,
+      "LOW": 2
+    }
+  },
+  "phases": {
+    "calibration": [
+      "f38r",
+      "f9v",
+      "f56r",
+      "f3v",
+      "f42r"
+    ],
+    "hubs": [
+      "f42r",
+      "f10v"
+    ],
+    "hypothesis_po": [
+      "f11v",
+      "f51v",
+      "f23v"
+    ],
+    "hypothesis_ko": [
+      "f5v",
+      "f45v",
+      "f3v",
+      "f29v"
+    ],
+    "isolated_early": [
+      "f2r",
+      "f3v",
+      "f4v",
+      "f5r",
+      "f5v"
+    ]
+  },
+  "coding_order": [
+    {
+      "order": 1,
+      "folio_id": "f38r",
+      "reason": "CALIBRATION: Inter-coder reliability set",
+      "priority": "HIGH",
+      "word_count": 42,
+      "heading": "tolor",
+      "heading_prefix": "to",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 2,
+      "folio_id": "f9v",
+      "reason": "CALIBRATION: Inter-coder reliability set",
+      "priority": "HIGH",
+      "word_count": 94,
+      "heading": "fochor",
+      "heading_prefix": "fo",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 3,
+      "folio_id": "f56r",
+      "reason": "CALIBRATION: Inter-coder reliability set",
+      "priority": "HIGH",
+      "word_count": 127,
+      "heading": "otchal",
+      "heading_prefix": "ot",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 4,
+      "folio_id": "f3v",
+      "reason": "CALIBRATION: Inter-coder reliability set",
+      "priority": "HIGH",
+      "word_count": 110,
+      "heading": "koaiin",
+      "heading_prefix": "ko",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 5,
+      "folio_id": "f42r",
+      "reason": "CALIBRATION: Inter-coder reliability set",
+      "priority": "HIGH",
+      "word_count": 174,
+      "heading": "sho",
+      "heading_prefix": "sh",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 6,
+      "folio_id": "f10v",
+      "reason": "HUB: Most-referenced A entries",
+      "priority": "HIGH",
+      "word_count": 63,
+      "heading": "paiin",
+      "heading_prefix": "pa",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 7,
+      "folio_id": "f11v",
+      "reason": "HYPOTHESIS H1: po prefix (root features)",
+      "priority": "HIGH",
+      "word_count": 57,
+      "heading": "poldchody",
+      "heading_prefix": "po",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 8,
+      "folio_id": "f51v",
+      "reason": "HYPOTHESIS H1: po prefix (root features)",
+      "priority": "HIGH",
+      "word_count": 108,
+      "heading": "poshody",
+      "heading_prefix": "po",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 9,
+      "folio_id": "f23v",
+      "reason": "HYPOTHESIS H1: po prefix (root features)",
+      "priority": "HIGH",
+      "word_count": 113,
+      "heading": "podairol",
+      "heading_prefix": "po",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 10,
+      "folio_id": "f5v",
+      "reason": "HYPOTHESIS H4: ko prefix (leaf features)",
+      "priority": "HIGH",
+      "word_count": 58,
+      "heading": "kocheor",
+      "heading_prefix": "ko",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 11,
+      "folio_id": "f45v",
+      "reason": "HYPOTHESIS H4: ko prefix (leaf features)",
+      "priority": "HIGH",
+      "word_count": 109,
+      "heading": "korary",
+      "heading_prefix": "ko",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 12,
+      "folio_id": "f29v",
+      "reason": "HYPOTHESIS H4: ko prefix (leaf features)",
+      "priority": "HIGH",
+      "word_count": 112,
+      "heading": "kooiin",
+      "heading_prefix": "ko",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 13,
+      "folio_id": "f2r",
+      "reason": "STRUCTURAL S2: Isolated early folio",
+      "priority": "MEDIUM",
+      "word_count": 103,
+      "heading": "kydainy",
+      "heading_prefix": "ky",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 14,
+      "folio_id": "f4v",
+      "reason": "STRUCTURAL S2: Isolated early folio",
+      "priority": "MEDIUM",
+      "word_count": 112,
+      "heading": "pchooiin",
+      "heading_prefix": "pc",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 15,
+      "folio_id": "f5r",
+      "reason": "STRUCTURAL S2: Isolated early folio",
+      "priority": "MEDIUM",
+      "word_count": 66,
+      "heading": "kshody",
+      "heading_prefix": "ks",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 16,
+      "folio_id": "f25r",
+      "reason": "SHORT: Simple illustration baseline",
+      "priority": "MEDIUM",
+      "word_count": 48,
+      "heading": "fcholdy",
+      "heading_prefix": "fc",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 17,
+      "folio_id": "f11r",
+      "reason": "SHORT: Simple illustration baseline",
+      "priority": "MEDIUM",
+      "word_count": 57,
+      "heading": "tshol",
+      "heading_prefix": "ts",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 18,
+      "folio_id": "f38v",
+      "reason": "SHORT: Simple illustration baseline",
+      "priority": "MEDIUM",
+      "word_count": 65,
+      "heading": "okchop",
+      "heading_prefix": "ok",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 19,
+      "folio_id": "f36r",
+      "reason": "SHORT: Simple illustration baseline",
+      "priority": "MEDIUM",
+      "word_count": 70,
+      "heading": "pchafdan",
+      "heading_prefix": "pc",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 20,
+      "folio_id": "f30v",
+      "reason": "SHORT: Simple illustration baseline",
+      "priority": "MEDIUM",
+      "word_count": 75,
+      "heading": "cthscthain",
+      "heading_prefix": "ct",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 21,
+      "folio_id": "f22v",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 90,
+      "heading": "pysaiinor",
+      "heading_prefix": "py",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 22,
+      "folio_id": "f90v2",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 95,
+      "heading": "cphdaithy",
+      "heading_prefix": "cp",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 23,
+      "folio_id": "f32v",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 97,
+      "heading": "kcheodaiin",
+      "heading_prefix": "kc",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 24,
+      "folio_id": "f17r",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 99,
+      "heading": "fshody",
+      "heading_prefix": "fs",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 25,
+      "folio_id": "f18r",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 100,
+      "heading": "pdrairdy",
+      "heading_prefix": "pd",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 26,
+      "folio_id": "f9r",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 101,
+      "heading": "tydlo",
+      "heading_prefix": "ty",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 27,
+      "folio_id": "f20v",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 103,
+      "heading": "faiis",
+      "heading_prefix": "fa",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 28,
+      "folio_id": "f47v",
+      "reason": "MEDIUM: Moderate complexity",
+      "priority": "MEDIUM",
+      "word_count": 104,
+      "heading": "psheot",
+      "heading_prefix": "ps",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 29,
+      "folio_id": "f24v",
+      "reason": "LONG: Complex illustration",
+      "priority": "LOW",
+      "word_count": 117,
+      "heading": "tchodar",
+      "heading_prefix": "tc",
+      "reference_status": "UNKNOWN"
+    },
+    {
+      "order": 30,
+      "folio_id": "f49v",
+      "reason": "LONG: Complex illustration",
+      "priority": "LOW",
+      "word_count": 189,
+      "heading": "r*",
+      "heading_prefix": "r*",
+      "reference_status": "UNKNOWN"
+    }
+  ],
+  "quality_control": {
+    "retest_folios": [
+      "f38r",
+      "f42r"
+    ],
+    "target_agreement": 0.8,
+    "inter_coder_set": [
+      "f38r",
+      "f9v",
+      "f56r",
+      "f3v",
+      "f42r"
+    ]
+  }
+}

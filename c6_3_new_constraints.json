@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "phase": "C6.3",
+    "title": "New Constraints",
+    "timestamp": "2025-12-30T22:11:43.512970"
+  },
+  "new_constraints": [
+    {
+      "id": 28,
+      "finding": "Substring-based category hierarchy exists",
+      "evidence": "Parent-child relationships: 3",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": 29,
+      "finding": "Within-category vocabulary variation exists",
+      "evidence": "Mean cross-entry Jaccard: 0.046",
+      "confidence": "HIGH"
+    },
+    {
+      "id": 30,
+      "finding": "B entries use MULTI_REFERENCE structure",
+      "evidence": "B entries analyzed: 61",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": 31,
+      "finding": "Primary organizing principle: MIXED",
+      "evidence": "Based on visual consistency, co-citation patterns, and hierarchy analysis",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "summary": {
+    "new_constraints_count": 4,
+    "prior_constraint_count": 26,
+    "total_constraints": 30
+  }
+}

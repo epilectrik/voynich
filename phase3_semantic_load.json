@@ -1,0 +1,65 @@
+{
+  "measure": "semantic_load_capacity",
+  "models": {
+    "ENCYCLOPEDIC": {
+      "description": "Full plant description (name, family, habitat, appearance, parts, uses, preparation, cautions)",
+      "concepts": 8,
+      "bits_per_concept": 10,
+      "total_bits_needed": 80,
+      "example": "A complete herbal entry with all details"
+    },
+    "PRACTITIONER": {
+      "description": "Working notes (identification hint, primary use, preparation method)",
+      "concepts": 4,
+      "bits_per_concept": 8,
+      "total_bits_needed": 32,
+      "example": "A physicians quick reference card"
+    },
+    "INDEX": {
+      "description": "Memory aid (category pointer, recall trigger)",
+      "concepts": 2,
+      "bits_per_concept": 6,
+      "total_bits_needed": 12,
+      "example": "A mnemonic index requiring external knowledge"
+    }
+  },
+  "gamma_capacity": {
+    "bits_per_entry": 362.6519588572525,
+    "avg_tokens_per_entry": 60.17766497461929,
+    "vocabulary_size": 77,
+    "theoretical_max_bits": 377.1205809133911
+  },
+  "verdicts": {
+    "ENCYCLOPEDIC": {
+      "bits_needed": 80,
+      "bits_available": 362.65,
+      "theoretical_max": 377.12,
+      "actual_sufficient": true,
+      "theoretical_sufficient": true,
+      "capacity_ratio": 4.533,
+      "headroom_bits": 282.65,
+      "interpretation": "GAMMA CAN encode ENCYCLOPEDIC content (ratio=4.53x needed)"
+    },
+    "PRACTITIONER": {
+      "bits_needed": 32,
+      "bits_available": 362.65,
+      "theoretical_max": 377.12,
+      "actual_sufficient": true,
+      "theoretical_sufficient": true,
+      "capacity_ratio": 11.333,
+      "headroom_bits": 330.65,
+      "interpretation": "GAMMA CAN encode PRACTITIONER content (ratio=11.33x needed)"
+    },
+    "INDEX": {
+      "bits_needed": 12,
+      "bits_available": 362.65,
+      "theoretical_max": 377.12,
+      "actual_sufficient": true,
+      "theoretical_sufficient": true,
+      "capacity_ratio": 30.221,
+      "headroom_bits": 350.65,
+      "interpretation": "GAMMA CAN encode INDEX content (ratio=30.22x needed)"
+    }
+  },
+  "overall_interpretation": "SURPRISING: GAMMA has capacity for full encyclopedic content. Semantics likely exist but are encoded within the 77 token vocabulary."
+}

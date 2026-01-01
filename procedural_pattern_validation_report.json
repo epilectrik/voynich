@@ -1,0 +1,129 @@
+{
+  "timestamp": "2025-12-30T14:28:29.169131",
+  "methodology": "Procedural pattern validation with 4 randomization tests",
+  "corpus": {
+    "section": "Currier B only",
+    "word_count": 29204,
+    "folio_count": 83,
+    "sequence_count": 2457
+  },
+  "real_counts": {
+    "ppb_any_distance": 825,
+    "ppb_adjacent": 85
+  },
+  "tests": {
+    "test1_shuffled_categories": {
+      "real_count": 825,
+      "randomized_mean": 639.14,
+      "randomized_std": 470.98,
+      "randomized_min": 39,
+      "randomized_max": 2243,
+      "z_score": 0.39,
+      "p_value": 0.33,
+      "significant": false,
+      "distribution_sample": [
+        39,
+        52,
+        69,
+        73,
+        81,
+        84,
+        86,
+        94,
+        97,
+        100,
+        1593,
+        1602,
+        1665,
+        1900,
+        2243
+      ]
+    },
+    "test2_shuffled_word_order": {
+      "real_count": 825,
+      "randomized_mean": 960.64,
+      "randomized_std": 35.36,
+      "randomized_min": 873,
+      "randomized_max": 1048,
+      "z_score": -3.84,
+      "p_value": 1.0,
+      "significant": false,
+      "distribution_sample": [
+        873,
+        889,
+        889,
+        893,
+        904,
+        910,
+        914,
+        914,
+        915,
+        917,
+        1024,
+        1027,
+        1029,
+        1032,
+        1048
+      ]
+    },
+    "test3_shuffled_across_folios": {
+      "real_count": 825,
+      "randomized_mean": 0.0,
+      "randomized_std": 0.0,
+      "randomized_min": 0,
+      "randomized_max": 0,
+      "z_score": 0,
+      "p_value": 0.0,
+      "significant": false,
+      "distribution_sample": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "test4_random_categories": {
+      "real_count": 825,
+      "randomized_mean": 1227.03,
+      "randomized_std": 46.41,
+      "randomized_min": 1079,
+      "randomized_max": 1361,
+      "z_score": -8.66,
+      "p_value": 1.0,
+      "significant": false,
+      "distribution_sample": [
+        1079,
+        1114,
+        1135,
+        1140,
+        1142,
+        1156,
+        1156,
+        1158,
+        1161,
+        1164,
+        1300,
+        1313,
+        1318,
+        1327,
+        1361
+      ]
+    }
+  },
+  "summary": {
+    "significant_tests": 0,
+    "verdict": "PATTERNS ARE ARTIFACTS",
+    "explanation": "Only 0/4 tests significant. Patterns do not survive randomization."
+  }
+}

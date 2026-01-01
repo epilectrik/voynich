@@ -1,0 +1,7809 @@
+{
+  "timestamp": "2025-12-30T15:05:00.184946",
+  "methodology": "Prefix role analysis using folio-based entry segmentation",
+  "currier_a": {
+    "section": "Currier A",
+    "word_count": 14155,
+    "entry_count": 114,
+    "positional": {
+      "all_stats": [
+        {
+          "prefix": "ar",
+          "count": 98,
+          "mean_position": 0.515,
+          "std_position": 0.323,
+          "quintiles": [
+            23.5,
+            15.3,
+            14.3,
+            19.4,
+            27.6
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "so",
+          "count": 185,
+          "mean_position": 0.515,
+          "std_position": 0.308,
+          "quintiles": [
+            22.2,
+            14.1,
+            20.0,
+            18.4,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "od",
+          "count": 121,
+          "mean_position": 0.531,
+          "std_position": 0.303,
+          "quintiles": [
+            21.5,
+            14.0,
+            20.7,
+            18.2,
+            25.6
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "sc",
+          "count": 59,
+          "mean_position": 0.545,
+          "std_position": 0.292,
+          "quintiles": [
+            16.9,
+            18.6,
+            20.3,
+            18.6,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "et",
+          "count": 21,
+          "mean_position": 0.549,
+          "std_position": 0.296,
+          "quintiles": [
+            9.5,
+            33.3,
+            14.3,
+            14.3,
+            28.6
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ke",
+          "count": 130,
+          "mean_position": 0.563,
+          "std_position": 0.267,
+          "quintiles": [
+            10.0,
+            20.0,
+            21.5,
+            23.1,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ys",
+          "count": 32,
+          "mean_position": 0.566,
+          "std_position": 0.29,
+          "quintiles": [
+            9.4,
+            28.1,
+            15.6,
+            12.5,
+            34.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yc",
+          "count": 129,
+          "mean_position": 0.567,
+          "std_position": 0.288,
+          "quintiles": [
+            12.4,
+            17.1,
+            24.0,
+            16.3,
+            30.2
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yk",
+          "count": 292,
+          "mean_position": 0.576,
+          "std_position": 0.281,
+          "quintiles": [
+            10.3,
+            24.0,
+            13.4,
+            23.3,
+            29.1
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ai",
+          "count": 155,
+          "mean_position": 0.579,
+          "std_position": 0.277,
+          "quintiles": [
+            12.9,
+            16.1,
+            20.0,
+            21.9,
+            29.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ka",
+          "count": 64,
+          "mean_position": 0.58,
+          "std_position": 0.307,
+          "quintiles": [
+            18.8,
+            15.6,
+            17.2,
+            15.6,
+            32.8
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "qk",
+          "count": 31,
+          "mean_position": 0.583,
+          "std_position": 0.32,
+          "quintiles": [
+            16.1,
+            9.7,
+            29.0,
+            6.5,
+            38.7
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "de",
+          "count": 30,
+          "mean_position": 0.613,
+          "std_position": 0.269,
+          "quintiles": [
+            3.3,
+            26.7,
+            23.3,
+            16.7,
+            30.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "te",
+          "count": 51,
+          "mean_position": 0.623,
+          "std_position": 0.248,
+          "quintiles": [
+            7.8,
+            15.7,
+            17.6,
+            27.5,
+            31.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yo",
+          "count": 28,
+          "mean_position": 0.639,
+          "std_position": 0.289,
+          "quintiles": [
+            7.1,
+            21.4,
+            3.6,
+            32.1,
+            35.7
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "rc",
+          "count": 23,
+          "mean_position": 0.646,
+          "std_position": 0.219,
+          "quintiles": [
+            4.3,
+            8.7,
+            26.1,
+            21.7,
+            39.1
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "po",
+          "count": 53,
+          "mean_position": 0.243,
+          "std_position": 0.291,
+          "quintiles": [
+            60.4,
+            15.1,
+            5.7,
+            17.0,
+            1.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "pc",
+          "count": 78,
+          "mean_position": 0.269,
+          "std_position": 0.262,
+          "quintiles": [
+            52.6,
+            12.8,
+            20.5,
+            11.5,
+            2.6
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "yp",
+          "count": 34,
+          "mean_position": 0.277,
+          "std_position": 0.274,
+          "quintiles": [
+            55.9,
+            8.8,
+            11.8,
+            23.5,
+            0.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "op",
+          "count": 121,
+          "mean_position": 0.306,
+          "std_position": 0.292,
+          "quintiles": [
+            48.8,
+            19.8,
+            10.7,
+            13.2,
+            7.4
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "fc",
+          "count": 29,
+          "mean_position": 0.341,
+          "std_position": 0.264,
+          "quintiles": [
+            41.4,
+            6.9,
+            24.1,
+            27.6,
+            0.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "of",
+          "count": 34,
+          "mean_position": 0.355,
+          "std_position": 0.317,
+          "quintiles": [
+            47.1,
+            11.8,
+            11.8,
+            20.6,
+            8.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "cf",
+          "count": 34,
+          "mean_position": 0.369,
+          "std_position": 0.263,
+          "quintiles": [
+            29.4,
+            29.4,
+            23.5,
+            11.8,
+            5.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "cp",
+          "count": 125,
+          "mean_position": 0.395,
+          "std_position": 0.289,
+          "quintiles": [
+            36.8,
+            12.8,
+            23.2,
+            15.2,
+            12.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ts",
+          "count": 36,
+          "mean_position": 0.418,
+          "std_position": 0.314,
+          "quintiles": [
+            36.1,
+            5.6,
+            22.2,
+            25.0,
+            11.1
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ot",
+          "count": 627,
+          "mean_position": 0.442,
+          "std_position": 0.296,
+          "quintiles": [
+            26.0,
+            23.1,
+            18.2,
+            16.7,
+            15.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ko",
+          "count": 154,
+          "mean_position": 0.45,
+          "std_position": 0.309,
+          "quintiles": [
+            28.6,
+            15.6,
+            24.7,
+            13.0,
+            18.2
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "sy",
+          "count": 41,
+          "mean_position": 0.464,
+          "std_position": 0.282,
+          "quintiles": [
+            29.3,
+            22.0,
+            17.1,
+            14.6,
+            17.1
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ra",
+          "count": 44,
+          "mean_position": 0.465,
+          "std_position": 0.305,
+          "quintiles": [
+            27.3,
+            22.7,
+            13.6,
+            20.5,
+            15.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ds",
+          "count": 65,
+          "mean_position": 0.467,
+          "std_position": 0.291,
+          "quintiles": [
+            26.2,
+            21.5,
+            16.9,
+            16.9,
+            18.5
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "or",
+          "count": 200,
+          "mean_position": 0.473,
+          "std_position": 0.316,
+          "quintiles": [
+            25.5,
+            23.5,
+            11.0,
+            17.0,
+            23.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "to",
+          "count": 132,
+          "mean_position": 0.421,
+          "std_position": 0.253,
+          "quintiles": [
+            22.7,
+            23.5,
+            28.0,
+            17.4,
+            8.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ee",
+          "count": 28,
+          "mean_position": 0.432,
+          "std_position": 0.236,
+          "quintiles": [
+            14.3,
+            32.1,
+            32.1,
+            14.3,
+            7.1
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ks",
+          "count": 55,
+          "mean_position": 0.437,
+          "std_position": 0.272,
+          "quintiles": [
+            20.0,
+            21.8,
+            23.6,
+            27.3,
+            7.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "fo",
+          "count": 21,
+          "mean_position": 0.44,
+          "std_position": 0.255,
+          "quintiles": [
+            23.8,
+            9.5,
+            38.1,
+            23.8,
+            4.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "oe",
+          "count": 51,
+          "mean_position": 0.454,
+          "std_position": 0.253,
+          "quintiles": [
+            13.7,
+            33.3,
+            21.6,
+            19.6,
+            11.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "oi",
+          "count": 28,
+          "mean_position": 0.483,
+          "std_position": 0.234,
+          "quintiles": [
+            7.1,
+            32.1,
+            32.1,
+            17.9,
+            10.7
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ta",
+          "count": 53,
+          "mean_position": 0.483,
+          "std_position": 0.265,
+          "quintiles": [
+            15.1,
+            30.2,
+            17.0,
+            22.6,
+            15.1
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "dc",
+          "count": 188,
+          "mean_position": 0.488,
+          "std_position": 0.289,
+          "quintiles": [
+            23.9,
+            15.4,
+            26.1,
+            14.9,
+            19.7
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "oc",
+          "count": 100,
+          "mean_position": 0.492,
+          "std_position": 0.308,
+          "quintiles": [
+            25.0,
+            13.0,
+            24.0,
+            16.0,
+            22.0
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "os",
+          "count": 57,
+          "mean_position": 0.493,
+          "std_position": 0.285,
+          "quintiles": [
+            14.0,
+            33.3,
+            17.5,
+            12.3,
+            22.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "tc",
+          "count": 165,
+          "mean_position": 0.5,
+          "std_position": 0.263,
+          "quintiles": [
+            15.2,
+            21.2,
+            22.4,
+            25.5,
+            15.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "yd",
+          "count": 53,
+          "mean_position": 0.508,
+          "std_position": 0.307,
+          "quintiles": [
+            22.6,
+            22.6,
+            9.4,
+            22.6,
+            22.6
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "kc",
+          "count": 176,
+          "mean_position": 0.531,
+          "std_position": 0.278,
+          "quintiles": [
+            13.6,
+            23.9,
+            23.3,
+            17.6,
+            21.6
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ky",
+          "count": 28,
+          "mean_position": 0.536,
+          "std_position": 0.258,
+          "quintiles": [
+            7.1,
+            25.0,
+            28.6,
+            14.3,
+            25.0
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "lo",
+          "count": 35,
+          "mean_position": 0.541,
+          "std_position": 0.263,
+          "quintiles": [
+            14.3,
+            28.6,
+            5.7,
+            34.3,
+            17.1
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ro",
+          "count": 33,
+          "mean_position": 0.546,
+          "std_position": 0.295,
+          "quintiles": [
+            21.2,
+            9.1,
+            18.2,
+            30.3,
+            21.2
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "al",
+          "count": 76,
+          "mean_position": 0.557,
+          "std_position": 0.271,
+          "quintiles": [
+            14.5,
+            15.8,
+            18.4,
+            28.9,
+            22.4
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "qo",
+          "count": 1319,
+          "mean_position": 0.482,
+          "std_position": 0.274,
+          "quintiles": [
+            20.2,
+            21.8,
+            20.6,
+            20.9,
+            16.4
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sh",
+          "count": 1247,
+          "mean_position": 0.483,
+          "std_position": 0.286,
+          "quintiles": [
+            22.6,
+            16.8,
+            22.3,
+            20.9,
+            17.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "yt",
+          "count": 249,
+          "mean_position": 0.491,
+          "std_position": 0.294,
+          "quintiles": [
+            21.3,
+            22.1,
+            20.1,
+            15.7,
+            20.9
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "dy",
+          "count": 184,
+          "mean_position": 0.491,
+          "std_position": 0.286,
+          "quintiles": [
+            22.3,
+            19.6,
+            22.3,
+            16.8,
+            19.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "oa",
+          "count": 46,
+          "mean_position": 0.506,
+          "std_position": 0.288,
+          "quintiles": [
+            15.2,
+            21.7,
+            21.7,
+            23.9,
+            17.4
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ck",
+          "count": 219,
+          "mean_position": 0.509,
+          "std_position": 0.278,
+          "quintiles": [
+            18.7,
+            21.0,
+            18.3,
+            23.3,
+            18.7
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "am",
+          "count": 22,
+          "mean_position": 0.509,
+          "std_position": 0.316,
+          "quintiles": [
+            18.2,
+            18.2,
+            18.2,
+            27.3,
+            18.2
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ct",
+          "count": 555,
+          "mean_position": 0.511,
+          "std_position": 0.29,
+          "quintiles": [
+            19.6,
+            20.7,
+            16.9,
+            19.6,
+            23.1
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sa",
+          "count": 191,
+          "mean_position": 0.513,
+          "std_position": 0.308,
+          "quintiles": [
+            19.9,
+            20.4,
+            17.8,
+            18.3,
+            23.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ol",
+          "count": 359,
+          "mean_position": 0.515,
+          "std_position": 0.295,
+          "quintiles": [
+            21.2,
+            15.6,
+            20.1,
+            20.9,
+            22.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ch",
+          "count": 2636,
+          "mean_position": 0.518,
+          "std_position": 0.29,
+          "quintiles": [
+            17.6,
+            21.0,
+            19.3,
+            19.3,
+            22.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "da",
+          "count": 1223,
+          "mean_position": 0.523,
+          "std_position": 0.285,
+          "quintiles": [
+            18.0,
+            19.1,
+            20.4,
+            21.0,
+            21.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "do",
+          "count": 279,
+          "mean_position": 0.53,
+          "std_position": 0.272,
+          "quintiles": [
+            14.3,
+            19.0,
+            24.0,
+            23.7,
+            19.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ok",
+          "count": 767,
+          "mean_position": 0.532,
+          "std_position": 0.288,
+          "quintiles": [
+            16.9,
+            19.2,
+            19.3,
+            21.9,
+            22.7
+          ],
+          "position_type": "UNIFORM"
+        }
+      ],
+      "initial_prefixes": [
+        {
+          "prefix": "po",
+          "count": 53,
+          "mean_position": 0.243,
+          "std_position": 0.291,
+          "quintiles": [
+            60.4,
+            15.1,
+            5.7,
+            17.0,
+            1.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "pc",
+          "count": 78,
+          "mean_position": 0.269,
+          "std_position": 0.262,
+          "quintiles": [
+            52.6,
+            12.8,
+            20.5,
+            11.5,
+            2.6
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "yp",
+          "count": 34,
+          "mean_position": 0.277,
+          "std_position": 0.274,
+          "quintiles": [
+            55.9,
+            8.8,
+            11.8,
+            23.5,
+            0.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "op",
+          "count": 121,
+          "mean_position": 0.306,
+          "std_position": 0.292,
+          "quintiles": [
+            48.8,
+            19.8,
+            10.7,
+            13.2,
+            7.4
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "fc",
+          "count": 29,
+          "mean_position": 0.341,
+          "std_position": 0.264,
+          "quintiles": [
+            41.4,
+            6.9,
+            24.1,
+            27.6,
+            0.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "of",
+          "count": 34,
+          "mean_position": 0.355,
+          "std_position": 0.317,
+          "quintiles": [
+            47.1,
+            11.8,
+            11.8,
+            20.6,
+            8.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "cf",
+          "count": 34,
+          "mean_position": 0.369,
+          "std_position": 0.263,
+          "quintiles": [
+            29.4,
+            29.4,
+            23.5,
+            11.8,
+            5.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "cp",
+          "count": 125,
+          "mean_position": 0.395,
+          "std_position": 0.289,
+          "quintiles": [
+            36.8,
+            12.8,
+            23.2,
+            15.2,
+            12.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ts",
+          "count": 36,
+          "mean_position": 0.418,
+          "std_position": 0.314,
+          "quintiles": [
+            36.1,
+            5.6,
+            22.2,
+            25.0,
+            11.1
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ot",
+          "count": 627,
+          "mean_position": 0.442,
+          "std_position": 0.296,
+          "quintiles": [
+            26.0,
+            23.1,
+            18.2,
+            16.7,
+            15.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ko",
+          "count": 154,
+          "mean_position": 0.45,
+          "std_position": 0.309,
+          "quintiles": [
+            28.6,
+            15.6,
+            24.7,
+            13.0,
+            18.2
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "sy",
+          "count": 41,
+          "mean_position": 0.464,
+          "std_position": 0.282,
+          "quintiles": [
+            29.3,
+            22.0,
+            17.1,
+            14.6,
+            17.1
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ra",
+          "count": 44,
+          "mean_position": 0.465,
+          "std_position": 0.305,
+          "quintiles": [
+            27.3,
+            22.7,
+            13.6,
+            20.5,
+            15.9
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ds",
+          "count": 65,
+          "mean_position": 0.467,
+          "std_position": 0.291,
+          "quintiles": [
+            26.2,
+            21.5,
+            16.9,
+            16.9,
+            18.5
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "or",
+          "count": 200,
+          "mean_position": 0.473,
+          "std_position": 0.316,
+          "quintiles": [
+            25.5,
+            23.5,
+            11.0,
+            17.0,
+            23.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        }
+      ],
+      "final_prefixes": [
+        {
+          "prefix": "ar",
+          "count": 98,
+          "mean_position": 0.515,
+          "std_position": 0.323,
+          "quintiles": [
+            23.5,
+            15.3,
+            14.3,
+            19.4,
+            27.6
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "so",
+          "count": 185,
+          "mean_position": 0.515,
+          "std_position": 0.308,
+          "quintiles": [
+            22.2,
+            14.1,
+            20.0,
+            18.4,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "od",
+          "count": 121,
+          "mean_position": 0.531,
+          "std_position": 0.303,
+          "quintiles": [
+            21.5,
+            14.0,
+            20.7,
+            18.2,
+            25.6
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "sc",
+          "count": 59,
+          "mean_position": 0.545,
+          "std_position": 0.292,
+          "quintiles": [
+            16.9,
+            18.6,
+            20.3,
+            18.6,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "et",
+          "count": 21,
+          "mean_position": 0.549,
+          "std_position": 0.296,
+          "quintiles": [
+            9.5,
+            33.3,
+            14.3,
+            14.3,
+            28.6
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ke",
+          "count": 130,
+          "mean_position": 0.563,
+          "std_position": 0.267,
+          "quintiles": [
+            10.0,
+            20.0,
+            21.5,
+            23.1,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ys",
+          "count": 32,
+          "mean_position": 0.566,
+          "std_position": 0.29,
+          "quintiles": [
+            9.4,
+            28.1,
+            15.6,
+            12.5,
+            34.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yc",
+          "count": 129,
+          "mean_position": 0.567,
+          "std_position": 0.288,
+          "quintiles": [
+            12.4,
+            17.1,
+            24.0,
+            16.3,
+            30.2
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yk",
+          "count": 292,
+          "mean_position": 0.576,
+          "std_position": 0.281,
+          "quintiles": [
+            10.3,
+            24.0,
+            13.4,
+            23.3,
+            29.1
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ai",
+          "count": 155,
+          "mean_position": 0.579,
+          "std_position": 0.277,
+          "quintiles": [
+            12.9,
+            16.1,
+            20.0,
+            21.9,
+            29.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ka",
+          "count": 64,
+          "mean_position": 0.58,
+          "std_position": 0.307,
+          "quintiles": [
+            18.8,
+            15.6,
+            17.2,
+            15.6,
+            32.8
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "qk",
+          "count": 31,
+          "mean_position": 0.583,
+          "std_position": 0.32,
+          "quintiles": [
+            16.1,
+            9.7,
+            29.0,
+            6.5,
+            38.7
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "de",
+          "count": 30,
+          "mean_position": 0.613,
+          "std_position": 0.269,
+          "quintiles": [
+            3.3,
+            26.7,
+            23.3,
+            16.7,
+            30.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "te",
+          "count": 51,
+          "mean_position": 0.623,
+          "std_position": 0.248,
+          "quintiles": [
+            7.8,
+            15.7,
+            17.6,
+            27.5,
+            31.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yo",
+          "count": 28,
+          "mean_position": 0.639,
+          "std_position": 0.289,
+          "quintiles": [
+            7.1,
+            21.4,
+            3.6,
+            32.1,
+            35.7
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "rc",
+          "count": 23,
+          "mean_position": 0.646,
+          "std_position": 0.219,
+          "quintiles": [
+            4.3,
+            8.7,
+            26.1,
+            21.7,
+            39.1
+          ],
+          "position_type": "FINAL_TENDENCY"
+        }
+      ],
+      "uniform_prefixes": [
+        {
+          "prefix": "qo",
+          "count": 1319,
+          "mean_position": 0.482,
+          "std_position": 0.274,
+          "quintiles": [
+            20.2,
+            21.8,
+            20.6,
+            20.9,
+            16.4
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sh",
+          "count": 1247,
+          "mean_position": 0.483,
+          "std_position": 0.286,
+          "quintiles": [
+            22.6,
+            16.8,
+            22.3,
+            20.9,
+            17.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "yt",
+          "count": 249,
+          "mean_position": 0.491,
+          "std_position": 0.294,
+          "quintiles": [
+            21.3,
+            22.1,
+            20.1,
+            15.7,
+            20.9
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "dy",
+          "count": 184,
+          "mean_position": 0.491,
+          "std_position": 0.286,
+          "quintiles": [
+            22.3,
+            19.6,
+            22.3,
+            16.8,
+            19.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "oa",
+          "count": 46,
+          "mean_position": 0.506,
+          "std_position": 0.288,
+          "quintiles": [
+            15.2,
+            21.7,
+            21.7,
+            23.9,
+            17.4
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ck",
+          "count": 219,
+          "mean_position": 0.509,
+          "std_position": 0.278,
+          "quintiles": [
+            18.7,
+            21.0,
+            18.3,
+            23.3,
+            18.7
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "am",
+          "count": 22,
+          "mean_position": 0.509,
+          "std_position": 0.316,
+          "quintiles": [
+            18.2,
+            18.2,
+            18.2,
+            27.3,
+            18.2
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ct",
+          "count": 555,
+          "mean_position": 0.511,
+          "std_position": 0.29,
+          "quintiles": [
+            19.6,
+            20.7,
+            16.9,
+            19.6,
+            23.1
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sa",
+          "count": 191,
+          "mean_position": 0.513,
+          "std_position": 0.308,
+          "quintiles": [
+            19.9,
+            20.4,
+            17.8,
+            18.3,
+            23.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ol",
+          "count": 359,
+          "mean_position": 0.515,
+          "std_position": 0.295,
+          "quintiles": [
+            21.2,
+            15.6,
+            20.1,
+            20.9,
+            22.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ch",
+          "count": 2636,
+          "mean_position": 0.518,
+          "std_position": 0.29,
+          "quintiles": [
+            17.6,
+            21.0,
+            19.3,
+            19.3,
+            22.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "da",
+          "count": 1223,
+          "mean_position": 0.523,
+          "std_position": 0.285,
+          "quintiles": [
+            18.0,
+            19.1,
+            20.4,
+            21.0,
+            21.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "do",
+          "count": 279,
+          "mean_position": 0.53,
+          "std_position": 0.272,
+          "quintiles": [
+            14.3,
+            19.0,
+            24.0,
+            23.7,
+            19.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ok",
+          "count": 767,
+          "mean_position": 0.532,
+          "std_position": 0.288,
+          "quintiles": [
+            16.9,
+            19.2,
+            19.3,
+            21.9,
+            22.7
+          ],
+          "position_type": "UNIFORM"
+        }
+      ],
+      "count_by_type": {
+        "INITIAL_TENDENCY": 15,
+        "FINAL_TENDENCY": 16,
+        "UNIFORM": 14,
+        "MIXED": 17
+      }
+    },
+    "cooccurrence": {
+      "positive_associations": [
+        {
+          "pair": [
+            "qc",
+            "qk"
+          ],
+          "co_count": 5,
+          "p1_count": 6,
+          "p2_count": 18,
+          "pmi": 2.4
+        },
+        {
+          "pair": [
+            "ee",
+            "qe"
+          ],
+          "co_count": 5,
+          "p1_count": 13,
+          "p2_count": 9,
+          "pmi": 2.284
+        },
+        {
+          "pair": [
+            "o*",
+            "oi"
+          ],
+          "co_count": 8,
+          "p1_count": 11,
+          "p2_count": 21,
+          "pmi": 1.981
+        },
+        {
+          "pair": [
+            "oq",
+            "os"
+          ],
+          "co_count": 5,
+          "p1_count": 5,
+          "p2_count": 31,
+          "pmi": 1.879
+        },
+        {
+          "pair": [
+            "lc",
+            "lo"
+          ],
+          "co_count": 7,
+          "p1_count": 11,
+          "p2_count": 20,
+          "pmi": 1.859
+        },
+        {
+          "pair": [
+            "d*",
+            "oi"
+          ],
+          "co_count": 5,
+          "p1_count": 8,
+          "p2_count": 21,
+          "pmi": 1.763
+        },
+        {
+          "pair": [
+            "ry",
+            "sy"
+          ],
+          "co_count": 7,
+          "p1_count": 7,
+          "p2_count": 34,
+          "pmi": 1.745
+        },
+        {
+          "pair": [
+            "al",
+            "qe"
+          ],
+          "co_count": 8,
+          "p1_count": 31,
+          "p2_count": 9,
+          "pmi": 1.709
+        },
+        {
+          "pair": [
+            "ka",
+            "oq"
+          ],
+          "co_count": 5,
+          "p1_count": 36,
+          "p2_count": 5,
+          "pmi": 1.663
+        },
+        {
+          "pair": [
+            "al",
+            "qc"
+          ],
+          "co_count": 5,
+          "p1_count": 31,
+          "p2_count": 6,
+          "pmi": 1.616
+        },
+        {
+          "pair": [
+            "ky",
+            "ty"
+          ],
+          "co_count": 8,
+          "p1_count": 19,
+          "p2_count": 16,
+          "pmi": 1.585
+        },
+        {
+          "pair": [
+            "ee",
+            "yo"
+          ],
+          "co_count": 6,
+          "p1_count": 13,
+          "p2_count": 18,
+          "pmi": 1.547
+        },
+        {
+          "pair": [
+            "o*",
+            "yp"
+          ],
+          "co_count": 5,
+          "p1_count": 11,
+          "p2_count": 18,
+          "pmi": 1.525
+        },
+        {
+          "pair": [
+            "am",
+            "om"
+          ],
+          "co_count": 5,
+          "p1_count": 18,
+          "p2_count": 11,
+          "pmi": 1.525
+        },
+        {
+          "pair": [
+            "et",
+            "rc"
+          ],
+          "co_count": 6,
+          "p1_count": 17,
+          "p2_count": 14,
+          "pmi": 1.523
+        },
+        {
+          "pair": [
+            "ar",
+            "ry"
+          ],
+          "co_count": 6,
+          "p1_count": 35,
+          "p2_count": 7,
+          "pmi": 1.481
+        },
+        {
+          "pair": [
+            "ss",
+            "ys"
+          ],
+          "co_count": 5,
+          "p1_count": 9,
+          "p2_count": 23,
+          "pmi": 1.461
+        },
+        {
+          "pair": [
+            "cf",
+            "sk"
+          ],
+          "co_count": 5,
+          "p1_count": 26,
+          "p2_count": 8,
+          "pmi": 1.454
+        },
+        {
+          "pair": [
+            "oe",
+            "ry"
+          ],
+          "co_count": 5,
+          "p1_count": 30,
+          "p2_count": 7,
+          "pmi": 1.441
+        },
+        {
+          "pair": [
+            "ka",
+            "yf"
+          ],
+          "co_count": 5,
+          "p1_count": 36,
+          "p2_count": 6,
+          "pmi": 1.4
+        }
+      ],
+      "negative_associations": [
+        {
+          "pair": [
+            "dc",
+            "ee"
+          ],
+          "co_count": 5,
+          "p1_count": 78,
+          "p2_count": 13,
+          "pmi": -0.831
+        },
+        {
+          "pair": [
+            "am",
+            "tc"
+          ],
+          "co_count": 6,
+          "p1_count": 18,
+          "p2_count": 67,
+          "pmi": -0.818
+        },
+        {
+          "pair": [
+            "ds",
+            "ta"
+          ],
+          "co_count": 6,
+          "p1_count": 46,
+          "p2_count": 26,
+          "pmi": -0.806
+        },
+        {
+          "pair": [
+            "te",
+            "yd"
+          ],
+          "co_count": 6,
+          "p1_count": 34,
+          "p2_count": 34,
+          "pmi": -0.757
+        },
+        {
+          "pair": [
+            "cp",
+            "of"
+          ],
+          "co_count": 7,
+          "p1_count": 61,
+          "p2_count": 22,
+          "pmi": -0.75
+        },
+        {
+          "pair": [
+            "ee",
+            "kc"
+          ],
+          "co_count": 5,
+          "p1_count": 13,
+          "p2_count": 71,
+          "pmi": -0.695
+        },
+        {
+          "pair": [
+            "kc",
+            "ps"
+          ],
+          "co_count": 5,
+          "p1_count": 71,
+          "p2_count": 13,
+          "pmi": -0.695
+        },
+        {
+          "pair": [
+            "ck",
+            "ty"
+          ],
+          "co_count": 6,
+          "p1_count": 68,
+          "p2_count": 16,
+          "pmi": -0.67
+        },
+        {
+          "pair": [
+            "or",
+            "ty"
+          ],
+          "co_count": 6,
+          "p1_count": 65,
+          "p2_count": 16,
+          "pmi": -0.605
+        },
+        {
+          "pair": [
+            "qk",
+            "tc"
+          ],
+          "co_count": 7,
+          "p1_count": 18,
+          "p2_count": 67,
+          "pmi": -0.596
+        },
+        {
+          "pair": [
+            "dc",
+            "om"
+          ],
+          "co_count": 5,
+          "p1_count": 78,
+          "p2_count": 11,
+          "pmi": -0.59
+        },
+        {
+          "pair": [
+            "os",
+            "sc"
+          ],
+          "co_count": 7,
+          "p1_count": 31,
+          "p2_count": 38,
+          "pmi": -0.562
+        },
+        {
+          "pair": [
+            "rc",
+            "yt"
+          ],
+          "co_count": 7,
+          "p1_count": 14,
+          "p2_count": 84,
+          "pmi": -0.559
+        },
+        {
+          "pair": [
+            "kc",
+            "oi"
+          ],
+          "co_count": 9,
+          "p1_count": 71,
+          "p2_count": 21,
+          "pmi": -0.539
+        },
+        {
+          "pair": [
+            "ds",
+            "yp"
+          ],
+          "co_count": 5,
+          "p1_count": 46,
+          "p2_count": 18,
+          "pmi": -0.539
+        },
+        {
+          "pair": [
+            "ds",
+            "yo"
+          ],
+          "co_count": 5,
+          "p1_count": 46,
+          "p2_count": 18,
+          "pmi": -0.539
+        },
+        {
+          "pair": [
+            "ck",
+            "py"
+          ],
+          "co_count": 5,
+          "p1_count": 68,
+          "p2_count": 12,
+          "pmi": -0.518
+        },
+        {
+          "pair": [
+            "cp",
+            "ty"
+          ],
+          "co_count": 6,
+          "p1_count": 61,
+          "p2_count": 16,
+          "pmi": -0.513
+        },
+        {
+          "pair": [
+            "ds",
+            "oi"
+          ],
+          "co_count": 6,
+          "p1_count": 46,
+          "p2_count": 21,
+          "pmi": -0.498
+        },
+        {
+          "pair": [
+            "kc",
+            "qk"
+          ],
+          "co_count": 8,
+          "p1_count": 71,
+          "p2_count": 18,
+          "pmi": -0.487
+        }
+      ],
+      "top_cooccurring_pairs": [
+        [
+          [
+            "ch",
+            "da"
+          ],
+          114
+        ],
+        [
+          [
+            "ch",
+            "sh"
+          ],
+          114
+        ],
+        [
+          [
+            "da",
+            "sh"
+          ],
+          114
+        ],
+        [
+          [
+            "ch",
+            "qo"
+          ],
+          113
+        ],
+        [
+          [
+            "da",
+            "qo"
+          ],
+          113
+        ],
+        [
+          [
+            "qo",
+            "sh"
+          ],
+          113
+        ],
+        [
+          [
+            "ch",
+            "ot"
+          ],
+          111
+        ],
+        [
+          [
+            "da",
+            "ot"
+          ],
+          111
+        ],
+        [
+          [
+            "ot",
+            "sh"
+          ],
+          111
+        ],
+        [
+          [
+            "ot",
+            "qo"
+          ],
+          110
+        ],
+        [
+          [
+            "ch",
+            "ok"
+          ],
+          106
+        ],
+        [
+          [
+            "da",
+            "ok"
+          ],
+          106
+        ],
+        [
+          [
+            "ok",
+            "sh"
+          ],
+          106
+        ],
+        [
+          [
+            "ch",
+            "ct"
+          ],
+          105
+        ],
+        [
+          [
+            "ct",
+            "da"
+          ],
+          105
+        ],
+        [
+          [
+            "ct",
+            "sh"
+          ],
+          105
+        ],
+        [
+          [
+            "ok",
+            "qo"
+          ],
+          105
+        ],
+        [
+          [
+            "ct",
+            "qo"
+          ],
+          104
+        ],
+        [
+          [
+            "ok",
+            "ot"
+          ],
+          104
+        ],
+        [
+          [
+            "ct",
+            "ot"
+          ],
+          102
+        ],
+        [
+          [
+            "ct",
+            "ok"
+          ],
+          98
+        ],
+        [
+          [
+            "ch",
+            "do"
+          ],
+          87
+        ],
+        [
+          [
+            "da",
+            "do"
+          ],
+          87
+        ],
+        [
+          [
+            "do",
+            "sh"
+          ],
+          87
+        ],
+        [
+          [
+            "do",
+            "qo"
+          ],
+          86
+        ],
+        [
+          [
+            "do",
+            "ot"
+          ],
+          85
+        ],
+        [
+          [
+            "ch",
+            "yt"
+          ],
+          84
+        ],
+        [
+          [
+            "da",
+            "yt"
+          ],
+          84
+        ],
+        [
+          [
+            "sh",
+            "yt"
+          ],
+          84
+        ],
+        [
+          [
+            "ch",
+            "dy"
+          ],
+          83
+        ]
+      ],
+      "prefix_entry_counts": {
+        "sh": 114,
+        "da": 114,
+        "ch": 114,
+        "qo": 113,
+        "ot": 111,
+        "ok": 106,
+        "ct": 105,
+        "do": 87,
+        "yt": 84,
+        "dy": 83,
+        "ol": 82,
+        "yk": 82,
+        "dc": 78,
+        "so": 77,
+        "kc": 71,
+        "ck": 68,
+        "ko": 67,
+        "tc": 67,
+        "to": 66,
+        "or": 65,
+        "yc": 65,
+        "od": 62,
+        "cp": 61,
+        "sa": 57,
+        "oc": 56,
+        "ke": 55,
+        "ai": 52,
+        "op": 48,
+        "ds": 46,
+        "pc": 46
+      },
+      "total_entries_analyzed": 114
+    },
+    "sequential": {
+      "top_bigrams": [
+        [
+          [
+            "ch",
+            "ch"
+          ],
+          601
+        ],
+        [
+          [
+            "qo",
+            "ch"
+          ],
+          287
+        ],
+        [
+          [
+            "ch",
+            "da"
+          ],
+          250
+        ],
+        [
+          [
+            "ch",
+            "qo"
+          ],
+          221
+        ],
+        [
+          [
+            "da",
+            "ch"
+          ],
+          220
+        ],
+        [
+          [
+            "ch",
+            "sh"
+          ],
+          195
+        ],
+        [
+          [
+            "sh",
+            "ch"
+          ],
+          184
+        ],
+        [
+          [
+            "sh",
+            "qo"
+          ],
+          174
+        ],
+        [
+          [
+            "qo",
+            "qo"
+          ],
+          170
+        ],
+        [
+          [
+            "sh",
+            "sh"
+          ],
+          148
+        ],
+        [
+          [
+            "da",
+            "da"
+          ],
+          140
+        ],
+        [
+          [
+            "ok",
+            "ch"
+          ],
+          139
+        ],
+        [
+          [
+            "ch",
+            "ct"
+          ],
+          120
+        ],
+        [
+          [
+            "da",
+            "qo"
+          ],
+          119
+        ],
+        [
+          [
+            "ch",
+            "ok"
+          ],
+          113
+        ],
+        [
+          [
+            "qo",
+            "da"
+          ],
+          111
+        ],
+        [
+          [
+            "qo",
+            "sh"
+          ],
+          109
+        ],
+        [
+          [
+            "ot",
+            "ch"
+          ],
+          103
+        ],
+        [
+          [
+            "ch",
+            "ot"
+          ],
+          100
+        ],
+        [
+          [
+            "da",
+            "sh"
+          ],
+          98
+        ],
+        [
+          [
+            "ok",
+            "ok"
+          ],
+          90
+        ],
+        [
+          [
+            "ct",
+            "ch"
+          ],
+          89
+        ],
+        [
+          [
+            "qo",
+            "ok"
+          ],
+          81
+        ],
+        [
+          [
+            "sh",
+            "da"
+          ],
+          81
+        ],
+        [
+          [
+            "da",
+            "ok"
+          ],
+          76
+        ],
+        [
+          [
+            "ok",
+            "da"
+          ],
+          72
+        ],
+        [
+          [
+            "ok",
+            "qo"
+          ],
+          68
+        ],
+        [
+          [
+            "da",
+            "ct"
+          ],
+          66
+        ],
+        [
+          [
+            "ot",
+            "da"
+          ],
+          66
+        ],
+        [
+          [
+            "ot",
+            "ot"
+          ],
+          65
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "ch",
+            "ch",
+            "ch"
+          ],
+          158
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "ch"
+          ],
+          72
+        ],
+        [
+          [
+            "ch",
+            "da",
+            "ch"
+          ],
+          66
+        ],
+        [
+          [
+            "qo",
+            "ch",
+            "ch"
+          ],
+          64
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "da"
+          ],
+          57
+        ],
+        [
+          [
+            "da",
+            "ch",
+            "ch"
+          ],
+          57
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "qo"
+          ],
+          49
+        ],
+        [
+          [
+            "sh",
+            "ch",
+            "ch"
+          ],
+          45
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "ch"
+          ],
+          44
+        ],
+        [
+          [
+            "qo",
+            "ch",
+            "qo"
+          ],
+          36
+        ],
+        [
+          [
+            "da",
+            "ch",
+            "da"
+          ],
+          33
+        ],
+        [
+          [
+            "ch",
+            "sh",
+            "ch"
+          ],
+          33
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "sh"
+          ],
+          31
+        ],
+        [
+          [
+            "da",
+            "qo",
+            "ch"
+          ],
+          31
+        ],
+        [
+          [
+            "sh",
+            "ch",
+            "sh"
+          ],
+          30
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "ok"
+          ],
+          27
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "ct"
+          ],
+          27
+        ],
+        [
+          [
+            "sh",
+            "qo",
+            "ch"
+          ],
+          26
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "qo"
+          ],
+          25
+        ],
+        [
+          [
+            "sh",
+            "sh",
+            "sh"
+          ],
+          25
+        ],
+        [
+          [
+            "ch",
+            "sh",
+            "qo"
+          ],
+          25
+        ],
+        [
+          [
+            "qo",
+            "ch",
+            "ct"
+          ],
+          25
+        ],
+        [
+          [
+            "sh",
+            "qo",
+            "qo"
+          ],
+          24
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "da"
+          ],
+          24
+        ],
+        [
+          [
+            "ch",
+            "da",
+            "da"
+          ],
+          24
+        ],
+        [
+          [
+            "ch",
+            "sh",
+            "sh"
+          ],
+          22
+        ],
+        [
+          [
+            "qo",
+            "da",
+            "ch"
+          ],
+          22
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "qo"
+          ],
+          21
+        ],
+        [
+          [
+            "ok",
+            "ch",
+            "ch"
+          ],
+          21
+        ],
+        [
+          [
+            "ch",
+            "ot",
+            "ch"
+          ],
+          21
+        ]
+      ],
+      "strong_transitions": [
+        {
+          "from": "ko",
+          "to": "ch",
+          "count": 40,
+          "probability": 0.263
+        },
+        {
+          "from": "so",
+          "to": "ch",
+          "count": 48,
+          "probability": 0.261
+        },
+        {
+          "from": "ke",
+          "to": "ch",
+          "count": 32,
+          "probability": 0.246
+        },
+        {
+          "from": "yc",
+          "to": "ch",
+          "count": 30,
+          "probability": 0.236
+        },
+        {
+          "from": "ch",
+          "to": "ch",
+          "count": 601,
+          "probability": 0.23
+        },
+        {
+          "from": "kc",
+          "to": "ch",
+          "count": 39,
+          "probability": 0.224
+        },
+        {
+          "from": "qo",
+          "to": "ch",
+          "count": 287,
+          "probability": 0.218
+        },
+        {
+          "from": "do",
+          "to": "ch",
+          "count": 60,
+          "probability": 0.215
+        },
+        {
+          "from": "ai",
+          "to": "ch",
+          "count": 33,
+          "probability": 0.214
+        },
+        {
+          "from": "dc",
+          "to": "ch",
+          "count": 36,
+          "probability": 0.196
+        },
+        {
+          "from": "or",
+          "to": "ch",
+          "count": 38,
+          "probability": 0.191
+        },
+        {
+          "from": "tc",
+          "to": "ch",
+          "count": 31,
+          "probability": 0.19
+        },
+        {
+          "from": "to",
+          "to": "ch",
+          "count": 25,
+          "probability": 0.189
+        },
+        {
+          "from": "ol",
+          "to": "ch",
+          "count": 65,
+          "probability": 0.183
+        },
+        {
+          "from": "da",
+          "to": "ch",
+          "count": 220,
+          "probability": 0.182
+        },
+        {
+          "from": "ok",
+          "to": "ch",
+          "count": 139,
+          "probability": 0.182
+        },
+        {
+          "from": "dy",
+          "to": "ch",
+          "count": 33,
+          "probability": 0.181
+        },
+        {
+          "from": "yk",
+          "to": "ch",
+          "count": 51,
+          "probability": 0.179
+        },
+        {
+          "from": "ot",
+          "to": "ch",
+          "count": 103,
+          "probability": 0.166
+        },
+        {
+          "from": "ct",
+          "to": "ch",
+          "count": 89,
+          "probability": 0.161
+        }
+      ],
+      "top_opening_sequences": [
+        [
+          [
+            "pc",
+            "ch",
+            "ol"
+          ],
+          3
+        ],
+        [
+          [
+            "ko",
+            "ch",
+            "ot"
+          ],
+          2
+        ],
+        [
+          [
+            "ok",
+            "ch",
+            "sh"
+          ],
+          2
+        ],
+        [
+          [
+            "ko",
+            "ch",
+            "sh"
+          ],
+          2
+        ],
+        [
+          [
+            "po",
+            "qo",
+            "qo"
+          ],
+          2
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "ar"
+          ],
+          1
+        ],
+        [
+          [
+            "to",
+            "ch",
+            "op"
+          ],
+          1
+        ],
+        [
+          [
+            "sa",
+            "ot",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "do",
+            "or",
+            "da"
+          ],
+          1
+        ],
+        [
+          [
+            "ls",
+            "am",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "ke",
+            "ro",
+            "yk"
+          ],
+          1
+        ],
+        [
+          [
+            "po",
+            "so",
+            "dy"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "sh",
+            "oc"
+          ],
+          1
+        ],
+        [
+          [
+            "pa",
+            "da",
+            "sh"
+          ],
+          1
+        ],
+        [
+          [
+            "ts",
+            "sc",
+            "cf"
+          ],
+          1
+        ],
+        [
+          [
+            "po",
+            "sh",
+            "sh"
+          ],
+          1
+        ],
+        [
+          [
+            "to",
+            "op",
+            "sh"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "ch",
+            "sh"
+          ],
+          1
+        ],
+        [
+          [
+            "pd",
+            "yf",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "ts",
+            "sh",
+            "tc"
+          ],
+          1
+        ]
+      ],
+      "top_closing_sequences": [
+        [
+          [
+            "da",
+            "ch",
+            "ch"
+          ],
+          2
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "od",
+            "yk",
+            "ko"
+          ],
+          1
+        ],
+        [
+          [
+            "ot",
+            "qk",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "so",
+            "ch",
+            "ol"
+          ],
+          1
+        ],
+        [
+          [
+            "ra",
+            "ko",
+            "od"
+          ],
+          1
+        ],
+        [
+          [
+            "ck",
+            "qo",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "ch",
+            "or",
+            "or"
+          ],
+          1
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "od"
+          ],
+          1
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "ky"
+          ],
+          1
+        ],
+        [
+          [
+            "ok",
+            "ct",
+            "dy"
+          ],
+          1
+        ],
+        [
+          [
+            "sc",
+            "ct",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "so",
+            "kc",
+            "ok"
+          ],
+          1
+        ],
+        [
+          [
+            "kc",
+            "da",
+            "yo"
+          ],
+          1
+        ],
+        [
+          [
+            "ch",
+            "kc",
+            "yk"
+          ],
+          1
+        ],
+        [
+          [
+            "dc",
+            "ct",
+            "dy"
+          ],
+          1
+        ],
+        [
+          [
+            "ko",
+            "ko",
+            "da"
+          ],
+          1
+        ],
+        [
+          [
+            "ct",
+            "ch",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "dy",
+            "sh",
+            "qo"
+          ],
+          1
+        ],
+        [
+          [
+            "so",
+            "oa",
+            "oa"
+          ],
+          1
+        ]
+      ]
+    },
+    "entry_association": {
+      "entry_count_by_length": {
+        "short": 47,
+        "medium": 59,
+        "long": 8
+      },
+      "short_entry_prefix_rates": {
+        "ch": 17.55,
+        "qo": 10.66,
+        "da": 9.88,
+        "sh": 9.18,
+        "ot": 5.33,
+        "ct": 4.36,
+        "ok": 4.04,
+        "yk": 2.64,
+        "yt": 2.58,
+        "dy": 2.07,
+        "do": 1.96,
+        "kc": 1.88,
+        "dc": 1.7,
+        "tc": 1.51,
+        "ol": 1.43,
+        "so": 1.32,
+        "ck": 1.1,
+        "yc": 1.05,
+        "cp": 1.02,
+        "ko": 0.97,
+        "or": 0.89,
+        "to": 0.86,
+        "ds": 0.83,
+        "pc": 0.75,
+        "ke": 0.7,
+        "sa": 0.67,
+        "oc": 0.67,
+        "od": 0.65,
+        "op": 0.59,
+        "ka": 0.54
+      },
+      "medium_entry_prefix_rates": {
+        "ch": 19.97,
+        "qo": 8.75,
+        "sh": 8.62,
+        "da": 8.23,
+        "ok": 5.33,
+        "ct": 4.27,
+        "ot": 3.93,
+        "ol": 2.85,
+        "do": 2.14,
+        "yk": 1.81,
+        "ck": 1.69,
+        "sa": 1.67,
+        "dc": 1.5,
+        "yt": 1.45,
+        "or": 1.41,
+        "so": 1.39,
+        "kc": 1.25,
+        "ko": 1.17,
+        "tc": 1.17,
+        "dy": 1.11,
+        "ai": 1.11,
+        "to": 0.99,
+        "ke": 0.92,
+        "yc": 0.89,
+        "cp": 0.88,
+        "od": 0.88,
+        "op": 0.83,
+        "oc": 0.71,
+        "pc": 0.56,
+        "ar": 0.51
+      },
+      "long_entry_prefix_rates": {
+        "ch": 16.06,
+        "qo": 9.12,
+        "sh": 8.84,
+        "da": 8.11,
+        "ok": 7.68,
+        "ot": 4.65,
+        "ol": 3.18,
+        "ct": 2.21,
+        "or": 2.17,
+        "yk": 2.02,
+        "ai": 1.98,
+        "ar": 1.78,
+        "ck": 1.75,
+        "yt": 1.51,
+        "do": 1.47,
+        "al": 1.47,
+        "sa": 1.36,
+        "op": 1.32,
+        "ke": 1.24,
+        "od": 1.09,
+        "so": 1.05,
+        "ko": 1.01,
+        "to": 0.85,
+        "ta": 0.85,
+        "dy": 0.78,
+        "yc": 0.78,
+        "oc": 0.74,
+        "cp": 0.7,
+        "oe": 0.66,
+        "tc": 0.66
+      },
+      "short_enriched_prefixes": [
+        {
+          "prefix": "yt",
+          "short_rate": 2.58,
+          "medium_rate": 1.45
+        },
+        {
+          "prefix": "dy",
+          "short_rate": 2.07,
+          "medium_rate": 1.11
+        },
+        {
+          "prefix": "kc",
+          "short_rate": 1.88,
+          "medium_rate": 1.25
+        },
+        {
+          "prefix": "ds",
+          "short_rate": 0.83,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "ka",
+          "short_rate": 0.54,
+          "medium_rate": 0.01
+        }
+      ],
+      "long_enriched_prefixes": [
+        {
+          "prefix": "or",
+          "long_rate": 2.17,
+          "medium_rate": 1.41
+        },
+        {
+          "prefix": "ai",
+          "long_rate": 1.98,
+          "medium_rate": 1.11
+        },
+        {
+          "prefix": "ar",
+          "long_rate": 1.78,
+          "medium_rate": 0.51
+        },
+        {
+          "prefix": "al",
+          "long_rate": 1.47,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "op",
+          "long_rate": 1.32,
+          "medium_rate": 0.83
+        },
+        {
+          "prefix": "ta",
+          "long_rate": 0.85,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "oe",
+          "long_rate": 0.66,
+          "medium_rate": 0.01
+        }
+      ]
+    },
+    "hypotheses": {
+      "hypotheses": [
+        {
+          "prefix": "po",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.243, 60.4% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "pc",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.269, 52.6% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "yp",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.277, 55.9% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "op",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.306, 48.8% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "fc",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.341, 41.4% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "of",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.355, 47.1% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "cf",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.369, 29.4% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "cp",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.395, 36.8% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "ts",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.418, 36.1% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "ot",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.442, 26.0% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ar",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.515, 27.6% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "so",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.515, 25.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "od",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.531, 25.6% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "sc",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.545, 25.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "et",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.549, 28.6% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ke",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.563, 25.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ys",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.566, 34.4% in last quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "yc",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.567, 30.2% in last quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "yk",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.576, 29.1% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ai",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.579, 29.0% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "qo",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.274)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "sh",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.286)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "yt",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.294)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "dy",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.286)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "oa",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.288)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ck",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.278)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "am",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.316)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ct",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.29)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "sa",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.308)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ol",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.295)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "qc+qk",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=2.4, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ee+qe",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=2.284, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "o*+oi",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.981, co-occur 8 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "oq+os",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.879, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "lc+lo",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.859, co-occur 7 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "yt",
+          "proposed_role": "SHORT_ENTRY_MARKER",
+          "evidence": "Enriched in short entries (2.58% vs 1.45%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "dy",
+          "proposed_role": "SHORT_ENTRY_MARKER",
+          "evidence": "Enriched in short entries (2.07% vs 1.11%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "kc",
+          "proposed_role": "SHORT_ENTRY_MARKER",
+          "evidence": "Enriched in short entries (1.88% vs 1.25%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "or",
+          "proposed_role": "LONG_ENTRY_MARKER",
+          "evidence": "Enriched in long entries (2.17% vs 1.41%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ai",
+          "proposed_role": "LONG_ENTRY_MARKER",
+          "evidence": "Enriched in long entries (1.98% vs 1.11%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ar",
+          "proposed_role": "LONG_ENTRY_MARKER",
+          "evidence": "Enriched in long entries (1.78% vs 0.51%)",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "by_role": {
+        "ENTRY_INITIAL_MARKER": [
+          {
+            "prefix": "po",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.243, 60.4% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "pc",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.269, 52.6% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "yp",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.277, 55.9% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "op",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.306, 48.8% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "fc",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.341, 41.4% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "of",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.355, 47.1% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "cf",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.369, 29.4% in first quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "cp",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.395, 36.8% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "ts",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.418, 36.1% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "ot",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.442, 26.0% in first quintile",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "ENTRY_FINAL_MARKER": [
+          {
+            "prefix": "ar",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.515, 27.6% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "so",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.515, 25.4% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "od",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.531, 25.6% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "sc",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.545, 25.4% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "et",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.549, 28.6% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ke",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.563, 25.4% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ys",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.566, 34.4% in last quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "yc",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.567, 30.2% in last quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "yk",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.576, 29.1% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ai",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.579, 29.0% in last quintile",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "ENTRY_ELABORATOR": [
+          {
+            "prefix": "qo",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.274)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "sh",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.286)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "yt",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.294)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "dy",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.286)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "oa",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.288)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ck",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.278)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "am",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.316)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ct",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.29)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "sa",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.308)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ol",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.295)",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "FUNCTIONAL_PAIR": [
+          {
+            "prefix": "qc+qk",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=2.4, co-occur 5 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ee+qe",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=2.284, co-occur 5 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "o*+oi",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.981, co-occur 8 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "oq+os",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.879, co-occur 5 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "lc+lo",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.859, co-occur 7 times",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "SHORT_ENTRY_MARKER": [
+          {
+            "prefix": "yt",
+            "proposed_role": "SHORT_ENTRY_MARKER",
+            "evidence": "Enriched in short entries (2.58% vs 1.45%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "dy",
+            "proposed_role": "SHORT_ENTRY_MARKER",
+            "evidence": "Enriched in short entries (2.07% vs 1.11%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "kc",
+            "proposed_role": "SHORT_ENTRY_MARKER",
+            "evidence": "Enriched in short entries (1.88% vs 1.25%)",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "LONG_ENTRY_MARKER": [
+          {
+            "prefix": "or",
+            "proposed_role": "LONG_ENTRY_MARKER",
+            "evidence": "Enriched in long entries (2.17% vs 1.41%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ai",
+            "proposed_role": "LONG_ENTRY_MARKER",
+            "evidence": "Enriched in long entries (1.98% vs 1.11%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ar",
+            "proposed_role": "LONG_ENTRY_MARKER",
+            "evidence": "Enriched in long entries (1.78% vs 0.51%)",
+            "confidence": "MEDIUM"
+          }
+        ]
+      },
+      "disclaimer": "These are STRUCTURAL role hypotheses, not semantic interpretations. They describe where prefixes tend to appear and how they correlate with entry characteristics, not what they mean."
+    }
+  },
+  "currier_b": {
+    "section": "Currier B",
+    "word_count": 29204,
+    "entry_count": 83,
+    "positional": {
+      "all_stats": [
+        {
+          "prefix": "fa",
+          "count": 22,
+          "mean_position": 0.487,
+          "std_position": 0.313,
+          "quintiles": [
+            22.7,
+            36.4,
+            4.5,
+            9.1,
+            27.3
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "lr",
+          "count": 27,
+          "mean_position": 0.504,
+          "std_position": 0.261,
+          "quintiles": [
+            11.1,
+            22.2,
+            37.0,
+            3.7,
+            25.9
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "so",
+          "count": 258,
+          "mean_position": 0.515,
+          "std_position": 0.304,
+          "quintiles": [
+            22.5,
+            17.1,
+            19.0,
+            16.3,
+            25.2
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "os",
+          "count": 58,
+          "mean_position": 0.526,
+          "std_position": 0.308,
+          "quintiles": [
+            19.0,
+            17.2,
+            22.4,
+            12.1,
+            29.3
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ss",
+          "count": 31,
+          "mean_position": 0.536,
+          "std_position": 0.343,
+          "quintiles": [
+            19.4,
+            22.6,
+            9.7,
+            12.9,
+            35.5
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ar",
+          "count": 469,
+          "mean_position": 0.542,
+          "std_position": 0.293,
+          "quintiles": [
+            17.7,
+            17.3,
+            18.6,
+            20.0,
+            26.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "al",
+          "count": 477,
+          "mean_position": 0.543,
+          "std_position": 0.29,
+          "quintiles": [
+            15.7,
+            18.2,
+            19.7,
+            21.0,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ak",
+          "count": 40,
+          "mean_position": 0.579,
+          "std_position": 0.291,
+          "quintiles": [
+            12.5,
+            17.5,
+            25.0,
+            15.0,
+            30.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "oi",
+          "count": 67,
+          "mean_position": 0.581,
+          "std_position": 0.268,
+          "quintiles": [
+            6.0,
+            22.4,
+            20.9,
+            25.4,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ld",
+          "count": 51,
+          "mean_position": 0.615,
+          "std_position": 0.283,
+          "quintiles": [
+            11.8,
+            19.6,
+            13.7,
+            25.5,
+            29.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ys",
+          "count": 102,
+          "mean_position": 0.617,
+          "std_position": 0.288,
+          "quintiles": [
+            13.7,
+            8.8,
+            15.7,
+            26.5,
+            35.3
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ac",
+          "count": 23,
+          "mean_position": 0.646,
+          "std_position": 0.224,
+          "quintiles": [
+            8.7,
+            8.7,
+            21.7,
+            26.1,
+            34.8
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "oq",
+          "count": 25,
+          "mean_position": 0.698,
+          "std_position": 0.258,
+          "quintiles": [
+            8.0,
+            4.0,
+            24.0,
+            12.0,
+            52.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "yp",
+          "count": 51,
+          "mean_position": 0.322,
+          "std_position": 0.299,
+          "quintiles": [
+            49.0,
+            15.7,
+            11.8,
+            13.7,
+            9.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "of",
+          "count": 67,
+          "mean_position": 0.373,
+          "std_position": 0.278,
+          "quintiles": [
+            32.8,
+            22.4,
+            25.4,
+            10.4,
+            9.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "do",
+          "count": 162,
+          "mean_position": 0.408,
+          "std_position": 0.305,
+          "quintiles": [
+            34.0,
+            20.4,
+            15.4,
+            14.8,
+            15.4
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "pc",
+          "count": 255,
+          "mean_position": 0.419,
+          "std_position": 0.278,
+          "quintiles": [
+            28.6,
+            17.6,
+            24.7,
+            20.0,
+            9.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "fc",
+          "count": 62,
+          "mean_position": 0.42,
+          "std_position": 0.276,
+          "quintiles": [
+            32.3,
+            11.3,
+            22.6,
+            25.8,
+            8.1
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "op",
+          "count": 317,
+          "mean_position": 0.431,
+          "std_position": 0.292,
+          "quintiles": [
+            27.8,
+            18.3,
+            21.1,
+            21.1,
+            11.7
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "sc",
+          "count": 34,
+          "mean_position": 0.436,
+          "std_position": 0.275,
+          "quintiles": [
+            26.5,
+            17.6,
+            26.5,
+            17.6,
+            11.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "oe",
+          "count": 74,
+          "mean_position": 0.438,
+          "std_position": 0.302,
+          "quintiles": [
+            28.4,
+            21.6,
+            14.9,
+            17.6,
+            17.6
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "oc",
+          "count": 105,
+          "mean_position": 0.443,
+          "std_position": 0.314,
+          "quintiles": [
+            30.5,
+            22.9,
+            15.2,
+            12.4,
+            19.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "am",
+          "count": 94,
+          "mean_position": 0.449,
+          "std_position": 0.283,
+          "quintiles": [
+            25.5,
+            26.6,
+            16.0,
+            14.9,
+            17.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "dc",
+          "count": 132,
+          "mean_position": 0.479,
+          "std_position": 0.307,
+          "quintiles": [
+            25.8,
+            17.4,
+            22.0,
+            13.6,
+            21.2
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "od",
+          "count": 172,
+          "mean_position": 0.481,
+          "std_position": 0.292,
+          "quintiles": [
+            25.6,
+            15.1,
+            20.9,
+            22.7,
+            15.7
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "yt",
+          "count": 319,
+          "mean_position": 0.493,
+          "std_position": 0.313,
+          "quintiles": [
+            26.0,
+            16.0,
+            16.9,
+            16.3,
+            24.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "oa",
+          "count": 59,
+          "mean_position": 0.541,
+          "std_position": 0.332,
+          "quintiles": [
+            25.4,
+            10.2,
+            10.2,
+            25.4,
+            28.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "ts",
+          "count": 62,
+          "mean_position": 0.444,
+          "std_position": 0.255,
+          "quintiles": [
+            14.5,
+            29.0,
+            30.6,
+            14.5,
+            11.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "rs",
+          "count": 25,
+          "mean_position": 0.447,
+          "std_position": 0.26,
+          "quintiles": [
+            20.0,
+            28.0,
+            20.0,
+            20.0,
+            12.0
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ps",
+          "count": 45,
+          "mean_position": 0.45,
+          "std_position": 0.268,
+          "quintiles": [
+            17.8,
+            24.4,
+            28.9,
+            22.2,
+            6.7
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "de",
+          "count": 31,
+          "mean_position": 0.451,
+          "std_position": 0.268,
+          "quintiles": [
+            19.4,
+            35.5,
+            16.1,
+            12.9,
+            16.1
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ro",
+          "count": 118,
+          "mean_position": 0.453,
+          "std_position": 0.293,
+          "quintiles": [
+            22.9,
+            26.3,
+            17.8,
+            14.4,
+            18.6
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "cp",
+          "count": 56,
+          "mean_position": 0.455,
+          "std_position": 0.27,
+          "quintiles": [
+            21.4,
+            19.6,
+            26.8,
+            17.9,
+            14.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ee",
+          "count": 67,
+          "mean_position": 0.474,
+          "std_position": 0.276,
+          "quintiles": [
+            22.4,
+            13.4,
+            29.9,
+            20.9,
+            13.4
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "qe",
+          "count": 66,
+          "mean_position": 0.478,
+          "std_position": 0.298,
+          "quintiles": [
+            21.2,
+            27.3,
+            12.1,
+            15.2,
+            24.2
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "rc",
+          "count": 54,
+          "mean_position": 0.478,
+          "std_position": 0.26,
+          "quintiles": [
+            16.7,
+            29.6,
+            20.4,
+            18.5,
+            14.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "kc",
+          "count": 127,
+          "mean_position": 0.488,
+          "std_position": 0.278,
+          "quintiles": [
+            21.3,
+            18.1,
+            19.7,
+            29.1,
+            11.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ko",
+          "count": 77,
+          "mean_position": 0.495,
+          "std_position": 0.289,
+          "quintiles": [
+            19.5,
+            19.5,
+            28.6,
+            11.7,
+            20.8
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "to",
+          "count": 154,
+          "mean_position": 0.499,
+          "std_position": 0.278,
+          "quintiles": [
+            19.5,
+            18.8,
+            18.2,
+            27.9,
+            15.6
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "te",
+          "count": 214,
+          "mean_position": 0.501,
+          "std_position": 0.291,
+          "quintiles": [
+            20.1,
+            24.3,
+            14.0,
+            20.1,
+            21.5
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ll",
+          "count": 21,
+          "mean_position": 0.513,
+          "std_position": 0.232,
+          "quintiles": [
+            9.5,
+            23.8,
+            28.6,
+            28.6,
+            9.5
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ct",
+          "count": 92,
+          "mean_position": 0.525,
+          "std_position": 0.288,
+          "quintiles": [
+            18.5,
+            13.0,
+            28.3,
+            20.7,
+            19.6
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ks",
+          "count": 49,
+          "mean_position": 0.528,
+          "std_position": 0.264,
+          "quintiles": [
+            14.3,
+            14.3,
+            30.6,
+            24.5,
+            16.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "lt",
+          "count": 43,
+          "mean_position": 0.535,
+          "std_position": 0.277,
+          "quintiles": [
+            20.9,
+            7.0,
+            25.6,
+            23.3,
+            23.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "la",
+          "count": 70,
+          "mean_position": 0.537,
+          "std_position": 0.267,
+          "quintiles": [
+            11.4,
+            25.7,
+            20.0,
+            18.6,
+            24.3
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "lp",
+          "count": 23,
+          "mean_position": 0.55,
+          "std_position": 0.271,
+          "quintiles": [
+            13.0,
+            17.4,
+            21.7,
+            26.1,
+            21.7
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "pa",
+          "count": 58,
+          "mean_position": 0.556,
+          "std_position": 0.251,
+          "quintiles": [
+            12.1,
+            12.1,
+            27.6,
+            31.0,
+            17.2
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ta",
+          "count": 228,
+          "mean_position": 0.564,
+          "std_position": 0.277,
+          "quintiles": [
+            15.8,
+            13.2,
+            22.4,
+            26.3,
+            22.4
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "yd",
+          "count": 29,
+          "mean_position": 0.566,
+          "std_position": 0.316,
+          "quintiles": [
+            17.2,
+            10.3,
+            20.7,
+            27.6,
+            24.1
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "qc",
+          "count": 35,
+          "mean_position": 0.576,
+          "std_position": 0.22,
+          "quintiles": [
+            2.9,
+            14.3,
+            37.1,
+            22.9,
+            22.9
+          ],
+          "position_type": "MIXED"
+        },
+        {
+          "prefix": "ck",
+          "count": 48,
+          "mean_position": 0.465,
+          "std_position": 0.285,
+          "quintiles": [
+            22.9,
+            20.8,
+            18.8,
+            22.9,
+            14.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "qo",
+          "count": 4739,
+          "mean_position": 0.479,
+          "std_position": 0.285,
+          "quintiles": [
+            21.9,
+            21.5,
+            19.1,
+            20.2,
+            17.4
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "da",
+          "count": 1362,
+          "mean_position": 0.483,
+          "std_position": 0.287,
+          "quintiles": [
+            20.3,
+            22.8,
+            20.6,
+            17.7,
+            18.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ds",
+          "count": 101,
+          "mean_position": 0.486,
+          "std_position": 0.297,
+          "quintiles": [
+            23.8,
+            16.8,
+            16.8,
+            25.7,
+            16.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ot",
+          "count": 1795,
+          "mean_position": 0.488,
+          "std_position": 0.307,
+          "quintiles": [
+            23.5,
+            19.8,
+            16.5,
+            18.8,
+            21.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "lo",
+          "count": 212,
+          "mean_position": 0.492,
+          "std_position": 0.288,
+          "quintiles": [
+            21.2,
+            18.9,
+            20.8,
+            22.2,
+            17.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ch",
+          "count": 4075,
+          "mean_position": 0.5,
+          "std_position": 0.286,
+          "quintiles": [
+            19.6,
+            19.9,
+            21.5,
+            19.2,
+            19.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sh",
+          "count": 2460,
+          "mean_position": 0.501,
+          "std_position": 0.277,
+          "quintiles": [
+            18.0,
+            20.9,
+            20.4,
+            22.4,
+            18.2
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "tc",
+          "count": 182,
+          "mean_position": 0.505,
+          "std_position": 0.274,
+          "quintiles": [
+            16.5,
+            23.6,
+            22.0,
+            18.7,
+            19.2
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sa",
+          "count": 527,
+          "mean_position": 0.506,
+          "std_position": 0.288,
+          "quintiles": [
+            18.0,
+            23.0,
+            19.2,
+            19.4,
+            20.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "dy",
+          "count": 186,
+          "mean_position": 0.507,
+          "std_position": 0.301,
+          "quintiles": [
+            21.0,
+            19.4,
+            16.7,
+            20.4,
+            22.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ke",
+          "count": 373,
+          "mean_position": 0.51,
+          "std_position": 0.286,
+          "quintiles": [
+            18.8,
+            18.8,
+            21.2,
+            18.0,
+            23.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ls",
+          "count": 153,
+          "mean_position": 0.514,
+          "std_position": 0.27,
+          "quintiles": [
+            16.3,
+            19.0,
+            24.2,
+            23.5,
+            17.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "po",
+          "count": 177,
+          "mean_position": 0.517,
+          "std_position": 0.282,
+          "quintiles": [
+            17.5,
+            15.8,
+            20.3,
+            25.4,
+            20.9
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ok",
+          "count": 1809,
+          "mean_position": 0.518,
+          "std_position": 0.299,
+          "quintiles": [
+            20.1,
+            19.3,
+            17.7,
+            19.5,
+            23.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "yk",
+          "count": 403,
+          "mean_position": 0.518,
+          "std_position": 0.297,
+          "quintiles": [
+            18.1,
+            20.3,
+            19.6,
+            18.6,
+            23.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "or",
+          "count": 549,
+          "mean_position": 0.519,
+          "std_position": 0.293,
+          "quintiles": [
+            17.9,
+            18.8,
+            21.3,
+            19.1,
+            23.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ol",
+          "count": 1558,
+          "mean_position": 0.519,
+          "std_position": 0.286,
+          "quintiles": [
+            18.5,
+            17.5,
+            21.4,
+            21.5,
+            21.1
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ai",
+          "count": 801,
+          "mean_position": 0.52,
+          "std_position": 0.283,
+          "quintiles": [
+            16.4,
+            21.0,
+            21.3,
+            19.5,
+            21.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "yc",
+          "count": 180,
+          "mean_position": 0.52,
+          "std_position": 0.277,
+          "quintiles": [
+            17.8,
+            16.7,
+            25.0,
+            19.4,
+            21.1
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "lc",
+          "count": 352,
+          "mean_position": 0.538,
+          "std_position": 0.274,
+          "quintiles": [
+            13.6,
+            22.2,
+            19.3,
+            21.6,
+            23.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ka",
+          "count": 375,
+          "mean_position": 0.54,
+          "std_position": 0.281,
+          "quintiles": [
+            14.7,
+            21.3,
+            19.5,
+            20.0,
+            24.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ra",
+          "count": 273,
+          "mean_position": 0.544,
+          "std_position": 0.283,
+          "quintiles": [
+            14.7,
+            18.7,
+            21.2,
+            20.9,
+            24.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "dl",
+          "count": 35,
+          "mean_position": 0.546,
+          "std_position": 0.288,
+          "quintiles": [
+            17.1,
+            17.1,
+            17.1,
+            25.7,
+            22.9
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "lk",
+          "count": 514,
+          "mean_position": 0.549,
+          "std_position": 0.275,
+          "quintiles": [
+            14.8,
+            17.1,
+            21.0,
+            24.3,
+            22.8
+          ],
+          "position_type": "UNIFORM"
+        }
+      ],
+      "initial_prefixes": [
+        {
+          "prefix": "yp",
+          "count": 51,
+          "mean_position": 0.322,
+          "std_position": 0.299,
+          "quintiles": [
+            49.0,
+            15.7,
+            11.8,
+            13.7,
+            9.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "of",
+          "count": 67,
+          "mean_position": 0.373,
+          "std_position": 0.278,
+          "quintiles": [
+            32.8,
+            22.4,
+            25.4,
+            10.4,
+            9.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "do",
+          "count": 162,
+          "mean_position": 0.408,
+          "std_position": 0.305,
+          "quintiles": [
+            34.0,
+            20.4,
+            15.4,
+            14.8,
+            15.4
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "pc",
+          "count": 255,
+          "mean_position": 0.419,
+          "std_position": 0.278,
+          "quintiles": [
+            28.6,
+            17.6,
+            24.7,
+            20.0,
+            9.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "fc",
+          "count": 62,
+          "mean_position": 0.42,
+          "std_position": 0.276,
+          "quintiles": [
+            32.3,
+            11.3,
+            22.6,
+            25.8,
+            8.1
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "op",
+          "count": 317,
+          "mean_position": 0.431,
+          "std_position": 0.292,
+          "quintiles": [
+            27.8,
+            18.3,
+            21.1,
+            21.1,
+            11.7
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "sc",
+          "count": 34,
+          "mean_position": 0.436,
+          "std_position": 0.275,
+          "quintiles": [
+            26.5,
+            17.6,
+            26.5,
+            17.6,
+            11.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "oe",
+          "count": 74,
+          "mean_position": 0.438,
+          "std_position": 0.302,
+          "quintiles": [
+            28.4,
+            21.6,
+            14.9,
+            17.6,
+            17.6
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "oc",
+          "count": 105,
+          "mean_position": 0.443,
+          "std_position": 0.314,
+          "quintiles": [
+            30.5,
+            22.9,
+            15.2,
+            12.4,
+            19.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "am",
+          "count": 94,
+          "mean_position": 0.449,
+          "std_position": 0.283,
+          "quintiles": [
+            25.5,
+            26.6,
+            16.0,
+            14.9,
+            17.0
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "dc",
+          "count": 132,
+          "mean_position": 0.479,
+          "std_position": 0.307,
+          "quintiles": [
+            25.8,
+            17.4,
+            22.0,
+            13.6,
+            21.2
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "od",
+          "count": 172,
+          "mean_position": 0.481,
+          "std_position": 0.292,
+          "quintiles": [
+            25.6,
+            15.1,
+            20.9,
+            22.7,
+            15.7
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "yt",
+          "count": 319,
+          "mean_position": 0.493,
+          "std_position": 0.313,
+          "quintiles": [
+            26.0,
+            16.0,
+            16.9,
+            16.3,
+            24.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        },
+        {
+          "prefix": "oa",
+          "count": 59,
+          "mean_position": 0.541,
+          "std_position": 0.332,
+          "quintiles": [
+            25.4,
+            10.2,
+            10.2,
+            25.4,
+            28.8
+          ],
+          "position_type": "INITIAL_TENDENCY"
+        }
+      ],
+      "final_prefixes": [
+        {
+          "prefix": "fa",
+          "count": 22,
+          "mean_position": 0.487,
+          "std_position": 0.313,
+          "quintiles": [
+            22.7,
+            36.4,
+            4.5,
+            9.1,
+            27.3
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "lr",
+          "count": 27,
+          "mean_position": 0.504,
+          "std_position": 0.261,
+          "quintiles": [
+            11.1,
+            22.2,
+            37.0,
+            3.7,
+            25.9
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "so",
+          "count": 258,
+          "mean_position": 0.515,
+          "std_position": 0.304,
+          "quintiles": [
+            22.5,
+            17.1,
+            19.0,
+            16.3,
+            25.2
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "os",
+          "count": 58,
+          "mean_position": 0.526,
+          "std_position": 0.308,
+          "quintiles": [
+            19.0,
+            17.2,
+            22.4,
+            12.1,
+            29.3
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ss",
+          "count": 31,
+          "mean_position": 0.536,
+          "std_position": 0.343,
+          "quintiles": [
+            19.4,
+            22.6,
+            9.7,
+            12.9,
+            35.5
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ar",
+          "count": 469,
+          "mean_position": 0.542,
+          "std_position": 0.293,
+          "quintiles": [
+            17.7,
+            17.3,
+            18.6,
+            20.0,
+            26.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "al",
+          "count": 477,
+          "mean_position": 0.543,
+          "std_position": 0.29,
+          "quintiles": [
+            15.7,
+            18.2,
+            19.7,
+            21.0,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ak",
+          "count": 40,
+          "mean_position": 0.579,
+          "std_position": 0.291,
+          "quintiles": [
+            12.5,
+            17.5,
+            25.0,
+            15.0,
+            30.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "oi",
+          "count": 67,
+          "mean_position": 0.581,
+          "std_position": 0.268,
+          "quintiles": [
+            6.0,
+            22.4,
+            20.9,
+            25.4,
+            25.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ld",
+          "count": 51,
+          "mean_position": 0.615,
+          "std_position": 0.283,
+          "quintiles": [
+            11.8,
+            19.6,
+            13.7,
+            25.5,
+            29.4
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ys",
+          "count": 102,
+          "mean_position": 0.617,
+          "std_position": 0.288,
+          "quintiles": [
+            13.7,
+            8.8,
+            15.7,
+            26.5,
+            35.3
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "ac",
+          "count": 23,
+          "mean_position": 0.646,
+          "std_position": 0.224,
+          "quintiles": [
+            8.7,
+            8.7,
+            21.7,
+            26.1,
+            34.8
+          ],
+          "position_type": "FINAL_TENDENCY"
+        },
+        {
+          "prefix": "oq",
+          "count": 25,
+          "mean_position": 0.698,
+          "std_position": 0.258,
+          "quintiles": [
+            8.0,
+            4.0,
+            24.0,
+            12.0,
+            52.0
+          ],
+          "position_type": "FINAL_TENDENCY"
+        }
+      ],
+      "uniform_prefixes": [
+        {
+          "prefix": "ck",
+          "count": 48,
+          "mean_position": 0.465,
+          "std_position": 0.285,
+          "quintiles": [
+            22.9,
+            20.8,
+            18.8,
+            22.9,
+            14.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "qo",
+          "count": 4739,
+          "mean_position": 0.479,
+          "std_position": 0.285,
+          "quintiles": [
+            21.9,
+            21.5,
+            19.1,
+            20.2,
+            17.4
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "da",
+          "count": 1362,
+          "mean_position": 0.483,
+          "std_position": 0.287,
+          "quintiles": [
+            20.3,
+            22.8,
+            20.6,
+            17.7,
+            18.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ds",
+          "count": 101,
+          "mean_position": 0.486,
+          "std_position": 0.297,
+          "quintiles": [
+            23.8,
+            16.8,
+            16.8,
+            25.7,
+            16.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ot",
+          "count": 1795,
+          "mean_position": 0.488,
+          "std_position": 0.307,
+          "quintiles": [
+            23.5,
+            19.8,
+            16.5,
+            18.8,
+            21.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "lo",
+          "count": 212,
+          "mean_position": 0.492,
+          "std_position": 0.288,
+          "quintiles": [
+            21.2,
+            18.9,
+            20.8,
+            22.2,
+            17.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ch",
+          "count": 4075,
+          "mean_position": 0.5,
+          "std_position": 0.286,
+          "quintiles": [
+            19.6,
+            19.9,
+            21.5,
+            19.2,
+            19.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sh",
+          "count": 2460,
+          "mean_position": 0.501,
+          "std_position": 0.277,
+          "quintiles": [
+            18.0,
+            20.9,
+            20.4,
+            22.4,
+            18.2
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "tc",
+          "count": 182,
+          "mean_position": 0.505,
+          "std_position": 0.274,
+          "quintiles": [
+            16.5,
+            23.6,
+            22.0,
+            18.7,
+            19.2
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "sa",
+          "count": 527,
+          "mean_position": 0.506,
+          "std_position": 0.288,
+          "quintiles": [
+            18.0,
+            23.0,
+            19.2,
+            19.4,
+            20.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "dy",
+          "count": 186,
+          "mean_position": 0.507,
+          "std_position": 0.301,
+          "quintiles": [
+            21.0,
+            19.4,
+            16.7,
+            20.4,
+            22.6
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ke",
+          "count": 373,
+          "mean_position": 0.51,
+          "std_position": 0.286,
+          "quintiles": [
+            18.8,
+            18.8,
+            21.2,
+            18.0,
+            23.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ls",
+          "count": 153,
+          "mean_position": 0.514,
+          "std_position": 0.27,
+          "quintiles": [
+            16.3,
+            19.0,
+            24.2,
+            23.5,
+            17.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "po",
+          "count": 177,
+          "mean_position": 0.517,
+          "std_position": 0.282,
+          "quintiles": [
+            17.5,
+            15.8,
+            20.3,
+            25.4,
+            20.9
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ok",
+          "count": 1809,
+          "mean_position": 0.518,
+          "std_position": 0.299,
+          "quintiles": [
+            20.1,
+            19.3,
+            17.7,
+            19.5,
+            23.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "yk",
+          "count": 403,
+          "mean_position": 0.518,
+          "std_position": 0.297,
+          "quintiles": [
+            18.1,
+            20.3,
+            19.6,
+            18.6,
+            23.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "or",
+          "count": 549,
+          "mean_position": 0.519,
+          "std_position": 0.293,
+          "quintiles": [
+            17.9,
+            18.8,
+            21.3,
+            19.1,
+            23.0
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ol",
+          "count": 1558,
+          "mean_position": 0.519,
+          "std_position": 0.286,
+          "quintiles": [
+            18.5,
+            17.5,
+            21.4,
+            21.5,
+            21.1
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ai",
+          "count": 801,
+          "mean_position": 0.52,
+          "std_position": 0.283,
+          "quintiles": [
+            16.4,
+            21.0,
+            21.3,
+            19.5,
+            21.8
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "yc",
+          "count": 180,
+          "mean_position": 0.52,
+          "std_position": 0.277,
+          "quintiles": [
+            17.8,
+            16.7,
+            25.0,
+            19.4,
+            21.1
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "lc",
+          "count": 352,
+          "mean_position": 0.538,
+          "std_position": 0.274,
+          "quintiles": [
+            13.6,
+            22.2,
+            19.3,
+            21.6,
+            23.3
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ka",
+          "count": 375,
+          "mean_position": 0.54,
+          "std_position": 0.281,
+          "quintiles": [
+            14.7,
+            21.3,
+            19.5,
+            20.0,
+            24.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "ra",
+          "count": 273,
+          "mean_position": 0.544,
+          "std_position": 0.283,
+          "quintiles": [
+            14.7,
+            18.7,
+            21.2,
+            20.9,
+            24.5
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "dl",
+          "count": 35,
+          "mean_position": 0.546,
+          "std_position": 0.288,
+          "quintiles": [
+            17.1,
+            17.1,
+            17.1,
+            25.7,
+            22.9
+          ],
+          "position_type": "UNIFORM"
+        },
+        {
+          "prefix": "lk",
+          "count": 514,
+          "mean_position": 0.549,
+          "std_position": 0.275,
+          "quintiles": [
+            14.8,
+            17.1,
+            21.0,
+            24.3,
+            22.8
+          ],
+          "position_type": "UNIFORM"
+        }
+      ],
+      "count_by_type": {
+        "INITIAL_TENDENCY": 14,
+        "FINAL_TENDENCY": 13,
+        "UNIFORM": 25,
+        "MIXED": 23
+      }
+    },
+    "cooccurrence": {
+      "positive_associations": [
+        {
+          "pair": [
+            "k*",
+            "ss"
+          ],
+          "co_count": 6,
+          "p1_count": 7,
+          "p2_count": 16,
+          "pmi": 2.153
+        },
+        {
+          "pair": [
+            "pe",
+            "sc"
+          ],
+          "co_count": 5,
+          "p1_count": 6,
+          "p2_count": 18,
+          "pmi": 1.942
+        },
+        {
+          "pair": [
+            "ac",
+            "lf"
+          ],
+          "co_count": 5,
+          "p1_count": 14,
+          "p2_count": 8,
+          "pmi": 1.89
+        },
+        {
+          "pair": [
+            "le",
+            "lp"
+          ],
+          "co_count": 5,
+          "p1_count": 8,
+          "p2_count": 14,
+          "pmi": 1.89
+        },
+        {
+          "pair": [
+            "fo",
+            "lp"
+          ],
+          "co_count": 5,
+          "p1_count": 9,
+          "p2_count": 14,
+          "pmi": 1.72
+        },
+        {
+          "pair": [
+            "ad",
+            "pd"
+          ],
+          "co_count": 6,
+          "p1_count": 14,
+          "p2_count": 11,
+          "pmi": 1.693
+        },
+        {
+          "pair": [
+            "ad",
+            "ry"
+          ],
+          "co_count": 6,
+          "p1_count": 14,
+          "p2_count": 11,
+          "pmi": 1.693
+        },
+        {
+          "pair": [
+            "ed",
+            "rc"
+          ],
+          "co_count": 5,
+          "p1_count": 6,
+          "p2_count": 22,
+          "pmi": 1.653
+        },
+        {
+          "pair": [
+            "de",
+            "k*"
+          ],
+          "co_count": 6,
+          "p1_count": 23,
+          "p2_count": 7,
+          "pmi": 1.629
+        },
+        {
+          "pair": [
+            "de",
+            "pe"
+          ],
+          "co_count": 5,
+          "p1_count": 23,
+          "p2_count": 6,
+          "pmi": 1.588
+        },
+        {
+          "pair": [
+            "ad",
+            "cf"
+          ],
+          "co_count": 5,
+          "p1_count": 14,
+          "p2_count": 10,
+          "pmi": 1.568
+        },
+        {
+          "pair": [
+            "rs",
+            "ss"
+          ],
+          "co_count": 8,
+          "p1_count": 14,
+          "p2_count": 16,
+          "pmi": 1.568
+        },
+        {
+          "pair": [
+            "pd",
+            "sy"
+          ],
+          "co_count": 5,
+          "p1_count": 11,
+          "p2_count": 13,
+          "pmi": 1.537
+        },
+        {
+          "pair": [
+            "dk",
+            "rs"
+          ],
+          "co_count": 6,
+          "p1_count": 13,
+          "p2_count": 14,
+          "pmi": 1.452
+        },
+        {
+          "pair": [
+            "o*",
+            "ry"
+          ],
+          "co_count": 5,
+          "p1_count": 14,
+          "p2_count": 11,
+          "pmi": 1.43
+        },
+        {
+          "pair": [
+            "la",
+            "py"
+          ],
+          "co_count": 5,
+          "p1_count": 31,
+          "p2_count": 5,
+          "pmi": 1.421
+        },
+        {
+          "pair": [
+            "ak",
+            "fo"
+          ],
+          "co_count": 8,
+          "p1_count": 28,
+          "p2_count": 9,
+          "pmi": 1.398
+        },
+        {
+          "pair": [
+            "cf",
+            "om"
+          ],
+          "co_count": 5,
+          "p1_count": 10,
+          "p2_count": 16,
+          "pmi": 1.375
+        },
+        {
+          "pair": [
+            "de",
+            "oy"
+          ],
+          "co_count": 5,
+          "p1_count": 23,
+          "p2_count": 7,
+          "pmi": 1.366
+        },
+        {
+          "pair": [
+            "ky",
+            "lp"
+          ],
+          "co_count": 6,
+          "p1_count": 14,
+          "p2_count": 14,
+          "pmi": 1.345
+        }
+      ],
+      "negative_associations": [
+        {
+          "pair": [
+            "ee",
+            "qc"
+          ],
+          "co_count": 5,
+          "p1_count": 39,
+          "p2_count": 22,
+          "pmi": -1.048
+        },
+        {
+          "pair": [
+            "fa",
+            "lk"
+          ],
+          "co_count": 5,
+          "p1_count": 13,
+          "p2_count": 54,
+          "pmi": -0.758
+        },
+        {
+          "pair": [
+            "ee",
+            "ts"
+          ],
+          "co_count": 10,
+          "p1_count": 39,
+          "p2_count": 35,
+          "pmi": -0.718
+        },
+        {
+          "pair": [
+            "od",
+            "yl"
+          ],
+          "co_count": 6,
+          "p1_count": 58,
+          "p2_count": 14,
+          "pmi": -0.705
+        },
+        {
+          "pair": [
+            "ct",
+            "yo"
+          ],
+          "co_count": 6,
+          "p1_count": 48,
+          "p2_count": 16,
+          "pmi": -0.625
+        },
+        {
+          "pair": [
+            "fa",
+            "te"
+          ],
+          "co_count": 6,
+          "p1_count": 13,
+          "p2_count": 59,
+          "pmi": -0.623
+        },
+        {
+          "pair": [
+            "ct",
+            "fa"
+          ],
+          "co_count": 5,
+          "p1_count": 48,
+          "p2_count": 13,
+          "pmi": -0.588
+        },
+        {
+          "pair": [
+            "ee",
+            "yo"
+          ],
+          "co_count": 5,
+          "p1_count": 39,
+          "p2_count": 16,
+          "pmi": -0.588
+        },
+        {
+          "pair": [
+            "ll",
+            "yt"
+          ],
+          "co_count": 6,
+          "p1_count": 11,
+          "p2_count": 68,
+          "pmi": -0.587
+        },
+        {
+          "pair": [
+            "ak",
+            "ck"
+          ],
+          "co_count": 7,
+          "p1_count": 28,
+          "p2_count": 31,
+          "pmi": -0.579
+        },
+        {
+          "pair": [
+            "oc",
+            "rs"
+          ],
+          "co_count": 5,
+          "p1_count": 44,
+          "p2_count": 14,
+          "pmi": -0.57
+        },
+        {
+          "pair": [
+            "cf",
+            "tc"
+          ],
+          "co_count": 5,
+          "p1_count": 10,
+          "p2_count": 61,
+          "pmi": -0.556
+        },
+        {
+          "pair": [
+            "ly",
+            "tc"
+          ],
+          "co_count": 6,
+          "p1_count": 12,
+          "p2_count": 61,
+          "pmi": -0.556
+        },
+        {
+          "pair": [
+            "ko",
+            "yp"
+          ],
+          "co_count": 8,
+          "p1_count": 39,
+          "p2_count": 25,
+          "pmi": -0.554
+        },
+        {
+          "pair": [
+            "ak",
+            "ee"
+          ],
+          "co_count": 9,
+          "p1_count": 28,
+          "p2_count": 39,
+          "pmi": -0.548
+        },
+        {
+          "pair": [
+            "ck",
+            "ts"
+          ],
+          "co_count": 9,
+          "p1_count": 31,
+          "p2_count": 35,
+          "pmi": -0.539
+        },
+        {
+          "pair": [
+            "am",
+            "lp"
+          ],
+          "co_count": 5,
+          "p1_count": 43,
+          "p2_count": 14,
+          "pmi": -0.537
+        },
+        {
+          "pair": [
+            "am",
+            "rs"
+          ],
+          "co_count": 5,
+          "p1_count": 43,
+          "p2_count": 14,
+          "pmi": -0.537
+        },
+        {
+          "pair": [
+            "fa",
+            "po"
+          ],
+          "co_count": 6,
+          "p1_count": 13,
+          "p2_count": 55,
+          "pmi": -0.522
+        },
+        {
+          "pair": [
+            "de",
+            "ks"
+          ],
+          "co_count": 6,
+          "p1_count": 23,
+          "p2_count": 31,
+          "pmi": -0.518
+        }
+      ],
+      "top_cooccurring_pairs": [
+        [
+          [
+            "ch",
+            "da"
+          ],
+          83
+        ],
+        [
+          [
+            "ch",
+            "ok"
+          ],
+          83
+        ],
+        [
+          [
+            "ch",
+            "ot"
+          ],
+          83
+        ],
+        [
+          [
+            "ch",
+            "qo"
+          ],
+          83
+        ],
+        [
+          [
+            "ch",
+            "sh"
+          ],
+          83
+        ],
+        [
+          [
+            "da",
+            "ok"
+          ],
+          83
+        ],
+        [
+          [
+            "da",
+            "ot"
+          ],
+          83
+        ],
+        [
+          [
+            "da",
+            "qo"
+          ],
+          83
+        ],
+        [
+          [
+            "da",
+            "sh"
+          ],
+          83
+        ],
+        [
+          [
+            "ok",
+            "ot"
+          ],
+          83
+        ],
+        [
+          [
+            "ok",
+            "qo"
+          ],
+          83
+        ],
+        [
+          [
+            "ok",
+            "sh"
+          ],
+          83
+        ],
+        [
+          [
+            "ot",
+            "qo"
+          ],
+          83
+        ],
+        [
+          [
+            "ot",
+            "sh"
+          ],
+          83
+        ],
+        [
+          [
+            "qo",
+            "sh"
+          ],
+          83
+        ],
+        [
+          [
+            "ai",
+            "ch"
+          ],
+          80
+        ],
+        [
+          [
+            "ai",
+            "da"
+          ],
+          80
+        ],
+        [
+          [
+            "ai",
+            "ok"
+          ],
+          80
+        ],
+        [
+          [
+            "ai",
+            "ot"
+          ],
+          80
+        ],
+        [
+          [
+            "ai",
+            "qo"
+          ],
+          80
+        ],
+        [
+          [
+            "ai",
+            "sh"
+          ],
+          80
+        ],
+        [
+          [
+            "ch",
+            "ol"
+          ],
+          79
+        ],
+        [
+          [
+            "da",
+            "ol"
+          ],
+          79
+        ],
+        [
+          [
+            "ok",
+            "ol"
+          ],
+          79
+        ],
+        [
+          [
+            "ol",
+            "ot"
+          ],
+          79
+        ],
+        [
+          [
+            "ol",
+            "qo"
+          ],
+          79
+        ],
+        [
+          [
+            "ol",
+            "sh"
+          ],
+          79
+        ],
+        [
+          [
+            "ai",
+            "ol"
+          ],
+          77
+        ],
+        [
+          [
+            "ar",
+            "ch"
+          ],
+          76
+        ],
+        [
+          [
+            "ar",
+            "da"
+          ],
+          76
+        ]
+      ],
+      "prefix_entry_counts": {
+        "ok": 83,
+        "sh": 83,
+        "qo": 83,
+        "ot": 83,
+        "da": 83,
+        "ch": 83,
+        "ai": 80,
+        "ol": 79,
+        "or": 76,
+        "ar": 76,
+        "yk": 76,
+        "sa": 76,
+        "ke": 73,
+        "al": 73,
+        "ka": 70,
+        "yt": 68,
+        "pc": 68,
+        "ta": 66,
+        "op": 65,
+        "lc": 62,
+        "dy": 61,
+        "to": 61,
+        "tc": 61,
+        "te": 59,
+        "od": 58,
+        "dc": 57,
+        "lo": 56,
+        "po": 55,
+        "yc": 55,
+        "kc": 55
+      },
+      "total_entries_analyzed": 83
+    },
+    "sequential": {
+      "top_bigrams": [
+        [
+          [
+            "qo",
+            "qo"
+          ],
+          907
+        ],
+        [
+          [
+            "qo",
+            "ch"
+          ],
+          828
+        ],
+        [
+          [
+            "sh",
+            "qo"
+          ],
+          763
+        ],
+        [
+          [
+            "ch",
+            "qo"
+          ],
+          744
+        ],
+        [
+          [
+            "ch",
+            "ch"
+          ],
+          588
+        ],
+        [
+          [
+            "qo",
+            "sh"
+          ],
+          449
+        ],
+        [
+          [
+            "qo",
+            "ok"
+          ],
+          299
+        ],
+        [
+          [
+            "qo",
+            "ot"
+          ],
+          293
+        ],
+        [
+          [
+            "ok",
+            "ch"
+          ],
+          292
+        ],
+        [
+          [
+            "ot",
+            "qo"
+          ],
+          278
+        ],
+        [
+          [
+            "ok",
+            "qo"
+          ],
+          259
+        ],
+        [
+          [
+            "qo",
+            "ol"
+          ],
+          255
+        ],
+        [
+          [
+            "ch",
+            "ok"
+          ],
+          252
+        ],
+        [
+          [
+            "ch",
+            "sh"
+          ],
+          244
+        ],
+        [
+          [
+            "da",
+            "ch"
+          ],
+          243
+        ],
+        [
+          [
+            "ol",
+            "qo"
+          ],
+          234
+        ],
+        [
+          [
+            "sh",
+            "sh"
+          ],
+          232
+        ],
+        [
+          [
+            "ch",
+            "ot"
+          ],
+          225
+        ],
+        [
+          [
+            "ot",
+            "ch"
+          ],
+          219
+        ],
+        [
+          [
+            "sh",
+            "ch"
+          ],
+          217
+        ],
+        [
+          [
+            "ch",
+            "da"
+          ],
+          216
+        ],
+        [
+          [
+            "qo",
+            "da"
+          ],
+          213
+        ],
+        [
+          [
+            "ot",
+            "ot"
+          ],
+          213
+        ],
+        [
+          [
+            "ol",
+            "ch"
+          ],
+          212
+        ],
+        [
+          [
+            "ok",
+            "ok"
+          ],
+          186
+        ],
+        [
+          [
+            "ch",
+            "ol"
+          ],
+          185
+        ],
+        [
+          [
+            "da",
+            "sh"
+          ],
+          168
+        ],
+        [
+          [
+            "ok",
+            "sh"
+          ],
+          139
+        ],
+        [
+          [
+            "sh",
+            "ot"
+          ],
+          138
+        ],
+        [
+          [
+            "ol",
+            "ol"
+          ],
+          134
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "qo",
+            "ch",
+            "qo"
+          ],
+          216
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "qo"
+          ],
+          188
+        ],
+        [
+          [
+            "sh",
+            "qo",
+            "qo"
+          ],
+          164
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "ch"
+          ],
+          160
+        ],
+        [
+          [
+            "qo",
+            "sh",
+            "qo"
+          ],
+          159
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "ch"
+          ],
+          158
+        ],
+        [
+          [
+            "sh",
+            "qo",
+            "ch"
+          ],
+          153
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "qo"
+          ],
+          126
+        ],
+        [
+          [
+            "qo",
+            "ch",
+            "ch"
+          ],
+          122
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "ch"
+          ],
+          113
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "sh"
+          ],
+          97
+        ],
+        [
+          [
+            "ch",
+            "ch",
+            "qo"
+          ],
+          88
+        ],
+        [
+          [
+            "ch",
+            "sh",
+            "qo"
+          ],
+          85
+        ],
+        [
+          [
+            "sh",
+            "qo",
+            "sh"
+          ],
+          84
+        ],
+        [
+          [
+            "ch",
+            "ok",
+            "ch"
+          ],
+          60
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "sh"
+          ],
+          56
+        ],
+        [
+          [
+            "qo",
+            "ok",
+            "qo"
+          ],
+          54
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "ot"
+          ],
+          54
+        ],
+        [
+          [
+            "sh",
+            "sh",
+            "qo"
+          ],
+          53
+        ],
+        [
+          [
+            "ok",
+            "sh",
+            "qo"
+          ],
+          52
+        ],
+        [
+          [
+            "da",
+            "sh",
+            "qo"
+          ],
+          52
+        ],
+        [
+          [
+            "qo",
+            "ot",
+            "qo"
+          ],
+          52
+        ],
+        [
+          [
+            "ch",
+            "qo",
+            "ok"
+          ],
+          52
+        ],
+        [
+          [
+            "sh",
+            "qo",
+            "ol"
+          ],
+          52
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "ol"
+          ],
+          51
+        ],
+        [
+          [
+            "ok",
+            "ch",
+            "qo"
+          ],
+          50
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "ok"
+          ],
+          49
+        ],
+        [
+          [
+            "qo",
+            "qo",
+            "ot"
+          ],
+          48
+        ],
+        [
+          [
+            "qo",
+            "sh",
+            "ch"
+          ],
+          47
+        ],
+        [
+          [
+            "qo",
+            "ok",
+            "ch"
+          ],
+          46
+        ]
+      ],
+      "strong_transitions": [
+        {
+          "from": "sh",
+          "to": "qo",
+          "count": 763,
+          "probability": 0.31
+        },
+        {
+          "from": "ls",
+          "to": "qo",
+          "count": 45,
+          "probability": 0.294
+        },
+        {
+          "from": "lc",
+          "to": "qo",
+          "count": 81,
+          "probability": 0.23
+        },
+        {
+          "from": "ke",
+          "to": "qo",
+          "count": 81,
+          "probability": 0.218
+        },
+        {
+          "from": "qo",
+          "to": "qo",
+          "count": 907,
+          "probability": 0.192
+        },
+        {
+          "from": "ra",
+          "to": "ch",
+          "count": 50,
+          "probability": 0.185
+        },
+        {
+          "from": "ch",
+          "to": "qo",
+          "count": 744,
+          "probability": 0.183
+        },
+        {
+          "from": "da",
+          "to": "ch",
+          "count": 243,
+          "probability": 0.179
+        },
+        {
+          "from": "qo",
+          "to": "ch",
+          "count": 828,
+          "probability": 0.175
+        },
+        {
+          "from": "yk",
+          "to": "ch",
+          "count": 70,
+          "probability": 0.175
+        },
+        {
+          "from": "so",
+          "to": "sh",
+          "count": 45,
+          "probability": 0.174
+        },
+        {
+          "from": "op",
+          "to": "qo",
+          "count": 54,
+          "probability": 0.17
+        },
+        {
+          "from": "ai",
+          "to": "ch",
+          "count": 131,
+          "probability": 0.165
+        },
+        {
+          "from": "lk",
+          "to": "ch",
+          "count": 85,
+          "probability": 0.165
+        },
+        {
+          "from": "ok",
+          "to": "ch",
+          "count": 292,
+          "probability": 0.162
+        },
+        {
+          "from": "ka",
+          "to": "ch",
+          "count": 59,
+          "probability": 0.158
+        },
+        {
+          "from": "ot",
+          "to": "qo",
+          "count": 278,
+          "probability": 0.156
+        },
+        {
+          "from": "sa",
+          "to": "ch",
+          "count": 81,
+          "probability": 0.155
+        },
+        {
+          "from": "ol",
+          "to": "qo",
+          "count": 234,
+          "probability": 0.15
+        },
+        {
+          "from": "or",
+          "to": "ch",
+          "count": 82,
+          "probability": 0.15
+        }
+      ],
+      "top_opening_sequences": [
+        [
+          [
+            "pc",
+            "sh",
+            "yt"
+          ],
+          1
+        ],
+        [
+          [
+            "po",
+            "da",
+            "ol"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "ch",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "op",
+            "or"
+          ],
+          1
+        ],
+        [
+          [
+            "pa",
+            "da",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "po",
+            "oa",
+            "ol"
+          ],
+          1
+        ],
+        [
+          [
+            "ps",
+            "sh",
+            "yt"
+          ],
+          1
+        ],
+        [
+          [
+            "fs",
+            "lo",
+            "op"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "sh",
+            "yk"
+          ],
+          1
+        ],
+        [
+          [
+            "ka",
+            "ol",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "te",
+            "qo",
+            "ok"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "qo",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "kc",
+            "sh",
+            "ai"
+          ],
+          1
+        ],
+        [
+          [
+            "ko",
+            "qo",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "fo",
+            "qo",
+            "yk"
+          ],
+          1
+        ],
+        [
+          [
+            "ke",
+            "ch",
+            "op"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "yp",
+            "fc"
+          ],
+          1
+        ],
+        [
+          [
+            "fo",
+            "ot",
+            "qo"
+          ],
+          1
+        ],
+        [
+          [
+            "tc",
+            "do",
+            "pc"
+          ],
+          1
+        ],
+        [
+          [
+            "pc",
+            "da",
+            "ch"
+          ],
+          1
+        ]
+      ],
+      "top_closing_sequences": [
+        [
+          [
+            "qo",
+            "da",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "ch",
+            "ta",
+            "qo"
+          ],
+          1
+        ],
+        [
+          [
+            "qo",
+            "ot",
+            "sa"
+          ],
+          1
+        ],
+        [
+          [
+            "ok",
+            "qo",
+            "ok"
+          ],
+          1
+        ],
+        [
+          [
+            "ot",
+            "ot",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "ai",
+            "ok",
+            "ai"
+          ],
+          1
+        ],
+        [
+          [
+            "ch",
+            "ok",
+            "qo"
+          ],
+          1
+        ],
+        [
+          [
+            "sh",
+            "gc",
+            "dc"
+          ],
+          1
+        ],
+        [
+          [
+            "ot",
+            "ch",
+            "ai"
+          ],
+          1
+        ],
+        [
+          [
+            "oc",
+            "dy",
+            "ra"
+          ],
+          1
+        ],
+        [
+          [
+            "ok",
+            "ch",
+            "ar"
+          ],
+          1
+        ],
+        [
+          [
+            "ol",
+            "ol",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "ot",
+            "ok",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "ok",
+            "ai",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "ok",
+            "sh",
+            "ck"
+          ],
+          1
+        ],
+        [
+          [
+            "ot",
+            "oa",
+            "ai"
+          ],
+          1
+        ],
+        [
+          [
+            "oi",
+            "od",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "lt",
+            "ke",
+            "ch"
+          ],
+          1
+        ],
+        [
+          [
+            "ch",
+            "da",
+            "ot"
+          ],
+          1
+        ],
+        [
+          [
+            "ak",
+            "ot",
+            "ka"
+          ],
+          1
+        ]
+      ]
+    },
+    "entry_association": {
+      "entry_count_by_length": {
+        "short": 5,
+        "medium": 30,
+        "long": 48
+      },
+      "short_entry_prefix_rates": {
+        "ch": 14.74,
+        "ok": 10.66,
+        "qo": 10.2,
+        "ot": 8.16,
+        "ol": 7.71,
+        "da": 6.8,
+        "sh": 6.35,
+        "or": 3.17,
+        "ai": 2.95,
+        "yk": 2.49,
+        "ka": 2.49,
+        "al": 1.81,
+        "yt": 1.36,
+        "od": 1.36,
+        "ta": 1.13,
+        "tc": 1.13,
+        "ar": 1.13,
+        "te": 1.13,
+        "dy": 0.91,
+        "ke": 0.91,
+        "to": 0.91,
+        "sa": 0.68,
+        "of": 0.68,
+        "ds": 0.68,
+        "lk": 0.68,
+        "op": 0.68,
+        "ts": 0.45,
+        "ko": 0.45,
+        "pc": 0.45,
+        "yc": 0.45
+      },
+      "medium_entry_prefix_rates": {
+        "ch": 15.71,
+        "qo": 9.33,
+        "sh": 8.27,
+        "ok": 6.73,
+        "da": 6.27,
+        "ot": 5.19,
+        "ol": 4.64,
+        "yk": 3.1,
+        "or": 2.82,
+        "ai": 2.77,
+        "ar": 2.2,
+        "yt": 2.09,
+        "sa": 1.63,
+        "ke": 1.63,
+        "ka": 1.32,
+        "dy": 1.28,
+        "al": 1.21,
+        "od": 1.19,
+        "to": 1.12,
+        "op": 0.99,
+        "ta": 0.97,
+        "pc": 0.92,
+        "tc": 0.92,
+        "te": 0.84,
+        "kc": 0.77,
+        "do": 0.77,
+        "oc": 0.73,
+        "ct": 0.68,
+        "dc": 0.62,
+        "yc": 0.51
+      },
+      "long_entry_prefix_rates": {
+        "qo": 17.63,
+        "ch": 13.61,
+        "sh": 8.49,
+        "ot": 6.29,
+        "ok": 6.01,
+        "ol": 5.42,
+        "da": 4.32,
+        "ai": 2.73,
+        "lk": 2.06,
+        "sa": 1.86,
+        "al": 1.71,
+        "or": 1.68,
+        "ar": 1.5,
+        "lc": 1.36,
+        "ka": 1.26,
+        "ke": 1.22,
+        "op": 1.11,
+        "ra": 1.08,
+        "yk": 1.04,
+        "so": 1.0,
+        "yt": 0.9,
+        "pc": 0.87,
+        "lo": 0.8,
+        "ta": 0.74,
+        "te": 0.71,
+        "po": 0.66,
+        "yc": 0.64,
+        "ls": 0.59,
+        "tc": 0.56,
+        "do": 0.52
+      },
+      "short_enriched_prefixes": [
+        {
+          "prefix": "ok",
+          "short_rate": 10.66,
+          "medium_rate": 6.73
+        },
+        {
+          "prefix": "ot",
+          "short_rate": 8.16,
+          "medium_rate": 5.19
+        },
+        {
+          "prefix": "ol",
+          "short_rate": 7.71,
+          "medium_rate": 4.64
+        },
+        {
+          "prefix": "ka",
+          "short_rate": 2.49,
+          "medium_rate": 1.32
+        },
+        {
+          "prefix": "ds",
+          "short_rate": 0.68,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "of",
+          "short_rate": 0.68,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "lk",
+          "short_rate": 0.68,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "ts",
+          "short_rate": 0.45,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "ko",
+          "short_rate": 0.45,
+          "medium_rate": 0.01
+        }
+      ],
+      "long_enriched_prefixes": [
+        {
+          "prefix": "qo",
+          "long_rate": 17.63,
+          "medium_rate": 9.33
+        },
+        {
+          "prefix": "lk",
+          "long_rate": 2.06,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "lc",
+          "long_rate": 1.36,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "ra",
+          "long_rate": 1.08,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "so",
+          "long_rate": 1.0,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "lo",
+          "long_rate": 0.8,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "po",
+          "long_rate": 0.66,
+          "medium_rate": 0.01
+        },
+        {
+          "prefix": "ls",
+          "long_rate": 0.59,
+          "medium_rate": 0.01
+        }
+      ]
+    },
+    "hypotheses": {
+      "hypotheses": [
+        {
+          "prefix": "yp",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.322, 49.0% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "of",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.373, 32.8% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "do",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.408, 34.0% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "pc",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.419, 28.6% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "fc",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.42, 32.3% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "op",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.431, 27.8% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "sc",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.436, 26.5% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "oe",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.438, 28.4% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "oc",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.443, 30.5% in first quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "am",
+          "proposed_role": "ENTRY_INITIAL_MARKER",
+          "evidence": "Mean position 0.449, 25.5% in first quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "fa",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.487, 27.3% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "lr",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.504, 25.9% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "so",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.515, 25.2% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "os",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.526, 29.3% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ss",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.536, 35.5% in last quintile",
+          "confidence": "HIGH"
+        },
+        {
+          "prefix": "ar",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.542, 26.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "al",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.543, 25.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ak",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.579, 30.0% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "oi",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.581, 25.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ld",
+          "proposed_role": "ENTRY_FINAL_MARKER",
+          "evidence": "Mean position 0.615, 29.4% in last quintile",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ck",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.285)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "qo",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.285)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "da",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.287)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ds",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.297)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ot",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.307)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "lo",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.288)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ch",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.286)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "sh",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.277)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "tc",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.274)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "sa",
+          "proposed_role": "ENTRY_ELABORATOR",
+          "evidence": "Uniform distribution (std=0.288)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "k*+ss",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=2.153, co-occur 6 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "pe+sc",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.942, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ac+lf",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.89, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "le+lp",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.89, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "fo+lp",
+          "proposed_role": "FUNCTIONAL_PAIR",
+          "evidence": "PMI=1.72, co-occur 5 times",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ok",
+          "proposed_role": "SHORT_ENTRY_MARKER",
+          "evidence": "Enriched in short entries (10.66% vs 6.73%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ot",
+          "proposed_role": "SHORT_ENTRY_MARKER",
+          "evidence": "Enriched in short entries (8.16% vs 5.19%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "ol",
+          "proposed_role": "SHORT_ENTRY_MARKER",
+          "evidence": "Enriched in short entries (7.71% vs 4.64%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "qo",
+          "proposed_role": "LONG_ENTRY_MARKER",
+          "evidence": "Enriched in long entries (17.63% vs 9.33%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "lk",
+          "proposed_role": "LONG_ENTRY_MARKER",
+          "evidence": "Enriched in long entries (2.06% vs 0.01%)",
+          "confidence": "MEDIUM"
+        },
+        {
+          "prefix": "lc",
+          "proposed_role": "LONG_ENTRY_MARKER",
+          "evidence": "Enriched in long entries (1.36% vs 0.01%)",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "by_role": {
+        "ENTRY_INITIAL_MARKER": [
+          {
+            "prefix": "yp",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.322, 49.0% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "of",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.373, 32.8% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "do",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.408, 34.0% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "pc",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.419, 28.6% in first quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "fc",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.42, 32.3% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "op",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.431, 27.8% in first quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "sc",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.436, 26.5% in first quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "oe",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.438, 28.4% in first quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "oc",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.443, 30.5% in first quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "am",
+            "proposed_role": "ENTRY_INITIAL_MARKER",
+            "evidence": "Mean position 0.449, 25.5% in first quintile",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "ENTRY_FINAL_MARKER": [
+          {
+            "prefix": "fa",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.487, 27.3% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "lr",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.504, 25.9% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "so",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.515, 25.2% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "os",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.526, 29.3% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ss",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.536, 35.5% in last quintile",
+            "confidence": "HIGH"
+          },
+          {
+            "prefix": "ar",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.542, 26.4% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "al",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.543, 25.4% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ak",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.579, 30.0% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "oi",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.581, 25.4% in last quintile",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ld",
+            "proposed_role": "ENTRY_FINAL_MARKER",
+            "evidence": "Mean position 0.615, 29.4% in last quintile",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "ENTRY_ELABORATOR": [
+          {
+            "prefix": "ck",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.285)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "qo",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.285)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "da",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.287)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ds",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.297)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ot",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.307)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "lo",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.288)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ch",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.286)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "sh",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.277)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "tc",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.274)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "sa",
+            "proposed_role": "ENTRY_ELABORATOR",
+            "evidence": "Uniform distribution (std=0.288)",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "FUNCTIONAL_PAIR": [
+          {
+            "prefix": "k*+ss",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=2.153, co-occur 6 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "pe+sc",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.942, co-occur 5 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ac+lf",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.89, co-occur 5 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "le+lp",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.89, co-occur 5 times",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "fo+lp",
+            "proposed_role": "FUNCTIONAL_PAIR",
+            "evidence": "PMI=1.72, co-occur 5 times",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "SHORT_ENTRY_MARKER": [
+          {
+            "prefix": "ok",
+            "proposed_role": "SHORT_ENTRY_MARKER",
+            "evidence": "Enriched in short entries (10.66% vs 6.73%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ot",
+            "proposed_role": "SHORT_ENTRY_MARKER",
+            "evidence": "Enriched in short entries (8.16% vs 5.19%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "ol",
+            "proposed_role": "SHORT_ENTRY_MARKER",
+            "evidence": "Enriched in short entries (7.71% vs 4.64%)",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "LONG_ENTRY_MARKER": [
+          {
+            "prefix": "qo",
+            "proposed_role": "LONG_ENTRY_MARKER",
+            "evidence": "Enriched in long entries (17.63% vs 9.33%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "lk",
+            "proposed_role": "LONG_ENTRY_MARKER",
+            "evidence": "Enriched in long entries (2.06% vs 0.01%)",
+            "confidence": "MEDIUM"
+          },
+          {
+            "prefix": "lc",
+            "proposed_role": "LONG_ENTRY_MARKER",
+            "evidence": "Enriched in long entries (1.36% vs 0.01%)",
+            "confidence": "MEDIUM"
+          }
+        ]
+      },
+      "disclaimer": "These are STRUCTURAL role hypotheses, not semantic interpretations. They describe where prefixes tend to appear and how they correlate with entry characteristics, not what they mean."
+    }
+  }
+}

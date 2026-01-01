@@ -1,0 +1,208 @@
+Loading Voynich corpus...
+Loaded 37957 words with 21 unique characters
+
+Character set: *acdefghiklmnopqrstxy
+
+================================================================================
+POSITIONAL CHARACTER DISTRIBUTION
+================================================================================
+
+FIRST position (n=37,940):
+  'o':  8,538 ( 22.5%) ###########
+  'c':  6,921 ( 18.2%) #########
+  'q':  5,393 ( 14.2%) #######
+  's':  4,555 ( 12.0%) ######
+  'd':  3,674 (  9.7%) ####
+  'a':  1,957 (  5.2%) ##
+  'y':  1,910 (  5.0%) ##
+  'l':  1,371 (  3.6%) #
+  'k':  1,166 (  3.1%) #
+  't':    981 (  2.6%) #
+
+SECOND position (n=37,139):
+  'h':  9,220 ( 24.8%) ############
+  'o':  6,942 ( 18.7%) #########
+  'k':  3,858 ( 10.4%) #####
+  'a':  3,712 ( 10.0%) ####
+  't':  3,567 (  9.6%) ####
+  'l':  2,188 (  5.9%) ##
+  'c':  2,018 (  5.4%) ##
+  'r':  1,144 (  3.1%) #
+  'e':    928 (  2.5%) #
+  'i':    877 (  2.4%) #
+
+MIDDLE position (n=50,717):
+  'e': 13,886 ( 27.4%) #############
+  'h':  6,255 ( 12.3%) ######
+  'k':  5,264 ( 10.4%) #####
+  'a':  4,692 (  9.3%) ####
+  'i':  4,373 (  8.6%) ####
+  'c':  4,360 (  8.6%) ####
+  'o':  4,014 (  7.9%) ###
+  't':  2,065 (  4.1%) ##
+  'd':  1,861 (  3.7%) #
+  'l':  1,365 (  2.7%) #
+
+PENULTIMATE position (n=37,139):
+  'd':  6,899 ( 18.6%) #########
+  'o':  6,867 ( 18.5%) #########
+  'i':  6,654 ( 17.9%) ########
+  'a':  5,688 ( 15.3%) #######
+  'e':  5,101 ( 13.7%) ######
+  'h':  2,904 (  7.8%) ###
+  'k':    805 (  2.2%) #
+  'l':    785 (  2.1%) #
+  't':    505 (  1.4%) 
+  'r':    363 (  1.0%) 
+
+LAST position (n=37,940):
+  'y': 15,427 ( 40.7%) ####################
+  'n':  6,064 ( 16.0%) #######
+  'l':  5,912 ( 15.6%) #######
+  'r':  5,689 ( 15.0%) #######
+  's':  1,348 (  3.6%) #
+  'o':  1,173 (  3.1%) #
+  'm':  1,061 (  2.8%) #
+  'd':    635 (  1.7%) 
+  'e':     92 (  0.2%) 
+  'a':     91 (  0.2%) 
+
+================================================================================
+CHARACTER POSITION RESTRICTIONS
+================================================================================
+
+Characters that NEVER appear in certain positions:
+
+================================================================================
+BIGRAM (CHARACTER PAIR) CONSTRAINTS
+================================================================================
+
+Possible bigrams: 441
+Observed bigrams: 310
+Never-occurring bigrams: 131
+Observed percentage: 70.3%
+
+--- Characters that NEVER follow 'a': ---
+  hq
+
+--- Characters that NEVER follow 'o': ---
+  None - all characters can follow o
+
+--- Characters that NEVER follow 'y': ---
+  nx
+
+--- Characters that NEVER precede 'y': ---
+  None - all characters can precede y
+
+================================================================================
+COMMON WORD PATTERNS
+================================================================================
+
+Top 15 two-character prefixes:
+  ch: 5,977
+  qo: 5,261
+  sh: 3,237
+  ok: 2,485
+  ot: 2,428
+  da: 2,338
+  ol: 1,608
+  ai:   792
+  yk:   630
+  or:   608
+  yt:   530
+  ct:   524
+  sa:   514
+  ar:   508
+  al:   502
+
+Top 15 three-character prefixes:
+  qok: 3,105
+  che: 2,757
+  she: 1,884
+  cho: 1,685
+  dai: 1,343
+  qot: 1,127
+  oke:   976
+  ote:   880
+  oka:   831
+  sho:   773
+  ota:   755
+  aii:   570
+  cth:   503
+  chc:   428
+  dal:   417
+
+Top 15 two-character suffixes:
+  dy: 6,731
+  in: 5,913
+  ey: 3,964
+  ol: 3,589
+  ar: 2,647
+  or: 2,255
+  hy: 2,243
+  al: 2,061
+  am:   756
+  ky:   728
+  ir:   590
+  ly:   513
+  ty:   444
+  eo:   436
+  os:   407
+
+Top 15 three-character suffixes:
+  iin: 4,192
+  edy: 4,132
+  eey: 1,875
+  ain: 1,689
+  hey: 1,591
+  ody: 1,150
+  hol: 1,008
+  chy:   959
+  eol:   854
+  hdy:   728
+  dar:   689
+  hor:   688
+  dal:   525
+  kar:   509
+  khy:   475
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+Coverage of common suffixes:
+  Words ending in 'y': 15,427 (40.6%)
+  Words ending in 'dy':  6,731 (17.7%)
+  Words ending in 'edy':  4,132 (10.9%)
+  Words ending in 'aiin':  3,831 (10.1%)
+  Words ending in 'ain':  1,689 (4.4%)
+  Words ending in 'in':  5,913 (15.6%)
+
+Coverage of common prefixes:
+  Words starting with 'qo':  5,261 (13.9%)
+  Words starting with 'ch':  5,977 (15.7%)
+  Words starting with 'sh':  3,237 (8.5%)
+  Words starting with 'ol':  1,608 (4.2%)
+  Words starting with 'da':  2,338 (6.2%)
+  Words starting with 'ot':  2,428 (6.4%)
+
+================================================================================
+VOYNICH WORD STRUCTURE HYPOTHESIS
+================================================================================
+
+Based on the analysis, Voynich words appear to follow a pattern:
+
+    [INITIAL GLYPH] + [MIDFIX] + [SUFFIX]
+
+Where:
+- INITIAL GLYPHS: Limited set (q-, ch-, sh-, d-, o-, s-, etc.)
+- MIDFIX: Optional elaboration (ol, eo, ai, ok, etc.)
+- SUFFIX: Highly constrained (-y, -dy, -aiin, -in, -ar, -or, etc.)
+
+This tripartite structure explains:
+1. The low H2 (predictable sequences)
+2. The strict positional constraints
+3. The apparent morphological regularity
+
+The question remains: Is this an encoding scheme or a constructed language?
+

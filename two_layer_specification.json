@@ -1,0 +1,679 @@
+{
+  "timestamp": "2025-12-30T13:07:44.162129",
+  "layer1_shorthand": {
+    "prefixes": {
+      "qo": {
+        "category": "BODY",
+        "meaning": "womb/uterus",
+        "latin": "matrix/uterus",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.60x enrichment, propagates to HERBAL/RECIPES",
+        "alternatives": [
+          "internal cavity",
+          "receptacle"
+        ]
+      },
+      "ol": {
+        "category": "BODY",
+        "meaning": "menstrual flow",
+        "latin": "menstruum/fluxus",
+        "confidence": "MEDIUM",
+        "evidence": "BIOLOGICAL 2.1x enrichment",
+        "alternatives": [
+          "bodily fluid",
+          "humor"
+        ]
+      },
+      "so": {
+        "category": "BODY",
+        "meaning": "health/healing",
+        "latin": "salus",
+        "confidence": "MEDIUM",
+        "evidence": "HERBAL co-occurrence with plant terms",
+        "alternatives": [
+          "state",
+          "condition"
+        ]
+      },
+      "pc": {
+        "category": "BODY",
+        "meaning": "chest/pectoral",
+        "latin": "pectus",
+        "confidence": "LOW",
+        "evidence": "Phonetic similarity to Latin",
+        "alternatives": [
+          "vessel",
+          "container"
+        ]
+      },
+      "ch": {
+        "category": "PLANT",
+        "meaning": "herb/plant",
+        "latin": "herba",
+        "confidence": "HIGH",
+        "evidence": "HERBAL section dominant (57%+)",
+        "alternatives": [
+          "material",
+          "substance"
+        ]
+      },
+      "sh": {
+        "category": "PLANT",
+        "meaning": "juice/sap",
+        "latin": "succus",
+        "confidence": "HIGH",
+        "evidence": "Liquid context, HERBAL enriched",
+        "alternatives": [
+          "extract",
+          "essence"
+        ]
+      },
+      "da": {
+        "category": "PLANT",
+        "meaning": "leaf",
+        "latin": "folium",
+        "confidence": "HIGH",
+        "evidence": "HERBAL 1.5x enrichment",
+        "alternatives": [
+          "green part",
+          "foliage"
+        ]
+      },
+      "sa": {
+        "category": "PLANT",
+        "meaning": "seed",
+        "latin": "semen",
+        "confidence": "MEDIUM",
+        "evidence": "Context inference",
+        "alternatives": [
+          "small part",
+          "grain"
+        ]
+      },
+      "ot": {
+        "category": "TIME",
+        "meaning": "time/season",
+        "latin": "tempus",
+        "confidence": "HIGH",
+        "evidence": "ZODIAC 2.4x enrichment",
+        "alternatives": [
+          "cycle",
+          "period"
+        ]
+      },
+      "ok": {
+        "category": "TIME",
+        "meaning": "sky/celestial",
+        "latin": "caelum",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC 1.9x enrichment",
+        "alternatives": [
+          "sequence",
+          "order"
+        ]
+      },
+      "yk": {
+        "category": "TIME",
+        "meaning": "cycle",
+        "latin": "cyclus",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC enriched",
+        "alternatives": [
+          "return",
+          "repetition"
+        ]
+      },
+      "al": {
+        "category": "CELESTIAL",
+        "meaning": "star",
+        "latin": "stella",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC 3.7x enrichment",
+        "alternatives": [
+          "light",
+          "point"
+        ]
+      },
+      "ar": {
+        "category": "CELESTIAL",
+        "meaning": "air",
+        "latin": "aer",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC 2.0x enrichment",
+        "alternatives": [
+          "breath",
+          "spirit"
+        ]
+      },
+      "or": {
+        "category": "CELESTIAL",
+        "meaning": "gold/sun",
+        "latin": "aurum/sol",
+        "confidence": "LOW",
+        "evidence": "COSMOLOGICAL enriched",
+        "alternatives": [
+          "benefit",
+          "value"
+        ]
+      },
+      "yt": {
+        "category": "CELESTIAL",
+        "meaning": "world",
+        "latin": "mundus",
+        "confidence": "LOW",
+        "evidence": "COSMOLOGICAL 3.1x enrichment",
+        "alternatives": [
+          "realm",
+          "sphere"
+        ]
+      },
+      "ct": {
+        "category": "LIQUID",
+        "meaning": "water",
+        "latin": "aqua",
+        "confidence": "HIGH",
+        "evidence": "HERBAL 2.4x enrichment",
+        "alternatives": [
+          "dilution medium"
+        ]
+      },
+      "cth": {
+        "category": "LIQUID",
+        "meaning": "purified water",
+        "latin": "aqua pura",
+        "confidence": "MEDIUM",
+        "evidence": "Water-related prefix variant",
+        "alternatives": [
+          "cleansing liquid"
+        ]
+      },
+      "lk": {
+        "category": "LIQUID",
+        "meaning": "liquid/liquor",
+        "latin": "liquor",
+        "confidence": "MEDIUM",
+        "evidence": "RECIPES 2.8x enrichment",
+        "alternatives": [
+          "solution",
+          "mixture"
+        ]
+      }
+    },
+    "middles": {
+      "lch": {
+        "category": "PROCESS",
+        "meaning": "wash/cleanse",
+        "latin": "lavare",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.01x (bathing procedures)",
+        "alternatives": [
+          "prepare wet"
+        ]
+      },
+      "lche": {
+        "category": "PROCESS",
+        "meaning": "wash/cleanse",
+        "latin": "lavare",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.31x enrichment",
+        "alternatives": [
+          "rinse thoroughly"
+        ]
+      },
+      "cth": {
+        "category": "PROCESS",
+        "meaning": "purify",
+        "latin": "purificare",
+        "confidence": "MEDIUM",
+        "evidence": "RECIPES 1.96x, HERBAL 53%",
+        "alternatives": [
+          "dilute",
+          "thin"
+        ]
+      },
+      "tch": {
+        "category": "PROCESS",
+        "meaning": "prepare/treat",
+        "latin": "praeparare",
+        "confidence": "MEDIUM",
+        "evidence": "HERBAL 1.74x (63%)",
+        "alternatives": [
+          "process generic"
+        ]
+      },
+      "tche": {
+        "category": "PROCESS",
+        "meaning": "prepare/treat",
+        "latin": "praeparare",
+        "confidence": "MEDIUM",
+        "evidence": "HERBAL 1.53x",
+        "alternatives": [
+          "process"
+        ]
+      },
+      "ckh": {
+        "category": "PROCESS",
+        "meaning": "process/work",
+        "latin": "laborare",
+        "confidence": "MEDIUM",
+        "evidence": "RECIPES 2.26x (42%)",
+        "alternatives": [
+          "transform"
+        ]
+      },
+      "ckhe": {
+        "category": "PROCESS",
+        "meaning": "treated",
+        "latin": "tractare",
+        "confidence": "MEDIUM",
+        "evidence": "RECIPES 2.09x",
+        "alternatives": [
+          "worked"
+        ]
+      },
+      "kch": {
+        "category": "PROCESS",
+        "meaning": "potent/strengthen",
+        "latin": "potens",
+        "confidence": "LOW",
+        "evidence": "HERBAL 1.54x (57%)",
+        "alternatives": [
+          "intensify"
+        ]
+      },
+      "kche": {
+        "category": "PROCESS",
+        "meaning": "potent",
+        "latin": "potens",
+        "confidence": "LOW",
+        "evidence": "HERBAL 1.44x",
+        "alternatives": [
+          "strong"
+        ]
+      },
+      "pch": {
+        "category": "PROCESS",
+        "meaning": "apply (to body)",
+        "latin": "applicare",
+        "confidence": "MEDIUM",
+        "evidence": "Often followed by BODY terms",
+        "alternatives": [
+          "administer"
+        ]
+      },
+      "pche": {
+        "category": "PROCESS",
+        "meaning": "apply",
+        "latin": "applicare",
+        "confidence": "MEDIUM",
+        "evidence": "Body application context",
+        "alternatives": [
+          "place on"
+        ]
+      },
+      "dch": {
+        "category": "PROCESS",
+        "meaning": "grind/crush",
+        "latin": "terere",
+        "confidence": "LOW",
+        "evidence": "HERBAL 1.60x, appears with plant terms",
+        "alternatives": [
+          "break down"
+        ]
+      },
+      "sch": {
+        "category": "PROCESS",
+        "meaning": "processed",
+        "latin": "conficere",
+        "confidence": "LOW",
+        "evidence": "General processing context",
+        "alternatives": [
+          "finished"
+        ]
+      },
+      "fch": {
+        "category": "PROCESS",
+        "meaning": "filter/strain",
+        "latin": "colare",
+        "confidence": "LOW",
+        "evidence": "Appears with liquid terms",
+        "alternatives": [
+          "sieve"
+        ]
+      },
+      "fche": {
+        "category": "PROCESS",
+        "meaning": "filtered",
+        "latin": "colatus",
+        "confidence": "LOW",
+        "evidence": "Liquid context",
+        "alternatives": [
+          "strained"
+        ]
+      },
+      "cph": {
+        "category": "PROCESS",
+        "meaning": "press/extract",
+        "latin": "premere",
+        "confidence": "LOW",
+        "evidence": "Pressing context inferred",
+        "alternatives": [
+          "squeeze"
+        ]
+      },
+      "cfh": {
+        "category": "PROCESS",
+        "meaning": "well-treated",
+        "latin": "bene tractatus",
+        "confidence": "LOW",
+        "evidence": "Variant of ckh",
+        "alternatives": [
+          "thoroughly processed"
+        ]
+      },
+      "ke": {
+        "category": "STATE",
+        "meaning": "heat/heated",
+        "latin": "calefacere",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.2x (heating procedures)",
+        "alternatives": [
+          "warm"
+        ]
+      },
+      "kee": {
+        "category": "STATE",
+        "meaning": "steam/steamed",
+        "latin": "vaporare",
+        "confidence": "HIGH",
+        "evidence": "BIOLOGICAL 2.3x (fumigation)",
+        "alternatives": [
+          "vapor"
+        ]
+      },
+      "ol": {
+        "category": "STATE",
+        "meaning": "oil",
+        "latin": "oleum",
+        "confidence": "HIGH",
+        "evidence": "HERBAL 1.7x, medium context",
+        "alternatives": [
+          "fat",
+          "grease"
+        ]
+      },
+      "or": {
+        "category": "STATE",
+        "meaning": "benefit",
+        "latin": "prodesse",
+        "confidence": "MEDIUM",
+        "evidence": "HERBAL 1.9x",
+        "alternatives": [
+          "value",
+          "virtue"
+        ]
+      },
+      "ed": {
+        "category": "STATE",
+        "meaning": "dry",
+        "latin": "siccus",
+        "confidence": "MEDIUM",
+        "evidence": "Context inference",
+        "alternatives": [
+          "dried out"
+        ]
+      },
+      "ee": {
+        "category": "STATE",
+        "meaning": "moist/wet",
+        "latin": "madidus",
+        "confidence": "MEDIUM",
+        "evidence": "Context inference",
+        "alternatives": [
+          "damp"
+        ]
+      },
+      "eo": {
+        "category": "STATE",
+        "meaning": "flow",
+        "latin": "fluere",
+        "confidence": "MEDIUM",
+        "evidence": "ZODIAC 3.4x (celestial/menstrual motion)",
+        "alternatives": [
+          "movement"
+        ]
+      },
+      "o": {
+        "category": "STATE",
+        "meaning": "whole/complete",
+        "latin": "totus",
+        "confidence": "LOW",
+        "evidence": "ZODIAC 2.1x",
+        "alternatives": [
+          "full",
+          "circle"
+        ]
+      },
+      "a": {
+        "category": "STATE",
+        "meaning": "one/single",
+        "latin": "unus",
+        "confidence": "LOW",
+        "evidence": "Grammatical marker",
+        "alternatives": [
+          "unit"
+        ]
+      }
+    },
+    "suffixes": {
+      "y": {
+        "function": "noun ending",
+        "latin": "-um (neuter)",
+        "confidence": "HIGH",
+        "evidence": "41% of all words end in -y",
+        "notes": "Most common ending, marks noun completion"
+      },
+      "dy": {
+        "function": "past participle",
+        "latin": "-tus/-ta/-tum",
+        "confidence": "HIGH",
+        "evidence": "Consistent with done/completed sense",
+        "notes": "Marks action as completed"
+      },
+      "ey": {
+        "function": "present participle",
+        "latin": "-ens/-ans",
+        "confidence": "HIGH",
+        "evidence": "Consistent with ongoing/current sense",
+        "notes": "Marks action in progress"
+      },
+      "aiin": {
+        "function": "place/container",
+        "latin": "-arium",
+        "confidence": "HIGH",
+        "evidence": "Appears with location terms",
+        "notes": "Marks a place where X is kept/done"
+      },
+      "ain": {
+        "function": "action noun",
+        "latin": "-atio/-atio",
+        "confidence": "MEDIUM",
+        "evidence": "Process nominalization",
+        "notes": "Converts verb to noun (the act of X)"
+      },
+      "iin": {
+        "function": "substance",
+        "latin": "-ium",
+        "confidence": "MEDIUM",
+        "evidence": "Material context",
+        "notes": "Marks a substance or thing"
+      },
+      "hy": {
+        "function": "full of",
+        "latin": "-osus",
+        "confidence": "MEDIUM",
+        "evidence": "Adjectival context",
+        "notes": "Marks abundance"
+      },
+      "ky": {
+        "function": "relating to",
+        "latin": "-icus",
+        "confidence": "MEDIUM",
+        "evidence": "Adjectival context",
+        "notes": "Forms adjective from noun"
+      },
+      "ar": {
+        "function": "agent/doer",
+        "latin": "-or/-tor",
+        "confidence": "LOW",
+        "evidence": "Inferred from context",
+        "notes": "One who does X"
+      },
+      "al": {
+        "function": "adjectival",
+        "latin": "-alis",
+        "confidence": "LOW",
+        "evidence": "Inferred",
+        "notes": "Relating to"
+      }
+    }
+  },
+  "layer2_cipher": {
+    "notes": "\nCIPHER LAYER UNDERSTANDING:\n\n1. Character Position Constraints:\n   - 'q' appears 99% in first position (prefix marker)\n   - 'i', 'h', 'e' appear 100% in middle positions\n   - 'n', 'm', 'y' appear >94% in final position (suffix markers)\n\n2. Character Classes (hypothesized):\n   - Initial class: q, c, s, d, a, o (domain markers)\n   - Medial class: o, l, k, t, p, f, e, i, h (process/state markers)\n   - Final class: y, n, m, r, l, d (grammatical markers)\n\n3. Gallows Characters:\n   - Tall letters (k, t, p, f with h combinations) function as process verbs\n   - They appear to be ligatures or special markers for medical procedures\n\n4. The cipher is NOT simple substitution:\n   - Same plaintext may use different ciphertext in different positions\n   - Context affects which cipher variant is used\n   - This is consistent with medieval steganographic practices\n",
+    "position_constraints": {
+      "initial": [
+        "q",
+        "c",
+        "s",
+        "d",
+        "a",
+        "o"
+      ],
+      "medial": [
+        "o",
+        "l",
+        "k",
+        "t",
+        "p",
+        "f",
+        "e",
+        "i",
+        "h"
+      ],
+      "final": [
+        "y",
+        "n",
+        "m",
+        "r",
+        "l",
+        "d"
+      ]
+    }
+  },
+  "transition_grammar": {
+    "rules": [
+      "PLANT follows BODY (32.2% - strongest content transition)",
+      "PROCESS follows PLANT (ingredient -> action)",
+      "BODY follows PROCESS (action -> target)",
+      "TIME/CELESTIAL can appear after any content category",
+      "OTHER can appear anywhere (uncategorized words)"
+    ],
+    "procedural_templates": {
+      "PREPARATION": "PLANT + PROCESS + STATE",
+      "APPLICATION": "PROCESS + BODY + TIMING",
+      "COMPOUND": "PLANT + PROCESS + BODY + TIME",
+      "FULL_RECIPE": "PLANT + PROCESS + BODY (274 occurrences validated)"
+    },
+    "forbidden_sequences": [
+      "TIME + TIME (rare)",
+      "CELESTIAL + CELESTIAL (rare)"
+    ]
+  },
+  "known_vocabulary": {
+    "chedy": {
+      "meaning": "dried herb",
+      "confidence": "HIGH"
+    },
+    "shedy": {
+      "meaning": "herb juice",
+      "confidence": "HIGH"
+    },
+    "daiin": {
+      "meaning": "leaves",
+      "confidence": "HIGH"
+    },
+    "dain": {
+      "meaning": "leaf",
+      "confidence": "HIGH"
+    },
+    "chor": {
+      "meaning": "herb benefit",
+      "confidence": "MEDIUM"
+    },
+    "shey": {
+      "meaning": "juice/sap",
+      "confidence": "MEDIUM"
+    },
+    "chol": {
+      "meaning": "hot herb",
+      "confidence": "MEDIUM"
+    },
+    "qokedy": {
+      "meaning": "womb heated/fumigated",
+      "confidence": "HIGH"
+    },
+    "qokeedy": {
+      "meaning": "womb steamed",
+      "confidence": "HIGH"
+    },
+    "qokain": {
+      "meaning": "womb treatment (action)",
+      "confidence": "HIGH"
+    },
+    "qokaiin": {
+      "meaning": "womb place",
+      "confidence": "MEDIUM"
+    },
+    "otaiin": {
+      "meaning": "time/season place",
+      "confidence": "HIGH"
+    },
+    "okaiin": {
+      "meaning": "sky/constellation place",
+      "confidence": "MEDIUM"
+    },
+    "otar": {
+      "meaning": "at time",
+      "confidence": "MEDIUM"
+    },
+    "cthy": {
+      "meaning": "water",
+      "confidence": "HIGH"
+    },
+    "dol": {
+      "meaning": "oil from",
+      "confidence": "MEDIUM"
+    }
+  },
+  "confidence_stats": {
+    "prefix": {
+      "HIGH": 6,
+      "MEDIUM": 9,
+      "LOW": 3
+    },
+    "middle": {
+      "HIGH": 5,
+      "MEDIUM": 11,
+      "LOW": 10
+    },
+    "suffix": {
+      "HIGH": 4,
+      "MEDIUM": 4,
+      "LOW": 2
+    },
+    "vocabulary": {
+      "HIGH": 9,
+      "MEDIUM": 7
+    }
+  }
+}

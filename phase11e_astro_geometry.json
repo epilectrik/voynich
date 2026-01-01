@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "phase": "11E",
+    "title": "Astrology Section Geometry (Structural Only)",
+    "timestamp": "2025-12-31T12:51:32.107395"
+  },
+  "folios_analyzed": 21,
+  "folio_list": [
+    "f70r1",
+    "f70r2",
+    "f70v2",
+    "f70v1",
+    "f71r",
+    "f71v",
+    "f72r1",
+    "f72r2",
+    "f72r3",
+    "f72v3"
+  ],
+  "division_counts": [
+    10,
+    9,
+    50,
+    12,
+    10,
+    13,
+    8,
+    23,
+    12,
+    13,
+    20,
+    12,
+    13,
+    24,
+    6,
+    5,
+    3,
+    16,
+    22,
+    10,
+    13
+  ],
+  "common_divisions": [
+    13,
+    10,
+    12
+  ],
+  "segment_patterns": [
+    17,
+    33,
+    23,
+    16,
+    17,
+    18,
+    17,
+    18,
+    23,
+    21,
+    19,
+    17,
+    17,
+    16,
+    34,
+    18,
+    28,
+    43,
+    29,
+    34,
+    30
+  ],
+  "alignment_with_semantic_cycles": 0.33,
+  "interpretation": "Structural analysis of 21 candidate astro folios. Common divisions: [13, 10, 12]. Weak alignment with semantic cycle lengths."
+}

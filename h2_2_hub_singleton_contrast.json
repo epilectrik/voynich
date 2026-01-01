@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "phase": "H2.2",
+    "title": "Hub vs Singleton Contrast",
+    "timestamp": "2025-12-30T21:43:38.182924"
+  },
+  "group_statistics": {
+    "hub": {
+      "count": 11,
+      "mean_heading_length": 4.0,
+      "mean_word_count": 177.9090909090909,
+      "mean_classifier_entropy": 2.9868309053408124,
+      "mean_distinct_classifiers": 10.0,
+      "mean_in_degree": 13.363636363636363,
+      "members": [
+        {
+          "folio": "f10v",
+          "heading": "paiin",
+          "heading_length": 5,
+          "word_count": 63,
+          "classifier_entropy": 2.838624531032849,
+          "distinct_classifiers": 10,
+          "in_degree": 7
+        },
+        {
+          "folio": "f19r",
+          "heading": "pchor",
+          "heading_length": 5,
+          "word_count": 85,
+          "classifier_entropy": 3.114971890159623,
+          "distinct_classifiers": 10,
+          "in_degree": 7
+        },
+        {
+          "folio": "f21r",
+          "heading": "pchor",
+          "heading_length": 5,
+          "word_count": 114,
+          "classifier_entropy": 2.9665166251603283,
+          "distinct_classifiers": 10,
+          "in_degree": 7
+        },
+        {
+          "folio": "f22r",
+          "heading": "pol",
+          "heading_length": 3,
+          "word_count": 124,
+          "classifier_entropy": 3.225012010211799,
+          "distinct_classifiers": 10,
+          "in_degree": 25
+        },
+        {
+          "folio": "f35v",
+          "heading": "par",
+          "heading_length": 3,
+          "word_count": 101,
+          "classifier_entropy": 2.716359695213931,
+          "distinct_classifiers": 10,
+          "in_degree": 9
+        },
+        {
+          "folio": "f42r",
+          "heading": "sho",
+          "heading_length": 3,
+          "word_count": 174,
+          "classifier_entropy": 2.7395378035201254,
+          "distinct_classifiers": 10,
+          "in_degree": 19
+        },
+        {
+          "folio": "f52v",
+          "heading": "pchor",
+          "heading_length": 5,
+          "word_count": 98,
+          "classifier_entropy": 3.130920993047887,
+          "distinct_classifiers": 10,
+          "in_degree": 7
+        },
+        {
+          "folio": "f58r",
+          "heading": "kor",
+          "heading_length": 3,
+          "word_count": 409,
+          "classifier_entropy": 3.1123812029648956,
+          "distinct_classifiers": 10,
+          "in_degree": 10
+        },
+        {
+          "folio": "f58v",
+          "heading": "tol",
+          "heading_length": 3,
+          "word_count": 443,
+          "classifier_entropy": 3.0435192570374014,
+          "distinct_classifiers": 10,
+          "in_degree": 34
+        },
+        {
+          "folio": "f96r",
+          "heading": "tor",
+          "heading_length": 3,
+          "word_count": 105,
+          "classifier_entropy": 2.95806883279533,
+          "distinct_classifiers": 10,
+          "in_degree": 14
+        }
+      ]
+    },
+    "mid": {
+      "count": 8,
+      "mean_heading_length": 6.25,
+      "mean_word_count": 121.875,
+      "mean_classifier_entropy": 2.9683129242209647,
+      "mean_distinct_classifiers": 10.0,
+      "mean_in_degree": 3.0,
+      "members": [
+        {
+          "folio": "f8r",
+          "heading": "pshol",
+          "heading_length": 5,
+          "word_count": 174,
+          "classifier_entropy": 2.70242459654557,
+          "distinct_classifiers": 10,
+          "in_degree": 2
+        },
+        {
+          "folio": "f14r",
+          "heading": "pchodaiin",
+          "heading_length": 9,
+          "word_count": 88,
+          "classifier_entropy": 3.1373854188736714,
+          "distinct_classifiers": 10,
+          "in_degree": 3
+        },
+        {
+          "folio": "f29r",
+          "heading": "poraiin",
+          "heading_length": 7,
+          "word_count": 72,
+          "classifier_entropy": 2.627539248688392,
+          "distinct_classifiers": 10,
+          "in_degree": 3
+        },
+        {
+          "folio": "f42v",
+          "heading": "tcho",
+          "heading_length": 4,
+          "word_count": 135,
+          "classifier_entropy": 2.8650215413921543,
+          "distinct_classifiers": 10,
+          "in_degree": 4
+        },
+        {
+          "folio": "f44v",
+          "heading": "tsho",
+          "heading_length": 4,
+          "word_count": 125,
+          "classifier_entropy": 3.1745927883327942,
+          "distinct_classifiers": 10,
+          "in_degree": 2
+        },
+        {
+          "folio": "f54r",
+          "heading": "podaiin",
+          "heading_length": 7,
+          "word_count": 133,
+          "classifier_entropy": 3.1351410956976644,
+          "distinct_classifiers": 10,
+          "in_degree": 3
+        },
+        {
+          "folio": "f54v",
+          "heading": "pcheodar",
+          "heading_length": 8,
+          "word_count": 113,
+          "classifier_entropy": 2.9932787713362896,
+          "distinct_classifiers": 10,
+          "in_degree": 2
+        },
+        {
+          "folio": "f90v1",
+          "heading": "pcheor",
+          "heading_length": 6,
+          "word_count": 135,
+          "classifier_entropy": 3.111119932901184,
+          "distinct_classifiers": 10,
+          "in_degree": 5
+        }
+      ]
+    },
+    "isolate": {
+      "count": 94,
+      "mean_heading_length": 6.776595744680851,
+      "mean_word_count": 117.38297872340425,
+      "mean_classifier_entropy": 2.9779608821415122,
+      "mean_distinct_classifiers": 10.0,
+      "mean_in_degree": 0.09574468085106383,
+      "members": [
+        {
+          "folio": "f1r",
+          "heading": "fachys",
+          "heading_length": 6,
+          "word_count": 291,
+          "classifier_entropy": 3.0531631575145295,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f1v",
+          "heading": "kchsy",
+          "heading_length": 5,
+          "word_count": 101,
+          "classifier_entropy": 2.9592816689009283,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f2r",
+          "heading": "kydainy",
+          "heading_length": 7,
+          "word_count": 103,
+          "classifier_entropy": 2.9204931920770503,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f2v",
+          "heading": "kooiin",
+          "heading_length": 6,
+          "word_count": 74,
+          "classifier_entropy": 2.475976407412763,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f3r",
+          "heading": "tsheos",
+          "heading_length": 6,
+          "word_count": 129,
+          "classifier_entropy": 2.9363019142176494,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f3v",
+          "heading": "koaiin",
+          "heading_length": 6,
+          "word_count": 110,
+          "classifier_entropy": 3.0131365885905725,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f4r",
+          "heading": "kodalchy",
+          "heading_length": 8,
+          "word_count": 73,
+          "classifier_entropy": 2.9684693150129506,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f4v",
+          "heading": "pchooiin",
+          "heading_length": 8,
+          "word_count": 112,
+          "classifier_entropy": 2.74848675847906,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f5r",
+          "heading": "kshody",
+          "heading_length": 6,
+          "word_count": 66,
+          "classifier_entropy": 2.966047170040018,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        },
+        {
+          "folio": "f5v",
+          "heading": "kocheor",
+          "heading_length": 7,
+          "word_count": 58,
+          "classifier_entropy": 2.9374417177832313,
+          "distinct_classifiers": 10,
+          "in_degree": 0
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "heading_length_diff": -2.7765957446808507,
+    "entropy_diff": 0.008870023199300192,
+    "word_count_diff": 60.52611218568666
+  },
+  "interpretation": "Hubs have SHORTER headings; Classifier entropy SIMILAR"
+}

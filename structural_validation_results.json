@@ -1,0 +1,351 @@
+{
+  "timestamp": "2025-12-30T12:29:48.156662",
+  "task1": {
+    "top_3_sequences": [
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "PLANT"
+        ],
+        1006
+      ],
+      [
+        [
+          "PLANT",
+          "BODY",
+          "PLANT"
+        ],
+        711
+      ],
+      [
+        [
+          "PLANT",
+          "OTHER",
+          "PLANT"
+        ],
+        646
+      ],
+      [
+        [
+          "OTHER",
+          "PLANT",
+          "PLANT"
+        ],
+        588
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "OTHER"
+        ],
+        561
+      ],
+      [
+        [
+          "PLANT",
+          "PROCESS",
+          "PLANT"
+        ],
+        561
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "PROCESS"
+        ],
+        550
+      ],
+      [
+        [
+          "BODY",
+          "PLANT",
+          "BODY"
+        ],
+        541
+      ],
+      [
+        [
+          "PROCESS",
+          "PLANT",
+          "PLANT"
+        ],
+        514
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "BODY"
+        ],
+        502
+      ]
+    ],
+    "top_4_sequences": [
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "PLANT",
+          "PLANT"
+        ],
+        352
+      ],
+      [
+        [
+          "OTHER",
+          "OTHER",
+          "OTHER",
+          "OTHER"
+        ],
+        231
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "OTHER",
+          "PLANT"
+        ],
+        210
+      ],
+      [
+        [
+          "PLANT",
+          "OTHER",
+          "PLANT",
+          "PLANT"
+        ],
+        205
+      ],
+      [
+        [
+          "BODY",
+          "PLANT",
+          "BODY",
+          "PLANT"
+        ],
+        203
+      ],
+      [
+        [
+          "OTHER",
+          "PLANT",
+          "PLANT",
+          "PLANT"
+        ],
+        201
+      ],
+      [
+        [
+          "PLANT",
+          "PROCESS",
+          "PLANT",
+          "PLANT"
+        ],
+        199
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "BODY",
+          "PLANT"
+        ],
+        193
+      ],
+      [
+        [
+          "PLANT",
+          "BODY",
+          "PLANT",
+          "BODY"
+        ],
+        190
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "PLANT",
+          "OTHER"
+        ],
+        183
+      ]
+    ],
+    "transition_matrix": {
+      "OTHER": {
+        "TIME": 0.1204575409527396,
+        "PLANT": 0.28877173162618464,
+        "OTHER": 0.23620787045754096,
+        "PROCESS": 0.1512740852319086,
+        "CELESTIAL": 0.06147618151007343,
+        "BODY": 0.1314253436264357,
+        "PREPARATION": 0.0032322851942509258,
+        "LIQUID": 0.007154961400866127
+      },
+      "TIME": {
+        "CELESTIAL": 0.06610931572291696,
+        "PLANT": 0.28331225703714114,
+        "TIME": 0.1955646105568826,
+        "OTHER": 0.16678375720106786,
+        "PROCESS": 0.1200880520818697,
+        "BODY": 0.14861130626200178,
+        "LIQUID": 0.013910355486862442,
+        "PREPARATION": 0.005620345651257552
+      },
+      "CELESTIAL": {
+        "OTHER": 0.2625,
+        "PROCESS": 0.11035067873303167,
+        "TIME": 0.13625565610859727,
+        "PLANT": 0.25175339366515836,
+        "BODY": 0.10673076923076923,
+        "CELESTIAL": 0.12222850678733031,
+        "PREPARATION": 0.0020361990950226246,
+        "LIQUID": 0.008144796380090498
+      },
+      "PLANT": {
+        "PLANT": 0.2894591410070592,
+        "PROCESS": 0.1766263829077297,
+        "BODY": 0.1795877084137097,
+        "CELESTIAL": 0.048830589241212474,
+        "OTHER": 0.18091196312941202,
+        "TIME": 0.11283275809932954,
+        "LIQUID": 0.009561744679519932,
+        "PREPARATION": 0.0021897125220274654
+      },
+      "PROCESS": {
+        "OTHER": 0.17474823168168443,
+        "CELESTIAL": 0.032606510335752015,
+        "PROCESS": 0.23444154040173268,
+        "PLANT": 0.2611262405643997,
+        "BODY": 0.17286568091678395,
+        "TIME": 0.10534973406685796,
+        "LIQUID": 0.012373658911044907,
+        "PREPARATION": 0.006488403121744375
+      },
+      "BODY": {
+        "PROCESS": 0.13121326463972136,
+        "OTHER": 0.16156302155141136,
+        "PLANT": 0.322418547275234,
+        "BODY": 0.20176329729337494,
+        "CELESTIAL": 0.03940207532109426,
+        "TIME": 0.12656918946375445,
+        "PREPARATION": 0.0030476743342282855,
+        "LIQUID": 0.014022930121181337
+      },
+      "LIQUID": {
+        "TIME": 0.16773162939297126,
+        "BODY": 0.14616613418530353,
+        "PLANT": 0.2763578274760383,
+        "PROCESS": 0.15175718849840256,
+        "OTHER": 0.1597444089456869,
+        "LIQUID": 0.052715654952076675,
+        "CELESTIAL": 0.04313099041533546,
+        "PREPARATION": 0.0023961661341853034
+      },
+      "PREPARATION": {
+        "TIME": 0.16779533483822423,
+        "PLANT": 0.22046651617757712,
+        "PREPARATION": 0.057938299473288185,
+        "OTHER": 0.2520692249811889,
+        "BODY": 0.12114371708051166,
+        "PROCESS": 0.127163280662152,
+        "CELESTIAL": 0.05342362678705794
+      }
+    },
+    "recipe_patterns": 274,
+    "universal_patterns": [
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "PLANT"
+        ],
+        1006
+      ],
+      [
+        [
+          "PLANT",
+          "BODY",
+          "PLANT"
+        ],
+        711
+      ],
+      [
+        [
+          "PLANT",
+          "OTHER",
+          "PLANT"
+        ],
+        646
+      ],
+      [
+        [
+          "OTHER",
+          "PLANT",
+          "PLANT"
+        ],
+        588
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "OTHER"
+        ],
+        561
+      ],
+      [
+        [
+          "PLANT",
+          "PROCESS",
+          "PLANT"
+        ],
+        561
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "PROCESS"
+        ],
+        550
+      ],
+      [
+        [
+          "BODY",
+          "PLANT",
+          "BODY"
+        ],
+        541
+      ],
+      [
+        [
+          "PROCESS",
+          "PLANT",
+          "PLANT"
+        ],
+        514
+      ],
+      [
+        [
+          "PLANT",
+          "PLANT",
+          "BODY"
+        ],
+        502
+      ]
+    ]
+  },
+  "task2": {
+    "train_folios": 181,
+    "test_folios": 44,
+    "avg_distribution_error": 0.03941614176791511,
+    "avg_transition_accuracy": 1.0,
+    "generalization": "STRONG",
+    "failures": []
+  }
+}

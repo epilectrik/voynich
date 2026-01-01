@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "phase": "N2",
+    "title": "Repetition Analysis",
+    "timestamp": "2025-12-31T09:15:15.193301",
+    "dependencies": []
+  },
+  "findings": {
+    "word_consecutive_rate": 0.000188,
+    "bigram_repetition_rate": 0.0633,
+    "trigram_repetition_rate": 0.002,
+    "unique_bigrams": 42601,
+    "unique_trigrams": 47663,
+    "observed_range": [
+      0.001,
+      0.003
+    ],
+    "naibbe_prediction": "Should reduce repetition (36 representations per bigram)"
+  },
+  "summary": {
+    "key_results": [
+      "Word consecutive repetition: 0.0188%",
+      "Bigram repetition rate: 6.33%",
+      "Trigram repetition rate: 0.20%"
+    ],
+    "implications": [
+      "Very low repetition is COMPATIBLE with verbose cipher (reduces repetition)"
+    ]
+  }
+}

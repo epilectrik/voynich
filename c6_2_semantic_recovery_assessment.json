@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "phase": "C6.2",
+    "title": "Semantic Recovery Assessment",
+    "timestamp": "2025-12-30T22:11:43.511981"
+  },
+  "assessment": {
+    "category_structure": {
+      "description": "Hierarchy and relationships between categories",
+      "evidence": [
+        "Hierarchy depth: 2",
+        "Hub categories identified: 8",
+        "Organizing principle: MIXED"
+      ],
+      "feasibility": "ACHIEVED"
+    },
+    "category_features": {
+      "description": "Defining morphological/functional traits per category",
+      "evidence": [
+        "High-confidence definitions: 29",
+        "Categories with defining features: 109"
+      ],
+      "feasibility": "PARTIAL"
+    },
+    "category_meaning": {
+      "description": "Natural language equivalents for categories",
+      "evidence": [
+        "No external word identification achieved",
+        "No phonetic matching attempted (by design)"
+      ],
+      "feasibility": "BLOCKED"
+    },
+    "entity_identification": {
+      "description": "Specific plants/entities within categories",
+      "evidence": [
+        "Intra-category vocabulary variation analyzed",
+        "Candidate entity modifiers identified"
+      ],
+      "feasibility": "PARTIAL"
+    }
+  },
+  "overall": {
+    "achieved_levels": 1,
+    "partial_levels": 2,
+    "blocked_levels": 1,
+    "conclusion": "STRUCTURAL_RECOVERY_POSSIBLE"
+  }
+}

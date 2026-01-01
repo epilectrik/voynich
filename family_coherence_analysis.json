@@ -1,0 +1,39 @@
+{
+  "families_analyzed": 8,
+  "intra_family_variance": {
+    "1": 54.861,
+    "2": 491.845,
+    "3": 326.255,
+    "4": 128.249,
+    "5": 190.632,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 78.819
+  },
+  "inter_family_variance": 403.467,
+  "mean_intra_variance": 158.833,
+  "f_ratio": 2.54,
+  "best_discriminating_dimensions": [
+    [
+      "total_length",
+      88667.483
+    ],
+    [
+      "hazard_adjacency_count",
+      34063.912
+    ],
+    [
+      "cycle_count",
+      1555.716
+    ],
+    [
+      "near_miss_count",
+      52.448
+    ],
+    [
+      "recovery_ops_count",
+      43.404
+    ]
+  ],
+  "interpretation": "HIGH"
+}

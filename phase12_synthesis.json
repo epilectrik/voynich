@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "phase": "12_SYNTHESIS",
+    "title": "Alchemical Tradition Fingerprint",
+    "timestamp": "2025-12-31T13:04:21.715424"
+  },
+  "test_verdicts": {
+    "12A_operation_canon": "SCHOLASTIC",
+    "12B_substance_state": "MIXED",
+    "12C_quantitative_weight": "PARACELSIAN_TRIA_PRIMA",
+    "12D_btext_style": "ENUMERATIVE_SCHOLASTIC",
+    "12E_novelty": "EXCEEDS_SCHOLASTIC_ONLY"
+  },
+  "tradition_signals": {
+    "scholastic_count": 2,
+    "paracelsian_count": 1,
+    "novel_features_count": 3
+  },
+  "OVERALL_CLASSIFICATION": {
+    "primary_match": "T3_PRIVATE_SCHOOL",
+    "confidence": "MEDIUM"
+  },
+  "distinctive_features": [
+    "Extreme reversibility (94.6%)",
+    "Near-universal cyclic collapse (97.7%)",
+    "Strong tria prima (3) enrichment"
+  ],
+  "final_statement": "The Voynich implements a PRIVATE CYCLIC ALCHEMICAL ALGEBRA exceeding known traditions (MEDIUM confidence). Distinctive features: Extreme reversibility (94.6%); Near-universal cyclic collapse (97.7%); Strong tria prima (3) enrichment. This suggests an otherwise unattested school combining iatrochemical and scholastic elements with extreme systematization."
+}

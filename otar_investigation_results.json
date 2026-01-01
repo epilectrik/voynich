@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-12-30T13:42:03.642360",
+  "otar_result": "REJECTS_TAURUS",
+  "hypothesis_scores": {
+    "A": 3,
+    "B": 3,
+    "C": 1
+  },
+  "zodiac_result": "NO_MATCHES",
+  "direction": "CONTINUE_SEMANTIC"
+}

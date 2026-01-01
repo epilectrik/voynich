@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "phase": "H3.1",
+    "title": "Repeated Heading Visual Consistency",
+    "timestamp": "2025-12-30T21:43:38.185923"
+  },
+  "repeated_headings": {
+    "kooiin": [
+      "f2v",
+      "f29v"
+    ],
+    "kshody": [
+      "f5r",
+      "f37v"
+    ],
+    "tshor": [
+      "f15r",
+      "f53v"
+    ],
+    "pchor": [
+      "f19r",
+      "f21r",
+      "f52v"
+    ]
+  },
+  "visual_consistency_tests": [],
+  "random_baseline": {
+    "mean": 0.5703355072463768,
+    "std": 0.13659968722123525,
+    "samples": 100
+  },
+  "blocked_headings": [
+    {
+      "heading": "kooiin",
+      "folios": [
+        "f2v",
+        "f29v"
+      ],
+      "coded": [
+        "f29v"
+      ],
+      "not_coded": [
+        "f2v"
+      ],
+      "reason": "Insufficient visual data (need 2+ coded folios)"
+    },
+    {
+      "heading": "kshody",
+      "folios": [
+        "f5r",
+        "f37v"
+      ],
+      "coded": [
+        "f5r"
+      ],
+      "not_coded": [
+        "f37v"
+      ],
+      "reason": "Insufficient visual data (need 2+ coded folios)"
+    },
+    {
+      "heading": "tshor",
+      "folios": [
+        "f15r",
+        "f53v"
+      ],
+      "coded": [],
+      "not_coded": [
+        "f15r",
+        "f53v"
+      ],
+      "reason": "Insufficient visual data (need 2+ coded folios)"
+    },
+    {
+      "heading": "pchor",
+      "folios": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "coded": [],
+      "not_coded": [
+        "f19r",
+        "f21r",
+        "f52v"
+      ],
+      "reason": "Insufficient visual data (need 2+ coded folios)"
+    }
+  ]
+}

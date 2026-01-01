@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "phase": "18C",
+    "title": "Failure Class Taxonomy",
+    "timestamp": "2025-12-31T16:13:10.820365"
+  },
+  "classes": {
+    "ENERGY_OVERSHOOT": {
+      "count": 1,
+      "transitions": [
+        "he -> t"
+      ],
+      "physical_mechanism": "Bumping, scorching, thermal shock",
+      "description": "Too much heat too fast"
+    },
+    "PHASE_ORDERING": {
+      "count": 7,
+      "transitions": [
+        "shey -> aiin",
+        "shey -> al",
+        "shey -> c",
+        "dy -> aiin",
+        "dy -> chey",
+        "chey -> chedy",
+        "chey -> shedy"
+      ],
+      "physical_mechanism": "Vapor lock, premature condensation",
+      "description": "Wrong sequence of phase changes"
+    },
+    "RATE_MISMATCH": {
+      "count": 1,
+      "transitions": [
+        "ar -> dal"
+      ],
+      "physical_mechanism": "Flooding, weeping, channeling",
+      "description": "Flow rates incompatible"
+    },
+    "COMPOSITION_JUMP": {
+      "count": 4,
+      "transitions": [
+        "chedy -> ee",
+        "c -> ee",
+        "shedy -> aiin",
+        "shedy -> o"
+      ],
+      "physical_mechanism": "Contamination, impurity carryover",
+      "description": "Skipping purification stages"
+    },
+    "CONTAINMENT_TIMING": {
+      "count": 4,
+      "transitions": [
+        "chol -> r",
+        "l -> chol",
+        "or -> dal",
+        "he -> or"
+      ],
+      "physical_mechanism": "Overflow, pressure failure",
+      "description": "Improper vessel state"
+    }
+  },
+  "unclassified": {
+    "count": 0,
+    "transitions": []
+  },
+  "class_definitions": {
+    "ENERGY_OVERSHOOT": {
+      "description": "Too much heat too fast",
+      "physical_cause": "Bumping, scorching, thermal shock",
+      "keywords": [
+        "he",
+        "t",
+        "k"
+      ]
+    },
+    "PHASE_ORDERING": {
+      "description": "Wrong sequence of phase changes",
+      "physical_cause": "Vapor lock, premature condensation",
+      "keywords": [
+        "chey",
+        "shey",
+        "dy"
+      ]
+    },
+    "RATE_MISMATCH": {
+      "description": "Flow rates incompatible",
+      "physical_cause": "Flooding, weeping, channeling",
+      "keywords": [
+        "or",
+        "dal",
+        "ar",
+        "chol"
+      ]
+    },
+    "COMPOSITION_JUMP": {
+      "description": "Skipping purification stages",
+      "physical_cause": "Contamination, impurity carryover",
+      "keywords": [
+        "chedy",
+        "shedy",
+        "aiin",
+        "ee"
+      ]
+    },
+    "CONTAINMENT_TIMING": {
+      "description": "Improper vessel state",
+      "physical_cause": "Overflow, pressure failure",
+      "keywords": [
+        "l",
+        "c",
+        "o",
+        "r"
+      ]
+    }
+  },
+  "DOMINANT_FAILURE_MODE": "PHASE_ORDERING",
+  "INTERPRETATION": "The system most strongly prevents PHASE_ORDERING failures, which involve Vapor lock, premature condensation."
+}

@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "phase": "9A",
+    "title": "Symmetry vs Asymmetry Test",
+    "timestamp": "2025-12-31T12:31:48.754847"
+  },
+  "tests": {
+    "A1_directional_entropy": {
+      "mean_forward_entropy": 7.6779,
+      "mean_backward_entropy": 7.6344,
+      "ratio": 1.0057,
+      "interpretation": "symmetric",
+      "pharmacology_prediction": "ratio > 1.0 (forward constrained)",
+      "alchemy_prediction": "ratio \u2248 1.0 (bidirectional)"
+    },
+    "A2_reversibility": {
+      "total_reversals_tested": 44393,
+      "legal_reversals": 27791,
+      "reversal_legality_rate": 0.626,
+      "interpretation": "high_reversibility",
+      "pharmacology_prediction": "<10% reversals legal",
+      "alchemy_prediction": ">30% reversals legal"
+    },
+    "A3_commutativity": {
+      "total_operator_pairs": 326,
+      "commutative_pairs": 286,
+      "commutativity_rate": 0.8773,
+      "interpretation": "high_commutativity",
+      "pharmacology_prediction": "<20% commutativity",
+      "alchemy_prediction": ">40% commutativity"
+    }
+  },
+  "verdict": {
+    "pharmacology_compatible": false,
+    "alchemy_compatible": true,
+    "discriminators": [
+      "A2: Reversal legality 62.6% > 35% rules out pharmacology",
+      "A3: Commutativity 87.7% > 45% rules out pharmacology"
+    ],
+    "discriminator_strength": "STRONG"
+  }
+}

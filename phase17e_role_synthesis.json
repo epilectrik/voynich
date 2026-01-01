@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "phase": "17E",
+    "title": "Kernel Role Synthesis",
+    "timestamp": "2025-12-31T15:51:24.646820"
+  },
+  "evidence_synthesis": {
+    "k": {
+      "cycle_position": {
+        "dominant_stage": "VAPORIZE",
+        "hypothesis": "PHASE_CHANGER - manages VAPORIZE stage"
+      },
+      "failure_proximity": {
+        "role": "BOUNDARY_ADJACENT",
+        "direct_involvement": 0,
+        "interpretation": "Near operational boundaries - adjacent to failure modes"
+      },
+      "recovery_role": {
+        "role": "SECONDARY_ATTRACTOR",
+        "stats": {
+          "mean_steps_to_reach": 2.36,
+          "times_first_reached": 33,
+          "reach_rate": 0.1941,
+          "min_steps": 1,
+          "max_steps": 7
+        }
+      },
+      "operator_affinity": {
+        "interpretations": [
+          "Primarily receives HEAT_ACTION - apply/maintain heat (3466x)",
+          "Preceded by HEAT_ACTION - apply/maintain heat (754x)",
+          "Followed by HEAT_ACTION - apply/maintain heat (720x)"
+        ],
+        "control_type": "HEAT_CONTROLLED"
+      }
+    },
+    "h": {
+      "cycle_position": {
+        "dominant_stage": "CONDENSE",
+        "hypothesis": "PHASE_REVERSER - handles CONDENSE stage"
+      },
+      "failure_proximity": {
+        "role": "BOUNDARY_ADJACENT",
+        "direct_involvement": 0,
+        "interpretation": "Near operational boundaries - adjacent to failure modes"
+      },
+      "recovery_role": {
+        "role": "SECONDARY_ATTRACTOR",
+        "stats": {
+          "mean_steps_to_reach": 2.39,
+          "times_first_reached": 44,
+          "reach_rate": 0.2588,
+          "min_steps": 1,
+          "max_steps": 6
+        }
+      },
+      "operator_affinity": {
+        "interpretations": [
+          "Primarily receives CUT_ACTION - separate/divide (648x)",
+          "Preceded by CHANNEL_ACTION - direct flow/vapor (675x)",
+          "Followed by CHANNEL_ACTION - direct flow/vapor (487x)"
+        ],
+        "control_type": "POSITION_CONTROLLED"
+      }
+    },
+    "e": {
+      "cycle_position": {
+        "dominant_stage": "VAPORIZE",
+        "hypothesis": "PHASE_CHANGER - manages VAPORIZE stage"
+      },
+      "failure_proximity": {
+        "role": "BOUNDARY_ADJACENT",
+        "direct_involvement": 0,
+        "interpretation": "Near operational boundaries - adjacent to failure modes"
+      },
+      "recovery_role": {
+        "role": "HOME_POSITION",
+        "stats": {
+          "mean_steps_to_reach": 2.35,
+          "times_first_reached": 93,
+          "reach_rate": 0.5471,
+          "min_steps": 1,
+          "max_steps": 9
+        }
+      },
+      "operator_affinity": {
+        "interpretations": [
+          "Primarily receives CHANNEL_ACTION - direct flow/vapor (3365x)",
+          "Preceded by HEAT_ACTION - apply/maintain heat (1343x)",
+          "Followed by HEAT_ACTION - apply/maintain heat (1664x)"
+        ],
+        "control_type": "FLOW_CONTROLLED"
+      }
+    }
+  },
+  "final_roles": {
+    "k": {
+      "assigned_role": "ENERGY_MODULATOR",
+      "description": "Controls heat input to the system",
+      "physical_interpretation": "Fire/burner adjustment - manages energy entering the flask",
+      "evidence_signals": [
+        "PHASE_UP",
+        "HEAT_CONTROLLED"
+      ],
+      "confidence": "MEDIUM"
+    },
+    "h": {
+      "assigned_role": "PHASE_MANAGER",
+      "description": "Manages vapor-liquid phase transitions",
+      "physical_interpretation": "Column operation - handles vaporization and condensation",
+      "evidence_signals": [
+        "PHASE_DOWN",
+        "POSITION_CONTROLLED"
+      ],
+      "confidence": "MEDIUM"
+    },
+    "e": {
+      "assigned_role": "PHASE_MANAGER",
+      "description": "Manages vapor-liquid phase transitions",
+      "physical_interpretation": "Column operation - handles vaporization and condensation",
+      "evidence_signals": [
+        "PHASE_UP",
+        "PRIMARY_ATTRACTOR",
+        "FLOW_CONTROLLED"
+      ],
+      "confidence": "HIGH"
+    }
+  },
+  "control_model": "k as ENERGY_MODULATOR: Fire/burner adjustment - manages energy entering the flask\nh as PHASE_MANAGER: Column operation - handles vaporization and condensation\ne as PHASE_MANAGER: Column operation - handles vaporization and condensation\n\nTogether they form the three-point control architecture for reflux distillation:\n- k manages energy input (fire control)\n- h manages phase transitions (column operation)\n- e provides stability anchoring (reflux ratio)",
+  "role_definitions": {
+    "ENERGY_MODULATOR": "Controls heat input to the system",
+    "PHASE_MANAGER": "Manages vapor-liquid phase transitions",
+    "STABILITY_ANCHOR": "Maintains steady-state operation",
+    "RATE_CONTROLLER": "Governs process cycling rate",
+    "RECOVERY_POINT": "Safe state for perturbation recovery"
+  }
+}

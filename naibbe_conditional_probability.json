@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "phase": "N1",
+    "title": "Conditional Probability",
+    "timestamp": "2025-12-31T09:15:15.072186",
+    "dependencies": []
+  },
+  "findings": {
+    "bigram_to_char_accuracy": 0.5336,
+    "bigram_to_bigram_accuracy": 0.2842,
+    "dillinger_threshold": 0.5,
+    "exceeds_threshold": true,
+    "total_bigrams_analyzed": 413,
+    "interpretation": "HIGH conditional probability"
+  },
+  "summary": {
+    "key_results": [
+      "Bigram->char accuracy: 53.4%",
+      "Bigram->bigram accuracy: 28.4%",
+      "Exceeds 50% threshold: True"
+    ],
+    "implications": [
+      "High conditional probability INCOMPATIBLE with random cipher chunking"
+    ]
+  }
+}

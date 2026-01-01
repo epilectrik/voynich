@@ -1,0 +1,361 @@
+{
+  "metadata": {
+    "title": "Visual Feature Schema for Pilot Study",
+    "phase": "Data Recovery Phase, Task 3",
+    "date": "2025-12-30T16:47:35.083173",
+    "feature_count": 25,
+    "excluded_from_correlation": [
+      "overall_complexity",
+      "identifiable_impression"
+    ]
+  },
+  "features": {
+    "root_present": {
+      "type": "tri_state",
+      "values": [
+        "PRESENT",
+        "ABSENT",
+        "UNDETERMINED"
+      ],
+      "description": "Any root structure visible below stem/soil line"
+    },
+    "root_type": {
+      "type": "categorical",
+      "values": [
+        "NONE",
+        "SINGLE_TAPROOT",
+        "BRANCHING",
+        "BULBOUS",
+        "FIBROUS",
+        "UNDETERMINED"
+      ],
+      "description": "Root morphology type",
+      "depends_on": {
+        "root_present": "PRESENT"
+      }
+    },
+    "root_prominence": {
+      "type": "categorical",
+      "values": [
+        "SMALL",
+        "MEDIUM",
+        "LARGE",
+        "NA",
+        "UNDETERMINED"
+      ],
+      "description": "<20% / 20-40% / >40% of plant height",
+      "depends_on": {
+        "root_present": "PRESENT"
+      }
+    },
+    "root_color_distinct": {
+      "type": "tri_state",
+      "values": [
+        "YES",
+        "NO",
+        "UNDETERMINED"
+      ],
+      "description": "Root colored differently from stem",
+      "depends_on": {
+        "root_present": "PRESENT"
+      }
+    },
+    "stem_count": {
+      "type": "categorical",
+      "values": [
+        "1",
+        "2",
+        "3_PLUS",
+        "UNDETERMINED"
+      ],
+      "description": "Number of main stems from root/base"
+    },
+    "stem_type": {
+      "type": "categorical",
+      "values": [
+        "STRAIGHT",
+        "CURVED",
+        "BRANCHING",
+        "TWINING",
+        "UNDETERMINED"
+      ],
+      "description": "Predominant stem pattern"
+    },
+    "stem_thickness": {
+      "type": "categorical",
+      "values": [
+        "THIN",
+        "MEDIUM",
+        "THICK",
+        "UNDETERMINED"
+      ],
+      "description": "Line-like / visible width / trunk-like"
+    },
+    "stem_color_distinct": {
+      "type": "tri_state",
+      "values": [
+        "YES",
+        "NO",
+        "UNDETERMINED"
+      ],
+      "description": "Stem differs from leaves in color"
+    },
+    "leaf_present": {
+      "type": "tri_state",
+      "values": [
+        "PRESENT",
+        "ABSENT",
+        "UNDETERMINED"
+      ],
+      "description": "Any leaf structures visible"
+    },
+    "leaf_count_category": {
+      "type": "categorical",
+      "values": [
+        "NONE",
+        "FEW_1_5",
+        "MEDIUM_6_15",
+        "MANY_16_PLUS",
+        "UNDETERMINED"
+      ],
+      "description": "Count of distinct leaves",
+      "depends_on": {
+        "leaf_present": "PRESENT"
+      }
+    },
+    "leaf_shape": {
+      "type": "categorical",
+      "values": [
+        "ROUND",
+        "OVAL",
+        "LANCEOLATE",
+        "LOBED",
+        "COMPOUND",
+        "SERRATED",
+        "NEEDLE",
+        "MIXED",
+        "UNDETERMINED"
+      ],
+      "description": "Predominant leaf shape",
+      "depends_on": {
+        "leaf_present": "PRESENT"
+      }
+    },
+    "leaf_arrangement": {
+      "type": "categorical",
+      "values": [
+        "ALTERNATE",
+        "OPPOSITE",
+        "BASAL",
+        "WHORLED",
+        "SCATTERED",
+        "NA",
+        "UNDETERMINED"
+      ],
+      "description": "Leaf positioning pattern",
+      "depends_on": {
+        "leaf_present": "PRESENT"
+      }
+    },
+    "leaf_size_relative": {
+      "type": "categorical",
+      "values": [
+        "SMALL",
+        "MEDIUM",
+        "LARGE",
+        "MIXED",
+        "UNDETERMINED"
+      ],
+      "description": "Relative to overall plant",
+      "depends_on": {
+        "leaf_present": "PRESENT"
+      }
+    },
+    "leaf_color_uniform": {
+      "type": "tri_state",
+      "values": [
+        "YES",
+        "NO",
+        "UNDETERMINED"
+      ],
+      "description": "Single color vs multiple",
+      "depends_on": {
+        "leaf_present": "PRESENT"
+      }
+    },
+    "flower_present": {
+      "type": "tri_state",
+      "values": [
+        "PRESENT",
+        "ABSENT",
+        "UNDETERMINED"
+      ],
+      "description": "Any flower/bud visible"
+    },
+    "flower_count": {
+      "type": "categorical",
+      "values": [
+        "NONE",
+        "1",
+        "2_5",
+        "6_PLUS",
+        "UNDETERMINED"
+      ],
+      "description": "Count of distinct flowers",
+      "depends_on": {
+        "flower_present": "PRESENT"
+      }
+    },
+    "flower_position": {
+      "type": "categorical",
+      "values": [
+        "NONE",
+        "TERMINAL",
+        "AXILLARY",
+        "THROUGHOUT",
+        "UNDETERMINED"
+      ],
+      "description": "Where flowers appear on plant",
+      "depends_on": {
+        "flower_present": "PRESENT"
+      }
+    },
+    "flower_color_distinct": {
+      "type": "tri_state",
+      "values": [
+        "YES",
+        "NO",
+        "UNDETERMINED"
+      ],
+      "description": "Flower differs from leaves in color",
+      "depends_on": {
+        "flower_present": "PRESENT"
+      }
+    },
+    "flower_shape": {
+      "type": "categorical",
+      "values": [
+        "NONE",
+        "SIMPLE",
+        "COMPOUND",
+        "RADIAL",
+        "IRREGULAR",
+        "UNDETERMINED"
+      ],
+      "description": "Flower structure type",
+      "depends_on": {
+        "flower_present": "PRESENT"
+      }
+    },
+    "plant_count": {
+      "type": "categorical",
+      "values": [
+        "1",
+        "2",
+        "3_PLUS",
+        "UNDETERMINED"
+      ],
+      "description": "Distinct plants on folio"
+    },
+    "container_present": {
+      "type": "tri_state",
+      "values": [
+        "PRESENT",
+        "ABSENT",
+        "UNDETERMINED"
+      ],
+      "description": "Plant in pot/container"
+    },
+    "plant_symmetry": {
+      "type": "categorical",
+      "values": [
+        "SYMMETRIC",
+        "ASYMMETRIC",
+        "UNDETERMINED"
+      ],
+      "description": "Left-right mirror symmetry"
+    },
+    "overall_complexity": {
+      "type": "categorical",
+      "values": [
+        "SIMPLE",
+        "MODERATE",
+        "COMPLEX",
+        "UNDETERMINED"
+      ],
+      "description": "<5 / 5-15 / >15 distinct elements",
+      "excluded_from_correlation": true,
+      "exclusion_reason": "Compound feature - not single visual dimension"
+    },
+    "identifiable_impression": {
+      "type": "categorical",
+      "values": [
+        "YES",
+        "NO",
+        "UNCERTAIN"
+      ],
+      "description": "Looks like a real plant",
+      "excluded_from_correlation": true,
+      "exclusion_reason": "Subjective compound judgment"
+    },
+    "drawing_completeness": {
+      "type": "categorical",
+      "values": [
+        "COMPLETE",
+        "PARTIAL",
+        "FRAGMENTARY",
+        "UNDETERMINED"
+      ],
+      "description": "Drawing condition"
+    }
+  },
+  "tri_state_features": [
+    "root_present",
+    "root_color_distinct",
+    "stem_color_distinct",
+    "leaf_present",
+    "leaf_color_uniform",
+    "flower_present",
+    "flower_color_distinct",
+    "container_present"
+  ],
+  "dependency_rules": {
+    "root_type": {
+      "root_present": "PRESENT"
+    },
+    "root_prominence": {
+      "root_present": "PRESENT"
+    },
+    "root_color_distinct": {
+      "root_present": "PRESENT"
+    },
+    "leaf_count_category": {
+      "leaf_present": "PRESENT"
+    },
+    "leaf_shape": {
+      "leaf_present": "PRESENT"
+    },
+    "leaf_arrangement": {
+      "leaf_present": "PRESENT"
+    },
+    "leaf_size_relative": {
+      "leaf_present": "PRESENT"
+    },
+    "leaf_color_uniform": {
+      "leaf_present": "PRESENT"
+    },
+    "flower_count": {
+      "flower_present": "PRESENT"
+    },
+    "flower_position": {
+      "flower_present": "PRESENT"
+    },
+    "flower_color_distinct": {
+      "flower_present": "PRESENT"
+    },
+    "flower_shape": {
+      "flower_present": "PRESENT"
+    }
+  },
+  "validation_status": null
+}

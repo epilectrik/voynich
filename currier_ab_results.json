@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-12-30T13:28:17.753749",
+  "currier_a": {
+    "total_words": 1935,
+    "unique_words": 80,
+    "word_length_avg": 4.883720930232558,
+    "gallows_rate": 0.5348837209302325,
+    "decoded_prefix_rate": 0.9844961240310077,
+    "fully_decoded_rate": 0.1937984496124031,
+    "top_prefixes": [
+      [
+        "ot",
+        330
+      ],
+      [
+        "da",
+        235
+      ],
+      [
+        "ok",
+        210
+      ],
+      [
+        "al",
+        210
+      ],
+      [
+        "ch",
+        185
+      ],
+      [
+        "sh",
+        185
+      ],
+      [
+        "yk",
+        150
+      ],
+      [
+        "cth",
+        115
+      ],
+      [
+        "ol",
+        95
+      ],
+      [
+        "qo",
+        60
+      ]
+    ],
+    "top_middles": [
+      [
+        "ch",
+        150
+      ],
+      [
+        "e",
+        135
+      ],
+      [
+        "a",
+        120
+      ],
+      [
+        "ee",
+        105
+      ],
+      [
+        "ol",
+        100
+      ],
+      [
+        "ckh",
+        90
+      ],
+      [
+        "ct",
+        60
+      ],
+      [
+        "cht",
+        60
+      ],
+      [
+        "er",
+        30
+      ],
+      [
+        "c",
+        30
+      ]
+    ]
+  },
+  "currier_b": {
+    "total_words": 1910,
+    "unique_words": 80,
+    "word_length_avg": 5.222513089005235,
+    "gallows_rate": 0.42408376963350786,
+    "decoded_prefix_rate": 0.9057591623036649,
+    "fully_decoded_rate": 0.2617801047120419,
+    "top_prefixes": [
+      [
+        "qo",
+        360
+      ],
+      [
+        "ol",
+        320
+      ],
+      [
+        "da",
+        235
+      ],
+      [
+        "cth",
+        190
+      ],
+      [
+        "ch",
+        185
+      ],
+      [
+        "sh",
+        185
+      ],
+      [
+        "lc",
+        90
+      ],
+      [
+        "tc",
+        90
+      ],
+      [
+        "ot",
+        55
+      ],
+      [
+        "ar",
+        50
+      ]
+    ],
+    "top_middles": [
+      [
+        "k",
+        150
+      ],
+      [
+        "tch",
+        150
+      ],
+      [
+        "e",
+        135
+      ],
+      [
+        "lch",
+        120
+      ],
+      [
+        "ee",
+        105
+      ],
+      [
+        "ol",
+        100
+      ],
+      [
+        "l",
+        90
+      ],
+      [
+        "ke",
+        60
+      ],
+      [
+        "kee",
+        60
+      ],
+      [
+        "che",
+        60
+      ]
+    ]
+  },
+  "comparison": {
+    "prefix_differences_count": 9,
+    "middle_differences_count": 17,
+    "structural_differences": {
+      "word_length": {
+        "a": 4.883720930232558,
+        "b": 5.222513089005235
+      },
+      "gallows_rate": {
+        "a": 0.5348837209302325,
+        "b": 0.42408376963350786
+      },
+      "decoded_prefix_rate": {
+        "a": 0.9844961240310077,
+        "b": 0.9057591623036649
+      },
+      "fully_decoded_rate": {
+        "a": 0.1937984496124031,
+        "b": 0.2617801047120419
+      }
+    }
+  },
+  "trotula_match": {
+    "currier_a_trotula_score": 0.11627906976744186,
+    "currier_b_trotula_score": 0.5759162303664921,
+    "better_match": "B",
+    "ratio": 4.952879581151832
+  },
+  "resistant_folios": {
+    "f57v": "A",
+    "f54r": "A"
+  }
+}

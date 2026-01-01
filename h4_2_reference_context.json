@@ -1,0 +1,2072 @@
+{
+  "metadata": {
+    "phase": "H4.2",
+    "title": "Reference Context Analysis",
+    "timestamp": "2025-12-30T21:43:38.197924"
+  },
+  "b_entry_analysis": [
+    {
+      "b_folio": "f31r",
+      "word_count": 126,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f31v",
+      "word_count": 138,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58r",
+        "heading": "kor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f33r",
+      "word_count": 81,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58r",
+        "heading": "kor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f34r",
+      "word_count": 171,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f34v",
+      "word_count": 144,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f39v",
+      "word_count": 175,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f58r",
+        "heading": "kor",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f10v",
+          "heading": "paiin",
+          "count": 1
+        },
+        {
+          "a_folio": "f35v",
+          "heading": "par",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f40r",
+      "word_count": 111,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f96r",
+        "heading": "tor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f40v",
+      "word_count": 118,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58r",
+        "heading": "kor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f41r",
+      "word_count": 150,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f35v",
+        "heading": "par",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f43v",
+      "word_count": 206,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f46v",
+      "word_count": 145,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f96r",
+        "heading": "tor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f48r",
+      "word_count": 123,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f48v",
+      "word_count": 155,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f58r",
+        "heading": "kor",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f50r",
+      "word_count": 130,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f11r",
+        "heading": "tshol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f55r",
+      "word_count": 151,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f42r",
+        "heading": "sho",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f42v",
+          "heading": "tcho",
+          "count": 1
+        },
+        {
+          "a_folio": "f54r",
+          "heading": "podaiin",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f55v",
+      "word_count": 128,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f96r",
+        "heading": "tor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f66r",
+      "word_count": 427,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f49v",
+        "heading": "r*",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f75r",
+      "word_count": 560,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f42r",
+        "heading": "sho",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f75v",
+      "word_count": 465,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 3
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f76v",
+      "word_count": 468,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f77r",
+      "word_count": 365,
+      "distinct_a_refs": 2,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f77v",
+      "word_count": 417,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f42v",
+        "heading": "tcho",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f19r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f101r1",
+          "heading": "pcheol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f78r",
+      "word_count": 377,
+      "distinct_a_refs": 2,
+      "primary_reference": {
+        "a_folio": "f29r",
+        "heading": "poraiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f79r",
+      "word_count": 521,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 4
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f19r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f79v",
+      "word_count": 481,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f80r",
+      "word_count": 610,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f10v",
+        "heading": "paiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58r",
+          "heading": "kor",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 1
+        },
+        {
+          "a_folio": "f101r1",
+          "heading": "pcheol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f80v",
+      "word_count": 493,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 4
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 4
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 2
+        },
+        {
+          "a_folio": "f8r",
+          "heading": "pshol",
+          "count": 1
+        },
+        {
+          "a_folio": "f101r1",
+          "heading": "pcheol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f81r",
+      "word_count": 249,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f35v",
+        "heading": "par",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f81v",
+      "word_count": 351,
+      "distinct_a_refs": 2,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f35v",
+          "heading": "par",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f82v",
+      "word_count": 430,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f101r1",
+        "heading": "pcheol",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f83r",
+      "word_count": 442,
+      "distinct_a_refs": 4,
+      "primary_reference": {
+        "a_folio": "f19r",
+        "heading": "pchor",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f84r",
+      "word_count": 460,
+      "distinct_a_refs": 4,
+      "primary_reference": {
+        "a_folio": "f96r",
+        "heading": "tor",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f8r",
+          "heading": "pshol",
+          "count": 1
+        },
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f84v",
+      "word_count": 421,
+      "distinct_a_refs": 2,
+      "primary_reference": {
+        "a_folio": "f58r",
+        "heading": "kor",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f85r1",
+      "word_count": 371,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f54r",
+        "heading": "podaiin",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f86v4",
+      "word_count": 223,
+      "distinct_a_refs": 4,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        },
+        {
+          "a_folio": "f54v",
+          "heading": "pcheodar",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f86v6",
+      "word_count": 534,
+      "distinct_a_refs": 4,
+      "primary_reference": {
+        "a_folio": "f10v",
+        "heading": "paiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f35v",
+          "heading": "par",
+          "count": 1
+        },
+        {
+          "a_folio": "f54r",
+          "heading": "podaiin",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f86v5",
+      "word_count": 420,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f19r",
+        "heading": "pchor",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f94v",
+      "word_count": 113,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f35v",
+        "heading": "par",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f95r2",
+      "word_count": 93,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f96r",
+        "heading": "tor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f95v1",
+      "word_count": 138,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f7r",
+        "heading": "fchodaiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f15r",
+          "heading": "tshor",
+          "count": 1
+        },
+        {
+          "a_folio": "f28v",
+          "heading": "kshol",
+          "count": 1
+        },
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        },
+        {
+          "a_folio": "f53v",
+          "heading": "tshor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f103r",
+      "word_count": 619,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f103v",
+      "word_count": 522,
+      "distinct_a_refs": 6,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 3
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 2
+        },
+        {
+          "a_folio": "f19r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f90v1",
+          "heading": "pcheor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f104r",
+      "word_count": 503,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f104v",
+      "word_count": 517,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f42r",
+        "heading": "sho",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f35v",
+          "heading": "par",
+          "count": 1
+        },
+        {
+          "a_folio": "f90v1",
+          "heading": "pcheor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f105r",
+      "word_count": 425,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f10v",
+        "heading": "paiin",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f35v",
+          "heading": "par",
+          "count": 1
+        },
+        {
+          "a_folio": "f58r",
+          "heading": "kor",
+          "count": 1
+        },
+        {
+          "a_folio": "f87v",
+          "heading": "pcheey",
+          "count": 1
+        },
+        {
+          "a_folio": "f90v1",
+          "heading": "pcheor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f105v",
+      "word_count": 467,
+      "distinct_a_refs": 6,
+      "primary_reference": {
+        "a_folio": "f10v",
+        "heading": "paiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f19r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f106r",
+      "word_count": 538,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f42r",
+        "heading": "sho",
+        "count": 3
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f54v",
+          "heading": "pcheodar",
+          "count": 1
+        },
+        {
+          "a_folio": "f101r1",
+          "heading": "pcheol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f106v",
+      "word_count": 638,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f14r",
+        "heading": "pchodaiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        },
+        {
+          "a_folio": "f44v",
+          "heading": "tsho",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f107r",
+      "word_count": 602,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f13r",
+        "heading": "torshor",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f107v",
+      "word_count": 552,
+      "distinct_a_refs": 5,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 4
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f10v",
+          "heading": "paiin",
+          "count": 1
+        },
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f29r",
+          "heading": "poraiin",
+          "count": 1
+        },
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f108r",
+      "word_count": 580,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f42r",
+        "heading": "sho",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f108v",
+      "word_count": 680,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        },
+        {
+          "a_folio": "f90v1",
+          "heading": "pcheor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f111v",
+      "word_count": 784,
+      "distinct_a_refs": 4,
+      "primary_reference": {
+        "a_folio": "f42r",
+        "heading": "sho",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f35v",
+          "heading": "par",
+          "count": 1
+        },
+        {
+          "a_folio": "f96r",
+          "heading": "tor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f112v",
+      "word_count": 571,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f14r",
+        "heading": "pchodaiin",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f113r",
+      "word_count": 686,
+      "distinct_a_refs": 6,
+      "primary_reference": {
+        "a_folio": "f19r",
+        "heading": "pchor",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f21r",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f32v",
+          "heading": "kcheodaiin",
+          "count": 1
+        },
+        {
+          "a_folio": "f42v",
+          "heading": "tcho",
+          "count": 1
+        },
+        {
+          "a_folio": "f52v",
+          "heading": "pchor",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f113v",
+      "word_count": 590,
+      "distinct_a_refs": 4,
+      "primary_reference": {
+        "a_folio": "f101r1",
+        "heading": "pcheol",
+        "count": 2
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f22r",
+          "heading": "pol",
+          "count": 1
+        },
+        {
+          "a_folio": "f29r",
+          "heading": "poraiin",
+          "count": 1
+        },
+        {
+          "a_folio": "f44v",
+          "heading": "tsho",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f114r",
+      "word_count": 572,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f90v1",
+        "heading": "pcheor",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f114v",
+      "word_count": 430,
+      "distinct_a_refs": 2,
+      "primary_reference": {
+        "a_folio": "f22r",
+        "heading": "pol",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f115r",
+      "word_count": 517,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f28r",
+        "heading": "pchodar",
+        "count": 1
+      },
+      "secondary_references": []
+    },
+    {
+      "b_folio": "f115v",
+      "word_count": 494,
+      "distinct_a_refs": 3,
+      "primary_reference": {
+        "a_folio": "f14r",
+        "heading": "pchodaiin",
+        "count": 1
+      },
+      "secondary_references": [
+        {
+          "a_folio": "f42r",
+          "heading": "sho",
+          "count": 1
+        },
+        {
+          "a_folio": "f58v",
+          "heading": "tol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "b_folio": "f116r",
+      "word_count": 650,
+      "distinct_a_refs": 1,
+      "primary_reference": {
+        "a_folio": "f58v",
+        "heading": "tol",
+        "count": 1
+      },
+      "secondary_references": []
+    }
+  ],
+  "a_heading_roles": {
+    "f1r": {
+      "heading": "fachys",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f1v": {
+      "heading": "kchsy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f2r": {
+      "heading": "kydainy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f2v": {
+      "heading": "kooiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f3r": {
+      "heading": "tsheos",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f3v": {
+      "heading": "koaiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f4r": {
+      "heading": "kodalchy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f4v": {
+      "heading": "pchooiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f5r": {
+      "heading": "kshody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f5v": {
+      "heading": "kocheor",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f6r": {
+      "heading": "foar",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f6v": {
+      "heading": "koar",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f7r": {
+      "heading": "fchodaiin",
+      "primary_count": 1,
+      "secondary_count": 0,
+      "total_references": 1,
+      "primary_rate": 1.0,
+      "in_degree": 1
+    },
+    "f7v": {
+      "heading": "polyshy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f8r": {
+      "heading": "pshol",
+      "primary_count": 0,
+      "secondary_count": 2,
+      "total_references": 2,
+      "primary_rate": 0.0,
+      "in_degree": 2
+    },
+    "f8v": {
+      "heading": "cthod",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f9r": {
+      "heading": "tydlo",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f9v": {
+      "heading": "fochor",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f10r": {
+      "heading": "pchocthy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f10v": {
+      "heading": "paiin",
+      "primary_count": 4,
+      "secondary_count": 2,
+      "total_references": 6,
+      "primary_rate": 0.6666666666666666,
+      "in_degree": 7
+    },
+    "f11r": {
+      "heading": "tshol",
+      "primary_count": 1,
+      "secondary_count": 0,
+      "total_references": 1,
+      "primary_rate": 1.0,
+      "in_degree": 1
+    },
+    "f11v": {
+      "heading": "poldchody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f13r": {
+      "heading": "torshor",
+      "primary_count": 1,
+      "secondary_count": 0,
+      "total_references": 1,
+      "primary_rate": 1.0,
+      "in_degree": 1
+    },
+    "f13v": {
+      "heading": "koair",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f14r": {
+      "heading": "pchodaiin",
+      "primary_count": 3,
+      "secondary_count": 0,
+      "total_references": 3,
+      "primary_rate": 1.0,
+      "in_degree": 3
+    },
+    "f14v": {
+      "heading": "pdychoiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f15r": {
+      "heading": "tshor",
+      "primary_count": 0,
+      "secondary_count": 1,
+      "total_references": 1,
+      "primary_rate": 0.0,
+      "in_degree": 1
+    },
+    "f15v": {
+      "heading": "poror",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f16r": {
+      "heading": "pocheody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f16v": {
+      "heading": "pchraiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f17r": {
+      "heading": "fshody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f17v": {
+      "heading": "pchodol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f18r": {
+      "heading": "pdrairdy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f18v": {
+      "heading": "told",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f19r": {
+      "heading": "pchor",
+      "primary_count": 3,
+      "secondary_count": 4,
+      "total_references": 7,
+      "primary_rate": 0.42857142857142855,
+      "in_degree": 7
+    },
+    "f19v": {
+      "heading": "pochaiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f20r": {
+      "heading": "kdchody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f20v": {
+      "heading": "faiis",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f21r": {
+      "heading": "pchor",
+      "primary_count": 0,
+      "secondary_count": 7,
+      "total_references": 7,
+      "primary_rate": 0.0,
+      "in_degree": 7
+    },
+    "f21v": {
+      "heading": "toldshy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f22r": {
+      "heading": "pol",
+      "primary_count": 9,
+      "secondary_count": 7,
+      "total_references": 16,
+      "primary_rate": 0.5625,
+      "in_degree": 25
+    },
+    "f22v": {
+      "heading": "pysaiinor",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f23r": {
+      "heading": "pydchdom",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f23v": {
+      "heading": "podairol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f24r": {
+      "heading": "porory",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f24v": {
+      "heading": "tchodar",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f25r": {
+      "heading": "fcholdy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f25v": {
+      "heading": "poeeaiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f27r": {
+      "heading": "ksor",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f27v": {
+      "heading": "fochof",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f28r": {
+      "heading": "pchodar",
+      "primary_count": 1,
+      "secondary_count": 0,
+      "total_references": 1,
+      "primary_rate": 1.0,
+      "in_degree": 1
+    },
+    "f28v": {
+      "heading": "kshol",
+      "primary_count": 0,
+      "secondary_count": 1,
+      "total_references": 1,
+      "primary_rate": 0.0,
+      "in_degree": 1
+    },
+    "f29r": {
+      "heading": "poraiin",
+      "primary_count": 1,
+      "secondary_count": 2,
+      "total_references": 3,
+      "primary_rate": 0.3333333333333333,
+      "in_degree": 3
+    },
+    "f29v": {
+      "heading": "kooiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f30r": {
+      "heading": "okchesy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f30v": {
+      "heading": "cthscthain",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f32r": {
+      "heading": "fchoiin",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f32v": {
+      "heading": "kcheodaiin",
+      "primary_count": 0,
+      "secondary_count": 1,
+      "total_references": 1,
+      "primary_rate": 0.0,
+      "in_degree": 1
+    },
+    "f35r": {
+      "heading": "cthoo",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f35v": {
+      "heading": "par",
+      "primary_count": 3,
+      "secondary_count": 6,
+      "total_references": 9,
+      "primary_rate": 0.3333333333333333,
+      "in_degree": 9
+    },
+    "f36r": {
+      "heading": "pchafdan",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f36v": {
+      "heading": "pcharasy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f37r": {
+      "heading": "tocphol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f37v": {
+      "heading": "kshody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f38r": {
+      "heading": "tolor",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f38v": {
+      "heading": "okchop",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f42r": {
+      "heading": "sho",
+      "primary_count": 6,
+      "secondary_count": 8,
+      "total_references": 14,
+      "primary_rate": 0.42857142857142855,
+      "in_degree": 19
+    },
+    "f42v": {
+      "heading": "tcho",
+      "primary_count": 1,
+      "secondary_count": 2,
+      "total_references": 3,
+      "primary_rate": 0.3333333333333333,
+      "in_degree": 4
+    },
+    "f44r": {
+      "heading": "tshodpy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f44v": {
+      "heading": "tsho",
+      "primary_count": 0,
+      "secondary_count": 2,
+      "total_references": 2,
+      "primary_rate": 0.0,
+      "in_degree": 2
+    },
+    "f45r": {
+      "heading": "pykydal",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f45v": {
+      "heading": "korary",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f47r": {
+      "heading": "pchair",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f47v": {
+      "heading": "psheot",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f49r": {
+      "heading": "poshol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f51r": {
+      "heading": "tcholdchy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f51v": {
+      "heading": "poshody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f52r": {
+      "heading": "tdokchcfhy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f52v": {
+      "heading": "pchor",
+      "primary_count": 0,
+      "secondary_count": 7,
+      "total_references": 7,
+      "primary_rate": 0.0,
+      "in_degree": 7
+    },
+    "f53r": {
+      "heading": "kodam",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f53v": {
+      "heading": "tshor",
+      "primary_count": 0,
+      "secondary_count": 1,
+      "total_references": 1,
+      "primary_rate": 0.0,
+      "in_degree": 1
+    },
+    "f54r": {
+      "heading": "podaiin",
+      "primary_count": 1,
+      "secondary_count": 2,
+      "total_references": 3,
+      "primary_rate": 0.3333333333333333,
+      "in_degree": 3
+    },
+    "f54v": {
+      "heading": "pcheodar",
+      "primary_count": 0,
+      "secondary_count": 2,
+      "total_references": 2,
+      "primary_rate": 0.0,
+      "in_degree": 2
+    },
+    "f56r": {
+      "heading": "otchal",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f56v": {
+      "heading": "kcheat",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f58r": {
+      "heading": "kor",
+      "primary_count": 6,
+      "secondary_count": 2,
+      "total_references": 8,
+      "primary_rate": 0.75,
+      "in_degree": 10
+    },
+    "f58v": {
+      "heading": "tol",
+      "primary_count": 11,
+      "secondary_count": 15,
+      "total_references": 26,
+      "primary_rate": 0.4230769230769231,
+      "in_degree": 34
+    },
+    "f87r": {
+      "heading": "poalshsal",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f87v": {
+      "heading": "pcheey",
+      "primary_count": 0,
+      "secondary_count": 1,
+      "total_references": 1,
+      "primary_rate": 0.0,
+      "in_degree": 1
+    },
+    "f88r": {
+      "heading": "otorchety",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f88v": {
+      "heading": "okolyd",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f89r1": {
+      "heading": "okchshy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f89r2": {
+      "heading": "odory",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f89v2": {
+      "heading": "choeesy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f89v1": {
+      "heading": "okoraldy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f90r1": {
+      "heading": "poleeol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f90r2": {
+      "heading": "toealchs",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f90v2": {
+      "heading": "cphdaithy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f90v1": {
+      "heading": "pcheor",
+      "primary_count": 1,
+      "secondary_count": 4,
+      "total_references": 5,
+      "primary_rate": 0.2,
+      "in_degree": 5
+    },
+    "f93r": {
+      "heading": "kodshol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f93v": {
+      "heading": "possheody",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f96r": {
+      "heading": "tor",
+      "primary_count": 5,
+      "secondary_count": 7,
+      "total_references": 12,
+      "primary_rate": 0.4166666666666667,
+      "in_degree": 14
+    },
+    "f96v": {
+      "heading": "psheoas",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f99r": {
+      "heading": "okoramog",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f99v": {
+      "heading": "otaramy",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f100r": {
+      "heading": "chosaroshol",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f100v": {
+      "heading": "tolchd",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f101r1": {
+      "heading": "pcheol",
+      "primary_count": 2,
+      "secondary_count": 4,
+      "total_references": 6,
+      "primary_rate": 0.3333333333333333,
+      "in_degree": 8
+    },
+    "f101v2": {
+      "heading": "sairaly",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f102r1": {
+      "heading": "dordod",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f102r2": {
+      "heading": "lsais",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f102v2": {
+      "heading": "porshols",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    },
+    "f102v1": {
+      "heading": "ker",
+      "primary_count": 0,
+      "secondary_count": 0,
+      "total_references": 0,
+      "primary_rate": 0,
+      "in_degree": 0
+    }
+  },
+  "primary_secondary_correlation": {
+    "pearson_r": 0.0860185552880303,
+    "interpretation": "NO_CORRELATION"
+  }
+}

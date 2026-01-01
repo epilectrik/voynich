@@ -1,0 +1,347 @@
+======================================================================
+VOYNICH OPERATIONAL RECIPES - Human-Readable Format
+======================================================================
+
+Ground Rules Applied:
+  - No substance names, apparatus names, or alchemical terms
+  - Pure process-control language
+  - Preserves ordering, loops, thresholds, recovery paths
+  - Round-trip compilable to canonical grammar
+
+----------------------------------------------------------------------
+
+RECIPE_FAMILY_2
+========================================
+
+METADATA:
+  family_id: 2
+  member_count: 40
+  canonical_folio: f77v
+  mean_length: 1332.6 tokens
+  mandatory_classes: 10
+  optional_classes: 10
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: HIGH
+
+  # Main processing loop (4-CYCLE)
+  # Note: Quaternary processing pattern
+  LOOP (until stability):
+
+    APPLY_ENERGY [PREFIX=ENERGY, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SUFFIX=EXTENDED, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=ENERGY, SUFFIX=EXTENDED, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+    SUSTAIN_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+
+    HOLD: DURATION EXTENDED
+
+  END_LOOP
+
+
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_3
+========================================
+
+METADATA:
+  family_id: 3
+  member_count: 12
+  canonical_folio: f89v1
+  mean_length: 493.4 tokens
+  mandatory_classes: 10
+  optional_classes: 10
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: MEDIUM
+
+  # Main processing loop (4-CYCLE)
+  # Note: Quaternary processing pattern
+  LOOP (until stability):
+
+    SUSTAIN_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=ENERGY]
+
+    HOLD: DURATION STANDARD
+
+  END_LOOP
+
+  # Hazard boundaries:
+  # WARNING: Direct mode transitions may trigger PHASE_ORDERING failure
+  # Requires passage through stability anchor
+
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_4
+========================================
+
+METADATA:
+  family_id: 4
+  member_count: 4
+  canonical_folio: f102r1
+  mean_length: 330.0 tokens
+  mandatory_classes: 10
+  optional_classes: 10
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: LOW
+
+  # Main processing loop (4-CYCLE)
+  # Note: Quaternary processing pattern
+  LOOP (until stability):
+
+    APPLY_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    CONTINUE_CYCLE [SUFFIX=VARIANT]
+
+    HOLD: DURATION STANDARD
+
+  END_LOOP
+
+  # Hazard boundaries:
+  # WARNING: Direct mode transitions may trigger PHASE_ORDERING failure
+  # Requires passage through stability anchor
+
+  # Recovery phase
+  RECOVER
+  RETURN_BASELINE
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_1
+========================================
+
+METADATA:
+  family_id: 1
+  member_count: 3
+  canonical_folio: f85v2
+  mean_length: 351.0 tokens
+  mandatory_classes: 10
+  optional_classes: 10
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: LOW
+
+  # Main processing loop (VARIABLE)
+  # Note: Variable-length processing
+  LOOP (until stability):
+
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    LINK [PREFIX=OUTPUT, SUFFIX=VARIANT, SCOPE=BROAD]
+    SET_RATE [PREFIX=LINK]
+    CONTINUE_CYCLE [SUFFIX=VARIANT]
+    SET_RATE [PREFIX=LINK]
+
+    HOLD: DURATION STANDARD
+
+  END_LOOP
+
+  # Hazard boundaries:
+  # WARNING: Direct mode transitions may trigger PHASE_ORDERING failure
+  # Requires passage through stability anchor
+
+  # Recovery phase
+  RECOVER
+  RETURN_BASELINE
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_5
+========================================
+
+METADATA:
+  family_id: 5
+  member_count: 1
+  canonical_folio: f87r
+  mean_length: 202.0 tokens
+  mandatory_classes: 10
+  optional_classes: 0
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: LOW
+
+  # Main processing loop (4-CYCLE)
+  # Note: Quaternary processing pattern
+  LOOP (until stability):
+
+    APPLY_ENERGY [PREFIX=PHASE]
+    SUSTAIN_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=ENERGY]
+
+    HOLD: DURATION BRIEF
+
+  END_LOOP
+
+  # Hazard boundaries:
+  # WARNING: Direct mode transitions may trigger PHASE_ORDERING failure
+  # Requires passage through stability anchor
+
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_7
+========================================
+
+METADATA:
+  family_id: 7
+  member_count: 1
+  canonical_folio: f87v
+  mean_length: 276.0 tokens
+  mandatory_classes: 10
+  optional_classes: 0
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: LOW
+
+  # Main processing loop (3-CYCLE)
+  # Note: Ternary processing pattern
+  LOOP (until stability):
+
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=ENERGY]
+    APPLY_ENERGY [PREFIX=PHASE]
+    LINK [SCOPE=BROAD]
+
+    HOLD: DURATION BRIEF
+
+  END_LOOP
+
+  # Hazard boundaries:
+  # WARNING: Direct mode transitions may trigger PHASE_ORDERING failure
+  # Requires passage through stability anchor
+
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_6
+========================================
+
+METADATA:
+  family_id: 6
+  member_count: 1
+  canonical_folio: f90r1
+  mean_length: 210.0 tokens
+  mandatory_classes: 10
+  optional_classes: 0
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: LOW
+
+  # Main processing loop (4-CYCLE)
+  # Note: Quaternary processing pattern
+  LOOP (until stability):
+
+    APPLY_ENERGY [PREFIX=ENERGY]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=ENERGY, SUFFIX=VARIANT]
+    APPLY_ENERGY [PREFIX=PHASE, SUFFIX=EXTENDED, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=ENERGY, SUFFIX=EXTENDED, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+
+    HOLD: DURATION BRIEF
+
+  END_LOOP
+
+
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------
+
+RECIPE_FAMILY_8
+========================================
+
+METADATA:
+  family_id: 8
+  member_count: 1
+  canonical_folio: f90r2
+  mean_length: 141.0 tokens
+  mandatory_classes: 10
+  optional_classes: 0
+
+PROGRAM:
+  # Entry phase
+  ENABLE_MODE
+  SET_LEVEL: LOW
+
+  # Main processing loop (4-CYCLE)
+  # Note: Quaternary processing pattern
+  LOOP (until stability):
+
+    APPLY_ENERGY [PREFIX=ENERGY, SUFFIX=VARIANT]
+    APPLY_ENERGY [PREFIX=ENERGY, SUFFIX=TERMINAL]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    APPLY_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    SUSTAIN_ENERGY [PREFIX=PHASE, SCOPE=BROAD]
+    LINK [SCOPE=BROAD]
+
+    HOLD: DURATION BRIEF
+
+  END_LOOP
+
+  # Hazard boundaries:
+  # WARNING: Direct mode transitions may trigger PHASE_ORDERING failure
+  # Requires passage through stability anchor
+
+
+  # Termination
+  EXIT_MODE
+  END
+
+----------------------------------------

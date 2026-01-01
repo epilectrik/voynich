@@ -1,0 +1,170 @@
+[
+  {
+    "domain_id": "D1",
+    "domain_name": "Pharmacology / Materia Medica",
+    "why_it_fits": [
+      "Slot Count Plausibility: Materia medica entries typically list: substance, properties (2-3), preparations (2-3), applications...",
+      "A/B Usage Alignment: Materia medica DEFINES simples briefly in catalog form (A), then APPLIES them in compound preparatio...",
+      "Operator Scope Alignment: Pharmacology needs: category markers (purgative, tonic), scope shifters (from herb to preparation ty...",
+      "Role Distribution Fit: DEFINITION_CORE=25 base herbs. EXPOSITION_CORE=33 preparation types. FLEXIBLE_CORE=35 common modifie...",
+      "Abstraction Justification: Pharmacological shorthand is historically common. Practitioners used category codes, not full plant ...",
+      "Hub Category Fit: 8 drug categories is plausible: purgatives, emetics, tonics, sedatives, febrifuges, digestives, topi..."
+    ],
+    "what_it_explains": {
+      "ab_split": "A defines simples (materia medica catalog), B applies them in compound preparations",
+      "operators": "Scope operators shift between drug categories (purgative, tonic, etc.)",
+      "abstraction": "Apothecary marks and professional jargon justify encoding over naming",
+      "hub_categories": "8 major drug classes organize the pharmacopeia"
+    },
+    "what_it_predicts": [
+      "Hub headings should group semantically by therapeutic effect",
+      "Scope operators should correlate with preparation type changes",
+      "Entry structure should match: substance -> properties -> preparations -> applications"
+    ],
+    "remaining_questions": [
+      "Would need external evidence (plant IDs, recipe matches) to confirm",
+      "Abstraction level still unexplained for practical use",
+      "Hub heading meanings unverified"
+    ],
+    "score": 6.0,
+    "verdict": "SURVIVES"
+  },
+  {
+    "domain_id": "D2",
+    "domain_name": "Alchemical Transformation Grammar",
+    "why_it_fits": [
+      "Slot Count Plausibility: Alchemical operations often have 5-12 stages. Each stage is a transformation step. Entry length matc...",
+      "A/B Usage Alignment: Alchemy DEFINES substances/stages briefly (A), then elaborates PROCESSES with step-by-step sequences...",
+      "Operator Scope Alignment: Alchemy needs: stage markers (begin/end), process shifters (calcination -> dissolution), quality mod...",
+      "Role Distribution Fit: DEFINITION_CORE=materials/substances. EXPOSITION_CORE=process verbs. FLEXIBLE_CORE=universal operati...",
+      "Abstraction Justification: Alchemy is FAMOUS for deliberate obscurity. Decknamen (cover names), symbolic encoding, and intentio...",
+      "Hub Category Fit: 8 stages/categories: 7 classical metals (lead->gold) + the philosophers' stone. Or 8 operations: cal..."
+    ],
+    "what_it_explains": {
+      "ab_split": "A defines materials and their natures, B describes transformation sequences",
+      "operators": "Scope operators mark process transitions (calcination -> dissolution)",
+      "abstraction": "Alchemy intentionally veils knowledge; Decknamen are historically documented",
+      "hub_categories": "7 metals + stone, or 8 major alchemical operations"
+    },
+    "what_it_predicts": [
+      "Sequence of slots should mirror alchemical process order",
+      "Scope operators should correlate with stage transitions",
+      "Entry structure should match: material -> operation -> conditions -> result"
+    ],
+    "remaining_questions": [
+      "Would need external evidence (plant IDs, recipe matches) to confirm",
+      "Abstraction level still unexplained for practical use",
+      "Hub heading meanings unverified"
+    ],
+    "score": 6.0,
+    "verdict": "SURVIVES"
+  },
+  {
+    "domain_id": "D3",
+    "domain_name": "Medical Diagnostics",
+    "why_it_fits": [
+      "Slot Count Plausibility: Medical entries: symptom, diagnosis, treatment approach, modifiers, prognosis. 5-10 slots matches ty...",
+      "A/B Usage Alignment: Medicine DEFINES diseases/conditions briefly (A), then elaborates treatment protocols (B). Diagnosti...",
+      "Operator Scope Alignment: Medical diagnostics needs: case structure markers, system shifters (from symptom to organ to treatme...",
+      "Role Distribution Fit: DEFINITION_CORE=disease categories. EXPOSITION_CORE=treatment actions. FLEXIBLE_CORE=common symptoms...",
+      "Hub Category Fit: 8 body systems or disease categories is plausible. Galenic medicine recognized ~8 major organ system..."
+    ],
+    "what_it_explains": {
+      "ab_split": "A defines diseases/conditions, B elaborates treatment protocols",
+      "operators": "Scope operators navigate body systems (from symptom to organ to treatment)",
+      "abstraction": "Guild secrecy existed but is less common than in alchemy",
+      "hub_categories": "8 major organ systems or humoral disease categories"
+    },
+    "what_it_predicts": [
+      "Entry structure should match: symptom -> diagnosis -> treatment -> prognosis",
+      "Scope operators should correlate with anatomical system changes",
+      "EXPOSITION_CORE tokens should relate to treatment actions"
+    ],
+    "remaining_questions": [
+      "Would need external evidence (plant IDs, recipe matches) to confirm",
+      "Abstraction level still unexplained for practical use",
+      "Hub heading meanings unverified"
+    ],
+    "score": 5.5,
+    "verdict": "SURVIVES"
+  },
+  {
+    "domain_id": "D6",
+    "domain_name": "Astrological Influence Grammar",
+    "why_it_fits": [
+      "Slot Count Plausibility: Astrological delineations: planet, sign, house, aspects (2-3), applications (2-3). 5-10 elements is ...",
+      "A/B Usage Alignment: Astrology DEFINES planetary natures briefly (A), then elaborates delineations with multiple aspect i...",
+      "Operator Scope Alignment: Astrology needs: chart position markers, domain shifters (planet -> house -> aspect), and influence ...",
+      "Role Distribution Fit: DEFINITION_CORE=7 planets + essentials. EXPOSITION_CORE=aspects and delineations. FLEXIBLE_CORE=univ...",
+      "Hub Category Fit: 7 planets + 1 node = 8. Or 7 planets + lot of fortune. Astrological systems naturally use 7-8 primar..."
+    ],
+    "what_it_explains": {
+      "ab_split": "A defines planetary natures, B elaborates chart delineations",
+      "operators": "Scope operators navigate astrological domains (planet -> house -> aspect)",
+      "abstraction": "Less justified - astrology typically names its referents explicitly",
+      "hub_categories": "7 planets + 1 node naturally provides 8-fold organization"
+    },
+    "what_it_predicts": [
+      "Hub structure should reflect planetary hierarchy",
+      "Scope operators should correlate with chart domain transitions",
+      "DEFINITION_CORE tokens should include planetary significators"
+    ],
+    "remaining_questions": [
+      "Would need external evidence (plant IDs, recipe matches) to confirm",
+      "Abstraction level still unexplained for practical use",
+      "Hub heading meanings unverified"
+    ],
+    "score": 5.5,
+    "verdict": "SURVIVES"
+  },
+  {
+    "domain_id": "D4",
+    "domain_name": "Natural Property Classification",
+    "why_it_fits": [
+      "Slot Count Plausibility: Property classification: entity, primary qualities (2), secondary qualities (2), degrees (2), applic...",
+      "Abstraction Justification: Property classification systems are inherently abstract. Galenic qualities (hot, cold, wet, dry) and..."
+    ],
+    "what_it_explains": {
+      "ab_split": "Definitions vs applications pattern",
+      "operators": "Domain-specific scope navigation",
+      "abstraction": "Domain-specific justification",
+      "hub_categories": "8 natural categories"
+    },
+    "what_it_predicts": [
+      "Generic prediction 1",
+      "Generic prediction 2"
+    ],
+    "remaining_questions": [
+      "Would need external evidence (plant IDs, recipe matches) to confirm",
+      "Abstraction level still unexplained for practical use",
+      "Hub heading meanings unverified"
+    ],
+    "score": 4.0,
+    "verdict": "SURVIVES"
+  },
+  {
+    "domain_id": "D7",
+    "domain_name": "Agricultural Process Encoding",
+    "why_it_fits": [
+      "Slot Count Plausibility: Agricultural entries: crop, soil prep, planting, care (2-3), harvest, processing. 5-10 slots matches...",
+      "A/B Usage Alignment: Agriculture DEFINES crops briefly (A), then elaborates seasonal procedures with multiple steps (B). ..."
+    ],
+    "what_it_explains": {
+      "ab_split": "Definitions vs applications pattern",
+      "operators": "Domain-specific scope navigation",
+      "abstraction": "Domain-specific justification",
+      "hub_categories": "8 natural categories"
+    },
+    "what_it_predicts": [
+      "Generic prediction 1",
+      "Generic prediction 2"
+    ],
+    "remaining_questions": [
+      "Would need external evidence (plant IDs, recipe matches) to confirm",
+      "Abstraction level still unexplained for practical use",
+      "Hub heading meanings unverified"
+    ],
+    "score": 3.5,
+    "verdict": "SURVIVES_WEAK"
+  }
+]

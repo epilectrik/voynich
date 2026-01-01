@@ -1,0 +1,733 @@
+{
+  "metadata": {
+    "phase": "C4.2",
+    "title": "Category Usage Patterns in B",
+    "timestamp": "2025-12-30T22:11:43.481980"
+  },
+  "category_patterns": {
+    "tol": {
+      "category_type": "hub",
+      "total_occurrences": 81,
+      "unique_b_folios": 26,
+      "position_distribution": {
+        "MIDDLE": 26,
+        "END": 23,
+        "BEGINNING": 32
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "pol",
+          8
+        ],
+        [
+          "tor",
+          5
+        ],
+        [
+          "kor",
+          3
+        ],
+        [
+          "pcheol",
+          3
+        ],
+        [
+          "pchor",
+          3
+        ]
+      ]
+    },
+    "kor": {
+      "category_type": "hub",
+      "total_occurrences": 24,
+      "unique_b_folios": 8,
+      "position_distribution": {
+        "END": 5,
+        "MIDDLE": 10,
+        "BEGINNING": 9
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "paiin",
+          3
+        ],
+        [
+          "tol",
+          3
+        ],
+        [
+          "par",
+          2
+        ],
+        [
+          "tor",
+          2
+        ],
+        [
+          "pcheol",
+          1
+        ]
+      ]
+    },
+    "paiin": {
+      "category_type": "hub",
+      "total_occurrences": 18,
+      "unique_b_folios": 6,
+      "position_distribution": {
+        "END": 6,
+        "BEGINNING": 9,
+        "MIDDLE": 3
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "kor",
+          3
+        ],
+        [
+          "par",
+          3
+        ],
+        [
+          "tor",
+          2
+        ],
+        [
+          "tol",
+          2
+        ],
+        [
+          "pol",
+          2
+        ]
+      ]
+    },
+    "par": {
+      "category_type": "hub",
+      "total_occurrences": 15,
+      "unique_b_folios": 9,
+      "position_distribution": {
+        "MIDDLE": 5,
+        "END": 2,
+        "BEGINNING": 8
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "paiin",
+          3
+        ],
+        [
+          "pol",
+          3
+        ],
+        [
+          "kor",
+          2
+        ],
+        [
+          "sho",
+          2
+        ],
+        [
+          "pcheor",
+          2
+        ]
+      ]
+    },
+    "tor": {
+      "category_type": "hub",
+      "total_occurrences": 34,
+      "unique_b_folios": 12,
+      "position_distribution": {
+        "MIDDLE": 12,
+        "END": 14,
+        "BEGINNING": 8
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "tol",
+          5
+        ],
+        [
+          "pol",
+          4
+        ],
+        [
+          "pchor",
+          3
+        ],
+        [
+          "kor",
+          2
+        ],
+        [
+          "pcheol",
+          2
+        ]
+      ]
+    },
+    "tshol": {
+      "category_type": "mid",
+      "total_occurrences": 5,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "BEGINNING": 5
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": []
+    },
+    "tcho": {
+      "category_type": "mid",
+      "total_occurrences": 7,
+      "unique_b_folios": 3,
+      "position_distribution": {
+        "MIDDLE": 5,
+        "END": 2
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "pchor",
+          2
+        ],
+        [
+          "podaiin",
+          1
+        ],
+        [
+          "sho",
+          1
+        ],
+        [
+          "pcheol",
+          1
+        ],
+        [
+          "kcheodaiin",
+          1
+        ]
+      ]
+    },
+    "sho": {
+      "category_type": "hub",
+      "total_occurrences": 42,
+      "unique_b_folios": 14,
+      "position_distribution": {
+        "MIDDLE": 19,
+        "END": 12,
+        "BEGINNING": 11
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "pol",
+          5
+        ],
+        [
+          "tol",
+          3
+        ],
+        [
+          "pcheodar",
+          2
+        ],
+        [
+          "pcheor",
+          2
+        ],
+        [
+          "pchor",
+          2
+        ]
+      ]
+    },
+    "podaiin": {
+      "category_type": "mid",
+      "total_occurrences": 7,
+      "unique_b_folios": 3,
+      "position_distribution": {
+        "BEGINNING": 3,
+        "END": 2,
+        "MIDDLE": 2
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "tcho",
+          1
+        ],
+        [
+          "sho",
+          1
+        ],
+        [
+          "paiin",
+          1
+        ],
+        [
+          "pol",
+          1
+        ],
+        [
+          "par",
+          1
+        ]
+      ]
+    },
+    "r*": {
+      "category_type": "mid",
+      "total_occurrences": 2,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "BEGINNING": 2
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": []
+    },
+    "pol": {
+      "category_type": "hub",
+      "total_occurrences": 65,
+      "unique_b_folios": 16,
+      "position_distribution": {
+        "BEGINNING": 10,
+        "END": 33,
+        "MIDDLE": 22
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "tol",
+          8
+        ],
+        [
+          "sho",
+          5
+        ],
+        [
+          "tor",
+          4
+        ],
+        [
+          "pcheol",
+          3
+        ],
+        [
+          "par",
+          3
+        ]
+      ]
+    },
+    "pcheol": {
+      "category_type": "mid",
+      "total_occurrences": 27,
+      "unique_b_folios": 6,
+      "position_distribution": {
+        "MIDDLE": 11,
+        "BEGINNING": 12,
+        "END": 4
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "tol",
+          3
+        ],
+        [
+          "pol",
+          3
+        ],
+        [
+          "tor",
+          2
+        ],
+        [
+          "tcho",
+          1
+        ],
+        [
+          "pchor",
+          1
+        ]
+      ]
+    },
+    "pchor": {
+      "category_type": "hub",
+      "total_occurrences": 19,
+      "unique_b_folios": 7,
+      "position_distribution": {
+        "MIDDLE": 5,
+        "BEGINNING": 9,
+        "END": 5
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "tor",
+          3
+        ],
+        [
+          "tol",
+          3
+        ],
+        [
+          "tcho",
+          2
+        ],
+        [
+          "pol",
+          2
+        ],
+        [
+          "sho",
+          2
+        ]
+      ]
+    },
+    "poraiin": {
+      "category_type": "mid",
+      "total_occurrences": 7,
+      "unique_b_folios": 3,
+      "position_distribution": {
+        "MIDDLE": 1,
+        "END": 3,
+        "BEGINNING": 3
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "tol",
+          2
+        ],
+        [
+          "pol",
+          2
+        ],
+        [
+          "paiin",
+          1
+        ],
+        [
+          "sho",
+          1
+        ],
+        [
+          "tsho",
+          1
+        ]
+      ]
+    },
+    "pshol": {
+      "category_type": "mid",
+      "total_occurrences": 6,
+      "unique_b_folios": 2,
+      "position_distribution": {
+        "MIDDLE": 4,
+        "BEGINNING": 2
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "tor",
+          2
+        ],
+        [
+          "tol",
+          2
+        ],
+        [
+          "pol",
+          2
+        ],
+        [
+          "pcheol",
+          1
+        ]
+      ]
+    },
+    "pcheodar": {
+      "category_type": "mid",
+      "total_occurrences": 6,
+      "unique_b_folios": 2,
+      "position_distribution": {
+        "BEGINNING": 2,
+        "END": 4
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "sho",
+          2
+        ],
+        [
+          "pol",
+          1
+        ],
+        [
+          "tol",
+          1
+        ],
+        [
+          "pcheol",
+          1
+        ]
+      ]
+    },
+    "kshol": {
+      "category_type": "mid",
+      "total_occurrences": 2,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "MIDDLE": 1,
+        "END": 1
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "sho",
+          1
+        ],
+        [
+          "fchodaiin",
+          1
+        ],
+        [
+          "tshor",
+          1
+        ]
+      ]
+    },
+    "fchodaiin": {
+      "category_type": "mid",
+      "total_occurrences": 1,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "MIDDLE": 1
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "kshol",
+          1
+        ],
+        [
+          "sho",
+          1
+        ],
+        [
+          "tshor",
+          1
+        ]
+      ]
+    },
+    "tshor": {
+      "category_type": "mid",
+      "total_occurrences": 2,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "BEGINNING": 2
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "kshol",
+          1
+        ],
+        [
+          "sho",
+          1
+        ],
+        [
+          "fchodaiin",
+          1
+        ]
+      ]
+    },
+    "pcheor": {
+      "category_type": "mid",
+      "total_occurrences": 11,
+      "unique_b_folios": 5,
+      "position_distribution": {
+        "BEGINNING": 7,
+        "MIDDLE": 4
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "sho",
+          2
+        ],
+        [
+          "pol",
+          2
+        ],
+        [
+          "par",
+          2
+        ],
+        [
+          "pchor",
+          1
+        ],
+        [
+          "pcheey",
+          1
+        ]
+      ]
+    },
+    "pcheey": {
+      "category_type": "mid",
+      "total_occurrences": 2,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "MIDDLE": 2
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": [
+        [
+          "pcheor",
+          1
+        ],
+        [
+          "paiin",
+          1
+        ],
+        [
+          "kor",
+          1
+        ],
+        [
+          "par",
+          1
+        ]
+      ]
+    },
+    "tsho": {
+      "category_type": "mid",
+      "total_occurrences": 4,
+      "unique_b_folios": 2,
+      "position_distribution": {
+        "BEGINNING": 1,
+        "END": 3
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "sho",
+          1
+        ],
+        [
+          "pchodaiin",
+          1
+        ],
+        [
+          "poraiin",
+          1
+        ],
+        [
+          "pol",
+          1
+        ],
+        [
+          "pcheol",
+          1
+        ]
+      ]
+    },
+    "pchodaiin": {
+      "category_type": "mid",
+      "total_occurrences": 7,
+      "unique_b_folios": 3,
+      "position_distribution": {
+        "END": 5,
+        "BEGINNING": 1,
+        "MIDDLE": 1
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "sho",
+          2
+        ],
+        [
+          "tsho",
+          1
+        ],
+        [
+          "tol",
+          1
+        ]
+      ]
+    },
+    "torshor": {
+      "category_type": "mid",
+      "total_occurrences": 1,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "BEGINNING": 1
+      },
+      "dominant_position": "BEGINNING",
+      "top_co_occurring": [
+        [
+          "tol",
+          1
+        ],
+        [
+          "pol",
+          1
+        ]
+      ]
+    },
+    "kcheodaiin": {
+      "category_type": "mid",
+      "total_occurrences": 2,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "END": 2
+      },
+      "dominant_position": "END",
+      "top_co_occurring": [
+        [
+          "tcho",
+          1
+        ],
+        [
+          "tol",
+          1
+        ],
+        [
+          "pchor",
+          1
+        ]
+      ]
+    },
+    "pchodar": {
+      "category_type": "mid",
+      "total_occurrences": 2,
+      "unique_b_folios": 1,
+      "position_distribution": {
+        "MIDDLE": 2
+      },
+      "dominant_position": "MIDDLE",
+      "top_co_occurring": []
+    }
+  },
+  "position_analysis": {
+    "hub_categories": {
+      "MIDDLE": 102,
+      "END": 100,
+      "BEGINNING": 96
+    },
+    "isolate_categories": {},
+    "interpretation": "Hub categories may appear in different positions than isolates"
+  },
+  "summary": {
+    "categories_analyzed": 26,
+    "hub_categories_in_b": 8,
+    "isolate_categories_in_b": 0,
+    "most_frequent_category": "tol"
+  }
+}
