@@ -1,0 +1,401 @@
+{
+  "metadata": {
+    "test": "Option A: Apparatus Geometry Compatibility",
+    "n_geometries": 5,
+    "n_programs": 83,
+    "n_clusters": 5,
+    "n_simulations_per_program": 100
+  },
+  "geometry_definitions": {
+    "G1": {
+      "recirculation_fraction": 0.0,
+      "transport_lag": 0.1,
+      "mixing_timescale": 0.2,
+      "conservation_strictness": 0.3,
+      "buffer_capacity": 0.1,
+      "natural_damping": 0.2,
+      "perturbation_propagation": 0.9,
+      "feedback_strength": 0.1
+    },
+    "G2": {
+      "recirculation_fraction": 0.0,
+      "transport_lag": 0.05,
+      "mixing_timescale": 2.0,
+      "conservation_strictness": 0.95,
+      "buffer_capacity": 0.9,
+      "natural_damping": 0.3,
+      "perturbation_propagation": 0.3,
+      "feedback_strength": 0.2
+    },
+    "G3": {
+      "recirculation_fraction": 0.5,
+      "transport_lag": 0.5,
+      "mixing_timescale": 0.8,
+      "conservation_strictness": 0.6,
+      "buffer_capacity": 0.4,
+      "natural_damping": 0.5,
+      "perturbation_propagation": 0.6,
+      "feedback_strength": 0.5
+    },
+    "G4": {
+      "recirculation_fraction": 1.0,
+      "transport_lag": 1.0,
+      "mixing_timescale": 0.6,
+      "conservation_strictness": 1.0,
+      "buffer_capacity": 0.6,
+      "natural_damping": 0.8,
+      "perturbation_propagation": 0.4,
+      "feedback_strength": 0.9
+    },
+    "G5": {
+      "recirculation_fraction": 1.0,
+      "transport_lag": 1.5,
+      "mixing_timescale": 0.4,
+      "conservation_strictness": 1.0,
+      "buffer_capacity": 0.85,
+      "natural_damping": 0.9,
+      "perturbation_propagation": 0.2,
+      "feedback_strength": 0.95
+    }
+  },
+  "geometry_statistics": {
+    "G1": {
+      "mean_convergence": 0.06542168674698796,
+      "std_convergence": 0.09821664282225986,
+      "mean_failure": 0.934578313253012,
+      "std_failure": 0.09821664282225984,
+      "mean_state_c_time": 0.4439360409322922,
+      "mean_hazard_crossings": 15.647469879518072,
+      "mean_link_effectiveness": 0.19999999999999993,
+      "mean_latency": 0.0,
+      "n_programs": 83
+    },
+    "G2": {
+      "mean_convergence": 0.9934939759036145,
+      "std_convergence": 0.03534455991404465,
+      "mean_failure": 0.006506024096385543,
+      "std_failure": 0.03534455991404464,
+      "mean_state_c_time": 0.8004707476909964,
+      "mean_hazard_crossings": 3.1350602409638544,
+      "mean_link_effectiveness": 0.19999999999999993,
+      "mean_latency": 0.0,
+      "n_programs": 83
+    },
+    "G3": {
+      "mean_convergence": 0.9986746987951808,
+      "std_convergence": 0.007074659400435283,
+      "mean_failure": 0.001325301204819277,
+      "std_failure": 0.007074659400435277,
+      "mean_state_c_time": 0.8643879006011276,
+      "mean_hazard_crossings": 1.042289156626506,
+      "mean_link_effectiveness": 0.19999999999999993,
+      "mean_latency": 0.0,
+      "n_programs": 83
+    },
+    "G4": {
+      "mean_convergence": 1.0,
+      "std_convergence": 0.0,
+      "mean_failure": 0.0,
+      "std_failure": 0.0,
+      "mean_state_c_time": 0.998288353413655,
+      "mean_hazard_crossings": 0.00036144578313253013,
+      "mean_link_effectiveness": 0.7999999999999999,
+      "mean_latency": 114.89915662650604,
+      "n_programs": 83
+    },
+    "G5": {
+      "mean_convergence": 1.0,
+      "std_convergence": 0.0,
+      "mean_failure": 0.0,
+      "std_failure": 0.0,
+      "mean_state_c_time": 0.9985610441767073,
+      "mean_hazard_crossings": 0.0006024096385542169,
+      "mean_link_effectiveness": 1.3499999999999996,
+      "mean_latency": 114.95144578313253,
+      "n_programs": 83
+    }
+  },
+  "cluster_geometry_matrix": {
+    "4": {
+      "G1": {
+        "mean_convergence": 0.07777777777777778,
+        "mean_state_c_time": 0.4388028499266359,
+        "mean_failure": 0.9222222222222223,
+        "mean_hazard_crossings": 17.683333333333334,
+        "mean_link_effectiveness": 0.2,
+        "n_programs": 9
+      },
+      "G2": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.7984333333333332,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 1.4622222222222223,
+        "mean_link_effectiveness": 0.2,
+        "n_programs": 9
+      },
+      "G3": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.8609555555555555,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.40444444444444444,
+        "mean_link_effectiveness": 0.2,
+        "n_programs": 9
+      },
+      "G4": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9983629629629633,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 0.7999999999999999,
+        "n_programs": 9
+      },
+      "G5": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9984259259259266,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 1.3499999999999999,
+        "n_programs": 9
+      }
+    },
+    "2": {
+      "G1": {
+        "mean_convergence": 0.19166666666666665,
+        "mean_state_c_time": 0.42382905007747446,
+        "mean_failure": 0.8083333333333335,
+        "mean_hazard_crossings": 20.974166666666665,
+        "mean_link_effectiveness": 0.20000000000000004,
+        "n_programs": 12
+      },
+      "G2": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.7930055555555556,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.7300000000000001,
+        "mean_link_effectiveness": 0.20000000000000004,
+        "n_programs": 12
+      },
+      "G3": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.8561000000000002,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.17666666666666667,
+        "mean_link_effectiveness": 0.20000000000000004,
+        "n_programs": 12
+      },
+      "G4": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9979916666666672,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 0.8000000000000002,
+        "n_programs": 12
+      },
+      "G5": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9983611111111116,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 1.3499999999999999,
+        "n_programs": 12
+      }
+    },
+    "5": {
+      "G1": {
+        "mean_convergence": 0.023529411764705882,
+        "mean_state_c_time": 0.4471884196735324,
+        "mean_failure": 0.976470588235294,
+        "mean_hazard_crossings": 14.018823529411764,
+        "mean_link_effectiveness": 0.2,
+        "n_programs": 17
+      },
+      "G2": {
+        "mean_convergence": 0.9976470588235294,
+        "mean_state_c_time": 0.8033818982031001,
+        "mean_failure": 0.0023529411764705885,
+        "mean_hazard_crossings": 3.4482352941176475,
+        "mean_link_effectiveness": 0.19999999999999996,
+        "n_programs": 17
+      },
+      "G3": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.8648686274509805,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 1.083529411764706,
+        "mean_link_effectiveness": 0.2,
+        "n_programs": 17
+      },
+      "G4": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9983784313725496,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 0.8,
+        "n_programs": 17
+      },
+      "G5": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9986784313725494,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 1.35,
+        "n_programs": 17
+      }
+    },
+    "1": {
+      "G1": {
+        "mean_convergence": 0.024047619047619047,
+        "mean_state_c_time": 0.45152332107985266,
+        "mean_failure": 0.975952380952381,
+        "mean_hazard_crossings": 13.710952380952381,
+        "mean_link_effectiveness": 0.19999999999999996,
+        "n_programs": 42
+      },
+      "G2": {
+        "mean_convergence": 0.9880952380952381,
+        "mean_state_c_time": 0.8029122171960313,
+        "mean_failure": 0.011904761904761904,
+        "mean_hazard_crossings": 4.246904761904762,
+        "mean_link_effectiveness": 0.19999999999999993,
+        "n_programs": 42
+      },
+      "G3": {
+        "mean_convergence": 0.9973809523809524,
+        "mean_state_c_time": 0.8682538670609586,
+        "mean_failure": 0.002619047619047619,
+        "mean_hazard_crossings": 1.4804761904761905,
+        "mean_link_effectiveness": 0.19999999999999993,
+        "n_programs": 42
+      },
+      "G4": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9983428571428576,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0007142857142857143,
+        "mean_link_effectiveness": 0.7999999999999997,
+        "n_programs": 42
+      },
+      "G5": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9986103174603178,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0011904761904761906,
+        "mean_link_effectiveness": 1.3499999999999996,
+        "n_programs": 42
+      }
+    },
+    "3": {
+      "G1": {
+        "mean_convergence": 0.34,
+        "mean_state_c_time": 0.41511150910232697,
+        "mean_failure": 0.66,
+        "mean_hazard_crossings": 24.573333333333334,
+        "mean_link_effectiveness": 0.19999999999999998,
+        "n_programs": 3
+      },
+      "G2": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.7857666666666666,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.4333333333333333,
+        "mean_link_effectiveness": 0.20000000000000004,
+        "n_programs": 3
+      },
+      "G3": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.8509888888888888,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.049999999999999996,
+        "mean_link_effectiveness": 0.20000000000000004,
+        "n_programs": 3
+      },
+      "G4": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.997977777777778,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 0.8000000000000002,
+        "n_programs": 3
+      },
+      "G5": {
+        "mean_convergence": 1.0,
+        "mean_state_c_time": 0.9984111111111114,
+        "mean_failure": 0.0,
+        "mean_hazard_crossings": 0.0,
+        "mean_link_effectiveness": 1.3500000000000003,
+        "n_programs": 3
+      }
+    }
+  },
+  "compatibility": {
+    "G1": {
+      "status": "INCOMPATIBLE",
+      "convergence_rate": 0.06542168674698796,
+      "failure_rate": 0.934578313253012,
+      "state_c_time": 0.4439360409322922,
+      "link_effectiveness": 0.19999999999999993
+    },
+    "G2": {
+      "status": "COMPATIBLE",
+      "convergence_rate": 0.9934939759036145,
+      "failure_rate": 0.006506024096385543,
+      "state_c_time": 0.8004707476909964,
+      "link_effectiveness": 0.19999999999999993
+    },
+    "G3": {
+      "status": "COMPATIBLE",
+      "convergence_rate": 0.9986746987951808,
+      "failure_rate": 0.001325301204819277,
+      "state_c_time": 0.8643879006011276,
+      "link_effectiveness": 0.19999999999999993
+    },
+    "G4": {
+      "status": "COMPATIBLE",
+      "convergence_rate": 1.0,
+      "failure_rate": 0.0,
+      "state_c_time": 0.998288353413655,
+      "link_effectiveness": 0.7999999999999999
+    },
+    "G5": {
+      "status": "COMPATIBLE",
+      "convergence_rate": 1.0,
+      "failure_rate": 0.0,
+      "state_c_time": 0.9985610441767073,
+      "link_effectiveness": 1.3499999999999996
+    }
+  },
+  "statistical_tests": {
+    "kruskal_wallis_H": 359.3099808391536,
+    "kruskal_wallis_p": 1.71269084962254e-76,
+    "eta_squared": 0.8666097093637892,
+    "closed_vs_open": {
+      "t_statistic": 12.863619873883454,
+      "p_value": 5.6816179061303025e-31,
+      "cohens_d": 1.4162379369505007
+    },
+    "link_effectiveness": {
+      "t_statistic": 40.87119456847995,
+      "p_value": 3.5465791552228936e-131,
+      "cohens_d": 4.499770425732574,
+      "mean_closed": 1.0749999999999997,
+      "mean_open": 0.19999999999999993
+    }
+  },
+  "verdict": "PASS",
+  "verdict_detail": "Grammar selectively compatible with closed-loop geometries (G4, G5). Open flow (G1) fails (6.5% convergence). LINK maps to physical delay only in closed loops (d=4.50). Effect size eta^2=0.867",
+  "compatible_geometries": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "incompatible_geometries": [
+    "G1"
+  ],
+  "pass_criteria": {
+    "convergence_threshold": 0.85,
+    "failure_threshold": 0.15,
+    "state_c_threshold": 0.5,
+    "selectivity_required": "One or two closed-loop geometries outperform"
+  }
+}

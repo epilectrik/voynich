@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "title": "Prefix Material Selection Test V2",
+    "visual_data_used": true,
+    "folios_analyzed": 30,
+    "date": "2026-01-01T12:02:58.867492"
+  },
+  "test_3_results": {
+    "verdict": "PASS",
+    "root_prominence": {
+      "chi2": 13.5747605622929,
+      "p_value": 0.00022924722907718514,
+      "significant": true
+    },
+    "flower_presence": {
+      "chi2": 0.0459189399392955,
+      "p_value": 0.8303232158424161,
+      "significant": false
+    },
+    "root_type": {
+      "chi2": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "n_significant_uncorrected": 1,
+    "n_significant_corrected": 1,
+    "notes": "At least one plant feature shows significant association with prefix archetypes"
+  }
+}

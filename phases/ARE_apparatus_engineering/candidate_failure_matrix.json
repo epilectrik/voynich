@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "generated": "2026-01-01",
+    "candidates_tested": 6,
+    "tests_per_candidate": 6
+  },
+  "summary": {
+    "survivors": 3,
+    "weakened": 3,
+    "marginal": 0,
+    "eliminated": 0
+  },
+  "failure_matrix": {
+    "P01": {
+      "name": "Reflux Distillation",
+      "failures": []
+    },
+    "P07": {
+      "name": "Steam Boiler Pressure Control",
+      "failures": []
+    },
+    "P11": {
+      "name": "Biological Homeostasis",
+      "failures": [
+        {
+          "test": "TEST_3",
+          "reason": "Non-Intervention Role (LINK Analog)",
+          "checks_failed": [
+            "external_termination",
+            "operator_presence",
+            "deliberate_non_intervention",
+            "teaching_intent"
+          ]
+        }
+      ]
+    },
+    "P21": {
+      "name": "Blood Glucose Regulation",
+      "failures": [
+        {
+          "test": "TEST_3",
+          "reason": "Non-Intervention Role (LINK Analog)",
+          "checks_failed": [
+            "external_termination",
+            "operator_presence",
+            "deliberate_non_intervention",
+            "teaching_intent"
+          ]
+        }
+      ]
+    },
+    "P22": {
+      "name": "Distillation Column (Industrial)",
+      "failures": []
+    },
+    "P25": {
+      "name": "Temperature Regulation (Mammalian)",
+      "failures": [
+        {
+          "test": "TEST_3",
+          "reason": "Non-Intervention Role (LINK Analog)",
+          "checks_failed": [
+            "external_termination",
+            "operator_presence",
+            "deliberate_non_intervention",
+            "teaching_intent"
+          ]
+        }
+      ]
+    }
+  },
+  "test_failure_counts": {
+    "TEST_1": 0,
+    "TEST_2": 0,
+    "TEST_3": 3,
+    "TEST_4": 0,
+    "TEST_5": 0,
+    "TEST_6": 0
+  }
+}

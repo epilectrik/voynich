@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "test": "AMBIGUOUS_TOKEN_ANALYSIS",
+    "timestamp": "2026-01-01T07:10:44.227837"
+  },
+  "counts": {
+    "ambiguous": 20,
+    "executable": 10,
+    "non_executable": 0
+  },
+  "morphological_comparison": {
+    "ambiguous": {
+      "mean_length": 2.35,
+      "has_prefix_ch_ratio": 0.2,
+      "has_prefix_sh_ratio": 0.05,
+      "has_prefix_qo_ratio": 0.0,
+      "has_prefix_ot_ratio": 0.0,
+      "has_suffix_dy_ratio": 0.15,
+      "has_suffix_y_ratio": 0.05,
+      "has_suffix_in_ratio": 0.05,
+      "has_suffix_ar_ratio": 0.1,
+      "has_suffix_or_ratio": 0.05,
+      "has_suffix_al_ratio": 0.05,
+      "has_daiin_ratio": 0.05
+    },
+    "executable": {
+      "mean_length": 3.0,
+      "has_prefix_ch_ratio": 0.1,
+      "has_prefix_sh_ratio": 0.0,
+      "has_prefix_qo_ratio": 0.0,
+      "has_prefix_ot_ratio": 0.2,
+      "has_suffix_dy_ratio": 0.0,
+      "has_suffix_y_ratio": 0.1,
+      "has_suffix_in_ratio": 0.2,
+      "has_suffix_ar_ratio": 0.0,
+      "has_suffix_or_ratio": 0.0,
+      "has_suffix_al_ratio": 0.2,
+      "has_daiin_ratio": 0.2
+    }
+  },
+  "key_differences": {
+    "mean_length": {
+      "ambiguous": 2.35,
+      "executable": 3.0,
+      "difference": -0.6499999999999999,
+      "significant": true
+    },
+    "has_prefix_ch_ratio": {
+      "ambiguous": 0.2,
+      "executable": 0.1,
+      "difference": 0.1,
+      "significant": false
+    },
+    "has_prefix_sh_ratio": {
+      "ambiguous": 0.05,
+      "executable": 0.0,
+      "difference": 0.05,
+      "significant": false
+    },
+    "has_prefix_qo_ratio": {
+      "ambiguous": 0.0,
+      "executable": 0.0,
+      "difference": 0.0,
+      "significant": false
+    },
+    "has_prefix_ot_ratio": {
+      "ambiguous": 0.0,
+      "executable": 0.2,
+      "difference": -0.2,
+      "significant": true
+    },
+    "has_suffix_dy_ratio": {
+      "ambiguous": 0.15,
+      "executable": 0.0,
+      "difference": 0.15,
+      "significant": true
+    },
+    "has_suffix_y_ratio": {
+      "ambiguous": 0.05,
+      "executable": 0.1,
+      "difference": -0.05,
+      "significant": false
+    },
+    "has_suffix_in_ratio": {
+      "ambiguous": 0.05,
+      "executable": 0.2,
+      "difference": -0.15000000000000002,
+      "significant": true
+    },
+    "has_suffix_ar_ratio": {
+      "ambiguous": 0.1,
+      "executable": 0.0,
+      "difference": 0.1,
+      "significant": false
+    },
+    "has_suffix_or_ratio": {
+      "ambiguous": 0.05,
+      "executable": 0.0,
+      "difference": 0.05,
+      "significant": false
+    },
+    "has_suffix_al_ratio": {
+      "ambiguous": 0.05,
+      "executable": 0.2,
+      "difference": -0.15000000000000002,
+      "significant": true
+    },
+    "has_daiin_ratio": {
+      "ambiguous": 0.05,
+      "executable": 0.2,
+      "difference": -0.15000000000000002,
+      "significant": true
+    }
+  },
+  "role_distribution": {
+    "ambiguous": {
+      "NOT_A_MIDDLE": 14,
+      "FLEXIBLE_CORE": 4,
+      "RESTRICTED_CORE": 2
+    },
+    "executable": {
+      "NOT_A_MIDDLE": 7,
+      "FLEXIBLE_CORE": 2,
+      "RESTRICTED_CORE": 1
+    }
+  },
+  "ab_distribution": {
+    "ambiguous_a_biased": 1,
+    "ambiguous_b_biased": 4,
+    "ambiguous_neutral": 15
+  },
+  "frequency_comparison": {
+    "ambiguous_mean_freq": 2355.6,
+    "ambiguous_median_freq": 1354.0,
+    "executable_mean_freq": 807.3,
+    "executable_median_freq": 729.5
+  },
+  "VERDICT": "WEAK_LINGUISTIC_SIGNAL",
+  "verdict_reasoning": {
+    "significant_morphological_differences": 6,
+    "role_concentration": false,
+    "ab_bias_detected": false
+  }
+}

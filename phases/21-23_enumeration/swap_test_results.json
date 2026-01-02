@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-01T08:24:14.932147",
+    "if_count": 40,
+    "nif_count": 43,
+    "if_with_data": 40,
+    "nif_with_data": 43
+  },
+  "test1_swap_invariance": {
+    "original_mean": 0.07415489719558091,
+    "if_if_swap_mean": 0.07690693050040849,
+    "if_nif_swap_mean": 0.07298646029364544,
+    "nif_nif_swap_mean": 0.07159486621434598,
+    "p_original_vs_swap": 1.0,
+    "verdict": "SWAP_INVARIANT"
+  },
+  "test2_distribution_shift": {
+    "mmd": 0.14744761564378633,
+    "energy_distance": 1.8996248226180326,
+    "mmd_p_value": 0.0,
+    "classifier_accuracy": 0.9397058823529412,
+    "classifier_std": 0.03724683865268807,
+    "verdict": "DISTRIBUTION_SHIFT_DETECTED"
+  },
+  "metric_comparisons": {
+    "legality": {
+      "if_mean": 1.0,
+      "nif_mean": 1.0,
+      "cohens_d": 0.0,
+      "p_value": 1.0
+    },
+    "convergence": {
+      "if_mean": 0.07690693050040849,
+      "nif_mean": 0.07159486621434596,
+      "cohens_d": 0.21408291157065445,
+      "p_value": 0.43585535166830514
+    },
+    "stability": {
+      "if_mean": 1.1356367596434542,
+      "nif_mean": 1.074792165541124,
+      "cohens_d": 0.3845238637008123,
+      "p_value": 0.4018594074577051
+    },
+    "kernel_contact": {
+      "if_mean": 0.6512118557965223,
+      "nif_mean": 0.6992642963482841,
+      "cohens_d": -0.6814286854265118,
+      "p_value": 0.004399783172036017
+    },
+    "hazard_rate": {
+      "if_mean": 0.0,
+      "nif_mean": 0.0,
+      "cohens_d": 0.0,
+      "p_value": 1.0
+    }
+  },
+  "signals": {
+    "h0": 1,
+    "h1": 2,
+    "h2": 0
+  },
+  "verdict": "H1_SUPPORTED",
+  "interpretation": "Illustrations correlate with execution behavior but do not constrain or gate it."
+}

@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "title": "Prefix/Suffix Material Selection Test",
+    "hypothesis": "Prefix/suffix morphology encodes plant-part usage constraints",
+    "date": "2026-01-01T11:46:12.523978",
+    "status": "INCONCLUSIVE"
+  },
+  "test_results": {
+    "test_1": {
+      "name": "Prefix/Suffix Archetype Discovery",
+      "verdict": "PASS",
+      "best_k": 5,
+      "best_silhouette": 0.4628190008518875,
+      "all_silhouettes": {
+        "3": 0.4039317273119113,
+        "4": 0.4364273667799425,
+        "5": 0.4628190008518875,
+        "6": 0.42606369051468956,
+        "7": 0.35096272232131887,
+        "8": 0.3573176292540248
+      }
+    },
+    "test_2": {
+      "name": "Family-Invariance Check",
+      "verdict": "FAIL",
+      "recurrence_ratio": 0.4,
+      "archetype_variance": 0.0002076816873002969,
+      "family_independence": "True"
+    },
+    "test_3": {
+      "name": "Plant Feature Absence Test",
+      "verdict": "INCONCLUSIVE",
+      "note": "Used section codes as weak proxy (no visual data)",
+      "chi2_statistic": 0.0,
+      "p_value": 1.0,
+      "archetype_botanical_bias": {
+        "0": {
+          "botanical_ratio": 0.3524294974790847,
+          "botanical_count": 6361,
+          "non_botanical_count": 11688,
+          "exclusion_signal": false
+        },
+        "1": {
+          "botanical_ratio": 0.5,
+          "botanical_count": 0,
+          "non_botanical_count": 0,
+          "exclusion_signal": false
+        },
+        "2": {
+          "botanical_ratio": 0.3846971307120085,
+          "botanical_count": 362,
+          "non_botanical_count": 579,
+          "exclusion_signal": false
+        },
+        "3": {
+          "botanical_ratio": 0.5,
+          "botanical_count": 0,
+          "non_botanical_count": 0,
+          "exclusion_signal": false
+        },
+        "4": {
+          "botanical_ratio": 0.5,
+          "botanical_count": 0,
+          "non_botanical_count": 0,
+          "exclusion_signal": false
+        }
+      }
+    },
+    "test_4": {
+      "name": "Era-Compatibility Filter",
+      "verdict": "PASS",
+      "archetype_count": 5,
+      "era_appropriate_range": true,
+      "note": "No anachronistic patterns detected"
+    },
+    "test_5": {
+      "name": "Adversarial Null Tests",
+      "verdict": "PASS",
+      "null_1_passes": true,
+      "null_2_passes": false,
+      "null_3_passes": true,
+      "nulls_collapsed": 2
+    }
+  },
+  "archetypes": {
+    "archetype_0": {
+      "members": [
+        "yk",
+        "ar",
+        "sh",
+        "qe",
+        "ch",
+        "or",
+        "ot",
+        "ok",
+        "ol",
+        "al"
+      ],
+      "count": 10,
+      "mean_hub_strength": 0.33424,
+      "mean_slot": 4.628,
+      "mean_initial_rate": 0.0959,
+      "mean_final_rate": 0.11040000000000001,
+      "total_tokens": 9303,
+      "dominant_hub": "tol"
+    },
+    "archetype_1": {
+      "members": [
+        "cha",
+        "dai",
+        "sho",
+        "cho"
+      ],
+      "count": 4,
+      "mean_hub_strength": 0.507625,
+      "mean_slot": 4.47,
+      "mean_initial_rate": 0.0,
+      "mean_final_rate": 0.0,
+      "total_tokens": 8227,
+      "dominant_hub": "sho"
+    },
+    "archetype_2": {
+      "members": [
+        "ts",
+        "cp",
+        "cf",
+        "po",
+        "fc",
+        "op",
+        "of"
+      ],
+      "count": 7,
+      "mean_hub_strength": 0.34765714285714283,
+      "mean_slot": 3.6342857142857143,
+      "mean_initial_rate": 0.21971428571428572,
+      "mean_final_rate": 0.036571428571428574,
+      "total_tokens": 1236,
+      "dominant_hub": "sho"
+    },
+    "archetype_3": {
+      "members": [
+        "sha",
+        "ota",
+        "oko",
+        "oke",
+        "ara",
+        "ote"
+      ],
+      "count": 6,
+      "mean_hub_strength": 0.3352,
+      "mean_slot": 4.615,
+      "mean_initial_rate": 0.0,
+      "mean_final_rate": 0.0,
+      "total_tokens": 5742,
+      "dominant_hub": "tol"
+    },
+    "archetype_4": {
+      "members": [
+        "she",
+        "qok",
+        "che"
+      ],
+      "count": 3,
+      "mean_hub_strength": 0.30206666666666665,
+      "mean_slot": 4.483333333333333,
+      "mean_initial_rate": 0.0,
+      "mean_final_rate": 0.0,
+      "total_tokens": 16603,
+      "dominant_hub": "tol"
+    }
+  },
+  "final_verdict": "INCONCLUSIVE",
+  "explanation": "Insufficient evidence to confirm or reject hypothesis",
+  "limitations": [
+    "TEST 3 used section codes as proxy for visual plant features",
+    "Visual annotation of plant anatomical features not available",
+    "For definitive results, manual annotation required"
+  ]
+}

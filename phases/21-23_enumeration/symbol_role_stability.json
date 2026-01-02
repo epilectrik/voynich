@@ -1,0 +1,765 @@
+{
+  "metadata": {
+    "test": "SYMBOLIC_REUSE",
+    "timestamp": "2026-01-01T07:34:26.173110"
+  },
+  "per_token_results": [
+    {
+      "token": "ykal",
+      "is_definition_core": false,
+      "a_occurrences": 13,
+      "b_occurrences": 35,
+      "context_entropy": 3.9071562309216126,
+      "role_consistency": 0.14285714285714285,
+      "position_variance": 0.5142857142857142,
+      "top_predecessor": [
+        "chdy",
+        6
+      ],
+      "top_successor": [
+        "olkaiin",
+        4
+      ]
+    },
+    {
+      "token": "ar",
+      "is_definition_core": false,
+      "a_occurrences": 117,
+      "b_occurrences": 731,
+      "context_entropy": 7.0319142273533615,
+      "role_consistency": 0.06155950752393981,
+      "position_variance": 0.6046511627906976,
+      "top_predecessor": [
+        "or",
+        30
+      ],
+      "top_successor": [
+        "aiin",
+        60
+      ]
+    },
+    {
+      "token": "shol",
+      "is_definition_core": false,
+      "a_occurrences": 400,
+      "b_occurrences": 200,
+      "context_entropy": 5.995401916644794,
+      "role_consistency": 0.04,
+      "position_variance": 0.535,
+      "top_predecessor": [
+        "dal",
+        7
+      ],
+      "top_successor": [
+        "kedy",
+        9
+      ]
+    },
+    {
+      "token": "shory",
+      "is_definition_core": false,
+      "a_occurrences": 20,
+      "b_occurrences": 3,
+      "context_entropy": 1.2516291673878228,
+      "role_consistency": 0.5,
+      "position_variance": 1.0,
+      "top_predecessor": [
+        "cheol",
+        2
+      ],
+      "top_successor": [
+        "dair",
+        1
+      ]
+    },
+    {
+      "token": "y",
+      "is_definition_core": false,
+      "a_occurrences": 156,
+      "b_occurrences": 220,
+      "context_entropy": 6.51079614634549,
+      "role_consistency": 0.05909090909090909,
+      "position_variance": 0.8272727272727273,
+      "top_predecessor": [
+        "y",
+        13
+      ],
+      "top_successor": [
+        "y",
+        13
+      ]
+    },
+    {
+      "token": "kor",
+      "is_definition_core": false,
+      "a_occurrences": 53,
+      "b_occurrences": 24,
+      "context_entropy": 3.381328385912462,
+      "role_consistency": 0.16666666666666666,
+      "position_variance": 0.625,
+      "top_predecessor": [
+        "ol",
+        4
+      ],
+      "top_successor": [
+        "ol",
+        4
+      ]
+    },
+    {
+      "token": "sholdy",
+      "is_definition_core": false,
+      "a_occurrences": 13,
+      "b_occurrences": 15,
+      "context_entropy": 2.6314018453921717,
+      "role_consistency": 0.23333333333333334,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "shedy",
+        4
+      ],
+      "top_successor": [
+        "qokchedy",
+        3
+      ]
+    },
+    {
+      "token": "ytaiin",
+      "is_definition_core": false,
+      "a_occurrences": 44,
+      "b_occurrences": 95,
+      "context_entropy": 5.35358889839427,
+      "role_consistency": 0.07368421052631578,
+      "position_variance": 0.6736842105263158,
+      "top_predecessor": [
+        "ytaiin",
+        7
+      ],
+      "top_successor": [
+        "ytaiin",
+        7
+      ]
+    },
+    {
+      "token": "ykor",
+      "is_definition_core": false,
+      "a_occurrences": 15,
+      "b_occurrences": 4,
+      "context_entropy": 1.1556390622295665,
+      "role_consistency": 0.625,
+      "position_variance": 0.75,
+      "top_predecessor": [
+        "okaiin",
+        2
+      ],
+      "top_successor": [
+        "daiin",
+        3
+      ]
+    },
+    {
+      "token": "sory",
+      "is_definition_core": false,
+      "a_occurrences": 7,
+      "b_occurrences": 2,
+      "context_entropy": 0.5,
+      "role_consistency": 0.75,
+      "position_variance": 1.0,
+      "top_predecessor": [
+        "opchy",
+        1
+      ],
+      "top_successor": [
+        "cheey",
+        2
+      ]
+    },
+    {
+      "token": "ckhar",
+      "is_definition_core": false,
+      "a_occurrences": 6,
+      "b_occurrences": 4,
+      "context_entropy": -0.0,
+      "role_consistency": 1.0,
+      "position_variance": 0.25,
+      "top_predecessor": [
+        "chear",
+        4
+      ],
+      "top_successor": [
+        "shal",
+        4
+      ]
+    },
+    {
+      "token": "or",
+      "is_definition_core": false,
+      "a_occurrences": 284,
+      "b_occurrences": 775,
+      "context_entropy": 7.122545071080057,
+      "role_consistency": 0.08258064516129032,
+      "position_variance": 0.5651612903225807,
+      "top_predecessor": [
+        "ar",
+        23
+      ],
+      "top_successor": [
+        "aiin",
+        105
+      ]
+    },
+    {
+      "token": "kair",
+      "is_definition_core": false,
+      "a_occurrences": 7,
+      "b_occurrences": 38,
+      "context_entropy": 4.171948072511778,
+      "role_consistency": 0.10526315789473684,
+      "position_variance": 0.631578947368421,
+      "top_predecessor": [
+        "shol",
+        4
+      ],
+      "top_successor": [
+        "okal",
+        4
+      ]
+    },
+    {
+      "token": "chtaiin",
+      "is_definition_core": false,
+      "a_occurrences": 5,
+      "b_occurrences": 9,
+      "context_entropy": 2.169925001442312,
+      "role_consistency": 0.4444444444444444,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "qotedy",
+        4
+      ],
+      "top_successor": [
+        "otchdy",
+        4
+      ]
+    },
+    {
+      "token": "shar",
+      "is_definition_core": false,
+      "a_occurrences": 34,
+      "b_occurrences": 80,
+      "context_entropy": 5.062409073183163,
+      "role_consistency": 0.0625,
+      "position_variance": 0.625,
+      "top_predecessor": [
+        "shar",
+        5
+      ],
+      "top_successor": [
+        "shar",
+        5
+      ]
+    },
+    {
+      "token": "cthar",
+      "is_definition_core": false,
+      "a_occurrences": 55,
+      "b_occurrences": 12,
+      "context_entropy": 2.5220552088742005,
+      "role_consistency": 0.29166666666666663,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "aiin",
+        4
+      ],
+      "top_successor": [
+        "od",
+        3
+      ]
+    },
+    {
+      "token": "dan",
+      "is_definition_core": false,
+      "a_occurrences": 49,
+      "b_occurrences": 4,
+      "context_entropy": 1.1556390622295665,
+      "role_consistency": 0.625,
+      "position_variance": 1.0,
+      "top_predecessor": [
+        "oky",
+        2
+      ],
+      "top_successor": [
+        "ol",
+        3
+      ]
+    },
+    {
+      "token": "o",
+      "is_definition_core": false,
+      "a_occurrences": 62,
+      "b_occurrences": 103,
+      "context_entropy": 5.215470907212758,
+      "role_consistency": 0.1941747572815534,
+      "position_variance": 0.7378640776699029,
+      "top_predecessor": [
+        "o",
+        20
+      ],
+      "top_successor": [
+        "o",
+        20
+      ]
+    },
+    {
+      "token": "r",
+      "is_definition_core": false,
+      "a_occurrences": 99,
+      "b_occurrences": 176,
+      "context_entropy": 5.395252404185466,
+      "role_consistency": 0.11931818181818182,
+      "position_variance": 0.6818181818181818,
+      "top_predecessor": [
+        "ol",
+        11
+      ],
+      "top_successor": [
+        "aiin",
+        31
+      ]
+    },
+    {
+      "token": "kain",
+      "is_definition_core": false,
+      "a_occurrences": 5,
+      "b_occurrences": 109,
+      "context_entropy": 5.305253773383365,
+      "role_consistency": 0.08256880733944955,
+      "position_variance": 0.6055045871559633,
+      "top_predecessor": [
+        "ol",
+        11
+      ],
+      "top_successor": [
+        "shey",
+        7
+      ]
+    },
+    {
+      "token": "ory",
+      "is_definition_core": false,
+      "a_occurrences": 15,
+      "b_occurrences": 46,
+      "context_entropy": 4.395578939635085,
+      "role_consistency": 0.08695652173913043,
+      "position_variance": 0.717391304347826,
+      "top_predecessor": [
+        "qokes",
+        4
+      ],
+      "top_successor": [
+        "qokedy",
+        4
+      ]
+    },
+    {
+      "token": "shor",
+      "is_definition_core": false,
+      "a_occurrences": 240,
+      "b_occurrences": 77,
+      "context_entropy": 5.121054540622072,
+      "role_consistency": 0.05844155844155844,
+      "position_variance": 0.6363636363636364,
+      "top_predecessor": [
+        "daiin",
+        4
+      ],
+      "top_successor": [
+        "ol",
+        5
+      ]
+    },
+    {
+      "token": "ary",
+      "is_definition_core": false,
+      "a_occurrences": 10,
+      "b_occurrences": 48,
+      "context_entropy": 4.655187698990102,
+      "role_consistency": 0.08333333333333334,
+      "position_variance": 0.8333333333333334,
+      "top_predecessor": [
+        "qokar",
+        5
+      ],
+      "top_successor": [
+        "tol",
+        3
+      ]
+    },
+    {
+      "token": "sheky",
+      "is_definition_core": false,
+      "a_occurrences": 19,
+      "b_occurrences": 103,
+      "context_entropy": 5.035683144092655,
+      "role_consistency": 0.07281553398058252,
+      "position_variance": 0.5048543689320388,
+      "top_predecessor": [
+        "qokain",
+        7
+      ],
+      "top_successor": [
+        "qokain",
+        8
+      ]
+    },
+    {
+      "token": "ykaiin",
+      "is_definition_core": false,
+      "a_occurrences": 49,
+      "b_occurrences": 100,
+      "context_entropy": 5.474418332528368,
+      "role_consistency": 0.05,
+      "position_variance": 0.66,
+      "top_predecessor": [
+        "okedy",
+        5
+      ],
+      "top_successor": [
+        "chey",
+        5
+      ]
+    },
+    {
+      "token": "shod",
+      "is_definition_core": false,
+      "a_occurrences": 19,
+      "b_occurrences": 15,
+      "context_entropy": 2.9898980954642873,
+      "role_consistency": 0.2,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "okedody",
+        3
+      ],
+      "top_successor": [
+        "ololdy",
+        3
+      ]
+    },
+    {
+      "token": "cthes",
+      "is_definition_core": false,
+      "a_occurrences": 6,
+      "b_occurrences": 3,
+      "context_entropy": 0.9182958340544896,
+      "role_consistency": 0.6666666666666666,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "chcheey",
+        2
+      ],
+      "top_successor": [
+        "aiin",
+        2
+      ]
+    },
+    {
+      "token": "daraiin",
+      "is_definition_core": false,
+      "a_occurrences": 6,
+      "b_occurrences": 5,
+      "context_entropy": 1.6464393446710155,
+      "role_consistency": 0.5,
+      "position_variance": 0.8,
+      "top_predecessor": [
+        "fchy",
+        2
+      ],
+      "top_successor": [
+        "dalal",
+        3
+      ]
+    },
+    {
+      "token": "sa",
+      "is_definition_core": false,
+      "a_occurrences": 6,
+      "b_occurrences": 6,
+      "context_entropy": 2.418295834054489,
+      "role_consistency": 0.25,
+      "position_variance": 1.0,
+      "top_predecessor": [
+        "dy",
+        1
+      ],
+      "top_successor": [
+        "ar",
+        2
+      ]
+    },
+    {
+      "token": "sy",
+      "is_definition_core": true,
+      "a_occurrences": 81,
+      "b_occurrences": 27,
+      "context_entropy": 3.6533329937308023,
+      "role_consistency": 0.18518518518518517,
+      "position_variance": 0.7407407407407407,
+      "top_predecessor": [
+        "saiin",
+        5
+      ],
+      "top_successor": [
+        "saiin",
+        5
+      ]
+    },
+    {
+      "token": "oteey",
+      "is_definition_core": false,
+      "a_occurrences": 44,
+      "b_occurrences": 286,
+      "context_entropy": 6.405579755831402,
+      "role_consistency": 0.04370629370629371,
+      "position_variance": 0.541958041958042,
+      "top_predecessor": [
+        "aiin",
+        12
+      ],
+      "top_successor": [
+        "qokeey",
+        13
+      ]
+    },
+    {
+      "token": "oteos",
+      "is_definition_core": false,
+      "a_occurrences": 17,
+      "b_occurrences": 6,
+      "context_entropy": 1.0,
+      "role_consistency": 0.5,
+      "position_variance": 0.3333333333333333,
+      "top_predecessor": [
+        "oloaiin",
+        3
+      ],
+      "top_successor": [
+        "qoky",
+        3
+      ]
+    },
+    {
+      "token": "daiin",
+      "is_definition_core": false,
+      "a_occurrences": 1762,
+      "b_occurrences": 1140,
+      "context_entropy": 7.8364120022925645,
+      "role_consistency": 0.038157894736842106,
+      "position_variance": 0.6131578947368421,
+      "top_predecessor": [
+        "chedy",
+        43
+      ],
+      "top_successor": [
+        "chey",
+        44
+      ]
+    },
+    {
+      "token": "otaiin",
+      "is_definition_core": false,
+      "a_occurrences": 108,
+      "b_occurrences": 414,
+      "context_entropy": 6.787190474300775,
+      "role_consistency": 0.04710144927536232,
+      "position_variance": 0.6038647342995169,
+      "top_predecessor": [
+        "aiin",
+        16
+      ],
+      "top_successor": [
+        "otal",
+        23
+      ]
+    },
+    {
+      "token": "okan",
+      "is_definition_core": false,
+      "a_occurrences": 12,
+      "b_occurrences": 9,
+      "context_entropy": 2.683542362433231,
+      "role_consistency": 0.2777777777777778,
+      "position_variance": 1.0,
+      "top_predecessor": [
+        "ain",
+        3
+      ],
+      "top_successor": [
+        "sheainy",
+        2
+      ]
+    },
+    {
+      "token": "oteor",
+      "is_definition_core": false,
+      "a_occurrences": 9,
+      "b_occurrences": 24,
+      "context_entropy": 3.4701755214643453,
+      "role_consistency": 0.16666666666666666,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "chdy",
+        4
+      ],
+      "top_successor": [
+        "octhdy",
+        4
+      ]
+    },
+    {
+      "token": "okaiin",
+      "is_definition_core": false,
+      "a_occurrences": 119,
+      "b_occurrences": 636,
+      "context_entropy": 7.151892009129693,
+      "role_consistency": 0.036949685534591194,
+      "position_variance": 0.5738993710691824,
+      "top_predecessor": [
+        "aiin",
+        26
+      ],
+      "top_successor": [
+        "chckhy",
+        21
+      ]
+    },
+    {
+      "token": "ol",
+      "is_definition_core": false,
+      "a_occurrences": 296,
+      "b_occurrences": 1393,
+      "context_entropy": 7.517977851951924,
+      "role_consistency": 0.04235463029432879,
+      "position_variance": 0.5412778176597272,
+      "top_predecessor": [
+        "qokain",
+        38
+      ],
+      "top_successor": [
+        "chedy",
+        80
+      ]
+    },
+    {
+      "token": "otear",
+      "is_definition_core": false,
+      "a_occurrences": 7,
+      "b_occurrences": 8,
+      "context_entropy": 2.202819531114783,
+      "role_consistency": 0.3125,
+      "position_variance": 0.75,
+      "top_predecessor": [
+        "otal",
+        2
+      ],
+      "top_successor": [
+        "shkeor",
+        3
+      ]
+    },
+    {
+      "token": "dair",
+      "is_definition_core": false,
+      "a_occurrences": 138,
+      "b_occurrences": 150,
+      "context_entropy": 5.887308399036787,
+      "role_consistency": 0.06333333333333334,
+      "position_variance": 0.6666666666666666,
+      "top_predecessor": [
+        "chdy",
+        7
+      ],
+      "top_successor": [
+        "al",
+        12
+      ]
+    },
+    {
+      "token": "chear",
+      "is_definition_core": false,
+      "a_occurrences": 69,
+      "b_occurrences": 93,
+      "context_entropy": 4.905058360045755,
+      "role_consistency": 0.0913978494623656,
+      "position_variance": 0.6129032258064516,
+      "top_predecessor": [
+        "okaiin",
+        10
+      ],
+      "top_successor": [
+        "or",
+        7
+      ]
+    },
+    {
+      "token": "cphar",
+      "is_definition_core": false,
+      "a_occurrences": 15,
+      "b_occurrences": 4,
+      "context_entropy": 0.4056390622295664,
+      "role_consistency": 0.875,
+      "position_variance": 0.5,
+      "top_predecessor": [
+        "lchey",
+        3
+      ],
+      "top_successor": [
+        "ol",
+        4
+      ]
+    },
+    {
+      "token": "sair",
+      "is_definition_core": false,
+      "a_occurrences": 13,
+      "b_occurrences": 64,
+      "context_entropy": 4.850525906663215,
+      "role_consistency": 0.078125,
+      "position_variance": 0.6875,
+      "top_predecessor": [
+        "chey",
+        5
+      ],
+      "top_successor": [
+        "shedy",
+        5
+      ]
+    },
+    {
+      "token": "odar",
+      "is_definition_core": false,
+      "a_occurrences": 22,
+      "b_occurrences": 48,
+      "context_entropy": 4.653878355041426,
+      "role_consistency": 0.09375,
+      "position_variance": 0.7708333333333334,
+      "top_predecessor": [
+        "ckhdy",
+        4
+      ],
+      "top_successor": [
+        "sheey",
+        5
+      ]
+    }
+  ],
+  "summary": {
+    "tokens_analyzed": 44,
+    "avg_role_consistency": 0.23818017751678744,
+    "avg_context_entropy": 4.043307700092341,
+    "avg_slot_variance": 0.6753386068588905,
+    "high_consistency_count": 3,
+    "low_consistency_count": 33,
+    "VERDICT": "CONTROL_SIGNAL"
+  }
+}

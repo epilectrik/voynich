@@ -1,0 +1,53 @@
+{
+  "test1_aggressiveness_morphology": {
+    "chi2": 2.8907563025210092,
+    "p_value": 0.8224279298841571,
+    "cramers_v": 0.24540596903061335
+  },
+  "test3_aggressive_root_heavy": {
+    "observed": 2,
+    "expected": 2.0,
+    "fisher_odds": 1.0,
+    "fisher_p": 1.0
+  },
+  "test4_conservative_flower": {
+    "fisher_odds": 1.375,
+    "fisher_p": 1.0
+  },
+  "test5_permutation": {
+    "observed": 2,
+    "p_value": 0.6762
+  },
+  "combinations": [
+    {
+      "name": "AGGRESSIVE + ROOT_HEAVY",
+      "observed": 2,
+      "expected": 2.0,
+      "ratio": 1.0
+    },
+    {
+      "name": "AGGRESSIVE + FLOWER_DOMINANT",
+      "observed": 1,
+      "expected": 1.75,
+      "ratio": 0.5714285714285714
+    },
+    {
+      "name": "CONSERVATIVE + FLOWER_DOMINANT",
+      "observed": 3,
+      "expected": 2.625,
+      "ratio": 1.1428571428571428
+    },
+    {
+      "name": "LINK_HEAVY + FLOWER_DOMINANT",
+      "observed": 1,
+      "expected": 1.75,
+      "ratio": 0.5714285714285714
+    },
+    {
+      "name": "LINK_HEAVY + ROOT_HEAVY",
+      "observed": 2,
+      "expected": 2.0,
+      "ratio": 1.0
+    }
+  ]
+}

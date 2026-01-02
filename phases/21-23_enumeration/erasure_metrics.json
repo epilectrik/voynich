@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-01T08:34:41.012031",
+    "critical_observation": "M0 = M1 by construction - transcription contains text only"
+  },
+  "test1_grammar_recovery": {
+    "M0_coverage": 0.6623798421074161,
+    "M0_classes_used": 49,
+    "M2_coverage": 1.0,
+    "M2_classes_used": 49,
+    "M0_M1_delta": 0.0,
+    "verdict": "PASS"
+  },
+  "test2_executability": {
+    "M0_legality": 1.0,
+    "M0_convergence": 0.0642573315169985,
+    "M0_stability": 1.0811833667802053,
+    "M2_legality": 0.9994539808559868,
+    "M2_convergence": 0.07119123112084508,
+    "M2_stability": 1.0985524710970946,
+    "M0_M1_delta": 0.0,
+    "verdict": "PASS"
+  },
+  "test3_hazard_topology": {
+    "M0_hazard_nodes_used": 16,
+    "M0_total_hazard_occurrences": 13478,
+    "M2_hazard_nodes_used": 14,
+    "M0_M2_jaccard": 0.875,
+    "M0_M1_jaccard": 1.0,
+    "verdict": "PASS"
+  },
+  "test4_section_preservation": {
+    "M0_section_variance": 0.0006263598175841406,
+    "M2_section_variance": 0.000676193146760906,
+    "distinctions_preserved": false,
+    "verdict": "COLLAPSE"
+  },
+  "test5_negative_control": {
+    "checks_passed": 0,
+    "total_checks": 3,
+    "verdict": "FAIL"
+  },
+  "overall": {
+    "tests_passed": 3,
+    "total_tests": 5,
+    "verdict": "ILLUSTRATIONS_MARGINAL",
+    "conclusion": "Illustrations have minimal structural contribution."
+  }
+}

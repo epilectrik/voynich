@@ -1,0 +1,27 @@
+{
+  "mmd": 0.14744761564378633,
+  "energy_distance": 1.8996248226180326,
+  "mmd_p_value": 0.0,
+  "classifier_accuracy": 0.9397058823529412,
+  "classifier_std": 0.03724683865268807,
+  "if_feature_shape": [
+    40,
+    10
+  ],
+  "nif_feature_shape": [
+    43,
+    10
+  ],
+  "features_used": [
+    "legality",
+    "convergence",
+    "stability_dwell",
+    "kernel_contact",
+    "link_density",
+    "avg_run_length",
+    "energy_density",
+    "token_count",
+    "hazard_rate",
+    "type_token_ratio"
+  ]
+}

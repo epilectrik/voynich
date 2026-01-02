@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "investigation": "LANGUAGE_ENCODING",
+    "timestamp": "2026-01-01T07:10:44.482991",
+    "phase": "X.5"
+  },
+  "test_results": {
+    "phonetic_clustering": {
+      "verdict": "NO_PHONETIC_CLUSTERING",
+      "key_findings": {
+        "q_energy_difference": -0.13333333333333333
+      }
+    },
+    "ambiguous_tokens": {
+      "verdict": "WEAK_LINGUISTIC_SIGNAL",
+      "key_findings": {
+        "significant_morphological_differences": 6,
+        "role_concentration": false,
+        "ab_bias_detected": false
+      }
+    },
+    "modifier_positions": {
+      "verdict": "INSUFFICIENT_DATA",
+      "key_findings": {}
+    },
+    "zonal_zipf": {
+      "verdict": "MODERATE_ZONAL_DIFFERENTIATION",
+      "key_findings": {
+        "zipf_range": 0.20618702324072002,
+        "exponents": {
+          "currier_a": -0.8529596522922774,
+          "currier_b": -0.7250391445461929,
+          "ambiguous": -0.8085105379153467,
+          "executable": -0.6467726290515574
+        }
+      }
+    },
+    "dual_use": {
+      "verdict": "POTENTIAL_DUAL_USE",
+      "key_findings": {}
+    }
+  },
+  "signal_summary": {
+    "positive_signals": 0,
+    "weak_signals": 3,
+    "negative_signals": 1,
+    "total_tests": 5
+  },
+  "OVERALL_VERDICT": "LANGUAGE_ENCODING_POSSIBLE",
+  "CONFIDENCE": "MODERATE",
+  "INTERPRETATION": "Mixed signals detected. Some tests show linguistic properties,\nothers do not. The manuscript may represent:\n- A hybrid system (procedure + language)\n- A domain-specific language with unusual properties\n- Noise that mimics linguistic patterns"
+}

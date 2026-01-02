@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-01T08:07:03.862117",
+    "ccf_hazard_runs": 107,
+    "non_ccf_hazard_runs": 2331
+  },
+  "token_comparison": {
+    "ccf_mean": 0.021375980684904546,
+    "ccf_std": 0.030227131989085016,
+    "non_ccf_mean": 0.02163603592689881,
+    "non_ccf_std": 0.0334905116931347,
+    "cohens_d": -0.008152053978412873,
+    "p_value": 4.431513902567027e-06,
+    "verdict": "NO_DIFFERENCE"
+  },
+  "bigram_comparison": {
+    "ccf_mean": 0.00017311085843909618,
+    "ccf_std": 0.0016881117321010763,
+    "non_ccf_mean": 0.00035494341066371357,
+    "non_ccf_std": 0.0037094073053524777,
+    "cohens_d": -0.06309709278119242,
+    "p_value": 0.005681840253144872,
+    "verdict": "NO_DIFFERENCE"
+  },
+  "vocabulary": {
+    "ccf_types": 1929,
+    "non_ccf_types": 7348,
+    "overlap": 804,
+    "ccf_concentration": 3.4095386210471745,
+    "non_ccf_concentration": 10.059063690800217,
+    "concentration_verdict": "NON_CCF_MORE_CONCENTRATED"
+  },
+  "verdicts": {
+    "token_similarity": "NO_DIFFERENCE",
+    "bigram_similarity": "NO_DIFFERENCE",
+    "concentration": "NON_CCF_MORE_CONCENTRATED"
+  },
+  "overall": "COLLECTED_EXAMPLES",
+  "interpretation": "CCF hazard runs show similar internal diversity to non-CCF runs. CCFs appear to be typical hazard-proximal content, not specially curated."
+}

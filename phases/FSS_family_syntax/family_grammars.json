@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "test": "Grammar Collapse",
+    "timestamp": "2025-12-31T23:32:57.760737"
+  },
+  "families": {
+    "1": {
+      "total_tokens": 285,
+      "unique_transitions": 108,
+      "kernel_candidates": [
+        "e",
+        "d",
+        "h",
+        "y",
+        "o"
+      ],
+      "class_usage": {
+        "OTHER": 138,
+        "qo": 41,
+        "ch": 45,
+        "sh": 23,
+        "ol": 3,
+        "da": 14,
+        "ct": 3,
+        "ok": 12,
+        "ot": 6
+      }
+    },
+    "2": {
+      "total_tokens": 19712,
+      "unique_transitions": 259,
+      "kernel_candidates": [
+        "e",
+        "o",
+        "h",
+        "a",
+        "d"
+      ],
+      "class_usage": {
+        "OTHER": 6931,
+        "qo": 3753,
+        "sh": 1716,
+        "ch": 2876,
+        "da": 836,
+        "ok": 1220,
+        "ol": 1142,
+        "ot": 1194,
+        "ct": 44
+      }
+    },
+    "3": {
+      "total_tokens": 1311,
+      "unique_transitions": 152,
+      "kernel_candidates": [
+        "i",
+        "e",
+        "a",
+        "o",
+        "h"
+      ],
+      "class_usage": {
+        "OTHER": 668,
+        "sh": 62,
+        "ot": 115,
+        "qo": 120,
+        "ok": 88,
+        "ch": 124,
+        "da": 71,
+        "ct": 5,
+        "ol": 58
+      }
+    },
+    "4": {
+      "total_tokens": 1134,
+      "unique_transitions": 165,
+      "kernel_candidates": [
+        "a",
+        "o",
+        "h",
+        "d",
+        "i"
+      ],
+      "class_usage": {
+        "OTHER": 495,
+        "sh": 63,
+        "qo": 75,
+        "ot": 86,
+        "da": 77,
+        "ch": 145,
+        "ok": 130,
+        "ol": 58,
+        "ct": 5
+      }
+    },
+    "5": {
+      "total_tokens": 905,
+      "unique_transitions": 137,
+      "kernel_candidates": [
+        "h",
+        "e",
+        "d",
+        "o",
+        "a"
+      ],
+      "class_usage": {
+        "OTHER": 335,
+        "ch": 176,
+        "sh": 118,
+        "qo": 93,
+        "ok": 45,
+        "ol": 31,
+        "da": 71,
+        "ot": 32,
+        "ct": 4
+      }
+    },
+    "6": {
+      "total_tokens": 89,
+      "unique_transitions": 75,
+      "kernel_candidates": [
+        "e",
+        "h",
+        "o",
+        "d",
+        "c"
+      ],
+      "class_usage": {
+        "OTHER": 36,
+        "ch": 20,
+        "sh": 11,
+        "da": 7,
+        "qo": 6,
+        "ok": 6,
+        "ot": 1,
+        "ct": 2
+      }
+    },
+    "7": {
+      "total_tokens": 119,
+      "unique_transitions": 87,
+      "kernel_candidates": [
+        "h",
+        "e",
+        "o",
+        "d",
+        "a"
+      ],
+      "class_usage": {
+        "ok": 9,
+        "sh": 17,
+        "OTHER": 42,
+        "da": 16,
+        "qo": 8,
+        "ot": 6,
+        "ch": 21
+      }
+    },
+    "8": {
+      "total_tokens": 287,
+      "unique_transitions": 109,
+      "kernel_candidates": [
+        "e",
+        "o",
+        "d",
+        "h",
+        "i"
+      ],
+      "class_usage": {
+        "OTHER": 121,
+        "ot": 35,
+        "ch": 35,
+        "qo": 31,
+        "ol": 19,
+        "sh": 30,
+        "da": 16
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "test": "DUAL_USE_TOKEN_DETECTION",
+    "timestamp": "2026-01-01T07:10:44.481990"
+  },
+  "substitution_analysis": {
+    "fully_invariant_pairs": 0,
+    "near_invariant_pairs": 0,
+    "invariant_examples": [],
+    "near_invariant_examples": []
+  },
+  "phonetic_groups": {
+    "total_groups": 11,
+    "group_sizes": {
+      "k_initial": 1,
+      "h_initial": 1,
+      "e_initial": 2,
+      "d_initial": 4,
+      "ch_initial": 4,
+      "t_initial": 1,
+      "o_initial": 2,
+      "sh_initial": 1,
+      "a_initial": 2,
+      "r_initial": 1,
+      "l_initial": 1
+    }
+  },
+  "potential_synonyms": {
+    "count": 5,
+    "examples": [
+      {
+        "group": "e_initial",
+        "tokens": [
+          "e",
+          "ee"
+        ],
+        "delta_range": 0.010000000000000002,
+        "mean_delta": 0.045
+      },
+      {
+        "group": "d_initial",
+        "tokens": [
+          "daiin",
+          "d",
+          "dar",
+          "dy"
+        ],
+        "delta_range": 0.0050000000000000044,
+        "mean_delta": 0.0475
+      },
+      {
+        "group": "ch_initial",
+        "tokens": [
+          "ch",
+          "chedy",
+          "chol",
+          "chey"
+        ],
+        "delta_range": 0.015,
+        "mean_delta": 0.0425
+      },
+      {
+        "group": "o_initial",
+        "tokens": [
+          "ol",
+          "or"
+        ],
+        "delta_range": 0.010000000000000002,
+        "mean_delta": 0.045
+      },
+      {
+        "group": "a_initial",
+        "tokens": [
+          "ar",
+          "al"
+        ],
+        "delta_range": 0.019999999999999997,
+        "mean_delta": 0.035
+      }
+    ]
+  },
+  "VERDICT": "POTENTIAL_DUAL_USE"
+}

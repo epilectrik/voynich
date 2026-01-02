@@ -1,0 +1,45 @@
+{
+  "problems_tested": [
+    {
+      "problem": "VARIANT_NAVIGATION",
+      "metric": "spread_ratio",
+      "value": 0.7804,
+      "threshold": 0.8,
+      "resolved": true,
+      "interpretation": "Within-section coordinate spread vs global spread"
+    },
+    {
+      "problem": "REGIME_CONSISTENCY",
+      "metric": "pc1_hazard_correlation",
+      "rho": -0.1908,
+      "p_value": 0.085976,
+      "resolved": false,
+      "interpretation": "Coordinate position correlates with operational regime"
+    },
+    {
+      "problem": "RECOVERY_FROM_INTERRUPT",
+      "metric": "locality_ratio",
+      "adjacent_mean": 3.111,
+      "random_mean": 5.1573,
+      "ratio": 0.6032,
+      "threshold": 0.6,
+      "resolved": false,
+      "interpretation": "Adjacent folios closer than random = resumption supported"
+    },
+    {
+      "problem": "CONFIG_DRIFT_PREVENTION",
+      "metric": "shift_ratio",
+      "spike_shift_mean": 0.0857,
+      "non_spike_shift_mean": 0.0581,
+      "ratio": 1.4749,
+      "threshold": 1.5,
+      "resolved": false,
+      "interpretation": "Coordinate boundaries align with configuration shifts"
+    }
+  ],
+  "prefix_evidence": [],
+  "suffix_evidence": [],
+  "verdict": "ARBITRARY",
+  "problems_resolved_count": 1,
+  "total_problems": 4
+}

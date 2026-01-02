@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "test": "PREFIX_SUFFIX_COORDINATE_SYSTEM",
+    "purpose": "Test if prefixes/suffixes function as positional indices",
+    "n_permutations": 1000,
+    "n_tokens_analyzed": 35283,
+    "n_folios": 224,
+    "prefix_archetypes": 7,
+    "suffix_archetypes": 4
+  },
+  "test1_axis_independence": {
+    "observed_mi": 0.0751586039558632,
+    "h_prefix_given_suffix": 2.202336456089975,
+    "h_suffix_given_prefix": 1.571147534889751,
+    "chi2": 3858.580512942418,
+    "p_value": 0.0,
+    "null_mi_prefix_mean": 0.001396096281511025,
+    "null_mi_prefix_std": 0.0004566936871772376,
+    "null_mi_suffix_mean": 0.0014168194741731887,
+    "null_mi_suffix_std": 0.0004779201536996256,
+    "percentile_prefix": 100.0,
+    "percentile_suffix": 100.0,
+    "over_represented_count": 9,
+    "under_represented_count": 12,
+    "verdict": "SIGNIFICANT",
+    "interpretation": "PARTIAL_INDEPENDENCE"
+  },
+  "test2_local_continuity": {
+    "mean_consecutive_dist": 0.14710072059572837,
+    "null_mean": 0.22016749613896228,
+    "null_std": 0.004181639307193827,
+    "percentile": 0.0,
+    "effect_size": 17.47323721047257,
+    "n_folios": 224,
+    "verdict": "SIGNIFICANT"
+  },
+  "test3_cycle_phase": {
+    "prefix_phase_chi2": 19.060300842540833,
+    "prefix_phase_p": 0.38811902203506427,
+    "prefix_phase_percentile": 62.6,
+    "prefix_phase_effect": 0.19023838535654997,
+    "suffix_phase_chi2": 14.99528983155156,
+    "suffix_phase_p": 0.09106543811370812,
+    "suffix_phase_percentile": 92.0,
+    "suffix_phase_effect": 1.4727853191785338,
+    "prefix_phase_significant": 
