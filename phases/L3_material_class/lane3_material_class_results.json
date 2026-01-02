@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "test": "Lane 3: Material-Class Compatibility",
+    "n_material_classes": 5,
+    "n_clusters": 5,
+    "n_simulations_per_program": 100
+  },
+  "material_classes": {
+    "CLASS_A": {
+      "porosity": 0.85,
+      "diffusion_rate": 0.25,
+      "thermal_conductivity": 0.4,
+      "swelling_tendency": 0.9,
+      "phase_stability": 0.6,
+      "boundary_sharpness": 0.3,
+      "latency_sensitivity": 0.7,
+      "perturbation_damping": 0.4
+    },
+    "CLASS_B": {
+      "porosity": 0.2,
+      "diffusion_rate": 0.3,
+      "thermal_conductivity": 0.5,
+      "swelling_tendency": 0.1,
+      "phase_stability": 0.85,
+      "boundary_sharpness": 0.8,
+      "latency_sensitivity": 0.3,
+      "perturbation_damping": 0.7
+    },
+    "CLASS_C": {
+      "porosity": 0.5,
+      "diffusion_rate": 0.6,
+      "thermal_conductivity": 0.3,
+      "swelling_tendency": 0.5,
+      "phase_stability": 0.15,
+      "boundary_sharpness": 0.2,
+      "latency_sensitivity": 0.9,
+      "perturbation_damping": 0.2
+    },
+    "CLASS_D": {
+      "porosity": 0.3,
+      "diffusion_rate": 0.9,
+      "thermal_conductivity": 0.85,
+      "swelling_tendency": 0.05,
+      "phase_stability": 0.9,
+      "boundary_sharpness": 0.9,
+      "latency_sensitivity": 0.2,
+      "perturbation_damping": 0.8
+    },
+    "CLASS_E": {
+      "porosity": 1.0,
+      "diffusion_rate": 0.95,
+      "thermal_conductivity": 0.9,
+      "swelling_tendency": 0.0,
+      "phase_stability": 0.7,
+      "boundary_sharpness": 0.95,
+      "latency_sensitivity": 0.1,
+      "perturbation_damping": 0.5
+    }
+  },
+  "material_statistics": {
+    "CLASS_A": {
+      "mean_convergence": 0.9996,
+      "std_convergence": 0.0008000000000000007,
+      "mean_failure": 0.0,
+      "std_failure": 0.0,
+      "mean_hazard_crossings": 0.09079999999999999,
+      "mean_state_c_time": 0.9998777769394357,
+      "failure_modes": {},
+      "n_clusters": 5
+    },
+    "CLASS_B": {
+      "mean_convergence": 1.0,
+      "std_convergence": 0.0,
+      "mean_failure": 0.0,
+      "std_failure": 0.0,
+      "mean_hazard_crossings": 0.0,
+      "mean_state_c_time": 1.0,
+      "failure_modes": {},
+      "n_clusters": 5
+    },
+    "CLASS_C": {
+      "mean_convergence": 0.8024000000000001,
+      "std_convergence": 0.1102099813991455,
+      "mean_failure": 0.1976,
+      "std_failure": 0.1102099813991455,
+      "mean_hazard_crossings": 11.189333333333334,
+      "mean_state_c_time": 0.904900089833433,
+      "failure_modes": {
+        "PHASE_COLLAPSE": 480
+      },
+      "n_clusters": 5
+    },
+    "CLASS_D": {
+      "mean_convergence": 1.0,
+      "std_convergence": 0.0,
+      "mean_failure": 0.0,
+      "std_failure": 0.0,
+      "mean_hazard_crossings": 0.0,
+      "mean_state_c_time": 1.0,
+      "failure_modes": {},
+      "n_clusters": 5
+    },
+    "CLASS_E": {
+      "mean_convergence": 1.0,
+      "std_convergence": 0.0,
+      "mean_failure": 0.0,
+      "std_failure": 0.0,
+      "mean_hazard_crossings": 0.0,
+      "mean_state_c_time": 1.0,
+      "failure_modes": {},
+      "n_clusters": 5
+    }
+  },
+  "compatibility": {
+    "CLASS_A": {
+      "status": "COMPATIBLE",
+      "failure_rate": 0.0,
+      "convergence_rate": 0.9996,
+      "dominant_failure_mode": null
+    },
+    "CLASS_B": {
+      "status": "COMPATIBLE",
+      "failure_rate": 0.0,
+      "convergence_rate": 1.0,
+      "dominant_failure_mode": null
+    },
+    "CLASS_C": {
+      "status": "INCOMPATIBLE",
+      "failure_rate": 0.1976,
+      "convergence_rate": 0.8024000000000001,
+      "dominant_failure_mode": "PHASE_COLLAPSE"
+    },
+    "CLASS_D": {
+      "status": "COMPATIBLE",
+      "failure_rate": 0.0,
+      "convergence_rate": 1.0,
+      "dominant_failure_mode": null
+    },
+    "CLASS_E": {
+      "status": "COMPATIBLE",
+      "failure_rate": 0.0,
+      "convergence_rate": 1.0,
+      "dominant_failure_mode": null
+    }
+  },
+  "statistical_tests": {
+    "kruskal_wallis_H": 106.27741627515518,
+    "kruskal_wallis_p": 4.52543330545002e-22,
+    "eta_squared": 0.9297946934105016,
+    "significant": true
+  },
+  "verdict": "PASS",
+  "verdict_reason": "Material classes differentially compatible (p=0.0000, eta^2=0.930)",
+  "pass_criteria": {
+    "asymmetry_required": true,
+    "statistical_significance_threshold": 0.05,
+    "compatible_threshold_failure": 0.15,
+    "compatible_threshold_convergence": 0.7
+  }
+}

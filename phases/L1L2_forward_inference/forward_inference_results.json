@@ -1,0 +1,667 @@
+{
+  "lane1": {
+    "metadata": {
+      "n_programs": 83,
+      "n_clusters": 5,
+      "n_templates": 5
+    },
+    "clusters": {
+      "4": {
+        "members": [
+          "f26r",
+          "f40v",
+          "f41r",
+          "f55v",
+          "f85r2",
+          "f86v4",
+          "f94r",
+          "f94v",
+          "f95v1"
+        ],
+        "n_members": 9,
+        "best_template": "TEMPLATE_A",
+        "match_score": 0.5777777777777777,
+        "all_template_scores": {
+          "TEMPLATE_A": 0.5777777777777777,
+          "TEMPLATE_B": 0.2666666666666667,
+          "TEMPLATE_C": 0.17777777777777776,
+          "TEMPLATE_D": 0.17777777777777776,
+          "TEMPLATE_E": 0.5777777777777777
+        }
+      },
+      "2": {
+        "members": [
+          "f26v",
+          "f31v",
+          "f34v",
+          "f41v",
+          "f48r",
+          "f48v",
+          "f50r",
+          "f50v",
+          "f57r",
+          "f86v3",
+          "f86v5",
+          "f105r"
+        ],
+        "n_members": 12,
+        "best_template": "TEMPLATE_A",
+        "match_score": 0.8000000000000002,
+        "all_template_scores": {
+          "TEMPLATE_A": 0.8000000000000002,
+          "TEMPLATE_B": 0.08333333333333333,
+          "TEMPLATE_C": 0.11666666666666665,
+          "TEMPLATE_D": 0.08333333333333333,
+          "TEMPLATE_E": 0.8000000000000002
+        }
+      },
+      "5": {
+        "members": [
+          "f31r",
+          "f33r",
+          "f33v",
+          "f34r",
+          "f39r",
+          "f39v",
+          "f40r",
+          "f43r",
+          "f43v",
+          "f46r",
+          "f46v",
+          "f55r",
+          "f66v",
+          "f81r",
+          "f95r1",
+          "f95r2",
+          "f95v2"
+        ],
+        "n_members": 17,
+        "best_template": "TEMPLATE_B",
+        "match_score": 0.5176470588235295,
+        "all_template_scores": {
+          "TEMPLATE_A": 0.10588235294117647,
+          "TEMPLATE_B": 0.5176470588235295,
+          "TEMPLATE_C": 0.3764705882352941,
+          "TEMPLATE_D": 0.45882352941176474,
+          "TEMPLATE_E": 0.10588235294117647
+        }
+      },
+      "1": {
+        "members": [
+          "f66r",
+          "f75r",
+          "f75v",
+          "f76r",
+          "f76v",
+          "f77r",
+          "f77v",
+          "f78r",
+          "f78v",
+          "f79r",
+          "f79v",
+          "f80r",
+          "f80v",
+          "f81v",
+          "f82r",
+          "f82v",
+          "f83r",
+          "f83v",
+          "f84r",
+          "f84v",
+          "f85r1",
+          "f86v6",
+          "f103r",
+          "f103v",
+          "f104r",
+          "f104v",
+          "f106r",
+          "f106v",
+          "f107r",
+          "f107v",
+          "f108r",
+          "f108v",
+          "f111r",
+          "f111v",
+          "f112r",
+          "f112v",
+          "f113r",
+          "f113v",
+          "f114r",
+          "f114v",
+          "f115r",
+          "f116r"
+        ],
+        "n_members": 42,
+        "best_template": "TEMPLATE_C",
+        "match_score": 0.419047619047619,
+        "all_template_scores": {
+          "TEMPLATE_A": 0.21904761904761902,
+          "TEMPLATE_B": 0.3523809523809524,
+          "TEMPLATE_C": 0.419047619047619,
+          "TEMPLATE_D": 0.4142857142857143,
+          "TEMPLATE_E": 0.21904761904761902
+        }
+      },
+      "3": {
+        "members": [
+          "f85v2",
+          "f105v",
+          "f115v"
+        ],
+        "n_members": 3,
+        "best_template": "TEMPLATE_A",
+        "match_score": 0.8666666666666667,
+        "all_template_scores": {
+          "TEMPLATE_A": 0.8666666666666667,
+          "TEMPLATE_B": 0.06666666666666667,
+          "TEMPLATE_C": 0.06666666666666667,
+          "TEMPLATE_D": 0.06666666666666667,
+          "TEMPLATE_E": 0.8666666666666667
+        }
+      }
+    },
+    "coherence_metrics": {
+      "unique_best_templates": [
+        "TEMPLATE_A",
+        "TEMPLATE_B",
+        "TEMPLATE_C"
+      ],
+      "n_unique_templates": 3,
+      "f_ratio": 3.7022118099482286,
+      "mean_match_score": 0.6362278244631185,
+      "within_cluster_variance": [
+        401.5698143769711,
+        2458.3355385090745,
+        2669.810050669246,
+        8394.868049674118,
+        8083.0086189351105
+      ]
+    },
+    "templates": {
+      "TEMPLATE_A": "Diffusion-limited process",
+      "TEMPLATE_B": "Rate-limited continuous control",
+      "TEMPLATE_C": "Equilibrium-seeking circulation",
+      "TEMPLATE_D": "High-risk narrow-margin control",
+      "TEMPLATE_E": "Passive stability maintenance"
+    },
+    "thresholds": {
+      "link_density": {
+        "low": 0.34218000000000004,
+        "high": 0.404
+      },
+      "kernel_contact_ratio": {
+        "low": 0.596,
+        "high": 0.6578200000000001
+      },
+      "hazard_density": {
+        "low": 0.5611200000000001,
+        "high": 0.609
+      },
+      "cycle_regularity": {
+        "low": 3.39648,
+        "high": 3.7271400000000003
+      },
+      "intervention_frequency": {
+        "low": 4.8518,
+        "high": 6.497
+      }
+    },
+    "verdict": "PASS",
+    "verdict_reasoning": {
+      "unique_templates_ok": true,
+      "f_ratio_ok": true,
+      "match_score_ok": true
+    }
+  },
+  "lane2": {
+    "metadata": {
+      "n_pairs": 20,
+      "n_simulations_per_program": 100,
+      "noise_level": 0.1
+    },
+    "pairs": [
+      {
+        "low_link_folio": "f77r",
+        "high_link_folio": "f106r",
+        "link_density_diff": 0.15600000000000003,
+        "match_distance": 1.8640000000000003,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.121000000000001,
+          "std_reconvergence_time": 1.4564542560616165,
+          "failure_rate": 0.21,
+          "mean_overshoot": 0.40601555490647534,
+          "max_overshoot": 1.4955787266394291
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.204,
+          "std_reconvergence_time": 1.3768747219700117,
+          "failure_rate": 0.12,
+          "mean_overshoot": 0.4611094426983632,
+          "max_overshoot": 1.4539258878396881
+        }
+      },
+      {
+        "low_link_folio": "f95r2",
+        "high_link_folio": "f57r",
+        "link_density_diff": 0.15400000000000003,
+        "match_distance": 1.691,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.8710000000000004,
+          "std_reconvergence_time": 1.3189613337774535,
+          "failure_rate": 0.23,
+          "mean_overshoot": 0.40029286409974785,
+          "max_overshoot": 1.2769605674509774
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.1530000000000005,
+          "std_reconvergence_time": 1.5564995984580259,
+          "failure_rate": 0.06,
+          "mean_overshoot": 0.41833251445200714,
+          "max_overshoot": 1.3642825556506122
+        }
+      },
+      {
+        "low_link_folio": "f103r",
+        "high_link_folio": "f107v",
+        "link_density_diff": 0.139,
+        "match_distance": 1.6900000000000004,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.0400000000000005,
+          "std_reconvergence_time": 1.5353826884526205,
+          "failure_rate": 0.24,
+          "mean_overshoot": 0.4147520929653513,
+          "max_overshoot": 1.258625027578974
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 2.994000000000001,
+          "std_reconvergence_time": 1.4705658774771015,
+          "failure_rate": 0.08,
+          "mean_overshoot": 0.4345900734364247,
+          "max_overshoot": 1.4946434335563639
+        }
+      },
+      {
+        "low_link_folio": "f31r",
+        "high_link_folio": "f94r",
+        "link_density_diff": 0.11000000000000004,
+        "match_distance": 1.3410000000000002,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.039,
+          "std_reconvergence_time": 1.3815856831915996,
+          "failure_rate": 0.23,
+          "mean_overshoot": 0.43598426600123774,
+          "max_overshoot": 1.2585857641023839
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 2.964000000000001,
+          "std_reconvergence_time": 1.547289242514145,
+          "failure_rate": 0.08,
+          "mean_overshoot": 0.4075920285007916,
+          "max_overshoot": 1.5583378012726532
+        }
+      },
+      {
+        "low_link_folio": "f75r",
+        "high_link_folio": "f112r",
+        "link_density_diff": 0.123,
+        "match_distance": 1.678,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.9810000000000003,
+          "std_reconvergence_time": 1.6290914645900014,
+          "failure_rate": 0.14,
+          "mean_overshoot": 0.38981912044048095,
+          "max_overshoot": 1.0051022693831748
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.168000000000001,
+          "std_reconvergence_time": 1.4326814021267942,
+          "failure_rate": 0.13,
+          "mean_overshoot": 0.4468182796583308,
+          "max_overshoot": 1.4946689025625395
+        }
+      },
+      {
+        "low_link_folio": "f77v",
+        "high_link_folio": "f86v6",
+        "link_density_diff": 0.121,
+        "match_distance": 1.593,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.9810000000000003,
+          "std_reconvergence_time": 1.6290914645900014,
+          "failure_rate": 0.12,
+          "mean_overshoot": 0.38980884494332074,
+          "max_overshoot": 1.0051022693831748
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.0100000000000016,
+          "std_reconvergence_time": 1.4871785366928871,
+          "failure_rate": 0.14,
+          "mean_overshoot": 0.4522888930218304,
+          "max_overshoot": 1.4946739969398395
+        }
+      },
+      {
+        "low_link_folio": "f114v",
+        "high_link_folio": "f85r1",
+        "link_density_diff": 0.11299999999999999,
+        "match_distance": 1.365,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.111,
+          "std_reconvergence_time": 1.7066279618006948,
+          "failure_rate": 0.17,
+          "mean_overshoot": 0.42551963320687575,
+          "max_overshoot": 1.558406236766766
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.0180000000000007,
+          "std_reconvergence_time": 1.387831401864073,
+          "failure_rate": 0.1,
+          "mean_overshoot": 0.4325878961016013,
+          "max_overshoot": 1.5583273264521258
+        }
+      },
+      {
+        "low_link_folio": "f81r",
+        "high_link_folio": "f115v",
+        "link_density_diff": 0.178,
+        "match_distance": 1.4019999999999997,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.0010000000000003,
+          "std_reconvergence_time": 1.5923878296445226,
+          "failure_rate": 0.12,
+          "mean_overshoot": 0.4632597558970801,
+          "max_overshoot": 1.5584055384453974
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.3409999999999997,
+          "std_reconvergence_time": 1.6630751636651884,
+          "failure_rate": 0.03,
+          "mean_overshoot": 0.4217025781583464,
+          "max_overshoot": 1.3098725520448722
+        }
+      },
+      {
+        "low_link_folio": "f46r",
+        "high_link_folio": "f43r",
+        "link_density_diff": 0.10699999999999998,
+        "match_distance": 1.0599999999999998,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.0010000000000003,
+          "std_reconvergence_time": 1.5907542236310404,
+          "failure_rate": 0.23,
+          "mean_overshoot": 0.46731772750173745,
+          "max_overshoot": 1.558404840124029
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.037,
+          "std_reconvergence_time": 1.4464200634670406,
+          "failure_rate": 0.07,
+          "mean_overshoot": 0.40148426967908996,
+          "max_overshoot": 1.5583301197375998
+        }
+      },
+      {
+        "low_link_folio": "f79r",
+        "high_link_folio": "f113v",
+        "link_density_diff": 0.14800000000000002,
+        "match_distance": 1.6929999999999996,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.934,
+          "std_reconvergence_time": 1.2942349091258507,
+          "failure_rate": 0.17,
+          "mean_overshoot": 0.4674152461137172,
+          "max_overshoot": 1.9281476526322068
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.103,
+          "std_reconvergence_time": 1.4382944761070302,
+          "failure_rate": 0.05,
+          "mean_overshoot": 0.3779991502642179,
+          "max_overshoot": 1.3098725520448722
+        }
+      },
+      {
+        "low_link_folio": "f82v",
+        "high_link_folio": "f107r",
+        "link_density_diff": 0.135,
+        "match_distance": 1.752,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.934,
+          "std_reconvergence_time": 1.5081259894319163,
+          "failure_rate": 0.24,
+          "mean_overshoot": 0.46049709934685495,
+          "max_overshoot": 1.5584013485171864
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.2250000000000005,
+          "std_reconvergence_time": 1.2543025950702638,
+          "failure_rate": 0.09,
+          "mean_overshoot": 0.43110762331556574,
+          "max_overshoot": 1.583884379132279
+        }
+      },
+      {
+        "low_link_folio": "f33r",
+        "high_link_folio": "f95v1",
+        "link_density_diff": 0.13,
+        "match_distance": 1.42,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.8890000000000002,
+          "std_reconvergence_time": 1.40441411271747,
+          "failure_rate": 0.13,
+          "mean_overshoot": 0.40526117048032945,
+          "max_overshoot": 1.558397856910344
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.2250000000000005,
+          "std_reconvergence_time": 1.2543025950702638,
+          "failure_rate": 0.09,
+          "mean_overshoot": 0.43110762331556574,
+          "max_overshoot": 1.583884379132279
+        }
+      },
+      {
+        "low_link_folio": "f39r",
+        "high_link_folio": "f43v",
+        "link_density_diff": 0.09499999999999997,
+        "match_distance": 1.0500000000000007,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 2.911000000000001,
+          "std_reconvergence_time": 1.3535061876474739,
+          "failure_rate": 0.1,
+          "mean_overshoot": 0.39527813602253736,
+          "max_overshoot": 1.928147602909157
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.0350000000000006,
+          "std_reconvergence_time": 1.543980245987622,
+          "failure_rate": 0.1,
+          "mean_overshoot": 0.3993595909897653,
+          "max_overshoot": 1.5583259298093888
+        }
+      },
+      {
+        "low_link_folio": "f115r",
+        "high_link_folio": "f50v",
+        "link_density_diff": 0.118,
+        "match_distance": 1.8170000000000002,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.1540000000000004,
+          "std_reconvergence_time": 1.4843463207755783,
+          "failure_rate": 0.2,
+          "mean_overshoot": 0.44496489952419715,
+          "max_overshoot": 1.5564134828105167
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.4210000000000007,
+          "std_reconvergence_time": 1.4318725501943235,
+          "failure_rate": 0.08,
+          "mean_overshoot": 0.44822798363516575,
+          "max_overshoot": 1.4342015278333842
+        }
+      },
+      {
+        "low_link_folio": "f84v",
+        "high_link_folio": "f34v",
+        "link_density_diff": 0.08099999999999996,
+        "match_distance": 1.8779999999999997,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.2230000000000003,
+          "std_reconvergence_time": 1.4467795270876609,
+          "failure_rate": 0.12,
+          "mean_overshoot": 0.4387161765690239,
+          "max_overshoot": 1.5583887787325534
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.136,
+          "std_reconvergence_time": 1.3755377130417026,
+          "failure_rate": 0.06,
+          "mean_overshoot": 0.4025308260917486,
+          "max_overshoot": 1.5583322147017054
+        }
+      },
+      {
+        "low_link_folio": "f116r",
+        "high_link_folio": "f86v3",
+        "link_density_diff": 0.14599999999999996,
+        "match_distance": 1.9770000000000003,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.2230000000000003,
+          "std_reconvergence_time": 1.4467795270876609,
+          "failure_rate": 0.18,
+          "mean_overshoot": 0.4387161765690239,
+          "max_overshoot": 1.5583887787325534
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.3930000000000002,
+          "std_reconvergence_time": 1.4033000391933277,
+          "failure_rate": 0.12,
+          "mean_overshoot": 0.49061093857897853,
+          "max_overshoot": 1.558286823812753
+        }
+      },
+      {
+        "low_link_folio": "f104v",
+        "high_link_folio": "f86v5",
+        "link_density_diff": 0.15899999999999997,
+        "match_distance": 1.8340000000000003,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.2090000000000005,
+          "std_reconvergence_time": 1.5079850795017817,
+          "failure_rate": 0.2,
+          "mean_overshoot": 0.4439543740907247,
+          "max_overshoot": 1.5583852871257111
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.3530000000000006,
+          "std_reconvergence_time": 1.5205561482562866,
+          "failure_rate": 0.02,
+          "mean_overshoot": 0.4374509715867644,
+          "max_overshoot": 1.3098725520448722
+        }
+      },
+      {
+        "low_link_folio": "f86v4",
+        "high_link_folio": "f40v",
+        "link_density_diff": 0.08099999999999996,
+        "match_distance": 1.3370000000000002,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.1680000000000006,
+          "std_reconvergence_time": 1.4518870479482882,
+          "failure_rate": 0.16,
+          "mean_overshoot": 0.4515858684427459,
+          "max_overshoot": 1.556382740515507
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.0180000000000007,
+          "std_reconvergence_time": 1.387831401864073,
+          "failure_rate": 0.09,
+          "mean_overshoot": 0.4325939929288364,
+          "max_overshoot": 1.5583280247734943
+        }
+      },
+      {
+        "low_link_folio": "f33v",
+        "high_link_folio": "f50r",
+        "link_density_diff": 0.128,
+        "match_distance": 1.387,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.1430000000000007,
+          "std_reconvergence_time": 1.6098605529672423,
+          "failure_rate": 0.13,
+          "mean_overshoot": 0.4309804605447552,
+          "max_overshoot": 1.379912345676593
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.141,
+          "std_reconvergence_time": 1.5849350144406538,
+          "failure_rate": 0.05,
+          "mean_overshoot": 0.4439996608093297,
+          "max_overshoot": 1.5838380629924087
+        }
+      },
+      {
+        "low_link_folio": "f78v",
+        "high_link_folio": "f105v",
+        "link_density_diff": 0.195,
+        "match_distance": 1.797,
+        "low_link_metrics": {
+          "mean_reconvergence_time": 3.407,
+          "std_reconvergence_time": 2.316646498713168,
+          "failure_rate": 0.1,
+          "mean_overshoot": 0.4014815938470128,
+          "max_overshoot": 1.2166715572446074
+        },
+        "high_link_metrics": {
+          "mean_reconvergence_time": 3.2990000000000004,
+          "std_reconvergence_time": 1.444125687050818,
+          "failure_rate": 0.03,
+          "mean_overshoot": 0.4527890045325192,
+          "max_overshoot": 1.4481276890968446
+        }
+      }
+    ],
+    "aggregate_statistics": {
+      "mean_reconvergence_advantage": -0.09485000000000013,
+      "mean_failure_rate_advantage": 0.09150000000000001,
+      "mean_overshoot_advantage": -0.0026331140121006458,
+      "std_reconvergence_advantage": 0.15487971945997314,
+      "std_failure_rate_advantage": 0.05720795399243011,
+      "std_overshoot_advantage": 0.041501285795346586
+    },
+    "statistical_tests": {
+      "reconvergence": {
+        "t": -2.6694364261273256,
+        "p": 0.015154760687085829,
+        "d": -0.6124107167208099
+      },
+      "failure_rate": {
+        "t": 6.971744757499054,
+        "p": 1.2136025151898127e-06,
+        "d": 1.5994279398998872
+      },
+      "overshoot": {
+        "t": -0.27655716360611127,
+        "p": 0.7851062141598777,
+        "d": -0.06344656464585705
+      }
+    },
+    "significant_advantages": {
+      "failure_rate": true,
+      "overshoot_acceptable": true,
+      "stability_tradeoff_valid": true
+    },
+    "directional_advantages": {
+      "failure_rate": true,
+      "overshoot": true,
+      "reconvergence_slower_but_safer": true
+    },
+    "verdict": "PASS",
+    "verdict_reasoning": {
+      "n_directional_advantages": 3,
+      "required": 2,
+      "high_link_confers_stability": true
+    }
+  },
+  "final_verdict": "COHERENT"
+}

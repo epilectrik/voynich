@@ -1,0 +1,402 @@
+{
+  "metadata": {
+    "generated": "2026-01-01",
+    "candidates_analyzed": 30,
+    "metrics": [
+      "euclidean",
+      "cosine",
+      "manhattan",
+      "categorical",
+      "combined"
+    ]
+  },
+  "rankings": [
+    {
+      "id": "P01",
+      "name": "Reflux Distillation",
+      "domain": "Chemical Process",
+      "euclidean_distance": 0.34060240750763937,
+      "cosine_similarity": 0.9972210057303598,
+      "manhattan_distance": 1.1,
+      "categorical_similarity": 1.0,
+      "combined_similarity": 0.9518315455925769
+    },
+    {
+      "id": "P21",
+      "name": "Blood Glucose Regulation",
+      "domain": "Biological Systems",
+      "euclidean_distance": 0.24143322058076438,
+      "cosine_similarity": 0.9975566453802739,
+      "manhattan_distance": 0.7080000000000003,
+      "categorical_similarity": 0.8,
+      "combined_similarity": 0.8858561865047269
+    },
+    {
+      "id": "P22",
+      "name": "Distillation Column (Industrial)",
+      "domain": "Chemical Process",
+      "euclidean_distance": 0.43594724451474626,
+      "cosine_similarity": 0.9944453390749735,
+      "manhattan_distance": 1.43,
+      "categorical_similarity": 0.8666666666666667,
+      "combined_similarity": 0.8850144160994733
+    },
+    {
+      "id": "P25",
+      "name": "Temperature Regulation (Mammalian)",
+      "domain": "Biological Systems",
+      "euclidean_distance": 0.29864694875387565,
+      "cosine_similarity": 0.9964231323566725,
+      "manhattan_distance": 0.7580000000000001,
+      "categorical_similarity": 0.8,
+      "combined_similarity": 0.8777649434710927
+    },
+    {
+      "id": "P11",
+      "name": "Biological Homeostasis",
+      "domain": "Biological Systems",
+      "euclidean_distance": 0.3433511322247242,
+      "cosine_similarity": 0.9939777364614222,
+      "manhattan_distance": 0.9140000000000003,
+      "categorical_similarity": 0.8,
+      "combined_similarity": 0.8714428172151637
+    },
+    {
+      "id": "P07",
+      "name": "Steam Boiler Pressure Control",
+      "domain": "Industrial Systems",
+      "euclidean_distance": 0.44144082276110347,
+      "cosine_similarity": 0.9942212203159257,
+      "manhattan_distance": 1.3240000000000003,
+      "categorical_similarity": 0.8,
+      "combined_similarity": 0.857570840146611
+    },
+    {
+      "id": "P05",
+      "name": "Nuclear Reactor Control",
+      "domain": "Energy Systems",
+      "euclidean_distance": 0.7241892017974308,
+      "cosine_similarity": 0.9735103004249327,
+      "manhattan_distance": 1.7999999999999998,
+      "categorical_similarity": 0.7333333333333333,
+      "combined_similarity": 0.790917514242726
+    },
+    {
+      "id": "P19",
+      "name": "Hydraulic Servo System",
+      "domain": "Mechanical Systems",
+      "euclidean_distance": 0.5371312688719584,
+      "cosine_similarity": 0.9923779975619995,
+      "manhattan_distance": 1.802,
+      "categorical_similarity": 0.6666666666666666,
+      "combined_similarity": 0.7907048341453273
+    },
+    {
+      "id": "P09",
+      "name": "PID Controller (Generic)",
+      "domain": "Control Theory",
+      "euclidean_distance": 0.6462275141155783,
+      "cosine_similarity": 0.9839933701687856,
+      "manhattan_distance": 1.852,
+      "categorical_similarity": 0.6,
+      "combined_similarity": 0.7486096285159098
+    },
+    {
+      "id": "P10",
+      "name": "Exothermic Reactor Control",
+      "domain": "Chemical Process",
+      "euclidean_distance": 1.1179042892841944,
+      "cosine_similarity": 0.944066342670647,
+      "manhattan_distance": 3.306,
+      "categorical_similarity": 0.7333333333333333,
+      "combined_similarity": 0.735237792599257
+    },
+    {
+      "id": "P26",
+      "name": "Cruise Control (Vehicle)",
+      "domain": "Automotive",
+      "euclidean_distance": 0.7195206737822062,
+      "cosine_similarity": 0.9821523839730926,
+      "manhattan_distance": 2.2820000000000005,
+      "categorical_similarity": 0.5333333333333333,
+      "combined_similarity": 0.711577743806271
+    },
+    {
+      "id": "P12",
+      "name": "Aircraft Autopilot",
+      "domain": "Aerospace",
+      "euclidean_distance": 0.6136041068962952,
+      "cosine_similarity": 0.9832141144188536,
+      "manhattan_distance": 1.802,
+      "categorical_similarity": 0.4666666666666667,
+      "combined_similarity": 0.6998899416766095
+    },
+    {
+      "id": "P02",
+      "name": "Fractional Crystallization",
+      "domain": "Chemical Process",
+      "euclidean_distance": 0.8325923372215241,
+      "cosine_similarity": 0.9855939720580905,
+      "manhattan_distance": 3.0999999999999996,
+      "categorical_similarity": 0.5333333333333333,
+      "combined_similarity": 0.6955869958106741
+    },
+    {
+      "id": "P04",
+      "name": "Metallurgical Annealing",
+      "domain": "Metallurgy",
+      "euclidean_distance": 1.045299000286521,
+      "cosine_similarity": 0.9648611724304406,
+      "manhattan_distance": 3.6100000000000003,
+      "categorical_similarity": 0.6,
+      "combined_similarity": 0.6921723977059764
+    },
+    {
+      "id": "P06",
+      "name": "HVAC Climate Control",
+      "domain": "Building Systems",
+      "euclidean_distance": 0.7536643815386261,
+      "cosine_similarity": 0.9781347325602252,
+      "manhattan_distance": 2.222,
+      "categorical_similarity": 0.4666666666666667,
+      "combined_similarity": 0.6800824276817211
+    },
+    {
+      "id": "P15",
+      "name": "Wastewater Treatment (Aerobic)",
+      "domain": "Environmental",
+      "euclidean_distance": 1.009430532528118,
+      "cosine_similarity": 0.9759890342465177,
+      "manhattan_distance": 3.23,
+      "categorical_similarity": 0.5333333333333333,
+      "combined_similarity": 0.6705782983958573
+    },
+    {
+      "id": "P03",
+      "name": "Fermentation (Bioreactor)",
+      "domain": "Biological Process",
+      "euclidean_distance": 1.2045621611191346,
+      "cosine_similarity": 0.9506940525623211,
+      "manhattan_distance": 4.14,
+      "categorical_similarity": 0.6,
+      "combined_similarity": 0.6696491855023874
+    },
+    {
+      "id": "P28",
+      "name": "Batch Reactor Control",
+      "domain": "Chemical Process",
+      "euclidean_distance": 0.8899269632953033,
+      "cosine_similarity": 0.9749674425737448,
+      "manhattan_distance": 3.04,
+      "categorical_similarity": 0.4666666666666667,
+      "combined_similarity": 0.6608119885652946
+    },
+    {
+      "id": "P24",
+      "name": "Solvent Extraction",
+      "domain": "Chemical Process",
+      "euclidean_distance": 0.9417483740362921,
+      "cosine_similarity": 0.9830720565446852,
+      "manhattan_distance": 3.41,
+      "categorical_similarity": 0.4666666666666667,
+      "combined_similarity": 0.6534833343761732
+    },
+    {
+      "id": "P27",
+      "name": "Medieval Alchemy (Calcination)",
+      "domain": "Pre-modern Craft",
+      "euclidean_distance": 1.2648438638820207,
+      "cosine_similarity": 0.9521413922020716,
+      "manhattan_distance": 4.49,
+      "categorical_similarity": 0.5333333333333333,
+      "combined_similarity": 0.6344573986746991
+    },
+    {
+      "id": "P13",
+      "name": "Crystallization (Industrial)",
+      "domain": "Chemical Process",
+      "euclidean_distance": 1.1925476929666168,
+      "cosine_similarity": 0.9617628401971726,
+      "manhattan_distance": 4.4399999999999995,
+      "categorical_similarity": 0.4666666666666667,
+      "combined_similarity": 0.6180149545496532
+    },
+    {
+      "id": "P23",
+      "name": "Thermostat (Simple)",
+      "domain": "Building Systems",
+      "euclidean_distance": 0.9111586030982751,
+      "cosine_similarity": 0.9633388105812293,
+      "manhattan_distance": 2.8520000000000003,
+      "categorical_similarity": 0.3333333333333333,
+      "combined_similarity": 0.6044760479358828
+    },
+    {
+      "id": "P08",
+      "name": "Medieval Glass Furnace",
+      "domain": "Pre-modern Craft",
+      "euclidean_distance": 1.3788799802738454,
+      "cosine_similarity": 0.9535554272250623,
+      "manhattan_distance": 5.07,
+      "categorical_similarity": 0.4666666666666667,
+      "combined_similarity": 0.5916635897678648
+    },
+    {
+      "id": "P20",
+      "name": "Beer Brewing (Fermentation)",
+      "domain": "Food Process",
+      "euclidean_distance": 1.362398620081509,
+      "cosine_similarity": 0.9327837798798199,
+      "manhattan_distance": 4.66,
+      "categorical_similarity": 0.4,
+      "combined_similarity": 0.567327739412234
+    },
+    {
+      "id": "P17",
+      "name": "Paper Pulp Digester",
+      "domain": "Industrial Process",
+      "euclidean_distance": 1.1883139315854208,
+      "cosine_similarity": 0.9612722003451871,
+      "manhattan_distance": 4.14,
+      "categorical_similarity": 0.3333333333333333,
+      "combined_similarity": 0.5652803654928337
+    },
+    {
+      "id": "P30",
+      "name": "Dyeing Vat (Pre-modern)",
+      "domain": "Pre-modern Craft",
+      "euclidean_distance": 1.4356357476741792,
+      "cosine_similarity": 0.9410139351277574,
+      "manhattan_distance": 5.3,
+      "categorical_similarity": 0.3333333333333333,
+      "combined_similarity": 0.5303037788344871
+    },
+    {
+      "id": "P16",
+      "name": "Blacksmith Forge Welding",
+      "domain": "Pre-modern Craft",
+      "euclidean_distance": 1.5577387457465388,
+      "cosine_similarity": 0.896673269689838,
+      "manhattan_distance": 5.3100000000000005,
+      "categorical_similarity": 0.3333333333333333,
+      "combined_similarity": 0.5130358072464524
+    },
+    {
+      "id": "P18",
+      "name": "Cheese Making",
+      "domain": "Food Process",
+      "euclidean_distance": 1.3838966724434307,
+      "cosine_similarity": 0.9327418103971364,
+      "manhattan_distance": 4.74,
+      "categorical_similarity": 0.26666666666666666,
+      "combined_similarity": 0.510954122357417
+    },
+    {
+      "id": "P14",
+      "name": "Pottery Kiln Firing",
+      "domain": "Pre-modern Craft",
+      "euclidean_distance": 1.6251061503791067,
+      "cosine_similarity": 0.8969847552054554,
+      "manhattan_distance": 5.819999999999999,
+      "categorical_similarity": 0.3333333333333333,
+      "combined_similarity": 0.5035086175171269
+    },
+    {
+      "id": "P29",
+      "name": "Retort Canning",
+      "domain": "Food Process",
+      "euclidean_distance": 1.2960748435179197,
+      "cosine_similarity": 0.9352651974443376,
+      "manhattan_distance": 4.18,
+      "categorical_similarity": 0.2,
+      "combined_similarity": 0.49670733784463705
+    }
+  ],
+  "clusters": {
+    "HIGH": [
+      "P01",
+      "P21",
+      "P22",
+      "P25",
+      "P11",
+      "P07"
+    ],
+    "MEDIUM": [
+      "P05",
+      "P19"
+    ],
+    "LOW": [
+      "P09",
+      "P10",
+      "P26",
+      "P12",
+      "P02",
+      "P04",
+      "P06",
+      "P15",
+      "P03",
+      "P28",
+      "P24"
+    ],
+    "DISTANT": [
+      "P27",
+      "P13",
+      "P23",
+      "P08",
+      "P20",
+      "P17",
+      "P30",
+      "P16",
+      "P18",
+      "P14",
+      "P29"
+    ]
+  },
+  "cluster_sizes": {
+    "HIGH": 6,
+    "MEDIUM": 2,
+    "LOW": 11,
+    "DISTANT": 11
+  },
+  "robustness": {
+    "rank_variance": {
+      "P01": 0.0,
+      "P02": 0.4935585071701226,
+      "P03": 0.5517245689653488,
+      "P04": 0.47159304490206383,
+      "P05": 0.36660605559646725,
+      "P06": 0.36932370625238775,
+      "P07": 0.0,
+      "P08": 0.0,
+      "P09": 0.13999999999999999,
+      "P10": 0.13999999999999999,
+      "P11": 0.0,
+      "P12": 0.8588364221433556,
+      "P13": 0.13999999999999999,
+      "P14": 0.0,
+      "P15": 0.482078831727758,
+      "P16": 0.13999999999999999,
+      "P17": 0.3,
+      "P18": 0.13999999999999999,
+      "P19": 0.36660605559646725,
+      "P20": 0.3,
+      "P21": 0.36660605559646725,
+      "P22": 0.36660605559646725,
+      "P23": 0.13999999999999999,
+      "P24": 0.0,
+      "P25": 0.0,
+      "P26": 0.0,
+      "P27": 0.0,
+      "P28": 0.0,
+      "P29": 0.0,
+      "P30": 0.0
+    },
+    "stable_top_5": [
+      "P01",
+      "P21",
+      "P22",
+      "P25",
+      "P11"
+    ]
+  }
+}

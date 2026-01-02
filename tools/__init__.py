@@ -1,1 +1,0 @@
-# Voynich Analysis Tools

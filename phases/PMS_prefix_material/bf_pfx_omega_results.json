@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "test": "BF-PFX-OMEGA",
+    "purpose": "Exhaustive annotation-agnostic robustness test",
+    "total_partitions": 157,
+    "valid_folios": 30
+  },
+  "partition_counts": {
+    "binary": 95,
+    "ternary": 11,
+    "cross_feature": 51
+  },
+  "significance_rates": {
+    "p_005": 75.15923566878982,
+    "p_001": 66.2420382165605,
+    "n_significant_005": 118,
+    "n_significant_001": 104
+  },
+  "null_controls": {
+    "null1_prefix_shuffle": {
+      "real_count": 100,
+      "null_mean": 88.214,
+      "null_std": 5.504198760946047,
+      "percentile": 99.6,
+      "survives": true
+    },
+    "null2_visual_scramble": {
+      "real_count": 100,
+      "null_mean": 26.582,
+      "null_std": 2.5859767980397654,
+      "percentile": 100.0,
+      "survives": true
+    },
+    "null3_random_partition": {
+      "real_count": 100,
+      "null_mean": 76.08,
+      "null_std": 3.7145120810141408,
+      "percentile": 100.0,
+      "survives": true
+    }
+  },
+  "clustering": {
+    "features_with_significance": 12,
+    "total_features": 12,
+    "clustering_ratio": 1.0,
+    "root_clustering_ratio": 0.08333333333333333
+  },
+  "decision_rules": {
+    "rule1_lt_10pct": false,
+    "rule2_clustered": false,
+    "rule3_nulls_survived": 3
+  },
+  "verdict": "SUPPORT_FAILS",
+  "interpretation": "Prefix-visual correlation is a general low-level indexing artifact",
+  "top_10_partitions": [
+    {
+      "description": "leaf_shape in ('LANCEOLATE', 'LOBED') vs rest",
+      "p_value": 1.1357691365508383e-11,
+      "effect_size": 0.10306775485098617
+    },
+    {
+      "description": "leaf_shape in ('LOBED', 'OVAL', 'ROUND')",
+      "p_value": 2.1134625100931512e-11,
+      "effect_size": 0.09707774187471302
+    },
+    {
+      "description": "leaf_shape in ('COMPOUND', 'OVAL') vs rest",
+      "p_value": 2.4731553756716165e-11,
+      "effect_size": 0.10154306049503402
+    },
+    {
+      "description": "root_prominence=LOW vs rest",
+      "p_value": 3.034967596681912e-11,
+      "effect_size": 0.10298904316097587
+    },
+    {
+      "description": "root_prominence in ('MEDIUM', 'HIGH') vs rest",
+      "p_value": 3.034967596681912e-11,
+      "effect_size": 0.10298904316097587
+    },
+    {
+      "description": "flower_shape=IRREGULAR AND stem_type=MULTIPLE vs rest",
+      "p_value": 3.87375676290548e-11,
+      "effect_size": 0.106352533164812
+    },
+    {
+      "description": "stem_type in ('MULTIPLE', 'BRANCHING', 'SINGLE')",
+      "p_value": 4.499414875634846e-11,
+      "effect_size": 0.0768402525690463
+    },
+    {
+      "description": "stem_type=MULTIPLE vs rest",
+      "p_value": 1.3136727207866145e-10,
+      "effect_size": 0.09818831082557897
+    },
+    {
+      "description": "stem_type in ('BRANCHING', 'SINGLE') vs rest",
+      "p_value": 1.3136727207866145e-10,
+      "effect_size": 0.09818831082557897
+    },
+    {
+      "description": "leaf_shape in ('MIXED', 'SERRATED') vs rest",
+      "p_value": 2.6885694416096323e-10,
+      "effect_size": 0.09671251253318645
+    }
+  ]
+}

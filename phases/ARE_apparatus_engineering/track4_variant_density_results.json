@@ -1,0 +1,21 @@
+{
+  "sections_analyzed": 5,
+  "mean_variants_per_section": 15.4,
+  "within_section_spread": {
+    "cycle_count": 82.2,
+    "hazard_density": 0.1788,
+    "link_density": 0.177
+  },
+  "between_section_spread": {
+    "cycle_count": 246.0,
+    "hazard_density": 0.365,
+    "link_density": 0.372
+  },
+  "knob_turning_coverage": {
+    "cycle_count": 0.3341,
+    "hazard_density": 0.4899,
+    "link_density": 0.4758
+  },
+  "verdict": "DISCRETE_ALTERNATIVES",
+  "mean_coverage": 0.4333
+}

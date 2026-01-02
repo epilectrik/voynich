@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "test": "REFERENCE_BEHAVIOR",
+    "timestamp": "2026-01-01T07:34:25.913492",
+    "decisive": true,
+    "weight": 2
+  },
+  "a_text_stats": {
+    "total_records": 36620,
+    "unique_tokens": 4737,
+    "unique_ngrams": 22297
+  },
+  "b_text_stats": {
+    "total_records": 75173,
+    "unique_tokens": 6985,
+    "total_ngrams": 75007
+  },
+  "overlap_analysis": {
+    "shared_tokens": 1485,
+    "a_only_tokens": 3252,
+    "b_only_tokens": 5500,
+    "jaccard_similarity": 0.1450620298915698,
+    "referenced_ngram_count": 140,
+    "reference_rate": 0.0018664924607036677,
+    "unique_referenced_patterns": 55
+  },
+  "definition_core_analysis": {
+    "def_cores_in_a": 5,
+    "def_cores_in_b": 3,
+    "def_cores_in_both": 3,
+    "cross_reference_rate": 0.6,
+    "sample_cross_references": [
+      "sy",
+      "tcho",
+      "otch"
+    ]
+  },
+  "directionality": {
+    "a_defines_for_b": true,
+    "asymmetry_ratio": 1.4999999999999998
+  },
+  "nonlocal_dependency": {
+    "detected": false,
+    "evidence_strength": "LOW"
+  },
+  "VERDICT": "CONTROL_SIGNAL"
+}

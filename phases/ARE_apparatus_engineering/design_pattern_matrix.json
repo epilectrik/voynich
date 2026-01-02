@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "generated": "2026-01-01",
+    "status": "EXTERNAL_RESEARCH",
+    "binding": false,
+    "purpose": "Non-causal pattern alignment between historical manual design and Voynich features"
+  },
+  "patterns": [
+    {
+      "pattern_id": "P1",
+      "pattern_name": "Discrete Parameter Levels",
+      "historical_evidence": {
+        "source": "Brunschwig (1500)",
+        "description": "Four degrees of fire: water bath, ash bath, sand bath, naked flame",
+        "domain": "Distillation manuals"
+      },
+      "voynich_feature": {
+        "feature": "49 instruction classes with THRESHOLD scaling",
+        "evidence": "Phase 20: 9.8x compression, LEVEL_SELECT semantics"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P2",
+      "pattern_name": "Categorical Prohibitions",
+      "historical_evidence": {
+        "source": "Brunschwig (1500)",
+        "description": "Fourth degree 'coerces the thing, which true distillation rejects'",
+        "domain": "Distillation manuals"
+      },
+      "voynich_feature": {
+        "feature": "17 forbidden transitions, 100% bidirectional",
+        "evidence": "Phase 18: PHASE_ORDERING dominant, mutual exclusions"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P3",
+      "pattern_name": "Multiple Approved Procedures",
+      "historical_evidence": {
+        "source": "Antidotarium Nicolai (12th c.)",
+        "description": "Multiple recipes for same complaint, organized by form not diagnosis",
+        "domain": "Medieval pharmacopoeia"
+      },
+      "voynich_feature": {
+        "feature": "8 recipe families covering 100% of grammar",
+        "evidence": "Phase 20: canonical recipe clusters"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P4",
+      "pattern_name": "Materials Omitted",
+      "historical_evidence": {
+        "source": "General craft manual pattern",
+        "description": "Focus on procedure, not feedstock identification",
+        "domain": "Apparatus manuals"
+      },
+      "voynich_feature": {
+        "feature": "0 material/product encoding",
+        "evidence": "Phase 19: PURE_OPERATIONAL, 0 translation zones"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P5",
+      "pattern_name": "Expert Knowledge Assumed",
+      "historical_evidence": {
+        "source": "Guild training model",
+        "description": "Tacit knowledge transmitted through apprenticeship, not text",
+        "domain": "Technical curricula"
+      },
+      "voynich_feature": {
+        "feature": "No definitions, no remedial instruction",
+        "evidence": "Non-semantic encoding, external knowledge required"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P6",
+      "pattern_name": "Atomic Program Units",
+      "historical_evidence": {
+        "source": "Theophilus - On Divers Arts (12th c.)",
+        "description": "Each chapter covers one complete craft operation",
+        "domain": "Craft manuals"
+      },
+      "voynich_feature": {
+        "feature": "Each folio = one complete program",
+        "evidence": "Phase 22: 83 folios, 75,248 instructions, atomic units"
+      },
+      "alignment": "MODERATE",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P7",
+      "pattern_name": "Positional Indexing",
+      "historical_evidence": {
+        "source": "Medieval recipe collections",
+        "description": "Head-to-toe organization, alphabetical ordering (Antidotarium)",
+        "domain": "Medical/pharmaceutical"
+      },
+      "voynich_feature": {
+        "feature": "Prefix/suffix as positional markers",
+        "evidence": "Phase PCS/CGR: PIECEWISE_SEQUENTIAL, quire-aligned"
+      },
+      "alignment": "MODERATE",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P8",
+      "pattern_name": "Checklist Structure",
+      "historical_evidence": {
+        "source": "Modern aviation/nuclear SOPs",
+        "description": "Discrete enumerated items, not continuous instruction",
+        "domain": "Human factors"
+      },
+      "voynich_feature": {
+        "feature": "Compressed vocabulary, discrete instruction classes",
+        "evidence": "Phase 20: 49 classes, prompt-style structure"
+      },
+      "alignment": "MODERATE",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P9",
+      "pattern_name": "Interruption Recovery Support",
+      "historical_evidence": {
+        "source": "Human factors research",
+        "description": "Positional markers allow task resumption after pause",
+        "domain": "Cognitive ergonomics"
+      },
+      "voynich_feature": {
+        "feature": "Quire boundaries align with section boundaries",
+        "evidence": "Phase CGR: Detected sections match codicology"
+      },
+      "alignment": "MODERATE",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P10",
+      "pattern_name": "Kernel Control Points",
+      "historical_evidence": {
+        "source": "Process control theory",
+        "description": "Operators monitor specific control variables, not entire state",
+        "domain": "Industrial operations"
+      },
+      "voynich_feature": {
+        "feature": "k, h, e kernel with BOUNDARY_ADJACENT hazards",
+        "evidence": "Phase 17-18: Three-point control architecture"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P11",
+      "pattern_name": "Secrecy Through Abstraction",
+      "historical_evidence": {
+        "source": "Guild practice",
+        "description": "Trade secrets protected by limiting written detail",
+        "domain": "Craft guilds"
+      },
+      "voynich_feature": {
+        "feature": "Non-semantic encoding, no material names",
+        "evidence": "Phase 19: PURE_OPERATIONAL, no translation zones"
+      },
+      "alignment": "SPECULATIVE",
+      "causal_claim": false
+    },
+    {
+      "pattern_id": "P12",
+      "pattern_name": "Local Continuity",
+      "historical_evidence": {
+        "source": "Codex organization",
+        "description": "Related content grouped physically for ease of use",
+        "domain": "Book design"
+      },
+      "voynich_feature": {
+        "feature": "Extreme local continuity (d=17.5 vs random)",
+        "evidence": "Phase CGR: Adjacent folios highly similar"
+      },
+      "alignment": "STRONG",
+      "causal_claim": false
+    }
+  ],
+  "alignment_summary": {
+    "STRONG": 7,
+    "MODERATE": 4,
+    "SPECULATIVE": 1,
+    "total_patterns": 12
+  },
+  "interpretation_constraints": {
+    "permitted": [
+      "Pattern alignment suggests rational design",
+      "Historical precedent exists for similar structures",
+      "Design choices are not arbitrary"
+    ],
+    "forbidden": [
+      "Pattern alignment proves historical identity",
+      "Voynich is definitely a distillation manual",
+      "Patterns explain token meanings",
+      "External evidence modifies internal grammar"
+    ]
+  }
+}

@@ -1,0 +1,650 @@
+{
+  "metadata": {
+    "generated": "2026-01-01",
+    "purpose": "External comparative analysis - control feature abstractions",
+    "process_count": 30,
+    "feature_count": 18,
+    "categorical_count": 15,
+    "note": "All features abstracted from operational descriptions. No domain semantics."
+  },
+  "feature_definitions": {
+    "F01": "Stability priority [0,1] - extent to which system seeks stable state",
+    "F02": "Completion priority [0,1] - extent to which system seeks termination",
+    "F03": "Forbidden transition count [0,100] - explicit hazard rules",
+    "F04": "Failure class count [0,20] - distinct failure categories",
+    "F05": "Convergence rate [0,1] - fraction of runs reaching viable state",
+    "F06": "Attractor count [1,10] - number of stable operating regimes",
+    "F07": "Recovery steps (mean) [1,10] - steps to return to viable state",
+    "F08": "Recovery success rate [0,1] - fraction of recoveries successful",
+    "F09": "Reversibility [0,1] - fraction of operations that can be undone",
+    "F10": "Cycle closure rate [0,1] - fraction of sequences returning to start",
+    "F11": "Perturbation tolerance [0,1] - robustness to input variation",
+    "F12": "Compression tolerance [0,1] - robustness to step skipping",
+    "F13": "Redundancy tolerance [0,1] - robustness to extra operations",
+    "F14": "Kernel dominance [0,1] - presence of core operator set",
+    "F15": "Kernel node count [1,10] - size of irreducible core",
+    "F16": "Hub-spoke ratio [1,10] - intensity ratio core/periphery",
+    "F17": "Forbidden bidirectionality [0,1] - mutual exclusion ratio",
+    "F18": "Kernel-adjacent hazards [0,1] - hazard concentration at core"
+  },
+  "voynich_reference": {
+    "id": "VOYNICH",
+    "name": "Voynich Control Grammar (Reference)",
+    "numerical": {
+      "F01": 1.0, "F02": 0.0, "F03": 17, "F04": 5,
+      "F05": 1.0, "F06": 1, "F07": 2.37, "F08": 1.0,
+      "F09": 0.946, "F10": 0.977, "F11": 1.0, "F12": 0.68,
+      "F13": 1.0, "F14": 1.0, "F15": 3, "F16": 2.64,
+      "F17": 1.0, "F18": 0.35
+    },
+    "categorical": {
+      "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+      "C04": "EXTERNAL", "C05": "NONE", "C06": "ABSENT",
+      "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+      "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+      "C13": "PRESENT", "C14": "STRICT_LOCAL", "C15": "TEACHING"
+    }
+  },
+  "candidates": [
+    {
+      "id": "P01",
+      "name": "Reflux Distillation",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 0.95, "F02": 0.1, "F03": 15, "F04": 5,
+        "F05": 0.95, "F06": 1, "F07": 2.5, "F08": 0.9,
+        "F09": 0.9, "F10": 0.95, "F11": 0.85, "F12": 0.5,
+        "F13": 0.9, "F14": 0.9, "F15": 3, "F16": 2.5,
+        "F17": 0.9, "F18": 0.4
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "NONE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "STRICT_LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Continuous cyclic operation, operator checks purity externally, flooding/weeping hazards"
+    },
+    {
+      "id": "P02",
+      "name": "Fractional Crystallization",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 0.85, "F02": 0.3, "F03": 10, "F04": 4,
+        "F05": 0.85, "F06": 2, "F07": 3.0, "F08": 0.8,
+        "F09": 0.7, "F10": 0.8, "F11": 0.7, "F12": 0.4,
+        "F13": 0.8, "F14": 0.7, "F15": 2, "F16": 2.0,
+        "F17": 0.7, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "MEDIUM", "C12": "PRESENT",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Temperature-controlled supersaturation, multiple crystallization points possible"
+    },
+    {
+      "id": "P03",
+      "name": "Fermentation (Bioreactor)",
+      "domain": "Biological Process",
+      "numerical": {
+        "F01": 0.9, "F02": 0.2, "F03": 8, "F04": 4,
+        "F05": 0.85, "F06": 1, "F07": 4.0, "F08": 0.75,
+        "F09": 0.3, "F10": 0.5, "F11": 0.6, "F12": 0.3,
+        "F13": 0.7, "F14": 0.8, "F15": 4, "F16": 1.8,
+        "F17": 0.6, "F18": 0.5
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "pH, temperature, oxygen - multiple parameters, slow recovery, irreversible"
+    },
+    {
+      "id": "P04",
+      "name": "Metallurgical Annealing",
+      "domain": "Metallurgy",
+      "numerical": {
+        "F01": 0.85, "F02": 0.4, "F03": 12, "F04": 4,
+        "F05": 0.9, "F06": 2, "F07": 3.5, "F08": 0.85,
+        "F09": 0.5, "F10": 0.6, "F11": 0.7, "F12": 0.3,
+        "F13": 0.6, "F14": 0.75, "F15": 2, "F16": 2.2,
+        "F17": 0.8, "F18": 0.35
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "BINARY",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "MEDIUM", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Heat/cool cycles, grain growth hazards, temperature control critical"
+    },
+    {
+      "id": "P05",
+      "name": "Nuclear Reactor Control",
+      "domain": "Energy Systems",
+      "numerical": {
+        "F01": 1.0, "F02": 0.0, "F03": 50, "F04": 10,
+        "F05": 1.0, "F06": 1, "F07": 1.5, "F08": 1.0,
+        "F09": 0.95, "F10": 0.99, "F11": 0.95, "F12": 0.2,
+        "F13": 0.95, "F14": 1.0, "F15": 5, "F16": 3.5,
+        "F17": 1.0, "F18": 0.6
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "STRICT_LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Inherent negative feedback, extreme hazard awareness, criticality control"
+    },
+    {
+      "id": "P06",
+      "name": "HVAC Climate Control",
+      "domain": "Building Systems",
+      "numerical": {
+        "F01": 0.8, "F02": 0.0, "F03": 5, "F04": 2,
+        "F05": 0.95, "F06": 1, "F07": 2.0, "F08": 0.95,
+        "F09": 1.0, "F10": 0.9, "F11": 0.9, "F12": 0.7,
+        "F13": 0.9, "F14": 0.6, "F15": 2, "F16": 1.5,
+        "F17": 0.5, "F18": 0.2
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "NOVICE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "BINARY",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "IMPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Simple setpoint tracking, low hazard, automatic operation"
+    },
+    {
+      "id": "P07",
+      "name": "Steam Boiler Pressure Control",
+      "domain": "Industrial Systems",
+      "numerical": {
+        "F01": 0.95, "F02": 0.0, "F03": 20, "F04": 5,
+        "F05": 0.98, "F06": 1, "F07": 2.0, "F08": 0.95,
+        "F09": 0.85, "F10": 0.9, "F11": 0.85, "F12": 0.4,
+        "F13": 0.8, "F14": 0.9, "F15": 3, "F16": 2.3,
+        "F17": 0.9, "F18": 0.45
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "CONTINUOUS", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "STRICT_LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Redundant safety, pressure limits, manual reset on high-limit"
+    },
+    {
+      "id": "P08",
+      "name": "Medieval Glass Furnace",
+      "domain": "Pre-modern Craft",
+      "numerical": {
+        "F01": 0.8, "F02": 0.3, "F03": 8, "F04": 3,
+        "F05": 0.7, "F06": 3, "F07": 4.0, "F08": 0.6,
+        "F09": 0.4, "F10": 0.5, "F11": 0.5, "F12": 0.3,
+        "F13": 0.5, "F14": 0.7, "F15": 2, "F16": 2.0,
+        "F17": 0.6, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "OPEN_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "NONE", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "IMPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Multiple temperature zones, visual control, expertise-dependent"
+    },
+    {
+      "id": "P09",
+      "name": "PID Controller (Generic)",
+      "domain": "Control Theory",
+      "numerical": {
+        "F01": 0.9, "F02": 0.0, "F03": 3, "F04": 2,
+        "F05": 0.95, "F06": 1, "F07": 2.0, "F08": 0.95,
+        "F09": 1.0, "F10": 0.95, "F11": 0.85, "F12": 0.6,
+        "F13": 0.9, "F14": 0.8, "F15": 3, "F16": 2.0,
+        "F17": 0.5, "F18": 0.2
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "IMPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "REFERENCE"
+      },
+      "notes": "Standard feedback control, three-term regulation, tunable"
+    },
+    {
+      "id": "P10",
+      "name": "Exothermic Reactor Control",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 1.0, "F02": 0.1, "F03": 25, "F04": 6,
+        "F05": 0.9, "F06": 1, "F07": 1.5, "F08": 0.85,
+        "F09": 0.3, "F10": 0.7, "F11": 0.6, "F12": 0.2,
+        "F13": 0.5, "F14": 0.95, "F15": 4, "F16": 3.0,
+        "F17": 0.95, "F18": 0.55
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "PRESENT", "C14": "STRICT_LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Runaway prevention critical, cooling jacket control, quench valves"
+    },
+    {
+      "id": "P11",
+      "name": "Biological Homeostasis",
+      "domain": "Biological Systems",
+      "numerical": {
+        "F01": 1.0, "F02": 0.0, "F03": 20, "F04": 8,
+        "F05": 1.0, "F06": 1, "F07": 3.0, "F08": 0.98,
+        "F09": 0.95, "F10": 0.98, "F11": 0.95, "F12": 0.5,
+        "F13": 0.95, "F14": 1.0, "F15": 5, "F16": 2.5,
+        "F17": 0.9, "F18": 0.4
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "CONTINUOUS", "C05": "NONE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Negative feedback dominant, setpoint maintenance, redundant systems"
+    },
+    {
+      "id": "P12",
+      "name": "Aircraft Autopilot",
+      "domain": "Aerospace",
+      "numerical": {
+        "F01": 0.95, "F02": 0.0, "F03": 15, "F04": 5,
+        "F05": 0.99, "F06": 3, "F07": 1.0, "F08": 0.99,
+        "F09": 1.0, "F10": 0.95, "F11": 0.9, "F12": 0.3,
+        "F13": 0.8, "F14": 0.9, "F15": 4, "F16": 2.0,
+        "F17": 0.7, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "MULTI_MODE",
+        "C07": "CONDITIONAL", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Multiple flight modes, stability augmentation, inner/outer loops"
+    },
+    {
+      "id": "P13",
+      "name": "Crystallization (Industrial)",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 0.85, "F02": 0.4, "F03": 8, "F04": 3,
+        "F05": 0.8, "F06": 2, "F07": 4.0, "F08": 0.75,
+        "F09": 0.5, "F10": 0.6, "F11": 0.6, "F12": 0.3,
+        "F13": 0.6, "F14": 0.7, "F15": 2, "F16": 1.8,
+        "F17": 0.6, "F18": 0.25
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "MEDIUM", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Supersaturation control, nucleation management, batch operation"
+    },
+    {
+      "id": "P14",
+      "name": "Pottery Kiln Firing",
+      "domain": "Pre-modern Craft",
+      "numerical": {
+        "F01": 0.75, "F02": 0.5, "F03": 10, "F04": 4,
+        "F05": 0.7, "F06": 3, "F07": 5.0, "F08": 0.6,
+        "F09": 0.2, "F10": 0.4, "F11": 0.5, "F12": 0.2,
+        "F13": 0.4, "F14": 0.65, "F15": 2, "F16": 1.8,
+        "F17": 0.7, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "OPEN_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "NONE", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "HALT",
+        "C10": "IMPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Staged heating, irreversible transformation, visual temperature cues"
+    },
+    {
+      "id": "P15",
+      "name": "Wastewater Treatment (Aerobic)",
+      "domain": "Environmental",
+      "numerical": {
+        "F01": 0.85, "F02": 0.0, "F03": 10, "F04": 4,
+        "F05": 0.9, "F06": 1, "F07": 4.0, "F08": 0.85,
+        "F09": 0.4, "F10": 0.6, "F11": 0.7, "F12": 0.4,
+        "F13": 0.7, "F14": 0.75, "F15": 3, "F16": 1.7,
+        "F17": 0.6, "F18": 0.35
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "DO control, cascaded loops, biological variability"
+    },
+    {
+      "id": "P16",
+      "name": "Blacksmith Forge Welding",
+      "domain": "Pre-modern Craft",
+      "numerical": {
+        "F01": 0.7, "F02": 0.6, "F03": 12, "F04": 4,
+        "F05": 0.75, "F06": 4, "F07": 3.0, "F08": 0.7,
+        "F09": 0.3, "F10": 0.4, "F11": 0.5, "F12": 0.2,
+        "F13": 0.4, "F14": 0.7, "F15": 3, "F16": 2.2,
+        "F17": 0.8, "F18": 0.4
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "OPEN_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "NONE", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "DISCRETE", "C09": "RETRY",
+        "C10": "IMPLICIT", "C11": "LOW", "C12": "ABSENT",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Color-based temperature, narrow weld window, irreversible if overheated"
+    },
+    {
+      "id": "P17",
+      "name": "Paper Pulp Digester",
+      "domain": "Industrial Process",
+      "numerical": {
+        "F01": 0.8, "F02": 0.3, "F03": 12, "F04": 4,
+        "F05": 0.85, "F06": 2, "F07": 4.0, "F08": 0.8,
+        "F09": 0.4, "F10": 0.5, "F11": 0.6, "F12": 0.3,
+        "F13": 0.6, "F14": 0.7, "F15": 3, "F16": 1.9,
+        "F17": 0.7, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Temperature/pressure control, liquor displacement, staged cooking"
+    },
+    {
+      "id": "P18",
+      "name": "Cheese Making",
+      "domain": "Food Process",
+      "numerical": {
+        "F01": 0.8, "F02": 0.4, "F03": 8, "F04": 3,
+        "F05": 0.85, "F06": 2, "F07": 4.0, "F08": 0.8,
+        "F09": 0.2, "F10": 0.5, "F11": 0.6, "F12": 0.3,
+        "F13": 0.5, "F14": 0.7, "F15": 3, "F16": 1.8,
+        "F17": 0.6, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "MIXED", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "HALT",
+        "C10": "IMPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "pH and temperature control, irreversible curd formation, staged process"
+    },
+    {
+      "id": "P19",
+      "name": "Hydraulic Servo System",
+      "domain": "Mechanical Systems",
+      "numerical": {
+        "F01": 0.9, "F02": 0.0, "F03": 8, "F04": 3,
+        "F05": 0.95, "F06": 1, "F07": 1.5, "F08": 0.95,
+        "F09": 1.0, "F10": 0.9, "F11": 0.8, "F12": 0.5,
+        "F13": 0.8, "F14": 0.85, "F15": 3, "F16": 2.0,
+        "F17": 0.7, "F18": 0.25
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Pressure feedback, damping orifice, position control"
+    },
+    {
+      "id": "P20",
+      "name": "Beer Brewing (Fermentation)",
+      "domain": "Food Process",
+      "numerical": {
+        "F01": 0.85, "F02": 0.3, "F03": 8, "F04": 3,
+        "F05": 0.9, "F06": 1, "F07": 5.0, "F08": 0.85,
+        "F09": 0.2, "F10": 0.6, "F11": 0.6, "F12": 0.3,
+        "F13": 0.5, "F14": 0.7, "F15": 2, "F16": 1.6,
+        "F17": 0.5, "F18": 0.25
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "MIXED", "C03": "INTERMEDIATE",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "HALT",
+        "C10": "IMPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Temperature control critical, exothermic, yeast strain dependent"
+    },
+    {
+      "id": "P21",
+      "name": "Blood Glucose Regulation",
+      "domain": "Biological Systems",
+      "numerical": {
+        "F01": 1.0, "F02": 0.0, "F03": 10, "F04": 4,
+        "F05": 1.0, "F06": 1, "F07": 2.0, "F08": 0.95,
+        "F09": 1.0, "F10": 0.98, "F11": 0.9, "F12": 0.6,
+        "F13": 0.95, "F14": 1.0, "F15": 3, "F16": 2.5,
+        "F17": 0.85, "F18": 0.4
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "CONTINUOUS", "C05": "NONE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Insulin/glucagon antagonism, tight setpoint, rapid response"
+    },
+    {
+      "id": "P22",
+      "name": "Distillation Column (Industrial)",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 0.95, "F02": 0.1, "F03": 18, "F04": 5,
+        "F05": 0.92, "F06": 1, "F07": 2.5, "F08": 0.88,
+        "F09": 0.9, "F10": 0.92, "F11": 0.8, "F12": 0.45,
+        "F13": 0.85, "F14": 0.92, "F15": 4, "F16": 2.6,
+        "F17": 0.88, "F18": 0.42
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "VARIABLE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "STRICT_LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "MPC control, feed composition disturbances, flooding/weeping hazards"
+    },
+    {
+      "id": "P23",
+      "name": "Thermostat (Simple)",
+      "domain": "Building Systems",
+      "numerical": {
+        "F01": 0.7, "F02": 0.0, "F03": 2, "F04": 1,
+        "F05": 0.9, "F06": 1, "F07": 1.5, "F08": 0.95,
+        "F09": 1.0, "F10": 0.9, "F11": 0.95, "F12": 0.8,
+        "F13": 0.95, "F14": 0.5, "F15": 1, "F16": 1.0,
+        "F17": 0.5, "F18": 0.1
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "NOVICE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "BINARY",
+        "C07": "ABSENT", "C08": "DISCRETE", "C09": "RECOVERY",
+        "C10": "IMPLICIT", "C11": "HIGH", "C12": "ABSENT",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "REFERENCE"
+      },
+      "notes": "On-off control, simple deadband, no expert required"
+    },
+    {
+      "id": "P24",
+      "name": "Solvent Extraction",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 0.8, "F02": 0.3, "F03": 10, "F04": 4,
+        "F05": 0.85, "F06": 2, "F07": 3.0, "F08": 0.8,
+        "F09": 0.6, "F10": 0.65, "F11": 0.7, "F12": 0.4,
+        "F13": 0.7, "F14": 0.7, "F15": 3, "F16": 1.9,
+        "F17": 0.7, "F18": 0.3
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "MEDIUM", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Phase separation, mass transfer control, countercurrent flow"
+    },
+    {
+      "id": "P25",
+      "name": "Temperature Regulation (Mammalian)",
+      "domain": "Biological Systems",
+      "numerical": {
+        "F01": 1.0, "F02": 0.0, "F03": 15, "F04": 5,
+        "F05": 1.0, "F06": 1, "F07": 2.5, "F08": 0.95,
+        "F09": 0.95, "F10": 0.97, "F11": 0.9, "F12": 0.5,
+        "F13": 0.9, "F14": 1.0, "F15": 4, "F16": 2.3,
+        "F17": 0.85, "F18": 0.35
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "CONTINUOUS", "C05": "NONE", "C06": "ABSENT",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Hypothalamus setpoint, sweating/shivering, vasodilation/constriction"
+    },
+    {
+      "id": "P26",
+      "name": "Cruise Control (Vehicle)",
+      "domain": "Automotive",
+      "numerical": {
+        "F01": 0.85, "F02": 0.0, "F03": 5, "F04": 2,
+        "F05": 0.95, "F06": 1, "F07": 1.5, "F08": 0.95,
+        "F09": 1.0, "F10": 0.9, "F11": 0.85, "F12": 0.6,
+        "F13": 0.85, "F14": 0.7, "F15": 2, "F16": 1.5,
+        "F17": 0.5, "F18": 0.2
+      },
+      "categorical": {
+        "C01": "MONOSTATE", "C02": "CLOSED_LOOP", "C03": "NOVICE",
+        "C04": "CONTINUOUS", "C05": "VARIABLE", "C06": "BINARY",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "IMPLICIT", "C11": "HIGH", "C12": "PRESENT",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Speed setpoint, throttle control, driver override"
+    },
+    {
+      "id": "P27",
+      "name": "Medieval Alchemy (Calcination)",
+      "domain": "Pre-modern Craft",
+      "numerical": {
+        "F01": 0.8, "F02": 0.4, "F03": 10, "F04": 4,
+        "F05": 0.7, "F06": 3, "F07": 4.0, "F08": 0.65,
+        "F09": 0.5, "F10": 0.6, "F11": 0.5, "F12": 0.3,
+        "F13": 0.5, "F14": 0.75, "F15": 3, "F16": 2.1,
+        "F17": 0.75, "F18": 0.35
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "OPEN_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "NONE", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "CONTINUOUS", "C09": "RECOVERY",
+        "C10": "IMPLICIT", "C11": "MEDIUM", "C12": "WEAK",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Heat-driven transformation, color changes, expert judgment"
+    },
+    {
+      "id": "P28",
+      "name": "Batch Reactor Control",
+      "domain": "Chemical Process",
+      "numerical": {
+        "F01": 0.9, "F02": 0.3, "F03": 15, "F04": 5,
+        "F05": 0.88, "F06": 2, "F07": 3.0, "F08": 0.85,
+        "F09": 0.5, "F10": 0.7, "F11": 0.7, "F12": 0.35,
+        "F13": 0.7, "F14": 0.85, "F15": 4, "F16": 2.3,
+        "F17": 0.8, "F18": 0.4
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "FIXED", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RECOVERY",
+        "C10": "EXPLICIT", "C11": "MEDIUM", "C12": "WEAK",
+        "C13": "PRESENT", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Staged operation, composition tracking, temperature profiles"
+    },
+    {
+      "id": "P29",
+      "name": "Retort Canning",
+      "domain": "Food Process",
+      "numerical": {
+        "F01": 0.85, "F02": 0.5, "F03": 12, "F04": 4,
+        "F05": 0.9, "F06": 2, "F07": 3.0, "F08": 0.85,
+        "F09": 0.3, "F10": 0.5, "F11": 0.6, "F12": 0.3,
+        "F13": 0.5, "F14": 0.75, "F15": 3, "F16": 2.0,
+        "F17": 0.7, "F18": 0.35
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "CLOSED_LOOP", "C03": "INTERMEDIATE",
+        "C04": "INTERNAL_HALT", "C05": "FIXED", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "HALT",
+        "C10": "EXPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "OPERATIONAL"
+      },
+      "notes": "Time-temperature profile, safety critical, irreversible sterilization"
+    },
+    {
+      "id": "P30",
+      "name": "Dyeing Vat (Pre-modern)",
+      "domain": "Pre-modern Craft",
+      "numerical": {
+        "F01": 0.75, "F02": 0.5, "F03": 8, "F04": 3,
+        "F05": 0.7, "F06": 2, "F07": 4.0, "F08": 0.65,
+        "F09": 0.4, "F10": 0.5, "F11": 0.5, "F12": 0.3,
+        "F13": 0.5, "F14": 0.65, "F15": 2, "F16": 1.7,
+        "F17": 0.6, "F18": 0.25
+      },
+      "categorical": {
+        "C01": "MULTISTATE", "C02": "OPEN_LOOP", "C03": "EXPERT",
+        "C04": "EXTERNAL", "C05": "NONE", "C06": "MULTI_MODE",
+        "C07": "ABSENT", "C08": "PERIODIC", "C09": "RETRY",
+        "C10": "IMPLICIT", "C11": "LOW", "C12": "WEAK",
+        "C13": "WEAK", "C14": "LOCAL", "C15": "TEACHING"
+      },
+      "notes": "Temperature and pH, color development, mordant chemistry"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "attack1": {
+    "attack": "KERNEL_COLLAPSE",
+    "null_hypothesis": "Kernel nodes emerge from frequency alone",
+    "original_kernel_ranks": {
+      "e": 2,
+      "h": 3,
+      "k": 7
+    },
+    "surrogate_avg_ranks": {
+      "e": 1.0,
+      "h": 5.0,
+      "k": 6.0
+    },
+    "surrogate_top3_match_rate": 0.0,
+    "k_percentile": 1.0,
+    "verdict": "KERNEL_SURVIVES",
+    "interpretation": "Kernel centrality is NOT explained by frequency alone"
+  },
+  "attack2": {
+    "attack": "CYCLE_ILLUSION",
+    "null_hypothesis": "2-cycle is a segmentation artifact",
+    "original_dominant": [
+      6,
+      79
+    ],
+    "random_segment_dominant": [
+      5,
+      58
+    ],
+    "fixed_segment_dominant": [
+      5,
+      132
+    ],
+    "line_segment_counts": {
+      "5": 724,
+      "7": 547,
+      "6": 728,
+      "10": 475,
+      "4": 359,
+      "2": 49,
+      "8": 404,
+      "9": 405,
+      "3": 75
+    },
+    "verdict": "CYCLE_COLLAPSES",
+    "interpretation": "Cycle structure is segmentation-dependent"
+  },
+  "attack3": {
+    "attack": "GRAMMAR_MINIMALITY",
+    "null_hypothesis": "Grammar is overfit and can be simplified",
+    "original_classes": 49,
+    "original_constraints": 17,
+    "original_legality": 1.0,
+    "trivial_legality": 1.0,
+    "reduced_5_constraint_legality": 1.0,
+    "collapsed_classes": 20,
+    "verdict": "GRAMMAR_OVERFIT",
+    "interpretation": "Constraints provide <1% legality improvement - overfit"
+  },
+  "attack4": {
+    "attack": "RANDOM_BASELINE",
+    "null_hypothesis": "Random constraint systems show similar behavior",
+    "n_systems": 100,
+    "random_monostate_rate": 0.0,
+    "voynich_monostate_rate": 1.0,
+    "random_cycle_distribution": {
+      "4": 12,
+      "9": 11,
+      "5": 8,
+      "3": 12,
+      "10": 15,
+      "6": 13,
+      "8": 15,
+      "7": 8,
+      "2": 6
+    },
+    "voynich_dominant_cycle": 2,
+    "verdict": "BEHAVIOR_SPECIFIC",
+    "interpretation": "Voynich behavior is specific, not generic"
+  },
+  "attack5": {
+    "attack": "FOLIO_INDEPENDENCE",
+    "null_hypothesis": "Folios are redundant samples from one generator",
+    "n_folios": 227,
+    "mutual_information": 0.3757191421550982,
+    "k_ratio_cv": 0.35735078812989857,
+    "h_ratio_cv": 0.3101674812822744,
+    "length_coherence_variance": 0.0004292569741343404,
+    "mean_markov_deviation": 314.0881672623675,
+    "verdict": "FOLIOS_DISTINCT",
+    "interpretation": "Folios show meaningful statistical variation"
+  },
+  "overall": {
+    "verdict": "MODEL_PARTIAL",
+    "attacks_survived": 3,
+    "attacks_weakened_by": 2,
+    "attacks_inconclusive": 0
+  }
+}

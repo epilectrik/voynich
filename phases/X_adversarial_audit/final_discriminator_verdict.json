@@ -1,0 +1,11 @@
+{
+  "dsl_signals": 1,
+  "control_signals": 3,
+  "max_possible": 4,
+  "test1_verdict": "DSL_SIGNAL",
+  "test2_verdict": "CONTROL_SIGNAL",
+  "test3_verdict": "CONTROL_SIGNAL",
+  "discriminator_valid": true,
+  "FINAL_VERDICT": "CONTROL_GRAMMAR_SUPPORTED",
+  "confidence": "HIGH"
+}

@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "test": "COORDINATE_GEOMETRY_RECONSTRUCTION",
+    "n_folios": 224,
+    "n_features": 25
+  },
+  "g1_dimensionality": {
+    "variance_explained": [
+      0.24878466843906819,
+      0.11833782911090704,
+      0.09530022576208368,
+      0.06917168685250799,
+      0.06691969140780125,
+      0.04678257220308151,
+      0.04333459433960669,
+      0.035146050553367815,
+      0.03327527178019574,
+      0.03210183012218372
+    ],
+    "n_components_80": 11,
+    "n_components_90": 15,
+    "n_components_95": 19,
+    "bootstrap_mean_dim": 14.67,
+    "bootstrap_std_dim": 0.47021271782034985,
+    "isomap_success": true,
+    "effective_dimensionality": 15
+  },
+  "g2_monotonicity": {
+    "pc_correlations": [
+      {
+        "pc": 1,
+        "rho": -0.6241106128550076,
+        "p": 1.38046151595608e-25
+      },
+      {
+        "pc": 2,
+        "rho": -0.21239162929745894,
+        "p": 0.0013859413463285508
+      },
+      {
+        "pc": 3,
+        "rho": 0.0411509715994021,
+        "p": 0.5400712799639555
+      },
+      {
+        "pc": 4,
+        "rho": 0.17876681614349776,
+        "p": 0.007313789592085728
+      },
+      {
+        "pc": 5,
+        "rho": 0.1329863335468717,
+        "p": 0.04680498456016143
+      }
+    ],
+    "reversal_count": 133,
+    "reversal_rate": 0.5990990990990991,
+    "is_monotonic": false,
+    "loop_ratio": 0.5018889789701558,
+    "has_loop": false,
+    "null_percentile": 100.0
+  },
+  "g3_radial": {
+    "centroid": [
+      0.0,
+      -2.220446049250313e-16,
+      1.427429603089487e-16
+    ],
+    "mean_distance": 3.2293066209643726,
+    "std_distance": 1.0640238862906868,
+    "corr_distance_hazard": 0.04533457249175845,
+    "p_hazard": 0.49963963399159617,
+    "corr_distance_kernel": 0.03999219666170918,
+    "p_kernel": 0.5515507659283598,
+    "corr_distance_link": -0.1280676648273567,
+    "p_link": 0.055632154765729906,
+    "null_percentile_hazard": 48.199999999999996
+  },
+  "g4_boundary": {
+    "n_boundary": 46,
+    "n_interior": 178,
+    "boundary_hazard_mean": 0.5398043478260869,
+    "interior_hazard_mean": 0.528252808988764,
+    "p_hazard": 0.5454576942534135,
+    "effect_hazard": 0.2137840567435882,
+    "boundary_kernel_mean": 0.5528695652173914,
+    "interior_kernel_mean": 0.5411123595505619,
+    "p_kernel": 0.4403423561503518,
+    "effect_kernel": 0.172146306168981,
+    "boundary_link_mean": 0.32539130434782615,
+    "interior_link_mean": 0.33079775280898877,
+    "p_link": 0.4403423561503518,
+    "effect_link": -0.09350154851414265,
+    "boundary_folios": [
+      "f2v",
+      "f4r",
+      "f5v",
+      "f9v",
+      "f10r",
+      "f11r",
+      "f14v",
+      "f15r",
+      "f15v",
+      "f16v"
+    ]
+  },
+  "g5_continuity": {
+    "mean_adjacent_distance": 2.313488713154485,
+    "std_adjacent_distance": 1.4547761288585077,
+    "n_spikes": 15,
+    "spike_locations": [
+      47,
+      49,
+      57,
+      59,
+      61,
+      79,
+      89,
+      93,
+      95,
+      107
+    ],
+    "n_plateaus": 54,
+    "null_mean_distance": 4.430447034320548,
+    "percentile": 0.0,
+    "continuity_type": "PUNCTUATED"
+  },
+  "final_verdict": "PIECEWISE_SEQUENTIAL",
+  "description": "Sequential progression with punctuated transitions at section boundaries",
+  "structural_signatures": {
+    "is_linear": false,
+    "is_radial": false,
+    "is_low_dimensional": false,
+    "has_boundaries": false,
+    "is_gradual": false
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "test1": {
+    "test_name": "FAMILY_SYNTAX_RANDOMIZATION",
+    "iterations": 10000,
+    "per_family": {
+      "1": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.9998705297189754,
+        "random_legality_std": 0.000173975102316882,
+        "effect_size_legality": 0.7441885608941499,
+        "original_convergence": 0.10467429139731477,
+        "random_convergence_mean": 0.058328269517652916,
+        "effect_size_convergence": 18.123848998927148
+      },
+      "2": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.999793548387097,
+        "random_legality_std": 0.0005118251332713285,
+        "effect_size_legality": 0.40336356986509786,
+        "original_convergence": 0.16241610738255033,
+        "random_convergence_mean": 0.09289221476510068,
+        "effect_size_convergence": 9.438443410695196
+      },
+      "3": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.99990361275755,
+        "random_legality_std": 0.00016082557451537556,
+        "effect_size_legality": 0.5993278291741162,
+        "original_convergence": 0.09565462753950339,
+        "random_convergence_mean": 0.054042437923250565,
+        "effect_size_convergence": 15.931458560022882
+      },
+      "4": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.9998022088353413,
+        "random_legality_std": 0.0004376300908873406,
+        "effect_size_legality": 0.45195970016055365,
+        "original_convergence": 0.0802407221664995,
+        "random_convergence_mean": 0.044326980942828484,
+        "effect_size_convergence": 7.91344240662859
+      },
+      "5": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.9998676513176948,
+        "random_legality_std": 0.00019213401935708584,
+        "effect_size_legality": 0.6888352346347778,
+        "original_convergence": 0.11059640995946729,
+        "random_convergence_mean": 0.0613981181239143,
+        "effect_size_convergence": 17.371631635792248
+      },
+      "6": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.999933777470984,
+        "random_legality_std": 3.1850573597356544e-05,
+        "effect_size_legality": 2.0791628387345122,
+        "original_convergence": 0.1143769865476611,
+        "random_convergence_mean": 0.06437339872218834,
+        "effect_size_convergence": 74.31399261349493
+      },
+      "7": {
+        "original_legality": 1.0,
+        "random_legality_mean": 1.0,
+        "random_legality_std": 0.0,
+        "effect_size_legality": 0.0,
+        "original_convergence": 0.06976744186046512,
+        "random_convergence_mean": 0.03763062015503876,
+        "effect_size_convergence": 3.8042115174329854
+      },
+      "8": {
+        "original_legality": 1.0,
+        "random_legality_mean": 0.9994673913043478,
+        "random_legality_std": 0.00147886017263564,
+        "effect_size_legality": 0.3601481096775848,
+        "original_convergence": 0.05627705627705628,
+        "random_convergence_mean": 0.0303991341991342,
+        "effect_size_convergence": 3.2396754039312485
+      }
+    },
+    "aggregate": {
+      "original_legality_mean": 1.0,
+      "random_legality_mean": 0.9998298399739988,
+      "aggregate_effect_legality": 0.28182903647407603,
+      "original_convergence_mean": 0.09925045539131472,
+      "random_convergence_mean": 0.05542389679363853,
+      "aggregate_effect_convergence": 2.3310667306343693
+    },
+    "verdict": "H2_STRONG_STRUCTURE",
+    "interpretation": "Large effect detected. Family syntax is FUNCTIONALLY NECESSARY."
+  },
+  "test2": {
+    "test_name": "FAMILY_LABEL_ERASURE",
+    "n_folios": 83,
+    "n_clusters": 8,
+    "adjusted_rand_index": 0.08670997568147999,
+    "verdict": "FAMILIES_NOT_STRUCTURAL",
+    "interpretation": "Families cannot be recovered from execution metrics. They are DESCRIPTIVE artifacts."
+  },
+  "test3": {
+    "test_name": "CROSS_FAMILY_TRANSPLANT",
+    "n_pairs_tested": 56,
+    "mean_degradation": 0.0,
+    "std_degradation": 0.0,
+    "max_degradation": 0.0,
+    "details": [
+      {
+        "pair": "4->6",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "6->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "4->1",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "1->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "4->3",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "3->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "4->5",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "5->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "4->7",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "7->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "4->8",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "8->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "4->2",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "2->4",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "6->1",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "1->6",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "6->3",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "3->6",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "6->5",
+        "baseline_a": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      },
+      {
+        "pair": "5->6",
+        "baseline_b": 1.0,
+        "transplanted": 1.0,
+        "degradation": 0.0
+      }
+    ],
+    "verdict": "HIGH_TRANSFERABILITY",
+    "interpretation": "Syntax transplants cause minimal degradation. Family syntax is INTERCHANGEABLE."
+  },
+  "test4": {
+    "test_name": "DEGRADATION_CURVE",
+    "baseline_legality": 1.0,
+    "baseline_convergence": 0.1104,
+    "degradation_curve": [
+      {
+        "perturbation_pct": 0,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.09800000000000003,
+        "legality_std": 0.0,
+        "convergence_std": 2.7755575615628914e-17
+      },
+      {
+        "perturbation_pct": 10,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.08887999999999999,
+        "legality_std": 0.0,
+        "convergence_std": 0.002226117696798621
+      },
+      {
+        "perturbation_pct": 20,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.07969,
+        "legality_std": 0.0,
+        "convergence_std": 0.002985615514429146
+      },
+      {
+        "perturbation_pct": 30,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.070165,
+        "legality_std": 0.0,
+        "convergence_std": 0.0037610204732226576
+      },
+      {
+        "perturbation_pct": 40,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.06169499999999999,
+        "legality_std": 0.0,
+        "convergence_std": 0.0032131721086801446
+      },
+      {
+        "perturbation_pct": 50,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.051885,
+        "legality_std": 0.0,
+        "convergence_std": 0.0035368453457848567
+      },
+      {
+        "perturbation_pct": 60,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.043405,
+        "legality_std": 0.0,
+        "convergence_std": 0.0036267719807012953
+      },
+      {
+        "perturbation_pct": 70,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.03411499999999999,
+        "legality_std": 0.0,
+        "convergence_std": 0.0034371899860205567
+      },
+      {
+        "perturbation_pct": 80,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.0246,
+        "legality_std": 0.0,
+        "convergence_std": 0.0031772629730634507
+      },
+      {
+        "perturbation_pct": 90,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.015585,
+        "legality_std": 0.0,
+        "convergence_std": 0.002626837452146592
+      },
+      {
+        "perturbation_pct": 100,
+        "mean_legality": 1.0,
+        "mean_convergence": 0.00686,
+        "legality_std": 0.0,
+        "convergence_std": 0.0014301748144894737
+      }
+    ],
+    "half_life_legality": ">100%",
+    "half_life_convergence": 50,
+    "total_degradation_legality": 0.0,
+    "total_degradation_convergence": 0.09114000000000003,
+    "verdict": "SYNTAX_MARGINAL",
+    "interpretation": "Full perturbation causes <10% degradation. Syntax has MARGINAL impact."
+  },
+  "test5": {
+    "test_name": "SYNTHETIC_CONTROL",
+    "n_synthetic_folios": 50,
+    "n_real_folios": 83,
+    "n_clusters": 8,
+    "real_within_cluster_variance": 0.005491282236860366,
+    "synthetic_within_cluster_variance": 2.3075353080650795e-05,
+    "variance_ratio": 237.97175357047644,
+    "verdict": "FAMILIES_WEAKLY_STRUCTURED",
+    "interpretation": "Real families have higher variance but within tolerance. Structure is WEAK."
+  },
+  "final_verdict": {
+    "verdict": "H1_SUPPORTED",
+    "interpretation": "Family syntax has LIMITED, non-essential influence. Families are emergent patterns with weak structural basis.",
+    "h0_signals": 1,
+    "h1_signals": 2,
+    "h2_signals": 1
+  }
+}

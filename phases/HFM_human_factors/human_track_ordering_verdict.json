@@ -1,0 +1,38 @@
+{
+  "final_verdict": {
+    "verdict": "PARTIALLY_STRUCTURED",
+    "explanation": "Human-track ordering shows PARTIAL alignment with risk and program role",
+    "signal_count": 2,
+    "weak_count": 0,
+    "null_count": 2,
+    "test_verdicts": {
+      "test_1": "SIGNAL: Non-random risk ordering with monotonic gradient",
+      "test_2": "NULL: No boundary clustering detected",
+      "test_3": "INSUFFICIENT DATA: All programs are Currier B",
+      "test_4": "SIGNAL: Risk-aware local ordering with buffering",
+      "test_5": "NULL: Restart programs randomly placed"
+    }
+  },
+  "test_results_summary": {
+    "test_1": {
+      "verdict": "SIGNAL: Non-random risk ordering with monotonic gradient",
+      "test_name": "Order vs Risk Gradient"
+    },
+    "test_2": {
+      "verdict": "NULL: No boundary clustering detected",
+      "test_name": "Boundary Clustering"
+    },
+    "test_3": {
+      "verdict": "INSUFFICIENT DATA: All programs are Currier B",
+      "test_name": "Currier Role Asymmetry"
+    },
+    "test_4": {
+      "verdict": "SIGNAL: Risk-aware local ordering with buffering",
+      "test_name": "Local Neighborhood Safety"
+    },
+    "test_5": {
+      "verdict": "NULL: Restart programs randomly placed",
+      "test_name": "Restart Program Placement"
+    }
+  }
+}

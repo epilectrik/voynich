@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "test": "ZONAL_ZIPF_ANALYSIS",
+    "timestamp": "2026-01-01T07:10:44.232838"
+  },
+  "baseline": {
+    "full_corpus_zipf": -0.73,
+    "reference": {
+      "natural_language": "-1.0 to -1.2",
+      "control_systems": "typically flatter (closer to 0)",
+      "random": "~0"
+    }
+  },
+  "currier_a": {
+    "unique_tokens": 226,
+    "total_tokens": 43876,
+    "zipf_exponent": -0.8529596522922774
+  },
+  "currier_b": {
+    "unique_tokens": 227,
+    "total_tokens": 78360,
+    "zipf_exponent": -0.7250391445461929
+  },
+  "ambiguous_tokens": {
+    "count": 20,
+    "zipf_exponent": -0.8085105379153467
+  },
+  "executable_tokens": {
+    "count": 10,
+    "zipf_exponent": -0.6467726290515574
+  },
+  "kernel_tokens": {
+    "count": 6,
+    "zipf_exponent": -0.8281729140027583
+  },
+  "non_kernel_tokens": {
+    "count": 4,
+    "zipf_exponent": -0.5619646871246399
+  },
+  "zonal_variance": {
+    "exponents": {
+      "currier_a": -0.8529596522922774,
+      "currier_b": -0.7250391445461929,
+      "ambiguous": -0.8085105379153467,
+      "executable": -0.6467726290515574
+    },
+    "variance": 0.006256546296629387,
+    "range": 0.20618702324072002
+  },
+  "VERDICT": "MODERATE_ZONAL_DIFFERENTIATION"
+}

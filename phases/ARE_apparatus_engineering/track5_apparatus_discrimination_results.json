@@ -1,0 +1,103 @@
+{
+  "voynich_signature": {
+    "recirculation": true,
+    "operator_intervention": "SUSTAINED_ATTENTION",
+    "hazard_profile": [
+      "COMPOSITION_JUMP",
+      "PHASE_ORDERING",
+      "RATE_MISMATCH"
+    ],
+    "dominant_hazard": "COMPOSITION_JUMP",
+    "cycle_structure": "CYCLIC"
+  },
+  "apparatus_classes": {
+    "CLASS_A": {
+      "recirculation": false,
+      "operator_intervention": "EPISODIC",
+      "hazard_profile": [
+        "ENERGY_OVERSHOOT"
+      ],
+      "dominant_hazard": "ENERGY_OVERSHOOT",
+      "cycle_structure": "LINEAR"
+    },
+    "CLASS_B": {
+      "recirculation": false,
+      "operator_intervention": "CONTINUOUS",
+      "hazard_profile": [
+        "CONTAINMENT_TIMING",
+        "ENERGY_OVERSHOOT"
+      ],
+      "dominant_hazard": "CONTAINMENT_TIMING",
+      "cycle_structure": "LINEAR"
+    },
+    "CLASS_C": {
+      "recirculation": false,
+      "operator_intervention": "EPISODIC",
+      "hazard_profile": [
+        "COMPOSITION_JUMP"
+      ],
+      "dominant_hazard": "COMPOSITION_JUMP",
+      "cycle_structure": "LINEAR"
+    },
+    "CLASS_D": {
+      "recirculation": true,
+      "operator_intervention": "SUSTAINED_ATTENTION",
+      "hazard_profile": [
+        "COMPOSITION_JUMP",
+        "PHASE_ORDERING",
+        "RATE_MISMATCH"
+      ],
+      "dominant_hazard": "COMPOSITION_JUMP",
+      "cycle_structure": "CYCLIC"
+    }
+  },
+  "compatibility_scores": {
+    "CLASS_A": {
+      "score": 0,
+      "total": 5,
+      "compatibility": 0.0,
+      "matches": []
+    },
+    "CLASS_B": {
+      "score": 0,
+      "total": 5,
+      "compatibility": 0.0,
+      "matches": []
+    },
+    "CLASS_C": {
+      "score": 1,
+      "total": 5,
+      "compatibility": 0.2,
+      "matches": [
+        "dominant_hazard"
+      ]
+    },
+    "CLASS_D": {
+      "score": 5,
+      "total": 5,
+      "compatibility": 1.0,
+      "matches": [
+        "recirculation",
+        "intervention",
+        "hazard_profile",
+        "dominant_hazard",
+        "cycle_structure"
+      ]
+    }
+  },
+  "falsification_attempts": [
+    {
+      "test": "Can CLASS_D be eliminated by any observed feature?",
+      "result": "NO",
+      "class_d_score": 1.0,
+      "max_alternative_score": 0.2
+    },
+    {
+      "test": "Does any alternative match better on any dimension?",
+      "result": "NO",
+      "best_match": "CLASS_D",
+      "best_score": 1.0
+    }
+  ],
+  "verdict": "PELICAN_UNIQUE"
+}

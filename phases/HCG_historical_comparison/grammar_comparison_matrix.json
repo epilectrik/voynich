@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "test": "Grammar Comparison",
+    "timestamp": "2025-12-31T23:32:57.761722"
+  },
+  "comparisons": {
+    "1_vs_2": {
+      "shared_transitions": 103,
+      "only_in_a": 5,
+      "only_in_b": 156,
+      "jaccard": 0.39015151515151514,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "1_vs_3": {
+      "shared_transitions": 95,
+      "only_in_a": 13,
+      "only_in_b": 57,
+      "jaccard": 0.5757575757575758,
+      "kernel_overlap": [
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "1_vs_4": {
+      "shared_transitions": 95,
+      "only_in_a": 13,
+      "only_in_b": 70,
+      "jaccard": 0.5337078651685393,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "1_vs_5": {
+      "shared_transitions": 94,
+      "only_in_a": 14,
+      "only_in_b": 43,
+      "jaccard": 0.6225165562913907,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "1_vs_6": {
+      "shared_transitions": 63,
+      "only_in_a": 45,
+      "only_in_b": 12,
+      "jaccard": 0.525,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "1_vs_7": {
+      "shared_transitions": 71,
+      "only_in_a": 37,
+      "only_in_b": 16,
+      "jaccard": 0.5725806451612904,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "1_vs_8": {
+      "shared_transitions": 83,
+      "only_in_a": 25,
+      "only_in_b": 26,
+      "jaccard": 0.6194029850746269,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "2_vs_3": {
+      "shared_transitions": 148,
+      "only_in_a": 111,
+      "only_in_b": 4,
+      "jaccard": 0.5627376425855514,
+      "kernel_overlap": [
+        "h",
+        "e",
+        "o",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "2_vs_4": {
+      "shared_transitions": 160,
+      "only_in_a": 99,
+      "only_in_b": 5,
+      "jaccard": 0.6060606060606061,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "o",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "2_vs_5": {
+      "shared_transitions": 132,
+      "only_in_a": 127,
+      "only_in_b": 5,
+      "jaccard": 0.5,
+      "kernel_overlap": [
+        "d",
+        "o",
+        "h",
+        "e",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "2_vs_6": {
+      "shared_transitions": 75,
+      "only_in_a": 184,
+      "only_in_b": 0,
+      "jaccard": 0.28957528957528955,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "2_vs_7": {
+      "shared_transitions": 86,
+      "only_in_a": 173,
+      "only_in_b": 1,
+      "jaccard": 0.33076923076923076,
+      "kernel_overlap": [
+        "d",
+        "o",
+        "h",
+        "e",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "2_vs_8": {
+      "shared_transitions": 107,
+      "only_in_a": 152,
+      "only_in_b": 2,
+      "jaccard": 0.4099616858237548,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "3_vs_4": {
+      "shared_transitions": 125,
+      "only_in_a": 27,
+      "only_in_b": 40,
+      "jaccard": 0.6510416666666666,
+      "kernel_overlap": [
+        "h",
+        "a",
+        "o",
+        "i"
+      ],
+      "is_contradictory": false
+    },
+    "3_vs_5": {
+      "shared_transitions": 118,
+      "only_in_a": 34,
+      "only_in_b": 19,
+      "jaccard": 0.6900584795321637,
+      "kernel_overlap": [
+        "h",
+        "e",
+        "o",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "3_vs_6": {
+      "shared_transitions": 71,
+      "only_in_a": 81,
+      "only_in_b": 4,
+      "jaccard": 0.4551282051282051,
+      "kernel_overlap": [
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "3_vs_7": {
+      "shared_transitions": 81,
+      "only_in_a": 71,
+      "only_in_b": 6,
+      "jaccard": 0.5126582278481012,
+      "kernel_overlap": [
+        "h",
+        "e",
+        "o",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "3_vs_8": {
+      "shared_transitions": 97,
+      "only_in_a": 55,
+      "only_in_b": 12,
+      "jaccard": 0.5914634146341463,
+      "kernel_overlap": [
+        "h",
+        "e",
+        "o",
+        "i"
+      ],
+      "is_contradictory": false
+    },
+    "4_vs_5": {
+      "shared_transitions": 120,
+      "only_in_a": 45,
+      "only_in_b": 17,
+      "jaccard": 0.6593406593406593,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "o",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "4_vs_6": {
+      "shared_transitions": 73,
+      "only_in_a": 92,
+      "only_in_b": 2,
+      "jaccard": 0.437125748502994,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "4_vs_7": {
+      "shared_transitions": 80,
+      "only_in_a": 85,
+      "only_in_b": 7,
+      "jaccard": 0.46511627906976744,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "o",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "4_vs_8": {
+      "shared_transitions": 98,
+      "only_in_a": 67,
+      "only_in_b": 11,
+      "jaccard": 0.5568181818181818,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "o",
+        "i"
+      ],
+      "is_contradictory": false
+    },
+    "5_vs_6": {
+      "shared_transitions": 70,
+      "only_in_a": 67,
+      "only_in_b": 5,
+      "jaccard": 0.49295774647887325,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "5_vs_7": {
+      "shared_transitions": 80,
+      "only_in_a": 57,
+      "only_in_b": 7,
+      "jaccard": 0.5555555555555556,
+      "kernel_overlap": [
+        "d",
+        "o",
+        "h",
+        "e",
+        "a"
+      ],
+      "is_contradictory": false
+    },
+    "5_vs_8": {
+      "shared_transitions": 90,
+      "only_in_a": 47,
+      "only_in_b": 19,
+      "jaccard": 0.5769230769230769,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "6_vs_7": {
+      "shared_transitions": 54,
+      "only_in_a": 21,
+      "only_in_b": 33,
+      "jaccard": 0.5,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "6_vs_8": {
+      "shared_transitions": 63,
+      "only_in_a": 12,
+      "only_in_b": 46,
+      "jaccard": 0.5206611570247934,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    },
+    "7_vs_8": {
+      "shared_transitions": 71,
+      "only_in_a": 16,
+      "only_in_b": 38,
+      "jaccard": 0.568,
+      "kernel_overlap": [
+        "d",
+        "h",
+        "e",
+        "o"
+      ],
+      "is_contradictory": false
+    }
+  },
+  "total_contradictions": 0
+}

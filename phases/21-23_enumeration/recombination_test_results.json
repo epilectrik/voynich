@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "test": "RECOMBINATION_FREEDOM",
+    "timestamp": "2026-01-01T07:34:15.352288",
+    "definition_cores_tested": 15,
+    "frequent_tokens_tested": 1353
+  },
+  "per_token_results": [
+    {
+      "token": "sy",
+      "original_context_diversity": 70,
+      "total_occurrences": 108,
+      "unique_predecessors": 46,
+      "unique_successors": 55,
+      "new_legal_contexts_found": 142,
+      "is_definition_core": true
+    },
+    {
+      "token": "tcho",
+      "original_context_diversity": 14,
+      "total_occurrences": 21,
+      "unique_predecessors": 13,
+      "unique_successors": 12,
+      "new_legal_contexts_found": 146,
+      "is_definition_core": true
+    },
+    {
+      "token": "ksh",
+      "original_context_diversity": 1,
+      "total_occurrences": 3,
+      "unique_predecessors": 1,
+      "unique_successors": 1,
+      "new_legal_contexts_found": 146,
+      "is_definition_core": true
+    },
+    {
+      "token": "daii",
+      "original_context_diversity": 1,
+      "total_occurrences": 1,
+      "unique_predecessors": 1,
+      "unique_successors": 1,
+      "new_legal_contexts_found": 146,
+      "is_definition_core": true
+    },
+    {
+      "token": "otch",
+      "original_context_diversity": 11,
+      "total_occurrences": 11,
+      "unique_predecessors": 8,
+      "unique_successors": 9,
+      "new_legal_contexts_found": 146,
+      "is_definition_core": true
+    }
+  ],
+  "summary": {
+    "recombination_rate": 0.585956416464891,
+    "total_attempts": 1239,
+    "successful_recombinations": 726,
+    "avg_a_text_context_diversity": 57.26,
+    "avg_b_text_context_diversity": 70.46315789473684,
+    "a_vs_b_diversity_ratio": 0.8126232446967434,
+    "VERDICT": "DSL_SIGNAL"
+  }
+}

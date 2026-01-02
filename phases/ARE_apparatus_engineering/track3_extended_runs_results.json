@@ -1,0 +1,113 @@
+{
+  "extended_folios": [
+    "f76r",
+    "f83v",
+    "f105v",
+    "f111r",
+    "f111v",
+    "f115v"
+  ],
+  "extended_profiles": {
+    "f76r": {
+      "hazard_density": 0.698,
+      "kernel_contact_ratio": 0.713,
+      "link_density": 0.287,
+      "cycle_count": 253,
+      "total_length": 2222
+    },
+    "f83v": {
+      "hazard_density": 0.771,
+      "kernel_contact_ratio": 0.796,
+      "link_density": 0.204,
+      "cycle_count": 126,
+      "total_length": 1021
+    },
+    "f105v": {
+      "hazard_density": 0.422,
+      "kernel_contact_ratio": 0.464,
+      "link_density": 0.536,
+      "cycle_count": 254,
+      "total_length": 1169
+    },
+    "f111r": {
+      "hazard_density": 0.583,
+      "kernel_contact_ratio": 0.61,
+      "link_density": 0.39,
+      "cycle_count": 156,
+      "total_length": 1800
+    },
+    "f111v": {
+      "hazard_density": 0.64,
+      "kernel_contact_ratio": 0.655,
+      "link_density": 0.345,
+      "cycle_count": 220,
+      "total_length": 2199
+    },
+    "f115v": {
+      "hazard_density": 0.501,
+      "kernel_contact_ratio": 0.514,
+      "link_density": 0.486,
+      "cycle_count": 142,
+      "total_length": 817
+    }
+  },
+  "baseline_comparison": {
+    "hazard_density": {
+      "extended_mean": 0.6025,
+      "baseline_mean": 0.59,
+      "diff_percent": 2.12
+    },
+    "kernel_contact_ratio": {
+      "extended_mean": 0.6253,
+      "baseline_mean": 0.62,
+      "diff_percent": 0.86
+    },
+    "link_density": {
+      "extended_mean": 0.3747,
+      "baseline_mean": 0.3838,
+      "diff_percent": -2.39
+    },
+    "cycle_count": {
+      "extended_mean": 191.8333,
+      "baseline_mean": 109.0,
+      "diff_percent": 75.99
+    },
+    "total_length": {
+      "extended_mean": 1538.0,
+      "baseline_mean": 928.0,
+      "diff_percent": 65.73
+    }
+  },
+  "envelope_analysis": {
+    "coverage_with_extended": {
+      "hazard_density": [
+        0.406,
+        0.771
+      ],
+      "kernel_contact_ratio": [
+        0.424,
+        0.796
+      ],
+      "link_density": [
+        0.204,
+        0.576
+      ]
+    },
+    "coverage_without_extended": {
+      "hazard_density": [
+        0.406,
+        0.719
+      ],
+      "kernel_contact_ratio": [
+        0.424,
+        0.752
+      ],
+      "link_density": [
+        0.248,
+        0.576
+      ]
+    },
+    "envelope_gap_fraction": 0.1262
+  },
+  "verdict": "STRUCTURALLY_NECESSARY"
+}

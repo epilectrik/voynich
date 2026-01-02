@@ -1,0 +1,96 @@
+{
+  "test_name": "Decoy Historical Motif Matching",
+  "generated": "2026-01-01",
+  "purpose": "Test whether non-Voynich abstract systems match 40-day traditions equally well",
+
+  "critical_finding": {
+    "the_40_day_motif_is_generic": true,
+    "sources_of_40_day_tradition": [
+      "Lent (Christian fasting)",
+      "Moses on Mount Sinai (Torah revelation)",
+      "Jesus in wilderness (temptation)",
+      "Noah's flood (rain duration)",
+      "Quarantine (quaranta giorni = 40 days, Venice 1448)",
+      "Mourning period (Orthodox, Islamic, Filipino)",
+      "Widow's inheritance waiting period (16th c. British law)",
+      "Israelites in desert (40 years = 40 metaphor)"
+    ],
+    "implication": "40 days is a CULTURALLY UNIVERSAL number in medieval Europe, not specific to any domain"
+  },
+
+  "decoy_alignments": {
+    "DECOY_A_mechanical_bearing": {
+      "40_day_match_found": false,
+      "alternative_duration_traditions": "none found",
+      "strength_of_numeric_coincidence": "NONE",
+      "ease_of_narrative_matching": "LOW",
+      "sources_that_fit": 0,
+      "verdict": "NO_MATCH"
+    },
+
+    "DECOY_B_egg_incubation": {
+      "40_day_match_found": false,
+      "actual_incubation_periods": "21 days (chicken), 30-35 days (geese), up to 85 days (albatross)",
+      "strength_of_numeric_coincidence": "NONE",
+      "ease_of_narrative_matching": "LOW",
+      "sources_that_fit": 0,
+      "note": "Lent prevented eating eggs for 40 days, but this is consumption restriction, not process duration",
+      "verdict": "NO_MATCH"
+    },
+
+    "DECOY_C_monastic_liturgy": {
+      "40_day_match_found": true,
+      "matching_tradition": "Lent - 40 days of fasting and prayer",
+      "strength_of_numeric_coincidence": "EXACT",
+      "ease_of_narrative_matching": "HIGH",
+      "sources_that_fit": 5,
+      "additional_matches": ["Great Lent (Orthodox)", "Advent periods", "Quarantine itself"],
+      "verdict": "STRONG_MATCH"
+    },
+
+    "DECOY_D_cheese_aging": {
+      "40_day_match_found": false,
+      "actual_aging_periods": "weeks to years, 60-day FDA rule for raw milk",
+      "strength_of_numeric_coincidence": "NONE",
+      "ease_of_narrative_matching": "LOW",
+      "sources_that_fit": 0,
+      "verdict": "NO_MATCH"
+    },
+
+    "DECOY_E_textile_dyeing": {
+      "40_day_match_found": false,
+      "actual_periods": "days to weeks, varies by depth",
+      "strength_of_numeric_coincidence": "NONE",
+      "ease_of_narrative_matching": "LOW",
+      "sources_that_fit": 0,
+      "verdict": "NO_MATCH"
+    }
+  },
+
+  "summary": {
+    "decoys_with_40_day_match": 1,
+    "decoys_without_match": 4,
+    "voynich_status": "MATCHES",
+    "genericity_assessment": "PARTIAL",
+
+    "key_observation": "Only DECOY_C (religious observance) matches 40-day tradition. Industrial/biological decoys do NOT match. This suggests 40-day is domain-specific to RELIGIOUS or RELIGIOUS-DERIVED contexts (quarantine, alchemy).",
+
+    "counter_observation": "However, alchemy itself adopted biblical symbolism. The 40-day philosophical month may simply be alchemists using the biblical 40 because it was culturally authoritative, NOT because 40 days was practically optimal."
+  },
+
+  "implications_for_voynich": {
+    "the_40_day_match_survives_but_is_WEAKENED": true,
+    "reasons": [
+      "40 days is a GENERIC medieval number with biblical authority",
+      "Alchemists may have used 40 days BECAUSE of biblical resonance, not practical necessity",
+      "The match proves Voynich is consistent with medieval culture, not specifically with alchemy",
+      "A prayer book with 40 folios would match equally well"
+    ],
+
+    "what_would_strengthen_the_claim": [
+      "If the 40 folios had INTERNAL structure matching alchemical 40-day descriptions",
+      "If the 4-cycle structure is NOT found in religious 40-day observances",
+      "If tempo/energy profiles distinguish alchemy from other 40-day systems"
+    ]
+  }
+}

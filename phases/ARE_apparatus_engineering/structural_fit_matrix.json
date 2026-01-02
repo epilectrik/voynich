@@ -1,0 +1,55 @@
+{
+  "apparatus_class": "CLASS_D (Circulatory Reflux)",
+  "compatibility": 1.0,
+  "feature_alignment": {
+    "recirculation": {
+      "voynich": true,
+      "apparatus": true,
+      "match": true
+    },
+    "operator_intervention": {
+      "voynich": "SUSTAINED_ATTENTION",
+      "apparatus": "SUSTAINED_ATTENTION",
+      "match": true
+    },
+    "hazard_profile": {
+      "voynich": [
+        "COMPOSITION_JUMP",
+        "PHASE_ORDERING",
+        "RATE_MISMATCH"
+      ],
+      "apparatus": [
+        "COMPOSITION_JUMP",
+        "PHASE_ORDERING",
+        "RATE_MISMATCH"
+      ],
+      "match": true
+    },
+    "cycle_structure": {
+      "voynich": "CYCLIC",
+      "apparatus": "CYCLIC",
+      "match": true
+    }
+  },
+  "structural_supports": {
+    "prefix_suffix_coordinates": {
+      "function": "VARIANT_NAVIGATION + RECOVERY_SUPPORT",
+      "necessity": "ARBITRARY"
+    },
+    "section_boundaries": {
+      "function": "REGIME_DEMARCATION",
+      "f_ratio": 0.372,
+      "distinct": "ARBITRARY"
+    },
+    "extended_runs": {
+      "function": "ENVELOPE_EXTENSION",
+      "gap_fraction": 0.1262,
+      "necessary": "STRUCTURALLY_NECESSARY"
+    },
+    "variants": {
+      "function": "OPERATOR_TUNING_SPACE",
+      "coverage": 0.4333,
+      "type": "DISCRETE_ALTERNATIVES"
+    }
+  }
+}
