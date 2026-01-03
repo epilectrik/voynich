@@ -43,3 +43,13 @@ Thumbs.db
 # Windows reserved names
 nul
 NUL
+
+# VEE application (separate project)
+vee/
+
+# Large scan files (download separately)
+data/scans/
+temp_images/
+
+# Misc screenshots
+*.PNG
