@@ -1,0 +1,53 @@
+{
+  "ht_by_position": {
+    "initial": {
+      "dc": 74,
+      "pc": 116,
+      "sa": 149,
+      "yk": 74,
+      "yt": 63,
+      "ta": 37,
+      "so": 136,
+      "do": 30,
+      "op": 2,
+      "ka": 6
+    },
+    "final": {
+      "sa": 36,
+      "yt": 23,
+      "yk": 22,
+      "ka": 28,
+      "ta": 14,
+      "do": 6,
+      "op": 34,
+      "so": 8,
+      "pc": 6,
+      "dc": 1
+    },
+    "mid": {
+      "yk": 207,
+      "yt": 176,
+      "sa": 141,
+      "pc": 75,
+      "op": 203,
+      "ka": 192,
+      "do": 90,
+      "dc": 30,
+      "ta": 86,
+      "so": 47
+    }
+  },
+  "section_cramers_v": 0.25115706168038476,
+  "early_contexts": {
+    "line_init": 148,
+    "line_final": 51,
+    "kernel_before": 535,
+    "total": 562
+  },
+  "late_contexts": {
+    "line_init": 37,
+    "line_final": 14,
+    "kernel_before": 133,
+    "total": 137
+  }
+}

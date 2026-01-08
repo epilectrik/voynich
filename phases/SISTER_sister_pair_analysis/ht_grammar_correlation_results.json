@@ -1,0 +1,10 @@
+{
+  "n_observations": 1316,
+  "chi_square": 214.70108384048515,
+  "cramers_v": 0.14280525211084227,
+  "p_chi": 8.881784197001252e-16,
+  "p_permutation": 0.000999000999000999,
+  "early_vs_late_v": 0.3194467708821806,
+  "ta_after_ch_enrichment": 1.9403049482163404,
+  "tier_2_criteria_met": true
+}

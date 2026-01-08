@@ -1,0 +1,71 @@
+{
+  "restart_folios": [
+    "f50v",
+    "f57r",
+    "f82v"
+  ],
+  "restart_profiles": {
+    "f50v": {
+      "token_count": 98,
+      "unique_tokens": 84,
+      "ttr": 0.8571428571428571,
+      "hazard_density": 0.030612244897959183,
+      "escape_density": 0.11224489795918367,
+      "kernel_contact": 0.9795918367346939,
+      "ch_preference": 0.7058823529411765,
+      "ok_preference": 0.7272727272727273,
+      "link_density": 0.030612244897959183,
+      "max_safe_run": 38,
+      "forgiveness": 1.5763265306122447,
+      "prefix_diversity": 7,
+      "bigram_hapax_rate": 1.0,
+      "section": "H",
+      "line_count": 11
+    },
+    "f57r": {
+      "token_count": 87,
+      "unique_tokens": 77,
+      "ttr": 0.8850574712643678,
+      "hazard_density": 0.08045977011494253,
+      "escape_density": 0.06896551724137931,
+      "kernel_contact": 1.0,
+      "ch_preference": 0.6451612903225806,
+      "ok_preference": 0.8571428571428571,
+      "link_density": 0.022988505747126436,
+      "max_safe_run": 26,
+      "forgiveness": 0.40505747126436786,
+      "prefix_diversity": 8,
+      "bigram_hapax_rate": 1.0,
+      "section": "H",
+      "line_count": 11
+    },
+    "f82v": {
+      "token_count": 313,
+      "unique_tokens": 181,
+      "ttr": 0.5782747603833865,
+      "hazard_density": 0.10862619808306709,
+      "escape_density": 0.30990415335463256,
+      "kernel_contact": 1.0,
+      "ch_preference": 0.5285714285714286,
+      "ok_preference": 0.4411764705882353,
+      "link_density": 0.019169329073482427,
+      "max_safe_run": 27,
+      "forgiveness": 2.5527795527156547,
+      "prefix_diversity": 9,
+      "bigram_hapax_rate": 0.9769736842105263,
+      "section": "B",
+      "line_count": 34
+    }
+  },
+  "population_means": {
+    "token_count": 282.8658536585366,
+    "hazard_density": 0.09300484069818875,
+    "escape_density": 0.15569736356162572,
+    "link_density": 0.03408362490536209,
+    "ch_preference": 0.6389121435429602,
+    "forgiveness": 1.33473010668315,
+    "ttr": 0.6907245960659399,
+    "bigram_hapax_rate": 0.9876786278523204
+  },
+  "n_programs": 82
+}
