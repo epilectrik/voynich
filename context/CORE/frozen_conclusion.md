@@ -41,7 +41,9 @@ Three operators (k, h, e) form the control core:
 The system operates within tight bounds. 17 transitions are absolutely forbidden—crossing these boundaries causes failure.
 
 ### Single Shared Grammar
-All 83 programs use the same 49 instruction classes. There are no dialects, variants, or exceptions. The grammar is universal.
+All 83 Currier B programs use the same 49 instruction classes. There are no dialects, variants, or exceptions. The grammar is universal within B.
+
+> **Note:** This grammar is B-specific. Currier A uses a different formal system (non-sequential categorical registry). What IS shared across A, B, and AZC is the morphological **type system** (prefix/suffix structure, compositional rules)—not the grammar itself. See [../ARCHITECTURE/cross_system.md](../ARCHITECTURE/cross_system.md).
 
 ---
 
