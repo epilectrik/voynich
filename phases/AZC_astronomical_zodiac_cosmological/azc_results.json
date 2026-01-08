@@ -1,0 +1,1048 @@
+{
+  "inventory": {
+    "total_tokens": 9401,
+    "unique_types": 2681,
+    "ttr": 0.2851824274013403,
+    "num_folios": 30,
+    "num_lines": 442,
+    "tokens_per_folio_mean": 313.3666666666667,
+    "tokens_per_line_mean": 21.26923076923077,
+    "tokens_per_line_median": 8
+  },
+  "inventory_comparison": {
+    "a": {
+      "total_tokens": 37214,
+      "unique_types": 5101,
+      "ttr": 0.13707206965120652,
+      "num_folios": 114,
+      "num_lines": 1580,
+      "tokens_per_folio_mean": 326.43859649122805,
+      "tokens_per_line_mean": 23.553164556962024,
+      "tokens_per_line_median": 22
+    },
+    "b": {
+      "total_tokens": 75620,
+      "unique_types": 7264,
+      "ttr": 0.09605924358635282,
+      "num_folios": 83,
+      "num_lines": 2460,
+      "tokens_per_folio_mean": 911.0843373493976,
+      "tokens_per_line_mean": 30.739837398373982,
+      "tokens_per_line_median": 31
+    }
+  },
+  "b_grammar_test": {
+    "b_vocabulary_coverage": 0.696734389958515,
+    "azc_tokens_in_b": 6550,
+    "azc_tokens_total": 9401,
+    "link_tokens_found": [
+      "chol",
+      "ar",
+      "ol",
+      "aiin",
+      "chor",
+      "shol",
+      "daiin",
+      "al",
+      "shor",
+      "or"
+    ],
+    "link_density": 0.07648122540155303,
+    "b_coverage_threshold": 0.7,
+    "coverage_pass": false
+  },
+  "a_pattern_test": {
+    "marker_prefix_rate_azc": 0.5695138815019679,
+    "marker_prefix_rate_a": 0.6299242220669641,
+    "marker_prefix_counts_azc": {
+      "ch": 1354,
+      "qo": 252,
+      "sh": 553,
+      "da": 594,
+      "ok": 1076,
+      "ot": 1315,
+      "ct": 49,
+      "ol": 161
+    },
+    "prefix_similarity": 0.9040990353303572,
+    "a_vocabulary_coverage": 0.6542920965854696,
+    "tokens_per_line_median_azc": 8,
+    "tokens_per_line_median_a": 22,
+    "line_atomic_similar": false,
+    "repetition_rate_azc": 0.06435485586639719,
+    "repetition_rate_a": 0.020180577202128232
+  },
+  "transitions": {
+    "total_bigrams": 9400,
+    "unique_bigrams": 6348,
+    "bigram_reuse_rate": 0.3246808510638298,
+    "top_bigrams": [
+      [
+        "r->*",
+        14
+      ],
+      [
+        "okal->okal",
+        12
+      ],
+      [
+        "o->l",
+        11
+      ],
+      [
+        "okaly->okaly",
+        10
+      ],
+      [
+        "otody->otody",
+        9
+      ],
+      [
+        "*->t",
+        8
+      ],
+      [
+        "dal->daiin",
+        8
+      ],
+      [
+        "al->aiin",
+        8
+      ],
+      [
+        "okeody->okeody",
+        8
+      ],
+      [
+        "ar->al",
+        8
+      ],
+      [
+        "otaly->otaly",
+        8
+      ],
+      [
+        "oteos->aiin",
+        8
+      ],
+      [
+        "***->***",
+        8
+      ],
+      [
+        "d->r",
+        7
+      ],
+      [
+        "*->y",
+        7
+      ],
+      [
+        "s->aiin",
+        7
+      ],
+      [
+        "dal->dy",
+        7
+      ],
+      [
+        "ar->aly",
+        7
+      ],
+      [
+        "okar->ar",
+        7
+      ],
+      [
+        "qokal->chol",
+        7
+      ]
+    ]
+  },
+  "vocabulary_overlap": {
+    "azc_unique_types": 2681,
+    "azc_only_types": 1529,
+    "azc_and_a_only_types": 181,
+    "azc_and_b_only_types": 336,
+    "azc_and_both_types": 635,
+    "azc_only_tokens": 2392,
+    "azc_and_a_only_tokens": 459,
+    "azc_and_b_only_tokens": 858,
+    "azc_and_both_tokens": 5692,
+    "azc_only_pct": 0.25444101691309434,
+    "azc_and_a_only_pct": 0.048824593128390596,
+    "azc_and_b_only_pct": 0.09126688650143602,
+    "azc_and_both_pct": 0.605467503457079,
+    "sample_azc_only": [
+      "dkalr",
+      "ot**o*",
+      "ytas",
+      "cheteeeor",
+      "oteool",
+      "sholshdy",
+      "oloesdr",
+      "oiiny",
+      "yshesos",
+      "oeeeodaiin",
+      "oeaiin",
+      "ofchsody",
+      "qky",
+      "ota*kaly",
+      "okeoaly",
+      "yoeteey",
+      "alinralor",
+      "cheotorchey",
+      "okolmom",
+      "okeeees",
+      "olkalaiin",
+      "dairkal",
+      "s**r",
+      "odamy",
+      "shokeedy",
+      "opocphor",
+      "ykalairal",
+      "okeeeodar",
+      "oteoeeyd*",
+      "chepchees"
+    ],
+    "sample_azc_and_a": [
+      "ockhol",
+      "chokaly",
+      "okeod",
+      "otald",
+      "okeeodaiin",
+      "tsheeor",
+      "*y",
+      "arom",
+      "ofchor",
+      "*chy",
+      "chepchey",
+      "seeey",
+      "ykchody",
+      "daj",
+      "okodar",
+      "cheotchy",
+      "tcheos",
+      "alos",
+      "alchy",
+      "eair",
+      "*o",
+      "yto",
+      "ykoly",
+      "*air",
+      "choteody",
+      "oka*",
+      "oteodal",
+      "ckho",
+      "okoly",
+      "ypchy"
+    ],
+    "sample_azc_and_b": [
+      "chek",
+      "dcheeos",
+      "shety",
+      "ykeedal",
+      "dalaiin",
+      "laly",
+      "keoly",
+      "alshy",
+      "chetedy",
+      "otaldal",
+      "kedy",
+      "shteody",
+      "oeeodaiin",
+      "sheees",
+      "teeor",
+      "epchy",
+      "eeol",
+      "ota*",
+      "araiin",
+      "chpar",
+      "chedaly",
+      "c",
+      "okolshy",
+      "qetal",
+      "echey",
+      "oleed",
+      "okeees",
+      "ykeear",
+      "chpor",
+      "okalam"
+    ]
+  },
+  "morphology": {
+    "azc": {
+      "prefix_distribution": {
+        "NONE": 0.3755983406020636,
+        "ch": 0.1440272311456228,
+        "ot": 0.13987873630464845,
+        "ok": 0.11445590894585682,
+        "da": 0.06318476757791724,
+        "sh": 0.058823529411764705,
+        "yk": 0.029358578874587808,
+        "qo": 0.02680565897244974,
+        "yt": 0.021487075842995425,
+        "ol": 0.01712583767684289,
+        "ct": 0.0052122114668652275,
+        "kch": 0.0021274332517817254,
+        "ko": 0.0019146899266035528
+      },
+      "suffix_distribution": {
+        "NONE": 0.277417296032337,
+        "y": 0.10286139772364641,
+        "dy": 0.09360706307839592,
+        "ar": 0.09073502818849058,
+        "al": 0.07754494202744389,
+        "aiin": 0.06488671417934262,
+        "ey": 0.059036272736942876,
+        "eey": 0.05180299968088501,
+        "ol": 0.04169769173492182,
+        "or": 0.03361344537815126,
+        "chy": 0.02850760557387512,
+        "eol": 0.017444952664610148,
+        "hy": 0.015743006063184767,
+        "edy": 0.012445484522923093,
+        "ain": 0.008722476332305074,
+        "eedy": 0.007871503031592383,
+        "shy": 0.006063184767577917,
+        "eal": 0.005956813104988831,
+        "iin": 0.0034038932028507603,
+        "in": 0.0006382299755345176
+      },
+      "prefix_coverage": 0.6244016593979365,
+      "suffix_coverage": 0.722582703967663,
+      "top_prefixes": [
+        [
+          "NONE",
+          3531
+        ],
+        [
+          "ch",
+          1354
+        ],
+        [
+          "ot",
+          1315
+        ],
+        [
+          "ok",
+          1076
+        ],
+        [
+          "da",
+          594
+        ],
+        [
+          "sh",
+          553
+        ],
+        [
+          "yk",
+          276
+        ],
+        [
+          "qo",
+          252
+        ],
+        [
+          "yt",
+          202
+        ],
+        [
+          "ol",
+          161
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "NONE",
+          2608
+        ],
+        [
+          "y",
+          967
+        ],
+        [
+          "dy",
+          880
+        ],
+        [
+          "ar",
+          853
+        ],
+        [
+          "al",
+          729
+        ],
+        [
+          "aiin",
+          610
+        ],
+        [
+          "ey",
+          555
+        ],
+        [
+          "eey",
+          487
+        ],
+        [
+          "ol",
+          392
+        ],
+        [
+          "or",
+          316
+        ]
+      ]
+    },
+    "comparison_a": {
+      "prefix_distribution": {
+        "NONE": 0.31243617993228356,
+        "ch": 0.19296501316708767,
+        "da": 0.09724834739614124,
+        "qo": 0.09268017412801634,
+        "sh": 0.08875691943892083,
+        "ok": 0.05119041221045843,
+        "ot": 0.0440694362336755,
+        "ct": 0.04009243832966088,
+        "ol": 0.02292148116300317,
+        "yk": 0.01913258451120546,
+        "yt": 0.01671413983984522,
+        "kch": 0.012038480141882087,
+        "ko": 0.009754393507819637
+      },
+      "suffix_distribution": {
+        "NONE": 0.19909173966786692,
+        "aiin": 0.11764389745794593,
+        "ol": 0.11167840060192401,
+        "or": 0.10420809372816682,
+        "y": 0.0761003923254689,
+        "dy": 0.06486806040737357,
+        "chy": 0.04995431826731875,
+        "ey": 0.04882571075401731,
+        "ar": 0.046514752512495296,
+        "al": 0.03294459074541839,
+        "hy": 0.032622131455903695,
+        "eey": 0.032487773418605904,
+        "eol": 0.029209437308539796,
+        "ain": 0.021631644004944377,
+        "shy": 0.01381200623421293,
+        "iin": 0.013247702477562209,
+        "eal": 0.0022572150266028912,
+        "edy": 0.0011286075133014456,
+        "in": 0.0009673778685440963,
+        "eedy": 0.000806148223786747
+      },
+      "prefix_coverage": 0.6875638200677164,
+      "suffix_coverage": 0.8009082603321331,
+      "top_prefixes": [
+        [
+          "NONE",
+          11627
+        ],
+        [
+          "ch",
+          7181
+        ],
+        [
+          "da",
+          3619
+        ],
+        [
+          "qo",
+          3449
+        ],
+        [
+          "sh",
+          3303
+        ],
+        [
+          "ok",
+          1905
+        ],
+        [
+          "ot",
+          1640
+        ],
+        [
+          "ct",
+          1492
+        ],
+        [
+          "ol",
+          853
+        ],
+        [
+          "yk",
+          712
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "NONE",
+          7409
+        ],
+        [
+          "aiin",
+          4378
+        ],
+        [
+          "ol",
+          4156
+        ],
+        [
+          "or",
+          3878
+        ],
+        [
+          "y",
+          2832
+        ],
+        [
+          "dy",
+          2414
+        ],
+        [
+          "chy",
+          1859
+        ],
+        [
+          "ey",
+          1817
+        ],
+        [
+          "ar",
+          1731
+        ],
+        [
+          "al",
+          1226
+        ]
+      ]
+    },
+    "comparison_b": {
+      "prefix_distribution": {
+        "NONE": 0.3292515207617033,
+        "qo": 0.1782993916953187,
+        "ch": 0.14260777572070882,
+        "sh": 0.08998942078815128,
+        "ok": 0.0635678391959799,
+        "ot": 0.06036762761174293,
+        "ol": 0.0565855593758265,
+        "da": 0.047381645067442475,
+        "yk": 0.012523142025919068,
+        "yt": 0.010552763819095477,
+        "kch": 0.00395398042845808,
+        "ct": 0.00282993916953187,
+        "ko": 0.002089394340121661
+      },
+      "suffix_distribution": {
+        "edy": 0.13009785770960064,
+        "NONE": 0.12330071409679978,
+        "aiin": 0.11142554879661465,
+        "ar": 0.07732081459931235,
+        "dy": 0.06581592171383233,
+        "ey": 0.058912985982544304,
+        "al": 0.05863528167151547,
+        "ol": 0.05838402539010844,
+        "y": 0.05685003967204443,
+        "eey": 0.05334567574715684,
+        "eedy": 0.0515604337476858,
+        "ain": 0.046098915630785504,
+        "or": 0.037212377677863,
+        "hy": 0.02531076434805607,
+        "eol": 0.017759851891034118,
+        "chy": 0.013475271092303624,
+        "iin": 0.006373975138852156,
+        "shy": 0.004403596932028564,
+        "eal": 0.0030811954509389053,
+        "in": 0.0006347527109230362
+      },
+      "prefix_coverage": 0.6707484792382967,
+      "suffix_coverage": 0.8766992859032002,
+      "top_prefixes": [
+        [
+          "NONE",
+          24898
+        ],
+        [
+          "qo",
+          13483
+        ],
+        [
+          "ch",
+          10784
+        ],
+        [
+          "sh",
+          6805
+        ],
+        [
+          "ok",
+          4807
+        ],
+        [
+          "ot",
+          4565
+        ],
+        [
+          "ol",
+          4279
+        ],
+        [
+          "da",
+          3583
+        ],
+        [
+          "yk",
+          947
+        ],
+        [
+          "yt",
+          798
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "edy",
+          9838
+        ],
+        [
+          "NONE",
+          9324
+        ],
+        [
+          "aiin",
+          8426
+        ],
+        [
+          "ar",
+          5847
+        ],
+        [
+          "dy",
+          4977
+        ],
+        [
+          "ey",
+          4455
+        ],
+        [
+          "al",
+          4434
+        ],
+        [
+          "ol",
+          4415
+        ],
+        [
+          "y",
+          4299
+        ],
+        [
+          "eey",
+          4034
+        ]
+      ]
+    }
+  },
+  "section_analysis": {
+    "C": {
+      "total_tokens": 3298,
+      "unique_types": 937,
+      "ttr": 0.28411158277744086,
+      "a_coverage": 0.728623408126137,
+      "b_coverage": 0.7559126743480897
+    },
+    "H": {
+      "total_tokens": 132,
+      "unique_types": 60,
+      "ttr": 0.45454545454545453,
+      "a_coverage": 0.6212121212121212,
+      "b_coverage": 0.7727272727272727
+    },
+    "A": {
+      "total_tokens": 2785,
+      "unique_types": 984,
+      "ttr": 0.3533213644524237,
+      "a_coverage": 0.6204667863554758,
+      "b_coverage": 0.6610412926391382
+    },
+    "Z": {
+      "total_tokens": 3184,
+      "unique_types": 1251,
+      "ttr": 0.39290201005025127,
+      "a_coverage": 0.6080402010050251,
+      "b_coverage": 0.6633165829145728
+    },
+    "S": {
+      "total_tokens": 2,
+      "unique_types": 2,
+      "ttr": 1.0,
+      "a_coverage": 1.0,
+      "b_coverage": 1.0
+    }
+  },
+  "line_structure": {
+    "total_lines": 442,
+    "line_length_mean": 21.26923076923077,
+    "line_length_median": 8,
+    "line_length_min": 2,
+    "line_length_max": 449,
+    "top_line_initials": [
+      [
+        "daiin",
+        7
+      ],
+      [
+        "okeey",
+        6
+      ],
+      [
+        "okeol",
+        5
+      ],
+      [
+        "ytal",
+        3
+      ],
+      [
+        "oteey",
+        3
+      ],
+      [
+        "ykeody",
+        3
+      ],
+      [
+        "otol",
+        3
+      ],
+      [
+        "yteody",
+        3
+      ],
+      [
+        "okeod",
+        3
+      ],
+      [
+        "okchy",
+        3
+      ],
+      [
+        "okeody",
+        3
+      ],
+      [
+        "otar",
+        3
+      ],
+      [
+        "okaly",
+        3
+      ],
+      [
+        "otal",
+        3
+      ],
+      [
+        "ycheo",
+        2
+      ]
+    ],
+    "top_line_finals": [
+      [
+        "dy",
+        13
+      ],
+      [
+        "ar",
+        7
+      ],
+      [
+        "oky",
+        5
+      ],
+      [
+        "sar",
+        4
+      ],
+      [
+        "aiin",
+        4
+      ],
+      [
+        "okeody",
+        4
+      ],
+      [
+        "okal",
+        4
+      ],
+      [
+        "okaly",
+        3
+      ],
+      [
+        "dar",
+        3
+      ],
+      [
+        "al",
+        3
+      ],
+      [
+        "dal",
+        3
+      ],
+      [
+        "am",
+        3
+      ],
+      [
+        "chcthy",
+        3
+      ],
+      [
+        "okeod",
+        3
+      ],
+      [
+        "aly",
+        3
+      ]
+    ],
+    "line_initial_concentration": 0.01583710407239819
+  },
+  "folio_analysis": {
+    "f57v": {
+      "section": "C",
+      "total_tokens": 470,
+      "unique_types": 124,
+      "a_coverage": 0.7638297872340426,
+      "b_coverage": 0.8106382978723404
+    },
+    "f65r": {
+      "section": "H",
+      "total_tokens": 6,
+      "unique_types": 3,
+      "a_coverage": 0.6666666666666666,
+      "b_coverage": 1.0
+    },
+    "f65v": {
+      "section": "H",
+      "total_tokens": 126,
+      "unique_types": 57,
+      "a_coverage": 0.6190476190476191,
+      "b_coverage": 0.7619047619047619
+    },
+    "f67r1": {
+      "section": "A",
+      "total_tokens": 420,
+      "unique_types": 198,
+      "a_coverage": 0.638095238095238,
+      "b_coverage": 0.7142857142857143
+    },
+    "f67r2": {
+      "section": "A",
+      "total_tokens": 612,
+      "unique_types": 235,
+      "a_coverage": 0.6045751633986928,
+      "b_coverage": 0.6437908496732027
+    },
+    "f67v2": {
+      "section": "C",
+      "total_tokens": 218,
+      "unique_types": 117,
+      "a_coverage": 0.5091743119266054,
+      "b_coverage": 0.5091743119266054
+    },
+    "f67v1": {
+      "section": "A",
+      "total_tokens": 219,
+      "unique_types": 129,
+      "a_coverage": 0.6210045662100456,
+      "b_coverage": 0.6301369863013698
+    },
+    "f68r1": {
+      "section": "A",
+      "total_tokens": 227,
+      "unique_types": 95,
+      "a_coverage": 0.5770925110132159,
+      "b_coverage": 0.6431718061674009
+    },
+    "f68r2": {
+      "section": "A",
+      "total_tokens": 316,
+      "unique_types": 129,
+      "a_coverage": 0.5664556962025317,
+      "b_coverage": 0.5253164556962026
+    },
+    "f68r3": {
+      "section": "A",
+      "total_tokens": 314,
+      "unique_types": 156,
+      "a_coverage": 0.6528662420382165,
+      "b_coverage": 0.6719745222929936
+    },
+    "f68v3": {
+      "section": "C",
+      "total_tokens": 531,
+      "unique_types": 231,
+      "a_coverage": 0.6685499058380414,
+      "b_coverage": 0.696798493408663
+    },
+    "f68v2": {
+      "section": "A",
+      "total_tokens": 393,
+      "unique_types": 135,
+      "a_coverage": 0.6335877862595419,
+      "b_coverage": 0.7099236641221374
+    },
+    "f68v1": {
+      "section": "A",
+      "total_tokens": 284,
+      "unique_types": 124,
+      "a_coverage": 0.6690140845070423,
+      "b_coverage": 0.7288732394366197
+    },
+    "f69r": {
+      "section": "C",
+      "total_tokens": 504,
+      "unique_types": 188,
+      "a_coverage": 0.7956349206349206,
+      "b_coverage": 0.7936507936507936
+    },
+    "f69v": {
+      "section": "C",
+      "total_tokens": 417,
+      "unique_types": 158,
+      "a_coverage": 0.762589928057554,
+      "b_coverage": 0.7817745803357314
+    },
+    "f70r1": {
+      "section": "C",
+      "total_tokens": 327,
+      "unique_types": 138,
+      "a_coverage": 0.7339449541284404,
+      "b_coverage": 0.7553516819571865
+    },
+    "f70r2": {
+      "section": "C",
+      "total_tokens": 831,
+      "unique_types": 264,
+      "a_coverage": 0.7448856799037304,
+      "b_coverage": 0.7918170878459687
+    },
+    "f70v2": {
+      "section": "Z",
+      "total_tokens": 524,
+      "unique_types": 185,
+      "a_coverage": 0.6679389312977099,
+      "b_coverage": 0.7290076335877863
+    },
+    "f70v1": {
+      "section": "Z",
+      "total_tokens": 227,
+      "unique_types": 106,
+      "a_coverage": 0.6079295154185022,
+      "b_coverage": 0.6299559471365639
+    },
+    "f71r": {
+      "section": "Z",
+      "total_tokens": 202,
+      "unique_types": 108,
+      "a_coverage": 0.6089108910891089,
+      "b_coverage": 0.6336633663366337
+    },
+    "f71v": {
+      "section": "Z",
+      "total_tokens": 239,
+      "unique_types": 117,
+      "a_coverage": 0.6317991631799164,
+      "b_coverage": 0.694560669456067
+    },
+    "f72r1": {
+      "section": "Z",
+      "total_tokens": 238,
+      "unique_types": 118,
+      "a_coverage": 0.6722689075630253,
+      "b_coverage": 0.7184873949579832
+    },
+    "f72r2": {
+      "section": "Z",
+      "total_tokens": 255,
+      "unique_types": 147,
+      "a_coverage": 0.6509803921568628,
+      "b_coverage": 0.6941176470588235
+    },
+    "f72r3": {
+      "section": "Z",
+      "total_tokens": 354,
+      "unique_types": 240,
+      "a_coverage": 0.5847457627118644,
+      "b_coverage": 0.6271186440677966
+    },
+    "f72v3": {
+      "section": "Z",
+      "total_tokens": 269,
+      "unique_types": 178,
+      "a_coverage": 0.5687732342007435,
+      "b_coverage": 0.6356877323420075
+    },
+    "f72v2": {
+      "section": "Z",
+      "total_tokens": 247,
+      "unique_types": 158,
+      "a_coverage": 0.5060728744939271,
+      "b_coverage": 0.5587044534412956
+    },
+    "f72v1": {
+      "section": "Z",
+      "total_tokens": 207,
+      "unique_types": 139,
+      "a_coverage": 0.5458937198067633,
+      "b_coverage": 0.5990338164251208
+    },
+    "f73r": {
+      "section": "Z",
+      "total_tokens": 201,
+      "unique_types": 131,
+      "a_coverage": 0.5870646766169154,
+      "b_coverage": 0.6666666666666666
+    },
+    "f73v": {
+      "section": "Z",
+      "total_tokens": 221,
+      "unique_types": 120,
+      "a_coverage": 0.5972850678733032,
+      "b_coverage": 0.7058823529411765
+    },
+    "f116v": {
+      "section": "S",
+      "total_tokens": 2,
+      "unique_types": 2,
+      "a_coverage": 1.0,
+      "b_coverage": 1.0
+    }
+  },
+  "verdict": {
+    "verdict": "HYBRID",
+    "scores": {
+      "B_LIKE": 0,
+      "A_LIKE": 2,
+      "HYBRID": 6,
+      "UNIQUE": 1
+    },
+    "evidence": [
+      "PARTIAL B coverage: 69.7%",
+      "PARTIAL A coverage: 65.4%",
+      "A-like prefix pattern: 0.90",
+      "MODERATE unique vocabulary: 25.4%",
+      "SHARED vocabulary (A+B): 60.5%"
+    ],
+    "confidence": 0.6666666666666666
+  }
+}

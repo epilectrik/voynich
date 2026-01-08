@@ -1,0 +1,72 @@
+=== LINE BY LINE COMPARISON (f2v) ===
+
+OUR TRANSCRIPTION:
+  Line 1: hoom.1cog1oy.okam,o8an.1oy.8az.2k9
+  Line 2: h1A,h19.2o.3oe.4ok1o.eods.4ok9.1o,y.8am
+  Line 3: ok19.1oy.e+9.1oe.1o89.1o8an.1K9.8am
+  Line 4: 2o.1oeo.1coy.1o8am
+  Line 5: h1oy.29.8aM.1�9.s2c9.8oy.1oe.8am
+  Line 6: 8oy.1oe.1oy.1oe.hcoe.19.1k9.8am.ok1oy.1aN
+  Line 7: 8am.1ok1c9.4okd9.1ohcos.1ccs.1y.1cam
+  Line 8: 1ohoi5c.1oy.1coe.1oe.8oeo89
+
+ZL OFFICIAL:
+  Line 1: kooiin.cheo,pchor.otaiin,odain.chordair.shty
+  Line 2: kcho,kchy.sho.shol.qotcho.loeees.qotychor.daiin
+  Line 3: otchy.chor.lshy.chol.chody.chodainchcthy.daiin
+  Line 4: sho.cholo.cheor.chodaiin
+  Line 5: kchor.shy.daiiin.ch{cko}ms,shey.dor,chol,daiin
+  Line 6: dor.chol.chor.chol.keol.chy.chtydaiin.o,tchor.chan
+  Line 7: daiin.chotchey.qoteeey.chokeoschees.chr.cheaiin
+  Line 8: chokoishe.chor.cheol.chol.dolody
+
+=== TOKEN COUNT COMPARISON ===
+  Line 1: Ours=7 tokens, ZL=7 [OK]
+  Line 2: Ours=10 tokens, ZL=8 [DIFF]
+  Line 3: Ours=8 tokens, ZL=7 [DIFF]
+  Line 4: Ours=4 tokens, ZL=4 [OK]
+  Line 5: Ours=8 tokens, ZL=8 [OK]
+  Line 6: Ours=10 tokens, ZL=10 [OK]
+  Line 7: Ours=7 tokens, ZL=6 [DIFF]
+  Line 8: Ours=5 tokens, ZL=5 [OK]
+
+=== STRUCTURAL STATISTICS ===
+Total folios - Ours: 223, ZL: 226
+Overlap: 223 folios in common
+Total lines - Ours: 3958, ZL: 5225
+
+=== CHARACTER FREQUENCY (letters only) ===
+Ours top 15: [('o', 25297), ('c', 16685), ('a', 15644), ('e', 11250), ('h', 10856), ('k', 7030), ('y', 6774), ('m', 4342), ('s', 3046), ('r', 2732), ('v', 2219), ('n', 2193), ('g', 1110), ('p', 1088), ('j', 694)]
+ZL top 15:   [('o', 27973), ('e', 23671), ('h', 19836), ('a', 18739), ('y', 18249), ('i', 15090), ('c', 14965), ('d', 14436), ('l', 14166), ('r', 13522), ('k', 11294), ('t', 10466), ('s', 9948), ('n', 8549), ('p', 7325)]
+
+=== KEY QUESTION: Same data, different encoding? ===
+
+Word length distribution (first 1000 words):
+  Ours: {1: 116, 2: 270, 3: 297, 4: 141, 5: 122, 6: 41, 7: 9, 8: 4}
+  ZL:   {1: 319, 2: 84, 3: 119, 4: 167, 5: 134, 6: 65, 7: 59, 8: 28, 9: 13, 10: 11, 15: 1}
+
+=== DIGIT ANALYSIS IN OUR FILE ===
+Digit frequency: {'0': 1301, '1': 15206, '2': 5361, '3': 2283, '4': 6839, '5': 1677, '6': 1437, '7': 4050, '8': 11928, '9': 18403}
+Total digits: 68485
+Total letters: 114837
+Digit ratio: 37.4%
+
+=== CRITICAL ASSESSMENT ===
+
+First line of f1r:
+  OURS: fa19s.9,hae.ay.Akam.2oe.!oy9.�scs.9.hoy.2oe89-...
+  ZL:   fachys.ykal.ar.ataiin.shol.shory.res.y.kor.sholdy...
+
+Looking for encoding relationship...
+
+Hypothesis test: Does our "1" = ZL "ch"?
+  Our "1" count: 15206
+  ZL "ch" count: 11208
+
+Hypothesis test: Does our "8" = ZL "d"?
+  Our "8" count: 11928
+  ZL "d" count: 14284
+
+Hypothesis test: Does our "9" = ZL "y"?
+  Our "9" count: 18403
+  ZL "y" count: 18243

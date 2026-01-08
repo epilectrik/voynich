@@ -1,0 +1,30 @@
+{
+  "c1_overlap": {
+    "token_pct": 69.71738698788802,
+    "type_pct": 21.093212171279085,
+    "mean_folio_pct": 69.81097714415316,
+    "verdict": "SUBSTANTIAL"
+  },
+  "c2_section_source": {
+    "distribution": {
+      "H": 35165,
+      "P": 14276,
+      "T": 3227
+    },
+    "dominant_section": "H",
+    "dominant_pct": 66.76729703045493
+  },
+  "c3_access_pattern": {
+    "adjacent_similarity": 0.5479029228563146,
+    "random_similarity": 0.4035130908986531,
+    "sequential_verdict": "SEQUENTIAL",
+    "semantic_verdict": "SEMANTIC",
+    "similar_b_a_sim": 0.4267811590063824,
+    "dissimilar_b_a_sim": 0.2561293214803358
+  },
+  "c4_predictive": {
+    "mean_r2": 0.05046340835718738,
+    "significant_token_correlations": 9,
+    "verdict": "NOT_PREDICTIVE"
+  }
+}

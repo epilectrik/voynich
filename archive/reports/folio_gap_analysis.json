@@ -1,0 +1,38 @@
+{
+  "phase": "FG",
+  "tests": [
+    {
+      "test": "FG-1",
+      "null_mean": 1.071673833739238,
+      "null_std": 0.6627661676313094,
+      "observed_mean": 0.9369197286445046,
+      "effect_size": -0.2033207361449021,
+      "extreme_count": 0,
+      "verdict": "PASS - Observed continuity BETTER than random (no removal signal)"
+    },
+    {
+      "test": "FG-2",
+      "js_start_mid": 0.10853553553610042,
+      "js_end_start": 0.1991433778153153,
+      "early_enrichment": 2.693043443314713,
+      "verdict": "PASS - Folio starts show proper orientation patterns"
+    },
+    {
+      "test": "FG-3",
+      "ht_starts": 0.3253012048192771,
+      "grammar_starts": 0.0,
+      "consistent_starts": 0.7590361445783133,
+      "ht_enrichment": 1.04288377472201,
+      "anomalous_count": 20,
+      "verdict": "PASS - Most folios start with recognizable morphological patterns"
+    },
+    {
+      "test": "FG-4",
+      "sections_analyzed": 4,
+      "mean_asymmetry": 0.0014262261461202947,
+      "max_asymmetry": 0.0027021068067033987,
+      "verdict": "PASS - Sections are internally symmetric"
+    }
+  ],
+  "conclusion": "NO STRUCTURAL EVIDENCE of post-composition folio removal detected."
+}

@@ -1,0 +1,29 @@
+{
+  "f1_topology": {
+    "three_cycles": 33791,
+    "four_cycles": 1018127,
+    "three_tokens": 200,
+    "four_tokens": 200,
+    "overlap_tokens": 200,
+    "overlap_pct": 100.0
+  },
+  "f2_kernel": {
+    "three_kernel": {
+      "None": 139,
+      "e": 61
+    },
+    "four_kernel": {
+      "None": 139,
+      "e": 61
+    },
+    "verdict": "KERNEL_SIMILAR"
+  },
+  "f3_folio": {
+    "correlation": "CORRELATED",
+    "variance": "LOW",
+    "mean_3": 0.36435679725433145,
+    "mean_4": 0.36435679725433145
+  },
+  "overall_verdict": "NO_DISTINCTION",
+  "constraints": []
+}

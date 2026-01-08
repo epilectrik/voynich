@@ -1,0 +1,29 @@
+{
+  "sp_confirmed": [
+    "daiin",
+    "ol"
+  ],
+  "sp_count": 2,
+  "sp_details": {
+    "daiin": {
+      "grammar_class": "CORE_CONTROL",
+      "a_count": 1762,
+      "b_count": 1140,
+      "ratio": 1.5456140350877192,
+      "affinity": "A-enriched"
+    },
+    "ol": {
+      "grammar_class": "CORE_CONTROL",
+      "a_count": 296,
+      "b_count": 1393,
+      "ratio": 0.21249102656137833,
+      "affinity": "B-enriched"
+    }
+  },
+  "pairing_analysis": {
+    "a_adjacent": 27,
+    "b_adjacent": 54,
+    "a_cooccur_pct": 2.4683544303797467,
+    "b_cooccur_pct": 2.6422764227642275
+  }
+}

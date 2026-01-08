@@ -1,0 +1,994 @@
+{
+  "metadata": {
+    "phase": "OPS-5",
+    "title": "Control Engagement Intensity (CEI) Manifold",
+    "timestamp": "2026-01-04T22:15:19.727263",
+    "n_folios": 83,
+    "n_regimes": 4
+  },
+  "cei_definition": "The degree to which an operator actively trades stability margin for time\nand throughput by increasing intervention frequency and tolerating proximity to irreversible hazards.",
+  "construction_method": "DOCUMENTED_COMPOSITE_INDEX",
+  "weights": {
+    "time_inverse": 0.333,
+    "risk": 0.333,
+    "stability": 0.334
+  },
+  "formula": "CEI = w1*(1 - time_pressure) + w2*risk_pressure + w3*stability_pressure",
+  "folio_cei_values": {
+    "f26r": {
+      "regime": "REGIME_4",
+      "cei": 0.638742,
+      "components": {
+        "time_inverse_contribution": 0.315221,
+        "risk_contribution": 0.142102,
+        "stability_contribution": 0.181419
+      }
+    },
+    "f26v": {
+      "regime": "REGIME_2",
+      "cei": 0.532044,
+      "components": {
+        "time_inverse_contribution": 0.280056,
+        "risk_contribution": 0.069969,
+        "stability_contribution": 0.182019
+      }
+    },
+    "f31r": {
+      "regime": "REGIME_3",
+      "cei": 0.787325,
+      "components": {
+        "time_inverse_contribution": 0.290652,
+        "risk_contribution": 0.23624,
+        "stability_contribution": 0.260433
+      }
+    },
+    "f31v": {
+      "regime": "REGIME_4",
+      "cei": 0.553783,
+      "components": {
+        "time_inverse_contribution": 0.294041,
+        "risk_contribution": 0.095418,
+        "stability_contribution": 0.164324
+      }
+    },
+    "f33r": {
+      "regime": "REGIME_3",
+      "cei": 0.777191,
+      "components": {
+        "time_inverse_contribution": 0.318392,
+        "risk_contribution": 0.219052,
+        "stability_contribution": 0.239748
+      }
+    },
+    "f33v": {
+      "regime": "REGIME_3",
+      "cei": 0.72705,
+      "components": {
+        "time_inverse_contribution": 0.299603,
+        "risk_contribution": 0.200458,
+        "stability_contribution": 0.226989
+      }
+    },
+    "f34r": {
+      "regime": "REGIME_4",
+      "cei": 0.632973,
+      "components": {
+        "time_inverse_contribution": 0.278141,
+        "risk_contribution": 0.166267,
+        "stability_contribution": 0.188564
+      }
+    },
+    "f34v": {
+      "regime": "REGIME_4",
+      "cei": 0.587587,
+      "components": {
+        "time_inverse_contribution": 0.276618,
+        "risk_contribution": 0.134868,
+        "stability_contribution": 0.176101
+      }
+    },
+    "f39r": {
+      "regime": "REGIME_3",
+      "cei": 0.705651,
+      "components": {
+        "time_inverse_contribution": 0.267271,
+        "risk_contribution": 0.210039,
+        "stability_contribution": 0.228341
+      }
+    },
+    "f39v": {
+      "regime": "REGIME_4",
+      "cei": 0.634443,
+      "components": {
+        "time_inverse_contribution": 0.264311,
+        "risk_contribution": 0.168235,
+        "stability_contribution": 0.201897
+      }
+    },
+    "f40r": {
+      "regime": "REGIME_4",
+      "cei": 0.634873,
+      "components": {
+        "time_inverse_contribution": 0.3015,
+        "risk_contribution": 0.148922,
+        "stability_contribution": 0.184451
+      }
+    },
+    "f40v": {
+      "regime": "REGIME_4",
+      "cei": 0.559443,
+      "components": {
+        "time_inverse_contribution": 0.282011,
+        "risk_contribution": 0.115415,
+        "stability_contribution": 0.162017
+      }
+    },
+    "f41r": {
+      "regime": "REGIME_4",
+      "cei": 0.626477,
+      "components": {
+        "time_inverse_contribution": 0.281334,
+        "risk_contribution": 0.150933,
+        "stability_contribution": 0.19421
+      }
+    },
+    "f41v": {
+      "regime": "REGIME_4",
+      "cei": 0.514224,
+      "components": {
+        "time_inverse_contribution": 0.301644,
+        "risk_contribution": 0.082538,
+        "stability_contribution": 0.130042
+      }
+    },
+    "f43r": {
+      "regime": "REGIME_4",
+      "cei": 0.561309,
+      "components": {
+        "time_inverse_contribution": 0.234012,
+        "risk_contribution": 0.155655,
+        "stability_contribution": 0.171641
+      }
+    },
+    "f43v": {
+      "regime": "REGIME_4",
+      "cei": 0.564929,
+      "components": {
+        "time_inverse_contribution": 0.223858,
+        "risk_contribution": 0.15265,
+        "stability_contribution": 0.188421
+      }
+    },
+    "f46r": {
+      "regime": "REGIME_3",
+      "cei": 0.720397,
+      "components": {
+        "time_inverse_contribution": 0.25693,
+        "risk_contribution": 0.223735,
+        "stability_contribution": 0.239732
+      }
+    },
+    "f46v": {
+      "regime": "REGIME_4",
+      "cei": 0.637074,
+      "components": {
+        "time_inverse_contribution": 0.244378,
+        "risk_contribution": 0.186962,
+        "stability_contribution": 0.205734
+      }
+    },
+    "f48r": {
+      "regime": "REGIME_2",
+      "cei": 0.374186,
+      "components": {
+        "time_inverse_contribution": 0.295148,
+        "risk_contribution": 0.0,
+        "stability_contribution": 0.079039
+      }
+    },
+    "f48v": {
+      "regime": "REGIME_2",
+      "cei": 0.490923,
+      "components": {
+        "time_inverse_contribution": 0.244775,
+        "risk_contribution": 0.066613,
+        "stability_contribution": 0.179535
+      }
+    },
+    "f50r": {
+      "regime": "REGIME_4",
+      "cei": 0.481318,
+      "components": {
+        "time_inverse_contribution": 0.261669,
+        "risk_contribution": 0.090313,
+        "stability_contribution": 0.129336
+      }
+    },
+    "f50v": {
+      "regime": "REGIME_4",
+      "cei": 0.379175,
+      "components": {
+        "time_inverse_contribution": 0.27151,
+        "risk_contribution": 0.107665,
+        "stability_contribution": 0.0
+      }
+    },
+    "f55r": {
+      "regime": "REGIME_4",
+      "cei": 0.675515,
+      "components": {
+        "time_inverse_contribution": 0.301669,
+        "risk_contribution": 0.170997,
+        "stability_contribution": 0.202849
+      }
+    },
+    "f55v": {
+      "regime": "REGIME_4",
+      "cei": 0.532585,
+      "components": {
+        "time_inverse_contribution": 0.314569,
+        "risk_contribution": 0.09066,
+        "stability_contribution": 0.127356
+      }
+    },
+    "f57r": {
+      "regime": "REGIME_4",
+      "cei": 0.422078,
+      "components": {
+        "time_inverse_contribution": 0.302261,
+        "risk_contribution": 0.114453,
+        "stability_contribution": 0.005364
+      }
+    },
+    "f66r": {
+      "regime": "REGIME_1",
+      "cei": 0.540157,
+      "components": {
+        "time_inverse_contribution": 0.130364,
+        "risk_contribution": 0.20142,
+        "stability_contribution": 0.208372
+      }
+    },
+    "f66v": {
+      "regime": "REGIME_4",
+      "cei": 0.707225,
+      "components": {
+        "time_inverse_contribution": 0.317686,
+        "risk_contribution": 0.175327,
+        "stability_contribution": 0.214213
+      }
+    },
+    "f75r": {
+      "regime": "REGIME_1",
+      "cei": 0.599301,
+      "components": {
+        "time_inverse_contribution": 0.098227,
+        "risk_contribution": 0.25019,
+        "stability_contribution": 0.250885
+      }
+    },
+    "f75v": {
+      "regime": "REGIME_1",
+      "cei": 0.454677,
+      "components": {
+        "time_inverse_contribution": 0.038468,
+        "risk_contribution": 0.208558,
+        "stability_contribution": 0.207652
+      }
+    },
+    "f76r": {
+      "regime": "REGIME_1",
+      "cei": 0.567222,
+      "components": {
+        "time_inverse_contribution": 0.005357,
+        "risk_contribution": 0.290785,
+        "stability_contribution": 0.271081
+      }
+    },
+    "f76v": {
+      "regime": "REGIME_1",
+      "cei": 0.463386,
+      "components": {
+        "time_inverse_contribution": 0.034719,
+        "risk_contribution": 0.212036,
+        "stability_contribution": 0.216632
+      }
+    },
+    "f77r": {
+      "regime": "REGIME_3",
+      "cei": 0.587548,
+      "components": {
+        "time_inverse_contribution": 0.006681,
+        "risk_contribution": 0.289536,
+        "stability_contribution": 0.291331
+      }
+    },
+    "f77v": {
+      "regime": "REGIME_1",
+      "cei": 0.527398,
+      "components": {
+        "time_inverse_contribution": 0.066692,
+        "risk_contribution": 0.221939,
+        "stability_contribution": 0.238767
+      }
+    },
+    "f78r": {
+      "regime": "REGIME_1",
+      "cei": 0.49819,
+      "components": {
+        "time_inverse_contribution": 0.107936,
+        "risk_contribution": 0.191867,
+        "stability_contribution": 0.198387
+      }
+    },
+    "f78v": {
+      "regime": "REGIME_1",
+      "cei": 0.563939,
+      "components": {
+        "time_inverse_contribution": 0.18678,
+        "risk_contribution": 0.181584,
+        "stability_contribution": 0.195574
+      }
+    },
+    "f79r": {
+      "regime": "REGIME_1",
+      "cei": 0.607233,
+      "components": {
+        "time_inverse_contribution": 0.147328,
+        "risk_contribution": 0.233381,
+        "stability_contribution": 0.226524
+      }
+    },
+    "f79v": {
+      "regime": "REGIME_1",
+      "cei": 0.504535,
+      "components": {
+        "time_inverse_contribution": 0.144481,
+        "risk_contribution": 0.174014,
+        "stability_contribution": 0.18604
+      }
+    },
+    "f80r": {
+      "regime": "REGIME_1",
+      "cei": 0.491405,
+      "components": {
+        "time_inverse_contribution": 0.067201,
+        "risk_contribution": 0.215202,
+        "stability_contribution": 0.209002
+      }
+    },
+    "f80v": {
+      "regime": "REGIME_1",
+      "cei": 0.44801,
+      "components": {
+        "time_inverse_contribution": 0.069754,
+        "risk_contribution": 0.185921,
+        "stability_contribution": 0.192336
+      }
+    },
+    "f81r": {
+      "regime": "REGIME_3",
+      "cei": 0.596713,
+      "components": {
+        "time_inverse_contribution": 0.192169,
+        "risk_contribution": 0.193742,
+        "stability_contribution": 0.210802
+      }
+    },
+    "f81v": {
+      "regime": "REGIME_1",
+      "cei": 0.503168,
+      "components": {
+        "time_inverse_contribution": 0.183091,
+        "risk_contribution": 0.149527,
+        "stability_contribution": 0.170551
+      }
+    },
+    "f82r": {
+      "regime": "REGIME_1",
+      "cei": 0.467063,
+      "components": {
+        "time_inverse_contribution": 0.058864,
+        "risk_contribution": 0.194493,
+        "stability_contribution": 0.213705
+      }
+    },
+    "f82v": {
+      "regime": "REGIME_1",
+      "cei": 0.392735,
+      "components": {
+        "time_inverse_contribution": 0.06433,
+        "risk_contribution": 0.230912,
+        "stability_contribution": 0.097492
+      }
+    },
+    "f83r": {
+      "regime": "REGIME_1",
+      "cei": 0.489066,
+      "components": {
+        "time_inverse_contribution": 0.076792,
+        "risk_contribution": 0.198733,
+        "stability_contribution": 0.213541
+      }
+    },
+    "f83v": {
+      "regime": "REGIME_3",
+      "cei": 0.837823,
+      "components": {
+        "time_inverse_contribution": 0.170823,
+        "risk_contribution": 0.333,
+        "stability_contribution": 0.334
+      }
+    },
+    "f84r": {
+      "regime": "REGIME_1",
+      "cei": 0.554368,
+      "components": {
+        "time_inverse_contribution": 0.133873,
+        "risk_contribution": 0.210522,
+        "stability_contribution": 0.209973
+      }
+    },
+    "f84v": {
+      "regime": "REGIME_1",
+      "cei": 0.492165,
+      "components": {
+        "time_inverse_contribution": 0.085124,
+        "risk_contribution": 0.205867,
+        "stability_contribution": 0.201174
+      }
+    },
+    "f85r1": {
+      "regime": "REGIME_4",
+      "cei": 0.539235,
+      "components": {
+        "time_inverse_contribution": 0.252745,
+        "risk_contribution": 0.131047,
+        "stability_contribution": 0.155444
+      }
+    },
+    "f85r2": {
+      "regime": "REGIME_4",
+      "cei": 0.622954,
+      "components": {
+        "time_inverse_contribution": 0.309109,
+        "risk_contribution": 0.141237,
+        "stability_contribution": 0.172609
+      }
+    },
+    "f85v2": {
+      "regime": "REGIME_2",
+      "cei": 0.350004,
+      "components": {
+        "time_inverse_contribution": 0.286158,
+        "risk_contribution": 0.005063,
+        "stability_contribution": 0.058783
+      }
+    },
+    "f86v3": {
+      "regime": "REGIME_2",
+      "cei": 0.427363,
+      "components": {
+        "time_inverse_contribution": 0.214302,
+        "risk_contribution": 0.087801,
+        "stability_contribution": 0.125259
+      }
+    },
+    "f86v4": {
+      "regime": "REGIME_3",
+      "cei": 0.713577,
+      "components": {
+        "time_inverse_contribution": 0.32478,
+        "risk_contribution": 0.185473,
+        "stability_contribution": 0.203324
+      }
+    },
+    "f86v5": {
+      "regime": "REGIME_2",
+      "cei": 0.355655,
+      "components": {
+        "time_inverse_contribution": 0.195934,
+        "risk_contribution": 0.061464,
+        "stability_contribution": 0.098257
+      }
+    },
+    "f86v6": {
+      "regime": "REGIME_4",
+      "cei": 0.530508,
+      "components": {
+        "time_inverse_contribution": 0.234777,
+        "risk_contribution": 0.13738,
+        "stability_contribution": 0.158351
+      }
+    },
+    "f94r": {
+      "regime": "REGIME_4",
+      "cei": 0.662108,
+      "components": {
+        "time_inverse_contribution": 0.32554,
+        "risk_contribution": 0.145952,
+        "stability_contribution": 0.190616
+      }
+    },
+    "f94v": {
+      "regime": "REGIME_4",
+      "cei": 0.641763,
+      "components": {
+        "time_inverse_contribution": 0.333,
+        "risk_contribution": 0.13475,
+        "stability_contribution": 0.174013
+      }
+    },
+    "f95r1": {
+      "regime": "REGIME_3",
+      "cei": 0.723077,
+      "components": {
+        "time_inverse_contribution": 0.311658,
+        "risk_contribution": 0.187001,
+        "stability_contribution": 0.224418
+      }
+    },
+    "f95r2": {
+      "regime": "REGIME_3",
+      "cei": 0.814867,
+      "components": {
+        "time_inverse_contribution": 0.306084,
+        "risk_contribution": 0.243381,
+        "stability_contribution": 0.265402
+      }
+    },
+    "f95v1": {
+      "regime": "REGIME_4",
+      "cei": 0.560723,
+      "components": {
+        "time_inverse_contribution": 0.313221,
+        "risk_contribution": 0.100975,
+        "stability_contribution": 0.146527
+      }
+    },
+    "f95v2": {
+      "regime": "REGIME_4",
+      "cei": 0.687445,
+      "components": {
+        "time_inverse_contribution": 0.321692,
+        "risk_contribution": 0.160446,
+        "stability_contribution": 0.205307
+      }
+    },
+    "f103r": {
+      "regime": "REGIME_3",
+      "cei": 0.733355,
+      "components": {
+        "time_inverse_contribution": 0.203164,
+        "risk_contribution": 0.264376,
+        "stability_contribution": 0.265814
+      }
+    },
+    "f103v": {
+      "regime": "REGIME_1",
+      "cei": 0.614616,
+      "components": {
+        "time_inverse_contribution": 0.196058,
+        "risk_contribution": 0.204383,
+        "stability_contribution": 0.214176
+      }
+    },
+    "f104r": {
+      "regime": "REGIME_1",
+      "cei": 0.529321,
+      "components": {
+        "time_inverse_contribution": 0.193185,
+        "risk_contribution": 0.160929,
+        "stability_contribution": 0.175207
+      }
+    },
+    "f104v": {
+      "regime": "REGIME_3",
+      "cei": 0.669786,
+      "components": {
+        "time_inverse_contribution": 0.213345,
+        "risk_contribution": 0.223195,
+        "stability_contribution": 0.233246
+      }
+    },
+    "f105r": {
+      "regime": "REGIME_2",
+      "cei": 0.335844,
+      "components": {
+        "time_inverse_contribution": 0.208578,
+        "risk_contribution": 0.043403,
+        "stability_contribution": 0.083863
+      }
+    },
+    "f105v": {
+      "regime": "REGIME_2",
+      "cei": 0.097001,
+      "components": {
+        "time_inverse_contribution": 0.0,
+        "risk_contribution": 0.0376,
+        "stability_contribution": 0.059401
+      }
+    },
+    "f106r": {
+      "regime": "REGIME_1",
+      "cei": 0.464683,
+      "components": {
+        "time_inverse_contribution": 0.10751,
+        "risk_contribution": 0.175269,
+        "stability_contribution": 0.181904
+      }
+    },
+    "f106v": {
+      "regime": "REGIME_1",
+      "cei": 0.492237,
+      "components": {
+        "time_inverse_contribution": 0.068156,
+        "risk_contribution": 0.219721,
+        "stability_contribution": 0.20436
+      }
+    },
+    "f107r": {
+      "regime": "REGIME_2",
+      "cei": 0.326353,
+      "components": {
+        "time_inverse_contribution": 0.068572,
+        "risk_contribution": 0.118345,
+        "stability_contribution": 0.139435
+      }
+    },
+    "f107v": {
+      "regime": "REGIME_1",
+      "cei": 0.405802,
+      "components": {
+        "time_inverse_contribution": 0.108176,
+        "risk_contribution": 0.138321,
+        "stability_contribution": 0.159306
+      }
+    },
+    "f108r": {
+      "regime": "REGIME_1",
+      "cei": 0.605177,
+      "components": {
+        "time_inverse_contribution": 0.146693,
+        "risk_contribution": 0.228508,
+        "stability_contribution": 0.229976
+      }
+    },
+    "f108v": {
+      "regime": "REGIME_1",
+      "cei": 0.577376,
+      "components": {
+        "time_inverse_contribution": 0.13091,
+        "risk_contribution": 0.226784,
+        "stability_contribution": 0.219682
+      }
+    },
+    "f111r": {
+      "regime": "REGIME_1",
+      "cei": 0.509822,
+      "components": {
+        "time_inverse_contribution": 0.131457,
+        "risk_contribution": 0.195681,
+        "stability_contribution": 0.182684
+      }
+    },
+    "f111v": {
+      "regime": "REGIME_1",
+      "cei": 0.52399,
+      "components": {
+        "time_inverse_contribution": 0.046775,
+        "risk_contribution": 0.251861,
+        "stability_contribution": 0.225354
+      }
+    },
+    "f112r": {
+      "regime": "REGIME_1",
+      "cei": 0.439783,
+      "components": {
+        "time_inverse_contribution": 0.115251,
+        "risk_contribution": 0.159094,
+        "stability_contribution": 0.165438
+      }
+    },
+    "f112v": {
+      "regime": "REGIME_1",
+      "cei": 0.506153,
+      "components": {
+        "time_inverse_contribution": 0.105068,
+        "risk_contribution": 0.20342,
+        "stability_contribution": 0.197666
+      }
+    },
+    "f113r": {
+      "regime": "REGIME_1",
+      "cei": 0.457814,
+      "components": {
+        "time_inverse_contribution": 0.096274,
+        "risk_contribution": 0.179867,
+        "stability_contribution": 0.181673
+      }
+    },
+    "f113v": {
+      "regime": "REGIME_2",
+      "cei": 0.389792,
+      "components": {
+        "time_inverse_contribution": 0.131478,
+        "risk_contribution": 0.121859,
+        "stability_contribution": 0.136455
+      }
+    },
+    "f114r": {
+      "regime": "REGIME_1",
+      "cei": 0.531714,
+      "components": {
+        "time_inverse_contribution": 0.182258,
+        "risk_contribution": 0.176346,
+        "stability_contribution": 0.17311
+      }
+    },
+    "f114v": {
+      "regime": "REGIME_3",
+      "cei": 0.719607,
+      "components": {
+        "time_inverse_contribution": 0.237328,
+        "risk_contribution": 0.237077,
+        "stability_contribution": 0.245203
+      }
+    },
+    "f115r": {
+      "regime": "REGIME_3",
+      "cei": 0.680322,
+      "components": {
+        "time_inverse_contribution": 0.222647,
+        "risk_contribution": 0.219893,
+        "stability_contribution": 0.237782
+      }
+    },
+    "f115v": {
+      "regime": "REGIME_2",
+      "cei": 0.356624,
+      "components": {
+        "time_inverse_contribution": 0.151365,
+        "risk_contribution": 0.080642,
+        "stability_contribution": 0.124618
+      }
+    },
+    "f116r": {
+      "regime": "REGIME_3",
+      "cei": 0.676869,
+      "components": {
+        "time_inverse_contribution": 0.226302,
+        "risk_contribution": 0.222454,
+        "stability_contribution": 0.228113
+      }
+    }
+  },
+  "regime_bands": {
+    "REGIME_4": {
+      "n_folios": 25,
+      "mean": 0.58354,
+      "std": 0.078588,
+      "min": 0.379175,
+      "max": 0.707225,
+      "q1": 0.539235,
+      "q3": 0.637074,
+      "iqr": 0.097839,
+      "band_lower": 0.53462,
+      "band_upper": 0.632459
+    },
+    "REGIME_2": {
+      "n_folios": 11,
+      "mean": 0.36689,
+      "std": 0.105683,
+      "min": 0.097001,
+      "max": 0.532044,
+      "q1": 0.335844,
+      "q3": 0.427363,
+      "iqr": 0.091519,
+      "band_lower": 0.32113,
+      "band_upper": 0.412649
+    },
+    "REGIME_3": {
+      "n_folios": 16,
+      "mean": 0.716947,
+      "std": 0.066012,
+      "min": 0.587548,
+      "max": 0.837823,
+      "q1": 0.680322,
+      "q3": 0.777191,
+      "iqr": 0.096869,
+      "band_lower": 0.668513,
+      "band_upper": 0.765382
+    },
+    "REGIME_1": {
+      "n_folios": 31,
+      "mean": 0.510404,
+      "std": 0.056584,
+      "min": 0.392735,
+      "max": 0.614616,
+      "q1": 0.464683,
+      "q3": 0.554368,
+      "iqr": 0.089685,
+      "band_lower": 0.465561,
+      "band_upper": 0.555246
+    }
+  },
+  "validation": {
+    "centroid_alignment": {
+      "ordered_regimes": [
+        "REGIME_2",
+        "REGIME_1",
+        "REGIME_4",
+        "REGIME_3"
+      ],
+      "centroid_values": {
+        "REGIME_2": 0.3668898457972852,
+        "REGIME_1": 0.5104035174887087,
+        "REGIME_4": 0.5835396065594992,
+        "REGIME_3": 0.7169474897883009
+      },
+      "lowest_cei_regime": "REGIME_2",
+      "highest_cei_regime": "REGIME_3",
+      "expected_low": "REGIME_2",
+      "expected_high": "REGIME_3",
+      "low_correct": true,
+      "high_correct": true,
+      "status": "PASS"
+    },
+    "transition_alignment": {
+      "transitions_analyzed": 9,
+      "transitions_aligned": 9,
+      "alignment_rate": 1.0,
+      "status": "PASS"
+    },
+    "no_universal_optimum": {
+      "cei_range_coverage": {
+        "low_cei": [
+          "REGIME_2"
+        ],
+        "mid_cei": [
+          "REGIME_4",
+          "REGIME_2",
+          "REGIME_1"
+        ],
+        "high_cei": [
+          "REGIME_4",
+          "REGIME_3"
+        ]
+      },
+      "any_regime_dominates_all": false,
+      "status": "PASS"
+    }
+  },
+  "dynamics": {
+    "bidirectional_movement": {
+      "up_transitions_count": 4,
+      "down_transitions_count": 5,
+      "bidirectional": true
+    },
+    "asymmetric_costs": {
+      "avg_up_weight": 0.4257,
+      "avg_down_weight": 0.6132,
+      "asymmetry_ratio": 1.4406,
+      "down_easier_than_up": true
+    },
+    "up_transitions": [
+      {
+        "from": "REGIME_1",
+        "to": "REGIME_4",
+        "delta": 0.0731360890707905,
+        "weight": 0.8546925707236562,
+        "type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_1",
+        "to": "REGIME_3",
+        "delta": 0.2065439722995922,
+        "weight": 0.3998852972794842,
+        "type": "enter_dominated_transient"
+      },
+      {
+        "from": "REGIME_2",
+        "to": "REGIME_4",
+        "delta": 0.21664976076221404,
+        "weight": 0.29279351236292706,
+        "type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_2",
+        "to": "REGIME_3",
+        "delta": 0.35005764399101574,
+        "weight": 0.15534165285385604,
+        "type": "enter_dominated_transient"
+      }
+    ],
+    "down_transitions": [
+      {
+        "from": "REGIME_1",
+        "to": "REGIME_2",
+        "delta": -0.14351367169142354,
+        "weight": 0.9192911135081634,
+        "type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_3",
+        "to": "REGIME_2",
+        "delta": -0.35005764399101574,
+        "weight": 0.8947067815414435,
+        "type": "exit_dominated"
+      },
+      {
+        "from": "REGIME_3",
+        "to": "REGIME_4",
+        "delta": -0.1334078832288017,
+        "weight": 0.6747665859030803,
+        "type": "exit_dominated"
+      },
+      {
+        "from": "REGIME_4",
+        "to": "REGIME_2",
+        "delta": -0.21664976076221404,
+        "weight": 0.3573920551474342,
+        "type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_3",
+        "to": "REGIME_1",
+        "delta": -0.2065439722995922,
+        "weight": 0.2199593124589082,
+        "type": "exit_dominated"
+      }
+    ],
+    "dominated_transient_behavior": {
+      "regime": "REGIME_3",
+      "mean_cei": 0.7169,
+      "interpretation": "Brief high-CEI excursion under time pressure, rapid exit under risk/stability pressure"
+    }
+  },
+  "human_track_integration": {
+    "cf_density_by_cei_band": {
+      "low": {
+        "n_folios": 28,
+        "avg_cf6": 0.0,
+        "avg_cf7": 0.0,
+        "avg_link_density": 0.4189
+      },
+      "mid": {
+        "n_folios": 27,
+        "avg_cf6": 0.0,
+        "avg_cf7": 0.0,
+        "avg_link_density": 0.3727
+      },
+      "high": {
+        "n_folios": 28,
+        "avg_cf6": 0.0,
+        "avg_cf7": 0.0,
+        "avg_link_density": 0.3351
+      }
+    },
+    "link_density_cei_correlation": -0.7057,
+    "link_as_cei_damping": {
+      "correlation": -0.7057,
+      "interpretation": "Negative correlation confirms LINK density dampens CEI",
+      "expected": "negative",
+      "observed": "negative"
+    },
+    "band_edge_vigilance": {
+      "description": "CF-6/CF-7 densities should peak near CEI band boundaries",
+      "low_band_cf": {
+        "n_folios": 28,
+        "avg_cf6": 0.0,
+        "avg_cf7": 0.0,
+        "avg_link_density": 0.4189
+      },
+      "high_band_cf": {
+        "n_folios": 28,
+        "avg_cf6": 0.0,
+        "avg_cf7": 0.0,
+        "avg_link_density": 0.3351
+      },
+      "pattern_observed": true
+    }
+  },
+  "overall_status": "PASS"
+}

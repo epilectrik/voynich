@@ -1,0 +1,77 @@
+{
+  "e1_marker_distribution": {
+    "mean_markers": 3.358156028368794,
+    "std_markers": 1.1657436690354714,
+    "max_markers": 8,
+    "count_distribution": {
+      "2": 384,
+      "4": 350,
+      "3": 447,
+      "5": 167,
+      "6": 45,
+      "7": 15,
+      "8": 2
+    }
+  },
+  "e2_cooccurrence": {
+    "enriched_pairs": 0,
+    "avoided_pairs": 0,
+    "top_pairs": [
+      [
+        [
+          "CH",
+          "DA"
+        ],
+        0.960457033755463
+      ],
+      [
+        [
+          "CH",
+          "QO"
+        ],
+        0.9308576480990274
+      ],
+      [
+        [
+          "CH",
+          "SH"
+        ],
+        0.9515179715752781
+      ],
+      [
+        [
+          "DA",
+          "QO"
+        ],
+        1.0258710958656796
+      ],
+      [
+        [
+          "DA",
+          "SH"
+        ],
+        0.954503517904559
+      ]
+    ]
+  },
+  "e3_section": {
+    "verdict": "SECTION_DEPENDENT",
+    "section_rates": {
+      "H": 90.13266998341625,
+      "P": 94.0677966101695,
+      "T": 96.19047619047619
+    }
+  },
+  "e4_structural": {
+    "length_verdict": "MIXED_LONGER",
+    "exc_mean_length": 14.452554744525548,
+    "mix_mean_length": 24.81418439716312,
+    "b_overlap_verdict": "MIXED_MORE_B",
+    "exc_b_overlap": 0.6561829838648442,
+    "mix_b_overlap": 0.7606359565895866
+  },
+  "e5_dominance": {
+    "mean_dominance": 0.47637930682731705,
+    "verdict": "BALANCED"
+  }
+}

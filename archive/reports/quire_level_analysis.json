@@ -1,0 +1,48 @@
+{
+  "qla1": {
+    "test": "QLA-1",
+    "pure_a": 5,
+    "pure_b": 3,
+    "pure_na": 4,
+    "mixed": 6,
+    "mean_purity": 0.8749767841581428,
+    "verdict": "NULL"
+  },
+  "qla2": {
+    "test": "QLA-2",
+    "single_section_quires": 12,
+    "multi_section_quires": 6,
+    "mean_homogeneity": 0.9226383097566523,
+    "expected_homogeneity": 0.21550739938227137,
+    "ratio": 4.281237267960614,
+    "verdict": "SIGNAL"
+  },
+  "qla3": {
+    "test": "QLA-3",
+    "mean_homogeneity": 0.6665056360708534,
+    "within_rate": 0.5147058823529411,
+    "between_rate": 0.2340655383507382,
+    "ratio": 2.1989819004524884,
+    "verdict": "SIGNAL"
+  },
+  "qla4": {
+    "test": "QLA-4",
+    "within_pairs": 1542,
+    "between_pairs": 23658,
+    "within_mean": 0.10154990478219382,
+    "between_mean": 0.06006557224254498,
+    "ratio": 1.6906507503522146,
+    "p_value": 4.3702417445907395e-243,
+    "verdict": "SIGNAL"
+  },
+  "qla5": {
+    "test": "QLA-5",
+    "within_mean": 0.10518539496940098,
+    "cross_mean": 0.06284620604312885,
+    "ratio": 1.6736952250899033,
+    "quire_boundaries": 17,
+    "section_change_rate": 0.4117647058823529,
+    "lang_change_rate": 0.4117647058823529,
+    "verdict": "SIGNAL"
+  }
+}

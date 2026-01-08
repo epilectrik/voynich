@@ -1,0 +1,44 @@
+{
+  "total_a_tokens": 37214,
+  "total_b_tokens": 75545,
+  "high_freq_count": 44,
+  "both_systems_count": 42,
+  "final_candidates": [
+    {
+      "token": "aiin",
+      "a_count": 193,
+      "b_count": 1055,
+      "ratio": 0.18293838862559242,
+      "polarity": 0.6907051282051282,
+      "grammar_class": "HIGH_IMPACT"
+    },
+    {
+      "token": "saiin",
+      "a_count": 136,
+      "b_count": 414,
+      "ratio": 0.3285024154589372,
+      "polarity": 0.5054545454545454,
+      "grammar_class": "AUXILIARY"
+    },
+    {
+      "token": "dol",
+      "a_count": 212,
+      "b_count": 166,
+      "ratio": 1.2771084337349397,
+      "polarity": 0.12169312169312169,
+      "grammar_class": "AUXILIARY"
+    },
+    {
+      "token": "dy",
+      "a_count": 436,
+      "b_count": 401,
+      "ratio": 1.087281795511222,
+      "polarity": 0.04181600955794501,
+      "grammar_class": "FREQUENT_OPERATOR"
+    }
+  ],
+  "tier1_candidates": [
+    "aiin",
+    "saiin"
+  ]
+}

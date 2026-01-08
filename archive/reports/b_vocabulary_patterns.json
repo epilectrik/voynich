@@ -1,0 +1,56 @@
+{
+  "phase": "BVP",
+  "tests": [
+    {
+      "test": "BVP-1",
+      "adjacent_pairs": 81,
+      "non_adjacent_samples": 981,
+      "adjacent_mean": 0.1382930087840648,
+      "non_adjacent_mean": 0.10675718104754493,
+      "ratio": 1.2953977187021752,
+      "mann_whitney_p": 3.7386624880136454e-10,
+      "effect_d": 0.7567932789182397,
+      "verdict": "SIGNAL - Adjacent folios share MORE vocabulary"
+    },
+    {
+      "test": "BVP-2",
+      "within_pairs": 930,
+      "between_pairs": 2391,
+      "within_mean": 0.12567950284592222,
+      "between_mean": 0.09742659884516647,
+      "ratio": 1.2899916894939152,
+      "permutation_p": 0.002,
+      "verdict": "SIGNAL - Regimes have vocabulary fingerprints"
+    },
+    {
+      "test": "BVP-3",
+      "stability_within_mean": 0.109953860480971,
+      "stability_between_mean": 0.10387379892928357,
+      "stability_ratio": 1.0585331586440454,
+      "link_ratio": 1.0503282660912656,
+      "verdict": "NULL - Vocabulary independent of operational profile"
+    },
+    {
+      "test": "BVP-4",
+      "n_folios": 82,
+      "total_unique_tokens": 4946,
+      "mean_vocab_size": 180.5731707317073,
+      "core_tokens": 41,
+      "unique_tokens": 3368,
+      "vocab_skewness": 0.2631136151457123,
+      "unique_skewness": 0.08071540031489466,
+      "high_vocab_outliers": [
+        "f113r"
+      ],
+      "high_unique_outliers": [
+        "f66v",
+        "f105v"
+      ],
+      "verdict": "SIGNAL - Vocabulary hubs detected"
+    }
+  ],
+  "signals": 3,
+  "weak_signals": 0,
+  "nulls": 1,
+  "conclusion": "B folios show STRUCTURED vocabulary patterns"
+}

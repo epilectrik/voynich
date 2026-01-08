@@ -1,0 +1,81 @@
+{
+  "PH-1": {
+    "test": "PH-1",
+    "total_escalations": 247,
+    "immediate_reversals": 130,
+    "immediate_rate": 0.5263157894736842,
+    "baseline_e_rate": 0.3600900125752863,
+    "asymmetry_ratio": 1.4616228473252755,
+    "mean_recovery_length": 4.2301255230125525,
+    "verdict": "FAIL",
+    "effect_size": -0.4616228473252755
+  },
+  "PH-2": {
+    "test": "PH-2",
+    "post_escalation_e_rate": 0.3384615384615384,
+    "baseline_e_rate": 0.36380000000000007,
+    "effect": -0.025338461538461643,
+    "pvalue": 0.9333695477728488,
+    "verdict": "FAIL",
+    "effect_size": -0.025338461538461643
+  },
+  "PH-3": {
+    "test": "PH-3",
+    "escalation_link_density": 0.5506072874493927,
+    "random_link_density": 0.91,
+    "enrichment_ratio": 0.6050629532410908,
+    "pvalue": 0.999999873372292,
+    "verdict": "NEUTRAL",
+    "effect_size": -0.39493704675890917
+  },
+  "PH-4": {
+    "test": "PH-4",
+    "observed_alternations": 0,
+    "expected_alternations": 0.0,
+    "suppression_ratio": 0,
+    "z_score": 0,
+    "pvalue": 1.0,
+    "verdict": "FAIL",
+    "effect_size": 1
+  },
+  "PH-5": {
+    "test": "PH-5",
+    "restart_folio_count": 3,
+    "normal_folio_count": 80,
+    "metrics": {
+      "e_rate": {
+        "restart_mean": 0.9927248677248678,
+        "normal_mean": 0.9872943051315192,
+        "difference": 0.00543056259334862,
+        "pvalue": 0.46298740355706025
+      },
+      "link_rate": {
+        "restart_mean": 0.10936311710013018,
+        "normal_mean": 0.12191540290886915,
+        "difference": -0.012552285808738975,
+        "pvalue": 0.8092859241845429
+      },
+      "kernel_entropy": {
+        "restart_mean": 0.03978893374143969,
+        "normal_mean": 0.060948218676090085,
+        "difference": -0.021159284934650392,
+        "pvalue": 0.49386267838207076
+      },
+      "escalation_rate": {
+        "restart_mean": 0.007275132275132275,
+        "normal_mean": 0.012705694868480843,
+        "difference": -0.005430562593348568,
+        "pvalue": 0.46298740355706025
+      }
+    },
+    "significant_differences": 0,
+    "verdict": "FAIL",
+    "effect_size": 0.010861125186697188
+  },
+  "overall": {
+    "verdict": "INSUFFICIENT",
+    "pass_count": 0,
+    "fail_count": 4,
+    "significant_effects": 1
+  }
+}

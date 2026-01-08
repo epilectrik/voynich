@@ -1,0 +1,127 @@
+{
+  "activation": {
+    "section_markers": {
+      "T": {
+        "yk": 54,
+        "sh": 290,
+        "ct": 82,
+        "yt": 47,
+        "ch": 359,
+        "da": 231,
+        "ot": 126,
+        "ok": 174,
+        "ol": 72,
+        "qo": 197
+      },
+      "H": {
+        "ch": 5420,
+        "ol": 451,
+        "yt": 522,
+        "ok": 1057,
+        "sh": 2466,
+        "ct": 1282,
+        "da": 2600,
+        "ot": 1194,
+        "qo": 2387,
+        "yk": 496
+      },
+      "P": {
+        "ot": 320,
+        "ol": 330,
+        "ct": 128,
+        "qo": 865,
+        "sh": 547,
+        "da": 788,
+        "ch": 1402,
+        "ok": 674,
+        "yk": 162,
+        "yt": 53
+      }
+    },
+    "section_totals": {
+      "T": 889,
+      "H": 8385,
+      "P": 2897
+    },
+    "section_profiles": {
+      "H": [
+        "ch",
+        "qo",
+        "sh",
+        "da",
+        "ok",
+        "ot",
+        "ct",
+        "ol",
+        "yk",
+        "yt"
+      ],
+      "P": [
+        "ch",
+        "qo",
+        "sh",
+        "da",
+        "ok",
+        "ot",
+        "ct",
+        "ol",
+        "yk",
+        "yt"
+      ],
+      "T": [
+        "ch",
+        "qo",
+        "sh",
+        "da",
+        "ok",
+        "ot",
+        "ct",
+        "ol",
+        "yk",
+        "yt"
+      ]
+    }
+  },
+  "dominance": {
+    "H": {
+      "top_marker": "ch",
+      "top_pct": 17.68634466308885,
+      "second_marker": "qo",
+      "second_pct": 9.254621347644603,
+      "ratio": 1.9110824742268042
+    },
+    "P": {
+      "top_marker": "ch",
+      "top_pct": 15.188125647221263,
+      "second_marker": "qo",
+      "second_pct": 9.90680013807387,
+      "ratio": 1.5331010452961673
+    },
+    "T": {
+      "top_marker": "ch",
+      "top_pct": 13.160854893138358,
+      "second_marker": "sh",
+      "second_pct": 11.023622047244094,
+      "ratio": 1.1938775510204083
+    }
+  },
+  "exclusive": {
+    "section_vocab_sizes": {
+      "T": 754,
+      "H": 3543,
+      "P": 1802
+    },
+    "exclusive_counts": {
+      "T": 375,
+      "H": 2789,
+      "P": 1144
+    }
+  },
+  "global_local": {
+    "multi_section_markers": [],
+    "single_section_markers": [],
+    "schema_type": "DOMAIN_LOCAL"
+  },
+  "verdict": "DOMAIN_LOCAL_SCHEMAS",
+  "interpretation": "Currier A uses different schemas per section."
+}

@@ -1,0 +1,303 @@
+{
+  "summary": {
+    "total_labels": 1529,
+    "total_tokens": 2392,
+    "multi_folio_labels": 54,
+    "very_short_labels": 13,
+    "internal_repetition": 507,
+    "folios_with_repetition": 28,
+    "top_prefixes": [
+      [
+        "ot",
+        216
+      ],
+      [
+        "ch",
+        195
+      ],
+      [
+        "ok",
+        160
+      ],
+      [
+        "",
+        128
+      ],
+      [
+        "o",
+        119
+      ]
+    ],
+    "top_suffixes": [
+      [
+        "",
+        307
+      ],
+      [
+        "y",
+        220
+      ],
+      [
+        "dy",
+        119
+      ],
+      [
+        "ar",
+        110
+      ],
+      [
+        "al",
+        77
+      ]
+    ]
+  },
+  "multi_folio_labels": {
+    "j": [
+      "f67r1",
+      "f57v",
+      "f67v2"
+    ],
+    "cheoteey": [
+      "f68r3",
+      "f65v"
+    ],
+    "oke": [
+      "f72v3",
+      "f65v"
+    ],
+    "cheoteeo": [
+      "f68r3",
+      "f65v"
+    ],
+    "okeorar": [
+      "f67r1",
+      "f72v2"
+    ],
+    "okeosar": [
+      "f67r1",
+      "f71v"
+    ],
+    "okarar": [
+      "f67r1",
+      "f72r3"
+    ],
+    "cheteey": [
+      "f67r1",
+      "f73r"
+    ],
+    "daraj": [
+      "f67r1",
+      "f68r1"
+    ],
+    "qokoaiin": [
+      "f67v2",
+      "f67r2"
+    ],
+    "ykchs": [
+      "f73v",
+      "f67r2"
+    ],
+    "okolar": [
+      "f71v",
+      "f69v",
+      "f67r2"
+    ],
+    "okchos": [
+      "f69r",
+      "f67v2"
+    ],
+    "okeeodal": [
+      "f70v1",
+      "f68r1"
+    ],
+    "otochedy": [
+      "f68r1",
+      "f72r3"
+    ],
+    "otchoky": [
+      "f70r1",
+      "f68r2"
+    ],
+    "shoekey": [
+      "f71r",
+      "f68v3"
+    ],
+    "k*y": [
+      "f68v3",
+      "f70r2"
+    ],
+    "oteeys": [
+      "f69v",
+      "f68v2"
+    ],
+    "yteod": [
+      "f72v1",
+      "f68v1"
+    ],
+    "choikhy": [
+      "f68v1",
+      "f70r2"
+    ],
+    "oteotey": [
+      "f72v2",
+      "f70v2",
+      "f68v1",
+      "f71r"
+    ],
+    "araly": [
+      "f70v1",
+      "f71v",
+      "f68v1",
+      "f69r"
+    ],
+    "otolam": [
+      "f72r2",
+      "f73v",
+      "f69r"
+    ],
+    "okchr": [
+      "f71v",
+      "f69r"
+    ],
+    "okcheo": [
+      "f70v2",
+      "f69r"
+    ],
+    "otoar": [
+      "f72r2",
+      "f73v",
+      "f69v"
+    ],
+    "okeeas": [
+      "f72r1",
+      "f69v"
+    ],
+    "ey": [
+      "f70r1",
+      "f69v"
+    ],
+    "okodchy": [
+      "f73v",
+      "f69v"
+    ],
+    "cheo*": [
+      "f72r3",
+      "f69v"
+    ],
+    "chese": [
+      "f70r2",
+      "f69v"
+    ],
+    "okeedaly": [
+      "f72v3",
+      "f70r2"
+    ],
+    "shopcho": [
+      "f71v",
+      "f70r2"
+    ],
+    "otchoshy": [
+      "f72r1",
+      "f70r2"
+    ],
+    "oteady": [
+      "f70v2",
+      "f70r2"
+    ],
+    "sheodaly": [
+      "f70v2",
+      "f72v2"
+    ],
+    "ola*": [
+      "f70v2",
+      "f72r3"
+    ],
+    "otaldar": [
+      "f70v2",
+      "f71r"
+    ],
+    "okyl": [
+      "f70v2",
+      "f72v1"
+    ],
+    "oteas": [
+      "f70v1",
+      "f72v1",
+      "f73r"
+    ],
+    "cheokeo": [
+      "f70v1",
+      "f72v3"
+    ],
+    "okealar": [
+      "f70v1",
+      "f72r2"
+    ],
+    "gy": [
+      "f70v1",
+      "f72r2"
+    ],
+    "chpaly": [
+      "f71v",
+      "f72v1"
+    ],
+    "okeodaly": [
+      "f71v",
+      "f72r1"
+    ],
+    "otaraldy": [
+      "f72r2",
+      "f72r1"
+    ],
+    "***s": [
+      "f72r3",
+      "f72r1",
+      "f73r"
+    ],
+    "okeolaiin": [
+      "f72v3",
+      "f72r3"
+    ],
+    "alaly": [
+      "f72r3",
+      "f73v"
+    ],
+    "okalair": [
+      "f72v1",
+      "f72r3"
+    ],
+    "okeealy": [
+      "f72v1",
+      "f72r3"
+    ],
+    "oksedy": [
+      "f72v2",
+      "f73r"
+    ],
+    "okchs": [
+      "f73v",
+      "f73r"
+    ]
+  },
+  "very_short": [
+    "*d",
+    "og",
+    "ya",
+    "ai",
+    "ci",
+    "em",
+    "fo",
+    "*i",
+    "yr",
+    "ey",
+    "j",
+    "gy",
+    "sr"
+  ],
+  "section_distribution": {
+    "C": 418,
+    "H": 19,
+    "A": 480,
+    "Z": 645
+  }
+}

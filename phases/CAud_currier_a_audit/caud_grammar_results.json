@@ -1,0 +1,35 @@
+{
+  "vocabulary": {
+    "total_tokens": 37214,
+    "unique_types": 5101,
+    "ttr": 0.13707206965120652,
+    "hapax_ratio": 0.36443834542246617
+  },
+  "classes": {
+    "n_classes": 3,
+    "silhouette": 0.04948866173026607,
+    "class_sizes": [
+      68,
+      391,
+      80
+    ]
+  },
+  "compression": {
+    "token_entropy": 9.996108755282524,
+    "class_entropy": 0.7401414227848033,
+    "compression_ratio": 13.505673980077859,
+    "coverage": 0.6950072553340141,
+    "mapped_tokens": 25864,
+    "total_tokens": 37214
+  },
+  "regularities": {
+    "coverage": 0.007676810842159885,
+    "missing_count": 1141196
+  },
+  "comparison": {
+    "a_n_classes": 3,
+    "b_n_classes": 4,
+    "vocab_overlap_ratio": 0.2893539581437671
+  },
+  "verdict": "A_LACKS_GRAMMAR"
+}

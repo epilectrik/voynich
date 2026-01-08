@@ -1,0 +1,103 @@
+============================================================
+TRANSCRIPTION VALIDITY ANALYSIS
+============================================================
+
+TEST 1: Word counts per folio
+----------------------------------------
+  MISMATCH: 100r - Ours: 102, ZL: 72
+  MISMATCH: 100v - Ours: 83, ZL: 70
+  MISMATCH: 102r1 - Ours: 110, ZL: 65
+  MISMATCH: 102r2 - Ours: 147, ZL: 117
+  MISMATCH: 102v1 - Ours: 134, ZL: 102
+  MISMATCH: 102v2 - Ours: 175, ZL: 147
+  MISMATCH: 103r - Ours: 562, ZL: 343
+  MISMATCH: 103v - Ours: 480, ZL: 316
+  MISMATCH: 104r - Ours: 512, ZL: 304
+  MISMATCH: 104v - Ours: 533, ZL: 323
+
+Exact matches: 0/202 (0.0%)
+Close (within 10%): 15/202 (7.4%)
+Mismatch: 187/202 (92.6%)
+
+============================================================
+TEST 2: First word of each folio (position-aligned)
+----------------------------------------
+
+1r: OURS="fa19s          " ZL="               "
+1v: OURS="h1s9           " ZL="               "
+2r: OURS="h98an9         " ZL="               "
+2v: OURS="hoom           " ZL="               "
+3r: OURS="k2cos          " ZL="               "
+3v: OURS="hoam           " ZL="               "
+4r: OURS="ho8ae19        " ZL="               "
+4v: OURS="j1oom          " ZL="               "
+5r: OURS="h2o89          " ZL="               "
+5v: OURS="hA1coy         " ZL="               "
+
+============================================================
+TEST 3: Character mapping derivation
+----------------------------------------
+
+Found 2476 word pairs with matching lengths
+
+Derived mapping (our char -> most common ZL char):
+  '$' -> 's' (100% of 1) [OK]
+  '%' -> 's' (100% of 1) [OK]
+  '(' -> 'y' (75% of 8) [OK]
+  '*' -> 'm' (29% of 7) [INCONSISTENT]
+  '-' -> 'y' (43% of 107) [INCONSISTENT]
+  '1' -> 'c' (76% of 152) [OK]
+  '2' -> 's' (67% of 27) [OK]
+  '3' -> 's' (100% of 4) [OK]
+  '4' -> 'q' (95% of 197) [OK]
+  '5' -> 's' (100% of 2) [OK]
+  '6' -> 'd' (100% of 3) [OK]
+  '7' -> 'd' (91% of 86) [OK]
+  '8' -> 'd' (76% of 294) [OK]
+  '9' -> 'y' (77% of 456) [OK]
+  '=' -> 'y' (50% of 48) [INCONSISTENT]
+  'A' -> 'a' (26% of 23) [INCONSISTENT]
+  'C' -> 'e' (100% of 8) [OK]
+  'D' -> 't' (100% of 1) [OK]
+  'E' -> 'e' (100% of 1) [OK]
+  'H' -> 'h' (100% of 1) [OK]
+  'I' -> 'i' (100% of 5) [OK]
+  'J' -> 'a' (100% of 1) [OK]
+  'K' -> 'c' (33% of 6) [INCONSISTENT]
+  'L' -> 'e' (100% of 1) [OK]
+  'M' -> 'y' (100% of 1) [OK]
+  'N' -> 'a' (38% of 8) [INCONSISTENT]
+  'P' -> 'm' (100% of 1) [OK]
+  'T' -> 'a' (50% of 2) [INCONSISTENT]
+  'X' -> 'o' (100% of 1) [OK]
+  'Y' -> 'd' (100% of 1) [OK]
+  'Z' -> 'r' (100% of 1) [OK]
+  'a' -> 'a' (83% of 409) [OK]
+  'c' -> 'e' (78% of 373) [OK]
+  'e' -> 'l' (86% of 382) [OK]
+  'g' -> 'p' (50% of 2) [INCONSISTENT]
+  'h' -> 'k' (87% of 392) [OK]
+  'i' -> 'i' (86% of 21) [OK]
+  'j' -> 'p' (83% of 6) [OK]
+  'k' -> 't' (91% of 234) [OK]
+  'm' -> 'n' (31% of 16) [INCONSISTENT]
+  'n' -> 'i' (69% of 16) [OK]
+  'o' -> 'o' (83% of 845) [OK]
+  'p' -> 'm' (54% of 37) [OK]
+  's' -> 's' (65% of 69) [OK]
+  't' -> 's' (100% of 4) [OK]
+  'u' -> 'e' (50% of 2) [INCONSISTENT]
+  'x' -> 'r' (80% of 5) [OK]
+  'y' -> 'r' (83% of 257) [OK]
+  'z' -> 'i' (80% of 5) [OK]
+  '�' -> 'o' (75% of 4) [OK]
+
+Consistent: 40, Inconsistent: 10
+
+============================================================
+VERDICT
+============================================================
+
+STATUS: SIGNIFICANTLY DIFFERENT
+
+PROJECT IMPACT: REQUIRES REVIEW

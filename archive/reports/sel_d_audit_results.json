@@ -1,0 +1,207 @@
+{
+  "test1_principality": {
+    "total": 17,
+    "unique": 14,
+    "potentially_redundant": 3,
+    "corpus_blocking": 11,
+    "theoretical": 6,
+    "details": [
+      {
+        "id": 1,
+        "transition": "shey -> aiin",
+        "forward_count": 0,
+        "reverse_count": 10,
+        "src_involved_in": 3,
+        "tgt_involved_in": 3,
+        "is_unique": false,
+        "impact": "CORPUS_BLOCKING",
+        "status": "POTENTIALLY_REDUNDANT"
+      },
+      {
+        "id": 2,
+        "transition": "shey -> al",
+        "forward_count": 0,
+        "reverse_count": 6,
+        "src_involved_in": 3,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 3,
+        "transition": "shey -> c",
+        "forward_count": 0,
+        "reverse_count": 0,
+        "src_involved_in": 3,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "THEORETICAL",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 4,
+        "transition": "chol -> r",
+        "forward_count": 0,
+        "reverse_count": 2,
+        "src_involved_in": 1,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 5,
+        "transition": "chedy -> ee",
+        "forward_count": 0,
+        "reverse_count": 0,
+        "src_involved_in": 1,
+        "tgt_involved_in": 2,
+        "is_unique": true,
+        "impact": "THEORETICAL",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 6,
+        "transition": "dy -> aiin",
+        "forward_count": 0,
+        "reverse_count": 8,
+        "src_involved_in": 2,
+        "tgt_involved_in": 3,
+        "is_unique": false,
+        "impact": "CORPUS_BLOCKING",
+        "status": "POTENTIALLY_REDUNDANT"
+      },
+      {
+        "id": 7,
+        "transition": "dy -> chey",
+        "forward_count": 0,
+        "reverse_count": 3,
+        "src_involved_in": 2,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 8,
+        "transition": "l -> chol",
+        "forward_count": 0,
+        "reverse_count": 1,
+        "src_involved_in": 1,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 9,
+        "transition": "or -> dal",
+        "forward_count": 0,
+        "reverse_count": 16,
+        "src_involved_in": 1,
+        "tgt_involved_in": 2,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 10,
+        "transition": "chey -> chedy",
+        "forward_count": 0,
+        "reverse_count": 5,
+        "src_involved_in": 2,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 11,
+        "transition": "chey -> shedy",
+        "forward_count": 0,
+        "reverse_count": 14,
+        "src_involved_in": 2,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 12,
+        "transition": "ar -> dal",
+        "forward_count": 0,
+        "reverse_count": 7,
+        "src_involved_in": 1,
+        "tgt_involved_in": 2,
+        "is_unique": true,
+        "impact": "CORPUS_BLOCKING",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 13,
+        "transition": "c -> ee",
+        "forward_count": 0,
+        "reverse_count": 0,
+        "src_involved_in": 1,
+        "tgt_involved_in": 2,
+        "is_unique": true,
+        "impact": "THEORETICAL",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 14,
+        "transition": "he -> t",
+        "forward_count": 0,
+        "reverse_count": 0,
+        "src_involved_in": 2,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "THEORETICAL",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 15,
+        "transition": "he -> or",
+        "forward_count": 0,
+        "reverse_count": 0,
+        "src_involved_in": 2,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "THEORETICAL",
+        "status": "UNIQUE"
+      },
+      {
+        "id": 16,
+        "transition": "shedy -> aiin",
+        "forward_count": 0,
+        "reverse_count": 12,
+        "src_involved_in": 2,
+        "tgt_involved_in": 3,
+        "is_unique": false,
+        "impact": "CORPUS_BLOCKING",
+        "status": "POTENTIALLY_REDUNDANT"
+      },
+      {
+        "id": 17,
+        "transition": "shedy -> o",
+        "forward_count": 0,
+        "reverse_count": 0,
+        "src_involved_in": 2,
+        "tgt_involved_in": 1,
+        "is_unique": true,
+        "impact": "THEORETICAL",
+        "status": "UNIQUE"
+      }
+    ]
+  },
+  "test2_class_minimality": {
+    "class_sizes": {
+      "PHASE_ORDERING": 7,
+      "COMPOSITION_JUMP": 4,
+      "CONTAINMENT_TIMING": 4,
+      "RATE_MISMATCH": 1,
+      "ENERGY_OVERSHOOT": 1
+    },
+    "overlap_matrix": {
+      

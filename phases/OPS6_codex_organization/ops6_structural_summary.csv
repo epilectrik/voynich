@@ -1,0 +1,6 @@
+hypothesis,status,effect_size,p_value_proxy
+CEI Smoothing,SUPPORTED,1.892,0.028
+High-CEI Isolation,INCONCLUSIVE,-0.114,0.414
+Restart Placement,SUPPORTED,2.241,0.019
+Quire Boundary Interaction,INCONCLUSIVE,1.75,0.033
+Navigation Topology,REJECTED,-7.334,0.000

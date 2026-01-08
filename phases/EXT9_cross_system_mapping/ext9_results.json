@@ -1,0 +1,30 @@
+{
+  "test1_modal_split": {
+    "shared_bases": 217,
+    "modal_split_count": 14,
+    "total_testable": 27
+  },
+  "test2_ct_in_b": {
+    "ct_in_b": 214,
+    "ct_folios": 48
+  },
+  "test3_balanced": {
+    "balanced_count": 161,
+    "by_prefix": {
+      "da": 11,
+      "other": 58,
+      "sh": 15,
+      "ch": 30,
+      "ot": 7,
+      "qo": 26,
+      "ok": 11,
+      "ol": 3,
+      "ct": 0
+    }
+  },
+  "test4_suffix": {
+    "a_enriched": 5,
+    "b_enriched": 12,
+    "balanced": 10
+  }
+}

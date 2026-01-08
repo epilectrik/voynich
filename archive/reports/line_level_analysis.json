@@ -1,0 +1,55 @@
+{
+  "phase": "LINE",
+  "tests": [
+    {
+      "test": "LINE-1",
+      "line_initial_count": 2406,
+      "line_final_count": 2406,
+      "mid_line_count": 18580,
+      "link_initial_rate": 0.055278470490440566,
+      "link_final_rate": 0.055278470490440566,
+      "link_mid_rate": 0.0926264800861141,
+      "initial_enrichment": 0.5967890654923799,
+      "final_enrichment": 0.5967890654923799,
+      "chi2": 68.58995339317245,
+      "p_value": 1.2760887021837352e-15,
+      "verdict": "WEAK SIGNAL - Some position effect detected"
+    },
+    {
+      "test": "LINE-2",
+      "folios_analyzed": 82,
+      "observed_cv": 0.2631871047365411,
+      "null_cv": 0.8809696676349175,
+      "z_score": -3.597998608264139,
+      "mean_line_length": 9.677685950413224,
+      "std_line_length": 3.3304626438430467,
+      "verdict": "SIGNAL - Lines MORE regular than random (deliberate chunking)"
+    },
+    {
+      "test": "LINE-3",
+      "link_count": 1987,
+      "link_mean_position": 0.49526582400714847,
+      "all_mean_position": 0.5,
+      "ks_stat": 0.03736051176009314,
+      "ks_p": 0.011746694475310075,
+      "end_enrichment": 0.9942854547617749,
+      "start_enrichment": 1.0184994079979826,
+      "verdict": "WEAK SIGNAL - Some position bias detected"
+    },
+    {
+      "test": "LINE-4",
+      "within_line_bigrams": 21000,
+      "cross_line_bigrams": 2338,
+      "within_forbidden": 4,
+      "cross_forbidden": 0,
+      "within_rate": 0.00019047619047619048,
+      "cross_rate": 0.0,
+      "fisher_p": 1.0,
+      "odds_ratio": Infinity,
+      "verdict": "NULL - No significant difference between within/cross line"
+    }
+  ],
+  "signals": 3,
+  "nulls": 1,
+  "conclusion": "LINES ARE FORMAL CONTROL BLOCKS - Add constraints"
+}

@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "phase": "OPS-R",
+    "title": "Abstraction Layer Reconciliation",
+    "timestamp": "2026-01-05",
+    "purpose": "Reconcile surface grammar (forward-progressing) with latent execution (closed-loop)"
+  },
+  "reconciliation_problem": {
+    "surface_properties": [
+      "49 instruction classes",
+      "Forward-progressing composition",
+      "Non-repetitive token sequences",
+      "75,248 total instructions"
+    ],
+    "latent_properties": [
+      "2-cycle oscillation (universal)",
+      "4 control regimes",
+      "100% STATE-C convergence",
+      "Closed-loop behavior"
+    ],
+    "apparent_paradox": "Forward-progressing grammar implements closed-loop control"
+  },
+  "latent_state_reconstruction": {
+    "equivalence_classes": {
+      "surface_level": {
+        "cardinality": 49,
+        "description": "Instruction classes"
+      },
+      "oscillation_level": {
+        "cardinality": 2,
+        "description": "Dominant 2-cycle (universal)"
+      },
+      "attractor_level": {
+        "cardinality": 1,
+        "description": "STATE-C terminal"
+      }
+    },
+    "compression_ratio": {
+      "surface_to_oscillation": 24.5,
+      "surface_to_attractor": 49.0,
+      "total": "49:2:1"
+    },
+    "many_to_one_mapping": {
+      "description": "Many surface tokens produce identical latent states",
+      "evidence": "All 83 folios show dominant_cycle_order = 2"
+    }
+  },
+  "non_lexical_loops": {
+    "token_space": {
+      "behavior": "Forward-progressing, non-repetitive",
+      "cardinality": 75248
+    },
+    "state_space": {
+      "behavior": "Cyclic, recurrent",
+      "dominant_cycle": 2
+    },
+    "regime_space": {
+      "behavior": "Bidirectional switching",
+      "edges": 9,
+      "nodes": 4
+    },
+    "reconciliation": "Loops occur in state space, not token space",
+    "key_insight": "Irreversibility at token level coexists with recurrence at state level"
+  },
+  "link_reinterpretation": {
+    "type": "CLASS_OF_TRAJECTORIES",
+    "properties": {
+      "corpus_density": 0.38,
+      "cei_correlation": -0.7057,
+      "hazard_violations": 0,
+      "position_bias": "uniform"
+    },
+    "class_definition": [
+      "Non-intervention (no state change)",
+      "Hazard preservation (no forbidden transition approach)",
+      "CEI dampening (reduces engagement intensity)"
+    ],
+    "finding": "Different surface tokens realize same latent function"
+  },
+  "human_track_coordination": {
+    "hypothesis": "Compensates for cognitive load during latent waiting loops",
+    "tests": {
+      "link_proximity": {
+        "value": 0.996,
+        "support": "STRONG"
+      },
+      "active_during_waiting": {
+        "value": true,
+        "support": "STRONG"
+      },
+      "absent_during_intervention": {
+        "value": true,
+        "support": "STRONG"
+      }
+    },
+    "verdict": "CONFIRMED"
+  },
+  "currier_ab_reconciliation": {
+    "status": "INSUFFICIENT_DATA",
+    "currier_a_count": 0,
+    "currier_b_count": 83,
+    "reason": "OPS corpus contains exclusively Currier B material"
+  },
+  "consistency_audit": {
+    "contradicts_ops7": false,
+    "requires_new_primitives": false,
+    "introduces_semantics": false,
+    "overall_status": "VALID"
+  },
+  "reconciliation_status": {
+    "surface_vs_latent": "RECONCILED",
+    "non_lexical_loops": "RECONCILED",
+    "link_implementation": "RECONCILED",
+    "human_track_coordination": "RECONCILED",
+    "currier_ab": "NOT_TESTED"
+  },
+  "structural_position_statement": "Surface grammar generates forward-progressing text that implements cyclic control in state space.",
+  "what_this_does_not_establish": [
+    "Token meanings",
+    "Material mappings",
+    "Product identification",
+    "Historical context",
+    "Illustration interpretation"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "axis_results": {
+    "prefix_count": 8,
+    "prefix_variance": 102.60741309474867,
+    "middle_count": 1155,
+    "middle_variance": 131.26714698915424,
+    "suffix_count": 27,
+    "suffix_variance": 160.51064442455765
+  },
+  "pm_interaction": {
+    "exclusive_middles": 28,
+    "universal_middles": 10
+  },
+  "ps_interaction": {
+    "universal_suffixes": 22
+  },
+  "three_way": {
+    "full_combos": 1329,
+    "top_10_share": 0.17215826386132063
+  }
+}

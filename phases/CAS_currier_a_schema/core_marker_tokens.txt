@@ -1,0 +1,104 @@
+# CORE MARKER TOKENS (frequency >= 10)
+# Format: PREFIX TOKEN COUNT
+
+
+## CH
+chol	194
+chor	130
+chy	64
+chey	55
+chody	34
+cheor	34
+cheol	34
+chaiin	33
+cho	26
+char	22
+cheey	22
+chodaiin	20
+choky	18
+cheody	17
+chckhy	17
+chal	12
+chcthy	12
+choty	11
+chom	11
+chocthy	11
+chokchy	11
+cheky	11
+cham	10
+chos	10
+cheo	10
+
+## CT
+cthy	74
+cthol	44
+cthor	33
+cthey	24
+cthaiin	13
+cthar	11
+ctho	10
+
+## DA
+daiin	371
+dain	64
+dar	62
+dal	47
+dam	32
+dair	29
+dan	13
+
+## OK
+oky	35
+okaiin	28
+okol	26
+okeey	16
+okal	16
+okchy	15
+okeol	14
+okor	11
+okchor	10
+
+## OL
+ol	50
+
+## OT
+otol	27
+oty	27
+otaiin	23
+otchy	22
+otchol	21
+otchor	14
+otal	12
+
+## QO
+qotchy	42
+qokol	33
+qokchy	30
+qoky	27
+qoty	24
+qokeey	23
+qotol	19
+qotor	17
+qokaiin	13
+qotchol	12
+qokchol	12
+qotchor	12
+qokeol	12
+qotaiin	11
+qokey	11
+qokor	11
+
+## SH
+shol	91
+sho	79
+shor	51
+shy	46
+shey	38
+sheey	23
+shody	21
+sheol	20
+shaiin	16
+sheor	16
+sheo	14
+shodaiin	11
+sheody	10

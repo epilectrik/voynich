@@ -1,0 +1,428 @@
+{
+  "metadata": {
+    "phase": "OPS-2",
+    "title": "Control Strategy Clustering",
+    "timestamp": "2026-01-04T21:03:10.137083",
+    "selected_method": "kmeans",
+    "selected_k": 4,
+    "n_clusters": 4,
+    "n_folios": 83
+  },
+  "assignments": {
+    "f103r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f103v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f104r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f104v": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f105r": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f105v": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f106r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f106v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f107r": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f107v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f108r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f108v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f111r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f111v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f112r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f112v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f113r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f113v": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f114r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f114v": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f115r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f115v": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f116r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f26r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f26v": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f31r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f31v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f33r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f33v": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f34r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f34v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f39r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f39v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f40r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f40v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f41r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f41v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f43r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f43v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f46r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f46v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f48r": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f48v": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f50r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f50v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f55r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f55v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f57r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f66r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f66v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f75r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f75v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f76r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f76v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f77r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f77v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f78r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f78v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f79r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f79v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f80r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f80v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f81r": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f81v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f82r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f82v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f83r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f83v": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f84r": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f84v": {
+      "cluster_id": "REGIME_1",
+      "numeric_id": 0,
+      "confidence": "STABLE"
+    },
+    "f85r1": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f85r2": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f85v2": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f86v3": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f86v4": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f86v5": {
+      "cluster_id": "REGIME_2",
+      "numeric_id": 1,
+      "confidence": "STABLE"
+    },
+    "f86v6": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f94r": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f94v": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f95r1": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f95r2": {
+      "cluster_id": "REGIME_3",
+      "numeric_id": 2,
+      "confidence": "STABLE"
+    },
+    "f95v1": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    },
+    "f95v2": {
+      "cluster_id": "REGIME_4",
+      "numeric_id": 3,
+      "confidence": "STABLE"
+    }
+  }
+}
