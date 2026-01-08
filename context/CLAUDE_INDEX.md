@@ -51,6 +51,32 @@ When auditing this project, do not treat sparse documentation as a gap. Some are
 
 ---
 
+## Default Resolution Policy
+
+Unless explicitly instructed otherwise, follow this procedure:
+
+1. Attempt to resolve the user's question using ONLY files in `context/`.
+2. If the answer can be fully determined from context:
+   - Answer directly.
+   - Do NOT read phase or archive files.
+3. If the context system is insufficient:
+   - REPORT what specific information is missing.
+   - STOP.
+4. Do NOT escalate into phase reports, archives, or raw data unless the user
+   explicitly requests investigation, verification, or audit.
+
+---
+
+## Escalation Rule
+
+Reading any files outside `context/` (e.g., `phases/`, `archive/`, raw data)
+is considered an escalation step.
+
+Escalation must be justified by demonstrated context insufficiency and
+requires explicit authorization from the user.
+
+---
+
 ## Navigation
 
 | I need to... | Read this file |
