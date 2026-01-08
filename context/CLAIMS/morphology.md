@@ -1,4 +1,4 @@
-# Morphology Constraints (C349-C382, C386-C402, C407-C411)
+# Morphology Constraints (C349-C382, C386-C402, C407-C412)
 
 **Scope:** Morphological structure, transitions, functional grammar
 **Status:** CLOSED
@@ -224,7 +224,7 @@ Only enriched role bigram (1.73x). Big interventions cluster.
 
 ---
 
-## Sister Pair Analysis (C407-C411)
+## Sister Pair Analysis (C407-C412)
 
 ### C407 - DA is Infrastructure
 **Tier:** 2 | **Status:** CLOSED
@@ -246,6 +246,9 @@ H prefers ch (78-92%). B balanced (42-57%). Quire-level conditioning.
 
 ### C411 - Deliberate Over-Specification
 → See [C411_over_specification.md](C411_over_specification.md)
+
+### C412 - Sister-Escape Anticorrelation
+→ See [C412_sister_escape_anticorrelation.md](C412_sister_escape_anticorrelation.md)
 
 ---
 

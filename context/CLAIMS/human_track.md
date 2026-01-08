@@ -1,4 +1,6 @@
-# Human Track Constraints (C166-C172, C341-C348, C404-C406)
+# Human Track Constraints (C166-C172, C341-C348, C404-C406, C413)
+
+> **For most questions, see:** [HT_CONTEXT_SUMMARY.md](HT_CONTEXT_SUMMARY.md) (PRIMARY, context-sufficient)
 
 **Scope:** HT layer structure, behavior, non-operational status
 **Status:** CLOSED
@@ -81,6 +83,9 @@ HT presence doesn't alter subsequent grammar probabilities. Chi2 significant but
 **Tier:** 2 | **Status:** CLOSED
 HT follows Zipf distribution (exponent 0.892, R²=0.92) with 67.5% hapax rate. Consistent with productive compositional system.
 **Source:** HTC
+
+### C413 - Grammar Trigger
+→ See [C413_ht_grammar_trigger.md](C413_ht_grammar_trigger.md)
 
 ---
 

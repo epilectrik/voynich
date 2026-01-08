@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 411 validated constraints | **Version:** 1.8
+**Total:** 413 validated constraints | **Version:** 1.8
 
 ---
 
@@ -254,17 +254,20 @@
 
 ---
 
-## Human Track Closure (C404-C406)
+## Human Track Closure (C404-C406, C413)
+
+> **Context-Sufficient Summary:** [HT_CONTEXT_SUMMARY.md](HT_CONTEXT_SUMMARY.md)
 
 | # | Constraint | Tier | Status |
 |---|------------|------|--------|
 | 404 | HT TERMINAL INDEPENDENCE (p=0.92) | 2 | → [C404_ht_non_operational.md](C404_ht_non_operational.md) |
 | 405 | HT CAUSAL DECOUPLING (V=0.10) | 2 | ⊂ human_track |
 | 406 | HT GENERATIVE STRUCTURE (Zipf=0.89) | 2 | ⊂ human_track |
+| 413 | HT prefix phase-class predicted by preceding grammar (V=0.319) | 2 | → [C413_ht_grammar_trigger.md](C413_ht_grammar_trigger.md) |
 
 ---
 
-## Sister Pairs (C407-C410)
+## Sister Pairs (C407-C412)
 
 | # | Constraint | Tier | Status |
 |---|------------|------|--------|
@@ -272,6 +275,7 @@
 | 408 | ch-sh/ok-ot form EQUIVALENCE CLASSES | 2 | → [C408_sister_pairs.md](C408_sister_pairs.md) |
 | 409 | Sister pairs MUTUALLY EXCLUSIVE but substitutable | 2 | ⊂ morphology |
 | 410 | Sister choice is SECTION-CONDITIONED | 2 | ⊂ morphology |
+| 412 | ch-preference anticorrelated with qo-escape density (rho=-0.33) | 2 | → [C412_sister_escape_anticorrelation.md](C412_sister_escape_anticorrelation.md) |
 
 ---
 
