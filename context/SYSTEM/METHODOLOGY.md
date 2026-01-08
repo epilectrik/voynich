@@ -112,6 +112,61 @@ is_canonical = token in canonical_types
 
 ---
 
+## Research Workflow (Automated)
+
+When Claude analyzes this project, follow this workflow:
+
+### Phase Analysis Protocol
+
+When analyzing a completed phase:
+
+1. **Load context first:**
+   - Read `context/CORE/frozen_conclusion.md` for Tier 0 facts
+   - Read `context/CLAIMS/INDEX.md` for constraint reference
+
+2. **Examine phase output:**
+   - Read `phases/<PHASE_NAME>/` directory
+   - Extract key metrics and findings
+   - Identify claims being made
+
+3. **Validate against existing constraints:**
+   - Search CLAIMS/ for related constraints
+   - Check for contradictions with Tier 0/1
+   - Note supporting evidence from Tier 2
+
+4. **Classify findings:**
+   | Finding Type | Action |
+   |--------------|--------|
+   | NEW structural claim | Propose new constraint (C412+) |
+   | CONFIRMS existing | Add citation to existing constraint |
+   | CONTRADICTS Tier 0-1 | Flag as potential error in analysis |
+   | SPECULATIVE | Assign Tier 3-4, add to SPECULATIVE/ |
+
+5. **Document:**
+   - Update relevant files in context/
+   - Add to CLAIMS/INDEX.md if new constraint
+   - Update MAPS/ cross-references
+
+### Constraint Lookup Protocol
+
+When user references a constraint:
+
+1. Check if number exists in `context/CLAIMS/INDEX.md`
+2. Determine if individual file or grouped registry
+3. Read the relevant file
+4. Always cite: Tier, closure status, source phase
+
+### New Analysis Protocol
+
+Before running new analysis:
+
+1. Check `context/CORE/falsifications.md` - don't retry rejected approaches
+2. Check `context/SYSTEM/STOP_CONDITIONS.md` - respect boundaries
+3. Define success criteria BEFORE running
+4. Assign expected tier to potential findings
+
+---
+
 ## Creating New Phases
 
 1. **Create directory:** `phases/PHASE_NAME/`

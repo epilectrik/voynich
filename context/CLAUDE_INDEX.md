@@ -139,6 +139,21 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
 ---
 
+## Automation
+
+This project includes skills and hooks for automated research workflows:
+
+| Tool | Purpose | Location |
+|------|---------|----------|
+| **phase-analysis** skill | Analyze phase results, validate constraints | `.claude/skills/phase-analysis/` |
+| **constraint-lookup** skill | Find and cite constraints | `.claude/skills/constraint-lookup/` |
+| **Constraint validator** | Warn on invalid C### references | `archive/scripts/validate_constraint_reference.py` |
+| **Metrics extractor** | Quick phase metric extraction | `archive/scripts/extract_phase_metrics.py` |
+
+**Workflows are documented in:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) → "Research Workflow (Automated)"
+
+---
+
 ## Context System
 
 This directory uses **progressive disclosure**. Do not read all files.
@@ -146,8 +161,9 @@ This directory uses **progressive disclosure**. Do not read all files.
 1. Start here (CLAUDE_INDEX.md)
 2. Follow links as needed
 3. Stop when you have enough context
+4. Use skills for repetitive research tasks
 
-See [README.md](README.md) for system documentation.
+See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) for navigation.
 
 ---
 
