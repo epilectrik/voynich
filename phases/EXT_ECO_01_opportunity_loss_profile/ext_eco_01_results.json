@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "phase": "EXT-ECO-01",
+    "title": "Opportunity-Loss Hazard Profile Analysis",
+    "timestamp": "2026-01-05T21:29:53.215096",
+    "tier": 3
+  },
+  "test_results": [
+    {
+      "test": "A",
+      "name": "Premature vs Late Action Asymmetry",
+      "metrics": {
+        "premature_count": 11,
+        "sequence_count": 6,
+        "late_count": 0,
+        "total_hazards": 17,
+        "premature_rate": 0.647,
+        "sequence_rate": 0.353,
+        "late_rate": 0.0
+      },
+      "opportunity_loss_prediction": "Premature > 70%, Late < 20%",
+      "physical_instability_prediction": "Both roughly equal, Late significant",
+      "observed": "Premature 64.7%, Sequence 35.3%, Late 0.0%",
+      "opportunity_loss_fit": "STRONG",
+      "physical_instability_fit": "WEAK",
+      "verdict": "OPPORTUNITY_LOSS"
+    },
+    {
+      "test": "B",
+      "name": "Collapse Shape (Binary vs Runaway)",
+      "metrics": {
+        "terminal_state_distribution": {
+          "other": 32,
+          "STATE-C": 48,
+          "initial": 3
+        },
+        "state_c_rate": 0.578,
+        "convergence_speed_mean": 0.2214,
+        "convergence_speed_std": 0.0418,
+        "convergence_cv": 0.189,
+        "cycle_regularity_mean": 3.448,
+        "cycle_regularity_std": 0.633
+      },
+      "opportunity_loss_prediction": "Clean collapse, high STATE-C rate, uniform convergence",
+      "physical_instability_prediction": "Oscillation, cascade, varied terminal states",
+      "observed": "STATE-C rate 57.8%, Convergence CV 0.19",
+      "is_binary_collapse": false,
+      "opportunity_loss_fit": "WEAK",
+      "physical_instability_fit": "WEAK",
+      "verdict": "AMBIGUOUS"
+    },
+    {
+      "test": "C",
+      "name": "WAIT Dominance",
+      "metrics": {
+        "mean_link_density": 0.3756,
+        "median_link_density": 0.3667,
+        "min_link_density": 0.2016,
+        "max_link_density": 0.5572,
+        "folios_above_35_percent": 0.578,
+        "mean_action_run_length": 2.9,
+        "max_action_run_length": 72
+      },
+      "opportunity_loss_prediction": "LINK > 35%, sparse action runs",
+      "physical_instability_prediction": "LINK < 25%, frequent intervention",
+      "observed": "Mean LINK 37.6%, 57.8% folios above 35%",
+      "is_wait_dominant": true,
+      "opportunity_loss_fit": "STRONG",
+      "physical_instability_fit": "WEAK",
+      "verdict": "OPPORTUNITY_LOSS"
+    },
+    {
+      "test": "D",
+      "name": "Restart Penalty Geometry",
+      "metrics": {
+        "restart_capable_count": 3,
+        "restart_capable_rate": 0.036,
+        "mean_recovery_ops": 16.07,
+        "max_recovery_ops": 67,
+        "zero_recovery_rate": 0.024
+      },
+      "opportunity_loss_prediction": "Few restarts (<10%), binary loss",
+      "physical_instability_prediction": "More restarts, graded recovery",
+      "observed": "Restart rate 3.6%, Zero recovery 2.4%",
+      "is_binary_penalty": false,
+      "opportunity_loss_fit": "STRONG",
+      "physical_instability_fit": "WEAK",
+      "verdict": "AMBIGUOUS"
+    },
+    {
+      "test": "E",
+      "name": "Risk vs Reward Structure",
+      "metrics": {
+        "aggressive_count": 6,
+        "conservative_count": 12,
+        "aggressive_mean_margin": 0.3662,
+        "conservative_mean_margin": 0.5244,
+        "margin_difference": -0.1583,
+        "aggressive_mean_speed": 0.2349,
+        "conservative_mean_speed": 0.2322,
+        "speed_difference": 0.0028
+      },
+      "opportunity_loss_prediction": "No reward for risk, aggressive = worse outcomes",
+      "physical_instability_prediction": "Risk-reward tradeoff, speed for margin",
+      "observed": "Margin diff -0.158, Speed diff +0.003",
+      "has_risk_reward_tradeoff": false,
+      "no_reward_for_risk": true,
+      "opportunity_loss_fit": "STRONG",
+      "physical_instability_fit": "WEAK",
+      "verdict": "OPPORTUNITY_LOSS"
+    },
+    {
+      "test": "F",
+      "name": "Absence of Salvage/Emergency Logic",
+      "metrics": {
+        "total_instructions": 76156,
+        "emergency_instructions": 0,
+        "emergency_rate": 0.0,
+        "rapid_intervention_runs": 3020,
+        "total_recovery_ops": 1334,
+        "mean_recovery_ops": 16.07
+      },
+      "opportunity_loss_prediction": "No emergency vocabulary, minimal recovery",
+      "physical_instability_prediction": "Emergency routines, rapid intervention patterns",
+      "observed": "Emergency rate 0.0000%, Rapid runs 3020",
+      "is_minimal_salvage": false,
+      "opportunity_loss_fit": "MODERATE",
+      "physical_instability_fit": "STRONG",
+      "verdict": "AMBIGUOUS"
+    }
+  ],
+  "comparative_assessment": {
+    "opportunity_loss_fits": {
+      "STRONG": 4,
+      "MODERATE": 1,
+      "WEAK": 1
+    },
+    "physical_instability_fits": {
+      "STRONG": 1,
+      "MODERATE": 0,
+      "WEAK": 5
+    },
+    "opportunity_loss_weighted": 15,
+    "physical_instability_weighted": 8,
+    "test_verdicts": {
+      "OPPORTUNITY_LOSS": 3,
+      "AMBIGUOUS": 3
+    },
+    "overall_verdict": "OPPORTUNITY_LOSS_DOMINANT",
+    "confidence": "HIGH"
+  }
+}

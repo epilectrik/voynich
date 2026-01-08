@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "phase": "OPS-6",
+    "title": "Codex Structure Analysis",
+    "timestamp": "2026-01-04T22:30:39.242300",
+    "n_folios": 83,
+    "n_randomizations": 1000
+  },
+  "cei_jump_distribution": {
+    "observed_mean": 0.1264,
+    "observed_max": 0.3677,
+    "null_mean": 0.1423,
+    "null_std": 0.0084
+  },
+  "neighborhood_buffering": {
+    "observed_variance": 0.01361,
+    "null_variance": 0.016282,
+    "damping_rate": 0.8275862068965517
+  },
+  "high_cei_isolation": {
+    "n_clusters": 18,
+    "max_cluster_size": 4,
+    "mean_neighbor_cei": 0.5711
+  },
+  "restart_placement": {
+    "restart_folios": [
+      "f50v",
+      "f57r",
+      "f82v"
+    ],
+    "mean_restart_cei": 0.398,
+    "percentile": 1.9
+  },
+  "navigation": {
+    "max_retreat_distance": 18,
+    "n_trap_positions": 9
+  },
+  "hypothesis_results": {
+    "smoothing": "SUPPORTED",
+    "isolation": "INCONCLUSIVE",
+    "restart": "SUPPORTED",
+    "quire": "INCONCLUSIVE",
+    "navigation": "REJECTED"
+  }
+}

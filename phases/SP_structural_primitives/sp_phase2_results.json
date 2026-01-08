@@ -1,0 +1,1842 @@
+{
+  "candidates": [
+    "daiin",
+    "ol",
+    "aiin",
+    "saiin",
+    "dol",
+    "dy",
+    "or",
+    "dar",
+    "dal",
+    "chol",
+    "s"
+  ],
+  "neighbor_results": {
+    "daiin": {
+      "a_before_grammar_pct": 15.43700340522134,
+      "a_after_grammar_pct": 9.250851305334846,
+      "b_before_grammar_pct": 15.789473684210526,
+      "b_after_grammar_pct": 18.596491228070175,
+      "neighbor_polarity": 4.849055100862257,
+      "a_top_before": [
+        [
+          "chol",
+          116
+        ],
+        [
+          "daiin",
+          51
+        ],
+        [
+          "shol",
+          39
+        ],
+        [
+          "chor",
+          36
+        ],
+        [
+          "chy",
+          30
+        ]
+      ],
+      "a_top_after": [
+        [
+          "daiin",
+          51
+        ],
+        [
+          "cthy",
+          40
+        ],
+        [
+          "dain",
+          34
+        ],
+        [
+          "cthor",
+          29
+        ],
+        [
+          "cthol",
+          26
+        ]
+      ],
+      "b_top_before": [
+        [
+          "chedy",
+          43
+        ],
+        [
+          "ol",
+          25
+        ],
+        [
+          "qoky",
+          23
+        ],
+        [
+          "qokeey",
+          23
+        ],
+        [
+          "daiin",
+          21
+        ]
+      ],
+      "b_top_after": [
+        [
+          "chey",
+          44
+        ],
+        [
+          "chedy",
+          41
+        ],
+        [
+          "ol",
+          29
+        ],
+        [
+          "shey",
+          26
+        ],
+        [
+          "shedy",
+          21
+        ]
+      ]
+    },
+    "ol": {
+      "a_before_grammar_pct": 14.527027027027026,
+      "a_after_grammar_pct": 20.945945945945947,
+      "b_before_grammar_pct": 18.305814788226847,
+      "b_after_grammar_pct": 20.674802584350324,
+      "neighbor_polarity": 2.024965561397722,
+      "a_top_before": [
+        [
+          "or",
+          15
+        ],
+        [
+          "chol",
+          11
+        ],
+        [
+          "dol",
+          7
+        ],
+        [
+          "cheeor",
+          6
+        ],
+        [
+          "sheol",
+          5
+        ]
+      ],
+      "a_top_after": [
+        [
+          "daiin",
+          23
+        ],
+        [
+          "chor",
+          14
+        ],
+        [
+          "s",
+          13
+        ],
+        [
+          "chol",
+          8
+        ],
+        [
+          "sho",
+          6
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qokain",
+          38
+        ],
+        [
+          "qokaiin",
+          29
+        ],
+        [
+          "daiin",
+          29
+        ],
+        [
+          "shedy",
+          27
+        ],
+        [
+          "dar",
+          26
+        ]
+      ],
+      "b_top_after": [
+        [
+          "chedy",
+          80
+        ],
+        [
+          "shedy",
+          75
+        ],
+        [
+          "aiin",
+          36
+        ],
+        [
+          "cheey",
+          30
+        ],
+        [
+          "sheey",
+          30
+        ]
+      ]
+    },
+    "aiin": {
+      "a_before_grammar_pct": 6.7357512953367875,
+      "a_after_grammar_pct": 11.398963730569948,
+      "b_before_grammar_pct": 7.7725118483412325,
+      "b_after_grammar_pct": 14.786729857819905,
+      "neighbor_polarity": 2.212263340127201,
+      "a_top_before": [
+        [
+          "s",
+          35
+        ],
+        [
+          "or",
+          26
+        ],
+        [
+          "o",
+          7
+        ],
+        [
+          "r",
+          6
+        ],
+        [
+          "ol",
+          5
+        ]
+      ],
+      "a_top_after": [
+        [
+          "shol",
+          7
+        ],
+        [
+          "qotchy",
+          6
+        ],
+        [
+          "dy",
+          5
+        ],
+        [
+          "or",
+          4
+        ],
+        [
+          "al",
+          4
+        ]
+      ],
+      "b_top_before": [
+        [
+          "or",
+          105
+        ],
+        [
+          "ar",
+          60
+        ],
+        [
+          "s",
+          53
+        ],
+        [
+          "ol",
+          36
+        ],
+        [
+          "r",
+          31
+        ]
+      ],
+      "b_top_after": [
+        [
+          "okaiin",
+          26
+        ],
+        [
+          "okal",
+          25
+        ],
+        [
+          "chey",
+          23
+        ],
+        [
+          "al",
+          22
+        ],
+        [
+          "ol",
+          21
+        ]
+      ]
+    },
+    "saiin": {
+      "a_before_grammar_pct": 8.823529411764707,
+      "a_after_grammar_pct": 9.558823529411764,
+      "b_before_grammar_pct": 14.251207729468598,
+      "b_after_grammar_pct": 17.632850241545892,
+      "neighbor_polarity": 6.75085251491901,
+      "a_top_before": [
+        [
+          "chan",
+          4
+        ],
+        [
+          "opydaiin",
+          4
+        ],
+        [
+          "chdy",
+          4
+        ],
+        [
+          "qoky",
+          4
+        ],
+        [
+          "cheor",
+          4
+        ]
+      ],
+      "a_top_after": [
+        [
+          "okear",
+          4
+        ],
+        [
+          "odaiin",
+          4
+        ],
+        [
+          "cheocphey",
+          4
+        ],
+        [
+          "oteos",
+          4
+        ],
+        [
+          "ols",
+          4
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qoky",
+          14
+        ],
+        [
+          "chckhy",
+          12
+        ],
+        [
+          "qokaiin",
+          11
+        ],
+        [
+          "qokal",
+          10
+        ],
+        [
+          "al",
+          8
+        ]
+      ],
+      "b_top_after": [
+        [
+          "ol",
+          16
+        ],
+        [
+          "shedy",
+          14
+        ],
+        [
+          "or",
+          14
+        ],
+        [
+          "shey",
+          14
+        ],
+        [
+          "chey",
+          13
+        ]
+      ]
+    },
+    "dol": {
+      "a_before_grammar_pct": 21.69811320754717,
+      "a_after_grammar_pct": 13.679245283018869,
+      "b_before_grammar_pct": 19.27710843373494,
+      "b_after_grammar_pct": 10.240963855421686,
+      "neighbor_polarity": 2.9296431007047055,
+      "a_top_before": [
+        [
+          "chol",
+          18
+        ],
+        [
+          "daiin",
+          10
+        ],
+        [
+          "oty",
+          6
+        ],
+        [
+          "ol",
+          6
+        ],
+        [
+          "qokeey",
+          6
+        ]
+      ],
+      "a_top_after": [
+        [
+          "dar",
+          8
+        ],
+        [
+          "shol",
+          8
+        ],
+        [
+          "daiin",
+          7
+        ],
+        [
+          "dair",
+          7
+        ],
+        [
+          "ol",
+          7
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qokal",
+          9
+        ],
+        [
+          "dal",
+          7
+        ],
+        [
+          "daiin",
+          7
+        ],
+        [
+          "qotol",
+          6
+        ],
+        [
+          "qokedy",
+          6
+        ]
+      ],
+      "b_top_after": [
+        [
+          "shedy",
+          15
+        ],
+        [
+          "kedy",
+          7
+        ],
+        [
+          "oty",
+          6
+        ],
+        [
+          "sheey",
+          6
+        ],
+        [
+          "checthy",
+          6
+        ]
+      ]
+    },
+    "dy": {
+      "a_before_grammar_pct": 19.26605504587156,
+      "a_after_grammar_pct": 15.137614678899082,
+      "b_before_grammar_pct": 14.962593516209477,
+      "b_after_grammar_pct": 18.453865336658353,
+      "neighbor_polarity": 3.8098560937106773,
+      "a_top_before": [
+        [
+          "daiin",
+          21
+        ],
+        [
+          "dy",
+          20
+        ],
+        [
+          "chol",
+          17
+        ],
+        [
+          "shol",
+          14
+        ],
+        [
+          "cthy",
+          10
+        ]
+      ],
+      "a_top_after": [
+        [
+          "daiin",
+          24
+        ],
+        [
+          "dy",
+          20
+        ],
+        [
+          "chol",
+          9
+        ],
+        [
+          "oty",
+          7
+        ],
+        [
+          "chckhy",
+          6
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qokedy",
+          14
+        ],
+        [
+          "dal",
+          12
+        ],
+        [
+          "shedy",
+          11
+        ],
+        [
+          "qotal",
+          10
+        ],
+        [
+          "chedy",
+          10
+        ]
+      ],
+      "b_top_after": [
+        [
+          "daiin",
+          20
+        ],
+        [
+          "qokedy",
+          13
+        ],
+        [
+          "qokal",
+          11
+        ],
+        [
+          "qokeedy",
+          9
+        ],
+        [
+          "qol",
+          9
+        ]
+      ]
+    },
+    "or": {
+      "a_before_grammar_pct": 19.718309859154928,
+      "a_after_grammar_pct": 25.0,
+      "b_before_grammar_pct": 15.612903225806452,
+      "b_after_grammar_pct": 25.161290322580644,
+      "neighbor_polarity": 2.13334847796456,
+      "a_top_before": [
+        [
+          "s",
+          18
+        ],
+        [
+          "daiin",
+          12
+        ],
+        [
+          "chol",
+          11
+        ],
+        [
+          "sho",
+          7
+        ],
+        [
+          "dair",
+          7
+        ]
+      ],
+      "a_top_after": [
+        [
+          "aiin",
+          26
+        ],
+        [
+          "ol",
+          15
+        ],
+        [
+          "chol",
+          13
+        ],
+        [
+          "chor",
+          11
+        ],
+        [
+          "al",
+          10
+        ]
+      ],
+      "b_top_before": [
+        [
+          "ar",
+          23
+        ],
+        [
+          "dal",
+          16
+        ],
+        [
+          "daiin",
+          15
+        ],
+        [
+          "saiin",
+          14
+        ],
+        [
+          "ol",
+          14
+        ]
+      ],
+      "b_top_after": [
+        [
+          "aiin",
+          105
+        ],
+        [
+          "ar",
+          30
+        ],
+        [
+          "shedy",
+          30
+        ],
+        [
+          "ol",
+          19
+        ],
+        [
+          "chey",
+          18
+        ]
+      ]
+    },
+    "dar": {
+      "a_before_grammar_pct": 12.8125,
+      "a_after_grammar_pct": 12.1875,
+      "b_before_grammar_pct": 18.81638846737481,
+      "b_after_grammar_pct": 17.147192716236724,
+      "neighbor_polarity": 5.481790591805767,
+      "a_top_before": [
+        [
+          "daiin",
+          13
+        ],
+        [
+          "dol",
+          8
+        ],
+        [
+          "qokchol",
+          6
+        ],
+        [
+          "cthal",
+          5
+        ],
+        [
+          "kaiin",
+          5
+        ]
+      ],
+      "a_top_after": [
+        [
+          "shey",
+          10
+        ],
+        [
+          "chor",
+          8
+        ],
+        [
+          "am",
+          8
+        ],
+        [
+          "shol",
+          7
+        ],
+        [
+          "chol",
+          7
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qokal",
+          25
+        ],
+        [
+          "qokain",
+          18
+        ],
+        [
+          "chedy",
+          17
+        ],
+        [
+          "olky",
+          15
+        ],
+        [
+          "qotal",
+          12
+        ]
+      ],
+      "b_top_after": [
+        [
+          "ol",
+          26
+        ],
+        [
+          "aiin",
+          25
+        ],
+        [
+          "ar",
+          24
+        ],
+        [
+          "shedy",
+          19
+        ],
+        [
+          "chedy",
+          17
+        ]
+      ]
+    },
+    "dal": {
+      "a_before_grammar_pct": 20.97902097902098,
+      "a_after_grammar_pct": 10.13986013986014,
+      "b_before_grammar_pct": 23.18840579710145,
+      "b_after_grammar_pct": 19.875776397515526,
+      "neighbor_polarity": 5.972650537867928,
+      "a_top_before": [
+        [
+          "daiin",
+          24
+        ],
+        [
+          "chol",
+          8
+        ],
+        [
+          "keey",
+          6
+        ],
+        [
+          "chor",
+          5
+        ],
+        [
+          "chey",
+          5
+        ]
+      ],
+      "a_top_after": [
+        [
+          "s",
+          14
+        ],
+        [
+          "chor",
+          9
+        ],
+        [
+          "chody",
+          7
+        ],
+        [
+          "chol",
+          7
+        ],
+        [
+          "chom",
+          7
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qokedy",
+          24
+        ],
+        [
+          "daiin",
+          17
+        ],
+        [
+          "qokain",
+          17
+        ],
+        [
+          "qokal",
+          16
+        ],
+        [
+          "shedy",
+          13
+        ]
+      ],
+      "b_top_after": [
+        [
+          "shedy",
+          33
+        ],
+        [
+          "daiin",
+          21
+        ],
+        [
+          "chedy",
+          16
+        ],
+        [
+          "or",
+          16
+        ],
+        [
+          "dy",
+          12
+        ]
+      ]
+    },
+    "chol": {
+      "a_before_grammar_pct": 16.93290734824281,
+      "a_after_grammar_pct": 28.8604898828541,
+      "b_before_grammar_pct": 16.129032258064516,
+      "b_after_grammar_pct": 16.129032258064516,
+      "neighbor_polarity": 6.7676663574839395,
+      "a_top_before": [
+        [
+          "chol",
+          78
+        ],
+        [
+          "chor",
+          35
+        ],
+        [
+          "otol",
+          24
+        ],
+        [
+          "daiin",
+          23
+        ],
+        [
+          "cheol",
+          18
+        ]
+      ],
+      "a_top_after": [
+        [
+          "daiin",
+          116
+        ],
+        [
+          "chol",
+          78
+        ],
+        [
+          "cthol",
+          27
+        ],
+        [
+          "chor",
+          26
+        ],
+        [
+          "shol",
+          25
+        ]
+      ],
+      "b_top_before": [
+        [
+          "qokaiin",
+          12
+        ],
+        [
+          "or",
+          8
+        ],
+        [
+          "qokol",
+          8
+        ],
+        [
+          "chedy",
+          8
+        ],
+        [
+          "sheey",
+          7
+        ]
+      ],
+      "b_top_after": [
+        [
+          "chedy",
+          13
+        ],
+        [
+          "ol",
+          11
+        ],
+        [
+          "kaiin",
+          11
+        ],
+        [
+          "keedy",
+          10
+        ],
+        [
+          "otar",
+          8
+        ]
+      ]
+    },
+    "s": {
+      "a_before_grammar_pct": 11.11111111111111,
+      "a_after_grammar_pct": 14.619883040935672,
+      "b_before_grammar_pct": 18.69918699186992,
+      "b_after_grammar_pct": 30.08130081300813,
+      "neighbor_polarity": 11.524746826415633,
+      "a_top_before": [
+        [
+          "daiin",
+          20
+        ],
+        [
+          "dal",
+          14
+        ],
+        [
+          "cthy",
+          14
+        ],
+        [
+          "ol",
+          13
+        ],
+        [
+          "chy",
+          10
+        ]
+      ],
+      "a_top_after": [
+        [
+          "aiin",
+          35
+        ],
+        [
+          "chol",
+          18
+        ],
+        [
+          "or",
+          18
+        ],
+        [
+          "y",
+          12
+        ],
+        [
+          "ar",
+          12
+        ]
+      ],
+      "b_top_before": [
+        [
+          "ol",
+          17
+        ],
+        [
+          "s",
+          17
+        ],
+        [
+          "aiin",
+          7
+        ],
+        [
+          "al",
+          7
+        ],
+        [
+          "chedy",
+          6
+        ]
+      ],
+      "b_top_after": [
+        [
+          "aiin",
+          53
+        ],
+        [
+          "s",
+          17
+        ],
+        [
+          "ain",
+          15
+        ],
+        [
+          "ar",
+          14
+        ],
+        [
+          "ol",
+          11
+        ]
+      ]
+    }
+  },
+  "position_results": {
+    "daiin": {
+      "a_mean": 0.5288979497912056,
+      "a_std": 0.2982064091102409,
+      "a_count": 1762,
+      "b_mean": 0.49771136619907586,
+      "b_std": 0.2944036074914595,
+      "b_count": 1140,
+      "position_polarity": 0.03118658359212978
+    },
+    "ol": {
+      "a_mean": 0.47312683735774275,
+      "a_std": 0.29312304407374007,
+      "a_count": 296,
+      "b_mean": 0.5155397175669733,
+      "b_std": 0.30464802387539697,
+      "b_count": 1393,
+      "position_polarity": 0.04241288020923051
+    },
+    "aiin": {
+      "a_mean": 0.5166108563016645,
+      "a_std": 0.2933224010828974,
+      "a_count": 193,
+      "b_mean": 0.5297230190060638,
+      "b_std": 0.3041237406283433,
+      "b_count": 1055,
+      "position_polarity": 0.0131121627043993
+    },
+    "saiin": {
+      "a_mean": 0.5197974277228571,
+      "a_std": 0.2942930109139942,
+      "a_count": 136,
+      "b_mean": 0.4654169103093024,
+      "b_std": 0.2817617202590313,
+      "b_count": 414,
+      "position_polarity": 0.05438051741355471
+    },
+    "dol": {
+      "a_mean": 0.5103797607095628,
+      "a_std": 0.29823158742915773,
+      "a_count": 212,
+      "b_mean": 0.46598619414546255,
+      "b_std": 0.28734162297298793,
+      "b_count": 166,
+      "position_polarity": 0.04439356656410026
+    },
+    "dy": {
+      "a_mean": 0.5694310781830706,
+      "a_std": 0.2939728675247458,
+      "a_count": 436,
+      "b_mean": 0.5661360368499335,
+      "b_std": 0.2954093319657474,
+      "b_count": 401,
+      "position_polarity": 0.003295041333137072
+    },
+    "or": {
+      "a_mean": 0.4819180425316052,
+      "a_std": 0.30800011772632924,
+      "a_count": 284,
+      "b_mean": 0.5004396931571237,
+      "b_std": 0.2999598858721385,
+      "b_count": 775,
+      "position_polarity": 0.01852165062551847
+    },
+    "dar": {
+      "a_mean": 0.5421821754545524,
+      "a_std": 0.29740284820781004,
+      "a_count": 320,
+      "b_mean": 0.5186991263384274,
+      "b_std": 0.29976221079619314,
+      "b_count": 659,
+      "position_polarity": 0.023483049116124977
+    },
+    "dal": {
+      "a_mean": 0.5550186642634626,
+      "a_std": 0.2881237994606747,
+      "a_count": 286,
+      "b_mean": 0.548596159160197,
+      "b_std": 0.29275268842894675,
+      "b_count": 483,
+      "position_polarity": 0.0064225051032655855
+    },
+    "chol": {
+      "a_mean": 0.48661185290154485,
+      "a_std": 0.29210514301447327,
+      "a_count": 939,
+      "b_mean": 0.4890734350098677,
+      "b_std": 0.292583894572191,
+      "b_count": 310,
+      "position_polarity": 0.0024615821083228684
+    },
+    "s": {
+      "a_mean": 0.5282322370090432,
+      "a_std": 0.2993298889702783,
+      "a_count": 513,
+      "b_mean": 0.5483417924205912,
+      "b_std": 0.3184692487265202,
+      "b_count": 246,
+      "position_polarity": 0.02010955541154802
+    }
+  },
+  "pairing_results": {
+    "daiin": {
+      "a_concentration": 0.12003405221339387,
+      "b_concentration": 0.12149122807017544,
+      "pairing_polarity": 0.0014571758567815674,
+      "a_top": [
+        [
+          "chol",
+          139
+        ],
+        [
+          "daiin",
+          102
+        ],
+        [
+          "cthy",
+          67
+        ],
+        [
+          "chor",
+          59
+        ],
+        [
+          "shol",
+          56
+        ]
+      ],
+      "b_top": [
+        [
+          "chedy",
+          84
+        ],
+        [
+          "chey",
+          59
+        ],
+        [
+          "ol",
+          54
+        ],
+        [
+          "daiin",
+          42
+        ],
+        [
+          "dal",
+          38
+        ]
+      ]
+    },
+    "ol": {
+      "a_concentration": 0.17060810810810811,
+      "b_concentration": 0.12849964106245512,
+      "pairing_polarity": 0.04210846704565299,
+      "a_top": [
+        [
+          "daiin",
+          27
+        ],
+        [
+          "or",
+          20
+        ],
+        [
+          "chor",
+          19
+        ],
+        [
+          "chol",
+          19
+        ],
+        [
+          "s",
+          16
+        ]
+      ],
+      "b_top": [
+        [
+          "shedy",
+          102
+        ],
+        [
+          "chedy",
+          95
+        ],
+        [
+          "aiin",
+          57
+        ],
+        [
+          "daiin",
+          54
+        ],
+        [
+          "ol",
+          50
+        ]
+      ]
+    },
+    "aiin": {
+      "a_concentration": 0.23575129533678757,
+      "b_concentration": 0.15829383886255924,
+      "pairing_polarity": 0.07745745647422833,
+      "a_top": [
+        [
+          "s",
+          35
+        ],
+        [
+          "or",
+          30
+        ],
+        [
+          "shol",
+          9
+        ],
+        [
+          "ol",
+          9
+        ],
+        [
+          "o",
+          8
+        ]
+      ],
+      "b_top": [
+        [
+          "or",
+          116
+        ],
+        [
+          "ar",
+          69
+        ],
+        [
+          "s",
+          60
+        ],
+        [
+          "ol",
+          57
+        ],
+        [
+          "r",
+          32
+        ]
+      ]
+    },
+    "saiin": {
+      "a_concentration": 0.10661764705882353,
+      "b_concentration": 0.10748792270531402,
+      "pairing_polarity": 0.0008702756464904898,
+      "a_top": [
+        [
+          "ckheo",
+          7
+        ],
+        [
+          "qoky",
+          6
+        ],
+        [
+          "daiin",
+          6
+        ],
+        [
+          "ytaiin",
+          5
+        ],
+        [
+          "sodal",
+          5
+        ]
+      ],
+      "b_top": [
+        [
+          "ol",
+          21
+        ],
+        [
+          "chey",
+          19
+        ],
+        [
+          "shedy",
+          17
+        ],
+        [
+          "al",
+          17
+        ],
+        [
+          "chedy",
+          15
+        ]
+      ]
+    },
+    "dol": {
+      "a_concentration": 0.16037735849056603,
+      "b_concentration": 0.15963855421686746,
+      "pairing_polarity": 0.0007388042736985734,
+      "a_top": [
+        [
+          "chol",
+          18
+        ],
+        [
+          "daiin",
+          17
+        ],
+        [
+          "ol",
+          13
+        ],
+        [
+          "shol",
+          11
+        ],
+        [
+          "shey",
+          9
+        ]
+      ],
+      "b_top": [
+        [
+          "shedy",
+          15
+        ],
+        [
+          "qokal",
+          13
+        ],
+        [
+          "kedy",
+          9
+        ],
+        [
+          "shckhy",
+          8
+        ],
+        [
+          "olkeedy",
+          8
+        ]
+      ]
+    },
+    "dy": {
+      "a_concentration": 0.1559633027522936,
+      "b_concentration": 0.128428927680798,
+      "pairing_polarity": 0.027534375071495587,
+      "a_top": [
+        [
+          "daiin",
+          45
+        ],
+        [
+          "dy",
+          40
+        ],
+        [
+          "chol",
+          26
+        ],
+        [
+          "shol",
+          14
+        ],
+        [
+          "sho",
+          11
+        ]
+      ],
+      "b_top": [
+        [
+          "daiin",
+          28
+        ],
+        [
+          "qokedy",
+          27
+        ],
+        [
+          "qokeedy",
+          17
+        ],
+        [
+          "qotal",
+          16
+        ],
+        [
+          "dal",
+          15
+        ]
+      ]
+    },
+    "or": {
+      "a_concentration": 0.18838028169014084,
+      "b_concentration": 0.16903225806451613,
+      "pairing_polarity": 0.01934802362562471,
+      "a_top": [
+        [
+          "aiin",
+          30
+        ],
+        [
+          "chol",
+          24
+        ],
+        [
+          "ol",
+          20
+        ],
+        [
+          "s",
+          18
+        ],
+        [
+          "daiin",
+          15
+        ]
+      ],
+      "b_top": [
+        [
+          "aiin",
+          116
+        ],
+        [
+          "ar",
+          53
+        ],
+        [
+          "ol",
+          33
+        ],
+        [
+          "shedy",
+          32
+        ],
+        [
+          "or",
+          28
+        ]
+      ]
+    },
+    "dar": {
+      "a_concentration": 0.1,
+      "b_concentration": 0.11229135053110774,
+      "pairing_polarity": 0.012291350531107734,
+      "a_top": [
+        [
+          "daiin",
+          19
+        ],
+        [
+          "shey",
+          13
+        ],
+        [
+          "chor",
+          12
+        ],
+        [
+          "chol",
+          11
+        ],
+        [
+          "qokchol",
+          9
+        ]
+      ],
+      "b_top": [
+        [
+          "chedy",
+          34
+        ],
+        [
+          "ol",
+          34
+        ],
+        [
+          "shedy",
+          27
+        ],
+        [
+          "ar",
+          27
+        ],
+        [
+          "aiin",
+          26
+        ]
+      ]
+    },
+    "dal": {
+      "a_concentration": 0.14160839160839161,
+      "b_concentration": 0.16666666666666666,
+      "pairing_polarity": 0.025058275058275042,
+      "a_top": [
+        [
+          "daiin",
+          27
+        ],
+        [
+          "s",
+          16
+        ],
+        [
+          "chol",
+          15
+        ],
+        [
+          "chor",
+          14
+        ],
+        [
+          "chody",
+          9
+        ]
+      ],
+      "b_top": [
+        [
+          "shedy",
+          46
+        ],
+        [
+          "daiin",
+          38
+        ],
+        [
+          "qokedy",
+          31
+        ],
+        [
+          "chedy",
+          26
+        ],
+        [
+          "ol",
+          20
+        ]
+      ]
+    },
+    "chol": {
+      "a_concentration": 0.23109691160809373,
+      "b_concentration": 0.12419354838709677,
+      "pairing_polarity": 0.10690336322099696,
+      "a_top": [
+        [
+          "chol",
+          156
+        ],
+        [
+          "daiin",
+          139
+        ],
+        [
+          "chor",
+          61
+        ],
+        [
+          "cthol",
+          41
+        ],
+        [
+          "shol",
+          37
+        ]
+      ],
+      "b_top": [
+        [
+          "chedy",
+          21
+        ],
+        [
+          "ol",
+          16
+        ],
+        [
+          "or",
+          14
+        ],
+        [
+          "kaiin",
+          13
+        ],
+        [
+          "qokaiin",
+          13
+        ]
+      ]
+    },
+    "s": {
+      "a_concentration": 0.11793372319688109,
+      "b_concentration": 0.32113821138211385,
+      "pairing_polarity": 0.20320448818523276,
+      "a_top": [
+        [
+          "aiin",
+          35
+        ],
+        [
+          "chol",
+          27
+        ],
+        [
+          "daiin",
+          24
+        ],
+        [
+          "or",
+          18
+        ],
+        [
+          "chy",
+          17
+        ]
+      ],
+      "b_top": [
+        [
+          "aiin",
+          60
+        ],
+        [
+          "s",
+          34
+        ],
+        [
+          "ol",
+          28
+        ],
+        [
+          "ar",
+          18
+        ],
+        [
+          "al",
+          18
+        ]
+      ]
+    }
+  },
+  "hazard_results": {
+    "daiin": {
+      "near_hazard_pct": 0.0,
+      "total": 1140
+    },
+    "ol": {
+      "near_hazard_pct": 0.0,
+      "total": 1393
+    },
+    "aiin": {
+      "near_hazard_pct": 0.0,
+      "total": 1055
+    },
+    "saiin": {
+      "near_hazard_pct": 0.0,
+      "total": 414
+    },
+    "dol": {
+      "near_hazard_pct": 0.0,
+      "total": 166
+    },
+    "dy": {
+      "near_hazard_pct": 0.0,
+      "total": 401
+    },
+    "or": {
+      "near_hazard_pct": 0.0,
+      "total": 775
+    },
+    "dar": {
+      "near_hazard_pct": 0.0,
+      "total": 659
+    },
+    "dal": {
+      "near_hazard_pct": 0.0,
+      "total": 483
+    },
+    "chol": {
+      "near_hazard_pct": 0.0,
+      "total": 310
+    },
+    "s": {
+      "near_hazard_pct": 0.0,
+      "total": 246
+    }
+  },
+  "composite_scores": {
+    "daiin": {
+      "neighbor_p": 0.09698110201724514,
+      "position_p": 0.06237316718425956,
+      "pairing_p": 0.0014571758567815674,
+      "grammar_bonus": 0.4,
+      "composite": 0.45360381501942876,
+      "grammar_class": "CORE_CONTROL"
+    },
+    "ol": {
+      "neighbor_p": 0.04049931122795444,
+      "position_p": 0.08482576041846102,
+      "pairing_p": 0.04210846704565299,
+      "grammar_bonus": 0.4,
+      "composite": 0.45581117956402284,
+      "grammar_class": "CORE_CONTROL"
+    },
+    "aiin": {
+      "neighbor_p": 0.04424526680254402,
+      "position_p": 0.0262243254087986,
+      "pairing_p": 0.07745745647422833,
+      "grammar_bonus": 0.2,
+      "composite": 0.24930901622852367,
+      "grammar_class": "HIGH_IMPACT"
+    },
+    "saiin": {
+      "neighbor_p": 0.13501705029838018,
+      "position_p": 0.10876103482710942,
+      "pairing_p": 0.0008702756464904898,
+      "grammar_bonus": 0.2,
+      "composite": 0.28154945359066,
+      "grammar_class": "AUXILIARY"
+    },
+    "dol": {
+      "neighbor_p": 0.05859286201409411,
+      "position_p": 0.08878713312820052,
+      "pairing_p": 0.0007388042736985734,
+      "grammar_bonus": 0.2,
+      "composite": 0.2493729331386644,
+      "grammar_class": "AUXILIARY"
+    },
+    "dy": {
+      "neighbor_p": 0.07619712187421354,
+      "position_p": 0.006590082666274144,
+      "pairing_p": 0.027534375071495587,
+      "grammar_bonus": 0.2,
+      "composite": 0.2367738598706611,
+      "grammar_class": "FREQUENT_OPERATOR"
+    },
+    "or": {
+      "neighbor_p": 0.0426669695592912,
+      "position_p": 0.03704330125103694,
+      "pairing_p": 0.01934802362562471,
+      "grammar_bonus": 0,
+      "composite": 0.03301943147865095,
+      "grammar_class": "-"
+    },
+    "dar": {
+      "neighbor_p": 0.10963581183611534,
+      "position_p": 0.04696609823224995,
+      "pairing_p": 0.012291350531107734,
+      "grammar_bonus": 0.2,
+      "composite": 0.2562977535331577,
+      "grammar_class": "FLOW_OPERATOR"
+    },
+    "dal": {
+      "neighbor_p": 0.11945301075735855,
+      "position_p": 0.012845010206531171,
+      "pairing_p": 0.025058275058275042,
+      "grammar_bonus": 0,
+      "composite": 0.05245209867405492,
+      "grammar_class": "-"
+    },
+    "chol": {
+      "neighbor_p": 0.1353533271496788,
+      "position_p": 0.004923164216645737,
+      "pairing_p": 0.10690336322099696,
+      "grammar_bonus": 0.2,
+      "composite": 0.28239328486244053,
+      "grammar_class": "FLOW_OPERATOR"
+    },
+    "s": {
+      "neighbor_p": 0.23049493652831265,
+      "position_p": 0.04021911082309604,
+      "pairing_p": 0.20320448818523276,
+      "grammar_bonus": 0,
+      "composite": 0.15797284517888047,
+      "grammar_class": "-"
+    }
+  },
+  "sp_threshold": 0.5,
+  "sp_candidates": []
+}

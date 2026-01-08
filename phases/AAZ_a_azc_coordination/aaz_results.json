@@ -1,0 +1,23 @@
+{
+  "AAZ-1": {
+    "test": "Availability vs Legality Decoupling",
+    "verdict": "A_BROADER",
+    "shared_vocab_size": 764,
+    "a_mean_coverage": 2.2905759162303663,
+    "azc_only_mean": 1.0371517027863777
+  },
+  "AAZ-2": {
+    "test": "Section x Placement Affinity",
+    "verdict": "SIGNIFICANT",
+    "cramers_v": 0.12533771901952065
+  },
+  "AAZ-3": {
+    "test": "Multiplicity Persistence",
+    "verdict": "SIGNIFICANT"
+  },
+  "overall": {
+    "stewardship_signals": 1,
+    "opportunism_signals": 1,
+    "verdict": "NEUTRAL"
+  }
+}

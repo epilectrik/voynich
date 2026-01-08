@@ -1,0 +1,42 @@
+[
+  {
+    "test": "A",
+    "name": "Vocabulary Pressure Test",
+    "n_tokens": 1163,
+    "n_roles": 3,
+    "compression_ratio": 387.6666666666667,
+    "role_distribution": {
+      "LINK_CONTEXT": 653,
+      "SECTION_BOUNDARY": 508,
+      "NEUTRAL": 2
+    },
+    "supports_symbolic_labeling": true,
+    "verdict": "PASS - Strong compression to core roles"
+  },
+  {
+    "test": "B",
+    "name": "Functional Equivalence Class Stability",
+    "n_sections": 8,
+    "mean_coverage": 0.5,
+    "mean_dialectal_uniqueness": 0.9806043578396498,
+    "dialectal_evidence": [
+      {
+        "role": "SECTION_BOUNDARY",
+        "n_sections": 8,
+        "token_overlap": 0.027559055118110236,
+        "unique_per_section": 0.9724409448818898
+      },
+      {
+        "role": "LINK_CONTEXT",
+        "n_sections": 8,
+        "token_overlap": 0.030627871362940276,
+        "unique_per_section": 0.9693721286370597
+      },
+      {
+        "role": "NEUTRAL",
+        "n_sections": 4,
+        "token_overlap": 0.0,
+        "unique_per_section": 1.0
+      }
+    ],
+    "supports_symbolic_labeling": 

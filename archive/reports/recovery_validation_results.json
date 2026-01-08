@@ -1,0 +1,70 @@
+[
+  {
+    "test": "R-1",
+    "name": "Frequency Stability",
+    "metrics": {
+      "top_50_spearman": 1.0,
+      "top_50_jsd": 1.54257762574206e-07,
+      "top_100_spearman": 0.99997599759976,
+      "top_100_jsd": 5.172914832981761e-07,
+      "top_200_spearman": 0.9999429985749644,
+      "top_200_jsd": 0.0014335846414498578
+    },
+    "verdict": "PASS"
+  },
+  {
+    "test": "R-2",
+    "name": "Grammar Coverage Stability",
+    "metrics": {
+      "orig_grammar_pct": 94.44172347607386,
+      "rec_grammar_pct": 94.60718776887947,
+      "difference_pp": 0.16546429280560915,
+      "class_correlation": 0.999995340266638
+    },
+    "verdict": "PASS"
+  },
+  {
+    "test": "R-3",
+    "name": "HT Morphology Stability",
+    "metrics": {
+      "decomposable_diff_pp": 0.0,
+      "max_prefix_change_pct": 1.2295081967213115
+    },
+    "verdict": "PASS"
+  },
+  {
+    "test": "R-4",
+    "name": "Orphan Rate Reduction",
+    "metrics": {
+      "orig_orphan_pct": 2.2050543190249074,
+      "rec_orphan_pct": 2.2074417606720527,
+      "orphan_reduction_pp": -0.0023874416471452165,
+      "orig_hapax": 4234,
+      "rec_hapax": 4179,
+      "hapax_change": -55,
+      "new_mid_freq_types": 0
+    },
+    "verdict": "UNEXPECTED"
+  },
+  {
+    "test": "R-5",
+    "name": "Confidence Sensitivity",
+    "metrics": {
+      "CERTAIN_damaged": 1244,
+      "CERTAIN_orphan_pct": 1.6321397842345622,
+      "CERTAIN_ht_count": 2600,
+      "CERTAIN_grammar_pct": 94.49467204977167,
+      "HIGH_damaged": 979,
+      "HIGH_orphan_pct": 1.6321397842345622,
+      "HIGH_ht_count": 2605,
+      "HIGH_grammar_pct": 94.60718776887947,
+      "AMBIGUOUS_damaged": 177,
+      "AMBIGUOUS_orphan_pct": 1.6586140710834603,
+      "AMBIGUOUS_ht_count": 2607,
+      "AMBIGUOUS_grammar_pct": 94.83221920709511,
+      "orphan_range": 0.026474286848898076,
+      "grammar_range": 0.3375471573234421
+    },
+    "verdict": "PASS (insensitive)"
+  }
+]

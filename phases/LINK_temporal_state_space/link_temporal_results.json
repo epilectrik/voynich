@@ -1,0 +1,153 @@
+{
+  "b1_kernel_conditioning": {
+    "results": {
+      "k": {
+        "link_count": 15,
+        "total": 159,
+        "p_link": 0.09433962264150944,
+        "ratio_to_baseline": 0.7007821477554954
+      },
+      "h": {
+        "link_count": 14,
+        "total": 87,
+        "p_link": 0.16091954022988506,
+        "ratio_to_baseline": 1.1953571347921323
+      },
+      "e": {
+        "link_count": 2856,
+        "total": 22214,
+        "p_link": 0.12856757000090033,
+        "ratio_to_baseline": 0.9550372930715209
+      },
+      "none": {
+        "link_count": 7282,
+        "total": 53077,
+        "p_link": 0.13719690261318462,
+        "ratio_to_baseline": 1.019138484833892
+      }
+    },
+    "max_effect": 0.2992178522445046,
+    "z_score": 0.05497450803706103,
+    "verdict": "WEAK/NONE"
+  },
+  "b2_transition_conditioning": {
+    "results": {
+      "e->e": {
+        "link_count": 2064,
+        "total": 15412,
+        "p_link": 0.13392161951725928,
+        "ratio": 0.9948087296557118
+      },
+      "e->k": {
+        "link_count": 7,
+        "total": 87,
+        "p_link": 0.08045977011494253,
+        "ratio": 0.5976785673960662
+      },
+      "e->h": {
+        "link_count": 5,
+        "total": 41,
+        "p_link": 0.12195121951219512,
+        "ratio": 0.9058891178302745
+      },
+      "k->e": {
+        "link_count": 7,
+        "total": 85,
+        "p_link": 0.08235294117647059,
+        "ratio": 0.6117415925112677
+      },
+      "k->k": {
+        "link_count": 1,
+        "total": 12,
+        "p_link": 0.08333333333333333,
+        "ratio": 0.6190242305173542
+      },
+      "k->h": {
+        "link_count": 0,
+        "total": 0,
+        "p_link": 0,
+        "ratio": 0.0
+      },
+      "h->e": {
+        "link_count": 3,
+        "total": 48,
+        "p_link": 0.0625,
+        "ratio": 0.4642681728880157
+      },
+      "h->k": {
+        "link_count": 0,
+        "total": 0,
+        "p_link": 0,
+        "ratio": 0.0
+      },
+      "h->h": {
+        "link_count": 0,
+        "total": 6,
+        "p_link": 0.0,
+        "ratio": 0.0
+      }
+    },
+    "max_effect": 0.5357318271119843,
+    "verdict": "SIGNAL"
+  },
+  "b3_position_conditioning": {
+    "results": {
+      "early": {
+        "link_count": 3135,
+        "total": 24994,
+        "p_link": 0.12543010322477394,
+        "ratio": 0.931731277589136
+      },
+      "middle": {
+        "link_count": 3566,
+        "total": 25714,
+        "p_link": 0.13867931865909622,
+        "ratio": 1.030150302259416
+      },
+      "late": {
+        "link_count": 3479,
+        "total": 24912,
+        "p_link": 0.13965157353885677,
+        "ratio": 1.037372494205142
+      }
+    },
+    "max_effect": 0.06826872241086401,
+    "p_value": 1.259185555224723e-06,
+    "verdict": "WEAK/NONE"
+  },
+  "b4_section_conditioning": {
+    "results": {
+      "B": {
+        "link_count": 5486,
+        "total": 28047,
+        "density": 0.19560024245017293,
+        "ratio": 1.4529754748607147
+      },
+      "C": {
+        "link_count": 3635,
+        "total": 36046,
+        "density": 0.1008433668090773,
+        "ratio": 0.7490938505012205
+      },
+      "H": {
+        "link_count": 930,
+        "total": 10206,
+        "density": 0.09112286890064668,
+        "ratio": 0.6768871656450787
+      },
+      "S": {
+        "link_count": 129,
+        "total": 1321,
+        "density": 0.09765329295987887,
+        "ratio": 0.7253970543836974
+      }
+    },
+    "max_effect": 0.45297547486071466,
+    "verdict": "SIGNAL"
+  },
+  "overall_verdict": "LIMITED_STRUCTURE",
+  "signals_found": 2,
+  "constraints": [
+    "LINK section variation: max effect 45.3%"
+  ]
+}

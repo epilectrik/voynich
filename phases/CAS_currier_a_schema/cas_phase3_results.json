@@ -1,0 +1,283 @@
+{
+  "exclusion": {
+    "freq_prefixes": [
+      "ch",
+      "qo",
+      "sh",
+      "da",
+      "ok",
+      "ot",
+      "ct",
+      "ol",
+      "yk",
+      "yt",
+      "do",
+      "ck",
+      "dc",
+      "so",
+      "kc",
+      "sa",
+      "tc",
+      "ko",
+      "or",
+      "yc",
+      "ke",
+      "to",
+      "cp",
+      "dy",
+      "op",
+      "od",
+      "oc",
+      "ai",
+      "pc",
+      "**",
+      "ar",
+      "ds",
+      "al",
+      "ka",
+      "sc",
+      "ks",
+      "yd",
+      "os",
+      "po",
+      "te",
+      "oe"
+    ],
+    "dominant_cluster": [
+      [
+        "ch",
+        40,
+        2040
+      ],
+      [
+        "qo",
+        35,
+        1135
+      ],
+      [
+        "sh",
+        32,
+        1007
+      ],
+      [
+        "da",
+        27,
+        677
+      ],
+      [
+        "ok",
+        27,
+        630
+      ],
+      [
+        "ot",
+        25,
+        568
+      ],
+      [
+        "ct",
+        18,
+        448
+      ],
+      [
+        "ol",
+        10,
+        289
+      ],
+      [
+        "yk",
+        10,
+        266
+      ],
+      [
+        "yt",
+        9,
+        240
+      ],
+      [
+        "do",
+        9,
+        229
+      ],
+      [
+        "ck",
+        7,
+        195
+      ],
+      [
+        "dc",
+        7,
+        179
+      ],
+      [
+        "so",
+        7,
+        177
+      ],
+      [
+        "kc",
+        7,
+        163
+      ],
+      [
+        "sa",
+        7,
+        156
+      ],
+      [
+        "tc",
+        7,
+        152
+      ],
+      [
+        "ko",
+        7,
+        147
+      ],
+      [
+        "or",
+        7,
+        144
+      ],
+      [
+        "yc",
+        6,
+        126
+      ],
+      [
+        "ke",
+        6,
+        123
+      ],
+      [
+        "to",
+        6,
+        123
+      ],
+      [
+        "cp",
+        6,
+        121
+      ],
+      [
+        "dy",
+        6,
+        119
+      ],
+      [
+        "op",
+        6,
+        117
+      ],
+      [
+        "od",
+        6,
+        113
+      ],
+      [
+        "oc",
+        5,
+        98
+      ],
+      [
+        "ai",
+        5,
+        97
+      ]
+    ],
+    "marker_candidates": [
+      "ch",
+      "qo",
+      "sh",
+      "da",
+      "ok",
+      "ot",
+      "ct",
+      "ol",
+      "yk",
+      "yt"
+    ]
+  },
+  "partition": {
+    "total_entries": 12171,
+    "unclassified": 4871,
+    "multi_classified": 0,
+    "entry_markers": {
+      "yk": 266,
+      "sh": 1007,
+      "ct": 448,
+      "yt": 240,
+      "ch": 2040,
+      "da": 677,
+      "ot": 568,
+      "ok": 630,
+      "ol": 289,
+      "qo": 1135
+    },
+    "classified_pct": 0.5997863774546052,
+    "clean_pct": 0.5997863774546052
+  },
+  "hierarchy": {
+    "marker_vocab_sizes": {
+      "yk": 117,
+      "sh": 343,
+      "ct": 142,
+      "yt": 114,
+      "ch": 701,
+      "da": 210,
+      "ot": 221,
+      "ok": 224,
+      "ol": 144,
+      "qo": 440
+    },
+    "subsumption": [],
+    "is_hierarchical": 0
+  },
+  "section": {
+    "section_markers": {
+      "T": {
+        "yk": 20,
+        "sh": 98,
+        "ct": 17,
+        "yt": 22,
+        "ch": 117,
+        "da": 48,
+        "ot": 42,
+        "ok": 53,
+        "ol": 31,
+        "qo": 72
+      },
+      "H": {
+        "ch": 1483,
+        "ol": 158,
+        "yt": 192,
+        "ok": 363,
+        "sh": 709,
+        "ct": 384,
+        "da": 460,
+        "ot": 392,
+        "qo": 776,
+        "yk": 176
+      },
+      "P": {
+        "ot": 134,
+        "ol": 100,
+        "ct": 47,
+        "qo": 287,
+        "sh": 200,
+        "da": 169,
+        "ch": 440,
+        "ok": 214,
+        "yk": 70,
+        "yt": 26
+      }
+    },
+    "section_totals": {
+      "T": 889,
+      "H": 8385,
+      "P": 2897
+    }
+  },
+  "verdict": "WEAK_TAGGING",
+  "interpretation": "Currier A shows weak categorical tagging with significant overlap."
+}

@@ -1,0 +1,45 @@
+{
+  "results": {
+    "test_1": {
+      "batch_mean_ht_nearby": 0.004,
+      "apparatus_mean_ht_nearby": 0.001,
+      "batch_observations": 13845,
+      "apparatus_observations": 4138,
+      "difference": 0.002,
+      "effect_size": 0.021,
+      "batch_higher": true
+    },
+    "test_2": {
+      "batch_mean_length": 0.889,
+      "apparatus_mean_length": 3.0,
+      "batch_ht_tokens": 54,
+      "apparatus_ht_tokens": 6,
+      "difference": -2.111,
+      "batch_more_complex": false
+    },
+    "test_3": {
+      "batch_presence_rate": 0.001,
+      "apparatus_presence_rate": 0.001,
+      "batch_with_ht": 16,
+      "batch_total": 13845,
+      "apparatus_with_ht": 6,
+      "apparatus_total": 4138,
+      "difference": -0.0,
+      "batch_higher_presence": false
+    },
+    "test_4": {
+      "batch_adjacency_rate": 0.001,
+      "apparatus_adjacency_rate": 0.0,
+      "batch_adjacent": 12,
+      "apparatus_adjacent": 2,
+      "difference": 0.0,
+      "batch_higher": true
+    }
+  },
+  "evaluation": {
+    "tests_supporting": 2,
+    "total_tests": 4,
+    "verdict": "PARTIAL_SUPPORT",
+    "confidence": "LOW"
+  }
+}

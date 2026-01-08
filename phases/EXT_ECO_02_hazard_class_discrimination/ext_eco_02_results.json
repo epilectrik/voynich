@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "phase": "EXT-ECO-02",
+    "title": "Hazard Class Discrimination",
+    "timestamp": "2026-01-05T22:41:39.365042",
+    "tier": 3
+  },
+  "classification": {
+    "batch_focused": [
+      "PHASE_ORDERING",
+      "COMPOSITION_JUMP",
+      "RATE_MISMATCH"
+    ],
+    "apparatus_focused": [
+      "CONTAINMENT_TIMING",
+      "ENERGY_OVERSHOOT"
+    ]
+  },
+  "test_results": {
+    "test_1": {
+      "batch_mean_severity": 0.733,
+      "apparatus_mean_severity": 0.8,
+      "batch_count": 12,
+      "apparatus_count": 5,
+      "difference": 0.067,
+      "effect_size": 0.707,
+      "apparatus_higher": true
+    },
+    "test_2": {
+      "batch_mean_link_nearby": 1.229,
+      "apparatus_mean_link_nearby": 0.0,
+      "batch_observations": 13845,
+      "apparatus_observations": 4138,
+      "difference": 1.229,
+      "batch_higher": true
+    },
+    "test_3": {
+      "batch_mean_run_length": 0,
+      "apparatus_mean_run_length": 0,
+      "batch_short_run_rate": 0,
+      "apparatus_short_run_rate": 0,
+      "batch_runs": 0,
+      "apparatus_runs": 0,
+      "apparatus_shorter_runs": false,
+      "apparatus_more_short_runs": false
+    },
+    "test_4": {
+      "batch_total_occurrences": 13845,
+      "apparatus_total_occurrences": 6110,
+      "batch_corpus_rate": 0.1133,
+      "apparatus_corpus_rate": 0.05,
+      "batch_per_hazard_token": 865.3,
+      "apparatus_per_hazard_token": 678.9,
+      "total_tokens": 122243,
+      "apparatus_rarer": true
+    },
+    "test_5": {
+      "batch_mean_kernel_distance": 1.0,
+      "apparatus_mean_kernel_distance": 1.0,
+      "batch_observations": 2879,
+      "apparatus_observations": 1848,
+      "difference": 0.0,
+      "apparatus_closer": false
+    }
+  },
+  "evaluation": {
+    "tests_supporting_hybrid": 3,
+    "total_tests": 5,
+    "support_rate": 0.6,
+    "verdict": "HYBRID_SUPPORTED",
+    "confidence": "MODERATE"
+  }
+}

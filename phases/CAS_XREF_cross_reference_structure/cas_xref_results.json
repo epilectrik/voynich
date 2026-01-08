@@ -1,0 +1,118 @@
+{
+  "H1_balanced": {
+    "balanced_count": 161,
+    "A_initial_rate": 0.032081624066477334,
+    "B_initial_rate": 0.039122446774019236,
+    "A_enrichment": 0.7560819989777208,
+    "B_enrichment": 1.2023706251626263
+  },
+  "H2_ct_in_b": {
+    "ct_in_b": 214,
+    "ct_folios": 48,
+    "mean_position": 0.5215038585989192,
+    "top_preceding": [
+      [
+        "chedy",
+        10
+      ],
+      [
+        "aiin",
+        7
+      ],
+      [
+        "qoteedy",
+        7
+      ],
+      [
+        "dain",
+        7
+      ],
+      [
+        "chody",
+        6
+      ]
+    ],
+    "top_following": [
+      [
+        "otedy",
+        13
+      ],
+      [
+        "oteol",
+        9
+      ],
+      [
+        "chey",
+        7
+      ],
+      [
+        "r",
+        6
+      ],
+      [
+        "saiin",
+        5
+      ]
+    ]
+  },
+  "H3_a_vocab_in_b": {
+    "a_enriched_count": 236,
+    "a_enriched_in_b": 2318,
+    "mean_position": 0.49939833649496734,
+    "initial_rate": 0.036669542709232096,
+    "top_folios": [
+      [
+        "f113r",
+        117
+      ],
+      [
+        "f115r",
+        71
+      ],
+      [
+        "f76r",
+        69
+      ],
+      [
+        "f114r",
+        63
+      ],
+      [
+        "f106r",
+        62
+      ],
+      [
+        "f106v",
+        60
+      ],
+      [
+        "f107v",
+        54
+      ],
+      [
+        "f66r",
+        51
+      ],
+      [
+        "f76v",
+        48
+      ],
+      [
+        "f39v",
+        46
+      ]
+    ]
+  },
+  "H4_section_mapping": {
+    "section_exclusive_counts": {
+      "H": 2789,
+      "P": 1144,
+      "T": 375
+    },
+    "classification": {
+      "H": 76,
+      "P": 7
+    },
+    "chi2_p": 2.0163687929380136e-28
+  }
+}

@@ -1,0 +1,940 @@
+{
+  "metadata": {
+    "phase": "OPS-4",
+    "title": "Operator Decision & Regime Switching Model",
+    "timestamp": "2026-01-04T21:49:49.095149",
+    "n_folios": 83,
+    "n_regimes": 4
+  },
+  "folio_pressures": {
+    "f26r": {
+      "time_pressure": 0.05339083860711127,
+      "risk_pressure": 0.42673414130995363,
+      "stability_pressure": 0.5431707119131399,
+      "regime": "REGIME_4"
+    },
+    "f26v": {
+      "time_pressure": 0.15899100473664882,
+      "risk_pressure": 0.21011689874505765,
+      "stability_pressure": 0.5449680302828293,
+      "regime": "REGIME_2"
+    },
+    "f31r": {
+      "time_pressure": 0.1271726315734496,
+      "risk_pressure": 0.7094292590682483,
+      "stability_pressure": 0.7797401182063833,
+      "regime": "REGIME_3"
+    },
+    "f31v": {
+      "time_pressure": 0.1169948674241385,
+      "risk_pressure": 0.28654160220044705,
+      "stability_pressure": 0.491986701988905,
+      "regime": "REGIME_4"
+    },
+    "f33r": {
+      "time_pressure": 0.043868629049407616,
+      "risk_pressure": 0.6578133058277461,
+      "stability_pressure": 0.7178070068654221,
+      "regime": "REGIME_3"
+    },
+    "f33v": {
+      "time_pressure": 0.10029149361543849,
+      "risk_pressure": 0.6019748151968369,
+      "stability_pressure": 0.6796086535618844,
+      "regime": "REGIME_3"
+    },
+    "f34r": {
+      "time_pressure": 0.16474121796820082,
+      "risk_pressure": 0.49930161595324046,
+      "stability_pressure": 0.5645628873031241,
+      "regime": "REGIME_4"
+    },
+    "f34v": {
+      "time_pressure": 0.16931559754400766,
+      "risk_pressure": 0.40500902527075827,
+      "stability_pressure": 0.5272473001095612,
+      "regime": "REGIME_4"
+    },
+    "f39r": {
+      "time_pressure": 0.19738441119429562,
+      "risk_pressure": 0.6307482379233282,
+      "stability_pressure": 0.6836554458659649,
+      "regime": "REGIME_3"
+    },
+    "f39v": {
+      "time_pressure": 0.20627380550101107,
+      "risk_pressure": 0.5052110194258209,
+      "stability_pressure": 0.6044830064866935,
+      "regime": "REGIME_4"
+    },
+    "f40r": {
+      "time_pressure": 0.09459414110277982,
+      "risk_pressure": 0.4472129104349322,
+      "stability_pressure": 0.5522493497158294,
+      "regime": "REGIME_4"
+    },
+    "f40v": {
+      "time_pressure": 0.15311883283058345,
+      "risk_pressure": 0.3465918858518138,
+      "stability_pressure": 0.48508002573808634,
+      "regime": "REGIME_4"
+    },
+    "f41r": {
+      "time_pressure": 0.1551541645273566,
+      "risk_pressure": 0.45325124634691427,
+      "stability_pressure": 0.5814682882433757,
+      "regime": "REGIME_4"
+    },
+    "f41v": {
+      "time_pressure": 0.09416340159138593,
+      "risk_pressure": 0.247861870379921,
+      "stability_pressure": 0.389347388801614,
+      "regime": "REGIME_4"
+    },
+    "f43r": {
+      "time_pressure": 0.29726058964337093,
+      "risk_pressure": 0.46743381468110706,
+      "stability_pressure": 0.5138961510740628,
+      "regime": "REGIME_4"
+    },
+    "f43v": {
+      "time_pressure": 0.3277544453057838,
+      "risk_pressure": 0.45840854392298436,
+      "stability_pressure": 0.5641356582631432,
+      "regime": "REGIME_4"
+    },
+    "f46r": {
+      "time_pressure": 0.22843804345585278,
+      "risk_pressure": 0.6718776860924878,
+      "stability_pressure": 0.7177603069598757,
+      "regime": "REGIME_3"
+    },
+    "f46v": {
+      "time_pressure": 0.26613194061012657,
+      "risk_pressure": 0.5614470517448857,
+      "stability_pressure": 0.6159702698054766,
+      "regime": "REGIME_4"
+    },
+    "f48r": {
+      "time_pressure": 0.11367114579059183,
+      "risk_pressure": 0.0,
+      "stability_pressure": 0.23664315071272485,
+      "regime": "REGIME_2"
+    },
+    "f48v": {
+      "time_pressure": 0.2649410193673521,
+      "risk_pressure": 0.20003867973182055,
+      "stability_pressure": 0.5375300712434858,
+      "regime": "REGIME_2"
+    },
+    "f50r": {
+      "time_pressure": 0.21420663589770345,
+      "risk_pressure": 0.2712093862815884,
+      "stability_pressure": 0.3872335615366334,
+      "regime": "REGIME_4"
+    },
+    "f50v": {
+      "time_pressure": 0.18465464686875682,
+      "risk_pressure": 0.32331958053979726,
+      "stability_pressure": 0.0,
+      "regime": "REGIME_4"
+    },
+    "f55r": {
+      "time_pressure": 0.09408634992523728,
+      "risk_pressure": 0.5135056730273339,
+      "stability_pressure": 0.6073315865443142,
+      "regime": "REGIME_4"
+    },
+    "f55v": {
+      "time_pressure": 0.055347501583498354,
+      "risk_pressure": 0.27225159016675265,
+      "stability_pressure": 0.3813042369295158,
+      "regime": "REGIME_4"
+    },
+    "f57r": {
+      "time_pressure": 0.09230918862225003,
+      "risk_pressure": 0.3437016503352246,
+      "stability_pressure": 0.016060673314292076,
+      "regime": "REGIME_4"
+    },
+    "f66r": {
+      "time_pressure": 0.6085155925457053,
+      "risk_pressure": 0.6048650507134261,
+      "stability_pressure": 0.6238691763232799,
+      "regime": "REGIME_1"
+    },
+    "f66v": {
+      "time_pressure": 0.04598899474350989,
+      "risk_pressure": 0.5265063606670105,
+      "stability_pressure": 0.6413562927881188,
+      "regime": "REGIME_4"
+    },
+    "f75r": {
+      "time_pressure": 0.7050250878337595,
+      "risk_pressure": 0.7513215575038681,
+      "stability_pressure": 0.751151995413098,
+      "regime": "REGIME_1"
+    },
+    "f75v": {
+      "time_pressure": 0.8844811128425982,
+      "risk_pressure": 0.6263000687639677,
+      "stability_pressure": 0.6217114633711368,
+      "regime": "REGIME_1"
+    },
+    "f76r": {
+      "time_pressure": 0.9839134242443156,
+      "risk_pressure": 0.8732271789582259,
+      "stability_pressure": 0.8116197769200256,
+      "regime": "REGIME_1"
+    },
+    "f76v": {
+      "time_pressure": 0.8957394982284018,
+      "risk_pressure": 0.6367435963555099,
+      "stability_pressure": 0.6485991550745444,
+      "regime": "REGIME_1"
+    },
+    "f77r": {
+      "time_pressure": 0.9799370852869659,
+      "risk_pressure": 0.8694773938456248,
+      "stability_pressure": 0.8722495319030532,
+      "regime": "REGIME_3"
+    },
+    "f77v": {
+      "time_pressure": 0.7997246797354295,
+      "risk_pressure": 0.6664840123775141,
+      "stability_pressure": 0.7148717636579,
+      "regime": "REGIME_1"
+    },
+    "f78r": {
+      "time_pressure": 0.6758673209766334,
+      "risk_pressure": 0.5761775829465362,
+      "stability_pressure": 0.5939717040130901,
+      "regime": "REGIME_1"
+    },
+    "f78v": {
+      "time_pressure": 0.4390986748674235,
+      "risk_pressure": 0.545298263709816,
+      "stability_pressure": 0.5855522218974136,
+      "regime": "REGIME_1"
+    },
+    "f79r": {
+      "time_pressure": 0.5575745044782591,
+      "risk_pressure": 0.7008445074780816,
+      "stability_pressure": 0.6782158178332275,
+      "regime": "REGIME_1"
+    },
+    "f79v": {
+      "time_pressure": 0.5661233315190488,
+      "risk_pressure": 0.522563176895307,
+      "stability_pressure": 0.5570066721930129,
+      "regime": "REGIME_1"
+    },
+    "f80r": {
+      "time_pressure": 0.7981940428093312,
+      "risk_pressure": 0.6462523637613891,
+      "stability_pressure": 0.6257544684387097,
+      "regime": "REGIME_1"
+    },
+    "f80v": {
+      "time_pressure": 0.7905297172384532,
+      "risk_pressure": 0.5583204400893933,
+      "stability_pressure": 0.5758552793026758,
+      "regime": "REGIME_1"
+    },
+    "f81r": {
+      "time_pressure": 0.4229166433261372,
+      "risk_pressure": 0.5818076328004125,
+      "stability_pressure": 0.6311439661805784,
+      "regime": "REGIME_3"
+    },
+    "f81v": {
+      "time_pressure": 0.4501781549172824,
+      "risk_pressure": 0.4490287089565069,
+      "stability_pressure": 0.5106303847929283,
+      "regime": "REGIME_1"
+    },
+    "f82r": {
+      "time_pressure": 0.8232302955040708,
+      "risk_pressure": 0.5840639504899434,
+      "stability_pressure": 0.6398367271224604,
+      "regime": "REGIME_1"
+    },
+    "f82v": {
+      "time_pressure": 0.806815439024126,
+      "risk_pressure": 0.6934308922124808,
+      "stability_pressure": 0.29189171619536775,
+      "regime": "REGIME_1"
+    },
+    "f83r": {
+      "time_pressure": 0.7693936081119377,
+      "risk_pressure": 0.5967960288808667,
+      "stability_pressure": 0.639344200525196,
+      "regime": "REGIME_1"
+    },
+    "f83v": {
+      "time_pressure": 0.4870171239966888,
+      "risk_pressure": 1.0,
+      "stability_pressure": 1.0,
+      "regime": "REGIME_3"
+    },
+    "f84r": {
+      "time_pressure": 0.5979785022105022,
+      "risk_pressure": 0.6321987278665981,
+      "stability_pressure": 0.6286620253091182,
+      "regime": "REGIME_1"
+    },
+    "f84v": {
+      "time_pressure": 0.7443737688233608,
+      "risk_pressure": 0.6182203025614579,
+      "stability_pressure": 0.6023168464017244,
+      "regime": "REGIME_1"
+    },
+    "f85r1": {
+      "time_pressure": 0.24100642481689644,
+      "risk_pressure": 0.3935340381640022,
+      "stability_pressure": 0.46539995478444346,
+      "regime": "REGIME_4"
+    },
+    "f85r2": {
+      "time_pressure": 0.0717459693776287,
+      "risk_pressure": 0.42413400378201815,
+      "stability_pressure": 0.5167938940780044,
+      "regime": "REGIME_4"
+    },
+    "f85v2": {
+      "time_pressure": 0.14066571530704808,
+      "risk_pressure": 0.01520328347945676,
+      "stability_pressure": 0.17599778559710638,
+      "regime": "REGIME_2"
+    },
+    "f86v3": {
+      "time_pressure": 0.35644996420368064,
+      "risk_pressure": 0.26366683857658596,
+      "stability_pressure": 0.3750278732650462,
+      "regime": "REGIME_2"
+    },
+    "f86v4": {
+      "time_pressure": 0.02468600699497703,
+      "risk_pressure": 0.5569773938456251,
+      "stability_pressure": 0.6087558765731247,
+      "regime": "REGIME_3"
+    },
+    "f86v5": {
+      "time_pressure": 0.41161049133494465,
+      "risk_pressure": 0.18457753137356037,
+      "stability_pressure": 0.29418120230869876,
+      "regime": "REGIME_2"
+    },
+    "f86v6": {
+      "time_pressure": 0.29496253795131805,
+      "risk_pressure": 0.41255157297576084,
+      "stability_pressure": 0.47410394940495193,
+      "regime": "REGIME_4"
+    },
+    "f94r": {
+      "time_pressure": 0.022402674849307178,
+      "risk_pressure": 0.43829508337631073,
+      "stability_pressure": 0.570706985803475,
+      "regime": "REGIME_4"
+    },
+    "f94v": {
+      "time_pressure": 0.0,
+      "risk_pressure": 0.4046544610624035,
+      "stability_pressure": 0.5209962494275596,
+      "regime": "REGIME_4"
+    },
+    "f95r1": {
+      "time_pressure": 0.06409024166169057,
+      "risk_pressure": 0.5615652398143375,
+      "stability_pressure": 0.6719107050728378,
+      "regime": "REGIME_3"
+    },
+    "f95r2": {
+      "time_pressure": 0.08082780042825727,
+      "risk_pressure": 0.7308750214887398,
+      "stability_pressure": 0.79461603628507,
+      "regime": "REGIME_3"
+    },
+    "f95v1": {
+      "time_pressure": 0.05939545657712789,
+      "risk_pressure": 0.30322760873302407,
+      "stability_pressure": 0.43870393665184626,
+      "regime": "REGIME_4"
+    },
+    "f95v2": {
+      "time_pressure": 0.033956825657812745,
+      "risk_pressure": 0.4818205260443527,
+      "stability_pressure": 0.6146904183598347,
+      "regime": "REGIME_4"
+    },
+    "f103r": {
+      "time_pressure": 0.3898982157971637,
+      "risk_pressure": 0.7939229843561976,
+      "stability_pressure": 0.7958517625371723,
+      "regime": "REGIME_3"
+    },
+    "f103v": {
+      "time_pressure": 0.41123828935920875,
+      "risk_pressure": 0.6137613890321472,
+      "stability_pressure": 0.6412442815232267,
+      "regime": "REGIME_1"
+    },
+    "f104r": {
+      "time_pressure": 0.4198651469755993,
+      "risk_pressure": 0.4832710159876226,
+      "stability_pressure": 0.5245716497240541,
+      "regime": "REGIME_1"
+    },
+    "f104v": {
+      "time_pressure": 0.35932553481088714,
+      "risk_pressure": 0.6702552862300157,
+      "stability_pressure": 0.6983417098050129,
+      "regime": "REGIME_3"
+    },
+    "f105r": {
+      "time_pressure": 0.3736402702645775,
+      "risk_pressure": 0.13033995186522265,
+      "stability_pressure": 0.25108575304190567,
+      "regime": "REGIME_2"
+    },
+    "f105v": {
+      "time_pressure": 1.0,
+      "risk_pressure": 0.11291258380608563,
+      "stability_pressure": 0.17784772551958425,
+      "regime": "REGIME_2"
+    },
+    "f106r": {
+      "time_pressure": 0.6771468859319343,
+      "risk_pressure": 0.5263344507478082,
+      "stability_pressure": 0.544622826899778,
+      "regime": "REGIME_1"
+    },
+    "f106v": {
+      "time_pressure": 0.7953262401341583,
+      "risk_pressure": 0.6598225030084235,
+      "stability_pressure": 0.6118556541666906,
+      "regime": "REGIME_1"
+    },
+    "f107r": {
+      "time_pressure": 0.7940787820435712,
+      "risk_pressure": 0.35539152484098335,
+      "stability_pressure": 0.4174714649260612,
+      "regime": "REGIME_2"
+    },
+    "f107v": {
+      "time_pressure": 0.6751473961175661,
+      "risk_pressure": 0.4153773422726492,
+      "stability_pressure": 0.47696383335169024,
+      "regime": "REGIME_1"
+    },
+    "f108r": {
+      "time_pressure": 0.5594807413814528,
+      "risk_pressure": 0.6862106756059826,
+      "stability_pressure": 0.6885512858415408,
+      "regime": "REGIME_1"
+    },
+    "f108v": {
+      "time_pressure": 0.6068769830549942,
+      "risk_pressure": 0.681031889290012,
+      "stability_pressure": 0.6577318601563994,
+      "regime": "REGIME_1"
+    },
+    "f111r": {
+      "time_pressure": 0.605234228508325,
+      "risk_pressure": 0.5876310813133916,
+      "stability_pressure": 0.5469575147675165,
+      "regime": "REGIME_1"
+    },
+    "f111v": {
+      "time_pressure": 0.8595358525203705,
+      "risk_pressure": 0.7563391782705863,
+      "stability_pressure": 0.6747140695739885,
+      "regime": "REGIME_1"
+    },
+    "f112r": {
+      "time_pressure": 0.6539013467372009,
+      "risk_pressure": 0.4777591542031976,
+      "stability_pressure": 0.49532340453114704,
+      "regime": "REGIME_1"
+    },
+    "f112v": {
+      "time_pressure": 0.6844816109934497,
+      "risk_pressure": 0.6108711535155578,
+      "stability_pressure": 0.5918131699938496,
+      "regime": "REGIME_1"
+    },
+    "f113r": {
+      "time_pressure": 0.7108889083807722,
+      "risk_pressure": 0.540140966133746,
+      "stability_pressure": 0.5439323787274883,
+      "regime": "REGIME_1"
+    },
+    "f113v": {
+      "time_pressure": 0.6051700210726891,
+      "risk_pressure": 0.365942496132027,
+      "stability_pressure": 0.40854785188841225,
+      "regime": "REGIME_2"
+    },
+    "f114r": {
+      "time_pressure": 0.45267821585290025,
+      "risk_pressure": 0.5295685061028024,
+      "stability_pressure": 0.5182935117040433,
+      "regime": "REGIME_1"
+    },
+    "f114v": {
+      "time_pressure": 0.287304330865803,
+      "risk_pressure": 0.7119434416365826,
+      "stability_pressure": 0.7341396422911954,
+      "regime": "REGIME_3"
+    },
+    "f115r": {
+      "time_pressure": 0.33138959499805876,
+      "risk_pressure": 0.6603382327660305,
+      "stability_pressure": 0.7119227045859007,
+      "regime": "REGIME_3"
+    },
+    "f115v": {
+      "time_pressure": 0.5454513236629311,
+      "risk_pressure": 0.24216735430634345,
+      "stability_pressure": 0.37310746810274387,
+      "regime": "REGIME_2"
+    },
+    "f116r": {
+      "time_pressure": 0.3204144767872811,
+      "risk_pressure": 0.6680312016503355,
+      "stability_pressure": 0.6829722977845135,
+      "regime": "REGIME_3"
+    }
+  },
+  "regime_pressure_envelopes": {
+    "REGIME_1": {
+      "time_pressure": {
+        "mean": 0.6776954387696313,
+        "std": 0.15114631930283562,
+        "min": 0.41123828935920875,
+        "max": 0.9839134242443156,
+        "q1": 0.5661233315190488,
+        "q3": 0.7981940428093312
+      },
+      "risk_pressure": {
+        "mean": 0.6080727650324134,
+        "std": 0.09624232706932992,
+        "min": 0.4153773422726492,
+        "max": 0.8732271789582259,
+        "q1": 0.540140966133746,
+        "q3": 0.6664840123775141
+      },
+      "stability_pressure": {
+        "mean": 0.600562478572462,
+        "std": 0.09428765486684487,
+        "min": 0.29189171619536775,
+        "max": 0.8116197769200256,
+        "q1": 0.544622826899778,
+        "q3": 0.6485991550745444
+      },
+      "n_folios": 31,
+      "stable_region": {
+        "time": [
+          0.5265491194667957,
+          0.828841758072467
+        ],
+        "risk": [
+          0.5118304379630835,
+          0.7043150921017433
+        ],
+        "stability": [
+          0.5062748237056172,
+          0.6948501334393069
+        ]
+      },
+      "instability_thresholds": {
+        "time_upper": 0.9799880773753026,
+        "time_lower": 0.3754028001639601,
+        "risk_upper": 0.8005574191710731,
+        "risk_lower": 0.4155881108937535,
+        "stability_upper": 0.7891377883061518,
+        "stability_lower": 0.4119871688387723
+      },
+      "dominant_exit_pressures": [
+        "high time -> gradient toward REGIME_2",
+        "high time -> gradient toward REGIME_3",
+        "high time -> gradient toward REGIME_4",
+        "high risk -> gradient toward REGIME_2",
+        "high risk -> gradient toward REGIME_4"
+      ]
+    },
+    "REGIME_2": {
+      "time_pressure": {
+        "mean": 0.4331517943440032,
+        "std": 0.2819131866204195,
+        "min": 0.11367114579059183,
+        "max": 1.0,
+        "q1": 0.15899100473664882,
+        "q3": 0.6051700210726891
+      },
+      "risk_pressure": {
+        "mean": 0.18912337662337667,
+        "std": 0.11964131907444853,
+        "min": 0.0,
+        "max": 0.365942496132027,
+        "q1": 0.11291258380608563,
+        "q3": 0.26366683857658596
+      },
+      "stability_pressure": {
+        "mean": 0.3447643978989635,
+        "std": 0.1294920270231005,
+        "min": 0.17599778559710638,
+        "max": 0.5449680302828293,
+        "q1": 0.23664315071272485,
+        "q3": 0.4174714649260612
+      },
+      "n_folios": 11,
+      "stable_region": {
+        "time": [
+          0.15123860772358372,
+          0.7150649809644227
+        ],
+        "risk": [
+          0.06948205754892814,
+          0.30876469569782516
+        ],
+        "stability": [
+          0.215272370875863,
+          0.474256424922064
+        ]
+      },
+      "instability_thresholds": {
+        "time_upper": 0.9969781675848421,
+        "time_lower": 0,
+        "risk_upper": 0.4284060147722737,
+        "risk_lower": 0,
+        "stability_upper": 0.6037484519451646,
+        "stability_lower": 0.08578034385276251
+      },
+      "dominant_exit_pressures": []
+    },
+    "REGIME_3": {
+      "time_pressure": {
+        "mean": 0.27781014149014716,
+        "std": 0.23779253634086647,
+        "min": 0.02468600699497703,
+        "max": 0.9799370852869659,
+        "q1": 0.10029149361543849,
+        "q3": 0.3898982157971637
+      },
+      "risk_pressure": {
+        "mean": 0.6923148207839093,
+        "std": 0.11599659861044387,
+        "min": 0.5569773938456251,
+        "max": 1.0,
+        "q1": 0.6307482379233282,
+        "q3": 0.7308750214887398
+      },
+      "stability_pressure": {
+        "mean": 0.7362797352798743,
+        "std": 0.09656780531593594,
+        "min": 0.6087558765731247,
+        "max": 1.0,
+        "q1": 0.6829722977845135,
+        "q3": 0.79461603628507
+      },
+      "n_folios": 16,
+      "stable_region": {
+        "time": [
+          0.04001760514928068,
+          0.5156026778310137
+        ],
+        "risk": [
+          0.5763182221734654,
+          0.8083114193943531
+        ],
+        "stability": [
+          0.6397119299639384,
+          0.8328475405958102
+        ]
+      },
+      "instability_thresholds": {
+        "time_upper": 0.75339521417188,
+        "time_lower": 0,
+        "risk_upper": 0.924308018004797,
+        "risk_lower": 0.46032162356302153,
+        "stability_upper": 0.9294153459117462,
+        "stability_lower": 0.5431441246480024
+      },
+      "dominant_exit_pressures": [
+        "high risk -> gradient toward REGIME_2",
+        "high risk -> gradient toward REGIME_4",
+        "high stability (instability) -> gradient toward REGIME_1",
+        "high stability (instability) -> gradient toward REGIME_2",
+        "high stability (instability) -> gradient toward REGIME_4"
+      ]
+    },
+    "REGIME_4": {
+      "time_pressure": {
+        "mean": 0.14035828198107614,
+        "std": 0.09404790074114312,
+        "min": 0.0,
+        "max": 0.3277544453057838,
+        "q1": 0.05939545657712789,
+        "q3": 0.20627380550101107
+      },
+      "risk_pressure": {
+        "mean": 0.40854865050713435,
+        "std": 0.08826474252423973,
+        "min": 0.247861870379921,
+        "max": 0.5614470517448857,
+        "q1": 0.3437016503352246,
+        "q3": 0.46743381468110706
+      },
+      "stability_pressure": {
+        "mean": 0.4827311791626401,
+        "std": 0.1603244745072225,
+        "min": 0.0,
+        "max": 0.6413562927881188,
+        "q1": 0.46539995478444346,
+        "q3": 0.570706985803475
+      },
+      "n_folios": 25,
+      "stable_region": {
+        "time": [
+          0.046310381239933016,
+          0.23440618272221925
+        ],
+        "risk": [
+          0.32028390798289463,
+          0.49681339303137406
+        ],
+        "stability": [
+          0.32240670465541754,
+          0.6430556536698626
+        ]
+      },
+      "instability_thresholds": {
+        "time_upper": 0.32845408346336236,
+        "time_lower": 0,
+        "risk_upper": 0.5850781355556138,
+        "risk_lower": 0.2320191654586549,
+        "stability_upper": 0.8033801281770852,
+        "stability_lower": 0.16208223014819506
+      },
+      "dominant_exit_pressures": []
+    }
+  },
+  "switching_graph": {
+    "nodes": [
+      "REGIME_1",
+      "REGIME_2",
+      "REGIME_3",
+      "REGIME_4"
+    ],
+    "edges": [
+      {
+        "from": "REGIME_1",
+        "to": "REGIME_2",
+        "weight": 0.9192911135081634,
+        "inducing_conditions": [
+          "time pressure relief (gradient=0.245)",
+          "risk pressure relief (gradient=0.419)",
+          "stability pressure relief (gradient=0.256)"
+        ],
+        "opposing_pressures": [],
+        "net_favorable": true,
+        "transition_type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_3",
+        "to": "REGIME_2",
+        "weight": 0.8947067815414435,
+        "inducing_conditions": [
+          "risk pressure relief (gradient=0.503)",
+          "stability pressure relief (gradient=0.392)"
+        ],
+        "opposing_pressures": [
+          "time cost increase (0.155)"
+        ],
+        "net_favorable": true,
+        "transition_type": "exit_dominated"
+      },
+      {
+        "from": "REGIME_1",
+        "to": "REGIME_4",
+        "weight": 0.8546925707236562,
+        "inducing_conditions": [
+          "time pressure relief (gradient=0.537)",
+          "risk pressure relief (gradient=0.200)",
+          "stability pressure relief (gradient=0.118)"
+        ],
+        "opposing_pressures": [],
+        "net_favorable": true,
+        "transition_type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_3",
+        "to": "REGIME_4",
+        "weight": 0.6747665859030803,
+        "inducing_conditions": [
+          "time pressure relief (gradient=0.137)",
+          "risk pressure relief (gradient=0.284)",
+          "stability pressure relief (gradient=0.254)"
+        ],
+        "opposing_pressures": [],
+        "net_favorable": true,
+        "transition_type": "exit_dominated"
+      },
+      {
+        "from": "REGIME_1",
+        "to": "REGIME_3",
+        "weight": 0.3998852972794842,
+        "inducing_conditions": [
+          "time pressure relief (gradient=0.400)"
+        ],
+        "opposing_pressures": [
+          "risk increase (0.084)",
+          "stability loss (0.136)"
+        ],
+        "net_favorable": false,
+        "transition_type": "enter_dominated_transient"
+      },
+      {
+        "from": "REGIME_4",
+        "to": "REGIME_2",
+        "weight": 0.3573920551474342,
+        "inducing_conditions": [
+          "risk pressure relief (gradient=0.219)",
+          "stability pressure relief (gradient=0.138)"
+        ],
+        "opposing_pressures": [
+          "time cost increase (0.293)"
+        ],
+        "net_favorable": true,
+        "transition_type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_2",
+        "to": "REGIME_4",
+        "weight": 0.29279351236292706,
+        "inducing_conditions": [
+          "time pressure relief (gradient=0.293)"
+        ],
+        "opposing_pressures": [
+          "risk increase (0.219)",
+          "stability loss (0.138)"
+        ],
+        "net_favorable": false,
+        "transition_type": "pareto_tradeoff"
+      },
+      {
+        "from": "REGIME_3",
+        "to": "REGIME_1",
+        "weight": 0.2199593124589082,
+        "inducing_conditions": [
+          "risk pressure relief (gradient=0.084)",
+          "stability pressure relief (gradient=0.136)"
+        ],
+        "opposing_pressures": [
+          "time cost increase (0.400)"
+        ],
+        "net_favorable": true,
+        "transition_type": "exit_dominated"
+      },
+      {
+        "from": "REGIME_2",
+        "to": "REGIME_3",
+        "weight": 0.15534165285385604,
+        "inducing_conditions": [
+          "time pressure relief (gradient=0.155)"
+        ],
+        "opposing_pressures": [
+          "risk increase (0.503)",
+          "stability loss (0.392)"
+        ],
+        "net_favorable": false,
+        "transition_type": "enter_dominated_transient"
+      }
+    ],
+    "prohibited_transitions": [
+      {
+        "from": "REGIME_2",
+        "to": "REGIME_1",
+        "reason": "worsens all three pressure axes",
+        "time_increase": 0.24454364442562815,
+        "risk_increase": 0.4189493884090367,
+        "stability_loss": 0.2557980806734985
+      },
+      {
+        "from": "REGIME_4",
+        "to": "REGIME_1",
+        "reason": "worsens all three pressure axes",
+        "time_increase": 0.5373371567885552,
+        "risk_increase": 0.19952411452527902,
+        "stability_loss": 0.11783129940982195
+      },
+      {
+        "from": "REGIME_4",
+        "to": "REGIME_3",
+        "reason": "worsens all three pressure axes",
+        "time_increase": 0.13745185950907102,
+        "risk_increase": 0.2837661702767749,
+        "stability_loss": 0.25354855611723426
+      }
+    ]
+  },
+  "dominated_regime_explanation": {
+    "regime": "REGIME_3",
+    "pareto_status": "DOMINATED",
+    "n_folios": 16,
+    "pressure_profile": {
+      "time_mean": 0.27781014149014716,
+      "risk_mean": 0.6923148207839093,
+      "stability_mean": 0.7362797352798743
+    },
+    "local_pressure_minima": [
+      "extreme time pressure conditions favor REGIME_3 (fastest execution)"
+    ],
+    "entry_conditions": [
+      "acute time pressure spike (convergence urgency)",
+      "time-critical phase requiring rapid throughput",
+      "transient passage during regime shifting"
+    ],
+    "exit_conditions": [
+      "accumulated risk pressure creates gradient toward REGIME_2 or REGIME_4",
+      "stability pressure builds without compensating advantage",
+      "no sustainable equilibrium in high-risk, low-stability region"
+    ],
+    "transient_role": "REGIME_3 serves as a transient state: entered when time pressure is acute, but pressure accumulation forces exit toward more sustainable regimes. It is a throughput-maximizing passage, not a dwelling state."
+  },
+  "crosschecks": {
+    "regime_3_transient": {
+      "description": "REGIME_3 appears only as transient sink or bridge",
+      "in_edge_count": 2,
+      "out_edge_count": 3,
+      "in_weight_total": 0.5552269501333402,
+      "out_weight_total": 1.789432679903432,
+      "status": "PASS"
+    },
+    "conservative_path_exists": {
+      "description": "At least one conservative stabilization path always exists",
+      "paths_to_stable_regimes": 4,
+      "target_regimes": [
+        "REGIME_1",
+        "REGIME_2"
+      ],
+      "status": "PASS"
+    },
+    "restart_regime_4_alignment": {
+      "description": "Restart pressure routes align with REGIME_4 bias",
+      "restart_folios_in_regime_4": [
+        "f50v",
+        "f57r"
+      ],
+      "regime_4_stability_pressure": 0.4827311791626401,
+      "status": "PASS"
+    },
+    "no_pressure_free_cycles": {
+      "description": "Switching graph has no pressure-free cycles",
+      "total_cycles_found": 0,
+      "pressure_free_cycles": 0,
+      "status": "PASS"
+    }
+  }
+}

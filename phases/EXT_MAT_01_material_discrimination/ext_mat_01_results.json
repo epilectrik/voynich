@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "phase": "EXT-MAT-01",
+    "title": "Material Domain Discrimination",
+    "timestamp": "2026-01-05T22:30:17.638237"
+  },
+  "test_results": [
+    {
+      "test": 1,
+      "name": "Illustration Content Alignment",
+      "metrics": {
+        "perfumery_aligned_rate": 0.867,
+        "root_emphasis": 0.73,
+        "blue_purple_flowers": 0.47,
+        "food_plants": 0.033,
+        "dye_plants": 0.0
+      },
+      "alchemical_prediction": "Apparatus, symbols, abstract forms expected; aromatic plants unexpected",
+      "botanical_prediction": "Aromatic plant illustrations expected",
+      "observed": "86.7% perfumery-aligned, 73% root emphasis",
+      "alchemical_score": 0.133,
+      "botanical_score": 0.94,
+      "verdict": "BOTANICAL",
+      "confidence": "HIGH"
+    },
+    {
+      "test": 2,
+      "name": "Danger/Toxicity Profile",
+      "metrics": {
+        "premature_hazards": 0.647,
+        "late_hazards": 0.0,
+        "opportunity_loss_fit": "STRONG",
+        "physical_instability_fit": "WEAK"
+      },
+      "alchemical_prediction": "Mercury/antimony hazards should encode mortal danger",
+      "botanical_prediction": "Aromatic hazards encode economic loss only",
+      "observed": "Opportunity-loss DOMINANT, physical-instability WEAK",
+      "alchemical_score": 0.2,
+      "botanical_score": 0.9,
+      "verdict": "BOTANICAL",
+      "confidence": "HIGH"
+    },
+    {
+      "test": 3,
+      "name": "Product/Program Diversity",
+      "metrics": {
+        "total_programs": 83,
+        "total_families": 8,
+        "programs_per_family": 10.4
+      },
+      "alchemical_prediction": "Few products (4-6), many variations \u2192 expect 10-20 programs",
+      "botanical_prediction": "Many products (dozens), similar process \u2192 expect 50-100 programs",
+      "observed": "83 programs in 8 families",
+      "alchemical_score": 0.3,
+      "botanical_score": 0.8,
+      "verdict": "BOTANICAL",
+      "confidence": "MODERATE"
+    },
+    {
+      "test": 4,
+      "name": "Duration Semantics",
+      "metrics": {
+        "attention_model_wins": true,
+        "position_independent": true,
+        "boundary_reset": true
+      },
+      "alchemical_prediction": "Weeks to months duration",
+      "botanical_prediction": "Hours to days duration",
+      "observed": "SID-05: Attentional pacing = active monitoring (hours)",
+      "alchemical_score": 0.2,
+      "botanical_score": 0.9,
+      "verdict": "BOTANICAL",
+      "confidence": "HIGH"
+    },
+    {
+      "test": 5,
+      "name": "Restart Cost Semantics",
+      "metrics": {
+        "restart_rate": 0.036,
+        "binary_penalty": true
+      },
+      "alchemical_prediction": "Restart loses expensive purchased materials",
+      "botanical_prediction": "Restart loses perishable time-bound opportunity",
+      "observed": "3.6% restart-capable, binary penalty",
+      "alchemical_score": 0.5,
+      "botanical_score": 0.7,
+      "verdict": "BOTANICAL",
+      "confidence": "LOW"
+    },
+    {
+      "test": 6,
+      "name": "Historical Documentation Pattern",
+      "metrics": {
+        "theoretical_content": 0.0,
+        "material_specifications": 0.0,
+        "pure_operational": 1.0
+      },
+      "alchemical_prediction": "Symbolic, encoded, theoretical elements expected",
+      "botanical_prediction": "Practical, operational, direct instruction expected",
+      "observed": "0% theory, 100% operational, structurally exceptional",
+      "alchemical_score": 0.4,
+      "botanical_score": 0.6,
+      "verdict": "BOTANICAL",
+      "confidence": "LOW"
+    },
+    {
+      "test": 7,
+      "name": "Section Structure Interpretation",
+      "metrics": {
+        "total_sections": 8,
+        "vocabulary_exclusivity": 0.807
+      },
+      "alchemical_prediction": "3-4 stages or 7 metals; shared operational vocabulary",
+      "botanical_prediction": "Multiple material types; distinct vocabularies per material",
+      "observed": "8 sections, 80.7% vocabulary exclusivity",
+      "alchemical_score": 0.4,
+      "botanical_score": 0.7,
+      "verdict": "BOTANICAL",
+      "confidence": "MODERATE"
+    },
+    {
+      "test": 8,
+      "name": "Apparatus Usage Pattern",
+      "metrics": {
+        "link_density": 0.376,
+        "premature_hazards": 0.647,
+        "no_endpoint_markers": true
+      },
+      "alchemical_prediction": "Pelican for months-long philosophical circulation",
+      "botanical_prediction": "Pelican for hours-long cohobation/concentration",
+      "observed": "Pelican compatible, but SID-05 duration favors short cycles",
+      "alchemical_score": 0.5,
+      "botanical_score": 0.7,
+      "verdict": "BOTANICAL",
+      "confidence": "LOW"
+    }
+  ],
+  "summary": {
+    "alchemical_total_score": 2.63,
+    "botanical_total_score": 6.24,
+    "score_ratio": 2.37,
+    "botanical_wins": 8,
+    "alchemical_wins": 0,
+    "high_confidence_tests": 3,
+    "high_conf_botanical": 3,
+    "high_conf_alchemical": 0,
+    "overall_verdict": "BOTANICAL_FAVORED",
+    "confidence": "HIGH"
+  }
+}

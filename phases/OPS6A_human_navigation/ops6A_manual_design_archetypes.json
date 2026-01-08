@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "phase": "OPS-6.A",
+    "timestamp": "2026-01-04T22:49:33.718908"
+  },
+  "archetypes": {
+    "A_TRAINING_MANUAL": {
+      "description": "Safe global navigation, high redundancy",
+      "features": {
+        "low_trap_count": true,
+        "high_smoothing": true,
+        "high_redundancy": true,
+        "easy_exits": true
+      }
+    },
+    "B_STEPWISE_RECIPE": {
+      "description": "Clear endpoints, escape paths",
+      "features": {
+        "low_trap_count": true,
+        "defined_endpoints": true,
+        "linear_progression": true,
+        "easy_exits": true
+      }
+    },
+    "C_EXPERT_REFERENCE": {
+      "description": "Local smoothing, global traps tolerated, LINK-anchored",
+      "features": {
+        "trap_tolerance": true,
+        "local_smoothing": true,
+        "link_anchoring": true,
+        "restart_placement": true
+      }
+    },
+    "D_EMERGENCY_CHECKLIST": {
+      "description": "Flat navigation, rapid exits",
+      "features": {
+        "flat_cei": true,
+        "rapid_exits": true,
+        "low_complexity": true,
+        "no_traps": true
+      }
+    }
+  },
+  "observed_features": {
+    "n_traps": 9,
+    "n_folios": 83,
+    "trap_rate": 0.1084,
+    "smoothing_supported": true,
+    "restart_supported": true,
+    "navigation_rejected": true,
+    "link_anchoring": true,
+    "cei_variance": 0.0163,
+    "mean_ht_density": 0.8458
+  },
+  "scores": {
+    "A_TRAINING_MANUAL": {
+      "score": 2,
+      "max_score": 4,
+      "percentage": 50.0,
+      "feature_matches": {
+        "low_trap_count": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        },
+        "high_smoothing": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        },
+        "high_redundancy": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        },
+        "easy_exits": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        }
+      }
+    },
+    "B_STEPWISE_RECIPE": {
+      "score": 0,
+      "max_score": 4,
+      "percentage": 0.0,
+      "feature_matches": {
+        "low_trap_count": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        },
+        "defined_endpoints": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        },
+        "linear_progression": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        },
+        "easy_exits": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        }
+      }
+    },
+    "C_EXPERT_REFERENCE": {
+      "score": 4,
+      "max_score": 4,
+      "percentage": 100.0,
+      "feature_matches": {
+        "trap_tolerance": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        },
+        "local_smoothing": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        },
+        "link_anchoring": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        },
+        "restart_placement": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        }
+      }
+    },
+    "D_EMERGENCY_CHECKLIST": {
+      "score": 1,
+      "max_score": 4,
+      "percentage": 25.0,
+      "feature_matches": {
+        "flat_cei": {
+          "expected": true,
+          "observed": true,
+          "match": true
+        },
+        "rapid_exits": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        },
+        "low_complexity": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        },
+        "no_traps": {
+          "expected": true,
+          "observed": false,
+          "match": false
+        }
+      }
+    }
+  },
+  "best_match": {
+    "archetype": "C_EXPERT_REFERENCE",
+    "score_percentage": 100.0
+  }
+}

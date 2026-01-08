@@ -1,0 +1,33 @@
+{
+  "line": {
+    "total_lines": 12171,
+    "multi_token_lines": 8764,
+    "mean_length": 3.057595924739134,
+    "median_length": 3.0,
+    "single_token_pct": 0.2799276969846356
+  },
+  "cross_line": {
+    "adjacent_mi_mean": 0.0,
+    "non_adjacent_mi_mean": 0.0,
+    "adjacent_count": 4980,
+    "non_adjacent_count": 4192
+  },
+  "cross_folio": {
+    "adjacent_overlap_mean": 0.000975609756097561,
+    "distant_overlap_mean": 0.0005858230814294083,
+    "adjacent_count": 5125,
+    "distant_count": 5121
+  },
+  "internal": {
+    "first_vocab_size": 2178,
+    "middle_vocab_size": 2178,
+    "last_vocab_size": 2178,
+    "first_only_pct": 0.0,
+    "last_only_pct": 0.0,
+    "first_concentration": 0.06246125232486051,
+    "middle_concentration": 0.20719945942625467,
+    "last_concentration": 0.06246125232486051
+  },
+  "verdict": "LINE_ATOMIC",
+  "interpretation": "Currier A entries are line-bounded. Each line is an atomic unit (record)."
+}

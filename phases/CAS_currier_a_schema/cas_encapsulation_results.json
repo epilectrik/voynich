@@ -1,0 +1,69 @@
+{
+  "positional": {
+    "mixed_folios": 1530,
+    "a_before_b": 694,
+    "b_before_a": 121,
+    "interleaved": 715
+  },
+  "count": {
+    "section_counts": {
+      "T": {
+        "A": 889,
+        "B": 1752
+      },
+      "H": {
+        "A": 8385,
+        "B": 11659
+      },
+      "B": {
+        "A": 0,
+        "B": 27972
+      },
+      "C": {
+        "A": 0,
+        "B": 3698
+      },
+      "P": {
+        "A": 2897,
+        "B": 0
+      },
+      "S": {
+        "A": 0,
+        "B": 30464
+      }
+    }
+  },
+  "marker": {
+    "pure_a_folios": 3596,
+    "pure_b_folios": 5739,
+    "marker_distribution": {
+      "ct": 130,
+      "sh": 216,
+      "da": 152,
+      "ok": 141,
+      "ot": 144,
+      "ol": 82,
+      "yt": 84,
+      "ch": 477,
+      "yk": 80,
+      "qo": 275
+    },
+    "ab_boundaries": 2724
+  },
+  "vocab": {
+    "shared_count": 1532,
+    "shared_in_a": 28343,
+    "shared_in_b": 52668
+  },
+  "ratio": {
+    "ratios": [
+      0.0,
+      0.0,
+      4.464856230031949,
+      0.0,
+      1.5434027777777777
+    ]
+  },
+  "verdict": "NO_ENCAPSULATION",
+  "interpretation": "\nA does NOT appear to encapsulate B families:\n- A and B are largely SEPARATE systems\n- They occupy different sections\n- Low vocabulary overlap (14%)\n- No consistent A:B ratio\n\nA is more likely a PARALLEL classification system,\nnot an index into B content.\n        "
+}
