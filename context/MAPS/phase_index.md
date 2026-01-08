@@ -1,0 +1,135 @@
+# Phase Index
+
+**Status:** Reference | **Total Phases:** 118
+
+---
+
+## Phase Naming Convention
+
+Phases follow pattern: `PHASE_NAME_description`
+
+Example: `CAud_currier_a_audit` = Currier A Audit phase
+
+---
+
+## Core Analysis Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| 7 | Formal semantic model | 95.1% parse coverage |
+| 9-11 | Domain discrimination | Pharmacology 0/3, Alchemy 2/3 |
+| 12 | Tradition fingerprinting | T3 PRIVATE SCHOOL |
+| 13-14 | Executability | MONOSTATE (57.8% STATE-C) |
+| 15 | Hub core structure | 10 primitives, k/h/e core |
+| 16 | Process alignment | REFLUX DISTILLATION (86%) |
+| 17 | Kernel semantics | Three-point control |
+| 18 | Hazard topology | 5 failure classes |
+| 19 | Identifier detection | PURE_OPERATIONAL |
+| 20 | Normalization | 49 classes, ASYMPTOTE |
+| 21-22 | Enumeration | 83 folios, 75,248 instructions |
+| 23 | Regime boundaries | f57r = RESTART_PROTOCOL |
+
+---
+
+## Adversarial Phases
+
+| Phase | Target | Result |
+|-------|--------|--------|
+| X | Adversarial audit | 6/8 survived |
+| X.5 | DSL discriminator | Language REJECTED |
+
+---
+
+## Currier A Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| CAud | Currier A audit | A is DISJOINT |
+| CAud-G | A grammar derivation | NO GRAMMAR |
+| CAS | A schema | CATEGORICAL REGISTRY |
+| CAS-DS | A deep structure | INFRASTRUCTURE_REUSE |
+| CAS-MULT | Multiplicity encoding | 64.1% repeating blocks |
+| CAS-DEEP | Deep structure | 100% section-isolated |
+| CAS-MORPH | Morphology | 897 combinations |
+| CAS-PHYS | Physical separation | 0 shared folios |
+| CAS-FOLIO | Folio coherence | Sequential coherence exists |
+| CAS-POST | Post-closure analysis | COMPLETE |
+| CAS-XREF | Cross-reference | H dominates B (91.6%) |
+
+---
+
+## AZC Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| AZC | Classification | HYBRID (7.7%) |
+| AZC-PROBE | Vocabulary probe | LABELING signature |
+| AZC-PLACEMENT | Placement codes | Finite placement classes |
+| AZC-AXIS | Axis connectivity | MULTI-AXIS INTERDEPENDENT |
+
+---
+
+## OPS/EXT Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| OPS-1 to OPS-7 | Operator doctrine | 5 core principles |
+| EXT-1 to EXT-9 | External comparison | Goldsmith workshops |
+
+---
+
+## Structural Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| SP | Structural primitives | MINIMAL (2 tokens) |
+| ROBUST | Grammar robustness | 4/4 PASS |
+| KERNEL | Kernel ordering | h→k SUPPRESSED |
+| LINK | LINK state-space | Section-conditioned |
+| LINE | Line-level | FORMAL CONTROL BLOCKS |
+| QLA | Quire-level | ORGANIZATIONAL UNITS |
+| TRANS | Transitions | 8 suppressed beyond forbidden |
+| MSTAB | Morphological stability | Function INVARIANT |
+
+---
+
+## Human Track Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| UTC | Uncategorized tokens | Section-local |
+| MCS | Coordinate system | 80.7% exclusive |
+| NESS | Non-executable | Single unified layer |
+| HTD | HT domain | BEHAVIORAL STRATIFICATION |
+| HTC | HT closure | NON-OPERATIONAL confirmed |
+| HT-MORPH | HT morphology | Disjoint prefixes |
+| HT-STATE | HT state | Phase-synchronized |
+
+---
+
+## SEL Audit Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| SEL-A | Claim inventory | Audit started |
+| SEL-D | Hazard review | 65% asymmetric |
+| SEL-E | HT review | Overfitting |
+| SEL-F | Contradiction resolution | OPS-R RESOLVED |
+
+---
+
+## Closure Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| MORPH-CLOSE | Morphology closure | 92.66% explained |
+| FG | Folio gap | No structural gaps |
+| A-ARCH | Architecture | GLOBAL TYPE SYSTEM |
+| SISTER | Sister pairs | Equivalence classes |
+| SITD | Over-specification | ~40% reducible |
+
+---
+
+## Navigation
+
+← [phase_to_claim.md](phase_to_claim.md) | ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
