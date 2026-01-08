@@ -1,5 +1,7 @@
 # Human Track Layer
 
+> **For most questions, see:** [../CLAIMS/HT_CONTEXT_SUMMARY.md](../CLAIMS/HT_CONTEXT_SUMMARY.md) (PRIMARY, context-sufficient)
+
 **Status:** CLOSED | **Tier:** 2 (structure), 3-4 (interpretation)
 
 ---

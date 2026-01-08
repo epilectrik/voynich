@@ -150,6 +150,34 @@ When synthesizing from multiple sources:
 
 ---
 
+## Context-Sufficient Summaries
+
+Some topics have **context-sufficient summary files** - short, authoritative documents that answer common questions without requiring further reading.
+
+### Identifying Context-Sufficient Files
+
+Look for:
+- `**Context-Sufficient:** YES` at the top
+- File names ending in `_CONTEXT_SUMMARY.md`
+- Links marked with "(context-sufficient)" in referencing files
+
+### Available Context-Sufficient Summaries
+
+| Topic | File |
+|-------|------|
+| Human Track (HT) | [CLAIMS/HT_CONTEXT_SUMMARY.md](../CLAIMS/HT_CONTEXT_SUMMARY.md) |
+
+### When to Use Them
+
+Use these when:
+- You need a quick, definitive answer about a topic
+- You want to verify tier status and promotion limits
+- You need to confirm stop conditions for a specific claim
+
+**After reading a context-sufficient summary, stop.** Phase reports and detailed constraint files provide methodology only - they cannot change the tier or closure status declared in the summary.
+
+---
+
 ## What NOT to Do
 
 1. **Don't read archive/** - that's raw memory, not curated knowledge
