@@ -104,7 +104,7 @@
 | 168 | Uncategorized: single unified layer | 2 | ⊂ human_track |
 | 169 | Uncategorized: hazard avoidance 4.84 vs 2.5 | 2 | ⊂ human_track |
 | 170 | Uncategorized: morphologically distinct (p<0.001) | 2 | ⊂ human_track |
-| 171 | Only continuous closed-loop process control survives | 2 | → [C171_purpose_class.md](C171_purpose_class.md) |
+| 171 | Only continuous closed-loop process control survives | 2 | → [C171_closed_loop_only.md](C171_closed_loop_only.md) |
 
 ---
 
@@ -208,7 +208,7 @@
 |---|------------|------|--------|
 | 345 | A folios lack thematic coherence | 2 | ⊂ currier_a |
 | 346 | A exhibits SEQUENTIAL COHERENCE | 2 | ⊂ currier_a |
-| 357 | Lines 3.3x more regular than random | 2 | → [C357_line_structure.md](C357_line_structure.md) |
+| 357 | Lines 3.3x more regular than random | 2 | → [C357_lines_chunked.md](C357_lines_chunked.md) |
 | 358 | Specific boundary tokens identified | 2 | ⊂ organization |
 | 360 | Grammar is LINE-INVARIANT | 2 | ⊂ grammar_system |
 | 361 | Adjacent B folios share 1.30x more vocabulary | 2 | ⊂ organization |
@@ -224,7 +224,7 @@
 | 372 | Kernel dichotomy (100% vs <5%) | 2 | ⊂ morphology |
 | 373 | LINK affinity patterns | 2 | ⊂ morphology |
 | 375 | Suffixes have POSITIONAL GRAMMAR | 2 | ⊂ morphology |
-| 382 | MORPHOLOGY ENCODES CONTROL PHASE | 2 | → [C382_phase_encoding.md](C382_phase_encoding.md) |
+| 382 | MORPHOLOGY ENCODES CONTROL PHASE | 2 | → [C382_morphology_control_phase.md](C382_morphology_control_phase.md) |
 
 ---
 
@@ -258,7 +258,7 @@
 
 | # | Constraint | Tier | Status |
 |---|------------|------|--------|
-| 404 | HT TERMINAL INDEPENDENCE (p=0.92) | 2 | → [C404_HT_non_operational.md](C404_HT_non_operational.md) |
+| 404 | HT TERMINAL INDEPENDENCE (p=0.92) | 2 | → [C404_ht_non_operational.md](C404_ht_non_operational.md) |
 | 405 | HT CAUSAL DECOUPLING (V=0.10) | 2 | ⊂ human_track |
 | 406 | HT GENERATIVE STRUCTURE (Zipf=0.89) | 2 | ⊂ human_track |
 
@@ -279,7 +279,7 @@
 
 | # | Constraint | Tier | Status |
 |---|------------|------|--------|
-| 411 | Grammar DELIBERATELY OVER-SPECIFIED (~40% reducible) | 2 | → [C411_deliberate_overspecification.md](C411_deliberate_overspecification.md) |
+| 411 | Grammar DELIBERATELY OVER-SPECIFIED (~40% reducible) | 2 | → [C411_over_specification.md](C411_over_specification.md) |
 
 ---
 

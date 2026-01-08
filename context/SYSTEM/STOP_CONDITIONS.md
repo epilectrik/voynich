@@ -51,7 +51,7 @@ These conclusions are stable. Do not:
 
 1. **The phase is marked CLOSED** - no further work intended
 2. **The constraint is already documented** - cite, don't re-derive
-3. **You're outside the scope boundary** - see MODEL_SCOPE.md
+3. **You're outside the scope boundary** - see [CORE/model_boundary.md](../CORE/model_boundary.md)
 4. **You're entering external interpretation** - belongs in SPECULATIVE/
 
 ---

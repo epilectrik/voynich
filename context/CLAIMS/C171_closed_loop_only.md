@@ -1,6 +1,6 @@
 # C171: Only Continuous Closed-Loop Process Control Survives
 
-**Tier:** 0 | **Status:** FROZEN | **Phase:** PCI
+**Tier:** 2 | **Status:** CLOSED | **Phase:** PCI
 
 ---
 

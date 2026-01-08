@@ -41,6 +41,14 @@ Before reading further or doing new analysis:
 - **Speculation stays in SPECULATIVE/** - never promote without evidence
 - **Prefix matching ≠ token matching** - common bug, see SYSTEM/METHODOLOGY.md
 
+### Audit Scope Rule
+
+> **Lack of documentation density is NOT evidence of missing structure.**
+> Tier 3-4 unknowns are allowed, expected, and CLOSED internally.
+> Only contradictions at Tier 0 or Tier 1 constitute errors.
+
+When auditing this project, do not treat sparse documentation as a gap. Some areas (Human Track, folio structure) have fewer constraints because they are **properly bounded**, not incomplete.
+
 ---
 
 ## Navigation
@@ -113,7 +121,9 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 ## Three Text Systems
 
-The manuscript contains three distinct systems sharing a global type system:
+The manuscript contains three distinct systems sharing a **global morphological type system** (not grammar):
+
+> **Important distinction:** The "single shared grammar" in the frozen conclusion applies to **Currier B only**. Currier A uses a different formal system (non-sequential). What IS shared across all three systems is the morphological TYPE system (prefix/suffix structure, compositional rules).
 
 | System | % Tokens | Folios | Function |
 |--------|----------|--------|----------|
