@@ -95,6 +95,61 @@ Format: `Phase PHASE_NAME` or `phases/PHASE_NAME/`
 
 ---
 
+## Multi-Branch Access Patterns
+
+When a question spans multiple domains, use the appropriate pattern:
+
+### Pattern 1: Direct Parallel Read (2-3 files)
+
+If you need 2-3 specific files, read them directly in parallel:
+
+```
+Example: "How does the grammar relate to HT?"
+→ Read ARCHITECTURE/currier_B.md AND ARCHITECTURE/human_track.md in parallel
+→ Synthesize after both complete
+```
+
+### Pattern 2: Agent Exploration (unknown scope)
+
+If you don't know which files you need, spawn Explore agents:
+
+```
+Example: "What constraints relate to hazard avoidance?"
+→ Spawn agent to search CLAIMS/
+→ Agent returns relevant constraint numbers
+→ Read specific files based on findings
+```
+
+### Pattern 3: Cross-Branch Synthesis (complex questions)
+
+For questions spanning multiple branches with unknown depth:
+
+```
+Example: "How do Currier A, B, and AZC interact?"
+→ Option A: Read ARCHITECTURE/cross_system.md first (it may be sufficient)
+→ Option B: Spawn 3 agents to explore A, B, AZC independently
+→ Combine agent findings
+```
+
+### Decision Guide
+
+| Situation | Pattern |
+|-----------|---------|
+| Know exactly which 2-3 files | Direct parallel read |
+| Need to search for relevant content | Agent exploration |
+| Complex multi-domain synthesis | Read cross-reference file first, then agents if needed |
+| Tier 0/1 fundamentals | Always read CORE/ directly |
+
+### Combining Results
+
+When synthesizing from multiple sources:
+1. Note the **Tier** of each source (higher tier = less certain)
+2. Note **closure status** (CLOSED = settled, OPEN = ongoing)
+3. Cite specific **constraints** when combining claims
+4. Don't mix Tier 2 structure with Tier 4 speculation as if equal
+
+---
+
 ## What NOT to Do
 
 1. **Don't read archive/** - that's raw memory, not curated knowledge
