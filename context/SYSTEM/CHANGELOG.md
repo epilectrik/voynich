@@ -43,6 +43,31 @@
 
 ---
 
+## Version 1.1 (2026-01-08)
+
+### Added: Research Automation
+
+**Summary:** Added skills, hooks, and workflow documentation for automated research.
+
+**Files created:**
+- `.claude/skills/phase-analysis/SKILL.md` - Automatic phase analysis
+- `.claude/skills/constraint-lookup/SKILL.md` - Constraint search and citation
+- `.claude/settings.json` - Hook configuration
+- `archive/scripts/validate_constraint_reference.py` - Constraint validation
+- `archive/scripts/extract_phase_metrics.py` - Metrics extraction
+
+**Files updated:**
+- `context/SYSTEM/METHODOLOGY.md` - Added "Research Workflow (Automated)" section
+- `context/SYSTEM/HOW_TO_READ.md` - Added multi-branch access patterns
+- `context/CLAUDE_INDEX.md` - Added "Automation" section
+
+**New workflows:**
+- Phase Analysis Protocol (automatic)
+- Constraint Lookup Protocol (automatic)
+- Constraint reference validation (hook)
+
+---
+
 ## Future Entries
 
 When updating context, add entries in this format:
