@@ -224,6 +224,66 @@ Within-quire Jaccard 1.69x between-quire.
 
 ---
 
+---
+
+## Imported Constraints
+
+### C158 - Extended runs necessary (12.6% envelope gap)
+**Tier:** 2 | **Status:** CLOSED
+Extended runs necessary (12.6% envelope gap)
+**Source:** v1.8-import
+
+### C159 - Section boundaries organizational (F-ratio 0.37)
+**Tier:** 2 | **Status:** CLOSED
+Section boundaries organizational (F-ratio 0.37)
+**Source:** v1.8-import
+
+### C160 - Variants are discrete alternatives (43%)
+**Tier:** 2 | **Status:** CLOSED
+Variants are discrete alternatives (43%)
+**Source:** v1.8-import
+
+### C162 - Aggressive programs buffered (88% vs 49% null)
+**Tier:** 2 | **Status:** CLOSED
+Aggressive programs buffered (88% vs 49% null)
+**Source:** v1.8-import
+
+### C163 - 7 domains ruled incompatible
+**Tier:** 2 | **Status:** CLOSED
+7 domains ruled incompatible
+**Source:** v1.8-import
+
+### C173 - Linguistic hypothesis EXHAUSTED
+**Tier:** 2 | **Status:** CLOSED
+Linguistic hypothesis EXHAUSTED
+**Source:** v1.8-import
+
+### C174 - Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)
+**Tier:** 2 | **Status:** CLOSED
+Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)
+**Source:** v1.8-import
+
+### C175 - 3 process classes survive (reflux, extraction, conditioning)
+**Tier:** 2 | **Status:** CLOSED
+3 process classes survive (reflux, extraction, conditioning)
+**Source:** v1.8-import
+
+### C176 - 5 product families survive
+**Tier:** 2 | **Status:** CLOSED
+5 product families survive
+**Source:** v1.8-import
+
+### C177 - Both extraction/conditioning survive; extraction favored
+**Tier:** 2 | **Status:** CLOSED
+Both extraction/conditioning survive; extraction favored
+**Source:** v1.8-import
+
+### C343 - A-AZC persistence independence: A-vocabulary tokens appear in 2.2x more AZC placements than AZC-only tokens (p < 0.0001); high-multiplicity A-tokens have 43% broader coverage (p = 0.001); A-registry assets persist independently of AZC legality windows; supports managed stewardship model (AAZ, Tier 2)
+**Tier:** 2 | **Status:** CLOSED
+A-AZC persistence independence: A-vocabulary tokens appear in 2.2x more AZC placements than AZC-only tokens (p < 0.0001); high-multiplicity A-tokens have 43% broader coverage (p = 0.001); A-registry assets persist independently of AZC legality windows; supports managed stewardship model (AAZ, Tier 2)
+**Source:** v1.8-import
+
+
 ## Navigation
 
 ← [INDEX.md](INDEX.md) | ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

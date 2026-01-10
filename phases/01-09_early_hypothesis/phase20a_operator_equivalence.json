@@ -807,17 +807,16 @@
         "mean_frequency_rank": 0.9249999999999999,
         "mean_length": 0.4583333333333333
       },
-      "functional_role": "FLOW_OPERATOR",
+      "functional_role": "AUXILIARY",
       "representative": "dar",
       "total_frequency": 3632
     },
     {
       "class_id": 30,
       "members": [
-        "chol",
-        "ar"
+        "chol"
       ],
-      "member_count": 2,
+      "member_count": 1,
       "behavioral_signature": {
         "mean_convergence_impact": 0.030000000000000002,
         "mean_kernel_proximity": 0.5,
@@ -1228,9 +1227,10 @@
         "tar",
         "lol",
         "lor",
-        "kol"
+        "kol",
+        "ar"
       ],
-      "member_count": 15,
+      "member_count": 16,
       "behavioral_signature": {
         "mean_convergence_impact": 0.030000000000000013,
         "mean_kernel_proximity": 0.20000000000000004,
@@ -1362,7 +1362,7 @@
       {
         "class_id": 29,
         "representative": "dar",
-        "role": "FLOW_OPERATOR",
+        "role": "AUXILIARY",
         "member_count": 6
       },
       {
@@ -1405,7 +1405,7 @@
         "class_id": 30,
         "representative": "chol",
         "role": "FLOW_OPERATOR",
-        "member_count": 2
+        "member_count": 1
       },
       {
         "class_id": 28,

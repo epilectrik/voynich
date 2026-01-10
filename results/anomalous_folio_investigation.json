@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "analysis": "Anomalous Folio Investigation",
+    "description": "Why do these folios cluster across system boundaries?",
+    "n_folios": 4
+  },
+  "reference_distributions": {
+    "a_mean_ht": 0.1699,
+    "b_mean_ht": 0.1495,
+    "azc_mean_ht": 0.1672
+  },
+  "anomalous_folios": {
+    "f41r": {
+      "folio": "f41r",
+      "system": "B",
+      "ht_density": 0.2965,
+      "ht_status": "HOTSPOT",
+      "ht_percentile_global": 99.1,
+      "ht_percentile_in_system": 100.0,
+      "b_metrics": {
+        "regime": "REGIME_4",
+        "execution_tension": -0.563,
+        "hazard_density": 0.585,
+        "escape_density": 0
+      },
+      "quire": "F",
+      "clustering_reason": {
+        "distance_to_a_mean": 0.1266,
+        "distance_to_own_system_mean": 0.147,
+        "closer_to": "A"
+      }
+    },
+    "f65r": {
+      "folio": "f65r",
+      "system": "AZC",
+      "ht_density": 0.3333,
+      "ht_status": "HOTSPOT",
+      "ht_percentile_global": 99.6,
+      "ht_percentile_in_system": 100.0,
+      "azc_metrics": {
+        "section": "H",
+        "ttr": 0.5,
+        "coverage": 0
+      },
+      "quire": "H",
+      "clustering_reason": {
+        "distance_to_a_mean": 0.1634,
+        "distance_to_own_system_mean": 0.1661,
+        "closer_to": "A"
+      }
+    },
+    "f67r2": {
+      "folio": "f67r2",
+      "system": "AZC",
+      "ht_density": 0.2936,
+      "ht_status": "HOTSPOT",
+      "ht_percentile_global": 98.7,
+      "ht_percentile_in_system": 96.6,
+      "azc_metrics": {
+        "section": "A",
+        "ttr": 0.384,
+        "coverage": 0
+      },
+      "quire": "I",
+      "clustering_reason": {
+        "distance_to_a_mean": 0.1237,
+        "distance_to_own_system_mean": 0.1264,
+        "closer_to": "A"
+      }
+    },
+    "f86v5": {
+      "folio": "f86v5",
+      "system": "B",
+      "ht_density": 0.2775,
+      "ht_status": "HOTSPOT",
+      "ht_percentile_global": 96.0,
+      "ht_percentile_in_system": 98.8,
+      "b_metrics": {
+        "regime": "REGIME_2",
+        "execution_tension": -0.795,
+        "hazard_density": 0.472,
+        "escape_density": 0
+      },
+      "quire": "N",
+      "clustering_reason": {
+        "distance_to_a_mean": 0.1076,
+        "distance_to_own_system_mean": 0.128,
+        "closer_to": "A"
+      }
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "All anomalous folios have high HT for their system",
+      "interpretation": "Cross-system clustering driven by exceptional HT burden"
+    },
+    {
+      "finding": "4 anomalous folios are HT hotspots",
+      "folios": [
+        "f41r",
+        "f65r",
+        "f67r2",
+        "f86v5"
+      ],
+      "interpretation": "Extreme HT drives cross-system affinity"
+    },
+    {
+      "finding": "B anomalous folios in regimes: {'REGIME_2', 'REGIME_4'}",
+      "interpretation": "Check if specific regimes prone to high HT"
+    }
+  ]
+}

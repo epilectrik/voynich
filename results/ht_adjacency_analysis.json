@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "analysis": "HT-THREAD Phase 5",
+    "description": "HT folio adjacency analysis",
+    "n_folios": 226
+  },
+  "statistics": {
+    "mean_adjacent_similarity": 0.0611170993059907,
+    "std_adjacent_similarity": 0.05110134459984776,
+    "mean_non_adjacent_similarity": 0.036079936662509055,
+    "std_non_adjacent_similarity": 0.034352201779147565,
+    "n_adjacent_pairs": 225,
+    "n_non_adjacent_pairs": 492
+  },
+  "permutation_test": {
+    "observed_diff": 0.025037162643481645,
+    "p_value": 0.0,
+    "enrichment_ratio": 1.6939358812538592
+  },
+  "verdict": "SIGNIFICANT_ADJACENCY_CLUSTERING",
+  "interpretation": "HT vocabulary shows 1.69x enrichment in adjacent folios (p=0.0000)",
+  "c424_comparison": {
+    "c424_enrichment": 1.31,
+    "ht_enrichment": 1.6939358812538592,
+    "comparison": "HT shows STRONGER adjacency clustering than Currier A"
+  }
+}

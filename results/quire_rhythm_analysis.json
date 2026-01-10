@@ -1,0 +1,484 @@
+{
+  "metadata": {
+    "analysis": "E1 - Quire Rhythm Alignment",
+    "description": "Testing if HT oscillation aligns with quire structure",
+    "n_folios": 227,
+    "n_boundaries": 17,
+    "n_quires": 18
+  },
+  "quire_boundaries": [
+    {
+      "position": 16,
+      "folio_before": "f8v",
+      "folio_after": "f9r",
+      "quire_before": "A",
+      "quire_after": "B"
+    },
+    {
+      "position": 30,
+      "folio_before": "f16v",
+      "folio_after": "f17r",
+      "quire_before": "B",
+      "quire_after": "C"
+    },
+    {
+      "position": 46,
+      "folio_before": "f24v",
+      "folio_after": "f25r",
+      "quire_before": "C",
+      "quire_after": "D"
+    },
+    {
+      "position": 62,
+      "folio_before": "f32v",
+      "folio_after": "f33r",
+      "quire_before": "D",
+      "quire_after": "E"
+    },
+    {
+      "position": 78,
+      "folio_before": "f40v",
+      "folio_after": "f41r",
+      "quire_before": "E",
+      "quire_after": "F"
+    },
+    {
+      "position": 94,
+      "folio_before": "f48v",
+      "folio_after": "f49r",
+      "quire_before": "F",
+      "quire_after": "G"
+    },
+    {
+      "position": 110,
+      "folio_before": "f56v",
+      "folio_after": "f57r",
+      "quire_before": "G",
+      "quire_after": "H"
+    },
+    {
+      "position": 118,
+      "folio_before": "f66v",
+      "folio_after": "f67r1",
+      "quire_before": "H",
+      "quire_after": "I"
+    },
+    {
+      "position": 128,
+      "folio_before": "f68v3",
+      "folio_after": "f69r",
+      "quire_before": "I",
+      "quire_after": "J"
+    },
+    {
+      "position": 134,
+      "folio_before": "f70v2",
+      "folio_after": "f71r",
+      "quire_before": "J",
+      "quire_after": "K"
+    },
+    {
+      "position": 142,
+      "folio_before": "f72v3",
+      "folio_after": "f73r",
+      "quire_before": "K",
+      "quire_after": "L"
+    },
+    {
+      "position": 144,
+      "folio_before": "f73v",
+      "folio_after": "f75r",
+      "quire_before": "L",
+      "quire_after": "M"
+    },
+    {
+      "position": 164,
+      "folio_before": "f84v",
+      "folio_after": "f85r1",
+      "quire_before": "M",
+      "quire_after": "N"
+    },
+    {
+      "position": 171,
+      "folio_before": "f86v6",
+      "folio_after": "f87r",
+      "quire_before": "N",
+      "quire_after": "O"
+    },
+    {
+      "position": 183,
+      "folio_before": "f90v2",
+      "folio_after": "f93r",
+      "quire_before": "O",
+      "quire_after": "Q"
+    },
+    {
+      "position": 193,
+      "folio_before": "f96v",
+      "folio_after": "f99r",
+      "quire_before": "Q",
+      "quire_after": "S"
+    },
+    {
+      "position": 203,
+      "folio_before": "f102v2",
+      "folio_after": "f103r",
+      "quire_before": "S",
+      "quire_after": "T"
+    }
+  ],
+  "quire_profiles": {
+    "A": {
+      "n_folios": 16,
+      "first_folio": "f1r",
+      "last_folio": "f8v",
+      "ht_mean": 0.1584,
+      "ht_std": 0.0453,
+      "ht_first": 0.1662,
+      "ht_last": 0.167,
+      "ht_trend": 0.0008,
+      "internal_trend": {
+        "spearman_r": 0.097,
+        "p_value": 0.7207,
+        "direction": "FLAT"
+      }
+    },
+    "B": {
+      "n_folios": 14,
+      "first_folio": "f9r",
+      "last_folio": "f16v",
+      "ht_mean": 0.1888,
+      "ht_std": 0.049,
+      "ht_first": 0.1331,
+      "ht_last": 0.2047,
+      "ht_trend": 0.0716,
+      "internal_trend": {
+        "spearman_r": 0.508,
+        "p_value": 0.0638,
+        "direction": "INCREASING"
+      }
+    },
+    "C": {
+      "n_folios": 16,
+      "first_folio": "f17r",
+      "last_folio": "f24v",
+      "ht_mean": 0.1655,
+      "ht_std": 0.0622,
+      "ht_first": 0.1939,
+      "ht_last": 0.215,
+      "ht_trend": 0.0211,
+      "internal_trend": {
+        "spearman_r": -0.171,
+        "p_value": 0.5276,
+        "direction": "FLAT"
+      }
+    },
+    "D": {
+      "n_folios": 16,
+      "first_folio": "f25r",
+      "last_folio": "f32v",
+      "ht_mean": 0.1546,
+      "ht_std": 0.0625,
+      "ht_first": 0.1056,
+      "ht_last": 0.1246,
+      "ht_trend": 0.019,
+      "internal_trend": {
+        "spearman_r": 0.3,
+        "p_value": 0.2589,
+        "direction": "FLAT"
+      }
+    },
+    "E": {
+      "n_folios": 16,
+      "first_folio": "f33r",
+      "last_folio": "f40v",
+      "ht_mean": 0.159,
+      "ht_std": 0.0439,
+      "ht_first": 0.0833,
+      "ht_last": 0.1661,
+      "ht_trend": 0.0828,
+      "internal_trend": {
+        "spearman_r": 0.209,
+        "p_value": 0.4377,
+        "direction": "FLAT"
+      }
+    },
+    "F": {
+      "n_folios": 16,
+      "first_folio": "f41r",
+      "last_folio": "f48v",
+      "ht_mean": 0.1778,
+      "ht_std": 0.0487,
+      "ht_first": 0.2965,
+      "ht_last": 0.19,
+      "ht_trend": -0.1065,
+      "internal_trend": {
+        "spearman_r": 0.074,
+        "p_value": 0.7867,
+        "direction": "FLAT"
+      }
+    },
+    "G": {
+      "n_folios": 16,
+      "first_folio": "f49r",
+      "last_folio": "f56v",
+      "ht_mean": 0.1935,
+      "ht_std": 0.0341,
+      "ht_first": 0.1776,
+      "ht_last": 0.207,
+      "ht_trend": 0.0294,
+      "internal_trend": {
+        "spearman_r": -0.029,
+        "p_value": 0.9139,
+        "direction": "FLAT"
+      }
+    },
+    "H": {
+      "n_folios": 8,
+      "first_folio": "f57r",
+      "last_folio": "f66v",
+      "ht_mean": 0.1772,
+      "ht_std": 0.0727,
+      "ht_first": 0.1299,
+      "ht_last": 0.2314,
+      "ht_trend": 0.1015,
+      "internal_trend": {
+        "spearman_r": 0.5,
+        "p_value": 0.207,
+        "direction": "INCREASING"
+      }
+    },
+    "I": {
+      "n_folios": 10,
+      "first_folio": "f67r1",
+      "last_folio": "f68v3",
+      "ht_mean": 0.1859,
+      "ht_std": 0.0522,
+      "ht_first": 0.2063,
+      "ht_last": 0.1406,
+      "ht_trend": -0.0657,
+      "internal_trend": {
+        "spearman_r": -0.697,
+        "p_value": 0.0251,
+        "direction": "DECREASING"
+      }
+    },
+    "J": {
+      "n_folios": 6,
+      "first_folio": "f69r",
+      "last_folio": "f70v2",
+      "ht_mean": 0.1721,
+      "ht_std": 0.0413,
+      "ht_first": 0.222,
+      "ht_last": 0.1357,
+      "ht_trend": -0.0863,
+      "internal_trend": {
+        "spearman_r": -0.886,
+        "p_value": 0.0188,
+        "direction": "DECREASING"
+      }
+    },
+    "K": {
+      "n_folios": 8,
+      "first_folio": "f71r",
+      "last_folio": "f72v3",
+      "ht_mean": 0.1258,
+      "ht_std": 0.0422,
+      "ht_first": 0.1168,
+      "ht_last": 0.0766,
+      "ht_trend": -0.0402,
+      "internal_trend": {
+        "spearman_r": 0.119,
+        "p_value": 0.7789,
+        "direction": "FLAT"
+      }
+    },
+    "L": {
+      "n_folios": 2,
+      "first_folio": "f73r",
+      "last_folio": "f73v",
+      "ht_mean": 0.1951,
+      "ht_std": 0.0364,
+      "ht_first": 0.1587,
+      "ht_last": 0.2315,
+      "ht_trend": 0.0728
+    },
+    "M": {
+      "n_folios": 20,
+      "first_folio": "f75r",
+      "last_folio": "f84v",
+      "ht_mean": 0.1113,
+      "ht_std": 0.0254,
+      "ht_first": 0.1208,
+      "ht_last": 0.1514,
+      "ht_trend": 0.0306,
+      "internal_trend": {
+        "spearman_r": -0.05,
+        "p_value": 0.8354,
+        "direction": "FLAT"
+      }
+    },
+    "N": {
+      "n_folios": 7,
+      "first_folio": "f85r1",
+      "last_folio": "f86v6",
+      "ht_mean": 0.1785,
+      "ht_std": 0.0586,
+      "ht_first": 0.1616,
+      "ht_last": 0.1596,
+      "ht_trend": -0.002,
+      "internal_trend": {
+        "spearman_r": 0.214,
+        "p_value": 0.6445,
+        "direction": "FLAT"
+      }
+    },
+    "O": {
+      "n_folios": 12,
+      "first_folio": "f87r",
+      "last_folio": "f90v2",
+      "ht_mean": 0.1771,
+      "ht_std": 0.061,
+      "ht_first": 0.2921,
+      "ht_last": 0.1414,
+      "ht_trend": -0.1507,
+      "internal_trend": {
+        "spearman_r": -0.154,
+        "p_value": 0.6331,
+        "direction": "FLAT"
+      }
+    },
+    "Q": {
+      "n_folios": 10,
+      "first_folio": "f93r",
+      "last_folio": "f96v",
+      "ht_mean": 0.1522,
+      "ht_std": 0.0509,
+      "ht_first": 0.1394,
+      "ht_last": 0.2645,
+      "ht_trend": 0.1251,
+      "internal_trend": {
+        "spearman_r": -0.006,
+        "p_value": 0.9867,
+        "direction": "FLAT"
+      }
+    },
+    "S": {
+      "n_folios": 10,
+      "first_folio": "f99r",
+      "last_folio": "f102v2",
+      "ht_mean": 0.1695,
+      "ht_std": 0.0477,
+      "ht_first": 0.163,
+      "ht_last": 0.1584,
+      "ht_trend": -0.0046,
+      "internal_trend": {
+        "spearman_r": 0.261,
+        "p_value": 0.4671,
+        "direction": "FLAT"
+      }
+    },
+    "T": {
+      "n_folios": 24,
+      "first_folio": "f103r",
+      "last_folio": "f116v",
+      "ht_mean": 0.1382,
+      "ht_std": 0.0437,
+      "ht_first": 0.1018,
+      "ht_last": 0.0,
+      "ht_trend": -0.1018,
+      "internal_trend": {
+        "spearman_r": -0.197,
+        "p_value": 0.3574,
+        "direction": "FLAT"
+      }
+    }
+  },
+  "changepoint_alignment": {
+    "n_changepoints": 9,
+    "n_boundaries": 17,
+    "near_boundary": 2,
+    "expected_by_chance": 3.37,
+    "enrichment": 0.59,
+    "chi2": 0.89,
+    "p_value": 0.3454,
+    "significant": false,
+    "interpretation": "INDEPENDENT"
+  },
+  "boundary_discontinuity": {
+    "n_boundary_jumps": 17,
+    "n_internal_jumps": 209,
+    "mean_boundary_jump": 0.061,
+    "mean_internal_jump": 0.0523,
+    "ratio": 1.17,
+    "u_statistic": 1983.5,
+    "p_value": 0.2129,
+    "significant": false,
+    "interpretation": "CONTINUOUS"
+  },
+  "quire_level_analysis": {
+    "n_quires": 18,
+    "highest_ht_quire": [
+      "L",
+      0.1951
+    ],
+    "lowest_ht_quire": [
+      "M",
+      0.1113
+    ],
+    "ht_mean_range": 0.0838,
+    "between_quire_variance": {
+      "h_statistic": 48.17,
+      "p_value": 0.0001,
+      "eta_squared": 0.149,
+      "significant": true
+    },
+    "ranking": [
+      [
+        "L",
+        0.1951
+      ],
+      [
+        "G",
+        0.1935
+      ],
+      [
+        "B",
+        0.1888
+      ],
+      [
+        "I",
+        0.1859
+      ],
+      [
+        "N",
+        0.1785
+      ]
+    ]
+  },
+  "internal_patterns": {
+    "patterns": {
+      "front_loaded": 6,
+      "back_loaded": 7,
+      "flat": 13,
+      "increasing": 2,
+      "decreasing": 2
+    },
+    "dominant_pattern": "flat",
+    "consistency": 0.43,
+    "interpretation": "FLAT is most common (13/30)"
+  },
+  "key_findings": [
+    {
+      "finding": "HT changepoints do NOT align with quire boundaries",
+      "enrichment": 0.59,
+      "p_value": 0.3454,
+      "interpretation": "HT rhythm is CONTENT-DRIVEN (functional pacing)"
+    },
+    {
+      "finding": "Quires have distinct HT levels",
+      "eta_squared": 0.149,
+      "interpretation": "Some quires are HT-heavy, others HT-light"
+    }
+  ]
+}

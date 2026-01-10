@@ -121,12 +121,117 @@ Central Europe 1400-1550, N. Italy 1400-1470.
 Zero HT tokens near 17,984 hazard positions (vs 4,510 near random).
 **Source:** EXT-ECO-02
 
-### C221 - Practice-Leaning
+### C221 - Deliberate Skill Practice
 **Tier:** 2 | **Status:** CLOSED
-4/5 tests favor handwriting practice over random doodling.
+4/5 tests favor deliberate skill practice over random mark-making. (Tier 3 interpretation: dual-purpose attention + training mechanism.)
 **Source:** EXT-HF-01
 
 ---
+
+---
+
+## Imported Constraints
+
+### C183 - No regime dominates all axes
+**Tier:** 2 | **Status:** CLOSED
+No regime dominates all axes
+**Source:** v1.8-import
+
+### C184 - 9 pressure-induced transitions; 3 prohibited
+**Tier:** 2 | **Status:** CLOSED
+9 pressure-induced transitions; 3 prohibited
+**Source:** v1.8-import
+
+### C186 - No pressure-free cycles
+**Tier:** 2 | **Status:** CLOSED
+No pressure-free cycles
+**Source:** v1.8-import
+
+### C189 - CEI bidirectional; down-CEI easier (1.44x)
+**Tier:** 2 | **Status:** CLOSED
+CEI bidirectional; down-CEI easier (1.44x)
+**Source:** v1.8-import
+
+### C193 - Navigation WORSE than random (d=-7.33)
+**Tier:** 2 | **Status:** CLOSED
+Navigation WORSE than random (d=-7.33)
+**Source:** v1.8-import
+
+### C194 - PARTIAL codex organization (2/5)
+**Tier:** 2 | **Status:** CLOSED
+PARTIAL codex organization (2/5)
+**Source:** v1.8-import
+
+### C195 - Human-track compensation NOT detected
+**Tier:** 2 | **Status:** CLOSED
+Human-track compensation NOT detected
+**Source:** v1.8-import
+
+### C203 - Voynich structurally exceptional
+**Tier:** 2 | **Status:** CLOSED
+Voynich structurally exceptional
+**Source:** v1.8-import
+
+### C204 - OPS-R RESOLVED by SEL-F (definitional ambiguity, not formal contradiction)
+**Tier:** 2 | **Status:** CLOSED
+OPS-R RESOLVED by SEL-F (definitional ambiguity, not formal contradiction)
+**Source:** v1.8-import
+
+### C205 - Residue 82% section-exclusive
+**Tier:** 2 | **Status:** CLOSED
+Residue 82% section-exclusive
+**Source:** v1.8-import
+
+### C206 - Sections not compressible to regimes
+**Tier:** 2 | **Status:** CLOSED
+Sections not compressible to regimes
+**Source:** v1.8-import
+
+### C207 - 0/18 micro-cipher tests passed
+**Tier:** 2 | **Status:** CLOSED
+0/18 micro-cipher tests passed
+**Source:** v1.8-import
+
+### C208 - Residue compatible with non-encoding dynamics
+**Tier:** 2 | **Status:** CLOSED
+Residue compatible with non-encoding dynamics
+**Source:** v1.8-import
+
+### C210 - External alignments robust to HT removal
+**Tier:** 2 | **Status:** CLOSED
+External alignments robust to HT removal
+**Source:** v1.8-import
+
+### C211 - Seasonal ordering underpowered
+**Tier:** 2 | **Status:** CLOSED
+Seasonal ordering underpowered
+**Source:** v1.8-import
+
+### C212 - 93% plants peak May-August
+**Tier:** 2 | **Status:** CLOSED
+93% plants peak May-August
+**Source:** v1.8-import
+
+### C213 - Opportunity-loss model supported (64.7% premature hazards)
+**Tier:** 2 | **Status:** CLOSED
+Opportunity-loss model supported (64.7% premature hazards)
+**Source:** v1.8-import
+
+### C214 - EXT-4 duration criterion INVALIDATED
+**Tier:** 2 | **Status:** CLOSED
+EXT-4 duration criterion INVALIDATED
+**Source:** v1.8-import
+
+### C222 - No intentional layout function
+**Tier:** 2 | **Status:** CLOSED
+No intentional layout function
+**Source:** v1.8-import
+
+### C223 - Procedural fluency MIXED
+**Tier:** 2 | **Status:** CLOSED
+Procedural fluency MIXED
+**Source:** v1.8-import
+
 
 ## Navigation
 

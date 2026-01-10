@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "analysis": "HT Temporal Dynamics",
+    "description": "HT as dynamic signal over manuscript time",
+    "n_folios": 227
+  },
+  "timeseries_stats": {
+    "mean": 0.1613,
+    "std": 0.0545,
+    "min": 0.0,
+    "max": 0.3448
+  },
+  "global_trend": {
+    "spearman_r": -0.158,
+    "spearman_p": 0.017,
+    "linear_slope": -0.000125,
+    "linear_r_squared": 0.0226,
+    "linear_p": 0.0235,
+    "trend": "DECREASING"
+  },
+  "changepoints": {
+    "changepoints": [
+      {
+        "position": 3,
+        "folio": "f2v",
+        "ht_before": 0.206,
+        "ht_after": 0.1393,
+        "change": -0.0667,
+        "direction": "DOWN"
+      },
+      {
+        "position": 38,
+        "folio": "f21r",
+        "ht_before": 0.1926,
+        "ht_after": 0.1378,
+        "change": -0.0548,
+        "direction": "DOWN"
+      },
+      {
+        "position": 56,
+        "folio": "f30r",
+        "ht_before": 0.1488,
+        "ht_after": 0.1518,
+        "change": 0.003,
+        "direction": "UP"
+      },
+      {
+        "position": 83,
+        "folio": "f43v",
+        "ht_before": 0.1663,
+        "ht_after": 0.1749,
+        "change": 0.0085,
+        "direction": "UP"
+      },
+      {
+        "position": 106,
+        "folio": "f55r",
+        "ht_before": 0.2037,
+        "ht_after": 0.1813,
+        "change": -0.0224,
+        "direction": "DOWN"
+      },
+      {
+        "position": 164,
+        "folio": "f85r1",
+        "ht_before": 0.1086,
+        "ht_after": 0.1992,
+        "change": 0.0907,
+        "direction": "UP"
+      },
+      {
+        "position": 166,
+        "folio": "f85v2",
+        "ht_before": 0.1118,
+        "ht_after": 0.194,
+        "change": 0.0822,
+        "direction": "UP"
+      },
+      {
+        "position": 167,
+        "folio": "f86v3",
+        "ht_before": 0.1166,
+        "ht_after": 0.1923,
+        "change": 0.0756,
+        "direction": "UP"
+      },
+      {
+        "position": 222,
+        "folio": "f114v",
+        "ht_before": 0.1454,
+        "ht_after": 0.0959,
+        "change": -0.0495,
+        "direction": "DOWN"
+      }
+    ],
+    "n_changes": 9,
+    "threshold": 0.0149
+  },
+  "autocorrelation": {
+    "acf": [
+      1.0,
+      0.2183,
+      0.1236,
+      0.0575,
+      0.063,
+      0.1005,
+      -0.0389,
+      0.1108,
+      0.0674,
+      0.1309,
+      0.1135,
+      0.1033,
+      0.0489,
+      0.0465,
+      -0.015,
+      -0.0454,
+      0.088,
+      -0.0539,
+      0.0135,
+      -0.0184,
+      0.017
+    ],
+    "decay_lag": 2,
+    "interpretation": "HT signal correlated over ~2 folios",
+    "clustering": "WEAK"
+  },
+  "periodicity": {
+    "dominant_period": 9.5,
+    "snr": 4.78,
+    "periodic": true,
+    "interpretation": "~9-folio cycle detected"
+  },
+  "segments": {
+    "n_segments": 10,
+    "segments": [
+      {
+        "start": 11,
+        "end": 26,
+        "start_folio": "f6v",
+        "end_folio": "f14v",
+        "level": "MED_HIGH",
+        "mean_ht": 0.176,
+        "length": 15
+      },
+      {
+        "start": 26,
+        "end": 57,
+        "start_folio": "f15r",
+        "end_folio": "f30r",
+        "level": "MED_HIGH",
+        "mean_ht": 0.167,
+        "length": 31
+      },
+      {
+        "start": 57,
+        "end": 69,
+        "start_folio": "f30v",
+        "end_folio": "f36r",
+        "level": "MED_LOW",
+        "mean_ht": 0.149,
+        "length": 12
+      },
+      {
+        "start": 69,
+        "end": 74,
+        "start_folio": "f36v",
+        "end_folio": "f38v",
+        "level": "MED_HIGH",
+        "mean_ht": 0.174,
+        "length": 5
+      },
+      {
+        "start": 74,
+        "end": 122,
+        "start_folio": "f39r",
+        "end_folio": "f67v2",
+        "level": "HIGH",
+        "mean_ht": 0.1866,
+        "length": 48
+      },
+      {
+        "start": 122,
+        "end": 127,
+        "start_folio": "f68r1",
+        "end_folio": "f68v2",
+        "level": "MED_HIGH",
+        "mean_ht": 0.1555,
+        "length": 5
+      },
+      {
+        "start": 127,
+        "end": 148,
+        "start_folio": "f68v3",
+        "end_folio": "f76v",
+        "level": "MED_LOW",
+        "mean_ht": 0.1597,
+        "length": 21
+      },
+      {
+        "start": 148,
+        "end": 173,
+        "start_folio": "f77r",
+        "end_folio": "f87v",
+        "level": "LOW",
+        "mean_ht": 0.1432,
+        "length": 25
+      },
+      {
+        "start": 173,
+        "end": 201,
+        "start_folio": "f88r",
+        "end_folio": "f102r2",
+        "level": "MED_LOW",
+        "mean_ht": 0.1587,
+        "length": 28
+      },
+      {
+        "start": 201,
+        "end": 227,
+        "start_folio": "f102v1",
+        "end_folio": "f116v",
+        "level": "LOW",
+        "mean_ht": 0.14,
+        "length": 26
+      }
+    ]
+  },
+  "by_system_position": {
+    "A": {
+      "n_folios": 114,
+      "position_correlation": 0.047,
+      "correlation_p": 0.6232,
+      "early_half_mean": 0.166,
+      "late_half_mean": 0.1738,
+      "trend": "FLAT"
+    },
+    "AZC": {
+      "n_folios": 30,
+      "position_correlation": -0.358,
+      "correlation_p": 0.0524,
+      "early_half_mean": 0.189,
+      "late_half_mean": 0.1342,
+      "trend": "FLAT"
+    },
+    "B": {
+      "n_folios": 83,
+      "position_correlation": -0.171,
+      "correlation_p": 0.1222,
+      "early_half_mean": 0.1551,
+      "late_half_mean": 0.144,
+      "trend": "FLAT"
+    }
+  },
+  "local_extremes": {
+    "n_peaks": 19,
+    "n_valleys": 19,
+    "peaks": [
+      {
+        "position": 119,
+        "folio": "f67r2",
+        "ht": 0.2936,
+        "system": "AZC"
+      },
+      {
+        "position": 171,
+        "folio": "f87r",
+        "ht": 0.2921,
+        "system": "A"
+      },
+      {
+        "position": 33,
+        "folio": "f18v",
+        "ht": 0.281,
+        "system": "A"
+      },
+      {
+        "position": 69,
+        "folio": "f36v",
+        "ht": 0.2535,
+        "system": "A"
+      },
+      {
+        "position": 24,
+        "folio": "f14r",
+        "ht": 0.2533,
+        "system": "A"
+      }
+    ],
+    "valleys": [
+      {
+        "position": 214,
+        "folio": "f108v",
+        "ht": 0.0967,
+        "system": "B"
+      },
+      {
+        "position": 204,
+        "folio": "f103v",
+        "ht": 0.0993,
+        "system": "B"
+      },
+      {
+        "position": 6,
+        "folio": "f4r",
+        "ht": 0.1073,
+        "system": "A"
+      },
+      {
+        "position": 136,
+        "folio": "f72r1",
+        "ht": 0.1073,
+        "system": "AZC"
+      },
+      {
+        "position": 38,
+        "folio": "f21r",
+        "ht": 0.1276,
+        "system": "A"
+      }
+    ]
+  },
+  "key_findings": [
+    {
+      "finding": "Global decreasing trend in HT",
+      "r": -0.158,
+      "p": 0.017,
+      "interpretation": "HT falls through manuscript"
+    },
+    {
+      "finding": "9 HT changepoints detected",
+      "locations": [
+        "f2v",
+        "f21r",
+        "f30r"
+      ],
+      "interpretation": "Abrupt shifts in HT density at these boundaries"
+    },
+    {
+      "finding": "Periodic HT signal detected",
+      "period": 9.5,
+      "interpretation": "HT oscillates with ~10-folio period"
+    }
+  ]
+}

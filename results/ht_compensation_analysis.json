@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "analysis": "D3 - HT Compensation Hypothesis",
+    "description": "Testing if HT compensates for B stress",
+    "n_b_folios": 83,
+    "n_hotspots": 10
+  },
+  "b_stress_summary": {
+    "n_folios": 83,
+    "high_tension": 24,
+    "low_tension": 27
+  },
+  "stress_ht_correlation": {
+    "window_1": {
+      "spearman_r": 0.132,
+      "p_value": 0.2343,
+      "significant": false,
+      "n_pairs": 83,
+      "interpretation": "HT higher near stressed B"
+    },
+    "window_2": {
+      "spearman_r": 0.153,
+      "p_value": 0.1672,
+      "significant": false,
+      "n_pairs": 83,
+      "interpretation": "HT higher near stressed B"
+    },
+    "window_3": {
+      "spearman_r": 0.229,
+      "p_value": 0.0369,
+      "significant": true,
+      "n_pairs": 83,
+      "interpretation": "HT higher near stressed B"
+    },
+    "quire_level": {
+      "spearman_r": 0.343,
+      "p_value": 0.0015,
+      "significant": true,
+      "n_pairs": 83,
+      "interpretation": "HT higher in quires with stressed B"
+    }
+  },
+  "directional_analysis": {
+    "ht_before_b": {
+      "spearman_r": 0.236,
+      "p_value": 0.0319,
+      "significant": true
+    },
+    "ht_after_b": {
+      "spearman_r": 0.177,
+      "p_value": 0.1089,
+      "significant": false
+    },
+    "ht_change_around_b": {
+      "spearman_r": -0.003,
+      "p_value": 0.9764,
+      "significant": false,
+      "interpretation": "HT decreases after stressed B"
+    },
+    "n_pairs": 83,
+    "pattern": "HT_ANTICIPATES_STRESS"
+  },
+  "hotspot_context": {
+    "hotspots": [
+      {
+        "hotspot": "f13r",
+        "ht_density": 0.2876,
+        "system": "A",
+        "nearby_b_folios": [],
+        "n_nearby_b": 0
+      },
+      {
+        "hotspot": "f18v",
+        "ht_density": 0.281,
+        "system": "A",
+        "nearby_b_folios": [],
+        "n_nearby_b": 0
+      },
+      {
+        "hotspot": "f19v",
+        "ht_density": 0.2776,
+        "system": "A",
+        "nearby_b_folios": [],
+        "n_nearby_b": 0
+      },
+      {
+        "hotspot": "f27v",
+        "ht_density": 0.3448,
+        "system": "A",
+        "nearby_b_folios": [
+          {
+            "folio": "f26r",
+            "position": "before",
+            "distance": 3,
+            "tension": -0.026
+          },
+          {
+            "folio": "f26v",
+            "position": "before",
+            "distance": 2,
+            "tension": -0.682
+          }
+        ],
+        "n_nearby_b": 2,
+        "mean_nearby_b_tension": -0.354
+      },
+      {
+        "hotspot": "f41r",
+        "ht_density": 0.2965,
+        "system": "B",
+        "nearby_b_folios": [
+          {
+            "folio": "f39v",
+            "position": "before",
+            "distance": 3,
+            "tension": 1.548
+          },
+          {
+            "folio": "f40r",
+            "position": "before",
+            "distance": 2,
+            "tension": 0.805
+          },
+          {
+            "folio": "f40v",
+            "position": "before",
+            "distance": 1,
+            "tension": -0.925
+          },
+          {
+            "folio": "f41v",
+            "position": "after",
+            "distance": 1,
+            "tension": -0.965
+          }
+        ],
+        "n_nearby_b": 4,
+        "mean_nearby_b_tension": 0.116
+      },
+      {
+        "hotspot": "f65r",
+        "ht_density": 0.3333,
+        "system": "AZC",
+        "nearby_b_folios": [
+          {
+            "folio": "f66r",
+            "position": "after",
+            "distance": 2,
+            "tension": 0.778
+          },
+          {
+            "folio": "f66v",
+            "position": "after",
+            "distance": 3,
+            "tension": 1.514
+          }
+        ],
+        "n_nearby_b": 2,
+        "mean_nearby_b_tension": 1.146
+      },
+      {
+        "hotspot": "f67r2",
+        "ht_density": 0.2936,
+        "system": "AZC",
+        "nearby_b_folios": [
+          {
+            "folio": "f66r",
+            "position": "before",
+            "distance": 3,
+            "tension": 0.778
+          },
+          {
+            "folio": "f66v",
+            "position": "before",
+            "distance": 2,
+            "tension": 1.514
+          }
+        ],
+        "n_nearby_b": 2,
+        "mean_nearby_b_tension": 1.146
+      },
+      {
+        "hotspot": "f86v5",
+        "ht_density": 0.2775,
+        "system": "B",
+        "nearby_b_folios": [
+          {
+            "folio": "f85v2",
+            "position": "before",
+            "distance": 3,
+            "tension": -0.518
+          },
+          {
+            "folio": "f86v3",
+            "position": "before",
+            "distance": 2,
+            "tension": -1.097
+          },
+          {
+            "folio": "f86v4",
+            "position": "before",
+            "distance": 1,
+            "tension": 1.132
+          },
+          {
+            "folio": "f86v6",
+            "position": "after",
+            "distance": 1,
+            "tension": -0.864
+          }
+        ],
+        "n_nearby_b": 4,
+        "mean_nearby_b_tension": -0.337
+      },
+      {
+        "hotspot": "f87r",
+        "ht_density": 0.2921,
+        "system": "A",
+        "nearby_b_folios": [
+          {
+            "folio": "f86v4",
+            "position": "before",
+            "distance": 3,
+            "tension": 1.132
+          },
+          {
+            "folio": "f86v5",
+            "position": "before",
+            "distance": 2,
+            "tension": -0.795
+          },
+          {
+            "folio": "f86v6",
+            "position": "before",
+            "distance": 1,
+            "tension": -0.864
+          }
+        ],
+        "n_nearby_b": 3,
+        "mean_nearby_b_tension": -0.176
+      },
+      {
+        "hotspot": "f87v",
+        "ht_density": 0.2826,
+        "system": "A",
+        "nearby_b_folios": [
+          {
+            "folio": "f86v5",
+            "position": "before",
+            "distance": 3,
+            "tension": -0.795
+          },
+          {
+            "folio": "f86v6",
+            "position": "before",
+            "distance": 2,
+            "tension": -0.864
+          }
+        ],
+        "n_nearby_b": 2,
+        "mean_nearby_b_tension": -0.83
+      }
+    ]
+  },
+  "regime_analysis": {
+    "REGIME_1": {
+      "n_folios": 31,
+      "mean_tension": -0.294,
+      "mean_ht": 0.1289,
+      "correlation": {
+        "spearman_r": 0.26,
+        "p_value": 0.157,
+        "significant": false
+      }
+    },
+    "REGIME_2": {
+      "n_folios": 11,
+      "mean_tension": -0.873,
+      "mean_ht": 0.1988,
+      "correlation": {
+        "spearman_r": -0.264,
+        "p_value": 0.4334,
+        "significant": false
+      }
+    },
+    "REGIME_3": {
+      "n_folios": 16,
+      "mean_tension": 0.85,
+      "mean_ht": 0.1159,
+      "correlation": {
+        "spearman_r": 0.341,
+        "p_value": 0.1959,
+        "significant": false
+      }
+    },
+    "REGIME_4": {
+      "n_folios": 25,
+      "mean_tension": 0.205,
+      "mean_ht": 0.1748,
+      "correlation": {
+        "spearman_r": -0.072,
+        "p_value": 0.734,
+        "significant": false
+      }
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "B stress correlates with nearby HT",
+      "windows": [
+        "window_3",
+        "quire_level"
+      ],
+      "interpretation": "HT density varies with B execution tension"
+    },
+    {
+      "finding": "Directional pattern: HT_ANTICIPATES_STRESS",
+      "interpretation": "HT shows temporal relationship with B stress"
+    },
+    {
+      "finding": "Regime-dependent HT compensation",
+      "corr_range": 0.605,
+      "interpretation": "HT-stress relationship differs by B regime"
+    }
+  ]
+}

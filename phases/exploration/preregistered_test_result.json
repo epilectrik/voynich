@@ -1,0 +1,10 @@
+{
+  "test": "preregistered_low_freq_middle",
+  "hypothesis": "Low-freq MIDDLEs from clustered A correlate with B hazard",
+  "binary_criterion": "p < 0.05 AND rho > 0",
+  "n_matched_middles": 432,
+  "n_folios": 79,
+  "spearman_rho": -0.05166772130463408,
+  "p_value": 0.651113966768418,
+  "result": "FAIL"
+}

@@ -1,6 +1,8 @@
 # Human Track Layer
 
 > **For most questions, see:** [../CLAIMS/HT_CONTEXT_SUMMARY.md](../CLAIMS/HT_CONTEXT_SUMMARY.md) (PRIMARY, context-sufficient)
+>
+> **Explainer:** [HT_EXPLAINER.md](HT_EXPLAINER.md) - What HT is (and is not)
 
 **Status:** CLOSED | **Tier:** 2 (structure), 3-4 (interpretation)
 
@@ -85,8 +87,30 @@ Kruskal-Wallis p < 0.0001. HT is a **program-level characteristic**, not a token
 
 HT density is **independent** of LINK density at folio level:
 - Spearman ρ = 0.010, p = 0.93
-- "More LINK = more doodling" hypothesis is **falsified**
+- "More LINK = more random mark-making" hypothesis is **falsified**
 - HT is not synchronized with LINK token positions
+
+---
+
+## Global Threading (Tier 2) - NEW
+
+> **C450-C453 jointly establish HT as a manuscript-wide, codicologically clustered orientation layer with unified vocabulary and session-level continuity.**
+
+HT threads through the entire manuscript as a **single unified notation layer**:
+
+| Property | Finding | Constraint |
+|----------|---------|------------|
+| Quire clustering | H=47.20, p<0.0001, eta-sq=0.150 | C450 |
+| System stratification | A (0.170) > AZC (0.162) > B (0.149) | C451 |
+| Unified vocabulary | Jaccard >= 0.947 across all systems | C452 |
+| Adjacency clustering | 1.69x enrichment (stronger than C424's 1.31x) | C453 |
+
+**Key insight:** HT uses the SAME prefix vocabulary across all systems but varies in DENSITY. It is modulated by:
+1. **Codicological structure** (quire-level clustering)
+2. **System context** (A > AZC > B density gradient)
+3. **Production continuity** (strong adjacency clustering)
+
+This makes HT the **glue that makes silence usable** - it keeps operators oriented across time and pages without carrying semantic content.
 
 ---
 
@@ -106,39 +130,46 @@ HT tracks **human-relevant procedural phase** while remaining decoupled from exe
 
 ## Interpretation (Tier 3-4)
 
-### Attentional Pacing (Tier 3)
+### Dual-Purpose Attention Mechanism (Tier 3)
+
+HT serves **two complementary functions**:
+
+1. **Attention maintenance** during waiting phases
+2. **Guild training** in the art of the written form
+
+This is NOT "doodling" or "scribbling" - the evidence shows highly structured, intentional practice.
 
 HT won 6/8 tests for **attentional pacing** function (C209):
-
 - NOT sensory checkpoints (avoid hazards, don't cluster near them)
 - NOT quantitative markers (no counting behavior)
 - NOT scribal errors (too systematic, section-specific)
 - Serve human-facing navigation at SECTION level
 
-### Calligraphy Practice Hypothesis (Tier 4)
+### Deliberate Skill Acquisition (Tier 3)
 
-4/5 tests favor **handwriting practice** over random doodling (C221):
+4/5 tests confirm **intentional training** rather than random mark-making (C221):
 
-| Evidence | Finding |
-|----------|---------|
-| Rare grapheme over-representation | 3.29x (p=0.0001) |
-| Run structure | CV=0.43 matches fixed-block rehearsal |
-| Boundary-pushing forms | 28.5% |
-| Section-level family rotation | Change rate 0.71 |
+| Evidence | Finding | Implication |
+|----------|---------|-------------|
+| Rare grapheme over-representation | 3.29x (p=0.0001) | Practicing difficult forms |
+| Run structure | CV=0.43 matches fixed-block rehearsal | Deliberate practice blocks |
+| Boundary-pushing forms | 28.5% | Exploring morphological limits |
+| Section-level family rotation | Change rate 0.71 | Systematic curriculum |
 
-### Unified Interpretation (Tier 4)
+### Unified Interpretation (Tier 3)
 
-> "While at station and not acting → practice calligraphy."
+> "While at station and not acting → practice the written form."
 
-Operators kept themselves alert through **deliberate mark-making** during waiting phases. This explains:
+Operators maintained attention AND trained their craft through **deliberate skill practice** during waiting phases. This explains:
 - Silent activity (can't monitor apparatus while talking)
 - ~11,000 unique types (combinatorial practice variety)
 - 71.3% compositional (trained practice follows rules)
 - Disjoint prefixes (avoid confusion with operational text)
 - 80.7% section-exclusive (different scribes/sessions)
 - Complete hazard avoidance (stop writing when attention demanded)
+- Rare grapheme engagement (practicing difficult forms, not avoiding them)
 
-Historical parallel: Medieval apprentice work-study combination.
+Historical parallel: Medieval apprentice work-study combination - productive waiting.
 
 ---
 
@@ -167,10 +198,33 @@ Historical parallel: Medieval apprentice work-study combination.
 
 ## What HT IS
 
+- A **dual-purpose attention mechanism**: maintains alertness AND trains the written form
 - A **parallel human-facing notation** synchronized to procedural phase
-- **Phase-aware calligraphic practice** that maintains operator readiness
+- **Deliberate skill practice** that maintains operator readiness during waiting
 - **Structurally integrated** but **functionally independent** of execution
 - **NON-EXECUTABLE** infrastructure for human operators
+- **Guild training artifact**: rare grapheme engagement, boundary exploration, systematic curriculum
+
+---
+
+## HT-AZC Placement Affinity (Tier 2) - NEW
+
+HT shows **significant preference for boundary positions** within Zodiac AZC (C457):
+
+| Family | HT Rate | Interpretation |
+|--------|---------|----------------|
+| R (radial/interior) | 29.5% | Stable phase monitoring |
+| S (sector/boundary) | **39.7%** | Transition attention |
+
+**Difference:** 10.3% (p < 0.0001, Cramer's V = 0.105)
+
+This connects C456 (AZC interleaved spiral) with HT behavior:
+- R-S alternation isn't just structural
+- HT tracks the interior/boundary rhythm
+- Supports "attention at phase boundaries" interpretation
+
+**Key insight:**
+> AZC defines the boundary structure of experience; HT marks when human attention should increase inside that structure.
 
 ---
 
@@ -188,6 +242,11 @@ Historical parallel: Medieval apprentice work-study combination.
 | 404 | Terminal independence |
 | 405 | Causal decoupling |
 | 406 | Generative structure |
+| **450** | **Quire clustering (eta-sq=0.150)** |
+| **451** | **System stratification (A > AZC > B)** |
+| **452** | **Unified prefix vocabulary (Jaccard >= 0.947)** |
+| **453** | **Adjacency clustering (1.69x enrichment)** |
+| **457** | **HT boundary preference in Zodiac AZC (S=39.7% > R=29.5%)** |
 
 ---
 

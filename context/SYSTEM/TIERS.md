@@ -65,7 +65,7 @@ These are **high-confidence conclusions with bounded scope**, supported by stron
 - Could be refined by new evidence (but unlikely to be overturned)
 
 **Examples:**
-- Human Track tokens serve attentional pacing (6/8 tests passed)
+- Human Track shows structured practice patterns (4/5 tests), NOT random mark-making
 - Prefix families partition into sister pairs (ch/sh, ok/ot)
 - Lines are formal control blocks, not scribal wrapping
 - Quires are organizational units (4.3x alignment)
@@ -89,6 +89,7 @@ These are **interpretive claims that fit the structure** but cannot be proven in
 - The process is circulatory reflux distillation
 - The craft is perfumery/distillation
 - Material classes correspond to botanical families
+- HT serves dual-purpose: attention maintenance + guild training in the written form
 
 **Rule:** Tier 3 claims must never contaminate Tier 0-2. Keep in SPECULATIVE/ directory.
 

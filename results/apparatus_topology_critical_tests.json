@@ -1,0 +1,461 @@
+{
+  "metadata": {
+    "analysis": "APPARATUS-TOPOLOGY Critical Tests",
+    "tests_run": [
+      "TEST 1",
+      "TEST 7"
+    ],
+    "n_azc_tokens": 8975
+  },
+  "test_1": {
+    "folio_contexts": {
+      "f26r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f26v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f31r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f31v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f33r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f33v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f34r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f34v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f39r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f39v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f40r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f40v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f41r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f41v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f43r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f43v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f46r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f46v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f48r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f48v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f50r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f50v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f55r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f55v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f57r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f66r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f66v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f75r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f75v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f76r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f76v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f77r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f77v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f78r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f78v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f79r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f79v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f80r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f80v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f81r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f81v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f82r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f82v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f83r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f83v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f84r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f84v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f85r1": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f85r2": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f85v2": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f86v3": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f86v4": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f86v5": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f86v6": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f94r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f94v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f95r1": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f95r2": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f95v1": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f95v2": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f103r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f103v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f104r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f104v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f105r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f105v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f106r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f106v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f107r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f107v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f108r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f108v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f111r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f111v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f112r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f112v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f113r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f113v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f114r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f114v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f115r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f115v": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      },
+      "f116r": {
+        "context_type": "NONE",
+        "dominant_placement": null,
+        "placement_family": "NONE"
+      }
+    },
+    "context_counts": {
+      "NONE": 83
+    },
+    "family_counts": {
+      "NONE": 83
+    },
+    "kruskal_by_context": {},
+    "kruskal_by_family": {},
+    "k1_triggered": true,
+    "any_significant_p01": false
+  },
+  "test_7": {
+    "token_prediction": {
+      "chi2": 1174.2806048583518,
+      "p": 9.557444658530433e-87,
+      "dof": 361,
+      "cramers_v": 0.19653918559819994,
+      "n_placements": 20,
+      "n_tokens": 20
+    },
+    "prefix_prediction": {
+      "chi2": 1320.3965045382106,
+      "p": 2.652096365401864e-214,
+      "dof": 96,
+      "cramers_v": 0.20727969966908164
+    },
+    "k2_triggered": true
+  },
+  "verdict": "REJECTED",
+  "kill_conditions": {
+    "k1_triggered": true,
+    "k2_triggered": true
+  }
+}

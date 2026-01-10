@@ -12,6 +12,8 @@
 Added prefixes: pch, tch, kch, dch, fch, rch, sch. All follow C+C+h pattern.
 **Source:** MORPH-CLOSE
 
+**Negative Result (N349):** `ck` is NOT an independent prefix family. Analysis shows 95.9% of apparent `ck-` tokens are actually `ckh-` forms that map 1:1 onto `ch-` family tokens (ckhy↔chy, ckhol↔chol, etc.). Treat `ckh-` as ch-family variants, not a new category. Do not add `ck`, `kc`, `dc`, `fc`, etc. without constraint validation.
+
 ### C350 - HT+B Hybrids Explained
 **Tier:** 2 | **Status:** CLOSED
 HT prefix + B suffix = 12.47% of corpus. Cross-layer morphological reuse.
@@ -251,6 +253,36 @@ H prefers ch (78-92%). B balanced (42-57%). Quire-level conditioning.
 → See [C412_sister_escape_anticorrelation.md](C412_sister_escape_anticorrelation.md)
 
 ---
+
+---
+
+## Imported Constraints
+
+### C365 - LINK tokens are SPATIALLY UNIFORM within folios and lines: no positional clustering (p=0.005), run lengths match random (z=0.14), line-position uniform (p=0.80); LINK has no positional marking function (LDF, Tier 2)
+**Tier:** 2 | **Status:** CLOSED
+LINK tokens are SPATIALLY UNIFORM within folios and lines: no positional clustering (p=0.005), run lengths match random (z=0.14), line-position uniform (p=0.80); LINK has no positional marking function (LDF, Tier 2)
+**Source:** v1.8-import
+
+### C366 - LINK marks GRAMMAR STATE TRANSITIONS: preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x); followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x); p<10^-18; LINK is boundary between monitoring and intervention phases (LDF, Tier 2)
+**Tier:** 2 | **Status:** CLOSED
+LINK marks GRAMMAR STATE TRANSITIONS: preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x); followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x); p<10^-18; LINK is boundary between monitoring and intervention phases (LDF, Tier 2)
+**Source:** v1.8-import
+
+### C383 - GLOBAL MORPHOLOGICAL TYPE SYSTEM: Prefixes encode functional type (INTERVENTION vs MONITORING) globally across A, B, and AZC; ch/sh/ok=100% kernel contact in ALL systems, da/sa<5% in ALL systems; LINK affinity patterns identical (da/al attracted, qo/ok avoiding); type system is grammar-independent (A has no sequential grammar but same types); B instantiates types in sequential programs, A instantiates types in non-sequential registry; explains vocabulary sharing without semantic transfer (A-ARCH, Tier 2)
+**Tier:** 2 | **Status:** CLOSED
+GLOBAL MORPHOLOGICAL TYPE SYSTEM: Prefixes encode functional type (INTERVENTION vs MONITORING) globally across A, B, and AZC; ch/sh/ok=100% kernel contact in ALL systems, da/sa<5% in ALL systems; LINK affinity patterns identical (da/al attracted, qo/ok avoiding); type system is grammar-independent (A has no sequential grammar but same types); B instantiates types in sequential programs, A instantiates types in non-sequential registry; explains vocabulary sharing without semantic transfer (A-ARCH, Tier 2)
+**Source:** v1.8-import
+
+### C384 - NO ENTRY-LEVEL A-B COUPLING: Although A and B share global vocabulary and type system, there is NO entry-level or folio-level cross-reference; all B programs draw from identical A-derived vocabulary pool (Jaccard 0.998 between all B folios); 215 one-to-one tokens scatter across 207 unique A-B pairs (no repeated pairings beyond noise); rare tokens are rare globally, not relationally; A does NOT function as lookup catalog for B programs; coupling occurs ONLY at global type-system level (A-ARCH, Tier 2)
+**Tier:** 2 | **Status:** CLOSED
+NO ENTRY-LEVEL A-B COUPLING: Although A and B share global vocabulary and type system, there is NO entry-level or folio-level cross-reference; all B programs draw from identical A-derived vocabulary pool (Jaccard 0.998 between all B folios); 215 one-to-one tokens scatter across 207 unique A-B pairs (no repeated pairings beyond noise); rare tokens are rare globally, not relationally; A does NOT function as lookup catalog for B programs; coupling occurs ONLY at global type-system level (A-ARCH, Tier 2)
+**Source:** v1.8-import
+
+### C385 - STRUCTURAL GRADIENT IN CURRIER A: Currier A exhibits measurable internal ordering; higher-frequency tokens appear earlier in sequence (rho=-0.44); later folios contain longer tokens with fewer recognizable morphological components (length rho=+0.35, components rho=-0.29); section-level diversity increases H (0.311) -> P (0.440) -> T (0.623); gradient reflects systematic structural change within registry, independent of execution grammar or semantic interpretation (A-ARCH, Tier 2)
+**Tier:** 2 | **Status:** CLOSED
+STRUCTURAL GRADIENT IN CURRIER A: Currier A exhibits measurable internal ordering; higher-frequency tokens appear earlier in sequence (rho=-0.44); later folios contain longer tokens with fewer recognizable morphological components (length rho=+0.35, components rho=-0.29); section-level diversity increases H (0.311) -> P (0.440) -> T (0.623); gradient reflects systematic structural change within registry, independent of execution grammar or semantic interpretation (A-ARCH, Tier 2)
+**Source:** v1.8-import
+
 
 ## Navigation
 
