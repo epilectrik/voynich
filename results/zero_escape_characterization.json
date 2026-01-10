@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "analysis": "E2 - Zero-Escape Characterization",
+    "description": "Characterizing B folios with no recovery routes",
+    "n_b_folios": 83,
+    "n_zero_escape": 2,
+    "threshold": 0.01
+  },
+  "zero_escape_folios": [
+    {
+      "folio": "f33v",
+      "escape_density": 0.009302325581395349,
+      "hazard_density": 0.63,
+      "regime": "REGIME_3",
+      "ht_density": 0.1581,
+      "ht_status": "NORMAL",
+      "quire": "E",
+      "tension": 2.79
+    },
+    {
+      "folio": "f85v2",
+      "escape_density": 0.009779951100244499,
+      "hazard_density": 0.411,
+      "regime": "REGIME_2",
+      "ht_density": 0.1633,
+      "ht_status": "NORMAL",
+      "quire": "N",
+      "tension": -0.518
+    }
+  ],
+  "distribution": {
+    "n_zero_escape": 2,
+    "positions": [
+      63,
+      166
+    ],
+    "position_distribution": {
+      "early_third": 1,
+      "middle_third": 0,
+      "late_third": 1
+    },
+    "clustering": {
+      "mean_gap": 103.0,
+      "expected_gap": 75.7,
+      "clustering_ratio": 0.73,
+      "interpretation": "DISTRIBUTED"
+    }
+  },
+  "regime_analysis": {
+    "zero_escape_regimes": {
+      "REGIME_3": 1,
+      "REGIME_2": 1
+    },
+    "all_b_regimes": {
+      "REGIME_3": 16,
+      "REGIME_1": 31,
+      "REGIME_2": 11,
+      "REGIME_4": 25
+    },
+    "enrichment_by_regime": {
+      "REGIME_3": {
+        "zero_escape_count": 1,
+        "total_in_regime": 16,
+        "expected": 0.4,
+        "enrichment": 2.59,
+        "enriched": true
+      },
+      "REGIME_1": {
+        "zero_escape_count": 0,
+        "total_in_regime": 31,
+        "expected": 0.7,
+        "enrichment": 0.0,
+        "enriched": false
+      },
+      "REGIME_2": {
+        "zero_escape_count": 1,
+        "total_in_regime": 11,
+        "expected": 0.3,
+        "enrichment": 3.77,
+        "enriched": true
+      },
+      "REGIME_4": {
+        "zero_escape_count": 0,
+        "total_in_regime": 25,
+        "expected": 0.6,
+        "enrichment": 0.0,
+        "enriched": false
+      }
+    }
+  },
+  "ht_analysis": {
+    "zero_escape_mean_ht": 0.1607,
+    "other_b_mean_ht": 0.1492,
+    "ratio": 1.08,
+    "u_statistic": 108.0,
+    "p_value": 0.2157,
+    "significant": false,
+    "n_hotspots": 0,
+    "hotspot_rate": 0.0,
+    "interpretation": "NO SIGNIFICANT DIFFERENCE"
+  },
+  "hazard_analysis": {
+    "zero_escape_mean_hazard": 0.5205,
+    "other_b_mean_hazard": 0.5831,
+    "ratio": 0.89,
+    "u_statistic": 64.0,
+    "p_value": 0.6241,
+    "significant": false,
+    "interpretation": "SIMILAR HAZARD"
+  },
+  "neighbor_analysis": {
+    "n_analyzed": 2,
+    "before_systems": {
+      "B": 2
+    },
+    "after_systems": {
+      "B": 2
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "2 B folios have zero escape (2.4%)",
+      "interpretation": "Minority of B programs lack recovery routes"
+    },
+    {
+      "finding": "Zero-escape enriched in: REGIME_3, REGIME_2",
+      "interpretation": "Specific regimes prone to zero-escape design"
+    },
+    {
+      "finding": "Zero-escape folios are distributed throughout",
+      "interpretation": "Spread across manuscript, not localized"
+    }
+  ]
+}

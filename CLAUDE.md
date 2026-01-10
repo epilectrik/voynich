@@ -14,8 +14,8 @@ This project uses a **progressive context system**.
 
 | Metric | Value |
 |--------|-------|
-| Version | 1.8 FROZEN STATE |
-| Constraints | 411 validated |
+| Version | 2.6 FROZEN STATE |
+| Constraints | 299 validated |
 | Phases | 118 completed |
 | Folios | 83 (Currier B) |
 
@@ -35,7 +35,7 @@ context/
 ├── SYSTEM/              ← Methodology, tiers, stop conditions
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
-├── CLAIMS/              ← 411 constraints (INDEX + files)
+├── CLAIMS/              ← 299 constraints (INDEX + files)
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
 ├── METRICS/             ← Quantitative facts
@@ -62,6 +62,41 @@ context/
 | `archive/CLAUDE_full_2026-01-06.md` | Full verbose version |
 | `REVISION_LOG.md` | Change history |
 | `MODEL_SCOPE.md` | Scope boundaries |
+
+---
+
+## Autonomous Escalation Rules
+
+The assistant must **automatically consult the context system** when performing:
+
+1. Token classification or reclassification
+2. Parsing rules or morphological decomposition
+3. System membership (A / B / AZC / HT / INVALID)
+4. Validation or legality logic
+5. Heuristics affecting structure
+
+**Behavior:**
+- Frozen constraints must be checked before proceeding
+- Ambiguity must be surfaced, not smoothed over
+- Pause and ask if implementation requires assuming unstated semantics
+
+**Does NOT apply to:**
+- UI layout or styling
+- Pure refactors without semantic effect
+- Performance or tooling changes
+
+---
+
+## App Development
+
+Individual applications have their own structure files:
+
+| App | Structure File |
+|-----|----------------|
+| Script Explorer | `apps/script_explorer/APP_STRUCTURE.md` |
+
+App structure files define *where* code belongs.
+This file defines *how to think* about the code.
 
 ---
 

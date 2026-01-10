@@ -1,0 +1,1922 @@
+{
+  "metadata": {
+    "analysis": "D1 - B Design Space Cartography",
+    "description": "Mapping the shape of B folio design space",
+    "n_folios": 83
+  },
+  "global_variance": {
+    "recovery_ops_count": {
+      "mean": 16.0723,
+      "std": 13.1596,
+      "cv": 0.8188,
+      "min": 0,
+      "max": 67
+    },
+    "near_miss_count": {
+      "mean": 23.6988,
+      "std": 17.1118,
+      "cv": 0.7221,
+      "min": 2,
+      "max": 79
+    },
+    "cei_time_component": {
+      "mean": 0.1977,
+      "std": 0.0958,
+      "cv": 0.4844,
+      "min": 0.0,
+      "max": 0.333
+    },
+    "qo_density": {
+      "mean": 0.1537,
+      "std": 0.0701,
+      "cv": 0.4561,
+      "min": 0.0093,
+      "max": 0.3369
+    },
+    "cei_risk_component": {
+      "mean": 0.1694,
+      "std": 0.0636,
+      "cv": 0.3756,
+      "min": 0.0,
+      "max": 0.333
+    },
+    "intervention_frequency": {
+      "mean": 5.943,
+      "std": 2.0642,
+      "cv": 0.3473,
+      "min": 2.14,
+      "max": 14.62
+    },
+    "cei_stability_component": {
+      "mean": 0.1861,
+      "std": 0.0568,
+      "cv": 0.305,
+      "min": 0.0,
+      "max": 0.334
+    },
+    "phase_ordering_rigidity": {
+      "mean": 0.1653,
+      "std": 0.0435,
+      "cv": 0.263,
+      "min": 0.066,
+      "max": 0.297
+    },
+    "cei_total": {
+      "mean": 0.5532,
+      "std": 0.1269,
+      "cv": 0.2294,
+      "min": 0.097,
+      "max": 0.8378
+    },
+    "cycle_regularity": {
+      "mean": 3.4481,
+      "std": 0.6292,
+      "cv": 0.1825,
+      "min": 0.687,
+      "max": 4.412
+    },
+    "link_density": {
+      "mean": 0.3832,
+      "std": 0.0693,
+      "cv": 0.1808,
+      "min": 0.204,
+      "max": 0.576
+    },
+    "mean_cycle_length": {
+      "mean": 4.6418,
+      "std": 0.7071,
+      "cv": 0.1523,
+      "min": 2.41,
+      "max": 6.12
+    },
+    "hazard_density": {
+      "mean": 0.5816,
+      "std": 0.0663,
+      "cv": 0.1141,
+      "min": 0.406,
+      "max": 0.771
+    },
+    "kernel_contact_ratio": {
+      "mean": 0.6168,
+      "std": 0.0693,
+      "cv": 0.1123,
+      "min": 0.424,
+      "max": 0.796
+    },
+    "intervention_diversity": {
+      "mean": 5.9398,
+      "std": 0.2379,
+      "cv": 0.0401,
+      "min": 5,
+      "max": 6
+    }
+  },
+  "regime_variance": {
+    "REGIME_1": {
+      "n_folios": 31,
+      "metrics": {
+        "hazard_density": {
+          "mean": 0.6076,
+          "std": 0.0344,
+          "cv": 0.0565,
+          "n": 31
+        },
+        "qo_density": {
+          "mean": 0.2019,
+          "std": 0.0465,
+          "cv": 0.2302,
+          "n": 31
+        },
+        "link_density": {
+          "mean": 0.3552,
+          "std": 0.0347,
+          "cv": 0.0976,
+          "n": 31
+        },
+        "cei_total": {
+          "mean": 0.5104,
+          "std": 0.0566,
+          "cv": 0.1109,
+          "n": 31
+        },
+        "cei_time_component": {
+          "mean": 0.1073,
+          "std": 0.0495,
+          "cv": 0.4613,
+          "n": 31
+        },
+        "cei_risk_component": {
+          "mean": 0.2025,
+          "std": 0.0315,
+          "cv": 0.1557,
+          "n": 31
+        },
+        "cei_stability_component": {
+          "mean": 0.2006,
+          "std": 0.031,
+          "cv": 0.1544,
+          "n": 31
+        },
+        "intervention_frequency": {
+          "mean": 5.5668,
+          "std": 0.9949,
+          "cv": 0.1787,
+          "n": 31
+        },
+        "intervention_diversity": {
+          "mean": 6.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "n": 31
+        },
+        "cycle_regularity": {
+          "mean": 3.6183,
+          "std": 0.3366,
+          "cv": 0.093,
+          "n": 31
+        },
+        "mean_cycle_length": {
+          "mean": 4.6616,
+          "std": 0.4546,
+          "cv": 0.0975,
+          "n": 31
+        },
+        "kernel_contact_ratio": {
+          "mean": 0.6448,
+          "std": 0.0347,
+          "cv": 0.0538,
+          "n": 31
+        },
+        "phase_ordering_rigidity": {
+          "mean": 0.1825,
+          "std": 0.0252,
+          "cv": 0.1379,
+          "n": 31
+        },
+        "near_miss_count": {
+          "mean": 37.9677,
+          "std": 17.0492,
+          "cv": 0.449,
+          "n": 31
+        },
+        "recovery_ops_count": {
+          "mean": 26.8065,
+          "std": 13.7005,
+          "cv": 0.5111,
+          "n": 31
+        }
+      }
+    },
+    "REGIME_2": {
+      "n_folios": 11,
+      "metrics": {
+        "hazard_density": {
+          "mean": 0.4739,
+          "std": 0.0425,
+          "cv": 0.0896,
+          "n": 11
+        },
+        "qo_density": {
+          "mean": 0.1011,
+          "std": 0.0478,
+          "cv": 0.4724,
+          "n": 11
+        },
+        "link_density": {
+          "mean": 0.5056,
+          "std": 0.0371,
+          "cv": 0.0734,
+          "n": 11
+        },
+        "cei_total": {
+          "mean": 0.3669,
+          "std": 0.1057,
+          "cv": 0.2881,
+          "n": 11
+        },
+        "cei_time_component": {
+          "mean": 0.1888,
+          "std": 0.0895,
+          "cv": 0.4742,
+          "n": 11
+        },
+        "cei_risk_component": {
+          "mean": 0.063,
+          "std": 0.038,
+          "cv": 0.6032,
+          "n": 11
+        },
+        "cei_stability_component": {
+          "mean": 0.1152,
+          "std": 0.0412,
+          "cv": 0.3581,
+          "n": 11
+        },
+        "intervention_frequency": {
+          "mean": 3.6018,
+          "std": 0.7748,
+          "cv": 0.2151,
+          "n": 11
+        },
+        "intervention_diversity": {
+          "mean": 5.9091,
+          "std": 0.2875,
+          "cv": 0.0487,
+          "n": 11
+        },
+        "cycle_regularity": {
+          "mean": 3.3125,
+          "std": 0.8741,
+          "cv": 0.2639,
+          "n": 11
+        },
+        "mean_cycle_length": {
+          "mean": 4.3827,
+          "std": 0.7275,
+          "cv": 0.166,
+          "n": 11
+        },
+        "kernel_contact_ratio": {
+          "mean": 0.4944,
+          "std": 0.0371,
+          "cv": 0.0751,
+          "n": 11
+        },
+        "phase_ordering_rigidity": {
+          "mean": 0.2177,
+          "std": 0.0352,
+          "cv": 0.1618,
+          "n": 11
+        },
+        "near_miss_count": {
+          "mean": 17.1818,
+          "std": 11.2881,
+          "cv": 0.657,
+          "n": 11
+        },
+        "recovery_ops_count": {
+          "mean": 9.9091,
+          "std": 8.4364,
+          "cv": 0.8514,
+          "n": 11
+        }
+      }
+    },
+    "REGIME_3": {
+      "n_folios": 16,
+      "metrics": {
+        "hazard_density": {
+          "mean": 0.6526,
+          "std": 0.0435,
+          "cv": 0.0666,
+          "n": 16
+        },
+        "qo_density": {
+          "mean": 0.1693,
+          "std": 0.0865,
+          "cv": 0.511,
+          "n": 16
+        },
+        "link_density": {
+          "mean": 0.3069,
+          "std": 0.0361,
+          "cv": 0.1177,
+          "n": 16
+        },
+        "cei_total": {
+          "mean": 0.7169,
+          "std": 0.066,
+          "cv": 0.0921,
+          "n": 16
+        },
+        "cei_time_component": {
+          "mean": 0.2405,
+          "std": 0.0767,
+          "cv": 0.3188,
+          "n": 16
+        },
+        "cei_risk_component": {
+          "mean": 0.2305,
+          "std": 0.0374,
+          "cv": 0.1622,
+          "n": 16
+        },
+        "cei_stability_component": {
+          "mean": 0.2459,
+          "std": 0.0312,
+          "cv": 0.127,
+          "n": 16
+        },
+        "intervention_frequency": {
+          "mean": 7.3588,
+          "std": 1.724,
+          "cv": 0.2343,
+          "n": 16
+        },
+        "intervention_diversity": {
+          "mean": 5.875,
+          "std": 0.3307,
+          "cv": 0.0563,
+          "n": 16
+        },
+        "cycle_regularity": {
+          "mean": 3.3404,
+          "std": 0.6167,
+          "cv": 0.1846,
+          "n": 16
+        },
+        "mean_cycle_length": {
+          "mean": 4.6756,
+          "std": 0.8897,
+          "cv": 0.1903,
+          "n": 16
+        },
+        "kernel_contact_ratio": {
+          "mean": 0.6931,
+          "std": 0.0361,
+          "cv": 0.0521,
+          "n": 16
+        },
+        "phase_ordering_rigidity": {
+          "mean": 0.1398,
+          "std": 0.0492,
+          "cv": 0.3521,
+          "n": 16
+        },
+        "near_miss_count": {
+          "mean": 17.75,
+          "std": 9.0933,
+          "cv": 0.5123,
+          "n": 16
+        },
+        "recovery_ops_count": {
+          "mean": 14.75,
+          "std": 7.7982,
+          "cv": 0.5287,
+          "n": 16
+        }
+      }
+    },
+    "REGIME_4": {
+      "n_folios": 25,
+      "metrics": {
+        "hazard_density": {
+          "mean": 0.5512,
+          "std": 0.0323,
+          "cv": 0.0586,
+          "n": 25
+        },
+        "qo_density": {
+          "mean": 0.1072,
+          "std": 0.0379,
+          "cv": 0.3532,
+          "n": 25
+        },
+        "link_density": {
+          "mean": 0.4129,
+          "std": 0.0287,
+          "cv": 0.0695,
+          "n": 25
+        },
+        "cei_total": {
+          "mean": 0.5835,
+          "std": 0.0786,
+          "cv": 0.1347,
+          "n": 25
+        },
+        "cei_time_component": {
+          "mean": 0.2863,
+          "std": 0.0307,
+          "cv": 0.1072,
+          "n": 25
+        },
+        "cei_risk_component": {
+          "mean": 0.136,
+          "std": 0.0288,
+          "cv": 0.2117,
+          "n": 25
+        },
+        "cei_stability_component": {
+          "mean": 0.1612,
+          "std": 0.0525,
+          "cv": 0.3254,
+          "n": 25
+        },
+        "intervention_frequency": {
+          "mean": 6.5336,
+          "std": 2.556,
+          "cv": 0.3912,
+          "n": 25
+        },
+        "intervention_diversity": {
+          "mean": 5.92,
+          "std": 0.2713,
+          "cv": 0.0458,
+          "n": 25
+        },
+        "cycle_regularity": {
+          "mean": 3.3658,
+          "std": 0.732,
+          "cv": 0.2175,
+          "n": 25
+        },
+        "mean_cycle_length": {
+          "mean": 4.7096,
+          "std": 0.7929,
+          "cv": 0.1684,
+          "n": 25
+        },
+        "kernel_contact_ratio": {
+          "mean": 0.5871,
+          "std": 0.0287,
+          "cv": 0.0489,
+          "n": 25
+        },
+        "phase_ordering_rigidity": {
+          "mean": 0.1372,
+          "std": 0.0247,
+          "cv": 0.1797,
+          "n": 25
+        },
+        "near_miss_count": {
+          "mean": 12.68,
+          "std": 9.354,
+          "cv": 0.7377,
+          "n": 25
+        },
+        "recovery_ops_count": {
+          "mean": 6.32,
+          "std": 4.0172,
+          "cv": 0.6356,
+          "n": 25
+        }
+      }
+    }
+  },
+  "projections": {
+    "hazard_density_vs_qo_density": {
+      "x_metric": "hazard_density",
+      "y_metric": "qo_density",
+      "correlation": {
+        "spearman_r": 0.533,
+        "p_value": 0.0
+      },
+      "n_dense_cells": 5,
+      "n_empty_cells": 8,
+      "dense_cells": [
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.075,
+            0.14
+          ],
+          "count": 10
+        },
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.14,
+            0.206
+          ],
+          "count": 7
+        },
+        {
+          "x_range": [
+            0.552,
+            0.625
+          ],
+          "y_range": [
+            0.075,
+            0.14
+          ],
+          "count": 13
+        },
+        {
+          "x_range": [
+            0.552,
+            0.625
+          ],
+          "y_range": [
+            0.14,
+            0.206
+          ],
+          "count": 13
+        },
+        {
+          "x_range": [
+            0.625,
+            0.698
+          ],
+          "y_range": [
+            0.206,
+            0.271
+          ],
+          "count": 7
+        }
+      ],
+      "empty_cells": [
+        {
+          "x_range": [
+            0.406,
+            0.479
+          ],
+          "y_range": [
+            0.14,
+            0.206
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.406,
+            0.479
+          ],
+          "y_range": [
+            0.206,
+            0.271
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.406,
+            0.479
+          ],
+          "y_range": [
+            0.271,
+            0.337
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.206,
+            0.271
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.271,
+            0.337
+          ],
+          "count": 0
+        }
+      ]
+    },
+    "cei_total_vs_link_density": {
+      "x_metric": "cei_total",
+      "y_metric": "link_density",
+      "correlation": {
+        "spearman_r": -0.597,
+        "p_value": 0.0
+      },
+      "n_dense_cells": 7,
+      "n_empty_cells": 10,
+      "dense_cells": [
+        {
+          "x_range": [
+            0.245,
+            0.393
+          ],
+          "y_range": [
+            0.427,
+            0.502
+          ],
+          "count": 5
+        },
+        {
+          "x_range": [
+            0.393,
+            0.541
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 9
+        },
+        {
+          "x_range": [
+            0.393,
+            0.541
+          ],
+          "y_range": [
+            0.353,
+            0.427
+          ],
+          "count": 15
+        },
+        {
+          "x_range": [
+            0.393,
+            0.541
+          ],
+          "y_range": [
+            0.427,
+            0.502
+          ],
+          "count": 6
+        },
+        {
+          "x_range": [
+            0.541,
+            0.69
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 12
+        },
+        {
+          "x_range": [
+            0.541,
+            0.69
+          ],
+          "y_range": [
+            0.353,
+            0.427
+          ],
+          "count": 15
+        },
+        {
+          "x_range": [
+            0.69,
+            0.838
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 10
+        }
+      ],
+      "empty_cells": [
+        {
+          "x_range": [
+            0.097,
+            0.245
+          ],
+          "y_range": [
+            0.204,
+            0.278
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.097,
+            0.245
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.097,
+            0.245
+          ],
+          "y_range": [
+            0.353,
+            0.427
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.097,
+            0.245
+          ],
+          "y_range": [
+            0.427,
+            0.502
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.245,
+            0.393
+          ],
+          "y_range": [
+            0.204,
+            0.278
+          ],
+          "count": 0
+        }
+      ]
+    },
+    "intervention_frequency_vs_recovery_ops_count": {
+      "x_metric": "intervention_frequency",
+      "y_metric": "recovery_ops_count",
+      "correlation": {
+        "spearman_r": 0.046,
+        "p_value": 0.6804
+      },
+      "n_dense_cells": 5,
+      "n_empty_cells": 10,
+      "dense_cells": [
+        {
+          "x_range": [
+            2.14,
+            4.636
+          ],
+          "y_range": [
+            0.0,
+            13.4
+          ],
+          "count": 16
+        },
+        {
+          "x_range": [
+            4.636,
+            7.132
+          ],
+          "y_range": [
+            0.0,
+            13.4
+          ],
+          "count": 21
+        },
+        {
+          "x_range": [
+            4.636,
+            7.132
+          ],
+          "y_range": [
+            13.4,
+            26.8
+          ],
+          "count": 14
+        },
+        {
+          "x_range": [
+            4.636,
+            7.132
+          ],
+          "y_range": [
+            26.8,
+            40.2
+          ],
+          "count": 5
+        },
+        {
+          "x_range": [
+            7.132,
+            9.628
+          ],
+          "y_range": [
+            0.0,
+            13.4
+          ],
+          "count": 5
+        }
+      ],
+      "empty_cells": [
+        {
+          "x_range": [
+            2.14,
+            4.636
+          ],
+          "y_range": [
+            53.6,
+            67.0
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            7.132,
+            9.628
+          ],
+          "y_range": [
+            53.6,
+            67.0
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            9.628,
+            12.124
+          ],
+          "y_range": [
+            13.4,
+            26.8
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            9.628,
+            12.124
+          ],
+          "y_range": [
+            26.8,
+            40.2
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            9.628,
+            12.124
+          ],
+          "y_range": [
+            40.2,
+            53.6
+          ],
+          "count": 0
+        }
+      ]
+    },
+    "hazard_density_vs_link_density": {
+      "x_metric": "hazard_density",
+      "y_metric": "link_density",
+      "correlation": {
+        "spearman_r": -0.945,
+        "p_value": 0.0
+      },
+      "n_dense_cells": 4,
+      "n_empty_cells": 15,
+      "dense_cells": [
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.427,
+            0.502
+          ],
+          "count": 12
+        },
+        {
+          "x_range": [
+            0.552,
+            0.625
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 12
+        },
+        {
+          "x_range": [
+            0.552,
+            0.625
+          ],
+          "y_range": [
+            0.353,
+            0.427
+          ],
+          "count": 25
+        },
+        {
+          "x_range": [
+            0.625,
+            0.698
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 19
+        }
+      ],
+      "empty_cells": [
+        {
+          "x_range": [
+            0.406,
+            0.479
+          ],
+          "y_range": [
+            0.204,
+            0.278
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.406,
+            0.479
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.406,
+            0.479
+          ],
+          "y_range": [
+            0.353,
+            0.427
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.204,
+            0.278
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            0.479,
+            0.552
+          ],
+          "y_range": [
+            0.278,
+            0.353
+          ],
+          "count": 0
+        }
+      ]
+    },
+    "near_miss_count_vs_recovery_ops_count": {
+      "x_metric": "near_miss_count",
+      "y_metric": "recovery_ops_count",
+      "correlation": {
+        "spearman_r": 0.568,
+        "p_value": 0.0
+      },
+      "n_dense_cells": 6,
+      "n_empty_cells": 8,
+      "dense_cells": [
+        {
+          "x_range": [
+            2.0,
+            17.4
+          ],
+          "y_range": [
+            0.0,
+            13.4
+          ],
+          "count": 31
+        },
+        {
+          "x_range": [
+            2.0,
+            17.4
+          ],
+          "y_range": [
+            13.4,
+            26.8
+          ],
+          "count": 5
+        },
+        {
+          "x_range": [
+            17.4,
+            32.8
+          ],
+          "y_range": [
+            0.0,
+            13.4
+          ],
+          "count": 7
+        },
+        {
+          "x_range": [
+            17.4,
+            32.8
+          ],
+          "y_range": [
+            13.4,
+            26.8
+          ],
+          "count": 9
+        },
+        {
+          "x_range": [
+            32.8,
+            48.2
+          ],
+          "y_range": [
+            0.0,
+            13.4
+          ],
+          "count": 6
+        },
+        {
+          "x_range": [
+            32.8,
+            48.2
+          ],
+          "y_range": [
+            13.4,
+            26.8
+          ],
+          "count": 5
+        }
+      ],
+      "empty_cells": [
+        {
+          "x_range": [
+            2.0,
+            17.4
+          ],
+          "y_range": [
+            40.2,
+            53.6
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            2.0,
+            17.4
+          ],
+          "y_range": [
+            53.6,
+            67.0
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            17.4,
+            32.8
+          ],
+          "y_range": [
+            53.6,
+            67.0
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            48.2,
+            63.6
+          ],
+          "y_range": [
+            40.2,
+            53.6
+          ],
+          "count": 0
+        },
+        {
+          "x_range": [
+            48.2,
+            63.6
+          ],
+          "y_range": [
+            53.6,
+            67.0
+          ],
+          "count": 0
+        }
+      ]
+    }
+  },
+  "regime_separation": {
+    "hazard_density": {
+      "h_statistic": 58.26,
+      "p_value": 0.0,
+      "eta_squared": 0.7,
+      "group_means": {
+        "REGIME_3": 0.6526,
+        "REGIME_1": 0.6076,
+        "REGIME_2": 0.4739,
+        "REGIME_4": 0.5512
+      }
+    },
+    "qo_density": {
+      "h_statistic": 37.73,
+      "p_value": 0.0,
+      "eta_squared": 0.44,
+      "group_means": {
+        "REGIME_3": 0.1693,
+        "REGIME_1": 0.2019,
+        "REGIME_2": 0.1011,
+        "REGIME_4": 0.1072
+      }
+    },
+    "cei_total": {
+      "h_statistic": 54.0,
+      "p_value": 0.0,
+      "eta_squared": 0.646,
+      "group_means": {
+        "REGIME_3": 0.7169,
+        "REGIME_1": 0.5104,
+        "REGIME_2": 0.3669,
+        "REGIME_4": 0.5835
+      }
+    },
+    "link_density": {
+      "h_statistic": 61.54,
+      "p_value": 0.0,
+      "eta_squared": 0.741,
+      "group_means": {
+        "REGIME_3": 0.3069,
+        "REGIME_1": 0.3552,
+        "REGIME_2": 0.5056,
+        "REGIME_4": 0.4129
+      }
+    }
+  },
+  "tension_by_regime": {
+    "REGIME_3": {
+      "mean": 0.85,
+      "std": 0.917,
+      "n": 16
+    },
+    "REGIME_1": {
+      "mean": -0.294,
+      "std": 0.656,
+      "n": 31
+    },
+    "REGIME_2": {
+      "mean": -0.873,
+      "std": 0.626,
+      "n": 11
+    },
+    "REGIME_4": {
+      "mean": 0.205,
+      "std": 0.787,
+      "n": 25
+    }
+  },
+  "folio_positions": {
+    "f103r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.686,
+      "escape_density": 0.2121,
+      "cei_total": 0.7334,
+      "link_density": 0.292,
+      "execution_tension": 0.741
+    },
+    "f103v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.616,
+      "escape_density": 0.1787,
+      "cei_total": 0.6146,
+      "link_density": 0.34,
+      "execution_tension": 0.163
+    },
+    "f104r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.572,
+      "escape_density": 0.2085,
+      "cei_total": 0.5293,
+      "link_density": 0.402,
+      "execution_tension": -0.925
+    },
+    "f104v": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.641,
+      "escape_density": 0.2298,
+      "cei_total": 0.6698,
+      "link_density": 0.337,
+      "execution_tension": -0.188
+    },
+    "f105r": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.454,
+      "escape_density": 0.123,
+      "cei_total": 0.3358,
+      "link_density": 0.523,
+      "execution_tension": -1.485
+    },
+    "f105v": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.422,
+      "escape_density": 0.0795,
+      "cei_total": 0.097,
+      "link_density": 0.536,
+      "execution_tension": -1.347
+    },
+    "f106r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.583,
+      "escape_density": 0.157,
+      "cei_total": 0.4647,
+      "link_density": 0.404,
+      "execution_tension": -0.025
+    },
+    "f106v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.609,
+      "escape_density": 0.1517,
+      "cei_total": 0.4922,
+      "link_density": 0.38,
+      "execution_tension": 0.442
+    },
+    "f107r": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.529,
+      "escape_density": 0.127,
+      "cei_total": 0.3264,
+      "link_density": 0.449,
+      "execution_tension": -0.412
+    },
+    "f107v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.55,
+      "escape_density": 0.1954,
+      "cei_total": 0.4058,
+      "link_density": 0.431,
+      "execution_tension": -1.071
+    },
+    "f108r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.643,
+      "escape_density": 0.1926,
+      "cei_total": 0.6052,
+      "link_density": 0.336,
+      "execution_tension": 0.372
+    },
+    "f108v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.627,
+      "escape_density": 0.2131,
+      "cei_total": 0.5774,
+      "link_density": 0.336,
+      "execution_tension": -0.161
+    },
+    "f111r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.583,
+      "escape_density": 0.1651,
+      "cei_total": 0.5098,
+      "link_density": 0.39,
+      "execution_tension": -0.14
+    },
+    "f111v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.64,
+      "escape_density": 0.1726,
+      "cei_total": 0.524,
+      "link_density": 0.345,
+      "execution_tension": 0.611
+    },
+    "f112r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.561,
+      "escape_density": 0.1536,
+      "cei_total": 0.4398,
+      "link_density": 0.426,
+      "execution_tension": -0.308
+    },
+    "f112v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.602,
+      "escape_density": 0.1657,
+      "cei_total": 0.5062,
+      "link_density": 0.369,
+      "execution_tension": 0.138
+    },
+    "f113r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.585,
+      "escape_density": 0.1285,
+      "cei_total": 0.4578,
+      "link_density": 0.4,
+      "execution_tension": 0.411
+    },
+    "f113v": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.525,
+      "escape_density": 0.1225,
+      "cei_total": 0.3898,
+      "link_density": 0.459,
+      "execution_tension": -0.408
+    },
+    "f114r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.567,
+      "escape_density": 0.1526,
+      "cei_total": 0.5317,
+      "link_density": 0.392,
+      "execution_tension": -0.203
+    },
+    "f114v": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.658,
+      "escape_density": 0.2261,
+      "cei_total": 0.7196,
+      "link_density": 0.307,
+      "execution_tension": 0.12
+    },
+    "f115r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.65,
+      "escape_density": 0.2454,
+      "cei_total": 0.6803,
+      "link_density": 0.329,
+      "execution_tension": -0.276
+    },
+    "f115v": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.501,
+      "escape_density": 0.1795,
+      "cei_total": 0.3566,
+      "link_density": 0.486,
+      "execution_tension": -1.582
+    },
+    "f116r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.639,
+      "escape_density": 0.155,
+      "cei_total": 0.6769,
+      "link_density": 0.332,
+      "execution_tension": 0.847
+    },
+    "f26r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.554,
+      "escape_density": 0.1264,
+      "cei_total": 0.6387,
+      "link_density": 0.396,
+      "execution_tension": -0.026
+    },
+    "f26v": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.496,
+      "escape_density": 0.1111,
+      "cei_total": 0.532,
+      "link_density": 0.504,
+      "execution_tension": -0.682
+    },
+    "f31r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.664,
+      "escape_density": 0.1767,
+      "cei_total": 0.7873,
+      "link_density": 0.295,
+      "execution_tension": 0.916
+    },
+    "f31v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.515,
+      "escape_density": 0.0393,
+      "cei_total": 0.5538,
+      "link_density": 0.469,
+      "execution_tension": 0.628
+    },
+    "f33r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.639,
+      "escape_density": 0.0926,
+      "cei_total": 0.7772,
+      "link_density": 0.319,
+      "execution_tension": 1.738
+    },
+    "f33v": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.63,
+      "escape_density": 0.0093,
+      "cei_total": 0.727,
+      "link_density": 0.34,
+      "execution_tension": 2.79
+    },
+    "f34r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.581,
+      "escape_density": 0.0907,
+      "cei_total": 0.633,
+      "link_density": 0.381,
+      "execution_tension": 0.89
+    },
+    "f34v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.56,
+      "escape_density": 0.0839,
+      "cei_total": 0.5876,
+      "link_density": 0.413,
+      "execution_tension": 0.671
+    },
+    "f39r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.635,
+      "escape_density": 0.0903,
+      "cei_total": 0.7057,
+      "link_density": 0.327,
+      "execution_tension": 1.71
+    },
+    "f39v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.591,
+      "escape_density": 0.0552,
+      "cei_total": 0.6344,
+      "link_density": 0.399,
+      "execution_tension": 1.548
+    },
+    "f40r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.567,
+      "escape_density": 0.0819,
+      "cei_total": 0.6349,
+      "link_density": 0.392,
+      "execution_tension": 0.805
+    },
+    "f40v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.522,
+      "escape_density": 0.1556,
+      "cei_total": 0.5594,
+      "link_density": 0.419,
+      "execution_tension": -0.925
+    },
+    "f41r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.585,
+      "escape_density": 0.1968,
+      "cei_total": 0.6265,
+      "link_density": 0.404,
+      "execution_tension": -0.563
+    },
+    "f41v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.484,
+      "escape_density": 0.1183,
+      "cei_total": 0.5142,
+      "link_density": 0.452,
+      "execution_tension": -0.965
+    },
+    "f43r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.563,
+      "escape_density": 0.1014,
+      "cei_total": 0.5613,
+      "link_density": 0.416,
+      "execution_tension": 0.466
+    },
+    "f43v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.566,
+      "escape_density": 0.0684,
+      "cei_total": 0.5649,
+      "link_density": 0.422,
+      "execution_tension": 0.983
+    },
+    "f46r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.648,
+      "escape_density": 0.0865,
+      "cei_total": 0.7204,
+      "link_density": 0.309,
+      "execution_tension": 1.96
+    },
+    "f46v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.598,
+      "escape_density": 0.0745,
+      "cei_total": 0.6371,
+      "link_density": 0.358,
+      "execution_tension": 1.378
+    },
+    "f48r": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.406,
+      "escape_density": 0.0904,
+      "cei_total": 0.3742,
+      "link_density": 0.576,
+      "execution_tension": -1.743
+    },
+    "f48v": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.491,
+      "escape_density": 0.025,
+      "cei_total": 0.4909,
+      "link_density": 0.501,
+      "execution_tension": 0.471
+    },
+    "f50r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.508,
+      "escape_density": 0.1335,
+      "cei_total": 0.4813,
+      "link_density": 0.468,
+      "execution_tension": -0.82
+    },
+    "f50v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.528,
+      "escape_density": 0.1142,
+      "cei_total": 0.3792,
+      "link_density": 0.447,
+      "execution_tension": -0.244
+    },
+    "f55r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.58,
+      "escape_density": 0.0902,
+      "cei_total": 0.6755,
+      "link_density": 0.376,
+      "execution_tension": 0.883
+    },
+    "f55v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.484,
+      "escape_density": 0.0784,
+      "cei_total": 0.5326,
+      "link_density": 0.424,
+      "execution_tension": -0.397
+    },
+    "f57r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.535,
+      "escape_density": 0.0775,
+      "cei_total": 0.4221,
+      "link_density": 0.437,
+      "execution_tension": 0.385
+    },
+    "f66r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.611,
+      "escape_density": 0.1303,
+      "cei_total": 0.5402,
+      "link_density": 0.35,
+      "execution_tension": 0.778
+    },
+    "f66v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.598,
+      "escape_density": 0.0649,
+      "cei_total": 0.7072,
+      "link_density": 0.376,
+      "execution_tension": 1.514
+    },
+    "f75r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.668,
+      "escape_density": 0.2585,
+      "cei_total": 0.5993,
+      "link_density": 0.303,
+      "execution_tension": -0.191
+    },
+    "f75v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.608,
+      "escape_density": 0.2619,
+      "cei_total": 0.4547,
+      "link_density": 0.338,
+      "execution_tension": -1.144
+    },
+    "f76r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.698,
+      "escape_density": 0.1909,
+      "cei_total": 0.5672,
+      "link_density": 0.287,
+      "execution_tension": 1.225
+    },
+    "f76v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.626,
+      "escape_density": 0.176,
+      "cei_total": 0.4634,
+      "link_density": 0.347,
+      "execution_tension": 0.352
+    },
+    "f77r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.719,
+      "escape_density": 0.3369,
+      "cei_total": 0.5875,
+      "link_density": 0.248,
+      "execution_tension": -0.541
+    },
+    "f77v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.648,
+      "escape_density": 0.2867,
+      "cei_total": 0.5274,
+      "link_density": 0.304,
+      "execution_tension": -0.895
+    },
+    "f78r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.594,
+      "escape_density": 0.2036,
+      "cei_total": 0.4982,
+      "link_density": 0.349,
+      "execution_tension": -0.523
+    },
+    "f78v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.583,
+      "escape_density": 0.1951,
+      "cei_total": 0.5639,
+      "link_density": 0.341,
+      "execution_tension": -0.569
+    },
+    "f79r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.629,
+      "escape_density": 0.2068,
+      "cei_total": 0.6072,
+      "link_density": 0.311,
+      "execution_tension": -0.041
+    },
+    "f79v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.582,
+      "escape_density": 0.2554,
+      "cei_total": 0.5045,
+      "link_density": 0.373,
+      "execution_tension": -1.444
+    },
+    "f80r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.614,
+      "escape_density": 0.2481,
+      "cei_total": 0.4914,
+      "link_density": 0.347,
+      "execution_tension": -0.857
+    },
+    "f80v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.589,
+      "escape_density": 0.2448,
+      "cei_total": 0.448,
+      "link_density": 0.361,
+      "execution_tension": -1.186
+    },
+    "f81r": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.594,
+      "escape_density": 0.1824,
+      "cei_total": 0.5967,
+      "link_density": 0.308,
+      "execution_tension": -0.221
+    },
+    "f81v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.546,
+      "escape_density": 0.1655,
+      "cei_total": 0.5032,
+      "link_density": 0.359,
+      "execution_tension": -0.705
+    },
+    "f82r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.616,
+      "escape_density": 0.2926,
+      "cei_total": 0.4671,
+      "link_density": 0.348,
+      "execution_tension": -1.461
+    },
+    "f82v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.665,
+      "escape_density": 0.3037,
+      "cei_total": 0.3927,
+      "link_density": 0.314,
+      "execution_tension": -0.881
+    },
+    "f83r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.621,
+      "escape_density": 0.2287,
+      "cei_total": 0.4891,
+      "link_density": 0.353,
+      "execution_tension": -0.474
+    },
+    "f83v": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.771,
+      "escape_density": 0.318,
+      "cei_total": 0.8378,
+      "link_density": 0.204,
+      "execution_tension": 0.513
+    },
+    "f84r": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.609,
+      "escape_density": 0.1955,
+      "cei_total": 0.5544,
+      "link_density": 0.342,
+      "execution_tension": -0.182
+    },
+    "f84v": {
+      "regime": "REGIME_1",
+      "hazard_density": 0.592,
+      "escape_density": 0.181,
+      "cei_total": 0.4922,
+      "link_density": 0.332,
+      "execution_tension": -0.231
+    },
+    "f85r1": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.541,
+      "escape_density": 0.1299,
+      "cei_total": 0.5392,
+      "link_density": 0.42,
+      "execution_tension": -0.272
+    },
+    "f85r2": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.555,
+      "escape_density": 0.123,
+      "cei_total": 0.623,
+      "link_density": 0.393,
+      "execution_tension": 0.037
+    },
+    "f85v2": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.411,
+      "escape_density": 0.0098,
+      "cei_total": 0.35,
+      "link_density": 0.554,
+      "execution_tension": -0.518
+    },
+    "f86v3": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.506,
+      "escape_density": 0.1508,
+      "cei_total": 0.4274,
+      "link_density": 0.478,
+      "execution_tension": -1.097
+    },
+    "f86v4": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.593,
+      "escape_density": 0.0864,
+      "cei_total": 0.7136,
+      "link_density": 0.338,
+      "execution_tension": 1.132
+    },
+    "f86v5": {
+      "regime": "REGIME_2",
+      "hazard_density": 0.472,
+      "escape_density": 0.0936,
+      "cei_total": 0.3557,
+      "link_density": 0.496,
+      "execution_tension": -0.795
+    },
+    "f86v6": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.55,
+      "escape_density": 0.181,
+      "cei_total": 0.5305,
+      "link_density": 0.425,
+      "execution_tension": -0.864
+    },
+    "f94r": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.571,
+      "escape_density": 0.1227,
+      "cei_total": 0.6621,
+      "link_density": 0.405,
+      "execution_tension": 0.283
+    },
+    "f94v": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.544,
+      "escape_density": 0.1378,
+      "cei_total": 0.6418,
+      "link_density": 0.4,
+      "execution_tension": -0.338
+    },
+    "f95r1": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.608,
+      "escape_density": 0.1357,
+      "cei_total": 0.7231,
+      "link_density": 0.342,
+      "execution_tension": 0.656
+    },
+    "f95r2": {
+      "regime": "REGIME_3",
+      "hazard_density": 0.667,
+      "escape_density": 0.125,
+      "cei_total": 0.8149,
+      "link_density": 0.283,
+      "execution_tension": 1.698
+    },
+    "f95v1": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.517,
+      "escape_density": 0.1447,
+      "cei_total": 0.5607,
+      "link_density": 0.449,
+      "execution_tension": -0.844
+    },
+    "f95v2": {
+      "regime": "REGIME_4",
+      "hazard_density": 0.582,
+      "escape_density": 0.0899,
+      "cei_total": 0.6874,
+      "link_density": 0.381,
+      "execution_tension": 0.916
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "Execution tension differs by regime",
+      "test": "Kruskal-Wallis",
+      "h_statistic": 25.43,
+      "p_value": 0.0,
+      "interpretation": "REGIME_3 has higher tension than REGIME_1/2"
+    },
+    {
+      "finding": "Forbidden zone in hazard_density_vs_qo_density",
+      "n_empty_cells": 8,
+      "interpretation": "Some design combinations are avoided"
+    },
+    {
+      "finding": "Forbidden zone in cei_total_vs_link_density",
+      "n_empty_cells": 10,
+      "interpretation": "Some design combinations are avoided"
+    },
+    {
+      "finding": "Forbidden zone in intervention_frequency_vs_recovery_ops_count",
+      "n_empty_cells": 10,
+      "interpretation": "Some design combinations are avoided"
+    },
+    {
+      "finding": "Forbidden zone in hazard_density_vs_link_density",
+      "n_empty_cells": 15,
+      "interpretation": "Some design combinations are avoided"
+    },
+    {
+      "finding": "Forbidden zone in near_miss_count_vs_recovery_ops_count",
+      "n_empty_cells": 8,
+      "interpretation": "Some design combinations are avoided"
+    },
+    {
+      "finding": "Design freedom vs constraint dimensions",
+      "high_freedom": [
+        "recovery_ops_count",
+        "near_miss_count",
+        "cei_time_component"
+      ],
+      "tightly_constrained": [
+        "hazard_density",
+        "kernel_contact_ratio",
+        "intervention_diversity"
+      ],
+      "interpretation": "Designer allows freedom in some dimensions but clamps others"
+    }
+  ]
+}

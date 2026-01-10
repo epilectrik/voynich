@@ -1,0 +1,375 @@
+{
+  "metadata": {
+    "analysis": "E3 - Anomalous Folio Deep Dive",
+    "description": "Investigating what makes f41r, f65r, f67r2, f86v5 special",
+    "target_folios": [
+      "f41r",
+      "f65r",
+      "f67r2",
+      "f86v5"
+    ]
+  },
+  "anomalous_profiles": [
+    {
+      "folio": "f41r",
+      "system": "B",
+      "ht_density": 0.2965,
+      "ht_percentile_in_system": 100.0,
+      "position": 78,
+      "position_percentile": 34.4,
+      "regime": "REGIME_4",
+      "hazard_density": 0.585,
+      "escape_density": 0.19680851063829788,
+      "cei": 0.626477,
+      "quire": "F",
+      "quire_ht_mean": 0.1778,
+      "quire_n_folios": 16,
+      "neighbor_before": {
+        "folio": "f40v",
+        "system": "B",
+        "ht_density": 0.1661
+      },
+      "neighbor_after": {
+        "folio": "f41v",
+        "system": "B",
+        "ht_density": 0.147
+      }
+    },
+    {
+      "folio": "f65r",
+      "system": "AZC",
+      "ht_density": 0.3333,
+      "ht_percentile_in_system": 100.0,
+      "position": 114,
+      "position_percentile": 50.2,
+      "azc_ratio": null,
+      "qo_density": null,
+      "quire": "H",
+      "quire_ht_mean": 0.1772,
+      "quire_n_folios": 8,
+      "neighbor_before": {
+        "folio": "f58v",
+        "system": "A",
+        "ht_density": 0.1732
+      },
+      "neighbor_after": {
+        "folio": "f65v",
+        "system": "AZC",
+        "ht_density": 0.1488
+      }
+    },
+    {
+      "folio": "f67r2",
+      "system": "AZC",
+      "ht_density": 0.2936,
+      "ht_percentile_in_system": 96.7,
+      "position": 119,
+      "position_percentile": 52.4,
+      "azc_ratio": null,
+      "qo_density": null,
+      "quire": "I",
+      "quire_ht_mean": 0.1859,
+      "quire_n_folios": 10,
+      "neighbor_before": {
+        "folio": "f67r1",
+        "system": "AZC",
+        "ht_density": 0.2063
+      },
+      "neighbor_after": {
+        "folio": "f67v1",
+        "system": "AZC",
+        "ht_density": 0.23
+      }
+    },
+    {
+      "folio": "f86v5",
+      "system": "B",
+      "ht_density": 0.2775,
+      "ht_percentile_in_system": 98.8,
+      "position": 169,
+      "position_percentile": 74.4,
+      "regime": "REGIME_2",
+      "hazard_density": 0.472,
+      "escape_density": 0.09363295880149813,
+      "cei": 0.355655,
+      "quire": "N",
+      "quire_ht_mean": 0.1785,
+      "quire_n_folios": 7,
+      "neighbor_before": {
+        "folio": "f86v4",
+        "system": "B",
+        "ht_density": 0.1357
+      },
+      "neighbor_after": {
+        "folio": "f86v6",
+        "system": "B",
+        "ht_density": 0.1596
+      }
+    }
+  ],
+  "comparisons_to_peers": {
+    "f41r": {
+      "anomalous_ht": 0.2965,
+      "system_median_ht": 0.1457,
+      "system_median_example": "f95r1",
+      "lowest_ht_in_system": {
+        "folio": "f83v",
+        "ht_density": 0.0666,
+        "regime": null,
+        "hazard_density": null
+      },
+      "highest_ht_in_system": {
+        "folio": "f86v5",
+        "ht_density": 0.2775,
+        "regime": null,
+        "hazard_density": null
+      },
+      "n_in_system": 83
+    },
+    "f65r": {
+      "anomalous_ht": 0.3333,
+      "system_median_ht": 0.1488,
+      "system_median_example": "f65v",
+      "lowest_ht_in_system": {
+        "folio": "f116v",
+        "ht_density": 0.0,
+        "regime": null,
+        "hazard_density": null
+      },
+      "highest_ht_in_system": {
+        "folio": "f67r2",
+        "ht_density": 0.2936,
+        "regime": null,
+        "hazard_density": null
+      },
+      "n_in_system": 30
+    },
+    "f67r2": {
+      "anomalous_ht": 0.2936,
+      "system_median_ht": 0.1488,
+      "system_median_example": "f65v",
+      "lowest_ht_in_system": {
+        "folio": "f116v",
+        "ht_density": 0.0,
+        "regime": null,
+        "hazard_density": null
+      },
+      "highest_ht_in_system": {
+        "folio": "f65r",
+        "ht_density": 0.3333,
+        "regime": null,
+        "hazard_density": null
+      },
+      "n_in_system": 30
+    },
+    "f86v5": {
+      "anomalous_ht": 0.2775,
+      "system_median_ht": 0.1457,
+      "system_median_example": "f95r1",
+      "lowest_ht_in_system": {
+        "folio": "f83v",
+        "ht_density": 0.0666,
+        "regime": null,
+        "hazard_density": null
+      },
+      "highest_ht_in_system": {
+        "folio": "f41r",
+        "ht_density": 0.2965,
+        "regime": null,
+        "hazard_density": null
+      },
+      "n_in_system": 83
+    }
+  },
+  "all_ht_hotspots": [
+    {
+      "folio": "f19v",
+      "system": "A",
+      "ht_density": 0.2776,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f18v",
+      "system": "A",
+      "ht_density": 0.281,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f87v",
+      "system": "A",
+      "ht_density": 0.2826,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f13r",
+      "system": "A",
+      "ht_density": 0.2876,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f87r",
+      "system": "A",
+      "ht_density": 0.2921,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f27v",
+      "system": "A",
+      "ht_density": 0.3448,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f48r",
+      "system": "B",
+      "ht_density": 0.2333,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f86v3",
+      "system": "B",
+      "ht_density": 0.2519,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f50r",
+      "system": "B",
+      "ht_density": 0.267,
+      "regime": null,
+      "is_anomalous": false
+    },
+    {
+      "folio": "f86v5",
+      "system": "B",
+      "ht_density": 0.2775,
+      "regime": null,
+      "is_anomalous": true
+    },
+    {
+      "folio": "f41r",
+      "system": "B",
+      "ht_density": 0.2965,
+      "regime": null,
+      "is_anomalous": true
+    },
+    {
+      "folio": "f67r2",
+      "system": "AZC",
+      "ht_density": 0.2936,
+      "regime": null,
+      "is_anomalous": true
+    },
+    {
+      "folio": "f65r",
+      "system": "AZC",
+      "ht_density": 0.3333,
+      "regime": null,
+      "is_anomalous": true
+    }
+  ],
+  "position_patterns": {
+    "positions": [
+      78,
+      114,
+      119,
+      169
+    ],
+    "quire_positions": [],
+    "at_quire_boundary": [],
+    "at_system_boundary": [
+      {
+        "folio": "f41r",
+        "at_boundary": false,
+        "before_system": "B",
+        "after_system": "B"
+      },
+      {
+        "folio": "f65r",
+        "at_boundary": true,
+        "before_system": "A",
+        "after_system": "AZC"
+      },
+      {
+        "folio": "f67r2",
+        "at_boundary": false,
+        "before_system": "AZC",
+        "after_system": "AZC"
+      },
+      {
+        "folio": "f86v5",
+        "at_boundary": false,
+        "before_system": "B",
+        "after_system": "B"
+      }
+    ]
+  },
+  "distinguishing_features": {
+    "f41r": {
+      "regime": "REGIME_4",
+      "n_in_regime": 25,
+      "regime_mean_ht": 0.1748,
+      "folio_ht": 0.2965,
+      "ht_vs_regime_mean": 0.1217,
+      "hazard_density": 0.585,
+      "regime_mean_hazard": 0.5512,
+      "hazard_vs_regime_mean": 0.0338
+    },
+    "f65r": {
+      "azc_ratio": null,
+      "qo_density": null,
+      "ht_density": 0.3333
+    },
+    "f67r2": {
+      "azc_ratio": null,
+      "qo_density": null,
+      "ht_density": 0.2936
+    },
+    "f86v5": {
+      "regime": "REGIME_2",
+      "n_in_regime": 11,
+      "regime_mean_ht": 0.1988,
+      "folio_ht": 0.2775,
+      "ht_vs_regime_mean": 0.0787,
+      "hazard_density": 0.472,
+      "regime_mean_hazard": 0.4739,
+      "hazard_vs_regime_mean": -0.0019
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "1 of 4 anomalous folios are at system boundaries",
+      "interpretation": "HT hotspots may mark transitions"
+    },
+    {
+      "finding": "Anomalous folios are distributed throughout manuscript",
+      "mean_position_percentile": 52.9,
+      "interpretation": "No positional clustering"
+    },
+    {
+      "finding": "B hotspots span regimes: ['REGIME_4', 'REGIME_2']",
+      "interpretation": "HT elevation not regime-specific"
+    },
+    {
+      "finding": "9 additional HT hotspots exist beyond the 4 anomalous",
+      "other_hotspots": [
+        "f19v",
+        "f18v",
+        "f87v",
+        "f13r",
+        "f87r",
+        "f27v",
+        "f48r",
+        "f86v3",
+        "f50r"
+      ],
+      "interpretation": "Anomalous 4 are not the ONLY hotspots"
+    }
+  ]
+}

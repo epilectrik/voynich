@@ -17,9 +17,11 @@ marker_token = [ARTICULATOR] + PREFIX + [MIDDLE] + SUFFIX
 | Component | Count | Role | Required? |
 |-----------|-------|------|-----------|
 | ARTICULATOR | ~9 forms | Optional refinement | No |
-| PREFIX | 8 | Primary classifier family | Yes |
-| MIDDLE | 42 common | Modifier subcode | No |
+| PREFIX | 8 | Primary classifier family (domain selector) | Yes |
+| MIDDLE | 1,184 unique (27 universal) | Vocabulary item within domain | No |
 | SUFFIX | 7 universal | Terminal variant code | Yes |
+
+**Note:** Early analysis identified "42 common middles" as a discovery-era simplification. Full census (C423) reveals 1,184 unique MIDDLEs with 80% PREFIX-EXCLUSIVE, confirming MIDDLE as the primary vocabulary layer.
 
 ## Evidence
 

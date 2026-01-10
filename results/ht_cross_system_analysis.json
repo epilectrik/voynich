@@ -1,0 +1,467 @@
+{
+  "metadata": {
+    "analysis": "HT-THREAD Phase 4",
+    "description": "Cross-system HT threading analysis",
+    "n_folios": 227,
+    "n_boundaries": 30
+  },
+  "boundaries": [
+    {
+      "index": 48,
+      "prev_folio": "f25v",
+      "curr_folio": "f26r",
+      "transition": "A->B",
+      "prev_ht_density": 0.08284023668639054,
+      "curr_ht_density": 0.1423076923076923,
+      "density_change": 0.05946745562130176
+    },
+    {
+      "index": 50,
+      "prev_folio": "f26v",
+      "curr_folio": "f27r",
+      "transition": "B->A",
+      "prev_ht_density": 0.2028169014084507,
+      "curr_ht_density": 0.14689265536723164,
+      "density_change": -0.05592424604121907
+    },
+    {
+      "index": 58,
+      "prev_folio": "f30v",
+      "curr_folio": "f31r",
+      "transition": "A->B",
+      "prev_ht_density": 0.12834224598930483,
+      "curr_ht_density": 0.1610738255033557,
+      "density_change": 0.03273157951405087
+    },
+    {
+      "index": 60,
+      "prev_folio": "f31v",
+      "curr_folio": "f32r",
+      "transition": "B->A",
+      "prev_ht_density": 0.20655737704918034,
+      "curr_ht_density": 0.14798206278026907,
+      "density_change": -0.05857531426891127
+    },
+    {
+      "index": 62,
+      "prev_folio": "f32v",
+      "curr_folio": "f33r",
+      "transition": "A->B",
+      "prev_ht_density": 0.12461059190031153,
+      "curr_ht_density": 0.08333333333333333,
+      "density_change": -0.0412772585669782
+    },
+    {
+      "index": 66,
+      "prev_folio": "f34v",
+      "curr_folio": "f35r",
+      "transition": "B->A",
+      "prev_ht_density": 0.14285714285714285,
+      "curr_ht_density": 0.09328358208955224,
+      "density_change": -0.049573560767590605
+    },
+    {
+      "index": 74,
+      "prev_folio": "f38v",
+      "curr_folio": "f39r",
+      "transition": "A->B",
+      "prev_ht_density": 0.10106382978723404,
+      "curr_ht_density": 0.1393841166936791,
+      "density_change": 0.03832028690644505
+    },
+    {
+      "index": 80,
+      "prev_folio": "f41v",
+      "curr_folio": "f42r",
+      "transition": "B->A",
+      "prev_ht_density": 0.14695340501792115,
+      "curr_ht_density": 0.12836438923395446,
+      "density_change": -0.018589015783966684
+    },
+    {
+      "index": 82,
+      "prev_folio": "f42v",
+      "curr_folio": "f43r",
+      "transition": "A->B",
+      "prev_ht_density": 0.13513513513513514,
+      "curr_ht_density": 0.19941775836972345,
+      "density_change": 0.0642826232345883
+    },
+    {
+      "index": 84,
+      "prev_folio": "f43v",
+      "curr_folio": "f44r",
+      "transition": "B->A",
+      "prev_ht_density": 0.14978601997146934,
+      "curr_ht_density": 0.2087912087912088,
+      "density_change": 0.05900518881973946
+    },
+    {
+      "index": 88,
+      "prev_folio": "f45v",
+      "curr_folio": "f46r",
+      "transition": "A->B",
+      "prev_ht_density": 0.22972972972972974,
+      "curr_ht_density": 0.13856427378964942,
+      "density_change": -0.09116545594008033
+    },
+    {
+      "index": 90,
+      "prev_folio": "f46v",
+      "curr_folio": "f47r",
+      "transition": "B->A",
+      "prev_ht_density": 0.14960629921259844,
+      "curr_ht_density": 0.11355311355311355,
+      "density_change": -0.036053185659484885
+    },
+    {
+      "index": 92,
+      "prev_folio": "f47v",
+      "curr_folio": "f48r",
+      "transition": "A->B",
+      "prev_ht_density": 0.17204301075268819,
+      "curr_ht_density": 0.23333333333333334,
+      "density_change": 0.06129032258064515
+    },
+    {
+      "index": 94,
+      "prev_folio": "f48v",
+      "curr_folio": "f49r",
+      "transition": "B->A",
+      "prev_ht_density": 0.18997912317327767,
+      "curr_ht_density": 0.17759562841530055,
+      "density_change": -0.01238349475797712
+    },
+    {
+      "index": 96,
+      "prev_folio": "f49v",
+      "curr_folio": "f50r",
+      "transition": "A->B",
+      "prev_ht_density": 0.12086330935251799,
+      "curr_ht_density": 0.26697892271662765,
+      "density_change": 0.14611561336410966
+    },
+    {
+      "index": 98,
+      "prev_folio": "f50v",
+      "curr_folio": "f51r",
+      "transition": "B->A",
+      "prev_ht_density": 0.19832402234636873,
+      "curr_ht_density": 0.21708185053380782,
+      "density_change": 0.018757828187439096
+    },
+    {
+      "index": 106,
+      "prev_folio": "f54v",
+      "curr_folio": "f55r",
+      "transition": "A->B",
+      "prev_ht_density": 0.19318181818181818,
+      "curr_ht_density": 0.15384615384615385,
+      "density_change": -0.03933566433566432
+    },
+    {
+      "index": 108,
+      "prev_folio": "f55v",
+      "curr_folio": "f56r",
+      "transition": "B->A",
+      "prev_ht_density": 0.22697368421052633,
+      "curr_ht_density": 0.17266187050359713,
+      "density_change": -0.054311813706929196
+    },
+    {
+      "index": 110,
+      "prev_folio": "f56v",
+      "curr_folio": "f57r",
+      "transition": "A->B",
+      "prev_ht_density": 0.20703125,
+      "curr_ht_density": 0.12992125984251968,
+      "density_change": -0.07710999015748032
+    },
+    {
+      "index": 111,
+      "prev_folio": "f57r",
+      "curr_folio": "f57v",
+      "transition": "B->AZC",
+      "prev_ht_density": 0.12992125984251968,
+      "curr_ht_density": 0.07785888077858881,
+      "density_change": -0.052062379063930866
+    },
+    {
+      "index": 112,
+      "prev_folio": "f57v",
+      "curr_folio": "f58r",
+      "transition": "AZC->A",
+      "prev_ht_density": 0.07785888077858881,
+      "curr_ht_density": 0.18922651933701656,
+      "density_change": 0.11136763855842775
+    },
+    {
+      "index": 114,
+      "prev_folio": "f58v",
+      "curr_folio": "f65r",
+      "transition": "A->AZC",
+      "prev_ht_density": 0.17315436241610738,
+      "curr_ht_density": 0.3333333333333333,
+      "density_change": 0.16017897091722594
+    },
+    {
+      "index": 116,
+      "prev_folio": "f65v",
+      "curr_folio": "f66r",
+      "transition": "AZC->B",
+      "prev_ht_density": 0.1487603305785124,
+      "curr_ht_density": 0.13358419567262464,
+      "density_change": -0.015176134905887761
+    },
+    {
+      "index": 118,
+      "prev_folio": "f66v",
+      "curr_folio": "f67r1",
+      "transition": "B->AZC",
+      "prev_ht_density": 0.2314410480349345,
+      "curr_ht_density": 0.20631067961165048,
+      "density_change": -0.025130368423284033
+    },
+    {
+      "index": 144,
+      "prev_folio": "f73v",
+      "curr_folio": "f75r",
+      "transition": "AZC->B",
+      "prev_ht_density": 0.23148148148148148,
+      "curr_ht_density": 0.12080536912751678,
+      "density_change": -0.1106761123539647
+    },
+    {
+      "index": 171,
+      "prev_folio": "f86v6",
+      "curr_folio": "f87r",
+      "transition": "B->A",
+      "prev_ht_density": 0.15958549222797927,
+      "curr_ht_density": 0.29207920792079206,
+      "density_change": 0.1324937156928128
+    },
+    {
+      "index": 185,
+      "prev_folio": "f93v",
+      "curr_folio": "f94r",
+      "transition": "A->B",
+      "prev_ht_density": 0.1751412429378531,
+      "curr_ht_density": 0.18404907975460122,
+      "density_change": 0.008907836816748116
+    },
+    {
+      "index": 191,
+      "prev_folio": "f95v2",
+      "curr_folio": "f96r",
+      "transition": "B->A",
+      "prev_ht_density": 0.14814814814814814,
+      "curr_ht_density": 0.07662835249042145,
+      "density_change": -0.07151979565772669
+    },
+    {
+      "index": 203,
+      "prev_folio": "f102v2",
+      "curr_folio": "f103r",
+      "transition": "A->B",
+      "prev_ht_density": 0.15839694656488548,
+      "curr_ht_density": 0.10184372256365233,
+      "density_change": -0.05655322400123315
+    },
+    {
+      "index": 226,
+      "prev_folio": "f116r",
+      "curr_folio": "f116v",
+      "transition": "B->AZC",
+      "prev_ht_density": 0.08163265306122448,
+      "curr_ht_density": 0.0,
+      "density_change": -0.08163265306122448
+    }
+  ],
+  "discontinuity_test": {
+    "mean_boundary_change": 0.0613322909222356,
+    "mean_within_change": 0.0516171259380573,
+    "boundary_std": 0.03832504998253344,
+    "within_std": 0.04220436799460358,
+    "n_boundaries": 30,
+    "n_within": 196,
+    "u_stat": 3491.0,
+    "p_value": 0.04940838675764055,
+    "effect_size_r": -0.18741496598639462,
+    "verdict": "DISCONTINUOUS",
+    "interpretation": "HT density changes MORE at system boundaries"
+  },
+  "transition_analysis": {
+    "A->B": {
+      "count": 12,
+      "mean_change": 0.008806177086371051,
+      "std_change": 0.06780483013180168,
+      "direction": "INCREASE"
+    },
+    "B->A": {
+      "count": 11,
+      "mean_change": -0.01333397217671038,
+      "std_change": 0.05901619635905871,
+      "direction": "DECREASE"
+    },
+    "B->AZC": {
+      "count": 3,
+      "mean_change": -0.05294180018281313,
+      "std_change": 0.023075341506392524,
+      "direction": "DECREASE"
+    },
+    "AZC->A": {
+      "count": 1,
+      "mean_change": 0.11136763855842775,
+      "std_change": 0.0,
+      "direction": "INCREASE"
+    },
+    "A->AZC": {
+      "count": 1,
+      "mean_change": 0.16017897091722594,
+      "std_change": 0.0,
+      "direction": "INCREASE"
+    },
+    "AZC->B": {
+      "count": 2,
+      "mean_change": -0.06292612362992622,
+      "std_change": 0.047749988724038475,
+      "direction": "DECREASE"
+    }
+  },
+  "vocabulary_crossing": {
+    "prefix_overlap": {
+      "A_B": {
+        "overlap_count": 19,
+        "jaccard": 1.0,
+        "s1_size": 19,
+        "s2_size": 19
+      },
+      "A_AZC": {
+        "overlap_count": 18,
+        "jaccard": 0.9473684210526315,
+        "s1_size": 19,
+        "s2_size": 18
+      },
+      "B_A": {
+        "overlap_count": 19,
+        "jaccard": 1.0,
+        "s1_size": 19,
+        "s2_size": 19
+      },
+      "B_AZC": {
+        "overlap_count": 18,
+        "jaccard": 0.9473684210526315,
+        "s1_size": 19,
+        "s2_size": 18
+      },
+      "AZC_A": {
+        "overlap_count": 18,
+        "jaccard": 0.9473684210526315,
+        "s1_size": 18,
+        "s2_size": 19
+      },
+      "AZC_B": {
+        "overlap_count": 18,
+        "jaccard": 0.9473684210526315,
+        "s1_size": 18,
+        "s2_size": 19
+      }
+    },
+    "system_prefix_counts": {
+      "A": 19,
+      "B": 19,
+      "AZC": 18
+    },
+    "interpretation": "HIGH overlap suggests HT prefixes cross system boundaries"
+  },
+  "prefix_by_system": {
+    "A": {
+      "top_prefixes": [
+        {
+          "prefix": "yk",
+          "rate": 0.1163211582757486
+        },
+        {
+          "prefix": "do",
+          "rate": 0.11335965778216518
+        },
+        {
+          "prefix": "yt",
+          "rate": 0.10184271141822968
+        },
+        {
+          "prefix": "dc",
+          "rate": 0.08308654162553472
+        },
+        {
+          "prefix": "kch",
+          "rate": 0.07337940111878907
+        }
+      ],
+      "total_ht_tokens": 6078
+    },
+    "B": {
+      "top_prefixes": [
+        {
+          "prefix": "sa",
+          "rate": 0.10866876011038158
+        },
+        {
+          "prefix": "al",
+          "rate": 0.10457702921305548
+        },
+        {
+          "prefix": "yk",
+          "rate": 0.08973261014368636
+        },
+        {
+          "prefix": "ke",
+          "rate": 0.0814539918165382
+        },
+        {
+          "prefix": "yt",
+          "rate": 0.07545913026929299
+        }
+      ],
+      "total_ht_tokens": 10509
+    },
+    "AZC": {
+      "top_prefixes": [
+        {
+          "prefix": "yk",
+          "rate": 0.18206157965194109
+        },
+        {
+          "prefix": "al",
+          "rate": 0.18072289156626506
+        },
+        {
+          "prefix": "yt",
+          "rate": 0.13520749665327977
+        },
+        {
+          "prefix": "sa",
+          "rate": 0.10508701472556894
+        },
+        {
+          "prefix": "op",
+          "rate": 0.08032128514056225
+        }
+      ],
+      "total_ht_tokens": 1494
+    }
+  },
+  "local_threading": {
+    "window_size": 3,
+    "observed_mean_variance": 0.0015747721690540614,
+    "shuffled_mean_variance": 0.0019928838911263376,
+    "p_value": 0.5749377777777778,
+    "verdict": "NO_LOCAL_THREADING",
+    "interpretation": "HT density local clustering is similar to random (p=0.5749)"
+  },
+  "summary": {
+    "boundary_behavior": "DISCONTINUOUS",
+    "vocabulary_crossing": "HIGH overlap suggests HT prefixes cross system boundaries",
+    "local_threading": "NO_LOCAL_THREADING"
+  }
+}

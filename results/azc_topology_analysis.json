@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "test": "TEST 8 - AZC Internal Topology",
+    "hypothesis": "AZC shows cyclic rather than tree-like structure"
+  },
+  "results": {
+    "by_type": {
+      "ZODIAC": {
+        "metrics": {
+          "n_nodes": 9,
+          "n_unique_edges": 13,
+          "total_transitions": 53,
+          "cycle_rank": 5,
+          "density": 0.18055555555555555,
+          "reciprocity": 0.3076923076923077,
+          "avg_transition_entropy": 0.6167639551687605,
+          "degree_mean": 11.777777777777779,
+          "degree_variance": 92.61728395061726,
+          "degree_cv": 0.8171140246616029,
+          "max_out_degree": 12,
+          "max_in_degree": 12
+        },
+        "ordering": {
+          "r_series": {
+            "forward": 0,
+            "backward": 0,
+            "wrap_around": 0,
+            "total": 0,
+            "forward_ratio": 0,
+            "cyclic_signature": 0
+          },
+          "s_series": {
+            "forward": 0,
+            "backward": 0,
+            "total": 0,
+            "forward_ratio": 0
+          }
+        },
+        "references": {
+          "pure_cycle": {
+            "n_nodes": 9,
+            "n_unique_edges": 9,
+            "cycle_rank": 1,
+            "density": 0.125,
+            "reciprocity": 0,
+            "degree_cv": 0,
+            "description": "Single directed cycle"
+          },
+          "tree": {
+            "n_nodes": 9,
+            "n_unique_edges": 8,
+            "cycle_rank": 0,
+            "density": 0.1111111111111111,
+            "reciprocity": 0,
+            "degree_cv": 0.5,
+            "description": "Directed tree (no cycles)"
+          },
+          "random": {
+            "n_nodes": 9,
+            "n_unique_edges": 13,
+            "cycle_rank": 5,
+            "density": 0.18055555555555555,
+            "reciprocity": 0.18055555555555555,
+            "degree_cv": 0.7844645405527362,
+            "description": "Random directed graph (p=0.181)"
+          }
+        },
+        "verdict": "MIXED",
+        "cyclic_evidence": [
+          "cycle_rank=5 > 0"
+        ],
+        "tree_evidence": [
+          "high degree_cv=0.817 (non-uniform)"
+        ]
+      },
+      "COSMOLOGICAL": {
+        "metrics": {
+          "n_nodes": 17,
+          "n_unique_edges": 24,
+          "total_transitions": 25,
+          "cycle_rank": 8,
+          "density": 0.08823529411764706,
+          "reciprocity": 0.0,
+          "avg_transition_entropy": 1.2511484326014197,
+          "degree_mean": 2.9411764705882355,
+          "degree_variance": 3.2318339100346023,
+          "degree_cv": 0.611228271597445,
+          "max_out_degree": 5,
+          "max_in_degree": 3
+        },
+        "ordering": {
+          "r_series": {
+            "forward": 3,
+            "backward": 0,
+            "wrap_around": 0,
+            "total": 3,
+            "forward_ratio": 1.0,
+            "cyclic_signature": 1.0
+          },
+          "s_series": {
+            "forward": 0,
+            "backward": 0,
+            "total": 0,
+            "forward_ratio": 0
+          }
+        },
+        "references": {
+          "pure_cycle": {
+            "n_nodes": 17,
+            "n_unique_edges": 17,
+            "cycle_rank": 1,
+            "density": 0.0625,
+            "reciprocity": 0,
+            "degree_cv": 0,
+            "description": "Single directed cycle"
+          },
+          "tree": {
+            "n_nodes": 17,
+            "n_unique_edges": 16,
+            "cycle_rank": 0,
+            "density": 0.058823529411764705,
+            "reciprocity": 0,
+            "degree_cv": 0.5,
+            "description": "Directed tree (no cycles)"
+          },
+          "random": {
+            "n_nodes": 17,
+            "n_unique_edges": 24,
+            "cycle_rank": 8,
+            "density": 0.08823529411764706,
+            "reciprocity": 0.08823529411764706,
+            "degree_cv": 0.8164965809277261,
+            "description": "Random directed graph (p=0.088)"
+          }
+        },
+        "verdict": "CYCLIC",
+        "cyclic_evidence": [
+          "cycle_rank=8 > 0",
+          "strong cyclic ordering (1.00)"
+        ],
+        "tree_evidence": [
+          "high degree_cv=0.611 (non-uniform)"
+        ]
+      },
+      "ALL": {
+        "metrics": {
+          "n_nodes": 25,
+          "n_unique_edges": 52,
+          "total_transitions": 99,
+          "cycle_rank": 28,
+          "density": 0.08666666666666667,
+          "reciprocity": 0.11538461538461539,
+          "avg_transition_entropy": 1.4044367071853272,
+          "degree_mean": 7.92,
+          "degree_variance": 58.793600000000005,
+          "degree_cv": 0.968143747637816,
+          "max_out_degree": 13,
+          "max_in_degree": 12
+        },
+        "ordering": {
+          "r_series": {
+            "forward": 3,
+            "backward": 0,
+            "wrap_around": 0,
+            "total": 3,
+            "forward_ratio": 1.0,
+            "cyclic_signature": 1.0
+          },
+          "s_series": {
+            "forward": 0,
+            "backward": 0,
+            "total": 0,
+            "forward_ratio": 0
+          }
+        },
+        "references": {
+          "pure_cycle": {
+            "n_nodes": 25,
+            "n_unique_edges": 25,
+            "cycle_rank": 1,
+            "density": 0.041666666666666664,
+            "reciprocity": 0,
+            "degree_cv": 0,
+            "description": "Single directed cycle"
+          },
+          "tree": {
+            "n_nodes": 25,
+            "n_unique_edges": 24,
+            "cycle_rank": 0,
+            "density": 0.04,
+            "reciprocity": 0,
+            "degree_cv": 0.5,
+            "description": "Directed tree (no cycles)"
+          },
+          "random": {
+            "n_nodes": 25,
+            "n_unique_edges": 52,
+            "cycle_rank": 28,
+            "density": 0.08666666666666667,
+            "reciprocity": 0.08666666666666667,
+            "degree_cv": 0.6793662204867574,
+            "description": "Random directed graph (p=0.087)"
+          }
+        },
+        "verdict": "CYCLIC",
+        "cyclic_evidence": [
+          "cycle_rank=28 > 0",
+          "strong cyclic ordering (1.00)"
+        ],
+        "tree_evidence": [
+          "high degree_cv=0.968 (non-uniform)"
+        ]
+      }
+    },
+    "ordering_analysis": {},
+    "topology_verdict": {},
+    "supports_circulatory": false
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "analysis": "D2 - AZC Zodiac Individual Fingerprints",
+    "description": "Finding intentional variations within Zodiac template",
+    "n_zodiac_folios": 12,
+    "folios_analyzed": 12
+  },
+  "fingerprints": {
+    "f70v1": {
+      "folio": "f70v1",
+      "total_placements": 227,
+      "r_count": 125,
+      "s_count": 102,
+      "metrics": {
+        "sr_ratio": 0.4493,
+        "spiral_tightness": 0.0132,
+        "boundary_density": 0.4493,
+        "placement_entropy": 1.969,
+        "ht_density": 0.1171,
+        "ht_weighted_boundary": 0.0526
+      },
+      "placement_distribution": {
+        "R2": 75,
+        "S2": 59,
+        "R1": 50,
+        "S1": 43
+      }
+    },
+    "f70v2": {
+      "folio": "f70v2",
+      "total_placements": 524,
+      "r_count": 305,
+      "s_count": 214,
+      "metrics": {
+        "sr_ratio": 0.4123,
+        "spiral_tightness": 0.0076,
+        "boundary_density": 0.4084,
+        "placement_entropy": 2.317,
+        "ht_density": 0.1357,
+        "ht_weighted_boundary": 0.0559
+      },
+      "placement_distribution": {
+        "R3": 132,
+        "S2": 141,
+        "R2": 106,
+        "S1": 73,
+        "R1": 67,
+        "C": 5
+      }
+    },
+    "f71r": {
+      "folio": "f71r",
+      "total_placements": 202,
+      "r_count": 149,
+      "s_count": 53,
+      "metrics": {
+        "sr_ratio": 0.2624,
+        "spiral_tightness": 0.0198,
+        "boundary_density": 0.2624,
+        "placement_entropy": 2.099,
+        "ht_density": 0.1168,
+        "ht_weighted_boundary": 0.0306
+      },
+      "placement_distribution": {
+        "R1": 80,
+        "S1": 36,
+        "R2": 49,
+        "S2": 17,
+        "R3": 20
+      }
+    },
+    "f71v": {
+      "folio": "f71v",
+      "total_placements": 239,
+      "r_count": 153,
+      "s_count": 86,
+      "metrics": {
+        "sr_ratio": 0.3598,
+        "spiral_tightness": 0.0167,
+        "boundary_density": 0.3598,
+        "placement_entropy": 2.176,
+        "ht_density": 0.1472,
+        "ht_weighted_boundary": 0.053
+      },
+      "placement_distribution": {
+        "R1": 71,
+        "S1": 62,
+        "R2": 60,
+        "S2": 24,
+        "R3": 22
+      }
+    },
+    "f72r1": {
+      "folio": "f72r1",
+      "total_placements": 238,
+      "r_count": 167,
+      "s_count": 71,
+      "metrics": {
+        "sr_ratio": 0.2983,
+        "spiral_tightness": 0.0168,
+        "boundary_density": 0.2983,
+        "placement_entropy": 2.141,
+        "ht_density": 0.1073,
+        "ht_weighted_boundary": 0.032
+      },
+      "placement_distribution": {
+        "R1": 85,
+        "S1": 54,
+        "R2": 53,
+        "S2": 17,
+        "R3": 29
+      }
+    },
+    "f72r2": {
+      "folio": "f72r2",
+      "total_placements": 255,
+      "r_count": 154,
+      "s_count": 101,
+      "metrics": {
+        "sr_ratio": 0.3961,
+        "spiral_tightness": 0.0196,
+        "boundary_density": 0.3961,
+        "placement_entropy": 2.445,
+        "ht_density": 0.0591,
+        "ht_weighted_boundary": 0.0234
+      },
+      "placement_distribution": {
+        "S0": 16,
+        "R1": 73,
+        "S1": 53,
+        "R2": 50,
+        "S2": 32,
+        "R3": 31
+      }
+    },
+    "f72r3": {
+      "folio": "f72r3",
+      "total_placements": 354,
+      "r_count": 243,
+      "s_count": 111,
+      "metrics": {
+        "sr_ratio": 0.3136,
+        "spiral_tightness": 0.0169,
+        "boundary_density": 0.3136,
+        "placement_entropy": 2.619,
+        "ht_density": 0.1355,
+        "ht_weighted_boundary": 0.0425
+      },
+      "placement_distribution": {
+        "R1": 89,
+        "S1": 49,
+        "R2": 79,
+        "S2": 45,
+        "R3": 55,
+        "S3": 17,
+        "R4": 20
+      }
+    },
+    "f72v1": {
+      "folio": "f72v1",
+      "total_placements": 207,
+      "r_count": 147,
+      "s_count": 60,
+      "metrics": {
+        "sr_ratio": 0.2899,
+        "spiral_tightness": 0.0193,
+        "boundary_density": 0.2899,
+        "placement_entropy": 2.153,
+        "ht_density": 0.1882,
+        "ht_weighted_boundary": 0.0545
+      },
+      "placement_distribution": {
+        "R1": 77,
+        "S1": 40,
+        "R2": 47,
+        "S2": 20,
+        "R3": 23
+      }
+    },
+    "f72v2": {
+      "folio": "f72v2",
+      "total_placements": 247,
+      "r_count": 150,
+      "s_count": 97,
+      "metrics": {
+        "sr_ratio": 0.3927,
+        "spiral_tightness": 0.0162,
+        "boundary_density": 0.3927,
+        "placement_entropy": 2.232,
+        "ht_density": 0.1757,
+        "ht_weighted_boundary": 0.069
+      },
+      "placement_distribution": {
+        "R1": 70,
+        "S1": 59,
+        "R2": 57,
+        "S2": 38,
+        "R3": 23
+      }
+    },
+    "f72v3": {
+      "folio": "f72v3",
+      "total_placements": 269,
+      "r_count": 175,
+      "s_count": 94,
+      "metrics": {
+        "sr_ratio": 0.3494,
+        "spiral_tightness": 0.0149,
+        "boundary_density": 0.3494,
+        "placement_entropy": 2.2,
+        "ht_density": 0.0766,
+        "ht_weighted_boundary": 0.0268
+      },
+      "placement_distribution": {
+        "R1": 81,
+        "S1": 65,
+        "R2": 66,
+        "S2": 29,
+        "R3": 28
+      }
+    },
+    "f73r": {
+      "folio": "f73r",
+      "total_placements": 201,
+      "r_count": 131,
+      "s_count": 70,
+      "metrics": {
+        "sr_ratio": 0.3483,
+        "spiral_tightness": 0.0249,
+        "boundary_density": 0.3483,
+        "placement_entropy": 2.323,
+        "ht_density": 0.1587,
+        "ht_weighted_boundary": 0.0553
+      },
+      "placement_distribution": {
+        "S0": 8,
+        "R1": 66,
+        "S1": 32,
+        "R2": 50,
+        "S2": 30,
+        "R3": 15
+      }
+    },
+    "f73v": {
+      "folio": "f73v",
+      "total_placements": 221,
+      "r_count": 132,
+      "s_count": 89,
+      "metrics": {
+        "sr_ratio": 0.4027,
+        "spiral_tightness": 0.0226,
+        "boundary_density": 0.4027,
+        "placement_entropy": 2.359,
+        "ht_density": 0.2315,
+        "ht_weighted_boundary": 0.0932
+      },
+      "placement_distribution": {
+        "S0": 9,
+        "R1": 70,
+        "S1": 48,
+        "R2": 43,
+        "S2": 32,
+        "R3": 19
+      }
+    }
+  },
+  "variation": {
+    "sr_ratio": {
+      "mean": 0.3562,
+      "std": 0.0543,
+      "cv": 0.1524,
+      "min": 0.2624,
+      "max": 0.4493,
+      "range": 0.1869
+    },
+    "spiral_tightness": {
+      "mean": 0.0174,
+      "std": 0.0043,
+      "cv": 0.2464,
+      "min": 0.0076,
+      "max": 0.0249,
+      "range": 0.0173
+    },
+    "boundary_density": {
+      "mean": 0.3559,
+      "std": 0.054,
+      "cv": 0.1517,
+      "min": 0.2624,
+      "max": 0.4493,
+      "range": 0.1869
+    },
+    "placement_entropy": {
+      "mean": 2.2528,
+      "std": 0.1651,
+      "cv": 0.0733,
+      "min": 1.969,
+      "max": 2.619,
+      "range": 0.65
+    },
+    "ht_density": {
+      "mean": 0.1374,
+      "std": 0.0457,
+      "cv": 0.3323,
+      "min": 0.0591,
+      "max": 0.2315,
+      "range": 0.1724
+    },
+    "ht_weighted_boundary": {
+      "mean": 0.0491,
+      "std": 0.019,
+      "cv": 0.3866,
+      "min": 0.0234,
+      "max": 0.0932,
+      "range": 0.0698
+    }
+  },
+  "extremes": {
+    "sr_ratio": {
+      "highest": "f70v1",
+      "highest_value": 0.4493,
+      "lowest": "f71r",
+      "lowest_value": 0.2624
+    },
+    "spiral_tightness": {
+      "highest": "f73r",
+      "highest_value": 0.0249,
+      "lowest": "f70v2",
+      "lowest_value": 0.0076
+    },
+    "boundary_density": {
+      "highest": "f70v1",
+      "highest_value": 0.4493,
+      "lowest": "f71r",
+      "lowest_value": 0.2624
+    },
+    "placement_entropy": {
+      "highest": "f72r3",
+      "highest_value": 2.619,
+      "lowest": "f70v1",
+      "lowest_value": 1.969
+    },
+    "ht_density": {
+      "highest": "f73v",
+      "highest_value": 0.2315,
+      "lowest": "f72r2",
+      "lowest_value": 0.0591
+    }
+  },
+  "ordering_effects": {
+    "sr_ratio": {
+      "spearman_r": -0.154,
+      "p_value": 0.6331,
+      "significant": false
+    },
+    "spiral_tightness": {
+      "spearman_r": 0.517,
+      "p_value": 0.0849,
+      "significant": false
+    },
+    "boundary_density": {
+      "spearman_r": -0.154,
+      "p_value": 0.6331,
+      "significant": false
+    },
+    "placement_entropy": {
+      "spearman_r": 0.524,
+      "p_value": 0.08,
+      "significant": false
+    },
+    "ht_density": {
+      "spearman_r": 0.42,
+      "p_value": 0.1745,
+      "significant": false
+    }
+  },
+  "characters": {
+    "f70v1": {
+      "spatial_focus": "balanced",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "balanced, sustained-focus, moderate-HT"
+    },
+    "f70v2": {
+      "spatial_focus": "balanced",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "balanced, sustained-focus, moderate-HT"
+    },
+    "f71r": {
+      "spatial_focus": "monitoring-heavy",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "monitoring-heavy, sustained-focus, moderate-HT"
+    },
+    "f71v": {
+      "spatial_focus": "balanced",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "balanced, sustained-focus, moderate-HT"
+    },
+    "f72r1": {
+      "spatial_focus": "monitoring-heavy",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "monitoring-heavy, sustained-focus, moderate-HT"
+    },
+    "f72r2": {
+      "spatial_focus": "balanced",
+      "attention_pattern": "sustained-focus",
+      "human_load": "low-HT",
+      "summary": "balanced, sustained-focus, low-HT"
+    },
+    "f72r3": {
+      "spatial_focus": "monitoring-heavy",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "monitoring-heavy, sustained-focus, moderate-HT"
+    },
+    "f72v1": {
+      "spatial_focus": "monitoring-heavy",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "monitoring-heavy, sustained-focus, moderate-HT"
+    },
+    "f72v2": {
+      "spatial_focus": "balanced",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "balanced, sustained-focus, moderate-HT"
+    },
+    "f72v3": {
+      "spatial_focus": "monitoring-heavy",
+      "attention_pattern": "sustained-focus",
+      "human_load": "low-HT",
+      "summary": "monitoring-heavy, sustained-focus, low-HT"
+    },
+    "f73r": {
+      "spatial_focus": "monitoring-heavy",
+      "attention_pattern": "sustained-focus",
+      "human_load": "moderate-HT",
+      "summary": "monitoring-heavy, sustained-focus, moderate-HT"
+    },
+    "f73v": {
+      "spatial_focus": "balanced",
+      "attention_pattern": "sustained-focus",
+      "human_load": "high-HT",
+      "summary": "balanced, sustained-focus, high-HT"
+    }
+  },
+  "key_findings": [
+    {
+      "finding": "Non-uniform variation across Zodiac",
+      "high_cv_metrics": [
+        "spiral_tightness",
+        "ht_density",
+        "ht_weighted_boundary"
+      ],
+      "interpretation": "Some metrics vary substantially despite template reuse"
+    },
+    {
+      "finding": "No position gradient",
+      "interpretation": "Variation is not ordered by manuscript position"
+    }
+  ]
+}

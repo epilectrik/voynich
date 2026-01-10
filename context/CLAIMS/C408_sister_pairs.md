@@ -40,6 +40,49 @@ Prefix families ch-sh and ok-ot form EQUIVALENCE CLASSES. They occupy the same g
 - Section B is balanced (42-57% ch)
 - Conditioning at section/quire level, not folio level
 
+---
+
+## Sister Pair Micro-Conditioning (C410.a)
+
+**Tier:** 2 | **Status:** CLOSED | **Source:** Exploration
+
+While sister pairs (ch/sh, ok/ot) form structural equivalence classes occupying the same classificatory slot (C408-C410), sister-form choice in Currier A is *not free*.
+
+### Findings
+
+| Factor | Effect | Finding |
+|--------|--------|---------|
+| **MIDDLE** | 25.4% deviation | **PRIMARY** - Some MIDDLEs >95% one sister |
+| **Suffix** | 22.1% deviation | **STRONG** - -ain/-chy/-ar prefer ch |
+| **Adjacent token** | 23.9% spread | **NOTABLE** - Run continuation favored (ch->ch: 77%) |
+| **Section** | V=0.078 | Moderate - background conditioning |
+| **Position** | V=0.071 | Weak - slight sh-first, ch-last |
+| **DA context** | V=0.001 | **NONE** - confirms DA is structural |
+
+### Top MIDDLE preferences (ch-sh)
+
+| MIDDLE | ch% | Total |
+|--------|-----|-------|
+| yk | 97.1% | 35 |
+| okch | 96.3% | 27 |
+| l | 96.2% | 26 |
+| et | 93.8% | 48 |
+| s | 92.5% | 40 |
+
+### Interpretation
+
+Sister pairs encode equivalent classificatory roles but permit **compositionally conditioned surface variation**. Preferences operate locally within the compositional system and do not introduce new categories, semantics, or hierarchies.
+
+The conditioning hierarchy reflects:
+1. **Type refinement** (MIDDLE drives preference)
+2. **Surface realization** (suffix compatibility)
+3. **Ergonomic inertia** (run continuation)
+4. **Background bias** (section-level)
+
+This explains why substitution tests showed asymmetries without breaking equivalence class status.
+
+---
+
 ## Related Constraints
 
 - C407 - DA is infrastructure

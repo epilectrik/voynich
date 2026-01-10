@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "test": "HT-AZC Placement Affinity",
+    "hypothesis": "HT density differs between R and S placements in Zodiac AZC",
+    "n_zodiac_folios": 12,
+    "n_tokens": 2957
+  },
+  "results": {
+    "contingency": [
+      [
+        542,
+        1298
+      ],
+      [
+        442,
+        670
+      ]
+    ],
+    "chi2": 32.57478935329997,
+    "p_value": 1.146928684502754e-08,
+    "cramers_v": 0.10504675264677524,
+    "r_ht_rate": 0.29456521739130437,
+    "s_ht_rate": 0.39748201438848924,
+    "r_total": 1840,
+    "s_total": 1112,
+    "verdict": "SIGNIFICANT_MEANINGFUL",
+    "action": "DOCUMENT_C457",
+    "placement_breakdown": {
+      "R3": {
+        "ht": 106,
+        "non_ht": 269,
+        "total": 375
+      },
+      "S2": {
+        "ht": 169,
+        "non_ht": 300,
+        "total": 469
+      },
+      "R2": {
+        "ht": 192,
+        "non_ht": 484,
+        "total": 676
+      },
+      "S1": {
+        "ht": 254,
+        "non_ht": 339,
+        "total": 593
+      },
+      "R1": {
+        "ht": 238,
+        "non_ht": 539,
+        "total": 777
+      },
+      "C": {
+        "ht": 0,
+        "non_ht": 5,
+        "total": 5
+      },
+      "S0": {
+        "ht": 6,
+        "non_ht": 27,
+        "total": 33
+      },
+      "S3": {
+        "ht": 13,
+        "non_ht": 4,
+        "total": 17
+      },
+      "R4": {
+        "ht": 6,
+        "non_ht": 6,
+        "total": 12
+      }
+    }
+  }
+}

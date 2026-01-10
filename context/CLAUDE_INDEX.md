@@ -1,6 +1,8 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 1.8 | **Status:** FROZEN | **Constraints:** 411 | **Date:** 2026-01-08
+**Version:** 2.6 | **Status:** FROZEN | **Constraints:** 299 | **Date:** 2026-01-10
+
+> **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 
 ---
 
@@ -17,6 +19,61 @@ This is not language. This is not cipher. This is a control system reference man
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
 | Forbidden transitions | 17 (in 5 hazard classes) |
+
+---
+
+## How to Think About Tokens (Structural Layer)
+
+Within the internal structural analysis, Voynich tokens function differently than words in natural language. Understanding this prevents a common misinterpretation.
+
+**Key principles:**
+
+1. **Tokens are surface realizations, not functional operators.** At the level of grammar reconstruction, the functional behavior of a token is determined by its *instruction class*, not by the token itself. The 479 distinct token types collapse to 49 instruction classes (9.8x compression).
+
+2. **Most tokens are interchangeable within their class.** Just as assembly language mnemonics (MOV, ADD, JMP) map to opcodes, Voynich tokens map to instruction classes. The specific token is often a surface variant; the class determines behavior.
+
+3. **High hapax rates are expected, not anomalous.** Compositional morphology (PREFIX + MIDDLE + SUFFIX) generates unique surface forms naturally. A 35-39% hapax rate follows directly from productive combination, not from vocabulary size or "unknown" content.
+
+4. **A token lacking special highlighting is NOT unknown.** Every token has a structural classification (instruction class, morphological decomposition, system legality). "Neutral" means "non-contrastive"—the token does not carry *additional* discriminative signal beyond its base class. It does not mean the token is unanalyzed.
+
+**Analogy:** Consider a programming language where `foo`, `bar`, and `qux` are all valid variable names. They are structurally equivalent (all identifiers), interchangeable in most contexts, and individually unremarkable. Their *function* is determined by their syntactic role, not their spelling. Voynich tokens work similarly at the structural level.
+
+---
+
+## Why Visualization Tools Highlight Only Some Tokens
+
+Visualization tools (like Script Explorer) highlight tokens based on **contrastive marker roles**—features that distinguish subsets of tokens from the general population:
+
+- A-enriched vs B-enriched tokens
+- Kernel-heavy vs kernel-light prefixes
+- Line-position markers
+- LINK operators
+
+This highlighting reflects UI design choices optimized for showing *discriminative* features, not the boundaries of structural knowledge.
+
+**What the highlighting does NOT mean:**
+- Unhighlighted ≠ unknown
+- Unhighlighted ≠ unclassified
+- Unhighlighted ≠ outside the grammar
+
+All tokens are structurally classified. The ~10-30% that receive highlighting carry *additional* contrastive information. The ~70-90% that appear neutral are fully classified but lack special discriminative roles.
+
+---
+
+## Structural Analysis vs Interpretive / Probabilistic Reasoning
+
+This project maintains a clear boundary between two analytical layers:
+
+**Structural Layer (Tier 0-2):** Internal grammar reconstruction based on distributional evidence, transition patterns, and morphological analysis. Statements in this layer describe what the text *is* structurally—instruction classes, operator roles, hazard topology, convergence behavior. These are established facts about the internal organization of the text.
+
+**Interpretive Layer (Tier 3-4):** Reasoning about what the control system might *do* in the real world, what processes it might govern, or how to fit probabilistic models to observed distributions. This layer is explicitly allowed, operates conditionally on structural constraints, and remains quarantined from frozen facts.
+
+**Critical clarification:** Nothing in the structural layer forbids or pre-judges Bayesian fitting, probabilistic interpretation, or domain-specific hypothesis testing. These are welcome in the interpretive layer, provided they:
+- Accept structural constraints as given
+- Do not contradict Tier 0 facts
+- Are documented in SPECULATIVE/ with appropriate tier labels
+
+Structural analysis establishes *what exists*. Interpretive reasoning explores *what it might mean*.
 
 ---
 
@@ -40,6 +97,9 @@ Before reading further or doing new analysis:
 - **New analysis must cite phase + constraint number** - no uncited claims
 - **Speculation stays in SPECULATIVE/** - never promote without evidence
 - **Prefix matching ≠ token matching** - common bug, see SYSTEM/METHODOLOGY.md
+- **Check constraints BEFORE speculating** - search CLAIMS/ before reasoning about relationships (see SYSTEM/METHODOLOGY.md → "Constraint-First Reasoning")
+
+**Questioning constraints is allowed** when you find gaps, contradictions, or new evidence — but state the conflict explicitly and propose investigation rather than silently overriding.
 
 ### Audit Scope Rule
 
@@ -86,8 +146,9 @@ requires explicit authorization from the user.
 | Work with Currier B grammar | [ARCHITECTURE/currier_B.md](ARCHITECTURE/currier_B.md) |
 | Work with Currier A registry | [ARCHITECTURE/currier_A.md](ARCHITECTURE/currier_A.md) |
 | Work with AZC hybrid text | [ARCHITECTURE/currier_AZC.md](ARCHITECTURE/currier_AZC.md) |
-| Understand the Human Track layer | [ARCHITECTURE/human_track.md](ARCHITECTURE/human_track.md) |
-| Look up a specific constraint | [CLAIMS/INDEX.md](CLAIMS/INDEX.md) → find by number |
+| Understand the Human Track layer | [CLAIMS/HT_HIERARCHY.md](CLAIMS/HT_HIERARCHY.md) (canonical) |
+| Look up a specific constraint | [CLAIMS/INDEX.md](CLAIMS/INDEX.md) → find by number, then follow to registry |
+| Understand the constraint system | [MODEL_CONTEXT.md](MODEL_CONTEXT.md) → architectural guide (read BEFORE constraints) |
 | Write new analysis safely | [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) |
 | Understand tier definitions | [SYSTEM/TIERS.md](SYSTEM/TIERS.md) |
 | Check quantitative metrics | [METRICS/](METRICS/) (grammar, hazard, coverage) |
@@ -135,7 +196,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 411 |
+| Validated constraints | 299 |
 | Completed phases | 118 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
@@ -168,10 +229,18 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
 ## File Registry
 
+- **Constraints (by topic):** [CLAIMS/INDEX.md](CLAIMS/INDEX.md) - Browse by category, follow links to details
+- **Architectural guide:** [MODEL_CONTEXT.md](MODEL_CONTEXT.md) - How to interpret the constraint system
 - **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - 118 phases with status
-- **Claims:** [CLAIMS/INDEX.md](CLAIMS/INDEX.md) - 411 constraints by number
-- **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - warnings and patterns
-- **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - context system updates
+- **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
+- **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
+
+### Programmatic Resources
+
+These files are for scripts and validation tools, NOT for reading in full:
+
+- **CONSTRAINT_TABLE.txt** - TSV format for programmatic constraint lookup/validation
+- **generate_constraint_table.py** - Regenerates table from registry files
 
 ---
 
@@ -203,4 +272,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v1.0 | Project v1.8 FROZEN STATE | 2026-01-08*
+*Context System v1.4 | Project v1.8 FROZEN STATE | STRUCTURE_FREEZE_v1 | 2026-01-09*

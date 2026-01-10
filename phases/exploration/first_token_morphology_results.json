@@ -1,0 +1,29 @@
+{
+  "phase": "first_token_morphology",
+  "ko_token_count": 6,
+  "ok_token_count": 178,
+  "suffix_jaccard": 0.21428571428571427,
+  "middle_jaccard": 0.09375,
+  "direct_equivalent_rate": 50.0,
+  "decision": "WEAK_EQUIVALENCE",
+  "ko_suffixes": {
+    "in": 1,
+    "aiin": 1,
+    "chy": 1,
+    "or": 1,
+    "ar": 1,
+    "ir": 1
+  },
+  "ok_suffixes_top10": {
+    "ol": 25,
+    "y": 23,
+    "or": 23,
+    "aiin": 18,
+    "al": 16,
+    "ey": 11,
+    "chy": 10,
+    "om": 7,
+    "dy": 6,
+    "hy": 6
+  }
+}

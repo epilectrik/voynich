@@ -46,6 +46,22 @@ The 17 forbidden transitions are about **specific token pairs or token-class pai
 
 ## Script Patterns
 
+### Canonical Data Source
+
+**PRIMARY DATA FILE:** `data/transcriptions/interlinear_full_words.txt`
+
+This is the ONLY transcription file that should be used for quantitative analysis. It contains:
+- Tab-separated values with headers
+- Columns: word, complex_word, folio, section, quire, panel, language (A/B), hand, placement, line_number, transcriber, line_initial, line_final, etc.
+- 122,160 tokens total
+- Standard Voynich vocabulary (ch, sh, qo, da, ol, etc.)
+
+**WARNING:** Other transcription files exist (e.g., `voynich_eva.txt`) but use different encoding schemes. EVA notation uses digits and different character mappings. Using the wrong transcription will produce invalid results.
+
+**Quick verification:**
+- Correct: tokens start with `ch-`, `sh-`, `qo-`, `da-`, `ol-`, etc.
+- Wrong (EVA): tokens start with `4o`, `1c`, `9k`, etc.
+
 ### Loading Transcription Data
 
 ```python
@@ -56,6 +72,13 @@ tokens = load_transcription()
 
 # With recovery: apply high-confidence patches
 tokens = load_transcription(apply_recovery=True, min_confidence='HIGH')
+```
+
+**Direct loading (when lib not available):**
+```python
+import pandas as pd
+DATA_PATH = "C:/git/voynich/data/transcriptions/interlinear_full_words.txt"
+df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False, na_values='NA')
 ```
 
 ### Filtering by Currier Language
@@ -109,6 +132,63 @@ is_canonical = token in canonical_types
 - Don't treat Tier 3 findings as structural
 - Always cite the tier when referencing claims
 - Keep speculative content quarantined
+
+---
+
+## Constraint-First Reasoning
+
+**RULE: Check constraints BEFORE speculating.**
+
+When reasoning about relationships, interpretations, or implications:
+
+1. **Search constraints first:**
+   - Grep `context/CLAIMS/` for relevant keywords
+   - Check INDEX.md for related constraint numbers
+   - Read the actual constraint files, not just summaries
+
+2. **Distinguish what is constrained vs. undocumented:**
+   - Constrained = tested claim with evidence and tier
+   - Undocumented = no constraint exists (gap, not confirmation)
+   - Never treat absence of constraint as permission to speculate freely
+
+3. **Cite or flag:**
+   - If constrained: cite the constraint number
+   - If undocumented: explicitly state "this is not constrained" and flag as potential research gap
+
+**Example of error (actually occurred):**
+> "Currier A entries might reference the same categories that B executes"
+>
+> This seemed plausible but **C384 explicitly falsifies entry-level A-B coupling.**
+> Checking constraints first would have caught this.
+
+---
+
+## Questioning Constraints
+
+**Constraints are conclusions, not dogma.** It is acceptable to:
+
+1. **Question a constraint** when new evidence or reasoning suggests it may be:
+   - Overstated (evidence weaker than tier implies)
+   - Incomplete (missing edge cases)
+   - In tension with another constraint
+
+2. **Propose re-examination** if you find:
+   - Internal contradictions between constraints
+   - Gaps where expected constraints are missing
+   - Evidence that contradicts a Tier 2 claim
+
+3. **Never silently override** — if you think a constraint is wrong:
+   - State the constraint explicitly
+   - Present the conflicting evidence
+   - Propose revision or flag for investigation
+
+**Tier determines revisability:**
+| Tier | Revisability |
+|------|--------------|
+| 0 | Frozen — do not question without extraordinary evidence |
+| 1 | Falsified — do not retry, but can note if new approach differs |
+| 2 | Closed — can propose reopening with new evidence |
+| 3-4 | Open — expected to evolve |
 
 ---
 
@@ -185,6 +265,44 @@ Before running new analysis:
 
 ---
 
+## Constraint Maintenance Workflow
+
+**Source of truth:** The grouped registry files in `context/CLAIMS/`
+
+**Workflow for adding constraints:**
+
+1. **Add to appropriate registry file:**
+   - `tier0_core.md` - Frozen Tier 0 facts
+   - `grammar_system.md` - B grammar structure
+   - `currier_a.md` - A registry properties
+   - `morphology.md` - Compositional system
+   - `operations.md` - OPS doctrine
+   - `human_track.md` - HT layer
+   - `azc_system.md` - AZC hybrid system
+   - `organization.md` - Organizational structure
+
+2. **Use consistent format:**
+   ```markdown
+   ### C### - Title
+   **Tier:** # | **Status:** CLOSED
+   Description text.
+   **Source:** Phase/Source
+   ```
+
+3. **Regenerate the enumerated table:**
+   ```bash
+   python context/generate_constraint_table.py
+   ```
+   This parses all registry files and outputs `CONSTRAINT_TABLE.txt` (299 constraints).
+
+4. **Update INDEX.md** if adding a representative constraint to a category table.
+
+5. **Update counts** in CLAUDE_INDEX.md, INDEX.md, CLAUDE.md if total changes.
+
+**Do NOT edit CONSTRAINT_TABLE.txt directly** — it is generated from registry files.
+
+---
+
 ## Citing Constraints
 
 Format: `Constraint ###` or `C###`
@@ -192,6 +310,43 @@ Format: `Constraint ###` or `C###`
 Example: "Currier A is folio-disjoint from B (C272)"
 
 Always include the constraint number for traceability.
+
+---
+
+## Claude Code Session Behavior
+
+### Plan Mode File Management
+
+**RULE: Use Write, not Edit, for fresh plans.**
+
+When entering plan mode for a **different task** than the existing plan file:
+- Use `Write` tool to completely overwrite the plan file
+- Do NOT use `Edit` to incrementally modify the old plan
+
+**Why this matters:**
+- Incremental edits waste context tokens
+- Risk leaving remnants of old content
+- Slower and more error-prone
+- Pollutes context with irrelevant intermediate states
+
+**Correct approach:**
+```
+# Different task → complete replacement
+Write(file_path=plan_file, content=entire_new_plan)
+```
+
+**Incorrect approach:**
+```
+# Wasteful incremental modification
+Edit(old_string=chunk1, new_string=new_chunk1)
+Edit(old_string=chunk2, new_string=new_chunk2)
+...
+```
+
+**When to use Edit on plan files:**
+- Same task, refining existing plan
+- Adding a section to current plan
+- Fixing a typo or small correction
 
 ---
 

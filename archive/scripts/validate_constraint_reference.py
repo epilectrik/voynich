@@ -70,24 +70,23 @@ def main():
         try:
             data = json.load(sys.stdin)
             text = data.get('user_input', '')
-        except:
-            print("Usage: python validate_constraint_reference.py <text>")
-            sys.exit(1)
+        except Exception:
+            # Silent exit on parse failure - don't disrupt terminal
+            sys.exit(0)
 
     if not text:
         sys.exit(0)
 
     valid_refs, invalid_refs = validate_references(text)
 
+    # Only output if there are constraint references to report
     if invalid_refs:
+        # Use stderr for warnings so it doesn't inject into context
         print(f"WARNING: Invalid constraint references: {', '.join(invalid_refs)}", file=sys.stderr)
-        print(f"Valid constraints referenced: {', '.join(valid_refs) if valid_refs else 'none'}", file=sys.stderr)
-        # Exit 0 to not block, just warn
-        sys.exit(0)
+        if valid_refs:
+            print(f"Valid constraints referenced: {', '.join(valid_refs)}", file=sys.stderr)
 
-    if valid_refs:
-        print(f"Validated: {', '.join(valid_refs)}")
-
+    # Stay silent on success - don't clutter the terminal
     sys.exit(0)
 
 if __name__ == '__main__':

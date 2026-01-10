@@ -1,0 +1,14 @@
+{
+  "phase": "first_token_position",
+  "quire_chi2_p": 0.8585554947274009,
+  "fisher_p": 7.215080745321447e-09,
+  "odds_ratio": Infinity,
+  "first_c_vowel_pct": 47.916666666666664,
+  "second_c_vowel_pct": 0.0,
+  "position_jaccard": 0.07692307692307693,
+  "decision": "POSITION_SPECIFIC",
+  "findings": [
+    "Quire-independent: Pass/fail not conditioned on quire",
+    "Position-specific: C+vowel prefixes enriched infx in first position"
+  ]
+}

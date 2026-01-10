@@ -41,6 +41,30 @@ The anticorrelation is specific to escape density, not hazard density or safe ru
 
 ---
 
+## Verification (2026-01-09)
+
+**STATUS: CONFIRMED**
+
+Independent verification using exact original methodology reproduced results:
+
+| Metric | Original | Verified |
+|--------|----------|----------|
+| N (folios) | 82 | 82 |
+| Spearman rho | -0.326 | -0.327 |
+| p-value | 0.002 | 0.0027 |
+
+**Quartile analysis confirms monotonic relationship:**
+| Quartile | ch-preference | escape-density |
+|----------|---------------|----------------|
+| Q1 (Low escape) | 68.8% | 7.1% |
+| Q4 (High escape) | 58.1% | 24.7% |
+
+**Prior discrepancy explained:** A separate re-analysis incorrectly used ch-density (`ch/total`) instead of ch-preference (`ch/(ch+sh)`). These are different metrics. The original C412 claim uses ch-preference and is correct.
+
+**Verification script:** `phases/exploration/c412_verification.py`
+
+---
+
 ## Navigation
 
 ← [INDEX.md](INDEX.md) | ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "analysis": "E5 - AZC Internal Oscillation Test",
+    "description": "Testing for micro-oscillations within AZC block",
+    "n_azc_folios": 30,
+    "manuscript_span": [
+      111,
+      226
+    ]
+  },
+  "statistics": {
+    "mean_ht": 0.16158999999999996,
+    "std_ht": 0.06736942605267368,
+    "cv": 0.4169158119479776,
+    "range": [
+      0.0,
+      0.3333
+    ]
+  },
+  "trend_test": {
+    "slope": -0.0033689655172413793,
+    "r_squared": 0.18734662873076952,
+    "p_value": 0.016891377363455966,
+    "direction": "decreasing",
+    "significant": true
+  },
+  "autocorrelation": [
+    {
+      "lag": 1,
+      "correlation": -0.02770071551650976,
+      "p_value": 0.8865758508322389,
+      "significant": false
+    },
+    {
+      "lag": 2,
+      "correlation": 0.13129477588686,
+      "p_value": 0.5054342474484135,
+      "significant": false
+    },
+    {
+      "lag": 3,
+      "correlation": 0.32373613716671523,
+      "p_value": 0.09949855420048118,
+      "significant": false
+    },
+    {
+      "lag": 4,
+      "correlation": 0.08310370689149425,
+      "p_value": 0.6865021483372871,
+      "significant": false
+    },
+    {
+      "lag": 5,
+      "correlation": 0.06981468450592757,
+      "p_value": 0.7401859536322789,
+      "significant": false
+    },
+    {
+      "lag": 6,
+      "correlation": -0.23899879588706813,
+      "p_value": 0.2606983447867234,
+      "significant": false
+    },
+    {
+      "lag": 7,
+      "correlation": 0.20490065570008742,
+      "p_value": 0.3483098614948042,
+      "significant": false
+    },
+    {
+      "lag": 8,
+      "correlation": 0.16489083339619284,
+      "p_value": 0.4633732354104857,
+      "significant": false
+    }
+  ],
+  "periodicity": {
+    "dominant_period": 3.75,
+    "snr": 2.9907006577361037,
+    "n_samples": 30
+  },
+  "global_comparison": {
+    "azc_period": 3.75,
+    "global_period": 10,
+    "ratio": 0.375,
+    "interpretation": "FASTER_THAN_GLOBAL"
+  },
+  "changepoints": {
+    "n_changepoints": 5,
+    "positions": [
+      0,
+      1,
+      3,
+      25,
+      28
+    ],
+    "threshold_used": 1.5
+  },
+  "subgroup_analysis": {
+    "zodiac": {
+      "n_folios": 14,
+      "mean_ht": 0.14378571428571427,
+      "std_ht": 0.04716111983922557,
+      "cv": 0.3279958657472221,
+      "range": 0.1724,
+      "trend": {
+        "slope": 0.0011147252747252753,
+        "r_squared": 0.009078641022316638,
+        "p_value": 0.7459294406979415,
+        "direction": "increasing",
+        "significant": false
+      },
+      "autocorr": [
+        {
+          "lag": 1,
+          "correlation": 0.1154178374166723,
+          "p_value": 0.7073089631308205,
+          "significant": false
+        },
+        {
+          "lag": 2,
+          "correlation": -0.5664987088821509,
+          "p_value": 0.05480802084089163,
+          "significant": false
+        },
+        {
+          "lag": 3,
+          "correlation": 0.06377237913763627,
+          "p_value": 0.8522268751715273,
+          "significant": false
+        },
+        {
+          "lag": 4,
+          "correlation": 0.39037919647551045,
+          "p_value": 0.2647168522465667,
+          "significant": false
+        },
+        {
+          "lag": 5,
+          "correlation": 0.09390193815947043,
+          "p_value": 0.8101046057184121,
+          "significant": false
+        }
+      ]
+    },
+    "non_zodiac": {
+      "n_folios": 16,
+      "mean_ht": 0.17716874999999999,
+      "std_ht": 0.07774145225320596,
+      "cv": 0.4387988979614405,
+      "range": 0.3333,
+      "trend": {
+        "slope": -0.001779415633220594,
+        "r_squared": 0.3485253631004234,
+        "p_value": 0.016057741714623878,
+        "direction": "decreasing",
+        "significant": true
+      },
+      "autocorr": [
+        {
+          "lag": 1,
+          "correlation": -0.24443219284604945,
+          "p_value": 0.3799537767728037,
+          "significant": false
+        },
+        {
+          "lag": 2,
+          "correlation": 0.022026347175080188,
+          "p_value": 0.9404221754026653,
+          "significant": false
+        },
+        {
+          "lag": 3,
+          "correlation": 0.2477466055502413,
+          "p_value": 0.41444385287079005,
+          "significant": false
+        },
+        {
+          "lag": 4,
+          "correlation": -0.15854425307514133,
+          "p_value": 0.6226166805568784,
+          "significant": false
+        },
+        {
+          "lag": 5,
+          "correlation": 0.3177462342047518,
+          "p_value": 0.3409959782187626,
+          "significant": false
+        }
+      ]
+    }
+  },
+  "folio_sequence": [
+    {
+      "folio": "f57v",
+      "position": 111,
+      "ht_density": 0.0779
+    },
+    {
+      "folio": "f65r",
+      "position": 114,
+      "ht_density": 0.3333
+    },
+    {
+      "folio": "f65v",
+      "position": 115,
+      "ht_density": 0.1488
+    },
+    {
+      "folio": "f67r1",
+      "position": 118,
+      "ht_density": 0.2063
+    },
+    {
+      "folio": "f67r2",
+      "position": 119,
+      "ht_density": 0.2936
+    },
+    {
+      "folio": "f67v1",
+      "position": 120,
+      "ht_density": 0.23
+    },
+    {
+      "folio": "f67v2",
+      "position": 121,
+      "ht_density": 0.2105
+    },
+    {
+      "folio": "f68r1",
+      "position": 122,
+      "ht_density": 0.125
+    },
+    {
+      "folio": "f68r2",
+      "position": 123,
+      "ht_density": 0.1656
+    },
+    {
+      "folio": "f68r3",
+      "position": 124,
+      "ht_density": 0.1959
+    },
+    {
+      "folio": "f68v1",
+      "position": 125,
+      "ht_density": 0.106
+    },
+    {
+      "folio": "f68v2",
+      "position": 126,
+      "ht_density": 0.1851
+    },
+    {
+      "folio": "f68v3",
+      "position": 127,
+      "ht_density": 0.1406
+    },
+    {
+      "folio": "f69r",
+      "position": 128,
+      "ht_density": 0.222
+    },
+    {
+      "folio": "f69v",
+      "position": 129,
+      "ht_density": 0.1941
+    },
+    {
+      "folio": "f70r1",
+      "position": 130,
+      "ht_density": 0.2188
+    },
+    {
+      "folio": "f70r2",
+      "position": 131,
+      "ht_density": 0.1448
+    },
+    {
+      "folio": "f70v1",
+      "position": 132,
+      "ht_density": 0.1171
+    },
+    {
+      "folio": "f70v2",
+      "position": 133,
+      "ht_density": 0.1357
+    },
+    {
+      "folio": "f71r",
+      "position": 134,
+      "ht_density": 0.1168
+    },
+    {
+      "folio": "f71v",
+      "position": 135,
+      "ht_density": 0.1472
+    },
+    {
+      "folio": "f72r1",
+      "position": 136,
+      "ht_density": 0.1073
+    },
+    {
+      "folio": "f72r2",
+      "position": 137,
+      "ht_density": 0.0591
+    },
+    {
+      "folio": "f72r3",
+      "position": 138,
+      "ht_density": 0.1355
+    },
+    {
+      "folio": "f72v1",
+      "position": 139,
+      "ht_density": 0.1882
+    },
+    {
+      "folio": "f72v2",
+      "position": 140,
+      "ht_density": 0.1757
+    },
+    {
+      "folio": "f72v3",
+      "position": 141,
+      "ht_density": 0.0766
+    },
+    {
+      "folio": "f73r",
+      "position": 142,
+      "ht_density": 0.1587
+    },
+    {
+      "folio": "f73v",
+      "position": 143,
+      "ht_density": 0.2315
+    },
+    {
+      "folio": "f116v",
+      "position": 226,
+      "ht_density": 0
+    }
+  ],
+  "key_findings": [
+    {
+      "finding": "No significant autocorrelation detected",
+      "interpretation": "AZC block HT is not strongly oscillatory"
+    },
+    {
+      "finding": "Significant decreasing trend (p=0.0169)",
+      "interpretation": "HT changes systematically through AZC block"
+    },
+    {
+      "finding": "AZC rhythm (3.8) differs from global (10)",
+      "interpretation": "FASTER_THAN_GLOBAL"
+    }
+  ]
+}
