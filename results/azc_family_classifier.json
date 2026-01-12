@@ -1,0 +1,167 @@
+{
+  "fit_id": "F-AZC-003",
+  "question": "Can morphology predict Zodiac vs A/C family membership?",
+  "metadata": {
+    "total_tokens": 5354,
+    "zodiac_tokens": 2076,
+    "ac_tokens": 3278,
+    "train_size": 4283,
+    "test_size": 1071
+  },
+  "baseline": {
+    "majority_class": "ac",
+    "accuracy": 0.6123
+  },
+  "classification": {
+    "accuracy": 0.7012,
+    "lift_over_baseline": 1.15,
+    "per_class": {
+      "zodiac": {
+        "precision": 0.6308,
+        "recall": 0.5062,
+        "f1": 0.5616
+      },
+      "ac": {
+        "precision": 0.7319,
+        "recall": 0.8198,
+        "f1": 0.7734
+      }
+    }
+  },
+  "feature_importance": {
+    "prefix": 0.2428,
+    "middle": 0.5385,
+    "suffix": 0.1882
+  },
+  "diagnostic_features": [
+    {
+      "feature": "kh",
+      "type": "suffixe",
+      "zodiac_pct": 0.1,
+      "ac_pct": 0.0,
+      "favors": "zodiac",
+      "lift": "INF"
+    },
+    {
+      "feature": "ok",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.09,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "t*",
+      "type": "suffixe",
+      "zodiac_pct": 0.19,
+      "ac_pct": 0.0,
+      "favors": "zodiac",
+      "lift": "INF"
+    },
+    {
+      "feature": "h*",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.03,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "y*",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.03,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "ot",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.18,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "*",
+      "type": "suffixe",
+      "zodiac_pct": 0.14,
+      "ac_pct": 0.0,
+      "favors": "zodiac",
+      "lift": "INF"
+    },
+    {
+      "feature": "m*",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.06,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "p*",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.03,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "i*",
+      "type": "suffixe",
+      "zodiac_pct": 0.1,
+      "ac_pct": 0.0,
+      "favors": "zodiac",
+      "lift": "INF"
+    },
+    {
+      "feature": "hg",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.06,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "no",
+      "type": "suffixe",
+      "zodiac_pct": 0.05,
+      "ac_pct": 0.0,
+      "favors": "zodiac",
+      "lift": "INF"
+    },
+    {
+      "feature": "ea",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.09,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "i",
+      "type": "suffixe",
+      "zodiac_pct": 0.0,
+      "ac_pct": 0.03,
+      "favors": "ac",
+      "lift": "INF"
+    },
+    {
+      "feature": "g*",
+      "type": "suffixe",
+      "zodiac_pct": 0.05,
+      "ac_pct": 0.0,
+      "favors": "zodiac",
+      "lift": "INF"
+    }
+  ],
+  "success_criteria": {
+    "target": 0.8,
+    "achieved": 0.7012,
+    "met": false
+  },
+  "interpretation": {
+    "finding": "Morphology does NOT predict family - families differ only in layout",
+    "fit_tier": "F4"
+  }
+}

@@ -34,7 +34,7 @@ This is the only file that should be read automatically. All other files are loa
 | `CORE/` | Tier 0 frozen facts, Tier 1 falsifications | When checking what's proven/rejected |
 | `ARCHITECTURE/` | Currier A, B, AZC structural analysis | When working on specific text type |
 | `OPERATIONS/` | OPS doctrine, program taxonomy | When analyzing program behavior |
-| `CLAIMS/` | All 299 constraints, indexed and grouped | When citing or checking constraints |
+| `CLAIMS/` | All 317 constraints, indexed and grouped | When citing or checking constraints |
 | `TERMINOLOGY/` | Definitions of key terms | When confused about vocabulary |
 | `METRICS/` | Quantitative facts and thresholds | When checking numbers |
 | `SPECULATIVE/` | Tier 3-4 interpretive content | Only when explicitly relevant |

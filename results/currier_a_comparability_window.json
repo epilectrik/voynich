@@ -1,0 +1,113 @@
+{
+  "fit_id": "F-A-009",
+  "fit_name": "Comparability Window",
+  "fit_tier": "F2",
+  "result": "SUCCESS",
+  "date": "2026-01-10",
+  "entry_summary": {
+    "total_entries": 1575,
+    "exclusive": 46,
+    "shared": 751,
+    "universal": 705
+  },
+  "adjacency_tests": {
+    "1": {
+      "observed": 0.5519163763066202,
+      "baseline_mean": 0.508862717284437,
+      "baseline_std": 0.011248480980370746,
+      "difference": 0.043053659022183166,
+      "z": 3.8275087184940175,
+      "p": 0.00012944680039295164
+    },
+    "2": {
+      "observed": 0.541172365666434,
+      "baseline_mean": 0.5080783555381432,
+      "baseline_std": 0.008030017691268106,
+      "difference": 0.03309401012829083,
+      "z": 4.121287324718783,
+      "p": 3.767611827054651e-05
+    },
+    "3": {
+      "observed": 0.538210624417521,
+      "baseline_mean": 0.5077071130652299,
+      "baseline_std": 0.007001152300625377,
+      "difference": 0.030503511352291124,
+      "z": 4.356927266039678,
+      "p": 1.31901074857943e-05
+    },
+    "5": {
+      "observed": 0.5337251609291912,
+      "baseline_mean": 0.5077991619372305,
+      "baseline_std": 0.005199449655917691,
+      "difference": 0.025925998991960686,
+      "z": 4.986296763630229,
+      "p": 6.15475843845914e-07
+    }
+  },
+  "section_results": {
+    "H": {
+      "1": {
+        "observed": 0.5269299820466786,
+        "baseline": 0.48254479658806043,
+        "diff": 0.04438518545861819,
+        "z": 3.0269115354133875,
+        "p": 0.002470662530625223
+      },
+      "3": {
+        "observed": 0.5193519351935193,
+        "baseline": 0.4831882711796953,
+        "diff": 0.03616366401382398,
+        "z": 5.291616914277727,
+        "p": 1.2123964499011208e-07
+      }
+    },
+    "P": {
+      "1": {
+        "observed": 0.6473214285714286,
+        "baseline": 0.6419243518823113,
+        "diff": 0.005397076689117264,
+        "z": 0.23245712412408664,
+        "p": 0.8161829851318849
+      },
+      "3": {
+        "observed": 0.6601503759398496,
+        "baseline": 0.6456488417777905,
+        "diff": 0.014501534162059126,
+        "z": 1.2204712874926047,
+        "p": 0.22228626761474812
+      }
+    },
+    "T": {
+      "1": {
+        "observed": 0.6105263157894737,
+        "baseline": 0.5019141797793453,
+        "diff": 0.10861213601012842,
+        "z": 2.0855983110472494,
+        "p": 0.037015024477067726
+      },
+      "3": {
+        "observed": 0.48226950354609927,
+        "baseline": 0.5003518344597448,
+        "diff": -0.018082330913645583,
+        "z": -0.5928597275601478,
+        "p": 0.5532750317760007
+      }
+    }
+  },
+  "shared_analysis": {
+    "mean_neighbor_distance": 1.3794940079893476,
+    "expected_distance": 2.0944148936170213,
+    "ratio": 0.6586536469891996
+  },
+  "criteria_check": {
+    "has_clustering": true,
+    "has_robust_clustering": true,
+    "significant_windows": 4,
+    "direction": "CLUSTERING"
+  },
+  "interpretation": "Relational comparison is weakly scaffolded by layout: similar entries cluster.",
+  "supports_constraints": [
+    "relational_registry_synthesis"
+  ],
+  "introduces_new_constraints": false
+}

@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "date": "2026-01-11",
+    "total_tokens": 11346,
+    "unique_middles": 725
+  },
+  "sharing_summary": {
+    "universal": {
+      "count": 18,
+      "pct_of_total": 2.4827586206896552,
+      "mean_frequency": 173.22222222222223,
+      "median_frequency": 32.0,
+      "total_tokens": 3118,
+      "token_pct": 43.74912305317806,
+      "mean_suffix_entropy": 1.4515714709139829
+    },
+    "tri_class": {
+      "count": 35,
+      "pct_of_total": 4.827586206896552,
+      "mean_frequency": 40.91428571428571,
+      "median_frequency": 16.0,
+      "total_tokens": 1432,
+      "token_pct": 20.092605584397365,
+      "mean_suffix_entropy": 1.4319882457036577
+    },
+    "bi_class": {
+      "count": 99,
+      "pct_of_total": 13.655172413793103,
+      "mean_frequency": 14.11111111111111,
+      "median_frequency": 4.0,
+      "total_tokens": 1397,
+      "token_pct": 19.60151536410832,
+      "mean_suffix_entropy": 0.8250331792030227
+    },
+    "exclusive": {
+      "count": 573,
+      "pct_of_total": 79.0344827586207,
+      "mean_frequency": 2.0593368237347294,
+      "median_frequency": 1.0,
+      "total_tokens": 1180,
+      "token_pct": 16.556755998316262,
+      "mean_suffix_entropy": 0.8299776189726541
+    }
+  },
+  "universal_analysis": {
+    "count": 18,
+    "details": [
+      {
+        "middle": "o",
+        "total": 1137,
+        "by_class": {
+          "M-B": 428,
+          "M-A": 623,
+          "M-C": 62,
+          "M-D": 24
+        },
+        "evenness": 0.6762509319901265,
+        "top_suffixes": [
+          [
+            "l",
+            495
+          ],
+          [
+            "r",
+            301
+          ],
+          [
+            "",
+            164
+          ]
+        ]
+      },
+      {
+        "middle": "",
+        "total": 1041,
+        "by_class": {
+          "M-C": 460,
+          "M-B": 204,
+          "M-D": 148,
+          "M-A": 229
+        },
+        "evenness": 0.9310525086459226,
+        "top_suffixes": [
+          [
+            "y",
+            274
+          ],
+          [
+            "aiin",
+            139
+          ],
+          [
+            "",
+            130
+          ]
+        ]
+      },
+      {
+        "middle": "e",
+        "total": 207,
+        "by_class": {
+          "M-B": 107,
+          "M-A": 91,
+          "M-D": 1,
+          "M-C": 8
+        },
+        "evenness": 0.6159553632834691,
+        "top_suffixes": [
+          [
+            "y",
+            163
+          ],
+          [
+            "",
+            14
+          ],
+          [
+            "aiin",
+            11
+          ]
+        ]
+      },
+      {
+        "middle": "a",
+        "total": 193,
+        "by_class": {
+          "M-B": 74,
+          "M-A": 74,
+          "M-C": 44,
+          "M-D": 1
+        },
+        "evenness": 0.793083209480865,
+        "top_suffixes": [
+          [
+            "r",
+            76
+          ],
+          [
+            "l",
+            70
+          ],
+          [
+            "m",
+            25
+          ]
+        ]
+      },
+      {
+        "middle": "k",
+        "total": 133,
+        "by_class": {
+          "M-A": 126,
+          "M-B": 5,
+          "M-C": 1,
+          "M-D": 1
+        },
+        "evenness": 0.1789686206249321,
+        "top_suffixes": [
+          [
+            "chy",
+            46
+          ],
+          [
+            "y",
+            42
+          ],
+          [
+            "aiin",
+            33
+          ]
+        ]
+      },
+      {
+        "middle": "cho",
+        "total": 95,
+        "by_class": {
+          "M-B": 34,
+          "M-C": 54,
+          "M-A": 4,
+          "M-D": 3
+        },
+        "evenness": 0.6718091240523039,
+        "top_suffixes": [
+          [
+            "l",
+            39
+          ],
+          [
+            "r",
+            33
+          ],
+          [
+            "",
+            14
+          ]
+        ]
+      },
+      {
+        "middle": "eeo",
+        "total": 66,
+        "by_class": {
+          "M-B": 37,
+          "M-A": 19,
+          "M-C": 9,
+          "M-D": 1
+        },
+        "evenness": 0.7343961331892261,
+        "top_suffixes": [
+          [
+            "r",
+            23
+          ],
+          [
+            "l",
+            21
+          ],
+          [
+            "dy",
+            12
+          ]
+        ]
+      },
+      {
+        "middle": "ol",
+        "total": 59,
+        "by_class": {
+          "M-B": 21,
+          "M-A": 25,
+          "M-C": 9,
+          "M-D": 4
+        },
+        "evenness": 0.8661995277681842,
+        "top_suffixes": [
+          [
+            "dy",
+            25
+          ],
+          [
+            "y",
+            20
+          ],
+          [
+            "s",
+            7
+          ]
+        ]
+      },
+      {
+        "middle": "che",
+        "total": 34,
+        "by_class": {
+          "M-B": 15,
+          "M-C": 11,
+          "M-D": 7,
+          "M-A": 1
+        },
+        "evenness": 0.8333109618966215,
+        "top_suffixes": [
+          [
+            "y",
+            30
+          ],
+          [
+            "",
+            1
+          ],
+          [
+            "aiin",
+            1
+          ]
+        ]
+      },
+      {
+        "middle": "oi",
+        "total": 30,
+        "by_class": {
+          "M-C": 2,
+          "M-B": 12,
+          "M-A": 14,
+          "M-D": 2
+        },
+        "evenness": 0.7814033158465871,
+        "top_suffixes": [
+          [
+            "in",
+            30
+          ]
+        ]
+      },
+      {
+        "middle": "al",
+        "total": 29,
+        "by_class": {
+          "M-B": 10,
+          "M-A": 5,
+          "M-D": 5,
+          "M-C": 9
+        },
+        "evenness": 0.9640269301374402,
+        "top_suffixes": [
+          [
+            "y",
+            17
+          ],
+          [
+            "dy",
+            8
+          ],
+          [
+            "s",
+            3
+          ]
+        ]
+      },
+      {
+        "middle": "cha",
+        "total": 22,
+        "by_class": {
+          "M-C": 11,
+          "M-B": 8,
+          "M-D": 2,
+          "M-A": 1
+        },
+        "evenness": 0.7739488137502335,
+        "top_suffixes": [
+          [
+            "r",
+            9
+          ],
+          [
+            "l",
+            6
+          ],
+          [
+            "m",
+            4
+          ]
+        ]
+      },
+      {
+        "middle": "eee",
+        "total": 19,
+        "by_class": {
+          "M-C": 3,
+          "M-A": 6,
+          "M-B": 7,
+          "M-D": 3
+        },
+        "evenness": 0.94841021822029,
+        "top_suffixes": [
+          [
+            "y",
+            12
+          ],
+          [
+            "s",
+            4
+          ],
+          [
+            "n",
+            2
+          ]
+        ]
+      },
+      {
+        "middle": "cheo",
+        "total": 16,
+        "by_class": {
+          "M-A": 1,
+          "M-D": 7,
+          "M-B": 4,
+          "M-C": 4
+        },
+        "evenness": 0.885891110799899,
+        "top_suffixes": [
+          [
+            "r",
+            8
+          ],
+          [
+            "l",
+            5
+          ],
+          [
+            "dy",
+            2
+          ]
+        ]
+      },
+      {
+        "middle": "sho",
+        "total": 14,
+        "by_class": {
+          "M-B": 7,
+          "M-C": 4,
+          "M-D": 2,
+          "M-A": 1
+        },
+        "evenness": 0.844695873371544,
+        "top_suffixes": [
+          [
+            "",
+            7
+          ],
+          [
+            "l",
+            4
+          ],
+          [
+            "r",
+            2
+          ]
+        ]
+      }
+    ],
+    "ma_dominant": 5,
+    "md_dominant": 2,
+    "balanced": 11
+  },
+  "exclusive_by_class": {
+    "M-A": {
+      "count": 315,
+      "tokens": 613,
+      "top_5": [
+        "to",
+        "tcho",
+        "teo",
+        "ta",
+        "tee"
+      ]
+    },
+    "M-B": {
+      "count": 84,
+      "tokens": 87,
+      "top_5": [
+        "ysho",
+        "oeo",
+        "eeeo",
+        "odar",
+        "eolda"
+      ]
+    },
+    "M-C": {
+      "count": 104,
+      "tokens": 156,
+      "top_5": [
+        "ii",
+        "la",
+        "ir",
+        "ra",
+        "mo"
+      ]
+    },
+    "M-D": {
+      "count": 70,
+      "tokens": 324,
+      "top_5": [
+        "ho",
+        "he",
+        "ha",
+        "heo",
+        "hee"
+      ]
+    }
+  },
+  "property_bridges": {
+    "mobility_bridge": 61,
+    "composition_bridge": 14,
+    "diagonal_bridge": 24,
+    "adjacent_bridge": 0
+  },
+  "inferences": [
+    {
+      "pattern": "universal",
+      "interpretation": "Material-independent apparatus states",
+      "count": 18
+    },
+    {
+      "pattern": "mobility_bridge",
+      "interpretation": "Phase behavior situations",
+      "count": 61
+    },
+    {
+      "pattern": "composition_bridge",
+      "interpretation": "Fractionation behavior situations",
+      "count": 14
+    },
+    {
+      "pattern": "diagonal_bridge",
+      "interpretation": "Property-transcendent apparatus states",
+      "count": 24
+    }
+  ]
+}

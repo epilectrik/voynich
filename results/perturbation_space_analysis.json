@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "date": "2026-01-11",
+    "currier_a_tokens": 11346,
+    "currier_b_tokens": 23195,
+    "core_middles": 30,
+    "tail_middles": 695,
+    "shared_vocabulary": 1141
+  },
+  "test_a_ht_density": {
+    "core_tokens": 10174,
+    "tail_tokens": 3493,
+    "core_ht_rate": 0.1870454098682917,
+    "tail_ht_rate": 0.29544803893501287,
+    "ratio": 1.5795524687991702,
+    "p_value": 3.664311367885373e-41,
+    "confirmed": true
+  },
+  "test_b_recovery": {
+    "core_transitions": 9387,
+    "tail_transitions": 3149,
+    "core_entropy": 4.362123152116484,
+    "tail_entropy": 4.312094104502768,
+    "core_unique": 139,
+    "tail_unique": 104,
+    "entropy_diff": 0.05002904761371596,
+    "p_value": 0.284,
+    "confirmed": false
+  },
+  "test_c_stability": {
+    "core_count": 10174,
+    "tail_count": 3493,
+    "core_mean": 2.1088067623353646,
+    "core_std": 1.5515691757777936,
+    "tail_mean": 2.0518179215574004,
+    "tail_std": 1.523329500569558,
+    "p_value": 0.9952450712682347,
+    "confirmed": false
+  },
+  "synthesis": {
+    "tests_confirmed": 1.0,
+    "core_types": 30,
+    "tail_types": 695,
+    "core_usage_pct": 0.7405640521958748,
+    "tail_usage_pct": 0.25943594780412516,
+    "interpretation": "perturbation_model_limited",
+    "confidence": "low"
+  }
+}

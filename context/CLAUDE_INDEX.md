@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.6 | **Status:** FROZEN | **Constraints:** 299 | **Date:** 2026-01-10
+**Version:** 2.8 | **Status:** FROZEN | **Constraints:** 335 | **Date:** 2026-01-11
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 
@@ -151,9 +151,14 @@ requires explicit authorization from the user.
 | Understand the constraint system | [MODEL_CONTEXT.md](MODEL_CONTEXT.md) → architectural guide (read BEFORE constraints) |
 | Write new analysis safely | [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) |
 | Understand tier definitions | [SYSTEM/TIERS.md](SYSTEM/TIERS.md) |
+| Understand semantic boundaries | [SYSTEM/SEMANTIC_MANIFESTO.md](SYSTEM/SEMANTIC_MANIFESTO.md) |
+| Design external validation | [SYSTEM/EXTERNAL_CORROBORATION.md](SYSTEM/EXTERNAL_CORROBORATION.md) |
 | Check quantitative metrics | [METRICS/](METRICS/) (grammar, hazard, coverage) |
-| See speculative interpretations | [SPECULATIVE/](SPECULATIVE/) (craft, material, process) |
+| See speculative interpretations | [SPECULATIVE/](SPECULATIVE/) (apparatus-centric semantics, CCM, ECR) |
+| Understand apparatus-centric view | [SPECULATIVE/apparatus_centric_semantics.md](SPECULATIVE/apparatus_centric_semantics.md) |
 | Trace constraint to source phase | [MAPS/claim_to_phase.md](MAPS/claim_to_phase.md) |
+| Work with explanatory fits | [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) |
+| Understand fit methodology | [SYSTEM/FIT_METHODOLOGY.md](SYSTEM/FIT_METHODOLOGY.md) |
 
 ---
 
@@ -196,7 +201,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 299 |
+| Validated constraints | 317 |
 | Completed phases | 118 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
@@ -241,6 +246,15 @@ These files are for scripts and validation tools, NOT for reading in full:
 
 - **CONSTRAINT_TABLE.txt** - TSV format for programmatic constraint lookup/validation
 - **generate_constraint_table.py** - Regenerates table from registry files
+- **MODEL_FITS/FIT_TABLE.txt** - TSV format for programmatic fit lookup
+
+### Model Fits (Separate from Constraints)
+
+Fits are explanatory models that account for observed patterns. They do NOT constrain the model.
+
+- **Fits explain. Constraints bind.** See [SYSTEM/FIT_METHODOLOGY.md](SYSTEM/FIT_METHODOLOGY.md)
+- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (11 fits logged)
+- **Cross-reference:** [MAPS/fit_to_constraint.md](MAPS/fit_to_constraint.md)
 
 ---
 
@@ -272,4 +286,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v1.4 | Project v1.8 FROZEN STATE | STRUCTURE_FREEZE_v1 | 2026-01-09*
+*Context System v1.5 | Project v1.8 FROZEN STATE | STRUCTURE_FREEZE_v1 | 2026-01-10*

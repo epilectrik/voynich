@@ -293,7 +293,7 @@ Before running new analysis:
    ```bash
    python context/generate_constraint_table.py
    ```
-   This parses all registry files and outputs `CONSTRAINT_TABLE.txt` (299 constraints).
+   This parses all registry files and outputs `CONSTRAINT_TABLE.txt`.
 
 4. **Update INDEX.md** if adding a representative constraint to a category table.
 
@@ -365,6 +365,18 @@ These require external evidence and belong to Tier 3+.
 
 ---
 
+## Related: Fit System
+
+For logging explanatory models (fits), see [FIT_METHODOLOGY.md](FIT_METHODOLOGY.md).
+
+Key distinction:
+- **Constraints** (this document): Structural claims that bind behavior
+- **Fits** (FIT_METHODOLOGY.md): Explanatory models that demonstrate sufficiency
+
+Fits explain. Constraints bind. Never confuse the two.
+
+---
+
 ## Navigation
 
-← [STOP_CONDITIONS.md](STOP_CONDITIONS.md) | [HOW_TO_READ.md](HOW_TO_READ.md) →
+← [STOP_CONDITIONS.md](STOP_CONDITIONS.md) | [FIT_METHODOLOGY.md](FIT_METHODOLOGY.md) | [HOW_TO_READ.md](HOW_TO_READ.md) →

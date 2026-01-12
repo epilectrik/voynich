@@ -1,0 +1,183 @@
+{
+  "test_id": "EFFICIENCY_REGIME_TEST_4",
+  "question": "Do Universal MIDDLEs (C462) show AZC family bias?",
+  "prediction": "Universal MIDDLEs should show no family bias (near 50/50)",
+  "classification": {
+    "universal": 31,
+    "bridging": 182,
+    "exclusive": 844
+  },
+  "distributions": {
+    "universal": {
+      "n_middles": 31,
+      "n_middles_in_azc": 31,
+      "total_tokens": 2528,
+      "ac_count": 1454,
+      "zodiac_count": 1074,
+      "ac_fraction": 0.575,
+      "zodiac_fraction": 0.425,
+      "mean_middle_ac_bias": 0.587,
+      "std_middle_ac_bias": 0.21,
+      "per_middle": {
+        "y": {
+          "ac": 140,
+          "zodiac": 87
+        },
+        "ar": {
+          "ac": 104,
+          "zodiac": 84
+        },
+        "o": {
+          "ac": 296,
+          "zodiac": 134
+        },
+        "d": {
+          "ac": 39,
+          "zodiac": 29
+        },
+        "e": {
+          "ac": 184,
+          "zodiac": 118
+        },
+        "s": {
+          "ac": 71,
+          "zodiac": 31
+        },
+        "a": {
+          "ac": 113,
+          "zodiac": 152
+        },
+        "r": {
+          "ac": 108,
+          "zodiac": 63
+        },
+        "ch": {
+          "ac": 58,
+          "zodiac": 23
+        },
+        "k": {
+          "ac": 11,
+          "zodiac": 17
+        }
+      }
+    },
+    "bridging": {
+      "n_middles": 182,
+      "n_middles_in_azc": 118,
+      "total_tokens": 2182,
+      "ac_count": 1390,
+      "zodiac_count": 792,
+      "ac_fraction": 0.637,
+      "zodiac_fraction": 0.363,
+      "mean_middle_ac_bias": 0.64,
+      "std_middle_ac_bias": 0.314,
+      "per_middle": {
+        "sa": {
+          "ac": 1,
+          "zodiac": 3
+        },
+        "l": {
+          "ac": 106,
+          "zodiac": 63
+        },
+        "ee": {
+          "ac": 164,
+          "zodiac": 120
+        },
+        "eo": {
+          "ac": 247,
+          "zodiac": 160
+        },
+        "ka": {
+          "ac": 36,
+          "zodiac": 6
+        },
+        "kea": {
+          "ac": 0,
+          "zodiac": 3
+        },
+        "ld": {
+          "ac": 0,
+          "zodiac": 1
+        },
+        "t": {
+          "ac": 0,
+          "zodiac": 13
+        },
+        "n": {
+          "ac": 0,
+          "zodiac": 3
+        },
+        "i": {
+          "ac": 148,
+          "zodiac": 38
+        }
+      }
+    },
+    "exclusive": {
+      "n_middles": 844,
+      "n_middles_in_azc": 164,
+      "total_tokens": 904,
+      "ac_count": 592,
+      "zodiac_count": 312,
+      "ac_fraction": 0.655,
+      "zodiac_fraction": 0.345,
+      "mean_middle_ac_bias": 0.648,
+      "std_middle_ac_bias": 0.354,
+      "per_middle": {
+        "iro": {
+          "ac": 0,
+          "zodiac": 2
+        },
+        "ira": {
+          "ac": 5,
+          "zodiac": 1
+        },
+        "lg": {
+          "ac": 0,
+          "zodiac": 1
+        },
+        "fo": {
+          "ac": 0,
+          "zodiac": 1
+        },
+        "ii": {
+          "ac": 27,
+          "zodiac": 6
+        },
+        "dy": {
+          "ac": 78,
+          "zodiac": 24
+        },
+        "ra": {
+          "ac": 4,
+          "zodiac": 6
+        },
+        "f": {
+          "ac": 3,
+          "zodiac": 9
+        },
+        "m": {
+          "ac": 26,
+          "zodiac": 8
+        },
+        "rar": {
+          "ac": 3,
+          "zodiac": 4
+        }
+      }
+    }
+  },
+  "analysis": {
+    "universal_ac_bias": 0.587,
+    "exclusive_ac_bias": 0.648,
+    "bias_difference": 0.061,
+    "universal_is_balanced": true,
+    "exclusive_is_biased": true,
+    "hierarchy_preserved": true
+  },
+  "verdict": {
+    "overall": "NEGATIVE_CONTROL_PASSED",
+    "interpretation": "Universal MIDDLEs are regime-neutral; Exclusive MIDDLEs show regime bias"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "sanity_check_1_jitter": {
+    "baseline_clusters": 5,
+    "baseline_variance": 18.13,
+    "mean_jittered_clusters": 5.0,
+    "mean_jittered_variance": 18.13,
+    "cluster_stable": true,
+    "variance_stable": true,
+    "passed": true
+  },
+  "sanity_check_2_heatmap": {
+    "folios": [
+      {
+        "folio": "f116v",
+        "family": "NON-ZODIAC",
+        "token_count": 2,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f57v",
+        "family": "NON-ZODIAC",
+        "token_count": 411,
+        "escape_rate": 0.73
+      },
+      {
+        "folio": "f65r",
+        "family": "NON-ZODIAC",
+        "token_count": 6,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f65v",
+        "family": "NON-ZODIAC",
+        "token_count": 121,
+        "escape_rate": 9.92
+      },
+      {
+        "folio": "f67r1",
+        "family": "ZODIAC",
+        "token_count": 412,
+        "escape_rate": 1.46
+      },
+      {
+        "folio": "f67r2",
+        "family": "ZODIAC",
+        "token_count": 596,
+        "escape_rate": 5.37
+      },
+      {
+        "folio": "f67v1",
+        "family": "ZODIAC",
+        "token_count": 213,
+        "escape_rate": 4.23
+      },
+      {
+        "folio": "f67v2",
+        "family": "ZODIAC",
+        "token_count": 209,
+        "escape_rate": 1.91
+      },
+      {
+        "folio": "f68r1",
+        "family": "ZODIAC",
+        "token_count": 224,
+        "escape_rate": 3.57
+      },
+      {
+        "folio": "f68r2",
+        "family": "ZODIAC",
+        "token_count": 302,
+        "escape_rate": 6.29
+      },
+      {
+        "folio": "f68r3",
+        "family": "ZODIAC",
+        "token_count": 296,
+        "escape_rate": 8.45
+      },
+      {
+        "folio": "f68v1",
+        "family": "ZODIAC",
+        "token_count": 283,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f68v2",
+        "family": "ZODIAC",
+        "token_count": 389,
+        "escape_rate": 4.37
+      },
+      {
+        "folio": "f68v3",
+        "family": "ZODIAC",
+        "token_count": 512,
+        "escape_rate": 6.64
+      },
+      {
+        "folio": "f69r",
+        "family": "ZODIAC",
+        "token_count": 500,
+        "escape_rate": 1.8
+      },
+      {
+        "folio": "f69v",
+        "family": "ZODIAC",
+        "token_count": 407,
+        "escape_rate": 1.47
+      },
+      {
+        "folio": "f70r1",
+        "family": "ZODIAC",
+        "token_count": 320,
+        "escape_rate": 0.94
+      },
+      {
+        "folio": "f70r2",
+        "family": "ZODIAC",
+        "token_count": 815,
+        "escape_rate": 3.19
+      },
+      {
+        "folio": "f70v1",
+        "family": "ZODIAC",
+        "token_count": 222,
+        "escape_rate": 0.9
+      },
+      {
+        "folio": "f70v2",
+        "family": "ZODIAC",
+        "token_count": 516,
+        "escape_rate": 0.58
+      },
+      {
+        "folio": "f71r",
+        "family": "ZODIAC",
+        "token_count": 197,
+        "escape_rate": 0.51
+      },
+      {
+        "folio": "f71v",
+        "family": "ZODIAC",
+        "token_count": 231,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f72r1",
+        "family": "ZODIAC",
+        "token_count": 233,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f72r2",
+        "family": "ZODIAC",
+        "token_count": 237,
+        "escape_rate": 2.11
+      },
+      {
+        "folio": "f72r3",
+        "family": "ZODIAC",
+        "token_count": 273,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f72v1",
+        "family": "ZODIAC",
+        "token_count": 186,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f72v2",
+        "family": "ZODIAC",
+        "token_count": 222,
+        "escape_rate": 0.9
+      },
+      {
+        "folio": "f72v3",
+        "family": "ZODIAC",
+        "token_count": 235,
+        "escape_rate": 0.0
+      },
+      {
+        "folio": "f73r",
+        "family": "ZODIAC",
+        "token_count": 189,
+        "escape_rate": 1.06
+      },
+      {
+        "folio": "f73v",
+        "family": "ZODIAC",
+        "token_count": 216,
+        "escape_rate": 6.94
+      },
+      {
+        "folio": "f85r2",
+        "family": "NON-ZODIAC",
+        "token_count": 290,
+        "escape_rate": 13.45
+      },
+      {
+        "folio": "f85v2",
+        "family": "NON-ZODIAC",
+        "token_count": 343,
+        "escape_rate": 0.87
+      },
+      {
+        "folio": "f86v3",
+        "family": "NON-ZODIAC",
+        "token_count": 770,
+        "escape_rate": 15.06
+      },
+      {
+        "folio": "f86v4",
+        "family": "NON-ZODIAC",
+        "token_count": 420,
+        "escape_rate": 8.57
+      },
+      {
+        "folio": "f86v5",
+        "family": "NON-ZODIAC",
+        "token_count": 800,
+        "escape_rate": 9.38
+      },
+      {
+        "folio": "f86v6",
+        "family": "NON-ZODIAC",
+        "token_count": 965,
+        "escape_rate": 18.13
+      }
+    ],
+    "zodiac_mean": 2.41,
+    "nonzodiac_mean": 7.61,
+    "zodiac_count": 26,
+    "nonzodiac_count": 10
+  },
+  "overall_passed": true,
+  "summary": {
+    "jitter_stable": true,
+    "zodiac_mean_escape": 2.41,
+    "nonzodiac_mean_escape": 7.61,
+    "family_difference": 5.2
+  }
+}

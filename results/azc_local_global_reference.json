@@ -1,0 +1,107 @@
+{
+  "fit_id": "F-AZC-009",
+  "semantic_frame": "C = local (AZC-specific), S = global (cross-system)",
+  "tier": 3,
+  "pre_registered_predictions": [
+    "P1: AZC endemicity C > S",
+    "P2: Cross-system persistence S > C",
+    "P3: Global reusability S-types > C-types",
+    "P4: Family invariance (same pattern in both families)"
+  ],
+  "success_criterion": ">= 3 of 4 predictions met",
+  "metadata": {
+    "a_tokens": 37214,
+    "b_tokens": 75545,
+    "azc_tokens": 9401,
+    "unique_types": 12361
+  },
+  "overall": {
+    "c_types": 1035,
+    "s_types": 633,
+    "endemicity": {
+      "c_rate": 47.0,
+      "s_rate": 46.0,
+      "c_higher": true,
+      "fisher_p": 0.723357,
+      "significant": false
+    },
+    "cross_system": {
+      "c_rate": 53.0,
+      "s_rate": 54.0,
+      "s_higher": true,
+      "fisher_p": 0.723357,
+      "significant": false
+    },
+    "global_reusability": {
+      "c_avg": 1.883,
+      "s_avg": 1.886,
+      "s_higher": true,
+      "mann_whitney_p": 0.916146,
+      "significant": false
+    }
+  },
+  "ac_family": {
+    "c_types": 649,
+    "s_types": 225,
+    "endemicity": {
+      "c_rate": 42.4,
+      "s_rate": 46.7,
+      "c_higher": false,
+      "fisher_p": 0.275167,
+      "significant": false
+    },
+    "cross_system": {
+      "c_rate": 57.6,
+      "s_rate": 53.3,
+      "s_higher": false,
+      "fisher_p": 0.275167,
+      "significant": false
+    },
+    "global_reusability": {
+      "c_avg": 1.983,
+      "s_avg": 1.911,
+      "s_higher": false,
+      "mann_whitney_p": 0.305888,
+      "significant": false
+    }
+  },
+  "zodiac_family": {
+    "c_types": 508,
+    "s_types": 442,
+    "endemicity": {
+      "c_rate": 41.9,
+      "s_rate": 42.3,
+      "c_higher": false,
+      "fisher_p": 0.947489,
+      "significant": false
+    },
+    "cross_system": {
+      "c_rate": 58.1,
+      "s_rate": 57.7,
+      "s_higher": false,
+      "fisher_p": 0.947489,
+      "significant": false
+    },
+    "global_reusability": {
+      "c_avg": 2.006,
+      "s_avg": 1.952,
+      "s_higher": false,
+      "mann_whitney_p": 0.37231,
+      "significant": false
+    }
+  },
+  "predictions": {
+    "p1_endemicity": false,
+    "p2_cross_system": false,
+    "p3_reusability": false,
+    "p4_invariance": true
+  },
+  "predictions_met": 1,
+  "interpretation": {
+    "conclusion": "WEAK SUPPORT for local/global partition",
+    "interpretation": "Partial asymmetry in reference scope",
+    "fit_tier": "F4",
+    "frame_status": "NOTED but not promoted"
+  },
+  "stop_condition": "AZC semantic exploration is COMPLETE after this test"
+}

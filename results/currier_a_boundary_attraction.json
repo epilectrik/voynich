@@ -1,0 +1,69 @@
+{
+  "fit_id": "F-A-007",
+  "fit_name": "Forbidden-Zone Attraction",
+  "fit_tier": "F1",
+  "result": "NULL",
+  "date": "2026-01-10",
+  "legality_summary": {
+    "total_legal_pairs": 1194,
+    "total_middles": 824,
+    "exclusive_middles": 621,
+    "shared_middles": 191,
+    "universal_middles": 12
+  },
+  "boundary_distances": {
+    "observed_mean": 0.591401940270108,
+    "random_mean": 0.17639767560304637,
+    "interior_mean": 0.5672191302533635,
+    "difference_obs_rand": 0.4150042646670616
+  },
+  "statistical_tests": {
+    "obs_vs_random": {
+      "u": 97095984.5,
+      "p": 0.0
+    },
+    "obs_vs_interior": {
+      "u": 251449674.5,
+      "p": 0.0
+    }
+  },
+  "section_results": {
+    "H": {
+      "n": 16789,
+      "mean_obs": 0.5931094338980281,
+      "mean_rand": 0.1734809356466448,
+      "diff": 0.41962849825138326,
+      "u": 50334559.5,
+      "p": 0.0
+    },
+    "P": {
+      "n": 4975,
+      "mean_obs": 0.5806748025843583,
+      "mean_rand": 0.179583632447954,
+      "diff": 0.40109117013640433,
+      "u": 4426494.5,
+      "p": 0.0
+    },
+    "T": {
+      "n": 1517,
+      "mean_obs": 0.6076843393916546,
+      "mean_rand": 0.17289763631226995,
+      "diff": 0.4347867030793846,
+      "u": 392656.5,
+      "p": 0.0
+    }
+  },
+  "exclusivity_breakdown": {
+    "observed_exclusive_rate": 0.0780464756668528,
+    "random_exclusive_rate": 0.5299170997809373,
+    "observed_universal_rate": 0.4818521541170912,
+    "random_universal_rate": 0.07813238262961213
+  },
+  "criteria_check": {
+    "has_overall_attraction": false,
+    "has_section_robustness": false
+  },
+  "interpretation": "No attraction: registry samples control space broadly, not frontier-biased.",
+  "supports_constraints": [],
+  "introduces_new_constraints": false
+}

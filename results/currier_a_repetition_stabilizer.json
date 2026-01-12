@@ -1,0 +1,54 @@
+{
+  "fit_id": "F-A-008",
+  "fit_name": "Repetition as Relational Stabilizer",
+  "fit_tier": "F1",
+  "result": "NULL",
+  "date": "2026-01-10",
+  "entry_summary": {
+    "total_entries": 1501,
+    "universal": 420,
+    "mixed": 570,
+    "shared": 466,
+    "exclusive": 45
+  },
+  "repetition_by_class": {
+    "universal": {
+      "n": 420,
+      "mean": 2.164285714285714,
+      "rep_rate": 0.6619047619047619
+    },
+    "exclusive": {
+      "n": 45,
+      "mean": 1.9777777777777779,
+      "rep_rate": 0.6
+    }
+  },
+  "primary_test": {
+    "universal_mean": 2.164285714285714,
+    "exclusive_mean": 1.9777777777777779,
+    "difference": 0.1865079365079363,
+    "p_value": 0.19812856700100756
+  },
+  "correlation": {
+    "rho": -0.005753433796022359,
+    "p": 0.8237231333539365
+  },
+  "section_results": {
+    "H": {
+      "n_universal": 294,
+      "n_exclusive": 40,
+      "mean_universal": 2.2312925170068025,
+      "mean_exclusive": 1.85,
+      "diff": 0.38129251700680244,
+      "p": 0.038707633961528654
+    }
+  },
+  "criteria_check": {
+    "primary_effect": false,
+    "opposite_effect": false,
+    "significant_sections": 1
+  },
+  "interpretation": "No effect: Relationality enforced through selection only, not repetition.",
+  "supports_constraints": [],
+  "introduces_new_constraints": false
+}

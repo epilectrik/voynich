@@ -1,0 +1,113 @@
+{
+  "observed_distribution": {
+    "2": 416,
+    "1": 567,
+    "5": 20,
+    "6": 5,
+    "4": 148,
+    "3": 424
+  },
+  "observed_mode": 1,
+  "repetition_rate": 0.6411392405063291,
+  "mean_among_repeaters": 2.7897334649555776,
+  "model_results": [
+    {
+      "name": "Poisson (shifted)",
+      "params": {
+        "lambda": 1.1474683544303796
+      },
+      "kl_divergence": 0.04499520459173444,
+      "chi_square": 91.7068642560554,
+      "df": 5,
+      "p_value": 1.2192912311540858e-20,
+      "model_mode": 2,
+      "kl_pass": true,
+      "chi_pass": false,
+      "mode_pass": false,
+      "all_pass": false,
+      "model_distribution": {
+        "1": 0.31750036969221174,
+        "2": 0.3643216267417594,
+        "3": 0.20902376876038284,
+        "4": 0.0799493866587709,
+        "5": 0.0229348477867645,
+        "6": 0.005263402409797978,
+        "7": 0.0010065979503126304
+      }
+    },
+    {
+      "name": "Geometric",
+      "params": {
+        "p": 0.4656646035956381
+      },
+      "kl_divergence": 0.14926370733576783,
+      "chi_square": 314.12897792525837,
+      "df": 5,
+      "p_value": 6.134217075476289e-69,
+      "model_mode": 1,
+      "kl_pass": false,
+      "chi_pass": false,
+      "mode_pass": false,
+      "all_pass": false,
+      "model_distribution": {
+        "1": 0.4715287634597175,
+        "2": 0.25195450873930675,
+        "3": 0.13462821230308372,
+        "4": 0.07193661918817884,
+        "5": 0.038438281929905165,
+        "6": 0.0205389346121185,
+        "7": 0.010974679767689607
+      }
+    },
+    {
+      "name": "Truncated Geometric (max=6)",
+      "params": {
+        "p": 0.4656646035956381,
+        "max": 6
+      },
+      "kl_divergence": 0.13334306862590245,
+      "chi_square": 310.49121210509173,
+      "df": 5,
+      "p_value": 3.781725061668686e-68,
+      "model_mode": 1,
+      "kl_pass": false,
+      "chi_pass": false,
+      "mode_pass": false,
+      "all_pass": false,
+      "model_distribution": {
+        "1": 0.4767610634568597,
+        "2": 0.2547503118323862,
+        "3": 0.13612210885709292,
+        "4": 0.07273486099555244,
+        "5": 0.038864810782474675,
+        "6": 0.020766844075634127
+      }
+    },
+    {
+      "name": "Binomial (n=6)",
+      "params": {
+        "n": 6,
+        "p": 0.22949367088607592
+      },
+      "kl_divergence": 0.06944198912373797,
+      "chi_square": 154.1036129153079,
+      "df": 5,
+      "p_value": 3.44211705186158e-34,
+      "model_mode": 2,
+      "kl_pass": false,
+      "chi_pass": false,
+      "mode_pass": false,
+      "all_pass": false,
+      "model_distribution": {
+        "1": 0.2715695372848133,
+        "2": 0.4044320446010897,
+        "3": 0.24091844812281105,
+        "4": 0.07175704722304195,
+        "5": 0.01068634192667776,
+        "6": 0.0006365808415661829
+      }
+    }
+  ],
+  "best_model": "Poisson (shifted)",
+  "any_model_passes": false
+}

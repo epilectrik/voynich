@@ -1,0 +1,1901 @@
+{
+  "summary": {
+    "a_types_in_azc": 973,
+    "a_occurrences_in_azc": 8574,
+    "placement_distribution": {
+      "T": 22,
+      "R1": 656,
+      "R2": 517,
+      "R3": 320,
+      "R4": 77,
+      "Y": 204,
+      "L": 126,
+      "P": 2674,
+      "R": 412,
+      "S": 240,
+      "C": 1468,
+      "X": 112,
+      "Z": 15,
+      "F": 2,
+      "U": 12,
+      "C1": 105,
+      "C2": 75,
+      "O": 105,
+      "I": 63,
+      "B": 19,
+      "W": 15,
+      "S2": 260,
+      "S1": 305,
+      "S3": 6,
+      "S0": 16,
+      "W1": 2,
+      "V1": 22,
+      "U1": 5,
+      "V2": 26,
+      "U2": 10,
+      "U3": 7,
+      "N1": 14,
+      "M1": 6,
+      "N2": 27,
+      "M2": 24,
+      "M3": 1,
+      "B1": 24,
+      "D1": 5,
+      "B2": 2,
+      "B3": 1,
+      "P1": 168,
+      "P2": 81,
+      "P3": 73,
+      "P4": 93,
+      "Q": 157
+    }
+  },
+  "morphology_by_placement": {
+    "B": {
+      "token_count": 19,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "d",
+          10
+        ],
+        [
+          "y",
+          6
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "l",
+          6
+        ],
+        [
+          "y",
+          6
+        ],
+        [
+          "r",
+          4
+        ]
+      ],
+      "unique_types": 8
+    },
+    "B1": {
+      "token_count": 24,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ot",
+          7
+        ],
+        [
+          "d",
+          5
+        ],
+        [
+          "ok",
+          4
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "o",
+          1
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "r",
+          4
+        ],
+        [
+          "dy",
+          3
+        ],
+        [
+          "y",
+          3
+        ],
+        [
+          "m",
+          1
+        ],
+        [
+          "in",
+          1
+        ]
+      ],
+      "unique_types": 16
+    },
+    "C": {
+      "token_count": 1468,
+      "escape_rate": 1.36,
+      "top_prefixes": [
+        [
+          "ch",
+          267
+        ],
+        [
+          "d",
+          232
+        ],
+        [
+          "ot",
+          145
+        ],
+        [
+          "ok",
+          121
+        ],
+        [
+          "a",
+          106
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          284
+        ],
+        [
+          "r",
+          261
+        ],
+        [
+          "l",
+          160
+        ],
+        [
+          "dy",
+          119
+        ],
+        [
+          "s",
+          83
+        ]
+      ],
+      "unique_types": 312
+    },
+    "C1": {
+      "token_count": 105,
+      "escape_rate": 3.81,
+      "top_prefixes": [
+        [
+          "ot",
+          28
+        ],
+        [
+          "ch",
+          26
+        ],
+        [
+          "d",
+          13
+        ],
+        [
+          "o",
+          9
+        ],
+        [
+          "ok",
+          5
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "dy",
+          28
+        ],
+        [
+          "l",
+          14
+        ],
+        [
+          "r",
+          13
+        ],
+        [
+          "y",
+          10
+        ],
+        [
+          "aiin",
+          9
+        ]
+      ],
+      "unique_types": 49
+    },
+    "C2": {
+      "token_count": 75,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          11
+        ],
+        [
+          "ch",
+          10
+        ],
+        [
+          "ol",
+          8
+        ],
+        [
+          "o",
+          8
+        ],
+        [
+          "a",
+          7
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "l",
+          12
+        ],
+        [
+          "r",
+          11
+        ],
+        [
+          "dy",
+          9
+        ],
+        [
+          "y",
+          6
+        ],
+        [
+          "aiin",
+          6
+        ]
+      ],
+      "unique_types": 39
+    },
+    "I": {
+      "token_count": 63,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ot",
+          15
+        ],
+        [
+          "ol",
+          9
+        ],
+        [
+          "ok",
+          6
+        ],
+        [
+          "ch",
+          6
+        ],
+        [
+          "al",
+          5
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "l",
+          14
+        ],
+        [
+          "y",
+          10
+        ],
+        [
+          "r",
+          6
+        ],
+        [
+          "s",
+          4
+        ],
+        [
+          "dy",
+          2
+        ]
+      ],
+      "unique_types": 31
+    },
+    "L": {
+      "token_count": 126,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          55
+        ],
+        [
+          "ot",
+          10
+        ],
+        [
+          "y",
+          9
+        ],
+        [
+          "s",
+          9
+        ],
+        [
+          "d",
+          8
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          23
+        ],
+        [
+          "l",
+          20
+        ],
+        [
+          "dy",
+          15
+        ],
+        [
+          "r",
+          10
+        ],
+        [
+          "m",
+          4
+        ]
+      ],
+      "unique_types": 46
+    },
+    "M2": {
+      "token_count": 24,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "o",
+          7
+        ],
+        [
+          "d",
+          5
+        ],
+        [
+          "ot",
+          3
+        ],
+        [
+          "ch",
+          2
+        ],
+        [
+          "ol",
+          2
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "l",
+          7
+        ],
+        [
+          "y",
+          6
+        ],
+        [
+          "dy",
+          5
+        ],
+        [
+          "r",
+          3
+        ]
+      ],
+      "unique_types": 16
+    },
+    "N1": {
+      "token_count": 14,
+      "escape_rate": 7.14,
+      "top_prefixes": [
+        [
+          "ot",
+          4
+        ],
+        [
+          "or",
+          3
+        ],
+        [
+          "d",
+          1
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "ol",
+          1
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "r",
+          3
+        ],
+        [
+          "l",
+          2
+        ],
+        [
+          "n",
+          1
+        ],
+        [
+          "iin",
+          1
+        ],
+        [
+          "y",
+          1
+        ]
+      ],
+      "unique_types": 13
+    },
+    "N2": {
+      "token_count": 27,
+      "escape_rate": 3.7,
+      "top_prefixes": [
+        [
+          "ok",
+          5
+        ],
+        [
+          "ol",
+          5
+        ],
+        [
+          "or",
+          3
+        ],
+        [
+          "o",
+          2
+        ],
+        [
+          "sh",
+          1
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "r",
+          5
+        ],
+        [
+          "iin",
+          3
+        ],
+        [
+          "aiin",
+          1
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "l",
+          1
+        ]
+      ],
+      "unique_types": 21
+    },
+    "O": {
+      "token_count": 105,
+      "escape_rate": 2.86,
+      "top_prefixes": [
+        [
+          "d",
+          24
+        ],
+        [
+          "ot",
+          22
+        ],
+        [
+          "ch",
+          17
+        ],
+        [
+          "ok",
+          11
+        ],
+        [
+          "s",
+          5
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          30
+        ],
+        [
+          "l",
+          25
+        ],
+        [
+          "r",
+          13
+        ],
+        [
+          "dy",
+          8
+        ],
+        [
+          "s",
+          5
+        ]
+      ],
+      "unique_types": 44
+    },
+    "P": {
+      "token_count": 2674,
+      "escape_rate": 11.59,
+      "top_prefixes": [
+        [
+          "ch",
+          348
+        ],
+        [
+          "qo",
+          310
+        ],
+        [
+          "sh",
+          286
+        ],
+        [
+          "d",
+          259
+        ],
+        [
+          "y",
+          237
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          614
+        ],
+        [
+          "r",
+          414
+        ],
+        [
+          "l",
+          373
+        ],
+        [
+          "aiin",
+          200
+        ],
+        [
+          "dy",
+          192
+        ]
+      ],
+      "unique_types": 463
+    },
+    "P1": {
+      "token_count": 168,
+      "escape_rate": 13.69,
+      "top_prefixes": [
+        [
+          "y",
+          50
+        ],
+        [
+          "qo",
+          23
+        ],
+        [
+          "a",
+          19
+        ],
+        [
+          "ot",
+          14
+        ],
+        [
+          "ch",
+          11
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "aiin",
+          51
+        ],
+        [
+          "in",
+          28
+        ],
+        [
+          "y",
+          27
+        ],
+        [
+          "r",
+          18
+        ],
+        [
+          "m",
+          10
+        ]
+      ],
+      "unique_types": 41
+    },
+    "P2": {
+      "token_count": 81,
+      "escape_rate": 24.69,
+      "top_prefixes": [
+        [
+          "qo",
+          20
+        ],
+        [
+          "ot",
+          18
+        ],
+        [
+          "y",
+          11
+        ],
+        [
+          "sh",
+          10
+        ],
+        [
+          "ch",
+          6
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          35
+        ],
+        [
+          "aiin",
+          12
+        ],
+        [
+          "dy",
+          8
+        ],
+        [
+          "r",
+          8
+        ],
+        [
+          "iin",
+          8
+        ]
+      ],
+      "unique_types": 35
+    },
+    "P3": {
+      "token_count": 73,
+      "escape_rate": 21.92,
+      "top_prefixes": [
+        [
+          "qo",
+          16
+        ],
+        [
+          "ch",
+          13
+        ],
+        [
+          "y",
+          9
+        ],
+        [
+          "d",
+          8
+        ],
+        [
+          "a",
+          8
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          20
+        ],
+        [
+          "dy",
+          11
+        ],
+        [
+          "r",
+          8
+        ],
+        [
+          "iin",
+          6
+        ],
+        [
+          "aiin",
+          5
+        ]
+      ],
+      "unique_types": 31
+    },
+    "P4": {
+      "token_count": 93,
+      "escape_rate": 11.83,
+      "top_prefixes": [
+        [
+          "sh",
+          15
+        ],
+        [
+          "ch",
+          12
+        ],
+        [
+          "qo",
+          11
+        ],
+        [
+          "y",
+          10
+        ],
+        [
+          "ot",
+          8
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          26
+        ],
+        [
+          "dy",
+          18
+        ],
+        [
+          "aiin",
+          13
+        ],
+        [
+          "r",
+          7
+        ],
+        [
+          "in",
+          6
+        ]
+      ],
+      "unique_types": 48
+    },
+    "Q": {
+      "token_count": 157,
+      "escape_rate": 11.46,
+      "top_prefixes": [
+        [
+          "d",
+          31
+        ],
+        [
+          "qo",
+          18
+        ],
+        [
+          "ch",
+          17
+        ],
+        [
+          "sh",
+          16
+        ],
+        [
+          "y",
+          13
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          31
+        ],
+        [
+          "l",
+          30
+        ],
+        [
+          "dy",
+          27
+        ],
+        [
+          "r",
+          20
+        ],
+        [
+          "in",
+          9
+        ]
+      ],
+      "unique_types": 45
+    },
+    "R": {
+      "token_count": 412,
+      "escape_rate": 4.85,
+      "top_prefixes": [
+        [
+          "d",
+          94
+        ],
+        [
+          "ch",
+          58
+        ],
+        [
+          "ot",
+          53
+        ],
+        [
+          "ok",
+          49
+        ],
+        [
+          "ar",
+          25
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          99
+        ],
+        [
+          "r",
+          92
+        ],
+        [
+          "l",
+          47
+        ],
+        [
+          "dy",
+          29
+        ],
+        [
+          "s",
+          15
+        ]
+      ],
+      "unique_types": 138
+    },
+    "R1": {
+      "token_count": 656,
+      "escape_rate": 1.98,
+      "top_prefixes": [
+        [
+          "ot",
+          119
+        ],
+        [
+          "ch",
+          94
+        ],
+        [
+          "ok",
+          65
+        ],
+        [
+          "d",
+          48
+        ],
+        [
+          "sh",
+          44
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          129
+        ],
+        [
+          "l",
+          89
+        ],
+        [
+          "r",
+          73
+        ],
+        [
+          "dy",
+          49
+        ],
+        [
+          "s",
+          42
+        ]
+      ],
+      "unique_types": 220
+    },
+    "R2": {
+      "token_count": 517,
+      "escape_rate": 1.16,
+      "top_prefixes": [
+        [
+          "ot",
+          110
+        ],
+        [
+          "ch",
+          73
+        ],
+        [
+          "ok",
+          50
+        ],
+        [
+          "d",
+          40
+        ],
+        [
+          "sh",
+          39
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          113
+        ],
+        [
+          "l",
+          67
+        ],
+        [
+          "r",
+          55
+        ],
+        [
+          "dy",
+          42
+        ],
+        [
+          "iin",
+          22
+        ]
+      ],
+      "unique_types": 175
+    },
+    "R3": {
+      "token_count": 320,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ot",
+          60
+        ],
+        [
+          "ch",
+          49
+        ],
+        [
+          "d",
+          29
+        ],
+        [
+          "ok",
+          29
+        ],
+        [
+          "sh",
+          21
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          61
+        ],
+        [
+          "l",
+          50
+        ],
+        [
+          "r",
+          40
+        ],
+        [
+          "iin",
+          22
+        ],
+        [
+          "in",
+          18
+        ]
+      ],
+      "unique_types": 125
+    },
+    "R4": {
+      "token_count": 77,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "a",
+          5
+        ],
+        [
+          "ot",
+          4
+        ],
+        [
+          "ar",
+          3
+        ],
+        [
+          "sh",
+          2
+        ],
+        [
+          "ok",
+          2
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "in",
+          5
+        ],
+        [
+          "r",
+          5
+        ],
+        [
+          "y",
+          3
+        ],
+        [
+          "dy",
+          3
+        ],
+        [
+          "iin",
+          3
+        ]
+      ],
+      "unique_types": 23
+    },
+    "S": {
+      "token_count": 240,
+      "escape_rate": 3.75,
+      "top_prefixes": [
+        [
+          "ch",
+          44
+        ],
+        [
+          "ok",
+          40
+        ],
+        [
+          "ot",
+          29
+        ],
+        [
+          "o",
+          24
+        ],
+        [
+          "d",
+          20
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          67
+        ],
+        [
+          "dy",
+          45
+        ],
+        [
+          "r",
+          43
+        ],
+        [
+          "l",
+          30
+        ],
+        [
+          "aiin",
+          6
+        ]
+      ],
+      "unique_types": 96
+    },
+    "S0": {
+      "token_count": 16,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ot",
+          6
+        ],
+        [
+          "ch",
+          5
+        ],
+        [
+          "ok",
+          3
+        ],
+        [
+          "y",
+          2
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "dy",
+          10
+        ],
+        [
+          "y",
+          4
+        ],
+        [
+          "l",
+          2
+        ]
+      ],
+      "unique_types": 10
+    },
+    "S1": {
+      "token_count": 305,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          74
+        ],
+        [
+          "ot",
+          69
+        ],
+        [
+          "ar",
+          23
+        ],
+        [
+          "o",
+          23
+        ],
+        [
+          "y",
+          23
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          65
+        ],
+        [
+          "l",
+          39
+        ],
+        [
+          "r",
+          39
+        ],
+        [
+          "dy",
+          37
+        ],
+        [
+          "iin",
+          22
+        ]
+      ],
+      "unique_types": 115
+    },
+    "S2": {
+      "token_count": 260,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ot",
+          82
+        ],
+        [
+          "ok",
+          73
+        ],
+        [
+          "o",
+          17
+        ],
+        [
+          "y",
+          14
+        ],
+        [
+          "ch",
+          13
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          63
+        ],
+        [
+          "l",
+          50
+        ],
+        [
+          "r",
+          34
+        ],
+        [
+          "dy",
+          21
+        ],
+        [
+          "m",
+          10
+        ]
+      ],
+      "unique_types": 79
+    },
+    "T": {
+      "token_count": 22,
+      "escape_rate": 9.09,
+      "top_prefixes": [
+        [
+          "d",
+          9
+        ],
+        [
+          "ol",
+          5
+        ],
+        [
+          "y",
+          2
+        ],
+        [
+          "ch",
+          2
+        ],
+        [
+          "qo",
+          2
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          6
+        ],
+        [
+          "r",
+          4
+        ],
+        [
+          "dy",
+          4
+        ],
+        [
+          "l",
+          3
+        ]
+      ],
+      "unique_types": 10
+    },
+    "U": {
+      "token_count": 12,
+      "escape_rate": 8.33,
+      "top_prefixes": [
+        [
+          "ok",
+          8
+        ],
+        [
+          "ch",
+          2
+        ],
+        [
+          "qo",
+          1
+        ],
+        [
+          "ot",
+          1
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "r",
+          3
+        ],
+        [
+          "l",
+          1
+        ]
+      ],
+      "unique_types": 8
+    },
+    "U2": {
+      "token_count": 10,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          5
+        ],
+        [
+          "o",
+          2
+        ],
+        [
+          "d",
+          2
+        ],
+        [
+          "al",
+          1
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          3
+        ],
+        [
+          "r",
+          3
+        ],
+        [
+          "dy",
+          1
+        ]
+      ],
+      "unique_types": 7
+    },
+    "V1": {
+      "token_count": 22,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          5
+        ],
+        [
+          "ot",
+          3
+        ],
+        [
+          "o",
+          3
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "a",
+          2
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "r",
+          6
+        ],
+        [
+          "s",
+          2
+        ],
+        [
+          "l",
+          2
+        ],
+        [
+          "dy",
+          2
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "unique_types": 19
+    },
+    "V2": {
+      "token_count": 26,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          8
+        ],
+        [
+          "ar",
+          3
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "al",
+          3
+        ],
+        [
+          "a",
+          2
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "l",
+          4
+        ],
+        [
+          "r",
+          3
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "y",
+          1
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "unique_types": 19
+    },
+    "W": {
+      "token_count": 15,
+      "escape_rate": 0.0,
+      "top_prefixes": [],
+      "top_suffixes": [],
+      "unique_types": 5
+    },
+    "X": {
+      "token_count": 112,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "ok",
+          23
+        ],
+        [
+          "d",
+          19
+        ],
+        [
+          "ot",
+          19
+        ],
+        [
+          "ch",
+          12
+        ],
+        [
+          "s",
+          7
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          29
+        ],
+        [
+          "r",
+          17
+        ],
+        [
+          "l",
+          14
+        ],
+        [
+          "dy",
+          10
+        ],
+        [
+          "s",
+          9
+        ]
+      ],
+      "unique_types": 59
+    },
+    "Y": {
+      "token_count": 204,
+      "escape_rate": 2.94,
+      "top_prefixes": [
+        [
+          "d",
+          35
+        ],
+        [
+          "ch",
+          30
+        ],
+        [
+          "y",
+          29
+        ],
+        [
+          "ok",
+          25
+        ],
+        [
+          "ot",
+          14
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "y",
+          63
+        ],
+        [
+          "r",
+          33
+        ],
+        [
+          "dy",
+          16
+        ],
+        [
+          "l",
+          11
+        ],
+        [
+          "m",
+          10
+        ]
+      ],
+      "unique_types": 83
+    },
+    "Z": {
+      "token_count": 15,
+      "escape_rate": 0.0,
+      "top_prefixes": [
+        [
+          "a",
+          5
+        ],
+        [
+          "or",
+          3
+        ],
+        [
+          "ok",
+          1
+        ]
+      ],
+      "top_suffixes": [
+        [
+          "r",
+          4
+        ],
+        [
+          "y",
+          4
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "unique_types": 6
+    }
+  },
+  "traced_types": {
+    "daiin": {
+      "total_occurrences": 165,
+      "unique_placements": 18,
+      "unique_folios": 28,
+      "placement_distribution": {
+        "R3": 6,
+        "P": 61,
+        "R": 10,
+        "C": 34,
+        "X": 1,
+        "Y": 3,
+        "S": 3,
+        "C1": 5,
+        "O": 3,
+        "R2": 10,
+        "R1": 8,
+        "S1": 9,
+        "N1": 1,
+        "N2": 1,
+        "P1": 2,
+        "P2": 4,
+        "P3": 2,
+        "P4": 2
+      },
+      "concentrated": false
+    },
+    "aiin": {
+      "total_occurrences": 226,
+      "unique_placements": 20,
+      "unique_folios": 27,
+      "placement_distribution": {
+        "R3": 13,
+        "R4": 5,
+        "P": 88,
+        "R": 6,
+        "C": 39,
+        "X": 1,
+        "S": 3,
+        "R1": 26,
+        "R2": 14,
+        "S1": 1,
+        "S2": 2,
+        "C1": 1,
+        "V1": 1,
+        "N1": 1,
+        "N2": 1,
+        "C2": 2,
+        "P1": 13,
+        "P2": 4,
+        "P4": 2,
+        "Q": 3
+      },
+      "concentrated": false
+    },
+    "dar": {
+      "total_occurrences": 156,
+      "unique_placements": 20,
+      "unique_folios": 27,
+      "placement_distribution": {
+        "R4": 1,
+        "R": 19,
+        "S": 5,
+        "P": 41,
+        "X": 4,
+        "C1": 2,
+        "C2": 3,
+        "O": 9,
+        "B": 3,
+        "C": 26,
+        "Y": 3,
+        "R3": 8,
+        "S2": 2,
+        "R2": 7,
+        "R1": 5,
+        "T": 4,
+        "V1": 1,
+        "D1": 1,
+        "P1": 1,
+        "Q": 11
+      },
+      "concentrated": false
+    },
+    "ar": {
+      "total_occurrences": 241,
+      "unique_placements": 21,
+      "unique_folios": 27,
+      "placement_distribution": {
+        "R1": 24,
+        "R4": 3,
+        "P": 64,
+        "R": 20,
+        "C": 55,
+        "S": 1,
+        "O": 1,
+        "I": 3,
+        "R3": 6,
+        "S2": 8,
+        "R2": 17,
+        "S1": 14,
+        "C1": 2,
+        "C2": 6,
+        "V1": 1,
+        "V2": 2,
+        "M1": 1,
+        "N2": 1,
+        "P1": 8,
+        "P4": 3,
+        "Q": 1
+      },
+      "concentrated": false
+    },
+    "al": {
+      "total_occurrences": 149,
+      "unique_placements": 15,
+      "unique_folios": 25,
+      "placement_distribution": {
+        "R": 16,
+        "C": 23,
+        "P": 31,
+        "C1": 3,
+        "S": 6,
+        "L": 1,
+        "I": 4,
+        "R3": 9,
+        "R2": 19,
+        "S1": 2,
+        "R1": 28,
+        "V2": 3,
+        "N1": 1,
+        "N2": 1,
+        "C2": 2
+      },
+      "concentrated": false
+    },
+    "chol": {
+      "total_occurrences": 74,
+      "unique_placements": 10,
+      "unique_folios": 20,
+      "placement_distribution": {
+        "R": 2,
+        "C": 22,
+        "S": 4,
+        "C1": 3,
+        "O": 1,
+        "P": 26,
+        "R3": 5,
+        "R1": 2,
+        "R2": 1,
+        "Q": 8
+      },
+      "concentrated": false
+    },
+    "or": {
+      "total_occurrences": 150,
+      "unique_placements": 20,
+      "unique_folios": 19,
+      "placement_distribution": {
+        "C": 29,
+        "Y": 6,
+        "S": 2,
+        "I": 1,
+        "P": 64,
+        "S2": 2,
+        "R1": 4,
+        "S1": 2,
+        "R2": 2,
+        "R3": 2,
+        "C2": 4,
+        "V1": 1,
+        "V2": 1,
+        "N1": 2,
+        "N2": 2,
+        "D1": 1,
+        "P1": 5,
+        "P3": 4,
+        "P4": 4,
+        "Q": 12
+      },
+      "concentrated": false
+    },
+    "dy": {
+      "total_occurrences": 121,
+      "unique_placements": 18,
+      "unique_folios": 23,
+      "placement_distribution": {
+        "R1": 7,
+        "P": 21,
+        "Y": 3,
+        "C": 42,
+        "L": 6,
+        "X": 4,
+        "O": 4,
+        "S": 2,
+        "B": 3,
+        "R": 3,
+        "R3": 7,
+        "S2": 6,
+        "R2": 3,
+        "S1": 1,
+        "B1": 2,
+        "T": 2,
+        "P3": 2,
+        "Q": 3
+      },
+      "concentrated": false
+    },
+    "okal": {
+      "total_occurrences": 60,
+      "unique_placements": 14,
+      "unique_folios": 18,
+      "placement_distribution": {
+        "R1": 6,
+        "L": 4,
+        "P": 16,
+        "X": 3,
+        "C": 4,
+        "S1": 9,
+        "R2": 5,
+        "R3": 2,
+        "S2": 5,
+        "S0": 1,
+        "V1": 1,
+        "V2": 2,
+        "N2": 1,
+        "C2": 1
+      },
+      "concentrated": false
+    },
+    "dal": {
+      "total_occurrences": 119,
+      "unique_placements": 14,
+      "unique_folios": 21,
+      "placement_distribution": {
+        "R1": 12,
+        "R3": 3,
+        "R": 11,
+        "C": 32,
+        "C1": 1,
+        "X": 1,
+        "O": 3,
+        "P": 34,
+        "Y": 2,
+        "R2": 7,
+        "S1": 3,
+        "M2": 1,
+        "P1": 4,
+        "Q": 5
+      },
+      "concentrated": false
+    }
+  },
+  "interpretation": {
+    "escape_variance": 24.69,
+    "concentrated_types": 0,
+    "distributed_types": 10
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "fit_id": "F-AZC-004",
+  "question": "By how much does AZC reduce the operators available option space vs Currier A?",
+  "metadata": {
+    "a_tokens": 23442,
+    "azc_z_tokens": 2076,
+    "azc_ac_tokens": 3278,
+    "universal_middles": 15
+  },
+  "metrics": {
+    "currier_a": {
+      "n_tokens": 23442,
+      "n_types": 2425,
+      "type_token_ratio": 0.1034,
+      "cardinality": {
+        "prefixes": 8,
+        "middles": 824,
+        "suffixes": 119
+      },
+      "entropy": {
+        "prefix": 2.734,
+        "middle": 4.934,
+        "suffix": 4.202,
+        "total": 11.87
+      },
+      "escape_pct": 21.08,
+      "universal_pct": 51.3
+    },
+    "azc_zodiac": {
+      "n_tokens": 2076,
+      "n_types": 741,
+      "type_token_ratio": 0.3569,
+      "cardinality": {
+        "prefixes": 8,
+        "middles": 307,
+        "suffixes": 54
+      },
+      "entropy": {
+        "prefix": 2.345,
+        "middle": 5.626,
+        "suffix": 4.227,
+        "total": 12.198
+      },
+      "escape_pct": 2.12,
+      "universal_pct": 48.17
+    },
+    "azc_ac": {
+      "n_tokens": 3278,
+      "n_types": 848,
+      "type_token_ratio": 0.2587,
+      "cardinality": {
+        "prefixes": 8,
+        "middles": 367,
+        "suffixes": 78
+      },
+      "entropy": {
+        "prefix": 2.634,
+        "middle": 5.498,
+        "suffix": 4.334,
+        "total": 12.465
+      },
+      "escape_pct": 7.84,
+      "universal_pct": 48.02
+    }
+  },
+  "compression": {
+    "zodiac_vs_a": {
+      "prefix_entropy": 14.22,
+      "middle_entropy": -14.02,
+      "suffix_entropy": -0.61,
+      "total_entropy": -2.77,
+      "escape_suppression": 89.94,
+      "universal_enrichment": -3.13
+    },
+    "ac_vs_a": {
+      "prefix_entropy": 3.66,
+      "middle_entropy": -11.42,
+      "suffix_entropy": -3.15,
+      "total_entropy": -5.02,
+      "escape_suppression": 62.8,
+      "universal_enrichment": -3.28
+    }
+  },
+  "success_criteria": {
+    "significant_compression": false,
+    "strong_escape_suppression": true,
+    "universal_preserved": true,
+    "met_count": 2,
+    "total": 3
+  },
+  "interpretation": {
+    "finding": "AZC is a COGNITIVE LOAD REDUCER and LEGALITY SIEVE at transition zones",
+    "fit_tier": "F2"
+  }
+}

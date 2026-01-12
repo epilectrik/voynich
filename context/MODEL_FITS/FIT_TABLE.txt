@@ -1,0 +1,33 @@
+# FIT_TABLE.txt - Programmatic Fit Index
+# WARNING: No entry in this file constrains the model.
+# Generated: 2026-01-12
+# Total: 26 fits
+# Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
+
+ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
+F-A-001	Compositional Token Generator	F2	A	PARTIAL	C267-C282	in: fits_currier_a
+F-A-002	Sister-Pair Classifier	F1	A	NULL	C407-C410	in: fits_currier_a
+F-A-003	Repetition Distribution	F2	A	PARTIAL	C250-C258	in: fits_currier_a
+F-A-004	Entry Clustering HMM	F2	A	SUCCESS	C424	in: fits_currier_a
+F-A-005	Scarcity-Weighted Registry Effort	F1	A	NULL	C293	in: fits_currier_a
+F-A-007	Forbidden-Zone Attraction	F1	A	NULL	C281	in: fits_currier_a
+F-A-008	Repetition as Relational Stabilizer	F1	A	NULL	C287-C290	in: fits_currier_a
+F-A-009	Comparability Window	F2	A	SUCCESS	C424	in: fits_currier_a
+F-AZC-001	Placement Prediction Model	F4	AZC	NEGATIVE	C466-C467	in: fits_azc
+F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467	in: fits_azc
+F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
+F-AZC-003	Family Membership Classifier	F4	AZC	PARTIAL	C466	in: fits_azc
+F-AZC-004	Option-Space Compression	F2	AZC	SUCCESS	C463-C465	in: fits_azc
+F-AZC-006	Boundary Airlock Profile	F4	AZC	INCONCLUSIVE	(pending data)	in: fits_azc
+F-AZC-007	Position-Conditioned Escape Suppression	F2	AZC	SUCCESS	C463-C465	in: fits_azc
+F-AZC-008	Boundary Asymmetry (Semantic Hypothesis Test)	F3	AZC	PARTIAL	(exploratory)	in: fits_azc
+F-AZC-009	Local vs Global Reference Partition (FINAL SEMANTIC TEST)	F4	AZC	DISCARDED	(none - frame rejected)	in: fits_azc
+F-AZC-010	Cross-System Alignment by Family (CALENDRIC STRESS TEST)	F4	AZC	FALSIFIED	(strengthens null hypothesis)	in: fits_azc
+F-AZC-011	Folio Threading Analysis	F2	AZC	SUCCESS	C318, C321, C430, C436	in: fits_azc
+F-AZC-012	Orientation Basis Coverage	F2	AZC	SUCCESS	C301, C318, C326, C343	in: fits_azc
+F-AZC-013	Orientation Posture Differentiation	F2	AZC	SUCCESS	C436, C457, C458, C460	in: fits_azc
+F-AZC-015	Windowed AZC Activation Trace	F2	AZC	SUCCESS	C440, C441-C444	in: fits_azc
+F-AZC-016	AZC->B Constraint Fit Validation	F2	AZC	SUCCESS	C468, C469, C470	in: fits_azc
+F-ECR-001	Material-Class Identification	F3	GLOBAL	SUCCESS	C109-C114, C232	in: fits_global
+F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
+F-ECR-003	Decision-State Semantics	F3	GLOBAL	SUCCESS	C384, C404-C405, C459-C460	in: fits_global

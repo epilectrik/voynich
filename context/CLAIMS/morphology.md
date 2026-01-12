@@ -1,4 +1,4 @@
-# Morphology Constraints (C349-C382, C386-C402, C407-C412)
+# Morphology Constraints (C349-C382, C386-C402, C407-C412, C466-C467)
 
 **Scope:** Morphological structure, transitions, functional grammar
 **Status:** CLOSED
@@ -253,6 +253,18 @@ H prefers ch (78-92%). B balanced (42-57%). Quire-level conditioning.
 → See [C412_sister_escape_anticorrelation.md](C412_sister_escape_anticorrelation.md)
 
 ---
+
+## PREFIX Control-Flow Role (C466-C467)
+
+### C466 - PREFIX Encodes Control-Flow Participation
+**Tier:** 2 | **Status:** CLOSED
+PREFIX classes differ in kernel adjacency, positional bias, and intervention association, but show weak correlation with AZC compatibility (V=0.17); PREFIX governs how tokens participate in control-flow rather than which compatibility class they belong to.
+**Source:** F-A-014b, F-AZC-014
+
+### C467 - qo-Prefix is Kernel-Adjacent
+**Tier:** 2 | **Status:** CLOSED
+The qo- prefix is enriched near kernel nodes (1.31x) and virtually never line-initial (0.01%), indicating preferential participation at high-constraint decision points rather than avoidance of core execution states. Escape/intervention happens AT complexity, not away from it.
+**Source:** F-A-014b
 
 ---
 

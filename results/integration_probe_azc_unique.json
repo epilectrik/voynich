@@ -1,0 +1,29 @@
+{
+  "probe": "AZC_UNIQUE_MORPHOLOGY",
+  "total_exclusive": 2370,
+  "exclusive_pct": 77.8,
+  "coherent_folios": 5,
+  "incoherent_folios": 29,
+  "coherence_rate": 14.7,
+  "zodiac_prefix_distribution": {
+    "da": 13,
+    "sh": 61,
+    "ok": 83,
+    "ot": 146,
+    "ol": 21,
+    "ch": 142,
+    "ct": 3,
+    "qo": 9
+  },
+  "ac_prefix_distribution": {
+    "ot": 109,
+    "ch": 171,
+    "sh": 63,
+    "qo": 102,
+    "da": 51,
+    "ok": 94,
+    "ol": 54,
+    "ct": 10
+  },
+  "verdict": "DIVERSE"
+}

@@ -1,0 +1,31 @@
+{
+  "fit_id": "F-AZC-013",
+  "question": "Do different AZC folios have different HT profiles?",
+  "aggregate": {
+    "folio_count": 36,
+    "escape_rate": {
+      "mean": 3.86,
+      "min": 0.0,
+      "max": 18.13,
+      "variance": 18.13
+    },
+    "early_rate": {
+      "mean": 11.74,
+      "min": 0.0,
+      "max": 50.0,
+      "variance": 50.0
+    },
+    "core_rate": {
+      "mean": 19.93,
+      "min": 0.0,
+      "max": 50.0,
+      "variance": 50.0
+    }
+  },
+  "cluster_count": 17,
+  "interpretation": {
+    "conclusion": "AZC folios show DISTINCT HT profiles",
+    "evidence": "Escape variance: 18.1pp, Early variance: 50.0pp",
+    "implication": "Different AZC folios instantiate different orientation postures"
+  }
+}

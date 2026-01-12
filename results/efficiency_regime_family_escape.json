@@ -1,0 +1,96 @@
+{
+  "test_id": "EFFICIENCY_REGIME_TEST_3",
+  "question": "Does family-level escape profile transfer to B?",
+  "prediction": "A/C tokens -> higher escape, Zodiac tokens -> lower escape",
+  "token_family_counts": {
+    "ZODIAC_EXCLUSIVE": 848,
+    "SHARED": 306,
+    "AC_EXCLUSIVE": 1244
+  },
+  "analysis": {
+    "family_b_presence": {
+      "AC_EXCLUSIVE": 8317,
+      "ZODIAC_EXCLUSIVE": 5197,
+      "SHARED": 29900
+    },
+    "n_folios": 83,
+    "correlation_escape_vs_ac": 0.265,
+    "correlation_escape_vs_zodiac": -0.063,
+    "folio_samples": [
+      {
+        "folio": "f103r",
+        "escape": 0.21214713430282292,
+        "ac_fraction": 0.17118402282453637,
+        "zodiac_fraction": 0.10271041369472182,
+        "total_azc_tokens": 701
+      },
+      {
+        "folio": "f103v",
+        "escape": 0.17867719644619942,
+        "ac_fraction": 0.11201298701298701,
+        "zodiac_fraction": 0.11688311688311688,
+        "total_azc_tokens": 616
+      },
+      {
+        "folio": "f104r",
+        "escape": 0.20846560846560847,
+        "ac_fraction": 0.18789144050104384,
+        "zodiac_fraction": 0.1419624217118998,
+        "total_azc_tokens": 479
+      },
+      {
+        "folio": "f104v",
+        "escape": 0.22975929978118162,
+        "ac_fraction": 0.21836734693877552,
+        "zodiac_fraction": 0.16938775510204082,
+        "total_azc_tokens": 490
+      },
+      {
+        "folio": "f105r",
+        "escape": 0.12299465240641712,
+        "ac_fraction": 0.19708029197080293,
+        "zodiac_fraction": 0.1070559610705596,
+        "total_azc_tokens": 411
+      },
+      {
+        "folio": "f105v",
+        "escape": 0.07948717948717948,
+        "ac_fraction": 0.15676567656765678,
+        "zodiac_fraction": 0.11551155115511551,
+        "total_azc_tokens": 606
+      },
+      {
+        "folio": "f106r",
+        "escape": 0.15699922660479504,
+        "ac_fraction": 0.1822429906542056,
+        "zodiac_fraction": 0.16043613707165108,
+        "total_azc_tokens": 642
+      },
+      {
+        "folio": "f106v",
+        "escape": 0.15171288743882544,
+        "ac_fraction": 0.16893203883495145,
+        "zodiac_fraction": 0.15145631067961166,
+        "total_azc_tokens": 1030
+      },
+      {
+        "folio": "f107r",
+        "escape": 0.12704918032786885,
+        "ac_fraction": 0.1419828641370869,
+        "zodiac_fraction": 0.15055079559363524,
+        "total_azc_tokens": 817
+      },
+      {
+        "folio": "f107v",
+        "escape": 0.19542772861356933,
+        "ac_fraction": 0.18170266836086404,
+        "zodiac_fraction": 0.09911054637865312,
+        "total_azc_tokens": 787
+      }
+    ]
+  },
+  "verdict": {
+    "overall": "TEST_3_PARTIAL",
+    "interpretation": "A/C tokens show weak positive escape correlation"
+  }
+}

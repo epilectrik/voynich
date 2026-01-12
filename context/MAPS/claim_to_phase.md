@@ -118,6 +118,18 @@ Look up constraint number to find source phase.
 
 ---
 
+## AZC Deep + Pipeline (C430-C473)
+
+| Constraint | Phase |
+|------------|-------|
+| C430-C444 | AZC-DEEP |
+| C450-C462 | INTRA-ROLE, HT-AZC |
+| C466-C467 | PREFIX-ROLE |
+| C468-C470 | PIPELINE-RESOLUTION |
+| C471-C473 | INTEGRATION-PROBE (Morphological Binding) |
+
+---
+
 ## Navigation
 
 ← [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md) | [phase_to_claim.md](phase_to_claim.md) →

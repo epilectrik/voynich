@@ -1,0 +1,530 @@
+{
+  "probe_id": "AZC_ENTRY_BRIDGES",
+  "question": "From Currier A entries, are any AZC combinations illegal?",
+  "method": "Token bridge analysis - count tokens appearing in multiple AZC folios",
+  "data": {
+    "n_tokens": 2398,
+    "n_azc_folios": 30,
+    "total_possible_pairs": 435,
+    "bridged_pairs": 390,
+    "unbridged_pairs": 45
+  },
+  "bridge_distribution": {
+    "distribution": {
+      "1": 1919,
+      "2": 227,
+      "3": 75,
+      "4": 56,
+      "5": 32,
+      "6": 18,
+      "7": 12,
+      "8": 11,
+      "9": 5,
+      "10": 5,
+      "11": 13,
+      "13": 6,
+      "14": 5,
+      "15": 3,
+      "16": 2,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 3,
+      "22": 2
+    },
+    "mean": 1.63,
+    "max": 22,
+    "single_folio_tokens": 1919,
+    "multi_folio_tokens": 479,
+    "total_tokens": 2398
+  },
+  "connectivity": {
+    "connectivity": "FULLY_CONNECTED",
+    "n_components": 1,
+    "components": [
+      [
+        "f116v",
+        "f57v",
+        "f65r",
+        "f65v",
+        "f67r1",
+        "f67r2",
+        "f67v1",
+        "f67v2",
+        "f68r1",
+        "f68r2",
+        "f68r3",
+        "f68v1",
+        "f68v2",
+        "f68v3",
+        "f69r",
+        "f69v",
+        "f70r1",
+        "f70r2",
+        "f70v1",
+        "f70v2",
+        "f71r",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3",
+        "f72v1",
+        "f72v2",
+        "f72v3",
+        "f73r",
+        "f73v"
+      ]
+    ],
+    "largest_component_size": 30,
+    "isolated_folios": []
+  },
+  "family_analysis": {
+    "within_zodiac": {
+      "mean": 17.35,
+      "n": 78,
+      "zero_count": 0,
+      "zero_pct": 0.0
+    },
+    "within_ac": {
+      "mean": 13.42,
+      "n": 136,
+      "zero_count": 20,
+      "zero_pct": 14.7
+    },
+    "cross_family": {
+      "mean": 14.03,
+      "n": 221,
+      "zero_count": 25,
+      "zero_pct": 11.3
+    }
+  },
+  "unbridged_pairs": [
+    [
+      "f116v",
+      "f57v"
+    ],
+    [
+      "f116v",
+      "f65r"
+    ],
+    [
+      "f116v",
+      "f65v"
+    ],
+    [
+      "f116v",
+      "f67r1"
+    ],
+    [
+      "f116v",
+      "f67r2"
+    ],
+    [
+      "f116v",
+      "f67v2"
+    ],
+    [
+      "f116v",
+      "f68r1"
+    ],
+    [
+      "f116v",
+      "f68r3"
+    ],
+    [
+      "f116v",
+      "f68v1"
+    ],
+    [
+      "f116v",
+      "f68v2"
+    ],
+    [
+      "f116v",
+      "f70r1"
+    ],
+    [
+      "f116v",
+      "f70v1"
+    ],
+    [
+      "f116v",
+      "f70v2"
+    ],
+    [
+      "f116v",
+      "f71r"
+    ],
+    [
+      "f116v",
+      "f71v"
+    ],
+    [
+      "f116v",
+      "f72r1"
+    ],
+    [
+      "f116v",
+      "f72r2"
+    ],
+    [
+      "f116v",
+      "f72v1"
+    ],
+    [
+      "f116v",
+      "f72v2"
+    ],
+    [
+      "f116v",
+      "f72v3"
+    ],
+    [
+      "f116v",
+      "f73r"
+    ],
+    [
+      "f116v",
+      "f73v"
+    ],
+    [
+      "f57v",
+      "f65r"
+    ],
+    [
+      "f65r",
+      "f65v"
+    ],
+    [
+      "f65r",
+      "f67r2"
+    ],
+    [
+      "f65r",
+      "f67v1"
+    ],
+    [
+      "f65r",
+      "f68r1"
+    ],
+    [
+      "f65r",
+      "f68r2"
+    ],
+    [
+      "f65r",
+      "f68r3"
+    ],
+    [
+      "f65r",
+      "f68v1"
+    ],
+    [
+      "f65r",
+      "f68v3"
+    ],
+    [
+      "f65r",
+      "f69r"
+    ],
+    [
+      "f65r",
+      "f69v"
+    ],
+    [
+      "f65r",
+      "f70v1"
+    ],
+    [
+      "f65r",
+      "f70v2"
+    ],
+    [
+      "f65r",
+      "f71r"
+    ],
+    [
+      "f65r",
+      "f71v"
+    ],
+    [
+      "f65r",
+      "f72r1"
+    ],
+    [
+      "f65r",
+      "f72r2"
+    ],
+    [
+      "f65r",
+      "f72r3"
+    ],
+    [
+      "f65r",
+      "f72v1"
+    ],
+    [
+      "f65r",
+      "f72v2"
+    ],
+    [
+      "f65r",
+      "f72v3"
+    ],
+    [
+      "f65r",
+      "f73r"
+    ],
+    [
+      "f65r",
+      "f73v"
+    ]
+  ],
+  "strongest_bridges": [
+    {
+      "pair": [
+        "f69r",
+        "f70r2"
+      ],
+      "count": 45,
+      "examples": [
+        "l",
+        "y",
+        "ar"
+      ]
+    },
+    {
+      "pair": [
+        "f70r2",
+        "f72r3"
+      ],
+      "count": 41,
+      "examples": [
+        "l",
+        "ar",
+        "o"
+      ]
+    },
+    {
+      "pair": [
+        "f69r",
+        "f69v"
+      ],
+      "count": 41,
+      "examples": [
+        "y",
+        "ar",
+        "o"
+      ]
+    },
+    {
+      "pair": [
+        "f68v3",
+        "f70r2"
+      ],
+      "count": 41,
+      "examples": [
+        "ar",
+        "s",
+        "dy"
+      ]
+    },
+    {
+      "pair": [
+        "f70r2",
+        "f70v2"
+      ],
+      "count": 39,
+      "examples": [
+        "ar",
+        "okees",
+        "o"
+      ]
+    },
+    {
+      "pair": [
+        "f67r1",
+        "f70r2"
+      ],
+      "count": 38,
+      "examples": [
+        "l",
+        "y",
+        "ar"
+      ]
+    },
+    {
+      "pair": [
+        "f69r",
+        "f72r2"
+      ],
+      "count": 37,
+      "examples": [
+        "y",
+        "ar",
+        "d"
+      ]
+    },
+    {
+      "pair": [
+        "f69v",
+        "f70r2"
+      ],
+      "count": 36,
+      "examples": [
+        "y",
+        "ar",
+        "o"
+      ]
+    },
+    {
+      "pair": [
+        "f69r",
+        "f70v2"
+      ],
+      "count": 35,
+      "examples": [
+        "ar",
+        "o",
+        "okey"
+      ]
+    },
+    {
+      "pair": [
+        "f67r1",
+        "f68v3"
+      ],
+      "count": 34,
+      "examples": [
+        "ar",
+        "sar",
+        "s"
+      ]
+    },
+    {
+      "pair": [
+        "f67r1",
+        "f69r"
+      ],
+      "count": 33,
+      "examples": [
+        "l",
+        "y",
+        "ar"
+      ]
+    },
+    {
+      "pair": [
+        "f70r1",
+        "f70r2"
+      ],
+      "count": 33,
+      "examples": [
+        "l",
+        "y",
+        "ar"
+      ]
+    },
+    {
+      "pair": [
+        "f70r2",
+        "f72r2"
+      ],
+      "count": 33,
+      "examples": [
+        "y",
+        "ar",
+        "d"
+      ]
+    },
+    {
+      "pair": [
+        "f68v3",
+        "f69r"
+      ],
+      "count": 33,
+      "examples": [
+        "ar",
+        "sar",
+        "yty"
+      ]
+    },
+    {
+      "pair": [
+        "f69r",
+        "f70r1"
+      ],
+      "count": 32,
+      "examples": [
+        "l",
+        "y",
+        "ar"
+      ]
+    },
+    {
+      "pair": [
+        "f68v1",
+        "f70r2"
+      ],
+      "count": 32,
+      "examples": [
+        "y",
+        "s",
+        "dy"
+      ]
+    },
+    {
+      "pair": [
+        "f69r",
+        "f72r3"
+      ],
+      "count": 31,
+      "examples": [
+        "l",
+        "ar",
+        "o"
+      ]
+    },
+    {
+      "pair": [
+        "f68v1",
+        "f69r"
+      ],
+      "count": 30,
+      "examples": [
+        "y",
+        "okey",
+        "sar"
+      ]
+    },
+    {
+      "pair": [
+        "f67r1",
+        "f70v2"
+      ],
+      "count": 30,
+      "examples": [
+        "ar",
+        "okees",
+        "o"
+      ]
+    },
+    {
+      "pair": [
+        "f70r2",
+        "f71v"
+      ],
+      "count": 30,
+      "examples": [
+        "ar",
+        "dy",
+        "dal"
+      ]
+    }
+  ],
+  "verdict": {
+    "overall": "PARTIAL_EXCLUSIVITY",
+    "interpretation": "45/435 pairs (10.3%) are unbridged"
+  }
+}

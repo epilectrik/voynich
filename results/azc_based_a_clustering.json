@@ -1,0 +1,751 @@
+{
+  "probe_id": "AZC_BASED_A_CLUSTERING",
+  "question": "Can AZC folio membership reveal material sub-families within Currier A beyond PREFIX alone?",
+  "method": "Jaccard similarity clustering on AZC folio co-occurrence",
+  "data": {
+    "n_a_tokens_with_azc": 778,
+    "n_eligible_for_clustering": 367,
+    "prefix_baseline": {
+      "ar": {
+        "zodiac_exclusive": 3,
+        "ac_exclusive": 1,
+        "mixed": 3,
+        "total": 7,
+        "zodiac_pct": 42.9,
+        "ac_pct": 14.3
+      },
+      "sh": {
+        "zodiac_exclusive": 13,
+        "ac_exclusive": 28,
+        "mixed": 20,
+        "total": 61,
+        "zodiac_pct": 21.3,
+        "ac_pct": 45.9
+      },
+      "": {
+        "zodiac_exclusive": 29,
+        "ac_exclusive": 46,
+        "mixed": 25,
+        "total": 100,
+        "zodiac_pct": 29.0,
+        "ac_pct": 46.0
+      },
+      "y": {
+        "zodiac_exclusive": 18,
+        "ac_exclusive": 30,
+        "mixed": 16,
+        "total": 64,
+        "zodiac_pct": 28.1,
+        "ac_pct": 46.9
+      },
+      "s": {
+        "zodiac_exclusive": 7,
+        "ac_exclusive": 18,
+        "mixed": 6,
+        "total": 31,
+        "zodiac_pct": 22.6,
+        "ac_pct": 58.1
+      },
+      "or": {
+        "zodiac_exclusive": 7,
+        "ac_exclusive": 2,
+        "mixed": 3,
+        "total": 12,
+        "zodiac_pct": 58.3,
+        "ac_pct": 16.7
+      },
+      "ch": {
+        "zodiac_exclusive": 41,
+        "ac_exclusive": 61,
+        "mixed": 42,
+        "total": 144,
+        "zodiac_pct": 28.5,
+        "ac_pct": 42.4
+      },
+      "ct": {
+        "zodiac_exclusive": 2,
+        "ac_exclusive": 7,
+        "mixed": 2,
+        "total": 11,
+        "zodiac_pct": 18.2,
+        "ac_pct": 63.6
+      },
+      "d": {
+        "zodiac_exclusive": 9,
+        "ac_exclusive": 39,
+        "mixed": 14,
+        "total": 62,
+        "zodiac_pct": 14.5,
+        "ac_pct": 62.9
+      },
+      "ot": {
+        "zodiac_exclusive": 19,
+        "ac_exclusive": 19,
+        "mixed": 38,
+        "total": 76,
+        "zodiac_pct": 25.0,
+        "ac_pct": 25.0
+      },
+      "ok": {
+        "zodiac_exclusive": 16,
+        "ac_exclusive": 20,
+        "mixed": 39,
+        "total": 75,
+        "zodiac_pct": 21.3,
+        "ac_pct": 26.7
+      },
+      "ol": {
+        "zodiac_exclusive": 8,
+        "ac_exclusive": 5,
+        "mixed": 4,
+        "total": 17,
+        "zodiac_pct": 47.1,
+        "ac_pct": 29.4
+      },
+      "o": {
+        "zodiac_exclusive": 14,
+        "ac_exclusive": 27,
+        "mixed": 17,
+        "total": 58,
+        "zodiac_pct": 24.1,
+        "ac_pct": 46.6
+      },
+      "a": {
+        "zodiac_exclusive": 3,
+        "ac_exclusive": 2,
+        "mixed": 8,
+        "total": 13,
+        "zodiac_pct": 23.1,
+        "ac_pct": 15.4
+      },
+      "qo": {
+        "zodiac_exclusive": 6,
+        "ac_exclusive": 23,
+        "mixed": 3,
+        "total": 32,
+        "zodiac_pct": 18.8,
+        "ac_pct": 71.9
+      },
+      "al": {
+        "zodiac_exclusive": 4,
+        "ac_exclusive": 5,
+        "mixed": 6,
+        "total": 15,
+        "zodiac_pct": 26.7,
+        "ac_pct": 33.3
+      }
+    }
+  },
+  "clustering_results": {
+    "threshold_0.3": {
+      "n_clusters": 1,
+      "tokens_clustered": 367,
+      "largest_cluster": 367,
+      "top_clusters": [
+        {
+          "cluster_id": 0,
+          "size": 367,
+          "tokens": [
+            "ochol",
+            "cheky",
+            "chey",
+            "sal",
+            "alar",
+            "aj",
+            "ytoy",
+            "raiin",
+            "ykeody",
+            "oraiin",
+            "okeedy",
+            "qockhy",
+            "chas",
+            "todaiin",
+            "okor",
+            "oeees",
+            "okeeor",
+            "che",
+            "dchol",
+            "tol"
+          ],
+          "prefix_distribution": {
+            "ch": 60,
+            "ok": 51,
+            "ot": 46,
+            "": 37,
+            "y": 30
+          },
+          "middle_distribution": {
+            "a": 36,
+            "o": 31,
+            "eo": 20,
+            "e": 12,
+            "ee": 12
+          },
+          "zodiac_pct": 36.2,
+          "ac_pct": 63.8,
+          "shared_folios": [],
+          "dominant_prefix": "ch"
+        }
+      ],
+      "sub_families_detected": {}
+    },
+    "threshold_0.5": {
+      "n_clusters": 18,
+      "tokens_clustered": 315,
+      "largest_cluster": 270,
+      "top_clusters": [
+        {
+          "cluster_id": 0,
+          "size": 270,
+          "tokens": [
+            "okeo",
+            "ochol",
+            "ody",
+            "rain",
+            "okoey",
+            "alal",
+            "dain",
+            "she",
+            "chos",
+            "dol",
+            "shes",
+            "chety",
+            "oar",
+            "okoly",
+            "okey",
+            "oteol",
+            "chepchy",
+            "keody",
+            "chal",
+            "chey"
+          ],
+          "prefix_distribution": {
+            "ch": 47,
+            "ot": 36,
+            "ok": 33,
+            "": 27,
+            "sh": 25
+          },
+          "middle_distribution": {
+            "a": 27,
+            "o": 26,
+            "eo": 14,
+            "d": 9,
+            "e": 9
+          },
+          "zodiac_pct": 35.4,
+          "ac_pct": 64.6,
+          "shared_folios": [],
+          "dominant_prefix": "ch"
+        },
+        {
+          "cluster_id": 1,
+          "size": 5,
+          "tokens": [
+            "sory",
+            "ockhey",
+            "sary",
+            "okor",
+            "chokeey"
+          ],
+          "prefix_distribution": {
+            "s": 2,
+            "o": 1,
+            "ok": 1,
+            "ch": 1
+          },
+          "middle_distribution": {
+            "or": 1,
+            "ckhe": 1,
+            "ar": 1,
+            "o": 1,
+            "okee": 1
+          },
+          "zodiac_pct": 15.2,
+          "ac_pct": 84.8,
+          "shared_folios": [],
+          "dominant_prefix": "s"
+        },
+        {
+          "cluster_id": 64,
+          "size": 4,
+          "tokens": [
+            "tchy",
+            "otees",
+            "rar",
+            "otchos"
+          ],
+          "prefix_distribution": {
+            "": 2,
+            "ot": 2
+          },
+          "middle_distribution": {
+            "tch": 1,
+            "ee": 1,
+            "ra": 1,
+            "cho": 1
+          },
+          "zodiac_pct": 56.2,
+          "ac_pct": 43.8,
+          "shared_folios": [
+            "f72v2",
+            "f70v2",
+            "f68v2"
+          ],
+          "dominant_prefix": ""
+        },
+        {
+          "cluster_id": 2,
+          "size": 3,
+          "tokens": [
+            "sair",
+            "chockhey",
+            "sam"
+          ],
+          "prefix_distribution": {
+            "s": 2,
+            "ch": 1
+          },
+          "middle_distribution": {
+            "ai": 1,
+            "ockhe": 1,
+            "a": 1
+          },
+          "zodiac_pct": 11.1,
+          "ac_pct": 88.9,
+          "shared_folios": [
+            "f68v1",
+            "f67v1",
+            "f70r1"
+          ],
+          "dominant_prefix": "s"
+        },
+        {
+          "cluster_id": 38,
+          "size": 3,
+          "tokens": [
+            "om",
+            "oir",
+            "ykaly"
+          ],
+          "prefix_distribution": {
+            "o": 2,
+            "y": 1
+          },
+          "middle_distribution": {
+            "m": 1,
+            "i": 1,
+            "kal": 1
+          },
+          "zodiac_pct": 0.0,
+          "ac_pct": 100.0,
+          "shared_folios": [
+            "f67v2",
+            "f67r2"
+          ],
+          "dominant_prefix": "o"
+        },
+        {
+          "cluster_id": 47,
+          "size": 3,
+          "tokens": [
+            "toar",
+            "oteodaiin",
+            "teo"
+          ],
+          "prefix_distribution": {
+            "": 2,
+            "ot": 1
+          },
+          "middle_distribution": {
+            "toa": 1,
+            "eod": 1,
+            "teo": 1
+          },
+          "zodiac_pct": 41.7,
+          "ac_pct": 58.3,
+          "shared_folios": [],
+          "dominant_prefix": ""
+        },
+        {
+          "cluster_id": 61,
+          "size": 3,
+          "tokens": [
+            "okeod",
+            "ykey",
+            "ykeeody"
+          ],
+          "prefix_distribution": {
+            "y": 2,
+            "ok": 1
+          },
+          "middle_distribution": {
+            "eod": 1,
+            "ke": 1,
+            "keeo": 1
+          },
+          "zodiac_pct": 30.3,
+          "ac_pct": 69.7,
+          "shared_folios": [
+            "f69v",
+            "f73v"
+          ],
+          "dominant_prefix": "y"
+        },
+        {
+          "cluster_id": 66,
+          "size": 3,
+          "tokens": [
+            "ytaly",
+            "opaiin",
+            "alar"
+          ],
+          "prefix_distribution": {
+            "y": 1,
+            "o": 1,
+            "al": 1
+          },
+          "middle_distribution": {
+            "tal": 1,
+            "p": 1,
+            "a": 1
+          },
+          "zodiac_pct": 85.7,
+          "ac_pct": 14.3,
+          "shared_folios": [
+            "f72v1",
+            "f73v"
+          ],
+          "dominant_prefix": "y"
+        },
+        {
+          "cluster_id": 67,
+          "size": 3,
+          "tokens": [
+            "okeoly",
+            "dalal",
+            "otalal"
+          ],
+          "prefix_distribution": {
+            "ok": 1,
+            "d": 1,
+            "ot": 1
+          },
+          "middle_distribution": {
+            "ala": 2,
+            "eol": 1
+          },
+          "zodiac_pct": 100.0,
+          "ac_pct": 0.0,
+          "shared_folios": [
+            "f70v2",
+            "f72v1"
+          ],
+          "dominant_prefix": "ok"
+        },
+        {
+          "cluster_id": 3,
+          "size": 2,
+          "tokens": [
+            "dalam",
+            "cphy"
+          ],
+          "prefix_distribution": {
+            "d": 1,
+            "": 1
+          },
+          "middle_distribution": {
+            "al": 1,
+            "cph": 1
+          },
+          "zodiac_pct": 0.0,
+          "ac_pct": 100.0,
+          "shared_folios": [
+            "f67v2",
+            "f65v"
+          ],
+          "dominant_prefix": "d"
+        }
+      ],
+      "sub_families_detected": {
+        "y": {
+          "evidence": "FAMILY_SPLIT",
+          "n_clusters": 2,
+          "zodiac_biased_clusters": 1,
+          "ac_biased_clusters": 1,
+          "balanced_clusters": 0,
+          "interpretation": "y- entries split by AZC family affinity"
+        }
+      }
+    },
+    "threshold_0.7": {
+      "n_clusters": 38,
+      "tokens_clustered": 86,
+      "largest_cluster": 9,
+      "top_clusters": [
+        {
+          "cluster_id": 11,
+          "size": 9,
+          "tokens": [
+            "aiin",
+            "dar",
+            "al",
+            "dal",
+            "s",
+            "daiin",
+            "ar",
+            "oteey",
+            "okeey"
+          ],
+          "prefix_distribution": {
+            "d": 3,
+            "a": 1,
+            "al": 1,
+            "": 1,
+            "ar": 1
+          },
+          "middle_distribution": {
+            "a": 3,
+            "": 2,
+            "ee": 2,
+            "i": 1,
+            "s": 1
+          },
+          "zodiac_pct": 37.8,
+          "ac_pct": 62.2,
+          "shared_folios": [
+            "f70v1",
+            "f69r",
+            "f68v3",
+            "f67r1",
+            "f70r2",
+            "f73r"
+          ],
+          "dominant_prefix": "d"
+        },
+        {
+          "cluster_id": 139,
+          "size": 3,
+          "tokens": [
+            "okam",
+            "okaldy",
+            "chas"
+          ],
+          "prefix_distribution": {
+            "ok": 2,
+            "ch": 1
+          },
+          "middle_distribution": {
+            "a": 2,
+            "al": 1
+          },
+          "zodiac_pct": 100.0,
+          "ac_pct": 0.0,
+          "shared_folios": [
+            "f72r2",
+            "f72v3"
+          ],
+          "dominant_prefix": "ok"
+        },
+        {
+          "cluster_id": 188,
+          "size": 3,
+          "tokens": [
+            "om",
+            "oir",
+            "ykaly"
+          ],
+          "prefix_distribution": {
+            "o": 2,
+            "y": 1
+          },
+          "middle_distribution": {
+            "m": 1,
+            "i": 1,
+            "kal": 1
+          },
+          "zodiac_pct": 0.0,
+          "ac_pct": 100.0,
+          "shared_folios": [
+            "f67v2",
+            "f67r2"
+          ],
+          "dominant_prefix": "o"
+        },
+        {
+          "cluster_id": 289,
+          "size": 3,
+          "tokens": [
+            "okeoly",
+            "dalal",
+            "otalal"
+          ],
+          "prefix_distribution": {
+            "ok": 1,
+            "d": 1,
+            "ot": 1
+          },
+          "middle_distribution": {
+            "ala": 2,
+            "eol": 1
+          },
+          "zodiac_pct": 100.0,
+          "ac_pct": 0.0,
+          "shared_folios": [
+            "f70v2",
+            "f72v1"
+          ],
+          "dominant_prefix": "ok"
+        },
+        {
+          "cluster_id": 22,
+          "size": 2,
+          "tokens": [
+            "cthy",
+            "shy"
+          ],
+          "prefix_distribution": {
+            "ct": 1,
+            "sh": 1
+          },
+          "middle_distribution": {
+            "h": 1,
+            "y": 1
+          },
+          "zodiac_pct": 7.4,
+          "ac_pct": 92.6,
+          "shared_folios": [
+            "f70r2",
+            "f72v3",
+            "f69r",
+            "f68v2"
+          ],
+          "dominant_prefix": "ct"
+        },
+        {
+          "cluster_id": 30,
+          "size": 2,
+          "tokens": [
+            "ees",
+            "ckhey"
+          ],
+          "prefix_distribution": {
+            "": 2
+          },
+          "middle_distribution": {
+            "ee": 1,
+            "ckhe": 1
+          },
+          "zodiac_pct": 7.7,
+          "ac_pct": 92.3,
+          "shared_folios": [
+            "f68v1",
+            "f68v3",
+            "f70r2"
+          ],
+          "dominant_prefix": ""
+        },
+        {
+          "cluster_id": 38,
+          "size": 2,
+          "tokens": [
+            "odaiin",
+            "rain"
+          ],
+          "prefix_distribution": {
+            "o": 1,
+            "": 1
+          },
+          "middle_distribution": {
+            "d": 1,
+            "r": 1
+          },
+          "zodiac_pct": 0.0,
+          "ac_pct": 100.0,
+          "shared_folios": [
+            "f68r2",
+            "f67r2"
+          ],
+          "dominant_prefix": "o"
+        },
+        {
+          "cluster_id": 45,
+          "size": 2,
+          "tokens": [
+            "ckhhy",
+            "ckhy"
+          ],
+          "prefix_distribution": {
+            "": 2
+          },
+          "middle_distribution": {
+            "ckhh": 1,
+            "ckh": 1
+          },
+          "zodiac_pct": 0.0,
+          "ac_pct": 100.0,
+          "shared_folios": [
+            "f68v3",
+            "f70r2"
+          ],
+          "dominant_prefix": ""
+        },
+        {
+          "cluster_id": 46,
+          "size": 2,
+          "tokens": [
+            "aram",
+            "ain"
+          ],
+          "prefix_distribution": {
+            "ar": 1,
+            "a": 1
+          },
+          "middle_distribution": {
+            "a": 1,
+            "i": 1
+          },
+          "zodiac_pct": 11.8,
+          "ac_pct": 88.2,
+          "shared_folios": [
+            "f70r2",
+            "f67r1",
+            "f67r2"
+          ],
+          "dominant_prefix": "ar"
+        },
+        {
+          "cluster_id": 57,
+          "size": 2,
+          "tokens": [
+            "chok",
+            "qoteey"
+          ],
+          "prefix_distribution": {
+            "ch": 1,
+            "qo": 1
+          },
+          "middle_distribution": {
+            "ok": 1,
+            "tee": 1
+          },
+          "zodiac_pct": 0.0,
+          "ac_pct": 100.0,
+          "shared_folios": [
+            "f68v3",
+            "f68r3"
+          ],
+          "dominant_prefix": "ch"
+        }
+      ],
+      "sub_families_detected": {}
+    }
+  },
+  "verdict": {
+    "overall": "SUB_FAMILIES_DETECTED",
+    "interpretation": "AZC co-occurrence reveals sub-families within PREFIX classes: y",
+    "sub_families_detected": [
+      "y"
+    ]
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "fit_id": "F-AZC-002",
+  "question": "Is R1->R2->R3 a true grammar or just labeling?",
+  "metadata": {
+    "zodiac_tokens": 3654,
+    "total_transitions": 3641,
+    "unique_placements": 12
+  },
+  "transition_matrix": {
+    "R1": {
+      "C": {
+        "count": 1,
+        "prob": 0.000966183574879227
+      },
+      "R1": {
+        "count": 1022,
+        "prob": 0.9874396135265701
+      },
+      "R2": {
+        "count": 1,
+        "prob": 0.000966183574879227
+      },
+      "R3": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R4": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S0": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S1": {
+        "count": 11,
+        "prob": 0.010628019323671498
+      },
+      "S2": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S3": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "T": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "X": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "Y": {
+        "count": 0,
+        "prob": 0.0
+      }
+    },
+    "R2": {
+      "C": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R1": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R2": {
+        "count": 823,
+        "prob": 0.9844497607655502
+      },
+      "R3": {
+        "count": 1,
+        "prob": 0.0011961722488038277
+      },
+      "R4": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S0": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S1": {
+        "count": 1,
+        "prob": 0.0011961722488038277
+      },
+      "S2": {
+        "count": 11,
+        "prob": 0.013157894736842105
+      },
+      "S3": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "T": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "X": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "Y": {
+        "count": 0,
+        "prob": 0.0
+      }
+    },
+    "R3": {
+      "C": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R1": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R2": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R3": {
+        "count": 479,
+        "prob": 0.9937759336099585
+      },
+      "R4": {
+        "count": 1,
+        "prob": 0.002074688796680498
+      },
+      "S0": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S1": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S2": {
+        "count": 1,
+        "prob": 0.002074688796680498
+      },
+      "S3": {
+        "count": 1,
+        "prob": 0.002074688796680498
+      },
+      "T": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "X": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "Y": {
+        "count": 0,
+        "prob": 0.0
+      }
+    },
+    "R4": {
+      "C": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R1": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R2": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R3": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "R4": {
+        "count": 107,
+        "prob": 0.9907407407407407
+      },
+      "S0": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S1": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S2": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "S3": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "T": {
+        "count": 0,
+        "prob": 0.0
+      },
+      "X": {
+        "count": 1,
+        "prob": 0.009259259259259259
+      },
+      "Y": {
+        "count": 0,
+        "prob": 0.0
+      }
+    }
+  },
+  "direction_analysis": {
+    "r_series": {
+      "forward_adjacent": 3,
+      "backward_adjacent": 0,
+      "forward_pct": 100.0,
+      "binomial_p": 0.25,
+      "significant": false
+    },
+    "s_series": {
+      "forward_adjacent": 0,
+      "backward_adjacent": 0,
+      "forward_pct": null,
+      "binomial_p": null,
+      "significant": false
+    }
+  },
+  "position_correlation": {
+    "kruskal_wallis_stat": 927.478154877416,
+    "kruskal_wallis_p": 9.699224902643126e-201,
+    "significant": true
+  },
+  "position_stats": {
+    "R1": {
+      "mean": 0.246,
+      "std": 0.232,
+      "n": 1035
+    },
+    "R2": {
+      "mean": 0.576,
+      "std": 0.168,
+      "n": 836
+    },
+    "R3": {
+      "mean": 0.657,
+      "std": 0.344,
+      "n": 491
+    },
+    "R4": {
+      "mean": 0.871,
+      "std": 0.069,
+      "n": 109
+    },
+    "X": {
+      "mean": 0.956,
+      "std": 0.007,
+      "n": 12
+    },
+    "Y": {
+      "mean": 0.985,
+      "std": 0.009,
+      "n": 15
+    },
+    "S2": {
+      "mean": 0.647,
+      "std": 0.215,
+      "n": 484
+    },
+    "S1": {
+      "mean": 0.509,
+      "std": 0.175,
+      "n": 614
+    },
+    "C": {
+      "mean": 0.996,
+      "std": 0.003,
+      "n": 5
+    },
+    "S0": {
+      "mean": 0.024,
+      "std": 0.016,
+      "n": 33
+    },
+    "S3": {
+      "mean": 0.921,
+      "std": 0.014,
+      "n": 17
+    }
+  },
+  "transition_entropies": {
+    "C": -0.0,
+    "R1": 0.107,
+    "R2": 0.128,
+    "R3": 0.064,
+    "R4": 0.076,
+    "S0": 0.439,
+    "S1": 0.138,
+    "S2": 0.188,
+    "S3": 0.323,
+    "T": 0.918,
+    "X": 0.414,
+    "Y": -0.0
+  },
+  "success_criteria": {
+    "r_forward_bias": false,
+    "s_forward_bias": false,
+    "position_correlates": true,
+    "met_count": 1,
+    "total": 3
+  },
+  "positional_grammar": {
+    "r_positions_ordered": true,
+    "s_positions_ordered": true,
+    "positional_grammar_detected": true,
+    "r_means": {
+      "R1": 0.246,
+      "R2": 0.576,
+      "R3": 0.657,
+      "R4": 0.871
+    },
+    "s_means": {
+      "S0": 0.024,
+      "S1": 0.509,
+      "S2": 0.647,
+      "S3": 0.921
+    }
+  },
+  "interpretation": {
+    "grammar_type": "POSITIONAL GRAMMAR",
+    "finding": "Zodiac AZC implements a POSITIONAL GRAMMAR - placements encode line position",
+    "fit_tier": "F2"
+  }
+}

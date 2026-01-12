@@ -1,0 +1,47 @@
+{
+  "hypothesis": "Efficiency Regime Interpretation",
+  "tests": {
+    "test_2": {
+      "name": "MIDDLE Discrimination Pressure",
+      "result": "~",
+      "verdict": {
+        "overall": "WEAK_SUPPORT",
+        "interpretation": "Some gradient evidence but not consistent across prefix families"
+      }
+    },
+    "test_1": {
+      "name": "Residual Brittleness Analysis",
+      "result": "-",
+      "verdict": {
+        "overall": "TEST_1_FAILED_PREFIX",
+        "interpretation": "Effect is morphological, not regime-based"
+      }
+    },
+    "test_4": {
+      "name": "Universal MIDDLE Negative Control",
+      "result": "+",
+      "verdict": {
+        "overall": "NEGATIVE_CONTROL_PASSED",
+        "interpretation": "Universal MIDDLEs are regime-neutral; Exclusive MIDDLEs show regime bias"
+      }
+    },
+    "test_3": {
+      "name": "Family Escape Transfer",
+      "result": "~",
+      "verdict": {
+        "overall": "TEST_3_PARTIAL",
+        "interpretation": "A/C tokens show weak positive escape correlation"
+      }
+    }
+  },
+  "matrix": {
+    "T2": "~",
+    "T1": "-",
+    "T4": "+",
+    "T3": "~"
+  },
+  "overall": {
+    "verdict": "WEAK_PARTIAL",
+    "explanation": "Weak discrimination evidence, no brittleness effect, but negative control passed"
+  }
+}

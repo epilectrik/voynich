@@ -1,0 +1,207 @@
+{
+  "fit_id": "F-AZC-001",
+  "question": "Can morphology predict placement?",
+  "metadata": {
+    "total_tokens": 5354,
+    "zodiac_tokens": 2076,
+    "ac_tokens": 3278
+  },
+  "stage_1_global": {
+    "accuracy": 0.2446,
+    "random_baseline": 0.1922,
+    "lift": 1.27,
+    "n_classes": 24,
+    "class_accuracy": {
+      "C": 0.4487,
+      "P": 0.4475,
+      "S1": 0.1864,
+      "R1": 0.0909,
+      "R3": 0.0862,
+      "R": 0.0167,
+      "O": 0.0,
+      "R2": 0.1048,
+      "X": 0.0357,
+      "S": 0.0893,
+      "Y": 0.0323,
+      "S2": 0.3548,
+      "S3": 0.0,
+      "S0": 0.2,
+      "C2": 0.0,
+      "C1": 0.0,
+      "L": 0.0588,
+      "I": 0.25,
+      "R4": 0.0,
+      "Z": 1.0,
+      "F": 0.0,
+      "B": 0.1667,
+      "U": 1.0
+    },
+    "class_distribution": {
+      "T": 0.0006,
+      "R1": 0.1093,
+      "R3": 0.0542,
+      "R4": 0.003,
+      "X": 0.0237,
+      "Y": 0.0304,
+      "L": 0.02,
+      "P": 0.1683,
+      "R": 0.0708,
+      "S": 0.0514,
+      "C": 0.1922,
+      "Z": 0.0006,
+      "F": 0.0013,
+      "U": 0.0039,
+      "C1": 0.0155,
+      "C2": 0.0045,
+      "O": 0.0194,
+      "I": 0.0112,
+      "B": 0.0028,
+      "S2": 0.0557,
+      "R2": 0.0913,
+      "S1": 0.0643,
+      "S0": 0.005,
+      "S3": 0.0007
+    }
+  },
+  "stage_2_split": {
+    "zodiac": {
+      "accuracy": 0.2332,
+      "baseline": 0.2818
+    },
+    "ac": {
+      "accuracy": 0.3643,
+      "baseline": 0.3124
+    }
+  },
+  "feature_discriminators": [
+    {
+      "placement": "L",
+      "feature_type": "prefix",
+      "feature": "ok",
+      "pct": 69.2
+    },
+    {
+      "placement": "U",
+      "feature_type": "prefix",
+      "feature": "ok",
+      "pct": 57.1
+    },
+    {
+      "placement": "S0",
+      "feature_type": "prefix",
+      "feature": "ok",
+      "pct": 55.6
+    },
+    {
+      "placement": "S2",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 48.7
+    },
+    {
+      "placement": "S1",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 41.3
+    },
+    {
+      "placement": "C1",
+      "feature_type": "prefix",
+      "feature": "ch",
+      "pct": 39.8
+    },
+    {
+      "placement": "C2",
+      "feature_type": "prefix",
+      "feature": "ch",
+      "pct": 37.5
+    },
+    {
+      "placement": "I",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 36.7
+    },
+    {
+      "placement": "C",
+      "feature_type": "prefix",
+      "feature": "ch",
+      "pct": 34.6
+    },
+    {
+      "placement": "R2",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 33.9
+    },
+    {
+      "placement": "C2",
+      "feature_type": "suffix",
+      "feature": "ol",
+      "pct": 33.3
+    },
+    {
+      "placement": "S0",
+      "feature_type": "suffix",
+      "feature": "dy",
+      "pct": 33.3
+    },
+    {
+      "placement": "R3",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 32.1
+    },
+    {
+      "placement": "P",
+      "feature_type": "prefix",
+      "feature": "ch",
+      "pct": 30.6
+    },
+    {
+      "placement": "R1",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 30.3
+    },
+    {
+      "placement": "U",
+      "feature_type": "suffix",
+      "feature": "y",
+      "pct": 28.6
+    },
+    {
+      "placement": "S",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 28.4
+    },
+    {
+      "placement": "Y",
+      "feature_type": "prefix",
+      "feature": "ch",
+      "pct": 27.6
+    },
+    {
+      "placement": "O",
+      "feature_type": "prefix",
+      "feature": "ot",
+      "pct": 26.9
+    },
+    {
+      "placement": "S2",
+      "feature_type": "suffix",
+      "feature": "y",
+      "pct": 26.5
+    }
+  ],
+  "success_criteria": {
+    "target": 0.5,
+    "achieved": 0.2446,
+    "met": false
+  },
+  "interpretation": {
+    "finding": "Morphology does NOT predict placement - placement is diagrammatic only",
+    "fit_tier": "F4"
+  }
+}

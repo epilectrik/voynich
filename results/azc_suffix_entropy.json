@@ -1,0 +1,693 @@
+{
+  "metadata": {
+    "test": "1.2",
+    "question": "Suffix entropy by AZC placement",
+    "total_tokens": 9401
+  },
+  "placement_distribution": {
+    "T": 3,
+    "R1": 585,
+    "R3": 290,
+    "R4": 16,
+    "X": 127,
+    "Y": 163,
+    "L": 107,
+    "P": 901,
+    "R": 379,
+    "S": 275,
+    "C": 1029,
+    "Z": 3,
+    "F": 7,
+    "U": 21,
+    "C1": 83,
+    "C2": 24,
+    "O": 104,
+    "I": 60,
+    "B": 15,
+    "S2": 298,
+    "R2": 489,
+    "S1": 344,
+    "S0": 27,
+    "S3": 4
+  },
+  "placement_entropy": {
+    "T": {
+      "entropy": 0.918,
+      "n_tokens": 3,
+      "n_unique_suffixes": 2,
+      "top_suffixes": [
+        [
+          "ol",
+          2
+        ],
+        [
+          "al",
+          1
+        ]
+      ]
+    },
+    "R1": {
+      "entropy": 4.055,
+      "n_tokens": 585,
+      "n_unique_suffixes": 30,
+      "top_suffixes": [
+        [
+          "ey",
+          97
+        ],
+        [
+          "y",
+          66
+        ],
+        [
+          "al",
+          52
+        ],
+        [
+          "s",
+          51
+        ],
+        [
+          "ar",
+          39
+        ]
+      ]
+    },
+    "R3": {
+      "entropy": 4.345,
+      "n_tokens": 290,
+      "n_unique_suffixes": 34,
+      "top_suffixes": [
+        [
+          "ey",
+          34
+        ],
+        [
+          "s",
+          31
+        ],
+        [
+          "al",
+          26
+        ],
+        [
+          "aiin",
+          25
+        ],
+        [
+          "y",
+          22
+        ]
+      ]
+    },
+    "R4": {
+      "entropy": 3.125,
+      "n_tokens": 16,
+      "n_unique_suffixes": 10,
+      "top_suffixes": [
+        [
+          "dy",
+          4
+        ],
+        [
+          "y",
+          2
+        ],
+        [
+          "al",
+          2
+        ],
+        [
+          "s",
+          2
+        ],
+        [
+          "ar",
+          1
+        ]
+      ]
+    },
+    "X": {
+      "entropy": 3.853,
+      "n_tokens": 127,
+      "n_unique_suffixes": 21,
+      "top_suffixes": [
+        [
+          "y",
+          22
+        ],
+        [
+          "s",
+          17
+        ],
+        [
+          "al",
+          15
+        ],
+        [
+          "dy",
+          14
+        ],
+        [
+          "d",
+          6
+        ]
+      ]
+    },
+    "Y": {
+      "entropy": 3.894,
+      "n_tokens": 163,
+      "n_unique_suffixes": 24,
+      "top_suffixes": [
+        [
+          "y",
+          28
+        ],
+        [
+          "dy",
+          18
+        ],
+        [
+          "ey",
+          18
+        ],
+        [
+          "ar",
+          17
+        ],
+        [
+          "r",
+          14
+        ]
+      ]
+    },
+    "L": {
+      "entropy": 3.878,
+      "n_tokens": 107,
+      "n_unique_suffixes": 19,
+      "top_suffixes": [
+        [
+          "ol",
+          13
+        ],
+        [
+          "ey",
+          12
+        ],
+        [
+          "dy",
+          11
+        ],
+        [
+          "d",
+          10
+        ],
+        [
+          "eo",
+          8
+        ]
+      ]
+    },
+    "P": {
+      "entropy": 4.104,
+      "n_tokens": 901,
+      "n_unique_suffixes": 44,
+      "top_suffixes": [
+        [
+          "ey",
+          183
+        ],
+        [
+          "y",
+          101
+        ],
+        [
+          "al",
+          86
+        ],
+        [
+          "dy",
+          80
+        ],
+        [
+          "ol",
+          77
+        ]
+      ]
+    },
+    "R": {
+      "entropy": 4.239,
+      "n_tokens": 379,
+      "n_unique_suffixes": 34,
+      "top_suffixes": [
+        [
+          "ey",
+          51
+        ],
+        [
+          "r",
+          44
+        ],
+        [
+          "y",
+          41
+        ],
+        [
+          "ar",
+          36
+        ],
+        [
+          "dy",
+          34
+        ]
+      ]
+    },
+    "S": {
+      "entropy": 4.166,
+      "n_tokens": 275,
+      "n_unique_suffixes": 31,
+      "top_suffixes": [
+        [
+          "ey",
+          38
+        ],
+        [
+          "dy",
+          35
+        ],
+        [
+          "y",
+          26
+        ],
+        [
+          "or",
+          23
+        ],
+        [
+          "ar",
+          21
+        ]
+      ]
+    },
+    "C": {
+      "entropy": 4.112,
+      "n_tokens": 1029,
+      "n_unique_suffixes": 43,
+      "top_suffixes": [
+        [
+          "ey",
+          148
+        ],
+        [
+          "y",
+          124
+        ],
+        [
+          "s",
+          105
+        ],
+        [
+          "dy",
+          96
+        ],
+        [
+          "ar",
+          73
+        ]
+      ]
+    },
+    "Z": {
+      "entropy": 0.918,
+      "n_tokens": 3,
+      "n_unique_suffixes": 2,
+      "top_suffixes": [
+        [
+          "s",
+          2
+        ],
+        [
+          "ar",
+          1
+        ]
+      ]
+    },
+    "F": {
+      "entropy": 2.236,
+      "n_tokens": 7,
+      "n_unique_suffixes": 5,
+      "top_suffixes": [
+        [
+          "ain",
+          2
+        ],
+        [
+          "s",
+          2
+        ],
+        [
+          "**",
+          1
+        ],
+        [
+          "am",
+          1
+        ],
+        [
+          "hj",
+          1
+        ]
+      ]
+    },
+    "U": {
+      "entropy": 2.267,
+      "n_tokens": 21,
+      "n_unique_suffixes": 6,
+      "top_suffixes": [
+        [
+          "y",
+          6
+        ],
+        [
+          "ol",
+          6
+        ],
+        [
+          "eo",
+          5
+        ],
+        [
+          "ar",
+          2
+        ],
+        [
+          "or",
+          1
+        ]
+      ]
+    },
+    "C1": {
+      "entropy": 4.047,
+      "n_tokens": 83,
+      "n_unique_suffixes": 22,
+      "top_suffixes": [
+        [
+          "dy",
+          14
+        ],
+        [
+          "ey",
+          8
+        ],
+        [
+          "edy",
+          7
+        ],
+        [
+          "al",
+          7
+        ],
+        [
+          "ol",
+          5
+        ]
+      ]
+    },
+    "C2": {
+      "entropy": 2.594,
+      "n_tokens": 24,
+      "n_unique_suffixes": 7,
+      "top_suffixes": [
+        [
+          "ol",
+          8
+        ],
+        [
+          "dy",
+          3
+        ],
+        [
+          "chy",
+          3
+        ],
+        [
+          "r",
+          3
+        ],
+        [
+          "o",
+          3
+        ]
+      ]
+    },
+    "O": {
+      "entropy": 3.685,
+      "n_tokens": 104,
+      "n_unique_suffixes": 18,
+      "top_suffixes": [
+        [
+          "ey",
+          17
+        ],
+        [
+          "ol",
+          16
+        ],
+        [
+          "y",
+          14
+        ],
+        [
+          "r",
+          11
+        ],
+        [
+          "dy",
+          8
+        ]
+      ]
+    },
+    "I": {
+      "entropy": 3.328,
+      "n_tokens": 60,
+      "n_unique_suffixes": 14,
+      "top_suffixes": [
+        [
+          "y",
+          14
+        ],
+        [
+          "ey",
+          9
+        ],
+        [
+          "",
+          9
+        ],
+        [
+          "ol",
+          5
+        ],
+        [
+          "or",
+          4
+        ]
+      ]
+    },
+    "B": {
+      "entropy": 2.322,
+      "n_tokens": 15,
+      "n_unique_suffixes": 5,
+      "top_suffixes": [
+        [
+          "ol",
+          3
+        ],
+        [
+          "y",
+          3
+        ],
+        [
+          "ey",
+          3
+        ],
+        [
+          "chy",
+          3
+        ],
+        [
+          "r",
+          3
+        ]
+      ]
+    },
+    "S2": {
+      "entropy": 3.666,
+      "n_tokens": 298,
+      "n_unique_suffixes": 26,
+      "top_suffixes": [
+        [
+          "y",
+          79
+        ],
+        [
+          "dy",
+          40
+        ],
+        [
+          "al",
+          33
+        ],
+        [
+          "ar",
+          29
+        ],
+        [
+          "d",
+          17
+        ]
+      ]
+    },
+    "R2": {
+      "entropy": 4.037,
+      "n_tokens": 489,
+      "n_unique_suffixes": 31,
+      "top_suffixes": [
+        [
+          "ey",
+          86
+        ],
+        [
+          "y",
+          54
+        ],
+        [
+          "dy",
+          45
+        ],
+        [
+          "s",
+          37
+        ],
+        [
+          "al",
+          36
+        ]
+      ]
+    },
+    "S1": {
+      "entropy": 3.797,
+      "n_tokens": 344,
+      "n_unique_suffixes": 30,
+      "top_suffixes": [
+        [
+          "y",
+          76
+        ],
+        [
+          "ar",
+          41
+        ],
+        [
+          "al",
+          39
+        ],
+        [
+          "dy",
+          35
+        ],
+        [
+          "am",
+          27
+        ]
+      ]
+    },
+    "S0": {
+      "entropy": 2.383,
+      "n_tokens": 27,
+      "n_unique_suffixes": 7,
+      "top_suffixes": [
+        [
+          "dy",
+          9
+        ],
+        [
+          "y",
+          8
+        ],
+        [
+          "am",
+          3
+        ],
+        [
+          "ar",
+          3
+        ],
+        [
+          "edy",
+          2
+        ]
+      ]
+    },
+    "S3": {
+      "entropy": 1.5,
+      "n_tokens": 4,
+      "n_unique_suffixes": 3,
+      "top_suffixes": [
+        [
+          "al",
+          2
+        ],
+        [
+          "or",
+          1
+        ],
+        [
+          "ar",
+          1
+        ]
+      ]
+    }
+  },
+  "family_stats": {
+    "C": {
+      "mean_entropy": 0.605,
+      "n_middles": 68,
+      "n_tokens": 1029
+    },
+    "P": {
+      "mean_entropy": 0.761,
+      "n_middles": 56,
+      "n_tokens": 901
+    },
+    "R-series": {
+      "mean_entropy": 1.12,
+      "n_middles": 116,
+      "n_tokens": 1759
+    },
+    "S-series": {
+      "mean_entropy": 0.612,
+      "n_middles": 95,
+      "n_tokens": 948
+    },
+    "OTHER": {
+      "mean_entropy": 0.646,
+      "n_middles": 86,
+      "n_tokens": 717
+    }
+  },
+  "statistical_test": {
+    "test": "Kruskal-Wallis",
+    "h_statistic": 26.23,
+    "p_value": 8.528791126658989e-06,
+    "significant": true
+  },
+  "comparison_to_a": {
+    "a_universal_entropy": 2.371,
+    "a_other_entropy": 1.382
+  },
+  "interpretation": {
+    "finding": "R-series has higher entropy than S-series",
+    "possible_constraint": "Interior placements (R-series) permit wider decision space than boundary placements (S-series)",
+    "semantic_ceiling": "We measure decision space, not decision content"
+  }
+}
