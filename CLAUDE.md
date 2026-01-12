@@ -15,7 +15,7 @@ This project uses a **progressive context system**.
 | Metric | Value |
 |--------|-------|
 | Version | 2.6 FROZEN STATE |
-| Constraints | 299 validated |
+| Constraints | 317 validated |
 | Phases | 118 completed |
 | Folios | 83 (Currier B) |
 
@@ -35,7 +35,7 @@ context/
 ├── SYSTEM/              ← Methodology, tiers, stop conditions
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
-├── CLAIMS/              ← 299 constraints (INDEX + files)
+├── CLAIMS/              ← 317 constraints (INDEX + files)
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
 ├── METRICS/             ← Quantitative facts
@@ -84,6 +84,25 @@ The assistant must **automatically consult the context system** when performing:
 - UI layout or styling
 - Pure refactors without semantic effect
 - Performance or tooling changes
+
+---
+
+## Expert Sync Files
+
+When asked to **"sync reference files for our expert"**, update these 4 files:
+
+| File | Purpose | Generator |
+|------|---------|-----------|
+| `context/CONSTRAINT_TABLE.txt` | All constraints (Tier 0-2) | `python context/generate_constraint_table.py` |
+| `context/MODEL_FITS/FIT_TABLE.txt` | All fits (F0-F4) | `python context/MODEL_FITS/generate_fit_table.py` |
+| `context/MODEL_CONTEXT.md` | Architectural guide | Manual edit |
+| `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Tier 3-4 interpretations | Manual edit |
+
+**Workflow:**
+1. Run both generator scripts
+2. Update MODEL_CONTEXT.md if structural understanding changed
+3. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
+4. Verify counts match (constraints, fits)
 
 ---
 

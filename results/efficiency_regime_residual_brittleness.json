@@ -1,0 +1,693 @@
+{
+  "test_id": "EFFICIENCY_REGIME_TEST_1",
+  "question": "Does A/C vocabulary explain brittleness beyond what AZC escape already predicts?",
+  "n_folios": 83,
+  "residual_analysis": {
+    "status": "COMPLETE",
+    "n_folios": 83,
+    "baseline_model": {
+      "predictor": "zodiac_fraction",
+      "target": "brittleness",
+      "correlation": -0.006,
+      "r_squared": 0.0,
+      "beta": -0.1456,
+      "alpha": 0.0176
+    },
+    "residual_analysis": {
+      "correlation_residual_vs_ac": -0.274,
+      "correlation_residual_vs_ac_prefix": -0.519,
+      "verdict": "PREFIX_EXPLAINS_RESIDUAL",
+      "interpretation": "Residual explained by PREFIX composition, not family membership"
+    },
+    "folio_details": [
+      {
+        "folio": "f103r",
+        "brittleness": 0.741,
+        "zodiac_fraction": 0.103,
+        "ac_fraction": 0.171,
+        "predicted": 0.003,
+        "residual": 0.738
+      },
+      {
+        "folio": "f103v",
+        "brittleness": 0.163,
+        "zodiac_fraction": 0.117,
+        "ac_fraction": 0.112,
+        "predicted": 0.001,
+        "residual": 0.162
+      },
+      {
+        "folio": "f104r",
+        "brittleness": -0.925,
+        "zodiac_fraction": 0.142,
+        "ac_fraction": 0.188,
+        "predicted": -0.003,
+        "residual": -0.922
+      },
+      {
+        "folio": "f104v",
+        "brittleness": -0.188,
+        "zodiac_fraction": 0.169,
+        "ac_fraction": 0.218,
+        "predicted": -0.007,
+        "residual": -0.181
+      },
+      {
+        "folio": "f105r",
+        "brittleness": -1.485,
+        "zodiac_fraction": 0.107,
+        "ac_fraction": 0.197,
+        "predicted": 0.002,
+        "residual": -1.487
+      },
+      {
+        "folio": "f105v",
+        "brittleness": -1.347,
+        "zodiac_fraction": 0.116,
+        "ac_fraction": 0.157,
+        "predicted": 0.001,
+        "residual": -1.348
+      },
+      {
+        "folio": "f106r",
+        "brittleness": -0.025,
+        "zodiac_fraction": 0.16,
+        "ac_fraction": 0.182,
+        "predicted": -0.006,
+        "residual": -0.019
+      },
+      {
+        "folio": "f106v",
+        "brittleness": 0.442,
+        "zodiac_fraction": 0.151,
+        "ac_fraction": 0.169,
+        "predicted": -0.004,
+        "residual": 0.446
+      },
+      {
+        "folio": "f107r",
+        "brittleness": -0.412,
+        "zodiac_fraction": 0.151,
+        "ac_fraction": 0.142,
+        "predicted": -0.004,
+        "residual": -0.408
+      },
+      {
+        "folio": "f107v",
+        "brittleness": -1.071,
+        "zodiac_fraction": 0.099,
+        "ac_fraction": 0.182,
+        "predicted": 0.003,
+        "residual": -1.074
+      },
+      {
+        "folio": "f108r",
+        "brittleness": 0.372,
+        "zodiac_fraction": 0.106,
+        "ac_fraction": 0.179,
+        "predicted": 0.002,
+        "residual": 0.37
+      },
+      {
+        "folio": "f108v",
+        "brittleness": -0.161,
+        "zodiac_fraction": 0.1,
+        "ac_fraction": 0.132,
+        "predicted": 0.003,
+        "residual": -0.164
+      },
+      {
+        "folio": "f111r",
+        "brittleness": -0.14,
+        "zodiac_fraction": 0.14,
+        "ac_fraction": 0.147,
+        "predicted": -0.003,
+        "residual": -0.137
+      },
+      {
+        "folio": "f111v",
+        "brittleness": 0.611,
+        "zodiac_fraction": 0.133,
+        "ac_fraction": 0.183,
+        "predicted": -0.002,
+        "residual": 0.613
+      },
+      {
+        "folio": "f112r",
+        "brittleness": -0.308,
+        "zodiac_fraction": 0.086,
+        "ac_fraction": 0.163,
+        "predicted": 0.005,
+        "residual": -0.313
+      },
+      {
+        "folio": "f112v",
+        "brittleness": 0.138,
+        "zodiac_fraction": 0.148,
+        "ac_fraction": 0.211,
+        "predicted": -0.004,
+        "residual": 0.142
+      },
+      {
+        "folio": "f113r",
+        "brittleness": 0.411,
+        "zodiac_fraction": 0.171,
+        "ac_fraction": 0.163,
+        "predicted": -0.007,
+        "residual": 0.418
+      },
+      {
+        "folio": "f113v",
+        "brittleness": -0.408,
+        "zodiac_fraction": 0.14,
+        "ac_fraction": 0.14,
+        "predicted": -0.003,
+        "residual": -0.405
+      },
+      {
+        "folio": "f114r",
+        "brittleness": -0.203,
+        "zodiac_fraction": 0.119,
+        "ac_fraction": 0.178,
+        "predicted": 0.0,
+        "residual": -0.203
+      },
+      {
+        "folio": "f114v",
+        "brittleness": 0.12,
+        "zodiac_fraction": 0.143,
+        "ac_fraction": 0.235,
+        "predicted": -0.003,
+        "residual": 0.123
+      },
+      {
+        "folio": "f115r",
+        "brittleness": -0.276,
+        "zodiac_fraction": 0.083,
+        "ac_fraction": 0.207,
+        "predicted": 0.006,
+        "residual": -0.282
+      },
+      {
+        "folio": "f115v",
+        "brittleness": -1.582,
+        "zodiac_fraction": 0.175,
+        "ac_fraction": 0.24,
+        "predicted": -0.008,
+        "residual": -1.574
+      },
+      {
+        "folio": "f116r",
+        "brittleness": 0.847,
+        "zodiac_fraction": 0.115,
+        "ac_fraction": 0.179,
+        "predicted": 0.001,
+        "residual": 0.846
+      },
+      {
+        "folio": "f26r",
+        "brittleness": -0.026,
+        "zodiac_fraction": 0.057,
+        "ac_fraction": 0.129,
+        "predicted": 0.009,
+        "residual": -0.035
+      },
+      {
+        "folio": "f26v",
+        "brittleness": -0.682,
+        "zodiac_fraction": 0.088,
+        "ac_fraction": 0.206,
+        "predicted": 0.005,
+        "residual": -0.687
+      },
+      {
+        "folio": "f31r",
+        "brittleness": 0.916,
+        "zodiac_fraction": 0.043,
+        "ac_fraction": 0.15,
+        "predicted": 0.011,
+        "residual": 0.905
+      },
+      {
+        "folio": "f31v",
+        "brittleness": 0.628,
+        "zodiac_fraction": 0.139,
+        "ac_fraction": 0.108,
+        "predicted": -0.003,
+        "residual": 0.631
+      },
+      {
+        "folio": "f33r",
+        "brittleness": 1.738,
+        "zodiac_fraction": 0.212,
+        "ac_fraction": 0.132,
+        "predicted": -0.013,
+        "residual": 1.751
+      },
+      {
+        "folio": "f33v",
+        "brittleness": 2.79,
+        "zodiac_fraction": 0.102,
+        "ac_fraction": 0.162,
+        "predicted": 0.003,
+        "residual": 2.787
+      },
+      {
+        "folio": "f34r",
+        "brittleness": 0.89,
+        "zodiac_fraction": 0.077,
+        "ac_fraction": 0.246,
+        "predicted": 0.006,
+        "residual": 0.884
+      },
+      {
+        "folio": "f34v",
+        "brittleness": 0.671,
+        "zodiac_fraction": 0.169,
+        "ac_fraction": 0.142,
+        "predicted": -0.007,
+        "residual": 0.678
+      },
+      {
+        "folio": "f39r",
+        "brittleness": 1.71,
+        "zodiac_fraction": 0.121,
+        "ac_fraction": 0.11,
+        "predicted": 0.0,
+        "residual": 1.71
+      },
+      {
+        "folio": "f39v",
+        "brittleness": 1.548,
+        "zodiac_fraction": 0.153,
+        "ac_fraction": 0.169,
+        "predicted": -0.005,
+        "residual": 1.553
+      },
+      {
+        "folio": "f40r",
+        "brittleness": 0.805,
+        "zodiac_fraction": 0.164,
+        "ac_fraction": 0.182,
+        "predicted": -0.006,
+        "residual": 0.811
+      },
+      {
+        "folio": "f40v",
+        "brittleness": -0.925,
+        "zodiac_fraction": 0.098,
+        "ac_fraction": 0.264,
+        "predicted": 0.003,
+        "residual": -0.928
+      },
+      {
+        "folio": "f41r",
+        "brittleness": -0.563,
+        "zodiac_fraction": 0.106,
+        "ac_fraction": 0.227,
+        "predicted": 0.002,
+        "residual": -0.565
+      },
+      {
+        "folio": "f41v",
+        "brittleness": -0.965,
+        "zodiac_fraction": 0.065,
+        "ac_fraction": 0.237,
+        "predicted": 0.008,
+        "residual": -0.973
+      },
+      {
+        "folio": "f43r",
+        "brittleness": 0.466,
+        "zodiac_fraction": 0.103,
+        "ac_fraction": 0.192,
+        "predicted": 0.003,
+        "residual": 0.463
+      },
+      {
+        "folio": "f43v",
+        "brittleness": 0.983,
+        "zodiac_fraction": 0.133,
+        "ac_fraction": 0.146,
+        "predicted": -0.002,
+        "residual": 0.985
+      },
+      {
+        "folio": "f46r",
+        "brittleness": 1.96,
+        "zodiac_fraction": 0.116,
+        "ac_fraction": 0.207,
+        "predicted": 0.001,
+        "residual": 1.959
+      },
+      {
+        "folio": "f46v",
+        "brittleness": 1.378,
+        "zodiac_fraction": 0.093,
+        "ac_fraction": 0.23,
+        "predicted": 0.004,
+        "residual": 1.374
+      },
+      {
+        "folio": "f48r",
+        "brittleness": -1.743,
+        "zodiac_fraction": 0.153,
+        "ac_fraction": 0.279,
+        "predicted": -0.005,
+        "residual": -1.738
+      },
+      {
+        "folio": "f48v",
+        "brittleness": 0.471,
+        "zodiac_fraction": 0.09,
+        "ac_fraction": 0.193,
+        "predicted": 0.005,
+        "residual": 0.466
+      },
+      {
+        "folio": "f50r",
+        "brittleness": -0.82,
+        "zodiac_fraction": 0.237,
+        "ac_fraction": 0.189,
+        "predicted": -0.017,
+        "residual": -0.803
+      },
+      {
+        "folio": "f50v",
+        "brittleness": -0.244,
+        "zodiac_fraction": 0.087,
+        "ac_fraction": 0.271,
+        "predicted": 0.005,
+        "residual": -0.249
+      },
+      {
+        "folio": "f55r",
+        "brittleness": 0.883,
+        "zodiac_fraction": 0.078,
+        "ac_fraction": 0.307,
+        "predicted": 0.006,
+        "residual": 0.877
+      },
+      {
+        "folio": "f55v",
+        "brittleness": -0.397,
+        "zodiac_fraction": 0.066,
+        "ac_fraction": 0.147,
+        "predicted": 0.008,
+        "residual": -0.405
+      },
+      {
+        "folio": "f57r",
+        "brittleness": 0.385,
+        "zodiac_fraction": 0.121,
+        "ac_fraction": 0.248,
+        "predicted": 0.0,
+        "residual": 0.385
+      },
+      {
+        "folio": "f66r",
+        "brittleness": 0.778,
+        "zodiac_fraction": 0.133,
+        "ac_fraction": 0.198,
+        "predicted": -0.002,
+        "residual": 0.78
+      },
+      {
+        "folio": "f66v",
+        "brittleness": 1.514,
+        "zodiac_fraction": 0.072,
+        "ac_fraction": 0.21,
+        "predicted": 0.007,
+        "residual": 1.507
+      },
+      {
+        "folio": "f75r",
+        "brittleness": -0.191,
+        "zodiac_fraction": 0.107,
+        "ac_fraction": 0.215,
+        "predicted": 0.002,
+        "residual": -0.193
+      },
+      {
+        "folio": "f75v",
+        "brittleness": -1.144,
+        "zodiac_fraction": 0.117,
+        "ac_fraction": 0.236,
+        "predicted": 0.001,
+        "residual": -1.145
+      },
+      {
+        "folio": "f76r",
+        "brittleness": 1.225,
+        "zodiac_fraction": 0.088,
+        "ac_fraction": 0.199,
+        "predicted": 0.005,
+        "residual": 1.22
+      },
+      {
+        "folio": "f76v",
+        "brittleness": 0.352,
+        "zodiac_fraction": 0.117,
+        "ac_fraction": 0.206,
+        "predicted": 0.001,
+        "residual": 0.351
+      },
+      {
+        "folio": "f77r",
+        "brittleness": -0.541,
+        "zodiac_fraction": 0.198,
+        "ac_fraction": 0.139,
+        "predicted": -0.011,
+        "residual": -0.53
+      },
+      {
+        "folio": "f77v",
+        "brittleness": -0.895,
+        "zodiac_fraction": 0.064,
+        "ac_fraction": 0.205,
+        "predicted": 0.008,
+        "residual": -0.903
+      },
+      {
+        "folio": "f78r",
+        "brittleness": -0.523,
+        "zodiac_fraction": 0.04,
+        "ac_fraction": 0.272,
+        "predicted": 0.012,
+        "residual": -0.535
+      },
+      {
+        "folio": "f78v",
+        "brittleness": -0.569,
+        "zodiac_fraction": 0.108,
+        "ac_fraction": 0.134,
+        "predicted": 0.002,
+        "residual": -0.571
+      },
+      {
+        "folio": "f79r",
+        "brittleness": -0.041,
+        "zodiac_fraction": 0.15,
+        "ac_fraction": 0.197,
+        "predicted": -0.004,
+        "residual": -0.037
+      },
+      {
+        "folio": "f79v",
+        "brittleness": -1.444,
+        "zodiac_fraction": 0.147,
+        "ac_fraction": 0.199,
+        "predicted": -0.004,
+        "residual": -1.44
+      },
+      {
+        "folio": "f80r",
+        "brittleness": -0.857,
+        "zodiac_fraction": 0.124,
+        "ac_fraction": 0.262,
+        "predicted": -0.0,
+        "residual": -0.857
+      },
+      {
+        "folio": "f80v",
+        "brittleness": -1.186,
+        "zodiac_fraction": 0.117,
+        "ac_fraction": 0.254,
+        "predicted": 0.001,
+        "residual": -1.187
+      },
+      {
+        "folio": "f81r",
+        "brittleness": -0.221,
+        "zodiac_fraction": 0.114,
+        "ac_fraction": 0.187,
+        "predicted": 0.001,
+        "residual": -0.222
+      },
+      {
+        "folio": "f81v",
+        "brittleness": -0.705,
+        "zodiac_fraction": 0.112,
+        "ac_fraction": 0.182,
+        "predicted": 0.001,
+        "residual": -0.706
+      },
+      {
+        "folio": "f82r",
+        "brittleness": -1.461,
+        "zodiac_fraction": 0.107,
+        "ac_fraction": 0.251,
+        "predicted": 0.002,
+        "residual": -1.463
+      },
+      {
+        "folio": "f82v",
+        "brittleness": -0.881,
+        "zodiac_fraction": 0.1,
+        "ac_fraction": 0.235,
+        "predicted": 0.003,
+        "residual": -0.884
+      },
+      {
+        "folio": "f83r",
+        "brittleness": -0.474,
+        "zodiac_fraction": 0.073,
+        "ac_fraction": 0.277,
+        "predicted": 0.007,
+        "residual": -0.481
+      },
+      {
+        "folio": "f83v",
+        "brittleness": 0.513,
+        "zodiac_fraction": 0.101,
+        "ac_fraction": 0.218,
+        "predicted": 0.003,
+        "residual": 0.51
+      },
+      {
+        "folio": "f84r",
+        "brittleness": -0.182,
+        "zodiac_fraction": 0.07,
+        "ac_fraction": 0.167,
+        "predicted": 0.007,
+        "residual": -0.189
+      },
+      {
+        "folio": "f84v",
+        "brittleness": -0.231,
+        "zodiac_fraction": 0.052,
+        "ac_fraction": 0.191,
+        "predicted": 0.01,
+        "residual": -0.241
+      },
+      {
+        "folio": "f85r1",
+        "brittleness": -0.272,
+        "zodiac_fraction": 0.13,
+        "ac_fraction": 0.19,
+        "predicted": -0.001,
+        "residual": -0.271
+      },
+      {
+        "folio": "f85r2",
+        "brittleness": 0.037,
+        "zodiac_fraction": 0.125,
+        "ac_fraction": 0.174,
+        "predicted": -0.001,
+        "residual": 0.038
+      },
+      {
+        "folio": "f85v2",
+        "brittleness": -0.518,
+        "zodiac_fraction": 0.13,
+        "ac_fraction": 0.13,
+        "predicted": -0.001,
+        "residual": -0.517
+      },
+      {
+        "folio": "f86v3",
+        "brittleness": -1.097,
+        "zodiac_fraction": 0.124,
+        "ac_fraction": 0.235,
+        "predicted": -0.0,
+        "residual": -1.097
+      },
+      {
+        "folio": "f86v4",
+        "brittleness": 1.132,
+        "zodiac_fraction": 0.075,
+        "ac_fraction": 0.138,
+        "predicted": 0.007,
+        "residual": 1.125
+      },
+      {
+        "folio": "f86v5",
+        "brittleness": -0.795,
+        "zodiac_fraction": 0.177,
+        "ac_fraction": 0.201,
+        "predicted": -0.008,
+        "residual": -0.787
+      },
+      {
+        "folio": "f86v6",
+        "brittleness": -0.864,
+        "zodiac_fraction": 0.203,
+        "ac_fraction": 0.183,
+        "predicted": -0.012,
+        "residual": -0.852
+      },
+      {
+        "folio": "f94r",
+        "brittleness": 0.283,
+        "zodiac_fraction": 0.137,
+        "ac_fraction": 0.167,
+        "predicted": -0.002,
+        "residual": 0.285
+      },
+      {
+        "folio": "f94v",
+        "brittleness": -0.338,
+        "zodiac_fraction": 0.092,
+        "ac_fraction": 0.153,
+        "predicted": 0.004,
+        "residual": -0.342
+      },
+      {
+        "folio": "f95r1",
+        "brittleness": 0.656,
+        "zodiac_fraction": 0.233,
+        "ac_fraction": 0.2,
+        "predicted": -0.016,
+        "residual": 0.672
+      },
+      {
+        "folio": "f95r2",
+        "brittleness": 1.698,
+        "zodiac_fraction": 0.154,
+        "ac_fraction": 0.237,
+        "predicted": -0.005,
+        "residual": 1.703
+      },
+      {
+        "folio": "f95v1",
+        "brittleness": -0.844,
+        "zodiac_fraction": 0.14,
+        "ac_fraction": 0.171,
+        "predicted": -0.003,
+        "residual": -0.841
+      },
+      {
+        "folio": "f95v2",
+        "brittleness": 0.916,
+        "zodiac_fraction": 0.175,
+        "ac_fraction": 0.135,
+        "predicted": -0.008,
+        "residual": 0.924
+      }
+    ]
+  },
+  "verdict": {
+    "overall": "TEST_1_FAILED_PREFIX",
+    "interpretation": "Effect is morphological, not regime-based"
+  }
+}

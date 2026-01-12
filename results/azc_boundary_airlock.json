@@ -1,0 +1,45 @@
+{
+  "fit_id": "F-AZC-006",
+  "question": "Does AZC act as an entropy discontinuity?",
+  "metadata": {
+    "total_tokens": 122160,
+    "a_tokens": 37214,
+    "azc_tokens": 9401,
+    "boundary_crossings": 1
+  },
+  "aggregate_profile": {
+    "total_entropy": {
+      "before_mean": 9.454,
+      "azc_mean": 9.892,
+      "after_mean": null,
+      "before_std": 0.0,
+      "azc_std": 0.0,
+      "after_std": null
+    },
+    "escape_rate": {
+      "before_mean": 19.74,
+      "azc_mean": 18.42,
+      "after_mean": null
+    },
+    "middle_diversity": {
+      "before_mean": 0.25,
+      "azc_mean": 0.2763,
+      "after_mean": null
+    }
+  },
+  "step_tests": {
+    "escape_rate": {},
+    "total_entropy": {}
+  },
+  "evidence": {
+    "escape_step_entry": false,
+    "escape_step_exit": false,
+    "entropy_step_entry": false,
+    "evidence_count": 0
+  },
+  "interpretation": {
+    "conclusion": "AZC does NOT show airlock behavior",
+    "role": "CONTINUOUS SYSTEM (no step change)",
+    "fit_tier": "F4"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "total_tokens": 7127,
+    "unique_middles": 725,
+    "date": "2026-01-11"
+  },
+  "test_1_mixture": {
+    "n_middles": 725,
+    "top_30_share": 0.7405640521958748,
+    "zipf_exponent": 0.9145776131222672,
+    "zipf_r2": 0.9135441202760151,
+    "geometric_p": 0.061835937500000084,
+    "mixture_theta": 0.655939903442091,
+    "mixture_p_head": 0.19178378496381854,
+    "mixture_p_tail": 0.006309163103108528,
+    "aic_zipf": -1862.7365642104664,
+    "aic_geometric": -46920.94987420693,
+    "aic_mixture": -52354.835735177665,
+    "best_model": "Mixture",
+    "delta_aic": 5433.885860970731,
+    "mixture_supported": true
+  },
+  "test_2_entropy": {
+    "by_prefix": {
+      "ch": {
+        "count": 2136,
+        "unique_middles": 320,
+        "entropy": 5.256256379510204,
+        "normalized_entropy": 0.6316152121933647,
+        "material_class": "M-A"
+      },
+      "ct": {
+        "count": 446,
+        "unique_middles": 52,
+        "entropy": 3.293779558832184,
+        "normalized_entropy": 0.577811488533078,
+        "material_class": "M-D"
+      },
+      "da": {
+        "count": 1066,
+        "unique_middles": 78,
+        "entropy": 2.2143213705018776,
+        "normalized_entropy": 0.35229589028635033,
+        "material_class": "M-C"
+      },
+      "ok": {
+        "count": 612,
+        "unique_middles": 80,
+        "entropy": 4.399789094349538,
+        "normalized_entropy": 0.695956839165525,
+        "material_class": "M-B"
+      },
+      "ol": {
+        "count": 284,
+        "unique_middles": 76,
+        "entropy": 3.828677800432337,
+        "normalized_entropy": 0.6127916484617052,
+        "material_class": "M-D"
+      },
+      "ot": {
+        "count": 490,
+        "unique_middles": 92,
+        "entropy": 4.494876996608744,
+        "normalized_entropy": 0.6890218912438364,
+        "material_class": "M-C"
+      },
+      "qo": {
+        "count": 1089,
+        "unique_middles": 196,
+        "entropy": 5.7951819451280535,
+        "normalized_entropy": 0.761050921671911,
+        "material_class": "M-A"
+      },
+      "sh": {
+        "count": 1004,
+        "unique_middles": 155,
+        "entropy": 4.358419875158922,
+        "normalized_entropy": 0.5990029351339345,
+        "material_class": "M-B"
+      }
+    },
+    "by_class": {
+      "M-A": {
+        "count": 3225,
+        "unique_middles": 452,
+        "entropy": 6.083574317644885,
+        "normalized_entropy": 0.6897336600049041
+      },
+      "M-B": {
+        "count": 1616,
+        "unique_middles": 206,
+        "entropy": 4.652988976898541,
+        "normalized_entropy": 0.6053455614090314
+      },
+      "M-C": {
+        "count": 1556,
+        "unique_middles": 166,
+        "entropy": 3.582724542996221,
+        "normalized_entropy": 0.4857905610332307
+      },
+      "M-D": {
+        "count": 730,
+        "unique_middles": 124,
+        "entropy": 4.370549415641298,
+        "normalized_entropy": 0.6284765658848874
+      }
+    },
+    "ma_md_ratio": 1.391947267744651,
+    "ma_md_ci": [
+      1.3430353663920083,
+      1.4864152061761065
+    ],
+    "hypothesis_confirmed": true
+  },
+  "test_3_mutual_info": {
+    "mi_all": 1.075758781824696,
+    "nmi_all": 0.2912863648369603,
+    "mi_head": 0.8371120539432917,
+    "nmi_head": 0.28112974342633745,
+    "mi_tail": 1.6627989731800303,
+    "nmi_tail": 0.37657136709868955,
+    "head_tail_diff": -0.8256869192367386,
+    "p_value": 0.917,
+    "hypothesis_confirmed": false
+  },
+  "test_4_hazard": {
+    "head": {
+      "n": 30,
+      "sister_deviation_mean": 0.2886069935039892,
+      "sister_deviation_std": 0.19288165419026196,
+      "section_concentration_mean": 0.6293226945438478,
+      "section_concentration_std": 0.16582772795750494,
+      "suffix_entropy_mean": 1.604795138926901,
+      "suffix_entropy_std": 0.652765560468684
+    },
+    "mid": {
+      "n": 70,
+      "sister_deviation_mean": 0.2865718326957823,
+      "sister_deviation_std": 0.19186232183411658,
+      "section_concentration_mean": 0.6138068380622222,
+      "section_concentration_std": 0.17401760273681227,
+      "suffix_entropy_mean": 1.3088052185714123,
+      "suffix_entropy_std": 0.7395835184028448
+    },
+    "tail": {
+      "n": 159,
+      "sister_deviation_mean": 0.3250524109014675,
+      "sister_deviation_std": 0.2171931533829686,
+      "section_concentration_mean": 0.7993326345213138,
+      "section_concentration_std": 0.234329035714934,
+      "suffix_entropy_mean": 0.6727895948392897,
+      "suffix_entropy_std": 0.5820439348276307
+    },
+    "p_sister_deviation": 1.7475665949311379e-09,
+    "p_section_concentration": 5.8682008430482364e-05,
+    "risk_confirmed": true
+  },
+  "summary": {
+    "tests_confirmed": 3,
+    "tests_total": 4,
+    "interpretation": "The MIDDLE distribution encodes a physical system with a small set of common operating variants (head) and a large perturbation space (tail). High-frequency MIDDLEs represent repeatable, apparatus-recognizable behavioral modes. Low-frequency MIDDLEs mark idiosyncratic conditions where grammatical control is insufficient and human judgment dominates."
+  }
+}

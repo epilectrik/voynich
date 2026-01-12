@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "total_middles_analyzed": 210,
+    "min_token_threshold": 5,
+    "framing": "recognition -> decision handoff"
+  },
+  "category_summary": {
+    "universal": {
+      "count": 13,
+      "mean_entropy": 2.371,
+      "high_entropy_rate": 0.846,
+      "rigid_rate": 0.077
+    },
+    "other": {
+      "count": 197,
+      "mean_entropy": 1.382,
+      "high_entropy_rate": 0.426,
+      "rigid_rate": 0.178
+    }
+  },
+  "decision_rigid": {
+    "count": 36,
+    "description": "MIDDLEs that collapse to single decision (dominance > 80%)",
+    "by_category": {
+      "universal": 1,
+      "other": 35
+    },
+    "top_examples": [
+      {
+        "middle": "i",
+        "category": "other",
+        "tokens": 1947,
+        "dominant_suffix": "in",
+        "dominance": 0.906
+      },
+      {
+        "middle": "octh",
+        "category": "other",
+        "tokens": 97,
+        "dominant_suffix": "y",
+        "dominance": 0.804
+      },
+      {
+        "middle": "oi",
+        "category": "universal",
+        "tokens": 92,
+        "dominant_suffix": "in",
+        "dominance": 1.0
+      },
+      {
+        "middle": "aii",
+        "category": "other",
+        "tokens": 32,
+        "dominant_suffix": "r",
+        "dominance": 0.875
+      },
+      {
+        "middle": "kc",
+        "category": "other",
+        "tokens": 27,
+        "dominant_suffix": "ho",
+        "dominance": 0.926
+      },
+      {
+        "middle": "tc",
+        "category": "other",
+        "tokens": 25,
+        "dominant_suffix": "ho",
+        "dominance": 1.0
+      },
+      {
+        "middle": "ai",
+        "category": "other",
+        "tokens": 24,
+        "dominant_suffix": "r",
+        "dominance": 0.917
+      },
+      {
+        "middle": "koi",
+        "category": "other",
+        "tokens": 13,
+        "dominant_suffix": "in",
+        "dominance": 1.0
+      },
+      {
+        "middle": "odal",
+        "category": "other",
+        "tokens": 12,
+        "dominant_suffix": "y",
+        "dominance": 0.917
+      },
+      {
+        "middle": "toi",
+        "category": "other",
+        "tokens": 12,
+        "dominant_suffix": "in",
+        "dominance": 1.0
+      }
+    ]
+  },
+  "decision_flexible": {
+    "count": 49,
+    "description": "MIDDLEs with high suffix entropy (>2.0 bits, N>=20)",
+    "by_category": {
+      "universal": 8,
+      "other": 41
+    },
+    "examples": [
+      {
+        "middle": "",
+        "category": "universal",
+        "tokens": 8319,
+        "entropy": 4.148,
+        "n_suffixes": 80
+      },
+      {
+        "middle": "k",
+        "category": "universal",
+        "tokens": 873,
+        "entropy": 3.279,
+        "n_suffixes": 21
+      },
+      {
+        "middle": "l",
+        "category": "other",
+        "tokens": 101,
+        "entropy": 3.167,
+        "n_suffixes": 12
+      },
+      {
+        "middle": "ok",
+        "category": "other",
+        "tokens": 329,
+        "entropy": 3.036,
+        "n_suffixes": 16
+      },
+      {
+        "middle": "o",
+        "category": "universal",
+        "tokens": 700,
+        "entropy": 3.024,
+        "n_suffixes": 27
+      },
+      {
+        "middle": "ot",
+        "category": "other",
+        "tokens": 260,
+        "entropy": 2.89,
+        "n_suffixes": 16
+      },
+      {
+        "middle": "t",
+        "category": "other",
+        "tokens": 621,
+        "entropy": 2.879,
+        "n_suffixes": 19
+      },
+      {
+        "middle": "old",
+        "category": "other",
+        "tokens": 23,
+        "entropy": 2.806,
+        "n_suffixes": 8
+      },
+      {
+        "middle": "r",
+        "category": "other",
+        "tokens": 59,
+        "entropy": 2.782,
+        "n_suffixes": 10
+      },
+      {
+        "middle": "al",
+        "category": "universal",
+        "tokens": 110,
+        "entropy": 2.774,
+        "n_suffixes": 12
+      }
+    ]
+  },
+  "interpretation": {
+    "framing": "How recognition hands off to control",
+    "finding": "Universal MIDDLEs have HIGHER suffix entropy than other MIDDLEs. Recognition points shared across material classes hand off to MORE decision options.",
+    "semantic_ceiling": "We map dependencies, not meanings"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "fit_id": "F-A-005",
+  "fit_name": "Scarcity-Weighted Registry Effort",
+  "fit_tier": "F1",
+  "result": "NULL",
+  "date": "2026-01-10",
+  "scarcity_data": {
+    "middle_counts": {
+      "ch": 340,
+      "qo": 217,
+      "sh": 178,
+      "da": 104,
+      "ok": 105,
+      "ot": 105,
+      "ct": 66,
+      "ol": 79
+    },
+    "scarcity_weights": {
+      "ch": 0.0029411764705882353,
+      "qo": 0.004608294930875576,
+      "sh": 0.0056179775280898875,
+      "da": 0.009615384615384616,
+      "ok": 0.009523809523809525,
+      "ot": 0.009523809523809525,
+      "ct": 0.015151515151515152,
+      "ol": 0.012658227848101266
+    }
+  },
+  "entry_summary": {
+    "total_entries": 114,
+    "mean_articulator_ratio": 0.09962538159108278,
+    "mean_internal_diversity": 0.32564726839168506,
+    "mean_scarcity": 0.006763583002225372
+  },
+  "correlations": {
+    "scarcity_vs_articulator": {
+      "rho": 0.1904578684109273,
+      "p": 0.04005321547707208
+    },
+    "scarcity_vs_marker_diversity": {
+      "rho": 0.11662380267714305,
+      "p": 0.21397458132441916
+    },
+    "scarcity_vs_internal_diversity": {
+      "rho": 0.07820416759482393,
+      "p": 0.40643835109741255
+    },
+    "scarcity_vs_token_count": {
+      "rho": -0.029092160952593107,
+      "p": 0.7580725442638192
+    }
+  },
+  "section_results": {
+    "H": {
+      "n": 95,
+      "rho": 0.21912094064949603,
+      "p": 0.030329628408083398
+    },
+    "P": {
+      "n": 16,
+      "rho": 0.052941176470588235,
+      "p": 0.842758774873841
+    }
+  },
+  "quartile_comparison": {
+    "q1_low_scarcity": {
+      "articulator_ratio": 0.07785453305350469,
+      "internal_diversity": 0.32309789876257816
+    },
+    "q4_high_scarcity": {
+      "articulator_ratio": 0.11065912449029361,
+      "internal_diversity": 0.33172229951328075
+    }
+  },
+  "criteria_check": {
+    "significance_pass": true,
+    "magnitude_pass": true,
+    "section_robustness_pass": false,
+    "all_pass": false
+  },
+  "interpretation": "No Effect: Effort reflects case importance, not vocabulary constraints.",
+  "supports_constraints": [],
+  "introduces_new_constraints": false
+}

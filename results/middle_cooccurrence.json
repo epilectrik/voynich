@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "total_lines": 1580,
+    "unique_middles": 824,
+    "pairs_analyzed": 635,
+    "framing": "local recognition bundles"
+  },
+  "summary": {
+    "total_attractions": 76,
+    "total_repulsions": 0,
+    "by_pair_type": {
+      "universal-universal": {
+        "attractions": 3,
+        "repulsions": 0
+      },
+      "universal-other": {
+        "attractions": 40,
+        "repulsions": 0
+      },
+      "other-other": {
+        "attractions": 33,
+        "repulsions": 0
+      }
+    }
+  },
+  "top_attractions": [
+    {
+      "pair": [
+        "al",
+        "l"
+      ],
+      "observed": 9,
+      "expected": 1.4,
+      "ratio": 6.449,
+      "pair_type": "universal-other"
+    },
+    {
+      "pair": [
+        "eo",
+        "keo"
+      ],
+      "observed": 12,
+      "expected": 2.07,
+      "ratio": 5.786,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "ke",
+        "keo"
+      ],
+      "observed": 12,
+      "expected": 2.07,
+      "ratio": 5.786,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "eol",
+        "ke"
+      ],
+      "observed": 8,
+      "expected": 1.5,
+      "ratio": 5.327,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "o",
+        "o*"
+      ],
+      "observed": 5,
+      "expected": 1.01,
+      "ratio": 4.928,
+      "pair_type": "universal-other"
+    },
+    {
+      "pair": [
+        "ke",
+        "kee"
+      ],
+      "observed": 7,
+      "expected": 1.43,
+      "ratio": 4.894,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "al",
+        "ol"
+      ],
+      "observed": 12,
+      "expected": 2.54,
+      "ratio": 4.719,
+      "pair_type": "universal-universal"
+    },
+    {
+      "pair": [
+        "ee",
+        "keo"
+      ],
+      "observed": 7,
+      "expected": 1.69,
+      "ratio": 4.145,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "ee",
+        "eol"
+      ],
+      "observed": 5,
+      "expected": 1.22,
+      "ratio": 4.089,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "he",
+        "ke"
+      ],
+      "observed": 9,
+      "expected": 2.22,
+      "ratio": 4.059,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "od",
+        "s"
+      ],
+      "observed": 5,
+      "expected": 1.24,
+      "ratio": 4.035,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "ke",
+        "oke"
+      ],
+      "observed": 4,
+      "expected": 1.0,
+      "ratio": 3.995,
+      "pair_type": "other-other"
+    },
+    {
+      "pair": [
+        "eeo",
+        "eo"
+      ],
+      "observed": 6,
+      "expected": 1.5,
+      "ratio": 3.995,
+      "pair_type": "universal-other"
+    },
+    {
+      "pair": [
+        "kee",
+        "ol"
+      ],
+      "observed": 4,
+      "expected": 1.04,
+      "ratio": 3.854,
+      "pair_type": "universal-other"
+    },
+    {
+      "pair": [
+        "h",
+        "hy"
+      ],
+      "observed": 4,
+      "expected": 1.07,
+      "ratio": 3.749,
+      "pair_type": "other-other"
+    }
+  ],
+  "top_repulsions": [],
+  "hub_middles": [
+    {
+      "middle": "e",
+      "attraction_count": 20,
+      "is_universal": true
+    },
+    {
+      "middle": "ke",
+      "attraction_count": 12,
+      "is_universal": false
+    },
+    {
+      "middle": "eo",
+      "attraction_count": 8,
+      "is_universal": false
+    },
+    {
+      "middle": "o",
+      "attraction_count": 8,
+      "is_universal": true
+    },
+    {
+      "middle": "ee",
+      "attraction_count": 8,
+      "is_universal": false
+    },
+    {
+      "middle": "k",
+      "attraction_count": 7,
+      "is_universal": true
+    },
+    {
+      "middle": "ek",
+      "attraction_count": 5,
+      "is_universal": false
+    },
+    {
+      "middle": "ckh",
+      "attraction_count": 5,
+      "is_universal": false
+    },
+    {
+      "middle": "i",
+      "attraction_count": 5,
+      "is_universal": false
+    },
+    {
+      "middle": "al",
+      "attraction_count": 4,
+      "is_universal": true
+    }
+  ],
+  "interpretation": {
+    "framing": "Which recognition points tend to cluster together",
+    "finding": "Found 3 universal-universal attractions and 40 universal-other attractions. Universal MIDDLEs do participate in recognition bundles with both universal and non-universal recognition points.",
+    "semantic_ceiling": "Clustering does NOT imply compound meaning"
+  }
+}

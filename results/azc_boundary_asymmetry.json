@@ -1,0 +1,134 @@
+{
+  "fit_id": "F-AZC-008",
+  "hypothesis": "C and S positions are functionally asymmetric (C=intake, S=release)",
+  "tier": 4,
+  "metadata": {
+    "total_ac_tokens": 3278,
+    "c_tokens": 1131,
+    "s_tokens": 275,
+    "c_positions": [
+      "C1",
+      "C2",
+      "C"
+    ],
+    "s_positions": [
+      "S",
+      "S3",
+      "S1",
+      "S2"
+    ]
+  },
+  "c_stats": {
+    "n": 1131,
+    "prefix_entropy": 2.421,
+    "middle_entropy": 5.87,
+    "suffix_entropy": 4.119,
+    "universal_rate": 4.42,
+    "escape_rate": 2.65
+  },
+  "s_stats": {
+    "n": 275,
+    "prefix_entropy": 2.392,
+    "middle_entropy": 5.655,
+    "suffix_entropy": 4.124,
+    "universal_rate": 10.18,
+    "escape_rate": 4.36
+  },
+  "entropy_tests": {
+    "prefix": {
+      "c_entropy": 2.421,
+      "s_entropy": 2.392,
+      "delta": -0.029,
+      "c_unique": 8,
+      "s_unique": 7,
+      "c_n": 1131,
+      "s_n": 275,
+      "significant_delta": false
+    },
+    "middle": {
+      "c_entropy": 5.87,
+      "s_entropy": 5.655,
+      "delta": -0.215,
+      "c_unique": 158,
+      "s_unique": 73,
+      "c_n": 784,
+      "s_n": 231,
+      "significant_delta": false
+    },
+    "suffix": {
+      "c_entropy": 4.119,
+      "s_entropy": 4.124,
+      "delta": 0.005,
+      "c_unique": 45,
+      "s_unique": 30,
+      "c_n": 1114,
+      "s_n": 272,
+      "significant_delta": false
+    }
+  },
+  "distribution_tests": {
+    "prefix": {
+      "chi2": 59.0194,
+      "p_value": 0.0,
+      "dof": 7,
+      "cramers_v": 0.2049,
+      "significant": true,
+      "n_categories": 8
+    },
+    "middle": {
+      "chi2": 550.7816,
+      "p_value": 0.0,
+      "dof": 204,
+      "cramers_v": 0.7366,
+      "significant": true,
+      "n_categories": 205
+    },
+    "suffix": {
+      "chi2": 119.7601,
+      "p_value": 0.0,
+      "dof": 51,
+      "cramers_v": 0.294,
+      "significant": true,
+      "n_categories": 52
+    }
+  },
+  "jaccard_overlap": {
+    "c_unique_types": 344,
+    "s_unique_types": 129,
+    "shared_types": 32,
+    "total_types": 441,
+    "jaccard_similarity": 0.07256235827664399,
+    "distinct": true
+  },
+  "universal_middle_test": {
+    "c_rate": 4.42,
+    "s_rate": 10.18,
+    "delta": -5.76,
+    "odds_ratio": 0.408,
+    "fisher_p": 0.0005739626729834735,
+    "significant": true,
+    "c_higher": false
+  },
+  "escape_test": {
+    "c_rate": 2.65,
+    "s_rate": 4.36,
+    "delta": 1.71,
+    "odds_ratio": 0.597,
+    "fisher_p": 0.1640060867273503,
+    "significant": false,
+    "s_higher": true
+  },
+  "evidence": {
+    "entropy_asymmetry": false,
+    "distribution_difference": true,
+    "type_distinctiveness": true,
+    "universal_asymmetry": false,
+    "escape_asymmetry": false
+  },
+  "interpretation": {
+    "criteria_met": 2,
+    "conclusion": "C and S show WEAK asymmetry",
+    "mechanism": "Partial functional differentiation",
+    "fit_tier": "F3"
+  }
+}

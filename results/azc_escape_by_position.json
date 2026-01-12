@@ -1,0 +1,195 @@
+{
+  "fit_id": "F-AZC-007",
+  "question": "Is escape suppression uniform or position-conditioned?",
+  "metadata": {
+    "total_tokens": 5354,
+    "escape_tokens": 301,
+    "escape_rate": 5.62
+  },
+  "zodiac": {
+    "placement_rates": {
+      "R1": {
+        "escape": 31,
+        "non_escape": 554,
+        "total": 585,
+        "escape_rate": 5.3
+      },
+      "R3": {
+        "escape": 0,
+        "non_escape": 290,
+        "total": 290,
+        "escape_rate": 0.0
+      },
+      "R4": {
+        "escape": 0,
+        "non_escape": 16,
+        "total": 16,
+        "escape_rate": 0.0
+      },
+      "S2": {
+        "escape": 0,
+        "non_escape": 298,
+        "total": 298,
+        "escape_rate": 0.0
+      },
+      "R2": {
+        "escape": 9,
+        "non_escape": 480,
+        "total": 489,
+        "escape_rate": 1.84
+      },
+      "S1": {
+        "escape": 4,
+        "non_escape": 340,
+        "total": 344,
+        "escape_rate": 1.16
+      },
+      "S0": {
+        "escape": 0,
+        "non_escape": 27,
+        "total": 27,
+        "escape_rate": 0.0
+      }
+    },
+    "uniform_test": {
+      "overall_rate": 2.1474,
+      "chi_squared": 42.3789,
+      "p_value": 0.0,
+      "significant": true,
+      "n_placements": 7
+    },
+    "boundary_test": {
+      "boundary": {
+        "escape": 0,
+        "total": 47,
+        "rate": 0.0
+      },
+      "interior": {
+        "escape": 44,
+        "total": 2006,
+        "rate": 2.1934
+      },
+      "odds_ratio": 0.0,
+      "fisher_p": 0.6239,
+      "significant": false,
+      "interpretation": "boundary_suppressed"
+    }
+  },
+  "ac": {
+    "placement_rates": {
+      "L": {
+        "escape": 4,
+        "non_escape": 103,
+        "total": 107,
+        "escape_rate": 3.74
+      },
+      "P": {
+        "escape": 143,
+        "non_escape": 758,
+        "total": 901,
+        "escape_rate": 15.87
+      },
+      "R": {
+        "escape": 35,
+        "non_escape": 344,
+        "total": 379,
+        "escape_rate": 9.23
+      },
+      "S": {
+        "escape": 12,
+        "non_escape": 263,
+        "total": 275,
+        "escape_rate": 4.36
+      },
+      "Y": {
+        "escape": 9,
+        "non_escape": 148,
+        "total": 157,
+        "escape_rate": 5.73
+      },
+      "C": {
+        "escape": 24,
+        "non_escape": 1000,
+        "total": 1024,
+        "escape_rate": 2.34
+      },
+      "X": {
+        "escape": 5,
+        "non_escape": 113,
+        "total": 118,
+        "escape_rate": 4.24
+      },
+      "U": {
+        "escape": 6,
+        "non_escape": 15,
+        "total": 21,
+        "escape_rate": 28.57
+      },
+      "C1": {
+        "escape": 6,
+        "non_escape": 77,
+        "total": 83,
+        "escape_rate": 7.23
+      },
+      "C2": {
+        "escape": 0,
+        "non_escape": 24,
+        "total": 24,
+        "escape_rate": 0.0
+      },
+      "O": {
+        "escape": 10,
+        "non_escape": 94,
+        "total": 104,
+        "escape_rate": 9.62
+      },
+      "I": {
+        "escape": 0,
+        "non_escape": 60,
+        "total": 60,
+        "escape_rate": 0.0
+      },
+      "B": {
+        "escape": 3,
+        "non_escape": 12,
+        "total": 15,
+        "escape_rate": 20.0
+      }
+    },
+    "uniform_test": {
+      "overall_rate": 7.8641,
+      "chi_squared": 144.8381,
+      "p_value": 0.0,
+      "significant": true,
+      "n_placements": 13
+    },
+    "boundary_test": {
+      "boundary": {
+        "escape": 36,
+        "total": 1299,
+        "rate": 2.7714
+      },
+      "interior": {
+        "escape": 178,
+        "total": 1280,
+        "rate": 13.9062
+      },
+      "odds_ratio": 0.1765,
+      "fisher_p": 0.0,
+      "significant": true,
+      "interpretation": "boundary_suppressed"
+    }
+  },
+  "evidence": {
+    "zodiac_nonuniform": true,
+    "ac_nonuniform": true,
+    "zodiac_boundary_diff": false,
+    "ac_boundary_diff": true,
+    "evidence_count": 3
+  },
+  "interpretation": {
+    "conclusion": "Escape suppression is POSITION-CONDITIONED",
+    "mechanism": "AZC = TRANSITION STABILIZER (filters selectively by position)",
+    "fit_tier": "F2"
+  }
+}

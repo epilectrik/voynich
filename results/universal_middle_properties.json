@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "universal_count": 18,
+    "exclusive_count": 573,
+    "bridging_count": 134
+  },
+  "suffix": {
+    "universal_tokens": 3118,
+    "exclusive_tokens": 1180,
+    "universal_entropy": 3.0820410696753684,
+    "exclusive_entropy": 2.9645728079920213,
+    "interpretation": "more_diverse"
+  },
+  "sister": {
+    "universal_precision_rate": 0.5102629890955741,
+    "exclusive_precision_rate": 0.8728813559322034,
+    "universal_deviation": 0.010262989095574104,
+    "exclusive_deviation": 0.3728813559322034,
+    "p_value": 1.477080108428986e-104,
+    "interpretation": "more_balanced"
+  },
+  "position": {
+    "universal_initial_rate": 1.0,
+    "universal_final_rate": 1.0,
+    "exclusive_initial_rate": 1.0,
+    "exclusive_final_rate": 1.0
+  },
+  "section": {
+    "universal_entropy": 1.0645843375678614,
+    "exclusive_entropy": 1.1263921020742127,
+    "interpretation": "more_concentrated"
+  },
+  "balance": {
+    "mean_balance": 0.7893753350017739,
+    "highly_balanced_count": 10,
+    "total_universal": 18,
+    "balance_scores": [
+      0.6762509319901265,
+      0.9310525086459226,
+      0.6159553632834691,
+      0.793083209480865,
+      0.1789686206249321,
+      0.6718091240523039,
+      0.7343961331892261,
+      0.8661995277681842,
+      0.8333109618966215,
+      0.7814033158465871,
+      0.9640269301374402,
+      0.7739488137502335,
+      0.94841021822029,
+      0.885891110799899,
+      0.844695873371544,
+      0.8804820237218406,
+      0.8288713632524445,
+      1.0
+    ]
+  },
+  "findings": [
+    "MORE diverse in suffix usage (decision flexibility)",
+    "MORE balanced between precision/tolerance modes",
+    "MORE concentrated in specific sections"
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "fit_id": "F-AZC-014",
+  "title": "A Morphology \u00d7 AZC Structure Cross-Tabulation",
+  "purpose": "Determine where compatibility signal lives before A-through-AZC projection",
+  "tests": {
+    "H1_prefix_folio": {
+      "hypothesis": "PREFIX \u00d7 AZC_FOLIO",
+      "expected": "WEAK/NULL",
+      "n_tokens": 7686,
+      "n_prefixes": 15,
+      "cramers_v": 0.1707,
+      "signal": "WEAK",
+      "interpretation": "WEAK: PREFIX has weak association with AZC folio",
+      "prefix_folio_spread": {
+        "d": {
+          "n_folios": 35,
+          "n_tokens": 951
+        },
+        "s": {
+          "n_folios": 31,
+          "n_tokens": 232
+        },
+        "ar": {
+          "n_folios": 28,
+          "n_tokens": 299
+        },
+        "ok": {
+          "n_folios": 34,
+          "n_tokens": 831
+        },
+        "sh": {
+          "n_folios": 32,
+          "n_tokens": 592
+        },
+        "y": {
+          "n_folios": 33,
+          "n_tokens": 571
+        },
+        "ot": {
+          "n_folios": 34,
+          "n_tokens": 1043
+        },
+        "o": {
+          "n_folios": 32,
+          "n_tokens": 359
+        },
+        "qo": {
+          "n_folios": 23,
+          "n_tokens": 484
+        },
+        "ch": {
+          "n_folios": 34,
+          "n_tokens": 1136
+        },
+        "a": {
+          "n_folios": 31,
+          "n_tokens": 462
+        },
+        "al": {
+          "n_folios": 32,
+          "n_tokens": 238
+        },
+        "ct": {
+          "n_folios": 14,
+          "n_tokens": 45
+        },
+        "ol": {
+          "n_folios": 29,
+          "n_tokens": 235
+        },
+        "or": {
+          "n_folios": 23,
+          "n_tokens": 208
+        }
+      }
+    },
+    "H2_middle_folio": {
+      "hypothesis": "MIDDLE \u00d7 AZC_FOLIO",
+      "expected": "MODERATE-STRONG",
+      "n_tokens": 7894,
+      "n_middles": 265,
+      "middles_in_1_3_folios": 169,
+      "pct_restricted": 63.77,
+      "mutual_information": 1.0308,
+      "normalized_mi": 0.2127,
+      "signal": "MODERATE",
+      "interpretation": "MODERATE: Many MIDDLEs are folio-restricted"
+    },
+    "H3_suffix_position": {
+      "hypothesis": "SUFFIX \u00d7 AZC_POSITION",
+      "expected": "UNKNOWN",
+      "n_tokens": 6595,
+      "n_suffixes": 13,
+      "cramers_v": 0.1131,
+      "n_position_dominant": 2,
+      "position_dominant_suffixes": [
+        [
+          "aiin",
+          "P",
+          68.4
+        ],
+        [
+          "ain",
+          "P",
+          74.1
+        ]
+      ],
+      "signal": "MODERATE",
+      "interpretation": "MODERATE: Some SUFFIX \u00d7 position structure exists",
+      "suffix_profiles": {
+        "l": {
+          "total": 1089,
+          "profile": {
+            "T": 0.3,
+            "R": 23.2,
+            "P": 35.3,
+            "S": 11.3,
+            "C": 17.1,
+            "L": 1.8,
+            "X": 1.3,
+            "Y": 1.0,
+            "U": 0.1,
+            "O": 2.3,
+            "I": 1.3,
+            "B": 0.6,
+            "V1": 0.2,
+            "U1": 0.3,
+            "V2": 0.4,
+            "N1": 0.2,
+            "N2": 0.1,
+            "M2": 0.6,
+            "Q": 2.8
+          }
+        },
+        "s": {
+          "total": 284,
+          "profile": {
+            "R": 33.1,
+            "P": 16.9,
+            "C": 31.7,
+            "Y": 2.5,
+            "X": 3.2,
+            "O": 1.8,
+            "S": 8.8,
+            "I": 1.4,
+            "V1": 0.7
+          }
+        },
+        "y": {
+          "total": 1851,
+          "profile": {
+            "R": 21.9,
+            "Y": 3.4,
+            "P": 39.0,
+            "S": 10.9,
+            "C": 16.2,
+            "Z": 0.2,
+            "L": 1.2,
+            "X": 1.6,
+            "O": 1.6,
+            "I": 0.5,
+            "B": 0.3,
+            "T": 0.3,
+            "W1": 0.1,
+            "V2": 0.1,
+            "U2": 0.2,
+            "U3": 0.2,
+            "N1": 0.1,
+            "M1": 0.1,
+            "M2": 0.3,
+            "M3": 0.1,
+            "B1": 0.2,
+            "Q": 1.7
+          }
+        },
+        "r": {
+          "total": 1270,
+          "profile": {
+            "R": 20.9,
+            "Y": 2.6,
+            "P": 35.8,
+            "S": 9.3,
+            "C": 22.4,
+            "X": 1.3,
+            "Z": 0.3,
+            "U": 0.2,
+            "O": 1.0,
+            "I": 0.5,
+            "B": 0.3,
+            "L": 0.8,
+            "T": 0.3,
+            "V1": 0.5,
+            "V2": 0.2,
+            "U2": 0.2,
+            "U3": 0.2,
+            "N1": 0.2,
+            "N2": 0.4,
+            "M2": 0.2,
+            "B1": 0.3,
+            "D1": 0.2,
+            "B2": 0.1,
+            "B3": 0.1,
+            "Q": 1.6
+          }
+        },
+        "aiin": {
+          "total": 411,
+          "profile": {
+            "R": 13.1,
+            "P": 68.4,
+            "C": 11.9,
+            "S": 2.7,
+            "Y": 1.2,
+            "L": 1.0,
+            "N1": 0.2,
+            "N2": 0.2,
+            "D1": 0.2,
+            "Q": 1.0
+          }
+        },
+        "am": {
+          "total": 79,
+          "profile": {
+            "R": 19.0,
+            "P": 44.3,
+            "C": 11.4,
+            "S": 13.9,
+            "W1": 1.3,
+            "Q": 10.1
+          }
+        },
+        "iin": {
+          "total": 361,
+          "profile": {
+            "R": 23.5,
+            "P": 47.6,
+            "C": 14.4,
+            "X": 0.3,
+            "Y": 1.4,
+            "S": 8.9,
+            "L": 0.3,
+            "O": 0.8,
+            "V1": 0.3,
+            "N1": 0.3,
+            "N2": 0.8,
+            "Q": 1.4
+          }
+        },
+        "in": {
+          "total": 287,
+          "profile": {
+            "R": 24.7,
+            "P": 46.0,
+            "C": 19.9,
+            "L": 1.4,
+            "X": 0.3,
+            "Y": 0.3,
+            "S": 3.8,
+            "V1": 0.3,
+            "V2": 0.3,
+            "N1": 0.3,
+            "N2": 0.3,
+            "Q": 2.1
+          }
+        },
+        "dy": {
+          "total": 735,
+          "profile": {
+            "R": 18.2,
+            "P": 31.6,
+            "S": 15.4,
+            "Y": 2.2,
+            "C": 21.2,
+            "X": 1.4,
+            "O": 1.1,
+            "L": 2.0,
+            "I": 0.3,
+            "V1": 0.3,
+            "U1": 0.3,
+            "U2": 0.1,
+            "U3": 0.1,
+            "M1": 0.3,
+            "N2": 0.1,
+            "M2": 0.7,
+            "B1": 0.4,
+            "B2": 0.1,
+            "T": 0.5,
+            "Q": 3.7
+          }
+        },
+        "m": {
+          "total": 135,
+          "profile": {
+            "L": 3.0,
+            "P": 57.8,
+            "Y": 7.4,
+            "X": 3.0,
+            "C": 8.9,
+            "S": 12.6,
+            "R": 6.7,
+            "B1": 0.7
+          }
+        },
+        "n": {
+          "total": 32,
+          "profile": {
+            "P": 34.4,
+            "R": 6.2,
+            "C": 21.9,
+            "Z": 9.4,
+            "Y": 3.1,
+            "S": 12.5,
+            "V1": 3.1,
+            "V2": 3.1,
+            "N1": 3.1,
+            "M1": 3.1
+          }
+        },
+        "ain": {
+          "total": 58,
+          "profile": {
+            "C": 8.6,
+            "P": 74.1,
+            "R": 10.3,
+            "B1": 1.7,
+            "Q": 5.2
+          }
+        }
+      }
+    },
+    "H4_cluster_overlap": {
+      "hypothesis": "CLUSTER_STATUS \u00d7 AZC_OVERLAP",
+      "expected": "MODERATE",
+      "n_a_types_in_azc": 973,
+      "mean_pairwise_jaccard": 0.0466,
+      "within_prefix_jaccard": 0.0584,
+      "enrichment_ratio": 1.25,
+      "pct_restricted": 68.0,
+      "pct_unrestricted": 6.0,
+      "folio_count_distribution": {
+        "1": 478,
+        "2": 184,
+        "3": 81,
+        "4": 69,
+        "5": 30,
+        "6": 28,
+        "7": 24,
+        "8": 17,
+        "11": 9,
+        "12": 7
+      },
+      "signal": "MODERATE",
+      "interpretation": "MODERATE: Weak prefix-based AZC clustering"
+    }
+  },
+  "synthesis": {
+    "compatibility_granularity": "FINE (variant level)",
+    "phase_indexing": "YES - decision archetypes are phase-gated",
+    "clustering_significance": "MEANINGFUL - A clustering reflects compatibility",
+    "signals": {
+      "PREFIX -> FOLIO": "WEAK",
+      "MIDDLE -> FOLIO": "MODERATE",
+      "SUFFIX -> POSITION": "MODERATE",
+      "CLUSTER -> OVERLAP": "MODERATE"
+    },
+    "recommendations": []
+  }
+}

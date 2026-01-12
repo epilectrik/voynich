@@ -1,0 +1,3376 @@
+{
+  "fit_id": "F-AZC-011",
+  "question": "How do AZC folios thread into A and B vocabulary?",
+  "metadata": {
+    "a_folios": 114,
+    "b_folios": 77,
+    "azc_folios": 36,
+    "a_types": 4737,
+    "b_types": 6616,
+    "azc_types": 3047
+  },
+  "azc_threading": {
+    "mean_a_overlap": 56.6,
+    "mean_b_overlap": 63.4,
+    "mean_endemic": 31.2,
+    "per_folio": {
+      "f57v": {
+        "token_count": 411,
+        "type_count": 115,
+        "a_overlap": {
+          "count": 61,
+          "rate": 53.0,
+          "types": [
+            "a",
+            "aiin",
+            "ar",
+            "chedaiin",
+            "chety",
+            "d",
+            "daiin",
+            "daiir",
+            "daiis",
+            "dairal",
+            "dairol",
+            "dal",
+            "dar",
+            "daram",
+            "dsh",
+            "dy",
+            "ety",
+            "f",
+            "k",
+            "l"
+          ]
+        },
+        "b_overlap": {
+          "count": 65,
+          "rate": 56.5,
+          "types": [
+            "a",
+            "aiin",
+            "ar",
+            "c",
+            "chedaiin",
+            "chety",
+            "cs",
+            "d",
+            "daiin",
+            "daiir",
+            "daiis",
+            "dairal",
+            "dairol",
+            "dal",
+            "dar",
+            "daram",
+            "daro",
+            "dshdy",
+            "dy",
+            "ety"
+          ]
+        },
+        "endemic": {
+          "count": 43,
+          "rate": 37.4,
+          "types": [
+            "ackaldy",
+            "alkaldy",
+            "aralarar",
+            "aros",
+            "ci",
+            "ddal",
+            "defo",
+            "dkalr",
+            "dkals",
+            "dkedar",
+            "docodal",
+            "doedal",
+            "dydas",
+            "dydchs",
+            "echty",
+            "fchcho",
+            "fo",
+            "j",
+            "ocfhor",
+            "ofhal"
+          ]
+        },
+        "shared_ab": {
+          "count": 54,
+          "rate": 47.0
+        }
+      },
+      "f65r": {
+        "token_count": 6,
+        "type_count": 3,
+        "a_overlap": {
+          "count": 2,
+          "rate": 66.7,
+          "types": [
+            "alam",
+            "dam"
+          ]
+        },
+        "b_overlap": {
+          "count": 3,
+          "rate": 100.0,
+          "types": [
+            "alam",
+            "dam",
+            "otaim"
+          ]
+        },
+        "endemic": {
+          "count": 0,
+          "rate": 0.0,
+          "types": []
+        },
+        "shared_ab": {
+          "count": 2,
+          "rate": 66.7
+        }
+      },
+      "f65v": {
+        "token_count": 121,
+        "type_count": 52,
+        "a_overlap": {
+          "count": 28,
+          "rate": 53.8,
+          "types": [
+            "air",
+            "chedy",
+            "cheody",
+            "cheotchy",
+            "chokeody",
+            "choky",
+            "cphy",
+            "daiin",
+            "dalam",
+            "dy",
+            "fol",
+            "l",
+            "ody",
+            "okeody",
+            "okey",
+            "otor",
+            "qo",
+            "qopy",
+            "shckhy",
+            "shedy"
+          ]
+        },
+        "b_overlap": {
+          "count": 36,
+          "rate": 69.2,
+          "types": [
+            "air",
+            "chedy",
+            "cheody",
+            "cheot",
+            "choky",
+            "cphy",
+            "daiin",
+            "dalam",
+            "dalom",
+            "dshedy",
+            "dy",
+            "fol",
+            "l",
+            "ody",
+            "okeody",
+            "okey",
+            "otor",
+            "qo",
+            "qokshd",
+            "qopy"
+          ]
+        },
+        "endemic": {
+          "count": 14,
+          "rate": 26.9,
+          "types": [
+            "cheoteeo",
+            "cheoteey",
+            "cheotshky",
+            "chpdy",
+            "dchepain",
+            "eas",
+            "fchecfhy",
+            "oke",
+            "qokd",
+            "qokesd",
+            "qops",
+            "shckhecphy",
+            "shckhh",
+            "ykchhdy"
+          ]
+        },
+        "shared_ab": {
+          "count": 26,
+          "rate": 50.0
+        }
+      },
+      "f67r1": {
+        "token_count": 412,
+        "type_count": 190,
+        "a_overlap": {
+          "count": 92,
+          "rate": 48.4,
+          "types": [
+            "aiin",
+            "aiir",
+            "aim",
+            "ain",
+            "ainy",
+            "air",
+            "aj",
+            "al",
+            "aldy",
+            "am",
+            "ar",
+            "aram",
+            "ary",
+            "cheeky",
+            "cheey",
+            "chekeey",
+            "cheo",
+            "cheockhey",
+            "cheocthey",
+            "cheodaiin"
+          ]
+        },
+        "b_overlap": {
+          "count": 106,
+          "rate": 55.8,
+          "types": [
+            "aiin",
+            "aiir",
+            "aim",
+            "ain",
+            "air",
+            "al",
+            "aldy",
+            "am",
+            "ar",
+            "aram",
+            "ary",
+            "asy",
+            "chdar",
+            "chedar",
+            "cheeky",
+            "cheey",
+            "chekchy",
+            "chekeey",
+            "cheo",
+            "cheocthey"
+          ]
+        },
+        "endemic": {
+          "count": 73,
+          "rate": 38.4,
+          "types": [
+            "aecheor",
+            "aekeey",
+            "aeteedy",
+            "archeor",
+            "asa",
+            "chchey",
+            "cheosam",
+            "cheteey",
+            "chetegy",
+            "chetjy",
+            "choikhedy",
+            "chokeed",
+            "choteedy",
+            "choteoky",
+            "chparaj",
+            "chparam",
+            "chpiir",
+            "chteokaiin",
+            "chteokeeiin",
+            "cpaiin"
+          ]
+        },
+        "shared_ab": {
+          "count": 81,
+          "rate": 42.6
+        }
+      },
+      "f67r2": {
+        "token_count": 596,
+        "type_count": 220,
+        "a_overlap": {
+          "count": 101,
+          "rate": 45.9,
+          "types": [
+            "acthey",
+            "aiin",
+            "ain",
+            "air",
+            "al",
+            "alaiin",
+            "aldaiin",
+            "aldy",
+            "aly",
+            "am",
+            "ar",
+            "aram",
+            "chedaiin",
+            "cheos",
+            "chky",
+            "chocfhy",
+            "chodalg",
+            "chodalm",
+            "choeey",
+            "chol"
+          ]
+        },
+        "b_overlap": {
+          "count": 111,
+          "rate": 50.5,
+          "types": [
+            "acthey",
+            "aiin",
+            "ain",
+            "air",
+            "ais",
+            "akey",
+            "al",
+            "alaiin",
+            "aldy",
+            "aloiin",
+            "aly",
+            "am",
+            "amy",
+            "ar",
+            "aram",
+            "cfheey",
+            "chedaiin",
+            "chekody",
+            "cheos",
+            "chky"
+          ]
+        },
+        "endemic": {
+          "count": 95,
+          "rate": 43.2,
+          "types": [
+            "aeeos",
+            "chkchdar",
+            "choeeodol",
+            "chykchr",
+            "chykchs",
+            "dakan",
+            "dalchsody",
+            "dchetdy",
+            "dchodar",
+            "dfar",
+            "dokan",
+            "dolchsody",
+            "dylchsody",
+            "eesydy",
+            "eoporchy",
+            "lkshykchy",
+            "ockhds",
+            "ocpheod",
+            "octhola",
+            "octhole"
+          ]
+        },
+        "shared_ab": {
+          "count": 87,
+          "rate": 39.5
+        }
+      },
+      "f67v2": {
+        "token_count": 209,
+        "type_count": 111,
+        "a_overlap": {
+          "count": 46,
+          "rate": 41.4,
+          "types": [
+            "air",
+            "aj",
+            "alal",
+            "am",
+            "ar",
+            "cfhey",
+            "char",
+            "chol",
+            "cphey",
+            "cphy",
+            "daiin",
+            "daim",
+            "daj",
+            "dalam",
+            "daly",
+            "dam",
+            "eair",
+            "ear",
+            "g",
+            "keey"
+          ]
+        },
+        "b_overlap": {
+          "count": 47,
+          "rate": 42.3,
+          "types": [
+            "air",
+            "alal",
+            "am",
+            "ar",
+            "cfhey",
+            "char",
+            "chol",
+            "cphey",
+            "cphy",
+            "daiin",
+            "daim",
+            "dalam",
+            "daly",
+            "dam",
+            "eain",
+            "ear",
+            "g",
+            "kedy",
+            "keey",
+            "keoy"
+          ]
+        },
+        "endemic": {
+          "count": 60,
+          "rate": 54.1,
+          "types": [
+            "airar",
+            "alct",
+            "alet",
+            "chekair",
+            "chekais",
+            "daig",
+            "daij",
+            "dcheeor",
+            "dcsesor",
+            "dolaj",
+            "ekais",
+            "ekeeey",
+            "j",
+            "les",
+            "oafoaly",
+            "ocfhhy",
+            "ochepalain",
+            "ocs",
+            "oeepoaly",
+            "oekchdy"
+          ]
+        },
+        "shared_ab": {
+          "count": 42,
+          "rate": 37.8
+        }
+      },
+      "f67v1": {
+        "token_count": 213,
+        "type_count": 123,
+        "a_overlap": {
+          "count": 65,
+          "rate": 52.8,
+          "types": [
+            "aiin",
+            "aldy",
+            "aral",
+            "ary",
+            "che",
+            "checkhey",
+            "cheey",
+            "cheky",
+            "cheo",
+            "cheockhy",
+            "cheody",
+            "ches",
+            "chockhey",
+            "chso",
+            "chy",
+            "daiiin",
+            "daiin",
+            "dair",
+            "dairal",
+            "dals"
+          ]
+        },
+        "b_overlap": {
+          "count": 64,
+          "rate": 52.0,
+          "types": [
+            "aiin",
+            "aiiny",
+            "aldy",
+            "aral",
+            "ary",
+            "che",
+            "checkhey",
+            "cheey",
+            "cheky",
+            "cheo",
+            "cheockhy",
+            "cheody",
+            "ches",
+            "chockhdy",
+            "chockhey",
+            "chy",
+            "daiiin",
+            "daiin",
+            "dair",
+            "dairal"
+          ]
+        },
+        "endemic": {
+          "count": 51,
+          "rate": 41.5,
+          "types": [
+            "araky",
+            "aroka",
+            "aroky",
+            "chedaly",
+            "cheedals",
+            "cheka",
+            "chokeear",
+            "chokeeas",
+            "dairkal",
+            "dairtal",
+            "damamm",
+            "darichkalal",
+            "dcheoekal",
+            "dechoekol",
+            "echkolal",
+            "eeedaly",
+            "ikhechey",
+            "kchcsey",
+            "kchochy",
+            "keeochy"
+          ]
+        },
+        "shared_ab": {
+          "count": 57,
+          "rate": 46.3
+        }
+      },
+      "f68r1": {
+        "token_count": 224,
+        "type_count": 92,
+        "a_overlap": {
+          "count": 48,
+          "rate": 52.2,
+          "types": [
+            "ar",
+            "cheey",
+            "cheo",
+            "cheor",
+            "chocfhy",
+            "chocphy",
+            "choctheey",
+            "chod",
+            "chokal",
+            "choteey",
+            "cphol",
+            "daiin",
+            "daram",
+            "dary",
+            "dchor",
+            "ockhy",
+            "ocphy",
+            "octhey",
+            "oiin",
+            "okaiiin"
+          ]
+        },
+        "b_overlap": {
+          "count": 54,
+          "rate": 58.7,
+          "types": [
+            "ar",
+            "cheeteey",
+            "cheey",
+            "cheo",
+            "cheor",
+            "chocphy",
+            "chod",
+            "chokal",
+            "choteey",
+            "chpor",
+            "chteey",
+            "cphocthy",
+            "cphol",
+            "daiin",
+            "daram",
+            "dary",
+            "dchor",
+            "dolchedy",
+            "ockhy",
+            "ocphy"
+          ]
+        },
+        "endemic": {
+          "count": 32,
+          "rate": 34.8,
+          "types": [
+            "cckheor",
+            "chckhar",
+            "cheokorchey",
+            "cheotorchey",
+            "chkchykoly",
+            "chkeear",
+            "choctheeey",
+            "daraj",
+            "eckhear",
+            "korchey",
+            "odchecthy",
+            "odcheody",
+            "ofcheor",
+            "oiinar",
+            "okchoal",
+            "okeeodal",
+            "okoaly",
+            "okodaly",
+            "olgy",
+            "opcheeol"
+          ]
+        },
+        "shared_ab": {
+          "count": 42,
+          "rate": 45.7
+        }
+      },
+      "f68r2": {
+        "token_count": 302,
+        "type_count": 119,
+        "a_overlap": {
+          "count": 60,
+          "rate": 50.4,
+          "types": [
+            "al",
+            "cheo",
+            "cheody",
+            "cheor",
+            "cheorol",
+            "chey",
+            "chodar",
+            "chodchy",
+            "chokeey",
+            "chol",
+            "cholar",
+            "chor",
+            "chykchy",
+            "dar",
+            "dchol",
+            "dchy",
+            "ekey",
+            "koiin",
+            "l",
+            "o"
+          ]
+        },
+        "b_overlap": {
+          "count": 54,
+          "rate": 45.4,
+          "types": [
+            "al",
+            "cheo",
+            "cheoal",
+            "cheody",
+            "cheor",
+            "chesy",
+            "chey",
+            "chodar",
+            "chokeey",
+            "chol",
+            "cholar",
+            "chor",
+            "dar",
+            "dchol",
+            "dchy",
+            "koiin",
+            "l",
+            "o",
+            "odaiin",
+            "odaiir"
+          ]
+        },
+        "endemic": {
+          "count": 53,
+          "rate": 44.5,
+          "types": [
+            "chesyorad",
+            "dcheoldy",
+            "dcholal",
+            "dchyky",
+            "dokchy",
+            "dokechy",
+            "etocho",
+            "kcheoey",
+            "ochary",
+            "ocheo",
+            "ochory",
+            "odiiir",
+            "oeecthy",
+            "oeeeo",
+            "ofcheody",
+            "ofchsody",
+            "okaisy",
+            "okeechor",
+            "okeeoda",
+            "okemy"
+          ]
+        },
+        "shared_ab": {
+          "count": 48,
+          "rate": 40.3
+        }
+      },
+      "f68r3": {
+        "token_count": 296,
+        "type_count": 140,
+        "a_overlap": {
+          "count": 84,
+          "rate": 60.0,
+          "types": [
+            "a",
+            "al",
+            "chaiin",
+            "chckhchy",
+            "chcphy",
+            "chdy",
+            "cheal",
+            "chedy",
+            "cheody",
+            "cheol",
+            "cheor",
+            "chey",
+            "chky",
+            "cho",
+            "chocphy",
+            "chodal",
+            "chok",
+            "chokal",
+            "chokchy",
+            "chokol"
+          ]
+        },
+        "b_overlap": {
+          "count": 85,
+          "rate": 60.7,
+          "types": [
+            "a",
+            "al",
+            "chaiin",
+            "chckhchy",
+            "chcphy",
+            "chcthedy",
+            "chdy",
+            "cheal",
+            "chedy",
+            "cheody",
+            "cheol",
+            "cheor",
+            "chey",
+            "chky",
+            "cho",
+            "chocphy",
+            "chodal",
+            "chokal",
+            "chokchy",
+            "choky"
+          ]
+        },
+        "endemic": {
+          "count": 44,
+          "rate": 31.4,
+          "types": [
+            "chdchol",
+            "cheockhedchy",
+            "cheoteeo",
+            "cheoteey",
+            "chetechy",
+            "chiody",
+            "ckhydar",
+            "daleeeg",
+            "daleesd",
+            "darall",
+            "dcheeady",
+            "dchieo",
+            "dchokchr",
+            "dcholday",
+            "dchreo",
+            "dchykchy",
+            "doaro",
+            "doary",
+            "kchoty",
+            "oalcheol"
+          ]
+        },
+        "shared_ab": {
+          "count": 73,
+          "rate": 52.1
+        }
+      },
+      "f68v3": {
+        "token_count": 512,
+        "type_count": 214,
+        "a_overlap": {
+          "count": 120,
+          "rate": 56.1,
+          "types": [
+            "aiin",
+            "aiir",
+            "al",
+            "am",
+            "ar",
+            "chad",
+            "chal",
+            "chckhy",
+            "chedy",
+            "cheekey",
+            "chekeey",
+            "cheky",
+            "cheo",
+            "cheody",
+            "cheoky",
+            "cheol",
+            "chepchy",
+            "chey",
+            "chockhy",
+            "chodo"
+          ]
+        },
+        "b_overlap": {
+          "count": 129,
+          "rate": 60.3,
+          "types": [
+            "aiin",
+            "aiir",
+            "al",
+            "am",
+            "ar",
+            "ay",
+            "chal",
+            "chckhy",
+            "chdal",
+            "chedar",
+            "chedas",
+            "chedy",
+            "cheekey",
+            "chekchy",
+            "chekeey",
+            "chekey",
+            "cheky",
+            "cheo",
+            "cheody",
+            "cheoky"
+          ]
+        },
+        "endemic": {
+          "count": 70,
+          "rate": 32.7,
+          "types": [
+            "arkeeey",
+            "chak",
+            "chdail",
+            "cheakcheol",
+            "cheeetchol",
+            "cheetchol",
+            "cheoda",
+            "chetshedy",
+            "choekchchy",
+            "choekey",
+            "chshek",
+            "ctheepchy",
+            "dasaiin",
+            "diindy",
+            "dkeeeg",
+            "dkeeel",
+            "eeepchy",
+            "eer",
+            "kadar",
+            "kcheoly"
+          ]
+        },
+        "shared_ab": {
+          "count": 105,
+          "rate": 49.1
+        }
+      },
+      "f68v2": {
+        "token_count": 389,
+        "type_count": 131,
+        "a_overlap": {
+          "count": 71,
+          "rate": 54.2,
+          "types": [
+            "aiin",
+            "alchey",
+            "ar",
+            "chcthy",
+            "chdy",
+            "cheky",
+            "cheo",
+            "chety",
+            "chey",
+            "chkey",
+            "chody",
+            "chokeey",
+            "chol",
+            "chotchy",
+            "choteey",
+            "chy",
+            "cthy",
+            "daiin",
+            "daiir",
+            "dal"
+          ]
+        },
+        "b_overlap": {
+          "count": 85,
+          "rate": 64.9,
+          "types": [
+            "aiin",
+            "alchey",
+            "ar",
+            "chcthy",
+            "chdy",
+            "cheady",
+            "chekody",
+            "cheky",
+            "cheo",
+            "chetedy",
+            "chetey",
+            "chety",
+            "chey",
+            "chkey",
+            "chody",
+            "chokeeey",
+            "chokeey",
+            "chol",
+            "chotchy",
+            "choteey"
+          ]
+        },
+        "endemic": {
+          "count": 41,
+          "rate": 31.3,
+          "types": [
+            "adair",
+            "adairchdy",
+            "alamchy",
+            "allchdm",
+            "chalamy",
+            "chedady",
+            "cheectheey",
+            "chetal",
+            "cheteedy",
+            "cpheeody",
+            "dalches",
+            "dalchos",
+            "daliir",
+            "dchedal",
+            "ilkeeepol",
+            "oalchdm",
+            "okchil",
+            "okeadaiin",
+            "okechoy",
+            "oraraly"
+          ]
+        },
+        "shared_ab": {
+          "count": 66,
+          "rate": 50.4
+        }
+      },
+      "f68v1": {
+        "token_count": 283,
+        "type_count": 123,
+        "a_overlap": {
+          "count": 67,
+          "rate": 54.5,
+          "types": [
+            "aiin",
+            "aiir",
+            "aly",
+            "ch",
+            "chear",
+            "checkhy",
+            "cheo",
+            "cheockhey",
+            "ches",
+            "chey",
+            "cho",
+            "choaiin",
+            "chockhey",
+            "chockhy",
+            "chol",
+            "chos",
+            "chotey",
+            "ckhey",
+            "cthody",
+            "daiin"
+          ]
+        },
+        "b_overlap": {
+          "count": 71,
+          "rate": 57.7,
+          "types": [
+            "aiin",
+            "aiir",
+            "aly",
+            "ch",
+            "chear",
+            "checkhy",
+            "chek",
+            "cheo",
+            "ches",
+            "chey",
+            "cho",
+            "choaiin",
+            "chockhey",
+            "chockhy",
+            "chol",
+            "chos",
+            "chotedy",
+            "chteey",
+            "ckhey",
+            "daiin"
+          ]
+        },
+        "endemic": {
+          "count": 47,
+          "rate": 38.2,
+          "types": [
+            "araly",
+            "arany",
+            "arolsas",
+            "arolser",
+            "aroyser",
+            "chcs",
+            "chears",
+            "cheekchey",
+            "chekeys",
+            "cheodaiir",
+            "cheoekeey",
+            "cheoeky",
+            "chesokchoteody",
+            "chesokeeoteody",
+            "chkeody",
+            "chkorchy",
+            "choikhy",
+            "cpchety",
+            "cthotey",
+            "dairpchety"
+          ]
+        },
+        "shared_ab": {
+          "count": 62,
+          "rate": 50.4
+        }
+      },
+      "f69r": {
+        "token_count": 500,
+        "type_count": 184,
+        "a_overlap": {
+          "count": 121,
+          "rate": 65.8,
+          "types": [
+            "aiin",
+            "aiir",
+            "air",
+            "al",
+            "alchy",
+            "alg",
+            "aloly",
+            "aly",
+            "ar",
+            "ary",
+            "cham",
+            "char",
+            "chdy",
+            "chear",
+            "cheg",
+            "cheody",
+            "cheor",
+            "cheos",
+            "chetar",
+            "chey"
+          ]
+        },
+        "b_overlap": {
+          "count": 121,
+          "rate": 65.8,
+          "types": [
+            "aiin",
+            "aiir",
+            "air",
+            "al",
+            "ald",
+            "alody",
+            "aly",
+            "ar",
+            "ary",
+            "cham",
+            "char",
+            "chdy",
+            "chear",
+            "cheg",
+            "chekey",
+            "cheody",
+            "cheor",
+            "cheos",
+            "chetar",
+            "chetey"
+          ]
+        },
+        "endemic": {
+          "count": 51,
+          "rate": 27.7,
+          "types": [
+            "araly",
+            "archol",
+            "arshol",
+            "cheotam",
+            "choep",
+            "choetey",
+            "chokeod",
+            "cholam",
+            "chtairy",
+            "chtaly",
+            "chtches",
+            "chtchesy",
+            "ctar",
+            "daiikey",
+            "dainkey",
+            "dchochar",
+            "dchokey",
+            "dkochy",
+            "docheeo",
+            "docheey"
+          ]
+        },
+        "shared_ab": {
+          "count": 109,
+          "rate": 59.2
+        }
+      },
+      "f69v": {
+        "token_count": 407,
+        "type_count": 151,
+        "a_overlap": {
+          "count": 98,
+          "rate": 64.9,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "ar",
+            "char",
+            "chdy",
+            "cheal",
+            "chear",
+            "chees",
+            "cheey",
+            "cheody",
+            "cheol",
+            "cheos",
+            "cheoy",
+            "chetody",
+            "chey",
+            "cho",
+            "choaiin",
+            "choky",
+            "chol"
+          ]
+        },
+        "b_overlap": {
+          "count": 106,
+          "rate": 70.2,
+          "types": [
+            "aiin",
+            "aiiny",
+            "air",
+            "al",
+            "alys",
+            "ar",
+            "arar",
+            "char",
+            "chda",
+            "chdy",
+            "chea",
+            "cheal",
+            "chear",
+            "chees",
+            "cheey",
+            "cheody",
+            "cheol",
+            "cheos",
+            "cheoy",
+            "chey"
+          ]
+        },
+        "endemic": {
+          "count": 36,
+          "rate": 23.8,
+          "types": [
+            "airchy",
+            "chese",
+            "chetesescher",
+            "chsar",
+            "daiial",
+            "doair",
+            "echa",
+            "eokeeor",
+            "ey",
+            "kiody",
+            "ochoyk",
+            "oeesa",
+            "oeesy",
+            "oeykeody",
+            "okcheys",
+            "okead",
+            "okeeas",
+            "okeeydy",
+            "okeyd",
+            "okodchy"
+          ]
+        },
+        "shared_ab": {
+          "count": 89,
+          "rate": 58.9
+        }
+      },
+      "f70r1": {
+        "token_count": 320,
+        "type_count": 131,
+        "a_overlap": {
+          "count": 81,
+          "rate": 61.8,
+          "types": [
+            "air",
+            "al",
+            "alal",
+            "aly",
+            "ar",
+            "ary",
+            "chear",
+            "chedaiin",
+            "cheo",
+            "cheor",
+            "chety",
+            "chey",
+            "chkal",
+            "chockhey",
+            "chodal",
+            "chody",
+            "choky",
+            "chol",
+            "choly",
+            "chotar"
+          ]
+        },
+        "b_overlap": {
+          "count": 83,
+          "rate": 63.4,
+          "types": [
+            "air",
+            "airody",
+            "al",
+            "alair",
+            "alal",
+            "aly",
+            "ar",
+            "ary",
+            "chear",
+            "ched",
+            "chedaiin",
+            "cheo",
+            "cheor",
+            "chety",
+            "chey",
+            "chkal",
+            "chockhey",
+            "chodal",
+            "chody",
+            "choekeey"
+          ]
+        },
+        "endemic": {
+          "count": 41,
+          "rate": 31.3,
+          "types": [
+            "alairdy",
+            "chockheos",
+            "chodalar",
+            "choekeeos",
+            "cholair",
+            "chopcheopchy",
+            "chotee",
+            "ey",
+            "ofchon",
+            "okard",
+            "okasd",
+            "okeeed",
+            "okesokeas",
+            "okolair",
+            "okosd",
+            "oooooooool",
+            "opolaiin",
+            "oroldy",
+            "orolgy",
+            "otairoroldy"
+          ]
+        },
+        "shared_ab": {
+          "count": 74,
+          "rate": 56.5
+        }
+      },
+      "f70r2": {
+        "token_count": 815,
+        "type_count": 249,
+        "a_overlap": {
+          "count": 141,
+          "rate": 56.6,
+          "types": [
+            "aiin",
+            "aiir",
+            "aim",
+            "ain",
+            "air",
+            "al",
+            "alal",
+            "aldaiin",
+            "am",
+            "an",
+            "ar",
+            "aral",
+            "aram",
+            "ary",
+            "chal",
+            "cham",
+            "char",
+            "chcthey",
+            "chcthy",
+            "chdy"
+          ]
+        },
+        "b_overlap": {
+          "count": 149,
+          "rate": 59.8,
+          "types": [
+            "aiin",
+            "aiir",
+            "aiis",
+            "aim",
+            "ain",
+            "air",
+            "al",
+            "alal",
+            "ald",
+            "alkam",
+            "am",
+            "an",
+            "ar",
+            "aral",
+            "aram",
+            "arl",
+            "ary",
+            "chal",
+            "cham",
+            "char"
+          ]
+        },
+        "endemic": {
+          "count": 83,
+          "rate": 33.3,
+          "types": [
+            "alekeey",
+            "aloees",
+            "ardar",
+            "arkam",
+            "arodchedy",
+            "arylekeoy",
+            "chchet",
+            "chchetal",
+            "chchit",
+            "chchtal",
+            "cheecpheey",
+            "cheeoekey",
+            "cheeog",
+            "chekeo",
+            "chekeoar",
+            "cheocpheey",
+            "cheoteeodal",
+            "chese",
+            "chess",
+            "chly"
+          ]
+        },
+        "shared_ab": {
+          "count": 124,
+          "rate": 49.8
+        }
+      },
+      "f70v2": {
+        "token_count": 516,
+        "type_count": 177,
+        "a_overlap": {
+          "count": 99,
+          "rate": 55.9,
+          "types": [
+            "aiin",
+            "aj",
+            "al",
+            "aldy",
+            "alor",
+            "alos",
+            "am",
+            "ar",
+            "aral",
+            "chal",
+            "chckhey",
+            "chckhhy",
+            "chedaiin",
+            "chedy",
+            "chekeey",
+            "cho",
+            "chokain",
+            "chol",
+            "cholaiin",
+            "chor"
+          ]
+        },
+        "b_overlap": {
+          "count": 107,
+          "rate": 60.5,
+          "types": [
+            "aiin",
+            "ail",
+            "aildy",
+            "al",
+            "alain",
+            "aldy",
+            "alody",
+            "alor",
+            "am",
+            "amy",
+            "ar",
+            "aral",
+            "arar",
+            "ay",
+            "chal",
+            "chckhey",
+            "chckhhy",
+            "chedaiin",
+            "chedy",
+            "chekeey"
+          ]
+        },
+        "endemic": {
+          "count": 56,
+          "rate": 31.6,
+          "types": [
+            "alinralor",
+            "chalaly",
+            "chedaino",
+            "chelaly",
+            "cheoltey",
+            "choeteedy",
+            "chokear",
+            "chotear",
+            "daimdy",
+            "dainlamdy",
+            "dateey",
+            "dlay",
+            "dolaraj",
+            "dolaram",
+            "dolararm",
+            "eko",
+            "okagy",
+            "okala",
+            "okaldal",
+            "okaraj"
+          ]
+        },
+        "shared_ab": {
+          "count": 85,
+          "rate": 48.0
+        }
+      },
+      "f70v1": {
+        "token_count": 222,
+        "type_count": 101,
+        "a_overlap": {
+          "count": 56,
+          "rate": 55.4,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "alols",
+            "aly",
+            "am",
+            "ar",
+            "chcthy",
+            "chees",
+            "cheey",
+            "cheody",
+            "chy",
+            "daiin",
+            "dal",
+            "daly",
+            "dar",
+            "dy",
+            "key",
+            "ochy",
+            "okalal"
+          ]
+        },
+        "b_overlap": {
+          "count": 59,
+          "rate": 58.4,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "aly",
+            "am",
+            "ar",
+            "chcthy",
+            "chees",
+            "cheey",
+            "chekey",
+            "cheody",
+            "cheokeeo",
+            "chy",
+            "daiin",
+            "dal",
+            "daly",
+            "dar",
+            "dy",
+            "key",
+            "ochy"
+          ]
+        },
+        "endemic": {
+          "count": 39,
+          "rate": 38.6,
+          "types": [
+            "amdy",
+            "araly",
+            "araydy",
+            "asaly",
+            "chekalchr",
+            "chekalchs",
+            "chekeal",
+            "cheokeo",
+            "dalalody",
+            "dlal",
+            "gy",
+            "oalcheg",
+            "oamr",
+            "okchoteees",
+            "okealar",
+            "okeeodal",
+            "okeolol",
+            "okoksheo",
+            "okolcsy",
+            "opotey"
+          ]
+        },
+        "shared_ab": {
+          "count": 53,
+          "rate": 52.5
+        }
+      },
+      "f71r": {
+        "token_count": 197,
+        "type_count": 103,
+        "a_overlap": {
+          "count": 58,
+          "rate": 56.3,
+          "types": [
+            "aiin",
+            "al",
+            "ar",
+            "char",
+            "chdy",
+            "chekal",
+            "cheky",
+            "chokol",
+            "choly",
+            "chs",
+            "chy",
+            "daiin",
+            "dar",
+            "eey",
+            "keo",
+            "keoar",
+            "keody",
+            "o",
+            "ockhey",
+            "ody"
+          ]
+        },
+        "b_overlap": {
+          "count": 61,
+          "rate": 59.2,
+          "types": [
+            "aiin",
+            "al",
+            "ald",
+            "ar",
+            "arar",
+            "char",
+            "chdy",
+            "cheary",
+            "chekal",
+            "cheky",
+            "choly",
+            "chs",
+            "chy",
+            "daiin",
+            "dar",
+            "eeedy",
+            "eey",
+            "keo",
+            "keody",
+            "lsheody"
+          ]
+        },
+        "endemic": {
+          "count": 37,
+          "rate": 35.9,
+          "types": [
+            "aekeeey",
+            "checkal",
+            "cheeokseo",
+            "chekeen",
+            "chetshy",
+            "chsary",
+            "lkchol",
+            "lsheotey",
+            "oekeeey",
+            "okchees",
+            "okeeees",
+            "okeoaly",
+            "okeokeokeody",
+            "okldam",
+            "opalrar",
+            "opalsar",
+            "otalaly",
+            "otaldar",
+            "otaleky",
+            "otalgar"
+          ]
+        },
+        "shared_ab": {
+          "count": 53,
+          "rate": 51.5
+        }
+      },
+      "f71v": {
+        "token_count": 231,
+        "type_count": 109,
+        "a_overlap": {
+          "count": 62,
+          "rate": 56.9,
+          "types": [
+            "aiin",
+            "al",
+            "aly",
+            "am",
+            "ar",
+            "arol",
+            "arom",
+            "chal",
+            "char",
+            "cheal",
+            "cheey",
+            "cheol",
+            "cheols",
+            "cheor",
+            "chey",
+            "chtor",
+            "daiin",
+            "dal",
+            "dan",
+            "dar"
+          ]
+        },
+        "b_overlap": {
+          "count": 67,
+          "rate": 61.5,
+          "types": [
+            "aiin",
+            "al",
+            "alody",
+            "aly",
+            "am",
+            "ar",
+            "arol",
+            "ateey",
+            "chal",
+            "char",
+            "cheal",
+            "cheekaiin",
+            "cheey",
+            "cheol",
+            "cheor",
+            "chey",
+            "chpchy",
+            "daiin",
+            "dal",
+            "dan"
+          ]
+        },
+        "endemic": {
+          "count": 35,
+          "rate": 32.1,
+          "types": [
+            "alcphy",
+            "araly",
+            "chfaly",
+            "chkeeal",
+            "cholcsdy",
+            "chpaly",
+            "chtos",
+            "cpar",
+            "gan",
+            "ofacfom",
+            "okaikaly",
+            "okchr",
+            "okeodaly",
+            "okeosar",
+            "okolar",
+            "opaepom",
+            "opalar",
+            "opalorar",
+            "oroj",
+            "otalody"
+          ]
+        },
+        "shared_ab": {
+          "count": 55,
+          "rate": 50.5
+        }
+      },
+      "f72r1": {
+        "token_count": 233,
+        "type_count": 113,
+        "a_overlap": {
+          "count": 70,
+          "rate": 61.9,
+          "types": [
+            "aiin",
+            "al",
+            "ar",
+            "ary",
+            "as",
+            "chal",
+            "char",
+            "chckhy",
+            "chcthy",
+            "chedal",
+            "cheedy",
+            "chekeol",
+            "cheky",
+            "cheol",
+            "cheor",
+            "chlol",
+            "chokaiin",
+            "chokal",
+            "chokeol",
+            "chokshor"
+          ]
+        },
+        "b_overlap": {
+          "count": 75,
+          "rate": 66.4,
+          "types": [
+            "adal",
+            "aiin",
+            "al",
+            "alo",
+            "ar",
+            "ary",
+            "as",
+            "chal",
+            "char",
+            "charam",
+            "chckhy",
+            "chcthy",
+            "chedal",
+            "cheedy",
+            "cheky",
+            "cheol",
+            "cheolor",
+            "cheor",
+            "chetey",
+            "chokaiin"
+          ]
+        },
+        "endemic": {
+          "count": 30,
+          "rate": 26.5,
+          "types": [
+            "ainam",
+            "alef",
+            "alf",
+            "alif",
+            "aroly",
+            "chalaiin",
+            "chdaiir",
+            "chdaiirsainy",
+            "cheolky",
+            "ocholsharam",
+            "ofaralar",
+            "okaiis",
+            "okalshey",
+            "okeeas",
+            "okeeyary",
+            "okeodaly",
+            "oqokar",
+            "oshodady",
+            "oshodody",
+            "otainy"
+          ]
+        },
+        "shared_ab": {
+          "count": 62,
+          "rate": 54.9
+        }
+      },
+      "f72r2": {
+        "token_count": 237,
+        "type_count": 129,
+        "a_overlap": {
+          "count": 75,
+          "rate": 58.1,
+          "types": [
+            "aiin",
+            "aiir",
+            "air",
+            "al",
+            "aldy",
+            "aly",
+            "ar",
+            "arary",
+            "ary",
+            "cham",
+            "chas",
+            "chees",
+            "chekaiin",
+            "cheol",
+            "chey",
+            "cho",
+            "chokaly",
+            "chol",
+            "chosar",
+            "chs"
+          ]
+        },
+        "b_overlap": {
+          "count": 79,
+          "rate": 61.2,
+          "types": [
+            "aiin",
+            "aiir",
+            "ainaly",
+            "air",
+            "al",
+            "aldy",
+            "aly",
+            "ar",
+            "ary",
+            "cham",
+            "chas",
+            "chees",
+            "chekaiin",
+            "cheol",
+            "chey",
+            "cho",
+            "chol",
+            "chotal",
+            "chs",
+            "chtaiin"
+          ]
+        },
+        "endemic": {
+          "count": 43,
+          "rate": 33.3,
+          "types": [
+            "aloy",
+            "chchs",
+            "cheokeodal",
+            "chosan",
+            "csctheey",
+            "cseteeey",
+            "csey",
+            "cseycthy",
+            "gy",
+            "keodol",
+            "kyly",
+            "ofchdady",
+            "ofchdagy",
+            "ofchdajy",
+            "ofchdamy",
+            "okaircham",
+            "okalchal",
+            "okarchag",
+            "okarchaj",
+            "okealar"
+          ]
+        },
+        "shared_ab": {
+          "count": 68,
+          "rate": 52.7
+        }
+      },
+      "f72r3": {
+        "token_count": 273,
+        "type_count": 182,
+        "a_overlap": {
+          "count": 98,
+          "rate": 53.8,
+          "types": [
+            "aiin",
+            "al",
+            "alaiin",
+            "aloly",
+            "am",
+            "ar",
+            "aral",
+            "arary",
+            "as",
+            "cheal",
+            "chedaiin",
+            "chedy",
+            "cheeor",
+            "cheey",
+            "cheky",
+            "chem",
+            "cheo",
+            "cheol",
+            "cheor",
+            "ches"
+          ]
+        },
+        "b_overlap": {
+          "count": 108,
+          "rate": 59.3,
+          "types": [
+            "aiin",
+            "airal",
+            "al",
+            "alaiiin",
+            "alaiin",
+            "alkam",
+            "am",
+            "ar",
+            "araiiin",
+            "aral",
+            "aralkam",
+            "arl",
+            "as",
+            "cheal",
+            "chedaiin",
+            "chedy",
+            "cheeor",
+            "cheey",
+            "chekar",
+            "cheky"
+          ]
+        },
+        "endemic": {
+          "count": 65,
+          "rate": 35.7,
+          "types": [
+            "aes",
+            "alaly",
+            "chealdy",
+            "cheem",
+            "chekaithhy",
+            "cheolaiin",
+            "chokees",
+            "dotsey",
+            "eeer",
+            "ereoly",
+            "fydy",
+            "octho",
+            "oeaiin",
+            "oeeeodaiin",
+            "oeeesaiin",
+            "oekes",
+            "oeteos",
+            "ofais",
+            "ofsholdy",
+            "oheol"
+          ]
+        },
+        "shared_ab": {
+          "count": 89,
+          "rate": 48.9
+        }
+      },
+      "f72v3": {
+        "token_count": 235,
+        "type_count": 149,
+        "a_overlap": {
+          "count": 75,
+          "rate": 50.3,
+          "types": [
+            "aiin",
+            "aldy",
+            "aly",
+            "an",
+            "chas",
+            "chcthy",
+            "chdy",
+            "cheal",
+            "chees",
+            "cheey",
+            "cheody",
+            "cheor",
+            "chepy",
+            "cher",
+            "chey",
+            "chol",
+            "cholal",
+            "chopchey",
+            "chr",
+            "cthy"
+          ]
+        },
+        "b_overlap": {
+          "count": 86,
+          "rate": 57.7,
+          "types": [
+            "aiin",
+            "aldy",
+            "aly",
+            "an",
+            "chas",
+            "chcthhy",
+            "chcthy",
+            "chdy",
+            "cheal",
+            "chees",
+            "cheesy",
+            "cheey",
+            "chefy",
+            "cheody",
+            "cheokey",
+            "cheor",
+            "chepy",
+            "cher",
+            "chey",
+            "chol"
+          ]
+        },
+        "endemic": {
+          "count": 57,
+          "rate": 38.3,
+          "types": [
+            "alyshy",
+            "chcpy",
+            "cheis",
+            "cheokeo",
+            "cheolpy",
+            "chkeeol",
+            "chokory",
+            "chsor",
+            "cskesol",
+            "daein",
+            "dchyr",
+            "deeyl",
+            "del",
+            "epal",
+            "eteodys",
+            "etoteear",
+            "ocfhey",
+            "oecs",
+            "oeemy",
+            "ofalals"
+          ]
+        },
+        "shared_ab": {
+          "count": 69,
+          "rate": 46.3
+        }
+      },
+      "f72v2": {
+        "token_count": 222,
+        "type_count": 137,
+        "a_overlap": {
+          "count": 64,
+          "rate": 46.7,
+          "types": [
+            "aiin",
+            "aim",
+            "air",
+            "al",
+            "aly",
+            "am",
+            "ar",
+            "chedy",
+            "cheeey",
+            "cheey",
+            "cheol",
+            "cheoldy",
+            "cheos",
+            "chopchy",
+            "choraiin",
+            "chotey",
+            "ctheol",
+            "cthey",
+            "daiin",
+            "dchy"
+          ]
+        },
+        "b_overlap": {
+          "count": 72,
+          "rate": 52.6,
+          "types": [
+            "aiin",
+            "aim",
+            "air",
+            "al",
+            "aly",
+            "am",
+            "ar",
+            "araiin",
+            "chedy",
+            "cheeey",
+            "cheey",
+            "chekar",
+            "cheol",
+            "cheoldy",
+            "cheos",
+            "chokedy",
+            "chokeedy",
+            "chopchy",
+            "choraiin",
+            "chotal"
+          ]
+        },
+        "endemic": {
+          "count": 55,
+          "rate": 40.1,
+          "types": [
+            "airolm",
+            "alalar",
+            "alteol",
+            "ataseos",
+            "chekaiphy",
+            "cheoekcy",
+            "cheoekry",
+            "cheokaidy",
+            "cheosy",
+            "chetalain",
+            "chetolain",
+            "chskar",
+            "ckholol",
+            "csedeky",
+            "cseo",
+            "dchsaiin",
+            "eeeoloy",
+            "eeoeety",
+            "ekeolol",
+            "ocsesy"
+          ]
+        },
+        "shared_ab": {
+          "count": 54,
+          "rate": 39.4
+        }
+      },
+      "f72v1": {
+        "token_count": 186,
+        "type_count": 122,
+        "a_overlap": {
+          "count": 61,
+          "rate": 50.0,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "alal",
+            "alar",
+            "am",
+            "cheedy",
+            "cheeky",
+            "chepchy",
+            "chotar",
+            "dalal",
+            "dals",
+            "dar",
+            "ocheos",
+            "octhy",
+            "odal",
+            "oeeeos",
+            "oeees",
+            "oeeor",
+            "oees"
+          ]
+        },
+        "b_overlap": {
+          "count": 69,
+          "rate": 56.6,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "alal",
+            "alar",
+            "alshey",
+            "am",
+            "atey",
+            "cheedy",
+            "cheeky",
+            "chepchy",
+            "chotar",
+            "chpar",
+            "dalal",
+            "dals",
+            "dar",
+            "iir",
+            "octhy",
+            "odal",
+            "oeeeos"
+          ]
+        },
+        "endemic": {
+          "count": 46,
+          "rate": 37.7,
+          "types": [
+            "aiinod",
+            "alchol",
+            "alshdy",
+            "chechkey",
+            "cheoekey",
+            "cheoepy",
+            "choshydy",
+            "chpaly",
+            "ocfshy",
+            "odamy",
+            "odody",
+            "oeeaty",
+            "oeeody",
+            "oeeoly",
+            "oeeoty",
+            "ofalar",
+            "ofas",
+            "ofcheolfy",
+            "oiiny",
+            "okalair"
+          ]
+        },
+        "shared_ab": {
+          "count": 54,
+          "rate": 44.3
+        }
+      },
+      "f73r": {
+        "token_count": 189,
+        "type_count": 119,
+        "a_overlap": {
+          "count": 67,
+          "rate": 56.3,
+          "types": [
+            "aiin",
+            "air",
+            "aisam",
+            "al",
+            "alar",
+            "alor",
+            "aly",
+            "ar",
+            "chary",
+            "chdy",
+            "chedain",
+            "chees",
+            "cheey",
+            "cheody",
+            "cheoly",
+            "chepchey",
+            "ches",
+            "chey",
+            "cho",
+            "chockhy"
+          ]
+        },
+        "b_overlap": {
+          "count": 73,
+          "rate": 61.3,
+          "types": [
+            "aiin",
+            "air",
+            "aisam",
+            "al",
+            "alar",
+            "alor",
+            "alshey",
+            "aly",
+            "ar",
+            "chary",
+            "chdar",
+            "chdy",
+            "chedain",
+            "chedar",
+            "chees",
+            "cheesy",
+            "cheey",
+            "chefy",
+            "cheody",
+            "cheoly"
+          ]
+        },
+        "endemic": {
+          "count": 37,
+          "rate": 31.1,
+          "types": [
+            "airalor",
+            "alcheky",
+            "alteey",
+            "chedaly",
+            "chepchedaly",
+            "chepchees",
+            "chetchody",
+            "cheteeeor",
+            "cheteeeosaiin",
+            "cheteey",
+            "dalshey",
+            "ohor",
+            "okchs",
+            "okechs",
+            "okery",
+            "okesdy",
+            "oksedy",
+            "olalaiin",
+            "ootady",
+            "opees"
+          ]
+        },
+        "shared_ab": {
+          "count": 58,
+          "rate": 48.7
+        }
+      },
+      "f73v": {
+        "token_count": 216,
+        "type_count": 115,
+        "a_overlap": {
+          "count": 59,
+          "rate": 51.3,
+          "types": [
+            "ain",
+            "air",
+            "airy",
+            "al",
+            "alar",
+            "aly",
+            "ar",
+            "ary",
+            "chdy",
+            "cheody",
+            "cheor",
+            "chey",
+            "chodaiin",
+            "chody",
+            "choldy",
+            "chory",
+            "choty",
+            "chy",
+            "daly",
+            "dy"
+          ]
+        },
+        "b_overlap": {
+          "count": 72,
+          "rate": 62.6,
+          "types": [
+            "ain",
+            "air",
+            "airy",
+            "al",
+            "alar",
+            "alshy",
+            "aly",
+            "ar",
+            "ary",
+            "chdy",
+            "ched",
+            "cheody",
+            "cheor",
+            "chey",
+            "chodaiin",
+            "chody",
+            "choldy",
+            "choty",
+            "chy",
+            "csedy"
+          ]
+        },
+        "endemic": {
+          "count": 36,
+          "rate": 31.3,
+          "types": [
+            "ai",
+            "alaly",
+            "cheoral",
+            "cheytey",
+            "chfaekchy",
+            "chfaikch",
+            "chokadam",
+            "chokeedam",
+            "dpy",
+            "echy",
+            "ecsy",
+            "odees",
+            "ofals",
+            "ofcheesy",
+            "oiair",
+            "okchs",
+            "okecholy",
+            "okodchy",
+            "okodeey",
+            "opals"
+          ]
+        },
+        "shared_ab": {
+          "count": 52,
+          "rate": 45.2
+        }
+      },
+      "f85r2": {
+        "token_count": 290,
+        "type_count": 149,
+        "a_overlap": {
+          "count": 88,
+          "rate": 59.1,
+          "types": [
+            "aiin",
+            "ain",
+            "air",
+            "al",
+            "am",
+            "an",
+            "ar",
+            "arody",
+            "ary",
+            "chckhey",
+            "chckhy",
+            "chcthey",
+            "chcthy",
+            "chdy",
+            "chedy",
+            "chees",
+            "chey",
+            "chol",
+            "chotey",
+            "chy"
+          ]
+        },
+        "b_overlap": {
+          "count": 112,
+          "rate": 75.2,
+          "types": [
+            "aiin",
+            "aiinam",
+            "ain",
+            "air",
+            "al",
+            "alchedy",
+            "am",
+            "an",
+            "ar",
+            "arody",
+            "ary",
+            "chckhey",
+            "chckhy",
+            "chcthey",
+            "chcthy",
+            "chdy",
+            "chedy",
+            "chees",
+            "chepaiin",
+            "chey"
+          ]
+        },
+        "endemic": {
+          "count": 32,
+          "rate": 21.5,
+          "types": [
+            "aiinog",
+            "aloees",
+            "asody",
+            "chcphdar",
+            "chokchg",
+            "chokcod",
+            "ockhdar",
+            "ockhdor",
+            "odchdy",
+            "olfar",
+            "olfor",
+            "oloeorain",
+            "opoar",
+            "opoees",
+            "opoiin",
+            "otadar",
+            "otchdo",
+            "otchs",
+            "otoeedy",
+            "pchedeey"
+          ]
+        },
+        "shared_ab": {
+          "count": 83,
+          "rate": 55.7
+        }
+      },
+      "f86v4": {
+        "token_count": 420,
+        "type_count": 193,
+        "a_overlap": {
+          "count": 103,
+          "rate": 53.4,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "am",
+            "ar",
+            "arody",
+            "chckhy",
+            "chcphey",
+            "chcphhy",
+            "chdy",
+            "chedaiin",
+            "chedy",
+            "cheockhy",
+            "cheol",
+            "cher",
+            "ches",
+            "chey",
+            "chocthy",
+            "chody",
+            "chotaiin"
+          ]
+        },
+        "b_overlap": {
+          "count": 127,
+          "rate": 65.8,
+          "types": [
+            "aiin",
+            "air",
+            "al",
+            "alody",
+            "am",
+            "ar",
+            "arar",
+            "arody",
+            "aror",
+            "chckhy",
+            "chcphey",
+            "chcphhy",
+            "chdair",
+            "chdar",
+            "chdy",
+            "chedaiin",
+            "chedy",
+            "cheockhy",
+            "cheol",
+            "cher"
+          ]
+        },
+        "endemic": {
+          "count": 56,
+          "rate": 29.0,
+          "types": [
+            "arorchey",
+            "chdady",
+            "chdchdy",
+            "chedees",
+            "chedeesoteedy",
+            "cheefar",
+            "cheepchdy",
+            "cheepchedy",
+            "chetdy",
+            "chsodar",
+            "daiinotedy",
+            "dchdes",
+            "dchdor",
+            "ddodar",
+            "deedes",
+            "dery",
+            "doeedey",
+            "dtedair",
+            "dtodair",
+            "eeedar"
+          ]
+        },
+        "shared_ab": {
+          "count": 93,
+          "rate": 48.2
+        }
+      },
+      "f86v6": {
+        "token_count": 965,
+        "type_count": 328,
+        "a_overlap": {
+          "count": 182,
+          "rate": 55.5,
+          "types": [
+            "aiiin",
+            "aiin",
+            "aim",
+            "ain",
+            "al",
+            "alkar",
+            "am",
+            "ar",
+            "arody",
+            "chal",
+            "chcfhy",
+            "chcphy",
+            "chdy",
+            "chear",
+            "chedy",
+            "chees",
+            "cheody",
+            "cheol",
+            "cheor",
+            "chepy"
+          ]
+        },
+        "b_overlap": {
+          "count": 247,
+          "rate": 75.3,
+          "types": [
+            "aiiin",
+            "aiin",
+            "aim",
+            "ain",
+            "al",
+            "alkar",
+            "alky",
+            "am",
+            "ar",
+            "araiin",
+            "arody",
+            "aroiin",
+            "chakaiin",
+            "chal",
+            "chcfhy",
+            "chcphar",
+            "chcphy",
+            "chcthdy",
+            "chdal",
+            "chdar"
+          ]
+        },
+        "endemic": {
+          "count": 68,
+          "rate": 20.7,
+          "types": [
+            "adar",
+            "aiadam",
+            "aiodam",
+            "alshdr",
+            "araram",
+            "cholfchy",
+            "cholkeod",
+            "choltal",
+            "chorolk",
+            "cpholkaiin",
+            "ctholcthy",
+            "damom",
+            "dytshedy",
+            "dytshy",
+            "kea",
+            "kshd",
+            "lchdol",
+            "ldaiiin",
+            "ldaly",
+            "lkalol"
+          ]
+        },
+        "shared_ab": {
+          "count": 169,
+          "rate": 51.5
+        }
+      },
+      "f85v2": {
+        "token_count": 343,
+        "type_count": 207,
+        "a_overlap": {
+          "count": 98,
+          "rate": 47.3,
+          "types": [
+            "aiin",
+            "aiir",
+            "ain",
+            "air",
+            "al",
+            "alar",
+            "am",
+            "ar",
+            "ary",
+            "chdain",
+            "chdy",
+            "chedy",
+            "cthedy",
+            "d",
+            "daiin",
+            "daiino",
+            "daiiny",
+            "daindy",
+            "dal",
+            "daldal"
+          ]
+        },
+        "b_overlap": {
+          "count": 123,
+          "rate": 59.4,
+          "types": [
+            "aiin",
+            "aiir",
+            "ain",
+            "air",
+            "al",
+            "alar",
+            "alo",
+            "am",
+            "ar",
+            "arar",
+            "ary",
+            "chdain",
+            "chdar",
+            "chdy",
+            "chedy",
+            "chkeedy",
+            "cthedy",
+            "d",
+            "daiin",
+            "daiiny"
+          ]
+        },
+        "endemic": {
+          "count": 71,
+          "rate": 34.3,
+          "types": [
+            "adairy",
+            "amal",
+            "cfhedain",
+            "cfhhy",
+            "chedaiir",
+            "cheekedy",
+            "cheolky",
+            "chpair",
+            "cphedain",
+            "cthshr",
+            "dairdy",
+            "darchdy",
+            "ddaro",
+            "ddary",
+            "ddl",
+            "ddsschx",
+            "deedyoty",
+            "docfhhy",
+            "dtedg",
+            "dtedy"
+          ]
+        },
+        "shared_ab": {
+          "count": 85,
+          "rate": 41.1
+        }
+      },
+      "f86v5": {
+        "token_count": 800,
+        "type_count": 259,
+        "a_overlap": {
+          "count": 176,
+          "rate": 68.0,
+          "types": [
+            "a",
+            "acthy",
+            "aiiin",
+            "aiin",
+            "air",
+            "aithy",
+            "al",
+            "am",
+            "an",
+            "ar",
+            "aral",
+            "chaiin",
+            "chckhy",
+            "chcthody",
+            "chdy",
+            "chedy",
+            "cheey",
+            "cheody",
+            "cheoky",
+            "chepy"
+          ]
+        },
+        "b_overlap": {
+          "count": 206,
+          "rate": 79.5,
+          "types": [
+            "a",
+            "acthy",
+            "aiiin",
+            "aiin",
+            "air",
+            "aithy",
+            "al",
+            "alkaiin",
+            "alkal",
+            "alkam",
+            "alody",
+            "am",
+            "amom",
+            "an",
+            "ar",
+            "araiin",
+            "aral",
+            "chaiin",
+            "chaky",
+            "chckhy"
+          ]
+        },
+        "endemic": {
+          "count": 46,
+          "rate": 17.8,
+          "types": [
+            "alosheey",
+            "amod",
+            "aralosheey",
+            "cheeg",
+            "cheem",
+            "dalkalytam",
+            "dcheytain",
+            "fchcfhy",
+            "fyshey",
+            "lfar",
+            "lkesy",
+            "lkshy",
+            "losair",
+            "ocfhdy",
+            "octhal",
+            "olkeeeary",
+            "olpshy",
+            "oreeem",
+            "oteeodail",
+            "otoloty"
+          ]
+        },
+        "shared_ab": {
+          "count": 169,
+          "rate": 65.3
+        }
+      },
+      "f86v3": {
+        "token_count": 770,
+        "type_count": 238,
+        "a_overlap": {
+          "count": 147,
+          "rate": 61.8,
+          "types": [
+            "aiiin",
+            "aiim",
+            "aiin",
+            "aiir",
+            "aldy",
+            "alor",
+            "am",
+            "ar",
+            "aram",
+            "arody",
+            "ary",
+            "chckhey",
+            "chcthey",
+            "chcthy",
+            "chdy",
+            "cheaiin",
+            "chear",
+            "checkhy",
+            "chedaiin",
+            "chedy"
+          ]
+        },
+        "b_overlap": {
+          "count": 186,
+          "rate": 78.2,
+          "types": [
+            "aiiin",
+            "aiim",
+            "aiin",
+            "aiindy",
+            "aiir",
+            "airody",
+            "aldy",
+            "alor",
+            "am",
+            "ar",
+            "araiin",
+            "aram",
+            "arody",
+            "ary",
+            "chalkar",
+            "chckhey",
+            "chcthey",
+            "chcthy",
+            "chdal",
+            "chdar"
+          ]
+        },
+        "endemic": {
+          "count": 44,
+          "rate": 18.5,
+          "types": [
+            "acheody",
+            "cfhyaiin",
+            "chedaly",
+            "chedos",
+            "cheokaiim",
+            "dalkshdy",
+            "echody",
+            "kshd",
+            "lshodain",
+            "lshodair",
+            "olpeey",
+            "opaiir",
+            "osheey",
+            "oteeodam",
+            "qopcheeody",
+            "qotaiior",
+            "ralkchedy",
+            "raraldy",
+            "rolkam",
+            "samaldy"
+          ]
+        },
+        "shared_ab": {
+          "count": 139,
+          "rate": 58.4
+        }
+      },
+      "f116v": {
+        "token_count": 2,
+        "type_count": 2,
+        "a_overlap": {
+          "count": 2,
+          "rate": 100.0,
+          "types": [
+            "oror",
+            "sheey"
+          ]
+        },
+        "b_overlap": {
+          "count": 2,
+          "rate": 100.0,
+          "types": [
+            "oror",
+            "sheey"
+          ]
+        },
+        "endemic": {
+          "count": 0,
+          "rate": 0.0,
+          "types": []
+        },
+        "shared_ab": {
+          "count": 2,
+          "rate": 100.0
+        }
+      }
+    }
+  },
+  "azc_similarity": {
+    "mean_jaccard": 0.056,
+    "most_similar": [
+      [
+        "f86v6:f86v5",
+        0.176
+      ],
+      [
+        "f86v5:f86v3",
+        0.159
+      ],
+      [
+        "f69r:f69v",
+        0.139
+      ],
+      [
+        "f86v6:f86v3",
+        0.137
+      ],
+      [
+        "f69r:f72r2",
+        0.134
+      ],
+      [
+        "f70v1:f72r2",
+        0.122
+      ],
+      [
+        "f69r:f86v5",
+        0.119
+      ],
+      [
+        "f70r2:f86v5",
+        0.119
+      ],
+      [
+        "f85r2:f86v3",
+        0.118
+      ],
+      [
+        "f69r:f70r2",
+        0.116
+      ]
+    ],
+    "least_similar": [
+      [
+        "f71v:f116v",
+        0.0
+      ],
+      [
+        "f72r1:f116v",
+        0.0
+      ],
+      [
+        "f72r2:f116v",
+        0.0
+      ],
+      [
+        "f72v3:f116v",
+        0.0
+      ],
+      [
+        "f72v2:f116v",
+        0.0
+      ],
+      [
+        "f72v1:f116v",
+        0.0
+      ],
+      [
+        "f73r:f116v",
+        0.0
+      ],
+      [
+        "f73v:f116v",
+        0.0
+      ],
+      [
+        "f85r2:f116v",
+        0.0
+      ],
+      [
+        "f85v2:f116v",
+        0.0
+      ]
+    ]
+  },
+  "a_coverage": {
+    "total_a_types_in_azc": 973,
+    "coverage_distribution": {
+      "3": 81,
+      "4": 69,
+      "27": 3,
+      "10": 6,
+      "8": 17,
+      "1": 478,
+      "6": 28,
+      "2": 184,
+      "13": 6,
+      "15": 2,
+      "16": 3,
+      "17": 6,
+      "7": 24,
+      "19": 2,
+      "21": 1,
+      "28": 1,
+      "5": 30,
+      "22": 1,
+      "23": 1,
+      "18": 4,
+      "20": 2,
+      "11": 9,
+      "12": 7,
+      "14": 2,
+      "9": 4,
+      "24": 1,
+      "25": 1
+    },
+    "high_coverage_types": [
+      [
+        "daiin",
+        28
+      ],
+      [
+        "aiin",
+        27
+      ],
+      [
+        "dar",
+        27
+      ],
+      [
+        "ar",
+        27
+      ],
+      [
+        "al",
+        25
+      ],
+      [
+        "oteey",
+        24
+      ],
+      [
+        "dy",
+        23
+      ],
+      [
+        "okeey",
+        22
+      ],
+      [
+        "dal",
+        21
+      ],
+      [
+        "s",
+        20
+      ],
+      [
+        "chol",
+        20
+      ],
+      [
+        "y",
+        19
+      ],
+      [
+        "or",
+        19
+      ],
+      [
+        "okal",
+        18
+      ],
+      [
+        "o",
+        18
+      ],
+      [
+        "air",
+        18
+      ],
+      [
+        "chey",
+        18
+      ],
+      [
+        "oty",
+        17
+      ],
+      [
+        "otey",
+        17
+      ],
+      [
+        "ol",
+        17
+      ],
+      [
+        "otar",
+        17
+      ],
+      [
+        "chy",
+        17
+      ],
+      [
+        "am",
+        17
+      ],
+      [
+        "r",
+        16
+      ],
+      [
+        "sar",
+        16
+      ],
+      [
+        "shey",
+        16
+      ],
+      [
+        "okey",
+        15
+      ],
+      [
+        "chdy",
+        15
+      ],
+      [
+        "cheody",
+        14
+      ],
+      [
+        "otol",
+        14
+      ]
+    ],
+    "low_coverage_count": 478,
+    "low_coverage_examples": [
+      [
+        "sher",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "ety",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "n",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "p",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "f",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "t",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "tchor",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "teodar",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "ofchey",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "of",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "sa",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "okchod",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "dsh",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "okchoy",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "dairol",
+        [
+          "f57v"
+        ]
+      ],
+      [
+        "alam",
+        [
+          "f65r"
+        ]
+      ],
+      [
+        "shky",
+        [
+          "f65v"
+        ]
+      ],
+      [
+        "cheotchy",
+        [
+          "f65v"
+        ]
+      ],
+      [
+        "fol",
+        [
+          "f65v"
+        ]
+      ],
+      [
+        "qo",
+        [
+          "f65v"
+        ]
+      ]
+    ]
+  },
+  "b_sourcing": {
+    "mean_azc_overlap": 58.4,
+    "mean_source_count": 35.1,
+    "source_count_range": [
+      34,
+      36
+    ]
+  },
+  "interpretation": {
+    "findings": [
+      "High variance in threading: A=59pp, B=58pp",
+      "Endemic rate varies by 54pp across AZC folios",
+      "AZC folios have LOW vocabulary overlap (mean Jaccard=0.056)"
+    ],
+    "fit_tier": "EXPLORATORY"
+  }
+}

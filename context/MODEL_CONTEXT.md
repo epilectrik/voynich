@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 2.13 | **Date:** 2026-01-10 | **Status:** FROZEN
+**Version:** 3.0 | **Date:** 2026-01-11 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -119,7 +119,7 @@ The Voynich Manuscript contains four coexisting systems sharing a morphological 
 
 **Vocabulary sharing ≠ lookup.** A and B share ~1,500 token types because they describe the same operational domain, not because A entries "refer to" B programs.
 
-### Four-Layer Responsibility Model (v2.13)
+### Four-Layer Responsibility Model (v3.0)
 
 The manuscript distributes responsibility between system and human across four layers:
 
@@ -127,7 +127,7 @@ The manuscript distributes responsibility between system and human across four l
 |-------|------|-----------------|
 | **Currier B** | Constrains you | Execution grammar, safety envelope |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
-| **AZC** | Orients you | Spatial scaffold, attention mode |
+| **AZC** | Gates you | Phase-indexed decision legality, compatibility filtering |
 | **HT** | Prepares you | Anticipatory vigilance signal |
 
 The right mental model is not "What does this page tell me to do?" but:
@@ -167,6 +167,11 @@ MIDDLEs are the primary vocabulary layer:
 - 80% are prefix-exclusive (domain-specific)
 - 20% are shared across prefixes
 - 27 universal MIDDLEs appear in 6+ prefix classes
+
+**Frequency Distribution (Tier 3):**
+- Core (top 30): 67.6% of usage, mode-flexible, section-stable
+- Tail (~1,150): 32.4% of usage, mode-specific, hazard-concentrated
+- Rare MIDDLEs cluster in high-hazard contexts (rho=-0.339, p=0.0001)
 
 ### SUFFIX Function
 
@@ -288,45 +293,71 @@ Clustering reflects **where distinctions matter**, not categorical organization.
 
 ---
 
-## VIII. AZC - HYBRID MODE & PLACEMENT CODING
+## VIII. AZC - DECISION-POINT GRAMMAR & COMPATIBILITY FILTER
 
-AZC (9,401 tokens, 7.7% of corpus) is neither Currier A nor Currier B. It operates under a hybrid regime with placement-based constraints.
+AZC (9,401 tokens, 7.7% of corpus, 36 folios) is neither Currier A nor Currier B. It operates as a **decision-point grammar** that converts static A-registry entries into phase-gated choice nodes.
 
-### Hybrid Status
+### Core Function (v3.0)
 
-- 69.7% B-legal transitions
-- 65.4% A-legal transitions
-- Neither grammar fully applies
+| System | Function | Type |
+|--------|----------|------|
+| Currier A | WHAT exists | Static registry |
+| Currier B | HOW to proceed | Procedural sequence |
+| AZC | WHEN to decide | Decision grammar |
 
-### Placement Coding
+AZC is the **interface layer** that converts static knowledge (A) into actionable decision points within procedures (B).
 
-Position on the page constrains legality:
-- R/R1/R2/R3: Radial positions
-- S/S1/S2: Sector positions
-- C: Central
-- MULTI: Multiple placements
+### Structural Properties (C437-C444)
 
-Position determines **what is legal**, not **what it means**.
+| Finding | Evidence | Constraint |
+|---------|----------|------------|
+| Folios maximally orthogonal | Jaccard = 0.056 | C437 |
+| Practically complete basis | 83% per-folio coverage | C438 |
+| Folio-specific HT profiles | 18pp escape variance | C439 |
+| Uniform B sourcing | 34-36 folios per B | C440 |
+| Vocabulary-activated constraints | 49% A-types in 1 folio | C441 |
+| Compatibility filter | 94% unique vocabulary | C442 |
 
-### Diagram Function
+### Positional Grammar
 
-Diagrams anchor legality constraints but do not carry semantic content:
-- Physical layout gates grammatical options
-- Illustrations are structurally relevant but not interpretively meaningful
-- "Season-gated workflow" is structural, not calendrical
+Position on the page constrains legality (C→P→R→S progression):
 
-### AZC Entry Orientation (C460)
+| Position | Workflow Phase | Escape Rate | Meaning |
+|----------|----------------|-------------|---------|
+| C | Setup/Loading | 1.4% | Entry constrained, errors fixable |
+| P | Active work | 11.6% | Recovery permitted, intervention legal |
+| R1→R2→R3 | Progression | 2.0%→1.2%→0% | Options narrowing, committing |
+| S | Collection/Exit | 0-3.8% | Locked, must accept outcome |
 
-AZC folios mark natural HT transition zones in the manuscript:
-- HT is elevated **before** AZC pages, reduced **after** them
-- This pattern resembles random positions more than A or B entries
-- AZC is **placed at** natural HT transitions, not **causing** them
+### Compatibility Filter Mechanism
 
-AZC functions as an **orientation marker** at cognitively meaningful boundaries, not as a procedural entry point.
+AZC folios function as **compatibility filters**:
+- Specialized A-types appear in only 1-3 folios
+- Using vocabulary from one folio excludes vocabulary from others
+- Incompatible A-registry entries CANNOT be combined
+- The grammar blocks dangerous combinations at specification level
+
+**Why AZC is large:** It enumerates all compatibility classes. Each folio = a different set of legal combinations.
+
+### Ambient Constraint Activation
+
+AZC is not selected explicitly. Constraints activate automatically based on vocabulary used:
+- **Core vocabulary** (20+ folios) → broadly legal, averaged constraints
+- **Specialized vocabulary** (1-3 folios) → activates specific constraint profile
+- B procedures touch ALL 34-36 AZC folios because they span the full vocabulary
+
+### Two Families
+
+| Family | Folios | Mean Escape | Context |
+|--------|--------|-------------|---------|
+| Zodiac | 26 | 2.4% | Routine, predictable, low intervention |
+| Non-Zodiac | 10 | 7.6% | Variable, demanding, more intervention |
+
+The distinction encodes **context risk profiles**, not different domains.
 
 ### Interpretive Bounds
 
-Claims about celestial, calendrical, or geographical meaning are Tier 3+ (non-binding). The structural finding is placement-coding; interpretation is speculative.
+AZC's structure is fully characterized (CLOSED). Semantic content of individual orientation postures remains opaque by design.
 
 ---
 
@@ -401,11 +432,19 @@ The correct model:
 > Currier B provides sequences (how to act).
 > Currier A provides discrimination (where fine distinctions matter).
 
-### A-AZC Relationship
+### A-AZC Relationship (v3.0)
 
-- Vocabulary persistence across systems
-- Placement constraints in AZC may gate A-vocabulary availability
-- No direct execution relationship
+AZC converts static A-registry entries into **phase-gated decision points**:
+
+- **Vocabulary-activated constraints** (C441): Using an A-type activates its associated AZC constraint profile
+- **Compatibility filtering** (C442): AZC folios block incompatible A-type combinations
+- **Position-indexed escape** (C443): Same A-type has different intervention legality depending on AZC position
+- **Universal distribution** (C444): No A-type is locked to specific positions - position determines legality, not content
+
+The correct model:
+> Currier A provides the vocabulary of possibilities.
+> AZC converts each possibility into a phase-gated decision with location-dependent legality.
+> No explicit selection - constraints activate ambientally based on vocabulary used.
 
 ### HT-A Relationship
 
@@ -420,6 +459,93 @@ The systems share a **type space** but not **semantics**:
 - Same character inventory
 - Different grammatical regimes
 - Different functional roles
+
+---
+
+## X.B. APPARATUS-CENTRIC SEMANTICS (Tier 3)
+
+The Component-to-Class Mapping (CCM) phase achieved complete role-level semantic decomposition of tokens. This is the maximum recoverable internal meaning.
+
+> **REVISION (2026-01-11):** PREFIX interpretation updated from "material-behavior class" to "control-flow participation" based on F-A-014b. See C466-C467.
+
+### Token Decomposition
+
+Every token decomposes as:
+
+```
+TOKEN = PREFIX   → control-flow participation (how token engages control)
+      + SISTER   → operational mode (precision/tolerance)
+      + MIDDLE   → variant discriminator (compatibility carrier)
+      + SUFFIX   → decision archetype (phase-indexed)
+```
+
+### Component Mappings (Tier 3)
+
+| Component | Encodes | Evidence |
+|-----------|---------|----------|
+| **PREFIX** | Control-flow participation (intervention/core/anchor) | C466-C467, F-A-014b |
+| **SISTER** | Operational mode | C412 anticorrelation (rho=-0.326) |
+| **MIDDLE** | Compatibility carrier | C441-C442, 80% prefix-exclusive |
+| **SUFFIX** | Phase-indexed decision archetype | F-AZC-014 (74% P-position for -ain) |
+
+### The Unifying Perspective
+
+> The manuscript encodes the operational worldview of a controlled apparatus, not the descriptive worldview of a human observer.
+
+From the apparatus's perspective:
+- PREFIX encodes **how tokens participate in control** at complexity peaks
+- MIDDLE encodes **what must not be confused** (compatibility)
+- SUFFIX encodes **when decisions are allowed** (phase)
+- SISTER encodes **how tightly to execute** (mode)
+
+### Semantic Ceiling
+
+**Recoverable (role-level):**
+- 3 control-flow roles (PREFIX): intervention, core, anchor
+- 2 operational modes (SISTER): precision, tolerance
+- ~1,000 variant discriminators (MIDDLE): compatibility carriers
+- 12 decision archetypes (SUFFIX): phase-indexed
+
+**Irrecoverable (entity-level):**
+- Specific substances, plants, devices
+- Specific procedures or recipes
+- Token-to-real-world mappings
+
+This boundary is structural, not analytical. The system was designed to operate without external referents.
+
+See [SPECULATIVE/apparatus_centric_semantics.md](SPECULATIVE/apparatus_centric_semantics.md) for full analysis.
+
+---
+
+## X.C. REPRESENTATION PRINCIPLE (Pipeline Resolution)
+
+Operational conditions (temperature, pressure, material state, etc.) are NOT encoded as values or ranges. Instead, legality of vocabulary tokens presupposes suitable external conditions; illegal combinations are structurally disallowed.
+
+### Key Evidence
+
+| Finding | Evidence |
+|---------|----------|
+| MIDDLE length inversely correlates with coverage | len=1: 18.4 folios; len=5: 1.2 folios |
+| Most MIDDLEs are single-folio | 73.5% appear in only 1 AZC folio |
+| No scalar encoding anywhere | C287-C290 (rejected ratio hypothesis) |
+| Constraint transfer is causal | 28x escape rate difference AZC->B (F-AZC-016) |
+
+### Interpretation
+
+> **Physics exists externally; representation is categorical.**
+
+The manuscript does not encode "temperature = high" or "pressure = 3 of 4". It encodes which vocabulary combinations are legal, and legality presupposes appropriate external conditions.
+
+This resolves the apparent complexity paradox: the system seems over-specified for "just distillation" because it enumerates ~2,400 distinct vocabulary combinations, each legal only under specific (externally determined) conditions. The operator's trained judgment maps external reality to vocabulary selection; the manuscript enforces compatibility rules on those selections.
+
+### Pipeline Closure
+
+The A -> AZC -> B control pipeline is now **structurally and behaviorally validated**:
+- F-AZC-015: AZC is ambient (70% active per window), not dynamic
+- F-AZC-016: Constraint profiles transfer causally (28x escape difference)
+- C468-C470: Structural facts locked as Tier 2
+
+**Do NOT reopen:** entry-level A-B mapping, dynamic AZC hypothesis, parametric encoding, semantic token meaning.
 
 ---
 

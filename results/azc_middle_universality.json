@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "test": "1.1",
+    "question": "MIDDLE universality in AZC",
+    "total_azc_tokens": 9401,
+    "decomposed_tokens": 5354,
+    "decomposition_rate": 0.5695138815019679
+  },
+  "results": {
+    "universal_tokens": 2574,
+    "universal_pct": 48.08,
+    "other_tokens": 2780,
+    "other_pct": 51.92,
+    "unique_middles": 553,
+    "unique_universal_used": 13,
+    "unique_other_used": 540
+  },
+  "comparison_to_a": {
+    "a_universal_pct": 43.74,
+    "azc_universal_pct": 48.08,
+    "difference_pp": 4.34,
+    "chi_squared": 40.91,
+    "p_value": 1.594807600887557e-10,
+    "direction": "ENRICHED"
+  },
+  "top_middles": [
+    {
+      "middle": "",
+      "count": 1559,
+      "pct": 29.12,
+      "is_universal": true
+    },
+    {
+      "middle": "e",
+      "count": 475,
+      "pct": 8.87,
+      "is_universal": true
+    },
+    {
+      "middle": "eo",
+      "count": 235,
+      "pct": 4.39,
+      "is_universal": false
+    },
+    {
+      "middle": "i",
+      "count": 174,
+      "pct": 3.25,
+      "is_universal": false
+    },
+    {
+      "middle": "al",
+      "count": 121,
+      "pct": 2.26,
+      "is_universal": true
+    },
+    {
+      "middle": "o",
+      "count": 116,
+      "pct": 2.17,
+      "is_universal": true
+    },
+    {
+      "middle": "ee",
+      "count": 114,
+      "pct": 2.13,
+      "is_universal": false
+    },
+    {
+      "middle": "ch",
+      "count": 100,
+      "pct": 1.87,
+      "is_universal": false
+    },
+    {
+      "middle": "k",
+      "count": 83,
+      "pct": 1.55,
+      "is_universal": true
+    },
+    {
+      "middle": "ol",
+      "count": 69,
+      "pct": 1.29,
+      "is_universal": true
+    },
+    {
+      "middle": "ok",
+      "count": 64,
+      "pct": 1.2,
+      "is_universal": false
+    },
+    {
+      "middle": "eeo",
+      "count": 63,
+      "pct": 1.18,
+      "is_universal": true
+    },
+    {
+      "middle": "ot",
+      "count": 59,
+      "pct": 1.1,
+      "is_universal": false
+    },
+    {
+      "middle": "ek",
+      "count": 54,
+      "pct": 1.01,
+      "is_universal": false
+    },
+    {
+      "middle": "eod",
+      "count": 52,
+      "pct": 0.97,
+      "is_universal": false
+    },
+    {
+      "middle": "l",
+      "count": 51,
+      "pct": 0.95,
+      "is_universal": false
+    },
+    {
+      "middle": "ar",
+      "count": 42,
+      "pct": 0.78,
+      "is_universal": false
+    },
+    {
+      "middle": "cho",
+      "count": 41,
+      "pct": 0.77,
+      "is_universal": true
+    },
+    {
+      "middle": "od",
+      "count": 41,
+      "pct": 0.77,
+      "is_universal": false
+    },
+    {
+      "middle": "et",
+      "count": 38,
+      "pct": 0.71,
+      "is_universal": false
+    }
+  ],
+  "interpretation": {
+    "finding": "ENRICHED",
+    "possible_constraint": "AZC enriches universal MIDDLEs relative to A baseline",
+    "semantic_ceiling": "We measure filtering, not meaning"
+  }
+}

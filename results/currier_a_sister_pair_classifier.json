@@ -1,0 +1,26 @@
+{
+  "baseline_accuracy": 0.6849484929416253,
+  "target_accuracy": 0.75,
+  "best_single_feature": "suffix",
+  "best_single_accuracy": 0.7088873137041075,
+  "combined_accuracy": 0.5426448564158487,
+  "feature_accuracies": {
+    "middle": 0.6909589240276263,
+    "suffix": 0.7088873137041075,
+    "section": 0.6849442021083242,
+    "quire": 0.6849534714649219,
+    "prev_prefix": 0.6849478371501272
+  },
+  "hierarchy_check": {
+    "middle": 0.6909589240276263,
+    "suffix": 0.7088873137041075,
+    "section": 0.6849442021083242,
+    "correct_order": false
+  },
+  "passes_accuracy_target": false,
+  "class_distribution": {
+    "ch": 7181,
+    "sh": 3303
+  },
+  "total_samples": 10484
+}

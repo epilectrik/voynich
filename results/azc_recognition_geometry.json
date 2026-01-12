@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "tests": [
+      "2.1",
+      "2.2",
+      "2.3"
+    ],
+    "total_folios": 227,
+    "azc_folios": 30,
+    "a_folios": 114
+  },
+  "test_2_1": {
+    "question": "AZC adjacency vs A recognition density",
+    "n_adjacent": 2,
+    "n_non_adjacent": 112,
+    "mean_tail_adjacent": 46.76,
+    "mean_tail_non_adjacent": 49.92,
+    "finding": null
+  },
+  "test_2_2": {
+    "question": "HT slope at AZC boundaries",
+    "n_azc_transitions": 0,
+    "mean_azc_change": null,
+    "mean_other_change": null,
+    "transitions": []
+  },
+  "test_2_3": {
+    "question": "Recognition bundle disruption",
+    "survival_rate": 90.0,
+    "pairs_tested": 10,
+    "pairs_surviving": 9,
+    "results": [
+      {
+        "pair": [
+          "al",
+          "l"
+        ],
+        "survives": true
+      },
+      {
+        "pair": [
+          "eo",
+          "keo"
+        ],
+        "survives": true
+      },
+      {
+        "pair": [
+          "ke",
+          "keo"
+        ],
+        "survives": true
+      },
+      {
+        "pair": [
+          "eol",
+          "ke"
+        ],
+        "survives": true
+      },
+      {
+        "pair": [
+          "o",
+          "o*"
+        ],
+        "survives": true
+      }
+    ]
+  },
+  "interpretation": {
+    "test_2_1": "Requires more data for robust conclusion",
+    "test_2_2": "Insufficient data",
+    "test_2_3": "90% of A attraction pairs survive in AZC"
+  }
+}

@@ -1,7 +1,7 @@
-# AZC System Constraints (C300-C322, C430-C436)
+# AZC System Constraints (C300-C322, C430-C444, C468-C470)
 
-**Scope:** Astronomical/Zodiac/Cosmological hybrid system
-**Status:** CLOSED (core C300-C322), ACTIVE (C430+ family architecture)
+**Scope:** Astronomical/Zodiac/Cosmological hybrid system - decision-point grammar and compatibility filter
+**Status:** CLOSED (all sections)
 
 ---
 
@@ -229,6 +229,143 @@ Both AZC families exhibit extreme intra-folio placement rigidity (>=98% self-tra
 
 The contrast is **uniform-versus-varied rigidity**, not rigid-versus-permissive structure. AZC is not "one mode with variation" - it implements two distinct coordination strategies.
 **Source:** AZC-DEEP Phase 4b
+
+---
+
+## Threading and Compatibility (C437-C442)
+
+### C437 - AZC Folios Maximally Orthogonal
+**Tier:** 2 | **Status:** CLOSED
+AZC folios have nearly independent vocabularies: mean Jaccard similarity = 0.056 (lower than C321's 0.076 for consecutive zodiac). Most similar pair = 0.176. Each folio defines a distinct vocabulary space.
+**Source:** F-AZC-011
+
+### C438 - AZC Practically Complete Basis
+**Tier:** 2 | **Status:** CLOSED
+AZC collectively covers 83.2% (mean) of A-types used by individual B procedures (range: 72.5%-94.3%). Aggregate coverage is 52.7%, but per-folio coverage shows practical completeness for common vocabulary.
+**Source:** F-AZC-012
+
+### C439 - Folio-Specific HT Profiles
+**Tier:** 2 | **Status:** CLOSED
+Different AZC folios have distinct HT profiles:
+- Escape rate variance: 18.1pp (0% to 18.13%)
+- Zodiac folios: 2.4% mean escape
+- Non-Zodiac folios: 7.6% mean escape
+- 17 distinct clusters at threshold=3.0pp
+
+Folio identity correlates with constraint profile.
+**Source:** F-AZC-013
+
+### C440 - Uniform B-to-AZC Sourcing
+**Tier:** 2 | **Status:** CLOSED
+Every B procedure draws vocabulary from 34-36 AZC folios (essentially ALL). Range is only 2 folios. B procedures do NOT concentrate on specific AZC sources; they span the full constraint space.
+**Source:** F-AZC-011
+
+### C441 - Vocabulary-Activated Constraints
+**Tier:** 2 | **Status:** CLOSED
+AZC constraint activation is vocabulary-driven:
+- Core vocabulary (appears in 20+ folios): broadly legal, averaged constraints
+- Specialized vocabulary (appears in 1-3 folios): activates specific folio's constraint profile
+- 478 A-types (49%) appear in exactly 1 AZC folio
+- 28 A-types appear in 20+ AZC folios
+
+The vocabulary used determines which constraints apply.
+**Source:** F-AZC-011
+
+### C442 - AZC Compatibility Filter
+**Tier:** 2 | **Status:** CLOSED
+AZC folios function as compatibility filters: specialized vocabulary from one folio cannot be combined with specialized vocabulary from another. The 94% unique vocabulary per folio (C437) creates mutual exclusion. Incompatible A-registry entries are grammatically blocked from co-occurring.
+**Source:** F-AZC-011, azc_a_navigation analysis
+
+---
+
+## Phase-Indexed Escape (C443-C444)
+
+### C443 - Positional Escape Gradient
+**Tier:** 2 | **Status:** CLOSED
+Escape rates vary systematically by AZC position for A-types:
+- Position P (interior): 11.6% escape
+- Position P2: 24.7% escape (highest)
+- Position R1→R2→R3: 2.0%→1.2%→0% (decreasing)
+- Position S1, S2: 0% escape
+
+Interior positions permit intervention; boundary positions forbid it.
+**Source:** azc_a_navigation analysis
+
+### C444 - A-Type Position Distribution
+**Tier:** 2 | **Status:** CLOSED
+A-types distribute across ALL AZC positions (14-21 unique placements per high-frequency type). No A-type is locked to specific positions. The SAME material can appear in high-escape or zero-escape positions; position determines legality, not content.
+**Source:** azc_a_navigation analysis
+
+---
+
+## Pipeline Causality (C468-C470)
+
+### C468 - AZC Legality Inheritance
+**Tier:** 2 | **Status:** CLOSED
+AZC folio escape/constraint profiles propagate causally into Currier B recovery dynamics. Tokens from high-escape AZC contexts (>=5%) show 28.6% escape rate in B; tokens from low-escape AZC contexts (<5%) show 1.0% escape rate in B. This 28x difference confirms causal constraint transfer.
+**Source:** F-AZC-016
+
+### C469 - Categorical Resolution Principle
+**Tier:** 2 | **Status:** CLOSED
+Operational conditions (temperature, pressure, material state) are represented categorically via token legality, not parametrically via encoded values. Resolution lives in vocabulary availability: short MIDDLEs (len=1) appear in 18.4 folios on average; long MIDDLEs (len=5) appear in 1.2 folios. 73.5% of MIDDLEs appear in only 1 AZC folio.
+**Source:** F-AZC-015, F-AZC-016, azc_middle_resolution analysis
+
+### C470 - MIDDLE Restriction Inheritance
+**Tier:** 2 | **Status:** CLOSED
+MIDDLEs restricted to 1-2 AZC folios remain restricted when manifested in Currier B. Mean B folio spread: restricted MIDDLEs = 4.0 folios; universal MIDDLEs = 50.6 folios. This 12.7x difference confirms constraint transfer is preserved across the pipeline.
+**Source:** F-AZC-016
+
+---
+
+## Morphological Binding (C471-C473)
+
+### C471 - PREFIX Encodes AZC Family Affinity
+**Tier:** 2 | **Status:** CLOSED
+PREFIX families show statistically significant bias toward AZC folio families: qo- and ol- are strongly enriched in A/C AZC folios (91% / 81%), while ot- is enriched in Zodiac folios (54%). Other PREFIX families (ch-, sh-, ok-) are broadly distributed. This affinity shapes which class of legality postures are likely to be activated by vocabulary use but does not constitute exclusive mapping.
+**Source:** Integration Probe 1 (prefix_azc_affinity.py)
+
+### C472 - MIDDLE Is Primary Carrier of AZC Folio Specificity
+**Tier:** 2 | **Status:** CLOSED
+PREFIX-exclusive MIDDLEs (77% of all MIDDLEs) exhibit near-zero AZC entropy (median = 0.0), typically appearing in exactly one AZC folio. In contrast, shared MIDDLEs span multiple folios (mean coverage 18.7% vs 3.3%). Thus, MIDDLE is the principal determinant of folio-level compatibility constraints; PREFIX alone does not confer folio specificity.
+**Source:** Integration Probe 2 (middle_azc_exclusivity.py)
+
+### C473 - Currier A Entry Defines a Constraint Bundle
+**Tier:** 2 | **Status:** CLOSED
+A Currier A entry does not encode an addressable object or procedure. Its morphological composition (PREFIX + MIDDLE + SUFFIX) implicitly specifies a compatibility signature that determines which AZC legality envelopes are applicable. Through this mechanism, each A entry functions as a constraint bundle governing which operational contexts are valid.
+**Source:** Integration Probes 1-3 combined
+
+---
+
+## Pipeline Resolution & Morphological Binding: CLOSED
+
+The A -> AZC -> B control pipeline is structurally, behaviorally, and morphologically validated.
+
+**What each layer IS (final definitions):**
+
+- **Currier A record** = Pre-execution compatibility declaration. Specifies which operational contexts are legal through morphological composition. Does not select procedures, specify timing, or encode quantities.
+
+- **AZC folio** = Complete legality regime. A bundled set of phase-indexed permissions and recoveries. Answers: which MIDDLE-level distinctions may be active together, at which phases intervention is legal, how forgiving mistakes are. Does not choose, interpret, or predict.
+
+- **Currier B program** = Blind execution. Sees only grammar + legal/illegal tokens + recovery budget. Operator chooses vocabulary -> activates constraint bundle -> AZC filters legality -> B grammar runs blindly.
+
+**Evidence:**
+- F-AZC-015: AZC is ambient legality field (70% of folios active per window)
+- F-AZC-016: Constraint profiles transfer causally to B (28x escape rate difference)
+- C468-C470: Causal transfer locked
+- C471-C473: Morphological binding mechanism discovered and locked
+
+**The binding logic:**
+- PREFIX -> AZC family affinity (qo/ol -> A/C, ot -> Zodiac)
+- MIDDLE -> AZC folio specificity (77% exclusive, median entropy = 0.0)
+- Together: each vocabulary item carries a "compatibility signature"
+
+**Future work is exploratory only. Do NOT reopen:**
+- Entry-level A->B mapping (ruled out by pipeline mechanics)
+- Dynamic AZC decision-making (F-AZC-015 closed this: Case B confirmed)
+- Parametric variable encoding (no evidence exists; C287-C290)
+- Semantic token meaning (all evidence converges against)
+- Naming or meaning of AZC folios (they are legality regimes, not semantic categories)
+- Aligning A entries to specific B programs (relationship is vocabulary-mediated)
 
 ---
 

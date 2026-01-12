@@ -1,6 +1,6 @@
-# Currier A Constraints (C224-C299, C345-C346, C420-C424)
+# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475)
 
-**Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains
+**Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility
 **Status:** CLOSED
 
 ---
@@ -310,6 +310,53 @@ In Currier A, the MIDDLE component constitutes the primary vocabulary layer, wit
 **Interpretation:** Prefixes define domain-specific vocabularies from which MIDDLEs are selected. Shared and universal middles form a small cross-domain core, while most distinctions are domain-internal.
 
 **Entropy:** MIDDLE entropy = 6.70 bits (65.6% of maximum). Efficient but not maximally compressed, consistent with human-usable registry design.
+
+---
+
+## MIDDLE Compatibility (C475)
+
+### C475 - MIDDLE ATOMIC INCOMPATIBILITY
+**Tier:** 2 | **Status:** CLOSED | **Source:** MIDDLE_INCOMPATIBILITY probe (2026-01-12)
+
+MIDDLE-level compatibility is extremely sparse. Only 4.3% of MIDDLE pairs can legally co-occur on the same specification line; 95.7% are statistically illegal.
+
+**Evidence (line-level co-occurrence in AZC folios):**
+- 1,187 unique MIDDLEs observed
+- 703,891 total possible pairs
+- 30,394 legal pairs (4.3%)
+- 673,342 illegal pairs (95.7%)
+- 155 trivially absent (rare MIDDLEs)
+- Null model: frequency-matched shuffle (1000 permutations)
+- Robustness: 97.3% overlap with 2-line sensitivity check
+
+**Graph structure:**
+- 30 connected components (fragmented discrimination regimes)
+- Largest component: 1,141 MIDDLEs (96% of vocabulary)
+- 20 isolated MIDDLEs (work with nothing)
+- Hub MIDDLEs: 'a', 'o', 'e', 'ee', 'eo' (universal connectors)
+
+**PREFIX clustering (H1 - SUPPORTED):**
+- Within-PREFIX legal: 17.39%
+- Cross-PREFIX legal: 5.44%
+- MIDDLEs within same PREFIX family are 3.2x more compatible
+
+**Interpretation:**
+> **The MIDDLE vocabulary forms a hard incompatibility lattice - a globally navigable but locally forbidden discrimination space.**
+
+This is the atomic discrimination layer. Everything above it (A entries, AZC folios, families, HT) is an aggregation of this graph.
+
+**Key structural objects identified:**
+1. **Universal connector MIDDLEs** ('a', 'o', 'e', 'ee', 'eo'): Compatibility basis elements that bridge otherwise incompatible regimes
+2. **Isolated MIDDLEs** (20 total): Hard decision points - "if you specify this, you cannot specify anything else"
+3. **PREFIX as soft prior, MIDDLE as hard constraint**: PREFIX increases odds of legality ~3x, MIDDLE applies near-binary exclusions
+
+**Reconciliation with prior constraints:**
+- **Quantifies C293**: MIDDLE is primary discriminator → now proven as 95.7% exclusion rate
+- **Explains C423**: PREFIX-bound vocabulary domains → PREFIX is first partition, MIDDLE is sharper second partition
+- **Resolves AZC size paradox (C437-C442)**: AZC folios are projections of this massive sparse graph onto positional decision scaffolds
+- **Grounds HT behavior (C459, C461)**: HT ≈ local incompatibility density + rarity pressure (now testable)
+
+**f116v note:** f116v folio-level isolation (from azc_entry_bridges.py) is explained by data sparsity (only 2 words in corpus), NOT by MIDDLE-level incompatibility.
 
 ---
 

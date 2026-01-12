@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "test": "1.4",
+    "question": "Prefix distribution compatibility",
+    "a_decomposed": 23442,
+    "azc_decomposed": 5354
+  },
+  "prefix_comparison": [
+    {
+      "prefix": "ch",
+      "a_count": 7181,
+      "a_pct": 30.63,
+      "azc_count": 1354,
+      "azc_pct": 25.29,
+      "ratio": 0.826
+    },
+    {
+      "prefix": "ct",
+      "a_count": 1492,
+      "a_pct": 6.36,
+      "azc_count": 49,
+      "azc_pct": 0.92,
+      "ratio": 0.144
+    },
+    {
+      "prefix": "da",
+      "a_count": 3619,
+      "a_pct": 15.44,
+      "azc_count": 594,
+      "azc_pct": 11.09,
+      "ratio": 0.719
+    },
+    {
+      "prefix": "ok",
+      "a_count": 1905,
+      "a_pct": 8.13,
+      "azc_count": 1076,
+      "azc_pct": 20.1,
+      "ratio": 2.473
+    },
+    {
+      "prefix": "ol",
+      "a_count": 853,
+      "a_pct": 3.64,
+      "azc_count": 161,
+      "azc_pct": 3.01,
+      "ratio": 0.826
+    },
+    {
+      "prefix": "ot",
+      "a_count": 1640,
+      "a_pct": 7.0,
+      "azc_count": 1315,
+      "azc_pct": 24.56,
+      "ratio": 3.511
+    },
+    {
+      "prefix": "qo",
+      "a_count": 3449,
+      "a_pct": 14.71,
+      "azc_count": 252,
+      "azc_pct": 4.71,
+      "ratio": 0.32
+    },
+    {
+      "prefix": "sh",
+      "a_count": 3303,
+      "a_pct": 14.09,
+      "azc_count": 553,
+      "azc_pct": 10.33,
+      "ratio": 0.733
+    }
+  ],
+  "qo_analysis": {
+    "a_count": 3449,
+    "a_pct": 14.71,
+    "azc_count": 252,
+    "azc_pct": 4.71,
+    "depletion_pp": 10.01,
+    "ratio": 0.32,
+    "binomial_p": 5.871616443864939e-123,
+    "depleted": true
+  },
+  "chi_squared_test": {
+    "chi_squared": 4094.4,
+    "p_value": 0.0,
+    "significant": true
+  },
+  "family_distribution": {
+    "zodiac": {
+      "da": 6.31,
+      "ok": 23.36,
+      "sh": 9.3,
+      "ot": 36.03,
+      "qo": 1.64,
+      "ch": 19.7,
+      "ol": 3.18,
+      "ct": 0.48
+    },
+    "ac": {
+      "ot": 17.3,
+      "da": 14.12,
+      "sh": 10.98,
+      "qo": 6.65,
+      "ch": 28.83,
+      "ok": 18.03,
+      "ct": 1.19,
+      "ol": 2.9
+    }
+  },
+  "interpretation": {
+    "finding": "qo-prefix depleted: 4.7% in AZC vs 14.7% in A",
+    "possible_constraint": "AZC filters high-hazard qo-prefix; may prefer low-hazard material classes",
+    "semantic_ceiling": "We measure prefix filtering, not prefix meaning"
+  }
+}

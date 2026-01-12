@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.13 | 310 constraints | 2026-01-10
+CONSTRAINT_REFERENCE v2.6 | 336 constraints | 2026-01-12
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -99,7 +99,7 @@ C214	EXT-4 duration criterion INVALIDATED	2	B	in: operations
 C215	BOTANICAL_FAVORED (8/8 tests, ratio 2.37)	3	B	in: speculative
 C216	Hybrid hazard model (71% batch, 29% apparatus)	2	B	in: operations
 C217	0 true HT near hazards	2	HT	in: human_track
-C221	Practice-leaning (4/5)	4	B	in: speculative
+C221	Deliberate skill practice (4/5) - NOT random mark-making	2	HT	in: operations
 C222	No intentional layout function	2	B	in: operations
 C223	Procedural fluency MIXED	2	B	in: operations
 C224	A coverage = 13.6% (threshold 70%)	2	A	in: currier_a
@@ -303,11 +303,40 @@ C421	Section-boundary adjacency suppression (2.42x)	2	A	in: currier_a
 C422	DA as internal articulation punctuation (75% separation)	2	A	in: currier_a
 C423	PREFIX-BOUND VOCABULARY DOMAINS (80% exclusive MIDDLEs)	2	A	in: currier_a
 C424	Adjacency coherence is clustered, not uniform (~3-entry runs, autocorr r=0.80)	2	A	-> C424_clustered_adjacency.md
-C450	HT Quire Clustering (H=47.20, p<0.0001, eta-sq=0.150)	2	HT	-> C450_ht_quire_clustering.md
-C451	HT System Stratification (A > AZC > B density)	2	HT	-> C451_ht_system_stratification.md
-C452	HT Unified Prefix Vocabulary (Jaccard >= 0.947)	2	HT	-> C452_ht_unified_vocabulary.md
-C453	HT Adjacency Clustering (1.69x enrichment)	2	HT	-> C453_ht_adjacency_clustering.md
-C457	HT Boundary Preference in Zodiac AZC (S=39.7% > R=29.5%, V=0.105)	2	HT/AZC	-> C457_ht_boundary_preference.md
-C458	Execution Design Clamp vs Recovery Freedom (CV 0.04-0.11 vs 0.72-0.82)	2	B	-> C458_execution_design_clamp.md
-C459	HT Anticipatory Compensation (quire r=0.343, p=0.0015, HT precedes stress)	2	HT/B	-> C459_ht_anticipatory_compensation.md
+C430	**AZC Bifurcation: two folio families**	2	AZC	in: azc_system
+C431	**Zodiac Family Coherence (refines C319)**	2	AZC	in: azc_system
+C432	**Ordered Subscript Exclusivity**	2	AZC	in: azc_system
+C433	**Zodiac Block Grammar (98%+ self-transition)**	2	AZC	in: azc_system
+C434	**R-Series Strict Forward Ordering**	2	AZC	in: azc_system
+C435	**S/R Positional Division (boundary/interior)**	2	AZC	in: azc_system
+C436	**Dual Rigidity: uniform vs varied scaffolds**	2	AZC	in: azc_system
+C437	AZC Folios Maximally Orthogonal	2	AZC	in: azc_system
+C438	AZC Practically Complete Basis	2	AZC	in: azc_system
+C439	Folio-Specific HT Profiles	2	AZC	in: azc_system
+C440	Uniform B-to-AZC Sourcing	2	AZC	in: azc_system
+C441	Vocabulary-Activated Constraints	2	AZC	in: azc_system
+C442	AZC Compatibility Filter	2	AZC	in: azc_system
+C443	Positional Escape Gradient	2	AZC	in: azc_system
+C444	A-Type Position Distribution	2	AZC	in: azc_system
+C450	HT Quire Clustering (H=47.20, p<0.0001, eta-sq=0.150)	2	HT/GLOBAL	-> C450_ht_quire_clustering.md
+C451	HT System Stratification (A > AZC > B density)	2	HT/GLOBAL	-> C451_ht_system_stratification.md
+C452	HT Unified Prefix Vocabulary (Jaccard >= 0.947)	2	HT/GLOBAL	-> C452_ht_unified_vocabulary.md
+C453	HT Adjacency Clustering (1.69x enrichment, stronger than C424)	2	HT/GLOBAL	-> C453_ht_adjacency_clustering.md
+C454	**AZC-B Adjacency Coupling FALSIFIED** (no p<0.01 at any window)	1	AZC/B	-> C454_azc_b_adjacency_falsified.md
+C455	**AZC Simple Cycle Topology FALSIFIED** (cycle_rank=5, CV=0.817)	1	AZC	-> C455_azc_simple_cycle_falsified.md
+C456	**AZC Interleaved Spiral Topology** (R-S-R-S alternation)	2	AZC	-> C456_azc_interleaved_spiral.md
+C457	**HT Boundary Preference in Zodiac AZC** (S=39.7% > R=29.5%, V=0.105)	2	HT/AZC	-> C457_ht_boundary_preference.md
+C458	**Execution Design Clamp vs Recovery Freedom** (CV 0.04-0.11 vs 0.72-0.82)	2	B	-> C458_execution_design_clamp.md
+C459	**HT Anticipatory Compensation** (quire r=0.343, p=0.0015, HT precedes stress)	2	HT/B	-> C459_ht_anticipatory_compensation.md
 C460	AZC Entry Orientation Effect (step-change p<0.002, decay R^2>0.86)	2	HT/AZC	-> C460_azc_entry_orientation.md
+C461	HT density correlates with MIDDLE rarity (Tail 1.58x, chi2=180.56)	3	A→B	-> C461_ht_middle_rarity.md
+C462	Universal MIDDLEs are mode-balanced (51% vs 87% precision, chi2=471.55)	3	A→B	-> C462_universal_mode_balance.md
+C466	PREFIX Encodes Control-Flow Participation	2	GLOBAL	in: morphology
+C467	qo-Prefix is Kernel-Adjacent	2	GLOBAL	in: morphology
+C468	AZC Legality Inheritance	2	AZC	in: azc_system
+C469	Categorical Resolution Principle	2	AZC	in: azc_system
+C470	MIDDLE Restriction Inheritance	2	AZC	in: azc_system
+C471	PREFIX Encodes AZC Family Affinity	2	AZC	in: azc_system
+C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC	in: azc_system
+C473	Currier A Entry Defines a Constraint Bundle	2	AZC	in: azc_system
+C475	MIDDLE ATOMIC INCOMPATIBILITY	2	A	in: currier_a

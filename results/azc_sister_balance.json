@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "test": "1.3",
+    "question": "Sister balance by AZC family",
+    "zodiac_folios": 13,
+    "ac_folios": 17
+  },
+  "family_results": {
+    "zodiac": {
+      "precision_count": 426,
+      "tolerance_count": 193,
+      "total": 619,
+      "precision_pct": 68.82
+    },
+    "ac": {
+      "precision_count": 996,
+      "tolerance_count": 360,
+      "total": 1356,
+      "precision_pct": 73.45
+    }
+  },
+  "chi_squared_test": {
+    "chi_squared": 4.29,
+    "p_value": 0.03825566751211818,
+    "significant": true,
+    "direction": "Zodiac is more mode-balanced than A/C"
+  },
+  "comparison_to_a": {
+    "a_universal_precision": 51.0,
+    "a_exclusive_precision": 87.3
+  },
+  "interpretation": {
+    "finding": "Zodiac more balanced (68.8%) than A/C (73.5%)",
+    "possible_constraint": "Zodiac family maintains mode balance; A/C family shows mode bias",
+    "semantic_ceiling": "We measure mode balance, not mode meaning"
+  }
+}

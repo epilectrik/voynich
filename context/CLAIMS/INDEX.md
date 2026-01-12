@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 310 validated constraints | **Version:** 2.13
+**Total:** 319 validated constraints | **Version:** 2.15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -409,6 +409,19 @@ Every new constraint MUST specify system scope:
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
 | 424 | Adjacency coherence is clustered, not uniform (~3-entry runs, autocorr r=0.80) | 2 | A | -> [C424_clustered_adjacency.md](C424_clustered_adjacency.md) |
+
+---
+
+## MIDDLE Perturbation Space (C461-C462)
+
+> **Summary:** C461-C462 establish behavioral structure in MIDDLE frequency tiers and material class sharing. The A-layer recognition space is partitioned into universal apparatus-generic situations vs class-specific perturbations. **This line of inquiry is SATURATED.**
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| 461 | HT density correlates with MIDDLE rarity (Tail 1.58x, chi2=180.56) | 3 | A→B | -> [C461_ht_middle_rarity.md](C461_ht_middle_rarity.md) |
+| 462 | Universal MIDDLEs are mode-balanced (51% vs 87% precision, chi2=471.55) | 3 | A→B | -> [C462_universal_mode_balance.md](C462_universal_mode_balance.md) |
+
+**Saturation note:** The shared MIDDLE identification question is CLOSED internally. MIDDLEs can be classified by behavioral independence/dependence but not by entity semantics.
 
 ---
 

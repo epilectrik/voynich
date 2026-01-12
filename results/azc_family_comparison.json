@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "tests": [
+      "3.1",
+      "3.2"
+    ],
+    "zodiac_tokens": 3654,
+    "ac_tokens": 5747
+  },
+  "test_3_1": {
+    "question": "Vocabulary overlap by family",
+    "zodiac_types": 1335,
+    "ac_types": 1667,
+    "shared_types": 321,
+    "zodiac_exclusive": 1014,
+    "ac_exclusive": 1346,
+    "jaccard_similarity": 0.12,
+    "finding": "Families are vocabulary-distinct (Jaccard < within-A/C consistency)"
+  },
+  "test_3_2": {
+    "question": "Placement grammar differences",
+    "placement_distribution": {
+      "zodiac": {
+        "T": 0.14,
+        "R1": 28.18,
+        "R3": 13.97,
+        "R4": 0.77,
+        "X": 0.43,
+        "Y": 0.29,
+        "S2": 14.35,
+        "R2": 23.55,
+        "S1": 16.57,
+        "C": 0.24,
+        "S0": 1.3,
+        "S3": 0.19
+      },
+      "ac": {
+        "L": 3.26,
+        "P": 27.49,
+        "R": 11.56,
+        "S": 8.39,
+        "Y": 4.79,
+        "C": 31.24,
+        "X": 3.6,
+        "Z": 0.09,
+        "F": 0.21,
+        "U": 0.64,
+        "C1": 2.53,
+        "C2": 0.73,
+        "O": 3.17,
+        "I": 1.83,
+        "B": 0.46
+      }
+    },
+    "chi_squared": 38.82,
+    "p_value": 3.719894437236558e-09,
+    "significant": true
+  },
+  "interpretation": {
+    "test_3_1": "Families are vocabulary-distinct (Jaccard < within-A/C consistency)",
+    "test_3_2": "Families show different placement distributions",
+    "overall": "Zodiac and A/C families implement distinct scaffolding strategies"
+  }
+}

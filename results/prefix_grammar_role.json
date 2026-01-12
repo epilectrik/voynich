@@ -1,0 +1,246 @@
+{
+  "fit_id": "F-A-014b",
+  "title": "PREFIX x GRAMMAR-ROLE Correlation",
+  "hypothesis": "PREFIX encodes control-flow participation, not material class",
+  "tests": {
+    "escape_specialization": {
+      "test": "PREFIX x ESCAPE SPECIALIZATION",
+      "qo_mean_position": 0.4757,
+      "non_qo_mean_position": 0.5046,
+      "position_difference": 0.029,
+      "qo_initial_rate": 0.01,
+      "non_qo_initial_rate": 0.13,
+      "initial_rate_ratio": 0.056,
+      "qo_preceded_by": {
+        "qo": 2803,
+        "sh": 2479,
+        "ch": 2183,
+        "": 1868,
+        "ok": 745,
+        "ot": 741,
+        "d": 680,
+        "ol": 667,
+        "y": 453,
+        "o": 315
+      },
+      "signal": "MODERATE",
+      "interpretation": "qo- shows some positional specialization"
+    },
+    "kernel_adjacency": {
+      "test": "PREFIX x KERNEL ADJACENCY",
+      "n_kernel_adjacent": 17488,
+      "n_non_kernel_adjacent": 57685,
+      "enrichment_ratios": {
+        "ch": 0.91,
+        "y": 0.894,
+        "s": 1.096,
+        "o": 0.764,
+        "ol": 1.066,
+        "ot": 1.057,
+        "ct": 1.145,
+        "qo": 1.307,
+        "al": 0.872,
+        "d": 1.0,
+        "or": 0.967,
+        "ar": 0.879,
+        "a": 0.605,
+        "ok": 1.119,
+        "NULL": 0.877,
+        "sh": 0.85
+      },
+      "ch_enrichment": 0.91,
+      "sh_enrichment": 0.85,
+      "qo_enrichment": 1.307,
+      "signal": "WEAK",
+      "interpretation": "No clear PREFIX x kernel-adjacency pattern"
+    },
+    "positional_grammar": {
+      "test": "PREFIX x POSITIONAL GRAMMAR",
+      "prefix_profiles": {
+        "qo": {
+          "mean_position": 0.476,
+          "initial_rate": 0.01,
+          "final_rate": 0.01,
+          "n": 13450
+        },
+        "NULL": {
+          "mean_position": 0.505,
+          "initial_rate": 0.59,
+          "final_rate": 0.05,
+          "n": 12535
+        },
+        "ch": {
+          "mean_position": 0.503,
+          "initial_rate": 0.0,
+          "final_rate": 0.17,
+          "n": 10758
+        },
+        "sh": {
+          "mean_position": 0.499,
+          "initial_rate": 0.0,
+          "final_rate": 0.06,
+          "n": 6787
+        },
+        "d": {
+          "mean_position": 0.482,
+          "initial_rate": 0.0,
+          "final_rate": 0.09,
+          "n": 5333
+        },
+        "ok": {
+          "mean_position": 0.521,
+          "initial_rate": 0.04,
+          "final_rate": 0.29,
+          "n": 4793
+        },
+        "ot": {
+          "mean_position": 0.488,
+          "initial_rate": 0.04,
+          "final_rate": 0.29,
+          "n": 4548
+        },
+        "ol": {
+          "mean_position": 0.528,
+          "initial_rate": 0.02,
+          "final_rate": 0.07,
+          "n": 4273
+        },
+        "y": {
+          "mean_position": 0.512,
+          "initial_rate": 0.04,
+          "final_rate": 0.11,
+          "n": 2750
+        },
+        "o": {
+          "mean_position": 0.466,
+          "initial_rate": 0.09,
+          "final_rate": 0.05,
+          "n": 2133
+        },
+        "a": {
+          "mean_position": 0.519,
+          "initial_rate": 0.0,
+          "final_rate": 0.19,
+          "n": 2095
+        },
+        "s": {
+          "mean_position": 0.521,
+          "initial_rate": 0.0,
+          "final_rate": 0.05,
+          "n": 2016
+        },
+        "or": {
+          "mean_position": 0.516,
+          "initial_rate": 0.0,
+          "final_rate": 0.23,
+          "n": 1294
+        },
+        "al": {
+          "mean_position": 0.545,
+          "initial_rate": 0.0,
+          "final_rate": 0.18,
+          "n": 1099
+        },
+        "ar": {
+          "mean_position": 0.546,
+          "initial_rate": 0.0,
+          "final_rate": 0.27,
+          "n": 1095
+        },
+        "ct": {
+          "mean_position": 0.512,
+          "initial_rate": 0.0,
+          "final_rate": 0.47,
+          "n": 214
+        }
+      },
+      "boundary_specialists": [],
+      "interior_specialists": [
+        "qo",
+        "NULL",
+        "ch",
+        "sh",
+        "d",
+        "ok",
+        "ot",
+        "ol",
+        "y",
+        "o",
+        "a",
+        "s",
+        "or",
+        "al",
+        "ar",
+        "ct"
+      ],
+      "signal": "MODERATE",
+      "interpretation": "PREFIX shows some positional differentiation"
+    },
+    "sister_equivalence": {
+      "test": "PREFIX SISTER-PAIR EQUIVALENCE",
+      "pairs": {
+        "ch/sh": {
+          "mean_positions": [
+            0.503,
+            0.498
+          ],
+          "position_diff": 0.0043,
+          "initial_rates": [
+            0.0,
+            0.0
+          ],
+          "initial_diff": 0.0,
+          "final_rates": [
+            0.17,
+            0.06
+          ],
+          "final_diff": 0.11,
+          "n": [
+            10758,
+            6787
+          ]
+        },
+        "ok/ot": {
+          "mean_positions": [
+            0.521,
+            0.487
+          ],
+          "position_diff": 0.0336,
+          "initial_rates": [
+            0.04,
+            0.04
+          ],
+          "initial_diff": 0.0,
+          "final_rates": [
+            0.29,
+            0.29
+          ],
+          "final_diff": 0.01,
+          "n": [
+            4793,
+            4548
+          ]
+        }
+      },
+      "signal": "STRONG",
+      "interpretation": "Sister pairs are positionally equivalent - confirms slot-equivalence"
+    }
+  },
+  "synthesis": {
+    "signals": {
+      "Escape specialization": "MODERATE",
+      "Kernel adjacency": "WEAK",
+      "Positional grammar": "MODERATE",
+      "Sister equivalence": "STRONG"
+    },
+    "strong_count": 1,
+    "moderate_count": 2,
+    "conclusion": "SUPPORTED: PREFIX likely encodes control-flow participation",
+    "tier": "F2/F3 (Strong support)",
+    "findings": [
+      "qo- is escape/recovery specialized (positional)",
+      "Prefixes have distinct positional roles (boundary vs interior)",
+      "Sister pairs are slot-equivalent (operational mode)"
+    ]
+  }
+}

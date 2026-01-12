@@ -1,0 +1,87 @@
+{
+  "fit_id": "F-AZC-010",
+  "hypothesis": "Zodiac gates materials (A-aligned), A/C gates operations (B-aligned)",
+  "tier": 4,
+  "metadata": {
+    "a_tokens": 37214,
+    "a_types": 5101,
+    "b_tokens": 75545,
+    "b_types": 7263,
+    "zodiac_tokens": 3654,
+    "zodiac_types": 1335,
+    "ac_tokens": 5747,
+    "ac_types": 1667
+  },
+  "zodiac_metrics": {
+    "total_types": 1335,
+    "overlap_a": 476,
+    "overlap_a_rate": 35.7,
+    "overlap_b": 557,
+    "overlap_b_rate": 41.7,
+    "a_endemic": 87,
+    "a_endemic_rate": 6.5,
+    "b_endemic": 168,
+    "b_endemic_rate": 12.6,
+    "shared": 389,
+    "shared_rate": 29.1,
+    "azc_only": 691,
+    "azc_only_rate": 51.8
+  },
+  "ac_metrics": {
+    "total_types": 1667,
+    "overlap_a": 598,
+    "overlap_a_rate": 35.9,
+    "overlap_b": 691,
+    "overlap_b_rate": 41.5,
+    "a_endemic": 113,
+    "a_endemic_rate": 6.8,
+    "b_endemic": 206,
+    "b_endemic_rate": 12.4,
+    "shared": 485,
+    "shared_rate": 29.1,
+    "azc_only": 863,
+    "azc_only_rate": 51.8
+  },
+  "tests": {
+    "p1_zodiac_more_a": {
+      "direction_correct": false,
+      "fisher_p": 0.9085456502784609,
+      "significant": false,
+      "zodiac_rate": 35.7,
+      "ac_rate": 35.9
+    },
+    "p2_ac_more_b": {
+      "direction_correct": false,
+      "fisher_p": 0.881597787333299,
+      "significant": false,
+      "ac_rate": 41.5,
+      "zodiac_rate": 41.7
+    },
+    "p3_zodiac_a_endemic": {
+      "direction_correct": false,
+      "fisher_p": 0.8252272778511666,
+      "significant": false,
+      "zodiac_rate": 6.5,
+      "ac_rate": 6.8
+    },
+    "p4_ac_b_endemic": {
+      "direction_correct": false,
+      "fisher_p": 0.867594799652122,
+      "significant": false,
+      "ac_rate": 12.4,
+      "zodiac_rate": 12.6
+    }
+  },
+  "predictions": {
+    "p1": false,
+    "p2": false,
+    "p3": false,
+    "p4": false
+  },
+  "predictions_met": 0,
+  "interpretation": {
+    "conclusion": "SYNTHESIS NOT SUPPORTED",
+    "interpretation": "Both families gate the SAME domain, just parameterized differently",
+    "fit_tier": "F4"
+  }
+}

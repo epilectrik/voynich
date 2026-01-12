@@ -4,6 +4,457 @@
 
 ---
 
+## Version 2.20 (2026-01-12) - MIDDLE Atomic Incompatibility (C475)
+
+### Summary
+
+**MIDDLE-level compatibility is extremely sparse (4.3% legal), forming a hard incompatibility lattice.** This is the atomic discrimination layer - everything above it (A entries, AZC folios, families, HT) is an aggregation of this graph.
+
+### Core Finding
+
+> **95.7% of MIDDLE pairs are illegal. Only 4.3% can co-occur on the same specification line. This sparsity is robust to context definition (97.3% overlap with 2-line sensitivity check).**
+
+### Probe Results (middle_incompatibility.py)
+
+| Metric | Value |
+|--------|-------|
+| Total MIDDLEs | 1,187 |
+| Total possible pairs | 703,891 |
+| **Legal pairs** | **30,394 (4.3%)** |
+| **Illegal pairs** | **673,342 (95.7%)** |
+| Trivially absent | 155 |
+| Connected components | 30 |
+| Largest component | 1,141 (96% of MIDDLEs) |
+| Isolated MIDDLEs | 20 |
+
+### PREFIX Clustering (H1 - SUPPORTED)
+
+| Type | Legal % | Interpretation |
+|------|---------|----------------|
+| Within-PREFIX | 17.39% | Soft prior for compatibility |
+| Cross-PREFIX | 5.44% | Hard exclusion boundary |
+| **Ratio** | **3.2x** | PREFIX is first partition |
+
+### Key Structural Objects Identified
+
+1. **Universal Connector MIDDLEs** ('a', 'o', 'e', 'ee', 'eo')
+   - Compatibility basis elements
+   - Bridge otherwise incompatible regimes
+   - "Legal transition anchors"
+
+2. **Isolated MIDDLEs** (20 total)
+   - Hard decision points
+   - "If you specify this, you cannot specify anything else"
+   - Pure regime commitment
+
+3. **PREFIX = soft prior, MIDDLE = hard constraint**
+   - PREFIX increases odds of legality ~3x
+   - MIDDLE applies near-binary exclusions
+
+### Reconciliation with Prior Constraints
+
+| Constraint | Previous | Now Resolved |
+|------------|----------|--------------|
+| C293 | MIDDLE is primary discriminator | Quantified: 95.7% exclusion rate |
+| C423 | PREFIX-bound vocabulary | PREFIX is first partition, MIDDLE is sharper |
+| C437-C442 | Why so many AZC folios? | AZC = projections of sparse graph |
+| C459, C461 | HT anticipatory function | HT ≈ incompatibility density (testable) |
+
+### f116v Correction
+
+f116v folio-level isolation (from v2.19) is explained by **data sparsity** (only 2 words in AZC corpus), NOT by MIDDLE-level incompatibility. The f116v MIDDLEs ('ee', 'or') are actually universal connectors.
+
+### New Constraint
+
+**C475 - MIDDLE ATOMIC INCOMPATIBILITY** (Tier 2, CLOSED)
+- Added to `context/CLAIMS/currier_a.md`
+
+### Interpretation
+
+> **The MIDDLE vocabulary forms a globally navigable but locally forbidden discrimination space. This is the strongest internal explanation yet of why the Voynich Manuscript looks the way it does without invoking semantics.**
+
+### What This Enables (Bayesian Roadmap)
+
+1. **Latent Discrimination Axes Inference** - How many latent axes explain the incompatibility graph?
+2. **Probabilistic A Bundle Generator** - Can MIDDLE incompatibility + line length + PREFIX priors reproduce A entries?
+3. **HT Variance Decomposition** - How much HT density is explained by local incompatibility degree?
+
+### Updated Files
+
+- `phases/MIDDLE_INCOMPATIBILITY/middle_incompatibility.py` - Main probe
+- `results/middle_incompatibility.json` - Full results
+- `context/CLAIMS/currier_a.md` - Added C475
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - Updated
+
+### Significance
+
+This is a **regime change** in what kind of modeling is now possible. We've reached bedrock - the atomic discrimination layer. All higher-level structure (A, AZC, HT) can now be understood as aggregations of this sparse graph.
+
+---
+
+## Version 2.19 (2026-01-12) - AZC Compatibility at Specification Level
+
+### Summary
+
+**AZC compatibility filtering operates at the Currier A constraint-bundle level, not at execution level.** Two AZC folio vocabularies are compatible iff there exists at least one Currier A entry whose vocabulary bridges both. 10.3% of folio pairs are unbridged, with f116v being structurally isolated.
+
+### Key Finding
+
+> **Currier A entries define which AZC vocabularies can be jointly activated. Most folio pairs are compatible, but ~10% are not—with f116v being a structurally isolated discrimination regime. AZC compatibility is enforced at specification (A-bundle) level, not at execution or folio-presence level.**
+
+### Probe Results
+
+| Metric | Value |
+|--------|-------|
+| Total folio pairs | 435 |
+| Bridged pairs | 390 (89.7%) |
+| **Unbridged pairs** | **45 (10.3%)** |
+| Graph connectivity | FULLY_CONNECTED |
+
+### Family-Level Coherence
+
+| Family Type | % Unbridged | Interpretation |
+|-------------|-------------|----------------|
+| Within-Zodiac | **0.0%** | Interchangeable discrimination contexts |
+| Within-A/C | **14.7%** | True fine-grained alternatives |
+| Cross-family | **11.3%** | Partial overlap, partial incompatibility |
+
+### f116v Structural Isolation
+
+f116v shares NO bridging tokens with most other folios:
+- Vocabulary uniquely concentrated
+- Cannot be jointly specified with most other constraint bundles
+- Can still appear in B executions (C440 holds)
+- Defines a discrimination profile incompatible at A-level
+
+### C442 Refinement
+
+Previous understanding: "94% unique vocabulary per folio"
+
+Refined understanding:
+> **AZC compatibility filtering operates at the level of Currier A constraint-bundle co-specification. Two AZC folio vocabularies are compatible iff there exists at least one Currier A entry whose vocabulary bridges both.**
+
+Corollaries:
+- Folios are NOT execution-exclusive
+- Folios are NOT globally incompatible
+- Incompatibility exists only at **specification time**
+- Disallowed combinations leave no discrete trace—they simply never occur
+
+### Why This Matters
+
+This resolves family-level coherence:
+- **Zodiac (0% unbridged)**: Supports sustained HT flow—interchangeable contexts
+- **A/C (14.7% unbridged)**: Causes punctuated HT resets—true alternatives
+- **Execution difficulty unchanged**: CEI, recovery, hazard models unaffected
+
+### Updated Files
+
+- `phases/AZC_COMPATIBILITY/azc_entry_bridges.py` - Correct probe
+- `phases/AZC_COMPATIBILITY/azc_folio_compatibility.py` - First probe (coarse)
+- `results/azc_entry_bridges.json` - Bridge analysis results
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - v4.5
+- `context/CLAIMS/azc_system.md` - C442 refined
+
+### Significance
+
+This is a **Tier-2 advance**:
+- Pinpoints the mechanism of AZC compatibility (A-bundle level)
+- Identifies f116v as structurally isolated
+- Explains Zodiac coherence vs A/C alternatives
+- Connects discrimination regimes to specification constraints
+
+---
+
+## Version 2.18 (2026-01-11) - AZC-Based Currier A Clustering
+
+### Summary
+
+**AZC folio co-occurrence can reverse-cluster Currier A entries, revealing sub-families within PREFIX classes.** The y- PREFIX shows a family split: some y- tokens cluster with Zodiac contexts, others with A/C contexts.
+
+### Key Finding
+
+> **PREFIX morphology does not fully determine AZC family affinity. Some PREFIX classes (notably y-) contain sub-families that differ in their discrimination-regime membership.**
+
+### Probe Results
+
+| Metric | Value |
+|--------|-------|
+| Currier A tokens in AZC | 778 (16% of vocabulary) |
+| Tokens eligible for clustering | 367 (appear in 2+ AZC folios) |
+| Sub-families detected | y- (FAMILY_SPLIT) |
+
+### PREFIX → AZC Family Baseline (confirms C471)
+
+| PREFIX | Zodiac % | A/C % | Bias |
+|--------|----------|-------|------|
+| qo- | 18.8% | 71.9% | A/C |
+| d- | 14.5% | 62.9% | A/C |
+| or- | 58.3% | 16.7% | Zodiac |
+| ot- | 25.0% | 25.0% | BALANCED |
+| **y-** | 28.1% | 46.9% | **SPLIT** |
+
+### y- Family Split Evidence
+
+| Cluster | Family Bias | Sample Tokens | Shared Folios |
+|---------|-------------|---------------|---------------|
+| 66 | 85.7% Zodiac | ytaly, opaiin, alar | f72v1, f73v |
+| 61 | 69.7% A/C | okeod, ykey, ykeeody | f69v, f73v |
+
+### Interpretation
+
+y- does not behave like a single material class. It spans both discrimination regimes, suggesting:
+
+1. **y- encodes something orthogonal to the Zodiac/A-C axis**
+2. **y- may be a modifier or state marker** rather than a material class
+3. **Regime-independent function** - applies in both coarse and fine discrimination contexts
+
+### Extreme Family Clusters (100% bias)
+
+| Cluster | Bias | Tokens | Shared Folios |
+|---------|------|--------|---------------|
+| 67 | 100% Zodiac | okeoly, dalal, otalal | f70v2, f72v1 |
+| 38 | 100% A/C | om, oir, ykaly | f67v2, f67r2 |
+| 139 | 100% Zodiac | okam, okaldy, chas | f72r2, f72v3 |
+
+### Updated Files
+
+- `phases/EFFICIENCY_REGIME_TEST/azc_based_a_clustering.py` - Clustering probe
+- `results/azc_based_a_clustering.json` - Full results
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - v4.4, y- finding
+- `context/SPECULATIVE/efficiency_regimes.md` - Added y- evidence
+
+### Significance
+
+This probe demonstrates that AZC can be used in reverse to reveal structure within Currier A vocabulary that PREFIX morphology alone doesn't show. The y- split provides evidence that some morphological markers encode regime-independent properties.
+
+---
+
+## Version 2.17 (2026-01-11) - Perceptual Discrimination Regime Synthesis
+
+### Summary
+
+**HT oscillation analysis completes the regime interpretation.** The concurrency management probe falsified the parallel-batch hypothesis but revealed the correct explanatory axis: discrimination complexity determines attentional flow patterns.
+
+### Key Finding
+
+> **Where discrimination is fine, attention becomes punctuated; where discrimination is coarse, attention can flow.**
+
+### HT Oscillation Results
+
+| Family | HT Density | Oscillation Score | Interpretation |
+|--------|-----------|-------------------|----------------|
+| Zodiac | 0.131 | 0.060 | Sustained attentional flow |
+| A/C | 0.236 | 0.110 | Punctuated attentional checkpoints |
+
+**A/C shows ~80% higher HT oscillation than Zodiac.**
+
+### Falsified Hypotheses
+
+| Hypothesis | Status | Evidence |
+|------------|--------|----------|
+| Parallel batch management | FALSIFIED | HT oscillation reversed from prediction |
+| Zodiac = high context switching | FALSIFIED | Zodiac has LOWER oscillation |
+
+### The Coherent Explanatory Axis (All Layers Aligned)
+
+| Layer | Zodiac | A/C |
+|-------|--------|-----|
+| Currier A | Coarse categories | Fine distinctions |
+| AZC | Uniform scaffolds | Varied scaffolds |
+| HT | Sustained flow | Punctuated checkpoints |
+| Currier B | Same difficulty | Same difficulty |
+| CEI | Same effort | Same effort |
+
+### Final Interpretation (Tier 3 - VALIDATED)
+
+> Zodiac and A/C AZC families correspond to regimes of perceptual discrimination complexity rather than operational difficulty. Zodiac contexts permit coarse categorization and sustained attentional flow, while A/C contexts require finer categorical distinctions, producing punctuated attentional checkpoints reflected in higher HT oscillation. Execution grammar absorbs this difference, resulting in no detectable change in behavioral brittleness or CEI.
+
+### Updated Files
+
+- `context/SPECULATIVE/efficiency_regimes.md` - Final validated interpretation
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - v4.3, coherent axis table
+- `phases/EFFICIENCY_REGIME_TEST/test_concurrency_management.py` - HT probe
+- `results/concurrency_management_probe.json` - HT test output
+
+### Significance
+
+This is the first interpretation that cleanly integrates ALL layers (A, AZC, B, HT, CEI) without contradiction. The internal evidence has been exhausted correctly, by falsification rather than narrative preference.
+
+---
+
+## Version 2.16 (2026-01-11) - Lexical Granularity Regime Validation
+
+### Summary
+
+**This phase empirically tested the "efficiency regime" interpretation of Zodiac vs A/C.** The results localized the signal to the vocabulary layer and falsified behavioral-level claims.
+
+### Key Finding
+
+> **Zodiac vs A/C encodes regimes of lexical discrimination, not regimes of operational difficulty; the control grammar absorbs lexical complexity so that execution behavior remains stable.**
+
+### Test Results
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| MIDDLE Discrimination Pressure | WEAK SUPPORT | 5/15 prefixes show gradient, 0 reversed |
+| Residual Brittleness Analysis | **FAILED** | Effect is PREFIX-morphological, not regime-based |
+| Universal MIDDLE Negative Control | **PASSED** | Universal MIDDLEs regime-neutral (58.7%), Exclusive biased (64.8%) |
+| Family Escape Transfer | PARTIAL | Weak positive correlation (r=0.265) |
+
+**Overall Verdict: WEAK_PARTIAL**
+
+### What IS Supported (Lexical Level)
+
+- MIDDLE discrimination is genuinely family-biased
+- Universal MIDDLEs are regime-neutral; Exclusive MIDDLEs show A/C bias
+- A/C contexts require finer vocabulary distinctions; Zodiac uses broader categories
+
+### What Is NOT Supported (Behavioral Level - FALSIFIED)
+
+- A/C = operationally brittle (REJECTED)
+- Zodiac = operationally forgiving (REJECTED)
+- Family affects CEI or recovery (REJECTED)
+- Efficiency stress propagates to B programs (REJECTED)
+
+### New Insight
+
+**CEI measures control strain *within* execution, not *between* lexical regimes.**
+
+CEI and AZC family live on orthogonal axes:
+- CEI = trajectory management within execution
+- AZC family = what distinctions exist ahead of time
+
+### Updated Files
+
+- `context/SPECULATIVE/efficiency_regimes.md` - Renamed, tested, revised
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - v4.2, updated regime section
+- `phases/EFFICIENCY_REGIME_TEST/` - Four test scripts + synthesis
+- `results/efficiency_regime_*.json` - All test outputs
+
+### Methodology Note
+
+This represents a proper falsification attempt, not confirmation bias. The test suite was designed with pre-declared stop conditions and negative controls. The partial failure is a scientific success: it precisely located where the signal exists (vocabulary) vs where it does not (behavior).
+
+---
+
+## Version 2.15 (2026-01-11) - Morphological Binding Phase Closure
+
+### Summary
+
+**This phase resolved the interface between Currier A, AZC, and Currier B.** The binding logic that connects vocabulary composition to constraint activation is now morphologically encoded, causally active, and empirically validated.
+
+### The One-Sentence Takeaway
+
+> **Currier A records define which worlds are allowed to exist, AZC defines what is legal in each world and when recovery is possible, and Currier B blindly executes - leaving the consequences of earlier discriminations unavoidable but structurally bounded.**
+
+### New Constraints
+
+- **C471** - PREFIX Encodes AZC Family Affinity (Tier 2)
+  - qo- and ol- strongly enriched in A/C AZC folios (91% / 81%)
+  - ot- enriched in Zodiac folios (54%)
+  - ch-, sh-, ok- broadly distributed
+  - Statistical affinity, not exclusive mapping
+
+- **C472** - MIDDLE Is Primary Carrier of AZC Folio Specificity (Tier 2)
+  - PREFIX-exclusive MIDDLEs (77%) exhibit median entropy = 0.0
+  - Typically appear in exactly one AZC folio
+  - Shared MIDDLEs span multiple folios (18.7% vs 3.3% coverage)
+  - MIDDLE is principal determinant of folio-level constraints
+
+- **C473** - Currier A Entry Defines a Constraint Bundle (Tier 2)
+  - A entry does not encode addressable object or procedure
+  - Morphological composition specifies compatibility signature
+  - Determines which AZC legality envelopes are applicable
+
+### Final Definitions (Locked)
+
+- **Currier A record** = Pre-execution compatibility declaration
+- **AZC folio** = Complete legality regime (permissions + recoveries)
+- **Currier B program** = Blind execution against filtered vocabulary
+
+### Closure Declarations
+
+**Pipeline Resolution & Morphological Binding: CLOSED**
+
+No remaining degrees of freedom. The binding logic is:
+- PREFIX -> AZC family affinity
+- MIDDLE -> AZC folio specificity
+- Together: each vocabulary item carries a compatibility signature
+
+**Additional closures (do NOT reopen):**
+- Naming or meaning of AZC folios (they are legality regimes)
+- Aligning A entries to specific B programs (vocabulary-mediated)
+
+### Updated Files
+
+- `context/CLAIMS/azc_system.md` - Added C471-C473, morphological binding section
+- `context/CLAUDE_INDEX.md` - Updated to v2.8, 335 constraints
+- `context/MAPS/claim_to_phase.md` - Added C471-C473 mapping
+- `phases/INTEGRATION_PROBE/` - Three probe scripts archived
+- `results/integration_probe_*.json` - Probe results saved
+
+---
+
+## Version 2.14 (2026-01-11) - Pipeline Resolution Phase Closure
+
+### Summary
+
+**This phase achieved structural closure on the A -> AZC -> B pipeline.** The decisive finding: AZC constraint profiles propagate causally into Currier B execution behavior.
+
+### New Constraints
+
+- **C468** - AZC Legality Inheritance (Tier 2)
+  - Tokens from high-escape AZC contexts show 28.6% escape in B
+  - Tokens from low-escape AZC contexts show 1.0% escape in B
+  - 28x difference confirms causal constraint transfer
+
+- **C469** - Categorical Resolution Principle (Tier 2)
+  - Operational conditions represented categorically via token legality
+  - Not parametrically via encoded values
+  - Physics exists externally; representation is categorical
+
+- **C470** - MIDDLE Restriction Inheritance (Tier 2)
+  - Restricted MIDDLEs (1-2 AZC folios): 4.0 B folio spread
+  - Universal MIDDLEs (10+ AZC folios): 50.6 B folio spread
+  - 12.7x difference confirms constraint transfer
+
+### New Fits
+
+- **F-AZC-015** - Windowed AZC Activation Trace
+  - Case B confirmed: 70% of AZC folios active per window
+  - High persistence (0.87-0.93): same folios persist
+  - AZC is ambient legality field, not dynamic selector
+
+- **F-AZC-016** - AZC->B Constraint Fit Validation
+  - MIDDLE restriction transfers: CONFIRMED (12.7x)
+  - Escape rate transfers: CONFIRMED (28x)
+  - Pipeline causality validated
+
+### Closure Declarations
+
+**Pipeline Resolution Phase: CLOSED**
+
+The A -> AZC -> B control pipeline is structurally and behaviorally validated.
+
+**Do NOT reopen:**
+- Entry-level A->B mapping (ruled out by pipeline mechanics)
+- Dynamic AZC decision-making (F-AZC-015 closed this)
+- Parametric variable encoding (no evidence exists)
+- Semantic token meaning (all evidence against)
+
+### Updated Files
+
+- `context/CLAIMS/azc_system.md` - Added C468-C470, closure statement
+- `context/MODEL_FITS/fits_azc.md` - Added F-AZC-015, F-AZC-016
+- `context/MODEL_CONTEXT.md` - Added Section X.C (Representation Principle)
+- `context/CLAUDE_INDEX.md` - Updated to v2.7, 320+ constraints
+
+### Archived Scripts
+
+29 scripts from `phases/AZC_constraint_hunting/` archived to `archive/scripts/AZC_constraint_hunting/`
+
+---
+
 ## Version 2.13 (2026-01-10)
 
 ### E4: AZC Entry Orientation Trace (C460)

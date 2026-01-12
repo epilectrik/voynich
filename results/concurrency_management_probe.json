@@ -1,0 +1,393 @@
+{
+  "probe_id": "CONCURRENCY_MANAGEMENT",
+  "hypothesis": "Zodiac = parallel batch management, A/C = single batch attention",
+  "prediction": "Zodiac should show higher, more regular HT oscillation",
+  "a_entry_analysis": {
+    "n_entries": 778,
+    "bias_distribution": {
+      "BALANCED": 129,
+      "AC_BIASED": 428,
+      "ZODIAC_BIASED": 221
+    },
+    "clusters": {
+      "MIXED_BROAD": {
+        "n_entries": 43,
+        "mean_azc_folios": 13.67,
+        "mean_ac_count": 32.74,
+        "mean_zodiac_count": 20.58,
+        "sample_tokens": [
+          "ar",
+          "or",
+          "o",
+          "r",
+          "oteey"
+        ]
+      },
+      "MIXED_MEDIUM": {
+        "n_entries": 57,
+        "mean_azc_folios": 5.58,
+        "mean_ac_count": 7.79,
+        "mean_zodiac_count": 5.67,
+        "sample_tokens": [
+          "shol",
+          "ary",
+          "okaiin",
+          "sair",
+          "os"
+        ]
+      },
+      "AC_DOMINANT_BROAD": {
+        "n_entries": 4,
+        "mean_azc_folios": 11.25,
+        "mean_ac_count": 31.25,
+        "mean_zodiac_count": 10.25,
+        "sample_tokens": [
+          "y",
+          "ol",
+          "okol",
+          "cheo"
+        ]
+      },
+      "AC_DOMINANT_NARROW": {
+        "n_entries": 321,
+        "mean_azc_folios": 1.3,
+        "mean_ac_count": 3.07,
+        "mean_zodiac_count": 0,
+        "sample_tokens": [
+          "ykor",
+          "sory",
+          "cthar",
+          "shod",
+          "daraiin"
+        ]
+      },
+      "ZODIAC_DOMINANT_NARROW": {
+        "n_entries": 196,
+        "mean_azc_folios": 1.16,
+        "mean_ac_count": 0,
+        "mean_zodiac_count": 2.19,
+        "sample_tokens": [
+          "kair",
+          "chtaiin",
+          "dan",
+          "ory",
+          "shor"
+        ]
+      },
+      "MIXED_NARROW": {
+        "n_entries": 92,
+        "mean_azc_folios": 2.36,
+        "mean_ac_count": 2.98,
+        "mean_zodiac_count": 2.09,
+        "sample_tokens": [
+          "shar",
+          "sheky",
+          "sh",
+          "ols",
+          "she"
+        ]
+      },
+      "ZODIAC_DOMINANT_MEDIUM": {
+        "n_entries": 18,
+        "mean_azc_folios": 5,
+        "mean_ac_count": 2.67,
+        "mean_zodiac_count": 9.39,
+        "sample_tokens": [
+          "otaiin",
+          "oteor",
+          "otear",
+          "cthey",
+          "otchy"
+        ]
+      },
+      "AC_DOMINANT_MEDIUM": {
+        "n_entries": 46,
+        "mean_azc_folios": 4.72,
+        "mean_ac_count": 11.41,
+        "mean_zodiac_count": 1.96,
+        "sample_tokens": [
+          "dair",
+          "chear",
+          "shy",
+          "dain",
+          "chor"
+        ]
+      },
+      "ZODIAC_DOMINANT_BROAD": {
+        "n_entries": 1,
+        "mean_azc_folios": 11,
+        "mean_ac_count": 9,
+        "mean_zodiac_count": 37,
+        "sample_tokens": [
+          "otal"
+        ]
+      }
+    }
+  },
+  "azc_ht_analysis": {
+    "zodiac": {
+      "n_folios": 13,
+      "mean_density": 0.1312,
+      "mean_oscillation": 0.0601,
+      "mean_regularity": 0.46,
+      "folios": [
+        {
+          "folio": "f72v3",
+          "density": 0.1413,
+          "mean_interval": 7.16,
+          "interval_variance": 1.326,
+          "regularity": 0.43,
+          "oscillation_score": 0.0607
+        },
+        {
+          "folio": "f72v2",
+          "density": 0.1255,
+          "mean_interval": 7.93,
+          "interval_variance": 1.029,
+          "regularity": 0.493,
+          "oscillation_score": 0.0618
+        },
+        {
+          "folio": "f72r3",
+          "density": 0.1045,
+          "mean_interval": 8.72,
+          "interval_variance": 0.966,
+          "regularity": 0.509,
+          "oscillation_score": 0.0532
+        },
+        {
+          "folio": "f73v",
+          "density": 0.0769,
+          "mean_interval": 9.62,
+          "interval_variance": 1.205,
+          "regularity": 0.454,
+          "oscillation_score": 0.0349
+        },
+        {
+          "folio": "f70v2",
+          "density": 0.1756,
+          "mean_interval": 5.68,
+          "interval_variance": 1.43,
+          "regularity": 0.412,
+          "oscillation_score": 0.0723
+        },
+        {
+          "folio": "f72r1",
+          "density": 0.084,
+          "mean_interval": 11.47,
+          "interval_variance": 1.278,
+          "regularity": 0.439,
+          "oscillation_score": 0.0369
+        },
+        {
+          "folio": "f71r",
+          "density": 0.0842,
+          "mean_interval": 10.06,
+          "interval_variance": 0.981,
+          "regularity": 0.505,
+          "oscillation_score": 0.0425
+        },
+        {
+          "folio": "f57v",
+          "density": 0.2511,
+          "mean_interval": 3.74,
+          "interval_variance": 0.907,
+          "regularity": 0.524,
+          "oscillation_score": 0.1317
+        },
+        {
+          "folio": "f71v",
+          "density": 0.1506,
+          "mean_interval": 6.69,
+          "interval_variance": 1.716,
+          "regularity": 0.368,
+          "oscillation_score": 0.0555
+        },
+        {
+          "folio": "f72v1",
+          "density": 0.0918,
+          "mean_interval": 10.89,
+          "interval_variance": 1.457,
+          "regularity": 0.407,
+          "oscillation_score": 0.0374
+        },
+        {
+          "folio": "f70v1",
+          "density": 0.207,
+          "mean_interval": 3.96,
+          "interval_variance": 1.403,
+          "regularity": 0.416,
+          "oscillation_score": 0.0862
+        },
+        {
+          "folio": "f73r",
+          "density": 0.1194,
+          "mean_interval": 7.39,
+          "interval_variance": 1.042,
+          "regularity": 0.49,
+          "oscillation_score": 0.0585
+        },
+        {
+          "folio": "f72r2",
+          "density": 0.0941,
+          "mean_interval": 9.78,
+          "interval_variance": 0.881,
+          "regularity": 0.531,
+          "oscillation_score": 0.05
+        }
+      ]
+    },
+    "ac": {
+      "n_folios": 15,
+      "mean_density": 0.2358,
+      "mean_oscillation": 0.1098,
+      "mean_regularity": 0.458,
+      "folios": [
+        {
+          "folio": "f70r1",
+          "density": 0.1621,
+          "mean_interval": 5.31,
+          "interval_variance": 0.9,
+          "regularity": 0.526,
+          "oscillation_score": 0.0853
+        },
+        {
+          "folio": "f68v2",
+          "density": 0.3486,
+          "mean_interval": 2.74,
+          "interval_variance": 1.174,
+          "regularity": 0.46,
+          "oscillation_score": 0.1603
+        },
+        {
+          "folio": "f65v",
+          "density": 0.3016,
+          "mean_interval": 3.32,
+          "interval_variance": 0.716,
+          "regularity": 0.583,
+          "oscillation_score": 0.1757
+        },
+        {
+          "folio": "f68r3",
+          "density": 0.2484,
+          "mean_interval": 3.92,
+          "interval_variance": 1.089,
+          "regularity": 0.479,
+          "oscillation_score": 0.1189
+        },
+        {
+          "folio": "f70r2",
+          "density": 0.2828,
+          "mean_interval": 3.54,
+          "interval_variance": 1.02,
+          "regularity": 0.495,
+          "oscillation_score": 0.14
+        },
+        {
+          "folio": "f67r1",
+          "density": 0.3167,
+          "mean_interval": 3.17,
+          "interval_variance": 0.796,
+          "regularity": 0.557,
+          "oscillation_score": 0.1763
+        },
+        {
+          "folio": "f69r",
+          "density": 0.2579,
+          "mean_interval": 3.84,
+          "interval_variance": 1.171,
+          "regularity": 0.461,
+          "oscillation_score": 0.1188
+        },
+        {
+          "folio": "f69v",
+          "density": 0.1751,
+          "mean_interval": 5.74,
+          "interval_variance": 0.953,
+          "regularity": 0.512,
+          "oscillation_score": 0.0897
+        },
+        {
+          "folio": "f67v1",
+          "density": 0.2055,
+          "mean_interval": 4.73,
+          "interval_variance": 1.168,
+          "regularity": 0.461,
+          "oscillation_score": 0.0948
+        },
+        {
+          "folio": "f68v1",
+          "density": 0.3169,
+          "mean_interval": 3.11,
+          "interval_variance": 1.244,
+          "regularity": 0.446,
+          "oscillation_score": 0.1412
+        },
+        {
+          "folio": "f68v3",
+          "density": 0.2542,
+          "mean_interval": 3.94,
+          "interval_variance": 1.472,
+          "regularity": 0.404,
+          "oscillation_score": 0.1028
+        },
+        {
+          "folio": "f68r1",
+          "density": 0.1101,
+          "mean_interval": 7.29,
+          "interval_variance": 1.348,
+          "regularity": 0.426,
+          "oscillation_score": 0.0469
+        },
+        {
+          "folio": "f67r2",
+          "density": 0.1961,
+          "mean_interval": 4.39,
+          "interval_variance": 1.245,
+          "regularity": 0.445,
+          "oscillation_score": 0.0873
+        },
+        {
+          "folio": "f68r2",
+          "density": 0.1551,
+          "mean_interval": 5.5,
+          "interval_variance": 1.752,
+          "regularity": 0.363,
+          "oscillation_score": 0.0563
+        },
+        {
+          "folio": "f67v2",
+          "density": 0.2064,
+          "mean_interval": 4.57,
+          "interval_variance": 2.867,
+          "regularity": 0.259,
+          "oscillation_score": 0.0534
+        }
+      ]
+    }
+  },
+  "bias_ht_analysis": {
+    "AC_BIASED": {
+      "n_entries": 428,
+      "n_b_folios": 83,
+      "n_folios_analyzed": 83,
+      "mean_density": 0.1924,
+      "mean_oscillation": 0.0941,
+      "mean_regularity": 0.474
+    },
+    "ZODIAC_BIASED": {
+      "n_entries": 221,
+      "n_b_folios": 83,
+      "n_folios_analyzed": 83,
+      "mean_density": 0.1924,
+      "mean_oscillation": 0.0941,
+      "mean_regularity": 0.474
+    }
+  },
+  "verdicts": {
+    "oscillation": "AC_HIGHER_OSCILLATION",
+    "regularity": "SIMILAR_REGULARITY",
+    "overall": "CONCURRENCY_FALSIFIED"
+  },
+  "interpretation": "A/C shows higher oscillation - opposite of prediction"
+}
