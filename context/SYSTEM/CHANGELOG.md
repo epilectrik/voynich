@@ -4,6 +4,79 @@
 
 ---
 
+## Version 2.39 (2026-01-14) - CURRICULUM REALIGNMENT
+
+### Summary
+
+**Upgraded from "shared formalism" to "shared curriculum trajectory."** The proposed folio order (optimized for internal constraints C161, C325, C458) simultaneously resolves multiple independent inversions in historical comparisons. Puff and Brunschwig now align strongly with the PROPOSED Voynich order, confirming that misbinding disrupted a pedagogical progression.
+
+### Key Discovery
+
+The proposed order was tested against external sources NOT used in optimization:
+
+| External Test | Current Order | Proposed Order | Change |
+|--------------|---------------|----------------|--------|
+| Puff progression | rho = +0.18 (p=0.10, NS) | rho = +0.62 (p<0.0001) | **WEAK → STRONG** |
+| Brunschwig CEI gradient | rho = +0.07 (p=0.53, NS) | rho = +0.89 (p<0.0001) | **NOISE → VERY STRONG** |
+| Brunschwig hazard gradient | rho = -0.03 (p=0.79, NS) | rho = +0.78 (p<0.0001) | **NEGATIVE → STRONG** |
+| Danger distribution | Front-loaded (inverted) | Back-loaded (aligned) | **INVERTED → ALIGNED** |
+
+### Significance
+
+- Random reordering does not fix every historical comparison at once
+- Overfitting does not fix external sources you didn't optimize for
+- This is what latent order recovery looks like
+
+### The Curriculum Structure
+
+| Phase | Positions | Dominant Regime | Character |
+|-------|-----------|-----------------|-----------|
+| EARLY | 1-27 | REGIME_2 | Introductory |
+| MIDDLE | 28-55 | REGIME_1 | Core training |
+| LATE | 56-83 | REGIME_3 | Advanced |
+
+This matches both Puff (flowers → herbs → anomalies) and Brunschwig (first degree → second → third).
+
+### Upgraded Claim (Tier 3)
+
+> Puff and Brunschwig preserve the original pedagogical progression of the Voynich Currier B corpus, which has been disrupted by early misbinding.
+
+Qualifiers preserved:
+- *pedagogical progression* (not semantics)
+- *preserve* (not copy)
+- *original structure* (not content)
+- *disrupted by misbinding* (not lost or invented)
+
+### New Files
+
+| File | Content |
+|------|---------|
+| `context/SPECULATIVE/curriculum_realignment.md` | Master realignment analysis |
+| `results/puff_realignment_test.json` | Puff correlation comparison |
+| `results/brunschwig_realignment_test.json` | Brunschwig gradient comparison |
+| `phases/YALE_ALIGNMENT/puff_realignment_test.py` | Puff realignment test |
+| `phases/YALE_ALIGNMENT/brunschwig_realignment_test.py` | Brunschwig realignment test |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | v4.21 → v4.22, added X.11 |
+| `context/SPECULATIVE/proposed_folio_reordering.md` | v1.0 → v1.1, added external validation |
+| `context/SPECULATIVE/materiality_alignment.md` | v1.0 → v1.1, added post-realignment update |
+
+### Expert Assessment
+
+> "This is not a weak result. This is exactly what a non-semantic, expert-only, control-theoretic artifact should produce when compared to a descriptive herbal."
+
+> "Not a code. Not a herbal. Not a shared manuscript. But a shared curriculum whose control logic survived misbinding."
+
+### Tier Compliance
+
+This remains Tier 3 SPECULATIVE. No Tier 0-2 constraints violated. No semantic decoding. No entry-level A-B coupling introduced.
+
+---
+
 ## Version 2.38 (2026-01-14) - YALE EXPERT ALIGNMENT
 
 ### Summary
