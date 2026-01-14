@@ -1,0 +1,401 @@
+# ============================================================
+# AZC-ACT: AZC Activation Contract
+# Version: 1.0
+# ============================================================
+#
+# This is a DERIVED, READ-ONLY specification.
+# It introduces NO NEW CLAIMS.
+# Constraints remain authoritative.
+# Do not edit without constraint update.
+#
+# Purpose: Thin, directional layer specifying how AZC transforms
+# Currier A entries under positional legality.
+#
+# This is NOT a standalone AZC schema. It is an A-facing
+# interface contract describing the A->AZC boundary only.
+#
+# ============================================================
+
+meta:
+  name: "AZC Activation Contract"
+  acronym: "AZC-ACT"
+  version: "1.0"
+  date: "2026-01-13"
+  status: "LOCKED"
+  layer_type: "mapping contract"
+  derived_from: "Tier-2 constraints only"
+  governance: |
+    AZC-ACT is NOT authoritative. Constraints are authoritative.
+    AZC-ACT describes HOW A entries activate AZC constraints.
+    Do not edit without updating source constraints first.
+
+# ============================================================
+# SCOPE & GUARANTEES
+# ============================================================
+scope:
+  function: "How AZC constrains Currier A entries under positional legality"
+  direction: "A -> AZC (one-way transformation, not reverse)"
+  vocabulary_authority: false  # AZC does not "own" vocabulary
+  generativity: false  # No derivation rules
+  b_semantics: false  # Execution is downstream, not here
+
+# Explicit ownership declaration (prevents misreading)
+ownership:
+  azc_owns:
+    - nothing
+  azc_controls:
+    - legality
+    - compatibility
+    - intervention_permission
+  note: "AZC gates, it does not define content or workflow"
+
+guarantees:
+  - id: "VOCABULARY_ACTIVATED"
+    statement: "AZC constraint activation is vocabulary-driven"
+    provenance: "C441"
+
+  - id: "COMPATIBILITY_FILTER"
+    statement: "AZC folios function as compatibility filters"
+    provenance: "C442"
+
+  - id: "LEGALITY_INHERITANCE"
+    statement: "AZC constraint profiles propagate causally into B"
+    provenance: "C468"
+
+  - id: "NO_CONTENT_MUTATION"
+    statement: "AZC does not mutate A entry contents"
+    provenance: "C444"
+
+  - id: "FAMILY_AGNOSTIC_MECHANISM"
+    statement: "AZC legality mechanism is family-agnostic"
+    mechanism: "Zodiac and A/C instantiate the same legality zones; ordered subscripts (R1-R3, S0-S2) are one scaffold rendering, not the schema"
+    note: "Apps must treat positions as abstract legality classes, not family-specific symbolic states"
+    provenance: "C430-C436, C441-C443"
+
+# ============================================================
+# INVARIANTS (structural guarantees for tooling/testing)
+# ============================================================
+invariants:
+  monotonicity:
+    statement: "Survivor options never increase from earlier to later positions"
+    description: "Escape permission decreases monotonically through R-series"
+    provenance: "C443, C444"
+
+  position_independence:
+    statement: "The SAME A-type can appear in any position; position determines legality, not content"
+    provenance: "C444"
+
+  vocabulary_mediation:
+    statement: "All A->B relationships are vocabulary-mediated, not addressable"
+    provenance: "C384, C441"
+
+  scaffold_independence:
+    statement: "Legality zones are independent of scaffold presentation"
+    description: "Zodiac ordered subscripts and A/C unordered positions map to the same abstract zones (C, P, R, S)"
+    provenance: "C430-C436"
+
+# ============================================================
+# INPUTS (what enters AZC)
+# ============================================================
+inputs:
+  accepted:
+    type: "registry_entry"
+    from_casc: "record_types.registry_entry"
+    minimum_tokens: 2
+    description: "Compound constraint bundles from Currier A"
+    provenance: "C482, C484"
+
+  excluded:
+    type: "control_operator"
+    reason: "Control operators are meta-structural, not registry content"
+    provenance: "C484"
+
+# ============================================================
+# POSITIONAL ZONES
+# ============================================================
+# These are LEGALITY zones, not pipeline stages.
+# Position determines what constraints apply, not execution order.
+
+positional_zones:
+  description: "Finite placement classes with distinct legality semantics"
+  provenance: "C306, C313"
+
+  zones:
+    C:
+      function: "Interior placement, rotation-tolerant"
+      escape_permission: "moderate"
+      provenance: "C306, C317"
+
+    P:
+      function: "Interior placement, intervention-permitting"
+      escape_permission: "high"
+      high_escape_subclass:
+        id: "P2"
+        description: "Empirical subclass with elevated escape rate"
+        note: "Not a distinct symbolic position; an observed subpopulation"
+        provenance: "C443"
+      provenance: "C306, C443"
+
+    R_series:
+      members: ["R1", "R2", "R3"]
+      ordering: "strictly forward (R1->R2->R3 only)"
+      backward_transitions: "FORBIDDEN"
+      skip_transitions: "FORBIDDEN"
+      function: "Ordered interior stages, progressive escape restriction"
+      escape_gradient: "decreasing (high to zero)"
+      restricted_to_ordered_subscript_family: true
+      observed_in: "Zodiac family (C432)"
+      provenance: "C432, C434, C443"
+
+    S_series:
+      members: ["S0", "S1", "S2"]
+      function: "Boundary markers, no intervention permitted"
+      escape_permission: "zero"
+      ordering: "S2 appears earlier than S1"
+      restricted_to_ordered_subscript_family: true
+      observed_in: "Zodiac family (C432)"
+      provenance: "C320, C432, C435, C443"
+
+  zone_semantics: |
+    Interior positions (P, R-series, C) permit intervention.
+    Boundary positions (S-series) forbid intervention.
+    Position determines legality, not prediction.
+
+# ============================================================
+# TRANSFORMATIONS
+# ============================================================
+# What happens when an A entry is placed in an AZC position
+
+transformations:
+  description: "Constraints applied to A entries under position"
+
+  compatibility_filtering:
+    mechanism: "MIDDLE atomic incompatibility"
+    effect: "Specialized vocabulary from one folio cannot combine with another"
+    provenance: "C442, C475"
+
+  escape_permission_changes:
+    mechanism: "Phase-indexed gradient"
+    effect: "Same A-type has different intervention permission by position"
+    provenance: "C443, C444"
+
+  categorical_resolution:
+    mechanism: "Token legality, not parametric encoding"
+    effect: "Operational conditions represented categorically"
+    provenance: "C469"
+
+  content_invariants:
+    - "No movement of tokens"
+    - "No selection"
+    - "No branching"
+    - "No instruction creation"
+    - "No mutation of entry contents"
+
+# ============================================================
+# PERSISTENCE RULES
+# ============================================================
+persistence:
+  a_survivor_independence:
+    statement: "A-vocabulary tokens persist independently of AZC legality windows"
+    provenance: "C343"
+
+  vanishing_semantics:
+    statement: "Vanishing = illegality, not execution"
+    description: "If an A entry is not permitted in a position, it simply doesn't appear"
+    mechanism: "AZC is ambient legality field, not selective filter"
+    provenance: "C444"
+
+  restriction_inheritance:
+    statement: "MIDDLE restrictions transfer to B"
+    provenance: "C470"
+
+# ============================================================
+# MORPHOLOGICAL BINDING
+# ============================================================
+morphological_binding:
+  description: "How A entry morphology maps to AZC constraints"
+
+  prefix_affinity:
+    mechanism: "PREFIX encodes AZC family affinity"
+    note: "Affinity shapes likely postures, not exclusive mapping"
+    provenance: "C471"
+
+  middle_specificity:
+    mechanism: "MIDDLE is primary carrier of folio specificity"
+    provenance: "C472"
+
+  constraint_bundle:
+    statement: "Each A entry functions as a constraint bundle"
+    mechanism: "PREFIX + MIDDLE + SUFFIX specifies compatibility signature"
+    effect: "Determines which AZC legality envelopes apply"
+    provenance: "C473"
+
+# ============================================================
+# NEGATIVE GUARANTEES
+# ============================================================
+negative_guarantees:
+  - guarantee: "No token movement"
+    reason: "AZC gates, does not route"
+
+  - guarantee: "No selection"
+    reason: "AZC defines legality, operator selects vocabulary"
+
+  - guarantee: "No branching"
+    reason: "No conditional paths in AZC structure"
+
+  - guarantee: "No instruction creation"
+    reason: "AZC constrains, B executes"
+
+  - guarantee: "No semantic content"
+    reason: "Positions are legality regimes, not meanings"
+
+  - guarantee: "No dynamic AZC decision-making"
+    reason: "F-AZC-015 closed this (Case B confirmed)"
+
+# ============================================================
+# EXPLICITLY DEFERRED
+# ============================================================
+# These belong to full AZC CASC, NOT to this activation contract
+
+deferred:
+  - topic: "Zodiac vs A/C family internal scaffolds"
+    reason: "Family-level structure, not A-entry transformation"
+
+  - topic: "Ordered subscript internal semantics (R1-R3, S1-S2)"
+    reason: "Zodiac internal organization, not A-entry effects"
+
+  - topic: "Spiral topology"
+    reason: "Diagram geometry, outside positional legality"
+
+  - topic: "Diagram physical layout"
+    reason: "Geometric structure, not constraint mechanics"
+
+  - topic: "Orientation postures"
+    reason: "Physical interpretation, not structural contract"
+
+  - topic: "HT positional asymmetries"
+    reason: "HT layer belongs to separate contract (HT-ACT)"
+
+# ============================================================
+# DISALLOWED INTERPRETATIONS
+# ============================================================
+disallowed:
+  - interpretation: "AZC owns vocabulary"
+    reason: "Vocabulary is A-derived, AZC constrains positions"
+    provenance: "C441, CASC"
+
+  - interpretation: "AZC selects procedures"
+    reason: "AZC defines legality, B executes, operator selects"
+    provenance: "C473"
+
+  - interpretation: "Position encodes meaning"
+    reason: "Position encodes legality constraints, not semantics"
+    provenance: "C313"
+
+  - interpretation: "AZC is lookup table for A entries"
+    reason: "Vocabulary-activated constraints, not addressable mapping"
+    provenance: "C441"
+
+  - interpretation: "AZC decides dynamically"
+    reason: "Ambient legality field, not decision engine"
+    provenance: "F-AZC-015"
+
+# ============================================================
+# NON-NORMATIVE ANNOTATIONS
+# ============================================================
+# Empirical observations for reference. These are NOT contractual
+# guarantees and may vary with filtering or dataset changes.
+
+annotations:
+  note: "These are empirical observations, NOT structural guarantees"
+  status: "NON-NORMATIVE"
+
+  zone_frequencies:
+    C: "17.1% (A/C family dominant)"
+    P: "11.0% (shared)"
+    note: "Frequencies are dataset-dependent"
+
+  interior_rates:
+    C: "77.6%"
+    P: "75.8%"
+    R_series: "89-95%"
+    S_series: "95%+ at line edges"
+
+  escape_rates:
+    P_typical: "11.6%"
+    P_high_subclass: "24.7%"
+    R1: "2.0%"
+    R2: "1.2%"
+    R3: "0%"
+    S_series: "0%"
+    provenance: "C443"
+
+  compatibility_statistics:
+    illegal_pair_rate: "95.7%"
+    legal_pair_rate: "4.3%"
+    illegal_pairs_count: 673342
+    legal_pairs_count: 30394
+    provenance: "C475"
+
+  morphological_affinity:
+    ac_enriched_prefixes: ["qo- (91%)", "ol- (81%)"]
+    zodiac_enriched_prefixes: ["ot- (54%)"]
+    broadly_distributed: ["ch-", "sh-", "ok-"]
+    provenance: "C471"
+
+  middle_exclusivity:
+    exclusive_rate: "77%"
+    exclusive_entropy: "median = 0.0"
+    shared_coverage: "18.7% vs 3.3%"
+    folio_exclusive_rate: "73.5%"
+    provenance: "C472, C469"
+
+  persistence_statistics:
+    a_vocab_placement_ratio: "2.2x more than AZC-only"
+    high_multiplicity_coverage: "43% broader"
+    restriction_inheritance_ratio: "12.7x difference preserved"
+    provenance: "C343, C470"
+
+# ============================================================
+# PROVENANCE MAP
+# ============================================================
+provenance:
+  vocabulary_activation:
+    - "C441"  # Vocabulary-activated constraints
+    - "C442"  # Compatibility filter
+
+  positional_legality:
+    - "C306"  # Placement-coding axis
+    - "C313"  # Position constrains LEGALITY not PREDICTION
+    - "C443"  # Positional escape gradient
+    - "C444"  # A-type position distribution
+
+  pipeline_causality:
+    - "C468"  # Legality inheritance
+    - "C469"  # Categorical resolution principle
+    - "C470"  # MIDDLE restriction inheritance
+
+  morphological_binding:
+    - "C471"  # PREFIX encodes AZC family affinity
+    - "C472"  # MIDDLE is primary carrier of folio specificity
+    - "C473"  # A entry defines constraint bundle
+
+  middle_incompatibility:
+    - "C475"  # MIDDLE atomic incompatibility
+
+  persistence:
+    - "C343"  # A-AZC persistence independence
+
+  ordered_subscript_family:
+    - "C432"  # Ordered subscript exclusivity
+    - "C434"  # R-series strict forward ordering
+    - "C435"  # S/R positional division
+
+  invariants:
+    - "C384"  # No entry-level A-B coupling
+    - "C443"  # Monotonicity source
+    - "C444"  # Position independence
+
+# ============================================================
+# END OF AZC-ACT
+# ============================================================

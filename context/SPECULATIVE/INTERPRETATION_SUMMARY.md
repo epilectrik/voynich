@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.6
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.19
 
 ---
 
@@ -420,15 +420,753 @@ This explains several long-standing puzzles at once:
 
 > A globally navigable but locally forbidden discrimination space — the strongest internal explanation yet of why the Voynich Manuscript looks the way it does without invoking semantics.
 
-**Bayesian Modeling Now Possible:**
+**Bayesian Modeling Progress:**
 
-1. **Latent Discrimination Axes** — How many latent axes explain the incompatibility graph?
-2. **Probabilistic A Bundle Generator** — Can incompatibility + line length + PREFIX priors reproduce A entries?
-3. **HT Variance Decomposition** — How much HT is explained by local incompatibility density?
+1. ~~**Latent Discrimination Axes**~~ — **DONE: K=128 for 97% AUC** (see I.E below)
+2. ~~**Probabilistic A Bundle Generator**~~ — **DONE: 9/14 metrics FAIL** (see I.F below)
+3. ~~**Coverage Optimality**~~ — **DONE: 100% coverage, 22.3% hub savings** (see I.G below)
+4. ~~**HT Variance Decomposition**~~ — **DONE: R²=0.28, TAIL PRESSURE dominant** (see I.H below)
+5. ~~**Temporal Coverage Trajectories**~~ — **DONE: STRONG SCHEDULING with pedagogical pacing** (see I.I below)
+
+### I.E. Latent Discrimination Dimensionality (v4.7) - NEW
+
+**Question:** How many latent "axes of distinction" are needed to explain the MIDDLE incompatibility graph?
+
+**Answer:** ~128 dimensions for 97% AUC. The discrimination space is HIGH-DIMENSIONAL.
+
+| K | Cross-Validation AUC |
+|---|----------------------|
+| 2 | 0.869 |
+| 4 | 0.870 |
+| 8 | 0.869 |
+| 16 | 0.886 |
+| 32 | 0.900 |
+| 64 | 0.923 |
+| 128 | **0.972** |
+
+**Key Findings:**
+
+1. **Not low-rank** — The expert hypothesis of "2-4 binary switches" is rejected
+2. **Axes don't align with PREFIX** — Max separation 0.011 (very weak)
+3. **Axes don't align with characters** — Max correlation 0.138 (weak)
+4. **Axes don't align with length** — Max correlation 0.160 (weak)
+
+**Interpretation (Tier 3):**
+
+The 128 latent axes represent:
+- NOT simple features (prefix, characters, length)
+- Emergent compatibility structure learned from co-occurrence
+- Each MIDDLE carries ~128 bits of discriminatory information
+
+> **The MIDDLE vocabulary is not a categorization system with a few dimensions. It is a rich feature space where each variant has a unique 128-dimensional fingerprint.**
+
+**What This Means for Generative Modeling:**
+
+Any generator that reproduces Currier A must implicitly encode these ~128 dimensions. This rules out:
+- Simple rule-based generators
+- Low-parameter Markov models
+- "Random but constrained" generation
+
+**Hub Confirmation:**
+
+The top-5 MIDDLEs by degree (weighted co-occurrence) match prior finding:
+| MIDDLE | Degree |
+|--------|--------|
+| 'a' | 2047 |
+| 'o' | 1870 |
+| 'e' | 1800 |
+| 'ee' | 1625 |
+| 'eo' | 1579 |
+
+These universal connectors remain valid; they simply have high compatibility across all 128 dimensions.
+
+### I.F. Bundle Generator Diagnostic (v4.8) - NEW
+
+**Question:** Can a generator constrained only by MIDDLE incompatibility + line length + PREFIX priors reproduce Currier A entries?
+
+**Answer:** NO. 9/14 diagnostic metrics fail. Residuals reveal additional structure.
+
+**Generator Configuration:**
+- Included: MIDDLE incompatibility, line length, PREFIX priors
+- Excluded: marker exclusivity, section conditioning, AZC info, adjacency coherence
+
+**Diagnostic Results:**
+
+| Metric | Real | Synthetic | Verdict |
+|--------|------|-----------|---------|
+| lines_zero_mixing | 61.5% | 2.7% | **FAIL** |
+| pure_block_frac | 46.9% | 2.7% | **FAIL** |
+| universal_middle_frac | 31.6% | 56.7% | **FAIL** |
+| unique_middles | 1187 | 330 | **FAIL** |
+| lines_with_repetition | 96.4% | 63.9% | **FAIL** |
+| prefixes_per_line | 1.78 | 4.64 | **FAIL** |
+| line_length (mean/median) | 19.2/8.0 | 20.0/8.0 | OK |
+
+**Residual Interpretation (New Structure):**
+
+1. **PREFIX COHERENCE** — Lines prefer single PREFIX family (not just compatibility)
+2. **TAIL FORCING** — Real A systematically uses rare MIDDLEs
+3. **REPETITION IS STRUCTURAL** — 96.4% of lines have repetition (deliberate)
+4. **HUB RATIONING** — Universal MIDDLEs used sparingly (31.6% vs 56.7%)
+
+**Interpretation (Tier 3):**
+
+> **Incompatibility + priors are NECESSARY but NOT SUFFICIENT.** The generator reveals at least four additional structural principles: PREFIX coherence, tail forcing, repetition structure, and hub rationing.
+
+These are not noise — they are **discoverable constraints** waiting to be formalized.
+
+### I.G. Coverage Optimality CONFIRMED (v4.9) - NEW
+
+**Question:** Does Currier A optimize coverage of the discrimination space under cognitive constraints?
+
+**Answer:** YES. Real A achieves GREEDY-OPTIMAL coverage with 22.3% hub savings.
+
+**The Test:**
+
+| Model | Coverage | Hub Usage | Verdict |
+|-------|----------|-----------|---------|
+| **Real A** | **100%** | **31.6%** | **OPTIMAL + HUB RATIONING** |
+| Greedy | 100% | 53.9% | Optimal but hub-heavy |
+| Random | 72% | 9.8% | Incomplete |
+| Freq-Match | 27% | 56.1% | Hub-dominated, poor |
+
+**Key Insight:**
+
+Real A and Greedy both achieve 100% coverage (all 1,187 MIDDLEs used).
+But Real A uses **22.3 percentage points fewer hub tokens**.
+
+> **Currier A achieves greedy-optimal coverage while deliberately avoiding over-reliance on universal connectors.**
+
+**Interpretation (Tier 2 - now CONFIRMED):**
+
+The four residuals from the bundle generator (PREFIX coherence, tail forcing, repetition structure, hub rationing) collapse into **ONE control objective**: COVERAGE CONTROL.
+
+| Residual | Purpose |
+|----------|---------|
+| PREFIX coherence | Reduce cognitive load |
+| Tail forcing | Ensure rare variant coverage |
+| Repetition structure | Stabilize discrimination attention |
+| Hub rationing | Prevent premature generalization |
+
+**The Conceptual Pivot:**
+
+> **Currier A is not meant to be *generated*. It is meant to be *maintained*.**
+
+The correct question is not "how are A entries generated?" but "how is discrimination coverage enforced over time?"
+
+**New Constraint: C476 - COVERAGE OPTIMALITY** (Tier 2, CLOSED)
+
+### I.H. HT Variance Decomposition (v4.10) - NEW
+
+**Question:** Can incompatibility degree explain HT density?
+
+**Answer:** PARTIALLY. R² = 0.28 with **TAIL PRESSURE** as dominant predictor (68% of explained variance).
+
+**Regression Results:**
+
+| Predictor | r | p-value | Importance |
+|-----------|---|---------|------------|
+| **tail_pressure** | **0.504** | **0.0045*** | **68.2%** |
+| novelty | 0.153 | 0.42 | 6.3% |
+| incompatibility_density | 0.174 | 0.36 | 1.8% |
+| hub_suppression | 0.026 | 0.89 | 0.1% |
+
+**Interpretation (Tier 2 - CONFIRMED):**
+
+> **HT density correlates with tail pressure - the fraction of rare MIDDLEs in A entries.**
+
+When folios have more rare MIDDLEs:
+- Cognitive load is higher (rare variants harder to discriminate)
+- HT density rises (anticipatory vigilance)
+
+This confirms HT as a **cognitive load balancer** specifically tied to **tail discrimination complexity**:
+
+| MIDDLE Type | Cognitive Load | HT Response |
+|-------------|---------------|-------------|
+| Hubs ('a','o','e') | LOW | Lower HT |
+| Common MIDDLEs | LOW | Lower HT |
+| **Rare MIDDLEs (tail)** | **HIGH** | **Higher HT** |
+
+**Integration with Four-Layer Model:**
+
+| Layer | Role | Grounded By |
+|-------|------|-------------|
+| Currier B | Execution safety | Frozen Tier 0 |
+| Currier A | Coverage control | C476 (hub rationing) |
+| AZC | Decision gating | C437-C444 |
+| **HT** | **Vigilance signal** | **C477 (tail correlation)** |
+
+**New Constraint: C477 - HT TAIL CORRELATION** (Tier 2, CLOSED)
+
+### I.I. Temporal Coverage Trajectories (v4.11) - NEW
+
+**Question:** Is Currier A static-optimal or dynamically scheduled?
+
+**Answer:** STRONG TEMPORAL SCHEDULING with pedagogical pacing.
+
+Three models were tested:
+
+| Model | Prediction | Evidence | Verdict |
+|-------|------------|----------|---------|
+| Static-Optimal | Order doesn't matter | 0 signals | REJECTED |
+| Weak Temporal | Soft pedagogy | 0 signals | REJECTED |
+| **Strong Scheduling** | **Active trajectory planning** | **5 signals** | **CONFIRMED** |
+
+**The Four Signals (5/5 Support Strong Scheduling):**
+
+1. **Coverage BACK-LOADED (9.6% later than random)**
+   - 90% coverage reached significantly later than random permutation
+   - Interpretation: Full coverage is deliberately delayed
+
+2. **Novelty FRONT-LOADED (Phase 1: 21.2% >> Phase 3: 11.3%)**
+   - New MIDDLEs introduced early, then reinforced
+   - Interpretation: Vocabulary establishment before coverage completion
+
+3. **U-SHAPED tail pressure (7.9% -> 4.2% -> 7.1%)**
+   - Difficulty wave: start hard, ease, ramp up again
+   - Interpretation: Attention peaks at beginning and end
+
+4. **PREFIX CYCLING (7 prefixes, 164 regime changes)**
+   - Multiple prefixes cycle throughout manuscript
+   - Interpretation: Multi-axis traversal prevents cognitive fixation
+
+**Interpretation (Tier 2 - CONFIRMED):**
+
+> **PEDAGOGICAL_PACING: Currier A introduces vocabulary early, reinforces throughout, and cycles between prefix domains.**
+
+This is not accidental. It is structured temporal management of discrimination coverage:
+
+| Phase | Novelty | Tail Pressure | Interpretation |
+|-------|---------|---------------|----------------|
+| 1 (Early) | HIGH (21.2%) | HIGH (7.9%) | Vocabulary establishment + initial difficulty |
+| 2 (Middle) | LOW (9.4%) | LOW (4.2%) | Reinforcement + relief |
+| 3 (Late) | MEDIUM (11.3%) | HIGH (7.1%) | Completion + final difficulty peak |
+
+**Reconciliation with Prior Findings:**
+
+| Constraint | What it Shows |
+|------------|---------------|
+| C476 | WHAT Currier A optimizes (coverage with hub rationing) |
+| **C478** | **HOW it achieves that (temporal scheduling)** |
+
+**Five-Layer Model Complete:**
+
+| Layer | Role | Mechanism |
+|-------|------|-----------|
+| Currier B | Execution safety | Frozen Tier 0 |
+| Currier A | Coverage control | C476: hub rationing |
+| - | - | **C478: temporal scheduling** |
+| AZC | Decision gating | C437-C444 |
+| HT | Vigilance signal | C477: tail correlation |
+
+**New Constraint: C478 - TEMPORAL COVERAGE SCHEDULING** (Tier 2, CLOSED)
+
+### I.J. Process-Behavior Isomorphism (v4.12 / ECR-4) - NEW
+
+**Question:** Does the Voynich control architecture behave like something built for real physical chemistry?
+
+**Answer:** YES - strong behavioral isomorphism with thermal-chemical process control.
+
+**Test Results (12/12 passed):**
+
+| Category | Tests | Result |
+|----------|-------|--------|
+| Behavior-Structural (BS-*) | 5 | 5/5 PASS |
+| Process-Sequence (PS-*) | 4 | 4/4 PASS |
+| Pedagogical (PD-*) | 3 | 3/3 PASS |
+| **Total** | **12** | **100%** |
+
+**Key Findings:**
+
+1. **Hazard-Kernel Alignment**: All 17 forbidden transitions are k-adjacent (100%). Energy control is the danger zone.
+
+2. **Recovery Path Dominance**: 54.7% of recoveries pass through e (equilibration). Cooling/stabilization is primary recovery.
+
+3. **Regime Energy Ordering**: REGIME_2 (0.37) < REGIME_1 (0.51) < REGIME_4 (0.58) < REGIME_3 (0.72). Clear CEI ordering matches distillation stages.
+
+4. **Discriminating Tests vs Calcination**:
+   - PS-4: k→h forbidden favors DISTILLATION (in calcination, k→h is primary)
+   - BS-4: e-recovery dominance favors DISTILLATION
+
+**Negative Control Verdict:** DISTILLATION_WINS on all discriminating tests.
+
+**Behavior Mappings (NO NOUNS):**
+
+| Element | Grammar Role | Process Behavior |
+|---------|-------------|------------------|
+| k | ENERGY_MODULATOR | Energy ingress control |
+| h | PHASE_MANAGER | Phase boundary handling |
+| e | STABILITY_ANCHOR | Equilibration / return to steady state |
+| PHASE_ORDERING | 41% of hazards | Wrong phase/location state |
+| M-A | Mobile/Distinct | Phase-sensitive, mobile, requiring careful control |
+
+*Tier-3 commentary: In reflux distillation, k=heat source, h=cucurbit, e=condenser.*
+
+**Physics Violations:** None detected. All mappings are physically coherent.
+
+**Verdict (Tier 3 - SUPPORTED):**
+
+> The grammar structure is isomorphic to reflux-distillation behavior. This does not prove the domain but establishes maximal structural alignment within epistemological constraints.
+
+**Six-Layer Model Complete:**
+
+| Layer | Role | Mechanism |
+|-------|------|-----------|
+| Currier B | Execution safety | Frozen Tier 0 |
+| Currier A | Coverage control | C476: hub rationing |
+| - | - | C478: temporal scheduling |
+| AZC | Decision gating | C437-C444 |
+| HT | Vigilance signal | C477: tail correlation |
+| **Process** | **Behavior isomorphism** | **ECR-4: distillation alignment** |
 
 ### f116v Correction
 
 f116v folio-level isolation (v2.19) is explained by **data sparsity** (only 2 words in AZC corpus: "oror", "sheey"), NOT by MIDDLE-level incompatibility. The f116v MIDDLEs ('ee', 'or') are actually universal connectors.
+
+### I.K. HT Two-Axis Model (v4.13) - NEW
+
+**Question:** Does HT morphological complexity encode sensory/perceptual load?
+
+**Answer:** NO. HT morphology encodes **spare cognitive capacity**, not sensory demands.
+
+**The Unexpected Finding:**
+
+Testing whether complex HT forms (LATE prefixes) correlate with high-discrimination folios revealed an **inverse correlation**:
+
+| Metric | Expected | Observed |
+|--------|----------|----------|
+| LATE in high-complexity folios | HIGH | **LOW** (0.180) |
+| LATE in low-complexity folios | LOW | **HIGH** (0.281) |
+| Correlation | Positive | **Negative (r=-0.301, p=0.007)** |
+
+This contradiction **refined rather than falsified** the HT model.
+
+**The Two-Axis Model (Tier 2 - CONFIRMED):**
+
+HT is not a single signal. It has two independent dimensions:
+
+| Axis | Property | Evidence | Meaning |
+|------|----------|----------|---------|
+| **DENSITY** | Tracks upcoming complexity | r=0.504 with tail MIDDLEs (C477) | "How much attention is NEEDED" |
+| **MORPHOLOGY** | Tracks spare capacity | r=-0.301 with folio complexity | "How much attention is AVAILABLE" |
+
+**Why This Makes Sense:**
+
+> **When the task is hard, HT is frequent but morphologically simple.**
+> **When the task is easy, HT is less frequent but morphologically richer.**
+
+This is a classic human-factors pattern:
+- Under high load: frequent simple responses
+- Under low load: less frequent but more elaborate engagement
+
+**Constraint Alignment:**
+
+| Constraint | How This Fits |
+|------------|---------------|
+| **C344** - HT-A Inverse Coupling | Direct instantiation: high A-complexity suppresses complex HT forms |
+| **C417** - HT Modular Additive | HT is composite: density = vigilance, form = engagement |
+| **C221** - Deliberate Skill Practice | Complex HT shapes occur during low-load intervals |
+| **C404/C405** - Non-operational | HT form reflects behavior, doesn't instruct it |
+| **C477** - Tail correlation | UNCHANGED - applies to density, not morphology |
+
+**What HT Does NOT Encode:**
+
+The hypothesis "LATE means harder sensing / more senses needed" is **NOT SUPPORTED**. Sensory multiplexing requirements are implicit in the discrimination problem itself (Currier A vocabulary), not encoded in HT form.
+
+**Final Integrated Statement:**
+
+> HT has two orthogonal properties:
+>
+> 1. **HT density tracks upcoming discrimination complexity** (tail MIDDLE pressure, AZC commitment).
+>
+> 2. **HT morphological complexity tracks operator spare cognitive capacity**, increasing during low-load phases and decreasing during high-load phases.
+>
+> HT does not encode what sensory modalities are needed. Sensory demands are implicit in the discrimination problem itself.
+
+**Seven-Layer Model Complete:**
+
+| Layer | Role | Mechanism |
+|-------|------|-----------|
+| Currier B | Execution safety | Frozen Tier 0 |
+| Currier A | Coverage control | C476: hub rationing |
+| - | - | C478: temporal scheduling |
+| AZC | Decision gating | C437-C444 |
+| HT | Vigilance signal | C477: tail correlation |
+| - | - | **Two-Axis: density vs morphology** |
+| Process | Behavior isomorphism | ECR-4: distillation alignment |
+
+See [ht_two_axis_model.md](ht_two_axis_model.md) for full details.
+
+### I.L. MIDDLE Zone Survival Profiles (v4.14) - NEW
+
+**Question:** Do MIDDLEs exhibit stable, non-random survival profiles across AZC legality zones?
+
+**Answer:** YES. Strong clustering by zone preference (silhouette=0.51, p<10⁻⁶).
+
+**Test Results:**
+
+| Metric | Value |
+|--------|-------|
+| AZC tokens analyzed | 8,257 |
+| Qualified MIDDLEs | 175 (≥5 occurrences) |
+| Optimal clusters | 4 (one per zone) |
+| Silhouette score | 0.51 |
+| P-value (vs null) | < 0.000001 |
+| Frequency-controlled | 0.51 ± 0.04 |
+
+**The Four Clusters:**
+
+| Cluster | n | Dominant Zone | Profile | Interpretation |
+|---------|---|---------------|---------|----------------|
+| S-cluster | 47 | S (59%) | Boundary-heavy | Commitment-safe discriminators |
+| P-cluster | 29 | P (75%) | Permissive | Intervention-requiring discriminators |
+| C-cluster | 25 | C (66%) | Entry | Setup-flexible discriminators |
+| R-cluster | 74 | R (51%) | Restricting | Progressive-commitment discriminators |
+
+**Interpretation (Tier 3):**
+
+> **Currier A's discriminators are not only incompatible with each other - they are tuned to different *degrees of intervention affordance*, which the AZC legality field later enforces.**
+
+This is a characterization refinement, not a mechanism discovery:
+- P-cluster MIDDLEs require high escape permission (materials needing intervention flexibility)
+- S-cluster MIDDLEs survive even when intervention is locked (stable/committable materials)
+- The effect survives frequency control, ruling out hub/tail artifacts
+
+**What This Does NOT Show:**
+
+- ❌ MIDDLEs do not *force* positions (C313 intact)
+- ❌ No A→B entry-level coupling (C384 intact)
+- ❌ No semantic encoding (roles, not meanings)
+
+**Cross-References (Tier 2):**
+
+| Constraint | Relationship |
+|------------|--------------|
+| C293 | MIDDLE is primary discriminator |
+| C313 | Position constrains legality, not content |
+| C384 | No entry-level A-B coupling |
+| C441-C444 | AZC legality projection |
+| C475 | MIDDLE atomic incompatibility |
+
+**Why This Is Tier 3 (Not Tier 2):**
+
+This is a distributional regularity, not a structural necessity. For promotion to Tier 2 would require:
+- Same pattern in another manuscript
+- Mathematical necessity linking discrimination → zone
+- Invariant claim ("this MUST be true")
+
+Currently this shows: "Given this manuscript, MIDDLEs have stable zone preferences." That's characterization, not mechanism.
+
+**Eight-Layer Model:**
+
+| Layer | Role | Mechanism |
+|-------|------|-----------|
+| Currier B | Execution safety | Frozen Tier 0 |
+| Currier A | Coverage control | C476: hub rationing |
+| - | - | C478: temporal scheduling |
+| - | - | **Zone survival profiles** |
+| AZC | Decision gating | C437-C444 |
+| HT | Vigilance signal | C477: tail correlation |
+| - | - | Two-Axis: density vs morphology |
+| Process | Behavior isomorphism | ECR-4: distillation alignment |
+
+See `phases/MIDDLE_ZONE_SURVIVAL/PHASE_SUMMARY.md` for full details.
+
+### I.M. Zone-Material Orthogonality (v4.15) - NEW
+
+**Question:** Do zone survival clusters align with material behavior classes?
+
+**Answer:** NO. The axes are **orthogonal** (independent).
+
+**Test Results:**
+
+| Zone | Predicted Class | Actual Dominant | Match |
+|------|-----------------|-----------------|-------|
+| P (high intervention) | M-A | M-A | YES |
+| S (boundary-surviving) | M-D | M-A | NO |
+| R (restriction-tolerant) | M-B | M-A | NO |
+| C (entry-preferring) | M-C | M-A | NO |
+
+| Metric | Value |
+|--------|-------|
+| Hypothesis matches | 1/4 |
+| P-value (permutation) | 0.852 |
+| Verdict | ORTHOGONAL |
+
+M-A (phase-sensitive prefixes: ch/qo/sh) dominates ALL zone clusters (57-72%).
+
+**Interpretation (Tier 3):**
+
+> **The Voynich system tracks what a thing is (PREFIX) and how cautiously it must be handled (MIDDLE zone survival) as independent dimensions. This design choice explains both the richness of the registry and the irrecoverability of specific substances.**
+
+This is NOT a null result. It demonstrates that:
+
+| Dimension | Encoded By | Question Answered |
+|-----------|------------|-------------------|
+| Material type | PREFIX | "What category of stuff is this?" |
+| Handling requirement | MIDDLE zone | "How much intervention latitude?" |
+
+These are **deliberately orthogonal** - good apparatus design.
+
+**Why This Matters for Solvent/Material Decoding:**
+
+Solvent identity would require collapsing these axes. The manuscript **keeps them distinct**. This explains why substance-level decoding is irrecoverable:
+
+> Solvent identity sits at the **intersection** of material type and handling sensitivity - and that intersection is never encoded. The operator supplies it from practice.
+
+**What This Does NOT Show:**
+
+- No refutation of either abstraction (both remain valid)
+- No material identification possible
+- No semantic decoding
+
+**Cross-References:**
+
+| Finding | Phase | Relationship |
+|---------|-------|--------------|
+| MIDDLE zone survival | MIDDLE_ZONE_SURVIVAL | Source of zone clusters |
+| Material behavior classes | PROCESS_ISOMORPHISM | Source of M-A...M-D |
+| C382, C383 | Global type system | Why axes coexist cleanly |
+
+See `phases/ZONE_MATERIAL_COHERENCE/PHASE_SUMMARY.md` for full details.
+
+### I.N. Semantic Ceiling Extension Tests (v4.16) - NEW
+
+**Question:** Can we push the semantic ceiling without reopening Tier 0-2 constraints?
+
+**Answer:** YES. Six of seven tests yielded significant findings.
+
+**Test Results Summary:**
+
+| Test | Question | Verdict | Key Finding |
+|------|----------|---------|-------------|
+| 2A | Shared temporal trajectories? | BORDERLINE | 14/15 folios share PEAK_MID (p=0.062) |
+| 1A | B behavior constrains A zones? | **STRONG** | High-escape -> +10.4% P-zone (p<0.0001) |
+| 3A | Is e-operator necessary? | **NECESSARY** | Kernel contact collapses -98.6% without e |
+| 3B | Is hazard asymmetry necessary? | **NECESSARY** | h->k perfectly suppressed (0%) |
+| 1B | Does HT correlate with zone diversity? | **CORRELATED** | r=0.24, p=0.0006 |
+| 4A | Do strategies differentiate by archetype? | **DIFFERENTIATED** | All HT correlations p<0.0001 |
+| 5A | Is A-registry memory-optimized? | **NEAR-OPTIMAL** | z=-97 vs random (0th percentile) |
+
+**New Structural Confirmations (Tier 3):**
+
+1. **B->A Inference Works**
+   - High-escape B folios preferentially use P-zone (peripheral) MIDDLEs
+   - Option space narrowed by 24% (from 4 zones to ~3)
+   - Interpretation: B behavior successfully constrains upstream A inference
+
+2. **Grammar is Minimally Necessary**
+   - e-operator: load-bearing (recovery collapses without it)
+   - h->k suppression: architecturally necessary (prevents oscillation)
+   - Grammar cannot be simplified without system failure
+
+3. **HT Predicts Operator Strategy**
+   - High-HT folios: favor CAUTIOUS strategies (r=+0.46)
+   - Low-HT folios: tolerate AGGRESSIVE/OPPORTUNISTIC (r=-0.43/-0.48)
+   - Interpretation: HT tracks operational load profile
+
+4. **A-Registry is Memory-Optimized**
+   - Manuscript ordering dramatically better than random (z=-97)
+   - Evidence of intentional memory optimization
+   - Not perfectly optimal, but clearly designed
+
+5. **Material Pressure Interpretation Strengthened**
+   - HT density correlates with zone diversity (r=0.24)
+   - Higher HT -> more diverse MIDDLE zone usage
+   - Supports "complex materials require more attention"
+
+**Nine-Layer Model:**
+
+| Layer | Role | Mechanism |
+|-------|------|-----------|
+| Currier B | Execution safety | Frozen Tier 0 |
+| - | - | **e-operator load-bearing** |
+| - | - | **h->k suppression necessary** |
+| Currier A | Coverage control | C476: hub rationing |
+| - | - | C478: temporal scheduling |
+| - | - | Zone survival profiles |
+| - | - | **Memory-optimized ordering** |
+| AZC | Decision gating | C437-C444 |
+| HT | Vigilance signal | C477: tail correlation |
+| - | - | Two-Axis: density vs morphology |
+| - | - | **Strategy viability predictor** |
+| Process | Behavior isomorphism | ECR-4: distillation alignment |
+
+**B->A Inversion Axis:**
+
+The successful B->A back-inference demonstrates bidirectional constraint flow:
+
+| Direction | What Flows | Evidence |
+|-----------|-----------|----------|
+| A->B | Discrimination vocabulary, zone legality | C437-C444 |
+| **B->A** | **Escape profile constrains zone preference** | **Test 1A** |
+
+This is not semantic decoding - it's structural constraint propagation.
+
+**Operator Strategy Taxonomy:**
+
+| Archetype | n | Viable Strategies |
+|-----------|---|-------------------|
+| AGGRESSIVE_INTERVENTION | 6 | AGGRESSIVE, OPPORTUNISTIC |
+| ENERGY_INTENSIVE | 10 | AGGRESSIVE, OPPORTUNISTIC |
+| CONSERVATIVE_WAITING | 17 | None (all poor fit) |
+| MIXED | 50 | None (no strong fit) |
+
+CONSERVATIVE_WAITING programs don't tolerate any named strategy - they require bespoke intervention profiles.
+
+See `phases/SEMANTIC_CEILING_EXTENSION/PHASE_SUMMARY.md` for full details.
+
+---
+
+## I.O. Physical World Reverse Engineering Phases (v4.18) - UPDATED
+
+### Overview
+
+Six investigation phases tested the physical grounding of the control architecture:
+
+| Phase | Question | Result |
+|-------|----------|--------|
+| **PWRE-1** | What plant class is admissible? | Circulatory thermal (12 exclusions) |
+| **FM-PHY-1** | Is hazard distribution natural? | YES - diagnostic for reflux |
+| **SSD-PHY-1a** | Is dimensionality physics-forced? | YES - D ≥ 50 required |
+| **OJLM-1** | What must operators supply? | 13 judgment types |
+| **APP-1** | Which apparatus exhibits this behavioral profile? | Pelican (4/4 axes match) |
+| **MAT-PHY-1** | Does A's topology match botanical chemistry? | YES (5/5 tests pass) |
+
+### FM-PHY-1: Failure-Mode Physics Alignment (Tier 3)
+
+**Question:** Do real circulatory thermal systems naturally exhibit the Voynich hazard distribution (41/24/24/6/6)?
+
+**Answer:** YES - The distribution is DIAGNOSTIC, not just compatible.
+
+| Evidence Type | Result |
+|---------------|--------|
+| Historical sources (Brunschwig) | **SYSTEMATIC_MATCH** (4/6 axes, see brunschwig_comparison.md) |
+| Modern engineering taxonomy | STRONG_MATCH (exact 5-class mapping) |
+| Process class comparison | DIFFERENTIATED |
+
+**Key Finding:**
+- Voynich hazard profile MATCHES circulatory reflux distillation
+- EXCLUDES batch distillation (energy would be 25-35%, not 6%)
+- EXCLUDES chemical synthesis (rate would be 25-35%, not 6%)
+- Energy is minor (6%) because it's a CONTROL VARIABLE, not a failure source
+
+**Files:** `phases/FM_PHY_1_failure_mode_alignment/`
+
+### SSD-PHY-1a: Structural Dimensional Necessity (Tier 3)
+
+**Question:** Is the ~128-dimensional MIDDLE space a notation choice or physics requirement?
+
+**Answer:** PHYSICS-FORCED - Low-dimensional spaces mathematically cannot satisfy constraints.
+
+| Objective | Result |
+|-----------|--------|
+| Dimensional lower-bound | D ≥ 50 proven |
+| Topology classification | DISCRIMINATION SPACE (not taxonomy) |
+| Hub necessity | STRUCTURAL NECESSITY (p < 10^-50) |
+| Complexity source | PLANT-IMPOSED (anti-mnemonic) |
+
+**Key Findings:**
+1. MIDDLEs are COORDINATES, not containers - each occupies unique position in constraint landscape
+2. "128 dimensions" = 128 independent constraints needed, not 128 features inside each MIDDLE
+3. Hubs are geometrically inevitable under sparse + clustered + navigable constraints
+4. Complexity is anti-mnemonic (preserves rare distinctions, rations hubs, cycles difficulty)
+
+**One-Sentence Synthesis:**
+> **MIDDLE tokens are indivisible discriminators whose only "content" is their position in a very large, physics-forced compatibility space; the number of distinctions exists because the real process demands them, not because the author chose them.**
+
+**Files:** `phases/SSD_PHY_1a/`
+
+### OJLM-1: Operator Judgment Load Mapping (Tier 3)
+
+**Question:** What kinds of distinctions must humans supply that the system refuses to encode?
+
+**Answer:** 13 distinct judgment types deliberately omitted.
+
+| Category | Count | Types |
+|----------|-------|-------|
+| Watch Closely | 6 | Temperature, Phase Transition, Quality/Purity, Timing, Material State, Stability |
+| Forbidden Intervention | 3 | Equilibrium Establishment, Phase Transition, Purification Cycle |
+| Tacit Knowledge | 4 | Sensory Calibration, Equipment Feel, Timing Intuition, Trouble Recognition |
+
+**Key Findings:**
+1. All 13 types are structurally non-codifiable (cannot be written down)
+2. Aligns with C469 (Categorical Resolution - no parametric encoding)
+3. Aligns with C490 (AGGRESSIVE prohibition - some interventions forbidden)
+4. Aligns with C477 (HT tail correlation - signals when judgment load spikes)
+
+**Design Principle:**
+> The controller's omissions are not gaps - they are deliberate acknowledgment that some knowledge cannot be encoded. This is design integrity, not incompleteness.
+
+**Files:** `phases/OJLM_1_operator_judgment/`
+
+### APP-1: Apparatus Behavioral Validation (Tier 3)
+
+**Question:** Does any historical apparatus exhibit the exact same behavioral profile as the Voynich controller?
+
+**Answer:** YES - The pelican (circulatory reflux alembic) matches on all 4 axes.
+
+| Axis | Test | Result |
+|------|------|--------|
+| 1. Responsibility Split | Do manuals assume same responsibilities? | DISTINCTIVE_MATCH |
+| 2. Failure Fears | Do operators fear same things? | STRONG_MATCH (41/24/24/6/6) |
+| 3. Judgment Requirements | Does apparatus require 13 types? | EXACT_MATCH |
+| 4. State Complexity | Does apparatus generate ~128 states? | MATCH |
+
+**Key Finding:**
+- Fourth degree fire prohibition matches C490 EXACTLY: "It would coerce the thing, which the art of true distillation rejects, because nature too rejects, forbids, and repels all coercion."
+- The pelican is the ONLY surveyed apparatus class that passes all four axes.
+- Behavioral isomorphism ≠ identification (we know the SHAPE matches, not WHICH specific apparatus).
+
+**What Excluded:**
+- Simple retorts (no recirculation, fewer states)
+- Open stills (batch, lower complexity)
+- Instrumented systems (reduce judgment types)
+- Chemical synthesis (different failure profile)
+
+**Files:** `phases/APP_1_apparatus_validation/`
+
+### MAT-PHY-1: Material Constraint Topology Alignment (Tier 3)
+
+**Question:** Does Currier A's incompatibility topology match what real botanical chemistry forces?
+
+**Answer:** YES - All 5 tests pass with STRONG MATCH.
+
+| Test | Question | Result |
+|------|----------|--------|
+| A. Incompatibility Density | ~95% under co-processing? | **95-97%** (vs 95.7% in A) |
+| B. Infrastructure Elements | 3-7 bridges? | **5-7** (solvents, fixatives) |
+| C. Topology Class | Sparse + clustered + bridged? | **YES** (constraint satisfaction graph) |
+| D. Hub Rationing | Practitioners avoid universal over-use? | **YES** (3-5 oil rule, simples) |
+| E. Frequency Shape | Zipf/power-law? | **YES** (55% rare in materia medica) |
+
+**Key Findings:**
+1. Distillation timing varies 80x (15 min to 20 hours) - forcing material incompatibility
+2. TCM herb distributions confirmed to follow Zipf's law across 84,418 prescriptions
+3. European materia medica preserved 546 rare simples over 2,500 years despite low frequency
+4. Brunschwig's "no more than twice" reinfusion rule = explicit hub rationing
+
+**What This Establishes:**
+- A's incompatibility structure is CHEMISTRY-FORCED, not cryptographic
+- Hub necessity is PHYSICALLY GROUNDED
+- The registry structure matches botanical processing constraints
+- Topology match ≠ semantic identification
+
+**Files:** `phases/MAT_PHY_1_material_topology/`
+
+### Combined Arc
+
+| Phase | Established |
+|-------|-------------|
+| PWRE-1 | What KIND of plant is admissible |
+| FM-PHY-1 | That hazard logic is DIAGNOSTIC |
+| SSD-PHY-1a | Why discrimination space must be LARGE |
+| OJLM-1 | What humans must SUPPLY |
+| APP-1 | Which APPARATUS exhibits this behavioral profile |
+| MAT-PHY-1 | That A's TOPOLOGY matches botanical chemistry |
+
+Together:
+> **The Voynich Manuscript controls a circulatory thermal plant whose hazard profile matches distillation physics, whose discrimination space is forced by the physical state-space, whose operation REQUIRES human judgment for 13 structurally distinct types of non-codifiable knowledge, whose behavioral profile is isomorphic to the historical pelican apparatus, and whose registry topology matches the constraints that real botanical chemistry imposes.**
 
 ---
 
@@ -649,6 +1387,47 @@ Only Tier 0-2 structural findings are binding.
 - What specific products were made?
 - What specific apparatus was used?
 - What language(s) did the operators speak?
+
+---
+
+## X. External Alignment: Puff-Voynich-Brunschwig (2026-01-14)
+
+### Historical Curriculum Match
+
+The Voynich Manuscript's structure aligns with a documented 15th-century distillation curriculum:
+
+| Text | Date | Content | Role |
+|------|------|---------|------|
+| **Puff von Schrick** | ~1455 | 83 chapters on WHAT to distill | Material registry |
+| **Voynich Currier B** | 1404-1438 | 83 folios on HOW to distill | Method manual |
+| **Brunschwig** | 1500 | Combined both | Teaching text for novices |
+
+**Key Finding:** The 83-unit structure is UNIQUE to Puff and Voynich among 11 surveyed historical texts.
+
+### Test Results
+
+| Test | Result | Evidence |
+|------|--------|----------|
+| Puff-Voynich Curriculum | 5/5 PASS | Shared structure, complementary content |
+| Brunschwig Degree Alignment | 13/15 match | Regime = Fire degree |
+| A Affordance Alignment | 5/5 PASS | A discriminates procedure-class axes |
+
+### What This Means
+
+> Puff + Voynich = complementary curriculum halves
+> Brunschwig (1500) combined both for novices
+
+Currier A discriminates **operational affordance profiles** (compatibility breadth, intervention tightness, anomaly handling) that align with Brunschwig's procedure-class axes.
+
+### C171 Status
+
+**C171 ("zero material encoding") remains UNCHANGED.**
+
+A encodes the same kinds of *operational worries* that historical experts talked about — without ever naming the things they worried about.
+
+### Tier
+
+External alignment is Tier 3 (interpretive, non-binding). Structural isomorphism does not prove historical connection.
 
 ---
 

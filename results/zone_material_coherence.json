@@ -1,0 +1,91 @@
+{
+  "phase": "ZONE_MATERIAL_COHERENCE",
+  "tier": 3,
+  "question": "Do zone survival clusters align with material behavior classes?",
+  "epistemic_safeguard": "Positive result does not imply semantic encoding or Tier 2 necessity",
+  "data": {
+    "zone_cluster_sizes": {
+      "R": 52,
+      "C": 35,
+      "P": 33,
+      "S": 34
+    },
+    "currier_a_pairs": 23630,
+    "zone_sample_sizes": {
+      "C": 706,
+      "P": 3253,
+      "R": 5204,
+      "S": 500
+    }
+  },
+  "zone_profiles": {
+    "C": {
+      "M-A": 0.7223796033994334,
+      "M-B": 0.1359773371104816,
+      "M-C": 0.0,
+      "M-D": 0.141643059490085
+    },
+    "P": {
+      "M-A": 0.6643098678143252,
+      "M-B": 0.00768521364893944,
+      "M-C": 0.263449123885644,
+      "M-D": 0.0645557946510913
+    },
+    "R": {
+      "M-A": 0.5710991544965411,
+      "M-B": 0.24346656418139892,
+      "M-C": 0.07167563412759416,
+      "M-D": 0.1137586471944658
+    },
+    "S": {
+      "M-A": 0.598,
+      "M-B": 0.314,
+      "M-C": 0.002,
+      "M-D": 0.086
+    }
+  },
+  "hypothesis_test": {
+    "P": {
+      "predicted_class": "M-A",
+      "actual_dominant": "M-A",
+      "predicted_match": true,
+      "observed_proportion": 0.6643098678143252,
+      "baseline_proportion": 0.5898595943837753,
+      "enrichment_ratio": 1.1262169406743785,
+      "n": 3253
+    },
+    "S": {
+      "predicted_class": "M-D",
+      "actual_dominant": "M-A",
+      "predicted_match": false,
+      "observed_proportion": 0.086,
+      "baseline_proportion": 0.09843937575030012,
+      "enrichment_ratio": 0.8736341463414633,
+      "n": 500
+    },
+    "R": {
+      "predicted_class": "M-B",
+      "actual_dominant": "M-A",
+      "predicted_match": false,
+      "observed_proportion": 0.24346656418139892,
+      "baseline_proportion": 0.06234581744785826,
+      "enrichment_ratio": 3.9050985959886972,
+      "n": 5204
+    },
+    "C": {
+      "predicted_class": "M-C",
+      "actual_dominant": "M-A",
+      "predicted_match": false,
+      "observed_proportion": 0.0,
+      "baseline_proportion": 0.13743440884224628,
+      "enrichment_ratio": 0.0,
+      "n": 706
+    }
+  },
+  "permutation_test": {
+    "observed_matches": 1,
+    "null_mean_matches": 0.942,
+    "p_value": 0.852
+  },
+  "verdict": "ORTHOGONAL"
+}

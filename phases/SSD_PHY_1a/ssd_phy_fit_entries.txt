@@ -1,0 +1,36 @@
+# SSD-PHY-1a FIT Entries
+
+## Summary
+
+SSD-PHY-1a produced **negative proofs** and **structural characterizations**, not semantic fits.
+
+No new FIT entries are warranted because:
+1. Lower-bound proof establishes what is IMPOSSIBLE, not what IS
+2. Topology classification describes geometry, not content
+3. Hub necessity proves structural inevitability, not identity
+4. Cognitive/physical separation establishes source, not meaning
+
+## Candidate Findings (NOT promoted)
+
+The following could be considered for future promotion if independent validation supports them:
+
+### F-SSD-001 (CANDIDATE, NOT PROMOTED)
+**Statement:** The MIDDLE discrimination space requires D ≥ 50 categorical dimensions.
+**Status:** Tier 3 — requires quantitative validation
+**Reason for non-promotion:** Based on semi-formal argument, not rigorous proof
+
+### F-SSD-002 (CANDIDATE, NOT PROMOTED)
+**Statement:** Hub MIDDLEs are structurally inevitable under sparse + clustered + navigable constraints.
+**Status:** Tier 3 — structural argument, not empirical test
+**Reason for non-promotion:** No direct falsifiable test performed
+
+### F-SSD-003 (CANDIDATE, NOT PROMOTED)
+**Statement:** The discrimination space complexity is plant-imposed, not notation-driven.
+**Status:** Tier 3 — based on anti-mnemonic property assessment
+**Reason for non-promotion:** Requires independent cognitive science validation
+
+## Recommendation
+
+No immediate promotions. These findings strengthen the architectural understanding but do not add new semantic content to the FIT table.
+
+If expert review validates the dimensional lower-bound argument, F-SSD-001 could be considered for Tier-2 promotion as a structural constraint.

@@ -1,0 +1,71 @@
+{
+  "test_f": {
+    "n_both": 5,
+    "n_visual_only": 20,
+    "n_quire_only": 1,
+    "n_neither": 2,
+    "odds_ratio": 0.5,
+    "fisher_p": 0.5299145299145299,
+    "spearman_rho": -0.1005037815259212,
+    "spearman_p": 0.6108496788189716,
+    "verdict": "FAIL",
+    "interpretation": "No alignment between visual shifts and quire boundaries"
+  },
+  "test_g": {
+    "n_runs": 26,
+    "n_multi_folio_runs": 2,
+    "within_run_pairs": 4,
+    "between_run_pairs": 25,
+    "within_run_mean": 0.1827639751552795,
+    "between_run_mean": 0.18725434694221185,
+    "mann_whitney_u": 43.0,
+    "mann_whitney_p": 0.676266262473159,
+    "effect_size": -0.004490371786932346,
+    "verdict": "FAIL",
+    "interpretation": "No scaffolding effect detected"
+  },
+  "test_h": {
+    "fold_symmetry": {
+      "matches": 0,
+      "total": 14,
+      "expected": 1.4,
+      "p_value": 1.0,
+      "signal": false
+    },
+    "recto_verso": {
+      "recto_mean": 4.090909090909091,
+      "verso_mean": 4.666666666666667,
+      "p_value": 0.6990911524195114,
+      "signal": false
+    },
+    "position_cluster": {
+      "spearman_rho": 0.13158141451797006,
+      "p_value": 0.49625987888257483,
+      "signal": false
+    },
+    "periodicity": {
+      "2": {
+        "h_stat": 0.03119852075979436,
+        "p_value": 0.8597982188731089,
+        "signal": false
+      },
+      "3": {
+        "h_stat": 1.7380960385498894,
+        "p_value": 0.4193505729485558,
+        "signal": false
+      },
+      "4": {
+        "h_stat": 0.5645486636409371,
+        "p_value": 0.9044979721507576,
+        "signal": false
+      },
+      "5": {
+        "h_stat": 10.304555387460065,
+        "p_value": 0.03559837373485976,
+        "signal": true
+      }
+    },
+    "verdict": "NO_SIGNAL",
+    "interpretation": "No fold/overlay/composite/periodic geometric signals detected"
+  }
+}

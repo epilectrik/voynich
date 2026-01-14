@@ -1,0 +1,106 @@
+{
+  "test": "2A_TEMPORAL_TRAJECTORIES",
+  "tier": "3-4",
+  "question": "Do B programs share conserved temporal hazard trajectories?",
+  "data": {
+    "folios_analyzed": 15,
+    "folio_list": [
+      "f105r",
+      "f105v",
+      "f111r",
+      "f111v",
+      "f115v",
+      "f33r",
+      "f48r",
+      "f57r",
+      "f76r",
+      "f83v",
+      "f85v2",
+      "f86v4",
+      "f94v",
+      "f95r2",
+      "f95v2"
+    ]
+  },
+  "conservation_test": {
+    "early_mean": 0.17899047942831012,
+    "mid_mean": 0.2107145846322543,
+    "late_mean": 0.19382515608408438,
+    "f_statistic": 0.5144298792692116,
+    "p_value": 0.6015593859599916,
+    "conserved": false
+  },
+  "clustering": {
+    "n_clusters": 2,
+    "silhouette": 0.3498662327908901,
+    "clusters": {
+      "1": {
+        "size": 14,
+        "folios": [
+          "f105r",
+          "f105v",
+          "f111r",
+          "f111v",
+          "f115v",
+          "f33r",
+          "f48r",
+          "f57r",
+          "f76r",
+          "f83v",
+          "f86v4",
+          "f94v",
+          "f95r2",
+          "f95v2"
+        ],
+        "temporal_pattern": {
+          "early": {
+            "mean_hazard_density": 0.18041187730955308,
+            "mean_kernel_ratio": 0.6735667737578036,
+            "dominant_hazard": "COMPOSITION_JUMP"
+          },
+          "mid": {
+            "mean_hazard_density": 0.20899073461680923,
+            "mean_kernel_ratio": 0.6381081081081081,
+            "dominant_hazard": "COMPOSITION_JUMP"
+          },
+          "late": {
+            "mean_hazard_density": 0.19700882927985588,
+            "mean_kernel_ratio": 0,
+            "dominant_hazard": "COMPOSITION_JUMP"
+          }
+        },
+        "trajectory_shape": "PEAK_MID"
+      },
+      "2": {
+        "size": 1,
+        "folios": [
+          "f85v2"
+        ],
+        "temporal_pattern": {
+          "early": {
+            "mean_hazard_density": 0.1590909090909091,
+            "mean_kernel_ratio": 0.38,
+            "dominant_hazard": "CONTAINMENT_TIMING"
+          },
+          "mid": {
+            "mean_hazard_density": 0.23484848484848486,
+            "mean_kernel_ratio": 0,
+            "dominant_hazard": "RATE_MISMATCH"
+          },
+          "late": {
+            "mean_hazard_density": 0.14925373134328357,
+            "mean_kernel_ratio": 0,
+            "dominant_hazard": "RATE_MISMATCH"
+          }
+        },
+        "trajectory_shape": "PEAK_MID"
+      }
+    }
+  },
+  "permutation_test": {
+    "observed_silhouette": 0.3498662327908901,
+    "null_mean": -0.02550398826520331,
+    "p_value": 0.062
+  },
+  "verdict": "BORDERLINE_ARCHETYPES"
+}

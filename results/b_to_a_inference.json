@@ -1,0 +1,144 @@
+{
+  "test": "1A_B_TO_A_INFERENCE",
+  "tier": "3-4",
+  "question": "Do distinctive B behaviors correlate with MIDDLE zone distributions?",
+  "data": {
+    "middles_with_zones": 351,
+    "b_folios_analyzed": 83,
+    "mean_mapping_coverage": 0.7527081067654918
+  },
+  "categories": {
+    "high_brittleness": 22,
+    "low_brittleness": 22,
+    "high_hazard": 21,
+    "low_hazard": 21,
+    "high_escape": 21,
+    "low_escape": 21
+  },
+  "differentiation_tests": {
+    "brittleness": {
+      "status": "tested",
+      "n_high": 22,
+      "n_low": 22,
+      "zone_tests": {
+        "C": {
+          "high_mean": 0.1601548239015476,
+          "low_mean": 0.2032071979092126,
+          "t_statistic": -2.637958876589571,
+          "p_value": 0.011647131889695683,
+          "effect_size": -0.7540193906438438
+        },
+        "P": {
+          "high_mean": 0.2537266979163213,
+          "low_mean": 0.24331722778173412,
+          "t_statistic": 0.5473773954561562,
+          "p_value": 0.5870166050669472,
+          "effect_size": 0.16832499535873138
+        },
+        "R": {
+          "high_mean": 0.5572607919327776,
+          "low_mean": 0.5005095107897386,
+          "t_statistic": 2.5686504617819397,
+          "p_value": 0.013853823046325098,
+          "effect_size": 0.7369295353996426
+        },
+        "S": {
+          "high_mean": 0.028857686249353608,
+          "low_mean": 0.05296606351931454,
+          "t_statistic": -3.242329077990335,
+          "p_value": 0.0023252559237613548,
+          "effect_size": -0.8948596409720886
+        }
+      },
+      "significant_zones": [
+        "C",
+        "R",
+        "S"
+      ],
+      "any_significant": true
+    },
+    "hazard": {
+      "status": "tested",
+      "n_high": 21,
+      "n_low": 21,
+      "zone_tests": {
+        "C": {
+          "high_mean": 0.16430423619684054,
+          "low_mean": 0.19104301736918647,
+          "t_statistic": -1.542952660367364,
+          "p_value": 0.13071751475046728,
+          "effect_size": -0.474022023111705
+        },
+        "P": {
+          "high_mean": 0.2647685964844107,
+          "low_mean": 0.22858920646344677,
+          "t_statistic": 2.004000317131993,
+          "p_value": 0.051874473556009826,
+          "effect_size": 0.6041188817955833
+        },
+        "R": {
+          "high_mean": 0.5425806146997876,
+          "low_mean": 0.5392744681457247,
+          "t_statistic": 0.18651121729550363,
+          "p_value": 0.8529866133169102,
+          "effect_size": 0.05895439598829717
+        },
+        "S": {
+          "high_mean": 0.02834655261896123,
+          "low_mean": 0.04109330802164208,
+          "t_statistic": -1.7001638592303434,
+          "p_value": 0.09686437125692941,
+          "effect_size": -0.5192062740748821
+        }
+      },
+      "significant_zones": [],
+      "any_significant": false
+    },
+    "escape": {
+      "status": "tested",
+      "n_high": 21,
+      "n_low": 21,
+      "zone_tests": {
+        "C": {
+          "high_mean": 0.13260199852309343,
+          "low_mean": 0.21446906534760563,
+          "t_statistic": -6.011804522902179,
+          "p_value": 4.54921800645081e-07,
+          "effect_size": -1.3779177510952958
+        },
+        "P": {
+          "high_mean": 0.3206343218008473,
+          "low_mean": 0.21716019301864992,
+          "t_statistic": 5.394295389802742,
+          "p_value": 3.3464437201148886e-06,
+          "effect_size": 1.2978683838817455
+        },
+        "R": {
+          "high_mean": 0.522666327914912,
+          "low_mean": 0.5112137770877063,
+          "t_statistic": 0.5332232944972148,
+          "p_value": 0.5968295132606583,
+          "effect_size": 0.16802389684950328
+        },
+        "S": {
+          "high_mean": 0.024097351761147308,
+          "low_mean": 0.05715696454603818,
+          "t_statistic": -4.9143228664393845,
+          "p_value": 1.5551219243048016e-05,
+          "effect_size": -1.2271380549497362
+        }
+      },
+      "significant_zones": [
+        "C",
+        "P",
+        "S"
+      ],
+      "any_significant": true
+    }
+  },
+  "significant_contrasts": [
+    "brittleness",
+    "escape"
+  ],
+  "verdict": "STRONG_DIFFERENTIATION"
+}

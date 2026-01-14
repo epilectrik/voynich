@@ -1,0 +1,32 @@
+{
+  "test1": {
+    "status": "COMPLETE",
+    "n": 774,
+    "rho_entropy": 0.18469092894737496,
+    "p_entropy": 2.2848041323003155e-07,
+    "rho_diversity": -0.09989350729351087,
+    "p_diversity": 0.005409308381394054,
+    "rho_partial": 0.3952955828450369,
+    "p_partial": 2.3708446745860467e-30,
+    "interpretation": "INCONCLUSIVE"
+  },
+  "test2": {
+    "status": "COMPLETE",
+    "n": 34,
+    "rho_entropy": 0.3567530340063379,
+    "p_entropy": 0.038349007614100365,
+    "rho_ttr": 0.10192943828752511,
+    "p_ttr": 0.5662304186833402,
+    "interpretation": "REFINES_C254"
+  },
+  "test3": {
+    "status": "INSUFFICIENT_DATA",
+    "n_collisions": 0
+  },
+  "survivor_stats": {
+    "n_lines": 1575,
+    "mean_survivors": 23.25015873015873,
+    "median_survivors": 22.0,
+    "max_survivors": 89
+  }
+}

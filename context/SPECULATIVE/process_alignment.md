@@ -43,15 +43,20 @@ Common signature: CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL
 
 ## Historical Pattern Alignment
 
+**Status:** SYSTEMATIC_MATCH (2026-01-13)
+
+See [brunschwig_comparison.md](brunschwig_comparison.md) for full 6-axis comparison with primary source quotes.
+
 | Voynich Feature | Historical Match | Alignment |
 |-----------------|------------------|-----------|
-| 49 instruction classes | Brunschwig's 4 degrees of fire | STRONG |
+| 49 instruction classes | Brunschwig's 4 degrees × 10 methods = 40 | STRONG |
 | 17 forbidden transitions | "Fourth degree coerces—reject it" | STRONG |
-| 8 recipe families | Antidotaria procedures | STRONG |
-| 0 material encoding | Apparatus manuals omit feedstock | STRONG |
-| Expert knowledge assumed | Guild training model | STRONG |
-| Kernel control points | Process control theory | STRONG |
-| Local continuity | Codex organization | STRONG |
+| 89% reversibility | "may happen no more than twice" | STRONG |
+| Material-apparatus separation | Three-part disjoint structure | STRONG |
+| Sensory hierarchy | Finger test, smell test, thumbnail test | STRONG |
+| Expert audience | Brunschwig targets novices (INFORMATIVE MISMATCH) | DIFFERENTIATED |
+
+**Axis Scores:** 4 MATCH, 1 PARTIAL, 1 MISMATCH (informative)
 
 7 STRONG alignments, 4 MODERATE across 12 patterns.
 

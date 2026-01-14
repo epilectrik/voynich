@@ -1,0 +1,400 @@
+# ============================================================
+# CASC: Currier A Structural Contract
+# Version: 1.0
+# ============================================================
+#
+# This is a DERIVED, READ-ONLY specification.
+# It introduces NO NEW CLAIMS.
+# Constraints remain authoritative.
+# Do not edit without constraint update.
+#
+# Purpose: Shallow interface to Currier A structure for
+# AI reasoning, validation, synthesis, and tooling.
+#
+# ============================================================
+
+meta:
+  name: "Currier A Structural Contract"
+  acronym: "CASC"
+  version: "1.0"
+  date: "2026-01-13"
+  status: "LOCKED"
+  derived_from: "Tier-2 constraints only"
+  governance: |
+    CASC is NOT authoritative. Constraints are authoritative.
+    CASC is a convenience layer for tooling and AI comprehension.
+    Do not edit CASC without updating source constraints first.
+
+# ============================================================
+# SCOPE & GUARANTEES
+# ============================================================
+scope:
+  system: "Currier A"
+  coverage_under_b_grammar: "13.6%"  # C224
+  folio_count: 114  # C272
+  physical_separation: "complete (0 folios shared with B)"  # C272
+  sections: ["H", "P", "T"]  # C232, C260
+  token_density: "0.35x B density"  # C228
+
+guarantees:
+  - id: "LINE_ATOMIC"
+    statement: "Each line is an independent unit"
+    evidence: "Median 3 tokens/line, MI=0 across lines"
+    provenance: "C233"
+
+  - id: "POSITION_FREE"
+    statement: "No positional grammar within lines"
+    evidence: "Zero JS divergence between positions"
+    provenance: "C234"
+
+  - id: "NON_SEQUENTIAL"
+    statement: "No generative grammar exists"
+    evidence: "2.1% transition validity, silhouette=0.049"
+    provenance: "C225, C230, C231, C240"
+
+  - id: "FLAT_REGISTRY"
+    statement: "Not hierarchical"
+    evidence: "Zero vocabulary overlap between markers"
+    provenance: "C236"
+
+# ============================================================
+# RECORD TYPES (C484 bifurcation)
+# ============================================================
+record_types:
+  control_operator:
+    description: "Meta-structural markers for registry scope/mode"
+    token_count: 1
+    frequency: "0.6% (10 instances)"
+    vocabulary: "90% disjoint from registry entries"
+    missing_prefixes: ["ch-", "qo-"]
+    overrepresented_prefixes: ["yd-", "so-", "ke-", "sa-"]
+    azc_participation: false
+    ht_involvement: false
+    positional_bias:
+      boundary_enriched: true
+      p_value: 0.0099
+      folio_start_rate: "30%"
+      folio_end_rate: "30%"
+    function: "Operate on registry organization, not content"
+    provenance: "C484"
+
+  registry_entry:
+    description: "Compound constraint bundles specifying discriminations"
+    token_count: "2+"
+    minimum_size: 2
+    frequency: "99.4%"
+    azc_participation: true
+    batch_processing: true
+    function: "Define fine distinctions at complexity frontier"
+    provenance: "C482, C484"
+
+# ============================================================
+# MORPHOLOGY (compositional structure)
+# ============================================================
+morphology:
+  decomposition: "PREFIX + SISTER? + MIDDLE + SUFFIX + ARTICULATOR?"
+  combination_count: 897  # C268
+  provenance: "C267, C278"
+
+  prefix:
+    families: ["ch", "sh", "ok", "ot", "da", "qo", "ol", "ct"]
+    count: 8
+    function: "Control-flow participation / functional type marker"
+    mutual_exclusion: true
+    semantic_meaning: false  # Markers, not categories
+    provenance: "C235, C466-C467"
+
+  sister:
+    pairs:
+      - ["ch", "sh"]
+      - ["ok", "ot"]
+    function: "Operational mode (precision vs tolerance)"
+    equivalent_slots: true
+    anticorrelation: "rho=-0.326"
+    provenance: "C408, C412"
+
+  middle:
+    count: 1184
+    prefix_exclusive_rate: "80% (947 MIDDLEs)"
+    shared_rate: "20% (237 MIDDLEs)"
+    universal_count: 27  # Appear in 6+ prefixes
+    top_30_coverage: "67.6% of usage"
+    function: "Variant discriminator / compatibility carrier"
+    essentiality: "Primary discriminator (402 unique distinctions)"
+    entropy: "6.70 bits (65.6% of maximum)"
+    incompatibility_rate: "95.7% of pairs are illegal"  # C475
+    provenance: "C293, C423, C475"
+
+  suffix:
+    count: 25
+    universal_rate: "22/25 appear in 6+ prefix classes"
+    function: "Decision archetype (phase-indexed)"
+    provenance: "C269, C277"
+
+  articulator:
+    frequency: "~20% of tokens"
+    forms: ["yk-", "yt-", "kch-"]
+    discriminative: false
+    unique_distinctions: 0  # C292 ablation test
+    function: "Expressive refinement only"
+    section_concentrated: true
+    provenance: "C291, C292"
+
+# ============================================================
+# LINE STRUCTURE
+# ============================================================
+line_structure:
+  atomicity:
+    statement: "Each line is independent unit"
+    median_tokens: 3
+    mutual_information_across_lines: 0
+    provenance: "C233"
+
+  minimum_size:
+    control_operators: 1
+    registry_entries: 2
+    provenance: "C484"
+
+  batch_semantics:
+    enabled: true
+    description: "Multiple items co-processed as compound input"
+    b_invariance: "B structure invariant to A line length"
+    test_result: "p=1.0 (all A categories map to same B folios)"
+    provenance: "C482"
+
+  repetition:
+    frequency: "64.1% of entries"
+    bounds: [2, 6]
+    distribution:
+      "2x": 416
+      "3x": 424
+      "4x": 148
+      "5x": 20
+      "6x": 5
+    mean: 2.79
+    type: "ordinal emphasis (marked vs unmarked)"
+    magnitude_semantics: false  # 2x vs 3x has no downstream effect
+    intra_record_only: true
+    cross_entry_arithmetic: false
+    blocks_unique: true  # 100% unique, 0% reuse
+    section_exclusive: true
+    provenance: "C250-C253, C255, C483"
+
+  da_articulation:
+    function: "Internal sub-record boundary punctuation"
+    separation_rate: "75.1% between different prefix runs"
+    section_gradient:
+      H: "76.9%"
+      P: "71.7%"
+      T: "65.0%"
+    semantic_content: false  # Punctuation, not classifier
+    provenance: "C422"
+
+# ============================================================
+# PARTICIPATION RULES
+# ============================================================
+participation:
+  azc:
+    registry_entries:
+      participates: true
+      pipeline: "A -> AZC -> B"
+      compatibility_filtering: true
+    control_operators:
+      participates: false
+      evidence: "0/10 in AZC folios"
+      azc_tokens_in_folios: 0
+    provenance: "C441-C442, C484"
+
+  ht:
+    registry_entries:
+      triggers_ht: "possible"
+      correlation: "statistical, not functional"
+    control_operators:
+      triggers_ht: false
+      single_char_rate_nearby: "3.2%"
+      evidence: "7/10 show 0% single-char nearby"
+    provenance: "C484"
+
+  b_relationship:
+    entry_level_coupling: false
+    vocabulary_sharing: "statistical (shared domain)"
+    mapping_type: "not addressable"
+    section_distribution:
+      H_in_B: "91.6% (76/83 folios)"
+      P_in_B: "8.4% (7/83 folios)"
+      T_in_B: "0% (0/83 folios)"
+    provenance: "C299, C384"
+
+# ============================================================
+# POSITIONAL PROPERTIES
+# ============================================================
+positional:
+  within_line:
+    grammar: "position-free"
+    folio_initial_exception:
+      description: "C+vowel prefixes (ko-, po-, to-) permitted at position 1 only"
+      failure_rate_pos1: "75%"
+      failure_rate_pos2_3: "31%"
+      suffix_compatibility: "100% with standard forms"
+      p_value: "<0.0001"
+      provenance: "C420"
+
+  within_folio:
+    adjacency_coherence:
+      rate: "1.31x vocabulary sharing"
+      driver: "Clustered minority, not uniform"
+    clustering:
+      clustered_rate: "31%"
+      singleton_rate: "69%"
+      mean_cluster_size: 3
+      cluster_range: [2, 20]
+      autocorrelation: 0.80
+      vocabulary_divergence: "68% between clustered and singletons"
+    provenance: "C346, C424"
+
+  section_boundaries:
+    suppression: "2.42x lower overlap at boundaries"
+    cross_section_overlap: "9.7% Jaccard"
+    hard_discontinuity: true
+    provenance: "C260, C421"
+
+  control_operator_boundary_bias:
+    boundary_proximity_p: 0.0099
+    mean_normalized_distance: 0.138
+    random_baseline: 0.259
+    folio_start_rate: "30%"
+    folio_end_rate: "30%"
+    prefix_regime_shift: "All 4 testable cases show >3% shift"
+    provenance: "C484"
+
+# ============================================================
+# DISALLOWED INTERPRETATIONS
+# ============================================================
+# These interpretations have been tested and rejected.
+# Do not resurrect without extraordinary new evidence.
+
+disallowed:
+  - interpretation: "A entries map to B programs"
+    reason: "No entry-level coupling exists"
+    evidence: "C384 - no addressable correspondence"
+    status: "FALSIFIED"
+
+  - interpretation: "Repetition encodes quantity or ratio"
+    reason: "Magnitude has no downstream effect"
+    evidence: "C483, C287-C290 - ordinal emphasis only"
+    status: "FALSIFIED"
+
+  - interpretation: "A has sequential grammar"
+    reason: "Transition validity is 2.1%"
+    evidence: "C225, C231 - regular but not grammatical"
+    status: "FALSIFIED"
+
+  - interpretation: "Prefixes are semantic categories"
+    reason: "They are functional markers"
+    evidence: "C235 - mutual exclusion without semantic content"
+    status: "FALSIFIED"
+
+  - interpretation: "A is lookup table for B"
+    reason: "No addressable mapping mechanism"
+    evidence: "Vocabulary sharing is statistical, not referential"
+    status: "FALSIFIED"
+
+  - interpretation: "A encodes danger or hazard"
+    reason: "Correlation is entirely frequency-driven"
+    evidence: "Pre-registered test p=0.651; permutation p=0.111"
+    status: "FALSIFIED"
+
+  - interpretation: "Control operators are headers or section markers"
+    reason: "No semantic category evidence"
+    evidence: "C484 - meta-structural function only"
+    status: "UNSUBSTANTIATED"
+
+  - interpretation: "A is generative or producible"
+    reason: "A is maintained, not produced"
+    evidence: "C476 - coverage-optimal with hub rationing"
+    status: "FALSIFIED"
+
+# ============================================================
+# PROVENANCE MAP
+# ============================================================
+# Maps CASC sections to authoritative constraint IDs
+
+provenance:
+  scope:
+    - "C224"  # Coverage 13.6%
+    - "C228"  # Density 0.35x
+    - "C232"  # Section-conditioned
+    - "C272"  # Physical separation
+
+  guarantees:
+    - "C225"  # Transition validity
+    - "C230"  # Silhouette
+    - "C231"  # Regular not grammatical
+    - "C233"  # Line atomic
+    - "C234"  # Position free
+    - "C236"  # Flat
+    - "C240"  # Non-sequential registry
+
+  record_types:
+    - "C482"  # Batch semantics
+    - "C484"  # Channel bifurcation
+
+  morphology:
+    - "C235"  # 8 markers
+    - "C267"  # Compositional
+    - "C268"  # 897 combinations
+    - "C269"  # 7 universal suffixes
+    - "C277"  # Suffix universal
+    - "C278"  # Three-axis hierarchy
+    - "C291"  # Articulators
+    - "C292"  # Articulator non-discriminative
+    - "C293"  # Component essentiality
+    - "C408"  # Sister pairs
+    - "C412"  # Sister anticorrelation
+    - "C423"  # Vocabulary domains
+    - "C466"  # PREFIX function
+    - "C467"  # PREFIX function
+    - "C475"  # MIDDLE incompatibility
+
+  line_structure:
+    - "C250"  # 64.1% repetition
+    - "C251"  # Intra-record only
+    - "C252"  # Bounded 2-6x
+    - "C253"  # Blocks unique
+    - "C255"  # Section exclusive
+    - "C422"  # DA articulation
+    - "C482"  # Batch semantics
+    - "C483"  # Ordinal repetition
+    - "C484"  # Minimum sizes
+
+  participation:
+    - "C299"  # Section distribution in B
+    - "C384"  # No A-B coupling
+    - "C441"  # AZC vocabulary-activated
+    - "C442"  # AZC compatibility filter
+    - "C484"  # Control operator exclusion
+
+  positional:
+    - "C260"  # Section isolation
+    - "C346"  # Adjacency coherence
+    - "C420"  # Folio-initial exception
+    - "C421"  # Boundary suppression
+    - "C424"  # Clustered adjacency
+    - "C484"  # Control operator bias
+
+  disallowed:
+    - "C225"  # No grammar
+    - "C231"  # Not grammatical
+    - "C235"  # Markers not categories
+    - "C287"  # No ratio encoding
+    - "C288"  # No ratio encoding
+    - "C289"  # No ratio encoding
+    - "C290"  # No ratio encoding
+    - "C384"  # No A-B coupling
+    - "C476"  # Maintained not produced
+    - "C483"  # Ordinal only
+    - "C484"  # No header interpretation
+
+# ============================================================
+# END OF CASC
+# ============================================================

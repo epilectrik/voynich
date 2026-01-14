@@ -1,0 +1,54 @@
+{
+  "test_a": {
+    "same_cluster_mean": 0.1828727027325585,
+    "diff_cluster_mean": 0.1846956801818496,
+    "effect_size": -0.00182297744929108,
+    "mannwhitney_p": 0.7117255626557659,
+    "spearman_rho": -0.027715276785131065,
+    "spearman_p": 0.577641855099726,
+    "permutation_p": 0.6216,
+    "verdict": "FAIL"
+  },
+  "test_b": {
+    "sections": {
+      "H": 29
+    },
+    "verdict": "MOOT",
+    "reason": "All coded folios are Section H. No section variance to test."
+  },
+  "test_c": {
+    "schematic_distribution": {
+      "1": 9,
+      "0": 16,
+      "2": 4
+    },
+    "by_score_means": {
+      "1": 0.24338473473539501,
+      "0": 0.24946468985081927,
+      "2": 0.25275389777790175
+    },
+    "spearman_rho": 0.01789405052901593,
+    "spearman_p": 0.9265940754058355,
+    "interpretation": "No significant correlation",
+    "verdict": "FAIL"
+  },
+  "test_d": {
+    "dissimilar_compatible_count": 186,
+    "dc_hub_mean": 0.24752552197976557,
+    "other_hub_mean": 0.24933592423068984,
+    "effect_size": -0.00181040225092427,
+    "mannwhitney_p": 0.6134871967251895,
+    "interpretation": "Dissimilar-compatible pairs exist but no hub concentration",
+    "verdict": "PARTIAL"
+  },
+  "overall": {
+    "verdict": "MISMATCH",
+    "reason": "Primary test (A) failed - parallel indexing falsified",
+    "verdicts": {
+      "A": "FAIL",
+      "B": "MOOT",
+      "C": "FAIL",
+      "D": "PARTIAL"
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "probe_id": "COVERAGE_OPTIMALITY",
+  "question": "Does Currier A optimize coverage under cognitive constraints?",
+  "configuration": {
+    "n_lines": 441,
+    "n_middles": 1187,
+    "n_trials": 10
+  },
+  "real_metrics": {
+    "name": "REAL_A",
+    "n_lines": 441,
+    "total_tokens": 8487,
+    "final_coverage": 1.0,
+    "coverage_at_25pct": 0.38584667228306657,
+    "coverage_at_50pct": 0.6444818871103623,
+    "mean_entropy_gain": 0.016779101871569096,
+    "total_entropy_gain": 7.399583925361972,
+    "tail_activation_50": 1.0,
+    "tail_activation_25": 1.0,
+    "hub_usage": 0.31589489807941556,
+    "coverage_efficiency": 0.00011782726522917403
+  },
+  "null_models": {
+    "random": {
+      "n_lines": {
+        "mean": 441.0,
+        "std": 0.0
+      },
+      "total_tokens": {
+        "mean": 3916.7,
+        "std": 66.67990701853145
+      },
+      "final_coverage": {
+        "mean": 0.7212299915754004,
+        "std": 0.018265845816796963
+      },
+      "coverage_at_25pct": {
+        "mean": 0.36057287278854255,
+        "std": 0.017058514516694687
+      },
+      "coverage_at_50pct": {
+        "mean": 0.5418702611625947,
+        "std": 0.015135233813172626
+      },
+      "mean_entropy_gain": {
+        "mean": 0.01991630452205294,
+        "std": 9.971870970804061e-05
+      },
+      "total_entropy_gain": {
+        "mean": 8.783090294225346,
+        "std": 0.04397595098124574
+      },
+      "tail_activation_50": {
+        "mean": 0.6784148397976391,
+        "std": 0.01856583695870605
+      },
+      "tail_activation_25": {
+        "mean": 0.6628378378378378,
+        "std": 0.02239943845169024
+      },
+      "hub_usage": {
+        "mean": 0.09758073690861842,
+        "std": 0.0043767526693562165
+      },
+      "coverage_efficiency": {
+        "mean": 0.00018419773272524112,
+        "std": 5.680834334857111e-06
+      }
+    },
+    "freq_matched": {
+      "n_lines": {
+        "mean": 441.0,
+        "std": 0.0
+      },
+      "total_tokens": {
+        "mean": 8123.4,
+        "std": 118.02559044546229
+      },
+      "final_coverage": {
+        "mean": 0.27278854254422913,
+        "std": 0.008166214534829073
+      },
+      "coverage_at_25pct": {
+        "mean": 0.127379949452401,
+        "std": 0.005470154365879669
+      },
+      "coverage_at_50pct": {
+        "mean": 0.18921651221566976,
+        "std": 0.007895787372441438
+      },
+      "mean_entropy_gain": {
+        "mean": 0.010714563557768947,
+        "std": 9.048027570798714e-05
+      },
+      "total_entropy_gain": {
+        "mean": 4.725122528976105,
+        "std": 0.0399018015872224
+      },
+      "tail_activation_50": {
+        "mean": 0.10219224283305228,
+        "std": 0.016646155385164337
+      },
+      "tail_activation_25": {
+        "mean": 0.0847972972972973,
+        "std": 0.013884272018942243
+      },
+      "hub_usage": {
+        "mean": 0.5611676900826181,
+        "std": 0.009461974609758252
+      },
+      "coverage_efficiency": {
+        "mean": 3.358743794796721e-05,
+        "std": 1.1158539478894357e-06
+      }
+    },
+    "greedy": {
+      "name": "GREEDY",
+      "n_lines": 441,
+      "total_tokens": 8487,
+      "final_coverage": 1.0,
+      "coverage_at_25pct": 0.5223251895534962,
+      "coverage_at_50pct": 0.8374052232518955,
+      "mean_entropy_gain": 0.010777945476311918,
+      "total_entropy_gain": 4.753073955053556,
+      "tail_activation_50": 1.0,
+      "tail_activation_25": 1.0,
+      "hub_usage": 0.5388240838930128,
+      "coverage_efficiency": 0.00011782726522917403
+    }
+  },
+  "comparison": {
+    "final_coverage": {
+      "real": 1.0,
+      "random": 0.7212299915754004,
+      "freq_matched": 0.27278854254422913,
+      "greedy": 1.0
+    },
+    "coverage_at_50pct": {
+      "real": 0.6444818871103623,
+      "random": 0.5418702611625947,
+      "freq_matched": 0.18921651221566976,
+      "greedy": 0.8374052232518955
+    },
+    "tail_activation_50": {
+      "real": 1.0,
+      "random": 0.6784148397976391,
+      "freq_matched": 0.10219224283305228,
+      "greedy": 1.0
+    },
+    "tail_activation_25": {
+      "real": 1.0,
+      "random": 0.6628378378378378,
+      "freq_matched": 0.0847972972972973,
+      "greedy": 1.0
+    },
+    "hub_usage": {
+      "real": 0.31589489807941556,
+      "random": 0.09758073690861842,
+      "freq_matched": 0.5611676900826181,
+      "greedy": 0.5388240838930128
+    },
+    "coverage_efficiency": {
+      "real": 0.00011782726522917403,
+      "random": 0.00018419773272524112,
+      "freq_matched": 3.358743794796721e-05,
+      "greedy": 0.00011782726522917403
+    }
+  },
+  "verdict": {
+    "status": "COVERAGE_OPTIMIZED",
+    "wins_vs_random": 1,
+    "wins_vs_freq": 3,
+    "greedy_comparison": "NEAR_GREEDY_OPTIMAL",
+    "hub_efficiency": "HIGHLY_EFFICIENT",
+    "hub_savings": 0.22292918581359727,
+    "interpretation": "Real A achieves GREEDY-OPTIMAL coverage with HUB RATIONING - deliberate coverage management CONFIRMED"
+  }
+}

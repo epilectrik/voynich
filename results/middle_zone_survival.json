@@ -1,0 +1,144 @@
+{
+  "phase": "MIDDLE_ZONE_SURVIVAL",
+  "tier": 3,
+  "question": "Do MIDDLEs exhibit stable survival profiles across AZC legality zones?",
+  "data": {
+    "azc_tokens": 8257,
+    "unique_middles": 983,
+    "qualified_middles": 175,
+    "zone_distribution": {
+      "R": 3114,
+      "P": 1529,
+      "S": 1606,
+      "C": 2008
+    }
+  },
+  "clustering": {
+    "optimal_k": 4,
+    "silhouette": 0.5113314731643814,
+    "clusters": {
+      "1": {
+        "size": 47,
+        "mean_profile": {
+          "C": 0.13579869982638643,
+          "P": 0.06531231422338499,
+          "R": 0.2069668684749582,
+          "S": 0.5919221174752703
+        },
+        "std_profile": {
+          "C": 0.17522619141566806,
+          "P": 0.12099732095742619,
+          "R": 0.1776315935732269,
+          "S": 0.19935225505639526
+        },
+        "dominant_zone": "S",
+        "example_middles": [
+          "ofche",
+          "ykch",
+          "os",
+          "keo",
+          "ockh",
+          "ar",
+          "oche",
+          "eos",
+          "ain",
+          "ek"
+        ]
+      },
+      "2": {
+        "size": 29,
+        "mean_profile": {
+          "C": 0.06284472232748095,
+          "P": 0.7499498266739647,
+          "R": 0.11954759799587385,
+          "S": 0.0676578530026806
+        },
+        "std_profile": {
+          "C": 0.08407129367373183,
+          "P": 0.17610338812407644,
+          "R": 0.10696912528262432,
+          "S": 0.09666264510070166
+        },
+        "dominant_zone": "P",
+        "example_middles": [
+          "ke",
+          "cph",
+          "p",
+          "eek",
+          "eot",
+          "ckh",
+          "ytche",
+          "ep",
+          "ycheo",
+          "esoe"
+        ]
+      },
+      "3": {
+        "size": 25,
+        "mean_profile": {
+          "C": 0.6575692851564107,
+          "P": 0.16506373283065845,
+          "R": 0.12634110247872735,
+          "S": 0.05102587953420363
+        },
+        "std_profile": {
+          "C": 0.2428014704452097,
+          "P": 0.1656579469249137,
+          "R": 0.11295679774529346,
+          "S": 0.07651438986142993
+        },
+        "dominant_zone": "C",
+        "example_middles": [
+          "od",
+          "f",
+          "yteo",
+          "ai",
+          "yt",
+          "aii",
+          "kee",
+          "oteo",
+          "yto",
+          "okee"
+        ]
+      },
+      "4": {
+        "size": 74,
+        "mean_profile": {
+          "C": 0.23346186101175054,
+          "P": 0.16755118805526534,
+          "R": 0.5098783219893966,
+          "S": 0.08910862894358736
+        },
+        "std_profile": {
+          "C": 0.17304828078084544,
+          "P": 0.1453106447972791,
+          "R": 0.1827909401998465,
+          "S": 0.09534891802411594
+        },
+        "dominant_zone": "R",
+        "example_middles": [
+          "ee",
+          "so",
+          "e",
+          "of",
+          "r",
+          "dd",
+          "y",
+          "ii",
+          "eo",
+          "dsh"
+        ]
+      }
+    }
+  },
+  "significance": {
+    "observed_silhouette": 0.5113314731643814,
+    "null_mean_silhouette": -0.08150133888937205,
+    "p_value": 0.0
+  },
+  "frequency_control": {
+    "mean_silhouette": 0.5090353364625664,
+    "std_silhouette": 0.03510515945065156
+  },
+  "verdict": "CONFIRMED"
+}

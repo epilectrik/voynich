@@ -1,0 +1,59 @@
+{
+  "test": "5A_MEMORY_OPTIMALITY",
+  "tier": "3-4",
+  "question": "Is A-registry ordering optimal under realistic memory decay?",
+  "data": {
+    "total_entries": 34740,
+    "unique_middles": 2037,
+    "unique_folios": 114
+  },
+  "ordering_metrics": {
+    "manuscript": {
+      "forgetting_events": 2229.0,
+      "recall_cost": 1875.3590933310772,
+      "mean_reintro_distance": 798.2316293929713,
+      "mean_clustering_variance": 1439.770840376227
+    },
+    "frequency_sorted": {
+      "forgetting_events": 1.0,
+      "recall_cost": 0.5132477440400283,
+      "mean_reintro_distance": 12.581469648562301,
+      "mean_clustering_variance": 14.40032815898755
+    },
+    "rare_first": {
+      "forgetting_events": 1.0,
+      "recall_cost": 0.5132477440400283,
+      "mean_reintro_distance": 12.581469648562301,
+      "mean_clustering_variance": 14.40032815898755
+    },
+    "alphabetical": {
+      "forgetting_events": 0.0,
+      "recall_cost": 0.0,
+      "mean_reintro_distance": 1.0,
+      "mean_clustering_variance": 0.0
+    },
+    "fully_clustered": {
+      "forgetting_events": 0.0,
+      "recall_cost": 0.0,
+      "mean_reintro_distance": 1.0,
+      "mean_clustering_variance": 0.0
+    }
+  },
+  "random_baseline": {
+    "n_samples": 100,
+    "forgetting_mean": 5066.14,
+    "forgetting_std": 29.135895386962112,
+    "recall_mean": 4282.031697628492,
+    "recall_std": 21.276028657651953
+  },
+  "manuscript_analysis": {
+    "forgetting_z": -97.37610470929886,
+    "recall_z": -113.11662730966721,
+    "forgetting_percentile": 0.0,
+    "recall_percentile": 0.0,
+    "rank_forgetting": 5,
+    "rank_recall": 5,
+    "n_orderings": 5
+  },
+  "verdict": "NEAR_OPTIMAL"
+}

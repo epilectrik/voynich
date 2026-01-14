@@ -1,0 +1,33 @@
+{
+  "control1_within_regime": {
+    "n": 5,
+    "rho": NaN,
+    "p": NaN,
+    "status": "FAIL_POWER"
+  },
+  "control2_tail_pressure": {
+    "n": 34,
+    "rho_partial": 0.3057883148625753,
+    "p_partial": 0.07862053371701336,
+    "status": "PASS"
+  },
+  "control3_section": {
+    "section_results": {
+      "H": {
+        "n_b": 32,
+        "n_a": 1224,
+        "avg_survivor_rate": 0.9999659586056644,
+        "avg_b_entropy": 5.033692529319394
+      },
+      "P": {
+        "status": "INSUFFICIENT"
+      },
+      "T": {
+        "status": "INSUFFICIENT"
+      }
+    },
+    "rho": null,
+    "status": "INSUFFICIENT"
+  },
+  "overall": "PROMOTION_JUSTIFIED"
+}

@@ -1,0 +1,60 @@
+{
+  "test": "3A_3B_COUNTERFACTUAL",
+  "tier": "3-4",
+  "question": "How necessary are e-operator and hazard asymmetry?",
+  "baseline": {
+    "total_tokens": 75545,
+    "kernel_counts": {
+      "null": 48095,
+      "e": 27203,
+      "k": 159,
+      "h": 88
+    },
+    "k_ratio": 0.0021047058044873918,
+    "h_ratio": 0.0011648686213515122,
+    "e_ratio": 0.3600900125752863,
+    "kernel_contact_ratio": 0.36335958700112514,
+    "recovery_ratio": 0.3157894736842105,
+    "e_trigram_ratio": 0.9832499037350789
+  },
+  "test_3a_remove_e": {
+    "baseline_e_ratio": 0.3600900125752863,
+    "tokens_removed": 27203,
+    "remaining_tokens": 48342,
+    "baseline_kernel_contact": 0.36335958700112514,
+    "without_e_kernel_contact": 0.005109428654172355,
+    "contact_change_pct": -98.59383683905483,
+    "baseline_recovery_ratio": 0.3157894736842105,
+    "without_e_recovery_ratio": 0,
+    "recovery_collapse": 0.3157894736842105,
+    "hazard_dominated_ratio": 0.005109428654172355,
+    "verdict": "E_NECESSARY"
+  },
+  "test_3b_symmetric_hazards": {
+    "transition_matrix": {
+      "e": {
+        "e": 0.9936244541484717,
+        "k": 0.0034934497816593887,
+        "h": 0.002882096069868996
+      },
+      "k": {
+        "e": 0.8333333333333334,
+        "k": 0.16666666666666666
+      },
+      "h": {
+        "e": 0.8235294117647058,
+        "h": 0.17647058823529413
+      }
+    },
+    "asymmetries": {
+      "k_h": 0.0,
+      "k_e": 0.8298398835516739,
+      "h_e": 0.8206473156948368
+    },
+    "mean_asymmetry": 0.550162399748837,
+    "h_to_k_suppression": 0.0,
+    "k_to_h": 0.0,
+    "verdict": "ASYMMETRY_NECESSARY"
+  },
+  "overall_verdict": "GRAMMAR_MINIMAL"
+}

@@ -1,0 +1,72 @@
+{
+  "test_1_distribution_shape": {
+    "voynich": {
+      "n_folios": 83,
+      "cei_mean": 0.5532282168674698,
+      "regime_distribution": {
+        "REGIME_3": 16,
+        "REGIME_1": 31,
+        "REGIME_2": 11,
+        "REGIME_4": 25
+      }
+    },
+    "puff": {
+      "n_chapters": 85,
+      "category_distribution": {
+        "FLOWER": 17,
+        "HERB": 42,
+        "TREE_FLOWER": 5,
+        "FERN": 1,
+        "SUCCULENT": 1,
+        "BULB": 1,
+        "VEGETABLE": 1,
+        "ROOT": 5,
+        "FRUIT": 1,
+        "SHRUB": 1,
+        "FUNGUS": 2,
+        "PARASITE": 1,
+        "TREE_LEAF": 1,
+        "VINE": 1,
+        "ANIMAL": 1,
+        "OIL": 1,
+        "LEGUME_FLOWER": 1,
+        "BERRY": 1,
+        "SPIRIT": 1
+      }
+    },
+    "verdict": "PASS",
+    "reason": "Both show heterogeneous distributions"
+  },
+  "test_2_curricular_arc": {
+    "puff_arc": "FRONT_LOADED_SIMPLE",
+    "voynich_arc": "FRONT_LOADED_SIMPLE",
+    "puff_simple_gradient": {
+      "first_third": {
+        "SIMPLE": 11,
+        "STANDARD": 13,
+        "ANOMALOUS": 4
+      },
+      "last_third": {
+        "STANDARD": 18,
+        "SIMPLE": 2,
+        "ANOMALOUS": 9
+      }
+    },
+    "voynich_regime_gradient": {
+      "first_third": {
+        "REGIME_3": 6,
+        "REGIME_1": 13,
+        "REGIME_2": 6,
+        "REGIME_4": 2
+      },
+      "last_third": {
+        "REGIME_3": 6,
+        "REGIME_1": 13,
+        "REGIME_4": 7,
+        "REGIME_2": 3
+      }
+    },
+    "verdict": "PASS",
+    "reason": "Both show FRONT_LOADED_SIMPLE"
+  }
+}

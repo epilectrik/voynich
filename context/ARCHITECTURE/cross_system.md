@@ -152,6 +152,16 @@ Despite vocabulary sharing, there is **no entry-level cross-reference** (C384):
 
 ---
 
+## Type Coherence vs Semantic Reference
+
+Currier A and Currier B share a global morphological type system (C383). This produces structural coherence between registry entries and execution grammar without implying semantic reference or entry-level correspondence.
+
+**The systems feel aligned because they use the same types - not because they reference each other.**
+
+This distinction resolves a common confusion: observing that A's material/variant encoding aligns with B's hazard topology does not indicate semantic coupling. It indicates that both systems instantiate the same type system - one as registry, one as executable grammar. The alignment is structural, not referential.
+
+---
+
 ## Section Mapping (Tier 2)
 
 A sections map non-uniformly to B procedures (C299):

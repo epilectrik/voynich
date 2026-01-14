@@ -1,0 +1,78 @@
+{
+  "headline": "Currier A Behavioral Classification Summary",
+  "tier": 3,
+  "status": "SPECULATIVE",
+  "coverage": {
+    "total_tokens": 37214,
+    "classified": 23442,
+    "rate": 63.0
+  },
+  "behavioral_profile": {
+    "energy_operations": {
+      "count": 13933,
+      "percent": 59.4,
+      "interpretation": "Operations on phase-sensitive, mobile materials (M-A)",
+      "prefixes": [
+        "ch",
+        "sh",
+        "qo"
+      ],
+      "chemistry_note": "In distillation: volatile aromatics, fractionation targets"
+    },
+    "frequent_operations": {
+      "count": 3545,
+      "percent": 15.1,
+      "interpretation": "Operations on uniform mobile materials (M-B)",
+      "prefixes": [
+        "ok",
+        "ot"
+      ],
+      "chemistry_note": "In distillation: solvents, carriers, wash liquids"
+    },
+    "control_operations": {
+      "count": 4472,
+      "percent": 19.1,
+      "interpretation": "Class-independent structural anchors",
+      "prefixes": [
+        "da",
+        "ol"
+      ],
+      "chemistry_note": "Process articulation regardless of material"
+    },
+    "registry_references": {
+      "count": 1492,
+      "percent": 6.4,
+      "interpretation": "References to stable materials (M-C/M-D)",
+      "prefixes": [
+        "ct"
+      ],
+      "chemistry_note": "In distillation: apparatus, containers, stable products"
+    }
+  },
+  "sister_pair_usage": {
+    "primary_mode": 9086,
+    "alternate_mode": 4943,
+    "interpretation": "Sister pairs encode variant selection within same operation type"
+  },
+  "discrimination_capacity": {
+    "unique_middles": 826,
+    "middles_by_domain": {
+      "ENERGY_OPERATOR": 564,
+      "REGISTRY_REFERENCE": 65,
+      "CORE_CONTROL": 176,
+      "FREQUENT_OPERATOR": 164
+    },
+    "interpretation": "MIDDLE component differentiates specific referents within operational domain"
+  },
+  "decision_support": {
+    "archetype_coverage": {
+      "Is material in correct phase/location?": 13933,
+      "Is energy input appropriate?": 13933,
+      "Is this the fraction I think it is?": 1492,
+      "Is this case like that previous case?": 1492,
+      "Should I intervene or wait?": 8017,
+      "What operating regime am I in?": 3545
+    },
+    "interpretation": "Entry supports these decision judgment calls"
+  }
+}

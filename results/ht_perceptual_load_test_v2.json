@@ -1,0 +1,54 @@
+{
+  "test": "HT Perceptual Load Test v2",
+  "folio_level_correlation": {
+    "pearson_r": -0.3009560645573352,
+    "pearson_p": 0.007418763422310026,
+    "spearman_rho": -0.20986552573523806,
+    "spearman_p": 0.0651609053734694
+  },
+  "extreme_folios": {
+    "high_complexity_late_ratio": 0.1801613462503202,
+    "low_complexity_late_ratio": 0.28053301084188365,
+    "p_value": 0.9619146927601765,
+    "passed": false
+  },
+  "section_analysis": [
+    {
+      "section": "T",
+      "complexity": 62.5,
+      "late_ratio": 0.06896551724137931,
+      "n_folios": 2
+    },
+    {
+      "section": "S",
+      "complexity": 61.52173913043478,
+      "late_ratio": 0.17276033556692985,
+      "n_folios": 23
+    },
+    {
+      "section": "B",
+      "complexity": 53.9,
+      "late_ratio": 0.19726208438317322,
+      "n_folios": 20
+    },
+    {
+      "section": "C",
+      "complexity": 49.666666666666664,
+      "late_ratio": 0.26081272302202535,
+      "n_folios": 6
+    },
+    {
+      "section": "H",
+      "complexity": 35.55555555555556,
+      "late_ratio": 0.3202465978538103,
+      "n_folios": 27
+    }
+  ],
+  "evidence_for": [],
+  "evidence_against": [
+    "Negative folio-level correlation (r=-0.301)",
+    "No difference between high/low complexity folios",
+    "Highest complexity section does NOT have high LATE ratio"
+  ],
+  "verdict": "NOT SUPPORTED"
+}

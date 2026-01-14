@@ -1,6 +1,6 @@
-# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475)
+# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478)
 
-**Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility
+**Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility, coverage, temporal trajectories
 **Status:** CLOSED
 
 ---
@@ -357,6 +357,66 @@ This is the atomic discrimination layer. Everything above it (A entries, AZC fol
 - **Grounds HT behavior (C459, C461)**: HT ≈ local incompatibility density + rarity pressure (now testable)
 
 **f116v note:** f116v folio-level isolation (from azc_entry_bridges.py) is explained by data sparsity (only 2 words in corpus), NOT by MIDDLE-level incompatibility.
+
+---
+
+## Coverage Optimality (C476)
+
+### C476 - COVERAGE OPTIMALITY
+**Tier:** 2 | **Status:** CLOSED | **Source:** COVERAGE_OPTIMALITY probe (2026-01-12)
+
+Currier A achieves GREEDY-OPTIMAL coverage (100%) while using 22.3% FEWER hub tokens than a greedy strategy would require.
+
+**Evidence:**
+- Real A: 100% coverage, 31.6% hub usage
+- Greedy: 100% coverage, 53.9% hub usage
+- Hub savings: 22.3 percentage points
+- Random baseline: 72% coverage
+- Frequency-matched baseline: 27% coverage
+
+**Interpretation:**
+> **Currier A is not meant to be generated. It is meant to be maintained.**
+
+The four residuals (PREFIX coherence, tail forcing, repetition structure, hub rationing) are ONE control objective: COVERAGE CONTROL.
+
+---
+
+## Temporal Trajectories (C478)
+
+### C478 - TEMPORAL COVERAGE SCHEDULING
+**Tier:** 2 | **Status:** CLOSED | **Source:** TEMPORAL_TRAJECTORIES probe (2026-01-12)
+
+Currier A exhibits STRONG TEMPORAL SCHEDULING with pedagogical pacing: introduce vocabulary early, reinforce throughout, cycle between prefix domains.
+
+**Evidence (4 signals, 5/5 support strong scheduling):**
+
+1. **Coverage BACK-LOADED:**
+   - 90% coverage reached 9.6% later than random permutation
+   - Real A delays full coverage despite front-loading novelty
+
+2. **Novelty FRONT-LOADED:**
+   - Phase 1: 21.2% novelty rate
+   - Phase 2: 9.4% novelty rate (trough)
+   - Phase 3: 11.3% novelty rate
+   - New MIDDLEs introduced early, then reinforced
+
+3. **U-SHAPED tail pressure:**
+   - Phase 1: 7.9% rare MIDDLEs
+   - Phase 2: 4.2% rare MIDDLEs (dip)
+   - Phase 3: 7.1% rare MIDDLEs
+   - Difficulty wave: start hard, ease, ramp up again
+
+4. **PREFIX CYCLING:**
+   - 7 prefixes cycle throughout manuscript (164 regime changes)
+   - Prefix entropy increases then stabilizes
+   - Multi-axis traversal of discrimination space
+
+**Interpretation:**
+> **PEDAGOGICAL_PACING: Currier A is not just coverage-optimal, it is temporally scheduled to introduce, reinforce, and cycle through discrimination domains.**
+
+**Reconciliation with C476:**
+- C476 shows WHAT Currier A optimizes (coverage with hub rationing)
+- C478 shows HOW it achieves this (temporal scheduling, not static ordering)
 
 ---
 

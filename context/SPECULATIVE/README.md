@@ -60,6 +60,16 @@ Content in this directory is:
 | [ccm_synthesis.md](ccm_synthesis.md) | 3 | CCM integration |
 | [middle_distribution_analysis.md](middle_distribution_analysis.md) | 3 | MIDDLE frequency structure (Core vs Tail) |
 
+### Physical World Reverse Engineering (NEW)
+
+| Phase | Tier | Content |
+|-------|------|---------|
+| `phases/FM_PHY_1_failure_mode_alignment/` | 3 | Hazard distribution is natural for reflux |
+| `phases/SSD_PHY_1a/` | 3 | Dimensionality is physics-forced (D ≥ 50) |
+| `phases/OJLM_1_operator_judgment/` | 3 | 13 judgment types operator must supply |
+
+Summary in [INTERPRETATION_SUMMARY.md](INTERPRETATION_SUMMARY.md) Section I.O.
+
 ### Legacy Interpretive Documents
 
 | File | Tier | Content |

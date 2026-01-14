@@ -1,0 +1,634 @@
+# ============================================================
+# BCSC: Currier B Structural Contract
+# Version: 1.0
+# ============================================================
+#
+# This is a DERIVED, READ-ONLY specification.
+# It introduces NO NEW CLAIMS.
+# Constraints remain authoritative.
+# Do not edit without constraint update.
+#
+# Purpose: Pure internal grammar contract describing what a
+# valid Currier B program is, without referencing A or AZC.
+#
+# This is NOT a workflow description, simulation spec, or
+# semantic interpretation. It is abstract control grammar.
+#
+# ============================================================
+
+meta:
+  name: "Currier B Structural Contract"
+  acronym: "BCSC"
+  version: "1.0"
+  date: "2026-01-13"
+  status: "LOCKED"
+  layer_type: "grammar contract"
+  derived_from: "Tier 0-2 constraints only"
+  governance: |
+    BCSC is NOT authoritative. Constraints are authoritative.
+    BCSC describes the internal grammar of Currier B.
+    Do not edit without updating source constraints first.
+
+# ============================================================
+# SCOPE & GUARANTEES
+# ============================================================
+scope:
+  system: "Currier B"
+  coverage: "61.9% of tokens, 83 folios"
+  function: "What a valid Currier B program is, internally"
+  a_agnostic: true  # Does not reference Currier A
+  azc_agnostic: true  # Does not reference AZC mechanics
+  non_semantic: true  # No process domain interpretation
+
+# Explicit ownership declaration
+ownership:
+  bcsc_describes:
+    - grammar_structure
+    - kernel_roles
+    - hazard_topology
+    - convergence_behavior
+    - program_structure
+    - recovery_architecture
+  bcsc_does_not_describe:
+    - currier_a_entries
+    - azc_mechanics
+    - human_track_layer
+    - process_domain
+    - token_meanings
+  note: "Pure grammar contract, not workflow or simulation"
+
+guarantees:
+  - id: "GRAMMAR_UNIVERSAL"
+    statement: "49-class grammar applies to all 83 folios without exception"
+    provenance: "C121, C124"
+
+  - id: "TOTAL_COVERAGE"
+    statement: "Every Currier B token parses; zero non-executable"
+    provenance: "C115, C124"
+
+  - id: "CONVERGENT_ARCHITECTURE"
+    statement: "Grammar targets single stable state (STATE-C)"
+    provenance: "C074, C079, C084"
+
+  - id: "HAZARD_TOPOLOGY_FIXED"
+    statement: "17 forbidden transitions in 5 classes are absolute"
+    provenance: "C109"
+
+  - id: "KERNEL_CENTRALITY"
+    statement: "k, h, e form irreducible control core, boundary-adjacent to hazards"
+    provenance: "C089, C107"
+
+  - id: "LINE_FORMALITY"
+    statement: "Lines are formal control blocks, not scribal wrapping"
+    provenance: "C357-C360"
+
+  - id: "LINK_PHASE_MARKER"
+    statement: "LINK marks boundary between monitoring and intervention"
+    provenance: "C366"
+
+  - id: "DESIGN_ASYMMETRY"
+    statement: "Hazard exposure clamped; recovery architecture free"
+    provenance: "C458"
+
+  - id: "TIME_REVERSAL_SYMMETRIC"
+    statement: "Grammar is invariant under time reversal"
+    provenance: "C391"
+
+  - id: "CLOSED_LOOP_ONLY"
+    statement: "Execution is closed-loop control, not batch, decision tree, or state machine"
+    provenance: "C171"
+
+# ============================================================
+# INVARIANTS
+# ============================================================
+invariants:
+  grammar_universality:
+    statement: "Same 49 classes apply to every folio"
+    description: "Grammar is universal across all 83 folios"
+    provenance: "C124"
+
+  convergence_dominance:
+    statement: "Majority of programs terminate in STATE-C"
+    description: "Grammar architecture targets single stable state"
+    provenance: "C074, C084, C323"
+
+  hazard_asymmetry:
+    statement: "Most forbidden transitions are directional"
+    description: "65% of forbidden transitions are one-way"
+    provenance: "C111"
+
+  line_invariance:
+    statement: "Grammar violations do not cross line boundaries"
+    description: "0 forbidden transitions span line breaks"
+    provenance: "C360"
+
+  time_reversal:
+    statement: "Grammar is symmetric under time reversal"
+    description: "No privileged directionality at grammar level"
+    provenance: "C391"
+
+  kernel_boundary_adjacency:
+    statement: "All kernel nodes are boundary-adjacent to forbidden transitions"
+    description: "Kernel controls hazard proximity"
+    provenance: "C107"
+
+# ============================================================
+# GRAMMAR STRUCTURE
+# ============================================================
+grammar:
+  description: "49 instruction equivalence classes with 100% coverage"
+
+  classification:
+    token_types: 479
+    instruction_classes: 49
+    compression_ratio: "9.8x"
+    coverage: "100%"
+    exceptions: 0
+    provenance: "C121, C124"
+
+  primitives:
+    count: 10
+    characters: ["s", "e", "t", "d", "l", "o", "h", "c", "k", "r"]
+    provenance: "C085"
+
+  properties:
+    universal: true
+    compositional: true
+    over_specified: true
+    reducible_classes: "~40% (deliberate)"
+    provenance: "C121, C411"
+
+# ============================================================
+# ROLE TAXONOMY (Morphology at Role Level Only)
+# ============================================================
+# NOTE: These are ABSTRACT role classes, not morphological composition.
+# Specific prefixes, character sequences, and compositional rules
+# are NOT part of BCSC.
+
+role_taxonomy:
+  description: "Abstract role classes used by grammar (not morphological realization)"
+
+  roles:
+    CORE_CONTROL:
+      function: "Execution boundaries"
+      provenance: "C121"
+
+    ENERGY_OPERATOR:
+      function: "Energy modulation"
+      class_count: 11
+      provenance: "C121"
+
+    AUXILIARY:
+      function: "Support operations"
+      class_count: 8
+      provenance: "C121"
+
+    FREQUENT_OPERATOR:
+      function: "Common instructions"
+      class_count: 4
+      provenance: "C121"
+
+    HIGH_IMPACT:
+      function: "Major interventions"
+      class_count: 3
+      provenance: "C121"
+
+    FLOW_OPERATOR:
+      function: "Flow control"
+      class_count: 2
+      provenance: "C121"
+
+    LINK:
+      function: "Monitoring/observation phase marker"
+      provenance: "C366"
+
+  note: |
+    Role classes are abstract grammar categories.
+    Morphological realization (PREFIX/MIDDLE/SUFFIX composition)
+    is NOT part of BCSC. See global morphology contracts.
+
+# ============================================================
+# KERNEL STRUCTURE
+# ============================================================
+kernel:
+  description: "Three operators form the irreducible control core"
+
+  operators:
+    k:
+      role: "ENERGY_MODULATOR"
+      function: "Adjusts energy input"
+      provenance: "C103"
+
+    h:
+      role: "PHASE_MANAGER"
+      function: "Manages phase transitions"
+      provenance: "C104"
+
+    e:
+      role: "STABILITY_ANCHOR"
+      function: "Maintains stable state"
+      recovery_path_rate: "54.7%"
+      provenance: "C105"
+
+  properties:
+    irreducible: true
+    boundary_adjacent: true
+    h_to_k_suppressed: true
+    e_trigram_dominance: "97.2%"
+    provenance: "C089, C107, C332, C333"
+
+  relationships:
+    e_class_dominance:
+      description: "e-class tokens dominate corpus"
+      provenance: "C339"
+
+    kernel_bigram_ordering:
+      description: "h->k suppressed (0 observed); k->k, h->h enriched"
+      provenance: "C332"
+
+# ============================================================
+# HAZARD TOPOLOGY
+# ============================================================
+hazards:
+  description: "17 forbidden transitions in 5 failure classes"
+
+  forbidden_transitions:
+    count: 17
+    provenance: "C109"
+
+  failure_classes:
+    PHASE_ORDERING:
+      count: 7
+      percentage: "41%"
+      description: "Material in wrong phase location"
+      provenance: "C110"
+
+    COMPOSITION_JUMP:
+      count: 4
+      percentage: "24%"
+      description: "Impure fractions passing"
+      provenance: "C109"
+
+    CONTAINMENT_TIMING:
+      count: 4
+      percentage: "24%"
+      description: "Overflow/pressure events"
+      provenance: "C109"
+
+    RATE_MISMATCH:
+      count: 1
+      percentage: "6%"
+      description: "Flow imbalance"
+      provenance: "C109"
+
+    ENERGY_OVERSHOOT:
+      count: 1
+      percentage: "6%"
+      description: "Thermal damage"
+      provenance: "C109"
+
+  properties:
+    asymmetric_rate: "65%"
+    distant_from_kernel_rate: "59%"
+    suppressed_additional: 8
+    provenance: "C111, C112, C386"
+
+# ============================================================
+# PROGRAM STRUCTURE
+# ============================================================
+program_structure:
+  description: "Folio = program, Line = control block"
+
+  folio:
+    function: "Complete, self-contained program"
+    count: 83
+    macro_chaining: false
+    provenance: "C178"
+
+  line:
+    function: "Formal control block"
+    regularity: "3.3x more regular than random"
+    boundary_markers:
+      initial: ["daiin", "saiin", "sain"]
+      final: ["am", "oly", "dy"]
+    link_suppressed_at_boundary: true
+    grammar_line_invariant: true
+    provenance: "C357, C358, C359, C360"
+
+# ============================================================
+# CONVERGENCE BEHAVIOR
+# ============================================================
+convergence:
+  description: "Programs converge toward stable states"
+
+  target:
+    state: "STATE-C"
+    type: "MONOSTATE"
+    description: "Single stable state is the grammar target"
+    provenance: "C079, C084"
+
+  terminal_distribution:
+    state_c: "57.8%"
+    transitional: "38.6%"
+    initial_reset: "3.6%"
+    provenance: "C323"
+
+  gradient:
+    direction: "STATE-C increases with position"
+    description: "Later folios show higher completion rates"
+    provenance: "C325"
+
+# ============================================================
+# LINK OPERATOR
+# ============================================================
+link_operator:
+  description: "Marks boundary between monitoring and intervention"
+
+  function: "Deliberate waiting/monitoring phases"
+  provenance: "C366"
+
+  properties:
+    spatially_uniform: true
+    position_marking: false
+    provenance: "C365"
+
+  grammar_transitions:
+    preceded_by: ["AUXILIARY", "FLOW_OPERATOR"]
+    followed_by: ["HIGH_IMPACT", "ENERGY_OPERATOR"]
+    provenance: "C366"
+
+  complementarity:
+    with_escalation: true
+    description: "LINK suppressed near escalation"
+    provenance: "C340"
+
+# ============================================================
+# RECOVERY ARCHITECTURE
+# ============================================================
+recovery:
+  description: "How programs recover from near-hazard states"
+
+  escape_routes:
+    primary_role: "ENERGY_OPERATOR"
+    secondary_role: "CORE_CONTROL"
+    provenance: "C397, C398"
+
+  stability_anchor:
+    operator: "e"
+    function: "Anchors system to stable state"
+    provenance: "C105"
+
+  safe_precedence:
+    description: "Safe operations precede hazardous ones"
+    provenance: "C399"
+
+# ============================================================
+# DESIGN FREEDOM
+# ============================================================
+design_freedom:
+  description: "Asymmetric design freedom across dimensions"
+
+  clamped:
+    - dimension: "hazard_exposure"
+      freedom: "NO"
+    - dimension: "intervention_diversity"
+      freedom: "NO"
+
+  free:
+    - dimension: "recovery_operations"
+      freedom: "YES"
+    - dimension: "near_miss_handling"
+      freedom: "YES"
+
+  principle: "Risk is globally constrained; recovery strategy is locally variable"
+  provenance: "C458"
+
+# ============================================================
+# ROBUSTNESS
+# ============================================================
+robustness:
+  description: "Grammar is robust to noise, ablation, and cross-validation"
+
+  noise_robustness:
+    description: "10% corruption = 3.3% entropy increase"
+    provenance: "C328"
+
+  ablation_robustness:
+    description: "Top 10 tokens removed = 0.8% entropy change"
+    provenance: "C329"
+
+  cross_validation:
+    description: "Leave-one-folio-out = max 0.25% entropy change"
+    provenance: "C330"
+
+  minimality:
+    description: "49-class functional classification confirmed"
+    provenance: "C331"
+
+# ============================================================
+# NEGATIVE GUARANTEES
+# ============================================================
+negative_guarantees:
+  - guarantee: "No Currier A references"
+    reason: "BCSC is A-agnostic"
+
+  - guarantee: "No AZC references"
+    reason: "BCSC is AZC-agnostic"
+
+  - guarantee: "No Human Track references"
+    reason: "HT is separate layer"
+
+  - guarantee: "No process domain semantics"
+    reason: "Tier 3 speculative layer"
+
+  - guarantee: "No token meanings"
+    reason: "Irrecoverable by design"
+
+  - guarantee: "No family structure"
+    reason: "Families are emergent, not grammar partitions (C126, C144)"
+
+  - guarantee: "No morphological composition rules"
+    reason: "BCSC uses role classes only; composition belongs elsewhere"
+
+# ============================================================
+# EXPLICITLY DEFERRED
+# ============================================================
+deferred:
+  - topic: "Currier A structure"
+    reason: "Belongs to CASC"
+
+  - topic: "AZC positional zones"
+    reason: "Belongs to AZC-ACT"
+
+  - topic: "AZC -> B propagation"
+    reason: "Belongs to AZC-B-ACT"
+
+  - topic: "Human Track layer"
+    reason: "Separate contract if needed"
+
+  - topic: "Process domain interpretation"
+    reason: "Tier 3 speculative layer"
+
+  - topic: "Token meanings"
+    reason: "Irrecoverable by design"
+
+  - topic: "Historical context"
+    reason: "Non-binding interpretive layer"
+
+  - topic: "Family structure"
+    reason: "Emergent organization, not grammar (C126, C144)"
+
+  - topic: "Morphological composition"
+    reason: "Global morphology contracts handle this"
+
+# ============================================================
+# DISALLOWED INTERPRETATIONS
+# ============================================================
+disallowed:
+  - interpretation: "B grammar varies by Currier A source"
+    reason: "Grammar is universal (C124)"
+    provenance: "C124"
+
+  - interpretation: "B grammar varies by AZC context"
+    reason: "Grammar unchanged by legality (AZC-B-ACT)"
+    provenance: "C121, C124"
+
+  - interpretation: "Families are different grammars"
+    reason: "Cross-family transplant = zero degradation"
+    provenance: "C141"
+
+  - interpretation: "Grammar encodes semantic content"
+    reason: "PURE_OPERATIONAL verdict"
+    provenance: "C120"
+
+  - interpretation: "Grammar is directional (narrative)"
+    reason: "Time-reversal symmetric"
+    provenance: "C391"
+
+  - interpretation: "Grammar is a decision tree or state machine"
+    reason: "Closed-loop control only"
+    provenance: "C171"
+
+# ============================================================
+# NON-NORMATIVE ANNOTATIONS
+# ============================================================
+annotations:
+  note: "Empirical observations, NOT structural guarantees"
+  status: "NON-NORMATIVE"
+
+  coverage_statistics:
+    token_coverage: "61.9%"
+    folio_count: 83
+    token_types: 479
+    instruction_classes: 49
+    compression_ratio: "9.8x"
+    provenance: "C121"
+
+  kernel_statistics:
+    e_class_corpus_share: "36%"
+    e_recovery_path_rate: "54.7%"
+    e_trigram_rate: "97.2%"
+    provenance: "C105, C333, C339"
+
+  hazard_statistics:
+    forbidden_count: 17
+    asymmetric_rate: "65%"
+    distant_from_kernel: "59%"
+    phase_ordering_dominant: "41%"
+    provenance: "C109, C110, C111, C112"
+
+  convergence_statistics:
+    state_c_terminal: "57.8%"
+    transitional_terminal: "38.6%"
+    completion_gradient_rho: "+0.24"
+    provenance: "C323, C325"
+
+  link_statistics:
+    density: "38%"
+    section_b: "19.6%"
+    section_h: "9.1%"
+    section_c: "10.1%"
+    provenance: "C334"
+
+  design_statistics:
+    hazard_cv: "0.04-0.11"
+    recovery_cv: "0.72-0.82"
+    provenance: "C458"
+
+  robustness_statistics:
+    noise_entropy_increase: "3.3%"
+    ablation_entropy_change: "0.8%"
+    cross_validation_max_change: "0.25%"
+    provenance: "C328, C329, C330"
+
+# ============================================================
+# PROVENANCE MAP
+# ============================================================
+provenance:
+  tier_0_frozen:
+    - "C074"   # Dominant Convergence
+    - "C079"   # Only STATE-C Essential
+    - "C084"   # System Targets MONOSTATE
+    - "C109"   # 5 Hazard Failure Classes
+    - "C115"   # 0 Non-Executable Tokens
+    - "C121"   # 49 Instruction Classes
+    - "C124"   # 100% Grammar Coverage
+    - "C171"   # Closed-Loop Control Only
+
+  kernel:
+    - "C085"   # 10 primitives
+    - "C089"   # Core within core
+    - "C103"   # k = ENERGY_MODULATOR
+    - "C104"   # h = PHASE_MANAGER
+    - "C105"   # e = STABILITY_ANCHOR
+    - "C107"   # Kernel BOUNDARY_ADJACENT
+
+  hazard:
+    - "C110"   # PHASE_ORDERING dominant
+    - "C111"   # 65% asymmetric
+    - "C112"   # 59% distant from kernel
+    - "C386"   # Additional suppressed transitions
+
+  program_line:
+    - "C357"   # Lines deliberately chunked
+    - "C358"   # Boundary tokens
+    - "C359"   # LINK suppressed at boundaries
+    - "C360"   # Grammar LINE-INVARIANT
+
+  link:
+    - "C334"   # LINK section conditioning
+    - "C339"   # E-class dominance
+    - "C340"   # LINK-escalation complementarity
+    - "C365"   # LINK spatially uniform
+    - "C366"   # LINK marks grammar state transitions
+
+  convergence:
+    - "C323"   # Terminal distribution
+    - "C324"   # Section-dependent terminals
+    - "C325"   # Completion gradient
+
+  recovery:
+    - "C397"   # qo-prefix escape route
+    - "C398"   # Escape role stratification
+    - "C399"   # Safe precedence pattern
+
+  design:
+    - "C458"   # Execution design clamp
+
+  robustness:
+    - "C328"   # Noise robustness
+    - "C329"   # Ablation robustness
+    - "C330"   # Cross-validation stable
+    - "C331"   # 49-class minimality
+
+  symmetry:
+    - "C391"   # Time-reversal symmetry
+
+  family_exclusion:
+    - "C126"   # 0 cross-family contradictions
+    - "C141"   # Cross-family transplant = zero degradation
+    - "C144"   # Families are emergent
+
+# ============================================================
+# END OF BCSC
+# ============================================================

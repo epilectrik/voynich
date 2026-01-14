@@ -1,0 +1,87 @@
+{
+  "total_entries": 37214,
+  "valid_entries": 23442,
+  "coverage_rate": 0.6299242220669641,
+  "by_domain": {
+    "ENERGY_OPERATOR": 13933,
+    "REGISTRY_REFERENCE": 1492,
+    "CORE_CONTROL": 4472,
+    "FREQUENT_OPERATOR": 3545
+  },
+  "by_material": {
+    "PHASE_SENSITIVE_MOBILE": 13933,
+    "PHASE_STABLE_DISTINCT": 1492,
+    "CROSS_CLASS": 4472,
+    "UNIFORM_MOBILE": 3545
+  },
+  "by_sister_mode": {
+    "alternate": 4943,
+    "primary": 9086
+  },
+  "by_prefix": {
+    "sh": 3303,
+    "ct": 1492,
+    "ch": 7181,
+    "da": 3619,
+    "ot": 1640,
+    "ok": 1905,
+    "ol": 853,
+    "qo": 3449
+  },
+  "by_section": {
+    "T": {
+      "ENERGY_OPERATOR": 846,
+      "REGISTRY_REFERENCE": 82,
+      "CORE_CONTROL": 303,
+      "FREQUENT_OPERATOR": 300
+    },
+    "H": {
+      "ENERGY_OPERATOR": 10273,
+      "CORE_CONTROL": 3051,
+      "FREQUENT_OPERATOR": 2251,
+      "REGISTRY_REFERENCE": 1282
+    },
+    "P": {
+      "FREQUENT_OPERATOR": 994,
+      "CORE_CONTROL": 1118,
+      "REGISTRY_REFERENCE": 128,
+      "ENERGY_OPERATOR": 2814
+    }
+  },
+  "unique_middles": 826,
+  "middle_by_domain": {
+    "ENERGY_OPERATOR": 564,
+    "REGISTRY_REFERENCE": 65,
+    "CORE_CONTROL": 176,
+    "FREQUENT_OPERATOR": 164
+  },
+  "domain_by_section": {
+    "T": {
+      "ENERGY_OPERATOR": 846,
+      "REGISTRY_REFERENCE": 82,
+      "CORE_CONTROL": 303,
+      "FREQUENT_OPERATOR": 300
+    },
+    "H": {
+      "ENERGY_OPERATOR": 10273,
+      "CORE_CONTROL": 3051,
+      "FREQUENT_OPERATOR": 2251,
+      "REGISTRY_REFERENCE": 1282
+    },
+    "P": {
+      "FREQUENT_OPERATOR": 994,
+      "CORE_CONTROL": 1118,
+      "REGISTRY_REFERENCE": 128,
+      "ENERGY_OPERATOR": 2814
+    }
+  },
+  "archetype_distribution": {
+    "Is material in correct phase/location?": 13933,
+    "Is energy input appropriate?": 13933,
+    "Is this the fraction I think it is?": 1492,
+    "Is this case like that previous case?": 1492,
+    "Should I intervene or wait?": 8017,
+    "What operating regime am I in?": 3545
+  },
+  "unique_middle_count": 826
+}
