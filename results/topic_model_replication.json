@@ -1,0 +1,147 @@
+{
+  "test": "TOPIC_MODEL_REPLICATION",
+  "date": "2026-01-14",
+  "yale_finding": "5-6 sections, only made sense with scribal identification",
+  "n_folios": 83,
+  "features_used": [
+    "hazard_density",
+    "escape_density",
+    "cei_total",
+    "link_density",
+    "execution_tension"
+  ],
+  "optimal_k": 3,
+  "silhouette_score": 0.3399,
+  "regime_purity": 62.7,
+  "cluster_details": {
+    "cluster_1": {
+      "n_folios": 35,
+      "folios": [
+        "f103r",
+        "f103v",
+        "f104r",
+        "f104v",
+        "f106r",
+        "f106v",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v",
+        "f112v",
+        "f114r",
+        "f114v",
+        "f115r",
+        "f41r",
+        "f75r",
+        "f75v",
+        "f76r",
+        "f76v",
+        "f77r",
+        "f77v",
+        "f78r",
+        "f78v",
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v",
+        "f81r",
+        "f81v",
+        "f82r",
+        "f82v",
+        "f83r",
+        "f83v",
+        "f84r",
+        "f84v"
+      ],
+      "regime_distribution": {
+        "REGIME_3": 7,
+        "REGIME_1": 27,
+        "REGIME_4": 1
+      },
+      "scribe_distribution": {
+        "Scribe_3": 14,
+        "Scribe_1": 1,
+        "Scribe_2": 20
+      }
+    },
+    "cluster_0": {
+      "n_folios": 23,
+      "folios": [
+        "f105r",
+        "f105v",
+        "f107r",
+        "f107v",
+        "f112r",
+        "f113v",
+        "f115v",
+        "f26v",
+        "f31v",
+        "f40v",
+        "f41v",
+        "f48r",
+        "f48v",
+        "f50r",
+        "f50v",
+        "f55v",
+        "f57r",
+        "f85r1",
+        "f85v2",
+        "f86v3",
+        "f86v5",
+        "f86v6",
+        "f95v1"
+      ],
+      "regime_distribution": {
+        "REGIME_2": 11,
+        "REGIME_1": 2,
+        "REGIME_4": 10
+      },
+      "scribe_distribution": {
+        "Scribe_3": 7,
+        "Scribe_1": 11,
+        "Scribe_2": 5
+      }
+    },
+    "cluster_2": {
+      "n_folios": 25,
+      "folios": [
+        "f113r",
+        "f116r",
+        "f26r",
+        "f31r",
+        "f33r",
+        "f33v",
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v",
+        "f40r",
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v",
+        "f55r",
+        "f66r",
+        "f66v",
+        "f85r2",
+        "f86v4",
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2"
+      ],
+      "regime_distribution": {
+        "REGIME_1": 2,
+        "REGIME_3": 9,
+        "REGIME_4": 14
+      },
+      "scribe_distribution": {
+        "Scribe_3": 2,
+        "Scribe_1": 21,
+        "Scribe_2": 2
+      }
+    }
+  },
+  "interpretation": "DIVERGENT: Optimal k=3 differs from Yale (5-6) and regimes (4)"
+}
