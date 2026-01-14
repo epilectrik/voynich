@@ -56,13 +56,18 @@
 
 ---
 
-### A.3: Misbinding Doesn't Break Meaning
+### A.3: Misbinding Disrupts Curriculum Structure
 
 **Davis:** "How can you read a book whose pages are out of order?"
 
-**Our model:** We treat folios as independent programs, explicitly robust to reordering. Our structural analysis doesn't assume sequence.
+**Our model:** While individual folios are self-contained programs, we discovered the manuscript has a **curriculum structure** (C161, C325) that was disrupted by misbinding. See [proposed_folio_reordering.md](proposed_folio_reordering.md).
 
-**Status:** ALIGNED - Our model is inherently order-independent.
+**Key finding:** Structural gradient optimization shows:
+- Current order has REVERSED gradients (rho = -0.23)
+- Optimal order shows strong positive gradients (rho = +0.85)
+- Regimes progress: REGIME_2 (early) → REGIME_1 (middle) → REGIME_3 (late)
+
+**Status:** ALIGNED - Both Davis and our analysis confirm misbinding. We can now propose a structural reordering.
 
 ---
 
@@ -229,10 +234,13 @@ Lisa Fagin Davis's materiality research provides **strong independent support** 
 
 1. **Singlian hypothesis** = Each bifolium as standalone unit → Aligns with "folio = program"
 2. **LSA independence** = Pages don't form narrative → Confirms operational independence
-3. **Misbinding** = Order doesn't matter → Our model is inherently order-independent
+3. **Misbinding confirmed** = Both Davis (LSA) and our analysis (structural gradients) converge on misbinding
 4. **Scribe-section mapping** = Operational specialization → Aligns with regime assignments
+5. **Curriculum structure recovered** = We can now propose original order based on C161/C325 gradients
 
-**No contradictions.** Three potential integration tests identified.
+**No contradictions.** We went beyond integration to propose a structural reordering.
+
+**Key advance:** Davis asks "how do we reorder?" - we now have an answer based on structural gradient optimization. See [proposed_folio_reordering.md](proposed_folio_reordering.md).
 
 ---
 
