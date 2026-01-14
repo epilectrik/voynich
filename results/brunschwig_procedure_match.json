@@ -1,0 +1,102 @@
+{
+  "test": "BRUNSCHWIG_PROCEDURE_MATCH",
+  "tier": 4,
+  "status": "SPECULATIVE",
+  "date": "2026-01-14",
+  "brunschwig_procedure": "Sixth Mode - Balneum Marie (Water Bath)",
+  "primary_candidate": {
+    "folio": "f104r",
+    "puff_match": "Chapter 1 - Rosen (Rose)",
+    "score": 1.0,
+    "tests_passed": 6,
+    "tests_total": 6,
+    "results": [
+      {
+        "test": "REGIME",
+        "predicted": "REGIME_1",
+        "actual": "REGIME_1",
+        "match": true,
+        "weight": 2
+      },
+      {
+        "test": "CEI_RANGE",
+        "predicted": "0.3-0.6",
+        "actual": "0.529",
+        "match": true,
+        "weight": 1.5
+      },
+      {
+        "test": "ESCAPE_DENSITY",
+        "predicted": ">= 0.15",
+        "actual": "0.208",
+        "match": true,
+        "weight": 2
+      },
+      {
+        "test": "HAZARD_RANGE",
+        "predicted": "0.4-0.7",
+        "actual": "0.572",
+        "match": true,
+        "weight": 1
+      },
+      {
+        "test": "INTERVENTION_FREQ",
+        "predicted": "3.0-8.0",
+        "actual": "5.02",
+        "match": true,
+        "weight": 1
+      },
+      {
+        "test": "RECOVERY_OPS",
+        "predicted": ">= 10",
+        "actual": "18",
+        "match": true,
+        "weight": 1.5
+      }
+    ]
+  },
+  "all_regime1_candidates": [
+    {
+      "folio": "f104r",
+      "score": 1.0
+    },
+    {
+      "folio": "f106r",
+      "score": 1.0
+    },
+    {
+      "folio": "f108v",
+      "score": 1.0
+    },
+    {
+      "folio": "f111r",
+      "score": 1.0
+    },
+    {
+      "folio": "f111v",
+      "score": 1.0
+    },
+    {
+      "folio": "f112r",
+      "score": 1.0
+    },
+    {
+      "folio": "f112v",
+      "score": 1.0
+    },
+    {
+      "folio": "f114r",
+      "score": 1.0
+    },
+    {
+      "folio": "f75r",
+      "score": 1.0
+    },
+    {
+      "folio": "f75v",
+      "score": 1.0
+    }
+  ],
+  "f104r_rank": 1,
+  "verdict": "STRONG_PROCEDURAL_MATCH"
+}

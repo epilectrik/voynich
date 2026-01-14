@@ -1,0 +1,129 @@
+{
+  "test": "BRUNSCHWIG_REGIME_DISCRIMINATION",
+  "tier": 4,
+  "status": "SPECULATIVE",
+  "date": "2026-01-14",
+  "tests_passed": 5,
+  "tests_total": 6,
+  "regime_stats": {
+    "REGIME_1": {
+      "count": 31,
+      "cei_mean": 0.5104034193548387,
+      "cei_std": 0.0575197278393968,
+      "escape_mean": 0.2019330324506367,
+      "escape_std": 0.0472453048749891,
+      "hazard_mean": 0.6076451612903225,
+      "hazard_std": 0.0349223408790579
+    },
+    "REGIME_2": {
+      "count": 11,
+      "cei_mean": 0.36688990909090907,
+      "cei_std": 0.11084163186136745,
+      "escape_mean": 0.10111018778622959,
+      "escape_std": 0.05009306353056519,
+      "hazard_mean": 0.4739090909090909,
+      "hazard_std": 0.0445566034285706
+    },
+    "REGIME_3": {
+      "count": 16,
+      "cei_mean": 0.7169473749999999,
+      "cei_std": 0.06817656164682502,
+      "escape_mean": 0.1692690343561261,
+      "escape_std": 0.08932469020841237,
+      "hazard_mean": 0.652625,
+      "hazard_std": 0.04489821822745309
+    },
+    "REGIME_4": {
+      "count": 25,
+      "cei_mean": 0.58353956,
+      "cei_std": 0.08020833005787699,
+      "escape_mean": 0.10720961294452024,
+      "escape_std": 0.03865143861144024,
+      "hazard_mean": 0.55116,
+      "hazard_std": 0.032952845097199104
+    }
+  },
+  "test_results": [
+    {
+      "test": "REGIME_1 = FIRST_DEGREE",
+      "passed": true,
+      "checks": [
+        [
+          "CEI <= max",
+          true
+        ],
+        [
+          "Escape >= min",
+          true
+        ],
+        [
+          "Hazard <= max",
+          true
+        ]
+      ]
+    },
+    {
+      "test": "REGIME_3 = THIRD_DEGREE",
+      "passed": true,
+      "checks": [
+        [
+          "CEI >= min",
+          true
+        ],
+        [
+          "Escape <= max",
+          true
+        ],
+        [
+          "Hazard >= min",
+          true
+        ]
+      ]
+    },
+    {
+      "test": "REGIME_4 = PRECISION (lowest escape)",
+      "passed": true,
+      "checks": [
+        [
+          "Escape <= max (narrowest)",
+          true
+        ]
+      ]
+    },
+    {
+      "test": "REGIME_2 = SECOND_DEGREE",
+      "passed": true,
+      "checks": [
+        [
+          "CEI in range",
+          true
+        ],
+        [
+          "Escape in range",
+          true
+        ]
+      ]
+    },
+    {
+      "test": "CEI ORDERING (energy escalation)",
+      "passed": true,
+      "checks": [
+        [
+          "Order matches",
+          true
+        ]
+      ]
+    },
+    {
+      "test": "ESCAPE ORDERING (forgiveness)",
+      "passed": false,
+      "checks": [
+        [
+          "Order matches",
+          false
+        ]
+      ]
+    }
+  ],
+  "verdict": "STRONG_DISCRIMINATION"
+}

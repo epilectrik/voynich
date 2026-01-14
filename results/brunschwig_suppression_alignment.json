@@ -1,0 +1,87 @@
+{
+  "test": "BRUNSCHWIG_SUPPRESSION_ALIGNMENT",
+  "tier": 4,
+  "status": "SPECULATIVE",
+  "date": "2026-01-14",
+  "tests": {
+    "suppression_alignment": {
+      "passed": 5,
+      "total": 5,
+      "results": [
+        {
+          "test": "CATEGORICAL -> GRAMMATICAL_IMPOSSIBILITY",
+          "passed": true
+        },
+        {
+          "test": "CATASTROPHIC -> FORBIDDEN_TRANSITIONS",
+          "passed": true
+        },
+        {
+          "test": "HIGH_SEVERITY -> DOMINANT_HAZARDS",
+          "passed": true
+        },
+        {
+          "test": "MODERATE -> INTERVENTION_CORRIDOR",
+          "passed": true
+        },
+        {
+          "test": "ENERGY_OVERSHOOT -> MINOR_HAZARD",
+          "passed": true
+        }
+      ]
+    },
+    "recovery_corridor": {
+      "passed": 4,
+      "total": 4,
+      "results": [
+        {
+          "test": "COOLING_DOMINANCE",
+          "passed": true
+        },
+        {
+          "test": "BOUNDED_REVERSIBILITY",
+          "passed": true
+        },
+        {
+          "test": "IRREVERSIBILITY_BOUNDARY",
+          "passed": true
+        },
+        {
+          "test": "E_NOT_K_RECOVERY",
+          "passed": true
+        }
+      ]
+    },
+    "clamping_magnitude": {
+      "passed": 5,
+      "total": 5,
+      "results": [
+        {
+          "test": "HAZARD_CLAMPING",
+          "passed": true
+        },
+        {
+          "test": "INTERVENTION_CLAMPING",
+          "passed": true
+        },
+        {
+          "test": "RECOVERY_FREEDOM",
+          "passed": true
+        },
+        {
+          "test": "NEAR_MISS_FREEDOM",
+          "passed": true
+        },
+        {
+          "test": "TWICE_ONLY_INTERPRETATION",
+          "passed": true
+        }
+      ]
+    }
+  },
+  "overall": {
+    "passed": 14,
+    "total": 14,
+    "verdict": "FULL_PROCEDURAL_ALIGNMENT"
+  }
+}

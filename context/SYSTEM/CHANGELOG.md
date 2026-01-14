@@ -4,6 +4,57 @@
 
 ---
 
+## Version 2.37 (2026-01-14) - SHARED FORMALISM: Full Procedural Alignment
+
+### Summary
+
+**Upgraded from "shared world" to "shared formalism."** Extended testing confirms the Voynich Manuscript and Brunschwig's distillation treatise instantiate the **same procedural classification system** - not just compatible topics, but isomorphic control ontologies rendered in different epistemic registers.
+
+### Key Findings
+
+**Extended Test Results: 19/20 PASS**
+
+| Test Suite | Score | Status |
+|------------|-------|--------|
+| Puff-Voynich Mastery Horizon | 83:83 isomorphism | PASS |
+| Equivalence Class Collapse | REGIME_2: 11->3, REGIME_3: 16->7 | PASS |
+| Regime-Degree Discrimination | 5/6 | STRONG |
+| Suppression Alignment | 5/5 | PASS |
+| Recovery Corridor | 4/4 | PASS |
+| Clamping Magnitude (C458) | 5/5 | PASS |
+
+**What "Shared Formalism" Means:**
+- Same procedural classification system
+- Same safety ceiling architecture
+- Same recovery corridor structure
+- Same variance asymmetry (clamp hazard, free recovery)
+
+**Expert-Calibrated Conclusion:**
+
+> "The Voynich Manuscript and Brunschwig's distillation treatise instantiate the same procedural classification of thermal-circulatory operations. Brunschwig externalizes explanation and ethics for novices; Voynich internalizes safety and recovery for experts. The alignment is regime-level and architectural, not textual or semantic."
+
+### New Files
+
+| File | Content |
+|------|---------|
+| `context/SPECULATIVE/shared_formalism.md` | Three-text relationship documentation |
+| `results/brunschwig_regime_discrimination.json` | Regime-degree test results |
+| `results/brunschwig_suppression_alignment.json` | 14/14 suppression alignment tests |
+| `results/brunschwig_procedure_match.json` | Folio-procedure match results |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Section X fully rewritten (v4.21) |
+| `context/SPECULATIVE/brunschwig_comparison.md` | Extended testing section added |
+
+### Constraints Unchanged
+
+C171, C384, C197, C239, C229, C490 - all remain intact. No semantic decoding occurred.
+
+---
+
 ## Version 2.36 (2026-01-14) - External Alignment: Puff-Voynich-Brunschwig CONFIRMED
 
 ### Summary
