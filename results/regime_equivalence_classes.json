@@ -1,0 +1,189 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "test": "EQUIVALENCE_CLASS_COLLAPSE",
+  "date": "2026-01-14",
+  "hypothesis": "REGIME_2/3 folios are reusable operational templates",
+  "expert_prediction": "Collapsing should yield Puff's sparse middle counts",
+  "puff_targets": {
+    "REGIME_1": 38,
+    "REGIME_2": 3,
+    "REGIME_3": 7,
+    "REGIME_4": 37
+  },
+  "voynich_raw": {
+    "REGIME_3": 16,
+    "REGIME_1": 31,
+    "REGIME_2": 11,
+    "REGIME_4": 25
+  },
+  "results": {
+    "REGIME_2": {
+      "regime": "REGIME_2",
+      "n_folios": 11,
+      "puff_target": 3,
+      "n_clusters_at_target": 3,
+      "target_is_natural": true,
+      "target_gap_rank": 3,
+      "top_natural_cuts": [
+        2,
+        8,
+        3
+      ],
+      "clusters": [
+        {
+          "cluster_id": 1,
+          "size": 8,
+          "members": [
+            "f105r",
+            "f107r",
+            "f113v",
+            "f115v",
+            "f26v",
+            "f48v",
+            "f86v3",
+            "f86v5"
+          ],
+          "avg_cei": 0.40182475,
+          "avg_escape": 0.11657293615974612
+        },
+        {
+          "cluster_id": 2,
+          "size": 1,
+          "members": [
+            "f105v"
+          ],
+          "avg_cei": 0.097001,
+          "avg_escape": 0.07948717948717948
+        },
+        {
+          "cluster_id": 3,
+          "size": 2,
+          "members": [
+            "f48r",
+            "f85v2"
+          ],
+          "avg_cei": 0.362095,
+          "avg_escape": 0.050070698441688516
+        }
+      ],
+      "merge_distances": [
+        1.045370493514474,
+        1.1978108997849053,
+        1.3735980899319469,
+        1.9803572278916217,
+        1.9974781526625893,
+        2.219712643544096,
+        2.6998417184032895,
+        2.738570404717632,
+        3.262724787223986,
+        3.88476044989291
+      ]
+    },
+    "REGIME_3": {
+      "regime": "REGIME_3",
+      "n_folios": 16,
+      "puff_target": 7,
+      "n_clusters_at_target": 7,
+      "target_is_natural": true,
+      "target_gap_rank": 13,
+      "top_natural_cuts": [
+        3,
+        5,
+        2
+      ],
+      "clusters": [
+        {
+          "cluster_id": 1,
+          "size": 5,
+          "members": [
+            "f103r",
+            "f104v",
+            "f114v",
+            "f115r",
+            "f31r"
+          ],
+          "avg_cei": 0.718079,
+          "avg_escape": 0.21801929606794757
+        },
+        {
+          "cluster_id": 2,
+          "size": 5,
+          "members": [
+            "f116r",
+            "f39r",
+            "f46r",
+            "f86v4",
+            "f95r1"
+          ],
+          "avg_cei": 0.7079142,
+          "avg_escape": 0.11080358097156609
+        },
+        {
+          "cluster_id": 3,
+          "size": 2,
+          "members": [
+            "f33r",
+            "f95r2"
+          ],
+          "avg_cei": 0.796029,
+          "avg_escape": 0.1087962962962963
+        },
+        {
+          "cluster_id": 4,
+          "size": 1,
+          "members": [
+            "f33v"
+          ],
+          "avg_cei": 0.72705,
+          "avg_escape": 0.009302325581395349
+        },
+        {
+          "cluster_id": 5,
+          "size": 1,
+          "members": [
+            "f77r"
+          ],
+          "avg_cei": 0.587548,
+          "avg_escape": 0.3369313801079414
+        },
+        {
+          "cluster_id": 6,
+          "size": 1,
+          "members": [
+            "f81r"
+          ],
+          "avg_cei": 0.596713,
+          "avg_escape": 0.18235995232419547
+        },
+        {
+          "cluster_id": 7,
+          "size": 1,
+          "members": [
+            "f83v"
+          ],
+          "avg_cei": 0.837823,
+          "avg_escape": 0.31800391389432486
+        }
+      ],
+      "merge_distances": [
+        0.5157654419338973,
+        0.8405193755521589,
+        0.9126858798500436,
+        1.0874264253228614,
+        1.2970451599317654,
+        1.433923562570729,
+        1.439767937297953,
+        1.492229153125293,
+        1.8895325576527635,
+        1.9399403006563898,
+        2.162106088447669,
+        2.7816708756182447,
+        3.084478844616488,
+        4.274684812101239,
+        4.878731122467785
+      ]
+    }
+  },
+  "verdict": "PASS"
+}
