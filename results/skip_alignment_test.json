@@ -1,0 +1,402 @@
+{
+  "phase": "ENTITY_MATCHING_CORRECTED",
+  "test": "SKIP_ALIGNMENT",
+  "tier": 3,
+  "status": "SPECULATIVE",
+  "date": "2026-01-14",
+  "data_counts": {
+    "puff_chapters": 85,
+    "voynich_folios": 83
+  },
+  "strict_alignment": {
+    "total_score": 473,
+    "matches": 83,
+    "exact_regime_matches": 26,
+    "adjacent_matches": 33,
+    "exact_rate": 0.3132530120481928
+  },
+  "gap_penalty_search": [
+    {
+      "gap_penalty": -1,
+      "score": 549.0,
+      "puff_gaps": 8,
+      "voynich_gaps": 10,
+      "exact_rate": 0.6,
+      "matches": 75
+    },
+    {
+      "gap_penalty": -2,
+      "score": 534.0,
+      "puff_gaps": 5,
+      "voynich_gaps": 7,
+      "exact_rate": 0.5384615384615384,
+      "matches": 78
+    },
+    {
+      "gap_penalty": -3,
+      "score": 522.0,
+      "puff_gaps": 4,
+      "voynich_gaps": 6,
+      "exact_rate": 0.5189873417721519,
+      "matches": 79
+    },
+    {
+      "gap_penalty": -4,
+      "score": 515.0,
+      "puff_gaps": 1,
+      "voynich_gaps": 3,
+      "exact_rate": 0.4268292682926829,
+      "matches": 82
+    },
+    {
+      "gap_penalty": -5,
+      "score": 511.0,
+      "puff_gaps": 1,
+      "voynich_gaps": 3,
+      "exact_rate": 0.4268292682926829,
+      "matches": 82
+    },
+    {
+      "gap_penalty": -6,
+      "score": 507.0,
+      "puff_gaps": 1,
+      "voynich_gaps": 3,
+      "exact_rate": 0.4268292682926829,
+      "matches": 82
+    },
+    {
+      "gap_penalty": -8,
+      "score": 502.0,
+      "puff_gaps": 0,
+      "voynich_gaps": 2,
+      "exact_rate": 0.3855421686746988,
+      "matches": 83
+    },
+    {
+      "gap_penalty": -10,
+      "score": 498.0,
+      "puff_gaps": 0,
+      "voynich_gaps": 2,
+      "exact_rate": 0.3855421686746988,
+      "matches": 83
+    }
+  ],
+  "optimal_alignment": {
+    "gap_penalty": -1,
+    "score": 549.0,
+    "total_positions": 93,
+    "matches": 75,
+    "puff_gaps": 8,
+    "voynich_gaps": 10,
+    "exact_regime_matches": 45,
+    "adjacent_matches": 19,
+    "exact_rate": 0.6
+  },
+  "comparison": {
+    "strict_exact_rate": 0.3132530120481928,
+    "skip_exact_rate": 0.6,
+    "improvement": 0.2867469879518072
+  },
+  "skipped_puff_chapters": [
+    15,
+    30,
+    31,
+    32,
+    33,
+    43,
+    50,
+    51,
+    60,
+    61
+  ],
+  "skipped_voynich_folios": [
+    "f41v",
+    "f86v6",
+    "f55v",
+    "f95v1",
+    "f57r",
+    "f40r",
+    "f95r1",
+    "f86v4"
+  ],
+  "verdict": "SKIP ALIGNMENT SIGNIFICANTLY BETTER",
+  "interpretation": "Gaps improve alignment, suggesting partial transmission",
+  "sample_alignment": [
+    {
+      "position": 1,
+      "puff": 1,
+      "puff_german": "Rosen",
+      "puff_degree": 1,
+      "voynich": "f48r",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 2,
+      "puff": 2,
+      "puff_german": "Rosen die auff den h",
+      "puff_degree": 1,
+      "voynich": "f105v",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 3,
+      "puff": 3,
+      "puff_german": "Schnelbl\u00c5\u00afmen, Clapp",
+      "puff_degree": 1,
+      "voynich": "f105r",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 4,
+      "puff": 4,
+      "puff_german": "Lilien, wei\u00c3\u0178",
+      "puff_degree": 1,
+      "voynich": "f115v",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 5,
+      "puff": 5,
+      "puff_german": "Lilien, plaw",
+      "puff_degree": 1,
+      "voynich": "f86v5",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 6,
+      "puff": 6,
+      "puff_german": "Sp\u00c3\u00b6cklilien oder ve",
+      "puff_degree": 1,
+      "voynich": "f85v2",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 7,
+      "puff": 7,
+      "puff_german": "Mayenpl\u00c5\u00afmen, Lilium",
+      "puff_degree": 1,
+      "voynich": "f86v3",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 8,
+      "puff": 8,
+      "puff_german": "Veyel",
+      "puff_degree": 1,
+      "voynich": "f107v",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_2",
+      "type": "ADJACENT"
+    },
+    {
+      "position": 9,
+      "puff": 9,
+      "puff_german": "Veyel, gelb",
+      "puff_degree": 1,
+      "voynich": "f107r",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 10,
+      "puff": null,
+      "voynich": "f41v",
+      "type": "PUFF_GAP"
+    },
+    {
+      "position": 11,
+      "puff": 10,
+      "puff_german": "Seepl\u00c5\u00afmen",
+      "puff_degree": 1,
+      "voynich": "f50r",
+      "voynich_regime": "REGIME_4",
+      "expected_regime": "REGIME_2",
+      "type": "DISTANT"
+    },
+    {
+      "position": 12,
+      "puff": 11,
+      "puff_german": "Ritter sporn",
+      "puff_degree": 1,
+      "voynich": "f113v",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 13,
+      "puff": 12,
+      "puff_german": "Ochsenzunge",
+      "puff_degree": 2,
+      "voynich": "f50v",
+      "voynich_regime": "REGIME_4",
+      "expected_regime": "REGIME_1",
+      "type": "DISTANT"
+    },
+    {
+      "position": 14,
+      "puff": 13,
+      "puff_german": "Porragen",
+      "puff_degree": 2,
+      "voynich": "f80v",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 15,
+      "puff": 14,
+      "puff_german": "Linden pl\u00c3\u00bc",
+      "puff_degree": 1,
+      "voynich": "f26v",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_2",
+      "type": "EXACT"
+    },
+    {
+      "position": 16,
+      "puff": 15,
+      "voynich": null,
+      "type": "VOYNICH_GAP"
+    },
+    {
+      "position": 17,
+      "puff": 16,
+      "puff_german": "Saurampffer",
+      "puff_degree": 2,
+      "voynich": "f81v",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 18,
+      "puff": 17,
+      "puff_german": "Nachtschatten",
+      "puff_degree": 3,
+      "voynich": "f40v",
+      "voynich_regime": "REGIME_4",
+      "expected_regime": "REGIME_3",
+      "type": "ADJACENT"
+    },
+    {
+      "position": 19,
+      "puff": 18,
+      "puff_german": "Hir\u00c3\u0178en zungen",
+      "puff_degree": 2,
+      "voynich": "f79v",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 20,
+      "puff": 19,
+      "puff_german": "Hau\u00c3\u0178wurtz",
+      "puff_degree": 2,
+      "voynich": "f112r",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 21,
+      "puff": null,
+      "voynich": "f86v6",
+      "type": "PUFF_GAP"
+    },
+    {
+      "position": 22,
+      "puff": null,
+      "voynich": "f55v",
+      "type": "PUFF_GAP"
+    },
+    {
+      "position": 23,
+      "puff": null,
+      "voynich": "f95v1",
+      "type": "PUFF_GAP"
+    },
+    {
+      "position": 24,
+      "puff": 20,
+      "puff_german": "Wegra\u00c3\u0178",
+      "puff_degree": 2,
+      "voynich": "f75v",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 25,
+      "puff": 21,
+      "puff_german": "Brunellen",
+      "puff_degree": 2,
+      "voynich": "f104r",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 26,
+      "puff": 22,
+      "puff_german": "Erdtrauch oder Centa",
+      "puff_degree": 2,
+      "voynich": "f82r",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    },
+    {
+      "position": 27,
+      "puff": null,
+      "voynich": "f57r",
+      "type": "PUFF_GAP"
+    },
+    {
+      "position": 28,
+      "puff": 23,
+      "puff_german": "Steinbrech",
+      "puff_degree": 2,
+      "voynich": "f48v",
+      "voynich_regime": "REGIME_2",
+      "expected_regime": "REGIME_1",
+      "type": "ADJACENT"
+    },
+    {
+      "position": 29,
+      "puff": 24,
+      "puff_german": "Abschlag",
+      "puff_degree": 3,
+      "voynich": "f85r1",
+      "voynich_regime": "REGIME_4",
+      "expected_regime": "REGIME_3",
+      "type": "ADJACENT"
+    },
+    {
+      "position": 30,
+      "puff": 25,
+      "puff_german": "Pappel",
+      "puff_degree": 2,
+      "voynich": "f80r",
+      "voynich_regime": "REGIME_1",
+      "expected_regime": "REGIME_1",
+      "type": "EXACT"
+    }
+  ]
+}
