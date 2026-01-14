@@ -1,0 +1,840 @@
+Yale Beinecke Library - The Voynich Manuscript
+Source: https://www.youtube.com/watch?v=YdnQun4CZ3k
+============================================================
+
+so the vanity manuscript this crazy mysterious manuscript written in this crazy
+mysterious language code glyph sex we don't even know what to call it because
+we don't know whether it's a code or a transcription or a translation or
+gibberish we just don't know this is this is where people like professor bower
+come in it's it's her job to figure that out uh my job is to think about the
+codecological structure of the manuscript what we can learn from that uh and
+the the paleography which is of course why we're here because we are going to
+learn some voynich poliography and as i said last week i've never taught
+voynich poliography before so this is the first time ever in all of history
+that this particular topic has been taught so that's exciting news so here we
+go so you've all read presumably rey's um the pieces that i assigned to you
+from this fabulous book with its fabulous author right here i highly recommend
+this book the voynich manuscript edited by ray clemens it's very inexpensive
+and it's really really terrific there's a lot of a lot of really interesting
+stuff in here and it comes with a uh with effects similar photo a photo effects
+simile and as you've seen the whole manuscript has been imaged very high
+resolution open access images available online not good enough for some boiler
+challenges who think that they need to be higher resolution these images are
+high enough resolution for anything anybody wants to do so let's run through
+the history of the manuscript really quickly because everything about this
+manuscript any anything you can glean is going to be important and anyone who
+has a theory to uh put out there about the voyage manuscript is extremely
+important that all of the things that we know about it already are factored
+into that uh into that theory i've kind of become a professional voyage
+debunker over the years and part of my response is always have you done the
+reading have you checked the facts make sure that whatever you're doing is
+consistent with what we actually know about this manuscript because there are a
+lot of people out there with a lot of ideas about it and many of them are not
+founded on anything except their own uh inspiration is that their questions but
+they still get published on the topic yes anyone will publish anything these
+days two years ago the titans book review in london uh published a whole
+article about how the voynich was just abbreviations that one could use
+capellis to decode and they told me this was coming out and i said do you want
+to run it by me just to see because i've seen a few no no no we want everyone
+it's absolutely convincing we wanted all everyone to see it all at the same
+time and i got it but i was hysterical i thought it was the funniest thing i've
+ever seen it was embarrassing it was a business so so let's talk about the
+let's talk about the facts so here's what we what we know what we think we know
+the first time the manuscript enters the historic record is when it is
+purchased by emperor rudolph ii of germany the holy roman emperor uh in the
+sometime in the late 16th century we don't know exactly when but the reason we
+know this is because of this letter this is the facsimile of the letter the
+real letter is in the in the stack somewhere but we have this letter that was
+written uh in 1665 that details the early history of the manuscript and it came
+to the bible key with the manuscript itself and it provides a lot of
+information we have to take it on faith that what is reported here is is true
+because there there isn't any secondary evidence yet supporting uh some of the
+earliest history of the manuscript so edward rudolph ii buys the manuscript he
+passes it on after his death uh well he thinks it's uh written by john d um
+that is is it isn't it's maybe it was owned by him once upon a time probably
+not but there's no evidence there's no evidence people really really want john
+d to be associated with this manuscript but the evidence is very very
+circumstantial after the emperor dies he leaves the manuscript to jacob
+tinapius whose name in czech i cannot pronounce temponach and if we go to the
+actual manuscript here for a moment we go back to the very first page there is
+in fact uh an erased inscription right here let me zoom in on that you can see
+this part at the bottom that's been that has sort of a stain and that is
+damaged and under ultraviolet light you can actually uh read this so there's
+the first page here we're going to zoom in at the bottom and look at the
+ultraviolet image kind of hard to see in this light but you can in fact make
+out this signature of uh tinafias who was an alchemist in prague so so far
+we've got two owners in prague we're in prague where rudolph's court was and
+now tanakis who inherits the manuscript he passes it on to his friend george
+varesh in the middle of the 17th century or when he dies so he dies in 1622 so
+at that point it's handed over to you then it makes its way to johannes marcus
+markey and he was the one who wrote this letter that he sent with the
+manuscript when he gave it as a gift to athanasius kierke who's a very
+well-known jesuit scholar and so this is a letter to kierke from marky and in
+this letter he explains what he knows of the history of the manuscript and then
+talks about um efforts to decipher it kierker had just published a a dictionary
+of hieroglyphics so marky was convinced that nobody but athanasius kierker
+could possibly figure out what this manuscript says so at that point in 1665
+the manuscript is set to run and it stays there for a really long time in the
+hand of hands of the jesuits we think probably probably so at the collegue
+romano uh the librarian petrus dex his um book plate is in one of these boxes
+associates it uh continuing the association with the jesuits in rome and then
+uh the jesuit college at villa mandragone outside of rome which is where
+wilfred voynich finds it and purchases it the story what really happened we
+don't know but the story goes that he was there they needed some money they
+said to him buy whatever you want just go rummage and he found this manuscript
+and he just kind of added it to his pile and so he's got this big pile of
+manuscripts and he says hey you know i'll give you this much for this for this
+group and they're like sure fine so he takes these manuscripts they didn't
+really know what he had bought or what he had left or so he has this manuscript
+now during his lifetime he refused to say where he had acquired it um possibly
+because he wasn't maybe he didn't feel that he didn't want them to know that he
+had ended up with it or to enhance the mystery of it so all of these rumors
+start flying around voynich that maybe he had written it himself or who knows
+where it had come from so about 1919 voynich comes to the united states and
+sets up shop in manhattan right across the street from the new york public
+library and starts trying to market this manuscript and the only way he knows
+the only way anybody's going to buy this book is if he can get some scholarly
+credibility behind it somebody who can read it who can give it a really
+fantastic origin story and then he's going to sell it for a hundred thousand
+dollars make just buckets and buckets of money nobody wants to buy this
+manuscript because nobody knows what it is uh in the meantime uh just after uh
+he moves to new york he is bragging to someone at a dinner party in chicago
+about this manuscript he owns that no one can read and the person sitting
+across from him does his patriotic duty and reports it to the fbi and says
+there's this immigrant with this funny accent is probably jewish and he has
+this manuscript that's a code so i think you should investigate him and they do
+the fbi investigates voyage for years uh accusing him of having a secret code
+book that he's um using to spy on the united states government eventually he
+convinces them that it is in fact an ancient manuscript and he does this with
+the help of several professors one from the university of chicago and one from
+the university of pennsylvania this gentleman uh professor newbold so william
+newbold is the first person to put out a voynich theory and then be publicly
+humiliated about it it's a long a long line of people who have had that
+experience his humiliation happened after he was dead so it didn't happen they
+waited to publish the rebuttal of his theory until he had died um and so his
+theory is that the manuscript is written in uh basically micrography that each
+glyph or letter form is uh made up of tiny little letters that when you put
+them together there they create uh an encoded text that he then decodes it's
+not true it's just it's just not uh and his theory uh results in the um he has
+this he draws this conclusion that the whole thing was written by roger bacon
+roger bacon 13th century roger bacon uh so this idea that bacon uh had a
+telescope so this is supposed to be a drawing of the uh one of the nebulas the
+andromeda nebula i think and this the world goes crazy when this is announced
+in 1919 uh and then his book is published posthumously and there are all these
+articles in the newspaper it sounds familiar right this is what happens today
+somebody puts a theory out there to the world the press goes berserk and then
+later on in a respectable journal speculum the journal of the medieval academy
+of america the organization that i am now the executive director of which is a
+nice synergy uh in speculum after his death his theory is just savage just
+completely ripped to shreds in 50 pages probably the longest book review that's
+ever been published in speculum so moving along newbold's theory has been
+completely trashed no one will buy this stupid manuscript voynich dies in 1931
+and the manuscript becomes part of his estate where it is recorded in the 1938
+dorichi census of medieval and renaissance manuscripts in the united states and
+canada is recorded as just the cipher manuscript so now his wife has it ethel
+so ethel has the manuscript now she can't sell it either and the office manager
+business manager and neil continues to try and network and try and work the
+worker contacts to see if she can sell this manuscript they're going broke with
+voynich after voynich died they don't have money to pay off their debts they
+can't sell anything the depression is hit the great collectors are not buying
+for the time being because they can't they've all you know been been demolished
+by the depression so they're stuck with it they put it in a safe and they just
+they just leave it even as they're selling off all of their stock shutting down
+the business but they still have the voyage manuscript sitting in a safe and
+they're paying to insure it but they and they cannot they cannot get rid of the
+damn thing then ethel dies in 1961 the manuscript is inherited by andell their
+long-time business manager so now anil's trying to sell the manuscript by
+herself she can't do it she makes an arrangement with a book dealer hans krauss
+in new york she sells the manuscript to him for twenty four thousand five
+hundred dollars uh in exchange for a commitment that when he sells it she'll
+get half of the proceeds above her original sales price so now hans cross has
+got the manuscript it's 1962. and for seven years he's trying to sell this
+manuscript no one will buy it because nobody knows what it is is it a forgery
+is it a fake is it was it something voyage did nobody knows what it is what it
+means how important or unimportant it might be and so krause is stuck with it
+and yet at the same time there are all these people who want to see it everyone
+is showing up people make demands they want to look at it they want to order
+pictures and so in the end he decides he's going to give it to an institution
+so that it can be freely studied and that institution as spoiler alert as you
+can probably guess was the binding keyword book in manuscript library with whom
+he had a really long and uh fruitful business relationship yale has hundreds of
+manuscripts that they bought from krauss over the years so it has been here
+here it is and it has been here since uh 1969 just sitting in the dark in its
+cozy little custom box waiting for someone to figure out what the heck it is um
+and now that there are uh high resolution images online the whole world can get
+after it um and i'll tell you really quickly my own relationship with this
+manuscript started in 1988 when i was hired as the assistant to the curator of
+pre-1600 rare books and manuscripts robert babcock uh here in the by mcgee uh
+when i started grad school and bob for whom this was really across to bear this
+manuscript he wanted nothing to do with the correspondence and so part of my
+responsibilities involved handling voyage-related correspondence so whenever
+some theory showed up or someone needed images or they needed something checked
+it was it was my job to go and answer uh that and so i have correspondence
+going with some interesting people for a while there so i've been really
+interested in this manuscript for a really long time but it's only in the in
+recent years as i as it's become more well known online and and more and more
+solutions are getting posted and tweeted and blogged about and just out there
+on social media that um i've been doing i started doing more and more reading
+about it um this book came out i read you know that i've read uh several times
+and i saw in several places people saying things like we just don't really know
+how many scribes there are we really need a paleographer to look at this
+problem and at one point i thought holy crap i'm a paleontologist this is the
+job i was born to do and so that's how i started thinking about the scripted
+scribes of the voyage and actually doing thinking of it as a as a legitimate
+object worthy of actual study instead of just something that you roll your eyes
+about uh and of course that still happens um but it is an actual real medieval
+object and worthy of study now before i give the big reveal and if you if you
+did the reading you already know the answer to this question there's a little
+blank space at the top of my slide there for the date of origin of the
+manuscript of the parchment for the manuscript and if you did the reading you
+know this already but i would ask you heliographers that you are if i just
+showed you this image and i said well what do you think your paleographers what
+do you think is it what is it what does it remind you of what what what era
+does it feel like is it is it late antique is it pre-caroline is it caroline is
+it romanesque is it gothic is it humanistic pick one don't be scared any
+thoughts come on don't be frightened anyone have any ideas here let's look at
+it this way here are some voynich ease letters on the left with some analogous
+letters from a contemporary manuscript can you zoom in can you make that bigger
+i don't know if it's possible to make that larger for everyone yeah that's much
+better does that help any ideas anyone [Music] humanist who said that i can't
+see he said yes exactly it is very very reminiscent of italian humanist
+manuscripts script that doesn't mean it's italian people like to think that
+that means it's italian but it does not mean that at all and yes it has a lot
+of similarities to some of the some of the characters so the characters that
+i've put up the voyniches characters some letters on the left some numbers on
+the right are very similar to um what you might encounter in an early 15th
+century italian manuscripts this one is uh from the huntington and here i put
+them side by side now the the trap that people fall into is they think oh well
+that looks like a humanistic letter that looks like it's a town that's really
+similar to what you find in italy therefore the manuscript must be from italy
+and that's the that's the kind of leaps of logic that we really have to be
+careful about because we don't know where this manuscript was written those
+similarities could just be coincidences could be written by someone you know in
+timbuktu for all we know there's we just don't know all we know is that it
+enters the historic record in prague that's really all we know um there is
+other evidence in the manuscript though about its earlier history and we'll
+look at that in a minute however they did in 2011 something like that the
+carbon dating yeah i can find it oh it's in the black yeah this is the book so
+target dating of the parchment concluded within a 98 probability or some
+something very solid 2009 that the parchment was sourced the animal was killed
+and stopped growing uh between 1404 and 1438. that's a really that's a really
+great time period that's a pretty short window uh there so and people like to
+say well maybe the parchment sat around for 500 years maybe but that's pretty
+unlikely maybe voynich cleaned the parchment he found old parchment cleaned it
+all off and forged this new manuscript possible really unlikely you know you
+got to think about the bell curve right i mean in the round the possibility yes
+it could have been dropped off by aliens last week sure but voyage would have
+had to have known what the inks yes exactly he he was writing in the time
+before the forensic analysis of inks so right and and testing testing on the
+inks has also shown that they are consistent with medieval ink uh that they are
+not um they don't have any modern uh and the same with the pigments that the
+inks and the pigments are all consistent with medieval techniques and medieval
+uh ingredients so i think we all feel pretty good saying yes this manuscript
+dates from the early 15th century where i don't know almost certainly not on
+this side of the atlantic some have argued that it's meso-american pretty
+unlikely uh we now know roger bacon is definitely out because he was long dead
+i people wanted to make a case for leonardo da vinci nope he wasn't even born
+yet so then you get people running around going well if it's from the early
+15th century who are the people we know about who might have been able to who
+might have made this manuscript well that's very nice but of all the people who
+were alive at that time how many of them have actually made it into the
+historic record pretty small few pretty small number so now we're left with so
+that's all we know that's all we know there's a lot still we don't know for
+example what the damn thing says um and so now i want to give you a very quick
+tour of the contents and then to show you that sort of thinking about the the
+genre of this book so it begins with 55 leaves and i'm going to leave this just
+sitting here open but i don't want to handle it any more than absolutely
+necessary so i'm going to flip through this book because this one we can do
+whatever we want to okay so we start with pages and pages and pages of
+botanical illustrations i've heard this one referred to as as representing
+cannabis uh so we go and each of these appears to be by when you compare it to
+other botanicals other herbals this is how they tend to be written where you
+have the a very detailed illustration so for each one of these plants if it's
+got some kind of flower it's got a stem and leaves and it has a root system and
+then you have some kind of text that presumably describes it how to take care
+of it and what its um what its features are uh medicinally or what it's used
+for and this goes on and on and on for 50 something 55 leaves then and and
+they're really not particularly identifiable as real plants people spend a lot
+of time trying to identify these but they're some of them are are pretty
+clearly not real plants uh but maybe they're fantastic um badly drawn
+illustrations of real plants i i couldn't possibly tell you but there are
+people who have devoted an awful lot of time to identifying what all of these
+different plans are so when we get through that section we have um sort of some
+miscellaneous stuff uh that we'll talk about more pretty soon then you have the
+first of a series of fold-outs now the actual fold-outs in the manuscript are
+much too fragile to open so for the fold-outs we we have to look at the at the
+facsimile but these are um they're stars sun moon there's some kind of
+astronomical or astrological and you can imagine how excited people get about
+these stars because each one of them seems to have a label next to it uh and if
+of course if we could read what these labels said we would know something very
+useful about the manuscript but we cannot read them as of yet then you have uh
+these zodiacal diagrams over here uh some of them are missing but there should
+be one per month they're very clearly identifiable as signs of the zodiac so
+this one for example uh you've got the two fish so here's pisces here's aries
+and on and on and this is where we get some of the evidence about the
+mysterious 150 years between when the manuscript was produced and when it
+arrives in prague to emperor rudolph's court because in the middle of these
+diagrams are these later annotations can you see that right there i'll hold it
+up this way right there so uh that one says april for example but they're not
+they're not obviously recognizable as any particular romance language but they
+are definitely some kind of romance language where the the names of the months
+have actually been recorded uh in a slightly later hand than the manuscript i
+don't think it's too much later what do you think every reason yeah yeah i i
+think we're all in agreement there that that's those were probably added in the
+some time in the 15th century but are they evidence about the early ownership
+or the early journeys of the manuscript probably then we get to my favorite
+part of the manuscript i love this part the bowel neological section so
+baumiology there we go bioneology is the the medieval science of medicinal
+bathing so it's called the bowel neology section we don't know if that's really
+what it's about but it has all these pictures of of ladies bathing and some
+kind of waterworks flowing so and then over here you have what seemed to be and
+i always seem to be because we just don't know but they should look like um by
+biological diagrams and down here too um that looks like a female reproductive
+system is it that i don't know i wouldn't say it is that but that's what it
+looks like uh all right so then you've got the bountyology section and that
+goes on for a while then we have uh what is this pretty fabulous fold out and
+we cannot definitely not open it in the real one because it is extremely
+fragile but you you you start with these three pages and then you open it and
+you get this really crazy uh page in nine segments it tends to be referred to
+as the rosettes page and there these are identified by directional um quadrants
+so this would be north east this is northwest south and so on just as a way of
+identifying where you are on the page and they have writing and they have
+little there are little structural images there's this looks like a little
+castle here what this is i have no idea but it's uh another part of the
+manuscript that that people who study it really get obsessed with is it a map
+is it some kind of diagram is it some kind of um a chart showing uh movements
+of people across space and time i can't i can't even i just who knows and so
+there's nothing like it there's absolutely nothing um nothing analogous to uh
+to that and then you have kind of some miscellaneous bits back here that seem
+to be out of order maybe that are kind of mixed up these pages that that are
+referred to as pharmacological because they've got all of these what look like
+ingredients and then some kind of vessel and maybe some instructions are they
+recipes maybe maybe not but that's sort of what they what they look like so
+they tend to be referred to as recipes or uh the pharmacological section some
+more botany a few more herbal pages mixed in and then we go back to the
+pharmaceuticals and then at the very end you have a whole choir here of um
+paragraphs each of which is marked by a by a star there are not 365 of them
+we'd like there to be 365 but there are not uh and of course what is this
+there's absolutely no context for this there isn't even any illustrative
+context to help you get a handle on what this might be the other the other
+sections of the manuscript at least you can kind of positively guess based on
+the illustration and then the manuscript ends there and then um can i flip this
+to the to the back all right so let's look at the last the last page of the
+actual manuscript so you can see what we're talking about here so way up here
+at the top can you zoom in at the top there there are a few lines of text that
+are kind of a mixture of german and um voyniches and maybe something else
+they're they're not the same as the script and the text that you find elsewhere
+in the manuscript and this these just these few lines very difficult to read
+faded abraded um a lot of a lot of people have thought are the key to the whole
+thing maybe maybe not that's the that's the crux of this whole manuscript it's
+always maybe maybe not um so that's the the object itself so now let's let's
+talk i'm going to move into talking about the methodologies that uh that
+voidtologists use to attack this manuscript the first thing you have to do when
+you're i'm just going to open it on to some place where the law is comfortably
+there we go um one of the things that you have to do when you're looking and
+you want to do some kind of a linguistic analysis say you can't type this into
+a word processor or some kind of computing because a computer can't parse these
+glyphs it can't make any sense out of them so a long time ago 40 40 something
+years ago voynichologists started creating transcription alphabets that allow
+you to type in voyages using ascii characters so here's an example of one of
+those this is called the european voynich alphabet or actually now it's known
+as the extensible voynich alphabet and it's the one that most people use so if
+you are going to substitute uh one of the characters with one of these ascii
+characters the main thing you always have to remember is it doesn't mean that
+that is what that character means this is totally um random not completely
+random because some of them sort of look like what they're transcribed as but
+there there's no semantic relationship between these substitutions and the
+voynich glyphs they just allow you to type up the uh to transcribe the
+manuscript in a way that then a computer can go in and start analyzing
+different combinations and different uh frequencies of letter forms uh which
+then linguists like dr bowen can then compare to known languages and see if
+there are any patterns that emerge now there are other um transcription
+alphabets here's one called v101 that identifies many more of glyphs many more
+symbols in the manuscript so then you have to ask yourself well how many how
+many letters are there in voyniches nobody nobody can nobody can can come to
+agreement on that question everyone has their own ideas about what constitutes
+a separate two different letters two letters that look really similar but are
+different slightly different in the way the stroke turns to the right as
+opposed to going straight up are those the same just written slightly different
+or are they actually two different letters it may sound like kind of an obscure
+and unimportant detail but it's really really important for linguists to make
+these decisions and they have to base their work on this on at the very
+beginning on understanding how many letters there are in buoyancy i have my own
+ideas based on my paleographical analyses because i come at this as a
+paleographer so this is my my collection of buoyancy symbols in order of
+frequency the one where people really disagree the most is this one that looks
+like a four and a zero i'm going to refer to it as q o because in the
+transcription alphabet that the letter that looks like a four is is called q um
+so this is transcribed as q o i would make the case that because every time
+this character occurs which is a lot all these yellow highlights are places on
+those pages where you get that it is always almost always not always always go
+back but almost always everywhere in the manuscript whichever scribe those two
+characters are legated so they're always connected the number of times that you
+see a queue without an o just both by itself are so rare as to be almost
+statistically insignificant and so i would make the case that that's actually a
+separate letter that it's not a cue followed by an o but its own separate glyph
+and this becomes significant when you start looking at letter frequency so for
+example here are these are all of the glyphs that have a occurrence of more
+than two percent in the voynich manuscript and you can see in this calculation
+this is assuming that q and o are two separate letters so when you look at this
+if you calculate it that way o is the most common letter not remember it's not
+an actual o it's a i'm just talking european voyage outfit here i'm speaking
+eva so the o is the most common and you can see the q down there circled has a
+percentage rate of almost three percent whereas the o is almost 12 if we redo
+the calculation we and assume that qo is a single character so we have to
+subtract from the number of o's the number of q o's so it's not double counted
+look at what happens to the o suddenly the o is in third and its frequency rate
+drops to less than nine percent and the q o is basically exactly the same
+because there are so few instances of q by itself for me and my work this this
+feels significant to me for linguists it's even more significant as claire
+would tell you because the frequencies really matter when you're trying to
+compare with frequencies in in other languages claire do you want to jump in do
+you have anything to add to that um sure yeah uh not not a lot to add to it but
+i i agree absolutely and um so i guess one of the things that um i would add is
+that um when we're decoding um letters or trying to work out what let like how
+letters are formed into words and things like that often we make use of our
+knowledge of the language to to do that so for instance if we have a a latin
+manuscript and we're reading what's on the page we're usually not reading the
+individual letters we're um getting a sense of the uh of the word and say okay
+so that that word must be um in keep it therefore even though i can't even read
+i can't really read this p i know it must be a p because i know what this word
+is um and so for for buena cheese we don't know what the words are um we don't
+know what all the letters are um and so that makes it very difficult to um
+build hypotheses about what the um about the language underlying it and what
+the what the relationship is between the words and the um the words the letters
+and the sounds that the letters might represent even if they even do represent
+um uh individual uh individual sounds right idea right we don't even know what
+genre the the separate letters represent right yeah so for instance if it's a
+uh if it's a kind of substitution cipher where we write um uh say the um the c
+character the most frequent character in uh in the uh uh the graph that's
+that's on the the screen right now if that say that's an e and then say the
+next one is an a and then the next one is an i or something like that we could
+kind of read it like that but of course we get gibberish from uh from that um
+and any sort of decoding like that has uh produced a lot of the examples of um
+decoding and decipherment uh tend to be based on these these sort of pretty
+straightforward substitution ciphers um and they're all they all produce
+gibberish because they don't produce um reasonable language that uh that
+underlies the um the system therefore we're probably not dealing with that sort
+of system uh but what other sort of system we're dealing with is uh yeah very
+much very much up in the air and that's why there are so there are so many
+linguists working on this on this manuscript to try to attack it from all sorts
+of different uh from all sorts of different angles and no one has really has
+really found the answer yet we still don't even know for sure whether it
+represents an actual human language or whether it doesn't you know there are
+people who argue it does and people who argue it doesn't and they've all got
+strong you know mathematical and linguistic arguments uh and we just actually i
+would say a lot of the a lot of these um theories are not from not not so much
+from uh from linguists but they're from people with hunches um they have a uh
+uh my brilliant idea is that you know i looked at this manuscript and i thought
+oh i bet it's this and then i look at all the um all the ideas that that make
+uh that make me think all the evidence in favor of it being uh being this i i
+think it's estonian and so i'm going to write all my energy into that you
+always have to go back to first principles with any theory right you have to go
+back to the very beginning and see what they're basing what are the assumptions
+that they're starting with and if those assumptions can't be um can't be be
+argued in a way that that is valid and convincing then the whole thing just
+falls apart right and the assumptions are usually based on hunches and their
+own brilliance and that often falls apart as we have seen um sometimes even
+private sometimes in the pages of the conscious literary supplement my dog
+spoke to me or something uh all right so let's move on now uh and let's talk
+about um the so the glyph set right so we've already identified all of these
+that have kind of analogs that look familiar that are designed to lead you
+astray because they look so damn familiar but then you've also got these um
+that are called gallows characters that are uh can be classified according to
+how many loops and how many legs they have so um they're they're very very
+common they're found everywhere in this manuscript and they're they're
+unprecedented they're just totally unusual then you've also got what are called
+bench gallows where that bench character is stretched out interfixed with the
+gallows to create this new character and those also can be classified by the
+number of loops and the number of legs so there already you've got a series of
+characters that need to be added to our glove set then um on this sort of just
+shows uh where you can see all of these characters in there in their natural
+environment and that's actually page 50 it's folio 56 and 57 let's see here we
+go so these two just by a nice coincidence on these two facing pages 57b and 58
+you can actually see just about every character um that's used multi you know
+multiple times in the manuscript and where um tobias is zooming in right now is
+actually a really interesting page that has a lot of characters that appear
+only once uh so i've circled them here um that are just totally mysterious with
+no absolutely no idea and they don't appear anywhere else in the manuscript now
+there are uh pages that are missing and we'll talk about the code ecology uh in
+just a minute uh and then you also have these which are some of my favorite my
+favorite voyage characters that are they look sort of like their ligatures of
+dutches and bench gallows um but they also tend to appear only in the top
+margin which or between paragraphs which suggest that they're decorative not
+that they don't have a special semantic purpose um but that's also still uh to
+be determined but i'm i'm really fascinated by them because they they look like
+an attempt to combine these different gallows uh in some way and if we just
+knew what the gallows meant we would be able to parse what's happening uh in
+these kind of combos in these located combination um gallows and bench and
+bench gallows characters all right so now let's talk about paleography because
+that's why we're here uh let me keep an eye on the time um if everyone can can
+stand it i think we won't take a break because we just have so much to do if
+you need to run off and take a break please do that i'm gonna i'm gonna forge
+ahead because we just have so much we want to talk about um so let's talk
+paleography so what we're looking at here is a folio 31v and folio 32 so i'm
+going to turn to those leaves in the actual manuscript here we go 31 verso and
+32 recto and i will add here you can zoom in to the folio number the
+exfoliation was added later this is significantly later maybe 17th century
+maybe that it seems early to me but i don't go past 16 okay 16 17th century
+after the manuscript was rebound and um since that foliation was added about a
+dozen liens have gone missing and we know that because the foliation skips and
+so that's how we know how many leaves are missing we don't know how many leaves
+were missing before the foliation was added so we had no idea how many these
+were actually originally in the manuscript but if we zoom in on these two would
+i just do that there we go uh just by looking can you just sort of zoom in to
+the middle like just zoom in as tight as you can yeah there we go so does
+anybody anybody want to make some observations about these two hands is this
+one hand is it two hands how are they the same how are they different anybody
+want to jump in do you have any observations to make um they look quite like
+they look fairly different in terms of just even the size and sort of the um
+this would be kind the ductus would be related to the cramped sense of the one
+handwriting yes exactly so this one over here on the left is is much more tight
+cramped uh slanted whereas the one on the right is the the lines are more
+broadly spaced this one i hate to use that word but it's more legible than than
+the one on the right and so this um long back in the back in the 70s these two
+hands were distinguished by a void of geologist named prescott courier so he
+was the first person to to identify these two hands known as describe what it's
+right here he also observed that there are linguistic patterns that are unique
+to scribe one and that are unique described too so even though they're both
+writing in voyages they have different um different some some different
+linguistic quirks i won't say linguistic that's the wrong word orthographic who
+knows what they need but they use voyages slightly differently and those
+differences also are really important and i is something that's being um
+investigated much more now by linguists and computer scientists and um so and
+and those differences are they they're called language a and language b
+language a is scribe one language b scribe two i don't claire can also pitch in
+here but i i don't think they're different enough to be called different
+languages i that just feels weird to me not a linguist but i wouldn't use that
+term i tend to say dialects just because they're different but they're not
+super different i don't know claire what do you what do you do yeah um i i use
+language in uh scare quotes yeah for exactly the same reasons that um that you
+mentioned so we don't know whether um it's the same language um underlying both
+systems but a different uh incitement system or whether it's a um uh whether
+there's uh yeah different variations in like uh more like regional dialects or
+more like two closely related languages or um you know if one is latin and one
+is french depending on the incitement system you might get similar sort of
+things um but they do come out as different in um tests for things like word
+frequency um and there are some patterns which are extremely common in uh in
+one which are not very common in the other um but overall they're pretty
+similar so the uh the characters that are um the most um the most frequent in
+each um in each language are pretty similar they differ a little but then we
+have uh we have much more of like uh we have more samples of language b than of
+language a um because because language a is only scribe one right yeah yeah so
+so so you talk about hand a hand one describe one squad two and language in
+quotes language one like language a and language b so those are those are two
+different um uh those are just two different things right the writing system
+versus what is being written those are two different um two different things
+but they are there is a very close association between language and scribe in
+the manuscript and that that that feels significant we just don't know what it
+what it actually means so we've known for a long time describe what i'm
+subscribed to prescott courier went through the rest of the manuscript and made
+a stab at at making other scribal distinctions but his his work wasn't really
+thorough it wasn't really done and it wasn't all that convincing once you got
+past describe what it's right too and so this is why i decided to to get in to
+start doing polygraphical work on this manuscript because as i said i am in
+fact a paleographer and a voyage and uh someone who's interested in the voynich
+so it's a nice intersection of interests of mine and skill sets so now let's
+talk about paleography so we've talked about this a lot paleography means a lot
+of different skill sets right it's not it's about it's about a lot of things so
+it's about attribution so comparing your manuscript with manuscripts of a known
+date and place to see if you can decide is it french is it italian is it early
+15th is it late 15th and that's the kind of work that we've that we've done
+right when we were looking at uncharts well this is italian unchilled this is
+northumbria nonchalant how do we tell the difference this is northern gothic
+this is southern rotunda how do we tell the difference uh and so that's uh
+attribution with the voynich there are no other samples to compare to so
+attribution uh is out the door we can't do it what else have we got literacy
+well obviously literacy is no good right we're trying to learn how to read
+roman cursive uh you all were champions at that we're learning how to read but
+hard right we're learning how to read these scripts that are not familiar to us
+we can't read boy the cheese so we can't we can't do that either so attribution
+is out literacy is out what have we got left well description let's dig into
+the individual hands let's look at the graphic properties let's talk about
+ductus let's talk about how each individual letter form is formed and talk
+about how we can determine when a a page was written by one scribe as opposed
+to having been written by another scribe and we did that as well right remember
+when you were looking at the the caroline manuscript 571 i think it was where
+we looked at all the different hands that occurred and tried to think about how
+we can distinguish between them um by looking at the abbreviations or
+particular letter forms and so we're going to take that skill set and apply it
+to the voynich manuscript so that's what we did that's what i did and as you
+know you've read my you've read the article hopefully uh that i assigned you
+where i talked about this application that i've used called um digipal or now
+it's known as archetype i custom designed my own database on my computer at
+home called it voynich pal and it allows you to go through select and annotate
+individual features apply your own custom data metadata to them then you can
+pull those annotations out and you can sort them and you can throw them in a
+lot in a light box where you can start moving them around like you have as if
+you had paper on on your desk and you're shuffling them and sorting them uh
+into categories and so that's how i started this process i looked at every
+different glyph every different form letter letter form and zeroed in on forms
+that by comparing square one and spread two which we already knew were
+different which were the letter forms that seemed to be really different from
+scribe one described two but consistent within that hand so the way that in
+austria i might look at a ct ligature and use that to determine uh a han
+identify hand or an ampersand or some other abbreviation or a question mark it
+or the titus you know looking at these different um different features that are
+are generally the same but have individual ticks that you can zero in on for
+identifying one hand or another so here for example there and there i am
+sorting and moving things around on the page and dividing them into groups and
+uh so here for example are four versions of the letter form one loop two legs
+uh the gallows that in eva is known as k so here's a k so if i were to put
+these in front of you my paleography proteges how would you what are the the
+features of these forms that look different to you from one to the other what
+are the kinds of individual what makes them individual um in terms of the way
+that they're written what are some of the features that that that jump out at
+you is different from one to the other they have different feet yes exactly yes
+they use the the very last tick at the bottom of the of the right hand ascender
+the little foot there is different from one to the other anyone else the bottom
+curve on the loop is a little bit different in angle with each one of them yeah
+that's exactly right so if you're looking at that loop the bottom right sort of
+where it intersects the ascender right is that what you're talking about
+there's a there's a different angle there uh that's right yes so we've got a
+loop we've got feet to look at what other features there's one other feature
+that that struck me is interesting uh the crossbar is angled differently yup
+exactly and the reason it's angled differently is because of how the scribe is
+moving their path so if so for example on the far left there's a it's a sharp
+right angle from the ascender to the uh the crossbar and that's because the
+scribe has lifted their pen gone down and then made the crossbar whereas on the
+on the third one it's curved and that's because the scribe didn't lift the pen
+they go up and then down and across to make the curve so by looking at the the
+way the pen moves the way that the scribe is forming the letters you could
+start to make these distinctions so there we have the feet the angle of the
+ascender what's happening uh whether it's made with one stroke or two so
+whether the pen has been lifted before that crossbar happens and then finally
+the the what's happening uh that that tells you something about whether that
+crossbar is going to be bowed or if it's going to be horizontal so if it's
+horizontal that implies that the pen has been lifted whereas if it's bowed then
+it's the stroke comes from the top of the ascender and curves into the loop so
+after doing all of that work i ended up with five scribes and the um the other
+uh glyph that i used to make this distinction that was actually even more
+determinative than the the k is um this up here that i've circled just this
+last bit of the the letter form that in eda is transcribed as an n this last
+bit so if you look at what happens with this bow it's quite different this
+video is quite different from one scribe to another so inscribe one it has this
+very long open broad bow scribe two it's much tighter scribe three it almost
+closes completely right there scribe four there's a sharp angle right here like
+a 45 degree angle and then it comes up and then on scribe five it's just this
+long flat finial that hardly goes up at all but it extends quite far to the
+left and that's really really consistent from hand to hand so the whenever you
+see that that finial on the end that's scribe five whenever you see this video
+on the end that's where i'm too that that is actually uh sufficient to
+distinguish between these hands and then of course you have to add in all of
+the other features to confirm uh what you've determined but in my work it seems
+that the that one letter form is sufficient to define what's happening in all
+the different um what's happening in all the different hands now where things
+really get weird and now we're getting weird is when you start to look at how
+the hands are uh how the different scribal corpora manifests themselves in the
+manuscript this is where it's just wacko scenery is nodding because it is it's
+wacko so here's how this works so i'm going to go choir by choir and
+fortunately the manuscript does have um choir there we go it has signatures
+added a little bit later after one of the rebindings but it does have
+signatures so that's of course super helpful for determining the codecological
+structure of the manuscript and this wonderful facsimile over here actually
+reproduces the bifolia choir structure of the manuscript with the sewing and in
+fact if you could take it apart you would see that these are conjoined this
+page is conjoined with this leaf this leaf is conjoined with that leaf and so
+on so you can then start to map out how different hands um appear phone
+ecologically throughout the manuscript and it's it's weird i'll show you so
+we're going to start with the botanical section choirs one through eight so
+this is using an application called this call that allows you to visualize the
+bifolia of a manuscript as if it were taken apart and you had scattered it on
+the table in front of you which of course we're not going to do but if you
+could do that this is what it would look like so what we're looking at here is
+acquire one for bifolia um we've you know we've talked about um by fully
+acquire structure so we've got four bifolia this is the first one right here
+leaf one conjoint with leaf eight so what we're looking at here are is leaf one
+and leaf eight so one rectangle is conjoined with a versa and one verso is
+conjoined with a rectum so that's that's what these diagrams show you so the
+first few quads are entirely scribed one there's fire one here's choir two
+here's fire three now when we get to choir three this is when everything gets
+black out so in choir three we see scribe two for the first time and scribe two
+writes the entire second bifolia the whole bifolia the front and the back all
+four cages both leaves of the bifolium that's in the middle of this choir now
+that's crazy that is just so not the way that medieval manuscripts work you
+just don't see that and i've actually got here a uh a mock-up uh that that
+shows how this works so for this exact wire so sorry folio 25 here's the
+central bifolium so in in this diagram that's the one at the bottom so that's
+this one down here at the bottom so this is the central bifolium both sides of
+this portfolium are written by scribe one here's the next bifolium all that
+written by scrub one then we get to the third bifolia that's this one the one
+outlined in red this all of this is written by scrub two then we go back to
+scribe one all of this written by spread one stack them up fold them through
+the middle and there's your quiet now in a regular medieval manuscript you
+would not see scribes mixed this way you might see them mixed but they wouldn't
+be mixed by by folia it just doesn't make sense for the way that medieval
+manuscripts are produced the implication is that the leaves are outward that
+somewhere somewhere in the history of the manuscript the bifolia got mixed up
+and it was rebound early on in the wrong order and the reason we know the
+rebinding happened really early oh here's a perfect example if you zoom in
+right here so here is um this is scribe one over here scribe two over here
+right here is an offset of this flower so these have been facing they've been
+stuck looking at each other when the book is closed the services have been
+touching for a really really long time uh and so this or this early rebinding
+happened a very very long time ago um before the folio numbers were added so
+now we're starting to put together a kind of a code ecological history of the
+book so it was at some point it was rebound at some point the bifolia were miss
+ordered and then the uh foliation was added and then some leaves were lost so
+that tells you something already about the the history of the of the object
+there's also this really catastrophic water stain in the upper margins of the
+first 40 or 50 leads that predates the addition of the folio numbers so the
+folio numbers happen after the water state so maybe the water stain was the
+reason the book was rebound in the first place uh and then it was rebound out
+of order and then the water then the foliation was added and then the leaves
+get lost we don't know um but there are there's there's evidence code
+ecological evidence that helps you to piece together all of these um all of
+these events of this this trauma in the history of the manuscript all right so
+then we continue to see this mixing of scribe what inspired to for the next few
+choirs until we get to choir 4 when um squad 5 makes an appearance for the
+first time scribe 5 does only the outer bifolium so here again we have another
+example of the scribe the scribes doing entire bifolia and the bifolia being
+being mixed in this really bizarre and unprecedented way at least as far as i
+know all right here's seven is scrub one and two then we get just to uh eight
+we're missing a bunch of bifolia here so we have the outermost bifolium and
+then the next one and then because the foliation has been skipped you can tell
+that there are in fact three bifolia that are missing or six leaves and in this
+case we've got um scribe five has written one side of the bifolium and one page
+of the other side and then scribe one does 57v which is that wacko page where
+uh this one where all of those unique letter forms were that's scribe one and
+then scribe three does the other bifolium that this is mixed with so here we've
+got three scribes mixed up in unusual ways uh all right then we get to this
+section the astronomical astrological section entirely written by a new scribe
+scrub four writes all of this and that includes the um uh wait where am i all
+right okay then the boundary logical section which is a very large choir of um
+eight by folia and one two sorry five bifolia so ten leaves uh entirely written
+by scrub two the whole thing then we get to the big fold out uh where if we
+jump ahead here after the valentia logical section here we go so here's the
+fold out the fold out this side of it is entirely written by scribe before the
+other side so here you can see three pages of the other side plus this plus
+this page and these two it's kind of hard to visualize uh unless you can see it
+unfolded like it is there so the other side is entirely scribed too so here we
+have one very large sheet in which scribe two inscribed four collaborated where
+scribe two did one side squad four did the other side then we have uh sort of a
+um these kind of random fold outs that that don't seem to belong together that
+are probably out of order uh nested by uh botanicals and the recipes all by
+scribe one then we have some more botanicals uh one by folium by scribe two
+nested with a by fold out by scribe three and then uh several fold outs two
+nested fold outs of recipes by scribe one and then we get to the very last
+section those starred paragraphs where we have uh mostly scribe three at work
+this was a like mega choir uh at this point it's one two three four five six it
+was originally seven nested by folia that's a lot um and the entire thing is
+written by scribe three except when we get to folio 115 and so i'm going to ask
+you to buy us to zoom in here let's look at folio 115 versa 14 15 115 verso
+okay so here if you look really carefully you can see something happens after
+the first 11 or so lines when we get to what looks like a new paragraph i hold
+it this is effectively so i can do this so you've got all of this and then a
+change so we have a change of scribe from from right here to there and this is
+one of those moments where you're going back and forth and you could convince
+yourself that every line is by a different scribe but i'm pretty convinced that
+what we're looking at here is scribe two on the first 12 to 15 or so lines and
+then we return to scribe three and you can see that uh there that's what i'm
+talking about in the slides so here we have yet another we have another example
+of where scribe 2 collaborates with another scribe on the same on the same um
+folio so that i think may tell us something about scribe 2 um i don't know what
+but something scribe 2 is is a collaborator throughout the manuscript so that's
+it that's our those are our scribes that's how they make their way through the
+manuscript and how the um the code ecological structure is just so strange that
+uh it can only suggest that some kind of intervention has happened that
+somewhere in its history the manuscript was bound out of order there's a lot of
+interest in looking at the um these offsets the like the one i just showed you
+on wherever it was 34 30 31. these um these places where the um one side we
+want you to see it there oh here we are where the the pigment from one page has
+been offset in a mirror image on the other so if you could find for example an
+offset here that matched a leaf 15 leaves before that would be really solid
+evidence of the original sequence of leaves of the manuscript so far
+unfortunately that has not come to fruition but it's something that i continue
+to work on to see if i can find any places where there are there are offsets
+that that don't match what is actually across from them now um and find other
+place in the manuscript my suspicion is that originally entire choirs were by
+scribe one entire choirs by scribe two perhaps an entire choir by scribe three
+that's my suspicion uh it seems sensible but how that actually plays out i
+couldn't tell you but it does have some significance for people who are trying
+to solve the manuscript if they don't know what order the leaves go in you
+can't make you can't expect it to make semantic to make it to expect it to make
+sense if you don't know what what sequence the leaves originally went in now
+the last thing i want to do is show you how these linguistic determinations
+between language a and language b's there are some some places where it's
+really easy to tell the difference um can you make my slideshow bigger because
+that's what we're going to look at now there we go so uh here we have a bench
+gallows so the gallows with two loops and two legs interfixed in this stretched
+bench and that is very rare in dialect b but quite common in dialect a
+inscribed one or language a so that's one distinctive uh characteristic between
+dialect a and dialect b and then here's another one this one is even is really
+dramatic the uh what in eda is d y looks like eight nine um at the end of a
+word is so common in language b dialect b almost it's so common as to almost be
+unimaginable statistically it's really uh dramatic how often you see that
+ending in dialect b and it's incredibly rare in dialect a and then a minute
+claire i'm going to toss it over to you to talk about that but let me just get
+through this last one uh and then finally this question of the of the qo very
+very common throughout the manuscript in both uh language a and language b
+except in the pages written by scribe 4 where it's very very rare so that's uh
+another kind of sub category that would be interesting to investigate about why
+is it because of the content of those pages that might have something to do
+with it or is it because of the the version of buena cheese that scribe 4 uses
+that combination that q o glyph is just not needed as uh as frequently i think
+that's the last one yes okay so claire i'm going to toss it over to you if you
+want to chat a little bit about that oh sure yeah so i guess with um so with
+scribe four and the um the qo to to start with um there's been a suggestion
+that um most of what scribe four is writing um uh labels um of um so uh so we
+have the um some of the astrological diagrams and the um zodiacal diagrams and
+so if those are basically labels labels might have either a different case or
+they might not have articles depending on the language things like that um and
+so that might lead to a different structure for um for those pages um and so
+there are things that um uh lead to lead to differences in um in the sorts of
+statistics we're looking at just because of the genre or because of the subject
+matter and not because of the underlying dialect or anything like that and
+that's one of the issues with uh with using some of these methods for um for
+studying the voynich manuscript because all of these things when we when we use
+them on wikipedia text or we use them on wall street journal corpora or things
+like that we kind of know what's underlying it um and so we can abstract away
+from the things that might lead to really um problematic differences whereas we
+can't do any of that for uh for the one inch manuscript um another thing that i
+wanted to mention was um so with um lisa's scribal identification um i teach a
+class on the voynich manuscript every couple of years and um the students do
+final projects on things that interest them and um last year some a group of
+students who were majoring in computer science and um statistics and data
+science did a topic modeling analysis of the voynich manuscript so they took
+the um the transcribed data and um we looked at page level and paragraph level
+and and so on and used um document summation techniques to uh to figure out um
+what are the what are the main groups of pages and um we did this without
+putting any information in so you know we know we know something about the
+groups of pages um from the illustrations um either because we don't have
+illustrations or because um we have botanical illustrations or bioneological
+illustrations etc um and um so we found that uh the combination topics alone uh
+so so we got our topics through um through computational measures which i'm
+happy to talk about but it's a little involved so um so just assume
+computational measures for now but i'm very happy to explain in more detail but
+basically it's picking out the um the most distinctive vocabulary in um in each
+set of pages um so these are used these methods are used for instance to um
+make summaries of medical records or of um articles or um uh of um reviews on
+amazon or or things like that so we were using these techniques for the for the
+voynich manuscript and um using these um uh term frequency um like uh keywords
+for um for different sections we um we came up with um uh with five or six
+sections um but the pages that were grouped together um didn't exactly match
+the um the pages from the barney logical section or the pages from the
+botanical section etc it was only when we started looking at lisa's scribal
+identification and looking at the combination of subject matter um as
+identified by the illustrations and the hands together that we were able to um
+to make sense of these groupings and then in that case they made a lot of sense
+so for instance scribe four who's doing mostly labels doing mostly
+illustrations and diagrams and so on always stood out as um as being basically
+a topic on their own group on their own um but with the um uh herb um uh the
+yeah the herbal sections um the uh only like splitting up scribe threes from uh
+from scribe ones and so on was uh uh uh also divided up the topics for uh for
+the for the analysis um and so that that i thought was a really nice uh
+independent validation both of the hand um material and uh yeah of the um of
+the the fact that we were identifying some sort of either subject matter or
+coding principles or something like that that were that were picking out
+differences amongst the uh the different pages and that's so helpful for me
+because my work i may still refine this right i mean i published it but i'm
+publishing something else about it and i'll probably publish about this again
+you know and this work this work is is is is refinable right and so looking at
+the you know i'm so grateful to claire and their students for sort of digging
+into my own results and putting them to the test that's really what i want i
+want to there to be a confirmation or rejection right i want to know if any of
+these attributions make no sense at all if they're totally contrary to the
+linguistic analysis then i'm going to go back and refine them um because
+pornography is is is a lot about judgment it's about the human eye it's not
+really a science in that way in that there's it's really subjective in a lot of
+ways so i'm always happy to be to be put to the test and and have the
+opportunity to refine my way all right so i think that's
