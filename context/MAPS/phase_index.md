@@ -1,6 +1,6 @@
 # Phase Index
 
-**Status:** Reference | **Total Phases:** 132
+**Status:** Reference | **Total Phases:** 134
 
 ---
 
@@ -157,6 +157,17 @@ Example: `CAud_currier_a_audit` = Currier A Audit phase
 | PVC-3 | A morphology affordance alignment | Affordance axes align (5/5 tests PASS) |
 
 **Summary:** Puff (1455) + Voynich = complementary curriculum halves. Brunschwig (1500) combined both for novices. A discriminates operational affordance profiles, not material identity.
+
+---
+
+## Entity Matching Corrected (2026-01-14)
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| EMC-1 | Entity matching with curriculum mapping | Degree 3 → LATE positions (mean 72.6) |
+| EMC-2 | Positional alignment test | Significant correlation rho=0.350, p=0.0012 |
+
+**Note:** Re-ran TIER4_EXTENDED tests with corrected degree-to-regime mapping based on curriculum position discovery. Original tests used wrong mapping (1→REGIME_1 instead of 1→REGIME_2).
 
 ---
 

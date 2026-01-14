@@ -1,0 +1,113 @@
+{
+  "phase": "ENTITY_MATCHING_CORRECTED",
+  "test": "POSITIONAL_ALIGNMENT",
+  "tier": 3,
+  "status": "SPECULATIVE",
+  "date": "2026-01-14",
+  "note": "Replaces T1 from tier4_semantic_assignment.md with corrected folio order",
+  "data_counts": {
+    "puff_chapters": 85,
+    "order_folios": 83,
+    "mappings": 83,
+    "puff_by_degree": {
+      "1": 22,
+      "2": 45,
+      "3": 13,
+      "4": 5
+    }
+  },
+  "correlations": {
+    "degree_vs_position": {
+      "rho": 0.3496447757655188,
+      "p": 0.0011952198293420657
+    },
+    "degree_vs_hazard": {
+      "rho": 0.38159712246950606,
+      "p": 0.00037157739014809986
+    },
+    "degree_vs_cei": {
+      "rho": 0.323911685539319,
+      "p": 0.0028154458367636603
+    }
+  },
+  "degree_statistics": {
+    "1": {
+      "n": 22,
+      "expected_phase": "EARLY",
+      "expected_range": [
+        1,
+        27
+      ],
+      "mean_position": 27.181818181818183,
+      "std_position": 26.03593919700478,
+      "min_position": 1,
+      "max_position": 83,
+      "mean_hazard": 0.5400909090909091,
+      "mean_cei": 0.4798636363636364,
+      "in_expected_range": 12,
+      "range_match_rate": 0.5454545454545454
+    },
+    "2": {
+      "n": 45,
+      "expected_phase": "MIDDLE",
+      "expected_range": [
+        28,
+        55
+      ],
+      "mean_position": 46.666666666666664,
+      "std_position": 21.997933787269453,
+      "min_position": 12,
+      "max_position": 82,
+      "mean_hazard": 0.5929333333333333,
+      "mean_cei": 0.5777111111111111,
+      "in_expected_range": 13,
+      "range_match_rate": 0.28888888888888886
+    },
+    "3": {
+      "n": 12,
+      "expected_phase": "LATE",
+      "expected_range": [
+        56,
+        83
+      ],
+      "mean_position": 42.833333333333336,
+      "std_position": 17.06049841184618,
+      "min_position": 17,
+      "max_position": 80,
+      "mean_hazard": 0.5938333333333333,
+      "mean_cei": 0.56575,
+      "in_expected_range": 3,
+      "range_match_rate": 0.25
+    },
+    "4": {
+      "n": 4,
+      "expected_phase": "SPECIAL",
+      "expected_range": null,
+      "mean_position": 68.5,
+      "std_position": 9.746794344808963,
+      "min_position": 54,
+      "max_position": 75,
+      "mean_hazard": 0.64525,
+      "mean_cei": 0.6427499999999999,
+      "in_expected_range": null,
+      "range_match_rate": null
+    }
+  },
+  "escalation_test": {
+    "positions": [
+      27.181818181818183,
+      46.666666666666664,
+      42.833333333333336
+    ],
+    "strict_escalation": false,
+    "partial_escalation": true,
+    "diff_1_to_2": 19.48484848484848,
+    "diff_2_to_3": -3.8333333333333286,
+    "total_escalation": 15.651515151515152
+  },
+  "verdict": "PARTIAL SUPPORT",
+  "tests_passed": [
+    "Significant positive correlation"
+  ],
+  "interpretation": "Degree-position correlation: rho=0.350 (p=0.0012). Significant positive. Degree 3 mean position = 42.8 (not in LATE range)."
+}
