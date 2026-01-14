@@ -1,0 +1,145 @@
+{
+  "test_suite": "Negative Control Tests",
+  "tier": 3,
+  "method": "Alternative hypothesis exclusion via discriminator failure",
+  "controls": {
+    "NC1": {
+      "control_id": "NC1",
+      "control_name": "Fermentation Hypothesis",
+      "hypothesis": "Grammar encodes fermentation process control",
+      "discriminators_tested": 3,
+      "discriminators_failed": 3,
+      "failure_details": [
+        {
+          "test": "k->h forbidden",
+          "distillation_prediction": "Forbidden (thermal phase danger)",
+          "fermentation_prediction": "Irrelevant (no thermal phases)",
+          "observed": "k-adjacent: 100%",
+          "verdict": "FERMENTATION FAILS"
+        },
+        {
+          "test": "e-recovery dominance",
+          "distillation_prediction": "54.7% e-recovery (thermal equilibration)",
+          "fermentation_prediction": "Minimal (biological recovery)",
+          "observed": "e-recovery enriched 1.3675000000000002x",
+          "verdict": "FERMENTATION FAILS"
+        },
+        {
+          "test": "Hazard profile",
+          "distillation_prediction": "Hazards cluster at k (phase/energy boundary)",
+          "fermentation_prediction": "CONTAMINATION dominant (biological)",
+          "observed": "k-adjacent: 100%, h-adjacent: 0%, e-adjacent: 0%",
+          "verdict": "FERMENTATION FAILS"
+        }
+      ],
+      "exclusion_strength": "STRONG",
+      "verdict": "EXCLUDED - Failed 3/3 discriminators",
+      "interpretation": "Fermentation hypothesis excluded: Failed on 3 key discriminators. Grammar encodes thermal phase control (k\u2192h forbidden, e-recovery dominant, PHASE_ORDERING hazards) that fermentation cannot explain."
+    },
+    "NC2": {
+      "control_id": "NC2",
+      "control_name": "Dyeing Hypothesis",
+      "hypothesis": "Grammar encodes textile dyeing process control",
+      "discriminators_tested": 3,
+      "discriminators_failed": 3,
+      "failure_details": [
+        {
+          "test": "Hazard topology",
+          "distillation_prediction": "Phase ordering at k boundary",
+          "dyeing_prediction": "Color fastness primary hazard",
+          "observed": "k-adjacent: 100%, h-adjacent: 0%, e-adjacent: 0%",
+          "verdict": "DYEING FAILS"
+        },
+        {
+          "test": "Discrimination gradient",
+          "distillation_prediction": "8.7x for volatiles (many fractions)",
+          "dyeing_prediction": "Lower (limited dye variants)",
+          "observed": "8.7x gradient observed",
+          "verdict": "DYEING FAILS"
+        },
+        {
+          "test": "k->h pattern",
+          "distillation_prediction": "k->h dangerous (thermal phase failure)",
+          "dyeing_prediction": "k->h required (heat + dye immersion)",
+          "observed": "k-adjacent: 100%",
+          "verdict": "DYEING FAILS"
+        }
+      ],
+      "exclusion_strength": "STRONG",
+      "verdict": "EXCLUDED - Failed 3/3 discriminators",
+      "interpretation": "Dyeing hypothesis excluded: Failed on 3 key discriminators. Grammar encodes thermal fractionation control (phase hazards, high discrimination gradient, forbidden k\u2192h) that dyeing cannot explain."
+    },
+    "NC3": {
+      "control_id": "NC3",
+      "control_name": "Pharmacy Compounding Hypothesis",
+      "hypothesis": "Grammar encodes pharmaceutical preparation",
+      "discriminators_tested": 3,
+      "discriminators_failed": 3,
+      "failure_details": [
+        {
+          "test": "k->h pattern",
+          "distillation_prediction": "k->h dangerous (phase failure)",
+          "compounding_prediction": "k->h required (heat + mixing)",
+          "observed": "k-adjacent: 100%",
+          "verdict": "COMPOUNDING FAILS"
+        },
+        {
+          "test": "Discrimination gradient",
+          "distillation_prediction": "8.7x for volatiles",
+          "compounding_prediction": "Lower (fewer variants in pharmacy)",
+          "observed": "8.7x gradient observed",
+          "verdict": "COMPOUNDING FAILS"
+        },
+        {
+          "test": "Hazard profile",
+          "distillation_prediction": "Hazards cluster at k (phase boundary)",
+          "compounding_prediction": "Mixing ratio errors dominant",
+          "observed": "k-adjacent: 100%, h-adjacent: 0%, e-adjacent: 0%",
+          "verdict": "COMPOUNDING FAILS"
+        }
+      ],
+      "exclusion_strength": "STRONG",
+      "verdict": "EXCLUDED - Failed 3/3 discriminators",
+      "interpretation": "Compounding hypothesis excluded: Failed on 3 key discriminators. Grammar forbids k\u2192h (needed for compounding), shows high discrimination gradient, and has phase-dominant hazards (not mixing errors)."
+    },
+    "NC4": {
+      "control_id": "NC4",
+      "control_name": "Crystallization/Precipitation Hypothesis",
+      "hypothesis": "Grammar encodes crystallization or precipitation control",
+      "discriminators_tested": 3,
+      "discriminators_failed": 3,
+      "failure_details": [
+        {
+          "test": "Recovery logic",
+          "distillation_prediction": "Cooling = recovery from thermal excursion",
+          "crystallization_prediction": "Cooling = PRIMARY operation (supersaturation)",
+          "observed": "e-recovery is enriched 1.3675000000000002x as RECOVERY path",
+          "verdict": "CRYSTALLIZATION FAILS"
+        },
+        {
+          "test": "k->h pattern",
+          "distillation_prediction": "k->h dangerous (thermal phase failure)",
+          "crystallization_prediction": "k->h is supersaturation (main process)",
+          "observed": "k-adjacent: 100%",
+          "verdict": "CRYSTALLIZATION FAILS"
+        },
+        {
+          "test": "Hazard profile",
+          "distillation_prediction": "Hazards cluster at k (liquid/vapor phase boundary)",
+          "crystallization_prediction": "Nucleation/polymorph hazards dominant",
+          "observed": "k-adjacent: 100%, h-adjacent: 0%, e-adjacent: 0%",
+          "verdict": "CRYSTALLIZATION FAILS"
+        }
+      ],
+      "exclusion_strength": "STRONG",
+      "verdict": "EXCLUDED - Failed 3/3 discriminators",
+      "interpretation": "Crystallization hypothesis excluded: Failed on 3 key discriminators. Grammar treats cooling as recovery (not primary), forbids k\u2192h (needed for supersaturation), and has phase-ordering hazards (not nucleation)."
+    }
+  },
+  "summary": {
+    "controls_tested": 4,
+    "strong_exclusions": 4,
+    "total_discriminators_failed": 12,
+    "all_excluded": true
+  }
+}

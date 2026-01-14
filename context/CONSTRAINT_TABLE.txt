@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 336 constraints | 2026-01-12
+CONSTRAINT_REFERENCE v2.6 | 353 constraints | 2026-01-13
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -340,3 +340,20 @@ C471	PREFIX Encodes AZC Family Affinity	2	AZC	in: azc_system
 C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC	in: azc_system
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC	in: azc_system
 C475	MIDDLE ATOMIC INCOMPATIBILITY	2	A	in: currier_a
+C476	COVERAGE OPTIMALITY	2	A	in: currier_a
+C477	**HT Tail Correlation** (r=0.504, p=0.0045, R²=0.28)	2	HT/A	-> C477_ht_tail_correlation.md
+C478	TEMPORAL COVERAGE SCHEDULING	2	A	in: currier_a
+C479	**Survivor-Set Discrimination Scaling** (partial rho=0.395, p<10^-29)	2	A+AZC+HT	-> C479_survivor_discrimination_scaling.md
+C480	Constrained Execution Variability (rho=0.306, p=0.078, PROVISIONAL)	3	A→B	-> C480_constrained_variability.md
+C481	**Survivor-Set Uniqueness** (0 collisions in 1575 lines)	2	A+AZC	-> C481_survivor_set_uniqueness.md
+C482	**Compound Input Specification** (B invariant to A line length, p=1.0)	2	A→B	-> C482_compound_input_specification.md
+C483	**Ordinal Repetition Invariance** (magnitude has no downstream effect)	2	A	-> C483_ordinal_repetition_invariance.md
+C484	**A Channel Bifurcation** (registry entries + control operators, p<0.01)	2	A	-> C484_a_channel_bifurcation.md
+C485	**Grammar Minimality** (e-operator and h->k suppression are load-bearing)	2	B	-> C485_grammar_minimality.md
+C486	Bidirectional Constraint Coherence (B behavior constrains A zone inference)	3	CROSS_SYSTEM	-> C486_bidirectional_constraints.md
+C487	A-Registry Memory Optimization (z=-97 vs random, 0th percentile)	3	A	-> C487_memory_optimization.md
+C488	HT Predicts Strategy Viability (r=0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC)	3	HT	-> C488_ht_strategy_prediction.md
+C489	HT Zone Diversity Correlation (r=0.24, p=0.0006)	3	HT	-> C489_ht_zone_diversity.md
+C490	**Categorical Strategy Exclusion** (20.5% of programs forbid AGGRESSIVE, not gradient but prohibition)	2	B	-> C490_categorical_strategy_exclusion.md
+C491	Judgment-Critical Program Axis (OPPORTUNISTIC orthogonal to caution/aggression)	3	B	in: SPECULATIVE
+C492	**PREFIX Phase-Exclusive Legality** (ct PREFIX is 0% C/S-zones, 26% P-zone, invariant)	2	A→AZC	-> C492_prefix_phase_exclusion.md

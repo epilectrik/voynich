@@ -1,0 +1,40 @@
+{
+  "test": "HT Perceptual Load Test",
+  "question": "Does HT PREFIX index perceptual regime (load level)?",
+  "interpretation": "HT as perceptual load signal, not modality encoding",
+  "prefix_distribution": {
+    "EARLY": 1753,
+    "LATE": 495
+  },
+  "analyses": {
+    "context_complexity": {
+      "early_mean_diversity": 0.9108486943164362,
+      "late_mean_diversity": 0.898133061778683,
+      "ratio": 0.9860397971506168
+    },
+    "intervention_enrichment": 1.2200845337216042,
+    "section_distribution": {
+      "early": {
+        "H": 254,
+        "T": 58,
+        "B": 550,
+        "C": 118,
+        "S": 773
+      },
+      "late": {
+        "H": 108,
+        "B": 138,
+        "T": 4,
+        "C": 46,
+        "S": 199
+      }
+    }
+  },
+  "verdict": "INCONCLUSIVE",
+  "evidence_for": [
+    "LATE enriched near INTERVENTION (k-type) operations"
+  ],
+  "evidence_against": [
+    "LATE does NOT appear in higher-complexity contexts"
+  ]
+}

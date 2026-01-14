@@ -1,6 +1,6 @@
 # Phase Index
 
-**Status:** Reference | **Total Phases:** 118
+**Status:** Reference | **Total Phases:** 132
 
 ---
 
@@ -127,6 +127,36 @@ Example: `CAud_currier_a_audit` = Currier A Audit phase
 | A-ARCH | Architecture | GLOBAL TYPE SYSTEM |
 | SISTER | Sister pairs | Equivalence classes |
 | SITD | Over-specification | ~40% reducible |
+| SSD | Survivor-set dimensionality | Discrimination envelope scales HT (C479-C481) |
+| BvS | Batch vs Sequential | BATCH_MODEL_CONFIRMED (C482) |
+| S1 | Single-token positional | REGISTRY_CONTROL_OPERATORS (C484) |
+| S2 | Single-token AZC impact | AZC_EXCLUSION confirmed |
+
+---
+
+## Physical World Reverse Engineering Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| PWRE-1 | Physical reverse engineering | CIRCULATORY_THERMAL_PLANT |
+| FM-PHY-1 | Failure mode alignment | Five failure classes validated |
+| SSD-PHY-1a | Dimensionality lower bound | D ≥ 50 required, 95.7% incompatibility |
+| OJLM-1 | Operator judgment load mapping | 13 judgment types structurally required |
+| APP-1 | Apparatus behavioral validation | Pelican behavioral isomorphism (4/4 axes) |
+| MAT-PHY-1 | Material constraint topology | Botanical chemistry topology match (5/5 tests) |
+| ILL-TOP-1 | Illustration-constraint topology | MISMATCH (8/8 tests fail, illustrations epiphenomenal) |
+
+---
+
+## External Alignment Phases
+
+| Phase | Description | Key Finding |
+|-------|-------------|-------------|
+| PVC-1 | Puff-Voynich curriculum comparison | 83-unit structure shared (5/5 tests PASS) |
+| PVC-2 | Brunschwig degree alignment | Regime = Degree (13/15 metrics match) |
+| PVC-3 | A morphology affordance alignment | Affordance axes align (5/5 tests PASS) |
+
+**Summary:** Puff (1455) + Voynich = complementary curriculum halves. Brunschwig (1500) combined both for novices. A discriminates operational affordance profiles, not material identity.
 
 ---
 

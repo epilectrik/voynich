@@ -1,0 +1,117 @@
+{
+  "comparison": "Brunschwig Liber de arte distillandi (1500) vs Voynich Structural Findings",
+  "date": "2026-01-13",
+  "status": "SYSTEMATIC_MATCH",
+  "axes": {
+    "hazard_topology": {
+      "score": "MATCH",
+      "voynich": {
+        "claim": "17 forbidden transitions in 5 hazard classes",
+        "distribution": {
+          "PHASE_ORDERING": 0.41,
+          "COMPOSITION_JUMP": 0.24,
+          "CONTAINMENT_TIMING": 0.24,
+          "RATE_MISMATCH": 0.06,
+          "ENERGY_OVERSHOOT": 0.06
+        }
+      },
+      "brunschwig": {
+        "phase_ordering": "DOCUMENTED - temperature sequence errors dominate warnings",
+        "composition_jump": "DOCUMENTED - purity tests, rejection criteria",
+        "containment_timing": "DOCUMENTED - glass cracking, overnight cooling",
+        "energy_overshoot": "CATEGORICAL_PROHIBITION - fourth degree forbidden",
+        "rate_mismatch": "IMPLICIT - regulation mechanisms exist"
+      },
+      "key_quote": "The fourth degree should be avoided at all times...it would coerce the thing, which the art of true distillation rejects"
+    },
+    "control_granularity": {
+      "score": "PARTIAL",
+      "voynich": {
+        "instruction_classes": 49,
+        "forbidden_transitions": 17,
+        "kernel": "k/h/e"
+      },
+      "brunschwig": {
+        "methods": 10,
+        "degrees_per_method": 4,
+        "total_combinations": 40,
+        "categorical_prohibition": "Fourth degree"
+      },
+      "key_quote": "Applied to the water bath, the first degree was lukewarm, the second noticeably warm, the third almost seething, and the fourth destructively warm",
+      "notes": "40 vs 49 classes - structural parallel but not exact match"
+    },
+    "recovery_architecture": {
+      "score": "MATCH",
+      "voynich": {
+        "reversibility": 0.89,
+        "e_dominance": 0.547,
+        "limited_retry": true
+      },
+      "brunschwig": {
+        "retry_limit": 2,
+        "recovery_method": "reinoculation with fresh herbs",
+        "cooling_dominance": "overnight equilibration"
+      },
+      "key_quote": "may happen no more than twice",
+      "notes": "Exact structural parallel - limited retry, cooling recovery"
+    },
+    "material_apparatus_separation": {
+      "score": "MATCH",
+      "voynich": {
+        "material_encoding": 0,
+        "ab_coupling": false,
+        "universal_vocabulary": true
+      },
+      "brunschwig": {
+        "structure": "Three-part disjoint",
+        "part1": "Methods - no plant references",
+        "part2": "Herbal - separate section",
+        "part3": "Disease index - cross-reference only"
+      },
+      "key_quote": "Part 1 introduces ten distillation processes...but does not reference specific plants",
+      "notes": "Same architectural decision - apparatus logic is material-agnostic"
+    },
+    "pedagogical_structure": {
+      "score": "MISMATCH",
+      "voynich": {
+        "audience": "expert",
+        "definitions": false,
+        "assumed_knowledge": "high"
+      },
+      "brunschwig": {
+        "audience": "novice",
+        "definitions": true,
+        "assumed_knowledge": "minimal"
+      },
+      "key_quote": "The text assumes minimal prior knowledge: it begins with brick-making and furnace construction",
+      "notes": "INFORMATIVE mismatch - different competency levels in same craft"
+    },
+    "sensory_modalities": {
+      "score": "MATCH",
+      "voynich": {
+        "primary": "olfaction",
+        "modalities": ["visual", "olfactory", "thermal", "acoustic", "tactile"],
+        "instruments": false
+      },
+      "brunschwig": {
+        "documented_modalities": ["visual", "olfactory", "thermal", "tactile"],
+        "visual_cues": "streaks branching, thick drops sweating",
+        "olfactory_cues": "taste and scent diminished",
+        "thermal_cues": "finger test",
+        "tactile_cues": "thumbnail viscosity test",
+        "instruments": false
+      },
+      "key_quote": "Rose and lavender waters are discarded when their taste and scent have diminished",
+      "notes": "4/5 modalities explicitly documented, all categorical"
+    }
+  },
+  "summary": {
+    "match": 4,
+    "partial": 1,
+    "mismatch": 1,
+    "prediction": "3-4 MATCH, 1-2 PARTIAL, 1 MISMATCH",
+    "actual": "4 MATCH, 1 PARTIAL, 1 MISMATCH",
+    "exceeded_prediction": true
+  },
+  "conclusion": "SYSTEMATIC_MATCH - Brunschwig and Voynich share operational architecture for distillation control"
+}

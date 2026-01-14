@@ -1,0 +1,59 @@
+{
+  "test": "Brunschwig Degree Escalation",
+  "date": "2026-01-13",
+  "test_1_regime_comparison": {
+    "low_regime_count": 42,
+    "high_regime_count": 41,
+    "low_metrics": {
+      "cei": 0.4728165476190476,
+      "hazard": 0.5726190476190476,
+      "intervention": 5.052142857142857,
+      "cycle": 4.588571428571429,
+      "near_miss": 32.523809523809526,
+      "recovery": 22.38095238095238,
+      "kernel_k": 0.9761904761904762
+    },
+    "high_metrics": {
+      "cei": 0.6356011463414634,
+      "hazard": 0.5907560975609756,
+      "intervention": 6.855609756097561,
+      "cycle": 4.696341463414634,
+      "near_miss": 14.658536585365853,
+      "recovery": 9.609756097560975,
+      "kernel_k": 0.9024390243902439
+    },
+    "matches": 4,
+    "total": 4
+  },
+  "test_2_positional_comparison": {
+    "first_third_metrics": {
+      "cei": 0.5242938888888888,
+      "hazard": 0.5804444444444444,
+      "intervention": 5.6396296296296295,
+      "cycle": 4.458888888888889,
+      "near_miss": 34.925925925925924,
+      "recovery": 15.222222222222221,
+      "kernel_k": 1.0
+    },
+    "last_third_metrics": {
+      "cei": 0.5582978620689655,
+      "hazard": 0.5892758620689655,
+      "intervention": 6.075172413793103,
+      "cycle": 4.582068965517242,
+      "near_miss": 18.310344827586206,
+      "recovery": 21.17241379310345,
+      "kernel_k": 0.9655172413793104
+    },
+    "matches": 3,
+    "total": 3
+  },
+  "test_3_fourth_degree": {
+    "max_cei": 0.837823,
+    "max_hazard": 0.771,
+    "extreme_folios": 0,
+    "match": true
+  },
+  "total_matches": 8,
+  "total_tests": 8,
+  "verdict": "STRONG"
+}

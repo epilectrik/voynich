@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "analysis": "Plant Folio Null Audit",
+    "purpose": "Confirm plant folios are structurally indistinguishable",
+    "n_plant": 129,
+    "n_non_plant": 98,
+    "section_distribution": {
+      "P": 16,
+      "S": 24,
+      "H": 129,
+      "T": 5,
+      "C": 13,
+      "A": 8,
+      "Z": 12,
+      "B": 20
+    }
+  },
+  "tests": [
+    {
+      "metric": "HT.ht_density",
+      "plant_n": 129,
+      "plant_mean": 0.1729961646584143,
+      "plant_std": 0.05534464421937366,
+      "non_plant_n": 98,
+      "non_plant_mean": 0.14599031934917603,
+      "non_plant_std": 0.04934124628373644,
+      "u_statistic": 8194.0,
+      "p_value": 0.00013309783124738014,
+      "effect_size": 0.508863337705801,
+      "status": "TESTED"
+    },
+    {
+      "metric": "HT.ht_ttr",
+      "plant_n": 129,
+      "plant_mean": 0.3747411167153889,
+      "plant_std": 0.08012838019981353,
+      "non_plant_n": 98,
+      "non_plant_mean": 0.4148046588919245,
+      "non_plant_std": 0.13244067275361127,
+      "u_statistic": 5286.0,
+      "p_value": 0.034784363403107046,
+      "effect_size": -0.3765364585180917,
+      "status": "TESTED"
+    },
+    {
+      "metric": "HT.line_initial_rate",
+      "plant_n": 129,
+      "plant_mean": 0.2781585055456634,
+      "plant_std": 0.13188794897239822,
+      "non_plant_n": 98,
+      "non_plant_mean": 0.33777451951366655,
+      "non_plant_std": 0.13727880269789564,
+      "u_statistic": 4742.5,
+      "p_value": 0.0012826349314316707,
+      "effect_size": -0.4421334577823984,
+      "status": "TESTED"
+    },
+    {
+      "metric": "HT.line_final_rate",
+      "plant_n": 129,
+      "plant_mean": 0.13589531536139846,
+      "plant_std": 0.11710716622315724,
+      "non_plant_n": 98,
+      "non_plant_mean": 0.17900694468922254,
+      "non_plant_std": 0.12042618586926378,
+      "u_statistic": 5127.5,
+      "p_value": 0.014906486827308652,
+      "effect_size": -0.36204779895346123,
+      "status": "TESTED"
+    },
+    {
+      "metric": "UNIFIED.ht_percentile",
+      "plant_n": 129,
+      "plant_mean": 56.616279069767444,
+      "plant_std": 28.183462605741898,
+      "non_plant_n": 98,
+      "non_plant_mean": 41.80102040816327,
+      "non_plant_std": 27.567599641230558,
+      "u_statistic": 8194.0,
+      "p_value": 0.00013309783124738014,
+      "effect_size": 0.5283039061089277,
+      "status": "TESTED"
+    },
+    {
+      "metric": "UNIFIED.ht_z_score",
+      "plant_n": 129,
+      "plant_mean": 0.21390697674418604,
+      "plant_std": 1.0154734981550237,
+      "non_plant_n": 98,
+      "non_plant_mean": -0.2815918367346939,
+      "non_plant_std": 0.9052327002301752,
+      "u_statistic": 8192.5,
+      "p_value": 0.0001347561315302941,
+      "effect_size": 0.5088727000391984,
+      "status": "TESTED"
+    },
+    {
+      "metric": "PRESSURE.A",
+      "plant_n": 95,
+      "plant_mean": 0.5612315789473684,
+      "plant_std": 0.29471372202552515,
+      "non_plant_n": 19,
+      "non_plant_mean": 0.495421052631579,
+      "non_plant_std": 0.24856860025045585,
+      "u_statistic": 1046.0,
+      "p_value": 0.2769136413779336,
+      "effect_size": 0.22685967299681684,
+      "status": "TESTED"
+    },
+    {
+      "metric": "PRESSURE.B",
+      "plant_n": 32,
+      "plant_mean": 0.64571875,
+      "plant_std": 0.26171838805945125,
+      "non_plant_n": 51,
+      "non_plant_mean": 0.41837254901960785,
+      "non_plant_std": 0.2696980127290023,
+      "u_statistic": 1187.0,
+      "p_value": 0.0005274710316799457,
+      "effect_size": 0.8422671715877664,
+      "status": "TESTED"
+    },
+    {
+      "metric": "PRESSURE.AZC",
+      "plant_n": 2,
+      "non_plant_n": 28,
+      "status": "INSUFFICIENT_DATA"
+    },
+    {
+      "metric": "PRESSURE.HT",
+      "plant_n": 129,
+      "plant_mean": 0.5661627906976744,
+      "plant_std": 0.281834626057419,
+      "non_plant_n": 98,
+      "non_plant_mean": 0.4180102040816327,
+      "non_plant_std": 0.2756759964123056,
+      "u_statistic": 8194.0,
+      "p_value": 0.00013309783124738014,
+      "effect_size": 0.5283039061089274,
+      "status": "TESTED"
+    },
+    {
+      "metric": "B.hazard_density",
+      "plant_n": 32,
+      "plant_mean": 0.5630312500000001,
+      "plant_std": 0.05833281900814927,
+      "non_plant_n": 51,
+      "non_plant_mean": 0.5932156862745098,
+      "non_plant_std": 0.0683724843536191,
+      "u_statistic": 565.0,
+      "p_value": 0.019084386146292886,
+      "effect_size": -0.46096949771663065,
+      "status": "TESTED"
+    },
+    {
+      "metric": "B.escape_density",
+      "plant_n": 32,
+      "plant_mean": 0.09965275203736149,
+      "plant_std": 0.04005542141591488,
+      "non_plant_n": 51,
+      "non_plant_mean": 0.18768221332811216,
+      "non_plant_std": 0.06329776165741399,
+      "u_statistic": 182.0,
+      "p_value": 3.084524784865218e-09,
+      "effect_size": -1.566834392934608,
+      "status": "TESTED"
+    },
+    {
+      "metric": "B.cei_total",
+      "plant_n": 32,
+      "plant_mean": 0.61089071875,
+      "plant_std": 0.10974985075651424,
+      "non_plant_n": 51,
+      "non_plant_mean": 0.5170478235294118,
+      "non_plant_std": 0.12353164071060958,
+      "u_statistic": 1187.0,
+      "p_value": 0.0005274710316799457,
+      "effect_size": 0.7829293649163855,
+      "status": "TESTED"
+    },
+    {
+      "metric": "B.link_density",
+      "plant_n": 32,
+      "plant_mean": 0.40249999999999997,
+      "plant_std": 0.06307634263335185,
+      "non_plant_n": 51,
+      "non_plant_mean": 0.3710588235294118,
+      "non_plant_std": 0.07024283140165835,
+      "u_statistic": 1059.0,
+      "p_value": 0.023269755957697917,
+      "effect_size": 0.45967271294641726,
+      "status": "TESTED"
+    },
+    {
+      "metric": "B.recovery_ops_count",
+      "plant_n": 32,
+      "plant_mean": 5.90625,
+      "plant_std": 4.6861456376749535,
+      "non_plant_n": 51,
+      "non_plant_mean": 22.45098039215686,
+      "non_plant_std": 12.748415857743598,
+      "u_statistic": 100.0,
+      "p_value": 2.0752138433837512e-11,
+      "effect_size": -1.570326081296116,
+      "status": "TESTED"
+    },
+    {
+      "metric": "AZC.a_coverage",
+      "plant_n": 2,
+      "non_plant_n": 28,
+      "status": "INSUFFICIENT_DATA"
+    },
+    {
+      "metric": "AZC.b_coverage",
+      "plant_n": 2,
+      "non_plant_n": 28,
+      "status": "INSUFFICIENT_DATA"
+    },
+    {
+      "metric": "AZC.azc_unique_rate",
+      "plant_n": 2,
+      "non_plant_n": 28,
+      "status": "INSUFFICIENT_DATA"
+    },
+    {
+      "metric": "AZC.placement_entropy",
+      "plant_n": 2,
+      "non_plant_n": 28,
+      "status": "INSUFFICIENT_DATA"
+    }
+  ],
+  "section_analysis": {
+    "A": {
+      "n": 8,
+      "mean": 0.18844846129079781,
+      "p": 0.44887040522057753,
+      "d": -0.2771490016772664
+    },
+    "B": {
+      "n": 20,
+      "mean": 0.11127021066214604,
+      "p": 3.9762250876374777e-07,
+      "d": 1.1715878059977292
+    },
+    "C": {
+      "n": 13,
+      "mean": 0.1766662925198186,
+      "p": 0.7772115315153807,
+      "d": -0.06573994623991117
+    },
+    "P": {
+      "n": 16,
+      "mean": 0.15545306795815605,
+      "p": 0.16990084723280008,
+      "d": 0.32131106905700463
+    },
+    "S": {
+      "n": 24,
+      "mean": 0.13821277260869563,
+      "p": 0.005661139306237404,
+      "d": 0.6436751182287822
+    },
+    "T": {
+      "n": 5,
+      "mean": 0.1647548810957435,
+      "p": 0.8052744080148962,
+      "d": 0.15031591000894362
+    },
+    "Z": {
+      "n": 12,
+      "mean": 0.13743896287286636,
+      "p": 0.030116649248030525,
+      "d": 0.6467378681823338
+    }
+  },
+  "summary": {
+    "n_tested": 14,
+    "bonferroni_alpha": 0.0035714285714285718,
+    "n_significant": 8,
+    "n_marginal": 5,
+    "verdict": "CLOSED_WITH_CAVEAT",
+    "interpretation": "Section H differs from other sections (8 metrics significant). However, ILL-TOP-1 showed NO correlation between visual clusters and constraints WITHIN Section H (8 tests failed). Therefore: (1) Section H has distinct structural properties (section-driven), (2) Illustrations do NOT organize constraints within the section (illustration-epiphenomenal). Illustration question formally closed.",
+    "significant_metrics": [
+      "HT.ht_density",
+      "UNIFIED.ht_percentile",
+      "UNIFIED.ht_z_score",
+      "PRESSURE.B",
+      "PRESSURE.HT",
+      "B.escape_density",
+      "B.cei_total",
+      "B.recovery_ops_count"
+    ],
+    "marginal_metrics": [
+      "HT.ht_ttr",
+      "HT.line_initial_rate",
+      "HT.line_final_rate",
+      "B.hazard_density",
+      "B.link_density"
+    ]
+  }
+}

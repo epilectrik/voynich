@@ -1,0 +1,321 @@
+{
+  "probe_id": "PROCESS_BEHAVIOR_ISOMORPHISM",
+  "tier": 3,
+  "question": "Does the Voynich control architecture behave like thermal-chemical process control?",
+  "summary": {
+    "verdict": "SUPPORTED",
+    "tests_passed": 12,
+    "tests_total": 12,
+    "alignment_score": 1.0,
+    "negative_control_result": "DISTILLATION_WINS",
+    "physics_violations": []
+  },
+  "behavior_structural_tests": [
+    {
+      "test_id": "BS-1",
+      "prediction": "Hazards cluster at kernel boundaries (not random)",
+      "baseline": "DISTRIBUTED (33% each)",
+      "observed": "k-adjacent: 100%, h-adjacent: 0%, e-adjacent: 0%",
+      "clustering": "KERNEL_ADJACENT",
+      "enrichment": 3.0,
+      "passed": true,
+      "interpretation": "Hazards cluster at energy-control boundary - consistent with thermal process control"
+    },
+    {
+      "test_id": "BS-2",
+      "prediction": "ENERGY hazards enriched near k-transitions",
+      "baseline": "33.33%",
+      "observed": "100.00%",
+      "enrichment": 3.0,
+      "passed": true,
+      "interpretation": "All hazards near energy control (k) - strongly consistent"
+    },
+    {
+      "test_id": "BS-3",
+      "prediction": "M-A prefixes enriched in kernel-adjacent contexts",
+      "baseline": "1.00",
+      "observed": "qo=1.307, ch=0.910",
+      "enrichment": 1.307,
+      "passed": true,
+      "interpretation": "qo- is enriched near kernels (energy/phase control points)"
+    },
+    {
+      "test_id": "BS-4",
+      "prediction": "e-operator dominates recovery (>40%)",
+      "baseline": "40.0%",
+      "observed": "54.7%",
+      "enrichment": 1.3675000000000002,
+      "passed": true,
+      "interpretation": "Equilibration (e) dominates recovery - consistent with thermal process"
+    },
+    {
+      "test_id": "BS-5",
+      "prediction": "4 regimes have distinct energy profiles",
+      "baseline": "Random: ~0 pattern",
+      "observed": "Order: REGIME_2 < REGIME_1 < REGIME_4 < REGIME_3",
+      "expected": "REGIME_2 < REGIME_1 < REGIME_4 < REGIME_3",
+      "matches": "4/4",
+      "enrichment": 1.0,
+      "passed": true,
+      "interpretation": "Clear CEI ordering by regime - distinct energy states"
+    }
+  ],
+  "process_sequence_tests": [
+    {
+      "test_id": "PS-1",
+      "prediction": "Early folios enriched for complex operations",
+      "baseline": "Random: no phase pattern",
+      "observed": "Phase 1 novelty: 21.2%, Phase 3: 11.3%",
+      "ratio": 1.8761061946902653,
+      "passed": true,
+      "interpretation": "Front-loaded novelty = harder material first (training pattern)"
+    },
+    {
+      "test_id": "PS-2",
+      "prediction": "REGIME_3 = highest energy engagement",
+      "baseline": "Average CEI: 0.544",
+      "observed": "REGIME_3 CEI: 0.717",
+      "is_highest": true,
+      "enrichment": 1.3168394801864833,
+      "passed": true,
+      "interpretation": "REGIME_3 is peak active phase - matches high-throughput transient"
+    },
+    {
+      "test_id": "PS-3",
+      "prediction": "Restart folios at low-energy states",
+      "baseline": "Average CEI: 0.553",
+      "observed": "Restart folios CEI: 0.401",
+      "restart_folios": [
+        "f50v",
+        "f57r"
+      ],
+      "ratio": 0.7241613637649525,
+      "is_low": true,
+      "passed": true,
+      "interpretation": "Restart positions are low-energy - matches cold-start requirement"
+    },
+    {
+      "test_id": "PS-4",
+      "prediction": "Forbidden transitions cluster at k (energy), not h",
+      "baseline": "Random: 33% each kernel",
+      "observed": "k-adjacent: 100%",
+      "distillation_consistent": true,
+      "calcination_consistent": false,
+      "discriminator": "DISTILLATION",
+      "passed": true,
+      "interpretation": "Energy-centric hazards favor distillation over calcination"
+    }
+  ],
+  "pedagogical_tests": [
+    {
+      "test_id": "PD-1",
+      "prediction": "HT correlates with discrimination complexity",
+      "baseline": "r > 0.2",
+      "observed": "r = 0.504, p = 0.0045",
+      "enrichment": 2.5203141230593955,
+      "passed": true,
+      "interpretation": "HT tracks cognitive load from rare-fraction discrimination"
+    },
+    {
+      "test_id": "PD-2",
+      "prediction": "A-registry entries cluster by prefix family",
+      "baseline": "50% exclusive",
+      "observed": "80% PREFIX-EXCLUSIVE",
+      "enrichment": 1.6,
+      "passed": true,
+      "interpretation": "Prefix families = material-behavior class clustering"
+    },
+    {
+      "test_id": "PD-3",
+      "prediction": "AZC boundaries align with attention transitions",
+      "baseline": "Random placement",
+      "observed": "AZC at HT transition zones (C460)",
+      "enrichment": 1.0,
+      "passed": true,
+      "interpretation": "AZC marks cognitive/apparatus reconfiguration points"
+    }
+  ],
+  "negative_control": {
+    "alternative_hypothesis": "metallurgy_calcination",
+    "calcination_predictions": {
+      "BS-1": "Phase changes driven by heat - k-adjacent is consistent",
+      "BS-2": "Same prediction as distillation",
+      "BS-3": "Energy prefixes for thermal operations - similar",
+      "BS-4": "e-recovery less dominant (calcination is one-way)",
+      "BS-5": "Regimes may differ - calcination is more linear",
+      "PS-1": "No clear prediction",
+      "PS-2": "High CEI = active calcination",
+      "PS-3": "Restart less meaningful in calcination",
+      "PS-4": "k\u2192h should be ALLOWED, not forbidden"
+    },
+    "discriminating_tests": [
+      {
+        "test": "PS-4",
+        "winner": "DISTILLATION",
+        "reason": "k-adjacent forbidden (energy control critical)"
+      },
+      {
+        "test": "BS-4",
+        "winner": "DISTILLATION",
+        "reason": "e (equilibration) dominates recovery - cooling critical"
+      }
+    ],
+    "distillation_wins": 2,
+    "calcination_wins": 0,
+    "ties": 0,
+    "verdict": "DISTILLATION_WINS"
+  },
+  "physics_violations": [],
+  "mappings": {
+    "kernel_behavior": {
+      "k": {
+        "role": "ENERGY_MODULATOR",
+        "behavior": "energy_ingress_control",
+        "expected_hazards": [
+          "ENERGY_OVERSHOOT"
+        ]
+      },
+      "h": {
+        "role": "PHASE_MANAGER",
+        "behavior": "phase_boundary_handling",
+        "expected_hazards": [
+          "PHASE_ORDERING",
+          "CONTAINMENT_TIMING"
+        ]
+      },
+      "e": {
+        "role": "STABILITY_ANCHOR",
+        "behavior": "equilibration_return",
+        "expected_hazards": []
+      }
+    },
+    "hazard_behavior": {
+      "PHASE_ORDERING": {
+        "behavior": "wrong_phase_location",
+        "expected_kernel": "h",
+        "pct": 41
+      },
+      "COMPOSITION_JUMP": {
+        "behavior": "contamination_mixing_failure",
+        "expected_kernel": "h",
+        "pct": 24
+      },
+      "CONTAINMENT_TIMING": {
+        "behavior": "pressure_overflow_event",
+        "expected_kernel": "h",
+        "pct": 24
+      },
+      "RATE_MISMATCH": {
+        "behavior": "flow_imbalance",
+        "expected_kernel": null,
+        "pct": 6
+      },
+      "ENERGY_OVERSHOOT": {
+        "behavior": "thermal_damage",
+        "expected_kernel": "k",
+        "pct": 6
+      }
+    },
+    "material_behavior": {
+      "M-A": {
+        "phase": "mobile",
+        "composition": "distinct",
+        "behavior": "phase_sensitive_mobile_controlled",
+        "associated_prefixes": [
+          "ch",
+          "qo"
+        ]
+      },
+      "M-B": {
+        "phase": "mobile",
+        "composition": "homogeneous",
+        "behavior": "uniform_mobile",
+        "associated_prefixes": [
+          "ok",
+          "ot"
+        ]
+      },
+      "M-C": {
+        "phase": "stable",
+        "composition": "distinct",
+        "behavior": "phase_stable_exclusion_prone",
+        "associated_prefixes": [
+          "ct"
+        ]
+      },
+      "M-D": {
+        "phase": "stable",
+        "composition": "homogeneous",
+        "behavior": "control_stable_infrastructure",
+        "associated_prefixes": [
+          "da",
+          "ol"
+        ]
+      }
+    },
+    "prefix_behavior": {
+      "ch": {
+        "role": "ENERGY_OPERATOR",
+        "behavior": "energy_intensive_operations"
+      },
+      "qo": {
+        "role": "ENERGY_OPERATOR",
+        "behavior": "energy_intensive_operations"
+      },
+      "sh": {
+        "role": "ENERGY_OPERATOR",
+        "behavior": "energy_intensive_operations"
+      },
+      "ok": {
+        "role": "FREQUENT_OPERATOR",
+        "behavior": "routine_material_handling"
+      },
+      "ot": {
+        "role": "FREQUENT_OPERATOR",
+        "behavior": "routine_material_handling"
+      },
+      "da": {
+        "role": "CORE_CONTROL",
+        "behavior": "process_sequencing"
+      },
+      "ol": {
+        "role": "CORE_CONTROL",
+        "behavior": "process_sequencing"
+      },
+      "ct": {
+        "role": "REGISTRY_ONLY",
+        "behavior": "reference_stable_state"
+      }
+    },
+    "apparatus_loci": {
+      "energy_ingress": {
+        "controller": "k",
+        "behavior": "energy_input_control"
+      },
+      "phase_exchange": {
+        "controller": "h",
+        "behavior": "phase_transition_region"
+      },
+      "differentiation": {
+        "controller": null,
+        "behavior": "separation_zone"
+      },
+      "recirculation": {
+        "controller": null,
+        "behavior": "material_return_path"
+      },
+      "collection": {
+        "controller": null,
+        "behavior": "output_accumulation"
+      },
+      "equilibration": {
+        "controller": "e",
+        "behavior": "cooling_stabilization"
+      }
+    }
+  },
+  "tier3_commentary": {
+    "distillation_interpretation": "In reflux distillation, k (heat source), h (cucurbit), and e (condenser) form the control triangle. Hazards cluster at k because energy drives phase changes. Recovery passes through e because cooling/equilibration is the path to stability.",
+    "training_interpretation": "The pedagogical pacing (C478), HT vigilance (C477), and A-registry clustering support interpretation as an expert training manual for thermal-chemical process control."
+  }
+}

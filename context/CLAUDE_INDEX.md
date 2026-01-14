@@ -1,8 +1,10 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.8 | **Status:** FROZEN | **Constraints:** 335 | **Date:** 2026-01-11
+**Version:** 2.13 | **Status:** FROZEN | **Constraints:** 353 | **Date:** 2026-01-14
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
+>
+> **PIPELINE CLOSED** — A→AZC→B control architecture fully reconstructed and certified. PCA-v1 passed. Structural work is DONE.
 
 ---
 
@@ -143,6 +145,10 @@ requires explicit authorization from the user.
 |--------------|----------------|
 | Understand the core finding | [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md) |
 | Know what's been ruled out | [CORE/falsifications.md](CORE/falsifications.md) |
+| **Validate A structure (API)** | [STRUCTURAL_CONTRACTS/currierA.casc.yaml](STRUCTURAL_CONTRACTS/currierA.casc.yaml) |
+| **Validate B grammar (API)** | [STRUCTURAL_CONTRACTS/currierB.bcsc.yaml](STRUCTURAL_CONTRACTS/currierB.bcsc.yaml) |
+| **Understand A→AZC transform** | [STRUCTURAL_CONTRACTS/azc_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_activation.act.yaml) |
+| **Understand AZC→B propagation** | [STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml) |
 | Work with Currier B grammar | [ARCHITECTURE/currier_B.md](ARCHITECTURE/currier_B.md) |
 | Work with Currier A registry | [ARCHITECTURE/currier_A.md](ARCHITECTURE/currier_A.md) |
 | Work with AZC hybrid text | [ARCHITECTURE/currier_AZC.md](ARCHITECTURE/currier_AZC.md) |
@@ -201,13 +207,14 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 317 |
-| Completed phases | 118 |
+| Validated constraints | 353 |
+| Completed phases | 129 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
 | Instruction classes | 49 |
 | Scripts in archive | 98 |
+| Structural contracts | 4 (LOCKED) |
 
 ---
 
@@ -236,6 +243,7 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
 - **Constraints (by topic):** [CLAIMS/INDEX.md](CLAIMS/INDEX.md) - Browse by category, follow links to details
 - **Architectural guide:** [MODEL_CONTEXT.md](MODEL_CONTEXT.md) - How to interpret the constraint system
+- **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC)
 - **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - 118 phases with status
 - **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
 - **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
@@ -286,4 +294,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v1.5 | Project v1.8 FROZEN STATE | STRUCTURE_FREEZE_v1 | 2026-01-10*
+*Context System v2.12 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-13*

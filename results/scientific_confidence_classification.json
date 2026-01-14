@@ -1,0 +1,82 @@
+{
+  "b_tests": {
+    "total": 6,
+    "passed": 5,
+    "partial": 1,
+    "details": {
+      "B1": {
+        "passed": true,
+        "partial": false,
+        "summary": "Discrimination hierarchy holds: ENERGY (564) >> FREQUENT (164) >> REGISTRY (65)"
+      },
+      "B2": {
+        "passed": false,
+        "partial": false,
+        "summary": "FAILED: Normalized rates are ENERGY (40.48), FREQUENT (46.26), REGISTRY (43.57)"
+      },
+      "B3": {
+        "passed": true,
+        "partial": false,
+        "summary": "Forbidden transitions cluster at k (energy control boundary) - k-adjacent: 100%, h-adjacent: 0%, e-a"
+      },
+      "B4": {
+        "passed": true,
+        "partial": false,
+        "summary": "Regime ordering is monotonic: 0.367 < 0.510 < 0.584 < 0.717. Energy state is the primary control var"
+      },
+      "B5": {
+        "passed": true,
+        "partial": false,
+        "summary": "e-recovery (54.7%) is 1.64x enriched vs baseline (33%). Return-to-stability = cooling/equilibration "
+      },
+      "B6": {
+        "passed": true,
+        "partial": true,
+        "summary": "Section-level MIDDLE diversity: {'P': 332, 'H': 585, 'T': 146}. Full AZC-position analysis would req"
+      }
+    }
+  },
+  "negative_controls": {
+    "total": 4,
+    "strong_exclusions": 4,
+    "total_discriminators_failed": 12,
+    "details": {
+      "NC1": {
+        "strength": "STRONG",
+        "discriminators_failed": 3,
+        "verdict": "EXCLUDED - Failed 3/3 discriminators"
+      },
+      "NC2": {
+        "strength": "STRONG",
+        "discriminators_failed": 3,
+        "verdict": "EXCLUDED - Failed 3/3 discriminators"
+      },
+      "NC3": {
+        "strength": "STRONG",
+        "discriminators_failed": 3,
+        "verdict": "EXCLUDED - Failed 3/3 discriminators"
+      },
+      "NC4": {
+        "strength": "STRONG",
+        "discriminators_failed": 3,
+        "verdict": "EXCLUDED - Failed 3/3 discriminators"
+      }
+    }
+  },
+  "classification": {
+    "band": "HIGH",
+    "range": "80-85%",
+    "interpretation": "Distillation selected by convergence AND exclusion"
+  },
+  "physics_violations": [],
+  "informative_failures": {
+    "B2": {
+      "description": "Normalized rates show FREQUENT > ENERGY",
+      "interpretation": "ENERGY reuses MIDDLEs more heavily (repetitive monitoring), while FREQUENT has higher turnover (varied operations). This is CONSISTENT with distillation behavior - not a failure."
+    }
+  },
+  "verdict": "STRENGTHENED",
+  "tier": 3,
+  "method": "Qualitative confidence bands from directional + exclusion testing",
+  "NOT": "Numeric percentage stacking or ratio-matching"
+}

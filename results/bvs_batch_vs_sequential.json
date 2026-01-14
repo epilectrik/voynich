@@ -1,0 +1,77 @@
+{
+  "phase": "BvS",
+  "question": "Batch vs Sequential processing",
+  "h0": "B complexity independent of A line length (batch)",
+  "h1": "B complexity scales with A line length (sequential)",
+  "thresholds": {
+    "reject_batch": "p < 0.01",
+    "support_batch": "p > 0.10",
+    "inconclusive": "0.01 < p < 0.10"
+  },
+  "tests": [
+    {
+      "test": "A line length vs B line length",
+      "metrics": {
+        "SHORT": {
+          "n_lines": 2418,
+          "n_tokens": 23195,
+          "mean_line_length": 9.592638544251448,
+          "std_line_length": 3.2755800581206755,
+          "bigram_entropy": 14.082426978345165,
+          "unique_types": 4917,
+          "type_token_ratio": 0.21198534166846303
+        },
+        "MEDIUM": {
+          "n_lines": 2418,
+          "n_tokens": 23195,
+          "mean_line_length": 9.592638544251448,
+          "std_line_length": 3.2755800581206755,
+          "bigram_entropy": 14.082426978345165,
+          "unique_types": 4917,
+          "type_token_ratio": 0.21198534166846303
+        },
+        "LONG": {
+          "n_lines": 2418,
+          "n_tokens": 23195,
+          "mean_line_length": 9.592638544251448,
+          "std_line_length": 3.2755800581206755,
+          "bigram_entropy": 14.082426978345165,
+          "unique_types": 4917,
+          "type_token_ratio": 0.21198534166846303
+        }
+      },
+      "kruskal_wallis_H": 0.0,
+      "p_value": 1.0,
+      "interpretation": "SUPPORT_BATCH (p > 0.10)"
+    },
+    {
+      "test": "A line length vs B transition entropy",
+      "category_means": {
+        "SHORT": 7.807706056566069,
+        "MEDIUM": 7.807706056566069,
+        "LONG": 7.807706056566069
+      },
+      "kruskal_wallis_H": 0.0,
+      "p_value": 1.0,
+      "interpretation": "SUPPORT_BATCH (p > 0.10)"
+    },
+    {
+      "test": "A line length vs B type diversity",
+      "category_means": {
+        "SHORT": 0.6907245960659399,
+        "MEDIUM": 0.6907245960659399,
+        "LONG": 0.6907245960659399
+      },
+      "kruskal_wallis_H": 0.0,
+      "p_value": 1.0,
+      "interpretation": "SUPPORT_BATCH (p > 0.10)"
+    },
+    {
+      "test": "Within-folio control",
+      "mixed_folios": 64,
+      "mean_concentration": 0.1630927804584252,
+      "interpretation": "HIGH concentration supports BATCH (same B regardless of A line length)"
+    }
+  ],
+  "verdict": "BATCH_MODEL_CONFIRMED"
+}

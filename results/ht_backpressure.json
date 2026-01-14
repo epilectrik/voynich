@@ -1,0 +1,33 @@
+{
+  "test": "1B_HT_BACKPRESSURE",
+  "tier": "3-4",
+  "question": "Does HT morphology correspond to zone diversity?",
+  "data": {
+    "matched_folios": 197,
+    "ht_range": [
+      0.05625,
+      0.3448275862068966
+    ],
+    "diversity_range": [
+      1.3014085782953595,
+      1.9079088547725216
+    ]
+  },
+  "correlations": {
+    "ht_density_vs_diversity": {
+      "r": 0.24281349315213507,
+      "p": 0.0005861189375609215
+    },
+    "ht_ttr_vs_diversity": {
+      "r": 0.08669012104969298,
+      "p": 0.2257833552858365
+    }
+  },
+  "group_comparison": {
+    "high_ht_mean": 1.6629235368601385,
+    "low_ht_mean": 1.597296336181496,
+    "t_statistic": 3.7086937451764768,
+    "p_value": 0.00027154235304160517
+  },
+  "verdict": "HT_ZONE_CORRELATED"
+}

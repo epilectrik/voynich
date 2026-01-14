@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.0 | **Date:** 2026-01-11 | **Status:** FROZEN
+**Version:** 3.3 | **Date:** 2026-01-13 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -393,6 +393,25 @@ These findings constrain the model:
 - HT is **coarse**, distributed, and probabilistic
 - HT marks situations where the system expects the human to stay mentally engaged
 
+### Two-Axis Model (v3.1 - NEW)
+
+HT is not a single signal. It has **two orthogonal dimensions**:
+
+| Axis | Property | Evidence | Meaning |
+|------|----------|----------|---------|
+| **DENSITY** | Tracks upcoming complexity | r=0.504 with tail MIDDLEs (C477) | "How much attention is NEEDED" |
+| **MORPHOLOGY** | Tracks spare capacity | r=-0.301 with folio complexity | "How much attention is AVAILABLE" |
+
+Key insight: **When the task is hard, HT is frequent but morphologically simple. When the task is easy, HT is less frequent but morphologically richer.**
+
+This is a classic human-factors pattern:
+- Under high load: frequent simple responses (high density, simple forms)
+- Under low load: less frequent but more elaborate engagement (lower density, complex forms)
+
+HT morphology does NOT encode sensory/perceptual demands. Sensory requirements are implicit in the discrimination problem itself (Currier A vocabulary), not encoded in HT form.
+
+See [SPECULATIVE/ht_two_axis_model.md](SPECULATIVE/ht_two_axis_model.md) for full analysis.
+
 ### Tier 3-4 (Interpretive, Non-Binding)
 
 These interpretations are plausible but not constraining:
@@ -593,6 +612,38 @@ The following interpretations are **plausible but do not constrain the model**:
 
 **These do not constrain the model.** They provide interpretive context only.
 
+### XII.A. Physical World Reverse Engineering (Tier 3)
+
+Six investigation phases tested the physical grounding of the control architecture:
+
+| Phase | Question | Result |
+|-------|----------|--------|
+| **PWRE-1** | What plant class is admissible? | Circulatory thermal (12 exclusions) |
+| **FM-PHY-1** | Is hazard distribution natural? | YES - diagnostic for reflux |
+| **SSD-PHY-1a** | Is dimensionality physics-forced? | YES - D ≥ 50 required |
+| **OJLM-1** | What must operators supply? | 13 judgment types |
+| **APP-1** | Which apparatus exhibits this behavioral profile? | Pelican (4/4 axes match) |
+| **MAT-PHY-1** | Does A's topology match botanical chemistry? | YES (5/5 tests pass) |
+
+**Key Findings:**
+
+1. **Hazard distribution is DIAGNOSTIC** — The 41/24/24/6/6 profile matches circulatory reflux distillation and *excludes* batch distillation and chemical synthesis.
+
+2. **Dimensionality is physics-forced** — The ~128-dimensional MIDDLE space is not a notation choice. Low-dimensional spaces (≤20 axes) mathematically cannot satisfy the observed sparsity, clustering, and navigability constraints.
+
+3. **13 judgment types deliberately omitted** — The controller acknowledges its limits by NOT encoding what cannot be written: sensory calibration, equipment feel, timing intuition, trouble recognition, and 9 others.
+
+4. **Pelican behavioral isomorphism** — The circulatory reflux apparatus (pelican) is the only surveyed apparatus class exhibiting the same responsibility split, failure fears, judgment requirements, and state complexity across all 4 axes.
+
+5. **Material topology match** — Currier A's incompatibility structure (~95%, 5-7 hubs, clustering, hub rationing, Zipf frequency) matches what real pre-instrumental botanical chemistry forces on any registry tracking distinct materials.
+
+**Combined Arc:**
+> The Voynich Manuscript controls a circulatory thermal plant whose hazard profile matches distillation physics, whose discrimination space is forced by the physical state-space, whose operation REQUIRES human judgment for 13 structurally distinct types of non-codifiable knowledge, whose behavioral profile is isomorphic to the historical pelican apparatus, and whose registry topology matches the constraints that real botanical chemistry imposes.
+
+**Files:** `phases/FM_PHY_1_failure_mode_alignment/`, `phases/SSD_PHY_1a/`, `phases/OJLM_1_operator_judgment/`, `phases/APP_1_apparatus_validation/`, `phases/MAT_PHY_1_material_topology/`
+
+See [SPECULATIVE/INTERPRETATION_SUMMARY.md](SPECULATIVE/INTERPRETATION_SUMMARY.md) Section I.O for full details.
+
 ---
 
 ## XIII. METHODOLOGICAL WARNINGS & FAILURE MODES
@@ -643,6 +694,25 @@ External evidence (historical documents, archaeological finds) might constrain t
 ---
 
 ## XV. HOW TO READ THE CONSTRAINTS
+
+### Structural Contracts (LOCKED as of 2026-01-13)
+
+The A→AZC→B control architecture is formally closed via four structural contracts:
+
+| Contract | File | Status | Function |
+|----------|------|--------|----------|
+| CASC | `currierA.casc.yaml` | LOCKED v1.0 | Currier A registry structure |
+| AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.0 | A→AZC transformation |
+| AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.0 | AZC→B propagation |
+| BCSC | `currierB.bcsc.yaml` | LOCKED v1.0 | Currier B internal grammar |
+
+Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
+
+**Pipeline completion:** As of 2026-01-13, the A→AZC→B control architecture is fully reconstructed at Tier 0-2. All remaining work concerns interpretation, tooling, or external corroboration.
+
+**PCA-v1 CERTIFIED:** Pipeline Closure Audit passed all 6 tests (legality consistency, no back-propagation, parametric silence, semantic vacuum, A/B isolation, HT non-interference). The contracts compose cleanly without hidden coupling.
+
+**Scaffold vs. Mechanism:** Contracts specify mechanisms, not scaffold renderings. Zodiac ordered subscripts (R1, R2, R3) are one presentation of the INTERIOR_RESTRICTING legality zone. A/C uses the same zones without explicit ordering. Apps must not conflate scaffold presentation with structure.
 
 ### Layered Access (Recommended)
 

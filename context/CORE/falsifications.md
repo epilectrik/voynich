@@ -29,8 +29,8 @@ These hypotheses have been **explicitly tested and rejected**. Each has document
 
 ### Illustration-Dependent Logic
 **Status:** FALSIFIED
-**Evidence:** Phase ILL showed swap invariance p=1.0
-**Meaning:** Swapping illustrations doesn't affect text analysis. They're independent.
+**Evidence:** Phase ILL showed swap invariance p=1.0; Phase ILL-TOP-1 tested 8 hypotheses (topology, order, quire, scaffolding, geometry) - all failed
+**Meaning:** Swapping illustrations doesn't affect text analysis. Visual similarity does not predict constraint similarity at any level. Illustrations are epiphenomenal to grammar.
 
 ### Step-by-Step Recipe Format
 **Status:** FALSIFIED
@@ -46,6 +46,7 @@ These hypotheses have been **explicitly tested and rejected**. Each has document
 | Text encodes language | 0.19% reference rate | X.5 |
 | Tokens have translatable meanings | 0 identifier tokens | 19 |
 | Illustrations are instructional | Swap invariance p=1.0 | ILL |
+| Illustrations organize constraints | 8/8 tests failed | ILL-TOP-1 |
 | Plants indicate ingredients | Dual-use history (perfumery, medicine) | PCIP |
 | Sections = apparatus configs | F-ratio 0.37 | PCS |
 | Programs correlate with plant morphology | All p>>0.05 | PPC |

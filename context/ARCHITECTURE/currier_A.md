@@ -191,6 +191,24 @@ Sections have **distinct configurations** (C295):
 
 ---
 
+## Behavioral Classification (Tier 3)
+
+The 8 PREFIX families map to **operational domains** based on B-grammar evidence:
+
+| Domain | Prefixes | % of Classified | Structural Basis |
+|--------|----------|-----------------|------------------|
+| ENERGY_OPERATOR | ch, sh, qo | 59.4% | Dominates energy/escape roles in B |
+| CORE_CONTROL | da, ol | 19.1% | Structural anchors |
+| FREQUENT_OPERATOR | ok, ot | 15.1% | FREQUENT role in canonical grammar |
+| REGISTRY_REFERENCE | ct | 6.4% | 0% B terminals; 7x A-enriched |
+
+**Key finding:** Discrimination gradient—ENERGY domain has 8.7x more unique MIDDLEs than REGISTRY domain (564 vs 65).
+
+See [CURRIER_A_BRIEFING.md](CURRIER_A_BRIEFING.md) for consolidated summary.
+See [../SPECULATIVE/a_behavioral_classification.md](../SPECULATIVE/a_behavioral_classification.md) for detailed Tier-3 analysis.
+
+---
+
 ## Navigation
 
 ← [currier_B.md](currier_B.md) | [currier_AZC.md](currier_AZC.md) →

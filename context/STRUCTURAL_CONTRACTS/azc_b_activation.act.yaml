@@ -1,0 +1,376 @@
+# ============================================================
+# AZC-B-ACT: AZC-B Activation Contract
+# Version: 1.0
+# ============================================================
+#
+# This is a DERIVED, READ-ONLY specification.
+# It introduces NO NEW CLAIMS.
+# Constraints remain authoritative.
+# Do not edit without constraint update.
+#
+# Purpose: Thin, directional layer specifying how AZC legality
+# states propagate into Currier B execution without altering
+# B grammar.
+#
+# This is NOT a Currier B structural contract. It is an
+# AZC-output-facing interface contract describing the
+# AZC->B boundary only.
+#
+# ============================================================
+
+meta:
+  name: "AZC-B Activation Contract"
+  acronym: "AZC-B-ACT"
+  version: "1.0"
+  date: "2026-01-13"
+  status: "LOCKED"
+  layer_type: "propagation contract"
+  derived_from: "Tier-2 constraints only"
+  governance: |
+    AZC-B-ACT is NOT authoritative. Constraints are authoritative.
+    AZC-B-ACT describes HOW AZC legality states propagate into B.
+    Do not edit without updating source constraints first.
+
+# ============================================================
+# SCOPE & GUARANTEES
+# ============================================================
+scope:
+  function: "How AZC legality states constrain Currier B execution"
+  direction: "AZC -> B (one-way propagation, not reverse)"
+  b_grammar_authority: false  # Does not modify B grammar
+  a_visibility: false  # B does not see A entries
+  azc_visibility: false  # B does not see AZC internal structure
+
+# Explicit ownership declaration (prevents misreading)
+ownership:
+  azc_b_act_owns:
+    - nothing
+  azc_b_act_describes:
+    - legality_propagation
+    - intervention_permission_envelope
+    - vocabulary_restriction_inheritance
+  note: "Propagation contract, not grammar definition"
+
+# What B receives (effects, not signals)
+b_reception:
+  receives:
+    - description: "Grammar paths silently constrained by legality"
+      mechanism: "Illegal tokens/transitions are absent, not marked"
+      note: "Legality is ambient constraint, not state variable"
+    - description: "Intervention permission envelope"
+      mechanism: "Categorical permission, not quantitative resource"
+    - description: "Vocabulary restriction inheritance"
+      mechanism: "MIDDLE restrictions transfer intact"
+  does_not_receive:
+    - "Currier A entry identity"
+    - "AZC internal structure"
+    - "Why tokens are legal/illegal"
+    - "Compatibility graph mechanics"
+    - "Positional semantics (C, P, R, S zones)"
+  note: "B executes blindly against the legality field"
+
+guarantees:
+  - id: "LEGALITY_INHERITANCE"
+    statement: "AZC escape/constraint profiles propagate causally into B"
+    mechanism: "High-escape AZC contexts yield higher B escape incidence"
+    provenance: "C468"
+
+  - id: "RESTRICTION_PRESERVATION"
+    statement: "MIDDLE restrictions transfer intact to B"
+    mechanism: "AZC-restricted vocabulary remains restricted in B"
+    provenance: "C470"
+
+  - id: "GRAMMAR_INDEPENDENCE"
+    statement: "B grammar is unchanged by AZC legality"
+    mechanism: "All 49 classes, all transitions, all hazards apply regardless"
+    provenance: "C121, C124"
+
+  - id: "BLIND_EXECUTION"
+    statement: "B executes without knowledge of upstream mechanics"
+    mechanism: "Vocabulary -> legality -> B; no reverse inference"
+    provenance: "C384, C468"
+
+  - id: "CATEGORICAL_RESOLUTION"
+    statement: "Resolution via vocabulary availability, not parameters"
+    mechanism: "Fine distinctions encoded in which tokens are legal"
+    provenance: "C469"
+
+# ============================================================
+# INVARIANTS (structural guarantees for tooling/testing)
+# ============================================================
+invariants:
+  causal_transfer:
+    statement: "AZC legality causally determines B intervention dynamics"
+    description: "High-escape AZC contexts produce elevated B escape rates"
+    provenance: "C468"
+
+  restriction_inheritance:
+    statement: "Vocabulary restrictions survive pipeline transfer"
+    description: "MIDDLE-level folio restrictions propagate into B"
+    provenance: "C470"
+
+  grammar_stability:
+    statement: "B grammar rules apply universally regardless of AZC source"
+    description: "100% coverage, 0 folio exceptions"
+    provenance: "C124"
+
+  non_parametric:
+    statement: "No numeric values are transmitted through the pipeline"
+    description: "All distinctions are categorical (present/absent)"
+    provenance: "C469"
+
+  no_token_transmission:
+    statement: "No tokens are transmitted from Currier A to Currier B"
+    description: "Constraint inheritance modifies which token types are present for B execution; no token identity crosses system boundaries"
+    note: "A and B instantiate the same global type space under different structural roles; shared tokens ≠ shared reference"
+    provenance: "C384, C281, C285, C343"
+
+# ============================================================
+# INPUTS (what AZC exports)
+# ============================================================
+inputs:
+  from_azc:
+    type: "legality_effect"
+    components:
+      - escape_permission: "Position-indexed intervention permission envelope"
+      - folio_restriction: "MIDDLE-level compatibility constraints"
+    note: "Effects, not signals; ambient constraints, not state variables"
+    provenance: "C443, C468, C470"
+
+  not_exported:
+    - "AZC position labels (C, P, R, S)"
+    - "Folio identity"
+    - "Family membership (Zodiac vs A/C)"
+    - "Compatibility graph structure"
+    - "Escape rate thresholds or numeric values"
+    note: "B receives effects, not structure"
+
+# ============================================================
+# PROPAGATION MECHANICS
+# ============================================================
+propagation:
+  description: "How AZC legality transforms into B constraints"
+
+  escape_permission_transfer:
+    mechanism: "AZC escape permission envelope -> B intervention availability"
+    direction: "Higher AZC escape permission yields higher B escape incidence"
+    categorical: true
+    parametric: false
+    provenance: "C468"
+
+  vocabulary_restriction_transfer:
+    mechanism: "AZC MIDDLE restrictions -> B folio spread constraints"
+    direction: "Restricted MIDDLEs remain restricted in B"
+    categorical: true
+    parametric: false
+    provenance: "C470"
+
+  categorical_resolution:
+    mechanism: "Resolution via vocabulary availability, not parameters"
+    effect: "Fine distinctions encoded in which tokens are legal"
+    note: "No numeric values cross the boundary"
+    provenance: "C469"
+
+  vanishing_semantics:
+    statement: "Illegality manifests as absence, not marking"
+    description: "Illegal tokens/transitions simply do not appear in B"
+    mechanism: "Grammar paths are silently constrained"
+    provenance: "C444, C468"
+
+# ============================================================
+# B RECEPTION ARCHITECTURE (what receives AZC output)
+# ============================================================
+b_reception_architecture:
+  description: "How B uses the propagated legality constraints"
+  note: "Documents affected B aspects, not B internal structure"
+
+  escape_routes:
+    primary: "qo-prefix tokens"
+    role_stratification:
+      primary: "ENERGY_OPERATOR"
+      secondary: "CORE_CONTROL"
+    provenance: "C397, C398"
+
+  stability_anchor:
+    mechanism: "e-class tokens anchor to stable state"
+    provenance: "C105"
+
+  design_constraints:
+    hazard_exposure: "CLAMPED"
+    intervention_operations: "FREE"
+    principle: "Constrain dangerous interactions; let intervention vary"
+    provenance: "C458"
+
+# ============================================================
+# WHAT B DOES NOT RECEIVE
+# ============================================================
+b_isolation:
+  description: "What is explicitly NOT propagated to B"
+
+  blocked:
+    - item: "A entry identity"
+      reason: "C384 - no entry-level coupling"
+    - item: "AZC position structure"
+      reason: "B receives effects, not positions"
+    - item: "AZC folio semantics"
+      reason: "Folio identity does not propagate"
+    - item: "Compatibility graph"
+      reason: "B sees legal/illegal as absence/presence, not why"
+    - item: "MIDDLE incompatibility details"
+      reason: "Filtering happens upstream"
+    - item: "Numeric thresholds or ratios"
+      reason: "C469 - categorical resolution only"
+
+  note: |
+    B grammar is SELF-CONTAINED.
+    AZC provides only: which tokens are legal (by absence/presence).
+    B applies its own 49-class grammar regardless.
+
+# ============================================================
+# NEGATIVE GUARANTEES
+# ============================================================
+negative_guarantees:
+  - guarantee: "No A entry visibility in B"
+    reason: "C384 - vocabulary-mediated only"
+
+  - guarantee: "No AZC structure visibility in B"
+    reason: "Propagation is effects-only"
+
+  - guarantee: "No B grammar modification by AZC"
+    reason: "C121, C124 - grammar is universal"
+
+  - guarantee: "No reverse inference from B to AZC"
+    reason: "Pipeline is unidirectional"
+
+  - guarantee: "No parametric encoding"
+    reason: "C469 - categorical resolution only"
+
+  - guarantee: "No numeric values transmitted"
+    reason: "All distinctions are categorical"
+
+# ============================================================
+# EXPLICITLY DEFERRED
+# ============================================================
+deferred:
+  - topic: "B internal grammar structure"
+    reason: "Belongs to BCSC, not this activation contract"
+
+  - topic: "49-class taxonomy details"
+    reason: "B internal structure"
+
+  - topic: "Hazard topology details"
+    reason: "B internal structure"
+
+  - topic: "LINK operator semantics"
+    reason: "B internal structure"
+
+  - topic: "Folio program taxonomy"
+    reason: "B internal structure"
+
+  - topic: "STATE-C / STATE-X semantics"
+    reason: "B internal structure"
+
+  - topic: "Procedure identity"
+    reason: "B internal structure / Tier-3"
+
+  - topic: "Process domain interpretation"
+    reason: "Tier-3 speculative layer"
+
+# ============================================================
+# DISALLOWED INTERPRETATIONS
+# ============================================================
+disallowed:
+  - interpretation: "B sees A entries"
+    reason: "Vocabulary-mediated only (C384)"
+    provenance: "C384"
+
+  - interpretation: "B can infer AZC position"
+    reason: "Effects propagate, not structure"
+    provenance: "C468"
+
+  - interpretation: "AZC modifies B grammar"
+    reason: "Grammar is universal and unchanged"
+    provenance: "C121, C124"
+
+  - interpretation: "Recovery budget is a quantitative resource"
+    reason: "Categorical permission only, no parametric values"
+    provenance: "C469"
+
+  - interpretation: "Legality is a state variable in B"
+    reason: "Ambient constraint (absence/presence), not signal"
+    provenance: "C468, C469"
+
+  - interpretation: "Numeric thresholds are contractual"
+    reason: "Thresholds are empirical observations, not rules"
+    provenance: "C469"
+
+# ============================================================
+# NON-NORMATIVE ANNOTATIONS
+# ============================================================
+# Empirical observations for reference. These are NOT contractual
+# guarantees and may vary with filtering or dataset changes.
+
+annotations:
+  note: "These are empirical observations, NOT structural guarantees"
+  status: "NON-NORMATIVE"
+
+  escape_statistics:
+    high_context_b_escape: "28.6%"
+    low_context_b_escape: "1.0%"
+    ratio: "28x"
+    azc_threshold_used: ">=5% vs <5%"
+    note: "Thresholds are observational, not definitional"
+    provenance: "C468"
+
+  restriction_statistics:
+    restricted_middle_spread: "4.0 folios mean"
+    universal_middle_spread: "50.6 folios mean"
+    ratio: "12.7x"
+    note: "Spread difference preserved through pipeline"
+    provenance: "C470"
+
+  recovery_statistics:
+    qo_escape_rate: "25-47%"
+    e_recovery_path_rate: "54.7%"
+    energy_operator_escape: "40-67%"
+    core_control_escape: "22-32%"
+    provenance: "C397, C398, C105"
+
+  design_clamp_statistics:
+    hazard_cv: "0.04-0.11"
+    recovery_cv: "0.72-0.82"
+    provenance: "C458"
+
+# ============================================================
+# PROVENANCE MAP
+# ============================================================
+provenance:
+  pipeline_causality:
+    - "C468"  # Legality inheritance
+    - "C469"  # Categorical resolution
+    - "C470"  # MIDDLE restriction inheritance
+
+  b_reception:
+    - "C105"  # e = STABILITY_ANCHOR
+    - "C397"  # qo-prefix escape route
+    - "C398"  # Escape role stratification
+    - "C399"  # Safe precedence pattern
+    - "C458"  # Execution design clamp
+
+  boundary_preservation:
+    - "C384"  # No entry-level A-B coupling
+    - "C121"  # 49 instruction classes
+    - "C124"  # 100% grammar coverage
+
+  vanishing_semantics:
+    - "C444"  # Position independence (vanishing = illegality)
+
+  invariants:
+    - "C443"  # Escape gradient source
+    - "C468"  # Causal transfer
+    - "C470"  # Restriction preservation
+    - "C469"  # Non-parametric
+
+# ============================================================
+# END OF AZC-B-ACT
+# ============================================================

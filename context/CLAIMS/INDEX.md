@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 319 validated constraints | **Version:** 2.15
+**Total:** 333 validated constraints | **Version:** 2.21
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -382,7 +382,7 @@ Every new constraint MUST specify system scope:
 
 ---
 
-## HT Threading (C450-C453, C457)
+## HT Threading (C450-C453, C457, C477)
 
 > **Summary:** C450-C453 jointly establish HT as a manuscript-wide, codicologically clustered orientation layer with unified vocabulary and session-level continuity. C457 shows HT anchors preferentially to boundary positions within AZC.
 
@@ -393,6 +393,57 @@ Every new constraint MUST specify system scope:
 | 452 | HT Unified Prefix Vocabulary (Jaccard >= 0.947) | 2 | HT/GLOBAL | -> [C452_ht_unified_vocabulary.md](C452_ht_unified_vocabulary.md) |
 | 453 | HT Adjacency Clustering (1.69x enrichment, stronger than C424) | 2 | HT/GLOBAL | -> [C453_ht_adjacency_clustering.md](C453_ht_adjacency_clustering.md) |
 | **457** | **HT Boundary Preference in Zodiac AZC** (S=39.7% > R=29.5%, V=0.105) | 2 | HT/AZC | -> [C457_ht_boundary_preference.md](C457_ht_boundary_preference.md) |
+| **477** | **HT Tail Correlation** (r=0.504, p=0.0045, R²=0.28) | 2 | HT/A | -> [C477_ht_tail_correlation.md](C477_ht_tail_correlation.md) |
+
+---
+
+## Survivor-Set Dimensionality (C479-C481)
+
+> **Summary:** C479-C481 close the last open gap in A→AZC→HT integration. Survivor-set size scales discrimination responsibility (C479), survivor sets are unique constraint fingerprints (C481), and there is marginal evidence for B micro-variability correlation (C480, Tier 3).
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **479** | **Survivor-Set Discrimination Scaling** (partial rho=0.395, p<10^-29) | 2 | A+AZC+HT | -> [C479_survivor_discrimination_scaling.md](C479_survivor_discrimination_scaling.md) |
+| 480 | Constrained Execution Variability (rho=0.306, p=0.078, PROVISIONAL) | 3 | A→B | -> [C480_constrained_variability.md](C480_constrained_variability.md) |
+| **481** | **Survivor-Set Uniqueness** (0 collisions in 1575 lines) | 2 | A+AZC | -> [C481_survivor_set_uniqueness.md](C481_survivor_set_uniqueness.md) |
+
+---
+
+## Batch Processing Semantics (C482-C484)
+
+> **Summary:** C482-C484 close the last open questions about A→B operational semantics. A line multiplicity specifies compound input (C482); repetition is ordinal emphasis only (C483); A channel is bifurcated into registry entries and control operators (C484).
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **482** | **Compound Input Specification** (B invariant to A line length, p=1.0) | 2 | A→B | -> [C482_compound_input_specification.md](C482_compound_input_specification.md) |
+| **483** | **Ordinal Repetition Invariance** (magnitude has no downstream effect) | 2 | A | -> [C483_ordinal_repetition_invariance.md](C483_ordinal_repetition_invariance.md) |
+| **484** | **A Channel Bifurcation** (registry entries + control operators, p<0.01) | 2 | A | -> [C484_a_channel_bifurcation.md](C484_a_channel_bifurcation.md) |
+
+---
+
+## Semantic Ceiling Extension (C485-C489)
+
+> **Summary:** C485-C489 establish grammar minimality, bidirectional constraint coherence, A-registry memory optimization, and HT operational load predictions from the SEMANTIC_CEILING_EXTENSION phase.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **485** | **Grammar Minimality** (e-operator and h->k suppression are load-bearing) | 2 | B | -> [C485_grammar_minimality.md](C485_grammar_minimality.md) |
+| 486 | Bidirectional Constraint Coherence (B behavior constrains A zone inference) | 3 | CROSS_SYSTEM | -> [C486_bidirectional_constraints.md](C486_bidirectional_constraints.md) |
+| 487 | A-Registry Memory Optimization (z=-97 vs random, 0th percentile) | 3 | A | -> [C487_memory_optimization.md](C487_memory_optimization.md) |
+| 488 | HT Predicts Strategy Viability (r=0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC) | 3 | HT | -> [C488_ht_strategy_prediction.md](C488_ht_strategy_prediction.md) |
+| 489 | HT Zone Diversity Correlation (r=0.24, p=0.0006) | 3 | HT | -> [C489_ht_zone_diversity.md](C489_ht_zone_diversity.md) |
+
+---
+
+## Structural Topology Tests (C490-C492)
+
+> **Summary:** C490-C492 establish categorical strategy exclusion and PREFIX phase-exclusive legality from the STRUCTURAL_TOPOLOGY_TESTS phase. C491 (Judgment-Critical Axis) remains Tier 3 interpretive.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **490** | **Categorical Strategy Exclusion** (20.5% of programs forbid AGGRESSIVE, not gradient but prohibition) | 2 | B | -> [C490_categorical_strategy_exclusion.md](C490_categorical_strategy_exclusion.md) |
+| 491 | Judgment-Critical Program Axis (OPPORTUNISTIC orthogonal to caution/aggression) | 3 | B | ⊂ SPECULATIVE |
+| **492** | **PREFIX Phase-Exclusive Legality** (ct PREFIX is 0% C/S-zones, 26% P-zone, invariant) | 2 | A→AZC | -> [C492_prefix_phase_exclusion.md](C492_prefix_phase_exclusion.md) |
 
 ---
 
@@ -433,10 +484,10 @@ These files contain detailed constraint documentation. Constraint ranges are app
 |------|----------|----------------|
 | [tier0_core.md](tier0_core.md) | Tier 0 frozen facts | C074-C132 |
 | [grammar_system.md](grammar_system.md) | Grammar and kernel structure | C085-C144, C328-C393 |
-| [currier_a.md](currier_a.md) | Currier A registry | C224-C266, C345-C346, C420-C424 |
+| [currier_a.md](currier_a.md) | Currier A registry | C224-C266, C345-C346, C420-C424, C475-C478 |
 | [morphology.md](morphology.md) | Compositional morphology | C267-C298, C349-C410 |
 | [operations.md](operations.md) | OPS doctrine and control | C178-C223, C394-C403 |
-| [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453 |
+| [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453, C477 |
 | [azc_system.md](azc_system.md) | AZC hybrid system | C300-C327, C430-C436 |
 | [organization.md](organization.md) | Organizational structure | C153-C176, C323-C370 |
 

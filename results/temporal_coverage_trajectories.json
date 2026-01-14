@@ -1,0 +1,149 @@
+{
+  "probe_id": "TEMPORAL_COVERAGE_TRAJECTORIES",
+  "question": "Is Currier A static-optimal or dynamically scheduled?",
+  "configuration": {
+    "n_entries": 8487,
+    "n_middles": 1187,
+    "n_random_trials": 100,
+    "novelty_window": 100,
+    "tail_percentile": 25,
+    "prefix_window": 50
+  },
+  "signal_1_coverage": {
+    "description": "When are coverage milestones reached?",
+    "timing": {
+      "25pct": {
+        "real_pct": 0.13373394603511252,
+        "random_pct": 0.09944621185342288,
+        "greedy_pct": 0.034876870507835514,
+        "real_vs_random": 0.03428773418168964,
+        "real_vs_greedy": 0.09885707552727702
+      },
+      "50pct": {
+        "real_pct": 0.3216684340756451,
+        "random_pct": 0.28125368210203844,
+        "greedy_pct": 0.0698715682809002,
+        "real_vs_random": 0.040414751973606694,
+        "real_vs_greedy": 0.2517968657947449
+      },
+      "75pct": {
+        "real_pct": 0.7054318369270649,
+        "random_pct": 0.5614469188170143,
+        "greedy_pct": 0.10486626605396489,
+        "real_vs_random": 0.14398491811005065,
+        "real_vs_greedy": 0.6005655708731
+      },
+      "90pct": {
+        "real_pct": 0.8950159066808059,
+        "random_pct": 0.7994579945799458,
+        "greedy_pct": 0.12583951926475787,
+        "real_vs_random": 0.09555791210086013,
+        "real_vs_greedy": 0.7691763874160481
+      },
+      "95pct": {
+        "real_pct": 0.9420289855072463,
+        "random_pct": 0.8947802521503476,
+        "greedy_pct": 0.13279132791327913,
+        "real_vs_random": 0.04724873335689879,
+        "real_vs_greedy": 0.8092376575939673
+      },
+      "100pct": {
+        "real_pct": 0.9984682455520207,
+        "random_pct": 0.9998821727347709,
+        "greedy_pct": 0.1397431365618004,
+        "real_vs_random": -0.0014139271827500884,
+        "real_vs_greedy": 0.8587251089902204
+      }
+    },
+    "diagnostic": "Earlier than random = front-loaded, later = back-loaded"
+  },
+  "signal_2_novelty": {
+    "description": "How does novelty rate change over manuscript?",
+    "phases": {
+      "phase_1": {
+        "total_novel": 601,
+        "rate": 0.21244255920820077,
+        "entries": 2829
+      },
+      "phase_2": {
+        "total_novel": 267,
+        "rate": 0.09437963944856839,
+        "entries": 2829
+      },
+      "phase_3": {
+        "total_novel": 319,
+        "rate": 0.11276069282431955,
+        "entries": 2829
+      }
+    },
+    "total_novel": 1187,
+    "diagnostic": "Spikes early/mid/late? Bursts or droughts?"
+  },
+  "signal_3_tail_pressure": {
+    "description": "When are rare MIDDLEs introduced?",
+    "phases": {
+      "phase_1": {
+        "mean": 0.07930832631371565,
+        "std": 0.05496000402649805,
+        "max": 0.29411764705882354,
+        "min": 0.0
+      },
+      "phase_2": {
+        "mean": 0.041877196265568795,
+        "std": 0.03490126312325025,
+        "max": 0.17647058823529413,
+        "min": 0.0
+      },
+      "phase_3": {
+        "mean": 0.07066176178612568,
+        "std": 0.04242935617118914,
+        "max": 0.21568627450980393,
+        "min": 0.0
+      }
+    },
+    "overall_mean": 0.06394909478847004,
+    "diagnostic": "Front-loaded = early difficulty, back-loaded = escalation"
+  },
+  "signal_4_prefix": {
+    "description": "How do prefix regimes evolve?",
+    "entropy_by_third": {
+      "first": 2.005144029984799,
+      "middle": 2.1875677608597073,
+      "last": 2.165489798045529
+    },
+    "is_cycling": true,
+    "n_regime_changes": 164,
+    "mean_run_length": 1.725609756097561,
+    "dominant_prefixes": [
+      "sh",
+      "ch",
+      "ok",
+      "ol",
+      "ot",
+      "qo",
+      "da"
+    ],
+    "diagnostic": "Blocks = cognitive load min, cycling = multi-axis traversal"
+  },
+  "verdict": {
+    "verdict": "STRONG-SCHEDULING",
+    "scores": {
+      "static_optimal": 0,
+      "weak_temporal": 0,
+      "strong_scheduling": 5
+    },
+    "evidence": {
+      "static_optimal": [],
+      "weak_temporal": [],
+      "strong_scheduling": [
+        "Coverage BACK-LOADED: 90% reached 9.6% later than random",
+        "FRONT-LOADED novelty: Phase 1 (0.212) >> Phase 3 (0.113)",
+        "U-SHAPED tail pressure: 0.079 -> 0.042 -> 0.071",
+        "PREFIX CYCLING: 7 prefixes cycle across manuscript",
+        "Prefix diversity INCREASES then stabilizes"
+      ]
+    },
+    "confidence": 1.0,
+    "interpretation": "PEDAGOGICAL_PACING: Introduce early, reinforce throughout, cycle domains"
+  }
+}

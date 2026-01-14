@@ -33,8 +33,9 @@ This is the only file that should be read automatically. All other files are loa
 | `SYSTEM/` | Meta-rules, tiers, methodology | When unsure how project works |
 | `CORE/` | Tier 0 frozen facts, Tier 1 falsifications | When checking what's proven/rejected |
 | `ARCHITECTURE/` | Currier A, B, AZC structural analysis | When working on specific text type |
+| `STRUCTURAL_CONTRACTS/` | API layer: CASC, AZC-ACT, AZC-B-ACT, BCSC | **First stop for structural validation** |
 | `OPERATIONS/` | OPS doctrine, program taxonomy | When analyzing program behavior |
-| `CLAIMS/` | All 317 constraints, indexed and grouped | When citing or checking constraints |
+| `CLAIMS/` | All 353 constraints, indexed and grouped | When citing or checking constraints |
 | `TERMINOLOGY/` | Definitions of key terms | When confused about vocabulary |
 | `METRICS/` | Quantitative facts and thresholds | When checking numbers |
 | `SPECULATIVE/` | Tier 3-4 interpretive content | Only when explicitly relevant |

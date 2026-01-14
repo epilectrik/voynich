@@ -1,0 +1,110 @@
+# PWRE-1 Fit Table Additions
+# Status: Tier 3 (Non-binding, exploratory)
+# Date: 2026-01-13
+
+## F-PWRE-001: Plant Affordance Necessity
+Tier: F3
+Status: SUCCESS
+Scope: GLOBAL→PHYSICAL
+
+Statement: The controller architecture implies 12 necessary physical affordances. Plants lacking any affordance cannot be governed by this controller.
+
+Evidence:
+- Continuous observability required (C171)
+- Intervention points required (C366)
+- Equilibration targets required (C105)
+- Restart capability required (C182)
+- Bidirectional transitions required (C391)
+- Convergent state-space required (C074)
+- Categorizable hazards required (C109)
+- Kernel-mediated risk required (C107)
+- Controllable hazard exposure required (C458)
+- Categorical discrimination required (C469)
+- Sparse compatibility required (C475)
+- Type-based behavior required (C383)
+
+Key Constraints: C171, C105, C107, C109, C182, C366, C391, C458, C469, C475, C383
+
+---
+
+## F-PWRE-002: Hazard Topology Compatibility
+Tier: F3
+Status: SUCCESS
+Scope: C109→PHYSICAL
+
+Statement: The observed hazard distribution (41% phase, 24% composition, 24% containment, 6% rate, 6% energy) is compatible with circulatory thermal and extraction/separation process archetypes.
+
+Evidence:
+- Batch thermal: ELIMINATED (energy would dominate)
+- Chemical synthesis: ELIMINATED (rate would dominate)
+- Mechanical assembly: ELIMINATED (no phase/composition)
+- Biological cultivation: ELIMINATED (phase/rate mismatch)
+- Circulatory thermal: COMPATIBLE (all 8 criteria met)
+- Extraction/separation: COMPATIBLE (all 8 criteria met)
+
+Key Constraints: C109, C110, C111, C112, C216
+
+---
+
+## F-PWRE-003: Two-Axis State-Space Model
+Tier: F3
+Status: SUCCESS
+Scope: A+AZC→STATE_SPACE
+
+Statement: Physical state-space is tracked via two orthogonal axes: Material Type (PREFIX, 4 classes) and Handling Requirement (MIDDLE, ~128 dimensions). Orthogonality (p=0.852) explains irrecoverability.
+
+Evidence:
+- Material type: 4 classes from 2×2 matrix (mobility × distinctness)
+- Handling requirement: 1,187 unique MIDDLEs, 95.7% incompatibility
+- Zone-material orthogonality: p = 0.852
+- Hub MIDDLEs: 'a', 'o', 'e', 'ee', 'eo' (universal connectors)
+
+Key Constraints: C383, C475, C469, Zone-Material Orthogonality (I.M)
+
+---
+
+## F-PWRE-004: Twelve-Class Exclusion
+Tier: F3
+Status: SUCCESS
+Scope: GLOBAL→PHYSICAL
+
+Statement: 12 major classes of physical processes are structurally excluded by Tier 0-2 constraints: one-pass batch, open-loop scheduled, observation-terminated, irreversible, non-equilibrating, quantitative ratio, precision measurement, stored-context, rate-critical, energy-dominant, substance-specific, continuous degradation.
+
+Evidence:
+- Each exclusion derived from specific Tier 0-2 constraint
+- Exclusions are structural (logical necessity), not empirical
+- Remaining space: circulatory, reversible, categorical, stateless, equilibrium-seeking
+
+Key Constraints: C171, C391, C105, C182, C383, C469, C384, C109
+
+---
+
+## F-PWRE-005: Irrecoverability Is Architectural
+Tier: F3
+Status: SUCCESS
+Scope: ARCHITECTURE
+
+Statement: Substance identity irrecoverability is an architectural design feature, not a decoding barrier. Five structural barriers enforce it: axis orthogonality, sparse compatibility, no A-B coupling, categorical resolution, type-based behavior.
+
+Evidence:
+- Zone-material orthogonality: p = 0.852 (can't infer type from handling)
+- MIDDLE incompatibility: 95.7% (can't infer from co-occurrence)
+- No A-B coupling: C384 (can't trace across systems)
+- Categorical resolution: C469 (can't recover parameters)
+- Type-based behavior: C383 (same handling for entire class)
+
+Key Constraints: C383, C384, C469, C475, Zone-Material Orthogonality (I.M)
+
+---
+
+# Summary
+
+| Fit ID | Statement | Tier | Status |
+|--------|-----------|------|--------|
+| F-PWRE-001 | 12 plant affordances necessary | F3 | SUCCESS |
+| F-PWRE-002 | Hazard topology matches circulatory/extraction | F3 | SUCCESS |
+| F-PWRE-003 | Two-axis state-space model | F3 | SUCCESS |
+| F-PWRE-004 | 12 process classes excluded | F3 | SUCCESS |
+| F-PWRE-005 | Irrecoverability is architectural | F3 | SUCCESS |
+
+All fits are Tier 3 (exploratory, non-binding). None alter Tier 0-2 constraints.

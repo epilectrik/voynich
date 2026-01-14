@@ -1,0 +1,135 @@
+{
+  "test": "Test 4: Complementarity Asymmetry",
+  "date": "2026-01-13",
+  "question": "Is the information split between Puff and Voynich clean, non-overlapping, and systematic?",
+  "capability_matrix": {
+    "material_naming": {
+      "puff": {
+        "status": "PRESENT",
+        "evidence": "83 chapters, each chapter names a specific plant (Rosen, Lilien, Valtrian, etc.)"
+      },
+      "voynich": {
+        "status": "ABSENT",
+        "evidence": "C171: 0 material encoding in execution grammar; C384: No A-B entry coupling"
+      },
+      "complementary": true
+    },
+    "therapeutic_indications": {
+      "puff": {
+        "status": "PRESENT",
+        "evidence": "Each chapter describes what diseases/conditions the distilled water treats. Brunschwig adopted these indications."
+      },
+      "voynich": {
+        "status": "ABSENT",
+        "evidence": "No disease/therapeutic references in structural analysis"
+      },
+      "complementary": true
+    },
+    "distillation_methods": {
+      "puff": {
+        "status": "ABSENT",
+        "evidence": "Methods NOT explained, with ONE exception (Chapter 83, juniper). Scholarly sources confirm: 'distillation methods were not explained'."
+      },
+      "voynich": {
+        "status": "PRESENT",
+        "evidence": "49 instruction classes covering complete operational grammar"
+      },
+      "complementary": true
+    },
+    "hazard_doctrine": {
+      "puff": {
+        "status": "ABSENT",
+        "evidence": "No hazard warnings or forbidden transitions documented in chapter structure"
+      },
+      "voynich": {
+        "status": "PRESENT",
+        "evidence": "17 forbidden transitions in 5 hazard classes (C490, C109). PHASE_ORDERING=41%, COMPOSITION_JUMP=24%, etc."
+      },
+      "complementary": true
+    },
+    "recovery_rules": {
+      "puff": {
+        "status": "ABSENT",
+        "evidence": "No recovery/salvage procedures documented"
+      },
+      "voynich": {
+        "status": "PRESENT",
+        "evidence": "89% reversibility, e-dominance (54.7%), limited retry architecture"
+      },
+      "complementary": true
+    },
+    "fire_degree_control": {
+      "puff": {
+        "status": "ABSENT",
+        "evidence": "No fire degree specifications. Methods not explained."
+      },
+      "voynich": {
+        "status": "PRESENT",
+        "evidence": "k/h/e kernel (heat/hold/equilibrate), hierarchical control structure"
+      },
+      "complementary": true
+    },
+    "sensory_tests": {
+      "puff": {
+        "status": "UNCLEAR",
+        "evidence": "Puff describes therapeutic applications, but sensory testing for distillation quality not confirmed in sources. Brunschwig later provided sensory tests."
+      },
+      "voynich": {
+        "status": "ABSENT",
+        "evidence": "HT is non-operational (C404-C405). Sensory completion assumed external to grammar."
+      },
+      "complementary": "PARTIAL - both absent or unclear"
+    },
+    "equipment_specifications": {
+      "puff": {
+        "status": "ABSENT",
+        "evidence": "No equipment or apparatus details. Public text for 'common people'."
+      },
+      "voynich": {
+        "status": "PARTIAL",
+        "evidence": "Apparatus-centric semantics (Tier 3), but not explicit equipment naming. Process-generic."
+      },
+      "complementary": "PARTIAL"
+    }
+  },
+  "summary": {
+    "clean_complementary_capabilities": 6,
+    "partial_complementary": 2,
+    "overlapping": 0,
+    "total_capabilities": 8
+  },
+  "split_pattern": {
+    "puff_provides": [
+      "Material naming (WHAT to distill)",
+      "Therapeutic indications (WHY to distill)",
+      "Public accessibility (common people)"
+    ],
+    "voynich_provides": [
+      "Distillation methods (HOW to distill)",
+      "Hazard doctrine (what to avoid)",
+      "Recovery rules (how to salvage)",
+      "Fire control (temperature management)",
+      "Expert-level control (trained operators)"
+    ],
+    "neither_provides": [
+      "Combined material-method pairing",
+      "Step-by-step recipes linking specific plants to specific procedures"
+    ]
+  },
+  "analysis": {
+    "is_split_clean": true,
+    "is_split_systematic": true,
+    "interpretation": "Puff answers 'WHAT material and WHY use it'. Voynich answers 'HOW to process any material'. Together they form a complete distillation curriculum, but neither alone is sufficient.",
+    "guild_secrecy_fit": "The split aligns with known guild practices: therapeutic knowledge was public (Puff for 'common people'), but process knowledge was restricted (Voynich encoded for secrecy)."
+  },
+  "brunschwig_validation": {
+    "observation": "Brunschwig (1500) COMBINED both traditions: therapeutic indications from Puff + methods from 'other sources'.",
+    "implication": "Brunschwig had access to BOTH the material registry (Puff) AND a method manual (possibly Voynich-like encoded text or oral tradition).",
+    "sources_cited": "Brunschwig cites Rupescissa and other 15th-century German manuscripts for methods."
+  },
+  "result": {
+    "verdict": "PASS",
+    "confidence": "HIGH",
+    "evidence": "6/8 capabilities show clean complementary split. Zero overlap. Split is systematic and aligns with documented guild secrecy practices."
+  }
+}

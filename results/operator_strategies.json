@@ -1,0 +1,70 @@
+{
+  "test": "4A_OPERATOR_STRATEGIES",
+  "tier": "3-4",
+  "question": "Which B programs tolerate which operator strategies?",
+  "thresholds": {
+    "link_density": {
+      "low": 0.34218000000000004,
+      "high": 0.404
+    },
+    "intervention_frequency": {
+      "low": 4.8518,
+      "high": 6.497
+    },
+    "qo_density": {
+      "low": 0.12271710245726847,
+      "high": 0.18086446886446886
+    },
+    "hazard_density": {
+      "low": 0.5611200000000001,
+      "high": 0.609
+    },
+    "recovery_ops_count": {
+      "low": 8.0,
+      "high": 19.0
+    }
+  },
+  "archetype_counts": {
+    "AGGRESSIVE_INTERVENTION": 6,
+    "MIXED": 50,
+    "ENERGY_INTENSIVE": 10,
+    "CONSERVATIVE_WAITING": 17
+  },
+  "viability_matrix": {
+    "AGGRESSIVE_INTERVENTION": {
+      "CAUTIOUS": 0.16666666666666666,
+      "AGGRESSIVE": 0.6666666666666666,
+      "OPPORTUNISTIC": 0.6666666666666666
+    },
+    "CONSERVATIVE_WAITING": {
+      "CAUTIOUS": 0.45098039215686275,
+      "AGGRESSIVE": 0.0,
+      "OPPORTUNISTIC": 0.20588235294117646
+    },
+    "ENERGY_INTENSIVE": {
+      "CAUTIOUS": 0.03333333333333333,
+      "AGGRESSIVE": 0.6333333333333333,
+      "OPPORTUNISTIC": 0.8
+    },
+    "MIXED": {
+      "CAUTIOUS": 0.38666666666666666,
+      "AGGRESSIVE": 0.35999999999999993,
+      "OPPORTUNISTIC": 0.29
+    }
+  },
+  "ht_correlations": {
+    "CAUTIOUS": {
+      "r": 0.4586437501644242,
+      "p": 1.2973389196292627e-05
+    },
+    "AGGRESSIVE": {
+      "r": -0.4322423271615678,
+      "p": 4.492527844716301e-05
+    },
+    "OPPORTUNISTIC": {
+      "r": -0.48073944178750594,
+      "p": 4.22641052097684e-06
+    }
+  },
+  "verdict": "DIFFERENTIATED_STRATEGIES"
+}

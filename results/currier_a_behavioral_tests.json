@@ -1,0 +1,79 @@
+{
+  "test_battery": "Currier A Operational Affordance Alignment",
+  "date": "2026-01-14",
+  "tests_passed": 5,
+  "total_tests": 5,
+  "verdict": "STRONG",
+  "model_safe_interpretation": {
+    "c171_status": "UNCHANGED",
+    "claim": "A discriminates operational affordance profiles",
+    "alignment": "Statistical alignment with procedure-class axes",
+    "no_material_encoding": true
+  },
+  "test_results": {
+    "test_1_prefix_commitment": {
+      "description": "PREFIX distribution by commitment level",
+      "result": "PASS",
+      "evidence": {
+        "chi_squared": 4094.4,
+        "p_value": 0.0,
+        "qo_depleted": true,
+        "ok_ot_enriched": [
+          2.473,
+          3.511
+        ]
+      },
+      "affordance_interpretation": "PREFIX families show differential participation in low vs high commitment regimes"
+    },
+    "test_2_middle_breadth": {
+      "description": "MIDDLE vocabulary by discrimination breadth",
+      "result": "PASS",
+      "evidence": {
+        "a_universal_pct": 43.74,
+        "azc_universal_pct": 48.08,
+        "direction": "ENRICHED",
+        "p_value": 1.594807600887557e-10
+      },
+      "affordance_interpretation": "Universal MIDDLEs (broad compatibility) enriched in AZC"
+    },
+    "test_3_sister_tightness": {
+      "description": "Sister pair selection by intervention tightness",
+      "result": "PASS",
+      "evidence": {
+        "zodiac_ok_ot": 0.6483485983902303,
+        "ac_ok_ot": 1.0421965317919075,
+        "ot_dominant_in_zodiac": true
+      },
+      "affordance_interpretation": "Sister pairs correlate with intervention tightness profiles"
+    },
+    "test_4_positional_gradient": {
+      "description": "Positional gradient in A sections",
+      "result": "PASS",
+      "evidence": {
+        "energy_middles": 564,
+        "registry_middles": 65,
+        "ratio": 8.676923076923076,
+        "h_in_b": 0.916,
+        "t_in_b": 0.0
+      },
+      "affordance_interpretation": "Discrimination gradient exists across operational domains"
+    },
+    "test_5_anomalous_envelope": {
+      "description": "Anomalous procedural envelope detection",
+      "result": "PASS",
+      "evidence": {
+        "ct_a_pct": 6.4,
+        "ct_azc_ratio": 0.144,
+        "f85v2_regime": "REGIME_2",
+        "f85v2_k": 0.0
+      },
+      "affordance_interpretation": "Rare A entries (ct) align with non-standard B envelopes (f85v2)"
+    }
+  },
+  "execution_rules_followed": [
+    "No claim that A encodes materials",
+    "No reinterpretation of C171",
+    "All tests framed in operational affordances",
+    "Puff/Brunschwig used only for external interpretive alignment"
+  ]
+}

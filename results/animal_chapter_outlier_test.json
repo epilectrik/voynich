@@ -1,0 +1,58 @@
+{
+  "test": "Animal Chapter Outlier Detection",
+  "puff_reference": {
+    "chapter": 71,
+    "name": "Kudreck (cow dung)",
+    "category": "ANIMAL",
+    "position": "last_third",
+    "uniqueness": "only animal chapter in corpus"
+  },
+  "voynich_last_third": {
+    "n_folios": 29,
+    "major_outliers": [
+      "f85v2"
+    ],
+    "moderate_outliers": [
+      "f83v",
+      "f95v2"
+    ],
+    "minor_outliers": [
+      "f77r",
+      "f79r",
+      "f80r",
+      "f80v",
+      "f84v",
+      "f86v4",
+      "f94v",
+      "f95r2"
+    ]
+  },
+  "top_candidates": [
+    {
+      "folio": "f85v2",
+      "outlier_count": 3,
+      "regime": "REGIME_2"
+    },
+    {
+      "folio": "f83v",
+      "outlier_count": 2,
+      "regime": "REGIME_3"
+    },
+    {
+      "folio": "f95v2",
+      "outlier_count": 2,
+      "regime": "REGIME_4"
+    },
+    {
+      "folio": "f77r",
+      "outlier_count": 1,
+      "regime": "REGIME_3"
+    },
+    {
+      "folio": "f79r",
+      "outlier_count": 1,
+      "regime": "REGIME_1"
+    }
+  ],
+  "proportional_match": true
+}
