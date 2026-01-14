@@ -1,0 +1,65 @@
+{
+  "test": "TOPIC_MODEL_K5",
+  "k": 5,
+  "yale_target": "5-6 sections",
+  "clusters": {
+    "cluster_1": {
+      "n": 15,
+      "regimes": {
+        "REGIME_3": 8,
+        "REGIME_1": 7
+      },
+      "scribes": {
+        "Scribe_3": 9,
+        "Scribe_1": 1,
+        "Scribe_2": 5
+      }
+    },
+    "cluster_4": {
+      "n": 27,
+      "regimes": {
+        "REGIME_1": 16,
+        "REGIME_4": 11
+      },
+      "scribes": {
+        "Scribe_3": 9,
+        "Scribe_1": 9,
+        "Scribe_2": 9
+      }
+    },
+    "cluster_0": {
+      "n": 17,
+      "regimes": {
+        "REGIME_2": 11,
+        "REGIME_4": 6
+      },
+      "scribes": {
+        "Scribe_3": 5,
+        "Scribe_1": 9,
+        "Scribe_2": 3
+      }
+    },
+    "cluster_2": {
+      "n": 15,
+      "regimes": {
+        "REGIME_3": 7,
+        "REGIME_4": 8
+      },
+      "scribes": {
+        "Scribe_1": 14,
+        "Scribe_2": 1
+      }
+    },
+    "cluster_3": {
+      "n": 9,
+      "regimes": {
+        "REGIME_1": 8,
+        "REGIME_3": 1
+      },
+      "scribes": {
+        "Scribe_2": 9
+      }
+    }
+  },
+  "finding": "Clusters show mixed regime/scribe composition, suggesting structural features capture something beyond simple section boundaries"
+}
