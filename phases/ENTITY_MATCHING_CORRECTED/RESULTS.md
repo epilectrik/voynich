@@ -101,12 +101,52 @@ Puff has 36 degree-1 (flower) chapters but Voynich only has 11 REGIME_2 folios. 
 
 ---
 
+---
+
+## Skip Alignment Test (skip_alignment_test.py)
+
+**Question:** Does allowing gaps/skips improve Puff-Voynich alignment?
+
+**Method:** Needleman-Wunsch dynamic programming with gap penalties.
+
+### Results
+
+| Metric | Strict 1:1 | Skip Align | Change |
+|--------|------------|------------|--------|
+| Exact regime rate | 31.3% | **60.0%** | **+28.7%** |
+| Matched pairs | 83 | 75 | -8 |
+| Puff gaps | 0 | 8 | +8 |
+| Voynich gaps | 0 | 10 | +10 |
+
+### Skipped Items
+
+**Puff chapters skipped (no Voynich match):**
+- Ch.15, 30, 31, 32, 33, 43, 50, 51, 60, 61
+- Note: Clusters (30-33, 50-51, 60-61) suggest systematic omissions
+
+**Voynich folios skipped (no Puff match):**
+- f41v, f86v6, f55v, f95v1, f57r, f40r, f95r1, f86v4
+- Note: Mostly REGIME_4 (precision-constrained category)
+
+### Interpretation
+
+**SKIP ALIGNMENT SIGNIFICANTLY BETTER**
+
+The +28.7% improvement suggests:
+1. Puff and Voynich share a curriculum but with **omissions**
+2. Some Puff procedures weren't transmitted to Voynich tradition (or vice versa)
+3. REGIME_4 (forbidden/special) doesn't map to Puff's 1-3 degree system
+4. The relationship is **partial transmission**, not complete 1:1 correspondence
+
+---
+
 ## Files Generated
 
 | File | Content |
 |------|---------|
 | `results/entity_matching_corrected.json` | Full entity matching results |
 | `results/positional_alignment_corrected.json` | Positional correlation results |
+| `results/skip_alignment_test.json` | Skip alignment analysis |
 
 ---
 

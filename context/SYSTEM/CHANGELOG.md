@@ -48,9 +48,20 @@ Because:
 | `results/entity_matching_corrected.json` | Entity matching results |
 | `results/positional_alignment_corrected.json` | Positional correlation results |
 
+### Skip Alignment Test (EMC-3)
+
+| Metric | Strict 1:1 | Skip Align | Change |
+|--------|------------|------------|--------|
+| Exact regime rate | 31.3% | 60.0% | **+28.7%** |
+
+**Skipped Puff chapters:** Ch.15, 30-33, 43, 50-51, 60-61 (clusters suggest systematic omissions)
+**Skipped Voynich folios:** Mostly REGIME_4 (doesn't map to Puff's 1-3 degrees)
+
+**Interpretation:** Partial transmission with systematic omissions, not complete 1:1 correspondence.
+
 ### Phase Count
 
-134 (+2 from v2.39)
+135 (+3 from v2.39)
 
 ---
 

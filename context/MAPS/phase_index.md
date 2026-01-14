@@ -1,6 +1,6 @@
 # Phase Index
 
-**Status:** Reference | **Total Phases:** 134
+**Status:** Reference | **Total Phases:** 135
 
 ---
 
@@ -166,8 +166,9 @@ Example: `CAud_currier_a_audit` = Currier A Audit phase
 |-------|-------------|-------------|
 | EMC-1 | Entity matching with curriculum mapping | Degree 3 → LATE positions (mean 72.6) |
 | EMC-2 | Positional alignment test | Significant correlation rho=0.350, p=0.0012 |
+| EMC-3 | Skip alignment test | **+28.7% improvement** with gaps (31.3% → 60.0%) |
 
-**Note:** Re-ran TIER4_EXTENDED tests with corrected degree-to-regime mapping based on curriculum position discovery. Original tests used wrong mapping (1→REGIME_1 instead of 1→REGIME_2).
+**Note:** Re-ran TIER4_EXTENDED tests with corrected degree-to-regime mapping based on curriculum position discovery. Skip alignment reveals partial transmission with systematic omissions.
 
 ---
 
