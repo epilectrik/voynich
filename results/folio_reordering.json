@@ -1,0 +1,165 @@
+{
+  "test": "FOLIO_REORDERING",
+  "date": "2026-01-14",
+  "n_folios": 83,
+  "current_order": {
+    "risk_rho": 0.0761,
+    "tension_rho": -0.2288,
+    "cei_rho": -0.2271,
+    "combined": -0.3799
+  },
+  "optimal_order": {
+    "risk_rho": 0.7795,
+    "tension_rho": 0.845,
+    "cei_rho": 0.8857,
+    "combined": 2.5102,
+    "sequence": [
+      "f48r",
+      "f105v",
+      "f105r",
+      "f115v",
+      "f86v5",
+      "f85v2",
+      "f86v3",
+      "f107v",
+      "f107r",
+      "f41v",
+      "f50r",
+      "f113v",
+      "f50v",
+      "f80v",
+      "f26v",
+      "f81v",
+      "f40v",
+      "f79v",
+      "f112r",
+      "f86v6",
+      "f55v",
+      "f95v1",
+      "f75v",
+      "f104r",
+      "f82r",
+      "f57r",
+      "f48v",
+      "f85r1",
+      "f80r",
+      "f78r",
+      "f82v",
+      "f106r",
+      "f114r",
+      "f84v",
+      "f78v",
+      "f83r",
+      "f111r",
+      "f113r",
+      "f31v",
+      "f94v",
+      "f77v",
+      "f41r",
+      "f112v",
+      "f85r2",
+      "f43r",
+      "f76v",
+      "f26r",
+      "f106v",
+      "f81r",
+      "f84r",
+      "f34v",
+      "f43v",
+      "f94r",
+      "f108v",
+      "f77r",
+      "f40r",
+      "f111v",
+      "f66r",
+      "f79r",
+      "f34r",
+      "f103v",
+      "f55r",
+      "f75r",
+      "f104v",
+      "f115r",
+      "f95v2",
+      "f108r",
+      "f39v",
+      "f46v",
+      "f95r1",
+      "f86v4",
+      "f114v",
+      "f66v",
+      "f116r",
+      "f76r",
+      "f39r",
+      "f103r",
+      "f33v",
+      "f83v",
+      "f33r",
+      "f31r",
+      "f46r",
+      "f95r2"
+    ]
+  },
+  "improvement": 2.8901,
+  "avg_displacement": 28.94,
+  "max_displacement": 78,
+  "most_displaced": [
+    {
+      "folio": "f115v",
+      "displacement": 78
+    },
+    {
+      "folio": "f31r",
+      "displacement": 78
+    },
+    {
+      "folio": "f33r",
+      "displacement": 75
+    },
+    {
+      "folio": "f33v",
+      "displacement": 72
+    },
+    {
+      "folio": "f39r",
+      "displacement": 67
+    },
+    {
+      "folio": "f113v",
+      "displacement": 66
+    },
+    {
+      "folio": "f46r",
+      "displacement": 65
+    },
+    {
+      "folio": "f105v",
+      "displacement": 64
+    },
+    {
+      "folio": "f105r",
+      "displacement": 62
+    },
+    {
+      "folio": "f107v",
+      "displacement": 62
+    }
+  ],
+  "regime_blocks": {
+    "REGIME_2": {
+      "mean_position": 7.3,
+      "contiguous": false
+    },
+    "REGIME_1": {
+      "mean_position": 37.8,
+      "contiguous": false
+    },
+    "REGIME_4": {
+      "mean_position": 40.4,
+      "contiguous": false
+    },
+    "REGIME_3": {
+      "mean_position": 71.2,
+      "contiguous": false
+    }
+  }
+}

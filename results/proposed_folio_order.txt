@@ -1,0 +1,96 @@
+PROPOSED ORIGINAL FOLIO ORDER
+Based on structural gradient optimization
+============================================================
+
+Optimized for:
+  - Risk gradient (hazard_density): rho = 0.7795
+  - Tension gradient: rho = 0.845
+  - CEI gradient: rho = 0.8857
+  - Combined improvement: 2.8901
+
+============================================================
+Pos | Folio    | Regime    | Section  |  Hazard |    CEI
+------------------------------------------------------------
+  1 | f48r     | REGIME_2  | HERBAL   |   0.406 |  0.374
+  2 | f105v    | REGIME_2  | STARRED  |   0.422 |  0.097
+  3 | f105r    | REGIME_2  | STARRED  |   0.454 |  0.336
+  4 | f115v    | REGIME_2  | STARRED  |   0.501 |  0.357
+  5 | f86v5    | REGIME_2  | ROSETTE  |   0.472 |  0.356
+  6 | f85v2    | REGIME_2  | ROSETTE  |   0.411 |  0.350
+  7 | f86v3    | REGIME_2  | ROSETTE  |   0.506 |  0.427
+  8 | f107v    | REGIME_1  | STARRED  |   0.550 |  0.406
+  9 | f107r    | REGIME_2  | STARRED  |   0.529 |  0.326
+ 10 | f41v     | REGIME_4  | HERBAL   |   0.484 |  0.514
+ 11 | f50r     | REGIME_4  | HERBAL   |   0.508 |  0.481
+ 12 | f113v    | REGIME_2  | STARRED  |   0.525 |  0.390
+ 13 | f50v     | REGIME_4  | HERBAL   |   0.528 |  0.379
+ 14 | f80v     | REGIME_1  | BALNEO   |   0.589 |  0.448
+ 15 | f26v     | REGIME_2  | HERBAL   |   0.496 |  0.532
+ 16 | f81v     | REGIME_1  | BALNEO   |   0.546 |  0.503
+ 17 | f40v     | REGIME_4  | HERBAL   |   0.522 |  0.559
+ 18 | f79v     | REGIME_1  | BALNEO   |   0.582 |  0.504
+ 19 | f112r    | REGIME_1  | STARRED  |   0.561 |  0.440
+ 20 | f86v6    | REGIME_4  | ROSETTE  |   0.550 |  0.530
+ 21 | f55v     | REGIME_4  | HERBAL   |   0.484 |  0.533
+ 22 | f95v1    | REGIME_4  | PHARMA   |   0.517 |  0.561
+ 23 | f75v     | REGIME_1  | BALNEO   |   0.608 |  0.455
+ 24 | f104r    | REGIME_1  | STARRED  |   0.572 |  0.529
+ 25 | f82r     | REGIME_1  | BALNEO   |   0.616 |  0.467
+ 26 | f57r     | REGIME_4  | HERBAL   |   0.535 |  0.422
+ 27 | f48v     | REGIME_2  | HERBAL   |   0.491 |  0.491
+ 28 | f85r1    | REGIME_4  | ROSETTE  |   0.541 |  0.539
+ 29 | f80r     | REGIME_1  | BALNEO   |   0.614 |  0.491
+ 30 | f78r     | REGIME_1  | BALNEO   |   0.594 |  0.498
+ 31 | f82v     | REGIME_1  | BALNEO   |   0.665 |  0.393
+ 32 | f106r    | REGIME_1  | STARRED  |   0.583 |  0.465
+ 33 | f114r    | REGIME_1  | STARRED  |   0.567 |  0.532
+ 34 | f84v     | REGIME_1  | BALNEO   |   0.592 |  0.492
+ 35 | f78v     | REGIME_1  | BALNEO   |   0.583 |  0.564
+ 36 | f83r     | REGIME_1  | BALNEO   |   0.621 |  0.489
+ 37 | f111r    | REGIME_1  | STARRED  |   0.583 |  0.510
+ 38 | f113r    | REGIME_1  | STARRED  |   0.585 |  0.458
+ 39 | f31v     | REGIME_4  | HERBAL   |   0.515 |  0.554
+ 40 | f94v     | REGIME_4  | PHARMA   |   0.544 |  0.642
+ 41 | f77v     | REGIME_1  | BALNEO   |   0.648 |  0.527
+ 42 | f41r     | REGIME_4  | HERBAL   |   0.585 |  0.626
+ 43 | f112v    | REGIME_1  | STARRED  |   0.602 |  0.506
+ 44 | f85r2    | REGIME_4  | ROSETTE  |   0.555 |  0.623
+ 45 | f43r     | REGIME_4  | HERBAL   |   0.563 |  0.561
+ 46 | f76v     | REGIME_1  | BALNEO   |   0.626 |  0.463
+ 47 | f26r     | REGIME_4  | HERBAL   |   0.554 |  0.639
+ 48 | f106v    | REGIME_1  | STARRED  |   0.609 |  0.492
+ 49 | f81r     | REGIME_3  | BALNEO   |   0.594 |  0.597
+ 50 | f84r     | REGIME_1  | BALNEO   |   0.609 |  0.554
+ 51 | f34v     | REGIME_4  | HERBAL   |   0.560 |  0.588
+ 52 | f43v     | REGIME_4  | HERBAL   |   0.566 |  0.565
+ 53 | f94r     | REGIME_4  | PHARMA   |   0.571 |  0.662
+ 54 | f108v    | REGIME_1  | STARRED  |   0.627 |  0.577
+ 55 | f77r     | REGIME_3  | BALNEO   |   0.719 |  0.588
+ 56 | f40r     | REGIME_4  | HERBAL   |   0.567 |  0.635
+ 57 | f111v    | REGIME_1  | STARRED  |   0.640 |  0.524
+ 58 | f66r     | REGIME_1  | HERBAL   |   0.611 |  0.540
+ 59 | f79r     | REGIME_1  | BALNEO   |   0.629 |  0.607
+ 60 | f34r     | REGIME_4  | HERBAL   |   0.581 |  0.633
+ 61 | f103v    | REGIME_1  | STARRED  |   0.616 |  0.615
+ 62 | f55r     | REGIME_4  | HERBAL   |   0.580 |  0.675
+ 63 | f75r     | REGIME_1  | BALNEO   |   0.668 |  0.599
+ 64 | f104v    | REGIME_3  | STARRED  |   0.641 |  0.670
+ 65 | f115r    | REGIME_3  | STARRED  |   0.650 |  0.680
+ 66 | f95v2    | REGIME_4  | PHARMA   |   0.582 |  0.687
+ 67 | f108r    | REGIME_1  | STARRED  |   0.643 |  0.605
+ 68 | f39v     | REGIME_4  | HERBAL   |   0.591 |  0.634
+ 69 | f46v     | REGIME_4  | HERBAL   |   0.598 |  0.637
+ 70 | f95r1    | REGIME_3  | PHARMA   |   0.608 |  0.723
+ 71 | f86v4    | REGIME_3  | ROSETTE  |   0.593 |  0.714
+ 72 | f114v    | REGIME_3  | STARRED  |   0.658 |  0.720
+ 73 | f66v     | REGIME_4  | HERBAL   |   0.598 |  0.707
+ 74 | f116r    | REGIME_3  | STARRED  |   0.639 |  0.677
+ 75 | f76r     | REGIME_1  | BALNEO   |   0.698 |  0.567
+ 76 | f39r     | REGIME_3  | HERBAL   |   0.635 |  0.706
+ 77 | f103r    | REGIME_3  | STARRED  |   0.686 |  0.733
+ 78 | f33v     | REGIME_3  | HERBAL   |   0.630 |  0.727
+ 79 | f83v     | REGIME_3  | BALNEO   |   0.771 |  0.838
+ 80 | f33r     | REGIME_3  | HERBAL   |   0.639 |  0.777
+ 81 | f31r     | REGIME_3  | HERBAL   |   0.664 |  0.787
+ 82 | f46r     | REGIME_3  | HERBAL   |   0.648 |  0.720
+ 83 | f95r2    | REGIME_3  | PHARMA   |   0.667 |  0.815
