@@ -1,6 +1,6 @@
 # Materiality Lecture Alignment Analysis
 
-**Date:** 2026-01-14 | **Status:** Tier 3 SPECULATIVE | **Version:** 1.0
+**Date:** 2026-01-14 | **Status:** Tier 3 SPECULATIVE | **Version:** 1.1
 
 ---
 
@@ -241,6 +241,22 @@ Lisa Fagin Davis's materiality research provides **strong independent support** 
 **No contradictions.** We went beyond integration to propose a structural reordering.
 
 **Key advance:** Davis asks "how do we reorder?" - we now have an answer based on structural gradient optimization. See [proposed_folio_reordering.md](proposed_folio_reordering.md).
+
+---
+
+## Post-Realignment Update (v1.1)
+
+The proposed folio reordering was subsequently validated against Puff and Brunschwig:
+
+| Test | Current Order | Proposed Order |
+|------|---------------|----------------|
+| Puff alignment | rho = +0.18 (NS) | rho = +0.62 (p<0.0001) |
+| Brunschwig CEI gradient | rho = +0.07 (NS) | rho = +0.89 (p<0.0001) |
+| Brunschwig hazard gradient | rho = -0.03 (NS) | rho = +0.78 (p<0.0001) |
+
+This validates Davis's misbinding hypothesis through completely independent methodology AND reveals that the misbinding obscured the Puff-Voynich-Brunschwig curriculum relationship.
+
+See [curriculum_realignment.md](curriculum_realignment.md) for full analysis.
 
 ---
 

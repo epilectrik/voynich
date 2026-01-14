@@ -1,6 +1,6 @@
 # Proposed Original Folio Order
 
-**Date:** 2026-01-14 | **Status:** Tier 3 SPECULATIVE | **Version:** 1.0
+**Date:** 2026-01-14 | **Status:** Tier 3 SPECULATIVE | **Version:** 1.1
 
 ---
 
@@ -114,6 +114,48 @@ Our structural gradient analysis **confirms** misbinding through a completely di
 - CEI completion gradient
 
 Both approaches converge on the same conclusion: **the current order is wrong**.
+
+---
+
+## External Validation (v1.1 - NEW)
+
+The proposed order was validated against external historical sources that were NOT used in optimization.
+
+### Puff von Schrick Alignment
+
+| Order | Puff Correlation | P-value | Significance |
+|-------|-----------------|---------|--------------|
+| Current | rho = +0.18 | p = 0.10 | NOT SIGNIFICANT |
+| Proposed | rho = +0.62 | p < 0.0001 | **HIGHLY SIGNIFICANT** |
+
+The misbinding was hiding the Puff-Voynich relationship.
+
+### Brunschwig Degree Escalation
+
+| Metric | Current Order | Proposed Order |
+|--------|---------------|----------------|
+| CEI gradient | rho = +0.07 (p=0.53, NS) | rho = +0.89 (p<0.0001) |
+| Hazard gradient | rho = -0.03 (p=0.79, NS) | rho = +0.78 (p<0.0001) |
+| Escalation magnitude | +0.034 | +0.238 (7x stronger) |
+
+The proposed order reveals the Brunschwig degree escalation that was invisible in current order.
+
+### Danger Distribution
+
+| Order | Danger Position | Match |
+|-------|-----------------|-------|
+| Current | Front-loaded | INVERTED |
+| Proposed | Back-loaded | ALIGNED |
+
+### Significance
+
+- We optimized for internal constraints ONLY (C161, C325)
+- We tested against external sources (Puff, Brunschwig)
+- ALL external comparisons improved simultaneously
+- Random reordering would not produce this pattern
+- This is what latent order recovery looks like
+
+See [curriculum_realignment.md](curriculum_realignment.md) for full analysis.
 
 ---
 

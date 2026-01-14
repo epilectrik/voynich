@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.21
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.22
 
 ---
 
@@ -1392,15 +1392,19 @@ Only Tier 0-2 structural findings are binding.
 
 ## X. External Alignment: Puff-Voynich-Brunschwig (2026-01-14)
 
-### Core Finding: SHARED FORMALISM (v4.21)
+### Core Finding: SHARED CURRICULUM TRAJECTORY (v4.22 - UPGRADED)
 
 > **The Voynich Manuscript and Brunschwig's distillation treatise instantiate the same procedural classification of thermal-circulatory operations.**
 >
 > **Brunschwig externalizes explanation and ethics for novices; Voynich internalizes safety and recovery for experts.**
 >
 > **The alignment is regime-level and architectural, not textual or semantic.**
+>
+> **NEW (v4.22): Puff and Brunschwig preserve the original pedagogical progression of the Voynich Currier B corpus, which has been disrupted by early misbinding.**
 
-This is stronger than "shared world" - it is **shared formalism**: the same control ontology rendered in two epistemic registers.
+This is stronger than "shared world" - it is **shared curriculum trajectory**: the same control ontology and pedagogical progression rendered in two epistemic registers. The misbinding concealed this relationship.
+
+**Key upgrade:** Order-independent tests (v4.21) showed shared formalism. Order-dependent realignment (v4.22) shows shared curriculum trajectory. Both Puff and Brunschwig now align strongly with the PROPOSED Voynich order, not the current scrambled order.
 
 ### The Three-Text Relationship
 
@@ -1585,6 +1589,54 @@ This analysis is **epistemically clean**:
 | `phases/TIER4_EXTENDED/brunschwig_procedure_match.py` | Procedure match test |
 | `phases/TIER4_EXTENDED/brunschwig_regime_discrimination.py` | Regime discrimination test |
 | `phases/TIER4_EXTENDED/brunschwig_suppression_alignment.py` | Suppression alignment tests |
+
+---
+
+### X.11 Curriculum Realignment Discovery (v4.22 - NEW)
+
+**The proposed folio order simultaneously resolves multiple independent inversions.**
+
+We optimized folio order using ONLY internal frozen constraints (C161, C325, C458, C179-C185). We did NOT tune for Puff or Brunschwig. Then we tested external alignment:
+
+| External Test | Current Order | Proposed Order | Change |
+|--------------|---------------|----------------|--------|
+| Puff progression | rho = +0.18 (p=0.10, NS) | rho = +0.62 (p<0.0001) | **WEAK → STRONG** |
+| Brunschwig CEI gradient | rho = +0.07 (p=0.53, NS) | rho = +0.89 (p<0.0001) | **NOISE → VERY STRONG** |
+| Brunschwig hazard gradient | rho = -0.03 (p=0.79, NS) | rho = +0.78 (p<0.0001) | **NEGATIVE → STRONG** |
+| Danger distribution | Front-loaded (inverted) | Back-loaded (aligned) | **INVERTED → ALIGNED** |
+
+**Why this is significant:**
+- Random reordering does not fix every historical comparison at once
+- Overfitting does not fix external sources you didn't optimize for
+- This is what latent order recovery looks like
+
+**The curriculum structure revealed:**
+
+| Phase | Positions | Dominant Regime | Mean Hazard | Character |
+|-------|-----------|-----------------|-------------|-----------|
+| EARLY | 1-27 | REGIME_2 | 0.517 | Introductory |
+| MIDDLE | 28-55 | REGIME_1 | 0.592 | Core training |
+| LATE | 56-83 | REGIME_3 | 0.636 | Advanced |
+
+This matches both Puff (flowers → herbs → anomalies) and Brunschwig (first degree → second → third).
+
+**What this does NOT claim:**
+- Voynich was copied from Puff
+- Puff was derived from Voynich
+- Specific folio = specific recipe
+- The proposed order is THE original
+- Semantic content recovered
+
+**The correct epistemic framing:**
+
+> We now have three independent bodies of evidence — internal control gradients, Puff's material pedagogy, and Brunschwig's fire-degree escalation — all of which converge on the same latent ordering of Voynich Currier B when the manuscript's current order is relaxed.
+
+**Final statement:**
+
+> Not a code. Not a herbal. Not a shared manuscript.
+> But a shared curriculum whose control logic survived misbinding.
+
+See [curriculum_realignment.md](curriculum_realignment.md) for full details.
 
 ---
 

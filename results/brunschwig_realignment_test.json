@@ -1,0 +1,86 @@
+{
+  "test": "BRUNSCHWIG_REALIGNMENT",
+  "date": "2026-01-14",
+  "tier": 3,
+  "status": "SPECULATIVE",
+  "brunschwig_model": {
+    "first_degree": "balneum (water bath) - flowers, delicate",
+    "second_degree": "noticeably warm - standard herbs",
+    "third_degree": "almost seething - roots, bark, resins",
+    "fourth_degree": "FORBIDDEN"
+  },
+  "current_order": {
+    "first_third": {
+      "cei": 0.5242938888888888,
+      "hazard": 0.5804444444444444,
+      "intervention": 5.6396296296296295,
+      "cycle": 4.458888888888889,
+      "n": 27
+    },
+    "middle_third": {
+      "cei": 0.5767173703703704,
+      "hazard": 0.5744444444444444,
+      "intervention": 6.104444444444445,
+      "cycle": 4.888888888888889,
+      "n": 27
+    },
+    "last_third": {
+      "cei": 0.5582978620689655,
+      "hazard": 0.5892758620689655,
+      "intervention": 6.075172413793103,
+      "cycle": 4.582068965517242,
+      "n": 29
+    },
+    "cei_diff": 0.03400397318007664,
+    "hazard_diff": 0.00883141762452111,
+    "intervention_diff": 0.4355427841634736,
+    "cei_gradient_rho": 0.06924562360942026,
+    "cei_gradient_p": 0.5339171338541876,
+    "hazard_gradient_rho": -0.030164994438593197,
+    "hazard_gradient_p": 0.786614078799283,
+    "escalation_matches": 3,
+    "escalation_total": 3
+  },
+  "proposed_order": {
+    "first_third": {
+      "cei": 0.4358593333333333,
+      "hazard": 0.5172222222222222,
+      "intervention": 4.5596296296296295,
+      "cycle": 4.552222222222222,
+      "n": 27
+    },
+    "middle_third": {
+      "cei": 0.541038925925926,
+      "hazard": 0.5872592592592593,
+      "intervention": 5.778148148148148,
+      "cycle": 4.665925925925926,
+      "n": 27
+    },
+    "last_third": {
+      "cei": 0.6738513448275862,
+      "hazard": 0.6362068965517241,
+      "intervention": 7.384482758620689,
+      "cycle": 4.7027586206896554,
+      "n": 29
+    },
+    "cei_diff": 0.23799201149425292,
+    "hazard_diff": 0.11898467432950188,
+    "intervention_diff": 2.8248531289910597,
+    "cei_gradient_rho": 0.885878006800722,
+    "cei_gradient_p": 9.534959716068116e-29,
+    "hazard_gradient_rho": 0.7794512811389167,
+    "hazard_gradient_p": 3.9789717056570405e-18,
+    "escalation_matches": 3,
+    "escalation_total": 3
+  },
+  "comparison": {
+    "cei_diff_improvement": 0.204,
+    "hazard_diff_improvement": 0.1102,
+    "cei_gradient_improvement": 0.8166,
+    "hazard_gradient_improvement": 0.8096,
+    "current_weak": true,
+    "proposed_strong": true,
+    "verdict": "WEAK_TO_STRONG"
+  },
+  "interpretation": "Proposed order reveals STRONG Brunschwig alignment that was hidden in current order. Front folios show low complexity (first/second degree), back folios show high complexity (third degree). Misbinding disrupted the visible degree escalation."
+}

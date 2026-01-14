@@ -1,0 +1,96 @@
+{
+  "test": "PUFF_REALIGNMENT",
+  "date": "2026-01-14",
+  "tier": 3,
+  "status": "SPECULATIVE",
+  "current_order": {
+    "n_folios": 83,
+    "regime_progression_rho": 0.1618,
+    "regime_progression_p": 0.143851,
+    "puff_correlation_rho": 0.1794,
+    "puff_correlation_p": 0.104638,
+    "thirds": {
+      "front": {
+        "count": 27,
+        "regimes": {
+          "REGIME_4": 18,
+          "REGIME_2": 3,
+          "REGIME_3": 5,
+          "REGIME_1": 1
+        },
+        "dominant": "REGIME_4",
+        "mean_difficulty": 2.296
+      },
+      "middle": {
+        "count": 28,
+        "regimes": {
+          "REGIME_1": 17,
+          "REGIME_3": 4,
+          "REGIME_4": 4,
+          "REGIME_2": 3
+        },
+        "dominant": "REGIME_1",
+        "mean_difficulty": 2.786
+      },
+      "back": {
+        "count": 28,
+        "regimes": {
+          "REGIME_4": 3,
+          "REGIME_3": 7,
+          "REGIME_1": 13,
+          "REGIME_2": 5
+        },
+        "dominant": "REGIME_1",
+        "mean_difficulty": 2.786
+      }
+    }
+  },
+  "proposed_order": {
+    "n_folios": 83,
+    "regime_progression_rho": 0.6346,
+    "regime_progression_p": 0.0,
+    "puff_correlation_rho": 0.6217,
+    "puff_correlation_p": 0.0,
+    "thirds": {
+      "front": {
+        "count": 27,
+        "regimes": {
+          "REGIME_2": 11,
+          "REGIME_1": 8,
+          "REGIME_4": 8
+        },
+        "dominant": "REGIME_2",
+        "mean_difficulty": 1.889
+      },
+      "middle": {
+        "count": 28,
+        "regimes": {
+          "REGIME_4": 10,
+          "REGIME_1": 16,
+          "REGIME_3": 2
+        },
+        "dominant": "REGIME_1",
+        "mean_difficulty": 2.714
+      },
+      "back": {
+        "count": 28,
+        "regimes": {
+          "REGIME_4": 7,
+          "REGIME_1": 7,
+          "REGIME_3": 14
+        },
+        "dominant": "REGIME_3",
+        "mean_difficulty": 3.25
+      }
+    }
+  },
+  "comparison": {
+    "regime_rho_change": 0.4728,
+    "puff_rho_change": 0.4423,
+    "current_inverted": false,
+    "current_weak": true,
+    "proposed_aligned": true,
+    "flip_status": "WEAK_TO_STRONG"
+  },
+  "interpretation": "Proposed order reveals STRONG Puff-Voynich alignment (rho=0.62) that was hidden in current order (rho=0.18, not significant). Both share the same curriculum progression: simple/flowers first, complex/dangerous last. Misbinding disrupted this visible relationship."
+}
