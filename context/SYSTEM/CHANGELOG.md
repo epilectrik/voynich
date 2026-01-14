@@ -4,6 +4,56 @@
 
 ---
 
+## Version 2.40 (2026-01-14) - ENTITY MATCHING CORRECTED
+
+### Summary
+
+Re-ran entity matching tests (originally TIER4_EXTENDED) with corrected degree-to-regime mapping based on curriculum position discovery.
+
+### Problem with Original Tests
+
+The original tests in `phases/TIER4_EXTENDED/exhaustive_entity_matching.py` used:
+```
+WRONG: {1: REGIME_1, 2: REGIME_2, 3: REGIME_3, 4: REGIME_4}
+```
+
+This mapped degree NUMBER to regime NUMBER. But curriculum discovery showed the correct mapping is by POSITION:
+```
+CORRECT: {1: REGIME_2, 2: REGIME_1, 3: REGIME_3, 4: REGIME_4}
+```
+
+Because:
+- REGIME_2 = EARLY (gentle processing, 1st degree)
+- REGIME_1 = MIDDLE (standard processing, 2nd degree)
+- REGIME_3 = LATE (intensive processing, 3rd degree)
+
+### Key Results
+
+| Test | Finding |
+|------|---------|
+| Entity Matching | Degree 3 herbs → mean position **72.6** (LATE range 56-83) |
+| Positional Correlation | rho = **+0.350**, p = **0.0012** (significant) |
+| Degree vs Hazard | rho = +0.382, p = 0.0004 (significant) |
+| Degree vs CEI | rho = +0.324, p = 0.0028 (significant) |
+
+**The corrected mapping reveals that intensive-processing materials (degree 3) align with LATE curriculum positions.**
+
+### New Phase
+
+| File | Content |
+|------|---------|
+| `phases/ENTITY_MATCHING_CORRECTED/` | New phase directory |
+| `entity_matching_corrected.py` | Entity matching with curriculum mapping |
+| `positional_alignment_corrected.py` | Positional correlation test |
+| `results/entity_matching_corrected.json` | Entity matching results |
+| `results/positional_alignment_corrected.json` | Positional correlation results |
+
+### Phase Count
+
+134 (+2 from v2.39)
+
+---
+
 ## Version 2.39 (2026-01-14) - CURRICULUM REALIGNMENT
 
 ### Summary
