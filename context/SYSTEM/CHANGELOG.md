@@ -4,6 +4,49 @@
 
 ---
 
+## Version 2.38 (2026-01-14) - YALE EXPERT ALIGNMENT
+
+### Summary
+
+**Independent expert validation.** Analysis of Yale Beinecke Library lecture (Lisa Fagin Davis, Claire Bowern) confirms our model's foundations with **12 points of alignment, 0 contradictions**.
+
+### Key Findings
+
+**Points Validated by Yale Experts:**
+1. Currier A/B distinction - CONFIRMED
+2. Expert-only interpretation - CONFIRMED
+3. Illustration epiphenomenality - CONFIRMED (expert warns against illustration-based reasoning)
+4. Cipher/language encoding rejected - CONFIRMED
+5. Computational topic modeling finds structural groupings - CONFIRMED
+
+**Scribe-Regime Mapping Test:**
+- 5 paleographic scribes (Davis) mapped to 4 operational regimes
+- REGIME_4 is 88% Scribe 1 (herbal/pharmaceutical sections)
+- REGIME_1 is 54.8% Scribe 2 (balneological section)
+- Scribes don't map 1:1 to regimes - multiple scribes per regime
+
+**Folio 115v Analysis:**
+- Yale identifies mid-page scribe change (Scribe 2 -> Scribe 3)
+- Our data shows f115v as extreme "most_slack" with anomalous profile
+- Structural anomaly consistent with mixed scribal input
+
+### New Files
+
+| File | Content |
+|------|---------|
+| `sources/yale_voynich_transcript.txt` | Full transcript of Yale lecture |
+| `context/SPECULATIVE/yale_expert_alignment.md` | Detailed analysis |
+| `phases/YALE_ALIGNMENT/` | Test scripts |
+| `results/scribe_regime_mapping.json` | Scribe-regime correlation |
+| `results/qo_regime_distribution.json` | Escape density by regime |
+
+### Expert Quote
+
+> "Anyone who has a theory to put out there about the Voynich manuscript, it is extremely important that all of the things that we know about it already are factored into that theory."
+> -- Lisa Fagin Davis
+
+---
+
 ## Version 2.37 (2026-01-14) - SHARED FORMALISM: Full Procedural Alignment
 
 ### Summary

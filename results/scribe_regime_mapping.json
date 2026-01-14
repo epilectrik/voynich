@@ -1,0 +1,74 @@
+{
+  "test": "SCRIBE_REGIME_MAPPING",
+  "date": "2026-01-14",
+  "source": "Yale Beinecke lecture (Lisa Fagin Davis)",
+  "n_regime_folios": 83,
+  "n_scribe_assigned": 83,
+  "n_overlap": 83,
+  "contingency_table": {
+    "Scribe_1": {
+      "REGIME_4": 22,
+      "REGIME_2": 3,
+      "REGIME_1": 1,
+      "REGIME_3": 7
+    },
+    "Scribe_2": {
+      "REGIME_2": 3,
+      "REGIME_1": 17,
+      "REGIME_3": 4,
+      "REGIME_4": 3
+    },
+    "Scribe_3": {
+      "REGIME_3": 5,
+      "REGIME_1": 13,
+      "REGIME_2": 5
+    }
+  },
+  "scribe_dominant_regime": {
+    "Scribe_1": {
+      "regime": "REGIME_4",
+      "count": 22,
+      "total": 33,
+      "percentage": 66.7
+    },
+    "Scribe_2": {
+      "regime": "REGIME_1",
+      "count": 17,
+      "total": 27,
+      "percentage": 63.0
+    },
+    "Scribe_3": {
+      "regime": "REGIME_1",
+      "count": 13,
+      "total": 23,
+      "percentage": 56.5
+    }
+  },
+  "regime_dominant_scribe": {
+    "REGIME_1": {
+      "scribe": 2,
+      "count": 17,
+      "total": 31,
+      "percentage": 54.8
+    },
+    "REGIME_2": {
+      "scribe": 3,
+      "count": 5,
+      "total": 11,
+      "percentage": 45.5
+    },
+    "REGIME_3": {
+      "scribe": 1,
+      "count": 7,
+      "total": 16,
+      "percentage": 43.8
+    },
+    "REGIME_4": {
+      "scribe": 1,
+      "count": 22,
+      "total": 25,
+      "percentage": 88.0
+    }
+  },
+  "interpretation": "Scribe_1 -> REGIME_4 (66.7%); Scribe_2 -> REGIME_1 (63.0%); Scribe_3 -> REGIME_1 (56.5%)"
+}
