@@ -8,7 +8,7 @@
 
 > **Yale paleographic and linguistic experts independently validate the structural foundations of our model without contradiction.**
 >
-> **12 points of alignment, 0 contradictions, 4 integration opportunities.**
+> **14 points of alignment, 0 contradictions, 7 tests completed.**
 
 ---
 
@@ -24,9 +24,9 @@
 
 | Category | Count | Status |
 |----------|-------|--------|
-| Points SUPPORTING model | 12 | STRONG |
-| Neutral/contextual | 5 | INFO |
-| Requiring integration | 4 | ACTION |
+| Points SUPPORTING model | 14 | STRONG |
+| Tests completed | 7 | VERIFIED |
+| Neutral/contextual | 4 | INFO |
 | CONTRADICTING model | 0 | NONE |
 
 ---
@@ -285,6 +285,91 @@ Lisa Fagin Davis describes herself as a "professional Voynich debunker." Her cri
 
 ---
 
+## Test 5: 'dy' Ending Anomaly
+
+### Yale Finding
+
+"The 'dy' (looks like '89') ending is extremely common in Language B but rare in Language A."
+
+### Our Analysis
+
+| Metric | Language A | Language B |
+|--------|------------|------------|
+| Words with 'dy' ending | 2,480 | 18,697 |
+| 'dy' ending rate | 6.90% | 25.14% |
+| **Ratio (B/A)** | **3.6x** | - |
+
+**Additional discriminating endings discovered:**
+
+| Ending | Favors | Ratio |
+|--------|--------|-------|
+| 'ek' | B | 31.4x |
+| 'ed' | B | 26.1x |
+| 'nd' | A | 24.8x |
+| 'jy' | A | 14.5x |
+| 'ho' | A | 12.0x |
+
+**Status:** ALIGNED - Yale prediction CONFIRMED. Our Currier A/B classification captures real linguistic differences.
+
+---
+
+## Test 6: Gallows Character Distribution
+
+### Yale Context
+
+Gallows characters (tall letters: k, t, f, p in EVA) are distinctive features. Do they correlate with operational regimes?
+
+### Our Analysis
+
+**Gallows frequency by regime (per 1000 characters):**
+
+| Gallows | REGIME_1 | REGIME_2 | REGIME_3 | REGIME_4 |
+|---------|----------|----------|----------|----------|
+| k | 61.15 | 49.94 | 47.64 | 59.50 |
+| t | 26.30 | 41.73 | 28.06 | 31.58 |
+| f | 1.29 | 2.71 | 2.24 | 4.05 |
+| p | 7.13 | 13.00 | 7.00 | 9.13 |
+
+**Key finding: REGIME_2 is distinct**
+- Lowest k frequency (49.94)
+- Highest t frequency (41.73)
+- Highest p frequency (13.00)
+
+**Bench gallows (cth, cfh, cph) are 3-4x more common in A than B.**
+
+**Status:** NEW FINDING - Gallows distribution correlates with regime structure.
+
+---
+
+## Test 7: Scribe 4 / Astronomical Section
+
+### Yale Finding
+
+"Scribe 4 writes all of the astronomical/astrological section... qo is very very rare."
+
+### Our Analysis
+
+**Language distribution:**
+- Astronomical section (f67-f73): 1,768 words, classified as 'NA' (not A or B)
+- These folios are NOT in our Currier B corpus
+
+**qo ligature comparison:**
+
+| Section | qo rate | Words with qo |
+|---------|---------|---------------|
+| Astronomical | 1.87% | 33/1,768 |
+| Other sections | 14.41% | 17,258/119,763 |
+| **Ratio** | **7.7x rarer** | - |
+
+**Vocabulary profile:**
+- Astronomical avg word length: 4.77 (shorter)
+- Other sections avg word length: 5.06
+- Different top words: 'ar', 'al', 'chey' vs 'daiin', 'chedy', 'ol'
+
+**Status:** ALIGNED - Yale prediction STRONGLY CONFIRMED. The astronomical section operates under different constraints entirely.
+
+---
+
 ## Conclusion
 
 The Yale expert analysis is **fully compatible** with our model at the structural level. Key validations:
@@ -294,8 +379,10 @@ The Yale expert analysis is **fully compatible** with our model at the structura
 3. Illustration epiphenomenality - CONFIRMED
 4. Cipher/language rejection - CONFIRMED
 5. Computational structural groupings - CONFIRMED
+6. 'dy' ending A/B asymmetry - CONFIRMED (3.6x ratio)
+7. qo rarity in astronomical - CONFIRMED (7.7x ratio)
 
-No contradictions identified. Four integration opportunities opened for further testing.
+No contradictions identified. New structural findings on gallows distribution by regime.
 
 ---
 
@@ -306,6 +393,11 @@ No contradictions identified. Four integration opportunities opened for further 
 | `sources/yale_voynich_transcript.txt` | Full transcript |
 | `results/scribe_regime_mapping.json` | Test 1 results |
 | `results/qo_regime_distribution.json` | Test 2 results |
+| `results/topic_model_replication.json` | Test 4 results |
+| `results/topic_model_k5.json` | Test 4 k=5 analysis |
+| `results/dy_ending_analysis.json` | Test 5 results |
+| `results/gallows_distribution.json` | Test 6 results |
+| `results/scribe4_astronomical.json` | Test 7 results |
 
 ---
 

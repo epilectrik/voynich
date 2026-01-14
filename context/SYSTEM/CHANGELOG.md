@@ -8,7 +8,7 @@
 
 ### Summary
 
-**Independent expert validation.** Analysis of Yale Beinecke Library lecture (Lisa Fagin Davis, Claire Bowern) confirms our model's foundations with **12 points of alignment, 0 contradictions**.
+**Independent expert validation.** Analysis of Yale Beinecke Library lecture (Lisa Fagin Davis, Claire Bowern) confirms our model's foundations with **14 points of alignment, 0 contradictions, 7 tests completed**.
 
 ### Key Findings
 
@@ -19,11 +19,16 @@
 4. Cipher/language encoding rejected - CONFIRMED
 5. Computational topic modeling finds structural groupings - CONFIRMED
 
-**Scribe-Regime Mapping Test:**
-- 5 paleographic scribes (Davis) mapped to 4 operational regimes
-- REGIME_4 is 88% Scribe 1 (herbal/pharmaceutical sections)
-- REGIME_1 is 54.8% Scribe 2 (balneological section)
-- Scribes don't map 1:1 to regimes - multiple scribes per regime
+**Test Results:**
+
+| Test | Yale Prediction | Our Finding | Status |
+|------|-----------------|-------------|--------|
+| Scribe-Regime Mapping | 5 scribes | Map to 4 regimes | ALIGNED |
+| qo Distribution | Different by section | REGIME_4 highest (29%) | ALIGNED |
+| Topic Model k=5 | 5-6 sections | Cluster 3 = Balneological (100% Scribe 2) | ALIGNED |
+| 'dy' Ending | Common in B, rare in A | 25.14% B vs 6.90% A (3.6x) | CONFIRMED |
+| Gallows Distribution | - | REGIME_2 distinct (high t, p) | NEW FINDING |
+| Astronomical qo | Rare in Scribe 4 | 1.87% vs 14.41% (7.7x rarer) | CONFIRMED |
 
 **Folio 115v Analysis:**
 - Yale identifies mid-page scribe change (Scribe 2 -> Scribe 3)
@@ -36,9 +41,13 @@
 |------|---------|
 | `sources/yale_voynich_transcript.txt` | Full transcript of Yale lecture |
 | `context/SPECULATIVE/yale_expert_alignment.md` | Detailed analysis |
-| `phases/YALE_ALIGNMENT/` | Test scripts |
+| `phases/YALE_ALIGNMENT/` | Test scripts (7 tests) |
 | `results/scribe_regime_mapping.json` | Scribe-regime correlation |
 | `results/qo_regime_distribution.json` | Escape density by regime |
+| `results/topic_model_*.json` | Topic model replication |
+| `results/dy_ending_analysis.json` | 'dy' ending A/B comparison |
+| `results/gallows_distribution.json` | Gallows by language/regime |
+| `results/scribe4_astronomical.json` | Astronomical section profile |
 
 ### Expert Quote
 

@@ -1,0 +1,70 @@
+{
+  "test": "DY_ENDING_ANALYSIS",
+  "date": "2026-01-14",
+  "yale_finding": "'dy' ending common in Language B, rare in Language A",
+  "prediction_status": "CONFIRMED",
+  "language_a": {
+    "total_words": 36930,
+    "dy_count": 2480,
+    "dy_rate_percent": 6.905
+  },
+  "language_b": {
+    "total_words": 75401,
+    "dy_count": 18697,
+    "dy_rate_percent": 25.143
+  },
+  "b_to_a_ratio": 3.64,
+  "top_discriminating_endings": [
+    {
+      "ending": "ek",
+      "favors": "B",
+      "ratio": 31.4
+    },
+    {
+      "ending": "ed",
+      "favors": "B",
+      "ratio": 26.1
+    },
+    {
+      "ending": "nd",
+      "favors": "A",
+      "ratio": 24.8
+    },
+    {
+      "ending": "jy",
+      "favors": "A",
+      "ratio": 14.5
+    },
+    {
+      "ending": "ho",
+      "favors": "A",
+      "ratio": 12.0
+    },
+    {
+      "ending": "en",
+      "favors": "A",
+      "ratio": 12.0
+    },
+    {
+      "ending": "tl",
+      "favors": "B",
+      "ratio": 9.7
+    },
+    {
+      "ending": "o*",
+      "favors": "A",
+      "ratio": 9.1
+    },
+    {
+      "ending": "aj",
+      "favors": "A",
+      "ratio": 8.8
+    },
+    {
+      "ending": "yd",
+      "favors": "A",
+      "ratio": 8.7
+    }
+  ],
+  "interpretation": "Yale finding CONFIRMED. 'dy' endings are 3.64x more common in Language B (25.14%) than Language A (6.90%). This validates that our Currier A/B classification captures real linguistic differences."
+}
