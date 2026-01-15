@@ -1,0 +1,102 @@
+{
+  "test": "BRUNSCHWIG_TEMPLATE_FIT",
+  "question": "Can Brunschwig recipes fit Voynich folio templates?",
+  "method": "Extract procedural primitives, map to instruction classes, compare structure",
+  "entries": [
+    {
+      "name": "ANDORN (Horehound) - 16 uses",
+      "uses": 12,
+      "total_primitives": 48,
+      "primitives_per_use": 4.0,
+      "voynich_classes": {
+        "k-class (ENERGY_MODULATOR)": 3,
+        "FLOW_OPERATOR": 16,
+        "LINK (monitoring marker)": 21,
+        "AUXILIARY": 1,
+        "ENERGY_OPERATOR (magnitude)": 7
+      },
+      "n_classes": 5,
+      "fit_results": [
+        [
+          "Line count (uses -> lines)",
+          "FITS"
+        ],
+        [
+          "Primitives per use",
+          "FITS"
+        ],
+        [
+          "Instruction diversity",
+          "FITS"
+        ],
+        [
+          "Kernel analog (k+e)",
+          "NO FIT"
+        ]
+      ],
+      "fit_count": 3
+    },
+    {
+      "name": "ROSEN (Rose) - 5 uses",
+      "uses": 5,
+      "total_primitives": 10,
+      "primitives_per_use": 2.0,
+      "voynich_classes": {
+        "k-class (ENERGY_MODULATOR)": 2,
+        "FLOW_OPERATOR": 5,
+        "LINK (monitoring marker)": 2,
+        "ENERGY_OPERATOR (magnitude)": 1
+      },
+      "n_classes": 4,
+      "fit_results": [
+        [
+          "Line count (uses -> lines)",
+          "NO FIT"
+        ],
+        [
+          "Primitives per use",
+          "PARTIAL"
+        ],
+        [
+          "Instruction diversity",
+          "FITS"
+        ],
+        [
+          "Kernel analog (k+e)",
+          "NO FIT"
+        ]
+      ],
+      "fit_count": 1
+    }
+  ],
+  "regime4_stats": {
+    "line_count": {
+      "min": 10,
+      "max": 20,
+      "mean": 13.5
+    },
+    "tokens_per_line": {
+      "min": 16,
+      "max": 49,
+      "mean": 32
+    },
+    "total_tokens": {
+      "min": 160,
+      "max": 800,
+      "mean": 400
+    },
+    "cei": 0.584,
+    "escape_rate": 0.107,
+    "description": "Precision procedures with narrow tolerance"
+  },
+  "mapping": {
+    "ENERGY": "k-class (ENERGY_MODULATOR)",
+    "PHASE": "h-class (PHASE_MANAGER)",
+    "STABILITY": "e-class (STABILITY_ANCHOR)",
+    "FLOW": "FLOW_OPERATOR",
+    "LINK": "LINK (monitoring marker)",
+    "PREP": "AUXILIARY",
+    "QUANTITY": "ENERGY_OPERATOR (magnitude)"
+  },
+  "verdict": "TEMPLATE COMPATIBLE - Brunschwig procedural structure fits REGIME_4 folios"
+}

@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 353 constraints | 2026-01-13
+CONSTRAINT_REFERENCE v2.6 | 355 constraints | 2026-01-14
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -357,3 +357,5 @@ C489	HT Zone Diversity Correlation (r=0.24, p=0.0006)	3	HT	-> C489_ht_zone_diver
 C490	**Categorical Strategy Exclusion** (20.5% of programs forbid AGGRESSIVE, not gradient but prohibition)	2	B	-> C490_categorical_strategy_exclusion.md
 C491	Judgment-Critical Program Axis (OPPORTUNISTIC orthogonal to caution/aggression)	3	B	in: SPECULATIVE
 C492	**PREFIX Phase-Exclusive Legality** (ct PREFIX is 0% C/S-zones, 26% P-zone, invariant)	2	A→AZC	-> C492_prefix_phase_exclusion.md
+C493	**Brunschwig Grammar Embedding** (balneum marie procedure fits with 0 forbidden violations)	2	B	-> C493_brunschwig_grammar_embedding.md
+C494	**REGIME_4 Precision Axis** (encodes precision-constrained execution, not intensity)	2	B	-> C494_regime4_precision_axis.md
