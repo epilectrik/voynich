@@ -1,6 +1,6 @@
 # Phase Index
 
-**Status:** Reference | **Total Phases:** 136
+**Status:** Reference | **Total Phases:** 137
 
 ---
 
@@ -156,8 +156,9 @@ Example: `CAud_currier_a_audit` = Currier A Audit phase
 | PVC-2 | Brunschwig degree alignment | Regime = Degree (13/15 metrics match) |
 | PVC-3 | A morphology affordance alignment | Affordance axes align (5/5 tests PASS) |
 | **BTF** | **Brunschwig Template Fit** | **Grammar-level embedding (C493, C494)** |
+| **BBV** | **Brunschwig Backprop Validation** | **EXPLANATORY SATURATION (5 fits, no new constraints)** |
 
-**Summary:** Puff (1455) + Voynich = complementary curriculum halves. Brunschwig (1500) combined both for novices. A discriminates operational affordance profiles, not material identity.
+**Summary:** Puff (1455) + Voynich = complementary curriculum halves. Brunschwig (1500) combined both for novices. A discriminates operational affordance profiles, not material identity. BBV confirms model saturated: property-based generators FAIL to reproduce structure.
 
 ---
 
