@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.22
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.23
 
 ---
 
@@ -1770,3 +1770,141 @@ Brunschwig recipe -> Product type -> REGIME -> B folio -> A register
 This enables prediction: Given a Brunschwig recipe, identify its product type, map to REGIME, find B folios in that REGIME, trace exclusive MIDDLEs back to A folios with matching PREFIX signatures.
 
 **Files:** phases/BRUNSCHWIG_TEMPLATE_FIT/exclusive_middle_backprop.py, brunschwig_product_predictions.py
+
+---
+
+### X.16 Puff Complexity Correlation (2026-01-15) - STRUCTURALLY ALIGNED
+
+**Test:** Does Puff chapter ordering correlate with Voynich execution complexity?
+
+**Results (4/5 tests + control PASS):**
+
+| Test | Result | Key Value |
+|------|--------|-----------|
+| Position-REGIME | PASS | rho=0.678, p<10^-12 |
+| Category-REGIME | PASS | p=0.001 |
+| Dangerous-Precision | FAIL | underpowered (n=5), direction correct |
+| Cumulative Threshold | PASS | Mean position monotonic with REGIME |
+| Position-CEI | PASS | rho=0.886, p<10^-28 |
+| Negative Control | PASS | 100th percentile vs permuted |
+
+**Category-REGIME Mapping:**
+- FLOWER (n=17): Mean ordinal 1.71 (mostly REGIME_2)
+- HERB (n=41): Mean ordinal 2.78 (mixed R1/R4)
+- ANIMAL/OIL: Mean ordinal 4.0 (REGIME_3)
+
+**Cumulative Threshold Finding:**
+- REGIME_2: Mean Puff position 8.3 (early/simple)
+- REGIME_1: Mean Puff position 38.8 (middle/standard)
+- REGIME_4: Mean Puff position 41.4 (middle/precision)
+- REGIME_3: Mean Puff position 72.2 (late/advanced)
+
+**CRITICAL EPISTEMIC NOTE:**
+
+The Test 4 "monotonic relationship" is over 4 REGIME bins only. This is an ordinal constraint, NOT a cardinal identity. It shows no contradiction between Puff's ladder and Voynich's REGIME progression, but does NOT prove strict equivalence.
+
+**Status Upgrade (CONSERVATIVE):**
+
+| Before | After |
+|--------|-------|
+| CONTEXTUAL | STRUCTURALLY ALIGNED EXTERNAL LADDER |
+
+**NOT upgraded to:** STRUCTURAL NECESSITY (would be over-claiming)
+
+> Puff provides an external, independently derived ordering of material difficulty that aligns strongly with the execution-completeness gradient reconstructed inside Voynich Currier B. This alignment supports a shared curriculum trajectory without implying direct mapping, co-design, or internal dependence.
+
+**Three-Level Relationship Hierarchy:**
+
+1. **Voynich <-> Brunschwig** - Direct, structural, grammar-level (C493, C494)
+2. **Voynich <-> Puff** - Strong external alignment via complexity ordering
+3. **Puff <-> Brunschwig** - Historical lineage
+
+**What This Does NOT Mean:**
+- 83:83 is internally necessary (still unexplained coincidence with plausible mechanism)
+- Puff defines Voynich structure (external validation, not internal dependency)
+- Material -> folio mapping exists (no semantic encoding, C171 preserved)
+
+**Backward Compatibility Clarification:**
+
+> "Later folios demand stricter procedural completeness, even for simple tasks."
+
+NOT: "Advanced folios just add options" (too casual, incorrect)
+
+Advanced grammar is a STRICTER CONTRACT, not a superset.
+
+**Files:** phases/PUFF_COMPLEXITY_CORRELATION/puff_regime_complexity_test.py
+
+---
+
+### X.17 Brunschwig Backprop Validation (2026-01-15) - EXPLANATORY SATURATION
+
+**Phase:** BRUNSCHWIG_BACKPROP_VALIDATION
+**Status:** Model predictions confirmed without changes. No new constraints.
+
+#### The Definitive Interpretation (Now Well-Defended)
+
+> **Currier A registers enumerate stable regions of a high-dimensional incompatibility manifold that arise when materials, handling constraints, process phase, and recoverability jointly constrain what must not be confused.**
+
+This is NOT:
+- Individual materials or species names
+- Scalar properties (aromatic, medicinal)
+- Broad material classes (flowers, roots)
+
+This IS:
+- Configurational regions in constraint space
+- Defined by what must be distinguished
+- Hierarchical vocabulary structure
+
+#### MIDDLE Hierarchy Discovery (Cross-Type Axis)
+
+A new structural axis distinct from the frequency-based Core/Tail split:
+
+| Layer | Count | % | Structural Meaning |
+|-------|-------|---|-------------------|
+| Universal | 106 | 3.5% | Appear in ALL 4 product types (infrastructure) |
+| Cross-cutting | 480 | 15.7% | Appear in 2-3 types (shared constraint dimensions) |
+| Type-specific | 2,474 | 80.8% | Appear in 1 type only (local coordinates) |
+
+**Key type-pair sharing:**
+- PRECISION + WATER_STANDARD: 167 shared MIDDLEs
+- OIL_RESIN + WATER_GENTLE: 1 shared MIDDLE (structural opposites)
+
+#### Property Model Failure (F-BRU-003)
+
+Synthetic property-based registry FAILS to reproduce Voynich structure:
+
+| Metric | Voynich | Property Model |
+|--------|---------|----------------|
+| Uniqueness | **72.7%** | 41.5% |
+| Hub/Tail ratio | 0.006 | 0.091 |
+| Clusters | 33 | 56 |
+
+**Permanently kills:** Property-based interpretations, low-rank explanations, latent feature models.
+
+#### Sub-Class Structure Confirmed
+
+Within WATER_GENTLE (6 A folios), 2 distinct sub-classes exist:
+- **Sub-class A:** {f32r, f45v} - 22 shared MIDDLEs, d-dominant PREFIX
+- **Sub-class B:** {f52v, f99v} - 24 shared MIDDLEs, diverse PREFIX
+
+Only 6 MIDDLEs shared between sub-classes. Clusters are stable under tail/hub perturbation (100% survival).
+
+#### Explanatory Saturation
+
+> **The model is saturated, not brittle.**
+
+All tests landed exactly where predicted without forcing upstream changes:
+- 8/8 blind predictions correct (F-BRU-001)
+- 3/3 REGIME boundary questions confirmed (F-BRU-002)
+- 4/6 perturbation tests stable (F-BRU-004)
+- Property model rejected (F-BRU-003)
+
+This is the best possible outcome: discovery phase complete, consolidation phase begins.
+
+#### Governance Outcome
+
+Results tracked as **FITS** (F-BRU-001 to F-BRU-005), not constraints. Constraint table unchanged (353 entries).
+
+**Projection Spec Created:** `context/PROJECTIONS/brunschwig_lens.md` governs UI display of external alignments without corrupting structural model.
+
+**Files:** phases/BRUNSCHWIG_BACKPROP_VALIDATION/, context/MODEL_FITS/fits_brunschwig.md
