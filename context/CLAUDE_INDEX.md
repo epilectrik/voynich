@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.38 | **Status:** FROZEN | **Constraints:** 353 | **Date:** 2026-01-14
+**Version:** 2.45 | **Status:** FROZEN | **Constraints:** 353 | **Date:** 2026-01-15
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -208,7 +208,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 | Category | Count |
 |----------|-------|
 | Validated constraints | 353 |
-| Completed phases | 129 |
+| Completed phases | 137 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -261,8 +261,17 @@ These files are for scripts and validation tools, NOT for reading in full:
 Fits are explanatory models that account for observed patterns. They do NOT constrain the model.
 
 - **Fits explain. Constraints bind.** See [SYSTEM/FIT_METHODOLOGY.md](SYSTEM/FIT_METHODOLOGY.md)
-- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (11 fits logged)
+- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (31 fits logged)
 - **Cross-reference:** [MAPS/fit_to_constraint.md](MAPS/fit_to_constraint.md)
+- **Epistemic layers:** [SYSTEM/epistemic_layers.md](SYSTEM/epistemic_layers.md) - Constraint vs Fit vs Speculation legend
+
+### Projection Specs (UI Display Rules)
+
+Projection specs govern how external alignments are displayed in tooling without acting like structure.
+
+- **Directory:** [PROJECTIONS/](PROJECTIONS/) - Non-binding, UI-only display rules
+- **Brunschwig lens:** [PROJECTIONS/brunschwig_lens.md](PROJECTIONS/brunschwig_lens.md) - Product type alignment display
+- **Principle:** "Shows where external practice fits; never claims manuscript encodes that practice"
 
 ---
 
@@ -294,4 +303,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v2.12 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-13*
+*Context System v2.45 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-15*

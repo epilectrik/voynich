@@ -4,6 +4,148 @@
 
 ---
 
+## Version 2.45 (2026-01-15) - PROJECTION SPECS + EPISTEMIC LAYERS
+
+### Summary
+
+Added governance infrastructure for displaying external alignments in tooling without corrupting structural model.
+
+### New Infrastructure
+
+1. **Epistemic Layers Legend** (`SYSTEM/epistemic_layers.md`)
+   - Defines Constraint vs Fit vs Speculation
+   - Decision flowchart for categorizing new findings
+   - Common mistakes to avoid
+   - The Saturation Principle
+
+2. **Projection Specs** (`PROJECTIONS/`)
+   - Non-binding, one-way, UI-only display rules
+   - Governs how fits are surfaced in tooling
+   - Never allowed to act like structure
+   - `brunschwig_lens.md` - First projection spec
+
+### Brunschwig Lens Contents
+
+- Display primitives with tier badges (STRUCTURAL vs EXTERNAL FIT)
+- Required modal phrasing ("compatible with", not "is")
+- Hard semantic guardrails (prohibited terms)
+- Provenance links (every claim traces to fit ID)
+- Product type definitions (alignment categories, not material identities)
+- MIDDLE hierarchy display rules
+
+### Key Principle
+
+> "This layer shows where external practice fits inside the Voynich control envelope; it never claims the manuscript encodes that practice."
+
+### Files Added
+
+| File | Purpose |
+|------|---------|
+| `context/SYSTEM/epistemic_layers.md` | Constraint vs Fit vs Speculation legend |
+| `context/PROJECTIONS/README.md` | Projection specs directory |
+| `context/PROJECTIONS/brunschwig_lens.md` | Brunschwig alignment display rules |
+
+---
+
+## Version 2.44 (2026-01-15) - BRUNSCHWIG BACKPROP VALIDATION (EXPLANATORY SATURATION)
+
+### Summary
+
+Completed BRUNSCHWIG_BACKPROP_VALIDATION phase with expert governance. Key outcome: **EXPLANATORY SATURATION** - the frozen architecture predicted all results without requiring changes. No new constraints added; 5 FIT entries created.
+
+### Key Finding
+
+> The model is saturated, not brittle.
+
+The structure explains itself more strongly than any semantic hypothesis could.
+
+### Governance Decision
+
+Per expert guidance, results tracked as **FITS** (demonstrations of explanatory power), not architectural necessities:
+
+| ID | Fit | Tier | Result |
+|----|-----|------|--------|
+| F-BRU-001 | Brunschwig Product Type Prediction (Blind) | F3 | SUCCESS |
+| F-BRU-002 | Degree-REGIME Boundary Asymmetry | F3 | SUCCESS |
+| F-BRU-003 | Property-Based Generator Rejection | F2 | NEGATIVE |
+| F-BRU-004 | A-Register Cluster Stability | F2 | SUCCESS |
+| F-BRU-005 | MIDDLE Hierarchical Structure | F2 | SUCCESS |
+
+### Critical Negative Knowledge (F-BRU-003)
+
+Synthetic property-based registry FAILS to reproduce Voynich structure:
+- Uniqueness: Voynich 72.7% vs Property Model 41.5%
+- Hub/Tail ratio: Voynich 0.006 vs Property Model 0.091
+- Clusters: Voynich 33 vs Property Model 56
+
+**Permanently kills property/low-rank interpretations.**
+
+### Files Added
+
+| File | Purpose |
+|------|---------|
+| phases/BRUNSCHWIG_BACKPROP_VALIDATION/ | Complete phase (12 scripts) |
+| context/MODEL_FITS/fits_brunschwig.md | 5 fit entries documented |
+| FIT_TABLE.txt | Updated (26 → 31 fits) |
+
+### Constraint Table
+
+**UNCHANGED** (353 entries). No architectural modifications required.
+
+---
+
+## Version 2.43 (2026-01-15) - PUFF COMPLEXITY CORRELATION + REGIME_4 AUDIT
+
+### Summary
+
+Tested Puff complexity correlation with B grammar expansion using proposed folio order. Key finding: Puff chapter position strongly correlates with REGIME assignment (ρ=0.68, p<10⁻¹²), supporting cumulative capability threshold model.
+
+### Key Findings
+
+1. **Cumulative Capability Threshold Model**
+   - OLD: Puff chapter N = Voynich folio N (numerology-adjacent)
+   - NEW: Puff chapter N requires B grammar complexity level N (cumulative)
+   - Material N requires capabilities that accumulate by position N in curriculum
+
+2. **Test Results (4/5 PASS)**
+   - Test 1: Position-REGIME correlation ρ=0.678, p<10⁻¹² (PASS)
+   - Test 2: Category-REGIME association p=0.001 (PASS)
+   - Test 3: Dangerous-REGIME_4 enrichment p=0.48 (FAIL - underpowered, n=5)
+   - Test 4: Cumulative threshold ρ=1.0 for mean position (PASS)
+   - Test 5: Position-CEI correlation ρ=0.886, p<10⁻²⁸ (PASS)
+   - Control: 100th percentile vs permutations (PASS)
+
+3. **Three-Level Relationship Hierarchy (Epistemic)**
+   - Level 1: Voynich ↔ Brunschwig (direct, structural, grammar-level)
+   - Level 2: Voynich ↔ Puff (strong external alignment via complexity ordering)
+   - Level 3: Puff ↔ Brunschwig (historical lineage)
+
+4. **Puff Status Upgrade (CONSERVATIVE)**
+   - FROM: CONTEXTUAL (interesting parallel)
+   - TO: STRUCTURALLY ALIGNED EXTERNAL LADDER
+   - NOT: STRUCTURAL NECESSITY (would be over-claiming)
+
+5. **REGIME_4 Precision Audit**
+   - Audited context system for "forbidden/danger" backsliding
+   - Fixed tier4_semantic_assignment.md with correction notes
+   - REGIME_4 = precision-constrained execution (C494)
+
+### Files Added/Modified
+
+| File | Purpose |
+|------|---------|
+| phases/PUFF_COMPLEXITY_CORRELATION/ | Phase directory |
+| puff_regime_complexity_test.py | 5-test + control validation |
+| results/puff_regime_complexity.json | Test output |
+| INTERPRETATION_SUMMARY.md | Added X.16 |
+| tier4_semantic_assignment.md | Fixed REGIME_4 precision audit |
+
+### Expert Calibration
+
+Per expert feedback, Test 4's "perfect monotonic" (ρ=1.0) represents only 4 data points (one per REGIME). This is an ordinal constraint, not cardinal identity. The upgrade to "structurally aligned" (not "structural necessity") reflects appropriate epistemic caution.
+
+---
+
 ## Version 2.42 (2026-01-14) - BRUNSCHWIG BACKWARD PROPAGATION + CURRICULUM MODEL
 
 ### Summary
