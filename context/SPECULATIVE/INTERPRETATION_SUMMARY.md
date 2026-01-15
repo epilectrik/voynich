@@ -1643,3 +1643,130 @@ See [curriculum_realignment.md](curriculum_realignment.md) for full details.
 ## Navigation
 
 ← [README.md](README.md) | ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
+
+---
+
+### X.12 Grammar-Level Embedding Result (2026-01-14) - NEW
+
+**Question:** Can Brunschwig distillation procedures be translated step-by-step into Voynich grammar without violating any validated constraints?
+
+**Answer:** YES - FULL COMPLIANCE.
+
+This is not a vibes-level parallel. It is a **grammar-level embedding** result:
+- We did NOT tune the grammar
+- We did NOT relax constraints
+- We did NOT infer semantics
+- We asked: "Can a real historical procedure fit inside this grammar without breaking it?"
+- Answer: YES - cleanly
+
+**Test Results:**
+- Balneum marie procedure: 18 steps translated to Voynich instruction classes
+- All 5 hazard classes: COMPLIANT
+- h->k suppression (C332): COMPLIANT
+- 17 forbidden transitions: ZERO violations
+
+**REGIME_4 Precision Hypothesis - CONFIRMED:**
+- Standard procedures: 0/2 fit REGIME_4
+- Precision procedures: 2/3 fit REGIME_4
+- REGIME_4 is NOT "most intense" - it is "least forgiving"
+
+**Files:** phases/BRUNSCHWIG_TEMPLATE_FIT/, context/SPECULATIVE/brunschwig_grammar_embedding.md
+
+---
+
+### X.13 Relationship Hierarchy (2026-01-14) - UPDATED
+
+**The expert assessment clarifies the relationship hierarchy:**
+
+> **Brunschwig is the correct comparison text. Puff is historically relevant but not structurally necessary.**
+
+| Relationship | Strength | Evidence Type |
+|--------------|----------|---------------|
+| **Voynich-Brunschwig** | **DIRECT** | Grammar-level embedding, regime-degree mapping |
+| Voynich-Puff | INDIRECT | Shared curriculum structure, 83-unit coincidence |
+
+**What Brunschwig provides that Puff does not:**
+- Direct grammar compatibility testing
+- Fire-degree to REGIME mapping
+- Hazard suppression alignment
+- Recovery corridor matching
+- Precision vs intensity axis
+
+**What Puff provides (context only):**
+- Historical chronology (~1455 predates Voynich dating)
+- Material naming that Voynich deliberately omits
+- 83-unit curriculum structure (interesting but not essential)
+
+**The Voynich Manuscript doesn't need 83:83.**
+
+It now has something much better:
+
+> **A concrete, historically situated grammar that real procedures fit inside - and real hazards cannot escape.**
+
+**Puff status: CONTEXTUAL (demoted from PILLAR)**
+
+---
+
+### X.14 Curriculum Completeness Model (2026-01-14)
+
+**Key discovery:** REGIMEs encode procedural COMPLETENESS, not product INTENSITY.
+
+**Test:** Can the simplest Brunschwig recipe (first degree balneum marie) fit in the most complex folio (REGIME_3)?
+
+**Result:** VIOLATES - but NOT due to intensity requirements.
+
+| REGIME | Fits? | Violation |
+|--------|-------|-----------|
+| REGIME_2 | YES | - |
+| REGIME_1 | YES | - |
+| REGIME_4 | NO | Insufficient monitoring (22% < 25%) |
+| REGIME_3 | NO | Insufficient e ops (1 < 2) |
+
+**Interpretation:** Complex folios require COMPLETENESS, not AGGRESSION.
+
+- REGIME_3 doesn't require HIGH_IMPACT operations
+- REGIME_3 requires min_e_steps=2 (recovery completeness)
+- REGIME_4 requires min_link_ratio=25% (monitoring completeness)
+
+**Curriculum Model (Revised):**
+
+```
+REGIME_2: Learn basics (simple procedures accepted)
+REGIME_1: Standard execution
+REGIME_4: Precision execution (monitoring completeness required)
+REGIME_3: Full execution (recovery completeness required)
+```
+
+The same product (rose water) can appear at any curriculum stage - but advanced stages require complete procedures with proper recovery and monitoring.
+
+---
+
+### X.15 Backward Propagation: Product->A Signature (2026-01-14)
+
+**Two-Level A Model:**
+
+| Level | Granularity | Encodes |
+|-------|-------------|---------|
+| Entry | Individual tokens | Operational parameters (PREFIX class) |
+| Record | Entire A folios | Product profiles (MIDDLE set + PREFIX distribution) |
+
+**Product-Exclusive MIDDLEs:** 78.2% of MIDDLEs appear in only one product type in B.
+
+**Product-Specific A Signatures:**
+
+| Product Type | A Signature | Key PREFIX |
+|--------------|-------------|------------|
+| WATER_GENTLE | ch-depleted, ok-enriched | ok+ ch- |
+| WATER_STANDARD | baseline | ch baseline |
+| OIL_RESIN | d-enriched, y-depleted | d+ y- |
+| PRECISION | ch-enriched, d-depleted | ch+ d- |
+
+**Backward Propagation Chain:**
+
+```
+Brunschwig recipe -> Product type -> REGIME -> B folio -> A register
+```
+
+This enables prediction: Given a Brunschwig recipe, identify its product type, map to REGIME, find B folios in that REGIME, trace exclusive MIDDLEs back to A folios with matching PREFIX signatures.
+
+**Files:** phases/BRUNSCHWIG_TEMPLATE_FIT/exclusive_middle_backprop.py, brunschwig_product_predictions.py

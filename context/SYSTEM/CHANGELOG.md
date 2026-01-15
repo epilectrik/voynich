@@ -4,6 +4,119 @@
 
 ---
 
+## Version 2.42 (2026-01-14) - BRUNSCHWIG BACKWARD PROPAGATION + CURRICULUM MODEL
+
+### Summary
+
+Extended Brunschwig analysis with backward propagation tests (product->A signature) and curriculum complexity model refinement. Key finding: REGIMEs encode procedural COMPLETENESS, not product INTENSITY.
+
+### Key Findings
+
+1. **Curriculum Complexity Model**
+   - Simple Brunschwig recipe (first degree balneum marie) tested in most complex folio (REGIME_3)
+   - Result: VIOLATES - but due to min_e_steps=2 (recovery completeness), NOT intensity
+   - Complex folios require COMPLETENESS, not AGGRESSION
+   - Same product (rose water) can appear at any curriculum stage
+
+2. **Two-Level A Model**
+   - Entry level: Individual tokens encode operational parameters (PREFIX class)
+   - Record level: Entire A folios encode product profiles (MIDDLE set + PREFIX distribution)
+   - 78.2% of MIDDLEs are product-exclusive (only appear in one product type)
+
+3. **Product-Specific A Signatures**
+   - WATER_GENTLE: ok+ ch- (less phase ops, gentle handling)
+   - WATER_STANDARD: ch baseline (default procedural)
+   - OIL_RESIN: d+ y- (aggressive extraction)
+   - PRECISION: ch+ d- (phase-controlled, monitoring-heavy)
+
+4. **Backward Propagation Chain**
+   - Brunschwig recipe -> Product type -> REGIME -> B folio -> A register
+   - Can predict A register signature from Brunschwig product type
+
+### Files Added
+
+| File | Purpose |
+|------|---------|
+| product_a_correlation.py | Product type -> A signature mapping |
+| precision_prefix_analysis.py | y-prefix enrichment in precision |
+| a_record_product_profiles.py | Record-level clustering |
+| exclusive_middle_backprop.py | Exclusive MIDDLE backward propagation |
+| brunschwig_product_predictions.py | Specific product predictions |
+| simple_in_complex_test.py | Curriculum complexity validation |
+| README.md | Phase documentation |
+
+### Curriculum Model (Revised)
+
+```
+REGIME_2: Learn basics (simple procedures accepted)
+REGIME_1: Standard execution
+REGIME_4: Precision execution (monitoring completeness required, 25% min LINK)
+REGIME_3: Full execution (recovery completeness required, min_e=2)
+```
+
+### Expert Assessment
+
+> "The Voynich Manuscript doesn't need 83:83. It now has something much better: a concrete, historically situated grammar that real procedures fit inside - and real hazards cannot escape."
+
+---
+
+## Version 2.41 (2026-01-14) - BRUNSCHWIG GRAMMAR EMBEDDING
+
+### Summary
+
+Brunschwig Template Fit phase confirms grammar-level embedding: historical distillation procedures can be expressed in Voynich grammar without violating any constraints.
+
+### Key Findings
+
+1. **Grammar-Level Embedding (C493)**
+   - Balneum marie procedure: 18 steps translated to Voynich instruction classes
+   - All 5 hazard classes: COMPLIANT
+   - 17 forbidden transitions: ZERO violations
+   - This is NOT a vibes-level parallel - it is a structural embedding
+
+2. **REGIME_4 Precision Axis (C494)**
+   - REGIME_4 is NOT "most intense" - it is "least forgiving"
+   - Standard procedures: 0/2 fit REGIME_4
+   - Precision procedures: 2/3 fit REGIME_4
+   - Old interpretation ("forbidden/intense") RETIRED
+   - New interpretation: **precision-constrained execution regime**
+
+3. **Degree x REGIME Compatibility Matrix**
+   - First degree -> REGIME_2 (confirmed)
+   - Second degree -> REGIME_1 (confirmed)
+   - Third/Fourth degree -> REGIME_3 (confirmed)
+   - REGIME_4 -> precision variants of ANY degree
+
+4. **Puff Relationship Demoted**
+   - Brunschwig is now the primary comparison text
+   - Puff remains historically relevant but not structurally necessary
+   - 83:83 is interesting but not essential
+
+### Files
+
+| File | Content |
+|------|---------|
+| phases/BRUNSCHWIG_TEMPLATE_FIT/ | Phase directory |
+| grammar_compliance_test.py | Single procedure translation |
+| degree_regime_matrix_test.py | 4x4 compatibility matrix |
+| precision_variant_test.py | Precision hypothesis test |
+| context/SPECULATIVE/brunschwig_grammar_embedding.md | Full documentation |
+
+### New Constraints
+
+| Constraint | Statement |
+|------------|-----------|
+| C493 | Brunschwig grammar embedding (COMPLIANT) |
+| C494 | REGIME_4 precision axis (CONFIRMED) |
+
+### Expert Assessment
+
+> "This is a decisive result. Brunschwig procedures can be translated into Voynich Currier B grammar step-by-step without violating ANY of the 17 forbidden transitions. That alone separates this from 95% of Voynich hypotheses."
+
+> "REGIME_4 is not 'the most intense' - it is 'the least forgiving.' That distinction matters enormously in real process control."
+
+---
+
 ## Version 2.40 (2026-01-14) - ENTITY MATCHING CORRECTED
 
 ### Summary
