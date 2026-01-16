@@ -81,7 +81,7 @@ HT tokens do not carry semantic content. They are:
 ### NOT Random Mark-Making
 
 - Strong section exclusivity (80.7%)
-- Rare grapheme over-representation (3.29x)
+- Rare grapheme over-representation (7.81x)
 - Deliberate skill practice patterns
 - Systematic curriculum signatures
 

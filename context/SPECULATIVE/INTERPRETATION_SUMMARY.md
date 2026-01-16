@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.23
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.24
 
 ---
 
@@ -104,6 +104,96 @@ The apparatus-centric perspective explains:
 
 ---
 
+## 0.A. CURRIER A COGNITIVE INTERFACE (PCC Phase) - NEW in v4.24
+
+### Tier 3: Core Finding
+
+> **Currier A is designed for expert navigation without meaning - a human-facing complexity-frontier registry with cognitive affordances optimized for working memory.**
+
+This extends the Complexity-Frontier Registry model with empirical characterization of how humans would interact with the system.
+
+### Closure State Architecture
+
+Boundary tokens are **closure states**, not delimiters:
+
+| Property | Finding |
+|----------|---------|
+| Function | Return vocabulary to neutral, maximally compatible state |
+| -y ending | 36.5% at final position |
+| -n ending | 15.2% at final position |
+| -m ending | 12.2% at final position |
+| Uniformity | NOT adjusted to entry complexity (no complexity correlation) |
+
+Closure markers signal that an entry has emitted all discriminating vocabulary, enabling cognitive bracketing without punctuation.
+
+### Working-Memory Chunks
+
+Adjacent entries form **working-memory-sized clusters**:
+
+| Metric | Value |
+|--------|-------|
+| Within-cluster coherence | 2.14x vs cross-cluster |
+| Median cluster size | 2 |
+| Max cluster size | 7 (working memory limit) |
+| Cohen's d | 1.44 (large effect) |
+
+Clusters are INVARIANT under folio reordering - this is local structure, not global organization.
+
+### Singleton Isolation
+
+Entries not in clusters (singletons) show distinct properties:
+
+| Property | Clustered | Singleton |
+|----------|-----------|-----------|
+| Hub overlap | 0.850 | 0.731 |
+| Incompatibility density | 0.979 | 0.986 |
+
+Singletons are **deliberate isolation points**, not noise - entries with unique discrimination profiles that cannot cluster.
+
+### A-AZC Breadth Interface
+
+Entry vocabulary composition predicts downstream AZC compatibility:
+
+| Factor | Effect on Breadth | p-value |
+|--------|-------------------|---------|
+| Hub-dominant | Broader | - |
+| Tail-dominant | Narrower | <0.0001 |
+| Closure present | Slightly broader | 0.003 |
+| Non-prefix opener | Narrower | <0.0001 |
+
+**Strong asymmetry:** Universal-dominant entries have 0.58 breadth; Tail-dominant entries have 0.31 breadth.
+
+### The Navigation Model (Tier 3)
+
+An expert using Currier A would:
+1. Recognize entry boundaries via closure morphology
+2. Process clusters as working-memory chunks
+3. Use adjacency similarity for local orientation
+4. Treat singletons as special/isolated items
+5. Navigate via marker class organization
+
+This is interface characterization, not semantic mapping. The system supports expert navigation without encoding meaning.
+
+### What This Does NOT Claim
+
+- ❌ Entries have semantic content
+- ❌ Closure markers are adaptive signals
+- ❌ Working-memory structure implies temporal ordering
+- ❌ A-AZC breadth enables material identification
+
+### Cross-References
+
+| Constraint | Finding |
+|------------|---------|
+| C233 | LINE_ATOMIC (base for closure model) |
+| C346 | Sequential coherence 1.20x |
+| C424 | Clustered adjacency |
+| C422 | DA articulation |
+
+**Source:** phases/POST_CLOSURE_CHARACTERIZATION/PCC_SUMMARY_REPORT.md
+
+---
+
 ## I. Human Track (HT) Interpretation
 
 ### Tier 2: Core Finding (v2.13)
@@ -139,9 +229,9 @@ This is NOT "doodling" or "scribbling" - the evidence shows deliberate skill acq
 
 | Evidence | Finding | Implication |
 |----------|---------|-------------|
-| Rare grapheme engagement | 3.29x over-representation | Practicing difficult forms |
-| Run structure | CV=0.43 (fixed-block range) | Deliberate practice blocks |
-| Boundary-pushing forms | 28.5% | Exploring morphological limits |
+| Rare grapheme engagement | 7.81x over-representation | Practicing difficult forms |
+| Run structure | CV=0.35 (fixed-block range) | Deliberate practice blocks |
+| Boundary-pushing forms | 24.5% | Exploring morphological limits |
 | Family rotation | Change rate 0.71 | Systematic curriculum |
 | Hazard avoidance | 0/35 at forbidden seams | Stop writing when attention demanded |
 | Phase synchronization | V=0.136 | Writing tracks procedural phase |

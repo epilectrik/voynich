@@ -101,9 +101,9 @@ Court-sponsored, guild-restricted production model.
 Central Europe 1400-1550, N. Italy 1400-1470.
 **Source:** EXT-6
 
-### C209 - Attentional Pacing Wins
+### C209 - Attentional Pacing UNDERDETERMINED
 **Tier:** 2 | **Status:** CLOSED
-6/8 tests favor attentional pacing interpretation.
+4/8 tests favor attentional pacing interpretation (UNDERDETERMINED).
 **Source:** SID-05
 
 ### C215 - BOTANICAL_FAVORED

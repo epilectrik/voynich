@@ -139,7 +139,7 @@ HT serves **two complementary functions**:
 
 This is NOT "doodling" or "scribbling" - the evidence shows highly structured, intentional practice.
 
-HT won 6/8 tests for **attentional pacing** function (C209):
+HT achieved 4/8 tests for **attentional pacing** function (C209 - UNDERDETERMINED):
 - NOT sensory checkpoints (avoid hazards, don't cluster near them)
 - NOT quantitative markers (no counting behavior)
 - NOT scribal errors (too systematic, section-specific)
@@ -151,9 +151,9 @@ HT won 6/8 tests for **attentional pacing** function (C209):
 
 | Evidence | Finding | Implication |
 |----------|---------|-------------|
-| Rare grapheme over-representation | 3.29x (p=0.0001) | Practicing difficult forms |
-| Run structure | CV=0.43 matches fixed-block rehearsal | Deliberate practice blocks |
-| Boundary-pushing forms | 28.5% | Exploring morphological limits |
+| Rare grapheme over-representation | 7.81x (p=0.0001) | Practicing difficult forms |
+| Run structure | CV=0.35 matches fixed-block rehearsal | Deliberate practice blocks |
+| Boundary-pushing forms | 24.5% | Exploring morphological limits |
 | Section-level family rotation | Change rate 0.71 | Systematic curriculum |
 
 ### Unified Interpretation (Tier 3)

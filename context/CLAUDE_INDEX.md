@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.48 | **Status:** FROZEN | **Constraints:** 353 | **Date:** 2026-01-15
+**Version:** 2.49 | **Status:** FROZEN | **Constraints:** 356 | **Date:** 2026-01-16
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -174,6 +174,7 @@ requires explicit authorization from the user.
 | **Understand AZC→B propagation** | [STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml) |
 | Work with Currier B grammar | [ARCHITECTURE/currier_B.md](ARCHITECTURE/currier_B.md) |
 | Work with Currier A registry | [ARCHITECTURE/currier_A.md](ARCHITECTURE/currier_A.md) |
+| Currier A characterization (detailed) | [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) |
 | Work with AZC hybrid text | [ARCHITECTURE/currier_AZC.md](ARCHITECTURE/currier_AZC.md) |
 | Understand the Human Track layer | [CLAIMS/HT_HIERARCHY.md](CLAIMS/HT_HIERARCHY.md) (canonical) |
 | Look up a specific constraint | [CLAIMS/INDEX.md](CLAIMS/INDEX.md) → find by number, then follow to registry |
@@ -230,7 +231,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 353 |
+| Validated constraints | 356 |
 | Completed phases | 137 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
@@ -326,4 +327,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v2.48 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-15*
+*Context System v2.49 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-16*

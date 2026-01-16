@@ -495,9 +495,9 @@ The following tests are closed. Any future correlation must exceed frequency-mat
 
 ## Imported Constraints
 
-### C241 - daiin A-enriched (1.55x), ol B-enriched (0.21x)
+### C241 - daiin A-enriched (1.62x), ol B-enriched (0.24x)
 **Tier:** 2 | **Status:** CLOSED
-daiin A-enriched (1.55x), ol B-enriched (0.21x)
+daiin A-enriched (1.62x), ol B-enriched (0.24x)
 **Source:** v1.8-import
 
 ### C242 - daiin neighborhood flip (content in A, grammar in B)
@@ -505,9 +505,9 @@ daiin A-enriched (1.55x), ol B-enriched (0.21x)
 daiin neighborhood flip (content in A, grammar in B)
 **Source:** v1.8-import
 
-### C243 - daiin-ol adjacent: 54 in B, 27 in A
+### C243 - daiin-ol adjacent: 16 in B, 10 in A
 **Tier:** 2 | **Status:** CLOSED
-daiin-ol adjacent: 54 in B, 27 in A
+daiin-ol adjacent: 16 in B, 10 in A
 **Source:** v1.8-import
 
 ### C244 - Infrastructure reuse without semantic transfer
