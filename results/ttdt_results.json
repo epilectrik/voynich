@@ -1,0 +1,66 @@
+{
+  "test": "TTDT",
+  "question": "Do B folios define distinct terminal profiles beyond REGIME?",
+  "data": {
+    "n_folios": 83,
+    "n_features": 16,
+    "feature_names": [
+      "mean_cycle_length",
+      "cycle_regularity",
+      "link_density",
+      "kernel_contact_ratio",
+      "hazard_density",
+      "near_miss_count",
+      "recovery_ops_count",
+      "intervention_frequency",
+      "intervention_diversity",
+      "phase_ordering_rigidity",
+      "kernel_distance_mean",
+      "compression_ratio",
+      "signature_sensitivity",
+      "terminal_other",
+      "terminal_initial",
+      "terminal_STATE-C"
+    ],
+    "regime_distribution": {
+      "REGIME_4": 25,
+      "REGIME_2": 11,
+      "REGIME_3": 16,
+      "REGIME_1": 31
+    }
+  },
+  "raw_clustering": {
+    "optimal_k": 3,
+    "best_silhouette": 0.24202994994262017,
+    "hierarchical": {}
+  },
+  "residual_clustering": {
+    "optimal_k": 10,
+    "best_silhouette": 0.18943870430826207,
+    "hierarchical": {}
+  },
+  "stability": {
+    "4": {
+      "mean_silhouette": 0.21421303687227225,
+      "std_silhouette": 0.02422337450605652,
+      "n_bootstrap": 30
+    },
+    "10": {
+      "mean_silhouette": 0.2859109999861156,
+      "std_silhouette": 0.026092655512044347,
+      "n_bootstrap": 30
+    },
+    "20": {
+      "mean_silhouette": 0.4108138819114018,
+      "std_silhouette": 0.04987650712536083,
+      "n_bootstrap": 30
+    },
+    "50": {
+      "mean_silhouette": 0.6377611544725019,
+      "std_silhouette": 0.049402187260607355,
+      "n_bootstrap": 30
+    }
+  },
+  "verdict": "INCONCLUSIVE: Need further analysis",
+  "interpretation": "Structure present but not clearly matching prediction"
+}

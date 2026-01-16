@@ -2,8 +2,28 @@
 
 **Phase ID:** CAS
 **Tier:** 2 (STRUCTURAL INFERENCE)
-**Status:** COMPLETE
-**Date:** 2026-01-06
+**Status:** COMPLETE (REVISED 2026-01-15)
+**Date:** 2026-01-06 (revised 2026-01-15)
+
+---
+
+## IMPORTANT: Transcriber Filtering Correction (2026-01-15)
+
+**Original analysis loaded ALL transcribers instead of PRIMARY (H) only.**
+
+This caused:
+- Token inflation (~3.2x more tokens than actual)
+- **INVALIDATED C250**: Block repetition pattern (64.1% → 0%) was artifact of transcriber interleaving
+- Inflated bigram counts
+
+**What's PRESERVED (H-only confirms):**
+- 8 marker prefixes partition entries (mutual exclusion)
+- Section-marker dependence
+- A/B designed separation
+- LINE_ATOMIC structure
+- DATABASE_LIKE behavior
+
+**See TRANSCRIBER_REVIEW.md for full audit.**
 
 ---
 
@@ -21,14 +41,16 @@ It is NOT a grammar. It is NOT a different grammar. It is a fundamentally differ
 
 | Property | Evidence | Confidence |
 |----------|----------|------------|
-| LINE-ATOMIC | Median 3 tokens/line, MI=0 across lines | HIGH |
+| LINE-ATOMIC | Median 1 token/line (85% single-token), MI=0 across lines | HIGH |
 | POSITION-FREE | Zero JS divergence between positions | HIGH |
-| CATEGORICAL TAGGING | 8+ mutually exclusive marker prefixes | HIGH |
+| CATEGORICAL TAGGING | 8 mutually exclusive marker prefixes | HIGH |
 | FLAT (not hierarchical) | Zero vocabulary overlap between markers | HIGH |
-| DATABASE-LIKE | TTR=0.137, 70.7% bigram reuse | HIGH |
-| REPETITIVE | Top patterns: "daiin daiin", "chol chol" | HIGH |
+| DATABASE-LIKE | TTR=0.302, 51% key-value structure | HIGH |
+| TOKEN-REPETITIVE | Top bigrams: "daiin daiin" (403x), "chol chol" (185x) | HIGH |
 | SECTION-CONDITIONED | Same markers, different vocabulary per section | HIGH |
-| DESIGNED SEPARATION from B | 25/112,733 cross-transitions (0.0%) | HIGH |
+| DESIGNED SEPARATION from B | 25/34,641 cross-transitions (0.1%) | HIGH |
+
+**Note:** All values corrected for H-only (PRIMARY transcriber) on 2026-01-15.
 
 ### What Currier A is NOT
 
@@ -48,8 +70,8 @@ It is NOT a grammar. It is NOT a different grammar. It is a fundamentally differ
 **Verdict: LINE_ATOMIC**
 
 - Each line is an atomic unit (record)
-- Median line length: 3 tokens
-- 28% single-token lines
+- Median line length: 1 token
+- 85.4% single-token lines (H-only)
 - Zero cross-line dependencies
 
 ### CAS-2: Slot/Field Detection
@@ -61,20 +83,23 @@ It is NOT a grammar. It is NOT a different grammar. It is a fundamentally differ
 - **BUT: Strong mutual exclusion detected**
 
 ### CAS-3: Marker Taxonomy
-**Verdict: CATEGORICAL_TAGGING**
+**Verdict: WEAK_TAGGING** (revised from CATEGORICAL_TAGGING)
 
-| Marker | Occurrences | Excludes |
-|--------|-------------|----------|
-| ch | 2,040 | 40 others |
-| qo | 1,135 | 35 others |
-| sh | 1,007 | 32 others |
-| da | 677 | 27 others |
-| ok | 630 | 27 others |
-| ot | 568 | 25 others |
-| ct | 448 | 18 others |
-| ol | 289 | 10 others |
+| Marker | Occurrences | Excludes | % of entries |
+|--------|-------------|----------|--------------|
+| ch | 1,572 | 29 others | 17.4% |
+| qo | 916 | 29 others | 10.2% |
+| sh | 778 | 27 others | 8.6% |
+| da | 515 | 21 others | 5.7% |
+| ok | 490 | 20 others | 5.4% |
+| ot | 436 | 18 others | 4.8% |
+| ct | 346 | 13 others | 3.8% |
+| ol | 226 | 8 others | 2.5% |
 
-**Critical finding:** Co-occurrence matrix is ALL ZEROS. These prefixes NEVER appear together in the same entry. Vocabulary overlap is also ZERO.
+**Critical finding:** Co-occurrence matrix is ALL ZEROS. These prefixes NEVER appear together in the same entry. Vocabulary overlap is also ZERO (0.00 Jaccard).
+
+- 63.0% of entries cleanly classified by marker (H-only)
+- 37.0% unclassified (no marker)
 
 ### CAS-4: Section-Schema Binding
 **Verdict: GLOBAL_SCHEMA_LOCAL_VOCABULARY**
@@ -87,12 +112,15 @@ It is NOT a grammar. It is NOT a different grammar. It is a fundamentally differ
 ### CAS-5: Redundancy & Normalization
 **Verdict: DATABASE_LIKE (3/4)**
 
-| Metric | Value | Interpretation |
-|--------|-------|----------------|
-| Type-Token Ratio | 0.137 | Heavy vocabulary reuse |
-| Bigram reuse rate | 70.7% | Extremely formulaic |
-| Pattern concentration | 58.5% | Few templates dominate |
-| Top bigrams | "daiin daiin" (1651x) | Repetitive registry |
+| Metric | Value (H-only) | Interpretation |
+|--------|----------------|----------------|
+| Type-Token Ratio | 0.302 | Moderate vocabulary reuse |
+| Bigram reuse rate | 50.6% | Formulaic |
+| Pattern concentration | 75.5% | Few templates dominate |
+| Top bigrams | "daiin daiin" (403x), "chol chol" (185x) | Token-level repetition |
+
+**INVALIDATED (2026-01-15):** Block repetition (C250) was artifact of transcriber interleaving. With H-only: 0% block repetition.
+Real repetition is **token-level** (consecutive identical tokens), not block-level.
 
 ### CAS-6: A/B Interaction Boundary
 **Verdict: DESIGNED_SEPARATION (3/3)**

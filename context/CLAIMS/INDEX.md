@@ -181,14 +181,15 @@ Every new constraint MUST specify system scope:
 
 ---
 
-## Multiplicity Encoding (C250-C266)
+## Multiplicity Encoding (C250-C266) - INVALIDATED
 
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
-| 250 | 64.1% show repeating blocks | 2 | A | ⊂ currier_a |
-| 253 | All blocks unique (0% cross-entry reuse) | 2 | A | ⊂ currier_a |
-| 255 | 100% section-exclusive blocks | 2 | A | ⊂ currier_a |
-| 261 | Token order NON-RANDOM | 2 | A | ⊂ currier_a |
+| 250 | ~~64.1% show repeating blocks~~ | 1 | A | **INVALIDATED** - transcriber artifact |
+| 251-262 | Block-dependent constraints | 1 | A | **INVALIDATED** - depend on C250 |
+| 266 | ~~Block vs non-block entry types~~ | 1 | A | **INVALIDATED** - depend on C250 |
+
+**Note (2026-01-15):** All block repetition findings were artifacts of loading all transcribers instead of H (primary) only. With H-only data: 0% block repetition.
 
 ---
 
@@ -210,7 +211,7 @@ Every new constraint MUST specify system scope:
 
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
-| 300 | 9,401 tokens (7.7%) unclassified by Currier | 2 | AZC | ⊂ azc_system |
+| 300 | 3,299 tokens (8.7%) unclassified by Currier | 2 | AZC | ⊂ azc_system |
 | 301 | AZC is HYBRID (B=69.7%, A=65.4%) | 2 | AZC | → [C301_azc_hybrid.md](C301_azc_hybrid.md) |
 | 306 | Placement-coding axis established | 2 | AZC | ⊂ azc_system |
 | 313 | Position constrains LEGALITY not PREDICTION | 2 | AZC | ⊂ azc_system |

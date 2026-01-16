@@ -4,6 +4,8 @@
 **Tier:** 3-4 (Speculative)
 **Status:** Documented for reference
 
+> **Note (2026-01-16):** The "64.1% batch structure" evidence cited below has been INVALIDATED. C250 (block repetition) was discovered to be a transcriber artifact - with H-only data, repetition is 0%. This weakens but does not eliminate the farming hypothesis, as other evidence remains valid.
+
 ---
 
 ## Summary
@@ -23,7 +25,7 @@ This hypothesis proposes that:
 | Evidence | Finding | Interpretation |
 |----------|---------|----------------|
 | **Scale** | ~1,800 catalog entries | Matches guild-level operations (Santa Maria Novella, Venetian muschieri) |
-| **Batch uniformity** | 64.1% literal repetition structure | Standard lot counting (plots, batches, rows) |
+| ~~**Batch uniformity**~~ | ~~64.1% literal repetition structure~~ | ~~Standard lot counting~~ **INVALIDATED** |
 | **Program diversity** | 83 distinct programs | Cultivar x treatment optimization |
 | **Section isolation** | 100% vocabulary separation | Different crop families / greenhouse zones |
 | **Opportunity-loss hazards** | 64.7% premature, 0% late | Harvest/processing window optimization |
@@ -135,7 +137,7 @@ PROTECTED CULTIVATION OPERATION
 | Phenomenon | Foraging Model | Farming/Greenhouse Model |
 |------------|----------------|--------------------------|
 | 1,800 entries | Exceptionally comprehensive | Normal farm inventory |
-| 64.1% batch structure | Unusual for wild inputs | Standard lot counting |
+| ~~64.1% batch structure~~ | ~~Unusual for wild inputs~~ | ~~Standard lot counting~~ **INVALIDATED** |
 | 83 programs | Excessive for variable inputs | Cultivar-optimized |
 | Section isolation | Different materials | Different zones/operators |
 | 0% late hazards | Unclear | Fresh material on demand |

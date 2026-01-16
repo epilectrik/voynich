@@ -1,0 +1,271 @@
+{
+  "probe": "AC_MIDDLE_INCOMPATIBILITY_DENSITY",
+  "question": "Are A/C folios activating more densely incompatible MIDDLE subsets?",
+  "prediction": "A/C > Zodiac (fine discrimination = more mutually exclusive constraints)",
+  "method": {
+    "incompatibility_source": "C475 (line-level co-occurrence)",
+    "metric": "fraction of folio's MIDDLE pairs that never co-occur globally"
+  },
+  "global_baseline": {
+    "sparsity": 0.9568,
+    "legal_pairs_global": 43737
+  },
+  "summary": {
+    "zodiac_folios": 13,
+    "ac_folios": 17,
+    "zodiac_mean_density": 0.3799219081991074,
+    "ac_mean_density": 0.5487880499713117,
+    "zodiac_std": 0.08333948101380007,
+    "ac_std": 0.23466301965798506
+  },
+  "statistical_test": {
+    "test": "Mann-Whitney U (one-sided, A/C > Zodiac)",
+    "u_statistic": 188.0,
+    "p_value": 0.0006344031154821646,
+    "effect_size_r": -0.7013574660633484
+  },
+  "verdict": "STRONG SIGNAL",
+  "interpretation": "A/C folios activate more densely incompatible MIDDLE subsets than Zodiac",
+  "folio_details": {
+    "f57v": {
+      "n_middles": 94,
+      "total_pairs": 4371,
+      "legal_pairs": 3599,
+      "illegal_pairs": 772,
+      "incompatibility_density": 0.17661862274079157,
+      "family": "ZODIAC"
+    },
+    "f65r": {
+      "n_middles": 2,
+      "total_pairs": 1,
+      "legal_pairs": 1,
+      "illegal_pairs": 0,
+      "incompatibility_density": 0.0,
+      "family": "AC"
+    },
+    "f65v": {
+      "n_middles": 41,
+      "total_pairs": 820,
+      "legal_pairs": 352,
+      "illegal_pairs": 468,
+      "incompatibility_density": 0.5707317073170731,
+      "family": "AC"
+    },
+    "f67r1": {
+      "n_middles": 141,
+      "total_pairs": 9870,
+      "legal_pairs": 4492,
+      "illegal_pairs": 5378,
+      "incompatibility_density": 0.5448834853090172,
+      "family": "AC"
+    },
+    "f67r2": {
+      "n_middles": 172,
+      "total_pairs": 14706,
+      "legal_pairs": 2318,
+      "illegal_pairs": 12388,
+      "incompatibility_density": 0.8423772609819121,
+      "family": "AC"
+    },
+    "f67v2": {
+      "n_middles": 89,
+      "total_pairs": 3916,
+      "legal_pairs": 672,
+      "illegal_pairs": 3244,
+      "incompatibility_density": 0.8283963227783453,
+      "family": "AC"
+    },
+    "f67v1": {
+      "n_middles": 96,
+      "total_pairs": 4560,
+      "legal_pairs": 956,
+      "illegal_pairs": 3604,
+      "incompatibility_density": 0.7903508771929825,
+      "family": "AC"
+    },
+    "f68r1": {
+      "n_middles": 77,
+      "total_pairs": 2926,
+      "legal_pairs": 844,
+      "illegal_pairs": 2082,
+      "incompatibility_density": 0.7115516062884484,
+      "family": "AC"
+    },
+    "f68r2": {
+      "n_middles": 99,
+      "total_pairs": 4851,
+      "legal_pairs": 1269,
+      "illegal_pairs": 3582,
+      "incompatibility_density": 0.738404452690167,
+      "family": "AC"
+    },
+    "f68r3": {
+      "n_middles": 98,
+      "total_pairs": 4753,
+      "legal_pairs": 2125,
+      "illegal_pairs": 2628,
+      "incompatibility_density": 0.5529139490847885,
+      "family": "AC"
+    },
+    "f68v3": {
+      "n_middles": 141,
+      "total_pairs": 9870,
+      "legal_pairs": 4205,
+      "illegal_pairs": 5665,
+      "incompatibility_density": 0.5739614994934144,
+      "family": "AC"
+    },
+    "f68v2": {
+      "n_middles": 100,
+      "total_pairs": 4950,
+      "legal_pairs": 2405,
+      "illegal_pairs": 2545,
+      "incompatibility_density": 0.5141414141414141,
+      "family": "AC"
+    },
+    "f68v1": {
+      "n_middles": 90,
+      "total_pairs": 4005,
+      "legal_pairs": 2438,
+      "illegal_pairs": 1567,
+      "incompatibility_density": 0.3912609238451935,
+      "family": "AC"
+    },
+    "f69r": {
+      "n_middles": 116,
+      "total_pairs": 6670,
+      "legal_pairs": 2316,
+      "illegal_pairs": 4354,
+      "incompatibility_density": 0.6527736131934033,
+      "family": "AC"
+    },
+    "f69v": {
+      "n_middles": 93,
+      "total_pairs": 4278,
+      "legal_pairs": 2188,
+      "illegal_pairs": 2090,
+      "incompatibility_density": 0.4885460495558672,
+      "family": "AC"
+    },
+    "f70r1": {
+      "n_middles": 91,
+      "total_pairs": 4095,
+      "legal_pairs": 2017,
+      "illegal_pairs": 2078,
+      "incompatibility_density": 0.5074481074481074,
+      "family": "AC"
+    },
+    "f70r2": {
+      "n_middles": 165,
+      "total_pairs": 13530,
+      "legal_pairs": 5119,
+      "illegal_pairs": 8411,
+      "incompatibility_density": 0.6216555801921656,
+      "family": "AC"
+    },
+    "f70v2": {
+      "n_middles": 123,
+      "total_pairs": 7503,
+      "legal_pairs": 4394,
+      "illegal_pairs": 3109,
+      "incompatibility_density": 0.4143675862988138,
+      "family": "ZODIAC"
+    },
+    "f70v1": {
+      "n_middles": 76,
+      "total_pairs": 2850,
+      "legal_pairs": 1410,
+      "illegal_pairs": 1440,
+      "incompatibility_density": 0.5052631578947369,
+      "family": "ZODIAC"
+    },
+    "f71r": {
+      "n_middles": 71,
+      "total_pairs": 2485,
+      "legal_pairs": 1545,
+      "illegal_pairs": 940,
+      "incompatibility_density": 0.3782696177062374,
+      "family": "ZODIAC"
+    },
+    "f71v": {
+      "n_middles": 73,
+      "total_pairs": 2628,
+      "legal_pairs": 1703,
+      "illegal_pairs": 925,
+      "incompatibility_density": 0.3519786910197869,
+      "family": "ZODIAC"
+    },
+    "f72r1": {
+      "n_middles": 85,
+      "total_pairs": 3570,
+      "legal_pairs": 2364,
+      "illegal_pairs": 1206,
+      "incompatibility_density": 0.3378151260504202,
+      "family": "ZODIAC"
+    },
+    "f72r2": {
+      "n_middles": 91,
+      "total_pairs": 4095,
+      "legal_pairs": 2445,
+      "illegal_pairs": 1650,
+      "incompatibility_density": 0.40293040293040294,
+      "family": "ZODIAC"
+    },
+    "f72r3": {
+      "n_middles": 118,
+      "total_pairs": 6903,
+      "legal_pairs": 3719,
+      "illegal_pairs": 3184,
+      "incompatibility_density": 0.4612487324351731,
+      "family": "ZODIAC"
+    },
+    "f72v3": {
+      "n_middles": 107,
+      "total_pairs": 5671,
+      "legal_pairs": 3223,
+      "illegal_pairs": 2448,
+      "incompatibility_density": 0.43166989948862633,
+      "family": "ZODIAC"
+    },
+    "f72v2": {
+      "n_middles": 109,
+      "total_pairs": 5886,
+      "legal_pairs": 3056,
+      "illegal_pairs": 2830,
+      "incompatibility_density": 0.4808019028202514,
+      "family": "ZODIAC"
+    },
+    "f72v1": {
+      "n_middles": 93,
+      "total_pairs": 4278,
+      "legal_pairs": 2700,
+      "illegal_pairs": 1578,
+      "incompatibility_density": 0.3688639551192146,
+      "family": "ZODIAC"
+    },
+    "f73r": {
+      "n_middles": 91,
+      "total_pairs": 4095,
+      "legal_pairs": 2891,
+      "illegal_pairs": 1204,
+      "incompatibility_density": 0.294017094017094,
+      "family": "ZODIAC"
+    },
+    "f73v": {
+      "n_middles": 82,
+      "total_pairs": 3321,
+      "legal_pairs": 2208,
+      "illegal_pairs": 1113,
+      "incompatibility_density": 0.33514001806684734,
+      "family": "ZODIAC"
+    },
+    "f116v": {
+      "n_middles": 2,
+      "total_pairs": 1,
+      "legal_pairs": 1,
+      "illegal_pairs": 0,
+      "incompatibility_density": 0.0,
+      "family": "AC"
+    }
+  }
+}

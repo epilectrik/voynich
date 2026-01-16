@@ -12,7 +12,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_data():
-    """Load Currier A data."""
+    """Load Currier A data (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     entries = defaultdict(lambda: {'tokens': [], 'section': '', 'folio': ''})
@@ -22,7 +22,12 @@ def load_data():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()
@@ -40,7 +45,7 @@ def load_data():
 
 
 def load_b_data():
-    """Load Currier B data by folio."""
+    """Load Currier B data by folio (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     folios = defaultdict(list)
@@ -50,7 +55,12 @@ def load_b_data():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'B':
                     word = parts[0].strip('"').strip().lower()

@@ -18,9 +18,9 @@ from scipy import stats
 from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import pdist, squareform
 
-# Load corpus (same pattern as heading_word_analysis.py)
+# Load corpus (PRIMARY transcriber H only)
 def load_corpus():
-    """Load the interlinear corpus."""
+    """Load the interlinear corpus (PRIMARY transcriber H only)."""
     corpus_path = os.path.join('data', 'transcriptions', 'interlinear_full_words.txt')
     entries = defaultdict(list)
     currier_map = {}  # folio -> A or B
@@ -29,7 +29,12 @@ def load_corpus():
         header = f.readline()  # Skip header
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) >= 7:
+            if len(parts) >= 13:
+                # Filter to PRIMARY transcriber (H) only - column 12
+                transcriber = parts[12].strip('"')
+                if transcriber != 'H':
+                    continue
+
                 word = parts[0].strip('"')  # Column 0: word
                 folio = parts[2].strip('"')  # Column 2: folio
                 language = parts[6].strip('"')  # Column 6: language (A or B)

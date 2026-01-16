@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.45 | **Status:** FROZEN | **Constraints:** 353 | **Date:** 2026-01-15
+**Version:** 2.48 | **Status:** FROZEN | **Constraints:** 353 | **Date:** 2026-01-15
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -21,6 +21,28 @@ This is not language. This is not cipher. This is a control system reference man
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
 | Forbidden transitions | 17 (in 5 hazard classes) |
+
+---
+
+## DATA LOADING WARNING
+
+> **CRITICAL: When writing scripts that load the transcript, ALWAYS filter to the H transcriber track.**
+>
+> The transcript contains 18 parallel transcriber readings. Using all transcribers causes **~3.2x token inflation** and creates **false patterns** from transcriber interleaving.
+>
+> **Required reading before writing ANY data-loading code:** [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md)
+
+```python
+# MANDATORY pattern for loading data
+df = df[df['transcriber'] == 'H']  # PRIMARY track only
+```
+
+| Metric | All Transcribers | H Only (CORRECT) |
+|--------|------------------|------------------|
+| Total tokens | 122,235 | 37,957 |
+| Currier A | 37,214 | 11,415 |
+| Currier B | 75,620 | 23,243 |
+| AZC (NA) | 9,401 | 3,299 |
 
 ---
 
@@ -143,6 +165,7 @@ requires explicit authorization from the user.
 
 | I need to... | Read this file |
 |--------------|----------------|
+| **Load transcript data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) |
 | Understand the core finding | [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md) |
 | Know what's been ruled out | [CORE/falsifications.md](CORE/falsifications.md) |
 | **Validate A structure (API)** | [STRUCTURAL_CONTRACTS/currierA.casc.yaml](STRUCTURAL_CONTRACTS/currierA.casc.yaml) |
@@ -228,7 +251,7 @@ The manuscript contains three distinct systems sharing a **global morphological 
 |--------|----------|--------|----------|
 | **Currier B** | 61.9% | 83 | Sequential executable programs |
 | **Currier A** | 30.5% | 114 | Non-sequential categorical registry |
-| **AZC** | 7.7% | 30 | Hybrid diagram annotation (labeling) |
+| **AZC** | 8.7% | 30 | Hybrid diagram annotation (labeling) |
 
 - A and B are **FOLIO-DISJOINT** (0 shared folios)
 - A and B are **GRAMMAR-DISJOINT** (different formal systems)
@@ -303,4 +326,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v2.45 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-15*
+*Context System v2.48 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-15*

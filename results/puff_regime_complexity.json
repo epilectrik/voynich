@@ -1,0 +1,81 @@
+{
+  "hypothesis": "Puff materials ordered by B grammar complexity requirements",
+  "tests": {
+    "test1_position_regime": {
+      "rho": 0.6782423203854411,
+      "p_value": 1.8645059143737723e-12,
+      "passed": true
+    },
+    "test2_category_regime": {
+      "kruskal_h": 15.717573623164599,
+      "p_value": 0.0012956330419332063,
+      "passed": true,
+      "category_means": {
+        "FLOWER": 1.7058823529411764,
+        "HERB": 2.7804878048780486,
+        "ROOT": 2.6,
+        "TREE_FLOWER": 2.6,
+        "FUNGUS": 3.5,
+        "ANIMAL": 4.0,
+        "OIL": 4.0
+      }
+    },
+    "test3_dangerous_precision": {
+      "dangerous_n": 5,
+      "dangerous_r4_rate": 0.4,
+      "safe_r4_rate": 0.2948717948717949,
+      "odds_ratio": 1.5942028985507246,
+      "enrichment": 1.328,
+      "p_value": 0.4768664724418581,
+      "passed": false
+    },
+    "test4_cumulative_threshold": {
+      "regime_stats": {
+        "REGIME_2": {
+          "min": 1,
+          "max": 27,
+          "mean": 8.272727272727273,
+          "n": 11
+        },
+        "REGIME_1": {
+          "min": 8,
+          "max": 75,
+          "mean": 38.83870967741935,
+          "n": 31
+        },
+        "REGIME_4": {
+          "min": 10,
+          "max": 73,
+          "mean": 41.4,
+          "n": 25
+        },
+        "REGIME_3": {
+          "min": 49,
+          "max": 83,
+          "mean": 72.25,
+          "n": 16
+        }
+      },
+      "mean_position_rho": 1.0,
+      "passed": true
+    },
+    "test5_position_cei": {
+      "rho": 0.8855117265014785,
+      "p_value": 1.077553104483832e-28,
+      "passed": true
+    }
+  },
+  "negative_control": {
+    "n_permutations": 1000,
+    "test1_percentile": 100.0,
+    "test5_percentile": 100.0,
+    "passed": true
+  },
+  "summary": {
+    "tests_passed": 4,
+    "total_tests": 5,
+    "control_passed": true,
+    "verdict": "PARTIAL SUPPORT",
+    "interpretation": "Model needs refinement"
+  }
+}

@@ -50,7 +50,11 @@ def load_zodiac_tokens_with_position():
         header = f.readline()
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 10:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
                 currier = parts[6].strip('"').strip()
                 if currier == 'NA':  # AZC tokens
                     token = parts[0].strip('"').strip().lower()

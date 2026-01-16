@@ -19,7 +19,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_all_data():
-    """Load all tokens with language designation."""
+    """Load all tokens with language designation (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     data = []
@@ -33,7 +33,12 @@ def load_all_data():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > lang_idx:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[lang_idx].strip('"').strip()
                 if lang in ['A', 'B']:
                     word = parts[word_idx].strip('"').strip().lower()
@@ -352,7 +357,8 @@ def main():
 
     def convert_for_json(obj):
         if isinstance(obj, dict):
-            return {k: convert_for_json(v) for k, v in obj.items()}
+            # Convert tuple keys to strings
+            return {str(k) if isinstance(k, tuple) else k: convert_for_json(v) for k, v in obj.items()}
         elif isinstance(obj, (list, tuple)):
             return [convert_for_json(item) for item in obj]
         elif isinstance(obj, (np.floating, float)):

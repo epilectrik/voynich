@@ -57,7 +57,9 @@ This analysis examined record-internal usage geometry in Currier A using DA-segm
 - ct slightly depleted in FIRST blocks (3.5% vs 5.1% in LAST)
 - ch stable across all positions
 
-These are **mild tendencies** consistent with earlier C250.a findings.
+These are **mild tendencies**.
+
+**Note (2026-01-16):** C250/C250.a (block repetition) was INVALIDATED - the apparent patterns were transcriber artifacts.
 
 ---
 
@@ -185,7 +187,7 @@ These are **soft usage preferences**, not structural rules.
 | 2. Position-in-Block | ch depleted INITIAL, qo enriched INITIAL | Descriptive |
 | 3. Block Similarity | No coordinate-based vocabulary clustering | Null |
 | 4. Rare-Item Placement | Rare items cluster in simple entries | Descriptive |
-| 5. Complexity Gradient | FRONT-HEAVY (modest, ratio 1.25) | Confirms C250.a |
+| 5. Complexity Gradient | FRONT-HEAVY (modest, ratio 1.25) | Descriptive |
 
 ---
 
@@ -206,10 +208,12 @@ These are **soft usage preferences**, not structural rules.
 
 | Constraint | Status |
 |------------|--------|
-| C250 (64.1% repetition) | UNCHANGED |
-| C250.a (block-aligned repetition) | CONFIRMED by similarity patterns |
+| ~~C250 (64.1% repetition)~~ | **INVALIDATED** (2026-01-16) - transcriber artifact |
+| ~~C250.a (block-aligned repetition)~~ | **INVALIDATED** - depends on C250 |
 | C422 (DA articulation) | LEVERAGED as block boundary |
 | C234 (POSITION_FREE) | CONFIRMED - no positional illegality found |
+
+**Note:** C250 and C250.a were invalidated when the transcriber filtering bug was discovered. The apparent 64.1% block repetition was caused by interleaved readings from multiple transcribers, not actual repetition in the manuscript.
 
 ---
 

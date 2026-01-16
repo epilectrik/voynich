@@ -1,0 +1,304 @@
+{
+  "test": "MIDDLE_UNIVERSALITY",
+  "question": "How many MIDDLEs are unique vs universal per B folio?",
+  "global_distribution": {
+    "total_middles": 2519,
+    "UNIQUE": 1743,
+    "RARE": 504,
+    "COMMON": 191,
+    "UNIVERSAL": 81
+  },
+  "per_folio_stats": {
+    "unique_count": {
+      "min": 2,
+      "max": 59,
+      "mean": 21,
+      "median": 19
+    },
+    "unique_pct": {
+      "min": 3.7735849056603774,
+      "max": 32.0,
+      "mean": 18.78456749105886
+    },
+    "universal_count": {
+      "min": 19,
+      "max": 62,
+      "mean": 41.734939759036145,
+      "median": 44
+    },
+    "universal_pct": {
+      "min": 25.757575757575758,
+      "max": 79.48717948717949,
+      "mean": 44.18108051063275
+    }
+  },
+  "top_universal_middles": [
+    [
+      "e",
+      83
+    ],
+    [
+      "a",
+      83
+    ],
+    [
+      "i",
+      83
+    ],
+    [
+      "k",
+      83
+    ],
+    [
+      "d",
+      82
+    ],
+    [
+      "t",
+      82
+    ],
+    [
+      "o",
+      81
+    ],
+    [
+      "r",
+      81
+    ],
+    [
+      "ee",
+      77
+    ],
+    [
+      "l",
+      77
+    ],
+    [
+      "ckh",
+      77
+    ],
+    [
+      "y",
+      76
+    ],
+    [
+      "ch",
+      73
+    ],
+    [
+      "kch",
+      67
+    ],
+    [
+      "ai",
+      67
+    ],
+    [
+      "eo",
+      62
+    ],
+    [
+      "kee",
+      62
+    ],
+    [
+      "che",
+      61
+    ],
+    [
+      "or",
+      60
+    ],
+    [
+      "ke",
+      58
+    ]
+  ],
+  "folio_details": {
+    "f85v2": {
+      "total": 100,
+      "UNIQUE": 32,
+      "RARE": 18,
+      "COMMON": 18,
+      "UNIVERSAL": 32,
+      "pct_unique": 32.0,
+      "pct_universal": 32.0
+    },
+    "f105v": {
+      "total": 169,
+      "UNIQUE": 52,
+      "RARE": 32,
+      "COMMON": 36,
+      "UNIVERSAL": 49,
+      "pct_unique": 30.76923076923077,
+      "pct_universal": 28.994082840236686
+    },
+    "f106v": {
+      "total": 198,
+      "UNIQUE": 59,
+      "RARE": 41,
+      "COMMON": 47,
+      "UNIVERSAL": 51,
+      "pct_unique": 29.7979797979798,
+      "pct_universal": 25.757575757575758
+    },
+    "f114r": {
+      "total": 185,
+      "UNIQUE": 55,
+      "RARE": 30,
+      "COMMON": 52,
+      "UNIVERSAL": 48,
+      "pct_unique": 29.72972972972973,
+      "pct_universal": 25.945945945945947
+    },
+    "f111r": {
+      "total": 193,
+      "UNIQUE": 55,
+      "RARE": 30,
+      "COMMON": 47,
+      "UNIVERSAL": 61,
+      "pct_unique": 28.497409326424872,
+      "pct_universal": 31.60621761658031
+    },
+    "f111v": {
+      "total": 182,
+      "UNIQUE": 51,
+      "RARE": 32,
+      "COMMON": 42,
+      "UNIVERSAL": 57,
+      "pct_unique": 28.021978021978022,
+      "pct_universal": 31.318681318681318
+    },
+    "f46v": {
+      "total": 63,
+      "UNIQUE": 17,
+      "RARE": 9,
+      "COMMON": 10,
+      "UNIVERSAL": 27,
+      "pct_unique": 26.984126984126984,
+      "pct_universal": 42.857142857142854
+    },
+    "f112r": {
+      "total": 143,
+      "UNIQUE": 38,
+      "RARE": 20,
+      "COMMON": 30,
+      "UNIVERSAL": 55,
+      "pct_unique": 26.573426573426573,
+      "pct_universal": 38.46153846153846
+    },
+    "f108v": {
+      "total": 149,
+      "UNIQUE": 39,
+      "RARE": 18,
+      "COMMON": 35,
+      "UNIVERSAL": 57,
+      "pct_unique": 26.174496644295303,
+      "pct_universal": 38.25503355704698
+    },
+    "f43v": {
+      "total": 88,
+      "UNIQUE": 23,
+      "RARE": 6,
+      "COMMON": 21,
+      "UNIVERSAL": 38,
+      "pct_unique": 26.136363636363637,
+      "pct_universal": 43.18181818181818
+    },
+    "f107r": {
+      "total": 173,
+      "UNIQUE": 45,
+      "RARE": 35,
+      "COMMON": 38,
+      "UNIVERSAL": 55,
+      "pct_unique": 26.01156069364162,
+      "pct_universal": 31.791907514450866
+    },
+    "f113r": {
+      "total": 191,
+      "UNIQUE": 48,
+      "RARE": 35,
+      "COMMON": 49,
+      "UNIVERSAL": 59,
+      "pct_unique": 25.130890052356023,
+      "pct_universal": 30.89005235602094
+    },
+    "f86v4": {
+      "total": 104,
+      "UNIQUE": 26,
+      "RARE": 12,
+      "COMMON": 28,
+      "UNIVERSAL": 38,
+      "pct_unique": 25.0,
+      "pct_universal": 36.53846153846154
+    },
+    "f107v": {
+      "total": 136,
+      "UNIQUE": 34,
+      "RARE": 24,
+      "COMMON": 27,
+      "UNIVERSAL": 51,
+      "pct_unique": 25.0,
+      "pct_universal": 37.5
+    },
+    "f41r": {
+      "total": 73,
+      "UNIQUE": 18,
+      "RARE": 8,
+      "COMMON": 16,
+      "UNIVERSAL": 31,
+      "pct_unique": 24.65753424657534,
+      "pct_universal": 42.465753424657535
+    },
+    "f82v": {
+      "total": 118,
+      "UNIQUE": 29,
+      "RARE": 20,
+      "COMMON": 22,
+      "UNIVERSAL": 47,
+      "pct_unique": 24.576271186440678,
+      "pct_universal": 39.83050847457627
+    },
+    "f80r": {
+      "total": 139,
+      "UNIQUE": 34,
+      "RARE": 19,
+      "COMMON": 36,
+      "UNIVERSAL": 50,
+      "pct_unique": 24.46043165467626,
+      "pct_universal": 35.97122302158273
+    },
+    "f57r": {
+      "total": 83,
+      "UNIQUE": 20,
+      "RARE": 18,
+      "COMMON": 15,
+      "UNIVERSAL": 30,
+      "pct_unique": 24.096385542168676,
+      "pct_universal": 36.144578313253014
+    },
+    "f78r": {
+      "total": 92,
+      "UNIQUE": 22,
+      "RARE": 14,
+      "COMMON": 20,
+      "UNIVERSAL": 36,
+      "pct_unique": 23.91304347826087,
+      "pct_universal": 39.130434782608695
+    },
+    "f31r": {
+      "total": 55,
+      "UNIQUE": 13,
+      "RARE": 4,
+      "COMMON": 10,
+      "UNIVERSAL": 28,
+      "pct_unique": 23.636363636363637,
+      "pct_universal": 50.90909090909091
+    }
+  },
+  "interpretation": {
+    "avg_unique_pct": 18.78456749105886,
+    "avg_universal_pct": 44.18108051063275,
+    "model_supported": false
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "test": "STABILITY_PERTURBATION",
+  "test_folios": [
+    "f17r",
+    "f32r",
+    "f45v",
+    "f52v",
+    "f90v2",
+    "f99v"
+  ],
+  "n_trials": 10,
+  "baseline_clusters": [
+    [
+      "f32r",
+      "f45v"
+    ],
+    [
+      "f52v",
+      "f99v"
+    ]
+  ],
+  "perturbation_results": [
+    {
+      "perturbation": "tail_removal",
+      "strength": 0.1,
+      "description": "Remove 10% of tail MIDDLEs",
+      "avg_pair_jaccard": 1.0,
+      "avg_survival": 1.0,
+      "stable": true
+    },
+    {
+      "perturbation": "tail_removal",
+      "strength": 0.2,
+      "description": "Remove 20% of tail MIDDLEs",
+      "avg_pair_jaccard": 1.0,
+      "avg_survival": 1.0,
+      "stable": true
+    },
+    {
+      "perturbation": "hub_downweight",
+      "strength": 0.3,
+      "description": "Downweight hubs by 30%",
+      "avg_pair_jaccard": 1.0,
+      "avg_survival": 1.0,
+      "stable": true
+    },
+    {
+      "perturbation": "hub_downweight",
+      "strength": 0.5,
+      "description": "Downweight hubs by 50%",
+      "avg_pair_jaccard": 1.0,
+      "avg_survival": 1.0,
+      "stable": true
+    },
+    {
+      "perturbation": "random_removal",
+      "strength": 0.1,
+      "description": "Remove 10% random MIDDLEs",
+      "avg_pair_jaccard": 0.6833333333333333,
+      "avg_survival": 0.75,
+      "stable": false
+    },
+    {
+      "perturbation": "random_removal",
+      "strength": 0.2,
+      "description": "Remove 20% random MIDDLEs",
+      "avg_pair_jaccard": 0.26666666666666666,
+      "avg_survival": 0.3,
+      "stable": false
+    }
+  ],
+  "stable_count": 4,
+  "total_tests": 6,
+  "verdict": "PARTIALLY STABLE",
+  "interpretation": "Some fragility detected. Clusters may have data-dependent elements."
+}

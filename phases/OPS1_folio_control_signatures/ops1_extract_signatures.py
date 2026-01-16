@@ -82,7 +82,7 @@ def load_hazard_inventory():
 
 
 def load_transcription_by_folio():
-    """Load transcription data and group by folio."""
+    """Load transcription data and group by folio (PRIMARY transcriber H only)."""
     folio_tokens = defaultdict(list)
 
     with open(TRANSCRIPTION_PATH, 'r', encoding='utf-8') as f:
@@ -90,7 +90,11 @@ def load_transcription_by_folio():
             if line.startswith('#') or not line.strip():
                 continue
             parts = line.strip().split('\t')
-            if len(parts) < 3:
+            if len(parts) < 13:
+                continue
+            # Filter to PRIMARY transcriber (H) only - column 12
+            transcriber = parts[12].strip('"')
+            if transcriber != 'H':
                 continue
             word = parts[0]
             folio = parts[2]

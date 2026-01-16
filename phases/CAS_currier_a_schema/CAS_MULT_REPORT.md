@@ -1,17 +1,27 @@
 # Phase CAS-MULT: Multiplicity Encoding in Currier A
 
 **Phase ID:** CAS-MULT
-**Tier:** 2 (STRUCTURAL INFERENCE)
-**Status:** COMPLETE
+**Tier:** 1 (FALSIFIED)
+**Status:** **INVALIDATED** (2026-01-16)
 **Date:** 2026-01-06
 
 ---
 
-## Executive Summary
+> ## **WARNING: THIS PHASE IS INVALIDATED**
+>
+> The "64.1% block repetition" pattern discovered in this phase was a **transcriber artifact**. When filtered to PRIMARY transcriber (H) only, block repetition is **0%**.
+>
+> The apparent `[BLOCK] × N` pattern was caused by interleaved readings from multiple transcribers (H, F, C, U, V, etc.) being loaded together. Each transcriber's reading of the same token appeared as a separate row, creating false repetition patterns.
+>
+> **All findings and constraints from this phase (C250-C266) are INVALIDATED.** See TRANSCRIBER_REVIEW.md for details.
 
-> **Currier A records categorical entities where multiplicity is encoded by literal repetition of a unit block, without abstraction, aggregation, or execution.**
+---
 
-This phase discovered that 64.1% of Currier A entries exhibit a **repeating block structure** of the form `[BLOCK] × N`, where the repetition itself encodes multiplicity. This is **enumerative instantiation**, not numeric counting.
+## ~~Executive Summary~~ INVALIDATED
+
+~~> **Currier A records categorical entities where multiplicity is encoded by literal repetition of a unit block, without abstraction, aggregation, or execution.**~~
+
+~~This phase discovered that 64.1% of Currier A entries exhibit a **repeating block structure** of the form `[BLOCK] × N`, where the repetition itself encodes multiplicity. This is **enumerative instantiation**, not numeric counting.~~
 
 ---
 

@@ -1,0 +1,108 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "test": "T2_CATEGORY_PROPORTION",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "hypothesis": "Puff FLOWER+AROMATIC proportion matches A ENERGY proportion",
+  "puff_categories": {
+    "total_chapters": 85,
+    "categories": {
+      "FLOWER": 17,
+      "HERB": 42,
+      "TREE_FLOWER": 5,
+      "FERN": 1,
+      "SUCCULENT": 1,
+      "BULB": 1,
+      "VEGETABLE": 1,
+      "ROOT": 5,
+      "FRUIT": 1,
+      "SHRUB": 1,
+      "FUNGUS": 2,
+      "PARASITE": 1,
+      "TREE_LEAF": 1,
+      "VINE": 1,
+      "ANIMAL": 1,
+      "OIL": 1,
+      "LEGUME_FLOWER": 1,
+      "BERRY": 1,
+      "SPIRIT": 1
+    },
+    "percentages": {
+      "FLOWER": 0.2,
+      "HERB": 0.494,
+      "TREE_FLOWER": 0.059,
+      "FERN": 0.012,
+      "SUCCULENT": 0.012,
+      "BULB": 0.012,
+      "VEGETABLE": 0.012,
+      "ROOT": 0.059,
+      "FRUIT": 0.012,
+      "SHRUB": 0.012,
+      "FUNGUS": 0.024,
+      "PARASITE": 0.012,
+      "TREE_LEAF": 0.012,
+      "VINE": 0.012,
+      "ANIMAL": 0.012,
+      "OIL": 0.012,
+      "LEGUME_FLOWER": 0.012,
+      "BERRY": 0.012,
+      "SPIRIT": 0.012
+    },
+    "flower_count": 23,
+    "flower_pct": 0.271,
+    "aromatic_count": 16,
+    "aromatic_pct": 0.188,
+    "dangerous_count": 5,
+    "dangerous_pct": 0.059,
+    "combined_flower_aromatic_pct": 0.459
+  },
+  "a_sections": {
+    "total_tokens": 23442,
+    "section_h_tokens": 16857,
+    "section_h_pct": 0.719,
+    "total_energy_tokens": 13933,
+    "energy_pct": 0.594,
+    "section_h_energy_tokens": 10273,
+    "section_h_energy_concentration": 0.737
+  },
+  "proportion_results": {
+    "comparisons": {
+      "volatile_vs_energy": {
+        "puff": 0.459,
+        "a": 0.594,
+        "diff": 0.135,
+        "aligned": true
+      },
+      "volatile_vs_section_h_energy": {
+        "puff": 0.459,
+        "a": 0.737,
+        "diff": 0.278,
+        "aligned": false
+      },
+      "flower_vs_section_h": {
+        "puff": 0.271,
+        "a": 0.719,
+        "diff": 0.448,
+        "aligned": false
+      },
+      "front_concentration": {
+        "puff_front_flower": 1.0,
+        "section_h_energy_conc": 0.737,
+        "interpretation": "Both concentrate volatiles: Puff 100% in front, Section H 73.7%"
+      }
+    },
+    "any_aligned": true,
+    "best_match": [
+      "volatile_vs_energy",
+      0.135
+    ]
+  },
+  "best_match": {
+    "comparison": "volatile_vs_energy",
+    "difference": 0.135
+  },
+  "passed": true,
+  "conclusion": "Category proportions ALIGNED",
+  "interpretation": "[TIER 4] Best alignment: volatile_vs_energy with 13.5% difference. Puff volatile% vs A ENERGY% is closest (13.5% diff). Both systems allocate ~45-60% to phase-sensitive materials."
+}

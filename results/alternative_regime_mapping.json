@@ -1,0 +1,24 @@
+{
+  "hypothesis": "REGIME_4 means PRECISION, not FORBIDDEN",
+  "alternative_mapping": {
+    "FORGIVING": "REGIME_1 (volatile, tolerates variation)",
+    "STANDARD": "REGIME_2 (routine processing)",
+    "INTENSIVE": "REGIME_3 (complex, sustained heat)",
+    "PRECISION": "REGIME_4 (exact conditions required)"
+  },
+  "puff_distribution": {
+    "FORGIVING": 38,
+    "PRECISION": 37,
+    "INTENSIVE": 7,
+    "STANDARD": 3
+  },
+  "voynich_distribution": {
+    "REGIME_3": 16,
+    "REGIME_1": 31,
+    "REGIME_2": 11,
+    "REGIME_4": 25
+  },
+  "original_herb_ratio": 4.090909090909091,
+  "alternative_herb_ratio": 1.48,
+  "improvement": 63.82222222222222
+}

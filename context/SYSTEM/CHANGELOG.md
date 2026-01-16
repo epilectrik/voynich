@@ -4,6 +4,110 @@
 
 ---
 
+## Version 2.48 (2026-01-15) - A/C INTERNAL CHARACTERIZATION (PARTIAL SIGNAL)
+
+### Summary
+
+Following expert guidance, tested whether A/C AZC folios differ from Zodiac via **internal operator-centric metrics** rather than product correlation.
+
+**Key Finding:** A/C has **45% higher MIDDLE incompatibility density** than Zodiac (p=0.0006).
+
+### The Question (Expert-Framed)
+
+> "A/C scaffold diversity (consistency=0.340) reflects what discrimination burden?"
+
+Expert hypothesis:
+- Zodiac = sustained legality flow under coarse discrimination
+- A/C = punctuated legality checkpoints under fine discrimination
+
+### Three Probes Tested
+
+| Probe | Prediction | Result | P-value |
+|-------|------------|--------|---------|
+| HT Phase-Reset | A/C > Zodiac | NO SIGNAL | 1.00 |
+| MIDDLE Incompatibility | A/C > Zodiac | **STRONG SIGNAL** | **0.0006** |
+| Zone-Transition | A/C > Zodiac | NO SIGNAL | 0.9999 |
+
+### Key Results
+
+**MIDDLE Incompatibility Density:**
+- A/C mean: **0.5488**
+- Zodiac mean: **0.3799**
+- Difference: +45% (highly significant)
+
+**Zone-Transition (unexpected):**
+- Zodiac switches zones MORE (0.018 vs 0.004)
+- A/C achieves higher incompatibility while staying WITHIN zones
+
+### Conclusion
+
+> **A/C folios manage fine-discrimination through higher MIDDLE incompatibility density, not through zone switching. They hold more mutually exclusive constraints simultaneously while maintaining positional stability.**
+
+This validates the expert's framing and explains C430 (A/C scaffold diversity).
+
+### Documentation
+
+| Entry | Type | Result |
+|-------|------|--------|
+| F-AZC-019 | FIT (F2) | SUCCESS (p=0.0006) |
+
+### Phase
+
+`phases/AC_INTERNAL_CHARACTERIZATION/`
+
+---
+
+## Version 2.47 (2026-01-15) - AZC INTERNAL STRATIFICATION (BOTH FAMILIES FALSIFIED)
+
+### Summary
+
+Tested whether AZC folios (both Zodiac and A/C families) realize different sub-regions of the legality manifold correlated with downstream product inference.
+
+**Result: BOTH FAMILIES FALSIFIED** — AZC is uniformly product-agnostic.
+
+### The Question (Corrected Framing)
+
+> "Do different AZC folios preferentially admit different regions of Currier-A incompatibility space, and do those regions align with downstream B-inferred product families?"
+
+**Note:** This is NOT "product routing through gates." AZC filters constraint bundles; product types are downstream inferences.
+
+### Key Results
+
+| Family | Chi-squared | df | P-value | Verdict |
+|--------|-------------|-----|---------|---------|
+| Zodiac (13 folios) | 27.32 | 36 | **0.85** | NO STRATIFICATION |
+| A/C (17 folios) | 46.67 | 42 | **0.29** | NO STRATIFICATION |
+
+Both families show near-maximum distribution entropy for all products.
+
+### Conclusion
+
+> **AZC is uniformly product-agnostic. Neither Zodiac nor A/C families show internal stratification correlated with downstream product inference.**
+
+- Zodiac multiplicity exists purely for coverage optimality
+- A/C scaffold diversity (consistency=0.340) does NOT correlate with product types
+
+This closes the door definitively on the stratification hypothesis for ALL AZC folios.
+
+### Implications
+
+1. AZC folios ARE structurally equivalent gates (validates C431, C430)
+2. No hidden routing — product differentiation is NOT encoded at ANY AZC level
+3. AZC folio diversity exists for coverage, not semantic stratification
+
+### Documentation
+
+| Entry | Type | Result |
+|-------|------|--------|
+| F-AZC-017 | FIT (F4) | FALSIFIED (Zodiac p=0.85) |
+| F-AZC-018 | FIT (F4) | FALSIFIED (A/C p=0.29) |
+
+### Phase
+
+`phases/AZC_ZODIAC_INTERNAL_STRATIFICATION/`
+
+---
+
 ## Version 2.45 (2026-01-15) - PROJECTION SPECS + EPISTEMIC LAYERS
 
 ### Summary

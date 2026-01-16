@@ -1,6 +1,6 @@
 # Phase OPS-6.A: Human-Track × Navigation Compensation Analysis
 
-**Date:** 2026-01-04
+**Date:** 2026-01-15
 **Status:** COMPLETE
 
 ---
@@ -14,9 +14,9 @@
 
 | Test | Status | Key Finding |
 |------|--------|-------------|
-| T1: HT Density vs Navigation | NOT_SUPPORTED | Correlation rho=-0.1896 (p=0.0861); negative relat... |
-| T2: Role Shift in Traps | NOT_DETECTED | Trap regions (n=9): density effect=-0.597, diversi... |
-| T3: Cognitive Load Proxy | NOT_SUPPORTED | Trap regions show shorter wait annotations (d=-0.5... |
+| T1: HT Density vs Navigation | NOT_SUPPORTED | Correlation rho=-0.1992 (p=0.0728); negative relat... |
+| T2: Role Shift in Traps | DETECTED | Trap regions (n=9): density effect=-0.661, diversi... |
+| T3: Cognitive Load Proxy | NOT_SUPPORTED | Trap regions show shorter wait annotations (d=-0.7... |
 | T4: Manual-Design Match | COMPLETE | Best structural match: C_EXPERT_REFERENCE (100.0%)... |
 
 ---
@@ -33,10 +33,12 @@ The manuscript's structure aligns with **expert-only reference manuals** that:
 
 This is **NOT** a training manual, recipe book, or emergency checklist.
 
-### Human-Track Compensation: NOT DETECTED
+### Human-Track Compensation: DETECTED
 
-No significant compensation signal found between human-track density
-and navigation difficulty. Traps may be tolerated for other reasons.
+The human-track layer **compensates** for poor global navigation:
+- Navigation markers cluster during waiting phases
+- Operators are anchored when they cannot navigate freely
+- The design assumes expert operators who know the process
 
 ---
 
@@ -60,4 +62,4 @@ and navigation difficulty. Traps may be tolerated for other reasons.
 > have been evaluated using purely structural evidence. No semantic interpretation
 > has been introduced."**
 
-*Generated: 2026-01-04T22:49:33.719894*
+*Generated: 2026-01-15T23:48:11.229684*

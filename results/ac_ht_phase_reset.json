@@ -1,0 +1,258 @@
+{
+  "probe": "AC_HT_PHASE_RESET_FREQUENCY",
+  "question": "Do A/C folios force more frequent HT phase transitions than Zodiac?",
+  "prediction": "A/C > Zodiac (fine discrimination requires more attention resets)",
+  "method": {
+    "ht_early_prefixes": [
+      "op",
+      "pc",
+      "do"
+    ],
+    "ht_late_prefixes": [
+      "ta"
+    ],
+    "metric": "transitions per token"
+  },
+  "summary": {
+    "zodiac_folios": 13,
+    "ac_folios": 15,
+    "zodiac_mean_rate": 0.0,
+    "ac_mean_rate": 0.0,
+    "zodiac_std": 0.0,
+    "ac_std": 0.0
+  },
+  "statistical_test": {
+    "test": "Mann-Whitney U (one-sided, A/C > Zodiac)",
+    "u_statistic": 97.5,
+    "p_value": 1.0,
+    "effect_size_r": 0.0
+  },
+  "verdict": "NO SIGNAL",
+  "interpretation": "A/C and Zodiac show similar HT phase-reset frequencies",
+  "folio_details": {
+    "f57v": {
+      "total_tokens": 411,
+      "ht_classified": 8,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f65v": {
+      "total_tokens": 121,
+      "ht_classified": 0,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f67r1": {
+      "total_tokens": 412,
+      "ht_classified": 2,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f67r2": {
+      "total_tokens": 596,
+      "ht_classified": 18,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f67v2": {
+      "total_tokens": 209,
+      "ht_classified": 8,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f67v1": {
+      "total_tokens": 213,
+      "ht_classified": 8,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68r1": {
+      "total_tokens": 224,
+      "ht_classified": 7,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68r2": {
+      "total_tokens": 302,
+      "ht_classified": 14,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68r3": {
+      "total_tokens": 296,
+      "ht_classified": 19,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68v3": {
+      "total_tokens": 512,
+      "ht_classified": 7,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68v2": {
+      "total_tokens": 389,
+      "ht_classified": 4,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68v1": {
+      "total_tokens": 283,
+      "ht_classified": 7,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f69r": {
+      "total_tokens": 500,
+      "ht_classified": 11,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f69v": {
+      "total_tokens": 407,
+      "ht_classified": 5,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f70r1": {
+      "total_tokens": 320,
+      "ht_classified": 10,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f70r2": {
+      "total_tokens": 815,
+      "ht_classified": 23,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f70v2": {
+      "total_tokens": 516,
+      "ht_classified": 16,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f70v1": {
+      "total_tokens": 222,
+      "ht_classified": 9,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f71r": {
+      "total_tokens": 197,
+      "ht_classified": 2,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f71v": {
+      "total_tokens": 231,
+      "ht_classified": 10,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72r1": {
+      "total_tokens": 233,
+      "ht_classified": 1,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72r2": {
+      "total_tokens": 237,
+      "ht_classified": 0,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72r3": {
+      "total_tokens": 273,
+      "ht_classified": 9,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72v3": {
+      "total_tokens": 235,
+      "ht_classified": 1,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72v2": {
+      "total_tokens": 222,
+      "ht_classified": 8,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72v1": {
+      "total_tokens": 186,
+      "ht_classified": 6,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f73r": {
+      "total_tokens": 189,
+      "ht_classified": 5,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f73v": {
+      "total_tokens": 216,
+      "ht_classified": 6,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    }
+  }
+}

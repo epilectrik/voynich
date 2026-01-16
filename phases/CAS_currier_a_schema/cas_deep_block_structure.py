@@ -21,7 +21,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_currier_a_lines():
-    """Load Currier A data grouped by line."""
+    """Load Currier A data grouped by line (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     lines = defaultdict(lambda: {'tokens': [], 'section': '', 'folio': ''})
@@ -31,7 +31,12 @@ def load_currier_a_lines():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()
@@ -145,6 +150,16 @@ def test_1_1_token_pair_frequency(entries):
     print(f"\nTotal bigrams in blocks: {total_bigrams}")
     print(f"Unique bigrams: {len(bigram_counts)}")
 
+    if total_bigrams == 0:
+        print("\nNo blocks found - block analysis not applicable with H-only data.")
+        return {
+            'total_bigrams': 0,
+            'unique_bigrams': 0,
+            'top_10_pct': 0,
+            'verdict': 'NO_BLOCKS',
+            'top_bigrams': []
+        }
+
     print(f"\nTop 20 most common bigrams:")
     for bigram, count in bigram_counts.most_common(20):
         pct = 100 * count / total_bigrams
@@ -199,9 +214,13 @@ def test_1_2_block_template_clustering(entries):
     print(f"Feature matrix shape: {vectors.shape}")
 
     # Only cluster if we have enough entries
+    if len(vectors) == 0:
+        print("\nNo blocks found - block analysis not applicable with H-only data.")
+        return {'vocab_size': 0, 'n_entries': 0, 'verdict': 'NO_BLOCKS'}
+
     if len(vectors) < 10:
         print("Not enough entries for clustering")
-        return {'verdict': 'INSUFFICIENT_DATA'}
+        return {'vocab_size': len(vocab), 'n_entries': len(entries), 'verdict': 'INSUFFICIENT_DATA'}
 
     # Normalize vectors
     norms = np.linalg.norm(vectors, axis=1, keepdims=True)
@@ -281,6 +300,16 @@ def test_1_3_first_last_patterns(entries):
     print("T1.3: FIRST/LAST TOKEN PATTERNS WITHIN BLOCKS")
     print("=" * 70)
 
+    if len(entries) == 0:
+        print("\nNo blocks found - block analysis not applicable with H-only data.")
+        return {
+            'first_tokens_unique': 0,
+            'last_tokens_unique': 0,
+            'first_marker_pct': 0,
+            'last_marker_pct': 0,
+            'verdict': 'NO_BLOCKS'
+        }
+
     first_tokens = Counter()
     last_tokens = Counter()
     first_prefixes = Counter()
@@ -349,6 +378,16 @@ def test_1_4_vocabulary_diversity(entries):
     print("\n" + "=" * 70)
     print("T1.4: BLOCK VOCABULARY DIVERSITY BY MARKER")
     print("=" * 70)
+
+    if len(entries) == 0:
+        print("\nNo blocks found - block analysis not applicable with H-only data.")
+        return {
+            'total_tokens': 0,
+            'unique_types': 0,
+            'ttr': 0,
+            'verdict': 'NO_BLOCKS',
+            'marker_vocab_sizes': {}
+        }
 
     marker_vocab = defaultdict(set)
     marker_counts = Counter()

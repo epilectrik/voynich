@@ -1,0 +1,33 @@
+{
+  "test": "MATERIAL_GRANULARITY",
+  "a_register_counts": {
+    "WATER_STANDARD": 66,
+    "PRECISION": 20,
+    "OIL_RESIN": 17,
+    "WATER_GENTLE": 6
+  },
+  "brunschwig_counts": {
+    "WATER_GENTLE": {
+      "individual": 10,
+      "classes": 3
+    },
+    "WATER_STANDARD": {
+      "individual": 18,
+      "classes": 5
+    },
+    "OIL_RESIN": {
+      "individual": 12,
+      "classes": 4
+    },
+    "PRECISION": {
+      "individual": 6,
+      "classes": 3
+    }
+  },
+  "ratios": {
+    "avg_a_to_individual": 2.254166666666667,
+    "avg_a_to_class": 6.529166666666667
+  },
+  "verdict": "INDIVIDUAL-LEVEL",
+  "interpretation": "A registers specify individual materials"
+}

@@ -43,7 +43,7 @@ Currier A functions as a non-sequential categorical registry - analogous to a pa
 
 - C229 - A is DISJOINT from B grammar
 - C233-239 - Defining property details
-- C250 - 64.1% show multiplicity encoding
+- C267 - Compositional morphology (897 combinations)
 
 ---
 

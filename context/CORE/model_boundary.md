@@ -24,11 +24,10 @@
 |-------|---------|----------|
 | **Non-sequential registry** | Categorical entries, not executable programs | Phase CAS |
 | **Marker system** | 8+ mutually exclusive prefix families | Phase CAS |
-| **Multiplicity encoding** | Literal repetition (64.1% show `[BLOCK] × N`) | Phase CAS-MULT |
 | **Compositional morphology** | PREFIX + MIDDLE + SUFFIX structure | Phase CAS-MORPH |
-| **Section isolation** | 100% section-exclusive blocks | Phase CAS-DEEP |
+| **Section isolation** | 100% section-exclusive vocabulary | Phase CAS-DEEP |
 
-### AZC (7.7% of tokens, 30 folios)
+### AZC (8.7% of tokens, 30 folios)
 
 | Layer | Content | Evidence |
 |-------|---------|----------|

@@ -40,6 +40,9 @@ def load_transcription():
     with open(TRANSCRIPTION, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t', quotechar='"')
         for row in reader:
+            # Filter to PRIMARY transcriber (H) only
+            if row.get('transcriber', '').strip().strip('"') != 'H':
+                continue
             rows.append(row)
     return rows
 

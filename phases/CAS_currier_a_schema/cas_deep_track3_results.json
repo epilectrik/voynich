@@ -1,91 +1,15 @@
 {
   "t3_1": {
-    "contingency": {
-      "2": {
-        "sh": 72,
-        "da": 44,
-        "ol": 22,
-        "ch": 96,
-        "qo": 87,
-        "ot": 36,
-        "ct": 15,
-        "ok": 28
-      },
-      "3": {
-        "sh": 87,
-        "ch": 97,
-        "da": 46,
-        "qo": 98,
-        "ot": 21,
-        "ok": 34,
-        "ct": 22,
-        "ol": 13
-      },
-      "4": {
-        "sh": 31,
-        "ot": 13,
-        "ch": 42,
-        "ok": 13,
-        "qo": 24,
-        "ol": 3,
-        "da": 15,
-        "ct": 3
-      },
-      "5+": {
-        "sh": 4,
-        "da": 4,
-        "ok": 1,
-        "ot": 1,
-        "ch": 4,
-        "qo": 3,
-        "ct": 3,
-        "ol": 2
-      }
-    },
-    "verdict": "INSUFFICIENT_DATA"
+    "verdict": "NO_BLOCKS"
   },
   "t3_2": {
-    "contingency": {
-      "2": {
-        "T": 44,
-        "H": 313,
-        "P": 59
-      },
-      "3": {
-        "T": 3,
-        "H": 379,
-        "P": 42
-      },
-      "4": {
-        "T": 1,
-        "H": 144,
-        "P": 3
-      },
-      "5+": {
-        "T": 10,
-        "H": 13,
-        "P": 2
-      }
-    },
-    "verdict": "SECTION_DEPENDENT"
+    "verdict": "NO_BLOCKS"
   },
   "t3_3": {
-    "correlation": 0.24780375669762275,
-    "p_value": 1.2200474809277687e-15,
-    "verdict": "HIGHER_COMPLEX"
+    "verdict": "NO_BLOCKS"
   },
   "t3_4": {
-    "distribution": {
-      "2": 416,
-      "5": 20,
-      "6": 5,
-      "4": 148,
-      "3": 424
-    },
-    "mean": 2.7897334649555776,
-    "median": 3.0,
-    "mode": 3,
-    "ratio_2_3": 0.9811320754716981,
-    "verdict": "SMALL_BALANCED"
-  }
+    "verdict": "NO_BLOCKS"
+  },
+  "note": "Block repetition was artifact of transcriber interleaving; 0% with H-only"
 }

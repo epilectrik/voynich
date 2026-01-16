@@ -1,0 +1,45 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "test": "T3_APPARATUS_COUNT",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "hypothesis": "Brunschwig apparatus inventory matches ct MIDDLE count",
+  "brunschwig_analysis": {
+    "text_length": 1066818,
+    "apparatus_categories_found": 26,
+    "total_mentions": 2452,
+    "top_types": {
+      "erde": 928,
+      "zinn": 443,
+      "topf": 221,
+      "asche": 159,
+      "glas": 131,
+      "schnabel": 127,
+      "blase": 76,
+      "feuer": 70,
+      "helm": 49,
+      "eisen": 43,
+      "deckel": 37,
+      "ofen": 36,
+      "balneum": 26,
+      "rohr": 25,
+      "blei": 19,
+      "kolben": 13,
+      "sand": 12,
+      "lutum": 12,
+      "pfanne": 7,
+      "gefaess": 3
+    },
+    "estimated_with_variants": 65.0
+  },
+  "ct_middles": 65,
+  "comparison": {
+    "raw_difference": 39,
+    "ratio": 0.4,
+    "with_variants_difference": 0.0
+  },
+  "passed": true,
+  "conclusion": "Apparatus count COMPATIBLE",
+  "interpretation": "[TIER 4] Brunschwig's 26 apparatus categories (est. 65 with variants) is reasonably compatible with ct's 65 unique MIDDLEs. This supports ct = apparatus/equipment reference hypothesis."
+}

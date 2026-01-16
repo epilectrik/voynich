@@ -1,0 +1,140 @@
+{
+  "test": "AZC_AC_INTERNAL_STRATIFICATION",
+  "question": "Do different A/C AZC folios show product-correlated stratification?",
+  "ac_folios_analyzed": [
+    "f116v",
+    "f65r",
+    "f65v",
+    "f67r1",
+    "f67r2",
+    "f67v1",
+    "f67v2",
+    "f68r1",
+    "f68r2",
+    "f68r3",
+    "f68v1",
+    "f68v2",
+    "f68v3",
+    "f69r",
+    "f69v",
+    "f70r1",
+    "f70r2"
+  ],
+  "active_folios": [
+    "f65v",
+    "f67r1",
+    "f67r2",
+    "f67v1",
+    "f67v2",
+    "f68r1",
+    "f68r2",
+    "f68r3",
+    "f68v1",
+    "f68v2",
+    "f68v3",
+    "f69r",
+    "f69v",
+    "f70r1",
+    "f70r2"
+  ],
+  "products": [
+    "OIL_RESIN",
+    "PRECISION",
+    "WATER_GENTLE",
+    "WATER_STANDARD"
+  ],
+  "exclusive_middle_counts": {
+    "PRECISION": 430,
+    "WATER_GENTLE": 450,
+    "OIL_RESIN": 380,
+    "WATER_STANDARD": 1517
+  },
+  "folio_product_matrix": {
+    "f116v": {},
+    "f65r": {},
+    "f65v": {
+      "WATER_GENTLE": 2,
+      "WATER_STANDARD": 3
+    },
+    "f67r1": {
+      "PRECISION": 2,
+      "WATER_GENTLE": 2,
+      "WATER_STANDARD": 13
+    },
+    "f67r2": {
+      "PRECISION": 5,
+      "WATER_GENTLE": 1,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 8
+    },
+    "f67v1": {
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 2
+    },
+    "f67v2": {
+      "PRECISION": 2,
+      "WATER_STANDARD": 2
+    },
+    "f68r1": {
+      "PRECISION": 2,
+      "WATER_GENTLE": 1,
+      "WATER_STANDARD": 8
+    },
+    "f68r2": {
+      "PRECISION": 2,
+      "WATER_GENTLE": 2,
+      "WATER_STANDARD": 7
+    },
+    "f68r3": {
+      "PRECISION": 2,
+      "WATER_STANDARD": 5
+    },
+    "f68v1": {
+      "PRECISION": 2,
+      "WATER_GENTLE": 4,
+      "WATER_STANDARD": 1
+    },
+    "f68v2": {
+      "PRECISION": 2,
+      "WATER_GENTLE": 1,
+      "WATER_STANDARD": 4
+    },
+    "f68v3": {
+      "PRECISION": 2,
+      "WATER_STANDARD": 6
+    },
+    "f69r": {
+      "PRECISION": 1,
+      "WATER_GENTLE": 2,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 6
+    },
+    "f69v": {
+      "PRECISION": 1,
+      "WATER_STANDARD": 8
+    },
+    "f70r1": {
+      "WATER_GENTLE": 1,
+      "WATER_STANDARD": 4
+    },
+    "f70r2": {
+      "PRECISION": 2,
+      "WATER_GENTLE": 2,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 9
+    }
+  },
+  "distribution_entropies": {
+    "OIL_RESIN": 2.0,
+    "PRECISION": 3.4594705707972517,
+    "WATER_GENTLE": 3.169925001442312,
+    "WATER_STANDARD": 3.685908896696605
+  },
+  "chi_squared": {
+    "statistic": 46.67185039634834,
+    "p_value": 0.2863255564100662,
+    "degrees_of_freedom": 42
+  },
+  "verdict": "NO STRATIFICATION",
+  "interpretation": "A/C folio diversity does NOT correlate with product types"
+}

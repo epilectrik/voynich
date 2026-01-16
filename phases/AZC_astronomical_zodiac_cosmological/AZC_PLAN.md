@@ -9,11 +9,13 @@ During routine audit of Currier A/B coverage, we discovered:
 
 | Classification | Tokens | Percentage |
 |----------------|--------|------------|
-| Currier B | 75,620 | 61.9% |
-| Currier A | 37,214 | 30.5% |
-| **NA (unclassified)** | **9,401** | **7.7%** |
+| Currier B | 23,243 | 61.3% |
+| Currier A | 11,415 | 30.1% |
+| **NA (unclassified)** | **3,299** | **8.7%** |
 
-The 7.7% unclassified tokens are concentrated in:
+**Note (2026-01-16):** Counts corrected after fixing transcriber filtering bug. Values above use PRIMARY (H) transcriber only.
+
+The 8.7% unclassified tokens are concentrated in:
 - Section C (Cosmological): 3,298 tokens
 - Section Z (Zodiac): 3,184 tokens
 - Section A (Astronomical): 2,785 tokens
@@ -78,7 +80,7 @@ AZC has its own distinct structure not explained by A or B.
 ## Analysis Plan
 
 ### Step 1: Token Inventory
-- Extract all 9,401 AZC tokens
+- Extract all 3,299 AZC tokens (H-only)
 - Count unique types
 - Map to folios
 - Calculate basic statistics (TTR, tokens/line)

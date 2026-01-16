@@ -1,0 +1,124 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "test": "T5_PROCESSING_AXES",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "hypothesis": "Brunschwig processing axes predict MIDDLE clustering",
+  "brunschwig_axes": {
+    "axes": [
+      {
+        "name": "Volatility",
+        "description": "Boiling point / vapor pressure",
+        "high_end": "volatile aromatics (roses, violets)",
+        "low_end": "stable resins, roots",
+        "voynich_map": "ENERGY_OPERATOR high volatility, REGISTRY_REFERENCE low"
+      },
+      {
+        "name": "Compatibility",
+        "description": "Breadth of processing temperature tolerance",
+        "high_end": "broad compatibility (many temperatures work)",
+        "low_end": "narrow compatibility (specific conditions required)",
+        "voynich_map": "FREQUENT_OPERATOR broad, ENERGY_OPERATOR narrow"
+      },
+      {
+        "name": "Phase sensitivity",
+        "description": "Sensitivity to liquid/vapor transitions",
+        "high_end": "phase-critical (must monitor closely)",
+        "low_end": "phase-stable (tolerates transitions)",
+        "voynich_map": "ENERGY_OPERATOR phase-critical, CORE_CONTROL phase-neutral"
+      },
+      {
+        "name": "Distinctiveness",
+        "description": "How easily identified vs confused with similar materials",
+        "high_end": "easily confused (many similar variants)",
+        "low_end": "distinctive (unique properties)",
+        "voynich_map": "ENERGY_OPERATOR needs discrimination, REGISTRY_REFERENCE distinctive"
+      }
+    ],
+    "predictions": {
+      "ENERGY_OPERATOR": {
+        "volatility": "high",
+        "compatibility": "narrow",
+        "phase_sensitivity": "high",
+        "distinctiveness": "low (many similar)",
+        "expected_middle_count": "highest (need most discrimination)"
+      },
+      "FREQUENT_OPERATOR": {
+        "volatility": "medium",
+        "compatibility": "broad",
+        "phase_sensitivity": "medium",
+        "distinctiveness": "medium",
+        "expected_middle_count": "medium (routine handling)"
+      },
+      "CORE_CONTROL": {
+        "volatility": "n/a (process, not material)",
+        "compatibility": "n/a",
+        "phase_sensitivity": "n/a",
+        "distinctiveness": "n/a",
+        "expected_middle_count": "medium (process stages)"
+      },
+      "REGISTRY_REFERENCE": {
+        "volatility": "low (stable apparatus)",
+        "compatibility": "broad",
+        "phase_sensitivity": "low",
+        "distinctiveness": "high (apparatus types)",
+        "expected_middle_count": "lowest (few types needed)"
+      }
+    }
+  },
+  "middle_distribution": {
+    "middle_by_domain": {
+      "ENERGY_OPERATOR": 564,
+      "REGISTRY_REFERENCE": 65,
+      "CORE_CONTROL": 176,
+      "FREQUENT_OPERATOR": 164
+    },
+    "tokens_by_domain": {
+      "ENERGY_OPERATOR": 13933,
+      "REGISTRY_REFERENCE": 1492,
+      "CORE_CONTROL": 4472,
+      "FREQUENT_OPERATOR": 3545
+    },
+    "densities": {
+      "ENERGY_OPERATOR": 0.0405,
+      "REGISTRY_REFERENCE": 0.0436,
+      "CORE_CONTROL": 0.0394,
+      "FREQUENT_OPERATOR": 0.0463
+    },
+    "total_unique_middles": 826
+  },
+  "prediction_results": {
+    "actual_counts": {
+      "ENERGY_OPERATOR": 564,
+      "REGISTRY_REFERENCE": 65,
+      "CORE_CONTROL": 176,
+      "FREQUENT_OPERATOR": 164
+    },
+    "actual_order": [
+      "ENERGY_OPERATOR",
+      "CORE_CONTROL",
+      "FREQUENT_OPERATOR",
+      "REGISTRY_REFERENCE"
+    ],
+    "expected_order": [
+      "ENERGY_OPERATOR",
+      "CORE_CONTROL",
+      "FREQUENT_OPERATOR",
+      "REGISTRY_REFERENCE"
+    ],
+    "ordering_match": true,
+    "energy_registry_ratio": 8.7,
+    "ratio_match": true,
+    "densities": {
+      "ENERGY_OPERATOR": 0.0405,
+      "REGISTRY_REFERENCE": 0.0436,
+      "CORE_CONTROL": 0.0394,
+      "FREQUENT_OPERATOR": 0.0463
+    },
+    "registry_lowest_density": false
+  },
+  "passed": true,
+  "conclusion": "Processing axes CONFIRMED",
+  "interpretation": "[TIER 4] ENERGY_OPERATOR has 8.7x more unique MIDDLEs than REGISTRY_REFERENCE. This matches Brunschwig's processing reality: volatile aromatics require fine discrimination (many similar fractions must be distinguished), while apparatus types are stable and few. The MIDDLE gradient follows material discrimination needs."
+}

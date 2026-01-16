@@ -83,11 +83,15 @@ def load_categorized_tokens() -> Set[str]:
 
 
 def load_transcription() -> List[Dict]:
-    """Load transcription data."""
+    """Load transcription data (PRIMARY transcriber H only)."""
     tokens = []
     with open(TRANSCRIPTION_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to PRIMARY transcriber (H) only
+            transcriber = row.get('transcriber', row.get('"transcriber"', '')).strip('"')
+            if transcriber != 'H':
+                continue
             tokens.append({
                 'word': row.get('word', row.get('"word"', '')).strip('"'),
                 'folio': row.get('folio', row.get('"folio"', '')).strip('"'),

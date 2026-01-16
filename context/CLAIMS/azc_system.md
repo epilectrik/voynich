@@ -7,9 +7,10 @@
 
 ## Classification (C300-C305)
 
-### C300 - 9,401 Tokens Unclassified
+### C300 - 3,299 Tokens Unclassified
 **Tier:** 2 | **Status:** CLOSED
-7.7% of corpus (9,401 tokens in 30 folios) never classified by Currier as A or B.
+8.7% of corpus (3,299 tokens in 30 folios) never classified by Currier as A or B.
+**Note:** Corrected 2026-01-15 from 9,401 (all transcribers) to 3,299 (H primary only).
 **Source:** AZC
 
 ### C301 - AZC is HYBRID
@@ -25,9 +26,10 @@ Median 8 tokens/line (vs A=22, B=31). TTR 0.285 (vs A=0.137, B=0.096).
 7.6% LINK density — higher than A (3.0%) and B (6.6%). Most wait-heavy text.
 **Source:** AZC
 
-### C304 - 25.4% Unique Vocabulary
+### C304 - 27.4% Unique Vocabulary
 **Tier:** 2 | **Status:** CLOSED
-1,529 types absent from both A and B.
+903 types absent from both A and B.
+**Note:** Corrected 2026-01-15 from 1,529 (all transcribers) to 903 (H primary only).
 **Source:** AZC
 
 ### C305 - LABELING Signature

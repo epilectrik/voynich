@@ -37,6 +37,9 @@ def load_tokens_by_system(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to PRIMARY transcriber (H) only
+            if row.get('transcriber', '').strip().strip('"') != 'H':
+                continue
             word = row.get('word', '').strip()
             folio = row.get('folio', '').strip()
             language = row.get('language', '').strip()

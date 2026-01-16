@@ -1,0 +1,1456 @@
+{
+  "metadata": {
+    "phase": "20A",
+    "title": "Operator Equivalence Class Detection",
+    "timestamp": "2026-01-15T23:26:30.256247"
+  },
+  "total_tokens_analyzed": 480,
+  "equivalence_classes_found": 49,
+  "compression_ratio": 9.8,
+  "clustering_quality": {
+    "score": 29.0817,
+    "method": "ward_hierarchical"
+  },
+  "classes": [
+    {
+      "class_id": 1,
+      "members": [
+        "okeeody",
+        "okchol",
+        "okeeor",
+        "cthaiin",
+        "ctheey",
+        "olcheey",
+        "otshedy",
+        "otoldy"
+      ],
+      "member_count": 8,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.325,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.17447916666666669,
+        "mean_length": 0.8125
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "okeeody",
+      "total_frequency": 108
+    },
+    {
+      "class_id": 2,
+      "members": [
+        "otaly",
+        "okody",
+        "okees",
+        "okeeo",
+        "otody",
+        "okeo",
+        "okeos",
+        "oteo"
+      ],
+      "member_count": 8,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.39999999999999997,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.24375000000000002,
+        "mean_length": 0.59375
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "otaly",
+      "total_frequency": 121
+    },
+    {
+      "class_id": 3,
+      "members": [
+        "olain",
+        "okeal",
+        "oteor",
+        "olkey",
+        "oteeo",
+        "otcho",
+        "okary",
+        "olar",
+        "otoly"
+      ],
+      "member_count": 9,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000002,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.3333333333333333,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.059490740740740726,
+        "mean_length": 0.6111111111111112
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "olain",
+      "total_frequency": 105
+    },
+    {
+      "class_id": 4,
+      "members": [
+        "ykeody",
+        "lkchedy",
+        "yteody",
+        "ycheol",
+        "dcheey",
+        "ytchor",
+        "ykeeol",
+        "ychedy",
+        "opaiin",
+        "lcheey",
+        "ytchey",
+        "ypchedy",
+        "ykeeody",
+        "pcheol",
+        "rchedy",
+        "pchedar",
+        "fchedy"
+      ],
+      "member_count": 17,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.13002450980392158,
+        "mean_length": 0.7794117647058824
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "ykeody",
+      "total_frequency": 218
+    },
+    {
+      "class_id": 5,
+      "members": [
+        "dshor",
+        "dshey",
+        "ykeol",
+        "ytain",
+        "tchol",
+        "ockhy",
+        "keeol",
+        "laiin",
+        "teedy",
+        "yshey",
+        "pchor",
+        "ychol",
+        "pchey",
+        "keeey",
+        "pchdy"
+      ],
+      "member_count": 15,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.13458333333333333,
+        "mean_length": 0.625
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "dshor",
+      "total_frequency": 190
+    },
+    {
+      "class_id": 6,
+      "members": [
+        "dchey",
+        "odain",
+        "lchdy",
+        "lshey",
+        "ychey",
+        "ykal",
+        "cphy",
+        "ychor",
+        "tain",
+        "cphol",
+        "opchy",
+        "tchdy",
+        "ycheo",
+        "teol",
+        "orol",
+        "kair",
+        "ykol",
+        "ytor",
+        "odal",
+        "ytey",
+        "ytam",
+        "tair",
+        "ytol"
+      ],
+      "member_count": 23,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000016,
+        "mean_kernel_proximity": 0.20000000000000007,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.25434782608695655,
+        "mean_length": 0.5543478260869565
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "dchey",
+      "total_frequency": 349
+    },
+    {
+      "class_id": 7,
+      "members": [
+        "ar",
+        "al"
+      ],
+      "member_count": 2,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.5,
+        "mean_operator_type": 0.6,
+        "mean_node_type": 0.5,
+        "mean_frequency_rank": 0.9750000000000001,
+        "mean_length": 0.25
+      },
+      "functional_role": "FLOW_OPERATOR",
+      "representative": "ar",
+      "total_frequency": 609
+    },
+    {
+      "class_id": 8,
+      "members": [
+        "chedy",
+        "shedy",
+        "chol"
+      ],
+      "member_count": 3,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.5,
+        "mean_operator_type": 0.8000000000000002,
+        "mean_node_type": 0.5,
+        "mean_frequency_rank": 0.9923611111111111,
+        "mean_length": 0.5833333333333334
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chedy",
+      "total_frequency": 1323
+    },
+    {
+      "class_id": 9,
+      "members": [
+        "aiin",
+        "or",
+        "o"
+      ],
+      "member_count": 3,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.5,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.5,
+        "mean_frequency_rank": 0.9423611111111111,
+        "mean_length": 0.2916666666666667
+      },
+      "functional_role": "FREQUENT_OPERATOR",
+      "representative": "aiin",
+      "total_frequency": 913
+    },
+    {
+      "class_id": 10,
+      "members": [
+        "daiin"
+      ],
+      "member_count": 1,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.8,
+        "mean_operator_type": 0.6,
+        "mean_node_type": 1.0,
+        "mean_frequency_rank": 1.0,
+        "mean_length": 0.625
+      },
+      "functional_role": "CORE_CONTROL",
+      "representative": "daiin",
+      "total_frequency": 863
+    },
+    {
+      "class_id": 11,
+      "members": [
+        "ol"
+      ],
+      "member_count": 1,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.8,
+        "mean_operator_type": 0.2,
+        "mean_node_type": 1.0,
+        "mean_frequency_rank": 0.9979166666666667,
+        "mean_length": 0.25
+      },
+      "functional_role": "CORE_CONTROL",
+      "representative": "ol",
+      "total_frequency": 537
+    },
+    {
+      "class_id": 12,
+      "members": [
+        "k"
+      ],
+      "member_count": 1,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 1.0,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 1.0,
+        "mean_frequency_rank": 0.1333333333333333,
+        "mean_length": 0.125
+      },
+      "functional_role": "CORE_CONTROL",
+      "representative": "k",
+      "total_frequency": 13
+    },
+    {
+      "class_id": 13,
+      "members": [
+        "okaiin",
+        "okeey",
+        "otedy",
+        "otaiin",
+        "okain",
+        "oteey",
+        "okedy",
+        "okeedy",
+        "oteedy",
+        "otain",
+        "okeol"
+      ],
+      "member_count": 11,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000006,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.39999999999999997,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.9071969696969698,
+        "mean_length": 0.6704545454545454
+      },
+      "functional_role": "FREQUENT_OPERATOR",
+      "representative": "okaiin",
+      "total_frequency": 1469
+    },
+    {
+      "class_id": 14,
+      "members": [
+        "otal",
+        "otar",
+        "okal",
+        "okar",
+        "oty",
+        "oky",
+        "otol",
+        "okol",
+        "okey",
+        "otey",
+        "otam",
+        "otor"
+      ],
+      "member_count": 12,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03000000000000001,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.39999999999999997,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.8505208333333335,
+        "mean_length": 0.4791666666666667
+      },
+      "functional_role": "FREQUENT_OPERATOR",
+      "representative": "otal",
+      "total_frequency": 1150
+    },
+    {
+      "class_id": 15,
+      "members": [
+        "cthy",
+        "cthol",
+        "oly",
+        "cthey",
+        "cthor"
+      ],
+      "member_count": 5,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.2,
+        "mean_operator_type": 0.2,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.7958333333333333,
+        "mean_length": 0.55
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "cthy",
+      "total_frequency": 324
+    },
+    {
+      "class_id": 16,
+      "members": [
+        "okaly",
+        "okchdy",
+        "okeor",
+        "okair",
+        "otair",
+        "okchor",
+        "otchor",
+        "okeeol",
+        "daiiin",
+        "daldy"
+      ],
+      "member_count": 10,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000006,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.43999999999999995,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.4104166666666667,
+        "mean_length": 0.6875
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "okaly",
+      "total_frequency": 202
+    },
+    {
+      "class_id": 17,
+      "members": [
+        "olaiin",
+        "olkeedy",
+        "olkeey",
+        "olchedy",
+        "olkain",
+        "olkaiin",
+        "olchey",
+        "olkedy",
+        "olshedy"
+      ],
+      "member_count": 9,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000002,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.19999999999999998,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.629861111111111,
+        "mean_length": 0.8055555555555556
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "olaiin",
+      "total_frequency": 315
+    },
+    {
+      "class_id": 18,
+      "members": [
+        "oteody",
+        "okeody",
+        "otchedy",
+        "okchey",
+        "otchey",
+        "otchdy",
+        "otchol",
+        "okeeey",
+        "okchedy"
+      ],
+      "member_count": 9,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000002,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.39999999999999997,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.6071759259259258,
+        "mean_length": 0.7777777777777778
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "oteody",
+      "total_frequency": 283
+    },
+    {
+      "class_id": 19,
+      "members": [
+        "otchy",
+        "oteol",
+        "okchy",
+        "okor",
+        "oteos",
+        "okam"
+      ],
+      "member_count": 6,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.39999999999999997,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.6517361111111112,
+        "mean_length": 0.5833333333333334
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "otchy",
+      "total_frequency": 218
+    },
+    {
+      "class_id": 20,
+      "members": [
+        "sy",
+        "os",
+        "kor",
+        "ky",
+        "ldy",
+        "pol",
+        "yty",
+        "tor",
+        "kal",
+        "om",
+        "rar",
+        "rol",
+        "tal",
+        "dl",
+        "yky"
+      ],
+      "member_count": 15,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.48611111111111105,
+        "mean_length": 0.3333333333333333
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "sy",
+      "total_frequency": 355
+    },
+    {
+      "class_id": 21,
+      "members": [
+        "ory",
+        "ror",
+        "ral",
+        "lky",
+        "do",
+        "oar",
+        "ty",
+        "lo",
+        "ram",
+        "key"
+      ],
+      "member_count": 10,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000006,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.2816666666666667,
+        "mean_length": 0.3375
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "ory",
+      "total_frequency": 159
+    },
+    {
+      "class_id": 22,
+      "members": [
+        "",
+        "ly",
+        "ry",
+        "lr",
+        "tey",
+        "m",
+        "g"
+      ],
+      "member_count": 7,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.12232142857142858,
+        "mean_length": 0.19642857142857142
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "",
+      "total_frequency": 89
+    },
+    {
+      "class_id": 23,
+      "members": [
+        "dy",
+        "s",
+        "y",
+        "r",
+        "am",
+        "l",
+        "d"
+      ],
+      "member_count": 7,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.8776785714285714,
+        "mean_length": 0.16071428571428573
+      },
+      "functional_role": "FREQUENT_OPERATOR",
+      "representative": "dy",
+      "total_frequency": 957
+    },
+    {
+      "class_id": 24,
+      "members": [
+        "dol",
+        "ain",
+        "sar",
+        "sol",
+        "air",
+        "dor",
+        "sor",
+        "sal",
+        "kar",
+        "tol",
+        "ody",
+        "lol",
+        "tar",
+        "lor",
+        "kol"
+      ],
+      "member_count": 15,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.7836111111111109,
+        "mean_length": 0.375
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "dol",
+      "total_frequency": 937
+    },
+    {
+      "class_id": 25,
+      "members": [
+        "olor",
+        "oldy",
+        "olky",
+        "cthar",
+        "olkar",
+        "cthody",
+        "ols",
+        "olol",
+        "ctho"
+      ],
+      "member_count": 9,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000002,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.19999999999999998,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.4175925925925925,
+        "mean_length": 0.5416666666666666
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "olor",
+      "total_frequency": 189
+    },
+    {
+      "class_id": 26,
+      "members": [
+        "ykeedy",
+        "opchey",
+        "yteedy",
+        "dchedy",
+        "ycheey",
+        "kchedy",
+        "ydaiin",
+        "opchdy"
+      ],
+      "member_count": 8,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.50859375,
+        "mean_length": 0.75
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "ykeedy",
+      "total_frequency": 200
+    },
+    {
+      "class_id": 27,
+      "members": [
+        "ytar",
+        "rain",
+        "odar",
+        "tchy",
+        "aiir",
+        "ykedy",
+        "tchey",
+        "ckhol",
+        "ykchy",
+        "keody",
+        "soiin",
+        "kchey",
+        "kchol",
+        "keol",
+        "kchor",
+        "kchdy",
+        "teey",
+        "tchor",
+        "ytchy",
+        "doiin",
+        "ytal"
+      ],
+      "member_count": 21,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000016,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.4493055555555556,
+        "mean_length": 0.5773809523809523
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "ytar",
+      "total_frequency": 453
+    },
+    {
+      "class_id": 28,
+      "members": [
+        "sain",
+        "kain",
+        "lchey",
+        "keey",
+        "kedy",
+        "tedy",
+        "taiin",
+        "aiiin",
+        "lkeey",
+        "ckhy",
+        "ykar",
+        "lkain",
+        "oiin",
+        "ckhey",
+        "dchy",
+        "lkar",
+        "kchy",
+        "lkedy",
+        "sair",
+        "yteey",
+        "orain",
+        "dchor",
+        "dchol",
+        "oaiin",
+        "ytedy"
+      ],
+      "member_count": 25,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000016,
+        "mean_kernel_proximity": 0.20000000000000007,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.6395,
+        "mean_length": 0.565
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "sain",
+      "total_frequency": 895
+    },
+    {
+      "class_id": 29,
+      "members": [
+        "saiin",
+        "lchedy",
+        "raiin",
+        "kaiin",
+        "odaiin",
+        "ykeey",
+        "keedy",
+        "opchedy",
+        "lkaiin",
+        "ykaiin",
+        "ytaiin",
+        "lshedy",
+        "lkeedy",
+        "oraiin",
+        "dshedy",
+        "pchedy",
+        "tchedy"
+      ],
+      "member_count": 17,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.7539215686274509,
+        "mean_length": 0.7205882352941176
+      },
+      "functional_role": "AUXILIARY",
+      "representative": "saiin",
+      "total_frequency": 986
+    },
+    {
+      "class_id": 30,
+      "members": [
+        "dar",
+        "dal",
+        "dain",
+        "dair",
+        "dam"
+      ],
+      "member_count": 5,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.2,
+        "mean_operator_type": 0.6,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.9324999999999999,
+        "mean_length": 0.425
+      },
+      "functional_role": "FLOW_OPERATOR",
+      "representative": "dar",
+      "total_frequency": 986
+    },
+    {
+      "class_id": 31,
+      "members": [
+        "chey",
+        "shey",
+        "chor",
+        "shol",
+        "chy",
+        "chdy",
+        "sho",
+        "shy",
+        "shor",
+        "char",
+        "cho",
+        "cheo"
+      ],
+      "member_count": 12,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03000000000000001,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.7999999999999999,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.9059027777777775,
+        "mean_length": 0.4583333333333333
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chey",
+      "total_frequency": 1873
+    },
+    {
+      "class_id": 32,
+      "members": [
+        "qokal",
+        "qokar",
+        "qol",
+        "qoky",
+        "qokey",
+        "qokol",
+        "qoty"
+      ],
+      "member_count": 7,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.911607142857143,
+        "mean_length": 0.5535714285714286
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qokal",
+      "total_frequency": 940
+    },
+    {
+      "class_id": 33,
+      "members": [
+        "qokeey",
+        "qokeedy",
+        "qokain",
+        "qokedy",
+        "qokaiin",
+        "qotedy",
+        "qotaiin",
+        "qoteedy",
+        "qokchy",
+        "qotain",
+        "qotchy",
+        "qokchdy",
+        "qokeol"
+      ],
+      "member_count": 13,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03000000000000001,
+        "mean_kernel_proximity": 0.2,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.8780448717948719,
+        "mean_length": 0.7980769230769231
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qokeey",
+      "total_frequency": 1976
+    },
+    {
+      "class_id": 34,
+      "members": [
+        "cheey",
+        "cheol",
+        "sheey",
+        "chckhy",
+        "sheol",
+        "cheor",
+        "chody",
+        "cheody",
+        "sheedy",
+        "chcthy",
+        "cheky",
+        "shckhy",
+        "cheedy",
+        "shody",
+        "chear",
+        "sheor",
+        "sheody",
+        "checkhy",
+        "chaiin"
+      ],
+      "member_count": 19,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000016,
+        "mean_kernel_proximity": 0.20000000000000007,
+        "mean_operator_type": 0.8000000000000003,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.8356359649122806,
+        "mean_length": 0.6907894736842105
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "cheey",
+      "total_frequency": 1673
+    },
+    {
+      "class_id": 35,
+      "members": [
+        "chal",
+        "sheo",
+        "shdy",
+        "choky",
+        "chos",
+        "choty",
+        "sheky",
+        "ches",
+        "shar",
+        "chees",
+        "cheos",
+        "cheal"
+      ],
+      "member_count": 12,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03000000000000001,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.7999999999999999,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.6743055555555556,
+        "mean_length": 0.5625
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chal",
+      "total_frequency": 457
+    },
+    {
+      "class_id": 36,
+      "members": [
+        "qotar",
+        "qotal",
+        "qotol",
+        "qoteey",
+        "qokor",
+        "qotor",
+        "qokam",
+        "qotey"
+      ],
+      "member_count": 8,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.6643229166666667,
+        "mean_length": 0.640625
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qotar",
+      "total_frequency": 325
+    },
+    {
+      "class_id": 37,
+      "members": [
+        "chty",
+        "choy",
+        "shes",
+        "shky",
+        "shee",
+        "shod",
+        "chan",
+        "shek"
+      ],
+      "member_count": 8,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.7999999999999999,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.11510416666666666,
+        "mean_length": 0.5
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chty",
+      "total_frequency": 98
+    },
+    {
+      "class_id": 38,
+      "members": [
+        "aral",
+        "aldy",
+        "arody",
+        "aram",
+        "arol",
+        "daim"
+      ],
+      "member_count": 6,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.6,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.13368055555555555,
+        "mean_length": 0.5208333333333334
+      },
+      "functional_role": "FLOW_OPERATOR",
+      "representative": "aral",
+      "total_frequency": 78
+    },
+    {
+      "class_id": 39,
+      "members": [
+        "chety",
+        "ched",
+        "shear",
+        "cham",
+        "chdar",
+        "sheal",
+        "chdal",
+        "chky",
+        "chain",
+        "shed",
+        "qody",
+        "sheos",
+        "cheeo",
+        "chom",
+        "choly",
+        "shal",
+        "qoeey"
+      ],
+      "member_count": 17,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.8235294117647061,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.354656862745098,
+        "mean_length": 0.5735294117647058
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chety",
+      "total_frequency": 311
+    },
+    {
+      "class_id": 40,
+      "members": [
+        "daly",
+        "aly",
+        "ary",
+        "dary",
+        "daiir",
+        "dan"
+      ],
+      "member_count": 6,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.6,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.5201388888888889,
+        "mean_length": 0.4583333333333333
+      },
+      "functional_role": "FLOW_OPERATOR",
+      "representative": "daly",
+      "total_frequency": 152
+    },
+    {
+      "class_id": 41,
+      "members": [
+        "qo",
+        "chl",
+        "she",
+        "qor",
+        "chs",
+        "sh"
+      ],
+      "member_count": 6,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.8666666666666667,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.4559027777777778,
+        "mean_length": 0.3333333333333333
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qo",
+      "total_frequency": 135
+    },
+    {
+      "class_id": 42,
+      "members": [
+        "chckhdy",
+        "shckhey",
+        "chotchy",
+        "cheeody",
+        "shocthy",
+        "chokain",
+        "cheodaiin"
+      ],
+      "member_count": 7,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.7999999999999999,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.09107142857142858,
+        "mean_length": 0.8928571428571429
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chckhdy",
+      "total_frequency": 83
+    },
+    {
+      "class_id": 43,
+      "members": [
+        "chodar",
+        "sheeol",
+        "cheeor",
+        "sheeky",
+        "chkeey",
+        "choiin",
+        "chkal",
+        "chkar",
+        "chory",
+        "chkain",
+        "chekal",
+        "sheod",
+        "chcphy",
+        "shedal",
+        "chotar"
+      ],
+      "member_count": 15,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000013,
+        "mean_kernel_proximity": 0.20000000000000004,
+        "mean_operator_type": 0.8000000000000002,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.11999999999999998,
+        "mean_length": 0.7166666666666667
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chodar",
+      "total_frequency": 187
+    },
+    {
+      "class_id": 44,
+      "members": [
+        "qopchdy",
+        "qotchor",
+        "qotchol",
+        "qokechy",
+        "qokeeody",
+        "qoteody",
+        "qokchor"
+      ],
+      "member_count": 7,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.15208333333333332,
+        "mean_length": 0.8928571428571429
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qopchdy",
+      "total_frequency": 91
+    },
+    {
+      "class_id": 45,
+      "members": [
+        "qoteol",
+        "qoar",
+        "qotam",
+        "qotcho",
+        "qodar",
+        "qopchy"
+      ],
+      "member_count": 6,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.06666666666666665,
+        "mean_length": 0.6666666666666666
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qoteol",
+      "total_frequency": 69
+    },
+    {
+      "class_id": 46,
+      "members": [
+        "qodaiin",
+        "qokchedy",
+        "qokeody",
+        "qopchedy",
+        "qokchey",
+        "qokeeey",
+        "qotchedy",
+        "qotchdy"
+      ],
+      "member_count": 8,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.03,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.590625,
+        "mean_length": 0.921875
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qodaiin",
+      "total_frequency": 248
+    },
+    {
+      "class_id": 47,
+      "members": [
+        "chodaiin",
+        "sheckhy",
+        "chedaiin",
+        "shcthy",
+        "chckhey",
+        "chedar",
+        "checthy",
+        "cheeky",
+        "chedal",
+        "shodaiin",
+        "shaiin"
+      ],
+      "member_count": 11,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000006,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.7999999999999999,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.5712121212121213,
+        "mean_length": 0.8522727272727273
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chodaiin",
+      "total_frequency": 321
+    },
+    {
+      "class_id": 48,
+      "members": [
+        "chockhy",
+        "shecthy",
+        "chedain",
+        "chocthy",
+        "chkaiin",
+        "chokaiin",
+        "chokchy",
+        "chdaiin",
+        "shedaiin"
+      ],
+      "member_count": 9,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000002,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 0.7999999999999999,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.34467592592592594,
+        "mean_length": 0.9027777777777778
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "chockhy",
+      "total_frequency": 160
+    },
+    {
+      "class_id": 49,
+      "members": [
+        "qokeeo",
+        "qoaiin",
+        "qokeor",
+        "qoeedy",
+        "qotchey",
+        "qockhy",
+        "qokchol",
+        "qokaly",
+        "qockhey",
+        "qokair",
+        "qokeed"
+      ],
+      "member_count": 11,
+      "behavioral_signature": {
+        "mean_convergence_impact": 0.030000000000000006,
+        "mean_kernel_proximity": 0.19999999999999998,
+        "mean_operator_type": 1.0,
+        "mean_node_type": 0.0,
+        "mean_frequency_rank": 0.37992424242424244,
+        "mean_length": 0.7840909090909091
+      },
+      "functional_role": "ENERGY_OPERATOR",
+      "representative": "qokeeo",
+      "total_frequency": 211
+    }
+  ],
+  "MINIMAL_INSTRUCTION_SET": {
+    "size": 49,
+    "representatives": [
+      {
+        "class_id": 33,
+        "representative": "qokeey",
+        "role": "ENERGY_OPERATOR",
+        "member_count": 13
+      },
+      {
+        "class_id": 31,
+        "representative": "chey",
+        "role": "ENERGY_OPERATOR",
+        "member_count": 12
+      },
+      {
+        "class_id": 34,
+        "representative": "cheey",
+        "role": "ENERGY_OPERATOR",
+        "member_count": 19
+      },
+      {
+        "class_id": 13,
+        "representative": "okaiin",
+        "role": "FREQUENT_OPERATOR",
+        "member_count": 11
+      },
+      {
+        "class_id": 8,
+        "representative": "chedy",
+        "role": "ENERGY_OPERATOR",
+        "member_count": 3
+      },
+      {
+        "class_id": 14,
+        "representative": "otal",
+        "role": "FREQUENT_OPERATOR",
+        "member_count": 12
+      },
+      {
+        "class_id": 30,
+        "representative": "dar",
+        "role": "FLOW_OPERATOR",
+        "member_count": 5
+      },
+      {
+        "class_id": 29,
+        "representative": "saiin",
+        "role": "AUXILIARY",
+        "member_count": 17
+      },
+      {
+        "class_id": 23,
+        "representative": "dy",
+        "role": "FREQUENT_OPERATOR",
+        "member_count": 7
+      },
+      {
+        "class_id": 32,
+        "representative": "qokal",
+        "role": "ENERGY_OPERATOR",
+        "member_count": 7
+      },
+      {
+        "class_id": 24,
+        "representative": "dol",
+        "role": "AUXILIARY",
+        "member_count": 15
+      },
+      {
+        "class_id": 9,
+        "representative": "aiin",
+        "role": "FREQUENT_OPERATOR",
+        "member_count": 3
+      },
+      {
+        "class_id": 28,
+        "representative": "sain",
+        "role": "AUXILIARY",
+        "member_count": 25
+      },
+      {
+        "class_id": 10,
+        "representative": "daiin",
+        "role": "CORE_CONTROL",
+        "member_count": 1
+      },
+      {
+        "class_id": 7,
+        "representative": "ar",
+        "role": "FLOW_OPERATOR",
+        "member_count": 2
+      },
+      {
+        "class_id": 11,
+        "representative": "ol",
+        "role": "CORE_CONTROL",
+        "member_count": 1
+      },
+      {
+        "class_id": 35,
+        "representative": "chal",
+        "role": "ENERGY_OPERATOR",
+        "member_count": 12
+      },
+      {
+        "class_id": 27,
+        "representative": "ytar",
+        "role": "AUXILIARY",
+        "member_count": 21
+      },
+      {
+        "class_id": 20,
+        "representative": "sy",
+        "role": "AUXILIARY",
+        "member_count": 15
+      },
+      {
+        "class_id": 6,
+        "representative": "dchey",
+        "role": "AUXILIARY",
+        "member_count": 23
+      }
+    ],
+    "compression_achieved": "480 -> 49"
+  },
+  "INTERPRETATION": "Reduced 480 surface tokens to 49 equivalence classes (compression ratio 9.8x). Clustering quality score: 29.08."
+}

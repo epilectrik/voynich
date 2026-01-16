@@ -1,0 +1,2433 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "source": "sources/puff_1501_text.txt",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "extraction_stats": {
+    "chapters_found": 47,
+    "chapters_extracted": 47,
+    "temperature_distribution": {
+      "cold": 2,
+      "neutral": 43,
+      "warm": 2
+    },
+    "organ_totals": {
+      "head": 18,
+      "chest": 8,
+      "abdomen": 19,
+      "limbs": 4,
+      "skin": 0
+    },
+    "application_distribution": {
+      "external": 14,
+      "internal": 5,
+      "unknown": 27,
+      "mixed": 1
+    },
+    "severity_distribution": {
+      "moderate": 31,
+      "mild": 15,
+      "severe": 1
+    }
+  },
+  "chapters": [
+    {
+      "index": 0,
+      "name": "btm etffcn von bem Hofen wafict«",
+      "header": "btm etffcn von bem Hofen wafict«",
+      "line_count": 20,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 1,
+        "dry_count": 1,
+        "moist_count": 0,
+        "primary_temp": "cold",
+        "primary_moisture": "dry",
+        "classification": "cold-dry"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 5,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 6,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 1,
+        "external_count": 3,
+        "primary_method": "external",
+        "internal_ratio": 0.25
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 4,
+        "mild_count": 1,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 1,
+      "name": "Hofen btc auff tat bagenboen ftemb*ä>a$ ",
+      "header": "Hofen btc auff tat bagenboen ftemb*ä>a$ waffet g«",
+      "line_count": 6,
+      "humoral": {
+        "warm_count": 1,
+        "cold_count": 1,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 1,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 3,
+        "external_count": 0,
+        "primary_method": "internal",
+        "internal_ratio": 1.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 2,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 2,
+      "name": "5!?on fcbnel^lumen waflet*",
+      "header": "5!?on fcbnel^lumen waflet*",
+      "line_count": 20,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 2,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 4,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 2,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 3,
+      "name": "2Don wcyß £iiicn waffcr«",
+      "header": "2Don wcyß £iiicn waffcr«",
+      "line_count": 1,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 4,
+      "name": "fccr wcyffen £tlien wa jfer iff gut $u t",
+      "header": "fccr wcyffen £tlien wa jfer iff gut $u tc äuge ba rcttt",
+      "line_count": 10,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 5,
+      "name": "SDon blau? tZtltm waffer*",
+      "header": "SDon blau? tZtltm waffer*",
+      "line_count": 2,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 6,
+      "name": "SMawlilien waffer ijfgut für alle fteffe",
+      "header": "SMawlilien waffer ijfgut für alle fteffer wolcberlay",
+      "line_count": 7,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 7,
+      "name": "€5f ectltlien btc inte bom wacbfcnbt«bao",
+      "header": "€5f ectltlien btc inte bom wacbfcnbt«bao wajferifi",
+      "line_count": 2,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 1,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "chest"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 8,
+      "name": "•ff gntben wafler|ucbtigcn vnb t* bic Ju",
+      "header": "•ff gntben wafler|ucbtigcn vnb t* bic Jungen faulet",
+      "line_count": 10,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 2,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 3,
+        "primary_organ_system": "chest"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 2,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 9,
+      "name": "%>on tfTayen plümcn wafler*",
+      "header": "%>on tfTayen plümcn wafler*",
+      "line_count": 20,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 2,
+          "chest": 1,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 3,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 1,
+        "external_count": 2,
+        "primary_method": "external",
+        "internal_ratio": 0.33
+      },
+      "severity": {
+        "severe_count": 1,
+        "moderate_count": 5,
+        "mild_count": 0,
+        "severity_score": 2,
+        "severity_label": "severe"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 10,
+      "name": "ü&on StTeycl waffer*",
+      "header": "ü&on StTeycl waffer*",
+      "line_count": 12,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 2,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 3,
+        "primary_organ_system": "chest"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 2,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 1,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 1,
+        "therapeutic_breadth": 1,
+        "primary_action": "cooling"
+      }
+    },
+    {
+      "index": 11,
+      "name": "5?on (Bclffenvey et waffer*",
+      "header": "5?on (Bclffenvey et waffer*",
+      "line_count": 2,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 12,
+      "name": "(Gelten vey el waffer tjlgut beit bie fe",
+      "header": "(Gelten vey el waffer tjlgut beit bie ferc gebelfetba£",
+      "line_count": 27,
+      "humoral": {
+        "warm_count": 4,
+        "cold_count": 1,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "warm",
+        "primary_moisture": "neutral",
+        "classification": "warm-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 1,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 1,
+        "external_count": 0,
+        "primary_method": "internal",
+        "internal_ratio": 1.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 8,
+        "mild_count": 1,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 1,
+          "warming": 2,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 3,
+        "therapeutic_breadth": 2,
+        "primary_action": "warming"
+      }
+    },
+    {
+      "index": 13,
+      "name": "33on öeefflumen wa jfer*",
+      "header": "33on öeefflumen wa jfer*",
+      "line_count": 18,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 3,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 3,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 2,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 14,
+      "name": "Tfon £>cbffcn$itn$en wajfer«",
+      "header": "Tfon £>cbffcn$itn$en wajfer«",
+      "line_count": 6,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 15,
+      "name": "X7on potrasen wajfer«",
+      "header": "X7on potrasen wajfer«",
+      "line_count": 7,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 16,
+      "name": "!0on £. tnben pltte wafler*",
+      "header": "!0on £. tnben pltte wafler*",
+      "line_count": 10,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 1,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "limbs"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 2,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 17,
+      "name": "33en egrtcb wa flfer*",
+      "header": "33en egrtcb wa flfer*",
+      "line_count": 9,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 18,
+      "name": "23 on fcanramp jfet waffer*",
+      "header": "23 on fcanramp jfet waffer*",
+      "line_count": 10,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 1,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 19,
+      "name": "Hacbtfcbatten waffer tület vmtb vertrete",
+      "header": "Hacbtfcbatten waffer tület vmtb vertretet alle bti$",
+      "line_count": 26,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 1,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "cold",
+        "primary_moisture": "neutral",
+        "classification": "cold-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 2,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 1,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 1,
+        "therapeutic_breadth": 1,
+        "primary_action": "cooling"
+      }
+    },
+    {
+      "index": 20,
+      "name": "30ott ftaußwurt* waffer *",
+      "header": "30ott ftaußwurt* waffer *",
+      "line_count": 19,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 1,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 21,
+      "name": "30on erbtraueb oberCentaer wajfer.",
+      "header": "30on erbtraueb oberCentaer wajfer.",
+      "line_count": 23,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 22,
+      "name": "%3on 2 lbfcblag waffer»",
+      "header": "%3on 2 lbfcblag waffer»",
+      "line_count": 8,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 23,
+      "name": "%Jon pappel wajfer-",
+      "header": "%Jon pappel wajfer-",
+      "line_count": 24,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 1,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "limbs"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 1,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 24,
+      "name": "$3ott öpartg waffer«",
+      "header": "$3ott öpartg waffer«",
+      "line_count": 14,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 1,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 25,
+      "name": "3CUn Villen waffer.",
+      "header": "3CUn Villen waffer.",
+      "line_count": 2,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 26,
+      "name": "'Villen waffer tfibaiß vn trncEengeUtcb-",
+      "header": "'Villen waffer tfibaiß vn trncEengeUtcb-vntfigut",
+      "line_count": 9,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 27,
+      "name": "%3on vaibaanwaffer*",
+      "header": "%3on vaibaanwaffer*",
+      "line_count": 33,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 2,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 4,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 28,
+      "name": "3tten Jrteyfam wafler«",
+      "header": "3tten Jrteyfam wafler«",
+      "line_count": 12,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 2,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "chest"
+      },
+      "application": {
+        "internal_count": 1,
+        "external_count": 1,
+        "primary_method": "mixed",
+        "internal_ratio": 0.5
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 2,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 29,
+      "name": "3uon bem etbbet waffet*",
+      "header": "3uon bem etbbet waffet*",
+      "line_count": 22,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 2,
+        "external_count": 0,
+        "primary_method": "internal",
+        "internal_ratio": 1.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 30,
+      "name": "* 0 on flOeü fot waffer.",
+      "header": "* 0 on flOeü fot waffer.",
+      "line_count": 13,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 1,
+        "primary_temp": "neutral",
+        "primary_moisture": "moist",
+        "classification": "neutral-moist"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 31,
+      "name": "3tTon (3tabwnrt$ waffer.",
+      "header": "3tTon (3tabwnrt$ waffer.",
+      "line_count": 7,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 32,
+      "name": "5tTon ^febentrant waffer*",
+      "header": "5tTon ^febentrant waffer*",
+      "line_count": 20,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 2,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 33,
+      "name": "%3onWaixcwt$ waffet*",
+      "header": "%3onWaixcwt$ waffet*",
+      "line_count": 7,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 34,
+      "name": "%3on TfUtCKb waffer.",
+      "header": "%3on TfUtCKb waffer.",
+      "line_count": 16,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 35,
+      "name": "32on bem mlbcn ©aluan waffet«",
+      "header": "32on bem mlbcn ©aluan waffet«",
+      "line_count": 17,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 36,
+      "name": "Bön ©amtllen waffet*",
+      "header": "Bön ©amtllen waffet*",
+      "line_count": 2,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 37,
+      "name": "©amtllen waffet tff bayß vnb ttucben« vn",
+      "header": "©amtllen waffet tff bayß vnb ttucben« vn iflgat nä",
+      "line_count": 7,
+      "humoral": {
+        "warm_count": 1,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "warm",
+        "primary_moisture": "neutral",
+        "classification": "warm-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 38,
+      "name": "Bon petetftlten waffet",
+      "header": "Bon petetftlten waffet",
+      "line_count": 6,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 39,
+      "name": "gon 23alb«an waffet.",
+      "header": "gon 23alb«an waffet.",
+      "line_count": 11,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 2,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 4,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 1
+        },
+        "total_actions": 1,
+        "therapeutic_breadth": 1,
+        "primary_action": "healing"
+      }
+    },
+    {
+      "index": 40,
+      "name": "0on 2$etbonten waffet«",
+      "header": "0on 2$etbonten waffet«",
+      "line_count": 2,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 41,
+      "name": "!Öetbonien waffet tff vnffgttt vn nugltc",
+      "header": "!Öetbonien waffet tff vnffgttt vn nugltcb fut alle fu",
+      "line_count": 10,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 2,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 1,
+        "external_count": 0,
+        "primary_method": "internal",
+        "internal_ratio": 1.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 42,
+      "name": "Bon üUittmßUie waffet",
+      "header": "Bon üUittmßUie waffet",
+      "line_count": 11,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 0,
+        "primary_organ_system": "none"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 0,
+        "mild_count": 0,
+        "severity_score": 0,
+        "severity_label": "mild"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 43,
+      "name": "$Jon (ßettelcn waffer*",
+      "header": "$Jon (ßettelcn waffer*",
+      "line_count": 17,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 2,
+          "chest": 0,
+          "abdomen": 2,
+          "limbs": 1,
+          "skin": 0
+        },
+        "total_organ_mentions": 5,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 44,
+      "name": "%Jon iOolcrblue waffer.",
+      "header": "%Jon iOolcrblue waffer.",
+      "line_count": 9,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 1,
+        "primary_temp": "neutral",
+        "primary_moisture": "moist",
+        "classification": "neutral-moist"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 0,
+          "chest": 0,
+          "abdomen": 2,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "abdomen"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 1,
+        "primary_method": "external",
+        "internal_ratio": 0.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 1,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 45,
+      "name": "23on25law fotnblumcn waffer*",
+      "header": "23on25law fotnblumcn waffer*",
+      "line_count": 12,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 1,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 0,
+        "external_count": 0,
+        "primary_method": "unknown",
+        "internal_ratio": 0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 3,
+        "mild_count": 0,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 0
+        },
+        "total_actions": 0,
+        "therapeutic_breadth": 0,
+        "primary_action": "none"
+      }
+    },
+    {
+      "index": 46,
+      "name": "Sdoit $?afcron ober $?eyeron waffer.",
+      "header": "Sdoit $?afcron ober $?eyeron waffer.",
+      "line_count": 79,
+      "humoral": {
+        "warm_count": 0,
+        "cold_count": 0,
+        "dry_count": 0,
+        "moist_count": 0,
+        "primary_temp": "neutral",
+        "primary_moisture": "neutral",
+        "classification": "neutral-neutral"
+      },
+      "organs": {
+        "organ_counts": {
+          "head": 2,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 0,
+          "skin": 0
+        },
+        "total_organ_mentions": 2,
+        "primary_organ_system": "head"
+      },
+      "application": {
+        "internal_count": 2,
+        "external_count": 0,
+        "primary_method": "internal",
+        "internal_ratio": 1.0
+      },
+      "severity": {
+        "severe_count": 0,
+        "moderate_count": 17,
+        "mild_count": 1,
+        "severity_score": 1,
+        "severity_label": "moderate"
+      },
+      "therapeutic": {
+        "action_counts": {
+          "cooling": 0,
+          "warming": 0,
+          "cleansing": 0,
+          "strengthening": 0,
+          "healing": 2
+        },
+        "total_actions": 2,
+        "therapeutic_breadth": 1,
+        "primary_action": "healing"
+      }
+    }
+  ]
+}

@@ -42,7 +42,9 @@ From PVC-2 validation (13/15 metrics match):
 | **REGIME_1** | **First (balneum)** | Lukewarm, broad compatibility, gentle |
 | REGIME_2 | Second (warm) | Noticeably warm, standard |
 | REGIME_3 | Third (seething) | Almost boiling, narrow compatibility |
-| REGIME_4 | Fourth (forbidden) | Destructive, categorically prohibited |
+| REGIME_4 | **Precision** | Tight tolerance, narrow operating window |
+
+**NOTE (2026-01-15):** REGIME_4 interpretation CORRECTED per C494. REGIME_4 is NOT "forbidden/dangerous" - it is "precision-constrained execution" (lowest escape rate 0.107, tightest error tolerance). See X.6 in INTERPRETATION_SUMMARY.md.
 
 **f113r executes first-degree (balneum) procedures.**
 
@@ -186,7 +188,7 @@ If f113r (REGIME_1) executes first-degree procedures, and first-degree materials
 ## Next Steps (If Continuing)
 
 1. Extend to REGIME_2/3 folios - do higher regimes show different PREFIX distributions?
-2. Test REGIME_4 equivalents - are "forbidden" fourth-degree operations reflected in hazard topology?
+2. Test REGIME_4 equivalents - are precision-constrained operations reflected in hazard topology?
 3. Look for ct-heavy positions - do REGISTRY_REFERENCE tokens cluster in apparatus contexts?
 
 ---
@@ -207,21 +209,23 @@ If f113r (REGIME_1) executes first-degree procedures, and first-degree materials
 
 ### Regime Distribution and Material Class Mapping
 
-| Regime | Folios | Avg CEI | Avg Escape | Brunschwig Degree | [TIER 4] Puff Material Class |
-|--------|--------|---------|------------|-------------------|------------------------------|
-| REGIME_1 | 31 | 0.510 | 0.202 | First (balneum) | Flowers + aromatics (30 ch.) |
-| REGIME_2 | 11 | 0.367 | 0.101 | Second (warm) | Standard herbs (45 ch.) |
-| REGIME_3 | 16 | 0.717 | 0.169 | Third (seething) | Roots + resins (5 ch.) |
-| REGIME_4 | 25 | 0.584 | 0.107 | Fourth (forbidden) | Dangerous materials (5 ch.) |
+| Regime | Folios | Avg CEI | Avg Escape | Character | [TIER 4] Puff Material Class |
+|--------|--------|---------|------------|-----------|------------------------------|
+| REGIME_1 | 31 | 0.510 | 0.202 | Standard, forgiving | Flowers + aromatics (30 ch.) |
+| REGIME_2 | 11 | 0.367 | 0.101 | Introductory, simple | Standard herbs (45 ch.) |
+| REGIME_3 | 16 | 0.717 | 0.169 | Advanced, complex | Roots + resins (5 ch.) |
+| REGIME_4 | 25 | 0.584 | 0.107 | **Precision, tight tolerance** | Heat-sensitive materials (5 ch.) |
 
-### REGIME_4 Hazard Topology Alignment
+### REGIME_4 Precision Interpretation (CORRECTED per C494)
+
+**NOTE (2026-01-15):** The original interpretation below ("forbidden degree") has been RETIRED. See C494 and X.6 in INTERPRETATION_SUMMARY.md for the corrected interpretation.
 
 Brunschwig on the fourth degree:
 > "The fourth degree should be avoided at all times, not just because it threatens to scorch the distilled material, but also because it would coerce the thing, which the art of true distillation rejects."
 
 **Structural finding:** REGIME_4 has the LOWEST escape density (0.107 vs 0.174 for others).
 
-**[TIER 4 INTERPRETATION]:** Fewer escape routes = more constrained operations. This is consistent with "forbidden degree" - the system actively restricts recovery options when operating in high-risk territory.
+**[CORRECTED INTERPRETATION (C494)]:** Fewer escape routes = tighter procedural requirements. REGIME_4 encodes **precision-constrained execution** - narrow operating windows, tight tolerance, least forgiving. Brunschwig prohibits fourth-degree as a moral stance; Voynich provides the engineering alternative for when precision is required (e.g., heat-sensitive volatiles, exact timing separations).
 
 ### f85v2 Anomaly
 
@@ -269,7 +273,7 @@ Brunschwig on the fourth degree:
 |-------|--------|
 | REGIME_1 = gentle processing? | YES - highest escape (0.202) = most forgiving |
 | REGIME_3 = intensive processing? | YES - highest CEI (0.717) = most complex |
-| REGIME_4 = forbidden/constrained? | YES - lowest escape (0.107) = most restricted |
+| REGIME_4 = precision-constrained? | YES - lowest escape (0.107) = tightest tolerance |
 | REGIME_2 = standard? | YES - lowest CEI (0.367) = baseline |
 
 ### Hazard Alignment
@@ -577,9 +581,9 @@ Test whether individual Puff chapters can be matched 1:1 to individual Voynich B
 | 1st (flowers) | 22 | REGIME_1 | 31 | 0.71 |
 | 2nd (herbs) | **45** | REGIME_2 | **11** | **4.09** |
 | 3rd (roots) | 13 | REGIME_3 | 16 | 0.81 |
-| 4th (dangerous) | 5 | REGIME_4 | **25** | **0.20** |
+| 4th (precision) | 5 | REGIME_4 | **25** | **0.20** |
 
-**Critical finding:** Distribution mismatch. Puff has 4x more herbs than Voynich has REGIME_2 folios. Voynich has 5x more REGIME_4 folios than Puff has dangerous chapters.
+**Critical finding:** Distribution mismatch. Puff has 4x more herbs than Voynich has REGIME_2 folios. Voynich has 5x more REGIME_4 folios than Puff has precision-requiring chapters. NOTE: Per C494, REGIME_4 = precision-constrained execution, not "dangerous."
 
 ### Test Results
 

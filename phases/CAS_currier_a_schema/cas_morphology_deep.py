@@ -67,6 +67,22 @@ def analyze_morphology():
     print("CAS DEEP MORPHOLOGY ANALYSIS")
     print("=" * 80)
 
+    # Check if catalog is empty (no block-based markers with H-only data)
+    if not catalog:
+        print("\nNo marker tokens in catalog - block analysis not applicable with H-only data.")
+        print("Block repetition (64.1%) was an artifact of transcriber interleaving.")
+        print("\nNote: Marker taxonomy (cas_phase3) correctly identifies markers from ALL entries,")
+        print("but this deep morphology analysis was designed for block-internal structure.")
+        return {
+            'unique_middles': 0,
+            'universal_middles': 0,
+            'common_middles': 0,
+            'pct_with_middle': 0,
+            'observed_combinations': 0,
+            'verdict': 'NO_BLOCKS',
+            'note': 'Block-based catalog is empty; use cas_phase3 for marker analysis'
+        }
+
     # Collect all decompositions
     decompositions = []
     middle_counter = Counter()

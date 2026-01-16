@@ -1,6 +1,6 @@
 # Phase OPS-5: Control Engagement Intensity (CEI) Manifold
 
-**Date:** 2026-01-04
+**Date:** 2026-01-15
 
 ---
 
@@ -199,7 +199,7 @@ Regimes occupy CEI bands, NOT strict ranks. Overlap is expected and permitted.
 | Component | Finding |
 |-----------|---------|
 | CEI definition | Documented composite index, weights explicit |
-| Regime bands | 4 bands with expected ordering (R2 < R1 < R4 < R3) |
+| Regime bands | 4 bands with expected ordering (R2 < R4 < R1 < R3) |
 | Centroid alignment | PASS |
 | Transition alignment | PASS |
 | No universal optimum | PASS |
@@ -213,4 +213,4 @@ Regimes occupy CEI bands, NOT strict ranks. Overlap is expected and permitted.
 > integrating regimes, tradeoffs, switching pressures, and human-track vigilance using
 > purely operational evidence. The internal investigation is closed."**
 
-*Generated: 2026-01-04T22:15:19.733265*
+*Generated: 2026-01-15T23:47:41.442766*

@@ -1,0 +1,10 @@
+{
+  "total_transitions": 20806,
+  "unique_bigrams": 17521,
+  "forbidden_violations": 0,
+  "h_k_transitions": 0,
+  "k_h_transitions": 0,
+  "equivalence_classes": 49,
+  "compression_ratio": 9.795918367346939,
+  "kernel_contact_pct": 35.66234995482511
+}

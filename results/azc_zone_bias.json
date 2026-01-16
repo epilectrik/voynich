@@ -1,0 +1,99 @@
+{
+  "test": "AZC_ZONE_BIAS",
+  "product_section_counts": {
+    "OIL_RESIN": {
+      "B": 3158,
+      "C": 428,
+      "H": 2606,
+      "S": 4876,
+      "T": 0
+    },
+    "PRECISION": {
+      "B": 0,
+      "C": 1284,
+      "H": 7881,
+      "S": 0,
+      "T": 662
+    },
+    "WATER_GENTLE": {
+      "B": 0,
+      "C": 1986,
+      "H": 1172,
+      "S": 5621,
+      "T": 0
+    },
+    "WATER_STANDARD": {
+      "B": 24889,
+      "C": 0,
+      "H": 0,
+      "S": 19967,
+      "T": 1090
+    }
+  },
+  "product_section_rates": {
+    "OIL_RESIN": {
+      "B": 0.28532706902782795,
+      "C": 0.038670039754246474,
+      "H": 0.23545355981207083,
+      "S": 0.4405493314058547,
+      "T": 0.0
+    },
+    "PRECISION": {
+      "B": 0.0,
+      "C": 0.13066042535870562,
+      "H": 0.8019741528442047,
+      "S": 0.0,
+      "T": 0.06736542179708965
+    },
+    "WATER_GENTLE": {
+      "B": 0.0,
+      "C": 0.22622166533773777,
+      "H": 0.133500398678665,
+      "S": 0.6402779359835972,
+      "T": 0.0
+    },
+    "WATER_STANDARD": {
+      "B": 0.5417011274104383,
+      "C": 0.0,
+      "H": 0.0,
+      "S": 0.4345753710877987,
+      "T": 0.023723501501762938
+    }
+  },
+  "chi_square": {
+    "chi2": 60951.0924205946,
+    "df": 12,
+    "p_value": 0.0,
+    "significant": true
+  },
+  "structural_predictions": [
+    {
+      "product": "WATER_GENTLE",
+      "target_section": "H",
+      "target_rate": 0.133500398678665,
+      "avg_rate": 0.3458092375520918,
+      "enrichment": 0.38605214720024605,
+      "passed": false
+    },
+    {
+      "product": "OIL_RESIN",
+      "target_section": "S",
+      "target_rate": 0.4405493314058547,
+      "avg_rate": 0.3582844356904653,
+      "enrichment": 1.229607785101949,
+      "passed": true
+    },
+    {
+      "product": "PRECISION",
+      "target_section": "P",
+      "target_rate": 0.0,
+      "avg_rate": 0.0,
+      "enrichment": 1.0,
+      "passed": false
+    }
+  ],
+  "summary": {
+    "verdict": "PARTIAL",
+    "interpretation": "Some section bias detected, needs refinement"
+  }
+}

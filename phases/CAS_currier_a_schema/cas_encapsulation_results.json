@@ -1,67 +1,67 @@
 {
   "positional": {
-    "mixed_folios": 1530,
-    "a_before_b": 694,
-    "b_before_a": 121,
-    "interleaved": 715
+    "mixed_folios": 1144,
+    "a_before_b": 535,
+    "b_before_a": 63,
+    "interleaved": 546
   },
   "count": {
     "section_counts": {
       "T": {
-        "A": 889,
-        "B": 1752
+        "A": 695,
+        "B": 682
       },
       "H": {
-        "A": 8385,
-        "B": 11659
+        "A": 6348,
+        "B": 3441
       },
       "B": {
         "A": 0,
-        "B": 27972
+        "B": 6938
       },
       "C": {
         "A": 0,
-        "B": 3698
+        "B": 1485
       },
       "P": {
-        "A": 2897,
+        "A": 1973,
         "B": 0
       },
       "S": {
         "A": 0,
-        "B": 30464
+        "B": 10680
       }
     }
   },
   "marker": {
-    "pure_a_folios": 3596,
-    "pure_b_folios": 5739,
+    "pure_a_folios": 2316,
+    "pure_b_folios": 3803,
     "marker_distribution": {
-      "ct": 130,
-      "sh": 216,
-      "da": 152,
-      "ok": 141,
-      "ot": 144,
-      "ol": 82,
-      "yt": 84,
-      "ch": 477,
-      "yk": 80,
-      "qo": 275
+      "ct": 82,
+      "sh": 134,
+      "ok": 89,
+      "ot": 91,
+      "ol": 58,
+      "da": 78,
+      "yt": 57,
+      "ch": 324,
+      "yk": 55,
+      "qo": 191
     },
-    "ab_boundaries": 2724
+    "ab_boundaries": 1801
   },
   "vocab": {
-    "shared_count": 1532,
-    "shared_in_a": 28343,
-    "shared_in_b": 52668
+    "shared_count": 1145,
+    "shared_in_a": 8462,
+    "shared_in_b": 15519
   },
   "ratio": {
     "ratios": [
       0.0,
       0.0,
-      4.464856230031949,
+      4.691796008869179,
       0.0,
-      1.5434027777777777
+      1.5653153153153154
     ]
   },
   "verdict": "NO_ENCAPSULATION",

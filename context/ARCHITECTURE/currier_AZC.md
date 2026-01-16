@@ -34,6 +34,63 @@ This is not "rigid vs permissive." This is **"rigid-and-uniform" vs "rigid-and-s
 
 ---
 
+## Classification Systems: Visual vs Textual Grammar
+
+**IMPORTANT:** AZC folios have **two independent classification systems** that do not align:
+
+### 1. Visual/Art-Historical Classification (Section Codes)
+
+The transcript assigns section codes based on **visual content** (illustrations):
+
+| Section | Count | Classification Criterion |
+|---------|-------|-------------------------|
+| Z (Zodiac) | 12 | Zodiac figures visible |
+| A (Astronomical) | 8 | Astronomical diagrams |
+| C (Cosmological) | 7 | Cosmological diagrams |
+| H (Herbal) | 2 | Plant illustrations (NOT diagram pages) |
+| S (Text) | 1 | Text-only page (NOT diagram page) |
+
+**Note:** H and S are in the AZC JSON (30 total) but are NOT diagram folios. Analysis should use 27 (A+Z+C).
+
+### 2. Textual Grammar Classification (Placement Patterns)
+
+The structural analysis classifies by **placement grammar**:
+
+| Family | Folios | Grammar Pattern |
+|--------|--------|-----------------|
+| Zodiac (Family 0) | 13 | Subscripted R/S codes (R1, R2, R3, S1, S2) |
+| A/C (Family 1) | 17 | Non-subscripted codes (C, P, R, S) |
+
+### The f57v Boundary Case
+
+**f57v is the critical overlap:**
+- **Section code:** C (Cosmological, by illustration)
+- **Placement grammar:** Zodiac-like (uses subscripted R1, R2, R3 codes)
+
+This means f57v is:
+- In the **Zodiac family (Family 0)** by textual grammar (13 folios including f57v)
+- In the **C section** by visual classification (7 folios including f57v)
+
+The two classifications measure different properties. Visual classification captures what the diagram depicts. Textual grammar classification captures how the text is organized.
+
+### Why This Matters
+
+When analyzing AZC folios, explicitly state which classification you're using:
+
+| Analysis Type | Use This Classification |
+|---------------|------------------------|
+| Diagram content | Visual (section codes: Z, A, C) |
+| Placement patterns | Textual grammar (Family 0 vs Family 1) |
+| Vocabulary compatibility | Either (document which) |
+| Constraint validation | Must specify grouping method |
+
+**Future tests MUST document:**
+1. Which folios were included
+2. Which classification system was used
+3. Whether H/S non-diagram folios were included
+
+---
+
 ## The Zodiac Control Scaffold (C431-C435)
 
 The Zodiac pages implement an **extremely strict placement grammar** — stricter than Currier B:
@@ -183,7 +240,7 @@ Control scaffolds tolerate these patterns. Semantic systems do not.
 | B vocabulary coverage | 69.7% |
 | A vocabulary coverage | 65.4% |
 | Shared vocabulary (A∩B) | 60.5% |
-| Unique vocabulary | 25.4% (1,529 types) |
+| Unique vocabulary | 27.4% (903 types) |
 
 AZC uses the shared core while adding diagram-specific terms.
 
@@ -195,7 +252,7 @@ AZC uses the shared core while adding diagram-specific terms.
 
 | # | Constraint |
 |---|------------|
-| C300 | 9,401 tokens (7.7%) unclassified by Currier |
+| C300 | 3,299 tokens (8.7%) unclassified by Currier |
 | C301 | AZC is HYBRID (B=69.7%, A=65.4%) |
 | C306 | Placement-coding axis established |
 | C313 | Position constrains LEGALITY not PREDICTION |

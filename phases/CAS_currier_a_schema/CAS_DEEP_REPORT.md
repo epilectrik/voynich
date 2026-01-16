@@ -1,17 +1,27 @@
 # Phase CAS-DEEP: Deep Structure Analysis of Currier A
 
 **Phase ID:** CAS-DEEP
-**Tier:** 2 (STRUCTURAL INFERENCE)
-**Status:** COMPLETE
+**Tier:** 1 (FALSIFIED)
+**Status:** **INVALIDATED** (2026-01-16)
 **Date:** 2026-01-06
 
 ---
 
-## Executive Summary
+> ## **WARNING: THIS PHASE IS INVALIDATED**
+>
+> This entire phase was based on the "64.1% block repetition" pattern (C250) which was discovered to be a **transcriber artifact**. When filtered to PRIMARY transcriber (H) only, block repetition is **0%**.
+>
+> The apparent repetition was caused by interleaved readings from multiple transcribers being misinterpreted as intentional repetition in the manuscript.
+>
+> **All findings and constraints from this phase are INVALIDATED.** See TRANSCRIBER_REVIEW.md for details.
 
-> **Currier A's repeating block structure (`[BLOCK] x N`) is a SECTION-ISOLATED, MARKER-STRATIFIED, DELIBERATE ENUMERATION SYSTEM with 100% block uniqueness across sections.**
+---
 
-This phase analyzed the internal structure of the 64.1% of Currier A entries that exhibit repeating block patterns, revealing a highly organized categorical registry.
+## ~~Executive Summary~~ INVALIDATED
+
+~~> **Currier A's repeating block structure (`[BLOCK] x N`) is a SECTION-ISOLATED, MARKER-STRATIFIED, DELIBERATE ENUMERATION SYSTEM with 100% block uniqueness across sections.**~~
+
+~~This phase analyzed the internal structure of the 64.1% of Currier A entries that exhibit repeating block patterns, revealing a highly organized categorical registry.~~
 
 ---
 

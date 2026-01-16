@@ -1,0 +1,607 @@
+{
+  "probe": "AC_ZONE_TRANSITION_ENTROPY",
+  "question": "Do A/C contexts force more frequent zone switching (C\u2194P\u2194R\u2194S)?",
+  "prediction": "A/C > Zodiac (punctuated checkpoints require more context switching)",
+  "method": {
+    "zones": [
+      "R",
+      "S",
+      "C",
+      "P"
+    ],
+    "metrics": [
+      "transition_entropy",
+      "switch_rate"
+    ],
+    "baseline": "C489 (HT \u00d7 zone diversity r=0.24)"
+  },
+  "summary": {
+    "zodiac_folios": 13,
+    "ac_folios": 14,
+    "transition_entropy": {
+      "zodiac_mean": 0.9984134751987066,
+      "ac_mean": 0.8943649761642165
+    },
+    "switch_rate": {
+      "zodiac_mean": 0.017556634960746702,
+      "ac_mean": 0.00393106190883289
+    }
+  },
+  "statistical_tests": {
+    "transition_entropy": {
+      "test": "Mann-Whitney U (one-sided, A/C > Zodiac)",
+      "u_statistic": 71.0,
+      "p_value": 0.8408207523473477,
+      "effect_size_r": 0.21978021978021978
+    },
+    "switch_rate": {
+      "test": "Mann-Whitney U (one-sided, A/C > Zodiac)",
+      "u_statistic": 13.0,
+      "p_value": 0.999933540097581,
+      "effect_size_r": 0.8571428571428572
+    }
+  },
+  "verdict": "NO SIGNAL",
+  "interpretation": "A/C and Zodiac show similar zone-switching patterns",
+  "folio_details": {
+    "f57v": {
+      "n_tokens": 382,
+      "zone_distribution": {
+        "R": 382
+      },
+      "zone_diversity": 0.0,
+      "zone_diversity_normalized": 0.0,
+      "transition_counts": {
+        "R->R": 381
+      },
+      "n_transitions": 381,
+      "transition_entropy": 0.0,
+      "transition_entropy_normalized": 0.0,
+      "n_switches": 0,
+      "switch_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f65v": {
+      "n_tokens": 121,
+      "zone_distribution": {
+        "P": 121
+      },
+      "zone_diversity": 0.0,
+      "zone_diversity_normalized": 0.0,
+      "transition_counts": {
+        "P->P": 120
+      },
+      "n_transitions": 120,
+      "transition_entropy": 0.0,
+      "transition_entropy_normalized": 0.0,
+      "n_switches": 0,
+      "switch_rate": 0.0,
+      "family": "AC"
+    },
+    "f67r1": {
+      "n_tokens": 412,
+      "zone_distribution": {
+        "P": 164,
+        "R": 199,
+        "S": 49
+      },
+      "zone_diversity": 1.4014335111463323,
+      "zone_diversity_normalized": 0.7007167555731662,
+      "transition_counts": {
+        "P->P": 163,
+        "P->R": 1,
+        "R->R": 198,
+        "R->S": 1,
+        "S->S": 48
+      },
+      "n_transitions": 411,
+      "transition_entropy": 1.4408206178664908,
+      "transition_entropy_normalized": 0.3602051544666227,
+      "n_switches": 2,
+      "switch_rate": 0.004866180048661801,
+      "family": "AC"
+    },
+    "f67r2": {
+      "n_tokens": 424,
+      "zone_distribution": {
+        "C": 257,
+        "P": 167
+      },
+      "zone_diversity": 0.9672503461056676,
+      "zone_diversity_normalized": 0.4836251730528338,
+      "transition_counts": {
+        "C->C": 256,
+        "C->P": 1,
+        "P->P": 166
+      },
+      "n_transitions": 423,
+      "transition_entropy": 0.988682776042906,
+      "transition_entropy_normalized": 0.2471706940107265,
+      "n_switches": 1,
+      "switch_rate": 0.002364066193853428,
+      "family": "AC"
+    },
+    "f67v2": {
+      "n_tokens": 166,
+      "zone_distribution": {
+        "C": 112,
+        "R": 38,
+        "S": 16
+      },
+      "zone_diversity": 1.1952502941101302,
+      "zone_diversity_normalized": 0.5976251470550651,
+      "transition_counts": {
+        "C->C": 111,
+        "C->R": 1,
+        "R->R": 37,
+        "R->S": 1,
+        "S->S": 15
+      },
+      "n_transitions": 165,
+      "transition_entropy": 1.2721810346866602,
+      "transition_entropy_normalized": 0.31804525867166505,
+      "n_switches": 2,
+      "switch_rate": 0.012121212121212121,
+      "family": "AC"
+    },
+    "f68r1": {
+      "n_tokens": 203,
+      "zone_distribution": {
+        "P": 113,
+        "S": 90
+      },
+      "zone_diversity": 0.9907201466305608,
+      "zone_diversity_normalized": 0.4953600733152804,
+      "transition_counts": {
+        "P->P": 112,
+        "P->S": 1,
+        "S->S": 89
+      },
+      "n_transitions": 202,
+      "transition_entropy": 1.0306667964821856,
+      "transition_entropy_normalized": 0.2576666991205464,
+      "n_switches": 1,
+      "switch_rate": 0.0049504950495049506,
+      "family": "AC"
+    },
+    "f68r2": {
+      "n_tokens": 245,
+      "zone_distribution": {
+        "P": 146,
+        "S": 99
+      },
+      "zone_diversity": 0.973288179882718,
+      "zone_diversity_normalized": 0.486644089941359,
+      "transition_counts": {
+        "P->P": 145,
+        "P->S": 1,
+        "S->S": 98
+      },
+      "n_transitions": 244,
+      "transition_entropy": 1.0072603589749523,
+      "transition_entropy_normalized": 0.25181508974373806,
+      "n_switches": 1,
+      "switch_rate": 0.004098360655737705,
+      "family": "AC"
+    },
+    "f68r3": {
+      "n_tokens": 252,
+      "zone_distribution": {
+        "C": 138,
+        "R": 114
+      },
+      "zone_diversity": 0.9934472383802027,
+      "zone_diversity_normalized": 0.49672361919010133,
+      "transition_counts": {
+        "C->C": 136,
+        "C->R": 1,
+        "R->R": 113,
+        "R->C": 1
+      },
+      "n_transitions": 251,
+      "transition_entropy": 1.0608855094768184,
+      "transition_entropy_normalized": 0.2652213773692046,
+      "n_switches": 2,
+      "switch_rate": 0.00796812749003984,
+      "family": "AC"
+    },
+    "f68v3": {
+      "n_tokens": 292,
+      "zone_distribution": {
+        "P": 164,
+        "S": 128
+      },
+      "zone_diversity": 0.9890076795739704,
+      "zone_diversity_normalized": 0.4945038397869852,
+      "transition_counts": {
+        "P->P": 163,
+        "P->S": 1,
+        "S->S": 127
+      },
+      "n_transitions": 291,
+      "transition_entropy": 1.0185329224281094,
+      "transition_entropy_normalized": 0.25463323060702736,
+      "n_switches": 1,
+      "switch_rate": 0.003436426116838488,
+      "family": "AC"
+    },
+    "f68v2": {
+      "n_tokens": 389,
+      "zone_distribution": {
+        "P": 129,
+        "C": 160,
+        "R": 69,
+        "S": 31
+      },
+      "zone_diversity": 1.7886518352914245,
+      "zone_diversity_normalized": 0.8943259176457122,
+      "transition_counts": {
+        "P->P": 128,
+        "P->C": 1,
+        "C->C": 159,
+        "C->R": 1,
+        "R->R": 68,
+        "R->S": 1,
+        "S->S": 30
+      },
+      "n_transitions": 388,
+      "transition_entropy": 1.8475866025905012,
+      "transition_entropy_normalized": 0.4618966506476253,
+      "n_switches": 3,
+      "switch_rate": 0.007731958762886598,
+      "family": "AC"
+    },
+    "f68v1": {
+      "n_tokens": 226,
+      "zone_distribution": {
+        "C": 226
+      },
+      "zone_diversity": 0.0,
+      "zone_diversity_normalized": 0.0,
+      "transition_counts": {
+        "C->C": 225
+      },
+      "n_transitions": 225,
+      "transition_entropy": 0.0,
+      "transition_entropy_normalized": 0.0,
+      "n_switches": 0,
+      "switch_rate": 0.0,
+      "family": "AC"
+    },
+    "f69r": {
+      "n_tokens": 482,
+      "zone_distribution": {
+        "P": 111,
+        "C": 131,
+        "R": 206,
+        "S": 34
+      },
+      "zone_diversity": 1.7926581752994175,
+      "zone_diversity_normalized": 0.8963290876497088,
+      "transition_counts": {
+        "P->P": 110,
+        "P->C": 1,
+        "C->C": 130,
+        "C->R": 1,
+        "R->R": 205,
+        "R->S": 1,
+        "S->S": 33
+      },
+      "n_transitions": 481,
+      "transition_entropy": 1.8420847458930005,
+      "transition_entropy_normalized": 0.46052118647325013,
+      "n_switches": 3,
+      "switch_rate": 0.006237006237006237,
+      "family": "AC"
+    },
+    "f69v": {
+      "n_tokens": 308,
+      "zone_distribution": {
+        "C": 308
+      },
+      "zone_diversity": 0.0,
+      "zone_diversity_normalized": 0.0,
+      "transition_counts": {
+        "C->C": 307
+      },
+      "n_transitions": 307,
+      "transition_entropy": 0.0,
+      "transition_entropy_normalized": 0.0,
+      "n_switches": 0,
+      "switch_rate": 0.0,
+      "family": "AC"
+    },
+    "f70r1": {
+      "n_tokens": 212,
+      "zone_distribution": {
+        "C": 212
+      },
+      "zone_diversity": 0.0,
+      "zone_diversity_normalized": 0.0,
+      "transition_counts": {
+        "C->C": 211
+      },
+      "n_transitions": 211,
+      "transition_entropy": 0.0,
+      "transition_entropy_normalized": 0.0,
+      "n_switches": 0,
+      "switch_rate": 0.0,
+      "family": "AC"
+    },
+    "f70r2": {
+      "n_tokens": 794,
+      "zone_distribution": {
+        "C": 405,
+        "P": 389
+      },
+      "zone_diversity": 0.9997070638970089,
+      "zone_diversity_normalized": 0.49985353194850446,
+      "transition_counts": {
+        "C->C": 404,
+        "C->P": 1,
+        "P->P": 388
+      },
+      "n_transitions": 793,
+      "transition_entropy": 1.0124083018574077,
+      "transition_entropy_normalized": 0.2531020754643519,
+      "n_switches": 1,
+      "switch_rate": 0.0012610340479192938,
+      "family": "AC"
+    },
+    "f70v2": {
+      "n_tokens": 516,
+      "zone_distribution": {
+        "R": 298,
+        "S": 213,
+        "C": 5
+      },
+      "zone_diversity": 1.0491826649576255,
+      "zone_diversity_normalized": 0.5245913324788127,
+      "transition_counts": {
+        "R->R": 295,
+        "R->S": 2,
+        "S->S": 211,
+        "S->R": 2,
+        "R->C": 1,
+        "C->C": 4
+      },
+      "n_transitions": 515,
+      "transition_entropy": 1.1220200465934331,
+      "transition_entropy_normalized": 0.2805050116483583,
+      "n_switches": 5,
+      "switch_rate": 0.009708737864077669,
+      "family": "ZODIAC"
+    },
+    "f70v1": {
+      "n_tokens": 222,
+      "zone_distribution": {
+        "R": 121,
+        "S": 101
+      },
+      "zone_diversity": 0.9941374363133618,
+      "zone_diversity_normalized": 0.4970687181566809,
+      "transition_counts": {
+        "R->R": 119,
+        "R->S": 2,
+        "S->S": 99,
+        "S->R": 1
+      },
+      "n_transitions": 221,
+      "transition_entropy": 1.0965468163076009,
+      "transition_entropy_normalized": 0.2741367040769002,
+      "n_switches": 3,
+      "switch_rate": 0.013574660633484163,
+      "family": "ZODIAC"
+    },
+    "f71r": {
+      "n_tokens": 197,
+      "zone_distribution": {
+        "R": 145,
+        "S": 52
+      },
+      "zone_diversity": 0.8326625636416438,
+      "zone_diversity_normalized": 0.4163312818208219,
+      "transition_counts": {
+        "R->R": 142,
+        "R->S": 2,
+        "S->S": 50,
+        "S->R": 2
+      },
+      "n_transitions": 196,
+      "transition_entropy": 0.9746236172866313,
+      "transition_entropy_normalized": 0.24365590432165782,
+      "n_switches": 4,
+      "switch_rate": 0.02040816326530612,
+      "family": "ZODIAC"
+    },
+    "f71v": {
+      "n_tokens": 231,
+      "zone_distribution": {
+        "R": 147,
+        "S": 84
+      },
+      "zone_diversity": 0.9456603046006402,
+      "zone_diversity_normalized": 0.4728301523003201,
+      "transition_counts": {
+        "R->R": 144,
+        "R->S": 2,
+        "S->S": 82,
+        "S->R": 2
+      },
+      "n_transitions": 230,
+      "transition_entropy": 1.0724967266557845,
+      "transition_entropy_normalized": 0.26812418166394614,
+      "n_switches": 4,
+      "switch_rate": 0.017391304347826087,
+      "family": "ZODIAC"
+    },
+    "f72r1": {
+      "n_tokens": 233,
+      "zone_distribution": {
+        "R": 162,
+        "S": 71
+      },
+      "zone_diversity": 0.8869855182502391,
+      "zone_diversity_normalized": 0.44349275912511954,
+      "transition_counts": {
+        "R->R": 159,
+        "R->S": 2,
+        "S->S": 69,
+        "S->R": 2
+      },
+      "n_transitions": 232,
+      "transition_entropy": 1.0121336787141835,
+      "transition_entropy_normalized": 0.25303341967854587,
+      "n_switches": 4,
+      "switch_rate": 0.017241379310344827,
+      "family": "ZODIAC"
+    },
+    "f72r2": {
+      "n_tokens": 237,
+      "zone_distribution": {
+        "S": 101,
+        "R": 136
+      },
+      "zone_diversity": 0.9842103114806328,
+      "zone_diversity_normalized": 0.4921051557403164,
+      "transition_counts": {
+        "S->S": 98,
+        "S->R": 3,
+        "R->R": 133,
+        "R->S": 2
+      },
+      "n_transitions": 236,
+      "transition_entropy": 1.1311641673825528,
+      "transition_entropy_normalized": 0.2827910418456382,
+      "n_switches": 5,
+      "switch_rate": 0.0211864406779661,
+      "family": "ZODIAC"
+    },
+    "f72r3": {
+      "n_tokens": 273,
+      "zone_distribution": {
+        "R": 170,
+        "S": 103
+      },
+      "zone_diversity": 0.956105077025051,
+      "zone_diversity_normalized": 0.4780525385125255,
+      "transition_counts": {
+        "R->R": 166,
+        "R->S": 3,
+        "S->S": 100,
+        "S->R": 3
+      },
+      "n_transitions": 272,
+      "transition_entropy": 1.1089630633628802,
+      "transition_entropy_normalized": 0.27724076584072005,
+      "n_switches": 6,
+      "switch_rate": 0.022058823529411766,
+      "family": "ZODIAC"
+    },
+    "f72v3": {
+      "n_tokens": 235,
+      "zone_distribution": {
+        "R": 151,
+        "S": 84
+      },
+      "zone_diversity": 0.9405434182607326,
+      "zone_diversity_normalized": 0.4702717091303663,
+      "transition_counts": {
+        "R->R": 148,
+        "R->S": 2,
+        "S->S": 82,
+        "S->R": 2
+      },
+      "n_transitions": 234,
+      "transition_entropy": 1.0655853926955097,
+      "transition_entropy_normalized": 0.2663963481738774,
+      "n_switches": 4,
+      "switch_rate": 0.017094017094017096,
+      "family": "ZODIAC"
+    },
+    "f72v2": {
+      "n_tokens": 222,
+      "zone_distribution": {
+        "R": 130,
+        "S": 92
+      },
+      "zone_diversity": 0.9787603904449516,
+      "zone_diversity_normalized": 0.4893801952224758,
+      "transition_counts": {
+        "R->R": 127,
+        "R->S": 2,
+        "S->S": 90,
+        "S->R": 2
+      },
+      "n_transitions": 221,
+      "transition_entropy": 1.1099399626052968,
+      "transition_entropy_normalized": 0.2774849906513242,
+      "n_switches": 4,
+      "switch_rate": 0.01809954751131222,
+      "family": "ZODIAC"
+    },
+    "f72v1": {
+      "n_tokens": 186,
+      "zone_distribution": {
+        "R": 127,
+        "S": 59
+      },
+      "zone_diversity": 0.9013152888907535,
+      "zone_diversity_normalized": 0.45065764444537676,
+      "transition_counts": {
+        "R->R": 124,
+        "R->S": 2,
+        "S->S": 57,
+        "S->R": 2
+      },
+      "n_transitions": 185,
+      "transition_entropy": 1.0514080913521888,
+      "transition_entropy_normalized": 0.2628520228380472,
+      "n_switches": 4,
+      "switch_rate": 0.021621621621621623,
+      "family": "ZODIAC"
+    },
+    "f73r": {
+      "n_tokens": 189,
+      "zone_distribution": {
+        "S": 66,
+        "R": 123
+      },
+      "zone_diversity": 0.9333572600179805,
+      "zone_diversity_normalized": 0.46667863000899024,
+      "transition_counts": {
+        "S->S": 63,
+        "S->R": 3,
+        "R->R": 120,
+        "R->S": 2
+      },
+      "n_transitions": 188,
+      "transition_entropy": 1.1069803721261458,
+      "transition_entropy_normalized": 0.27674509303153644,
+      "n_switches": 5,
+      "switch_rate": 0.026595744680851064,
+      "family": "ZODIAC"
+    },
+    "f73v": {
+      "n_tokens": 216,
+      "zone_distribution": {
+        "S": 86,
+        "R": 130
+      },
+      "zone_diversity": 0.9698570179131005,
+      "zone_diversity_normalized": 0.48492850895655026,
+      "transition_counts": {
+        "S->S": 83,
+        "S->R": 3,
+        "R->R": 127,
+        "R->S": 2
+      },
+      "n_transitions": 215,
+      "transition_entropy": 1.12751324250098,
+      "transition_entropy_normalized": 0.281878310625245,
+      "n_switches": 5,
+      "switch_rate": 0.023255813953488372,
+      "family": "ZODIAC"
+    }
+  }
+}
