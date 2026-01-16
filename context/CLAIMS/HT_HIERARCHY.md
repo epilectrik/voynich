@@ -111,7 +111,7 @@ These interpretations are **consistent with** the structural evidence but **not 
 | Function | Evidence |
 |----------|----------|
 | Attention maintenance during waiting | Phase-synchronized (C348), waiting-profile correlated (C341) |
-| Guild training in written form | 3.29x rare grapheme engagement, 28.5% boundary-pushing, family rotation |
+| Guild training in written form | 7.81x rare grapheme engagement, 24.5% boundary-pushing, family rotation |
 
 This is NOT "doodling" or "scribbling" - it is **deliberate skill acquisition** that doubles as attention maintenance.
 

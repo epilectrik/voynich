@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.3 | **Date:** 2026-01-13 | **Status:** FROZEN
+**Version:** 3.4 | **Date:** 2026-01-16 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -245,7 +245,11 @@ The manuscript provides **structure**; the operator supplies **meaning**:
 
 ## VII. CURRIER A - FINAL INTERPRETATION
 
-Currier A (13.6% coverage under B grammar) is structurally distinct. The Complexity-Frontier Registry (CFR) interpretation is the strongest surviving model.
+**Status: CHARACTERIZATION COMPLETE (2026-01-16)**
+
+Currier A (30.5% of tokens, 114 folios) is a **human-facing complexity-frontier registry** - a structured collection of material discriminators organized for expert navigation without semantic content.
+
+See [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) for consolidated summary.
 
 ### What Currier A Does NOT Have
 
@@ -255,13 +259,37 @@ Currier A (13.6% coverage under B grammar) is structurally distinct. The Complex
 - Hierarchical organization (flat registry)
 - Semantic categories (prefixes are markers, not types)
 
-### Complexity-Frontier Registry (CFR) Model
+### Core Structural Properties (Tier 2)
 
-Currier A externalizes regions of a shared control-space where operational similarity breaks down and fine discrimination is required.
+| Property | Evidence | Constraint |
+|----------|----------|------------|
+| LINE_ATOMIC | Each line is independent record | C233 |
+| POSITION_FREE | Zero JS divergence between positions | C234 |
+| Bigram reuse | 9.1% (clean H-only data) | C389 |
+| Sequential coherence | 1.20x MIDDLE overlap in adjacent entries | C346 |
+| DA articulation | 75.1% internal boundary marker | C422 |
+| Clustered adjacency | 41.5% in runs, working-memory sized | C424 |
 
-Equivalently described as:
-- A *variant discrimination registry* (craft view)
-- A *partitioning of continuous control space* (formal view)
+### Human-Factors Model (Tier 3)
+
+Currier A is designed for **expert navigation without meaning**:
+
+| Feature | Function |
+|---------|----------|
+| Closure markers | Visual record bracketing (-y, -n, -m at final position) |
+| Working-memory clusters | Attention stabilization (median 2, max 7) |
+| Singleton isolation | Deliberate separation points |
+| DA articulation | Within-record segmentation |
+
+### A-AZC Interface (Tier 3)
+
+Entry vocabulary composition predicts AZC activation breadth:
+
+| Factor | Effect on Breadth |
+|--------|-------------------|
+| Hub-dominant | Broader compatibility |
+| Tail-dominant | Narrower compatibility |
+| Universal vs Tail asymmetry | 0.58 vs 0.31 breadth |
 
 ### Why Failure-Memory Was Rejected
 
@@ -273,16 +301,6 @@ Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
 **Conclusion:** Apparent correlation was entirely driven by token frequency. High-frequency tokens appear in complex structures in both systems. When frequency is controlled, no residual signal exists.
 
 **Currier A is complexity-aligned, not risk-encoding.**
-
-### Clustering Structure
-
-31% of adjacent A entries share vocabulary (clustered); 69% do not (singletons):
-- Mean cluster size: 3 entries (range 2-20)
-- Autocorrelation r=0.80
-- 68% vocabulary divergence between populations
-- No hierarchy, headers, or group boundaries
-
-Clustering reflects **where distinctions matter**, not categorical organization.
 
 ### Multiplicity Encoding
 
@@ -417,7 +435,7 @@ These interpretations are plausible but not constraining:
 1. Maintained operator attention/alertness during waiting phases
 2. Trained guild members in the art of the written form
 
-This is NOT "doodling" or "scribbling" - the evidence (3.29x rare grapheme engagement, 28.5% boundary-pushing forms, systematic family rotation) shows deliberate skill acquisition that doubles as attention maintenance.
+This is NOT "doodling" or "scribbling" - the evidence (7.81x rare grapheme engagement, 24.5% boundary-pushing forms, systematic family rotation) shows deliberate skill acquisition that doubles as attention maintenance.
 
 **Mark this distinction clearly:** Structural findings are facts; interpretations are hypotheses.
 

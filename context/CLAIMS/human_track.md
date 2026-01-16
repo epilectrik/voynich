@@ -211,7 +211,7 @@ This statement survived all tests in the HT-INFO exploration cycle.
 1. Maintained operator attention/alertness during waiting phases
 2. Trained guild members in the art of the written form
 
-This is NOT "doodling" or "scribbling" - the evidence (3.29x rare grapheme engagement, 28.5% boundary-pushing forms, systematic family rotation) shows deliberate skill acquisition.
+This is NOT "doodling" or "scribbling" - the evidence (7.81x rare grapheme engagement, 24.5% boundary-pushing forms, systematic family rotation) shows deliberate skill acquisition.
 
 **System-specific refinement:** HT shows **three distinct anchoring pressures**:
 - Currier A: Registry layout (entry boundaries)

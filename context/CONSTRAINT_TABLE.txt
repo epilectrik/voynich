@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-15
+CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-16
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -91,7 +91,7 @@ C205	Residue 82% section-exclusive	2	B	in: operations
 C206	Sections not compressible to regimes	2	B	in: operations
 C207	0/18 micro-cipher tests passed	2	B	in: operations
 C208	Residue compatible with non-encoding dynamics	2	B	in: operations
-C209	Attentional pacing wins (6/8)	2	HT	in: human_track
+C209	Attentional pacing UNDERDETERMINED (4/8)	2	HT	in: human_track
 C210	External alignments robust to HT removal	2	B	in: operations
 C211	Seasonal ordering underpowered	2	B	in: operations
 C212	93% plants peak May-August	2	B	in: operations
@@ -120,9 +120,9 @@ C237	A = DATABASE_LIKE	2	A	in: currier_a
 C238	Global Schema, Local Instantiation	2	A	in: currier_a
 C239	A/B separation = DESIGNED (0.0% cross)	2	A↔B	in: currier_a
 C240	A = NON_SEQUENTIAL_CATEGORICAL_REGISTRY	2	A	-> C240_currier_a_registry.md
-C241	daiin A-enriched (1.55x), ol B-enriched (0.21x)	2	A	in: currier_a
+C241	daiin A-enriched (1.62x), ol B-enriched (0.24x)	2	A	in: currier_a
 C242	daiin neighborhood flip (content in A, grammar in B)	2	A	in: currier_a
-C243	daiin-ol adjacent: 54 in B, 27 in A	2	A	in: currier_a
+C243	daiin-ol adjacent: 16 in B, 10 in A	2	A	in: currier_a
 C244	Infrastructure reuse without semantic transfer	2	A	in: currier_a
 C245	MINIMAL vocabulary: exactly 2 tokens (daiin, ol)	2	A	in: currier_a
 C246	4 mandatory criteria for structural primitives	2	A	in: currier_a

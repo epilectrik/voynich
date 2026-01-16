@@ -41,8 +41,8 @@ This file is the **PRIMARY ENTRY POINT** for questions about HT.
 2. Trained guild members in the art of the written form
 
 This is NOT "doodling" or "scribbling" - the evidence shows highly structured, intentional practice:
-- 3.29x rare grapheme engagement (practicing difficult forms)
-- 28.5% boundary-pushing forms (exploring morphological limits)
+- 7.81x rare grapheme engagement (practicing difficult forms)
+- 24.5% boundary-pushing forms (exploring morphological limits)
 - Section-level family rotation (systematic curriculum)
 - Disjoint prefix vocabulary (separate training notation)
 - 71.3% compositional (rule-following, not random)
