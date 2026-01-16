@@ -2,7 +2,7 @@
 
 **Method:** KMEANS
 **Number of Regimes:** 4
-**Date:** 2026-01-04
+**Date:** 2026-01-15
 
 ---
 
@@ -181,4 +181,4 @@
 
 > **"OPS-2 is complete. Stable control-strategy regimes have been identified using purely operational metrics. No semantic or historical interpretation has been introduced."**
 
-*Generated: 2026-01-04T21:03:10.160090*
+*Generated: 2026-01-15T23:46:21.958339*

@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "phase": "20D",
+    "title": "Canonical Grammar Construction",
+    "timestamp": "2026-01-15T23:26:30.416159"
+  },
+  "terminals": {
+    "count": 20,
+    "list": [
+      {
+        "id": 33,
+        "symbol": "qokeey",
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "id": 31,
+        "symbol": "chey",
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "id": 34,
+        "symbol": "cheey",
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "id": 13,
+        "symbol": "okaiin",
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "id": 8,
+        "symbol": "chedy",
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "id": 14,
+        "symbol": "otal",
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "id": 30,
+        "symbol": "dar",
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "id": 29,
+        "symbol": "saiin",
+        "role": "AUXILIARY"
+      },
+      {
+        "id": 23,
+        "symbol": "dy",
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "id": 32,
+        "symbol": "qokal",
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "id": 24,
+        "symbol": "dol",
+        "role": "AUXILIARY"
+      },
+      {
+        "id": 9,
+        "symbol": "aiin",
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "id": 28,
+        "symbol": "sain",
+        "role": "AUXILIARY"
+      },
+      {
+        "id": 10,
+        "symbol": "daiin",
+        "role": "CORE_CONTROL"
+      },
+      {
+        "id": 7,
+        "symbol": "ar",
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "id": 11,
+        "symbol": "ol",
+        "role": "CORE_CONTROL"
+      },
+      {
+        "id": 35,
+        "symbol": "chal",
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "id": 27,
+        "symbol": "ytar",
+        "role": "AUXILIARY"
+      },
+      {
+        "id": 20,
+        "symbol": "sy",
+        "role": "AUXILIARY"
+      },
+      {
+        "id": 6,
+        "symbol": "dchey",
+        "role": "AUXILIARY"
+      }
+    ]
+  },
+  "non_terminals": {
+    "recipe_types": 8,
+    "cycle_types": [
+      "4-CYCLE",
+      "3-CYCLE"
+    ],
+    "list": [
+      {
+        "id": "RECIPE_7",
+        "member_count": 50,
+        "mandatory": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14
+        ]
+      },
+      {
+        "id": "RECIPE_4",
+        "member_count": 12,
+        "mandatory": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          20,
+          23,
+          24
+        ]
+      },
+      {
+        "id": "RECIPE_3",
+        "member_count": 8,
+        "mandatory": [
+          8,
+          9,
+          10,
+          13,
+          14,
+          23,
+          24,
+          28,
+          30,
+          31
+        ]
+      },
+      {
+        "id": "RECIPE_8",
+        "member_count": 6,
+        "mandatory": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          22,
+          23
+        ]
+      },
+      {
+        "id": "RECIPE_5",
+        "member_count": 2,
+        "mandatory": [
+          4,
+          6,
+          8,
+          10,
+          13,
+          14,
+          23,
+          24,
+          26,
+          28
+        ]
+      },
+      {
+        "id": "RECIPE_6",
+        "member_count": 2,
+        "mandatory": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "id": "RECIPE_1",
+        "member_count": 1,
+        "mandatory": [
+          1,
+          6,
+          7,
+          8,
+          10,
+          16,
+          18,
+          19,
+          23,
+          24
+        ]
+      },
+      {
+        "id": "RECIPE_2",
+        "member_count": 1,
+        "mandatory": [
+          5,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          16,
+          20,
+          23
+        ]
+      }
+    ]
+  },
+  "productions": {
+    "count": 7,
+    "rules": [
+      {
+        "rule": "ENTRY -> TOPIC PRIMARY+ SECONDARY* MODIFIER* TERMINAL?",
+        "description": "Entry structure follows slot grammar"
+      },
+      {
+        "rule": "TOPIC -> CLASS_TOPIC",
+        "description": "Topic position filled by topic-class tokens"
+      },
+      {
+        "rule": "PRIMARY -> CLASS_PRIMARY | CLASS_PRIMARY CLASS_PRIMARY",
+        "description": "One or two primary content tokens"
+      },
+      {
+        "rule": "SECONDARY -> CLASS_SECONDARY+",
+        "description": "Variable secondary content"
+      },
+      {
+        "rule": "MODIFIER -> CLASS_MODIFIER?",
+        "description": "Optional modifier"
+      },
+      {
+        "rule": "TERMINAL -> CLASS_TERMINAL",
+        "description": "Terminal position"
+      },
+      {
+        "rule": "REPETITION -> TOKEN{n}",
+        "description": "Token repeated n times encodes parameter",
+        "parameter": "n = 1..max"
+      }
+    ]
+  },
+  "constraints": {
+    "forbidden_count": 17,
+    "structural_count": 1,
+    "total": 18,
+    "sample": [
+      {
+        "type": "FORBIDDEN",
+        "pattern": "shey -> aiin",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "shey -> al",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "shey -> c",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "chol -> r",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "chedy -> ee",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "dy -> aiin",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "dy -> chey",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "l -> chol",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "or -> dal",
+        "reason": "Phase 18 forbidden transition"
+      },
+      {
+        "type": "FORBIDDEN",
+        "pattern": "chey -> chedy",
+        "reason": "Phase 18 forbidden transition"
+      }
+    ]
+  },
+  "parameters": {
+    "encoding": "MIXED",
+    "repetition_levels": [
+      1,
+      3,
+      7,
+      12,
+      "n"
+    ],
+    "slot_positions": 10
+  },
+  "validation": {
+    "samples_tested": 100,
+    "parse_coverage": 1.0,
+    "rejection_accuracy": 1.0,
+    "forbidden_violations_found": 0
+  },
+  "GRAMMAR_COMPLETE": true,
+  "INTERPRETATION": "Grammar uses 20 terminal symbols, 8 recipe types, 7 production rules. Coverage: 100.0%, rejection accuracy: 100.0%."
+}

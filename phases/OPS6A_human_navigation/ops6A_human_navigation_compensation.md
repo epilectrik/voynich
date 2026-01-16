@@ -1,6 +1,6 @@
 # OPS-6.A: Human-Navigation Compensation Analysis
 
-**Generated:** 2026-01-04T22:49:33.717379
+**Generated:** 2026-01-15T23:48:11.227683
 
 ---
 
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Spearman rho (density) | -0.1896 |
-| p-value (density) | 0.0861 |
-| Spearman rho (diversity) | 0.2771 |
-| Effect size | -1.755 |
-| N folios | 83 |
+| Spearman rho (density) | -0.1992 |
+| p-value (density) | 0.0728 |
+| Spearman rho (diversity) | 0.4122 |
+| Effect size | -1.696 |
+| N folios | 82 |
 
 **Status:** NOT_SUPPORTED
 
-**Interpretation:** Correlation rho=-0.1896 (p=0.0861); negative relationship
+**Interpretation:** Correlation rho=-0.1992 (p=0.0728); negative relationship
 
 ---
 
@@ -34,14 +34,14 @@
 
 | Region | Count | Mean Density | Mean Diversity |
 |--------|-------|--------------|----------------|
-| Safe | 74 | 0.8484 | 0.3319 |
-| Trap | 9 | 0.8246 | 0.3359 |
+| Safe | 73 | 0.8518 | 0.7361 |
+| Trap | 9 | 0.8255 | 0.8423 |
 
-**Density Effect Size:** -0.597
+**Density Effect Size:** -0.661
 
-**Status:** NOT_DETECTED
+**Status:** DETECTED
 
-**Interpretation:** Trap regions (n=9): density effect=-0.597, diversity effect=0.036
+**Interpretation:** Trap regions (n=9): density effect=-0.661, diversity effect=0.878
 
 ---
 
@@ -54,12 +54,12 @@
 
 | Metric | Safe | Trap |
 |--------|------|------|
-| N folios | 74 | 9 |
-| Mean max run | 60.36 | 45.33 |
-| Mean avg run | 7.1 | 6.1 |
+| N folios | 73 | 9 |
+| Mean max run | 26.96 | 18.67 |
+| Mean avg run | 7.11 | 6.0 |
 
-**Effect Size:** -0.539
+**Effect Size:** -0.785
 
 **Status:** NOT_SUPPORTED
 
-**Interpretation:** Trap regions show shorter wait annotations (d=-0.539)
+**Interpretation:** Trap regions show shorter wait annotations (d=-0.785)

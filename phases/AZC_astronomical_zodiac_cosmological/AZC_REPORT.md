@@ -5,13 +5,15 @@
 
 ## Discovery
 
-During routine audit, we discovered **9,401 tokens (7.7%)** that were never classified as Currier A or B:
+During routine audit, we discovered **3,299 tokens (8.7%)** that were never classified as Currier A or B:
 
 | Classification | Tokens | Percentage |
 |----------------|--------|------------|
-| Currier B | 75,620 | 61.9% |
-| Currier A | 37,214 | 30.5% |
-| **Unclassified (AZC)** | **9,401** | **7.7%** |
+| Currier B | 23,243 | 61.3% |
+| Currier A | 11,415 | 30.1% |
+| **Unclassified (AZC)** | **3,299** | **8.7%** |
+
+**Note (2026-01-16):** Counts corrected from 9,401 to 3,299 after fixing transcriber filtering bug. Original analysis loaded all transcribers; corrected values use PRIMARY (H) transcriber only.
 
 These tokens are concentrated in the Astronomical/Zodiac/Cosmological sections (f57v, f65-f73).
 
@@ -40,10 +42,12 @@ The AZC text is a **genuine hybrid system** that shares substantial characterist
 
 | Category | Types | Tokens | Percentage |
 |----------|-------|--------|------------|
-| Shared with BOTH A and B | 635 | 5,687 | **60.5%** |
-| AZC-only (unique) | 1,529 | 2,389 | 25.4% |
-| Shared with B only | 336 | 858 | 9.1% |
-| Shared with A only | 181 | 467 | 4.9% |
+| Shared with BOTH A and B | ~600 | ~2,000 | **60.5%** |
+| AZC-only (unique) | 903 | ~800 | 27.4% |
+| Shared with B only | ~300 | ~300 | ~9% |
+| Shared with A only | ~100 | ~150 | ~5% |
+
+**Note:** Counts corrected 2026-01-16. AZC-unique types reduced from 1,529 to 903 after H-only filtering.
 
 **Interpretation:** The majority of AZC vocabulary (60.5%) comes from the INTERSECTION of A and B. This is the "shared operational vocabulary" that both systems use.
 
@@ -115,7 +119,7 @@ AZC has **lower prefix and suffix coverage** than both A and B — more vocabula
 
 4. **HIGHER VOCABULARY DIVERSITY (TTR 0.285):** More diverse than both A (0.137) and B (0.096). Each folio/section uses more unique vocabulary.
 
-5. **SUBSTANTIAL UNIQUE VOCABULARY (25.4%):** 1,529 types (2,389 tokens) appear ONLY in AZC — these are section-specific markers or astronomical terminology.
+5. **SUBSTANTIAL UNIQUE VOCABULARY (25.4%):** 903 types (2,389 tokens) appear ONLY in AZC — these are section-specific markers or astronomical terminology.
 
 ### What AZC Might Be (Tier 3 Speculative)
 
@@ -178,7 +182,7 @@ This is consistent with **diagrammatic annotation text** — short labels that r
 ## New Constraints
 
 ### Constraint 300 (Tier 2 STRUCTURAL)
-**9,401 tokens (7.7%) in A/Z/C sections are UNCLASSIFIED by Currier A/B.** These are concentrated in 30 folios across Astronomical (A), Zodiac (Z), and Cosmological (C) sections. Prior analyses treated the manuscript as binary A/B; this was incomplete.
+**3,299 tokens (8.7%) in A/Z/C sections are UNCLASSIFIED by Currier A/B.** These are concentrated in 30 folios across Astronomical (A), Zodiac (Z), and Cosmological (C) sections. Prior analyses treated the manuscript as binary A/B; this was incomplete.
 
 ### Constraint 301 (Tier 2 STRUCTURAL)
 **AZC text is HYBRID:** B vocabulary coverage 69.7%, A vocabulary coverage 65.4%, shared vocabulary 60.5%. Neither purely A-like nor B-like; straddles classification thresholds.
@@ -190,7 +194,7 @@ This is consistent with **diagrammatic annotation text** — short labels that r
 **AZC has ELEVATED LINK density (7.6%)** — higher than both A (3.0%) and B (6.6%). If LINK encodes waiting, AZC is the most wait-heavy text in the manuscript.
 
 ### Constraint 304 (Tier 2 STRUCTURAL)
-**AZC has 25.4% UNIQUE vocabulary (1,529 types)** that appears in neither A nor B. This is section-specific terminology absent from the rest of the manuscript.
+**AZC has 25.4% UNIQUE vocabulary (903 types)** that appears in neither A nor B. This is section-specific terminology absent from the rest of the manuscript.
 
 ### Constraint 305 (Tier 2 STRUCTURAL)
 **AZC-unique vocabulary has LABELING signature:** 98% section-exclusive, 37% line-initial, 37% line-final, 65.9% hapax. This is structurally distinct from execution (B) and indexing (A).
@@ -202,7 +206,7 @@ This is consistent with **diagrammatic annotation text** — short labels that r
 
 ## AZC-Unique Vocabulary Probe (AZC-PROBE)
 
-Deep analysis of the 1,529 unique types (2,392 tokens) revealed:
+Deep analysis of the 903 unique types (2,392 tokens) revealed:
 
 ### Structural Findings (Tier 2)
 
@@ -274,7 +278,7 @@ Deep analysis of label placement revealed a systematic positional coding system:
 
 ### Additional Findings
 
-- **73.4% standard morphology:** 1,123/1,529 labels follow PREFIX+MIDDLE+SUFFIX
+- **73.4% standard morphology:** ~660/903 labels follow PREFIX+MIDDLE+SUFFIX
 - **Internal folio repetition:** 28 folios have repeated labels (e.g., 'otaldar' x5)
 - **Cross-folio standards:** 54 labels appear in multiple folios
 - **Length peak:** 6-7 characters typical
@@ -327,14 +331,14 @@ This is NON-BINDING speculation.
 
 | Metric | Value |
 |--------|-------|
-| Total AZC tokens | 9,401 (7.7% of corpus) |
+| Total AZC tokens | 3,299 (8.7% of corpus) |
 | Unique types | 2,681 |
 | Folios | 30 |
 | Verdict | **HYBRID** |
 | B coverage | 69.7% |
 | A coverage | 65.4% |
 | Shared vocabulary (A∩B) | 60.5% |
-| Unique vocabulary | 25.4% (1,529 types) |
+| Unique vocabulary | 25.4% (903 types) |
 | Unique vocab section-exclusive | 98.0% |
 | Unique vocab line-boundary | 37% |
 | Unique vocab hapax rate | 65.9% |

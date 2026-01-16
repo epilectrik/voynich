@@ -46,7 +46,11 @@ def load_all_tokens_ordered():
         header = f.readline()
         for line_idx, line in enumerate(f):
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
                 currier = parts[6].strip('"').strip()
                 token = parts[0].strip('"').strip().lower()
                 folio = parts[2].strip('"').strip()

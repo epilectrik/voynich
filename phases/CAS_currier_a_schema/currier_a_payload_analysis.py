@@ -15,7 +15,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_currier_a_lines():
-    """Load Currier A data grouped by line."""
+    """Load Currier A data grouped by line (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     lines = defaultdict(lambda: {'tokens': [], 'section': '', 'folio': ''})
@@ -25,7 +25,12 @@ def load_currier_a_lines():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()

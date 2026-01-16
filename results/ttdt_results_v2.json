@@ -1,0 +1,77 @@
+{
+  "test": "TTDT_v2",
+  "question": "Do B folios define distinct terminal profiles beyond REGIME?",
+  "data": {
+    "n_folios": 83,
+    "n_features": 13,
+    "feature_names": [
+      "mean_cycle_length",
+      "cycle_regularity",
+      "link_density",
+      "kernel_contact_ratio",
+      "hazard_density",
+      "near_miss_count",
+      "recovery_ops_count",
+      "intervention_frequency",
+      "intervention_diversity",
+      "phase_ordering_rigidity",
+      "kernel_distance_mean",
+      "compression_ratio",
+      "terminal_state_numeric"
+    ],
+    "regime_distribution": {
+      "REGIME_4": 25,
+      "REGIME_2": 11,
+      "REGIME_3": 16,
+      "REGIME_1": 31
+    }
+  },
+  "raw_clustering": {
+    "best_k": 2,
+    "best_silhouette": 0.24396651469104152,
+    "regime_ari": 0.6229842515161711,
+    "all_k": {
+      "2": 0.24396651469104152,
+      "3": 0.2365115001001475,
+      "4": 0.2159544837992722,
+      "5": 0.2228243931682436,
+      "6": 0.1932684763140272,
+      "8": 0.2018091393366279,
+      "10": 0.2126505701360221,
+      "15": 0.20843998922854592,
+      "20": 0.21873687473805517,
+      "30": 0.19646651296888062,
+      "40": 0.19586742394336587,
+      "50": 0.140221954488804,
+      "60": 0.12478624799447663,
+      "70": 0.07963793107366289,
+      "80": 0.022756798690742413,
+      "82": 0.008603896863589982
+    }
+  },
+  "residual_clustering": {
+    "best_k": 4,
+    "best_silhouette": 0.19182331181464568,
+    "all_k": {
+      "2": 0.16485513976851068,
+      "3": 0.16271641232093562,
+      "4": 0.19182331181464568,
+      "5": 0.16042657916667236,
+      "6": 0.15972930569720037,
+      "8": 0.16374036089451452,
+      "10": 0.15960258840664832,
+      "15": 0.1600454705069275,
+      "20": 0.17664760881131342,
+      "30": 0.15870314962814777,
+      "40": 0.14309188024441896,
+      "50": 0.12389278040938802,
+      "60": 0.10756811079373013,
+      "70": 0.07864165741335027,
+      "80": 0.021844740619718347,
+      "82": 0.005413063154980172
+    }
+  },
+  "verdict": "FALSIFIED",
+  "explanation": "Optimal clustering at k=4 ~= REGIME count. B encodes REGIME, not outcomes",
+  "implication_for_83": "B primarily encodes REGIME. 83:83 cannot be explained by outcome differentiation."
+}

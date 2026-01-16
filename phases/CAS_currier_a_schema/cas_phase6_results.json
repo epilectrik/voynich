@@ -1,4 +1,76 @@
 {
   "adjacency": {
     "transitions": {
-      
+      "('A', 'A')": 11402,
+      "('A', 'B')": 13,
+      "('B', 'B')": 23213,
+      "('B', 'A')": 12
+    },
+    "cross_pct": 0.0007217090069284065,
+    "same_pct": 0.9992782909930716
+  },
+  "boundary": {
+    "pure_a": 2316,
+    "pure_b": 3803,
+    "mixed": 1144,
+    "mixed_pct": 0.15751067052182294
+  },
+  "vocab": {
+    "vocab_a": 3446,
+    "vocab_b": 4946,
+    "shared": 1145,
+    "jaccard": 0.15799641230854147,
+    "top_shared": [
+      "daiin",
+      "chol",
+      "chor",
+      "s",
+      "dy",
+      "shol",
+      "sho",
+      "chy",
+      "ol",
+      "cthy",
+      "or",
+      "dar",
+      "dain",
+      "dal",
+      "chey",
+      "aiin",
+      "cheol",
+      "shor",
+      "shy",
+      "y"
+    ]
+  },
+  "section": {
+    "section_langs": {
+      "T": {
+        "A": 944,
+        "B": 682
+      },
+      "H": {
+        "A": 7903,
+        "B": 3441
+      },
+      "B": {
+        "A": 0,
+        "B": 6938
+      },
+      "C": {
+        "A": 0,
+        "B": 1485
+      },
+      "P": {
+        "A": 2568,
+        "B": 0
+      },
+      "S": {
+        "A": 0,
+        "B": 10680
+      }
+    }
+  },
+  "verdict": "DESIGNED_SEPARATION",
+  "interpretation": "\nThe A/B separation appears DESIGNED, not accidental:\n- A and B rarely appear adjacent\n- Boundaries align with folio/section structure\n- Vocabularies are largely disjoint\n- This suggests TWO INTENTIONAL SYSTEMS, not author drift\n        "
+}

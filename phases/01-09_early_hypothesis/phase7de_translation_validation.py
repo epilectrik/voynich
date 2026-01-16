@@ -50,7 +50,7 @@ random.seed(RANDOM_SEED)
 # =============================================================================
 
 def load_corpus() -> List[Dict]:
-    """Load the Voynich corpus."""
+    """Load the Voynich corpus (PRIMARY transcriber H only)."""
     filepath = 'data/transcriptions/interlinear_full_words.txt'
     words = []
     seen = set()
@@ -58,6 +58,11 @@ def load_corpus() -> List[Dict]:
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to PRIMARY transcriber (H) only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             word = row.get('word', '').strip().strip('"')
             folio = row.get('folio', '').strip().strip('"')
             line_num = row.get('line_number', '').strip().strip('"')

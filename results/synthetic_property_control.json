@@ -1,0 +1,33 @@
+{
+  "test": "SYNTHETIC_PROPERTY_CONTROL",
+  "actual_metrics": {
+    "n_folios": 114,
+    "n_vocab": 3105,
+    "universal": 16,
+    "hub_ratio": 0.006216006216006216,
+    "clusters": 33,
+    "uniqueness": 0.7272141706924315
+  },
+  "property_metrics": {
+    "universal": 65,
+    "hub_ratio": 0.09078212290502793,
+    "clusters": 56,
+    "uniqueness": 0.4148862853204686
+  },
+  "uniform_metrics": {
+    "universal": 0,
+    "hub_ratio": 0.0,
+    "clusters": 0,
+    "uniqueness": 0.1671784373933811
+  },
+  "failures": [
+    "Hub/Tail ratio: Property model WORSE than uniform",
+    "Cluster count: Property model off by 23",
+    "Uniqueness: Property model shows 41.5% vs Voynich 72.7%"
+  ],
+  "matches": [
+    "Universal MIDDLEs: Property model in range"
+  ],
+  "verdict": "PROPERTY MODEL FAILS",
+  "interpretation": "The synthetic property-based registry CANNOT reproduce the observed\nVoynich MIDDLE distribution. Key failures:\n\n1. Hub/tail rationing differs from Voynich pattern\n2. Cluster structure doesn't match\n3. Uniqueness distribution is wrong\n\nThis provides NEGATIVE EVIDENCE against interpreting MIDDLEs as\nencoding latent material properties. The Voynich structure arises\nfrom something OTHER than property composition.\n\nThe \"incompatibility manifold\" interpretation is DEFENDED:\n- A registers don't enumerate property combinations\n- They enumerate regions defined by constraint avoidance"
+}

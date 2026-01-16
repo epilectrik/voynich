@@ -13,7 +13,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_currier_a_lines():
-    """Load Currier A data grouped by line."""
+    """Load Currier A data grouped by line (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     lines = defaultdict(lambda: {'tokens': [], 'section': '', 'folio': ''})
@@ -23,7 +23,12 @@ def load_currier_a_lines():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()
@@ -391,10 +396,13 @@ def main():
 
     block_markers, block_with, block_without, block_counts = extract_markers_from_entries(block_entries, "BLOCK")
     print(f"\nBlock entries:")
-    print(f"  With markers: {block_with} ({100*block_with/len(block_entries):.1f}%)")
-    print(f"  Without markers: {block_without} ({100*block_without/len(block_entries):.1f}%)")
-    if block_counts:
-        print(f"  Avg markers per entry: {sum(block_counts)/len(block_counts):.1f}")
+    if len(block_entries) > 0:
+        print(f"  With markers: {block_with} ({100*block_with/len(block_entries):.1f}%)")
+        print(f"  Without markers: {block_without} ({100*block_without/len(block_entries):.1f}%)")
+        if block_counts:
+            print(f"  Avg markers per entry: {sum(block_counts)/len(block_counts):.1f}")
+    else:
+        print("  No block entries found (0% block repetition with H-only data)")
 
     nonblock_markers, nonblock_with, nonblock_without, nonblock_counts = extract_markers_from_entries(nonblock_entries, "NON-BLOCK")
     print(f"\nNon-block entries:")

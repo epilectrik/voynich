@@ -1,0 +1,33 @@
+{
+  "repetition": {
+    "consecutive_a": 102,
+    "consecutive_b": 198,
+    "block_pattern": "INVALIDATED (0% with H-only)"
+  },
+  "hub_usage": {
+    "top10_coverage": 0.14460267607451707,
+    "hub_overlap": 6,
+    "top10": [
+      "chedy",
+      "ol",
+      "shedy",
+      "aiin",
+      "daiin",
+      "qokeedy",
+      "qokain",
+      "qokedy",
+      "qokeey",
+      "or"
+    ]
+  },
+  "scheduling": {
+    "kernel_mean": 0.3531539976786803,
+    "kernel_std": 0.0909268019062166,
+    "variation_detected": 1.0
+  },
+  "ht_density": {
+    "overall": 0.06457858279912232,
+    "mean_by_folio": 0.07099402273650525,
+    "std_by_folio": 0.0298031812107591
+  }
+}

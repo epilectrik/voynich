@@ -1,0 +1,133 @@
+{
+  "test": "AZC_ZODIAC_INTERNAL_STRATIFICATION",
+  "question": "Do different Zodiac folios preferentially admit different regions of Currier-A incompatibility space?",
+  "framing_note": "This is NOT product routing. AZC filters constraint bundles; product types are downstream inferences.",
+  "zodiac_folios_analyzed": [
+    "f70v1",
+    "f70v2",
+    "f71r",
+    "f71v",
+    "f72r1",
+    "f72r2",
+    "f72r3",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f73r",
+    "f73v",
+    "f57v"
+  ],
+  "active_folios": [
+    "f70v1",
+    "f70v2",
+    "f71r",
+    "f71v",
+    "f72r1",
+    "f72r2",
+    "f72r3",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f73r",
+    "f73v",
+    "f57v"
+  ],
+  "products": [
+    "OIL_RESIN",
+    "PRECISION",
+    "WATER_GENTLE",
+    "WATER_STANDARD"
+  ],
+  "exclusive_middle_counts": {
+    "PRECISION": 430,
+    "WATER_GENTLE": 450,
+    "OIL_RESIN": 380,
+    "WATER_STANDARD": 1517
+  },
+  "folio_product_matrix": {
+    "f70v1": {
+      "PRECISION": 1,
+      "WATER_GENTLE": 2,
+      "OIL_RESIN": 3,
+      "WATER_STANDARD": 5
+    },
+    "f70v2": {
+      "PRECISION": 1,
+      "WATER_GENTLE": 1,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 2
+    },
+    "f71r": {
+      "PRECISION": 3,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 7
+    },
+    "f71v": {
+      "PRECISION": 2,
+      "WATER_STANDARD": 7
+    },
+    "f72r1": {
+      "PRECISION": 1,
+      "WATER_STANDARD": 4
+    },
+    "f72r2": {
+      "PRECISION": 3,
+      "OIL_RESIN": 2,
+      "WATER_STANDARD": 5
+    },
+    "f72r3": {
+      "PRECISION": 4,
+      "WATER_GENTLE": 2,
+      "OIL_RESIN": 2,
+      "WATER_STANDARD": 8
+    },
+    "f72v1": {
+      "PRECISION": 1,
+      "WATER_GENTLE": 2,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 4
+    },
+    "f72v2": {
+      "PRECISION": 3,
+      "WATER_GENTLE": 1,
+      "WATER_STANDARD": 5
+    },
+    "f72v3": {
+      "PRECISION": 2,
+      "OIL_RESIN": 2,
+      "WATER_STANDARD": 5
+    },
+    "f73r": {
+      "PRECISION": 1,
+      "WATER_STANDARD": 7
+    },
+    "f73v": {
+      "PRECISION": 3,
+      "WATER_GENTLE": 2,
+      "WATER_STANDARD": 5
+    },
+    "f57v": {
+      "WATER_GENTLE": 1,
+      "OIL_RESIN": 1,
+      "WATER_STANDARD": 4
+    }
+  },
+  "distribution_entropies": {
+    "OIL_RESIN": 2.8731406795131336,
+    "PRECISION": 3.4030741894285694,
+    "WATER_GENTLE": 2.7321588913645702,
+    "WATER_STANDARD": 3.6315414333769014
+  },
+  "chi_squared": {
+    "statistic": 27.315767258142927,
+    "p_value": 0.8506757200791641,
+    "degrees_of_freedom": 36
+  },
+  "verdict": "NO STRATIFICATION",
+  "interpretation": "Zodiac multiplicity exists purely for coverage optimality",
+  "outcome_key": {
+    "STRONG_STRATIFICATION": "p < 0.01 - Zodiac has internal legality stratification",
+    "WEAK_STRATIFICATION": "0.01 < p < 0.05 - Stratification exists but shallow",
+    "NO_STRATIFICATION": "p > 0.05 - Zodiac multiplicity = coverage optimality"
+  }
+}

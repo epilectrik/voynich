@@ -1,0 +1,45 @@
+{
+  "test": "MULTI_RECIPE_COMPLIANCE",
+  "forbidden_transitions": 1,
+  "recipes_tested": 3,
+  "recipes_compliant": 3,
+  "results": [
+    {
+      "recipe": "Violet Water",
+      "german": "Veilchenwasser",
+      "degree": 1,
+      "sequence_length": 8,
+      "violations": 0,
+      "violation_details": [],
+      "warnings": 0,
+      "hazard_issues": 0,
+      "status": "COMPLIANT"
+    },
+    {
+      "recipe": "Rosemary Oil",
+      "german": "Rosmarinoel",
+      "degree": 3,
+      "sequence_length": 16,
+      "violations": 0,
+      "violation_details": [],
+      "warnings": 0,
+      "hazard_issues": 0,
+      "status": "COMPLIANT"
+    },
+    {
+      "recipe": "Amber Oil",
+      "german": "Bernsteinoel",
+      "degree": 4,
+      "sequence_length": 17,
+      "violations": 0,
+      "violation_details": [],
+      "warnings": 0,
+      "hazard_issues": 1,
+      "status": "COMPLIANT"
+    }
+  ],
+  "summary": {
+    "verdict": "PASS",
+    "interpretation": "All recipes comply with grammar constraints (robustness confirmed)"
+  }
+}

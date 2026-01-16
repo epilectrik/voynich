@@ -1,0 +1,111 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "test": "T1_POSITIONAL_ALIGNMENT",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "hypothesis": "Puff chapter order correlates with B folio order",
+  "prediction": "Front-loaded flowers <-> front-loaded REGIME_1",
+  "puff_structure": {
+    "front": {
+      "count": 11,
+      "categories": {
+        "FLOWER": 11
+      }
+    },
+    "middle": {
+      "count": 60,
+      "categories": {
+        "HERB": 35,
+        "TREE_FLOWER": 4,
+        "DANGEROUS": 4,
+        "FERN": 1,
+        "SUCCULENT": 1,
+        "BULB": 1,
+        "VEGETABLE": 1,
+        "AROMATIC": 14,
+        "ROOT": 5,
+        "FLOWER": 6,
+        "FRUIT": 1,
+        "SHRUB": 1,
+        "FUNGUS": 1,
+        "PARASITE": 1,
+        "TREE_LEAF": 1,
+        "VINE": 1
+      }
+    },
+    "back": {
+      "count": 14,
+      "categories": {
+        "ANIMAL": 1,
+        "FUNGUS": 1,
+        "HERB": 7,
+        "AROMATIC": 2,
+        "OIL": 1,
+        "TREE_FLOWER": 1,
+        "DANGEROUS": 1,
+        "LEGUME_FLOWER": 1,
+        "BERRY": 1,
+        "SPIRIT": 1
+      }
+    }
+  },
+  "b_structure": {
+    "front": {
+      "count": 27,
+      "regimes": {
+        "REGIME_4": 18,
+        "REGIME_2": 3,
+        "REGIME_3": 5,
+        "REGIME_1": 1
+      }
+    },
+    "middle": {
+      "count": 27,
+      "regimes": {
+        "REGIME_1": 17,
+        "REGIME_3": 4,
+        "REGIME_4": 3,
+        "REGIME_2": 3
+      }
+    },
+    "back": {
+      "count": 29,
+      "regimes": {
+        "REGIME_4": 4,
+        "REGIME_3": 7,
+        "REGIME_1": 13,
+        "REGIME_2": 5
+      }
+    }
+  },
+  "correlation_results": {
+    "puff_front_flower_pct": 1.0,
+    "b_front_regime1_pct": 0.037,
+    "b_back_regime34_pct": 0.379,
+    "front_gentle_alignment": false,
+    "back_complex_alignment": false,
+    "chi2_statistic": 19.982,
+    "chi2_p_value": 0.00017,
+    "chi2_dof": 3,
+    "contingency_front": [
+      1,
+      3,
+      5,
+      18
+    ],
+    "contingency_back": [
+      13,
+      5,
+      7,
+      4
+    ],
+    "b_front_regime4_pct": 0.667,
+    "b_back_regime1_pct": 0.448,
+    "inverted_pattern": true
+  },
+  "passed": true,
+  "inverted": true,
+  "conclusion": "Positional pattern EXISTS but INVERTED (B front=REGIME_4, back=REGIME_1)",
+  "interpretation": "[TIER 4] B folio physical order shows INVERTED regime gradient vs Puff: B starts with complex (REGIME_4) and ends with gentle (REGIME_1). This could indicate: (1) manuscript bound in reverse order, (2) curriculum inversion (teach hard cases first), or (3) different organizational logic than Puff's difficulty progression."
+}

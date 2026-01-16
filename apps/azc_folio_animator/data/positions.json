@@ -1,0 +1,81 @@
+{
+  "zodiac": {
+    "comment": "Zodiac folios: Ordered subscript scaffold, concentric rings, cool blues",
+    "positions": ["C", "P", "R1", "R2", "R3", "S0", "S1", "S2"],
+    "phases": {
+      "C": ["C"],
+      "P": ["P"],
+      "R": ["R1", "R2", "R3"],
+      "S": ["S0", "S1", "S2"]
+    },
+    "phase_order": ["C", "P", "R", "S"],
+    "scaffold": {
+      "ordered": true,
+      "R_subscripts": ["R1", "R2", "R3"],
+      "S_subscripts": ["S0", "S1", "S2"]
+    },
+    "ring_radii": {
+      "C": 0.90,
+      "P": 0.72,
+      "R1": 0.56,
+      "R2": 0.48,
+      "R3": 0.40,
+      "S0": 0.28,
+      "S1": 0.20,
+      "S2": 0.12
+    },
+    "phase_display": {
+      "C": "C - Entry",
+      "P": "P - Permissive",
+      "R": "R - Restricting",
+      "S": "S - Boundary"
+    },
+    "colors": {
+      "C": "#00aacc",
+      "P": "#0088aa",
+      "R": "#006688",
+      "S": "#004466"
+    }
+  },
+  "ac": {
+    "comment": "A/C folios: Abstract zones without ordered subscripts, warm amber/gold",
+    "positions": ["C", "P", "R", "S"],
+    "phases": {
+      "C": ["C"],
+      "P": ["P"],
+      "R": ["R"],
+      "S": ["S"]
+    },
+    "phase_order": ["C", "P", "R", "S"],
+    "scaffold": {
+      "ordered": false,
+      "R_subscripts": null,
+      "S_subscripts": null
+    },
+    "ring_radii": {
+      "C": 0.88,
+      "P": 0.68,
+      "R": 0.48,
+      "S": 0.24
+    },
+    "phase_display": {
+      "C": "C - Entry",
+      "P": "P - Permissive",
+      "R": "R - Restricting",
+      "S": "S - Boundary"
+    },
+    "colors": {
+      "C": "#ffaa00",
+      "P": "#dd8800",
+      "R": "#bb6600",
+      "S": "#994400"
+    }
+  },
+  "section_to_family": {
+    "Z": "zodiac",
+    "A": "ac",
+    "C": "zodiac",
+    "H": "zodiac",
+    "S": "zodiac"
+  }
+}

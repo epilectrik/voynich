@@ -27,7 +27,7 @@ MARKER_PREFIXES = ['ch', 'qo', 'sh', 'da', 'ok', 'ot', 'ct', 'ol', 'yk', 'yt']
 
 
 def load_all_data():
-    """Load all tokens with sequence order preserved."""
+    """Load all tokens with sequence order preserved (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     data = []
@@ -41,7 +41,12 @@ def load_all_data():
 
         for i, line in enumerate(f):
             parts = line.strip().split('\t')
-            if len(parts) > lang_idx:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[lang_idx].strip('"').strip()
                 if lang in ['A', 'B']:
                     word = parts[word_idx].strip('"').strip().lower()

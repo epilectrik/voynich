@@ -1,32 +1,32 @@
 {
   "line": {
-    "total_lines": 12171,
-    "multi_token_lines": 8764,
-    "mean_length": 3.057595924739134,
-    "median_length": 3.0,
-    "single_token_pct": 0.2799276969846356
+    "total_lines": 9016,
+    "multi_token_lines": 1318,
+    "mean_length": 1.2660825199645076,
+    "median_length": 1.0,
+    "single_token_pct": 0.8538154392191659
   },
   "cross_line": {
     "adjacent_mi_mean": 0.0,
     "non_adjacent_mi_mean": 0.0,
-    "adjacent_count": 4980,
-    "non_adjacent_count": 4192
+    "adjacent_count": 467,
+    "non_adjacent_count": 431
   },
   "cross_folio": {
-    "adjacent_overlap_mean": 0.000975609756097561,
-    "distant_overlap_mean": 0.0005858230814294083,
-    "adjacent_count": 5125,
-    "distant_count": 5121
+    "adjacent_overlap_mean": 0.0008673026886383347,
+    "distant_overlap_mean": 0.0005788712011577424,
+    "adjacent_count": 3459,
+    "distant_count": 3455
   },
   "internal": {
-    "first_vocab_size": 2178,
-    "middle_vocab_size": 2178,
-    "last_vocab_size": 2178,
+    "first_vocab_size": 119,
+    "middle_vocab_size": 119,
+    "last_vocab_size": 119,
     "first_only_pct": 0.0,
     "last_only_pct": 0.0,
-    "first_concentration": 0.06246125232486051,
-    "middle_concentration": 0.20719945942625467,
-    "last_concentration": 0.06246125232486051
+    "first_concentration": 0.37103174603174605,
+    "middle_concentration": 0.49953746530989823,
+    "last_concentration": 0.37103174603174605
   },
   "verdict": "LINE_ATOMIC",
   "interpretation": "Currier A entries are line-bounded. Each line is an atomic unit (record)."

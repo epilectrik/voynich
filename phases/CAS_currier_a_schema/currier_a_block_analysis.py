@@ -13,7 +13,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_currier_a_lines():
-    """Load Currier A data grouped by line."""
+    """Load Currier A data grouped by line (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     lines = defaultdict(lambda: {'tokens': [], 'section': '', 'folio': ''})
@@ -23,7 +23,12 @@ def load_currier_a_lines():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()
@@ -239,9 +244,12 @@ def examine_block_content(entries_with_blocks):
         if 'daiin' in block:
             contains_daiin += 1
 
-    print(f"  Blocks starting with marker: {starts_with_marker} ({100*starts_with_marker/len(unique_blocks):.1f}%)")
-    print(f"  Blocks containing any marker: {contains_marker} ({100*contains_marker/len(unique_blocks):.1f}%)")
-    print(f"  Blocks containing 'daiin': {contains_daiin} ({100*contains_daiin/len(unique_blocks):.1f}%)")
+    if len(unique_blocks) > 0:
+        print(f"  Blocks starting with marker: {starts_with_marker} ({100*starts_with_marker/len(unique_blocks):.1f}%)")
+        print(f"  Blocks containing any marker: {contains_marker} ({100*contains_marker/len(unique_blocks):.1f}%)")
+        print(f"  Blocks containing 'daiin': {contains_daiin} ({100*contains_daiin/len(unique_blocks):.1f}%)")
+    else:
+        print("  No blocks to analyze.")
 
 
 def main():

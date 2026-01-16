@@ -43,7 +43,7 @@ The PREFIX/MIDDLE/SUFFIX morphology and type dichotomy work **identically** in A
 |-----------|-----------|-----------|-----|
 | Segmentation | DA internal punctuation | Line boundaries | Placement codes |
 | Line length | 3 tokens (atomic) | 31 tokens (blocks) | 8 tokens (labels) |
-| Repetition | 64.1% block-level | Convergence (57.8% STATE-C) | Placement-constrained |
+| Repetition | Compositional (897 combos) | Convergence (57.8% STATE-C) | Placement-constrained |
 | Position | FREE (except initial) | DEPENDENT (phase-encoded) | CODED (99 forbidden pairs) |
 | Grammar | None (silhouette=0.049) | 49-class sequential | Hybrid |
 
@@ -53,7 +53,7 @@ Both A and B have closure strategies, but they differ:
 
 | System | Mechanism | Evidence |
 |--------|-----------|----------|
-| Currier A | **Enumeration closure** | 64.1% entries repeat blocks (C250) |
+| Currier A | **Compositional closure** | 897 PREFIX+MIDDLE+SUFFIX combinations (C267) |
 | Currier B | **Execution closure** | 57.8% folios terminate in STATE-C |
 
 These are **functionally equivalent** at the conceptual level (both represent "completion") but structurally distinct.
@@ -169,8 +169,7 @@ Type:      UNIFIED (C383)          UNIFIED (C383)              UNIFIED (C383)
 
 | # | Constraint | System |
 |---|------------|--------|
-| C250 | 64.1% block repetition | A |
-| C250.a | Block-aligned repetition | A |
+| C267 | Compositional morphology | A |
 | C383 | Global type system | All |
 | C384 | No entry-level coupling | A↔B |
 | C422 | DA articulation | A |

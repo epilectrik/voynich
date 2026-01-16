@@ -24,7 +24,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_currier_a_data():
-    """Load Currier A tokens with line-level granularity."""
+    """Load Currier A tokens with line-level granularity (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     data = []
@@ -38,7 +38,12 @@ def load_currier_a_data():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > lang_idx:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[lang_idx].strip('"').strip()
                 if lang == 'A':
                     word = parts[word_idx].strip('"').strip().lower()

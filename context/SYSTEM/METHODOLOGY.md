@@ -121,13 +121,37 @@ is_canonical = token in canonical_types
 - "Section" = manuscript section (H, B, C, S, T, P, etc.)
 - These are NOT the same thing
 
-### 3. Transition Direction
+### 3. AZC Folio Grouping
+
+**RECURRENT BUG: AZC analyses have used inconsistent folio counts.**
+
+AZC folios have TWO independent classification systems:
+
+| System | Criterion | Result |
+|--------|-----------|--------|
+| Visual (section codes) | Illustration type | Z=12, A=8, C=7, H=2, S=1 (30 total) |
+| Textual grammar | Placement patterns | Zodiac=13 (incl f57v), A/C=17 |
+
+**Key facts:**
+- Total AZC in transcript: 30 folios
+- Actual diagram folios: 27 (H and S are NOT diagrams)
+- f57v is C by section code but Zodiac by placement grammar
+
+**Every AZC analysis MUST document:**
+1. Which folios were included (list them or describe filter)
+2. Which classification system was used (visual vs grammar)
+3. Whether H/S non-diagram folios were included
+4. Why that grouping was chosen
+
+**See:** `context/ARCHITECTURE/currier_AZC.md` for full classification details.
+
+### 4. Transition Direction
 
 - `X → Y` is the transition FROM X TO Y
 - Forbidden transitions are asymmetric (65%)
 - Don't assume bidirectional rules
 
-### 4. Tier Promotion
+### 5. Tier Promotion
 
 - Don't treat Tier 3 findings as structural
 - Always cite the tier when referencing claims

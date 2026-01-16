@@ -1,6 +1,6 @@
 # Phase OPS-4: Decision Model Summary
 
-**Date:** 2026-01-04
+**Date:** 2026-01-15
 
 ---
 
@@ -177,4 +177,4 @@ REGIME_3 serves as a transient state: entered when time pressure is acute, but p
 > derived using purely operational pressures. No historical, craft, or product interpretation
 > has been introduced."**
 
-*Generated: 2026-01-04T21:49:49.099149*
+*Generated: 2026-01-15T23:47:28.144621*

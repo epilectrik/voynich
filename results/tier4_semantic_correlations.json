@@ -1,0 +1,187 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "tests": {
+    "T6": {
+      "test": "T6_HUMORAL_REGIME",
+      "hypothesis": "WARM materials have higher therapeutic breadth (intensive processing)",
+      "humoral_distribution": {
+        "cold": {
+          "count": 2,
+          "mean_breadth": 0.5,
+          "mean_actions": 0.5
+        },
+        "neutral": {
+          "count": 43,
+          "mean_breadth": 0.07,
+          "mean_actions": 0.09
+        },
+        "warm": {
+          "count": 2,
+          "mean_breadth": 1,
+          "mean_actions": 1.5
+        }
+      },
+      "organ_by_humoral": {
+        "cold": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 7,
+          "limbs": 0,
+          "skin": 0
+        },
+        "neutral": {
+          "head": 16,
+          "chest": 8,
+          "abdomen": 12,
+          "limbs": 3,
+          "skin": 0
+        },
+        "warm": {
+          "head": 1,
+          "chest": 0,
+          "abdomen": 0,
+          "limbs": 1,
+          "skin": 0
+        }
+      },
+      "warm_breadth": 1,
+      "cold_breadth": 0.5,
+      "passed": true,
+      "conclusion": "WARM therapeutic breadth (1) vs COLD (0.5)"
+    },
+    "T7": {
+      "test": "T7_ORGAN_PREFIX",
+      "hypothesis": "Internal organ focus maps to ENERGY_OPERATOR dominance",
+      "organ_totals": {
+        "head": 18,
+        "chest": 8,
+        "abdomen": 19,
+        "limbs": 4,
+        "skin": 0
+      },
+      "organ_proportions": {
+        "head": 0.367,
+        "chest": 0.163,
+        "abdomen": 0.388,
+        "limbs": 0.082,
+        "skin": 0.0
+      },
+      "internal_external": {
+        "internal_count": 27,
+        "external_count": 22,
+        "internal_ratio": 0.551
+      },
+      "voynich_comparison": {
+        "energy_ratio": 0.594,
+        "frequent_ratio": 0.151,
+        "energy_dominates": true
+      },
+      "passed": true,
+      "conclusion": "Internal organs (0.55) match ENERGY dominance (0.59)"
+    },
+    "T8": {
+      "test": "T8_APPLICATION_AZC",
+      "hypothesis": "Internal applications require more processing steps (higher therapeutic actions)",
+      "method_distribution": {
+        "internal": {
+          "count": 5,
+          "mean_severity": 1,
+          "mean_actions": 1,
+          "mean_organs": 1.4
+        },
+        "external": {
+          "count": 14,
+          "mean_severity": 0.86,
+          "mean_actions": 0.14,
+          "mean_organs": 1.93
+        },
+        "mixed": {
+          "count": 1,
+          "mean_severity": 1,
+          "mean_actions": 0,
+          "mean_organs": 2
+        },
+        "unknown": {
+          "count": 27,
+          "mean_severity": 0.56,
+          "mean_actions": 0.04,
+          "mean_organs": 0.48
+        }
+      },
+      "internal_actions": 1,
+      "external_actions": 0.14,
+      "passed": true,
+      "conclusion": "Internal (1) vs External (0.14) actions"
+    },
+    "T9": {
+      "test": "T9_SEVERITY_HAZARD",
+      "hypothesis": "Higher severity conditions affect more organ systems",
+      "severity_distribution": {
+        "mild": {
+          "count": 15,
+          "mean_organs": 0.4,
+          "mean_breadth": 0.07,
+          "mean_actions": 0.07
+        },
+        "moderate": {
+          "count": 31,
+          "mean_organs": 1.29,
+          "mean_breadth": 0.16,
+          "mean_actions": 0.23
+        },
+        "severe": {
+          "count": 1,
+          "mean_organs": 3,
+          "mean_breadth": 0,
+          "mean_actions": 0
+        }
+      },
+      "dangerous_chapters_in_catalog": 5,
+      "organ_gradient": {
+        "mild": 0.4,
+        "moderate": 1.29,
+        "severe": 3
+      },
+      "gradient_match": true,
+      "passed": true,
+      "conclusion": "Severity-organ gradient: mild(0.4) -> moderate(1.29) -> severe(3)"
+    },
+    "T10": {
+      "test": "T10_THERAPEUTIC_MIDDLE",
+      "hypothesis": "Broad therapeutic use (high breadth) correlates with lower action intensity",
+      "breadth_distribution": {
+        "0": {
+          "count": 42,
+          "mean_actions": 0
+        },
+        "1": {
+          "count": 4,
+          "mean_actions": 1.25
+        },
+        "2": {
+          "count": 1,
+          "mean_actions": 3
+        }
+      },
+      "action_distribution": {
+        "none": 42,
+        "cooling": 2,
+        "warming": 1,
+        "healing": 2
+      },
+      "voynich_middle_count": 969,
+      "inverse_correlation": true,
+      "passed": true,
+      "conclusion": "Therapeutic breadth-intensity pattern matches MIDDLE universality"
+    }
+  },
+  "summary": {
+    "passed": 5,
+    "total": 5,
+    "inconclusive": 0,
+    "score": "5/5"
+  }
+}

@@ -1,9 +1,10 @@
-CONSTRAINT_REFERENCE v2.6 | 355 constraints | 2026-01-14
+CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
 
 NUM	CONSTRAINT	TIER	SCOPE	LOCATION
+C001	A | **INVALIDATED** - depend on C250 |	266	~~Block vs non-block entry types~~	1
 C074	Dominant convergence to stable states (57.8% STATE-C terminal)	0	B	-> C074_dominant_convergence.md
 C079	Only STATE-C essential	0	B	in: tier0_core
 C084	System targets MONOSTATE (42.2% end in transitional)	0	B	in: tier0_core
@@ -128,28 +129,28 @@ C246	4 mandatory criteria for structural primitives	2	A	in: currier_a
 C247	SP-01 (daiin): affects 30.2% A, 16.5% B	2	A	in: currier_a
 C248	SP-02 (ol): affects 7.4% A, 17.7% B	2	A	in: currier_a
 C249	Scan COMPLETE: 11 candidates tested	2	A	in: currier_a
-C250	64.1% show repeating blocks	2	A	in: currier_a
+C250	~~64.1% show repeating blocks~~	1	A	**INVALIDATED** - transcriber artifact
 C251	Repetition is Intra-Record Only	2	A	in: currier_a
 C252	Repetition Bounded 2-6x	2	A	in: currier_a
-C253	All blocks unique (0% cross-entry reuse)	2	A	in: currier_a
+C253	All Blocks Unique	2	A	in: currier_a
 C254	Multiplicity does NOT interact with B; isolated from operational grammar	2	A	in: currier_a
-C255	100% section-exclusive blocks	2	A	in: currier_a
+C255	Blocks 100% Section-Exclusive	2	A	in: currier_a
 C256	Markers at block END 60.3% (vs 44% start); marker is trailing tag (CAS-DEEP)	2	A	in: currier_a
 C257	72.6% of tokens MARKER-EXCLUSIVE; markers define distinct vocabulary domains (CAS-DEEP)	2	A	in: currier_a
 C258	3x Dominance Reflects Human Counting	2	A	in: currier_a
 C259	INVERSE COMPLEXITY: higher repetitions have MORE diverse blocks (rho=0.248) (CAS-DEEP)	2	A	in: currier_a
 C260	Section vocabulary overlap 9.7% (Jaccard); sections are isolated domains (CAS-DEEP)	2	A	in: currier_a
-C261	Token order NON-RANDOM	2	A	in: currier_a
+C261	Token Order Non-Random	2	A	in: currier_a
 C262	Low Mutation Across Repetitions	2	A	in: currier_a
 C263	Section-specific ceilings: H max=5x, P max=5x, T max=6x (CAS-DEEP-V)	2	A	in: currier_a
 C264	Inverse-complexity is BETWEEN-MARKER effect (Simpson's paradox); within-marker rho<0 for all 8 markers (CAS-DEEP-V)	2	A	in: currier_a
 C265	1,123 unique marker tokens across 8 classes; 85 core tokens (freq>=10); `daiin` dominates DA (51.7%), `ol` dominates OL (32.3%) (CAS-CAT)	2	A	in: currier_a
-C266	Currier A has TWO content types: block entries (64.1%) have ONE marker class (exclusive); non-block entries (35.9%) mix MULTIPLE classes (90.5% have 2-8 classes) (CAS-SCAN)	2	A	in: currier_a
+C266	Block vs Non-Block Entry Types	2	A	in: currier_a
 C267	Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)	2	A→B	-> C267_compositional_morphology.md
 C268	897 observed combinations	2	A→B	in: morphology
 C269	7 Universal Suffixes	2	A	in: currier_a
 C270	Some middles are PREFIX-EXCLUSIVE (CT:-h-, DA:-i-, QO:-kch-); internal structure within classifier families (CAS-MORPH)	2	A	in: currier_a
-C271	Compositional structure explains low TTR (0.137) and high bigram reuse (70.7%); components combine predictably (CAS-MORPH)	2	A	in: currier_a
+C271	Compositional structure explains low TTR and bigram reuse	2	A	in: currier_a
 C272	A and B on COMPLETELY DIFFERENT folios	2	A↔B	in: morphology
 C273	Section specialization NON-UNIFORM: CT is 85.9% Section H vs OK/OL at 53-55%; at least one prefix is specialized to one product line (EXT-8)	2	A	in: currier_a
 C274	Co-occurrence UNIFORM: no prefix pair shows strong association (>1.5x) or avoidance (<0.5x) in compounds; prefixes can combine freely (EXT-8)	2	A	in: currier_a
@@ -178,11 +179,11 @@ C296	CH appears in nearly all common prefix pairs (CH+DA, CH+QO, CH+SH); functio
 C297	-eol is ONLY suffix concentrated in section P (55.9% vs 41.3% H); all other suffixes favor H; P has distinct suffix profile (CAS-POST)	2	A	in: currier_a
 C298	L-compound middle patterns (lch-, lk-, lsh-) function as B-specific grammatical operators; 30-135x more common in B, largely absent from A; grammar-level specialization not covered by shared component inventory (B-MORPH)	2	A	in: currier_a
 C299	Section H vocabulary dominates B procedures (76/83 = 91.6%); Section P rare (7/83 = 8.4%); Section T absent (0/83 = 0%); chi² = 127.54, p < 0.0001; A sections have NON-UNIFORM mapping to B procedure applicability (CAS-XREF)	2	A	in: currier_a
-C300	9,401 tokens (7.7%) unclassified by Currier	2	AZC	in: azc_system
+C300	3,299 tokens (8.7%) unclassified by Currier	2	AZC	in: azc_system
 C301	AZC is HYBRID (B=69.7%, A=65.4%)	2	AZC	-> C301_azc_hybrid.md
 C302	Distinct Line Structure	2	AZC	in: azc_system
 C303	Elevated LINK Density	2	AZC	in: azc_system
-C304	25.4% Unique Vocabulary	2	AZC	in: azc_system
+C304	27.4% Unique Vocabulary	2	AZC	in: azc_system
 C305	LABELING Signature	2	AZC	in: azc_system
 C306	Placement-coding axis established	2	AZC	in: azc_system
 C307	Placement × Morphology Dependency	2	AZC	in: azc_system

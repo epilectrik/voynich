@@ -79,7 +79,7 @@ for hc, data in HAZARD_CLASSES.items():
 # ============================================================================
 
 def load_transcription_data() -> Dict[str, List[str]]:
-    """Load tokens for each folio from transcription file."""
+    """Load tokens for each folio from transcription file (PRIMARY transcriber H only)."""
     folio_tokens = defaultdict(list)
 
     with open('data/transcriptions/interlinear_full_words.txt', 'r', encoding='utf-8') as f:
@@ -88,7 +88,12 @@ def load_transcription_data() -> Dict[str, List[str]]:
     # Skip header
     for line in lines[1:]:
         parts = line.strip().split('\t')
-        if len(parts) >= 3:
+        if len(parts) >= 13:
+            # Filter to PRIMARY transcriber (H) only - column 12
+            transcriber = parts[12].strip('"')
+            if transcriber != 'H':
+                continue
+
             word = parts[0].strip('"')
             folio = parts[2].strip('"')
             # Clean word - remove asterisks and special chars

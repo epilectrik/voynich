@@ -86,30 +86,15 @@ Falsifies "sister-pair choice is grammatically determined" but does not explain 
 
 ### F-A-003 - Repetition Distribution
 
-**Tier:** F2 | **Result:** PARTIAL | **Supports:** C250-C258
+**Tier:** F1 | **Result:** INVALIDATED | **Supports:** (none - artifact)
 
-#### Question
-Does block repetition count follow a standard statistical distribution?
+#### Status: INVALIDATED (2026-01-15)
 
-#### Method
-Fit negative binomial, Poisson, and geometric distributions to observed multiplicity counts.
+This fit was based on block repetition patterns (C250-C258) that were discovered to be transcriber artifacts. When filtered to PRIMARY transcriber (H) only, block repetition rate is **0%**, not 64.1%.
 
-Data: 1,178 entries with repetition (64.1% of A entries).
+The apparent patterns were caused by interleaved readings from multiple transcribers being misinterpreted as intentional repetition.
 
-Success criteria:
-- Chi-squared goodness-of-fit p > 0.05
-- Explain 3x dominance peak (55% of repetitions)
-
-#### Result Details
-- Negative binomial fit: r=1.8, p=0.38 (PASS - p=0.12)
-- 3x peak explanation: FAIL (model predicts 31%, observed 55%)
-- Mode at 3: Not captured by any standard distribution
-
-#### Interpretation
-The distribution follows negative binomial in the tails but has an anomalous mode at 3x. The 3x preference reflects human counting bias and registry ergonomics, not a distributional parameter. Repetition is literal enumeration without arithmetic semantics (C287-C290).
-
-#### Limitations
-Does not explain WHY 3x is preferred. May reflect cognitive chunking or physical layout constraints.
+**Do not cite this fit. See C250 INVALIDATED status.**
 
 ---
 
@@ -213,31 +198,13 @@ This is a strong negative result. A does NOT encode failure memory or hazard pro
 
 ### F-A-008 - Repetition as Relational Stabilizer
 
-**Tier:** F1 | **Result:** NULL | **Supports:** C287-C290
+**Tier:** F1 | **Result:** INVALIDATED | **Supports:** (none - artifact)
 
-#### Question
-Do repeated blocks encode relational links between entries?
+#### Status: INVALIDATED (2026-01-15)
 
-#### Method
-Test for cross-entry block reuse patterns.
+This fit was based on block repetition patterns (C250-C258) that were discovered to be transcriber artifacts. When filtered to PRIMARY transcriber (H) only, block repetition rate is **0%**, not 64.1%.
 
-Data: 64.1% of entries with repetition, 100% section exclusivity (C255).
-
-Success criteria:
-- Cross-entry reuse >5%
-- Reuse patterns correlate with semantic groupings
-
-#### Result Details
-- Cross-entry block reuse: 0% (FAIL)
-- Repetition is intra-entry only
-- Section exclusivity: 100%
-- No block appears in multiple entries
-
-#### Interpretation
-Blocks are instance markers, not relational pointers. Repetition encodes "this thing, again" within an entry, not "see also that entry." The registry has no cross-reference mechanism.
-
-#### Limitations
-This strongly constrains interpretations. A entries are self-contained; there is no lookup or linking structure.
+**Do not cite this fit. See C250 INVALIDATED status.**
 
 ---
 

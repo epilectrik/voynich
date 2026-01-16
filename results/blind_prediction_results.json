@@ -1,0 +1,125 @@
+{
+  "test": "BLIND_PREDICTION",
+  "pre_registration": {
+    "lavender_water": {
+      "name": "Lavender Water",
+      "degree": 1,
+      "expected_type": "WATER_GENTLE",
+      "predictions": {
+        "ok": "ok > 8%",
+        "ch": "ch < 16%",
+        "y": "y ~ 7%"
+      }
+    },
+    "sage_water": {
+      "name": "Sage Water",
+      "degree": 2,
+      "expected_type": "WATER_STANDARD",
+      "predictions": {
+        "ch": "ch ~ 24%",
+        "d": "d ~ 18%"
+      }
+    },
+    "juniper_oil": {
+      "name": "Juniper Oil",
+      "degree": 3,
+      "expected_type": "OIL_RESIN",
+      "predictions": {
+        "d": "d > 20%",
+        "y": "y < 7%",
+        "ch": "ch ~ 21%"
+      }
+    }
+  },
+  "results": [
+    {
+      "recipe": "Lavender Water",
+      "german": "Lavendelwasser",
+      "degree": 1,
+      "expected_type": "WATER_GENTLE",
+      "predictions": [
+        {
+          "prefix": "ok",
+          "prediction": "ok > 8%",
+          "actual": "9.6%",
+          "passed": true
+        },
+        {
+          "prefix": "ch",
+          "prediction": "ch < 16%",
+          "actual": "14.6%",
+          "passed": true
+        },
+        {
+          "prefix": "y",
+          "prediction": "y ~ 7%",
+          "actual": "7.5%",
+          "passed": true
+        }
+      ],
+      "passed_count": 3,
+      "total_count": 3,
+      "status": "PASS"
+    },
+    {
+      "recipe": "Sage Water",
+      "german": "Salbeiwasser",
+      "degree": 2,
+      "expected_type": "WATER_STANDARD",
+      "predictions": [
+        {
+          "prefix": "ch",
+          "prediction": "ch ~ 24%",
+          "actual": "23.9%",
+          "passed": true
+        },
+        {
+          "prefix": "d",
+          "prediction": "d ~ 18%",
+          "actual": "17.6%",
+          "passed": true
+        }
+      ],
+      "passed_count": 2,
+      "total_count": 2,
+      "status": "PASS"
+    },
+    {
+      "recipe": "Juniper Oil",
+      "german": "Wacholderoil",
+      "degree": 3,
+      "expected_type": "OIL_RESIN",
+      "predictions": [
+        {
+          "prefix": "d",
+          "prediction": "d > 20%",
+          "actual": "22.6%",
+          "passed": true
+        },
+        {
+          "prefix": "y",
+          "prediction": "y < 7%",
+          "actual": "6.7%",
+          "passed": true
+        },
+        {
+          "prefix": "ch",
+          "prediction": "ch ~ 21%",
+          "actual": "20.8%",
+          "passed": true
+        }
+      ],
+      "passed_count": 3,
+      "total_count": 3,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "recipes_tested": 3,
+    "recipes_passed": 3,
+    "predictions_passed": 8,
+    "predictions_total": 8,
+    "verdict": "STRONG PASS",
+    "interpretation": "Bidirectional constraint coherence is ROBUST"
+  }
+}

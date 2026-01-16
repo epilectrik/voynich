@@ -12,12 +12,17 @@ with open(filepath, 'r', encoding='utf-8') as f:
     header = f.readline()
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) > 6:
+        if len(parts) > 12:
+            # Filter to PRIMARY transcriber (H) only
+            transcriber = parts[12].strip('"').strip()
+            if transcriber != 'H':
+                continue
+
             lang = parts[6].strip('"').strip()
             if lang == 'A':
                 word = parts[0].strip('"').strip().lower()
-                folio = parts[1].strip('"').strip() if len(parts) > 1 else ''
-                line_num = parts[2].strip('"').strip() if len(parts) > 2 else ''
+                folio = parts[2].strip('"').strip() if len(parts) > 2 else ''
+                line_num = parts[11].strip('"').strip() if len(parts) > 11 else ''
 
                 if folio not in folio_lines:
                     folio_lines[folio] = {}

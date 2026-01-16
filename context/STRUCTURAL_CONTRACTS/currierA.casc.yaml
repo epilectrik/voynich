@@ -163,22 +163,12 @@ line_structure:
     provenance: "C482"
 
   repetition:
-    frequency: "64.1% of entries"
-    bounds: [2, 6]
-    distribution:
-      "2x": 416
-      "3x": 424
-      "4x": 148
-      "5x": 20
-      "6x": 5
-    mean: 2.79
-    type: "ordinal emphasis (marked vs unmarked)"
-    magnitude_semantics: false  # 2x vs 3x has no downstream effect
-    intra_record_only: true
-    cross_entry_arithmetic: false
-    blocks_unique: true  # 100% unique, 0% reuse
-    section_exclusive: true
-    provenance: "C250-C253, C255, C483"
+    status: "INVALIDATED (2026-01-15)"
+    note: |
+      Block repetition patterns (C250-C262) were discovered to be transcriber artifacts.
+      When filtered to PRIMARY transcriber (H) only, block repetition rate is 0%.
+      The apparent patterns were caused by interleaved readings from multiple transcribers.
+    provenance: "C250 INVALIDATED"
 
   da_articulation:
     function: "Internal sub-record boundary punctuation"
@@ -357,7 +347,7 @@ provenance:
     - "C475"  # MIDDLE incompatibility
 
   line_structure:
-    - "C250"  # 64.1% repetition
+    - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
     - "C251"  # Intra-record only
     - "C252"  # Bounded 2-6x
     - "C253"  # Blocks unique

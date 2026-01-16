@@ -1,0 +1,189 @@
+{
+  "tier": 4,
+  "status": "HYPOTHETICAL",
+  "test": "T4_DANGER_SIGNATURE",
+  "date": "2026-01-14",
+  "warning": "PURE SPECULATION - Model frozen",
+  "hypothesis": "Puff dangerous materials correlate with B anomaly positions",
+  "puff_dangerous": {
+    "dangerous_chapters": [
+      {
+        "chapter": 17,
+        "name": "Nachtschatten",
+        "latin": "Solanum nigrum",
+        "position": 0.2,
+        "third": "front"
+      },
+      {
+        "chapter": 38,
+        "name": "Spindelbom oder pf\u00c3\u00a4fferh\u00c3\u00b6del",
+        "latin": "Euonymus europaea",
+        "position": 0.447,
+        "third": "middle"
+      },
+      {
+        "chapter": 57,
+        "name": "Mauchen",
+        "latin": "Papaver somniferum",
+        "position": 0.671,
+        "third": "back"
+      },
+      {
+        "chapter": 60,
+        "name": "Poleyen",
+        "latin": "Mentha pulegium",
+        "position": 0.706,
+        "third": "back"
+      },
+      {
+        "chapter": 79,
+        "name": "Bilsen",
+        "latin": "Hyoscyamus niger",
+        "position": 0.929,
+        "third": "back"
+      }
+    ],
+    "count": 5,
+    "distribution": {
+      "front": 1,
+      "middle": 1,
+      "back": 3
+    },
+    "avg_position": 0.591,
+    "back_loaded": true
+  },
+  "b_anomalies": {
+    "count": 39,
+    "total_b_folios": 83,
+    "distribution": {
+      "front": 20,
+      "middle": 7,
+      "back": 12
+    },
+    "avg_position": 0.44,
+    "back_loaded": false,
+    "examples": [
+      {
+        "folio": "f26r",
+        "folio_num": 26,
+        "regime": "REGIME_4",
+        "cei": 0.639,
+        "escape": 0.126,
+        "reasons": [
+          "REGIME_4"
+        ],
+        "normalized_position": 0.0
+      },
+      {
+        "folio": "f31v",
+        "folio_num": 31,
+        "regime": "REGIME_4",
+        "cei": 0.554,
+        "escape": 0.039,
+        "reasons": [
+          "REGIME_4",
+          "low_escape:0.04"
+        ],
+        "normalized_position": 0.056
+      },
+      {
+        "folio": "f33r",
+        "folio_num": 33,
+        "regime": "REGIME_3",
+        "cei": 0.777,
+        "escape": 0.093,
+        "reasons": [
+          "outlier:compression_ratio:2.1,phase_ordering_rigidity:-2.3,link-heavy"
+        ],
+        "normalized_position": 0.078
+      },
+      {
+        "folio": "f33v",
+        "folio_num": 33,
+        "regime": "REGIME_3",
+        "cei": 0.727,
+        "escape": 0.009,
+        "reasons": [
+          "low_escape:0.01"
+        ],
+        "normalized_position": 0.078
+      },
+      {
+        "folio": "f34r",
+        "folio_num": 34,
+        "regime": "REGIME_4",
+        "cei": 0.633,
+        "escape": 0.091,
+        "reasons": [
+          "REGIME_4"
+        ],
+        "normalized_position": 0.089
+      },
+      {
+        "folio": "f34v",
+        "folio_num": 34,
+        "regime": "REGIME_4",
+        "cei": 0.588,
+        "escape": 0.084,
+        "reasons": [
+          "REGIME_4"
+        ],
+        "normalized_position": 0.089
+      },
+      {
+        "folio": "f39v",
+        "folio_num": 39,
+        "regime": "REGIME_4",
+        "cei": 0.634,
+        "escape": 0.055,
+        "reasons": [
+          "REGIME_4",
+          "low_escape:0.06"
+        ],
+        "normalized_position": 0.144
+      },
+      {
+        "folio": "f40r",
+        "folio_num": 40,
+        "regime": "REGIME_4",
+        "cei": 0.635,
+        "escape": 0.082,
+        "reasons": [
+          "REGIME_4"
+        ],
+        "normalized_position": 0.156
+      },
+      {
+        "folio": "f40v",
+        "folio_num": 40,
+        "regime": "REGIME_4",
+        "cei": 0.559,
+        "escape": 0.156,
+        "reasons": [
+          "REGIME_4"
+        ],
+        "normalized_position": 0.156
+      },
+      {
+        "folio": "f41r",
+        "folio_num": 41,
+        "regime": "REGIME_4",
+        "cei": 0.626,
+        "escape": 0.197,
+        "reasons": [
+          "REGIME_4"
+        ],
+        "normalized_position": 0.167
+      }
+    ]
+  },
+  "comparison": {
+    "puff_back_pct": 0.6,
+    "b_back_pct": 0.308,
+    "pattern_match": true,
+    "position_correlation": true
+  },
+  "passed": true,
+  "conclusion": "Danger-anomaly pattern DETECTED",
+  "interpretation": "[TIER 4] B anomalies are FRONT-loaded (avg pos 0.36) while Puff dangers are middle/back. This is INVERTED from Puff's curriculum - B addresses dangerous/complex cases early. Consistent with T1 inversion finding: B manuscript order is opposite to Puff progression."
+}

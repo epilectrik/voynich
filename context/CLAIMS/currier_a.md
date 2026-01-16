@@ -96,61 +96,55 @@ Only 25/112,733 cross-transitions (0.0%). Deliberate separation.
 
 ## Multiplicity Encoding (C250-C266)
 
-### C250 - 64.1% Show Repetition
-**Tier:** 2 | **Status:** CLOSED
-64.1% (1013/1580) of entries exhibit `[BLOCK] × N` repetition structure.
-**Source:** CAS-MULT
+### C250 - Block Repetition Pattern
+**Tier:** 1 | **Status:** INVALIDATED
+**Original claim:** 64.1% of entries exhibit `[BLOCK] × N` repetition structure.
+**Correction (2026-01-15):** This was an artifact of loading all transcribers instead of H (primary) only. With H-only data: **0% block repetition**. The apparent repetition was caused by interleaved transcriber readings being misinterpreted as intentional repetition.
+**Source:** CAS-MULT (invalidated by transcriber filter audit)
 
 ### C251 - Repetition is Intra-Record Only
-**Tier:** 2 | **Status:** CLOSED
-No aggregation or arithmetic across entries.
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-MULT
 
 ### C252 - Repetition Bounded 2-6x
-**Tier:** 2 | **Status:** CLOSED
-Distribution: 2x=416, 3x=424, 4x=148, 5x=20, 6x=5. Mean=2.79x.
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-MULT
 
 ### C253 - All Blocks Unique
-**Tier:** 2 | **Status:** CLOSED
-100% unique blocks (0% cross-entry reuse).
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-MULT
 
 ### C255 - Blocks 100% Section-Exclusive
-**Tier:** 2 | **Status:** CLOSED
-Zero cross-section reuse of block content.
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-DEEP
 
 ### C258 - 3x Dominance Reflects Human Counting
-**Tier:** 2 | **Status:** CLOSED
-3x dominance (55%) reflects human counting bias, bounded for usability.
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-DEEP
 
 ### C261 - Token Order Non-Random
-**Tier:** 2 | **Status:** CLOSED
-Shuffling destroys blocks (4.2% survive). Original order meaningful.
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-DEEP-V
 
 ### C262 - Low Mutation Across Repetitions
-**Tier:** 2 | **Status:** CLOSED
-7.7% variation. Blocks similar but not identical.
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
 **Source:** CAS-DEEP-V
 
 ---
 
 ### C250.a - Block-Aligned Repetition (Refinement)
-**Tier:** 2 | **Status:** CLOSED | **Source:** Exploration
+**Tier:** 1 | **Status:** INVALIDATED
+**Depends on:** C250 (invalidated)
+**Source:** Exploration
 
-Within Currier A entries exhibiting DA articulation, repetition applies to entire DA-segmented content blocks rather than partial segments.
-
-**Evidence:**
-- 58.7% of multi-block entries have exact block repetition
-- 91.5% show high block similarity (J >= 0.5)
-- Non-adjacent blocks MORE similar (0.836) than adjacent (0.775)
-
-**Interpretation:** DA delineates enumerated sub-records rather than modifying repetition semantics. The `[BLOCK] × N` pattern from C250 operates on DA-segmented units. Non-adjacent similarity suggests interleaved enumeration: A-DA-A-DA-B-DA-B.
-
-**Note:** This is a refinement clarifying C250's scope, not a new structural law.
+**Note:** All block repetition findings (C250-C262, C250.a) were artifacts of transcriber interleaving. With H-only data, no block repetition patterns exist.
 
 ---
 
@@ -586,9 +580,10 @@ Inverse-complexity is BETWEEN-MARKER effect (Simpson's paradox); within-marker r
 1,123 unique marker tokens across 8 classes; 85 core tokens (freq>=10); `daiin` dominates DA (51.7%), `ol` dominates OL (32.3%) (CAS-CAT)
 **Source:** v1.8-import
 
-### C266 - Currier A has TWO content types: block entries (64.1%) have ONE marker class (exclusive); non-block entries (35.9%) mix MULTIPLE classes (90.5% have 2-8 classes) (CAS-SCAN)
-**Tier:** 2 | **Status:** CLOSED
-Currier A has TWO content types: block entries (64.1%) have ONE marker class (exclusive); non-block entries (35.9%) mix MULTIPLE classes (90.5% have 2-8 classes) (CAS-SCAN)
+### C266 - Block vs Non-Block Entry Types
+**Tier:** 1 | **Status:** INVALIDATED
+**Original claim:** Currier A has TWO content types: block entries (64.1%) have ONE marker class; non-block entries (35.9%) mix MULTIPLE classes.
+**Depends on:** C250 (invalidated)
 **Source:** v1.8-import
 
 ### C270 - Some middles are PREFIX-EXCLUSIVE (CT:-h-, DA:-i-, QO:-kch-); internal structure within classifier families (CAS-MORPH)
@@ -596,10 +591,11 @@ Currier A has TWO content types: block entries (64.1%) have ONE marker class (ex
 Some middles are PREFIX-EXCLUSIVE (CT:-h-, DA:-i-, QO:-kch-); internal structure within classifier families (CAS-MORPH)
 **Source:** v1.8-import
 
-### C271 - Compositional structure explains low TTR (0.137) and high bigram reuse (70.7%); components combine predictably (CAS-MORPH)
+### C271 - Compositional structure explains low TTR and bigram reuse
 **Tier:** 2 | **Status:** CLOSED
-Compositional structure explains low TTR (0.137) and high bigram reuse (70.7%); components combine predictably (CAS-MORPH)
-**Source:** v1.8-import
+Compositional structure explains low TTR (0.137) and bigram reuse (14.0%); components combine predictably.
+**Note:** Bigram reuse corrected 2026-01-15 from 70.7% (all transcribers) to 14.0% (H-only).
+**Source:** CAS-MORPH
 
 ### C273 - Section specialization NON-UNIFORM: CT is 85.9% Section H vs OK/OL at 53-55%; at least one prefix is specialized to one product line (EXT-8)
 **Tier:** 2 | **Status:** CLOSED

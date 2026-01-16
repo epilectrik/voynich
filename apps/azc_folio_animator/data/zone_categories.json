@@ -1,0 +1,66 @@
+{
+  "comment": "Categorical zone definitions per AZC-ACT contract. No numeric escape rates.",
+  "provenance": "AZC-ACT positional_zones, C469 categorical resolution",
+
+  "zones": {
+    "C": {
+      "category": "INTERIOR",
+      "escape_class": "MODERATE",
+      "intervention": true,
+      "display": "C - Entry",
+      "description": "Interior placement, rotation-tolerant"
+    },
+    "P": {
+      "category": "INTERIOR",
+      "escape_class": "HIGH",
+      "intervention": true,
+      "display": "P - Permissive",
+      "description": "Interior placement, intervention-permitting"
+    },
+    "R": {
+      "category": "INTERIOR",
+      "escape_class": "RESTRICTING",
+      "intervention": true,
+      "display": "R - Restricting",
+      "description": "Interior stages, progressive escape restriction"
+    },
+    "S": {
+      "category": "BOUNDARY",
+      "escape_class": "ZERO",
+      "intervention": false,
+      "display": "S - Boundary",
+      "description": "Boundary markers, no intervention permitted"
+    }
+  },
+
+  "escape_classes": {
+    "HIGH": {
+      "description": "Elevated escape permission",
+      "monotonicity_rank": 1
+    },
+    "MODERATE": {
+      "description": "Standard escape permission",
+      "monotonicity_rank": 2
+    },
+    "RESTRICTING": {
+      "description": "Decreasing escape through progression",
+      "monotonicity_rank": 3
+    },
+    "ZERO": {
+      "description": "No escape permitted",
+      "monotonicity_rank": 4
+    }
+  },
+
+  "pipeline_output": {
+    "comment": "What B receives from AZC (per AZC-B-ACT)",
+    "INTERIOR": {
+      "receives_legality": true,
+      "intervention_permitted": true
+    },
+    "BOUNDARY": {
+      "receives_legality": true,
+      "intervention_permitted": false
+    }
+  }
+}

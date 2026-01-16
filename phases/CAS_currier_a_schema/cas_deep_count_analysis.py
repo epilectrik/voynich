@@ -20,7 +20,7 @@ project_root = Path(__file__).parent.parent.parent
 
 
 def load_currier_a_lines():
-    """Load Currier A data grouped by line."""
+    """Load Currier A data grouped by line (PRIMARY transcriber H only)."""
     filepath = project_root / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
 
     lines = defaultdict(lambda: {'tokens': [], 'section': '', 'folio': ''})
@@ -30,7 +30,12 @@ def load_currier_a_lines():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()
@@ -399,6 +404,25 @@ def main():
 
     entries = classify_entries(lines)
     print(f"Entries with repeating blocks: {len(entries)}")
+
+    # Early return if no blocks (H-only data has 0% block repetition)
+    if len(entries) == 0:
+        print("\nNo blocks found - block analysis not applicable with H-only data.")
+        print("Block repetition (64.1%) was an artifact of transcriber interleaving.")
+
+        results = {
+            't3_1': {'verdict': 'NO_BLOCKS'},
+            't3_2': {'verdict': 'NO_BLOCKS'},
+            't3_3': {'verdict': 'NO_BLOCKS'},
+            't3_4': {'verdict': 'NO_BLOCKS'},
+            'note': 'Block repetition was artifact of transcriber interleaving; 0% with H-only'
+        }
+
+        output_path = Path(__file__).parent / 'cas_deep_track3_results.json'
+        with open(output_path, 'w') as f:
+            json.dump(results, f, indent=2)
+        print(f"\nResults saved to: {output_path}")
+        return results
 
     # Run tests
     results = {}

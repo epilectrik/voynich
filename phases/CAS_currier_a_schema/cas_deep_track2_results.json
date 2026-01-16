@@ -1,25 +1,19 @@
 {
   "t2_1": {
-    "chi2": 27.39211499380982,
-    "p": 0.017112936894489405,
-    "dof": 14,
-    "cramers_v": 0.11797778442912803,
-    "verdict": "MODERATE_DEPENDENCE"
+    "verdict": "NO_BLOCKS",
+    "cramers_v": 0
   },
   "t2_2": {
-    "mean_distance": 0.8620838946351446,
-    "min_distance": 0.8013245033112583,
-    "max_distance": 0.9053892215568862,
-    "verdict": "HIGHLY_DISTINCT"
+    "verdict": "NO_BLOCKS",
+    "mean_distance": 0
   },
   "t2_3": {
-    "mean_correlation": 0.13707252842578224,
-    "verdict": "LOW_CORRELATION"
+    "verdict": "NO_BLOCKS",
+    "mean_correlation": 0
   },
   "t2_4": {
-    "total_tokens": 2191,
-    "total_exclusive": 1591,
-    "exclusivity_rate": 0.7261524418073939,
-    "verdict": "HIGH_EXCLUSIVITY"
-  }
+    "verdict": "NO_BLOCKS",
+    "exclusivity_rate": 0
+  },
+  "note": "Block repetition was artifact of transcriber interleaving; 0% with H-only"
 }

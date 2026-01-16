@@ -10,6 +10,21 @@ This project uses a **progressive context system**.
 
 ---
 
+## DATA LOADING REQUIREMENT
+
+> **CRITICAL: When writing scripts that load the Voynich transcript, ALWAYS filter to the H (PRIMARY) transcriber track.**
+
+The transcript contains 18 parallel transcriber readings. Failure to filter causes ~3.2x token inflation and creates false patterns.
+
+**Required reading:** [context/DATA/TRANSCRIPT_ARCHITECTURE.md](context/DATA/TRANSCRIPT_ARCHITECTURE.md)
+
+```python
+# MANDATORY pattern
+df = df[df['transcriber'] == 'H']  # PRIMARY track only
+```
+
+---
+
 ## Quick Reference
 
 | Metric | Value |
@@ -75,6 +90,7 @@ When deep in app development, domain questions appear mid-task. The failure mode
 ```
 context/
 ├── CLAUDE_INDEX.md      ← START HERE
+├── DATA/                ← TRANSCRIPT ARCHITECTURE (read before writing scripts!)
 ├── SYSTEM/              ← Methodology, tiers, stop conditions
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system

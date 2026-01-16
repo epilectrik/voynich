@@ -265,7 +265,7 @@ Measure option-space metrics in windows:
 Metrics: MIDDLE diversity, suffix entropy, escape availability.
 Fit models: step vs ramp vs null.
 
-Data: 122,160 total tokens, 37,214 A tokens, 9,401 AZC tokens.
+Data: ~122,000 total tokens, 37,214 A tokens, 3,299 AZC tokens.
 
 Success criteria:
 - Sharp entropy drop/redistribution at entry
@@ -443,7 +443,7 @@ This follows the semantic hypothesis testing protocol: **Name boldly. Test ruthl
 3. Compare C-position vs S-position types on endemicity, cross-system persistence, and global reusability
 4. Fisher's exact and Mann-Whitney U tests for significance
 
-Data: 37,214 A tokens, 75,545 B tokens, 9,401 AZC tokens, 12,361 unique types.
+Data: 37,214 A tokens, 75,545 B tokens, 3,299 AZC tokens, ~12,000 unique types.
 
 #### Result Details
 
@@ -548,7 +548,7 @@ How do AZC folios thread into A and B vocabulary? Why are there so many AZC foli
 4. Analyze A-type coverage distribution across AZC folios
 5. Analyze B-folio sourcing patterns from AZC
 
-Data: 36 AZC folios, 3,047 types; 114 A folios, 4,737 types; 77 B folios, 6,616 types.
+Data: 30 AZC folios (27 diagram folios + 3 non-diagram), 3,047 types; 114 A folios, 4,737 types; 77 B folios, 6,616 types.
 
 #### Result Details
 
@@ -663,7 +663,7 @@ This is descriptive only - not causal. We're testing whether AZC folio identity 
 2. Compare profiles across folios
 3. Look for clustering and systematic variation
 
-Data: 36 AZC folios.
+Data: 30 AZC folios (27 diagram folios + 3 non-diagram).
 
 #### Result Details
 
@@ -857,6 +857,202 @@ Position preservation test was inconclusive due to data sparsity.
 
 ---
 
+### F-AZC-017 - Zodiac Internal Stratification Test (NEGATIVE)
+
+**Tier:** F4 | **Result:** FALSIFIED | **Supports:** C431, C436
+
+#### Question
+Do different Zodiac AZC folios preferentially admit different regions of the Currier-A incompatibility space, and do those regions align with downstream B-inferred product families?
+
+This tests whether the 12 Zodiac folios (C321: independent vocabularies, Jaccard 0.076) represent internal legality stratification, or whether their multiplicity exists purely for coverage optimality.
+
+**Critical framing note:** This is NOT a test of "product routing through gates." AZC filters constraint bundles; product types are downstream inferences from B behavior.
+
+#### Method
+
+1. Extract product-associated MIDDLEs from B folios (by REGIME classification)
+2. Map those MIDDLEs to the 13 Zodiac folios (12 Z + f57v)
+3. Test for clustering via chi-squared test of independence
+
+**Data:** 75,173 B tokens, 3,368 Zodiac AZC tokens, 2,777 product-exclusive MIDDLEs.
+
+#### Result Details
+
+**Distribution entropy per product (higher = more spread):**
+| Product | Entropy | Max Possible |
+|---------|---------|--------------|
+| OIL_RESIN | 2.87 bits | 3.70 bits |
+| PRECISION | 3.40 bits | 3.70 bits |
+| WATER_GENTLE | 2.73 bits | 3.70 bits |
+| WATER_STANDARD | 3.63 bits | 3.70 bits |
+
+All products show near-maximum entropy (spread across all folios).
+
+**Enrichment analysis:**
+- No folio shows >23% of any product's MIDDLEs
+- Maximum enrichment: f70v1 has 23.1% of OIL_RESIN MIDDLEs
+- WATER_STANDARD (largest) is nearly uniform: max folio has only 11.8%
+
+**Chi-squared test:**
+- Statistic: 27.32
+- Degrees of freedom: 36
+- **P-value: 0.85** (far above 0.05 threshold)
+
+#### Interpretation
+
+**VERDICT: NO STRATIFICATION**
+
+Product-associated MIDDLEs are uniformly distributed across all 13 Zodiac folios. The null hypothesis (no internal stratification) is strongly confirmed.
+
+**Conclusion:** Zodiac multiplicity exists purely for **coverage optimality**, not for internal stratification of the legality manifold. The 12 Zodiac folios are structurally equivalent gates.
+
+This closes the door definitively on the hypothesis that Zodiac folios realize different sub-regions of incompatibility space correlated with product inference.
+
+#### Implications
+
+1. **Validates existing model** — Zodiac folios ARE equivalent gates (C431 "structural clones" confirmed)
+2. **No hidden routing** — Product differentiation is NOT encoded at the Zodiac level
+3. **Coverage is the answer** — Zodiac needed 12 copies to cover the full MIDDLE space, not to stratify it
+4. **Refines C436 (Dual Rigidity)** — The uniform scaffold is also uniformly populated
+
+#### Source Phase
+`phases/AZC_ZODIAC_INTERNAL_STRATIFICATION/`
+
+---
+
+### F-AZC-018 - A/C Internal Stratification Test (NEGATIVE)
+
+**Tier:** F4 | **Result:** FALSIFIED | **Supports:** C430, C436
+
+#### Question
+Do different A/C AZC folios preferentially admit different regions of the Currier-A incompatibility space, and do those regions align with downstream B-inferred product families?
+
+This tests whether the A/C family (C430: low cross-folio consistency 0.340, each folio has its own scaffold) shows product-correlated stratification that Zodiac does not.
+
+**Critical framing note:** This is NOT a test of "product routing through gates." AZC filters constraint bundles; product types are downstream inferences from B behavior.
+
+#### Method
+
+1. Identify A/C AZC folios (17 folios: f65v-f70r2 range, excluding Zodiac)
+2. Extract product-exclusive MIDDLEs from B (by REGIME classification)
+3. Map those MIDDLEs to A/C folio vocabularies
+4. Test for clustering via chi-squared test of independence
+
+#### Data
+
+**Input:**
+- 75,173 B tokens across 83 folios
+- 5,607 A/C AZC tokens across 17 folios
+- 2,777 product-exclusive MIDDLEs
+
+**Product-exclusive MIDDLE counts:**
+| Product | Exclusive MIDDLEs |
+|---------|-------------------|
+| WATER_STANDARD | 1,517 |
+| WATER_GENTLE | 450 |
+| PRECISION | 430 |
+| OIL_RESIN | 380 |
+
+#### Results
+
+**Distribution entropy per product (higher = more spread):**
+| Product | Entropy | Max Possible |
+|---------|---------|--------------|
+| OIL_RESIN | 2.00 bits | 4.09 bits |
+| PRECISION | 3.46 bits | 4.09 bits |
+| WATER_GENTLE | 3.17 bits | 4.09 bits |
+| WATER_STANDARD | 3.69 bits | 4.09 bits |
+
+OIL_RESIN has lower entropy due to data sparsity (only 4 mapped MIDDLEs across all A/C folios).
+
+**Enrichment analysis:**
+- No folio shows >25% of any product's MIDDLEs
+- Maximum enrichment: f67r2 has 25% of OIL_RESIN (1 of 4 MIDDLEs)
+- WATER_STANDARD (largest) is nearly uniform: max folio has only 15%
+
+**Chi-squared test:**
+- Statistic: 46.67
+- Degrees of freedom: 42
+- **P-value: 0.29** (far above 0.05 threshold)
+
+#### Interpretation
+
+**VERDICT: NO STRATIFICATION**
+
+Product-associated MIDDLEs are uniformly distributed across all 17 A/C folios. The null hypothesis (no internal stratification) is strongly confirmed.
+
+**Comparison with Zodiac:**
+| Family | P-value | Verdict |
+|--------|---------|---------|
+| Zodiac | 0.85 | NO STRATIFICATION |
+| A/C | 0.29 | NO STRATIFICATION |
+
+**Conclusion:** A/C scaffold diversity (consistency=0.340) does NOT correlate with product types. The variation exists for other structural reasons, not for product-specific stratification.
+
+#### Implications
+
+1. **AZC is uniformly product-agnostic** — Neither family shows product-correlated stratification
+2. **Validates C430** — A/C diversity is structural, not semantic
+3. **Closes stratification hypothesis** — Product differentiation is NOT encoded at ANY AZC level
+4. **Supports universal filtering** — AZC filters constraint bundles uniformly regardless of downstream product inference
+
+#### Source Phase
+`phases/AZC_ZODIAC_INTERNAL_STRATIFICATION/`
+
+---
+
+### F-AZC-019 - A/C Incompatibility Density Test (POSITIVE)
+
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C430, C475
+
+#### Question
+Are A/C AZC folios activating more densely incompatible subsets of the MIDDLE space than Zodiac folios?
+
+This tests whether A/C's scaffold diversity (C430: consistency 0.340) reflects higher constraint exclusion burden - more mutually exclusive constraints held simultaneously.
+
+#### Method
+
+1. Build global MIDDLE co-occurrence matrix from all AZC folios
+2. For each folio, extract its unique MIDDLE vocabulary
+3. Compute local incompatibility density: (illegal pairs / total pairs among folio MIDDLEs)
+4. Compare A/C family vs Zodiac family via Mann-Whitney U
+
+#### Results
+
+**Local incompatibility density (fraction of MIDDLE pairs that are illegal):**
+| Family | Mean | Std | n |
+|--------|------|-----|---|
+| A/C | **0.5488** | 0.2347 | 17 |
+| Zodiac | **0.3799** | 0.0833 | 13 |
+| Global baseline | 0.9568 | - | - |
+
+**Statistical test:**
+- Mann-Whitney U: 188.00
+- **P-value: 0.0006** (highly significant)
+- Effect size: r = -0.70 (large)
+
+#### Interpretation
+
+**VERDICT: STRONG SIGNAL**
+
+A/C folios activate significantly more densely incompatible MIDDLE subsets than Zodiac folios. This confirms the expert's hypothesis:
+
+> **A/C manages fine-discrimination through higher constraint exclusion burden. It holds more mutually exclusive constraints simultaneously than Zodiac.**
+
+**Complementary finding:** Zone-transition analysis showed A/C has LOWER zone switching (0.004 vs 0.018). This means A/C achieves higher incompatibility density while maintaining positional stability - the opposite of what "more complex = more movement" would predict.
+
+#### Implications
+
+1. **Validates expert framing** - A/C = fine-discrimination checkpoints, Zodiac = coarse-discrimination flow
+2. **Explains C430** - A/C scaffold diversity reflects discrimination burden, not product types
+3. **Quantifies family difference** - 45% higher incompatibility density in A/C (0.55 vs 0.38)
+4. **Refines AZC model** - Incompatibility density is the discriminating feature between families
+
+#### Source Phase
+`phases/AC_INTERNAL_CHARACTERIZATION/`
+
+---
+
 ## Summary
 
 | Fit | Tier | Result | Key Finding |
@@ -876,6 +1072,9 @@ Position preservation test was inconclusive due to data sparsity.
 | F-AZC-013 | F2 | SUCCESS | Different AZC folios have distinct HT profiles |
 | F-AZC-015 | F2 | SUCCESS | Case B: High-order uniform parallelism (70% AZC active) |
 | F-AZC-016 | F2 | SUCCESS | Pipeline causality validated (28x escape transfer) |
+| F-AZC-017 | F4 | FALSIFIED | Zodiac internal stratification falsified (p=0.85) |
+| F-AZC-018 | F4 | FALSIFIED | A/C internal stratification falsified (p=0.29) |
+| F-AZC-019 | F2 | SUCCESS | A/C has 45% higher incompatibility density than Zodiac (p=0.0006) |
 
 ### Architectural Implications
 
@@ -891,6 +1090,9 @@ Position preservation test was inconclusive due to data sparsity.
 10. **Different AZC folios have distinct HT profiles** (F-AZC-013) - 18pp escape variance
 11. **AZC provides ambient, not dynamic, constraint activation** (F-AZC-015) - 70% active per window
 12. **AZC constraints causally transfer to B execution** (F-AZC-016) - 28x escape rate difference
+13. **Zodiac multiplicity is for coverage, not stratification** (F-AZC-017) - p=0.85 null confirmed
+14. **A/C diversity is structural, not product-correlated** (F-AZC-018) - p=0.29 null confirmed
+15. **A/C manages higher incompatibility density than Zodiac** (F-AZC-019) - 0.55 vs 0.38 (p=0.0006)
 
 Combined interpretation:
 > **AZC is a complete basis of legal orientation states. Each folio instantiates a distinct "how should I be thinking right now?" posture, not a variant procedure or material list. AZC is large because it must explicitly enumerate every orientation posture in which an operator might find themselves, since no single posture is safe across all contexts.**

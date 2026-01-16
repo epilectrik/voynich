@@ -1,119 +1,28 @@
 {
   "t1_1": {
-    "total_bigrams": 6175,
-    "unique_bigrams": 5457,
-    "top_10_pct": 0.016842105263157894,
-    "verdict": "DIFFUSE",
-    "top_bigrams": [
-      [
-        "chol\u2192daiin",
-        22
-      ],
-      [
-        "chol\u2192chol",
-        18
-      ],
-      [
-        "daiin\u2192daiin",
-        10
-      ],
-      [
-        "shol\u2192daiin",
-        10
-      ],
-      [
-        "daiin\u2192cthy",
-        10
-      ],
-      [
-        "daiin\u2192cthor",
-        8
-      ],
-      [
-        "chor\u2192chol",
-        7
-      ],
-      [
-        "otol\u2192chol",
-        7
-      ],
-      [
-        "chol\u2192cthol",
-        6
-      ],
-      [
-        "chol\u2192shol",
-        6
-      ],
-      [
-        "daiin\u2192dal",
-        6
-      ],
-      [
-        "cthy\u2192daiin",
-        6
-      ],
-      [
-        "dy\u2192dy",
-        6
-      ],
-      [
-        "chor\u2192daiin",
-        6
-      ],
-      [
-        "daiin\u2192chol",
-        6
-      ],
-      [
-        "cthol\u2192daiin",
-        5
-      ],
-      [
-        "chol\u2192chor",
-        5
-      ],
-      [
-        "qokol\u2192daiin",
-        5
-      ],
-      [
-        "s\u2192aiin",
-        5
-      ],
-      [
-        "chor\u2192chor",
-        5
-      ]
-    ]
+    "total_bigrams": 0,
+    "unique_bigrams": 0,
+    "top_10_pct": 0,
+    "verdict": "NO_BLOCKS",
+    "top_bigrams": []
   },
   "t1_2": {
-    "vocab_size": 2227,
-    "n_entries": 1013,
-    "verdict": "SOME_CLUSTERING"
+    "vocab_size": 0,
+    "n_entries": 0,
+    "verdict": "NO_BLOCKS"
   },
   "t1_3": {
-    "first_tokens_unique": 617,
-    "last_tokens_unique": 593,
-    "first_marker_pct": 0.44027640671273444,
-    "last_marker_pct": 0.6031589338598223,
-    "verdict": "MARKER_LAST"
+    "first_tokens_unique": 0,
+    "last_tokens_unique": 0,
+    "first_marker_pct": 0,
+    "last_marker_pct": 0,
+    "verdict": "NO_BLOCKS"
   },
   "t1_4": {
-    "total_tokens": 7188,
-    "unique_types": 2227,
-    "ttr": 0.30982192543127435,
-    "verdict": "HIGH_DIVERSITY",
-    "marker_vocab_sizes": {
-      "sh": 724,
-      "da": 402,
-      "ol": 206,
-      "ok": 335,
-      "ot": 262,
-      "ch": 740,
-      "NONE": 78,
-      "qo": 708,
-      "ct": 191
-    }
+    "total_tokens": 0,
+    "unique_types": 0,
+    "ttr": 0,
+    "verdict": "NO_BLOCKS",
+    "marker_vocab_sizes": {}
   }
 }

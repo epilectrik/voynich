@@ -1,0 +1,23 @@
+{
+  "test": "MIDDLE_PROPERTY_ANALYSIS",
+  "water_gentle_folios": [
+    "f17r",
+    "f32r",
+    "f45v",
+    "f52v",
+    "f90v2",
+    "f99v"
+  ],
+  "middle_counts": {
+    "total": 341,
+    "shared_by_all": 1,
+    "shared_by_some": 75,
+    "unique": 265
+  },
+  "percentages": {
+    "shared_all": 0.2932551319648094,
+    "shared_some": 21.994134897360702,
+    "unique": 77.71260997067449
+  },
+  "verdict": "INDIVIDUAL CONFIGURATION"
+}

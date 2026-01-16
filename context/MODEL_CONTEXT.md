@@ -286,16 +286,13 @@ Clustering reflects **where distinctions matter**, not categorical organization.
 
 ### Multiplicity Encoding
 
-64.1% of entries show bounded repetition (2-6x):
-- Repetition is literal enumeration, not quantity encoding
-- No arithmetic across entries
-- Blocks are 100% unique (no cross-entry reuse)
+**INVALIDATED (2026-01-15):** The "64.1% block repetition" finding (C250) was an artifact of loading all transcribers instead of H (primary) only. With H-only data: **0% block repetition**. The apparent repetition was caused by interleaved transcriber readings.
 
 ---
 
 ## VIII. AZC - DECISION-POINT GRAMMAR & COMPATIBILITY FILTER
 
-AZC (9,401 tokens, 7.7% of corpus, 36 folios) is neither Currier A nor Currier B. It operates as a **decision-point grammar** that converts static A-registry entries into phase-gated choice nodes.
+AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. It operates as a **decision-point grammar** that converts static A-registry entries into phase-gated choice nodes.
 
 ### Core Function (v3.0)
 

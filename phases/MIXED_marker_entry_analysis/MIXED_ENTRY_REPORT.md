@@ -40,6 +40,8 @@ This analysis was BOUNDED to:
 
 **Critical insight:** The CAS-SCAN finding of "64.1% block entries" referred to REPETITION patterns, not marker composition. At the LINE level, 89.2% of A lines contain multiple marker classes.
 
+**Note (2026-01-16):** The "64.1% block entries" finding (C250) was later INVALIDATED - it was a transcriber artifact caused by loading all transcribers instead of H (primary) only. With H-only data, block repetition is 0%.
+
 ---
 
 ## E-1: Marker Count Distribution
@@ -236,14 +238,12 @@ Mean dominance: 0.48
 
 | Analysis | Unit | Finding |
 |----------|------|---------|
-| CAS-SCAN | Blocks (repetition patterns) | 64.1% block entries |
+| ~~CAS-SCAN~~ | ~~Blocks (repetition patterns)~~ | ~~64.1% block entries~~ **INVALIDATED** |
 | E-Analysis | Lines (marker composition) | 89.2% mixed lines |
 
-These are COMPATIBLE findings measuring different things:
-- CAS-SCAN detected REPEATING BLOCKS within entries
-- E-Analysis measured MARKER DIVERSITY within lines
+**Note (2026-01-16):** The CAS-SCAN "64.1% block entries" finding (C250) was INVALIDATED. It was a transcriber artifact - with H-only data, block repetition is 0%.
 
-A line can be both a "block entry" (has repetition) AND "mixed" (multiple markers).
+The E-Analysis finding (89.2% mixed lines) remains valid as it measures marker diversity, not repetition.
 
 ---
 

@@ -30,6 +30,9 @@ for line in lines[1:]:
     parts = line.strip().split('\t')
     if len(parts) >= len(header):
         row = {header[i]: parts[i].strip('"') for i in range(len(header))}
+        # Filter to PRIMARY transcriber (H) only
+        if row.get('transcriber', '').strip() != 'H':
+            continue
         lang = row.get('language', '')
         if lang == 'NA' or lang == '':
             azc_tokens.append(row)

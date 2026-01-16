@@ -1,0 +1,13 @@
+{
+  "primary_track": "H",
+  "total_tokens": 37957,
+  "unique_types": 8150,
+  "currier_a_tokens": 11415,
+  "currier_b_tokens": 23243,
+  "azc_tokens": 3299,
+  "total_folios": 225,
+  "bigram_entropy": 13.897744679038752,
+  "unigram_entropy": 9.891399848701782,
+  "core_tokens_b": 41,
+  "single_folio_types_b": 3368
+}

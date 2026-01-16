@@ -68,6 +68,9 @@ def build_token_to_azc_mapping_from_source(filepath: Path) -> Dict[str, Set[str]
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to PRIMARY transcriber (H) only
+            if row.get('transcriber', '').strip().strip('"') != 'H':
+                continue
             word = row.get('word', '').strip()
             folio = row.get('folio', '').strip()
             section = row.get('section', '').strip()
@@ -102,6 +105,9 @@ def load_b_folio_tokens(filepath: Path, target_folio: str) -> List[Dict]:
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to PRIMARY transcriber (H) only
+            if row.get('transcriber', '').strip().strip('"') != 'H':
+                continue
             folio = row.get('folio', '').strip()
             if folio != target_folio:
                 continue

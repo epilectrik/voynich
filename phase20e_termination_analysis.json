@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "phase": "20E",
+    "title": "Termination & Asymptote Detection",
+    "timestamp": "2026-01-15T23:26:30.419163"
+  },
+  "information_curve": {
+    "phases_completed": 20,
+    "total_constraints": 102,
+    "cumulative": [
+      {
+        "phase": 1,
+        "cumulative_constraints": 15
+      },
+      {
+        "phase": 5,
+        "cumulative_constraints": 30
+      },
+      {
+        "phase": 7,
+        "cumulative_constraints": 39
+      },
+      {
+        "phase": 9,
+        "cumulative_constraints": 48
+      },
+      {
+        "phase": 12,
+        "cumulative_constraints": 53
+      },
+      {
+        "phase": 13,
+        "cumulative_constraints": 60
+      },
+      {
+        "phase": 14,
+        "cumulative_constraints": 66
+      },
+      {
+        "phase": 15,
+        "cumulative_constraints": 77
+      },
+      {
+        "phase": 16,
+        "cumulative_constraints": 84
+      },
+      {
+        "phase": 17,
+        "cumulative_constraints": 90
+      },
+      {
+        "phase": 18,
+        "cumulative_constraints": 96
+      },
+      {
+        "phase": 19,
+        "cumulative_constraints": 102
+      },
+      {
+        "phase": 20,
+        "cumulative_constraints": 102
+      }
+    ],
+    "last_3_phase_gains": [
+      6,
+      6,
+      0
+    ],
+    "mean_recent_gain": 4.0
+  },
+  "refinement_tests": {
+    "class_splitting_benefit": 0.1,
+    "recipe_splitting_benefit": 0.3,
+    "combined_benefit": 0.2
+  },
+  "residual_analysis": {
+    "unexplained_variance": 0.0,
+    "residual_type": "NOISE",
+    "grammar_coverage": 1.0
+  },
+  "ASYMPTOTE_STATUS": {
+    "reached": false,
+    "confidence": "MEDIUM",
+    "evidence": {
+      "diminishing_gains": true,
+      "high_coverage": true,
+      "low_refinement_benefit": true
+    }
+  },
+  "FINAL_SYSTEM_SPECIFICATION": {
+    "instruction_set_size": 49,
+    "parameter_dimensions": 2,
+    "recipe_repertoire_size": 8,
+    "grammar_coverage": 1.0,
+    "forbidden_transitions": 17,
+    "kernel_nodes": 3
+  },
+  "RECOMMENDATION": {
+    "action": "CONTINUE_WITH_HISTORICAL_COMPARISON",
+    "reason": "Compare to known 15th-century distillation manuals to ground interpretations."
+  },
+  "INTERPRETATION": "Asymptote not yet reached. System reduces to 49 instruction classes, 2 parameter dimensions, 8 recipe patterns. Grammar achieves 100.0% coverage."
+}

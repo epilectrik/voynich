@@ -21,7 +21,7 @@ The Astronomical/Zodiac/Cosmological (AZC) text is a genuine HYBRID system that 
 
 | Property | AZC | Currier A | Currier B |
 |----------|-----|-----------|-----------|
-| Token percentage | 7.7% | 30.5% | 61.9% |
+| Token percentage | 8.7% | 30.5% | 61.9% |
 | Folios | 30 | 114 | 83 |
 | TTR | 0.285 | 0.137 | 0.096 |
 | Tokens/line (median) | 8 | 22 | 31 |
@@ -29,7 +29,7 @@ The Astronomical/Zodiac/Cosmological (AZC) text is a genuine HYBRID system that 
 
 ## AZC-Unique Vocabulary (C304-305)
 
-- 1,529 types (25.4%) absent from both A and B
+- 903 types (27.4%) absent from both A and B
 - 98% section-exclusive
 - 37% line-initial, 37% line-final
 - 65.9% hapax (most appear only once)
@@ -37,7 +37,7 @@ The Astronomical/Zodiac/Cosmological (AZC) text is a genuine HYBRID system that 
 
 ## Related Constraints
 
-- C300 - 9,401 tokens unclassified by Currier
+- C300 - 3,299 tokens unclassified by Currier
 - C302 - Distinct line structure
 - C303 - Elevated LINK density
 - C306 - Placement-coding axis

@@ -1,0 +1,14 @@
+{
+  "azc_tokens": 3299,
+  "azc_types": 1707,
+  "azc_unique_types": 903,
+  "azc_folios": 29,
+  "median_tokens_per_line": 2.0,
+  "mean_jaccard": 0.05195325067987868,
+  "sections": {
+    "Z": "1330",
+    "C": "1075",
+    "A": "846",
+    "H": "48"
+  }
+}

@@ -1,73 +1,73 @@
 {
   "reuse": {
-    "total_tokens": 37214,
-    "unique_tokens": 5101,
-    "ttr": 0.13707206965120652,
-    "hapax_pct": 0.36443834542246617,
-    "top_10_coverage": 0.16313752888697802,
-    "top_50_coverage": 0.34191433331541893
+    "total_tokens": 11415,
+    "unique_tokens": 3446,
+    "ttr": 0.30188348664038545,
+    "hapax_pct": 0.7071967498549042,
+    "top_10_coverage": 0.1568988173455979,
+    "top_50_coverage": 0.3399036355672361
   },
   "patterns": {
     "top_patterns": [
       [
-        "ch+0",
-        2040
-      ],
-      [
         "nomarker+1",
-        1676
+        3024
       ],
       [
-        "nomarker+3",
-        1257
+        "ch+0",
+        1572
       ],
       [
         "qo+0",
-        1135
-      ],
-      [
-        "nomarker+2",
-        1015
+        916
       ],
       [
         "sh+0",
-        1007
+        778
       ],
       [
         "da+0",
-        677
+        515
       ],
       [
         "ok+0",
-        630
+        490
       ],
       [
         "ot+0",
-        568
+        436
       ],
       [
-        "nomarker+4",
-        567
+        "ct+0",
+        346
+      ],
+      [
+        "ol+0",
+        226
+      ],
+      [
+        "yk+0",
+        209
       ]
     ],
-    "pattern_concentration": 0.5852436118642675
+    "pattern_concentration": 0.7547692990239574
   },
   "kv": {
     "structures": {
-      "marker_only": 1731,
+      "marker_only": 4674,
       "marker_payload": 0,
-      "no_marker": 4871,
-      "multi_marker": 5569
+      "no_marker": 3337,
+      "multi_marker": 1005
     },
     "marker_positions": {
-      "first": 1731
+      "first": 4674
     },
-    "kv_pct": 0.14222331772245503
+    "kv_pct": 0.5184117125110914
   },
   "reference": {
-    "unique_sequences": 5053,
-    "repeated_sequences": 1355,
-    "bigram_reuse_rate": 0.7067764407853071
+    "unique_sequences": 495,
+    "repeated_sequences": 208,
+    "bigram_reuse_rate": 0.5063291139240507
   },
   "verdict": "DATABASE_LIKE",
   "interpretation": "\nCurrier A behaves like a DATABASE or REGISTRY:\n- Low type-token ratio (vocabulary is heavily reused)\n- Clear key-value structure (marker + payload)\n- Formulaic patterns (repeated templates)\n- This is a CATALOG or INDEX, not free text\n        "

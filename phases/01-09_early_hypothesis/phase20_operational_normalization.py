@@ -56,7 +56,7 @@ HUB_NODES = {'k', 'h', 'e', 't', 'daiin', 'ch', 'ol'}
 BRIDGE_NODES = {'chedy', 'shedy', 'o', 'aiin', 'ar', 'chol', 'or', 'al'}
 
 def load_corpus():
-    """Load the interlinear transcription corpus."""
+    """Load the interlinear transcription corpus (PRIMARY transcriber H only)."""
     corpus_path = Path("data/transcriptions/interlinear_full_words.txt")
     records = []
 
@@ -70,7 +70,12 @@ def load_corpus():
                     header = parts
                     continue
 
-                if len(parts) >= 7:
+                if len(parts) >= 13:
+                    # Filter to PRIMARY transcriber (H) only - column 12
+                    transcriber = parts[12].strip('"')
+                    if transcriber != 'H':
+                        continue
+
                     word = parts[0].strip('"')
                     folio = parts[2].strip('"')
                     language = parts[6].strip('"')

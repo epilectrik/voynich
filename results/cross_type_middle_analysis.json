@@ -1,0 +1,34 @@
+{
+  "test": "CROSS_TYPE_MIDDLE_ANALYSIS",
+  "total_middles": 3060,
+  "distribution": {
+    "universal": 106,
+    "cross_cutting": 480,
+    "type_specific": 2474
+  },
+  "percentages": {
+    "type_specific": 80.84967320261438,
+    "shared": 19.15032679738562
+  },
+  "hypothesis_support": {
+    "H1_type_locked": true,
+    "H2_cross_cutting": false,
+    "H3_hierarchical": true
+  },
+  "type_pair_sharing": {
+    "PRECISION+WATER_GENTLE": 4,
+    "PRECISION+WATER_STANDARD": 167,
+    "WATER_GENTLE+WATER_STANDARD": 46,
+    "OIL_RESIN+WATER_STANDARD": 94,
+    "OIL_RESIN+PRECISION": 11,
+    "OIL_RESIN+WATER_GENTLE": 1
+  },
+  "clustering": {
+    "OIL_RESIN": 8,
+    "PRECISION": 9,
+    "WATER_GENTLE": 2,
+    "WATER_STANDARD": 29
+  },
+  "verdict": "HIERARCHICAL",
+  "interpretation": "MIDDLEs show multi-level structure:   - Universal MIDDLEs: appear in ALL product types (procedural primitives?)   - Cross-cutting MIDDLEs: shared by 2-3 types (material PROPERTY markers?)   - Type-specific MIDDLEs: unique to one type (type-locked procedures?)  This suggests MIDDLEs encode BOTH:   1. Common procedural vocabulary (universal)   2. Shared material properties (cross-cutting)   3. Type-specific configurations (unique)"
+}

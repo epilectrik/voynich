@@ -85,25 +85,19 @@ This explains:
 
 ---
 
-## Multiplicity Encoding (Tier 2)
+## Multiplicity Encoding - INVALIDATED
 
-64.1% of entries exhibit **repeating block structure**: `[BLOCK] × N`
+**Status:** INVALIDATED (2026-01-15)
 
-| Metric | Value | Constraint |
-|--------|-------|------------|
-| Entries with repetition | 64.1% (1013/1580) | C250 |
-| Average repetition | 2.79x | C252 |
-| Distribution | 2x: 416, 3x: 424, 4x: 148, 5x: 20, 6x: 5 | C252 |
-| Block uniqueness | 100% (no cross-entry reuse) | C253 |
-| Section isolation | 100% (no cross-section reuse) | C255 |
+The "64.1% block repetition" finding (C250-C262, C266) was an artifact of loading all transcribers instead of H (primary) only. With H-only data: **0% block repetition**.
 
-### This is LITERAL ENUMERATION
+The apparent `[BLOCK] × N` patterns were caused by interleaved readings from different transcribers being misinterpreted as intentional repetition.
 
-- **NOT:** `ITEM = 5` (abstract quantity with arithmetic)
-- **BUT:** `ITEM, ITEM, ITEM, ITEM, ITEM` (discrete instances)
-- No cross-entry arithmetic
-- No reference frame for comparison
-- 3x dominance (55%) reflects human counting bias (C258)
+| Constraint | Original Claim | Corrected Status |
+|------------|----------------|------------------|
+| C250 | 64.1% show repeating blocks | **INVALIDATED** (0% with H-only) |
+| C251-C262 | Block properties | **INVALIDATED** (depend on C250) |
+| C266 | Block vs non-block types | **INVALIDATED** (depend on C250) |
 
 ---
 
@@ -185,7 +179,7 @@ Sections have **distinct configurations** (C295):
 | 233 | A = LINE_ATOMIC |
 | 234 | A = POSITION_FREE |
 | 240 | A = NON_SEQUENTIAL_CATEGORICAL_REGISTRY |
-| 250 | 64.1% show repeating blocks |
+| 250 | ~~64.1% show repeating blocks~~ INVALIDATED |
 | 267 | Tokens are COMPOSITIONAL |
 | 383 | GLOBAL TYPE SYSTEM across A/B/AZC |
 

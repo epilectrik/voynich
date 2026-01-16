@@ -1,8 +1,10 @@
 # Currier A Record Structure Analysis - Synthesis
 
 **Date:** 2026-01-09
-**Status:** COMPLETE
-**Constraint outcome:** C250.a refinement only (see expert review below)
+**Status:** INVALIDATED (2026-01-16)
+**Constraint outcome:** ~~C250.a refinement~~ → **INVALIDATED** - based on transcriber artifact
+
+> **WARNING:** This analysis was conducted before the transcriber filtering bug was discovered. The "64.1% block repetition" pattern (C250) was caused by interleaved readings from multiple transcribers, not actual repetition in the manuscript. With H-only (primary transcriber) data, block repetition is **0%**. All findings in this document that depend on C250 are invalidated.
 
 ---
 
@@ -55,20 +57,14 @@ Now that DA articulation is established (C422), we analyzed record-level structu
 - ct prefers LAST block position
 - ch is neutral
 
-### Finding 4: Block-Level Repetition (CONFIRMS Hypothesis)
+### ~~Finding 4: Block-Level Repetition~~ **INVALIDATED**
 
-| Metric | Value |
-|--------|-------|
-| Multi-block entries with J >= 0.5 similarity | 91.5% |
-| Exact block repetition | 58.7% |
-| Mean block similarity | 0.815 |
-| Median block similarity | 0.875 |
+> **INVALIDATED (2026-01-16):** This finding was based on data that included all transcribers. The apparent block repetition was caused by interleaved transcriber readings, not actual repetition. With H-only data, block repetition is **0%**.
 
-**Pattern:** Non-adjacent blocks are MORE similar (0.836) than adjacent (0.775).
-
-This suggests interleaved repetition: A-DA-A-DA-B-DA-B
-
-**Critical refinement:** Repetition operates at BLOCK level, not token/entry level. The `[BLOCK] × N` pattern from C250 is now confirmed to use DA-segmented blocks.
+~~| Metric | Value |~~
+~~|--------|-------|~~
+~~| Multi-block entries with J >= 0.5 similarity | 91.5% |~~
+~~| Exact block repetition | 58.7% |~~
 
 ### Finding 5: Record Templates
 
@@ -101,14 +97,9 @@ Section P has simplest records. Section H has most complex multi-block entries.
 
 **Key principle:** A constraint must describe something that MUST be true, not something that OFTEN happens.
 
-### ACCEPTED: C250.a - Block-Aligned Repetition (Refinement)
+### ~~ACCEPTED: C250.a - Block-Aligned Repetition~~ **INVALIDATED**
 
-Refines C250. The `[BLOCK] × N` structure operates on DA-segmented units:
-- 58.7% exact block repetition within entries
-- 91.5% high similarity (J >= 0.5)
-- Blocks repeat non-adjacently, suggesting enumeration of similar items
-
-This adds *precision* to existing CAS-MULT constraints without introducing new behavior.
+> **INVALIDATED (2026-01-16):** C250.a depends on C250 which was discovered to be a transcriber artifact. The block repetition pattern does not exist in H-only data.
 
 ### REJECTED: Positional Prefix Preferences
 
@@ -145,8 +136,9 @@ NOT a constraint because:
 
 | Constraint | Status |
 |------------|--------|
-| C250 (64.1% repetition) | REFINED by C250.a |
-| C262 (7.7% variation) | CONFIRMED - block similarity explains this |
+| ~~C250 (64.1% repetition)~~ | **INVALIDATED** (2026-01-16) - transcriber artifact |
+| ~~C250.a (block-aligned)~~ | **INVALIDATED** - depends on C250 |
+| ~~C262 (7.7% variation)~~ | **INVALIDATED** - depends on C250 |
 | C422 (DA articulation) | LEVERAGED - blocks now defined |
 | C410 (section conditioning) | CONFIRMED - section affects complexity |
 
@@ -158,11 +150,10 @@ Currier A record structure is now characterized at descriptive level:
 
 1. **Entry = 1-N blocks separated by DA** (structural)
 2. **Blocks are FRONT-HEAVY (first block largest)** (tendency)
-3. **Blocks REPEAT within entries (58.7% exact)** (refined C250)
+3. ~~**Blocks REPEAT within entries (58.7% exact)**~~ **INVALIDATED**
 4. **Prefix families show positional tendencies** (preference, not rule)
 5. **3-5 stable templates cover 77% of entries** (emergent pattern)
 
 These findings describe **USE of structure**, not design limits.
 
-Only C250.a (block-aligned repetition) rises to refinement level.
-Other findings remain valuable descriptive documentation.
+**Note (2026-01-16):** C250.a was invalidated when the transcriber filtering bug was discovered. Findings 1, 2, 4, 5 remain valid as they don't depend on block repetition.

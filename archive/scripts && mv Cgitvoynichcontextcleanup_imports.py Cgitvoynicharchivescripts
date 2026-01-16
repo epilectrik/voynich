@@ -1,0 +1,241 @@
+#!/usr/bin/env python
+"""
+Import missing constraints from v-1.8.txt into the registry files.
+Ensures consistent formatting for easy parsing.
+"""
+import re
+from pathlib import Path
+from collections import defaultdict
+
+OLD_CONTEXT_FILE = Path(r'C:\git\qtbot\v-1.8.txt')
+CLAIMS_DIR = Path(__file__).parent / 'CLAIMS'
+
+# Constraint number -> registry file mapping
+CONSTRAINT_REGISTRY_MAP = {
+    # Executability, Kernel, Hazard, Language
+    range(72, 133): 'tier0_core.md',
+    # Illustration, Family
+    range(133, 145): 'grammar_system.md',
+    # Organizational
+    range(153, 178): 'organization.md',
+    # OPS, EXT
+    range(178, 224): 'operations.md',
+    # Currier A
+    range(224, 300): 'currier_a.md',
+    # AZC
+    range(300, 328): 'azc_system.md',
+    # Grammar robustness, terminal states
+    range(328, 346): 'organization.md',
+    # HT morphology
+    range(341, 349): 'human_track.md',
+    # Morphology closure
+    range(349, 383): 'morphology.md',
+    # Global architecture
+    range(383, 412): 'morphology.md',
+    # HT closure
+    range(404, 420): 'human_track.md',
+    # Currier A positional
+    range(420, 425): 'currier_a.md',
+}
+
+# Scope mapping based on constraint ranges
+CONSTRAINT_SCOPE_MAP = {
+    range(72, 133): 'B',
+    range(133, 145): 'B',
+    range(153, 166): 'B',
+    range(166, 173): 'HT',
+    range(173, 178): 'B',
+    range(178, 224): 'B',
+    range(224, 300): 'A',
+    range(300, 328): 'AZC',
+    range(328, 341): 'B',
+    range(341, 349): 'HT',
+    range(349, 383): 'B',
+    range(383, 384): 'GLOBAL',
+    range(384, 386): 'A↔B',
+    range(386, 404): 'B',
+    range(404, 407): 'HT',
+    range(407, 412): 'GLOBAL',
+    range(412, 420): 'B',
+    range(413, 420): 'HT',
+    range(420, 425): 'A',
+}
+
+
+def get_registry_for_constraint(num):
+    """Determine which registry file a constraint belongs to"""
+    for num_range, registry in CONSTRAINT_REGISTRY_MAP.items():
+        if num in num_range:
+            return registry
+    return 'organization.md'  # Default
+
+
+def get_scope_for_constraint(num):
+    """Determine scope for a constraint"""
+    for num_range, scope in CONSTRAINT_SCOPE_MAP.items():
+        if num in num_range:
+            return scope
+    return 'B'  # Default
+
+
+def parse_old_context(file_path):
+    """Parse constraints from the old v-1.8.txt file"""
+    constraints = {}
+
+    if not file_path.exists():
+        print(f"WARNING: {file_path} not found")
+        return constraints
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Find sections that are constraint tables (have "| # | Constraint |" header)
+    # Split into sections and only parse sections with constraint headers
+    sections = re.split(r'\n###\s+', content)
+
+    for section in sections:
+        # Only parse sections with constraint table headers
+        if '| # | Constraint |' not in section and '|---|------------|' not in section:
+            continue
+
+        # Pattern for table rows: | ### | Description |
+        # Handle various formats: | 74 |, | **74** |, | 074 |
+        pattern = r'\|\s*\*{0,2}(\d{2,3})\*{0,2}\s*\|\s*(.+?)\s*\|'
+
+        for match in re.finditer(pattern, section):
+            num = int(match.group(1))
+            desc = match.group(2).strip()
+
+            # Skip header rows and invalid entries
+            if desc in ['Constraint', '---', '-', '#', '']:
+                continue
+
+            # Skip if description is just a number (wrong table type)
+            if re.match(r'^\d+$', desc):
+                continue
+
+            # Skip very short descriptions (likely parsing errors)
+            if len(desc) < 5:
+                continue
+
+            # Only accept constraints in valid ranges (74-424)
+            if num < 74 or num > 424:
+                continue
+
+            # Clean description
+            desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)  # Remove markdown links
+            desc = desc.replace('**', '')  # Remove bold
+            desc = desc.strip()
+
+            if desc and num not in constraints:
+                constraints[num] = {
+                    'num': num,
+                    'desc': desc,
+                    'scope': get_scope_for_constraint(num),
+                    'registry': get_registry_for_constraint(num)
+                }
+
+    return constraints
+
+
+def parse_existing_constraints():
+    """Parse existing constraints from registry files"""
+    existing = set()
+
+    for md_file in CLAIMS_DIR.glob('*.md'):
+        content = md_file.read_text(encoding='utf-8')
+        # Match constraint headers
+        matches = re.findall(r'#{2,3}\s*C(\d{2,3})\s*[-–]', content)
+        for m in matches:
+            existing.add(int(m))
+
+    return existing
+
+
+def format_constraint_entry(num, desc, scope):
+    """Format a constraint as a registry entry"""
+    return f"""### C{num:03d} - {desc}
+**Tier:** 2 | **Status:** CLOSED
+{desc}
+**Source:** v1.8-import
+
+"""
+
+
+def add_constraints_to_registry(registry_file, constraints):
+    """Add missing constraints to a registry file"""
+    registry_path = CLAIMS_DIR / registry_file
+
+    if not registry_path.exists():
+        print(f"WARNING: Registry file {registry_file} not found")
+        return 0
+
+    content = registry_path.read_text(encoding='utf-8')
+
+    # Find the Navigation section to insert before it
+    nav_match = re.search(r'\n## Navigation\n', content)
+    if nav_match:
+        insert_pos = nav_match.start()
+    else:
+        insert_pos = len(content)
+
+    # Sort constraints by number
+    sorted_constraints = sorted(constraints, key=lambda c: c['num'])
+
+    # Build insertion text
+    if sorted_constraints:
+        insertion = "\n---\n\n## Imported Constraints\n\n"
+        for c in sorted_constraints:
+            insertion += format_constraint_entry(c['num'], c['desc'], c['scope'])
+
+        # Insert before Navigation
+        new_content = content[:insert_pos] + insertion + content[insert_pos:]
+        registry_path.write_text(new_content, encoding='utf-8')
+
+    return len(sorted_constraints)
+
+
+def main():
+    print("Parsing old context file...")
+    old_constraints = parse_old_context(OLD_CONTEXT_FILE)
+    print(f"Found {len(old_constraints)} constraints in v-1.8.txt")
+
+    print("\nParsing existing constraints...")
+    existing = parse_existing_constraints()
+    print(f"Found {len(existing)} existing constraints")
+
+    # Find missing constraints
+    missing = {num: c for num, c in old_constraints.items() if num not in existing}
+    print(f"\nMissing constraints: {len(missing)}")
+
+    if not missing:
+        print("No missing constraints to import!")
+        return
+
+    # Group by registry file
+    by_registry = defaultdict(list)
+    for num, c in missing.items():
+        by_registry[c['registry']].append(c)
+
+    print("\nConstraints to add by registry:")
+    for registry, constraints in sorted(by_registry.items()):
+        print(f"  {registry}: {len(constraints)} constraints")
+        # Show first few
+        nums = sorted([c['num'] for c in constraints])[:5]
+        print(f"    Sample: C{nums[0]:03d}-C{nums[-1]:03d}..." if len(nums) > 1 else f"    Sample: C{nums[0]:03d}")
+
+    # Auto-proceed (no interactive prompt)
+    print("\nProceeding with import...")
+
+    # Add constraints to registries
+    total_added = 0
+    for registry, constraints in by_registry.items():
+        added = add_constraints_to_registry(registry, constraints)
+        print(f"Added {added} constraints to {registry}")
+        total_added += added
+
+    print(f"\nTotal imported: {total_added} constraints")
+
+
+if __name__ == '__main__':
+    main()

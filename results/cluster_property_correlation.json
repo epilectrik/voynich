@@ -1,0 +1,36 @@
+{
+  "test": "CLUSTER_PROPERTY_CORRELATION",
+  "clusters": {
+    "cluster1": [
+      "f32r",
+      "f45v"
+    ],
+    "cluster2": [
+      "f52v",
+      "f99v"
+    ],
+    "singletons": [
+      "f17r",
+      "f90v2"
+    ]
+  },
+  "cluster1_analysis": {
+    "n_shared_middles": 22,
+    "type_overlap": {
+      "WATER_STANDARD": 19,
+      "PRECISION": 18,
+      "OIL_RESIN": 19,
+      "WATER_GENTLE": 19
+    }
+  },
+  "cluster2_analysis": {
+    "n_shared_middles": 24,
+    "type_overlap": {
+      "WATER_STANDARD": 22,
+      "PRECISION": 20,
+      "OIL_RESIN": 19,
+      "WATER_GENTLE": 22
+    }
+  },
+  "verdict": "SUBCLASS_CONFIRMED"
+}

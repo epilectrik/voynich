@@ -48,7 +48,7 @@ Example: `CAud_currier_a_audit` = Currier A Audit phase
 | CAud-G | A grammar derivation | NO GRAMMAR |
 | CAS | A schema | CATEGORICAL REGISTRY |
 | CAS-DS | A deep structure | INFRASTRUCTURE_REUSE |
-| CAS-MULT | Multiplicity encoding | 64.1% repeating blocks |
+| CAS-MULT | Multiplicity encoding | INVALIDATED (transcriber artifact) |
 | CAS-DEEP | Deep structure | 100% section-isolated |
 | CAS-MORPH | Morphology | 897 combinations |
 | CAS-PHYS | Physical separation | 0 shared folios |

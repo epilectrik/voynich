@@ -1,0 +1,35 @@
+{
+  "test": "AZC_PROJECTION_INVARIANCE",
+  "n_folios_tested": 109,
+  "folios_with_zone_data": 109,
+  "type_zone_profiles": {
+    "WATER_GENTLE": {
+      "C": 0.0,
+      "P": 1.0,
+      "R": 0.0,
+      "S": 0.0
+    },
+    "WATER_STANDARD": {
+      "C": 0.0,
+      "P": 0.9982951543965808,
+      "R": 0.0017048456034192958,
+      "S": 0.0
+    },
+    "OIL_RESIN": {
+      "C": 0.0,
+      "P": 1.0,
+      "R": 0.0,
+      "S": 0.0
+    },
+    "PRECISION": {
+      "C": 0.001120162932790224,
+      "P": 0.9988798370672098,
+      "R": 0.0,
+      "S": 0.0
+    }
+  },
+  "vocabulary_zone_correlation": 0.036180543296828474,
+  "orthogonality_status": "CONFIRMED",
+  "verdict": "ORTHOGONAL AXES CONFIRMED",
+  "interpretation": "Vocabulary-based discrimination (A register content) and\nzone-based legality (AZC position constraints) operate on\nDIFFERENT AXES. This means:\n\n1. Sub-class clusters based on vocabulary do NOT simply\n   reflect zone legality differences.\n\n2. The two systems (A discrimination, AZC legality) are\n   structurally independent, joined at the interface.\n\n3. Semantic property readings are LESS supported because\n   vocabulary clusters don't collapse to legality categories.\n\nThis strengthens C468-C473 (A/AZC orthogonality)."
+}

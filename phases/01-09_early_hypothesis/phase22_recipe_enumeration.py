@@ -40,7 +40,7 @@ def folio_sort_key(folio_id):
 # ============================================================================
 
 def load_corpus():
-    """Load the interlinear transcription corpus."""
+    """Load the interlinear transcription corpus (PRIMARY transcriber H only)."""
     corpus_path = Path("data/transcriptions/interlinear_full_words.txt")
     records = []
 
@@ -52,7 +52,12 @@ def load_corpus():
                 if header is None:
                     header = parts
                     continue
-                if len(parts) >= 7:
+                if len(parts) >= 13:
+                    # Filter to PRIMARY transcriber (H) only - column 12
+                    transcriber = parts[12].strip('"')
+                    if transcriber != 'H':
+                        continue
+
                     word = parts[0].strip('"')
                     folio = parts[2].strip('"')
                     language = parts[6].strip('"')
