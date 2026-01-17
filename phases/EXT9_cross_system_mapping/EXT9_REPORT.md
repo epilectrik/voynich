@@ -4,6 +4,25 @@
 **Tier:** 2 (STRUCTURAL INFERENCE)
 **Status:** COMPLETE
 **Date:** 2026-01-06
+**Updated:** 2026-01-16 (H-only transcriber filter applied)
+
+---
+
+## MIDDLE Count Correction (2026-01-16)
+
+> **The "~725 Middles (8 A-exclusive)" claim in this report is INVALIDATED.**
+>
+> Re-analysis (phase MIDDLE-AB) with consistent parsing reveals:
+> - **Global MIDDLE universe (A ∪ B): 1,186**
+> - **Currier A unique MIDDLEs: 617** (not 725)
+> - **Currier B unique MIDDLEs: 837**
+> - **Shared (A ∩ B): 268**
+> - **A-exclusive: 349** (not 8-9)
+> - **B-exclusive: 569**
+> - **Jaccard similarity: 0.226**
+>
+> The original 725 figure was a parsing artifact. References to "only 9 A-exclusive" are incorrect.
+> See `phases/MIDDLE_AB/MIDDLE_AB_REPORT.md` for full analysis.
 
 ---
 
@@ -19,17 +38,17 @@
 
 | Metric | Value |
 |--------|-------|
-| Bases with -or form | 506 |
-| Bases with -dy form | 1,400 |
-| Bases with BOTH | 217 (12.8% overlap) |
-| Modal split rate | **51.9%** (14/27 testable) |
+| Bases with -or form | 375 |
+| Bases with -dy form | 997 |
+| Bases with BOTH | 177 (14.8% overlap) |
+| Modal split rate | **57.9%** (11/19 testable) |
 
-**Result:** HYPOTHESIS SUPPORTED (partial)
+**Result:** HYPOTHESIS SUPPORTED (stronger with clean data)
 
 Examples of modal split bases:
-- `ch-`: chor (A=629, B=97) vs chdy (A=31, B=423)
-- `sh-`: shor (A=240, B=77) vs shdy (A=8, B=141)
-- `cth-`: cthor (A=148, B=11) — rarely has -dy form
+- `ch-`: chor (A=182, B=32) vs chdy (A=9, B=132)
+- `sh-`: shor (A=69, B=26) vs shdy (A=2, B=42)
+- `cth-`: cthor (A=42, B=3) — rarely has -dy form
 
 **Interpretation:** About half of bases with both forms show the expected A-or/B-dy pattern. The relationship is real but not universal.
 
@@ -39,20 +58,20 @@ Examples of modal split bases:
 
 | Metric | Value |
 |--------|-------|
-| CT in A | 1,492 |
-| CT in B | 214 (0.14x ratio) |
-| B folios with CT | 48 |
-| Top folio | f113v (12 CT tokens) |
+| CT in A | 449 |
+| CT in B | 59 (0.13x ratio) |
+| B folios with CT | 39 |
+| Top folio | f113v (4 CT tokens) |
 
 **CT token distribution in B:**
 
 | Token | In B | In A | Ratio |
 |-------|------|------|-------|
-| cthey | 43 | 127 | 0.34x |
-| cthedy | 36 | 3 | 12.0x (exceptional!) |
-| cthdy | 26 | 0 | B-only |
-| cthy | 22 | 352 | 0.06x |
-| cthor | 11 | 148 | 0.07x |
+| cthedy | 9 | 1 | 9.0x (exceptional!) |
+| cthey | 9 | 38 | 0.24x |
+| cthdy | 8 | 0 | B-only |
+| cthy | 6 | 101 | 0.06x |
+| cthor | 3 | 42 | 0.07x |
 
 **Key finding:** When CT appears in B, it often uses B-enriched suffixes (-edy, -dy) that it rarely uses in A. This suggests CT references in procedures take "operational form" even though CT itself is primarily a registry category.
 
@@ -67,18 +86,18 @@ Examples of modal split bases:
 
 | Metric | Value |
 |--------|-------|
-| Balanced tokens (0.5x-2.0x, both >=10) | 161 |
+| Balanced tokens (0.5x-2.0x, both >=10) | 66 |
 | DA-family tokens in balanced set | Dominant |
 
 **Top balanced tokens:**
 
 | Token | In A | In B | Ratio |
 |-------|------|------|-------|
-| daiin | 1,762 | 1,140 | 0.65x |
-| dy | 436 | 401 | 0.92x |
-| dal | 286 | 483 | 1.69x |
-| dain | 321 | 285 | 0.89x |
-| dam | 150 | 140 | 0.93x |
+| daiin | 511 | 315 | 0.62x |
+| dar | 95 | 188 | 1.98x |
+| dy | 124 | 110 | 0.89x |
+| dal | 85 | 133 | 1.56x |
+| dain | 93 | 114 | 1.23x |
 
 **Interpretation:** Balanced tokens are dominated by:
 1. Structural primitives (daiin)
@@ -93,13 +112,13 @@ These may serve as **cross-reference vocabulary** — the shared terminology use
 
 | Category | Count | Examples |
 |----------|-------|----------|
-| **A-ENRICHED** | 5 | -chor (0.18x), -chol (0.21x), -chy (0.61x), -eor (0.64x), -or (0.67x) |
-| **B-ENRICHED** | 12 | -edy (190.75x!), -edaiin (63.67x), -kaiin (6.42x), -dy (4.63x), -al (3.36x) |
-| **BALANCED** | 10 | -odaiin (0.79x), -ody (0.82x), -ol (0.89x), -aiin (1.08x), -hy (1.12x) |
+| **A-ENRICHED** | 4 | -chor (0.21x), -chol (0.22x), -eor (0.64x), -chy (0.68x) |
+| **B-ENRICHED** | 12 | -edy (175.39x!), -edaiin (103.0x), -kaiin (5.75x), -dy (4.46x), -eey (3.28x) |
+| **BALANCED** | 11 | -or (0.75x), -odaiin (0.88x), -ol (0.88x), -ody (0.91x), -aiin (0.99x) |
 
 **Extreme cases:**
-- `-edy` is **191x more common in B** — almost exclusively operational
-- `-chor` is **5.5x more common in A** — almost exclusively registry
+- `-edy` is **175x more common in B** — almost exclusively operational
+- `-chor` is **4.8x more common in A** — almost exclusively registry
 
 **Interpretation:** Suffixes carry **context preference**, not exclusivity. The -edy suffix is the strongest operational marker; -chor/-chol are the strongest registry markers.
 
@@ -134,7 +153,7 @@ Suffix       CH    QO    SH    DA    OK    OT    CT    OL
 A and B share:
   - Same 8 prefixes
   - Same 27 suffixes
-  - Most middles (only 9 A-exclusive)
+  - 268 shared MIDDLEs (349 A-exclusive, 569 B-exclusive)
 
 A and B differ in:
   - Structural grammar (compositional vs sequential)
@@ -158,7 +177,7 @@ Balanced forms:      -ol, -aiin, -hy       (same as left)
 |----------|--------|
 | CO-DESIGNED | Shared components confirm intentional design |
 | COMPLEMENTARY | Different grammars for different purposes |
-| OVERLAPPING | 161 balanced tokens, shared suffix inventory |
+| OVERLAPPING | 66 balanced tokens, shared suffix inventory |
 | MODE-PREFERRING | Consistent preferences but not exclusive |
 
 ---
@@ -172,7 +191,7 @@ Suffixes show CONTEXT PREFERENCE, not exclusivity. A-enriched: -or (0.67x), -chy
 CT in B is CONCENTRATED in specific folios (48 folios, not uniform). When CT appears in B, it often uses B-enriched suffixes (-edy, -dy), suggesting operational reference form.
 
 ### Constraint 285: Balanced Vocabulary
-161 tokens appear with BALANCED frequency (0.5x-2.0x) in both A and B. DA-family dominates. These serve as SHARED VOCABULARY between registry and operational contexts.
+66 tokens appear with BALANCED frequency (0.5x-2.0x) in both A and B. DA-family dominates. These serve as SHARED VOCABULARY between registry and operational contexts.
 
 ### Constraint 286: Prefix-Suffix Interaction
 Modal preference is PREFIX × SUFFIX dependent. CT is consistently A-enriched across most suffixes. OL is consistently B-enriched. Other prefixes show variable patterns.
@@ -189,8 +208,8 @@ VOYNICH MANUSCRIPT CROSS-SYSTEM ARCHITECTURE
 │  ─────────────────────────────────────────────────────────────  │
 │  8 Prefixes (ch, qo, sh, da, ok, ot, ct, ol)                   │
 │  27 Suffixes (-ol, -or, -dy, -edy, -aiin, etc.)                │
-│  ~1,140 Middles (9 A-exclusive)                                 │
-│  161 Balanced tokens (cross-reference vocabulary)               │
+│  1,186 MIDDLEs (617 A, 837 B, 268 shared)                      │
+│  66 Balanced tokens (cross-reference vocabulary)                │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │   CURRIER A (Registry)            CURRIER B (Operational)       │

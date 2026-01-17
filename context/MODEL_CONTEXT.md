@@ -163,8 +163,22 @@ Prefixes encode **functional type**, not semantic category:
 ### MIDDLE Function
 
 MIDDLEs are the primary vocabulary layer:
-- 1,184 distinct MIDDLEs identified
-- 80% are prefix-exclusive (domain-specific)
+- **1,186 distinct MIDDLEs globally** (A ∪ B union)
+- Currier A: 617 unique MIDDLEs
+- Currier B: 837 unique MIDDLEs
+- Shared (A ∩ B): 268 MIDDLEs (Jaccard = 0.226)
+- A-exclusive: 349 (56.6% of A's MIDDLEs never appear in B)
+- B-exclusive: 569 (68.0% of B's MIDDLEs never appear in A)
+
+**Tier 2 Interpretation:**
+> Currier A enumerates the *potential discrimination space*;
+> Currier B traverses only a *submanifold* of that space under specific execution contracts.
+
+A-exclusive MIDDLEs = discriminations that exist in principle but are never jointly instantiated with surviving B procedures.
+B-exclusive MIDDLEs = grammar-internal operators (e.g., L-compounds) that never need registry-level enumeration.
+
+**Within-System Distribution:**
+- 80% are prefix-exclusive (domain-specific within each system)
 - 20% are shared across prefixes
 - 27 universal MIDDLEs appear in 6+ prefix classes
 

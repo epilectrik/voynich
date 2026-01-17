@@ -4,6 +4,104 @@
 
 ---
 
+## Version 2.50 (2026-01-16) - MIDDLE-AB: A-B MIDDLE Overlap Clarification
+
+### Summary
+
+Resolved inconsistent MIDDLE counts in context system and determined A-B MIDDLE overlap.
+
+### The Problem
+
+| Source | Claimed Count | Actual Meaning |
+|--------|---------------|----------------|
+| C423, MODEL_CONTEXT | 1,184 | Global MIDDLE union (A | B) |
+| EXT9_REPORT | 725 | Parsing artifact (INVALID) |
+
+### Results
+
+| Metric | Count |
+|--------|-------|
+| Currier A unique MIDDLEs | 617 |
+| Currier B unique MIDDLEs | 837 |
+| Shared (A & B) | 268 |
+| A-exclusive | 349 (56.6% of A) |
+| B-exclusive | 569 (68.0% of B) |
+| Total union | 1,186 |
+| Jaccard similarity | 0.226 |
+
+### Key Finding
+
+**56.6% of Currier A MIDDLEs are A-exclusive** (never appear in B).
+
+> Currier A enumerates the *potential discrimination space*;
+> Currier B traverses only a *submanifold* of that space under specific execution contracts.
+
+This supports the registry model where A catalogues entities beyond B's operational scope.
+
+### Documentation Updated
+
+| File | Change |
+|------|--------|
+| `context/MODEL_CONTEXT.md` | Corrected MIDDLE counts with Tier-clean framing |
+| `phases/EXT9_cross_system_mapping/EXT9_REPORT.md` | Invalidated 725 figure |
+| `context/ARCHITECTURE/currier_A_summary.md` | Added A-B overlap section |
+| `phases/MIDDLE_AB/` | New phase (script, report, results) |
+
+### Phase
+
+| Field | Value |
+|-------|-------|
+| Phase ID | MIDDLE-AB |
+| Tier | 2 (Data Clarification) |
+| Status | COMPLETE |
+
+---
+
+## Version 2.49 (2026-01-16) - CURRIER A CHARACTERIZATION COMPLETE
+
+### Summary
+
+Completed comprehensive characterization of Currier A as a human-facing complexity-frontier registry. This phase achieved **explanatory saturation** - no further discovery needed.
+
+### Phases Completed
+
+1. **CAR (Currier A Re-examination):** Clean data analysis, closure mechanism discovery
+2. **PCC (Post-Closure Characterization):** Cognitive interface, adjacency function, AZC interface
+
+### Key Findings
+
+| Finding | Evidence | Order Sensitivity |
+|---------|----------|-------------------|
+| Closure is UNIFORM (not adaptive) | No link to HT/pressure/fragility | INVARIANT |
+| Working-memory chunks confirmed | 2.14x within/cross coherence | FOLIO_LOCAL |
+| Singletons are isolation points | Lower hub overlap, higher density | INVARIANT |
+| Adjacency maximizes SIMILARITY | Not contrast (topic clustering) | FOLIO_LOCAL |
+| Entry morphology predicts AZC breadth | p=0.003 closure, p<0.0001 opener | INVARIANT |
+| Universal vs tail asymmetry | 0.58 vs 0.31 breadth | INVARIANT |
+
+### Documentation Added
+
+| File | Purpose |
+|------|---------|
+| `ARCHITECTURE/currier_A_summary.md` | Complete characterization summary |
+| `phases/POST_CLOSURE_CHARACTERIZATION/` | 4 axis scripts + reports |
+| `SPECULATIVE/car_observations.md` | Updated with closure state mechanism |
+
+### Constraints Status
+
+**No changes to Tier 0-2 constraints.** All findings cement existing constraints:
+- C233 (LINE_ATOMIC) - now with mechanism
+- C422 (DA articulation) - dual role confirmed
+- C389, C346, C424 (adjacency) - function characterized
+
+### Phase Status
+
+**CURRIER A CHARACTERIZATION: COMPLETE**
+
+Further work should focus on presentation and consolidation, not discovery.
+
+---
+
 ## Version 2.48 (2026-01-15) - A/C INTERNAL CHARACTERIZATION (PARTIAL SIGNAL)
 
 ### Summary
