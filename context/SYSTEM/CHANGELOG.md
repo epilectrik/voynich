@@ -4,6 +4,69 @@
 
 ---
 
+## Version 2.52 (2026-01-16) - B-EXCL-ROLE: Three-Way MIDDLE Stratification
+
+### Summary
+
+Tested whether B-exclusive MIDDLEs function as grammar-internal operators. **Hypothesis NOT supported** - but result clarifies the MIDDLE architecture.
+
+### Tests
+
+| Test | Prediction | Result |
+|------|------------|--------|
+| Grammar adjacency | Enriched near LINK/kernel | **Enriched at BOUNDARIES** (1.64x, p < 0.0001) |
+| Positional rigidity | Tighter at high CEI | Marginal (rho = -0.207, p = 0.075) |
+| Concentration | Top-10 > 60% | Only 17.1% (diffuse) |
+
+### Key Finding: Three-Way MIDDLE Stratification
+
+| Class | Role |
+|-------|------|
+| **A-exclusive** | Pure discrimination coordinates (registry) |
+| **A/B-shared** | Execution-safe compatibility substrate (~95% of B usage) |
+| **B-exclusive** | Boundary-condition discriminators (NOT grammar operators) |
+| **L-compounds** | True grammar operators (small subset, C298 preserved) |
+
+### Governance
+
+- **FALSIFIED:** Broad hypothesis "B-exclusive = grammar operators"
+- **PRESERVED:** C298 (L-compounds are B-specific operators - scoped)
+- **CLARIFICATION:** B-exclusive MIDDLEs predominantly function as boundary-condition discriminators
+
+### Documentation Updated
+
+- `context/MODEL_CONTEXT.md`: Added three-way MIDDLE stratification
+- `phases/B_EXCL_ROLE/`: New phase with full analysis
+
+---
+
+## Version 2.51 (2026-01-16) - SHARED-COMPLEXITY: Shared Vocabulary is Complexity-Invariant
+
+### Summary
+
+Tested whether shared MIDDLE vocabulary (A & B) changes with B folio complexity. **Result: Invariant.**
+
+### Key Finding
+
+- ~95% of B's MIDDLE usage is SHARED vocabulary
+- This percentage is INVARIANT across all complexity levels (94.2% - 95.7%)
+- No significant correlation with CEI (rho = 0.042, p = 0.709)
+- No significant regime differences (Kruskal-Wallis p = 0.159)
+
+### Interpretation
+
+> Shared MIDDLE vocabulary serves a **uniform infrastructure role**.
+> Complexity differences between B folios do NOT manifest as vocabulary composition shifts.
+
+Shared MIDDLEs matter because they make execution possible everywhere - they don't explain variation, they make variation **safe**.
+
+### Documentation
+
+- `phases/SHARED_COMPLEXITY/`: Full analysis
+- `results/shared_complexity.json`: Results
+
+---
+
 ## Version 2.50 (2026-01-16) - MIDDLE-AB: A-B MIDDLE Overlap Clarification
 
 ### Summary

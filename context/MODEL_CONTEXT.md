@@ -174,8 +174,16 @@ MIDDLEs are the primary vocabulary layer:
 > Currier A enumerates the *potential discrimination space*;
 > Currier B traverses only a *submanifold* of that space under specific execution contracts.
 
-A-exclusive MIDDLEs = discriminations that exist in principle but are never jointly instantiated with surviving B procedures.
-B-exclusive MIDDLEs = grammar-internal operators (e.g., L-compounds) that never need registry-level enumeration.
+**Three-Way MIDDLE Stratification:**
+
+| Class | Role |
+|-------|------|
+| **A-exclusive** (349) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
+| **A/B-shared** (268) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
+| **B-exclusive** (569) | Boundary-condition discriminators - stabilize line transitions, encode edge-case variation; NOT grammar operators |
+| **L-compounds** (subset) | True grammar operators (C298) - rare, B-specific, NOT representative of B-exclusive class |
+
+> B-exclusive MIDDLEs predominantly function as boundary-condition discriminators and orthographic variants, not as execution grammar operators. (B-EXCL-ROLE phase, 2026-01-16)
 
 **Within-System Distribution:**
 - 80% are prefix-exclusive (domain-specific within each system)
