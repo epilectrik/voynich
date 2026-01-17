@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "phase": "B-EXCL-ROLE",
+    "question": "Are B-exclusive MIDDLEs grammar-internal operators?"
+  },
+  "classifications": {
+    "shared_count": 268,
+    "b_excl_count": 569
+  },
+  "test1_adjacency": {
+    "b_excl_total": 919,
+    "shared_total": 18520,
+    "link": {
+      "b_excl_count": 278,
+      "b_excl_rate": 0.3025027203482046,
+      "shared_count": 5704,
+      "shared_rate": 0.3079913606911447,
+      "enrichment": 0.9821792392792337,
+      "p_value": 0.7418749526175317
+    },
+    "kernel": {
+      "b_excl_count": 18,
+      "b_excl_rate": 0.01958650707290533,
+      "shared_count": 444,
+      "shared_rate": 0.023974082073434124,
+      "enrichment": 0.8169867364644295,
+      "p_value": 0.5043303439700331
+    },
+    "boundary": {
+      "b_excl_count": 270,
+      "b_excl_rate": 0.29379760609357997,
+      "shared_count": 3320,
+      "shared_rate": 0.17926565874730022,
+      "enrichment": 1.6388950797750304,
+      "p_value": 2.0862567534038632e-16
+    }
+  },
+  "test2_rigidity": {
+    "n_folios": 75,
+    "entropy_vs_cei": {
+      "rho": -0.2071918937264108,
+      "p": 0.07448773667776164
+    },
+    "regime_means": {
+      "REGIME_3": 1.2839549313543055,
+      "REGIME_1": 1.3779587608862753,
+      "REGIME_2": 1.3966667885729764,
+      "REGIME_4": 1.1245222923072689
+    },
+    "mean_entropy": 1.2953227247774663,
+    "std_entropy": 0.2851763099652838
+  },
+  "test3_concentration": {
+    "b_excl": {
+      "total_usage": 919,
+      "unique_types": 569,
+      "top5_coverage": 0.11316648531011969,
+      "top10_coverage": 0.1708378672470076,
+      "top20_coverage": 0.23721436343852012,
+      "top15_examples": [
+        [
+          "lk",
+          30
+        ],
+        [
+          "ked",
+          26
+        ],
+        [
+          "ched",
+          17
+        ],
+        [
+          "ted",
+          16
+        ],
+        [
+          "ech",
+          15
+        ],
+        [
+          "lkee",
+          15
+        ],
+        [
+          "cthe",
+          12
+        ],
+        [
+          "edy",
+          9
+        ],
+        [
+          "edai",
+          9
+        ],
+        [
+          "teed",
+          8
+        ],
+        [
+          "eda",
+          8
+        ],
+        [
+          "dy",
+          7
+        ],
+        [
+          "eckhe",
+          7
+        ],
+        [
+          "alk",
+          7
+        ],
+        [
+          "tched",
+          7
+        ]
+      ]
+    },
+    "shared": {
+      "total_usage": 18520,
+      "unique_types": 268,
+      "top5_coverage": 0.7375809935205183,
+      "top10_coverage": 0.8158207343412527,
+      "top20_coverage": 0.8794816414686825
+    },
+    "concentration_ratio": {
+      "top10_b_excl_vs_shared": 0.2094061355096023
+    }
+  },
+  "evaluation": {
+    "test1_pass": true,
+    "test2_pass": false,
+    "test3_pass": false,
+    "tests_passed": 1,
+    "verdict": "NOT_SUPPORTED"
+  }
+}
