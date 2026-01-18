@@ -1,30 +1,30 @@
 {
   "test1_modal_split": {
-    "shared_bases": 217,
-    "modal_split_count": 14,
-    "total_testable": 27
+    "shared_bases": 177,
+    "modal_split_count": 11,
+    "total_testable": 19
   },
   "test2_ct_in_b": {
-    "ct_in_b": 214,
-    "ct_folios": 48
+    "ct_in_b": 59,
+    "ct_folios": 39
   },
   "test3_balanced": {
-    "balanced_count": 161,
+    "balanced_count": 66,
     "by_prefix": {
-      "da": 11,
-      "other": 58,
-      "sh": 15,
-      "ch": 30,
-      "ot": 7,
-      "qo": 26,
-      "ok": 11,
-      "ol": 3,
-      "ct": 0
+      "da": 6,
+      "other": 18,
+      "sh": 9,
+      "ch": 13,
+      "ot": 5,
+      "qo": 11,
+      "ok": 4,
+      "ct": 0,
+      "ol": 0
     }
   },
   "test4_suffix": {
-    "a_enriched": 5,
+    "a_enriched": 4,
     "b_enriched": 12,
-    "balanced": 10
+    "balanced": 11
   }
 }
