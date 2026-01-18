@@ -1,0 +1,869 @@
+{
+  "timestamp": "2026-01-16T12:18:46.666076",
+  "methodology": "Formal Currier A/B separation - NO SEMANTIC CLAIMS",
+  "summary": {
+    "currier_a_words": 10677,
+    "currier_b_words": 22052,
+    "uncertain_words": 2908
+  },
+  "basic_statistics": {
+    "currier_a": {
+      "total_words": 10677,
+      "unique_words": 3407,
+      "folio_count": 114,
+      "avg_word_length": 5.042989603821298,
+      "median_word_length": 5,
+      "words_ending_in_y": 3530,
+      "y_ending_percentage": 33.06172145733821
+    },
+    "currier_b": {
+      "total_words": 22052,
+      "unique_words": 4921,
+      "folio_count": 82,
+      "avg_word_length": 5.219390531471069,
+      "median_word_length": 5,
+      "words_ending_in_y": 10004,
+      "y_ending_percentage": 45.36549972791584
+    }
+  },
+  "vocabulary_overlap": {
+    "shared_vocabulary": 1131,
+    "only_in_a": 2276,
+    "only_in_b": 3790,
+    "total_unique": 7197,
+    "overlap_percentage": 15.714881200500209,
+    "a_unique_percentage": 66.80363956560024,
+    "b_unique_percentage": 77.01686649055071,
+    "sample_shared": [
+      "aiiin",
+      "aiim",
+      "aiin",
+      "aiir",
+      "aim",
+      "ain",
+      "air",
+      "aithy",
+      "al",
+      "alaiin",
+      "alal",
+      "alam",
+      "alar",
+      "alchey",
+      "aldar",
+      "aldy",
+      "alkar",
+      "alol",
+      "alom",
+      "alor"
+    ],
+    "sample_only_a": [
+      "aiees",
+      "aii",
+      "aiidal",
+      "aiioly",
+      "aikheky",
+      "ainarals",
+      "ainy",
+      "aiphey",
+      "airaldy",
+      "airam",
+      "alcfhy",
+      "alchy",
+      "aldaiin",
+      "aldam",
+      "aleedy",
+      "alg",
+      "alkeain",
+      "alols",
+      "aloly",
+      "alos"
+    ],
+    "sample_only_b": [
+      "acheody",
+      "acthedy",
+      "adam",
+      "adar",
+      "adchey",
+      "adeeody",
+      "ador",
+      "ady",
+      "aeeodeey",
+      "ag",
+      "aicky",
+      "aifhhy",
+      "aifhy",
+      "aiichy",
+      "aiicthy",
+      "aiidy",
+      "aiiikhedy",
+      "aiiiky",
+      "aiiinro",
+      "aiikam"
+    ]
+  },
+  "prefix_analysis": {
+    "chi_square_test": {
+      "chi_square": 3631.55,
+      "degrees_of_freedom": 191,
+      "significant_at_p05": true
+    },
+    "top_20_enrichment": [
+      {
+        "item": "ch",
+        "a_count": 2053,
+        "b_count": 3236,
+        "a_rate": 19.228,
+        "b_rate": 14.674,
+        "a_over_b": 1.31,
+        "b_over_a": 0.76
+      },
+      {
+        "item": "qo",
+        "a_count": 1067,
+        "b_count": 3849,
+        "a_rate": 9.993,
+        "b_rate": 17.454,
+        "a_over_b": 0.57,
+        "b_over_a": 1.75
+      },
+      {
+        "item": "sh",
+        "a_count": 974,
+        "b_count": 1937,
+        "a_rate": 9.122,
+        "b_rate": 8.784,
+        "a_over_b": 1.04,
+        "b_over_a": 0.96
+      },
+      {
+        "item": "ok",
+        "a_count": 593,
+        "b_count": 1412,
+        "a_rate": 5.554,
+        "b_rate": 6.403,
+        "a_over_b": 0.87,
+        "b_over_a": 1.15
+      },
+      {
+        "item": "da",
+        "a_count": 968,
+        "b_count": 999,
+        "a_rate": 9.066,
+        "b_rate": 4.53,
+        "a_over_b": 2.0,
+        "b_over_a": 0.5
+      },
+      {
+        "item": "ot",
+        "a_count": 482,
+        "b_count": 1403,
+        "a_rate": 4.514,
+        "b_rate": 6.362,
+        "a_over_b": 0.71,
+        "b_over_a": 1.41
+      },
+      {
+        "item": "ol",
+        "a_count": 279,
+        "b_count": 1203,
+        "a_rate": 2.613,
+        "b_rate": 5.455,
+        "a_over_b": 0.48,
+        "b_over_a": 2.09
+      },
+      {
+        "item": "ai",
+        "a_count": 107,
+        "b_count": 553,
+        "a_rate": 1.002,
+        "b_rate": 2.508,
+        "a_over_b": 0.4,
+        "b_over_a": 2.5
+      },
+      {
+        "item": "or",
+        "a_count": 146,
+        "b_count": 384,
+        "a_rate": 1.367,
+        "b_rate": 1.741,
+        "a_over_b": 0.79,
+        "b_over_a": 1.27
+      },
+      {
+        "item": "yk",
+        "a_count": 226,
+        "b_count": 299,
+        "a_rate": 2.117,
+        "b_rate": 1.356,
+        "a_over_b": 1.56,
+        "b_over_a": 0.64
+      },
+      {
+        "item": "ct",
+        "a_count": 440,
+        "b_count": 59,
+        "a_rate": 4.121,
+        "b_rate": 0.268,
+        "a_over_b": 15.4,
+        "b_over_a": 0.06
+      },
+      {
+        "item": "sa",
+        "a_count": 128,
+        "b_count": 326,
+        "a_rate": 1.199,
+        "b_rate": 1.478,
+        "a_over_b": 0.81,
+        "b_over_a": 1.23
+      },
+      {
+        "item": "yt",
+        "a_count": 197,
+        "b_count": 256,
+        "a_rate": 1.845,
+        "b_rate": 1.161,
+        "a_over_b": 1.59,
+        "b_over_a": 0.63
+      },
+      {
+        "item": "lk",
+        "a_count": 5,
+        "b_count": 428,
+        "a_rate": 0.047,
+        "b_rate": 1.941,
+        "a_over_b": 0.02,
+        "b_over_a": 41.45
+      },
+      {
+        "item": "ar",
+        "a_count": 60,
+        "b_count": 333,
+        "a_rate": 0.562,
+        "b_rate": 1.51,
+        "a_over_b": 0.37,
+        "b_over_a": 2.69
+      },
+      {
+        "item": "al",
+        "a_count": 52,
+        "b_count": 330,
+        "a_rate": 0.487,
+        "b_rate": 1.496,
+        "a_over_b": 0.33,
+        "b_over_a": 3.07
+      },
+      {
+        "item": "ke",
+        "a_count": 95,
+        "b_count": 248,
+        "a_rate": 0.89,
+        "b_rate": 1.125,
+        "a_over_b": 0.79,
+        "b_over_a": 1.26
+      },
+      {
+        "item": "do",
+        "a_count": 215,
+        "b_count": 124,
+        "a_rate": 2.014,
+        "b_rate": 0.562,
+        "a_over_b": 3.58,
+        "b_over_a": 0.28
+      },
+      {
+        "item": "so",
+        "a_count": 146,
+        "b_count": 189,
+        "a_rate": 1.367,
+        "b_rate": 0.857,
+        "a_over_b": 1.6,
+        "b_over_a": 0.63
+      },
+      {
+        "item": "op",
+        "a_count": 82,
+        "b_count": 235,
+        "a_rate": 0.768,
+        "b_rate": 1.066,
+        "a_over_b": 0.72,
+        "b_over_a": 1.39
+      }
+    ]
+  },
+  "suffix_analysis": {
+    "chi_square_test": {
+      "chi_square": 3873.48,
+      "degrees_of_freedom": 181,
+      "significant_at_p05": true
+    },
+    "top_20_enrichment": [
+      {
+        "item": "dy",
+        "a_count": 753,
+        "b_count": 5271,
+        "a_rate": 7.053,
+        "b_rate": 23.903,
+        "a_over_b": 0.3,
+        "b_over_a": 3.39
+      },
+      {
+        "item": "in",
+        "a_count": 1600,
+        "b_count": 3746,
+        "a_rate": 14.985,
+        "b_rate": 16.987,
+        "a_over_b": 0.88,
+        "b_over_a": 1.13
+      },
+      {
+        "item": "ey",
+        "a_count": 940,
+        "b_count": 2532,
+        "a_rate": 8.804,
+        "b_rate": 11.482,
+        "a_over_b": 0.77,
+        "b_over_a": 1.3
+      },
+      {
+        "item": "ol",
+        "a_count": 1540,
+        "b_count": 1652,
+        "a_rate": 14.424,
+        "b_rate": 7.491,
+        "a_over_b": 1.93,
+        "b_over_a": 0.52
+      },
+      {
+        "item": "ar",
+        "a_count": 512,
+        "b_count": 1753,
+        "a_rate": 4.795,
+        "b_rate": 7.949,
+        "a_over_b": 0.6,
+        "b_over_a": 1.66
+      },
+      {
+        "item": "or",
+        "a_count": 1160,
+        "b_count": 909,
+        "a_rate": 10.864,
+        "b_rate": 4.122,
+        "a_over_b": 2.64,
+        "b_over_a": 0.38
+      },
+      {
+        "item": "hy",
+        "a_count": 1029,
+        "b_count": 1007,
+        "a_rate": 9.638,
+        "b_rate": 4.566,
+        "a_over_b": 2.11,
+        "b_over_a": 0.47
+      },
+      {
+        "item": "al",
+        "a_count": 410,
+        "b_count": 1314,
+        "a_rate": 3.84,
+        "b_rate": 5.959,
+        "a_over_b": 0.64,
+        "b_over_a": 1.55
+      },
+      {
+        "item": "am",
+        "a_count": 196,
+        "b_count": 470,
+        "a_rate": 1.836,
+        "b_rate": 2.131,
+        "a_over_b": 0.86,
+        "b_over_a": 1.16
+      },
+      {
+        "item": "ky",
+        "a_count": 216,
+        "b_count": 445,
+        "a_rate": 2.023,
+        "b_rate": 2.018,
+        "a_over_b": 1.0,
+        "b_over_a": 1.0
+      },
+      {
+        "item": "ir",
+        "a_count": 138,
+        "b_count": 363,
+        "a_rate": 1.292,
+        "b_rate": 1.646,
+        "a_over_b": 0.79,
+        "b_over_a": 1.27
+      },
+      {
+        "item": "ty",
+        "a_count": 177,
+        "b_count": 227,
+        "a_rate": 1.658,
+        "b_rate": 1.029,
+        "a_over_b": 1.61,
+        "b_over_a": 0.62
+      },
+      {
+        "item": "ly",
+        "a_count": 157,
+        "b_count": 236,
+        "a_rate": 1.47,
+        "b_rate": 1.07,
+        "a_over_b": 1.37,
+        "b_over_a": 0.73
+      },
+      {
+        "item": "eo",
+        "a_count": 128,
+        "b_count": 241,
+        "a_rate": 1.199,
+        "b_rate": 1.093,
+        "a_over_b": 1.1,
+        "b_over_a": 0.91
+      },
+      {
+        "item": "ho",
+        "a_count": 295,
+        "b_count": 62,
+        "a_rate": 2.763,
+        "b_rate": 0.281,
+        "a_over_b": 9.83,
+        "b_over_a": 0.1
+      },
+      {
+        "item": "os",
+        "a_count": 162,
+        "b_count": 145,
+        "a_rate": 1.517,
+        "b_rate": 0.658,
+        "a_over_b": 2.31,
+        "b_over_a": 0.43
+      },
+      {
+        "item": "es",
+        "a_count": 84,
+        "b_count": 173,
+        "a_rate": 0.787,
+        "b_rate": 0.785,
+        "a_over_b": 1.0,
+        "b_over_a": 1.0
+      },
+      {
+        "item": "ry",
+        "a_count": 103,
+        "b_count": 139,
+        "a_rate": 0.965,
+        "b_rate": 0.63,
+        "a_over_b": 1.53,
+        "b_over_a": 0.65
+      },
+      {
+        "item": "ed",
+        "a_count": 5,
+        "b_count": 190,
+        "a_rate": 0.047,
+        "b_rate": 0.862,
+        "a_over_b": 0.05,
+        "b_over_a": 18.4
+      },
+      {
+        "item": "od",
+        "a_count": 102,
+        "b_count": 86,
+        "a_rate": 0.955,
+        "b_rate": 0.39,
+        "a_over_b": 2.45,
+        "b_over_a": 0.41
+      }
+    ]
+  },
+  "compositional_structure": {
+    "currier_a": {
+      "total_tested": 10143,
+      "has_known_prefix": 7539,
+      "has_known_suffix": 6571,
+      "has_both": 4875,
+      "prefix_rate": 74.3,
+      "suffix_rate": 64.8,
+      "both_rate": 48.1
+    },
+    "currier_b": {
+      "total_tested": 20700,
+      "has_known_prefix": 15618,
+      "has_known_suffix": 15855,
+      "has_both": 12025,
+      "prefix_rate": 75.4,
+      "suffix_rate": 76.6,
+      "both_rate": 58.1
+    }
+  },
+  "sequence_patterns": {
+    "currier_a": {
+      "total_trigrams": 7544,
+      "unique_trigrams": 7534,
+      "repeated_trigrams": 10,
+      "repetition_rate": 0.1,
+      "most_common": [
+        {
+          "trigram": "chol daiin cthy",
+          "count": 2
+        },
+        {
+          "trigram": "chol chy chaiin",
+          "count": 2
+        },
+        {
+          "trigram": "cthor chol chor",
+          "count": 2
+        },
+        {
+          "trigram": "chaiin chcthy ctho",
+          "count": 2
+        },
+        {
+          "trigram": "daiin qotchy qotor",
+          "count": 2
+        },
+        {
+          "trigram": "daiin cthor chol",
+          "count": 2
+        },
+        {
+          "trigram": "sho cthy daiin",
+          "count": 2
+        },
+        {
+          "trigram": "chol daiin chkaiin",
+          "count": 2
+        },
+        {
+          "trigram": "dor chol chy",
+          "count": 2
+        },
+        {
+          "trigram": "qokeey dol ol",
+          "count": 2
+        }
+      ],
+      "top_first_words": [
+        [
+          "daiin",
+          239
+        ],
+        [
+          "chol",
+          188
+        ],
+        [
+          "chor",
+          134
+        ],
+        [
+          "shol",
+          91
+        ],
+        [
+          "sho",
+          87
+        ],
+        [
+          "chy",
+          82
+        ],
+        [
+          "ol",
+          79
+        ],
+        [
+          "or",
+          73
+        ],
+        [
+          "chey",
+          66
+        ],
+        [
+          "shor",
+          58
+        ]
+      ],
+      "top_middle_words": [
+        [
+          "daiin",
+          275
+        ],
+        [
+          "chol",
+          220
+        ],
+        [
+          "chor",
+          155
+        ],
+        [
+          "shol",
+          96
+        ],
+        [
+          "chy",
+          94
+        ],
+        [
+          "ol",
+          79
+        ],
+        [
+          "chey",
+          74
+        ],
+        [
+          "sho",
+          70
+        ],
+        [
+          "cthy",
+          67
+        ],
+        [
+          "dy",
+          65
+        ]
+      ],
+      "top_last_words": [
+        [
+          "daiin",
+          325
+        ],
+        [
+          "chol",
+          161
+        ],
+        [
+          "dy",
+          103
+        ],
+        [
+          "chor",
+          99
+        ],
+        [
+          "cthy",
+          82
+        ],
+        [
+          "chy",
+          78
+        ],
+        [
+          "dal",
+          74
+        ],
+        [
+          "dar",
+          73
+        ],
+        [
+          "dain",
+          71
+        ],
+        [
+          "ol",
+          71
+        ]
+      ]
+    },
+    "currier_b": {
+      "total_trigrams": 17221,
+      "unique_trigrams": 17160,
+      "repeated_trigrams": 57,
+      "repetition_rate": 0.3,
+      "most_common": [
+        {
+          "trigram": "ol shedy qokedy",
+          "count": 3
+        },
+        {
+          "trigram": "shedy qokedy qokeedy",
+          "count": 3
+        },
+        {
+          "trigram": "sheedy qokedy chedy",
+          "count": 3
+        },
+        {
+          "trigram": "ol chedy qokain",
+          "count": 3
+        },
+        {
+          "trigram": "or aiin otaiin",
+          "count": 2
+        },
+        {
+          "trigram": "dar ar al",
+          "count": 2
+        },
+        {
+          "trigram": "saiin or aiin",
+          "count": 2
+        },
+        {
+          "trigram": "or aiin chody",
+          "count": 2
+        },
+        {
+          "trigram": "chey or aiin",
+          "count": 2
+        },
+        {
+          "trigram": "or aiin okaiin",
+          "count": 2
+        }
+      ],
+      "top_first_words": [
+        [
+          "chedy",
+          352
+        ],
+        [
+          "shedy",
+          318
+        ],
+        [
+          "ol",
+          299
+        ],
+        [
+          "aiin",
+          236
+        ],
+        [
+          "daiin",
+          226
+        ],
+        [
+          "qokeedy",
+          225
+        ],
+        [
+          "qokain",
+          214
+        ],
+        [
+          "qokeey",
+          203
+        ],
+        [
+          "qokedy",
+          198
+        ],
+        [
+          "chey",
+          196
+        ]
+      ],
+      "top_middle_words": [
+        [
+          "chedy",
+          396
+        ],
+        [
+          "shedy",
+          346
+        ],
+        [
+          "ol",
+          320
+        ],
+        [
+          "aiin",
+          292
+        ],
+        [
+          "qokeedy",
+          229
+        ],
+        [
+          "qokain",
+          215
+        ],
+        [
+          "chey",
+          209
+        ],
+        [
+          "qokedy",
+          207
+        ],
+        [
+          "ar",
+          205
+        ],
+        [
+          "or",
+          201
+        ]
+      ],
+      "top_last_words": [
+        [
+          "chedy",
+          377
+        ],
+        [
+          "shedy",
+          291
+        ],
+        [
+          "ol",
+          284
+        ],
+        [
+          "aiin",
+          251
+        ],
+        [
+          "qokeedy",
+          201
+        ],
+        [
+          "qokain",
+          199
+        ],
+        [
+          "qokedy",
+          180
+        ],
+        [
+          "qokeey",
+          180
+        ],
+        [
+          "qokaiin",
+          180
+        ],
+        [
+          "ar",
+          177
+        ]
+      ]
+    }
+  },
+  "recommendation": {
+    "verdict": "TWO_SYSTEMS",
+    "confidence": "HIGH",
+    "explanation": "Strong evidence for distinct systems: different vocabulary, affixes, and structure",
+    "evidence_for_separation": [
+      "Low vocabulary overlap (15.7%) suggests distinct lexicons",
+      "Prefix distributions significantly different (chi-sq=3631.55)",
+      "Suffix distributions significantly different (chi-sq=3873.48)",
+      "Y-ending rate differs: A=33.1%, B=45.4%"
+    ],
+    "evidence_against_separation": [
+      "Similar compositional success: A=48.1%, B=58.1%",
+      "Similar word lengths: A=5.04, B=5.22"
+    ],
+    "score_for": 4,
+    "score_against": 2
+  }
+}
