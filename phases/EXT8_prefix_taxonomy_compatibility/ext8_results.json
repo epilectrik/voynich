@@ -5,11 +5,11 @@
     "mixed": 2
   },
   "test2_cooccurrence": {
-    "total_compounds": 1410,
+    "total_compounds": 1386,
     "strong_associations": 0,
     "weak_associations": 0
   },
   "test3_interaction": {
-    "chi2_p": 2.692694264253658e-05
+    "chi2_p": null
   }
 }

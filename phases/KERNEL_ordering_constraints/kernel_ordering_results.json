@@ -1,72 +1,72 @@
 {
   "bigram_results": {
     "k->k": {
-      "observed": 21,
-      "expected": 1.1155891230024244,
-      "ratio": 18.82413477058826,
+      "observed": 1,
+      "expected": 0.28514952804373705,
+      "ratio": 3.506931983582372,
       "status": "ENRICHED"
     },
     "k->h": {
-      "observed": 1,
-      "expected": 0.6174329737371909,
-      "ratio": 1.619608998118795,
-      "status": "ENRICHED"
+      "observed": 0,
+      "expected": 0.11017140856235295,
+      "ratio": 0.0,
+      "status": "SUPPRESSED"
     },
     "k->e": {
-      "observed": 131,
-      "expected": 155.94392357139546,
-      "ratio": 0.840045556119566,
+      "observed": 41,
+      "expected": 43.25847953845329,
+      "ratio": 0.9477910559374682,
       "status": "NORMAL"
     },
     "h->k": {
       "observed": 0,
-      "expected": 0.6174329737371909,
+      "expected": 0.11017140856235295,
       "ratio": 0.0,
       "status": "SUPPRESSED"
     },
     "h->h": {
-      "observed": 7,
-      "expected": 0.34172390999291063,
-      "ratio": 20.48437289666158,
+      "observed": 1,
+      "expected": 0.042566226035454555,
+      "ratio": 23.4928038761781,
       "status": "ENRICHED"
     },
     "h->e": {
-      "observed": 78,
-      "expected": 86.30858663070946,
-      "ratio": 0.9037339509884503,
+      "observed": 15,
+      "expected": 16.713503458038772,
+      "ratio": 0.8974779008877029,
       "status": "NORMAL"
     },
     "e->k": {
-      "observed": 132,
-      "expected": 155.94392357139546,
-      "ratio": 0.846458117616662,
+      "observed": 41,
+      "expected": 43.25847953845329,
+      "ratio": 0.9477910559374682,
       "status": "NORMAL"
     },
     "e->h": {
-      "observed": 73,
-      "expected": 86.30858663070946,
-      "ratio": 0.8458022874635497,
+      "observed": 15,
+      "expected": 16.713503458038772,
+      "ratio": 0.8974779008877029,
       "status": "NORMAL"
     },
     "e->e": {
-      "observed": 21843,
-      "expected": 21798.80280061532,
-      "ratio": 1.0020275058125407,
+      "observed": 6569,
+      "expected": 6562.507975435811,
+      "ratio": 1.0009892596837198,
       "status": "NORMAL"
     }
   },
-  "trigram_collapse_ratio": 0.6296296296296297,
-  "trigram_count": 17,
+  "trigram_collapse_ratio": 0.4074074074074074,
+  "trigram_count": 11,
   "findings": [
-    "G-1: Suppressed bigrams found: [('h', 'k')]",
-    "G-1: Enriched bigrams found: [('k', 'k'), ('k', 'h'), ('h', 'h')]",
-    "G-2: Moderate trigram collapse (ratio=0.63)",
+    "G-1: Suppressed bigrams found: [('k', 'h'), ('h', 'k')]",
+    "G-1: Enriched bigrams found: [('k', 'k'), ('h', 'h')]",
+    "G-2: Strong trigram collapse (ratio=0.41)",
     "G-3: Kernel tokens farther from LINK than non-kernel"
   ],
   "add_constraints": true,
   "constraint_text": [
-    "Kernel bigram suppression: [('h', 'k')]",
-    "Kernel bigram enrichment: [('k', 'k'), ('k', 'h'), ('h', 'h')]",
-    "Kernel trigram collapse ratio: 0.63"
+    "Kernel bigram suppression: [('k', 'h'), ('h', 'k')]",
+    "Kernel bigram enrichment: [('k', 'k'), ('h', 'h')]",
+    "Kernel trigram collapse ratio: 0.41"
   ]
 }

@@ -1,0 +1,1287 @@
+{
+  "analyzed_bundles": 20,
+  "vocab_independent_candidates": [
+    2,
+    10,
+    36,
+    44,
+    46
+  ],
+  "missing_class_details": {
+    "36": {
+      "role": "AUXILIARY",
+      "b_coverage": 79,
+      "total_middles": 2,
+      "universal": [
+        "k",
+        "t"
+      ],
+      "restricted": [],
+      "a_exclusive": [],
+      "in_folio_vocab": []
+    },
+    "38": {
+      "role": "FREQUENT_OPERATOR",
+      "b_coverage": 3,
+      "total_middles": 1,
+      "universal": [],
+      "restricted": [
+        "im"
+      ],
+      "a_exclusive": [],
+      "in_folio_vocab": []
+    },
+    "44": {
+      "role": "AUXILIARY",
+      "b_coverage": 80,
+      "total_middles": 6,
+      "universal": [
+        "ke"
+      ],
+      "restricted": [
+        "teo",
+        "keeo",
+        "pch",
+        "kch"
+      ],
+      "a_exclusive": [
+        "tch"
+      ],
+      "in_folio_vocab": []
+    },
+    "46": {
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "total_middles": 6,
+      "universal": [
+        "ke",
+        "keo"
+      ],
+      "restricted": [
+        "d",
+        "pch",
+        "kch"
+      ],
+      "a_exclusive": [
+        "tch"
+      ],
+      "in_folio_vocab": []
+    },
+    "48": {
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "total_middles": 7,
+      "universal": [
+        "ok",
+        "k",
+        "ed"
+      ],
+      "restricted": [
+        "oct",
+        "ock",
+        "d"
+      ],
+      "a_exclusive": [
+        "ect"
+      ],
+      "in_folio_vocab": [
+        "d"
+      ]
+    },
+    "40": {
+      "role": "FREQUENT_OPERATOR",
+      "b_coverage": 80,
+      "total_middles": 4,
+      "universal": [
+        "l",
+        "r"
+      ],
+      "restricted": [
+        "ii",
+        "n"
+      ],
+      "a_exclusive": [],
+      "in_folio_vocab": []
+    },
+    "10": {
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 77,
+      "total_middles": 1,
+      "universal": [
+        "i"
+      ],
+      "restricted": [],
+      "a_exclusive": [],
+      "in_folio_vocab": []
+    },
+    "1": {
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 78,
+      "total_middles": 6,
+      "universal": [
+        "h",
+        "ee",
+        "ch",
+        "ol",
+        "eeo"
+      ],
+      "restricted": [
+        "sh"
+      ],
+      "a_exclusive": [],
+      "in_folio_vocab": []
+    },
+    "2": {
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 79,
+      "total_middles": 6,
+      "universal": [
+        "ees",
+        "eos",
+        "o",
+        "eo",
+        "al",
+        "eeo"
+      ],
+      "restricted": [],
+      "a_exclusive": [],
+      "in_folio_vocab": []
+    }
+  },
+  "missing_counts": {
+    "36": 8,
+    "38": 20,
+    "44": 12,
+    "46": 12,
+    "48": 2,
+    "40": 2,
+    "10": 6,
+    "1": 1,
+    "2": 1
+  },
+  "bundle_analyses": [
+    {
+      "bundle_id": "{n}",
+      "compatible_folio": "f71v",
+      "folio_vocab_size": 36,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 13,
+      "reachable_classes": 44,
+      "missing_analysis": {
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "48": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 7,
+          "universal": [
+            "ok",
+            "k",
+            "ed"
+          ],
+          "restricted": [
+            "oct",
+            "ock",
+            "d"
+          ],
+          "a_exclusive": [
+            "ect"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{oct}",
+      "compatible_folio": "f72r3",
+      "folio_vocab_size": 41,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 16,
+      "reachable_classes": 44,
+      "missing_analysis": {
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "40": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 80,
+          "total_middles": 4,
+          "universal": [
+            "l",
+            "r"
+          ],
+          "restricted": [
+            "ii",
+            "n"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{sho}",
+      "compatible_folio": "f68v3",
+      "folio_vocab_size": 59,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 21,
+      "reachable_classes": 48,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{d}",
+      "compatible_folio": "f68r2",
+      "folio_vocab_size": 34,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 13,
+      "reachable_classes": 45,
+      "missing_analysis": {
+        "10": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 77,
+          "total_middles": 1,
+          "universal": [
+            "i"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "48": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 7,
+          "universal": [
+            "ok",
+            "k",
+            "ed"
+          ],
+          "restricted": [
+            "oct",
+            "ock",
+            "d"
+          ],
+          "a_exclusive": [
+            "ect"
+          ],
+          "in_folio_vocab": [
+            "d"
+          ]
+        }
+      }
+    },
+    {
+      "bundle_id": "{aiir}",
+      "compatible_folio": "f70v2",
+      "folio_vocab_size": 49,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 21,
+      "reachable_classes": 45,
+      "missing_analysis": {
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": [
+            "im"
+          ]
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{ad}",
+      "compatible_folio": "f67r2",
+      "folio_vocab_size": 36,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 16,
+      "reachable_classes": 46,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": [
+            "keeo"
+          ]
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": [
+            "keo"
+          ]
+        }
+      }
+    },
+    {
+      "bundle_id": "{okeo}",
+      "compatible_folio": "f65v",
+      "folio_vocab_size": 20,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 8,
+      "reachable_classes": 45,
+      "missing_analysis": {
+        "1": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 78,
+          "total_middles": 6,
+          "universal": [
+            "h",
+            "ee",
+            "ch",
+            "ol",
+            "eeo"
+          ],
+          "restricted": [
+            "sh"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{odo}",
+      "compatible_folio": "f68v3",
+      "folio_vocab_size": 59,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 21,
+      "reachable_classes": 48,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{she}",
+      "compatible_folio": "f72v2",
+      "folio_vocab_size": 45,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 15,
+      "reachable_classes": 45,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "40": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 80,
+          "total_middles": 4,
+          "universal": [
+            "l",
+            "r"
+          ],
+          "restricted": [
+            "ii",
+            "n"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{ct}",
+      "compatible_folio": "f70v1",
+      "folio_vocab_size": 37,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 16,
+      "reachable_classes": 46,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{olo}",
+      "compatible_folio": "f72r1",
+      "folio_vocab_size": 44,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 17,
+      "reachable_classes": 44,
+      "missing_analysis": {
+        "10": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 77,
+          "total_middles": 1,
+          "universal": [
+            "i"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{ii}",
+      "compatible_folio": "f68v3",
+      "folio_vocab_size": 59,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 21,
+      "reachable_classes": 48,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{tee}",
+      "compatible_folio": "f73v",
+      "folio_vocab_size": 32,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 15,
+      "reachable_classes": 47,
+      "missing_analysis": {
+        "10": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 77,
+          "total_middles": 1,
+          "universal": [
+            "i"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{chs}",
+      "compatible_folio": "f72v3",
+      "folio_vocab_size": 49,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 15,
+      "reachable_classes": 45,
+      "missing_analysis": {
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{pch}",
+      "compatible_folio": "f73v",
+      "folio_vocab_size": 32,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 15,
+      "reachable_classes": 47,
+      "missing_analysis": {
+        "10": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 77,
+          "total_middles": 1,
+          "universal": [
+            "i"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{eeyk}",
+      "compatible_folio": "f70v1",
+      "folio_vocab_size": 37,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 16,
+      "reachable_classes": 46,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{odal}",
+      "compatible_folio": "f68r1",
+      "folio_vocab_size": 30,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 9,
+      "reachable_classes": 43,
+      "missing_analysis": {
+        "2": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 79,
+          "total_middles": 6,
+          "universal": [
+            "ees",
+            "eos",
+            "o",
+            "eo",
+            "al",
+            "eeo"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "10": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 77,
+          "total_middles": 1,
+          "universal": [
+            "i"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{op}",
+      "compatible_folio": "f69r",
+      "folio_vocab_size": 45,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 24,
+      "reachable_classes": 48,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{kch}",
+      "compatible_folio": "f68r3",
+      "folio_vocab_size": 45,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 21,
+      "reachable_classes": 48,
+      "missing_analysis": {
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        }
+      }
+    },
+    {
+      "bundle_id": "{oi}",
+      "compatible_folio": "f72r1",
+      "folio_vocab_size": 44,
+      "zone_legal_size": 36,
+      "effective_vocab_size": 17,
+      "reachable_classes": 44,
+      "missing_analysis": {
+        "10": {
+          "role": "ENERGY_OPERATOR",
+          "b_coverage": 77,
+          "total_middles": 1,
+          "universal": [
+            "i"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "36": {
+          "role": "AUXILIARY",
+          "b_coverage": 79,
+          "total_middles": 2,
+          "universal": [
+            "k",
+            "t"
+          ],
+          "restricted": [],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "38": {
+          "role": "FREQUENT_OPERATOR",
+          "b_coverage": 3,
+          "total_middles": 1,
+          "universal": [],
+          "restricted": [
+            "im"
+          ],
+          "a_exclusive": [],
+          "in_folio_vocab": []
+        },
+        "44": {
+          "role": "AUXILIARY",
+          "b_coverage": 80,
+          "total_middles": 6,
+          "universal": [
+            "ke"
+          ],
+          "restricted": [
+            "teo",
+            "keeo",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        },
+        "46": {
+          "role": "AUXILIARY",
+          "b_coverage": 81,
+          "total_middles": 6,
+          "universal": [
+            "ke",
+            "keo"
+          ],
+          "restricted": [
+            "d",
+            "pch",
+            "kch"
+          ],
+          "a_exclusive": [
+            "tch"
+          ],
+          "in_folio_vocab": []
+        }
+      }
+    }
+  ]
+}

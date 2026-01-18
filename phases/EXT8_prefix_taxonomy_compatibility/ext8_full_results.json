@@ -1,21 +1,21 @@
 {
   "axis_results": {
     "prefix_count": 8,
-    "prefix_variance": 102.60741309474867,
-    "middle_count": 1155,
-    "middle_variance": 131.26714698915424,
+    "prefix_variance": 127.65289302772993,
+    "middle_count": 725,
+    "middle_variance": 182.37963139523208,
     "suffix_count": 27,
-    "suffix_variance": 160.51064442455765
+    "suffix_variance": 180.58527702292062
   },
   "pm_interaction": {
-    "exclusive_middles": 28,
-    "universal_middles": 10
+    "exclusive_middles": 8,
+    "universal_middles": 7
   },
   "ps_interaction": {
-    "universal_suffixes": 22
+    "universal_suffixes": 20
   },
   "three_way": {
-    "full_combos": 1329,
-    "top_10_share": 0.17215826386132063
+    "full_combos": 959,
+    "top_10_share": 0.16737830913748933
   }
 }

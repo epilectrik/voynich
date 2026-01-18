@@ -1,0 +1,315 @@
+{
+  "kernel_classes": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47,
+    49
+  ],
+  "non_kernel_classes": [
+    1,
+    2,
+    7,
+    9,
+    10,
+    12,
+    20,
+    21,
+    22,
+    23,
+    24,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48
+  ],
+  "sample_bundles_tested": 10,
+  "infrastructure_candidates": [
+    {
+      "class_id": 44,
+      "role": "AUXILIARY",
+      "b_coverage": 80,
+      "delta_reachability": 157,
+      "middles": [
+        "kch",
+        "ke",
+        "keeo",
+        "pch",
+        "tch",
+        "teo"
+      ]
+    },
+    {
+      "class_id": 46,
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "delta_reachability": 80,
+      "middles": [
+        "d",
+        "kch",
+        "ke",
+        "keo",
+        "pch",
+        "tch"
+      ]
+    },
+    {
+      "class_id": 42,
+      "role": "AUXILIARY",
+      "b_coverage": 70,
+      "delta_reachability": 67,
+      "middles": [
+        "ckh",
+        "eeo",
+        "eod",
+        "oct",
+        "ok",
+        "ot"
+      ]
+    },
+    {
+      "class_id": 36,
+      "role": "AUXILIARY",
+      "b_coverage": 79,
+      "delta_reachability": 3,
+      "middles": [
+        "k",
+        "t"
+      ]
+    },
+    {
+      "class_id": 38,
+      "role": "FREQUENT_OPERATOR",
+      "b_coverage": 3,
+      "delta_reachability": 3,
+      "middles": [
+        "im"
+      ]
+    }
+  ],
+  "high_coverage_classes": [
+    {
+      "class_id": 46,
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "delta_reachability": 80
+    },
+    {
+      "class_id": 48,
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "delta_reachability": 0
+    },
+    {
+      "class_id": 40,
+      "role": "FREQUENT_OPERATOR",
+      "b_coverage": 80,
+      "delta_reachability": 0
+    },
+    {
+      "class_id": 44,
+      "role": "AUXILIARY",
+      "b_coverage": 80,
+      "delta_reachability": 157
+    },
+    {
+      "class_id": 2,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 79,
+      "delta_reachability": 0
+    },
+    {
+      "class_id": 36,
+      "role": "AUXILIARY",
+      "b_coverage": 79,
+      "delta_reachability": 3
+    },
+    {
+      "class_id": 1,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 78,
+      "delta_reachability": 0
+    },
+    {
+      "class_id": 10,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 77,
+      "delta_reachability": 0
+    }
+  ],
+  "all_results": [
+    {
+      "class_id": 1,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 78,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 2,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 79,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 7,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 9,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 10,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 77,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 12,
+      "role": "ENERGY_OPERATOR",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 20,
+      "role": "AUXILIARY",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 21,
+      "role": "AUXILIARY",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 22,
+      "role": "AUXILIARY",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 23,
+      "role": "AUXILIARY",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 24,
+      "role": "AUXILIARY",
+      "b_coverage": 0,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 36,
+      "role": "AUXILIARY",
+      "b_coverage": 79,
+      "baseline_reachable": 98,
+      "immune_reachable": 101,
+      "delta": 3
+    },
+    {
+      "class_id": 38,
+      "role": "FREQUENT_OPERATOR",
+      "b_coverage": 3,
+      "baseline_reachable": 98,
+      "immune_reachable": 101,
+      "delta": 3
+    },
+    {
+      "class_id": 40,
+      "role": "FREQUENT_OPERATOR",
+      "b_coverage": 80,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    },
+    {
+      "class_id": 42,
+      "role": "AUXILIARY",
+      "b_coverage": 70,
+      "baseline_reachable": 98,
+      "immune_reachable": 165,
+      "delta": 67
+    },
+    {
+      "class_id": 44,
+      "role": "AUXILIARY",
+      "b_coverage": 80,
+      "baseline_reachable": 98,
+      "immune_reachable": 255,
+      "delta": 157
+    },
+    {
+      "class_id": 46,
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "baseline_reachable": 98,
+      "immune_reachable": 178,
+      "delta": 80
+    },
+    {
+      "class_id": 48,
+      "role": "AUXILIARY",
+      "b_coverage": 81,
+      "baseline_reachable": 98,
+      "immune_reachable": 98,
+      "delta": 0
+    }
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "blocking_classes": [
+    36,
+    44,
+    46,
+    48
+  ],
+  "total_folios": 82,
+  "always_blocking_folios": 82,
+  "sometimes_blocking_folios": 0,
+  "rarely_blocking_folios": 0,
+  "avg_current_footprint_size": 39.63414634146341,
+  "avg_always_footprint_size": 39.63414634146341,
+  "folio_analysis": {
+    "f26r": {
+      "num_lines": 1,
+      "current_size": 37,
+      "always_size": 37,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        44,
+        46
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f26v": {
+      "num_lines": 1,
+      "current_size": 37,
+      "always_size": 37,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f31r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f31v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f33r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f33v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f34r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f34v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f39r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f39v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f40r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f40v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f41r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f41v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f43r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f43v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f46r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f46v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f48r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f48v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f50r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f50v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f55r": {
+      "num_lines": 1,
+      "current_size": 38,
+      "always_size": 38,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f55v": {
+      "num_lines": 1,
+      "current_size": 38,
+      "always_size": 38,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f57r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f66r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f66v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f75r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f75v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f76r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f76v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f77r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f77v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f78r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f78v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f79r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f79v": {
+      "num_lines": 1,
+      "current_size": 38,
+      "always_size": 38,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f80r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f80v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f81r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f81v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f82r": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f82v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f83r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f83v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f84r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f84v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f85r1": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f85r2": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f86v4": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f86v6": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f86v5": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f86v3": {
+      "num_lines": 1,
+      "current_size": 41,
+      "always_size": 41,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f94r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f94v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f95r1": {
+      "num_lines": 1,
+      "current_size": 38,
+      "always_size": 38,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f95r2": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f95v2": {
+      "num_lines": 1,
+      "current_size": 38,
+      "always_size": 38,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f95v1": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f103r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f103v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f104r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f104v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f105r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f105v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f106r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f106v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f107r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f107v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f108r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f108v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f111r": {
+      "num_lines": 1,
+      "current_size": 41,
+      "always_size": 41,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f111v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f112r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f112v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f113r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f113v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f114r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f114v": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f115r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f115v": {
+      "num_lines": 1,
+      "current_size": 39,
+      "always_size": 39,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    },
+    "f116r": {
+      "num_lines": 1,
+      "current_size": 40,
+      "always_size": 40,
+      "sometimes_size": 0,
+      "rarely_size": 0,
+      "blocking_in_always": [
+        36,
+        44,
+        46,
+        48
+      ],
+      "blocking_in_sometimes": []
+    }
+  }
+}
