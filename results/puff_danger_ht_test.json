@@ -1,0 +1,39 @@
+{
+  "test": "T9_danger_ht_correlation",
+  "hypothesis": "Puff dangerous materials correlate with higher HT density",
+  "reference_constraint": "C459 (HT as anticipatory compensation)",
+  "data": {
+    "dangerous_positions": [
+      38,
+      79,
+      17,
+      57,
+      60
+    ],
+    "dangerous_n": 5,
+    "safe_n": 78,
+    "dangerous_ht_values": [
+      0.16611295681063123,
+      0.15042826552462527,
+      0.13142337426102774,
+      0.14883720930232558,
+      0.06660137120470128
+    ],
+    "dangerous_mean": 0.1327,
+    "dangerous_std": 0.0348,
+    "safe_mean": 0.1505,
+    "safe_std": 0.0471
+  },
+  "statistics": {
+    "enrichment": -0.8814,
+    "mann_whitney_u": 169.0,
+    "mann_whitney_p": 0.6889464482057763,
+    "permutation_p": 0.7941,
+    "observed_difference": -0.0179
+  },
+  "verdict": {
+    "passed": false,
+    "detail": "No HT elevation at dangerous positions (effect reversed)",
+    "interpretation": "HT anticipatory compensation is/is not elevated for dangerous materials"
+  }
+}

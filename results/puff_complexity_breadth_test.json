@@ -1,0 +1,35 @@
+{
+  "test": "T8_complexity_breadth",
+  "hypothesis": "Later Puff chapters (complex) require larger vocabulary footprints",
+  "data": {
+    "n_matched": 82,
+    "vocab_mean": 180.2,
+    "vocab_std": 90.3,
+    "vocab_min": 55,
+    "vocab_max": 369,
+    "early_third_mean": 185.9,
+    "middle_third_mean": 187.0,
+    "late_third_mean": 168.1
+  },
+  "tests": {
+    "position_vocab": {
+      "rho": -0.1602,
+      "p": 0.150437,
+      "passed": false
+    },
+    "position_cei": {
+      "rho": 0.8816,
+      "p": 0.0,
+      "passed": true
+    },
+    "vocab_cei": {
+      "rho": -0.3752,
+      "p": 0.000513,
+      "passed": true
+    }
+  },
+  "verdict": {
+    "passed": false,
+    "detail": "No positive correlation found (rho=-0.160)"
+  }
+}
