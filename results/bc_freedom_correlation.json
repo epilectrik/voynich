@@ -1,0 +1,105 @@
+{
+  "hypothesis": "H1",
+  "name": "Explanation vs Judgment Freedom Correlation",
+  "prediction": "Explanation density inversely correlates with judgment freedom",
+  "threshold": "Spearman rho < -0.3, p < 0.05",
+  "n_recipes": 197,
+  "statistics": {
+    "spearman_rho": 0.0897,
+    "p_value": 0.209818,
+    "direction": "positive"
+  },
+  "evaluation": {
+    "rho_threshold_met": false,
+    "significant": false,
+    "passed": false
+  },
+  "by_regime": {
+    "REGIME_1": {
+      "n": 169,
+      "freedom": 0.85,
+      "mean_density": 1.5835449704142013,
+      "std_density": 0.8622352113853908
+    },
+    "REGIME_2": {
+      "n": 14,
+      "freedom": 0.85,
+      "mean_density": 2.1563000000000003,
+      "std_density": 1.3628816414389873
+    },
+    "REGIME_3": {
+      "n": 7,
+      "freedom": 0.55,
+      "mean_density": 1.5297714285714288,
+      "std_density": 0.26870708807858695
+    },
+    "REGIME_4": {
+      "n": 7,
+      "freedom": 0.4,
+      "mean_density": 1.0642714285714285,
+      "std_density": 0.32993292268185026
+    }
+  },
+  "paired_data_sample": [
+    {
+      "recipe_id": "BRU-001",
+      "regime": "REGIME_3",
+      "explanation_density": 2.0,
+      "judgment_freedom": 0.55
+    },
+    {
+      "recipe_id": "BRU-027",
+      "regime": "REGIME_1",
+      "explanation_density": 2.6087,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-035",
+      "regime": "REGIME_1",
+      "explanation_density": 2.5,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-036",
+      "regime": "REGIME_1",
+      "explanation_density": 2.5714,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-037",
+      "regime": "REGIME_2",
+      "explanation_density": 2.5714,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-038",
+      "regime": "REGIME_2",
+      "explanation_density": 2.5714,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-042",
+      "regime": "REGIME_1",
+      "explanation_density": 2.3529,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-043",
+      "regime": "REGIME_1",
+      "explanation_density": 2.3529,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-044",
+      "regime": "REGIME_1",
+      "explanation_density": 2.3529,
+      "judgment_freedom": 0.85
+    },
+    {
+      "recipe_id": "BRU-045",
+      "regime": "REGIME_1",
+      "explanation_density": 2.3529,
+      "judgment_freedom": 0.85
+    }
+  ]
+}

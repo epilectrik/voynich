@@ -1,0 +1,42 @@
+{
+  "phase": "BC_EXPLANATION_ENFORCEMENT",
+  "timestamp": "2026-01-19T12:10:44.224617",
+  "hypothesis_results": [
+    {
+      "hypothesis": "H1",
+      "name": "Explanation vs Judgment Freedom",
+      "prediction": "Inverse correlation with freedom",
+      "passed": false,
+      "key_metric": "rho=0.0897"
+    },
+    {
+      "hypothesis": "H2",
+      "name": "Explanation vs Scaffold Rigidity",
+      "prediction": "UNIFORM < VARIED",
+      "passed": false,
+      "key_metric": "d=-0.3671"
+    },
+    {
+      "hypothesis": "H3",
+      "name": "Interaction > Main Effects",
+      "prediction": "Interaction adds variance",
+      "passed": false,
+      "key_metric": "dR2=-0.0"
+    },
+    {
+      "hypothesis": "H4",
+      "name": "Complementarity Ratio",
+      "prediction": "Stable ratio across regimes",
+      "passed": false,
+      "key_metric": "cv=0.6144"
+    }
+  ],
+  "total_passed": 0,
+  "total_tests": 4,
+  "tier_assessment": {
+    "tier": "FALSIFIED",
+    "confidence": "N/A",
+    "rationale": "No complementarity evidence: 0/4 hypotheses passed"
+  },
+  "key_finding": "No systematic explanation-enforcement complementarity detected."
+}

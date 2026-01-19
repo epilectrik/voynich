@@ -1,0 +1,24 @@
+{
+  "hypothesis": "H3",
+  "name": "Interaction > Main Effects",
+  "prediction": "Freedom x Pacing interaction explains more variance than main effects",
+  "threshold": "Delta R\u00b2 > 0.05, p < 0.05",
+  "n_recipes": 197,
+  "model_comparison": {
+    "r2_freedom_only": 0.0113,
+    "r2_pacing_only": 0.0089,
+    "r2_main_effects": 0.0137,
+    "r2_full_model": 0.0137,
+    "delta_r2_interaction": -0.0
+  },
+  "statistics": {
+    "f_statistic": -0.0,
+    "p_value": 1.0,
+    "interaction_dominates_main": false
+  },
+  "evaluation": {
+    "delta_threshold_met": false,
+    "significant": false,
+    "passed": false
+  }
+}
