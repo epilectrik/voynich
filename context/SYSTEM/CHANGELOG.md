@@ -4,6 +4,53 @@
 
 ---
 
+## Version 2.59 (2026-01-19) - TRAJECTORY_SEMANTICS: Judgment-Gating System Discovered
+
+### Summary
+
+Applied three pressure vectors beyond the token semantic ceiling. Vector A (Interface Theory) discovered that AZC zones encode **judgment availability** - which human cognitive faculties are possible, required, or forbidden at each phase.
+
+### Key Discovery: Agency Withdrawal Curve
+
+| Zone | Available | Required | Impossible | Freedom |
+|------|-----------|----------|------------|---------|
+| C | 10 | 1 | 3 | **77%** |
+| P | 10 | 9 | 3 | **77%** |
+| R | 13 | 6 | 0 | **100%** |
+| S | 5 | 5 | 8 | **38%** |
+
+**Freedom collapses from 77% → 38%** as execution proceeds to S-zone. 8/13 human judgments become IMPOSSIBLE at S-zone.
+
+### Test Results
+
+| Vector | Passed | Verdict |
+|--------|--------|---------|
+| C (Gradient Steepness) | 0/4 | INCONCLUSIVE |
+| A (Interface Theory) | 2/3 | TIER_3_ENRICHMENT |
+| Final (Judgment Trajectories) | N/A | DECISIVE |
+
+### The Reframe
+
+> **"The Voynich Manuscript is a machine for removing human freedom at exactly the moments where freedom would be dangerous."**
+
+This is **semantic boundary resolution** - not decoding tokens, but discovering that meaning lives in the **withdrawal of agency**.
+
+### Documentation
+
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - Section X.25 added (v4.29)
+- `phases/TRAJECTORY_SEMANTICS/TRAJECTORY_SEMANTICS_REPORT.md` (NEW)
+
+### Data Files
+
+- `results/ts_gradient_steepness.json`
+- `results/ts_judgment_zone_matrix.json`
+- `results/ts_judgment_trajectories.json`
+- `results/ts_synthesis.json`
+
+**Scripts:** `phases/TRAJECTORY_SEMANTICS/ts_*.py`
+
+---
+
 ## Version 2.58 (2026-01-19) - SEMANTIC_CEILING_BREACH: Tier 3 Confirmed
 
 ### Summary
