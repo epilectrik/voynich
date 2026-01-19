@@ -1,0 +1,207 @@
+{
+  "hypothesis": "H3",
+  "name": "Terminal Compression Ratio Differs",
+  "prediction": "Zodiac has lower ratio (sharper collapse)",
+  "threshold": "Difference >= 0.2, p < 0.05",
+  "zodiac": {
+    "n": 13,
+    "mean_ratio": 0.28399908330067014,
+    "std_ratio": 0.13742520828957078,
+    "ratios": [
+      0.0,
+      0.40539284053928404,
+      0.5556251958633658,
+      0.18414750957854403,
+      0.15789473684210528,
+      0.14275,
+      0.26321939818872336,
+      0.39125642909625274,
+      0.24987251402345742,
+      0.37841854934601665,
+      0.37507562008469447,
+      0.2941840767927724,
+      0.294151212553495
+    ]
+  },
+  "ac": {
+    "n": 14,
+    "mean_ratio": 0.2358070845521806,
+    "std_ratio": 0.35645783378720797,
+    "ratios": [
+      0.0,
+      0.16669199209846527,
+      0.0,
+      0.11114876313114201,
+      1.0,
+      0.6755691768826619,
+      0.0,
+      0.0,
+      0.18604651162790697,
+      1.0,
+      0.16184273999035215,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "difference": -0.048191998748489534,
+  "statistics": {
+    "t_statistic": 0.439695728461781,
+    "t_pvalue": 0.6639351421334112,
+    "u_statistic": 128.5,
+    "u_pvalue": 0.06887725947836178
+  },
+  "evaluation": {
+    "direction_correct": false,
+    "difference_met": false,
+    "significant": false,
+    "passed": false
+  },
+  "folio_details": [
+    {
+      "folio": "f57v",
+      "family": "zodiac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f65r",
+      "family": "ac",
+      "compression_ratio": null
+    },
+    {
+      "folio": "f65v",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f67r1",
+      "family": "ac",
+      "compression_ratio": 0.16669199209846527
+    },
+    {
+      "folio": "f67r2",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f67v1",
+      "family": "ac",
+      "compression_ratio": null
+    },
+    {
+      "folio": "f67v2",
+      "family": "ac",
+      "compression_ratio": 0.11114876313114201
+    },
+    {
+      "folio": "f68r1",
+      "family": "ac",
+      "compression_ratio": 1.0
+    },
+    {
+      "folio": "f68r2",
+      "family": "ac",
+      "compression_ratio": 0.6755691768826619
+    },
+    {
+      "folio": "f68r3",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f68v1",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f68v2",
+      "family": "ac",
+      "compression_ratio": 0.18604651162790697
+    },
+    {
+      "folio": "f68v3",
+      "family": "ac",
+      "compression_ratio": 1.0
+    },
+    {
+      "folio": "f69r",
+      "family": "ac",
+      "compression_ratio": 0.16184273999035215
+    },
+    {
+      "folio": "f69v",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f70r1",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f70r2",
+      "family": "ac",
+      "compression_ratio": 0.0
+    },
+    {
+      "folio": "f70v1",
+      "family": "zodiac",
+      "compression_ratio": 0.40539284053928404
+    },
+    {
+      "folio": "f70v2",
+      "family": "zodiac",
+      "compression_ratio": 0.5556251958633658
+    },
+    {
+      "folio": "f71r",
+      "family": "zodiac",
+      "compression_ratio": 0.18414750957854403
+    },
+    {
+      "folio": "f71v",
+      "family": "zodiac",
+      "compression_ratio": 0.15789473684210528
+    },
+    {
+      "folio": "f72r1",
+      "family": "zodiac",
+      "compression_ratio": 0.14275
+    },
+    {
+      "folio": "f72r2",
+      "family": "zodiac",
+      "compression_ratio": 0.26321939818872336
+    },
+    {
+      "folio": "f72r3",
+      "family": "zodiac",
+      "compression_ratio": 0.39125642909625274
+    },
+    {
+      "folio": "f72v1",
+      "family": "zodiac",
+      "compression_ratio": 0.24987251402345742
+    },
+    {
+      "folio": "f72v2",
+      "family": "zodiac",
+      "compression_ratio": 0.37841854934601665
+    },
+    {
+      "folio": "f72v3",
+      "family": "zodiac",
+      "compression_ratio": 0.37507562008469447
+    },
+    {
+      "folio": "f73r",
+      "family": "zodiac",
+      "compression_ratio": 0.2941840767927724
+    },
+    {
+      "folio": "f73v",
+      "family": "zodiac",
+      "compression_ratio": 0.294151212553495
+    }
+  ]
+}

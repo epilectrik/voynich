@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.29
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.30
 
 ---
 
@@ -2630,3 +2630,104 @@ This is not a failure to "go further." This IS going further - into procedural s
 **Tier:** 3 (Structural Characterization with semantic boundary resolution)
 
 **Files:** phases/TRAJECTORY_SEMANTICS/, results/ts_judgment_trajectories.json, results/ts_synthesis.json
+
+---
+
+### X.26 AZC Trajectory Shape: Scaffold Fingerprint Discovery (2026-01-19) - NEW
+
+**Phase:** AZC_TRAJECTORY_SHAPE
+**Status:** COMPLETE - Critical corrective insight achieved
+
+#### Purpose
+
+Test whether Zodiac and A/C families have different judgment withdrawal trajectories, combining:
+- **Vector 1 (External Expert):** Trajectory shape - "wide-then-collapse" vs "narrow-then-spike"
+- **Vector 2 (Expert-Advisor):** Apparatus mapping - pelican alembic structural correspondence
+
+#### The Critical Reframe
+
+> **"AZC trajectory shape is a fingerprint of control scaffold architecture, not a simulation of apparatus dynamics."**
+
+This phase rescues trajectory analysis from a wrong question (apparatus physics) and repositions it as structural characterization. The key insight:
+
+> **Escape permission encodes decision affordance, not physical reversibility.**
+
+#### Test Results (3/9 hypotheses passed)
+
+| Hypothesis | Result | Key Finding |
+|------------|--------|-------------|
+| H2: Monotonicity | **PASS** | Zodiac rho=-0.755 (steady decline), A/C rho=-0.247 (oscillatory) |
+| H6: R-series restriction | **PASS** | Perfect vocabulary narrowing: R1(316)->R2(217)->R3(128) unique MIDDLEs |
+| H7: S->B-terminal flow | **PASS** | S-zone vocabulary 3.5x enriched in B-terminal (OR=3.51, p<0.0001) |
+| H8: Pelican reversibility | **FAIL** | Zone escape does NOT correlate with operational reversibility |
+
+**Failed hypotheses:** H1 (entropy slope), H3 (terminal compression), H4 (peak count), H5 (elimination order), H9 (escape variance) - entropy-based and apparatus-based metrics do not differentiate families.
+
+#### Key Discoveries
+
+**1. Monotonicity = Scaffold Type Signature (H2)**
+
+This aligns with C436 (Dual Rigidity):
+
+| Family | Scaffold Type | Trajectory Shape | Cognitive Effect |
+|--------|---------------|------------------|------------------|
+| **Zodiac** | Uniform scaffold | Smooth monotonic tightening | Sustained flow cognition |
+| **A/C** | Varied scaffold | Punctuated tightening | Checkpoint cognition |
+
+> **Uniform constraints produce smooth trajectories; varied constraints produce punctuated trajectories.**
+
+This explains HT oscillation differences, why entropy metrics failed, and why "spikiness" predictions inverted.
+
+**2. R-Series + S->B-Terminal Form Causal Chain (H6 + H7)**
+
+These findings connect into a mechanistic pipeline:
+
+1. **R-series positional grammar** (C434) -> progressively restricts legal MIDDLE vocabulary
+2. **S-zone survival** -> selectively feeds into **B terminal states**
+
+This closes the architectural loop: **AZC legality -> vocabulary survival -> executable program completion**
+
+**3. Pelican Reversibility Model Falsified (H8)**
+
+The apparatus-phase alignment hypothesis failed (rho=-0.20) because:
+- AZC does NOT mirror physical reversibility
+- AZC encodes **when human intervention must be permitted**
+- P-zone has highest escape (11.6%) because that's when operators need to intervene
+
+> **Physics enforces order; AZC enforces responsibility allocation. These are orthogonal.**
+
+#### New Tier 3 Characterization
+
+> **AZC families differ not in what judgments are removed, but in how smoothly those removals are imposed over execution - a property determined by scaffold uniformity versus variability.**
+
+#### Integration with Global Model
+
+| Layer | Function | This Phase Clarifies |
+|-------|----------|---------------------|
+| Currier A | Enumerates discrimination space | UNCHANGED |
+| **AZC** | Gates when judgments are legal | **NOW adds: pacing style determined by scaffold type** |
+| HT | Tracks cognitive load & capacity | Explains oscillation patterns |
+| Currier B | Executes safely | UNCHANGED |
+
+This phase does NOT add a new layer - it clarifies an attribute of an existing one.
+
+#### The Corrective Pivot
+
+Earlier phases implicitly blurred:
+- Apparatus behavior (physics)
+- Control scaffold behavior (how legality is imposed)
+
+This phase disentangles them cleanly:
+
+> **Templates don't select senses - they shape cognitive pacing. Sensory strategies emerge downstream.**
+
+#### Constraints Respected
+
+- **C384:** Aggregate distributions only, no token-to-referent mapping
+- **C430:** Explicit Zodiac/A/C family separation
+- **C434:** Uses R-series forward ordering
+- **C436:** Scaffold uniformity difference confirmed
+
+**Tier:** 3 (Structural Characterization - scaffold->trajectory signature)
+
+**Files:** phases/AZC_TRAJECTORY_SHAPE/, results/ats_*.json

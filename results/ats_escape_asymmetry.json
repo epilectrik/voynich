@@ -1,0 +1,54 @@
+{
+  "hypothesis": "H9",
+  "name": "Family-Conditioned Escape Asymmetry",
+  "prediction": "Zodiac has steeper escape collapse (lower variance)",
+  "threshold": "Levene p < 0.05, Zodiac variance < A/C variance",
+  "zodiac": {
+    "zones": [
+      "R1",
+      "R2",
+      "R3",
+      "S1",
+      "S2"
+    ],
+    "escape_rates": [
+      0.053,
+      0.018,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 0.014199999999999999,
+    "variance": 0.00042495999999999994,
+    "std": 0.0206145579627602,
+    "cv": 1.4517294339971973
+  },
+  "ac": {
+    "zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "escape_rates": [
+      0.023,
+      0.159,
+      0.092,
+      0.044
+    ],
+    "mean": 0.0795,
+    "variance": 0.0027322500000000003,
+    "std": 0.052270928822816996,
+    "cv": 0.6574959600354339
+  },
+  "variance_ratio": 0.15553481562814525,
+  "statistics": {
+    "levene_w": 3.0730639993748534,
+    "levene_p": 0.12305037206695175
+  },
+  "evaluation": {
+    "variance_lower": true,
+    "significant": false,
+    "passed": false
+  }
+}

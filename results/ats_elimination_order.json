@@ -1,0 +1,79 @@
+{
+  "hypothesis": "H5",
+  "name": "Judgment Elimination Order Differs",
+  "prediction": "Families eliminate judgments in different orders",
+  "threshold": "Kendall tau < 0.6, p < 0.05",
+  "zodiac": {
+    "ranking": [
+      "EQUILIBRIUM_WAIT",
+      "CYCLE_COMPLETION",
+      "PURIFICATION_PATIENCE",
+      "TEMPERATURE",
+      "PHASE_TRANSITION",
+      "STABILITY",
+      "QUALITY_PURITY",
+      "TIMING",
+      "MATERIAL_STATE",
+      "ABORT_DECISION",
+      "CORRECTION_DECISION",
+      "CONTINUATION_DECISION",
+      "COLLECTION_DECISION"
+    ],
+    "mean_scores": {
+      "TEMPERATURE": 1.4475230769230771,
+      "PHASE_TRANSITION": 1.4475230769230771,
+      "QUALITY_PURITY": 1.2049615384615384,
+      "TIMING": 1.2049615384615384,
+      "MATERIAL_STATE": 0.7237615384615386,
+      "STABILITY": 1.4475230769230771,
+      "EQUILIBRIUM_WAIT": 1.928723076923077,
+      "CYCLE_COMPLETION": 1.928723076923077,
+      "PURIFICATION_PATIENCE": 1.928723076923077,
+      "ABORT_DECISION": 0.7237615384615386,
+      "CORRECTION_DECISION": 0.7237615384615386,
+      "CONTINUATION_DECISION": 0.7237615384615386,
+      "COLLECTION_DECISION": 0.7237615384615386
+    }
+  },
+  "ac": {
+    "ranking": [
+      "MATERIAL_STATE",
+      "QUALITY_PURITY",
+      "TIMING",
+      "PHASE_TRANSITION",
+      "STABILITY",
+      "ABORT_DECISION",
+      "CORRECTION_DECISION",
+      "CONTINUATION_DECISION",
+      "COLLECTION_DECISION",
+      "TEMPERATURE",
+      "EQUILIBRIUM_WAIT",
+      "CYCLE_COMPLETION",
+      "PURIFICATION_PATIENCE"
+    ],
+    "mean_scores": {
+      "TEMPERATURE": 0.7231562500000001,
+      "PHASE_TRANSITION": 0.9488875000000001,
+      "QUALITY_PURITY": 1.00771875,
+      "TIMING": 1.00771875,
+      "MATERIAL_STATE": 1.11273125,
+      "STABILITY": 0.9488875000000001,
+      "EQUILIBRIUM_WAIT": 0.3924125,
+      "CYCLE_COMPLETION": 0.3924125,
+      "PURIFICATION_PATIENCE": 0.3924125,
+      "ABORT_DECISION": 0.83769375,
+      "CORRECTION_DECISION": 0.83769375,
+      "CONTINUATION_DECISION": 0.83769375,
+      "COLLECTION_DECISION": 0.83769375
+    }
+  },
+  "statistics": {
+    "kendalls_tau": -0.2051282051282051,
+    "tau_pvalue": 0.3674042836022003
+  },
+  "evaluation": {
+    "tau_threshold_met": true,
+    "significant": false,
+    "passed": false
+  }
+}

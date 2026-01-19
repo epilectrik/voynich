@@ -1,0 +1,237 @@
+{
+  "hypothesis": "H2",
+  "name": "Monotonicity Differs",
+  "prediction": "Zodiac rho < -0.7, A/C |rho| < 0.5",
+  "threshold": "Mann-Whitney p < 0.05",
+  "zodiac": {
+    "n": 13,
+    "mean_rho": -0.7548959202006635,
+    "std_rho": 0.22695521118277215,
+    "steady_decline_count": 8,
+    "rhos": [
+      -0.8720815992723809,
+      -0.49999999999999994,
+      -0.09999999999999999,
+      -0.8999999999999998,
+      -0.8999999999999998,
+      -0.8999999999999998,
+      -0.8999999999999998,
+      -0.9999999999999999,
+      -0.8207826816681233,
+      -0.7,
+      -0.7,
+      -0.7,
+      -0.8207826816681233
+    ]
+  },
+  "ac": {
+    "n": 16,
+    "mean_rho": -0.2465891893175146,
+    "std_rho": 0.5434196194680885,
+    "oscillatory_count": 8,
+    "rhos": [
+      0.0,
+      -0.2581988897471611,
+      0.39999999999999997,
+      -0.9486832980505139,
+      0.0,
+      -0.39999999999999997,
+      0.632455532033676,
+      0.21081851067789195,
+      0.2581988897471611,
+      -0.7745966692414834,
+      -0.7999999999999999,
+      0.632455532033676,
+      -0.39999999999999997,
+      -0.7745966692414834,
+      -0.7745966692414834,
+      -0.9486832980505139
+    ]
+  },
+  "statistics": {
+    "u_statistic": 47.0,
+    "u_pvalue": 0.012964719584595929
+  },
+  "evaluation": {
+    "zodiac_meets_threshold": true,
+    "ac_meets_threshold": true,
+    "significant": true,
+    "passed": true
+  },
+  "folio_details": [
+    {
+      "folio": "f57v",
+      "family": "zodiac",
+      "rho": -0.8720815992723809,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f65r",
+      "family": "ac",
+      "rho": 0.0,
+      "classification": "OSCILLATORY"
+    },
+    {
+      "folio": "f65v",
+      "family": "ac",
+      "rho": -0.2581988897471611,
+      "classification": "OSCILLATORY"
+    },
+    {
+      "folio": "f67r1",
+      "family": "ac",
+      "rho": 0.39999999999999997,
+      "classification": "WEAK_INCREASE"
+    },
+    {
+      "folio": "f67r2",
+      "family": "ac",
+      "rho": -0.9486832980505139,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f67v1",
+      "family": "ac",
+      "rho": 0.0,
+      "classification": "OSCILLATORY"
+    },
+    {
+      "folio": "f67v2",
+      "family": "ac",
+      "rho": -0.39999999999999997,
+      "classification": "WEAK_DECLINE"
+    },
+    {
+      "folio": "f68r1",
+      "family": "ac",
+      "rho": 0.632455532033676,
+      "classification": "WEAK_INCREASE"
+    },
+    {
+      "folio": "f68r2",
+      "family": "ac",
+      "rho": 0.21081851067789195,
+      "classification": "OSCILLATORY"
+    },
+    {
+      "folio": "f68r3",
+      "family": "ac",
+      "rho": 0.2581988897471611,
+      "classification": "OSCILLATORY"
+    },
+    {
+      "folio": "f68v1",
+      "family": "ac",
+      "rho": -0.7745966692414834,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f68v2",
+      "family": "ac",
+      "rho": -0.7999999999999999,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f68v3",
+      "family": "ac",
+      "rho": 0.632455532033676,
+      "classification": "WEAK_INCREASE"
+    },
+    {
+      "folio": "f69r",
+      "family": "ac",
+      "rho": -0.39999999999999997,
+      "classification": "WEAK_DECLINE"
+    },
+    {
+      "folio": "f69v",
+      "family": "ac",
+      "rho": -0.7745966692414834,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f70r1",
+      "family": "ac",
+      "rho": -0.7745966692414834,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f70r2",
+      "family": "ac",
+      "rho": -0.9486832980505139,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f70v1",
+      "family": "zodiac",
+      "rho": -0.49999999999999994,
+      "classification": "WEAK_DECLINE"
+    },
+    {
+      "folio": "f70v2",
+      "family": "zodiac",
+      "rho": -0.09999999999999999,
+      "classification": "OSCILLATORY"
+    },
+    {
+      "folio": "f71r",
+      "family": "zodiac",
+      "rho": -0.8999999999999998,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f71v",
+      "family": "zodiac",
+      "rho": -0.8999999999999998,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f72r1",
+      "family": "zodiac",
+      "rho": -0.8999999999999998,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f72r2",
+      "family": "zodiac",
+      "rho": -0.8999999999999998,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f72r3",
+      "family": "zodiac",
+      "rho": -0.9999999999999999,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f72v1",
+      "family": "zodiac",
+      "rho": -0.8207826816681233,
+      "classification": "STEADY_DECLINE"
+    },
+    {
+      "folio": "f72v2",
+      "family": "zodiac",
+      "rho": -0.7,
+      "classification": "WEAK_DECLINE"
+    },
+    {
+      "folio": "f72v3",
+      "family": "zodiac",
+      "rho": -0.7,
+      "classification": "WEAK_DECLINE"
+    },
+    {
+      "folio": "f73r",
+      "family": "zodiac",
+      "rho": -0.7,
+      "classification": "WEAK_DECLINE"
+    },
+    {
+      "folio": "f73v",
+      "family": "zodiac",
+      "rho": -0.8207826816681233,
+      "classification": "STEADY_DECLINE"
+    }
+  ]
+}

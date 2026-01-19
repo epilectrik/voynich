@@ -1,0 +1,87 @@
+{
+  "phase": "AZC_TRAJECTORY_SHAPE",
+  "timestamp": "2026-01-19T11:38:40.650322",
+  "hypothesis_results": [
+    {
+      "hypothesis": "H1",
+      "name": "Entropy Trajectory Slope Differs",
+      "prediction": "Zodiac has more negative slope than A/C",
+      "passed": false,
+      "key_metric": "d=0.11"
+    },
+    {
+      "hypothesis": "H2",
+      "name": "Monotonicity Differs",
+      "prediction": "Zodiac rho < -0.7, A/C |rho| < 0.5",
+      "passed": true,
+      "key_metric": "Z_rho=-0.75"
+    },
+    {
+      "hypothesis": "H3",
+      "name": "Terminal Compression Ratio Differs",
+      "prediction": "Zodiac has lower ratio (sharper collapse)",
+      "passed": false,
+      "key_metric": "diff=-0.05"
+    },
+    {
+      "hypothesis": "H4",
+      "name": "Peak Count Differs",
+      "prediction": "A/C >= 1.5 peaks, Zodiac < 1.0 peaks",
+      "passed": false,
+      "key_metric": "ratio=0.61"
+    },
+    {
+      "hypothesis": "H5",
+      "name": "Judgment Elimination Order Differs",
+      "prediction": "Families eliminate judgments in different orders",
+      "passed": false,
+      "key_metric": "tau=-0.21"
+    },
+    {
+      "hypothesis": "H6",
+      "name": "R-Series MIDDLE Restriction Gradient",
+      "prediction": "R1->R2->R3 shows decreasing unique MIDDLEs",
+      "passed": true,
+      "key_metric": "rho=-1.00"
+    },
+    {
+      "hypothesis": "H7",
+      "name": "S-Zone to B-Terminal Vocabulary Overlap",
+      "prediction": "S-zone MIDDLEs enriched in B-terminal programs",
+      "passed": true,
+      "key_metric": "OR=3.51"
+    },
+    {
+      "hypothesis": "H8",
+      "name": "Zone-Apparatus Phase Alignment",
+      "prediction": "Escape gradient correlates with pelican reversibility",
+      "passed": false,
+      "key_metric": "rho=-0.20"
+    },
+    {
+      "hypothesis": "H9",
+      "name": "Family-Conditioned Escape Asymmetry",
+      "prediction": "Zodiac has steeper escape collapse (lower variance)",
+      "passed": false,
+      "key_metric": "v_ratio=0.16"
+    }
+  ],
+  "vector1_summary": {
+    "passed": 1,
+    "total": 5,
+    "verdict": "WEAK"
+  },
+  "vector2_summary": {
+    "passed": 2,
+    "total": 4,
+    "verdict": "PARTIAL"
+  },
+  "total_passed": 3,
+  "total_tests": 9,
+  "tier_assessment": {
+    "tier": "TIER_4_SPECULATIVE",
+    "confidence": "LOW",
+    "rationale": "Suggestive evidence: 3/9 hypotheses passed"
+  },
+  "key_finding": "Apparatus mapping shows structural correspondence between AZC zones and procedural phases."
+}

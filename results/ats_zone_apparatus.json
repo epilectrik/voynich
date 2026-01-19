@@ -1,0 +1,67 @@
+{
+  "hypothesis": "H8",
+  "name": "Zone-Apparatus Phase Alignment",
+  "prediction": "Escape gradient correlates with pelican reversibility",
+  "threshold": "Spearman rho > 0.7, p < 0.05",
+  "pelican_model": {
+    "C": {
+      "phase": "charging_loading",
+      "reversibility": 0.9,
+      "description": "Material enters, errors fixable"
+    },
+    "P": {
+      "phase": "active_reflux",
+      "reversibility": 0.7,
+      "description": "Circulation occurring, intervention permitted"
+    },
+    "R": {
+      "phase": "concentration",
+      "reversibility": 0.3,
+      "description": "Concentration gradient, progressively committed"
+    },
+    "S": {
+      "phase": "collection",
+      "reversibility": 0.1,
+      "description": "Distillate captured, irreversible"
+    }
+  },
+  "escape_rates": {
+    "C": 0.014,
+    "P": 0.116,
+    "R": 0.02,
+    "S": 0.019
+  },
+  "zone_data": {
+    "zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "reversibilities": [
+      0.9,
+      0.7,
+      0.3,
+      0.1
+    ],
+    "escape_rates": [
+      0.014,
+      0.116,
+      0.02,
+      0.019
+    ]
+  },
+  "statistics": {
+    "spearman_rho": -0.19999999999999998,
+    "spearman_p": 0.8,
+    "pearson_r": 0.31889603667044536,
+    "pearson_p": 0.6811039633295546
+  },
+  "evaluation": {
+    "rho_threshold_met": false,
+    "significant": false,
+    "passed_strict": false,
+    "passed_relaxed": false,
+    "passed": false
+  }
+}
