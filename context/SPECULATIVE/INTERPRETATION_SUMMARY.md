@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.30
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.31
 
 ---
 
@@ -2731,3 +2731,91 @@ This phase disentangles them cleanly:
 **Tier:** 3 (Structural Characterization - scaffold->trajectory signature)
 
 **Files:** phases/AZC_TRAJECTORY_SHAPE/, results/ats_*.json
+
+---
+
+### X.27 Brunschwig-Voynich Relationship Bounded: Explanation-Enforcement Complementarity FALSIFIED (2026-01-19) - NEW
+
+**Phase:** BC_EXPLANATION_ENFORCEMENT
+**Status:** COMPLETE - Clean falsification achieved
+
+#### Purpose
+
+Test the "one remaining legitimate reverse-Brunschwig test" (external expert): Does Brunschwig's pedagogical verbosity inversely correlate with AZC scaffold constraint rigidity?
+
+> **Core question:** Where Voynich enforces more, does Brunschwig explain less?
+
+#### Test Results (0/4 hypotheses passed = FALSIFIED)
+
+| Hypothesis | Prediction | Result | Status |
+|------------|------------|--------|--------|
+| H1: Freedom correlation | Inverse density-freedom correlation | rho=+0.09 (opposite direction) | **FAIL** |
+| H2: Scaffold rigidity | UNIFORM < VARIED density | d=-0.37 (correct direction, p=0.11) | **FAIL** |
+| H3: Interaction | Freedom x Pacing interaction > main | dR2=0.00 (no effect) | **FAIL** |
+| H4: Complementarity ratio | Stable ratio across regimes | CV increased 9.6% | **FAIL** |
+
+#### What Was Falsified
+
+The stronger hypothesis:
+
+> **"Brunschwig's pedagogical verbosity systematically complements Voynich's enforcement rigidity at the recipe/regime level."**
+
+This hypothesis is now **dead permanently**.
+
+#### What Survives Intact
+
+The falsification does NOT touch:
+
+- Zone-modality discrimination (F-BRU-009, two-stage model) - INTACT
+- Zones structure judgment admissibility, not sensory labels - INTACT
+- AZC trajectory shape = scaffold fingerprint, not apparatus dynamics - INTACT
+- Scaffold uniformity vs variability determines cognitive pacing - INTACT
+
+#### The Corrected Relationship
+
+| Aspect | Brunschwig | Voynich |
+|--------|------------|---------|
+| Primary function | Explains **WHAT** | Enforces **WHEN** |
+| Audience | Learners / practitioners | Experts only |
+| Content | Materials, heat, moral warnings | Legality, transitions, recoverability |
+| Silence | On enforcement | On explanation |
+| Alignment level | Curriculum trajectory | Curriculum trajectory |
+| **NOT aligned** | Interface timing | Interface timing |
+
+#### Why This Strengthens the Model
+
+If the test had succeeded, we'd be forced into:
+- Implicit co-design claims
+- Hidden synchrony assumptions
+- An explanation-enforcement dual-manual model
+
+The falsification produces something cleaner:
+
+> **Voynich stands alone as an enforcement artifact.**
+
+Voynich and Brunschwig converge on:
+- The same process domain
+- The same hazard ontology
+- The same curriculum ordering
+- The same notion of completeness vs intensity
+
+...but **only at the level of control worldview**, not at the level of interface behavior.
+
+#### Final Synthesis (Corrected)
+
+> **AZC zones and scaffold families address sensory strategies indirectly by structuring judgment admissibility and cognitive pacing, not by encoding modalities. Brunschwig and Voynich align at the level of procedural ontology and curriculum trajectory, but they do not coordinate explanation and enforcement at the level of individual recipes or phases.**
+
+This formulation:
+- Respects every Tier 0-2 constraint
+- Incorporates the falsification
+- Preserves the genuine AZC/sensory insight
+- Closes the Brunschwig line of inquiry cleanly
+
+#### New Constraints
+
+**C-BOUND-01:** Voynich is not part of a fine-grained pedagogical feedback loop with Brunschwig.
+**C-BOUND-02:** The Voynich-Brunschwig relationship is maximally abstract: convergent at ontology level, independent at interface level.
+
+**Tier:** FALSIFIED (0/4) - Clean negative result, bounds relationship appropriately
+
+**Files:** phases/BC_EXPLANATION_ENFORCEMENT/, results/bc_*.json

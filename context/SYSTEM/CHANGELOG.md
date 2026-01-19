@@ -4,6 +4,61 @@
 
 ---
 
+## Version 2.61 (2026-01-19) - BC_EXPLANATION_ENFORCEMENT: Brunschwig Relationship Bounded
+
+### Summary
+
+Tested the "one remaining legitimate reverse-Brunschwig test" (external expert): Does Brunschwig's pedagogical verbosity inversely correlate with AZC scaffold constraint rigidity?
+
+**Result: FALSIFIED (0/4 hypotheses passed)**
+
+### Test Results
+
+| Hypothesis | Prediction | Result | Status |
+|------------|------------|--------|--------|
+| H1 | Inverse density-freedom correlation | rho=+0.09 | FAIL |
+| H2 | UNIFORM < VARIED density | d=-0.37, p=0.11 | FAIL |
+| H3 | Interaction > main effects | dR2=0.00 | FAIL |
+| H4 | Stable complementarity ratio | CV +9.6% | FAIL |
+
+### What Was Falsified
+
+> "Brunschwig's pedagogical verbosity systematically complements Voynich's enforcement rigidity at the recipe/regime level."
+
+### What Survives
+
+- Zone-modality discrimination (F-BRU-009) - INTACT
+- AZC trajectory shape = scaffold fingerprint - INTACT
+- Scaffold uniformity determines cognitive pacing - INTACT
+
+### The Corrected Relationship
+
+| Aspect | Brunschwig | Voynich |
+|--------|------------|---------|
+| Primary function | Explains WHAT | Enforces WHEN |
+| Alignment level | Curriculum trajectory | Curriculum trajectory |
+| NOT aligned | Interface timing | Interface timing |
+
+> **Voynich stands alone as an enforcement artifact.**
+
+### New Constraints
+
+- **C-BOUND-01:** Voynich is not part of a fine-grained pedagogical feedback loop
+- **C-BOUND-02:** Voynich-Brunschwig relationship is maximally abstract: convergent at ontology, independent at interface
+
+### Documentation
+
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - Section X.27 added (v4.31)
+- `phases/BC_EXPLANATION_ENFORCEMENT/BC_EXPLANATION_ENFORCEMENT_REPORT.md` (NEW)
+
+### Data Files
+
+- `results/bc_explanation_density.json` through `results/bc_synthesis.json`
+
+**Scripts:** `phases/BC_EXPLANATION_ENFORCEMENT/bc_*.py`
+
+---
+
 ## Version 2.60 (2026-01-19) - AZC_TRAJECTORY_SHAPE: Scaffold Fingerprint Discovery
 
 ### Summary
