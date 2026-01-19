@@ -1,0 +1,71 @@
+{
+  "phase": "BC_EXPLANATION_ENFORCEMENT",
+  "script": "bc_02_regime_scaffold_mapping",
+  "mapping_type": "DIRECT (regime-to-scaffold via monitoring intensity)",
+  "note": "AZC folios and regime folios do not overlap - using structural correspondence",
+  "zone_freedom_constants": {
+    "C": 0.7692,
+    "P": 0.7692,
+    "R": 1.0,
+    "S": 0.3846
+  },
+  "family_rho_constants": {
+    "ZODIAC": -0.755,
+    "A_C": -0.247
+  },
+  "monitoring_freedom_constants": {
+    "LOW": 0.85,
+    "HIGH": 0.55,
+    "CRITICAL": 0.4
+  },
+  "regime_metrics": {
+    "REGIME_1": {
+      "dominant_family": "A_C",
+      "scaffold_pacing_index": -0.247,
+      "scaffold_pacing_interpretation": "VARIED",
+      "monitoring_intensity": "LOW",
+      "judgment_freedom_index": 0.85,
+      "rationale": "Standard water distillation - routine monitoring, varied constraints"
+    },
+    "REGIME_2": {
+      "dominant_family": "A_C",
+      "scaffold_pacing_index": -0.247,
+      "scaffold_pacing_interpretation": "VARIED",
+      "monitoring_intensity": "LOW",
+      "judgment_freedom_index": 0.85,
+      "rationale": "Gentle water distillation - minimal monitoring, varied constraints"
+    },
+    "REGIME_3": {
+      "dominant_family": "ZODIAC",
+      "scaffold_pacing_index": -0.755,
+      "scaffold_pacing_interpretation": "UNIFORM",
+      "monitoring_intensity": "HIGH",
+      "judgment_freedom_index": 0.55,
+      "rationale": "Oil/resin extraction - intensive monitoring, uniform constraints"
+    },
+    "REGIME_4": {
+      "dominant_family": "ZODIAC",
+      "scaffold_pacing_index": -0.755,
+      "scaffold_pacing_interpretation": "UNIFORM",
+      "monitoring_intensity": "CRITICAL",
+      "judgment_freedom_index": 0.4,
+      "rationale": "Precision distillation - maximum monitoring, strict uniform constraints"
+    }
+  },
+  "summary": {
+    "scaffold_pacing_range": [
+      -0.755,
+      -0.247
+    ],
+    "judgment_freedom_range": [
+      0.4,
+      0.85
+    ],
+    "freedom_ranking": [
+      "REGIME_4",
+      "REGIME_3",
+      "REGIME_1",
+      "REGIME_2"
+    ]
+  }
+}

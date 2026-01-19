@@ -1,0 +1,52 @@
+{
+  "hypothesis": "H4",
+  "name": "Complementarity Ratio",
+  "prediction": "Explanation/constraint ratio should be stable if systems complement",
+  "threshold": "Ratio CV < Density CV, homogeneous across regimes",
+  "n_recipes": 197,
+  "ratio_statistics": {
+    "mean": 10.2619,
+    "std": 6.3045,
+    "cv": 0.6144,
+    "min": 0.813,
+    "max": 27.5133
+  },
+  "comparison": {
+    "density_cv": 0.5607,
+    "ratio_cv": 0.6144,
+    "cv_reduction_pct": -9.6
+  },
+  "statistics": {
+    "levene_w": 228.0196,
+    "levene_p": 0.0,
+    "bartlett_chi2": 48.23,
+    "bartlett_p": 0.0
+  },
+  "evaluation": {
+    "variance_reduced": false,
+    "homogeneous": false,
+    "passed": false
+  },
+  "by_regime": {
+    "REGIME_3": {
+      "mean": 3.3995,
+      "std": 0.5971,
+      "n": 7
+    },
+    "REGIME_1": {
+      "mean": 10.557,
+      "std": 5.7482,
+      "n": 169
+    },
+    "REGIME_2": {
+      "mean": 14.3753,
+      "std": 9.0859,
+      "n": 14
+    },
+    "REGIME_4": {
+      "mean": 1.7738,
+      "std": 0.5499,
+      "n": 7
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "hypothesis": "H2",
+  "name": "Explanation vs Scaffold Rigidity",
+  "prediction": "UNIFORM scaffolds have LOWER explanation density than VARIED",
+  "threshold": "Mann-Whitney p < 0.05, effect size d > 0.3",
+  "group_sizes": {
+    "uniform": 14,
+    "varied": 183
+  },
+  "descriptive": {
+    "uniform": {
+      "mean": 1.297,
+      "std": 0.3804
+    },
+    "varied": {
+      "mean": 1.6274,
+      "std": 0.923
+    }
+  },
+  "statistics": {
+    "mann_whitney_u": 1033.5,
+    "p_value": 0.114692,
+    "cohens_d": -0.3671,
+    "mean_difference": -0.3303
+  },
+  "evaluation": {
+    "significant": false,
+    "effect_threshold_met": true,
+    "correct_direction": true,
+    "passed": false
+  }
+}
