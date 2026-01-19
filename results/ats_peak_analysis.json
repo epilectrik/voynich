@@ -1,0 +1,205 @@
+{
+  "hypothesis": "H4",
+  "name": "Peak Count Differs",
+  "prediction": "A/C >= 1.5 peaks, Zodiac < 1.0 peaks",
+  "threshold": "Poisson rate ratio >= 2.0",
+  "zodiac": {
+    "n": 13,
+    "mean_peaks": 0.9230769230769231,
+    "peaks": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "ac": {
+    "n": 16,
+    "mean_peaks": 0.5625,
+    "peaks": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "rate_ratio": 0.609375,
+  "statistics": {
+    "u_statistic": 141.5,
+    "u_pvalue": 0.036196556205231774
+  },
+  "evaluation": {
+    "zodiac_meets_threshold": true,
+    "ac_meets_threshold": false,
+    "rate_ratio_met": false,
+    "passed": false
+  },
+  "folio_details": [
+    {
+      "folio": "f57v",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f65r",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f65v",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f67r1",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f67r2",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f67v1",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f67v2",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f68r1",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f68r2",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f68r3",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f68v1",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f68v2",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f68v3",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f69r",
+      "family": "ac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f69v",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f70r1",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f70r2",
+      "family": "ac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f70v1",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f70v2",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f71r",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f71v",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f72r1",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f72r2",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f72r3",
+      "family": "zodiac",
+      "peak_count": 0
+    },
+    {
+      "folio": "f72v1",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f72v2",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f72v3",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f73r",
+      "family": "zodiac",
+      "peak_count": 1
+    },
+    {
+      "folio": "f73v",
+      "family": "zodiac",
+      "peak_count": 1
+    }
+  ]
+}

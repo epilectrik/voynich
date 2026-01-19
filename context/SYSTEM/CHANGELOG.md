@@ -4,6 +4,56 @@
 
 ---
 
+## Version 2.60 (2026-01-19) - AZC_TRAJECTORY_SHAPE: Scaffold Fingerprint Discovery
+
+### Summary
+
+Comprehensive investigation of AZC family differentiation combining trajectory shape (external expert) and apparatus mapping (internal expert-advisor). **Critical corrective insight:** AZC trajectory shape is a signature of scaffold rigidity, not apparatus dynamics.
+
+### The Reframe
+
+> **"AZC trajectory shape is a fingerprint of control scaffold architecture, not a simulation of apparatus dynamics."**
+
+This rescues trajectory analysis from a wrong question (apparatus physics) and repositions it as structural characterization.
+
+### Test Results (3/9 passed = TIER_4 -> upgraded interpretation)
+
+| Hypothesis | Result | Interpretation |
+|------------|--------|----------------|
+| H2: Monotonicity | **PASS** | Zodiac (rho=-0.75) = uniform scaffold = smooth decline; A/C (rho=-0.25) = varied scaffold = punctuated |
+| H6: R-series restriction | **PASS** | Perfect vocabulary narrowing R1(316)→R2(217)→R3(128) |
+| H7: S→B-terminal flow | **PASS** | S-zone vocabulary 3.5x enriched in B-terminal (OR=3.51) |
+| H8: Pelican reversibility | **FAIL** | Escape encodes decision affordance, not physical reversibility |
+
+### New Tier 3 Characterization
+
+> **AZC families differ not in what judgments are removed, but in how smoothly those removals are imposed over execution - a property determined by scaffold uniformity versus variability.**
+
+| Family | Scaffold Type | Trajectory Shape | Cognitive Effect |
+|--------|---------------|------------------|------------------|
+| Zodiac | Uniform | Smooth monotonic tightening | Sustained flow |
+| A/C | Varied | Punctuated tightening | Checkpoint cognition |
+
+### Key Insight: H6 + H7 Form Causal Chain
+
+1. R-series positional grammar (C434) → progressively restricts legal MIDDLE vocabulary
+2. S-zone survival → selectively feeds into B terminal states
+
+This closes the loop: AZC legality → vocabulary survival → executable program completion.
+
+### Documentation
+
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - Section X.26 added (v4.30)
+- `phases/AZC_TRAJECTORY_SHAPE/AZC_TRAJECTORY_SHAPE_REPORT.md` (NEW)
+
+### Data Files
+
+- `results/ats_entropy_trajectory.json` through `results/ats_synthesis.json`
+
+**Scripts:** `phases/AZC_TRAJECTORY_SHAPE/ats_*.py`
+
+---
+
 ## Version 2.59 (2026-01-19) - TRAJECTORY_SEMANTICS: Judgment-Gating System Discovered
 
 ### Summary
