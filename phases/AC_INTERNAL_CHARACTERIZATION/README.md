@@ -1,6 +1,6 @@
 # A/C INTERNAL CHARACTERIZATION Phase
 
-**Status:** COMPLETE | **Result:** PARTIAL SIGNAL | **Date:** 2026-01-15
+**Status:** COMPLETE | **Result:** PARTIAL SIGNAL | **Date:** 2026-01-15 (H-only corrected 2026-01-16)
 
 ---
 
@@ -49,19 +49,21 @@ All probes are internal and operator-centric:
 | Probe | Prediction | Result | P-value | Effect |
 |-------|------------|--------|---------|--------|
 | **1. HT Phase-Reset** | A/C > Zodiac | NO SIGNAL | 1.00 | n/a |
-| **2. MIDDLE Incompatibility** | A/C > Zodiac | **STRONG SIGNAL** | **0.0006** | r=-0.70 |
-| **3. Zone-Transition** | A/C > Zodiac | NO SIGNAL | 0.9999 | opposite |
+| **2. MIDDLE Incompatibility** | A/C > Zodiac | **STRONG SIGNAL** | **0.0001** | r=-0.81 |
+| **3. Zone-Transition** | A/C > Zodiac | NO SIGNAL | 0.9998 | opposite |
+
+> **H-only correction (2026-01-16):** All values re-validated with H-only transcriber filter. Signal strengthened.
 
 ### Key Findings
 
 **Probe 2 confirms the expert's hypothesis:**
-- A/C mean incompatibility density: **0.55**
-- Zodiac mean incompatibility density: **0.38**
+- A/C mean incompatibility density: **0.579** (H-only corrected)
+- Zodiac mean incompatibility density: **0.345** (H-only corrected)
 - A/C activates significantly more densely incompatible MIDDLE subsets
 
 **Unexpected finding from Probe 3:**
-- Zodiac switch rate: 0.0176 (higher)
-- A/C switch rate: 0.0039 (lower)
+- Zodiac switch rate: 0.0384 (higher)
+- A/C switch rate: 0.0134 (lower)
 - A/C manages higher constraint density while staying WITHIN zones, not through zone switching
 
 **Probe 1 is uninformative:**

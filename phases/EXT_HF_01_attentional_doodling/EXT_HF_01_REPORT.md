@@ -4,6 +4,7 @@
 **Tier:** 4 (EXPLORATORY / Human-Factors Refinement)
 **Status:** COMPLETE
 **Date:** 2026-01-05
+**Updated:** 2026-01-16 (H-only transcriber filter applied)
 
 ---
 
@@ -21,9 +22,9 @@ This phase refines SID-05's explanation of the human-track layer but does NOT in
 
 ## Data Scope
 
-- **Total tokens loaded:** 120,768
-- **Strict HT tokens (LINK-buffered, non-hazard-proximal):** 4,912
-- **Executable tokens for comparison:** 37,178
+- **Total tokens loaded:** 37,768
+- **Strict HT tokens (LINK-buffered, non-hazard-proximal):** 1,684
+- **Executable tokens for comparison:** 11,514
 
 Filtering criteria applied:
 - Length >= 2 characters
@@ -39,16 +40,16 @@ Filtering criteria applied:
 
 | Test | Name | Result | Lean | Confidence |
 |------|------|--------|------|------------|
-| A | Rare-Grapheme Over-Representation | HT/Exec ratio = 3.29x, p = 0.0001 | **Practice-leaning** | MODERATE |
-| B | Local Permutation Coverage | HT 45.8% vs Exec 62.5% | Indeterminate | LOW |
-| C | Run-Internal Uniformity | CV = 0.43 (fixed-block range) | **Practice-leaning** | MODERATE |
-| D | Morphological Boundary Exploration | 28.5% boundary-pushing forms | **Practice-leaning** | MODERATE |
-| E | Section-Level Family Rotation | Change rate = 0.71 | **Practice-leaning** | WEAK |
+| A | Rare-Grapheme Over-Representation | HT/Exec ratio = 7.81x, p < 0.0001 | **Practice-leaning** | MODERATE |
+| B | Local Permutation Coverage | HT 37.5% vs Exec 58.3% | Doodling-leaning | LOW |
+| C | Run-Internal Uniformity | CV = 0.35 (fixed-block range) | **Practice-leaning** | MODERATE |
+| D | Morphological Boundary Exploration | 24.5% boundary-pushing forms | **Practice-leaning** | MODERATE |
+| E | Section-Level Family Rotation | Change rate = 0.57 | **Practice-leaning** | WEAK |
 
 **Lean counts:**
 - Practice-leaning: **4/5**
-- Doodling-leaning: 0/5
-- Indeterminate: 1/5
+- Doodling-leaning: 1/5
+- Indeterminate: 0/5
 
 ---
 
@@ -61,12 +62,12 @@ Filtering criteria applied:
 **Method:** Compare grapheme frequency distributions between HT and executable corpora. Rare graphemes defined as lowest decile globally.
 
 **Results:**
-- Global grapheme count: 21
-- Rare graphemes identified: ['j', 'x']
-- HT rare density: 0.0006
-- Executable rare density: 0.0002
-- **Ratio (HT/Exec): 3.29x**
-- Chi-square: 15.62, **p = 0.0001**
+- Global grapheme count: 20
+- Rare graphemes identified: ['g', 'x']
+- HT rare density: 0.0030
+- Executable rare density: 0.0004
+- **Ratio (HT/Exec): 7.81x**
+- Chi-square: 70.54, **p < 0.0001**
 
 **Interpretation:** HT tokens show significant over-representation of rare graphemes compared to executable tokens. This pattern is consistent with practice behavior (engaging with difficult forms) rather than doodling (favoring common/easy forms).
 
@@ -83,13 +84,13 @@ Filtering criteria applied:
 **Results:**
 - Top grapheme subset: ['a', 'c', 'h', 'i']
 - Possible 3-char permutations: 24
-- HT realized: 11 (45.8%)
-- Exec realized: 15 (62.5%)
-- Shuffled HT realized: 41 (170.8%)
+- HT realized: 9 (37.5%)
+- Exec realized: 14 (58.3%)
+- Shuffled HT realized: 30 (125.0%)
 
-**Interpretation:** HT tokens show lower permutation coverage than executable tokens. This is contrary to the practice hypothesis (which predicts systematic exploration). However, the high shuffled rate suggests the graphemes themselves permit many combinations, just not realized in actual token sequences.
+**Interpretation:** HT tokens show lower permutation coverage than executable tokens. This is contrary to the practice hypothesis (which predicts systematic exploration). The difference suggests doodling rather than systematic grapheme exploration.
 
-**Verdict:** Indeterminate (LOW confidence)
+**Verdict:** Doodling-leaning (LOW confidence)
 
 ---
 
@@ -100,10 +101,10 @@ Filtering criteria applied:
 **Method:** Compute HT run lengths and compare coefficient of variation (CV) against models.
 
 **Results:**
-- HT runs identified: 851
-- Mean run length: 2.54
-- Standard deviation: 1.09
-- **Observed CV: 0.43**
+- HT runs identified: 297
+- Mean run length: 2.46
+- Standard deviation: 0.86
+- **Observed CV: 0.35**
 - Geometric (memoryless) expected CV: ~1.0
 - Fixed-block rehearsal expected CV: ~0.3-0.5
 
@@ -121,10 +122,10 @@ Filtering criteria applied:
 
 **Results:**
 - HT tokens sampled: 200
-- Mean edit distance: 2.21
+- Mean edit distance: 2.19
 - Median: 2.00
-- **Boundary-pushing forms (edit distance >= 3): 57 (28.5%)**
-- Examples: 'ykairolky' (5), 'ofyskydal' (5), 'ocholsharam' (5)
+- **Boundary-pushing forms (edit distance >= 3): 49 (24.5%)**
+- Examples: 'ofaramoty' (5), 'yteechypchy' (5), 'soefchocphy' (5)
 
 **Interpretation:** Over a quarter of HT tokens show substantial divergence from executable forms (edit distance >= 3). This suggests exploration of morphological boundaries, consistent with practice behavior.
 
@@ -151,9 +152,9 @@ Filtering criteria applied:
 | T | OTHER | 31.0% |
 | Z | OTHER | 45.9% |
 
-- Dominant family sequence: KC -> OL -> OTHER -> KC -> OL -> OTHER -> OTHER -> OTHER
-- Family changes: 5 of 7 transitions
-- **Change rate: 0.71**
+- Dominant family sequence: KC -> OL -> OTHER -> KC -> OTHER -> OTHER -> OTHER -> OTHER
+- Family changes: 4 of 7 transitions
+- **Change rate: 0.57**
 
 **Interpretation:** High change rate (0.71) suggests rotation between grapheme families rather than monotonic drift. However, this test provides weak evidence only.
 

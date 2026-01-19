@@ -1,0 +1,56 @@
+{
+  "folio": "f100r",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "leaf",
+  "plant_part_note": "Full plants shown, leaves most prominent. Could be whole-plant labels.",
+  "has_jar_labels": false,
+  "jar_note": "Jars present in illustration but unlabeled",
+  "total_labels": 19,
+  "groups": [
+    {
+      "row": 1,
+      "placement": "L1",
+      "labels": [
+        "chosaroshol",
+        "sochorcfhy",
+        "otear",
+        "chofary",
+        "sar",
+        "char",
+        "daiindy"
+      ],
+      "count": 7,
+      "notes": null
+    },
+    {
+      "row": 2,
+      "placement": "L2",
+      "labels": [
+        "osaro",
+        "chalsain",
+        "soity",
+        "sosam",
+        "dakocth",
+        "sofal"
+      ],
+      "count": 6,
+      "notes": null
+    },
+    {
+      "row": 3,
+      "placement": "L3",
+      "labels": [
+        "okeeos",
+        "shockhey",
+        "orol",
+        "olcheom",
+        "okols",
+        "oteol"
+      ],
+      "count": 6,
+      "notes": null
+    }
+  ]
+}

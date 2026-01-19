@@ -1,0 +1,107 @@
+{
+  "track": 2,
+  "name": "DA Block Mechanics",
+  "tests": {
+    "CAR-2.1": {
+      "test_id": "CAR-2.1",
+      "test_name": "Sub-Record Vocabulary Coherence",
+      "total_entries": 1575,
+      "multi_block_entries": 471,
+      "multi_block_pct": 0.29904761904761906,
+      "mean_within_jaccard": 0.14544025157232704,
+      "mean_cross_jaccard": 0.1358928165676632,
+      "within_cross_ratio": 1.0702570985414084,
+      "mann_whitney_p": 1.0,
+      "baseline_ratio_mean": 0.9904071093710058,
+      "baseline_ratio_std": 0.1184033305253647,
+      "effect_size": 0.6743897221142512,
+      "perm_p_value": 0.25,
+      "verdict": "NULL"
+    },
+    "CAR-2.2": {
+      "test_id": "CAR-2.2",
+      "test_name": "Block Position Effects",
+      "token_counts": {
+        "FIRST": 1826,
+        "MIDDLE": 286,
+        "LAST": 1304,
+        "ONLY": 6864
+      },
+      "unique_middles": {
+        "FIRST": 166,
+        "MIDDLE": 47,
+        "LAST": 169,
+        "ONLY": 449
+      },
+      "chi2": 77.31473948526161,
+      "p_value": 2.2580074522006727e-08,
+      "dof": 21,
+      "prefix_distribution": {
+        "FIRST": {
+          "ch": 349,
+          "ct": 50,
+          "qo": 230,
+          "ot": 96,
+          "sh": 198,
+          "ok": 105,
+          "ol": 48
+        },
+        "MIDDLE": {
+          "ot": 15,
+          "ch": 65,
+          "sh": 24,
+          "ok": 24,
+          "ct": 18,
+          "qo": 38,
+          "ol": 5
+        },
+        "LAST": {
+          "qo": 126,
+          "sh": 87,
+          "ct": 82,
+          "ol": 45,
+          "ch": 264,
+          "ok": 85,
+          "ot": 81
+        },
+        "ONLY": {
+          "ch": 1458,
+          "sh": 695,
+          "qo": 695,
+          "ct": 296,
+          "ok": 398,
+          "ot": 298,
+          "ol": 186
+        }
+      },
+      "verdict": "SIGNIFICANT"
+    },
+    "CAR-2.3": {
+      "test_id": "CAR-2.3",
+      "test_name": "DA Count vs Entry Complexity",
+      "n_entries": 1575,
+      "da_count_distribution": {
+        "0": 835,
+        "2": 168,
+        "3": 52,
+        "1": 503,
+        "4": 14,
+        "5": 3
+      },
+      "correlation_tokens": {
+        "rho": 0.001110040514096363,
+        "p": 0.9648897330332347
+      },
+      "correlation_middles": {
+        "rho": 0.021656269310690507,
+        "p": 0.3904095347351513
+      },
+      "correlation_markers": {
+        "rho": 0.04580754867043848,
+        "p": 0.06914954833746736
+      },
+      "verdict": "NULL"
+    }
+  },
+  "track_verdict": "PARTIAL"
+}

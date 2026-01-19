@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-16
+CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -91,7 +91,7 @@ C205	Residue 82% section-exclusive	2	B	in: operations
 C206	Sections not compressible to regimes	2	B	in: operations
 C207	0/18 micro-cipher tests passed	2	B	in: operations
 C208	Residue compatible with non-encoding dynamics	2	B	in: operations
-C209	Attentional pacing UNDERDETERMINED (4/8)	2	HT	in: human_track
+C209	Attentional pacing wins (6/8)	2	HT	in: human_track
 C210	External alignments robust to HT removal	2	B	in: operations
 C211	Seasonal ordering underpowered	2	B	in: operations
 C212	93% plants peak May-August	2	B	in: operations

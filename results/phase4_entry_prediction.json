@@ -1,0 +1,66 @@
+{
+  "phase": "phase4_entry_prediction",
+  "question": "Can we predict product type from entry structure?",
+  "method": "MIDDLE match against product-discriminating MIDDLEs",
+  "summary": {
+    "total_entries": 11090,
+    "entries_with_prediction": 294,
+    "correct_predictions": 85,
+    "entry_accuracy": 0.2891156462585034,
+    "folio_accuracy": 0.27722772277227725,
+    "baseline": 0.25,
+    "threshold": 0.6
+  },
+  "by_product": {
+    "WATER_GENTLE": {
+      "total": 995,
+      "has_prediction": 25,
+      "correct": 4,
+      "accuracy": 0.16
+    },
+    "WATER_STANDARD": {
+      "total": 5487,
+      "has_prediction": 146,
+      "correct": 19,
+      "accuracy": 0.13013698630136986
+    },
+    "OIL_RESIN": {
+      "total": 2177,
+      "has_prediction": 66,
+      "correct": 46,
+      "accuracy": 0.696969696969697
+    },
+    "PRECISION": {
+      "total": 2431,
+      "has_prediction": 57,
+      "correct": 16,
+      "accuracy": 0.2807017543859649
+    }
+  },
+  "confusion_matrix": {
+    "WATER_GENTLE": {
+      "WATER_GENTLE": 4,
+      "OIL_RESIN": 16,
+      "PRECISION": 5
+    },
+    "WATER_STANDARD": {
+      "OIL_RESIN": 59,
+      "WATER_GENTLE": 32,
+      "PRECISION": 36,
+      "WATER_STANDARD": 19
+    },
+    "OIL_RESIN": {
+      "WATER_GENTLE": 6,
+      "PRECISION": 7,
+      "OIL_RESIN": 46,
+      "WATER_STANDARD": 7
+    },
+    "PRECISION": {
+      "OIL_RESIN": 30,
+      "WATER_GENTLE": 6,
+      "PRECISION": 16,
+      "WATER_STANDARD": 5
+    }
+  },
+  "status": "FAIL"
+}

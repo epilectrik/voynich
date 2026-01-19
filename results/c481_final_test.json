@@ -1,0 +1,89 @@
+{
+  "c481_status": "VIOLATED",
+  "unique_bundles": 240,
+  "unique_folio_signatures": 72,
+  "is_1_to_1": false,
+  "bundle_size_distribution": {
+    "0": 1,
+    "1": 115,
+    "2": 105,
+    "3": 17,
+    "5": 1,
+    "4": 1
+  },
+  "records_per_bundle": {
+    "min": 1,
+    "max": 963,
+    "avg": 6.3875
+  },
+  "most_reused_bundles": [
+    {
+      "bundle": [],
+      "record_count": 963,
+      "folio_count": 29
+    },
+    {
+      "bundle": [
+        "d"
+      ],
+      "record_count": 44,
+      "folio_count": 3
+    },
+    {
+      "bundle": [
+        "ct"
+      ],
+      "record_count": 26,
+      "folio_count": 2
+    },
+    {
+      "bundle": [
+        "ho"
+      ],
+      "record_count": 25,
+      "folio_count": 2
+    },
+    {
+      "bundle": [
+        "oi"
+      ],
+      "record_count": 22,
+      "folio_count": 1
+    },
+    {
+      "bundle": [
+        "oct"
+      ],
+      "record_count": 20,
+      "folio_count": 2
+    },
+    {
+      "bundle": [
+        "kch"
+      ],
+      "record_count": 20,
+      "folio_count": 1
+    },
+    {
+      "bundle": [
+        "n"
+      ],
+      "record_count": 11,
+      "folio_count": 1
+    },
+    {
+      "bundle": [
+        "he"
+      ],
+      "record_count": 11,
+      "folio_count": 2
+    },
+    {
+      "bundle": [
+        "eom"
+      ],
+      "record_count": 10,
+      "folio_count": 1
+    }
+  ]
+}

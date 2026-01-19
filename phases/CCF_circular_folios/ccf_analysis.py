@@ -26,6 +26,10 @@ def load_corpus():
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) >= 12:
+                # CRITICAL: Filter to H-only transcriber track
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 # Remove quotes from all fields
                 parts = [p.strip('"') for p in parts]
                 records.append({

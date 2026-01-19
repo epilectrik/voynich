@@ -1,0 +1,68 @@
+{
+  "phase": "phase1_ab_flow_validation",
+  "question": "Do A folios classified by product type feed B folios in matching REGIMEs?",
+  "method": "MIDDLE vocabulary overlap between A and B folios",
+  "regime_product_mapping": {
+    "REGIME_2": "WATER_GENTLE",
+    "REGIME_1": "WATER_STANDARD",
+    "REGIME_3": "OIL_RESIN",
+    "REGIME_4": "PRECISION"
+  },
+  "summary": {
+    "a_folios_tested": 110,
+    "overall_correct": 2648,
+    "overall_total": 9020,
+    "overall_pct": 29.356984478935697,
+    "weighted_pct": 31.500514940177084,
+    "random_baseline": 25.0,
+    "lift_over_baseline": 4.356984478935697
+  },
+  "per_product": {
+    "WATER_GENTLE": {
+      "correct": 110,
+      "total": 902,
+      "pct": 12.195121951219512,
+      "regime_distribution": {
+        "REGIME_4": 275,
+        "REGIME_2": 110,
+        "REGIME_3": 176,
+        "REGIME_1": 341
+      }
+    },
+    "WATER_STANDARD": {
+      "correct": 1488,
+      "total": 3936,
+      "pct": 37.80487804878049,
+      "regime_distribution": {
+        "REGIME_4": 1200,
+        "REGIME_2": 480,
+        "REGIME_3": 768,
+        "REGIME_1": 1488
+      }
+    },
+    "OIL_RESIN": {
+      "correct": 400,
+      "total": 2050,
+      "pct": 19.51219512195122,
+      "regime_distribution": {
+        "REGIME_4": 625,
+        "REGIME_2": 250,
+        "REGIME_3": 400,
+        "REGIME_1": 775
+      }
+    },
+    "PRECISION": {
+      "correct": 650,
+      "total": 2132,
+      "pct": 30.48780487804878,
+      "regime_distribution": {
+        "REGIME_4": 650,
+        "REGIME_2": 260,
+        "REGIME_3": 416,
+        "REGIME_1": 806
+      }
+    }
+  },
+  "success_threshold": 70.0,
+  "status": "FAIL"
+}

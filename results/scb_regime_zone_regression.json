@@ -1,0 +1,80 @@
+{
+  "phase": "SEMANTIC_CEILING_BREACH",
+  "test": "scb_03_regime_zone_regression",
+  "question": "Does REGIME alone explain zone variance?",
+  "n_recipes": 197,
+  "n_labeled": 110,
+  "regime_counts": {
+    "REGIME_3": 7,
+    "REGIME_1": 169,
+    "REGIME_2": 14,
+    "REGIME_4": 7
+  },
+  "regime_means": {
+    "REGIME_1": {
+      "C": 0.25138016944037017,
+      "P": 0.19987147746345066,
+      "R": 0.2457113677849464,
+      "S": 0.3030369853112328
+    },
+    "REGIME_2": {
+      "C": 0.5076312576312576,
+      "P": 0.18692307692307697,
+      "R": 0.10770451770451771,
+      "S": 0.19774114774114773
+    },
+    "REGIME_3": {
+      "C": 0.1483679283679284,
+      "P": 0.08165242165242163,
+      "R": 0.4287993487993487,
+      "S": 0.3411803011803012
+    },
+    "REGIME_4": {
+      "C": 0.010204081632653064,
+      "P": 0.29176114890400606,
+      "R": 0.2027588813303099,
+      "S": 0.5470521541950112
+    }
+  },
+  "regime_r_squared": {
+    "by_zone": {
+      "C": 0.41251131907822514,
+      "P": 0.0887848277199288,
+      "R": 0.20468836613318175,
+      "S": 0.2800228948667258
+    },
+    "mean": 0.24650185194951538
+  },
+  "modality_beyond_regime": {
+    "C": {
+      "f_stat": 3.6317705954401642,
+      "p_value": 0.015318200996836097,
+      "eta_squared": 0.0932057207412787,
+      "significant": true
+    },
+    "P": {
+      "f_stat": 3.282825675990334,
+      "p_value": 0.023745732809818967,
+      "eta_squared": 0.08501170909301749,
+      "significant": true
+    },
+    "R": {
+      "f_stat": 2.714916020325434,
+      "p_value": 0.04847878973485317,
+      "eta_squared": 0.07135455813197264,
+      "significant": true
+    },
+    "S": {
+      "f_stat": 2.526852554715559,
+      "p_value": 0.06137708123795975,
+      "eta_squared": 0.06674168378854146,
+      "significant": false
+    }
+  },
+  "n_zones_modality_significant": 3,
+  "interpretation": {
+    "regime_verdict": "REGIME explains <30% of zone variance. Zone carries significant independent info.",
+    "modality_verdict": "MODALITY adds significant explanatory power to 3+ zones beyond REGIME"
+  },
+  "verdict": "MODALITY_ADDS"
+}

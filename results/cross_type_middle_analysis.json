@@ -1,33 +1,33 @@
 {
   "test": "CROSS_TYPE_MIDDLE_ANALYSIS",
-  "total_middles": 3060,
+  "total_middles": 2118,
   "distribution": {
-    "universal": 106,
-    "cross_cutting": 480,
-    "type_specific": 2474
+    "universal": 129,
+    "cross_cutting": 392,
+    "type_specific": 1597
   },
   "percentages": {
-    "type_specific": 80.84967320261438,
-    "shared": 19.15032679738562
+    "type_specific": 75.40132200188857,
+    "shared": 24.598677998111427
   },
   "hypothesis_support": {
     "H1_type_locked": true,
-    "H2_cross_cutting": false,
+    "H2_cross_cutting": true,
     "H3_hierarchical": true
   },
   "type_pair_sharing": {
-    "PRECISION+WATER_GENTLE": 4,
-    "PRECISION+WATER_STANDARD": 167,
-    "WATER_GENTLE+WATER_STANDARD": 46,
-    "OIL_RESIN+WATER_STANDARD": 94,
-    "OIL_RESIN+PRECISION": 11,
-    "OIL_RESIN+WATER_GENTLE": 1
+    "OIL_RESIN+PRECISION": 22,
+    "PRECISION+WATER_STANDARD": 87,
+    "PRECISION+WATER_GENTLE": 18,
+    "OIL_RESIN+WATER_STANDARD": 92,
+    "WATER_GENTLE+WATER_STANDARD": 34,
+    "OIL_RESIN+WATER_GENTLE": 14
   },
   "clustering": {
-    "OIL_RESIN": 8,
-    "PRECISION": 9,
-    "WATER_GENTLE": 2,
-    "WATER_STANDARD": 29
+    "OIL_RESIN": 11,
+    "PRECISION": 12,
+    "WATER_GENTLE": 5,
+    "WATER_STANDARD": 22
   },
   "verdict": "HIERARCHICAL",
   "interpretation": "MIDDLEs show multi-level structure:   - Universal MIDDLEs: appear in ALL product types (procedural primitives?)   - Cross-cutting MIDDLEs: shared by 2-3 types (material PROPERTY markers?)   - Type-specific MIDDLEs: unique to one type (type-locked procedures?)  This suggests MIDDLEs encode BOTH:   1. Common procedural vocabulary (universal)   2. Shared material properties (cross-cutting)   3. Type-specific configurations (unique)"

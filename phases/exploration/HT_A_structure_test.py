@@ -33,6 +33,8 @@ print("=" * 80)
 # Load data
 data_path = "C:/git/voynich/data/transcriptions/interlinear_full_words.txt"
 df = pd.read_csv(data_path, sep='\t', quotechar='"', low_memory=False)
+# Filter to H transcriber only
+df = df[df['transcriber'] == 'H']
 
 print(f"\nTotal records: {len(df):,}")
 print(f"Columns: {list(df.columns)}")

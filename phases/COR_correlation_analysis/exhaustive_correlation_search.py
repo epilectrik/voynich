@@ -44,6 +44,11 @@ def load_transcription_data() -> Dict[str, Dict]:
     with open("data/transcriptions/interlinear_full_words.txt", newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             folio = row.get("folio", "")
             word = row.get("word", "")
             if folio and word:

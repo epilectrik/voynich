@@ -1,0 +1,80 @@
+{
+  "tests": [
+    {
+      "test": "BRU-A-4.1",
+      "question": "Product Type x Closure Pattern",
+      "result": "SIGNIFICANT",
+      "p_value": 0.022573117951168366,
+      "data": {
+        "WATER_STANDARD": {
+          "aiin-closure": 0.25,
+          "other": 0.22916666666666666,
+          "y-closure": 0.3333333333333333,
+          "m-closure": 0.10416666666666667,
+          "in-closure": 0.08333333333333333
+        },
+        "PRECISION": {
+          "y-closure": 0.46153846153846156,
+          "aiin-closure": 0.038461538461538464,
+          "other": 0.4230769230769231,
+          "m-closure": 0.038461538461538464,
+          "in-closure": 0.038461538461538464
+        },
+        "OIL_RESIN": {
+          "m-closure": 0.12,
+          "aiin-closure": 0.2,
+          "other": 0.32,
+          "n-closure": 0.08,
+          "y-closure": 0.24,
+          "iin-closure": 0.04
+        },
+        "WATER_GENTLE": {
+          "m-closure": 0.36363636363636365,
+          "aiin-closure": 0.09090909090909091,
+          "y-closure": 0.5454545454545454
+        }
+      }
+    },
+    {
+      "test": "BRU-A-4.2",
+      "question": "Product Type x Breadth",
+      "result": "NOT_SIGNIFICANT",
+      "p_value": 0.5458430474819433,
+      "data": {
+        "WATER_STANDARD": {
+          "hub": 0.7134473463979228,
+          "tail": 0.11060693044203042
+        },
+        "PRECISION": {
+          "hub": 0.7322309891469245,
+          "tail": 0.09668529221281609
+        },
+        "OIL_RESIN": {
+          "hub": 0.7654564353426285,
+          "tail": 0.07926170831923064
+        },
+        "WATER_GENTLE": {
+          "hub": 0.7158238015100516,
+          "tail": 0.0896796207599072
+        }
+      }
+    },
+    {
+      "test": "BRU-A-4.3",
+      "question": "Product Type x Cluster Membership",
+      "result": "NOT_SIGNIFICANT",
+      "p_value": 0.6685311216356649,
+      "data": {
+        "total_clusters": 3,
+        "homogeneous": 1,
+        "mixed": 2,
+        "observed_homogeneity": 0.3333333333333333,
+        "expected_homogeneity": 0.30793388429752067
+      }
+    }
+  ],
+  "summary": {
+    "significant_count": 1,
+    "total_tests": 3
+  }
+}

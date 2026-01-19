@@ -52,6 +52,9 @@ for line in lines[1:]:
     parts = line.strip().split('\t')
     if len(parts) >= len(header):
         row = {header[i]: parts[i].strip('"') for i in range(len(header))}
+        # CRITICAL: Filter to H-only transcriber track
+        if row.get('transcriber', '') != 'H':
+            continue
         all_tokens.append(row)
 
 b_tokens = [t for t in all_tokens if t.get('language', '') == 'B']

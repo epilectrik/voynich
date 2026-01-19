@@ -182,6 +182,10 @@ role_taxonomy:
       function: "Support operations"
       class_count: 8
       provenance: "C121"
+      # BCI refinement (2026-01-18): AUXILIARY roles are execution-critical
+      # infrastructure that mediate kernel access. They are redundant internally
+      # (collapsible per C411) but must never be pruned by AZC vocabulary filtering.
+      # See C396.a and TIER3/b_execution_infrastructure_characterization.md
 
     FREQUENT_OPERATOR:
       function: "Common instructions"

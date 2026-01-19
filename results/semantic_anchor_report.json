@@ -1,0 +1,80 @@
+{
+  "investigation": "BRUNSCHWIG_SEMANTIC_ANCHOR",
+  "status": "FALSIFIED",
+  "date": "2026-01-18",
+  "goal": "Close semantic anchoring chain: Brunschwig recipes -> Product types -> A entry MIDDLEs",
+  "conclusion": "MIDDLEs encode operational state constraints, not material compatibility",
+  "phase_results": {
+    "phase1_ab_flow": {
+      "question": "Do A folios classified by product type feed B folios in matching REGIMEs?",
+      "result": "FAIL",
+      "value": 0.294,
+      "threshold": 0.70,
+      "interpretation": "A->B flow via MIDDLE overlap is essentially random"
+    },
+    "phase2_discriminating_middles": {
+      "question": "Are product-type MIDDLEs disjoint?",
+      "result": "PARTIAL",
+      "disjointness": 1.0,
+      "exclusivity": 0.466,
+      "disjoint_threshold": 0.80,
+      "exclusive_threshold": 0.50,
+      "interpretation": "Top-10 discriminators are disjoint but overall exclusivity is marginal"
+    },
+    "phase3_material_incompatibility": {
+      "question": "Does MIDDLE incompatibility align with material processing incompatibility?",
+      "result": "FAIL",
+      "gentle_resin_rate": 0.694,
+      "threshold": 0.95,
+      "cross_vs_self": 0.077,
+      "interpretation": "Weak directional signal, but insufficient for semantic anchoring"
+    },
+    "phase4_entry_prediction": {
+      "question": "Can we predict product type from entry structure?",
+      "result": "FAIL",
+      "accuracy": 0.289,
+      "baseline": 0.25,
+      "threshold": 0.60,
+      "coverage": 0.027,
+      "interpretation": "Discriminating MIDDLEs too rare for entry-level prediction"
+    }
+  },
+  "summary_statistics": {
+    "tests_passed": 2,
+    "tests_failed": 5,
+    "total_tests": 7
+  },
+  "key_findings": [
+    "A and B have 77.4% non-overlapping MIDDLE vocabularies",
+    "Top-10 discriminating MIDDLEs are 100% disjoint across product types",
+    "Cross-product incompatibility is 7.7% higher than self-incompatibility",
+    "Only 2.7% of A entries contain discriminating MIDDLEs",
+    "Entry-level prediction accuracy is essentially random (28.9% vs 25% baseline)"
+  ],
+  "constraints_validated": [
+    {
+      "constraint": "C171",
+      "name": "Zero Material Encoding",
+      "status": "CONFIRMED",
+      "extension": "Confirmed at entry level - MIDDLEs do not encode material identity"
+    }
+  ],
+  "hypotheses_falsified": [
+    {
+      "hypothesis": "MIDDLEs encode material compatibility",
+      "test": "Phase 3 cross-product incompatibility",
+      "result": "69.4% < 95% threshold"
+    },
+    {
+      "hypothesis": "A entries carry product signals",
+      "test": "Phase 4 entry-level prediction",
+      "result": "28.9% accuracy near 25% baseline"
+    },
+    {
+      "hypothesis": "Brunschwig provides semantic anchor",
+      "test": "Full chain validation",
+      "result": "Chain does not close"
+    }
+  ],
+  "updated_interpretation": "MIDDLEs encode operational state constraints (what configurations are allowed, what transitions are legal) rather than material compatibility. The Brunschwig alignment is valid at the procedural level but does not provide a semantic anchor to real-world substances."
+}

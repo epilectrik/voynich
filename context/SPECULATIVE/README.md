@@ -70,6 +70,12 @@ Content in this directory is:
 
 Summary in [INTERPRETATION_SUMMARY.md](INTERPRETATION_SUMMARY.md) Section I.O.
 
+### CAR Phase Observations (NEW)
+
+| File | Tier | Content |
+|------|------|---------|
+| [car_observations.md](car_observations.md) | 3 | Currier A human-factors observations (pending controlled validation) |
+
 ### Legacy Interpretive Documents
 
 | File | Tier | Content |

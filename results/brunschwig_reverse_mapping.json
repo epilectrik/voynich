@@ -1,0 +1,73 @@
+{
+  "phase": "phase6_reverse_mapping",
+  "total_materials": 509,
+  "tests": {
+    "regime_saturation": {
+      "distribution": {
+        "REGIME_3": 35,
+        "REGIME_1": 408,
+        "REGIME_2": 48,
+        "REGIME_4": 18
+      },
+      "chi_square_uniform": 829.4440078585462,
+      "p_value": 0.001,
+      "saturated": true
+    },
+    "category_product": {
+      "chi_square": 1267.804715670487,
+      "independent": false
+    },
+    "grammar_compliance": {
+      "overall_rate": 86.80203045685279,
+      "by_regime": {
+        "REGIME_3": {
+          "compliant": 6,
+          "violation": 1
+        },
+        "REGIME_1": {
+          "compliant": 142,
+          "violation": 18
+        },
+        "REGIME_2": {
+          "compliant": 11,
+          "violation": 3
+        },
+        "REGIME_4": {
+          "compliant": 12,
+          "violation": 4
+        }
+      }
+    },
+    "permutation_control": {
+      "observed_statistic": 0.0009197588241139012,
+      "p_value": 0.011
+    }
+  },
+  "anchors_found": [
+    {
+      "type": "REGIME_SATURATION",
+      "description": "All REGIMEs populated with non-uniform distribution",
+      "strength": "MODERATE",
+      "evidence": "Chi-square p = 0.0010"
+    },
+    {
+      "type": "CATEGORY_PRODUCT",
+      "description": "Material category predicts product type",
+      "strength": "STRONG",
+      "evidence": "Chi-square = 1267.80"
+    },
+    {
+      "type": "GRAMMAR_EMBEDDING",
+      "description": "High grammar compliance (>85%)",
+      "strength": "STRONG",
+      "evidence": "86.8% compliance rate"
+    },
+    {
+      "type": "NON_RANDOM",
+      "description": "REGIME assignment better than random",
+      "strength": "MODERATE",
+      "evidence": "Permutation p = 0.0110"
+    }
+  ],
+  "conclusion": "SEMANTIC_ANCHORS_FOUND"
+}

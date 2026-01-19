@@ -1,0 +1,358 @@
+{
+  "counts": {
+    "label_tokens": 172,
+    "text_tokens": 11029,
+    "label_types": 155,
+    "text_types": 3222
+  },
+  "test1_morphology": {
+    "label_types": 155,
+    "label_parsed": 111,
+    "label_parse_rate": 0.7161290322580646,
+    "label_top_prefixes": [
+      [
+        "ok",
+        23
+      ],
+      [
+        "ch",
+        18
+      ],
+      [
+        "ot",
+        18
+      ],
+      [
+        "da",
+        10
+      ],
+      [
+        "sa",
+        8
+      ],
+      [
+        "ol",
+        6
+      ],
+      [
+        "so",
+        6
+      ],
+      [
+        "or",
+        5
+      ],
+      [
+        "do",
+        5
+      ],
+      [
+        "sh",
+        3
+      ]
+    ],
+    "label_top_suffixes": [
+      [
+        "",
+        11
+      ],
+      [
+        "dy",
+        10
+      ],
+      [
+        "ol",
+        9
+      ],
+      [
+        "y",
+        9
+      ],
+      [
+        "s",
+        7
+      ],
+      [
+        "or",
+        7
+      ],
+      [
+        "ly",
+        7
+      ],
+      [
+        "am",
+        6
+      ],
+      [
+        "ar",
+        6
+      ],
+      [
+        "ry",
+        5
+      ]
+    ],
+    "text_types": 3222,
+    "text_parsed": 2352,
+    "text_parse_rate": 0.7299813780260708,
+    "text_top_prefixes": [
+      [
+        "ch",
+        479
+      ],
+      [
+        "qo",
+        327
+      ],
+      [
+        "sh",
+        232
+      ],
+      [
+        "ok",
+        135
+      ],
+      [
+        "ot",
+        125
+      ],
+      [
+        "da",
+        104
+      ],
+      [
+        "ol",
+        100
+      ],
+      [
+        "ct",
+        87
+      ],
+      [
+        "yk",
+        82
+      ],
+      [
+        "so",
+        60
+      ]
+    ],
+    "text_top_suffixes": [
+      [
+        "",
+        304
+      ],
+      [
+        "dy",
+        197
+      ],
+      [
+        "s",
+        143
+      ],
+      [
+        "ar",
+        112
+      ],
+      [
+        "or",
+        106
+      ],
+      [
+        "al",
+        98
+      ],
+      [
+        "chy",
+        89
+      ],
+      [
+        "y",
+        81
+      ],
+      [
+        "aiin",
+        80
+      ],
+      [
+        "ol",
+        69
+      ]
+    ]
+  },
+  "test2_middle_overlap": {
+    "label_middles": 56,
+    "text_middles": 572,
+    "shared": 33,
+    "label_only": 23,
+    "text_only": 539,
+    "label_only_list": [
+      "als",
+      "aram",
+      "chorcf",
+      "eeor",
+      "iiine",
+      "iisa",
+      "kocth",
+      "leear",
+      "lsas",
+      "odeeod",
+      "oees",
+      "okaro",
+      "olar",
+      "oldo",
+      "ols",
+      "oramo",
+      "osaro",
+      "rcheo",
+      "rdod",
+      "rdsh",
+      "rod",
+      "rola",
+      "shd"
+    ],
+    "shared_list": [
+      "_EMPTY_",
+      "a",
+      "ai",
+      "al",
+      "ar",
+      "che",
+      "d",
+      "e",
+      "eeo",
+      "eo",
+      "eod",
+      "eot",
+      "ey",
+      "f",
+      "i",
+      "iin",
+      "iino",
+      "l",
+      "ld",
+      "lo",
+      "o",
+      "ock",
+      "ockh",
+      "ofa",
+      "ok",
+      "ol",
+      "ola",
+      "olo",
+      "oro",
+      "r"
+    ]
+  },
+  "test3_jar_root": {
+    "jars": [
+      "okaradag",
+      "oparal",
+      "tsholdy",
+      "yteoldy"
+    ],
+    "roots": [
+      "okary",
+      "darar",
+      "oky",
+      "salo",
+      "aro",
+      "ain",
+      "okor",
+      "ralol",
+      "skeeal",
+      "okary",
+      "okolo",
+      "otalam",
+      "otoldy",
+      "oaro",
+      "aloly",
+      "aora",
+      "choky",
+      "oky",
+      "okeoly",
+      "yteold",
+      "cheotchy",
+      "okos",
+      "oekey",
+      "dar",
+      "chockhi",
+      "rcheyet",
+      "saiiny",
+      "sory",
+      "dam",
+      "tolsasy"
+    ],
+    "jar_count": 4,
+    "root_count": 30,
+    "avg_jar_length": 7.0,
+    "avg_root_length": 4.9,
+    "length_ratio": 1.4285714285714284,
+    "jar_prefixes": {
+      "ok": 1
+    },
+    "root_prefixes": {
+      "ok": 8,
+      "da": 3,
+      "sa": 2,
+      "ar": 1,
+      "ot": 2,
+      "al": 1,
+      "ch": 3,
+      "rch": 1,
+      "so": 1,
+      "to": 1
+    },
+    "jar_suffixes": {
+      "g": 1
+    },
+    "root_suffixes": {
+      "ry": 3,
+      "ar": 1,
+      "y": 4,
+      "": 5,
+      "or": 1,
+      "am": 1,
+      "dy": 1,
+      "ly": 2,
+      "ky": 1,
+      "chy": 1,
+      "s": 1,
+      "r": 1,
+      "m": 1
+    }
+  },
+  "test4_sections": {
+    "label_sections": {
+      "H": 20,
+      "P": 152
+    },
+    "text_sections": {
+      "T": 923,
+      "H": 7831,
+      "P": 2275
+    },
+    "total_labels": 172,
+    "total_text": 11029
+  },
+  "test5_cooccurrence": {
+    "label_folios": 9,
+    "text_folios": 114,
+    "overlap_folios": 9,
+    "same_folio_matches": 18,
+    "other_folio_matches": 46,
+    "label_only": 95,
+    "label_folio_list": [
+      "f100r",
+      "f102r1",
+      "f102v1",
+      "f102v2",
+      "f49v",
+      "f89r2",
+      "f89v2",
+      "f99r",
+      "f99v"
+    ]
+  }
+}

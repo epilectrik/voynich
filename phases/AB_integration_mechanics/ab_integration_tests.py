@@ -58,6 +58,10 @@ for line in lines[1:]:
     parts = line.strip().split('\t')
     if len(parts) >= len(header):
         row = {header[i]: parts[i].strip('"') for i in range(len(header))}
+        # MANDATORY: Filter to PRIMARY transcriber (H) only
+        transcriber = row.get('transcriber', '').strip().strip('"')
+        if transcriber != 'H':
+            continue
         all_tokens.append(row)
 
 # Separate by Currier language

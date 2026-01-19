@@ -1,0 +1,321 @@
+{
+  "test1": {
+    "f99r_label_count": 32,
+    "text_vocab_size": 6761,
+    "overlap_count": 16,
+    "overlap_tokens": [
+      "oekey",
+      "oky",
+      "ain",
+      "darar",
+      "choky",
+      "dar",
+      "salo",
+      "otalam",
+      "okor",
+      "dam",
+      "okolo",
+      "okeoly",
+      "sory",
+      "okary",
+      "otoldy",
+      "okos"
+    ],
+    "isolation_rate": 0.5,
+    "isolated_tokens": [
+      "tsholdy",
+      "oparal",
+      "cheotchy",
+      "aloly",
+      "saiiny",
+      "yteoldy",
+      "ralol",
+      "oaro",
+      "rcheyet",
+      "aora",
+      "chockhi",
+      "yteold",
+      "tolsasy",
+      "aro",
+      "okaradag",
+      "skeeal"
+    ],
+    "pass": false
+  },
+  "test2": {
+    "a_only": [
+      "oparal",
+      "tsholdy",
+      "yteoldy",
+      "skeeal",
+      "oaro",
+      "aloly",
+      "okeoly",
+      "yteold",
+      "cheotchy",
+      "saiiny",
+      "tolsasy"
+    ],
+    "b_only": [
+      "aro"
+    ],
+    "shared": [
+      "okary",
+      "darar",
+      "oky",
+      "salo",
+      "ain",
+      "okor",
+      "okary",
+      "okolo",
+      "otalam",
+      "otoldy",
+      "choky",
+      "oky",
+      "okos",
+      "oekey",
+      "dar",
+      "sory",
+      "dam"
+    ],
+    "neither": [
+      "okaradag",
+      "ralol",
+      "aora",
+      "chockhi",
+      "rcheyet"
+    ],
+    "a_only_count": 11,
+    "b_only_count": 1,
+    "shared_count": 17,
+    "neither_count": 5,
+    "a_biased_rate": 0.47058823529411764,
+    "pass": false
+  },
+  "test3": {
+    "hapax_count": 16,
+    "rare_count": 24,
+    "common_count": 7,
+    "rare_rate": 0.7058823529411765,
+    "freq_data": [
+      {
+        "token": "okaradag",
+        "frequency": 0,
+        "rank": 7249
+      },
+      {
+        "token": "oparal",
+        "frequency": 1,
+        "rank": 3956
+      },
+      {
+        "token": "tsholdy",
+        "frequency": 1,
+        "rank": 3967
+      },
+      {
+        "token": "yteoldy",
+        "frequency": 1,
+        "rank": 3977
+      },
+      {
+        "token": "okary",
+        "frequency": 9,
+        "rank": 502
+      },
+      {
+        "token": "darar",
+        "frequency": 3,
+        "rank": 1283
+      },
+      {
+        "token": "oky",
+        "frequency": 94,
+        "rank": 59
+      },
+      {
+        "token": "salo",
+        "frequency": 2,
+        "rank": 1857
+      },
+      {
+        "token": "aro",
+        "frequency": 1,
+        "rank": 6288
+      },
+      {
+        "token": "ain",
+        "frequency": 88,
+        "rank": 66
+      },
+      {
+        "token": "okor",
+        "frequency": 31,
+        "rank": 176
+      },
+      {
+        "token": "ralol",
+        "frequency": 0,
+        "rank": 7249
+      },
+      {
+        "token": "skeeal",
+        "frequency": 1,
+        "rank": 3950
+      },
+      {
+        "token": "okary",
+        "frequency": 9,
+        "rank": 502
+      },
+      {
+        "token": "okolo",
+        "frequency": 2,
+        "rank": 1858
+      },
+      {
+        "token": "otalam",
+        "frequency": 2,
+        "rank": 1859
+      },
+      {
+        "token": "otoldy",
+        "frequency": 11,
+        "rank": 432
+      },
+      {
+        "token": "oaro",
+        "frequency": 1,
+        "rank": 3957
+      },
+      {
+        "token": "aloly",
+        "frequency": 1,
+        "rank": 3958
+      },
+      {
+        "token": "aora",
+        "frequency": 0,
+        "rank": 7249
+      },
+      {
+        "token": "choky",
+        "frequency": 33,
+        "rank": 168
+      },
+      {
+        "token": "oky",
+        "frequency": 94,
+        "rank": 59
+      },
+      {
+        "token": "okeoly",
+        "frequency": 4,
+        "rank": 1007
+      },
+      {
+        "token": "yteold",
+        "frequency": 1,
+        "rank": 3960
+      },
+      {
+        "token": "cheotchy",
+        "frequency": 1,
+        "rank": 3961
+      },
+      {
+        "token": "okos",
+        "frequency": 4,
+        "rank": 949
+      },
+      {
+        "token": "oekey",
+        "frequency": 2,
+        "rank": 1860
+      },
+      {
+        "token": "dar",
+        "frequency": 283,
+        "rank": 12
+      },
+      {
+        "token": "chockhi",
+        "frequency": 0,
+        "rank": 7249
+      },
+      {
+        "token": "rcheyet",
+        "frequency": 0,
+        "rank": 7249
+      },
+      {
+        "token": "saiiny",
+        "frequency": 1,
+        "rank": 3969
+      },
+      {
+        "token": "sory",
+        "frequency": 3,
+        "rank": 1120
+      },
+      {
+        "token": "dam",
+        "frequency": 89,
+        "rank": 65
+      },
+      {
+        "token": "tolsasy",
+        "frequency": 1,
+        "rank": 3978
+      }
+    ],
+    "pass": true
+  },
+  "test4": {
+    "jar_count": 4,
+    "root_count": 30,
+    "jar_avg_length": 7.0,
+    "root_avg_length": 4.9,
+    "length_diff": 2.0999999999999996,
+    "jar_prefixes": {
+      "ok": 1,
+      "op": 1,
+      "ts": 1,
+      "yt": 1
+    },
+    "root_prefixes": {
+      "ok": 8,
+      "da": 3,
+      "sa": 2,
+      "ar": 1,
+      "ai": 1,
+      "ra": 1,
+      "sk": 1,
+      "ot": 2,
+      "oa": 1,
+      "al": 1,
+      "ao": 1,
+      "ch": 3,
+      "yt": 1,
+      "oe": 1,
+      "rc": 1,
+      "so": 1,
+      "to": 1
+    },
+    "pass": true
+  },
+  "test5": {
+    "unique_count": 30,
+    "reused_count": 2,
+    "unique_rate": 0.9375,
+    "reuse_details": {
+      "oaro": 1,
+      "otoldy": 2
+    },
+    "pass": true
+  },
+  "summary": {
+    "tests_passed": 3,
+    "verdict": "MIXED"
+  }
+}

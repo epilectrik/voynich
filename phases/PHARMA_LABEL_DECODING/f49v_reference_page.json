@@ -1,0 +1,31 @@
+{
+  "folio": "f49v",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "classification": "reference_page",
+  "is_plant_labels": false,
+  "exclusion_reason": "Not plant-related. Single-character labels with numbered margin - appears to be reference/index page.",
+  "currier": "A",
+  "structure": {
+    "column_1": {
+      "content": "numbers",
+      "values": ["1", "2", "3", "4", "5"],
+      "position": "far left margin"
+    },
+    "column_2": {
+      "content": "single characters",
+      "count": 26,
+      "values": ["f", "o", "r", "y", "e", "*", "k", "s", "p", "o", "*", "y", "e", "*", "*", "p", "o", "*", "y", "e", "*", "d", "y", "s", "k", "y"]
+    }
+  },
+  "number_alignment": {
+    "1": {"aligns_with": "o", "position": 2},
+    "2": {"aligns_with": "r", "position": 3},
+    "3": {"aligns_with": "y", "position": 4},
+    "4": {"aligns_with": "e", "position": 5},
+    "5": {"aligns_with": "*", "position": 6}
+  },
+  "text_tokens": 142,
+  "notes": "Purpose unclear but structured intentionally. Unique format in manuscript."
+}

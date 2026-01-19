@@ -20,6 +20,7 @@ FIT_FILES = [
     ('fits_azc.md', 'AZC'),
     ('fits_ht.md', 'HT'),
     ('fits_global.md', 'GLOBAL'),
+    ('fits_brunschwig.md', 'A'),  # Brunschwig backprop fits
 ]
 
 
@@ -50,6 +51,32 @@ def parse_fit_file(filepath, default_scope):
             'title': title,
             'tier': tier,
             'scope': default_scope,
+            'result': result,
+            'supports': supports,
+            'file': f"in: {filepath.stem}"
+        })
+
+    # Brunschwig format (multi-line):
+    # ## F-BRU-###: Title
+    # **Tier:** F# (description)
+    # **Scope:** X
+    # **Result:** WORD (notes)
+    # **Supports:** C###
+    bru_pattern = r'## (F-BRU-\d+): (.+?)\n+\*\*Tier:\*\* (F\d)[^\n]*\n\*\*Scope:\*\* ([A-Z]+)\n\*\*Result:\*\* (\w+)[^\n]*\n\*\*Supports:\*\* ([^\n]+)'
+
+    for match in re.finditer(bru_pattern, content):
+        fit_id = match.group(1).strip()
+        title = match.group(2).strip()
+        tier = match.group(3).strip()
+        scope = match.group(4).strip()
+        result = match.group(5).strip().upper()
+        supports = match.group(6).strip()
+
+        fits.append({
+            'id': fit_id,
+            'title': title,
+            'tier': tier,
+            'scope': scope,
             'result': result,
             'supports': supports,
             'file': f"in: {filepath.stem}"

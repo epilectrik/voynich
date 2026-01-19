@@ -1,0 +1,230 @@
+{
+  "phase": "JAR_ROLE_ANALYSIS",
+  "question": "Are jars stable role assemblers?",
+  "observed": {
+    "n_jars": 14,
+    "mean_diversity": 2.5,
+    "std_diversity": 1.118,
+    "mean_entropy": 1.008,
+    "complete_working_sets": 3
+  },
+  "baseline": {
+    "expected_diversity": 2.459,
+    "expected_entropy": 1.019,
+    "expected_complete": 2.714,
+    "n_shuffles": 1000
+  },
+  "p_values": {
+    "diversity": 0.489,
+    "entropy": 0.587,
+    "complete_sets": 0.579
+  },
+  "ratios": {
+    "diversity": 1.017,
+    "entropy": 0.989,
+    "complete_sets": 1.105
+  },
+  "composition_types": {
+    "count": 7,
+    "types": {
+      "--|MB|MD|--": 1,
+      "--|--|--|OT": 3,
+      "MA|MB|MD|OT": 3,
+      "--|MB|--|--": 1,
+      "--|MB|MD|OT": 4,
+      "--|MB|--|OT": 1,
+      "MA|MB|--|OT": 1
+    }
+  },
+  "role_vectors": {
+    "daramdal@f88v": {
+      "n_MA": 0,
+      "n_MB": 2,
+      "n_MD": 1,
+      "n_OTHER": 0,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": false,
+      "diversity": 2,
+      "entropy": 0.9182958340544896,
+      "total": 3
+    },
+    "dardsh@f102r1": {
+      "n_MA": 0,
+      "n_MB": 0,
+      "n_MD": 0,
+      "n_OTHER": 2,
+      "has_MA": false,
+      "has_MB": false,
+      "has_MD": false,
+      "has_OTHER": true,
+      "diversity": 1,
+      "entropy": -0.0,
+      "total": 2
+    },
+    "darolaly@f99v": {
+      "n_MA": 1,
+      "n_MB": 3,
+      "n_MD": 1,
+      "n_OTHER": 1,
+      "has_MA": true,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 4,
+      "entropy": 1.7924812503605778,
+      "total": 6
+    },
+    "dordod@f102r1": {
+      "n_MA": 0,
+      "n_MB": 1,
+      "n_MD": 0,
+      "n_OTHER": 0,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": false,
+      "has_OTHER": false,
+      "diversity": 1,
+      "entropy": -0.0,
+      "total": 1
+    },
+    "keoraiiin@f102v1": {
+      "n_MA": 0,
+      "n_MB": 2,
+      "n_MD": 1,
+      "n_OTHER": 2,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 3,
+      "entropy": 1.5219280948873621,
+      "total": 5
+    },
+    "okaradag@f99r": {
+      "n_MA": 0,
+      "n_MB": 7,
+      "n_MD": 1,
+      "n_OTHER": 5,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 3,
+      "entropy": 1.2957378005380122,
+      "total": 13
+    },
+    "okaramy@f99v": {
+      "n_MA": 0,
+      "n_MB": 4,
+      "n_MD": 3,
+      "n_OTHER": 1,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 3,
+      "entropy": 1.4056390622295665,
+      "total": 8
+    },
+    "okoldody@f99v": {
+      "n_MA": 0,
+      "n_MB": 1,
+      "n_MD": 1,
+      "n_OTHER": 4,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 3,
+      "entropy": 1.2516291673878228,
+      "total": 6
+    },
+    "okolky@f102v2": {
+      "n_MA": 0,
+      "n_MB": 2,
+      "n_MD": 0,
+      "n_OTHER": 3,
+      "has_MA": false,
+      "has_MB": true,
+      "has_MD": false,
+      "has_OTHER": true,
+      "diversity": 2,
+      "entropy": 0.9709505944546686,
+      "total": 5
+    },
+    "oparal@f99r": {
+      "n_MA": 2,
+      "n_MB": 2,
+      "n_MD": 0,
+      "n_OTHER": 4,
+      "has_MA": true,
+      "has_MB": true,
+      "has_MD": false,
+      "has_OTHER": true,
+      "diversity": 3,
+      "entropy": 1.5,
+      "total": 8
+    },
+    "oralas@f99v": {
+      "n_MA": 0,
+      "n_MB": 0,
+      "n_MD": 0,
+      "n_OTHER": 1,
+      "has_MA": false,
+      "has_MB": false,
+      "has_MD": false,
+      "has_OTHER": true,
+      "diversity": 1,
+      "entropy": -0.0,
+      "total": 1
+    },
+    "porshols@f102v2": {
+      "n_MA": 2,
+      "n_MB": 6,
+      "n_MD": 1,
+      "n_OTHER": 6,
+      "has_MA": true,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 4,
+      "entropy": 1.7055872616982601,
+      "total": 15
+    },
+    "tsholdy@f99r": {
+      "n_MA": 1,
+      "n_MB": 1,
+      "n_MD": 2,
+      "n_OTHER": 4,
+      "has_MA": true,
+      "has_MB": true,
+      "has_MD": true,
+      "has_OTHER": true,
+      "diversity": 4,
+      "entropy": 1.75,
+      "total": 8
+    },
+    "yteoldy@f99r": {
+      "n_MA": 0,
+      "n_MB": 0,
+      "n_MD": 0,
+      "n_OTHER": 1,
+      "has_MA": false,
+      "has_MB": false,
+      "has_MD": false,
+      "has_OTHER": true,
+      "diversity": 1,
+      "entropy": -0.0,
+      "total": 1
+    }
+  },
+  "interpretation": {
+    "diversity": "NEUTRAL: Role diversity indistinguishable from random",
+    "complete_sets": "NEUTRAL: Complete sets indistinguishable from random",
+    "clustering": "WEAK: Many distinct composition types",
+    "model_status": "NEUTRAL",
+    "note": "Role balance is neutral - does not add signal beyond triplet enrichment"
+  }
+}

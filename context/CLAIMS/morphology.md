@@ -190,6 +190,19 @@ Aggressive = rapid small. Conservative = big + wait.
 8.5-9.0% across all regimes (p=0.99). Infrastructure constant.
 **Source:** RRD
 
+#### C396.a - Operational Refinement (BCI, 2026-01-18)
+
+AUXILIARY Invariance reflects execution-critical infrastructure roles that:
+- are required for grammar connectivity across nearly all Currier B programs,
+- mediate access to kernel control operators (k, h, e),
+- exhibit near-universal presence with limited REGIME and zone sensitivity,
+- are grammatically redundant (collapsible per C411) but structurally non-removable,
+- must remain outside AZC vocabulary-based constraint scope.
+
+This refinement does not introduce a new mechanism or constraint. It clarifies the execution-level role of AUXILIARY classes previously identified as statistically invariant under C396.
+
+*See [../TIER3/b_execution_infrastructure_characterization.md](../TIER3/b_execution_infrastructure_characterization.md) for quantitative characterization of AUXILIARY execution-infrastructure behavior.*
+
 ---
 
 ## Hazard Avoidance (C397-C402)

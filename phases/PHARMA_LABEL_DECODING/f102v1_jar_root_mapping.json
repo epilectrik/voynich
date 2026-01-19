@@ -1,0 +1,40 @@
+{
+  "folio": "f102v1",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Rooty plants with ornamental jars",
+  "has_jar_labels": true,
+  "total_labels": 10,
+  "groups": [
+    {
+      "row": 1,
+      "position": "top",
+      "jar": "keoraiiin",
+      "jar_note": "Transcript has 'ker' - may be abbreviated",
+      "roots": [
+        "okeody",
+        {"token": "okeody", "note": "Appears twice"},
+        {"token": "daiisaly", "note": "Transcript: doiisaly"},
+        {"token": "ypary", "note": "Transcript: ypory"},
+        {"token": "opchyt", "note": "Transcript: opchytcy"}
+      ],
+      "root_count": 6,
+      "illustration": "Labeled ornamental jar with rooty plants"
+    },
+    {
+      "row": 2,
+      "position": "bottom",
+      "jar": null,
+      "jar_note": "Ornamental jar present but not labeled",
+      "roots": [
+        "ypcholdy",
+        "loralody",
+        "opchdard"
+      ],
+      "root_count": 3,
+      "illustration": "Non-labeled ornamental jar with 3 rooty plants"
+    }
+  ]
+}

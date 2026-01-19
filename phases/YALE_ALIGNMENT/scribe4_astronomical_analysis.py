@@ -38,10 +38,16 @@ def load_interlinear():
         word_idx = header.index('"word"')
         lang_idx = header.index('"language"')
         folio_idx = header.index('"folio"')
+        transcriber_idx = header.index('"transcriber"') if '"transcriber"' in header else 12
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > max(word_idx, lang_idx, folio_idx):
+            if len(parts) > max(word_idx, lang_idx, folio_idx, transcriber_idx):
+                # Filter to H (PRIMARY) transcriber only
+                transcriber = parts[transcriber_idx].strip('"').strip() if len(parts) > transcriber_idx else ''
+                if transcriber != 'H':
+                    continue
+
                 word = parts[word_idx].strip('"')
                 lang = parts[lang_idx].strip('"')
                 folio = parts[folio_idx].strip('"')

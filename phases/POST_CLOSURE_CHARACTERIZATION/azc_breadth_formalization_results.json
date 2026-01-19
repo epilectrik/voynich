@@ -1,0 +1,35 @@
+{
+  "empirical_basis": {
+    "morphology_effect_p_closure": 0.005324353381521939,
+    "morphology_effect_p_opener": 5.212018020446091e-16,
+    "hub_ratio_with_closure": 0.7748145935323545,
+    "hub_ratio_without_closure": 0.7419325986824951
+  },
+  "entry_categorization": {
+    "hub_dominant": 1465,
+    "universal_dominant": 52,
+    "tail_dominant": 30,
+    "mixed": 32,
+    "total": 1579
+  },
+  "section_stability": {
+    "herbal_a_hub_ratio": 0.7928249721854372,
+    "herbal_c_hub_ratio": 0.7067517612677409,
+    "p_value": 2.4698183502684585e-10,
+    "verdict": "VARIABLE"
+  },
+  "interface_rule": {
+    "broader_compatibility": [
+      "Hub-dominant MIDDLE composition",
+      "Prefix-initiated structure",
+      "Closure markers present"
+    ],
+    "narrower_compatibility": [
+      "Tail-dominant MIDDLE composition",
+      "Non-prefix openers",
+      "Closure markers absent"
+    ]
+  },
+  "order_sensitivity": "INVARIANT",
+  "tier": 3
+}

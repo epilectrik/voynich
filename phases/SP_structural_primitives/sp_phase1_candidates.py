@@ -46,7 +46,11 @@ with open(filepath, 'r', encoding='utf-8') as f:
     header = f.readline()
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) > 11:
+        if len(parts) > 12:
+            # Filter to H (PRIMARY) transcriber track only
+            transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+            if transcriber != 'H':
+                continue
             word = parts[0].strip('"').strip().lower()
             section = parts[3].strip('"').strip()
             lang = parts[6].strip('"').strip()

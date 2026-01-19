@@ -1,0 +1,57 @@
+{
+  "track": 4,
+  "name": "A/C Discrimination Analysis",
+  "tests": {
+    "CAR-4.1": {
+      "test_id": "CAR-4.1",
+      "test_name": "Incompatibility Density vs B Escape Rate",
+      "ac_stats": {
+        "n_middles": 260,
+        "total_pairs": 33670,
+        "cooccur_pairs": 7228,
+        "cooccur_rate": 0.21467181467181468,
+        "incompatibility_density": 0.7853281853281853
+      },
+      "z_stats": {
+        "n_middles": 233,
+        "total_pairs": 27028,
+        "cooccur_pairs": 6469,
+        "cooccur_rate": 0.23934438360219032,
+        "incompatibility_density": 0.7606556163978097
+      },
+      "density_ratio": 1.032435925533839,
+      "density_diff": 0.024672568930375616,
+      "note": "Escape rate data not available for correlation - reporting density comparison",
+      "verdict": "NULL"
+    },
+    "CAR-4.2": {
+      "test_id": "CAR-4.2",
+      "test_name": "A/C Specificity Mechanism",
+      "ac_types": 260,
+      "ac_tokens": 1024,
+      "z_types": 233,
+      "z_tokens": 837,
+      "shared_middles": 85,
+      "ac_only_middles": 175,
+      "z_only_middles": 148,
+      "ac_gini": 0.6978365384615384,
+      "z_gini": 0.6685638982468555,
+      "exclusivity_score": 0.7916666666666666,
+      "verdict": "NULL"
+    },
+    "CAR-4.3": {
+      "test_id": "CAR-4.3",
+      "test_name": "Constraint Propagation Path",
+      "ac_middle_types": 260,
+      "b_middle_types": 808,
+      "shared_middles": 146,
+      "ac_only": 114,
+      "b_only": 662,
+      "propagation_rate": 0.5615384615384615,
+      "ac_enriched_count": 14,
+      "b_enriched_count": 14,
+      "verdict": "SIGNIFICANT"
+    }
+  },
+  "track_verdict": "PARTIAL"
+}

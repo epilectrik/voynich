@@ -116,6 +116,11 @@ def build_line_middle_sets(use_2line_window: bool = False) -> Tuple[Dict, Dict, 
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = row.get('"transcriber"', row.get('transcriber', '')).strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             # Handle quoted column names
             word = row.get('"word"', row.get('word', '')).strip().strip('"')
             folio = row.get('"folio"', row.get('folio', '')).strip().strip('"')

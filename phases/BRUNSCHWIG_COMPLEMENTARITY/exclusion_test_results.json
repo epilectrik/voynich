@@ -1,0 +1,71 @@
+{
+  "phase": "BRUNSCHWIG_COMPLEMENTARITY",
+  "test": "NEGATIVE_SPACE_EXCLUSION",
+  "date": "2026-01-17",
+  "status": "COMPLETE",
+
+  "question": "Does Brunschwig warn verbally where Voynich forbids grammatically?",
+
+  "voynich_forbidden_structure": {
+    "source": "C109",
+    "total_forbidden_transitions": 17,
+    "distribution": {
+      "PHASE_ORDERING": {"count": 7, "percent": 41, "description": "Material in wrong phase/location"},
+      "COMPOSITION_JUMP": {"count": 4, "percent": 24, "description": "Impure fractions passing"},
+      "CONTAINMENT_TIMING": {"count": 4, "percent": 24, "description": "Overflow/pressure events"},
+      "RATE_MISMATCH": {"count": 1, "percent": 6, "description": "Flow balance destroyed"},
+      "ENERGY_OVERSHOOT": {"count": 1, "percent": 6, "description": "Thermal damage/scorching"}
+    },
+    "dominant_axis": "PHASE_ORDERING (WHEN to act)"
+  },
+
+  "brunschwig_warning_structure": {
+    "source": "brunschwig_1500_text.txt (47736 lines)",
+    "term_counts": {
+      "heat_energy": {
+        "hitzig": 36,
+        "grad": 14,
+        "balneum": 13,
+        "lind": 9,
+        "total": 63
+      },
+      "toxic_poison": {
+        "gifft": 48,
+        "alrun": 8,
+        "total": 56
+      },
+      "usage_restrictions": {
+        "inwendig": 14
+      },
+      "prohibition_language": {
+        "gefar": 3,
+        "verboten": 0
+      }
+    },
+    "dominant_axis": "ENERGY/MATERIALS (WHAT to use)"
+  },
+
+  "finding": {
+    "result": "ORTHOGONAL_ALIGNMENT",
+    "interpretation": "Warning spaces are complementary, not overlapping",
+    "brunschwig_focus": "WHAT (materials, heat levels, internal vs external use)",
+    "voynich_focus": "WHEN (sequence, transitions, phase ordering)",
+    "relationship": "Different layers of same safety envelope"
+  },
+
+  "alignment_with_model": {
+    "prediction": "Voynich internalizes what Brunschwig externalizes",
+    "observed": "Brunschwig provides external instruction on material handling; Voynich grammatically prevents sequence violations",
+    "status": "CONSISTENT"
+  },
+
+  "strength": "WEAK_POSITIVE",
+  "notes": [
+    "Not strong confirmation - no direct overlap in warning categories",
+    "But consistent with orthogonal division of labor",
+    "Brunschwig: pedagogical (tells you what to do)",
+    "Voynich: structural (prevents wrong sequence)"
+  ],
+
+  "constraints_respected": ["C109", "C490", "C171", "C138"]
+}

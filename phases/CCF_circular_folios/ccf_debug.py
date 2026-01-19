@@ -9,6 +9,10 @@ with open('C:/git/voynich/data/transcriptions/interlinear_full_words.txt', 'r', 
     for line in f:
         parts = line.strip().split('\t')
         if len(parts) >= 3:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+            if transcriber != 'H':
+                continue
             parts = [p.strip('"') for p in parts]
             folio = parts[2]
             if folio.startswith('f67') or folio.startswith('f68') or folio.startswith('f69') or \

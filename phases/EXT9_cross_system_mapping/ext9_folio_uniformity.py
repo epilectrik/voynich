@@ -18,6 +18,10 @@ with open(filepath, 'r', encoding='utf-8') as f:
     for line in f:
         parts = line.strip().split('\t')
         if len(parts) > 6:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+            if transcriber != 'H':
+                continue
             lang = parts[6].strip('"').strip()
             if lang == 'A':
                 word = parts[0].strip('"').strip().lower()

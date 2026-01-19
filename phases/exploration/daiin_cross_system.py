@@ -78,6 +78,9 @@ def load_all_tokens() -> List[TokenRecord]:
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) >= 15:
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').strip()
                 folio = parts[2].strip('"').strip()
                 section = parts[3].strip('"').strip()

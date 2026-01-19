@@ -24,6 +24,8 @@ print("=" * 80)
 
 # Read data
 df = pd.read_csv(DATA_PATH, sep='\t')
+# Filter to H transcriber only
+df = df[df['transcriber'] == 'H']
 print(f"\nTotal rows loaded: {len(df)}")
 print(f"Columns: {list(df.columns)}")
 

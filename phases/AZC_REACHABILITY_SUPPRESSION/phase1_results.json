@@ -1,0 +1,210 @@
+{
+  "phase": "AZC_REACHABILITY_SUPPRESSION",
+  "date": "2026-01-17",
+  "status": "PHASE_1_COMPLETE",
+  "token_level_forbidden": 17,
+  "class_level_forbidden_pairs": 13,
+  "class_transitions": {
+    "31_9": {
+      "from_class": 31,
+      "to_class": 9,
+      "token_transitions": [
+        {
+          "from_token": "shey",
+          "to_token": "aiin",
+          "hazard_class": "PHASE_ORDERING",
+          "severity": 0.9
+        }
+      ]
+    },
+    "31_7": {
+      "from_class": 31,
+      "to_class": 7,
+      "token_transitions": [
+        {
+          "from_token": "shey",
+          "to_token": "al",
+          "hazard_class": "PHASE_ORDERING",
+          "severity": 0.8
+        }
+      ]
+    },
+    "8_23": {
+      "from_class": 8,
+      "to_class": 23,
+      "token_transitions": [
+        {
+          "from_token": "chol",
+          "to_token": "r",
+          "hazard_class": "PHASE_ORDERING",
+          "severity": 0.8
+        }
+      ]
+    },
+    "31_8": {
+      "from_class": 31,
+      "to_class": 8,
+      "token_transitions": [
+        {
+          "from_token": "chey",
+          "to_token": "chedy",
+          "hazard_class": "PHASE_ORDERING",
+          "severity": 0.6
+        }
+      ]
+    },
+    "23_8": {
+      "from_class": 23,
+      "to_class": 8,
+      "token_transitions": [
+        {
+          "from_token": "l",
+          "to_token": "chol",
+          "hazard_class": "PHASE_ORDERING",
+          "severity": 0.7
+        }
+      ]
+    },
+    "23_9": {
+      "from_class": 23,
+      "to_class": 9,
+      "token_transitions": [
+        {
+          "from_token": "dy",
+          "to_token": "aiin",
+          "hazard_class": "COMPOSITION_JUMP",
+          "severity": 0.8
+        }
+      ]
+    },
+    "23_31": {
+      "from_class": 23,
+      "to_class": 31,
+      "token_transitions": [
+        {
+          "from_token": "dy",
+          "to_token": "chey",
+          "hazard_class": "COMPOSITION_JUMP",
+          "severity": 0.7
+        }
+      ]
+    },
+    "9_30": {
+      "from_class": 9,
+      "to_class": 30,
+      "token_transitions": [
+        {
+          "from_token": "or",
+          "to_token": "dal",
+          "hazard_class": "COMPOSITION_JUMP",
+          "severity": 0.8
+        }
+      ]
+    },
+    "7_8": {
+      "from_class": 7,
+      "to_class": 8,
+      "token_transitions": [
+        {
+          "from_token": "ar",
+          "to_token": "chol",
+          "hazard_class": "COMPOSITION_JUMP",
+          "severity": 0.7
+        }
+      ]
+    },
+    "41_31": {
+      "from_class": 41,
+      "to_class": 31,
+      "token_transitions": [
+        {
+          "from_token": "qo",
+          "to_token": "shey",
+          "hazard_class": "CONTAINMENT_TIMING",
+          "severity": 0.9
+        },
+        {
+          "from_token": "qo",
+          "to_token": "shy",
+          "hazard_class": "CONTAINMENT_TIMING",
+          "severity": 0.8
+        }
+      ]
+    },
+    "11_31": {
+      "from_class": 11,
+      "to_class": 31,
+      "token_transitions": [
+        {
+          "from_token": "ol",
+          "to_token": "shor",
+          "hazard_class": "CONTAINMENT_TIMING",
+          "severity": 0.7
+        }
+      ]
+    },
+    "30_33": {
+      "from_class": 30,
+      "to_class": 33,
+      "token_transitions": [
+        {
+          "from_token": "dar",
+          "to_token": "qokaiin",
+          "hazard_class": "RATE_MISMATCH",
+          "severity": 0.6
+        }
+      ]
+    },
+    "33_33": {
+      "from_class": 33,
+      "to_class": 33,
+      "token_transitions": [
+        {
+          "from_token": "qokaiin",
+          "to_token": "qokedy",
+          "hazard_class": "ENERGY_OVERSHOOT",
+          "severity": 0.9
+        }
+      ]
+    }
+  },
+  "unmapped_transitions": [
+    [
+      "shey",
+      "c",
+      31,
+      null
+    ],
+    [
+      "chedy",
+      "ee",
+      8,
+      null
+    ],
+    [
+      "ok",
+      "shol",
+      null,
+      31
+    ]
+  ],
+  "graph_stats": {
+    "nodes": 49,
+    "edges": 2330,
+    "max_edges": 2352,
+    "edge_density": 0.9906462585034014,
+    "forbidden_pairs": 26
+  },
+  "involved_classes": [
+    33,
+    7,
+    8,
+    9,
+    41,
+    11,
+    23,
+    30,
+    31
+  ],
+  "reduced_reachability_classes": []
+}

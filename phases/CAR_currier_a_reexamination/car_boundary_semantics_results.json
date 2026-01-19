@@ -1,0 +1,135 @@
+{
+  "phase": "CAR-BS",
+  "name": "Boundary Marker Semantic Analysis",
+  "tests": {
+    "test_1": {
+      "test": "shared_terminator_vocabulary",
+      "lines_by_terminator": {
+        "dy": 50,
+        "sal": 8,
+        "dan": 11,
+        "d": 14,
+        "dam": 25
+      },
+      "mean_within_overlap": 0.017616085677608237,
+      "mean_cross_overlap": 0.01985215611279312,
+      "ratio": 0.8873638499274183,
+      "p_value": 0.010535285067189329,
+      "verdict": "NO_SEMANTIC_LINK"
+    },
+    "test_2": {
+      "test": "shared_starter_vocabulary",
+      "lines_by_starter": {
+        "sor": 8,
+        "qotol": 8,
+        "dchor": 11,
+        "tol": 10
+      },
+      "mean_within_overlap": 0.016339900179185893,
+      "mean_cross_overlap": 0.025372467039133706,
+      "ratio": 0.6440012377977963,
+      "verdict": "NO_SEMANTIC_LINK"
+    },
+    "test_3": {
+      "test": "boundary_prefix_association",
+      "terminator_by_prefix": {
+        "ch": {
+          "dy": 24,
+          "sal": 5,
+          "dan": 5,
+          "dam": 8,
+          "d": 3
+        },
+        "sh": {
+          "dy": 4,
+          "d": 3,
+          "dan": 1,
+          "dam": 1
+        },
+        "ot": {
+          "dy": 6,
+          "d": 1,
+          "dam": 1
+        },
+        "ok": {
+          "sal": 2,
+          "d": 4,
+          "dam": 2,
+          "dy": 2
+        },
+        "qo": {
+          "dy": 10,
+          "dam": 3,
+          "d": 2
+        },
+        "ol": {
+          "dy": 2,
+          "dam": 1
+        },
+        "da": {
+          "dy": 1,
+          "dam": 9,
+          "dan": 4,
+          "sal": 1,
+          "d": 1
+        },
+        "ct": {
+          "dy": 1,
+          "dan": 1
+        }
+      },
+      "starter_by_prefix": {
+        "ok": {
+          "sor": 1,
+          "qotol": 1
+        },
+        "ch": {
+          "sor": 5,
+          "qotol": 3,
+          "dchor": 7,
+          "tol": 3
+        },
+        "ct": {
+          "sor": 1,
+          "dchor": 1,
+          "tol": 2
+        },
+        "da": {
+          "qotol": 1,
+          "dchor": 1,
+          "tol": 2
+        },
+        "qo": {
+          "dchor": 2,
+          "qotol": 2,
+          "tol": 1
+        },
+        "ot": {
+          "tol": 1,
+          "qotol": 1
+        },
+        "sh": {
+          "tol": 1,
+          "sor": 1
+        },
+        "ol": {}
+      },
+      "chi2": 41.78298400033771,
+      "p_value": 0.0029513633272306495,
+      "verdict": "PREFIX_ASSOCIATED"
+    },
+    "test_4": {
+      "test": "boundary_marker_runs",
+      "mean_run_length": 1.0188679245283019,
+      "runs_gt_1_pct": 0.018867924528301886,
+      "same_term_adjacent": 2,
+      "diff_term_adjacent": 8,
+      "same_rate": 0.2,
+      "expected_same_rate": 0.2,
+      "clustering_ratio": 1.0,
+      "verdict": "NOT_CLUSTERED"
+    },
+    "test_5": {
+      "test": "terminator_starter_chains",
+      "transitions": {
+        

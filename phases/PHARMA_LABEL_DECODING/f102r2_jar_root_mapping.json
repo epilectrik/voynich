@@ -1,0 +1,44 @@
+{
+  "folio": "f102r2",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Rooty plants with leaves, one has flower",
+  "has_jar_labels": true,
+  "total_labels": 6,
+  "transcription_note": "Labels coded as X placement. Many partially illegible (*)",
+  "groups": [
+    {
+      "row": 1,
+      "position": "top",
+      "jar": "ddardsh",
+      "jar_note": "May be continued from f102r1",
+      "roots": [],
+      "root_count": 0,
+      "illustration": "Few unlabeled plants with prominent roots, leaves. Second plant has flower."
+    },
+    {
+      "row": 2,
+      "position": "middle",
+      "jar": "okrolda",
+      "jar_note": "Hard to read; transcript may have as '*o**sal'",
+      "roots": [],
+      "root_count": 0,
+      "illustration": "4 rooty plants, no labels"
+    },
+    {
+      "row": 3,
+      "position": "bottom",
+      "jar": ["de*d*loy", "ra**l*r*"],
+      "jar_note": "2-3 tokens, partially illegible in transcript",
+      "roots": [
+        "koldarod",
+        "odalydary"
+      ],
+      "root_count": 2,
+      "illustration": "Rooty plants with labels"
+    }
+  ],
+  "transcript_x_tokens": ["de*d*loy", "*o**sal", "ra**l*r*", "koldarod", "odalydary"]
+}

@@ -26,6 +26,11 @@ def load_corpus() -> List[Dict[str, str]]:
         seen = set()
 
         for row in reader:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             # Extract and clean fields
             word = row.get('word', '').strip().strip('"')
             folio = row.get('folio', '').strip().strip('"')

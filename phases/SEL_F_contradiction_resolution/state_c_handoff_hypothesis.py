@@ -49,6 +49,10 @@ all_tokens = []
 for line in lines[1:]:
     parts = line.strip().split('\t')
     if len(parts) >= len(header):
+        # Filter to H (PRIMARY) transcriber only
+        transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+        if transcriber != 'H':
+            continue
         row = {header[i]: parts[i].strip('"') for i in range(len(header))}
         all_tokens.append(row)
 

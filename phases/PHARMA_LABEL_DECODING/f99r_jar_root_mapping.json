@@ -1,0 +1,76 @@
+{
+  "folio": "f99r",
+  "date": "2026-01-16",
+  "method": "Visual inspection with EVA transcription alignment",
+  "total_jars": 4,
+  "total_roots": 30,
+  "total_labels": 34,
+  "groups": [
+    {
+      "row": 1,
+      "position": "top",
+      "jar": "okaradag",
+      "roots": [
+        "okary",
+        "darar",
+        "oky",
+        "salo",
+        {"token": "aro", "note": "split label part 1"},
+        {"token": "ain", "note": "split label part 2, same item as aro"},
+        "okor",
+        "ralol",
+        "skeeal",
+        "okary",
+        "okolo",
+        "otalam",
+        "otoldy"
+      ],
+      "root_count": 13,
+      "notes": "2 visual rows of roots squeezed in for space"
+    },
+    {
+      "row": 2,
+      "position": "middle-upper",
+      "jar": "oparal",
+      "roots": [
+        "oaro",
+        "aloly",
+        "aora",
+        "choky",
+        "oky",
+        "okeoly",
+        "yteold",
+        "cheotchy"
+      ],
+      "root_count": 8,
+      "notes": null
+    },
+    {
+      "row": 3,
+      "position": "middle-lower",
+      "jar": "tsholdy",
+      "roots": [
+        "okos",
+        "oekey",
+        "dar",
+        "chockhi",
+        "rcheyet",
+        "saiiny",
+        "sory",
+        "dam"
+      ],
+      "root_count": 8,
+      "notes": null
+    },
+    {
+      "row": 4,
+      "position": "bottom",
+      "jar": "yteoldy",
+      "roots": [
+        "tolsasy"
+      ],
+      "root_count": 1,
+      "notes": "Single large root illustration, much simpler than top rows"
+    }
+  ]
+}

@@ -42,10 +42,16 @@ def load_corpus():
         word_idx = 0  # "word"
         folio_idx = header.index('"folio"') if '"folio"' in header else 2
         language_idx = header.index('"language"') if '"language"' in header else 6
+        transcriber_idx = header.index('"transcriber"') if '"transcriber"' in header else 12
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > language_idx:
+            if len(parts) > max(language_idx, transcriber_idx):
+                # Filter to H (PRIMARY) transcriber only
+                transcriber = parts[transcriber_idx].strip('"').strip() if len(parts) > transcriber_idx else ''
+                if transcriber != 'H':
+                    continue
+
                 word = parts[word_idx].strip('"')
                 folio = parts[folio_idx].strip('"')
                 language = parts[language_idx].strip('"')

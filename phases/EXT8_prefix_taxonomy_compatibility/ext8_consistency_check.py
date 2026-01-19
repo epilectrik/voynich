@@ -24,7 +24,12 @@ def load_ab_tokens():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 6:
+            if len(parts) > 12:
+                # CRITICAL: Filter to H-only transcriber track
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
+
                 lang = parts[6].strip('"').strip()
                 word = parts[0].strip('"').strip().lower()
 

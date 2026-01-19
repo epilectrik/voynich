@@ -4,310 +4,322 @@
   "expected": "~83 if expert claim is correct",
   "a_analysis": {
     "n_lines": 1575,
-    "n_profiles": 119,
+    "n_profiles": 168,
     "profile_sizes": {
       "min": 1,
-      "max": 951,
-      "mean": 13.235294117647058
+      "max": 1033,
+      "mean": 9.375
     },
     "azc_coverage_dist": {
-      "29": 4,
       "28": 6,
+      "27": 11,
+      "1": 7,
       "6": 3,
-      "9": 2,
-      "27": 12,
-      "30": 1,
+      "26": 22,
+      "29": 1,
       "0": 1,
-      "23": 6,
-      "10": 1,
-      "25": 9,
-      "26": 12,
-      "15": 5,
-      "13": 3,
-      "1": 1,
+      "16": 7,
+      "9": 7,
+      "20": 9,
+      "23": 4,
+      "25": 16,
+      "12": 5,
+      "24": 11,
+      "10": 5,
+      "17": 5,
       "3": 2,
-      "20": 6,
-      "22": 6,
-      "11": 1,
-      "17": 4,
-      "8": 2,
-      "7": 4,
+      "15": 3,
+      "5": 5,
+      "7": 1,
+      "22": 3,
+      "18": 8,
+      "2": 3,
+      "13": 9,
       "4": 2,
-      "24": 5,
-      "14": 4,
-      "2": 5,
-      "21": 3,
-      "18": 4,
-      "12": 1,
-      "16": 2,
-      "19": 2
+      "8": 1,
+      "19": 4,
+      "21": 4,
+      "11": 3
     }
   },
   "b_analysis": {
-    "n_folios": 83,
-    "n_profiles": 4
+    "n_folios": 82,
+    "n_profiles": 2
   },
   "verdict": "A profiles >> 83: Expert claim CHALLENGED",
   "profiles_detail": [
     {
       "profile_id": 0,
       "n_azc_folios": 28,
-      "n_a_lines": 951,
+      "n_a_lines": 1033,
       "sample_folios": [
-        "f100v",
-        "f100r"
+        "f100r",
+        "f100v"
       ]
     },
     {
       "profile_id": 1,
       "n_azc_folios": 29,
-      "n_a_lines": 203,
+      "n_a_lines": 91,
       "sample_folios": [
-        "f100v",
-        "f100r",
-        "f101r1"
+        "f10r",
+        "f101v2",
+        "f11v",
+        "f102v2",
+        "f23v",
+        "f13v",
+        "f18r",
+        "f23r",
+        "f17r"
       ]
     },
     {
       "profile_id": 2,
-      "n_azc_folios": 29,
-      "n_a_lines": 97,
+      "n_azc_folios": 27,
+      "n_a_lines": 74,
       "sample_folios": [
-        "f1r",
-        "f23r",
-        "f11v",
-        "f102v2",
-        "f15r",
-        "f13v",
         "f10r",
-        "f17r",
-        "f18r"
+        "f16r",
+        "f14v",
+        "f11v",
+        "f17v",
+        "f14r",
+        "f100r"
       ]
     },
     {
       "profile_id": 3,
       "n_azc_folios": 27,
-      "n_a_lines": 49,
+      "n_a_lines": 26,
       "sample_folios": [
-        "f10r",
-        "f21v",
-        "f20r",
-        "f17r",
-        "f14r",
-        "f18r",
+        "f36r",
+        "f16r",
+        "f24r",
+        "f102v2",
         "f22v",
-        "f17v"
+        "f18r",
+        "f15r",
+        "f30r"
       ]
     },
     {
       "profile_id": 4,
       "n_azc_folios": 27,
-      "n_a_lines": 23,
+      "n_a_lines": 25,
       "sample_folios": [
-        "f1r",
-        "f35v",
-        "f36v",
-        "f32r",
-        "f18v",
-        "f22v",
         "f13r",
-        "f19v",
-        "f28r"
-      ]
-    },
-    {
-      "profile_id": 5,
-      "n_azc_folios": 30,
-      "n_a_lines": 22,
-      "sample_folios": [
-        "f58r",
-        "f102v1",
-        "f102v2",
-        "f54r",
-        "f101v2",
-        "f58v",
-        "f38v"
-      ]
-    },
-    {
-      "profile_id": 6,
-      "n_azc_folios": 27,
-      "n_a_lines": 21,
-      "sample_folios": [
-        "f21r",
-        "f1v",
-        "f100v",
-        "f18r",
-        "f25r",
-        "f44v",
-        "f30r",
-        "f102r1",
-        "f42r",
+        "f35v",
+        "f28r",
+        "f1r",
+        "f18v",
+        "f17v",
+        "f27v",
+        "f2r",
         "f19v"
       ]
     },
     {
-      "profile_id": 7,
+      "profile_id": 5,
+      "n_azc_folios": 0,
+      "n_a_lines": 19,
+      "sample_folios": [
+        "f102r1",
+        "f16r",
+        "f24r",
+        "f14v",
+        "f1r",
+        "f22v",
+        "f19r",
+        "f16v"
+      ]
+    },
+    {
+      "profile_id": 6,
       "n_azc_folios": 26,
       "n_a_lines": 16,
       "sample_folios": [
-        "f23r",
-        "f13v",
-        "f32r",
-        "f18r",
+        "f25r",
+        "f1v",
+        "f16r",
+        "f44v",
+        "f21r",
+        "f24v",
+        "f42r",
+        "f38r",
         "f19v",
-        "f35r",
-        "f28v",
-        "f30v"
+        "f38v"
+      ]
+    },
+    {
+      "profile_id": 7,
+      "n_azc_folios": 22,
+      "n_a_lines": 13,
+      "sample_folios": [
+        "f4r",
+        "f36r",
+        "f35v",
+        "f32r",
+        "f37v",
+        "f21r",
+        "f36v",
+        "f22v",
+        "f47v"
       ]
     },
     {
       "profile_id": 8,
-      "n_azc_folios": 0,
-      "n_a_lines": 13,
+      "n_azc_folios": 27,
+      "n_a_lines": 12,
       "sample_folios": [
-        "f37v",
-        "f88v",
-        "f89r1",
-        "f14v",
-        "f102r1",
-        "f16r",
-        "f16v"
+        "f25r",
+        "f45r",
+        "f35r",
+        "f51v",
+        "f58v",
+        "f42r",
+        "f38r",
+        "f3r"
       ]
     },
     {
       "profile_id": 9,
       "n_azc_folios": 27,
-      "n_a_lines": 8,
+      "n_a_lines": 11,
       "sample_folios": [
-        "f93r",
-        "f96v",
-        "f93v",
-        "f25v",
-        "f32r",
-        "f14r",
-        "f49v",
-        "f102r1"
+        "f53v",
+        "f35v",
+        "f102r1",
+        "f51r",
+        "f36v",
+        "f13v",
+        "f18v",
+        "f53r"
       ]
     },
     {
       "profile_id": 10,
-      "n_azc_folios": 24,
-      "n_a_lines": 8,
+      "n_azc_folios": 27,
+      "n_a_lines": 10,
       "sample_folios": [
         "f93r",
-        "f96v",
-        "f47v",
-        "f32r",
-        "f47r",
+        "f56v",
+        "f54r",
+        "f7v",
+        "f16r",
+        "f37v",
         "f51v",
-        "f37v"
+        "f15r",
+        "f49r",
+        "f87v"
       ]
     },
     {
       "profile_id": 11,
-      "n_azc_folios": 25,
-      "n_a_lines": 6,
+      "n_azc_folios": 23,
+      "n_a_lines": 8,
       "sample_folios": [
-        "f56r",
-        "f6r",
-        "f22v",
-        "f24v",
-        "f16v",
-        "f42r"
+        "f4r",
+        "f36r",
+        "f10r",
+        "f37v",
+        "f36v",
+        "f19v"
       ]
     },
     {
       "profile_id": 12,
-      "n_azc_folios": 27,
-      "n_a_lines": 6,
+      "n_azc_folios": 26,
+      "n_a_lines": 7,
       "sample_folios": [
-        "f51r",
-        "f19r",
-        "f17r",
-        "f4r",
         "f25r",
-        "f37v"
+        "f4r",
+        "f37v",
+        "f6v",
+        "f22v",
+        "f56r"
       ]
     },
     {
       "profile_id": 13,
-      "n_azc_folios": 28,
+      "n_azc_folios": 26,
       "n_a_lines": 6,
       "sample_folios": [
-        "f96v",
-        "f90v2",
-        "f96r",
-        "f7v",
-        "f49r",
-        "f58v"
+        "f56v",
+        "f51r",
+        "f9v",
+        "f16r",
+        "f6v",
+        "f14r"
       ]
     },
     {
       "profile_id": 14,
-      "n_azc_folios": 27,
-      "n_a_lines": 5,
+      "n_azc_folios": 26,
+      "n_a_lines": 6,
       "sample_folios": [
-        "f54v",
-        "f15r",
-        "f9v",
-        "f36v",
-        "f37v"
+        "f93r",
+        "f16r",
+        "f96r",
+        "f6r",
+        "f20r",
+        "f16v"
       ]
     },
     {
       "profile_id": 15,
-      "n_azc_folios": 25,
-      "n_a_lines": 5,
+      "n_azc_folios": 24,
+      "n_a_lines": 6,
       "sample_folios": [
         "f96v",
-        "f87v",
-        "f42v",
+        "f93r",
         "f54r",
-        "f37v"
+        "f42v",
+        "f37v",
+        "f87v"
       ]
     },
     {
       "profile_id": 16,
-      "n_azc_folios": 27,
+      "n_azc_folios": 26,
       "n_a_lines": 4,
       "sample_folios": [
-        "f54r",
         "f102r1",
-        "f53v"
+        "f96v",
+        "f49r",
+        "f87v"
       ]
     },
     {
       "profile_id": 17,
-      "n_azc_folios": 28,
+      "n_azc_folios": 26,
       "n_a_lines": 4,
       "sample_folios": [
-        "f10r",
-        "f53r",
-        "f18r",
-        "f11v"
+        "f6v",
+        "f22v",
+        "f11v",
+        "f45v"
       ]
     },
     {
       "profile_id": 18,
-      "n_azc_folios": 26,
+      "n_azc_folios": 25,
       "n_a_lines": 4,
       "sample_folios": [
-        "f93r",
-        "f6v",
+        "f19r",
         "f6r",
-        "f11v"
+        "f11v",
+        "f32r"
       ]
     },
     {
       "profile_id": 19,
-      "n_azc_folios": 27,
+      "n_azc_folios": 24,
       "n_a_lines": 4,
       "sample_folios": [
-        "f54r",
-        "f16v",
-        "f16r",
-        "f93r"
+        "f25r",
+        "f13v",
+        "f18r",
+        "f28v"
       ]
     }
   ]

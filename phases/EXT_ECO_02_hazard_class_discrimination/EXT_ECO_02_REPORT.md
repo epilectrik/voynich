@@ -1,7 +1,7 @@
 # Phase EXT-ECO-02: Hazard Class Discrimination
 
 **Status:** COMPLETE
-**Date:** 2026-01-05
+**Date:** 2026-01-16
 **Tier:** 3 (External Alignment Only)
 
 ---
@@ -38,9 +38,9 @@ hazards show different structural signatures than batch-focused hazards?
 
 | Metric | Value |
 |--------|-------|
-| batch_mean_link_nearby | 1.229 |
+| batch_mean_link_nearby | 1.204 |
 | apparatus_mean_link_nearby | 0.0 |
-| difference | 1.229 |
+| difference | 1.204 |
 
 **Prediction:** Apparatus hazards should have LOWER LINK nearby (faster response needed)
 **Observed:** Batch higher LINK
@@ -67,10 +67,10 @@ hazards show different structural signatures than batch-focused hazards?
 
 | Metric | Value |
 |--------|-------|
-| batch_total_occurrences | 13845 |
-| apparatus_total_occurrences | 6110 |
-| batch_per_hazard_token | 865.3 |
-| apparatus_per_hazard_token | 678.9 |
+| batch_total_occurrences | 4230 |
+| apparatus_total_occurrences | 1773 |
+| batch_per_hazard_token | 264.4 |
+| apparatus_per_hazard_token | 197.0 |
 
 **Prediction:** Apparatus hazard tokens should be RARER (emergency states)
 **Observed:** Apparatus RARER

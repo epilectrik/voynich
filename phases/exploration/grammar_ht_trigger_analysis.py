@@ -44,6 +44,8 @@ HT_ATOMS = set(['y', 'f', 'd', 'r'])
 def load_data():
     """Load the interlinear transcription data."""
     df = pd.read_csv(DATA_PATH, sep='\t')
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     # Filter to Currier B
     df_b = df[df['language'] == 'B'].copy()
     print(f"Loaded {len(df_b)} Currier B tokens")

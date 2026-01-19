@@ -34,7 +34,10 @@ with open(filepath, 'r', encoding='utf-8') as f:
 
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) > 6:
+        if len(parts) > 12:
+            transcriber = parts[12].strip('"').strip()
+            if transcriber != 'H':
+                continue
             lang = parts[6].strip('"').strip()
             word = parts[0].strip('"').strip().lower()
 
@@ -152,7 +155,10 @@ with open(filepath, 'r', encoding='utf-8') as f:
     header = f.readline()
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) > 6:
+        if len(parts) > 12:
+            transcriber = parts[12].strip('"').strip()
+            if transcriber != 'H':
+                continue
             lang = parts[6].strip('"').strip()
             word = parts[0].strip('"').strip().lower()
             if word and lang == 'A' and word in overlap:

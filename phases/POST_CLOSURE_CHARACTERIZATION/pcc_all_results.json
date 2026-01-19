@@ -1,0 +1,233 @@
+{
+  "axis1": {
+    "q1_incompatibility": {
+      "question": "Closure vs Incompatibility Pressure",
+      "order_sensitivity": "INVARIANT",
+      "n_with_closure": 1198,
+      "n_without_closure": 381,
+      "mean_density_with": 0.9834362225899231,
+      "mean_density_without": 0.9843281764660706,
+      "mann_whitney_u": 213712.5,
+      "p_value": 0.9693499939993904,
+      "cohens_d": -0.09933594861541997,
+      "verdict": "NO",
+      "interpretation": "Closure is independent of incompatibility pressure"
+    },
+    "q2_novelty": {
+      "question": "Closure vs Novelty (Rare MIDDLEs)",
+      "order_sensitivity": "INVARIANT",
+      "n_rare_middles": 1548,
+      "rate_with_closure": 0.6368948247078464,
+      "rate_without_closure": 0.6981627296587927,
+      "mean_rare_with": 1.176126878130217,
+      "mean_rare_without": 1.2913385826771653,
+      "chi2": 4.514164268198124,
+      "p_chi": 0.03361530483220414,
+      "mann_whitney_u": 211918.5,
+      "p_mw": 0.9860365358157585,
+      "verdict": "WEAK_YES",
+      "interpretation": "Marginal association with rare MIDDLEs"
+    },
+    "q3_adjacency": {
+      "question": "Closure vs Adjacency Boundaries",
+      "order_sensitivity": "FOLIO_LOCAL_ORDER",
+      "n_pairs_after_closure": 1105,
+      "n_pairs_after_no_closure": 360,
+      "mean_jaccard_after_closure": 0.08130938385377755,
+      "mean_jaccard_after_no_closure": 0.07768691756887948,
+      "difference": 0.003622466284898068,
+      "mann_whitney_u": 203442.0,
+      "p_value": 0.7501334939117451,
+      "verdict": "NO",
+      "interpretation": "Closure does not mark adjacency boundaries"
+    },
+    "q4_fragility": {
+      "question": "Closure vs Discrimination Fragility",
+      "order_sensitivity": "INVARIANT",
+      "complexity_rates": {
+        "low (1-3)": 0.7458563535911602,
+        "medium (4-6)": 0.749618320610687,
+        "high (7+)": 0.7698519515477793
+      },
+      "tail_rates": {
+        "no_tail": 0.7638036809815951,
+        "low_tail": 0.7354497354497355,
+        "high_tail": 0.7325581395348837
+      },
+      "chi2_complexity": 0.3423857697574373,
+      "p_complexity": 0.5584553369909839,
+      "chi2_tail": 0.27900904470594656,
+      "p_tail": 0.5973514606183761,
+      "verdict_complexity": "NO",
+      "verdict_tail": "NO",
+      "overall_verdict": "NO",
+      "interpretation": "Closure is independent of discrimination fragility"
+    }
+  },
+  "axis2": {
+    "q1_working_memory": {
+      "question": "Adjacency Clusters as Working-Memory Chunks",
+      "order_sensitivity": "FOLIO_LOCAL_ORDER",
+      "n_clusters": 1296,
+      "n_multi_clusters": 196,
+      "n_singletons": 1100,
+      "mean_cluster_size": 2.443877551020408,
+      "median_cluster_size": 2.0,
+      "mean_within_similarity": 0.20001863793690647,
+      "mean_cross_similarity": 0.09336291498425875,
+      "p_value": 1.4177673691359044e-66,
+      "cohens_d": 1.437967395750824,
+      "verdict": "YES",
+      "interpretation": "Clusters show working-memory chunk properties"
+    },
+    "q2_singleton_isolation": {
+      "question": "Singleton Isolation Properties",
+      "order_sensitivity": "INVARIANT",
+      "n_singletons": 1100,
+      "n_clustered": 479,
+      "mean_unique_singleton": 6.23,
+      "mean_unique_clustered": 6.974947807933194,
+      "mean_hub_overlap_singleton": 0.7307529477785247,
+      "mean_hub_overlap_clustered": 0.8498454292138082,
+      "mean_density_singleton": 0.9856186340737444,
+      "mean_density_clustered": 0.9791338881319036,
+      "p_unique": 1.7766027332564362e-05,
+      "p_hub_overlap": 6.357039394432665e-24,
+      "p_density": 5.29593850340753e-44,
+      "verdict": "YES",
+      "interpretation": "Singletons show distinct isolation properties"
+    },
+    "q3_contrast_maximization": {
+      "question": "Clusters Maximize Contrast",
+      "order_sensitivity": "FOLIO_LOCAL_ORDER",
+      "n_pairs": 1465,
+      "mean_observed_contrast": 0.919580778509747,
+      "null_mean": 0.9266837815267415,
+      "null_std": 0.001415063877598821,
+      "z_score": -5.019563518960985,
+      "p_value_greater": 1.0,
+      "p_value_less": 0.000999000999000999,
+      "verdict": "NO_SIMILARITY",
+      "interpretation": "Adjacency maximizes similarity (topic clustering)"
+    },
+    "q4_coverage_optimization": {
+      "question": "Coverage Traversal Optimization",
+      "order_sensitivity": "FOLIO_LOCAL_ORDER",
+      "n_folios": 114,
+      "mean_observed_efficiency": 16.903987146670072,
+      "null_mean": 16.373730402508045,
+      "null_std": 0.15277673481610826,
+      "z_score": 3.4707951102651733,
+      "p_value": 0.001996007984031936,
+      "verdict": "YES",
+      "interpretation": "Order optimizes coverage traversal"
+    }
+  },
+  "axis3": {
+    "q1_coverage_stability": {
+      "question": "Coverage Stability Under Reordering",
+      "order_sensitivity": "INVARIANT",
+      "n_folios": 114,
+      "mean_middles_per_entry": 4.328363553504261,
+      "cv_overlap": 0.3769731117730626,
+      "null_mean_cv": 0.3333277888045537,
+      "p_value": 0.94,
+      "verdict": "NO",
+      "interpretation": "Coverage not more consistent than random allocation"
+    },
+    "q2_novelty_fronts": {
+      "question": "Novelty Fronts (Order-Independent)",
+      "order_sensitivity": "INVARIANT",
+      "n_rare_middles": 1548,
+      "n_folios": 114,
+      "mean_concentration": 0.17550532946274672,
+      "std_concentration": 0.06555959108857658,
+      "variance_ratio": 0.02448962659344022,
+      "chi2": 43.89473684210526,
+      "p_value": 1.5889177751304828e-09,
+      "n_high_novelty_folios": 18,
+      "verdict": "NO",
+      "interpretation": "Novelty uniformly distributed across folios"
+    },
+    "q3_tail_pressure": {
+      "question": "Tail Pressure (Order-Independent)",
+      "order_sensitivity": "INVARIANT",
+      "n_tail_middles": 455,
+      "n_folios": 114,
+      "mean_pressure": 0.04787182603749426,
+      "std_pressure": 0.07608947255264677,
+      "cv": 1.5894416163079268,
+      "herbal_a_mean": 0.043011657127503676,
+      "herbal_c_mean": 0.06763021751188576,
+      "p_section": 0.8762969465176528,
+      "verdict": "YES_VARIANCE",
+      "interpretation": "High tail pressure variance across folios"
+    },
+    "q4_order_signals": {
+      "question": "Order-Dependent Signals",
+      "order_sensitivity": "LATENT_ORDER_DEPENDENT",
+      "n_folios": 114,
+      "first_10_novelty": 0.4532064730016369,
+      "last_10_novelty": 0.29430510170843405,
+      "spearman_rho": -0.15584078951386618,
+      "p_value": 0.09777869534242117,
+      "order_signal": "NO_TREND",
+      "interpretation": "No systematic novelty trend in current order"
+    }
+  },
+  "axis4": {
+    "q1_morphology_activation": {
+      "question": "Entry Morphology vs AZC Activation Breadth",
+      "order_sensitivity": "INVARIANT",
+      "closure_effect": {
+        "mean_with": 0.8512553331082827,
+        "mean_without": 0.8287573157107968,
+        "p_value": 0.003365387449125934
+      },
+      "opener_effect": {
+        "mean_with": 0.8243481568506337,
+        "mean_without": 0.8762054759368505,
+        "p_value": 9.129244033625486e-15
+      },
+      "length_effect": {
+        "means": {
+          "short": 0.7997785160575859,
+          "medium": 0.8544257522828952,
+          "long": 0.8601562544758351
+        },
+        "p_value": 0.16053463207606458
+      },
+      "verdict": "YES",
+      "interpretation": "Morphology predicts AZC breadth: closure, opener"
+    },
+    "q2_universal_tail_asymmetry": {
+      "question": "Universal vs Tail MIDDLE Asymmetry",
+      "order_sensitivity": "INVARIANT",
+      "n_hub_dominant": 1465,
+      "n_universal_dominant": 52,
+      "n_tail_dominant": 30,
+      "n_mixed": 32,
+      "mean_hub": 0.8724779795444266,
+      "mean_universal": 0.5830101597748656,
+      "mean_tail": 0.30887193362193355,
+      "mean_diff": 0.27413822615293204,
+      "p_value": 2.1518731731277975e-11,
+      "verdict": "YES",
+      "interpretation": "Strong asymmetry: universal MIDDLEs enable broader activation"
+    },
+    "q3_adjacency_diversity": {
+      "question": "Adjacency vs AZC Choice Diversity",
+      "order_sensitivity": "FOLIO_LOCAL_ORDER",
+      "n_pairs": 1465,
+      "mean_adjacent_breadth_diff": 0.13940241964572314,
+      "mean_random_breadth_diff": 0.15917681163782402,
+      "p_value": 0.001996007984031936,
+      "breadth_content_correlation": -0.20084436464538624,
+      "p_correlation": 8.491415980926797e-15,
+      "breadth_verdict": "YES",
+      "independence_verdict": "NO",
+      "verdict": "PARTIAL",
+      "interpretation": "Coordinated breadth, but correlated with content"
+    }
+  }
+}

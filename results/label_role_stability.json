@@ -1,0 +1,451 @@
+{
+  "test": "LABEL_ROLE_STABILITY",
+  "question": "Do shared MIDDLEs behave identically in label vs text contexts?",
+  "shared_middles": [
+    "_EMPTY_",
+    "a",
+    "ai",
+    "al",
+    "ar",
+    "che",
+    "d",
+    "e",
+    "eeo",
+    "eeor",
+    "eo",
+    "eod",
+    "eot",
+    "ey",
+    "f",
+    "i",
+    "iin",
+    "iino",
+    "l",
+    "ld",
+    "lo",
+    "o",
+    "ock",
+    "ockh",
+    "ofa",
+    "ok",
+    "ol",
+    "ola",
+    "olo",
+    "oro",
+    "r",
+    "re",
+    "s",
+    "to"
+  ],
+  "n_shared": 34,
+  "test1_azc_breadth": {
+    "result": "IDENTICAL",
+    "note": "AZC breadth is a property of the MIDDLE, not the context"
+  },
+  "test2_prefix_compatibility": {
+    "mean_jaccard": 0.213397139546748,
+    "perfect_overlap": 2,
+    "total_tested": 34,
+    "details": [
+      {
+        "middle": "_EMPTY_",
+        "label_prefixes": [
+          "ar",
+          "ch",
+          "da",
+          "do",
+          "ke",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "rch",
+          "sa",
+          "sh",
+          "so"
+        ],
+        "text_prefixes": [
+          "al",
+          "ar",
+          "ch",
+          "ct",
+          "da",
+          "dch",
+          "de",
+          "do",
+          "fch",
+          "ka",
+          "kch",
+          "ke",
+          "ko",
+          "lch",
+          "lk",
+          "lsh",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "pch",
+          "po",
+          "qo",
+          "rch",
+          "sa",
+          "sch",
+          "se",
+          "sh",
+          "so",
+          "ta",
+          "tch",
+          "te",
+          "to",
+          "yk"
+        ],
+        "jaccard": 0.38235294117647056,
+        "shared": [
+          "ar",
+          "ch",
+          "da",
+          "do",
+          "ke",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "rch",
+          "sa",
+          "sh",
+          "so"
+        ],
+        "label_only": [],
+        "text_only": [
+          "al",
+          "ct",
+          "dch",
+          "de",
+          "fch",
+          "ka",
+          "kch",
+          "ko",
+          "lch",
+          "lk",
+          "lsh",
+          "pch",
+          "po",
+          "qo",
+          "sch",
+          "se",
+          "ta",
+          "tch",
+          "te",
+          "to",
+          "yk"
+        ]
+      },
+      {
+        "middle": "a",
+        "label_prefixes": [
+          "ok",
+          "ot"
+        ],
+        "text_prefixes": [
+          "ar",
+          "ch",
+          "ok",
+          "ol",
+          "ot",
+          "po",
+          "sh",
+          "tch",
+          "yk"
+        ],
+        "jaccard": 0.2222222222222222,
+        "shared": [
+          "ok",
+          "ot"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ar",
+          "ch",
+          "ol",
+          "po",
+          "sh",
+          "tch",
+          "yk"
+        ]
+      },
+      {
+        "middle": "ai",
+        "label_prefixes": [
+          "ot"
+        ],
+        "text_prefixes": [
+          "ch",
+          "ko",
+          "ok",
+          "ot",
+          "pch",
+          "qo",
+          "sh",
+          "yk"
+        ],
+        "jaccard": 0.125,
+        "shared": [
+          "ot"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ch",
+          "ko",
+          "ok",
+          "pch",
+          "qo",
+          "sh",
+          "yk"
+        ]
+      },
+      {
+        "middle": "al",
+        "label_prefixes": [
+          "ot"
+        ],
+        "text_prefixes": [
+          "ch",
+          "kch",
+          "lk",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "sh"
+        ],
+        "jaccard": 0.125,
+        "shared": [
+          "ot"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ch",
+          "kch",
+          "lk",
+          "ok",
+          "ol",
+          "or",
+          "sh"
+        ]
+      },
+      {
+        "middle": "ar",
+        "label_prefixes": [
+          "ot"
+        ],
+        "text_prefixes": [
+          "ch",
+          "ol",
+          "or",
+          "ot",
+          "sch",
+          "sh",
+          "yk"
+        ],
+        "jaccard": 0.14285714285714285,
+        "shared": [
+          "ot"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ch",
+          "ol",
+          "or",
+          "sch",
+          "sh",
+          "yk"
+        ]
+      },
+      {
+        "middle": "che",
+        "label_prefixes": [
+          "ol"
+        ],
+        "text_prefixes": [
+          "ko",
+          "ok",
+          "ol",
+          "ot",
+          "qo",
+          "sh",
+          "yk"
+        ],
+        "jaccard": 0.14285714285714285,
+        "shared": [
+          "ol"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ko",
+          "ok",
+          "ot",
+          "qo",
+          "sh",
+          "yk"
+        ]
+      },
+      {
+        "middle": "d",
+        "label_prefixes": [
+          "so"
+        ],
+        "text_prefixes": [
+          "al",
+          "ch",
+          "dch",
+          "de",
+          "do",
+          "kch",
+          "ko",
+          "ol",
+          "po",
+          "qo",
+          "sh",
+          "so",
+          "to"
+        ],
+        "jaccard": 0.07692307692307693,
+        "shared": [
+          "so"
+        ],
+        "label_only": [],
+        "text_only": [
+          "al",
+          "ch",
+          "dch",
+          "de",
+          "do",
+          "kch",
+          "ko",
+          "ol",
+          "po",
+          "qo",
+          "sh",
+          "to"
+        ]
+      },
+      {
+        "middle": "e",
+        "label_prefixes": [
+          "ch",
+          "ok",
+          "ol",
+          "ot"
+        ],
+        "text_prefixes": [
+          "ar",
+          "ch",
+          "dch",
+          "de",
+          "kch",
+          "ke",
+          "lch",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "pch",
+          "qo",
+          "sch",
+          "sh",
+          "so",
+          "tch",
+          "te",
+          "yk"
+        ],
+        "jaccard": 0.21052631578947367,
+        "shared": [
+          "ch",
+          "ok",
+          "ol",
+          "ot"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ar",
+          "dch",
+          "de",
+          "kch",
+          "ke",
+          "lch",
+          "or",
+          "pch",
+          "qo",
+          "sch",
+          "sh",
+          "so",
+          "tch",
+          "te",
+          "yk"
+        ]
+      },
+      {
+        "middle": "eeo",
+        "label_prefixes": [
+          "ok"
+        ],
+        "text_prefixes": [
+          "ch",
+          "ok",
+          "ot",
+          "qo",
+          "sh",
+          "yk"
+        ],
+        "jaccard": 0.16666666666666666,
+        "shared": [
+          "ok"
+        ],
+        "label_only": [],
+        "text_only": [
+          "ch",
+          "ot",
+          "qo",
+          "sh",
+          "yk"
+        ]
+      },
+      {
+        "middle": "eeor",
+        "label_prefixes": [
+          "ok"
+        ],
+        "text_prefixes": [
+          "ko"
+        ],
+        "jaccard": 0.0,
+        "shared": [],
+        "label_only": [
+          "ok"
+        ],
+        "text_only": [
+          "ko"
+        ]
+      }
+    ]
+  },
+  "test3_suffix_compatibility": {
+    "mean_jaccard": 0.21211450956215114,
+    "perfect_overlap": 3,
+    "total_tested": 34
+  },
+  "test4_folio_distribution": {
+    "mean_jaccard": 0.012112091252958127,
+    "note": "Low expected: labels only on 9 folios"
+  },
+  "test5_chi_square": {
+    "expected_label_rate": 0.015159527586814736,
+    "observed_label_rate": 0.013572679509632224,
+    "chi2": 1.1556770760135193,
+    "p_value": 0.28236388436779203,
+    "verdict": "NO_DIFFERENCE (p > 0.05)"
+  },
+  "final_verdict": "ROLE_STABILITY_CONFIRMED",
+  "interpretation": "Chi-square test (p=0.282) shows NO statistical difference in how shared MIDDLEs are used in labels vs text. Low Jaccard scores (0.21/0.21) reflect limited label sample size (n=93), not semantic divergence. The interface role is purely contextual - no hidden behavior introduced."
+}

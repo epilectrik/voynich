@@ -1,6 +1,7 @@
 # Circular Control Folio (CCF) Analysis Report
 
 *Generated: 2026-01-01T07:58:18.065855*
+*Updated: 2026-01-16 (H-only transcriber filter applied)*
 
 ---
 
@@ -43,11 +44,11 @@
 **Method:** Map all CCF tokens to frozen 49-class grammar.
 
 **Results:**
-- Total CCF token types: 2573
-- Total occurrences: 8797
-- Classified to existing classes: 6034 (68.6%)
-- Unclassified: 2763
-- Classes used: 49/49
+- Total CCF token types: 1630
+- Total occurrences: 3057
+- Classified to existing classes: 2134 (69.8%)
+- Unclassified: 923
+- Classes used: 48/49
 
 **VERDICT:** INCONCLUSIVE
 

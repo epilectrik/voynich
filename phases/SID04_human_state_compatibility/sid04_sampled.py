@@ -35,6 +35,10 @@ def load_data_fast():
         for line in f:
             parts = line.split('\t')
             if len(parts) >= 4:
+                # Filter to H (PRIMARY) transcriber track only
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').lower()
                 section = parts[3].strip('"')
                 if word and not word.startswith('*'):

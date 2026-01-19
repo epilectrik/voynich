@@ -51,6 +51,10 @@ def load_transcription():
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) >= 4:
+                # Filter to H (PRIMARY) transcriber track only
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').lower()
                 folio = parts[2].strip('"')
                 section = parts[3].strip('"')

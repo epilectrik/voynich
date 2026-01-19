@@ -1,0 +1,157 @@
+{
+  "closure_ht": {
+    "test": "closure_ht_relationship",
+    "question": "Does closure state appear more before HT phase resets?",
+    "counts": {
+      "closure_then_h": 527,
+      "closure_then_not_h": 576,
+      "no_closure_then_h": 162,
+      "no_closure_then_not_h": 196
+    },
+    "rates": {
+      "h_after_closure": 0.47778785131459656,
+      "h_after_no_closure": 0.45251396648044695,
+      "ratio": 1.055852165250775
+    },
+    "chi2": 0.5951023538467016,
+    "p_value": 0.4404528250744332,
+    "ht_closure": {
+      "lines_with_ht": 1120,
+      "lines_without_ht": 455,
+      "closure_in_ht": 867,
+      "closure_in_non_ht": 329,
+      "ht_closure_rate": 0.7741071428571429,
+      "non_ht_closure_rate": 0.7230769230769231
+    },
+    "verdict": "NO_HT_RELATIONSHIP"
+  },
+  "closure_azc": {
+    "test": "closure_section_relationship",
+    "question": "Does closure pattern vary by section (Herbal A vs Herbal C)?",
+    "herbal_a_stats": {
+      "family": "Herbal_A",
+      "total_lines": 1118,
+      "da_family_final": 332,
+      "y_ending_final": 378,
+      "n_ending_final": 280,
+      "m_ending_final": 115,
+      "any_closure_final": 868,
+      "da_family_initial": 153,
+      "no_prefix_initial": 100
+    },
+    "herbal_c_stats": {
+      "family": "Herbal_C",
+      "total_lines": 377,
+      "da_family_final": 78,
+      "y_ending_final": 138,
+      "n_ending_final": 59,
+      "m_ending_final": 47,
+      "any_closure_final": 271,
+      "da_family_initial": 66,
+      "no_prefix_initial": 45
+    },
+    "comparison": {
+      "da_family_final": {
+        "herbal_a_rate": 0.29695885509839,
+        "herbal_c_rate": 0.20689655172413793,
+        "ratio": 1.4353011329755516
+      },
+      "y_ending_final": {
+        "herbal_a_rate": 0.33810375670840787,
+        "herbal_c_rate": 0.3660477453580902,
+        "ratio": 0.9236602628918098
+      },
+      "n_ending_final": {
+        "herbal_a_rate": 0.2504472271914132,
+        "herbal_c_rate": 0.15649867374005305,
+        "ratio": 1.6003153330705555
+      },
+      "m_ending_final": {
+        "herbal_a_rate": 0.10286225402504472,
+        "herbal_c_rate": 0.1246684350132626,
+        "ratio": 0.8250865907966353
+      },
+      "any_closure_final": {
+        "herbal_a_rate": 0.776386404293381,
+        "herbal_c_rate": 0.7188328912466844,
+        "ratio": 1.0800652192568436
+      },
+      "da_family_initial": {
+        "herbal_a_rate": 0.1368515205724508,
+        "herbal_c_rate": 0.17506631299734748,
+        "ratio": 0.7817124735729387
+      },
+      "no_prefix_initial": {
+        "herbal_a_rate": 0.08944543828264759,
+        "herbal_c_rate": 0.11936339522546419,
+        "ratio": 0.7493540051679587
+      }
+    },
+    "chi2": 4.835128802076614,
+    "p_value": 0.02788555772985923,
+    "verdict": "HERBAL_A_MORE_CLOSURE"
+  },
+  "entry_shape": {
+    "test": "entry_shape_variance",
+    "question": "What is the distribution of entry lengths/complexity?",
+    "token_count": {
+      "min": 1,
+      "max": 25,
+      "mean": 7.203809523809523,
+      "median": 7.0,
+      "std": 3.207686912527185,
+      "distribution": {
+        "13+": 62,
+        "4-6": 546,
+        "10-12": 219,
+        "1-3": 145,
+        "7-9": 603
+      }
+    },
+    "middle_count": {
+      "min": 1,
+      "max": 19,
+      "mean": 6.3619047619047615,
+      "median": 6.0
+    },
+    "da_count": {
+      "distribution": {
+        "1": 584,
+        "0": 601,
+        "3": 72,
+        "2": 274,
+        "5": 10,
+        "6": 3,
+        "4": 31
+      },
+      "mean": 0.9777777777777777,
+      "entries_with_da": 974
+    },
+    "closure_by_length": {
+      "short (1-3)": {
+        "rate": 0.7586206896551724,
+        "total": 145
+      },
+      "medium (4-6)": {
+        "rate": 0.7509157509157509,
+        "total": 546
+      },
+      "long (7+)": {
+        "rate": 0.7647058823529411,
+        "total": 884
+      }
+    },
+    "length_closure_correlation": {
+      "r": 0.014930322197431633,
+      "p": 0.5537894118996183
+    },
+    "grammar_conformance": {
+      "full_grammar": 681,
+      "opener_only": 234,
+      "closer_only": 515,
+      "neither": 145,
+      "full_grammar_rate": 0.43238095238095237
+    },
+    "verdict": "ENTRY_SHAPE_CHARACTERIZED"
+  }
+}

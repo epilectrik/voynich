@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.4 | **Date:** 2026-01-16 | **Status:** FROZEN
+**Version:** 3.7 | **Date:** 2026-01-19 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -263,6 +263,39 @@ The manuscript provides **structure**; the operator supplies **meaning**:
 - No explanations, only instructions
 - Designed for practitioners, not novices
 
+**Constraint Substitution (F-BRU-007):** When operations are dangerous (high sensory load), grammar restricts options - reducing the need for active vigilance. When operations are forgiving, grammar permits many options - requiring more discrimination and higher HT density. HT functions as residual vigilance after grammar has constrained the decision space.
+
+### Execution Infrastructure Roles (Characterized, Non-Primitive)
+
+**Status:** Tier 3 structural characterization. Derivable from Tier 2 constraints (C124, C485, C411). Not a new mechanism.
+
+Some Currier B instruction roles are **execution-critical infrastructure**: they are required for nearly all executable programs to exist but are not grammar primitives or hazard anchors.
+
+**Position in Architecture:**
+- Below kernel primitives (k, h, e)
+- Above decomposable instruction classes
+- Outside AZC vocabulary gating scope
+
+**Key Properties (BCI Characterization, 2026-01-18):**
+
+| Property | Evidence |
+|----------|----------|
+| Near-universal B coverage | 96-100% of B folios require these roles |
+| Kernel-mediating | 70.6% cluster within 0-2 tokens of k/h/e operators |
+| Partial REGIME sensitivity | One role fully invariant; others show 6-14% spread |
+| Zone-sensitive | All thin sharply in S-zone (43% → 19% legal) |
+| Redundant | Threshold behavior at 50% availability; mutual substitutability |
+
+**What These Roles Are NOT:**
+- Kernel primitives (not atomic, not forbidden-transition adjacent)
+- Semantic carriers (no material, procedure, or substance encoding)
+- Neutral vocabulary (they actively mediate control flow)
+
+**Interpretive Bound:**
+> These roles implement structural mediation between control primitives and contextual grammar. They do not encode semantics, materials, or procedures.
+
+**Reference:** See [TIER3/b_execution_infrastructure_characterization.md](TIER3/b_execution_infrastructure_characterization.md) for full BCI test results.
+
 ---
 
 ## VII. CURRIER A - FINAL INTERPRETATION
@@ -391,6 +424,34 @@ AZC is not selected explicitly. Constraints activate automatically based on voca
 | Non-Zodiac | 10 | 7.6% | Variable, demanding, more intervention |
 
 The distinction encodes **context risk profiles**, not different domains.
+
+### Reachability Suppression Mechanism (v2.56)
+
+AZC constrains B grammar through a **two-tier constraint system**:
+
+**Tier 1 - Universal (Always Active):**
+- 49 instruction classes, 17 forbidden transitions
+- 9 hazard-involved classes
+- Base grammar graph 99.1% connected
+
+**Tier 2 - AZC-Conditioned (Context-Dependent):**
+- 77% of MIDDLEs appear in only 1 AZC folio
+- Restricted MIDDLEs become unavailable under certain legality fields
+- 6 of 9 hazard classes have reduced effective membership
+
+**Hazard Class Taxonomy:**
+
+| Type | Classes | Representatives | AZC Effect |
+|------|---------|-----------------|------------|
+| **Atomic** | 7, 9, 23 | ar, aiin, dy | Universal enforcement - NOT affected by AZC |
+| **Decomposable** | 8, 11, 30, 31, 33, 41 | chedy, ol, dar, chey, qokeey, qo | Context-tunable via MIDDLE availability |
+
+**Mechanism:** AZC does not modify B's grammar; it shortens the reachable language by restricting vocabulary availability. When AZC provides a legality field, decomposable hazard classes lose membership because their MIDDLEs become unavailable. Atomic hazard classes remain fully active regardless of AZC context.
+
+This completes the A→AZC→B control-theoretic explanation with no semantics, branching, or lookup.
+
+**Scope Protection (BCI-2026-01-18):**
+> AZC constrains discriminative vocabulary and context-sensitive hazard classes. It **must not** remove execution-infrastructure roles required for grammar connectivity, even when those roles are labeled with MIDDLE-bearing tokens. Infrastructure roles lie outside AZC's legitimate constraint scope because their removal collapses B reachability without violating any vocabulary-level rule.
 
 ### Interpretive Bounds
 

@@ -1,0 +1,55 @@
+{
+  "q1_morphology_activation": {
+    "question": "Entry Morphology vs AZC Activation Breadth",
+    "order_sensitivity": "INVARIANT",
+    "closure_effect": {
+      "mean_with": 0.8512553331082827,
+      "mean_without": 0.8287573157107968,
+      "p_value": 0.003365387449125934
+    },
+    "opener_effect": {
+      "mean_with": 0.8243481568506337,
+      "mean_without": 0.8762054759368505,
+      "p_value": 9.129244033625486e-15
+    },
+    "length_effect": {
+      "means": {
+        "short": 0.7997785160575859,
+        "medium": 0.8544257522828952,
+        "long": 0.8601562544758351
+      },
+      "p_value": 0.16053463207606458
+    },
+    "verdict": "YES",
+    "interpretation": "Morphology predicts AZC breadth: closure, opener"
+  },
+  "q2_universal_tail_asymmetry": {
+    "question": "Universal vs Tail MIDDLE Asymmetry",
+    "order_sensitivity": "INVARIANT",
+    "n_hub_dominant": 1465,
+    "n_universal_dominant": 52,
+    "n_tail_dominant": 30,
+    "n_mixed": 32,
+    "mean_hub": 0.8724779795444266,
+    "mean_universal": 0.5830101597748656,
+    "mean_tail": 0.30887193362193355,
+    "mean_diff": 0.27413822615293204,
+    "p_value": 2.1518731731277975e-11,
+    "verdict": "YES",
+    "interpretation": "Strong asymmetry: universal MIDDLEs enable broader activation"
+  },
+  "q3_adjacency_diversity": {
+    "question": "Adjacency vs AZC Choice Diversity",
+    "order_sensitivity": "FOLIO_LOCAL_ORDER",
+    "n_pairs": 1465,
+    "mean_adjacent_breadth_diff": 0.13940241964572314,
+    "mean_random_breadth_diff": 0.15917681163782402,
+    "p_value": 0.001996007984031936,
+    "breadth_content_correlation": -0.20084436464538624,
+    "p_correlation": 8.491415980926797e-15,
+    "breadth_verdict": "YES",
+    "independence_verdict": "NO",
+    "verdict": "PARTIAL",
+    "interpretation": "Coordinated breadth, but correlated with content"
+  }
+}

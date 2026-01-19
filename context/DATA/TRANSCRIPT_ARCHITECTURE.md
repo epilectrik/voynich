@@ -196,6 +196,19 @@ These are the CORRECT numbers to use in constraints and documentation:
 | Empty tokens | 17 |
 | Uncertain (misc=U) tokens | 75 |
 
+### By Placement Type (H-only)
+
+| Category | Total | A | B |
+|----------|-------|---|---|
+| TEXT (P*) | 33,128 | 11,081 | 21,649 |
+| LABEL (L*) | 350 | 183 | 99 |
+| RING (R*) | 2,245 | 19 | 844 |
+| CIRCLE (C*) | 830 | 4 | 191 |
+| STAR (S*) | 505 | - | - |
+| OTHER | 899 | 128 | 460 |
+
+**Note:** STAR and most RING/CIRCLE tokens are in AZC sections (language=NA), not A or B.
+
 ---
 
 ## Transcriber Agreement
@@ -215,18 +228,84 @@ This high disagreement rate means:
 
 ---
 
-## Placement Codes (for AZC sections)
+## Placement Type Taxonomy
 
-| Code | Meaning | H-only AZC |
-|------|---------|------------|
-| P | Paragraph (main text) | 1,359 |
-| C | Circular text | 728 |
-| R1-R4 | Ring positions (inner to outer) | 1,339 |
-| S, S1, S2 | Sector text | 484 |
-| X, Y | Special positions | 188 |
-| L | Label | 65 |
-| Q | Quadrant | 60 |
-| O | Other | 49 |
+**CRITICAL:** The `placement` column distinguishes TOKEN TYPES, not just positions. Different placement types represent fundamentally different content.
+
+### Placement Categories
+
+| Category | Codes | Meaning | Primary Use |
+|----------|-------|---------|-------------|
+| **TEXT** | P, P1, P2, P3, P4 | Paragraph/main text | Standard analysis |
+| **LABEL** | L, L1, L2, L3, L4 | Illustration labels | Exclude from text analysis |
+| **RING** | R, R1, R2, R3, R4 | Ring/circular text (AZC) | AZC-specific analysis |
+| **CIRCLE** | C, C1, C2 | Circular text | AZC-specific analysis |
+| **STAR** | S, S0, S1, S2, S3 | Star/sector text | AZC-specific analysis |
+| **OTHER** | B, F, I, K, M, N, O, Q, T, T1-T4, U, W, X, Y, Z, b, m, t | Special positions | Case-by-case |
+
+### Token Breakdown by Placement (H-only)
+
+**Currier A:**
+| Category | Tokens | % | Vocab Types |
+|----------|--------|---|-------------|
+| TEXT | 11,081 | 97.1% | 3,270 |
+| LABEL | 183 | 1.6% | 161 |
+| OTHER | 128 | 1.1% | 121 |
+| RING | 19 | 0.2% | 18 |
+| CIRCLE | 4 | <0.1% | 4 |
+
+**Currier B:**
+| Category | Tokens | % | Vocab Types |
+|----------|--------|---|-------------|
+| TEXT | 21,649 | 93.1% | 4,662 |
+| RING | 844 | 3.6% | 422 |
+| OTHER | 460 | 2.0% | 302 |
+| CIRCLE | 191 | 0.8% | 145 |
+| LABEL | 99 | 0.4% | 91 |
+
+### Label vs Text Vocabulary
+
+- **Label types (A):** 161 unique
+- **Text types (A):** 3,270 unique
+- **Overlap:** 61 types (37.9% of labels appear in text)
+- **Label-only:** 100 types unique to labels
+
+### Filtering Conventions
+
+```python
+# TEXT ONLY (standard analysis)
+df_text = df[df['placement'].str.startswith('P')]
+
+# LABELS ONLY (illustration annotation analysis)
+df_labels = df[df['placement'].str.startswith('L')]
+
+# EXCLUDE LABELS from text analysis
+df_no_labels = df[~df['placement'].str.startswith('L')]
+
+# AZC RING/CIRCLE/STAR
+df_rings = df[df['placement'].str.startswith('R')]
+df_circles = df[df['placement'].str.startswith('C')]
+df_stars = df[df['placement'].str.startswith('S')]
+```
+
+### Historical Note
+
+The placement distinction was discovered in the TRANSCRIPT-ARCHITECTURE-AUDIT (2026-01-16). Prior analyses may have inadvertently included labels in text analysis. Impact is minimal for Currier B (0.4% labels) but more significant for Currier A (1.6% labels).
+
+---
+
+## Legacy Placement Codes Reference (AZC detail)
+
+| Code | Meaning | H-only Count |
+|------|---------|--------------|
+| P | Paragraph (main text) | ~33,000 |
+| C, C1, C2 | Circular text | 830 |
+| R, R1-R4 | Ring positions | 2,245 |
+| S, S0-S3 | Sector text | 505 |
+| L, L1-L4 | Labels | 350 |
+| X, Y | Special positions | ~180 |
+| Q | Quadrant | ~60 |
+| O | Other | ~50 |
 
 ---
 
@@ -291,13 +370,16 @@ def load_azc():
 Before committing any script that loads the transcript:
 
 - [ ] Filter to `transcriber == 'H'`
+- [ ] **Filter by placement type** (TEXT vs LABEL vs RING, etc.)
 - [ ] Handle empty words
 - [ ] Handle asterisk (*) tokens appropriately
-- [ ] Use correct column indices (0=word, 6=language, 12=transcriber)
+- [ ] Use correct column indices (0=word, 6=language, 10=placement, 12=transcriber)
 - [ ] Document which language subset (A, B, or NA) is being analyzed
+- [ ] Document which placement types are included
 - [ ] Test with expected H-only counts (37,957 total, 11,415 A, 23,243 B, 3,299 NA)
 
 ---
 
-*Last updated: 2026-01-15*
+*Last updated: 2026-01-16*
 *This document prevents the transcriber filtering bug from recurring.*
+*Placement type taxonomy added from TRANSCRIPT-ARCHITECTURE-AUDIT (2026-01-16).*

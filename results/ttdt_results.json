@@ -18,9 +18,9 @@
       "kernel_distance_mean",
       "compression_ratio",
       "signature_sensitivity",
+      "terminal_STATE-C",
       "terminal_other",
-      "terminal_initial",
-      "terminal_STATE-C"
+      "terminal_initial"
     ],
     "regime_distribution": {
       "REGIME_4": 25,
@@ -41,23 +41,23 @@
   },
   "stability": {
     "4": {
-      "mean_silhouette": 0.21421303687227225,
-      "std_silhouette": 0.02422337450605652,
+      "mean_silhouette": 0.20003360079922017,
+      "std_silhouette": 0.01978199935865283,
       "n_bootstrap": 30
     },
     "10": {
-      "mean_silhouette": 0.2859109999861156,
-      "std_silhouette": 0.026092655512044347,
+      "mean_silhouette": 0.29378596030886156,
+      "std_silhouette": 0.02820650352681412,
       "n_bootstrap": 30
     },
     "20": {
-      "mean_silhouette": 0.4108138819114018,
-      "std_silhouette": 0.04987650712536083,
+      "mean_silhouette": 0.4162574133566007,
+      "std_silhouette": 0.043319951014357976,
       "n_bootstrap": 30
     },
     "50": {
-      "mean_silhouette": 0.6377611544725019,
-      "std_silhouette": 0.049402187260607355,
+      "mean_silhouette": 0.6275537335098327,
+      "std_silhouette": 0.04332021592962823,
       "n_bootstrap": 30
     }
   },

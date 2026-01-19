@@ -44,6 +44,11 @@ def load_b_tokens():
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             lang = row['language'].strip('"')
             if lang != 'B':
                 continue

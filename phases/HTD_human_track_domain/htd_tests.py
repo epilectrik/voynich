@@ -112,6 +112,11 @@ def load_currier_b_tokens():
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) >= 7:
+                # Filter to H (PRIMARY) transcriber only - MANDATORY per TRANSCRIPT_ARCHITECTURE.md
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
+
                 word = parts[0].strip('"') if parts[0] else ''
                 folio = parts[2].strip('"') if len(parts) > 2 else ''
                 section = parts[3].strip('"') if len(parts) > 3 else ''

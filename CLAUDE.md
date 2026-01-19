@@ -127,21 +127,44 @@ context/
 
 ## Expert Sync Files
 
-When asked to **"sync reference files for our expert"**, update these 4 files:
+When asked to **"sync reference files for our expert"**, update these 5 files:
 
 | File | Purpose | Generator |
 |------|---------|-----------|
 | `context/CONSTRAINT_TABLE.txt` | All constraints (Tier 0-2) | `python context/generate_constraint_table.py` |
 | `context/MODEL_FITS/FIT_TABLE.txt` | All fits (F0-F4) | `python context/MODEL_FITS/generate_fit_table.py` |
+| `context/EXPERT_CONTEXT.md` | Combined expert context | `python context/generate_expert_context.py` |
 | `context/MODEL_CONTEXT.md` | Architectural guide | Manual edit |
 | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Tier 3-4 interpretations | Manual edit |
 
 **Workflow:**
-1. Run both generator scripts
+1. Run all three generator scripts
 2. Update MODEL_CONTEXT.md if structural understanding changed
 3. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
 4. Verify counts match (constraints, fits)
 
+**Internal Expert:** The expert-advisor agent (`.claude/agents/expert-advisor/`) has the full constraint system embedded. It is invoked via automatic delegation - mention "ask the expert-advisor" or "have the expert validate" in your request.
+
+---
+
+## Agent Workflow: Expert Validation
+
+When planning changes that affect the constraint system, structural contracts, or architectural documentation, request expert-advisor validation before finalizing.
+
+**Triggers for expert validation:**
+- Adding or modifying constraints (CLAIMS/)
+- Updating structural contracts (CASC, BCSC, ACT files)
+- Proposing new interpretations (SPECULATIVE/)
+- Any change that might conflict with Tier 0-2 constraints
+
+**How to invoke:** Simply request validation naturally:
+- "Ask the expert-advisor to validate this proposal"
+- "Have the expert check if this conflicts with existing constraints"
+- "Get expert validation on whether this should be Tier 2 or 3"
+
+Claude will automatically delegate to the expert-advisor agent based on the request.
+
+**Why this matters:** The expert-advisor has all 356 constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
 ---
 
 ## App Development

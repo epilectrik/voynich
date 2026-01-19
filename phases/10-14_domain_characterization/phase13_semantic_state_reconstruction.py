@@ -59,6 +59,11 @@ def load_corpus():
                     continue
 
                 if len(parts) >= 7:
+                    # CRITICAL: Filter to H (PRIMARY) transcriber track only
+                    transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                    if transcriber != 'H':
+                        continue
+
                     word = parts[0].strip('"')
                     folio = parts[2].strip('"')
                     language = parts[6].strip('"')

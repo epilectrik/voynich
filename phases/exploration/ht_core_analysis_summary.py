@@ -18,6 +18,8 @@ from scipy.stats import chi2_contingency
 # Load and prepare data
 df = pd.read_csv("C:/git/voynich/data/transcriptions/interlinear_full_words.txt",
                  sep="\t", quotechar='"', na_values="NA", low_memory=False)
+# Filter to H transcriber only
+df = df[df['transcriber'] == 'H']
 
 def is_ht_token(token):
     if pd.isna(token) or '*' in str(token):

@@ -4,6 +4,298 @@
 
 ---
 
+## Version 2.58 (2026-01-19) - SEMANTIC_CEILING_BREACH: Tier 3 Confirmed
+
+### Summary
+
+Attempted to break through the Tier 3 semantic ceiling using B->A Reverse Prediction Test. Result: Tier 3 CONFIRMED with stronger evidence. Zone profiles discriminate modality classes but not with sufficient accuracy for Tier 2.
+
+### Key Results
+
+| Test | Result | Status |
+|------|--------|--------|
+| 4-class accuracy | 52.7% (vs 25% baseline) | **PASS** (p=0.012) |
+| Binary accuracy | 71.8% (vs 79.1% baseline) | Below Tier 2 threshold |
+| Zone discrimination | All 4 zones significant | **CONFIRMED** (d=0.44-0.66) |
+| MODALITY beyond REGIME | 3/4 zones significant | **CONFIRMED** (r=0.20-0.28) |
+
+### Key Finding
+
+> **Zone profiles DISCRIMINATE modality classes, but not with enough accuracy for Tier 2 predictive power. The semantic ceiling is at aggregate characterization level.**
+
+REGIME explains only 24.7% of zone variance. MODALITY adds significant explanatory power BEYOND REGIME, validating the two-stage model (Modality bias + Execution completeness).
+
+### Documentation
+
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - Section X.24 added (v4.28)
+- `context/MODEL_FITS/fits_brunschwig.md` - F-BRU-009 updated with ceiling test
+- `phases/SEMANTIC_CEILING_BREACH/SEMANTIC_CEILING_BREACH_REPORT.md` (NEW)
+
+### Data Files
+
+- `results/scb_modality_prediction.json`
+- `results/scb_middle_clusters.json`
+- `results/scb_regime_zone_regression.json`
+- `results/scb_synthesis.json`
+
+**Scripts:** `phases/SEMANTIC_CEILING_BREACH/scb_*.py`
+
+---
+
+## Version 2.57 (2026-01-18) - BCI: B-Class Infrastructure Characterization
+
+### Summary
+
+Characterized execution-infrastructure roles in Currier B that are required for almost all executable programs but are not grammar primitives. This resolves the AZC-B reachability collapse discovered during constraint flow visualizer development.
+
+### Discovery Context
+
+AZC-activating bundles were blocking ALL B programs because certain high-coverage instruction classes were being pruned by vocabulary filtering. Investigation revealed these classes are structurally required infrastructure, not decomposable vocabulary.
+
+### BCI Test Results
+
+| Test | Question | Result |
+|------|----------|--------|
+| 1. REGIME Invariance | Equal across REGIMEs? | **Mostly no** - one class invariant, others show 6-14% spread |
+| 2. Kernel Interaction | Cluster near k/h/e? | **Yes (70.6% near)** - MEDIATORS, not carriers |
+| 3. Connectivity | Enable or modulate? | UNINFORMATIVE - 100% universal presence |
+| 4. Zone Sensitivity | Equal across zones? | **No** - C/P/R=44%, S=19% (escape gradient) |
+| 5. Removal Gradient | Linear or threshold? | **THRESHOLD at 50%** - redundancy exists |
+
+### Key Finding
+
+> Currier B contains execution-infrastructure roles that are not primitives but are structurally required for almost all programs. They mediate kernel control, show limited context sensitivity, and lie outside AZC's scope of constraint.
+
+### Structural Characterization
+
+- **Near-universal B coverage:** 96-100% of B folios require these roles
+- **Kernel-mediating:** 70.6% cluster within 0-2 tokens of k/h/e
+- **Zone-sensitive:** Infrastructure MIDDLEs thin in S-zone (matches C443)
+- **Redundant:** Threshold effect at 50% availability
+
+### Documentation
+
+- `context/TIER3/b_execution_infrastructure_characterization.md` (NEW)
+- `context/MODEL_CONTEXT.md` Section VI updated (v3.6)
+- `context/MODEL_CONTEXT.md` Section VIII - AZC scope protection note added
+- `context/CLAIMS/morphology.md` - C396.a operational refinement added
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` - AUXILIARY commentary updated
+
+### Governance
+
+- **Tier:** 3 (Structural Characterization - derivable from Tier 2)
+- **Status:** CHARACTERIZED (not promoted to new constraint)
+- **Constraint compliance:** Derivable from C124, C485, C411, C458
+
+### Data Files
+
+- `results/bci_regime_invariance.json`
+- `results/bci_kernel_interaction.json`
+- `results/bci_connectivity_modulation.json`
+- `results/bci_zone_sensitivity.json`
+- `results/bci_removal_gradient.json`
+
+**Scripts:** `apps/constraint_flow_visualizer/scripts/bci_*.py`
+
+---
+
+## Version 2.56 (2026-01-17) - AZC_REACHABILITY_SUPPRESSION: Pipeline Closure
+
+### Summary
+
+Completed investigation of AZC-to-B constraint transfer mechanism. Demonstrated HOW AZC legality fields suppress parts of B grammar without selection, branching, or semantics.
+
+### Key Finding: Two-Tier Constraint System
+
+**Tier 1 (Universal):**
+- 49 instruction classes, 17 forbidden transitions
+- 9 hazard-involved classes
+- Base graph 99.1% connected
+
+**Tier 2 (AZC-Conditioned):**
+- 77% of MIDDLEs appear in only 1 AZC folio
+- 6 of 9 hazard classes are DECOMPOSABLE (affected by MIDDLE restrictions)
+- 3 of 9 hazard classes are ATOMIC (NOT affected)
+
+### The Mechanism
+
+AZC provides legality field -> Restricted MIDDLEs unavailable -> Decomposable hazard classes lose membership -> Fewer paths through hazard region -> Reachable grammar manifold shrinks
+
+### Hazard Class Taxonomy
+
+| Type | Classes | Behavior |
+|------|---------|----------|
+| **Atomic** | 7 (ar), 9 (aiin), 23 (dy) | Universal enforcement - always active |
+| **Decomposable** | 8, 11, 30, 31, 33, 41 | Context-tunable - AZC can shrink availability |
+
+### Closure Statement
+
+> "AZC does not modify B's grammar; it shortens the reachable language by restricting vocabulary availability. The 49-class grammar and 17 forbidden transitions are universal. When AZC provides a legality field, 6 of 9 hazard-involved classes have reduced effective membership. The 3 atomic hazard classes remain fully active regardless of AZC context."
+
+### Pipeline Completion
+
+This completes the A -> AZC -> B control-theoretic explanation:
+- **A** supplies discrimination bundles (constraint signatures)
+- **AZC** projects them into position-indexed legality fields
+- **B** executes within the shrinking reachable language
+
+With no semantics, no branching, no lookup, no "if".
+
+### Governance
+
+- **Tier:** 2 (Mechanism characterization)
+- **Status:** CLOSED with structural closure
+- **Constraint compliance:** C313, C384, C454, C455, C440, C121, C124, C468-C470, C472
+
+### Documentation
+
+- `phases/AZC_REACHABILITY_SUPPRESSION/README.md`
+- `phases/AZC_REACHABILITY_SUPPRESSION/results.json`
+
+---
+
+## Version 2.55 (2026-01-17) - JAR_WORKING_SET_INTERFACE: Complementary Working Sets
+
+### Summary
+
+Completed investigation of jar function in pharmaceutical folios. Tested four mutually exclusive hypotheses; three falsified, one confirmed. Jars function as **apparatus-level anchors for complementary working sets**.
+
+### Test Cascade
+
+| Hypothesis | Prediction | Result |
+|------------|------------|--------|
+| Contamination avoidance | Exclusion patterns | **Falsified** (0.49x, fewer than random) |
+| Material taxonomy | Class homogeneity | **Falsified** (0.73x, less than random) |
+| Complementary sets | Cross-class enrichment | **Confirmed** (all pairs enriched) |
+| Triplet stability | Role composition patterns | **Confirmed** (1.77x overall) |
+
+### Key Finding
+
+> **Jars are visual, apparatus-level anchors for complementary working sets of materials intended to participate together in a single operational context, without encoding procedure, order, or meaning.**
+
+### Triplet Enrichment
+
+| Triplet | Ratio | P-value |
+|---------|-------|---------|
+| M-B + M-D + OTHER | 1.70x | 0.022 |
+| M-A + M-B + M-D | 2.13x | 0.107 |
+
+The "complete working set" (energy + routine + stable) is the most enriched pattern.
+
+### Governance
+
+- **Tier:** 3 (Interface Characterization)
+- **Status:** CLOSED with explanatory saturation
+- **Constraint compliance:** C171, C384, C233, C475, C476
+
+### Documentation
+
+- `phases/JAR_WORKING_SET_INTERFACE/README.md`
+- `phases/JAR_WORKING_SET_INTERFACE/results.json`
+
+---
+
+## Version 2.54 (2026-01-17) - PHARMA_LABEL_DECODING: Two-Level Naming System
+
+### Summary
+
+Completed visual classification of all 13 pharmaceutical folios with labeled illustrations. Discovered a **two-level naming hierarchy** with complete vocabulary separation between levels.
+
+### Key Finding: Vocabulary Isolation
+
+| Comparison | Jaccard | Interpretation |
+|------------|---------|----------------|
+| Jar vs Content | **0.000** | Completely disjoint naming systems |
+| Root vs Leaf | 0.013 | Almost entirely distinct (2 shared tokens) |
+
+The 18 jar labels share **zero tokens** with 191 content labels. Jars and contents are named by fundamentally different schemes.
+
+### Two-Level Hierarchy
+
+```
+JAR LABEL (first token) -> identifies container/category
+  |
+  +-- CONTENT LABEL 1 -> specimen identifier (root or leaf)
+  +-- CONTENT LABEL 2 -> specimen identifier
+  +-- CONTENT LABEL n -> specimen identifier
+```
+
+### Folios Mapped
+
+| Category | Folios | Labels |
+|----------|--------|--------|
+| ROOT | f88v, f89r1, f89r2, f89v2, f99r, f99v, f102r1, f102r2, f102v1 | 152 |
+| LEAF | f100r, f100v, f101v2, f102v2 | 71 |
+| Reference page | f49v | (excluded - numbers 1-5 + single characters) |
+
+### PREFIX Clustering
+
+10 of 13 prefixes cluster by plant part:
+- ROOT-leaning: ot-, op-, da-, ch-, sh-, ar-
+- LEAF-leaning: so-, or-, ol-, sa-
+
+### Brunschwig Alignment: NOT DETECTED
+
+Tested whether root labels (aggressive extraction) show different morphology from leaf labels (gentler processing). Both have similar intense/gentle prefix ratios.
+
+### Documentation
+
+- `phases/PHARMA_LABEL_DECODING/README.md`: Phase summary
+- `phases/PHARMA_LABEL_DECODING/*_mapping.json`: 13 folio mappings
+- `phases/PHARMA_LABEL_DECODING/label_category_results.json`: Statistical analysis
+
+### Interpretation
+
+Jar labels likely represent processing categories or container types, while content labels identify specific specimen variants within each category. This aligns with a formulary/recipe interpretation.
+
+---
+
+## Version 2.53 (2026-01-16) - A_LABEL_INTERFACE_ROLE: Visual Anchoring Posture
+
+### Summary
+
+Closed the last unresolved human-interface ambiguity in Currier A. Illustration labels are a **contextual posture** of the discrimination registry—structurally inert, semantically silent, optimally designed for expert human perception.
+
+### Key Findings
+
+| Test | Result |
+|------|--------|
+| Tail Pressure | Labels 6.14x more tail-heavy (select high-discrimination MIDDLEs) |
+| AZC Breadth | Labels reach 3.2x more zones (remain valid across operational contexts) |
+| Role Stability | Chi-square p=0.282 (same MIDDLE behaves identically in both postures) |
+| Contamination Audit | All structural invariants within perturbation envelope |
+
+### Two Postures, One Grammar
+
+| Posture | Placement | Token % | Function |
+|---------|-----------|---------|----------|
+| **Registry** | P* (text) | 98.5% | Catalog distinctions for procedural reference |
+| **Visual Anchoring** | L* (label) | 1.5% | Anchor human perception to registry |
+
+### Design Logic
+
+Labels select high-discrimination + high-compatibility coordinates because interface anchors must be:
+1. Distinct enough to matter perceptually (tail pressure ↑)
+2. Broadly valid before operational context is known (AZC breadth ↑)
+
+### Governance
+
+- **STATUS:** CLOSED with explanatory saturation
+- **NO constraints added** (existing C171, C384, C475-C478 sufficient)
+- **NO semantics introduced** (interface role is purely contextual)
+
+### Documentation Updated
+
+- `context/SPECULATIVE/tier3_interface_postures.md`: Full Tier 3 documentation
+- `context/ARCHITECTURE/currier_A_summary.md`: Section 7.4 added
+- `phases/A_LABEL_INTERFACE_ROLE/`: Phase scripts and results
+
+### Final Statement
+
+> "Illustration labels are Currier A discrimination entries operating in a perceptual anchoring posture. Labels preferentially use tail MIDDLEs that also exhibit broad AZC compatibility, allowing them to anchor high-discrimination percepts without constraining later operational context."
+
+---
+
 ## Version 2.52 (2026-01-16) - B-EXCL-ROLE: Three-Way MIDDLE Stratification
 
 ### Summary

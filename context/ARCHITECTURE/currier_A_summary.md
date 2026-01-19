@@ -221,6 +221,24 @@ Entry vocabulary composition shapes downstream options:
 - Tail-heavy entries: narrow compatibility
 - This is interface characterization, not semantic mapping
 
+### 7.4 Visual Anchoring Posture (Labels)
+
+Currier A entries can operate in **two postures** while following identical rules:
+
+| Posture | Placement | Token % | Tail Pressure | AZC Breadth |
+|---------|-----------|---------|---------------|-------------|
+| **Registry** | P* (text) | 98.5% | 0.031 | 0.70 zones |
+| **Visual Anchoring** | L* (label) | 1.5% | 0.190 | 2.25 zones |
+
+**Key findings:**
+- Labels are 6.14x more tail-heavy (select high-discrimination MIDDLEs)
+- Labels reach 3.2x more AZC zones (remain valid across operational contexts)
+- Chi-square test (p=0.282): Same MIDDLE behaves identically in both postures
+
+**Interpretation:** Labels anchor human perception to registry without pre-committing to operational context. The interface role is purely contextual — no semantics introduced.
+
+**See:** [tier3_interface_postures.md](../SPECULATIVE/tier3_interface_postures.md) for full analysis.
+
 ---
 
 ## 8. Constraints Summary
@@ -246,6 +264,7 @@ Entry vocabulary composition shapes downstream options:
 | Singleton isolation | PCC AXIS 2 |
 | A-AZC breadth interface | PCC AXIS 4 |
 | Section differences | PCC AXIS 1-4 |
+| **Visual Anchoring Posture** | **A_LABEL_INTERFACE_ROLE** |
 
 ---
 

@@ -32,8 +32,12 @@ def load_corpus():
         f.readline()
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) >= 12:
+            if len(parts) >= 13:
                 parts = [p.strip('"') for p in parts]
+                # Filter to PRIMARY transcriber (H) only
+                transcriber = parts[12].strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 records.append({
                     'word': parts[0],
                     'folio': parts[2],

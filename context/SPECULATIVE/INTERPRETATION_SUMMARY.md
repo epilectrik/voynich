@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.24
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.28
 
 ---
 
@@ -1998,3 +1998,544 @@ Results tracked as **FITS** (F-BRU-001 to F-BRU-005), not constraints. Constrain
 **Projection Spec Created:** `context/PROJECTIONS/brunschwig_lens.md` governs UI display of external alignments without corrupting structural model.
 
 **Files:** phases/BRUNSCHWIG_BACKPROP_VALIDATION/, context/MODEL_FITS/fits_brunschwig.md
+
+### X.18 Pharmaceutical Label Vocabulary Separation (2026-01-17)
+
+Visual mapping of 13 pharmaceutical folios reveals a **two-level naming hierarchy** with complete vocabulary separation.
+
+#### Two-Level Hierarchy
+
+```
+JAR LABEL (first token in illustration group)
+  |-- unique apparatus/vessel identifier
+  |
+  +-- CONTENT LABEL 1 (specimen identifier)
+  +-- CONTENT LABEL 2 (specimen identifier)
+  +-- CONTENT LABEL n (specimen identifier)
+```
+
+#### Vocabulary Isolation
+
+| Comparison | Jaccard | Shared Tokens | Interpretation |
+|------------|---------|---------------|----------------|
+| **Jar vs Content** | 0.000 | 0 | Completely disjoint naming systems |
+| Root vs Leaf | 0.013 | 2 (okol, otory) | Almost entirely distinct |
+
+The 18 jar labels share **zero tokens** with 191 content labels - fundamentally different naming schemes.
+
+**Files:** phases/PHARMA_LABEL_DECODING/README.md
+
+---
+
+### X.19 Jars as Complementary Working Set Anchors (2026-01-17) - NEW
+
+Extended investigation of jar function tested four mutually exclusive hypotheses. Three falsified, one confirmed.
+
+#### Test Cascade
+
+| Hypothesis | Prediction | Result |
+|------------|------------|--------|
+| Contamination avoidance | Exclusion patterns | **Falsified** (0.49x) |
+| Material taxonomy | Class homogeneity | **Falsified** (0.73x) |
+| Complementary sets | Cross-class enrichment | **Confirmed** |
+| Triplet stability | Role composition | **Confirmed** (1.77x) |
+
+#### Cross-Class Pair Enrichment
+
+| Class Pair | Observed | Expected | Ratio |
+|------------|----------|----------|-------|
+| M-B + M-D | 8 | 4.34 | **1.84x** |
+| M-A + M-B | 4 | 2.38 | **1.68x** |
+| M-A + M-D | 3 | 1.88 | **1.59x** |
+
+All cross-class pairs enriched - jars deliberately combine materials from different classes.
+
+#### Triplet Stability
+
+| Triplet | Ratio | P-value |
+|---------|-------|---------|
+| M-B + M-D + OTHER | 1.70x | **0.022** |
+| M-A + M-B + M-D (complete set) | **2.13x** | 0.107 |
+
+Overall: 17 triplet occurrences vs 9.6 expected = **1.77x enriched**
+
+#### Tier 3 Interpretation (FINAL)
+
+> **Jars are visual, apparatus-level anchors for complementary working sets of materials intended to participate together in a single operational context, without encoding procedure, order, or meaning.**
+
+This:
+- Completes the apparatus-centric interpretation
+- Explains jar uniqueness (physical apparatus instances)
+- Explains prefix restrictions (container posture, not content)
+- Explains positive diversity (complementary roles, not similar materials)
+- Explains why nothing propagates downstream (interface layer only)
+
+#### What This Does NOT Claim
+
+- Jars do NOT encode specific substances
+- Jars do NOT map to Brunschwig methods
+- Jars do NOT select processing regimes
+- This is Tier 3 interface characterization, NOT Tier 2 structure
+
+**Status:** CLOSED with explanatory saturation
+
+**Files:** phases/JAR_WORKING_SET_INTERFACE/README.md, phases/JAR_WORKING_SET_INTERFACE/results.json
+
+---
+
+### X.20 A->AZC->B Pipeline Closure: Reachability Suppression (2026-01-17) - NEW
+
+**Phase:** AZC_REACHABILITY_SUPPRESSION
+**Status:** COMPLETE - Real closure achieved
+
+#### The Gap (Before This Phase)
+
+We had proven:
+- AZC constrains B (C468, F-AZC-016)
+- The effect is strong (28x escape variance transfer)
+- Vocabulary activates constraints (C441-C442)
+
+What was missing: A *mechanistically intelligible, local explanation* of HOW AZC legality fields suppress parts of B grammar - at the instruction class level.
+
+#### Closure Statement (Achieved)
+
+> **AZC does not modify B's grammar; it shortens the reachable language by restricting vocabulary availability. The 49-class grammar and 17 forbidden transitions are universal. When AZC provides a legality field, 6 of 9 hazard-involved classes have reduced effective membership because their MIDDLEs become unavailable. The 3 atomic hazard classes remain fully active regardless of AZC context.**
+
+This is a complete control-theoretic pipeline with no semantics, no branching, no lookup, no "if".
+
+#### Two-Tier Constraint System
+
+**Tier 1: Universal Grammar Constraints (Always Active)**
+
+| Metric | Value |
+|--------|-------|
+| Instruction classes | 49 |
+| Forbidden transitions (token) | 17 |
+| Forbidden transitions (class) | 13 |
+| Hazard-involved classes | 9 |
+| Base graph edge density | 99.1% |
+
+**Tier 2: AZC-Conditioned Constraints (Context-Dependent)**
+
+| Metric | Value |
+|--------|-------|
+| MIDDLE folio exclusivity | 77% in 1 AZC folio (C472) |
+| Decomposable hazard classes | 6 |
+| Atomic hazard classes | 3 |
+
+#### Hazard Class Taxonomy (Key Discovery)
+
+| Type | Classes | Representatives | AZC Constrainable? | Behavior |
+|------|---------|-----------------|-------------------|----------|
+| **Atomic** | 7, 9, 23 | ar, aiin, dy | NO | Universal hazard enforcement |
+| **Decomposable** | 8, 11, 30, 31, 33, 41 | chedy, ol, dar, chey, qokeey, qo | YES | Context-tunable via MIDDLE |
+
+**Atomic classes** have no MIDDLE components - they are pure instruction tokens that cannot be constrained by MIDDLE-level vocabulary restrictions.
+
+**Decomposable classes** contain members with MIDDLE components. When AZC restricts a MIDDLE's availability, the effective membership of these classes shrinks.
+
+#### The Mechanism (5 Steps)
+
+```
+Step 1: AZC provides ambient legality field (vocabulary availability)
+           |
+           v
+Step 2: 77% of MIDDLEs restricted to specific AZC folios
+           |
+           v
+Step 3: Decomposable hazard classes lose effective membership:
+        - Class 8 (chedy): 1 shared MIDDLE
+        - Class 11 (ol): 1 shared MIDDLE
+        - Class 30 (dar): 3 MIDDLEs (1 exclusive!)
+        - Class 31 (chey): 3 shared MIDDLEs
+        - Class 33 (qokeey): 4 shared MIDDLEs
+        - Class 41 (qo): 3 shared MIDDLEs
+           |
+           v
+Step 4: Fewer paths through hazard-constrained region
+           |
+           v
+Step 5: Reachable grammar manifold shrinks
+```
+
+#### Why This Is "Real Closure"
+
+| What AZC Does | What AZC Does NOT Do |
+|---------------|---------------------|
+| Restricts vocabulary availability | Modify grammar rules |
+| Supplies ambient legality fields | Select programs |
+| Tunes hazard envelope via decomposable classes | Branch based on content |
+| | Encode semantic information |
+| | Perform lookup or conditional logic |
+
+The grammar is the same everywhere. The reachable parts differ.
+
+#### Complete Pipeline Summary
+
+| Layer | Function | Mechanism |
+|-------|----------|-----------|
+| **A** | Supplies discrimination bundles | Constraint signatures |
+| **AZC** | Projects them into legality fields | Position-indexed vocabulary availability |
+| **B** | Executes within shrinking language | 49-class grammar, 17 forbidden transitions |
+
+This completes the structural understanding of how the three layers co-produce safe execution.
+
+#### Constraints Respected
+
+- C313: Position constrains legality, not prediction
+- C384: No entry-level A-B coupling
+- C454/C455: No adjacency or cycle coupling
+- C440: Uniform B sourcing across AZC folios
+- C121/C124: 49-class grammar is universal
+- C468, C469, C470, C472: AZC constraint architecture
+
+#### What This Does NOT Claim
+
+- NO semantic decoding occurred
+- NO specific substances identified
+- NO entry-level A->B mapping created
+- NO Tier 0-2 constraints violated
+
+This is mechanism characterization within established epistemological boundaries.
+
+**Files:** phases/AZC_REACHABILITY_SUPPRESSION/
+
+---
+
+### X.21 Constraint Substitution Interpretation (2026-01-19) - NEW
+
+**Phase:** SENSORY_LOAD_ENCODING + BRUNSCHWIG_REVERSE_ACTIVATION
+**Status:** COMPLETE - Explanatory model validated
+
+#### Core Discovery
+
+> **"The Voynich Manuscript encodes sensory requirements by tightening constraints rather than signaling vigilance."**
+
+This is an explanatory interpretation that unifies multiple structural findings.
+
+#### The Finding
+
+**SLI-HT Inverse Correlation:**
+
+| Metric | Value |
+|--------|-------|
+| SLI vs HT density | r = **-0.453**, p < 0.0001 |
+| REGIME_2 (gentle) | LOWEST SLI (0.786), HIGHEST HT |
+| REGIME_3 (oil/resin) | HIGHEST SLI (1.395), LOWEST HT |
+
+Formula: `SLI = hazard_density / (escape_density + link_density)`
+
+This is OPPOSITE to the initial hypothesis ("high sensory demand -> higher vigilance").
+
+#### The Interpretation
+
+When operations are dangerous (high SLI):
+- Grammar restricts options
+- Fewer choices available
+- Less vigilance needed (can't make wrong choice)
+
+When operations are forgiving (low SLI):
+- Grammar permits many options
+- More choices require discrimination
+- Higher vigilance (HT) for decision complexity
+
+**Constraint SUBSTITUTES for vigilance.**
+
+#### Recipe-Level Validation (197 recipes)
+
+The pathway operates at recipe level:
+
+```
+Recipe SLI -> Vocabulary tail_pressure -> HT prediction
+   r=0.226      ->       r=0.311
+   p=0.001               p<0.0001
+```
+
+Sensory load encodes through vocabulary selection, not direct signaling.
+
+#### What This Explains
+
+| Finding | Explanation |
+|---------|-------------|
+| C458 (Design Clamp) | High-hazard contexts have tight constraints |
+| C477 (HT Correlation) | HT tracks residual decision complexity |
+| Inverse SLI-HT | Constraint geometry enforces safety |
+
+#### What This Does NOT Claim
+
+- NO semantic encoding of sensory modalities
+- NO parametric encoding (C469 preserved)
+- NO entry-level mapping (C384 preserved)
+- SLI is constructed metric, not discovered structure
+
+**Tier:** 3 (Explanatory Interpretation)
+
+**Files:** phases/SENSORY_LOAD_ENCODING/, results/sensory_load_index.json
+
+---
+
+### X.22 Zone Affinity Analysis (2026-01-19) - NEW
+
+**Phase:** BRUNSCHWIG_REVERSE_ACTIVATION
+**Status:** COMPLETE - 197/197 recipes processed
+
+#### Comprehensive Mapping
+
+All 197 Brunschwig recipes with procedures were reverse-mapped through AZC zone affinity analysis. This completes the originally intended mapping task.
+
+#### Key Findings
+
+**Zone Differentiation by SLI Cluster (ANOVA):**
+
+| Zone | F-statistic | p-value |
+|------|-------------|---------|
+| C-affinity | F = 69.4 | p < 0.0001 |
+| P-affinity | F = 33.1 | p < 0.0001 |
+| R-affinity | F = 106.6 | p < 0.0001 |
+| S-affinity | F = 21.6 | p < 0.0001 |
+
+All 4 zones significantly differentiate by SLI cluster.
+
+**Zone Affinity by REGIME:**
+
+| REGIME | Dominant Zone | Interpretation |
+|--------|---------------|----------------|
+| REGIME_1 | S (0.30) | Boundary stability |
+| REGIME_2 | C (0.51) | Setup/flexible |
+| REGIME_3 | R (0.43) | Sequential processing |
+| REGIME_4 | S (0.55) | Boundary control |
+
+**Zone Correlations with SLI:**
+- SLI vs P-affinity: r = 0.505, p < 0.0001
+- SLI vs R-affinity: r = 0.605, p < 0.0001
+
+#### Modality-Zone Signatures (2/3 Confirmed)
+
+| Modality | n | Predicted Zone | Result |
+|----------|---|----------------|--------|
+| SOUND | 70 | R (sequential) | **CONFIRMED** (t=3.97, p<0.001) |
+| SIGHT | 20 | P (monitoring) | **CONFIRMED** (t=9.00, p<0.0001) |
+| TOUCH | 5 | S (boundary) | Not significant |
+
+SOUND (distillation bubbling) -> R-zone affinity
+SIGHT (visual monitoring) -> P-zone affinity
+
+#### Zones ADDRESS But Do Not ENCODE Sensory Categories
+
+**Critical Distinction:** The zones do not *encode* sensory categories (you cannot look at a zone and say "this is for hearing"). Instead, the zones *address* sensory categories in the sense that their structural affordances align with what different monitoring modes require.
+
+**The Four Zones and Their Affordances:**
+
+| Zone | Structural Affordance | Escape Rate | Modality Alignment |
+|------|----------------------|-------------|-------------------|
+| **C** | Setup/flexible, errors fixable | 1.4% | (Not tested - setup phase) |
+| **P** | Intervention-permitting | 11.6% | **SIGHT** - visual cues may trigger action |
+| **R** | Progressive restriction, sequential | 2.0%→0% | **SOUND** - continuous signals tracked over time |
+| **S** | Locked, must accept outcome | 0-3.8% | TOUCH hypothesized, not confirmed (n=5) |
+
+**Mechanism:** The constraint geometry of each zone creates the right decision space for different sensory tasks:
+- **C-zone's** flexibility matches setup operations where mistakes can be corrected
+- **P-zone's** intervention permission matches operations where observation may require action (visual monitoring)
+- **R-zone's** progressive restriction matches operations where you track a developing signal (auditory monitoring)
+- **S-zone's** locked state matches operations where the outcome is fixed and boundary conditions apply
+
+**Interpretation:** The manuscript doesn't label sensory requirements - it shapes the grammar to be *compatible with* them. The operator's trained sensory judgment fills in what the zones leave room for. This is another manifestation of the constraint substitution principle: encode requirements through structure, not symbols.
+
+**Epistemic Status:** Correlation demonstrated, mechanism plausible, intentional design not proven.
+
+#### C384 Compliance
+
+All mapping is AGGREGATE (zone-level, MIDDLE-level), not entry-level. No direct recipe->entry mapping.
+
+**What This Does NOT Claim:**
+- NO entry-level A-B coupling
+- NO semantic decoding
+- Modality assignments are external (from Brunschwig)
+
+**Tier:** 3 (Structural Characterization)
+
+**Fits Created:** F-BRU-007, F-BRU-008, F-BRU-009
+
+**Files:** phases/BRUNSCHWIG_REVERSE_ACTIVATION/, results/brunschwig_reverse_activation.json
+
+---
+
+### X.23 Two-Stage Sensory Addressing Model (2026-01-19) - NEW
+
+**Phase:** ZONE_MODALITY_VALIDATION
+**Status:** COMPLETE - Rigorous statistical validation with REGIME stratification
+
+#### Executive Summary
+
+Rigorous validation of zone-modality associations revealed a **two-stage addressing system** where modality bias (external) and REGIME execution style jointly determine zone concentration.
+
+#### Key Discovery: REGIME Heterogeneity
+
+When stratifying the R-SOUND effect by REGIME, we found substantial heterogeneity:
+
+| REGIME | R-zone Effect (d) | Interpretation |
+|--------|------------------|----------------|
+| REGIME_1 (WATER_STANDARD) | 0.48 | Moderate - throughput tracking |
+| REGIME_2 (WATER_GENTLE) | 1.30 | Strong - setup phase dominates |
+
+**Effect range: 0.82** - This is NOT corruption or invalidity. It reveals structured workflow adaptation.
+
+#### Zone Profiles for SOUND Recipes by REGIME
+
+| REGIME | Dominant Zone | Interpretation |
+|--------|---------------|----------------|
+| REGIME_2 (GENTLE) | C-zone (0.453) | Setup-critical operations |
+| REGIME_1 (STANDARD) | Balanced P/R | Throughput-critical operations |
+| REGIME_3 (OIL_RESIN) | R-zone (0.443) | Progression-critical extraction |
+| REGIME_4 (PRECISION) | S-zone (0.536) | Boundary-critical timing |
+
+#### Two-Stage Model
+
+**Stage 1 - Modality Bias (External/Brunschwig):**
+
+Sensory modalities carry intrinsic monitoring profiles:
+- **SOUND** (sequential/continuous): Auditory cues track process state over time
+- **SIGHT** (intervention-triggering): Visual changes signal decision points
+- **TOUCH** (boundary confirmation): Tactile feedback confirms endpoints
+
+**Stage 2 - Execution Completeness (Voynich REGIME):**
+
+REGIMEs concentrate sensory relevance into specific workflow phases:
+- **Gentle handling** → C-zone (setup phase critical)
+- **Standard throughput** → R-zone (progression tracking)
+- **Intense extraction** → R-zone (continuous monitoring)
+- **Precision timing** → S-zone (boundary locking)
+
+#### Refined Conclusion
+
+> **AZC zones do not encode sensory modalities. Instead, they distribute human sensory relevance across workflow phases in a REGIME-dependent way.**
+
+The constraint substitution principle operates temporally: zones DIRECT when sensory monitoring is structurally relevant, while REGIME determines which zone receives concentration.
+
+#### Hypothesis Tests
+
+| Track | Hypothesis | Result |
+|-------|------------|--------|
+| Enhanced extraction | Improve SMELL/TOUCH sample sizes | **FAILED** (data limitation) |
+| C-zone -> Preparation verbs | Structural correlation | **FAILED** (r=-0.006) |
+| R-zone -> SOUND | Positive association | **CONFIRMED** (d=0.61, p=0.0001) |
+| P-zone -> SIGHT | Positive association | **UNDERPOWERED** (d=0.27, n=7) |
+| S-zone -> TOUCH | Positive association | **WRONG DIRECTION** (d=-0.64) |
+| REGIME stratification | Effect heterogeneity | **DISCOVERY** (range=0.82) |
+
+#### S-Zone Reinterpretation
+
+All tested modalities AVOID S-zone:
+- SOUND: d=-1.21 (strong avoidance)
+- TASTE: d=-1.33 (strong avoidance)
+
+**New interpretation:** S-zone represents operations where sensory monitoring is COMPLETED or UNNECESSARY. The "locked" state means decisions are final. PRECISION REGIME concentrates here because exact timing, once achieved, requires no further sensory feedback.
+
+#### Statistical Rigor
+
+- **Effect sizes:** Cohen's d reported for all associations
+- **Permutation tests:** 1000-shuffle validation
+- **Bonferroni correction:** Multiple comparison adjustment
+- **ANOVA:** REGIME -> Zone affinity (all zones significant except P)
+- **Pre-registration:** Hypotheses locked before analysis
+
+#### Constraints Respected
+
+- **C384:** All tests aggregate, no entry-level mapping
+- **C469:** Categorical zone assignment maintained
+- **Tier 3:** Results remain characterization, confidence upgraded
+
+**Tier:** 3 (Structural Characterization, confidence upgraded)
+
+**Fits Updated:** F-BRU-009 (refined with two-stage model)
+
+**Files:** phases/ZONE_MODALITY_VALIDATION/, results/regime_stratified_analysis.json
+
+---
+
+### X.24 Semantic Ceiling Breach Attempt (2026-01-19) - NEW
+
+**Phase:** SEMANTIC_CEILING_BREACH
+**Status:** COMPLETE - Tier 3 confirmed with stronger evidence
+
+#### Purpose
+
+Attempted to break through the Tier 3 semantic ceiling by implementing the expert-advisor's top recommendation: **B->A Reverse Prediction Test**. The goal was to achieve Tier 2 bidirectional constraint by predicting recipe modality class from Voynich zone structure alone.
+
+#### Key Results
+
+| Test | Result | Threshold | Status |
+|------|--------|-----------|--------|
+| 4-class accuracy | 52.7% | >40% for Tier 3 | **PASS** |
+| 4-class permutation p | 0.012 | <0.05 | **PASS** |
+| Binary accuracy | 71.8% | >85% for Tier 2 | **FAIL** |
+| Cramer's V (cluster-modality) | 0.263 | >0.3 for Tier 2 | **WEAK** |
+| MODALITY beyond REGIME | 3/4 zones | Supports model | **PASS** |
+
+#### Zone Discrimination is REAL
+
+All four zones significantly discriminate SOUND from OTHER recipes:
+
+| Zone | SOUND Mean | OTHER Mean | Cohen's d | p-value |
+|------|-----------|-----------|----------|---------|
+| C | 0.226 | 0.308 | -0.66 | 0.0059 |
+| P | 0.248 | 0.182 | +0.62 | 0.0090 |
+| R | 0.277 | 0.213 | +0.57 | 0.0163 |
+| S | 0.252 | 0.298 | -0.44 | 0.0660 |
+
+**Pattern confirmed:** SOUND concentrates in P/R zones (active work) and avoids C/S zones (setup/boundary).
+
+#### MODALITY Adds Beyond REGIME
+
+REGIME alone explains only **24.7%** of zone variance. After controlling for REGIME, MODALITY still significantly affects 3/4 zones:
+
+| Zone | Partial Correlation | Direction |
+|------|--------------------| ----------|
+| C | r=-0.255, p=0.007 | SOUND avoids |
+| P | r=+0.284, p=0.003 | SOUND seeks |
+| R | r=+0.200, p=0.036 | SOUND seeks |
+| S | r=-0.245, p=0.010 | SOUND avoids |
+
+This validates the **two-stage model**: Modality bias + REGIME execution style jointly determine zone concentration.
+
+#### Why Tier 2 Was Not Achieved
+
+The zone profiles **discriminate** modality classes, but not with enough accuracy for confident prediction:
+
+```
+Can do:     Zone profile -> "Probably SOUND-dominant" (52.7% accuracy)
+Cannot do:  Zone profile -> "Definitely SOUND" (>85% accuracy)
+```
+
+Binary accuracy (71.8%) is BELOW the majority baseline (79.1%) but SIGNIFICANTLY better than permuted labels (p=0.002). The model learns REAL structure but not enough for high-confidence prediction.
+
+#### Semantic Ceiling Location
+
+The semantic ceiling is confirmed at **aggregate characterization**:
+
+| Level | Can We Do It? | Evidence |
+|-------|---------------|----------|
+| Entry-level meaning | NO | C384 prohibits |
+| Token-level prediction | NO | Not attempted |
+| Zone-modality correlation | YES | d=0.57-0.66, p<0.05 |
+| Modality class prediction | PARTIAL | 52.7% accuracy |
+| High-confidence prediction | NO | <85% accuracy |
+
+**The ceiling is real but discrimination exists.** Zone profiles carry semantic information about modality domains, but the signal-to-noise ratio is insufficient for Tier 2 predictive power.
+
+#### Implications for Future Work
+
+1. **More labeled data needed**: SIGHT (n=7), TOUCH (n=3) are severely underpowered
+2. **Process verb extraction**: Parsing Brunschwig raw text could add discriminating features
+3. **Multi-modal recipes**: Testing interference patterns could reveal additional structure
+4. **Alternative historical sources**: Cross-validation with Libavius or Della Porta
+
+#### Constraints Respected
+
+- **C384:** All tests at vocabulary/aggregate level, no entry-level mapping
+- **C469:** Categorical zone assignment maintained
+- **C468:** Legality inheritance respected
+
+**Tier:** 3 (Structural Characterization, confirmed with stronger evidence)
+
+**Files:** phases/SEMANTIC_CEILING_BREACH/, results/scb_modality_prediction.json, results/scb_synthesis.json

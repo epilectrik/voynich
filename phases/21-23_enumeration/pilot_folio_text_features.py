@@ -48,6 +48,11 @@ def load_corpus() -> List[Dict]:
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to H (PRIMARY) transcriber track only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             word = row.get('word', '').strip().strip('"')
             folio = row.get('folio', '').strip().strip('"')
             line_num = row.get('line_number', '').strip().strip('"')
