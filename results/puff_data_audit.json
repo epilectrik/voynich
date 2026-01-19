@@ -1,0 +1,54 @@
+{
+  "audit_date": "2026-01-19",
+  "reference_data": {
+    "file": "puff_83_chapters.json",
+    "total_chapters": 85,
+    "coverage": "100%",
+    "dangerous_chapters": [
+      17,
+      38,
+      57,
+      60,
+      79
+    ],
+    "aromatic_count": 16,
+    "external_source_count": 2,
+    "category_distribution": {
+      "FLOWER": 17,
+      "HERB": 42,
+      "TREE_FLOWER": 5,
+      "FERN": 1,
+      "SUCCULENT": 1,
+      "BULB": 1,
+      "VEGETABLE": 1,
+      "ROOT": 5,
+      "FRUIT": 1,
+      "SHRUB": 1,
+      "FUNGUS": 2,
+      "PARASITE": 1,
+      "TREE_LEAF": 1,
+      "VINE": 1,
+      "ANIMAL": 1,
+      "OIL": 1,
+      "LEGUME_FLOWER": 1,
+      "BERRY": 1,
+      "SPIRIT": 1
+    }
+  },
+  "extracted_semantics": {
+    "file": "puff_chapter_semantics.json",
+    "chapters_extracted": 47,
+    "coverage_pct": 55.3,
+    "application_unknown_pct": 57.4,
+    "humoral_neutral_pct": 91.5,
+    "alignment_preserved": false
+  },
+  "test_viability": {
+    "T4_category_prefix": "VIABLE",
+    "T8_complexity_cluster": "VIABLE",
+    "T9_danger_ht": "VIABLE",
+    "T5_humoral_regime": "LIMITED",
+    "T3_organ_zone": "SKIP"
+  },
+  "recommendation": "Proceed with T4, T8, T9 using clean reference data"
+}

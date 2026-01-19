@@ -4,6 +4,41 @@
 
 ---
 
+## Version 2.62 (2026-01-19) - PUFF_STRUCTURAL_TESTS: Evidential Ceiling Confirmed
+
+### Summary
+
+Tested whether improved AZC/Currier A understanding enables new Puff-Voynich structural linkages beyond existing curriculum-level alignment (10/11 prior tests pass).
+
+**Result: No new linkage found (0/2 tests passed)**
+
+### Tests Executed
+
+| Test | Hypothesis | Result |
+|------|------------|--------|
+| T9 (Danger -> HT) | Dangerous materials have elevated HT | **FAIL** (effect reversed) |
+| T8 (Complexity -> Breadth) | Complex materials need larger vocabulary | **FAIL** (effect reversed) |
+| T4 (Category -> PREFIX) | Material categories correlate with PREFIX | CONSTRAINED (A-B linkage too weak) |
+
+### Key Findings
+
+- Dangerous Puff positions have LOWER HT (0.133 vs 0.150)
+- Later Puff positions have SMALLER vocabulary (168 vs 186)
+- A-B linkage only 4% above baseline - insufficient for Category->PREFIX test
+
+### Conclusion
+
+Puff evidential ceiling confirmed. Curriculum-level alignment established; structural linkage not found. Further Puff testing would require semantic interpretation (prohibited) or external provenance research.
+
+**Puff remains Tier 3-4 SPECULATIVE.**
+
+### Documentation
+
+- Phase: `phases/PUFF_STRUCTURAL_TESTS/`
+- Results: `results/puff_danger_ht_test.json`, `results/puff_complexity_breadth_test.json`
+
+---
+
 ## Version 2.61 (2026-01-19) - BC_EXPLANATION_ENFORCEMENT: Brunschwig Relationship Bounded
 
 ### Summary
