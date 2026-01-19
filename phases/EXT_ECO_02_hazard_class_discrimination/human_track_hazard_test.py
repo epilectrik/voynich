@@ -65,6 +65,10 @@ def load_transcription():
 
             parts = line.split('\t')
             if len(parts) >= 2:
+                # H-only transcriber filter (CRITICAL: avoids 3.2x token inflation)
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 folio_id = parts[0].split('.')[0] if '.' in parts[0] else parts[0]
                 raw_tokens = parts[1].split() if len(parts) > 1 else []
                 tokens = [t.strip('"') for t in raw_tokens]

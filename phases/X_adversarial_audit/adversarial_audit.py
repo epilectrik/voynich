@@ -27,9 +27,13 @@ def load_transcription():
         reader = csv.DictReader(f, delimiter='\t')
         seen = set()
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             word = row['word'].strip('"')
             folio = row['folio'].strip('"')
-            # Deduplicate across transcribers - use first occurrence
             key = (folio, row['line_number'], row['line_initial'])
             if key not in seen and word and not word.startswith('*'):
                 seen.add(key)

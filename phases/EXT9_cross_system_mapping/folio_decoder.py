@@ -77,6 +77,10 @@ def load_folio(folio_id):
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) > 6:
+                # CRITICAL: Filter to H-only transcriber track
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     folio = parts[2].strip('"').strip() if len(parts) > 2 else ''
@@ -218,6 +222,10 @@ def list_folios():
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) > 6:
+                # CRITICAL: Filter to H-only transcriber track
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 lang = parts[6].strip('"').strip()
                 if lang == 'A':
                     word = parts[0].strip('"').strip().lower()

@@ -20,6 +20,8 @@ from collections import Counter, defaultdict
 DATA_PATH = r"C:\git\voynich\data\transcriptions\interlinear_full_words.txt"
 
 df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False)
+# Filter to H transcriber only
+df = df[df['transcriber'] == 'H']
 df_a = df[df['language'] == 'A'].copy()
 df_b = df[df['language'] == 'B'].copy()
 

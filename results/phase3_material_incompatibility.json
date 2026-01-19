@@ -1,0 +1,77 @@
+{
+  "phase": "phase3_material_incompatibility",
+  "question": "Do MIDDLE incompatibilities align with material processing incompatibilities?",
+  "method": "Line-level co-occurrence in B folios by REGIME/product type",
+  "brunschwig_prediction": {
+    "statement": "WATER_GENTLE (1st degree) and OIL_RESIN (3rd degree) should be highly incompatible",
+    "reasoning": "Gentle aromatics destroyed by high heat required for resins"
+  },
+  "summary": {
+    "total_middles": 3118,
+    "total_possible_pairs": 4859403,
+    "compatible_pairs": 533604,
+    "overall_incompatibility_rate": 0.890191449443481
+  },
+  "cross_product_rates": {
+    "WATER_GENTLE (self)": {
+      "rate": 0.6162923187096869,
+      "incompatible": 500862,
+      "total": 812702
+    },
+    "WATER_GENTLE x WATER_STANDARD": {
+      "rate": 0.7509999879709309,
+      "incompatible": 1311074,
+      "total": 1745771
+    },
+    "WATER_GENTLE x OIL_RESIN": {
+      "rate": 0.6936574445579223,
+      "incompatible": 608554,
+      "total": 877312
+    },
+    "WATER_GENTLE x PRECISION": {
+      "rate": 0.7185467272324907,
+      "incompatible": 561716,
+      "total": 781739
+    },
+    "WATER_STANDARD (self)": {
+      "rate": 0.8063718581160442,
+      "incompatible": 3020798,
+      "total": 3746160
+    },
+    "WATER_STANDARD x OIL_RESIN": {
+      "rate": 0.7605481977645366,
+      "incompatible": 1432256,
+      "total": 1883189
+    },
+    "WATER_STANDARD x PRECISION": {
+      "rate": 0.7804756683312873,
+      "incompatible": 1309685,
+      "total": 1678060
+    },
+    "OIL_RESIN (self)": {
+      "rate": 0.6587216998887663,
+      "incompatible": 622990,
+      "total": 945756
+    },
+    "OIL_RESIN x PRECISION": {
+      "rate": 0.7266255558849689,
+      "incompatible": 612727,
+      "total": 843250
+    },
+    "PRECISION (self)": {
+      "rate": 0.7181648912791581,
+      "incompatible": 539214,
+      "total": 750822
+    }
+  },
+  "key_test": {
+    "gentle_resin_rate": 0.6936574445579223,
+    "gentle_self_rate": 0.6162923187096869,
+    "resin_self_rate": 0.6587216998887663,
+    "cross_vs_gentle_self": 0.0773651258482354,
+    "cross_vs_resin_self": 0.034935744669156055,
+    "threshold_met": false,
+    "higher_than_self": true
+  },
+  "status": "FAIL"
+}

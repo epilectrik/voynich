@@ -8,10 +8,14 @@ import csv
 with open('visual_coding_complete.json') as f:
     vc = json.load(f)
 
-# Load transcription
+# Load transcription (H transcriber only)
 with open('data/transcriptions/interlinear_full_words.txt', newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f, delimiter='\t')
-    trans_rows = list(reader)
+    trans_rows = []
+    for row in reader:
+        transcriber = row.get('transcriber', '').strip().strip('"')
+        if transcriber == 'H':
+            trans_rows.append(row)
 
 print("=" * 60)
 print("ALIGNMENT VERIFICATION")

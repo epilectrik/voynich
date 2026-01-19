@@ -1,0 +1,65 @@
+{
+  "q1_incompatibility": {
+    "question": "Closure vs Incompatibility Pressure",
+    "order_sensitivity": "INVARIANT",
+    "n_with_closure": 1198,
+    "n_without_closure": 381,
+    "mean_density_with": 0.9834362225899231,
+    "mean_density_without": 0.9843281764660706,
+    "mann_whitney_u": 213712.5,
+    "p_value": 0.9693499939993904,
+    "cohens_d": -0.09933594861541997,
+    "verdict": "NO",
+    "interpretation": "Closure is independent of incompatibility pressure"
+  },
+  "q2_novelty": {
+    "question": "Closure vs Novelty (Rare MIDDLEs)",
+    "order_sensitivity": "INVARIANT",
+    "n_rare_middles": 1548,
+    "rate_with_closure": 0.6368948247078464,
+    "rate_without_closure": 0.6981627296587927,
+    "mean_rare_with": 1.176126878130217,
+    "mean_rare_without": 1.2913385826771653,
+    "chi2": 4.514164268198124,
+    "p_chi": 0.03361530483220414,
+    "mann_whitney_u": 211918.5,
+    "p_mw": 0.9860365358157585,
+    "verdict": "WEAK_YES",
+    "interpretation": "Marginal association with rare MIDDLEs"
+  },
+  "q3_adjacency": {
+    "question": "Closure vs Adjacency Boundaries",
+    "order_sensitivity": "FOLIO_LOCAL_ORDER",
+    "n_pairs_after_closure": 1105,
+    "n_pairs_after_no_closure": 360,
+    "mean_jaccard_after_closure": 0.08130938385377755,
+    "mean_jaccard_after_no_closure": 0.07768691756887948,
+    "difference": 0.003622466284898068,
+    "mann_whitney_u": 203442.0,
+    "p_value": 0.7501334939117451,
+    "verdict": "NO",
+    "interpretation": "Closure does not mark adjacency boundaries"
+  },
+  "q4_fragility": {
+    "question": "Closure vs Discrimination Fragility",
+    "order_sensitivity": "INVARIANT",
+    "complexity_rates": {
+      "low (1-3)": 0.7458563535911602,
+      "medium (4-6)": 0.749618320610687,
+      "high (7+)": 0.7698519515477793
+    },
+    "tail_rates": {
+      "no_tail": 0.7638036809815951,
+      "low_tail": 0.7354497354497355,
+      "high_tail": 0.7325581395348837
+    },
+    "chi2_complexity": 0.3423857697574373,
+    "p_complexity": 0.5584553369909839,
+    "chi2_tail": 0.27900904470594656,
+    "p_tail": 0.5973514606183761,
+    "verdict_complexity": "NO",
+    "verdict_tail": "NO",
+    "overall_verdict": "NO",
+    "interpretation": "Closure is independent of discrimination fragility"
+  }
+}

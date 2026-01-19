@@ -22,6 +22,8 @@ from pathlib import Path
 
 def load_data(filepath):
     df = pd.read_csv(filepath, sep='\t', na_values='NA', low_memory=False)
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     return df
 
 def is_ht_token(token):

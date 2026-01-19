@@ -1,0 +1,44 @@
+{
+  "infrastructure_classes": [
+    36,
+    42,
+    44,
+    46
+  ],
+  "infrastructure_middles": [
+    "ckh",
+    "d",
+    "eeo",
+    "eod",
+    "k",
+    "kch",
+    "ke",
+    "keeo",
+    "keo",
+    "oct",
+    "ok",
+    "ot",
+    "pch",
+    "t",
+    "tch",
+    "teo"
+  ],
+  "zone_presence": {
+    "C": {
+      "legal": 7,
+      "total": 16
+    },
+    "P": {
+      "legal": 7,
+      "total": 16
+    },
+    "R": {
+      "legal": 7,
+      "total": 16
+    },
+    "S": {
+      "legal": 3,
+      "total": 16
+    }
+  }
+}

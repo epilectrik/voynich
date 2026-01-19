@@ -55,6 +55,9 @@ def load_ht_types_per_folio():
         reader = csv.DictReader(f, delimiter='\t', quotechar='"')
 
         for row in reader:
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
             folio = row.get('folio', '').strip('"')
             token = row.get('word', '').strip('"')
 

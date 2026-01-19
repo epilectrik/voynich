@@ -1,0 +1,74 @@
+{
+  "folio": "f99v",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "total_jars": 4,
+  "total_roots": 21,
+  "total_labels": 25,
+  "groups": [
+    {
+      "row": 1,
+      "position": "top",
+      "jar": "okaramy",
+      "roots": [
+        "otoldy",
+        "otorchy",
+        "oldy",
+        {"token": "darary", "note": "TWO labels merged by transcriber"},
+        "otaly",
+        "olsy",
+        "arol",
+        "otoky"
+      ],
+      "root_count": 8,
+      "notes": null
+    },
+    {
+      "row": 2,
+      "position": "middle-upper",
+      "jar": "okoldody",
+      "roots": [
+        "oeeesary",
+        "daiiinc",
+        "sary",
+        "saiino",
+        "otolsar",
+        "osary"
+      ],
+      "root_count": 6,
+      "notes": "No double labels"
+    },
+    {
+      "row": 3,
+      "position": "middle-lower",
+      "jar": "darolaly",
+      "roots": [
+        "okechy",
+        "otal",
+        {"token": "chor olekor", "note": "TWO labels merged by transcriber"},
+        "okeodor",
+        "olky",
+        "doldam"
+      ],
+      "root_count": 6,
+      "notes": null
+    },
+    {
+      "row": 4,
+      "position": "bottom",
+      "jar": "oralas",
+      "roots": [
+        "koleearol"
+      ],
+      "root_count": 1,
+      "notes": "Spaced out layout. Token 'ychololkeeoldy' nearby is likely Human Track, not label."
+    }
+  ],
+  "excluded_tokens": [
+    {
+      "token": "ychololkeeoldy",
+      "reason": "Likely Human Track, not a label - unusual length and format"
+    }
+  ]
+}

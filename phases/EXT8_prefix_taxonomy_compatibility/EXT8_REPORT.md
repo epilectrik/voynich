@@ -4,6 +4,7 @@
 **Tier:** 2 (STRUCTURAL INFERENCE)
 **Status:** COMPLETE
 **Date:** 2026-01-06
+**Updated:** 2026-01-16 (H-only transcriber filter applied)
 
 ---
 
@@ -19,45 +20,45 @@
 
 | Prefix | Section H | Section P | Section T | Total |
 |--------|-----------|-----------|-----------|-------|
-| CT     | 85.9%     | 8.6%      | 5.5%      | 1,492 |
-| CH     | 75.5%     | 19.5%     | 5.0%      | 7,181 |
-| SH     | 74.7%     | 16.6%     | 8.8%      | 3,303 |
-| OT     | 72.8%     | 19.5%     | 7.7%      | 1,640 |
-| DA     | 71.8%     | 21.8%     | 6.4%      | 3,619 |
-| QO     | 69.2%     | 25.1%     | 5.7%      | 3,449 |
-| OK     | 55.5%     | 35.4%     | 9.1%      | 1,905 |
-| OL     | 52.9%     | 38.7%     | 8.4%      | 853   |
+| CT     | 86.0%     | 10.2%     | 3.8%      | 449   |
+| CH     | 72.7%     | 21.0%     | 6.4%      | 2,140 |
+| SH     | 72.3%     | 18.6%     | 9.1%      | 1,004 |
+| OT     | 69.5%     | 20.0%     | 10.6%     | 491   |
+| DA     | 71.0%     | 21.6%     | 7.3%      | 1,067 |
+| QO     | 65.0%     | 25.8%     | 9.2%      | 1,091 |
+| OK     | 51.2%     | 37.7%     | 11.1%     | 615   |
+| OL     | 49.0%     | 39.5%     | 11.5%     | 286   |
 
-**Specialization variance:** 102.6 (SPECIALIZED)
-**Range:** 53% - 86%
+**Specialization variance:** 127.7 (SPECIALIZED)
+**Range:** 49% - 86%
 
-### MIDDLE (1,155 unique values)
+### MIDDLE (725 unique values)
 
 | Middle | Section H | Section P | Section T | Total | Notes |
 |--------|-----------|-----------|-----------|-------|-------|
-| -iin   | 77.7%     | 19.1%     | 3.2%      | 1,778 | DA exclusive |
-| -k     | 53.5%     | 39.6%     | 6.9%      | 1,015 | QO dominant |
-| -o     | 83.9%     | 10.7%     | 5.5%      | 935   | Universal |
-| -h     | 82.6%     | 12.7%     | 4.7%      | 740   | **CT exclusive** |
-| -t     | 87.8%     | 10.2%     | 2.0%      | 597   | QO dominant |
-| -e     | 60.0%     | 29.9%     | 10.2%     | 472   | Universal |
+| -iin   | 77.5%     | 19.4%     | 3.1%      | 515   | DA exclusive |
+| -k     | 49.1%     | 40.5%     | 10.4%     | 326   | QO dominant |
+| -o     | 83.3%     | 11.0%     | 5.7%      | 282   | Universal |
+| -h     | 82.7%     | 14.2%     | 3.1%      | 225   | **CT exclusive** |
+| -t     | 86.3%     | 11.4%     | 2.3%      | 175   | QO dominant |
+| -e     | 55.0%     | 32.9%     | 12.1%     | 149   | Universal |
 
-**Specialization variance:** 131.3 (SPECIALIZED)
-**Range:** 51% - 89%
+**Specialization variance:** 182.4 (SPECIALIZED)
+**Range:** 48% - 90%
 
 ### SUFFIX (27 unique values)
 
 | Suffix | Section H | Section P | Section T | Total |
 |--------|-----------|-----------|-----------|-------|
-| -ol    | 78.1%     | 17.4%     | 4.6%      | 2,345 |
-| -y     | 75.9%     | 15.0%     | 9.1%      | 1,617 |
-| -or    | 83.4%     | 12.9%     | 3.7%      | 1,493 |
-| -ey    | 63.0%     | 28.5%     | 8.4%      | 1,220 |
-| -hy    | 82.0%     | 13.5%     | 4.5%      | 1,021 |
-| -chy   | 93.8%     | 3.9%      | 2.3%      | 870   |
-| -eol   | 36.6%     | **59.7%** | 3.7%      | 694   | **Section P dominant** |
+| -ol    | 76.3%     | 19.5%     | 4.2%      | 712   |
+| -y     | 71.7%     | 15.7%     | 12.6%     | 484   |
+| -or    | 80.9%     | 14.6%     | 4.5%      | 446   |
+| -ey    | 59.9%     | 30.9%     | 9.2%      | 379   |
+| -hy    | 81.3%     | 13.8%     | 4.9%      | 305   |
+| -chy   | 92.2%     | 4.3%      | 3.5%      | 255   |
+| -eol   | 33.1%     | **61.6%** | 5.3%      | 245   | **Section P dominant** |
 
-**Specialization variance:** 160.5 (SPECIALIZED)
+**Specialization variance:** 180.6 (SPECIALIZED)
 **Note:** One suffix (-eol) is Section P dominant — the only axis value favoring P.
 
 ---
@@ -68,17 +69,17 @@
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
-| Chi-square | 25,303.36 | |
+| Chi-square | 7,577.79 | |
 | p-value | **< 10⁻³⁰⁰** | Effectively zero |
-| Cramer's V | **0.674** | **STRONG** |
+| Cramer's V | **0.671** | **STRONG** |
 
 **Critical finding:** MIDDLE is **STRONGLY PREFIX-BOUND**
 
 | Category | Count | Examples |
 |----------|-------|----------|
-| **EXCLUSIVE middles** (1 prefix only) | 28 | -h (CT), -in (DA), -m (DA), -ir (DA), -kcho (QO) |
-| **UNIVERSAL middles** (6+ prefixes) | 10 | -o, -e, -ch, -ol, -s, -ain |
-| **SHARED middles** (2-5 prefixes) | 100 | |
+| **EXCLUSIVE middles** (1 prefix only) | 8 | -h (CT), -in (DA), -m (DA), -ir (DA), -kch (QO) |
+| **UNIVERSAL middles** (6+ prefixes) | 7 | -o, -e, -ol, -os, -s, -oiin, -ain |
+| **SHARED middles** (2-5 prefixes) | 42 | |
 
 **Interpretation:** Different PREFIX families have different available MIDDLE modifiers. This is inconsistent with MIDDLE being a universal property (like quality grade) and consistent with MIDDLE being a TYPE-SPECIFIC refinement (like botanical variety within a plant family).
 
@@ -86,16 +87,16 @@
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
-| Chi-square | 2,955.39 | |
-| p-value | **< 10⁻³⁰⁰** | Effectively zero |
-| Cramer's V | **0.183** | **MODERATE** |
+| Chi-square | 864.44 | |
+| p-value | **< 10⁻¹³³** | Effectively zero |
+| Cramer's V | **0.178** | **MODERATE** |
 
 **Critical finding:** SUFFIX is **LARGELY UNIVERSAL**
 
 | Category | Count |
 |----------|-------|
-| **UNIVERSAL suffixes** (6+ prefixes) | 22 |
-| **PARTIAL suffixes** (<6 prefixes) | 3 |
+| **UNIVERSAL suffixes** (6+ prefixes) | 20 |
+| **PARTIAL suffixes** (<6 prefixes) | 5 |
 
 **Prefix-specific suffix preferences:**
 
@@ -116,9 +117,9 @@
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
-| Chi-square | 3,915.46 | |
+| Chi-square | 1,934.68 | |
 | p-value | **< 10⁻³⁰⁰** | Effectively zero |
-| Cramer's V | **0.402** | **STRONG** |
+| Cramer's V | **0.512** | **STRONG** |
 
 **Interpretation:** MIDDLE and SUFFIX are not independent. Certain modifiers prefer certain output forms.
 
@@ -128,30 +129,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Unique PREFIX × MIDDLE × SUFFIX combinations | **1,329** |
-| Unique PREFIX × MIDDLE combinations | 739 |
-| Unique PREFIX × SUFFIX combinations | 172 |
-| Unique MIDDLE × SUFFIX combinations | 1,004 |
+| Unique PREFIX × MIDDLE × SUFFIX combinations | **959** |
+| Unique PREFIX × MIDDLE combinations | 513 |
+| Unique PREFIX × SUFFIX combinations | 160 |
+| Unique MIDDLE × SUFFIX combinations | 703 |
 
 ### Top 10 Full Combinations
 
 | PREFIX | MIDDLE | SUFFIX | Count | % of tokens |
 |--------|--------|--------|-------|-------------|
-| CT     | -h     | -ol    | 188   | 1.9% |
-| QO     | -t     | -chy   | 179   | 1.8% |
-| CT     | -h     | -or    | 148   | 1.5% |
-| QO     | -k     | -chy   | 139   | 1.4% |
-| QO     | -k     | -ol    | 137   | 1.4% |
-| CT     | -h     | -ey    | 127   | 1.3% |
-| QO     | -k     | -eey   | 115   | 1.2% |
-| QO     | -k     | -eol   | 97    | 1.0% |
-| CH     | -o     | -ky    | 90    | 0.9% |
-| CH     | -o     | -ty    | 81    | 0.8% |
+| CT     | -h     | -ol    | 55    | 1.2% |
+| QO     | -t     | -chy   | 51    | 1.1% |
+| QO     | -k     | -ol    | 45    | 1.0% |
+| CT     | -h     | -or    | 42    | 0.9% |
+| QO     | -k     | -eey   | 39    | 0.9% |
+| QO     | -k     | -chy   | 39    | 0.9% |
+| CT     | -h     | -ey    | 38    | 0.8% |
+| QO     | -k     | -eol   | 34    | 0.8% |
+| CH     | -o     | -ky    | 26    | 0.6% |
+| QO     | -t     | -ol    | 23    | 0.5% |
 
 **Concentration:**
-- Top 10 combinations: 17.2% of tokens
-- Top 50 combinations: 39.4% of tokens
-- Remaining 1,279 combinations: 60.6% of tokens
+- Top 10 combinations: 16.7% of tokens
+- Top 50 combinations: 38.7% of tokens
+- Remaining 909 combinations: 61.3% of tokens
 
 **Interpretation:** The system is MODERATELY concentrated — a core vocabulary with a long tail of variants. This is consistent with a workshop register where some materials are common and many are rare.
 
@@ -163,9 +164,9 @@
 
 | Axis | Count | Section Variance | Binding | Structural Role |
 |------|-------|------------------|---------|-----------------|
-| PREFIX | 8 | 102.6 | — | **PRIMARY CLASSIFIER** |
-| MIDDLE | 1,155 | 131.3 | **PREFIX-BOUND** (28 exclusive) | **TYPE-SPECIFIC MODIFIER** |
-| SUFFIX | 27 | 160.5 | **UNIVERSAL** (22 of 25 significant) | **UNIVERSAL OUTPUT FORM** |
+| PREFIX | 8 | 127.7 | — | **PRIMARY CLASSIFIER** |
+| MIDDLE | 725 | 182.4 | **PREFIX-BOUND** (8 exclusive) | **TYPE-SPECIFIC MODIFIER** |
+| SUFFIX | 27 | 180.6 | **UNIVERSAL** (20 of 25 significant) | **UNIVERSAL OUTPUT FORM** |
 
 ### The Structural Signature
 
@@ -203,7 +204,7 @@ This pattern has a **specific real-world signature**:
 ## New Constraints
 
 ### Constraint 276: MIDDLE is PREFIX-BOUND
-28 MIDDLE values are EXCLUSIVE to single prefixes (Cramer's V = 0.674, p ≈ 0). MIDDLE is not a universal modifier but a TYPE-SPECIFIC refinement.
+8 MIDDLE values are EXCLUSIVE to single prefixes (Cramer's V = 0.671, p ≈ 0). MIDDLE is not a universal modifier but a TYPE-SPECIFIC refinement.
 
 ### Constraint 277: SUFFIX is UNIVERSAL
 22 of 25 significant SUFFIX values appear in 6+ PREFIX classes. SUFFIX represents a UNIVERSAL OUTPUT FORM applicable to all material types.

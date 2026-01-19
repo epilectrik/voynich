@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.49 | **Status:** FROZEN | **Constraints:** 356 | **Date:** 2026-01-16
+**Version:** 2.55 | **Status:** FROZEN | **Constraints:** 356 | **Date:** 2026-01-17
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -185,6 +185,7 @@ requires explicit authorization from the user.
 | Design external validation | [SYSTEM/EXTERNAL_CORROBORATION.md](SYSTEM/EXTERNAL_CORROBORATION.md) |
 | Check quantitative metrics | [METRICS/](METRICS/) (grammar, hazard, coverage) |
 | See speculative interpretations | [SPECULATIVE/](SPECULATIVE/) (apparatus-centric semantics, CCM, ECR) |
+| **Currier A interface postures** | [SPECULATIVE/tier3_interface_postures.md](SPECULATIVE/tier3_interface_postures.md) |
 | Understand apparatus-centric view | [SPECULATIVE/apparatus_centric_semantics.md](SPECULATIVE/apparatus_centric_semantics.md) |
 | Trace constraint to source phase | [MAPS/claim_to_phase.md](MAPS/claim_to_phase.md) |
 | Work with explanatory fits | [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) |
@@ -232,7 +233,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 | Category | Count |
 |----------|-------|
 | Validated constraints | 356 |
-| Completed phases | 137 |
+| Completed phases | 138 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |

@@ -1,21 +1,23 @@
 # Currier A: Non-Sequential Categorical Registry
 
-**Status:** CLOSED | **Tier:** 2 | **Scope:** 30.5% of tokens, 114 folios
+**Status:** CHARACTERIZATION COMPLETE | **Tier:** 2 | **Scope:** 30.5% of tokens, 114 folios
+
+> **For full characterization:** See [currier_A_summary.md](currier_A_summary.md) for complete human-factors model and cognitive interface analysis.
 
 ---
 
 ## Overview
 
-Currier A is **DISJOINT** from B in grammar but **UNIFIED** in type system. It functions as a non-sequential categorical registry—like a parts catalog compared to B's assembly instructions.
+Currier A is **DISJOINT** from B in grammar but **UNIFIED** in type system. It functions as a **human-facing complexity-frontier registry**—a structured collection of material discriminators organized for expert navigation without semantic content.
 
-| Metric | Value |
-|--------|-------|
-| Token coverage | 30.5% (~37,000 tokens) |
+| Metric | Value (H-only) |
+|--------|----------------|
+| Token coverage | 30.5% (~11,400 tokens) |
 | Folios | 114 |
 | TTR | 0.137 (low = high repetition) |
-| Tokens/line (median) | 22 |
+| Tokens/line (median) | 7 |
 | LINK density | 3.0% |
-| Bigram reuse | 70.7% |
+| Bigram reuse | 9.1% (clean, not 70.7% inflated) |
 
 ---
 

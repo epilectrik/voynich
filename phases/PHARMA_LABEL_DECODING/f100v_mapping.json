@@ -1,0 +1,24 @@
+{
+  "folio": "f100v",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "leaf",
+  "plant_part_note": "Full plants shown, leaves prominent, some with prominent roots. FIRST FLOWERS appear but are NOT labeled.",
+  "has_jar_labels": false,
+  "total_labels": 11,
+  "transcription_note": "Labels coded as T/M/B placements instead of L in transcript",
+  "labels": [
+    "opchor",
+    "solsy",
+    "soleesos",
+    "ykchochdy",
+    "ykchdy",
+    "dchdy",
+    "dalsy",
+    "okcheor",
+    "ytchol",
+    "dykchal",
+    {"token": "chos ctharal", "note": "May be 2 tokens"}
+  ]
+}

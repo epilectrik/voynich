@@ -1,0 +1,72 @@
+{
+  "phase": "AZC_REACHABILITY_SUPPRESSION",
+  "date": "2026-01-17",
+  "status": "COMPLETE",
+
+  "question": "Can we give a mechanistically intelligible explanation of how AZC legality fields suppress parts of the B grammar without selection, branching, or semantics - at the instruction class level?",
+
+  "answer": "YES",
+
+  "closure_statement": "AZC does not modify B's grammar; it shortens the reachable language by restricting vocabulary availability. The 49-class grammar and 17 forbidden transitions are universal. When AZC provides a legality field, 6 of 9 hazard-involved classes have reduced effective membership because their MIDDLEs become unavailable. The 3 atomic hazard classes remain fully active regardless of AZC context.",
+
+  "key_findings": {
+    "tier_1_universal_constraints": {
+      "instruction_classes": 49,
+      "forbidden_transitions_token": 17,
+      "forbidden_transitions_class": 13,
+      "hazard_involved_classes": 9,
+      "base_graph_edge_density": 0.991
+    },
+
+    "tier_2_azc_conditioned_constraints": {
+      "middle_folio_exclusivity": "77% appear in 1 AZC folio (C472)",
+      "decomposable_hazard_classes": 6,
+      "atomic_hazard_classes": 3
+    },
+
+    "hazard_class_taxonomy": {
+      "atomic": {
+        "classes": [7, 9, 23],
+        "representatives": ["ar", "aiin", "dy"],
+        "behavior": "Always fully available - universal hazard enforcement",
+        "azc_constrainable": false
+      },
+      "decomposable": {
+        "classes": [8, 11, 30, 31, 33, 41],
+        "representatives": ["chedy", "ol", "dar", "chey", "qokeey", "qo"],
+        "behavior": "Context-dependent availability - tunable hazard envelope",
+        "azc_constrainable": true
+      }
+    },
+
+    "mechanism": {
+      "step_1": "AZC provides ambient legality field (vocabulary availability)",
+      "step_2": "77% of MIDDLEs restricted to specific AZC folios",
+      "step_3": "Decomposable hazard classes lose effective membership",
+      "step_4": "Fewer paths through hazard-constrained region",
+      "step_5": "Reachable grammar manifold shrinks"
+    }
+  },
+
+  "interpretation": {
+    "what_azc_does": "Restricts vocabulary availability without modifying grammar",
+    "what_azc_does_not_do": "Selection, branching, semantic control, numeric encoding",
+    "result": "Same grammar everywhere, different reachable parts"
+  },
+
+  "pipeline_completion": {
+    "A": "Supplies discrimination bundles (constraint signatures)",
+    "AZC": "Projects them into position-indexed legality fields",
+    "B": "Executes within the shrinking reachable language"
+  },
+
+  "constraints_respected": ["C313", "C384", "C454", "C455", "C440", "C121", "C124", "C468", "C469", "C470", "C472"],
+
+  "files_created": [
+    "reachability_analysis.py",
+    "phase1_results.json",
+    "middle_class_index.json",
+    "results.json",
+    "README.md"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "folio": "f101v2",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "leaf",
+  "plant_part_note": "Leaves/full plants",
+  "has_jar_labels": false,
+  "total_labels": 19,
+  "transcription_note": "Labels coded as R1/R2 placements instead of L in transcript",
+  "groups": [
+    {
+      "row": 1,
+      "placement": "R1",
+      "labels": [
+        "sairaly",
+        "otaldy",
+        "otal",
+        "yta",
+        "dokor",
+        "orar",
+        "otorar",
+        "otala",
+        "soraly"
+      ],
+      "count": 9
+    },
+    {
+      "row": 2,
+      "placement": "R2",
+      "labels": [
+        "okol",
+        "arom",
+        "orar",
+        "am",
+        "or*",
+        "dytoly",
+        "olkor",
+        "dolary",
+        "odor",
+        "olaran"
+      ],
+      "count": 10
+    }
+  ]
+}

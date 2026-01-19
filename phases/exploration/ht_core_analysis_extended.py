@@ -17,6 +17,8 @@ import re
 # Load data
 df = pd.read_csv("C:/git/voynich/data/transcriptions/interlinear_full_words.txt",
                  sep="\t", quotechar='"', na_values="NA", low_memory=False)
+# Filter to H transcriber only
+df = df[df['transcriber'] == 'H']
 
 # HT token identification
 def is_ht_token(token):

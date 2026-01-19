@@ -1,0 +1,70 @@
+{
+  "phase": "CAR-ML",
+  "name": "Multi-Line Record Detection",
+  "tests": {
+    "test_1": {
+      "test": "missing_marker_cooccurrence",
+      "total_pairs": 1461,
+      "no_term_no_start": 1329,
+      "no_term_has_start": 31,
+      "has_term_no_start": 96,
+      "has_term_has_start": 5,
+      "no_start_rate_after_no_term": 0.9772058823529411,
+      "no_start_rate_after_has_term": 0.9504950495049505,
+      "enrichment": 1.0281020220588235,
+      "chi2": 1.7902923617922948,
+      "p_value": 0.18089054561867113,
+      "n_potential_continuations": 1329,
+      "verdict": "NO_SIGNAL"
+    },
+    "test_2": {
+      "test": "vocabulary_overlap",
+      "mean_potential_multiline": 0.02754516089604759,
+      "n_potential": 1329,
+      "mean_clear_singleline": 0.03333333333333333,
+      "n_clear": 5,
+      "mean_other": 0.022782871107472628,
+      "n_other": 127,
+      "overlap_ratio": 0.8263548268814277,
+      "p_value": 0.6725286469266623,
+      "verdict": "NO_DIFFERENCE"
+    },
+    "test_3": {
+      "test": "marker_absence_rates",
+      "total_lines": 1575,
+      "has_both": 4,
+      "has_starter_only": 33,
+      "has_terminator_only": 104,
+      "has_neither": 1434,
+      "starter_rate": 0.02349206349206349,
+      "terminator_rate": 0.06857142857142857,
+      "chi2": 0.40174775498890786,
+      "p_value": 0.526188021092153,
+      "verdict": "MARKERS_INDEPENDENT"
+    },
+    "test_4": {
+      "test": "mi_recalculation",
+      "n_records_original": 1575,
+      "n_records_merged": 246,
+      "n_merged": 1329,
+      "mean_overlap_original": 0.02597430072521329,
+      "mean_overlap_merged": 0.054125421836439966,
+      "verdict": "GROUPING_INCREASES_OVERLAP",
+      "interpretation": "Merging increases overlap (unexpected)"
+    },
+    "test_5": {
+      "test": "folio_boundary_behavior",
+      "folio_first_starter_rate": 0.008771929824561403,
+      "folio_last_terminator_rate": 0.06140350877192982,
+      "middle_starter_rate": 0.025241276911655532,
+      "middle_terminator_rate": 0.07126948775055679,
+      "first_enrichment": 0.34752321981424145,
+      "last_enrichment": 0.8615679824561403,
+      "verdict": "NO_FOLIO_EFFECT"
+    }
+  },
+  "overall_verdict": "LINE_EQUALS_RECORD",
+  "summary": "Lines appear to be independent records; markers are stylistic",
+  "continuation_evidence": 0,
+  "independence_evidence": 4
+}

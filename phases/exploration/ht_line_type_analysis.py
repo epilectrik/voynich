@@ -58,12 +58,14 @@ def parse_data():
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) >= 14:
+                transcriber = parts[12].strip('"').strip()
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').strip().lower()
                 folio = parts[2].strip('"').strip()
                 section = parts[3].strip('"').strip()
                 language = parts[6].strip('"').strip()
                 line_num = parts[11].strip('"').strip()
-                transcriber = parts[12].strip('"').strip()
                 line_initial = parts[13].strip('"').strip()
 
                 if word and not word.startswith('*'):

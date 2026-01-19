@@ -1,0 +1,52 @@
+{
+  "phase": "ZONE_MODALITY_VALIDATION",
+  "test": "azc_family_stratified",
+  "question": "Does AZC family membership moderate zone-modality correlations?",
+  "recipe_counts": {
+    "ZODIAC": 0,
+    "AC": 0,
+    "MIXED": 0,
+    "UNKNOWN": 197
+  },
+  "stratified_results": {
+    "UNKNOWN": {
+      "C": {
+        "sound_mean": 0.22620295875668187,
+        "none_mean": 0.2751773896601483,
+        "t": -2.5138257053170014,
+        "p": 0.012861654926508237,
+        "d": -0.38114526981983515,
+        "n_sound": 87,
+        "n_none": 87
+      },
+      "P": {
+        "sound_mean": 0.24764809699342424,
+        "none_mean": 0.15262067859769002,
+        "t": 7.1180961196541706,
+        "p": 2.8438284135219052e-11,
+        "d": 1.0792429484632822,
+        "n_sound": 87,
+        "n_none": 87
+      },
+      "R": {
+        "sound_mean": 0.2771043652702824,
+        "none_mean": 0.2121314487981155,
+        "t": 4.006962445097107,
+        "p": 9.143832147846745e-05,
+        "d": 0.6075340780644513,
+        "n_sound": 87,
+        "n_none": 87
+      },
+      "S": {
+        "sound_mean": 0.2515076331668036,
+        "none_mean": 0.3617733352216111,
+        "t": -8.005723762558196,
+        "p": 1.7011475226645626e-13,
+        "d": -1.213824704365701,
+        "n_sound": 87,
+        "n_none": 87
+      }
+    }
+  },
+  "interpretation": "Insufficient family separation to test stratification."
+}

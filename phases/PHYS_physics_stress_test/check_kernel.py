@@ -17,9 +17,13 @@ with open('data/transcriptions/interlinear_full_words.txt', 'r', encoding='utf-8
     next(f)
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) >= 7:
+        if len(parts) >= 13:
             word = parts[0].strip('"')
             lang = parts[6].strip('"')
+            transcriber = parts[12].strip('"').strip()
+            # Filter to PRIMARY transcriber (H) only
+            if transcriber != 'H':
+                continue
             if lang == 'B' and word and word != 'NA':
                 tokens.append(word)
 

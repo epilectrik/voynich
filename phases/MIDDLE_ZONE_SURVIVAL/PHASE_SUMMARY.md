@@ -1,7 +1,7 @@
 # MIDDLE Zone Survival Analysis
 
 **Status:** COMPLETE
-**Date:** 2026-01-13
+**Date:** 2026-01-13 (H-only corrected 2026-01-16)
 **Tier:** 3 (Exploratory)
 
 ---
@@ -16,12 +16,14 @@
 
 | Metric | Value |
 |--------|-------|
-| AZC tokens analyzed | 8,257 |
-| Qualified MIDDLEs | 175 (≥5 occurrences) |
-| Optimal clusters | 4 |
-| Silhouette score | 0.51 |
+| AZC tokens analyzed | 2,920 (H-only corrected) |
+| Qualified MIDDLEs | 74 (≥5 occurrences) |
+| Optimal clusters | 3 |
+| Silhouette score | 0.58 |
 | P-value (vs null) | < 0.000001 |
-| Frequency-controlled | 0.51 ± 0.04 |
+| Frequency-controlled | 0.58 ± 0.00 |
+
+> **H-only correction (2026-01-16):** Values updated with H-only transcriber filter. Finding CONFIRMED with stronger silhouette.
 
 ---
 
@@ -29,10 +31,9 @@
 
 | Cluster | n | Dominant Zone | C | P | R | S | Interpretation |
 |---------|---|---------------|---|---|---|---|----------------|
-| 1 | 47 | S (59%) | 0.14 | 0.07 | 0.21 | 0.59 | Boundary-surviving |
-| 2 | 29 | P (75%) | 0.06 | 0.75 | 0.12 | 0.07 | Intervention-requiring |
-| 3 | 25 | C (66%) | 0.66 | 0.17 | 0.13 | 0.05 | Entry-preferring |
-| 4 | 74 | R (51%) | 0.23 | 0.17 | 0.51 | 0.09 | Restriction-tolerant |
+| 1 | 20 | S (48%) | 0.21 | 0.08 | 0.23 | 0.48 | Boundary-surviving |
+| 2 | 12 | P (51%) | 0.16 | 0.51 | 0.23 | 0.10 | Intervention-requiring |
+| 3 | 42 | R (54%) | 0.20 | 0.15 | 0.54 | 0.11 | Restriction-tolerant |
 
 ---
 

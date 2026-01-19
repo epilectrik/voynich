@@ -3,6 +3,7 @@
 **Status:** COMPLETE
 **Date:** 2026-01-07
 **Tier:** 2 (Structural)
+**Updated:** 2026-01-16 (H-only transcriber filter verified)
 
 ---
 

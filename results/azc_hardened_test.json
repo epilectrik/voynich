@@ -1,0 +1,569 @@
+{
+  "summary": {
+    "total_entries": 1533,
+    "activating_entries": 501,
+    "neutral_entries": 1032,
+    "signature_uniqueness": {
+      "unique_signatures": 26,
+      "uniqueness_ratio": 0.05189620758483034
+    },
+    "input_uniqueness": {
+      "unique_azc_active_sets": 197,
+      "uniqueness_ratio": 0.3932135728542914
+    },
+    "exclusion_stats": {
+      "universal_spread_5": 193,
+      "not_in_azc_vocab": 659,
+      "universal_spread_4": 299,
+      "universal_spread_12": 145,
+      "universal_spread_21": 39,
+      "hub_middle": 575,
+      "malformed": 34,
+      "universal_spread_8": 34,
+      "universal_spread_15": 167,
+      "universal_spread_9": 168,
+      "universal_spread_14": 98,
+      "universal_spread_26": 62,
+      "universal_spread_10": 46,
+      "universal_spread_11": 193,
+      "universal_spread_16": 44,
+      "universal_spread_6": 24,
+      "universal_spread_7": 20,
+      "universal_spread_13": 46,
+      "universal_spread_19": 39,
+      "universal_spread_20": 17
+    },
+    "verdict": "PARTIAL"
+  },
+  "unknown_middles": {
+    "tch": 45,
+    "om": 29,
+    "yt": 13,
+    "tcho": 11,
+    "hod": 11,
+    "hom": 9,
+    "to": 9,
+    "kod": 8,
+    "otch": 7,
+    "tod": 7,
+    "heo": 7,
+    "kair": 7,
+    "oko": 6,
+    "ts": 6,
+    "tsh": 6,
+    "ks": 5,
+    "of": 5,
+    "hol": 5,
+    "ctho": 5,
+    "cfh": 5,
+    "kcheo": 5,
+    "tche": 5,
+    "kchod": 5,
+    "ckho": 4,
+    "iim": 4,
+    "oro": 4,
+    "kol": 4,
+    "toi": 4,
+    "koi": 4,
+    "fch": 4,
+    "keos": 4,
+    "mo": 3,
+    "chom": 3,
+    "ea": 3,
+    "hor": 3,
+    "ots": 3,
+    "otols": 3,
+    "heod": 3,
+    "cph": 3,
+    "otcho": 3,
+    "een": 3,
+    "iro": 3,
+    "oks": 3,
+    "otsh": 3,
+    "okeeo": 3,
+    "hes": 2,
+    "hols": 2,
+    "okche": 2,
+    "hold": 2,
+    "iin": 2
+  },
+  "sample_activating": [
+    {
+      "record_id": "f1r.8",
+      "n_tokens": 9,
+      "all_middles": [
+        "ch",
+        "cho",
+        "o",
+        "oct"
+      ],
+      "azc_active": [
+        "oct"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "d87ef87ca110",
+      "n_reachable": 47,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.12",
+      "n_tokens": 8,
+      "all_middles": [
+        "air",
+        "e",
+        "i",
+        "od",
+        "sho"
+      ],
+      "azc_active": [
+        "sho"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "4adc1230007c",
+      "n_reachable": 47,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.13",
+      "n_tokens": 9,
+      "all_middles": [
+        "d",
+        "e",
+        "h",
+        "o"
+      ],
+      "azc_active": [
+        "d"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "14ebcca24b08",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.19",
+      "n_tokens": 8,
+      "all_middles": [
+        "aiir",
+        "cth",
+        "hols"
+      ],
+      "azc_active": [
+        "aiir"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "f0e20ca00798",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1v.1",
+      "n_tokens": 7,
+      "all_middles": [
+        "ad",
+        "s",
+        "tch"
+      ],
+      "azc_active": [
+        "ad"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "acb0f6bdffd3",
+      "n_reachable": 47,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1v.4",
+      "n_tokens": 6,
+      "all_middles": [
+        "ir",
+        "m",
+        "okeo",
+        "oko"
+      ],
+      "azc_active": [
+        "okeo"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "dfad8fdc9782",
+      "n_reachable": 48,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1v.6",
+      "n_tokens": 10,
+      "all_middles": [
+        "h",
+        "odo",
+        "ok"
+      ],
+      "azc_active": [
+        "odo"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "4adc1230007c",
+      "n_reachable": 47,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f2r.5",
+      "n_tokens": 7,
+      "all_middles": [
+        "n",
+        "och",
+        "od"
+      ],
+      "azc_active": [
+        "och"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "40238e4f247e",
+      "n_reachable": 0,
+      "hazard_exposure": 0.0
+    },
+    {
+      "record_id": "f2r.8",
+      "n_tokens": 9,
+      "all_middles": [
+        "iil",
+        "she"
+      ],
+      "azc_active": [
+        "she"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "c7ffb513b81f",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f2r.13",
+      "n_tokens": 5,
+      "all_middles": [
+        "ct",
+        "i",
+        "o"
+      ],
+      "azc_active": [
+        "ct"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "c7ffb513b81f",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f2v.3",
+      "n_tokens": 8,
+      "all_middles": [
+        "ct",
+        "i",
+        "o",
+        "od"
+      ],
+      "azc_active": [
+        "ct"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "c7ffb513b81f",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f2v.4",
+      "n_tokens": 4,
+      "all_middles": [
+        "e",
+        "o",
+        "od",
+        "olo"
+      ],
+      "azc_active": [
+        "olo"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "b8d8f7014cbf",
+      "n_reachable": 44,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f2v.5",
+      "n_tokens": 9,
+      "all_middles": [
+        "ckho",
+        "i",
+        "ii"
+      ],
+      "azc_active": [
+        "ii"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "4adc1230007c",
+      "n_reachable": 47,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f2v.7",
+      "n_tokens": 7,
+      "all_middles": [
+        "e",
+        "ees",
+        "i",
+        "okeos",
+        "otch",
+        "r",
+        "tee"
+      ],
+      "azc_active": [
+        "tee"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "e1e40c139640",
+      "n_reachable": 48,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f3r.7",
+      "n_tokens": 5,
+      "all_middles": [
+        "ch",
+        "d",
+        "mo",
+        "om"
+      ],
+      "azc_active": [
+        "d"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "14ebcca24b08",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f3r.12",
+      "n_tokens": 4,
+      "all_middles": [
+        "ad",
+        "kch",
+        "schod"
+      ],
+      "azc_active": [
+        "ad",
+        "kch"
+      ],
+      "n_azc_active": 2,
+      "signature_hash": "40238e4f247e",
+      "n_reachable": 0,
+      "hazard_exposure": 0.0
+    },
+    {
+      "record_id": "f3r.13",
+      "n_tokens": 6,
+      "all_middles": [
+        "eo",
+        "kch",
+        "ke",
+        "ko",
+        "t"
+      ],
+      "azc_active": [
+        "kch"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "40238e4f247e",
+      "n_reachable": 0,
+      "hazard_exposure": 0.0
+    },
+    {
+      "record_id": "f3r.15",
+      "n_tokens": 8,
+      "all_middles": [
+        "chom",
+        "chs",
+        "om"
+      ],
+      "azc_active": [
+        "chs"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "c7ffb513b81f",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f3r.17",
+      "n_tokens": 6,
+      "all_middles": [
+        "eom",
+        "keeo",
+        "l"
+      ],
+      "azc_active": [
+        "eom",
+        "keeo"
+      ],
+      "n_azc_active": 2,
+      "signature_hash": "40238e4f247e",
+      "n_reachable": 0,
+      "hazard_exposure": 0.0
+    },
+    {
+      "record_id": "f3r.18",
+      "n_tokens": 7,
+      "all_middles": [
+        "eoldom",
+        "od",
+        "olom",
+        "p",
+        "pch",
+        "t"
+      ],
+      "azc_active": [
+        "pch"
+      ],
+      "n_azc_active": 1,
+      "signature_hash": "06af5a68ad14",
+      "n_reachable": 46,
+      "hazard_exposure": 1.0
+    }
+  ],
+  "sample_neutral": [
+    {
+      "record_id": "f1r.1",
+      "n_tokens": 10,
+      "all_middles": [
+        "hres",
+        "ol",
+        "or"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.2",
+      "n_tokens": 11,
+      "all_middles": [
+        "h",
+        "n",
+        "t"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "aec7ae7918d5",
+      "n_reachable": 44,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.3",
+      "n_tokens": 9,
+      "all_middles": [
+        "ek",
+        "hes",
+        "hoar",
+        "od",
+        "r"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.4",
+      "n_tokens": 9,
+      "all_middles": [
+        "e",
+        "eos",
+        "h*",
+        "i"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.5",
+      "n_tokens": 6,
+      "all_middles": [
+        "e",
+        "h",
+        "ir"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.7",
+      "n_tokens": 11,
+      "all_middles": [
+        "odar"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.9",
+      "n_tokens": 4,
+      "all_middles": [
+        "i",
+        "o",
+        "os"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.11",
+      "n_tokens": 9,
+      "all_middles": [
+        "os"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.14",
+      "n_tokens": 10,
+      "all_middles": [
+        "n",
+        "od"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "aec7ae7918d5",
+      "n_reachable": 44,
+      "hazard_exposure": 1.0
+    },
+    {
+      "record_id": "f1r.15",
+      "n_tokens": 10,
+      "all_middles": [
+        "ckh",
+        "i"
+      ],
+      "azc_active": [],
+      "n_azc_active": 0,
+      "signature_hash": "a4fcd665e414",
+      "n_reachable": 49,
+      "hazard_exposure": 1.0
+    }
+  ]
+}

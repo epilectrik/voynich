@@ -1,0 +1,4436 @@
+{
+  "phase": "ZONE_MODALITY_VALIDATION",
+  "extraction_type": "enhanced",
+  "keyword_counts": {
+    "original": 57,
+    "enhanced": 102,
+    "added": 45
+  },
+  "step_level": {
+    "total_steps": 594,
+    "original": {
+      "steps_with_sensory": 128,
+      "modality_counts": {
+        "SOUND": 88,
+        "TOUCH": 18,
+        "SIGHT": 22,
+        "TASTE": 2,
+        "SMELL": 1
+      }
+    },
+    "enhanced": {
+      "steps_with_sensory": 141,
+      "modality_counts": {
+        "SOUND": 89,
+        "TOUCH": 18,
+        "TASTE": 15,
+        "SIGHT": 22,
+        "SMELL": 1
+      }
+    },
+    "improvement": {
+      "additional_steps": 13,
+      "by_modality": {
+        "SIGHT": 0,
+        "SMELL": 0,
+        "SOUND": 1,
+        "TOUCH": 0,
+        "TASTE": 13
+      }
+    }
+  },
+  "recipe_level": {
+    "total_recipes": 509,
+    "by_dominant_modality": {
+      "SOUND": 87,
+      "NONE": 399,
+      "TASTE": 13,
+      "SIGHT": 7,
+      "TOUCH": 3,
+      "SMELL": 0
+    },
+    "recipes": [
+      {
+        "recipe_id": "BRU-001",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-002",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-003",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-004",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-005",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-006",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-007",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-008",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-009",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-010",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-011",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-012",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-013",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-014",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-015",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-016",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-017",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-018",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-019",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-020",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-021",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-022",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-023",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-024",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-025",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-026",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-027",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-028",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-029",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-030",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-031",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-032",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-033",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-034",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-035",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-036",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-037",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-038",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-039",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-040",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-041",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-042",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-043",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-044",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-045",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-046",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-047",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-048",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-049",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-050",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-051",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-052",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-053",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-054",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-055",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-056",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-057",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-058",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-059",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-060",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-061",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-062",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-063",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-064",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-065",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-066",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-067",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-068",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-069",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-070",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-071",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-072",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-073",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-074",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-075",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-076",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-077",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-078",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-079",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-080",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-081",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-082",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-083",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-084",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-085",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-086",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-087",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-088",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-089",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-090",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-091",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-092",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-093",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-094",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-095",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-096",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-097",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-098",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-099",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-100",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-101",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-102",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-103",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-104",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-105",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-106",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-107",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-108",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-109",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-110",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-111",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-112",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-113",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-114",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-115",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-116",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-117",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-118",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-119",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-120",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-121",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-122",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-123",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-124",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-125",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-126",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-127",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-128",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-129",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-130",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-131",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-132",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-133",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-134",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-135",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-136",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-137",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-138",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-139",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-140",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-141",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-142",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-143",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-144",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-145",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-146",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-147",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-148",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-149",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-150",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-151",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-152",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-153",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-154",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-155",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-156",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-157",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-158",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-159",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-160",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-161",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-162",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-163",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-164",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-165",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-166",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-167",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-168",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-169",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-170",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-171",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-172",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-173",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-174",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-175",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-176",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-177",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-178",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-179",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-180",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-181",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-182",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-183",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-184",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-185",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-186",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-187",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-188",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SIGHT": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-189",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SIGHT": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-190",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SIGHT": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-191",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SIGHT": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-192",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SIGHT": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-193",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-194",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-195",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-196",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-197",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-198",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-199",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-200",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-201",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-202",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-203",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-204",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-205",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-206",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-207",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-208",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-209",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-210",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-211",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-212",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 2,
+          "TOUCH": 2
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 4
+      },
+      {
+        "recipe_id": "BRU-213",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-214",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-215",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-216",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-217",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-218",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-219",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-220",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-221",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-222",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-223",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-224",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-225",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-226",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-227",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-228",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-229",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-230",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-231",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-232",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-233",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-234",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-235",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-236",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-237",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-238",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-239",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-240",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-241",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-242",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-243",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-244",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-245",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TOUCH": 1
+        },
+        "dominant_modality": "TOUCH",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-246",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-247",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-248",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-249",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-250",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-251",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-252",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-253",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-254",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-255",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-256",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-257",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-258",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-259",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-260",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-261",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-262",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-263",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-264",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-265",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-266",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-267",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-268",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-269",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-270",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-271",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-272",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-273",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-274",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-275",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-276",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-277",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-278",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-279",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-280",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-281",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-282",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-283",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-284",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-285",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-286",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-287",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-288",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-289",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-290",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-291",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-292",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-293",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-294",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-295",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-296",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-297",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-298",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-299",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-300",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-301",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-302",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-303",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-304",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-305",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-306",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-307",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-308",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-309",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-310",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-311",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-312",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-313",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TOUCH": 1
+        },
+        "dominant_modality": "TOUCH",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-314",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-315",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-316",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-317",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TOUCH": 1
+        },
+        "dominant_modality": "TOUCH",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-318",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-319",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-320",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-321",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-322",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-323",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-324",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-325",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-326",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-327",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-328",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-329",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-330",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-331",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-332",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-333",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-334",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-335",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-336",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-337",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-338",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-339",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-340",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-341",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-342",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-343",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-344",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-345",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-346",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-347",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-348",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-349",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-350",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-351",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-352",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-353",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-354",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-355",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-356",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-357",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-358",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-359",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-360",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-361",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-362",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-363",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-364",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-365",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-366",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-367",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-368",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-369",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-370",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-371",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-372",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 3
+      },
+      {
+        "recipe_id": "BRU-373",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 3
+      },
+      {
+        "recipe_id": "BRU-374",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-375",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-376",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-377",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-378",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-379",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-380",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-381",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-382",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-383",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-384",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-385",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-386",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-387",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-388",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-389",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-390",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-391",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-392",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-393",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-394",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-395",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-396",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-397",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-398",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TASTE": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 3
+      },
+      {
+        "recipe_id": "BRU-399",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "TASTE": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 3
+      },
+      {
+        "recipe_id": "BRU-400",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-401",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-402",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-403",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-404",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-405",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-406",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-407",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-408",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 3,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 5
+      },
+      {
+        "recipe_id": "BRU-409",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-410",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-411",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-412",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-413",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-414",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-415",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-416",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-417",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-418",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-419",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-420",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-421",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-422",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-423",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-424",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-425",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-426",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-427",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-428",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-429",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-430",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-431",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-432",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-433",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-434",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-435",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-436",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-437",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-438",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-439",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-440",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-441",
+        "recipe_name": "unknown",
+        "regime": "REGIME_3",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-442",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-443",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SMELL": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-444",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-445",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-446",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-447",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-448",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-449",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-450",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-451",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-452",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-453",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-454",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-455",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-456",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-457",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-458",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-459",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SOUND": 1,
+          "SIGHT": 1
+        },
+        "dominant_modality": "SOUND",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-460",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "SIGHT": 1,
+          "TOUCH": 1
+        },
+        "dominant_modality": "SIGHT",
+        "total_sensory_steps": 2
+      },
+      {
+        "recipe_id": "BRU-461",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-462",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-463",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-464",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-465",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-466",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-467",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-468",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-469",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-470",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-471",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-472",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-473",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-474",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-475",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-476",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-477",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-478",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {
+          "TASTE": 1
+        },
+        "dominant_modality": "TASTE",
+        "total_sensory_steps": 1
+      },
+      {
+        "recipe_id": "BRU-479",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-480",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-481",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-482",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-483",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-484",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-485",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-486",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-487",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-488",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-489",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-490",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-491",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-492",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-493",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-494",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-495",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-496",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-497",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-498",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-499",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-500",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-501",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-502",
+        "recipe_name": "unknown",
+        "regime": "REGIME_2",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-503",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-504",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-505",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-506",
+        "recipe_name": "unknown",
+        "regime": "REGIME_4",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-507",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-508",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      },
+      {
+        "recipe_id": "BRU-509",
+        "recipe_name": "unknown",
+        "regime": "REGIME_1",
+        "sensory_counts": {},
+        "dominant_modality": null,
+        "total_sensory_steps": 0
+      }
+    ]
+  },
+  "new_detections": {
+    "TASTE": 13,
+    "SOUND": 1,
+    "SMELL": 0,
+    "TOUCH": 0,
+    "SIGHT": 0
+  },
+  "sample_new_detections": {
+    "TASTE": [
+      {
+        "recipe": "BRU-157",
+        "text": "Vnd von den arabi /   ſcher zungen Genciana genãt",
+        "matches": [
+          "zung"
+        ]
+      },
+      {
+        "recipe": "BRU-158",
+        "text": "Vnd von den arabi /   ſcher zungen Genciana genãt",
+        "matches": [
+          "zung"
+        ]
+      },
+      {
+        "recipe": "BRU-196",
+        "text": "gebꝛant im meyẽ A Hyrtz züg waſſer moꝛgens vñ abens getrũcken yedes mal vf. ii. oder. iii. let iſt g",
+        "matches": [
+          "zung"
+        ]
+      },
+      {
+        "recipe": "BRU-197",
+        "text": "gebꝛant im meyẽ A Hyrtz züg waſſer moꝛgens vñ abens getrũcken yedes mal vf. ii. oder. iii. let iſt g",
+        "matches": [
+          "zung"
+        ]
+      },
+      {
+        "recipe": "BRU-198",
+        "text": "gebꝛant im meyẽ A Hyrtz züg waſſer moꝛgens vñ abens getrũcken yedes mal vf. ii. oder. iii. let iſt g",
+        "matches": [
+          "zung"
+        ]
+      }
+    ],
+    "SOUND": [
+      {
+        "recipe": "BRU-212",
+        "text": "B Harttrigeln lou waß iſt güt ʒů d mãs rt da mir geweſch en vñ geſpꝛitzt moꝛgẽs vñ ahens heilet ſer ",
+        "matches": [
+          "spritz"
+        ]
+      }
+    ],
+    "SMELL": [],
+    "TOUCH": [],
+    "SIGHT": []
+  }
+}

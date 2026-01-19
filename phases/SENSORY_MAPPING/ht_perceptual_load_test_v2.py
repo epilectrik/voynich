@@ -73,9 +73,11 @@ def main():
 
     # Load data
     df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False)
+    # Filter to PRIMARY transcriber (H) only
+    df = df[df['transcriber'] == 'H']
     df_b = df[df['language'] == 'B'].copy()
 
-    print(f"Loaded {len(df_b)} Currier B tokens")
+    print(f"Loaded {len(df_b)} Currier B tokens (H transcriber only)")
 
     # =========================================================================
     # COMPUTE FOLIO-LEVEL METRICS

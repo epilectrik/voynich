@@ -1,0 +1,648 @@
+{
+  "al": {
+    "counts": {
+      "C": 0,
+      "P": 1,
+      "R": 13,
+      "S": 18
+    },
+    "legal_zones": [
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 32
+  },
+  "ar": {
+    "counts": {
+      "C": 0,
+      "P": 0,
+      "R": 1,
+      "S": 8
+    },
+    "legal_zones": [
+      "R",
+      "S"
+    ],
+    "total": 9
+  },
+  "ch": {
+    "counts": {
+      "C": 2,
+      "P": 4,
+      "R": 10,
+      "S": 3
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 19
+  },
+  "che": {
+    "counts": {
+      "C": 2,
+      "P": 1,
+      "R": 3,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 7
+  },
+  "cho": {
+    "counts": {
+      "C": 4,
+      "P": 1,
+      "R": 3,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 9
+  },
+  "chos": {
+    "counts": {
+      "C": 0,
+      "P": 0,
+      "R": 3,
+      "S": 2
+    },
+    "legal_zones": [
+      "R",
+      "S"
+    ],
+    "total": 5
+  },
+  "e": {
+    "counts": {
+      "C": 34,
+      "P": 22,
+      "R": 82,
+      "S": 21
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 159
+  },
+  "ed": {
+    "counts": {
+      "C": 3,
+      "P": 0,
+      "R": 10,
+      "S": 2
+    },
+    "legal_zones": [
+      "C",
+      "R",
+      "S"
+    ],
+    "total": 15
+  },
+  "ee": {
+    "counts": {
+      "C": 8,
+      "P": 3,
+      "R": 18,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 29
+  },
+  "eek": {
+    "counts": {
+      "C": 0,
+      "P": 1,
+      "R": 3,
+      "S": 1
+    },
+    "legal_zones": [
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 5
+  },
+  "eeo": {
+    "counts": {
+      "C": 7,
+      "P": 1,
+      "R": 11,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 19
+  },
+  "eeos": {
+    "counts": {
+      "C": 6,
+      "P": 1,
+      "R": 3,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 11
+  },
+  "ees": {
+    "counts": {
+      "C": 2,
+      "P": 1,
+      "R": 16,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 20
+  },
+  "ek": {
+    "counts": {
+      "C": 2,
+      "P": 2,
+      "R": 11,
+      "S": 6
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 21
+  },
+  "eke": {
+    "counts": {
+      "C": 0,
+      "P": 3,
+      "R": 2,
+      "S": 0
+    },
+    "legal_zones": [
+      "P",
+      "R"
+    ],
+    "total": 5
+  },
+  "eo": {
+    "counts": {
+      "C": 15,
+      "P": 11,
+      "R": 32,
+      "S": 11
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 69
+  },
+  "eod": {
+    "counts": {
+      "C": 5,
+      "P": 2,
+      "R": 15,
+      "S": 3
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 25
+  },
+  "eok": {
+    "counts": {
+      "C": 1,
+      "P": 0,
+      "R": 3,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "R",
+      "S"
+    ],
+    "total": 5
+  },
+  "eol": {
+    "counts": {
+      "C": 0,
+      "P": 1,
+      "R": 7,
+      "S": 7
+    },
+    "legal_zones": [
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 15
+  },
+  "eor": {
+    "counts": {
+      "C": 0,
+      "P": 0,
+      "R": 2,
+      "S": 3
+    },
+    "legal_zones": [
+      "R",
+      "S"
+    ],
+    "total": 5
+  },
+  "eos": {
+    "counts": {
+      "C": 8,
+      "P": 6,
+      "R": 24,
+      "S": 7
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 45
+  },
+  "eot": {
+    "counts": {
+      "C": 1,
+      "P": 3,
+      "R": 3,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 8
+  },
+  "es": {
+    "counts": {
+      "C": 6,
+      "P": 1,
+      "R": 8,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 16
+  },
+  "et": {
+    "counts": {
+      "C": 3,
+      "P": 1,
+      "R": 4,
+      "S": 2
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 10
+  },
+  "ete": {
+    "counts": {
+      "C": 0,
+      "P": 1,
+      "R": 4,
+      "S": 0
+    },
+    "legal_zones": [
+      "P",
+      "R"
+    ],
+    "total": 5
+  },
+  "i": {
+    "counts": {
+      "C": 10,
+      "P": 8,
+      "R": 13,
+      "S": 3
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 34
+  },
+  "iir": {
+    "counts": {
+      "C": 2,
+      "P": 1,
+      "R": 5,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 9
+  },
+  "ir": {
+    "counts": {
+      "C": 7,
+      "P": 2,
+      "R": 7,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 16
+  },
+  "k": {
+    "counts": {
+      "C": 4,
+      "P": 11,
+      "R": 5,
+      "S": 2
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 22
+  },
+  "ke": {
+    "counts": {
+      "C": 2,
+      "P": 4,
+      "R": 3,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 9
+  },
+  "l": {
+    "counts": {
+      "C": 14,
+      "P": 11,
+      "R": 20,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 46
+  },
+  "m": {
+    "counts": {
+      "C": 3,
+      "P": 4,
+      "R": 0,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P"
+    ],
+    "total": 7
+  },
+  "o": {
+    "counts": {
+      "C": 15,
+      "P": 3,
+      "R": 22,
+      "S": 4
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 44
+  },
+  "od": {
+    "counts": {
+      "C": 1,
+      "P": 3,
+      "R": 5,
+      "S": 1
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 10
+  },
+  "ok": {
+    "counts": {
+      "C": 8,
+      "P": 4,
+      "R": 7,
+      "S": 2
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 21
+  },
+  "ol": {
+    "counts": {
+      "C": 6,
+      "P": 1,
+      "R": 5,
+      "S": 10
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 22
+  },
+  "os": {
+    "counts": {
+      "C": 3,
+      "P": 1,
+      "R": 3,
+      "S": 4
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 11
+  },
+  "ot": {
+    "counts": {
+      "C": 6,
+      "P": 3,
+      "R": 12,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 21
+  },
+  "ote": {
+    "counts": {
+      "C": 1,
+      "P": 2,
+      "R": 5,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 8
+  },
+  "p": {
+    "counts": {
+      "C": 0,
+      "P": 3,
+      "R": 2,
+      "S": 0
+    },
+    "legal_zones": [
+      "P",
+      "R"
+    ],
+    "total": 5
+  },
+  "r": {
+    "counts": {
+      "C": 9,
+      "P": 3,
+      "R": 20,
+      "S": 4
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R",
+      "S"
+    ],
+    "total": 36
+  },
+  "s": {
+    "counts": {
+      "C": 3,
+      "P": 2,
+      "R": 5,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 10
+  },
+  "t": {
+    "counts": {
+      "C": 1,
+      "P": 1,
+      "R": 4,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 6
+  },
+  "te": {
+    "counts": {
+      "C": 2,
+      "P": 1,
+      "R": 3,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 6
+  },
+  "yk": {
+    "counts": {
+      "C": 1,
+      "P": 2,
+      "R": 2,
+      "S": 0
+    },
+    "legal_zones": [
+      "C",
+      "P",
+      "R"
+    ],
+    "total": 5
+  }
+}

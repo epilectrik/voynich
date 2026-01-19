@@ -1,0 +1,647 @@
+{
+  "summary": {
+    "total_records": 1533,
+    "avg_counts": {
+      "total": 3.136986301369863,
+      "restricted": 0.4690150032615786,
+      "universal": 1.715590345727332,
+      "unknown": 0.5251141552511416,
+      "infrastructure": 0.4272667971298108,
+      "azc_active": 0.4690150032615786
+    },
+    "zero_azc_records": 963,
+    "unique_azc_sets": 240,
+    "unique_ratio": 0.15655577299412915,
+    "token_types": {
+      "content": 9399,
+      "infrastructure": 1680
+    }
+  },
+  "middle_usage": {
+    "i": 429,
+    "e": 375,
+    "o": 275,
+    "k": 224,
+    "h": 171,
+    "t": 154,
+    "ch": 121,
+    "l": 112,
+    "eo": 111,
+    "r": 110,
+    "od": 107,
+    "ok": 98,
+    "ke": 98,
+    "ot": 71,
+    "ol": 66,
+    "d": 63,
+    "os": 53,
+    "ee": 52,
+    "ir": 46,
+    "s": 45,
+    "tch": 45,
+    "ck": 44,
+    "m": 43,
+    "eod": 39,
+    "kch": 36,
+    "ct": 35,
+    "or": 34,
+    "ho": 33,
+    "ek": 32,
+    "ckh": 32,
+    "oi": 31,
+    "om": 29,
+    "al": 28,
+    "oct": 27,
+    "eos": 25,
+    "he": 25,
+    "che": 24,
+    "cho": 19,
+    "eeo": 18,
+    "keo": 18,
+    "et": 17,
+    "eom": 17,
+    "ock": 17,
+    "cth": 16,
+    "te": 16,
+    "n": 15,
+    "ees": 15,
+    "kal": 15,
+    "yk": 13,
+    "ii": 13
+  },
+  "azc_active_distribution": {
+    "0": 963,
+    "1": 443,
+    "2": 108,
+    "3": 17,
+    "5": 1,
+    "4": 1
+  },
+  "largest_collisions": [
+    {
+      "azc_set": [],
+      "count": 963,
+      "examples": [
+        "f1r.1",
+        "f1r.3",
+        "f1r.4",
+        "f1r.5",
+        "f1r.7",
+        "f1r.9",
+        "f1r.11",
+        "f1r.15",
+        "f1r.16",
+        "f1r.17"
+      ]
+    },
+    {
+      "azc_set": [
+        "d"
+      ],
+      "count": 44,
+      "examples": [
+        "f1r.13",
+        "f3r.7",
+        "f3v.4",
+        "f4v.3",
+        "f6r.7",
+        "f6r.13",
+        "f11r.2",
+        "f13r.4",
+        "f17r.2",
+        "f17r.3"
+      ]
+    },
+    {
+      "azc_set": [
+        "ct"
+      ],
+      "count": 26,
+      "examples": [
+        "f2r.13",
+        "f2v.3",
+        "f4v.4",
+        "f4v.9",
+        "f11v.2",
+        "f13v.9",
+        "f14v.3",
+        "f16r.12",
+        "f18r.6",
+        "f19v.4"
+      ]
+    },
+    {
+      "azc_set": [
+        "ho"
+      ],
+      "count": 25,
+      "examples": [
+        "f8r.14",
+        "f10r.2",
+        "f13v.3",
+        "f20r.2",
+        "f21r.9",
+        "f21v.5",
+        "f23r.3",
+        "f27r.4",
+        "f27r.5",
+        "f30v.7"
+      ]
+    },
+    {
+      "azc_set": [
+        "oi"
+      ],
+      "count": 22,
+      "examples": [
+        "f4v.5",
+        "f6r.5",
+        "f9r.2",
+        "f10v.2",
+        "f10v.4",
+        "f15v.1",
+        "f15v.7",
+        "f20r.12",
+        "f20v.2",
+        "f20v.11"
+      ]
+    },
+    {
+      "azc_set": [
+        "oct"
+      ],
+      "count": 20,
+      "examples": [
+        "f1r.8",
+        "f5r.4",
+        "f6r.4",
+        "f8r.6",
+        "f10r.3",
+        "f15r.8",
+        "f16r.5",
+        "f16v.7",
+        "f19v.6",
+        "f20v.7"
+      ]
+    },
+    {
+      "azc_set": [
+        "kch"
+      ],
+      "count": 20,
+      "examples": [
+        "f4v.2",
+        "f10r.7",
+        "f14r.5",
+        "f15r.2",
+        "f16r.13",
+        "f18r.3",
+        "f18r.8",
+        "f18r.10",
+        "f21r.3",
+        "f22r.2"
+      ]
+    },
+    {
+      "azc_set": [
+        "n"
+      ],
+      "count": 11,
+      "examples": [
+        "f1r.2",
+        "f1r.14",
+        "f2r.7",
+        "f2r.11",
+        "f16v.5",
+        "f32r.19",
+        "f35v.20",
+        "f36r.6",
+        "f42v.2",
+        "f49v.7"
+      ]
+    },
+    {
+      "azc_set": [
+        "he"
+      ],
+      "count": 11,
+      "examples": [
+        "f17v.11",
+        "f21r.10",
+        "f22r.9",
+        "f28r.2",
+        "f87v.2",
+        "f88r.1",
+        "f96v.10",
+        "f99r.13",
+        "f99v.6",
+        "f101v2.7"
+      ]
+    },
+    {
+      "azc_set": [
+        "eom"
+      ],
+      "count": 10,
+      "examples": [
+        "f17v.23",
+        "f54r.8",
+        "f58r.29",
+        "f87v.4",
+        "f88r.2",
+        "f88r.3",
+        "f88r.4",
+        "f88r.5",
+        "f88r.16",
+        "f90r1.5"
+      ]
+    }
+  ],
+  "sample_records": {
+    "zero_azc": [
+      {
+        "record_id": "f1r.1",
+        "n_tokens": 10,
+        "all_middles": [
+          "hres",
+          "ol",
+          "or"
+        ],
+        "restricted": [],
+        "universal": [
+          "ol",
+          "or"
+        ],
+        "unknown": [
+          "hres"
+        ],
+        "infrastructure": [],
+        "azc_active": [],
+        "counts": {
+          "total": 3,
+          "restricted": 0,
+          "universal": 2,
+          "unknown": 1,
+          "infrastructure": 0,
+          "azc_active": 0
+        }
+      },
+      {
+        "record_id": "f1r.3",
+        "n_tokens": 9,
+        "all_middles": [
+          "ek",
+          "hes",
+          "hoar",
+          "od",
+          "r"
+        ],
+        "restricted": [],
+        "universal": [
+          "ek",
+          "od",
+          "r"
+        ],
+        "unknown": [
+          "hes",
+          "hoar"
+        ],
+        "infrastructure": [],
+        "azc_active": [],
+        "counts": {
+          "total": 5,
+          "restricted": 0,
+          "universal": 3,
+          "unknown": 2,
+          "infrastructure": 0,
+          "azc_active": 0
+        }
+      },
+      {
+        "record_id": "f1r.4",
+        "n_tokens": 9,
+        "all_middles": [
+          "e",
+          "eos",
+          "h*",
+          "i"
+        ],
+        "restricted": [],
+        "universal": [
+          "eos",
+          "i"
+        ],
+        "unknown": [
+          "h*"
+        ],
+        "infrastructure": [
+          "e"
+        ],
+        "azc_active": [],
+        "counts": {
+          "total": 4,
+          "restricted": 0,
+          "universal": 2,
+          "unknown": 1,
+          "infrastructure": 1,
+          "azc_active": 0
+        }
+      }
+    ],
+    "low_azc": [
+      {
+        "record_id": "f1r.2",
+        "n_tokens": 11,
+        "all_middles": [
+          "h",
+          "n",
+          "t"
+        ],
+        "restricted": [
+          "n"
+        ],
+        "universal": [
+          "h",
+          "t"
+        ],
+        "unknown": [],
+        "infrastructure": [],
+        "azc_active": [
+          "n"
+        ],
+        "counts": {
+          "total": 3,
+          "restricted": 1,
+          "universal": 2,
+          "unknown": 0,
+          "infrastructure": 0,
+          "azc_active": 1
+        }
+      },
+      {
+        "record_id": "f1r.8",
+        "n_tokens": 9,
+        "all_middles": [
+          "ch",
+          "cho",
+          "o",
+          "oct"
+        ],
+        "restricted": [
+          "oct"
+        ],
+        "universal": [
+          "ch",
+          "cho"
+        ],
+        "unknown": [],
+        "infrastructure": [
+          "o"
+        ],
+        "azc_active": [
+          "oct"
+        ],
+        "counts": {
+          "total": 4,
+          "restricted": 1,
+          "universal": 2,
+          "unknown": 0,
+          "infrastructure": 1,
+          "azc_active": 1
+        }
+      },
+      {
+        "record_id": "f1r.12",
+        "n_tokens": 8,
+        "all_middles": [
+          "air",
+          "e",
+          "i",
+          "od",
+          "sho"
+        ],
+        "restricted": [
+          "sho"
+        ],
+        "universal": [
+          "air",
+          "i",
+          "od"
+        ],
+        "unknown": [],
+        "infrastructure": [
+          "e"
+        ],
+        "azc_active": [
+          "sho"
+        ],
+        "counts": {
+          "total": 5,
+          "restricted": 1,
+          "universal": 3,
+          "unknown": 0,
+          "infrastructure": 1,
+          "azc_active": 1
+        }
+      }
+    ],
+    "mid_azc": [
+      {
+        "record_id": "f2r.4",
+        "n_tokens": 7,
+        "all_middles": [
+          "ain",
+          "ls",
+          "ok",
+          "tod"
+        ],
+        "restricted": [
+          "ain",
+          "ls"
+        ],
+        "universal": [
+          "ok"
+        ],
+        "unknown": [
+          "tod"
+        ],
+        "infrastructure": [],
+        "azc_active": [
+          "ain",
+          "ls"
+        ],
+        "counts": {
+          "total": 4,
+          "restricted": 2,
+          "universal": 1,
+          "unknown": 1,
+          "infrastructure": 0,
+          "azc_active": 2
+        }
+      },
+      {
+        "record_id": "f2r.5",
+        "n_tokens": 7,
+        "all_middles": [
+          "n",
+          "och",
+          "od"
+        ],
+        "restricted": [
+          "n",
+          "och"
+        ],
+        "universal": [
+          "od"
+        ],
+        "unknown": [],
+        "infrastructure": [],
+        "azc_active": [
+          "n",
+          "och"
+        ],
+        "counts": {
+          "total": 3,
+          "restricted": 2,
+          "universal": 1,
+          "unknown": 0,
+          "infrastructure": 0,
+          "azc_active": 2
+        }
+      },
+      {
+        "record_id": "f3r.12",
+        "n_tokens": 4,
+        "all_middles": [
+          "ad",
+          "kch",
+          "schod"
+        ],
+        "restricted": [
+          "ad",
+          "kch"
+        ],
+        "universal": [],
+        "unknown": [
+          "schod"
+        ],
+        "infrastructure": [],
+        "azc_active": [
+          "ad",
+          "kch"
+        ],
+        "counts": {
+          "total": 3,
+          "restricted": 2,
+          "universal": 0,
+          "unknown": 1,
+          "infrastructure": 0,
+          "azc_active": 2
+        }
+      }
+    ],
+    "high_azc": [
+      {
+        "record_id": "f20r.1",
+        "n_tokens": 7,
+        "all_middles": [
+          "e",
+          "oi",
+          "op",
+          "tch",
+          "toe"
+        ],
+        "restricted": [
+          "oi",
+          "op",
+          "toe"
+        ],
+        "universal": [],
+        "unknown": [
+          "tch"
+        ],
+        "infrastructure": [
+          "e"
+        ],
+        "azc_active": [
+          "oi",
+          "op",
+          "toe"
+        ],
+        "counts": {
+          "total": 5,
+          "restricted": 3,
+          "universal": 0,
+          "unknown": 1,
+          "infrastructure": 1,
+          "azc_active": 3
+        }
+      },
+      {
+        "record_id": "f38r.1",
+        "n_tokens": 7,
+        "all_middles": [
+          "ock",
+          "oi",
+          "sh"
+        ],
+        "restricted": [
+          "ock",
+          "oi",
+          "sh"
+        ],
+        "universal": [],
+        "unknown": [],
+        "infrastructure": [],
+        "azc_active": [
+          "ock",
+          "oi",
+          "sh"
+        ],
+        "counts": {
+          "total": 3,
+          "restricted": 3,
+          "universal": 0,
+          "unknown": 0,
+          "infrastructure": 0,
+          "azc_active": 3
+        }
+      },
+      {
+        "record_id": "f58r.35",
+        "n_tokens": 7,
+        "all_middles": [
+          "ct",
+          "k",
+          "ock",
+          "oek",
+          "ok"
+        ],
+        "restricted": [
+          "ct",
+          "ock",
+          "oek"
+        ],
+        "universal": [
+          "k",
+          "ok"
+        ],
+        "unknown": [],
+        "infrastructure": [],
+        "azc_active": [
+          "ct",
+          "ock",
+          "oek"
+        ],
+        "counts": {
+          "total": 5,
+          "restricted": 3,
+          "universal": 2,
+          "unknown": 0,
+          "infrastructure": 0,
+          "azc_active": 3
+        }
+      }
+    ]
+  }
+}

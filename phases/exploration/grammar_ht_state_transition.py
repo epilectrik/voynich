@@ -60,6 +60,8 @@ def main():
 
     # Load data
     df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False)
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     df_b = df[df['language'] == 'B'].copy()
     df_sorted = df_b.sort_values(['folio', 'line_number', 'line_initial'])
 

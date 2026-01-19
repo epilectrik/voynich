@@ -1,0 +1,48 @@
+{
+  "folio": "f102r1",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Stylized/unrealistic plants with prominent roots. One has BLUE roots.",
+  "has_jar_labels": true,
+  "total_labels": 6,
+  "transcript_labels": 4,
+  "transcript_note": "2 root labels in row 3 not found in transcript",
+  "groups": [
+    {
+      "row": 1,
+      "position": "top",
+      "jar": "dordod",
+      "jar_note": "User reads as 'daarod'",
+      "roots": [
+        "otodeeodor"
+      ],
+      "root_count": 1,
+      "illustration": "Crazy looking plant with large leaves and unrealistic giant root"
+    },
+    {
+      "row": 2,
+      "position": "middle",
+      "jar": null,
+      "jar_note": "No jar label on this row",
+      "roots": [
+        {"token": "orolaly", "note": "User reads as 'okolaly'"}
+      ],
+      "root_count": 1,
+      "illustration": "Crazy root system like carrots joining at center, one spiny leaf"
+    },
+    {
+      "row": 3,
+      "position": "bottom",
+      "jar": "dardsh",
+      "jar_note": "User reads as 'ddardsh'",
+      "roots": [
+        {"token": "???dy", "note": "Not in transcript, ends with 'dy'"},
+        {"token": "???loto", "note": "Not in transcript, looks like 'loto'"}
+      ],
+      "root_count": 2,
+      "illustration": "2 plants with roots and leaves. Right plant has BLUE roots (unusual)."
+    }
+  ]
+}

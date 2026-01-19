@@ -9,6 +9,9 @@ with open('C:/git/voynich/data/transcriptions/interlinear_full_words.txt', 'r') 
     for line in f:
         parts = line.strip().split('\t')
         if len(parts) >= 15:
+            transcriber = parts[12].strip('"') if len(parts) > 12 else ''
+            if transcriber != 'H':
+                continue
             lang = parts[6].strip('"')
             if lang == 'A':
                 total += 1

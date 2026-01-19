@@ -1,0 +1,52 @@
+{
+  "track": 5,
+  "name": "Failed Test Retries",
+  "tests": {
+    "CAR-5.1": {
+      "test_id": "CAR-5.1",
+      "test_name": "A-B Correlation (Retry)",
+      "n_a_types": 3387,
+      "n_b_types": 4917,
+      "n_shared": 1141,
+      "raw_rho": 0.49060727481326466,
+      "raw_p": 3.789256318592279e-70,
+      "log_rho": 0.49060727481326466,
+      "log_p": 3.789256318592279e-70,
+      "baseline_mean": -0.00023910732191151528,
+      "baseline_std": 0.029545921267019746,
+      "effect_size": 16.61299973350559,
+      "perm_p_value": 0.0,
+      "verdict": "SIGNIFICANT"
+    },
+    "CAR-5.2": {
+      "test_id": "CAR-5.2",
+      "test_name": "HT-Phase Reset in A/C (Retry)",
+      "ht_markers": [
+        "cfh",
+        "cph",
+        "s",
+        "cth",
+        "f",
+        "ckh",
+        "p"
+      ],
+      "ht_by_section": {
+        "C": 251,
+        "A": 267,
+        "Z": 371
+      },
+      "total_by_section": {
+        "C": 1044,
+        "A": 837,
+        "Z": 1299
+      },
+      "ac_rate": 0.2753854332801701,
+      "z_rate": 0.28560431100846806,
+      "chi2": 0.34926429080035176,
+      "p_value": 0.5545298929161183,
+      "rate_ratio": 0.9642201558785471,
+      "verdict": "NULL"
+    }
+  },
+  "track_verdict": "NEW_FINDING"
+}

@@ -1,0 +1,94 @@
+{
+  "phase": "SEMANTIC_CEILING_BREACH",
+  "test": "scb_02_middle_zone_clustering",
+  "question": "Do MIDDLE zone clusters correlate with modality domains?",
+  "cluster_profiles": {
+    "1": [
+      0.21432831057831062,
+      0.07853535353535354,
+      0.22784854034854035,
+      0.47928779553779544
+    ],
+    "2": [
+      0.15859418359418362,
+      0.5128142690642691,
+      0.22889332889332892,
+      0.09969821844821843
+    ],
+    "3": [
+      0.20179400107247544,
+      0.14729010966704806,
+      0.5447642269261254,
+      0.10615166233435126
+    ]
+  },
+  "cluster_modality_matrix": {
+    "1": {
+      "SOUND": 46,
+      "TASTE": 8,
+      "SIGHT": 5,
+      "TOUCH": 3
+    },
+    "2": {
+      "SOUND": 30
+    },
+    "3": {
+      "SOUND": 11,
+      "TASTE": 5,
+      "SIGHT": 2
+    }
+  },
+  "statistics": {
+    "chi_squared": 15.219723629067342,
+    "p_value": 0.018614903244297147,
+    "degrees_of_freedom": 6,
+    "cramers_v": 0.26302197997564025
+  },
+  "cluster_characterization": {
+    "1": {
+      "dominant_zone": "S",
+      "dominant_modality": "SOUND",
+      "dominant_modality_pct": 74.19354838709677,
+      "n_recipes": 62
+    },
+    "2": {
+      "dominant_zone": "P",
+      "dominant_modality": "SOUND",
+      "dominant_modality_pct": 100.0,
+      "n_recipes": 30
+    },
+    "3": {
+      "dominant_zone": "R",
+      "dominant_modality": "SOUND",
+      "dominant_modality_pct": 61.111111111111114,
+      "n_recipes": 18
+    }
+  },
+  "alignment": {
+    "results": [
+      {
+        "cluster": "1",
+        "zone": "S",
+        "modality": "SOUND",
+        "expected": "NOT_SOUND",
+        "aligned": false
+      },
+      {
+        "cluster": "2",
+        "zone": "P",
+        "modality": "SOUND",
+        "expected": "SOUND",
+        "aligned": true
+      },
+      {
+        "cluster": "3",
+        "zone": "R",
+        "modality": "SOUND",
+        "expected": "SOUND",
+        "aligned": true
+      }
+    ],
+    "rate": 0.6666666666666666
+  },
+  "verdict": "WEAK"
+}

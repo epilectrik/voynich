@@ -36,6 +36,9 @@ records = []
 with open(DATA_PATH, 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f, delimiter='\t')
     for row in reader:
+        transcriber = row.get('transcriber', '').strip().strip('"')
+        if transcriber != 'H':
+            continue
         word = row.get('word', '').strip().lower()
         if word and word != 'na' and '*' not in word:
             records.append({

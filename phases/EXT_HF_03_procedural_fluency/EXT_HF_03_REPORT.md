@@ -4,6 +4,9 @@
 **Tier:** 4 (INTERPRETIVE / CONFIRMATORY)
 **Status:** COMPLETE
 **Date:** 2026-01-06
+**Updated:** 2026-01-16 (H-only transcriber filter applied)
+
+> **Note:** Original statistics were based on all transcribers (~3.2x inflated). Proportions and interpretive conclusions remain valid. See absolute counts for corrected values.
 
 ---
 

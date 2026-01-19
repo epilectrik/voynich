@@ -3,6 +3,8 @@
 ## Phase Code
 `AZC-AXIS` (Axis Connectivity)
 
+**Updated:** 2026-01-16 (H-only transcriber filter verified - already compliant)
+
 ## Research Question
 **Are placement, morphology, section, and repetition axes interdependent?**
 

@@ -1,0 +1,417 @@
+{
+  "summary": {
+    "total_labels": 222,
+    "jar_labels": 18,
+    "content_labels": 204,
+    "root_labels": 92,
+    "leaf_labels": 71
+  },
+  "jar_vs_content": {
+    "prefix": {
+      "feature": "prefix",
+      "jar_count": 14,
+      "content_count": 167,
+      "top_differences": [
+        {
+          "value": "ot",
+          "jar_pct": 0,
+          "content_pct": 0.17365269461077845,
+          "diff": -0.17365269461077845
+        },
+        {
+          "value": "ok",
+          "jar_pct": 0.35714285714285715,
+          "content_pct": 0.19161676646706588,
+          "diff": 0.16552609067579127
+        },
+        {
+          "value": "ch",
+          "jar_pct": 0,
+          "content_pct": 0.1377245508982036,
+          "diff": -0.1377245508982036
+        },
+        {
+          "value": "da",
+          "jar_pct": 0.21428571428571427,
+          "content_pct": 0.07784431137724551,
+          "diff": 0.13644140290846876
+        },
+        {
+          "value": "ke",
+          "jar_pct": 0.07142857142857142,
+          "content_pct": 0,
+          "diff": 0.07142857142857142
+        },
+        {
+          "value": "de",
+          "jar_pct": 0.07142857142857142,
+          "content_pct": 0,
+          "diff": 0.07142857142857142
+        },
+        {
+          "value": "po",
+          "jar_pct": 0.07142857142857142,
+          "content_pct": 0,
+          "diff": 0.07142857142857142
+        },
+        {
+          "value": "so",
+          "jar_pct": 0,
+          "content_pct": 0.059880239520958084,
+          "diff": -0.059880239520958084
+        },
+        {
+          "value": "sa",
+          "jar_pct": 0,
+          "content_pct": 0.059880239520958084,
+          "diff": -0.059880239520958084
+        },
+        {
+          "value": "ol",
+          "jar_pct": 0,
+          "content_pct": 0.04790419161676647,
+          "diff": -0.04790419161676647
+        }
+      ]
+    },
+    "suffix": {
+      "feature": "suffix",
+      "jar_count": 10,
+      "content_count": 164,
+      "top_differences": [
+        {
+          "value": "al",
+          "jar_pct": 0.2,
+          "content_pct": 0.042682926829268296,
+          "diff": 0.1573170731707317
+        },
+        {
+          "value": "dy",
+          "jar_pct": 0.3,
+          "content_pct": 0.1524390243902439,
+          "diff": 0.1475609756097561
+        },
+        {
+          "value": "ol",
+          "jar_pct": 0,
+          "content_pct": 0.10975609756097561,
+          "diff": -0.10975609756097561
+        },
+        {
+          "value": "iin",
+          "jar_pct": 0.1,
+          "content_pct": 0.006097560975609756,
+          "diff": 0.09390243902439024
+        },
+        {
+          "value": "or",
+          "jar_pct": 0,
+          "content_pct": 0.09146341463414634,
+          "diff": -0.09146341463414634
+        },
+        {
+          "value": "am",
+          "jar_pct": 0,
+          "content_pct": 0.07317073170731707,
+          "diff": -0.07317073170731707
+        },
+        {
+          "value": "ar",
+          "jar_pct": 0,
+          "content_pct": 0.07317073170731707,
+          "diff": -0.07317073170731707
+        },
+        {
+          "value": "y",
+          "jar_pct": 0.4,
+          "content_pct": 0.3353658536585366,
+          "diff": 0.06463414634146342
+        },
+        {
+          "value": "ain",
+          "jar_pct": 0,
+          "content_pct": 0.04878048780487805,
+          "diff": -0.04878048780487805
+        },
+        {
+          "value": "aiin",
+          "jar_pct": 0,
+          "content_pct": 0.024390243902439025,
+          "diff": -0.024390243902439025
+        }
+      ]
+    },
+    "length": {
+      "jar_mean": 6.888888888888889,
+      "content_mean": 5.681372549019608
+    },
+    "vocabulary": {
+      "group1_types": 18,
+      "group2_types": 191,
+      "shared_types": 0,
+      "shared_tokens": [],
+      "jaccard": 0.0
+    }
+  },
+  "root_vs_leaf": {
+    "prefix": {
+      "feature": "prefix",
+      "root_count": 70,
+      "leaf_count": 61,
+      "top_differences": [
+        {
+          "value": "so",
+          "root_pct": 0.014285714285714285,
+          "leaf_pct": 0.13114754098360656,
+          "diff": -0.11686182669789227
+        },
+        {
+          "value": "ot",
+          "root_pct": 0.2,
+          "leaf_pct": 0.11475409836065574,
+          "diff": 0.08524590163934427
+        },
+        {
+          "value": "or",
+          "root_pct": 0.014285714285714285,
+          "leaf_pct": 0.08196721311475409,
+          "diff": -0.0676814988290398
+        },
+        {
+          "value": "op",
+          "root_pct": 0.1,
+          "leaf_pct": 0.03278688524590164,
+          "diff": 0.06721311475409836
+        },
+        {
+          "value": "ch",
+          "root_pct": 0.17142857142857143,
+          "leaf_pct": 0.11475409836065574,
+          "diff": 0.05667447306791569
+        },
+        {
+          "value": "ol",
+          "root_pct": 0.014285714285714285,
+          "leaf_pct": 0.06557377049180328,
+          "diff": -0.051288056206089
+        },
+        {
+          "value": "da",
+          "root_pct": 0.1,
+          "leaf_pct": 0.04918032786885246,
+          "diff": 0.05081967213114755
+        },
+        {
+          "value": "sa",
+          "root_pct": 0.02857142857142857,
+          "leaf_pct": 0.06557377049180328,
+          "diff": -0.037002341920374715
+        },
+        {
+          "value": "ko",
+          "root_pct": 0.02857142857142857,
+          "leaf_pct": 0,
+          "diff": 0.02857142857142857
+        },
+        {
+          "value": "sh",
+          "root_pct": 0.04285714285714286,
+          "leaf_pct": 0.01639344262295082,
+          "diff": 0.026463700234192037
+        }
+      ]
+    },
+    "suffix": {
+      "feature": "suffix",
+      "root_count": 70,
+      "leaf_count": 58,
+      "top_differences": [
+        {
+          "value": "dy",
+          "root_pct": 0.22857142857142856,
+          "leaf_pct": 0.10344827586206896,
+          "diff": 0.1251231527093596
+        },
+        {
+          "value": "or",
+          "root_pct": 0.04285714285714286,
+          "leaf_pct": 0.15517241379310345,
+          "diff": -0.1123152709359606
+        },
+        {
+          "value": "ar",
+          "root_pct": 0.02857142857142857,
+          "leaf_pct": 0.1206896551724138,
+          "diff": -0.09211822660098523
+        },
+        {
+          "value": "am",
+          "root_pct": 0.1,
+          "leaf_pct": 0.034482758620689655,
+          "diff": 0.06551724137931035
+        },
+        {
+          "value": "al",
+          "root_pct": 0.02857142857142857,
+          "leaf_pct": 0.06896551724137931,
+          "diff": -0.04039408866995074
+        },
+        {
+          "value": "ain",
+          "root_pct": 0.07142857142857142,
+          "leaf_pct": 0.034482758620689655,
+          "diff": 0.03694581280788177
+        },
+        {
+          "value": "ey",
+          "root_pct": 0,
+          "leaf_pct": 0.034482758620689655,
+          "diff": -0.034482758620689655
+        },
+        {
+          "value": "om",
+          "root_pct": 0,
+          "leaf_pct": 0.034482758620689655,
+          "diff": -0.034482758620689655
+        },
+        {
+          "value": "iin",
+          "root_pct": 0.02857142857142857,
+          "leaf_pct": 0,
+          "diff": 0.02857142857142857
+        },
+        {
+          "value": "oiin",
+          "root_pct": 0.02857142857142857,
+          "leaf_pct": 0,
+          "diff": 0.02857142857142857
+        }
+      ]
+    },
+    "length": {
+      "root_mean": 6.076086956521739,
+      "leaf_mean": 5.563380281690141
+    },
+    "vocabulary": {
+      "group1_types": 88,
+      "group2_types": 69,
+      "shared_types": 2,
+      "shared_tokens": [
+        "okol",
+        "otory"
+      ],
+      "jaccard": 0.012903225806451613
+    }
+  },
+  "prefix_associations": [
+    {
+      "prefix": "ar",
+      "root": 2,
+      "leaf": 1,
+      "root_ratio": 0.6666666666666666,
+      "lean": "ROOT"
+    },
+    {
+      "prefix": "ch",
+      "root": 12,
+      "leaf": 7,
+      "root_ratio": 0.631578947368421,
+      "lean": "ROOT"
+    },
+    {
+      "prefix": "da",
+      "root": 7,
+      "leaf": 3,
+      "root_ratio": 0.7,
+      "lean": "ROOT"
+    },
+    {
+      "prefix": "do",
+      "root": 2,
+      "leaf": 2,
+      "root_ratio": 0.5,
+      "lean": "MIXED"
+    },
+    {
+      "prefix": "ok",
+      "root": 12,
+      "leaf": 12,
+      "root_ratio": 0.5,
+      "lean": "MIXED"
+    },
+    {
+      "prefix": "ol",
+      "root": 1,
+      "leaf": 4,
+      "root_ratio": 0.2,
+      "lean": "LEAF"
+    },
+    {
+      "prefix": "op",
+      "root": 7,
+      "leaf": 2,
+      "root_ratio": 0.7777777777777778,
+      "lean": "ROOT"
+    },
+    {
+      "prefix": "or",
+      "root": 1,
+      "leaf": 5,
+      "root_ratio": 0.16666666666666666,
+      "lean": "LEAF"
+    },
+    {
+      "prefix": "ot",
+      "root": 14,
+      "leaf": 7,
+      "root_ratio": 0.6666666666666666,
+      "lean": "ROOT"
+    },
+    {
+      "prefix": "sa",
+      "root": 2,
+      "leaf": 4,
+      "root_ratio": 0.3333333333333333,
+      "lean": "LEAF"
+    },
+    {
+      "prefix": "sh",
+      "root": 3,
+      "leaf": 1,
+      "root_ratio": 0.75,
+      "lean": "ROOT"
+    },
+    {
+      "prefix": "so",
+      "root": 1,
+      "leaf": 8,
+      "root_ratio": 0.1111111111111111,
+      "lean": "LEAF"
+    },
+    {
+      "prefix": "yk",
+      "root": 2,
+      "leaf": 2,
+      "root_ratio": 0.5,
+      "lean": "MIXED"
+    }
+  ],
+  "brunschwig": {
+    "intense_prefixes": [
+      "ok",
+      "ot",
+      "ko",
+      "to"
+    ],
+    "gentle_prefixes": [
+      "ch",
+      "sh",
+      "qo"
+    ],
+    "root_intense_pct": 0.30434782608695654,
+    "leaf_intense_pct": 0.28169014084507044,
+    "root_gentle_pct": 0.16304347826086957,
+    "leaf_gentle_pct": 0.11267605633802817,
+    "alignment": false
+  }
+}

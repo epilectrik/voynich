@@ -87,6 +87,9 @@ def load_transcription():
         reader = csv.DictReader(f, delimiter='\t', quotechar='"')
 
         for row in reader:
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
             folio = row.get('folio', '').strip('"')
             token = row.get('word', '').strip('"')
             section = row.get('section', '').strip('"')

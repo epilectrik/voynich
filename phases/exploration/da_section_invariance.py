@@ -28,7 +28,10 @@ def load_entries_by_section():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) >= 7:
+            if len(parts) >= 13:
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').strip()
                 folio = parts[2].strip('"').strip()
                 section = parts[3].strip('"').strip()

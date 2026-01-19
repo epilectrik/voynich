@@ -4,6 +4,7 @@
 **Tier:** 2 (STRUCTURAL INFERENCE)
 **Status:** COMPLETE
 **Date:** 2026-01-06
+**Updated:** 2026-01-16 (H-only transcriber filter applied)
 
 ---
 
@@ -67,8 +68,8 @@ A token must pass ALL FOUR tests to qualify:
 
 | ID | Token | Grammar Class | A Count | B Count | A:B Ratio | Affinity |
 |----|-------|---------------|---------|---------|-----------|----------|
-| SP-01 | `daiin` | CORE_CONTROL | 1,762 | 1,140 | 1.55 | A-enriched |
-| SP-02 | `ol` | CORE_CONTROL | 296 | 1,393 | 0.21 | B-enriched |
+| SP-01 | `daiin` | CORE_CONTROL | 511 | 315 | 1.62 | A-enriched |
+| SP-02 | `ol` | CORE_CONTROL | 101 | 421 | 0.24 | B-enriched |
 
 ### Rejected Candidates
 
@@ -88,12 +89,12 @@ A token must pass ALL FOUR tests to qualify:
 
 | Metric | Currier A | Currier B |
 |--------|-----------|-----------|
-| Adjacent occurrences | 27 | 54 |
-| Co-occurrence in same line | 2.5% | 2.6% |
+| Adjacent occurrences | 10 | 16 |
+| Co-occurrence in same line | 1.5% | 1.8% |
 | daiin neighbors | Content words (chol, shol, chor) | Grammar particles (chedy, ol, qoky) |
 | ol neighbors | Loose (or, chol, dol) | Tight (qokain, shedy, chedy) |
 
-**Critical finding:** The CORE_CONTROL pairing is **broken in A** (27 adjacent) vs **intact in B** (54 adjacent). This confirms structural function differs by system.
+**Critical finding:** The CORE_CONTROL pairing is **broken in A** (10 adjacent) vs **more intact in B** (16 adjacent). This confirms structural function differs by system.
 
 ---
 

@@ -1,0 +1,1033 @@
+{
+  "total_middles": 62,
+  "exclusive_middles": 23,
+  "shared_middles": 39,
+  "middle_to_classes": {
+    "eeo": [
+      1,
+      2,
+      3,
+      39,
+      42
+    ],
+    "ch": [
+      16,
+      1,
+      18,
+      17
+    ],
+    "ee": [
+      1,
+      43,
+      37
+    ],
+    "h": [
+      1,
+      25,
+      15
+    ],
+    "sh": [
+      1,
+      17
+    ],
+    "ol": [
+      1,
+      3,
+      39
+    ],
+    "al": [
+      16,
+      2
+    ],
+    "o": [
+      2,
+      34,
+      37,
+      31
+    ],
+    "ees": [
+      2,
+      35
+    ],
+    "eo": [
+      2,
+      35,
+      34,
+      18,
+      31
+    ],
+    "eos": [
+      35,
+      2,
+      19,
+      39
+    ],
+    "": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49
+    ],
+    "e": [
+      34,
+      3,
+      4,
+      35,
+      39,
+      41,
+      13,
+      16,
+      18,
+      19
+    ],
+    "k": [
+      32,
+      33,
+      3,
+      36,
+      37,
+      39,
+      43,
+      48,
+      17,
+      25
+    ],
+    "cho": [
+      3
+    ],
+    "ar": [
+      3
+    ],
+    "ed": [
+      4,
+      39,
+      43,
+      47,
+      48
+    ],
+    "i": [
+      10,
+      30
+    ],
+    "ai": [
+      16
+    ],
+    "ii": [
+      16,
+      40
+    ],
+    "l": [
+      16,
+      40
+    ],
+    "ho": [
+      25
+    ],
+    "s": [
+      25,
+      41
+    ],
+    "m": [
+      30
+    ],
+    "t": [
+      32,
+      33,
+      36,
+      37,
+      45
+    ],
+    "kch": [
+      33,
+      44,
+      46,
+      49
+    ],
+    "ke": [
+      33,
+      44,
+      46,
+      49
+    ],
+    "ck": [
+      49,
+      34
+    ],
+    "ct": [
+      34,
+      47
+    ],
+    "ek": [
+      43,
+      34,
+      35,
+      37
+    ],
+    "eck": [
+      34,
+      47
+    ],
+    "ok": [
+      48,
+      42,
+      35
+    ],
+    "os": [
+      35
+    ],
+    "ot": [
+      43,
+      42,
+      35
+    ],
+    "es": [
+      35,
+      37
+    ],
+    "od": [
+      43,
+      37,
+      47
+    ],
+    "im": [
+      38
+    ],
+    "et": [
+      39
+    ],
+    "d": [
+      48,
+      45,
+      46,
+      39
+    ],
+    "om": [
+      39
+    ],
+    "r": [
+      40
+    ],
+    "n": [
+      40
+    ],
+    "ckh": [
+      49,
+      42,
+      47
+    ],
+    "oct": [
+      48,
+      42
+    ],
+    "eod": [
+      42,
+      43
+    ],
+    "eek": [
+      43,
+      47
+    ],
+    "oi": [
+      43
+    ],
+    "or": [
+      43
+    ],
+    "cp": [
+      43
+    ],
+    "pch": [
+      44,
+      46
+    ],
+    "tch": [
+      49,
+      44,
+      46
+    ],
+    "keeo": [
+      49,
+      44
+    ],
+    "teo": [
+      44
+    ],
+    "te": [
+      45
+    ],
+    "tcho": [
+      45
+    ],
+    "p": [
+      45
+    ],
+    "keo": [
+      46
+    ],
+    "ect": [
+      48,
+      47
+    ],
+    "ock": [
+      48
+    ],
+    "kal": [
+      49
+    ],
+    "kai": [
+      49
+    ],
+    "keed": [
+      49
+    ]
+  },
+  "class_morphology": {
+    "1": {
+      "class_id": 1,
+      "member_count": 8,
+      "decomposed_count": 8,
+      "middles": [
+        "sh",
+        "eeo",
+        "ee",
+        "ch",
+        "ol",
+        "h"
+      ],
+      "prefixes": [
+        "ok",
+        "ot",
+        "ct",
+        "ol"
+      ]
+    },
+    "2": {
+      "class_id": 2,
+      "member_count": 8,
+      "decomposed_count": 8,
+      "middles": [
+        "al",
+        "eos",
+        "eeo",
+        "ees",
+        "eo",
+        "o"
+      ],
+      "prefixes": [
+        "ok",
+        "ot"
+      ]
+    },
+    "3": {
+      "class_id": 3,
+      "member_count": 9,
+      "decomposed_count": 9,
+      "middles": [
+        "",
+        "e",
+        "eeo",
+        "cho",
+        "ar",
+        "k",
+        "ol"
+      ],
+      "prefixes": [
+        "ok",
+        "ot",
+        "ol"
+      ]
+    },
+    "4": {
+      "class_id": 4,
+      "member_count": 17,
+      "decomposed_count": 6,
+      "middles": [
+        "",
+        "ed",
+        "e"
+      ],
+      "prefixes": [
+        "lch",
+        "dch",
+        "rch",
+        "fch",
+        "pch"
+      ]
+    },
+    "5": {
+      "class_id": 5,
+      "member_count": 15,
+      "decomposed_count": 4,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "tch",
+        "pch"
+      ]
+    },
+    "6": {
+      "class_id": 6,
+      "member_count": 23,
+      "decomposed_count": 3,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "lch",
+        "dch",
+        "tch"
+      ]
+    },
+    "7": {
+      "class_id": 7,
+      "member_count": 2,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "8": {
+      "class_id": 8,
+      "member_count": 3,
+      "decomposed_count": 3,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "9": {
+      "class_id": 9,
+      "member_count": 3,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "10": {
+      "class_id": 10,
+      "member_count": 1,
+      "decomposed_count": 1,
+      "middles": [
+        "i"
+      ],
+      "prefixes": [
+        "da"
+      ]
+    },
+    "11": {
+      "class_id": 11,
+      "member_count": 1,
+      "decomposed_count": 1,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "ol"
+      ]
+    },
+    "12": {
+      "class_id": 12,
+      "member_count": 1,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "13": {
+      "class_id": 13,
+      "member_count": 11,
+      "decomposed_count": 11,
+      "middles": [
+        "",
+        "e"
+      ],
+      "prefixes": [
+        "ok",
+        "ot"
+      ]
+    },
+    "14": {
+      "class_id": 14,
+      "member_count": 12,
+      "decomposed_count": 12,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "ok",
+        "ot"
+      ]
+    },
+    "15": {
+      "class_id": 15,
+      "member_count": 5,
+      "decomposed_count": 5,
+      "middles": [
+        "",
+        "h"
+      ],
+      "prefixes": [
+        "ct",
+        "ol"
+      ]
+    },
+    "16": {
+      "class_id": 16,
+      "member_count": 10,
+      "decomposed_count": 10,
+      "middles": [
+        "",
+        "ai",
+        "al",
+        "l",
+        "e",
+        "ii",
+        "ch"
+      ],
+      "prefixes": [
+        "ok",
+        "ot",
+        "da"
+      ]
+    },
+    "17": {
+      "class_id": 17,
+      "member_count": 9,
+      "decomposed_count": 9,
+      "middles": [
+        "",
+        "ch",
+        "sh",
+        "k"
+      ],
+      "prefixes": [
+        "ol"
+      ]
+    },
+    "18": {
+      "class_id": 18,
+      "member_count": 9,
+      "decomposed_count": 9,
+      "middles": [
+        "ch",
+        "eo",
+        "e"
+      ],
+      "prefixes": [
+        "ok",
+        "ot"
+      ]
+    },
+    "19": {
+      "class_id": 19,
+      "member_count": 6,
+      "decomposed_count": 6,
+      "middles": [
+        "",
+        "eos",
+        "e"
+      ],
+      "prefixes": [
+        "ok",
+        "ot"
+      ]
+    },
+    "20": {
+      "class_id": 20,
+      "member_count": 15,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "21": {
+      "class_id": 21,
+      "member_count": 10,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "22": {
+      "class_id": 22,
+      "member_count": 7,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "23": {
+      "class_id": 23,
+      "member_count": 7,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "24": {
+      "class_id": 24,
+      "member_count": 15,
+      "decomposed_count": 0,
+      "middles": [],
+      "prefixes": []
+    },
+    "25": {
+      "class_id": 25,
+      "member_count": 9,
+      "decomposed_count": 9,
+      "middles": [
+        "",
+        "s",
+        "ho",
+        "k",
+        "h"
+      ],
+      "prefixes": [
+        "ct",
+        "ol"
+      ]
+    },
+    "26": {
+      "class_id": 26,
+      "member_count": 8,
+      "decomposed_count": 2,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "dch",
+        "kch"
+      ]
+    },
+    "27": {
+      "class_id": 27,
+      "member_count": 21,
+      "decomposed_count": 7,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "tch",
+        "kch"
+      ]
+    },
+    "28": {
+      "class_id": 28,
+      "member_count": 25,
+      "decomposed_count": 5,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "lch",
+        "kch",
+        "dch"
+      ]
+    },
+    "29": {
+      "class_id": 29,
+      "member_count": 17,
+      "decomposed_count": 3,
+      "middles": [
+        ""
+      ],
+      "prefixes": [
+        "tch",
+        "lch",
+        "pch"
+      ]
+    },
+    "30": {
+      "class_id": 30,
+      "member_count": 5,
+      "decomposed_count": 5,
+      "middles": [
+        "",
+        "i",
+        "m"
+      ],
+      "prefixes": [
+        "da"
+      ]
+    },
+    "31": {
+      "class_id": 31,
+      "member_count": 12,
+      "decomposed_count": 12,
+      "middles": [
+        "",
+        "o",
+        "eo"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "32": {
+      "class_id": 32,
+      "member_count": 7,
+      "decomposed_count": 7,
+      "middles": [
+        "",
+        "t",
+        "k"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "33": {
+      "class_id": 33,
+      "member_count": 13,
+      "decomposed_count": 13,
+      "middles": [
+        "t",
+        "kch",
+        "k",
+        "ke"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "34": {
+      "class_id": 34,
+      "member_count": 19,
+      "decomposed_count": 19,
+      "middles": [
+        "",
+        "ct",
+        "ck",
+        "e",
+        "eo",
+        "o",
+        "eck",
+        "ek"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "35": {
+      "class_id": 35,
+      "member_count": 12,
+      "decomposed_count": 12,
+      "middles": [
+        "",
+        "eos",
+        "e",
+        "ok",
+        "os",
+        "ees",
+        "eo",
+        "ot",
+        "ek",
+        "es"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "36": {
+      "class_id": 36,
+      "member_count": 8,
+      "decomposed_count": 8,
+      "middles": [
+        "t",
+        "k"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "37": {
+      "class_id": 37,
+      "member_count": 8,
+      "decomposed_count": 8,
+      "middles": [
+        "",
+        "k",
+        "od",
+        "t",
+        "o",
+        "es",
+        "ek",
+        "ee"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "38": {
+      "class_id": 38,
+      "member_count": 6,
+      "decomposed_count": 1,
+      "middles": [
+        "im"
+      ],
+      "prefixes": [
+        "da"
+      ]
+    },
+    "39": {
+      "class_id": 39,
+      "member_count": 17,
+      "decomposed_count": 17,
+      "middles": [
+        "",
+        "eos",
+        "e",
+        "eeo",
+        "et",
+        "d",
+        "k",
+        "om",
+        "ed",
+        "ol"
+      ],
+      "prefixes": [
+        "ch",
+        "sh",
+        "qo"
+      ]
+    },
+    "40": {
+      "class_id": 40,
+      "member_count": 6,
+      "decomposed_count": 4,
+      "middles": [
+        "n",
+        "ii",
+        "r",
+        "l"
+      ],
+      "prefixes": [
+        "da"
+      ]
+    },
+    "41": {
+      "class_id": 41,
+      "member_count": 6,
+      "decomposed_count": 6,
+      "middles": [
+        "",
+        "s",
+        "e"
+      ],
+      "prefixes": [
+        "ch",
+        "sh",
+        "qo"
+      ]
+    },
+    "42": {
+      "class_id": 42,
+      "member_count": 7,
+      "decomposed_count": 7,
+      "middles": [
+        "oct",
+        "eeo",
+        "ok",
+        "eod",
+        "ot",
+        "ckh"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "43": {
+      "class_id": 43,
+      "member_count": 15,
+      "decomposed_count": 15,
+      "middles": [
+        "",
+        "cp",
+        "k",
+        "eek",
+        "od",
+        "or",
+        "eod",
+        "ek",
+        "ot",
+        "ee",
+        "ed",
+        "oi"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "44": {
+      "class_id": 44,
+      "member_count": 7,
+      "decomposed_count": 7,
+      "middles": [
+        "kch",
+        "keeo",
+        "ke",
+        "tch",
+        "pch",
+        "teo"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "45": {
+      "class_id": 45,
+      "member_count": 6,
+      "decomposed_count": 6,
+      "middles": [
+        "",
+        "te",
+        "p",
+        "d",
+        "t",
+        "tcho"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "46": {
+      "class_id": 46,
+      "member_count": 8,
+      "decomposed_count": 8,
+      "middles": [
+        "kch",
+        "d",
+        "keo",
+        "ke",
+        "tch",
+        "pch"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "47": {
+      "class_id": 47,
+      "member_count": 11,
+      "decomposed_count": 11,
+      "middles": [
+        "",
+        "ct",
+        "eek",
+        "od",
+        "ect",
+        "eck",
+        "ckh",
+        "ed"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "48": {
+      "class_id": 48,
+      "member_count": 9,
+      "decomposed_count": 9,
+      "middles": [
+        "oct",
+        "ok",
+        "d",
+        "k",
+        "ect",
+        "ock",
+        "ed"
+      ],
+      "prefixes": [
+        "ch",
+        "sh"
+      ]
+    },
+    "49": {
+      "class_id": 49,
+      "member_count": 11,
+      "decomposed_count": 11,
+      "middles": [
+        "",
+        "kch",
+        "ck",
+        "kal",
+        "keeo",
+        "ckh",
+        "ke",
+        "tch",
+        "keed",
+        "kai"
+      ],
+      "prefixes": [
+        "qo"
+      ]
+    }
+  },
+  "hazard_class_profiles": {
+    "33": {
+      "exclusive_middles": 0,
+      "shared_middles": 4
+    },
+    "7": {
+      "exclusive_middles": 0,
+      "shared_middles": 0
+    },
+    "8": {
+      "exclusive_middles": 0,
+      "shared_middles": 1
+    },
+    "41": {
+      "exclusive_middles": 0,
+      "shared_middles": 3
+    },
+    "9": {
+      "exclusive_middles": 0,
+      "shared_middles": 0
+    },
+    "11": {
+      "exclusive_middles": 0,
+      "shared_middles": 1
+    },
+    "23": {
+      "exclusive_middles": 0,
+      "shared_middles": 0
+    },
+    "30": {
+      "exclusive_middles": 1,
+      "shared_middles": 2
+    },
+    "31": {
+      "exclusive_middles": 0,
+      "shared_middles": 3
+    }
+  }
+}

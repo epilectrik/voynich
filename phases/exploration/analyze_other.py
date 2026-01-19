@@ -19,6 +19,9 @@ other_prefixes = Counter()
 with open(data_path, 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f, delimiter='\t')
     for row in reader:
+        transcriber = row.get('transcriber', '').strip().strip('"')
+        if transcriber != 'H':
+            continue
         folio = row.get('folio', '').strip('"').replace('f', '')
         if folio in CURRIER_A_FOLIOS:
             word = row.get('word', '').strip('"').lower()

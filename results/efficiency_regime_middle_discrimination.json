@@ -5,34 +5,34 @@
   "falsification": "No gradient or reversed gradient",
   "prefix_results": {
     "a": {
-      "n_middles": 36,
+      "n_middles": 23,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 7,
+          "n_middles": 4,
           "freq_range": "1-1",
-          "total_tokens": 7,
-          "ac_fraction": 0.857,
-          "zodiac_fraction": 0.143,
+          "total_tokens": 4,
+          "ac_fraction": 0.75,
+          "zodiac_fraction": 0.25,
           "dominant_family": "AC",
           "example_middles": [
             "ckal",
-            "etee",
-            "echeo"
+            "sa",
+            "ira"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 7,
+          "n_middles": 4,
           "freq_range": "1-1",
-          "total_tokens": 7,
-          "ac_fraction": 0.143,
-          "zodiac_fraction": 0.857,
+          "total_tokens": 4,
+          "ac_fraction": 0.25,
+          "zodiac_fraction": 0.75,
           "dominant_family": "ZODIAC",
           "example_middles": [
-            "iro",
+            "irch",
             "il",
             "sal"
           ]
@@ -40,122 +40,122 @@
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 7,
-          "freq_range": "1-2",
-          "total_tokens": 10,
-          "ac_fraction": 0.4,
-          "zodiac_fraction": 0.6,
-          "dominant_family": "MIXED",
+          "n_middles": 4,
+          "freq_range": "1-1",
+          "total_tokens": 4,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "te",
-            "iralo",
-            "is"
+            "tee",
+            "da",
+            "inal"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 7,
-          "freq_range": "2-3",
-          "total_tokens": 19,
-          "ac_fraction": 0.579,
-          "zodiac_fraction": 0.421,
-          "dominant_family": "MIXED",
+          "n_middles": 4,
+          "freq_range": "1-1",
+          "total_tokens": 4,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "da",
-            "iinod",
-            "j"
+            "n",
+            "taseo",
+            "irol"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 8,
-          "freq_range": "4-192",
-          "total_tokens": 298,
-          "ac_fraction": 0.584,
-          "zodiac_fraction": 0.416,
+          "n_middles": 7,
+          "freq_range": "1-65",
+          "total_tokens": 96,
+          "ac_fraction": 0.49,
+          "zodiac_fraction": 0.51,
           "dominant_family": "MIXED",
           "example_middles": [
+            "te",
             "in",
-            "s",
             "iin"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.273,
-        "correlation": -0.066,
+        "gradient_diff": 0.26,
+        "correlation": -0.375,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.857,
-          0.143,
-          0.4,
-          0.579,
-          0.584
+          0.75,
+          0.25,
+          0.0,
+          0.0,
+          0.49
         ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
       }
     },
     "al": {
-      "n_middles": 32,
+      "n_middles": 19,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 6,
+          "n_middles": 3,
           "freq_range": "1-1",
-          "total_tokens": 6,
-          "ac_fraction": 0.667,
-          "zodiac_fraction": 0.333,
-          "dominant_family": "MIXED",
+          "total_tokens": 3,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "ct",
-            "g",
-            "ch"
+            "che",
+            "amch",
+            "g"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 6,
-          "freq_range": "1-2",
-          "total_tokens": 7,
-          "ac_fraction": 0.0,
-          "zodiac_fraction": 1.0,
-          "dominant_family": "ZODIAC",
+          "n_middles": 3,
+          "freq_range": "1-1",
+          "total_tokens": 3,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "if",
-            "ef",
-            "ysh"
+            "air",
+            "ekee",
+            "oee"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 6,
-          "freq_range": "2-2",
-          "total_tokens": 12,
-          "ac_fraction": 0.583,
-          "zodiac_fraction": 0.417,
-          "dominant_family": "MIXED",
+          "n_middles": 3,
+          "freq_range": "1-1",
+          "total_tokens": 3,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "et",
-            "lchd",
-            "ekee"
+            "f",
+            "ai",
+            "k"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 6,
-          "freq_range": "2-3",
-          "total_tokens": 15,
-          "ac_fraction": 0.533,
-          "zodiac_fraction": 0.467,
-          "dominant_family": "MIXED",
+          "n_middles": 3,
+          "freq_range": "1-1",
+          "total_tokens": 3,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
             "teo",
             "cho",
@@ -165,227 +165,37 @@
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 8,
-          "freq_range": "3-30",
-          "total_tokens": 107,
-          "ac_fraction": 0.486,
-          "zodiac_fraction": 0.514,
+          "n_middles": 7,
+          "freq_range": "2-12",
+          "total_tokens": 41,
+          "ac_fraction": 0.366,
+          "zodiac_fraction": 0.634,
           "dominant_family": "MIXED",
           "example_middles": [
             "she",
-            "amch",
-            "sh"
+            "sh",
+            "ol"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.181,
-        "correlation": 0.103,
+        "gradient_diff": 0.634,
+        "correlation": -0.712,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.667,
-          0.0,
-          0.583,
-          0.533,
-          0.486
-        ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
-      }
-    },
-    "ar": {
-      "n_middles": 26,
-      "quintiles": {
-        "0": {
-          "quintile": 1,
-          "label": "RAREST",
-          "n_middles": 5,
-          "freq_range": "1-1",
-          "total_tokens": 5,
-          "ac_fraction": 0.8,
-          "zodiac_fraction": 0.2,
-          "dominant_family": "AC",
-          "example_middles": [
-            "alara",
-            "cheo",
-            "oka"
-          ]
-        },
-        "1": {
-          "quintile": 2,
-          "label": "RARE",
-          "n_middles": 5,
-          "freq_range": "1-1",
-          "total_tokens": 5,
-          "ac_fraction": 1.0,
-          "zodiac_fraction": 0.0,
-          "dominant_family": "AC",
-          "example_middles": [
-            "keee",
-            "olsa",
-            "olse"
-          ]
-        },
-        "2": {
-          "quintile": 3,
-          "label": "MEDIUM",
-          "n_middles": 5,
-          "freq_range": "1-1",
-          "total_tokens": 5,
-          "ac_fraction": 0.6,
-          "zodiac_fraction": 0.4,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "k",
-            "ylekeo",
-            "da"
-          ]
-        },
-        "3": {
-          "quintile": 4,
-          "label": "COMMON",
-          "n_middles": 5,
-          "freq_range": "2-2",
-          "total_tokens": 10,
-          "ac_fraction": 0.5,
-          "zodiac_fraction": 0.5,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "an",
-            "cho",
-            "l"
-          ]
-        },
-        "4": {
-          "quintile": 5,
-          "label": "MOST_COMMON",
-          "n_middles": 6,
-          "freq_range": "3-27",
-          "total_tokens": 69,
-          "ac_fraction": 0.522,
-          "zodiac_fraction": 0.478,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "odche",
-            "ay",
-            "o"
-          ]
-        }
-      },
-      "gradient_analysis": {
-        "gradient_diff": 0.278,
-        "correlation": -0.786,
-        "monotonic_increasing": false,
-        "monotonic_decreasing": false,
-        "ac_by_quintile": [
-          0.8,
           1.0,
-          0.6,
-          0.5,
-          0.522
+          1.0,
+          0.0,
+          0.0,
+          0.366
         ],
         "verdict": "GRADIENT_CONFIRMED",
         "direction": "RARER_MORE_AC"
       }
     },
-    "ch": {
-      "n_middles": 265,
-      "quintiles": {
-        "0": {
-          "quintile": 1,
-          "label": "RAREST",
-          "n_middles": 53,
-          "freq_range": "1-1",
-          "total_tokens": 53,
-          "ac_fraction": 0.981,
-          "zodiac_fraction": 0.019,
-          "dominant_family": "AC",
-          "example_middles": [
-            "eotch",
-            "eotshk",
-            "oikhe"
-          ]
-        },
-        "1": {
-          "quintile": 2,
-          "label": "RARE",
-          "n_middles": 53,
-          "freq_range": "1-2",
-          "total_tokens": 65,
-          "ac_fraction": 0.354,
-          "zodiac_fraction": 0.646,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "ckhh",
-            "edaino",
-            "elal"
-          ]
-        },
-        "2": {
-          "quintile": 3,
-          "label": "MEDIUM",
-          "n_middles": 53,
-          "freq_range": "2-3",
-          "total_tokens": 112,
-          "ac_fraction": 0.482,
-          "zodiac_fraction": 0.518,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "eockhedch",
-            "cph",
-            "eeetcho"
-          ]
-        },
-        "3": {
-          "quintile": 4,
-          "label": "COMMON",
-          "n_middles": 53,
-          "freq_range": "3-4",
-          "total_tokens": 172,
-          "ac_fraction": 0.802,
-          "zodiac_fraction": 0.198,
-          "dominant_family": "AC",
-          "example_middles": [
-            "okeea",
-            "eockh",
-            "ockhe"
-          ]
-        },
-        "4": {
-          "quintile": 5,
-          "label": "MOST_COMMON",
-          "n_middles": 53,
-          "freq_range": "4-122",
-          "total_tokens": 913,
-          "ac_fraction": 0.724,
-          "zodiac_fraction": 0.276,
-          "dominant_family": "AC",
-          "example_middles": [
-            "otal",
-            "ckhe",
-            "opche"
-          ]
-        }
-      },
-      "gradient_analysis": {
-        "gradient_diff": 0.257,
-        "correlation": -0.042,
-        "monotonic_increasing": false,
-        "monotonic_decreasing": false,
-        "ac_by_quintile": [
-          0.981,
-          0.354,
-          0.482,
-          0.802,
-          0.724
-        ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
-      }
-    },
-    "ct": {
-      "n_middles": 10,
+    "ar": {
+      "n_middles": 12,
       "quintiles": {
         "0": {
           "quintile": 1,
@@ -397,425 +207,608 @@
           "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
-            "hote",
-            "ha"
+            "cheo",
+            "oka"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
           "n_middles": 2,
-          "freq_range": "1-2",
-          "total_tokens": 3,
-          "ac_fraction": 0.667,
-          "zodiac_fraction": 0.333,
-          "dominant_family": "MIXED",
+          "freq_range": "1-1",
+          "total_tokens": 2,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "heo",
-            "hyd"
+            "olsa",
+            "al"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
           "n_middles": 2,
-          "freq_range": "2-3",
-          "total_tokens": 5,
+          "freq_range": "1-1",
+          "total_tokens": 2,
           "ac_fraction": 1.0,
           "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
-            "a",
-            "heepch"
+            "cho",
+            "odche"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
           "n_middles": 2,
-          "freq_range": "3-10",
-          "total_tokens": 13,
-          "ac_fraction": 0.538,
-          "zodiac_fraction": 0.462,
-          "dominant_family": "MIXED",
+          "freq_range": "1-1",
+          "total_tokens": 2,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "hee",
-            "he"
+            "ay",
+            "ar"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 2,
-          "freq_range": "12-12",
-          "total_tokens": 24,
-          "ac_fraction": 0.958,
-          "zodiac_fraction": 0.042,
-          "dominant_family": "AC",
+          "n_middles": 4,
+          "freq_range": "2-8",
+          "total_tokens": 18,
+          "ac_fraction": 0.611,
+          "zodiac_fraction": 0.389,
+          "dominant_family": "MIXED",
           "example_middles": [
-            "h",
-            "ho"
+            "o",
+            "l",
+            "a"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.042,
-        "correlation": -0.156,
+        "gradient_diff": 0.389,
+        "correlation": -0.643,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
           1.0,
-          0.667,
           1.0,
-          0.538,
-          0.958
+          1.0,
+          0.0,
+          0.611
         ],
-        "verdict": "NO_GRADIENT",
-        "direction": "FLAT"
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
       }
     },
-    "d": {
-      "n_middles": 138,
+    "ch": {
+      "n_middles": 197,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 27,
+          "n_middles": 39,
           "freq_range": "1-1",
-          "total_tokens": 27,
-          "ac_fraction": 0.926,
-          "zodiac_fraction": 0.074,
+          "total_tokens": 39,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
-            "yda",
-            "oeda",
-            "eesch"
+            "p",
+            "eotee",
+            "eod"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 27,
+          "n_middles": 39,
           "freq_range": "1-1",
-          "total_tokens": 27,
-          "ac_fraction": 0.667,
-          "zodiac_fraction": 0.333,
-          "dominant_family": "MIXED",
+          "total_tokens": 39,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "as",
-            "alii",
-            "akee"
+            "odo",
+            "eeke",
+            "oeke"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 27,
-          "freq_range": "1-2",
-          "total_tokens": 51,
-          "ac_fraction": 0.804,
-          "zodiac_fraction": 0.196,
-          "dominant_family": "AC",
+          "n_middles": 39,
+          "freq_range": "1-1",
+          "total_tokens": 39,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "e",
-            "ara",
-            "p"
+            "oetee",
+            "olka",
+            "otea"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 27,
-          "freq_range": "2-3",
-          "total_tokens": 71,
-          "ac_fraction": 0.648,
-          "zodiac_fraction": 0.352,
+          "n_middles": 39,
+          "freq_range": "1-2",
+          "total_tokens": 59,
+          "ac_fraction": 0.508,
+          "zodiac_fraction": 0.492,
           "dominant_family": "MIXED",
           "example_middles": [
-            "aiia",
-            "oai",
+            "eee",
+            "eoekc",
+            "eokai"
+          ]
+        },
+        "4": {
+          "quintile": 5,
+          "label": "MOST_COMMON",
+          "n_middles": 41,
+          "freq_range": "2-44",
+          "total_tokens": 298,
+          "ac_fraction": 0.607,
+          "zodiac_fraction": 0.393,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "oekee",
+            "t",
+            "ekeo"
+          ]
+        }
+      },
+      "gradient_analysis": {
+        "gradient_diff": 0.393,
+        "correlation": -0.488,
+        "monotonic_increasing": false,
+        "monotonic_decreasing": false,
+        "ac_by_quintile": [
+          1.0,
+          1.0,
+          0.0,
+          0.508,
+          0.607
+        ],
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
+      }
+    },
+    "ct": {
+      "n_middles": 8,
+      "quintiles": {
+        "0": {
+          "quintile": 1,
+          "label": "RAREST",
+          "n_middles": 1,
+          "freq_range": "1-1",
+          "total_tokens": 1,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "hyd"
+          ]
+        },
+        "1": {
+          "quintile": 2,
+          "label": "RARE",
+          "n_middles": 1,
+          "freq_range": "1-1",
+          "total_tokens": 1,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "heepch"
+          ]
+        },
+        "2": {
+          "quintile": 3,
+          "label": "MEDIUM",
+          "n_middles": 1,
+          "freq_range": "1-1",
+          "total_tokens": 1,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "a"
+          ]
+        },
+        "3": {
+          "quintile": 4,
+          "label": "COMMON",
+          "n_middles": 1,
+          "freq_range": "1-1",
+          "total_tokens": 1,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "hee"
+          ]
+        },
+        "4": {
+          "quintile": 5,
+          "label": "MOST_COMMON",
+          "n_middles": 4,
+          "freq_range": "1-4",
+          "total_tokens": 11,
+          "ac_fraction": 0.636,
+          "zodiac_fraction": 0.364,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "heo",
+            "he",
+            "ho"
+          ]
+        }
+      },
+      "gradient_analysis": {
+        "gradient_diff": 0.364,
+        "correlation": -0.707,
+        "monotonic_increasing": true,
+        "monotonic_decreasing": false,
+        "ac_by_quintile": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.636
+        ],
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
+      }
+    },
+    "d": {
+      "n_middles": 93,
+      "quintiles": {
+        "0": {
+          "quintile": 1,
+          "label": "RAREST",
+          "n_middles": 18,
+          "freq_range": "1-1",
+          "total_tokens": 18,
+          "ac_fraction": 0.611,
+          "zodiac_fraction": 0.389,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "airo",
+            "efo",
+            "da"
+          ]
+        },
+        "1": {
+          "quintile": 2,
+          "label": "RARE",
+          "n_middles": 18,
+          "freq_range": "1-1",
+          "total_tokens": 18,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "choda",
+            "cseso",
+            "echoeko"
+          ]
+        },
+        "2": {
+          "quintile": 3,
+          "label": "MEDIUM",
+          "n_middles": 18,
+          "freq_range": "1-1",
+          "total_tokens": 18,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "as",
+            "keee",
+            "oa"
+          ]
+        },
+        "3": {
+          "quintile": 4,
+          "label": "COMMON",
+          "n_middles": 18,
+          "freq_range": "1-1",
+          "total_tokens": 18,
+          "ac_fraction": 0.333,
+          "zodiac_fraction": 0.667,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "g",
+            "cheok",
             "oith"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 30,
-          "freq_range": "3-352",
-          "total_tokens": 756,
-          "ac_fraction": 0.8,
-          "zodiac_fraction": 0.2,
+          "n_middles": 21,
+          "freq_range": "2-122",
+          "total_tokens": 249,
+          "ac_fraction": 0.751,
+          "zodiac_fraction": 0.249,
           "dominant_family": "AC",
           "example_middles": [
-            "choke",
-            "cha",
-            "cheok"
+            "sh",
+            "cheeo",
+            "oii"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.126,
-        "correlation": -0.376,
+        "gradient_diff": -0.14,
+        "correlation": -0.217,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.926,
-          0.667,
-          0.804,
-          0.648,
-          0.8
+          0.611,
+          1.0,
+          1.0,
+          0.333,
+          0.751
+        ],
+        "verdict": "WEAK_GRADIENT",
+        "direction": "WEAK_RARER_MORE_ZODIAC"
+      }
+    },
+    "o": {
+      "n_middles": 141,
+      "quintiles": {
+        "0": {
+          "quintile": 1,
+          "label": "RAREST",
+          "n_middles": 28,
+          "freq_range": "1-1",
+          "total_tokens": 28,
+          "ac_fraction": 0.893,
+          "zodiac_fraction": 0.107,
+          "dominant_family": "AC",
+          "example_middles": [
+            "fche",
+            "parairdl",
+            "cfho"
+          ]
+        },
+        "1": {
+          "quintile": 2,
+          "label": "RARE",
+          "n_middles": 28,
+          "freq_range": "1-1",
+          "total_tokens": 28,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "cthe",
+            "dchecth",
+            "fcheo"
+          ]
+        },
+        "2": {
+          "quintile": 3,
+          "label": "MEDIUM",
+          "n_middles": 28,
+          "freq_range": "1-1",
+          "total_tokens": 28,
+          "ac_fraction": 0.071,
+          "zodiac_fraction": 0.929,
+          "dominant_family": "ZODIAC",
+          "example_middles": [
+            "paii",
+            "par",
+            "py"
+          ]
+        },
+        "3": {
+          "quintile": 4,
+          "label": "COMMON",
+          "n_middles": 28,
+          "freq_range": "1-1",
+          "total_tokens": 28,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
+          "example_middles": [
+            "falal",
+            "cfhe",
+            "eem"
+          ]
+        },
+        "4": {
+          "quintile": 5,
+          "label": "MOST_COMMON",
+          "n_middles": 29,
+          "freq_range": "1-13",
+          "total_tokens": 97,
+          "ac_fraction": 0.577,
+          "zodiac_fraction": 0.423,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "iai",
+            "fo",
+            "f"
+          ]
+        }
+      },
+      "gradient_analysis": {
+        "gradient_diff": 0.316,
+        "correlation": -0.562,
+        "monotonic_increasing": false,
+        "monotonic_decreasing": false,
+        "ac_by_quintile": [
+          0.893,
+          1.0,
+          0.071,
+          0.0,
+          0.577
         ],
         "verdict": "GRADIENT_CONFIRMED",
         "direction": "RARER_MORE_AC"
       }
     },
-    "o": {
-      "n_middles": 213,
+    "ok": {
+      "n_middles": 113,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 42,
+          "n_middles": 22,
           "freq_range": "1-1",
-          "total_tokens": 42,
-          "ac_fraction": 0.976,
-          "zodiac_fraction": 0.024,
+          "total_tokens": 22,
+          "ac_fraction": 0.955,
+          "zodiac_fraction": 0.045,
           "dominant_family": "AC",
           "example_middles": [
-            "fha",
-            "cthch",
-            "schoe"
+            "chod",
+            "esoe",
+            "eoked"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 42,
+          "n_middles": 22,
           "freq_range": "1-1",
-          "total_tokens": 42,
-          "ac_fraction": 0.262,
-          "zodiac_fraction": 0.738,
-          "dominant_family": "ZODIAC",
+          "total_tokens": 22,
+          "ac_fraction": 0.909,
+          "zodiac_fraction": 0.091,
+          "dominant_family": "AC",
           "example_middles": [
-            "cthyd",
-            "y",
-            "eek"
+            "eodl",
+            "inaii",
+            "yld"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 42,
-          "freq_range": "1-2",
-          "total_tokens": 58,
-          "ac_fraction": 0.431,
-          "zodiac_fraction": 0.569,
-          "dominant_family": "MIXED",
+          "n_middles": 22,
+          "freq_range": "1-1",
+          "total_tokens": 22,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "yteieda",
-            "geo",
-            "sh"
+            "oksheo",
+            "choteee",
+            "eolo"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 42,
-          "freq_range": "2-3",
-          "total_tokens": 110,
-          "ac_fraction": 0.618,
-          "zodiac_fraction": 0.382,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "ees",
-            "choyk",
-            "oooooooo"
-          ]
-        },
-        "4": {
-          "quintile": 5,
-          "label": "MOST_COMMON",
-          "n_middles": 45,
-          "freq_range": "3-35",
-          "total_tokens": 324,
-          "ac_fraction": 0.611,
-          "zodiac_fraction": 0.389,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "farala",
-            "eeod",
-            "fshol"
-          ]
-        }
-      },
-      "gradient_analysis": {
-        "gradient_diff": 0.365,
-        "correlation": -0.222,
-        "monotonic_increasing": false,
-        "monotonic_decreasing": false,
-        "ac_by_quintile": [
-          0.976,
-          0.262,
-          0.431,
-          0.618,
-          0.611
-        ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
-      }
-    },
-    "ok": {
-      "n_middles": 165,
-      "quintiles": {
-        "0": {
-          "quintile": 1,
-          "label": "RAREST",
-          "n_middles": 33,
-          "freq_range": "1-1",
-          "total_tokens": 33,
-          "ac_fraction": 0.97,
-          "zodiac_fraction": 0.03,
-          "dominant_family": "AC",
-          "example_middles": [
-            "eel",
-            "eohda",
-            "oeda"
-          ]
-        },
-        "1": {
-          "quintile": 2,
-          "label": "RARE",
-          "n_middles": 33,
-          "freq_range": "1-1",
-          "total_tokens": 33,
+          "n_middles": 22,
+          "freq_range": "1-2",
+          "total_tokens": 30,
           "ac_fraction": 0.333,
           "zodiac_fraction": 0.667,
           "dominant_family": "MIXED",
           "example_middles": [
-            "cheese",
-            "eeeoda",
-            "eey"
-          ]
-        },
-        "2": {
-          "quintile": 3,
-          "label": "MEDIUM",
-          "n_middles": 33,
-          "freq_range": "1-2",
-          "total_tokens": 58,
-          "ac_fraction": 0.397,
-          "zodiac_fraction": 0.603,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "eos",
-            "chesa",
-            "chedyl"
-          ]
-        },
-        "3": {
-          "quintile": 4,
-          "label": "COMMON",
-          "n_middles": 33,
-          "freq_range": "2-4",
-          "total_tokens": 102,
-          "ac_fraction": 0.588,
-          "zodiac_fraction": 0.412,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "eeal",
-            "oleeola",
-            "se"
+            "echea",
+            "yeesh",
+            "eoeko"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 33,
-          "freq_range": "4-115",
-          "total_tokens": 827,
-          "ac_fraction": 0.554,
-          "zodiac_fraction": 0.446,
+          "n_middles": 25,
+          "freq_range": "2-47",
+          "total_tokens": 288,
+          "ac_fraction": 0.479,
+          "zodiac_fraction": 0.521,
           "dominant_family": "MIXED",
           "example_middles": [
-            "eedal",
-            "ech",
-            "eodal"
+            "eodal",
+            "se",
+            "eor"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.416,
-        "correlation": -0.367,
+        "gradient_diff": 0.476,
+        "correlation": -0.601,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.97,
+          0.955,
+          0.909,
+          0.0,
           0.333,
-          0.397,
-          0.588,
-          0.554
+          0.479
         ],
         "verdict": "GRADIENT_CONFIRMED",
         "direction": "RARER_MORE_AC"
       }
     },
     "ol": {
-      "n_middles": 42,
+      "n_middles": 28,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 8,
+          "n_middles": 5,
           "freq_range": "1-1",
-          "total_tokens": 8,
-          "ac_fraction": 1.0,
-          "zodiac_fraction": 0.0,
+          "total_tokens": 5,
+          "ac_fraction": 0.8,
+          "zodiac_fraction": 0.2,
           "dominant_family": "AC",
           "example_middles": [
-            "alad",
-            "ala",
-            "k"
+            "kchda",
+            "kao",
+            "oesd"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 8,
+          "n_middles": 5,
           "freq_range": "1-1",
-          "total_tokens": 8,
-          "ac_fraction": 0.25,
-          "zodiac_fraction": 0.75,
-          "dominant_family": "ZODIAC",
+          "total_tokens": 5,
+          "ac_fraction": 0.4,
+          "zodiac_fraction": 0.6,
+          "dominant_family": "MIXED",
           "example_middles": [
-            "se",
-            "ai",
-            "chea"
+            "keeol",
+            "ekee",
+            "keeo"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 8,
-          "freq_range": "1-2",
-          "total_tokens": 14,
-          "ac_fraction": 0.286,
-          "zodiac_fraction": 0.714,
+          "n_middles": 5,
+          "freq_range": "1-1",
+          "total_tokens": 5,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
           "dominant_family": "ZODIAC",
           "example_middles": [
-            "kcho",
-            "kch",
-            "g"
+            "cthh",
+            "kal",
+            "als"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 8,
-          "freq_range": "2-3",
-          "total_tokens": 19,
-          "ac_fraction": 0.316,
-          "zodiac_fraction": 0.684,
-          "dominant_family": "MIXED",
+          "n_middles": 5,
+          "freq_range": "1-1",
+          "total_tokens": 5,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
             "eta",
             "eeo",
@@ -825,616 +818,616 @@
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 10,
-          "freq_range": "3-20",
-          "total_tokens": 67,
-          "ac_fraction": 0.582,
-          "zodiac_fraction": 0.418,
+          "n_middles": 8,
+          "freq_range": "1-9",
+          "total_tokens": 22,
+          "ac_fraction": 0.455,
+          "zodiac_fraction": 0.545,
           "dominant_family": "MIXED",
           "example_middles": [
-            "keeol",
-            "ekee",
-            "kal"
+            "al",
+            "tee",
+            "kcho"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.418,
-        "correlation": -0.386,
+        "gradient_diff": 0.345,
+        "correlation": -0.509,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          1.0,
-          0.25,
-          0.286,
-          0.316,
-          0.582
+          0.8,
+          0.4,
+          0.0,
+          0.0,
+          0.455
         ],
         "verdict": "GRADIENT_CONFIRMED",
         "direction": "RARER_MORE_AC"
       }
     },
     "or": {
-      "n_middles": 22,
+      "n_middles": 16,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 4,
+          "n_middles": 3,
           "freq_range": "1-1",
-          "total_tokens": 4,
-          "ac_fraction": 0.75,
-          "zodiac_fraction": 0.25,
-          "dominant_family": "AC",
+          "total_tokens": 3,
+          "ac_fraction": 0.667,
+          "zodiac_fraction": 0.333,
+          "dominant_family": "MIXED",
           "example_middles": [
             "alaro",
-            "ala",
-            "d"
+            "choe",
+            "al"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 4,
+          "n_middles": 3,
           "freq_range": "1-1",
-          "total_tokens": 4,
+          "total_tokens": 3,
           "ac_fraction": 1.0,
           "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
-            "eed",
-            "ad",
-            "aral"
+            "ala",
+            "d",
+            "iid"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 4,
+          "n_middles": 3,
           "freq_range": "1-1",
-          "total_tokens": 4,
-          "ac_fraction": 0.25,
-          "zodiac_fraction": 0.75,
-          "dominant_family": "ZODIAC",
+          "total_tokens": 3,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "ol",
-            "oj",
-            "ara"
+            "keee",
+            "asal",
+            "olg"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 4,
-          "freq_range": "2-2",
-          "total_tokens": 8,
-          "ac_fraction": 0.75,
-          "zodiac_fraction": 0.25,
-          "dominant_family": "AC",
+          "n_middles": 3,
+          "freq_range": "1-1",
+          "total_tokens": 3,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "choe",
-            "keee",
-            "asal"
+            "y",
+            "ara",
+            "eee"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 6,
-          "freq_range": "2-14",
-          "total_tokens": 34,
-          "ac_fraction": 0.412,
-          "zodiac_fraction": 0.588,
-          "dominant_family": "MIXED",
+          "n_middles": 4,
+          "freq_range": "1-5",
+          "total_tokens": 11,
+          "ac_fraction": 0.273,
+          "zodiac_fraction": 0.727,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "che",
-            "al",
-            "ar"
+            "aiin",
+            "ar",
+            "o"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.338,
-        "correlation": -0.49,
+        "gradient_diff": 0.394,
+        "correlation": -0.636,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.75,
+          0.667,
           1.0,
-          0.25,
-          0.75,
-          0.412
+          1.0,
+          0.0,
+          0.273
         ],
         "verdict": "GRADIENT_CONFIRMED",
         "direction": "RARER_MORE_AC"
       }
     },
     "ot": {
-      "n_middles": 210,
+      "n_middles": 151,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 42,
+          "n_middles": 30,
           "freq_range": "1-1",
-          "total_tokens": 42,
-          "ac_fraction": 0.857,
-          "zodiac_fraction": 0.143,
+          "total_tokens": 30,
+          "ac_fraction": 0.933,
+          "zodiac_fraction": 0.067,
           "dominant_family": "AC",
           "example_middles": [
+            "ardal",
             "odarod",
-            "iod",
-            "ees"
+            "od"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 42,
+          "n_middles": 30,
           "freq_range": "1-1",
-          "total_tokens": 42,
+          "total_tokens": 30,
+          "ac_fraction": 0.7,
+          "zodiac_fraction": 0.3,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "eeoso",
+            "airo",
+            "odo"
+          ]
+        },
+        "2": {
+          "quintile": 3,
+          "label": "MEDIUM",
+          "n_middles": 30,
+          "freq_range": "1-1",
+          "total_tokens": 30,
           "ac_fraction": 0.0,
           "zodiac_fraction": 1.0,
           "dominant_family": "ZODIAC",
           "example_middles": [
-            "eeeora",
-            "alaj",
-            "aii"
-          ]
-        },
-        "2": {
-          "quintile": 3,
-          "label": "MEDIUM",
-          "n_middles": 42,
-          "freq_range": "1-2",
-          "total_tokens": 75,
-          "ac_fraction": 0.48,
-          "zodiac_fraction": 0.52,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "eeos",
-            "eeor",
-            "oreee"
+            "yla",
+            "eoshe",
+            "alch"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 42,
-          "freq_range": "2-4",
-          "total_tokens": 133,
-          "ac_fraction": 0.526,
-          "zodiac_fraction": 0.474,
-          "dominant_family": "MIXED",
+          "n_middles": 30,
+          "freq_range": "1-2",
+          "total_tokens": 37,
+          "ac_fraction": 0.216,
+          "zodiac_fraction": 0.784,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "eedy",
-            "eoto",
-            "ardal"
+            "eeykee",
+            "see",
+            "eear"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 42,
-          "freq_range": "4-136",
-          "total_tokens": 980,
-          "ac_fraction": 0.414,
-          "zodiac_fraction": 0.586,
+          "n_middles": 31,
+          "freq_range": "2-58",
+          "total_tokens": 348,
+          "ac_fraction": 0.351,
+          "zodiac_fraction": 0.649,
           "dominant_family": "MIXED",
           "example_middles": [
-            "eeda",
-            "alch",
-            "chodal"
+            "chosh",
+            "alal",
+            "ara"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.443,
-        "correlation": -0.186,
+        "gradient_diff": 0.582,
+        "correlation": -0.695,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.857,
+          0.933,
+          0.7,
           0.0,
-          0.48,
-          0.526,
-          0.414
+          0.216,
+          0.351
         ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
       }
     },
     "qo": {
-      "n_middles": 66,
+      "n_middles": 50,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 13,
+          "n_middles": 10,
           "freq_range": "1-1",
-          "total_tokens": 13,
+          "total_tokens": 10,
           "ac_fraction": 1.0,
           "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
+            "p",
             "kesd",
-            "kshd",
-            "eksh"
+            "kd"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 13,
-          "freq_range": "1-2",
-          "total_tokens": 14,
-          "ac_fraction": 0.643,
-          "zodiac_fraction": 0.357,
-          "dominant_family": "MIXED",
+          "n_middles": 10,
+          "freq_range": "1-1",
+          "total_tokens": 10,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "tch",
-            "etoseee",
-            "ckhh"
+            "koaii",
+            "kiiio",
+            "kcheo"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 13,
-          "freq_range": "2-3",
-          "total_tokens": 34,
-          "ac_fraction": 0.882,
-          "zodiac_fraction": 0.118,
+          "n_middles": 10,
+          "freq_range": "1-1",
+          "total_tokens": 10,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
-            "keeeo",
-            "koo",
-            "lkee"
+            "oto",
+            "ckhh",
+            "eeok"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 13,
-          "freq_range": "3-4",
-          "total_tokens": 46,
-          "ac_fraction": 0.848,
-          "zodiac_fraction": 0.152,
-          "dominant_family": "AC",
+          "n_middles": 10,
+          "freq_range": "1-1",
+          "total_tokens": 10,
+          "ac_fraction": 0.3,
+          "zodiac_fraction": 0.7,
+          "dominant_family": "MIXED",
           "example_middles": [
-            "ee",
-            "eee",
-            "ke"
+            "teo",
+            "tai",
+            "ta"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 14,
-          "freq_range": "4-28",
-          "total_tokens": 133,
-          "ac_fraction": 0.872,
-          "zodiac_fraction": 0.128,
+          "n_middles": 10,
+          "freq_range": "2-8",
+          "total_tokens": 35,
+          "ac_fraction": 0.743,
+          "zodiac_fraction": 0.257,
           "dominant_family": "AC",
           "example_middles": [
-            "keoda",
-            "fai",
-            "keoch"
+            "keeo",
+            "teeo",
+            "t"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.128,
-        "correlation": -0.062,
+        "gradient_diff": 0.257,
+        "correlation": -0.629,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
           1.0,
-          0.643,
-          0.882,
-          0.848,
-          0.872
+          1.0,
+          1.0,
+          0.3,
+          0.743
         ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
       }
     },
     "s": {
-      "n_middles": 74,
+      "n_middles": 51,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 14,
+          "n_middles": 10,
           "freq_range": "1-1",
-          "total_tokens": 14,
-          "ac_fraction": 0.714,
-          "zodiac_fraction": 0.286,
+          "total_tokens": 10,
+          "ac_fraction": 0.9,
+          "zodiac_fraction": 0.1,
           "dominant_family": "AC",
           "example_middles": [
             "ocfchee",
-            "aeeo",
-            "oefchee"
+            "oa",
+            "oaira"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 14,
+          "n_middles": 10,
           "freq_range": "1-1",
-          "total_tokens": 14,
+          "total_tokens": 10,
           "ac_fraction": 1.0,
           "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
             "och",
-            "oeeo",
+            "oraii",
             "also"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 14,
+          "n_middles": 10,
           "freq_range": "1-1",
-          "total_tokens": 14,
-          "ac_fraction": 0.643,
-          "zodiac_fraction": 0.357,
-          "dominant_family": "MIXED",
+          "total_tokens": 10,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
           "example_middles": [
-            "aj",
-            "eeke",
-            "octhe"
+            "ola",
+            "i",
+            "eee"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 14,
-          "freq_range": "2-3",
-          "total_tokens": 30,
-          "ac_fraction": 0.8,
-          "zodiac_fraction": 0.2,
-          "dominant_family": "AC",
+          "n_middles": 10,
+          "freq_range": "1-1",
+          "total_tokens": 10,
+          "ac_fraction": 0.2,
+          "zodiac_fraction": 0.8,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "oeo",
-            "oeteed",
-            "ote"
+            "ary",
+            "aimch",
+            "alol"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
-          "n_middles": 18,
-          "freq_range": "3-87",
-          "total_tokens": 201,
-          "ac_fraction": 0.756,
-          "zodiac_fraction": 0.244,
-          "dominant_family": "AC",
+          "n_middles": 11,
+          "freq_range": "2-31",
+          "total_tokens": 66,
+          "ac_fraction": 0.652,
+          "zodiac_fraction": 0.348,
+          "dominant_family": "MIXED",
           "example_middles": [
-            "olai",
-            "cheko",
-            "al"
+            "oeo",
+            "or",
+            "aii"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": -0.042,
-        "correlation": -0.136,
+        "gradient_diff": 0.248,
+        "correlation": -0.605,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
-          0.714,
+          0.9,
           1.0,
-          0.643,
-          0.8,
-          0.756
+          1.0,
+          0.2,
+          0.652
         ],
-        "verdict": "NO_GRADIENT",
-        "direction": "FLAT"
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
       }
     },
     "sh": {
-      "n_middles": 103,
+      "n_middles": 83,
       "quintiles": {
         "0": {
           "quintile": 1,
           "label": "RAREST",
-          "n_middles": 20,
+          "n_middles": 16,
           "freq_range": "1-1",
-          "total_tokens": 20,
-          "ac_fraction": 0.75,
-          "zodiac_fraction": 0.25,
+          "total_tokens": 16,
+          "ac_fraction": 0.938,
+          "zodiac_fraction": 0.062,
           "dominant_family": "AC",
           "example_middles": [
-            "ckyoteeo",
-            "ckhh",
-            "ckhecph"
+            "kea",
+            "eek",
+            "k"
           ]
         },
         "1": {
           "quintile": 2,
           "label": "RARE",
-          "n_middles": 20,
+          "n_middles": 16,
           "freq_range": "1-1",
-          "total_tokens": 20,
-          "ac_fraction": 0.0,
-          "zodiac_fraction": 1.0,
-          "dominant_family": "ZODIAC",
+          "total_tokens": 16,
+          "ac_fraction": 0.812,
+          "zodiac_fraction": 0.188,
+          "dominant_family": "AC",
           "example_middles": [
-            "l",
-            "olshg",
-            "eolte"
+            "eel",
+            "okeoll",
+            "kech"
           ]
         },
         "2": {
           "quintile": 3,
           "label": "MEDIUM",
-          "n_middles": 20,
-          "freq_range": "2-3",
-          "total_tokens": 42,
-          "ac_fraction": 0.405,
-          "zodiac_fraction": 0.595,
-          "dominant_family": "MIXED",
+          "n_middles": 16,
+          "freq_range": "1-1",
+          "total_tokens": 16,
+          "ac_fraction": 0.0,
+          "zodiac_fraction": 1.0,
+          "dominant_family": "ZODIAC",
           "example_middles": [
-            "k",
-            "eokee",
-            "h"
+            "oteeo",
+            "ckhe",
+            "oeke"
           ]
         },
         "3": {
           "quintile": 4,
           "label": "COMMON",
-          "n_middles": 20,
-          "freq_range": "3-4",
-          "total_tokens": 67,
-          "ac_fraction": 0.866,
-          "zodiac_fraction": 0.134,
+          "n_middles": 16,
+          "freq_range": "1-2",
+          "total_tokens": 21,
+          "ac_fraction": 0.429,
+          "zodiac_fraction": 0.571,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "esh",
+            "eoka",
+            "edykey"
+          ]
+        },
+        "4": {
+          "quintile": 5,
+          "label": "MOST_COMMON",
+          "n_middles": 19,
+          "freq_range": "2-36",
+          "total_tokens": 128,
+          "ac_fraction": 0.547,
+          "zodiac_fraction": 0.453,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "ekch",
+            "da",
+            "octh"
+          ]
+        }
+      },
+      "gradient_analysis": {
+        "gradient_diff": 0.391,
+        "correlation": -0.503,
+        "monotonic_increasing": false,
+        "monotonic_decreasing": false,
+        "ac_by_quintile": [
+          0.938,
+          0.812,
+          0.0,
+          0.429,
+          0.547
+        ],
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
+      }
+    },
+    "y": {
+      "n_middles": 115,
+      "quintiles": {
+        "0": {
+          "quintile": 1,
+          "label": "RAREST",
+          "n_middles": 23,
+          "freq_range": "1-1",
+          "total_tokens": 23,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
           "dominant_family": "AC",
           "example_middles": [
-            "eos",
-            "r",
-            "oeke"
+            "fche",
+            "kchh",
+            "teeoe"
+          ]
+        },
+        "1": {
+          "quintile": 2,
+          "label": "RARE",
+          "n_middles": 23,
+          "freq_range": "1-1",
+          "total_tokens": 23,
+          "ac_fraction": 1.0,
+          "zodiac_fraction": 0.0,
+          "dominant_family": "AC",
+          "example_middles": [
+            "koo",
+            "pche",
+            "keee"
+          ]
+        },
+        "2": {
+          "quintile": 3,
+          "label": "MEDIUM",
+          "n_middles": 23,
+          "freq_range": "1-1",
+          "total_tokens": 23,
+          "ac_fraction": 0.391,
+          "zodiac_fraction": 0.609,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "fcheodl",
+            "tchea",
+            "polo"
+          ]
+        },
+        "3": {
+          "quintile": 4,
+          "label": "COMMON",
+          "n_middles": 23,
+          "freq_range": "1-2",
+          "total_tokens": 33,
+          "ac_fraction": 0.485,
+          "zodiac_fraction": 0.515,
+          "dominant_family": "MIXED",
+          "example_middles": [
+            "tol",
+            "al",
+            "keol"
           ]
         },
         "4": {
           "quintile": 5,
           "label": "MOST_COMMON",
           "n_middles": 23,
-          "freq_range": "4-95",
-          "total_tokens": 378,
-          "ac_fraction": 0.693,
-          "zodiac_fraction": 0.307,
+          "freq_range": "2-13",
+          "total_tokens": 114,
+          "ac_fraction": 0.658,
+          "zodiac_fraction": 0.342,
           "dominant_family": "MIXED",
           "example_middles": [
-            "ka",
-            "da",
-            "od"
+            "che",
+            "teeo",
+            "kol"
           ]
         }
       },
       "gradient_analysis": {
-        "gradient_diff": 0.057,
-        "correlation": 0.342,
-        "monotonic_increasing": false,
-        "monotonic_decreasing": false,
-        "ac_by_quintile": [
-          0.75,
-          0.0,
-          0.405,
-          0.866,
-          0.693
-        ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
-      }
-    },
-    "y": {
-      "n_middles": 162,
-      "quintiles": {
-        "0": {
-          "quintile": 1,
-          "label": "RAREST",
-          "n_middles": 32,
-          "freq_range": "1-1",
-          "total_tokens": 32,
-          "ac_fraction": 1.0,
-          "zodiac_fraction": 0.0,
-          "dominant_family": "AC",
-          "example_middles": [
-            "kchh",
-            "taoe",
-            "kara"
-          ]
-        },
-        "1": {
-          "quintile": 2,
-          "label": "RARE",
-          "n_middles": 32,
-          "freq_range": "1-1",
-          "total_tokens": 32,
-          "ac_fraction": 0.312,
-          "zodiac_fraction": 0.688,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "ty",
-            "choyk",
-            "saikch"
-          ]
-        },
-        "2": {
-          "quintile": 3,
-          "label": "MEDIUM",
-          "n_middles": 32,
-          "freq_range": "1-2",
-          "total_tokens": 61,
-          "ac_fraction": 0.607,
-          "zodiac_fraction": 0.393,
-          "dominant_family": "MIXED",
-          "example_middles": [
-            "dy",
-            "taral",
-            "lal"
-          ]
-        },
-        "3": {
-          "quintile": 4,
-          "label": "COMMON",
-          "n_middles": 32,
-          "freq_range": "3-4",
-          "total_tokens": 99,
-          "ac_fraction": 0.747,
-          "zodiac_fraction": 0.253,
-          "dominant_family": "AC",
-          "example_middles": [
-            "teeoe",
-            "keeda",
-            "dcho"
-          ]
-        },
-        "4": {
-          "quintile": 5,
-          "label": "MOST_COMMON",
-          "n_middles": 34,
-          "freq_range": "4-34",
-          "total_tokens": 394,
-          "ac_fraction": 0.769,
-          "zodiac_fraction": 0.231,
-          "dominant_family": "AC",
-          "example_middles": [
-            "keech",
-            "tcheo",
-            "keea"
-          ]
-        }
-      },
-      "gradient_analysis": {
-        "gradient_diff": 0.231,
-        "correlation": -0.017,
+        "gradient_diff": 0.342,
+        "correlation": -0.667,
         "monotonic_increasing": false,
         "monotonic_decreasing": false,
         "ac_by_quintile": [
           1.0,
-          0.312,
-          0.607,
-          0.747,
-          0.769
+          1.0,
+          0.391,
+          0.485,
+          0.658
         ],
-        "verdict": "WEAK_GRADIENT",
-        "direction": "WEAK_RARER_MORE_AC"
+        "verdict": "GRADIENT_CONFIRMED",
+        "direction": "RARER_MORE_AC"
       }
     }
   },
   "aggregate": {
     "testable_prefixes": 15,
-    "gradients_confirmed": 5,
+    "gradients_confirmed": 14,
     "gradients_reversed": 0,
-    "no_gradients": 2,
+    "no_gradients": 0,
     "insufficient_data": 0
   },
   "verdict": {
-    "overall": "WEAK_SUPPORT",
-    "interpretation": "Some gradient evidence but not consistent across prefix families"
+    "overall": "GRADIENT_SUPPORTED",
+    "interpretation": "Majority of prefix families show rarer MIDDLEs concentrated in A/C"
   },
   "stop_condition": "PROCEED_TO_TEST_1"
 }

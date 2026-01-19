@@ -88,6 +88,11 @@ zodiac_folios_found = set()
 with open('data/transcriptions/interlinear_full_words.txt', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f, delimiter='\t')
     for row in reader:
+        # CRITICAL: Filter to H-only transcriber track
+        transcriber = row.get('transcriber', '').strip()
+        if transcriber != 'H':
+            continue
+
         word = row.get('word', '').strip()
         folio = row.get('folio', '').strip()
         language = row.get('language', '').strip()

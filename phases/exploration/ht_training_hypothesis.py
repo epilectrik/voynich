@@ -36,6 +36,8 @@ DATA_PATH = "C:/git/voynich/data/transcriptions/interlinear_full_words.txt"
 def load_data():
     """Load and preprocess the transcription data."""
     df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False)
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     # Clean column names (remove quotes if present)
     df.columns = [c.strip('"') for c in df.columns]
     # Clean string columns

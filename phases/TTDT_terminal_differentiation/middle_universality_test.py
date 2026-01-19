@@ -66,6 +66,10 @@ def load_b_folios():
     with open(DATA_FILE, encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # H-only filter: PRIMARY transcriber track only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
             folio = row['folio']
             word = row['word'].strip('"')
             lang = row['language']

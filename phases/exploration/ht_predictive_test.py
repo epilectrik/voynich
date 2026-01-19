@@ -198,13 +198,14 @@ def is_escape_token(word):
 def load_data():
     """Load the transcription data."""
     df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False, na_values='NA')
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     return df
 
 def extract_all_currier_b_lines(df):
     """Extract ALL lines from Currier B with their properties."""
-    # Filter to Currier B and primary transcriber
-    transcriber = df['transcriber'].mode().iloc[0]
-    df_filtered = df[(df['transcriber'] == transcriber) & (df['language'] == 'B')].copy()
+    # Filter to Currier B (already filtered to H transcriber in load_data)
+    df_filtered = df[df['language'] == 'B'].copy()
 
     # Sort by folio, line, position
     df_filtered = df_filtered.sort_values(['folio', 'line_number', 'line_initial'],

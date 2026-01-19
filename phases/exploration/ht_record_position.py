@@ -62,7 +62,10 @@ def load_currier_a_entries():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) >= 7:
+            if len(parts) >= 13:
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').strip()
                 folio = parts[2].strip('"').strip()
                 language = parts[6].strip('"').strip() if len(parts) > 6 else ''

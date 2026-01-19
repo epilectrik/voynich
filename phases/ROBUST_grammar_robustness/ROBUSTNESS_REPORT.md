@@ -3,6 +3,7 @@
 **Phase:** ROBUST
 **Date:** 2026-01-07
 **Status:** COMPLETE
+**Updated:** 2026-01-16 (H-only transcriber filter verified)
 
 ---
 

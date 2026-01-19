@@ -4,6 +4,7 @@
 **Tier:** 2 (Structural Comparison)
 **Status:** COMPLETE
 **Date:** 2026-01-06
+**Updated:** 2026-01-16 (H-only transcriber filter verified)
 
 ---
 

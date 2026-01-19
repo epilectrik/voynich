@@ -1,0 +1,94 @@
+{
+  "phase": "CAR-FC",
+  "name": "Frequency-Controlled Validation",
+  "purpose": "Distinguish infrastructure effect from domain signal",
+  "tests": {
+    "CAR-FC1": {
+      "test_id": "CAR-FC1",
+      "test_name": "Partial Correlation Analysis",
+      "n_shared": 1141,
+      "raw_rho": 0.49060727481326466,
+      "raw_p": 3.789256318592279e-70,
+      "raw_pearson": 0.5945565028799561,
+      "partial_r": 0.5647417687706067,
+      "partial_p": 0.0,
+      "within_band_results": [
+        {
+          "band": 0,
+          "n": 637,
+          "a_range": "1-2",
+          "rho": 0.1070984628153462,
+          "p": 0.006819770124425307
+        },
+        {
+          "band": 1,
+          "n": 98,
+          "a_range": "3-3",
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "band": 2,
+          "n": 193,
+          "a_range": "4-7",
+          "rho": 0.17004236202233788,
+          "p": 0.018068953996012067
+        },
+        {
+          "band": 3,
+          "n": 213,
+          "a_range": "8-511",
+          "rho": 0.5203641760989828,
+          "p": 3.542401548599973e-16
+        }
+      ],
+      "significant_bands": 3,
+      "total_bands": 4,
+      "verdict": "BEYOND_FREQUENCY",
+      "interpretation": "Correlation persists within frequency bands"
+    },
+    "CAR-FC2": {
+      "test_id": "CAR-FC2",
+      "test_name": "Rank-Shuffled Null",
+      "n_shared": 1141,
+      "observed_rho": 0.49060727481326466,
+      "rank_shuffled_null_mean": 0.49060727481326455,
+      "rank_shuffled_null_std": 1.1102230246251565e-16,
+      "rank_shuffled_z_score": 1.0,
+      "rank_shuffled_p": 1.0,
+      "global_null_mean": -0.00019421446056285774,
+      "global_null_std": 0.031032468438411495,
+      "global_z_score": 15.815741188874336,
+      "verdict": "FREQUENCY_EXPLAINED",
+      "interpretation": "Rank-shuffled null accounts for observed correlation"
+    },
+    "CAR-FC3": {
+      "test_id": "CAR-FC3",
+      "test_name": "Section-Stratified Analysis",
+      "section_correlations": {
+        "A-sect-A vs B": {
+          "rho": 0.4612008642632645,
+          "p": 2.038020998086021e-17,
+          "n_shared": 304,
+          "n_a_tokens": 837,
+          "n_b_tokens": 23195
+        },
+        "A-sect-C vs B": {
+          "rho": 0.4999300485655869,
+          "p": 2.2463613030427288e-20,
+          "n_shared": 300,
+          "n_a_tokens": 1044,
+          "n_b_tokens": 23195
+        }
+      },
+      "rho_mean": 0.4805654564144257,
+      "rho_std": 0.01936459215116121,
+      "rho_range": 0.03872918430232242,
+      "coefficient_of_variation": 0.040295430919324644,
+      "verdict": "CONSISTENT",
+      "interpretation": "Correlation stable across sections"
+    }
+  },
+  "overall_verdict": "FREQUENCY_DOMINATED",
+  "summary": "A-B correlation primarily reflects frequency structure"
+}

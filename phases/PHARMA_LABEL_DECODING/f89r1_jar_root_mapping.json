@@ -1,0 +1,32 @@
+{
+  "folio": "f89r1",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Rooty plants, some with prominent leaves",
+  "has_jar_labels": "unclear",
+  "total_labels": 15,
+  "transcription_note": "Labels coded as t/m/b placements instead of L",
+  "groups": [
+    {
+      "row": 1,
+      "placement": "t",
+      "labels": ["okchshy", "qkol", "oldam", "otoldy", "ararchodaiin"],
+      "count": 5
+    },
+    {
+      "row": 2,
+      "placement": "m",
+      "labels": ["ykyd", "chol", "ches", "otorain", "okaiin", "dan"],
+      "count": 6
+    },
+    {
+      "row": 3,
+      "placement": "b",
+      "labels": ["ykocfhy", "saldam", "sydarary", "ydcphdy"],
+      "count": 4
+    }
+  ],
+  "foldout": "f88v_f89r1_f89r2"
+}

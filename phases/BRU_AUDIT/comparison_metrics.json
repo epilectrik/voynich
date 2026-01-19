@@ -1,0 +1,48 @@
+{
+  "test": "exclusive_middle_backprop.py H-only fix",
+  "date": "2026-01-16",
+  "summary": "PARTIAL VALIDATION - structure exists but weaker than claimed",
+
+  "exclusive_middle_counts": {
+    "metric": "Product-exclusive MIDDLE count",
+    "old_total": 3357,
+    "new_total": 2240,
+    "change": "-33.3%",
+    "by_product": {
+      "PRECISION": {"old": 513, "new": 368, "change": "-28.3%"},
+      "WATER_GENTLE": {"old": 519, "new": 368, "change": "-29.1%"},
+      "OIL_RESIN": {"old": 466, "new": 383, "change": "-17.8%"},
+      "WATER_STANDARD": {"old": 1859, "new": 1121, "change": "-39.7%"}
+    }
+  },
+
+  "exclusive_percentage": {
+    "metric": "Percentage of MIDDLEs that are product-exclusive",
+    "old": 78.2,
+    "new": 71.8,
+    "change": "-6.4 percentage points",
+    "verdict": "SURVIVED - structure still exists"
+  },
+
+  "mean_profile_difference": {
+    "metric": "Mean L1/2 distance between product PREFIX profiles",
+    "old": 0.105,
+    "new": 0.064,
+    "threshold": 0.1,
+    "old_verdict": "PRODUCT-SPECIFIC (above threshold)",
+    "new_verdict": "SIMILAR (below threshold)",
+    "change": "-39%",
+    "verdict": "WEAKENED - product types less discriminable"
+  },
+
+  "folio_classifications": {
+    "metric": "A folio product type assignments",
+    "old_total": 110,
+    "new_total": 110,
+    "changed_classifications": "Multiple folios reclassified",
+    "verdict": "UNSTABLE - classifications sensitive to data quality"
+  },
+
+  "overall_verdict": "PARTIAL VALIDATION",
+  "interpretation": "Product-exclusive MIDDLEs still exist (71.8%) but product type discrimination is weaker than originally claimed. The mean profile difference (0.064) is now below the 0.1 threshold that would indicate strong product-specific signatures. The structure exists but is not as robust as initially reported."
+}

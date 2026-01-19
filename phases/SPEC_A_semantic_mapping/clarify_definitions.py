@@ -35,7 +35,10 @@ with open(filepath, 'r', encoding='utf-8') as f:
     header = f.readline()
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) > 0:
+        if len(parts) > 12:
+            transcriber = parts[12].strip('"').strip()
+            if transcriber != 'H':
+                continue
             word = parts[0].strip('"').strip().lower()
             if word and not word.startswith('*'):
                 all_tokens.append(word)

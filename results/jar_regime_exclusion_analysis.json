@@ -1,0 +1,58 @@
+{
+  "test": "REGIME_EXCLUSION_HYPOTHESIS",
+  "date": "2026-01-17",
+  "jar_content_counts": {
+    "do": {
+      "M-B": 1
+    },
+    "da": {
+      "OTHER": 3,
+      "M-B": 5,
+      "M-D": 2,
+      "M-A": 1
+    },
+    "ke": {
+      "M-B": 1,
+      "M-D": 1,
+      "OTHER": 2
+    },
+    "po": {
+      "OTHER": 6,
+      "M-A": 2,
+      "M-B": 6,
+      "M-D": 1
+    },
+    "ok": {
+      "OTHER": 13,
+      "M-B": 11,
+      "M-D": 5
+    },
+    "op": {
+      "M-B": 2,
+      "OTHER": 4,
+      "M-A": 2
+    },
+    "ts": {
+      "M-B": 1,
+      "OTHER": 4,
+      "M-D": 2,
+      "M-A": 1
+    },
+    "yt": {
+      "OTHER": 1
+    },
+    "or": {
+      "OTHER": 1
+    }
+  },
+  "findings": {
+    "jar_prefixes_and_content_prefixes_independent": true,
+    "interpretation": "Jar prefix = container posture, not content material class",
+    "expert_alignment": "CONFIRMED"
+  },
+  "predictions": [
+    "M-A (ch/sh) under-represented in REGIME_4",
+    "M-D (da/ol) over-represented in REGIME_4",
+    "ok-jar contents distributed across REGIME_2 and REGIME_3"
+  ]
+}

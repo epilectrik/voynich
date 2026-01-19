@@ -1,0 +1,56 @@
+{
+  "folio": "f88v",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Rooty plants with very ornamental jars",
+  "has_jar_labels": true,
+  "total_labels": 14,
+  "transcription_note": "Labels coded as t/m/b placements instead of L",
+  "groups": [
+    {
+      "row": 1,
+      "placement": "t",
+      "jar": null,
+      "jar_note": "Ornamental jar present but not labeled",
+      "roots": [
+        "okolyd",
+        "cheocthy",
+        "cpheor",
+        "otar",
+        "arody",
+        "otokol"
+      ],
+      "root_count": 6,
+      "illustration": "Ornamental jar with rooty plants"
+    },
+    {
+      "row": 2,
+      "placement": "m",
+      "jar": null,
+      "jar_note": "No jar label",
+      "roots": [
+        "otoram",
+        "otory",
+        "cheosdy",
+        "okaiin"
+      ],
+      "root_count": 4,
+      "illustration": "Rooty plants"
+    },
+    {
+      "row": 3,
+      "placement": "b",
+      "jar": "daramdal",
+      "jar_note": "Positioned underneath jar, not inside like others",
+      "roots": [
+        "otydary",
+        "otdordy",
+        "dararda"
+      ],
+      "root_count": 3,
+      "illustration": "Jar with label underneath"
+    }
+  ]
+}

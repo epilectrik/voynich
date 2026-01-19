@@ -1,0 +1,52 @@
+{
+  "q1_coverage_stability": {
+    "question": "Coverage Stability Under Reordering",
+    "order_sensitivity": "INVARIANT",
+    "n_folios": 114,
+    "mean_middles_per_entry": 4.328363553504261,
+    "cv_overlap": 0.3769731117730626,
+    "null_mean_cv": 0.3333277888045537,
+    "p_value": 0.94,
+    "verdict": "NO",
+    "interpretation": "Coverage not more consistent than random allocation"
+  },
+  "q2_novelty_fronts": {
+    "question": "Novelty Fronts (Order-Independent)",
+    "order_sensitivity": "INVARIANT",
+    "n_rare_middles": 1548,
+    "n_folios": 114,
+    "mean_concentration": 0.17550532946274672,
+    "std_concentration": 0.06555959108857658,
+    "variance_ratio": 0.02448962659344022,
+    "chi2": 43.89473684210526,
+    "p_value": 1.5889177751304828e-09,
+    "n_high_novelty_folios": 18,
+    "verdict": "NO",
+    "interpretation": "Novelty uniformly distributed across folios"
+  },
+  "q3_tail_pressure": {
+    "question": "Tail Pressure (Order-Independent)",
+    "order_sensitivity": "INVARIANT",
+    "n_tail_middles": 455,
+    "n_folios": 114,
+    "mean_pressure": 0.04787182603749426,
+    "std_pressure": 0.07608947255264677,
+    "cv": 1.5894416163079268,
+    "herbal_a_mean": 0.043011657127503676,
+    "herbal_c_mean": 0.06763021751188576,
+    "p_section": 0.8762969465176528,
+    "verdict": "YES_VARIANCE",
+    "interpretation": "High tail pressure variance across folios"
+  },
+  "q4_order_signals": {
+    "question": "Order-Dependent Signals",
+    "order_sensitivity": "LATENT_ORDER_DEPENDENT",
+    "n_folios": 114,
+    "first_10_novelty": 0.4532064730016369,
+    "last_10_novelty": 0.29430510170843405,
+    "spearman_rho": -0.15584078951386618,
+    "p_value": 0.09777869534242117,
+    "order_signal": "NO_TREND",
+    "interpretation": "No systematic novelty trend in current order"
+  }
+}

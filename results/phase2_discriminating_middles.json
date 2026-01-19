@@ -1,0 +1,467 @@
+{
+  "phase": "phase2_discriminating_middles",
+  "question": "Which MIDDLEs are most diagnostic of each product type?",
+  "method": "Log2 enrichment ratio vs baseline frequency",
+  "min_count_threshold": 5,
+  "summary": {
+    "total_tokens": 22061,
+    "product_tokens": {
+      "PRECISION": 3131,
+      "WATER_GENTLE": 2920,
+      "OIL_RESIN": 3906,
+      "WATER_STANDARD": 12104
+    },
+    "total_qualified_middles": 277,
+    "total_exclusive_middles": 129,
+    "exclusive_pct": 46.57039711191336,
+    "disjoint_pairs": 6,
+    "total_pairs": 6,
+    "disjoint_pct": 100.0
+  },
+  "discriminating_middles": {
+    "WATER_GENTLE": [
+      "polaiin",
+      "lkl",
+      "pair",
+      "teody",
+      "eees",
+      "keeody",
+      "tam",
+      "paiin",
+      "teeody",
+      "lkaiin"
+    ],
+    "WATER_STANDARD": [
+      "rshedy",
+      "olkedy",
+      "lkal",
+      "rchey",
+      "olchey",
+      "olshedy",
+      "ral",
+      "oly",
+      "keedain",
+      "csedy"
+    ],
+    "OIL_RESIN": [
+      "tcheo",
+      "rain",
+      "dor",
+      "lcheedy",
+      "od",
+      "laiin",
+      "an",
+      "edaiin",
+      "tchedy",
+      "kchy"
+    ],
+    "PRECISION": [
+      "as",
+      "cthdy",
+      "ekedy",
+      "tody",
+      "par",
+      "kchdy",
+      "k",
+      "keody",
+      "kshey",
+      "dam"
+    ]
+  },
+  "exclusive_middles": {
+    "WATER_GENTLE": [
+      "pair",
+      "polaiin",
+      "lkl"
+    ],
+    "WATER_STANDARD": [
+      "rair",
+      "keedar",
+      "kshedy",
+      "hdy",
+      "sheol",
+      "eodaiin",
+      "oty",
+      "ckhhy",
+      "oldy",
+      "alor",
+      "koldy",
+      "kaldy",
+      "cthedy",
+      "ecthy",
+      "eoky",
+      "alol",
+      "cphedy",
+      "lkeedy",
+      "ly",
+      "ror",
+      "keeor",
+      "lo",
+      "kan",
+      "okain",
+      "pchedar",
+      "ry",
+      "ram",
+      "rol",
+      "om",
+      "ked",
+      "ltedy",
+      "olkedy",
+      "eety",
+      "rshedy",
+      "lchdy",
+      "csedy",
+      "keed",
+      "ral",
+      "oin",
+      "shy",
+      "arol",
+      "lchy",
+      "oly",
+      "keor",
+      "cheedy",
+      "pal",
+      "keechy",
+      "cthey",
+      "olchedy",
+      "lkedy",
+      "ekain",
+      "eckhey",
+      "taly",
+      "olor",
+      "lal",
+      "lkey",
+      "pshedy",
+      "kedar",
+      "lcheey",
+      "sheedy",
+      "lsheedy",
+      "lkeeey",
+      "edam",
+      "okaiin",
+      "lsheey",
+      "lar",
+      "ek",
+      "keedal",
+      "rar",
+      "tshedy",
+      "pcheol",
+      "lkchey",
+      "cthhy",
+      "ory",
+      "ched",
+      "lr",
+      "kchol",
+      "olkeedy",
+      "eeal",
+      "pchy",
+      "edol",
+      "lcheol",
+      "shdy",
+      "chor",
+      "pchor",
+      "rchedy",
+      "olchey",
+      "kl",
+      "oky",
+      "tshey",
+      "ls",
+      "chedar",
+      "teol",
+      "lkchedy",
+      "aram",
+      "rchey",
+      "fchdy",
+      "oiiin",
+      "keeedy",
+      "echdy",
+      "pcheedy",
+      "olshedy",
+      "eeor",
+      "ekal",
+      "eedar",
+      "echy",
+      "pchol",
+      "okar",
+      "pcheody",
+      "oaiin",
+      "kechy",
+      "eedaiin",
+      "lkam",
+      "arain",
+      "lkal",
+      "keear",
+      "eedain",
+      "keedain"
+    ],
+    "OIL_RESIN": [
+      "dor",
+      "od",
+      "tcheo"
+    ],
+    "PRECISION": [
+      "ekedy",
+      "as",
+      "cthdy",
+      "par",
+      "tody"
+    ]
+  },
+  "exclusive_counts": {
+    "WATER_GENTLE": 3,
+    "WATER_STANDARD": 118,
+    "OIL_RESIN": 3,
+    "PRECISION": 5
+  },
+  "top_10_enrichments": {
+    "WATER_GENTLE": [
+      {
+        "middle": "polaiin",
+        "enrichment": 2.432031086746134,
+        "count": 5,
+        "baseline_pct": 0.03173020262000816
+      },
+      {
+        "middle": "lkl",
+        "enrichment": 2.3324954131952196,
+        "count": 6,
+        "baseline_pct": 0.04079597479715335
+      },
+      {
+        "middle": "pair",
+        "enrichment": 2.069461007361426,
+        "count": 5,
+        "baseline_pct": 0.04079597479715335
+      },
+      {
+        "middle": "teody",
+        "enrichment": 1.917457913916376,
+        "count": 11,
+        "baseline_pct": 0.09972349394859707
+      },
+      {
+        "middle": "eees",
+        "enrichment": 1.9174579139163759,
+        "count": 6,
+        "baseline_pct": 0.05439463306287113
+      },
+      {
+        "middle": "keeody",
+        "enrichment": 1.7919270318325173,
+        "count": 11,
+        "baseline_pct": 0.10878926612574226
+      },
+      {
+        "middle": "tam",
+        "enrichment": 1.7158240527467252,
+        "count": 10,
+        "baseline_pct": 0.10425638003716967
+      },
+      {
+        "middle": "paiin",
+        "enrichment": 1.695065492579928,
+        "count": 9,
+        "baseline_pct": 0.09519060786002448
+      },
+      {
+        "middle": "teeody",
+        "enrichment": 1.6544235080825822,
+        "count": 5,
+        "baseline_pct": 0.05439463306287113
+      },
+      {
+        "middle": "lkaiin",
+        "enrichment": 1.5818548821319371,
+        "count": 21,
+        "baseline_pct": 0.2402429626943475
+      }
+    ],
+    "WATER_STANDARD": [
+      {
+        "middle": "rshedy",
+        "enrichment": 0.8660142954670185,
+        "count": 7,
+        "baseline_pct": 0.03173020262000816
+      },
+      {
+        "middle": "olkedy",
+        "enrichment": 0.8660142954670185,
+        "count": 5,
+        "baseline_pct": 0.02266443044286297
+      },
+      {
+        "middle": "lkal",
+        "enrichment": 0.8660142954670185,
+        "count": 6,
+        "baseline_pct": 0.027197316531435565
+      },
+      {
+        "middle": "rchey",
+        "enrichment": 0.8660142954670185,
+        "count": 7,
+        "baseline_pct": 0.03173020262000816
+      },
+      {
+        "middle": "olchey",
+        "enrichment": 0.8660142954670185,
+        "count": 9,
+        "baseline_pct": 0.04079597479715335
+      },
+      {
+        "middle": "olshedy",
+        "enrichment": 0.8660142954670185,
+        "count": 6,
+        "baseline_pct": 0.027197316531435565
+      },
+      {
+        "middle": "ral",
+        "enrichment": 0.7729048910755368,
+        "count": 15,
+        "baseline_pct": 0.07252617741716151
+      },
+      {
+        "middle": "oly",
+        "enrichment": 0.6960892940247061,
+        "count": 8,
+        "baseline_pct": 0.04079597479715335
+      },
+      {
+        "middle": "keedain",
+        "enrichment": 0.6733692175246226,
+        "count": 7,
+        "baseline_pct": 0.036263088708580755
+      },
+      {
+        "middle": "csedy",
+        "enrichment": 0.6733692175246226,
+        "count": 7,
+        "baseline_pct": 0.036263088708580755
+      }
+    ],
+    "OIL_RESIN": [
+      {
+        "middle": "tcheo",
+        "enrichment": 1.649737427242014,
+        "count": 5,
+        "baseline_pct": 0.04079597479715335
+      },
+      {
+        "middle": "rain",
+        "enrichment": 1.5972700073478783,
+        "count": 15,
+        "baseline_pct": 0.12692081048003265
+      },
+      {
+        "middle": "dor",
+        "enrichment": 1.4977343337969637,
+        "count": 8,
+        "baseline_pct": 0.07252617741716151
+      },
+      {
+        "middle": "lcheedy",
+        "enrichment": 1.360230810047029,
+        "count": 5,
+        "baseline_pct": 0.049861746974298536
+      },
+      {
+        "middle": "od",
+        "enrichment": 1.2753419124605159,
+        "count": 6,
+        "baseline_pct": 0.06346040524001632
+      },
+      {
+        "middle": "laiin",
+        "enrichment": 1.2176264146042284,
+        "count": 7,
+        "baseline_pct": 0.0770590635057341
+      },
+      {
+        "middle": "an",
+        "enrichment": 1.012307506626722,
+        "count": 5,
+        "baseline_pct": 0.06346040524001632
+      },
+      {
+        "middle": "edaiin",
+        "enrichment": 0.967219617098184,
+        "count": 18,
+        "baseline_pct": 0.2357100766057749
+      },
+      {
+        "middle": "tchedy",
+        "enrichment": 0.9552070993962044,
+        "count": 23,
+        "baseline_pct": 0.3037033679343638
+      },
+      {
+        "middle": "kchy",
+        "enrichment": 0.9475372512364842,
+        "count": 14,
+        "baseline_pct": 0.18584832963147635
+      }
+    ],
+    "PRECISION": [
+      {
+        "middle": "as",
+        "enrichment": 2.3573711559077886,
+        "count": 8,
+        "baseline_pct": 0.049861746974298536
+      },
+      {
+        "middle": "cthdy",
+        "enrichment": 1.9423336566289446,
+        "count": 6,
+        "baseline_pct": 0.049861746974298536
+      },
+      {
+        "middle": "ekedy",
+        "enrichment": 1.8168027745450859,
+        "count": 5,
+        "baseline_pct": 0.04532886088572594
+      },
+      {
+        "middle": "tody",
+        "enrichment": 1.8168027745450854,
+        "count": 8,
+        "baseline_pct": 0.07252617741716151
+      },
+      {
+        "middle": "par",
+        "enrichment": 1.7293399332947461,
+        "count": 8,
+        "baseline_pct": 0.0770590635057341
+      },
+      {
+        "middle": "kchdy",
+        "enrichment": 1.7098875706285739,
+        "count": 39,
+        "baseline_pct": 0.3807624314400979
+      },
+      {
+        "middle": "k",
+        "enrichment": 1.5944103532086378,
+        "count": 6,
+        "baseline_pct": 0.06346040524001632
+      },
+      {
+        "middle": "keody",
+        "enrichment": 1.5944103532086378,
+        "count": 15,
+        "baseline_pct": 0.1586510131000408
+      },
+      {
+        "middle": "kshey",
+        "enrichment": 1.5944103532086378,
+        "count": 6,
+        "baseline_pct": 0.06346040524001632
+      },
+      {
+        "middle": "dam",
+        "enrichment": 1.4948746796577232,
+        "count": 8,
+        "baseline_pct": 0.09065772177145189
+      }
+    ]
+  },
+  "status": "FAIL"
+}

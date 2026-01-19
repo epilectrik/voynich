@@ -2,168 +2,164 @@
   "test": "WITHIN_FOLIO_DIVERSITY",
   "question": "How many distinct outputs can each B folio produce?",
   "data": {
-    "n_folios": 83,
-    "n_unique_middles_global": 2519
+    "n_folios": 82,
+    "n_unique_middles_global": 1706
   },
   "middle_stats": {
-    "min": 34,
-    "max": 198,
-    "mean": 103.32530120481928,
-    "median": 103,
-    "std": 45.4991579749841,
-    "total_slots": 8576
+    "min": 26,
+    "max": 156,
+    "mean": 79.23170731707317,
+    "median": 73.5,
+    "std": 36.198116989593416,
+    "total_slots": 6497
   },
   "distribution": {
-    "56": 1,
-    "61": 1,
-    "55": 1,
-    "63": 3,
-    "35": 1,
-    "40": 2,
-    "67": 2,
-    "60": 3,
-    "86": 2,
-    "57": 1,
-    "45": 1,
-    "52": 1,
-    "73": 1,
-    "44": 1,
-    "92": 4,
-    "88": 1,
-    "58": 2,
-    "51": 2,
+    "40": 3,
+    "47": 3,
+    "41": 1,
+    "44": 2,
+    "30": 1,
+    "33": 1,
     "53": 1,
-    "47": 1,
-    "83": 1,
-    "174": 1,
-    "118": 3,
-    "107": 1,
-    "132": 1,
-    "127": 2,
-    "87": 1,
-    "103": 2,
-    "139": 2,
-    "117": 1,
-    "97": 1,
-    "115": 1,
-    "116": 1,
-    "95": 1,
-    "135": 2,
-    "65": 1,
-    "104": 1,
-    "100": 1,
-    "106": 1,
-    "112": 2,
-    "39": 1,
-    "37": 1,
+    "65": 2,
+    "38": 1,
     "34": 1,
-    "157": 1,
-    "160": 1,
-    "153": 1,
-    "169": 1,
-    "180": 1,
-    "198": 1,
-    "173": 1,
-    "136": 1,
-    "137": 1,
-    "149": 2,
-    "193": 1,
-    "182": 1,
-    "143": 1,
-    "141": 1,
-    "191": 1,
-    "176": 1,
-    "185": 1,
+    "58": 2,
+    "61": 1,
+    "64": 1,
+    "42": 1,
+    "45": 1,
+    "46": 1,
+    "39": 1,
+    "43": 2,
+    "35": 1,
+    "57": 2,
+    "133": 3,
+    "74": 1,
+    "73": 1,
+    "95": 1,
+    "94": 3,
+    "71": 1,
+    "75": 1,
+    "59": 1,
+    "87": 3,
+    "83": 1,
+    "49": 1,
+    "69": 1,
+    "79": 3,
+    "90": 2,
+    "70": 1,
+    "119": 2,
+    "55": 1,
+    "122": 1,
+    "36": 2,
+    "32": 1,
+    "26": 1,
+    "54": 1,
+    "115": 1,
+    "91": 1,
+    "144": 2,
+    "132": 1,
+    "135": 2,
+    "140": 1,
+    "126": 1,
     "129": 1,
-    "161": 1,
-    "113": 1
+    "102": 1,
+    "107": 1,
+    "114": 2,
+    "98": 1,
+    "100": 1,
+    "156": 1,
+    "138": 1,
+    "148": 1,
+    "97": 1
   },
   "output_capacity": {
-    "avg_per_folio": 103.32530120481928,
-    "total_pathways": 8576
+    "avg_per_folio": 79.23170731707317,
+    "total_pathways": 6576
   },
   "verdict": "STRONG SUPPORT for multi-output model",
-  "interpretation": "Each B folio handles ~103 distinct variants",
+  "interpretation": "Each B folio handles ~79 distinct variants",
   "folio_details": {
-    "f106v": {
-      "n_middles": 198,
-      "n_tokens": 1839
-    },
-    "f111r": {
-      "n_middles": 193,
-      "n_tokens": 1805
-    },
     "f113r": {
-      "n_middles": 191,
-      "n_tokens": 1875
+      "n_middles": 156,
+      "n_tokens": 518
     },
     "f114r": {
-      "n_middles": 185,
-      "n_tokens": 1337
-    },
-    "f111v": {
-      "n_middles": 182,
-      "n_tokens": 2207
-    },
-    "f106r": {
-      "n_middles": 180,
-      "n_tokens": 1293
-    },
-    "f113v": {
-      "n_middles": 176,
-      "n_tokens": 1420
-    },
-    "f66r": {
-      "n_middles": 174,
-      "n_tokens": 1090
-    },
-    "f107r": {
-      "n_middles": 173,
-      "n_tokens": 1464
-    },
-    "f105v": {
-      "n_middles": 169,
-      "n_tokens": 1170
-    },
-    "f115r": {
-      "n_middles": 161,
-      "n_tokens": 929
+      "n_middles": 148,
+      "n_tokens": 447
     },
     "f104v": {
-      "n_middles": 160,
-      "n_tokens": 914
+      "n_middles": 144,
+      "n_tokens": 458
     },
-    "f104r": {
-      "n_middles": 157,
-      "n_tokens": 945
+    "f115r": {
+      "n_middles": 144,
+      "n_tokens": 444
     },
-    "f105r": {
-      "n_middles": 153,
-      "n_tokens": 748
+    "f106r": {
+      "n_middles": 140,
+      "n_tokens": 421
     },
-    "f108v": {
-      "n_middles": 149,
-      "n_tokens": 1685
+    "f113v": {
+      "n_middles": 138,
+      "n_tokens": 480
+    },
+    "f105v": {
+      "n_middles": 135,
+      "n_tokens": 390
     },
     "f115v": {
-      "n_middles": 149,
-      "n_tokens": 819
+      "n_middles": 135,
+      "n_tokens": 399
     },
-    "f112r": {
-      "n_middles": 143,
-      "n_tokens": 1504
+    "f66r": {
+      "n_middles": 133,
+      "n_tokens": 349
     },
-    "f112v": {
-      "n_middles": 141,
-      "n_tokens": 1654
+    "f104r": {
+      "n_middles": 133,
+      "n_tokens": 438
     },
-    "f80r": {
-      "n_middles": 139,
-      "n_tokens": 1745
+    "f111r": {
+      "n_middles": 133,
+      "n_tokens": 615
+    },
+    "f105r": {
+      "n_middles": 132,
+      "n_tokens": 370
+    },
+    "f107r": {
+      "n_middles": 129,
+      "n_tokens": 488
+    },
+    "f106v": {
+      "n_middles": 126,
+      "n_tokens": 449
     },
     "f86v6": {
-      "n_middles": 139,
-      "n_tokens": 967
+      "n_middles": 122,
+      "n_tokens": 479
+    },
+    "f85r1": {
+      "n_middles": 119,
+      "n_tokens": 333
+    },
+    "f114v": {
+      "n_middles": 119,
+      "n_tokens": 362
+    },
+    "f103r": {
+      "n_middles": 115,
+      "n_tokens": 525
+    },
+    "f108v": {
+      "n_middles": 114,
+      "n_tokens": 570
+    },
+    "f111v": {
+      "n_middles": 114,
+      "n_tokens": 561
     }
   }
 }

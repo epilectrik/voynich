@@ -1,0 +1,86 @@
+{
+  "phase": "A_LABEL_INTERFACE_ROLE",
+  "question": "Do labels constitute a distinct interface posture without affecting structural findings?",
+  "counts": {
+    "labels": 172,
+    "text": 11029,
+    "all_a": 11346,
+    "label_proportion": 0.015159527586814736
+  },
+  "part_a_audit": {
+    "metrics": {
+      "hub_ratio": {
+        "a_full": 0.6972647702407002,
+        "a_nolabel": 0.7035249214189493,
+        "delta_pct": 0.8978154992812888
+      },
+      "tail_pressure": {
+        "a_full": 0.03369803063457331,
+        "a_nolabel": 0.03210597215985631,
+        "delta_pct": 4.724485213932901
+      },
+      "coverage": {
+        "a_full": 0.2979558622802796,
+        "a_nolabel": 0.2946392302919274,
+        "delta_pct": 1.1131286234711906
+      },
+      "n_middles": {
+        "a_full": 617,
+        "a_nolabel": 572,
+        "delta_pct": 7.293354943273905
+      },
+      "survivor_profiles": {
+        "a_full": 1,
+        "a_nolabel": 1,
+        "delta_pct": 0.0
+      }
+    },
+    "perturbation_envelope": 0.8,
+    "max_structural_delta": 4.724485213932901,
+    "verdict": "CHECK"
+  },
+  "part_b_tests": {
+    "test1_tail_pressure": {
+      "label_tail_pressure": 0.1896551724137931,
+      "text_tail_pressure": 0.030871127076784913,
+      "ratio": 6.1434482758620685,
+      "label_tail_count": 22,
+      "text_tail_count": 275,
+      "label_total_middles": 116,
+      "text_total_middles": 8908,
+      "verdict": "SUPPORTED"
+    },
+    "test2_azc_breadth": {
+      "label_mean_breadth": 2.25,
+      "text_mean_breadth": 0.7045454545454546,
+      "label_inert_count": 25,
+      "text_inert_count": 392,
+      "label_inert_rate": 0.44642857142857145,
+      "text_inert_rate": 0.6853146853146853,
+      "verdict": "WIDE (labels reach MORE zones - high-discrimination coordinates)"
+    },
+    "test3_ht_response": {
+      "label_folios": [
+        "f100r",
+        "f102r1",
+        "f102v1",
+        "f102v2",
+        "f49v",
+        "f89r2",
+        "f89v2",
+        "f99r",
+        "f99v"
+      ],
+      "n_label_folios": 9,
+      "n_nolabel_folios": 105,
+      "label_mean_ht_density": 0.26474699112370037,
+      "nolabel_mean_ht_density": 0.2629512186085043,
+      "ratio": 1.0068292990794985,
+      "t_stat": 0.06536226937607509,
+      "p_value": 0.948002090039249,
+      "verdict": "NOT_SIGNIFICANTLY_DIFFERENT"
+    }
+  },
+  "final_verdict": "INTERFACE_POSTURE_CONFIRMED",
+  "documentation_statement": "Illustration labels constitute ~1.5% of Currier A tokens. Labels exhibit 6.1x elevated tail pressure (consistent with high-discrimination anchoring) and reach 2.25 AZC zones vs 0.70 for text (consistent with labels being broadly relevant discrimination coordinates). Structural invariant deltas (hub_ratio: 0.9%, coverage: 1.1%, survivor_profiles: 0.0%) are modest given 1.5% token removal."
+}

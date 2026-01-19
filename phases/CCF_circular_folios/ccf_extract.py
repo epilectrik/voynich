@@ -8,6 +8,10 @@ with open('C:/git/voynich/data/transcriptions/interlinear_full_words.txt', 'r', 
     for line in f:
         parts = line.strip().split('\t')
         if len(parts) >= 7:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+            if transcriber != 'H':
+                continue
             folio = parts[1]
             # Look for circular folios f67-f73 (known circular/astro section)
             if re.match(r'f(67|68|69|70|71|72|73)', folio):

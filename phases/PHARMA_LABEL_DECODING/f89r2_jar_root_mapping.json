@@ -1,0 +1,33 @@
+{
+  "folio": "f89r2",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Rooty plants, some with prominent leaves",
+  "has_jar_labels": "unclear",
+  "total_labels": 25,
+  "groups": [
+    {
+      "placement": "L1",
+      "labels": ["odory", "doly", "opchosam", "saloiin", "sheol", "opcheor"],
+      "count": 6
+    },
+    {
+      "placement": "L2",
+      "labels": ["otoldy", "okol", "shol", "dy", "opcharoiin"],
+      "count": 5
+    },
+    {
+      "placement": "L3",
+      "labels": ["korain", "y", "sodar", "cheys", "cheody", "oforain", "okshd", "chos"],
+      "count": 8
+    },
+    {
+      "placement": "L4",
+      "labels": ["okain", "yorain", "ofakal", "otalsy", "ytarem", "otolarol"],
+      "count": 6
+    }
+  ],
+  "foldout": "f88v_f89r1_f89r2"
+}

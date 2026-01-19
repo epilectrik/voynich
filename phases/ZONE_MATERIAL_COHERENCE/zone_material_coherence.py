@@ -130,6 +130,11 @@ def rebuild_cluster_membership():
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only - MANDATORY per TRANSCRIPT_ARCHITECTURE.md
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             lang = row['language'].strip('"')
             if lang != 'NA':  # Only AZC
                 continue
@@ -181,6 +186,11 @@ def load_currier_a_tokens():
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only - MANDATORY per TRANSCRIPT_ARCHITECTURE.md
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             lang = row['language'].strip('"')
             if lang != 'A':  # Only Currier A
                 continue

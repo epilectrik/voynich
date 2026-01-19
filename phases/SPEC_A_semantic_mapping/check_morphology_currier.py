@@ -12,7 +12,10 @@ with open(filepath, 'r', encoding='utf-8') as f:
     header = f.readline()
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) > 6:
+        if len(parts) > 12:
+            transcriber = parts[12].strip('"').strip()
+            if transcriber != 'H':
+                continue
             lang = parts[6].strip('"').strip()
             folio = parts[2].strip('"').strip() if len(parts) > 2 else ''
             if folio:

@@ -33,6 +33,8 @@ from pathlib import Path
 def load_data(filepath):
     """Load the interlinear transcription data."""
     df = pd.read_csv(filepath, sep='\t', na_values='NA')
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     return df
 
 def get_folio_range(df, start, end):

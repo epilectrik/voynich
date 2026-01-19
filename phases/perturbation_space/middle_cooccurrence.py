@@ -32,7 +32,11 @@ def load_currier_a_lines():
         header = f.readline()
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) > 11:
+            if len(parts) > 12:
+                # Filter to H (PRIMARY) transcriber only
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 currier = parts[6].strip('"').strip()
                 if currier == 'A':
                     token = parts[0].strip('"').strip().lower()

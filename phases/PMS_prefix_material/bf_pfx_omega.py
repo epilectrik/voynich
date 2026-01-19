@@ -35,7 +35,11 @@ with open('data/transcriptions/interlinear_full_words.txt', 'r', encoding='utf-8
     header = next(f)  # Skip header
     for line in f:
         parts = line.strip().split('\t')
-        if len(parts) >= 3:
+        if len(parts) > 12:
+            # Filter to H (PRIMARY) transcriber track only
+            transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+            if transcriber != 'H':
+                continue
             # Remove quotes from values
             token = parts[0].strip('"')
             folio = parts[2].strip('"')

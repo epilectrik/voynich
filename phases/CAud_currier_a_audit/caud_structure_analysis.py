@@ -41,11 +41,16 @@ def load_data():
 
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) >= 7:
+            if len(parts) >= 13:
                 word = parts[0].strip('"').strip()
                 folio = parts[2].strip('"') if len(parts) > 2 else ''
                 section = parts[3].strip('"') if len(parts) > 3 else ''
                 language = parts[6].strip('"') if len(parts) > 6 else ''
+                transcriber = parts[12].strip('"').strip()
+
+                # Filter to H (PRIMARY) transcriber only
+                if transcriber != 'H':
+                    continue
 
                 if word and folio:
                     data.append({

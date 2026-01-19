@@ -4,6 +4,9 @@
 **Tier:** 4 (SPECULATIVE)
 **Status:** EXPLORATORY
 **Date:** 2026-01-06
+**Updated:** 2026-01-16 (H-only transcriber filter applied to source data)
+
+> **Note:** Frequencies in this document were based on pre-H-only data and are approximately 3x inflated. The proportions and interpretations remain valid. See EXT8_REPORT.md for corrected absolute counts.
 
 ---
 

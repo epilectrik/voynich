@@ -26,6 +26,8 @@ DATA_PATH = "C:/git/voynich/data/transcriptions/interlinear_full_words.txt"
 
 def load_data():
     df = pd.read_csv(DATA_PATH, sep='\t', low_memory=False)
+    # Filter to H transcriber only
+    df = df[df['transcriber'] == 'H']
     df.columns = [c.strip('"') for c in df.columns]
     for col in ['word', 'folio', 'language', 'section', 'quire']:
         if col in df.columns:

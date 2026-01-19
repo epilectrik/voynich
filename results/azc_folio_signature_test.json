@@ -1,0 +1,552 @@
+{
+  "summary": {
+    "total": 1533,
+    "activating": 570,
+    "neutral": 963,
+    "unique_signatures": 239,
+    "uniqueness_ratio": 0.4192982456140351,
+    "compatibility_distribution": {
+      "1": 188,
+      "2": 186,
+      "3": 79,
+      "0": 117
+    }
+  },
+  "collision_groups": [
+    {
+      "signature": "3199047185eb",
+      "count": 44,
+      "entries": [
+        "f1r.13",
+        "f3r.7",
+        "f3v.4",
+        "f4v.3",
+        "f6r.7",
+        "f6r.13",
+        "f11r.2",
+        "f13r.4",
+        "f17r.2",
+        "f17r.3"
+      ]
+    },
+    {
+      "signature": "458d7d9aa128",
+      "count": 26,
+      "entries": [
+        "f2r.13",
+        "f2v.3",
+        "f4v.4",
+        "f4v.9",
+        "f11v.2",
+        "f13v.9",
+        "f14v.3",
+        "f16r.12",
+        "f18r.6",
+        "f19v.4"
+      ]
+    },
+    {
+      "signature": "aa1455eb3f81",
+      "count": 25,
+      "entries": [
+        "f8r.14",
+        "f10r.2",
+        "f13v.3",
+        "f20r.2",
+        "f21r.9",
+        "f21v.5",
+        "f23r.3",
+        "f27r.4",
+        "f27r.5",
+        "f30v.7"
+      ]
+    },
+    {
+      "signature": "10a91324ddfb",
+      "count": 22,
+      "entries": [
+        "f4v.5",
+        "f6r.5",
+        "f9r.2",
+        "f10v.2",
+        "f10v.4",
+        "f15v.1",
+        "f15v.7",
+        "f20r.12",
+        "f20v.2",
+        "f20v.11"
+      ]
+    },
+    {
+      "signature": "207345586622",
+      "count": 20,
+      "entries": [
+        "f1r.8",
+        "f5r.4",
+        "f6r.4",
+        "f8r.6",
+        "f10r.3",
+        "f15r.8",
+        "f16r.5",
+        "f16v.7",
+        "f19v.6",
+        "f20v.7"
+      ]
+    },
+    {
+      "signature": "b75118e05e9f",
+      "count": 20,
+      "entries": [
+        "f4v.2",
+        "f10r.7",
+        "f14r.5",
+        "f15r.2",
+        "f16r.13",
+        "f18r.3",
+        "f18r.8",
+        "f18r.10",
+        "f21r.3",
+        "f22r.2"
+      ]
+    },
+    {
+      "signature": "68cd6f1bbc99",
+      "count": 11,
+      "entries": [
+        "f1r.2",
+        "f1r.14",
+        "f2r.7",
+        "f2r.11",
+        "f16v.5",
+        "f32r.19",
+        "f35v.20",
+        "f36r.6",
+        "f42v.2",
+        "f49v.7"
+      ]
+    },
+    {
+      "signature": "21dc18a71dec",
+      "count": 11,
+      "entries": [
+        "f17v.11",
+        "f21r.10",
+        "f22r.9",
+        "f28r.2",
+        "f87v.2",
+        "f88r.1",
+        "f96v.10",
+        "f99r.13",
+        "f99v.6",
+        "f101v2.7"
+      ]
+    },
+    {
+      "signature": "a12ec3b57486",
+      "count": 10,
+      "entries": [
+        "f17v.23",
+        "f54r.8",
+        "f58r.29",
+        "f87v.4",
+        "f88r.2",
+        "f88r.3",
+        "f88r.4",
+        "f88r.5",
+        "f88r.16",
+        "f90r1.5"
+      ]
+    },
+    {
+      "signature": "188980d72bea",
+      "count": 9,
+      "entries": [
+        "f2v.5",
+        "f3v.2",
+        "f9v.5",
+        "f17r.11",
+        "f25v.7",
+        "f37v.9",
+        "f38v.6",
+        "f47v.2",
+        "f89r2.5"
+      ]
+    }
+  ],
+  "sample_results": [
+    {
+      "record_id": "f1r.2",
+      "azc_active": [
+        "n"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f71v"
+      ],
+      "n_compatible": 1,
+      "signature": "68cd6f1bbc99"
+    },
+    {
+      "record_id": "f1r.8",
+      "azc_active": [
+        "oct"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f68v2",
+        "f72r3"
+      ],
+      "n_compatible": 2,
+      "signature": "207345586622"
+    },
+    {
+      "record_id": "f1r.12",
+      "azc_active": [
+        "sho"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f68v3"
+      ],
+      "n_compatible": 1,
+      "signature": "e140a51aa374"
+    },
+    {
+      "record_id": "f1r.13",
+      "azc_active": [
+        "d"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f67r1",
+        "f68r2",
+        "f73r"
+      ],
+      "n_compatible": 3,
+      "signature": "3199047185eb"
+    },
+    {
+      "record_id": "f1r.14",
+      "azc_active": [
+        "n"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f71v"
+      ],
+      "n_compatible": 1,
+      "signature": "68cd6f1bbc99"
+    },
+    {
+      "record_id": "f1r.19",
+      "azc_active": [
+        "aiir"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f70v2"
+      ],
+      "n_compatible": 1,
+      "signature": "b79f7f78bf72"
+    },
+    {
+      "record_id": "f1v.1",
+      "azc_active": [
+        "ad"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f67r2"
+      ],
+      "n_compatible": 1,
+      "signature": "9576729c52f9"
+    },
+    {
+      "record_id": "f1v.4",
+      "azc_active": [
+        "okeo"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f65v",
+        "f67r1",
+        "f71r"
+      ],
+      "n_compatible": 3,
+      "signature": "2e2b7bdef230"
+    },
+    {
+      "record_id": "f1v.6",
+      "azc_active": [
+        "odo"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f68v3"
+      ],
+      "n_compatible": 1,
+      "signature": "d2ed5406ff61"
+    },
+    {
+      "record_id": "f2r.4",
+      "azc_active": [
+        "ain",
+        "ls"
+      ],
+      "n_azc_active": 2,
+      "compatible_folios": [],
+      "n_compatible": 0,
+      "signature": "4d4dc3362547"
+    },
+    {
+      "record_id": "f2r.5",
+      "azc_active": [
+        "n",
+        "och"
+      ],
+      "n_azc_active": 2,
+      "compatible_folios": [],
+      "n_compatible": 0,
+      "signature": "9430fdb85bb9"
+    },
+    {
+      "record_id": "f2r.7",
+      "azc_active": [
+        "n"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f71v"
+      ],
+      "n_compatible": 1,
+      "signature": "68cd6f1bbc99"
+    },
+    {
+      "record_id": "f2r.8",
+      "azc_active": [
+        "she"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f72v1",
+        "f72v2"
+      ],
+      "n_compatible": 2,
+      "signature": "c9d64b832963"
+    },
+    {
+      "record_id": "f2r.11",
+      "azc_active": [
+        "n"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f71v"
+      ],
+      "n_compatible": 1,
+      "signature": "68cd6f1bbc99"
+    },
+    {
+      "record_id": "f2r.13",
+      "azc_active": [
+        "ct"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f70r2",
+        "f70v1"
+      ],
+      "n_compatible": 2,
+      "signature": "458d7d9aa128"
+    },
+    {
+      "record_id": "f2v.3",
+      "azc_active": [
+        "ct"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f70r2",
+        "f70v1"
+      ],
+      "n_compatible": 2,
+      "signature": "458d7d9aa128"
+    },
+    {
+      "record_id": "f2v.4",
+      "azc_active": [
+        "olo"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f72r1"
+      ],
+      "n_compatible": 1,
+      "signature": "337de9ca20fe"
+    },
+    {
+      "record_id": "f2v.5",
+      "azc_active": [
+        "ii"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f68v3",
+        "f69v"
+      ],
+      "n_compatible": 2,
+      "signature": "188980d72bea"
+    },
+    {
+      "record_id": "f2v.7",
+      "azc_active": [
+        "tee"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f70v2",
+        "f73v"
+      ],
+      "n_compatible": 2,
+      "signature": "3e8f80462851"
+    },
+    {
+      "record_id": "f3r.7",
+      "azc_active": [
+        "d"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f67r1",
+        "f68r2",
+        "f73r"
+      ],
+      "n_compatible": 3,
+      "signature": "3199047185eb"
+    },
+    {
+      "record_id": "f3r.12",
+      "azc_active": [
+        "ad",
+        "kch"
+      ],
+      "n_azc_active": 2,
+      "compatible_folios": [],
+      "n_compatible": 0,
+      "signature": "325f38ecc8bc"
+    },
+    {
+      "record_id": "f3r.13",
+      "azc_active": [
+        "kch",
+        "ko"
+      ],
+      "n_azc_active": 2,
+      "compatible_folios": [],
+      "n_compatible": 0,
+      "signature": "63b0b89868d8"
+    },
+    {
+      "record_id": "f3r.15",
+      "azc_active": [
+        "chs"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f70r2",
+        "f72r2",
+        "f72v3"
+      ],
+      "n_compatible": 3,
+      "signature": "c45d41a28862"
+    },
+    {
+      "record_id": "f3r.17",
+      "azc_active": [
+        "eom",
+        "keeo"
+      ],
+      "n_azc_active": 2,
+      "compatible_folios": [],
+      "n_compatible": 0,
+      "signature": "7f1efa238fb0"
+    },
+    {
+      "record_id": "f3r.18",
+      "azc_active": [
+        "pch"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f73v"
+      ],
+      "n_compatible": 1,
+      "signature": "2cbf55d678ca"
+    },
+    {
+      "record_id": "f3v.2",
+      "azc_active": [
+        "ii"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f68v3",
+        "f69v"
+      ],
+      "n_compatible": 2,
+      "signature": "188980d72bea"
+    },
+    {
+      "record_id": "f3v.3",
+      "azc_active": [
+        "eeyk"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f70v1"
+      ],
+      "n_compatible": 1,
+      "signature": "891f0b9fff42"
+    },
+    {
+      "record_id": "f3v.4",
+      "azc_active": [
+        "d"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f67r1",
+        "f68r2",
+        "f73r"
+      ],
+      "n_compatible": 3,
+      "signature": "3199047185eb"
+    },
+    {
+      "record_id": "f3v.6",
+      "azc_active": [
+        "odal"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f68r1",
+        "f70r1"
+      ],
+      "n_compatible": 2,
+      "signature": "867824ca0be1"
+    },
+    {
+      "record_id": "f4v.1",
+      "azc_active": [
+        "op"
+      ],
+      "n_azc_active": 1,
+      "compatible_folios": [
+        "f69r",
+        "f72v2"
+      ],
+      "n_compatible": 2,
+      "signature": "1d9ca0670306"
+    }
+  ]
+}

@@ -115,6 +115,11 @@ def load_azc_data():
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = row.get('transcriber', '').strip('"')
+            if transcriber != 'H':
+                continue
+
             lang = row['language'].strip('"')
             if lang != 'NA':  # Only AZC
                 continue

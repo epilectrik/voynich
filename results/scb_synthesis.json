@@ -1,0 +1,21 @@
+{
+  "phase": "SEMANTIC_CEILING_BREACH",
+  "completion_date": "2026-01-19T10:25:42.534764",
+  "tests_completed": [
+    "scb_01",
+    "scb_02",
+    "scb_03"
+  ],
+  "criteria_evaluation": {
+    "tier_2": [],
+    "tier_3": [
+      "4-class accuracy 52.7% > 40% with p=0.0120",
+      "MIDDLE cluster correlation Cramer's V=0.263 > 0.1",
+      "MODALITY adds explanatory power to 3/4 zones beyond REGIME",
+      "Zone carries independent info (REGIME R2=24.7%)"
+    ],
+    "falsified": []
+  },
+  "tier_recommendation": "TIER_3_CONFIRMED",
+  "tier_reason": "Tier 3 criteria met with stronger evidence"
+}

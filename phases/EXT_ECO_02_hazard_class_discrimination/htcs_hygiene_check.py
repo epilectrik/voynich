@@ -106,6 +106,10 @@ def load_data():
         for line_num, line in enumerate(f):
             parts = line.strip().split('\t')
             if len(parts) >= 4:
+                # H-only transcriber filter (CRITICAL: avoids 3.2x token inflation)
+                transcriber = parts[12].strip('"').strip() if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 word = parts[0].strip('"').strip()
                 section = parts[3].strip('"') if len(parts) > 3 else ''
 

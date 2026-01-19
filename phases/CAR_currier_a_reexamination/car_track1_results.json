@@ -1,0 +1,172 @@
+{
+  "track": 1,
+  "name": "Adjacency Pattern Recovery",
+  "tests": {
+    "CAR-1.1": {
+      "test_id": "CAR-1.1",
+      "test_name": "Bigram Distribution (Clean)",
+      "total_bigrams": 9771,
+      "unique_bigrams": 8879,
+      "reuse_rate": 0.09129055367925498,
+      "baseline_mean": 0.05820284515402722,
+      "baseline_std": 0.0019997282696232804,
+      "effect_size": 16.546102301919753,
+      "p_value": 0.0,
+      "previous_inflated_value": 0.707,
+      "top_bigrams": [
+        [
+          "chol",
+          "daiin",
+          33
+        ],
+        [
+          "chol",
+          "chol",
+          22
+        ],
+        [
+          "daiin",
+          "daiin",
+          13
+        ],
+        [
+          "s",
+          "aiin",
+          13
+        ],
+        [
+          "daiin",
+          "cthy",
+          11
+        ],
+        [
+          "or",
+          "aiin",
+          10
+        ],
+        [
+          "shol",
+          "daiin",
+          10
+        ],
+        [
+          "chor",
+          "chol",
+          9
+        ],
+        [
+          "chor",
+          "daiin",
+          9
+        ],
+        [
+          "daiin",
+          "cthor",
+          8
+        ],
+        [
+          "daiin",
+          "s",
+          8
+        ],
+        [
+          "chol",
+          "cthol",
+          8
+        ],
+        [
+          "chy",
+          "daiin",
+          8
+        ],
+        [
+          "qokol",
+          "daiin",
+          7
+        ],
+        [
+          "ol",
+          "daiin",
+          7
+        ],
+        [
+          "otol",
+          "chol",
+          7
+        ],
+        [
+          "cthy",
+          "daiin",
+          7
+        ],
+        [
+          "daiin",
+          "chol",
+          7
+        ],
+        [
+          "chol",
+          "chor",
+          7
+        ],
+        [
+          "cheol",
+          "chol",
+          7
+        ]
+      ],
+      "verdict": "SIGNIFICANT"
+    },
+    "CAR-1.2": {
+      "test_id": "CAR-1.2",
+      "test_name": "MIDDLE Adjacency Coherence",
+      "mean_adjacent_jaccard": 0.16533044230499616,
+      "mean_same_marker": 0.18562885577479485,
+      "mean_cross_marker": 0.15818336910830208,
+      "mean_same_folio": 0.16881066047436152,
+      "n_adjacent_pairs": 1513,
+      "n_same_marker": 394,
+      "n_cross_marker": 1119,
+      "baseline_mean": 0.1378829574652334,
+      "baseline_std": 0.002578131280205923,
+      "ratio_to_baseline": 1.1990636503911916,
+      "effect_size": 10.646271216092005,
+      "p_value": 0.0,
+      "same_vs_cross_pvalue": 0.0007030454006942112,
+      "verdict": "SIGNIFICANT"
+    },
+    "CAR-1.3": {
+      "test_id": "CAR-1.3",
+      "test_name": "Transition Matrix (Clean)",
+      "prefix_transitions": 4198,
+      "prefix_chi2": 272.33465247825416,
+      "prefix_p_value": 9.888832268996962e-33,
+      "prefix_enriched_count": 1,
+      "prefix_depleted_count": 1,
+      "prefix_enriched_pairs": [
+        [
+          "ol",
+          "ol",
+          16,
+          2.6179361179361176
+        ]
+      ],
+      "prefix_depleted_pairs": [
+        [
+          "ol",
+          "ct",
+          5,
+          0.36802293451229623
+        ]
+      ],
+      "middle_transitions_top50": 3152,
+      "middle_chi2": 1726.7431529729593,
+      "middle_p_value": 1.0,
+      "middle_enriched_count": 0,
+      "middle_depleted_count": 47,
+      "middle_zero_count_pairs": 47,
+      "verdict": "SIGNIFICANT"
+    }
+  },
+  "track_verdict": "SUCCESS"
+}

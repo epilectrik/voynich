@@ -23,6 +23,8 @@ print("=" * 80)
 
 df = pd.read_csv("C:/git/voynich/data/transcriptions/interlinear_full_words.txt",
                  sep="\t", quotechar='"', na_values="NA")
+# Filter to H transcriber only
+df = df[df['transcriber'] == 'H']
 
 print(f"\nLoaded {len(df)} token occurrences")
 print(f"Unique tokens: {df['word'].nunique()}")

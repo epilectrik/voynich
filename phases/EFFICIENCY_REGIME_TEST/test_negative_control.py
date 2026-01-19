@@ -104,6 +104,11 @@ def load_currier_a_data() -> Tuple[Dict, Dict]:
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             word = row.get('word', '').strip()
             language = row.get('language', '').strip()
 
@@ -165,6 +170,11 @@ def compute_azc_family_distribution(middles: Set, middle_tokens: Dict) -> Dict:
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # CRITICAL: Filter to H-only transcriber track
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             word = row.get('word', '').strip()
             folio = row.get('folio', '').strip()
             section = row.get('section', '').strip()

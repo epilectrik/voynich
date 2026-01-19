@@ -31,15 +31,15 @@
   "interpretation": "A/C and Zodiac show similar HT phase-reset frequencies",
   "folio_details": {
     "f57v": {
-      "total_tokens": 411,
-      "ht_classified": 8,
+      "total_tokens": 166,
+      "ht_classified": 2,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
     "f65v": {
-      "total_tokens": 121,
+      "total_tokens": 44,
       "ht_classified": 0,
       "transitions": {},
       "total_transitions": 0,
@@ -47,159 +47,159 @@
       "family": "AC"
     },
     "f67r1": {
-      "total_tokens": 412,
-      "ht_classified": 2,
+      "total_tokens": 155,
+      "ht_classified": 1,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
     "f67r2": {
-      "total_tokens": 596,
-      "ht_classified": 18,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f67v2": {
-      "total_tokens": 209,
-      "ht_classified": 8,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f67v1": {
-      "total_tokens": 213,
-      "ht_classified": 8,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f68r1": {
-      "total_tokens": 224,
-      "ht_classified": 7,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f68r2": {
-      "total_tokens": 302,
-      "ht_classified": 14,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f68r3": {
-      "total_tokens": 296,
-      "ht_classified": 19,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f68v3": {
-      "total_tokens": 512,
-      "ht_classified": 7,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "AC"
-    },
-    "f68v2": {
-      "total_tokens": 389,
+      "total_tokens": 174,
       "ht_classified": 4,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
-    "f68v1": {
-      "total_tokens": 283,
+    "f67v2": {
+      "total_tokens": 60,
+      "ht_classified": 1,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f67v1": {
+      "total_tokens": 69,
+      "ht_classified": 4,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68r1": {
+      "total_tokens": 64,
+      "ht_classified": 2,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68r2": {
+      "total_tokens": 80,
+      "ht_classified": 3,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68r3": {
+      "total_tokens": 100,
       "ht_classified": 7,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
+    "f68v3": {
+      "total_tokens": 159,
+      "ht_classified": 2,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68v2": {
+      "total_tokens": 99,
+      "ht_classified": 1,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
+    "f68v1": {
+      "total_tokens": 96,
+      "ht_classified": 2,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "AC"
+    },
     "f69r": {
-      "total_tokens": 500,
-      "ht_classified": 11,
+      "total_tokens": 164,
+      "ht_classified": 3,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
     "f69v": {
-      "total_tokens": 407,
-      "ht_classified": 5,
+      "total_tokens": 137,
+      "ht_classified": 2,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
     "f70r1": {
-      "total_tokens": 320,
-      "ht_classified": 10,
+      "total_tokens": 111,
+      "ht_classified": 3,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
     "f70r2": {
-      "total_tokens": 815,
-      "ht_classified": 23,
+      "total_tokens": 247,
+      "ht_classified": 6,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "AC"
     },
     "f70v2": {
-      "total_tokens": 516,
-      "ht_classified": 16,
+      "total_tokens": 139,
+      "ht_classified": 3,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
     "f70v1": {
-      "total_tokens": 222,
-      "ht_classified": 9,
+      "total_tokens": 86,
+      "ht_classified": 3,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
     "f71r": {
-      "total_tokens": 197,
-      "ht_classified": 2,
+      "total_tokens": 91,
+      "ht_classified": 0,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
     "f71v": {
-      "total_tokens": 231,
-      "ht_classified": 10,
+      "total_tokens": 99,
+      "ht_classified": 2,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
     "f72r1": {
-      "total_tokens": 233,
-      "ht_classified": 1,
+      "total_tokens": 105,
+      "ht_classified": 0,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
     "f72r2": {
-      "total_tokens": 237,
+      "total_tokens": 110,
       "ht_classified": 0,
       "transitions": {},
       "total_transitions": 0,
@@ -207,48 +207,48 @@
       "family": "ZODIAC"
     },
     "f72r3": {
-      "total_tokens": 273,
-      "ht_classified": 9,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "ZODIAC"
-    },
-    "f72v3": {
-      "total_tokens": 235,
-      "ht_classified": 1,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "ZODIAC"
-    },
-    "f72v2": {
-      "total_tokens": 222,
-      "ht_classified": 8,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "ZODIAC"
-    },
-    "f72v1": {
-      "total_tokens": 186,
-      "ht_classified": 6,
-      "transitions": {},
-      "total_transitions": 0,
-      "transition_rate": 0.0,
-      "family": "ZODIAC"
-    },
-    "f73r": {
-      "total_tokens": 189,
+      "total_tokens": 163,
       "ht_classified": 5,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,
       "family": "ZODIAC"
     },
+    "f72v3": {
+      "total_tokens": 111,
+      "ht_classified": 0,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72v2": {
+      "total_tokens": 105,
+      "ht_classified": 2,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f72v1": {
+      "total_tokens": 99,
+      "ht_classified": 4,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
+    "f73r": {
+      "total_tokens": 94,
+      "ht_classified": 3,
+      "transitions": {},
+      "total_transitions": 0,
+      "transition_rate": 0.0,
+      "family": "ZODIAC"
+    },
     "f73v": {
-      "total_tokens": 216,
-      "ht_classified": 6,
+      "total_tokens": 97,
+      "ht_classified": 3,
       "transitions": {},
       "total_transitions": 0,
       "transition_rate": 0.0,

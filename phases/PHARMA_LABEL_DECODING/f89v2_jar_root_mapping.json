@@ -1,0 +1,30 @@
+{
+  "folio": "f89v2",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "root",
+  "plant_part_note": "Mostly rooty plants, some with prominent leaves",
+  "has_jar_labels": true,
+  "total_labels": 17,
+  "structure": "3 rows with jars",
+  "labels": [
+    "choeesy",
+    "okam",
+    "darcheos",
+    "chokaro",
+    "sheol",
+    "chokam",
+    "okory",
+    "otair",
+    "chody",
+    "dydariin",
+    "opcheedoy",
+    "opaloiiry",
+    "otaram",
+    "chtody",
+    {"token": "*ds**o", "note": "Partially illegible"},
+    "rady",
+    "dareky"
+  ]
+}

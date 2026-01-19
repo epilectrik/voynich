@@ -1,0 +1,84 @@
+{
+  "phase": "negative_anchor_test",
+  "tests": {
+    "direct_overlap": {
+      "voynich_tokens": 8106,
+      "sensory_terms": 63,
+      "overlap": 1,
+      "jaccard": 0.00012242899118511264,
+      "overlapping_terms": [
+        "arom"
+      ]
+    },
+    "substring_matches": {
+      "count": 10,
+      "matches": [
+        [
+          "rot",
+          "rotcho"
+        ],
+        [
+          "rot",
+          "aroteey"
+        ],
+        [
+          "rot",
+          "rotydy"
+        ],
+        [
+          "rot",
+          "rotaiin"
+        ],
+        [
+          "rot",
+          "arotey"
+        ],
+        [
+          "arom",
+          "arom"
+        ],
+        [
+          "arom",
+          "cpharom"
+        ],
+        [
+          "arom",
+          "tsheoarom"
+        ],
+        [
+          "arom",
+          "folorarom"
+        ],
+        [
+          "arom",
+          "darom"
+        ]
+      ]
+    },
+    "recipe_correlation": {
+      "sensory_recipes": 97,
+      "non_sensory_recipes": 412,
+      "sensory_distribution": {
+        "h_HAZARD": 0.14232209737827714,
+        "UNKNOWN": 0.3295880149812734,
+        "AUX": 0.149812734082397,
+        "k_ENERGY": 0.026217228464419477,
+        "RECOVERY": 0.14232209737827714,
+        "e_ESCAPE": 0.07116104868913857,
+        "FLOW": 0.09737827715355805,
+        "LINK": 0.04119850187265917
+      },
+      "non_sensory_distribution": {
+        "e_ESCAPE": 0.1529051987767584,
+        "RECOVERY": 0.04892966360856269,
+        "UNKNOWN": 0.44954128440366975,
+        "LINK": 0.10091743119266056,
+        "FLOW": 0.18960244648318042,
+        "AUX": 0.04281345565749235,
+        "k_ENERGY": 0.01529051987767584
+      }
+    }
+  },
+  "conclusion": "NO_DIRECT_ENCODING",
+  "interpretation": "Sensory requirements are NOT encoded at token level. Voynich uses EVA (invented alphabet) with zero overlap to German sensory vocabulary. This confirms C171 and supports indirect encoding via constraint pressure."
+}

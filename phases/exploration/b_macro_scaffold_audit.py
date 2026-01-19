@@ -58,7 +58,11 @@ def load_token_data():
                 continue
 
             parts = line.split('\t')
-            if len(parts) >= 7:
+            if len(parts) >= 13:
+                # Filter to H transcriber only
+                transcriber = parts[12].strip('"') if len(parts) > 12 else ''
+                if transcriber != 'H':
+                    continue
                 # Remove quotes from values
                 word = parts[0].strip('"')
                 folio = parts[2].strip('"')

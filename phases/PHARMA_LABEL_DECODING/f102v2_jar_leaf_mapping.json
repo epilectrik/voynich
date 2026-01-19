@@ -1,0 +1,50 @@
+{
+  "folio": "f102v2",
+  "date": "2026-01-17",
+  "method": "Visual inspection with EVA transcription alignment",
+  "status": "COMPLETE",
+  "plant_part": "leaf",
+  "plant_part_note": "Leafy plants with some rooty characteristics",
+  "has_jar_labels": true,
+  "total_labels": 22,
+  "groups": [
+    {
+      "row": 1,
+      "position": "top",
+      "jar": "porshols",
+      "leaves": [
+        "soaimy",
+        "oror",
+        "chor",
+        "sachy",
+        "okeo",
+        "okol",
+        "otory",
+        {"token": "ok?", "note": "Partially illegible"},
+        "okody",
+        "cheor",
+        "okoroeey",
+        "opchy",
+        "sarol",
+        "olrodar",
+        {"token": "to?", "note": "Partially illegible"}
+      ],
+      "leaf_count": 15,
+      "illustration": "Ornamental jar followed by many leafy plants"
+    },
+    {
+      "row": 2,
+      "position": "bottom",
+      "jar": "okolky",
+      "leaves": [
+        "osain",
+        "aiky",
+        "okeeoraiin",
+        "okockhy",
+        {"token": "os", "note": "Short, hard to read"}
+      ],
+      "leaf_count": 5,
+      "illustration": "Labeled ornamental jar with leafy/rooty plants"
+    }
+  ]
+}

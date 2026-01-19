@@ -82,6 +82,11 @@ def load_data():
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only - see TRANSCRIPT_ARCHITECTURE.md
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             folio = row['folio']
             lang = row['language']
             line = row['line_number']

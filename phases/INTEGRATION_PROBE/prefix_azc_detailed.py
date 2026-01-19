@@ -42,6 +42,11 @@ def load_data(filepath: Path) -> Dict:
     with open(filepath, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
+            # Filter to H (PRIMARY) transcriber only
+            transcriber = row.get('transcriber', '').strip().strip('"')
+            if transcriber != 'H':
+                continue
+
             word = row.get('word', '').strip()
             folio = row.get('folio', '').strip()
             section = row.get('section', '').strip()

@@ -1,7 +1,7 @@
 # Direction G: Kernel Ordering Constraints
 
 **Phase:** KERNEL
-**Date:** 2026-01-07
+**Date:** 2026-01-07 (H-only corrected 2026-01-16)
 **Status:** CLOSED
 
 ---
@@ -20,11 +20,13 @@ This analysis was BOUNDED to:
 
 | Test | Finding | Verdict |
 |------|---------|---------|
-| **G-1: Bigram Illegality** | h->k SUPPRESSED (0 observed); k->k, h->h ENRICHED | CONSTRAINTS FOUND |
-| **G-2: Trigram Collapse** | 17/27 patterns; e->e->e dominates (97.2%) | MODERATE COLLAPSE |
-| **G-3: Position Analysis** | Kernel slightly farther from LINK (8.1 vs 7.8) | WEAK SIGNAL |
+| **G-1: Bigram Illegality** | h↔k SUPPRESSED (0 observed); k->k, h->h ENRICHED | CONSTRAINTS FOUND |
+| **G-2: Trigram Collapse** | 11/27 patterns; e->e->e dominates (97.4%) | STRONG COLLAPSE |
+| **G-3: Position Analysis** | Kernel slightly farther from LINK (4.7 vs 4.4) | WEAK SIGNAL |
 
 **Overall:** Kernel ordering constraints EXIST. Add 2 Tier 2 constraints. Direction G is now CLOSED.
+
+> **H-only correction (2026-01-16):** All values re-validated with H-only transcriber filter. Findings preserved/strengthened.
 
 ---
 
@@ -36,10 +38,12 @@ This analysis was BOUNDED to:
 
 | Kernel | Count | % of Corpus |
 |--------|-------|-------------|
-| e | 22,226 | 29.4% |
-| k | 159 | 0.2% |
-| h | 88 | 0.1% |
-| **Total** | **22,473** | **29.7%** |
+| e | 6,675 | 28.7% |
+| k | 44 | 0.2% |
+| h | 17 | 0.1% |
+| **Total** | **6,736** | **29.0%** |
+
+> **H-only correction (2026-01-16):** Counts reduced ~3x due to transcriber filtering. Structure preserved.
 
 Note: The 'e' class dominates because it includes all -ey, -eey, -edy endings.
 
@@ -47,24 +51,24 @@ Note: The 'e' class dominates because it includes all -ey, -eey, -edy endings.
 
 | Bigram | Observed | Expected | Ratio | Status |
 |--------|----------|----------|-------|--------|
-| k->k | 21 | 1.1 | 18.82 | **ENRICHED** |
-| k->h | 1 | 0.6 | 1.62 | ENRICHED |
-| k->e | 131 | 155.9 | 0.84 | NORMAL |
-| **h->k** | **0** | **0.6** | **0.00** | **SUPPRESSED** |
-| h->h | 7 | 0.3 | 20.48 | **ENRICHED** |
-| h->e | 78 | 86.3 | 0.90 | NORMAL |
-| e->k | 132 | 155.9 | 0.85 | NORMAL |
-| e->h | 73 | 86.3 | 0.85 | NORMAL |
-| e->e | 21,843 | 21,798.8 | 1.00 | NORMAL |
+| k->k | 1 | 0.3 | 3.51 | **ENRICHED** |
+| **k->h** | **0** | **0.1** | **0.00** | **SUPPRESSED** |
+| k->e | 41 | 43.3 | 0.95 | NORMAL |
+| **h->k** | **0** | **0.1** | **0.00** | **SUPPRESSED** |
+| h->h | 1 | 0.0 | 23.49 | **ENRICHED** |
+| h->e | 15 | 16.7 | 0.90 | NORMAL |
+| e->k | 41 | 43.3 | 0.95 | NORMAL |
+| e->h | 15 | 16.7 | 0.90 | NORMAL |
+| e->e | 6,569 | 6,562.5 | 1.00 | NORMAL |
 
-**Chi-square test:** Chi2 = 531.08, p < 0.000001
+**Chi-square test:** Chi2 = 26.51, p = 0.000025
 
 ### Interpretation (Constraint-Only)
 
-1. **h->k is SUPPRESSED** (0 observed, 0.6 expected)
+1. **h↔k is MUTUALLY SUPPRESSED** (0 observed in both directions)
    - This is a formal ordering constraint
-   - h is NOT followed by k in any observed sequence
-   - Caveat: Small sample (88 h tokens), but consistent with 0
+   - h is NOT followed by k, and k is NOT followed by h
+   - Caveat: Small sample (17 h, 44 k tokens), but consistent with 0
 
 2. **Self-transitions are ENRICHED** (k->k, h->h)
    - Kernel tokens tend to cluster
@@ -85,34 +89,36 @@ Note: The 'e' class dominates because it includes all -ey, -eey, -edy endings.
 | Metric | Value |
 |--------|-------|
 | Possible patterns | 27 |
-| Observed patterns | 17 |
-| Collapse ratio | 0.63 |
-| Verdict | Moderate collapse |
+| Observed patterns | 11 |
+| Collapse ratio | 0.41 |
+| Verdict | Strong collapse |
+
+> **H-only correction (2026-01-16):** Collapse ratio decreased from 0.63 to 0.41 (stronger collapse) with clean data.
 
 ### Trigram Distribution
 
 | Trigram | Count | % |
 |---------|-------|---|
-| e->e->e | 21,549 | 97.2% |
-| e->k->e | 124 | 0.6% |
-| e->e->k | 117 | 0.5% |
-| k->e->e | 116 | 0.5% |
-| e->h->e | 75 | 0.3% |
-| h->e->e | 72 | 0.3% |
-| e->e->h | 69 | 0.3% |
-| (others) | <50 | <0.2% |
+| e->e->e | 6,498 | 97.4% |
+| e->e->k | 41 | 0.6% |
+| k->e->e | 40 | 0.6% |
+| e->k->e | 39 | 0.6% |
+| e->e->h | 16 | 0.2% |
+| h->e->e | 16 | 0.2% |
+| e->h->e | 15 | 0.2% |
+| (others) | <5 | <0.1% |
 
 ### Entropy Analysis
 
 | Metric | Value |
 |--------|-------|
-| Observed entropy | 0.27 bits |
+| Observed entropy | 0.24 bits |
 | Max entropy (uniform) | 4.75 bits |
-| Entropy ratio | 0.06 |
+| Entropy ratio | 0.05 |
 
 ### Interpretation (Constraint-Only)
 
-1. **e->e->e dominates** (97.2%)
+1. **e->e->e dominates** (97.4%)
    - The system spends most time in the 'e' state
    - Consistent with 'e' as stability anchor
 
@@ -120,8 +126,9 @@ Note: The 'e' class dominates because it includes all -ey, -eey, -edy endings.
    - Pattern: e -> (k or h) -> e
    - Rarely: k->k or h->h clusters
 
-3. **10 trigram patterns are unobserved**
+3. **16 trigram patterns are unobserved** (with H-only data)
    - Including h->k->* patterns (consistent with h->k suppression)
+   - Stronger collapse than originally estimated
 
 ---
 
@@ -133,18 +140,20 @@ Note: The 'e' class dominates because it includes all -ey, -eey, -edy endings.
 
 | Token Type | Mean Distance to LINK |
 |------------|----------------------|
-| k | 13.14 tokens |
-| h | 13.81 tokens |
-| e | 8.04 tokens |
-| non-kernel | 7.78 tokens |
+| k | 6.52 tokens |
+| h | 6.88 tokens |
+| e | 4.68 tokens |
+| non-kernel | 4.40 tokens |
 
 **Mann-Whitney test:** p < 0.000001
+
+> **H-only correction (2026-01-16):** Distances reduced with clean data. Same structural finding preserved.
 
 ### Interpretation
 
 - Kernel tokens are SLIGHTLY farther from LINK than non-kernel
-- But the effect is small (8.1 vs 7.8)
-- k and h are MUCH farther (13+ tokens) than e (8 tokens)
+- But the effect is small (4.70 vs 4.40)
+- k and h are farther (6.5-6.9 tokens) than e (4.7 tokens)
 
 This suggests k and h operate in different local contexts than e, but the signal is weak.
 

@@ -1,0 +1,96 @@
+{
+  "phase": "ZONE_MODALITY_VALIDATION",
+  "test": "czone_structural",
+  "hypothesis": "C-zone correlates with preparation verbs, not sensory modalities",
+  "preparation_verbs_used": [
+    "nimm",
+    "nehm",
+    "sammel",
+    "samml",
+    "hol",
+    "bring",
+    "tu",
+    "leg",
+    "setz",
+    "stell",
+    "gib",
+    "geb",
+    "f\u00fcll",
+    "gie\u00df",
+    "sch\u00fctt",
+    "gie(?:ss|\u00df)",
+    "mi(?:ss|\u00df)",
+    "wieg",
+    "z\u00e4hl",
+    "teil",
+    "bereit",
+    "mach",
+    "r\u00fcst",
+    "ordne",
+    "kolben",
+    "gefa(?:ss|\u00df)",
+    "helm",
+    "glas",
+    "topf",
+    "schneid",
+    "hack",
+    "zerklein",
+    "sto\u00df",
+    "reib"
+  ],
+  "n_recipes": 197,
+  "statistics": {
+    "total_prep_verbs_found": 503,
+    "mean_per_recipe": 2.553299492385787,
+    "median_prep_density": 0.03296703296703297
+  },
+  "correlations": {
+    "prep_density_vs_C": {
+      "r": -0.005884645313160635,
+      "p": 0.9345910281206872
+    },
+    "prep_density_vs_P": {
+      "r": -0.35398974281441703,
+      "p": 3.341863889805829e-07
+    },
+    "prep_density_vs_R": {
+      "r": 0.03432145610497853,
+      "p": 0.6320808409144225
+    },
+    "prep_density_vs_S": {
+      "r": 0.3053657754946314,
+      "p": 1.2804695879869288e-05
+    },
+    "C_vs_SIGHT": {
+      "r": -0.050376046842924904,
+      "p": 0.4820504819252617
+    },
+    "C_vs_SOUND": {
+      "r": -0.22027608890458375,
+      "p": 0.0018687118197402003
+    }
+  },
+  "permutation_test": {
+    "observed_r": -0.005884645313160635,
+    "n_permutations": 1000,
+    "null_mean": 0.002912423779147872,
+    "null_std": 0.07051275491294809,
+    "permutation_p": 0.932
+  },
+  "high_low_comparison": {
+    "n_high": 92,
+    "n_low": 105,
+    "c_zone_effect": {
+      "high_mean": 0.2378614113254945,
+      "low_mean": 0.2744460997173213,
+      "d": -0.2806788285347662
+    }
+  },
+  "findings": {
+    "h4_supported": false,
+    "c_sight_negative_check": true,
+    "c_sound_negative_check": false,
+    "c_is_strongest_prep_correlation": false,
+    "permutation_significant": false
+  }
+}
