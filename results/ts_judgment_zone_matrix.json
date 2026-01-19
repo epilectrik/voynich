@@ -1,0 +1,268 @@
+{
+  "phase": "TRAJECTORY_SEMANTICS",
+  "vector": "A",
+  "n_judgments": 13,
+  "matrix": {
+    "TEMPERATURE": {
+      "C": 1,
+      "P": 1,
+      "R": 2,
+      "S": 0
+    },
+    "PHASE_TRANSITION": {
+      "C": 1,
+      "P": 2,
+      "R": 2,
+      "S": 0
+    },
+    "QUALITY_PURITY": {
+      "C": 1,
+      "P": 2,
+      "R": 1,
+      "S": 2
+    },
+    "TIMING": {
+      "C": 1,
+      "P": 2,
+      "R": 1,
+      "S": 2
+    },
+    "MATERIAL_STATE": {
+      "C": 2,
+      "P": 2,
+      "R": 1,
+      "S": 0
+    },
+    "STABILITY": {
+      "C": 1,
+      "P": 2,
+      "R": 2,
+      "S": 0
+    },
+    "EQUILIBRIUM_WAIT": {
+      "C": 0,
+      "P": 0,
+      "R": 2,
+      "S": 2
+    },
+    "CYCLE_COMPLETION": {
+      "C": 0,
+      "P": 0,
+      "R": 2,
+      "S": 2
+    },
+    "PURIFICATION_PATIENCE": {
+      "C": 0,
+      "P": 0,
+      "R": 2,
+      "S": 2
+    },
+    "ABORT_DECISION": {
+      "C": 1,
+      "P": 2,
+      "R": 1,
+      "S": 0
+    },
+    "CORRECTION_DECISION": {
+      "C": 1,
+      "P": 2,
+      "R": 1,
+      "S": 0
+    },
+    "CONTINUATION_DECISION": {
+      "C": 1,
+      "P": 2,
+      "R": 1,
+      "S": 0
+    },
+    "COLLECTION_DECISION": {
+      "C": 1,
+      "P": 2,
+      "R": 1,
+      "S": 0
+    }
+  },
+  "zone_counts": {
+    "C": {
+      "required": 1,
+      "permitted": 9,
+      "impossible": 3
+    },
+    "P": {
+      "required": 9,
+      "permitted": 1,
+      "impossible": 3
+    },
+    "R": {
+      "required": 6,
+      "permitted": 7,
+      "impossible": 0
+    },
+    "S": {
+      "required": 5,
+      "permitted": 0,
+      "impossible": 8
+    }
+  },
+  "hypotheses": {
+    "H-A1": {
+      "name": "Judgment availability >70% non-uniform",
+      "test": "Chi-squared uniformity",
+      "threshold": ">70% non-uniform (p<0.01)",
+      "non_uniform_count": 11,
+      "total": 13,
+      "rate": 0.8461538461538461,
+      "significant": true,
+      "details": {
+        "TEMPERATURE": {
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65,
+          "non_uniform": true
+        },
+        "PHASE_TRANSITION": {
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65,
+          "non_uniform": true
+        },
+        "QUALITY_PURITY": {
+          "chi2": 0.0,
+          "p": 1.0,
+          "non_uniform": false
+        },
+        "TIMING": {
+          "chi2": 109.78933354217243,
+          "p": 1.2180701486208075e-23,
+          "non_uniform": true
+        },
+        "MATERIAL_STATE": {
+          "chi2": 0.0,
+          "p": 1.0,
+          "non_uniform": false
+        },
+        "STABILITY": {
+          "chi2": 101.07079119571685,
+          "p": 9.146277064942764e-22,
+          "non_uniform": true
+        },
+        "EQUILIBRIUM_WAIT": {
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65,
+          "non_uniform": true
+        },
+        "CYCLE_COMPLETION": {
+          "chi2": 111.4659789724261,
+          "p": 5.306724192748965e-24,
+          "non_uniform": true
+        },
+        "PURIFICATION_PATIENCE": {
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65,
+          "non_uniform": true
+        },
+        "ABORT_DECISION": {
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65,
+          "non_uniform": true
+        },
+        "CORRECTION_DECISION": {
+          "chi2": 102.08246563931692,
+          "p": 5.542215450858112e-22,
+          "non_uniform": true
+        },
+        "CONTINUATION_DECISION": {
+          "chi2": 122.22222222222219,
+          "p": 2.56334767322389e-26,
+          "non_uniform": true
+        },
+        "COLLECTION_DECISION": {
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65,
+          "non_uniform": true
+        }
+      }
+    },
+    "H-A2": {
+      "name": "At least 3 judgments with significant zone restriction",
+      "test": "Chi-squared",
+      "threshold": "p<0.01 for each",
+      "count": 11,
+      "significant": true,
+      "details": [
+        {
+          "judgment": "TEMPERATURE",
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65
+        },
+        {
+          "judgment": "PHASE_TRANSITION",
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65
+        },
+        {
+          "judgment": "TIMING",
+          "chi2": 109.78933354217243,
+          "p": 1.2180701486208075e-23
+        },
+        {
+          "judgment": "STABILITY",
+          "chi2": 101.07079119571685,
+          "p": 9.146277064942764e-22
+        },
+        {
+          "judgment": "EQUILIBRIUM_WAIT",
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65
+        },
+        {
+          "judgment": "CYCLE_COMPLETION",
+          "chi2": 111.4659789724261,
+          "p": 5.306724192748965e-24
+        },
+        {
+          "judgment": "PURIFICATION_PATIENCE",
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65
+        },
+        {
+          "judgment": "ABORT_DECISION",
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65
+        },
+        {
+          "judgment": "CORRECTION_DECISION",
+          "chi2": 102.08246563931692,
+          "p": 5.542215450858112e-22
+        },
+        {
+          "judgment": "CONTINUATION_DECISION",
+          "chi2": 122.22222222222219,
+          "p": 2.56334767322389e-26
+        },
+        {
+          "judgment": "COLLECTION_DECISION",
+          "chi2": 300.0,
+          "p": 9.948758346327588e-65
+        }
+      ]
+    },
+    "H-A3": {
+      "name": "HT density correlates with judgment count per zone",
+      "test": "Pearson correlation",
+      "threshold": "r>0.3, p<0.05",
+      "r": -0.4251386985455187,
+      "p": 0.5748613014544812,
+      "zone_loads": {
+        "C": 10,
+        "P": 10,
+        "R": 13,
+        "S": 5
+      },
+      "significant": false
+    }
+  },
+  "summary": {
+    "hypotheses_passed": 2,
+    "total_hypotheses": 3,
+    "verdict": "TIER_3_ENRICHMENT"
+  }
+}

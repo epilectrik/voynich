@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.28
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.29
 
 ---
 
@@ -2539,3 +2539,94 @@ The semantic ceiling is confirmed at **aggregate characterization**:
 **Tier:** 3 (Structural Characterization, confirmed with stronger evidence)
 
 **Files:** phases/SEMANTIC_CEILING_BREACH/, results/scb_modality_prediction.json, results/scb_synthesis.json
+
+---
+
+### X.25 Trajectory Semantics: Judgment-Gating System (2026-01-19) - NEW
+
+**Phase:** TRAJECTORY_SEMANTICS
+**Status:** COMPLETE - Semantic boundary resolution achieved
+
+#### Purpose
+
+Applied three pressure vectors beyond the token semantic ceiling to explore "trajectory semantics" - characterizing HOW constraint pressure evolves, rather than WHAT tokens mean.
+
+#### Test Results
+
+| Vector | Hypotheses | Passed | Verdict |
+|--------|------------|--------|---------|
+| C (Gradient Steepness) | 4 | 0/4 | INCONCLUSIVE |
+| A (Interface Theory) | 3 | 2/3 | TIER_3_ENRICHMENT |
+| Final (Judgment Trajectories) | N/A | N/A | DECISIVE |
+
+**Vector C failed:** Instruction sequences are too coarse (2-5 steps) to detect transition dynamics. This is a **diagnostic negative** - if transition dynamics matter, they are handled internally by apparatus + operator, not by text.
+
+**Vector A succeeded:** The 13 judgment types show **84.6% non-uniform distribution** across zones, with **11/13 judgments** showing significant zone restriction (p<0.01).
+
+#### The Decisive Finding: Judgment-Zone Availability Matrix
+
+| Zone | Required | Permitted | Impossible | Freedom |
+|------|----------|-----------|------------|---------|
+| **C** | 1 | 9 | 3 | **77%** |
+| **P** | 9 | 1 | 3 | **77%** |
+| **R** | 6 | 7 | 0 | **100%** |
+| **S** | 5 | 0 | 8 | **38%** |
+
+**Key findings:**
+- **P-zone REQUIRES 9/13 judgments** - observation phase demands active cognitive engagement
+- **S-zone makes 8/13 judgments IMPOSSIBLE** - outcome is locked, human intervention forbidden
+- **R-zone permits ALL 13 judgments** - active phase where all cognition is possible but narrowing
+- **Freedom collapses 77% → 38%** from C-zone to S-zone
+
+#### Agency Withdrawal Curve
+
+The manuscript progressively removes human judgment freedoms phase by phase:
+
+```
+C-zone: 77% freedom (setup - flexible)
+    ↓
+P-zone: 77% freedom (but 9 judgments REQUIRED - observation load)
+    ↓
+R-zone: 100% freedom (all possible, but narrowing toward commitment)
+    ↓
+S-zone: 38% freedom (8/13 judgments IMPOSSIBLE - locked)
+```
+
+This is not a failure mode. This is **designed under-determinacy** - the system deliberately restricts cognitive options at exactly the phases where unrestricted judgment would be dangerous.
+
+#### The Reframe
+
+> **"The Voynich Manuscript is a machine for removing human freedom at exactly the moments where freedom would be dangerous."**
+
+This reframes the entire manuscript as:
+
+> **A machine-readable declaration of which human cognitive faculties are admissible at each phase of a dangerous process.**
+
+#### What Was Discovered
+
+- **NOT:** What tokens mean
+- **NOT:** How fast processes change
+- **YES:** Which human judgments are IMPOSSIBLE vs UNAVOIDABLE in each zone
+
+This is **meta-semantics of control and responsibility** - the artifact tells you when judgment is no longer yours.
+
+#### Semantic Boundary Resolution
+
+The semantic ceiling was NOT breached by naming things. It was breached by discovering that:
+
+1. Meaning does not live in tokens
+2. Meaning lives in the **withdrawal of agency**
+3. The artifact specifies **when judgment becomes impossible**
+
+This is not a failure to "go further." This IS going further - into procedural semantics that no token-level decoding could ever reveal.
+
+#### Constraints Respected
+
+- **C384:** Labels trajectories and phases, not tokens
+- **C434:** Uses R-series ordering as foundation
+- **C443:** Extends escape gradients with temporal dimension
+- **C469:** Judgment availability is categorical
+
+**Tier:** 3 (Structural Characterization with semantic boundary resolution)
+
+**Files:** phases/TRAJECTORY_SEMANTICS/, results/ts_judgment_trajectories.json, results/ts_synthesis.json

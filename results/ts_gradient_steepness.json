@@ -1,0 +1,73 @@
+{
+  "phase": "TRAJECTORY_SEMANTICS",
+  "vector": "C",
+  "n_recipes": 183,
+  "hypotheses": {
+    "H-C1": {
+      "name": "Transition velocity differs by REGIME",
+      "test": "ANOVA",
+      "threshold": "F>4, p<0.01",
+      "F": 1.5635767749514,
+      "p": 0.19986746038993272,
+      "significant": false,
+      "groups": {
+        "REGIME_3": {
+          "mean": 2.857142857142857,
+          "std": 0.989743318610787,
+          "n": 7
+        },
+        "REGIME_1": {
+          "mean": 2.5031847133757963,
+          "std": 0.9496286266292024,
+          "n": 157
+        },
+        "REGIME_2": {
+          "mean": 2.013888888888889,
+          "std": 0.550497810627956,
+          "n": 12
+        },
+        "REGIME_4": {
+          "mean": 2.761904761904762,
+          "std": 1.0942024088643862,
+          "n": 7
+        }
+      }
+    },
+    "H-C2": {
+      "name": "Commitment sharpness correlates with REGIME_4",
+      "test": "point-biserial correlation",
+      "threshold": "r>0.3, p<0.05",
+      "r": NaN,
+      "p": 1.0,
+      "significant": false,
+      "n": 55
+    },
+    "H-C3": {
+      "name": "Setup duration: GENTLE > others",
+      "test": "t-test",
+      "threshold": "p<0.05, correct direction",
+      "t": -1.0996177662031748,
+      "p": 0.2729590961368648,
+      "significant": false,
+      "gentle_mean": 0.3333333333333333,
+      "others_mean": 0.5555555555555556,
+      "gentle_n": 12,
+      "others_n": 171,
+      "direction": "GENTLE <= others"
+    },
+    "H-C4": {
+      "name": "Gradient steepness correlates with HT density",
+      "test": "Pearson correlation",
+      "threshold": "r>0.25, p<0.05",
+      "r": -0.0685126650819181,
+      "p": 0.35676083272765596,
+      "significant": false,
+      "n": 183
+    }
+  },
+  "summary": {
+    "hypotheses_passed": 0,
+    "total_hypotheses": 4,
+    "verdict": "INCONCLUSIVE"
+  }
+}
