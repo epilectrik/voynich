@@ -1,6 +1,6 @@
-# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478)
+# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C500)
 
-**Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility, coverage, temporal trajectories
+**Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility, coverage, temporal trajectories, suffix posture
 **Status:** CLOSED
 
 ---
@@ -712,6 +712,169 @@ L-compound middle patterns (lch-, lk-, lsh-) function as B-specific grammatical 
 Section H vocabulary dominates B procedures (76/83 = 91.6%); Section P rare (7/83 = 8.4%); Section T absent (0/83 = 0%); chi² = 127.54, p < 0.0001; A sections have NON-UNIFORM mapping to B procedure applicability (CAS-XREF)
 **Source:** v1.8-import
 
+---
+
+## A-Exclusive Vocabulary Track (C498)
+
+### C498 - Registry-Internal Vocabulary Track
+**Tier:** 2 | **Status:** CLOSED
+
+A-exclusive MIDDLEs (56.6%, 349 types) form a morphologically distinct registry-internal vocabulary track that does not propagate through the A→AZC→B pipeline.
+
+**Evidence:**
+- 349 MIDDLEs appear in Currier A but never in Currier B
+- ct-prefix enrichment: 5.1× (vs shared MIDDLEs)
+- Suffix-lessness: 3× enriched (no decision archetype needed)
+- Folio-localization: 1.34 folios (vs 7.96 for shared)
+- AZC presence: 8.9% (vs 57.5% for shared) - residue is noise, not distinct stratum
+
+**Morphological signature interpretation:**
+- ct-prefix (C492): Only legal in P-zone AZC, 0% in C/S-zones → morphologically incompatible with most AZC positions
+- Suffix-less: No downstream execution routing required → these MIDDLEs terminate in A
+- Folio-localized: Hyper-specialized discriminators for local registry organization
+
+**Two vocabulary tracks in Currier A:**
+
+| Track | MIDDLEs | Characteristics | Role |
+|-------|---------|-----------------|------|
+| **Pipeline-participating** | 268 (43.4%) | Standard prefixes, standard suffixes, broad folio spread | Flow through A→AZC→B |
+| **Registry-internal** | 349 (56.6%) | ct-enriched, suffix-less, folio-localized | Stay in A registry |
+
+**Interpretation:**
+Registry-internal MIDDLEs encode **within-category fine distinctions** that matter for A-registry organization but don't propagate because they are below the granularity threshold for execution. They help an expert navigate A's complexity frontier (C240) without burdening B with irrelevant precision.
+
+**Relationship to existing constraints:**
+- Refines C293 (MIDDLE primary discriminator): Both tracks discriminate; scope differs
+- Instantiates C476 (hub rationing): Registry-internal track IS hub-rationing in action
+- Explains C475 (95.7% incompatibility): Cross-track incompatibility is part of the 95.7%
+- Consistent with C383 (global type system): Same morphology, different usage pattern
+
+**Falsified alternative:**
+The "AZC-terminal bifurcation" hypothesis (that 8.9% of A-exclusive MIDDLEs form a distinct AZC-stranded stratum) was tested and failed verification:
+- Only 77.6% in AZC-unique vocabulary (not strict subset)
+- 75% appear in legality zones, not predominantly peripheral
+- Classification inconsistent across transcribers
+
+The 8.9% residue is interface noise from systems sharing the same alphabet, not a structural mechanism.
+
+**Source:** A_INTERNAL_STRATIFICATION phase (2026-01-20)
+
+**External Validation (2026-01-20):**
+Brunschwig reference-only materials (listed but no procedure documented) correlate with registry-internal MIDDLE membership at the folio level:
+- HIGH-REFERENCE product types: 35.6% registry-internal ratio
+- LOW-REFERENCE product types: 30.3% registry-internal ratio
+- Mann-Whitney U: z = -2.602, **p = 0.01**, effect size r = 0.248
+
+This confirms that the two-track structure reflects real discrimination complexity stratification with an orthogonal historical signal. See F-BRU-005 (amended), BRUNSCHWIG_2TRACK_STRATIFICATION phase.
+
+---
+
+## Material-Class Prior Recoverability (C499)
+
+### C499 - Bounded Material-Class Recoverability
+**Tier:** 3 | **Status:** CLOSED | **Conditional on:** Brunschwig interpretive frame
+
+While entity-level identity remains irrecoverable (semantic ceiling), **material-class probability vectors** are computable for registry-internal MIDDLEs via Bayesian inference through procedural context.
+
+**Inference chain:**
+```
+token → folio appearances → product type distribution → P(material_class | token)
+```
+
+**Results (128 MIDDLEs analyzed):**
+- 27 tokens with P(animal) = 1.00 (PRECISION-exclusive)
+- Mean entropy: 1.08 bits (range 0.00 - 2.62)
+- Dominant class distribution: herb (49.2%), hot_dry_herb (25.8%), animal (21.1%), cold_moist_flower (3.9%)
+
+**Null model validation (1000 permutations):**
+- 86% of testable tokens match random baseline
+- Confirms "prior-dominated probabilistic shadows"
+- Entropy structure comes from folio distribution, not hidden semantic structure
+
+**Claim boundary table:**
+
+| Level | Status | Example |
+|-------|--------|---------|
+| Entity identity | IRRECOVERABLE | "This token means lavender" |
+| Material class | **PARTIALLY RECOVERABLE** | "P(flower) = 0.57" |
+| Procedural context | RECOVERABLE | "Gentle distillation contexts" |
+
+**What this means:**
+1. Entity-level identity remains irrecoverable - we cannot say "this token means lavender"
+2. Class-level priors are computable - we CAN say "P(flower-class) = 0.57"
+3. The distinction is epistemological, not ontological - the system MAY encode specific materials, we just can't recover which
+
+**Relationship to existing constraints:**
+- Extends C498 (registry-internal track): Adds material-class priors to the "what we can know" about registry-internal MIDDLEs
+- Respects C384 (no entry-level coupling): Analysis is aggregate/statistical, not entry-level
+- Validates semantic ceiling gradient: Different recoverability levels for different claim types
+
+**Source:** BRUNSCHWIG_CANDIDATE_LABELING phase (2026-01-20)
+
+---
+
+## Suffix Posture Temporal Structure (C500)
+
+### C500 - Registry-Internal Suffix Posture Temporal Pattern
+**Tier:** 3 | **Status:** CLOSED
+
+Registry-internal MIDDLEs exhibit a **temporal stratification by suffix posture**: closure-suffixed entries are introduced early (foundational framework), while naked (suffix-less) entries are introduced late (final coverage push).
+
+**Evidence:**
+
+| Posture | Mean Intro | Q1 Share | Q4 Share |
+|---------|------------|----------|----------|
+| CLOSURE (-y) | 0.18 | **76.7%** | 6.7% |
+| NAKED | 0.53 | 25.9% | **37.9%** |
+| EXECUTION | 0.02 | ~100% | 0% |
+
+**Statistical significance:**
+- S-3 (Temporal): Z = -4.648, **r = 0.495 (medium)**
+- S-4 (Tail pressure): Phi = 0.333 (medium), ratio = **5.69×**
+
+**Interpretation:**
+- CLOSURE suffixes (-y): Foundational discrimination framework, front-loaded
+- NAKED (suffix-less): Late refinement, edge-case discriminators added during final coverage push
+- EXECUTION suffixes: Earliest routing layer (mean intro 0.017)
+
+This **reverses** the initial hypothesis (that naked = atomic foundation). The registry establishes explicit closure/execution scaffolding first, then adds atomic discriminators as needed for edge cases.
+
+**What this constrains:**
+- Suffix posture reflects *when* a MIDDLE entered the registry, not *what it means*
+- No semantic content recoverable from suffix posture
+- Further tests on suffix function unlikely to yield additional granularity
+
+**Null findings (no discrimination):**
+- S-1 (HT density): r = 0.152 (small, not significant)
+- S-2 (Incompatibility isolation): All MIDDLEs in same component
+
+**Cross-references:** C498 (Two-Track), C383 (Global Morphological System)
+**Source:** BRUNSCHWIG_CANDIDATE_LABELING Phase 4 (2026-01-20)
+
+---
+
+## Meta-Structural Artifacts (C497)
+
+> **The existence of a single instructional/reference page demonstrates that Currier A was actively used and taught, not that it contains pedagogical grammar or semantic encoding.**
+
+### C497 - f49v Instructional Apparatus Folio
+**Tier:** 2 | **Status:** CLOSED
+
+Folio f49v constitutes a distinct instructional/reference apparatus written in Currier A form but *not functioning as registry content*. It is characterized by:
+- 26 single-character L-placement labels (≈65% of manuscript total), **alternating one-to-one with full Currier A lines**
+- Rare marginal ordinal numbers (1–5) used meta-structurally
+- Unusually high concentration of phonotactically extreme yet structurally valid Currier A tokens (33 exclusive vocabulary types)
+
+The folio **demonstrates Currier A morphology and variation limits for human training or reference**. Its labels are **meta-structural**, do not participate in A-registry semantics, and do not propagate into AZC or B. This folio represents **instructional use of the Currier A system itself, not an extension of its grammar**.
+
+No parametric, numerical, or semantic encoding is implied or propagated.
+
+**Contrast with f76r (Currier B):** Folio f76r also contains single-character lines (`s d q s o l k r s`), but these are **control-posture sentinels** - grammatical markers that gate execution behavior (covered by C121, C366, C382, C403). f76r's letters **propagate into grammar**; f49v's labels **do not**. This contrast confirms f49v's uniqueness: it is the only folio where single-letters function meta-structurally rather than operationally.
+
+**Cross-references:** C233 (LINE_ATOMIC), C484 (Channel Bifurcation), C469 (Categorical Resolution)
+**Source:** f49v-INVESTIGATION (2026-01-20)
+
+---
 
 ## Navigation
 

@@ -1,0 +1,74 @@
+{
+  "test": "S1_SUFFIX_HT_DENSITY",
+  "date": "2026-01-20",
+  "hypothesis": "Closure-suffixed entries appear in HIGHER HT contexts",
+  "token_level": {
+    "NAKED": {
+      "n_tokens": 84,
+      "n_folios": 57,
+      "mean_ht": 0.16,
+      "std_ht": 0.0487
+    },
+    "CLOSURE": {
+      "n_tokens": 787,
+      "n_folios": 113,
+      "mean_ht": 0.1743,
+      "std_ht": 0.0524
+    },
+    "MINIMAL": {
+      "n_tokens": 61,
+      "n_folios": 45,
+      "mean_ht": 0.1611,
+      "std_ht": 0.0396
+    },
+    "EXECUTION": {
+      "n_tokens": 311,
+      "n_folios": 91,
+      "mean_ht": 0.1594,
+      "std_ht": 0.046
+    },
+    "STRUCTURAL": {
+      "n_tokens": 22,
+      "n_folios": 15,
+      "mean_ht": 0.1622,
+      "std_ht": 0.027
+    }
+  },
+  "type_level": {
+    "NAKED": {
+      "n_middles": 58,
+      "mean_ht": 0.165,
+      "std": 0.0484
+    },
+    "CLOSURE": {
+      "n_middles": 30,
+      "mean_ht": 0.1742,
+      "std": 0.0293
+    },
+    "MINIMAL": {
+      "n_middles": 32,
+      "mean_ht": 0.159,
+      "std": 0.033
+    },
+    "EXECUTION": {
+      "n_middles": 5,
+      "mean_ht": 0.1616,
+      "std": 0.0068
+    },
+    "STRUCTURAL": {
+      "n_middles": 4,
+      "mean_ht": 0.1617,
+      "std": 0.0185
+    }
+  },
+  "comparison": {
+    "naked_vs_closure": {
+      "naked_mean": 0.165,
+      "closure_mean": 0.1742,
+      "z_score": -1.426,
+      "effect_r": 0.152,
+      "direction": "CLOSURE_HIGHER_HT"
+    }
+  },
+  "verdict": "NULL"
+}

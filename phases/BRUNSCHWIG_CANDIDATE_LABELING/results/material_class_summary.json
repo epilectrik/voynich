@@ -1,0 +1,260 @@
+{
+  "phase": "MATERIAL_CLASS_PRIORS",
+  "date": "2026-01-20",
+  "n_middles_analyzed": 128,
+  "mean_entropy": 1.078,
+  "entropy_range": [
+    0.0,
+    2.615
+  ],
+  "dominant_class_distribution": {
+    "animal": 27,
+    "hot_dry_herb": 33,
+    "herb": 63,
+    "cold_moist_flower": 5
+  },
+  "most_concentrated": [
+    {
+      "middle": "chald",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "cthso",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eeees",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eoc",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eoschso",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eso",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eyd",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "ha",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "hdaoto",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "hyd",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "iil",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "ofy",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "olfcho",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "opcho",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "pchypcho",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "tchyf",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "tea",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "techoep",
+      "top_class": "animal",
+      "probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "aiind",
+      "top_class": "hot_dry_herb",
+      "probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "akod",
+      "top_class": "hot_dry_herb",
+      "probability": 0.943,
+      "entropy": 0.315
+    }
+  ],
+  "most_dispersed": [
+    {
+      "middle": "cheol",
+      "top_class": "herb",
+      "probability": 0.431,
+      "entropy": 2.27
+    },
+    {
+      "middle": "ody",
+      "top_class": "herb",
+      "probability": 0.505,
+      "entropy": 2.272
+    },
+    {
+      "middle": "hor",
+      "top_class": "hot_dry_herb",
+      "probability": 0.346,
+      "entropy": 2.278
+    },
+    {
+      "middle": "hol",
+      "top_class": "herb",
+      "probability": 0.345,
+      "entropy": 2.285
+    },
+    {
+      "middle": "eeor",
+      "top_class": "herb",
+      "probability": 0.479,
+      "entropy": 2.327
+    },
+    {
+      "middle": "odaiin",
+      "top_class": "herb",
+      "probability": 0.386,
+      "entropy": 2.335
+    },
+    {
+      "middle": "dor",
+      "top_class": "herb",
+      "probability": 0.479,
+      "entropy": 2.342
+    },
+    {
+      "middle": "ls",
+      "top_class": "herb",
+      "probability": 0.431,
+      "entropy": 2.346
+    },
+    {
+      "middle": "chor",
+      "top_class": "herb",
+      "probability": 0.328,
+      "entropy": 2.349
+    },
+    {
+      "middle": "chy",
+      "top_class": "herb",
+      "probability": 0.387,
+      "entropy": 2.364
+    },
+    {
+      "middle": "chol",
+      "top_class": "herb",
+      "probability": 0.385,
+      "entropy": 2.366
+    },
+    {
+      "middle": "eey",
+      "top_class": "herb",
+      "probability": 0.424,
+      "entropy": 2.381
+    },
+    {
+      "middle": "tchy",
+      "top_class": "hot_dry_herb",
+      "probability": 0.296,
+      "entropy": 2.439
+    },
+    {
+      "middle": "kchy",
+      "top_class": "herb",
+      "probability": 0.324,
+      "entropy": 2.475
+    },
+    {
+      "middle": "hy",
+      "top_class": "herb",
+      "probability": 0.342,
+      "entropy": 2.49
+    },
+    {
+      "middle": "tchol",
+      "top_class": "hot_dry_herb",
+      "probability": 0.314,
+      "entropy": 2.496
+    },
+    {
+      "middle": "ols",
+      "top_class": "hot_dry_herb",
+      "probability": 0.314,
+      "entropy": 2.579
+    },
+    {
+      "middle": "eom",
+      "top_class": "herb",
+      "probability": 0.392,
+      "entropy": 2.58
+    },
+    {
+      "middle": "ho",
+      "top_class": "hot_dry_herb",
+      "probability": 0.269,
+      "entropy": 2.615
+    },
+    {
+      "middle": "tsho",
+      "top_class": "animal",
+      "probability": 0.286,
+      "entropy": 2.615
+    }
+  ]
+}

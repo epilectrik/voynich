@@ -1,0 +1,70 @@
+{
+  "test": "PREFIX_TRACK_DISTRIBUTION",
+  "date": "2026-01-20",
+  "token_counts": {
+    "registry_internal": 1265,
+    "pipeline": 10081
+  },
+  "prefix_distributions": {
+    "registry_internal": {
+      "ot": 108,
+      "sh": 116,
+      "ct": 234,
+      "ch": 192,
+      "o": 23,
+      "d": 100,
+      "qo": 149,
+      "s": 29,
+      "ok": 108,
+      "y": 85,
+      "ol": 21,
+      "or": 4,
+      "a": 2,
+      "al": 2,
+      "ar": 2
+    },
+    "pipeline": {
+      "y": 623,
+      "ar": 60,
+      "a": 131,
+      "sh": 888,
+      "ct": 212,
+      "s": 507,
+      "or": 151,
+      "ch": 1944,
+      "d": 1629,
+      "o": 416,
+      "ot": 382,
+      "ok": 504,
+      "ol": 263,
+      "qo": 940,
+      "al": 52
+    }
+  },
+  "chi_square": 930.12,
+  "df": 14,
+  "cramers_v": 0.307,
+  "distribution_difference": "STRONG",
+  "enrichments": {
+    "ct": 4.41,
+    "ot": 1.853,
+    "ok": 1.483,
+    "qo": 1.15,
+    "y": 1.009,
+    "sh": 0.971,
+    "ch": 0.756,
+    "ol": 0.622,
+    "d": 0.486,
+    "s": 0.455,
+    "o": 0.44,
+    "al": 0.311,
+    "ar": 0.271,
+    "or": 0.217,
+    "a": 0.126
+  },
+  "suffix_less_rates": {
+    "registry_internal": 0.066,
+    "pipeline": 0.07,
+    "ratio": 0.95
+  }
+}

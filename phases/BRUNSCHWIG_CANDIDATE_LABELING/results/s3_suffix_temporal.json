@@ -1,0 +1,52 @@
+{
+  "test": "S3_SUFFIX_TEMPORAL",
+  "date": "2026-01-20",
+  "hypothesis": "Naked discriminators introduced earlier than closure-suffixed",
+  "manuscript_range": {
+    "min_order": 2,
+    "max_order": 205.2,
+    "span": 203.2
+  },
+  "posture_results": {
+    "NAKED": {
+      "n": 58,
+      "mean_intro": 0.5309,
+      "median_intro": 0.4774,
+      "std": 0.3443
+    },
+    "CLOSURE": {
+      "n": 30,
+      "mean_intro": 0.1826,
+      "median_intro": 0.0837,
+      "std": 0.2429
+    },
+    "MINIMAL": {
+      "n": 32,
+      "mean_intro": 0.3758,
+      "median_intro": 0.2165,
+      "std": 0.3408
+    },
+    "EXECUTION": {
+      "n": 5,
+      "mean_intro": 0.0167,
+      "median_intro": 0.0,
+      "std": 0.0288
+    },
+    "STRUCTURAL": {
+      "n": 4,
+      "mean_intro": 0.1956,
+      "median_intro": 0.1575,
+      "std": 0.1972
+    }
+  },
+  "comparison": {
+    "naked_vs_closure": {
+      "naked_mean": 0.5309,
+      "closure_mean": 0.1826,
+      "z_score": -4.648,
+      "effect_r": 0.495,
+      "direction": "CLOSURE_EARLIER"
+    }
+  },
+  "verdict": "CONTRADICTED"
+}

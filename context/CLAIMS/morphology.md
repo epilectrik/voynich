@@ -1,4 +1,4 @@
-# Morphology Constraints (C349-C382, C386-C402, C407-C412, C466-C467)
+# Morphology Constraints (C349-C382, C386-C402, C407-C412, C466-C467, C495)
 
 **Scope:** Morphological structure, transitions, functional grammar
 **Status:** CLOSED
@@ -100,6 +100,13 @@ KERNEL-HEAVY: -edy (91%), -ey (95%), -dy (83%). KERNEL-LIGHT: -in (6%), -l (12%)
 **Tier:** 2 | **Status:** CLOSED
 Chi2=7053 (p=0). da+-aiin=30%, sh+-edy=28%.
 **Source:** BSF
+
+### C495 - SUFFIX–REGIME Compatibility Breadth Association
+**Tier:** 2 | **Status:** CLOSED
+SUFFIX morphology in Currier A tokens is associated with downstream REGIME compatibility breadth in Currier B. Tokens with the **-r suffix** are significantly enriched in **universal REGIME compatibility** (11.5% vs 4.2% baseline), while **-ar and -or suffixes** are significantly enriched in **single-REGIME restriction** (χ² = 28.36, p = 0.0004, Cramér's V = 0.159). PREFIX morphology shows **no significant association** with REGIME compatibility breadth (V = 0.068, p = 0.82). This constraint is **associative, not causal**: SUFFIX does not encode REGIME selection, but correlates with the breadth of execution contexts under which a discriminator remains admissible.
+**Source:** A_REGIME_STRATIFICATION
+
+**Note:** The naive finding that "39% of A tokens are REGIME-specific" was shown to be heavily confounded by frequency (Cramér's V = 0.38). Among frequent tokens (>20 occurrences), only 4.7% are genuinely single-REGIME. The SUFFIX effect survived this frequency control and represents the robust finding.
 
 ---
 

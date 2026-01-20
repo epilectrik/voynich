@@ -1,0 +1,581 @@
+{
+  "azc_terminal_middles": [
+    "choda",
+    "chy",
+    "echo",
+    "echod",
+    "eeee",
+    "eeet",
+    "eeoa",
+    "eey",
+    "eoda",
+    "eoee",
+    "eokeo",
+    "etcho",
+    "eto",
+    "eyd",
+    "ho",
+    "hyd",
+    "iid",
+    "im",
+    "lol",
+    "ls",
+    "oc",
+    "ocp",
+    "oka",
+    "okeo",
+    "olal",
+    "olar",
+    "oldo",
+    "ols",
+    "opcho",
+    "otee",
+    "oteo"
+  ],
+  "azc_terminal_token_count": 52,
+  "azc_terminal_a_count": 88,
+  "placement_distribution": {
+    "R": 5,
+    "Y": 6,
+    "C": 13,
+    "L": 2,
+    "X": 3,
+    "S": 2,
+    "P": 3,
+    "O": 2,
+    "R3": 2,
+    "R2": 6,
+    "S1": 1,
+    "R1": 7
+  },
+  "prefix_distribution": {
+    "ch": 13,
+    "yk": 7,
+    "ot": 10,
+    "sa": 3,
+    "ok": 8,
+    "ar": 1,
+    "or": 1,
+    "ct": 3,
+    "sh": 5,
+    "da": 1
+  },
+  "suffix_distribution": {
+    "dy": 10,
+    "ky": 1,
+    "r": 1,
+    "": 9,
+    "s": 10,
+    "oiin": 1,
+    "m": 1,
+    "or": 1,
+    "hy": 1,
+    "chey": 1,
+    "chol": 1,
+    "ly": 8,
+    "y": 1,
+    "keey": 2,
+    "chy": 1,
+    "key": 1,
+    "ar": 1,
+    "om": 1
+  },
+  "folio_distribution": {
+    "f67r1": 3,
+    "f67r2": 6,
+    "f67v2": 1,
+    "f67v1": 3,
+    "f68r1": 1,
+    "f68r2": 1,
+    "f68r3": 2,
+    "f68v3": 5,
+    "f68v2": 2,
+    "f68v1": 2,
+    "f69r": 2,
+    "f69v": 2,
+    "f70r1": 3,
+    "f70r2": 3,
+    "f70v2": 3,
+    "f70v1": 2,
+    "f71r": 2,
+    "f71v": 2,
+    "f72r1": 1,
+    "f72r2": 2,
+    "f72v2": 1,
+    "f73r": 2,
+    "f73v": 1
+  },
+  "language_distribution": {
+    "NA": 52
+  },
+  "tokens": [
+    {
+      "token": "chokeody",
+      "folio": "f67r1",
+      "middle": "okeo",
+      "prefix": "ch",
+      "suffix": "dy",
+      "placement": "R",
+      "lang": "NA"
+    },
+    {
+      "token": "choteedy",
+      "folio": "f67r1",
+      "middle": "otee",
+      "prefix": "ch",
+      "suffix": "dy",
+      "placement": "R",
+      "lang": "NA"
+    },
+    {
+      "token": "choteoky",
+      "folio": "f67r1",
+      "middle": "oteo",
+      "prefix": "ch",
+      "suffix": "ky",
+      "placement": "R",
+      "lang": "NA"
+    },
+    {
+      "token": "ykchyr",
+      "folio": "f67r2",
+      "middle": "chy",
+      "prefix": "yk",
+      "suffix": "r",
+      "placement": "Y",
+      "lang": "NA"
+    },
+    {
+      "token": "ykecho",
+      "folio": "f67r2",
+      "middle": "echo",
+      "prefix": "yk",
+      "suffix": "",
+      "placement": "Y",
+      "lang": "NA"
+    },
+    {
+      "token": "ykchys",
+      "folio": "f67r2",
+      "middle": "chy",
+      "prefix": "yk",
+      "suffix": "s",
+      "placement": "Y",
+      "lang": "NA"
+    },
+    {
+      "token": "otocs",
+      "folio": "f67r2",
+      "middle": "oc",
+      "prefix": "ot",
+      "suffix": "s",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "salsoiin",
+      "folio": "f67r2",
+      "middle": "ls",
+      "prefix": "sa",
+      "suffix": "oiin",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "otoldos",
+      "folio": "f67r2",
+      "middle": "oldo",
+      "prefix": "ot",
+      "suffix": "s",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "okolarm",
+      "folio": "f67v2",
+      "middle": "olar",
+      "prefix": "ok",
+      "suffix": "m",
+      "placement": "L",
+      "lang": "NA"
+    },
+    {
+      "token": "okolaldy",
+      "folio": "f67v1",
+      "middle": "olal",
+      "prefix": "ok",
+      "suffix": "dy",
+      "placement": "X",
+      "lang": "NA"
+    },
+    {
+      "token": "aroka",
+      "folio": "f67v1",
+      "middle": "oka",
+      "prefix": "ar",
+      "suffix": "",
+      "placement": "Y",
+      "lang": "NA"
+    },
+    {
+      "token": "otechodor",
+      "folio": "f67v1",
+      "middle": "echod",
+      "prefix": "ot",
+      "suffix": "or",
+      "placement": "Y",
+      "lang": "NA"
+    },
+    {
+      "token": "chocphy",
+      "folio": "f68r1",
+      "middle": "ocp",
+      "prefix": "ch",
+      "suffix": "hy",
+      "placement": "S",
+      "lang": "NA"
+    },
+    {
+      "token": "oriid",
+      "folio": "f68r2",
+      "middle": "iid",
+      "prefix": "or",
+      "suffix": "",
+      "placement": "P",
+      "lang": "NA"
+    },
+    {
+      "token": "cthyd",
+      "folio": "f68r3",
+      "middle": "hyd",
+      "prefix": "ct",
+      "suffix": "",
+      "placement": "X",
+      "lang": "NA"
+    },
+    {
+      "token": "okchoda",
+      "folio": "f68r3",
+      "middle": "choda",
+      "prefix": "ok",
+      "suffix": "",
+      "placement": "X",
+      "lang": "NA"
+    },
+    {
+      "token": "sholschey",
+      "folio": "f68v3",
+      "middle": "ols",
+      "prefix": "sh",
+      "suffix": "chey",
+      "placement": "P",
+      "lang": "NA"
+    },
+    {
+      "token": "cheeetchol",
+      "folio": "f68v3",
+      "middle": "eeet",
+      "prefix": "ch",
+      "suffix": "chol",
+      "placement": "P",
+      "lang": "NA"
+    },
+    {
+      "token": "ykeoees",
+      "folio": "f68v3",
+      "middle": "eoee",
+      "prefix": "yk",
+      "suffix": "s",
+      "placement": "O",
+      "lang": "NA"
+    },
+    {
+      "token": "oteeoaly",
+      "folio": "f68v3",
+      "middle": "eeoa",
+      "prefix": "ot",
+      "suffix": "ly",
+      "placement": "O",
+      "lang": "NA"
+    },
+    {
+      "token": "cheoda",
+      "folio": "f68v3",
+      "middle": "eoda",
+      "prefix": "ch",
+      "suffix": "",
+      "placement": "S",
+      "lang": "NA"
+    },
+    {
+      "token": "okechoy",
+      "folio": "f68v2",
+      "middle": "echo",
+      "prefix": "ok",
+      "suffix": "y",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "oteeys",
+      "folio": "f68v2",
+      "middle": "eey",
+      "prefix": "ot",
+      "suffix": "s",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "ykeeykeey",
+      "folio": "f68v1",
+      "middle": "eey",
+      "prefix": "yk",
+      "suffix": "keey",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "cthody",
+      "folio": "f68v1",
+      "middle": "ho",
+      "prefix": "ct",
+      "suffix": "dy",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "cthody",
+      "folio": "f69r",
+      "middle": "ho",
+      "prefix": "ct",
+      "suffix": "dy",
+      "placement": "R",
+      "lang": "NA"
+    },
+    {
+      "token": "ykechody",
+      "folio": "f69r",
+      "middle": "echo",
+      "prefix": "yk",
+      "suffix": "dy",
+      "placement": "R",
+      "lang": "NA"
+    },
+    {
+      "token": "chetody",
+      "folio": "f69v",
+      "middle": "eto",
+      "prefix": "ch",
+      "suffix": "dy",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "oteeys",
+      "folio": "f69v",
+      "middle": "eey",
+      "prefix": "ot",
+      "suffix": "s",
+      "placement": "L",
+      "lang": "NA"
+    },
+    {
+      "token": "choteody",
+      "folio": "f70r1",
+      "middle": "oteo",
+      "prefix": "ch",
+      "suffix": "dy",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "oteodas",
+      "folio": "f70r1",
+      "middle": "eoda",
+      "prefix": "ot",
+      "suffix": "s",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "saimchy",
+      "folio": "f70r1",
+      "middle": "im",
+      "prefix": "sa",
+      "suffix": "chy",
+      "placement": "Y",
+      "lang": "NA"
+    },
+    {
+      "token": "choteoly",
+      "folio": "f70r2",
+      "middle": "oteo",
+      "prefix": "ch",
+      "suffix": "ly",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "choteos",
+      "folio": "f70r2",
+      "middle": "oteo",
+      "prefix": "ch",
+      "suffix": "s",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "shopcho",
+      "folio": "f70r2",
+      "middle": "opcho",
+      "prefix": "sh",
+      "suffix": "",
+      "placement": "C",
+      "lang": "NA"
+    },
+    {
+      "token": "sheodaly",
+      "folio": "f70v2",
+      "middle": "eoda",
+      "prefix": "sh",
+      "suffix": "ly",
+      "placement": "R3",
+      "lang": "NA"
+    },
+    {
+      "token": "daimdy",
+      "folio": "f70v2",
+      "middle": "im",
+      "prefix": "da",
+      "suffix": "dy",
+      "placement": "R2",
+      "lang": "NA"
+    },
+    {
+      "token": "salols",
+      "folio": "f70v2",
+      "middle": "lol",
+      "prefix": "sa",
+      "suffix": "s",
+      "placement": "S1",
+      "lang": "NA"
+    },
+    {
+      "token": "cheokeo",
+      "folio": "f70v1",
+      "middle": "eokeo",
+      "prefix": "ch",
+      "suffix": "",
+      "placement": "R2",
+      "lang": "NA"
+    },
+    {
+      "token": "oteeykey",
+      "folio": "f70v1",
+      "middle": "eey",
+      "prefix": "ot",
+      "suffix": "key",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "otokeoar",
+      "folio": "f71r",
+      "middle": "okeo",
+      "prefix": "ot",
+      "suffix": "ar",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "okeeees",
+      "folio": "f71r",
+      "middle": "eeee",
+      "prefix": "ok",
+      "suffix": "s",
+      "placement": "R2",
+      "lang": "NA"
+    },
+    {
+      "token": "okeodaly",
+      "folio": "f71v",
+      "middle": "eoda",
+      "prefix": "ok",
+      "suffix": "ly",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "shopcho",
+      "folio": "f71v",
+      "middle": "opcho",
+      "prefix": "sh",
+      "suffix": "",
+      "placement": "R2",
+      "lang": "NA"
+    },
+    {
+      "token": "okeodaly",
+      "folio": "f72r1",
+      "middle": "eoda",
+      "prefix": "ok",
+      "suffix": "ly",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "oteeykeey",
+      "folio": "f72r2",
+      "middle": "eey",
+      "prefix": "ot",
+      "suffix": "keey",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "chokaly",
+      "folio": "f72r2",
+      "middle": "oka",
+      "prefix": "ch",
+      "suffix": "ly",
+      "placement": "R2",
+      "lang": "NA"
+    },
+    {
+      "token": "sheodaly",
+      "folio": "f72v2",
+      "middle": "eoda",
+      "prefix": "sh",
+      "suffix": "ly",
+      "placement": "R3",
+      "lang": "NA"
+    },
+    {
+      "token": "chetchody",
+      "folio": "f73r",
+      "middle": "etcho",
+      "prefix": "ch",
+      "suffix": "dy",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "ykeydom",
+      "folio": "f73r",
+      "middle": "eyd",
+      "prefix": "yk",
+      "suffix": "om",
+      "placement": "R1",
+      "lang": "NA"
+    },
+    {
+      "token": "okecholy",
+      "folio": "f73v",
+      "middle": "echo",
+      "prefix": "ok",
+      "suffix": "ly",
+      "placement": "R2",
+      "lang": "NA"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.7 | **Date:** 2026-01-19 | **Status:** FROZEN
+**Version:** 3.8 | **Date:** 2026-01-20 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -202,6 +202,12 @@ Suffixes encode universal form markers:
 - Suffix selection is compositionally conditioned
 - Suffixes do not carry semantic content
 
+**REGIME Compatibility (C495):** SUFFIX is associated with execution-context breadth:
+- `-r` suffix enriched in universal REGIME compatibility (11.5% vs 4.2%)
+- `-ar`, `-or` suffixes enriched in single-REGIME restriction
+- PREFIX shows no REGIME association
+- This is associative, not causal - SUFFIX correlates with breadth, doesn't encode it
+
 ### Infrastructure Tokens
 
 DA-family tokens are **infrastructural**:
@@ -325,6 +331,19 @@ See [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) for c
 | DA articulation | 75.1% internal boundary marker | C422 |
 | Clustered adjacency | 41.5% in runs, working-memory sized | C424 |
 
+### Two-Track Vocabulary Structure (C498)
+
+Currier A MIDDLEs divide into two vocabulary tracks:
+
+| Track | MIDDLEs | Characteristics | Role |
+|-------|---------|-----------------|------|
+| **Pipeline-participating** | 268 (43.4%) | Standard prefixes/suffixes, 7.96 folio spread | Flow through A→AZC→B |
+| **Registry-internal** | 349 (56.6%) | ct-prefix 5.1×, suffix-less 3×, 1.34 folio spread | Stay in A registry |
+
+Registry-internal MIDDLEs encode **within-category fine distinctions** for A-registry navigation that don't propagate to B execution. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
+
+**Note:** 8.9% of A-exclusive MIDDLEs also appear in AZC - this is interface noise from systems sharing the same alphabet, not a distinct vocabulary stratum. Verification testing rejected the "AZC-terminal bifurcation" hypothesis.
+
 ### Human-Factors Model (Tier 3)
 
 Currier A is designed for **expert navigation without meaning**:
@@ -346,6 +365,10 @@ Entry vocabulary composition predicts AZC activation breadth:
 | Tail-dominant | Narrower compatibility |
 | Universal vs Tail asymmetry | 0.58 vs 0.31 breadth |
 
+### Special Folio: f49v Instructional Apparatus (C497)
+
+Folio f49v is structurally distinct - it demonstrates Currier A morphology rather than serving as registry content. It contains 26 single-character labels alternating with example lines and marginal ordinal numbers (1-5). This is the only folio where the manuscript "teaches how to read itself." See C497 for details.
+
 ### Why Failure-Memory Was Rejected
 
 Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
@@ -366,6 +389,8 @@ Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
 ## VIII. AZC - DECISION-POINT GRAMMAR & COMPATIBILITY FILTER
 
 AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. It operates as a **decision-point grammar** that converts static A-registry entries into phase-gated choice nodes.
+
+**P-text note (2026-01-19):** Of 3,299 AZC tokens, 398 (12.1%) are P-placement paragraph text that is linguistically Currier A. For legality analysis, diagram-only count = **2,901 tokens**. See AZC_INTERFACE_VALIDATION phase.
 
 ### Core Function (v3.0)
 
@@ -537,6 +562,22 @@ Same layer, different structural pressures.
 ## X. CROSS-SYSTEM INTEGRATION LOGIC
 
 The four systems coexist without semantic coupling. Understanding their relationships prevents the most common misinterpretations.
+
+### Single-Character Token Distinction (C497)
+
+Single-character tokens have three distinct functions depending on context:
+
+| Context | Function | Structural Role | Propagates? |
+|---------|----------|-----------------|-------------|
+| **Currier A (normal)** | Rare, ignorable | Non-structural artifacts | No |
+| **Currier A f49v** | Instructional labels | Meta-structural (teaching) | No |
+| **Currier B f76r** | Control-posture sentinels | Grammar-critical markers | Yes (C121, C366, C382) |
+
+**f49v** is unique: 26 single-character L-placement labels (65% of manuscript total) alternating 1:1 with Currier A example lines, plus marginal ordinal numbers (1-5). It demonstrates Currier A morphology for training or reference. Its labels are **meta-structural** - they teach how to read the system but do not participate in A-registry semantics or propagate into AZC/B.
+
+**f76r** uses single-character lines as execution-critical **posture sentinels** that gate downstream grammar. These letters function grammatically and propagate into B's control flow.
+
+This contrast confirms that surface similarity (single characters) does not imply functional similarity. Context determines whether such tokens are ignorable artifacts, instructional apparatus, or grammar-critical operators.
 
 ### A-B Relationship
 

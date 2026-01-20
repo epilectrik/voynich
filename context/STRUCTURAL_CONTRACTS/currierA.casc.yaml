@@ -16,8 +16,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.0"
-  date: "2026-01-13"
+  version: "1.1"
+  date: "2026-01-19"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -123,13 +123,32 @@ morphology:
     essentiality: "Primary discriminator (402 unique distinctions)"
     entropy: "6.70 bits (65.6% of maximum)"
     incompatibility_rate: "95.7% of pairs are illegal"  # C475
-    provenance: "C293, C423, C475"
+    two_track_structure:
+      description: "MIDDLEs divide into pipeline-participating (43.4%) and registry-internal (56.6%)"
+      pipeline_participating:
+        count: 268
+        characteristics: "Standard prefixes, standard suffixes, broad folio spread (7.96 folios)"
+        role: "Flow through A→AZC→B pipeline"
+      registry_internal:
+        count: 349
+        characteristics: "ct-prefix 5.1× enriched, suffix-less 3×, folio-localized (1.34 folios)"
+        role: "Stay in A registry, encode within-category fine distinctions"
+        interpretation: "Below granularity threshold for execution"
+      provenance: "C498"
+    provenance: "C293, C423, C475, C498"
 
   suffix:
     count: 25
     universal_rate: "22/25 appear in 6+ prefix classes"
     function: "Decision archetype (phase-indexed)"
-    provenance: "C269, C277"
+    regime_association:
+      description: "SUFFIX associated with downstream REGIME compatibility breadth"
+      enriched_universal: ["-r"]
+      enriched_restricted: ["-ar", "-or"]
+      effect_size: "Cramér's V = 0.159"
+      note: "Associative, not causal"
+      provenance: "C495"
+    provenance: "C269, C277, C495"
 
   articulator:
     frequency: "~20% of tokens"
@@ -345,6 +364,8 @@ provenance:
     - "C466"  # PREFIX function
     - "C467"  # PREFIX function
     - "C475"  # MIDDLE incompatibility
+    - "C495"  # SUFFIX-REGIME association
+    - "C498"  # Registry-internal vocabulary track
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)

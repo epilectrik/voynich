@@ -1,0 +1,101 @@
+{
+  "folios": ["f67v2", "f67v1"],
+  "date": "2026-01-19",
+  "type": "double_foldout",
+  "quire": 9,
+  "note": "Verso of f67r1_f67r2",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f67v2": {
+      "position": "left",
+      "tokens": 61,
+      "description": "Oddball diagram - artistic liberties with structure",
+      "layout": {
+        "corner_illustrations": {
+          "placement": "L",
+          "tokens": 9,
+          "lines": 4,
+          "description": "4 corners have circular illustrations with single-token labels"
+        },
+        "pseudo_outer_rings": {
+          "placement": "C",
+          "tokens": 36,
+          "encoding": "1a,1b, 2a,2b, 3a,3b, 4a,4b",
+          "description": "4 GROUPS of 2 lines each - could be 2 rings but spatially isolated",
+          "artist_note": "Not continuous rings - 4 separate paired groupings"
+        },
+        "inner_spokes": {
+          "placement": "S",
+          "tokens": 4,
+          "description": "Spokes blended with decorative illustrations"
+        },
+        "center_cluster": {
+          "placement": "R",
+          "tokens": 10,
+          "lines": 4,
+          "description": "Center token cluster - could be inner ring or artistic cluster"
+        },
+        "other": {
+          "placement": "F",
+          "tokens": 2,
+          "description": "Scattered positions"
+        }
+      },
+      "diagram_type": "artistic_unconventional",
+      "visual_notes": [
+        "Corner circle illustrations with labels",
+        "Outer 'rings' broken into 4 isolated groups",
+        "Decorative illustrations blend with token placement",
+        "Less structured than typical AZC diagrams"
+      ]
+    },
+
+    "f67v1": {
+      "position": "right",
+      "tokens": 71,
+      "description": "Spoke diagram with decorative boxing",
+      "layout": {
+        "outer_ring": {
+          "placement": "X",
+          "tokens": 15,
+          "lines": 12,
+          "description": "Outer ring with decorative boxes isolating each token",
+          "visual_note": "Boxes around tokens - artistic/decorative choice"
+        },
+        "spokes": {
+          "placement": "Y",
+          "tokens": 56,
+          "lines": 17,
+          "description": "Token spokes radiating inward"
+        },
+        "center": {
+          "description": "No center content"
+        }
+      },
+      "diagram_type": "spoke_only",
+      "encoding_anomaly": "Uses ONLY X and Y placements - no standard R/C/S codes",
+      "visual_notes": [
+        "Outer ring tokens in decorative boxes",
+        "Purely artistic flourish, not structural",
+        "Many spokes, no center fill"
+      ]
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "f67v2": "C placement uses paired line codes (1a/1b, 2a/2b...) for the 4 isolated groups",
+    "f67v1": "Non-standard X/Y encoding instead of R/C/S - may indicate informal structure"
+  },
+
+  "user_observations": [
+    "f67v2: Oddball diagram with corner circle illustrations",
+    "f67v2: Single token labels on corner illustrations",
+    "f67v2: Instead of outer ring, 4 groups of 2 lines, spatially isolated",
+    "f67v2: Inner spokes blended with decorative illustrations",
+    "f67v2: Center cluster - ambiguous (inner ring or artistic)",
+    "f67v1: Outer ring with decorative boxes around individual tokens",
+    "f67v1: Many token spokes",
+    "f67v1: No center content"
+  ]
+}

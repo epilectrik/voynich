@@ -294,14 +294,28 @@ The placement distinction was discovered in the TRANSCRIPT-ARCHITECTURE-AUDIT (2
 
 ---
 
-## Legacy Placement Codes Reference (AZC detail)
+## AZC Placement Codes (Detailed Reference)
 
-| Code | Meaning | H-only Count |
-|------|---------|--------------|
+For comprehensive AZC encoding documentation, see: **[ARCHITECTURE/azc_transcript_encoding.md](../ARCHITECTURE/azc_transcript_encoding.md)**
+
+Key findings from AZC_INTERFACE_VALIDATION (2026-01-19):
+
+| Finding | Implication |
+|---------|-------------|
+| P-text is linguistically Currier A | Exclude from AZC analysis |
+| S-placement meaning is context-dependent | Spokes on standard diagrams, interrupted rings on nymph pages |
+| Diagram types show same functional signature | Visual variation is interface-only |
+| Center tokens are legality-participating | Include in standard analysis |
+| Nymph S-positions show 75% o-prefix | Positional encoding near illustrations |
+
+### Quick Reference (H-only counts)
+
+| Code | Meaning | Count |
+|------|---------|-------|
 | P | Paragraph (main text) | ~33,000 |
 | C, C1, C2 | Circular text | 830 |
 | R, R1-R4 | Ring positions | 2,245 |
-| S, S0-S3 | Sector text | 505 |
+| S, S0-S3 | Sector/interrupted text | 505 |
 | L, L1-L4 | Labels | 350 |
 | X, Y | Special positions | ~180 |
 | Q | Quadrant | ~60 |
@@ -380,6 +394,7 @@ Before committing any script that loads the transcript:
 
 ---
 
-*Last updated: 2026-01-16*
+*Last updated: 2026-01-19*
 *This document prevents the transcriber filtering bug from recurring.*
 *Placement type taxonomy added from TRANSCRIPT-ARCHITECTURE-AUDIT (2026-01-16).*
+*AZC encoding cross-reference added from AZC_INTERFACE_VALIDATION (2026-01-19).*

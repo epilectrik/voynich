@@ -35,9 +35,20 @@ The Astronomical/Zodiac/Cosmological (AZC) text is a genuine HYBRID system that 
 - 65.9% hapax (most appear only once)
 - Structural signature: LABELING function
 
+## P-Text Reclassification Note (2026-01-19)
+
+Of the 3,299 AZC tokens, 398 (12.1%) are P-placement paragraph text that is linguistically A-like:
+- PREFIX cosine to Currier A: 0.946
+- PREFIX cosine to AZC diagram: 0.777
+- Exclusive vocab ratio: 5.7x more types shared only with A
+
+**Analytical recommendation:** For AZC legality analysis, use diagram-only count (**2,901 tokens**). P-text represents Currier A material physically co-located with AZC diagrams, not hybrid AZC content.
+
+See: AZC_INTERFACE_VALIDATION phase, `context/ARCHITECTURE/azc_transcript_encoding.md`
+
 ## Related Constraints
 
-- C300 - 3,299 tokens unclassified by Currier
+- C300 - 3,299 tokens unclassified by Currier (398 P-text, 2,901 diagram)
 - C302 - Distinct line structure
 - C303 - Elevated LINK density
 - C306 - Placement-coding axis

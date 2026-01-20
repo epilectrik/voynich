@@ -2,6 +2,8 @@
 
 **Status:** CLOSED | **Tier:** 2 | **Scope:** 7.7% of tokens, 30 folios
 
+**See also:** [azc_transcript_encoding.md](azc_transcript_encoding.md) — Physical diagram encoding in transcript
+
 ---
 
 ## The Core Insight

@@ -1,0 +1,89 @@
+{
+  "folios": ["f72v1"],
+  "date": "2026-01-19",
+  "type": "single_folio",
+  "quire": 9,
+  "note": "Nymph page with BALANCING SCALE at center",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f72v1": {
+      "tokens": 102,
+      "description": "5-ring nymph diagram with balancing scale at center",
+      "layout": {
+        "continuous_rings": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [40, 22, 10],
+          "total": 72,
+          "description": "3 outer continuous rings"
+        },
+        "nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [20, 10],
+          "lines": [20, 10],
+          "total": 30,
+          "encoding": "TRULY SCATTERED - 1 token per line (denser than other nymph pages)",
+          "description": "2 inner rings with extremely dense illustration packing"
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "1 token",
+          "illustration": "BALANCING SCALE - 2 baskets hanging from rod",
+          "description": "Unique weighing/balance imagery"
+        },
+        "paragraph": {
+          "description": "NONE"
+        }
+      },
+      "ring_count": 5,
+      "diagram_type": "multi_ring_nymph"
+    }
+  },
+
+  "physical_damage": {
+    "type": "hole_in_page",
+    "effect": "Token appears damaged",
+    "location": "Within diagram area"
+  },
+
+  "transcript_encoding_notes": {
+    "dense_packing_effect": "S1 has 20 tokens in 20 lines, S2 has 10 tokens in 10 lines",
+    "comparison": "Other nymph pages have 2-3 tokens per S-line segment",
+    "interpretation": "Densely packed illustrations isolate each token completely"
+  },
+
+  "user_observations": [
+    "Similar nymph pattern",
+    "Drawings more densely packed together",
+    "Hole in page with damaged token",
+    "Single token in center",
+    "Center image: BALANCING SCALE",
+    "Scale has 2 baskets hanging from either side of rod",
+    "Weighing/balancing theme - unique feature"
+  ],
+
+  "oddities": [
+    {
+      "type": "balancing_scale_center",
+      "description": "Unique center illustration - scale with 2 hanging baskets, suggesting weighing/balance"
+    },
+    {
+      "type": "physical_damage",
+      "description": "Hole in page with damaged token"
+    },
+    {
+      "type": "dense_packing",
+      "description": "Illustrations so dense that each token is isolated (1 per line in S placements)"
+    },
+    {
+      "type": "center_token_missing",
+      "description": "User sees center token but no C placement in transcript"
+    }
+  ],
+
+  "semantic_note": {
+    "scale_symbolism": "Balancing scale may indicate: measurement, judgment, comparison, equilibrium",
+    "contrast_with_animals": "All other nymph pages have living creatures (animals, humans) at center",
+    "apparatus_significance": "Only other apparatus seen in manuscript aside from jars/tubes/distillers - may link nymph diagrams to pharmaceutical/alchemical sections"
+  }
+}

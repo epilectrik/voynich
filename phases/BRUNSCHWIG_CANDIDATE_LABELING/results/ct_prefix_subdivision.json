@@ -1,0 +1,34 @@
+{
+  "test": "CT_PREFIX_SUBDIVISION",
+  "date": "2026-01-20",
+  "counts": {
+    "ct_tokens": 234,
+    "non_ct_tokens": 941,
+    "ct_middles": 20,
+    "non_ct_middles": 108
+  },
+  "folio_localization": {
+    "ct_mean_folios": 13.0,
+    "non_ct_mean_folios": 6.91,
+    "ct_singleton_rate": 0.6,
+    "non_ct_singleton_rate": 0.574
+  },
+  "middle_exclusivity": {
+    "ct_exclusive_middles": 17,
+    "ct_shared_middles": 3,
+    "ct_exclusive_rate": 0.85,
+    "ct_mean_prefix_diversity": 1.95,
+    "non_ct_mean_prefix_diversity": 2.11
+  },
+  "token_frequency": {
+    "ct_mean_freq": 20.4,
+    "non_ct_mean_freq": 10.41,
+    "ct_median_freq": 1,
+    "non_ct_median_freq": 1
+  },
+  "findings": [
+    "ct-MIDDLEs are LESS folio-localized (13.00 vs 6.91 folios)",
+    "ct-MIDDLEs are HIGHLY exclusive (85% appear only with ct)",
+    "ct-MIDDLEs have SIMILAR prefix diversity (1.95 vs 2.11)"
+  ]
+}

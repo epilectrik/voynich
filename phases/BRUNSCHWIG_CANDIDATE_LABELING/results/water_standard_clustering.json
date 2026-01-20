@@ -1,0 +1,119 @@
+{
+  "phase": "WATER_STANDARD_CLUSTERING",
+  "date": "2026-01-20",
+  "graph": {
+    "n_nodes": 36,
+    "n_edges": 190,
+    "total_weight": 854,
+    "min_cooccurrence": 2
+  },
+  "clustering": {
+    "n_clusters": 5,
+    "modularity": 0.06822625583423372,
+    "modularity_interpretation": "WEAK (near-random structure)",
+    "communities": {
+      "aiino": 2,
+      "alol": 1,
+      "aly": 1,
+      "cheol": 0,
+      "chol": 4,
+      "chor": 2,
+      "chy": 3,
+      "dor": 0,
+      "eeor": 0,
+      "eey": 0,
+      "eom": 1,
+      "ho": 3,
+      "hol": 2,
+      "hor": 2,
+      "hy": 2,
+      "kchy": 3,
+      "key": 0,
+      "lol": 2,
+      "ls": 0,
+      "ly": 3,
+      "odaiin": 0,
+      "odol": 0,
+      "ody": 0,
+      "oees": 4,
+      "okal": 1,
+      "okol": 0,
+      "okor": 2,
+      "olol": 0,
+      "ols": 4,
+      "otol": 4,
+      "raiin": 0,
+      "sheod": 0,
+      "sheol": 1,
+      "shol": 3,
+      "tchol": 4,
+      "tchy": 4
+    }
+  },
+  "stability": {
+    "n_bootstrap": 100,
+    "mean_clusters": 4.15,
+    "std_clusters": 1.0234744745229354,
+    "mean_modularity": 0.0911303473732508,
+    "std_modularity": 0.020141009484550984,
+    "mean_pair_stability": 0.2773707493900767,
+    "interpretation": "VERY LOW (near-random clustering)"
+  },
+  "cluster_stats": {
+    "2": {
+      "n_middles": 7,
+      "total_appearances": 68,
+      "top_middles": [
+        "hy",
+        "chor",
+        "hol",
+        "hor",
+        "lol"
+      ]
+    },
+    "1": {
+      "n_middles": 5,
+      "total_appearances": 18,
+      "top_middles": [
+        "aly",
+        "eom",
+        "sheol",
+        "alol",
+        "okal"
+      ]
+    },
+    "0": {
+      "n_middles": 13,
+      "total_appearances": 125,
+      "top_middles": [
+        "ody",
+        "eey",
+        "odaiin",
+        "key",
+        "eeor"
+      ]
+    },
+    "4": {
+      "n_middles": 6,
+      "total_appearances": 55,
+      "top_middles": [
+        "chol",
+        "tchy",
+        "tchol",
+        "otol",
+        "oees"
+      ]
+    },
+    "3": {
+      "n_middles": 5,
+      "total_appearances": 49,
+      "top_middles": [
+        "chy",
+        "kchy",
+        "ho",
+        "shol",
+        "ly"
+      ]
+    }
+  }
+}

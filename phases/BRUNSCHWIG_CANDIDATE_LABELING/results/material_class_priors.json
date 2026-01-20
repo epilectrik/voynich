@@ -1,0 +1,3060 @@
+{
+  "phase": "MATERIAL_CLASS_PRIORS",
+  "date": "2026-01-20",
+  "method": "Bayesian inference via procedural context",
+  "conditional_on": "IF Brunschwig material distributions apply",
+  "n_middles_analyzed": 128,
+  "n_middles_no_data": 221,
+  "summary": {
+    "mean_entropy": 1.078,
+    "min_entropy": 0.0,
+    "max_entropy": 2.615,
+    "dominant_class_distribution": {
+      "animal": 27,
+      "hot_dry_herb": 33,
+      "herb": 63,
+      "cold_moist_flower": 5
+    }
+  },
+  "results": [
+    {
+      "middle": "chald",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "cthso",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eeees",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eoc",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eoschso",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eso",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "eyd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "ha",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "hdaoto",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "hyd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "iil",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "ofy",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "olfcho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "opcho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "pchypcho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "tchyf",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "tea",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "techoep",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "PRECISION": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 1.0,
+      "entropy": 0.0
+    },
+    {
+      "middle": "aiind",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "akod",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "chad",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "cthod",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "eokchet",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "etcho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "hd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "hold",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "keolo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "komo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "kshe",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "ocho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "okeeo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "orodo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "ram",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "rcho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "teeeo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "tyd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "yqo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "OIL_RESIN": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.943,
+        "hot_dry_root": 0.057,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.943,
+      "entropy": 0.315
+    },
+    {
+      "middle": "alda",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "alol",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "choda",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "chok",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "ead",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "echod",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "esed",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "esee",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "heea",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "heo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "heockhosho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "hodd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "holo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "hoo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "hos",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "im",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "kold",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "lsho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "oal",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "oees",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "okcheo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "okoishe",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "okyd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "okyt",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "olal",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "olp",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "olsho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "olyd",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "opol",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "oro",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "otchot",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "oteo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "schsa",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "sea",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "sheod",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "tcheea",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "tolo",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "yda",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "ykald",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_STANDARD": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.863,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.055,
+        "leaf": 0.012,
+        "moderate_herb": 0.048,
+        "moist_root": 0.022
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.863,
+      "entropy": 0.822
+    },
+    {
+      "middle": "tchod",
+      "n_folios": 3,
+      "product_type_distribution": {
+        "PRECISION": 0.6666666666666666,
+        "OIL_RESIN": 0.3333333333333333
+      },
+      "material_class_posterior": {
+        "animal": 0.6666666666666666,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.667,
+      "entropy": 1.023
+    },
+    {
+      "middle": "heod",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.5,
+        "PRECISION": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.5,
+      "entropy": 1.158
+    },
+    {
+      "middle": "hod",
+      "n_folios": 4,
+      "product_type_distribution": {
+        "PRECISION": 0.5,
+        "OIL_RESIN": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.5,
+      "entropy": 1.158
+    },
+    {
+      "middle": "odol",
+      "n_folios": 4,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5,
+        "PRECISION": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.5,
+      "entropy": 1.411
+    },
+    {
+      "middle": "olar",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "PRECISION": 0.5,
+        "WATER_STANDARD": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.5,
+      "entropy": 1.411
+    },
+    {
+      "middle": "teold",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5,
+        "PRECISION": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.5,
+      "entropy": 1.411
+    },
+    {
+      "middle": "ockho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_GENTLE": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.521,
+        "dangerous_herb": 0.146,
+        "fruit": 0.333,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "cold_moist_flower",
+      "top_class_probability": 0.521,
+      "entropy": 1.424
+    },
+    {
+      "middle": "okaro",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_GENTLE": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.521,
+        "dangerous_herb": 0.146,
+        "fruit": 0.333,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "cold_moist_flower",
+      "top_class_probability": 0.521,
+      "entropy": 1.424
+    },
+    {
+      "middle": "ota",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_GENTLE": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.521,
+        "dangerous_herb": 0.146,
+        "fruit": 0.333,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "cold_moist_flower",
+      "top_class_probability": 0.521,
+      "entropy": 1.424
+    },
+    {
+      "middle": "ysho",
+      "n_folios": 1,
+      "product_type_distribution": {
+        "WATER_GENTLE": 1.0
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.521,
+        "dangerous_herb": 0.146,
+        "fruit": 0.333,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "cold_moist_flower",
+      "top_class_probability": 0.521,
+      "entropy": 1.424
+    },
+    {
+      "middle": "lol",
+      "n_folios": 5,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.8,
+        "OIL_RESIN": 0.2
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.6904,
+        "hot_dry_herb": 0.1886,
+        "hot_dry_root": 0.0114,
+        "hot_flower": 0.044000000000000004,
+        "leaf": 0.009600000000000001,
+        "moderate_herb": 0.038400000000000004,
+        "moist_root": 0.0176
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.69,
+      "entropy": 1.442
+    },
+    {
+      "middle": "raiin",
+      "n_folios": 7,
+      "product_type_distribution": {
+        "PRECISION": 0.42857142857142855,
+        "WATER_STANDARD": 0.5714285714285714
+      },
+      "material_class_posterior": {
+        "animal": 0.42857142857142855,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4931428571428571,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.031428571428571424,
+        "leaf": 0.006857142857142857,
+        "moderate_herb": 0.027428571428571427,
+        "moist_root": 0.01257142857142857
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.493,
+      "entropy": 1.455
+    },
+    {
+      "middle": "sheol",
+      "n_folios": 4,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.75,
+        "OIL_RESIN": 0.25
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.64725,
+        "hot_dry_herb": 0.23575,
+        "hot_dry_root": 0.01425,
+        "hot_flower": 0.04125,
+        "leaf": 0.009000000000000001,
+        "moderate_herb": 0.036000000000000004,
+        "moist_root": 0.0165
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.647,
+      "entropy": 1.506
+    },
+    {
+      "middle": "ckhod",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5,
+        "OIL_RESIN": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.568
+    },
+    {
+      "middle": "ly",
+      "n_folios": 4,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5,
+        "OIL_RESIN": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.568
+    },
+    {
+      "middle": "okeo",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5,
+        "OIL_RESIN": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.568
+    },
+    {
+      "middle": "okor",
+      "n_folios": 4,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.5,
+        "WATER_STANDARD": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.568
+    },
+    {
+      "middle": "otcho",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.5,
+        "WATER_STANDARD": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.568
+    },
+    {
+      "middle": "aiino",
+      "n_folios": 3,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.6666666666666666,
+        "OIL_RESIN": 0.3333333333333333
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.5753333333333333,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.03666666666666667,
+        "leaf": 0.008,
+        "moderate_herb": 0.032,
+        "moist_root": 0.014666666666666665
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.575,
+      "entropy": 1.571
+    },
+    {
+      "middle": "okal",
+      "n_folios": 3,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.6666666666666666,
+        "OIL_RESIN": 0.3333333333333333
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.5753333333333333,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.03666666666666667,
+        "leaf": 0.008,
+        "moderate_herb": 0.032,
+        "moist_root": 0.014666666666666665
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.575,
+      "entropy": 1.571
+    },
+    {
+      "middle": "okol",
+      "n_folios": 6,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.3333333333333333,
+        "WATER_STANDARD": 0.6666666666666666
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.5753333333333333,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.03666666666666667,
+        "leaf": 0.008,
+        "moderate_herb": 0.032,
+        "moist_root": 0.014666666666666665
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.575,
+      "entropy": 1.571
+    },
+    {
+      "middle": "aly",
+      "n_folios": 8,
+      "product_type_distribution": {
+        "PRECISION": 0.125,
+        "WATER_STANDARD": 0.75,
+        "OIL_RESIN": 0.125
+      },
+      "material_class_posterior": {
+        "animal": 0.125,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.64725,
+        "hot_dry_herb": 0.117875,
+        "hot_dry_root": 0.007125,
+        "hot_flower": 0.04125,
+        "leaf": 0.009000000000000001,
+        "moderate_herb": 0.036000000000000004,
+        "moist_root": 0.0165
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.647,
+      "entropy": 1.717
+    },
+    {
+      "middle": "shol",
+      "n_folios": 8,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.14285714285714285,
+        "PRECISION": 0.42857142857142855,
+        "WATER_STANDARD": 0.42857142857142855
+      },
+      "material_class_posterior": {
+        "animal": 0.42857142857142855,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.36985714285714283,
+        "hot_dry_herb": 0.1347142857142857,
+        "hot_dry_root": 0.008142857142857143,
+        "hot_flower": 0.02357142857142857,
+        "leaf": 0.005142857142857143,
+        "moderate_herb": 0.02057142857142857,
+        "moist_root": 0.009428571428571427
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.429,
+      "entropy": 1.846
+    },
+    {
+      "middle": "cthos",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.5,
+        "WATER_GENTLE": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.2605,
+        "dangerous_herb": 0.073,
+        "fruit": 0.1665,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.87
+    },
+    {
+      "middle": "fcho",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.5,
+        "OIL_RESIN": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.2605,
+        "dangerous_herb": 0.073,
+        "fruit": 0.1665,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.87
+    },
+    {
+      "middle": "oral",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.5,
+        "OIL_RESIN": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.2605,
+        "dangerous_herb": 0.073,
+        "fruit": 0.1665,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.471,
+      "entropy": 1.87
+    },
+    {
+      "middle": "olol",
+      "n_folios": 5,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.6,
+        "PRECISION": 0.2,
+        "OIL_RESIN": 0.2
+      },
+      "material_class_posterior": {
+        "animal": 0.2,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.5177999999999999,
+        "hot_dry_herb": 0.1886,
+        "hot_dry_root": 0.0114,
+        "hot_flower": 0.033,
+        "leaf": 0.0072,
+        "moderate_herb": 0.0288,
+        "moist_root": 0.013199999999999998
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.518,
+      "entropy": 1.927
+    },
+    {
+      "middle": "otol",
+      "n_folios": 8,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.42857142857142855,
+        "OIL_RESIN": 0.42857142857142855,
+        "PRECISION": 0.14285714285714285
+      },
+      "material_class_posterior": {
+        "animal": 0.14285714285714285,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.36985714285714283,
+        "hot_dry_herb": 0.4041428571428571,
+        "hot_dry_root": 0.024428571428571428,
+        "hot_flower": 0.02357142857142857,
+        "leaf": 0.005142857142857143,
+        "moderate_herb": 0.02057142857142857,
+        "moist_root": 0.009428571428571427
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.404,
+      "entropy": 1.936
+    },
+    {
+      "middle": "tod",
+      "n_folios": 7,
+      "product_type_distribution": {
+        "PRECISION": 0.5714285714285714,
+        "OIL_RESIN": 0.14285714285714285,
+        "WATER_GENTLE": 0.14285714285714285,
+        "WATER_STANDARD": 0.14285714285714285
+      },
+      "material_class_posterior": {
+        "animal": 0.5714285714285714,
+        "cold_moist_flower": 0.07442857142857143,
+        "dangerous_herb": 0.020857142857142855,
+        "fruit": 0.04757142857142857,
+        "herb": 0.12328571428571428,
+        "hot_dry_herb": 0.1347142857142857,
+        "hot_dry_root": 0.008142857142857143,
+        "hot_flower": 0.007857142857142856,
+        "leaf": 0.0017142857142857142,
+        "moderate_herb": 0.006857142857142857,
+        "moist_root": 0.0031428571428571426
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.571,
+      "entropy": 2.03
+    },
+    {
+      "middle": "keoda",
+      "n_folios": 2,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5,
+        "WATER_GENTLE": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.2605,
+        "dangerous_herb": 0.073,
+        "fruit": 0.1665,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.431,
+      "entropy": 2.123
+    },
+    {
+      "middle": "aram",
+      "n_folios": 3,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.6666666666666666,
+        "WATER_STANDARD": 0.3333333333333333
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.3473333333333333,
+        "dangerous_herb": 0.09733333333333333,
+        "fruit": 0.222,
+        "herb": 0.2876666666666666,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.018333333333333333,
+        "leaf": 0.004,
+        "moderate_herb": 0.016,
+        "moist_root": 0.007333333333333332
+      },
+      "top_class": "cold_moist_flower",
+      "top_class_probability": 0.347,
+      "entropy": 2.141
+    },
+    {
+      "middle": "key",
+      "n_folios": 22,
+      "product_type_distribution": {
+        "PRECISION": 0.23809523809523808,
+        "OIL_RESIN": 0.09523809523809523,
+        "WATER_STANDARD": 0.5714285714285714,
+        "WATER_GENTLE": 0.09523809523809523
+      },
+      "material_class_posterior": {
+        "animal": 0.23809523809523808,
+        "cold_moist_flower": 0.04961904761904762,
+        "dangerous_herb": 0.013904761904761902,
+        "fruit": 0.031714285714285716,
+        "herb": 0.4931428571428571,
+        "hot_dry_herb": 0.0898095238095238,
+        "hot_dry_root": 0.0054285714285714284,
+        "hot_flower": 0.031428571428571424,
+        "leaf": 0.006857142857142857,
+        "moderate_herb": 0.027428571428571427,
+        "moist_root": 0.01257142857142857
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.493,
+      "entropy": 2.236
+    },
+    {
+      "middle": "cheol",
+      "n_folios": 10,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.1,
+        "WATER_STANDARD": 0.5,
+        "OIL_RESIN": 0.1,
+        "PRECISION": 0.3
+      },
+      "material_class_posterior": {
+        "animal": 0.3,
+        "cold_moist_flower": 0.05210000000000001,
+        "dangerous_herb": 0.0146,
+        "fruit": 0.0333,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0943,
+        "hot_dry_root": 0.0057,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.431,
+      "entropy": 2.27
+    },
+    {
+      "middle": "ody",
+      "n_folios": 55,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.5849056603773585,
+        "PRECISION": 0.20754716981132076,
+        "OIL_RESIN": 0.09433962264150944,
+        "WATER_GENTLE": 0.11320754716981132
+      },
+      "material_class_posterior": {
+        "animal": 0.20754716981132076,
+        "cold_moist_flower": 0.058981132075471704,
+        "dangerous_herb": 0.01652830188679245,
+        "fruit": 0.03769811320754717,
+        "herb": 0.5047735849056604,
+        "hot_dry_herb": 0.0889622641509434,
+        "hot_dry_root": 0.005377358490566038,
+        "hot_flower": 0.032169811320754714,
+        "leaf": 0.007018867924528302,
+        "moderate_herb": 0.028075471698113207,
+        "moist_root": 0.012867924528301886
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.505,
+      "entropy": 2.272
+    },
+    {
+      "middle": "hor",
+      "n_folios": 32,
+      "product_type_distribution": {
+        "PRECISION": 0.3333333333333333,
+        "OIL_RESIN": 0.36666666666666664,
+        "WATER_STANDARD": 0.2,
+        "WATER_GENTLE": 0.1
+      },
+      "material_class_posterior": {
+        "animal": 0.3333333333333333,
+        "cold_moist_flower": 0.05210000000000001,
+        "dangerous_herb": 0.0146,
+        "fruit": 0.0333,
+        "herb": 0.1726,
+        "hot_dry_herb": 0.3457666666666666,
+        "hot_dry_root": 0.0209,
+        "hot_flower": 0.011000000000000001,
+        "leaf": 0.0024000000000000002,
+        "moderate_herb": 0.009600000000000001,
+        "moist_root": 0.0044
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.346,
+      "entropy": 2.278
+    },
+    {
+      "middle": "hol",
+      "n_folios": 36,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.4,
+        "OIL_RESIN": 0.2857142857142857,
+        "PRECISION": 0.2571428571428571,
+        "WATER_GENTLE": 0.05714285714285714
+      },
+      "material_class_posterior": {
+        "animal": 0.2571428571428571,
+        "cold_moist_flower": 0.02977142857142857,
+        "dangerous_herb": 0.008342857142857141,
+        "fruit": 0.01902857142857143,
+        "herb": 0.3452,
+        "hot_dry_herb": 0.2694285714285714,
+        "hot_dry_root": 0.016285714285714285,
+        "hot_flower": 0.022000000000000002,
+        "leaf": 0.0048000000000000004,
+        "moderate_herb": 0.019200000000000002,
+        "moist_root": 0.0088
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.345,
+      "entropy": 2.285
+    },
+    {
+      "middle": "eeor",
+      "n_folios": 18,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.16666666666666666,
+        "WATER_STANDARD": 0.5555555555555556,
+        "PRECISION": 0.2222222222222222,
+        "OIL_RESIN": 0.05555555555555555
+      },
+      "material_class_posterior": {
+        "animal": 0.2222222222222222,
+        "cold_moist_flower": 0.08683333333333333,
+        "dangerous_herb": 0.024333333333333332,
+        "fruit": 0.0555,
+        "herb": 0.47944444444444445,
+        "hot_dry_herb": 0.05238888888888888,
+        "hot_dry_root": 0.0031666666666666666,
+        "hot_flower": 0.030555555555555558,
+        "leaf": 0.006666666666666667,
+        "moderate_herb": 0.02666666666666667,
+        "moist_root": 0.012222222222222223
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.479,
+      "entropy": 2.327
+    },
+    {
+      "middle": "odaiin",
+      "n_folios": 39,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.4473684210526316,
+        "PRECISION": 0.2631578947368421,
+        "OIL_RESIN": 0.21052631578947367,
+        "WATER_GENTLE": 0.07894736842105263
+      },
+      "material_class_posterior": {
+        "animal": 0.2631578947368421,
+        "cold_moist_flower": 0.04113157894736842,
+        "dangerous_herb": 0.011526315789473683,
+        "fruit": 0.026289473684210526,
+        "herb": 0.3860789473684211,
+        "hot_dry_herb": 0.19852631578947366,
+        "hot_dry_root": 0.012,
+        "hot_flower": 0.024605263157894738,
+        "leaf": 0.005368421052631579,
+        "moderate_herb": 0.021473684210526315,
+        "moist_root": 0.009842105263157895
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.386,
+      "entropy": 2.335
+    },
+    {
+      "middle": "dor",
+      "n_folios": 9,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.2222222222222222,
+        "WATER_STANDARD": 0.5555555555555556,
+        "PRECISION": 0.1111111111111111,
+        "WATER_GENTLE": 0.1111111111111111
+      },
+      "material_class_posterior": {
+        "animal": 0.1111111111111111,
+        "cold_moist_flower": 0.057888888888888886,
+        "dangerous_herb": 0.01622222222222222,
+        "fruit": 0.037,
+        "herb": 0.47944444444444445,
+        "hot_dry_herb": 0.20955555555555552,
+        "hot_dry_root": 0.012666666666666666,
+        "hot_flower": 0.030555555555555558,
+        "leaf": 0.006666666666666667,
+        "moderate_herb": 0.02666666666666667,
+        "moist_root": 0.012222222222222223
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.479,
+      "entropy": 2.342
+    },
+    {
+      "middle": "ls",
+      "n_folios": 4,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.25,
+        "WATER_GENTLE": 0.25,
+        "WATER_STANDARD": 0.5
+      },
+      "material_class_posterior": {
+        "animal": 0.0,
+        "cold_moist_flower": 0.13025,
+        "dangerous_herb": 0.0365,
+        "fruit": 0.08325,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.23575,
+        "hot_dry_root": 0.01425,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.431,
+      "entropy": 2.346
+    },
+    {
+      "middle": "chor",
+      "n_folios": 53,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.38,
+        "OIL_RESIN": 0.34,
+        "WATER_GENTLE": 0.08,
+        "PRECISION": 0.2
+      },
+      "material_class_posterior": {
+        "animal": 0.2,
+        "cold_moist_flower": 0.04168,
+        "dangerous_herb": 0.01168,
+        "fruit": 0.02664,
+        "herb": 0.32794,
+        "hot_dry_herb": 0.32062,
+        "hot_dry_root": 0.01938,
+        "hot_flower": 0.020900000000000002,
+        "leaf": 0.00456,
+        "moderate_herb": 0.01824,
+        "moist_root": 0.00836
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.328,
+      "entropy": 2.349
+    },
+    {
+      "middle": "chy",
+      "n_folios": 51,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.4489795918367347,
+        "PRECISION": 0.2857142857142857,
+        "OIL_RESIN": 0.16326530612244897,
+        "WATER_GENTLE": 0.10204081632653061
+      },
+      "material_class_posterior": {
+        "animal": 0.2857142857142857,
+        "cold_moist_flower": 0.053163265306122455,
+        "dangerous_herb": 0.01489795918367347,
+        "fruit": 0.0339795918367347,
+        "herb": 0.38746938775510203,
+        "hot_dry_herb": 0.15395918367346936,
+        "hot_dry_root": 0.009306122448979591,
+        "hot_flower": 0.02469387755102041,
+        "leaf": 0.005387755102040816,
+        "moderate_herb": 0.021551020408163264,
+        "moist_root": 0.009877551020408163
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.387,
+      "entropy": 2.364
+    },
+    {
+      "middle": "chol",
+      "n_folios": 57,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.44642857142857145,
+        "PRECISION": 0.16071428571428573,
+        "OIL_RESIN": 0.30357142857142855,
+        "WATER_GENTLE": 0.08928571428571429
+      },
+      "material_class_posterior": {
+        "animal": 0.16071428571428573,
+        "cold_moist_flower": 0.046517857142857146,
+        "dangerous_herb": 0.013035714285714286,
+        "fruit": 0.02973214285714286,
+        "herb": 0.38526785714285716,
+        "hot_dry_herb": 0.28626785714285713,
+        "hot_dry_root": 0.01730357142857143,
+        "hot_flower": 0.02455357142857143,
+        "leaf": 0.005357142857142857,
+        "moderate_herb": 0.02142857142857143,
+        "moist_root": 0.009821428571428571
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.385,
+      "entropy": 2.366
+    },
+    {
+      "middle": "eey",
+      "n_folios": 58,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.49122807017543857,
+        "PRECISION": 0.22807017543859648,
+        "OIL_RESIN": 0.17543859649122806,
+        "WATER_GENTLE": 0.10526315789473684
+      },
+      "material_class_posterior": {
+        "animal": 0.22807017543859648,
+        "cold_moist_flower": 0.05484210526315789,
+        "dangerous_herb": 0.015368421052631576,
+        "fruit": 0.03505263157894737,
+        "herb": 0.4239298245614035,
+        "hot_dry_herb": 0.16543859649122805,
+        "hot_dry_root": 0.01,
+        "hot_flower": 0.02701754385964912,
+        "leaf": 0.005894736842105263,
+        "moderate_herb": 0.023578947368421053,
+        "moist_root": 0.010807017543859649
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.424,
+      "entropy": 2.381
+    },
+    {
+      "middle": "tchy",
+      "n_folios": 53,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.11764705882352941,
+        "WATER_STANDARD": 0.3137254901960784,
+        "PRECISION": 0.2549019607843137,
+        "OIL_RESIN": 0.3137254901960784
+      },
+      "material_class_posterior": {
+        "animal": 0.2549019607843137,
+        "cold_moist_flower": 0.061294117647058825,
+        "dangerous_herb": 0.017176470588235293,
+        "fruit": 0.0391764705882353,
+        "herb": 0.2707450980392157,
+        "hot_dry_herb": 0.29584313725490197,
+        "hot_dry_root": 0.01788235294117647,
+        "hot_flower": 0.017254901960784313,
+        "leaf": 0.0037647058823529413,
+        "moderate_herb": 0.015058823529411765,
+        "moist_root": 0.006901960784313725
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.296,
+      "entropy": 2.439
+    },
+    {
+      "middle": "kchy",
+      "n_folios": 50,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.375,
+        "WATER_GENTLE": 0.125,
+        "PRECISION": 0.22916666666666666,
+        "OIL_RESIN": 0.2708333333333333
+      },
+      "material_class_posterior": {
+        "animal": 0.22916666666666666,
+        "cold_moist_flower": 0.065125,
+        "dangerous_herb": 0.01825,
+        "fruit": 0.041625,
+        "herb": 0.323625,
+        "hot_dry_herb": 0.2553958333333333,
+        "hot_dry_root": 0.0154375,
+        "hot_flower": 0.020625,
+        "leaf": 0.0045000000000000005,
+        "moderate_herb": 0.018000000000000002,
+        "moist_root": 0.00825
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.324,
+      "entropy": 2.475
+    },
+    {
+      "middle": "hy",
+      "n_folios": 54,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.39622641509433965,
+        "PRECISION": 0.20754716981132076,
+        "OIL_RESIN": 0.2641509433962264,
+        "WATER_GENTLE": 0.1320754716981132
+      },
+      "material_class_posterior": {
+        "animal": 0.20754716981132076,
+        "cold_moist_flower": 0.06881132075471698,
+        "dangerous_herb": 0.019283018867924526,
+        "fruit": 0.0439811320754717,
+        "herb": 0.3419433962264151,
+        "hot_dry_herb": 0.2490943396226415,
+        "hot_dry_root": 0.015056603773584906,
+        "hot_flower": 0.021792452830188682,
+        "leaf": 0.004754716981132076,
+        "moderate_herb": 0.019018867924528303,
+        "moist_root": 0.008716981132075472
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.342,
+      "entropy": 2.49
+    },
+    {
+      "middle": "tchol",
+      "n_folios": 22,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.3333333333333333,
+        "OIL_RESIN": 0.3333333333333333,
+        "PRECISION": 0.19047619047619047,
+        "WATER_GENTLE": 0.14285714285714285
+      },
+      "material_class_posterior": {
+        "animal": 0.19047619047619047,
+        "cold_moist_flower": 0.07442857142857143,
+        "dangerous_herb": 0.020857142857142855,
+        "fruit": 0.04757142857142857,
+        "herb": 0.2876666666666666,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.018333333333333333,
+        "leaf": 0.004,
+        "moderate_herb": 0.016,
+        "moist_root": 0.007333333333333332
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.314,
+      "entropy": 2.496
+    },
+    {
+      "middle": "ols",
+      "n_folios": 10,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.3333333333333333,
+        "WATER_STANDARD": 0.2222222222222222,
+        "WATER_GENTLE": 0.2222222222222222,
+        "PRECISION": 0.2222222222222222
+      },
+      "material_class_posterior": {
+        "animal": 0.2222222222222222,
+        "cold_moist_flower": 0.11577777777777777,
+        "dangerous_herb": 0.03244444444444444,
+        "fruit": 0.074,
+        "herb": 0.19177777777777777,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.012222222222222221,
+        "leaf": 0.0026666666666666666,
+        "moderate_herb": 0.010666666666666666,
+        "moist_root": 0.004888888888888888
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.314,
+      "entropy": 2.579
+    },
+    {
+      "middle": "eom",
+      "n_folios": 11,
+      "product_type_distribution": {
+        "OIL_RESIN": 0.09090909090909091,
+        "WATER_GENTLE": 0.2727272727272727,
+        "WATER_STANDARD": 0.45454545454545453,
+        "PRECISION": 0.18181818181818182
+      },
+      "material_class_posterior": {
+        "animal": 0.18181818181818182,
+        "cold_moist_flower": 0.14209090909090907,
+        "dangerous_herb": 0.039818181818181815,
+        "fruit": 0.09081818181818181,
+        "herb": 0.3922727272727273,
+        "hot_dry_herb": 0.08572727272727272,
+        "hot_dry_root": 0.005181818181818182,
+        "hot_flower": 0.024999999999999998,
+        "leaf": 0.005454545454545454,
+        "moderate_herb": 0.021818181818181816,
+        "moist_root": 0.009999999999999998
+      },
+      "top_class": "herb",
+      "top_class_probability": 0.392,
+      "entropy": 2.58
+    },
+    {
+      "middle": "ho",
+      "n_folios": 14,
+      "product_type_distribution": {
+        "WATER_STANDARD": 0.2857142857142857,
+        "PRECISION": 0.21428571428571427,
+        "OIL_RESIN": 0.2857142857142857,
+        "WATER_GENTLE": 0.21428571428571427
+      },
+      "material_class_posterior": {
+        "animal": 0.21428571428571427,
+        "cold_moist_flower": 0.11164285714285714,
+        "dangerous_herb": 0.031285714285714285,
+        "fruit": 0.07135714285714286,
+        "herb": 0.24657142857142855,
+        "hot_dry_herb": 0.2694285714285714,
+        "hot_dry_root": 0.016285714285714285,
+        "hot_flower": 0.015714285714285712,
+        "leaf": 0.0034285714285714284,
+        "moderate_herb": 0.013714285714285714,
+        "moist_root": 0.006285714285714285
+      },
+      "top_class": "hot_dry_herb",
+      "top_class_probability": 0.269,
+      "entropy": 2.615
+    },
+    {
+      "middle": "tsho",
+      "n_folios": 7,
+      "product_type_distribution": {
+        "WATER_GENTLE": 0.42857142857142855,
+        "PRECISION": 0.2857142857142857,
+        "OIL_RESIN": 0.14285714285714285,
+        "WATER_STANDARD": 0.14285714285714285
+      },
+      "material_class_posterior": {
+        "animal": 0.2857142857142857,
+        "cold_moist_flower": 0.22328571428571428,
+        "dangerous_herb": 0.06257142857142857,
+        "fruit": 0.1427142857142857,
+        "herb": 0.12328571428571428,
+        "hot_dry_herb": 0.1347142857142857,
+        "hot_dry_root": 0.008142857142857143,
+        "hot_flower": 0.007857142857142856,
+        "leaf": 0.0017142857142857142,
+        "moderate_herb": 0.006857142857142857,
+        "moist_root": 0.0031428571428571426
+      },
+      "top_class": "animal",
+      "top_class_probability": 0.286,
+      "entropy": 2.615
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "folios": ["f70v2", "f70v1"],
+  "date": "2026-01-19",
+  "type": "double_foldout",
+  "quire": 9,
+  "note": "The famous 'nymph' or 'balneological' pages",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f70v2": {
+      "position": "left",
+      "tokens": 141,
+      "description": "5-ring diagram with nymphs in tubes and fish at center",
+      "layout": {
+        "outer_rings_continuous": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [22, 37, 45],
+          "total": 104,
+          "encoding": "Each ring on single line (continuous)",
+          "description": "3 outer rings with continuous text"
+        },
+        "inner_rings_nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [11, 25],
+          "lines": [10, 19],
+          "total": 36,
+          "encoding": "Multiple lines per ring (nymph interruptions)",
+          "description": "2 inner rings where nymph illustrations break text into segments"
+        },
+        "center": {
+          "placement": "C",
+          "tokens": 1,
+          "transcript_token": "otylal",
+          "user_observed": "2 tokens",
+          "description": "Center area with fish illustration"
+        },
+        "paragraph": {
+          "description": "NONE - no external text block"
+        }
+      },
+      "diagram_type": "multi_ring_nymph",
+      "illustration_notes": [
+        "Naked ladies in tubes (nymphs) between inner rings",
+        "Fish illustration at center",
+        "Nymphs interrupt text flow, causing S encoding"
+      ],
+      "visual_notes": [
+        "5 visible rings",
+        "Outer 3 rings: continuous text",
+        "Inner 2 rings: text segments between nymph figures",
+        "No paragraph text above or below"
+      ]
+    },
+
+    "f70v1": {
+      "position": "right",
+      "tokens": 86,
+      "description": "4-ring diagram with nymphs in tubes and goat at center",
+      "layout": {
+        "outer_rings_continuous": {
+          "placements": ["R1", "R2"],
+          "tokens": [23, 37],
+          "total": 60,
+          "encoding": "Each ring on single line (continuous)",
+          "description": "2 outer rings with continuous text"
+        },
+        "inner_rings_nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [11, 15],
+          "lines": [5, 10],
+          "total": 26,
+          "encoding": "Multiple lines per ring (nymph interruptions)",
+          "description": "2 inner rings where nymph illustrations break text into segments"
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "1 token",
+          "transcript_note": "No C placement in transcript - center token may be missing or encoded elsewhere",
+          "description": "Center area with goat illustration"
+        },
+        "paragraph": {
+          "description": "NONE - no external text block"
+        }
+      },
+      "diagram_type": "multi_ring_nymph",
+      "illustration_notes": [
+        "Naked ladies in tubes (nymphs) between inner rings",
+        "Goat illustration at center",
+        "Visually striking compared to other diagrams"
+      ],
+      "visual_notes": [
+        "4 visible rings",
+        "Outer 2 rings: continuous text",
+        "Inner 2 rings: text segments between nymph figures",
+        "No paragraph text above or below"
+      ]
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "R_vs_S_meaning": "On these folios, S does NOT mean spokes - it means rings interrupted by illustrations",
+    "nymph_effect": "Nymph figures break text flow, so transcriber used S (scattered) instead of R (ring)",
+    "numbered_placements": "R1/R2/R3 and S1/S2 distinguish ring layers",
+    "center_discrepancy": "User sees center tokens, but transcript has only 1 (f70v2) or 0 (f70v1)"
+  },
+
+  "user_observations": [
+    "Visually striking diagrams",
+    "f70v2: 5 rings, 2 tokens in center",
+    "f70v2: Naked ladies in tubes, fish in center",
+    "f70v1: 4 rings, 1 token in center",
+    "f70v1: Naked tube ladies, goat in center",
+    "No external blocks of text on either folio",
+    "Drawings stand out from other diagrams"
+  ],
+
+  "oddities": [
+    {
+      "type": "nymph_illustration_encoding",
+      "folios": ["f70v2", "f70v1"],
+      "description": "Nymph figures interrupt ring text, causing S encoding instead of R"
+    },
+    {
+      "type": "no_paragraph_text",
+      "folios": ["f70v2", "f70v1"],
+      "description": "No A-like text blocks - diagram only"
+    },
+    {
+      "type": "center_token_discrepancy",
+      "folios": ["f70v2", "f70v1"],
+      "description": "User observes center tokens but transcript shows fewer or none"
+    },
+    {
+      "type": "high_ring_count",
+      "folios": ["f70v2", "f70v1"],
+      "description": "5 and 4 rings respectively - more than typical diagrams"
+    },
+    {
+      "type": "distinctive_illustrations",
+      "folios": ["f70v2", "f70v1"],
+      "description": "Nymphs in tubes, fish, goat - unusual iconography"
+    }
+  ]
+}

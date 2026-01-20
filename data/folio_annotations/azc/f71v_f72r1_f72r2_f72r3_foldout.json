@@ -1,0 +1,99 @@
+{
+  "folios": ["f71v", "f72r1", "f72r2", "f72r3"],
+  "date": "2026-01-19",
+  "type": "quadruple_foldout",
+  "quire": 9,
+  "note": "Nymph pages - naked ladies in tubes, animals at center",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f71v": {
+      "position": "leftmost",
+      "tokens": 101,
+      "description": "5-ring nymph diagram",
+      "layout": {
+        "continuous_rings": {"placements": ["R1", "R2", "R3"], "tokens": [38, 30, 11], "total": 79},
+        "nymph_divided": {"placements": ["S1", "S2"], "tokens": [16, 6], "lines": [10, 5], "total": 22},
+        "center": {"placement": "(none)", "user_observed": "1 token", "illustration": "animal"}
+      },
+      "ring_count": 5
+    },
+
+    "f72r1": {
+      "position": "center-left",
+      "tokens": 105,
+      "description": "5-ring nymph diagram",
+      "layout": {
+        "continuous_rings": {"placements": ["R1", "R2", "R3"], "tokens": [42, 25, 14], "total": 81},
+        "nymph_divided": {"placements": ["S1", "S2"], "tokens": [18, 6], "lines": [10, 5], "total": 24},
+        "center": {"placement": "(none)", "user_observed": "1 token", "illustration": "animal"}
+      },
+      "ring_count": 5
+    },
+
+    "f72r2": {
+      "position": "center-right",
+      "tokens": 111,
+      "description": "6-ring nymph diagram with MAN AND WOMAN at center",
+      "layout": {
+        "continuous_rings": {"placements": ["R1", "R2", "R3"], "tokens": [38, 25, 16], "total": 79},
+        "nymph_divided": {"placements": ["S0", "S1", "S2"], "tokens": [5, 17, 10], "lines": [5, 15, 9], "total": 32},
+        "center": {"placement": "(none)", "user_observed": "1 token", "illustration": "MAN AND WOMAN - unique!"}
+      },
+      "ring_count": 6,
+      "unique_feature": "Man and woman illustration at center instead of animal"
+    },
+
+    "f72r3": {
+      "position": "rightmost",
+      "tokens": 169,
+      "description": "7-ring nymph diagram - largest in series",
+      "layout": {
+        "continuous_rings": {"placements": ["R1", "R2", "R3", "R4"], "tokens": [46, 39, 27, 10], "total": 122},
+        "nymph_divided": {"placements": ["S1", "S2", "S3"], "tokens": [21, 18, 8], "lines": [12, 11, 7], "total": 47},
+        "center": {"placement": "(none)", "user_observed": "1 token", "illustration": "animal"}
+      },
+      "ring_count": 7,
+      "note": "Most rings of any nymph page"
+    }
+  },
+
+  "summary": {
+    "pattern": "All follow standard nymph-page structure",
+    "center_tokens": "User sees 1 token each, none in transcript (consistent issue)",
+    "unique": "f72r2 has man and woman at center instead of animal"
+  },
+
+  "transcript_encoding_notes": {
+    "R_placements": "Continuous outer rings",
+    "S_placements": "Nymph-interrupted inner rings",
+    "no_C_placement": "Center tokens not captured in any of these folios"
+  },
+
+  "user_observations": [
+    "Similar to previous nymph pages",
+    "Ladies in tubes / naked ladies",
+    "Rings of tokens",
+    "1 token in center each",
+    "Animals at center (goats etc)",
+    "f72r2: MAN AND WOMAN at center - unique"
+  ],
+
+  "oddities": [
+    {
+      "type": "human_couple_center",
+      "folios": ["f72r2"],
+      "description": "Man and woman at center instead of animal - unique in the nymph series"
+    },
+    {
+      "type": "largest_nymph_diagram",
+      "folios": ["f72r3"],
+      "description": "7 total rings (4 continuous + 3 nymph-divided) - most complex"
+    },
+    {
+      "type": "center_tokens_missing",
+      "folios": ["f71v", "f72r1", "f72r2", "f72r3"],
+      "description": "User observes center tokens but no C placement in any transcript"
+    }
+  ]
+}

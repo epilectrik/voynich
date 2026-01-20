@@ -1,0 +1,91 @@
+{
+  "test": "REFERENCE_MATERIAL_CORRELATION",
+  "date": "2026-01-20",
+  "hypothesis": "Reference ratio correlates with registry-internal ratio",
+  "brunschwig": {
+    "processed": 197,
+    "reference": 312,
+    "by_product_type": {
+      "PRECISION": {
+        "processed": 7,
+        "reference": 2,
+        "total": 9,
+        "reference_ratio": 0.2222222222222222
+      },
+      "OIL_RESIN": {
+        "processed": 7,
+        "reference": 28,
+        "total": 35,
+        "reference_ratio": 0.8
+      },
+      "WATER_GENTLE": {
+        "processed": 14,
+        "reference": 34,
+        "total": 48,
+        "reference_ratio": 0.7083333333333334
+      },
+      "WATER_STANDARD": {
+        "processed": 169,
+        "reference": 248,
+        "total": 417,
+        "reference_ratio": 0.5947242206235012
+      }
+    }
+  },
+  "voynich": {
+    "by_product_type": {
+      "WATER_STANDARD": {
+        "n_folios": 48,
+        "mean_registry_ratio": 0.298907338367362,
+        "min": 0.14285714285714285,
+        "max": 0.6206896551724138
+      },
+      "PRECISION": {
+        "n_folios": 26,
+        "mean_registry_ratio": 0.3091896613814115,
+        "min": 0.1282051282051282,
+        "max": 0.631578947368421
+      },
+      "OIL_RESIN": {
+        "n_folios": 25,
+        "mean_registry_ratio": 0.369072260370619,
+        "min": 0.19047619047619047,
+        "max": 0.5666666666666667
+      },
+      "WATER_GENTLE": {
+        "n_folios": 11,
+        "mean_registry_ratio": 0.3276441590447821,
+        "min": 0.08571428571428572,
+        "max": 0.5517241379310345
+      }
+    }
+  },
+  "correlation": {
+    "r": 0.6495068790734762,
+    "p_approx": 0.5,
+    "n": 4,
+    "data_points": [
+      {
+        "type": "OIL_RESIN",
+        "ref_ratio": 0.8,
+        "reg_ratio": 0.369072260370619
+      },
+      {
+        "type": "PRECISION",
+        "ref_ratio": 0.2222222222222222,
+        "reg_ratio": 0.3091896613814115
+      },
+      {
+        "type": "WATER_GENTLE",
+        "ref_ratio": 0.7083333333333334,
+        "reg_ratio": 0.3276441590447821
+      },
+      {
+        "type": "WATER_STANDARD",
+        "ref_ratio": 0.5947242206235012,
+        "reg_ratio": 0.298907338367362
+      }
+    ]
+  },
+  "interpretation": "ORTHOGONAL - no relationship"
+}

@@ -1,0 +1,2596 @@
+{
+  "metadata": {
+    "generated": "2026-01-19",
+    "source": "phases/TRANSCRIPT_AUDIT/generate_azc_folio_structure.py",
+    "data_source": "H-track only from interlinear_full_words.txt",
+    "description": "Comprehensive documentation of AZC folio text regions and linguistic character"
+  },
+  "summary": {
+    "total_azc_folios": 29,
+    "total_azc_tokens": 3299,
+    "placement_totals": {
+      "ring_series": 1382,
+      "circle_series": 635,
+      "star_series": 505,
+      "paragraph": 398,
+      "labels": 68,
+      "other": 311
+    },
+    "p_text_analysis": {
+      "total_p_tokens": 398,
+      "vocabulary_size": 300,
+      "linguistic_character": "A-like",
+      "prefix_cosine_similarity": {
+        "vs_currier_a": 0.9883,
+        "vs_currier_b": 0.9639,
+        "vs_azc_rcs": 0.924
+      },
+      "vocabulary_overlap": {
+        "in_currier_a_pct": 60.0,
+        "in_currier_b_pct": 66.0,
+        "in_azc_rcs_pct": 42.3
+      },
+      "note": "P-placement text is linguistically MORE SIMILAR to Currier A than AZC diagram text"
+    },
+    "folios_with_p_text": [
+      "f65v",
+      "f67r1",
+      "f67r2",
+      "f68r1",
+      "f68r2",
+      "f68v2",
+      "f68v3",
+      "f69r",
+      "f70r2"
+    ],
+    "folios_with_labels": [
+      "f65r",
+      "f67r2",
+      "f67v2",
+      "f68r2",
+      "f68v3",
+      "f69v"
+    ]
+  },
+  "foldouts": {
+    "f69v_f70r1_f70r2": {
+      "description": "Triple foldout with 3 circular diagrams",
+      "folios": [
+        "f69v",
+        "f70r1",
+        "f70r2"
+      ],
+      "structure": {
+        "left": "f69v - circular diagram",
+        "center": "f70r1 - circular diagram",
+        "right": "f70r2 - circular diagram + separate text block"
+      },
+      "notable": "f70r2 has a separate paragraph text block (P-placement) on the far right, distinct from circular diagrams",
+      "p_text_character": "A-like (68% Currier A vocabulary overlap vs 57% AZC R/C/S)",
+      "token_counts": {
+        "f69v": 137,
+        "f70r1": 112,
+        "f70r2": 248
+      },
+      "f70r2_p_text": {
+        "token_count": 100,
+        "vocabulary_size": 75,
+        "linguistic_character": "A-like",
+        "vocabulary_overlap": {
+          "currier_a_pct": 68.0,
+          "currier_b_pct": 70.7,
+          "azc_rcs_pct": 57.3
+        },
+        "prefix_similarity": {
+          "currier_a": 0.972,
+          "currier_b": 0.925,
+          "azc_rcs": 0.8902
+        },
+        "unique_words": [
+          "chchetal",
+          "chly",
+          "chotals",
+          "ckhhey",
+          "dalaly",
+          "ddl",
+          "dyshol",
+          "oparam",
+          "shep",
+          "sheteal",
+          "shkal",
+          "shocthhy",
+          "shshy",
+          "ykemy",
+          "yokal",
+          "ytaiir",
+          "ytas"
+        ],
+        "sample_words": [
+          "aiir",
+          "al",
+          "alal",
+          "aloees",
+          "ar",
+          "aram",
+          "arl",
+          "ary",
+          "chal",
+          "cham",
+          "chchetal",
+          "chcthhy",
+          "chcthy",
+          "chdy",
+          "cheeod"
+        ]
+      }
+    }
+  },
+  "per_folio": {
+    "f57v": {
+      "folio": "f57v",
+      "total_tokens": 194,
+      "total_vocabulary": 85,
+      "placement_summary": {
+        "ring": 184,
+        "circle": 0,
+        "star": 0,
+        "paragraph": 0,
+        "label": 0,
+        "other": 10
+      },
+      "placement_detail": {
+        "R2": 69,
+        "R1": 51,
+        "R4": 33,
+        "R3": 31,
+        "Y": 5,
+        "X": 4,
+        "T": 1
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 184,
+          "vocabulary_size": 75,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 60.0,
+            "currier_b_pct": 65.3,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8335,
+            "currier_b": 0.8346,
+            "azc_rcs": 0.8415
+          },
+          "unique_words": [],
+          "sample_words": [
+            "*",
+            "*o",
+            "*s",
+            "a",
+            "aiin",
+            "ar",
+            "aros",
+            "c",
+            "chedaiin",
+            "cs",
+            "d",
+            "daiin",
+            "daiis",
+            "dal",
+            "daram"
+          ]
+        },
+        "other": {
+          "token_count": 10,
+          "vocabulary_size": 10,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 20.0,
+            "currier_b_pct": 20.0,
+            "azc_rcs_pct": 10.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.7766,
+            "currier_b": 0.8029,
+            "azc_rcs": 0.9134
+          },
+          "unique_words": [
+            "ackaldy",
+            "ocfhor",
+            "olkchdal",
+            "oparairdly",
+            "oralaror",
+            "otardaly",
+            "otodarod"
+          ],
+          "sample_words": [
+            "ackaldy",
+            "dairol",
+            "ocfhor",
+            "okchoy",
+            "okear",
+            "olkchdal",
+            "oparairdly",
+            "oralaror",
+            "otardaly",
+            "otodarod"
+          ]
+        }
+      }
+    },
+    "f65r": {
+      "folio": "f65r",
+      "total_tokens": 3,
+      "total_vocabulary": 3,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 0,
+        "star": 0,
+        "paragraph": 0,
+        "label": 3,
+        "other": 0
+      },
+      "placement_detail": {
+        "L": 3
+      },
+      "regions": {
+        "labels": {
+          "token_count": 3,
+          "vocabulary_size": 3,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 66.7,
+            "currier_b_pct": 100.0,
+            "azc_rcs_pct": 33.3
+          },
+          "prefix_similarity": {
+            "currier_a": 0.1914,
+            "currier_b": 0.1733,
+            "azc_rcs": 0.3304
+          },
+          "unique_words": [],
+          "sample_words": [
+            "alam",
+            "dam",
+            "otaim"
+          ]
+        }
+      }
+    },
+    "f65v": {
+      "folio": "f65v",
+      "total_tokens": 45,
+      "total_vocabulary": 43,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 0,
+        "star": 0,
+        "paragraph": 45,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "P": 45
+      },
+      "regions": {
+        "paragraph_p": {
+          "token_count": 45,
+          "vocabulary_size": 43,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 58.1,
+            "currier_b_pct": 69.8,
+            "azc_rcs_pct": 44.2
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9609,
+            "currier_b": 0.953,
+            "azc_rcs": 0.8907
+          },
+          "unique_words": [
+            "cheot",
+            "cheoteey",
+            "chpdy",
+            "dchepain",
+            "eas",
+            "fchecfhy",
+            "qokd",
+            "qokesd",
+            "qop*",
+            "shckhh",
+            "ykchhdy",
+            "yteo"
+          ],
+          "sample_words": [
+            "air",
+            "chedy",
+            "cheody",
+            "cheot",
+            "cheoteey",
+            "chokeody",
+            "choky",
+            "chpdy",
+            "cphy",
+            "daiin",
+            "dalam",
+            "dchepain",
+            "dshedy",
+            "dy",
+            "eas"
+          ]
+        }
+      }
+    },
+    "f67r1": {
+      "folio": "f67r1",
+      "total_tokens": 155,
+      "total_vocabulary": 131,
+      "placement_summary": {
+        "ring": 102,
+        "circle": 0,
+        "star": 17,
+        "paragraph": 36,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R": 102,
+        "P": 36,
+        "S": 17
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 119,
+          "vocabulary_size": 102,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 52.0,
+            "currier_b_pct": 53.9,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9234,
+            "currier_b": 0.878,
+            "azc_rcs": 0.9572
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "ainy",
+            "al",
+            "aldy",
+            "ar",
+            "archeor",
+            "ary",
+            "asa",
+            "chdar",
+            "chedar",
+            "cheeky",
+            "chekchy",
+            "cheockhey",
+            "cheol",
+            "cheor"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 36,
+          "vocabulary_size": 34,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 70.6,
+            "currier_b_pct": 85.3,
+            "azc_rcs_pct": 50.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9485,
+            "currier_b": 0.9153,
+            "azc_rcs": 0.9121
+          },
+          "unique_words": [
+            "epairody",
+            "oeteody",
+            "okesoe",
+            "qoekshg",
+            "yteeoey"
+          ],
+          "sample_words": [
+            "aiin",
+            "air",
+            "aram",
+            "cheey",
+            "chekeey",
+            "cheodaiin",
+            "cheos",
+            "cthey",
+            "daiir",
+            "dair",
+            "dalaiin",
+            "dam",
+            "epaiin",
+            "epairody",
+            "g"
+          ]
+        }
+      }
+    },
+    "f67r2": {
+      "folio": "f67r2",
+      "total_tokens": 176,
+      "total_vocabulary": 154,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 87,
+        "star": 0,
+        "paragraph": 33,
+        "label": 9,
+        "other": 47
+      },
+      "placement_detail": {
+        "C": 87,
+        "P": 33,
+        "Y": 25,
+        "X": 13,
+        "L": 9,
+        "Z": 9
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 87,
+          "vocabulary_size": 75,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 53.3,
+            "currier_b_pct": 58.7,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8864,
+            "currier_b": 0.8712,
+            "azc_rcs": 0.8783
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "ain",
+            "ais",
+            "aldy",
+            "aloiin",
+            "am",
+            "amy",
+            "ar",
+            "chedaiin",
+            "chekody",
+            "chocfhy",
+            "choeey",
+            "chol",
+            "chos",
+            "dacsa*ry*"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 33,
+          "vocabulary_size": 31,
+          "linguistic_character": "B-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 64.5,
+            "currier_b_pct": 67.7,
+            "azc_rcs_pct": 45.2
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8822,
+            "currier_b": 0.9116,
+            "azc_rcs": 0.865
+          },
+          "unique_words": [
+            "oirsg",
+            "qeykeey",
+            "qkoy",
+            "qokoaiin",
+            "syshees",
+            "ydoly",
+            "ytalchos"
+          ],
+          "sample_words": [
+            "aiin",
+            "aldaiin",
+            "ar",
+            "cheos",
+            "chos",
+            "dar",
+            "oaiin",
+            "odaiin",
+            "oeeos",
+            "oirsg",
+            "okalar",
+            "okeeody",
+            "okey",
+            "ol",
+            "oly"
+          ]
+        },
+        "labels": {
+          "token_count": 9,
+          "vocabulary_size": 9,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 33.3,
+            "currier_b_pct": 33.3,
+            "azc_rcs_pct": 22.2
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8104,
+            "currier_b": 0.8203,
+            "azc_rcs": 0.8499
+          },
+          "unique_words": [
+            "dfar",
+            "dylchsody",
+            "oeoldan",
+            "opcholdy",
+            "yfain",
+            "ytoaiin"
+          ],
+          "sample_words": [
+            "am",
+            "dfar",
+            "dylchsody",
+            "oeoldan",
+            "okain",
+            "okal",
+            "opcholdy",
+            "yfain",
+            "ytoaiin"
+          ]
+        },
+        "other": {
+          "token_count": 47,
+          "vocabulary_size": 46,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 39.1,
+            "currier_b_pct": 41.3,
+            "azc_rcs_pct": 26.1
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9073,
+            "currier_b": 0.9038,
+            "azc_rcs": 0.9167
+          },
+          "unique_words": "21 words",
+          "sample_words": [
+            "*ykor",
+            "air",
+            "aram",
+            "chkchdar",
+            "chky",
+            "chodalg",
+            "chy",
+            "chykchr",
+            "cpheey",
+            "daiin",
+            "dchetdy",
+            "dchodar",
+            "eesydy",
+            "lkshykchy",
+            "octhys"
+          ]
+        }
+      }
+    },
+    "f67v1": {
+      "folio": "f67v1",
+      "total_tokens": 71,
+      "total_vocabulary": 69,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 0,
+        "star": 0,
+        "paragraph": 0,
+        "label": 0,
+        "other": 71
+      },
+      "placement_detail": {
+        "Y": 56,
+        "X": 15
+      },
+      "regions": {
+        "other": {
+          "token_count": 71,
+          "vocabulary_size": 69,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 53.6,
+            "currier_b_pct": 53.6,
+            "azc_rcs_pct": 30.4
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9529,
+            "currier_b": 0.94,
+            "azc_rcs": 0.9518
+          },
+          "unique_words": "25 words",
+          "sample_words": [
+            "*eoky",
+            "aiiny",
+            "aral",
+            "aroka",
+            "ary",
+            "che",
+            "chedaly",
+            "cheey",
+            "cheo",
+            "cheockhy",
+            "cheody",
+            "chockhdy",
+            "chokeear",
+            "chso",
+            "chy"
+          ]
+        }
+      }
+    },
+    "f67v2": {
+      "folio": "f67v2",
+      "total_tokens": 61,
+      "total_vocabulary": 58,
+      "placement_summary": {
+        "ring": 10,
+        "circle": 36,
+        "star": 4,
+        "paragraph": 0,
+        "label": 9,
+        "other": 2
+      },
+      "placement_detail": {
+        "C": 36,
+        "R": 10,
+        "L": 9,
+        "S": 4,
+        "F": 2
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 50,
+          "vocabulary_size": 47,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 55.3,
+            "currier_b_pct": 51.1,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8725,
+            "currier_b": 0.8611,
+            "azc_rcs": 0.8818
+          },
+          "unique_words": [],
+          "sample_words": [
+            "airar",
+            "am",
+            "ar",
+            "cfhey",
+            "char",
+            "chol",
+            "daiin",
+            "daim",
+            "dalam",
+            "daly",
+            "dam",
+            "eain",
+            "keoy",
+            "koaiin",
+            "les"
+          ]
+        },
+        "labels": {
+          "token_count": 9,
+          "vocabulary_size": 9,
+          "linguistic_character": "B-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 0.0,
+            "currier_b_pct": 0.0,
+            "azc_rcs_pct": 0.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8119,
+            "currier_b": 0.848,
+            "azc_rcs": 0.8429
+          },
+          "unique_words": [
+            "dcsesor",
+            "ekais",
+            "oafoaly",
+            "ocfhhy",
+            "ochepalain",
+            "ocs",
+            "okolarm",
+            "okydseog",
+            "qokoaiis"
+          ],
+          "sample_words": [
+            "dcsesor",
+            "ekais",
+            "oafoaly",
+            "ocfhhy",
+            "ochepalain",
+            "ocs",
+            "okolarm",
+            "okydseog",
+            "qokoaiis"
+          ]
+        },
+        "other": {
+          "token_count": 2,
+          "vocabulary_size": 2,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 0.0,
+            "currier_b_pct": 0.0,
+            "azc_rcs_pct": 0.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.1609,
+            "currier_b": 0.2173,
+            "azc_rcs": 0.4467
+          },
+          "unique_words": [
+            "okchosam",
+            "otararain"
+          ],
+          "sample_words": [
+            "okchosam",
+            "otararain"
+          ]
+        }
+      }
+    },
+    "f68r1": {
+      "folio": "f68r1",
+      "total_tokens": 65,
+      "total_vocabulary": 64,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 0,
+        "star": 29,
+        "paragraph": 28,
+        "label": 0,
+        "other": 8
+      },
+      "placement_detail": {
+        "S": 29,
+        "P": 28,
+        "Y": 5,
+        "X": 3
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 29,
+          "vocabulary_size": 29,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 44.8,
+            "currier_b_pct": 41.4,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.7305,
+            "currier_b": 0.7703,
+            "azc_rcs": 0.9211
+          },
+          "unique_words": [],
+          "sample_words": [
+            "chocphy",
+            "cphocthy",
+            "dolchedy",
+            "ockhy",
+            "ocphy",
+            "octhey",
+            "odchecthy",
+            "ofcheor",
+            "oiinar",
+            "okeeodal",
+            "okeor",
+            "okoaly",
+            "okodaly",
+            "okoldy",
+            "okshor"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 28,
+          "vocabulary_size": 28,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 60.7,
+            "currier_b_pct": 71.4,
+            "azc_rcs_pct": 46.4
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9063,
+            "currier_b": 0.8642,
+            "azc_rcs": 0.855
+          },
+          "unique_words": [
+            "cckheor",
+            "cheokorchey",
+            "choctheeey",
+            "okchoal",
+            "opcheeol",
+            "otchl",
+            "tochso"
+          ],
+          "sample_words": [
+            "cckheor",
+            "cheeteey",
+            "cheey",
+            "cheokorchey",
+            "cheor",
+            "choctheeey",
+            "chod",
+            "chokal",
+            "choteey",
+            "chpor",
+            "chteey",
+            "cphol",
+            "daram",
+            "dchor",
+            "okaiin"
+          ]
+        },
+        "other": {
+          "token_count": 8,
+          "vocabulary_size": 8,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 50.0,
+            "currier_b_pct": 62.5,
+            "azc_rcs_pct": 62.5
+          },
+          "prefix_similarity": {
+            "currier_a": 0.6778,
+            "currier_b": 0.6696,
+            "azc_rcs": 0.7242
+          },
+          "unique_words": [
+            "chkchykoly",
+            "q*aear"
+          ],
+          "sample_words": [
+            "chkchykoly",
+            "dary",
+            "okady",
+            "okardy",
+            "oky",
+            "oldy",
+            "q*aear",
+            "yky"
+          ]
+        }
+      }
+    },
+    "f68r2": {
+      "folio": "f68r2",
+      "total_tokens": 81,
+      "total_vocabulary": 76,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 0,
+        "star": 25,
+        "paragraph": 37,
+        "label": 11,
+        "other": 8
+      },
+      "placement_detail": {
+        "P": 37,
+        "S": 25,
+        "L": 11,
+        "U": 8
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 25,
+          "vocabulary_size": 25,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 32.0,
+            "currier_b_pct": 36.0,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8983,
+            "currier_b": 0.906,
+            "azc_rcs": 0.985
+          },
+          "unique_words": [],
+          "sample_words": [
+            "cheorol",
+            "chodar",
+            "chol",
+            "cholar",
+            "dcheoldy",
+            "dchol",
+            "etocho",
+            "ochory",
+            "odaiin",
+            "odair",
+            "ofchsody",
+            "okcheody",
+            "okchor",
+            "okeechor",
+            "olcheesey"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 37,
+          "vocabulary_size": 36,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 58.3,
+            "currier_b_pct": 50.0,
+            "azc_rcs_pct": 38.9
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9757,
+            "currier_b": 0.9613,
+            "azc_rcs": 0.928
+          },
+          "unique_words": [
+            "dcholal",
+            "dchyky",
+            "dokechy",
+            "kcheoey",
+            "oeecthy",
+            "okeeoda",
+            "oriid",
+            "otcheoly",
+            "qoeeckhy",
+            "qokchdar",
+            "rcheodal"
+          ],
+          "sample_words": [
+            "cheoal",
+            "cheody",
+            "cheor",
+            "chesy",
+            "chodchy",
+            "chokeey",
+            "chor",
+            "chykchy",
+            "dar",
+            "dcholal",
+            "dchy",
+            "dchyky",
+            "dokechy",
+            "kcheoey",
+            "oeecthy"
+          ]
+        },
+        "labels": {
+          "token_count": 11,
+          "vocabulary_size": 11,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 90.9,
+            "currier_b_pct": 54.5,
+            "azc_rcs_pct": 63.6
+          },
+          "prefix_similarity": {
+            "currier_a": 0.715,
+            "currier_b": 0.724,
+            "azc_rcs": 0.7968
+          },
+          "unique_words": [
+            "oeeeo"
+          ],
+          "sample_words": [
+            "cheo",
+            "ekey",
+            "koiin",
+            "o",
+            "oeeeo",
+            "okchol",
+            "okeo",
+            "okoaiin",
+            "okol",
+            "oky",
+            "r"
+          ]
+        },
+        "other": {
+          "token_count": 8,
+          "vocabulary_size": 8,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 50.0,
+            "currier_b_pct": 50.0,
+            "azc_rcs_pct": 50.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.2451,
+            "currier_b": 0.2937,
+            "azc_rcs": 0.3181
+          },
+          "unique_words": [
+            "okaisy",
+            "okemy",
+            "qo*ol",
+            "qokool"
+          ],
+          "sample_words": [
+            "cheo",
+            "okaisy",
+            "okemy",
+            "okeo",
+            "oko",
+            "okor",
+            "qo*ol",
+            "qokool"
+          ]
+        }
+      }
+    },
+    "f68r3": {
+      "folio": "f68r3",
+      "total_tokens": 102,
+      "total_vocabulary": 92,
+      "placement_summary": {
+        "ring": 38,
+        "circle": 48,
+        "star": 0,
+        "paragraph": 0,
+        "label": 0,
+        "other": 16
+      },
+      "placement_detail": {
+        "C1": 38,
+        "R": 38,
+        "X": 16,
+        "C2": 10
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 86,
+          "vocabulary_size": 76,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 53.9,
+            "currier_b_pct": 60.5,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9249,
+            "currier_b": 0.9274,
+            "azc_rcs": 0.9635
+          },
+          "unique_words": [],
+          "sample_words": [
+            "al",
+            "chcphy",
+            "chdchol",
+            "chedy",
+            "cheockhedchy",
+            "cheody",
+            "cheol",
+            "cheor",
+            "cheoteeo",
+            "chetechy",
+            "cho",
+            "chodal",
+            "chok",
+            "chokchy",
+            "chokol"
+          ]
+        },
+        "other": {
+          "token_count": 16,
+          "vocabulary_size": 16,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 75.0,
+            "currier_b_pct": 56.2,
+            "azc_rcs_pct": 43.8
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8726,
+            "currier_b": 0.8504,
+            "azc_rcs": 0.9419
+          },
+          "unique_words": [
+            "darall",
+            "doaro",
+            "oalcheol",
+            "otydm"
+          ],
+          "sample_words": [
+            "a",
+            "chdy",
+            "cphy",
+            "cthyd",
+            "dal",
+            "darall",
+            "dchol",
+            "doaro",
+            "o",
+            "oalcheol",
+            "okchoda",
+            "okolchy",
+            "okos",
+            "otory",
+            "otydm"
+          ]
+        }
+      }
+    },
+    "f68v1": {
+      "folio": "f68v1",
+      "total_tokens": 96,
+      "total_vocabulary": 80,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 76,
+        "star": 0,
+        "paragraph": 0,
+        "label": 0,
+        "other": 20
+      },
+      "placement_detail": {
+        "C": 76,
+        "X": 20
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 76,
+          "vocabulary_size": 65,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 61.5,
+            "currier_b_pct": 66.2,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9573,
+            "currier_b": 0.9245,
+            "azc_rcs": 0.9535
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "aiir",
+            "aly",
+            "chear",
+            "cheekchey",
+            "cheo",
+            "cheodaiir",
+            "cheoekeey",
+            "chesokeeoteody",
+            "chey",
+            "chkeody",
+            "chkorchy",
+            "cho",
+            "choikhy",
+            "chol"
+          ]
+        },
+        "other": {
+          "token_count": 20,
+          "vocabulary_size": 20,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 60.0,
+            "currier_b_pct": 60.0,
+            "azc_rcs_pct": 55.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8514,
+            "currier_b": 0.8291,
+            "azc_rcs": 0.9308
+          },
+          "unique_words": [
+            "araly",
+            "arolsas",
+            "chcs",
+            "chekeys",
+            "cpchety",
+            "ek",
+            "okechdaral",
+            "oteodain"
+          ],
+          "sample_words": [
+            "araly",
+            "arolsas",
+            "ch",
+            "chcs",
+            "chekeys",
+            "cpchety",
+            "dair",
+            "dar",
+            "dy",
+            "ek",
+            "okechdaral",
+            "okeey",
+            "otaly",
+            "oteeos",
+            "oteodain"
+          ]
+        }
+      }
+    },
+    "f68v2": {
+      "folio": "f68v2",
+      "total_tokens": 100,
+      "total_vocabulary": 94,
+      "placement_summary": {
+        "ring": 17,
+        "circle": 32,
+        "star": 8,
+        "paragraph": 43,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "P": 43,
+        "C": 32,
+        "R": 17,
+        "S": 8
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 57,
+          "vocabulary_size": 54,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 48.1,
+            "currier_b_pct": 53.7,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.918,
+            "currier_b": 0.8865,
+            "azc_rcs": 0.9677
+          },
+          "unique_words": [],
+          "sample_words": [
+            "adairchdy",
+            "aiin",
+            "alamchy",
+            "ar",
+            "c*eectheey",
+            "chedady",
+            "cheky",
+            "chetal",
+            "cheteedy",
+            "chetey",
+            "chety",
+            "chey",
+            "chkey",
+            "chokeeey",
+            "choteey"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 43,
+          "vocabulary_size": 41,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 73.2,
+            "currier_b_pct": 82.9,
+            "azc_rcs_pct": 51.2
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8618,
+            "currier_b": 0.8562,
+            "azc_rcs": 0.7784
+          },
+          "unique_words": [
+            "oalchdm",
+            "scheos",
+            "seekey",
+            "shteody",
+            "ycheety"
+          ],
+          "sample_words": [
+            "alchey",
+            "chekody",
+            "cheo",
+            "chody",
+            "chol",
+            "cthy",
+            "dal",
+            "daldy",
+            "dam",
+            "dchaiin",
+            "dcheedy",
+            "dy",
+            "keol",
+            "oalchdm",
+            "okeey"
+          ]
+        }
+      }
+    },
+    "f68v3": {
+      "folio": "f68v3",
+      "total_tokens": 159,
+      "total_vocabulary": 136,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 0,
+        "star": 45,
+        "paragraph": 40,
+        "label": 2,
+        "other": 72
+      },
+      "placement_detail": {
+        "O": 49,
+        "S": 45,
+        "P": 40,
+        "I": 12,
+        "B": 11,
+        "L": 2
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 45,
+          "vocabulary_size": 44,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 59.1,
+            "currier_b_pct": 61.4,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8433,
+            "currier_b": 0.8463,
+            "azc_rcs": 0.8555
+          },
+          "unique_words": [],
+          "sample_words": [
+            "al",
+            "chckhy",
+            "chdail",
+            "chedy",
+            "cheekey",
+            "chekchy",
+            "cheoda",
+            "cheoky",
+            "chodo",
+            "chok",
+            "dkeeeg",
+            "dy",
+            "eeody",
+            "keody",
+            "key"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 40,
+          "vocabulary_size": 37,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 67.6,
+            "currier_b_pct": 67.6,
+            "azc_rcs_pct": 45.9
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9063,
+            "currier_b": 0.8542,
+            "azc_rcs": 0.8022
+          },
+          "unique_words": [
+            "cheeetchol",
+            "chetshedy",
+            "dasaiin",
+            "kcheoly",
+            "qockhhy",
+            "qooto",
+            "scseykcheol",
+            "sholschey"
+          ],
+          "sample_words": [
+            "aiir",
+            "chal",
+            "cheeetchol",
+            "cheky",
+            "cheoty",
+            "chepchy",
+            "chetshedy",
+            "chokar",
+            "chor",
+            "choteol",
+            "chydy",
+            "daiidy",
+            "daiin",
+            "dasaiin",
+            "dcheey"
+          ]
+        },
+        "labels": {
+          "token_count": 2,
+          "vocabulary_size": 2,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 0.0,
+            "currier_b_pct": 0.0,
+            "azc_rcs_pct": 0.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.6418,
+            "currier_b": 0.6797,
+            "azc_rcs": 0.8298
+          },
+          "unique_words": [
+            "opcholdg",
+            "otodol"
+          ],
+          "sample_words": [
+            "opcholdg",
+            "otodol"
+          ]
+        },
+        "other": {
+          "token_count": 72,
+          "vocabulary_size": 64,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 64.1,
+            "currier_b_pct": 65.6,
+            "azc_rcs_pct": 54.7
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9329,
+            "currier_b": 0.9235,
+            "azc_rcs": 0.9698
+          },
+          "unique_words": [
+            "chedas",
+            "choekchchy",
+            "choekey",
+            "chshek",
+            "ctheepchy",
+            "doar",
+            "kodar",
+            "okeoeeey",
+            "okosy",
+            "olekeey",
+            "olkeeoly",
+            "olsey",
+            "orkeeey",
+            "oteeosol",
+            "otololees",
+            "qoeeokaiin",
+            "qokchshy",
+            "ykeoees",
+            "ykes"
+          ],
+          "sample_words": [
+            "chedas",
+            "cheky",
+            "cheo",
+            "cheol",
+            "chey",
+            "chody",
+            "choekchchy",
+            "choekey",
+            "choty",
+            "chshek",
+            "ckhhy",
+            "ctheepchy",
+            "daiin",
+            "dais",
+            "dal"
+          ]
+        }
+      }
+    },
+    "f69r": {
+      "folio": "f69r",
+      "total_tokens": 164,
+      "total_vocabulary": 128,
+      "placement_summary": {
+        "ring": 68,
+        "circle": 43,
+        "star": 11,
+        "paragraph": 36,
+        "label": 0,
+        "other": 6
+      },
+      "placement_detail": {
+        "R": 68,
+        "C": 43,
+        "P": 36,
+        "S": 11,
+        "W": 6
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 122,
+          "vocabulary_size": 94,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 61.7,
+            "currier_b_pct": 62.8,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9233,
+            "currier_b": 0.8857,
+            "azc_rcs": 0.9408
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "aiir",
+            "air",
+            "al",
+            "alg",
+            "aloly",
+            "aly",
+            "ar",
+            "archol",
+            "ary",
+            "chdy",
+            "cheg",
+            "chekey",
+            "cheody",
+            "cheor"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 36,
+          "vocabulary_size": 33,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 75.8,
+            "currier_b_pct": 78.8,
+            "azc_rcs_pct": 72.7
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9022,
+            "currier_b": 0.887,
+            "azc_rcs": 0.8863
+          },
+          "unique_words": [
+            "cheotam",
+            "choetey",
+            "ctar",
+            "qokeeashdy",
+            "sheosaiin",
+            "shkechy",
+            "tcheeos"
+          ],
+          "sample_words": [
+            "cham",
+            "cheotam",
+            "chey",
+            "chkal",
+            "choetey",
+            "chy",
+            "ctar",
+            "cthy",
+            "daiin",
+            "okaiin",
+            "okal",
+            "okchor",
+            "ol",
+            "opaiin",
+            "ot"
+          ]
+        },
+        "other": {
+          "token_count": 6,
+          "vocabulary_size": 6,
+          "linguistic_character": "B-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 83.3,
+            "currier_b_pct": 83.3,
+            "azc_rcs_pct": 83.3
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8067,
+            "currier_b": 0.8089,
+            "azc_rcs": 0.8079
+          },
+          "unique_words": [
+            "em"
+          ],
+          "sample_words": [
+            "d",
+            "em",
+            "l",
+            "o",
+            "s",
+            "y"
+          ]
+        }
+      }
+    },
+    "f69v": {
+      "folio": "f69v",
+      "total_tokens": 137,
+      "total_vocabulary": 112,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 103,
+        "star": 0,
+        "paragraph": 0,
+        "label": 34,
+        "other": 0
+      },
+      "placement_detail": {
+        "C": 103,
+        "L": 34
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 103,
+          "vocabulary_size": 85,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 64.7,
+            "currier_b_pct": 70.6,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.946,
+            "currier_b": 0.9067,
+            "azc_rcs": 0.9615
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "aiiny",
+            "air",
+            "airchy",
+            "ar",
+            "char",
+            "chda",
+            "chdy",
+            "chear",
+            "cheody",
+            "cheol",
+            "cheos",
+            "cheoy",
+            "chese",
+            "chetesescher"
+          ]
+        },
+        "labels": {
+          "token_count": 34,
+          "vocabulary_size": 30,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 70.0,
+            "currier_b_pct": 70.0,
+            "azc_rcs_pct": 73.3
+          },
+          "prefix_similarity": {
+            "currier_a": 0.6369,
+            "currier_b": 0.6721,
+            "azc_rcs": 0.7976
+          },
+          "unique_words": [
+            "ochoyk",
+            "oeesa",
+            "okodchy",
+            "sarydy",
+            "ykeydy",
+            "ytary"
+          ],
+          "sample_words": [
+            "alys",
+            "d",
+            "dy",
+            "oar",
+            "ochoyk",
+            "oeesa",
+            "okchey",
+            "okchy",
+            "okeo",
+            "okeod",
+            "okeody",
+            "okeol",
+            "okey",
+            "okodchy",
+            "okody"
+          ]
+        }
+      }
+    },
+    "f70r1": {
+      "folio": "f70r1",
+      "total_tokens": 112,
+      "total_vocabulary": 93,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 71,
+        "star": 0,
+        "paragraph": 0,
+        "label": 0,
+        "other": 41
+      },
+      "placement_detail": {
+        "C": 71,
+        "Y": 20,
+        "I": 15,
+        "X": 6
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 71,
+          "vocabulary_size": 62,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 67.7,
+            "currier_b_pct": 69.4,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8606,
+            "currier_b": 0.8348,
+            "azc_rcs": 0.9288
+          },
+          "unique_words": [],
+          "sample_words": [
+            "************ooooooooolar*****s**r**",
+            "air",
+            "al",
+            "alairdy",
+            "aly",
+            "ar",
+            "chear",
+            "chedaiin",
+            "cheo",
+            "chety",
+            "chkal",
+            "chodalar",
+            "chody",
+            "choekeeos",
+            "choekeey"
+          ]
+        },
+        "other": {
+          "token_count": 41,
+          "vocabulary_size": 39,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 71.8,
+            "currier_b_pct": 74.4,
+            "azc_rcs_pct": 64.1
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8354,
+            "currier_b": 0.8428,
+            "azc_rcs": 0.9544
+          },
+          "unique_words": [
+            "okosd",
+            "orolgy",
+            "otechg",
+            "oteodshey",
+            "saimchy",
+            "yfcheodly",
+            "ykeal",
+            "ypolol",
+            "ytcheas"
+          ],
+          "sample_words": [
+            "al",
+            "alal",
+            "aly",
+            "ar",
+            "ary",
+            "ched",
+            "chodal",
+            "dal",
+            "dam",
+            "dar",
+            "dchal",
+            "dy",
+            "keody",
+            "okchy",
+            "okeody"
+          ]
+        }
+      }
+    },
+    "f70r2": {
+      "folio": "f70r2",
+      "total_tokens": 248,
+      "total_vocabulary": 171,
+      "placement_summary": {
+        "ring": 0,
+        "circle": 138,
+        "star": 0,
+        "paragraph": 100,
+        "label": 0,
+        "other": 10
+      },
+      "placement_detail": {
+        "C": 138,
+        "P": 100,
+        "I": 10
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 138,
+          "vocabulary_size": 107,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 58.9,
+            "currier_b_pct": 64.5,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9604,
+            "currier_b": 0.9208,
+            "azc_rcs": 0.9712
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "aiir",
+            "aiis",
+            "aim",
+            "air",
+            "al",
+            "aldaiin",
+            "alekeey",
+            "am",
+            "ar",
+            "aral",
+            "arodchedy",
+            "chal",
+            "char",
+            "chedal"
+          ]
+        },
+        "paragraph_p": {
+          "token_count": 100,
+          "vocabulary_size": 75,
+          "linguistic_character": "A-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 68.0,
+            "currier_b_pct": 70.7,
+            "azc_rcs_pct": 57.3
+          },
+          "prefix_similarity": {
+            "currier_a": 0.972,
+            "currier_b": 0.925,
+            "azc_rcs": 0.8902
+          },
+          "unique_words": [
+            "chchetal",
+            "chly",
+            "chotals",
+            "ckhhey",
+            "dalaly",
+            "ddl",
+            "dyshol",
+            "oparam",
+            "shep",
+            "sheteal",
+            "shkal",
+            "shocthhy",
+            "shshy",
+            "ykemy",
+            "yokal",
+            "ytaiir",
+            "ytas"
+          ],
+          "sample_words": [
+            "aiir",
+            "al",
+            "alal",
+            "aloees",
+            "ar",
+            "aram",
+            "arl",
+            "ary",
+            "chal",
+            "cham",
+            "chchetal",
+            "chcthhy",
+            "chcthy",
+            "chdy",
+            "cheeod"
+          ]
+        },
+        "other": {
+          "token_count": 10,
+          "vocabulary_size": 9,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 77.8,
+            "currier_b_pct": 77.8,
+            "azc_rcs_pct": 88.9
+          },
+          "prefix_similarity": {
+            "currier_a": 0.4086,
+            "currier_b": 0.4657,
+            "azc_rcs": 0.5749
+          },
+          "unique_words": [
+            "otchsy"
+          ],
+          "sample_words": [
+            "choky",
+            "keey",
+            "ol",
+            "otchoshy",
+            "otchsy",
+            "oteo",
+            "oteol",
+            "sal",
+            "shy"
+          ]
+        }
+      }
+    },
+    "f70v1": {
+      "folio": "f70v1",
+      "total_tokens": 86,
+      "total_vocabulary": 78,
+      "placement_summary": {
+        "ring": 60,
+        "circle": 0,
+        "star": 26,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R2": 37,
+        "R1": 23,
+        "S2": 15,
+        "S1": 11
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 86,
+          "vocabulary_size": 78,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 59.0,
+            "currier_b_pct": 60.3,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.7331,
+            "currier_b": 0.7353,
+            "azc_rcs": 0.8806
+          },
+          "unique_words": [],
+          "sample_words": [
+            "al",
+            "alols",
+            "aly",
+            "am",
+            "ar",
+            "araydy",
+            "asaly",
+            "chcthy",
+            "chees",
+            "cheey",
+            "chekalchs",
+            "chekeal",
+            "chekey",
+            "cheody",
+            "cheokeeo"
+          ]
+        }
+      }
+    },
+    "f70v2": {
+      "folio": "f70v2",
+      "total_tokens": 141,
+      "total_vocabulary": 113,
+      "placement_summary": {
+        "ring": 104,
+        "circle": 1,
+        "star": 36,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R3": 45,
+        "R2": 37,
+        "S2": 25,
+        "R1": 22,
+        "S1": 11,
+        "C": 1
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 141,
+          "vocabulary_size": 113,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 61.1,
+            "currier_b_pct": 61.9,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.7556,
+            "currier_b": 0.7663,
+            "azc_rcs": 0.9183
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "aildy",
+            "al",
+            "alain",
+            "alody",
+            "alos",
+            "am",
+            "ar",
+            "chalaly",
+            "chckhhy",
+            "chedaiin",
+            "chedy",
+            "cheoltey",
+            "cho",
+            "choeteedy"
+          ]
+        }
+      }
+    },
+    "f71r": {
+      "folio": "f71r",
+      "total_tokens": 91,
+      "total_vocabulary": 73,
+      "placement_summary": {
+        "ring": 72,
+        "circle": 0,
+        "star": 19,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 38,
+        "R2": 24,
+        "S1": 12,
+        "R3": 10,
+        "S2": 7
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 91,
+          "vocabulary_size": 73,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 52.1,
+            "currier_b_pct": 57.5,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.6078,
+            "currier_b": 0.6373,
+            "azc_rcs": 0.8261
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aekeeey",
+            "aiin",
+            "al",
+            "ald",
+            "ar",
+            "arar",
+            "char",
+            "chdy",
+            "cheeokseo",
+            "chekal",
+            "chekeen",
+            "cheky",
+            "chetshy",
+            "choly",
+            "chs"
+          ]
+        }
+      }
+    },
+    "f71v": {
+      "folio": "f71v",
+      "total_tokens": 101,
+      "total_vocabulary": 87,
+      "placement_summary": {
+        "ring": 79,
+        "circle": 0,
+        "star": 22,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 38,
+        "R2": 30,
+        "S1": 16,
+        "R3": 11,
+        "S2": 6
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 101,
+          "vocabulary_size": 87,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 58.6,
+            "currier_b_pct": 65.5,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8148,
+            "currier_b": 0.8237,
+            "azc_rcs": 0.9513
+          },
+          "unique_words": [],
+          "sample_words": [
+            "****",
+            "****eodal",
+            "aiin",
+            "al",
+            "alody",
+            "aly",
+            "am",
+            "ar",
+            "arol",
+            "ateey",
+            "chal",
+            "char",
+            "cheekaiin",
+            "cheey",
+            "cheol"
+          ]
+        }
+      }
+    },
+    "f72r1": {
+      "folio": "f72r1",
+      "total_tokens": 105,
+      "total_vocabulary": 88,
+      "placement_summary": {
+        "ring": 81,
+        "circle": 0,
+        "star": 24,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 42,
+        "R2": 25,
+        "S1": 18,
+        "R3": 14,
+        "S2": 6
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 105,
+          "vocabulary_size": 88,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 62.5,
+            "currier_b_pct": 67.0,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.7967,
+            "currier_b": 0.7918,
+            "azc_rcs": 0.9225
+          },
+          "unique_words": [],
+          "sample_words": [
+            "adal",
+            "aiin",
+            "ainam",
+            "al",
+            "alf",
+            "alo",
+            "ar",
+            "ary",
+            "as",
+            "chal",
+            "chalaiin",
+            "char",
+            "charam",
+            "chckhy",
+            "chdaiirsainy"
+          ]
+        }
+      }
+    },
+    "f72r2": {
+      "folio": "f72r2",
+      "total_tokens": 111,
+      "total_vocabulary": 91,
+      "placement_summary": {
+        "ring": 79,
+        "circle": 0,
+        "star": 32,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 38,
+        "R2": 25,
+        "S1": 17,
+        "R3": 16,
+        "S2": 10,
+        "S0": 5
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 111,
+          "vocabulary_size": 91,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 60.4,
+            "currier_b_pct": 67.0,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.7266,
+            "currier_b": 0.7436,
+            "azc_rcs": 0.8905
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "ainaly",
+            "air",
+            "al",
+            "aloy",
+            "ar",
+            "ary",
+            "cham",
+            "chchs",
+            "chees",
+            "chekaiin",
+            "cheokeodal",
+            "cheol",
+            "chey",
+            "chokaly"
+          ]
+        }
+      }
+    },
+    "f72r3": {
+      "folio": "f72r3",
+      "total_tokens": 169,
+      "total_vocabulary": 141,
+      "placement_summary": {
+        "ring": 122,
+        "circle": 0,
+        "star": 47,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 46,
+        "R2": 39,
+        "R3": 27,
+        "S1": 21,
+        "S2": 18,
+        "R4": 10,
+        "S3": 8
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 169,
+          "vocabulary_size": 141,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 49.6,
+            "currier_b_pct": 53.9,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9235,
+            "currier_b": 0.9309,
+            "azc_rcs": 0.9788
+          },
+          "unique_words": [],
+          "sample_words": [
+            "****dy",
+            "*o*a",
+            "aes",
+            "aiin",
+            "al",
+            "alaiiin",
+            "alkam",
+            "aloly",
+            "am",
+            "ar",
+            "arary",
+            "arl",
+            "as",
+            "ch*",
+            "cheal"
+          ]
+        }
+      }
+    },
+    "f72v1": {
+      "folio": "f72v1",
+      "total_tokens": 102,
+      "total_vocabulary": 96,
+      "placement_summary": {
+        "ring": 72,
+        "circle": 0,
+        "star": 30,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 40,
+        "R2": 22,
+        "S1": 20,
+        "S2": 10,
+        "R3": 10
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 102,
+          "vocabulary_size": 96,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 45.8,
+            "currier_b_pct": 52.1,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8383,
+            "currier_b": 0.8576,
+            "azc_rcs": 0.9793
+          },
+          "unique_words": [],
+          "sample_words": [
+            "aiin",
+            "aiinod",
+            "air",
+            "al",
+            "alal",
+            "alar",
+            "alchol",
+            "alshdy",
+            "alshey",
+            "am",
+            "atey",
+            "cheedy",
+            "cheeky",
+            "cheoekey",
+            "cheoepy"
+          ]
+        }
+      }
+    },
+    "f72v2": {
+      "folio": "f72v2",
+      "total_tokens": 110,
+      "total_vocabulary": 104,
+      "placement_summary": {
+        "ring": 77,
+        "circle": 0,
+        "star": 33,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 37,
+        "R2": 28,
+        "S1": 19,
+        "S2": 14,
+        "R3": 12
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 110,
+          "vocabulary_size": 104,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 42.3,
+            "currier_b_pct": 51.9,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9086,
+            "currier_b": 0.915,
+            "azc_rcs": 0.986
+          },
+          "unique_words": [],
+          "sample_words": [
+            "***eck*y*",
+            "aiin",
+            "air",
+            "airolm",
+            "al",
+            "alteol",
+            "am",
+            "ar",
+            "ataseos",
+            "cheeey",
+            "cheey",
+            "chekaiphy",
+            "cheoekcy",
+            "cheokaidy",
+            "cheol"
+          ]
+        }
+      }
+    },
+    "f72v3": {
+      "folio": "f72v3",
+      "total_tokens": 121,
+      "total_vocabulary": 112,
+      "placement_summary": {
+        "ring": 85,
+        "circle": 0,
+        "star": 36,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 40,
+        "R2": 31,
+        "S1": 21,
+        "S2": 15,
+        "R3": 14
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 121,
+          "vocabulary_size": 112,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 44.6,
+            "currier_b_pct": 50.9,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8421,
+            "currier_b": 0.8501,
+            "azc_rcs": 0.96
+          },
+          "unique_words": [],
+          "sample_words": [
+            "**eody",
+            "**ofaiin",
+            "*eody",
+            "aiin",
+            "aldy",
+            "aly",
+            "an",
+            "chcpy",
+            "chcthhy",
+            "chdy",
+            "cheesy",
+            "cheey",
+            "cheis",
+            "cheokey",
+            "cheolpy"
+          ]
+        }
+      }
+    },
+    "f73r": {
+      "folio": "f73r",
+      "total_tokens": 96,
+      "total_vocabulary": 84,
+      "placement_summary": {
+        "ring": 66,
+        "circle": 0,
+        "star": 30,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 34,
+        "R2": 24,
+        "S1": 16,
+        "S2": 10,
+        "R3": 8,
+        "S0": 4
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 96,
+          "vocabulary_size": 84,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 51.2,
+            "currier_b_pct": 60.7,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.8477,
+            "currier_b": 0.8263,
+            "azc_rcs": 0.9306
+          },
+          "unique_words": [],
+          "sample_words": [
+            "air",
+            "al",
+            "alar",
+            "alcheky",
+            "alor",
+            "alshey",
+            "aly",
+            "ar",
+            "chdar",
+            "chdy",
+            "chedain",
+            "chedaly",
+            "chedar",
+            "chees",
+            "cheesy"
+          ]
+        }
+      }
+    },
+    "f73v": {
+      "folio": "f73v",
+      "total_tokens": 97,
+      "total_vocabulary": 88,
+      "placement_summary": {
+        "ring": 66,
+        "circle": 0,
+        "star": 31,
+        "paragraph": 0,
+        "label": 0,
+        "other": 0
+      },
+      "placement_detail": {
+        "R1": 34,
+        "R2": 22,
+        "S1": 17,
+        "S2": 10,
+        "R3": 10,
+        "S0": 4
+      },
+      "regions": {
+        "diagram_rcs": {
+          "token_count": 97,
+          "vocabulary_size": 88,
+          "linguistic_character": "AZC-like",
+          "vocabulary_overlap": {
+            "currier_a_pct": 50.0,
+            "currier_b_pct": 63.6,
+            "azc_rcs_pct": 100.0
+          },
+          "prefix_similarity": {
+            "currier_a": 0.9073,
+            "currier_b": 0.9281,
+            "azc_rcs": 0.9873
+          },
+          "unique_words": [],
+          "sample_words": [
+            "air",
+            "alar",
+            "alshy",
+            "aly",
+            "ar",
+            "chdy",
+            "ched",
+            "cheody",
+            "cheoral",
+            "chey",
+            "cheytey",
+            "chfaikch",
+            "chodaiin",
+            "chokeedam",
+            "choldy"
+          ]
+        }
+      }
+    }
+  }
+}

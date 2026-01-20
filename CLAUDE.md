@@ -30,7 +30,7 @@ df = df[df['transcriber'] == 'H']  # PRIMARY track only
 | Metric | Value |
 |--------|-------|
 | Version | 2.13 FROZEN STATE |
-| Constraints | 356 validated |
+| Constraints | 359 validated |
 | Phases | 132 completed |
 | Folios | 83 (Currier B) |
 | Pipeline | CLOSED (PCA-v1 CERTIFIED) |

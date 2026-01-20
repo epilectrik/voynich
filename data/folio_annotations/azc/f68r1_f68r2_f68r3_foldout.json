@@ -1,0 +1,127 @@
+{
+  "folios": ["f68r1", "f68r2", "f68r3"],
+  "date": "2026-01-19",
+  "type": "triple_foldout",
+  "method": "Visual inspection + transcript analysis",
+  "description": "Three connected folios with mixed diagram types - NOT typical ring diagrams",
+
+  "structure": {
+    "f68r1": {
+      "position": "left",
+      "diagram_type": "scatter_circular",
+      "tokens": 65,
+      "layout": {
+        "paragraph_above": {
+          "placement": "P",
+          "tokens": 28,
+          "lines": 4,
+          "character": "A-like paragraph text above diagram"
+        },
+        "scatter_area": {
+          "placement": "S",
+          "tokens": 29,
+          "encoding": "1 token per line (29 lines) - scattered positions",
+          "description": "Circular area with tokens spread uniformly, NOT in rings"
+        },
+        "other": {
+          "placements": ["X", "Y"],
+          "tokens": 8
+        }
+      },
+      "notes": "Diagram is NOT rings - tokens scattered like 'buckshot' in circular area"
+    },
+
+    "f68r2": {
+      "position": "center",
+      "diagram_type": "scatter_circular",
+      "tokens": 81,
+      "layout": {
+        "labels": {
+          "placement": "L",
+          "tokens": 11
+        },
+        "paragraph_above": {
+          "placement": "P",
+          "tokens": 37,
+          "lines": 5,
+          "character": "A-like paragraph text above diagram"
+        },
+        "scatter_area": {
+          "placement": "S",
+          "tokens": 25,
+          "encoding": "Mostly 1 token per line - scattered positions",
+          "description": "Circular area with scattered tokens, NOT rings"
+        },
+        "other": {
+          "placements": ["U"],
+          "tokens": 8
+        }
+      },
+      "notes": "Same scatter pattern as f68r1"
+    },
+
+    "f68r3": {
+      "position": "right",
+      "diagram_type": "ring_spoke_hybrid",
+      "tokens": 102,
+      "layout": {
+        "outer_ring": {
+          "placement": "C1",
+          "tokens": 38,
+          "encoding": "All on line 1 = continuous circular text",
+          "description": "Outer ring of the diagram"
+        },
+        "inner_ring": {
+          "placement": "C2",
+          "tokens": 10,
+          "encoding": "All on line 1 = continuous circular text",
+          "description": "Inner ring/circle"
+        },
+        "spokes": {
+          "placement": "R",
+          "tokens": 38,
+          "lines": 8,
+          "encoding": "8 lines = 8 radial spokes",
+          "description": "Spoke-like lines radiating from center"
+        },
+        "scattered_between": {
+          "placement": "X",
+          "tokens": 16,
+          "description": "Tokens scattered between the spokes"
+        }
+      },
+      "notes": "More typical AZC structure - outer ring, spokes, inner ring, scattered fill"
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "scatter_tokens": "When tokens are scattered (not sequential), each gets its own line number",
+    "ring_tokens": "When tokens form a continuous ring, they share the same line number",
+    "spoke_tokens": "Spoke lines each get a separate line number, with multiple tokens per spoke"
+  },
+
+  "user_observations": [
+    "First 2 diagrams have Currier A-like paragraph above",
+    "First 2 diagrams are NOT rings - circular areas with scattered tokens",
+    "Third diagram (f68r3) is more typical: outer ring, spoke lines, internal ring",
+    "Scattered tokens appear between spokes on f68r3"
+  ],
+
+  "oddities": [
+    {
+      "type": "non_ring_circular_diagram",
+      "folios": ["f68r1", "f68r2"],
+      "description": "Circular diagrams that are NOT organized as rings - tokens scattered uniformly"
+    },
+    {
+      "type": "a_like_paragraph_on_azc",
+      "folios": ["f68r1", "f68r2"],
+      "description": "Paragraph text above diagrams that resembles Currier A"
+    },
+    {
+      "type": "hybrid_structure",
+      "folios": ["f68r3"],
+      "description": "Ring + spoke + scatter hybrid - more complex than simple ring diagram"
+    }
+  ]
+}

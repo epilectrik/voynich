@@ -1,0 +1,14 @@
+{
+  "excl_excl_pairs": 60726,
+  "excl_excl_cooccur": 0,
+  "excl_excl_rate": 0.0,
+  "shared_shared_pairs": 35778,
+  "shared_shared_cooccur": 0,
+  "shared_shared_rate": 0.0,
+  "cross_pairs": 93532,
+  "cross_cooccur": 0,
+  "cross_rate": 0.0,
+  "odds_ratio": NaN,
+  "p_value": 1.0,
+  "verdict": "COMPLETE_INCOMPATIBILITY"
+}

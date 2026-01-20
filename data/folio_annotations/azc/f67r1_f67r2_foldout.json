@@ -1,0 +1,107 @@
+{
+  "folios": ["f67r1", "f67r2"],
+  "date": "2026-01-19",
+  "type": "double_foldout",
+  "quire": 9,
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f67r1": {
+      "position": "left",
+      "tokens": 155,
+      "layout": {
+        "paragraph_above": {
+          "placement": "P",
+          "tokens": 36,
+          "lines": 4,
+          "description": "Currier A-like text block above diagram"
+        },
+        "outer_rings": {
+          "placement": "R",
+          "tokens": 102,
+          "lines": 3,
+          "description": "3 concentric text rings"
+        },
+        "spokes": {
+          "placement": "S",
+          "tokens": 17,
+          "lines": 12,
+          "tokens_per_line": "1-2",
+          "description": "Short 1-2 token spokes radiating from center"
+        }
+      },
+      "diagram_type": "ring_with_short_spokes"
+    },
+
+    "f67r2": {
+      "position": "right",
+      "tokens": 176,
+      "layout": {
+        "outer_ring": {
+          "placement": "C (line 1a-1d, etc.)",
+          "description": "Outer ring in RED TEXT/INK",
+          "ink": "red"
+        },
+        "segmented_middle_rings": {
+          "placement": "C",
+          "encoding": "Number = ring layer, Letter = sector (a,b,c...)",
+          "description": "Middle rings divided into sectors by drawn lines (like spoke dividers)",
+          "example": "Line 2a, 2b = ring 2, sectors a and b"
+        },
+        "inner_rings": {
+          "description": "2 rings closer to center, after the sector dividers end"
+        },
+        "horizontal_text_below": {
+          "placement": "P",
+          "tokens": 33,
+          "lines": 3,
+          "description": "3 horizontal lines below diagram",
+          "special_features": {
+            "dividers": "Straight drawn lines separating the 3 text lines",
+            "center_line_ink": "RED (same as outer ring)",
+            "differs_from": "Not like typical Currier A paragraphs - more structured"
+          }
+        },
+        "labels": {
+          "placement": "L",
+          "tokens": 9
+        },
+        "other_positioned": {
+          "X": {"tokens": 13, "description": "Scattered positions"},
+          "Y": {"tokens": 25, "description": "Grouped positions (2-3 per line)"},
+          "Z": {"tokens": 9, "description": "Other positions"}
+        }
+      },
+      "diagram_type": "segmented_ring_complex"
+    }
+  },
+
+  "transcript_encoding_discovery": {
+    "segmented_rings": {
+      "pattern": "Line numbers like '1a', '2b', '3c'",
+      "meaning": "Number = concentric ring layer, Letter = angular sector",
+      "physical": "Drawn lines divide rings into pie-slice sectors"
+    }
+  },
+
+  "visual_features": {
+    "red_ink_usage": {
+      "locations": ["f67r2 outer ring", "f67r2 center horizontal line"],
+      "significance": "Connects outer boundary to center element"
+    },
+    "drawn_divider_lines": {
+      "f67r2_diagram": "Radial lines dividing rings into sectors",
+      "f67r2_below": "Horizontal lines separating the 3 text lines"
+    }
+  },
+
+  "user_observations": [
+    "f67r1: Currier A-like paragraph above diagram",
+    "f67r1: 3 outer rings with 1-2 token spokes",
+    "f67r2: Outer ring in RED text",
+    "f67r2: Inner rings subdivided by drawn spoke-like lines into groups",
+    "f67r2: 2 more rings near center after dividers end",
+    "f67r2: 3 horizontal text lines below with drawn dividers between them",
+    "f67r2: Center of the 3 lines uses same RED ink as outer ring"
+  ]
+}
