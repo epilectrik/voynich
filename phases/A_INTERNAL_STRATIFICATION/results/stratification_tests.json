@@ -1,0 +1,306 @@
+{
+  "test_1_position": {
+    "position_counts": {
+      "exclusive": {
+        "INTERIOR": 252,
+        "CLOSER": 140,
+        "OPENER": 91
+      },
+      "shared": {
+        "OPENER": 1480,
+        "INTERIOR": 5793,
+        "CLOSER": 1384
+      }
+    },
+    "chi2": 62.20135836897684,
+    "p_value": 3.112767237143132e-14,
+    "cramers_v": 0.08249484989493489,
+    "significant": "False"
+  },
+  "test_2_section": {
+    "section_counts": {
+      "exclusive": {
+        "herbal_a": 262,
+        "other": 34,
+        "herbal_c": 187
+      },
+      "shared": {
+        "herbal_a": 5529,
+        "other": 567,
+        "herbal_c": 2561
+      }
+    },
+    "chi2": 19.546057513132062,
+    "p_value": 5.6967549653699e-05,
+    "cramers_v": 0.04624411667959672,
+    "significant": "False"
+  },
+  "test_3_folio": {
+    "exclusive_spread": {
+      "mean": 1.343839541547278,
+      "median": 1.0,
+      "n": 349
+    },
+    "shared_spread": {
+      "mean": 7.962686567164179,
+      "median": 2.0,
+      "n": 268
+    },
+    "ks_stat": 0.4798678527135098,
+    "p_value": 3.4862026417106097e-32,
+    "significant": "True"
+  },
+  "test_4_adjacency": {
+    "n_exclusive_entries": 9,
+    "mean_gap": 185.875,
+    "expected_gap": 174.55555555555554,
+    "gap_ratio": 1.0648472310630173,
+    "t_stat": 0.17378617118870573,
+    "p_value": 0.8669524497284772,
+    "clustered": "False"
+  },
+  "test_5_morphology": {
+    "prefix_counts": {
+      "exclusive": {
+        "ct": 98,
+        "da": 40,
+        "ch": 105,
+        "do": 11,
+        "qo": 56,
+        "sh": 35,
+        "ol": 13,
+        "de": 2,
+        "po": 9,
+        "ok": 24,
+        "ko": 13,
+        "tch": 3,
+        "rch": 2,
+        "ot": 24,
+        "pch": 4,
+        "to": 5,
+        "or": 6,
+        "yk": 10,
+        "sa": 3,
+        "kch": 2,
+        "so": 10,
+        "ka": 1,
+        "sch": 1,
+        "ta": 1,
+        "dch": 2,
+        "ar": 1,
+        "fch": 1,
+        "te": 1
+      },
+      "shared": {
+        "yk": 219,
+        "ar": 61,
+        "sh": 969,
+        "ko": 100,
+        "so": 136,
+        "or": 149,
+        "ka": 37,
+        "ch": 2031,
+        "ct": 348,
+        "da": 1026,
+        "sa": 128,
+        "ot": 466,
+        "ok": 588,
+        "te": 31,
+        "ol": 271,
+        "kch": 130,
+        "do": 208,
+        "tch": 113,
+        "dch": 147,
+        "rch": 11,
+        "po": 29,
+        "ke": 95,
+        "lk": 5,
+        "to": 88,
+        "qo": 1033,
+        "lch": 13,
+        "ta": 32,
+        "sch": 40,
+        "al": 54,
+        "pch": 51,
+        "lsh": 4,
+        "se": 6,
+        "fch": 20,
+        "de": 18
+      }
+    },
+    "suffix_counts": {
+      "exclusive": {
+        "s": 39,
+        "ry": 9,
+        "hy": 25,
+        "ar": 8,
+        "_NONE_": 142,
+        "dy": 67,
+        "m": 6,
+        "am": 12,
+        "ly": 21,
+        "g": 6,
+        "y": 19,
+        "chy": 13,
+        "shy": 3,
+        "en": 2,
+        "shol": 3,
+        "ty": 7,
+        "ey": 5,
+        "aiin": 4,
+        "or": 7,
+        "tor": 1,
+        "ky": 7,
+        "daiin": 2,
+        "er": 1,
+        "ol": 11,
+        "al": 17,
+        "r": 9,
+        "om": 4,
+        "ain": 8,
+        "an": 4,
+        "oiin": 1,
+        "iin": 3,
+        "chor": 1,
+        "l": 2,
+        "tol": 1,
+        "chol": 2,
+        "chey": 1,
+        "chedy": 1,
+        "eol": 4,
+        "odaiin": 1,
+        "tey": 1,
+        "im": 1,
+        "key": 1,
+        "eey": 1
+      },
+      "shared": {
+        "al": 218,
+        "_NONE_": 851,
+        "ol": 698,
+        "ry": 66,
+        "r": 342,
+        "dy": 441,
+        "taiin": 18,
+        "ar": 285,
+        "n": 22,
+        "ky": 128,
+        "aiin": 278,
+        "s": 230,
+        "eey": 216,
+        "iin": 642,
+        "an": 35,
+        "y": 450,
+        "chol": 91,
+        "hy": 263,
+        "in": 110,
+        "or": 675,
+        "shy": 50,
+        "eol": 276,
+        "ain": 91,
+        "daiin": 44,
+        "ey": 334,
+        "l": 266,
+        "odaiin": 74,
+        "om": 87,
+        "shey": 15,
+        "tol": 37,
+        "cheey": 19,
+        "chey": 77,
+        "kaiin": 38,
+        "tor": 24,
+        "ty": 98,
+        "tey": 10,
+        "adaiin": 2,
+        "m": 71,
+        "chy": 290,
+        "okaiin": 9,
+        "chor": 86,
+        "sheey": 4,
+        "key": 41,
+        "oiin": 58,
+        "am": 95,
+        "kol": 63,
+        "ly": 100,
+        "keey": 70,
+        "g": 19,
+        "eeol": 42,
+        "shol": 14,
+        "im": 17,
+        "en": 8,
+        "otaiin": 8,
+        "kor": 26,
+        "teey": 11,
+        "shor": 5,
+        "oin": 1,
+        "er": 4,
+        "on": 4,
+        "em": 3,
+        "etaiin": 1,
+        "edaiin": 1,
+        "chedy": 2,
+        "kedy": 1,
+        "ool": 1,
+        "ekaiin": 1
+      }
+    },
+    "prefix_chi2": 327.5928447171835,
+    "prefix_p_value": 9.172906834364075e-52,
+    "prefix_cramers_v": 0.18947449887103823,
+    "suffix_chi2": 529.8000660751727,
+    "suffix_p_value": 7.470461536746244e-81,
+    "suffix_cramers_v": 0.24140717573018425,
+    "significant": "True"
+  },
+  "test_6_azc": {
+    "exclusive_in_azc": 31,
+    "shared_in_azc": 154,
+    "odds_ratio": 0.07216368537123254,
+    "p_value": 1.806821727263358e-40,
+    "significant": "True"
+  },
+  "test_7_composition": {
+    "composition_counts": {
+      "MIXED": 401,
+      "PURE_SHARED": 1161,
+      "PURE_EXCLUSIVE": 9
+    },
+    "observed_pure": 1170,
+    "observed_mixed": 401,
+    "expected_pure": 1161.107447890999,
+    "expected_mixed": 409.8925521089927,
+    "chi2": 0.2610276927529681,
+    "p_value": 0.6094149937017352,
+    "significant": "False"
+  },
+  "test_8_frequency": {
+    "exclusive_freq_stats": {
+      "mean": 1.3839541547277936,
+      "median": 1.0,
+      "max": 43
+    },
+    "shared_freq_stats": {
+      "mean": 32.30223880597015,
+      "median": 2.0,
+      "max": 5070
+    },
+    "mann_whitney_u": 21693.5,
+    "p_value": 1.0830658159109186e-40,
+    "rank_biserial": 0.5361266732241372,
+    "significant_frequency_difference": "True",
+    "bin_counts": {
+      "0": {
+        "exclusive": 330,
+        "shared": 144
+      },
+      "1": {
+        "exclusive": 19,
+        "shared": 124
+      }
+    }
+  },
+  "summary": {
+    "significant_count": 3,
+    "verdict": "PARTIAL - Some stratification detected (Tier 3)"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "folios": ["f68v3", "f68v2", "f68v1"],
+  "date": "2026-01-19",
+  "type": "triple_foldout",
+  "quire": 9,
+  "note": "Verso of f68r1_f68r2_f68r3",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f68v3": {
+      "position": "left",
+      "tokens": 159,
+      "description": "Full ring-spoke-center structure with segmented center",
+      "layout": {
+        "paragraph_above": {
+          "placement": "P",
+          "tokens": 40,
+          "lines": 4,
+          "description": "Currier A-like text block above diagram"
+        },
+        "outer_ring": {
+          "placement": "O",
+          "tokens": 49,
+          "lines": 1,
+          "description": "Outer ring (continuous)"
+        },
+        "spokes": {
+          "placement": "S",
+          "tokens": 45,
+          "lines": 8,
+          "description": "8 curved spokes (artistic flourish)",
+          "visual_note": "Curves are artistic, not structural"
+        },
+        "inner_ring": {
+          "placement": "I",
+          "tokens": 12,
+          "lines": 1,
+          "description": "Inner ring (continuous)"
+        },
+        "center_top_clusters": {
+          "placement": "L",
+          "tokens": 2,
+          "lines": 2,
+          "description": "2 single-token areas at top of center, separated by drawn lines"
+        },
+        "center_bottom_cluster": {
+          "placement": "B",
+          "tokens": 11,
+          "lines": 3,
+          "description": "Bottom center area with 3 lines of tokens, in single defined region"
+        }
+      },
+      "diagram_type": "ring_spoke_segmented_center",
+      "visual_notes": [
+        "Spokes are curved (artistic, not structural)",
+        "Center divided into 3 areas by drawn lines",
+        "Top 2 center areas: single token each",
+        "Bottom center area: 3 lines of tokens"
+      ]
+    },
+
+    "f68v2": {
+      "position": "center",
+      "tokens": 100,
+      "description": "Single ring with spokes, illustration-heavy center",
+      "layout": {
+        "paragraph_above": {
+          "placement": "P",
+          "tokens": 43,
+          "lines": 5,
+          "description": "Text block above diagram"
+        },
+        "outer_ring": {
+          "placement": "C",
+          "tokens": 32,
+          "lines": 1,
+          "description": "Single outer ring"
+        },
+        "spokes": {
+          "placement": "R",
+          "tokens": 17,
+          "lines": 8,
+          "description": "8 spoke lines (sparse, ~2 tokens each)"
+        },
+        "additional_spoke_tokens": {
+          "placement": "S",
+          "tokens": 8,
+          "lines": 4,
+          "description": "Additional scattered spoke-area tokens"
+        },
+        "center": {
+          "description": "No text content - illustration only"
+        }
+      },
+      "diagram_type": "single_ring_spoke",
+      "visual_notes": [
+        "Center has illustration but no tokens",
+        "Spokes are sparse compared to f68v3"
+      ]
+    },
+
+    "f68v1": {
+      "position": "right",
+      "tokens": 96,
+      "description": "Double ring with spokes, no paragraph, illustration-heavy",
+      "layout": {
+        "outer_rings": {
+          "placement": "C",
+          "tokens": 76,
+          "lines": 2,
+          "encoding": "Line 1 = outer ring (38 tokens), Line 2 = second ring (38 tokens)",
+          "description": "2 concentric outer rings"
+        },
+        "spokes": {
+          "placement": "X",
+          "tokens": 20,
+          "lines": 8,
+          "description": "8 spoke lines"
+        },
+        "center": {
+          "description": "No text content - illustration only"
+        },
+        "paragraph": {
+          "description": "NONE - no paragraph text on this folio"
+        }
+      },
+      "diagram_type": "double_ring_spoke",
+      "visual_notes": [
+        "NO paragraph text above - unique among this foldout",
+        "Heavy illustration throughout",
+        "Center is illustration only"
+      ]
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "f68v3_uses": "O (outer), I (inner), S (spoke), B (bottom center), L (label/top center), P (paragraph)",
+    "f68v2_uses": "C (circle), R (radial), S (spoke), P (paragraph)",
+    "f68v1_uses": "C (2 lines = 2 rings), X (spokes only) - NO P placement",
+    "placement_variation": "Each folio uses different placement codes - no standardization"
+  },
+
+  "user_observations": [
+    "f68v3: Curved spokes (artistic flourish)",
+    "f68v3: Center divided into 3 areas by drawn lines",
+    "f68v3: Top 2 center areas have single token each",
+    "f68v3: Bottom center area has 3 lines of tokens",
+    "f68v2: Single outer ring, spokes, center is illustration only",
+    "f68v1: NO paragraph text above diagram",
+    "f68v1: 2 outer rings, spokes, lots of illustration",
+    "f68v1: Center is illustration only"
+  ],
+
+  "oddities": [
+    {
+      "type": "segmented_center",
+      "folios": ["f68v3"],
+      "description": "Center divided into 3 areas by drawn lines, with different token counts"
+    },
+    {
+      "type": "missing_paragraph",
+      "folios": ["f68v1"],
+      "description": "No A-like paragraph text - only diagram content"
+    },
+    {
+      "type": "placement_code_inconsistency",
+      "folios": ["f68v3", "f68v2", "f68v1"],
+      "description": "Each folio uses different placement codes for similar structures"
+    },
+    {
+      "type": "illustration_only_center",
+      "folios": ["f68v2", "f68v1"],
+      "description": "Center areas contain illustration but no text tokens"
+    }
+  ]
+}

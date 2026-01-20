@@ -1,0 +1,87 @@
+{
+  "phase": "CATEGORY_DISCRIMINATION",
+  "date": "2026-01-20",
+  "target_product_types": [
+    "WATER_GENTLE",
+    "OIL_RESIN"
+  ],
+  "brunschwig_categories": {
+    "WATER_GENTLE": {
+      "cold_moist_flower": 8,
+      "fruit": 5,
+      "dangerous_herb": 1
+    },
+    "OIL_RESIN": {
+      "hot_dry_herb": 7
+    }
+  },
+  "folio_counts": {
+    "WATER_GENTLE": 11,
+    "OIL_RESIN": 25
+  },
+  "registry_internal_by_type": {
+    "WATER_GENTLE": {
+      "n_folios": 11,
+      "mean_ratio": 0.13848250014149374,
+      "exclusive_middles": 6
+    },
+    "OIL_RESIN": {
+      "n_folios": 25,
+      "mean_ratio": 0.1632773035117844,
+      "exclusive_middles": 36
+    }
+  },
+  "cross_type_test": {
+    "H": 1.3235380835380823,
+    "df": 1,
+    "significant": false
+  },
+  "exclusive_middles": {
+    "WATER_GENTLE": [
+      "aram",
+      "okaro",
+      "ota",
+      "ockho",
+      "ysho",
+      "keoda"
+    ],
+    "OIL_RESIN": [
+      "okol",
+      "otol",
+      "ly",
+      "hod",
+      "okor",
+      "okal",
+      "keolo",
+      "ckhod",
+      "aiind",
+      "chad",
+      "yqo",
+      "hd",
+      "sheol",
+      "eokchet",
+      "otcho",
+      "shol",
+      "aly",
+      "teeeo",
+      "akod",
+      "aiino",
+      "okeo",
+      "kshe",
+      "hold",
+      "tyd",
+      "cthod",
+      "orodo",
+      "olol",
+      "rcho",
+      "ram",
+      "komo",
+      "lol",
+      "etcho",
+      "okeeo",
+      "heod",
+      "ocho",
+      "tchod"
+    ]
+  }
+}

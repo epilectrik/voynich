@@ -1,0 +1,91 @@
+{
+  "folios": ["f73v"],
+  "date": "2026-01-19",
+  "type": "single_folio",
+  "quire": 9,
+  "note": "Nymph page with lady holding CROSSBOW at center",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f73v": {
+      "tokens": 97,
+      "description": "5-ring nymph diagram with lady and crossbow at center",
+      "layout": {
+        "top_tokens": {
+          "placement": "S0",
+          "tokens": 4,
+          "lines": 4,
+          "encoding": "1 token per line (scattered)",
+          "description": "4 tokens at top - same pattern as f73r",
+          "tokens_transcribed": ["okol", "oteody", "oteody", "cheody"]
+        },
+        "continuous_rings": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [34, 22, 10],
+          "total": 66
+        },
+        "nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [17, 10],
+          "lines": [16, 10],
+          "total": 27
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "token likely present",
+          "illustration": "Fancy lady with CROSSBOW",
+          "description": "Woman holding crossbow - apparatus/weapon at center"
+        },
+        "paragraph": {
+          "description": "NONE"
+        }
+      },
+      "ring_count": "5 (or 6 if S0 counts as ring)",
+      "diagram_type": "multi_ring_nymph"
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "identical_to_f73r": "Same S0 pattern with 4 top tokens",
+    "note": "One token in S0 appears twice (oteody)"
+  },
+
+  "user_observations": [
+    "Same format as f73r",
+    "4 tokens at top",
+    "Center image: fancy lady with crossbow",
+    "Another apparatus (like scale on f72v1)",
+    "Pretty intimidating image"
+  ],
+
+  "oddities": [
+    {
+      "type": "crossbow_apparatus",
+      "description": "Crossbow is second apparatus in nymph series (after scale on f72v1)"
+    },
+    {
+      "type": "weapon_imagery",
+      "description": "Only weapon in the entire nymph series - intimidating/aggressive"
+    },
+    {
+      "type": "lady_with_weapon",
+      "description": "Fancy/distinguished lady holding the crossbow - combines human + apparatus"
+    },
+    {
+      "type": "s0_pattern",
+      "description": "Same 4 top tokens as f73r - may indicate paired folios"
+    }
+  ],
+
+  "apparatus_in_nymph_series": {
+    "f72v1": "Balancing scale - measurement/judgment",
+    "f73v": "Crossbow - weapon/hunting/aggression",
+    "note": "Only two apparatus in entire nymph series, both on verso pages"
+  },
+
+  "semantic_note": {
+    "crossbow_symbolism": "May indicate: hunting, defense, aggression, precision, targeting",
+    "contrast_with_scale": "Scale = balance/measurement vs Crossbow = action/projection",
+    "intimidating": "User notes this as 'intimidating' - deliberate choice?"
+  }
+}

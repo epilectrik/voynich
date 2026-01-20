@@ -1,0 +1,91 @@
+{
+  "test": "TEST 2: Diagram-Type Stratification",
+  "status": "COMPLETE",
+  "diagram_types": {
+    "STANDARD_RING": {
+      "folios": [
+        "f57v",
+        "f65r",
+        "f65v",
+        "f67v1",
+        "f67v2",
+        "f68r3",
+        "f68v1",
+        "f68v2",
+        "f69r",
+        "f69v",
+        "f70r1",
+        "f70r2"
+      ],
+      "token_count": 1109,
+      "uniformity_to_pooled": 0.9669548098755727
+    },
+    "SCATTER": {
+      "folios": [
+        "f68r1",
+        "f68r2"
+      ],
+      "token_count": 81,
+      "uniformity_to_pooled": 0.8795442854951394
+    },
+    "SEGMENTED": {
+      "folios": [
+        "f67r1",
+        "f67r2",
+        "f68v3"
+      ],
+      "token_count": 381,
+      "uniformity_to_pooled": 0.9178928796120145
+    },
+    "NYMPH": {
+      "folios": [
+        "f70v1",
+        "f70v2",
+        "f71r",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3",
+        "f72v1",
+        "f72v2",
+        "f72v3",
+        "f73r",
+        "f73v"
+      ],
+      "token_count": 1330,
+      "uniformity_to_pooled": 0.9710183692653005
+    }
+  },
+  "prefix_similarity_matrix": {
+    "STANDARD_RING": {
+      "STANDARD_RING": 1.0,
+      "SCATTER": 0.7979510650144391,
+      "SEGMENTED": 0.9562389973868997,
+      "NYMPH": 0.8820115230283289
+    },
+    "SCATTER": {
+      "STANDARD_RING": 0.7979510650144391,
+      "SCATTER": 1.0,
+      "SEGMENTED": 0.7604711103682849,
+      "NYMPH": 0.8839033888858933
+    },
+    "SEGMENTED": {
+      "STANDARD_RING": 0.9562389973868997,
+      "SCATTER": 0.7604711103682849,
+      "SEGMENTED": 0.9999999999999999,
+      "NYMPH": 0.8081358385426471
+    },
+    "NYMPH": {
+      "STANDARD_RING": 0.8820115230283289,
+      "SCATTER": 0.8839033888858933,
+      "SEGMENTED": 0.8081358385426471,
+      "NYMPH": 1.0
+    }
+  },
+  "summary": {
+    "avg_uniformity": 0.9338525860620067,
+    "min_uniformity": 0.8795442854951394,
+    "verdict": "UNIFORM",
+    "interpretation": "Visual diagram variation is INTERFACE only - same functional signature"
+  }
+}

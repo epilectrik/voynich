@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-19
+CONSTRAINT_REFERENCE v2.6 | 362 constraints | 2026-01-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -360,3 +360,9 @@ C491	Judgment-Critical Program Axis (OPPORTUNISTIC orthogonal to caution/aggress
 C492	**PREFIX Phase-Exclusive Legality** (ct PREFIX is 0% C/S-zones, 26% P-zone, invariant)	2	A→AZC	-> C492_prefix_phase_exclusion.md
 C493	**Brunschwig Grammar Embedding** (balneum marie procedure fits with 0 forbidden violations)	2	B	-> C493_brunschwig_grammar_embedding.md
 C494	**REGIME_4 Precision Axis** (encodes precision-constrained execution, not intensity)	2	B	-> C494_regime4_precision_axis.md
+C495	**SUFFIX–REGIME Compatibility Breadth** (-r universal, -ar/-or restricted; V=0.159)	2	A→B	in: morphology
+C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC	in: azc_system
+C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits)	2	A	in: currier_a
+C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
+C499	Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig)	3	A	in: currier_a
+C500	Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×)	3	A	in: currier_a

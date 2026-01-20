@@ -191,13 +191,31 @@ Structure preserved with H-only clean data:
 
 The three-layer hierarchy is robust to data correction. This is one of the most defensible findings in the project.
 
+### Finding (2-Track Stratification - 2026-01-20)
+
+Following C498 (Two-Track Vocabulary Structure), re-analyzed type-specificity by track:
+
+| Track | Type-Specific | 2-Type | 3-Type | Universal | n |
+|-------|--------------|--------|--------|-----------|---|
+| Registry-internal | **62.5%** | 17.2% | 3.9% | 16.4% | 128 |
+| Pipeline-participating | **46.1%** | 16.4% | 14.8% | 22.7% | 128 |
+
+**Statistical test:** Chi-square = 12.64, df=3, p < 0.01, Cramer's V = 0.222
+
+**Finding:** The 75.4% type-specific rate is **CONFOUNDED** by the 2-track structure:
+- Registry-internal MIDDLEs (folio-localized, avg 1.34 folios) show artificially high type-specificity because they appear in fewer folios and thus naturally span fewer product types
+- Pipeline-participating MIDDLEs (which actually flow through A→AZC→B) show 46.1% type-specificity - significantly lower
+
+**Interpretation:** Product-type encoding in operational vocabulary is weaker than the aggregate 75.4% suggests. The hierarchical structure is still valid, but the type-specific layer is dominated by registry-internal vocabulary that encodes within-category fine distinctions, not execution-relevant product-type markers.
+
 ### Status
 ✔ Real, quantifies existing implications
 ✔ Survives data hygiene audit
+✔ 2-track stratification reveals confound (2026-01-20)
 ✖ Already implicit in C383, C475, C476
 ✖ Adds clarity, not new rule
 
-**Correct handling:** Fold into C383/C475 documentation, not separate constraint.
+**Correct handling:** Fold into C383/C475 documentation, not separate constraint. Note 2-track confound.
 
 ---
 

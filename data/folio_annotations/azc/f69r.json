@@ -1,0 +1,94 @@
+{
+  "folios": ["f69r"],
+  "date": "2026-01-19",
+  "type": "single_folio",
+  "quire": 9,
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f69r": {
+      "tokens": 164,
+      "description": "Multi-layer ring diagram with unique innermost character ring",
+      "layout": {
+        "paragraph_above": {
+          "placement": "P",
+          "tokens": 36,
+          "lines": 4,
+          "description": "Currier A-like text block above diagram"
+        },
+        "outer_ring": {
+          "placement": "S",
+          "tokens": 11,
+          "lines": 1,
+          "encoding": "Continuous (all line 1)",
+          "description": "Outer token ring"
+        },
+        "spokes": {
+          "placement": "R",
+          "tokens": 68,
+          "lines": 22,
+          "description": "22 spoke lines radiating inward"
+        },
+        "inner_ring": {
+          "placement": "C",
+          "tokens": 43,
+          "lines": 16,
+          "encoding": "16 segments (2-4 tokens each)",
+          "description": "Inner ring area - segmented rather than continuous",
+          "note": "Not continuous like typical rings - may be divided by spoke extensions"
+        },
+        "character_ring": {
+          "placement": "W",
+          "tokens": 6,
+          "lines": 6,
+          "encoding": "1 character per line (scattered)",
+          "characters": ["d", "o", "l", "s", "em", "y"],
+          "description": "Innermost ring of single characters, spaced around center",
+          "visual_note": "Characters divided by illustration elements"
+        }
+      },
+      "diagram_type": "multi_ring_character_center",
+      "visual_notes": [
+        "Outer ring (S) is continuous",
+        "22 spokes - unusually high count",
+        "Inner ring (C) appears segmented into 16 sections",
+        "Innermost layer: single characters spaced out with illustration between",
+        "Characters may form a word or be labels"
+      ]
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "W_placement": "Unique to this folio - used for single-character tokens at center",
+    "characters_transcribed": "d, o, l, s, em, y - note 'em' is 2 chars",
+    "possible_interpretation": "Could spell something, or could be positional labels"
+  },
+
+  "user_observations": [
+    "Block of text above diagram",
+    "Outer token ring",
+    "Token spokes",
+    "Inner token ring",
+    "Inside inner ring: ring of single characters",
+    "Single characters divided by illustration - appears spaced out"
+  ],
+
+  "oddities": [
+    {
+      "type": "character_ring",
+      "description": "Innermost layer has single characters (d,o,l,s,em,y) spaced around center with illustration between"
+    },
+    {
+      "type": "segmented_inner_ring",
+      "description": "C placement has 16 lines instead of 1 - inner ring appears divided into segments"
+    },
+    {
+      "type": "high_spoke_count",
+      "description": "22 spokes is unusually high compared to other AZC diagrams"
+    },
+    {
+      "type": "W_placement_unique",
+      "description": "W placement code appears unique to this folio"
+    }
+  ]
+}

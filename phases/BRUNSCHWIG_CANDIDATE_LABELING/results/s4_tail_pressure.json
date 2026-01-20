@@ -1,0 +1,41 @@
+{
+  "test": "S4_TAIL_PRESSURE",
+  "date": "2026-01-20",
+  "hypothesis": "Naked MIDDLEs concentrate in final coverage push (Q4)",
+  "q4_threshold": 154.4,
+  "posture_results": {
+    "NAKED": {
+      "total": 58,
+      "q4_intro": 22,
+      "q4_rate": 0.379
+    },
+    "CLOSURE": {
+      "total": 30,
+      "q4_intro": 2,
+      "q4_rate": 0.067
+    },
+    "MINIMAL": {
+      "total": 32,
+      "q4_intro": 9,
+      "q4_rate": 0.281
+    },
+    "EXECUTION": {
+      "total": 5,
+      "q4_intro": 0,
+      "q4_rate": 0.0
+    },
+    "STRUCTURAL": {
+      "total": 4,
+      "q4_intro": 0,
+      "q4_rate": 0.0
+    }
+  },
+  "comparison": {
+    "naked_q4_rate": 0.379,
+    "closure_q4_rate": 0.067,
+    "ratio": 5.69,
+    "chi_square": 9.74,
+    "phi": 0.333
+  },
+  "verdict": "CONFIRMED"
+}

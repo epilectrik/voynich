@@ -1,7 +1,9 @@
-# AZC System Constraints (C300-C322, C430-C444, C468-C470)
+# AZC System Constraints (C300-C322, C430-C444, C468-C470, C496)
 
 **Scope:** Astronomical/Zodiac/Cosmological hybrid system - decision-point grammar and compatibility filter
 **Status:** CLOSED (all sections)
+
+> **P-Text Note (2026-01-19):** Constraints C302-C322 were validated with P-placement tokens included. P-text (398 tokens, 12.1%) has been reclassified as Currier A for analytical purposes. Diagram-only statistics use 2,901 tokens. See C300 note and AZC_INTERFACE_VALIDATION phase. Constraints operating at folio/family level (C430-C444, C468-C473) and Zodiac-focused constraints (C454-C460) are unaffected.
 
 ---
 
@@ -11,6 +13,7 @@
 **Tier:** 2 | **Status:** CLOSED
 8.7% of corpus (3,299 tokens in 30 folios) never classified by Currier as A or B.
 **Note:** Corrected 2026-01-15 from 9,401 (all transcribers) to 3,299 (H primary only).
+**Note:** AZC token counts exclude co-located Currier A paragraph text for analytical purposes. Of 3,299 transcript tokens, 398 (12.1%) are P-placement text that is linguistically A-like (PREFIX cosine 0.946 to A). For AZC legality analysis, use diagram-only count: **2,901 tokens**. See AZC_INTERFACE_VALIDATION (2026-01-19).
 **Source:** AZC
 
 ### C301 - AZC is HYBRID
@@ -19,11 +22,13 @@
 ### C302 - Distinct Line Structure
 **Tier:** 2 | **Status:** CLOSED
 Median 8 tokens/line (vs A=22, B=31). TTR 0.285 (vs A=0.137, B=0.096).
+**P-text note:** Statistics include P-text (12.1%). Diagram-only line metrics may differ slightly.
 **Source:** AZC
 
 ### C303 - Elevated LINK Density
 **Tier:** 2 | **Status:** CLOSED
 7.6% LINK density — higher than A (3.0%) and B (6.6%). Most wait-heavy text.
+**P-text note:** LINK density includes P-text. Diagram-only density may differ.
 **Source:** AZC
 
 ### C304 - 27.4% Unique Vocabulary
@@ -35,6 +40,7 @@ Median 8 tokens/line (vs A=22, B=31). TTR 0.285 (vs A=0.137, B=0.096).
 ### C305 - LABELING Signature
 **Tier:** 2 | **Status:** CLOSED
 AZC-unique vocabulary: 98% section-exclusive, 37% line-initial, 37% line-final, 65.9% hapax. Function = LABELING.
+**P-text note:** Labeling signature includes P-text vocabulary contributions.
 **Source:** AZC-PROBE
 
 ---
@@ -44,11 +50,13 @@ AZC-unique vocabulary: 98% section-exclusive, 37% line-initial, 37% line-final, 
 ### C306 - Placement-Coding Axis
 **Tier:** 2 | **Status:** CLOSED
 Finite placement classes: C (17.1%), P (11.0%), R1-R3, S-S2, Y. Orthogonal to morphology.
+**P-text note:** P placement (11.0%) represents paragraph text now reclassified as Currier A.
 **Source:** AZC-PLACEMENT
 
 ### C307 - Placement × Morphology Dependency
 **Tier:** 2 | **Status:** CLOSED
 Cramer's V = 0.18 (PREFIX), 0.17 (SUFFIX). Weak but present.
+**P-text note:** Correlation includes P-placement tokens.
 **Source:** AZC-AXIS
 
 ### C308 - Ordered Subscripts
@@ -59,21 +67,25 @@ R1>R2>R3 and S>S1>S2 in component length (monotonic decrease). Ordinal position 
 ### C309 - Grammar-Like Placement Transitions
 **Tier:** 2 | **Status:** CLOSED
 99 forbidden bigrams, self-transitions enriched 5-26x.
+**P-text note:** Transition grammar includes P-placement in bigram counts.
 **Source:** AZC-AXIS
 
 ### C310 - Placement Constrains Repetition
 **Tier:** 2 | **Status:** CLOSED
 P, S-series allow higher repetition (2.7-3.0); R-series lower (2.1-2.4).
+**P-text note:** P-placement repetition rates (2.7-3.0) now characterize Currier A material.
 **Source:** AZC-AXIS
 
 ### C311 - Positional Grammar
 **Tier:** 2 | **Status:** CLOSED
 S1, S2, X = boundary specialists (85-90% line-edge). R1, R2, R3 = interior specialists (3-9% boundary).
+**P-text note:** Positional statistics exclude P (paragraph text is not positionally stratified like R/S).
 **Source:** AZC-AXIS
 
 ### C312 - Section × Placement Strong
 **Tier:** 2 | **Status:** CLOSED
 Cramer's V = 0.631. Z, A, C sections have distinct placement profiles.
+**P-text note:** Section × placement correlation includes P (A/C sections host P-text).
 **Source:** AZC-AXIS
 
 ---
@@ -83,6 +95,7 @@ Cramer's V = 0.631. Z, A, C sections have distinct placement profiles.
 ### C313 - Position Constrains LEGALITY
 **Tier:** 2 | **Status:** CLOSED
 219 forbidden token-placement pairs (z=13). Position defines what's ALLOWED, not what's LIKELY (only 14% prediction gain).
+**P-text note:** Forbidden pairs include P-zone. Diagram-only legality excludes P-placement.
 **Source:** AZC-AXIS
 
 ### C314 - Global Illegality + Local Exceptions
@@ -103,6 +116,7 @@ Default-deny with explicit permits, not role-based permissions.
 ### C317 - Hybrid Architecture
 **Tier:** 2 | **Status:** CLOSED
 C placement is rotation-tolerant (9.8% drop). P/R/S are phase-locked (40-78% drop). Topological core with positional frame.
+**P-text note (2026-01-19):** P-position phase-locking now characterizes Currier A material. R/S/C statistics remain valid for diagram positions.
 **Source:** AZC-AXIS
 
 ### C318 - Folio-Specific Profiles
@@ -138,6 +152,25 @@ Only 5/25 placements have full zodiac coverage. AZC encodes workflow states whos
 
 ## Refinement Notes
 
+### AZC-NOTE-02: P-Text Reclassification (refines C300/C301)
+
+P-placement tokens on AZC folios (398 tokens, 12.1% of AZC) are linguistically **Currier A**, not AZC.
+
+**Evidence:** AZC_INTERFACE_VALIDATION (2026-01-19)
+- PREFIX cosine to Currier A: 0.946
+- PREFIX cosine to AZC diagram: 0.777
+- Exclusive vocabulary: 57 types shared only with A vs 10 with diagram (5.7x ratio)
+
+**Classification:** A-ON-AZC-FOLIO
+
+**Analytical recommendation:** Exclude P-placement from AZC legality calculations. P-text represents A-like material that happens to appear above AZC diagrams (f65v, f67r1, f67r2, f68r1, f68r2, f68v2, f68v3, f69r, f70r2).
+
+**Note:** C300's count of 3,299 remains correct (transcript classification unchanged). This is an analytical reclassification for functional purposes.
+
+See: `context/ARCHITECTURE/azc_transcript_encoding.md` for full encoding documentation.
+
+---
+
 ### AZC-NOTE-01: qo-Prefix Depletion (refines C301/C313)
 
 AZC exhibits significant depletion of `qo-` prefixed forms (~2.8x lower than Currier B: 6.5% vs 18.0%), consistent with AZC's placement-constrained legality reducing reliance on B-style escape routing.
@@ -148,6 +181,47 @@ AZC exhibits significant depletion of `qo-` prefixed forms (~2.8x lower than Cur
 - AZC: qo- = 6.5%
 
 **Interpretation:** Diagram annotations use direct positional labeling rather than escape-route control flow.
+
+---
+
+### AZC-NOTE-03: Nymph S-Position o-Enrichment → C496
+
+**Status:** FORMALIZED as **C496 - Nymph-Adjacent S-Position Prefix Bias**
+
+This note has been promoted to a formal Tier 2 constraint. See C496 in "Nymph Positional Refinement" section above.
+
+---
+
+### AZC-NOTE-04: Diagram Type Uniformity (confirms C137, C436)
+
+All AZC diagram types (STANDARD_RING, SCATTER, SEGMENTED, NYMPH) show same functional signature despite visual differences.
+
+**Evidence:** AZC_INTERFACE_VALIDATION TEST 2 (2026-01-19)
+- PREFIX cosine to pooled profile:
+  - STANDARD_RING: 0.9670 (UNIFORM)
+  - SCATTER: 0.8795 (MARGINAL)
+  - SEGMENTED: 0.9179 (UNIFORM)
+  - NYMPH: 0.9710 (UNIFORM)
+- Average uniformity: 0.9339
+
+**Interpretation:** Visual diagram variation is INTERFACE only - same underlying linguistic content. Confirms C137 (illustration independence) and C436 (AZC dual rigidity).
+
+---
+
+### AZC-NOTE-05: Center Tokens are Legality-Participating (refines C306)
+
+Center tokens (C, C1, C2, L, I, W placements) behave like normal ring text, not labels.
+
+**Evidence:** AZC_INTERFACE_VALIDATION TEST 3 (2026-01-19)
+- Single-char tokens: 3.2% (below 5% label threshold)
+- PREFIX cosine to ring: 0.9395 (above 0.85 label threshold)
+- Vocabulary overlap: 30.0% (at 30% threshold)
+
+**Interpretation:** Transcribed center tokens should be included in standard legality analysis.
+
+⚠️ **DATA QUALITY WARNING:** Center placements on nymph folios may be partially under-transcribed. Analyses use available tokens only. If center tokens are ever manually transcribed, re-run AZC stats—but the architecture is unaffected.
+
+See: `context/ARCHITECTURE/azc_transcript_encoding.md` for full encoding documentation.
 
 ---
 
@@ -234,6 +308,31 @@ The contrast is **uniform-versus-varied rigidity**, not rigid-versus-permissive 
 
 ---
 
+## Nymph Positional Refinement (C496)
+
+### C496 - Nymph-Adjacent S-Position Prefix Bias
+**Tier:** 2 | **Status:** CLOSED | **Refines:** C435
+
+On nymph-interrupted AZC folios (f70v-f73v), S-positions adjacent to illustration occlusions exhibit significant enrichment of o-prefix tokens (ok/ot/o ≈ 75%) relative to continuous ring positions (~50%).
+
+**Evidence:**
+- S-interrupted PREFIX: ok:25.4%, ot:25.1%, o:24.5% = **75% o-prefixes**
+- R-continuous PREFIX: ok:14.6%, ot:27.9%, other = ~43% o-prefixes
+- PREFIX cosine (S vs R on same folio): 0.8421 (below 0.85 threshold)
+
+**Interpretation:** This effect is positional and context-dependent, indicating a refined control-posture preference under occluded ring geometry. The illustration creates a visual occlusion/boundary, and the grammar compensates by preferring structurally conservative control roles (o-type: homogeneous/stable/anchor) in that micro-position.
+
+This does NOT introduce:
+- New legality zones
+- New semantics
+- New execution pathways
+
+It represents **localized modulation** within the existing AZC legality system, consistent with C382 (morphology encodes control phase) and C466 (PREFIX = control-flow participation).
+
+**Source:** AZC_INTERFACE_VALIDATION TEST 4 (2026-01-19)
+
+---
+
 ## Threading and Compatibility (C437-C442)
 
 ### C437 - AZC Folios Maximally Orthogonal
@@ -291,11 +390,13 @@ Escape rates vary systematically by AZC position for A-types:
 - Position S1, S2: 0% escape
 
 Interior positions permit intervention; boundary positions forbid it.
+**P-text note (2026-01-19):** P and P2 escape rates (11.6%, 24.7%) now characterize Currier A material on AZC folios, not AZC diagram text. R/S escape rates remain valid for diagram positions. The structural pattern (interior permits, boundary forbids) is unaffected.
 **Source:** azc_a_navigation analysis
 
 ### C444 - A-Type Position Distribution
 **Tier:** 2 | **Status:** CLOSED
 A-types distribute across ALL AZC positions (14-21 unique placements per high-frequency type). No A-type is locked to specific positions. The SAME material can appear in high-escape or zero-escape positions; position determines legality, not content.
+**P-text note (2026-01-19):** Position distribution includes P placement; P-text is now reclassified as Currier A. The distribution pattern for diagram positions (R/S/C) is unaffected.
 **Source:** azc_a_navigation analysis
 
 ---

@@ -1,0 +1,55 @@
+{
+  "test": "SUFFIX_TRACK_DISTRIBUTION",
+  "date": "2026-01-20",
+  "token_counts": {
+    "registry_internal": 1265,
+    "pipeline": 10081
+  },
+  "chi_square": 557.92,
+  "cramers_v": 0.222,
+  "suffix_class_rates": {
+    "registry_internal": {
+      "EXECUTION": 24.6,
+      "CLOSURE": 62.2,
+      "NONE": 6.6,
+      "MINIMAL": 4.8,
+      "STRUCTURAL": 1.7
+    },
+    "pipeline": {
+      "MINIMAL": 9.2,
+      "CLOSURE": 46.8,
+      "EXECUTION": 27.2,
+      "NONE": 10.1,
+      "STRUCTURAL": 6.7
+    }
+  },
+  "enrichments": {
+    "-d": 2.123,
+    "-y": 1.776,
+    "-ey": 1.531,
+    "-or": 1.353,
+    "-dy": 1.29,
+    "-ol": 1.26,
+    "-om": 1.216,
+    "[none]": 0.686,
+    "-s": 0.485,
+    "-aiin": 0.426,
+    "-m": 0.28,
+    "-al": 0.204,
+    "-am": 0.195,
+    "-l": 0.057,
+    "-ar": 0.055,
+    "-an": 0.0,
+    "-ain": 0.0,
+    "-in": 0.0,
+    "-n": 0.0,
+    "-edy": 0.0,
+    "-r": 0.0
+  },
+  "type_level": {
+    "ri_suffixless_middles": 58,
+    "ri_total_middles": 129,
+    "pp_suffixless_middles": 174,
+    "pp_total_middles": 2034
+  }
+}

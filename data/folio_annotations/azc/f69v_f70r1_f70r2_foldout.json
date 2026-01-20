@@ -1,0 +1,74 @@
+{
+  "folios": ["f69v", "f70r1", "f70r2"],
+  "date": "2026-01-19",
+  "type": "triple_foldout",
+  "method": "Visual inspection + transcript analysis",
+  "description": "Three connected folios forming a single foldout with circular diagrams",
+  "structure": {
+    "f69v": {
+      "position": "left",
+      "content": "circular_diagram",
+      "tokens": 137,
+      "placements": {
+        "C": 103,
+        "L": 34
+      },
+      "notes": "Full circular diagram with labels around perimeter"
+    },
+    "f70r1": {
+      "position": "center",
+      "content": "circular_diagram",
+      "tokens": 112,
+      "placements": {
+        "C": 71,
+        "Y": 20,
+        "I": 15,
+        "X": 6
+      },
+      "notes": "Circular diagram, some text in non-standard positions (Y, I, X)"
+    },
+    "f70r2": {
+      "position": "right",
+      "content": "circular_diagram + separate_text_block",
+      "tokens": 248,
+      "placements": {
+        "C": 138,
+        "P": 100,
+        "I": 10
+      },
+      "notes": "Circular diagram on left, SEPARATE paragraph text block on far right"
+    }
+  },
+  "oddities": [
+    {
+      "folio": "f70r2",
+      "type": "separate_text_block",
+      "placement": "P",
+      "location": "far right of folio",
+      "token_count": 100,
+      "vocabulary_size": 75,
+      "description": "Large block of paragraph text separate from circular diagram",
+      "linguistic_character": "A-like",
+      "evidence": {
+        "prefix_cosine_similarity": {
+          "vs_currier_a": 0.972,
+          "vs_currier_b": 0.925,
+          "vs_azc_rcs": 0.890
+        },
+        "vocabulary_overlap": {
+          "currier_a_pct": 68.0,
+          "currier_b_pct": 70.7,
+          "azc_rcs_pct": 57.3
+        }
+      },
+      "interpretation": "Text linguistically resembles Currier A more than AZC diagram text. May be misclassified in transcript as AZC when functionally A-like."
+    }
+  ],
+  "user_observations": [
+    "All 3 folios appear to be the same foldout",
+    "3 circular diagrams total",
+    "Text on far right of f70r2 is visually separate from diagrams",
+    "Separate text does NOT look like circular diagram text",
+    "Separate text looks more like Currier A paragraph text"
+  ]
+}

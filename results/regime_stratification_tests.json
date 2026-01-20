@@ -1,0 +1,375 @@
+{
+  "T1": {
+    "test": "T1_morphological_prediction",
+    "prefix_distribution": [
+      {
+        "prefix": "ch",
+        "single": 65,
+        "partial": 61,
+        "universal": 42
+      },
+      {
+        "prefix": "sh",
+        "single": 40,
+        "partial": 35,
+        "universal": 23
+      },
+      {
+        "prefix": "qo",
+        "single": 29,
+        "partial": 42,
+        "universal": 17
+      },
+      {
+        "prefix": "d",
+        "single": 27,
+        "partial": 26,
+        "universal": 15
+      },
+      {
+        "prefix": "ok",
+        "single": 23,
+        "partial": 24,
+        "universal": 17
+      },
+      {
+        "prefix": "ot",
+        "single": 21,
+        "partial": 22,
+        "universal": 15
+      },
+      {
+        "prefix": "qok",
+        "single": 17,
+        "partial": 15,
+        "universal": 19
+      },
+      {
+        "prefix": "s",
+        "single": 21,
+        "partial": 16,
+        "universal": 6
+      },
+      {
+        "prefix": "k",
+        "single": 14,
+        "partial": 18,
+        "universal": 9
+      },
+      {
+        "prefix": "y",
+        "single": 18,
+        "partial": 14,
+        "universal": 5
+      }
+    ],
+    "prefix_chi2": 4.428244374433988,
+    "prefix_p_value": 0.8165683682569367,
+    "prefix_cramers_v": 0.06749671821342347,
+    "suffix_distribution": [
+      {
+        "suffix": "y",
+        "single": 91,
+        "partial": 91,
+        "universal": 62
+      },
+      {
+        "suffix": "dy",
+        "single": 40,
+        "partial": 43,
+        "universal": 26
+      },
+      {
+        "suffix": "ol",
+        "single": 32,
+        "partial": 32,
+        "universal": 11
+      },
+      {
+        "suffix": "r",
+        "single": 19,
+        "partial": 21,
+        "universal": 29
+      },
+      {
+        "suffix": "ar",
+        "single": 37,
+        "partial": 22,
+        "universal": 6
+      },
+      {
+        "suffix": "aiin",
+        "single": 33,
+        "partial": 21,
+        "universal": 11
+      },
+      {
+        "suffix": "or",
+        "single": 31,
+        "partial": 29,
+        "universal": 5
+      },
+      {
+        "suffix": "m",
+        "single": 16,
+        "partial": 27,
+        "universal": 9
+      },
+      {
+        "suffix": "s",
+        "single": 24,
+        "partial": 18,
+        "universal": 7
+      },
+      {
+        "suffix": "o",
+        "single": 24,
+        "partial": 18,
+        "universal": 5
+      }
+    ],
+    "suffix_chi2": 28.363256786500546,
+    "suffix_p_value": 0.00040988519646343485,
+    "suffix_cramers_v": 0.15885280678308852,
+    "regime_prefix_distribution": [
+      {
+        "prefix": "ch",
+        "R1": 36,
+        "R2": 9,
+        "R3": 12,
+        "R4": 8
+      },
+      {
+        "prefix": "sh",
+        "R1": 24,
+        "R2": 2,
+        "R3": 9,
+        "R4": 5
+      },
+      {
+        "prefix": "qo",
+        "R1": 13,
+        "R2": 3,
+        "R3": 9,
+        "R4": 4
+      },
+      {
+        "prefix": "d",
+        "R1": 11,
+        "R2": 3,
+        "R3": 9,
+        "R4": 4
+      },
+      {
+        "prefix": "ok",
+        "R1": 12,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      {
+        "prefix": "s",
+        "R1": 11,
+        "R2": 1,
+        "R3": 5,
+        "R4": 4
+      },
+      {
+        "prefix": "ot",
+        "R1": 7,
+        "R2": 8,
+        "R3": 2,
+        "R4": 4
+      },
+      {
+        "prefix": "y",
+        "R1": 6,
+        "R2": 5,
+        "R3": 3,
+        "R4": 4
+      }
+    ],
+    "regime_prefix_chi2": 10.723914007912386,
+    "regime_prefix_p_value": 0.5527157445686295,
+    "regime_prefix_cramers_v": 0.13938213819968698
+  },
+  "T2": {
+    "test": "T2_frequency_analysis",
+    "single_regime_stats": {
+      "n": 450,
+      "mean": 2.537777777777778,
+      "median": 1.0,
+      "hapax_count": 250,
+      "hapax_pct": 55.55555555555556
+    },
+    "partial_stats": {
+      "n": 443,
+      "mean": 4.049661399548532,
+      "median": 2.0,
+      "hapax_count": 168,
+      "hapax_pct": 37.92325056433408
+    },
+    "universal_stats": {
+      "n": 252,
+      "mean": 21.928571428571427,
+      "median": 8.0,
+      "hapax_count": 33,
+      "hapax_pct": 13.095238095238095
+    },
+    "single_vs_universal_U": 18764.0,
+    "single_vs_universal_p": 1.3336550194732612e-52,
+    "single_vs_universal_r": 0.6690652557319223,
+    "tier_breakdown": [
+      {
+        "tier": "hapax (1x)",
+        "single_pct": 55.432372505543235,
+        "partial_pct": 37.250554323725055,
+        "universal_pct": 7.317073170731708,
+        "n": 451
+      },
+      {
+        "tier": "rare (2-5x)",
+        "single_pct": 38.497652582159624,
+        "partial_pct": 45.774647887323944,
+        "universal_pct": 15.727699530516432,
+        "n": 426
+      },
+      {
+        "tier": "common (6-20x)",
+        "single_pct": 17.582417582417584,
+        "partial_pct": 37.91208791208791,
+        "universal_pct": 44.505494505494504,
+        "n": 182
+      },
+      {
+        "tier": "frequent (>20x)",
+        "single_pct": 4.651162790697675,
+        "partial_pct": 12.790697674418604,
+        "universal_pct": 82.55813953488372,
+        "n": 86
+      }
+    ],
+    "tier_chi2": 335.73196791132517,
+    "tier_p_value": 1.7815542547104143e-69,
+    "tier_cramers_v": 0.3828940404987873
+  },
+  "T3": {
+    "test": "T3_azc_cross_reference",
+    "position_profiles": {
+      "single": {
+        "MIDDLE": 98.16112084063047,
+        "P1": 1.2259194395796849,
+        "FINAL": 0.6129597197898424
+      },
+      "partial": {
+        "MIDDLE": 98.71794871794872,
+        "FINAL": 0.7246376811594203,
+        "P1": 0.5574136008918618
+      },
+      "universal": {
+        "MIDDLE": 99.20376402461093,
+        "FINAL": 0.7057546145494028,
+        "P1": 0.09048136083966703
+      }
+    },
+    "position_chi2": 38.92396777202125,
+    "position_p_value": 7.222965321170479e-08,
+    "position_cramers_v": 0.04795755613560762,
+    "p1_enrichment": {
+      "single_rate": 2.888888888888889,
+      "universal_rate": 1.9841269841269842,
+      "odds_ratio": 1.4695652173913043,
+      "p_value": 0.6205848191609076
+    }
+  },
+  "T4": {
+    "test": "T4_folio_clustering",
+    "folio_profiles": [
+      {
+        "folio": "f3v",
+        "single_pct": 33.333333333333336,
+        "n": 48
+      },
+      {
+        "folio": "f13r",
+        "single_pct": 32.608695652173914,
+        "n": 46
+      },
+      {
+        "folio": "f96r",
+        "single_pct": 31.48148148148148,
+        "n": 54
+      },
+      {
+        "folio": "f30v",
+        "single_pct": 29.032258064516128,
+        "n": 31
+      },
+      {
+        "folio": "f11v",
+        "single_pct": 27.586206896551722,
+        "n": 29
+      },
+      {
+        "folio": "f87v",
+        "single_pct": 26.923076923076923,
+        "n": 52
+      },
+      {
+        "folio": "f20r",
+        "single_pct": 26.666666666666668,
+        "n": 45
+      },
+      {
+        "folio": "f37v",
+        "single_pct": 26.31578947368421,
+        "n": 38
+      },
+      {
+        "folio": "f90r1",
+        "single_pct": 26.19047619047619,
+        "n": 42
+      },
+      {
+        "folio": "f17r",
+        "single_pct": 25.641025641025642,
+        "n": 39
+      },
+      {
+        "folio": "f21r",
+        "single_pct": 9.090909090909092,
+        "n": 55
+      },
+      {
+        "folio": "f5r",
+        "single_pct": 9.090909090909092,
+        "n": 33
+      },
+      {
+        "folio": "f89v1",
+        "single_pct": 8.602150537634408,
+        "n": 93
+      },
+      {
+        "folio": "f15v",
+        "single_pct": 7.6923076923076925,
+        "n": 39
+      },
+      {
+        "folio": "f17v",
+        "single_pct": 5.194805194805195,
+        "n": 77
+      }
+    ],
+    "single_pct_stats": {
+      "mean": 17.68944364734825,
+      "std": 5.320089996210993,
+      "min": 5.194805194805195,
+      "max": 33.333333333333336
+    },
+    "coefficient_of_variation": 0.3007494244743252,
+    "folio_chi2": 228.15053639188193,
+    "folio_p_value": 0.4474237699885391,
+    "folio_cramers_v": 0.13665033058587586
+  }
+}

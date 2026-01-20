@@ -1,0 +1,78 @@
+{
+  "folios": ["f73r"],
+  "date": "2026-01-19",
+  "type": "single_folio",
+  "quire": 9,
+  "note": "Nymph page with 4 tokens at top and reptile-like animal",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f73r": {
+      "tokens": 96,
+      "description": "5-ring nymph diagram with 4 tokens at top and reptile-like center",
+      "layout": {
+        "top_tokens": {
+          "placement": "S0",
+          "tokens": 4,
+          "lines": 4,
+          "encoding": "1 token per line (scattered)",
+          "description": "4 tokens at top - ambiguous: could be tiny ring or line above diagram",
+          "tokens_transcribed": ["otoly", "chockhy", "okedy", "yteeody"]
+        },
+        "continuous_rings": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [34, 24, 8],
+          "total": 66
+        },
+        "nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [16, 10],
+          "lines": [16, 10],
+          "total": 26,
+          "encoding": "1 token per line (dense packing)"
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "1 token",
+          "illustration": "Reptile-like animal with reptile tail",
+          "note": "Drawing quality poor - animal type ambiguous"
+        },
+        "paragraph": {
+          "description": "NONE"
+        }
+      },
+      "ring_count": "5 (or 6 if S0 counts as ring)",
+      "diagram_type": "multi_ring_nymph"
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "S0_ambiguity": "4 tokens at top could be: (a) small 4-token ring, (b) line above diagram like P on other folios",
+    "dense_packing": "S1 and S2 both have 1 token per line, indicating dense illustration"
+  },
+
+  "user_observations": [
+    "Similar nymph pattern",
+    "4 tokens at top - ambiguous placement",
+    "Could be 4-token ring or line above diagram",
+    "Token rings (standard nymph style)",
+    "Single token in center",
+    "Animal at center - reptile-like with reptile tail",
+    "Drawing quality poor"
+  ],
+
+  "oddities": [
+    {
+      "type": "top_tokens",
+      "description": "S0 has 4 tokens at top - unique positioning, ambiguous structure"
+    },
+    {
+      "type": "reptile_center",
+      "description": "Animal has reptile-like tail - unusual for nymph series (mostly mammals)"
+    },
+    {
+      "type": "poor_drawing",
+      "description": "Center animal poorly drawn - identification uncertain"
+    }
+  ]
+}

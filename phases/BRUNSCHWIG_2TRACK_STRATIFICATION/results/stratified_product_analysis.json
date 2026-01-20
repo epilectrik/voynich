@@ -1,0 +1,31 @@
+{
+  "test": "STRATIFIED_PRODUCT_EXCLUSIVITY",
+  "date": "2026-01-20",
+  "provenance": "C498 (2-track), F-BRU-005 (type-specific)",
+  "counts": {
+    "registry_internal": {
+      "total": 128,
+      "by_type_count": {
+        "4": 21,
+        "2": 22,
+        "1": 80,
+        "3": 5
+      },
+      "type_specific_pct": 62.5
+    },
+    "pipeline_participating": {
+      "total": 128,
+      "by_type_count": {
+        "4": 29,
+        "2": 21,
+        "3": 19,
+        "1": 59
+      },
+      "type_specific_pct": 46.09375
+    }
+  },
+  "difference_pct_points": 16.40625,
+  "chi_square": 12.642584351123752,
+  "cramers_v": 0.2222275750701905,
+  "significant": true
+}

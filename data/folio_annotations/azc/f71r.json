@@ -1,0 +1,85 @@
+{
+  "folios": ["f71r"],
+  "date": "2026-01-19",
+  "type": "single_folio",
+  "quire": 9,
+  "note": "Nymph page - ladies WITH clothes (unlike f70v2/f70v1)",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f71r": {
+      "tokens": 91,
+      "description": "5-ring diagram with clothed ladies in tubes and goat eating plant at center",
+      "layout": {
+        "outer_rings_continuous": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [38, 24, 10],
+          "total": 72,
+          "encoding": "Each ring on single line (continuous)",
+          "description": "3 outer rings with continuous text"
+        },
+        "inner_rings_nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [12, 7],
+          "lines": [10, 5],
+          "total": 19,
+          "encoding": "Multiple lines per ring (nymph interruptions)",
+          "description": "2 inner rings where clothed lady figures break text into segments"
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "1 token",
+          "transcript_note": "No C placement - center token not in transcript",
+          "description": "Center area with goat eating plant"
+        },
+        "paragraph": {
+          "description": "NONE - no external text block"
+        }
+      },
+      "diagram_type": "multi_ring_nymph",
+      "illustration_notes": [
+        "Ladies in tubes WITH CLOTHES (different from f70v2/f70v1)",
+        "Goat eating a plant at center",
+        "Similar structure to f70v2/f70v1 but clothed figures"
+      ],
+      "visual_notes": [
+        "5 visible rings",
+        "Outer 3 rings: continuous text",
+        "Inner 2 rings: text segments between clothed lady figures",
+        "No paragraph text"
+      ]
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "same_pattern_as_f70": "R for continuous rings, S for nymph-interrupted rings",
+    "center_missing": "User sees center token but no C placement in transcript"
+  },
+
+  "user_observations": [
+    "5 rings",
+    "Single token in center",
+    "Ladies in tubes but WITH CLOTHES (unlike naked nymphs on f70v)",
+    "Goat eating a plant in center"
+  ],
+
+  "oddities": [
+    {
+      "type": "clothed_vs_naked",
+      "description": "Ladies have clothes - contrasts with naked nymphs on f70v2/f70v1"
+    },
+    {
+      "type": "center_token_missing",
+      "description": "User observes 1 center token but no C placement in transcript"
+    },
+    {
+      "type": "goat_with_plant",
+      "description": "Goat eating plant - more detailed than f70v1's plain goat"
+    }
+  ],
+
+  "comparison_to_f70v": {
+    "similarities": ["5 rings", "nymph-divided inner rings", "goat at center", "no paragraph"],
+    "differences": ["clothed figures (vs naked)", "goat eating plant (vs plain goat)"]
+  }
+}

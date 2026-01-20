@@ -1,0 +1,17 @@
+{
+  "test": "TEST 4: Nymph-Interrupted vs Continuous Rings",
+  "status": "COMPLETE",
+  "token_counts": {
+    "nymph_interrupted": 366,
+    "nymph_continuous": 964,
+    "non_nymph_continuous": 1054
+  },
+  "similarities": {
+    "s_vs_nymph_r_prefix": 0.8420808519826531,
+    "s_vs_all_continuous_prefix": 0.8243064398160237,
+    "nymph_r_vs_non_nymph_prefix": 0.8529020548456842
+  },
+  "verdict": "FUNCTIONAL",
+  "interpretation": "Interruption encodes structural difference - attention pacing?",
+  "constraint_status": "NEW CONSTRAINT NEEDED"
+}

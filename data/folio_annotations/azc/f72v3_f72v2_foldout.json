@@ -1,0 +1,112 @@
+{
+  "folios": ["f72v3", "f72v2"],
+  "date": "2026-01-19",
+  "type": "double_foldout",
+  "quire": 9,
+  "note": "Nymph pages with exotic center illustrations",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f72v3": {
+      "position": "left",
+      "tokens": 121,
+      "description": "5-ring nymph diagram with large feline at center",
+      "layout": {
+        "continuous_rings": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [40, 31, 14],
+          "total": 85
+        },
+        "nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [21, 15],
+          "lines": [18, 12],
+          "total": 36
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "token likely present",
+          "illustration": "Large feline - tiger or similar big cat"
+        },
+        "paragraph": {
+          "description": "NONE"
+        }
+      },
+      "ring_count": 5,
+      "diagram_type": "multi_ring_nymph"
+    },
+
+    "f72v2": {
+      "position": "right",
+      "tokens": 110,
+      "description": "5-ring nymph diagram with lady of status at center",
+      "layout": {
+        "continuous_rings": {
+          "placements": ["R1", "R2", "R3"],
+          "tokens": [37, 28, 12],
+          "total": 77
+        },
+        "nymph_divided": {
+          "placements": ["S1", "S2"],
+          "tokens": [19, 14],
+          "lines": [18, 12],
+          "total": 33
+        },
+        "center": {
+          "placement": "(none)",
+          "user_observed": "token likely present",
+          "illustration": "Lady of status - distinguished female figure"
+        },
+        "paragraph": {
+          "description": "NONE"
+        }
+      },
+      "ring_count": 5,
+      "diagram_type": "multi_ring_nymph"
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "standard_pattern": "Both follow typical nymph page encoding (R for continuous, S for nymph-divided)",
+    "no_C_placement": "Center tokens not captured (consistent with other nymph pages)"
+  },
+
+  "user_observations": [
+    "Similar nymph format to previous pages",
+    "f72v3: Large feline (tiger-like) at center",
+    "f72v2: Lady of status at center",
+    "Both have naked lady pictures (standard nymph style)"
+  ],
+
+  "oddities": [
+    {
+      "type": "exotic_feline",
+      "folios": ["f72v3"],
+      "description": "Large cat (tiger?) - more exotic than typical goat imagery"
+    },
+    {
+      "type": "lady_of_status",
+      "folios": ["f72v2"],
+      "description": "Distinguished female figure at center - another human center like f72r2"
+    }
+  ],
+
+  "center_illustration_series": {
+    "note": "Tracking center images across nymph pages",
+    "progression": [
+      {"folio": "f70v2", "center": "Fish"},
+      {"folio": "f70v1", "center": "Goat"},
+      {"folio": "f71r", "center": "Goat + plant"},
+      {"folio": "f71v", "center": "Animal"},
+      {"folio": "f72r1", "center": "Animal"},
+      {"folio": "f72r2", "center": "Man + woman"},
+      {"folio": "f72r3", "center": "Animal"},
+      {"folio": "f72v1", "center": "Balancing scale (apparatus)"},
+      {"folio": "f72v3", "center": "Large feline (tiger)"},
+      {"folio": "f72v2", "center": "Lady of status"}
+    ],
+    "humans_at_center": ["f72r2 (couple)", "f72v2 (lady)"],
+    "apparatus_at_center": ["f72v1 (scale)"],
+    "exotic_animal": ["f72v3 (tiger)"]
+  }
+}

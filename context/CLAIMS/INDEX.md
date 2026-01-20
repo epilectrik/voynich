@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 335 validated constraints | **Version:** 2.42
+**Total:** 339 validated constraints | **Version:** 2.46
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -225,6 +225,7 @@ Every new constraint MUST specify system scope:
 | **434** | **R-Series Strict Forward Ordering** | 2 | AZC | ⊂ azc_system |
 | **435** | **S/R Positional Division (boundary/interior)** | 2 | AZC | ⊂ azc_system |
 | **436** | **Dual Rigidity: uniform vs varied scaffolds** | 2 | AZC | ⊂ azc_system |
+| **496** | **Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)** | 2 | AZC | ⊂ azc_system |
 
 ---
 
@@ -268,7 +269,7 @@ Every new constraint MUST specify system scope:
 
 ---
 
-## Prefix/Suffix Function (C371-C382)
+## Prefix/Suffix Function (C371-C382, C495)
 
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
@@ -277,6 +278,7 @@ Every new constraint MUST specify system scope:
 | 373 | LINK affinity patterns | 2 | B | ⊂ morphology |
 | 375 | Suffixes have POSITIONAL GRAMMAR | 2 | B | ⊂ morphology |
 | 382 | MORPHOLOGY ENCODES CONTROL PHASE | 2 | GLOBAL | → [C382_morphology_control_phase.md](C382_morphology_control_phase.md) |
+| **495** | **SUFFIX–REGIME Compatibility Breadth** (-r universal, -ar/-or restricted; V=0.159) | 2 | A→B | ⊂ morphology |
 
 ---
 
@@ -475,6 +477,24 @@ Every new constraint MUST specify system scope:
 
 ---
 
+## Currier A Meta-Structural Artifacts (C497)
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **497** | **f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits) | 2 | A | ⊂ currier_a |
+
+---
+
+## A-Exclusive Vocabulary Track (C498-C500)
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **498** | **Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B) | 2 | A | ⊂ currier_a |
+| 499 | Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig) | 3 | A | ⊂ currier_a |
+| 500 | Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×) | 3 | A | ⊂ currier_a |
+
+---
+
 ## MIDDLE Perturbation Space (C461-C462)
 
 > **Summary:** C461-C462 establish behavioral structure in MIDDLE frequency tiers and material class sharing. The A-layer recognition space is partitioned into universal apparatus-generic situations vs class-specific perturbations. **This line of inquiry is SATURATED.**
@@ -496,11 +516,11 @@ These files contain detailed constraint documentation. Constraint ranges are app
 |------|----------|----------------|
 | [tier0_core.md](tier0_core.md) | Tier 0 frozen facts | C074-C132 |
 | [grammar_system.md](grammar_system.md) | Grammar and kernel structure | C085-C144, C328-C393 |
-| [currier_a.md](currier_a.md) | Currier A registry | C224-C266, C345-C346, C420-C424, C475-C478 |
-| [morphology.md](morphology.md) | Compositional morphology | C267-C298, C349-C410 |
+| [currier_a.md](currier_a.md) | Currier A registry | C224-C266, C345-C346, C420-C424, C475-C478, C497-C499 |
+| [morphology.md](morphology.md) | Compositional morphology | C267-C298, C349-C410, C495 |
 | [operations.md](operations.md) | OPS doctrine and control | C178-C223, C394-C403 |
 | [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453, C477 |
-| [azc_system.md](azc_system.md) | AZC hybrid system | C300-C327, C430-C436 |
+| [azc_system.md](azc_system.md) | AZC hybrid system | C300-C327, C430-C436, C496 |
 | [organization.md](organization.md) | Organizational structure | C153-C176, C323-C370 |
 
 ---

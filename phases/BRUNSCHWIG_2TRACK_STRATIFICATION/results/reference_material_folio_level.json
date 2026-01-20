@@ -1,0 +1,32 @@
+{
+  "test": "REFERENCE_MATERIAL_FOLIO_LEVEL",
+  "date": "2026-01-20",
+  "groups": {
+    "high_reference": {
+      "types": [
+        "OIL_RESIN",
+        "WATER_GENTLE"
+      ],
+      "n_folios": 36,
+      "mean_ratio": 0.35641367385439104,
+      "median_ratio": 0.35294117647058826
+    },
+    "low_reference": {
+      "types": [
+        "WATER_STANDARD",
+        "PRECISION"
+      ],
+      "n_folios": 74,
+      "mean_ratio": 0.30252004645337943,
+      "median_ratio": 0.27586206896551724
+    }
+  },
+  "mann_whitney": {
+    "u": 923.5,
+    "z": -2.6022803613937358,
+    "p_approx": 0.01,
+    "effect_size_r": 0.2481176971317427
+  },
+  "difference": 0.05389362740101161,
+  "verdict": "SUPPORTS"
+}

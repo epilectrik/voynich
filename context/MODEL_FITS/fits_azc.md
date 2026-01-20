@@ -24,6 +24,7 @@ Stage 1: Global model (all AZC)
 Stage 2: Family-split models (only if Stage 1 accuracy is high)
 
 Data: 5,354 decomposed AZC tokens.
+**P-text note:** Token count includes P-text (398 tokens, 12.1%); diagram-only = 2,901.
 
 Success criteria:
 - Accuracy >50% (vs ~10% random baseline for 10 placements)
@@ -114,6 +115,7 @@ Same methodology as F-AZC-002:
 4. Check if placement predicts position-in-line
 
 Data: 5,747 A/C tokens, 5,730 transitions, 16 unique placements.
+**P-text note:** Token count includes P-text; P-text is Currier A material.
 
 Success criteria:
 - If A/C shows monotonic position ordering → AZC = ONE grammar, two parameter regimes
@@ -159,6 +161,7 @@ Naive Bayes classifier with features: PREFIX, MIDDLE, SUFFIX.
 Target: Family (Zodiac vs A/C).
 
 Data: 5,354 tokens (2,076 Zodiac, 3,278 A/C).
+**P-text note:** A/C count (3,278) includes P-text; P-text is Currier A material.
 
 Success criteria:
 - Accuracy >80% (vs 61.2% majority-class baseline)
@@ -204,6 +207,7 @@ Measure entropy / cardinality differences across:
 Compare: A baseline vs AZC-Z vs AZC-A/C.
 
 Data: 23,442 Currier A tokens, 2,076 AZC-Z tokens, 3,278 AZC-A/C tokens.
+**P-text note:** AZC-A/C count includes P-text; P-text is Currier A material.
 
 Success criteria:
 - Quantifiable entropy reduction (>20%)
@@ -266,6 +270,7 @@ Metrics: MIDDLE diversity, suffix entropy, escape availability.
 Fit models: step vs ramp vs null.
 
 Data: ~122,000 total tokens, 37,214 A tokens, 3,299 AZC tokens.
+**P-text note:** AZC count (3,299) includes P-text; diagram-only = 2,901.
 
 Success criteria:
 - Sharp entropy drop/redistribution at entry
@@ -307,6 +312,7 @@ Is escape suppression uniform or position-conditioned?
 4. Fisher's exact test for boundary vs interior comparison
 
 Data: 5,354 AZC tokens, 301 escape tokens (5.6% overall).
+**P-text note:** Token count includes P-text; P-text escape rates now characterize Currier A material.
 
 Success criteria:
 - Significant non-uniformity in escape distribution
@@ -810,6 +816,7 @@ Three tests of constraint transfer:
 3. **Escape rate transfer**: Do tokens from high-escape AZC folios show higher escape in B?
 
 Data: 12,563 AZC tokens, 71,585 B tokens.
+**P-text note:** AZC count includes P-text; P-text is Currier A material.
 
 #### Result Details
 

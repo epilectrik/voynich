@@ -1,0 +1,31 @@
+{
+  "test": "TEST 3: Center Token Audit",
+  "status": "COMPLETE",
+  "token_counts": {
+    "center": 746,
+    "ring": 1431,
+    "nymph": 492
+  },
+  "center_placement_breakdown": {
+    "L": 68,
+    "C": 587,
+    "C1": 38,
+    "C2": 10,
+    "I": 37,
+    "W": 6
+  },
+  "vocabulary": {
+    "center_types": 470,
+    "ring_types": 788,
+    "center_only_types": 308,
+    "overlap_ratio": 0.3
+  },
+  "indicators": {
+    "single_char_pct": 3.2171581769436997,
+    "prefix_sim_to_ring": 0.9394848990007664,
+    "label_score": 0
+  },
+  "classification": "LEGALITY-PARTICIPATING",
+  "interpretation": "Center tokens participate in legality like ring tokens",
+  "action": "Include in standard legality calculations"
+}

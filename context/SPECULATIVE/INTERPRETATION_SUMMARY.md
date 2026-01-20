@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.31
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.32
 
 ---
 
@@ -93,6 +93,23 @@ Key findings:
 - What any token "means" in natural language
 
 This is the terminal internal semantic layer. The boundary is by design.
+
+**Semantic Ceiling Gradient (C499, v4.31):**
+
+The ceiling has layers - not all irrecoverable information is equally irrecoverable:
+
+| Level | Recoverability | Method |
+|-------|----------------|--------|
+| Entity identity (lavender) | IRRECOVERABLE | - |
+| Material CLASS priors | **PARTIALLY RECOVERABLE** | Bayesian inference via procedural context |
+| Procedural context | RECOVERABLE | Folio classification, product type |
+
+**Conditional recovery (IF Brunschwig applies):**
+- 128 registry-internal MIDDLEs with full P(material_class) vectors
+- 27 tokens with P(animal) = 1.00 (PRECISION-exclusive)
+- Mean entropy: 1.08 bits (86% match null baseline)
+
+The distinction is epistemological, not ontological: the system MAY encode specific materials, we just can't recover WHICH.
 
 ### Why This Matters
 

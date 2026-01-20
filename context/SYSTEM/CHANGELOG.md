@@ -4,6 +4,302 @@
 
 ---
 
+## Version 2.69 (2026-01-20) - BRUNSCHWIG_CANDIDATE_LABELING Phase 4: PREFIX/SUFFIX Track Distribution
+
+### Summary
+
+Extended registry-internal vocabulary analysis with PREFIX/SUFFIX track distribution tests and suffix posture confirmation tests. Key findings: ct-prefix marks exclusive discrimination layer (85% exclusivity, 4.41× enrichment); CLOSURE suffixes are front-loaded (foundational framework) while NAKED entries are late refinements.
+
+### PREFIX/SUFFIX Distribution Results
+
+| Test | Finding | Effect Size |
+|------|---------|-------------|
+| PREFIX track distribution | ct-prefix 4.41× enriched in registry-internal | Cramér's V=0.307 (strong) |
+| CT-prefix deep dive | 85% ct-MIDDLEs exclusive, 13.0 folio spread | - |
+| SUFFIX track distribution | 45% registry-internal types ALWAYS suffix-less | Cramér's V=0.222 (moderate) |
+
+### Suffix Posture Confirmation Tests
+
+| Test | Hypothesis | Result | Effect Size |
+|------|-----------|--------|-------------|
+| S-1 (HT density) | CLOSURE → higher HT | NULL | r=0.152 (small) |
+| S-2 (Incompatibility) | NAKED → more isolated | NULL | r=0.0 |
+| S-3 (Temporal) | NAKED → introduced earlier | **CONTRADICTED** | r=0.495 (medium) |
+| S-4 (Tail pressure) | NAKED → Q4 concentration | **CONFIRMED** | Phi=0.333 (medium) |
+
+### Key Finding
+
+| Posture | Q1 Share | Q4 Share | Interpretation |
+|---------|----------|----------|----------------|
+| CLOSURE (-y) | **76.7%** | 6.7% | Foundational framework |
+| NAKED | 25.9% | **37.9%** | Late refinement |
+| EXECUTION | ~100% | 0% | Earliest routing |
+
+**Tail concentration ratio:** NAKED 5.69× more likely in Q4 than CLOSURE
+
+### Constraint Changes
+
+1. **C500 added (Tier 3):** Suffix Posture Temporal Pattern - CLOSURE front-loaded, NAKED late refinement, reverses initial hypothesis
+
+### Files Updated
+
+- `context/CLAIMS/currier_a.md` - Added C500 section
+- `context/CLAIMS/INDEX.md` - Added C500 to A-Exclusive Vocabulary Track
+- `phases/BRUNSCHWIG_CANDIDATE_LABELING/PHASE_SUMMARY.md` - Added Phase 4 documentation
+
+### Provenance
+
+- Phase: BRUNSCHWIG_CANDIDATE_LABELING Phase 4
+- Scripts: s1-s4_*.py in phases/BRUNSCHWIG_CANDIDATE_LABELING/scripts/
+- Results: s1-s4_*.json in phases/BRUNSCHWIG_CANDIDATE_LABELING/results/
+
+---
+
+## Version 2.68 (2026-01-20) - BRUNSCHWIG_CANDIDATE_LABELING: Bounded Material-Class Recoverability
+
+### Summary
+
+Attempted to generate Tier 4 candidate labels for registry-internal vocabulary using Brunschwig procedural coordinates. Discovered that while entity-level identity remains irrecoverable, **material-class probability vectors are computable** via Bayesian inference through procedural context.
+
+**Framing:** "What these tokens COULD HAVE BEEN" - not "what they ARE"
+
+### Phase Results
+
+| Phase | Question | Result |
+|-------|----------|--------|
+| Phase 1 | Material category discrimination | UNINTERPRETABLE (nesting problem) |
+| Phase 2 | WATER_STANDARD structural clustering | NULL (Q=0.068, near-random) |
+| Phase 3 | Material-class posteriors via Bayesian inference | **POSITIVE** |
+
+### Key Achievement: Bounded Recoverability
+
+| Before | After |
+|--------|-------|
+| "Entity-level semantics are irrecoverable" | "Entity IDENTITY is irrecoverable, but CLASS-LEVEL PRIORS are computable" |
+| "We can't know what these tokens mean" | "We can't know WHICH material, but we CAN compute P(material_class)" |
+
+### Results
+
+- 128 MIDDLEs analyzed with full material-class probability vectors
+- 27 tokens with P(animal) = 1.00 (PRECISION-exclusive)
+- Mean entropy: 1.08 bits (range 0.00 - 2.62)
+- Null model validation: 86% match baseline (confirms prior-dominated nature)
+
+### Semantic Ceiling Gradient
+
+| Level | Recoverability |
+|-------|----------------|
+| Specific material (lavender) | IRRECOVERABLE |
+| Material class (flower vs herb) | **PARTIALLY RECOVERABLE** |
+| Procedural context (gentle distillation) | RECOVERABLE |
+
+### Constraint Changes
+
+1. **C499 added (Tier 3):** Bounded Material-Class Recoverability - material-class probability vectors computable for registry-internal MIDDLEs, conditional on Brunschwig interpretive frame.
+
+### Documentation Updates
+
+- `context/CLAIMS/currier_a.md` - Added C499
+- `context/CLAIMS/INDEX.md` - Updated to v2.46 (339 constraints), added C499
+- Phase: `phases/BRUNSCHWIG_CANDIDATE_LABELING/`
+
+---
+
+## Version 2.67 (2026-01-20) - BRUNSCHWIG_2TRACK_STRATIFICATION: Type-Specificity Confound Discovered
+
+### Summary
+
+Re-tested F-BRU-005's finding (75.4% type-specific MIDDLEs) using the new 2-track vocabulary classification (C498). Discovered that the aggregate rate is confounded by the registry-internal vocabulary's folio-localization.
+
+### Key Findings
+
+| Track | Type-Specific Rate | n |
+|-------|--------------------|---|
+| Registry-internal | **62.5%** | 128 |
+| Pipeline-participating | **46.1%** | 128 |
+
+**Chi-square:** 12.64, df=3, p < 0.01, Cramer's V = 0.222
+
+### Interpretation
+
+The 75.4% aggregate type-specific rate is inflated by registry-internal vocabulary (56.6% of MIDDLEs). These are folio-localized (avg 1.34 folios) and naturally appear in fewer product types.
+
+The pipeline-participating vocabulary (which actually flows through A→AZC→B) shows a lower 46.1% type-specificity rate - still substantial but not the dominant pattern.
+
+### Angle D: Reference Material Correlation (C498 Validation)
+
+Tested whether registry-internal vocabulary correlates with Brunschwig reference-only materials (listed but no procedure):
+
+| Group | Product Types | n Folios | Mean Reg-Int Ratio |
+|-------|---------------|----------|-------------------|
+| HIGH-REFERENCE | OIL_RESIN, WATER_GENTLE | 36 | **35.6%** |
+| LOW-REFERENCE | WATER_STANDARD, PRECISION | 74 | **30.3%** |
+
+**Mann-Whitney U:** z = -2.602, **p = 0.01**, effect size r = 0.248
+
+**Result:** SUPPORTED - validates C498's "fine distinctions below execution threshold" interpretation.
+
+### Expert Validation
+
+Both internal expert-advisor and external expert validated findings:
+- No Tier 0-2 violations
+- C498 externally corroborated by orthogonal historical signal
+- F-BRU-005 REFINED, not falsified
+- Model-strengthening refinement, not scope creep
+
+**Locked-in sentence:** "Separating Currier A into pipeline-participating and registry-internal vocabulary reveals that much of the apparent product-type specificity arises from coverage-driven folio localization; genuine operational alignment exists only in the pipeline vocabulary and is necessarily weaker, overlapping, and regime-mediated—exactly as required by an expert-only, non-semantic control system."
+
+### Documentation Updates
+
+- `context/MODEL_FITS/fits_brunschwig.md` - Added 2-track stratification section to F-BRU-005
+- `context/CLAIMS/currier_a.md` - Added external validation note to C498
+- Phase: `phases/BRUNSCHWIG_2TRACK_STRATIFICATION/`
+
+---
+
+## Version 2.66 (2026-01-20) - A_INTERNAL_STRATIFICATION: Two-Track Vocabulary Structure
+
+### Summary
+
+Investigated whether A-exclusive MIDDLEs (those appearing in Currier A but never in Currier B) have distinct structural roles. Discovered that Currier A has two vocabulary tracks with different morphological signatures and propagation behavior.
+
+**Result: C498 added (Tier 2) - Registry-Internal Vocabulary Track**
+
+### Key Findings
+
+| Track | MIDDLEs | Characteristics | Role |
+|-------|---------|-----------------|------|
+| **Pipeline-participating** | 268 (43.4%) | Standard prefixes/suffixes, broad folio spread (7.96) | Flow through A→AZC→B |
+| **Registry-internal** | 349 (56.6%) | ct-prefix 5.1×, suffix-less 3×, folio-localized (1.34) | Stay in A registry |
+
+### Falsified Hypotheses
+
+1. **Entry-type marker hypothesis: FALSIFIED** - Initial findings (98.8% opener rate) were artifacts of a data bug (grouping by word,folio instead of folio,line). Corrected: 18.8% vs 17.1% (not significant).
+
+2. **AZC-terminal bifurcation hypothesis: FALSIFIED** - The 8.9% (31 MIDDLEs) that appear in AZC but never reach B are interface noise from systems sharing the same alphabet, not a distinct stratum. Verification checks: 2 PASS, 2 FAIL.
+
+### Constraint Changes
+
+1. **C498 added (Tier 2):** Registry-Internal Vocabulary Track - A-exclusive MIDDLEs (56.6%) form a morphologically distinct track that encodes within-category fine distinctions below the granularity threshold for execution.
+
+### Documentation Updates
+
+- `context/CLAIMS/currier_a.md` - Added C498 with full evidence
+- `context/CLAIMS/INDEX.md` - Added C498 entry
+- `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml` - Added two_track_structure to middle section
+- `context/MODEL_CONTEXT.md` - Added Section VII subsection
+- Phase: `phases/A_INTERNAL_STRATIFICATION/`
+
+---
+
+## Version 2.65 (2026-01-20) - f49v Instructional Apparatus Discovery
+
+### Summary
+
+Discovered that f49v contains unique instructional apparatus - a teaching/reference page demonstrating Currier A structural principles. This is the only page in the manuscript with systematic marginal ordinal labels.
+
+### Key Findings
+
+1. **26 single-character L-placement labels** (65% of all such labels in manuscript)
+2. **Marginal numbers 1-5** aligned with ordinal positions in vertical character column
+3. **33 vocabulary types exclusive to f49v** (phonotactically extreme but structurally valid)
+4. **Statistical test for category encoding: NEGATIVE** (p=0.0517, not significant)
+
+### Interpretation
+
+The single-letter column is not encoding values - it is **indexing examples**. The page demonstrates A structure rather than instantiating registry content.
+
+Per external expert: *"A rare, deliberate moment where the manuscript turns inward and teaches how to read itself — without ever explaining itself."* The system that refuses instruction everywhere else has exactly ONE place where it demonstrates form - structurally, not semantically. This is strong corroboration of the expert-only, non-semantic model.
+
+The existence of a single instructional/reference page demonstrates that Currier A was actively used and taught, not that it contains pedagogical grammar or semantic encoding.
+
+### Constraint Changes
+
+1. **C497 added (Tier 2):** f49v Instructional Apparatus - documents unique meta-structural apparatus
+
+### Documentation Updates
+
+- `context/CLAIMS/currier_a.md` - Added C497 in new "Meta-Structural Artifacts" section
+- `context/CLAIMS/INDEX.md` - Added C497 entry, updated count to 338
+- `phases/PHARMA_LABEL_DECODING/` - Investigation scripts and analysis
+
+---
+
+## Version 2.64 (2026-01-19) - AZC_INTERFACE_VALIDATION: Visual Heterogeneity is Interface-Only
+
+### Summary
+
+Validated that AZC visual heterogeneity (scatter diagrams, rings, nymph pages, P-text) represents interface variation, not mechanism variation. Core A→AZC→B architecture remains intact.
+
+**Expert verdict:** One small surgical correction (P-text reclassification) + one genuinely new structural fact (C496). No architectural contracts modified. No semantic reopening.
+
+### Tests Executed
+
+| Test | Question | Result |
+|------|----------|--------|
+| TEST 0 | Transcript hygiene | PASS (3,299 tokens confirmed) |
+| TEST 1 | P-text classification | **A-ON-AZC-FOLIO** (PREFIX 0.946 to A) |
+| TEST 2 | Diagram type uniformity | **UNIFORM** (all types >0.88) |
+| TEST 3 | Center token behavior | **LEGALITY-PARTICIPATING** (PREFIX 0.94 to ring) |
+| TEST 4 | Nymph interruption | **FUNCTIONAL** (S-positions 75% o-prefix) |
+
+### Constraint Changes
+
+1. **C300, C301 amended:** Added note that 398 P-text tokens should be excluded from AZC legality analysis (diagram-only count: 2,901)
+2. **C496 added (Tier 2):** Nymph-Adjacent S-Position Prefix Bias - o-prefix enrichment (75%) in nymph-interrupted positions
+3. **C137, C436 confirmed:** Diagram type uniformity confirms illustration independence
+
+### Data Quality Warning
+
+⚠️ Center placements on nymph folios may be partially under-transcribed. Analyses use available tokens only.
+
+### Documentation Updates
+
+- `context/ARCHITECTURE/azc_transcript_encoding.md` - Major update with all TEST findings
+- `context/DATA/TRANSCRIPT_ARCHITECTURE.md` - Added AZC cross-reference
+- `context/CLAIMS/azc_system.md` - C300/C301 notes, C496 added, refinement notes updated
+- `context/CLAIMS/C301_azc_hybrid.md` - P-text reclassification note
+- `context/CLAIMS/INDEX.md` - C496 added, count updated to 337
+- Phase: `phases/AZC_INTERFACE_VALIDATION/`
+- Results: `results/test1_ptext_reclassification.json` through `test4_nymph_interruption.json`
+
+---
+
+## Version 2.63 (2026-01-19) - A_REGIME_STRATIFICATION: SUFFIX-REGIME Association Confirmed
+
+### Summary
+
+Investigated whether A vocabulary stratifies by REGIME compatibility. Found that the naive "39% single-REGIME" observation is heavily confounded by frequency, but SUFFIX morphology shows a genuine association with REGIME compatibility breadth.
+
+**Result: SUFFIX effect confirmed (C495 added), frequency confound documented**
+
+### Tests Executed
+
+| Test | Question | Result |
+|------|----------|--------|
+| T1 (Morphology) | PREFIX/SUFFIX predict REGIME? | **SUFFIX YES** (V=0.159), PREFIX no |
+| T2 (Frequency) | Are REGIME-specific tokens rare? | **YES** - major confound (V=0.38) |
+| T3 (AZC) | AZC zone differences? | No effect |
+| T4 (Folio) | Cluster on A folios? | Inconclusive |
+
+### Key Findings
+
+- SUFFIX predicts compatibility breadth: `-r` enriched in universal (11.5% vs 4.2%), `-ar`/`-or` enriched in single-REGIME
+- Frequency confound: Among frequent tokens (>20x), only 4.7% are genuinely single-REGIME
+- PREFIX shows no REGIME association (V=0.068)
+
+### New Constraint
+
+**C495 (Tier 2, SCOPE: A→B):** SUFFIX–REGIME Compatibility Breadth Association. SUFFIX morphology in Currier A tokens is associated with downstream REGIME compatibility breadth in Currier B.
+
+### Documentation
+
+- Phase: `phases/A_REGIME_STRATIFICATION/`
+- Results: `results/regime_stratification_tests.json`
+- Constraint: Added to `context/CLAIMS/morphology.md`
+
+---
+
 ## Version 2.62 (2026-01-19) - PUFF_STRUCTURAL_TESTS: Evidential Ceiling Confirmed
 
 ### Summary

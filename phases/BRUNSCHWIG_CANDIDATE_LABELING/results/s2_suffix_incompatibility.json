@@ -1,0 +1,52 @@
+{
+  "test": "S2_SUFFIX_INCOMPATIBILITY",
+  "date": "2026-01-20",
+  "hypothesis": "Naked suffix-less MIDDLEs are MORE isolated",
+  "n_registry_internal": 349,
+  "n_with_compat_data": 49,
+  "posture_results": {
+    "NAKED": {
+      "n": 8,
+      "mean": 733.0,
+      "median": 733,
+      "min": 733,
+      "max": 733
+    },
+    "CLOSURE": {
+      "n": 9,
+      "mean": 733.0,
+      "median": 733,
+      "min": 733,
+      "max": 733
+    },
+    "MINIMAL": {
+      "n": 2,
+      "mean": 367.5,
+      "median": 733,
+      "min": 2,
+      "max": 733
+    },
+    "EXECUTION": {
+      "n": 1,
+      "mean": 733.0,
+      "median": 733,
+      "min": 733,
+      "max": 733
+    },
+    "STRUCTURAL": {
+      "n": 1,
+      "mean": 733.0,
+      "median": 733,
+      "min": 733,
+      "max": 733
+    }
+  },
+  "comparison": {
+    "naked_vs_closure": {
+      "z_score": 0.0,
+      "effect_r": 0.0,
+      "direction": "CLOSURE_MORE_ISOLATED"
+    }
+  },
+  "verdict": "NULL"
+}

@@ -1,0 +1,344 @@
+{
+  "test": "NULL_MODEL_PERMUTATION",
+  "date": "2026-01-20",
+  "n_permutations": 1000,
+  "n_middles_tested": 44,
+  "summary": {
+    "observed_mean_entropy": 1.078,
+    "null_mean_entropy": 1.11,
+    "null_std_entropy": 0.035,
+    "n_significantly_lower": 2,
+    "n_not_different": 38,
+    "n_significantly_higher": 4,
+    "n_zero_entropy_total": 18,
+    "n_zero_entropy_isolated": 0
+  },
+  "significantly_isolated": [
+    {
+      "middle": "aly",
+      "observed_entropy": 1.717,
+      "null_mean": 2.291,
+      "null_std": 0.184,
+      "z_score": -3.114,
+      "p_lower": 0.002
+    },
+    {
+      "middle": "raiin",
+      "observed_entropy": 1.455,
+      "null_mean": 2.069,
+      "null_std": 0.336,
+      "z_score": -1.829,
+      "p_lower": 0.048
+    }
+  ],
+  "per_middle_results": {
+    "okol": {
+      "observed_entropy": 1.571,
+      "null_mean": 2.005,
+      "null_std": 0.394,
+      "z_score": -1.102,
+      "p_lower": 0.162
+    },
+    "ho": {
+      "observed_entropy": 2.615,
+      "null_mean": 2.227,
+      "null_std": 0.245,
+      "z_score": 1.588,
+      "p_lower": 0.978
+    },
+    "keoda": {
+      "observed_entropy": 2.123,
+      "null_mean": 1.27,
+      "null_std": 0.52,
+      "z_score": 1.641,
+      "p_lower": 1.0
+    },
+    "olol": {
+      "observed_entropy": 1.927,
+      "null_mean": 1.861,
+      "null_std": 0.429,
+      "z_score": 0.153,
+      "p_lower": 0.579
+    },
+    "otol": {
+      "observed_entropy": 1.936,
+      "null_mean": 2.095,
+      "null_std": 0.347,
+      "z_score": -0.458,
+      "p_lower": 0.356
+    },
+    "raiin": {
+      "observed_entropy": 1.455,
+      "null_mean": 2.069,
+      "null_std": 0.336,
+      "z_score": -1.829,
+      "p_lower": 0.048
+    },
+    "cheol": {
+      "observed_entropy": 2.27,
+      "null_mean": 2.181,
+      "null_std": 0.278,
+      "z_score": 0.321,
+      "p_lower": 0.542
+    },
+    "tod": {
+      "observed_entropy": 2.03,
+      "null_mean": 2.021,
+      "null_std": 0.374,
+      "z_score": 0.025,
+      "p_lower": 0.568
+    },
+    "shol": {
+      "observed_entropy": 1.846,
+      "null_mean": 2.072,
+      "null_std": 0.344,
+      "z_score": -0.656,
+      "p_lower": 0.19
+    },
+    "eom": {
+      "observed_entropy": 2.58,
+      "null_mean": 2.23,
+      "null_std": 0.234,
+      "z_score": 1.496,
+      "p_lower": 0.948
+    },
+    "aiino": {
+      "observed_entropy": 1.571,
+      "null_mean": 1.561,
+      "null_std": 0.515,
+      "z_score": 0.019,
+      "p_lower": 0.637
+    },
+    "ckhod": {
+      "observed_entropy": 1.568,
+      "null_mean": 1.195,
+      "null_std": 0.56,
+      "z_score": 0.667,
+      "p_lower": 0.849
+    },
+    "sheod": {
+      "observed_entropy": 0.822,
+      "null_mean": 1.214,
+      "null_std": 0.538,
+      "z_score": -0.73,
+      "p_lower": 0.351
+    },
+    "aly": {
+      "observed_entropy": 1.717,
+      "null_mean": 2.291,
+      "null_std": 0.184,
+      "z_score": -3.114,
+      "p_lower": 0.002
+    },
+    "eey": {
+      "observed_entropy": 2.381,
+      "null_mean": 2.382,
+      "null_std": 0.056,
+      "z_score": -0.015,
+      "p_lower": 0.445
+    },
+    "hy": {
+      "observed_entropy": 2.49,
+      "null_mean": 2.38,
+      "null_std": 0.067,
+      "z_score": 1.652,
+      "p_lower": 0.973
+    },
+    "kchy": {
+      "observed_entropy": 2.475,
+      "null_mean": 2.378,
+      "null_std": 0.071,
+      "z_score": 1.351,
+      "p_lower": 0.939
+    },
+    "okor": {
+      "observed_entropy": 1.568,
+      "null_mean": 1.863,
+      "null_std": 0.425,
+      "z_score": -0.693,
+      "p_lower": 0.269
+    },
+    "chor": {
+      "observed_entropy": 2.349,
+      "null_mean": 2.371,
+      "null_std": 0.081,
+      "z_score": -0.272,
+      "p_lower": 0.365
+    },
+    "ols": {
+      "observed_entropy": 2.579,
+      "null_mean": 2.121,
+      "null_std": 0.32,
+      "z_score": 1.431,
+      "p_lower": 0.933
+    },
+    "dor": {
+      "observed_entropy": 2.342,
+      "null_mean": 2.116,
+      "null_std": 0.325,
+      "z_score": 0.696,
+      "p_lower": 0.696
+    },
+    "ly": {
+      "observed_entropy": 1.568,
+      "null_mean": 1.75,
+      "null_std": 0.474,
+      "z_score": -0.383,
+      "p_lower": 0.415
+    },
+    "hor": {
+      "observed_entropy": 2.278,
+      "null_mean": 2.341,
+      "null_std": 0.121,
+      "z_score": -0.522,
+      "p_lower": 0.279
+    },
+    "ls": {
+      "observed_entropy": 2.346,
+      "null_mean": 1.749,
+      "null_std": 0.477,
+      "z_score": 1.251,
+      "p_lower": 0.92
+    },
+    "odaiin": {
+      "observed_entropy": 2.335,
+      "null_mean": 2.349,
+      "null_std": 0.107,
+      "z_score": -0.134,
+      "p_lower": 0.416
+    },
+    "hol": {
+      "observed_entropy": 2.285,
+      "null_mean": 2.361,
+      "null_std": 0.106,
+      "z_score": -0.717,
+      "p_lower": 0.212
+    },
+    "chy": {
+      "observed_entropy": 2.364,
+      "null_mean": 2.375,
+      "null_std": 0.073,
+      "z_score": -0.159,
+      "p_lower": 0.41
+    },
+    "alol": {
+      "observed_entropy": 0.822,
+      "null_mean": 1.537,
+      "null_std": 0.532,
+      "z_score": -1.345,
+      "p_lower": 0.149
+    },
+    "tchy": {
+      "observed_entropy": 2.439,
+      "null_mean": 2.37,
+      "null_std": 0.081,
+      "z_score": 0.852,
+      "p_lower": 0.805
+    },
+    "eeor": {
+      "observed_entropy": 2.327,
+      "null_mean": 2.313,
+      "null_std": 0.155,
+      "z_score": 0.092,
+      "p_lower": 0.483
+    },
+    "okal": {
+      "observed_entropy": 1.571,
+      "null_mean": 1.849,
+      "null_std": 0.426,
+      "z_score": -0.653,
+      "p_lower": 0.282
+    },
+    "lol": {
+      "observed_entropy": 1.442,
+      "null_mean": 1.86,
+      "null_std": 0.419,
+      "z_score": -0.996,
+      "p_lower": 0.193
+    },
+    "chol": {
+      "observed_entropy": 2.366,
+      "null_mean": 2.367,
+      "null_std": 0.084,
+      "z_score": -0.009,
+      "p_lower": 0.464
+    },
+    "aram": {
+      "observed_entropy": 2.141,
+      "null_mean": 1.559,
+      "null_std": 0.523,
+      "z_score": 1.111,
+      "p_lower": 0.849
+    },
+    "odol": {
+      "observed_entropy": 1.411,
+      "null_mean": 1.864,
+      "null_std": 0.435,
+      "z_score": -1.041,
+      "p_lower": 0.135
+    },
+    "olar": {
+      "observed_entropy": 1.411,
+      "null_mean": 1.563,
+      "null_std": 0.506,
+      "z_score": -0.301,
+      "p_lower": 0.385
+    },
+    "ody": {
+      "observed_entropy": 2.272,
+      "null_mean": 2.378,
+      "null_std": 0.074,
+      "z_score": -1.421,
+      "p_lower": 0.097
+    },
+    "tsho": {
+      "observed_entropy": 2.615,
+      "null_mean": 2.015,
+      "null_std": 0.386,
+      "z_score": 1.554,
+      "p_lower": 0.959
+    },
+    "hod": {
+      "observed_entropy": 1.158,
+      "null_mean": 1.73,
+      "null_std": 0.453,
+      "z_score": -1.264,
+      "p_lower": 0.104
+    },
+    "oees": {
+      "observed_entropy": 0.822,
+      "null_mean": 1.217,
+      "null_std": 0.554,
+      "z_score": -0.714,
+      "p_lower": 0.352
+    },
+    "key": {
+      "observed_entropy": 2.236,
+      "null_mean": 2.316,
+      "null_std": 0.148,
+      "z_score": -0.544,
+      "p_lower": 0.287
+    },
+    "sheol": {
+      "observed_entropy": 1.506,
+      "null_mean": 1.722,
+      "null_std": 0.483,
+      "z_score": -0.446,
+      "p_lower": 0.387
+    },
+    "tchod": {
+      "observed_entropy": 1.023,
+      "null_mean": 1.557,
+      "null_std": 0.498,
+      "z_score": -1.072,
+      "p_lower": 0.155
+    },
+    "tchol": {
+      "observed_entropy": 2.496,
+      "null_mean": 2.308,
+      "null_std": 0.157,
+      "z_score": 1.199,
+      "p_lower": 0.904
+    }
+  }
+}
