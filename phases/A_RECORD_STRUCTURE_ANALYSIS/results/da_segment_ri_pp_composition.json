@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "total_lines": 1571,
+    "lines_with_da": 740,
+    "lines_without_da": 831,
+    "segments_analyzed": 416,
+    "lines_with_multi_segment": 197
+  },
+  "segment_ri_composition": {
+    "mean_ri_ratio": 0.044168765262515265,
+    "std_ri_ratio": 0.12464124036195341,
+    "mean_within_line_variance": 0.0074458963294849806
+  },
+  "null_model": {
+    "n_permutations": 1000,
+    "null_mean_variance": 0.004807501354743945,
+    "null_std_variance": 0.008162094245958056,
+    "p_value": 0.123,
+    "cohens_d": 0.3232497561575687
+  },
+  "position_analysis": {
+    "first_segment_mean_ri": 0.03377447425670775,
+    "last_segment_mean_ri": 0.0501893481588913,
+    "middle_segment_mean_ri": 0.08333333333333333,
+    "first_vs_last_n": 197
+  },
+  "interpretation": {
+    "stratification_detected": false,
+    "weak_stratification": true
+  }
+}

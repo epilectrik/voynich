@@ -1,0 +1,114 @@
+{
+  "phase": "A_RECORD_STRUCTURE_ANALYSIS",
+  "date": "2026-01-20",
+  "data": {
+    "n_ri_middles": 349,
+    "n_lines": 1575,
+    "n_tokens": 11346
+  },
+  "R5_folio_exclusivity": {
+    "ri_count": 129,
+    "ri_mean_folios": 6.64,
+    "ri_median_folios": 1,
+    "ri_singleton_rate": 0.597,
+    "pp_count": 2034,
+    "pp_mean_folios": 3.1,
+    "pp_median_folios": 1,
+    "pp_singleton_rate": 0.695,
+    "ratio_pp_ri": 0.47
+  },
+  "R1_record_typing": {
+    "n_records": 1575,
+    "mean_ri_ratio": 0.115,
+    "ratio_distribution": {
+      "0-20%": 1153,
+      "20-40%": 348,
+      "40-60%": 57,
+      "60-80%": 15,
+      "80-100%": 2
+    },
+    "length_ri_correlation": 0.293
+  },
+  "R4_spacing_pattern": {
+    "n_gaps": 424,
+    "mean_gap": 2.78,
+    "median_gap": 2,
+    "cv": 0.814,
+    "pattern": "MODERATE",
+    "adjacent_rate": 0.356,
+    "gap_distribution": {
+      "1": 151,
+      "2": 100,
+      "3": 55,
+      "4": 53,
+      "5": 23,
+      "6": 15,
+      "7": 9,
+      "8": 8,
+      "9": 5,
+      "14": 1
+    }
+  },
+  "R2_neighbor_specificity": {
+    "n_ri_analyzed": 48,
+    "mean_entropy": 3.503,
+    "max_entropy": 10.99,
+    "entropy_ratio": 0.319,
+    "interpretation": "HIGH SPECIFICITY (low entropy ratio)",
+    "lowest_entropy": [
+      {
+        "middle": "otcho",
+        "entropy": 1.585
+      },
+      {
+        "middle": "aram",
+        "entropy": 1.585
+      },
+      {
+        "middle": "sheod",
+        "entropy": 1.585
+      },
+      {
+        "middle": "keoda",
+        "entropy": 1.585
+      },
+      {
+        "middle": "oral",
+        "entropy": 1.585
+      }
+    ],
+    "highest_entropy": [
+      {
+        "middle": "chy",
+        "entropy": 5.689
+      },
+      {
+        "middle": "tchy",
+        "entropy": 5.759
+      },
+      {
+        "middle": "kchy",
+        "entropy": 5.851
+      },
+      {
+        "middle": "eey",
+        "entropy": 6.13
+      },
+      {
+        "middle": "ody",
+        "entropy": 6.186
+      }
+    ]
+  },
+  "R3_adjacency_coherence": {
+    "n_adjacent_pairs": 1461,
+    "n_nonadjacent_pairs": 113,
+    "adjacent_ri_overlap": 0.0327,
+    "adjacent_pp_overlap": 0.0667,
+    "nonadjacent_ri_overlap": 0.0162,
+    "nonadjacent_pp_overlap": 0.0247,
+    "ri_adjacency_boost": 2.02,
+    "pp_adjacency_boost": 2.7,
+    "coherence_driver": "MIXED (both tracks contribute)"
+  }
+}

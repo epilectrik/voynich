@@ -1,10 +1,11 @@
-CONSTRAINT_REFERENCE v2.6 | 362 constraints | 2026-01-20
+CONSTRAINT_REFERENCE v2.6 | 363 constraints | 2026-01-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
 
 NUM	CONSTRAINT	TIER	SCOPE	LOCATION
 C001	A | **INVALIDATED** - depend on C250 |	266	~~Block vs non-block entry types~~	1
+C002	A | ⊂ currier_a |	499	Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig)	3
 C074	Dominant convergence to stable states (57.8% STATE-C terminal)	0	B	-> C074_dominant_convergence.md
 C079	Only STATE-C essential	0	B	in: tier0_core
 C084	System targets MONOSTATE (42.2% end in transitional)	0	B	in: tier0_core
@@ -364,5 +365,5 @@ C495	**SUFFIX–REGIME Compatibility Breadth** (-r universal, -ar/-or restricted
 C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC	in: azc_system
 C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits)	2	A	in: currier_a
 C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
-C499	Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig)	3	A	in: currier_a
+C499	Bounded Material-Class Recoverability	2	A	in: currier_a
 C500	Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×)	3	A	in: currier_a

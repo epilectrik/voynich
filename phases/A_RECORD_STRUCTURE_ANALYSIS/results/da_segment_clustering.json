@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "total_segments": 1692,
+    "profile_distribution": {
+      "RI_MODERATE": 246,
+      "PP_PURE": 1337,
+      "RI_RICH": 104,
+      "RI_SPARSE": 5
+    }
+  },
+  "position_x_profile": {
+    "chi2": 9.5142582084755,
+    "p_value": 0.049455095972712186,
+    "cramers_v": 0.08867369008217528
+  },
+  "prefix_x_profile": {
+    "chi2": 16.954437472128873,
+    "p_value": 0.15131927391458666,
+    "cramers_v": 0.06699898140000961
+  },
+  "ri_rich_analysis": {
+    "count": 104,
+    "position_distribution": {
+      "first": 16,
+      "only": 59,
+      "last": 23,
+      "middle": 6
+    },
+    "top_prefixes": {
+      "ch": 24,
+      "qo": 14,
+      "sh": 12,
+      "ct": 10,
+      "ot": 10
+    },
+    "significant_by_binomial": 26,
+    "ratio_observed_expected": 5.0
+  },
+  "length_correlation": {
+    "pearson_r": -0.00953787332084292,
+    "p_value": 0.6950218857602684
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "priority_1": {
+    "total_line_final_ri": 140,
+    "lines_4plus": 116,
+    "pp_predecessors": 134,
+    "distinct_folios": 77,
+    "pred_prefix_dist": {
+      "ch": 29,
+      "da": 23,
+      "sh": 13,
+      "qo": 12,
+      "ot": 12,
+      "ok": 10,
+      "ct": 8,
+      "ol": 6,
+      "do": 4,
+      "kch": 4
+    },
+    "pred_middle_dist": {
+      "_EMPTY_": 78,
+      "o": 9,
+      "e": 5,
+      "h": 3,
+      "k": 3,
+      "aii": 2,
+      "p": 2,
+      "ok": 2,
+      "or": 2,
+      "eod": 2
+    }
+  },
+  "priority_2": {
+    "first_line_multi_ri_count": 14,
+    "mean_propagation_rate": 0.0,
+    "any_propagation_count": 0,
+    "control_mean_rate": 0.017730496453900707
+  },
+  "priority_3": {
+    "initial_types": 82,
+    "final_types": 111,
+    "overlap_types": 13,
+    "initial_only": 61,
+    "final_only": 84,
+    "jaccard": 0.07222222222222222
+  },
+  "priority_4": {
+    "pure_ri_lines": 9,
+    "pure_ri_details": [
+      {
+        "line_key": "f8r.13",
+        "folio": "f8r",
+        "tokens": [
+          "okokchodm"
+        ],
+        "middles": [
+          "okchod"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f16r.4",
+        "folio": "f16r",
+        "tokens": [
+          "dainod"
+        ],
+        "middles": [
+          "inod"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f24r.20",
+        "folio": "f24r",
+        "tokens": [
+          "samchorly"
+        ],
+        "middles": [
+          "mchor"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f37v.13",
+        "folio": "f37v",
+        "tokens": [
+          "sotoiiin"
+        ],
+        "middles": [
+          "toi"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f88v.0",
+        "folio": "f88v",
+        "tokens": [
+          "daramdal"
+        ],
+        "middles": [
+          "ramd"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f99r.0",
+        "folio": "f99r",
+        "tokens": [
+          "okoramog"
+        ],
+        "middles": [
+          "oramo"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f99v.0",
+        "folio": "f99v",
+        "tokens": [
+          "otaramy",
+          "okoldody",
+          "darolaly"
+        ],
+        "middles": [
+          "aram",
+          "oldo",
+          "rola"
+        ],
+        "length": 3
+      },
+      {
+        "line_key": "f102r1.0a",
+        "folio": "f102r1",
+        "tokens": [
+          "dordod"
+        ],
+        "middles": [
+          "rdod"
+        ],
+        "length": 1
+      },
+      {
+        "line_key": "f102r1.0c",
+        "folio": "f102r1",
+        "tokens": [
+          "dardsh"
+        ],
+        "middles": [
+          "rdsh"
+        ],
+        "length": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "segments_analyzed": 1361,
+    "total_tokens": 7053,
+    "total_ri": 373,
+    "total_pp": 6680
+  },
+  "position_counts": {
+    "opener": {
+      "ri": 73,
+      "pp": 1288,
+      "ri_rate": 0.05363703159441587
+    },
+    "interior": {
+      "ri": 197,
+      "pp": 4134,
+      "ri_rate": 0.04548603093973678
+    },
+    "closer": {
+      "ri": 103,
+      "pp": 1258,
+      "ri_rate": 0.07567964731814843
+    }
+  },
+  "chi_square_3way": {
+    "chi2": 18.86741203005704,
+    "p_value": 7.998223463379336e-05,
+    "cramers_v": 0.05172127531721457
+  },
+  "normalized_position": {
+    "ri_mean": 0.5323760164558146,
+    "pp_mean": 0.49819217752424866,
+    "mann_whitney_p": 0.07338936644525158,
+    "rank_biserial": -0.05454680451429583
+  },
+  "boundary_vs_interior": {
+    "boundary_ri_rate": 0.06465833945628215,
+    "interior_ri_rate": 0.04548603093973678,
+    "chi2": 11.886520630002188,
+    "p_value": 0.0005654164488774259,
+    "odds_ratio": 1.4506362124722365
+  },
+  "opener_vs_closer": {
+    "opener_ri_rate": 0.05363703159441587,
+    "closer_ri_rate": 0.07567964731814843,
+    "closer_to_overall_ratio": 1.4310148861525491,
+    "opener_to_overall_ratio": 1.0142144338751076
+  }
+}
