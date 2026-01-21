@@ -4,6 +4,65 @@
 
 ---
 
+## Version 2.76 (2026-01-21) - ANIMAL_PRECISION_CORRELATION: A-Exclusive Registry Vocabulary
+
+### Summary
+
+Investigated whether REGIME_4 (precision procedures) shows distinctive morphological signatures consistent with animal distillation's categorical procedural differences. The "animal distillation / REGIME_4 correlation" hypothesis was partially supported but critically reframed.
+
+### Pre-Registered Predictions
+
+| ID | Prediction | Result |
+|----|------------|--------|
+| P1 (Strong) | REGIME_4 hazard CV within 0.04-0.11 | **PASS** |
+| P2 (Medium) | REGIME_4 ch-prefix enrichment >1.2x | **FAIL** |
+| P3 (Medium) | f75r distinctive within REGIME_1 | **FAIL** |
+| P4 (Weak) | <20% L-compound in PRECISION tokens | **PASS** (0%) |
+| P5 (Exploratory) | REGIME_4 lower escape density | **SUPPORTED** |
+
+### Critical Discovery
+
+All 18 P(animal)=1.00 tokens are **A-exclusive** - they exist in Currier A's registry but NEVER appear in Currier B's execution layer. The "animal distillation" connection is about A's material cataloguing, not B's procedural execution.
+
+### REGIME_4 Distinctive Profile
+
+| Characteristic | REGIME_4 vs Others |
+|----------------|-------------------|
+| Recovery operations | **0.37x** (much less) |
+| Near-miss events | **0.52x** (much less) |
+| da-prefix | **1.48x** enriched |
+| ok-prefix | **1.24x** enriched |
+| ct-prefix | **1.84x** enriched |
+| qo-prefix | **0.68x** depleted |
+
+REGIME_4 is "get it right the first time" - less recovery, less intervention, different PREFIX profile.
+
+### f75r Investigation
+
+The Tier 4 speculative mapping of Kudreck→f75r is NOT supported. f75r is a typical REGIME_1 folio (z-score +0.18), not a REGIME_4 outlier.
+
+### Constraint Implications
+
+| Constraint | Status |
+|------------|--------|
+| C458 (Design Clamp) | **VALIDATED** - all REGIMEs show clamped hazard |
+| C494 (REGIME_4 = precision) | **SUPPORTED** - distinctive low-recovery/low-escape profile |
+| C384 (No A-B coupling) | **PRESERVED** - PRECISION tokens are A-exclusive |
+| C499 (RI vocabulary) | **VALIDATED** - animal-associated MIDDLEs stay in A |
+
+### Documentation Updates
+
+- Updated C499 in currier_a.md with validation note (corrected count 27→18)
+- Created comprehensive PHASE_SUMMARY.md
+
+### Provenance
+
+- Phase: ANIMAL_PRECISION_CORRELATION
+- Scripts: `test_a_design_clamp.py`, `test_b_precision_tokens.py`, `test_c_f75r_investigation.py`, `test_de_morphology_by_regime.py`
+- Results: 4 JSON files in results/
+
+---
+
 ## Version 2.75 (2026-01-21) - B_EXCLUSIVE_MIDDLE_ORIGINS: Three-Layer Stratification (C501)
 
 ### Summary

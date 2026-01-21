@@ -1,0 +1,235 @@
+{
+  "test": "B_PRECISION_TOKEN_CLASSIFICATION",
+  "n_tokens": 18,
+  "tokens": [
+    "chald",
+    "cthso",
+    "eeees",
+    "eoc",
+    "eoschso",
+    "eso",
+    "eyd",
+    "ha",
+    "hdaoto",
+    "hyd",
+    "iil",
+    "ofy",
+    "olfcho",
+    "opcho",
+    "pchypcho",
+    "tchyf",
+    "tea",
+    "techoep"
+  ],
+  "pipeline_distribution": {
+    "A-Exclusive": 18
+  },
+  "l_compound_count": 0,
+  "l_compound_pct": 0.0,
+  "p4_evaluation": {
+    "prediction": "<20% L-compound operators",
+    "actual_pct": 0.0,
+    "result": "PASS"
+  },
+  "regime_token_counts": {},
+  "token_details": [
+    {
+      "middle": "chald",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "cthso",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "eeees",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "eoc",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 3,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "eoschso",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "eso",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 2,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "eyd",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": true,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 1
+    },
+    {
+      "middle": "ha",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "hdaoto",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "hyd",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": true,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 1
+    },
+    {
+      "middle": "iil",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "ofy",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 2,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "olfcho",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "opcho",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": true,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 2
+    },
+    {
+      "middle": "pchypcho",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "tchyf",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "tea",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    },
+    {
+      "middle": "techoep",
+      "pipeline_class": "A-Exclusive",
+      "is_l_compound": false,
+      "in_a": true,
+      "in_b": false,
+      "in_azc": false,
+      "a_count": 1,
+      "b_count": 0,
+      "azc_count": 0
+    }
+  ]
+}
