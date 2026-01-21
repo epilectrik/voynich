@@ -523,7 +523,7 @@ These files contain detailed constraint documentation. Constraint ranges are app
 |------|----------|----------------|
 | [tier0_core.md](tier0_core.md) | Tier 0 frozen facts | C074-C132 |
 | [grammar_system.md](grammar_system.md) | Grammar and kernel structure | C085-C144, C328-C393 |
-| [currier_a.md](currier_a.md) | Currier A registry | C224-C266, C345-C346, C420-C424, C475-C478, C497-C499 |
+| [currier_a.md](currier_a.md) | Currier A registry | C224-C299, C345-C346, C420-C424, C475-C478, C498-C500 |
 | [morphology.md](morphology.md) | Compositional morphology | C267-C298, C349-C410, C495 |
 | [operations.md](operations.md) | OPS doctrine and control | C178-C223, C394-C403 |
 | [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453, C477 |

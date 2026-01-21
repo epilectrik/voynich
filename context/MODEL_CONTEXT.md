@@ -180,10 +180,19 @@ MIDDLEs are the primary vocabulary layer:
 |-------|------|
 | **A-exclusive** (349) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
 | **A/B-shared** (268) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
-| **B-exclusive** (569) | Boundary-condition discriminators - stabilize line transitions, encode edge-case variation; NOT grammar operators |
-| **L-compounds** (subset) | True grammar operators (C298) - rare, B-specific, NOT representative of B-exclusive class |
+| **B-exclusive** (569) | Stratified: L-compound operators (49 types, line-initial) + boundary closers (-edy/-dy, line-final) + singleton cloud (80%, orthographic variants) |
 
-> B-exclusive MIDDLEs predominantly function as boundary-condition discriminators and orthographic variants, not as execution grammar operators. (B-EXCL-ROLE phase, 2026-01-16)
+**B-Exclusive MIDDLE Stratification (C501):**
+
+| Stratum | Size | Character | Function |
+|---------|------|-----------|----------|
+| L-compound operators | 49 types, 111 tokens | `lk`, `lkee`, `lched` | Line-initial control operators (C298) |
+| Boundary closers | ~15 types | `-edy`, `-dy`, `-eeed` | Line-final structural markers |
+| Singleton cloud | 457 types (80.3%) | Edit-distance-1 variants | Orthographic elaboration, no grammar role |
+
+**Key quantification:** 65.9% of B-exclusive MIDDLEs are edit-distance-1 from shared MIDDLEs (59% insertion, 39% substitution). B-exclusive MIDDLEs are longer (mean 4.40 vs 3.03 chars) and boundary-enriched (1.70x).
+
+> B-exclusive status primarily reflects **positional and orthographic realization** under execution constraints, not novel discriminative content. True grammar operators are confined to the small L-compound core. (B_EXCLUSIVE_MIDDLE_ORIGINS phase, 2026-01-21)
 
 **Within-System Distribution:**
 - 80% are prefix-exclusive (domain-specific within each system)
@@ -558,6 +567,8 @@ These interpretations are plausible but not constraining:
 2. Trained guild members in the art of the written form
 
 This is NOT "doodling" or "scribbling" - the evidence (7.81x rare grapheme engagement, 24.5% boundary-pushing forms, systematic family rotation) shows deliberate skill acquisition that doubles as attention maintenance.
+
+**Curriculum Characterization (2026-01-21):** HT morphological patterns show vocabulary front-loading (all 21 families in first 0.3%), prerequisite relationships (26 pairs, 2.5x expected), and quasi-periodic rotation. See INTERPRETATION_SUMMARY.md Section I.A for test battery results and rebinding caveats.
 
 **Mark this distinction clearly:** Structural findings are facts; interpretations are hypotheses.
 

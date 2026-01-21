@@ -268,6 +268,49 @@ Medieval apprentice work-study combination. Productive use of operational waitin
 
 ---
 
+## I.A. HT Morphological Curriculum (Tier 3 Characterization)
+
+**Phase:** HT_MORPHOLOGICAL_CURRICULUM (2026-01-21)
+
+### Hypothesis Tested
+
+> HT morphological choices follow a curriculum structure: systematic introduction of grapheme families, spaced repetition of difficult forms, and complexity progression within practice blocks.
+
+### Test Battery Results
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| 1. Introduction Sequencing | **STRONG PASS** | All 21 families in first 0.3% (KS=0.857) |
+| 2. Spaced Repetition | UNDERPOWERED | Insufficient rare-but-repeated tokens |
+| 3. Block Complexity | FAIL | No within-block gradient (33/33/33 split) |
+| 4. Family Rotation | **WEAK PASS** | Quasi-periodic ACF peaks at 6,9,12,14,17 |
+| 5. Difficulty Gradient | **PROVISIONAL** | Inverted-U pattern (H=89.04) - *rebinding confound* |
+| 6. Prerequisite Structure | **WEAK PASS** | 26 pairs (2.5x expected by chance) |
+
+### Confirmed Curriculum Properties
+
+1. **Vocabulary Front-Loading:** All 21 HT families established in first 0.3% of manuscript (not gradual introduction)
+2. **Prerequisite Relationships:** Complex families (esp. `yp`) consistently precede simpler consolidation forms
+3. **Quasi-Periodic Rotation:** Families cycle with regular periodicity
+
+### Provisional Finding (Rebinding Caveat)
+
+The inverted-U difficulty pattern (middle zone easier than early/late) is statistically significant but **cannot be distinguished from rebinding artifact** without additional controls. The manuscript was rebound by someone who couldn't read it (C156, C367-C370). What we observe as "middle" may be a mixture of originally non-adjacent folios.
+
+**Required follow-up:** Quire-level analysis to test whether pattern holds within preserved local ordering.
+
+### Characterization (Not Constraint)
+
+> HT morphological patterns exhibit vocabulary front-loading (all families established in first 0.3%), significant prerequisite relationships (26 pairs vs 10.5 expected), and quasi-periodic family rotation. This is consistent with a "vocabulary-first" curriculum structure distinct from gradual introduction.
+
+**Tier 3** because: Test 3 failed, Test 5 is confounded by rebinding, pattern is distributional regularity not architectural necessity.
+
+### Integration with C221
+
+This refines the existing "Deliberate Skill Practice" interpretation (C221) with specific curriculum mechanics: front-loading vocabulary establishment, prerequisite ordering, and periodic rotation.
+
+---
+
 ## I.B. Four-Layer Responsibility Model (v2.13)
 
 ### Tier 2: Structural Finding

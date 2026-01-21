@@ -1,0 +1,72 @@
+{
+  "test_1": {
+    "test": "introduction_sequencing",
+    "n_families": 21,
+    "ks_statistic": 0.8571428571428571,
+    "ks_pvalue": 4.265613396531809e-08,
+    "spacing_cv": 3.472882842964133,
+    "verdict": "STRONG PASS"
+  },
+  "test_2": {
+    "test": "spaced_repetition",
+    "verdict": "UNDERPOWERED",
+    "n_tokens": 0
+  },
+  "test_3": {
+    "test": "block_complexity",
+    "n_blocks": 107,
+    "trajectories": {
+      "increasing": 35,
+      "decreasing": 36,
+      "flat": 36
+    },
+    "chi2": 0.01869158878504673,
+    "chi2_p": 0.9906977418115239,
+    "dominant": "decreasing",
+    "dominant_pct": 33.64485981308411,
+    "mean_rho": -0.008522303857695866,
+    "verdict": "FAIL"
+  },
+  "test_4": {
+    "test": "family_rotation",
+    "mean_recurrence": 19.63916050560458,
+    "recurrence_cv": 2.5993539449674383,
+    "cv_ratio": 2.5993539449674383,
+    "acf_peaks": [
+      6,
+      9,
+      12,
+      14,
+      17
+    ],
+    "verdict": "WEAK PASS"
+  },
+  "test_5": {
+    "test": "difficulty_gradient",
+    "n_tokens": 1142,
+    "spearman_rho": -0.0006765123423339823,
+    "spearman_p": 0.9817805495193639,
+    "kruskal_h": 89.04429435751095,
+    "kruskal_p": 4.6161207188395625e-20,
+    "zone_difficulties": {
+      "early": 8.041633401003534,
+      "middle": 7.50983355068763,
+      "late": 8.094903467267322
+    },
+    "verdict": "STRONG PASS"
+  },
+  "test_6": {
+    "test": "prerequisite_structure",
+    "n_families": 21,
+    "significant_pairs": 26,
+    "expected_by_chance": 10.5,
+    "transitivity": 0.0,
+    "verdict": "WEAK PASS"
+  },
+  "summary": {
+    "strong": 2,
+    "weak": 2,
+    "fail": 1,
+    "overall": "CURRICULUM STRUCTURE CONFIRMED"
+  }
+}
