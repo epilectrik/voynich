@@ -4,6 +4,165 @@
 
 ---
 
+## Version 2.72 (2026-01-20) - A_RECORD_STRUCTURE_ANALYSIS: PP Vocabulary Bifurcation (C498.a)
+
+### Summary
+
+Investigated the internal structure of "Pipeline-Participating" (PP) MIDDLEs from C498. Discovered that the 268 A∩B shared MIDDLEs comprise two structurally distinct subclasses, not a uniform pipeline-participating population.
+
+### Key Findings
+
+| Finding | Evidence |
+|---------|----------|
+| 114 bypass MIDDLEs | Appear in A and B but **never** in AZC |
+| B-heavy frequency | 58.8% have B count > 2× A count |
+| B-native vocabulary | e.g., `eck` A=2, B=85; `ect` A=2, B=46 |
+| Pipeline narrower | Only 154 (25%) genuinely participate in A→AZC→B |
+
+### Complete A MIDDLE Hierarchy
+
+```
+A MIDDLEs (617 total)
+├── RI: Registry-Internal (349, 56.6%)
+│     A-exclusive, instance discrimination, folio-localized
+│
+└── Shared with B (268, 43.4%)
+    ├── AZC-Mediated (154, 25.0% of A vocabulary)
+    │     A→AZC→B constraint propagation
+    │     ├── Universal (17) - 10+ AZC folios
+    │     ├── Moderate (45) - 3-10 AZC folios
+    │     └── Restricted (92) - 1-2 AZC folios
+    │
+    └── B-Native Overlap (114, 18.5% of A vocabulary)
+          Zero AZC presence, B-dominant frequency
+          Execution-layer vocabulary with incidental A appearance
+```
+
+### Terminology Correction
+
+The original "Pipeline-Participating" label is misleading:
+- **AZC-Mediated Shared** (154): Genuine pipeline participation
+- **B-Native Overlap / BN** (114): Domain overlap, not pipeline flow
+
+### External Validation
+
+Reviewed by domain expert. Verdict: "This is a solid, architecture-strengthening refinement. It sharpens C498, clarifies pipeline scope, and removes an implicit overgeneralization — without reopening any closed tier."
+
+### Constraint Changes
+
+1. **C498.a added (Tier 2 Refinement):** A∩B shared vocabulary bifurcates into AZC-Mediated (154) and B-Native Overlap (114). Constraint inheritance (C468-C470) applies only to AZC-Mediated subclass.
+
+### Files Updated
+
+- `context/CLAIMS/currier_a.md` - Added C498.a refinement
+- `context/CLAIMS/INDEX.md` - Added C498.a entry and characterization note
+- `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml` - Updated two_track_structure with substructure
+- `context/MODEL_CONTEXT.md` - Updated Two-Track section with full hierarchy
+
+### Provenance
+
+- Phase: A_RECORD_STRUCTURE_ANALYSIS (PP vocabulary analysis)
+- Scripts: pp_middle_frequency.py, pp_singleton_analysis.py, pp_singleton_b_frequency.py, pp_middle_propagation.py, pp_bypass_azc.py
+- Results: pp_middle_propagation.json
+
+---
+
+## Version 2.71 (2026-01-20) - A_RECORD_STRUCTURE_ANALYSIS: Hierarchical RI Closure at Segment Level
+
+### Summary
+
+Extended RI closure investigation to DA-segmented structure. Tested whether DA articulation (C422) reveals RI/PP stratification beyond what PREFIX alone explains. Discovered **hierarchical RI closure** — the closer preference operates at both line and segment scales.
+
+### Three-Phase Investigation
+
+| Phase | Question | Result |
+|-------|----------|--------|
+| Pre-check | Does PREFIX explain RI/PP? | V=0.183 (moderate), proceed |
+| Phase 1 | Do DA segments stratify by RI/PP? | d=0.323 (weak), bimodal tail |
+| Phase 2 | RI position within segments? | 1.43× closer preference (p<0.001) |
+| Phase 3 | Are RI-RICH segments distinct? | Yes, 5× expected by chance |
+
+### Key Findings
+
+| Finding | Evidence |
+|---------|----------|
+| Hierarchical closure | Line-final 1.76×, segment-final 1.43× |
+| RI-RICH segments distinct | 6.1% of segments, 5× binomial expected |
+| PREFIX ≠ segment profile | p=0.151 (PREFIX doesn't predict) |
+| RI-RICH are short, coherent | 3.3 tokens mean, diversity 2.66 |
+
+### Critical Insight
+
+PREFIX does NOT predict segment RI profile (p=0.151), even though PREFIX partially predicts token-level RI/PP (V=0.183). This means **RI concentration is a positional-closure phenomenon independent of PREFIX vocabulary**.
+
+Two orthogonal organizational axes in A:
+1. **PREFIX families** — what domain/material-class is being discriminated
+2. **RI closure bursts** — where instance discrimination happens
+
+### Constraint Changes
+
+1. **C498-CHAR-A-SEGMENT added (Tier 3):** Hierarchical RI closure at segment level — 1.43× segment-final preference, RI-RICH segments as distinct closure units
+
+### Files Updated
+
+- `context/CLAIMS/currier_a.md` - Added C498-CHAR-A-SEGMENT characterization block
+- `context/CLAIMS/INDEX.md` - Added segment characterization note
+- `phases/A_RECORD_STRUCTURE_ANALYSIS/PHASE_SUMMARY.md` - Added Part 3 (DA segmentation)
+
+### Provenance
+
+- Phase: A_RECORD_STRUCTURE_ANALYSIS (DA segmentation sub-phases)
+- Scripts: prefix_ri_pp_crosstab.py, da_segment_ri_pp_composition.py, da_segment_ri_position.py, da_segment_clustering.py
+- Results: prefix_ri_pp_crosstab.json, da_segment_*.json
+
+---
+
+## Version 2.70 (2026-01-20) - A_RECORD_STRUCTURE_ANALYSIS: RI Closure Characterization
+
+### Summary
+
+Investigated internal structure of Currier A records using the RI (registry-internal) vs PP (pipeline-participating) distinction from C498. Discovered **RI closure tokens** — the missing complementary half of A's structural punctuation, orthogonal to DA articulation (C422).
+
+### Key Findings
+
+| Finding | Evidence |
+|---------|----------|
+| RI line-final preference | 29.5% vs 16.8% expected (1.75×) |
+| Opener/closer vocabulary disjoint | Jaccard = 0.072 |
+| 87% singleton closers | 104 of 119 closer MIDDLEs used exactly once |
+| Core closure kernel | ho (10×), hod (4×), hol (3×), mo (3×), oro (3×), tod (3×) |
+
+### Two Complementary Structural Mechanisms
+
+| Layer | Mechanism | Scope | Function |
+|-------|-----------|-------|----------|
+| Internal segmentation | DA articulation (C422) | Within a record | Sub-unit boundary punctuation |
+| Record termination | RI closers | End of a record | Completion + instance discrimination |
+
+**Key insight:** If DA is a comma, RI closers are a period — but one that often needs to be unique, because what matters is not just that something ended, but that it ended as *this* and not anything else.
+
+### Governance Decision
+
+This is **Tier 3 characterization**, not Tier 2 constraint. The finding is **ergonomic bias**, not grammar — C234 (POSITION_FREE) remains intact. Currier A would satisfy all structural contracts even if closers were less singleton-heavy or end-biased.
+
+### Constraint Changes
+
+1. **C498-CHAR-A-CLOSURE added (Tier 3):** RI closure token characterization — line-final preference, singleton tail, complementary to C422
+
+### Files Updated
+
+- `context/CLAIMS/currier_a.md` - Added C498-CHAR-A-CLOSURE characterization block
+- `context/CLAIMS/INDEX.md` - Added characterization note under C498-C500 section
+- `phases/A_RECORD_STRUCTURE_ANALYSIS/PHASE_SUMMARY.md` - Complete phase documentation
+
+### Provenance
+
+- Phase: A_RECORD_STRUCTURE_ANALYSIS
+- Scripts: ri_*.py, closer_*.py, analyze_multi_ri.py, etc.
+- Results: ri_signal_investigation.json, noncloser_ri_investigation.json
+
+---
+
 ## Version 2.69 (2026-01-20) - BRUNSCHWIG_CANDIDATE_LABELING Phase 4: PREFIX/SUFFIX Track Distribution
 
 ### Summary

@@ -767,6 +767,139 @@ Brunschwig reference-only materials (listed but no procedure documented) correla
 
 This confirms that the two-track structure reflects real discrimination complexity stratification with an orthogonal historical signal. See F-BRU-005 (amended), BRUNSCHWIG_2TRACK_STRATIFICATION phase.
 
+### C498.a - A∩B Shared Vocabulary Bifurcation (Tier 2 Refinement)
+**Tier:** 2 | **Status:** CLOSED
+
+The A∩B shared MIDDLE vocabulary (originally labeled "Pipeline-Participating") comprises two structurally distinct subclasses:
+
+| Subclass | Count | % of Shared | Mechanism |
+|----------|-------|-------------|-----------|
+| **AZC-Mediated** | 154 | 57.5% | A→AZC→B constraint propagation |
+| **B-Native Overlap (BN)** | 114 | 42.5% | B operational vocabulary with incidental A presence |
+
+**Evidence:**
+- Traced all 268 A∩B MIDDLEs through Currier A, AZC folios, and Currier B
+- 114 MIDDLEs appear in A and B but **never** in any AZC folio
+- Zero-AZC MIDDLEs show B-heavy frequency ratios (e.g., `eck` A=2, B=85; `ect` A=2, B=46)
+- Pattern consistent with B-native origin, not A→B transmission
+
+**AZC-Mediated substructure:**
+
+| AZC Presence | Count | Mean B Folio Spread |
+|--------------|-------|---------------------|
+| Universal (10+ AZC folios) | 17 | 48.7 folios |
+| Moderate (3-10 AZC folios) | 45 | 20.1 folios |
+| Restricted (1-2 AZC folios) | 92 | 6.8 folios |
+
+**B-Native Overlap characteristics:**
+- Mean B folio spread: 4.0 folios (flat, AZC-independent)
+- B-heavy (B > 2×A): 67 MIDDLEs (58.8%)
+- A-heavy (A > 2×B): 12 MIDDLEs (10.5%)
+- Execution-infrastructure vocabulary: boundary discriminators, stabilizers, orthographic variants
+
+**Architectural implications:**
+- Constraint inheritance (C468-C470) applies only to AZC-Mediated subclass
+- Pipeline scope is narrower than "all A∩B shared" implies
+- A's outbound vocabulary to pipeline is 154 MIDDLEs (25% of A vocabulary), not 268 (43.4%)
+
+**Relationship to existing constraints:**
+- Consistent with C384 (No Entry-Level A-B Coupling): BN MIDDLEs demonstrate statistical, not referential, sharing
+- Consistent with C383 (Global Type System): Shared morphology ≠ shared function
+- Refines C468-C470: Pipeline model preserved but now precisely scoped
+
+**Terminology correction:**
+The original "Pipeline-Participating" label is misleading. Recommended terminology:
+- **AZC-Mediated Shared** (154): Genuine pipeline participation
+- **B-Native Overlap / BN** (114): Domain overlap, not pipeline flow
+
+**Complete A MIDDLE hierarchy:**
+```
+A MIDDLEs (617 total)
+├── RI: Registry-Internal (349, 56.6%)
+│     A-exclusive, instance discrimination, folio-localized
+│
+└── Shared with B (268, 43.4%)
+    ├── AZC-Mediated (154, 25.0% of A vocabulary)
+    │     A→AZC→B constraint propagation
+    │     ├── Universal (17) - 10+ AZC folios
+    │     ├── Moderate (45) - 3-10 AZC folios
+    │     └── Restricted (92) - 1-2 AZC folios
+    │
+    └── B-Native Overlap (114, 18.5% of A vocabulary)
+          Zero AZC presence, B-dominant frequency
+          Execution-layer vocabulary with incidental A appearance
+```
+
+**Source:** A_RECORD_STRUCTURE_ANALYSIS phase (2026-01-20)
+**External validation:** Reviewed by domain expert; confirmed as architecture-strengthening refinement that sharpens pipeline scope without contradiction.
+
+---
+
+### C498-CHAR-A-CLOSURE - RI Closure Tokens (Tier 3 Characterization)
+**Tier:** 3 | **Status:** CLOSED
+
+A subset of registry-internal MIDDLEs functions as **record-terminal closure discriminators**. These tokens show strong line-final preference, a small reusable kernel, and a large singleton tail providing instance-specific separation.
+
+**Evidence:**
+- Line-final enrichment: 29.5% of RI tokens appear line-final (vs 16.8% expected)
+- Opener/closer vocabulary disjointness: Jaccard = 0.072 (near-disjoint)
+- Closer singleton rate: 87.4% (104 of 119 closer MIDDLEs used exactly once)
+- Core kernel: ho (10x), hod (4x), hol (3x), mo (3x), oro (3x), tod (3x) — all -o/-od/-ol morphology
+- Average closer uses: 1.24 per MIDDLE
+
+**Relationship to C234 (POSITION_FREE):**
+This is **ergonomic bias**, not grammar. RI closers prefer line-final position but can appear elsewhere and do not constrain what can follow. C234 remains intact.
+
+**Relationship to C422 (DA Articulation):**
+These are **complementary mechanisms** at different structural levels:
+
+| Layer | Mechanism | Scope | Function |
+|-------|-----------|-------|----------|
+| Internal segmentation | DA articulation (C422) | Within a record | Sub-unit boundary punctuation |
+| Record termination | RI closers | End of a record | Completion + instance discrimination |
+
+If DA is a comma, RI closers are a period — but one that often needs to be unique, because what matters is not just that something ended, but that it ended as *this* and not anything else.
+
+**Why Tier 3 (not Tier 2):**
+This is a distributional regularity with explanatory coherence, not a structural necessity. Currier A would satisfy all structural contracts even if RI closers were less singleton-heavy or slightly less end-biased.
+
+**Source:** A_RECORD_STRUCTURE_ANALYSIS phase (2026-01-20)
+
+---
+
+### C498-CHAR-A-SEGMENT - Hierarchical RI Closure at Segment Level (Tier 3 Characterization)
+**Tier:** 3 | **Status:** CLOSED
+
+RI closer preference operates **hierarchically** across structural levels:
+
+| Scale | RI Closer Preference | P-value |
+|-------|---------------------|---------|
+| Line-final | 1.76× | < 0.001 |
+| Segment-final | 1.43× | < 0.001 |
+| Segment interior | 0.86× (depleted) | - |
+
+**RI-RICH Segments (>30% RI, 6.1% of all segments):**
+- Short: mean 3.3 tokens
+- PREFIX-coherent: diversity 2.66 vs 3.44 for other segments (p < 0.0001)
+- Terminal-preferring: 78.8% are "only" or "last" segments in their line
+- Structurally distinct: 5× more common than binomial chance would predict
+
+**Critical Finding:** PREFIX does NOT predict segment RI profile (p=0.151), even though PREFIX partially predicts token-level RI/PP (V=0.183). This means **RI concentration is a positional-closure phenomenon independent of PREFIX vocabulary**.
+
+**Two Orthogonal Organizational Axes:**
+1. **PREFIX families** — what domain/material-class is being discriminated
+2. **RI closure bursts** — where fine-grained instance discrimination happens
+
+RI-RICH segments are "closure units" that can involve any PREFIX family. The registry concentrates instance-specific discrimination at terminal positions regardless of content domain.
+
+**Relationship to C422 (DA Articulation):**
+C422 describes the mechanism — DA separates PREFIX family runs. This characterization describes what happens within that structure. Both are valid; they operate at different descriptive levels.
+
+**Relationship to C234 (POSITION_FREE):**
+This remains **distributional characterization**, not grammar. RI tokens CAN appear anywhere; they exhibit statistical preferences for closure positions without imposing grammatical constraints.
+
+**Source:** A_RECORD_STRUCTURE_ANALYSIS phase, DA segmentation sub-phases 1-3 (2026-01-20)
+
 ---
 
 ## Material-Class Prior Recoverability (C499)

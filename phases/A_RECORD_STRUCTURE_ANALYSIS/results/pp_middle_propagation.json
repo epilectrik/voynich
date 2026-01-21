@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "total_pp_middles": 268,
+    "in_a": 268,
+    "in_azc": 154,
+    "in_b": 268,
+    "all_three": 154
+  },
+  "azc_categories": {
+    "no_azc": 114,
+    "restricted": 92,
+    "moderate": 45,
+    "universal": 17
+  },
+  "mean_b_spread": {
+    "no_azc": 3.9649122807017543,
+    "restricted": 6.826086956521739,
+    "moderate": 20.08888888888889,
+    "universal": 48.705882352941174
+  },
+  "universal_middles": [
+    "_EMPTY_",
+    "o",
+    "e",
+    "eo",
+    "ee",
+    "eeo",
+    "eod",
+    "a",
+    "ol",
+    "od",
+    "cho",
+    "l",
+    "al",
+    "i",
+    "ch",
+    "k",
+    "eol"
+  ],
+  "propagation_patterns": {
+    "a_only": 0,
+    "a_and_azc": 0,
+    "a_and_b_no_azc": 114,
+    "all_three": 154
+  }
+}

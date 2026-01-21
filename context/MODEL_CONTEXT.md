@@ -331,14 +331,28 @@ See [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) for c
 | DA articulation | 75.1% internal boundary marker | C422 |
 | Clustered adjacency | 41.5% in runs, working-memory sized | C424 |
 
-### Two-Track Vocabulary Structure (C498)
+### Two-Track Vocabulary Structure (C498, C498.a)
 
-Currier A MIDDLEs divide into two vocabulary tracks:
+Currier A MIDDLEs divide into two vocabulary tracks, with the shared track further bifurcated:
 
-| Track | MIDDLEs | Characteristics | Role |
-|-------|---------|-----------------|------|
-| **Pipeline-participating** | 268 (43.4%) | Standard prefixes/suffixes, 7.96 folio spread | Flow through A→AZC→B |
-| **Registry-internal** | 349 (56.6%) | ct-prefix 5.1×, suffix-less 3×, 1.34 folio spread | Stay in A registry |
+```
+A MIDDLEs (617 total)
+├── RI: Registry-Internal (349, 56.6%)
+│     A-exclusive, instance discrimination, folio-localized
+│
+└── Shared with B (268, 43.4%)
+    ├── AZC-Mediated (154, 25.0% of A vocabulary)
+    │     A→AZC→B constraint propagation
+    │     ├── Universal (17) - 10+ AZC folios
+    │     ├── Moderate (45) - 3-10 AZC folios
+    │     └── Restricted (92) - 1-2 AZC folios
+    │
+    └── B-Native Overlap (114, 18.5% of A vocabulary)
+          Zero AZC presence, B-dominant frequency
+          Execution-layer vocabulary with incidental A appearance
+```
+
+**Key insight (C498.a):** Only 154 MIDDLEs (25% of A vocabulary) genuinely participate in the A→AZC→B pipeline. The 114 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
 
 Registry-internal MIDDLEs encode **within-category fine distinctions** for A-registry navigation that don't propagate to B execution. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
 
