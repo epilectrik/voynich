@@ -126,6 +126,8 @@ Zero HT tokens near 17,984 hazard positions (vs 4,510 near random).
 4/5 tests favor deliberate skill practice over random mark-making. (Tier 3 interpretation: dual-purpose attention + training mechanism.)
 **Source:** EXT-HF-01
 
+**Curriculum Characterization (2026-01-21):** HT_MORPHOLOGICAL_CURRICULUM phase identified specific curriculum mechanics: vocabulary front-loading (all 21 families in first 0.3%), prerequisite relationships (26 pairs, 2.5x expected), quasi-periodic rotation. The inverted-U difficulty pattern requires quire-level validation due to rebinding confound. See `INTERPRETATION_SUMMARY.md` Section I.A.
+
 ---
 
 ---

@@ -712,6 +712,11 @@ L-compound middle patterns (lch-, lk-, lsh-) function as B-specific grammatical 
 Section H vocabulary dominates B procedures (76/83 = 91.6%); Section P rare (7/83 = 8.4%); Section T absent (0/83 = 0%); chi² = 127.54, p < 0.0001; A sections have NON-UNIFORM mapping to B procedure applicability (CAS-XREF)
 **Source:** v1.8-import
 
+### C299.a - Section T Measurement Clarification
+**Tier:** 2 | **Status:** CLOSED (Clarification)
+C299 measures the presence of *section-characteristic* vocabulary (discriminators enriched or exclusive to a Currier A section), not raw vocabulary overlap. Section T shows 0% presence in Currier B because it contains no section-distinctive vocabulary, despite its constituent tokens appearing ubiquitously across B as infrastructure (67.7% of Section T MIDDLEs appear in B vs 42.4% baseline; 100% of B folios contain Section T vocabulary). Section T (f1r, f58r, f58v) functions as foundational/template content using only generic infrastructure vocabulary.
+**Source:** A_SECTION_T_CHARACTERIZATION (2026-01-21)
+
 ---
 
 ## A-Exclusive Vocabulary Track (C498)
@@ -1006,6 +1011,40 @@ No parametric, numerical, or semantic encoding is implied or propagated.
 
 **Cross-references:** C233 (LINE_ATOMIC), C484 (Channel Bifurcation), C469 (Categorical Resolution)
 **Source:** f49v-INVESTIGATION (2026-01-20)
+
+---
+
+## B-Exclusive MIDDLE Stratification (C501)
+
+### C501 - B-Exclusive MIDDLE Stratification
+**Tier:** 2 | **Status:** CLOSED
+
+The set of B-exclusive MIDDLEs (569 types, 68% of B vocabulary) does **not** represent a distinct semantic or discriminative layer. Empirically, B-exclusive MIDDLEs stratify into three functionally distinct strata:
+
+**1. True Grammar Operators (Small, Concentrated)**
+- L-compound MIDDLEs: `lk` (30), `lkee` (15), `lched` (4), etc.
+- 49 types, 111 tokens total
+- Line-initial biased (37-50%)
+- Genuine B-specific control operators (cf. C298)
+
+**2. Boundary Closers (Small, Structural)**
+- `-edy` (67% line-final), `-dy`, `-eeed` forms
+- Line-final biased
+- Structural termination markers
+
+**3. Singleton Cloud (Large, Non-Operational)**
+- 457/569 (80.3%) are hapax legomena
+- 65.9% are edit-distance-1 variants of shared MIDDLEs
+- Edit types: 59% insertion, 39% substitution, 2% deletion
+- Longer than shared MIDDLEs (mean 4.40 vs 3.03 chars)
+- Do not participate in execution grammar
+
+**Key finding:** B-exclusive status primarily reflects **positional and orthographic realization under execution constraints**, not novel discriminative content. The 65.9% edit-distance-1 rate demonstrates that most B-exclusive vocabulary is morphological elaboration of shared MIDDLEs at boundary positions.
+
+**Architectural implication:** B does not maintain a separate "boundary vocabulary" - it uses elaborated versions of shared MIDDLEs at boundary positions. The extra character(s) encode boundary-specific disambiguation without creating genuinely new discriminators.
+
+**Cross-references:** C298 (L-compound operators), C358 (boundary tokens), C271 (compositional morphology), C383 (global type system)
+**Source:** B_EXCLUSIVE_MIDDLE_ORIGINS phase (2026-01-21)
 
 ---
 

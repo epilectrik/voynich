@@ -4,6 +4,165 @@
 
 ---
 
+## Version 2.75 (2026-01-21) - B_EXCLUSIVE_MIDDLE_ORIGINS: Three-Layer Stratification (C501)
+
+### Summary
+
+Investigated why 569 MIDDLEs are B-exclusive. Discovered that B-exclusivity is NOT about distinct discriminators - it's morphological surface variation. 65.9% of B-exclusive MIDDLEs are edit-distance-1 variants of shared MIDDLEs.
+
+### Key Findings
+
+| Finding | Evidence |
+|---------|----------|
+| 65.9% are edit-distance-1 variants | 375/569 MIDDLEs |
+| Edit types | 59% insertion, 39% substitution, 2% deletion |
+| B-exclusive longer | Mean 4.40 vs 3.03 chars (p<0.0001) |
+| Boundary enriched | 1.70x at line edges |
+| 80.3% are singletons | 457/569 appear exactly once |
+| L-compound operators | 49 types, 111 tokens (line-initial) |
+
+### Three-Layer Stratification
+
+| Layer | Size | Function |
+|-------|------|----------|
+| L-compound operators | 49 types | Line-initial control (C298) |
+| Boundary closers | ~15 types | Line-final markers (-edy/-dy) |
+| Singleton cloud | 457 types (80%) | Orthographic variants, no grammar role |
+
+### False Lead Closed
+
+The "49 distant MIDDLEs = 49 instruction classes" coincidence was tested and correctly rejected. All 49 distant MIDDLEs are hapax legomena with no operator behavior.
+
+### REGIME Finding
+
+REGIME_1 (simple) has highest B-exclusive rate (60.4%). Complex procedures use more canonical vocabulary. Supports C458 (design freedom in simple contexts).
+
+### Constraint Added
+
+**C501 - B-Exclusive MIDDLE Stratification (Tier 2):** B-exclusive status primarily reflects positional and orthographic realization under execution constraints, not novel discriminative content. True grammar operators are confined to the small L-compound core.
+
+### Documentation Updates
+
+- Added C501 to currier_a.md
+- Updated MODEL_CONTEXT.md Section V with quantified stratification
+- Updated EXPERT_CONTEXT.md via regeneration
+
+### Provenance
+
+- Phase: B_EXCLUSIVE_MIDDLE_ORIGINS
+- Scripts: `b_excl_origin_analysis.py`, `extract_distant_middles.py`, `high_freq_b_exclusive.py`
+- Results: `b_excl_origin_analysis.json`
+
+---
+
+## Version 2.74 (2026-01-21) - A_SECTION_T_CHARACTERIZATION: Measurement Disambiguation
+
+### Summary
+
+Investigated why Section T vocabulary shows 0% presence in Currier B (C299). Resolved apparent anomaly by discovering C299 measures section-characteristic vocabulary, not raw vocabulary overlap. Section T contains no distinctive vocabulary—only generic infrastructure tokens.
+
+### Investigation Path
+
+| Phase | Test | Finding |
+|-------|------|---------|
+| 1 | Registry-Internal Check | OPPOSITE - Section T is 32.3% RI vs 57.6% baseline (DEPLETED) |
+| 1 | AZC Participation | OPPOSITE - Section T 52.8% vs 28.1% baseline (ENRICHED) |
+| 1 | Control Operators | Zero control operators found in Section T |
+| 2 | S-Zone Concentration | FALSIFIED - Section T DEPLETED in boundary zones (15.1% vs 17.9%) |
+| 3 | Vocabulary Overlap | **KEY DISCOVERY** - 67.7% of T MIDDLEs appear in B (vs 42.4% baseline) |
+| 3 | B Folio Presence | 100% of B folios contain Section T vocabulary |
+
+### Key Discovery
+
+Two different questions were conflated:
+
+| Question | Answer |
+|----------|--------|
+| Does B use vocabulary that appears in Section T? | **YES - 100% of B folios** |
+| Does B use vocabulary *distinctive* of Section T? | **NO - 0%** |
+
+Both results are true simultaneously and not in tension.
+
+### Resolution
+
+Section T (f1r, f58r, f58v) contains **no section-characteristic vocabulary**. Its vocabulary consists entirely of shared infrastructure tokens (`_EMPTY_`, `a`, `al`, `ck`, `d`, etc.) that appear ubiquitously across all systems.
+
+Section T functions as:
+- Generic baseline (not specialized registry content)
+- Template/scaffold (demonstrates morphology without domain specifics)
+- Non-discriminative registry surface (orientation, not content)
+
+### External Validation
+
+Reviewed by domain expert. Verdict: "This represents a successful disambiguation rather than a correction. C299 was correct all along—it measures section-characteristic vocabulary, not raw overlap. Section T simply has no distinctive content to measure."
+
+### Constraint Changes
+
+| Constraint | Change |
+|------------|--------|
+| C299 | VALIDATED - measures section-characteristic vocabulary correctly |
+| C299.a | ADDED - clarification that C299 measures discriminators, not raw overlap |
+
+### Provenance
+
+- Phase: A_SECTION_T_CHARACTERIZATION
+- Scripts: `phases/A_SECTION_T_CHARACTERIZATION/scripts/`
+  - `section_t_analysis.py` (initial characterization)
+  - `azc_zone_analysis.py` (S-zone hypothesis test)
+  - `permutation_and_overlap_test.py` (vocabulary overlap discovery)
+- Results: `phases/A_SECTION_T_CHARACTERIZATION/results/`
+
+---
+
+## Version 2.73 (2026-01-21) - HT_MORPHOLOGICAL_CURRICULUM: Partial Curriculum Structure
+
+### Summary
+
+Investigated whether HT morphological patterns follow curriculum structure. Found partial evidence (1 strong, 2 weak, 1 provisional out of 5 valid tests). Key rebinding confound identified for difficulty gradient finding.
+
+### Test Battery Results
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| 1. Introduction Sequencing | **STRONG PASS** | All 21 families in first 0.3% (KS=0.857) |
+| 2. Spaced Repetition | UNDERPOWERED | Insufficient rare-but-repeated tokens |
+| 3. Block Complexity | FAIL | No within-block gradient |
+| 4. Family Rotation | **WEAK PASS** | Quasi-periodic ACF peaks |
+| 5. Difficulty Gradient | **PROVISIONAL** | Inverted-U confounded by rebinding |
+| 6. Prerequisite Structure | **WEAK PASS** | 26 pairs (2.5x expected) |
+
+### Key Findings
+
+| Finding | Evidence | Status |
+|---------|----------|--------|
+| Vocabulary front-loading | All 21 families in first 0.3% | CONFIRMED |
+| Prerequisite relationships | 26 pairs vs 10.5 expected | CONFIRMED |
+| Quasi-periodic rotation | ACF peaks at 6,9,12,14,17 | CONFIRMED |
+| Inverted-U difficulty | H=89.04, p<0.0001 | PROVISIONAL (rebinding confound) |
+
+### Rebinding Caveat
+
+The inverted-U difficulty pattern cannot be distinguished from rebinding artifact without quire-level controls. The manuscript was rebound by someone who couldn't read it (C156, C367-C370). The "middle" zone in current binding is a mixture of originally non-adjacent folios.
+
+### Documentation Updates
+
+- Added Section I.A to INTERPRETATION_SUMMARY.md (HT Morphological Curriculum)
+- Added curriculum characterization note to C221 in operations.md
+- Added brief mention to MODEL_CONTEXT.md Section IX
+- Updated phase summary to reflect PROVISIONAL status for Test 5
+
+### Outcome
+
+Tier 3 characterization (not Tier 2 constraint). Refines C221 (Deliberate Skill Practice) with specific curriculum mechanics.
+
+### Provenance
+
+- Phase: HT_MORPHOLOGICAL_CURRICULUM
+- Script: `phases/HT_MORPHOLOGICAL_CURRICULUM/scripts/ht_curriculum_analysis.py`
+- Results: `phases/HT_MORPHOLOGICAL_CURRICULUM/results/ht_curriculum_results.json`
+
+---
+
 ## Version 2.72 (2026-01-20) - A_RECORD_STRUCTURE_ANALYSIS: PP Vocabulary Bifurcation (C498.a)
 
 ### Summary

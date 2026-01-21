@@ -10,18 +10,73 @@ This project uses a **progressive context system**.
 
 ---
 
-## DATA LOADING REQUIREMENT
+## SCRIPT CONSTRUCTION GUIDELINES
 
-> **CRITICAL: When writing scripts that load the Voynich transcript, ALWAYS filter to the H (PRIMARY) transcriber track.**
+> **All agents writing Python scripts MUST follow these rules.**
 
-The transcript contains 18 parallel transcriber readings. Failure to filter causes ~3.2x token inflation and creates false patterns.
+### 1. Transcriber Filter (MANDATORY)
 
-**Required reading:** [context/DATA/TRANSCRIPT_ARCHITECTURE.md](context/DATA/TRANSCRIPT_ARCHITECTURE.md)
+The transcript has 18 parallel transcriber readings. **Always filter to H track:**
 
 ```python
-# MANDATORY pattern
-df = df[df['transcriber'] == 'H']  # PRIMARY track only
+df = df[df['transcriber'] == 'H']  # PRIMARY track only - ALWAYS DO THIS
 ```
+
+Failure causes ~3.2x token inflation and false patterns.
+
+### 2. Placement Type Awareness
+
+The `placement` column distinguishes token types. Filter appropriately:
+
+| Type | Filter | Use Case |
+|------|--------|----------|
+| TEXT | `placement.str.startswith('P')` | Standard text analysis |
+| LABEL | `placement.str.startswith('L')` | Illustration labels (often exclude) |
+| RING/CIRCLE/STAR | `R`, `C`, `S` prefixes | AZC diagram positions |
+
+```python
+# Exclude labels from text analysis
+df = df[~df['placement'].str.startswith('L')]
+```
+
+### 3. O-Complexity (CRITICAL)
+
+**Pre-compute expensive operations BEFORE loops.** If a loop runs 1000+ iterations, all inner operations must be O(1).
+
+```python
+# BAD - O(n²): Computing inside loop
+for i in range(10000):
+    folio_set = set(df[df['folio'] == f]['middle'])  # DataFrame filter each iteration!
+
+# GOOD - O(n): Pre-compute once
+folio_sets = {f: set(g['middle']) for f, g in df.groupby('folio')}
+for i in range(10000):
+    folio_set = folio_sets[f]  # O(1) lookup
+```
+
+**Common patterns to pre-compute:**
+- Per-folio/per-line token sets (use `groupby`)
+- Membership lookup sets (build once, test with `in`)
+- MIDDLE extraction (vectorize with `.apply()` once, not per-row)
+
+### 4. Edge Cases
+
+- **Empty words:** 17 tokens in H track (all section B) - skip with `word.strip()`
+- **Asterisk tokens:** 172 uncertain tokens - filter with `'*' not in word`
+- **language=NA:** Not missing data - these are AZC tokens (sections A, Z, C)
+
+### 5. Canonical Counts (H-only)
+
+Use these to verify your filtering is correct:
+
+| Subset | Count |
+|--------|-------|
+| Total H | 37,957 |
+| Currier A | 11,415 |
+| Currier B | 23,243 |
+| AZC (NA) | 3,299 |
+
+**Full details:** [context/DATA/TRANSCRIPT_ARCHITECTURE.md](context/DATA/TRANSCRIPT_ARCHITECTURE.md)
 
 ---
 
@@ -30,8 +85,8 @@ df = df[df['transcriber'] == 'H']  # PRIMARY track only
 | Metric | Value |
 |--------|-------|
 | Version | 2.13 FROZEN STATE |
-| Constraints | 359 validated |
-| Phases | 132 completed |
+| Constraints | 363 validated |
+| Phases | 189 completed |
 | Folios | 83 (Currier B) |
 | Pipeline | CLOSED (PCA-v1 CERTIFIED) |
 

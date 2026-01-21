@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 363 constraints | 2026-01-20
+CONSTRAINT_REFERENCE v2.6 | 364 constraints | 2026-01-21
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -367,3 +367,4 @@ C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with ex
 C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
 C499	Bounded Material-Class Recoverability	2	A	in: currier_a
 C500	Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×)	3	A	in: currier_a
+C501	B-Exclusive MIDDLE Stratification	2	A	in: currier_a
