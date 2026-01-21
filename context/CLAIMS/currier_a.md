@@ -920,9 +920,15 @@ token → folio appearances → product type distribution → P(material_class |
 ```
 
 **Results (128 MIDDLEs analyzed):**
-- 27 tokens with P(animal) = 1.00 (PRECISION-exclusive)
+- 18 tokens with P(animal) = 1.00 (PRECISION-exclusive)
 - Mean entropy: 1.08 bits (range 0.00 - 2.62)
 - Dominant class distribution: herb (49.2%), hot_dry_herb (25.8%), animal (21.1%), cold_moist_flower (3.9%)
+
+**Validation (ANIMAL_PRECISION_CORRELATION phase, 2026-01-21):**
+All 18 P(animal)=1.00 tokens are **A-exclusive** - they never appear in Currier B. This confirms:
+1. These ARE registry vocabulary (not pipeline-participating)
+2. The material-class inference methodology correctly identifies precision-requiring materials
+3. Animal distillation materials are catalogued in A but don't propagate to B execution
 
 **Null model validation (1000 permutations):**
 - 86% of testable tokens match random baseline

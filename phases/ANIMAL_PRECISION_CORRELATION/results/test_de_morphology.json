@@ -1,0 +1,139 @@
+{
+  "test_d_prefix_distribution": {
+    "global_distribution": {
+      "ch": 3361,
+      "sh": 2029,
+      "qo": 4091,
+      "da": 1067,
+      "ok": 1480,
+      "ot": 1456,
+      "ol": 1265,
+      "ct": 59
+    },
+    "by_regime": {
+      "REGIME_1": {
+        "total": 10910,
+        "counts": {
+          "ch": 1769,
+          "sh": 1203,
+          "qo": 2511,
+          "da": 540,
+          "ok": 845,
+          "ot": 745,
+          "ol": 777,
+          "ct": 23
+        }
+      },
+      "REGIME_2": {
+        "total": 2364,
+        "counts": {
+          "ch": 370,
+          "sh": 163,
+          "qo": 374,
+          "da": 108,
+          "ok": 172,
+          "ot": 292,
+          "ol": 117,
+          "ct": 10
+        }
+      },
+      "REGIME_3": {
+        "total": 3484,
+        "counts": {
+          "ch": 738,
+          "sh": 429,
+          "qo": 821,
+          "da": 200,
+          "ok": 210,
+          "ot": 218,
+          "ol": 188,
+          "ct": 11
+        }
+      },
+      "REGIME_4": {
+        "total": 2691,
+        "counts": {
+          "ch": 484,
+          "sh": 234,
+          "qo": 385,
+          "da": 219,
+          "ok": 253,
+          "ot": 201,
+          "ol": 183,
+          "ct": 15
+        }
+      }
+    },
+    "p2_evaluation": {
+      "regime4_ch_pct": 17.985878855444074,
+      "global_ch_pct": 17.28109414365777,
+      "enrichment_ratio": 1.0407835699480268,
+      "result": "FAIL"
+    },
+    "chi_square": {
+      "chi2": 138.52010812258226,
+      "p_value": 1.0377706801793579e-26,
+      "significant": true
+    }
+  },
+  "test_e_singleton_density": {
+    "global_singleton_rate": 64.21800947867298,
+    "by_regime": {
+      "REGIME_1": {
+        "total_middles": 513,
+        "singleton_count": 251,
+        "singleton_rate": 48.927875243664715
+      },
+      "REGIME_2": {
+        "total_middles": 257,
+        "singleton_count": 89,
+        "singleton_rate": 34.63035019455253
+      },
+      "REGIME_3": {
+        "total_middles": 301,
+        "singleton_count": 97,
+        "singleton_rate": 32.22591362126246
+      },
+      "REGIME_4": {
+        "total_middles": 282,
+        "singleton_count": 105,
+        "singleton_rate": 37.234042553191486
+      }
+    },
+    "regime4_vs_others": {
+      "regime4_rate": 37.234042553191486,
+      "other_mean_rate": 38.594713019826564,
+      "difference": -1.360670466635078
+    }
+  },
+  "p5_escape_density": {
+    "by_regime": {
+      "REGIME_3": {
+        "mean": 17.75,
+        "std": 9.391485505499118,
+        "n": 16
+      },
+      "REGIME_1": {
+        "mean": 37.96774193548387,
+        "std": 17.331058576955115,
+        "n": 31
+      },
+      "REGIME_2": {
+        "mean": 17.181818181818183,
+        "std": 11.839072445239802,
+        "n": 11
+      },
+      "REGIME_4": {
+        "mean": 12.68,
+        "std": 9.546901766192702,
+        "n": 25
+      }
+    },
+    "regime4_vs_others": {
+      "regime4": 12.68,
+      "other_mean": 24.29985337243402,
+      "ratio": 0.5218138482425705,
+      "supported": true
+    }
+  }
+}
