@@ -1,52 +1,64 @@
-# C384: NO Entry-Level A-B Coupling
+# C384: NO Token-Level or Context-Free A-B Lookup
 
 **Tier:** 2 | **Status:** CLOSED | **Phase:** A-ARCH
 
 ---
 
-## Claim
+## Claim (REVISED v2.77)
 
-Although Currier A and B share vocabulary and type system, there is NO entry-level or folio-level cross-reference. A does NOT function as a lookup catalog for B programs.
+No individual Currier A token, nor any Currier A record considered without AZC routing and multi-axis constraint composition, can directly determine or reference a Currier B program or folio.
 
-## Evidence
+Token-level overlap, adjacency, or single-axis similarity is insufficient to establish correspondence.
+
+## What C384 BLOCKS
+
+- Token -> meaning lookup
+- Token -> folio mapping
+- Entry -> folio claims WITHOUT constraint routing
+- Dictionary / translation claims
+- Single-axis similarity tests
+
+## What C384 Does NOT Block
+
+- Record-level correspondence via multi-axis constraint composition
+- Survivor-set collapse (C481)
+- Reverse inference via AZC routing
+- Tier-4 expert-conditioned mapping (Brunschwig)
+- Multi-dimensional PP convergence at RECORD level
+
+See **C384.a** for explicit authorization of conditional correspondence.
+
+## Evidence (Original Tests)
 
 | Test | Finding | Interpretation |
 |------|---------|----------------|
 | B folio A-vocab sharing | Jaccard 0.998 | ALL B folios use IDENTICAL A pool |
-| One-to-one tokens | 215 tokens → 207 unique pairings | No repeated pairings beyond noise |
-| Rare token distribution | Rare globally, not relationally | No targeting of specific A entries |
+| One-to-one tokens | 215 tokens -> 207 unique pairings | No repeated pairings beyond noise |
+| Rare token distribution | Rare globally, not relationally | No targeting via SINGLE tokens |
 
-## What This Means
-
-- B programs don't "look up" specific A entries
-- A doesn't function as material index for B procedures
-- Coupling occurs ONLY at global type-system level
-- The relationship is architectural, not referential
-
-## What IS Shared
-
-Despite no entry-level coupling:
-- 69.8% vocabulary integration (C335)
-- Global type system (C383)
-- Hybrid access pattern exists (C336)
+These tests falsified PRIMITIVE lookup, not emergent correspondence.
 
 ## Contrast
 
 | Model | Status |
 |-------|--------|
 | A = lookup catalog for B | FALSIFIED |
-| A and B share global vocabulary pool | CONFIRMED |
+| Token-level A-B decoding | FALSIFIED |
 | A entries map 1:1 to B procedures | FALSIFIED |
-| A and B share type system | CONFIRMED |
+| Record-level correspondence via constraint collapse | **PERMITTED** (C384.a) |
+| Multi-axis triangulation to A records | **PERMITTED** (C384.a) |
 
 ## Related Constraints
 
 - C335 - 69.8% vocabulary integration
 - C336 - Hybrid A-access pattern
 - C383 - Global type system
+- **C384.a** - Conditional record-level correspondence permitted
+- C473 - A record = constraint bundle
+- C481 - Survivor-set uniqueness
 
 ---
 
 ## Navigation
 
-← [INDEX.md](INDEX.md) | ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
+<- [INDEX.md](INDEX.md) | [C384.a](C384a_conditional_correspondence.md) | Up [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

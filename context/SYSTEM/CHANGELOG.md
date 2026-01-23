@@ -4,6 +4,86 @@
 
 ---
 
+## Version 2.77 (2026-01-21) - Recipe Triangulation Methodology + C384 Scope Fix
+
+### Summary
+
+Developed and validated a methodology for mapping Brunschwig recipe characteristics to specific Voynich A records via multi-dimensional PP convergence. Successfully identified **eoschso = ennen (chicken)** as Tier 3 hypothesis.
+
+**Also fixed C384 scope** - the original wording was over-blocking valid record-level inference, causing AI derailment.
+
+### Key Findings
+
+| Test | Result |
+|------|--------|
+| REGIME vocabulary distinctiveness | 11.9% exclusive (weak) |
+| 4D conjunction narrowing | 0.29x ratio (synergistic) |
+| Rose water vs animal folio overlap | 90.8% (PP not discriminative at folio level) |
+| Record-level PP convergence | **DISCRIMINATES** (different records for different animals) |
+
+### The Working Pipeline
+
+```
+Recipe Dimensions → B Folio Constraints → 4D Conjunction →
+PP Vocabulary → A RECORD Convergence (3+) → RI Extraction →
+PREFIX Profile Matching → Instruction Sequence → Material ID
+```
+
+### Animal Identification
+
+| RI Token | ESCAPE PP? | AUX PP? | Candidate Animal |
+|----------|------------|---------|------------------|
+| eoschso | YES | YES | **ennen (chicken)** |
+| teold | YES | NO | scharlach/charlach/milch? |
+| chald | YES | NO | scharlach/charlach/milch? |
+| eyd | weak | weak | blut/ltzinblut? |
+
+### Constraint Refinement
+
+**C384 (no entry-level A-B coupling) refined:**
+> Single PP tokens do not establish entry-level coupling, but multi-dimensional PP convergence at RECORD level combined with PREFIX profile matching can identify specific A records.
+
+### New Documentation
+
+- `context/SPECULATIVE/recipe_triangulation_methodology.md` - Full methodology
+- `phases/ANIMAL_PRECISION_CORRELATION/results/animal_identification.md` - Results
+- `phases/ANIMAL_PRECISION_CORRELATION/results/pipeline_gap_analysis.md` - Initial tests
+
+### C384 Scope Fix
+
+**Problem:** Original C384 wording ("No entry-level A-B coupling") was over-blocking record-level inference, causing AI to abort valid tests.
+
+**Solution:** Split into two constraints:
+- **C384** (revised): No TOKEN-level or context-free A-B lookup
+- **C384.a** (new): Conditional record-level correspondence PERMITTED
+
+**What C384 now BLOCKS:**
+- Token -> meaning lookup
+- Token -> folio mapping
+- Entry -> folio WITHOUT constraint routing
+- Dictionary / translation claims
+
+**What C384.a PERMITS:**
+- Record-level correspondence via multi-axis constraint composition
+- Survivor-set collapse (C481)
+- Reverse inference via AZC routing
+- Multi-dimensional PP convergence at RECORD level
+
+**Canonical rule added to MODEL_CONTEXT.md:**
+> "Currier A never names anything, but Currier A records can correspond to Currier B execution contexts when sufficient constraints collapse through AZC."
+
+### Files Changed
+
+- CLAIMS/C384_no_entry_coupling.md - REVISED (narrowed scope)
+- CLAIMS/C384a_conditional_correspondence.md - NEW
+- CLAIMS/INDEX.md - Updated C384, added C384.a
+- CLAIMS/currier_a.md - Updated C384 references
+- MODEL_CONTEXT.md - Updated forbidden list, added canonical rule
+- SPECULATIVE/INTERPRETATION_SUMMARY.md - Added X.28 (Recipe Triangulation)
+- SPECULATIVE/recipe_triangulation_methodology.md - NEW
+
+---
+
 ## Version 2.76 (2026-01-21) - ANIMAL_PRECISION_CORRELATION: A-Exclusive Registry Vocabulary
 
 ### Summary

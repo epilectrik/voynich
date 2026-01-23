@@ -95,8 +95,12 @@ The following are **structurally closed** and cannot be reopened without extraor
 - New grammar proposals for any system
 - New morphological decomposition schemes
 - Claims of semantic token meaning
-- Entry-level A-B correspondence claims
+- Token-level or context-free A-B lookup claims (C384)
+- Entry-B claims not mediated by AZC and constraint collapse
+- Dictionary construction or semantic decoding
 - Reintroduction of language/cipher hypotheses
+
+**Note:** Record-level correspondence via multi-axis constraint composition IS permitted (C384.a). See canonical rule below.
 
 ---
 
@@ -730,6 +734,31 @@ The A -> AZC -> B control pipeline is now **structurally and behaviorally valida
 
 **Do NOT reopen:** entry-level A-B mapping, dynamic AZC hypothesis, parametric encoding, semantic token meaning.
 
+### Pipeline Legality Model (Strict Interpretation)
+
+**Critical clarification (C502):** AZC does NOT expand vocabulary beyond what A specifies.
+
+| Model | Description | Result | Status |
+|-------|-------------|--------|--------|
+| Union (WRONG) | Legal = union of MIDDLEs from matched AZC folios | ~463 survivors (96%) | REJECTED |
+| **Strict (CORRECT)** | Legal = A-record MIDDLEs only | ~96 survivors (20%) | VALIDATED |
+
+**Why strict is correct:**
+- Matches C481's ~128-dimensional discrimination space
+- Union model produces trivial filtering (universal connectors match all folios)
+- Expert-validated against frozen architecture (2026-01-22)
+
+**What AZC actually does:**
+- Provides escape gradients by position (C443)
+- Enforces compatibility at specification level (C442, C475)
+- Does NOT expand vocabulary beyond what A specifies
+
+**Quantitative effect (C502):**
+- Each A record makes ~80% of B vocabulary illegal
+- Different A records create different B folio viability profiles
+- Mean B folio coverage: 13.3% per A record
+- This is procedure selection via vocabulary restriction, not addressable lookup
+
 ---
 
 ## XI. REJECTED / FALSIFIED THEORIES
@@ -746,9 +775,16 @@ The following hypotheses have been tested and rejected. They are preserved as ne
 | Hazard registry | FALSIFIED | Pre-registered test p=0.651 |
 | Semantic diagrams | FALSIFIED | Swap invariance p=1.0 |
 | Operator error logging | FALSIFIED | No error patterns |
-| Entry-level A-B correspondence | FALSIFIED | C384, no coupling |
+| Token-level A-B lookup | FALSIFIED | C384, no context-free coupling |
 
 **Do not resurrect these hypotheses** without extraordinary new evidence and explicit model reopening.
+
+### Canonical Rule: A-B Correspondence
+
+> **"Currier A never names anything, but Currier A records can correspond to Currier B execution contexts when sufficient constraints collapse through AZC."**
+
+- **FALSIFIED:** Token -> meaning, token -> folio, context-free entry -> folio
+- **PERMITTED:** Record-level correspondence via multi-axis constraint composition (C384.a)
 
 ---
 

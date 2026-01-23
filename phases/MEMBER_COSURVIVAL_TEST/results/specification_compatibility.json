@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "test_type": "specification_level_compatibility",
+    "unit_of_analysis": "currier_a_record",
+    "constraint_tested": "C475"
+  },
+  "statistics": {
+    "total_middles": 1322,
+    "total_possible_pairs": 873181,
+    "legal_pairs": 11571,
+    "illegal_pairs": 861610,
+    "legal_rate": 1.3252,
+    "illegal_rate": 98.6748
+  },
+  "connectivity": {
+    "num_components": 4,
+    "largest_component_size": 1314,
+    "largest_component_rate": 0.9939,
+    "isolated_count": 0
+  },
+  "verification": {
+    "c475_expected_legal": "4-5%",
+    "c475_expected_illegal": "95-96%",
+    "legal_check": "FAIL",
+    "illegal_check": "FAIL"
+  },
+  "universal_connectors": [
+    {
+      "middle": "o",
+      "degree": 857
+    },
+    {
+      "middle": "e",
+      "degree": 658
+    },
+    {
+      "middle": "i",
+      "degree": 604
+    },
+    {
+      "middle": "a",
+      "degree": 535
+    },
+    {
+      "middle": "l",
+      "degree": 456
+    },
+    {
+      "middle": "y",
+      "degree": 440
+    },
+    {
+      "middle": "r",
+      "degree": 421
+    },
+    {
+      "middle": "d",
+      "degree": 380
+    },
+    {
+      "middle": "s",
+      "degree": 358
+    },
+    {
+      "middle": "ch",
+      "degree": 285
+    },
+    {
+      "middle": "eo",
+      "degree": 285
+    },
+    {
+      "middle": "k",
+      "degree": 284
+    },
+    {
+      "middle": "h",
+      "degree": 279
+    },
+    {
+      "middle": "ckh",
+      "degree": 255
+    },
+    {
+      "middle": "ke",
+      "degree": 219
+    },
+    {
+      "middle": "od",
+      "degree": 199
+    },
+    {
+      "middle": "ee",
+      "degree": 195
+    },
+    {
+      "middle": "ol",
+      "degree": 177
+    },
+    {
+      "middle": "t",
+      "degree": 164
+    },
+    {
+      "middle": "m",
+      "degree": 150
+    },
+    {
+      "middle": "ok",
+      "degree": 147
+    },
+    {
+      "middle": "os",
+      "degree": 146
+    },
+    {
+      "middle": "cph",
+      "degree": 136
+    },
+    {
+      "middle": "tch",
+      "degree": 133
+    },
+    {
+      "middle": "kch",
+      "degree": 128
+    },
+    {
+      "middle": "al",
+      "degree": 122
+    },
+    {
+      "middle": "yt",
+      "degree": 121
+    },
+    {
+      "middle": "ockh",
+      "degree": 108
+    },
+    {
+      "middle": "or",
+      "degree": 107
+    },
+    {
+      "middle": "opch",
+      "degree": 103
+    },
+    {
+      "middle": "ot",
+      "degree": 101
+    },
+    {
+      "middle": "eod",
+      "degree": 100
+    },
+    {
+      "middle": "eos",
+      "degree": 98
+    },
+    {
+      "middle": "sh",
+      "degree": 96
+    },
+    {
+      "middle": "ai",
+      "degree": 96
+    },
+    {
+      "middle": "cth",
+      "degree": 94
+    },
+    {
+      "middle": "ho",
+      "degree": 92
+    },
+    {
+      "middle": "ytch",
+      "degree": 91
+    },
+    {
+      "middle": "ek",
+      "degree": 85
+    },
+    {
+      "middle": "che",
+      "degree": 83
+    },
+    {
+      "middle": "op",
+      "degree": 81
+    },
+    {
+      "middle": "eeo",
+      "degree": 80
+    },
+    {
+      "middle": "ckhe",
+      "degree": 76
+    },
+    {
+      "middle": "he",
+      "degree": 75
+    },
+    {
+      "middle": "ii",
+      "degree": 75
+    },
+    {
+      "middle": "octh",
+      "degree": 74
+    },
+    {
+      "middle": "dsh",
+      "degree": 72
+    },
+    {
+      "middle": "okch",
+      "degree": 71
+    },
+    {
+      "middle": "ych",
+      "degree": 69
+    },
+    {
+      "middle": "cho",
+      "degree": 69
+    }
+  ],
+  "isolated_middles": []
+}

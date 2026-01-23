@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "total_contexts": 1579,
+    "model_context_atomic": [
+      7,
+      9,
+      23
+    ],
+    "model_context_decomposable": [
+      8,
+      11,
+      30,
+      31,
+      33,
+      41
+    ]
+  },
+  "verification": {
+    "verified_atomic": [
+      7,
+      9,
+      11,
+      41
+    ],
+    "verified_decomposable": [
+      8,
+      23,
+      30,
+      31,
+      33
+    ],
+    "misclassified": [
+      {
+        "class": 11,
+        "listed_as": "DECOMPOSABLE",
+        "actual": "ATOMIC"
+      },
+      {
+        "class": 23,
+        "listed_as": "ATOMIC",
+        "actual": "DECOMPOSABLE"
+      }
+    ]
+  },
+  "decomposable_analysis": {
+    "8": {
+      "total_members": 3,
+      "tokens": [
+        "chedy",
+        "shedy",
+        "chol"
+      ],
+      "zero_member_contexts": 19,
+      "single_member_contexts": 0,
+      "full_member_contexts": 1560,
+      "mean_survivors": 2.96,
+      "suppression_rate": 0.012
+    },
+    "23": {
+      "total_members": 7,
+      "tokens": [
+        "dy",
+        "s",
+        "y",
+        "r",
+        "am",
+        "l",
+        "d"
+      ],
+      "zero_member_contexts": 19,
+      "single_member_contexts": 0,
+      "full_member_contexts": 1556,
+      "mean_survivors": 6.91,
+      "suppression_rate": 0.0126
+    },
+    "30": {
+      "total_members": 5,
+      "tokens": [
+        "dar",
+        "dal",
+        "dain",
+        "dair",
+        "dam"
+      ],
+      "zero_member_contexts": 19,
+      "single_member_contexts": 0,
+      "full_member_contexts": 1552,
+      "mean_survivors": 4.93,
+      "suppression_rate": 0.013
+    },
+    "31": {
+      "total_members": 12,
+      "tokens": [
+        "chey",
+        "shey",
+        "chor",
+        "shol",
+        "chy",
+        "chdy",
+        "sho",
+        "shy",
+        "shor",
+        "char",
+        "cho",
+        "cheo"
+      ],
+      "zero_member_contexts": 19,
+      "single_member_contexts": 0,
+      "full_member_contexts": 1558,
+      "mean_survivors": 11.85,
+      "suppression_rate": 0.0121
+    },
+    "33": {
+      "total_members": 13,
+      "tokens": [
+        "qokeey",
+        "qokeedy",
+        "qokain",
+        "qokedy",
+        "qokaiin",
+        "qotedy",
+        "qotaiin",
+        "qoteedy",
+        "qokchy",
+        "qotain",
+        "qotchy",
+        "qokchdy",
+        "qokeol"
+      ],
+      "zero_member_contexts": 19,
+      "single_member_contexts": 0,
+      "full_member_contexts": 0,
+      "mean_survivors": 11.77,
+      "suppression_rate": 0.0944
+    }
+  }
+}
