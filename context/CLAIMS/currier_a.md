@@ -1,4 +1,4 @@
-# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C500)
+# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C502)
 
 **Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility, coverage, temporal trajectories, suffix posture
 **Status:** CLOSED
@@ -808,7 +808,7 @@ The A∩B shared MIDDLE vocabulary (originally labeled "Pipeline-Participating")
 - A's outbound vocabulary to pipeline is 154 MIDDLEs (25% of A vocabulary), not 268 (43.4%)
 
 **Relationship to existing constraints:**
-- Consistent with C384 (No Entry-Level A-B Coupling): BN MIDDLEs demonstrate statistical, not referential, sharing
+- Consistent with C384 (No Token-Level A-B Lookup): BN MIDDLEs demonstrate statistical, not referential, sharing
 - Consistent with C383 (Global Type System): Shared morphology ≠ shared function
 - Refines C468-C470: Pipeline model preserved but now precisely scoped
 
@@ -950,7 +950,7 @@ All 18 P(animal)=1.00 tokens are **A-exclusive** - they never appear in Currier 
 
 **Relationship to existing constraints:**
 - Extends C498 (registry-internal track): Adds material-class priors to the "what we can know" about registry-internal MIDDLEs
-- Respects C384 (no entry-level coupling): Analysis is aggregate/statistical, not entry-level
+- Respects C384 (no token-level lookup): Analysis is aggregate/statistical, not token-level
 - Validates semantic ceiling gradient: Different recoverability levels for different claim types
 
 **Source:** BRUNSCHWIG_CANDIDATE_LABELING phase (2026-01-20)
@@ -1051,6 +1051,46 @@ The set of B-exclusive MIDDLEs (569 types, 68% of B vocabulary) does **not** rep
 
 **Cross-references:** C298 (L-compound operators), C358 (boundary tokens), C271 (compositional morphology), C383 (global type system)
 **Source:** B_EXCLUSIVE_MIDDLE_ORIGINS phase (2026-01-21)
+
+---
+
+## A-Record Viability Filtering (C502)
+
+### C502 - A-Record Viability Filtering
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+B | **Source:** MEMBER_COSURVIVAL_TEST (2026-01-22)
+
+Under the strict survivor-set interpretation, A records create differential B folio viability through vocabulary restriction. Only MIDDLEs present in the A record itself are legal for B execution; AZC provides compatibility grouping and escape modulation but does NOT expand vocabulary.
+
+**Evidence:**
+- Mean B folio coverage per A record: 13.3%
+- (A record, B folio) pairs with <10% coverage: 38.8%
+- Atomic core (8 tokens with MIDDLE=None): Only 5% of B folio content on average
+- 53.7% of B folios have <5% atomic content (non-viable if stripped to core)
+
+**Quantitative findings:**
+- A record specifies MIDDLEs → ~96 of 480 B tokens legal (20%)
+- ~384 B tokens filtered out per A context (80%)
+- Coverage ranges from 0.8% to 57.8% depending on (A record, B folio) pair
+- Matches C481's "~128-dimensional discrimination space"
+
+**Mechanism:**
+- Different B folios have different MIDDLE compositions
+- Low-coverage folios are functionally "crippled" (most instructions vanish)
+- High-coverage folios are "viable" for execution under that A context
+- Viability is emergent from vocabulary restriction, not intentional selection
+
+**Architectural interpretation:**
+- A→B relationship is vocabulary-mediated, not addressable (per C384)
+- The A record doesn't "know" which B folios it enables
+- C384.a permits conditional record-level correspondence via multi-axis constraint composition
+- This finding quantifies that correspondence
+
+**Contrast with union model (REJECTED):**
+- Union model: Legal = union of MIDDLEs from matched AZC folios → ~463 survivors (96%)
+- Strict model: Legal = A-record MIDDLEs only → ~96 survivors (20%)
+- Union model contradicts C481 and produces trivial filtering; strict model validated
+
+**Cross-references:** C384.a (permits conditional correspondence), C481 (survivor-set uniqueness), C475 (MIDDLE incompatibility), C469 (categorical resolution)
 
 ---
 

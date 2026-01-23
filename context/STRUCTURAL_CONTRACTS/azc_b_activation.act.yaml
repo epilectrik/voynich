@@ -177,6 +177,15 @@ propagation:
     mechanism: "Grammar paths are silently constrained"
     provenance: "C444, C468"
 
+  vocabulary_scope:
+    statement: "B vocabulary is restricted to A-record MIDDLEs only"
+    mechanism: "Tokens with MIDDLEs not in the A record are illegal (vanish)"
+    expansion: false  # AZC does NOT expand vocabulary beyond A specification
+    filtering_magnitude: "~80% of B vocabulary filtered per A context"
+    effect: "Different A records make different B folios viable"
+    note: "Viability is emergent from vocabulary restriction, not intentional selection"
+    provenance: "C481, C502"
+
 # ============================================================
 # B RECEPTION ARCHITECTURE (what receives AZC output)
 # ============================================================
@@ -303,6 +312,10 @@ disallowed:
   - interpretation: "Numeric thresholds are contractual"
     reason: "Thresholds are empirical observations, not rules"
     provenance: "C469"
+
+  - interpretation: "AZC expands B vocabulary beyond A specification"
+    reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B."
+    provenance: "C481, C502"
 
 # ============================================================
 # NON-NORMATIVE ANNOTATIONS

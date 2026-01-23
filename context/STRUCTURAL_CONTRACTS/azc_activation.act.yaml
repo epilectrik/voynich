@@ -184,6 +184,14 @@ transformations:
     effect: "Operational conditions represented categorically"
     provenance: "C469"
 
+  vocabulary_legality:
+    mechanism: "A-record MIDDLEs define B legality directly"
+    expansion: false  # AZC does NOT expand vocabulary beyond A specification
+    effect: "Only tokens with MIDDLEs present in the A record are legal for B execution"
+    filtering_magnitude: "~80% of B vocabulary filtered per A context (~96 of 480 tokens legal)"
+    note: "AZC provides compatibility grouping and escape modulation, not vocabulary expansion"
+    provenance: "C481, C502"
+
   content_invariants:
     - "No movement of tokens"
     - "No selection"
@@ -299,6 +307,10 @@ disallowed:
   - interpretation: "AZC decides dynamically"
     reason: "Ambient legality field, not decision engine"
     provenance: "F-AZC-015"
+
+  - interpretation: "AZC expands vocabulary beyond A specification"
+    reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B execution."
+    provenance: "C481, C502"
 
 # ============================================================
 # NON-NORMATIVE ANNOTATIONS

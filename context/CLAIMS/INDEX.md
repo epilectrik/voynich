@@ -287,7 +287,8 @@ Every new constraint MUST specify system scope:
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
 | 383 | GLOBAL MORPHOLOGICAL TYPE SYSTEM | 2 | GLOBAL | → [C383_global_type_system.md](C383_global_type_system.md) |
-| 384 | NO ENTRY-LEVEL A-B COUPLING | 2 | A↔B | → [C384_no_entry_coupling.md](C384_no_entry_coupling.md) |
+| 384 | NO TOKEN-LEVEL OR CONTEXT-FREE A-B LOOKUP | 2 | A↔B | → [C384_no_entry_coupling.md](C384_no_entry_coupling.md) |
+| 384.a | CONDITIONAL RECORD-LEVEL CORRESPONDENCE PERMITTED | 2 | A↔B | → [C384a_conditional_correspondence.md](C384a_conditional_correspondence.md) |
 | 385 | STRUCTURAL GRADIENT in Currier A | 2 | A | ⊂ currier_a |
 | 389 | BIGRAM-DOMINANT local determinism (H=0.41 bits) | 2 | B | ⊂ grammar_system |
 | 391 | TIME-REVERSAL SYMMETRY | 2 | B | ⊂ grammar_system |
@@ -485,7 +486,7 @@ Every new constraint MUST specify system scope:
 
 ---
 
-## A-Exclusive Vocabulary Track (C498-C500)
+## A-Exclusive Vocabulary Track (C498-C502)
 
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
@@ -493,6 +494,8 @@ Every new constraint MUST specify system scope:
 | **498.a** | **A∩B Shared Vocabulary Bifurcation** (154 AZC-Mediated + 114 B-Native Overlap; pipeline scope narrowed) | 2 | A | ⊂ currier_a |
 | 499 | Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig) | 3 | A | ⊂ currier_a |
 | 500 | Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×) | 3 | A | ⊂ currier_a |
+| **501** | **B-Exclusive MIDDLE Stratification** (569 B-exclusive types: L-compounds 49, boundary closers, 80% singletons; elaboration not novelty) | 2 | B | ⊂ currier_a |
+| **502** | **A-Record Viability Filtering** (Strict interpretation: ~96/480 B tokens legal per A; 13.3% mean B folio coverage; 80% filtered) | 2 | A+B | ⊂ currier_a |
 
 **C498-CHAR-A-CLOSURE (Tier 3):** RI closure tokens — subset of C498 vocabulary shows line-final preference (29.5% vs 16.8%), 87% singletons, complementary to DA articulation (C422). Ergonomic bias, not grammar. See currier_a.md.
 
@@ -523,7 +526,7 @@ These files contain detailed constraint documentation. Constraint ranges are app
 |------|----------|----------------|
 | [tier0_core.md](tier0_core.md) | Tier 0 frozen facts | C074-C132 |
 | [grammar_system.md](grammar_system.md) | Grammar and kernel structure | C085-C144, C328-C393 |
-| [currier_a.md](currier_a.md) | Currier A registry | C224-C299, C345-C346, C420-C424, C475-C478, C498-C500 |
+| [currier_a.md](currier_a.md) | Currier A registry | C224-C299, C345-C346, C420-C424, C475-C478, C498-C502 |
 | [morphology.md](morphology.md) | Compositional morphology | C267-C298, C349-C410, C495 |
 | [operations.md](operations.md) | OPS doctrine and control | C178-C223, C394-C403 |
 | [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453, C477 |
