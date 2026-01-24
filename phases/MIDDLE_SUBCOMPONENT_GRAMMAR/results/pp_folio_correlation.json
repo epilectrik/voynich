@@ -1,0 +1,11 @@
+{
+  "a_folios": 114,
+  "b_folios": 82,
+  "pp_vocabulary": 477,
+  "mean_similarity": 0.2170227407313914,
+  "max_similarity": 0.4117647058823529,
+  "observed_mean_max": 0.32869457388637024,
+  "permutation_baseline": 0.32869457388637013,
+  "z_score": 1.0,
+  "p_value": 1.0,
+  "signal_detected": 

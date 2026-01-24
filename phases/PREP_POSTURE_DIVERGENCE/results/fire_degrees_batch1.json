@@ -1,0 +1,506 @@
+{
+  "title": "Fire Degree Extraction - Recipes 11-90",
+  "extraction_date": "2026-01-22",
+  "methodology": "Derived from method field, material_class, and German source keywords",
+  "fire_degree_scale": {
+    "1": "Gentle fire, balneum mariae (water bath), delicate materials",
+    "2": "Standard/moderate fire, typical herb distillation",
+    "3": "Strong fire, per alembicum, harder materials (roots, bark, resins)"
+  },
+  "recipes": [
+    {
+      "id": 11,
+      "name": "Alrunen (mandrake)",
+      "fire_degree": 2,
+      "reasoning": "herb+root, standard distillation - POUND then distill"
+    },
+    {
+      "id": 12,
+      "name": "Angelica",
+      "fire_degree": 2,
+      "reasoning": "no explicit procedure, standard herb - default degree 2"
+    },
+    {
+      "id": 13,
+      "name": "Abbis (scabious)",
+      "fire_degree": 2,
+      "reasoning": "herb+flowers+root+stem, CHOP+POUND then distill - comprehensive prep"
+    },
+    {
+      "id": 14,
+      "name": "Atzeln (magpie)",
+      "fire_degree": 2,
+      "reasoning": "ANIMAL - young birds, distilled in kettles (gkessern), not balneum mariae"
+    },
+    {
+      "id": 15,
+      "name": "Antrechen Blut (duck blood)",
+      "fire_degree": 1,
+      "reasoning": "ANIMAL blood - explicit balneum mariae in glass (in einem glase im balneum marie)"
+    },
+    {
+      "id": 16,
+      "name": "Burretsch krut (borage herb)",
+      "fire_degree": 2,
+      "reasoning": "root+herb, CHOP+POUND, standard distillation when flowering"
+    },
+    {
+      "id": 17,
+      "name": "Burretsch blumen (borage flower)",
+      "fire_degree": 1,
+      "reasoning": "flower tips only - explicit balneum mariae (gedistilliert im balneum marie)"
+    },
+    {
+      "id": 18,
+      "name": "Bulsen krut (henbane)",
+      "fire_degree": 2,
+      "reasoning": "herb+root, POUND together, standard distillation - stupefactive herb"
+    },
+    {
+      "id": 19,
+      "name": "Blow gilgen (blue iris flower)",
+      "fire_degree": 2,
+      "reasoning": "no explicit procedure - flower water, default degree 2"
+    },
+    {
+      "id": 20,
+      "name": "Blow gilgen wurtzel (blue iris root)",
+      "fire_degree": 3,
+      "reasoning": "ROOT only - finely chopped, standard distillation, March timing"
+    },
+    {
+      "id": 21,
+      "name": "Blow gilgen blumlin (blue iris stamen)",
+      "fire_degree": 1,
+      "reasoning": "delicate flower part - explicit balneum mariae (sunderlich gedistilliert p balneum marie)"
+    },
+    {
+      "id": 22,
+      "name": "Byrcken loub (birch leaf)",
+      "fire_degree": 2,
+      "reasoning": "youngest leaves, CHOP+POUND, standard distillation"
+    },
+    {
+      "id": 23,
+      "name": "Byrckin safft (birch sap)",
+      "fire_degree": 2,
+      "reasoning": "sap collection then per alembicum distillation - moderate heat"
+    },
+    {
+      "id": 24,
+      "name": "Burtzeln (purslane)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem+leaves, chopped together, standard distillation"
+    },
+    {
+      "id": 25,
+      "name": "Bibinellen (burnet saxifrage)",
+      "fire_degree": 2,
+      "reasoning": "herb+sharp root, CHOP+POUND, standard distillation"
+    },
+    {
+      "id": 26,
+      "name": "Beyn holtzin loub (dogwood leaf)",
+      "fire_degree": 2,
+      "reasoning": "leaves from current year shoots, STRIP then distill"
+    },
+    {
+      "id": 27,
+      "name": "Beyn holtzin blut (dogwood flower)",
+      "fire_degree": 2,
+      "reasoning": "flowers, standard distillation in June"
+    },
+    {
+      "id": 28,
+      "name": "Brun kressen (watercress)",
+      "fire_degree": 2,
+      "reasoning": "top portions, BREAK+CHOP, standard distillation"
+    },
+    {
+      "id": 29,
+      "name": "Bachmuntz (water mint)",
+      "fire_degree": 2,
+      "reasoning": "upper parts+stem+leaves, chopped, standard distillation"
+    },
+    {
+      "id": 30,
+      "name": "Brant latich (burnt lettuce)",
+      "fire_degree": 2,
+      "reasoning": "no explicit procedure - herb, default degree 2"
+    },
+    {
+      "id": 31,
+      "name": "Bonen blugot (bean flower)",
+      "fire_degree": 1,
+      "reasoning": "flowers only - explicit balneum mariae (gedistilliert werden in balneo marie)"
+    },
+    {
+      "id": 32,
+      "name": "Bonen (bean whole)",
+      "fire_degree": 1,
+      "reasoning": "green beans - ventre equino (horse dung heat) - very gentle long-term heat"
+    },
+    {
+      "id": 33,
+      "name": "Bon hulsen (bean pod)",
+      "fire_degree": 2,
+      "reasoning": "pods, standard distillation with astrological timing"
+    },
+    {
+      "id": 34,
+      "name": "Bonen krut (bean herb)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem, standard distillation end of May"
+    },
+    {
+      "id": 35,
+      "name": "Gross basilig (large basil)",
+      "fire_degree": 2,
+      "reasoning": "leaves+stem when flowering, standard distillation"
+    },
+    {
+      "id": 36,
+      "name": "Krusen basilie (curly basil)",
+      "fire_degree": 1,
+      "reasoning": "stem+leaves, chopped - explicit balneum mariae in June"
+    },
+    {
+      "id": 37,
+      "name": "Blow meyblumen (blue may flower)",
+      "fire_degree": 2,
+      "reasoning": "flowers, standard distillation in May"
+    },
+    {
+      "id": 38,
+      "name": "Bocks blut (goat blood)",
+      "fire_degree": 2,
+      "reasoning": "ANIMAL blood from uncastrated buck - standard distillation (not balneum)"
+    },
+    {
+      "id": 39,
+      "name": "Butten laub (rose hip leaf)",
+      "fire_degree": 2,
+      "reasoning": "leaves stripped when strongest taste, standard distillation"
+    },
+    {
+      "id": 40,
+      "name": "Bathonien (betony)",
+      "fire_degree": 2,
+      "reasoning": "leaves+stem, standard distillation end of May"
+    },
+    {
+      "id": 41,
+      "name": "Buchin loub (beech leaf)",
+      "fire_degree": 2,
+      "reasoning": "leaves stripped from branches, standard distillation"
+    },
+    {
+      "id": 42,
+      "name": "Bocksbart (goat's beard)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem WITHOUT root, chopped, standard distillation in June"
+    },
+    {
+      "id": 43,
+      "name": "Bromber (blackberry)",
+      "fire_degree": 2,
+      "reasoning": "ripe berries, washed, standard distillation"
+    },
+    {
+      "id": 44,
+      "name": "Boley (pennyroyal)",
+      "fire_degree": 2,
+      "reasoning": "whole herb, chopped when flowering, standard distillation"
+    },
+    {
+      "id": 45,
+      "name": "Blow violen (blue violet)",
+      "fire_degree": 2,
+      "reasoning": "flowers preferred, per alembicum in March - moderate heat"
+    },
+    {
+      "id": 46,
+      "name": "Bucken (mugwort)",
+      "fire_degree": 2,
+      "reasoning": "leaves+flower clusters, stripped, standard distillation"
+    },
+    {
+      "id": 47,
+      "name": "Breit wegrich (broadleaf plantain)",
+      "fire_degree": 2,
+      "reasoning": "procedure corrupted - herb, default degree 2"
+    },
+    {
+      "id": 48,
+      "name": "Breit wegrich samen (plantain seed)",
+      "fire_degree": 2,
+      "reasoning": "seed, standard distillation when ripe"
+    },
+    {
+      "id": 49,
+      "name": "Breit wegrich blut (plantain bloom)",
+      "fire_degree": 2,
+      "reasoning": "flowering spike+stem, standard distillation"
+    },
+    {
+      "id": 50,
+      "name": "Bendicten krut (herb bennet)",
+      "fire_degree": 2,
+      "reasoning": "root+herb, WASH+CHOP, standard distillation end of March"
+    },
+    {
+      "id": 51,
+      "name": "Bestennaw (parsnip)",
+      "fire_degree": 3,
+      "reasoning": "ROOT only (explicitly NOT herb), chopped, standard distillation"
+    },
+    {
+      "id": 52,
+      "name": "Bappeln (mallow)",
+      "fire_degree": 2,
+      "reasoning": "root+stem, WASH+CHOP, standard distillation"
+    },
+    {
+      "id": 53,
+      "name": "Bappeln blut (mallow bloom)",
+      "fire_degree": 2,
+      "reasoning": "blooms from SMALL mallow, standard distillation"
+    },
+    {
+      "id": 54,
+      "name": "Brunellen (self-heal)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem+flowers, chopped, standard distillation"
+    },
+    {
+      "id": 55,
+      "name": "Bingel krut (mercury herb)",
+      "fire_degree": 2,
+      "reasoning": "herb+root, standard distillation beginning June - END OF CHAPTER B"
+    },
+    {
+      "id": 56,
+      "name": "Camillen (chamomile)",
+      "fire_degree": 2,
+      "reasoning": "herb+flowers, chopped, standard distillation in June"
+    },
+    {
+      "id": 57,
+      "name": "Cardus benedictus (blessed thistle)",
+      "fire_degree": 2,
+      "reasoning": "leaves only, chopped, standard distillation end of May"
+    },
+    {
+      "id": 58,
+      "name": "Cliben (bedstraw)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem+leaves, chopped, standard distillation"
+    },
+    {
+      "id": 59,
+      "name": "Crutz wurtz (crosswort)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem+flowers, chopped, standard distillation in June"
+    },
+    {
+      "id": 60,
+      "name": "Clein brennende nessel (small nettle)",
+      "fire_degree": 2,
+      "reasoning": "herb WITHOUT root, CHOP+POUND, standard distillation mid-June"
+    },
+    {
+      "id": 61,
+      "name": "Cabs krut (cabbage)",
+      "fire_degree": 2,
+      "reasoning": "leaves broken from stalks, standard distillation end of June"
+    },
+    {
+      "id": 62,
+      "name": "Dusent guldin krut (centaury)",
+      "fire_degree": 2,
+      "reasoning": "stem+leaves+flowers, chopped, standard distillation end of June"
+    },
+    {
+      "id": 63,
+      "name": "Duben kropff (fumitory)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem, chopped, standard distillation end of May"
+    },
+    {
+      "id": 64,
+      "name": "Denmarck (valerian)",
+      "fire_degree": 2,
+      "reasoning": "root+herb+stem, chopped, standard distillation end of May"
+    },
+    {
+      "id": 65,
+      "name": "Dudistel (sow thistle)",
+      "fire_degree": 2,
+      "reasoning": "leaves+stem, chopped, standard distillation end of May"
+    },
+    {
+      "id": 66,
+      "name": "Ertber (strawberry)",
+      "fire_degree": 1,
+      "reasoning": "fruit - rose hood distillation (like rose water), with/without fire options"
+    },
+    {
+      "id": 67,
+      "name": "Encian (gentian)",
+      "fire_degree": 3,
+      "reasoning": "ROOT preferably alone, chopped - end of dog days timing for root"
+    },
+    {
+      "id": 68,
+      "name": "Eschyn boum bletter (ash tree leaves)",
+      "fire_degree": 2,
+      "reasoning": "leaf clusters, POUND with VINEGAR, steep 5-6 days, then distill"
+    },
+    {
+      "id": 69,
+      "name": "Fenchel (fennel)",
+      "fire_degree": 2,
+      "reasoning": "herb OR root - herb end May, root end dog days - default 2"
+    },
+    {
+      "id": 70,
+      "name": "Fedistel (milk thistle)",
+      "fire_degree": 2,
+      "reasoning": "leaves broken from stalks, standard distillation end of May"
+    },
+    {
+      "id": 71,
+      "name": "Filipendel (dropwort)",
+      "fire_degree": 2,
+      "reasoning": "herb+root, chopped together, standard distillation end of May"
+    },
+    {
+      "id": 72,
+      "name": "Freissam krut (pansy)",
+      "fire_degree": 2,
+      "reasoning": "cultivated herb+stem+flowers, standard distillation when flowering"
+    },
+    {
+      "id": 73,
+      "name": "Funffinger krut (cinquefoil)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem+root, chopped, standard distillation mid-May"
+    },
+    {
+      "id": 74,
+      "name": "Guldin gunsel (golden bugle)",
+      "fire_degree": 2,
+      "reasoning": "herb+flowers+stem, standard distillation mid-May"
+    },
+    {
+      "id": 75,
+      "name": "Gross gunsel (large bugle)",
+      "fire_degree": 2,
+      "reasoning": "whole herb, standard distillation in June"
+    },
+    {
+      "id": 76,
+      "name": "Gamander (germander)",
+      "fire_degree": 2,
+      "reasoning": "whole plant, chopped, standard distillation mid-May"
+    },
+    {
+      "id": 77,
+      "name": "Genserich (silverweed)",
+      "fire_degree": 2,
+      "reasoning": "root+herb, chopped, distilled between Lady Days (Aug-Sep)"
+    },
+    {
+      "id": 78,
+      "name": "Genserich blumen (silverweed flowers)",
+      "fire_degree": 2,
+      "reasoning": "flowers at full ripeness, explicit per alembicum"
+    },
+    {
+      "id": 79,
+      "name": "Gundreb (ground ivy)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem, chopped, standard distillation beginning June"
+    },
+    {
+      "id": 80,
+      "name": "Gel violen (wallflower)",
+      "fire_degree": 2,
+      "reasoning": "flower umbels/tops at full ripeness, standard distillation near end May"
+    },
+    {
+      "id": 81,
+      "name": "Garben (yarrow)",
+      "fire_degree": 2,
+      "reasoning": "OCR corrupted - herb, default degree 2"
+    },
+    {
+      "id": 82,
+      "name": "Guldin cle (golden clover)",
+      "fire_degree": 2,
+      "reasoning": "leaves only, standard distillation mid-May"
+    },
+    {
+      "id": 83,
+      "name": "Gel gilgen (yellow iris)",
+      "fire_degree": 2,
+      "reasoning": "flowers at peak ripeness, standard distillation"
+    },
+    {
+      "id": 84,
+      "name": "Garten kress (garden cress)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem, standard distillation end of May"
+    },
+    {
+      "id": 85,
+      "name": "Harn krut (toadflax)",
+      "fire_degree": 2,
+      "reasoning": "herb+stem, chopped, standard distillation end of May"
+    },
+    {
+      "id": 86,
+      "name": "Holder rind (elder bark)",
+      "fire_degree": 1,
+      "reasoning": "middle green bark - explicit per alembicum in balneum mariae"
+    },
+    {
+      "id": 87,
+      "name": "Holder bletter (elder leaves)",
+      "fire_degree": 2,
+      "reasoning": "tender tips+umbels+leaves, chopped, standard distillation mid-May"
+    },
+    {
+      "id": 88,
+      "name": "Holder blut (elder flowers)",
+      "fire_degree": 2,
+      "reasoning": "flowers stripped from stems at full ripeness, standard distillation"
+    },
+    {
+      "id": 89,
+      "name": "Hunds zung (hound's tongue)",
+      "fire_degree": 2,
+      "reasoning": "herb+leaves+stem+flowers+root, chopped, standard distillation end June"
+    },
+    {
+      "id": 90,
+      "name": "Hyrtz zung (hart's tongue fern)",
+      "fire_degree": 2,
+      "reasoning": "leaves only (fern), standard distillation in May"
+    }
+  ],
+  "summary": {
+    "total_recipes": 80,
+    "degree_1_count": 9,
+    "degree_2_count": 68,
+    "degree_3_count": 3,
+    "degree_1_recipes": [15, 17, 21, 31, 32, 36, 66, 86],
+    "degree_3_recipes": [20, 51, 67],
+    "notes": [
+      "Degree 1 assigned for explicit balneum mariae or very gentle heat methods",
+      "Degree 2 is default for standard herb distillation (gebrant/gedistilliert)",
+      "Degree 3 assigned for root-only preparations or explicitly strong materials",
+      "Animal products vary: blood usually balneum mariae (1), whole animals usually standard (2)"
+    ]
+  }
+}

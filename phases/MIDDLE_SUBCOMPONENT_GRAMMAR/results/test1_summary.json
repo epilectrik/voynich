@@ -1,0 +1,46 @@
+{
+  "component_vocab_size": 218,
+  "coverage_verification": 97.8,
+  "classification": {
+    "total_classified": 187,
+    "start_class": 62,
+    "middle_class": 1,
+    "end_class": 14,
+    "free_class": 110,
+    "constrained_pct": 41.2
+  },
+  "permutation_test": {
+    "n_permutations": 1000,
+    "null_mean": 4.9,
+    "null_std": 2.1,
+    "null_95th": 9.0,
+    "observed": 77,
+    "z_score": 34.16,
+    "p_value": 0.0
+  },
+  "stratification": {
+    "H": {
+      "middles": 942,
+      "constrained_components": 63,
+      "total_components": 119,
+      "constrained_pct": 52.9
+    },
+    "P": {
+      "middles": 527,
+      "constrained_components": 42,
+      "total_components": 80,
+      "constrained_pct": 52.5
+    },
+    "T": {
+      "middles": 265,
+      "constrained_components": 11,
+      "total_components": 29,
+      "constrained_pct": 37.9
+    }
+  },
+  "pass_criteria": {
+    "threshold": 70,
+    "observed": 41.2,
+    "passed": false
+  }
+}

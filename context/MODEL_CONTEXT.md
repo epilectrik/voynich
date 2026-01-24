@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.8 | **Date:** 2026-01-20 | **Status:** FROZEN
+**Version:** 3.11 | **Date:** 2026-01-23 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -208,6 +208,135 @@ MIDDLEs are the primary vocabulary layer:
 - Tail (~1,150): 32.4% of usage, mode-specific, hazard-concentrated
 - Rare MIDDLEs cluster in high-hazard contexts (rho=-0.339, p=0.0001)
 
+### PP vs RI: The Two-Track Vocabulary (C498, C498.d, C504-C506)
+
+A-record MIDDLEs partition into **two populations** with different B-side effects:
+
+| Type | Count | Propagates to B? | Length | Function |
+|------|-------|------------------|--------|----------|
+| **PP** | ~90 | **Yes** | 1-2 chars | Compatibility carriers |
+| **RI** | ~1,290 | **No** | 2-6 chars | A-internal discrimination |
+
+**RI as Complexity Gradient (C498.d):**
+
+RI singleton/repeater status is **primarily a combinatorial effect**, not a functional bifurcation:
+
+```
+RI MIDDLEs (~1,290 types)
+│
+└── Single population with LENGTH/COMPLEXITY GRADIENT:
+
+    Short (2-3 chars) ←────────────────→ Long (5+ chars)
+         │                                    │
+     More repeats                        More unique
+      (48-55%)                           (82-100%)
+         │                                    │
+     Combinatorially                    Combinatorially
+       limited                             diverse
+```
+
+**Evidence (C498.d):**
+- Spearman correlation: rho = -0.367, p < 10⁻⁴²
+- Singleton rate by length: 2-char=48%, 4-char=73%, 6-char=96%, 8+=100%
+- Mean length singletons: 4.82 chars; repeaters: 3.61 chars
+
+**MIDDLE Sub-Component Structure (C267.a):**
+
+MIDDLEs are compositional - **218 sub-components** reconstruct 97.8% of all MIDDLEs:
+
+```
+TOKEN = PREFIX + MIDDLE + SUFFIX
+                   ↓
+              MIDDLE = SUB1 + SUB2 + [SUB3...]
+```
+
+This explains why longer MIDDLEs are more likely unique: more sub-components → more combinations.
+
+**Previous interpretations WEAKENED:**
+- "RI-D as section markers" → Tier 3 (provisional)
+- "RI-B as scaffolding" → Tier 3 (provisional)
+- The structural observations remain Tier 2; functional interpretations demoted
+
+**'fachys' clarification:** 'fachys' (the famous first word) appears exactly once and is folio-first. However, this pattern represents only 4.2% of RI singletons (41 tokens). The remaining 95.8% appear mid-record.
+
+**Two-level PP effect (C506, C506.a):**
+
+| Level | What PP Determines | Evidence |
+|-------|-------------------|----------|
+| **Class** | Which instruction types survive | COUNT matters (r=0.715), COMPOSITION doesn't (cosine=0.995) |
+| **Token** | Which variants within classes are available | COMPOSITION matters (Jaccard=0.953 when same classes) |
+
+PP is a **capacity variable** at class level, but a **configuration variable** at token level:
+- PP COUNT strongly predicts B class survival (r=0.715, p<10^-247)
+- PP COMPOSITION does not affect which classes survive (cosine=0.995)
+- PP COMPOSITION does affect which tokens within surviving classes are available (~5% variation)
+
+**Intra-class behavioral heterogeneity (C506.b):**
+
+Tokens within the same class but with different MIDDLEs are **positionally compatible but behaviorally distinct**:
+
+| Dimension | Same-MIDDLE | Different-MIDDLE | p-value |
+|-----------|-------------|------------------|---------|
+| Position | Similar | Similar | 0.11 (NS) |
+| Transitions | Similar | **Different** | <0.0001 |
+
+73% of MIDDLE pairs within classes have transition JS divergence > 0.4. This is the "chop vs grind" pattern: both can appear in the same grammatical slot, but they lead to different subsequent operations.
+
+**Variable taxonomy:**
+
+| Variable | System | What It Does |
+|----------|--------|--------------|
+| **Routing** | AZC | Position-indexed legality |
+| **Differentiation** | RI | Identity exclusion |
+| **Capacity** | PP | Class survival breadth (count) |
+| **Configuration** | PP | Intra-class token selection (composition) |
+
+**Key insight:** Classes define **grammatical equivalence** (what can substitute), not **semantic equivalence** (what does the same thing). The 49 classes provide the operational grammar. The ~480 tokens provide behaviorally distinct variants within that grammar. PP COUNT determines class breadth. PP COMPOSITION determines which behavioral variants are available.
+
+This resolves the "480 token paradox": why maintain 480 tokens if 49 classes suffice? Answer: material-specific behavioral parameterization. Animal materials don't need different *classes* than plant materials — they need different *execution flows* within the same class structure.
+
+### MIDDLE Compositional Grammar (C510-C513)
+
+MIDDLEs have internal compositional structure with systematic construction rules:
+
+**Generative Architecture:**
+```
+[RI elaboration] + [PP flexible core] + [PP terminator]
+   START-class        FREE-class          END-class
+   (16.1% PP)         (40.9% PP)          (71.4% PP)
+```
+
+**Key Properties:**
+
+| Property | Value | Constraint |
+|----------|-------|------------|
+| Positional constraint rate | 41.2% | C510 |
+| Positional FREE rate | 58.8% | C510 |
+| Derivational seeding ratio | 12.67x | C511 |
+| RI containing PP atoms | 99.1% | C512 |
+| PP section-invariance ratio | 8.3x | C512 |
+
+**PP as Generative Substrate (C512):**
+- PP MIDDLEs are 8.3x more section-invariant than RI MIDDLEs (Jaccard 0.729 vs 0.088)
+- 60.7% of PP atoms appear in ALL three sections (H/P/T) vs 2.6% of RI MIDDLEs
+- RI MIDDLEs are compositional elaborations of PP stock, not independently constructed
+
+**Positional Asymmetry (C512.a):**
+- END-class dominated by PP atoms (71.4%): `ch`, `d`, `e`, `g`, `h`, `k`, `s`, `t`
+- START-class dominated by RI elaborations (only 16.1% PP)
+- PP atoms are more positionally FREE (69.2%) than average (58.8%)
+
+**Interpretation:**
+The grammar is permissive but structured. PP atoms are the universal morphological substrate — the "Lego bricks" that appear across all sections. RI elaborations provide section-specific discriminative extensions, predominantly at the start of MIDDLEs. PP terminators close forms.
+
+**This explains:**
+- C498.d (length predicts uniqueness): Short forms seed long forms derivationally
+- C475 (95.7% incompatibility): Positional grammar restricts legal combinations
+- C506.b (intra-class heterogeneity): PP composition determines behavioral variants
+- C502 (~80% filtering): Extracts PP primitives from RI elaborations
+
+**Short Singleton Variance (C513):** Singleton status at ≤3 characters is sampling variance (Jaccard = 1.00 with repeaters), not a functional distinction.
+
 ### SUFFIX Function
 
 Suffixes encode universal form markers:
@@ -246,6 +375,29 @@ They ARE:
 - Continuous monitoring loops
 - Gradient-following trajectories
 - Convergence-seeking procedures
+
+### Tokens as State-Triggered Interventions (C171 Clarification)
+
+B tokens are **interventions selected by a control loop**, not recipe steps:
+
+```
+MONITOR → ASSESS → SELECT intervention → EXECUTE → RETURN to MONITOR
+```
+
+| Recipe Model (WRONG) | Control Model (CORRECT) |
+|---------------------|------------------------|
+| Step 1: Chop | IF material too coarse → apply chop |
+| Step 2: Grind | IF needs fine texture → apply grind |
+| Step 3: Heat | IF temp low → apply heat |
+| Fixed sequence | Condition-triggered response |
+
+**Why 94.2% line-to-line class change:** Each line represents a new assessment cycle. The intervention selected depends on assessed state, not sequence position.
+
+**Why positional preferences exist:** Monitoring/assessment operations cluster at certain positions; intervention operations at others. This is phase structure within the control loop, not narrative sequence.
+
+**Why tokens within classes differ (C506.b):** Different tokens are **related but distinct interventions** triggered by different conditions - like "chop" vs "grind" for different material states. They're grammatically equivalent (same class) but operationally distinct (different transitions).
+
+The grammar constrains **which interventions are legal** for a given state, not **which comes next** in a sequence.
 
 ### LINK Operators
 
@@ -873,6 +1025,22 @@ Sections (H, P, T for A; quire-aligned for B) are strong boundaries. Cross-secti
 ### Semantic Back-Sliding
 
 The strongest temptation is to assign meaning to tokens. Resist this. Tokens have **roles**, not meanings. Semantics exist only in operator practice.
+
+### Class-Level vs Token-Level Analysis (C508)
+
+**Class-level analysis yields coarse, universal patterns. Token-level analysis reveals actual discrimination.**
+
+| Level | Jaccard | Mutual Exclusion | What It Shows |
+|-------|---------|------------------|---------------|
+| CLASS | 0.391 | 0% | Universal grammar structure |
+| TOKEN | 0.700 | **27.5%** | Fine-grained discrimination |
+
+Common errors:
+- Looking for "process types" at class level (they don't exist there)
+- Expecting class co-occurrence to reveal refinements (all classes can co-occur)
+- Forgetting that classes are universal but tokens are discriminative
+
+**Rule:** When testing for fine-grained differentiation (material types, process types, execution variants), analyze at TOKEN/MEMBER level, not CLASS level. Classes define the grammar; tokens encode specific execution variants within that grammar.
 
 ---
 

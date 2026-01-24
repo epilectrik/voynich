@@ -1,0 +1,82 @@
+{
+  "tests": {
+    "test_a": {
+      "verdict": "PASS (H1)",
+      "raw_kernel_in_top10": 7,
+      "subcomp_kernel_in_top10": 8,
+      "kernel_inflation_mean": 0.639086824622522,
+      "non_kernel_inflation_mean": 0.2811128104029785
+    },
+    "test_b": {
+      "verdict": "FAIL (H0)",
+      "forbidden_mean_ratio": 3.4795204902760752,
+      "random_mean_ratio": 9.65729029107819,
+      "p_value": 0.95
+    },
+    "test_c": {
+      "verdict": "UNCLEAR",
+      "original_violations": 15694,
+      "substitution_results": [
+        {
+          "substitution": "k\u2192h",
+          "new_violations": 9997,
+          "change": -5697
+        },
+        {
+          "substitution": "h\u2192k",
+          "new_violations": 5592,
+          "change": -10102
+        },
+        {
+          "substitution": "e\u2192k",
+          "new_violations": 21668,
+          "change": 5974
+        },
+        {
+          "substitution": "k\u2192e",
+          "new_violations": 9432,
+          "change": -6262
+        }
+      ],
+      "avg_change": -4021.75
+    },
+    "test_d": {
+      "verdict": "PASS (H0)",
+      "kernel_hinge_rate": 0.4576996688831761,
+      "non_kernel_hinge_rate": 0.23265014276539464,
+      "p_value": 0.03506570550490498
+    },
+    "test_e": {
+      "verdict": "PASS (H1)",
+      "single_char_count": 249,
+      "core_positions": {
+        "e": {
+          "first_rate": 0.0024214122021879187,
+          "last_rate": 0.0017728196480304406,
+          "ratio": 1.3658536585365852
+        },
+        "k": {
+          "first_rate": 0.029056946426255028,
+          "last_rate": 0.0018592986552514376,
+          "ratio": 15.627906976744187
+        },
+        "h": {
+          "first_rate": 4.323950361049855e-05,
+          "last_rate": 0.0007350715613784754,
+          "ratio": 0.0588235294117647
+        }
+      },
+      "ratio_variance": 49.72342799998188
+    }
+  },
+  "verdicts": {
+    "A": "PASS (H1)",
+    "B": "FAIL (H0)",
+    "C": "UNCLEAR",
+    "D": "PASS (H0)",
+    "E": "PASS (H1)"
+  },
+  "h1_count": 2,
+  "h0_count": 2,
+  "final_verdict": "MIXED EVIDENCE"
+}

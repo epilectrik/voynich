@@ -1,0 +1,14 @@
+{
+  "pp_count": 406,
+  "superstring_pairs": 3488,
+  "actual_cooccur_pairs": 6309,
+  "total_possible_pairs": 82215,
+  "baseline_rate": 0.07673782156540777,
+  "superstring_rate": 0.36410550458715596,
+  "enrichment": 4.744798551217788,
+  "z_score": 61.87912407896687,
+  "p_value": 0.0,
+  "nontrivial_pairs": 2767,
+  "nontrivial_rate": 0.3567040115648717,
+  "hypothesis_confirmed": true
+}

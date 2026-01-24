@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.32
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.38
 
 ---
 
@@ -211,6 +211,292 @@ This is interface characterization, not semantic mapping. The system supports ex
 
 ---
 
+## 0.B. PP FUNCTIONAL ROLE CLOSURE (PP_B_EXECUTION_TEST Phase) - NEW in v4.33
+
+### Tier 2: Core Finding
+
+> **PP (Pipeline-Participating) MIDDLEs have a two-level effect: COUNT determines class survival breadth, COMPOSITION determines intra-class token configuration.**
+
+This resolves both the C505 paradox (material-class PP differentiation with null class-level effects) and the "480 token paradox" (why maintain 480 tokens if 49 classes suffice).
+
+### The Two-Level PP Effect (C506, C506.a)
+
+| Level | What PP Determines | Evidence |
+|-------|-------------------|----------|
+| **Class** | Which instruction types survive | COUNT matters (r=0.715), COMPOSITION doesn't (cosine=0.995) |
+| **Token** | Which variants within classes are available | COMPOSITION matters (Jaccard=0.953 when same classes) |
+
+**Variable taxonomy:**
+
+| Variable Type | System | What It Does | Evidence |
+|---------------|--------|--------------|----------|
+| **Routing** | AZC | Position-indexed legality | C443, C468 |
+| **Differentiation** | RI | Identity exclusion (95.7% incompatibility) | C475, C481 |
+| **Capacity** | PP | Class survival breadth (count) | C504, C506 |
+| **Configuration** | PP | Intra-class token selection (composition) | C506.a |
+
+**Key insight:** Classes are instruction types; tokens are parameterized variants.
+
+### Evidence Summary
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| PP count vs B class survival | r=0.715, p<10^-247 | COUNT determines class breadth |
+| PP composition vs B class mix | Cosine=0.995 | COMPOSITION irrelevant at class level |
+| PP composition vs token availability | Jaccard=0.953 | COMPOSITION matters at token level (~5% variation) |
+| Per-class survival | 0/49 significant | No individual class differs |
+
+### PP Count Gradient (Class Level)
+
+| PP Count | Mean B Classes | n |
+|----------|----------------|---|
+| 0-2 | 19.0 | 171 |
+| 3-5 | 30.9 | 805 |
+| 6-8 | 37.2 | 525 |
+| 9-11 | 41.4 | 64 |
+| 12-15 | 43.9 | 13 |
+
+### Resolution of the 480 Token Paradox
+
+Why maintain 480 distinct tokens across 49 classes?
+
+Answer: **Intra-class behavioral parameterization.**
+
+- The 49 classes provide the operational grammar (what instructions exist)
+- The ~480 tokens provide behaviorally distinct variants (how each instruction executes)
+- PP COUNT determines class survival breadth (how many instruction types)
+- PP COMPOSITION determines intra-class configuration (which behavioral variants)
+
+Animal materials don't need different *classes* than plant materials — they need different *execution flows* within the same class structure. C505's PP profile differences shape which behavioral variants are available, not which classes survive.
+
+### Intra-Class Behavioral Heterogeneity (C506.b, v4.36)
+
+Tokens within the same class but with different MIDDLEs are **positionally compatible but behaviorally distinct**:
+
+| Dimension | Same-MIDDLE | Different-MIDDLE | p-value |
+|-----------|-------------|------------------|---------|
+| Position | Similar | Similar | 0.11 (NS) |
+| Transitions | Similar | **Different** | <0.0001 |
+
+73% of MIDDLE pairs within classes have transition JS divergence > 0.4.
+
+**The "Chop vs Grind" Pattern:**
+
+Like "chop" and "grind" in a recipe:
+- Both appear in the same grammatical slot (positionally compatible)
+- But they lead to different subsequent operations (behaviorally distinct)
+
+Classes define **grammatical equivalence** (what can substitute syntactically), not **semantic equivalence** (what does the same thing operationally).
+
+**Implication for PP composition:**
+
+```
+PP composition → MIDDLE selection → transition pattern variation
+                                  → execution flow differences
+                                  (within fixed class structure)
+```
+
+The ~5% token variation (C506.a) is **behaviorally meaningful**, not noise.
+
+### What C505 Actually Means (Revised)
+
+C505's material-class PP profile differences are **configuration markers**:
+
+> PP profiles shape which token variants are available within surviving classes.
+
+PP profile variation allows:
+- Material-specific parameterization within shared class framework
+- Same operational grammar, different execution variants
+- Structural adaptation without semantic encoding
+
+### Why Class-Level Null Effects Are Correct
+
+The class-level null results (C506) protect the semantic ceiling (C171, C469):
+
+- If PP composition caused different *classes* to survive → PP would encode material-specific instruction sets
+- Material-specific instruction sets → violates PURE_OPERATIONAL constraint
+- Therefore: class-level null effects are architecturally necessary
+
+But token-level variation (C506.a, C506.b) is permitted:
+- Same classes, different behavioral variants
+- Structural adaptation without changing the instruction vocabulary
+- This is parameterization, not semantic encoding
+
+### What This Closes
+
+- PP composition → class survival: **FALSIFIED** (C506)
+- PP composition → token configuration: **CONFIRMED** (C506.a)
+- PP composition → behavioral variation: **CONFIRMED** (C506.b)
+- PP functional characterization: **COMPLETE** (two-level model)
+
+### PP-HT Responsibility Substitution (C507, v4.34)
+
+**Resolved:** PP capacity is weakly but significantly inversely correlated with HT density.
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| Spearman rho | **-0.294** | Moderate negative |
+| p-value | **0.0015** | Highly significant |
+| PP 0-3 HT density | 18.83% | High HT when low PP |
+| PP 6+ HT density | 12.62% | Low HT when high PP |
+| PP vs HT TTR | **+0.40** | More varied HT with more PP |
+
+**Two-axis HT model:**
+1. **HT density axis** — how much HT appears (negatively correlated with PP)
+2. **HT diversity axis** — how varied HT is when it appears (positively correlated with PP)
+
+**Interpretation:** PP and HT partially substitute in a "responsibility budget." More grammatical freedom (PP capacity) correlates with less human vigilance (HT density) but more varied vigilance (HT TTR).
+
+This is NOT:
+- Complete substitution (r = -0.29, not -0.8)
+- HT tracking PP content (composition doesn't matter per C506)
+- Causal relationship (correlation only)
+
+### What Remains Open
+
+The next frontier is **PP × HT × AZC three-way interaction**:
+- Does AZC position modulate the PP-HT trade-off?
+- Does PP count increase operator error tolerance?
+- Regime-specific HT compensation patterns
+
+This shifts from "what PP is" to "what the artifact does to the human."
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C504 | PP count correlation (r=0.772) |
+| C505 | A-side profile differences |
+| C506 | Non-propagation to B |
+| C507 | PP-HT partial substitution |
+| C171 | Semantic ceiling protection |
+| C469 | Categorical resolution |
+
+**Source:** PP_B_EXECUTION_TEST (2026-01-23), PP_HT_INTERACTION_TEST (2026-01-23)
+
+---
+
+## 0.C. THREE-LAYER CONSTRAINT ARCHITECTURE (MIDDLE_SUBCOMPONENT_GRAMMAR Phase) - NEW in v4.38
+
+### Tier 2-3: Architectural Discovery
+
+> **The manuscript's symbol system operates through three independent constraint layers sharing a single substrate - construction, compatibility, and execution - which together achieve complex morphology, extreme vocabulary sparsity, AND execution safety simultaneously.**
+
+### The Problem This Solves
+
+Prior analysis identified multiple constraint regimes:
+- C085: 10 kernel primitives (s, e, t, d, l, o, h, c, k, r)
+- C109: 17 forbidden transitions between token classes
+- C475: 95.7% of MIDDLE pairs are incompatible
+- C517: Superstring compression with hinge letters
+
+The question: Are these the same constraint seen at different scales, or independent systems?
+
+### Key Evidence (Test 17)
+
+**Hypothesis tested:** Construction constraints (within-token) are isomorphic to execution constraints (between-token).
+
+**Result:** FALSIFIED
+
+| Metric | Value |
+|--------|-------|
+| Pearson correlation | r = -0.21 |
+| p-value | 0.07 (not significant) |
+| Category match rate | 28.4% (near random) |
+
+Construction-suppressed pairs: only 2.9% also suppressed in execution.
+Construction-elevated pairs: 0% also elevated in execution.
+
+### Three-Layer Architecture
+
+```
+SYMBOL SUBSTRATE (10 primitives: s,e,t,d,l,o,h,c,k,r)
+         |
+         ├── CONSTRUCTION LAYER (C521)
+         |     - Directional asymmetry within tokens
+         |     - One-way valve: e→h blocked (0.00), h→e favored (7.00x)
+         |     - Result: Legal token forms
+         |
+         ├── COMPATIBILITY LAYER (C475)
+         |     - MIDDLE atomic incompatibility
+         |     - 95.7% of pairs forbidden
+         |     - Result: Legal co-occurrence
+         |
+         └── EXECUTION LAYER (C109)
+               - 17 forbidden transitions between classes
+               - Phase-ordering dominant (41%)
+               - Result: Legal program paths
+```
+
+### Why This Matters
+
+**Independence enables modularity:**
+- Construction constraints can evolve without breaking execution
+- Compatibility constraints can be tuned without rebuilding morphology
+- Execution hazards can be managed without token redesign
+
+**Shared substrate enables compactness:**
+- Same 10 characters do triple duty
+- No separate "syntax layer" needed
+- Information density maximized
+
+**Real-world analogy:** Consider a programming language where:
+- Character encoding rules govern what strings are valid identifiers
+- Type system rules govern what combinations are semantically valid
+- Control flow rules govern what execution orders are safe
+
+These are independent - changing identifier rules doesn't change type checking.
+
+### Kernel Primitive Reality
+
+Test 15-16 confirmed kernel primitives (k, h, e) are **real operators**, not compression artifacts:
+
+**Directional Asymmetry (C521):**
+| Transition | Ratio | Interpretation |
+|------------|-------|----------------|
+| e→h | 0.00 | STABILITY → PHASE: completely blocked |
+| h→e | 7.00x | PHASE → STABILITY: highly favored |
+| k→e | 4.32x | ENERGY → STABILITY: favored |
+
+This one-way valve topology **cannot arise from compression mechanics**. Compression would create symmetric patterns (hinges work both directions). The asymmetry proves functional operator status.
+
+### Interpretive Implication (Tier 3)
+
+The three-layer architecture suggests the manuscript was designed for:
+
+1. **Expressive power:** Complex token morphology (construction layer)
+2. **Safety:** Incompatibility prevents dangerous combinations (compatibility layer)
+3. **Control:** Execution constraints maintain system stability (execution layer)
+
+These goals are achieved **independently**, allowing each to be optimized without trade-offs.
+
+### RI as Operational Signature (Tier 3)
+
+RI MIDDLEs encode **compatibility intersections** at the construction layer:
+- 85.4% contain multiple PP atoms (C516)
+- Each atom is a compatibility dimension
+- RI = PP₁ ∩ PP₂ ∩ PP₃ ∩ ... ∩ modifier
+
+This explains why RI is:
+- Unique to A (compatibility specification is A-side)
+- Highly specific (multi-atom = narrow intersection)
+- Length-correlated with uniqueness (more atoms = more specific)
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C085 | 10 kernel primitives (shared substrate) |
+| C109 | Execution hazards (execution layer) |
+| C475 | MIDDLE incompatibility (compatibility layer) |
+| C517 | Superstring compression (hinge letters) |
+| C521 | Directional asymmetry (construction layer) |
+| C522 | Layer independence (falsified isomorphism) |
+
+**Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+---
+
 ## I. Human Track (HT) Interpretation
 
 ### Tier 2: Core Finding (v2.13)
@@ -367,8 +653,10 @@ AZC serves as a **decision-point grammar** that transforms static A-registry ent
 | System | Function | Type |
 |--------|----------|------|
 | Currier A | WHAT exists | Static registry |
-| Currier B | HOW to proceed | Procedural sequence |
+| Currier B | HOW to respond | State-triggered interventions |
 | AZC | WHEN to decide | Decision grammar |
+
+**Note (C171 clarification, v4.37):** "HOW to respond" means state-triggered interventions, NOT sequential steps. B tokens are control actions selected based on assessed system state, following a MONITOR→ASSESS→SELECT→EXECUTE→RETURN cycle. See MODEL_CONTEXT.md Section VI.
 
 ### Phase-to-Workflow Mapping
 
@@ -2143,6 +2431,45 @@ This:
 
 ---
 
+### X.19.a Jar Labels as Compressed Configuration Signatures (2026-01-23)
+
+Extended analysis of pharma label morphology reveals structural evidence for the apparatus interpretation.
+
+#### Key Findings (C523, C524)
+
+**Vocabulary Bifurcation:**
+- Jar labels: 12.5% in Currier A (2/16), both RI, 87.5% NOT in text
+- Content labels: 50% in Currier A (103/206), 58.3% PP vs 33.5% baseline
+
+**Morphological Compression:**
+
+| Metric | Jar Labels | Currier A Baseline |
+|--------|------------|--------------------|
+| Mean length | 7.1 chars | 6.0 chars |
+| PP atoms per MIDDLE | 5-8 | ~3-4 |
+| In vocabulary | 12.5% | 100% (by definition) |
+
+Examples of jar label compression:
+- `yteoldy` → 8 PP atoms: y, t, e, o, l, d, ol, eo
+- `darolaly` → 7 PP atoms: d, a, r, o, l, al, ar
+- `porshols` → 5 PP atoms: o, r, s, ol, or
+
+#### Tier 3 Interpretation
+
+> **Jar labels are densely-packed configuration signatures encoding apparatus states via superstring compression. They are NOT vocabulary items because they are NOT meant to be parsed - they are holistic identifiers for specific physical configurations. Content labels use shared vocabulary (PP-enriched) because they describe processable materials that participate in the downstream pipeline.**
+
+This explains:
+- Why jar labels are longer (packing more discrimination)
+- Why jar labels are almost entirely absent from text (not parseable units)
+- Why content labels are PP-enriched (materials that will be processed)
+- Why vocabulary separation is complete (different encoding purposes)
+
+**Constraints:** C523 (Pharma Label Vocabulary Bifurcation), C524 (Jar Label Morphological Compression)
+
+**Status:** CLOSED - Confirms apparatus interpretation with morphological evidence
+
+---
+
 ### X.20 A->AZC->B Pipeline Closure: Reachability Suppression (2026-01-17) - NEW
 
 **Phase:** AZC_REACHABILITY_SUPPRESSION
@@ -2879,3 +3206,106 @@ This formulation:
 **Tier:** FALSIFIED (0/4) - Clean negative result, bounds relationship appropriately
 
 **Files:** phases/BC_EXPLANATION_ENFORCEMENT/, results/bc_*.json
+
+---
+
+### X.28 Recipe Triangulation Methodology: Multi-Dimensional PP Convergence (2026-01-21) - NEW
+
+**Phase:** ANIMAL_PRECISION_CORRELATION
+
+#### The Problem
+
+Previous attempts at reverse-Brunschwig mapping failed because:
+1. Single PP tokens don't discriminate (90%+ folio overlap between recipes)
+2. REGIME alone provides weak selection (only 11.9% exclusive vocabulary)
+3. Working at folio level loses record-level signal
+
+#### The Solution
+
+Multi-dimensional PP convergence at RECORD level, combined with PREFIX profile matching.
+
+#### The Pipeline
+
+```
+Brunschwig Recipe Dimensions
+       ↓
+B Folio Constraints (REGIME + PREFIX profile)
+       ↓
+Multi-dimensional Conjunction → Candidate B Folios
+       ↓
+PP Vocabulary Extraction
+       ↓
+A RECORD Convergence (3+ PP tokens)
+       ↓
+RI Token Extraction
+       ↓
+PREFIX Profile Matching → Instruction Sequence
+       ↓
+Material Identification
+```
+
+#### Key Mappings
+
+| Recipe Dimension | B Constraint | Implementation |
+|------------------|--------------|----------------|
+| fire_degree = N | REGIME_N | `regime_folio_mapping.json` |
+| e_ESCAPE in sequence | High qo ratio | `qo_ratio >= avg` |
+| AUX in sequence | High ok/ot ratio | `aux_ratio >= avg` |
+| FLOW in sequence | High da ratio | `da_ratio >= avg` |
+
+#### Worked Example: Chicken (ennen)
+
+**Input:**
+- fire_degree: 4 → REGIME_4
+- instruction_sequence: [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE]
+- Unique pattern: ESCAPE bookends + AUX (no FLOW)
+
+**4D Conjunction:**
+- REGIME_4 + high qo + high aux + low da → 1 folio (f95v1)
+- Relaxed to 5 chicken-like folios
+
+**A Record Convergence:**
+- 110 records converge to 3+ chicken folios at 2+ PP each
+- 4 records contain known animal RI tokens
+
+**PREFIX Profile Matching:**
+| RI Token | Has ESCAPE PP? | Has AUX PP? | Chicken Match? |
+|----------|----------------|-------------|----------------|
+| teold | YES (t=88% qo) | NO | Partial |
+| chald | YES (fch=74% qo) | NO | Partial |
+| **eoschso** | YES (ke,keo) | **YES (ch=48%)** | **FULL** |
+| eyd | weak | weak | No |
+
+**Result:** Only **eoschso** has BOTH escape AND aux PP, matching chicken's unique [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE] pattern.
+
+**Conclusion:** eoschso = ennen (chicken) [Tier 3 hypothesis]
+
+#### Critical Constraints
+
+**DO:**
+- Use multi-dimensional conjunction for B folio selection
+- Require 3+ PP convergence at RECORD level (not folio)
+- Match PREFIX profiles to instruction patterns
+- Compare against Brunschwig sequences for identification
+
+**DO NOT:**
+- Use single PP tokens for discrimination
+- Work at folio level (90%+ overlap)
+- Skip PREFIX profile matching
+- Assume REGIME alone discriminates
+
+#### Constraint Implications
+
+Refines C384 (no entry-level A-B coupling):
+> "Single PP tokens do not establish entry-level coupling, but multi-dimensional PP convergence combined with PREFIX profile matching can identify specific A records."
+
+#### Status
+
+- **Validated:** Animal material class (chicken identification)
+- **Pending:** Plant materials (rose water), other animal refinement
+- **Tier:** 3 (requires Brunschwig alignment for interpretation)
+
+**Files:**
+- Methodology: `context/SPECULATIVE/recipe_triangulation_methodology.md`
+- Results: `phases/ANIMAL_PRECISION_CORRELATION/results/`
+- Scripts: `phases/ANIMAL_PRECISION_CORRELATION/scripts/`

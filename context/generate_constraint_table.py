@@ -45,10 +45,11 @@ def parse_index_constraints(index_path):
     # Match table rows with constraints
     # Pattern: | NUMBER | Description | Tier | Scope | Location |
     # Handle both bold (**074**) and plain (074) numbers
-    pattern = r'\|\s*\*{0,2}(\d+)\*{0,2}\s*\|\s*(.+?)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|'
+    # Also handle sub-numbered constraints like 384.a
+    pattern = r'\|\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*\|\s*(.+?)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|'
 
     for match in re.finditer(pattern, content):
-        num = int(match.group(1).strip())
+        num_str = match.group(1).strip()
         desc = match.group(2).strip()
         tier = match.group(3).strip()
         scope = match.group(4).strip()
@@ -62,8 +63,8 @@ def parse_index_constraints(index_path):
         # Clean up description - remove markdown links
         desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)
 
-        constraints[num] = {
-            'num': num,
+        constraints[num_str] = {
+            'num': num_str,
             'desc': desc,
             'tier': tier,
             'scope': scope,
@@ -187,6 +188,17 @@ def merge_constraints(*constraint_dicts):
     return merged
 
 
+def constraint_sort_key(num):
+    """Sort key for constraint numbers (handles both '384' and '384.a')"""
+    if isinstance(num, int):
+        return (num, '')
+    num_str = str(num)
+    if '.' in num_str:
+        base, suffix = num_str.split('.', 1)
+        return (int(base), suffix)
+    return (int(num_str), '')
+
+
 def format_table(constraints):
     """Format constraints as minimal TSV for AI consumption"""
     lines = []
@@ -194,11 +206,20 @@ def format_table(constraints):
     # Simple tab-separated format - no decorative characters
     lines.append("NUM\tCONSTRAINT\tTIER\tSCOPE\tLOCATION")
 
-    # Sort by constraint number
-    sorted_constraints = sorted(constraints.values(), key=lambda x: x['num'])
+    # Sort by constraint number (handles both integers and strings like '384.a')
+    sorted_constraints = sorted(constraints.values(), key=lambda x: constraint_sort_key(x['num']))
 
     for c in sorted_constraints:
-        num_str = f"C{c['num']:03d}"
+        num = c['num']
+        if isinstance(num, int):
+            num_str = f"C{num:03d}"
+        else:
+            # Handle sub-numbered like '384.a' -> 'C384.a'
+            parts = str(num).split('.')
+            if len(parts) == 2:
+                num_str = f"C{int(parts[0]):03d}.{parts[1]}"
+            else:
+                num_str = f"C{int(num):03d}"
         lines.append(f"{num_str}\t{c['desc']}\t{c['tier']}\t{c['scope']}\t{c['location']}")
 
     return '\n'.join(lines)
@@ -248,12 +269,21 @@ LOCATION: ->=individual_file in:=grouped_registry
     print(f"Saved to {OUTPUT_FILE}")
 
     # Show constraint number ranges
-    nums = sorted(all_constraints.keys())
-    print(f"\nConstraint range: C{min(nums):03d} - C{max(nums):03d}")
+    # Extract base numbers (ignoring sub-numbers like .a, .b)
+    base_nums = []
+    for num in all_constraints.keys():
+        if isinstance(num, int):
+            base_nums.append(num)
+        else:
+            base = str(num).split('.')[0]
+            base_nums.append(int(base))
 
-    # Find gaps
-    expected = set(range(min(nums), max(nums) + 1))
-    actual = set(nums)
+    base_nums = sorted(set(base_nums))
+    print(f"\nConstraint range: C{min(base_nums):03d} - C{max(base_nums):03d}")
+
+    # Find gaps (only for base numbers)
+    expected = set(range(min(base_nums), max(base_nums) + 1))
+    actual = set(base_nums)
     gaps = expected - actual
     if gaps:
         print(f"Gaps in numbering: {len(gaps)} missing numbers (normal - numbers assigned chronologically)")

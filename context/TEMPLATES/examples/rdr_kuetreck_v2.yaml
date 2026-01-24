@@ -1,0 +1,624 @@
+# ============================================================
+# RDR: Küetreck (Cow Dung) - Example v2.0
+# ============================================================
+# Demonstrates complete extraction using all 18 sections
+# ============================================================
+
+---
+meta:
+  version: "2.0"
+  tier: 3
+  tier_meaning: "External alignment, non-binding, discardable"
+  recipe_id: "BRU-ANIMAL-001"
+  extraction_date: "2026-01-21"
+  analyst: "Claude (example)"
+  provenance: ["C493", "C494", "F-BRU-001 through F-BRU-009"]
+
+# ============================================================
+# SECTION 1: IDENTIFICATION
+# ============================================================
+identification:
+  recipe_name_original: "Küetreck"
+  recipe_name_english: "Cow dung"
+  source_text: "Brunschwig, Liber de arte distillandi"
+  page_reference: "TBD - needs verification"
+  chapter: "Animal materials section"
+
+  material_class:
+    category: "animal"
+    subcategory: "animal_product"
+    specific_material: "cow dung (fresh)"
+    prefix_prediction: "ct"           # Registry-internal prediction for animal class
+    material_behavior_class: "M-D"    # High-precision required
+
+  product_type: "PRECISION"
+  product_evidence: "Fourth degree fire required; animal materials categorized as precision products"
+
+  provenance: ["C466", "C467", "F-BRU-001"]
+
+# ============================================================
+# SECTION 2: FIRE REGIME
+# ============================================================
+fire_regime:
+  brunschwig_degree: 4
+  degree_evidence: "Fourth degree fire required for animal materials per Brunschwig classification"
+  degree_descriptions:
+    1: "balneum marie (water bath) - lukewarm"
+    2: "second degree - noticeably warm"
+    3: "third degree - almost seething"
+    4: "fourth degree - destructively warm (FORBIDDEN for most, required for animal)"
+
+  voynich_regime: "REGIME_4"
+  regime_mapping:
+    REGIME_1: "Standard execution (balneum marie)"
+    REGIME_2: "Gentle/warm execution"
+    REGIME_3: "Intense execution (seething)"
+    REGIME_4: "Precision-constrained (NOT intensity)"
+
+  cei_band: "R2 < R1 < R4 < R3"
+  intensity_notes: "Requires precise temperature control; animal materials decompose at wrong temperature"
+
+  provenance: ["C179", "C180", "C181", "C182", "C183", "C184", "C185", "C188", "C494"]
+
+# ============================================================
+# SECTION 3: SENSORY MONITORING
+# ============================================================
+sensory_monitoring:
+  modalities:
+    sound:
+      required: true
+      indicators: ["bubbling intensity", "change in boiling sounds"]
+      evidence: "TBD - typical for distillation monitoring"
+      zone_affinity: "R"
+      mapping_confidence: "CONFIRMED (t=3.97, p<0.001)"
+
+    sight:
+      required: true
+      indicators: ["vapor color", "liquid clarity", "residue appearance"]
+      evidence: "Visual inspection standard in distillation"
+      zone_affinity: "P"
+      mapping_confidence: "CONFIRMED (t=9.00, p<0.0001)"
+
+    smell:
+      required: true
+      indicators: ["characteristic odor progression", "sulfur notes", "completion smell"]
+      evidence: "Animal materials have distinctive and strong odor during distillation"
+      zone_affinity: "INDIRECT"
+      mapping_status: "constraint_substitution"
+      mapping_confidence: "UNDERPOWERED (n=5)"
+
+    touch:
+      required: false
+      indicators: []
+      evidence: ""
+      zone_affinity: "S"
+      mapping_confidence: "NOT SIGNIFICANT"
+
+    taste:
+      required: false
+      indicators: []
+      evidence: ""
+      zone_affinity: "INVERSE_S"
+      mapping_confidence: "INVERSE CORRELATION"
+
+  dominant_modality: "SMELL"          # Animal materials are odor-dominant
+  modality_count: 3                   # sound, sight, smell
+
+  provenance: ["F-BRU-008", "F-BRU-009", "X.22"]
+
+# ============================================================
+# SECTION 4: KERNEL ENGAGEMENT
+# ============================================================
+kernel_engagement:
+  k_involvement:
+    present: true
+    operations: ["heat adjustment", "fire degree management", "temperature control"]
+    evidence: "Fourth degree fire requires precise energy control"
+    description: "Energy input/output control"
+
+  h_involvement:
+    present: true
+    operations: ["phase transition control", "fraction separation"]
+    evidence: "Two-stage distillation requires phase management"
+    description: "Phase boundary handling"
+
+  e_involvement:
+    present: true
+    operations: ["cooling between stages", "equilibration", "settling"]
+    evidence: "Multi-stage process requires stability periods"
+    recovery_anchor: true
+    description: "Stability/equilibration anchor"
+
+  kernel_sequence_expected: "k→e→h (with h→k suppressed)"
+  h_to_k_suppression: true
+  boundary_adjacent: true
+
+  provenance: ["C089", "C103", "C104", "C105", "C107", "C332"]
+
+# ============================================================
+# SECTION 5: HAZARD EXPOSURE
+# ============================================================
+hazard_exposure:
+  classes_exposed:
+    PHASE_ORDERING:
+      percentage_in_voynich: "41%"
+      description: "Material in wrong phase location"
+      exposed: true
+      evidence: "Animal materials sensitive to temperature sequence"
+      examples: ["wrong temperature destroys active principles"]
+
+    COMPOSITION_JUMP:
+      percentage_in_voynich: "24%"
+      description: "Impure fractions passing through"
+      exposed: true
+      evidence: "Organic decomposition products must be separated"
+      examples: ["fraction mixing contaminates product"]
+
+    CONTAINMENT_TIMING:
+      percentage_in_voynich: "24%"
+      description: "Overflow/pressure/vessel events"
+      exposed: true
+      evidence: "Organic materials produce gases during heating"
+      examples: ["pressure buildup", "vessel stress"]
+
+    RATE_MISMATCH:
+      percentage_in_voynich: "6%"
+      description: "Flow imbalance"
+      exposed: false
+      evidence: ""
+      examples: []
+
+    ENERGY_OVERSHOOT:
+      percentage_in_voynich: "6%"
+      description: "Thermal damage"
+      exposed: true
+      evidence: "Fourth degree fire is at the boundary of acceptable"
+      examples: ["scorching", "charring", "destruction of volatile components"]
+
+  total_exposure_count: 4
+  dominant_class: "PHASE_ORDERING"
+  asymmetry_note: "65% of forbidden transitions are one-way (C111)"
+
+  provenance: ["C109", "C110", "C111", "C112"]
+
+# ============================================================
+# SECTION 6: RECOVERY ARCHITECTURE
+# ============================================================
+recovery_architecture:
+  retry_limit:
+    stated: "no more than twice"
+    implied_bound: 2
+    evidence: "Brunschwig's explicit rule for batch recovery"
+    brunschwig_rule: "A batch may be reinfused no more than twice"
+
+  cooling_requirement:
+    mandatory: true
+    method: "overnight cooling between stages"
+    evidence: "Two-stage process requires equilibration"
+    e_pathway: true
+
+  reversibility:
+    fully_reversible: false
+    reversible_until: "distillation begins"
+    time_symmetric: false
+    evidence: "Once organic decomposition starts, cannot reverse"
+
+  salvage_possible:
+    total_failure_salvageable: false
+    partial_failure_recovery: "Reinfusion with fresh material (max 2x)"
+
+  design_freedom:
+    hazard_cv: "0.04-0.11"
+    recovery_cv: "0.72-0.82"
+    principle: "Risk globally constrained; recovery locally variable"
+
+  provenance: ["C105", "C391", "C458", "F-BRU-007"]
+
+# ============================================================
+# SECTION 7: SUPPRESSION PATTERNS
+# ============================================================
+suppression_patterns:
+  categorical_prohibitions:
+    - action: "Exceeding fourth degree fire boundary"
+      voynich_mapping: "AGGRESSIVE strategy forbidden (C490: 20.5% of programs)"
+      evidence: "Fourth degree already at the limit"
+      universality: "always"
+
+    - action: "Reheating after cooling"
+      voynich_mapping: "h→k suppressed (C332)"
+      evidence: "Thermal cycling damages organic material"
+      universality: "always"
+
+  dangerous_but_permitted:
+    - action: "Extended heating at fourth degree"
+      mitigation: "Continuous monitoring required"
+      monitoring_required: true
+
+  strategy_exclusions:
+    aggressive_forbidden: true        # Cannot exceed fourth degree
+    opportunistic_available: false    # Precision required, no shortcuts
+    evidence: "Animal materials require exact temperature control"
+
+  h_to_k_suppressed: true
+  suppression_evidence: "h→k transition architecturally necessary to prevent oscillation"
+
+  provenance: ["C332", "C490"]
+
+# ============================================================
+# SECTION 8: JUDGMENT REQUIREMENTS (OJLM-1)
+# ============================================================
+judgment_requirements:
+  watch_closely:
+    temperature:
+      required: true
+      evidence: "Fourth degree fire requires constant temperature vigilance"
+      example: "Monitor to stay at fourth degree without exceeding"
+    phase_transition:
+      required: true
+      evidence: "Two-stage process requires phase monitoring"
+      example: "Watch for completion of first distillation"
+    quality_purity:
+      required: true
+      evidence: "Must assess product quality between stages"
+      example: "Check clarity, odor of intermediate product"
+    timing:
+      required: true
+      evidence: "Precision process requires timing awareness"
+      example: "Know when to proceed to second stage"
+    material_state:
+      required: true
+      evidence: "Monitor decomposition state of organic material"
+      example: "Observe residue appearance"
+    stability:
+      required: true
+      evidence: "Ensure process stability at high temperature"
+      example: "Watch for steady distillation rate"
+
+  forbidden_intervention:
+    equilibrium_establishment:
+      forbidden: true
+      evidence: "Do not disturb during cooling/settling phases"
+    phase_transition_interrupt:
+      forbidden: true
+      evidence: "Do not interrupt distillation once started"
+    purification_cycle_break:
+      forbidden: true
+      evidence: "Complete each stage fully"
+
+  tacit_knowledge:
+    sensory_calibration:
+      required: true
+      evidence: "Must know correct smell progression for animal materials"
+    equipment_feel:
+      required: true
+      evidence: "Recognize apparatus sounds at fourth degree"
+    timing_intuition:
+      required: true
+      evidence: "Sense when distillation is complete"
+    trouble_recognition:
+      required: true
+      evidence: "Detect early signs of overheating or contamination"
+
+  total_judgment_load: 13             # All 13 types engaged - maximum
+  tail_pressure_prediction: "high"
+  ht_density_correlation: "r=0.504"
+
+  provenance: ["C477", "OJLM-1"]
+
+# ============================================================
+# SECTION 9: ZONE PROFILE
+# ============================================================
+zone_profile:
+  affinities:
+    C: 0.10                           # Limited setup flexibility
+    P: 0.25                           # Some intervention points
+    R: 0.35                           # Sound monitoring dominant
+    S: 0.30                           # Significant boundary/collection phase
+
+  dominant_zone: "R"                  # Sound monitoring during distillation
+
+  escape_gradient:
+    description: "C→P→R→S represents decreasing intervention permission"
+    C_escape: "1.4% - setup errors fixable"
+    P_escape: "11.6% - active intervention possible"
+    R_escape: "2%→0% - progressive restriction"
+    S_escape: "0-3.8% - locked, minimal escape"
+
+  two_stage_model:
+    stage_1: "Modality bias from external factors (sound→R, sight→P)"
+    stage_2: "REGIME execution style concentrates into specific phase"
+    interaction: "REGIME_4 concentrates into R/S phases (precision + boundary)"
+
+  regime_stratification: "REGIME_4: 54.7% S-zone affinity expected"
+
+  provenance: ["C443", "F-BRU-008", "F-BRU-009"]
+
+# ============================================================
+# SECTION 10: LINK PROFILE
+# ============================================================
+link_profile:
+  observation_phases:
+    count: 3
+    descriptions:
+      - "Watch until first distillation completes"
+      - "Monitor cooling phase"
+      - "Observe second distillation"
+
+  waiting_periods:
+    count: 2
+    descriptions:
+      - "Overnight cooling between stages"
+      - "Settling time for final product"
+
+  cei_inverse_correlation: "r=-0.7057"
+  predicted_link_density: "high (>20%)"   # Many observation/waiting phases
+
+  link_function: "Boundary between monitoring and intervention"
+  link_evidence: "Two-stage process with multiple observation points"
+
+  provenance: ["C190", "C366"]
+
+# ============================================================
+# SECTION 11: CONVERGENCE PROFILE
+# ============================================================
+convergence_profile:
+  target_state:
+    state_c: true                     # Clean termination expected
+    transitional: false
+    initial_reset: false
+
+  clean_termination: true
+  completion_signals:
+    - "Clear distillate"
+    - "No more vapors"
+    - "Characteristic final odor"
+    - "Residue fully depleted"
+
+  gradient_direction: "Later lines → higher completion probability"
+  monostate_convergence: "All initial states converge within 8 steps"
+
+  provenance: ["C074", "C323", "C325"]
+
+# ============================================================
+# SECTION 12: SISTER PREDICTION
+# ============================================================
+sister_prediction:
+  ch_sh_choice:
+    predicted: "ch (precision)"       # Narrow tolerance required
+    evidence: "Fourth degree fire requires exact temperature control"
+    anticorrelation: "rho=-0.326 with escape density"
+    meaning: "ch = narrow tolerance, sh = broader margins"
+
+  ok_ot_choice:
+    predicted: "mixed"
+    evidence: "Both standard and variant operations needed"
+    meaning: "Operational mode variant"
+
+  qo_escape_density: "low (25-30%)"   # Precision process = fewer escape routes
+  qo_function: "Safe return path, 77.9% successful recovery"
+
+  provenance: ["C397", "C408", "C412"]
+
+# ============================================================
+# SECTION 13: INSTRUCTION CLASS MAPPING
+# ============================================================
+instruction_class_mapping:
+  role_classes:
+    CORE_CONTROL:
+      engaged: true
+      evidence: "Central control required for precision process"
+    ENERGY_OPERATOR:
+      engaged: true
+      class_count: 11
+      evidence: "Fire degree management essential"
+    AUXILIARY:
+      engaged: true
+      class_count: 8
+      evidence: "Supporting operations for two-stage process"
+    FREQUENT_OPERATOR:
+      engaged: true
+      class_count: 4
+      evidence: "Standard operations engaged"
+    HIGH_IMPACT:
+      engaged: false                  # Not permitted in precision process
+      class_count: 3
+      evidence: "Aggressive strategies forbidden"
+    FLOW_OPERATOR:
+      engaged: true
+      class_count: 2
+      evidence: "Material flow management"
+    LINK:
+      engaged: true
+      evidence: "Many monitoring/intervention boundaries"
+
+  total_classes_engaged: 35           # Estimate: most non-HIGH_IMPACT classes
+  control_granularity: "fine (>25)"
+  compression_ratio: "9.8x"
+  voynich_class_count: 49
+
+  provenance: ["C121", "C124"]
+
+# ============================================================
+# SECTION 14: VOCABULARY TRACK
+# ============================================================
+vocabulary_track:
+  pipeline_participating:
+    description: "MIDDLEs that flow A→AZC→B"
+    predicted_fraction: 0.3           # Lower for specialized material
+    characteristics:
+      - "Standard prefixes"
+      - "Standard suffixes"
+      - "7.96 folio spread average"
+    typical_for: "Materials that get processed"
+
+  registry_internal:
+    description: "MIDDLEs that stay in A registry"
+    predicted_fraction: 0.7           # Higher for animal class
+    characteristics:
+      - "ct-prefix 5.1× enriched"
+      - "suffix-less 3× enriched"
+      - "folio-localized (2.53 spread)"
+    typical_for: "Classification labels, properties that don't execute"
+
+  material_specificity: "specific"    # Animal materials are specialized
+  track_prediction_basis: "Animal class → higher registry-internal fraction"
+
+  provenance: ["C498"]
+
+# ============================================================
+# SECTION 15: COMPATIBILITY
+# ============================================================
+compatibility:
+  middle_incompatibility:
+    base_rate: "95.7%"
+    predicted_legal_pairs: "narrow"   # Specialized material = restricted compatibility
+    mechanism: "Atomic co-occurrence constraints"
+
+  universal_connectors:
+    - "a"
+    - "o"
+    - "e"
+    - "ee"
+    - "eo"
+
+  cross_recipe:
+    compatible_with: ["BRU-ANIMAL-002 (chicken)", "BRU-ANIMAL-003 (other animal)"]
+    incompatible_with: ["BRU-PLANT-* (different material class)"]
+    bridging_vocabulary: []
+
+  folio_exclusivity: "77%"
+
+  provenance: ["C442", "C475"]
+
+# ============================================================
+# SECTION 16: WORKFLOW PHASES
+# ============================================================
+workflow_phases:
+  preparation:
+    steps:
+      - "Gather fresh cow dung"
+      - "Prepare distillation apparatus"
+      - "Set up furnace for fourth degree"
+    zone_affinity: "C"
+    reversible: true
+    errors_fixable: true
+
+  execution:
+    steps:
+      - "First distillation at fourth degree"
+      - "Monitor bubbling and vapor"
+      - "Cool overnight"
+      - "Second distillation for purification"
+    zone_affinity: "P/R"
+    intervention_points:
+      - "Temperature adjustment during distillation"
+      - "Decision to proceed to second stage"
+
+  completion:
+    steps:
+      - "Collection of final distillate"
+      - "Storage in appropriate vessel"
+    zone_affinity: "S"
+    locked: true
+    irreversible: true
+
+  total_phase_count: 3
+  curriculum_position: "late"         # Advanced procedure
+
+  provenance: ["X.25"]
+
+# ============================================================
+# SECTION 17: PROCESS (UNMAPPED DIMENSIONS)
+# ============================================================
+process:
+  stage_count: 2                      # Two-stage distillation
+  stage_descriptions:
+    - "Initial distillation to separate volatile components"
+    - "Secondary distillation for purification"
+
+  equipment:
+    mentioned: ["alembic", "furnace", "receiving vessel"]
+    pelican_compatible: true          # Compatible with pelican apparatus
+    note: "Equipment identity unmapped per C171; behavioral profile via APP-1"
+
+  duration:
+    stated: "Overnight cooling between stages"
+    estimated: "Multi-day process"
+    note: "Timing precision maps to REGIME, not duration"
+
+  unmapped_rationale: |
+    Equipment identity (C171): Grammar encodes operational behavior, not apparatus.
+    Stage count: Voynich lines are control blocks, not procedure stages.
+    Duration: Not encoded; precision requirement maps to REGIME instead.
+
+# ============================================================
+# SECTION 18: DERIVED CONSTRAINTS
+# ============================================================
+derived_constraints:
+  primary_mappings:
+    recipe_regime_cluster: "REGIME_4"
+    zone_dominant: "R"
+    hazard_dominant: "PHASE_ORDERING"
+    judgment_load: 13
+
+  secondary_mappings:
+    sli_estimate: "high"              # High hazard, low escape
+    sli_ht_correlation: "r=-0.453"
+    constraint_substitution: "High SLI → tight grammar → low HT needed"
+
+  triangulation_vector:
+    regime: 4
+    product_type: "PRECISION"
+    material_class: "animal"
+    hazard_dominant: "PHASE_ORDERING"
+    zone_dominant: "R"
+    zone_r: true
+    zone_p: true
+    judgment_load: 13
+    escape_prediction: "low"
+    precision_level: "high"
+    kernel_pattern: "k→e dominant, h→k suppressed"
+
+  filter_function: |
+    B_candidates = (
+      folios_in_REGIME(4)              # 25 folios
+      ∩ folios_with_zone_affinity(R)   # R-zone enriched
+      ∩ folios_with_hazard_profile(PHASE_ORDERING)
+      ∩ folios_with_escape_rate(low)   # 0.52x escape
+    )
+
+# ============================================================
+# RAW EVIDENCE
+# ============================================================
+raw_quotes:
+  key_passages:
+    - "Fourth degree should be avoided at all times... nature rejects all coercion"
+    - "A batch approaching corruption may be reinfused no more than twice"
+  ambiguous_passages:
+    - "Exact temperature threshold for fourth degree boundary"
+
+# ============================================================
+# ANALYSIS NOTES
+# ============================================================
+analysis_notes: |
+  Key observations:
+  1. Maximum judgment load (13/13) - this is an expert-level procedure
+  2. All kernel operators engaged (k, h, e)
+  3. 4/5 hazard classes exposed - high-risk procedure
+  4. Smell is dominant modality but UNMAPPED in Voynich constraints
+  5. Two-stage structure has no direct Voynich correlate
+  6. High registry-internal vocabulary prediction (70%)
+
+  Triangulation should yield:
+  - REGIME_4 folios (25 total)
+  - R-zone enriched MIDDLEs
+  - P-zone enriched MIDDLEs
+  - Low escape architecture
+  - ch-prefix dominant (precision)
+
+  Confidence: HIGH for regime mapping, MODERATE for zone affinity,
+  LOW for specific vocabulary prediction.
+
+# ============================================================
+# END OF RDR EXAMPLE: Küetreck
+# ============================================================

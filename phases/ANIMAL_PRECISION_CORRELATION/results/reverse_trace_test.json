@@ -1,0 +1,549 @@
+{
+  "candidate_folio": "f43v",
+  "folio_unique_middles": 37,
+  "folio_shared_middles": 28,
+  "folio_b_exclusive_middles": 9,
+  "high_overlap_entry_count": 544,
+  "ri_middles_in_candidates": 143,
+  "ri_with_priors": 61,
+  "ri_with_animal": [
+    [
+      "eom",
+      {
+        "animal": 0.18181818181818182,
+        "cold_moist_flower": 0.14209090909090907,
+        "dangerous_herb": 0.039818181818181815,
+        "fruit": 0.09081818181818181,
+        "herb": 0.3922727272727273,
+        "hot_dry_herb": 0.08572727272727272,
+        "hot_dry_root": 0.005181818181818182,
+        "hot_flower": 0.024999999999999998,
+        "leaf": 0.005454545454545454,
+        "moderate_herb": 0.021818181818181816,
+        "moist_root": 0.009999999999999998
+      }
+    ],
+    [
+      "teold",
+      {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      }
+    ],
+    [
+      "chol",
+      {
+        "animal": 0.16071428571428573,
+        "cold_moist_flower": 0.046517857142857146,
+        "dangerous_herb": 0.013035714285714286,
+        "fruit": 0.02973214285714286,
+        "herb": 0.38526785714285716,
+        "hot_dry_herb": 0.28626785714285713,
+        "hot_dry_root": 0.01730357142857143,
+        "hot_flower": 0.02455357142857143,
+        "leaf": 0.005357142857142857,
+        "moderate_herb": 0.02142857142857143,
+        "moist_root": 0.009821428571428571
+      }
+    ],
+    [
+      "eyd",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "olar",
+      {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.4315,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0275,
+        "leaf": 0.006,
+        "moderate_herb": 0.024,
+        "moist_root": 0.011
+      }
+    ],
+    [
+      "tod",
+      {
+        "animal": 0.5714285714285714,
+        "cold_moist_flower": 0.07442857142857143,
+        "dangerous_herb": 0.020857142857142855,
+        "fruit": 0.04757142857142857,
+        "herb": 0.12328571428571428,
+        "hot_dry_herb": 0.1347142857142857,
+        "hot_dry_root": 0.008142857142857143,
+        "hot_flower": 0.007857142857142856,
+        "leaf": 0.0017142857142857142,
+        "moderate_herb": 0.006857142857142857,
+        "moist_root": 0.0031428571428571426
+      }
+    ],
+    [
+      "tchyf",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "ofy",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "tchy",
+      {
+        "animal": 0.2549019607843137,
+        "cold_moist_flower": 0.061294117647058825,
+        "dangerous_herb": 0.017176470588235293,
+        "fruit": 0.0391764705882353,
+        "herb": 0.2707450980392157,
+        "hot_dry_herb": 0.29584313725490197,
+        "hot_dry_root": 0.01788235294117647,
+        "hot_flower": 0.017254901960784313,
+        "leaf": 0.0037647058823529413,
+        "moderate_herb": 0.015058823529411765,
+        "moist_root": 0.006901960784313725
+      }
+    ],
+    [
+      "hol",
+      {
+        "animal": 0.2571428571428571,
+        "cold_moist_flower": 0.02977142857142857,
+        "dangerous_herb": 0.008342857142857141,
+        "fruit": 0.01902857142857143,
+        "herb": 0.3452,
+        "hot_dry_herb": 0.2694285714285714,
+        "hot_dry_root": 0.016285714285714285,
+        "hot_flower": 0.022000000000000002,
+        "leaf": 0.0048000000000000004,
+        "moderate_herb": 0.019200000000000002,
+        "moist_root": 0.0088
+      }
+    ],
+    [
+      "eey",
+      {
+        "animal": 0.22807017543859648,
+        "cold_moist_flower": 0.05484210526315789,
+        "dangerous_herb": 0.015368421052631576,
+        "fruit": 0.03505263157894737,
+        "herb": 0.4239298245614035,
+        "hot_dry_herb": 0.16543859649122805,
+        "hot_dry_root": 0.01,
+        "hot_flower": 0.02701754385964912,
+        "leaf": 0.005894736842105263,
+        "moderate_herb": 0.023578947368421053,
+        "moist_root": 0.010807017543859649
+      }
+    ],
+    [
+      "opcho",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "shol",
+      {
+        "animal": 0.42857142857142855,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.36985714285714283,
+        "hot_dry_herb": 0.1347142857142857,
+        "hot_dry_root": 0.008142857142857143,
+        "hot_flower": 0.02357142857142857,
+        "leaf": 0.005142857142857143,
+        "moderate_herb": 0.02057142857142857,
+        "moist_root": 0.009428571428571427
+      }
+    ],
+    [
+      "tsho",
+      {
+        "animal": 0.2857142857142857,
+        "cold_moist_flower": 0.22328571428571428,
+        "dangerous_herb": 0.06257142857142857,
+        "fruit": 0.1427142857142857,
+        "herb": 0.12328571428571428,
+        "hot_dry_herb": 0.1347142857142857,
+        "hot_dry_root": 0.008142857142857143,
+        "hot_flower": 0.007857142857142856,
+        "leaf": 0.0017142857142857142,
+        "moderate_herb": 0.006857142857142857,
+        "moist_root": 0.0031428571428571426
+      }
+    ],
+    [
+      "eoc",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "eso",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "ho",
+      {
+        "animal": 0.21428571428571427,
+        "cold_moist_flower": 0.11164285714285714,
+        "dangerous_herb": 0.031285714285714285,
+        "fruit": 0.07135714285714286,
+        "herb": 0.24657142857142855,
+        "hot_dry_herb": 0.2694285714285714,
+        "hot_dry_root": 0.016285714285714285,
+        "hot_flower": 0.015714285714285712,
+        "leaf": 0.0034285714285714284,
+        "moderate_herb": 0.013714285714285714,
+        "moist_root": 0.006285714285714285
+      }
+    ],
+    [
+      "heod",
+      {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "hor",
+      {
+        "animal": 0.3333333333333333,
+        "cold_moist_flower": 0.05210000000000001,
+        "dangerous_herb": 0.0146,
+        "fruit": 0.0333,
+        "herb": 0.1726,
+        "hot_dry_herb": 0.3457666666666666,
+        "hot_dry_root": 0.0209,
+        "hot_flower": 0.011000000000000001,
+        "leaf": 0.0024000000000000002,
+        "moderate_herb": 0.009600000000000001,
+        "moist_root": 0.0044
+      }
+    ],
+    [
+      "olfcho",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "kchy",
+      {
+        "animal": 0.22916666666666666,
+        "cold_moist_flower": 0.065125,
+        "dangerous_herb": 0.01825,
+        "fruit": 0.041625,
+        "herb": 0.323625,
+        "hot_dry_herb": 0.2553958333333333,
+        "hot_dry_root": 0.0154375,
+        "hot_flower": 0.020625,
+        "leaf": 0.0045000000000000005,
+        "moderate_herb": 0.018000000000000002,
+        "moist_root": 0.00825
+      }
+    ],
+    [
+      "hod",
+      {
+        "animal": 0.5,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.4715,
+        "hot_dry_root": 0.0285,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "ols",
+      {
+        "animal": 0.2222222222222222,
+        "cold_moist_flower": 0.11577777777777777,
+        "dangerous_herb": 0.03244444444444444,
+        "fruit": 0.074,
+        "herb": 0.19177777777777777,
+        "hot_dry_herb": 0.3143333333333333,
+        "hot_dry_root": 0.019,
+        "hot_flower": 0.012222222222222221,
+        "leaf": 0.0026666666666666666,
+        "moderate_herb": 0.010666666666666666,
+        "moist_root": 0.004888888888888888
+      }
+    ],
+    [
+      "cthso",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "hdaoto",
+      {
+        "animal": 1.0,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.0,
+        "hot_dry_herb": 0.0,
+        "hot_dry_root": 0.0,
+        "hot_flower": 0.0,
+        "leaf": 0.0,
+        "moderate_herb": 0.0,
+        "moist_root": 0.0
+      }
+    ],
+    [
+      "otol",
+      {
+        "animal": 0.14285714285714285,
+        "cold_moist_flower": 0.0,
+        "dangerous_herb": 0.0,
+        "fruit": 0.0,
+        "herb": 0.36985714285714283,
+        "hot_dry_herb": 0.4041428571428571,
+        "hot_dry_root": 0.024428571428571428,
+        "hot_flower": 0.02357142857142857,
+        "leaf": 0.005142857142857143,
+        "moderate_herb": 0.02057142857142857,
+        "moist_root": 0.009428571428571427
+      }
+    ]
+  ],
+  "top_overlap_entries": [
+    {
+      "folio": "f101v2",
+      "line": "3",
+      "overlap": 6,
+      "ratio": 0.21428571428571427
+    },
+    {
+      "folio": "f101r1",
+      "line": "7",
+      "overlap": 6,
+      "ratio": 0.21428571428571427
+    },
+    {
+      "folio": "f58v",
+      "line": "25",
+      "overlap": 6,
+      "ratio": 0.21428571428571427
+    },
+    {
+      "folio": "f89r2",
+      "line": "2",
+      "overlap": 6,
+      "ratio": 0.21428571428571427
+    },
+    {
+      "folio": "f102v2",
+      "line": "14",
+      "overlap": 6,
+      "ratio": 0.21428571428571427
+    },
+    {
+      "folio": "f101r1",
+      "line": "6",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f101v2",
+      "line": "7",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f101r1",
+      "line": "5",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f99r",
+      "line": "7",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f101r1",
+      "line": "9",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f88v",
+      "line": "3",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f89r1",
+      "line": "2",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f100v",
+      "line": "5",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f29r",
+      "line": "3",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f89v2",
+      "line": "12",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f101r1",
+      "line": "4",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f101v2",
+      "line": "5",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f89v2",
+      "line": "9",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f102v2",
+      "line": "6",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    },
+    {
+      "folio": "f90v2",
+      "line": "3",
+      "overlap": 5,
+      "ratio": 0.17857142857142858
+    }
+  ]
+}

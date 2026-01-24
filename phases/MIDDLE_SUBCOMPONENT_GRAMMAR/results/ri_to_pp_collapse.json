@@ -1,0 +1,95 @@
+{
+  "pp_multi_count": 406,
+  "ri_count": 712,
+  "ri_with_pp_match": 673,
+  "ri_with_pp_match_pct": 94.52247191011236,
+  "pp_bases_with_ri": 261,
+  "collapse_ratio": 2.7279693486590038,
+  "mean_ri_per_pp": 2.578544061302682,
+  "max_ri_per_pp": 14,
+  "variation_prefixes": 100,
+  "variation_suffixes": 104,
+  "multi_pp_ri_count": 608,
+  "top_pp_bases": [
+    [
+      "cho",
+      14
+    ],
+    [
+      "sheo",
+      9
+    ],
+    [
+      "eo",
+      8
+    ],
+    [
+      "cth",
+      8
+    ],
+    [
+      "kch",
+      7
+    ],
+    [
+      "olo",
+      7
+    ],
+    [
+      "or",
+      7
+    ],
+    [
+      "eees",
+      7
+    ],
+    [
+      "cph",
+      7
+    ],
+    [
+      "ii",
+      7
+    ],
+    [
+      "ch",
+      7
+    ],
+    [
+      "oke",
+      6
+    ],
+    [
+      "tch",
+      6
+    ],
+    [
+      "old",
+      6
+    ],
+    [
+      "ra",
+      6
+    ],
+    [
+      "kcho",
+      6
+    ],
+    [
+      "al",
+      6
+    ],
+    [
+      "ych",
+      6
+    ],
+    [
+      "keo",
+      6
+    ],
+    [
+      "dar",
+      6
+    ]
+  ]
+}

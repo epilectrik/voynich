@@ -107,6 +107,65 @@ is_canonical = token in canonical_types
 
 ---
 
+## PP (Pipeline-Participating) MIDDLE Analysis
+
+**CRITICAL: PP analysis requires procedural grounding.**
+
+### Valid Methodology (C505)
+
+PP profile discrimination works when records are identified via **procedural trace**:
+
+```
+Known product type (B) → Required B folios → A records with high survival → RI MIDDLEs exclusive to those records → PP signature
+```
+
+This methodology:
+- Starts from B-side procedural constraints
+- Traces back to A records via vocabulary survival
+- Identifies RI MIDDLEs that appear exclusively in those A records
+- Then computes PP enrichment in those records
+
+**Example (Animal/PRECISION):**
+1. PRECISION product type requires specific B folios
+2. 13 A records converge to those folios
+3. RI MIDDLEs {eyd, tchyf, ofy, ...} are exclusive to those records
+4. PP signature: 'te' (15.8x), 'ho' (8.7x), 'ke' (5.1x)
+
+### Invalid Methodology (FALSIFIED)
+
+**Do NOT use Bayesian class posteriors for PP discrimination.**
+
+The material_class_priors.json approach:
+- Assigns class probabilities based on folio co-occurrence
+- Identifies taxonomically similar records
+- Does NOT identify procedurally equivalent records
+
+**Dilution test result:**
+- C505 methodology (13 records): 15.8x enrichment
+- Bayesian posteriors (40 records): 5.1x enrichment (diluted)
+- Bayesian-only extra records (27): 0.9x enrichment (baseline noise)
+
+The Bayesian approach adds false positives that dilute the PP signal.
+
+### Invalid Axis (FALSIFIED)
+
+**Do NOT use fire degree as a PP axis.**
+
+Fire degree (1=gentle, 2=standard, 3=moderate) reflects thermal tolerance, not handling complexity:
+- Fire 1 includes animals AND flowers (both "gentle")
+- This conflation destroys PP discrimination signal
+- Material class (animal vs herb vs flower) is the valid axis
+
+### Summary
+
+| Approach | Status | Result |
+|----------|--------|--------|
+| Procedural trace (B→A) | VALID | 15.8x enrichment |
+| Bayesian class posteriors | FALSIFIED | Diluted signal |
+| Fire degree grouping | FALSIFIED | Conflated categories |
+
+---
+
 ## Common Analytical Errors
 
 ### 1. Sample Size Issues

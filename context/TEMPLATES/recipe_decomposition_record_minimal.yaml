@@ -1,0 +1,102 @@
+# ============================================================
+# RDR: Recipe Decomposition Record - MINIMAL VERSION
+# ============================================================
+# Tier: 3 (External alignment, non-binding)
+# Purpose: Quick extraction of core Voynich-mappable aspects
+# Use this when: Rapid assessment, initial triage, or limited source info
+# Sections: 8 (vs 18 in full version)
+# ============================================================
+
+---
+meta:
+  recipe_id: "BRU-###"
+  tier: 3
+  extraction_date: ""
+  analyst: ""
+
+# ============================================================
+# CORE IDENTIFICATION
+# ============================================================
+identification:
+  name: ""                          # Recipe name
+  material_class: ""                # animal | plant | mineral
+  product_type: ""                  # WATER_GENTLE | WATER_STANDARD | OIL_RESIN | PRECISION
+
+# ============================================================
+# FIRE REGIME (Critical - determines REGIME mapping)
+# ============================================================
+fire_regime:
+  brunschwig_degree: null           # 1 | 2 | 3 | 4
+  voynich_regime: ""                # REGIME_1 | REGIME_2 | REGIME_3 | REGIME_4
+  evidence: ""
+
+# ============================================================
+# HAZARD EXPOSURE (Maps to C109)
+# ============================================================
+hazard_exposure:
+  PHASE_ORDERING: false             # 41% - wrong phase/sequence
+  COMPOSITION_JUMP: false           # 24% - contamination/purity
+  CONTAINMENT_TIMING: false         # 24% - vessel/pressure
+  RATE_MISMATCH: false              # 6% - flow imbalance
+  ENERGY_OVERSHOOT: false           # 6% - thermal damage
+  dominant: ""                      # Which is primary concern
+
+# ============================================================
+# SENSORY MONITORING (Maps to zones)
+# ============================================================
+sensory_monitoring:
+  sound: false                      # → R-zone (CONFIRMED)
+  sight: false                      # → P-zone (CONFIRMED)
+  smell: false                      # → INDIRECT (gap)
+  touch: false                      # → S-zone (weak)
+  dominant: ""                      # SOUND | SIGHT | SMELL | TOUCH
+
+# ============================================================
+# JUDGMENT LOAD (Maps to C477 HT correlation)
+# ============================================================
+judgment_requirements:
+  watch_types_count: 0              # 0-6 (temperature, phase, quality, timing, state, stability)
+  forbidden_types_count: 0          # 0-3 (equilibrium, transition, purification)
+  tacit_types_count: 0              # 0-4 (sensory, equipment, timing, trouble)
+  total_load: 0                     # 0-13
+  tail_pressure: ""                 # low | medium | high
+
+# ============================================================
+# SUPPRESSION PATTERNS (Maps to C490, C332)
+# ============================================================
+suppression_patterns:
+  categorical_prohibitions: []      # List of forbidden actions
+  aggressive_forbidden: false       # Maps to C490
+  h_to_k_suppressed: true           # Always true per C332
+
+# ============================================================
+# ZONE PROFILE (Continuous affinities)
+# ============================================================
+zone_profile:
+  C: 0.0                            # Setup
+  P: 0.0                            # Active/intervention
+  R: 0.0                            # Progression
+  S: 0.0                            # Exit/locked
+  dominant: ""                      # C | P | R | S
+
+# ============================================================
+# TRIANGULATION VECTOR (Output for filtering)
+# ============================================================
+triangulation_vector:
+  regime: null                      # 1-4
+  material_class: ""                # animal | plant | mineral
+  hazard_dominant: ""               # PHASE_ORDERING | COMPOSITION_JUMP | etc.
+  zone_dominant: ""                 # C | P | R | S
+  zone_r: false                     # Sound monitoring?
+  zone_p: false                     # Sight monitoring?
+  judgment_load: 0                  # 0-13
+  precision_level: ""               # low | medium | high
+
+# ============================================================
+# NOTES
+# ============================================================
+notes: ""
+
+# ============================================================
+# END OF MINIMAL RDR
+# ============================================================

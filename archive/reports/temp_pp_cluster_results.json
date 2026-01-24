@@ -1,0 +1,9 @@
+{
+  "n_middles": 90,
+  "n_classes": 49,
+  "best_k": 2,
+  "best_silhouette": 0.4333515579287022,
+  "perm_mean": 0.43113002823402063,
+  "perm_std": 0.03540038327737903,
+  "p_value": 0.435,
+  "significant": 

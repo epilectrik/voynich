@@ -1,0 +1,18 @@
+{
+  "total_ri_occurrences": 1072,
+  "locally_derived": {
+    "count": 186,
+    "percentage": 17.350746268656717,
+    "mean_length": 5.370967741935484
+  },
+  "globally_composed": {
+    "count": 886,
+    "percentage": 82.64925373134328,
+    "mean_length": 4.483069977426637
+  },
+  "length_difference": -0.887897764508847,
+  "mann_whitney_p": 0.9999999999994698,
+  "spearman_rho": 0.19214769685995037,
+  "spearman_p": 1.5755171711636474e-08,
+  "hypothesis_confirmed": false
+}

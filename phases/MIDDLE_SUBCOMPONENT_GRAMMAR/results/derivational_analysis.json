@@ -1,0 +1,3242 @@
+{
+  "ode": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 7,
+    "expected": 3.05,
+    "productivity_ratio": 2.3
+  },
+  "etch": {
+    "frequency": 7,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.11,
+    "productivity_ratio": 37.85
+  },
+  "ech": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 4,
+    "infix_seeds": 3,
+    "total_seeds": 8,
+    "expected": 3.46,
+    "productivity_ratio": 2.31
+  },
+  "dd": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 11.65,
+    "productivity_ratio": 0.17
+  },
+  "loi": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 1,
+    "expected": 0.75,
+    "productivity_ratio": 1.33
+  },
+  "oeee": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 0.55,
+    "productivity_ratio": 9.04
+  },
+  "okcho": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 68.75
+  },
+  "eet": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 4,
+    "expected": 1.95,
+    "productivity_ratio": 2.05
+  },
+  "oet": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 2.51,
+    "productivity_ratio": 0.4
+  },
+  "kchod": {
+    "frequency": 5,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 195.94
+  },
+  "ysh": {
+    "frequency": 8,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 3,
+    "infix_seeds": 1,
+    "total_seeds": 10,
+    "expected": 0.99,
+    "productivity_ratio": 10.07
+  },
+  "dai": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 7,
+    "total_seeds": 12,
+    "expected": 0.3,
+    "productivity_ratio": 40.59
+  },
+  "oto": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 3.23,
+    "productivity_ratio": 0.93
+  },
+  "ok": {
+    "frequency": 81,
+    "length": 2,
+    "prefix_seeds": 18,
+    "suffix_seeds": 11,
+    "infix_seeds": 24,
+    "total_seeds": 53,
+    "expected": 32.59,
+    "productivity_ratio": 1.63
+  },
+  "cfhh": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.03,
+    "productivity_ratio": 67.3
+  },
+  "ir": {
+    "frequency": 8,
+    "length": 2,
+    "prefix_seeds": 4,
+    "suffix_seeds": 5,
+    "infix_seeds": 4,
+    "total_seeds": 13,
+    "expected": 3.72,
+    "productivity_ratio": 3.49
+  },
+  "okyd": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.04,
+    "productivity_ratio": 24.76
+  },
+  "ssh": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 1.51,
+    "productivity_ratio": 1.33
+  },
+  "py": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 6,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 9,
+    "expected": 3.81,
+    "productivity_ratio": 2.36
+  },
+  "of": {
+    "frequency": 6,
+    "length": 2,
+    "prefix_seeds": 13,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 14,
+    "expected": 8.02,
+    "productivity_ratio": 1.75
+  },
+  "lch": {
+    "frequency": 7,
+    "length": 3,
+    "prefix_seeds": 8,
+    "suffix_seeds": 6,
+    "infix_seeds": 6,
+    "total_seeds": 20,
+    "expected": 1.45,
+    "productivity_ratio": 13.75
+  },
+  "cpho": {
+    "frequency": 10,
+    "length": 4,
+    "prefix_seeds": 5,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 0.07,
+    "productivity_ratio": 88.75
+  },
+  "odaii": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 2,
+    "total_seeds": 4,
+    "expected": 0.0,
+    "productivity_ratio": 6995.73
+  },
+  "eo": {
+    "frequency": 177,
+    "length": 2,
+    "prefix_seeds": 23,
+    "suffix_seeds": 40,
+    "infix_seeds": 81,
+    "total_seeds": 144,
+    "expected": 71.4,
+    "productivity_ratio": 2.02
+  },
+  "hor": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 7,
+    "infix_seeds": 3,
+    "total_seeds": 11,
+    "expected": 1.58,
+    "productivity_ratio": 6.94
+  },
+  "ds": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 7,
+    "infix_seeds": 11,
+    "total_seeds": 26,
+    "expected": 14.1,
+    "productivity_ratio": 1.84
+  },
+  "it": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 7,
+    "total_seeds": 8,
+    "expected": 5.66,
+    "productivity_ratio": 1.41
+  },
+  "la": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 5,
+    "suffix_seeds": 5,
+    "infix_seeds": 5,
+    "total_seeds": 15,
+    "expected": 11.24,
+    "productivity_ratio": 1.33
+  },
+  "ctho": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 3,
+    "infix_seeds": 2,
+    "total_seeds": 8,
+    "expected": 0.14,
+    "productivity_ratio": 58.75
+  },
+  "yte": {
+    "frequency": 12,
+    "length": 3,
+    "prefix_seeds": 13,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 14,
+    "expected": 0.7,
+    "productivity_ratio": 19.92
+  },
+  "eeos": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 6,
+    "infix_seeds": 0,
+    "total_seeds": 7,
+    "expected": 0.3,
+    "productivity_ratio": 23.11
+  },
+  "qek": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.11,
+    "productivity_ratio": 35.59
+  },
+  "sho": {
+    "frequency": 10,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 9,
+    "infix_seeds": 13,
+    "total_seeds": 28,
+    "expected": 3.54,
+    "productivity_ratio": 7.9
+  },
+  "og": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 5,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 2.94,
+    "productivity_ratio": 1.7
+  },
+  "ocph": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 0.07,
+    "productivity_ratio": 73.96
+  },
+  "yta": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 6,
+    "expected": 0.33,
+    "productivity_ratio": 18.19
+  },
+  "eee": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 4,
+    "infix_seeds": 11,
+    "total_seeds": 22,
+    "expected": 5.23,
+    "productivity_ratio": 4.21
+  },
+  "cho": {
+    "frequency": 37,
+    "length": 3,
+    "prefix_seeds": 17,
+    "suffix_seeds": 18,
+    "infix_seeds": 40,
+    "total_seeds": 75,
+    "expected": 4.46,
+    "productivity_ratio": 16.83
+  },
+  "ota": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 3,
+    "expected": 1.18,
+    "productivity_ratio": 2.54
+  },
+  "ld": {
+    "frequency": 11,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 9,
+    "infix_seeds": 13,
+    "total_seeds": 30,
+    "expected": 10.83,
+    "productivity_ratio": 2.77
+  },
+  "opcho": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.01,
+    "productivity_ratio": 500.04
+  },
+  "oda": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 7,
+    "infix_seeds": 8,
+    "total_seeds": 20,
+    "expected": 1.43,
+    "productivity_ratio": 13.97
+  },
+  "in": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 4,
+    "suffix_seeds": 5,
+    "infix_seeds": 7,
+    "total_seeds": 16,
+    "expected": 0.45,
+    "productivity_ratio": 35.9
+  },
+  "rsh": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.67,
+    "productivity_ratio": 7.42
+  },
+  "eees": {
+    "frequency": 8,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 6,
+    "infix_seeds": 2,
+    "total_seeds": 9,
+    "expected": 0.24,
+    "productivity_ratio": 38.28
+  },
+  "ed": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 1,
+    "suffix_seeds": 6,
+    "infix_seeds": 2,
+    "total_seeds": 9,
+    "expected": 25.6,
+    "productivity_ratio": 0.35
+  },
+  "rar": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.15,
+    "productivity_ratio": 33.96
+  },
+  "lee": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 2.2,
+    "productivity_ratio": 1.82
+  },
+  "old": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 5,
+    "infix_seeds": 5,
+    "total_seeds": 14,
+    "expected": 1.28,
+    "productivity_ratio": 10.92
+  },
+  "ho": {
+    "frequency": 45,
+    "length": 2,
+    "prefix_seeds": 14,
+    "suffix_seeds": 32,
+    "infix_seeds": 97,
+    "total_seeds": 143,
+    "expected": 68.64,
+    "productivity_ratio": 2.08
+  },
+  "yteo": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 6,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 6,
+    "expected": 0.07,
+    "productivity_ratio": 80.86
+  },
+  "ta": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 5,
+    "suffix_seeds": 4,
+    "infix_seeds": 10,
+    "total_seeds": 19,
+    "expected": 9.97,
+    "productivity_ratio": 1.91
+  },
+  "op": {
+    "frequency": 19,
+    "length": 2,
+    "prefix_seeds": 27,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 30,
+    "expected": 13.56,
+    "productivity_ratio": 2.21
+  },
+  "ot": {
+    "frequency": 62,
+    "length": 2,
+    "prefix_seeds": 10,
+    "suffix_seeds": 10,
+    "infix_seeds": 9,
+    "total_seeds": 29,
+    "expected": 27.15,
+    "productivity_ratio": 1.07
+  },
+  "yto": {
+    "frequency": 12,
+    "length": 3,
+    "prefix_seeds": 8,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 11,
+    "expected": 0.91,
+    "productivity_ratio": 12.15
+  },
+  "ekch": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.13,
+    "productivity_ratio": 7.86
+  },
+  "tod": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 3,
+    "total_seeds": 4,
+    "expected": 1.14,
+    "productivity_ratio": 3.52
+  },
+  "aiph": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 105.16
+  },
+  "*e": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 5,
+    "expected": 7.21,
+    "productivity_ratio": 0.69
+  },
+  "yd": {
+    "frequency": 18,
+    "length": 2,
+    "prefix_seeds": 10,
+    "suffix_seeds": 19,
+    "infix_seeds": 15,
+    "total_seeds": 44,
+    "expected": 9.3,
+    "productivity_ratio": 4.73
+  },
+  "orch": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.09,
+    "productivity_ratio": 33.52
+  },
+  "sy": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 5,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 11.25,
+    "productivity_ratio": 0.53
+  },
+  "iino": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.0,
+    "productivity_ratio": 1747.56
+  },
+  "tee": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 6,
+    "total_seeds": 10,
+    "expected": 1.95,
+    "productivity_ratio": 5.13
+  },
+  "tcho": {
+    "frequency": 14,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 3,
+    "total_seeds": 8,
+    "expected": 0.14,
+    "productivity_ratio": 58.75
+  },
+  "dykch": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.0,
+    "productivity_ratio": 700.59
+  },
+  "es": {
+    "frequency": 11,
+    "length": 2,
+    "prefix_seeds": 4,
+    "suffix_seeds": 33,
+    "infix_seeds": 11,
+    "total_seeds": 48,
+    "expected": 30.94,
+    "productivity_ratio": 1.55
+  },
+  "oo": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 91.12,
+    "productivity_ratio": 0.05
+  },
+  "hes": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 2.75,
+    "productivity_ratio": 1.09
+  },
+  "hols": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 3,
+    "total_seeds": 6,
+    "expected": 0.12,
+    "productivity_ratio": 49.08
+  },
+  "ra": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 11,
+    "suffix_seeds": 3,
+    "infix_seeds": 18,
+    "total_seeds": 32,
+    "expected": 6.56,
+    "productivity_ratio": 4.88
+  },
+  "ofch": {
+    "frequency": 10,
+    "length": 4,
+    "prefix_seeds": 5,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.04,
+    "productivity_ratio": 125.37
+  },
+  "keo": {
+    "frequency": 22,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 9,
+    "infix_seeds": 5,
+    "total_seeds": 18,
+    "expected": 3.02,
+    "productivity_ratio": 5.96
+  },
+  "fo": {
+    "frequency": 4,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 2,
+    "infix_seeds": 3,
+    "total_seeds": 13,
+    "expected": 8.02,
+    "productivity_ratio": 1.62
+  },
+  "chod": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 3,
+    "infix_seeds": 1,
+    "total_seeds": 7,
+    "expected": 0.17,
+    "productivity_ratio": 42.33
+  },
+  "ek": {
+    "frequency": 34,
+    "length": 2,
+    "prefix_seeds": 10,
+    "suffix_seeds": 7,
+    "infix_seeds": 10,
+    "total_seeds": 27,
+    "expected": 25.38,
+    "productivity_ratio": 1.06
+  },
+  "ai": {
+    "frequency": 31,
+    "length": 2,
+    "prefix_seeds": 12,
+    "suffix_seeds": 16,
+    "infix_seeds": 32,
+    "total_seeds": 60,
+    "expected": 7.13,
+    "productivity_ratio": 8.42
+  },
+  "ote": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 4,
+    "expected": 2.51,
+    "productivity_ratio": 1.59
+  },
+  "dy": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 14,
+    "suffix_seeds": 0,
+    "infix_seeds": 5,
+    "total_seeds": 19,
+    "expected": 9.3,
+    "productivity_ratio": 2.04
+  },
+  "yckh": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.05,
+    "productivity_ratio": 43.63
+  },
+  "okal": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.05,
+    "productivity_ratio": 40.91
+  },
+  "ct": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 2,
+    "infix_seeds": 29,
+    "total_seeds": 39,
+    "expected": 14.6,
+    "productivity_ratio": 2.67
+  },
+  "oyt": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.91,
+    "productivity_ratio": 2.21
+  },
+  "eeo": {
+    "frequency": 23,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 8,
+    "infix_seeds": 18,
+    "total_seeds": 33,
+    "expected": 6.73,
+    "productivity_ratio": 4.9
+  },
+  "opo": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 8,
+    "expected": 1.61,
+    "productivity_ratio": 4.98
+  },
+  "oii": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 3,
+    "expected": 0.48,
+    "productivity_ratio": 6.28
+  },
+  "eke": {
+    "frequency": 9,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 2,
+    "infix_seeds": 5,
+    "total_seeds": 12,
+    "expected": 2.35,
+    "productivity_ratio": 5.12
+  },
+  "kalch": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.0,
+    "productivity_ratio": 578.7
+  },
+  "ychos": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.0,
+    "productivity_ratio": 201.07
+  },
+  "lche": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 3,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.12,
+    "productivity_ratio": 33.54
+  },
+  "oyd": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 1.1,
+    "productivity_ratio": 0.91
+  },
+  "ches": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.16,
+    "productivity_ratio": 6.43
+  },
+  "ea": {
+    "frequency": 7,
+    "length": 2,
+    "prefix_seeds": 12,
+    "suffix_seeds": 7,
+    "infix_seeds": 12,
+    "total_seeds": 31,
+    "expected": 26.57,
+    "productivity_ratio": 1.17
+  },
+  "eeckh": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.01,
+    "productivity_ratio": 342.45
+  },
+  "ksho": {
+    "frequency": 13,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.13,
+    "productivity_ratio": 15.34
+  },
+  "cheo": {
+    "frequency": 8,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 9,
+    "infix_seeds": 5,
+    "total_seeds": 18,
+    "expected": 0.37,
+    "productivity_ratio": 49.22
+  },
+  "keos": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.14,
+    "productivity_ratio": 14.73
+  },
+  "al": {
+    "frequency": 41,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 35,
+    "infix_seeds": 33,
+    "total_seeds": 76,
+    "expected": 11.24,
+    "productivity_ratio": 6.76
+  },
+  "qkh": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.11,
+    "productivity_ratio": 9.27
+  },
+  "ka": {
+    "frequency": 7,
+    "length": 2,
+    "prefix_seeds": 5,
+    "suffix_seeds": 8,
+    "infix_seeds": 7,
+    "total_seeds": 20,
+    "expected": 11.99,
+    "productivity_ratio": 1.67
+  },
+  "oke": {
+    "frequency": 9,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 4,
+    "infix_seeds": 6,
+    "total_seeds": 15,
+    "expected": 3.02,
+    "productivity_ratio": 4.97
+  },
+  "chd": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 4,
+    "infix_seeds": 4,
+    "total_seeds": 9,
+    "expected": 1.57,
+    "productivity_ratio": 5.75
+  },
+  "sa": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 4,
+    "infix_seeds": 11,
+    "total_seeds": 15,
+    "expected": 14.64,
+    "productivity_ratio": 1.02
+  },
+  "ar": {
+    "frequency": 15,
+    "length": 2,
+    "prefix_seeds": 6,
+    "suffix_seeds": 15,
+    "infix_seeds": 21,
+    "total_seeds": 42,
+    "expected": 6.56,
+    "productivity_ratio": 6.4
+  },
+  "odai": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 3,
+    "total_seeds": 6,
+    "expected": 0.03,
+    "productivity_ratio": 192.2
+  },
+  "oct": {
+    "frequency": 4,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 1,
+    "infix_seeds": 10,
+    "total_seeds": 16,
+    "expected": 1.73,
+    "productivity_ratio": 9.25
+  },
+  "kee": {
+    "frequency": 13,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 6,
+    "infix_seeds": 7,
+    "total_seeds": 20,
+    "expected": 2.35,
+    "productivity_ratio": 8.53
+  },
+  "ror": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.4,
+    "productivity_ratio": 4.95
+  },
+  "eocth": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.01,
+    "productivity_ratio": 319.87
+  },
+  "yp": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 9,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 12,
+    "expected": 3.81,
+    "productivity_ratio": 3.15
+  },
+  "kol": {
+    "frequency": 4,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 1.27,
+    "productivity_ratio": 4.72
+  },
+  "olch": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 2,
+    "total_seeds": 5,
+    "expected": 0.15,
+    "productivity_ratio": 32.53
+  },
+  "kor": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.74,
+    "productivity_ratio": 2.7
+  },
+  "ych": {
+    "frequency": 38,
+    "length": 3,
+    "prefix_seeds": 17,
+    "suffix_seeds": 2,
+    "infix_seeds": 6,
+    "total_seeds": 25,
+    "expected": 1.25,
+    "productivity_ratio": 20.03
+  },
+  "co": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 49.69,
+    "productivity_ratio": 0.04
+  },
+  "ko": {
+    "frequency": 18,
+    "length": 2,
+    "prefix_seeds": 9,
+    "suffix_seeds": 3,
+    "infix_seeds": 14,
+    "total_seeds": 26,
+    "expected": 32.59,
+    "productivity_ratio": 0.8
+  },
+  "ycho": {
+    "frequency": 9,
+    "length": 4,
+    "prefix_seeds": 5,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 8,
+    "expected": 0.13,
+    "productivity_ratio": 60.7
+  },
+  "oees": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 4,
+    "infix_seeds": 0,
+    "total_seeds": 6,
+    "expected": 0.3,
+    "productivity_ratio": 19.8
+  },
+  "odch": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.17,
+    "productivity_ratio": 18.14
+  },
+  "otche": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 106.62
+  },
+  "ytal": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 88.03
+  },
+  "od": {
+    "frequency": 89,
+    "length": 2,
+    "prefix_seeds": 21,
+    "suffix_seeds": 34,
+    "infix_seeds": 34,
+    "total_seeds": 89,
+    "expected": 32.88,
+    "productivity_ratio": 2.71
+  },
+  "dk": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 11.55,
+    "productivity_ratio": 0.26
+  },
+  "iir": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 3,
+    "expected": 0.09,
+    "productivity_ratio": 33.09
+  },
+  "epch": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 4,
+    "expected": 0.05,
+    "productivity_ratio": 76.24
+  },
+  "talo": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.04,
+    "productivity_ratio": 24.62
+  },
+  "rch": {
+    "frequency": 4,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 5,
+    "total_seeds": 10,
+    "expected": 0.85,
+    "productivity_ratio": 11.8
+  },
+  "sk": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 4,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 13.98,
+    "productivity_ratio": 0.36
+  },
+  "opche": {
+    "frequency": 8,
+    "length": 5,
+    "prefix_seeds": 4,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.0,
+    "productivity_ratio": 1073.89
+  },
+  "ese": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 7,
+    "expected": 2.87,
+    "productivity_ratio": 2.44
+  },
+  "hch": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 5,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 3.32,
+    "productivity_ratio": 1.81
+  },
+  "fsh": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.3,
+    "productivity_ratio": 13.31
+  },
+  "ckhee": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 114.15
+  },
+  "ypch": {
+    "frequency": 15,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 0.02,
+    "productivity_ratio": 317.33
+  },
+  "ckhol": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.0,
+    "productivity_ratio": 210.82
+  },
+  "ls": {
+    "frequency": 12,
+    "length": 2,
+    "prefix_seeds": 6,
+    "suffix_seeds": 15,
+    "infix_seeds": 10,
+    "total_seeds": 31,
+    "expected": 13.11,
+    "productivity_ratio": 2.36
+  },
+  "eoke": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.25,
+    "productivity_ratio": 12.11
+  },
+  "okeeo": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.02,
+    "productivity_ratio": 90.94
+  },
+  "eecth": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 137.39
+  },
+  "eos": {
+    "frequency": 33,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 23,
+    "infix_seeds": 0,
+    "total_seeds": 24,
+    "expected": 3.69,
+    "productivity_ratio": 6.5
+  },
+  "cth": {
+    "frequency": 51,
+    "length": 3,
+    "prefix_seeds": 8,
+    "suffix_seeds": 16,
+    "infix_seeds": 11,
+    "total_seeds": 35,
+    "expected": 1.29,
+    "productivity_ratio": 27.15
+  },
+  "ain": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.02,
+    "productivity_ratio": 156.79
+  },
+  "oee": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 1,
+    "infix_seeds": 6,
+    "total_seeds": 14,
+    "expected": 6.73,
+    "productivity_ratio": 2.08
+  },
+  "cphod": {
+    "frequency": 4,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.0,
+    "productivity_ratio": 950.07
+  },
+  "tsho": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.11,
+    "productivity_ratio": 36.93
+  },
+  "oikh": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.06,
+    "productivity_ratio": 31.6
+  },
+  "ty": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 4,
+    "suffix_seeds": 1,
+    "infix_seeds": 4,
+    "total_seeds": 9,
+    "expected": 7.66,
+    "productivity_ratio": 1.17
+  },
+  "fch": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 1,
+    "infix_seeds": 7,
+    "total_seeds": 11,
+    "expected": 0.38,
+    "productivity_ratio": 29.12
+  },
+  "eso": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 2,
+    "total_seeds": 4,
+    "expected": 3.69,
+    "productivity_ratio": 1.08
+  },
+  "otsh": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.11,
+    "productivity_ratio": 9.23
+  },
+  "lsh": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 5,
+    "total_seeds": 10,
+    "expected": 1.16,
+    "productivity_ratio": 8.64
+  },
+  "kal": {
+    "frequency": 14,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 2,
+    "total_seeds": 7,
+    "expected": 0.46,
+    "productivity_ratio": 15.12
+  },
+  "ocfh": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.04,
+    "productivity_ratio": 75.22
+  },
+  "ch": {
+    "frequency": 230,
+    "length": 2,
+    "prefix_seeds": 33,
+    "suffix_seeds": 61,
+    "infix_seeds": 148,
+    "total_seeds": 242,
+    "expected": 37.24,
+    "productivity_ratio": 6.5
+  },
+  "oek": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 3.02,
+    "productivity_ratio": 1.66
+  },
+  "ol": {
+    "frequency": 79,
+    "length": 2,
+    "prefix_seeds": 24,
+    "suffix_seeds": 27,
+    "infix_seeds": 53,
+    "total_seeds": 104,
+    "expected": 30.59,
+    "productivity_ratio": 3.4
+  },
+  "teo": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 1,
+    "infix_seeds": 8,
+    "total_seeds": 12,
+    "expected": 2.51,
+    "productivity_ratio": 4.78
+  },
+  "tsh": {
+    "frequency": 26,
+    "length": 3,
+    "prefix_seeds": 8,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 11,
+    "expected": 1.03,
+    "productivity_ratio": 10.73
+  },
+  "eockh": {
+    "frequency": 9,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 1,
+    "total_seeds": 4,
+    "expected": 0.01,
+    "productivity_ratio": 354.35
+  },
+  "eod": {
+    "frequency": 33,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 11,
+    "infix_seeds": 7,
+    "total_seeds": 19,
+    "expected": 3.05,
+    "productivity_ratio": 6.23
+  },
+  "daii": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 4,
+    "total_seeds": 5,
+    "expected": 0.01,
+    "productivity_ratio": 776.01
+  },
+  "ckhe": {
+    "frequency": 24,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.13,
+    "productivity_ratio": 39.31
+  },
+  "alch": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 4,
+    "total_seeds": 7,
+    "expected": 0.06,
+    "productivity_ratio": 125.02
+  },
+  "tsheo": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.01,
+    "productivity_ratio": 268.11
+  },
+  "keod": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.11,
+    "productivity_ratio": 17.85
+  },
+  "eto": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 2.51,
+    "productivity_ratio": 0.8
+  },
+  "yteeo": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.01,
+    "productivity_ratio": 587.01
+  },
+  "is": {
+    "frequency": 5,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 6,
+    "infix_seeds": 4,
+    "total_seeds": 10,
+    "expected": 8.32,
+    "productivity_ratio": 1.2
+  },
+  "oeeo": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.71,
+    "productivity_ratio": 1.4
+  },
+  "oral": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.03,
+    "productivity_ratio": 74.93
+  },
+  "oko": {
+    "frequency": 8,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 8,
+    "expected": 3.89,
+    "productivity_ratio": 2.06
+  },
+  "okee": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.25,
+    "productivity_ratio": 16.14
+  },
+  "ara": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 6,
+    "total_seeds": 9,
+    "expected": 0.28,
+    "productivity_ratio": 31.87
+  },
+  "fy": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 2.25,
+    "productivity_ratio": 0.89
+  },
+  "yshe": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 5,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 0.08,
+    "productivity_ratio": 73.75
+  },
+  "als": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 5,
+    "infix_seeds": 0,
+    "total_seeds": 7,
+    "expected": 0.57,
+    "productivity_ratio": 12.37
+  },
+  "oksh": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.13,
+    "productivity_ratio": 15.34
+  },
+  "yk": {
+    "frequency": 11,
+    "length": 2,
+    "prefix_seeds": 5,
+    "suffix_seeds": 6,
+    "infix_seeds": 9,
+    "total_seeds": 20,
+    "expected": 9.21,
+    "productivity_ratio": 2.17
+  },
+  "cha": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 5,
+    "infix_seeds": 6,
+    "total_seeds": 14,
+    "expected": 1.63,
+    "productivity_ratio": 8.61
+  },
+  "ochol": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 73.32
+  },
+  "toe": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 2.51,
+    "productivity_ratio": 0.4
+  },
+  "air": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 3,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.16,
+    "productivity_ratio": 25.0
+  },
+  "ii": {
+    "frequency": 27,
+    "length": 2,
+    "prefix_seeds": 15,
+    "suffix_seeds": 9,
+    "infix_seeds": 16,
+    "total_seeds": 40,
+    "expected": 4.05,
+    "productivity_ratio": 9.89
+  },
+  "koi": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.8,
+    "productivity_ratio": 2.49
+  },
+  "psh": {
+    "frequency": 4,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 9,
+    "expected": 0.51,
+    "productivity_ratio": 17.67
+  },
+  "d*": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 3.27,
+    "productivity_ratio": 0.61
+  },
+  "ockh": {
+    "frequency": 41,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 6,
+    "infix_seeds": 1,
+    "total_seeds": 9,
+    "expected": 0.16,
+    "productivity_ratio": 54.91
+  },
+  "ke": {
+    "frequency": 105,
+    "length": 2,
+    "prefix_seeds": 14,
+    "suffix_seeds": 14,
+    "infix_seeds": 33,
+    "total_seeds": 61,
+    "expected": 25.38,
+    "productivity_ratio": 2.4
+  },
+  "opy": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.45,
+    "productivity_ratio": 4.45
+  },
+  "che": {
+    "frequency": 31,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 19,
+    "infix_seeds": 36,
+    "total_seeds": 61,
+    "expected": 3.46,
+    "productivity_ratio": 17.63
+  },
+  "oi": {
+    "frequency": 5,
+    "length": 2,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 11,
+    "total_seeds": 16,
+    "expected": 19.46,
+    "productivity_ratio": 0.82
+  },
+  "heo": {
+    "frequency": 7,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 18,
+    "infix_seeds": 29,
+    "total_seeds": 52,
+    "expected": 6.46,
+    "productivity_ratio": 8.05
+  },
+  "olo": {
+    "frequency": 11,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 5,
+    "infix_seeds": 4,
+    "total_seeds": 12,
+    "expected": 3.65,
+    "productivity_ratio": 3.29
+  },
+  "eai": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.65,
+    "productivity_ratio": 3.06
+  },
+  "chok": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 2,
+    "total_seeds": 6,
+    "expected": 0.16,
+    "productivity_ratio": 36.61
+  },
+  "octho": {
+    "frequency": 4,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 82.74
+  },
+  "ckh": {
+    "frequency": 165,
+    "length": 3,
+    "prefix_seeds": 11,
+    "suffix_seeds": 9,
+    "infix_seeds": 9,
+    "total_seeds": 29,
+    "expected": 1.55,
+    "productivity_ratio": 18.69
+  },
+  "dcth": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.05,
+    "productivity_ratio": 20.93
+  },
+  "ckhh": {
+    "frequency": 6,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.12,
+    "productivity_ratio": 8.19
+  },
+  "ocho": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 0,
+    "infix_seeds": 2,
+    "total_seeds": 6,
+    "expected": 0.47,
+    "productivity_ratio": 12.73
+  },
+  "he": {
+    "frequency": 26,
+    "length": 2,
+    "prefix_seeds": 10,
+    "suffix_seeds": 32,
+    "infix_seeds": 90,
+    "total_seeds": 132,
+    "expected": 53.65,
+    "productivity_ratio": 2.46
+  },
+  "sh": {
+    "frequency": 38,
+    "length": 2,
+    "prefix_seeds": 14,
+    "suffix_seeds": 34,
+    "infix_seeds": 62,
+    "total_seeds": 110,
+    "expected": 29.73,
+    "productivity_ratio": 3.7
+  },
+  "otcho": {
+    "frequency": 3,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.01,
+    "productivity_ratio": 165.49
+  },
+  "ee": {
+    "frequency": 101,
+    "length": 2,
+    "prefix_seeds": 28,
+    "suffix_seeds": 26,
+    "infix_seeds": 73,
+    "total_seeds": 127,
+    "expected": 55.82,
+    "productivity_ratio": 2.28
+  },
+  "cph": {
+    "frequency": 54,
+    "length": 3,
+    "prefix_seeds": 19,
+    "suffix_seeds": 4,
+    "infix_seeds": 4,
+    "total_seeds": 27,
+    "expected": 0.64,
+    "productivity_ratio": 42.17
+  },
+  "aikh": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.02,
+    "productivity_ratio": 43.38
+  },
+  "or": {
+    "frequency": 41,
+    "length": 2,
+    "prefix_seeds": 16,
+    "suffix_seeds": 23,
+    "infix_seeds": 9,
+    "total_seeds": 48,
+    "expected": 17.92,
+    "productivity_ratio": 2.68
+  },
+  "keeo": {
+    "frequency": 14,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 3,
+    "total_seeds": 6,
+    "expected": 0.25,
+    "productivity_ratio": 24.21
+  },
+  "aro": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 7,
+    "infix_seeds": 3,
+    "total_seeds": 11,
+    "expected": 0.78,
+    "productivity_ratio": 14.19
+  },
+  "ytch": {
+    "frequency": 45,
+    "length": 4,
+    "prefix_seeds": 11,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 12,
+    "expected": 0.04,
+    "productivity_ratio": 315.07
+  },
+  "te": {
+    "frequency": 18,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 2,
+    "infix_seeds": 19,
+    "total_seeds": 29,
+    "expected": 21.13,
+    "productivity_ratio": 1.37
+  },
+  "eoc": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 8,
+    "total_seeds": 10,
+    "expected": 4.64,
+    "productivity_ratio": 2.16
+  },
+  "dsh": {
+    "frequency": 26,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 7,
+    "infix_seeds": 2,
+    "total_seeds": 15,
+    "expected": 1.25,
+    "productivity_ratio": 12.05
+  },
+  "aii": {
+    "frequency": 15,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 6,
+    "infix_seeds": 10,
+    "total_seeds": 21,
+    "expected": 0.17,
+    "productivity_ratio": 120.74
+  },
+  "okch": {
+    "frequency": 33,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 5,
+    "infix_seeds": 2,
+    "total_seeds": 9,
+    "expected": 0.16,
+    "productivity_ratio": 54.91
+  },
+  "ald": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 3,
+    "infix_seeds": 3,
+    "total_seeds": 7,
+    "expected": 0.47,
+    "productivity_ratio": 14.99
+  },
+  "kai": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 3,
+    "expected": 0.29,
+    "productivity_ratio": 10.24
+  },
+  "cfho": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.04,
+    "productivity_ratio": 75.22
+  },
+  "yo": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 9,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 12,
+    "expected": 26.28,
+    "productivity_ratio": 0.46
+  },
+  "kshe": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.1,
+    "productivity_ratio": 29.65
+  },
+  "ckho": {
+    "frequency": 16,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 2,
+    "infix_seeds": 3,
+    "total_seeds": 9,
+    "expected": 0.16,
+    "productivity_ratio": 54.91
+  },
+  "kech": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.13,
+    "productivity_ratio": 15.72
+  },
+  "ols": {
+    "frequency": 11,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 8,
+    "infix_seeds": 4,
+    "total_seeds": 15,
+    "expected": 1.55,
+    "productivity_ratio": 9.66
+  },
+  "olk": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 3,
+    "total_seeds": 8,
+    "expected": 1.27,
+    "productivity_ratio": 6.3
+  },
+  "lor": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.69,
+    "productivity_ratio": 1.44
+  },
+  "hol": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 7,
+    "infix_seeds": 13,
+    "total_seeds": 23,
+    "expected": 2.72,
+    "productivity_ratio": 8.46
+  },
+  "osch": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 4,
+    "expected": 0.2,
+    "productivity_ratio": 19.96
+  },
+  "eot": {
+    "frequency": 6,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 5,
+    "infix_seeds": 0,
+    "total_seeds": 6,
+    "expected": 2.51,
+    "productivity_ratio": 2.39
+  },
+  "ksh": {
+    "frequency": 22,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 5,
+    "infix_seeds": 3,
+    "total_seeds": 12,
+    "expected": 1.23,
+    "productivity_ratio": 9.72
+  },
+  "oka": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 2,
+    "total_seeds": 5,
+    "expected": 1.42,
+    "productivity_ratio": 3.52
+  },
+  "kod": {
+    "frequency": 8,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 1.37,
+    "productivity_ratio": 1.46
+  },
+  "rol": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 3,
+    "expected": 0.69,
+    "productivity_ratio": 4.32
+  },
+  "ral": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 4,
+    "total_seeds": 9,
+    "expected": 0.25,
+    "productivity_ratio": 35.6
+  },
+  "eek": {
+    "frequency": 10,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 2.35,
+    "productivity_ratio": 1.71
+  },
+  "heod": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 4,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 0.24,
+    "productivity_ratio": 25.0
+  },
+  "dch": {
+    "frequency": 4,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 4,
+    "total_seeds": 7,
+    "expected": 1.57,
+    "productivity_ratio": 4.47
+  },
+  "lo": {
+    "frequency": 10,
+    "length": 2,
+    "prefix_seeds": 10,
+    "suffix_seeds": 8,
+    "infix_seeds": 18,
+    "total_seeds": 36,
+    "expected": 30.59,
+    "productivity_ratio": 1.18
+  },
+  "da": {
+    "frequency": 10,
+    "length": 2,
+    "prefix_seeds": 3,
+    "suffix_seeds": 16,
+    "infix_seeds": 34,
+    "total_seeds": 53,
+    "expected": 12.09,
+    "productivity_ratio": 4.38
+  },
+  "otch": {
+    "frequency": 20,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 0.14,
+    "productivity_ratio": 36.72
+  },
+  "pch": {
+    "frequency": 16,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 5,
+    "infix_seeds": 18,
+    "total_seeds": 27,
+    "expected": 0.64,
+    "productivity_ratio": 42.17
+  },
+  "arch": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 2,
+    "total_seeds": 3,
+    "expected": 0.03,
+    "productivity_ratio": 92.02
+  },
+  "cpheo": {
+    "frequency": 4,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 4,
+    "expected": 0.0,
+    "productivity_ratio": 859.11
+  },
+  "tche": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 1,
+    "infix_seeds": 5,
+    "total_seeds": 9,
+    "expected": 0.11,
+    "productivity_ratio": 85.16
+  },
+  "eea": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 4,
+    "infix_seeds": 1,
+    "total_seeds": 6,
+    "expected": 2.46,
+    "productivity_ratio": 2.44
+  },
+  "olke": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.1,
+    "productivity_ratio": 28.81
+  },
+  "opch": {
+    "frequency": 33,
+    "length": 4,
+    "prefix_seeds": 11,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 12,
+    "expected": 0.07,
+    "productivity_ratio": 177.5
+  },
+  "ss": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 3,
+    "expected": 17.06,
+    "productivity_ratio": 0.18
+  },
+  "okche": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.01,
+    "productivity_ratio": 177.18
+  },
+  "kcheo": {
+    "frequency": 5,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 88.59
+  },
+  "iro": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.44,
+    "productivity_ratio": 2.28
+  },
+  "cfhe": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.03,
+    "productivity_ratio": 64.62
+  },
+  "ycheo": {
+    "frequency": 5,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 110.16
+  },
+  "ep": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 4,
+    "total_seeds": 9,
+    "expected": 10.54,
+    "productivity_ratio": 0.85
+  },
+  "sheo": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 4,
+    "infix_seeds": 13,
+    "total_seeds": 19,
+    "expected": 0.29,
+    "productivity_ratio": 65.32
+  },
+  "tol": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 4,
+    "total_seeds": 9,
+    "expected": 1.06,
+    "productivity_ratio": 8.53
+  },
+  "ala": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 4,
+    "infix_seeds": 2,
+    "total_seeds": 6,
+    "expected": 0.48,
+    "productivity_ratio": 12.37
+  },
+  "ytcho": {
+    "frequency": 10,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.0,
+    "productivity_ratio": 591.73
+  },
+  "os": {
+    "frequency": 74,
+    "length": 2,
+    "prefix_seeds": 15,
+    "suffix_seeds": 39,
+    "infix_seeds": 8,
+    "total_seeds": 62,
+    "expected": 39.71,
+    "productivity_ratio": 1.56
+  },
+  "lda": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 5,
+    "infix_seeds": 3,
+    "total_seeds": 12,
+    "expected": 0.47,
+    "productivity_ratio": 25.69
+  },
+  "odal": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 3,
+    "suffix_seeds": 3,
+    "infix_seeds": 1,
+    "total_seeds": 7,
+    "expected": 0.05,
+    "productivity_ratio": 141.92
+  },
+  "iin": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 3,
+    "infix_seeds": 5,
+    "total_seeds": 9,
+    "expected": 0.01,
+    "productivity_ratio": 830.19
+  },
+  "keee": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 1,
+    "expected": 0.19,
+    "productivity_ratio": 5.2
+  },
+  "osh": {
+    "frequency": 10,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 4,
+    "infix_seeds": 2,
+    "total_seeds": 10,
+    "expected": 3.54,
+    "productivity_ratio": 2.82
+  },
+  "dyt": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.32,
+    "productivity_ratio": 6.29
+  },
+  "eol": {
+    "frequency": 15,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 8,
+    "infix_seeds": 7,
+    "total_seeds": 20,
+    "expected": 2.83,
+    "productivity_ratio": 7.06
+  },
+  "cphe": {
+    "frequency": 7,
+    "length": 4,
+    "prefix_seeds": 7,
+    "suffix_seeds": 0,
+    "infix_seeds": 2,
+    "total_seeds": 9,
+    "expected": 0.05,
+    "productivity_ratio": 171.54
+  },
+  "psho": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.05,
+    "productivity_ratio": 37.19
+  },
+  "ete": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 1.95,
+    "productivity_ratio": 0.51
+  },
+  "oro": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 6,
+    "suffix_seeds": 2,
+    "infix_seeds": 2,
+    "total_seeds": 10,
+    "expected": 2.13,
+    "productivity_ratio": 4.7
+  },
+  "eok": {
+    "frequency": 13,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 5,
+    "infix_seeds": 1,
+    "total_seeds": 11,
+    "expected": 3.02,
+    "productivity_ratio": 3.64
+  },
+  "eoda": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.12,
+    "productivity_ratio": 25.56
+  },
+  "***": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 4,
+    "infix_seeds": 1,
+    "total_seeds": 12,
+    "expected": 0.01,
+    "productivity_ratio": 1136.13
+  },
+  "et": {
+    "frequency": 16,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 5,
+    "infix_seeds": 3,
+    "total_seeds": 16,
+    "expected": 21.13,
+    "productivity_ratio": 0.76
+  },
+  "ckhs": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.07,
+    "productivity_ratio": 14.35
+  },
+  "oeees": {
+    "frequency": 6,
+    "length": 5,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.02,
+    "productivity_ratio": 143.77
+  },
+  "kch": {
+    "frequency": 87,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 12,
+    "infix_seeds": 9,
+    "total_seeds": 28,
+    "expected": 1.55,
+    "productivity_ratio": 18.05
+  },
+  "ey***": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.0,
+    "productivity_ratio": 46564.24
+  },
+  "ckheo": {
+    "frequency": 9,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.01,
+    "productivity_ratio": 88.59
+  },
+  "odo": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 2,
+    "suffix_seeds": 4,
+    "infix_seeds": 2,
+    "total_seeds": 8,
+    "expected": 3.93,
+    "productivity_ratio": 2.04
+  },
+  "eols": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.13,
+    "productivity_ratio": 7.85
+  },
+  "ysho": {
+    "frequency": 4,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.1,
+    "productivity_ratio": 9.54
+  },
+  "octh": {
+    "frequency": 38,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 8,
+    "infix_seeds": 1,
+    "total_seeds": 13,
+    "expected": 0.14,
+    "productivity_ratio": 95.46
+  },
+  "tch": {
+    "frequency": 103,
+    "length": 3,
+    "prefix_seeds": 10,
+    "suffix_seeds": 6,
+    "infix_seeds": 16,
+    "total_seeds": 32,
+    "expected": 1.29,
+    "productivity_ratio": 24.82
+  },
+  "ckhos": {
+    "frequency": 4,
+    "length": 5,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.01,
+    "productivity_ratio": 323.39
+  },
+  "ro": {
+    "frequency": 13,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 9,
+    "infix_seeds": 14,
+    "total_seeds": 31,
+    "expected": 17.92,
+    "productivity_ratio": 1.73
+  },
+  "oe": {
+    "frequency": 7,
+    "length": 2,
+    "prefix_seeds": 17,
+    "suffix_seeds": 2,
+    "infix_seeds": 17,
+    "total_seeds": 36,
+    "expected": 71.4,
+    "productivity_ratio": 0.5
+  },
+  "chee": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 4,
+    "infix_seeds": 7,
+    "total_seeds": 13,
+    "expected": 0.28,
+    "productivity_ratio": 45.81
+  },
+  "eckh": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 2,
+    "infix_seeds": 2,
+    "total_seeds": 4,
+    "expected": 0.13,
+    "productivity_ratio": 31.45
+  },
+  "hod": {
+    "frequency": 9,
+    "length": 3,
+    "prefix_seeds": 5,
+    "suffix_seeds": 8,
+    "infix_seeds": 13,
+    "total_seeds": 26,
+    "expected": 2.93,
+    "productivity_ratio": 8.88
+  },
+  "ecth": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.11,
+    "productivity_ratio": 18.92
+  },
+  "alo": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 2,
+    "infix_seeds": 5,
+    "total_seeds": 10,
+    "expected": 1.33,
+    "productivity_ratio": 7.51
+  },
+  "ckha": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.06,
+    "productivity_ratio": 33.5
+  },
+  "pd": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 4.78,
+    "productivity_ratio": 0.63
+  },
+  "ockho": {
+    "frequency": 2,
+    "length": 5,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.01,
+    "productivity_ratio": 137.5
+  },
+  "ytol": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.03,
+    "productivity_ratio": 96.21
+  },
+  "eys": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 1.03,
+    "productivity_ratio": 0.97
+  },
+  "ykch": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 4,
+    "infix_seeds": 0,
+    "total_seeds": 4,
+    "expected": 0.05,
+    "productivity_ratio": 87.26
+  },
+  "dshe": {
+    "frequency": 9,
+    "length": 4,
+    "prefix_seeds": 4,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.1,
+    "productivity_ratio": 48.99
+  },
+  "eeod": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 5,
+    "infix_seeds": 0,
+    "total_seeds": 6,
+    "expected": 0.25,
+    "productivity_ratio": 24.0
+  },
+  "olal": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 2,
+    "expected": 0.05,
+    "productivity_ratio": 43.63
+  },
+  "yt": {
+    "frequency": 72,
+    "length": 2,
+    "prefix_seeds": 41,
+    "suffix_seeds": 6,
+    "infix_seeds": 6,
+    "total_seeds": 53,
+    "expected": 7.66,
+    "productivity_ratio": 6.92
+  },
+  "hos": {
+    "frequency": 3,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 9,
+    "infix_seeds": 3,
+    "total_seeds": 13,
+    "expected": 3.54,
+    "productivity_ratio": 3.67
+  },
+  "foch": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.04,
+    "productivity_ratio": 25.07
+  },
+  "ys": {
+    "frequency": 4,
+    "length": 2,
+    "prefix_seeds": 7,
+    "suffix_seeds": 6,
+    "infix_seeds": 6,
+    "total_seeds": 19,
+    "expected": 11.25,
+    "productivity_ratio": 1.69
+  },
+  "shes": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 1,
+    "expected": 0.12,
+    "productivity_ratio": 8.09
+  },
+  "och": {
+    "frequency": 29,
+    "length": 3,
+    "prefix_seeds": 10,
+    "suffix_seeds": 8,
+    "infix_seeds": 2,
+    "total_seeds": 20,
+    "expected": 4.46,
+    "productivity_ratio": 4.49
+  },
+  "ha": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 3,
+    "suffix_seeds": 8,
+    "infix_seeds": 17,
+    "total_seeds": 28,
+    "expected": 25.52,
+    "productivity_ratio": 1.1
+  },
+  "okeo": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 3,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 0.32,
+    "productivity_ratio": 15.66
+  },
+  "she": {
+    "frequency": 5,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 9,
+    "infix_seeds": 24,
+    "total_seeds": 37,
+    "expected": 2.75,
+    "productivity_ratio": 13.44
+  },
+  "mo": {
+    "frequency": 3,
+    "length": 2,
+    "prefix_seeds": 0,
+    "suffix_seeds": 3,
+    "infix_seeds": 1,
+    "total_seeds": 4,
+    "expected": 1.67,
+    "productivity_ratio": 2.4
+  },
+  "teeo": {
+    "frequency": 3,
+    "length": 4,
+    "prefix_seeds": 0,
+    "suffix_seeds": 0,
+    "infix_seeds": 3,
+    "total_seeds": 3,
+    "expected": 0.21,
+    "productivity_ratio": 14.57
+  },
+  "qk": {
+    "frequency": 2,
+    "length": 2,
+    "prefix_seeds": 9,
+    "suffix_seeds": 0,
+    "infix_seeds": 0,
+    "total_seeds": 9,
+    "expected": 1.23,
+    "productivity_ratio": 7.33
+  },
+  "kcho": {
+    "frequency": 11,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 2,
+    "infix_seeds": 1,
+    "total_seeds": 5,
+    "expected": 0.16,
+    "productivity_ratio": 30.51
+  },
+  "ees": {
+    "frequency": 21,
+    "length": 3,
+    "prefix_seeds": 3,
+    "suffix_seeds": 25,
+    "infix_seeds": 8,
+    "total_seeds": 36,
+    "expected": 2.87,
+    "productivity_ratio": 12.56
+  },
+  "yche": {
+    "frequency": 19,
+    "length": 4,
+    "prefix_seeds": 5,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 7,
+    "expected": 0.1,
+    "productivity_ratio": 68.43
+  },
+  "ck": {
+    "frequency": 7,
+    "length": 2,
+    "prefix_seeds": 17,
+    "suffix_seeds": 3,
+    "infix_seeds": 20,
+    "total_seeds": 40,
+    "expected": 17.54,
+    "productivity_ratio": 2.28
+  },
+  "fol": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 4,
+    "suffix_seeds": 1,
+    "infix_seeds": 0,
+    "total_seeds": 5,
+    "expected": 0.31,
+    "productivity_ratio": 16.17
+  },
+  "dyk": {
+    "frequency": 4,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.38,
+    "productivity_ratio": 5.23
+  },
+  "hold": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 0,
+    "infix_seeds": 1,
+    "total_seeds": 2,
+    "expected": 0.1,
+    "productivity_ratio": 19.83
+  },
+  "iis": {
+    "frequency": 2,
+    "length": 3,
+    "prefix_seeds": 1,
+    "suffix_seeds": 2,
+    "infix_seeds": 0,
+    "total_seeds": 3,
+    "expected": 0.2,
+    "productivity_ratio": 14.78
+  },
+  "kche": {
+    "frequency": 5,
+    "length": 4,
+    "prefix_seeds": 2,
+    "suffix_seeds": 3,
+    "infix_seeds": 2,
+    "total_seeds": 7,
+    "expected": 0.13,
+    "productivity_ratio": 55.03
+  },
+  "to": {
+    "frequency": 18,
+    "length": 2,
+    "prefix_seeds": 8,
+    "suffix_seeds": 3,
+    "infix_seeds": 17,
+    "total_seeds": 28,
+    "expected": 27.15,
+    "productivity_ratio": 1.03
+  },
+  "cfh": {
+    "frequency": 19,
+    "length": 3,
+    "prefix_seeds": 7,
+    "suffix_seeds": 4,
+    "infix_seeds": 2,
+    "total_seeds": 13,
+    "expected": 0.38,
+    "productivity_ratio": 34.42
+  },
+  "chot": {
+    "frequency": 2,
+    "length": 4,
+    "prefix_seeds": 1,
+    "suffix_seeds": 1,
+    "infix_seeds": 2,
+    "total_seeds": 4,
+    "expected": 0.14,
+    "productivity_ratio": 29.37
+  }
+}

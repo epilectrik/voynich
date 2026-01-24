@@ -1,0 +1,79 @@
+{
+  "test": "Test 5: 49-Class Role Mapping",
+  "hypothesis": "H1: AUXILIARY role can encode material preparation",
+  "role_analysis": {
+    "ENERGY_OPERATOR": {
+      "count": 11,
+      "prep_capable": true,
+      "prep_mapping": "Drying heat, digestion heat, maceration warmth",
+      "distill_mapping": "Fire control, balneum mariae, redistillation heat"
+    },
+    "AUXILIARY": {
+      "count": 8,
+      "prep_capable": true,
+      "prep_mapping": "Material cleaning, grinding, preparation, loading",
+      "distill_mapping": "Apparatus setup, vessel management"
+    },
+    "FREQUENT_OPERATOR": {
+      "count": 4,
+      "prep_capable": true,
+      "prep_mapping": "Repeated prep actions",
+      "distill_mapping": "Standard distillation steps"
+    },
+    "HIGH_IMPACT": {
+      "count": 3,
+      "prep_capable": true,
+      "prep_mapping": "State changes (drying, fermentation)",
+      "distill_mapping": "Phase transitions, temperature jumps"
+    },
+    "FLOW_OPERATOR": {
+      "count": 2,
+      "prep_capable": true,
+      "prep_mapping": "Material collection, pouring, transfer",
+      "distill_mapping": "Distillate collection, fraction separation"
+    },
+    "CORE_CONTROL": {
+      "count": 2,
+      "prep_capable": true,
+      "prep_mapping": "Process start/end markers",
+      "distill_mapping": "Process start/end markers"
+    },
+    "LINK": {
+      "count": 1,
+      "prep_capable": true,
+      "prep_mapping": "Checking material state during prep",
+      "distill_mapping": "Monitoring temperature, phase during distillation"
+    }
+  },
+  "instruction_counts": {
+    "AUX": 193,
+    "e_ESCAPE": 193,
+    "k_ENERGY": 12,
+    "FLOW": 10,
+    "h_HAZARD": 6,
+    "LINK": 4
+  },
+  "domain_split": {
+    "prep_instructions": 213,
+    "distill_instructions": 205,
+    "total": 418,
+    "prep_percentage": 0.5095693779904307
+  },
+  "aux_analysis": {
+    "count": 193,
+    "percentage": 46.17224880382775,
+    "is_prep": true,
+    "keywords": [
+      "hack",
+      "schneid",
+      "sto\u00df",
+      "wasch",
+      "schel",
+      "zerklein",
+      "zerstampf",
+      "bereit"
+    ]
+  },
+  "verdict": "H1 SUPPORTED",
+  "explanation": "AUXILIARY role (via AUX) encodes material preparation (46.2% of instructions)"
+}

@@ -1,0 +1,104 @@
+{
+  "num_classes": 49,
+  "total_class_bigrams": 13645,
+  "suppressed_class_pairs": 14,
+  "forbidden_candidates": [
+    {
+      "from": 9,
+      "to": 33,
+      "ratio": 0.11931213808623835
+    },
+    {
+      "from": 24,
+      "to": 30,
+      "ratio": 0.1249896080600877
+    },
+    {
+      "from": 9,
+      "to": 32,
+      "ratio": 0.1573828653121059
+    },
+    {
+      "from": 7,
+      "to": 32,
+      "ratio": 0.17134424852527663
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "ratio": 0.19037623003523363
+    },
+    {
+      "from": 10,
+      "to": 28,
+      "ratio": 0.19249227597892882
+    },
+    {
+      "from": 11,
+      "to": 33,
+      "ratio": 0.22955542007090987
+    },
+    {
+      "from": 30,
+      "to": 32,
+      "ratio": 0.23743104680705632
+    },
+    {
+      "from": 7,
+      "to": 33,
+      "ratio": 0.24742148451063253
+    },
+    {
+      "from": 24,
+      "to": 32,
+      "ratio": 0.25686840711561326
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "ratio": 0.2864468392543584
+    },
+    {
+      "from": 30,
+      "to": 33,
+      "ratio": 0.2879948160702305
+    },
+    {
+      "from": 10,
+      "to": 29,
+      "ratio": 0.29632431647002594
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "ratio": 0.29802620121228807
+    }
+  ],
+  "char_suppressed": [
+    {
+      "pair": "h\u2192k",
+      "ratio": 0.22118558793287849
+    },
+    {
+      "pair": "e\u2192k",
+      "ratio": 0.2656467075986772
+    },
+    {
+      "pair": "e\u2192h",
+      "ratio": 0.0
+    }
+  ],
+  "char_elevated": [
+    {
+      "pair": "k\u2192e",
+      "ratio": 4.323778118801234
+    },
+    {
+      "pair": "h\u2192e",
+      "ratio": 6.995851338986003
+    }
+  ],
+  "hk_char_ratio": 0.22118558793287849,
+  "verdict": "PASS (H1)",
+  "reason": "Character-level kernel transitions show REAL suppression (not compression artifact)"
+}

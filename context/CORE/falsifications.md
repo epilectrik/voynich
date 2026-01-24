@@ -43,6 +43,8 @@ These hypotheses have been **explicitly tested and rejected**. Each has document
 
 | Claim | Evidence | Phase |
 |-------|----------|-------|
+| Fire degree predicts PP signature | Material class conflation, p>0.05 | PP_MULTICLASS_TEST |
+| Bayesian posteriors valid for PP prediction | 0.9x enrichment in Bayesian-only records | PP_DILUTION_TEST |
 | Text encodes language | 0.19% reference rate | X.5 |
 | Tokens have translatable meanings | 0 identifier tokens | 19 |
 | Illustrations are instructional | Swap invariance p=1.0 | ILL |
@@ -101,6 +103,44 @@ The following purpose classes were eliminated by structural incompatibility:
 - Dyeing/mordanting
 
 **Only surviving purpose class:** Continuous closed-loop process control
+
+---
+
+## PP Analysis Falsifications (2026-01-23)
+
+### Fire Degree as PP Axis (FALSIFIED)
+**Hypothesis:** Fire degree (thermal tolerance from Brunschwig: 1=gentle, 2=standard, 3=moderate) predicts PP signature.
+**Test:** Compared PP profiles across fire degree groups using material_class_priors.json mapping.
+**Result:** Fire 1 conflates animals + flowers + fungi (all "gentle" thermal tolerance). The conflation dilutes PP signal. Only 1 PP ('ke') showed >2x enrichment, p=0.06 (not significant).
+**Conclusion:** Thermal tolerance ≠ handling complexity. Material class (animal vs herb) is the relevant PP axis, not fire degree.
+**Status:** Do not retry fire degree → PP mapping.
+
+### Bayesian Class Posteriors for PP Prediction (FALSIFIED)
+**Hypothesis:** Bayesian class posteriors (from material_class_priors.json) can identify material-class records for PP analysis.
+**Test:** Compared PP enrichment in C505's 13 procedurally-identified animal records vs 40 Bayesian-identified "animal" records.
+**Result:**
+- C505 records: 15.8x, 8.7x, 5.1x enrichment for 'te', 'ho', 'ke'
+- Bayesian records: 5.1x, 3.8x, 2.5x (diluted)
+- Bayesian-only records (extra 27): 0.0x, 1.4x, 1.2x (baseline noise)
+**Conclusion:** Bayesian posteriors identify taxonomically similar records, not procedurally equivalent records. The extra 27 records are false positives with baseline PP rates.
+**Status:** Do not use Bayesian class posteriors for PP discrimination. Use procedural trace methodology (B→A via product-type-exclusive MIDDLEs).
+
+### PP Composition Predicts B Class Survival (FALSIFIED)
+**Hypothesis:** PP MIDDLE composition (which specific PPs are present) predicts B class survival count or composition.
+**Test:** Compared 16 animal records (identified via RI MIDDLEs) to 1,563 baseline records.
+**Results:**
+- Survival count: Animal 30.7±10.4 vs Baseline 32.3±8.3 classes (t-test p=0.448, NS)
+- Class composition: Cosine similarity = 0.995, JS divergence = 0.0019
+- Per-class Fisher's exact: 0 of 49 classes significant at p<0.05
+**Conclusion:** PP composition does NOT predict B-side behavior. PP is a capacity variable (count matters, r=0.72), not a routing variable (composition irrelevant). Material-class PP profile differences (C505) are A-side organizational markers that do not propagate to B execution.
+**Status:** Do not test PP composition → B execution. PP functional role is now fully characterized.
+
+### PP Profiles Select B-Side Tactics (FALSIFIED)
+**Hypothesis:** Different PP profiles cause different operational strategies or grammar biases in B.
+**Test:** Class composition analysis across PP profile groups.
+**Result:** Cosine similarity = 0.995 between animal and baseline class profiles.
+**Conclusion:** PP does not select tactics. It only widens the arena (capacity). This null result protects the semantic ceiling (C171, C469) — if PP encoded material-specific execution, it would violate the pure operational constraint.
+**Status:** PP composition → B tactics pathway is closed.
 
 ---
 

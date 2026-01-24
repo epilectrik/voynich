@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 509 constraints | 2026-01-22
+CONSTRAINT_REFERENCE v2.6 | 562 constraints | 2026-01-23
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -213,6 +213,7 @@ C265	1,123 unique marker tokens across 8 classes; 85 core tokens (freq>=10); `da
 C266	Block vs Non-Block Entry Types	2	A	in: currier_a
 C267	Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)	2	A→B	-> C267_compositional_morphology.md
 C267	Tokens are COMPOSITIONAL	2	A	in: currier_a
+C267.a	**MIDDLE Sub-Component Structure** (218 sub-components reconstruct 97.8% of MIDDLEs; morphology extends to sub-MIDDLE level)	2	GLOBAL	in: currier_a
 C268	897 observed combinations	2	A→B	in: morphology
 C268	897 Combinations	2	A	in: currier_a
 C269	7 Universal Suffixes	2	A	in: currier_a
@@ -505,6 +506,9 @@ C497	f49v Instructional Apparatus Folio	2	A	in: currier_a
 C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
 C498	Registry-Internal Vocabulary Track	2	A	in: currier_a
 C498.a	**A∩B Shared Vocabulary Bifurcation** (154 AZC-Mediated + 114 B-Native Overlap; pipeline scope narrowed)	2	A	in: currier_a
+C498.b	**RI Singleton Population** (~977 singletons, mean 4.82 chars; functional interpretation WEAKENED - see C498.d)	2	A	in: currier_a
+C498.c	**RI Repeater Population** (~313 repeaters, mean 3.61 chars; functional interpretation WEAKENED - see C498.d)	2	A	in: currier_a
+C498.d	**RI Length-Frequency Correlation** (rho=-0.367, p<10⁻⁴²; singleton rate: 2-char=48%, 6-char=96%; complexity gradient, not functional bifurcation)	2	A	in: currier_a
 C499	Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig)	3	A	in: currier_a
 C499	Bounded Material-Class Recoverability	2	A	in: currier_a
 C500	Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×)	3	A	in: currier_a
@@ -513,3 +517,52 @@ C501	**B-Exclusive MIDDLE Stratification** (569 B-exclusive types: L-compounds 4
 C501	B-Exclusive MIDDLE Stratification	2	A	in: currier_a
 C502	**A-Record Viability Filtering** (Strict interpretation: ~96/480 B tokens legal per A; 13.3% mean B folio coverage; 80% filtered)	2	A+B	in: currier_a
 C502	A-Record Viability Filtering	2	A	in: currier_a
+C503	**Class-Level Filtering** (1,203 unique patterns, 6 always-survive classes, 32.3 mean; infrastructure classes vulnerable)	2	A+B	in: currier_a
+C503	Class-Level Filtering Under Strict Model	2	A	in: currier_a
+C504	**MIDDLE Function Bifurcation** (PP 86 types r=0.772 with survival; RI 1,293 types r=-0.046; 75% records have both)	2	A+B	in: currier_a
+C504	MIDDLE Function Bifurcation in A Records	2	A	in: currier_a
+C505	**PP Profile Differentiation by Material Class** ('te' 16.1×, 'ho' 8.6×, 'ke' 5.1× in animal records; A-registry organization only)	2	A	in: currier_a
+C505	PP Profile Differentiation by Material Class (A-Registry Organization)	2	A	in: currier_a
+C506	**PP Composition Non-Propagation** (PP count r=0.715; composition cosine=0.995 with baseline; capacity not routing)	2	A+B	in: currier_a
+C506	PP Composition Non-Propagation	2	A	in: currier_a
+C506.a	**Intra-Class Token Configuration** (Same classes, different PP: Jaccard=0.953; ~5% token variation; classes=types, tokens=parameterizations)	2	A+B	in: currier_a
+C506.b	**Intra-Class Behavioral Heterogeneity** (Different-MIDDLE tokens: same position p=0.11, different transitions p<0.0001; 73% MIDDLE pairs have JS>0.4)	2	B	in: currier_a
+C507	**PP-HT Partial Responsibility Substitution** (rho=-0.294, p=0.0015; PP 0-3 = 18.8% HT vs PP 6+ = 12.6% HT; HT TTR r=+0.40)	2	A+HT	in: currier_a, human_track
+C507	Partial Responsibility Substitution between PP and HT	2	A	in: currier_a
+C508	**Token-Level Discrimination Primacy** (Class Jaccard=0.391, Token Jaccard=0.700; 27.5% within-class mutual exclusion; fine discrimination at member level, not class level)	2	A→B	in: currier_a
+C508	Token-Level Discrimination Primacy	2	A	in: currier_a
+C509	**PP/RI Dimensional Separability** (72 PP sets shared by records with different RI; 229 records (14.5%) share PP; 26 pure-RI, 399 pure-PP; dimensions orthogonal)	2	A	in: currier_a
+C509	PP/RI Dimensional Separability	2	A	in: currier_a
+C509.a	**RI Morphological Divergence** (RI: 58.5% PREFIX, 3.96-char MIDDLE; PP: 85.4% PREFIX, 1.46-char MIDDLE; RI is MIDDLE-centric, PP is template-balanced)	2	A	in: currier_a
+C510	**Positional Sub-Component Grammar** (41.2% constrained: 62 START, 14 END, 110 FREE; z=34.16, p<0.0001; grammar is permissive)	2	A	in: currier_a
+C510	Positional Sub-Component Grammar	2	A	in: currier_a
+C511	**Derivational Productivity** (Repeater MIDDLEs seed singletons at 12.67x above chance; 89.8% exceed baseline)	2	A	in: currier_a
+C511	Derivational Productivity	2	A	in: currier_a
+C512	**PP as Compositional Substrate** (99.1% RI containment; 8.3x section-invariance ratio; PP is universal foundation)	2	GLOBAL	in: currier_a
+C512	PP as Compositional Substrate	2	A	in: currier_a
+C512.a	**Positional Asymmetry** (END-class 71.4% PP; START-class 16.1% PP; pattern: RI-START + PP-FREE + PP-END)	2	A	in: currier_a
+C513	**Short Singleton Sampling Variance** (Jaccard=1.00 vs repeaters; singleton status at ≤3 chars is sampling, not function)	2	A	in: currier_a
+C513	Short Singleton Sampling Variance	2	A	in: currier_a
+C514	**RI Compositional Bifurcation** (17.4% locally-derived, 82.6% globally-composed; Section P highest local rate 26.1%)	2	A	in: currier_a
+C514	RI Compositional Bifurcation	2	A	in: currier_a
+C515	**RI Compositional Mode Correlates with Length** (short RI = atomic/global; long RI = compound/local; rho=0.192, p<0.0001)	2	A	in: currier_a
+C515	RI Compositional Mode Correlates with Length	2	A	in: currier_a
+C515.a	**Compositional Embedding Mechanism** (local derivation is additive - embedding local PP context requires more sub-components)	2	A	in: currier_a
+C516	**RI Multi-Atom Composition** (85.4% of RI contain multiple PP atoms; 261 PP bases; 0.03% sparsity; RI = compatibility intersections)	2	A	in: currier_a
+C516	RI Multi-Atom Composition	2	A	in: currier_a
+C517	**Superstring Compression (GLOBAL)** (65-77% overlap, 2.2-2.7x compression; hinge letters are 7/8 kernel primitives; global substrate)	3	GLOBAL	in: currier_a
+C517	Superstring Compression (GLOBAL)	2	A	in: currier_a
+C518	**Compatibility Enrichment (GLOBAL)** (5-7x enrichment across all systems; extends C383 global type system)	3	GLOBAL	in: currier_a
+C518	Compatibility Enrichment (GLOBAL)	2	A	in: currier_a
+C519	**Global Compatibility Architecture** (compression + enrichment = embedded compatibility relationships spanning A/B/AZC)	3	GLOBAL	in: currier_a
+C519	Global Compatibility Architecture	2	A	in: currier_a
+C520	**System-Specific Exploitation Gradient** (RI 6.8x > AZC 7.2x > PP 5.5x > B 5.3x; discrimination intensity varies)	3	GLOBAL	in: currier_a
+C520	System-Specific Exploitation Gradient	2	A	in: currier_a
+C521	**Kernel Primitive Directional Asymmetry** (one-way valve: e→h=0.00, h→k=0.22, e→k=0.27 suppressed; h→e=7.00x, k→e=4.32x elevated; stabilization is absorbing)	2	B	in: grammar_system
+C521	Kernel Primitive Directional Asymmetry	2	B	in: grammar_system
+C522	**Construction-Execution Layer Independence** (r=-0.21, p=0.07; character and class constraints are independent regimes sharing symbol substrate)	2	B	in: grammar_system
+C522	Construction-Execution Layer Independence	2	B	in: grammar_system
+C523	**Pharma Label Vocabulary Bifurcation** (jar labels Jaccard=0.000 with content; content 58.3% PP vs 33.5% baseline)	2	A	in: currier_a
+C523	Pharma Label Vocabulary Bifurcation	2	A	in: currier_a
+C524	**Jar Label Morphological Compression** (7.1 vs 6.0 char mean; 5-8 PP atoms per MIDDLE; superstring packing)	2	A	in: currier_a
+C524	Jar Label Morphological Compression	2	A	in: currier_a

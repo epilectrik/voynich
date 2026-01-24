@@ -1,4 +1,4 @@
-# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C502)
+# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C508)
 
 **Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility, coverage, temporal trajectories, suffix posture
 **Status:** CLOSED
@@ -152,6 +152,53 @@ Only 25/112,733 cross-transitions (0.0%). Deliberate separation.
 
 ### C267 - Tokens are COMPOSITIONAL
 → See [C267_compositional_morphology.md](C267_compositional_morphology.md)
+
+### C267.a - MIDDLE Sub-Component Structure
+**Tier:** 2 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_ANALYSIS (2026-01-23)
+
+MIDDLEs themselves have internal compositional structure. A vocabulary of **218 sub-components** reconstructs **97.8%** of all MIDDLEs.
+
+**Evidence:**
+
+| Metric | Value |
+|--------|-------|
+| Total unique MIDDLEs | 3,105 |
+| Sub-component vocabulary | 218 (96 3-grams + 104 2-grams + 18 chars) |
+| Reconstruction coverage | 97.8% fully covered |
+| RI-D avg segments | 2.4 |
+| PP avg segments | 1.3 |
+
+**Top sub-components by MIDDLE coverage:**
+- 'ch': 24.5% of MIDDLEs, 7.99× expected (vs null model)
+- 'he': 16.7% of MIDDLEs
+- 'ee': 15.4% of MIDDLEs
+- 'sh': 11.6% of MIDDLEs
+- 'ol': 9.0% of MIDDLEs
+
+**Positional grammar within MIDDLEs:**
+- START-preferring: 'qc' (100%), 'qe' (94%), 'op' (85%)
+- END-preferring: 'eg' (94%), 'hh' (79%), 'as' (79%)
+
+**Cross-category consistency:**
+Sub-components are **global** (same components appear in RI, PP, and shared MIDDLEs):
+- Jaccard ALL vs RI: 0.74
+- Jaccard ALL vs PP: 0.33
+
+**Interpretation:**
+The morphological hierarchy extends deeper than PREFIX/MIDDLE/SUFFIX:
+
+```
+TOKEN = PREFIX + MIDDLE + SUFFIX
+                   ↓
+              MIDDLE = SUB1 + SUB2 + [SUB3...]
+```
+
+This explains why longer MIDDLEs are more likely to be unique (C498.d): more sub-components → more possible combinations → higher combinatorial uniqueness.
+
+**Relationship to C267:**
+This **extends** C267 (compositional morphology) to a finer granularity. MIDDLEs are not atomic - they are themselves compositional.
+
+**Cross-references:** C267 (compositional morphology), C498.d (length-frequency correlation), C509.a (RI morphological divergence)
 
 ### C268 - 897 Combinations
 **Tier:** 2 | **Status:** CLOSED
@@ -838,6 +885,128 @@ A MIDDLEs (617 total)
 **Source:** A_RECORD_STRUCTURE_ANALYSIS phase (2026-01-20)
 **External validation:** Reviewed by domain expert; confirmed as architecture-strengthening refinement that sharpens pipeline scope without contradiction.
 
+### C498.b - RI Singleton Population (Structural)
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_POPULATION_BIFURCATION (2026-01-23)
+
+RI singletons are MIDDLEs that appear exactly once in Currier A. This is primarily a **structural observation**, not a functional classification.
+
+**Structural evidence (Tier 2):**
+
+| Metric | RI Singletons |
+|--------|---------------|
+| Population | ~977 types (75.7% of RI) |
+| Frequency | **Exactly 1** |
+| Mean MIDDLE length | 4.82 characters |
+| Median length | 5 characters |
+
+**Example tokens:**
+- 'fachys' (f1r line 1), 'kodalchy', 'tydlo', 'fochof', 'polyshy'
+
+**Functional interpretation (Tier 3, WEAKENED):**
+
+> **IMPORTANT:** Singleton status is strongly correlated with MIDDLE length (see C498.d). The singleton/repeater distinction may be primarily a **combinatorial artifact** of sub-component composition (see C267.a), not a functional bifurcation.
+
+Previous interpretations ("section markers", "unique discriminators") are **PROVISIONAL**. The structural fact is that these MIDDLEs appear once; the functional significance is uncertain.
+
+**The folio-first subset (41 tokens):**
+41 singletons (4.2%) appear at folio-first position. The 'fachys' pattern is real but represents a small subset, not the typical singleton.
+
+**What singletons do NOT encode:**
+- Semantic content (per C171, C384)
+- Material identity (irrecoverable per semantic ceiling)
+- Addressable references (per C384)
+
+**Cross-references:** C498.d (length-frequency correlation), C267.a (sub-component structure), C509 (PP/RI separability)
+
+### C498.c - RI Repeater Population (Structural)
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_POPULATION_BIFURCATION (2026-01-23)
+
+RI repeaters are MIDDLEs that appear multiple times in Currier A while remaining A-exclusive. This is primarily a **structural observation**, not a functional classification.
+
+**Structural evidence (Tier 2):**
+
+| Metric | RI Repeaters |
+|--------|--------------|
+| Population | ~313 types (24.3% of RI) |
+| Frequency | 2-38 occurrences |
+| Mean MIDDLE length | 3.61 characters |
+| Median length | 4 characters |
+| Cross-folio | 81.2% appear in multiple folios |
+
+**Example tokens and frequencies:**
+- 'sh': 38×, 'och': 29×, 'tsh': 26×, 'cfh': 19×, 'ko': 18×
+
+**Critical distinction from PP:**
+RI repeaters are structurally similar to PP (short, repeating) but are **A-exclusive**. This is NOT due to section isolation, positional restriction, or morphological incompatibility (all tested and falsified).
+
+**Functional interpretation (Tier 3, WEAKENED):**
+
+> **IMPORTANT:** Repeater status is strongly correlated with short MIDDLE length (see C498.d). Shorter MIDDLEs have fewer sub-component combinations (see C267.a), making repetition more likely by combinatorics alone.
+
+Previous interpretations ("boundary scaffolding", "registry structure markers") are **PROVISIONAL**. The structural fact is that these short MIDDLEs repeat; the functional significance is uncertain.
+
+**Independence finding (preserved):**
+Singletons and repeaters are **statistically independent** within records:
+- Co-occurrence ratio: 1.05× expected (near-random)
+- Chi-square p-value: 0.165 (not significant)
+- Records can have either, both, or neither
+
+This independence is notable but does not prove functional distinction - it may reflect length-based distribution patterns.
+
+**Cross-references:** C498.d (length-frequency correlation), C267.a (sub-component structure), C509 (PP/RI separability)
+
+### C498.d - RI Length-Frequency Correlation
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_COMPLEXITY_ANALYSIS (2026-01-23)
+
+RI singleton/repeater status strongly correlates with MIDDLE length. This suggests the distinction is primarily **combinatorial**, not functional.
+
+**Evidence:**
+
+| Length | Types | Singleton Rate | Mean Frequency |
+|--------|-------|----------------|----------------|
+| 2 chars | 89 | 48% | 3.45 |
+| 3 chars | 223 | 55% | 2.72 |
+| 4 chars | 362 | 73% | 1.84 |
+| 5 chars | 318 | 82% | 1.35 |
+| 6 chars | 169 | 96% | 1.04 |
+| 8+ chars | 53 | 100% | 1.00 |
+
+**Statistical measures:**
+- Spearman correlation: rho = **-0.367**, p < 10⁻⁴²
+- Mean length singletons: 4.82 chars
+- Mean length repeaters: 3.61 chars
+- t-test: t = 13.20, p < 10⁻³⁷
+
+**Interpretation:**
+The smooth gradient from short/repeating to long/unique is consistent with **combinatorial effects** from sub-component morphology (C267.a):
+- Short MIDDLEs (1-2 sub-components) → fewer combinations → more likely to repeat
+- Long MIDDLEs (3-4 sub-components) → many combinations → more likely to be unique
+
+**168 short singletons exist** (≤3 chars, unique), indicating the relationship is not deterministic. These may be rare character combinations or may serve specific functions.
+
+**Implication for RI taxonomy:**
+The singleton/repeater distinction (C498.b, C498.c) may reflect a **complexity gradient** rather than two functionally distinct populations. RI is better understood as a single A-exclusive vocabulary with length-dependent uniqueness.
+
+**Revised MIDDLE taxonomy:**
+
+```
+All A MIDDLEs
+├── PP (~90 types) ────────────► Shared with B (capacity)
+│
+└── RI (A-exclusive, ~1,290 types)
+    │
+    └── Single population with LENGTH/COMPLEXITY GRADIENT:
+        Short (2-3 chars) ←────────────────→ Long (5+ chars)
+             │                                    │
+         More repeats                        More unique
+          (48-55%)                           (82-100%)
+             │                                    │
+         Combinatorially                    Combinatorially
+           limited                             diverse
+```
+
+**Cross-references:** C267.a (sub-component structure), C498.b (singletons), C498.c (repeaters), C509.a (RI morphological divergence)
+
 ---
 
 ### C498-CHAR-A-CLOSURE - RI Closure Tokens (Tier 3 Characterization)
@@ -1091,6 +1260,992 @@ Under the strict survivor-set interpretation, A records create differential B fo
 - Union model contradicts C481 and produces trivial filtering; strict model validated
 
 **Cross-references:** C384.a (permits conditional correspondence), C481 (survivor-set uniqueness), C475 (MIDDLE incompatibility), C469 (categorical resolution)
+
+---
+
+## Class-Level Filtering (C503)
+
+### C503 - Class-Level Filtering Under Strict Model
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+B | **Source:** CLASS_COSURVIVAL_TEST (2026-01-22)
+
+Under strict interpretation (C502), class-level filtering is meaningful, not trivial.
+
+**Key metrics:**
+| Metric | Union (WRONG) | Strict (CORRECT) |
+|--------|---------------|------------------|
+| Unique class patterns | 5 | **1,203** |
+| All-49-classes records | 98.4% | **0%** |
+| Mean classes surviving | 49 | **32.3** |
+| Range | 47-49 | **6-48** |
+
+**Unfilterable core (6 classes):**
+| Class | Type | Reason |
+|-------|------|--------|
+| 7, 11 | ATOMIC | MIDDLE=None, always pass any filter |
+| 9 | CORE_CONTROL | MIDDLEs 'a', 'o' (universal) |
+| 21, 22, 41 | AUXILIARY | MIDDLEs 'y', 'o', 'l', 'r', 'e' (universal) |
+
+**Infrastructure class vulnerability:**
+| Class | Survival Rate |
+|-------|---------------|
+| 36 | 20.9% |
+| 42 | 25.9% |
+| 44 | 13.1% |
+| 46 | 27.3% |
+
+**Interpretation:**
+- No A record gives full access to all 49 classes
+- 34% of classes filtered on average
+- Infrastructure classes require specific vocabulary contexts
+- Only 6 classes form the "minimum viable instruction set"
+
+**Cross-references:** C502 (strict interpretation), C481 (discrimination space), C411 (reducibility)
+
+---
+
+## MIDDLE Function Bifurcation (C504)
+
+### C504 - MIDDLE Function Bifurcation in A Records
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+B | **Source:** AUX_COOCCURRENCE analysis (2026-01-22)
+
+A-record MIDDLEs bifurcate into two functionally distinct populations based on downstream propagation behavior.
+
+**Vocabulary composition:**
+| Type | Count | Mean/Record | Function |
+|------|-------|-------------|----------|
+| **PP** (Pipeline-Participating) | 86 types | 4.41 | Constrain B vocabulary legality |
+| **RI** (Registry-Internal) | 1,293 types | 1.55 | Enable A-internal discrimination |
+
+**Record composition (n=1,579):**
+| Composition | Count | % |
+|-------------|-------|---|
+| BOTH PP + RI | 1,185 | 75.0% |
+| PP only | 367 | 23.2% |
+| RI only | 27 | 1.7% |
+
+**Critical correlation:**
+| Predictor | Correlation with B class survival |
+|-----------|-----------------------------------|
+| PP MIDDLE count | **r = 0.772** (strong positive) |
+| RI MIDDLE count | r = -0.046 (none) |
+
+**Interpretation:**
+- PP MIDDLEs function as **compatibility carriers** - their presence/absence determines which B instruction classes survive under strict filtering (C502)
+- RI MIDDLEs function as **A-internal discriminators** - they enable fine-grained registry navigation but do not propagate downstream
+- RI-only records (1.7%) survive with only 6 B classes (the unfilterable atomic core)
+- The 86 PP types form a categorical legality vocabulary, not a parametric encoding (per C469)
+
+**What this does NOT claim:**
+- RI MIDDLEs do not encode "material identity" in a recoverable sense
+- PP MIDDLEs do not encode "material properties" as semantic attributes
+- Specific material identification remains irrecoverable (per C171, MODEL_CONTEXT)
+
+**Mechanism:**
+The r=0.772 correlation quantifies C502's strict filtering: more PP MIDDLEs in an A record → more B vocabulary remains legal → more instruction classes survive. This is categorical availability, not parametric encoding.
+
+**Cross-references:** C498 (two-track vocabulary), C498.a (AZC-Mediated bifurcation), C502 (strict filtering), C469 (categorical resolution), C171 (pure operational)
+
+---
+
+## PP Profile Differentiation (C505)
+
+### C505 - PP Profile Differentiation by Material Class (A-Registry Organization)
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** PP_PERMUTATION_TEST (2026-01-23)
+
+A records containing material-class-associated RI MIDDLEs exhibit statistically significant enrichment of specific PP MIDDLEs compared to baseline records.
+
+**Critical scope limitation (PP_B_EXECUTION_TEST, 2026-01-23):** PP profile differences are **A-side organizational markers only**. They do NOT propagate to B execution — see C506.
+
+**Animal (PRECISION) - 13 records:**
+
+| PP MIDDLE | Animal Rate | Baseline Rate | Enrichment | p-value |
+|-----------|-------------|---------------|------------|---------|
+| 'te' | 15.4% | 0.9% | **15.8x** | 0.0060 |
+| 'ho' | 23.1% | 2.8% | **8.7x** | 0.0030 |
+| 'ke' | 30.8% | 5.9% | **5.1x** | 0.0030 |
+
+Combined signature: p < 0.0001
+
+**Water_Gentle - 12 records:**
+
+| PP MIDDLE | Rate | Enrichment vs Baseline |
+|-----------|------|------------------------|
+| 'te' | 16.7% | **19.2x** |
+| 'yt' | 16.7% | 4.0x |
+| 'os' | 16.7% | 3.8x |
+| 'eo' | 25.0% | 2.7x |
+
+Note: 'te' shared with Animal (~16% in both). Permutation test Animal vs Water_Gentle: p > 0.05 (not significant with n=12-13).
+
+**Oil_Resin - 56 records:**
+- Weak discrimination, no strong signature PP
+- Top PP: 'o' (61%), 'i' (34%), 'e' (29%)
+- No PP shows >2.5x enrichment vs baseline
+
+**Methodological validation (Dilution Test, 2026-01-23):**
+
+PP profile detection requires **procedural grounding** via reverse trace methodology (B folio constraint → A record convergence). Taxonomic classification via Bayesian class posteriors produces diluted signal:
+
+| Method | Records | 'te' Enrichment | 'ho' Enrichment | 'ke' Enrichment |
+|--------|---------|-----------------|-----------------|-----------------|
+| C505 RI MIDDLEs | 13 | **15.8x** | **8.7x** | **5.1x** |
+| Bayesian posteriors | 40 | 5.1x | 3.8x | 2.5x |
+| Bayesian-only (extra 27) | 27 | **0.0x** | 1.4x | 1.2x |
+
+The 27 Bayesian-only records show baseline enrichment (0.9x mean), confirming they are false positives. PP discrimination requires procedurally-grounded record identification, not taxonomic inference.
+
+**What this does NOT predict:**
+- Fire degree (thermal tolerance) — tested and falsified (see falsifications.md)
+- Taxonomic category via Bayesian posteriors — tested and failed
+
+**Interpretation:**
+PP MIDDLEs function as compatibility carriers (C504), and their composition varies systematically by material class. This does NOT mean:
+- PP encodes "material identity" (that's RI's role)
+- PP encodes specific "properties" as semantic attributes
+- Animal materials can be identified via PP alone
+
+It DOES mean:
+- PP profiles correlate with processing-relevant material categories
+- Different material classes require different operational affordances
+- PP vocabulary composition is not uniform across A records
+- Some PP MIDDLEs ('te') are shared across material classes with similar handling requirements
+
+**Semantic ceiling (C171, C469):**
+The correlation is structural, not semantic. We observe that animal-associated records have elevated 'te', 'ho', 'ke' without claiming these PP "mean" fire tolerance, organic complexity, or special preparation. The correlation with Brunschwig processing properties remains Tier 4 speculative.
+
+**Cross-references:** C504 (MIDDLE function bifurcation), C498 (two-track vocabulary), C499 (bounded material-class recoverability), C171 (closed-loop only), C506 (non-propagation)
+
+---
+
+## PP Functional Role Closure (C506)
+
+### C506 - PP Composition Non-Propagation
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+B | **Source:** PP_B_EXECUTION_TEST (2026-01-23)
+
+PP MIDDLE composition within A records does NOT predict B class survival or composition. PP functions as a **capacity variable** (count matters), not a **routing variable** (composition irrelevant).
+
+**Evidence:**
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| Survival count (animal vs baseline) | p=0.448 (NS) | No differential filtering pressure |
+| Class composition | Cosine=0.995, JS=0.0019 | Nearly identical profiles |
+| Per-class Fisher's exact | 0/49 significant | No individual class differs |
+| PP count correlation | r=0.715, p<10^-247 | COUNT strongly predicts survival |
+
+**PP count gradient (confirming C504):**
+
+| PP Count | Mean B Classes | n |
+|----------|----------------|---|
+| 0-2 | 19.0 | 171 |
+| 3-5 | 30.9 | 805 |
+| 6-8 | 37.2 | 525 |
+| 9-11 | 41.4 | 64 |
+| 12-15 | 43.9 | 13 |
+
+**Architectural interpretation:**
+
+PP MIDDLEs function as **generic compatibility carriers**:
+- More PP = larger B survivable space (capacity)
+- Specific PP composition = irrelevant to B output (no routing)
+- PP profile differences (C505) = A-side registry organization
+
+This resolves the apparent paradox: C505 shows strong material-class PP differentiation, yet B-side tests show null effects. PP profiles are "registry ergonomics" — ways of expressing A-side variation without affecting B execution.
+
+**Variable taxonomy:**
+
+| Variable | System | Function | Constraint |
+|----------|--------|----------|------------|
+| **Routing** | AZC | Position-indexed legality | C443, C468 |
+| **Differentiation** | RI | Identity exclusion | C475, C481 |
+| **Capacity** | PP | Arena width, enablement | C504, C506 |
+
+**What this closes:**
+- PP composition → B execution pathway: **FALSIFIED**
+- PP as routing variable: **FALSIFIED**
+- PP functional characterization: **COMPLETE** (at class level; see C506.a for token level)
+
+**What remains open:**
+- PP × HT × AZC three-way interaction
+- Regime-specific HT compensation patterns
+
+**Cross-references:** C504 (PP count correlation), C505 (A-side profiles), C171 (semantic ceiling), C469 (categorical resolution), C384 (no A-B lookup)
+
+---
+
+### C506.a - Intra-Class Token Configuration
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+B | **Source:** PP_TOKEN_CONFIGURATION_TEST (2026-01-23)
+
+PP composition determines **intra-class token configuration** even when class survival patterns are identical. This refines C506: PP composition doesn't affect *which classes* survive, but it does affect *which tokens within those classes* are available.
+
+**Evidence:**
+
+986 pairs of A records with identical class survival but different PP composition:
+
+| Metric | Value |
+|--------|-------|
+| Mean token Jaccard | **0.953** |
+| Median token Jaccard | 0.971 |
+| Range | 0.545 - 1.000 |
+| Perfect overlap (>0.99) | 34.6% |
+
+Distribution of token overlap:
+| Jaccard Range | Pairs | % |
+|---------------|-------|---|
+| 0.8-1.0 | 626 | 63.5% |
+| 0.6-0.8 | 37 | 3.8% |
+| 0.4-0.6 | 2 | 0.2% |
+
+**Two-level PP effect:**
+
+| Level | What PP Determines | Evidence |
+|-------|-------------------|----------|
+| **Class** | Which instruction types survive | COUNT matters (r=0.715), COMPOSITION doesn't (cosine=0.995) |
+| **Token** | Which variants within classes are available | COMPOSITION matters (Jaccard=0.953 < 1.0) |
+
+**Architectural interpretation:**
+
+This resolves the "480 token paradox" — why maintain 480 distinct tokens across 49 classes if class survival is all that matters?
+
+Answer: **Classes are instruction types; tokens are parameterized variants.**
+
+- The 49 classes provide the operational grammar (what instructions exist)
+- The ~480 tokens provide the parameter space (which variants of each instruction are available)
+- PP COUNT determines class survival breadth (how many instruction types)
+- PP COMPOSITION determines intra-class configuration (which variants of each type)
+
+**Material-class implication:**
+
+Animal materials don't need different *classes* than plant materials — they need different *parameterizations* of the same classes. C505's PP profile differences ('te', 'ho', 'ke' enrichment in animal records) shape which token variants are available, not which classes survive.
+
+The shared class survival ensures the same operational grammar; the PP composition ensures material-appropriate token variants.
+
+**Relationship to C506:**
+
+C506 remains correct at its level: PP composition doesn't affect class survival patterns. C506.a adds the token-level refinement: PP composition shapes intra-class token availability (~5% variation).
+
+**Cross-references:** C506 (class-level non-propagation), C505 (material-class PP profiles), C503 (class-level filtering), C121 (49 instruction classes)
+
+---
+
+### C506.a.i - PP Cross-Class Coordination Mechanism
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+B | **Source:** PP_CROSS_CLASS_TEST (2026-01-23)
+
+PP MIDDLEs select **coherent execution-variant slices across multiple classes simultaneously**, not independent per-class effects. This explains *how* PP composition acts (C506.a), not just *whether* it acts.
+
+**Evidence:**
+
+Analysis of 90 unique MIDDLEs in B instruction tokens:
+
+| Finding | Value |
+|---------|-------|
+| MIDDLEs spanning single class | 39 (43%) |
+| MIDDLEs spanning multiple classes | **51 (57%)** |
+| Maximum class span | MIDDLE 'o' → 21 classes |
+| Second highest | MIDDLE 'e' → 20 classes |
+| Third highest | MIDDLE 'a' → 20 classes |
+
+Within-class token overlap between different MIDDLEs:
+
+| Metric | Value |
+|--------|-------|
+| Pairwise Jaccard | **0.000** |
+| Exclusive tokens (1 MIDDLE only) | 100% |
+| Shared tokens (2+ MIDDLEs) | 0% |
+
+**Structural insight:**
+
+MIDDLE is **orthogonal to CLASS**:
+- CLASS determines grammatical role (what instruction type)
+- MIDDLE determines variant selection (which parameterization)
+- Token identity = (CLASS × MIDDLE) joint index
+
+When a PP MIDDLE is active, it selects tokens across *all* classes where that MIDDLE exists - a coordinated slice through the grammar, not independent per-class draws.
+
+**Mechanistic interpretation:**
+
+> **PP MIDDLEs do not choose operations; they choose a coherent behavioral variant of all operations that remain legal - across the entire grammar.**
+
+This explains why the ~5% PP composition effect (C506.a) is structured rather than random: changing PP MIDDLE changes token availability in a *coordinated* way across multiple functional domains.
+
+**Material-specific implication:**
+
+Real materials require coordinated tuning across:
+- energy handling
+- recovery handling
+- phase sensitivity
+- intervention tolerance
+
+A cross-class MIDDLE slice provides exactly this - material-specific behavioral variation without semantic encoding. The system achieves **differentiation without naming**.
+
+**Terminology clarification (binding):**
+
+| Term | Definition | Reaches B? |
+|------|------------|------------|
+| **RI** | A-exclusive MIDDLEs | ❌ Never |
+| **PP** | MIDDLEs shared between A and B | ✅ Yes |
+
+RI and PP are **disjoint subsets** of MIDDLEs. Only PP has execution effects.
+
+**What this does NOT claim:**
+- ❌ PP "selects modes" (too semantic, violates C384/C171)
+- ❌ MIDDLE encodes material identity (that's RI's role, which doesn't reach B)
+- ❌ New functional layer discovered (mechanism refinement only)
+
+**Cross-references:** C506.a (token configuration effect), C506.b (behavioral heterogeneity), C384 (no A-B lookup), C171 (semantic ceiling)
+
+---
+
+### C506.b - Intra-Class Behavioral Heterogeneity
+**Tier:** 2 | **Status:** CLOSED | **Scope:** B | **Source:** INTRACLASS_HETEROGENEITY_TEST (2026-01-23)
+
+Tokens within the same class but with different MIDDLEs are **positionally compatible but behaviorally distinct**. They occupy similar grammatical positions but lead to different transition patterns.
+
+**Evidence:**
+
+Compared token pairs within same class (n=1,334 pairs with sufficient data):
+
+| Dimension | Same-MIDDLE | Different-MIDDLE | p-value |
+|-----------|-------------|------------------|---------|
+| Positional JS divergence | 0.240 | 0.256 | 0.11 (NS) |
+| Transition JS divergence | 0.479 | **0.523** | **<0.0001** |
+
+MIDDLE-level aggregation (n=262 MIDDLE pairs):
+
+| Threshold | MIDDLE pairs exceeding |
+|-----------|------------------------|
+| JS > 0.2 | **100%** |
+| JS > 0.3 | 96.9% |
+| JS > 0.4 | **73.3%** |
+| JS > 0.5 | 37.0% |
+
+**Examples of maximum divergence:**
+
+| Class | Token 1 | Token 2 | Transition JS |
+|-------|---------|---------|---------------|
+| 27 | aiir (MIDDLE=aii) | teey (MIDDLE=e) | 0.743 |
+| 6 | tain (MIDDLE=i) | kair (MIDDLE=i) | 0.731 |
+| 35 | choty (MIDDLE=ot) | shar (MIDDLE=a) | 0.730 |
+| 25 | olor (MIDDLE=o) | olky (MIDDLE=k) | 0.721 |
+
+**"Chop vs Grind" Pattern:**
+
+This confirms the user's insight: tokens can be positionally compatible (both valid in the same grammatical slot) while being behaviorally distinct (leading to different continuations). Like "chop" and "grind" in a recipe:
+- Both appear after "then" and before an ingredient (positionally compatible)
+- But they lead to different subsequent operations (behaviorally distinct)
+
+**Architectural interpretation:**
+
+The 49 classes define **grammatical equivalence** (what can substitute without breaking syntax), not **semantic equivalence** (what does the same thing). Tokens within a class share grammatical role but have different:
+- Transition probabilities (what follows)
+- Execution implications (what happens next)
+
+**Implication for PP composition:**
+
+The ~5% token variation from C506.a (Jaccard=0.953) is **behaviorally meaningful**:
+
+```
+PP composition → MIDDLE selection → transition pattern variation
+                                  → execution flow differences
+                                  (within fixed class structure)
+```
+
+When different PP compositions select different MIDDLEs within the same surviving classes:
+- Grammatical positions remain the same
+- But execution flows diverge based on transition patterns
+
+This is how material-specific PP profiles (C505) translate into material-appropriate execution variants without changing the class inventory.
+
+**Cross-references:** C506.a (token-level configuration), C506 (class-level non-propagation), C121 (49 instruction classes), C505 (material-class PP profiles)
+
+---
+
+## PP-HT Responsibility Substitution (C507)
+
+### C507 - Partial Responsibility Substitution between PP and HT
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+HT | **Source:** PP_HT_INTERACTION_TEST (2026-01-23)
+
+PP capacity is weakly but significantly inversely correlated with HT density. Records with higher PP counts exhibit reduced HT frequency but increased HT morphological diversity.
+
+**Primary correlation:**
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| Pearson r | -0.229 | Weak negative |
+| Spearman rho | **-0.294** | Moderate negative |
+| p-value | **0.0015** | Highly significant |
+| n (folios) | 113 | Adequate sample |
+
+**HT density gradient by PP bin:**
+
+| PP Mean | HT Density | n |
+|---------|------------|---|
+| 0-3 | **18.83%** | 12 |
+| 3-4 | 15.16% | 15 |
+| 4-5 | 14.43% | 35 |
+| 5-6 | 13.54% | 32 |
+| 6+ | **12.62%** | 19 |
+
+**Secondary finding (HT morphological diversity):**
+
+| Correlation | r | p |
+|-------------|---|---|
+| PP mean vs HT TTR | **+0.40** | <0.001 |
+
+Higher PP count correlates with *less* HT but *more varied* HT vocabulary.
+
+**Interpretation:**
+PP and HT partially substitute in a "responsibility budget":
+- Higher PP capacity → reduced HT frequency (grammatical freedom substitutes for human vigilance)
+- Higher PP capacity → increased HT morphological diversity (when HT occurs, it is more varied)
+
+This is NOT:
+- Complete substitution (r = -0.29, not -0.8)
+- HT tracking PP content (composition doesn't matter per C506)
+- Causal relationship (correlation only)
+
+**Two-axis HT model:**
+1. **HT density axis** — how much HT appears (negatively correlated with PP)
+2. **HT diversity axis** — how varied HT is when it appears (positively correlated with PP)
+
+These axes are semi-independent, creating a 2D space for HT characterization.
+
+**System-level framing:**
+This partial substitution suggests that A-record PP count (how much B vocabulary is available) modulates the *need* for human attention markers. More execution freedom → less vigilance required, but when vigilance is required, it engages a broader morphological repertoire.
+
+**Currier system breakdown:**
+
+| System | n | PP-HT r | p |
+|--------|---|---------|---|
+| Currier A folios | 48 | -0.18 | 0.22 |
+| Currier B folios | 65 | -0.31 | 0.01 |
+
+The effect is stronger in Currier B folios, consistent with PP's role as an execution enabler (C504, C506).
+
+**Cross-references:** C504 (PP count correlation), C506 (PP composition non-propagation), C341 (HT-program stratification), C344 (HT-A inverse coupling), C459 (HT anticipatory compensation)
+
+---
+
+## Token-Level Discrimination (C508)
+
+### C508 - Token-Level Discrimination Primacy
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A→B | **Source:** PROCESS_TYPE_TEST (2026-01-23)
+
+Fine-grained discrimination in the A→B pipeline operates at the TOKEN/MEMBER level, not the CLASS level. Class-level analysis yields coarse, universal patterns; token-level analysis reveals the actual differentiation.
+
+**Key findings:**
+
+| Analysis Level | Jaccard Distance | Mutual Exclusion | Interpretation |
+|----------------|------------------|------------------|----------------|
+| CLASS | 0.391 | 0% | Universal, coarse |
+| TOKEN | 0.700 | **27.5%** | Discriminative, fine-grained |
+
+**Class-level patterns (coarse):**
+- All 49 classes can co-occur (no mutual exclusion)
+- A records differ in HOW MANY classes survive, not WHICH classes
+- Class profiles show continuous variation, not distinct clusters
+- Functional role ratios (TERMINATOR/OPERATOR/CORE) are uniform across A records
+
+**Token-level patterns (discriminative):**
+- 27.5% of within-class token pairs are mutually exclusive
+- Different A records activate different tokens within the same classes
+- Token-level Jaccard (0.700) is significantly higher than class-level (0.391)
+- The "action" happens at member level, not class level
+
+**Methodological implication:**
+
+> **Future discriminating tests must focus on token/member level, not class level.**
+> Class co-occurrence is NOT the key to fine-grained refinements.
+> Classes define the universal grammar; tokens encode the specific execution variants.
+
+**What this means for interpretation:**
+- "Processing vs distillation" distinctions, if they exist, would appear at token level
+- Different A records don't select different process TYPES (classes uniform)
+- They select different execution VARIANTS (tokens differentiated)
+- The 27.5% mutual exclusion suggests tokens are alternatives, not complements
+
+**Architectural summary:**
+
+```
+CLASS LEVEL (Coarse, Universal):
+- 49 classes define the grammar
+- All classes can co-occur
+- A records select SCOPE (how many), not TYPE (which ones)
+
+TOKEN LEVEL (Fine, Discriminative):
+- ~480 tokens provide execution variants
+- 27.5% within-class mutual exclusion
+- A records select SPECIFIC VARIANTS within classes
+```
+
+**Cross-references:** C506.b (intra-class behavioral heterogeneity), C503 (class-level filtering), C121 (49 instruction classes), C171 (unified control architecture)
+
+---
+
+## PP/RI Dimensional Separability (C509)
+
+### C509 - PP/RI Dimensional Separability
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_PP_SHARING_TEST (2026-01-23)
+
+A records decompose into separable PP and RI MIDDLE components. The same PP set can combine with different RI sets, demonstrating dimensional independence.
+
+**Key metrics:**
+
+| Metric | Value |
+|--------|-------|
+| PP sets shared by records with different RI | **72** |
+| Records sharing PP with RI-different records | **229 (14.5%)** |
+| Pure-RI records (no PP, no B effect) | 26 (1.6%) |
+| Pure-PP records (no RI) | 399 (25.3%) |
+| Average RI MIDDLEs per record | 1.5 |
+| Average PP MIDDLEs per record | 4.5 |
+
+**Notable sharing patterns:**
+
+| PP Set | Records Sharing | Distinct RI Patterns |
+|--------|-----------------|----------------------|
+| {} (empty) | 26 | 26 (all unique) |
+| {i, o} | 14 | 12 |
+| {o} | 11 | 10 |
+| {e, o} | 7 | 7 |
+
+**Interpretation:**
+
+A records are structurally decomposable into two orthogonal dimensions:
+
+| Dimension | Function | Propagates to B? |
+|-----------|----------|------------------|
+| **RI** | Discrimination coordinates (within-A navigation) | ❌ Never |
+| **PP** | Capacity carriers (class survival breadth) | ✅ Yes |
+
+This separation means:
+- Same "capacity envelope" (PP) can apply to structurally distinct records (different RI)
+- Pure-RI records (26) function as discrimination-only entries with no B-side effect
+- Pure-PP records (399) carry only capacity information without RI-based discrimination
+- The dimensions are independent, not coupled
+
+**What this is NOT:**
+
+- NOT "material identity" vs "processing parameters" (semantic interpretation)
+- NOT parameterization of execution (C469 categorical resolution applies)
+- NOT implying RI encodes referents (C171, C384 semantic ceiling applies)
+
+**Structural implication:**
+
+The A-record space has two independent axes:
+1. **RI axis**: Exclusion/discrimination coordinates (high cardinality, A-internal)
+2. **PP axis**: Capacity/enablement carriers (lower cardinality, B-facing)
+
+Records occupy positions in this 2D space. The 72 shared PP sets demonstrate that these axes are genuinely separable, not coupled.
+
+**Cross-references:** C504 (MIDDLE function bifurcation), C506 (PP non-propagation), C508 (token-level discrimination primacy), C498 (A-exclusive vocabulary track)
+
+### C509.a - RI Morphological Divergence
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_PP_MORPHOLOGY_TEST (2026-01-23)
+
+RI tokens exhibit dramatically different morphological profiles than PP tokens, suggesting the morphological apparatus serves different structural roles in each population.
+
+**Statistical evidence:**
+
+| Metric | RI Tokens | PP Tokens | Significance |
+|--------|-----------|-----------|--------------|
+| Has PREFIX | **58.5%** | 85.4% | p < 10⁻¹⁸³ |
+| Has SUFFIX | 71.6% | 78.1% | p < 10⁻¹¹ |
+| Mean MIDDLE length | **3.96** chars | 1.46 chars | **2.7× longer** |
+| Mean token length | **6.39** chars | 4.59 chars | 40% longer |
+| Fully structured (P+S) | 40.6% | **67.9%** | -27pp |
+| SUFFIX-only (no PREFIX) | **31.0%** | 10.2% | +21pp |
+
+**SUFFIX enrichment in RI:**
+
+| Suffix | RI Enrichment |
+|--------|---------------|
+| 'm' | **3.19×** |
+| 'dy' | **2.27×** |
+| 'al' | **2.15×** |
+| 'y' | 1.39× |
+
+**Morphological profile characterization:**
+
+| Aspect | PP Tokens | RI Tokens |
+|--------|-----------|-----------|
+| Template | Balanced (P+M+S) | **MIDDLE-centric** |
+| PREFIX | Near-mandatory (85%) | Optional (58%) |
+| MIDDLE | Short (1.46 chars), shared vocabulary | **Long (3.96 chars), unique identifiers** |
+| SUFFIX | Standard distribution | Enriched for m, dy, al, y |
+| Structure | Template-distributed | Discrimination-concentrated |
+
+**Interpretation:**
+
+The morphological apparatus is **structurally repurposed** between token populations:
+
+- **PP tokens** use balanced PREFIX + short MIDDLE + SUFFIX template where PREFIX encodes control-flow participation (articulation domains per C422-C424)
+- **RI tokens** concentrate discriminative information in the MIDDLE itself, with PREFIX serving as optional structural scaffolding rather than mandatory articulation
+
+This explains why RI and PP are dimensionally separable (C509): they use different morphological strategies. PP tokens participate in a shared template system; RI tokens carry their discrimination in extended MIDDLEs.
+
+**What this is NOT (Tier 3 ceiling):**
+
+- NOT claiming PREFIX is "meaningless" in RI (it may serve structural scaffolding)
+- NOT establishing causality direction (MIDDLE-centric because PREFIX optional, or vice versa)
+- NOT phonetic interpretation (no phonetic evidence available)
+
+**Cross-references:** C509 (PP/RI dimensional separability), C498 (A-exclusive vocabulary track), C267 (compositional tokens), C293 (component essentiality hierarchy), C383 (global morphological type system)
+
+---
+
+## MIDDLE Sub-Component Grammar (C510-C518)
+
+The MIDDLE vocabulary exhibits internal compositional structure with systematic construction rules. These constraints extend C267.a (sub-component structure) by revealing the generative mechanisms.
+
+### C510 - Positional Sub-Component Grammar
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+MIDDLE sub-components show significant positional preferences (z=34.16, p<0.0001 vs permuted baseline).
+
+**Position class distribution (187 qualified components, ≥10 occurrences):**
+
+| Class | Count | % | Top Examples |
+|-------|-------|---|--------------|
+| START-class (>70% initial) | 62 | 33.2% | opa, qe, of, dk |
+| END-class (>70% final) | 14 | 7.5% | ch, d, e, g, h, s |
+| MIDDLE-class (>70% medial) | 1 | 0.5% | qo |
+| FREE-class (no preference) | 110 | 58.8% | o, he, ee, al |
+
+**Interpretation:**
+The grammar is PERMISSIVE - 58.8% of components can appear at any position. Position constraints exist (highly significant vs random) but do not form a strict slot-based grammar. This enables productive composition while maintaining boundary constraints.
+
+**Cross-references:** C267.a (sub-component structure), C512.a (positional asymmetry)
+
+### C511 - Derivational Productivity
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+Repeater MIDDLEs (short, frequent forms) seed singleton MIDDLEs (long, unique forms) at **12.67x above chance baseline**.
+
+**Evidence:**
+- 324 repeaters seed singletons
+- Mean productivity ratio: 12.67x expected
+- Median productivity ratio: 5.86x expected
+- 89.8% of seeding relationships exceed chance levels
+- Correlation: frequency vs productivity rho = 0.211, p = 0.0009
+
+**Mechanism:** Short frequent forms are productively extended into longer unique forms. This provides the causal mechanism for C498.d: length predicts uniqueness because short forms are derivational bases.
+
+**Cross-references:** C498.d (length-frequency correlation), C267.a (sub-component structure)
+
+### C512 - PP as Compositional Substrate
+**Tier:** 2 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+PP MIDDLEs constitute the generative substrate of MIDDLE vocabulary.
+
+**Evidence:**
+
+| Metric | Value |
+|--------|-------|
+| PP MIDDLEs that are sub-components | 72.2% (65/90) |
+| RI MIDDLEs containing PP as substring | 99.1% (1,279/1,290) |
+| PP section-invariance (avg Jaccard H/P/T) | 0.729 |
+| RI section-invariance (avg Jaccard H/P/T) | 0.088 |
+| Invariance ratio | 8.3x |
+| PP in ALL sections | 60.7% |
+| RI in ALL sections | 2.6% |
+
+**Interpretation:**
+RI vocabulary is compositionally derived from PP stock, not independently constructed. PP provides the universal morphological foundation (appears across all sections); RI provides section-specific elaborations (highly section-divergent).
+
+This explains:
+- **C502** (~80% filtering): Extracts PP primitives from RI elaborations
+- **C506** (PP composition non-propagation): Only PP survives the pipeline
+- **C384** (no token-level lookup): RI doesn't cross A/B boundary, only PP does
+
+**Cross-references:** C267.a (sub-component structure), C509 (PP/RI separability), C504 (PP count correlation)
+
+### C512.a - Positional Asymmetry
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+PP atoms and non-PP sub-components occupy different positional niches.
+
+**PP rate by position class:**
+
+| Position Class | PP Rate | Interpretation |
+|----------------|---------|----------------|
+| END-class | 71.4% | PP atoms dominate terminators |
+| FREE-class | 40.9% | PP atoms flexible in core |
+| START-class | 16.1% | RI elaborations dominate initiation |
+
+**PP terminators (END-class):** `ch`, `d`, `e`, `eos`, `ees`, `g`, `h`, `k`, `s`, `t`
+
+**Characteristic MIDDLE architecture:**
+```
+[RI elaboration] + [PP flexible core] + [PP terminator]
+   START-class        FREE-class          END-class
+   (16.1% PP)         (40.9% PP)          (71.4% PP)
+```
+
+**Interpretation:**
+RI elements provide discriminative elaboration at the start; PP atoms provide the flexible combinatorial core; PP terminators close the form. This is a generative morphology with systematic structure, not random composition.
+
+**Cross-references:** C510 (positional grammar), C512 (PP as substrate)
+
+### C513 - Short Singleton Sampling Variance
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+Short singleton MIDDLEs (≤3 characters) show no structural differentiation from short repeaters.
+
+**Evidence:**
+- Character inventory Jaccard: 1.00 (identical)
+- Bigram inventory Jaccard: 0.49 (overlapping)
+- Line-initial rate: no significant difference
+- Section distribution: similar patterns
+
+**Interpretation:**
+Singleton status at short lengths reflects sampling variance within a homogeneous population, not functional distinction. The length-frequency relationship (C498.d) is a gradient phenomenon, not a categorical boundary.
+
+This PROTECTS against over-interpretation of singleton status per C498.b/c. Short singletons are not a special class - they are repeaters that happened to appear once.
+
+**Cross-references:** C498.b (RI singletons), C498.c (RI repeaters), C498.d (length-frequency correlation)
+
+### C514 - RI Compositional Bifurcation
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+RI tokens exhibit two compositional modes based on PP derivation:
+
+| Mode | Rate | Description |
+|------|------|-------------|
+| Locally-derived | 17.4% | Contains PP MIDDLE from same record |
+| Globally-composed | 82.6% | Uses PP vocabulary from outside record |
+
+**Key evidence:**
+- Overall local match: 17.4% (vs ~7% chance baseline)
+- Section P highest: 26.1% local (transformational content)
+- Section H lowest: 13.5% local (primary categorization)
+
+**Functional interpretation:**
+- Locally-derived RI = context-anchored refinement (elaborates on PP already present)
+- Globally-composed RI = stand-alone discrimination (independent specification)
+
+**Cross-references:** C509 (PP/RI bifurcation), C512 (PP as substrate), C515 (length correlation)
+
+### C515 - RI Compositional Mode Correlates with Length
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+RI compositional mode correlates with length: short RI operates as atomic global discriminators (0% local at len=2), while long RI embeds local PP context (25% local at len=6+).
+
+**Evidence:**
+| Length | Local Rate | Mode |
+|--------|------------|------|
+| 2 | 0.0% | Atomic/Global |
+| 3 | 4.7% | Atomic/Global |
+| 4 | 15.9% | Transitional |
+| 5 | 22.6% | Compound/Local |
+| 6+ | 25%+ | Compound/Local |
+
+**Spearman correlation:** rho = 0.192, p < 0.0001
+
+**Functional interpretation:**
+
+| Short RI (2-3 chars) | Long RI (5+ chars) |
+|---------------------|-------------------|
+| Atomic | Compound |
+| Global discriminator | Context-anchored |
+| Stands alone in incompatibility lattice | Embeds local PP as sub-components |
+
+**Cross-references:** C498.d (length-frequency), C514 (compositional bifurcation), C515.a (mechanism)
+
+### C515.a - Compositional Embedding Mechanism
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+Local derivation in RI reflects sub-component embedding from same-record PP, requiring additional morphological material. **Embedding local context is additive, not reductive.**
+
+**Mechanism:**
+1. Short RI operates at the atomic level of the ~128-dimensional incompatibility lattice (C475)
+2. Long RI achieves context-bound refinement by:
+   - Starting with local PP context (defines "where you are")
+   - Adding sub-components to specify "which variant"
+   - The result is necessarily longer
+
+**Consistency with existing constraints:**
+- C267.a: MIDDLEs are compositional (218 sub-components) - local derivation adds components
+- C498.d: Longer = rarer (combinatorial explosion) - embedding creates unique combinations
+- C506.b: Intra-class behavioral heterogeneity via MIDDLE variation - local embedding implements this
+
+**Cross-references:** C267.a (sub-components), C475 (incompatibility lattice), C498.d (length-frequency), C515 (length correlation)
+
+### C516 - RI Multi-Atom Composition
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+Registry-internal MIDDLEs are composite structures containing multiple PP atoms. RI encodes **compatibility intersections**, not simple material variations.
+
+**Evidence:**
+| Metric | Value |
+|--------|-------|
+| RI with PP match | 94.5% |
+| RI with multiple PP atoms | 85.4% |
+| PP bases used | 261 |
+| Collapse ratio | 2.7x (712 RI → 261 bases) |
+| Sparsity | 0.03% of theoretical combinations |
+
+**Interpretation:**
+
+Each PP atom is a **compatibility dimension**. RI structure represents:
+```
+RI = PP₁ ∩ PP₂ ∩ PP₃ ∩ ... ∩ modifier
+```
+Where each PP contributes a compatibility filter and the RI is their intersection.
+
+**Why 0.03% sparsity:** C475 established 95.7% of MIDDLE pairs are illegal. Multi-atom combinations face multiplicative constraint satisfaction.
+
+**Why 261 bases vs ~90 shared with B:** Only ~90 PP propagate through AZC to B execution. Remaining bases provide A-internal discrimination.
+
+**Cross-references:** C267.a (sub-components), C475 (incompatibility), C498.d (length correlation), C512 (PP substrate)
+
+### C517 - Superstring Compression (GLOBAL)
+**Tier:** 3 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+MIDDLEs across ALL systems are morphologically compressed superstrings over the PP sub-component inventory, exhibiting systematic overlap (65-77%) that reduces total string length while preserving recognizability. Originally discovered in RI, compression scan (Test 13) confirmed pattern is manuscript-wide.
+
+**Evidence:**
+| Population | Mean Overlap | Compression | High Overlap (>30%) |
+|------------|--------------|-------------|---------------------|
+| RI (A-exclusive) | 65% | 2.29x | 83.5% |
+| B-exclusive | 77% | 2.65x | 91.2% |
+| AZC | 70% | 2.44x | 87.3% |
+| PP (shared) | 65% | 2.18x | 80.1% |
+
+**Hinge letters:** o, e, h, c, a, s, k, l (7/8 are kernel primitives from C085)
+
+**Interpretation:**
+Superstring compression is the **morphological substrate** (extends C383). The same high-connectivity characters that mediate B transitions also serve as compression hinges in all systems. This is global infrastructure, not system-specific function.
+
+**Cross-references:** C085 (kernel primitives), C267.a (sub-components), C383 (global type system), C516 (multi-atom), C519 (global compatibility)
+
+### C518 - Compatibility Enrichment (GLOBAL)
+**Tier:** 3 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+**REVISED (2026-01-23):** Originally discovered in RI (4.7x enrichment), Test 14 revealed enrichment is GLOBAL across all systems. Superstring co-presence enriches compatibility 5-7x in all populations, not just RI.
+
+PP-shaped substrings that co-occur within the same superstring are enriched for mutual compatibility compared to random PP pairs. This extends C383: the global type system includes compatibility relationships, not just type markers.
+
+**Evidence:**
+| System | Enrichment | Z-score | Superstring Pairs |
+|--------|------------|---------|-------------------|
+| RI (A-exclusive) | 6.8x | 61.88 | 3,847 |
+| B-exclusive | 5.3x | 48.2 | 2,156 |
+| AZC | 7.2x | 31.4 | 892 |
+| PP (shared) | 5.5x | 42.7 | 1,423 |
+
+**Interpretation:**
+Compatibility enrichment is **global infrastructure** baked into the morphological substrate itself. All systems inherit this - it's how the type system encodes compatibility relationships. See C519 for architecture, C520 for exploitation gradient.
+
+**What this does NOT establish:** No semantic feature grammar. No A↔B lookup. No decomposable rules. No operator readability.
+
+**Cross-references:** C383 (global type system), C475 (MIDDLE incompatibility), C517 (compression), C519 (architecture), C520 (gradient)
+
+### C519 - Global Compatibility Architecture
+**Tier:** 3 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+The superstring compression mechanism (C517) combined with compatibility enrichment (C518) constitutes a **global compatibility architecture** that spans all text systems. This extends C383: the global morphological type system includes embedded compatibility relationships, not just type markers.
+
+**Architecture:**
+1. **Substrate:** PP vocabulary forms atomic layer (C512)
+2. **Compression:** All MIDDLEs compress PP atoms via shared hinge letters (C517)
+3. **Compatibility:** Co-presence in superstring enriches compatibility 5-7x (C518)
+4. **Scope:** Architecture applies to A, B, and AZC identically
+
+**Key insight:** Compatibility relationships are encoded in the morphology itself, not computed separately. When constructing a valid MIDDLE, the compression pattern automatically encodes which other MIDDLEs it can co-occur with.
+
+**Why this matters:** Explains how the manuscript maintains compatibility coherence across 37,957 tokens without explicit lookup tables. The constraint is structural, not procedural.
+
+**Cross-references:** C383 (global type system), C475 (MIDDLE incompatibility), C512 (PP substrate), C517 (compression), C518 (enrichment)
+
+### C520 - System-Specific Exploitation Gradient
+**Tier:** 3 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+While the compatibility architecture (C519) is global, systems exploit it with different intensity. RI exploits compatibility encoding most intensively because material discrimination requires maximum coherence.
+
+**Exploitation Gradient:**
+| System | Enrichment | Purpose | Intensity |
+|--------|------------|---------|-----------|
+| RI (A-exclusive) | 6.8x | Material discrimination | HIGHEST |
+| AZC | 7.2x | Zone coherence | HIGH |
+| PP (shared) | 5.5x | Pipeline vocabulary | MEDIUM |
+| B-exclusive | 5.3x | Execution elaboration | BASELINE |
+
+**Interpretation:**
+- **RI highest:** Discrimination tokens must encode precise compatibility intersections (C516)
+- **AZC high:** Zone labels benefit from strong compatibility (limited vocabulary, high precision)
+- **PP medium:** Shared vocabulary trades some enrichment for cross-system validity
+- **B baseline:** Execution elaborations are constrained by grammar, not just compatibility
+
+**Why RI leads:** RI tokens encode `PP₁ ∩ PP₂ ∩ ... ∩ modifier` - each atom adds compatibility constraints. More atoms = stricter compatibility requirements = higher enrichment when satisfied.
+
+**Cross-references:** C516 (multi-atom composition), C519 (global architecture), C475 (incompatibility)
+
+---
+
+## Pharma Label Structure (C523-C524)
+
+### C523 - Pharma Label Vocabulary Bifurcation
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** PHARMA_LABEL_ANALYSIS (2026-01-23)
+
+Pharma section labels exhibit a two-tier vocabulary structure with complete disjunction between jar labels and content labels.
+
+**Jar Labels (container identifiers):**
+| Metric | Value |
+|--------|-------|
+| Total unique | 16 |
+| In Currier A | 2 (12.5%) |
+| In Currier B | 0 (0%) |
+| In AZC | 1 |
+| NOT in text | 14 (87.5%) |
+
+**Content Labels (plant specimens):**
+| Metric | Value |
+|--------|-------|
+| Total unique | 189 |
+| In Currier A | 101 (53%) |
+| PP-enriched | 58% (vs 33.5% baseline) |
+| Chi-square | 28.3, p < 0.0001 |
+
+**Key Finding:** Jar vs content token overlap = Jaccard 0.000 (zero shared tokens).
+
+**Interpretation:**
+- **Jar labels** = unique configuration identifiers (not part of working vocabulary)
+- **Content labels** = shared discrimination profiles (reusable, PP-enriched)
+
+Content labels being PP-enriched means they point to materials that propagate to B execution - "things that will be processed," not just identified. This confirms PP = pipeline participation (C504-C506).
+
+**Cross-references:** C498 (PP/RI bifurcation), C504-C506 (PP execution role), C517 (superstring compression)
+
+### C524 - Jar Label Morphological Compression
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** PHARMA_LABEL_ANALYSIS (2026-01-23)
+
+Jar labels exhibit elevated morphological compression via PP sub-component packing, consistent with "configuration signature" encoding.
+
+**Length Analysis:**
+| Population | Mean Length |
+|------------|-------------|
+| Currier A tokens | 6.0 |
+| Jar labels | 7.1 |
+
+**Sub-Component Density:**
+| Jar Label | MIDDLE | PP Atoms |
+|-----------|--------|----------|
+| yteoldy | yteol | 8 (yteo, yte, eol, teo, te, eo, yt, ol) |
+| tsholdy | tshol | 6 (tsho, tsh, sho, sh, ts, ol) |
+| keoraiiin | keorai | 5 (keo, or, eo, ai, ke) |
+| okoldody | oldo | 3 (do, ol, ld) |
+
+**Compression Mechanism:** Hinge-letter compression (ke→eo→or via shared letters 'e' and 'o').
+
+**Shorter Base Forms in Vocabulary:**
+- `okolky` contains: okol, kolky, olky, kol, olk, oko
+- `tsholdy` contains: sholdy, tshol, shol, tsho, oldy, sho
+- `yteoldy` contains: yteol, teol, oldy, teo, eol
+
+**Interpretation:** Jar labels are dense superstrings encoding multiple specification components. Their absence from the vocabulary (87.5% unique) suggests they are one-time "configuration signatures" rather than reusable vocabulary. This is consistent with C267.a (MIDDLE sub-component structure) applied at higher density.
+
+**Cross-references:** C267.a (sub-components), C517 (superstring compression), C523 (vocabulary bifurcation)
 
 ---
 

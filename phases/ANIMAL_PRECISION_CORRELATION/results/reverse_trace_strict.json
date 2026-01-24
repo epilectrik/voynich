@@ -1,0 +1,13 @@
+{
+  "candidate_folio": "f43v",
+  "folio_shared_middles": 28,
+  "folio_rare_middles": 3,
+  "rare_middles_list": [
+    "eor",
+    "ro",
+    "eet"
+  ],
+  "strict_candidates": [],
+  "high_overlap_candidates": [],
+  "ri_with_animal": []
+}

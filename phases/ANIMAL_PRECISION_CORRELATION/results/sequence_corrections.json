@@ -1,0 +1,325 @@
+{
+  "corrections": [
+    {
+      "id": 17,
+      "name": "Burretsch Blumen",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Blow Gilgen Blümlin",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Bonen Blügot",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Bonen",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "ventre equino",
+          "sand bath"
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Kruſe Basillen",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "name": "Bocks Blut",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "FLOW",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "FLOW": [
+          "collected"
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "name": "Blow Violen",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "name": "Ertber",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "h_HAZARD",
+        "LINK",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "h_HAZARD": [
+          "bury in",
+          "ant hill"
+        ],
+        "LINK": [
+          "8 days",
+          "until liquef"
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "name": "Holder Rinde",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "name": "Hunig",
+      "old_seq": [
+        "AUX",
+        "h_HAZARD",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "h_HAZARD",
+        "LINK",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "h_HAZARD": [
+          "dung",
+          "horse dung",
+          "bury in"
+        ],
+        "LINK": [
+          "14 days"
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "name": "Huner Magen",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "balneum"
+        ]
+      }
+    },
+    {
+      "id": 110,
+      "name": "Karten waſſer das darin ſtat",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "FLOW",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "FLOW": [
+          "filter",
+          "filtered"
+        ]
+      }
+    },
+    {
+      "id": 119,
+      "name": "Küetreck",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "FLOW",
+        "h_HAZARD",
+        "k_ENERGY",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "k_ENERGY": [
+          "redistill"
+        ],
+        "FLOW": [
+          "collected"
+        ],
+        "h_HAZARD": [
+          "dung"
+        ]
+      }
+    },
+    {
+      "id": 149,
+      "name": "Reben",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "FLOW",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "FLOW": [
+          "collected"
+        ]
+      }
+    },
+    {
+      "id": 159,
+      "name": "Regen würm",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "FLOW",
+        "h_HAZARD",
+        "LINK",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "FLOW": [
+          "collection",
+          "pour on"
+        ],
+        "h_HAZARD": [
+          "manure"
+        ],
+        "LINK": [
+          "soak",
+          "overnight"
+        ]
+      }
+    },
+    {
+      "id": 170,
+      "name": "Stern geſchütz",
+      "old_seq": [
+        "AUX",
+        "e_ESCAPE"
+      ],
+      "new_seq": [
+        "AUX",
+        "h_HAZARD",
+        "e_ESCAPE"
+      ],
+      "reasons": {
+        "h_HAZARD": [
+          "rotting"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+# ============================================================
+# RDR: Hennen (Chicken) - Working Extraction
+# ============================================================
+# Status: PARTIAL - Some fields need source verification
+# Source: brunschwig_materials_master.json + general principles
+# ============================================================
+
+---
+meta:
+  version: "2.0"
+  tier: 3
+  tier_meaning: "External alignment, non-binding, discardable"
+  recipe_id: "BRU-ANIMAL-002"
+  extraction_date: "2026-01-21"
+  analyst: "Claude"
+  provenance: ["C493", "C494", "brunschwig_materials_master.json"]
+  extraction_quality: "PARTIAL - OCR artifacts in source"
+
+# ============================================================
+# SECTION 1: IDENTIFICATION
+# ============================================================
+identification:
+  recipe_name_original: "Hennen"
+  recipe_name_english: "Chicken"
+  source_text: "Brunschwig, Liber de arte distillandi"
+  page_reference: "Line 10621"
+  chapter: "Animal waters section"
+
+  material_class:
+    category: "animal"
+    subcategory: "poultry"
+    specific_material: "chicken (whole bird)"
+    prefix_prediction: "ct"           # Registry-internal for animal class
+    material_behavior_class: "M-D"    # High-precision required
+
+  product_type: "PRECISION"
+  product_evidence: "Fire degree 4, material_source=animal in extraction"
+
+  provenance: ["C466", "C467", "F-BRU-001"]
+
+# ============================================================
+# SECTION 2: FIRE REGIME
+# ============================================================
+fire_regime:
+  brunschwig_degree: 4
+  degree_evidence: "Extracted as fire_degree: 4 in brunschwig_materials_master.json"
+
+  voynich_regime: "REGIME_4"
+  regime_mapping:
+    REGIME_4: "Precision-constrained - fourth degree boundary"
+
+  cei_band: "R2 < R1 < R4 < R3"
+  intensity_notes: |
+    Fourth degree normally FORBIDDEN ("nature rejects all coercion").
+    Animal materials are exception - require this intensity.
+    Creates maximum hazard exposure.
+
+  provenance: ["C179-C185", "C494"]
+
+# ============================================================
+# SECTION 3: SENSORY MONITORING
+# ============================================================
+sensory_monitoring:
+  modalities:
+    sound:
+      required: true                  # Inferred from distillation practice
+      indicators: ["bubbling", "boiling sounds"]
+      evidence: "TBD - Standard for distillation"
+      zone_affinity: "R"
+      mapping_confidence: "INFERRED"
+
+    sight:
+      required: true
+      indicators: ["vapor color", "liquid clarity"]
+      evidence: "TBD - Standard for distillation"
+      zone_affinity: "P"
+      mapping_confidence: "INFERRED"
+
+    smell:
+      required: true                  # Animal materials are odor-intensive
+      indicators: ["decomposition odor", "completion smell"]
+      evidence: "Implicit - animal materials have strong odor"
+      zone_affinity: "INDIRECT"
+      mapping_status: "constraint_substitution"
+      mapping_confidence: "INFERRED"
+
+    touch:
+      required: false
+      indicators: []
+      evidence: ""
+      zone_affinity: "S"
+      mapping_confidence: "NOT REQUIRED"
+
+    taste:
+      required: false
+      indicators: []
+      evidence: ""
+      zone_affinity: "INVERSE_S"
+      mapping_confidence: "NOT REQUIRED"
+
+  dominant_modality: "SMELL"          # Animal = odor-dominant
+  modality_count: 3
+
+  provenance: ["F-BRU-008", "F-BRU-009"]
+
+# ============================================================
+# SECTION 4: KERNEL ENGAGEMENT
+# ============================================================
+kernel_engagement:
+  k_involvement:
+    present: true
+    operations: ["fire management at fourth degree"]
+    evidence: "Fourth degree requires precise energy control"
+
+  h_involvement:
+    present: true
+    operations: ["phase separation"]
+    evidence: "Distillation requires phase management"
+
+  e_involvement:
+    present: true
+    operations: ["cooling", "equilibration"]
+    evidence: "instruction_sequence shows e_ESCAPE operations"
+    recovery_anchor: true
+
+  kernel_sequence_expected: "k→e→h"
+  h_to_k_suppression: true
+
+  provenance: ["C089", "C103-C107", "C332"]
+
+# ============================================================
+# SECTION 5: HAZARD EXPOSURE
+# ============================================================
+hazard_exposure:
+  classes_exposed:
+    PHASE_ORDERING:
+      exposed: true
+      evidence: "grammar_compliance shows PHASE_ORDERING violation"
+      examples: ["e_ESCAPE→AUX transition flagged"]
+
+    COMPOSITION_JUMP:
+      exposed: true
+      evidence: "Step 2 shows hazard_exposure: COMPOSITION_JUMP"
+      examples: ["fraction mixing risk"]
+
+    CONTAINMENT_TIMING:
+      exposed: true                   # Inferred - animal materials produce gases
+      evidence: "TBD - Organic decomposition produces gases"
+      examples: []
+
+    RATE_MISMATCH:
+      exposed: false
+      evidence: ""
+      examples: []
+
+    ENERGY_OVERSHOOT:
+      exposed: true                   # Fourth degree boundary
+      evidence: "Operating at forbidden boundary"
+      examples: ["scorching risk", "coercion damage"]
+
+  total_exposure_count: 4
+  dominant_class: "PHASE_ORDERING"
+
+  provenance: ["C109-C112"]
+
+# ============================================================
+# SECTION 6: RECOVERY ARCHITECTURE
+# ============================================================
+recovery_architecture:
+  retry_limit:
+    stated: "no more than twice"      # Brunschwig's general rule
+    implied_bound: 2
+    evidence: "General Brunschwig principle"
+
+  cooling_requirement:
+    mandatory: true
+    method: "TBD"
+    e_pathway: true                   # e_ESCAPE in instruction sequence
+
+  reversibility:
+    fully_reversible: false
+    reversible_until: "distillation begins"
+    time_symmetric: false
+
+  design_freedom:
+    hazard_cv: "0.04-0.11"
+    recovery_cv: "0.72-0.82"
+
+  provenance: ["C105", "C391", "C458"]
+
+# ============================================================
+# SECTION 7: SUPPRESSION PATTERNS
+# ============================================================
+suppression_patterns:
+  categorical_prohibitions:
+    - action: "Exceeding fourth degree"
+      voynich_mapping: "AGGRESSIVE strategy forbidden"
+      evidence: "Fourth degree is already at limit"
+
+  strategy_exclusions:
+    aggressive_forbidden: true
+    opportunistic_available: false
+
+  h_to_k_suppressed: true
+
+  provenance: ["C332", "C490"]
+
+# ============================================================
+# SECTION 8: JUDGMENT REQUIREMENTS
+# ============================================================
+judgment_requirements:
+  watch_closely:
+    temperature:
+      required: true
+      evidence: "Fourth degree requires vigilance"
+    phase_transition:
+      required: true
+      evidence: "Standard for distillation"
+    quality_purity:
+      required: true
+      evidence: "COMPOSITION_JUMP hazard flagged"
+    timing:
+      required: true
+      evidence: "gebꝛant im end des Appꝛillen (timing reference)"
+    material_state:
+      required: true
+      evidence: "Animal decomposition must be monitored"
+    stability:
+      required: true
+      evidence: "Fourth degree requires stability monitoring"
+
+  forbidden_intervention:
+    equilibrium_establishment:
+      forbidden: true
+    phase_transition_interrupt:
+      forbidden: true
+    purification_cycle_break:
+      forbidden: true
+
+  tacit_knowledge:
+    sensory_calibration:
+      required: true
+      evidence: "Must know correct odor progression"
+    equipment_feel:
+      required: true
+    timing_intuition:
+      required: true
+    trouble_recognition:
+      required: true
+
+  total_judgment_load: 13             # Maximum - precision animal recipe
+  tail_pressure_prediction: "high"
+
+  provenance: ["C477", "OJLM-1"]
+
+# ============================================================
+# SECTION 9: ZONE PROFILE
+# ============================================================
+zone_profile:
+  affinities:
+    C: 0.10
+    P: 0.25
+    R: 0.35                           # Sound monitoring
+    S: 0.30                           # REGIME_4 S-zone enriched (54.7%)
+
+  dominant_zone: "R"
+  regime_stratification: "REGIME_4: 54.7% S-zone affinity"
+
+  provenance: ["C443", "F-BRU-008", "F-BRU-009"]
+
+# ============================================================
+# SECTION 10: LINK PROFILE
+# ============================================================
+link_profile:
+  observation_phases:
+    count: 2                          # Estimated
+    descriptions: ["monitor distillation", "check completion"]
+
+  predicted_link_density: "high (>20%)"
+
+  provenance: ["C190", "C366"]
+
+# ============================================================
+# SECTION 11: CONVERGENCE PROFILE
+# ============================================================
+convergence_profile:
+  target_state:
+    state_c: true
+    transitional: false
+    initial_reset: false
+
+  clean_termination: true
+  completion_signals: ["clear distillate", "odor change"]
+
+  provenance: ["C074", "C323"]
+
+# ============================================================
+# SECTION 12: SISTER PREDICTION
+# ============================================================
+sister_prediction:
+  ch_sh_choice:
+    predicted: "ch (precision)"
+    evidence: "Fourth degree = narrow tolerance"
+
+  qo_escape_density: "low"
+
+  provenance: ["C408", "C412"]
+
+# ============================================================
+# SECTION 13: INSTRUCTION CLASS MAPPING
+# ============================================================
+instruction_class_mapping:
+  # From extracted data:
+  # instruction_sequence: ["e_ESCAPE", "AUX", "UNKNOWN", "e_ESCAPE"]
+
+  role_classes:
+    CORE_CONTROL:
+      engaged: true
+    ENERGY_OPERATOR:
+      engaged: true
+    AUXILIARY:
+      engaged: true
+      evidence: "AUX in instruction sequence"
+    HIGH_IMPACT:
+      engaged: false                  # Forbidden in precision
+    LINK:
+      engaged: true
+
+  total_classes_engaged: 25           # Estimate
+  control_granularity: "medium (10-25)"
+
+  provenance: ["C121", "C124"]
+
+# ============================================================
+# SECTION 14: VOCABULARY TRACK
+# ============================================================
+vocabulary_track:
+  pipeline_participating:
+    predicted_fraction: 0.3
+
+  registry_internal:
+    predicted_fraction: 0.7           # Animal class = high RI
+
+  material_specificity: "specific"
+
+  provenance: ["C498"]
+
+# ============================================================
+# SECTION 15: COMPATIBILITY
+# ============================================================
+compatibility:
+  middle_incompatibility:
+    predicted_legal_pairs: "narrow"
+
+  cross_recipe:
+    compatible_with: ["BRU-ANIMAL-001 (cow dung)", "other animal materials"]
+    incompatible_with: ["plant materials (different class)"]
+
+  provenance: ["C442", "C475"]
+
+# ============================================================
+# SECTION 16: WORKFLOW PHASES
+# ============================================================
+workflow_phases:
+  preparation:
+    steps: ["prepare chicken", "set up apparatus"]
+    zone_affinity: "C"
+
+  execution:
+    steps: ["distillation at fourth degree"]
+    zone_affinity: "P/R"
+    intervention_points: ["temperature adjustment"]
+
+  completion:
+    steps: ["collection of distillate"]
+    zone_affinity: "S"
+
+  total_phase_count: 3
+  curriculum_position: "late"
+
+  provenance: ["X.25"]
+
+# ============================================================
+# SECTION 17: PROCESS (UNMAPPED)
+# ============================================================
+process:
+  stage_count: null                   # Not clear from extraction
+  equipment:
+    mentioned: []
+    note: "Not specified in extraction"
+
+  duration:
+    stated: "gebꝛant im end des Appꝛillen"  # "distilled at end of April"
+    note: "Timing reference, not duration"
+
+# ============================================================
+# SECTION 18: DERIVED CONSTRAINTS
+# ============================================================
+derived_constraints:
+  primary_mappings:
+    recipe_regime_cluster: "REGIME_4"
+    zone_dominant: "R"
+    hazard_dominant: "PHASE_ORDERING"
+    judgment_load: 13
+
+  secondary_mappings:
+    sli_estimate: "high"
+    constraint_substitution: "High SLI → tight grammar"
+
+  triangulation_vector:
+    regime: 4
+    product_type: "PRECISION"
+    material_class: "animal"
+    hazard_dominant: "PHASE_ORDERING"
+    zone_dominant: "R"
+    zone_r: true
+    zone_p: true
+    judgment_load: 13
+    escape_prediction: "low"
+    precision_level: "high"
+    kernel_pattern: "k→e dominant"
+
+  filter_function: |
+    B_candidates = (
+      folios_in_REGIME(4)
+      ∩ folios_with_zone_affinity(R)
+      ∩ folios_with_hazard_profile(PHASE_ORDERING)
+      ∩ folios_with_escape_rate(low)
+    )
+
+# ============================================================
+# EXTRACTION QUALITY NOTES
+# ============================================================
+extraction_quality:
+  source_issues:
+    - "OCR artifacts in procedural_steps"
+    - "Step 3 is garbled: 'N IN feng „ V'"
+    - "Steps may be contaminated with adjacent entries"
+
+  confident_fields:
+    - "material_class: animal (explicit)"
+    - "fire_degree: 4 (explicit)"
+    - "predicted_regime: REGIME_4 (computed)"
+    - "hazard_exposure: PHASE_ORDERING (from grammar check)"
+    - "instruction_sequence: [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE]"
+
+  inferred_fields:
+    - "sensory_monitoring (from general animal material principles)"
+    - "judgment_requirements (from precision process requirements)"
+    - "zone_profile (from REGIME_4 patterns)"
+
+  needs_verification:
+    - "specific procedural steps"
+    - "equipment used"
+    - "exact timing requirements"
+    - "uses (5 listed but not extracted)"
+
+# ============================================================
+# RAW DATA FROM EXTRACTION
+# ============================================================
+raw_extraction:
+  recipe_id: "From brunschwig_materials_master.json"
+  name_normalized: "ennen"
+  fire_degree: 4
+  predicted_regime: "REGIME_4"
+  predicted_product_type: "PRECISION"
+  uses_count: 5
+  extraction_status: "EXTRACTED"
+  entry_text_length: 3531
+  instruction_sequence: ["e_ESCAPE", "AUX", "UNKNOWN", "e_ESCAPE"]
+  grammar_compliance:
+    violations: 1
+    violation_details:
+      - transition: ["e_ESCAPE", "AUX"]
+        hazard_class: "PHASE_ORDERING"
+
+# ============================================================
+# ANALYSIS NOTES
+# ============================================================
+analysis_notes: |
+  Hennen (Chicken) Water - Animal Material Distillation
+
+  KEY OBSERVATIONS:
+  1. Clearly animal material (category explicit)
+  2. Fourth degree fire required (degree 4 explicit)
+  3. Maps to REGIME_4 with high confidence
+  4. Grammar violation detected: e_ESCAPE→AUX (PHASE_ORDERING)
+  5. Timing reference: "end of April" - seasonal constraint
+
+  TRIANGULATION CONFIDENCE:
+  - REGIME: HIGH (explicit fire degree 4)
+  - Zone affinity: MODERATE (inferred from REGIME_4 patterns)
+  - Hazard exposure: MODERATE (one violation flagged)
+  - Judgment load: INFERRED (based on precision requirements)
+
+  COMPARISON TO KÜETRECK:
+  - Same material class (animal)
+  - Same fire degree (4)
+  - Same REGIME (REGIME_4)
+  - Similar triangulation vector
+  - Less procedural detail available
+
+  NEXT STEPS:
+  - Verify procedural steps with better source
+  - Extract the 5 uses listed
+  - Compare with other animal recipes for patterns
+
+# ============================================================
+# END OF RDR: Hennen
+# ============================================================

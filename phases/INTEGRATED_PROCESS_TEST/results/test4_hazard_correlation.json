@@ -1,0 +1,36 @@
+{
+  "test": "Test 4: Non-Thermal Hazard Analysis",
+  "hypothesis": "H1: Prep-heavy recipes show elevated hazard markers",
+  "correlations": {
+    "prep_vs_diversity": {
+      "r": 0.04435462280326116,
+      "p": 0.9556453771967388
+    },
+    "hazard_vs_da": {
+      "r": 0.9216036246092798,
+      "p": 0.0783963753907202
+    }
+  },
+  "regime_data": {
+    "prep_density": {
+      "REGIME_1": 0.5104166666666666,
+      "REGIME_2": 0.5007002801120448,
+      "REGIME_3": 0.5021929824561403,
+      "REGIME_4": 0.5333333333333333
+    },
+    "vocab_diversity": {
+      "REGIME_1": 0.2364535888173394,
+      "REGIME_2": 0.4472833117723157,
+      "REGIME_3": 0.36457058967457795,
+      "REGIME_4": 0.4075075075075075
+    },
+    "hazard_proportion": {
+      "REGIME_1": 0.019230769230769232,
+      "REGIME_2": 0.00796812749003984,
+      "REGIME_3": 0.012658227848101266,
+      "REGIME_4": 0.05555555555555555
+    }
+  },
+  "verdict": "INCONCLUSIVE",
+  "explanation": "Strong but not significant correlations (n=4 too small)"
+}

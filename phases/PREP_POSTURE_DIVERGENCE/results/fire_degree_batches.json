@@ -1,0 +1,2165 @@
+{
+  "total_missing": 235,
+  "batches": [
+    {
+      "batch_num": 1,
+      "start_id": 11,
+      "end_id": 50,
+      "count": 40,
+      "recipes": [
+        [
+          11,
+          "mandrake",
+          {
+            "start": 4300,
+            "end": 4371,
+            "procedure_lines": "4351-4352"
+          }
+        ],
+        [
+          12,
+          "angelica",
+          {
+            "start": 4374,
+            "end": 4413
+          }
+        ],
+        [
+          13,
+          "scabious",
+          {
+            "start": 4416,
+            "end": 4470,
+            "procedure_lines": "4400-4403"
+          }
+        ],
+        [
+          14,
+          "magpie",
+          {
+            "start": 4471,
+            "end": 4493,
+            "procedure_lines": "4476-4479"
+          }
+        ],
+        [
+          15,
+          "duck blood",
+          {
+            "start": 4499,
+            "end": 4536,
+            "procedure_lines": "4475-4478"
+          }
+        ],
+        [
+          16,
+          "borage herb",
+          {
+            "start": 4537,
+            "end": 4646,
+            "procedure_lines": "4547-4551"
+          }
+        ],
+        [
+          17,
+          "borage flower",
+          {
+            "start": 4649,
+            "end": 4754,
+            "procedure_lines": "4657-4664"
+          }
+        ],
+        [
+          18,
+          "henbane",
+          {
+            "start": 4785,
+            "end": 4862,
+            "procedure_lines": "4807-4821"
+          }
+        ],
+        [
+          19,
+          "blue iris flower",
+          {
+            "start": 4864,
+            "end": 4937
+          }
+        ],
+        [
+          20,
+          "blue iris root",
+          {
+            "start": 4940,
+            "end": 5041,
+            "procedure_lines": "4944-4946"
+          }
+        ],
+        [
+          21,
+          "blue iris stamen/pistil",
+          {
+            "start": 5044,
+            "end": 5059,
+            "procedure_lines": "5050-5053"
+          }
+        ],
+        [
+          22,
+          "birch leaf",
+          {
+            "start": 5062,
+            "end": 5096,
+            "procedure_lines": "5085-5088"
+          }
+        ],
+        [
+          23,
+          "birch sap",
+          {
+            "start": 5099,
+            "end": 5124,
+            "procedure_lines": "5102-5107"
+          }
+        ],
+        [
+          24,
+          "purslane",
+          {
+            "start": 5187,
+            "end": 5283,
+            "procedure_lines": "5201-5204"
+          }
+        ],
+        [
+          25,
+          "burnet saxifrage",
+          {
+            "start": 5285,
+            "end": 5343,
+            "procedure_lines": "5306-5311"
+          }
+        ],
+        [
+          26,
+          "dogwood/cornel leaf",
+          {
+            "start": 5376,
+            "end": 5455,
+            "procedure_lines": "5410-5413, 5437-5438"
+          }
+        ],
+        [
+          27,
+          "dogwood/cornel flower",
+          {
+            "start": 5458,
+            "end": 5503,
+            "procedure_lines": "5467-5469"
+          }
+        ],
+        [
+          28,
+          "watercress",
+          {
+            "start": 5506,
+            "end": 5544,
+            "procedure_lines": "5519-5522"
+          }
+        ],
+        [
+          29,
+          "water mint",
+          {
+            "start": 5547,
+            "end": 5608,
+            "procedure_lines": "5589-5591"
+          }
+        ],
+        [
+          30,
+          "burnt lettuce",
+          {
+            "start": 5611,
+            "end": 5647
+          }
+        ],
+        [
+          31,
+          "bean flower",
+          {
+            "start": 5649,
+            "end": 5707,
+            "procedure_lines": "5659-5669"
+          }
+        ],
+        [
+          32,
+          "bean (whole)",
+          {
+            "start": 5710,
+            "end": 5749,
+            "procedure_lines": "5740-5742"
+          }
+        ],
+        [
+          33,
+          "bean pod",
+          {
+            "start": 5752,
+            "end": 5762,
+            "procedure_lines": "5755-5757"
+          }
+        ],
+        [
+          34,
+          "bean herb",
+          {
+            "start": 5765,
+            "end": 5792,
+            "procedure_lines": "5773-5774"
+          }
+        ],
+        [
+          35,
+          "large basil",
+          {
+            "start": 5794,
+            "end": 5897,
+            "procedure_lines": "5811-5812"
+          }
+        ],
+        [
+          36,
+          "curly basil / clove basil",
+          {
+            "start": 5838,
+            "end": 5880,
+            "procedure_lines": "5848-5851"
+          }
+        ],
+        [
+          37,
+          "blue may flower",
+          {
+            "start": 5916,
+            "end": 5925,
+            "procedure_lines": "5919-5921"
+          }
+        ],
+        [
+          38,
+          "goat blood",
+          {
+            "start": 5927,
+            "end": 5946,
+            "procedure_lines": "5939-5942"
+          }
+        ],
+        [
+          39,
+          "rose hip leaf / dog rose leaf",
+          {
+            "start": 5949,
+            "end": 5987,
+            "procedure_lines": "5977-5982"
+          }
+        ],
+        [
+          40,
+          "betony",
+          {
+            "start": 5990,
+            "end": 6181,
+            "procedure_lines": "6028-6034"
+          }
+        ],
+        [
+          41,
+          "beech leaf",
+          {
+            "start": 6216,
+            "end": 6227,
+            "procedure_lines": "6221-6223"
+          }
+        ],
+        [
+          42,
+          "goat's beard / salsify",
+          {
+            "start": 6230,
+            "end": 6260,
+            "procedure_lines": "6251-6255"
+          }
+        ],
+        [
+          43,
+          "blackberry",
+          {
+            "start": 6263,
+            "end": 6296,
+            "procedure_lines": "6281-6285"
+          }
+        ],
+        [
+          44,
+          "pennyroyal",
+          {
+            "start": 6299,
+            "end": 6371,
+            "procedure_lines": "6304-6306"
+          }
+        ],
+        [
+          45,
+          "blue violet",
+          {
+            "start": 6395,
+            "end": 6529,
+            "procedure_lines": "6405-6407"
+          }
+        ],
+        [
+          46,
+          "mugwort",
+          {
+            "start": 6571,
+            "end": 6692,
+            "procedure_lines": "6610-6624"
+          }
+        ],
+        [
+          47,
+          "broadleaf plantain",
+          {
+            "start": 6694,
+            "end": 6965,
+            "procedure_lines": "CORRUPTED"
+          }
+        ],
+        [
+          48,
+          "broadleaf plantain seed",
+          {
+            "start": 6971,
+            "end": 6985,
+            "procedure_lines": "6974-6975"
+          }
+        ],
+        [
+          49,
+          "broadleaf plantain bloom",
+          {
+            "start": 6990,
+            "end": 7030,
+            "procedure_lines": "7004-7011"
+          }
+        ],
+        [
+          50,
+          "herb bennet / blessed herb",
+          {
+            "start": 7035,
+            "end": 7079,
+            "procedure_lines": "7039-7042"
+          }
+        ]
+      ]
+    },
+    {
+      "batch_num": 2,
+      "start_id": 51,
+      "end_id": 90,
+      "count": 40,
+      "recipes": [
+        [
+          51,
+          "parsnip",
+          {
+            "start": 7080,
+            "end": 7133,
+            "procedure_lines": "7115-7119"
+          }
+        ],
+        [
+          52,
+          "mallow",
+          {
+            "start": 7135,
+            "end": 7257,
+            "procedure_lines": "7153-7160"
+          }
+        ],
+        [
+          53,
+          "mallow bloom",
+          {
+            "start": 7260,
+            "end": 7280,
+            "procedure_lines": "7276-7279"
+          }
+        ],
+        [
+          54,
+          "self-heal / prunella",
+          {
+            "start": 7282,
+            "end": 7394,
+            "procedure_lines": "7290-7292"
+          }
+        ],
+        [
+          55,
+          "mercury herb / annual mercury",
+          {
+            "start": 7398,
+            "end": 7466,
+            "procedure_lines": "7445-7447"
+          }
+        ],
+        [
+          56,
+          "chamomile",
+          {
+            "start": 7480,
+            "end": 7659,
+            "procedure_lines": "7529-7532"
+          }
+        ],
+        [
+          57,
+          "blessed thistle",
+          {
+            "start": 7662,
+            "end": 7838,
+            "procedure_lines": "7678-7681"
+          }
+        ],
+        [
+          58,
+          "bedstraw / madder",
+          {
+            "start": 7850,
+            "end": 7890,
+            "procedure_lines": "7864-7866"
+          }
+        ],
+        [
+          59,
+          "crosswort",
+          {
+            "start": 7894,
+            "end": 7924,
+            "procedure_lines": "7901-7904"
+          }
+        ],
+        [
+          60,
+          "small burning nettle",
+          {
+            "start": 7930,
+            "end": 7958,
+            "procedure_lines": "7943-7946"
+          }
+        ],
+        [
+          61,
+          "cabbage",
+          {
+            "start": 7961,
+            "end": 7996,
+            "procedure_lines": "7975-7977"
+          }
+        ],
+        [
+          62,
+          "centaury / thousand gold herb",
+          {
+            "start": 8008,
+            "end": 8144,
+            "procedure_lines": "8061-8064"
+          }
+        ],
+        [
+          63,
+          "fumitory / dove's crop",
+          {
+            "start": 8146,
+            "end": 8270,
+            "procedure_lines": "8157-8161"
+          }
+        ],
+        [
+          64,
+          "valerian",
+          {
+            "start": 8275,
+            "end": 8405,
+            "procedure_lines": "8299-8302"
+          }
+        ],
+        [
+          65,
+          "sow thistle / prickly lettuce",
+          {
+            "start": 8410,
+            "end": 8475,
+            "procedure_lines": "8427-8431"
+          }
+        ],
+        [
+          66,
+          "strawberry",
+          {
+            "start": 8486,
+            "end": 8606,
+            "procedure_lines": "8566-8576 (alternate methods)"
+          }
+        ],
+        [
+          67,
+          "gentian",
+          {
+            "start": 8609,
+            "end": 8660,
+            "procedure_lines": "8623-8633"
+          }
+        ],
+        [
+          68,
+          "ash tree leaves",
+          {
+            "start": 8663,
+            "end": 8723,
+            "procedure_lines": "8691-8695"
+          }
+        ],
+        [
+          69,
+          "fennel",
+          {
+            "start": 8727,
+            "end": 8892,
+            "procedure_lines": "8751-8755"
+          }
+        ],
+        [
+          70,
+          "milk thistle / Our Lady's this",
+          {
+            "start": 8917,
+            "end": 8981,
+            "procedure_lines": "8924-8926"
+          }
+        ],
+        [
+          71,
+          "dropwort",
+          {
+            "start": 9015,
+            "end": 9027,
+            "procedure_lines": "9016-9018"
+          }
+        ],
+        [
+          72,
+          "pansy / heartsease",
+          {
+            "start": 9033,
+            "end": 9080,
+            "procedure_lines": "9054-9056"
+          }
+        ],
+        [
+          73,
+          "cinquefoil / five-finger grass",
+          {
+            "start": 9111,
+            "end": 9168,
+            "procedure_lines": "9118-9120"
+          }
+        ],
+        [
+          74,
+          "golden bugle / middle comfrey",
+          {
+            "start": 9180,
+            "end": 9268,
+            "procedure_lines": "9198-9199"
+          }
+        ],
+        [
+          75,
+          "large bugle",
+          {
+            "start": 9274,
+            "end": 9290,
+            "procedure_lines": "9278-9279"
+          }
+        ],
+        [
+          76,
+          "germander / wall germander",
+          {
+            "start": 9309,
+            "end": 9345,
+            "procedure_lines": "9317-9320"
+          }
+        ],
+        [
+          77,
+          "silverweed / goosefoot",
+          {
+            "start": 9365,
+            "end": 9418,
+            "procedure_lines": "9377-9379"
+          }
+        ],
+        [
+          78,
+          "silverweed flowers",
+          {
+            "start": 9427,
+            "end": 9473,
+            "procedure_lines": "9429-9431"
+          }
+        ],
+        [
+          79,
+          "ground ivy / gill-over-the-gro",
+          {
+            "start": 9469,
+            "end": 9548,
+            "procedure_lines": "9479-9483"
+          }
+        ],
+        [
+          80,
+          "wallflower / yellow gillyflowe",
+          {
+            "start": 9551,
+            "end": 9638,
+            "procedure_lines": "9561-9569"
+          }
+        ],
+        [
+          81,
+          "yarrow / milfoil",
+          {
+            "start": 9670,
+            "end": 9690,
+            "procedure_lines": "MISSING - OCR corruption"
+          }
+        ],
+        [
+          82,
+          "golden clover / liverwort",
+          {
+            "start": 9693,
+            "end": 9705,
+            "procedure_lines": "9696-9698"
+          }
+        ],
+        [
+          83,
+          "yellow iris / yellow flag",
+          {
+            "start": 9711,
+            "end": 9744,
+            "procedure_lines": "9736-9739"
+          }
+        ],
+        [
+          84,
+          "garden cress",
+          {
+            "start": 9753,
+            "end": 9792,
+            "procedure_lines": "9765-9767"
+          }
+        ],
+        [
+          85,
+          "toadflax / butter-and-eggs",
+          {
+            "start": 9811,
+            "end": 9854,
+            "procedure_lines": "9831-9837"
+          }
+        ],
+        [
+          86,
+          "elder bark (middle bark)",
+          {
+            "start": 9860,
+            "end": 9878,
+            "procedure_lines": "9865-9873"
+          }
+        ],
+        [
+          87,
+          "elder leaves",
+          {
+            "start": 9884,
+            "end": 9918,
+            "procedure_lines": "9906-9909"
+          }
+        ],
+        [
+          88,
+          "elder flowers",
+          {
+            "start": 9921,
+            "end": 10003,
+            "procedure_lines": "9929-9933"
+          }
+        ],
+        [
+          89,
+          "hound's tongue",
+          {
+            "start": 10009,
+            "end": 10038,
+            "procedure_lines": "10013-10016"
+          }
+        ],
+        [
+          90,
+          "hart's tongue fern",
+          {
+            "start": 10044,
+            "end": 10166,
+            "procedure_lines": "10063-10064"
+          }
+        ]
+      ]
+    },
+    {
+      "batch_num": 3,
+      "start_id": 91,
+      "end_id": 130,
+      "count": 40,
+      "recipes": [
+        [
+          91,
+          "honey",
+          {
+            "start": 10169,
+            "end": 10254,
+            "procedure_lines": "10181-10185"
+          }
+        ],
+        [
+          92,
+          "houseleek / thunder-bar",
+          {
+            "start": 10257,
+            "end": 10351,
+            "procedure_lines": "10271-10273"
+          }
+        ],
+        [
+          93,
+          "dogwood",
+          {
+            "start": 10353,
+            "end": 10374,
+            "procedure_lines": "10366-10368"
+          }
+        ],
+        [
+          94,
+          "cowslip / primrose",
+          {
+            "start": 10383,
+            "end": 10412,
+            "procedure_lines": "10399-10402"
+          }
+        ],
+        [
+          95,
+          "wild ginger / asarabacca",
+          {
+            "start": 10423,
+            "end": 10466,
+            "procedure_lines": "10427-10431"
+          }
+        ],
+        [
+          96,
+          "chicken stomach lining",
+          {
+            "start": 10469,
+            "end": 10486,
+            "procedure_lines": "10477-10479"
+          }
+        ],
+        [
+          97,
+          "heather",
+          {
+            "start": 10487,
+            "end": 10512,
+            "procedure_lines": "10501-10505"
+          }
+        ],
+        [
+          98,
+          "birthwort",
+          {
+            "start": 10515,
+            "end": 10596,
+            "procedure_lines": "10558-10560"
+          }
+        ],
+        [
+          99,
+          "chickweed",
+          {
+            "start": 10599,
+            "end": 10614,
+            "procedure_lines": "MISSING - OCR corruption"
+          }
+        ],
+        [
+          100,
+          "hen (chicken)",
+          {
+            "start": 10615,
+            "end": 10657,
+            "procedure_lines": "10633-10647"
+          }
+        ],
+        [
+          101,
+          "hartshorn / deer antler",
+          {
+            "start": 10660,
+            "end": 10744,
+            "procedure_lines": "10703-10716"
+          }
+        ],
+        [
+          102,
+          "hops",
+          {
+            "start": 10752,
+            "end": 10798,
+            "procedure_lines": "10765-10773"
+          }
+        ],
+        [
+          103,
+          "restharrow",
+          {
+            "start": 10800,
+            "end": 10816,
+            "procedure_lines": "10809-10810"
+          }
+        ],
+        [
+          104,
+          "St. John's wort / heathen woun",
+          {
+            "start": 10822,
+            "end": 10935,
+            "procedure_lines": "10867-10873"
+          }
+        ],
+        [
+          105,
+          "rose hip / dog rose",
+          {
+            "start": 10938,
+            "end": 10964,
+            "procedure_lines": "10956-10958"
+          }
+        ],
+        [
+          106,
+          "vervain / verbena",
+          {
+            "start": 10986,
+            "end": 11120,
+            "procedure_lines": "11004-11007"
+          }
+        ],
+        [
+          107,
+          "winter cherry / Chinese lanter",
+          {
+            "start": 11123,
+            "end": 11194,
+            "procedure_lines": "11147-11150"
+          }
+        ],
+        [
+          108,
+          "hyssop",
+          {
+            "start": 11197,
+            "end": 11235,
+            "procedure_lines": "11203-11204 (fragmentary)"
+          }
+        ],
+        [
+          109,
+          "marshmallow root",
+          {
+            "start": 11238,
+            "end": 11301,
+            "procedure_lines": "FRAGMENTARY"
+          }
+        ],
+        [
+          110,
+          "periwinkle",
+          {
+            "start": 11304,
+            "end": 11367,
+            "procedure_lines": "11352-11354"
+          }
+        ],
+        [
+          111,
+          "teasel water",
+          {
+            "start": 11388,
+            "end": 11459,
+            "procedure_lines": "11396-11398"
+          }
+        ],
+        [
+          112,
+          "teasel water (macerated)",
+          {
+            "start": 11465,
+            "end": 11507,
+            "procedure_lines": "11466-11470"
+          }
+        ],
+        [
+          113,
+          "cow parsley water",
+          {
+            "start": 11517,
+            "end": 11546,
+            "procedure_lines": "NONE"
+          }
+        ],
+        [
+          114,
+          "chervil water",
+          {
+            "start": 11549,
+            "end": 11613,
+            "procedure_lines": "11565-11569"
+          }
+        ],
+        [
+          115,
+          "garlic water",
+          {
+            "start": 11626,
+            "end": 11693,
+            "procedure_lines": "11646-11650"
+          }
+        ],
+        [
+          116,
+          "clover water",
+          {
+            "start": 11696,
+            "end": 11729,
+            "procedure_lines": "11717-11718"
+          }
+        ],
+        [
+          117,
+          "quince water",
+          {
+            "start": 11732,
+            "end": 11780,
+            "procedure_lines": "11753-11760"
+          }
+        ],
+        [
+          118,
+          "quince blossom water",
+          {
+            "start": 11783,
+            "end": 11818,
+            "procedure_lines": "11785-11786"
+          }
+        ],
+        [
+          119,
+          "gourd/pumpkin water",
+          {
+            "start": 11820,
+            "end": 11889,
+            "procedure_lines": "11834-11837"
+          }
+        ],
+        [
+          120,
+          "horsetail water",
+          {
+            "start": 11890,
+            "end": 11993,
+            "procedure_lines": "11926-11929"
+          }
+        ],
+        [
+          121,
+          "cow dung water",
+          {
+            "start": 11995,
+            "end": 12076,
+            "procedure_lines": "11998-12022"
+          }
+        ],
+        [
+          122,
+          "calf blood water",
+          {
+            "start": 12083,
+            "end": 12109,
+            "procedure_lines": "12087-12091"
+          }
+        ],
+        [
+          123,
+          "calf blood and lung water",
+          {
+            "start": 12110,
+            "end": 12129,
+            "procedure_lines": "12117-12121"
+          }
+        ],
+        [
+          124,
+          "calf liver water",
+          {
+            "start": 12132,
+            "end": 12149,
+            "procedure_lines": "12140-12144"
+          }
+        ],
+        [
+          125,
+          "corn poppy water",
+          {
+            "start": 12171,
+            "end": 12337,
+            "procedure_lines": "12224-12226"
+          }
+        ],
+        [
+          126,
+          "cabbage water",
+          {
+            "start": 12313,
+            "end": 12378,
+            "procedure_lines": "12321-12322"
+          }
+        ],
+        [
+          127,
+          "capon water",
+          {
+            "start": 12381,
+            "end": 12446,
+            "procedure_lines": "12403-12415"
+          }
+        ],
+        [
+          128,
+          "lettuce water",
+          {
+            "start": 12453,
+            "end": 12561,
+            "procedure_lines": "12484-12487"
+          }
+        ],
+        [
+          129,
+          "lovage water",
+          {
+            "start": 12577,
+            "end": 12641,
+            "procedure_lines": "12585-12589"
+          }
+        ],
+        [
+          130,
+          "linden blossom water",
+          {
+            "start": 12644,
+            "end": 12776,
+            "procedure_lines": "12665-12674"
+          }
+        ]
+      ]
+    },
+    {
+      "batch_num": 4,
+      "start_id": 131,
+      "end_id": 170,
+      "count": 40,
+      "recipes": [
+        [
+          131,
+          "leek water",
+          {
+            "start": 12779,
+            "end": 12835,
+            "procedure_lines": "12805-12806"
+          }
+        ],
+        [
+          132,
+          "honeysuckle water",
+          {
+            "start": 12837,
+            "end": 13005,
+            "procedure_lines": "12877-12880"
+          }
+        ],
+        [
+          133,
+          "liverwort water",
+          {
+            "start": 13009,
+            "end": 13096,
+            "procedure_lines": "13067-13071"
+          }
+        ],
+        [
+          134,
+          "lavender water",
+          {
+            "start": 13099,
+            "end": 13227,
+            "procedure_lines": "13138-13141"
+          }
+        ],
+        [
+          135,
+          "lemon balm / melissa water",
+          {
+            "start": 13218,
+            "end": 13519,
+            "procedure_lines": "FRAGMENTARY"
+          }
+        ],
+        [
+          136,
+          "lily of the valley water",
+          {
+            "start": 13520,
+            "end": 13617,
+            "procedure_lines": "13552-13554"
+          }
+        ],
+        [
+          137,
+          "stonecrop / wall pepper water",
+          {
+            "start": 13640,
+            "end": 13672,
+            "procedure_lines": "LOST"
+          }
+        ],
+        [
+          138,
+          "marjoram water",
+          {
+            "start": 13675,
+            "end": 13745,
+            "procedure_lines": "13701-13704"
+          }
+        ],
+        [
+          139,
+          "gromwell water",
+          {
+            "start": 13748,
+            "end": 13776,
+            "procedure_lines": "13765-13771"
+          }
+        ],
+        [
+          140,
+          "bistort / snakeweed water",
+          {
+            "start": 13806,
+            "end": 13914,
+            "procedure_lines": "13851-13855"
+          }
+        ],
+        [
+          141,
+          "catnip / catmint water",
+          {
+            "start": 13926,
+            "end": 14042,
+            "procedure_lines": "13966-13970"
+          }
+        ],
+        [
+          142,
+          "nightshade water",
+          {
+            "start": 14045,
+            "end": 14189,
+            "procedure_lines": "14070-14072"
+          }
+        ],
+        [
+          143,
+          "nettle water",
+          {
+            "start": 14192,
+            "end": 14276,
+            "procedure_lines": "14208-14210"
+          }
+        ],
+        [
+          144,
+          "eyebright water",
+          {
+            "start": 14302,
+            "end": 14338,
+            "procedure_lines": "14316-14318"
+          }
+        ],
+        [
+          145,
+          "birthwort water (long type)",
+          {
+            "start": 14340,
+            "end": 14487,
+            "procedure_lines": "14368-14382"
+          }
+        ],
+        [
+          146,
+          "Greek sage water / ear-sage wa",
+          {
+            "start": 14494,
+            "end": 14514,
+            "procedure_lines": "14531-14533"
+          }
+        ],
+        [
+          147,
+          "borage / bugloss water",
+          {
+            "start": 14537,
+            "end": 14752,
+            "procedure_lines": "14565-14572"
+          }
+        ],
+        [
+          148,
+          "wild apple water",
+          {
+            "start": 14770,
+            "end": 14804,
+            "procedure_lines": "14777"
+          }
+        ],
+        [
+          149,
+          "apple blossom water",
+          {
+            "start": 14855,
+            "end": 14881,
+            "procedure_lines": "14872-14876"
+          }
+        ],
+        [
+          150,
+          "ox blood water",
+          {
+            "start": 14884,
+            "end": 14937,
+            "procedure_lines": "14908-14913"
+          }
+        ],
+        [
+          151,
+          "chanterelle / mushroom water",
+          {
+            "start": 14956,
+            "end": 15024,
+            "procedure_lines": "14989-14991"
+          }
+        ],
+        [
+          152,
+          "parsley water",
+          {
+            "start": 15025,
+            "end": 15073,
+            "procedure_lines": "15055-15058"
+          }
+        ],
+        [
+          153,
+          "dandelion stem water",
+          {
+            "start": 15076,
+            "end": 15152,
+            "procedure_lines": "15129-15132"
+          }
+        ],
+        [
+          154,
+          "dandelion flower water",
+          {
+            "start": 15155,
+            "end": 15189,
+            "procedure_lines": "15165-15168"
+          }
+        ],
+        [
+          155,
+          "peach leaf water",
+          {
+            "start": 15192,
+            "end": 15248,
+            "procedure_lines": "15220-15223"
+          }
+        ],
+        [
+          156,
+          "peach blossom water",
+          {
+            "start": 15251,
+            "end": 15271,
+            "procedure_lines": "15256-15263"
+          }
+        ],
+        [
+          157,
+          "broom flower water",
+          {
+            "start": 15272,
+            "end": 15322,
+            "procedure_lines": "15296-15299"
+          }
+        ],
+        [
+          158,
+          "peony water (tentative)",
+          {
+            "start": 15325,
+            "end": 15339,
+            "procedure_lines": "MISSING"
+          }
+        ],
+        [
+          159,
+          "scabious water (broad-leaved t",
+          {
+            "start": 15340,
+            "end": 15370,
+            "procedure_lines": "15357-15364"
+          }
+        ],
+        [
+          160,
+          "wild thyme water",
+          {
+            "start": 15376,
+            "end": 15497,
+            "procedure_lines": "15398-15401"
+          }
+        ],
+        [
+          161,
+          "colchicum / meadow saffron ROO",
+          {
+            "start": 15500,
+            "end": 15558,
+            "procedure_lines": "15534-15536"
+          }
+        ],
+        [
+          162,
+          "colchicum / meadow saffron FLO",
+          {
+            "start": 15561,
+            "end": 15608,
+            "procedure_lines": "15596-15600"
+          }
+        ],
+        [
+          163,
+          "grapevine sap water (collected",
+          {
+            "start": 15615,
+            "end": 15675,
+            "procedure_lines": "15615 (collection)"
+          }
+        ],
+        [
+          164,
+          "vine leaf water",
+          {
+            "start": 15679,
+            "end": 15784,
+            "procedure_lines": "15728-15735"
+          }
+        ],
+        [
+          165,
+          "ox gall water",
+          {
+            "start": 15787,
+            "end": 15818,
+            "procedure_lines": "15800-15803"
+          }
+        ],
+        [
+          166,
+          "radish ROOT water",
+          {
+            "start": 15821,
+            "end": 16005,
+            "procedure_lines": "15840-15844"
+          }
+        ],
+        [
+          167,
+          "radish LEAF water",
+          {
+            "start": 16008,
+            "end": 16035,
+            "procedure_lines": "16012-16014"
+          }
+        ],
+        [
+          168,
+          "rosemary water",
+          {
+            "start": 16038,
+            "end": 16303,
+            "procedure_lines": "16065-16075"
+          }
+        ],
+        [
+          169,
+          "tansy water",
+          {
+            "start": 16306,
+            "end": 16362,
+            "procedure_lines": "16337-16340"
+          }
+        ],
+        [
+          170,
+          "Roman kale / curly cabbage wat",
+          {
+            "start": 16365,
+            "end": 16392,
+            "procedure_lines": "16376-16380"
+          }
+        ]
+      ]
+    },
+    {
+      "batch_num": 5,
+      "start_id": 171,
+      "end_id": 210,
+      "count": 40,
+      "recipes": [
+        [
+          171,
+          "red cabbage water",
+          {
+            "start": 16395,
+            "end": 16455,
+            "procedure_lines": "16414-16417"
+          }
+        ],
+        [
+          172,
+          "rue water",
+          {
+            "start": 16456,
+            "end": 16716,
+            "procedure_lines": "16522-16528"
+          }
+        ],
+        [
+          173,
+          "earthworm water",
+          {
+            "start": 16719,
+            "end": 16782,
+            "procedure_lines": "16734-16742"
+          }
+        ],
+        [
+          174,
+          "larkspur water",
+          {
+            "start": 16785,
+            "end": 16869,
+            "procedure_lines": "16798-16801"
+          }
+        ],
+        [
+          175,
+          "corn cockle water",
+          {
+            "start": 16872,
+            "end": 16922,
+            "procedure_lines": "16896-16897"
+          }
+        ],
+        [
+          176,
+          "rose water (general/wild rose)",
+          {
+            "start": 16925,
+            "end": 17033,
+            "procedure_lines": "16971-16973"
+          }
+        ],
+        [
+          177,
+          "red rose water",
+          {
+            "start": 17036,
+            "end": 17207,
+            "procedure_lines": "17046-17050"
+          }
+        ],
+        [
+          178,
+          "white rose water",
+          {
+            "start": 17210,
+            "end": 17244,
+            "procedure_lines": "17220-17222"
+          }
+        ],
+        [
+          179,
+          "dog rose / hip rose water",
+          {
+            "start": 17251,
+            "end": 17283,
+            "procedure_lines": "17254-17258"
+          }
+        ],
+        [
+          180,
+          "rose bud water",
+          {
+            "start": 17289,
+            "end": 17336,
+            "procedure_lines": "17323-17325"
+          }
+        ],
+        [
+          181,
+          "peony rose water",
+          {
+            "start": 17345,
+            "end": 17392,
+            "procedure_lines": "17356-17363"
+          }
+        ],
+        [
+          182,
+          "turnip water",
+          {
+            "start": 17395,
+            "end": 17432,
+            "procedure_lines": null
+          }
+        ],
+        [
+          183,
+          "St. John's wort water",
+          {
+            "start": 17435,
+            "end": 17525,
+            "procedure_lines": "17459-17466"
+          }
+        ],
+        [
+          184,
+          "star-shot water / star jelly w",
+          {
+            "start": 17528,
+            "end": 17550,
+            "procedure_lines": "17533-17541"
+          }
+        ],
+        [
+          185,
+          "orchid water (male)",
+          {
+            "start": 17552,
+            "end": 17612,
+            "procedure_lines": "17591-17593"
+          }
+        ],
+        [
+          186,
+          "orchid water (female)",
+          {
+            "start": 17615,
+            "end": 17652,
+            "procedure_lines": "17628-17631"
+          }
+        ],
+        [
+          187,
+          "melilot water / sweet clover w",
+          {
+            "start": 17653,
+            "end": 17684,
+            "procedure_lines": "17670-17673"
+          }
+        ],
+        [
+          188,
+          "St. Christopher's herb water /",
+          {
+            "start": 17686,
+            "end": 17707,
+            "procedure_lines": "17695-17697"
+          }
+        ],
+        [
+          189,
+          "water lily water",
+          {
+            "start": 17710,
+            "end": 17810,
+            "procedure_lines": "17738-17741"
+          }
+        ],
+        [
+          190,
+          "saxifrage water / stonebreak w",
+          {
+            "start": 17813,
+            "end": 17884,
+            "procedure_lines": "17865-17870"
+          }
+        ],
+        [
+          191,
+          "scabious water",
+          {
+            "start": 17890,
+            "end": 18013,
+            "procedure_lines": "17906-17909"
+          }
+        ],
+        [
+          192,
+          "sage water",
+          {
+            "start": 18016,
+            "end": 18156,
+            "procedure_lines": "18028-18034"
+          }
+        ],
+        [
+          193,
+          "sanicle water",
+          {
+            "start": 18157,
+            "end": 18419,
+            "procedure_lines": "18404-18407"
+          }
+        ],
+        [
+          194,
+          "earth snail water / slug water",
+          {
+            "start": 18211,
+            "end": 18307,
+            "procedure_lines": "18288-18297"
+          }
+        ],
+        [
+          195,
+          "ribwort plantain water / lance",
+          {
+            "start": 18310,
+            "end": 18390,
+            "procedure_lines": "18330-18332"
+          }
+        ],
+        [
+          196,
+          "lady's mantle water",
+          {
+            "start": 18422,
+            "end": 18483,
+            "procedure_lines": "18452-18458"
+          }
+        ],
+        [
+          197,
+          "pointed burdock water / small ",
+          {
+            "start": 18486,
+            "end": 18532,
+            "procedure_lines": "18508-18512"
+          }
+        ],
+        [
+          198,
+          "southernwood water",
+          {
+            "start": 18534,
+            "end": 18631,
+            "procedure_lines": "18560-18571"
+          }
+        ],
+        [
+          199,
+          "greater celandine water",
+          {
+            "start": 18634,
+            "end": 18743,
+            "procedure_lines": "18644-18646"
+          }
+        ],
+        [
+          200,
+          "unripe sloe water / unripe bla",
+          {
+            "start": 18744,
+            "end": 18765,
+            "procedure_lines": "18756-18758"
+          }
+        ],
+        [
+          201,
+          "sloe blossom water / blackthor",
+          {
+            "start": 18768,
+            "end": 18776,
+            "procedure_lines": null
+          }
+        ],
+        [
+          202,
+          "barberry water",
+          {
+            "start": 18779,
+            "end": 18801,
+            "procedure_lines": "18788-18791"
+          }
+        ],
+        [
+          203,
+          "spikenard water",
+          {
+            "start": 18803,
+            "end": 18943,
+            "procedure_lines": "18803-18814"
+          }
+        ],
+        [
+          204,
+          "savin water / juniper savin wa",
+          {
+            "start": 18946,
+            "end": 18986,
+            "procedure_lines": "18956-18958"
+          }
+        ],
+        [
+          205,
+          "mustard herb water",
+          {
+            "start": 18989,
+            "end": 19027,
+            "procedure_lines": "19011-19014"
+          }
+        ],
+        [
+          206,
+          "pellitory-of-the-wall water",
+          {
+            "start": 19033,
+            "end": 19120,
+            "procedure_lines": "19065-19067"
+          }
+        ],
+        [
+          207,
+          "asparagus water",
+          {
+            "start": 19131,
+            "end": 19217,
+            "procedure_lines": "19152-19159"
+          }
+        ],
+        [
+          208,
+          "spindle tree water / euonymus ",
+          {
+            "start": 19229,
+            "end": 19254,
+            "procedure_lines": "19237-19239"
+          }
+        ],
+        [
+          209,
+          "caper spurge water / jumping s",
+          {
+            "start": 19260,
+            "end": 19297,
+            "procedure_lines": "19277-19280"
+          }
+        ],
+        [
+          210,
+          "oregano water / wild marjoram ",
+          {
+            "start": 19304,
+            "end": 19353,
+            "procedure_lines": "19313-19315"
+          }
+        ]
+      ]
+    },
+    {
+      "batch_num": 6,
+      "start_id": 211,
+      "end_id": 245,
+      "count": 35,
+      "recipes": [
+        [
+          211,
+          "tormentil water / blood root w",
+          {
+            "start": 19356,
+            "end": 19410,
+            "procedure_lines": null
+          }
+        ],
+        [
+          212,
+          "dodder water / cuscuta water",
+          {
+            "start": 19412,
+            "end": 19426,
+            "procedure_lines": null
+          }
+        ],
+        [
+          213,
+          "grape marc water / wine lees w",
+          {
+            "start": 19429,
+            "end": 19459,
+            "procedure_lines": "19454-19456"
+          }
+        ],
+        [
+          214,
+          "tamarisk water",
+          {
+            "start": 19462,
+            "end": 19516,
+            "procedure_lines": "19508-19511"
+          }
+        ],
+        [
+          215,
+          "wormwood water / absinthium wa",
+          {
+            "start": 19525,
+            "end": 19784,
+            "procedure_lines": "19564-19568"
+          }
+        ],
+        [
+          216,
+          "comfrey water / consolida wate",
+          {
+            "start": 19787,
+            "end": 19869,
+            "procedure_lines": "19793-19796"
+          }
+        ],
+        [
+          217,
+          "willow leaf water",
+          {
+            "start": 19879,
+            "end": 19947,
+            "procedure_lines": "19887-19891"
+          }
+        ],
+        [
+          218,
+          "willow blossom water",
+          {
+            "start": 19949,
+            "end": 19979,
+            "procedure_lines": null
+          }
+        ],
+        [
+          219,
+          "hemlock water / poison hemlock",
+          {
+            "start": 19996,
+            "end": 20054,
+            "procedure_lines": "20013-20015"
+          }
+        ],
+        [
+          220,
+          "bindweed water / convolvulus w",
+          {
+            "start": 20057,
+            "end": 20152,
+            "procedure_lines": "20131-20134"
+          }
+        ],
+        [
+          221,
+          "chicory water / succory water",
+          {
+            "start": 20186,
+            "end": 20270,
+            "procedure_lines": "20197-20200"
+          }
+        ],
+        [
+          222,
+          "chicory flower water",
+          {
+            "start": 20273,
+            "end": 20305,
+            "procedure_lines": "20282-20283"
+          }
+        ],
+        [
+          223,
+          "mullein water / great mullein ",
+          {
+            "start": 20308,
+            "end": 20368,
+            "procedure_lines": "20311"
+          }
+        ],
+        [
+          224,
+          "knotgrass water / knotgrass wa",
+          {
+            "start": 20390,
+            "end": 20535,
+            "procedure_lines": "20457-20464"
+          }
+        ],
+        [
+          225,
+          "solomon's seal water / white r",
+          {
+            "start": 20538,
+            "end": 20601,
+            "procedure_lines": "20546-20550"
+          }
+        ],
+        [
+          226,
+          "wild sage water / wood sage wa",
+          {
+            "start": 20604,
+            "end": 20648,
+            "procedure_lines": "20631-20633"
+          }
+        ],
+        [
+          227,
+          "wintergreen water / pyrola wat",
+          {
+            "start": 20651,
+            "end": 20718,
+            "procedure_lines": "20703-20707"
+          }
+        ],
+        [
+          228,
+          "white pea water / pea water",
+          {
+            "start": 20720,
+            "end": 20747,
+            "procedure_lines": "20731-20747"
+          }
+        ],
+        [
+          229,
+          "wild pear water / wood pear wa",
+          {
+            "start": 20754,
+            "end": 20801,
+            "procedure_lines": "20770-20774"
+          }
+        ],
+        [
+          230,
+          "clary sage water / domestic cl",
+          {
+            "start": 20813,
+            "end": 20837,
+            "procedure_lines": "20820-20822"
+          }
+        ],
+        [
+          231,
+          "spurge water / wolf's milk wat",
+          {
+            "start": 20855,
+            "end": 20918,
+            "procedure_lines": "20907-20912"
+          }
+        ],
+        [
+          232,
+          "white lily water / madonna lil",
+          {
+            "start": 20921,
+            "end": 21144,
+            "procedure_lines": "20955-20959"
+          }
+        ],
+        [
+          233,
+          "white lily root water",
+          {
+            "start": 21145,
+            "end": 21201,
+            "procedure_lines": null
+          }
+        ],
+        [
+          234,
+          "white lily flower AND root wat",
+          {
+            "start": 21204,
+            "end": 21263,
+            "procedure_lines": "21215-21219"
+          }
+        ],
+        [
+          235,
+          "maidenhair fern water / capill",
+          {
+            "start": 21266,
+            "end": 21383,
+            "procedure_lines": "21322-21323"
+          }
+        ],
+        [
+          236,
+          "juniper berry water",
+          {
+            "start": 21389,
+            "end": 21454,
+            "procedure_lines": "21403-21408"
+          }
+        ],
+        [
+          237,
+          "woodruff water / sweet woodruf",
+          {
+            "start": 21438,
+            "end": 21529,
+            "procedure_lines": "21503-21511"
+          }
+        ],
+        [
+          238,
+          "safflower water / wild saffron",
+          {
+            "start": 21532,
+            "end": 21585,
+            "procedure_lines": "21576-21579"
+          }
+        ],
+        [
+          239,
+          "christmas rose root water / bl",
+          {
+            "start": 21591,
+            "end": 21628,
+            "procedure_lines": "21612-21617"
+          }
+        ],
+        [
+          240,
+          "christmas rose herb water / bl",
+          {
+            "start": 21629,
+            "end": 21661,
+            "procedure_lines": "21633-21637"
+          }
+        ],
+        [
+          241,
+          "sweet flag root water / acorus",
+          {
+            "start": 21664,
+            "end": 21708,
+            "procedure_lines": "21687-21690"
+          }
+        ],
+        [
+          242,
+          "bittersweet water / woody nigh",
+          {
+            "start": 21716,
+            "end": 21777,
+            "procedure_lines": "21742-21757"
+          }
+        ],
+        [
+          243,
+          "onion water",
+          {
+            "start": 21779,
+            "end": 21825,
+            "procedure_lines": "21802-21804"
+          }
+        ],
+        [
+          244,
+          "daisy water / bellis water",
+          {
+            "start": 21842,
+            "end": 21889,
+            "procedure_lines": "21856-21861"
+          }
+        ],
+        [
+          245,
+          "bryony root water / wild vine ",
+          {
+            "start": 21892,
+            "end": 21957,
+            "procedure_lines": "21912-21914"
+          }
+        ]
+      ]
+    }
+  ]
+}
