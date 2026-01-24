@@ -1,0 +1,40 @@
+{
+  "test": "Test 2: Process Class Discrimination",
+  "hypothesis": "H1: B encodes 3 distinct process classes (C175)",
+  "statistics": {
+    "chi_square": 0,
+    "p_value": 1.0,
+    "degrees_of_freedom": 0
+  },
+  "distributions": {
+    "process_class": {
+      "REFLUX": 197,
+      "UNKNOWN": 4,
+      "EXTRACTION": 2
+    },
+    "regime": {
+      "REGIME_3": 38,
+      "REGIME_2": 127,
+      "REGIME_4": 14,
+      "REGIME_1": 24
+    }
+  },
+  "contingency_table": {
+    "REFLUX": {
+      "REGIME_3": 38,
+      "REGIME_2": 124,
+      "REGIME_4": 11,
+      "REGIME_1": 24
+    },
+    "EXTRACTION": {
+      "REGIME_4": 2
+    },
+    "CONDITIONING": {},
+    "UNKNOWN": {
+      "REGIME_2": 3,
+      "REGIME_4": 1
+    }
+  },
+  "verdict": "INCONCLUSIVE (DATA LIMITATION)",
+  "explanation": "Brunschwig is 97% reflux - insufficient process class diversity to test"
+}

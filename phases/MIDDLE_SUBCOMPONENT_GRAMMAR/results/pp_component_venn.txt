@@ -1,0 +1,65 @@
+PP / Component Overlap Visualization
+==================================================
+
+PP MIDDLEs: 90
+Sub-components: 218
+Intersection: 65
+
+PP-only (not components):
+  m
+  n
+  yta
+  ockh
+  opch
+  octh
+  okch
+  ecth
+  kche
+  eckh
+  otch
+  dshe
+  yteo
+  tcho
+  pche
+  tche
+  keed
+  keeo
+  kech
+  yche
+  ytch
+  ytee
+  opche
+  ycheo
+  ypche
+
+Component-only (not PP MIDDLEs):
+  c
+  f
+  p
+  *
+  q
+  ef
+  de
+  ha
+  hd
+  yd
+  fc
+  ts
+  tc
+  of
+  ik
+  ph
+  ir
+  ep
+  la
+  ec
+  **
+  fh
+  ct
+  le
+  so
+  ko
+  fo
+  sh
+  fa
+  ld

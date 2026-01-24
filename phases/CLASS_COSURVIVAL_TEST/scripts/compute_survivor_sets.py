@@ -1,11 +1,14 @@
 """Compute survivor sets for each A record.
 
+STRICT INTERPRETATION (C502):
 For each A record (folio, line):
 1. Extract MIDDLEs from A record tokens
-2. Find AZC folios containing those MIDDLEs
-3. Aggregate legal MIDDLEs from matched AZC folios
-4. Filter B vocabulary to tokens with legal MIDDLEs
-5. Map surviving tokens to their classes
+2. Those MIDDLEs ARE the legal vocabulary (no AZC expansion)
+3. Filter B vocabulary to tokens with legal MIDDLEs
+4. Map surviving tokens to their classes
+
+NOTE: The original union-based model (AZC expands vocabulary) was WRONG.
+See MEMBER_COSURVIVAL_TEST for validation of strict interpretation.
 """
 import json
 import pandas as pd
@@ -76,15 +79,9 @@ def main():
     print(f"Currier B: {len(df_b)} tokens")
     print(f"AZC: {len(df_azc)} tokens")
 
-    # Pre-compute MIDDLEs
+    # Pre-compute MIDDLEs for A records
     df_a['middle'] = df_a['word'].apply(extract_middle)
-    df_azc['middle'] = df_azc['word'].apply(extract_middle)
-
-    # Pre-compute AZC MIDDLEs by folio (O(1) lookups)
-    azc_middles_by_folio = {}
-    for folio, group in df_azc.groupby('folio'):
-        azc_middles_by_folio[folio] = set(group['middle'].dropna())
-    print(f"\nAZC folios with MIDDLEs: {len(azc_middles_by_folio)}")
+    # Note: AZC not needed under strict interpretation (C502)
 
     # Build A records (group by folio+line)
     a_records = []
@@ -113,16 +110,9 @@ def main():
     for i, a_rec in enumerate(a_records):
         a_middles = a_rec['middles']
 
-        # Find AZC folios containing any of these MIDDLEs
-        matching_azc_folios = []
-        for azc_folio, azc_mids in azc_middles_by_folio.items():
-            if a_middles & azc_mids:  # Any overlap
-                matching_azc_folios.append(azc_folio)
-
-        # Aggregate legal MIDDLEs from all matching AZC folios
-        legal_middles = set()
-        for azc_folio in matching_azc_folios:
-            legal_middles |= azc_middles_by_folio[azc_folio]
+        # STRICT INTERPRETATION (C502): Only A-record MIDDLEs are legal
+        # AZC provides compatibility grouping but NOT vocabulary expansion
+        legal_middles = a_middles
 
         # Filter B instruction tokens by legal MIDDLEs
         surviving_tokens = set()
@@ -148,8 +138,7 @@ def main():
         result = {
             'a_record': f"{a_rec['folio']}:{a_rec['line']}",
             'a_middles': list(a_middles),
-            'matching_azc_folios': matching_azc_folios,
-            'legal_middle_count': len(legal_middles),
+            'legal_middle_count': len(legal_middles),  # Same as a_middles under strict
             'surviving_token_count': len(surviving_tokens),
             'surviving_classes': sorted(surviving_classes),
             'surviving_class_count': len(surviving_classes)

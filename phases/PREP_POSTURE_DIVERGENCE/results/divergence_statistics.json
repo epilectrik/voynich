@@ -1,0 +1,220 @@
+{
+  "verb_level_results": {
+    "prefix_entropy": {
+      "f_stat": 5.574837511626875,
+      "p_value": 0.001066518838902199,
+      "verb_means": {
+        "GATHER": 4.7071583744991985,
+        "STRIP": 4.791905372196467,
+        "COLLECT": 4.8977441459441176,
+        "CHOP": 4.594626218254486
+      },
+      "verb_stds": {
+        "GATHER": 0.20872492674039628,
+        "STRIP": 0.2150929007305832,
+        "COLLECT": 0.19838120481474372,
+        "CHOP": 0.05527160271771831
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    },
+    "auxiliary_density": {
+      "f_stat": 1.6577021959819713,
+      "p_value": 0.1772369899054656,
+      "verb_means": {
+        "GATHER": 0.18040643206705537,
+        "STRIP": 0.18483072879091036,
+        "COLLECT": 0.18681812108401327,
+        "CHOP": 0.17979953590944805
+      },
+      "verb_stds": {
+        "GATHER": 0.01259406786757022,
+        "STRIP": 0.006754077092001592,
+        "COLLECT": 0.0015360452287910965,
+        "CHOP": 0.011870935635967627
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    },
+    "link_density": {
+      "f_stat": 3.9877094201409236,
+      "p_value": 0.008634194670725112,
+      "verb_means": {
+        "GATHER": 0.052438607887508655,
+        "STRIP": 0.05050721310027662,
+        "COLLECT": 0.04554033343725625,
+        "CHOP": 0.05880721145322711
+      },
+      "verb_stds": {
+        "GATHER": 0.010282725593577121,
+        "STRIP": 0.01130607073081622,
+        "COLLECT": 0.010890501425928352,
+        "CHOP": 0.0052287219603421725
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    },
+    "escape_frequency": {
+      "f_stat": 5.639528482851991,
+      "p_value": 0.0009795303417930736,
+      "verb_means": {
+        "GATHER": 0.177703353369417,
+        "STRIP": 0.16518083739448805,
+        "COLLECT": 0.14669809268183057,
+        "CHOP": 0.19856554282088584
+      },
+      "verb_stds": {
+        "GATHER": 0.034562063764072504,
+        "STRIP": 0.03830188812647739,
+        "COLLECT": 0.036402965127336435,
+        "CHOP": 0.0009452168065243407
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    },
+    "hazard_frequency": {
+      "f_stat": 5.006743260789899,
+      "p_value": 0.0022533406729184453,
+      "verb_means": {
+        "GATHER": 0.22572921944041666,
+        "STRIP": 0.21000084339556294,
+        "COLLECT": 0.19327400341938797,
+        "CHOP": 0.24227250583764898
+      },
+      "verb_stds": {
+        "GATHER": 0.036878953358799864,
+        "STRIP": 0.03386430226648133,
+        "COLLECT": 0.02954810733458383,
+        "CHOP": 0.0176636827432715
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    },
+    "sli": {
+      "f_stat": 1.8410439684211608,
+      "p_value": 0.1407666878276742,
+      "verb_means": {
+        "GATHER": 0.9930435750938943,
+        "STRIP": 0.9925098417906096,
+        "COLLECT": 1.0260755500868617,
+        "CHOP": 0.9427820009996429
+      },
+      "verb_stds": {
+        "GATHER": 0.10305474847924843,
+        "STRIP": 0.09259722048922304,
+        "COLLECT": 0.08409502830813252,
+        "CHOP": 0.08728702925810716
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    },
+    "kernel_proximity": {
+      "f_stat": 5.538014374198253,
+      "p_value": 0.0011194529869560743,
+      "verb_means": {
+        "GATHER": 0.4442616885496553,
+        "STRIP": 0.41411608625108903,
+        "COLLECT": 0.37708202896428783,
+        "CHOP": 0.4833763711522672
+      },
+      "verb_stds": {
+        "GATHER": 0.0736738856107019,
+        "STRIP": 0.07517145077442801,
+        "COLLECT": 0.06903559134852116,
+        "CHOP": 0.021220597412938358
+      },
+      "verb_n": {
+        "GATHER": 159,
+        "STRIP": 28,
+        "COLLECT": 6,
+        "CHOP": 21
+      }
+    }
+  },
+  "category_level_results": {
+    "prefix_entropy": {
+      "t_stat": 0.8261655949991614,
+      "p_value": 0.4096093035821906,
+      "cohens_d": 0.1277695179851222,
+      "collection_mean": 4.714088766188105,
+      "mechanical_mean": 4.687624660895302
+    },
+    "auxiliary_density": {
+      "t_stat": -0.24457904601215666,
+      "p_value": 0.8070113909354227,
+      "cohens_d": -0.03782504017038619,
+      "collection_mean": 0.18063958439494476,
+      "mechanical_mean": 0.18110356005528158
+    },
+    "link_density": {
+      "t_stat": -1.2171039810413866,
+      "p_value": 0.22487458305711894,
+      "cohens_d": -0.18822956310059022,
+      "collection_mean": 0.05218776154386311,
+      "mechanical_mean": 0.05412355807634671
+    },
+    "escape_frequency": {
+      "t_stat": -1.0115493522062007,
+      "p_value": 0.31286986152319773,
+      "cohens_d": -0.15643979116520831,
+      "collection_mean": 0.17657588934441387,
+      "mechanical_mean": 0.18196966089403224
+    },
+    "hazard_frequency": {
+      "t_stat": -0.6027369370744762,
+      "p_value": 0.5473073313856556,
+      "cohens_d": -0.09321546235765596,
+      "collection_mean": 0.22454902976692467,
+      "mechanical_mean": 0.22793946668741513
+    },
+    "sli": {
+      "t_stat": 1.1198156629249907,
+      "p_value": 0.26401893478914434,
+      "cohens_d": 0.17318357040063062,
+      "collection_mean": 0.9942447378209112,
+      "mechanical_mean": 0.9765546165136989
+    },
+    "kernel_proximity": {
+      "t_stat": -0.8047414535074222,
+      "p_value": 0.4218416629954759,
+      "cohens_d": -0.12445619648128092,
+      "collection_mean": 0.44181879183746026,
+      "mechanical_mean": 0.45091204685579156
+    }
+  },
+  "c458_compliance": {
+    "avg_hazard_d": 0.13028507641318918,
+    "avg_recovery_d": 0.12756597810532672,
+    "compliant": false
+  },
+  "success_criteria": {
+    "significant_metrics": false,
+    "c458_compliant": false,
+    "effect_size": false
+  },
+  "verdict": "H0 NOT REJECTED: No significant verb-posture divergence"
+}

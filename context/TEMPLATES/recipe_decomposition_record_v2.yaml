@@ -1,0 +1,595 @@
+# ============================================================
+# RDR: Recipe Decomposition Record Template v2.0
+# ============================================================
+# Tier: 3 (External alignment, non-binding)
+# Purpose: Extract Voynich-mappable aspects from historical recipes
+# Provenance: X.10-X.25 Brunschwig comparison phases (19/20 match)
+# Sections: 18
+# Fields: ~120
+# ============================================================
+
+---
+meta:
+  version: "2.0"
+  tier: 3
+  tier_meaning: "External alignment, non-binding, discardable"
+  recipe_id: "BRU-###"              # Unique identifier
+  extraction_date: ""               # YYYY-MM-DD
+  analyst: ""                       # Who extracted this
+  provenance: ["C493", "C494", "F-BRU-001 through F-BRU-009"]
+
+# ============================================================
+# SECTION 1: IDENTIFICATION
+# ============================================================
+identification:
+  recipe_name_original: ""          # Original language (e.g., "Küetreck")
+  recipe_name_english: ""           # English translation
+  source_text: "Brunschwig"         # Source manuscript
+  page_reference: ""                # Page/folio number
+  chapter: ""                       # Chapter if applicable
+
+  material_class:                   # C466-C467
+    category: ""                    # animal | plant | mineral | compound
+    subcategory: ""                 # e.g., "herb", "flower", "root", "animal_product"
+    specific_material: ""           # e.g., "cow dung", "rose petals"
+    prefix_prediction: ""           # ch|sh|ok|ot|da|qo|ol|ct
+    material_behavior_class: ""     # M-A|M-B|M-C|M-D (if known)
+
+  product_type: ""                  # WATER_GENTLE | WATER_STANDARD | OIL_RESIN | PRECISION
+  product_evidence: ""              # Quote supporting classification
+
+  provenance: ["C466", "C467", "F-BRU-001"]
+
+# ============================================================
+# SECTION 2: FIRE REGIME
+# ============================================================
+fire_regime:                        # C179-C185, C494
+  brunschwig_degree: null           # 1 | 2 | 3 | 4
+  degree_evidence: ""               # Quote from text
+  degree_descriptions:
+    1: "balneum marie (water bath) - lukewarm"
+    2: "second degree - noticeably warm"
+    3: "third degree - almost seething"
+    4: "fourth degree - destructively warm (FORBIDDEN)"
+
+  voynich_regime: ""                # REGIME_1 | REGIME_2 | REGIME_3 | REGIME_4
+  regime_mapping:
+    REGIME_1: "Standard execution (balneum marie)"
+    REGIME_2: "Gentle/warm execution"
+    REGIME_3: "Intense execution (seething)"
+    REGIME_4: "Precision-constrained (NOT intensity)"
+
+  cei_band: ""                      # R2 < R1 < R4 < R3 ordering
+  intensity_notes: ""               # Any notes on heat management
+
+  provenance: ["C179", "C180", "C181", "C182", "C183", "C184", "C185", "C188", "C494"]
+
+# ============================================================
+# SECTION 3: SENSORY MONITORING
+# ============================================================
+sensory_monitoring:                 # F-BRU-008, F-BRU-009, X.22
+  modalities:
+    sound:
+      required: false
+      indicators: []                # e.g., ["bubbling", "hissing", "crackling"]
+      evidence: ""                  # Quote from recipe
+      zone_affinity: "R"            # R-zone: sequential/continuous tracking
+      mapping_confidence: "CONFIRMED (t=3.97, p<0.001)"
+
+    sight:
+      required: false
+      indicators: []                # e.g., ["color change", "vapor density", "clarity"]
+      evidence: ""
+      zone_affinity: "P"            # P-zone: intervention-triggering
+      mapping_confidence: "CONFIRMED (t=9.00, p<0.0001)"
+
+    smell:
+      required: false
+      indicators: []                # e.g., ["sulfur odor", "sweetness", "completion smell"]
+      evidence: ""
+      zone_affinity: "INDIRECT"     # Via SLI, not direct zone mapping
+      mapping_status: "constraint_substitution"  # F-BRU-007
+      mapping_confidence: "UNDERPOWERED (n=5)"
+
+    touch:
+      required: false
+      indicators: []                # e.g., ["temperature", "texture", "viscosity"]
+      evidence: ""
+      zone_affinity: "S"            # S-zone: boundary confirmation (WEAK)
+      mapping_confidence: "NOT SIGNIFICANT"
+
+    taste:
+      required: false
+      indicators: []                # e.g., ["bitterness", "salt"]
+      evidence: ""
+      zone_affinity: "INVERSE_S"    # AVOIDS S-zone (d=-1.33)
+      mapping_confidence: "INVERSE CORRELATION"
+
+  dominant_modality: ""             # SOUND | SIGHT | SMELL | TOUCH | TASTE | NONE
+  modality_count: 0                 # How many modalities engaged
+
+  provenance: ["F-BRU-008", "F-BRU-009", "X.22"]
+
+# ============================================================
+# SECTION 4: KERNEL ENGAGEMENT
+# ============================================================
+kernel_engagement:                  # C089, C103-C107, C332
+  k_involvement:                    # C103 - ENERGY_MODULATOR
+    present: false
+    operations: []                  # e.g., ["heat adjustment", "fire management"]
+    evidence: ""
+    description: "Energy input/output control"
+
+  h_involvement:                    # C104 - PHASE_MANAGER
+    present: false
+    operations: []                  # e.g., ["phase transition control", "separation"]
+    evidence: ""
+    description: "Phase boundary handling"
+
+  e_involvement:                    # C105 - STABILITY_ANCHOR
+    present: false
+    operations: []                  # e.g., ["cooling", "equilibration", "settling"]
+    evidence: ""
+    recovery_anchor: false          # 54.7% of recoveries use e
+    description: "Stability/equilibration anchor"
+
+  kernel_sequence_expected: ""      # e.g., "k→e→h" (h→k is SUPPRESSED per C332)
+  h_to_k_suppression: true          # C332: universal, 0 observed in corpus
+  boundary_adjacent: true           # C107: all kernel nodes boundary-adjacent
+
+  provenance: ["C089", "C103", "C104", "C105", "C107", "C332"]
+
+# ============================================================
+# SECTION 5: HAZARD EXPOSURE
+# ============================================================
+hazard_exposure:                    # C109-C112
+  classes_exposed:
+    PHASE_ORDERING:                 # 41% of Voynich hazards
+      percentage_in_voynich: "41%"
+      description: "Material in wrong phase location"
+      exposed: false
+      evidence: ""
+      examples: ["wrong temperature at wrong time", "premature transition"]
+
+    COMPOSITION_JUMP:               # 24% of Voynich hazards
+      percentage_in_voynich: "24%"
+      description: "Impure fractions passing through"
+      exposed: false
+      evidence: ""
+      examples: ["fraction mixing", "contamination", "purity failure"]
+
+    CONTAINMENT_TIMING:             # 24% of Voynich hazards
+      percentage_in_voynich: "24%"
+      description: "Overflow/pressure/vessel events"
+      exposed: false
+      evidence: ""
+      examples: ["glass cracking", "thermal shock", "overnight cooling needed"]
+
+    RATE_MISMATCH:                  # 6% of Voynich hazards
+      percentage_in_voynich: "6%"
+      description: "Flow imbalance"
+      exposed: false
+      evidence: ""
+      examples: ["input/output rate mismatch", "regulation failure"]
+
+    ENERGY_OVERSHOOT:               # 6% of Voynich hazards
+      percentage_in_voynich: "6%"
+      description: "Thermal damage"
+      exposed: false
+      evidence: ""
+      examples: ["scorching", "burning", "fourth degree damage"]
+
+  total_exposure_count: 0           # 0-5 classes exposed
+  dominant_class: ""                # Which hazard class is primary concern
+  asymmetry_note: "65% of forbidden transitions are one-way (C111)"
+
+  provenance: ["C109", "C110", "C111", "C112"]
+
+# ============================================================
+# SECTION 6: RECOVERY ARCHITECTURE
+# ============================================================
+recovery_architecture:              # C105, C391, C458, F-BRU-007
+  retry_limit:
+    stated: ""                      # Explicit quote: "no more than twice"
+    implied_bound: null             # 2 | 3 | "unlimited"
+    evidence: ""
+    brunschwig_rule: "A batch may be reinfused no more than twice"
+
+  cooling_requirement:
+    mandatory: false
+    method: ""                      # "overnight" | "water bath" | "slow cooling"
+    evidence: ""
+    e_pathway: false                # C105: e-operator dominates recovery (54.7%)
+
+  reversibility:                    # C391
+    fully_reversible: false
+    reversible_until: ""            # Phase after which committed
+    time_symmetric: false           # Circulatory reflux = symmetric; batch = not
+    evidence: ""
+
+  salvage_possible:
+    total_failure_salvageable: false  # Brunschwig: "No salvage for failed batches"
+    partial_failure_recovery: ""
+
+  design_freedom:                   # C458
+    hazard_cv: "0.04-0.11"          # CLAMPED - globally constrained
+    recovery_cv: "0.72-0.82"        # FREE - locally variable
+    principle: "Risk globally constrained; recovery locally variable"
+
+  provenance: ["C105", "C391", "C458", "F-BRU-007"]
+
+# ============================================================
+# SECTION 7: SUPPRESSION PATTERNS
+# ============================================================
+suppression_patterns:               # C332, C490
+  categorical_prohibitions:         # What is IMPOSSIBLE, not just dangerous
+    - action: ""                    # e.g., "fourth degree fire"
+      voynich_mapping: ""           # e.g., "AGGRESSIVE strategy forbidden (C490)"
+      evidence: ""
+      universality: ""              # "always" | "in this recipe" | "conditional"
+
+  dangerous_but_permitted:          # What is risky but allowed
+    - action: ""
+      mitigation: ""                # How the risk is managed
+      monitoring_required: false
+
+  strategy_exclusions:              # C490
+    aggressive_forbidden: false     # 20.5% of programs structurally forbid this
+    opportunistic_available: false
+    evidence: ""
+
+  h_to_k_suppressed: true           # C332 - universal rule, 0 observed
+  suppression_evidence: "h→k transition architecturally necessary to prevent oscillation"
+
+  provenance: ["C332", "C490"]
+
+# ============================================================
+# SECTION 8: JUDGMENT REQUIREMENTS (OJLM-1)
+# ============================================================
+judgment_requirements:              # OJLM-1 phase, C477
+  watch_closely:                    # 6 types - what operator must monitor
+    temperature:
+      required: false
+      evidence: ""
+      example: "finger test - must not get too hot to bear"
+    phase_transition:
+      required: false
+      evidence: ""
+      example: "watch for streaks branching in alembic"
+    quality_purity:
+      required: false
+      evidence: ""
+      example: "thumbnail test - water should run off"
+    timing:
+      required: false
+      evidence: ""
+      example: "distill until taste/scent diminished"
+    material_state:
+      required: false
+      evidence: ""
+      example: "observe drops forming like sweat"
+    stability:
+      required: false
+      evidence: ""
+      example: "ensure steady bubbling"
+
+  forbidden_intervention:           # 3 types - when operator must NOT act
+    equilibrium_establishment:
+      forbidden: false
+      evidence: ""
+      example: "do not disturb during settling"
+    phase_transition_interrupt:
+      forbidden: false
+      evidence: ""
+      example: "do not open during active distillation"
+    purification_cycle_break:
+      forbidden: false
+      evidence: ""
+      example: "complete full cycle before stopping"
+
+  tacit_knowledge:                  # 4 types - learned through experience
+    sensory_calibration:
+      required: false
+      evidence: ""
+      example: "knowing correct scent"
+    equipment_feel:
+      required: false
+      evidence: ""
+      example: "recognizing apparatus sounds"
+    timing_intuition:
+      required: false
+      evidence: ""
+      example: "sense of when to intervene"
+    trouble_recognition:
+      required: false
+      evidence: ""
+      example: "early warning signs"
+
+  total_judgment_load: 0            # 0-13 types engaged
+  tail_pressure_prediction: ""      # low | medium | high (C477)
+  ht_density_correlation: "r=0.504" # C477: HT correlates with judgment load
+
+  provenance: ["C477", "OJLM-1"]
+
+# ============================================================
+# SECTION 9: ZONE PROFILE
+# ============================================================
+zone_profile:                       # C443, F-BRU-008, F-BRU-009
+  affinities:                       # Continuous values summing to 1.0
+    C: 0.0                          # Setup/loading phase, errors fixable, escape 1.4%
+    P: 0.0                          # Active work, intervention legal, escape 11.6%
+    R: 0.0                          # Progression, options narrowing, escape 2%→0%
+    S: 0.0                          # Collection/exit, locked, escape 0-3.8%
+
+  dominant_zone: ""                 # C | P | R | S
+
+  escape_gradient:
+    description: "C→P→R→S represents decreasing intervention permission"
+    C_escape: "1.4% - setup errors fixable"
+    P_escape: "11.6% - active intervention possible"
+    R_escape: "2%→0% - progressive restriction"
+    S_escape: "0-3.8% - locked, minimal escape"
+
+  two_stage_model:                  # F-BRU-009
+    stage_1: "Modality bias from external factors (sound→R, sight→P)"
+    stage_2: "REGIME execution style concentrates into specific phase"
+    interaction: "REGIME modifies zone concentration"
+
+  regime_stratification: ""         # Expected pattern given fire_regime
+
+  provenance: ["C443", "F-BRU-008", "F-BRU-009"]
+
+# ============================================================
+# SECTION 10: LINK PROFILE
+# ============================================================
+link_profile:                       # C190, C366
+  observation_phases:
+    count: 0
+    descriptions: []                # e.g., ["watch until bubbling stops"]
+
+  waiting_periods:
+    count: 0
+    descriptions: []                # e.g., ["leave overnight to cool"]
+
+  cei_inverse_correlation: "r=-0.7057"  # C190: CEI inversely correlates with LINK
+  predicted_link_density: ""        # low (<10%) | medium (10-20%) | high (>20%)
+
+  link_function: "Boundary between monitoring and intervention"  # C366
+  link_evidence: ""
+
+  provenance: ["C190", "C366"]
+
+# ============================================================
+# SECTION 11: CONVERGENCE PROFILE
+# ============================================================
+convergence_profile:                # C074, C323, C325
+  target_state:
+    state_c: false                  # 57.8% of programs terminate here
+    transitional: false             # 38.6%
+    initial_reset: false            # 3.6%
+
+  clean_termination: false          # Recipe specifies clear end state?
+  completion_signals: []            # e.g., ["clear distillate", "no more vapors"]
+
+  gradient_direction: "Later lines → higher completion probability"  # C325
+  monostate_convergence: "All initial states converge within 8 steps"  # C323
+
+  provenance: ["C074", "C323", "C325"]
+
+# ============================================================
+# SECTION 12: SISTER PREDICTION
+# ============================================================
+sister_prediction:                  # C408, C412
+  ch_sh_choice:
+    predicted: ""                   # ch (precision) | sh (tolerance) | mixed
+    evidence: ""
+    anticorrelation: "rho=-0.326 with escape density"  # C412
+    meaning: "ch = narrow tolerance, sh = broader margins"
+
+  ok_ot_choice:
+    predicted: ""                   # ok | ot | mixed
+    evidence: ""
+    meaning: "Operational mode variant"
+
+  qo_escape_density: ""             # 25-47% range (C397)
+  qo_function: "Safe return path, 77.9% successful recovery"
+
+  provenance: ["C397", "C408", "C412"]
+
+# ============================================================
+# SECTION 13: INSTRUCTION CLASS MAPPING
+# ============================================================
+instruction_class_mapping:          # C121, C124
+  role_classes:
+    CORE_CONTROL:
+      engaged: false
+      evidence: ""
+    ENERGY_OPERATOR:                # 11 classes
+      engaged: false
+      class_count: 11
+      evidence: ""
+    AUXILIARY:                      # 8 classes
+      engaged: false
+      class_count: 8
+      evidence: ""
+    FREQUENT_OPERATOR:              # 4 classes
+      engaged: false
+      class_count: 4
+      evidence: ""
+    HIGH_IMPACT:                    # 3 classes
+      engaged: false
+      class_count: 3
+      evidence: ""
+    FLOW_OPERATOR:                  # 2 classes
+      engaged: false
+      class_count: 2
+      evidence: ""
+    LINK:
+      engaged: false
+      evidence: ""
+
+  total_classes_engaged: 0          # 1-49 range
+  control_granularity: ""           # coarse (<10) | medium (10-25) | fine (>25)
+  compression_ratio: "9.8x"         # 479 tokens → 49 classes
+  voynich_class_count: 49           # C121: exactly 49 instruction classes
+
+  provenance: ["C121", "C124"]
+
+# ============================================================
+# SECTION 14: VOCABULARY TRACK
+# ============================================================
+vocabulary_track:                   # C498
+  pipeline_participating:           # 43.4% of A MIDDLEs
+    description: "MIDDLEs that flow A→AZC→B"
+    predicted_fraction: 0.0
+    characteristics:
+      - "Standard prefixes"
+      - "Standard suffixes"
+      - "7.96 folio spread average"
+    typical_for: "Materials that get processed"
+
+  registry_internal:                # 56.6% of A MIDDLEs
+    description: "MIDDLEs that stay in A registry"
+    predicted_fraction: 0.0
+    characteristics:
+      - "ct-prefix 5.1× enriched"
+      - "suffix-less 3× enriched"
+      - "folio-localized (2.53 spread)"
+    typical_for: "Classification labels, properties that don't execute"
+
+  material_specificity: ""          # generic | specific
+  track_prediction_basis: ""        # Why we predict this track ratio
+
+  provenance: ["C498"]
+
+# ============================================================
+# SECTION 15: COMPATIBILITY
+# ============================================================
+compatibility:                      # C442, C475
+  middle_incompatibility:
+    base_rate: "95.7%"              # Of MIDDLE pairs are illegal
+    predicted_legal_pairs: ""       # narrow | moderate | broad
+    mechanism: "Atomic co-occurrence constraints"
+
+  universal_connectors:             # MIDDLEs that bridge incompatibilities
+    - "a"
+    - "o"
+    - "e"
+    - "ee"
+    - "eo"
+
+  cross_recipe:
+    compatible_with: []             # Recipe IDs that could co-process
+    incompatible_with: []           # Recipe IDs that conflict
+    bridging_vocabulary: []         # MIDDLEs that could connect
+
+  folio_exclusivity: "77%"          # Of MIDDLEs appear in single AZC folio
+
+  provenance: ["C442", "C475"]
+
+# ============================================================
+# SECTION 16: WORKFLOW PHASES
+# ============================================================
+workflow_phases:                    # X.25 Trajectory Semantics
+  preparation:
+    steps: []                       # e.g., ["gather materials", "prepare apparatus"]
+    zone_affinity: "C"              # Setup phase
+    reversible: true
+    errors_fixable: true
+
+  execution:
+    steps: []                       # e.g., ["distillation", "monitoring"]
+    zone_affinity: "P/R"            # Active work / progression
+    intervention_points: []         # Where operator can intervene
+
+  completion:
+    steps: []                       # e.g., ["collection", "storage"]
+    zone_affinity: "S"              # Exit phase
+    locked: true
+    irreversible: true
+
+  total_phase_count: 0
+  curriculum_position: ""           # early | middle | late (X.11)
+
+  provenance: ["X.25"]
+
+# ============================================================
+# SECTION 17: PROCESS (UNMAPPED DIMENSIONS)
+# ============================================================
+process:
+  # NOTE: These fields are recorded but have NO direct Voynich mapping
+
+  stage_count: null                 # NO MAPPING - lines ≠ stages
+  stage_descriptions: []
+
+  equipment:
+    mentioned: []                   # e.g., ["alembic", "furnace", "bain-marie"]
+    pelican_compatible: null        # APP-1 apparatus validation
+    note: "Equipment identity unmapped per C171; behavioral profile via APP-1"
+
+  duration:
+    stated: ""                      # Explicit timing if given
+    estimated: ""
+    note: "Timing precision maps to REGIME, not duration"
+
+  unmapped_rationale: |
+    Equipment identity (C171): Grammar encodes operational behavior, not apparatus.
+    Stage count: Voynich lines are control blocks, not procedure stages.
+    Duration: Not encoded; precision requirement maps to REGIME instead.
+
+# ============================================================
+# SECTION 18: DERIVED CONSTRAINTS
+# ============================================================
+derived_constraints:
+  # Computed from above fields
+
+  primary_mappings:
+    recipe_regime_cluster: ""       # Computed from fire_regime
+    zone_dominant: ""               # Computed from sensory_monitoring
+    hazard_dominant: ""             # Computed from hazard_exposure
+    judgment_load: 0                # Computed from judgment_requirements
+
+  secondary_mappings:
+    sli_estimate: ""                # Sensory Load Index = hazard/(escape+link)
+    sli_ht_correlation: "r=-0.453"  # F-BRU-007
+    constraint_substitution: "High SLI → tight grammar → low HT needed"
+
+  # TRIANGULATION VECTOR - Summary for computational filtering
+  triangulation_vector:
+    regime: null                    # 1-4
+    product_type: ""                # WATER_GENTLE | WATER_STANDARD | OIL_RESIN | PRECISION
+    material_class: ""              # animal | plant | mineral
+    hazard_dominant: ""             # Which hazard class primary
+    zone_dominant: ""               # C | P | R | S
+    zone_r: false                   # R-zone affinity (sound)
+    zone_p: false                   # P-zone affinity (sight)
+    judgment_load: 0                # 0-13
+    escape_prediction: ""           # low | medium | high
+    precision_level: ""             # low | medium | high
+    kernel_pattern: ""              # e.g., "k→e dominant"
+
+  # Filter function for candidate B folio matching
+  filter_function: |
+    B_candidates = (
+      folios_in_REGIME(regime)
+      ∩ folios_with_zone_affinity(zone_dominant)
+      ∩ folios_with_hazard_profile(hazard_dominant)
+      ∩ folios_with_escape_rate(escape_prediction)
+    )
+
+# ============================================================
+# RAW EVIDENCE
+# ============================================================
+raw_quotes:
+  key_passages: []                  # Important quotes preserving exact text
+  ambiguous_passages: []            # Unclear sections needing interpretation
+
+# ============================================================
+# ANALYSIS NOTES
+# ============================================================
+analysis_notes: |
+  [Free-form notes about extraction, uncertainties, interpretations]
+
+# ============================================================
+# END OF RDR TEMPLATE v2.0
+# ============================================================

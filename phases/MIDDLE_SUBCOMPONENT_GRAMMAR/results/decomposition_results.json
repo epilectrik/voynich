@@ -1,0 +1,250 @@
+{
+  "long_middles_count": 994,
+  "option_a": {
+    "description": "Split into any MIDDLE in corpus",
+    "success": 878,
+    "percentage": 88.3,
+    "examples": [
+      [
+        "oikh",
+        "o",
+        "ikh"
+      ],
+      [
+        "okaro",
+        "ok",
+        "aro"
+      ],
+      [
+        "pcheo",
+        "p",
+        "cheo"
+      ],
+      [
+        "chsh",
+        "ch",
+        "sh"
+      ],
+      [
+        "eeeo",
+        "e",
+        "eeo"
+      ],
+      [
+        "eolke",
+        "e",
+        "olke"
+      ],
+      [
+        "faii",
+        "f",
+        "aii"
+      ],
+      [
+        "oyte",
+        "o",
+        "yte"
+      ],
+      [
+        "kokch",
+        "k",
+        "okch"
+      ],
+      [
+        "toii",
+        "t",
+        "oii"
+      ]
+    ]
+  },
+  "option_b": {
+    "description": "Split into repeater MIDDLEs",
+    "success": 769,
+    "percentage": 77.4,
+    "examples": [
+      [
+        "okaro",
+        "ok",
+        "aro"
+      ],
+      [
+        "pcheo",
+        "p",
+        "cheo"
+      ],
+      [
+        "chsh",
+        "ch",
+        "sh"
+      ],
+      [
+        "eeeo",
+        "e",
+        "eeo"
+      ],
+      [
+        "eolke",
+        "e",
+        "olke"
+      ],
+      [
+        "faii",
+        "f",
+        "aii"
+      ],
+      [
+        "oyte",
+        "o",
+        "yte"
+      ],
+      [
+        "kokch",
+        "k",
+        "okch"
+      ],
+      [
+        "toii",
+        "t",
+        "oii"
+      ],
+      [
+        "ypch",
+        "y",
+        "pch"
+      ]
+    ]
+  },
+  "option_c": {
+    "description": "Split into PP MIDDLEs only",
+    "success": 372,
+    "percentage": 37.4,
+    "examples": [
+      [
+        "pcheo",
+        "pch",
+        "eo"
+      ],
+      [
+        "eeeo",
+        "e",
+        "eeo"
+      ],
+      [
+        "oyte",
+        "o",
+        "yte"
+      ],
+      [
+        "kokch",
+        "k",
+        "okch"
+      ],
+      [
+        "ypch",
+        "y",
+        "pch"
+      ],
+      [
+        "yteo",
+        "y",
+        "teo"
+      ],
+      [
+        "keeo",
+        "k",
+        "eeo"
+      ],
+      [
+        "odor",
+        "od",
+        "or"
+      ],
+      [
+        "ykeo",
+        "y",
+        "keo"
+      ],
+      [
+        "kchs",
+        "kch",
+        "s"
+      ]
+    ]
+  },
+  "by_length": {
+    "4": {
+      "total": 380,
+      "option_a": 367,
+      "option_b": 338,
+      "option_c": 195,
+      "option_a_pct": 96.6,
+      "option_b_pct": 88.9,
+      "option_c_pct": 51.3
+    },
+    "5": {
+      "total": 321,
+      "option_a": 303,
+      "option_b": 267,
+      "option_c": 124,
+      "option_a_pct": 94.4,
+      "option_b_pct": 83.2,
+      "option_c_pct": 38.6
+    },
+    "6": {
+      "total": 169,
+      "option_a": 140,
+      "option_b": 121,
+      "option_c": 42,
+      "option_a_pct": 82.8,
+      "option_b_pct": 71.6,
+      "option_c_pct": 24.9
+    },
+    "7": {
+      "total": 71,
+      "option_a": 46,
+      "option_b": 31,
+      "option_c": 10,
+      "option_a_pct": 64.8,
+      "option_b_pct": 43.7,
+      "option_c_pct": 14.1
+    },
+    "8": {
+      "total": 41,
+      "option_a": 21,
+      "option_b": 11,
+      "option_c": 1,
+      "option_a_pct": 51.2,
+      "option_b_pct": 26.8,
+      "option_c_pct": 2.4
+    }
+  },
+  "by_section": {
+    "H": {
+      "total": 637,
+      "option_a": 574,
+      "option_b": 513,
+      "option_c": 284,
+      "option_a_pct": 90.1,
+      "option_b_pct": 80.5,
+      "option_c_pct": 44.6
+    },
+    "P": {
+      "total": 321,
+      "option_a": 284,
+      "option_b": 250,
+      "option_c": 118,
+      "option_a_pct": 88.5,
+      "option_b_pct": 77.9,
+      "option_c_pct": 36.8
+    },
+    "T": {
+      "total": 149,
+      "option_a": 132,
+      "option_b": 117,
+      "option_c": 60,
+      "option_a_pct": 88.6,
+      "option_b_pct": 78.5,
+      "option_c_pct": 40.3
+    }
+  }
+}

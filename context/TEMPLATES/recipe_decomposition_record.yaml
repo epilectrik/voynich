@@ -1,0 +1,140 @@
+# Recipe Decomposition Record (RDR) Template
+# Version: 1.0
+# Purpose: Standardized format for extracting Voynich-mappable aspects from historical recipes
+#
+# Instructions:
+# 1. Read the recipe carefully
+# 2. Fill in each section based on what the recipe explicitly states or implies
+# 3. Use null for aspects not mentioned
+# 4. Use the derived_constraints section to compute Voynich mappings
+
+---
+# IDENTIFICATION
+identification:
+  recipe_name_original: ""      # Original language name (e.g., "Küetreck")
+  recipe_name_english: ""       # English translation (e.g., "Cow dung")
+  source_text: "Brunschwig"     # Source manuscript/book
+  page_reference: ""            # Page or folio number
+  material_class: ""            # animal | plant | mineral | compound
+  material_specific: ""         # Specific material (e.g., "cow dung", "rose petals")
+
+# FIRE/ENERGY INPUT
+fire_regime:
+  degree: null                  # 1 | 2 | 3 | 4 (Brunschwig fire degrees)
+  degree_evidence: ""           # Quote or description justifying degree
+  intensity_notes: ""           # Any notes on heat management
+  # Mapping: degree 1-4 → REGIME 1-4
+
+# SENSORY MONITORING (what operator must observe during process)
+sensory_monitoring:
+  sound:
+    required: false             # true | false
+    indicators: []              # e.g., ["bubbling", "hissing", "crackling"]
+    evidence: ""                # Quote from recipe
+    # Mapping: sound → R-zone affinity
+
+  sight:
+    required: false
+    indicators: []              # e.g., ["color change", "vapor density", "clarity"]
+    evidence: ""
+    # Mapping: sight → P-zone affinity
+
+  smell:
+    required: false
+    indicators: []              # e.g., ["sulfur odor", "sweetness", "burning"]
+    evidence: ""
+    # Mapping: UNMAPPED (gap in current constraints)
+
+  touch:
+    required: false
+    indicators: []              # e.g., ["temperature", "texture", "viscosity"]
+    evidence: ""
+    # Mapping: touch → S-zone (weak, not significant)
+
+  taste:
+    required: false
+    indicators: []              # e.g., ["bitterness", "salt", "sweetness"]
+    evidence: ""
+    # Mapping: taste AVOIDS S-zone (inverse correlation)
+
+# TIMING/PRECISION REQUIREMENTS
+timing:
+  precision_required: false     # Does recipe specify exact times?
+  time_references: []           # e.g., ["until color changes", "3 hours", "overnight"]
+  sequence_critical: false      # Must steps happen in exact order?
+  evidence: ""
+  # Mapping: high precision → REGIME_4, low escape architecture
+
+# PROCESS STRUCTURE
+process:
+  stage_count: null             # Number of distinct stages (NOTE: no Voynich mapping)
+  stages: []                    # List of stage descriptions
+  equipment: []                 # e.g., ["alembic", "bain-marie", "furnace"]
+  # Mapping: equipment NOT encoded in Voynich (C171)
+
+# RESTRICTIONS/DANGERS (what must NOT happen)
+restrictions:
+  forbidden_actions: []         # e.g., ["do not overheat", "avoid direct flame"]
+  safety_warnings: []           # e.g., ["toxic fumes", "fire hazard"]
+  failure_modes: []             # e.g., ["material burns", "product spoils"]
+  evidence: ""
+  # Mapping: → hazard topology (C109), but no recipe-specific mapping
+
+# OUTPUT CHARACTERISTICS
+output:
+  product_type: ""              # e.g., "distilled water", "oil", "powder"
+  quality_markers: []           # e.g., ["clear", "yellow tint", "no sediment"]
+  uses: []                      # Listed applications/uses
+  yield_notes: ""               # Any quantity information
+
+# RAW QUOTES (preserve exact text for reference)
+raw_quotes:
+  key_passages: []              # Important quotes from recipe
+  ambiguous_passages: []        # Unclear sections needing interpretation
+
+---
+# DERIVED VOYNICH CONSTRAINTS
+# (Computed from above fields - fill after completing recipe analysis)
+
+derived_constraints:
+  # From fire_regime.degree
+  regime_mapping:
+    target_regime: null         # REGIME_1 | REGIME_2 | REGIME_3 | REGIME_4
+    confidence: ""              # high | medium | low
+    notes: ""
+
+  # From sensory_monitoring
+  zone_affinity:
+    r_zone_expected: false      # true if sound monitoring required
+    p_zone_expected: false      # true if sight monitoring required
+    s_zone_expected: false      # true if touch monitoring required (weak)
+    confidence: ""
+    notes: ""
+
+  # From timing.precision_required
+  execution_profile:
+    escape_expected: ""         # low | medium | high
+    recovery_latitude: ""       # constrained | moderate | free
+    notes: ""
+
+  # From identification.material_class
+  registry_filter:
+    material_class: ""          # animal | plant | mineral
+    ri_token_expected: true     # RI tokens should match material class
+    prefix_enrichment: []       # Expected PREFIX patterns (e.g., ["da", "ok", "ct"] for animal)
+    notes: ""
+
+# TRIANGULATION VECTOR (summary for computational use)
+triangulation_vector:
+  regime: null                  # 1-4
+  zone_r: false                 # R-zone affinity expected
+  zone_p: false                 # P-zone affinity expected
+  zone_s: false                 # S-zone affinity expected
+  material_class: ""            # animal | plant | mineral
+  precision_level: ""           # low | medium | high
+  # Use this vector to filter candidate B folios
+
+# NOTES
+analysis_notes: ""              # Any observations, uncertainties, or comments
+analyst: ""                     # Who filled this out
+date: ""                        # When

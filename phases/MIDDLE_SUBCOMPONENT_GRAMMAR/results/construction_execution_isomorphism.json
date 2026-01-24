@@ -1,0 +1,36 @@
+{
+  "pearson_r": -0.21232386181674004,
+  "pearson_p": 0.06934709780918132,
+  "spearman_rho": -0.15196019259112345,
+  "spearman_p": 0.19619207654475465,
+  "n_pairs": 74,
+  "category_match_rate": 0.28378378378378377,
+  "verdict": "NO ISOMORPHISM",
+  "tier": "Falsified",
+  "kernel_comparisons": {
+    "h\u2192k": {
+      "construction": 0.23822191667816417,
+      "execution": null
+    },
+    "k\u2192h": {
+      "construction": 1.1005458795297005,
+      "execution": null
+    },
+    "e\u2192k": {
+      "construction": 0.4393977274133884,
+      "execution": null
+    },
+    "k\u2192e": {
+      "construction": 4.002309651295752,
+      "execution": null
+    },
+    "h\u2192e": {
+      "construction": 6.070046843754136,
+      "execution": null
+    },
+    "e\u2192h": {
+      "construction": 0.004051424557820215,
+      "execution": null
+    }
+  }
+}

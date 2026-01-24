@@ -1,0 +1,42 @@
+{
+  "metric1_pp_are_components": {
+    "count": 65,
+    "total": 90,
+    "percentage": 72.2
+  },
+  "metric2_components_are_pp": {
+    "count": 65,
+    "total": 218,
+    "percentage": 29.8
+  },
+  "metric3_ri_contains_pp": {
+    "count": 1279,
+    "total": 1290,
+    "percentage": 99.1
+  },
+  "stratification": {
+    "H": {
+      "ri_middles": 854,
+      "ri_contains_pp": 847,
+      "ri_contains_pp_pct": 99.2
+    },
+    "P": {
+      "ri_middles": 448,
+      "ri_contains_pp": 441,
+      "ri_contains_pp_pct": 98.4
+    },
+    "T": {
+      "ri_middles": 207,
+      "ri_contains_pp": 205,
+      "ri_contains_pp_pct": 99.0
+    }
+  },
+  "component_vocab_size": 218,
+  "pp_middles_count": 90,
+  "ri_middles_count": 1290,
+  "pass_criteria": {
+    "threshold": 50,
+    "metrics_above_threshold": 2,
+    "passed": true
+  }
+}

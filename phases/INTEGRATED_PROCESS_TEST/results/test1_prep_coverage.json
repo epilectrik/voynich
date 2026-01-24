@@ -1,0 +1,37 @@
+{
+  "test": "Test 1: Prep Step Isolation",
+  "hypothesis": "H1: B encodes integrated process control (prep + distillation)",
+  "metrics": {
+    "coverage": 1.0,
+    "violation_rate": 0.0,
+    "prep_percentage": 0.4880382775119617,
+    "avg_prep_density": 0.4239130434782608
+  },
+  "counts": {
+    "total_step_instances": 418,
+    "prep_steps": 204,
+    "distill_steps": 214,
+    "ambiguous_steps": 0
+  },
+  "by_type": {
+    "prep": {
+      "AUX": 193,
+      "h_HAZARD": 6,
+      "LINK": 4,
+      "FLOW": 1
+    },
+    "distill": {
+      "e_ESCAPE": 193,
+      "k_ENERGY": 12,
+      "FLOW": 9
+    },
+    "ambiguous": {}
+  },
+  "recipe_distribution": {
+    "high_prep": 5,
+    "high_distill": 16,
+    "mixed": 2
+  },
+  "verdict": "H1 SUPPORTED",
+  "explanation": "Coverage (100%) >= 70% AND violation rate (0%) < 5%"
+}

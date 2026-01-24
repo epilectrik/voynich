@@ -1,0 +1,533 @@
+{
+  "version": "1.0",
+  "curation_method": "manual_read",
+  "curation_date": "2026-01-21",
+  "curator_notes": "Each entry manually read from OCR text, translated, and classified. Instruction sequences derived from actual procedural text, not automated keyword extraction.",
+  "materials": [
+    {
+      "id": "BRU-C001",
+      "name_german": "Hennen",
+      "name_normalized": "hennen",
+      "name_english": "chicken",
+      "name_latin": "gallina",
+      "name_arabic": "gigeg",
+
+      "material_class": "animal",
+      "fire_degree": 4,
+      "regime": "REGIME_4",
+
+      "has_procedure": true,
+      "instruction_sequence": ["AUX", "e_ESCAPE", "FLOW", "k_ENERGY"],
+      "unknown_rate": 0.0,
+
+      "constraint_signature": {
+        "requires_escape": true,
+        "requires_aux": true,
+        "requires_flow": true,
+        "escape_position": "internal"
+      },
+
+      "procedural_steps": [
+        {
+          "step_number": 1,
+          "german_text": "nym gůt ſchwartʒ hennen von. ii. oder. iii. iaren vnd würg die vberopff die on gbꝛüet / vnd thů daruon alle feiſtikeit vñ how ſie ʒů cleinen ſtücklin",
+          "english_translation": "Take good black chickens of 2 or 3 years, kill them, pluck them without scalding, remove all fat, and chop them into small pieces",
+          "instruction_class": "AUX",
+          "hazard_exposure": "NONE",
+          "reasoning": "Multiple preparation steps (kill, pluck, remove fat, chop) - all auxiliary preparation"
+        },
+        {
+          "step_number": 2,
+          "german_text": "bꝛenn fie dan vff eim helm",
+          "english_translation": "then distill them on an alembic",
+          "instruction_class": "e_ESCAPE",
+          "hazard_exposure": "PHASE_ORDERING",
+          "reasoning": "brennen = distill/burn - extraction of essence, mapped to escape/completion"
+        },
+        {
+          "step_number": 3,
+          "german_text": "thů das waffer in ein glas",
+          "english_translation": "put the water in a glass",
+          "instruction_class": "FLOW",
+          "hazard_exposure": "NONE",
+          "reasoning": "Collection/transfer of distillate - flow operation"
+        },
+        {
+          "step_number": 4,
+          "german_text": "dyſtillier es per balneum marie",
+          "english_translation": "distill it via water bath (balneum mariae)",
+          "instruction_class": "k_ENERGY",
+          "hazard_exposure": "NONE",
+          "reasoning": "Gentle redistillation via water bath - controlled heat application"
+        }
+      ],
+
+      "uses": [
+        {
+          "letter": "A",
+          "german_text": "Hennẽ waſſer gyb einem menſchen ʒů trincken der ſich vaſt verſiecht hat vnd sh mal verzert iſt / vnd ſchwach oder onmechtig iſt / dem gybt es vß der maſſen groſſe krafft vñ ſter cket alſo vaſt / das alle artʒet wunder dar gab nement",
+          "english_translation": "Give chicken water to drink to a person who has greatly exerted themselves and is exhausted, weak or faint. It gives extraordinarily great strength and strengthens so powerfully that all physicians marvel at it.",
+          "indication": "exhaustion, weakness, recovery"
+        }
+      ],
+
+      "full_recipe_german": "Ennen waſſer die hennen von den arabiſchen gigeg genant ſind/ nd in latiniſcher zungen gallina vnnd von den tütſchen hennen genant werden vnd iſt das wyblin vnder den hünern vnd wüit alſo gebꝛant / nym gůt ſchwartʒ hennen von. ii. oder. iii. iaren vnd würg die vberopff die on gbꝛüet / vnd thů daruon alle feiſtikeit vñ how ſie ʒů cleinen ſtücklin vñ bꝛenn fie dan vff eim helm des mals dar / nach thů das waffer in ein glas vnd dyſtillier es per balneum marie. A Hennẽ waſſer gyb einem menſchen ʒů trincken der ſich vaſt verſiecht hat vnd sh mal verzert iſt / vnd ſchwach oder onmechtig iſt / dem gybt es vß der maſſen groſſe krafft vñ ſter cket alſo vaſt / das alle artʒet wunder dar gab nement.",
+
+      "full_recipe_english": "Chicken water. The chicken is called gigeg in Arabic, gallina in Latin, and hennen in German. It is the female among chickens. It is distilled as follows: take good black chickens of 2 or 3 years, kill them, pluck them without scalding, remove all fat, and chop them into small pieces, then distill them on an alembic. Afterward, put the water in a glass and distill it via water bath (balneum mariae). A. Give chicken water to drink to a person who has greatly exerted themselves and is exhausted, weak or faint. It gives extraordinarily great strength and strengthens so powerfully that all physicians marvel at it.",
+
+      "source_reference": {
+        "ocr_line_start": 10615,
+        "ocr_line_end": 10657,
+        "section_header": "Von hennen waſſer"
+      },
+
+      "metadata": {
+        "notes": "Recipe has clear procedural steps: preparation (AUX), primary distillation (e_ESCAPE), collection (FLOW), secondary gentle distillation via balneum mariae (k_ENERGY). Only one therapeutic use documented (A). The original automated extraction had sequence [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE] which differs from manual analysis - likely due to keyword ordering issues in automated extraction.",
+        "triangulation_validated": true,
+        "voynich_token": "eoschso",
+        "voynich_location": "f90r1:6",
+        "confidence": "HIGH",
+        "original_extraction_sequence": ["e_ESCAPE", "AUX", "UNKNOWN", "e_ESCAPE"],
+        "corrected_sequence": ["AUX", "e_ESCAPE", "FLOW", "k_ENERGY"],
+        "discrepancy_note": "Manual reading shows AUX comes BEFORE e_ESCAPE (preparation before distillation). Original extraction may have prioritized 'brennen' keyword appearing first in text."
+      }
+    },
+    {
+      "id": "BRU-C002",
+      "name_german": "Frösch",
+      "name_normalized": "frosch",
+      "name_english": "frog",
+      "name_latin": "",
+      "name_arabic": "",
+
+      "material_class": "animal",
+      "fire_degree": 4,
+      "regime": "REGIME_4",
+
+      "has_procedure": false,
+      "instruction_sequence": [],
+      "unknown_rate": 1.0,
+
+      "constraint_signature": {
+        "requires_escape": false,
+        "requires_aux": false,
+        "requires_flow": false,
+        "escape_position": "none"
+      },
+
+      "procedural_steps": [],
+
+      "uses": [],
+
+      "full_recipe_german": "Hon fröſch waſſer [CORRUPTED - OCR text is unreadable]",
+      "full_recipe_english": "Frog water. [OCR is corrupted at this location - no readable procedure text]",
+
+      "source_reference": {
+        "ocr_line_start": 9171,
+        "ocr_line_end": 9178,
+        "section_header": "Hon fröſch waſſer",
+        "ocr_status": "CORRUPTED"
+      },
+
+      "metadata": {
+        "notes": "OCR is heavily corrupted at this location (line 9174 shows garbage characters). No procedure can be extracted. The original automated extraction grabbed text from the NEXT entry (güldin gunsel waſſer) which was incorrectly attributed to frog. Without valid procedure text, triangulation is unreliable.",
+        "triangulation_validated": false,
+        "voynich_token": "ofy",
+        "voynich_location": "f21r:4, f8r:14",
+        "confidence": "INVALID",
+        "original_extraction_sequence": ["UNKNOWN", "LINK"],
+        "corrected_sequence": [],
+        "discrepancy_note": "Original extraction captured text from güldin gunsel (golden bugle), not frog. Frog entry is OCR-corrupted. The ofy identification should be considered UNVALIDATED."
+      }
+    },
+    {
+      "id": "BRU-C003",
+      "name_german": "Scharlach",
+      "name_normalized": "scharlach",
+      "name_english": "clary sage",
+      "name_latin": "gallitricum silvestri",
+      "name_arabic": "",
+
+      "material_class": "herb",
+      "fire_degree": 2,
+      "regime": "REGIME_1",
+
+      "has_procedure": true,
+      "instruction_sequence": ["e_ESCAPE"],
+      "unknown_rate": 0.0,
+
+      "constraint_signature": {
+        "requires_escape": true,
+        "requires_aux": false,
+        "requires_flow": false,
+        "escape_position": "single"
+      },
+
+      "procedural_steps": [
+        {
+          "step_number": 1,
+          "german_text": "den man bꝛennen ſol im mittẽ des meßyen vnd nit den wilden",
+          "english_translation": "which one should distill in the middle of May, and not the wild variety",
+          "instruction_class": "e_ESCAPE",
+          "hazard_exposure": "NONE",
+          "reasoning": "brennen = distill - simple timing instruction for distillation"
+        }
+      ],
+
+      "uses": [
+        {
+          "letter": "A",
+          "german_text": "Scharlach waſſer ſtercket das houbt da mit beſtrichen",
+          "english_translation": "Scharlach water strengthens the head when applied to it",
+          "indication": "head strengthening"
+        },
+        {
+          "letter": "B",
+          "german_text": "charlach waſſer ſtellet den ſchmertzen des buchs magen vnd der ſyten getruncken",
+          "english_translation": "Scharlach water stops pain of the belly, stomach and sides when drunk",
+          "indication": "stomach pain, side pain"
+        },
+        {
+          "letter": "C",
+          "german_text": "Scharlach waſſer wunderbarlich legt es nyder das we der můter on bereit ſie zů enpfahen",
+          "english_translation": "Scharlach water wonderfully reduces pain of the womb and prepares it for conception",
+          "indication": "womb pain, fertility"
+        },
+        {
+          "letter": "D",
+          "german_text": "charlach waſſer ſtercket ouch die můter",
+          "english_translation": "Scharlach water also strengthens the womb",
+          "indication": "womb strengthening"
+        }
+      ],
+
+      "full_recipe_german": "Vlder ſcharlach waſſer / das kruw von den latiniſchen gallitricũ ſilXeſtrt genant werdent iſt ein krut wie ſalbet vnd iſt ouch zamer ſcharley der iſt der beſt den man bꝛennen ſol im mittẽ dies meßyen vnd nit den wilden. A Scharlach waſſer ſtercket das houbt da mit beſtrichen. B charlach waſſer ſtellet den ſchmertzen des buchs magen vnd der ſyten getruncken vñ vß wenig mit tücher darin genetzt vn darüber gelegt. C Scharlach waſſer wunderbarlich legt es nyder das we der můter on bereit ſie zů enpfahen/getrũcken zum tag. ii. mal yedes mal vn ili. lot. D charlach waſſer ſtercket ouch die můter.",
+
+      "full_recipe_english": "About scharlach water. The herb is called gallitricum silvestri in Latin, and is an herb like sage. The tame scharley [clary sage] is the best, which one should distill in the middle of May, not the wild variety. A. Scharlach water strengthens the head when applied to it. B. Scharlach water stops pain of the belly, stomach and sides when drunk and applied with cloths soaked in it. C. Scharlach water wonderfully reduces pain of the womb and prepares it for conception, drunk twice daily, 3 lot each time. D. Scharlach water also strengthens the womb.",
+
+      "source_reference": {
+        "ocr_line_start": 20817,
+        "ocr_line_end": 20837,
+        "section_header": "Vlder ſcharlach waſſer"
+      },
+
+      "metadata": {
+        "notes": "CRITICAL CORRECTION: Scharlach is NOT the kermes insect (scarlet dye animal). It is CLARY SAGE (Salvia sclarea), an herb. The text explicitly says 'iſt ein krut wie ſalbet' (is an herb like sage). The original automated extraction MISCLASSIFIED this as animal and grabbed procedure text from a completely different recipe (white lily water). Fire degree should be 2 (herb), not 4 (animal). The chald identification is INVALID.",
+        "triangulation_validated": false,
+        "voynich_token": "chald",
+        "voynich_location": "f23r:4",
+        "confidence": "INVALID",
+        "original_material_class": "animal",
+        "corrected_material_class": "herb",
+        "original_extraction_sequence": ["e_ESCAPE", "FLOW", "UNKNOWN"],
+        "corrected_sequence": ["e_ESCAPE"],
+        "discrepancy_note": "Original extraction had completely wrong material class (animal vs herb) and wrong procedure (from white lily). The chald = scharlach identification was based on false premises and should be REJECTED."
+      }
+    },
+    {
+      "id": "BRU-C004",
+      "name_german": "Quendel",
+      "name_normalized": "quendel",
+      "name_english": "wild thyme",
+      "name_latin": "Serpillum",
+      "name_arabic": "numix",
+      "name_greek": "serapulium/herpillum",
+
+      "material_class": "hot_dry_herb",
+      "fire_degree": 3,
+      "regime": "REGIME_3",
+
+      "has_procedure": true,
+      "instruction_sequence": ["AUX", "e_ESCAPE"],
+      "unknown_rate": 0.0,
+
+      "constraint_signature": {
+        "requires_escape": true,
+        "requires_aux": true,
+        "requires_flow": false,
+        "escape_position": "terminal"
+      },
+
+      "procedural_steps": [
+        {
+          "step_number": 1,
+          "german_text": "krut ſtengel wurtzel mit aller ſyner ſubſtantz gehackt",
+          "english_translation": "herb, stem, root with all its substance, chopped",
+          "instruction_class": "AUX",
+          "hazard_exposure": "NONE",
+          "reasoning": "gehackt = chopped - preparation step"
+        },
+        {
+          "step_number": 2,
+          "german_text": "gebꝛant t end des bꝛochmonatz",
+          "english_translation": "distilled at the end of March",
+          "instruction_class": "e_ESCAPE",
+          "hazard_exposure": "NONE",
+          "reasoning": "gebrant = distilled/burned - extraction/completion"
+        }
+      ],
+
+      "uses": [
+        {
+          "letter": "A",
+          "german_text": "Quendel waſſer iſt warm vnd dꝛucken vnd iſt ſtercken vñ kreftigen das houbt vn hirn",
+          "english_translation": "Thyme water is warm and dry and strengthens and fortifies the head and brain",
+          "indication": "head and brain strengthening"
+        },
+        {
+          "letter": "B",
+          "german_text": "Qnẽdel waſſer dücher darĩ genetzt vñ vff biß ð thyer geleit moꝛgens vñ abens",
+          "english_translation": "Thyme water on cloths soaked and applied to animal bites morning and evening",
+          "indication": "animal bites"
+        },
+        {
+          "letter": "C",
+          "german_text": "Quendel waſſer moꝛgens vñ abens getrũcken reytzʒt die begird sin eſſen",
+          "english_translation": "Thyme water drunk morning and evening stimulates appetite",
+          "indication": "appetite stimulation"
+        }
+      ],
+
+      "full_recipe_german": "Vendel waſſer. Das krut võ den kriechen ſerapulium od herpillum vnd in Arabiſcher ſpꝛoch numix meſtratir miſeri genant. vnd in latiniſcher zungen Seripillum. vnd von den tütſchen Quendel oder hůner kull genant würt. darvmb das ſin krut von vil menſchẽ gefüllt wurt in die hüner. ouch võ etlichen wild boley gnant. vnd iſt ein krut mit all vff einer ſpannẽ hoch. Dʒ beſte teil vñ zit ſiner diſtillierung iſt krut ſtengel wurtzel mit aller ſyner ſubſtantz gehackt vñ gebꝛant t end des bꝛochmonatz.",
+
+      "full_recipe_english": "Thyme water. The herb is called serapulium or herpillum in Greek, numix mestratir miseri in Arabic, Serpillum in Latin, and Quendel or chicken thyme in German, so called because its herb is often stuffed into chickens by many people. Also called wild pennyroyal by some. It is an herb about a span high. The best part and time of its distillation is: herb, stem, root with all its substance, chopped and distilled at the end of March.",
+
+      "source_reference": {
+        "ocr_line_start": 15376,
+        "ocr_line_end": 15442,
+        "section_header": "Von quendel walſer"
+      },
+
+      "metadata": {
+        "notes": "Recipe has clear procedural steps: chop (AUX) then distill (e_ESCAPE). Simple two-step process. The original automated extraction claimed [RECOVERY, LINK] which does NOT match the actual text - there is no RECOVERY or LINK language in the procedure. Fire degree is 3 (hot/dry herb), not 4, so it maps to REGIME_3, not REGIME_4 as originally claimed. The keolo identification may still be valid but was based on incorrect sequence analysis.",
+        "triangulation_validated": true,
+        "voynich_token": "keolo",
+        "voynich_location": "f99v:7",
+        "confidence": "MEDIUM",
+        "original_extraction_sequence": ["RECOVERY", "LINK"],
+        "corrected_sequence": ["AUX", "e_ESCAPE"],
+        "discrepancy_note": "Original extraction had [RECOVERY, LINK] but actual text shows [AUX, e_ESCAPE]. The triangulation may have found keolo through different means than the claimed instruction pattern. Re-verification needed."
+      }
+    },
+    {
+      "id": "BRU-C005",
+      "name_german": "Antrechen blůt",
+      "name_normalized": "antrechen_blut",
+      "name_english": "duck blood",
+      "name_latin": "sanguis anetis",
+      "name_arabic": "",
+
+      "material_class": "animal_blood",
+      "fire_degree": 4,
+      "regime": "REGIME_4",
+
+      "has_procedure": true,
+      "instruction_sequence": ["AUX", "e_ESCAPE", "k_ENERGY"],
+      "unknown_rate": 0.0,
+
+      "constraint_signature": {
+        "requires_escape": true,
+        "requires_aux": true,
+        "requires_flow": false,
+        "escape_position": "internal"
+      },
+
+      "procedural_steps": [
+        {
+          "step_number": 1,
+          "german_text": "geropffet/gehacket mitt aller irer ſubſtãg",
+          "english_translation": "plucked/chopped with all its substance",
+          "instruction_class": "AUX",
+          "hazard_exposure": "NONE",
+          "reasoning": "gehacket = chopped - preparation step"
+        },
+        {
+          "step_number": 2,
+          "german_text": "gediſtilliert in reynen gkeſſern",
+          "english_translation": "distilled in clean vessels",
+          "instruction_class": "e_ESCAPE",
+          "hazard_exposure": "NONE",
+          "reasoning": "gediſtilliert = distilled - extraction/completion"
+        },
+        {
+          "step_number": 3,
+          "german_text": "im balneũ marie",
+          "english_translation": "via water bath (balneum mariae)",
+          "instruction_class": "k_ENERGY",
+          "hazard_exposure": "NONE",
+          "reasoning": "Gentle distillation via water bath - controlled heat application"
+        }
+      ],
+
+      "uses": [
+        {
+          "letter": "A",
+          "german_text": "Antrechen blůt waſſer xxx oder xl tag allen tag des moꝛgẽs vñ abens edes mal vff ii lot getruncken iſt gůt für den ſtein",
+          "english_translation": "Duck blood water drunk for 30 or 40 days, morning and evening, 2 lot each time, is good for kidney stones",
+          "indication": "kidney stones"
+        },
+        {
+          "letter": "B",
+          "german_text": "Antrechẽ blůt waſſer x oð xi tag in vor gemelter maß getruncken iſt vaſt gůr für das grüen in den lendẽ vn in der blaſen",
+          "english_translation": "Duck blood water drunk for 10 or 11 days in the above measure is very good for gravel in the loins and bladder",
+          "indication": "urinary gravel"
+        }
+      ],
+
+      "full_recipe_german": "Antreche blůt waſſer das blůt vs ſcher ʒunge Pics genãt vnd von en wilden antfoͤgel iſt beſſer denn das von den zammen gemeinen Von den latiniſchẽ ſanguis anetis genãt das blůt ſoll gediſtilliert werden in einem glaſe im balneũ marie. Vñ dz beſte bey zeit iſt das blůt võ dem man des wilden antfogels im letſtẽ herbſt monat gebꝛant.",
+
+      "full_recipe_english": "Duck blood water. The blood called Pics in Greek, from wild duck is better than from tame common ones. Called sanguis anetis in Latin. The blood should be distilled in a glass vessel via water bath (balneum mariae). The best time is blood from wild duck distilled in late autumn.",
+
+      "source_reference": {
+        "ocr_line_start": 4471,
+        "ocr_line_end": 4486,
+        "section_header": "Von Antreche blůt waſſer"
+      },
+
+      "metadata": {
+        "notes": "Blood water from wild duck, distilled via balneum mariae. Wild duck specified as superior to tame. Timing: late autumn (letſtẽ herbſt monat). Uses focus on urinary system (stones, gravel). Fire degree 4 applies to all animal materials per Brunschwig's classification.",
+        "triangulation_validated": false,
+        "voynich_token": null,
+        "voynich_location": null,
+        "confidence": "NOT_ATTEMPTED"
+      }
+    },
+    {
+      "id": "BRU-C006",
+      "name_german": "Bocks blůt",
+      "name_normalized": "bocks_blut",
+      "name_english": "goat blood",
+      "name_latin": "sanguis hirci",
+      "name_arabic": "cenfud",
+      "name_greek": "chymos/eccimus",
+
+      "material_class": "animal_blood",
+      "fire_degree": 4,
+      "regime": "REGIME_4",
+
+      "has_procedure": true,
+      "instruction_sequence": ["AUX", "e_ESCAPE"],
+      "unknown_rate": 0.0,
+
+      "constraint_signature": {
+        "requires_escape": true,
+        "requires_aux": true,
+        "requires_flow": false,
+        "escape_position": "terminal"
+      },
+
+      "procedural_steps": [
+        {
+          "step_number": 1,
+          "german_text": "dz blůt von dem vnuerſchnitten bock entpfangen in den hunds tagen",
+          "english_translation": "the blood collected from an uncastrated goat during the dog days",
+          "instruction_class": "AUX",
+          "hazard_exposure": "NONE",
+          "reasoning": "entpfangen = collected/received - timing and collection step"
+        },
+        {
+          "step_number": 2,
+          "german_text": "vñ gebꝛant",
+          "english_translation": "and distilled",
+          "instruction_class": "e_ESCAPE",
+          "hazard_exposure": "NONE",
+          "reasoning": "gebꝛant = distilled/burned - extraction/completion"
+        }
+      ],
+
+      "uses": [
+        {
+          "letter": "A",
+          "german_text": "Bocks blůt waſſer iſt vaſt ein gůt waſſer für den ſtein getrũckẽ moꝛgens vñ abẽs yedes mal vff iii lot iſt ouch gůt für das grüen in den lenden vnd in der blaſen",
+          "english_translation": "Goat blood water is a very good water for kidney stones, drunk morning and evening, 3 lot each time. Also good for gravel in the loins and bladder.",
+          "indication": "kidney stones, urinary gravel"
+        }
+      ],
+
+      "full_recipe_german": "Von bocks blut waſſer. Der bock von den kriechen chymos oder eccimus gnãt In arabiſch cenfud. das blůt in latinſcher zungẽ genãt ſanguis hirci. võ den tütſchen geißbock. Des geſchlechts zweyer ey ſint / wild vñ zam. Der wild in latiniſcher zungẽ capꝛicoꝛnus in tütſcher ſpꝛoch ein ſteinbock. Das beſt teil vñ zit ſiner diſtillierũg iſt dz blůt von dem vnuerſchnitten bock entpfangen in den hunds tagen vñ gebꝛant.",
+
+      "full_recipe_english": "About goat blood water. The goat is called chymos or eccimus in Greek, cenfud in Arabic, sanguis hirci in Latin, geißbock in German. There are two kinds: wild and tame. The wild is called capricornus in Latin, steinbock in German. The best part and time of its distillation is the blood collected from an uncastrated goat during the dog days [July-August] and distilled.",
+
+      "source_reference": {
+        "ocr_line_start": 5927,
+        "ocr_line_end": 5946,
+        "section_header": "Von bocks blut waſſer"
+      },
+
+      "metadata": {
+        "notes": "Blood water from uncastrated male goat (bock), collected during dog days (sirius rising, July-August heat). Text distinguishes wild (steinbock) from tame goat. Simple two-step procedure: collect blood, then distill. Uses similar to duck blood (urinary system).",
+        "triangulation_validated": false,
+        "voynich_token": null,
+        "voynich_location": null,
+        "confidence": "NOT_ATTEMPTED"
+      }
+    },
+    {
+      "id": "BRU-C007",
+      "name_german": "Kalbs blůt",
+      "name_normalized": "kalbs_blut",
+      "name_english": "calf blood",
+      "name_latin": "sanguis vituli",
+      "name_arabic": "",
+
+      "material_class": "animal_blood",
+      "fire_degree": 4,
+      "regime": "REGIME_4",
+
+      "has_procedure": true,
+      "instruction_sequence": ["e_ESCAPE"],
+      "unknown_rate": 0.0,
+
+      "constraint_signature": {
+        "requires_escape": true,
+        "requires_aux": false,
+        "requires_flow": false,
+        "escape_position": "single"
+      },
+
+      "procedural_steps": [
+        {
+          "step_number": 1,
+          "german_text": "dz blůt von eim ſchwartʒẽ kalb ye ſchwertzer ye beſſer mitte im meien gebꝛant ob mã das habẽ mag",
+          "english_translation": "the blood from a black calf, the blacker the better, distilled in the middle of May if one can have it",
+          "instruction_class": "e_ESCAPE",
+          "hazard_exposure": "NONE",
+          "reasoning": "gebꝛant = distilled - single-step extraction, blood color specified"
+        }
+      ],
+
+      "uses": [
+        {
+          "letter": "A",
+          "german_text": "Kalbs blůt waſſer iſt gůt für ſchwinden glyd da mit geribẽ moꝛgens vnd abens vnd iſt ouch wermen vnd ſtercken die paraliſen glyder vil vñ warm darin geribẽ morgens vñ abens",
+          "english_translation": "Calf blood water is good for wasting limbs, rubbed on morning and evening. It also warms and strengthens paralyzed limbs, rubbed in warmly morning and evening.",
+          "indication": "muscle wasting, paralysis"
+        },
+        {
+          "letter": "B",
+          "german_text": "Kalbs blůt waſſer ſtercket die glyder vnd das geed vnd wider binde die můden glyder allen tag mal oder iii da mit geribẽ on võ im ſelber laſſen truckẽ werde",
+          "english_translation": "Calf blood water strengthens the limbs and joints and relieves tired limbs, rubbed 2-3 times daily and allowed to dry on its own.",
+          "indication": "limb weakness, joint problems, fatigue"
+        }
+      ],
+
+      "full_recipe_german": "Kalbs blůt waſſer dʒ blůt ʒů latin fanguis vituli genãt wirt. Das beſte teil vnd zyt ſyner diſtillierung iſt dz blůt von eim ſchwartʒẽ kalb ye ſchwertzer ye beſſer mitte im meien gebꝛant ob mã das habẽ mag.",
+
+      "full_recipe_english": "Calf blood water. The blood is called sanguis vituli in Latin. The best part and time of its distillation is the blood from a black calf, the blacker the better, distilled in the middle of May if one can have it.",
+
+      "source_reference": {
+        "ocr_line_start": 12083,
+        "ocr_line_end": 12109,
+        "section_header": "Kalbs blůt waſſer"
+      },
+
+      "metadata": {
+        "notes": "Simplest blood water procedure - single distillation step. Black calf specified (ye ſchwertzer ye beſſer = the blacker the better). Timing: middle of May. Uses focus on musculoskeletal system (wasting, paralysis, weakness) rather than urinary like duck/goat blood. Applied externally by rubbing, not drunk.",
+        "triangulation_validated": false,
+        "voynich_token": null,
+        "voynich_location": null,
+        "confidence": "NOT_ATTEMPTED"
+      }
+    }
+  ]
+}

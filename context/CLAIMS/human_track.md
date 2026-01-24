@@ -1,4 +1,4 @@
-# Human Track Constraints (C166-C172, C341-C348, C404-C406, C413-C419)
+# Human Track Constraints (C166-C172, C341-C348, C404-C406, C413-C419, C507)
 
 > **Quick reference:** [HT_CONTEXT_SUMMARY.md](HT_CONTEXT_SUMMARY.md) (context-sufficient)
 > **Formal hierarchy:** [HT_HIERARCHY.md](HT_HIERARCHY.md) (CANONICAL)
@@ -183,6 +183,25 @@ AZC HT shows a distinct pattern from both A and B:
 **Tier:** 2 | **Status:** CLOSED
 HT density negatively correlates with A-vocabulary reference (rho=-0.367, p<0.001). High-HT programs use LESS registry vocabulary. HT tracks cognitive spare capacity.
 **Source:** AAZ
+
+---
+
+## PP-HT Responsibility Substitution (C507)
+
+### C507 - Partial Responsibility Substitution between PP and HT
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A+HT | **Source:** PP_HT_INTERACTION_TEST (2026-01-23)
+
+PP capacity is weakly but significantly inversely correlated with HT density (Spearman rho = -0.294, p = 0.0015). Records with higher PP counts exhibit reduced HT frequency but increased HT morphological diversity.
+
+**Key findings:**
+- HT density: PP 0-3 = 18.83% vs PP 6+ = 12.62%
+- HT TTR correlation with PP: r = +0.40
+
+**Interpretation:** PP and HT partially substitute in a "responsibility budget" — more grammatical freedom (PP capacity) correlates with less human vigilance (HT density) but more varied vigilance (HT TTR).
+
+**Full documentation:** See [currier_a.md](currier_a.md) C507 for complete analysis.
+
+**Cross-references:** C344 (HT-A inverse coupling), C504 (PP count correlation), C506 (PP composition non-propagation)
 
 ---
 

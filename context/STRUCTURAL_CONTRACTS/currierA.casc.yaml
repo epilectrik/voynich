@@ -149,7 +149,58 @@ morphology:
         role: "Stay in A registry, encode within-category fine distinctions"
         interpretation: "Below granularity threshold for execution"
       provenance: "C498, C498.a"
-    provenance: "C293, C423, C475, C498"
+
+    # Sub-component grammar (C510-C513)
+    sub_component_grammar:
+      description: "MIDDLEs exhibit internal compositional structure with systematic construction rules"
+      sub_component_count: 218  # C267.a
+      reconstruction_coverage: "97.8%"
+
+      positional_classes:  # C510
+        START_class: 62
+        END_class: 14
+        MIDDLE_class: 1
+        FREE_class: 110
+        constrained_rate: "41.2%"
+        free_rate: "58.8%"
+        statistical_significance: "z=34.16, p<0.0001"
+        interpretation: "Permissive grammar - constraints exist but majority of components are positionally free"
+        provenance: "C510"
+
+      derivational_productivity:  # C511
+        seeding_ratio: "12.67x above chance"
+        relationships_above_chance: "89.8%"
+        mechanism: "Short frequent forms extended into longer unique forms"
+        explains: "C498.d length-frequency correlation"
+        provenance: "C511"
+
+      pp_substrate:  # C512
+        pp_as_subcomponents: "72.2%"
+        ri_containing_pp: "99.1%"
+        section_invariance_ratio: "8.3x (PP vs RI)"
+        pp_in_all_sections: "60.7%"
+        ri_in_all_sections: "2.6%"
+        interpretation: "PP is universal substrate; RI is section-specific elaboration"
+        provenance: "C512"
+
+      positional_asymmetry:  # C512.a
+        END_class_pp_rate: "71.4%"
+        START_class_pp_rate: "16.1%"
+        FREE_class_pp_rate: "40.9%"
+        pp_free_rate: "69.2%"
+        architecture: "RI-START + PP-FREE + PP-END"
+        pp_terminators: ["ch", "d", "e", "g", "h", "k", "s", "t"]
+        interpretation: "RI elaborates at start, PP terminates at end"
+        provenance: "C512.a"
+
+      short_singleton_variance:  # C513
+        character_inventory_jaccard: "1.00"
+        interpretation: "Singleton status at ≤3 chars is sampling variance, not functional distinction"
+        provenance: "C513"
+
+      provenance: "C267.a, C510, C511, C512, C512.a, C513"
+
+    provenance: "C293, C423, C475, C498, C510-C513"
 
   suffix:
     count: 25
@@ -239,14 +290,20 @@ participation:
     provenance: "C484"
 
   b_relationship:
-    entry_level_coupling: false
+    token_level_coupling: false  # C384 - no context-free token->folio lookup
+    record_level_correspondence: "conditional"  # C384.a - via multi-axis constraint composition
     vocabulary_sharing: "statistical (shared domain)"
-    mapping_type: "not addressable"
+    mapping_type: "not addressable via single tokens"
+    conditional_correspondence_permitted:
+      - "multi-axis constraint composition"
+      - "AZC legality routing"
+      - "survivor-set collapse (C481)"
+      - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
       P_in_B: "8.4% (7/83 folios)"
       T_in_B: "0% (0/83 folios)"
-    provenance: "C299, C384"
+    provenance: "C299, C384, C384.a"
 
 # ============================================================
 # POSITIONAL PROPERTIES
@@ -297,10 +354,11 @@ positional:
 # Do not resurrect without extraordinary new evidence.
 
 disallowed:
-  - interpretation: "A entries map to B programs"
-    reason: "No entry-level coupling exists"
-    evidence: "C384 - no addressable correspondence"
+  - interpretation: "A tokens map to B folios (context-free)"
+    reason: "No token-level or context-free lookup exists"
+    evidence: "C384 - no single-token correspondence"
     status: "FALSIFIED"
+    note: "Record-level correspondence via constraint collapse IS permitted (C384.a)"
 
   - interpretation: "Repetition encodes quantity or ratio"
     reason: "Magnitude has no downstream effect"

@@ -1,166 +1,193 @@
-# CLASS_COSURVIVAL_TEST: Findings
+# CLASS_COSURVIVAL_TEST: Findings (STRICT INTERPRETATION)
 
 ## Executive Summary
 
-Testing which of 49 instruction classes co-survive under Currier A constraints reveals **extremely coarse class-level filtering** despite fine-grained MIDDLE-level differentiation. 98.4% of A records produce identical class survivor sets (all 49 classes survive).
+Under the **strict interpretation** (C502), class-level filtering is **meaningful, not trivial**.
 
-**Conclusion**: These findings **validate existing architecture** (C124, C469, C475) rather than extending it. No new Tier-2 constraints are warranted. The structural grain is at MIDDLE/token level, not class level - exactly as the constraint system predicts.
+| Model | Unique Patterns | Always-Survive Classes | Infrastructure Survival |
+|-------|-----------------|------------------------|-------------------------|
+| Union (WRONG) | 5 | 49 (100%) | 98-100% |
+| **Strict (CORRECT)** | **1,203** | **6 (12%)** | **13-27%** |
 
----
-
-## Key Findings
-
-### 1. Class-Level Filtering is Coarse
-
-| Level | Unique Patterns | Differentiation |
-|-------|----------------|-----------------|
-| MIDDLE | 1,575+ | C481: Each A line produces unique survivor set |
-| CLASS | 5 | 98.4% produce identical result |
-
-**Implication**: AZC legality creates fine-grained vocabulary variation but almost no class-level discrimination. The 49 classes form a nearly-flat structure under A constraints.
-
-### 2. Five Survivor Patterns
-
-| Pattern | A Records | Description |
-|---------|-----------|-------------|
-| 1 | 1,554 (98.4%) | All 49 classes survive |
-| 2 | 19 (1.2%) | Only 6 unfilterable classes survive |
-| 3 | 3 (0.2%) | 48 classes (missing: 44) |
-| 4 | 2 (0.1%) | 46 classes (missing: 12, 36, 44) |
-| 5 | 1 (0.1%) | 47 classes (missing: 12, 44) |
-
-### 3. Unfilterable Core (6 Classes)
-
-Six classes survive in **all** A contexts because each contains at least one **atomic backup token** (a token with no MIDDLE component):
-
-| Class | Atomic Backup Tokens | Role |
-|-------|---------------------|------|
-| 7 | `ar`, `al` | ENERGY_OPERATOR |
-| 9 | `or` | FLOW_OPERATOR |
-| 11 | `ol` | AUXILIARY |
-| 21 | `do` | AUXILIARY |
-| 22 | `''` (empty) | ENERGY_OPERATOR |
-| 41 | `qo`, `sh` | AUXILIARY |
-
-**Mechanism**: When AZC filtering excludes all MIDDLEs, only tokens with `MIDDLE=None` survive. These 6 classes each have at least one such token, guaranteeing class survival. The other 43 classes have ALL tokens with MIDDLEs - no escape hatch.
-
-**Structural meaning**: These atomic tokens (`ar`, `al`, `or`, `ol`, `do`, `qo`, `sh`) form the **absolute minimum B grammar** - operations available even when an A record has completely novel/unknown MIDDLEs.
-
-### 4. Five Equivalence Groups
-
-Classes partition into groups that always co-survive:
-
-| Group | Classes | Count | Note |
-|-------|---------|-------|------|
-| 1 | [1,2,3,4,5,6,8,10,13-20,23-35,37-40,42,43,45-49] | 40 | Main filterable block |
-| 2 | [7, 9, 11, 21, 22, 41] | 6 | Unfilterable core |
-| 3 | [12] | 1 | Singleton (CORE_CONTROL) |
-| 4 | [36] | 1 | Singleton (INFRASTRUCTURE) |
-| 5 | [44] | 1 | Singleton (INFRASTRUCTURE) |
-
-### 5. Roles Don't Predict Co-Survival
-
-Both Group 1 (40 classes) and Group 2 (6 classes) contain **all five role types**:
-- AUXILIARY
-- ENERGY_OPERATOR
-- FLOW_OPERATOR
-- FREQUENT_OPERATOR
-- CORE_CONTROL
-
-**Implication**: Role labels are interpretive abstractions, not structural groupings revealed by AZC filtering.
-
-### 6. Infrastructure Classes NOT Fully Protected
-
-Contrary to BCI scope protection claims:
-
-| Class | BCI Status | Survival Rate |
-|-------|------------|---------------|
-| 36 | Infrastructure | 98.7% |
-| 42 | Infrastructure | 98.8% |
-| 44 | Infrastructure | 98.4% |
-| 46 | Infrastructure | 98.8% |
-
-None achieve 100% survival. Class 44 is the most filterable class overall.
-
-### 7. Pattern 2 Investigation: The 19 Edge Cases
-
-The 19 A records that reduce to only 6 classes (Pattern 2) share a critical property: **their MIDDLEs match ZERO AZC folios**.
-
-| Metric | Pattern 1 (normal) | Pattern 2 (edge) |
-|--------|-------------------|------------------|
-| Avg MIDDLEs in A record | 6.0 | 1.5 |
-| Avg AZC folios matched | 27.6 | **0.0** |
-| Avg legal MIDDLEs | 806.5 | **0** |
-
-**Characteristics of Pattern 2 records:**
-- Many contain asterisks (uncertain readings): `*d*lo`, `*o**s`, `ra**l*r*`
-- Others have rare/unique MIDDLEs: `rdod`, `rdsh`, `ychealod`, `ydaraish`
-- Often single-token lines (avg 1.5 MIDDLEs vs 6.0 normal)
-- Concentrated on "line 0" positions (labels or special markers)
-- 5 of 19 are from folios f102r1/f102r2
-
-**Example Pattern 2 records:**
-```
-f102r1:0a  -> MIDDLEs: ['rdod']      -> 0 AZC matches
-f102r1:0c  -> MIDDLEs: ['rdsh']      -> 0 AZC matches
-f1r:6      -> MIDDLEs: ['ydaraish']  -> 0 AZC matches
-f99r:0     -> MIDDLEs: ['tshol', 'opar', 'yteol', 'oramog'] -> 0 AZC matches
-```
-
-**Implication**: These A records represent contexts with completely novel vocabulary - MIDDLEs that don't appear anywhere in the AZC system. When this happens, B execution falls back to the 6-class atomic skeleton.
+The union model made class-level filtering appear trivially coarse. The strict model reveals significant class-level discrimination.
 
 ---
 
-## Interpretation
+## Finding 1: Meaningful Class-Level Filtering
 
-### What This Means
+| Metric | Union (WRONG) | Strict (CORRECT) |
+|--------|---------------|------------------|
+| Unique class patterns | 5 | **1,203** |
+| All-49-classes records | 98.4% | **0%** |
+| Mean classes surviving | 49 | **32.3** |
+| Range | 47-49 | **6-48** |
 
-1. **Class membership is vocabulary-agnostic at A-constraint level**: 98.4% of the time, all classes are available regardless of which A record is active.
+### Interpretation
 
-2. **The 6 unfilterable classes form a guaranteed base**: Any B program, under any A context, has access to classes [7, 9, 11, 21, 22, 41].
-
-3. **Edge cases (1.6%) create minimal class variation**: The rare contexts that exclude classes only remove a few (usually 44, sometimes 12, 36).
-
-4. **MIDDLE-level is where real differentiation happens**: The 1575+ unique MIDDLE patterns mean the SAME class can behave differently through different token selection, not through class availability.
-
-### Why This Matters
-
-- **Class co-survival is the wrong lens**: Classes don't partition into functional subgroups under A constraints.
-- **Token co-survival would be more revealing**: The MIDDLE-level uniqueness (C481) suggests token-level, not class-level, is the structural grain.
-- **Role labels need re-examination**: If roles don't predict co-survival, what do they predict?
+Under strict interpretation:
+- **No A record** gives full access to all 49 classes
+- Average A record leaves only **32 classes** available (34% filtered)
+- Minimum is **6 classes** (extreme restriction)
+- Maximum is **48 classes** (never all 49)
 
 ---
 
-## Constraint Validation (No New Constraints)
+## Finding 2: Unfilterable Core (6 Classes)
 
-These findings **validate existing architecture** rather than extending it. No new Tier-2 constraints are warranted.
+Only 6 classes survive in **ALL** A contexts:
 
-### Finding 1: Class-Level Filtering Coarseness
+| Class | Survival | Type | MIDDLEs |
+|-------|----------|------|---------|
+| 7 | 100% | ATOMIC | None (tokens: ar, al) |
+| 11 | 100% | ATOMIC | None (token: ol) |
+| 9 | 100% | CORE_CONTROL | 'a', 'o' (universal) |
+| 21 | 100% | AUXILIARY | 'y', 'o', 'lo', 't', 'r', 'ra' |
+| 22 | 100% | AUXILIARY | 'l', 'y', 'g', 'm', 'r' |
+| 41 | 100% | AUXILIARY | 'l', 'e', 's', 'r' |
 
-> 98.4% of A records permit all 49 classes; only 5 unique patterns exist.
+### Why These 6?
 
-**Status**: Quantitative confirmation of existing constraints
-**Validates**: C124 (100% grammar coverage), C469 (categorical resolution via vocabulary), C393 (flat topology)
+- **Classes 7, 11**: Atomic tokens (MIDDLE=None) - always pass any filter
+- **Classes 9, 21, 22, 41**: MIDDLEs are universal connectors ('a', 'o', 'y', 'l', 'r', 'e') present in nearly all A records
 
-Class-level flatness was already *required* by the architecture. This test empirically confirms the implication.
+These form the **minimum viable instruction set** - always available regardless of A context.
 
-### Finding 2: Unfilterable Core Classes
+---
 
-> Six classes [7, 9, 11, 21, 22, 41] survive all contexts via atomic backup tokens.
+## Finding 3: Infrastructure Classes Are NOT Protected
 
-**Status**: Already covered by C475 (MIDDLE atomic incompatibility)
-**Validates**: Atomic classes cannot be AZC-constrained because they have no MIDDLE component.
+| Infrastructure Class | Survival Rate | Status |
+|---------------------|---------------|--------|
+| 36 | **20.9%** | Heavily filtered |
+| 42 | **25.9%** | Heavily filtered |
+| 44 | **13.1%** | Most filtered |
+| 46 | **27.3%** | Heavily filtered |
 
-This is the *defining property* of atomic classes, not a new discovery. The specific class list (`ar`, `al`, `or`, `ol`, `do`, `qo`, `sh`) serves as empirical identification.
+### Interpretation
 
-### Finding 3: Infrastructure Survival Rates
+The union model suggested infrastructure classes were ~100% available (protected).
 
-> Infrastructure classes survive 98.4-98.8%, not 100%.
+The strict model shows they are **heavily filtered** (13-27% survival). This means:
+- Infrastructure operations require specific vocabulary contexts
+- Not all programs have full infrastructure access
+- A-record specification determines infrastructure availability
 
-**Status**: Tier-3 characterization only (not a constraint violation)
-**Does NOT contradict**: Infrastructure scope protection never meant 100% token-level survivability.
+---
 
-BCI defines infrastructure as "required for grammar connectivity" - roles can lose some members and still be structurally protected. Near-universal survivability is consistent with the architecture.
+## Finding 4: Class Survival Rate Spectrum
+
+### Tier 1: Always Survive (100%)
+Classes 7, 9, 11, 21, 22, 41
+
+### Tier 2: High Survival (80-95%)
+| Class | Survival | Role |
+|-------|----------|------|
+| 27 | 93.0% | AUXILIARY |
+| 28 | 92.3% | AUXILIARY |
+| 6 | 91.5% | AUXILIARY |
+| 29 | 90.4% | AUXILIARY |
+| 20 | 87.0% | AUXILIARY |
+| 31 | 87.6% | ENERGY_OPERATOR |
+| 39 | 86.3% | ENERGY_OPERATOR |
+| 38 | 85.0% | FLOW_OPERATOR |
+| 34 | 84.9% | ENERGY_OPERATOR |
+| 14 | 84.5% | FREQUENT_OPERATOR |
+| 5 | 83.5% | AUXILIARY |
+| 19 | 83.1% | AUXILIARY |
+| 47 | 83.1% | ENERGY_OPERATOR |
+| 24 | 80.4% | AUXILIARY |
+| 37 | 80.2% | ENERGY_OPERATOR |
+
+### Tier 3: Medium Survival (50-80%)
+| Class | Survival | Role |
+|-------|----------|------|
+| 25 | 78.7% | AUXILIARY |
+| 43 | 74.6% | ENERGY_OPERATOR |
+| 8 | 72.7% | ENERGY_OPERATOR |
+| 16 | 72.6% | AUXILIARY |
+| 23 | 70.4% | FREQUENT_OPERATOR |
+| 2 | 67.0% | AUXILIARY |
+| 35 | 67.4% | ENERGY_OPERATOR |
+| 30 | 60.8% | FLOW_OPERATOR |
+| 3 | 60.0% | AUXILIARY |
+| 48 | 57.2% | ENERGY_OPERATOR |
+| 26 | 54.1% | AUXILIARY |
+| 13 | 52.6% | FREQUENT_OPERATOR |
+| 40 | 50.8% | FLOW_OPERATOR |
+
+### Tier 4: Low Survival (30-50%)
+| Class | Survival | Role |
+|-------|----------|------|
+| 17 | 48.9% | AUXILIARY |
+| 49 | 48.9% | ENERGY_OPERATOR |
+| 4 | 45.2% | AUXILIARY |
+| 45 | 40.5% | ENERGY_OPERATOR |
+| 10 | 39.1% | CORE_CONTROL |
+| 1 | 38.3% | AUXILIARY |
+| 15 | 36.5% | AUXILIARY |
+| 32 | 34.4% | ENERGY_OPERATOR |
+| 33 | 34.1% | ENERGY_OPERATOR |
+
+### Tier 5: Rare (<30%)
+| Class | Survival | Role |
+|-------|----------|------|
+| 46 | 27.3% | INFRASTRUCTURE |
+| 18 | 27.6% | AUXILIARY |
+| 42 | 25.9% | INFRASTRUCTURE |
+| 36 | 20.9% | INFRASTRUCTURE |
+| 44 | 13.1% | INFRASTRUCTURE |
+| 12 | 12.9% | CORE_CONTROL |
+
+---
+
+## Finding 5: Co-Survival Structure
+
+### Equivalence Classes
+
+Only **1 group** with 100% co-survival: the 6 always-survive classes (7, 9, 11, 21, 22, 41).
+
+All other 43 classes are **singletons** - each has unique survival patterns relative to others.
+
+### Interpretation
+
+Under the strict model:
+- No classes are perfectly correlated except the unfilterable core
+- Each class has independent survival characteristics
+- Class availability is truly discriminating
+
+---
+
+## Constraint Implications
+
+| Constraint | Status | Explanation |
+|------------|--------|-------------|
+| **C481** | **VALIDATED** | 1,203 unique class patterns confirms discrimination |
+| **C502** | **VALIDATED** | Strict interpretation produces meaningful filtering |
+| **C411** | **EXTENDS** | ~34% class-level filtering (not just MIDDLE-level) |
+
+---
+
+## Corrected Understanding
+
+### The Union Model Was Wrong
+
+The union model (AZC expands vocabulary) produced trivial class-level results:
+- 5 patterns, 98.4% all-49-classes
+- Suggested class-level filtering was meaningless
+
+### The Strict Model Is Correct
+
+The strict model (only A-record MIDDLEs are legal) produces:
+- 1,203 patterns, 0% all-49-classes
+- 6 classes always survive (unfilterable core)
+- Infrastructure classes are heavily filtered (13-27%)
+- Mean 32.3 classes per A record (34% filtered)
+
+---
+
+## Key Insight
+
+> **Class-level filtering is meaningful under strict interpretation.** Each A record creates a unique instruction subset, filtering out 34% of classes on average. Only 6 classes (the unfilterable core) are always available. Infrastructure classes require specific vocabulary contexts.
 
 ---
 
@@ -168,30 +195,6 @@ BCI defines infrastructure as "required for grammar connectivity" - roles can lo
 
 | File | Description |
 |------|-------------|
-| `class_token_map.json` | Bidirectional token/class/MIDDLE mappings |
-| `a_record_survivors.json` | Per-A-record survivor sets (1,579 records) |
-| `cosurvival_analysis.json` | Co-survival matrix, Jaccard similarity, equivalence groups |
-
----
-
-## Verification
-
-To reproduce:
-```bash
-cd C:\git\voynich
-python phases/CLASS_COSURVIVAL_TEST/scripts/build_class_token_map.py
-python phases/CLASS_COSURVIVAL_TEST/scripts/compute_survivor_sets.py
-python phases/CLASS_COSURVIVAL_TEST/scripts/analyze_cosurvival.py
-```
-
----
-
-## Next Steps
-
-1. **Investigate token-level co-survival**: Given C481's 1575+ MIDDLE patterns, the structural grain is at token level, not class level.
-
-2. **Re-examine role labels**: If roles don't predict co-survival, what behavioral dimension do they capture?
-
-3. **Update BCI**: Infrastructure scope protection claim needs revision given these findings.
-
-4. **Investigate Pattern 2 folios**: Why do f102r1/f102r2 have so many records with unmatched MIDDLEs? Are these damaged/uncertain readings or genuine novel vocabulary?
+| `a_record_survivors.json` | Per-A-record class survivors (strict model) |
+| `cosurvival_analysis.json` | Pairwise co-survival, Jaccard similarity |
+| `class_token_map.json` | Token-to-class mapping |

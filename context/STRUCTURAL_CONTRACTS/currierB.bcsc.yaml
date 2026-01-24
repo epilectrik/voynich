@@ -179,13 +179,18 @@ role_taxonomy:
       provenance: "C121"
 
     AUXILIARY:
-      function: "Support operations"
-      class_count: 8
-      provenance: "C121"
-      # BCI refinement (2026-01-18): AUXILIARY roles are execution-critical
-      # infrastructure that mediate kernel access. They are redundant internally
-      # (collapsible per C411) but must never be pruned by AZC vocabulary filtering.
-      # See C396.a and TIER3/b_execution_infrastructure_characterization.md
+      function: "Execution scaffold / support operations"
+      class_count: 20
+      token_share: "25.8% of B"
+      provenance: "C121, AUX_COOCCURRENCE audit (2026-01-22)"
+      # AUXILIARY is a thick, AZC-conditioned execution infrastructure layer.
+      # 20 classes: 1-6, 15-22, 24-29 (verified via class_token_map.json)
+      # Dominated by classes 28, 29, 24 (~49% of AUXILIARY tokens).
+      # Internally redundant (per C411) but mutually compatible, not alternatives.
+      # 97.4% of class pairs co-occur; no pair is mutually exclusive under AZC.
+      # At Jaccard 0.7, all 20 classes cluster together (functional coherence).
+      # Survival stratification (28%-100%) reflects A-record MIDDLE availability,
+      # not functional importance. Classes 21, 22 always survive (universal MIDDLEs).
 
     FREQUENT_OPERATOR:
       function: "Common instructions"

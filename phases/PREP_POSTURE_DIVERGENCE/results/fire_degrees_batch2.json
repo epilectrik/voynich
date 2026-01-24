@@ -1,0 +1,484 @@
+{
+  "recipes": [
+    {
+      "id": 91,
+      "fire_degree": 3,
+      "reasoning": "'alembic' found -> strong fire",
+      "source_lines": "10169-10254"
+    },
+    {
+      "id": 92,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtz' -> degree 3",
+      "source_lines": "10257-10351"
+    },
+    {
+      "id": 93,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "10353-10374"
+    },
+    {
+      "id": 94,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "10383-10412"
+    },
+    {
+      "id": 95,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "10423-10466"
+    },
+    {
+      "id": 96,
+      "fire_degree": 1,
+      "reasoning": "'marie' found -> gentle fire",
+      "source_lines": "10469-10486"
+    },
+    {
+      "id": 97,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "10487-10512"
+    },
+    {
+      "id": 98,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "10515-10596"
+    },
+    {
+      "id": 99,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "10599-10614"
+    },
+    {
+      "id": 100,
+      "fire_degree": 1,
+      "reasoning": "'balneum' found -> gentle fire",
+      "source_lines": "10615-10657"
+    },
+    {
+      "id": 101,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "10660-10744"
+    },
+    {
+      "id": 102,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "10752-10798"
+    },
+    {
+      "id": 103,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "10800-10816"
+    },
+    {
+      "id": 104,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "10822-10935"
+    },
+    {
+      "id": 105,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "10938-10964"
+    },
+    {
+      "id": 106,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "10986-11120"
+    },
+    {
+      "id": 107,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "11123-11194"
+    },
+    {
+      "id": 108,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "11197-11235"
+    },
+    {
+      "id": 109,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "11238-11301"
+    },
+    {
+      "id": 110,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "11304-11367"
+    },
+    {
+      "id": 111,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "11388-11459"
+    },
+    {
+      "id": 112,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "11465-11507"
+    },
+    {
+      "id": 113,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "11517-11546"
+    },
+    {
+      "id": 114,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "11549-11613"
+    },
+    {
+      "id": 115,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "11626-11693"
+    },
+    {
+      "id": 116,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blat' -> degree 1",
+      "source_lines": "11696-11729"
+    },
+    {
+      "id": 117,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "11732-11780"
+    },
+    {
+      "id": 118,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "11783-11818"
+    },
+    {
+      "id": 119,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "11820-11889"
+    },
+    {
+      "id": 120,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "11890-11993"
+    },
+    {
+      "id": 121,
+      "fire_degree": 3,
+      "reasoning": "'alembic' found -> strong fire",
+      "source_lines": "11995-12076"
+    },
+    {
+      "id": 122,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "12083-12109"
+    },
+    {
+      "id": 123,
+      "fire_degree": 3,
+      "reasoning": "'alembic' found -> strong fire",
+      "source_lines": "12110-12129"
+    },
+    {
+      "id": 124,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "12132-12149"
+    },
+    {
+      "id": 125,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "12171-12337"
+    },
+    {
+      "id": 126,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "12313-12378"
+    },
+    {
+      "id": 127,
+      "fire_degree": 3,
+      "reasoning": "'per alembicum' found -> strong fire",
+      "source_lines": "12381-12446"
+    },
+    {
+      "id": 128,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "12453-12561"
+    },
+    {
+      "id": 129,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "12577-12641"
+    },
+    {
+      "id": 130,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "12644-12776"
+    },
+    {
+      "id": 131,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "12779-12835"
+    },
+    {
+      "id": 132,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "12837-13005"
+    },
+    {
+      "id": 133,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "13009-13096"
+    },
+    {
+      "id": 134,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "13099-13227"
+    },
+    {
+      "id": 135,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "13218-13519"
+    },
+    {
+      "id": 136,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'lili' -> degree 1",
+      "source_lines": "13520-13617"
+    },
+    {
+      "id": 137,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "13640-13672"
+    },
+    {
+      "id": 138,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "13675-13745"
+    },
+    {
+      "id": 139,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "13748-13776"
+    },
+    {
+      "id": 140,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "13806-13914"
+    },
+    {
+      "id": 141,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "13926-14042"
+    },
+    {
+      "id": 142,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "14045-14189"
+    },
+    {
+      "id": 143,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "14192-14276"
+    },
+    {
+      "id": 144,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "14302-14338"
+    },
+    {
+      "id": 145,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "14340-14487"
+    },
+    {
+      "id": 146,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "14494-14514"
+    },
+    {
+      "id": 147,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "14537-14752"
+    },
+    {
+      "id": 148,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "14770-14804"
+    },
+    {
+      "id": 149,
+      "fire_degree": 1,
+      "reasoning": "'marie' found -> gentle fire",
+      "source_lines": "14855-14881"
+    },
+    {
+      "id": 150,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "14884-14937"
+    },
+    {
+      "id": 151,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "14956-15024"
+    },
+    {
+      "id": 152,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "15025-15073"
+    },
+    {
+      "id": 153,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blat' -> degree 1",
+      "source_lines": "15076-15152"
+    },
+    {
+      "id": 154,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blumen' -> degree 1",
+      "source_lines": "15155-15189"
+    },
+    {
+      "id": 155,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "15192-15248"
+    },
+    {
+      "id": 156,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "15251-15271"
+    },
+    {
+      "id": 157,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'blüt' -> degree 1",
+      "source_lines": "15272-15322"
+    },
+    {
+      "id": 158,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "15325-15339"
+    },
+    {
+      "id": 159,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "15340-15370"
+    },
+    {
+      "id": 160,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "15376-15497"
+    },
+    {
+      "id": 161,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "15500-15558"
+    },
+    {
+      "id": 162,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "15561-15608"
+    },
+    {
+      "id": 163,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "15615-15675"
+    },
+    {
+      "id": 164,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "15679-15784"
+    },
+    {
+      "id": 165,
+      "fire_degree": 3,
+      "reasoning": "'alembic' found -> strong fire",
+      "source_lines": "15787-15818"
+    },
+    {
+      "id": 166,
+      "fire_degree": 3,
+      "reasoning": "tough material 'wurtzel' -> degree 3",
+      "source_lines": "15821-16005"
+    },
+    {
+      "id": 167,
+      "fire_degree": 2,
+      "reasoning": "standard herb distillation (default)",
+      "source_lines": "16008-16035"
+    },
+    {
+      "id": 168,
+      "fire_degree": 1,
+      "reasoning": "'marie' found -> gentle fire",
+      "source_lines": "16038-16303"
+    },
+    {
+      "id": 169,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "16306-16362"
+    },
+    {
+      "id": 170,
+      "fire_degree": 1,
+      "reasoning": "gentle material 'bletter' -> degree 1",
+      "source_lines": "16365-16392"
+    }
+  ]
+}

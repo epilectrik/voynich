@@ -1,0 +1,392 @@
+{
+  "batch": 3,
+  "recipe_range": "171-245",
+  "extraction_date": "2026-01-22",
+  "method": "manual_extraction_from_source",
+  "source": "sources/brunschwig_1500_text.txt",
+  "notes": "Fire degrees extracted by analyzing distillation instructions, material type, and method keywords in the German source text",
+  "recipes": [
+    {
+      "id": 171,
+      "fire_degree": 2,
+      "reasoning": "Red cabbage (Rot kol) - standard herb, leaves chopped and distilled end of May, no special fire instructions"
+    },
+    {
+      "id": 172,
+      "fire_degree": 2,
+      "reasoning": "Rue (Ruten) - standard herb, leaves stripped from stems and distilled mid-May, no balneum mariae mentioned"
+    },
+    {
+      "id": 173,
+      "fire_degree": 1,
+      "reasoning": "Earthworm (Regen wurm) - animal material requires gentle processing, distilled after cleaning through moss"
+    },
+    {
+      "id": 174,
+      "fire_degree": 2,
+      "reasoning": "Larkspur (Ritter sporn) - herb, stem and flowers chopped and distilled beginning of June, standard distillation"
+    },
+    {
+      "id": 175,
+      "fire_degree": 2,
+      "reasoning": "Corn cockle (Ratten krut) - herb with all substance distilled end of May, standard method"
+    },
+    {
+      "id": 176,
+      "fire_degree": 1,
+      "reasoning": "Rose water general (Rosen) - flowers, petals broken off when fully ripe, delicate flower material"
+    },
+    {
+      "id": 177,
+      "fire_degree": 1,
+      "reasoning": "Red rose (Rot rosen) - cultivated rose flowers, delicate material requiring gentle heat"
+    },
+    {
+      "id": 178,
+      "fire_degree": 1,
+      "reasoning": "White rose (Wyss rosen) - explicitly states 'gediſtilliert werdẽ in balneũ marie' (balneum mariae)"
+    },
+    {
+      "id": 179,
+      "fire_degree": 1,
+      "reasoning": "Dog rose/hip rose (Butten rosen) - wild rose flowers, delicate material"
+    },
+    {
+      "id": 180,
+      "fire_degree": 1,
+      "reasoning": "Rose bud (Rosen knopff) - young rose buds, very delicate material"
+    },
+    {
+      "id": 181,
+      "fire_degree": 2,
+      "reasoning": "Peony rose (Beonien rosen) - flowers mixed with root (twice weight), combined flower-root requiring moderate heat"
+    },
+    {
+      "id": 182,
+      "fire_degree": 2,
+      "reasoning": "Turnip (Ruben) - root vegetable, standard distillation, no specific fire instructions in truncated entry"
+    },
+    {
+      "id": 183,
+      "fire_degree": 2,
+      "reasoning": "St. John's wort (Sant Johanns krut) - leaves and flowers stripped from stems, distilled end of June"
+    },
+    {
+      "id": 184,
+      "fire_degree": 1,
+      "reasoning": "Star jelly (Stern geschutz) - fungal/gelatinous substance found on wood, delicate material distilled end of May"
+    },
+    {
+      "id": 185,
+      "fire_degree": 3,
+      "reasoning": "Male orchid root (Stendel wurtz menlin) - root only distilled end of May, harder root material"
+    },
+    {
+      "id": 186,
+      "fire_degree": 3,
+      "reasoning": "Female orchid root (Stendel wurtz wyblin) - root only, same method as male, harder root material"
+    },
+    {
+      "id": 187,
+      "fire_degree": 2,
+      "reasoning": "Melilot/sweet clover (Steyn kle) - leaves and flowers stripped from stems, distilled end of June"
+    },
+    {
+      "id": 188,
+      "fire_degree": 2,
+      "reasoning": "Royal fern (Sant Cristofferus krut) - fern type, chopped and distilled end of May, standard method"
+    },
+    {
+      "id": 189,
+      "fire_degree": 1,
+      "reasoning": "Water lily (Seblumen) - white aquatic flowers distilled when fully ripe, delicate flower material"
+    },
+    {
+      "id": 190,
+      "fire_degree": 2,
+      "reasoning": "Saxifrage (Steinbrech) - small green herb distilled beginning of June, or with seed mid-May"
+    },
+    {
+      "id": 191,
+      "fire_degree": 2,
+      "reasoning": "Scabious (Scabiosen) - herb with small leaves chopped and distilled end of May"
+    },
+    {
+      "id": 192,
+      "fire_degree": 2,
+      "reasoning": "Sage (Salbeien) - herb distilled when flowering, standard method with broad-leaved variety"
+    },
+    {
+      "id": 193,
+      "fire_degree": 2,
+      "reasoning": "Sanicle (Sanickel) - herb and root chopped and distilled mid-May"
+    },
+    {
+      "id": 194,
+      "fire_degree": 1,
+      "reasoning": "Earth snail/slug (Erd schnecken) - animal material, red slugs found when raining, distilled end of May or autumn, gentle processing"
+    },
+    {
+      "id": 195,
+      "fire_degree": 2,
+      "reasoning": "Ribwort plantain (Spitz wegrich) - root and herb chopped and distilled mid-May"
+    },
+    {
+      "id": 196,
+      "fire_degree": 2,
+      "reasoning": "Lady's mantle (Synnow) - root and herb chopped and distilled end of May"
+    },
+    {
+      "id": 197,
+      "fire_degree": 3,
+      "reasoning": "Pointed burdock (Spitz kletten) - fruit with root chopped and distilled when ripe, tougher material"
+    },
+    {
+      "id": 198,
+      "fire_degree": 2,
+      "reasoning": "Southernwood (Schoss wurtz) - leaves stripped from stems, distilled beginning of June"
+    },
+    {
+      "id": 199,
+      "fire_degree": 2,
+      "reasoning": "Greater celandine (Schelwurtz) - herb and root chopped and distilled mid-May"
+    },
+    {
+      "id": 200,
+      "fire_degree": 2,
+      "reasoning": "Unripe sloe (Vnzitige schlehen) - unripe fruit crushed and distilled end of September"
+    },
+    {
+      "id": 201,
+      "fire_degree": 1,
+      "reasoning": "Sloe blossom (Schlehen bluet) - flowers, delicate material (short entry)"
+    },
+    {
+      "id": 202,
+      "fire_degree": 2,
+      "reasoning": "Barberry (Surouch) - ripe berries/fruit distilled in autumn"
+    },
+    {
+      "id": 203,
+      "fire_degree": 2,
+      "reasoning": "Spikenard (Spicanardi) - exotic import, prepared per instructions in chapter 20, dried material requires standard heat"
+    },
+    {
+      "id": 204,
+      "fire_degree": 2,
+      "reasoning": "Savin (Seuen boum) - shrub growth stripped from stem, distilled first autumn month"
+    },
+    {
+      "id": 205,
+      "fire_degree": 2,
+      "reasoning": "Mustard herb (Senff krut) - herb distilled when flowering, beginning of June"
+    },
+    {
+      "id": 206,
+      "fire_degree": 2,
+      "reasoning": "Pellitory-of-the-wall (Sant Peters krut) - leaves and stems chopped and distilled end of May"
+    },
+    {
+      "id": 207,
+      "fire_degree": 2,
+      "reasoning": "Asparagus (Spargen) - root, stem, and herb chopped and distilled in May or autumn"
+    },
+    {
+      "id": 208,
+      "fire_degree": 2,
+      "reasoning": "Spindle tree (Spindel boum) - leaves and fruit distilled when fruit is ripe and red"
+    },
+    {
+      "id": 209,
+      "fire_degree": 2,
+      "reasoning": "Caper spurge (Sprinck krut) - stems and leaves distilled at beginning of full growth"
+    },
+    {
+      "id": 210,
+      "fire_degree": 2,
+      "reasoning": "Oregano (Tosten) - herb and stem chopped when flowering, end of June"
+    },
+    {
+      "id": 211,
+      "fire_degree": 3,
+      "reasoning": "Tormentil (Tormentillen) - bloodroot with red root, root material requires stronger heat"
+    },
+    {
+      "id": 212,
+      "fire_degree": 2,
+      "reasoning": "Dodder (Tottern) - parasitic plant from flax fields, standard distillation"
+    },
+    {
+      "id": 213,
+      "fire_degree": 2,
+      "reasoning": "Grape marc (Binen trostern) - wine lees distilled in autumn"
+    },
+    {
+      "id": 214,
+      "fire_degree": 2,
+      "reasoning": "Tamarisk (Tamarisken) - bark shaved and leaves stripped, chopped and distilled mid-May"
+    },
+    {
+      "id": 215,
+      "fire_degree": 2,
+      "reasoning": "Wormwood (Wermut) - leaves and tops stripped from stems, distilled end of May"
+    },
+    {
+      "id": 216,
+      "fire_degree": 3,
+      "reasoning": "Comfrey (Walwurtz) - root only, washed, scraped, and distilled mid-May, root material requires stronger heat"
+    },
+    {
+      "id": 217,
+      "fire_degree": 2,
+      "reasoning": "Willow leaf (Wilgen loub) - leaves stripped from white willows, distilled mid-May from first-year shoots"
+    },
+    {
+      "id": 218,
+      "fire_degree": 1,
+      "reasoning": "Willow blossom (Wilgen bluet) - flowers, delicate material like other blossom waters"
+    },
+    {
+      "id": 219,
+      "fire_degree": 2,
+      "reasoning": "Hemlock (Wuntscherling) - herb from stem distilled mid-May, poisonous cold herb"
+    },
+    {
+      "id": 220,
+      "fire_degree": 2,
+      "reasoning": "Bindweed (Winden krut) - herb with white bells from fences, distilled mid-May"
+    },
+    {
+      "id": 221,
+      "fire_degree": 2,
+      "reasoning": "Chicory (Wegwyss) - herb and root chopped and distilled mid-May"
+    },
+    {
+      "id": 222,
+      "fire_degree": 1,
+      "reasoning": "Chicory flower (Wegwyss blumen) - blue flowers distilled as soon as opened, delicate flower material"
+    },
+    {
+      "id": 223,
+      "fire_degree": 2,
+      "reasoning": "Mullein (Wullen krut) - herb distilled when fully ripe, standard method"
+    },
+    {
+      "id": 224,
+      "fire_degree": 2,
+      "reasoning": "Knotgrass (Weggras) - herb and root chopped and distilled mid-May"
+    },
+    {
+      "id": 225,
+      "fire_degree": 3,
+      "reasoning": "Solomon's seal (Wyss wurtz) - root only chopped and distilled end of May, root material"
+    },
+    {
+      "id": 226,
+      "fire_degree": 2,
+      "reasoning": "Wild sage (Wild salbei) - leaves and stems chopped and distilled mid-May"
+    },
+    {
+      "id": 227,
+      "fire_degree": 2,
+      "reasoning": "Wintergreen (Winter gruen) - herb, stem, and root from male variety distilled mid-May"
+    },
+    {
+      "id": 228,
+      "fire_degree": 2,
+      "reasoning": "White pea (Wyss erbeiss) - green pods/shells crushed and distilled"
+    },
+    {
+      "id": 229,
+      "fire_degree": 2,
+      "reasoning": "Wild pear (Wild bieren) - fruit crushed before softening, beginning of autumn"
+    },
+    {
+      "id": 230,
+      "fire_degree": 2,
+      "reasoning": "Clary sage (Scharlach) - tame variety distilled mid-May, standard herb"
+    },
+    {
+      "id": 231,
+      "fire_degree": 2,
+      "reasoning": "Spurge/wolf's milk (Wolffs milch) - large variety with herb, stem, and root at beginning of flowering"
+    },
+    {
+      "id": 232,
+      "fire_degree": 1,
+      "reasoning": "White lily flower (Wyss gylgen) - white flower petals only, broken off when fully ripe, end of June, delicate"
+    },
+    {
+      "id": 233,
+      "fire_degree": 3,
+      "reasoning": "White lily root (Wyss gylgen wurtzel) - bulb/root only, requires stronger heat than flowers"
+    },
+    {
+      "id": 234,
+      "fire_degree": 2,
+      "reasoning": "White lily combined (Wyss gylgen mit iren wurtzeln) - flowers and roots together chopped, intermediate difficulty"
+    },
+    {
+      "id": 235,
+      "fire_degree": 2,
+      "reasoning": "Maidenhair fern (Wider tod krut) - whole substance distilled mid-May"
+    },
+    {
+      "id": 236,
+      "fire_degree": 3,
+      "reasoning": "Juniper berry (Weckolter beer) - black ripe berries crushed and distilled beginning of autumn, harder berry material"
+    },
+    {
+      "id": 237,
+      "fire_degree": 2,
+      "reasoning": "Woodruff (Walt meister) - herb, stem, root with all substance, wild variety from woods, end of May"
+    },
+    {
+      "id": 238,
+      "fire_degree": 2,
+      "reasoning": "Safflower/wild saffron (Wild saffron) - leaves broken from stem, distilled end of May"
+    },
+    {
+      "id": 239,
+      "fire_degree": 3,
+      "reasoning": "Christmas rose root (Xpi wurtz wurtzel) - root only chopped and distilled end of August, niess-wurtz root"
+    },
+    {
+      "id": 240,
+      "fire_degree": 2,
+      "reasoning": "Christmas rose herb (Xpi wurtz krut) - herb only chopped and distilled mid-May"
+    },
+    {
+      "id": 241,
+      "fire_degree": 3,
+      "reasoning": "Sweet flag root (Xpian wurtzelen) - root only crushed and distilled between two Lady Days, sweet root material"
+    },
+    {
+      "id": 242,
+      "fire_degree": 2,
+      "reasoning": "Bittersweet (Ye lenger ye lieber) - middle bark scraped off shoots end of June, distilled end of May"
+    },
+    {
+      "id": 243,
+      "fire_degree": 2,
+      "reasoning": "Onion (Zybel) - common onion root chopped and distilled first autumn month"
+    },
+    {
+      "id": 244,
+      "fire_degree": 2,
+      "reasoning": "Daisy (Zytlosen krut) - herb and root chopped and distilled mid-May"
+    },
+    {
+      "id": 245,
+      "fire_degree": 3,
+      "reasoning": "Bryony root (Zytwan wurtzel) - wild bryony root chopped and distilled end of May, tough root material"
+    }
+  ],
+  "summary": {
+    "total_recipes": 75,
+    "degree_1_count": 11,
+    "degree_2_count": 50,
+    "degree_3_count": 14,
+    "degree_4_count": 0
+  }
+}

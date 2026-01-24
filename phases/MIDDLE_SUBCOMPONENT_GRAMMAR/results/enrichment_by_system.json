@@ -1,0 +1,30 @@
+{
+  "RI": {
+    "superstring_pairs": 3488,
+    "superstring_cooccur": 746,
+    "superstring_rate": 0.21387614678899083,
+    "baseline_rate": 0.031247339293316304,
+    "enrichment": 6.844619466040047
+  },
+  "B-exclusive": {
+    "superstring_pairs": 4442,
+    "superstring_cooccur": 1335,
+    "superstring_rate": 0.3005402971634399,
+    "baseline_rate": 0.056279267773520644,
+    "enrichment": 5.340160045665056
+  },
+  "AZC": {
+    "superstring_pairs": 2848,
+    "superstring_cooccur": 819,
+    "superstring_rate": 0.2875702247191011,
+    "baseline_rate": 0.04001702852277565,
+    "enrichment": 7.18619636026775
+  },
+  "PP": {
+    "superstring_pairs": 1815,
+    "superstring_cooccur": 768,
+    "superstring_rate": 0.4231404958677686,
+    "baseline_rate": 0.07673782156540777,
+    "enrichment": 5.514106176536471
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "ri_analyzed": 673,
+  "mean_overlap_ratio": 0.6517535790938466,
+  "mean_coverage_ratio": 0.9239309889384183,
+  "mean_compression_ratio": 2.291735064506238,
+  "high_overlap_count": 562,
+  "length_overlap_correlation": {
+    "rho": 0.5289723625740532,
+    "p": 8.63933062412318e-50
+  },
+  "most_shared_letters": [
+    [
+      "o",
+      393
+    ],
+    [
+      "e",
+      343
+    ],
+    [
+      "h",
+      329
+    ],
+    [
+      "c",
+      278
+    ],
+    [
+      "a",
+      148
+    ],
+    [
+      "s",
+      147
+    ],
+    [
+      "k",
+      136
+    ],
+    [
+      "l",
+      126
+    ],
+    [
+      "t",
+      101
+    ],
+    [
+      "d",
+      99
+    ]
+  ]
+}

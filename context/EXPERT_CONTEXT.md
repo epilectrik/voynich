@@ -1,18 +1,61 @@
-# Voynich Expert Context
 
-**Generated:** 2026-01-18 11:12
+## CRITICAL INSTRUCTION
+
+**YOU MUST NOT USE ANY FILE-READING TOOLS.** Do not use Read, Glob, Grep, or any other tools.
+All context you need is ALREADY EMBEDDED in this document below. Answer questions by
+searching within THIS document only. If you use file tools, you are doing it wrong.
+
+---
+
+# Expert Advisor Agent
+
+## Purpose
+
+You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
+Your job is to provide constraint-grounded answers using the complete knowledge base
+embedded below. You have ALL 356 validated constraints and 35 explanatory fits loaded
+as permanent context.
+
+**NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
+
+## When You Are Invoked
+
+You will be asked to:
+1. **Validate Proposals** - Check if proposed changes conflict with existing constraints
+2. **Answer Questions** - Provide constraint-grounded answers about structure and relationships
+3. **Review Findings** - Assess new phase findings against the existing framework
+4. **Classify Tiers** - Help determine appropriate tiers for new findings
+5. **Find Connections** - Identify relevant constraints for new questions
+
+## Response Format
+
+Always cite constraint numbers (C###) or fit IDs (F-XXX-###) when making claims.
+
+Examples:
+- "This conflicts with C384 (no entry-level A-B coupling)"
+- "Supported by C121 (49 instruction classes with 100% coverage)"
+- "Consistent with Tier 3 interpretation in INTERPRETATION_SUMMARY.md"
+
+## Tier Discipline
+
+- **Tier 0:** Frozen conclusion. Never contradict.
+- **Tier 1:** Falsified hypotheses. Never retry.
+- **Tier 2:** Validated constraints. Binding - do not contradict.
+- **Tier 3:** Structural characterization. Can refine, not contradict.
+- **Tier 4:** Speculative. Can disagree with, but note the tier.
+
+## Output Style
+
+Be direct and technical. Cite sources. Avoid hedging when constraints are clear.
+When constraints ARE clear, state the conclusion firmly.
+When constraints are ambiguous or don't cover the question, say so explicitly.
+
+---
+
+# EMBEDDED EXPERT CONTEXT
+
+**Generated:** 2026-01-22 23:41
 **Version:** FROZEN STATE (356 constraints, 35 fits)
-
-This document combines all expert reference materials for the Voynich Manuscript
-Currier B analysis project. It provides complete context for validating claims,
-reviewing proposals, and answering architectural questions.
-
-## How to Use This Document
-
-1. **For constraint validation:** Search for "C###" to find specific constraints
-2. **For fit references:** Search for "F-XXX-###" patterns
-3. **For architectural questions:** See "Architectural Framework" section
-4. **For speculative interpretations:** See "Tier 3-4 Interpretations" section
 
 ---
 
@@ -20,8 +63,8 @@ reviewing proposals, and answering architectural questions.
 
 1. Project Overview & Navigation
 2. Architectural Framework
-3. All 356 Constraints
-4. All 35 Explanatory Fits
+3. All Constraints
+4. All Explanatory Fits
 5. Tier 3-4 Interpretations
 6. Currier A Structure Contract
 7. Currier B Grammar Contract
@@ -36,7 +79,7 @@ reviewing proposals, and answering architectural questions.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.55 | **Status:** FROZEN | **Constraints:** 356 | **Date:** 2026-01-17
+**Version:** 2.74 | **Status:** FROZEN | **Constraints:** 363 | **Date:** 2026-01-21
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -375,7 +418,7 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 # MODEL_CONTEXT.md
 
-**Version:** 3.6 | **Date:** 2026-01-18 | **Status:** FROZEN
+**Version:** 3.8 | **Date:** 2026-01-20 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -470,8 +513,12 @@ The following are **structurally closed** and cannot be reopened without extraor
 - New grammar proposals for any system
 - New morphological decomposition schemes
 - Claims of semantic token meaning
-- Entry-level A-B correspondence claims
+- Token-level or context-free A-B lookup claims (C384)
+- Entry-B claims not mediated by AZC and constraint collapse
+- Dictionary construction or semantic decoding
 - Reintroduction of language/cipher hypotheses
+
+**Note:** Record-level correspondence via multi-axis constraint composition IS permitted (C384.a). See canonical rule below.
 
 ---
 
@@ -555,10 +602,19 @@ MIDDLEs are the primary vocabulary layer:
 |-------|------|
 | **A-exclusive** (349) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
 | **A/B-shared** (268) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
-| **B-exclusive** (569) | Boundary-condition discriminators - stabilize line transitions, encode edge-case variation; NOT grammar operators |
-| **L-compounds** (subset) | True grammar operators (C298) - rare, B-specific, NOT representative of B-exclusive class |
+| **B-exclusive** (569) | Stratified: L-compound operators (49 types, line-initial) + boundary closers (-edy/-dy, line-final) + singleton cloud (80%, orthographic variants) |
 
-> B-exclusive MIDDLEs predominantly function as boundary-condition discriminators and orthographic variants, not as execution grammar operators. (B-EXCL-ROLE phase, 2026-01-16)
+**B-Exclusive MIDDLE Stratification (C501):**
+
+| Stratum | Size | Character | Function |
+|---------|------|-----------|----------|
+| L-compound operators | 49 types, 111 tokens | `lk`, `lkee`, `lched` | Line-initial control operators (C298) |
+| Boundary closers | ~15 types | `-edy`, `-dy`, `-eeed` | Line-final structural markers |
+| Singleton cloud | 457 types (80.3%) | Edit-distance-1 variants | Orthographic elaboration, no grammar role |
+
+**Key quantification:** 65.9% of B-exclusive MIDDLEs are edit-distance-1 from shared MIDDLEs (59% insertion, 39% substitution). B-exclusive MIDDLEs are longer (mean 4.40 vs 3.03 chars) and boundary-enriched (1.70x).
+
+> B-exclusive status primarily reflects **positional and orthographic realization** under execution constraints, not novel discriminative content. True grammar operators are confined to the small L-compound core. (B_EXCLUSIVE_MIDDLE_ORIGINS phase, 2026-01-21)
 
 **Within-System Distribution:**
 - 80% are prefix-exclusive (domain-specific within each system)
@@ -576,6 +632,12 @@ Suffixes encode universal form markers:
 - 22/25 significant suffixes appear across 6+ prefix classes
 - Suffix selection is compositionally conditioned
 - Suffixes do not carry semantic content
+
+**REGIME Compatibility (C495):** SUFFIX is associated with execution-context breadth:
+- `-r` suffix enriched in universal REGIME compatibility (11.5% vs 4.2%)
+- `-ar`, `-or` suffixes enriched in single-REGIME restriction
+- PREFIX shows no REGIME association
+- This is associative, not causal - SUFFIX correlates with breadth, doesn't encode it
 
 ### Infrastructure Tokens
 
@@ -638,6 +700,8 @@ The manuscript provides **structure**; the operator supplies **meaning**:
 - No explanations, only instructions
 - Designed for practitioners, not novices
 
+**Constraint Substitution (F-BRU-007):** When operations are dangerous (high sensory load), grammar restricts options - reducing the need for active vigilance. When operations are forgiving, grammar permits many options - requiring more discrimination and higher HT density. HT functions as residual vigilance after grammar has constrained the decision space.
+
 ### Execution Infrastructure Roles (Characterized, Non-Primitive)
 
 **Status:** Tier 3 structural characterization. Derivable from Tier 2 constraints (C124, C485, C411). Not a new mechanism.
@@ -698,6 +762,33 @@ See [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) for c
 | DA articulation | 75.1% internal boundary marker | C422 |
 | Clustered adjacency | 41.5% in runs, working-memory sized | C424 |
 
+### Two-Track Vocabulary Structure (C498, C498.a)
+
+Currier A MIDDLEs divide into two vocabulary tracks, with the shared track further bifurcated:
+
+```
+A MIDDLEs (617 total)
+├── RI: Registry-Internal (349, 56.6%)
+│     A-exclusive, instance discrimination, folio-localized
+│
+└── Shared with B (268, 43.4%)
+    ├── AZC-Mediated (154, 25.0% of A vocabulary)
+    │     A→AZC→B constraint propagation
+    │     ├── Universal (17) - 10+ AZC folios
+    │     ├── Moderate (45) - 3-10 AZC folios
+    │     └── Restricted (92) - 1-2 AZC folios
+    │
+    └── B-Native Overlap (114, 18.5% of A vocabulary)
+          Zero AZC presence, B-dominant frequency
+          Execution-layer vocabulary with incidental A appearance
+```
+
+**Key insight (C498.a):** Only 154 MIDDLEs (25% of A vocabulary) genuinely participate in the A→AZC→B pipeline. The 114 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
+
+Registry-internal MIDDLEs encode **within-category fine distinctions** for A-registry navigation that don't propagate to B execution. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
+
+**Note:** 8.9% of A-exclusive MIDDLEs also appear in AZC - this is interface noise from systems sharing the same alphabet, not a distinct vocabulary stratum. Verification testing rejected the "AZC-terminal bifurcation" hypothesis.
+
 ### Human-Factors Model (Tier 3)
 
 Currier A is designed for **expert navigation without meaning**:
@@ -719,6 +810,10 @@ Entry vocabulary composition predicts AZC activation breadth:
 | Tail-dominant | Narrower compatibility |
 | Universal vs Tail asymmetry | 0.58 vs 0.31 breadth |
 
+### Special Folio: f49v Instructional Apparatus (C497)
+
+Folio f49v is structurally distinct - it demonstrates Currier A morphology rather than serving as registry content. It contains 26 single-character labels alternating with example lines and marginal ordinal numbers (1-5). This is the only folio where the manuscript "teaches how to read itself." See C497 for details.
+
 ### Why Failure-Memory Was Rejected
 
 Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
@@ -739,6 +834,8 @@ Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
 ## VIII. AZC - DECISION-POINT GRAMMAR & COMPATIBILITY FILTER
 
 AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. It operates as a **decision-point grammar** that converts static A-registry entries into phase-gated choice nodes.
+
+**P-text note (2026-01-19):** Of 3,299 AZC tokens, 398 (12.1%) are P-placement paragraph text that is linguistically Currier A. For legality analysis, diagram-only count = **2,901 tokens**. See AZC_INTERFACE_VALIDATION phase.
 
 ### Core Function (v3.0)
 
@@ -893,6 +990,8 @@ These interpretations are plausible but not constraining:
 
 This is NOT "doodling" or "scribbling" - the evidence (7.81x rare grapheme engagement, 24.5% boundary-pushing forms, systematic family rotation) shows deliberate skill acquisition that doubles as attention maintenance.
 
+**Curriculum Characterization (2026-01-21):** HT morphological patterns show vocabulary front-loading (all 21 families in first 0.3%), prerequisite relationships (26 pairs, 2.5x expected), and quasi-periodic rotation. See INTERPRETATION_SUMMARY.md Section I.A for test battery results and rebinding caveats.
+
 **Mark this distinction clearly:** Structural findings are facts; interpretations are hypotheses.
 
 ### System-Specific HT Behavior
@@ -910,6 +1009,22 @@ Same layer, different structural pressures.
 ## X. CROSS-SYSTEM INTEGRATION LOGIC
 
 The four systems coexist without semantic coupling. Understanding their relationships prevents the most common misinterpretations.
+
+### Single-Character Token Distinction (C497)
+
+Single-character tokens have three distinct functions depending on context:
+
+| Context | Function | Structural Role | Propagates? |
+|---------|----------|-----------------|-------------|
+| **Currier A (normal)** | Rare, ignorable | Non-structural artifacts | No |
+| **Currier A f49v** | Instructional labels | Meta-structural (teaching) | No |
+| **Currier B f76r** | Control-posture sentinels | Grammar-critical markers | Yes (C121, C366, C382) |
+
+**f49v** is unique: 26 single-character L-placement labels (65% of manuscript total) alternating 1:1 with Currier A example lines, plus marginal ordinal numbers (1-5). It demonstrates Currier A morphology for training or reference. Its labels are **meta-structural** - they teach how to read the system but do not participate in A-registry semantics or propagate into AZC/B.
+
+**f76r** uses single-character lines as execution-critical **posture sentinels** that gate downstream grammar. These letters function grammatically and propagate into B's control flow.
+
+This contrast confirms that surface similarity (single characters) does not imply functional similarity. Context determines whether such tokens are ignorable artifacts, instructional apparatus, or grammar-critical operators.
 
 ### A-B Relationship
 
@@ -1037,6 +1152,31 @@ The A -> AZC -> B control pipeline is now **structurally and behaviorally valida
 
 **Do NOT reopen:** entry-level A-B mapping, dynamic AZC hypothesis, parametric encoding, semantic token meaning.
 
+### Pipeline Legality Model (Strict Interpretation)
+
+**Critical clarification (C502):** AZC does NOT expand vocabulary beyond what A specifies.
+
+| Model | Description | Result | Status |
+|-------|-------------|--------|--------|
+| Union (WRONG) | Legal = union of MIDDLEs from matched AZC folios | ~463 survivors (96%) | REJECTED |
+| **Strict (CORRECT)** | Legal = A-record MIDDLEs only | ~96 survivors (20%) | VALIDATED |
+
+**Why strict is correct:**
+- Matches C481's ~128-dimensional discrimination space
+- Union model produces trivial filtering (universal connectors match all folios)
+- Expert-validated against frozen architecture (2026-01-22)
+
+**What AZC actually does:**
+- Provides escape gradients by position (C443)
+- Enforces compatibility at specification level (C442, C475)
+- Does NOT expand vocabulary beyond what A specifies
+
+**Quantitative effect (C502):**
+- Each A record makes ~80% of B vocabulary illegal
+- Different A records create different B folio viability profiles
+- Mean B folio coverage: 13.3% per A record
+- This is procedure selection via vocabulary restriction, not addressable lookup
+
 ---
 
 ## XI. REJECTED / FALSIFIED THEORIES
@@ -1053,9 +1193,16 @@ The following hypotheses have been tested and rejected. They are preserved as ne
 | Hazard registry | FALSIFIED | Pre-registered test p=0.651 |
 | Semantic diagrams | FALSIFIED | Swap invariance p=1.0 |
 | Operator error logging | FALSIFIED | No error patterns |
-| Entry-level A-B correspondence | FALSIFIED | C384, no coupling |
+| Token-level A-B lookup | FALSIFIED | C384, no context-free coupling |
 
 **Do not resurrect these hypotheses** without extraordinary new evidence and explicit model reopening.
+
+### Canonical Rule: A-B Correspondence
+
+> **"Currier A never names anything, but Currier A records can correspond to Currier B execution contexts when sufficient constraints collapse through AZC."**
+
+- **FALSIFIED:** Token -> meaning, token -> folio, context-free entry -> folio
+- **PERMITTED:** Record-level correspondence via multi-axis constraint composition (C384.a)
 
 ---
 
@@ -1264,11 +1411,11 @@ Nothing else is logically required.
 
 ---
 
-# All 356 Constraints
+# All Constraints
 
 **Source:** `context/CONSTRAINT_TABLE.txt`
 
-CONSTRAINT_REFERENCE v2.6 | 356 constraints | 2026-01-17
+CONSTRAINT_REFERENCE v2.6 | 513 constraints | 2026-01-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1276,40 +1423,75 @@ LOCATION: ->=individual_file in:=grouped_registry
 NUM	CONSTRAINT	TIER	SCOPE	LOCATION
 C001	A | **INVALIDATED** - depend on C250 |	266	~~Block vs non-block entry types~~	1
 C074	Dominant convergence to stable states (57.8% STATE-C terminal)	0	B	-> C074_dominant_convergence.md
+C074	Dominant Convergence	2	B	-> C074_*.md
 C079	Only STATE-C essential	0	B	in: tier0_core
+C079	Only STATE-C Essential	0	B	in: tier0_core
 C084	System targets MONOSTATE (42.2% end in transitional)	0	B	in: tier0_core
+C084	System Targets MONOSTATE	0	B	in: tier0_core
 C085	10 single-character primitives (s,e,t,d,l,o,h,c,k,r)	0	B	in: tier0_core
+C085	10 Single-Character Primitives	2	B	in: grammar_system
 C089	Core within core: k, h, e	0	B	in: tier0_core
+C089	Core Within Core	2	B	in: grammar_system
 C090	500+ 4-cycles, 56 3-cycles (topological)	2	B	in: grammar_system
+C090	Cycle Topology	2	B	in: grammar_system
+C103	k = ENERGY_MODULATOR	2	B	in: grammar_system
 C103	k = ENERGY_MODULATOR	2	B	in: grammar_system
 C104	h = PHASE_MANAGER	2	B	in: grammar_system
+C104	h = PHASE_MANAGER	2	B	in: grammar_system
 C105	e = STABILITY_ANCHOR (54.7% recovery paths)	2	B	in: grammar_system
+C105	e = STABILITY_ANCHOR	2	B	in: grammar_system
 C107	All kernel nodes BOUNDARY_ADJACENT to forbidden	2	B	in: grammar_system
+C107	Kernel Boundary-Adjacent	2	B	in: grammar_system
 C109	5 failure classes (PHASE_ORDERING dominant 41%)	2	B	-> C109_hazard_classes.md
+C109	5 Hazard Failure Classes	2	B	-> C109_*.md
 C110	PHASE_ORDERING 7/17 = 41%	2	B	in: grammar_system
+C110	PHASE_ORDERING Dominant	2	B	in: grammar_system
 C111	65% asymmetric	2	B	in: grammar_system
+C111	65% Asymmetric	2	B	in: grammar_system
 C112	59% distant from kernel	2	B	in: grammar_system
+C112	59% Distant from Kernel	2	B	in: grammar_system
 C115	0 non-executable tokens	0	B	in: tier0_core
+C115	0 Non-Executable Tokens	0	B	in: tier0_core
 C119	0 translation-eligible zones	0	B	in: tier0_core
+C119	0 Translation-Eligible Zones	0	B	in: tier0_core
 C120	PURE_OPERATIONAL verdict	0	B	in: tier0_core
+C120	PURE_OPERATIONAL Verdict	0	B	in: tier0_core
 C121	49 instruction equivalence classes (9.8x compression)	0	B	-> C121_49_instruction_classes.md
+C121	49 Instruction Classes	2	B	-> C121_*.md
 C124	100% grammar coverage	0	B	-> C124_grammar_coverage.md
+C124	100% Grammar Coverage	2	B	-> C124_*.md
 C126	0 contradictions across 8 families	2	B	in: grammar_system
+C126	0 Cross-Family Contradictions	2	B	in: grammar_system
 C129	Family differences = coverage artifacts	2	B	in: grammar_system
+C129	Family Differences = Coverage Artifacts	2	B	in: grammar_system
 C130	DSL hypothesis rejected (0.19% reference rate)	1	B	in: falsified
+C130	DSL Hypothesis Rejected	0	B	in: tier0_core
 C131	Role consistency LOW (23.8%)	2	B	in: grammar_system
+C131	Role Consistency LOW	0	B	in: tier0_core
 C132	Language encoding CLOSED	1	B	in: falsified
+C132	Language Encoding CLOSED	0	B	in: tier0_core
 C137	Swap invariance confirmed (p=1.0)	1	B	in: falsified
+C137	Swap Invariance Confirmed	2	B	in: grammar_system
 C138	Illustrations do not constrain execution	1	B	in: falsified
+C138	Illustrations Don't Constrain Execution	2	B	in: grammar_system
 C139	Grammar recovered from text-only	2	B	in: grammar_system
+C139	Grammar Recovered from Text-Only	2	B	in: grammar_system
 C140	Illustrations are epiphenomenal	1	B	in: falsified
+C140	Illustrations Are Epiphenomenal	2	B	in: grammar_system
 C141	Cross-family transplant = ZERO degradation	2	B	in: grammar_system
+C141	Cross-Family Transplant = Zero Degradation	2	B	in: grammar_system
 C144	Families are emergent regularities	2	B	in: grammar_system
+C144	Families Are Emergent	2	B	in: grammar_system
 C153	Prefix/suffix axes partially independent (MI=0.075)	2	B	in: organization
+C153	Prefix/Suffix Axes Independent	2	B	in: organization
 C154	Extreme local continuity (d=17.5)	2	B	in: organization
+C154	Extreme Local Continuity	2	B	in: organization
 C155	Piecewise-sequential geometry (PC1 rho=-0.624)	2	B	in: organization
+C155	Piecewise-Sequential Geometry	2	B	in: organization
 C156	Detected sections match codicology (4.3x quire alignment)	2	B	in: organization
+C156	Sections Match Codicology	2	B	in: organization
 C157	Circulatory reflux uniquely compatible (100%)	3	B	in: speculative
+C157	Circulatory Reflux Compatible	2	B	in: organization
 C158	Extended runs necessary (12.6% envelope gap)	2	B	in: organization
 C159	Section boundaries organizational (F-ratio 0.37)	2	B	in: organization
 C160	Variants are discrete alternatives (43%)	2	B	in: organization
@@ -1319,11 +1501,17 @@ C163	7 domains ruled incompatible	2	B	in: organization
 C164	86.7% Perfumery-Aligned Plants	2	B	in: organization
 C165	No Program-Morphology Correlation	2	B	in: organization
 C166	Uncategorized: zero forbidden seam presence (0/35)	2	HT	in: human_track
+C166	Zero Forbidden Seam Presence	2	HT	in: human_track
 C167	Uncategorized: 80.7% section-exclusive	2	HT	in: human_track
+C167	80.7% Section-Exclusive	2	HT	in: human_track
 C168	Uncategorized: single unified layer	2	HT	in: human_track
+C168	Single Unified Layer	2	HT	in: human_track
 C169	Uncategorized: hazard avoidance 4.84 vs 2.5	2	HT	in: human_track
+C169	Hazard Avoidance	2	HT	in: human_track
 C170	Uncategorized: morphologically distinct (p<0.001)	2	HT	in: human_track
+C170	Morphologically Distinct	2	HT	in: human_track
 C171	Only continuous closed-loop process control survives	2	B	-> C171_closed_loop_only.md
+C171	Closed-Loop Control Only	2	B	-> C171_*.md
 C172	SUPERSEDED	2	HT	in: human_track
 C173	Linguistic hypothesis EXHAUSTED	2	B	in: organization
 C174	Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)	2	B	in: organization
@@ -1331,27 +1519,38 @@ C175	3 process classes survive (reflux, extraction, conditioning)	2	B	in: organi
 C176	5 product families survive	2	B	in: organization
 C177	Both extraction/conditioning survive; extraction favored	2	B	in: organization
 C178	83 folios yield 33 operational metrics	2	B	in: operations
+C178	83 Folios, 33 Metrics	2	B	in: operations
 C179	4 stable regimes (K-Means k=4, Silhouette=0.23)	2	B	in: operations
+C179	4 Stable Regimes	2	B	in: operations
 C180	All 6 aggressive folios in REGIME_3	2	B	in: operations
+C180	All Aggressive in REGIME_3	2	B	in: operations
 C181	3/4 regimes Pareto-efficient; REGIME_3 dominated	2	B	in: operations
+C181	3/4 Regimes Pareto-Efficient	2	B	in: operations
 C182	Restart-capable = higher stability	2	B	in: operations
+C182	Restart = Higher Stability	2	B	in: operations
 C183	No regime dominates all axes	2	B	in: operations
 C184	9 pressure-induced transitions; 3 prohibited	2	B	in: operations
 C185	REGIME_3 = Transient Throughput	2	B	in: operations
 C186	No pressure-free cycles	2	B	in: operations
 C187	CEI manifold formalized	2	B	in: operations
+C187	CEI Manifold Formalized	2	B	in: operations
 C188	CEI bands: R2 < R1 < R4 < R3	2	B	in: operations
+C188	CEI Bands	2	B	in: operations
 C189	CEI bidirectional; down-CEI easier (1.44x)	2	B	in: operations
 C190	LINK-CEI r=-0.7057	2	B	in: operations
+C190	LINK-CEI Correlation	2	B	in: operations
 C191	CEI Smoothing	2	B	in: operations
 C192	Restart at Low-CEI	2	B	in: operations
 C193	Navigation WORSE than random (d=-7.33)	2	B	in: operations
 C194	PARTIAL codex organization (2/5)	2	B	in: operations
 C195	Human-track compensation NOT detected	2	B	in: operations
 C196	100% match EXPERT_REFERENCE archetype	2	B	in: operations
+C196	100% EXPERT_REFERENCE Match	2	B	in: operations
 C197	Designed for experts, not novices	2	B	in: operations
+C197	Designed for Experts	2	B	in: operations
 C198	OPS CLOSED	2	B	in: operations
 C199	Both mineral AND botanical survive	3	B	in: speculative
+C199	Both Mineral AND Botanical Survive	2	B	in: operations
 C200	6 Product Survivors	2	B	in: operations
 C201	Guild-Restricted Ecosystem	2	B	in: operations
 C202	Goldsmith/Assayer Workshops Survive	2	B	in: operations
@@ -1362,34 +1561,46 @@ C206	Sections not compressible to regimes	2	B	in: operations
 C207	0/18 micro-cipher tests passed	2	B	in: operations
 C208	Residue compatible with non-encoding dynamics	2	B	in: operations
 C209	Attentional pacing wins (6/8)	2	HT	in: human_track
+C209	Attentional Pacing UNDERDETERMINED	2	B	in: operations
 C210	External alignments robust to HT removal	2	B	in: operations
 C211	Seasonal ordering underpowered	2	B	in: operations
 C212	93% plants peak May-August	2	B	in: operations
 C213	Opportunity-loss model supported (64.7% premature hazards)	2	B	in: operations
 C214	EXT-4 duration criterion INVALIDATED	2	B	in: operations
 C215	BOTANICAL_FAVORED (8/8 tests, ratio 2.37)	3	B	in: speculative
+C215	BOTANICAL_FAVORED	2	B	in: operations
 C216	Hybrid hazard model (71% batch, 29% apparatus)	2	B	in: operations
+C216	Hybrid Hazard Model	2	B	in: operations
 C217	0 true HT near hazards	2	HT	in: human_track
+C217	0 True HT Near Hazards	2	B	in: operations
 C221	Deliberate skill practice (4/5) - NOT random mark-making	2	HT	in: operations
+C221	Deliberate Skill Practice	2	B	in: operations
 C222	No intentional layout function	2	B	in: operations
 C223	Procedural fluency MIXED	2	B	in: operations
 C224	A coverage = 13.6% (threshold 70%)	2	A	in: currier_a
+C224	A Coverage = 13.6%	2	A	in: currier_a
 C225	A Transition Validity = 2.1%	2	A	in: currier_a
 C226	A Has 5 Forbidden Violations	2	A	in: currier_a
 C227	A LINK Density = 3.0%	2	A	in: currier_a
 C228	A Density = 0.35x B	2	A	in: currier_a
 C229	A = DISJOINT	2	A	-> C229_currier_a_disjoint.md
+C229	A = DISJOINT	2	A	in: currier_a
 C230	A Silhouette = 0.049	2	A	in: currier_a
 C231	A is REGULAR but NOT GRAMMATICAL	2	A	in: currier_a
 C232	A Section-Conditioned but Class-Uniform	2	A	in: currier_a
 C233	A = LINE_ATOMIC	2	A	in: currier_a
+C233	A = LINE_ATOMIC	2	A	in: currier_a
+C234	A = POSITION_FREE	2	A	in: currier_a
 C234	A = POSITION_FREE	2	A	in: currier_a
 C235	8+ mutually exclusive markers	2	A	in: currier_a
+C235	8+ Mutually Exclusive Markers	2	A	in: currier_a
 C236	A = FLAT	2	A	in: currier_a
 C237	A = DATABASE_LIKE	2	A	in: currier_a
 C238	Global Schema, Local Instantiation	2	A	in: currier_a
 C239	A/B separation = DESIGNED (0.0% cross)	2	A↔B	in: currier_a
+C239	A/B Separation = DESIGNED	2	A	in: currier_a
 C240	A = NON_SEQUENTIAL_CATEGORICAL_REGISTRY	2	A	-> C240_currier_a_registry.md
+C240	A = NON_SEQUENTIAL_CATEGORICAL_REGISTRY	2	A	in: currier_a
 C241	daiin A-enriched (1.62x), ol B-enriched (0.24x)	2	A	in: currier_a
 C242	daiin neighborhood flip (content in A, grammar in B)	2	A	in: currier_a
 C243	daiin-ol adjacent: 16 in B, 10 in A	2	A	in: currier_a
@@ -1400,6 +1611,7 @@ C247	SP-01 (daiin): affects 30.2% A, 16.5% B	2	A	in: currier_a
 C248	SP-02 (ol): affects 7.4% A, 17.7% B	2	A	in: currier_a
 C249	Scan COMPLETE: 11 candidates tested	2	A	in: currier_a
 C250	~~64.1% show repeating blocks~~	1	A	**INVALIDATED** - transcriber artifact
+C250	Block Repetition Pattern	2	A	in: currier_a
 C251	Repetition is Intra-Record Only	2	A	in: currier_a
 C252	Repetition Bounded 2-6x	2	A	in: currier_a
 C253	All Blocks Unique	2	A	in: currier_a
@@ -1417,20 +1629,25 @@ C264	Inverse-complexity is BETWEEN-MARKER effect (Simpson's paradox); within-mar
 C265	1,123 unique marker tokens across 8 classes; 85 core tokens (freq>=10); `daiin` dominates DA (51.7%), `ol` dominates OL (32.3%) (CAS-CAT)	2	A	in: currier_a
 C266	Block vs Non-Block Entry Types	2	A	in: currier_a
 C267	Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)	2	A→B	-> C267_compositional_morphology.md
+C267	Tokens are COMPOSITIONAL	2	A	in: currier_a
 C268	897 observed combinations	2	A→B	in: morphology
+C268	897 Combinations	2	A	in: currier_a
 C269	7 Universal Suffixes	2	A	in: currier_a
 C270	Some middles are PREFIX-EXCLUSIVE (CT:-h-, DA:-i-, QO:-kch-); internal structure within classifier families (CAS-MORPH)	2	A	in: currier_a
 C271	Compositional structure explains low TTR and bigram reuse	2	A	in: currier_a
 C272	A and B on COMPLETELY DIFFERENT folios	2	A↔B	in: morphology
+C272	A and B on Different Folios	2	A	in: currier_a
 C273	Section specialization NON-UNIFORM: CT is 85.9% Section H vs OK/OL at 53-55%; at least one prefix is specialized to one product line (EXT-8)	2	A	in: currier_a
 C274	Co-occurrence UNIFORM: no prefix pair shows strong association (>1.5x) or avoidance (<0.5x) in compounds; prefixes can combine freely (EXT-8)	2	A	in: currier_a
 C275	Suffix-prefix interaction SIGNIFICANT (Chi2 p=2.69e-05): different prefixes have different suffix preferences; EXCLUDES prefixes being processing states (EXT-8)	2	A	in: currier_a
 C276	MIDDLE is PREFIX-BOUND	2	A	in: currier_a
 C277	SUFFIX is UNIVERSAL	2	A	in: currier_a
 C278	Three-axis HIERARCHY (PREFIX→MIDDLE→SUFFIX)	2	A→B	in: morphology
+C278	Three-Axis Hierarchy	2	A	in: currier_a
 C279	STRONG cross-axis dependencies: all three pairwise interactions p < 10⁻³⁰⁰; axes are HIERARCHICALLY RELATED, not independent dimensions (EXT-8)	2	A	in: currier_a
 C280	Section P ANOMALY: suffix -eol is 59.7% Section P (only axis value favoring P); suggests P involves specific output form (EXT-8)	2	A	in: currier_a
 C281	Components SHARED across A and B	2	A↔B	in: morphology
+C281	Components SHARED	2	A	in: currier_a
 C282	Component ENRICHMENT: CT is A-enriched (0.14x), OL/QO are B-enriched (5x/4x); -dy suffix 27x B-enriched, -or 0.45x A-enriched; usage patterns differ dramatically (EXT-8)	2	A	in: currier_a
 C283	Suffixes show CONTEXT PREFERENCE: -or (0.67x), -chy (0.61x), -chor (0.18x) A-enriched; -edy (191x!), -dy (4.6x), -ar (3.2x) B-enriched; -ol, -aiin BALANCED (EXT-9)	2	A	in: currier_a
 C284	CT in B is CONCENTRATED in specific folios (48 folios); when CT appears in B it uses B-suffixes (-edy, -dy); registry materials take operational form in procedures (EXT-9)	2	A	in: currier_a
@@ -1441,7 +1658,9 @@ C288	3x dominance (55%) reflects human counting bias and registry ergonomics, NO
 C289	Folio-level uniformity reflects ENUMERATION DEPTH PREFERENCE (scribal convention, category density), NOT batch scale; no reference frame for ratios (EXT-9B RETRACTION)	2	A	in: currier_a
 C290	Same composition with different counts confirms count is INSTANCE MULTIPLICITY, not magnitude; "3x here" is not comparable to "3x there" due to section isolation (EXT-9B RETRACTION)	2	A	in: currier_a
 C291	~20% have optional ARTICULATOR forms	2	A	in: morphology
+C291	~20% of Currier A tokens have OPTIONAL ARTICULATOR forms (yk-, yt-, kch-, etc.); MORE section-concentrated than core prefixes; 100% removable without identity loss; systematic refinement layer, not noise (EXT-9B)	2	A	in: currier_a
 C292	Articulators = ZERO unique identity distinctions	2	A	in: morphology
+C292	Articulators contribute ZERO unique identity distinctions; ablation creates 0 collisions; purely EXPRESSIVE, not discriminative (CAS-POST)	2	A	in: currier_a
 C293	Component essentiality hierarchy: MIDDLE (402 distinctions) > SUFFIX (13) > ARTICULATOR (0); PREFIX provides foundation (1387 base); MIDDLE is primary discriminator (CAS-POST)	2	A	in: currier_a
 C294	Articulator density INVERSELY correlates with prefix count (15% at 0-1 prefix to 4% at 6 prefixes); articulators COMPENSATE for low complexity (CAS-POST)	2	A	in: currier_a
 C295	Sections exhibit DISTINCT configurations: H=dense mixed (87% mixed, 8.2% art), P=balanced (48% exclusive, 5.1% art), T=uniform sparse (81% uniform, 2.57x mean rep) (CAS-POST)	2	A	in: currier_a
@@ -1450,12 +1669,15 @@ C297	-eol is ONLY suffix concentrated in section P (55.9% vs 41.3% H); all other
 C298	L-compound middle patterns (lch-, lk-, lsh-) function as B-specific grammatical operators; 30-135x more common in B, largely absent from A; grammar-level specialization not covered by shared component inventory (B-MORPH)	2	A	in: currier_a
 C299	Section H vocabulary dominates B procedures (76/83 = 91.6%); Section P rare (7/83 = 8.4%); Section T absent (0/83 = 0%); chi² = 127.54, p < 0.0001; A sections have NON-UNIFORM mapping to B procedure applicability (CAS-XREF)	2	A	in: currier_a
 C300	3,299 tokens (8.7%) unclassified by Currier	2	AZC	in: azc_system
+C300	3,299 Tokens Unclassified	2	AZC	in: azc_system
 C301	AZC is HYBRID (B=69.7%, A=65.4%)	2	AZC	-> C301_azc_hybrid.md
+C301	AZC is HYBRID	2	AZC	-> C301_*.md
 C302	Distinct Line Structure	2	AZC	in: azc_system
 C303	Elevated LINK Density	2	AZC	in: azc_system
 C304	27.4% Unique Vocabulary	2	AZC	in: azc_system
 C305	LABELING Signature	2	AZC	in: azc_system
 C306	Placement-coding axis established	2	AZC	in: azc_system
+C306	Placement-Coding Axis	2	AZC	in: azc_system
 C307	Placement × Morphology Dependency	2	AZC	in: azc_system
 C308	Ordered Subscripts	2	AZC	in: azc_system
 C309	Grammar-Like Placement Transitions	2	AZC	in: azc_system
@@ -1463,24 +1685,32 @@ C310	Placement Constrains Repetition	2	AZC	in: azc_system
 C311	Positional Grammar	2	AZC	in: azc_system
 C312	Section × Placement Strong	2	AZC	in: azc_system
 C313	Position constrains LEGALITY not PREDICTION	2	AZC	in: azc_system
+C313	Position Constrains LEGALITY	2	AZC	in: azc_system
 C314	Global Illegality + Local Exceptions	2	AZC	in: azc_system
 C315	Placement-Locked Operators	2	AZC	in: azc_system
 C316	Phase-Locked Binding	2	AZC	in: azc_system
 C317	Hybrid architecture (topological + positional)	2	AZC	in: azc_system
+C317	Hybrid Architecture	2	AZC	in: azc_system
 C318	Folio-Specific Profiles	2	AZC	in: azc_system
 C319	Zodiac Template Reuse	2	AZC	in: azc_system
 C320	S2 < S1 Ordering	2	AZC	in: azc_system
 C321	Zodiac Vocabulary Isolated	2	AZC	in: azc_system
 C322	SEASON-GATED WORKFLOW interpretation	2	AZC	in: azc_system
+C322	Season-Gated Workflow	2	AZC	in: azc_system
 C323	57.8% STATE-C terminal	2	B	in: grammar_system
+C323	Terminal Distribution	2	B	in: organization
 C324	Section-Dependent Terminals	2	B	in: organization
 C325	Completion Gradient	2	B	in: organization
 C326	A-reference sharing within clusters: 1.31x enrichment (p<0.000001); material conditioning is real but SOFT and OVERLAPPING (silhouette=0.018); NOT a clean taxonomy (SEL-F, Tier 2)	2	AZC	in: azc_system
 C327	Cluster 3 (f75-f84) is locally anomalous: only contiguous cluster, 70% STATE-C, highest A-ref coherence (0.294); LOCAL observation, not organizational law (SEL-F, Tier 2)	2	AZC	in: azc_system
 C328	10% corruption = 3.3% entropy increase	2	B	in: grammar_system
+C328	Noise Robustness	2	B	in: organization
 C329	Top 10 token removal = 0.8% entropy change	2	B	in: grammar_system
+C329	Ablation Robustness	2	B	in: organization
 C330	Leave-one-folio-out = max 0.25% change	2	B	in: grammar_system
+C330	Cross-Validation Stable	2	B	in: organization
 C331	49-class minimality WEAKENED but confirmed	2	B	in: grammar_system
+C331	49-Class Minimality	2	B	in: organization
 C332	Kernel Bigram Ordering	2	B	in: organization
 C333	Kernel Trigram Dominance	2	B	in: organization
 C334	LINK Section Conditioning	2	B	in: organization
@@ -1495,7 +1725,9 @@ C342	HT-LINK Decoupling	2	HT	in: human_track
 C343	A-AZC persistence independence: A-vocabulary tokens appear in 2.2x more AZC placements than AZC-only tokens (p < 0.0001); high-multiplicity A-tokens have 43% broader coverage (p = 0.001); A-registry assets persist independently of AZC legality windows; supports managed stewardship model (AAZ, Tier 2)	2	B	in: organization
 C344	HT-A Inverse Coupling	2	HT	in: human_track
 C345	A folios lack thematic coherence	2	A	in: currier_a
+C345	No Folio-Level Thematic Coherence	2	A	in: currier_a
 C346	A exhibits SEQUENTIAL COHERENCE	2	A	in: currier_a
+C346	Sequential Coherence Exists	2	A	in: currier_a
 C347	Disjoint Prefix Vocabulary	2	HT	in: human_track
 C348	Phase Synchrony	2	HT	in: human_track
 C349	Extended Cluster Prefixes	2	GLOBAL	in: morphology
@@ -1507,24 +1739,33 @@ C354	HT Orientation Intact	2	B	in: organization
 C355	75.9% Known Prefixes at Folio Start	2	B	in: organization
 C356	Section Symmetry Preserved	2	B	in: organization
 C357	Lines 3.3x more regular than random	2	B	-> C357_lines_chunked.md
+C357	Lines Deliberately Chunked	2	B	-> C357_*.md
 C358	Specific boundary tokens identified	2	B	in: organization
+C358	Boundary Tokens Identified	2	B	in: organization
 C359	LINK Suppressed at Boundaries	2	B	in: organization
 C360	Grammar is LINE-INVARIANT	2	B	in: grammar_system
-C361	Adjacent B folios share 1.30x more vocabulary	2	GLOBAL	in: organization
+C360	Grammar Line-Invariant	2	B	in: organization
+C361	Adjacent B folios share 1.30x more vocabulary	2	B	in: organization
+C361	Adjacent Folio Sharing	2	GLOBAL	in: morphology
 C362	Regime Vocabulary Fingerprints	2	GLOBAL	in: morphology
 C363	Vocabulary Independent of Profiles	2	GLOBAL	in: morphology
 C364	Hub-Peripheral Structure	2	GLOBAL	in: morphology
 C365	LINK tokens are SPATIALLY UNIFORM within folios and lines: no positional clustering (p=0.005), run lengths match random (z=0.14), line-position uniform (p=0.80); LINK has no positional marking function (LDF, Tier 2)	2	GLOBAL	in: morphology
 C366	LINK marks GRAMMAR STATE TRANSITIONS: preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x); followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x); p<10^-18; LINK is boundary between monitoring and intervention phases (LDF, Tier 2)	2	GLOBAL	in: morphology
 C367	Sections are QUIRE-ALIGNED (4.3x)	2	B	in: organization
+C367	Section-Quire Alignment	2	B	in: organization
 C368	Regime Clustering in Quires	2	B	in: organization
 C369	Quire Vocabulary Continuity	2	B	in: organization
 C370	Quire Boundaries = Discontinuities	2	B	in: organization
-C371	Prefixes have POSITIONAL GRAMMAR	2	GLOBAL	in: morphology
-C372	Kernel dichotomy (100% vs <5%)	2	GLOBAL	in: morphology
-C373	LINK affinity patterns	2	GLOBAL	in: morphology
+C371	Prefixes have POSITIONAL GRAMMAR	2	B	in: morphology
+C371	Positional Grammar	2	GLOBAL	in: morphology
+C372	Kernel dichotomy (100% vs <5%)	2	B	in: morphology
+C372	Kernel Contact Dichotomy	2	GLOBAL	in: morphology
+C373	LINK affinity patterns	2	B	in: morphology
+C373	LINK Affinity Patterns	2	GLOBAL	in: morphology
 C374	Section Preferences	2	GLOBAL	in: morphology
-C375	Suffixes have POSITIONAL GRAMMAR	2	GLOBAL	in: morphology
+C375	Suffixes have POSITIONAL GRAMMAR	2	B	in: morphology
+C375	Suffix Positional Grammar	2	GLOBAL	in: morphology
 C376	Suffix Kernel Dichotomy	2	GLOBAL	in: morphology
 C377	KERNEL-LIGHT Suffixes LINK-Attracted	2	GLOBAL	in: morphology
 C378	Prefix-Suffix Constrained	2	GLOBAL	in: morphology
@@ -1532,55 +1773,97 @@ C379	Vocabulary Varies by Context	2	GLOBAL	in: morphology
 C380	Function is INVARIANT	2	GLOBAL	in: morphology
 C381	Instruction Concentration	2	GLOBAL	in: morphology
 C382	MORPHOLOGY ENCODES CONTROL PHASE	2	GLOBAL	-> C382_morphology_control_phase.md
+C382	Morphology Encodes Control Phase	2	GLOBAL	-> C382_*.md
 C383	GLOBAL MORPHOLOGICAL TYPE SYSTEM	2	GLOBAL	-> C383_global_type_system.md
-C384	NO ENTRY-LEVEL A-B COUPLING	2	A↔B	-> C384_no_entry_coupling.md
+C383	GLOBAL MORPHOLOGICAL TYPE SYSTEM: Prefixes encode functional type (INTERVENTION vs MONITORING) globally across A, B, and AZC; ch/sh/ok=100% kernel contact in ALL systems, da/sa<5% in ALL systems; LINK affinity patterns identical (da/al attracted, qo/ok avoiding); type system is grammar-independent (A has no sequential grammar but same types); B instantiates types in sequential programs, A instantiates types in non-sequential registry; explains vocabulary sharing without semantic transfer (A-ARCH, Tier 2)	2	GLOBAL	in: morphology
+C384	NO TOKEN-LEVEL OR CONTEXT-FREE A-B LOOKUP	2	A↔B	-> C384_no_entry_coupling.md
+C384	NO ENTRY-LEVEL A-B COUPLING: Although A and B share global vocabulary and type system, there is NO entry-level or folio-level cross-reference; all B programs draw from identical A-derived vocabulary pool (Jaccard 0.998 between all B folios); 215 one-to-one tokens scatter across 207 unique A-B pairs (no repeated pairings beyond noise); rare tokens are rare globally, not relationally; A does NOT function as lookup catalog for B programs; coupling occurs ONLY at global type-system level (A-ARCH, Tier 2)	2	GLOBAL	in: morphology
+C384.a	CONDITIONAL RECORD-LEVEL CORRESPONDENCE PERMITTED	2	A↔B	-> C384a_conditional_correspondence.md
 C385	STRUCTURAL GRADIENT in Currier A	2	A	in: currier_a
+C385	STRUCTURAL GRADIENT IN CURRIER A: Currier A exhibits measurable internal ordering; higher-frequency tokens appear earlier in sequence (rho=-0.44); later folios contain longer tokens with fewer recognizable morphological components (length rho=+0.35, components rho=-0.29); section-level diversity increases H (0.311) -> P (0.440) -> T (0.623); gradient reflects systematic structural change within registry, independent of execution grammar or semantic interpretation (A-ARCH, Tier 2)	2	GLOBAL	in: morphology
 C386	Transition Suppression	2	GLOBAL	in: morphology
 C387	QO as Phase-Transition Hub	2	GLOBAL	in: morphology
 C388	Self-Transition Enrichment	2	GLOBAL	in: morphology
-C389	BIGRAM-DOMINANT local determinism (H=0.41 bits)	2	GLOBAL	in: grammar_system
+C389	BIGRAM-DOMINANT local determinism (H=0.41 bits)	2	B	in: grammar_system
+C389	Bigram-Dominant Determinism	2	GLOBAL	in: morphology
 C390	No Recurring N-Grams	2	GLOBAL	in: morphology
-C391	TIME-REVERSAL SYMMETRY	2	GLOBAL	in: grammar_system
-C392	ROLE-LEVEL CAPACITY (97.2% observed)	2	GLOBAL	in: grammar_system
-C393	FLAT TOPOLOGY (diameter=1)	2	GLOBAL	in: grammar_system
-C394	INTENSITY-ROLE DIFFERENTIATION	2	GLOBAL	in: operations
-C395	DUAL CONTROL STRATEGY	2	GLOBAL	in: operations
+C391	TIME-REVERSAL SYMMETRY	2	B	in: grammar_system
+C391	Time-Reversal Symmetry	2	GLOBAL	in: morphology
+C392	ROLE-LEVEL CAPACITY (97.2% observed)	2	B	in: grammar_system
+C392	Role-Level Capacity	2	GLOBAL	in: morphology
+C393	FLAT TOPOLOGY (diameter=1)	2	B	in: grammar_system
+C393	Flat Role-Level Topology	2	GLOBAL	in: morphology
+C394	INTENSITY-ROLE DIFFERENTIATION	2	B	in: operations
+C394	Intensity-Role Differentiation	2	GLOBAL	in: morphology
+C395	DUAL CONTROL STRATEGY	2	B	in: operations
+C395	Dual Control Strategy	2	GLOBAL	in: morphology
 C396	AUXILIARY Invariance	2	GLOBAL	in: morphology
-C397	qo-prefix = escape route (25-47%)	2	GLOBAL	in: grammar_system
+C397	qo-prefix = escape route (25-47%)	2	B	in: grammar_system
+C397	QO-Prefix Escape Route	2	GLOBAL	in: morphology
 C398	Escape Role Stratification	2	GLOBAL	in: morphology
 C399	Safe Precedence Pattern	2	GLOBAL	in: morphology
-C400	BOUNDARY HAZARD DEPLETION (5-7x)	2	GLOBAL	in: grammar_system
+C400	BOUNDARY HAZARD DEPLETION (5-7x)	2	B	in: grammar_system
+C400	Boundary Hazard Depletion	2	GLOBAL	in: morphology
 C401	Self-Transition Dominance	2	GLOBAL	in: morphology
 C402	HIGH_IMPACT Clustering	2	GLOBAL	in: morphology
 C403	5 PROGRAM ARCHETYPES (continuum)	2	B	in: operations
+C403	Program Continuum	2	B	in: organization
 C404	HT TERMINAL INDEPENDENCE (p=0.92)	2	HT	-> C404_ht_non_operational.md
+C404	Terminal Independence	2	HT	-> C404_*.md
 C405	HT CAUSAL DECOUPLING (V=0.10)	2	HT	in: human_track
+C405	Causal Decoupling	2	HT	in: human_track
 C406	HT GENERATIVE STRUCTURE (Zipf=0.89)	2	HT	in: human_track
+C406	Generative Structure	2	HT	in: human_track
 C407	DA = INFRASTRUCTURE	2	GLOBAL	in: morphology
+C407	DA is Infrastructure	2	GLOBAL	in: morphology
 C408	ch-sh/ok-ot form EQUIVALENCE CLASSES	2	GLOBAL	-> C408_sister_pairs.md
+C408	Sister Pair Equivalence	2	GLOBAL	-> C408_*.md
 C409	Sister pairs MUTUALLY EXCLUSIVE but substitutable	2	GLOBAL	in: morphology
-C410	Sister choice is SECTION-CONDITIONED	2	GLOBAL	in: morphology
-C411	Grammar DELIBERATELY OVER-SPECIFIED (~40% reducible)	2	GLOBAL	-> C411_over_specification.md
-C412	ch-preference anticorrelated with qo-escape density (rho=-0.33)	2	GLOBAL	-> C412_sister_escape_anticorrelation.md
+C409	Mutual Exclusion	2	GLOBAL	in: morphology
+C410	Sister choice is SECTION-CONDITIONED	2	B	in: morphology
+C410	Section Conditioning	2	GLOBAL	in: morphology
+C411	Grammar DELIBERATELY OVER-SPECIFIED (~40% reducible)	2	B	-> C411_over_specification.md
+C411	Deliberate Over-Specification	2	GLOBAL	-> C411_*.md
+C412	ch-preference anticorrelated with qo-escape density (rho=-0.33)	2	B	-> C412_sister_escape_anticorrelation.md
+C412	Sister-Escape Anticorrelation	2	GLOBAL	-> C412_*.md
 C413	HT prefix phase-class predicted by preceding grammar (V=0.319)	2	HT	-> C413_ht_grammar_trigger.md
+C413	Grammar Trigger	2	HT	-> C413_*.md
 C414	HT STRONG GRAMMAR ASSOCIATION (chi2=934)	2	HT	in: human_track
+C414	Strong Grammar Association	2	HT	in: human_track
 C415	HT NON-PREDICTIVITY (MAE worsens)	1	HT	in: human_track
+C415	Non-Predictivity	1	HT	in: human_track
 C416	HT DIRECTIONAL ASYMMETRY (V=0.324 vs 0.202)	2	HT	in: human_track
+C416	Directional Asymmetry (Quantified)	2	HT	in: human_track
 C417	HT MODULAR ADDITIVE (no synergy, p=1.0)	2	HT	in: human_track
+C417	Modular Additive Structure	2	HT	in: human_track
 C418	HT POSITIONAL WITHOUT INFORMATIVENESS	2	HT	in: human_track
+C418	Positional Specialization Without Informativeness	2	HT	in: human_track
 C419	HT POSITIONAL SPECIALIZATION IN A (entry-aligned)	2	A+HT	in: human_track
+C419	HT Positional Specialization in Currier A	2	HT	in: human_track
 C420	Folio-initial position permits otherwise illegal C+vowel variants (ko-, po-, to-)	2	A	-> C420_folio_initial_exception.md
+C420	Folio-Initial Positional Exception	2	A	in: currier_a
 C421	Section-boundary adjacency suppression (2.42x)	2	A	in: currier_a
+C421	Section-Boundary Adjacency Suppression	2	A	in: currier_a
 C422	DA as internal articulation punctuation (75% separation)	2	A	in: currier_a
+C422	DA as Internal Articulation Punctuation	2	A	in: currier_a
 C423	PREFIX-BOUND VOCABULARY DOMAINS (80% exclusive MIDDLEs)	2	A	in: currier_a
+C423	PREFIX-BOUND VOCABULARY DOMAINS	2	A	in: currier_a
 C424	Adjacency coherence is clustered, not uniform (~3-entry runs, autocorr r=0.80)	2	A	-> C424_clustered_adjacency.md
+C424	Clustered Adjacency	2	A	in: currier_a
 C430	**AZC Bifurcation: two folio families**	2	AZC	in: azc_system
+C430	AZC Bifurcation	2	AZC	in: azc_system
 C431	**Zodiac Family Coherence (refines C319)**	2	AZC	in: azc_system
+C431	Zodiac Family Coherence	2	AZC	in: azc_system
 C432	**Ordered Subscript Exclusivity**	2	AZC	in: azc_system
+C432	Ordered Subscript Exclusivity	2	AZC	in: azc_system
 C433	**Zodiac Block Grammar (98%+ self-transition)**	2	AZC	in: azc_system
+C433	Zodiac Block Grammar	2	AZC	in: azc_system
 C434	**R-Series Strict Forward Ordering**	2	AZC	in: azc_system
+C434	R-Series Strict Forward Ordering	2	AZC	in: azc_system
 C435	**S/R Positional Division (boundary/interior)**	2	AZC	in: azc_system
+C435	S/R Positional Division	2	AZC	in: azc_system
 C436	**Dual Rigidity: uniform vs varied scaffolds**	2	AZC	in: azc_system
+C436	AZC Dual Rigidity Pattern	2	AZC	in: azc_system
 C437	AZC Folios Maximally Orthogonal	2	AZC	in: azc_system
 C438	AZC Practically Complete Basis	2	AZC	in: azc_system
 C439	Folio-Specific HT Profiles	2	AZC	in: azc_system
@@ -1630,17 +1913,38 @@ C491	Judgment-Critical Program Axis (OPPORTUNISTIC orthogonal to caution/aggress
 C492	**PREFIX Phase-Exclusive Legality** (ct PREFIX is 0% C/S-zones, 26% P-zone, invariant)	2	A→AZC	-> C492_prefix_phase_exclusion.md
 C493	**Brunschwig Grammar Embedding** (balneum marie procedure fits with 0 forbidden violations)	2	B	-> C493_brunschwig_grammar_embedding.md
 C494	**REGIME_4 Precision Axis** (encodes precision-constrained execution, not intensity)	2	B	-> C494_regime4_precision_axis.md
+C495	**SUFFIX–REGIME Compatibility Breadth** (-r universal, -ar/-or restricted; V=0.159)	2	A→B	in: morphology
+C495	SUFFIX–REGIME Compatibility Breadth Association	2	GLOBAL	in: morphology
+C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC	in: azc_system
+C496	Nymph-Adjacent S-Position Prefix Bias	2	AZC	in: azc_system
+C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits)	2	A	in: currier_a
+C497	f49v Instructional Apparatus Folio	2	A	in: currier_a
+C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
+C498	Registry-Internal Vocabulary Track	2	A	in: currier_a
+C498.a	**A∩B Shared Vocabulary Bifurcation** (154 AZC-Mediated + 114 B-Native Overlap; pipeline scope narrowed)	2	A	in: currier_a
+C499	Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig)	3	A	in: currier_a
+C499	Bounded Material-Class Recoverability	2	A	in: currier_a
+C500	Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×)	3	A	in: currier_a
+C500	Registry-Internal Suffix Posture Temporal Pattern	2	A	in: currier_a
+C501	**B-Exclusive MIDDLE Stratification** (569 B-exclusive types: L-compounds 49, boundary closers, 80% singletons; elaboration not novelty)	2	B	in: currier_a
+C501	B-Exclusive MIDDLE Stratification	2	A	in: currier_a
+C502	**A-Record Viability Filtering** (Strict interpretation: ~96/480 B tokens legal per A; 13.3% mean B folio coverage; 80% filtered)	2	A+B	in: currier_a
+C502	A-Record Viability Filtering	2	A	in: currier_a
+C503	**Class-Level Filtering** (1,203 unique patterns, 6 always-survive classes, 32.3 mean; infrastructure classes vulnerable)	2	A+B	in: currier_a
+C503	Class-Level Filtering Under Strict Model	2	A	in: currier_a
+C504	**MIDDLE Function Bifurcation** (PP 86 types r=0.772 with survival; RI 1,293 types r=-0.046; 75% records have both)	2	A+B	in: currier_a
+C504	MIDDLE Function Bifurcation in A Records	2	A	in: currier_a
 
 ---
 
-# All 35 Explanatory Fits
+# All Explanatory Fits
 
 **Source:** `context/MODEL_FITS/FIT_TABLE.txt`
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-01-17
-# Total: 35 fits
+# Generated: 2026-01-21
+# Total: 38 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -1673,12 +1977,15 @@ F-AZC-019	A/C Incompatibility Density Test (POSITIVE)	F2	AZC	SUCCESS	C430, C475	
 F-ECR-001	Material-Class Identification	F3	GLOBAL	SUCCESS	C109-C114, C232	in: fits_global
 F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
 F-ECR-003	Decision-State Semantics	F3	GLOBAL	SUCCESS	C384, C404-C405, C459-C460	in: fits_global
-F-BRU-001	Brunschwig Product Type Prediction (Blind)	F3	A	PARTIAL	C475, C476	in: fits_brunschwig
+F-BRU-001	Brunschwig Product Type Prediction (Blind)	F2	A	SUCCESS	C475, C476	in: fits_brunschwig
 F-BRU-002	Degree-REGIME Boundary Asymmetry	F3	B	SUCCESS	C179-C185, C458	in: fits_brunschwig
 F-BRU-003	Property-Based Generator Rejection	F2	A	NEGATIVE	C475, C476	in: fits_brunschwig
 F-BRU-004	A-Register Cluster Stability	F2	A	SUCCESS	C481	in: fits_brunschwig
 F-BRU-005	MIDDLE Hierarchical Structure	F2	A	SUCCESS	C383, C475	in: fits_brunschwig
 F-BRU-006	Closure × Product Affordance Correlation	F3	A	SUCCESS	C233, C422 (closure/DA structure)	in: fits_brunschwig
+F-BRU-007	SLI-Constraint Substitution Model	F2	B	SUCCESS	C458, C477	in: fits_brunschwig
+F-BRU-008	Zone Affinity Differentiation	F2	B	SUCCESS	C443 (Positional Escape Gradient)	in: fits_brunschwig
+F-BRU-009	Zone-Modality Addressing (Two-Stage Model)	F3	B	CONFIRMED	C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp)	in: fits_brunschwig
 
 ---
 
@@ -1688,7 +1995,7 @@ F-BRU-006	Closure × Product Affordance Correlation	F3	A	SUCCESS	C233, C422 (clo
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.27
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.32
 
 ---
 
@@ -1781,6 +2088,23 @@ Key findings:
 - What any token "means" in natural language
 
 This is the terminal internal semantic layer. The boundary is by design.
+
+**Semantic Ceiling Gradient (C499, v4.31):**
+
+The ceiling has layers - not all irrecoverable information is equally irrecoverable:
+
+| Level | Recoverability | Method |
+|-------|----------------|--------|
+| Entity identity (lavender) | IRRECOVERABLE | - |
+| Material CLASS priors | **PARTIALLY RECOVERABLE** | Bayesian inference via procedural context |
+| Procedural context | RECOVERABLE | Folio classification, product type |
+
+**Conditional recovery (IF Brunschwig applies):**
+- 128 registry-internal MIDDLEs with full P(material_class) vectors
+- 27 tokens with P(animal) = 1.00 (PRECISION-exclusive)
+- Mean entropy: 1.08 bits (86% match null baseline)
+
+The distinction is epistemological, not ontological: the system MAY encode specific materials, we just can't recover WHICH.
 
 ### Why This Matters
 
@@ -1936,6 +2260,49 @@ This is NOT "doodling" or "scribbling" - the evidence shows deliberate skill acq
 ### Historical Parallel
 
 Medieval apprentice work-study combination. Productive use of operational waiting periods for skill development. Silent activity appropriate for apparatus monitoring.
+
+---
+
+## I.A. HT Morphological Curriculum (Tier 3 Characterization)
+
+**Phase:** HT_MORPHOLOGICAL_CURRICULUM (2026-01-21)
+
+### Hypothesis Tested
+
+> HT morphological choices follow a curriculum structure: systematic introduction of grapheme families, spaced repetition of difficult forms, and complexity progression within practice blocks.
+
+### Test Battery Results
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| 1. Introduction Sequencing | **STRONG PASS** | All 21 families in first 0.3% (KS=0.857) |
+| 2. Spaced Repetition | UNDERPOWERED | Insufficient rare-but-repeated tokens |
+| 3. Block Complexity | FAIL | No within-block gradient (33/33/33 split) |
+| 4. Family Rotation | **WEAK PASS** | Quasi-periodic ACF peaks at 6,9,12,14,17 |
+| 5. Difficulty Gradient | **PROVISIONAL** | Inverted-U pattern (H=89.04) - *rebinding confound* |
+| 6. Prerequisite Structure | **WEAK PASS** | 26 pairs (2.5x expected by chance) |
+
+### Confirmed Curriculum Properties
+
+1. **Vocabulary Front-Loading:** All 21 HT families established in first 0.3% of manuscript (not gradual introduction)
+2. **Prerequisite Relationships:** Complex families (esp. `yp`) consistently precede simpler consolidation forms
+3. **Quasi-Periodic Rotation:** Families cycle with regular periodicity
+
+### Provisional Finding (Rebinding Caveat)
+
+The inverted-U difficulty pattern (middle zone easier than early/late) is statistically significant but **cannot be distinguished from rebinding artifact** without additional controls. The manuscript was rebound by someone who couldn't read it (C156, C367-C370). What we observe as "middle" may be a mixture of originally non-adjacent folios.
+
+**Required follow-up:** Quire-level analysis to test whether pattern holds within preserved local ordering.
+
+### Characterization (Not Constraint)
+
+> HT morphological patterns exhibit vocabulary front-loading (all families established in first 0.3%), significant prerequisite relationships (26 pairs vs 10.5 expected), and quasi-periodic family rotation. This is consistent with a "vocabulary-first" curriculum structure distinct from gradual introduction.
+
+**Tier 3** because: Test 3 failed, Test 5 is confounded by rebinding, pattern is distributional regularity not architectural necessity.
+
+### Integration with C221
+
+This refines the existing "Deliberate Skill Practice" interpretation (C221) with specific curriculum mechanics: front-loading vocabulary establishment, prerequisite ordering, and periodic rotation.
 
 ---
 
@@ -3888,6 +4255,729 @@ This is mechanism characterization within established epistemological boundaries
 
 **Files:** phases/AZC_REACHABILITY_SUPPRESSION/
 
+---
+
+### X.21 Constraint Substitution Interpretation (2026-01-19) - NEW
+
+**Phase:** SENSORY_LOAD_ENCODING + BRUNSCHWIG_REVERSE_ACTIVATION
+**Status:** COMPLETE - Explanatory model validated
+
+#### Core Discovery
+
+> **"The Voynich Manuscript encodes sensory requirements by tightening constraints rather than signaling vigilance."**
+
+This is an explanatory interpretation that unifies multiple structural findings.
+
+#### The Finding
+
+**SLI-HT Inverse Correlation:**
+
+| Metric | Value |
+|--------|-------|
+| SLI vs HT density | r = **-0.453**, p < 0.0001 |
+| REGIME_2 (gentle) | LOWEST SLI (0.786), HIGHEST HT |
+| REGIME_3 (oil/resin) | HIGHEST SLI (1.395), LOWEST HT |
+
+Formula: `SLI = hazard_density / (escape_density + link_density)`
+
+This is OPPOSITE to the initial hypothesis ("high sensory demand -> higher vigilance").
+
+#### The Interpretation
+
+When operations are dangerous (high SLI):
+- Grammar restricts options
+- Fewer choices available
+- Less vigilance needed (can't make wrong choice)
+
+When operations are forgiving (low SLI):
+- Grammar permits many options
+- More choices require discrimination
+- Higher vigilance (HT) for decision complexity
+
+**Constraint SUBSTITUTES for vigilance.**
+
+#### Recipe-Level Validation (197 recipes)
+
+The pathway operates at recipe level:
+
+```
+Recipe SLI -> Vocabulary tail_pressure -> HT prediction
+   r=0.226      ->       r=0.311
+   p=0.001               p<0.0001
+```
+
+Sensory load encodes through vocabulary selection, not direct signaling.
+
+#### What This Explains
+
+| Finding | Explanation |
+|---------|-------------|
+| C458 (Design Clamp) | High-hazard contexts have tight constraints |
+| C477 (HT Correlation) | HT tracks residual decision complexity |
+| Inverse SLI-HT | Constraint geometry enforces safety |
+
+#### What This Does NOT Claim
+
+- NO semantic encoding of sensory modalities
+- NO parametric encoding (C469 preserved)
+- NO entry-level mapping (C384 preserved)
+- SLI is constructed metric, not discovered structure
+
+**Tier:** 3 (Explanatory Interpretation)
+
+**Files:** phases/SENSORY_LOAD_ENCODING/, results/sensory_load_index.json
+
+---
+
+### X.22 Zone Affinity Analysis (2026-01-19) - NEW
+
+**Phase:** BRUNSCHWIG_REVERSE_ACTIVATION
+**Status:** COMPLETE - 197/197 recipes processed
+
+#### Comprehensive Mapping
+
+All 197 Brunschwig recipes with procedures were reverse-mapped through AZC zone affinity analysis. This completes the originally intended mapping task.
+
+#### Key Findings
+
+**Zone Differentiation by SLI Cluster (ANOVA):**
+
+| Zone | F-statistic | p-value |
+|------|-------------|---------|
+| C-affinity | F = 69.4 | p < 0.0001 |
+| P-affinity | F = 33.1 | p < 0.0001 |
+| R-affinity | F = 106.6 | p < 0.0001 |
+| S-affinity | F = 21.6 | p < 0.0001 |
+
+All 4 zones significantly differentiate by SLI cluster.
+
+**Zone Affinity by REGIME:**
+
+| REGIME | Dominant Zone | Interpretation |
+|--------|---------------|----------------|
+| REGIME_1 | S (0.30) | Boundary stability |
+| REGIME_2 | C (0.51) | Setup/flexible |
+| REGIME_3 | R (0.43) | Sequential processing |
+| REGIME_4 | S (0.55) | Boundary control |
+
+**Zone Correlations with SLI:**
+- SLI vs P-affinity: r = 0.505, p < 0.0001
+- SLI vs R-affinity: r = 0.605, p < 0.0001
+
+#### Modality-Zone Signatures (2/3 Confirmed)
+
+| Modality | n | Predicted Zone | Result |
+|----------|---|----------------|--------|
+| SOUND | 70 | R (sequential) | **CONFIRMED** (t=3.97, p<0.001) |
+| SIGHT | 20 | P (monitoring) | **CONFIRMED** (t=9.00, p<0.0001) |
+| TOUCH | 5 | S (boundary) | Not significant |
+
+SOUND (distillation bubbling) -> R-zone affinity
+SIGHT (visual monitoring) -> P-zone affinity
+
+#### Zones ADDRESS But Do Not ENCODE Sensory Categories
+
+**Critical Distinction:** The zones do not *encode* sensory categories (you cannot look at a zone and say "this is for hearing"). Instead, the zones *address* sensory categories in the sense that their structural affordances align with what different monitoring modes require.
+
+**The Four Zones and Their Affordances:**
+
+| Zone | Structural Affordance | Escape Rate | Modality Alignment |
+|------|----------------------|-------------|-------------------|
+| **C** | Setup/flexible, errors fixable | 1.4% | (Not tested - setup phase) |
+| **P** | Intervention-permitting | 11.6% | **SIGHT** - visual cues may trigger action |
+| **R** | Progressive restriction, sequential | 2.0%→0% | **SOUND** - continuous signals tracked over time |
+| **S** | Locked, must accept outcome | 0-3.8% | TOUCH hypothesized, not confirmed (n=5) |
+
+**Mechanism:** The constraint geometry of each zone creates the right decision space for different sensory tasks:
+- **C-zone's** flexibility matches setup operations where mistakes can be corrected
+- **P-zone's** intervention permission matches operations where observation may require action (visual monitoring)
+- **R-zone's** progressive restriction matches operations where you track a developing signal (auditory monitoring)
+- **S-zone's** locked state matches operations where the outcome is fixed and boundary conditions apply
+
+**Interpretation:** The manuscript doesn't label sensory requirements - it shapes the grammar to be *compatible with* them. The operator's trained sensory judgment fills in what the zones leave room for. This is another manifestation of the constraint substitution principle: encode requirements through structure, not symbols.
+
+**Epistemic Status:** Correlation demonstrated, mechanism plausible, intentional design not proven.
+
+#### C384 Compliance
+
+All mapping is AGGREGATE (zone-level, MIDDLE-level), not entry-level. No direct recipe->entry mapping.
+
+**What This Does NOT Claim:**
+- NO entry-level A-B coupling
+- NO semantic decoding
+- Modality assignments are external (from Brunschwig)
+
+**Tier:** 3 (Structural Characterization)
+
+**Fits Created:** F-BRU-007, F-BRU-008, F-BRU-009
+
+**Files:** phases/BRUNSCHWIG_REVERSE_ACTIVATION/, results/brunschwig_reverse_activation.json
+
+---
+
+### X.23 Two-Stage Sensory Addressing Model (2026-01-19) - NEW
+
+**Phase:** ZONE_MODALITY_VALIDATION
+**Status:** COMPLETE - Rigorous statistical validation with REGIME stratification
+
+#### Executive Summary
+
+Rigorous validation of zone-modality associations revealed a **two-stage addressing system** where modality bias (external) and REGIME execution style jointly determine zone concentration.
+
+#### Key Discovery: REGIME Heterogeneity
+
+When stratifying the R-SOUND effect by REGIME, we found substantial heterogeneity:
+
+| REGIME | R-zone Effect (d) | Interpretation |
+|--------|------------------|----------------|
+| REGIME_1 (WATER_STANDARD) | 0.48 | Moderate - throughput tracking |
+| REGIME_2 (WATER_GENTLE) | 1.30 | Strong - setup phase dominates |
+
+**Effect range: 0.82** - This is NOT corruption or invalidity. It reveals structured workflow adaptation.
+
+#### Zone Profiles for SOUND Recipes by REGIME
+
+| REGIME | Dominant Zone | Interpretation |
+|--------|---------------|----------------|
+| REGIME_2 (GENTLE) | C-zone (0.453) | Setup-critical operations |
+| REGIME_1 (STANDARD) | Balanced P/R | Throughput-critical operations |
+| REGIME_3 (OIL_RESIN) | R-zone (0.443) | Progression-critical extraction |
+| REGIME_4 (PRECISION) | S-zone (0.536) | Boundary-critical timing |
+
+#### Two-Stage Model
+
+**Stage 1 - Modality Bias (External/Brunschwig):**
+
+Sensory modalities carry intrinsic monitoring profiles:
+- **SOUND** (sequential/continuous): Auditory cues track process state over time
+- **SIGHT** (intervention-triggering): Visual changes signal decision points
+- **TOUCH** (boundary confirmation): Tactile feedback confirms endpoints
+
+**Stage 2 - Execution Completeness (Voynich REGIME):**
+
+REGIMEs concentrate sensory relevance into specific workflow phases:
+- **Gentle handling** → C-zone (setup phase critical)
+- **Standard throughput** → R-zone (progression tracking)
+- **Intense extraction** → R-zone (continuous monitoring)
+- **Precision timing** → S-zone (boundary locking)
+
+#### Refined Conclusion
+
+> **AZC zones do not encode sensory modalities. Instead, they distribute human sensory relevance across workflow phases in a REGIME-dependent way.**
+
+The constraint substitution principle operates temporally: zones DIRECT when sensory monitoring is structurally relevant, while REGIME determines which zone receives concentration.
+
+#### Hypothesis Tests
+
+| Track | Hypothesis | Result |
+|-------|------------|--------|
+| Enhanced extraction | Improve SMELL/TOUCH sample sizes | **FAILED** (data limitation) |
+| C-zone -> Preparation verbs | Structural correlation | **FAILED** (r=-0.006) |
+| R-zone -> SOUND | Positive association | **CONFIRMED** (d=0.61, p=0.0001) |
+| P-zone -> SIGHT | Positive association | **UNDERPOWERED** (d=0.27, n=7) |
+| S-zone -> TOUCH | Positive association | **WRONG DIRECTION** (d=-0.64) |
+| REGIME stratification | Effect heterogeneity | **DISCOVERY** (range=0.82) |
+
+#### S-Zone Reinterpretation
+
+All tested modalities AVOID S-zone:
+- SOUND: d=-1.21 (strong avoidance)
+- TASTE: d=-1.33 (strong avoidance)
+
+**New interpretation:** S-zone represents operations where sensory monitoring is COMPLETED or UNNECESSARY. The "locked" state means decisions are final. PRECISION REGIME concentrates here because exact timing, once achieved, requires no further sensory feedback.
+
+#### Statistical Rigor
+
+- **Effect sizes:** Cohen's d reported for all associations
+- **Permutation tests:** 1000-shuffle validation
+- **Bonferroni correction:** Multiple comparison adjustment
+- **ANOVA:** REGIME -> Zone affinity (all zones significant except P)
+- **Pre-registration:** Hypotheses locked before analysis
+
+#### Constraints Respected
+
+- **C384:** All tests aggregate, no entry-level mapping
+- **C469:** Categorical zone assignment maintained
+- **Tier 3:** Results remain characterization, confidence upgraded
+
+**Tier:** 3 (Structural Characterization, confidence upgraded)
+
+**Fits Updated:** F-BRU-009 (refined with two-stage model)
+
+**Files:** phases/ZONE_MODALITY_VALIDATION/, results/regime_stratified_analysis.json
+
+---
+
+### X.24 Semantic Ceiling Breach Attempt (2026-01-19) - NEW
+
+**Phase:** SEMANTIC_CEILING_BREACH
+**Status:** COMPLETE - Tier 3 confirmed with stronger evidence
+
+#### Purpose
+
+Attempted to break through the Tier 3 semantic ceiling by implementing the expert-advisor's top recommendation: **B->A Reverse Prediction Test**. The goal was to achieve Tier 2 bidirectional constraint by predicting recipe modality class from Voynich zone structure alone.
+
+#### Key Results
+
+| Test | Result | Threshold | Status |
+|------|--------|-----------|--------|
+| 4-class accuracy | 52.7% | >40% for Tier 3 | **PASS** |
+| 4-class permutation p | 0.012 | <0.05 | **PASS** |
+| Binary accuracy | 71.8% | >85% for Tier 2 | **FAIL** |
+| Cramer's V (cluster-modality) | 0.263 | >0.3 for Tier 2 | **WEAK** |
+| MODALITY beyond REGIME | 3/4 zones | Supports model | **PASS** |
+
+#### Zone Discrimination is REAL
+
+All four zones significantly discriminate SOUND from OTHER recipes:
+
+| Zone | SOUND Mean | OTHER Mean | Cohen's d | p-value |
+|------|-----------|-----------|----------|---------|
+| C | 0.226 | 0.308 | -0.66 | 0.0059 |
+| P | 0.248 | 0.182 | +0.62 | 0.0090 |
+| R | 0.277 | 0.213 | +0.57 | 0.0163 |
+| S | 0.252 | 0.298 | -0.44 | 0.0660 |
+
+**Pattern confirmed:** SOUND concentrates in P/R zones (active work) and avoids C/S zones (setup/boundary).
+
+#### MODALITY Adds Beyond REGIME
+
+REGIME alone explains only **24.7%** of zone variance. After controlling for REGIME, MODALITY still significantly affects 3/4 zones:
+
+| Zone | Partial Correlation | Direction |
+|------|--------------------| ----------|
+| C | r=-0.255, p=0.007 | SOUND avoids |
+| P | r=+0.284, p=0.003 | SOUND seeks |
+| R | r=+0.200, p=0.036 | SOUND seeks |
+| S | r=-0.245, p=0.010 | SOUND avoids |
+
+This validates the **two-stage model**: Modality bias + REGIME execution style jointly determine zone concentration.
+
+#### Why Tier 2 Was Not Achieved
+
+The zone profiles **discriminate** modality classes, but not with enough accuracy for confident prediction:
+
+```
+Can do:     Zone profile -> "Probably SOUND-dominant" (52.7% accuracy)
+Cannot do:  Zone profile -> "Definitely SOUND" (>85% accuracy)
+```
+
+Binary accuracy (71.8%) is BELOW the majority baseline (79.1%) but SIGNIFICANTLY better than permuted labels (p=0.002). The model learns REAL structure but not enough for high-confidence prediction.
+
+#### Semantic Ceiling Location
+
+The semantic ceiling is confirmed at **aggregate characterization**:
+
+| Level | Can We Do It? | Evidence |
+|-------|---------------|----------|
+| Entry-level meaning | NO | C384 prohibits |
+| Token-level prediction | NO | Not attempted |
+| Zone-modality correlation | YES | d=0.57-0.66, p<0.05 |
+| Modality class prediction | PARTIAL | 52.7% accuracy |
+| High-confidence prediction | NO | <85% accuracy |
+
+**The ceiling is real but discrimination exists.** Zone profiles carry semantic information about modality domains, but the signal-to-noise ratio is insufficient for Tier 2 predictive power.
+
+#### Implications for Future Work
+
+1. **More labeled data needed**: SIGHT (n=7), TOUCH (n=3) are severely underpowered
+2. **Process verb extraction**: Parsing Brunschwig raw text could add discriminating features
+3. **Multi-modal recipes**: Testing interference patterns could reveal additional structure
+4. **Alternative historical sources**: Cross-validation with Libavius or Della Porta
+
+#### Constraints Respected
+
+- **C384:** All tests at vocabulary/aggregate level, no entry-level mapping
+- **C469:** Categorical zone assignment maintained
+- **C468:** Legality inheritance respected
+
+**Tier:** 3 (Structural Characterization, confirmed with stronger evidence)
+
+**Files:** phases/SEMANTIC_CEILING_BREACH/, results/scb_modality_prediction.json, results/scb_synthesis.json
+
+---
+
+### X.25 Trajectory Semantics: Judgment-Gating System (2026-01-19) - NEW
+
+**Phase:** TRAJECTORY_SEMANTICS
+**Status:** COMPLETE - Semantic boundary resolution achieved
+
+#### Purpose
+
+Applied three pressure vectors beyond the token semantic ceiling to explore "trajectory semantics" - characterizing HOW constraint pressure evolves, rather than WHAT tokens mean.
+
+#### Test Results
+
+| Vector | Hypotheses | Passed | Verdict |
+|--------|------------|--------|---------|
+| C (Gradient Steepness) | 4 | 0/4 | INCONCLUSIVE |
+| A (Interface Theory) | 3 | 2/3 | TIER_3_ENRICHMENT |
+| Final (Judgment Trajectories) | N/A | N/A | DECISIVE |
+
+**Vector C failed:** Instruction sequences are too coarse (2-5 steps) to detect transition dynamics. This is a **diagnostic negative** - if transition dynamics matter, they are handled internally by apparatus + operator, not by text.
+
+**Vector A succeeded:** The 13 judgment types show **84.6% non-uniform distribution** across zones, with **11/13 judgments** showing significant zone restriction (p<0.01).
+
+#### The Decisive Finding: Judgment-Zone Availability Matrix
+
+| Zone | Required | Permitted | Impossible | Freedom |
+|------|----------|-----------|------------|---------|
+| **C** | 1 | 9 | 3 | **77%** |
+| **P** | 9 | 1 | 3 | **77%** |
+| **R** | 6 | 7 | 0 | **100%** |
+| **S** | 5 | 0 | 8 | **38%** |
+
+**Key findings:**
+- **P-zone REQUIRES 9/13 judgments** - observation phase demands active cognitive engagement
+- **S-zone makes 8/13 judgments IMPOSSIBLE** - outcome is locked, human intervention forbidden
+- **R-zone permits ALL 13 judgments** - active phase where all cognition is possible but narrowing
+- **Freedom collapses 77% → 38%** from C-zone to S-zone
+
+#### Agency Withdrawal Curve
+
+The manuscript progressively removes human judgment freedoms phase by phase:
+
+```
+C-zone: 77% freedom (setup - flexible)
+    ↓
+P-zone: 77% freedom (but 9 judgments REQUIRED - observation load)
+    ↓
+R-zone: 100% freedom (all possible, but narrowing toward commitment)
+    ↓
+S-zone: 38% freedom (8/13 judgments IMPOSSIBLE - locked)
+```
+
+This is not a failure mode. This is **designed under-determinacy** - the system deliberately restricts cognitive options at exactly the phases where unrestricted judgment would be dangerous.
+
+#### The Reframe
+
+> **"The Voynich Manuscript is a machine for removing human freedom at exactly the moments where freedom would be dangerous."**
+
+This reframes the entire manuscript as:
+
+> **A machine-readable declaration of which human cognitive faculties are admissible at each phase of a dangerous process.**
+
+#### What Was Discovered
+
+- **NOT:** What tokens mean
+- **NOT:** How fast processes change
+- **YES:** Which human judgments are IMPOSSIBLE vs UNAVOIDABLE in each zone
+
+This is **meta-semantics of control and responsibility** - the artifact tells you when judgment is no longer yours.
+
+#### Semantic Boundary Resolution
+
+The semantic ceiling was NOT breached by naming things. It was breached by discovering that:
+
+1. Meaning does not live in tokens
+2. Meaning lives in the **withdrawal of agency**
+3. The artifact specifies **when judgment becomes impossible**
+
+This is not a failure to "go further." This IS going further - into procedural semantics that no token-level decoding could ever reveal.
+
+#### Constraints Respected
+
+- **C384:** Labels trajectories and phases, not tokens
+- **C434:** Uses R-series ordering as foundation
+- **C443:** Extends escape gradients with temporal dimension
+- **C469:** Judgment availability is categorical
+
+**Tier:** 3 (Structural Characterization with semantic boundary resolution)
+
+**Files:** phases/TRAJECTORY_SEMANTICS/, results/ts_judgment_trajectories.json, results/ts_synthesis.json
+
+---
+
+### X.26 AZC Trajectory Shape: Scaffold Fingerprint Discovery (2026-01-19) - NEW
+
+**Phase:** AZC_TRAJECTORY_SHAPE
+**Status:** COMPLETE - Critical corrective insight achieved
+
+#### Purpose
+
+Test whether Zodiac and A/C families have different judgment withdrawal trajectories, combining:
+- **Vector 1 (External Expert):** Trajectory shape - "wide-then-collapse" vs "narrow-then-spike"
+- **Vector 2 (Expert-Advisor):** Apparatus mapping - pelican alembic structural correspondence
+
+#### The Critical Reframe
+
+> **"AZC trajectory shape is a fingerprint of control scaffold architecture, not a simulation of apparatus dynamics."**
+
+This phase rescues trajectory analysis from a wrong question (apparatus physics) and repositions it as structural characterization. The key insight:
+
+> **Escape permission encodes decision affordance, not physical reversibility.**
+
+#### Test Results (3/9 hypotheses passed)
+
+| Hypothesis | Result | Key Finding |
+|------------|--------|-------------|
+| H2: Monotonicity | **PASS** | Zodiac rho=-0.755 (steady decline), A/C rho=-0.247 (oscillatory) |
+| H6: R-series restriction | **PASS** | Perfect vocabulary narrowing: R1(316)->R2(217)->R3(128) unique MIDDLEs |
+| H7: S->B-terminal flow | **PASS** | S-zone vocabulary 3.5x enriched in B-terminal (OR=3.51, p<0.0001) |
+| H8: Pelican reversibility | **FAIL** | Zone escape does NOT correlate with operational reversibility |
+
+**Failed hypotheses:** H1 (entropy slope), H3 (terminal compression), H4 (peak count), H5 (elimination order), H9 (escape variance) - entropy-based and apparatus-based metrics do not differentiate families.
+
+#### Key Discoveries
+
+**1. Monotonicity = Scaffold Type Signature (H2)**
+
+This aligns with C436 (Dual Rigidity):
+
+| Family | Scaffold Type | Trajectory Shape | Cognitive Effect |
+|--------|---------------|------------------|------------------|
+| **Zodiac** | Uniform scaffold | Smooth monotonic tightening | Sustained flow cognition |
+| **A/C** | Varied scaffold | Punctuated tightening | Checkpoint cognition |
+
+> **Uniform constraints produce smooth trajectories; varied constraints produce punctuated trajectories.**
+
+This explains HT oscillation differences, why entropy metrics failed, and why "spikiness" predictions inverted.
+
+**2. R-Series + S->B-Terminal Form Causal Chain (H6 + H7)**
+
+These findings connect into a mechanistic pipeline:
+
+1. **R-series positional grammar** (C434) -> progressively restricts legal MIDDLE vocabulary
+2. **S-zone survival** -> selectively feeds into **B terminal states**
+
+This closes the architectural loop: **AZC legality -> vocabulary survival -> executable program completion**
+
+**3. Pelican Reversibility Model Falsified (H8)**
+
+The apparatus-phase alignment hypothesis failed (rho=-0.20) because:
+- AZC does NOT mirror physical reversibility
+- AZC encodes **when human intervention must be permitted**
+- P-zone has highest escape (11.6%) because that's when operators need to intervene
+
+> **Physics enforces order; AZC enforces responsibility allocation. These are orthogonal.**
+
+#### New Tier 3 Characterization
+
+> **AZC families differ not in what judgments are removed, but in how smoothly those removals are imposed over execution - a property determined by scaffold uniformity versus variability.**
+
+#### Integration with Global Model
+
+| Layer | Function | This Phase Clarifies |
+|-------|----------|---------------------|
+| Currier A | Enumerates discrimination space | UNCHANGED |
+| **AZC** | Gates when judgments are legal | **NOW adds: pacing style determined by scaffold type** |
+| HT | Tracks cognitive load & capacity | Explains oscillation patterns |
+| Currier B | Executes safely | UNCHANGED |
+
+This phase does NOT add a new layer - it clarifies an attribute of an existing one.
+
+#### The Corrective Pivot
+
+Earlier phases implicitly blurred:
+- Apparatus behavior (physics)
+- Control scaffold behavior (how legality is imposed)
+
+This phase disentangles them cleanly:
+
+> **Templates don't select senses - they shape cognitive pacing. Sensory strategies emerge downstream.**
+
+#### Constraints Respected
+
+- **C384:** Aggregate distributions only, no token-to-referent mapping
+- **C430:** Explicit Zodiac/A/C family separation
+- **C434:** Uses R-series forward ordering
+- **C436:** Scaffold uniformity difference confirmed
+
+**Tier:** 3 (Structural Characterization - scaffold->trajectory signature)
+
+**Files:** phases/AZC_TRAJECTORY_SHAPE/, results/ats_*.json
+
+---
+
+### X.27 Brunschwig-Voynich Relationship Bounded: Explanation-Enforcement Complementarity FALSIFIED (2026-01-19) - NEW
+
+**Phase:** BC_EXPLANATION_ENFORCEMENT
+**Status:** COMPLETE - Clean falsification achieved
+
+#### Purpose
+
+Test the "one remaining legitimate reverse-Brunschwig test" (external expert): Does Brunschwig's pedagogical verbosity inversely correlate with AZC scaffold constraint rigidity?
+
+> **Core question:** Where Voynich enforces more, does Brunschwig explain less?
+
+#### Test Results (0/4 hypotheses passed = FALSIFIED)
+
+| Hypothesis | Prediction | Result | Status |
+|------------|------------|--------|--------|
+| H1: Freedom correlation | Inverse density-freedom correlation | rho=+0.09 (opposite direction) | **FAIL** |
+| H2: Scaffold rigidity | UNIFORM < VARIED density | d=-0.37 (correct direction, p=0.11) | **FAIL** |
+| H3: Interaction | Freedom x Pacing interaction > main | dR2=0.00 (no effect) | **FAIL** |
+| H4: Complementarity ratio | Stable ratio across regimes | CV increased 9.6% | **FAIL** |
+
+#### What Was Falsified
+
+The stronger hypothesis:
+
+> **"Brunschwig's pedagogical verbosity systematically complements Voynich's enforcement rigidity at the recipe/regime level."**
+
+This hypothesis is now **dead permanently**.
+
+#### What Survives Intact
+
+The falsification does NOT touch:
+
+- Zone-modality discrimination (F-BRU-009, two-stage model) - INTACT
+- Zones structure judgment admissibility, not sensory labels - INTACT
+- AZC trajectory shape = scaffold fingerprint, not apparatus dynamics - INTACT
+- Scaffold uniformity vs variability determines cognitive pacing - INTACT
+
+#### The Corrected Relationship
+
+| Aspect | Brunschwig | Voynich |
+|--------|------------|---------|
+| Primary function | Explains **WHAT** | Enforces **WHEN** |
+| Audience | Learners / practitioners | Experts only |
+| Content | Materials, heat, moral warnings | Legality, transitions, recoverability |
+| Silence | On enforcement | On explanation |
+| Alignment level | Curriculum trajectory | Curriculum trajectory |
+| **NOT aligned** | Interface timing | Interface timing |
+
+#### Why This Strengthens the Model
+
+If the test had succeeded, we'd be forced into:
+- Implicit co-design claims
+- Hidden synchrony assumptions
+- An explanation-enforcement dual-manual model
+
+The falsification produces something cleaner:
+
+> **Voynich stands alone as an enforcement artifact.**
+
+Voynich and Brunschwig converge on:
+- The same process domain
+- The same hazard ontology
+- The same curriculum ordering
+- The same notion of completeness vs intensity
+
+...but **only at the level of control worldview**, not at the level of interface behavior.
+
+#### Final Synthesis (Corrected)
+
+> **AZC zones and scaffold families address sensory strategies indirectly by structuring judgment admissibility and cognitive pacing, not by encoding modalities. Brunschwig and Voynich align at the level of procedural ontology and curriculum trajectory, but they do not coordinate explanation and enforcement at the level of individual recipes or phases.**
+
+This formulation:
+- Respects every Tier 0-2 constraint
+- Incorporates the falsification
+- Preserves the genuine AZC/sensory insight
+- Closes the Brunschwig line of inquiry cleanly
+
+#### New Constraints
+
+**C-BOUND-01:** Voynich is not part of a fine-grained pedagogical feedback loop with Brunschwig.
+**C-BOUND-02:** The Voynich-Brunschwig relationship is maximally abstract: convergent at ontology level, independent at interface level.
+
+**Tier:** FALSIFIED (0/4) - Clean negative result, bounds relationship appropriately
+
+**Files:** phases/BC_EXPLANATION_ENFORCEMENT/, results/bc_*.json
+
+---
+
+### X.28 Recipe Triangulation Methodology: Multi-Dimensional PP Convergence (2026-01-21) - NEW
+
+**Phase:** ANIMAL_PRECISION_CORRELATION
+
+#### The Problem
+
+Previous attempts at reverse-Brunschwig mapping failed because:
+1. Single PP tokens don't discriminate (90%+ folio overlap between recipes)
+2. REGIME alone provides weak selection (only 11.9% exclusive vocabulary)
+3. Working at folio level loses record-level signal
+
+#### The Solution
+
+Multi-dimensional PP convergence at RECORD level, combined with PREFIX profile matching.
+
+#### The Pipeline
+
+```
+Brunschwig Recipe Dimensions
+       ↓
+B Folio Constraints (REGIME + PREFIX profile)
+       ↓
+Multi-dimensional Conjunction → Candidate B Folios
+       ↓
+PP Vocabulary Extraction
+       ↓
+A RECORD Convergence (3+ PP tokens)
+       ↓
+RI Token Extraction
+       ↓
+PREFIX Profile Matching → Instruction Sequence
+       ↓
+Material Identification
+```
+
+#### Key Mappings
+
+| Recipe Dimension | B Constraint | Implementation |
+|------------------|--------------|----------------|
+| fire_degree = N | REGIME_N | `regime_folio_mapping.json` |
+| e_ESCAPE in sequence | High qo ratio | `qo_ratio >= avg` |
+| AUX in sequence | High ok/ot ratio | `aux_ratio >= avg` |
+| FLOW in sequence | High da ratio | `da_ratio >= avg` |
+
+#### Worked Example: Chicken (ennen)
+
+**Input:**
+- fire_degree: 4 → REGIME_4
+- instruction_sequence: [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE]
+- Unique pattern: ESCAPE bookends + AUX (no FLOW)
+
+**4D Conjunction:**
+- REGIME_4 + high qo + high aux + low da → 1 folio (f95v1)
+- Relaxed to 5 chicken-like folios
+
+**A Record Convergence:**
+- 110 records converge to 3+ chicken folios at 2+ PP each
+- 4 records contain known animal RI tokens
+
+**PREFIX Profile Matching:**
+| RI Token | Has ESCAPE PP? | Has AUX PP? | Chicken Match? |
+|----------|----------------|-------------|----------------|
+| teold | YES (t=88% qo) | NO | Partial |
+| chald | YES (fch=74% qo) | NO | Partial |
+| **eoschso** | YES (ke,keo) | **YES (ch=48%)** | **FULL** |
+| eyd | weak | weak | No |
+
+**Result:** Only **eoschso** has BOTH escape AND aux PP, matching chicken's unique [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE] pattern.
+
+**Conclusion:** eoschso = ennen (chicken) [Tier 3 hypothesis]
+
+#### Critical Constraints
+
+**DO:**
+- Use multi-dimensional conjunction for B folio selection
+- Require 3+ PP convergence at RECORD level (not folio)
+- Match PREFIX profiles to instruction patterns
+- Compare against Brunschwig sequences for identification
+
+**DO NOT:**
+- Use single PP tokens for discrimination
+- Work at folio level (90%+ overlap)
+- Skip PREFIX profile matching
+- Assume REGIME alone discriminates
+
+#### Constraint Implications
+
+Refines C384 (no entry-level A-B coupling):
+> "Single PP tokens do not establish entry-level coupling, but multi-dimensional PP convergence combined with PREFIX profile matching can identify specific A records."
+
+#### Status
+
+- **Validated:** Animal material class (chicken identification)
+- **Pending:** Plant materials (rose water), other animal refinement
+- **Tier:** 3 (requires Brunschwig alignment for interpretation)
+
+**Files:**
+- Methodology: `context/SPECULATIVE/recipe_triangulation_methodology.md`
+- Results: `phases/ANIMAL_PRECISION_CORRELATION/results/`
+- Scripts: `phases/ANIMAL_PRECISION_CORRELATION/scripts/`
+
 
 ---
 
@@ -3914,8 +5004,8 @@ This is mechanism characterization within established epistemological boundaries
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.0"
-  date: "2026-01-13"
+  version: "1.1"
+  date: "2026-01-19"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -4021,13 +5111,46 @@ morphology:
     essentiality: "Primary discriminator (402 unique distinctions)"
     entropy: "6.70 bits (65.6% of maximum)"
     incompatibility_rate: "95.7% of pairs are illegal"  # C475
-    provenance: "C293, C423, C475"
+    two_track_structure:
+      description: "MIDDLEs divide into shared-with-B (43.4%) and registry-internal (56.6%)"
+      shared_with_b:
+        count: 268
+        substructure:  # C498.a
+          azc_mediated:
+            count: 154
+            percent: "25.0% of A vocabulary"
+            role: "True pipeline participation: A→AZC→B constraint propagation"
+            breakdown:
+              universal: 17  # 10+ AZC folios, 48.7 B spread
+              moderate: 45   # 3-10 AZC folios, 20.1 B spread
+              restricted: 92 # 1-2 AZC folios, 6.8 B spread
+          b_native_overlap:
+            count: 114
+            percent: "18.5% of A vocabulary"
+            role: "B operational vocabulary with incidental A presence"
+            characteristics: "Zero AZC presence, B-heavy frequency (58.8% have B > 2×A)"
+            note: "NOT pipeline-participating despite A∩B membership"
+        provenance: "C498.a"
+      registry_internal:
+        count: 349
+        characteristics: "ct-prefix 5.1× enriched, suffix-less 3×, folio-localized (1.34 folios)"
+        role: "Stay in A registry, encode within-category fine distinctions"
+        interpretation: "Below granularity threshold for execution"
+      provenance: "C498, C498.a"
+    provenance: "C293, C423, C475, C498"
 
   suffix:
     count: 25
     universal_rate: "22/25 appear in 6+ prefix classes"
     function: "Decision archetype (phase-indexed)"
-    provenance: "C269, C277"
+    regime_association:
+      description: "SUFFIX associated with downstream REGIME compatibility breadth"
+      enriched_universal: ["-r"]
+      enriched_restricted: ["-ar", "-or"]
+      effect_size: "Cramér's V = 0.159"
+      note: "Associative, not causal"
+      provenance: "C495"
+    provenance: "C269, C277, C495"
 
   articulator:
     frequency: "~20% of tokens"
@@ -4104,14 +5227,20 @@ participation:
     provenance: "C484"
 
   b_relationship:
-    entry_level_coupling: false
+    token_level_coupling: false  # C384 - no context-free token->folio lookup
+    record_level_correspondence: "conditional"  # C384.a - via multi-axis constraint composition
     vocabulary_sharing: "statistical (shared domain)"
-    mapping_type: "not addressable"
+    mapping_type: "not addressable via single tokens"
+    conditional_correspondence_permitted:
+      - "multi-axis constraint composition"
+      - "AZC legality routing"
+      - "survivor-set collapse (C481)"
+      - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
       P_in_B: "8.4% (7/83 folios)"
       T_in_B: "0% (0/83 folios)"
-    provenance: "C299, C384"
+    provenance: "C299, C384, C384.a"
 
 # ============================================================
 # POSITIONAL PROPERTIES
@@ -4162,10 +5291,11 @@ positional:
 # Do not resurrect without extraordinary new evidence.
 
 disallowed:
-  - interpretation: "A entries map to B programs"
-    reason: "No entry-level coupling exists"
-    evidence: "C384 - no addressable correspondence"
+  - interpretation: "A tokens map to B folios (context-free)"
+    reason: "No token-level or context-free lookup exists"
+    evidence: "C384 - no single-token correspondence"
     status: "FALSIFIED"
+    note: "Record-level correspondence via constraint collapse IS permitted (C384.a)"
 
   - interpretation: "Repetition encodes quantity or ratio"
     reason: "Magnitude has no downstream effect"
@@ -4243,6 +5373,8 @@ provenance:
     - "C466"  # PREFIX function
     - "C467"  # PREFIX function
     - "C475"  # MIDDLE incompatibility
+    - "C495"  # SUFFIX-REGIME association
+    - "C498"  # Registry-internal vocabulary track
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -4477,13 +5609,18 @@ role_taxonomy:
       provenance: "C121"
 
     AUXILIARY:
-      function: "Support operations"
-      class_count: 8
-      provenance: "C121"
-      # BCI refinement (2026-01-18): AUXILIARY roles are execution-critical
-      # infrastructure that mediate kernel access. They are redundant internally
-      # (collapsible per C411) but must never be pruned by AZC vocabulary filtering.
-      # See C396.a and TIER3/b_execution_infrastructure_characterization.md
+      function: "Execution scaffold / support operations"
+      class_count: 20
+      token_share: "25.8% of B"
+      provenance: "C121, AUX_COOCCURRENCE audit (2026-01-22)"
+      # AUXILIARY is a thick, AZC-conditioned execution infrastructure layer.
+      # 20 classes: 1-6, 15-22, 24-29 (verified via class_token_map.json)
+      # Dominated by classes 28, 29, 24 (~49% of AUXILIARY tokens).
+      # Internally redundant (per C411) but mutually compatible, not alternatives.
+      # 97.4% of class pairs co-occur; no pair is mutually exclusive under AZC.
+      # At Jaccard 0.7, all 20 classes cluster together (functional coherence).
+      # Survival stratification (28%-100%) reflects A-record MIDDLE availability,
+      # not functional importance. Classes 21, 22 always survive (universal MIDDLEs).
 
     FREQUENT_OPERATOR:
       function: "Common instructions"
@@ -5130,6 +6267,14 @@ transformations:
     effect: "Operational conditions represented categorically"
     provenance: "C469"
 
+  vocabulary_legality:
+    mechanism: "A-record MIDDLEs define B legality directly"
+    expansion: false  # AZC does NOT expand vocabulary beyond A specification
+    effect: "Only tokens with MIDDLEs present in the A record are legal for B execution"
+    filtering_magnitude: "~80% of B vocabulary filtered per A context (~96 of 480 tokens legal)"
+    note: "AZC provides compatibility grouping and escape modulation, not vocabulary expansion"
+    provenance: "C481, C502"
+
   content_invariants:
     - "No movement of tokens"
     - "No selection"
@@ -5245,6 +6390,10 @@ disallowed:
   - interpretation: "AZC decides dynamically"
     reason: "Ambient legality field, not decision engine"
     provenance: "F-AZC-015"
+
+  - interpretation: "AZC expands vocabulary beyond A specification"
+    reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B execution."
+    provenance: "C481, C502"
 
 # ============================================================
 # NON-NORMATIVE ANNOTATIONS
@@ -5534,6 +6683,15 @@ propagation:
     mechanism: "Grammar paths are silently constrained"
     provenance: "C444, C468"
 
+  vocabulary_scope:
+    statement: "B vocabulary is restricted to A-record MIDDLEs only"
+    mechanism: "Tokens with MIDDLEs not in the A record are illegal (vanish)"
+    expansion: false  # AZC does NOT expand vocabulary beyond A specification
+    filtering_magnitude: "~80% of B vocabulary filtered per A context"
+    effect: "Different A records make different B folios viable"
+    note: "Viability is emergent from vocabulary restriction, not intentional selection"
+    provenance: "C481, C502"
+
 # ============================================================
 # B RECEPTION ARCHITECTURE (what receives AZC output)
 # ============================================================
@@ -5660,6 +6818,10 @@ disallowed:
   - interpretation: "Numeric thresholds are contractual"
     reason: "Thresholds are empirical observations, not rules"
     provenance: "C469"
+
+  - interpretation: "AZC expands B vocabulary beyond A specification"
+    reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B."
+    provenance: "C481, C502"
 
 # ============================================================
 # NON-NORMATIVE ANNOTATIONS

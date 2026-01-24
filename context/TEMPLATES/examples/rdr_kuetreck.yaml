@@ -1,0 +1,128 @@
+# Recipe Decomposition Record: Küetreck (Cow Dung)
+# Filled example demonstrating the RDR format
+
+---
+identification:
+  recipe_name_original: "Küetreck"
+  recipe_name_english: "Cow dung"
+  source_text: "Brunschwig, Liber de arte distillandi"
+  page_reference: "TBD - needs verification"
+  material_class: "animal"
+  material_specific: "cow dung (fresh)"
+
+fire_regime:
+  degree: 4
+  degree_evidence: "Fourth degree fire required for animal materials per Brunschwig classification"
+  intensity_notes: "Requires precise temperature control; animal materials decompose at wrong temperature"
+
+sensory_monitoring:
+  sound:
+    required: true
+    indicators: ["bubbling", "change in boiling intensity"]
+    evidence: "TBD - need to verify if Brunschwig mentions auditory cues"
+
+  sight:
+    required: true
+    indicators: ["vapor color", "liquid clarity", "residue appearance"]
+    evidence: "TBD - visual inspection typical in distillation"
+
+  smell:
+    required: true
+    indicators: ["characteristic odor change", "sulfur notes", "completion smell"]
+    evidence: "Animal materials have distinctive odor progression during distillation"
+    # NOTE: Smell is UNMAPPED in Voynich constraints - this is a gap
+
+  touch:
+    required: false
+    indicators: []
+    evidence: ""
+
+  taste:
+    required: false
+    indicators: []
+    evidence: ""
+
+timing:
+  precision_required: true
+  time_references: ["TBD - need exact quotes"]
+  sequence_critical: true
+  evidence: "Two-stage process requires precise timing between stages"
+
+process:
+  stage_count: 2
+  stages:
+    - "Initial distillation to separate volatile components"
+    - "Secondary distillation for purification"
+  equipment: ["alembic", "furnace", "receiving vessel"]
+  # NOTE: Stage count and equipment have NO Voynich mapping
+
+restrictions:
+  forbidden_actions: ["overheating (destroys active principles)", "incomplete distillation"]
+  safety_warnings: ["noxious fumes", "fire hazard with organic material"]
+  failure_modes: ["charring", "loss of volatile components", "contamination"]
+  evidence: "TBD"
+
+output:
+  product_type: "distilled water of cow dung"
+  quality_markers: ["clarity", "characteristic mild odor"]
+  uses:
+    - "Medicinal applications (9+ listed in Brunschwig)"
+    - "External treatments"
+    - "Internal preparations"
+  yield_notes: "TBD"
+
+raw_quotes:
+  key_passages: []  # To be filled with actual Brunschwig quotes
+  ambiguous_passages: []
+
+---
+# DERIVED VOYNICH CONSTRAINTS
+
+derived_constraints:
+  regime_mapping:
+    target_regime: "REGIME_4"
+    confidence: "high"
+    notes: "4th degree fire maps directly to REGIME_4 per C494"
+
+  zone_affinity:
+    r_zone_expected: true       # Sound monitoring (bubbling)
+    p_zone_expected: true       # Sight monitoring (vapor, clarity)
+    s_zone_expected: false
+    confidence: "medium"
+    notes: "Sound and sight both required; smell is unmapped gap"
+
+  execution_profile:
+    escape_expected: "low"
+    recovery_latitude: "constrained"
+    notes: "Precision process = low escape (0.52x for REGIME_4 per C443)"
+
+  registry_filter:
+    material_class: "animal"
+    ri_token_expected: true
+    prefix_enrichment: ["da", "ok", "ct"]
+    notes: "REGIME_4 shows da/ok/ct PREFIX enrichment; animal class constrains RI tokens"
+
+# TRIANGULATION VECTOR
+triangulation_vector:
+  regime: 4
+  zone_r: true
+  zone_p: true
+  zone_s: false
+  material_class: "animal"
+  precision_level: "high"
+
+analysis_notes: |
+  Key uncertainties:
+  1. Smell monitoring is required but UNMAPPED - this is information loss
+  2. 2-stage structure has no Voynich correlate
+  3. Need to verify actual Brunschwig quotes for sound/sight evidence
+
+  Triangulation should use:
+  - REGIME_4 (25 folios)
+  - R-zone enriched MIDDLEs (sound)
+  - P-zone enriched MIDDLEs (sight)
+  - Animal-class RI tokens
+  - Low escape architecture
+
+analyst: "Claude (example)"
+date: "2026-01-21"

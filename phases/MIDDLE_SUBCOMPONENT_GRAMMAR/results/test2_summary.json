@@ -1,0 +1,43 @@
+{
+  "singletons_count": 979,
+  "repeaters_count": 400,
+  "derivational_repeaters": 324,
+  "productivity_stats": {
+    "n_analyzed": 244,
+    "mean_ratio": 12.67,
+    "median_ratio": 5.86,
+    "above_1": 219,
+    "above_2": 184
+  },
+  "correlation": {
+    "freq_vs_productivity_rho": 0.211,
+    "freq_vs_productivity_p": 0.0009
+  },
+  "stratification": {
+    "H": {
+      "singletons": 663,
+      "repeaters": 279,
+      "derivation_relationships": 2790,
+      "derivation_pct": 420.8
+    },
+    "P": {
+      "singletons": 384,
+      "repeaters": 143,
+      "derivation_relationships": 1101,
+      "derivation_pct": 286.7
+    },
+    "T": {
+      "singletons": 204,
+      "repeaters": 61,
+      "derivation_relationships": 337,
+      "derivation_pct": 165.2
+    }
+  },
+  "pass_criteria": {
+    "mean_threshold": 1.5,
+    "median_threshold": 1.0,
+    "observed_mean": 12.67,
+    "observed_median": 5.86,
+    "passed": true
+  }
+}

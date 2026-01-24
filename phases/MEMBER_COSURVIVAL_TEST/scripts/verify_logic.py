@@ -1,3 +1,12 @@
+"""
+SUPERSEDED: This script uses the WRONG union-based model.
+See verify_strict.py for the correct strict interpretation (C502).
+
+The union model (~463 survivors, 96%) was REJECTED.
+The strict model (~96 survivors, 20%) was VALIDATED against C481.
+
+This file retained for historical reference only.
+"""
 """Verify the survivor logic with a specific example."""
 import json
 import pandas as pd
