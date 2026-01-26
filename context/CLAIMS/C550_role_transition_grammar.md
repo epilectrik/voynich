@@ -1,12 +1,12 @@
 # C550: Role Transition Grammar
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+**Tier:** 2 | **Status:** CLOSED | **Scope:** B | **Re-verified:** FQ_ANATOMY (MAGNITUDES_SHIFTED)
 
 ---
 
 ## Statement
 
-> Instruction class roles exhibit non-random transition probabilities. Self-transitions are enriched for all semantic roles (FREQUENT 2.38x, FLOW 2.11x, ENERGY 1.35x), while FLOW and FREQUENT show bidirectional affinity (1.54-1.73x). ENERGY operators avoid transitioning to other roles (0.71-0.80x depletion to FLOW, FREQUENT, UNCLASSIFIED).
+> Instruction class roles exhibit non-random transition probabilities. Self-transitions are enriched for all semantic roles (FREQUENT 1.44x, FLOW 2.08x, ENERGY 1.22x), while FLOW and FREQUENT show bidirectional affinity (1.34-1.38x). ENERGY operators show mild transition preference asymmetry. *(Re-verified with corrected FQ={9,13,14,23}; see Re-Verification section below.)*
 
 ---
 
@@ -55,7 +55,7 @@
 
 Roles exhibit **phrasal behavior** - they cluster into multi-token sequences rather than mixing randomly. The hierarchy (FREQ > FLOW > ENERGY) suggests:
 
-- **FREQUENT operators** (Class 9, 20, 21, 23): Form extended sequences, possibly representing repeated operations
+- **FREQUENT operators** (Class 9, 13, 14, 23): Form sequences, representing repeated operations
 - **FLOW operators** (Class 7, 30, 38, 40): Chain together for extended flow control
 - **ENERGY operators** (Class 8, 31-34, 36): Self-chain when thermally active
 
@@ -94,6 +94,27 @@ REGIME_1 shows elevated EN->EN chaining (1.20x). Combined with C547 (qo-chain en
 - **Phase:** CLASS_SEMANTIC_VALIDATION
 - **Date:** 2026-01-25
 - **Script:** role_transition_matrix.py
+
+---
+
+## Re-Verification (FQ_ANATOMY, 2026-01-26)
+
+**Verdict:** MAGNITUDES_SHIFTED — directional patterns preserved, magnitudes weaker.
+
+C559 used FQ={9,20,21,23} (~580 tokens, 5.6%). Correct FQ={9,13,14,23} (~2890 tokens, 12.5%) per C583/C592. Old FQ included AX_FINAL classes 20,21, inflating self-transition enrichment.
+
+| Metric | Old (FQ={9,20,21,23}) | New (FQ={9,13,14,23}) | Change |
+|--------|----------------------|----------------------|--------|
+| FQ self-transition | **2.38x** | **1.44x** | -40% magnitude |
+| FL→FQ | **1.73x** | **1.34x** | -23% magnitude |
+| FQ→FL | **1.54x** | **1.38x** | -10% magnitude |
+| EN→FQ | 0.71x | 0.94x | Depletion nearly vanishes |
+| FQ→EN | 0.74x | 0.95x | Depletion nearly vanishes |
+| FQ baseline | 5.6% | 12.5% | +123% |
+
+**Directions preserved:** FQ still self-chains (1.44x), FL-FQ still bidirectionally enriched (1.34-1.38x). **Magnitude reduction** is expected — old FQ was artificially small with AX_FINAL classes that had extreme self-chaining. EN→FQ avoidance (0.71x) nearly disappears (0.94x) because FQ is now much larger.
+
+**Source:** `phases/FQ_ANATOMY/scripts/fq_upstream_reverify.py`
 
 ---
 

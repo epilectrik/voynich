@@ -1,0 +1,383 @@
+{
+  "definitive_en_classes": [
+    8,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "definitive_en_count": 18,
+  "en_token_total": 7211,
+  "en_pct_of_b": 31.22,
+  "b_total": 23096,
+  "taxonomy_comparison": {
+    "bcsc_count": 11,
+    "icc_count": 18,
+    "csv_count": 6,
+    "icc_classes": [
+      8,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "csv_classes": [
+      8,
+      31,
+      32,
+      33,
+      34,
+      36
+    ],
+    "icc_only": [
+      35,
+      37,
+      39,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "shared": [
+      8,
+      31,
+      32,
+      33,
+      34,
+      36
+    ]
+  },
+  "prefix_families": {
+    "QO": [
+      32,
+      33,
+      36,
+      44,
+      45,
+      46,
+      49
+    ],
+    "CH_SH": [
+      8,
+      31,
+      34,
+      35,
+      37,
+      39,
+      42,
+      43,
+      47,
+      48
+    ],
+    "MINOR": [
+      41
+    ]
+  },
+  "per_class": {
+    "8": {
+      "types": 3,
+      "tokens": 1006,
+      "pct_of_en": 13.95,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 2,
+        "sh": 1
+      }
+    },
+    "31": {
+      "types": 12,
+      "tokens": 869,
+      "pct_of_en": 12.05,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 7,
+        "sh": 5
+      }
+    },
+    "32": {
+      "types": 7,
+      "tokens": 762,
+      "pct_of_en": 10.57,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 7
+      }
+    },
+    "33": {
+      "types": 13,
+      "tokens": 1759,
+      "pct_of_en": 24.39,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 13
+      }
+    },
+    "34": {
+      "types": 19,
+      "tokens": 1093,
+      "pct_of_en": 15.16,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 12,
+        "sh": 7
+      }
+    },
+    "35": {
+      "types": 12,
+      "tokens": 257,
+      "pct_of_en": 3.56,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 8,
+        "sh": 4
+      }
+    },
+    "36": {
+      "types": 8,
+      "tokens": 243,
+      "pct_of_en": 3.37,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 8
+      }
+    },
+    "37": {
+      "types": 8,
+      "tokens": 52,
+      "pct_of_en": 0.72,
+      "family": "CH_SH",
+      "dominant_prefix": "sh",
+      "prefix_distribution": {
+        "ch": 3,
+        "sh": 5
+      }
+    },
+    "39": {
+      "types": 17,
+      "tokens": 208,
+      "pct_of_en": 2.88,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 10,
+        "sh": 5,
+        "qo": 2
+      }
+    },
+    "41": {
+      "types": 6,
+      "tokens": 71,
+      "pct_of_en": 0.98,
+      "family": "MINOR",
+      "dominant_prefix": "NONE",
+      "prefix_distribution": {
+        "NONE": 2,
+        "ch": 2,
+        "sh": 1,
+        "qo": 1
+      }
+    },
+    "42": {
+      "types": 7,
+      "tokens": 43,
+      "pct_of_en": 0.6,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 5,
+        "sh": 2
+      }
+    },
+    "43": {
+      "types": 15,
+      "tokens": 108,
+      "pct_of_en": 1.5,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 11,
+        "sh": 4
+      }
+    },
+    "44": {
+      "types": 7,
+      "tokens": 43,
+      "pct_of_en": 0.6,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 7
+      }
+    },
+    "45": {
+      "types": 6,
+      "tokens": 33,
+      "pct_of_en": 0.46,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 6
+      }
+    },
+    "46": {
+      "types": 8,
+      "tokens": 206,
+      "pct_of_en": 2.86,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 8
+      }
+    },
+    "47": {
+      "types": 11,
+      "tokens": 236,
+      "pct_of_en": 3.27,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 7,
+        "sh": 4
+      }
+    },
+    "48": {
+      "types": 9,
+      "tokens": 98,
+      "pct_of_en": 1.36,
+      "family": "CH_SH",
+      "dominant_prefix": "ch",
+      "prefix_distribution": {
+        "ch": 7,
+        "sh": 2
+      }
+    },
+    "49": {
+      "types": 11,
+      "tokens": 124,
+      "pct_of_en": 1.72,
+      "family": "QO",
+      "dominant_prefix": "qo",
+      "prefix_distribution": {
+        "qo": 11
+      }
+    }
+  },
+  "core_vs_minor": {
+    "core_classes": [
+      8,
+      31,
+      32,
+      33,
+      34,
+      36
+    ],
+    "core_tokens": 5732,
+    "core_pct": 79.49,
+    "minor_tokens": 1479,
+    "minor_pct": 20.51
+  },
+  "middle_inventory": {
+    "total_middles": 64,
+    "pp_count": 64,
+    "pp_pct": 100.0,
+    "ri_count": 0,
+    "ri_pct": 0.0,
+    "b_exclusive_count": 0,
+    "b_exclusive_pct": 0.0,
+    "en_exclusive_count": 30,
+    "en_exclusive_middles": [
+      "an",
+      "ct",
+      "eck",
+      "ect",
+      "eek",
+      "ek",
+      "eod",
+      "et",
+      "ka",
+      "kai",
+      "kc",
+      "kch",
+      "ke",
+      "kec",
+      "keed",
+      "keeo",
+      "keo",
+      "oct",
+      "ok",
+      "okc",
+      "ot",
+      "otc",
+      "pc",
+      "pch",
+      "qo",
+      "tc",
+      "tch",
+      "tcho",
+      "te",
+      "teo"
+    ],
+    "cross_role_sharing": {
+      "AX": {
+        "shared": 34,
+        "jaccard": 0.3908
+      },
+      "CC": {
+        "shared": 2,
+        "jaccard": 0.0308
+      },
+      "FL": {
+        "shared": 9,
+        "jaccard": 0.125
+      },
+      "FQ": {
+        "shared": 15,
+        "jaccard": 0.2344
+      }
+    },
+    "inter_family": {
+      "qo_middles": 25,
+      "chsh_middles": 43,
+      "shared": 8,
+      "jaccard": 0.1333
+    }
+  }
+}

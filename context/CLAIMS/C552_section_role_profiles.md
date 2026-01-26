@@ -1,6 +1,6 @@
 # C552: Section-Specific Role Profiles
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+**Tier:** 2 | **Status:** CLOSED | **Scope:** B | **Re-verified:** FQ_ANATOMY (MAGNITUDES_SHIFTED)
 
 ---
 
@@ -121,6 +121,23 @@ The 1.76x ENERGY ratio between BIO (45.2%) and HERBAL_B (25.7%) suggests BIO sec
 - **Phase:** CLASS_SEMANTIC_VALIDATION
 - **Date:** 2026-01-25
 - **Script:** section_specialists.py
+
+---
+
+## Re-Verification (FQ_ANATOMY, 2026-01-26)
+
+**Verdict:** MAGNITUDES_SHIFTED — FQ baseline rises from 5.6% to 12.5%, recalibrating all section enrichments.
+
+| Section | Old FQ% | New FQ% | Old Enrichment | New Enrichment |
+|---------|---------|---------|----------------|----------------|
+| HERBAL_B | 9.1% | 16.3% | 1.62x | 1.31x |
+| PHARMA | 7.4% | 9.8% | 1.31x | 0.79x |
+| BIO | 4.8% | 10.2% | 0.85x | 0.82x |
+| RECIPE_B | 5.3% | 13.1% | 0.94x | 1.04x |
+
+**Key change:** PHARMA FQ enrichment flips from 1.31x (enriched) to 0.79x (depleted). Old FQ included AX_FINAL classes which were PHARMA-enriched. Corrected FQ is PHARMA-depleted, consistent with PHARMA being flow-dominated (C555). HERBAL_B remains the FQ-enriched section but at reduced magnitude.
+
+**Source:** `phases/FQ_ANATOMY/scripts/fq_upstream_reverify.py`
 
 ---
 

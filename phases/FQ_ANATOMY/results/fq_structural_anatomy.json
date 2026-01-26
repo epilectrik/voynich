@@ -1,0 +1,288 @@
+{
+  "morphological_partition": {
+    "bare_classes": [
+      9,
+      23
+    ],
+    "prefixed_classes": [
+      13,
+      14
+    ],
+    "bare_n": 992,
+    "prefixed_n": 1898,
+    "tests": {
+      "position": {
+        "U": 929674.0,
+        "p": 0.58140502629706,
+        "r": 0.0125,
+        "bare_mean": 0.5489,
+        "pref_mean": 0.5617,
+        "significant": "False"
+      },
+      "initial_rate": {
+        "U": 974864.0,
+        "p": 5.011279111326411e-06,
+        "r": -0.0355,
+        "bare_mean": 0.0645,
+        "pref_mean": 0.029,
+        "significant": "True"
+      },
+      "final_rate": {
+        "U": 993311.0,
+        "p": 1.7576968625532849e-06,
+        "r": -0.0551,
+        "bare_mean": 0.1321,
+        "pref_mean": 0.0769,
+        "significant": "True"
+      },
+      "token_length": {
+        "U": 143208.0,
+        "p": 0.0,
+        "r": 0.8479,
+        "bare_mean": 2.4788,
+        "pref_mean": 4.8161,
+        "significant": "True"
+      }
+    },
+    "hazard_overlap": true
+  },
+  "positional_partition": {
+    "medial_classes": [
+      9,
+      13
+    ],
+    "final_classes": [
+      14,
+      23
+    ],
+    "medial_n": 1821,
+    "final_n": 1069,
+    "tests": {
+      "position": {
+        "U": 779026.5,
+        "p": 2.739471594319442e-19,
+        "r": 0.1996,
+        "med_mean": 0.5209,
+        "fin_mean": 0.6192,
+        "significant": "True"
+      },
+      "initial_rate": {
+        "U": 960345.0,
+        "p": 0.08160583982704603,
+        "r": 0.0133,
+        "med_mean": 0.0362,
+        "fin_mean": 0.0496,
+        "significant": "False"
+      },
+      "final_rate": {
+        "U": 851166.0,
+        "p": 1.8968114007070139e-28,
+        "r": 0.1255,
+        "med_mean": 0.0494,
+        "fin_mean": 0.1749,
+        "significant": "True"
+      },
+      "token_length": {
+        "U": 1616320.0,
+        "p": 1.0422213297456912e-205,
+        "r": -0.6606,
+        "med_mean": 4.5881,
+        "fin_mean": 3.0355,
+        "significant": "True"
+      }
+    }
+  },
+  "partition_comparison": {
+    "morph_sum_r": 0.951,
+    "pos_sum_r": 0.999,
+    "primary": "POSITIONAL"
+  },
+  "pca": {
+    "n_features": 16,
+    "variance_explained": [
+      0.6417,
+      0.2823,
+      0.076
+    ],
+    "cumulative": [
+      0.6417,
+      0.924,
+      1.0
+    ],
+    "pc1_loadings": {
+      "final_rate": -0.3118,
+      "section_RECIPE_B": 0.3075,
+      "self_chain_rate": 0.3071,
+      "section_PHARMA": -0.2992,
+      "regime_REGIME_1": -0.295
+    },
+    "pc2_loadings": {
+      "prefix_rate": -0.3889,
+      "section_HERBAL_B": 0.3822,
+      "suffix_rate": -0.3733,
+      "mean_token_length": -0.3701,
+      "regime_entropy": -0.3082
+    },
+    "projections": {
+      "9": [
+        2.9553,
+        2.9843
+      ],
+      "13": [
+        1.9806,
+        -2.9206
+      ],
+      "14": [
+        0.381,
+        -0.5921
+      ],
+      "23": [
+        -5.3168,
+        0.5284
+      ]
+    },
+    "pc1_aligns_with": "POSITION",
+    "morph_separation": 2.3616,
+    "pos_separation": 4.9358
+  },
+  "clustering": {
+    "k2": {
+      "cluster_1": [
+        9,
+        13,
+        14
+      ],
+      "cluster_2": [
+        23
+      ],
+      "recovers_morph": false,
+      "recovers_pos": false,
+      "silhouette": 0.5069
+    },
+    "k3": {
+      "clusters": {
+        "2": [
+          9
+        ],
+        "1": [
+          13,
+          14
+        ],
+        "3": [
+          23
+        ]
+      },
+      "recovers_trio": true,
+      "silhouette": 0.6809
+    }
+  },
+  "comparison_13_14": {
+    "middle_jaccard": 0.0,
+    "middles_13": [
+      "aiin",
+      "ain",
+      "e",
+      "edy",
+      "eey",
+      "eol"
+    ],
+    "middles_14": [
+      "al",
+      "am",
+      "ar",
+      "ey",
+      "ol",
+      "or",
+      "y"
+    ],
+    "middles_shared": [],
+    "suffix_test": "fisher_exact",
+    "suffix_p": 4.0391103167796036e-48,
+    "suffix_13": 0.1818,
+    "suffix_14": 0.0,
+    "context_js": 0.008496,
+    "positional_p": 1.560004733904811e-10,
+    "mean_13": 0.53,
+    "mean_14": 0.6151,
+    "js_regime": 0.0018,
+    "js_section": 0.0051,
+    "prefix_dist_13": {
+      "ot": 534,
+      "ok": 657
+    },
+    "prefix_dist_14": {
+      "ot": 405,
+      "ok": 302
+    }
+  },
+  "verdict": {
+    "winner": "3G_TRIO",
+    "description": "Three-way split (better silhouette and interpretive coherence)",
+    "primary_dimension": "POSITIONAL",
+    "candidates": {
+      "2G_MORPHOLOGICAL": {
+        "groups": [
+          [
+            9,
+            23
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "labels": [
+          "BARE",
+          "PREFIXED"
+        ],
+        "sig_features": 3,
+        "sum_r": 0.951,
+        "hazard_aligned": true,
+        "cluster_aligned": false
+      },
+      "2G_POSITIONAL": {
+        "groups": [
+          [
+            9,
+            13
+          ],
+          [
+            14,
+            23
+          ]
+        ],
+        "labels": [
+          "MEDIAL",
+          "FINAL"
+        ],
+        "sig_features": 3,
+        "sum_r": 0.999,
+        "hazard_aligned": false,
+        "cluster_aligned": false
+      },
+      "3G_TRIO": {
+        "groups": [
+          [
+            9
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            23
+          ]
+        ],
+        "labels": [
+          "CONNECTOR",
+          "PREFIXED_PAIR",
+          "CLOSER"
+        ],
+        "cluster_aligned": true,
+        "silhouette": 0.6809337163192473
+      }
+    },
+    "silhouette_k2": 0.5069,
+    "silhouette_k3": 0.6809
+  }
+}

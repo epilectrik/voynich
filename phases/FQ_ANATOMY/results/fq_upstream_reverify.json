@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "phase": "FQ_ANATOMY",
+    "date": "2026-01-26",
+    "old_fq": [
+      9,
+      20,
+      21,
+      23
+    ],
+    "new_fq": [
+      9,
+      13,
+      14,
+      23
+    ]
+  },
+  "C550": {
+    "old": {
+      "FQ_self": 2.38,
+      "FL_FQ": 1.731,
+      "FQ_FL": 1.536,
+      "EN_FQ": 0.712,
+      "FQ_rate": 5.63,
+      "note": "FQ={9,20,21,23}"
+    },
+    "new": {
+      "FQ_self": 1.437,
+      "FL_FQ": 1.335,
+      "FQ_FL": 1.378,
+      "EN_FQ": 0.944,
+      "FQ_rate": 12.51,
+      "full_enrichment": {
+        "CC": {
+          "CC": 1.235,
+          "EN": 1.186,
+          "FL": 0.985,
+          "FQ": 1.098,
+          "AX": 0.849,
+          "UN": 0.816
+        },
+        "EN": {
+          "CC": 0.972,
+          "EN": 1.223,
+          "FL": 0.809,
+          "FQ": 0.944,
+          "AX": 0.96,
+          "UN": 0.842
+        },
+        "FL": {
+          "CC": 1.132,
+          "EN": 0.834,
+          "FL": 2.076,
+          "FQ": 1.335,
+          "AX": 0.902,
+          "UN": 0.924
+        },
+        "FQ": {
+          "CC": 0.95,
+          "EN": 0.95,
+          "FL": 1.378,
+          "FQ": 1.437,
+          "AX": 0.939,
+          "UN": 0.862
+        },
+        "AX": {
+          "CC": 1.015,
+          "EN": 1.043,
+          "FL": 1.016,
+          "FQ": 1.048,
+          "AX": 1.031,
+          "UN": 0.914
+        },
+        "UN": {
+          "CC": 0.926,
+          "EN": 0.961,
+          "FL": 0.979,
+          "FQ": 1.029,
+          "AX": 0.876,
+          "UN": 1.109
+        }
+      },
+      "note": "FQ={9,13,14,23}"
+    },
+    "changes": {
+      "FQ->FQ": {
+        "old": 2.38,
+        "new": 1.437
+      },
+      "FL->FQ": {
+        "old": 1.731,
+        "new": 1.335
+      },
+      "FQ->FL": {
+        "old": 1.536,
+        "new": 1.378
+      },
+      "EN->FQ": {
+        "old": 0.712,
+        "new": 0.944
+      },
+      "FQ->EN": {
+        "old": 0.735,
+        "new": 0.95
+      },
+      "CC->FQ": {
+        "old": 1.067,
+        "new": 1.098
+      },
+      "AX->FQ": {
+        "old": 0.962,
+        "new": 1.048
+      }
+    },
+    "verdict": "MAGNITUDES_SHIFTED"
+  },
+  "C551": {
+    "old": {
+      "mean_evenness": 0.9113,
+      "universal_fraction": "4/4",
+      "per_class": {
+        "9": 0.8778,
+        "20": 0.9067,
+        "21": 0.9215,
+        "23": 0.9392
+      }
+    },
+    "new": {
+      "mean_evenness": 0.916,
+      "universal_fraction": "4/4",
+      "per_class": {
+        "9": 0.8778,
+        "13": 0.9234,
+        "14": 0.9238,
+        "23": 0.9392
+      }
+    },
+    "verdict": "UNCHANGED"
+  },
+  "C552": {
+    "old": {
+      "fq_baseline": 5.63,
+      "per_section": {
+        "HERBAL_A": 0,
+        "HERBAL_B": 9.12,
+        "PHARMA": 7.37,
+        "BIO": 4.79,
+        "RECIPE_A": 0,
+        "RECIPE_B": 5.29
+      }
+    },
+    "new": {
+      "fq_baseline": 12.51,
+      "per_section": {
+        "HERBAL_A": 0,
+        "HERBAL_B": 16.34,
+        "PHARMA": 9.83,
+        "BIO": 10.2,
+        "RECIPE_A": 0,
+        "RECIPE_B": 13.05
+      }
+    },
+    "verdict": "MAGNITUDES_SHIFTED"
+  },
+  "C556": {
+    "old": {
+      "FQ_initial_enrichment": 0.697,
+      "FQ_final_enrichment": 1.665,
+      "FQ_n": 1301,
+      "note": "FQ={9,20,21,23}"
+    },
+    "new": {
+      "FQ_initial_enrichment": 0.393,
+      "FQ_final_enrichment": 0.915,
+      "FQ_n": 2890,
+      "all_roles": {
+        "CC": {
+          "initial_enrichment": 1.157,
+          "final_enrichment": 0.849
+        },
+        "EN": {
+          "initial_enrichment": 0.439,
+          "final_enrichment": 0.569
+        },
+        "FL": {
+          "initial_enrichment": 0.799,
+          "final_enrichment": 1.178
+        },
+        "FQ": {
+          "initial_enrichment": 0.393,
+          "final_enrichment": 0.915
+        },
+        "AX": {
+          "initial_enrichment": 1.536,
+          "final_enrichment": 1.115
+        },
+        "UN": {
+          "initial_enrichment": 1.545,
+          "final_enrichment": 1.419
+        }
+      },
+      "note": "FQ={9,13,14,23}"
+    },
+    "verdict": "DIRECTION_SHIFTED"
+  }
+}

@@ -3,6 +3,7 @@
 **Tier:** 2 (Structural Inference)
 **Phase:** AX_FUNCTIONAL_ANATOMY
 **Scope:** Currier B grammar / vocabulary architecture
+**Status:** VALIDATED (re-verified 2026-01-26 with 19 AX classes)
 
 ## Claim
 
@@ -10,11 +11,11 @@ AUXILIARY (AX) instruction classes use the same MIDDLEs as operational roles (EN
 
 ## Evidence
 
-- 57 unique MIDDLEs across 20 AX classes
+- 57 unique MIDDLEs across 19 AX classes
 - 56/57 (98.2%) are PP (Pipeline-Participating, shared with Currier A)
 - 41/57 (71.9%) also appear in non-AX instruction classes
 - AX-EN overlap: 36 MIDDLEs (Jaccard = 0.400)
-- AX-FQ overlap: 15 MIDDLEs (Jaccard = 0.263)
+- AX-FQ overlap: 19 MIDDLEs (Jaccard = 0.333)
 - AX-FL overlap: 7 MIDDLEs (Jaccard = 0.123)
 - AX-CC overlap: 6 MIDDLEs (Jaccard = 0.103)
 - 16 MIDDLEs (28.1%) are AX-exclusive

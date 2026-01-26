@@ -1,0 +1,439 @@
+{
+  "total_corpus_hazards": 19,
+  "hazard_class_counts": {
+    "PHASE_ORDERING": 9,
+    "CONTAINMENT_TIMING": 5,
+    "RATE_MISMATCH": 2,
+    "COMPOSITION_JUMP": 3
+  },
+  "role_involvement": {
+    "EN": 16,
+    "FL": 11,
+    "FQ": 11
+  },
+  "class_involvement": {
+    "9": 10,
+    "8": 8,
+    "31": 8,
+    "30": 7,
+    "7": 4,
+    "23": 1
+  },
+  "direction": {
+    "source": {
+      "EN": 5,
+      "FL": 9,
+      "FQ": 5
+    },
+    "target": {
+      "EN": 11,
+      "FQ": 6,
+      "FL": 2
+    }
+  },
+  "neighborhood_roles": {
+    "AX": 20,
+    "EN": 33,
+    "FQ": 6,
+    "CC": 3,
+    "FL": 3
+  },
+  "section_hazard_rates": {
+    "HERBAL": {
+      "hazards": 3,
+      "tokens": 2687,
+      "rate_per_1000": 1.116
+    },
+    "PHARMA": {
+      "hazards": 0,
+      "tokens": 529,
+      "rate_per_1000": 0.0
+    },
+    "BIO": {
+      "hazards": 10,
+      "tokens": 6850,
+      "rate_per_1000": 1.46
+    },
+    "RECIPE": {
+      "hazards": 6,
+      "tokens": 13030,
+      "rate_per_1000": 0.46
+    }
+  },
+  "class_hazard_distances": {
+    "23": {
+      "n": 4,
+      "mean": 3.5,
+      "median": 2.5,
+      "is_hazard_class": true,
+      "role": "FQ"
+    },
+    "14": {
+      "n": 7,
+      "mean": 4.714,
+      "median": 5.0,
+      "is_hazard_class": false,
+      "role": "FQ"
+    },
+    "13": {
+      "n": 6,
+      "mean": 5.667,
+      "median": 6.5,
+      "is_hazard_class": false,
+      "role": "FQ"
+    },
+    "9": {
+      "n": 19,
+      "mean": 1.947,
+      "median": 0.0,
+      "is_hazard_class": true,
+      "role": "FQ"
+    },
+    "30": {
+      "n": 11,
+      "mean": 0.727,
+      "median": 0.0,
+      "is_hazard_class": true,
+      "role": "FL"
+    },
+    "7": {
+      "n": 4,
+      "mean": 0.0,
+      "median": 0.0,
+      "is_hazard_class": true,
+      "role": "FL"
+    }
+  },
+  "per_class_hazard_profiles": {
+    "31": {
+      "hazard_types": [
+        "PHASE_ORDERING"
+      ],
+      "hazard_tokens": [
+        "chey",
+        "shey"
+      ],
+      "transition_count": 6,
+      "role": "EN",
+      "is_fl_or_fq": false
+    },
+    "9": {
+      "hazard_types": [
+        "COMPOSITION_JUMP",
+        "CONTAINMENT_TIMING",
+        "PHASE_ORDERING"
+      ],
+      "hazard_tokens": [
+        "aiin",
+        "o",
+        "or"
+      ],
+      "transition_count": 6,
+      "role": "FQ",
+      "is_fl_or_fq": true
+    },
+    "7": {
+      "hazard_types": [
+        "PHASE_ORDERING",
+        "RATE_MISMATCH"
+      ],
+      "hazard_tokens": [
+        "al",
+        "ar"
+      ],
+      "transition_count": 2,
+      "role": "FL",
+      "is_fl_or_fq": true
+    },
+    "23": {
+      "hazard_types": [
+        "CONTAINMENT_TIMING",
+        "PHASE_ORDERING"
+      ],
+      "hazard_tokens": [
+        "dy",
+        "l",
+        "r"
+      ],
+      "transition_count": 4,
+      "role": "FQ",
+      "is_fl_or_fq": true
+    },
+    "8": {
+      "hazard_types": [
+        "COMPOSITION_JUMP",
+        "CONTAINMENT_TIMING",
+        "PHASE_ORDERING"
+      ],
+      "hazard_tokens": [
+        "chedy",
+        "chol",
+        "shedy"
+      ],
+      "transition_count": 7,
+      "role": "EN",
+      "is_fl_or_fq": false
+    },
+    "30": {
+      "hazard_types": [
+        "CONTAINMENT_TIMING",
+        "RATE_MISMATCH"
+      ],
+      "hazard_tokens": [
+        "dal"
+      ],
+      "transition_count": 2,
+      "role": "FL",
+      "is_fl_or_fq": true
+    }
+  },
+  "hazard_events_sample": [
+    {
+      "folio": "f34v",
+      "line": "7",
+      "pos": 1,
+      "token_a": "chedy",
+      "token_b": "chey",
+      "class_a": 8,
+      "class_b": 31,
+      "role_a": "EN",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "HERBAL"
+    },
+    {
+      "folio": "f39v",
+      "line": "4",
+      "pos": 9,
+      "token_a": "dal",
+      "token_b": "or",
+      "class_a": 30,
+      "class_b": 9,
+      "role_a": "FL",
+      "role_b": "FQ",
+      "hazard_class": "CONTAINMENT_TIMING",
+      "section": "HERBAL"
+    },
+    {
+      "folio": "f39v",
+      "line": "9",
+      "pos": 2,
+      "token_a": "dal",
+      "token_b": "ar",
+      "class_a": 30,
+      "class_b": 7,
+      "role_a": "FL",
+      "role_b": "FL",
+      "hazard_class": "RATE_MISMATCH",
+      "section": "HERBAL"
+    },
+    {
+      "folio": "f75r",
+      "line": "31",
+      "pos": 4,
+      "token_a": "shedy",
+      "token_b": "chey",
+      "class_a": 8,
+      "class_b": 31,
+      "role_a": "EN",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f76r",
+      "line": "6",
+      "pos": 5,
+      "token_a": "shedy",
+      "token_b": "chey",
+      "class_a": 8,
+      "class_b": 31,
+      "role_a": "EN",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f76r",
+      "line": "45",
+      "pos": 0,
+      "token_a": "dal",
+      "token_b": "or",
+      "class_a": 30,
+      "class_b": 9,
+      "role_a": "FL",
+      "role_b": "FQ",
+      "hazard_class": "CONTAINMENT_TIMING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f76v",
+      "line": "40",
+      "pos": 4,
+      "token_a": "shedy",
+      "token_b": "chey",
+      "class_a": 8,
+      "class_b": 31,
+      "role_a": "EN",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f76v",
+      "line": "41",
+      "pos": 7,
+      "token_a": "aiin",
+      "token_b": "shedy",
+      "class_a": 9,
+      "class_b": 8,
+      "role_a": "FQ",
+      "role_b": "EN",
+      "hazard_class": "COMPOSITION_JUMP",
+      "section": "BIO"
+    },
+    {
+      "folio": "f78r",
+      "line": "13",
+      "pos": 4,
+      "token_a": "dal",
+      "token_b": "or",
+      "class_a": 30,
+      "class_b": 9,
+      "role_a": "FL",
+      "role_b": "FQ",
+      "hazard_class": "CONTAINMENT_TIMING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f79r",
+      "line": "19",
+      "pos": 5,
+      "token_a": "al",
+      "token_b": "shey",
+      "class_a": 7,
+      "class_b": 31,
+      "role_a": "FL",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f80v",
+      "line": "22",
+      "pos": 4,
+      "token_a": "dal",
+      "token_b": "or",
+      "class_a": 30,
+      "class_b": 9,
+      "role_a": "FL",
+      "role_b": "FQ",
+      "hazard_class": "CONTAINMENT_TIMING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f83v",
+      "line": "27",
+      "pos": 2,
+      "token_a": "shedy",
+      "token_b": "chey",
+      "class_a": 8,
+      "class_b": 31,
+      "role_a": "EN",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "BIO"
+    },
+    {
+      "folio": "f84r",
+      "line": "24",
+      "pos": 4,
+      "token_a": "aiin",
+      "token_b": "shedy",
+      "class_a": 9,
+      "class_b": 8,
+      "role_a": "FQ",
+      "role_b": "EN",
+      "hazard_class": "COMPOSITION_JUMP",
+      "section": "BIO"
+    },
+    {
+      "folio": "f86v5",
+      "line": "5",
+      "pos": 8,
+      "token_a": "dal",
+      "token_b": "ar",
+      "class_a": 30,
+      "class_b": 7,
+      "role_a": "FL",
+      "role_b": "FL",
+      "hazard_class": "RATE_MISMATCH",
+      "section": "RECIPE"
+    },
+    {
+      "folio": "f86v3",
+      "line": "11",
+      "pos": 2,
+      "token_a": "dal",
+      "token_b": "or",
+      "class_a": 30,
+      "class_b": 9,
+      "role_a": "FL",
+      "role_b": "FQ",
+      "hazard_class": "CONTAINMENT_TIMING",
+      "section": "RECIPE"
+    },
+    {
+      "folio": "f86v3",
+      "line": "13",
+      "pos": 9,
+      "token_a": "aiin",
+      "token_b": "dy",
+      "class_a": 9,
+      "class_b": 23,
+      "role_a": "FQ",
+      "role_b": "FQ",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "RECIPE"
+    },
+    {
+      "folio": "f107r",
+      "line": "2",
+      "pos": 2,
+      "token_a": "aiin",
+      "token_b": "shedy",
+      "class_a": 9,
+      "class_b": 8,
+      "role_a": "FQ",
+      "role_b": "EN",
+      "hazard_class": "COMPOSITION_JUMP",
+      "section": "RECIPE"
+    },
+    {
+      "folio": "f111v",
+      "line": "10",
+      "pos": 6,
+      "token_a": "aiin",
+      "token_b": "shey",
+      "class_a": 9,
+      "class_b": 31,
+      "role_a": "FQ",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "RECIPE"
+    },
+    {
+      "folio": "f116r",
+      "line": "45",
+      "pos": 1,
+      "token_a": "al",
+      "token_b": "shey",
+      "class_a": 7,
+      "class_b": 31,
+      "role_a": "FL",
+      "role_b": "EN",
+      "hazard_class": "PHASE_ORDERING",
+      "section": "RECIPE"
+    }
+  ]
+}

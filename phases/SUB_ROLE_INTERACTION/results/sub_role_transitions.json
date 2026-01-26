@@ -1,0 +1,1288 @@
+{
+  "master_matrix": {
+    "total_pairs": 20676,
+    "matrix": {
+      "EN_QO": {
+        "EN_CHSH": 733,
+        "AX_MED": 225,
+        "EN_QO": 480,
+        "UN": 717,
+        "FL_HAZ": 102,
+        "FQ_PAIR": 322,
+        "FQ_CONN": 39,
+        "AX_INIT": 114,
+        "FQ_CLOSER": 37,
+        "EN_MINOR": 7,
+        "AX_FINAL": 77,
+        "CC_OL": 59,
+        "CC_DAIIN": 38,
+        "FL_SAFE": 12,
+        "CC_OL_D": 41
+      },
+      "EN_CHSH": {
+        "AX_MED": 388,
+        "UN": 1018,
+        "EN_QO": 912,
+        "FQ_CLOSER": 43,
+        "EN_CHSH": 471,
+        "FQ_PAIR": 288,
+        "AX_INIT": 173,
+        "FL_HAZ": 124,
+        "CC_DAIIN": 47,
+        "AX_FINAL": 101,
+        "FQ_CONN": 74,
+        "CC_OL": 62,
+        "CC_OL_D": 37,
+        "FL_SAFE": 15,
+        "EN_MINOR": 17
+      },
+      "EN_MINOR": {
+        "FL_HAZ": 2,
+        "UN": 15,
+        "AX_INIT": 8,
+        "EN_CHSH": 9,
+        "CC_OL": 6,
+        "FQ_CONN": 5,
+        "AX_MED": 9,
+        "EN_QO": 6,
+        "FQ_PAIR": 3,
+        "CC_OL_D": 2,
+        "CC_DAIIN": 1,
+        "AX_FINAL": 1,
+        "FQ_CLOSER": 1,
+        "FL_SAFE": 1,
+        "EN_MINOR": 0
+      },
+      "FQ_CONN": {
+        "UN": 183,
+        "EN_CHSH": 125,
+        "FL_HAZ": 31,
+        "AX_MED": 43,
+        "FQ_CONN": 54,
+        "FQ_CLOSER": 16,
+        "FQ_PAIR": 74,
+        "AX_FINAL": 15,
+        "CC_OL": 12,
+        "AX_INIT": 27,
+        "EN_QO": 7,
+        "FL_SAFE": 9,
+        "CC_OL_D": 6,
+        "CC_DAIIN": 3,
+        "EN_MINOR": 2
+      },
+      "FQ_PAIR": {
+        "EN_QO": 223,
+        "EN_CHSH": 342,
+        "AX_INIT": 62,
+        "UN": 446,
+        "FQ_PAIR": 233,
+        "AX_MED": 158,
+        "FL_HAZ": 98,
+        "CC_OL": 39,
+        "CC_DAIIN": 10,
+        "AX_FINAL": 52,
+        "FQ_CONN": 28,
+        "FQ_CLOSER": 23,
+        "EN_MINOR": 6,
+        "FL_SAFE": 7,
+        "CC_OL_D": 25
+      },
+      "FQ_CLOSER": {
+        "UN": 58,
+        "EN_CHSH": 41,
+        "FL_SAFE": 2,
+        "FQ_CONN": 28,
+        "FQ_CLOSER": 5,
+        "FL_HAZ": 20,
+        "FQ_PAIR": 9,
+        "AX_FINAL": 5,
+        "AX_MED": 24,
+        "AX_INIT": 23,
+        "EN_QO": 24,
+        "CC_OL": 10,
+        "CC_OL_D": 1,
+        "CC_DAIIN": 4,
+        "EN_MINOR": 0
+      },
+      "FL_HAZ": {
+        "EN_CHSH": 185,
+        "UN": 236,
+        "FQ_CONN": 49,
+        "AX_INIT": 36,
+        "AX_MED": 66,
+        "CC_DAIIN": 7,
+        "FQ_CLOSER": 26,
+        "EN_QO": 22,
+        "FQ_PAIR": 65,
+        "FL_HAZ": 72,
+        "CC_OL": 21,
+        "AX_FINAL": 24,
+        "FL_SAFE": 12,
+        "CC_OL_D": 14,
+        "EN_MINOR": 3
+      },
+      "FL_SAFE": {
+        "UN": 21,
+        "EN_CHSH": 8,
+        "EN_QO": 6,
+        "FQ_PAIR": 2,
+        "AX_MED": 4,
+        "FL_SAFE": 1,
+        "AX_INIT": 2,
+        "CC_DAIIN": 1,
+        "AX_FINAL": 2,
+        "FL_HAZ": 3,
+        "CC_OL_D": 1,
+        "CC_OL": 2,
+        "FQ_CONN": 1,
+        "EN_MINOR": 0,
+        "FQ_CLOSER": 0
+      },
+      "AX_INIT": {
+        "AX_INIT": 57,
+        "UN": 319,
+        "CC_OL_D": 14,
+        "EN_QO": 107,
+        "FQ_CLOSER": 22,
+        "CC_DAIIN": 9,
+        "EN_CHSH": 239,
+        "FL_HAZ": 44,
+        "FQ_PAIR": 58,
+        "FQ_CONN": 52,
+        "CC_OL": 25,
+        "AX_FINAL": 37,
+        "AX_MED": 103,
+        "FL_SAFE": 11,
+        "EN_MINOR": 2
+      },
+      "AX_MED": {
+        "FQ_CLOSER": 25,
+        "EN_CHSH": 378,
+        "EN_QO": 257,
+        "UN": 528,
+        "AX_MED": 186,
+        "AX_FINAL": 54,
+        "FL_HAZ": 77,
+        "FQ_PAIR": 186,
+        "FQ_CONN": 37,
+        "CC_DAIIN": 19,
+        "FL_SAFE": 13,
+        "CC_OL": 40,
+        "AX_INIT": 77,
+        "CC_OL_D": 28,
+        "EN_MINOR": 5
+      },
+      "AX_FINAL": {
+        "FL_SAFE": 4,
+        "AX_FINAL": 19,
+        "AX_INIT": 21,
+        "FQ_CONN": 23,
+        "UN": 101,
+        "FQ_CLOSER": 12,
+        "FQ_PAIR": 31,
+        "AX_MED": 31,
+        "FL_HAZ": 22,
+        "EN_CHSH": 89,
+        "CC_OL_D": 3,
+        "CC_OL": 12,
+        "EN_QO": 22,
+        "CC_DAIIN": 3,
+        "EN_MINOR": 0
+      },
+      "CC_DAIIN": {
+        "UN": 81,
+        "EN_CHSH": 103,
+        "FQ_PAIR": 33,
+        "EN_QO": 9,
+        "FQ_CLOSER": 4,
+        "FL_HAZ": 19,
+        "FQ_CONN": 6,
+        "EN_MINOR": 3,
+        "CC_DAIIN": 3,
+        "CC_OL": 6,
+        "CC_OL_D": 5,
+        "AX_INIT": 4,
+        "AX_FINAL": 6,
+        "AX_MED": 6,
+        "FL_SAFE": 2
+      },
+      "CC_OL": {
+        "FQ_PAIR": 21,
+        "AX_FINAL": 18,
+        "UN": 79,
+        "FL_HAZ": 14,
+        "CC_DAIIN": 5,
+        "EN_CHSH": 126,
+        "CC_OL_D": 7,
+        "FL_SAFE": 2,
+        "FQ_CONN": 17,
+        "AX_MED": 49,
+        "AX_INIT": 15,
+        "FQ_CLOSER": 9,
+        "CC_OL": 7,
+        "EN_QO": 10,
+        "EN_MINOR": 2
+      },
+      "CC_OL_D": {
+        "UN": 72,
+        "FQ_PAIR": 30,
+        "EN_CHSH": 38,
+        "AX_FINAL": 5,
+        "EN_QO": 54,
+        "FQ_CONN": 3,
+        "CC_DAIIN": 2,
+        "AX_INIT": 7,
+        "EN_MINOR": 2,
+        "CC_OL_D": 8,
+        "AX_MED": 22,
+        "CC_OL": 8,
+        "FL_HAZ": 5,
+        "FQ_CLOSER": 5,
+        "FL_SAFE": 0
+      },
+      "UN": {
+        "UN": 2028,
+        "AX_INIT": 266,
+        "EN_CHSH": 981,
+        "AX_FINAL": 145,
+        "FQ_CLOSER": 90,
+        "CC_DAIIN": 77,
+        "EN_QO": 806,
+        "CC_OL": 91,
+        "FQ_PAIR": 488,
+        "FQ_CONN": 194,
+        "AX_MED": 465,
+        "FL_HAZ": 243,
+        "EN_MINOR": 16,
+        "FL_SAFE": 27,
+        "CC_OL_D": 78
+      }
+    },
+    "row_totals": {
+      "EN_QO": 3003,
+      "EN_CHSH": 3770,
+      "EN_MINOR": 69,
+      "FQ_CONN": 607,
+      "FQ_PAIR": 1752,
+      "FQ_CLOSER": 254,
+      "FL_HAZ": 838,
+      "FL_SAFE": 54,
+      "AX_INIT": 1099,
+      "AX_MED": 1910,
+      "AX_FINAL": 393,
+      "CC_DAIIN": 290,
+      "CC_OL": 381,
+      "CC_OL_D": 261,
+      "UN": 5995
+    },
+    "col_totals": {
+      "EN_QO": 2945,
+      "EN_CHSH": 3868,
+      "EN_MINOR": 65,
+      "FQ_CONN": 610,
+      "FQ_PAIR": 1843,
+      "FQ_CLOSER": 318,
+      "FL_HAZ": 876,
+      "FL_SAFE": 118,
+      "AX_INIT": 892,
+      "AX_MED": 1779,
+      "AX_FINAL": 561,
+      "CC_DAIIN": 229,
+      "CC_OL": 400,
+      "CC_OL_D": 270,
+      "UN": 5902
+    }
+  },
+  "cross_role_pairs": {
+    "AX->EN": {
+      "question": "AX scaffolding -> EN families",
+      "total": 1099,
+      "src_subgroups": [
+        "AX_INIT",
+        "AX_MED",
+        "AX_FINAL"
+      ],
+      "dst_subgroups": [
+        "EN_QO",
+        "EN_CHSH",
+        "EN_MINOR"
+      ],
+      "observed": [
+        [
+          107,
+          239,
+          2
+        ],
+        [
+          257,
+          378,
+          5
+        ],
+        [
+          22,
+          89,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          122.22747952684259,
+          223.55595996360327,
+          2.21656050955414
+        ],
+        [
+          224.78616924476796,
+          411.1373976342129,
+          4.076433121019108
+        ],
+        [
+          38.986351228389445,
+          71.3066424021838,
+          0.7070063694267515
+        ]
+      ],
+      "enrichment": [
+        [
+          0.8754168900005955,
+          1.0690835531242877,
+          0.9022988505747127
+        ],
+        [
+          1.1433087759067357,
+          0.9194006728045326,
+          1.2265625
+        ],
+        [
+          0.5643000513466835,
+          1.2481305668274507,
+          0.0
+        ]
+      ],
+      "chi2": 22.98001793333247,
+      "p": 0.00012779541096324428,
+      "dof": 4,
+      "test_type": "chi2_sparse",
+      "significant_raw": true,
+      "significant_bonferroni": true,
+      "min_expected": 0.7070063694267515
+    },
+    "EN->AX": {
+      "question": "EN families -> AX positions",
+      "total": 1096,
+      "src_subgroups": [
+        "EN_QO",
+        "EN_CHSH",
+        "EN_MINOR"
+      ],
+      "dst_subgroups": [
+        "AX_INIT",
+        "AX_MED",
+        "AX_FINAL"
+      ],
+      "observed": [
+        [
+          114,
+          225,
+          77
+        ],
+        [
+          173,
+          388,
+          101
+        ],
+        [
+          8,
+          9,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          111.97080291970804,
+          236.08759124087592,
+          67.94160583941606
+        ],
+        [
+          178.18430656934308,
+          375.6970802919708,
+          108.11861313868613
+        ],
+        [
+          4.844890510948905,
+          10.215328467153284,
+          2.93978102189781
+        ]
+      ],
+      "enrichment": [
+        [
+          1.018122555410691,
+          0.9530361117981696,
+          1.1333261710356684
+        ],
+        [
+          0.9709048082339085,
+          1.0327469132804228,
+          0.934159226316056
+        ],
+        [
+          1.6512241054613936,
+          0.8810289389067524,
+          0.34016139044072
+        ]
+      ],
+      "chi2": 6.2668423606379156,
+      "p": 0.18008690423472468,
+      "dof": 4,
+      "test_type": "chi2_sparse",
+      "significant_raw": false,
+      "significant_bonferroni": false,
+      "min_expected": 2.93978102189781
+    },
+    "AX->FQ": {
+      "question": "AX scaffolding -> FQ sub-groups",
+      "total": 446,
+      "src_subgroups": [
+        "AX_INIT",
+        "AX_MED",
+        "AX_FINAL"
+      ],
+      "dst_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "observed": [
+        [
+          52,
+          58,
+          22
+        ],
+        [
+          37,
+          186,
+          25
+        ],
+        [
+          23,
+          31,
+          12
+        ]
+      ],
+      "expected": [
+        [
+          33.14798206278027,
+          81.39013452914799,
+          17.46188340807175
+        ],
+        [
+          62.2780269058296,
+          152.91479820627802,
+          32.80717488789238
+        ],
+        [
+          16.573991031390136,
+          40.69506726457399,
+          8.730941704035875
+        ]
+      ],
+      "enrichment": [
+        [
+          1.5687229437229435,
+          0.7126170798898072,
+          1.2598870056497176
+        ],
+        [
+          0.5941100230414746,
+          1.2163636363636363,
+          0.7620284308365226
+        ],
+        [
+          1.38771645021645,
+          0.761763085399449,
+          1.37442218798151
+        ]
+      ],
+      "chi2": 43.924516076719065,
+      "p": 6.651615196191935e-09,
+      "dof": 4,
+      "test_type": "chi2",
+      "significant_raw": true,
+      "significant_bonferroni": true,
+      "min_expected": 8.730941704035875
+    },
+    "FQ->AX": {
+      "question": "FQ sub-groups -> AX positions",
+      "total": 409,
+      "src_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "dst_subgroups": [
+        "AX_INIT",
+        "AX_MED",
+        "AX_FINAL"
+      ],
+      "observed": [
+        [
+          27,
+          43,
+          15
+        ],
+        [
+          62,
+          158,
+          52
+        ],
+        [
+          23,
+          24,
+          5
+        ]
+      ],
+      "expected": [
+        [
+          23.276283618581907,
+          46.76039119804401,
+          14.963325183374083
+        ],
+        [
+          74.4841075794621,
+          149.63325183374084,
+          47.882640586797066
+        ],
+        [
+          14.23960880195599,
+          28.60635696821516,
+          9.15403422982885
+        ]
+      ],
+      "enrichment": [
+        [
+          1.1599789915966388,
+          0.9195816993464052,
+          1.0024509803921569
+        ],
+        [
+          0.8323923319327731,
+          1.0559150326797384,
+          1.0859885620915033
+        ],
+        [
+          1.6152129120879122,
+          0.8389743589743589,
+          0.546207264957265
+        ]
+      ],
+      "chi2": 11.828833441068737,
+      "p": 0.018670545406585443,
+      "dof": 4,
+      "test_type": "chi2",
+      "significant_raw": true,
+      "significant_bonferroni": false,
+      "min_expected": 9.15403422982885
+    },
+    "EN->FQ": {
+      "question": "EN families -> FQ sub-groups",
+      "total": 812,
+      "src_subgroups": [
+        "EN_QO",
+        "EN_CHSH",
+        "EN_MINOR"
+      ],
+      "dst_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "observed": [
+        [
+          39,
+          322,
+          37
+        ],
+        [
+          74,
+          288,
+          43
+        ],
+        [
+          5,
+          3,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          57.83743842364532,
+          300.4605911330049,
+          39.70197044334975
+        ],
+        [
+          58.854679802955665,
+          305.7450738916256,
+          40.40024630541872
+        ],
+        [
+          1.3078817733990147,
+          6.794334975369458,
+          0.8977832512315271
+        ]
+      ],
+      "enrichment": [
+        [
+          0.6743037219998297,
+          1.0716879667505554,
+          0.9319436689620945
+        ],
+        [
+          1.2573341703285206,
+          0.9419612108029726,
+          1.0643499466544735
+        ],
+        [
+          3.8229755178907725,
+          0.4415443175638934,
+          1.1138545953360768
+        ]
+      ],
+      "chi2": 25.5112563624603,
+      "p": 3.9699176300055996e-05,
+      "dof": 4,
+      "test_type": "chi2_sparse",
+      "significant_raw": true,
+      "significant_bonferroni": true,
+      "min_expected": 0.8977832512315271
+    },
+    "FQ->EN": {
+      "question": "FQ sub-groups -> EN families",
+      "total": 770,
+      "src_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "dst_subgroups": [
+        "EN_QO",
+        "EN_CHSH",
+        "EN_MINOR"
+      ],
+      "observed": [
+        [
+          7,
+          125,
+          2
+        ],
+        [
+          223,
+          342,
+          6
+        ],
+        [
+          24,
+          41,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          44.202597402597405,
+          88.40519480519481,
+          1.3922077922077922
+        ],
+        [
+          188.35584415584415,
+          376.7116883116883,
+          5.932467532467532
+        ],
+        [
+          21.441558441558442,
+          42.883116883116884,
+          0.6753246753246753
+        ]
+      ],
+      "enrichment": [
+        [
+          0.158361734633917,
+          1.4139440592314019,
+          1.4365671641791045
+        ],
+        [
+          1.1839292855468373,
+          0.9078560889170815,
+          1.01138353765324
+        ],
+        [
+          1.1193216232586312,
+          0.9560872198667474,
+          0.0
+        ]
+      ],
+      "chi2": 57.3592831599707,
+      "p": 1.0400364753907587e-11,
+      "dof": 4,
+      "test_type": "chi2_sparse",
+      "significant_raw": true,
+      "significant_bonferroni": true,
+      "min_expected": 0.6753246753246753
+    },
+    "FQ->FL": {
+      "question": "FQ sub-groups -> FL hazard/safe",
+      "total": 167,
+      "src_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "dst_subgroups": [
+        "FL_HAZ",
+        "FL_SAFE"
+      ],
+      "observed": [
+        [
+          31,
+          9
+        ],
+        [
+          98,
+          7
+        ],
+        [
+          20,
+          2
+        ]
+      ],
+      "expected": [
+        [
+          35.68862275449102,
+          4.311377245508982
+        ],
+        [
+          93.68263473053892,
+          11.317365269461078
+        ],
+        [
+          19.62874251497006,
+          2.37125748502994
+        ]
+      ],
+      "enrichment": [
+        [
+          0.8686241610738255,
+          2.0875
+        ],
+        [
+          1.0460850111856823,
+          0.6185185185185185
+        ],
+        [
+          1.018913971934106,
+          0.8434343434343434
+        ]
+      ],
+      "chi2": 7.625957844665898,
+      "p": 0.02208229942582924,
+      "dof": 2,
+      "test_type": "chi2_sparse",
+      "significant_raw": true,
+      "significant_bonferroni": false,
+      "min_expected": 2.37125748502994
+    },
+    "FL->FQ": {
+      "question": "FL hazard/safe -> FQ sub-groups",
+      "total": 143,
+      "src_subgroups": [
+        "FL_HAZ",
+        "FL_SAFE"
+      ],
+      "dst_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "observed": [
+        [
+          49,
+          65,
+          26
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          48.95104895104895,
+          65.5944055944056,
+          25.454545454545453
+        ],
+        [
+          1.048951048951049,
+          1.4055944055944056,
+          0.5454545454545454
+        ]
+      ],
+      "enrichment": [
+        [
+          1.001,
+          0.9909381663113005,
+          1.0214285714285716
+        ],
+        [
+          0.9533333333333334,
+          1.4228855721393034,
+          0.0
+        ]
+      ],
+      "chi2": 0.8162281449893392,
+      "p": 0.6649030273491576,
+      "dof": 2,
+      "test_type": "chi2_sparse",
+      "significant_raw": false,
+      "significant_bonferroni": false,
+      "min_expected": 0.5454545454545454
+    },
+    "CC->EN": {
+      "question": "CC triggers -> EN families",
+      "total": 347,
+      "src_subgroups": [
+        "CC_DAIIN",
+        "CC_OL",
+        "CC_OL_D"
+      ],
+      "dst_subgroups": [
+        "EN_QO",
+        "EN_CHSH",
+        "EN_MINOR"
+      ],
+      "observed": [
+        [
+          9,
+          103,
+          3
+        ],
+        [
+          10,
+          126,
+          2
+        ],
+        [
+          54,
+          38,
+          2
+        ]
+      ],
+      "expected": [
+        [
+          24.19308357348703,
+          88.48703170028818,
+          2.319884726224784
+        ],
+        [
+          29.03170028818444,
+          106.18443804034582,
+          2.7838616714697406
+        ],
+        [
+          19.77521613832853,
+          72.32853025936599,
+          1.8962536023054755
+        ]
+      ],
+      "enrichment": [
+        [
+          0.37200714711137584,
+          1.1640123758345546,
+          1.293167701863354
+        ],
+        [
+          0.3444510621401628,
+          1.1866145578895946,
+          0.7184265010351967
+        ],
+        [
+          2.730690760711163,
+          0.5253805084070444,
+          1.0547112462006079
+        ]
+      ],
+      "chi2": 104.04682294838419,
+      "p": 1.3520325065405542e-21,
+      "dof": 4,
+      "test_type": "chi2_sparse",
+      "significant_raw": true,
+      "significant_bonferroni": true,
+      "min_expected": 1.8962536023054755
+    },
+    "CC->FQ": {
+      "question": "CC triggers -> FQ sub-groups",
+      "total": 128,
+      "src_subgroups": [
+        "CC_DAIIN",
+        "CC_OL",
+        "CC_OL_D"
+      ],
+      "dst_subgroups": [
+        "FQ_CONN",
+        "FQ_PAIR",
+        "FQ_CLOSER"
+      ],
+      "observed": [
+        [
+          6,
+          33,
+          4
+        ],
+        [
+          17,
+          21,
+          9
+        ],
+        [
+          3,
+          30,
+          5
+        ]
+      ],
+      "expected": [
+        [
+          8.734375,
+          28.21875,
+          6.046875
+        ],
+        [
+          9.546875,
+          30.84375,
+          6.609375
+        ],
+        [
+          7.71875,
+          24.9375,
+          5.34375
+        ]
+      ],
+      "enrichment": [
+        [
+          0.6869409660107334,
+          1.169435215946844,
+          0.661498708010336
+        ],
+        [
+          1.7806873977086743,
+          0.6808510638297872,
+          1.3617021276595744
+        ],
+        [
+          0.38866396761133604,
+          1.2030075187969924,
+          0.935672514619883
+        ]
+      ],
+      "chi2": 16.118460044603957,
+      "p": 0.002864258165504346,
+      "dof": 4,
+      "test_type": "chi2",
+      "significant_raw": true,
+      "significant_bonferroni": false,
+      "min_expected": 5.34375
+    }
+  },
+  "symmetry": {
+    "AX<->EN": {
+      "asymmetric_count": 2,
+      "asymmetric_pairs": [
+        {
+          "pair": "AX_INIT<->EN_MINOR",
+          "fwd": 0.902,
+          "rev": 1.651,
+          "ratio": 1.83
+        },
+        {
+          "pair": "AX_FINAL<->EN_QO",
+          "fwd": 0.564,
+          "rev": 1.133,
+          "ratio": 2.008
+        }
+      ]
+    },
+    "AX<->FQ": {
+      "asymmetric_count": 2,
+      "asymmetric_pairs": [
+        {
+          "pair": "AX_MED<->FQ_CONN",
+          "fwd": 0.594,
+          "rev": 0.92,
+          "ratio": 1.548
+        },
+        {
+          "pair": "AX_FINAL<->FQ_CLOSER",
+          "fwd": 1.374,
+          "rev": 0.546,
+          "ratio": 2.516
+        }
+      ]
+    },
+    "EN<->FQ": {
+      "asymmetric_count": 3,
+      "asymmetric_pairs": [
+        {
+          "pair": "EN_QO<->FQ_CONN",
+          "fwd": 0.674,
+          "rev": 0.158,
+          "ratio": 4.258
+        },
+        {
+          "pair": "EN_MINOR<->FQ_CONN",
+          "fwd": 3.823,
+          "rev": 1.437,
+          "ratio": 2.661
+        },
+        {
+          "pair": "EN_MINOR<->FQ_PAIR",
+          "fwd": 0.442,
+          "rev": 1.011,
+          "ratio": 2.291
+        }
+      ]
+    },
+    "FQ<->FL": {
+      "asymmetric_count": 2,
+      "asymmetric_pairs": [
+        {
+          "pair": "FQ_CONN<->FL_SAFE",
+          "fwd": 2.088,
+          "rev": 0.953,
+          "ratio": 2.19
+        },
+        {
+          "pair": "FQ_PAIR<->FL_SAFE",
+          "fwd": 0.619,
+          "rev": 1.423,
+          "ratio": 2.3
+        }
+      ]
+    },
+    "CC<->EN": {
+      "asymmetric_count": 0,
+      "asymmetric_pairs": []
+    }
+  },
+  "un_decomposition": {
+    "un_follows": {
+      "AX_INIT": 266,
+      "EN_CHSH": 981,
+      "AX_FINAL": 145,
+      "FQ_CLOSER": 90,
+      "CC_DAIIN": 77,
+      "EN_QO": 806,
+      "CC_OL": 91,
+      "FQ_PAIR": 488,
+      "FQ_CONN": 194,
+      "AX_MED": 465,
+      "FL_HAZ": 243,
+      "EN_MINOR": 16,
+      "FL_SAFE": 27,
+      "CC_OL_D": 78
+    },
+    "un_precedes": {
+      "AX_INIT": 319,
+      "FQ_CLOSER": 58,
+      "EN_CHSH": 1018,
+      "CC_OL_D": 72,
+      "AX_MED": 528,
+      "CC_DAIIN": 81,
+      "EN_QO": 717,
+      "FQ_CONN": 183,
+      "FL_HAZ": 236,
+      "FQ_PAIR": 446,
+      "FL_SAFE": 21,
+      "AX_FINAL": 101,
+      "CC_OL": 79,
+      "EN_MINOR": 15
+    },
+    "un_follow_enrichment": {
+      "EN_QO": 0.993,
+      "EN_CHSH": 0.963,
+      "EN_MINOR": 0.858,
+      "FQ_CONN": 1.183,
+      "FQ_PAIR": 1.031,
+      "FQ_CLOSER": 1.311,
+      "FL_HAZ": 1.073,
+      "FL_SAFE": 1.85,
+      "AX_INIT": 0.896,
+      "AX_MED": 0.901,
+      "AX_FINAL": 1.365,
+      "CC_DAIIN": 0.983,
+      "CC_OL": 0.884,
+      "CC_OL_D": 1.106
+    },
+    "un_precede_enrichment": {
+      "EN_QO": 0.905,
+      "EN_CHSH": 1.023,
+      "EN_MINOR": 0.824,
+      "FQ_CONN": 1.143,
+      "FQ_PAIR": 0.965,
+      "FQ_CLOSER": 0.865,
+      "FL_HAZ": 1.067,
+      "FL_SAFE": 1.474,
+      "AX_INIT": 1.1,
+      "AX_MED": 1.048,
+      "AX_FINAL": 0.974,
+      "CC_DAIIN": 1.058,
+      "CC_OL": 0.786,
+      "CC_OL_D": 1.045
+    }
+  },
+  "summary": {
+    "total_tested": 10,
+    "significant_raw": 8,
+    "significant_bonferroni": 5,
+    "top_enrichments": [
+      {
+        "pair": "EN->FQ",
+        "src": "EN_MINOR",
+        "dst": "FQ_CONN",
+        "enrichment": 3.8229755178907725,
+        "count": 5
+      },
+      {
+        "pair": "CC->EN",
+        "src": "CC_OL_D",
+        "dst": "EN_QO",
+        "enrichment": 2.730690760711163,
+        "count": 54
+      },
+      {
+        "pair": "FQ->FL",
+        "src": "FQ_CONN",
+        "dst": "FL_SAFE",
+        "enrichment": 2.0875,
+        "count": 9
+      },
+      {
+        "pair": "CC->FQ",
+        "src": "CC_OL",
+        "dst": "FQ_CONN",
+        "enrichment": 1.7806873977086743,
+        "count": 17
+      },
+      {
+        "pair": "EN->AX",
+        "src": "EN_MINOR",
+        "dst": "AX_INIT",
+        "enrichment": 1.6512241054613936,
+        "count": 8
+      },
+      {
+        "pair": "FQ->AX",
+        "src": "FQ_CLOSER",
+        "dst": "AX_INIT",
+        "enrichment": 1.6152129120879122,
+        "count": 23
+      },
+      {
+        "pair": "AX->FQ",
+        "src": "AX_INIT",
+        "dst": "FQ_CONN",
+        "enrichment": 1.5687229437229435,
+        "count": 52
+      },
+      {
+        "pair": "FQ->EN",
+        "src": "FQ_CONN",
+        "dst": "EN_CHSH",
+        "enrichment": 1.4139440592314019,
+        "count": 125
+      },
+      {
+        "pair": "AX->FQ",
+        "src": "AX_FINAL",
+        "dst": "FQ_CONN",
+        "enrichment": 1.38771645021645,
+        "count": 23
+      },
+      {
+        "pair": "AX->FQ",
+        "src": "AX_FINAL",
+        "dst": "FQ_CLOSER",
+        "enrichment": 1.37442218798151,
+        "count": 12
+      }
+    ],
+    "top_depletions": [
+      {
+        "pair": "FQ->EN",
+        "src": "FQ_CONN",
+        "dst": "EN_QO",
+        "enrichment": 0.158361734633917,
+        "count": 7
+      },
+      {
+        "pair": "CC->EN",
+        "src": "CC_OL",
+        "dst": "EN_QO",
+        "enrichment": 0.3444510621401628,
+        "count": 10
+      },
+      {
+        "pair": "CC->EN",
+        "src": "CC_DAIIN",
+        "dst": "EN_QO",
+        "enrichment": 0.37200714711137584,
+        "count": 9
+      },
+      {
+        "pair": "CC->EN",
+        "src": "CC_OL_D",
+        "dst": "EN_CHSH",
+        "enrichment": 0.5253805084070444,
+        "count": 38
+      },
+      {
+        "pair": "FQ->AX",
+        "src": "FQ_CLOSER",
+        "dst": "AX_FINAL",
+        "enrichment": 0.546207264957265,
+        "count": 5
+      },
+      {
+        "pair": "AX->EN",
+        "src": "AX_FINAL",
+        "dst": "EN_QO",
+        "enrichment": 0.5643000513466835,
+        "count": 22
+      },
+      {
+        "pair": "AX->FQ",
+        "src": "AX_MED",
+        "dst": "FQ_CONN",
+        "enrichment": 0.5941100230414746,
+        "count": 37
+      },
+      {
+        "pair": "FQ->FL",
+        "src": "FQ_PAIR",
+        "dst": "FL_SAFE",
+        "enrichment": 0.6185185185185185,
+        "count": 7
+      },
+      {
+        "pair": "EN->FQ",
+        "src": "EN_QO",
+        "dst": "FQ_CONN",
+        "enrichment": 0.6743037219998297,
+        "count": 39
+      },
+      {
+        "pair": "CC->FQ",
+        "src": "CC_OL",
+        "dst": "FQ_PAIR",
+        "enrichment": 0.6808510638297872,
+        "count": 21
+      }
+    ],
+    "verdict": "STRONG_CROSS_BOUNDARY_STRUCTURE"
+  }
+}
