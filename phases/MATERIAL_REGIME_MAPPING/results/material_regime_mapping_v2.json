@@ -1,0 +1,44 @@
+{
+  "animal": {
+    "n_records": 56,
+    "dominant_regime": "REGIME_4",
+    "enrichment": 1.8742857142857143,
+    "chi2_p": 0.024260579080587444,
+    "regime_distribution": {
+      "REGIME_2": 3,
+      "REGIME_4": 12,
+      "REGIME_3": 4,
+      "REGIME_1": 2
+    },
+    "mean_reception": {
+      "REGIME_3": 0.5602548480958175,
+      "REGIME_1": 0.49343897726984465,
+      "REGIME_2": 0.5257418129396005,
+      "REGIME_4": 0.6274801932601731
+    }
+  },
+  "herb": {
+    "n_records": 108,
+    "dominant_regime": "REGIME_4",
+    "enrichment": 1.8742857142857143,
+    "chi2_p": 0.010531081079357185,
+    "regime_distribution": {
+      "REGIME_2": 3,
+      "REGIME_3": 5,
+      "REGIME_4": 12,
+      "REGIME_1": 1
+    },
+    "mean_reception": {
+      "REGIME_3": 0.5430652908519407,
+      "REGIME_1": 0.4759143906167183,
+      "REGIME_2": 0.5121835298037969,
+      "REGIME_4": 0.5876527670937877
+    }
+  },
+  "baseline": {
+    "REGIME_4": 25,
+    "REGIME_2": 10,
+    "REGIME_3": 16,
+    "REGIME_1": 31
+  }
+}

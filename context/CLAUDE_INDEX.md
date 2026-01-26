@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.74 | **Status:** FROZEN | **Constraints:** 363 | **Date:** 2026-01-21
+**Version:** 2.78 | **Status:** FROZEN | **Constraints:** 389 | **Date:** 2026-01-25
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -16,7 +16,7 @@ This is not language. This is not cipher. This is a control system reference man
 
 | Metric | Value |
 |--------|-------|
-| Instruction classes | 49 (9.8x compression from 479 token types) |
+| Instruction classes (B) | 49 (9.8x compression from 479 B token types) |
 | Grammar coverage | 100% |
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
@@ -48,19 +48,40 @@ df = df[df['transcriber'] == 'H']  # PRIMARY track only
 
 ## How to Think About Tokens (Structural Layer)
 
-Within the internal structural analysis, Voynich tokens function differently than words in natural language. Understanding this prevents a common misinterpretation.
+Voynich tokens function differently than words in natural language. The manuscript has three distinct vocabulary systems:
 
-**Key principles:**
+### Vocabulary by System
 
-1. **Tokens are surface realizations, not functional operators.** At the level of grammar reconstruction, the functional behavior of a token is determined by its *instruction class*, not by the token itself. The 479 distinct token types collapse to 49 instruction classes (9.8x compression).
+| System | Unique Types | Model |
+|--------|-------------|-------|
+| **Currier B** | 479 | 49 instruction classes (9.8x compression) |
+| **Currier A** | ~2,400 | Registry entries: 609 RI + 404 PP MIDDLEs |
+| **AZC** | ~800 | Hybrid (shares with both A and B) |
+| **Full H-track** | ~12,362 | All systems combined |
 
-2. **Most tokens are interchangeable within their class.** Just as assembly language mnemonics (MOV, ADD, JMP) map to opcodes, Voynich tokens map to instruction classes. The specific token is often a surface variant; the class determines behavior.
+### Currier B: Execution Grammar
 
-3. **High hapax rates are expected, not anomalous.** Compositional morphology (PREFIX + MIDDLE + SUFFIX) generates unique surface forms naturally. A 35-39% hapax rate follows directly from productive combination, not from vocabulary size or "unknown" content.
+In B, tokens are **instruction operators**, not semantic words:
 
-4. **A token lacking special highlighting is NOT unknown.** Every token has a structural classification (instruction class, morphological decomposition, system legality). "Neutral" means "non-contrastive"—the token does not carry *additional* discriminative signal beyond its base class. It does not mean the token is unanalyzed.
+1. **479 token types collapse to 49 instruction classes.** The functional behavior is determined by instruction class, not the specific token. (C121)
 
-**Analogy:** Consider a programming language where `foo`, `bar`, and `qux` are all valid variable names. They are structurally equivalent (all identifiers), interchangeable in most contexts, and individually unremarkable. Their *function* is determined by their syntactic role, not their spelling. Voynich tokens work similarly at the structural level.
+2. **Tokens are interchangeable within their class.** Like assembly mnemonics (MOV, ADD, JMP), specific tokens are surface variants; the class determines behavior.
+
+3. **High hapax rates are expected.** Compositional morphology (PREFIX + MIDDLE + SUFFIX) generates unique surface forms naturally. 35-39% hapax rate follows from productive combination.
+
+### Currier A: Registry Vocabulary
+
+In A, tokens are **categorical entries**, not instructions:
+
+1. **MIDDLEs bifurcate into RI and PP.** Registry-Internal (609) are A-exclusive discriminators. Pipeline-Participating (404) are shared with B. (C498)
+
+2. **Token structure: [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX].** MIDDLE is the primary identity carrier; PREFIX/SUFFIX encode structural properties. (C267, C293)
+
+3. **No direct A→B token lookup.** A entries do not "translate" to B instructions. They specify constraints that filter B legality. (C384)
+
+### Key Principle
+
+**A token lacking special highlighting is NOT unknown.** Every token has structural classification (instruction class, morphological decomposition, system legality). "Neutral" means "non-contrastive"—it does not carry *additional* discriminative signal beyond its base class.
 
 ---
 
@@ -232,8 +253,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 356 |
-| Completed phases | 138 |
+| Validated constraints | 389 |
+| Completed phases | 142 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -328,4 +349,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v2.49 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-16*
+*Context System v2.53 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-25*

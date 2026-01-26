@@ -1,0 +1,171 @@
+{
+  "flow_classes": [
+    7,
+    30,
+    38,
+    40
+  ],
+  "flow_tokens": {
+    "7": [
+      "al",
+      "ar"
+    ],
+    "30": [
+      "dam",
+      "dain",
+      "dal",
+      "dar",
+      "dair"
+    ],
+    "38": [
+      "daim",
+      "aral",
+      "arody",
+      "aldy",
+      "arol",
+      "aram"
+    ],
+    "40": [
+      "dary",
+      "aly",
+      "daly",
+      "daiir",
+      "dan",
+      "ary"
+    ]
+  },
+  "token_frequencies": {
+    "ar": 248,
+    "dar": 188,
+    "al": 186,
+    "dal": 130,
+    "dain": 113,
+    "dair": 49,
+    "dam": 42,
+    "aly": 17,
+    "daly": 17,
+    "ary": 16,
+    "dary": 13,
+    "aral": 11,
+    "arody": 11,
+    "arol": 10,
+    "aram": 8,
+    "daiir": 7,
+    "aldy": 6,
+    "daim": 4,
+    "dan": 2
+  },
+  "class_positions": {
+    "7": {
+      "initial": 2,
+      "final": 43,
+      "total": 434
+    },
+    "30": {
+      "initial": 82,
+      "final": 77,
+      "total": 522
+    },
+    "38": {
+      "initial": 0,
+      "final": 26,
+      "total": 50
+    },
+    "40": {
+      "initial": 3,
+      "final": 43,
+      "total": 72
+    }
+  },
+  "role_positions": {
+    "UN": {
+      "initial": 1205,
+      "final": 1104,
+      "total": 7042
+    },
+    "AX": {
+      "initial": 741,
+      "final": 602,
+      "total": 6920
+    },
+    "EN": {
+      "initial": 282,
+      "final": 312,
+      "total": 5732
+    },
+    "FQ": {
+      "initial": 101,
+      "final": 255,
+      "total": 1301
+    },
+    "CC": {
+      "initial": 128,
+      "final": 92,
+      "total": 1023
+    },
+    "FL": {
+      "initial": 87,
+      "final": 189,
+      "total": 1078
+    }
+  },
+  "flow_by_regime": {
+    "REGIME_3": {
+      "total": 1734,
+      "flow": 80
+    },
+    "REGIME_2": {
+      "total": 6251,
+      "flow": 331
+    },
+    "REGIME_4": {
+      "total": 7350,
+      "flow": 338
+    },
+    "REGIME_1": {
+      "total": 7761,
+      "flow": 329
+    }
+  },
+  "flow_by_section": {
+    "HERBAL": {
+      "total": 2687,
+      "flow": 161
+    },
+    "PHARMA": {
+      "total": 529,
+      "flow": 34
+    },
+    "BIO": {
+      "total": 6850,
+      "flow": 264
+    },
+    "RECIPE": {
+      "total": 13030,
+      "flow": 619
+    }
+  },
+  "flow_middles": {
+    "al": 197,
+    "ar": 248,
+    "m": 42,
+    "in": 113,
+    "l": 130,
+    "r": 188,
+    "i": 49,
+    "im": 4,
+    "o": 11,
+    "dy": 6,
+    "ol": 10,
+    "am": 8,
+    "ry": 13,
+    "y": 33,
+    "ly": 17,
+    "ii": 7,
+    "n": 2
+  },
+  "flow_suffixes": {
+    "r": 56,
+    "dy": 11
+  }
+}

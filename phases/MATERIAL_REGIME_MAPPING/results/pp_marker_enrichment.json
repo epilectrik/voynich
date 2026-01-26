@@ -1,0 +1,221 @@
+{
+  "animal_enriched": [
+    {
+      "middle": "pch",
+      "animal_rate": 0.04310344827586207,
+      "herb_rate": 0.001,
+      "enrichment": 43.10344827586207,
+      "count": 5
+    },
+    {
+      "middle": "opch",
+      "animal_rate": 0.08620689655172414,
+      "herb_rate": 0.0047169811320754715,
+      "enrichment": 18.27586206896552,
+      "count": 10
+    },
+    {
+      "middle": "octh",
+      "animal_rate": 0.04310344827586207,
+      "herb_rate": 0.0047169811320754715,
+      "enrichment": 9.13793103448276,
+      "count": 5
+    },
+    {
+      "middle": "cph",
+      "animal_rate": 0.06896551724137931,
+      "herb_rate": 0.018867924528301886,
+      "enrichment": 3.6551724137931036,
+      "count": 8
+    },
+    {
+      "middle": "kch",
+      "animal_rate": 0.10344827586206896,
+      "herb_rate": 0.02830188679245283,
+      "enrichment": 3.655172413793103,
+      "count": 12
+    },
+    {
+      "middle": "ckho",
+      "animal_rate": 0.04310344827586207,
+      "herb_rate": 0.014150943396226415,
+      "enrichment": 3.045977011494253,
+      "count": 5
+    },
+    {
+      "middle": "ch",
+      "animal_rate": 0.3017241379310345,
+      "herb_rate": 0.10377358490566038,
+      "enrichment": 2.9075235109717865,
+      "count": 35
+    },
+    {
+      "middle": "ckh",
+      "animal_rate": 0.23275862068965517,
+      "herb_rate": 0.08018867924528301,
+      "enrichment": 2.9026369168357,
+      "count": 27
+    },
+    {
+      "middle": "h",
+      "animal_rate": 0.27586206896551724,
+      "herb_rate": 0.10849056603773585,
+      "enrichment": 2.542728635682159,
+      "count": 32
+    },
+    {
+      "middle": "tch",
+      "animal_rate": 0.0603448275862069,
+      "herb_rate": 0.02830188679245283,
+      "enrichment": 2.132183908045977,
+      "count": 7
+    },
+    {
+      "middle": "eol",
+      "animal_rate": 0.3275862068965517,
+      "herb_rate": 0.15566037735849056,
+      "enrichment": 2.1044932079414838,
+      "count": 38
+    }
+  ],
+  "herb_enriched": [
+    {
+      "middle": "keo",
+      "animal_rate": 0.001,
+      "herb_rate": 0.0660377358490566,
+      "enrichment": 66.0377358490566,
+      "count": 14
+    },
+    {
+      "middle": "eok",
+      "animal_rate": 0.001,
+      "herb_rate": 0.05188679245283019,
+      "enrichment": 51.88679245283019,
+      "count": 11
+    },
+    {
+      "middle": "ko",
+      "animal_rate": 0.001,
+      "herb_rate": 0.0330188679245283,
+      "enrichment": 33.0188679245283,
+      "count": 7
+    },
+    {
+      "middle": "cho",
+      "animal_rate": 0.001,
+      "herb_rate": 0.0330188679245283,
+      "enrichment": 33.0188679245283,
+      "count": 7
+    },
+    {
+      "middle": "to",
+      "animal_rate": 0.001,
+      "herb_rate": 0.0330188679245283,
+      "enrichment": 33.0188679245283,
+      "count": 7
+    },
+    {
+      "middle": "ry",
+      "animal_rate": 0.001,
+      "herb_rate": 0.02830188679245283,
+      "enrichment": 28.30188679245283,
+      "count": 6
+    },
+    {
+      "middle": "kc",
+      "animal_rate": 0.008620689655172414,
+      "herb_rate": 0.05188679245283019,
+      "enrichment": 6.018867924528302,
+      "count": 11
+    },
+    {
+      "middle": "yt",
+      "animal_rate": 0.008620689655172414,
+      "herb_rate": 0.0330188679245283,
+      "enrichment": 3.830188679245283,
+      "count": 7
+    },
+    {
+      "middle": "heo",
+      "animal_rate": 0.008620689655172414,
+      "herb_rate": 0.02830188679245283,
+      "enrichment": 3.2830188679245285,
+      "count": 6
+    },
+    {
+      "middle": "tc",
+      "animal_rate": 0.008620689655172414,
+      "herb_rate": 0.02830188679245283,
+      "enrichment": 3.2830188679245285,
+      "count": 6
+    },
+    {
+      "middle": "eo",
+      "animal_rate": 0.10344827586206896,
+      "herb_rate": 0.33962264150943394,
+      "enrichment": 3.283018867924528,
+      "count": 72
+    },
+    {
+      "middle": "eeo",
+      "animal_rate": 0.017241379310344827,
+      "herb_rate": 0.05188679245283019,
+      "enrichment": 3.009433962264151,
+      "count": 11
+    },
+    {
+      "middle": "eod",
+      "animal_rate": 0.017241379310344827,
+      "herb_rate": 0.05188679245283019,
+      "enrichment": 3.009433962264151,
+      "count": 11
+    },
+    {
+      "middle": "ct",
+      "animal_rate": 0.008620689655172414,
+      "herb_rate": 0.02358490566037736,
+      "enrichment": 2.7358490566037736,
+      "count": 5
+    },
+    {
+      "middle": "ckheo",
+      "animal_rate": 0.008620689655172414,
+      "herb_rate": 0.02358490566037736,
+      "enrichment": 2.7358490566037736,
+      "count": 5
+    },
+    {
+      "middle": "al",
+      "animal_rate": 0.034482758620689655,
+      "herb_rate": 0.08018867924528301,
+      "enrichment": 2.3254716981132075,
+      "count": 17
+    },
+    {
+      "middle": "c",
+      "animal_rate": 0.034482758620689655,
+      "herb_rate": 0.07547169811320754,
+      "enrichment": 2.188679245283019,
+      "count": 16
+    },
+    {
+      "middle": "ot",
+      "animal_rate": 0.05172413793103448,
+      "herb_rate": 0.10849056603773585,
+      "enrichment": 2.09748427672956,
+      "count": 23
+    },
+    {
+      "middle": "o",
+      "animal_rate": 0.31896551724137934,
+      "herb_rate": 0.6509433962264151,
+      "enrichment": 2.0407955124936255,
+      "count": 138
+    }
+  ],
+  "record_counts": {
+    "animal": 116,
+    "herb": 212,
+    "neutral": 1231
+  }
+}

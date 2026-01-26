@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.11 | **Date:** 2026-01-23 | **Status:** FROZEN
+**Version:** 3.12 | **Date:** 2026-01-25 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -164,15 +164,19 @@ Prefixes encode **functional type**, not semantic category:
 - Kernel-heavy vs kernel-light distinction is GLOBAL
 - Sister pairs (ch/sh, ok/ot) are **equivalent slots**, not different concepts
 
+**Positional Classes (C539):**
+- EARLY position (line-start): ENERGY prefixes (ch, sh, qo compounds) dominate (79%)
+- LATE position (line-end): V+L prefixes (al, ar, or) cluster at 3.78x enrichment
+- LATE prefixes are morphologically distinct (vowel+liquid vs consonantal) and suffix-depleted (68-70%)
+
 ### MIDDLE Function
 
 MIDDLEs are the primary vocabulary layer:
-- **1,186 distinct MIDDLEs globally** (A ∪ B union)
-- Currier A: 617 unique MIDDLEs
-- Currier B: 837 unique MIDDLEs
-- Shared (A ∩ B): 268 MIDDLEs (Jaccard = 0.226)
-- A-exclusive: 349 (56.6% of A's MIDDLEs never appear in B)
-- B-exclusive: 569 (68.0% of B's MIDDLEs never appear in A)
+- **Currier A: 1,013 unique MIDDLEs** (609 RI + 404 PP)
+- Currier B: 1,339 unique MIDDLEs (regenerated 2026-01-24)
+- Shared (A + B): 404 MIDDLEs (PP, Pipeline-Participating)
+- A-exclusive: 609 (60.1% of A's MIDDLEs never appear in B) [RI, Registry-Internal]
+- B-exclusive: 935 (69.8% of B's MIDDLEs never appear in A)
 
 **Tier 2 Interpretation:**
 > Currier A enumerates the *potential discrimination space*;
@@ -182,9 +186,9 @@ MIDDLEs are the primary vocabulary layer:
 
 | Class | Role |
 |-------|------|
-| **A-exclusive** (349) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
-| **A/B-shared** (268) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
-| **B-exclusive** (569) | Stratified: L-compound operators (49 types, line-initial) + boundary closers (-edy/-dy, line-final) + singleton cloud (80%, orthographic variants) |
+| **A-exclusive (RI)** (609) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
+| **A/B-shared (PP)** (404) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
+| **B-exclusive** (935) | Stratified: L-compound operators (49 types, line-initial) + boundary closers (-edy/-dy, line-final) + singleton cloud (80%, orthographic variants) |
 
 **B-Exclusive MIDDLE Stratification (C501):**
 
@@ -436,36 +440,63 @@ The manuscript provides **structure**; the operator supplies **meaning**:
 
 **Constraint Substitution (F-BRU-007):** When operations are dangerous (high sensory load), grammar restricts options - reducing the need for active vigilance. When operations are forgiving, grammar permits many options - requiring more discrimination and higher HT density. HT functions as residual vigilance after grammar has constrained the decision space.
 
-### Execution Infrastructure Roles (Characterized, Non-Primitive)
+### 5-Role Functional System (ICC-Validated, C547-C550)
 
-**Status:** Tier 3 structural characterization. Derivable from Tier 2 constraints (C124, C485, C411). Not a new mechanism.
+**Status:** Tier 2 validated. ICC (Intra-Class Correlation) analysis independently confirmed role boundaries, converging on the same taxonomy as the original grammar analysis.
 
-Some Currier B instruction roles are **execution-critical infrastructure**: they are required for nearly all executable programs to exist but are not grammar primitives or hazard anchors.
+Currier B's 49 classes organize into 5 functional roles:
 
-**Position in Architecture:**
-- Below kernel primitives (k, h, e)
-- Above decomposable instruction classes
-- Outside AZC vocabulary gating scope
+| Role | Function | Classes | Key Property |
+|------|----------|---------|--------------|
+| **CC** | Core Control | kernel + boundary markers | Execution boundaries, line-initial/final |
+| **EN** | Energy | 11 classes | Medial line concentration (positions 3-6) |
+| **FL** | Flow | 2 classes | Line-final hierarchy (FL > CC at end) |
+| **FQ** | Frequent | 4 classes | Common instructions, section S elevation |
+| **AX** | Auxiliary | 20 classes (28.4% of B) | PREFIX-switched scaffold layer |
 
-**Key Properties (BCI Characterization, 2026-01-18):**
+### Line Execution Syntax (C556-C562)
 
-| Property | Evidence |
-|----------|----------|
-| Near-universal B coverage | 96-100% of B folios require these roles |
-| Kernel-mediating | 70.6% cluster within 0-2 tokens of k/h/e operators |
-| Partial REGIME sensitivity | One role fully invariant; others show 6-14% spread |
-| Zone-sensitive | All thin sharply in S-zone (43% → 19% legal) |
-| Redundant | Threshold behavior at 50% availability; mutual substitutability |
+Lines are formal control blocks with **internal positional grammar**:
 
-**What These Roles Are NOT:**
-- Kernel primitives (not atomic, not forbidden-transition adjacent)
-- Semantic carriers (no material, procedure, or substance encoding)
-- Neutral vocabulary (they actively mediate control flow)
+```
+SETUP → WORK → CHECK → CLOSE
+```
+
+- ENERGY roles concentrate medially; FLOW roles concentrate at line-final
+- `daiin` marks the WORK→CHECK transition (C557)
+- `or→aiin` is the strongest role-transition bigram (C561)
+- ENERGY and FLOW are anticorrelated across sections (r = -0.89, C551)
+
+**Section Profiles (C552-C555):**
+
+| Section | Signature |
+|---------|-----------|
+| B | Highest ENERGY concentration |
+| H | Highest FLOW, lowest ENERGY |
+| C | Balanced ENERGY/FLOW, highest AX density |
+| S | Distinctive FQ elevation |
+
+Same grammar everywhere (C124); profiles reflect different operational emphases, not different grammars.
+
+### AUXILIARY Architecture (C563-C572)
+
+AX is not a separate vocabulary — it is a **scaffold MODE** of the shared pipeline vocabulary:
+
+- **Same MIDDLEs** appear as AX or operational depending on PREFIX (C571)
+- **98.2%** of AX tokens use PP MIDDLEs — shared pipeline vocabulary (C567)
+- AX tokens stratify into 3 positional sub-types: **INIT / MED / FINAL** (C563)
+- 20 classes collapse to **≤2 effective behavioral groups** (C572)
+- Position is the sole differentiator; transitions uniform, context classifier below random baseline
+
+**What AX Is NOT:**
+- Not a separate vocabulary (same MIDDLEs as operational roles)
+- Not 20 meaningfully distinct modes (behavioral collapse)
+- Not semantic carriers (no material, procedure, or substance encoding)
 
 **Interpretive Bound:**
 > These roles implement structural mediation between control primitives and contextual grammar. They do not encode semantics, materials, or procedures.
 
-**Reference:** See [TIER3/b_execution_infrastructure_characterization.md](TIER3/b_execution_infrastructure_characterization.md) for full BCI test results.
+**Reference:** See BCSC v1.2 for full structural contract; `phases/CLASS_SEMANTIC_VALIDATION/`, `phases/AUXILIARY_STRATIFICATION/`, `phases/AX_FUNCTIONAL_ANATOMY/`, `phases/AX_CLASS_BEHAVIOR/` for evidence.
 
 ---
 
@@ -501,23 +532,23 @@ See [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) for c
 Currier A MIDDLEs divide into two vocabulary tracks, with the shared track further bifurcated:
 
 ```
-A MIDDLEs (617 total)
-├── RI: Registry-Internal (349, 56.6%)
-│     A-exclusive, instance discrimination, folio-localized
-│
-└── Shared with B (268, 43.4%)
-    ├── AZC-Mediated (154, 25.0% of A vocabulary)
-    │     A→AZC→B constraint propagation
-    │     ├── Universal (17) - 10+ AZC folios
-    │     ├── Moderate (45) - 3-10 AZC folios
-    │     └── Restricted (92) - 1-2 AZC folios
-    │
-    └── B-Native Overlap (114, 18.5% of A vocabulary)
+A MIDDLEs (1,013 total)  [REGENERATED 2026-01-24 atomic-suffix parser]
++-- RI: Registry-Internal (609, 60.1%)
+|     A-exclusive, instance discrimination, folio-localized
+|     Only 7.0% of A token instances (778/11,174)
+|
++-- Shared with B (404, 39.9%)
+    +-- AZC-Mediated (~214, ~21% of A vocabulary)
+    |     A->AZC->B constraint propagation
+    |
+    +-- B-Native Overlap (~190, ~19% of A vocabulary)
           Zero AZC presence, B-dominant frequency
           Execution-layer vocabulary with incidental A appearance
 ```
 
-**Key insight (C498.a):** Only 154 MIDDLEs (25% of A vocabulary) genuinely participate in the A→AZC→B pipeline. The 114 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
+**METHODOLOGY NOTE (2026-01-24):** Regenerated with atomic-suffix parser (voynich.py). Uses atomic suffixes only, smart MIDDLE preservation, gallows-initial handling (C528). C498.a substructure estimates await re-verification with new counts.
+
+**Key insight (C498.a):** Only 214 MIDDLEs (19.8% of A vocabulary) genuinely participate in the A->AZC->B pipeline. The 198 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
 
 Registry-internal MIDDLEs encode **within-category fine distinctions** for A-registry navigation that don't propagate to B execution. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
 
@@ -1072,7 +1103,7 @@ The A→AZC→B control architecture is formally closed via four structural cont
 | CASC | `currierA.casc.yaml` | LOCKED v1.0 | Currier A registry structure |
 | AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.0 | A→AZC transformation |
 | AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.0 | AZC→B propagation |
-| BCSC | `currierB.bcsc.yaml` | LOCKED v1.0 | Currier B internal grammar |
+| BCSC | `currierB.bcsc.yaml` | LOCKED v1.2 | Currier B internal grammar |
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
 

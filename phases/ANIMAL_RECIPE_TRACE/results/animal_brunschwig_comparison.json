@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "phase": 5,
+    "description": "Animal Brunschwig comparison"
+  },
+  "hypothesis_revision": {
+    "original": "Animal A records -> REGIME_1/2 (low fire)",
+    "revised": "Animal A records -> REGIME_4 (precision control)"
+  },
+  "key_finding": "Animal materials route to PRECISION regime, not LOW-FIRE regime",
+  "brunschwig_alignment": "CONFIRMED - animal procedures require heat-sensitive handling",
+  "statistical_support": {
+    "chi_square_p": 0.00046867620765423865,
+    "anova_p": 2.088160688562722e-06,
+    "regime_4_enrichment": 2.139130434782609
+  },
+  "regime_4_characteristics": {
+    "escape_rate": 0.107,
+    "description": "Precision, tight control",
+    "brunschwig_analog": "Any degree requiring exact timing",
+    "intensity": "variable",
+    "precision": "high",
+    "monitoring_overhead": 0.25
+  },
+  "animal_procedure_requirements": {
+    "blood_distillation": {
+      "source": "Brunschwig Liber de Arte Distillandi",
+      "fire_degree": "balneum marie (gentlest)",
+      "critical_constraint": "PROTEINS DENATURE AT >60\u00b0C",
+      "requires_precision": true,
+      "requires_low_fire": true,
+      "tolerance_window": "very narrow"
+    },
+    "milk_whey_distillation": {
+      "source": "Brunschwig",
+      "fire_degree": "first degree",
+      "critical_constraint": "PROTEINS COAGULATE",
+      "requires_precision": true,
+      "requires_low_fire": true,
+      "tolerance_window": "narrow"
+    },
+    "egg_distillation": {
+      "source": "Brunschwig",
+      "fire_degree": "balneum marie",
+      "critical_constraint": "ALBUMIN COAGULATES",
+      "requires_precision": true,
+      "requires_low_fire": true,
+      "tolerance_window": "very narrow"
+    },
+    "fat_tallow_rendering": {
+      "source": "Brunschwig",
+      "fire_degree": "second degree (careful)",
+      "critical_constraint": "BURNS/SMOKES IF OVERHEATED",
+      "requires_precision": true,
+      "requires_low_fire": false,
+      "tolerance_window": "narrow"
+    },
+    "horn_bone_extraction": {
+      "source": "Brunschwig",
+      "fire_degree": "varies",
+      "critical_constraint": "VOLATILE FRACTIONS ESCAPE IF TOO HOT",
+      "requires_precision": true,
+      "requires_low_fire": false,
+      "tolerance_window": "moderate"
+    }
+  },
+  "fit_analysis": {
+    "precision_match": {
+      "requirement": "All animal procedures require precision (heat-sensitive materials)",
+      "regime_4_provides": "Lowest escape rate (0.107) = least forgiving of deviation",
+      "match": true
+    },
+    "monitoring_match": {
+      "requirement": "Must watch for coagulation/burning/decomposition",
+      "regime_4_provides": "High monitoring overhead (25%+ LINK ratio)",
+      "match": true
+    },
+    "high_impact_exclusion": {
+      "requirement": "Cannot use aggressive heat bursts (proteins denature)",
+      "regime_4_provides": "HIGH_IMPACT forbidden",
+      "match": true
+    },
+    "intensity_variable": {
+      "requirement": "Some animal procedures need higher fire (bones, rendering)",
+      "regime_4_provides": "Intensity is variable - precision is the constraint",
+      "match": true
+    }
+  },
+  "interpretation": {
+    "biological": "Proteins, fats, eggs = heat-sensitive \u2192 need precision control",
+    "procedural": "Brunschwig recommends balneum marie + careful monitoring for animal products",
+    "structural": "REGIME_4 encodes exactly this: tight control, high monitoring, no aggressive intervention"
+  }
+}

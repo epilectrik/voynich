@@ -1,0 +1,1267 @@
+{
+  "role_middle_counts": {
+    "AX": 57,
+    "FL": 7,
+    "EN": 69,
+    "FQ": 15,
+    "CC": 7
+  },
+  "pairwise_overlap": {
+    "AX_vs_EN": {
+      "intersection": 36,
+      "intersection_middles": [
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "ar",
+        "ck",
+        "ckh",
+        "cp",
+        "d",
+        "dy",
+        "e",
+        "ed",
+        "edy",
+        "ee",
+        "eeo",
+        "eeol",
+        "eey",
+        "eo",
+        "eol",
+        "ey",
+        "k",
+        "l",
+        "ly",
+        "o",
+        "ock",
+        "od",
+        "oiin",
+        "ol",
+        "om",
+        "or",
+        "r",
+        "ry",
+        "s",
+        "sh",
+        "t",
+        "y"
+      ],
+      "AX_only": 21,
+      "EN_only": 33,
+      "jaccard": 0.4
+    },
+    "AX_vs_CC": {
+      "intersection": 6,
+      "intersection_middles": [
+        "aiin",
+        "ch",
+        "iin",
+        "k",
+        "ol",
+        "sh"
+      ],
+      "AX_only": 51,
+      "CC_only": 1,
+      "jaccard": 0.1034
+    },
+    "AX_vs_FL": {
+      "intersection": 7,
+      "intersection_middles": [
+        "al",
+        "ar",
+        "i",
+        "in",
+        "l",
+        "m",
+        "r"
+      ],
+      "AX_only": 50,
+      "FL_only": 0,
+      "jaccard": 0.1228
+    },
+    "AX_vs_FQ": {
+      "intersection": 15,
+      "intersection_middles": [
+        "aiin",
+        "ain",
+        "am",
+        "d",
+        "dy",
+        "e",
+        "edy",
+        "eey",
+        "eol",
+        "l",
+        "o",
+        "or",
+        "r",
+        "s",
+        "y"
+      ],
+      "AX_only": 42,
+      "FQ_only": 0,
+      "jaccard": 0.2632
+    },
+    "AX_vs_ALL_OP": {
+      "intersection": 41,
+      "intersection_middles": [
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "ar",
+        "ch",
+        "ck",
+        "ckh",
+        "cp",
+        "d",
+        "dy",
+        "e",
+        "ed",
+        "edy",
+        "ee",
+        "eeo",
+        "eeol",
+        "eey",
+        "eo",
+        "eol",
+        "ey",
+        "i",
+        "iin",
+        "in",
+        "k",
+        "l",
+        "ly",
+        "m",
+        "o",
+        "ock",
+        "od",
+        "oiin",
+        "ol",
+        "om",
+        "or",
+        "r",
+        "ry",
+        "s",
+        "sh",
+        "t",
+        "y"
+      ],
+      "AX_only": 16,
+      "operational_only": 33,
+      "jaccard": 0.4556
+    }
+  },
+  "subset_analysis": {
+    "ax_count": 57,
+    "operational_count": 74,
+    "ax_in_operational": 41,
+    "ax_in_operational_rate": 0.7193,
+    "ax_exclusive_count": 16,
+    "ax_exclusive_rate": 0.2807,
+    "ax_exclusive_middles": [
+      "a",
+      "ai",
+      "aii",
+      "c",
+      "cho",
+      "cph",
+      "do",
+      "g",
+      "h",
+      "ho",
+      "hy",
+      "lo",
+      "op",
+      "opc",
+      "opch",
+      "yt"
+    ],
+    "is_subset": false,
+    "is_superset": false
+  },
+  "prefix_differentiation": {
+    "total_shared": 41,
+    "prefix_differentiated": 24,
+    "prefix_differentiated_rate": 0.5854,
+    "articulator_differentiated": 8,
+    "details": [
+      {
+        "middle": "aiin",
+        "ax_count": 3,
+        "nonax_count": 7,
+        "ax_prefixes": [
+          "lk",
+          "or",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch",
+          "ok",
+          "ol",
+          "ot",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "CC",
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ain",
+        "ax_count": 4,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "None",
+          "lk",
+          "ol",
+          "or"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "ok",
+          "ot"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "al",
+        "ax_count": 3,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "ok",
+          "ot",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ar",
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FL"
+        ]
+      },
+      {
+        "middle": "am",
+        "ax_count": 2,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "ok",
+          "ot"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ar",
+          "ch"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ar",
+        "ax_count": 5,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "lk",
+          "ok",
+          "ol",
+          "ot",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FL"
+        ]
+      },
+      {
+        "middle": "ch",
+        "ax_count": 12,
+        "nonax_count": 2,
+        "ax_prefixes": [
+          "lk",
+          "ok",
+          "ol",
+          "ot"
+        ],
+        "nonax_prefixes": [
+          "ol"
+        ],
+        "prefix_overlap": [
+          "ol"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "CC"
+        ]
+      },
+      {
+        "middle": "ck",
+        "ax_count": 1,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "ckh",
+        "ax_count": 2,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "cp",
+        "ax_count": 1,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "d",
+        "ax_count": 1,
+        "nonax_count": 6,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch",
+          "qo"
+        ],
+        "prefix_overlap": [
+          "None"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "dy",
+        "ax_count": 8,
+        "nonax_count": 5,
+        "ax_prefixes": [
+          "kch",
+          "ke",
+          "lch",
+          "ol",
+          "pch",
+          "tch",
+          "te"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "al",
+          "ch",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "e",
+        "ax_count": 6,
+        "nonax_count": 14,
+        "ax_prefixes": [
+          "lk",
+          "ok",
+          "ot",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "ok",
+          "ot",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ok",
+          "ot"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ed",
+        "ax_count": 1,
+        "nonax_count": 8,
+        "ax_prefixes": [
+          "pch"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "edy",
+        "ax_count": 16,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "ch",
+          "dch",
+          "fch",
+          "kch",
+          "ke",
+          "lch",
+          "lk",
+          "lsh",
+          "pch",
+          "rch",
+          "sh",
+          "tch",
+          "te",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "ok",
+          "ot",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch",
+          "sh"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ee",
+        "ax_count": 2,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "ok"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "eeo",
+        "ax_count": 4,
+        "nonax_count": 2,
+        "ax_prefixes": [
+          "ok",
+          "ot",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "ch"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "eeol",
+        "ax_count": 2,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "ok",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "eey",
+        "ax_count": 6,
+        "nonax_count": 5,
+        "ax_prefixes": [
+          "ch",
+          "dch",
+          "ke",
+          "lch",
+          "lk",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "ok",
+          "ot",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "eo",
+        "ax_count": 8,
+        "nonax_count": 6,
+        "ax_prefixes": [
+          "ch",
+          "ok",
+          "ot",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "eol",
+        "ax_count": 5,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "ch",
+          "ke",
+          "ot",
+          "pch",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "ok",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ey",
+        "ax_count": 15,
+        "nonax_count": 2,
+        "ax_prefixes": [
+          "ch",
+          "dch",
+          "kch",
+          "ke",
+          "lch",
+          "lsh",
+          "ok",
+          "ot",
+          "pch",
+          "sh",
+          "tch",
+          "te"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch",
+          "sh"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "i",
+        "ax_count": 4,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "da",
+          "ka",
+          "sa",
+          "ta"
+        ],
+        "nonax_prefixes": [
+          "da"
+        ],
+        "prefix_overlap": [
+          "da"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "FL"
+        ]
+      },
+      {
+        "middle": "iin",
+        "ax_count": 7,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "da",
+          "do",
+          "ka",
+          "sa",
+          "so",
+          "ta"
+        ],
+        "nonax_prefixes": [
+          "da"
+        ],
+        "prefix_overlap": [
+          "da"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "CC"
+        ]
+      },
+      {
+        "middle": "in",
+        "ax_count": 4,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "ka",
+          "sa",
+          "ta"
+        ],
+        "nonax_prefixes": [
+          "da"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "FL"
+        ]
+      },
+      {
+        "middle": "k",
+        "ax_count": 4,
+        "nonax_count": 24,
+        "ax_prefixes": [
+          "None",
+          "ol"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch",
+          "ol",
+          "qo",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "None",
+          "ol"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "CC",
+          "EN"
+        ]
+      },
+      {
+        "middle": "l",
+        "ax_count": 16,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "None",
+          "da",
+          "do",
+          "ka",
+          "ko",
+          "po",
+          "sa",
+          "so",
+          "ta",
+          "to"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch",
+          "da",
+          "qo"
+        ],
+        "prefix_overlap": [
+          "None",
+          "da"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FL",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ly",
+        "ax_count": 1,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "da"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "m",
+        "ax_count": 2,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None",
+          "ta"
+        ],
+        "nonax_prefixes": [
+          "da"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "FL"
+        ]
+      },
+      {
+        "middle": "o",
+        "ax_count": 9,
+        "nonax_count": 10,
+        "ax_prefixes": [
+          "None",
+          "ke",
+          "ok",
+          "ot",
+          "te"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ar",
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "None"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ock",
+        "ax_count": 1,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "od",
+        "ax_count": 4,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "oiin",
+        "ax_count": 1,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "ol",
+        "ax_count": 12,
+        "nonax_count": 4,
+        "ax_prefixes": [
+          "ch",
+          "dch",
+          "kch",
+          "ke",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "tch",
+          "te",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ar",
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "CC",
+          "EN"
+        ]
+      },
+      {
+        "middle": "om",
+        "ax_count": 1,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "or",
+        "ax_count": 10,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "ch",
+          "dch",
+          "kch",
+          "ok",
+          "ol",
+          "ot",
+          "pch",
+          "sh",
+          "tch"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [
+          "ch",
+          "sh"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": true,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "r",
+        "ax_count": 16,
+        "nonax_count": 3,
+        "ax_prefixes": [
+          "None",
+          "do",
+          "ka",
+          "ko",
+          "sa",
+          "so",
+          "ta",
+          "to"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "da",
+          "qo"
+        ],
+        "prefix_overlap": [
+          "None"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FL",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "ry",
+        "ax_count": 1,
+        "nonax_count": 1,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "da"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "s",
+        "ax_count": 2,
+        "nonax_count": 2,
+        "ax_prefixes": [
+          "None",
+          "ol"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ch"
+        ],
+        "prefix_overlap": [
+          "None"
+        ],
+        "is_prefix_differentiated": false,
+        "articulator_differentiated": false,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      },
+      {
+        "middle": "sh",
+        "ax_count": 1,
+        "nonax_count": 2,
+        "ax_prefixes": [
+          "ot"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "ol"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "CC",
+          "EN"
+        ]
+      },
+      {
+        "middle": "t",
+        "ax_count": 1,
+        "nonax_count": 13,
+        "ax_prefixes": [
+          "None"
+        ],
+        "nonax_prefixes": [
+          "ch",
+          "qo"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN"
+        ]
+      },
+      {
+        "middle": "y",
+        "ax_count": 13,
+        "nonax_count": 5,
+        "ax_prefixes": [
+          "dch",
+          "kch",
+          "ke",
+          "lk",
+          "ok",
+          "ol",
+          "or",
+          "ot",
+          "tch",
+          "te",
+          "yk"
+        ],
+        "nonax_prefixes": [
+          "None",
+          "al",
+          "ar",
+          "ch",
+          "sh"
+        ],
+        "prefix_overlap": [],
+        "is_prefix_differentiated": true,
+        "articulator_differentiated": null,
+        "ax_roles": [
+          "AX"
+        ],
+        "nonax_roles": [
+          "EN",
+          "FQ"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,838 @@
+{
+  "class_profiles": {
+    "1": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "ok",
+      "top_suffix": "eey",
+      "top_articulator": null,
+      "top_middle": "sh",
+      "total": 38
+    },
+    "2": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.6458333333333334,
+      "avg_complexity": 2.6458333333333335,
+      "top_prefix": "ok",
+      "top_suffix": "dy",
+      "top_articulator": null,
+      "top_middle": "o",
+      "total": 48
+    },
+    "3": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.5161290322580645,
+      "avg_complexity": 2.5161290322580645,
+      "top_prefix": "ol",
+      "top_suffix": "ey",
+      "top_articulator": null,
+      "top_middle": "e",
+      "total": 62
+    },
+    "4": {
+      "articulator_rate": 0.32857142857142857,
+      "prefix_rate": 0.9571428571428572,
+      "suffix_rate": 0.32857142857142857,
+      "avg_complexity": 2.6142857142857143,
+      "top_prefix": "pch",
+      "top_suffix": "edy",
+      "top_articulator": "y",
+      "top_middle": "edy",
+      "total": 140
+    },
+    "5": {
+      "articulator_rate": 0.33035714285714285,
+      "prefix_rate": 0.8392857142857143,
+      "suffix_rate": 0.16071428571428573,
+      "avg_complexity": 2.330357142857143,
+      "top_prefix": "pch",
+      "top_suffix": "aiin",
+      "top_articulator": "y",
+      "top_middle": "ey",
+      "total": 112
+    },
+    "6": {
+      "articulator_rate": 0.18181818181818182,
+      "prefix_rate": 0.8333333333333334,
+      "suffix_rate": 0.2828282828282828,
+      "avg_complexity": 2.297979797979798,
+      "top_prefix": "ta",
+      "top_suffix": "r",
+      "top_articulator": "y",
+      "top_middle": "dy",
+      "total": 198
+    },
+    "7": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 1.0,
+      "top_prefix": null,
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "ar",
+      "total": 434
+    },
+    "8": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 2.0,
+      "top_prefix": "ch",
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "edy",
+      "total": 1006
+    },
+    "9": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 1.0,
+      "top_prefix": null,
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "aiin",
+      "total": 630
+    },
+    "10": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 2.0,
+      "top_prefix": "da",
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "iin",
+      "total": 314
+    },
+    "11": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 1.0,
+      "top_prefix": null,
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "ol",
+      "total": 421
+    },
+    "13": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.16036943744752308,
+      "avg_complexity": 2.1603694374475233,
+      "top_prefix": "ok",
+      "top_suffix": "edy",
+      "top_articulator": null,
+      "top_middle": "aiin",
+      "total": 1191
+    },
+    "14": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 2.0,
+      "top_prefix": "ot",
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "ar",
+      "total": 707
+    },
+    "15": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.23529411764705882,
+      "avg_complexity": 2.235294117647059,
+      "top_prefix": "ol",
+      "top_suffix": "ey",
+      "top_articulator": null,
+      "top_middle": "y",
+      "total": 68
+    },
+    "16": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.9473684210526315,
+      "avg_complexity": 2.9473684210526314,
+      "top_prefix": "ok",
+      "top_suffix": "r",
+      "top_articulator": null,
+      "top_middle": "ai",
+      "total": 95
+    },
+    "17": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.8819444444444444,
+      "avg_complexity": 2.8819444444444446,
+      "top_prefix": "ol",
+      "top_suffix": "edy",
+      "top_articulator": null,
+      "top_middle": "k",
+      "total": 288
+    },
+    "18": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "ot",
+      "top_suffix": "dy",
+      "top_articulator": null,
+      "top_middle": "ch",
+      "total": 164
+    },
+    "19": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.36486486486486486,
+      "avg_complexity": 2.364864864864865,
+      "top_prefix": "ok",
+      "top_suffix": "hy",
+      "top_articulator": null,
+      "top_middle": "c",
+      "total": 74
+    },
+    "20": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.3838383838383838,
+      "suffix_rate": 0.5606060606060606,
+      "avg_complexity": 1.9444444444444444,
+      "top_prefix": "po",
+      "top_suffix": "y",
+      "top_articulator": null,
+      "top_middle": "l",
+      "total": 198
+    },
+    "21": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.3063063063063063,
+      "suffix_rate": 0.5495495495495496,
+      "avg_complexity": 1.8558558558558558,
+      "top_prefix": "lk",
+      "top_suffix": "al",
+      "top_articulator": null,
+      "top_middle": "r",
+      "total": 111
+    },
+    "22": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.1111111111111111,
+      "suffix_rate": 0.26666666666666666,
+      "avg_complexity": 1.3777777777777778,
+      "top_prefix": "te",
+      "top_suffix": "r",
+      "top_articulator": null,
+      "top_middle": "l",
+      "total": 45
+    },
+    "23": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 1.0,
+      "top_prefix": null,
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "dy",
+      "total": 362
+    },
+    "24": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.6010362694300518,
+      "suffix_rate": 0.26252158894645944,
+      "avg_complexity": 1.8635578583765113,
+      "top_prefix": "so",
+      "top_suffix": "r",
+      "top_articulator": null,
+      "top_middle": "l",
+      "total": 579
+    },
+    "25": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.4095238095238095,
+      "avg_complexity": 2.4095238095238094,
+      "top_prefix": "ol",
+      "top_suffix": "ar",
+      "top_articulator": null,
+      "top_middle": "k",
+      "total": 105
+    },
+    "26": {
+      "articulator_rate": 0.30120481927710846,
+      "prefix_rate": 0.7590361445783133,
+      "suffix_rate": 0.40963855421686746,
+      "avg_complexity": 2.4698795180722892,
+      "top_prefix": "yk",
+      "top_suffix": "edy",
+      "top_articulator": "y",
+      "top_middle": "edy",
+      "total": 166
+    },
+    "27": {
+      "articulator_rate": 0.14150943396226415,
+      "prefix_rate": 0.7216981132075472,
+      "suffix_rate": 0.3584905660377358,
+      "avg_complexity": 2.2216981132075473,
+      "top_prefix": "kch",
+      "top_suffix": "ain",
+      "top_articulator": "y",
+      "top_middle": "r",
+      "total": 212
+    },
+    "28": {
+      "articulator_rate": 0.0736,
+      "prefix_rate": 0.8768,
+      "suffix_rate": 0.128,
+      "avg_complexity": 2.0784,
+      "top_prefix": "lk",
+      "top_suffix": "iin",
+      "top_articulator": "y",
+      "top_middle": "dy",
+      "total": 625
+    },
+    "29": {
+      "articulator_rate": 0.0812807881773399,
+      "prefix_rate": 0.8226600985221675,
+      "suffix_rate": 0.22783251231527094,
+      "avg_complexity": 2.1317733990147785,
+      "top_prefix": "lch",
+      "top_suffix": "aiin",
+      "top_articulator": "d",
+      "top_middle": "edy",
+      "total": 812
+    },
+    "30": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.09386973180076628,
+      "avg_complexity": 2.0938697318007664,
+      "top_prefix": "da",
+      "top_suffix": "r",
+      "top_articulator": null,
+      "top_middle": "r",
+      "total": 522
+    },
+    "31": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.0,
+      "avg_complexity": 2.0,
+      "top_prefix": "ch",
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "ey",
+      "total": 869
+    },
+    "32": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.8097112860892388,
+      "avg_complexity": 2.809711286089239,
+      "top_prefix": "qo",
+      "top_suffix": "y",
+      "top_articulator": null,
+      "top_middle": "k",
+      "total": 762
+    },
+    "33": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "qo",
+      "top_suffix": "edy",
+      "top_articulator": null,
+      "top_middle": "k",
+      "total": 1759
+    },
+    "34": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.6358645928636779,
+      "avg_complexity": 2.635864592863678,
+      "top_prefix": "ch",
+      "top_suffix": "hy",
+      "top_articulator": null,
+      "top_middle": "eey",
+      "total": 1093
+    },
+    "35": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.556420233463035,
+      "avg_complexity": 2.556420233463035,
+      "top_prefix": "ch",
+      "top_suffix": "s",
+      "top_articulator": null,
+      "top_middle": "e",
+      "total": 257
+    },
+    "36": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "qo",
+      "top_suffix": "ar",
+      "top_articulator": null,
+      "top_middle": "t",
+      "total": 243
+    },
+    "37": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.46153846153846156,
+      "avg_complexity": 2.4615384615384617,
+      "top_prefix": "sh",
+      "top_suffix": "y",
+      "top_articulator": null,
+      "top_middle": "k",
+      "total": 52
+    },
+    "38": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.22,
+      "avg_complexity": 2.22,
+      "top_prefix": "ar",
+      "top_suffix": "dy",
+      "top_articulator": null,
+      "top_middle": "o",
+      "total": 50
+    },
+    "39": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.5,
+      "avg_complexity": 2.5,
+      "top_prefix": "ch",
+      "top_suffix": "ar",
+      "top_articulator": null,
+      "top_middle": "ed",
+      "total": 208
+    },
+    "40": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.09722222222222222,
+      "avg_complexity": 2.0972222222222223,
+      "top_prefix": "da",
+      "top_suffix": "r",
+      "top_articulator": null,
+      "top_middle": "y",
+      "total": 72
+    },
+    "41": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 0.704225352112676,
+      "suffix_rate": 0.0,
+      "avg_complexity": 1.704225352112676,
+      "top_prefix": "ch",
+      "top_suffix": null,
+      "top_articulator": null,
+      "top_middle": "l",
+      "total": 71
+    },
+    "42": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "ch",
+      "top_suffix": "dy",
+      "top_articulator": null,
+      "top_middle": "ckh",
+      "total": 43
+    },
+    "43": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.8333333333333334,
+      "avg_complexity": 2.8333333333333335,
+      "top_prefix": "ch",
+      "top_suffix": "al",
+      "top_articulator": null,
+      "top_middle": "k",
+      "total": 108
+    },
+    "44": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "qo",
+      "top_suffix": "dy",
+      "top_articulator": null,
+      "top_middle": "pch",
+      "total": 43
+    },
+    "45": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.7575757575757576,
+      "avg_complexity": 2.757575757575758,
+      "top_prefix": "qo",
+      "top_suffix": "am",
+      "top_articulator": null,
+      "top_middle": "t",
+      "total": 33
+    },
+    "46": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "qo",
+      "top_suffix": "edy",
+      "top_articulator": null,
+      "top_middle": "kch",
+      "total": 206
+    },
+    "47": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.9745762711864406,
+      "avg_complexity": 2.9745762711864407,
+      "top_prefix": "ch",
+      "top_suffix": "hy",
+      "top_articulator": null,
+      "top_middle": "ed",
+      "total": 236
+    },
+    "48": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 1.0,
+      "avg_complexity": 3.0,
+      "top_prefix": "ch",
+      "top_suffix": "aiin",
+      "top_articulator": null,
+      "top_middle": "ed",
+      "total": 98
+    },
+    "49": {
+      "articulator_rate": 0.0,
+      "prefix_rate": 1.0,
+      "suffix_rate": 0.6451612903225806,
+      "avg_complexity": 2.6451612903225805,
+      "top_prefix": "qo",
+      "top_suffix": "edy",
+      "top_articulator": null,
+      "top_middle": "e",
+      "total": 124
+    }
+  },
+  "prefix_groups": {
+    "ok": [
+      [
+        1,
+        "AUXILIARY"
+      ],
+      [
+        2,
+        "AUXILIARY"
+      ],
+      [
+        13,
+        "FREQUENT_OPERATOR"
+      ],
+      [
+        16,
+        "AUXILIARY"
+      ],
+      [
+        19,
+        "AUXILIARY"
+      ]
+    ],
+    "ol": [
+      [
+        3,
+        "AUXILIARY"
+      ],
+      [
+        15,
+        "AUXILIARY"
+      ],
+      [
+        17,
+        "AUXILIARY"
+      ],
+      [
+        25,
+        "AUXILIARY"
+      ]
+    ],
+    "pch": [
+      [
+        4,
+        "AUXILIARY"
+      ],
+      [
+        5,
+        "AUXILIARY"
+      ]
+    ],
+    "ta": [
+      [
+        6,
+        "AUXILIARY"
+      ]
+    ],
+    "ch": [
+      [
+        8,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        31,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        34,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        35,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        39,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        41,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        42,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        43,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        47,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        48,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "da": [
+      [
+        10,
+        "CORE_CONTROL"
+      ],
+      [
+        30,
+        "FLOW_OPERATOR"
+      ],
+      [
+        40,
+        "FLOW_OPERATOR"
+      ]
+    ],
+    "ot": [
+      [
+        14,
+        "FREQUENT_OPERATOR"
+      ],
+      [
+        18,
+        "AUXILIARY"
+      ]
+    ],
+    "so": [
+      [
+        24,
+        "AUXILIARY"
+      ]
+    ],
+    "yk": [
+      [
+        26,
+        "AUXILIARY"
+      ]
+    ],
+    "kch": [
+      [
+        27,
+        "AUXILIARY"
+      ]
+    ],
+    "lk": [
+      [
+        28,
+        "AUXILIARY"
+      ]
+    ],
+    "lch": [
+      [
+        29,
+        "AUXILIARY"
+      ]
+    ],
+    "qo": [
+      [
+        32,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        33,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        36,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        44,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        45,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        46,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        49,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "sh": [
+      [
+        37,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "ar": [
+      [
+        38,
+        "FLOW_OPERATOR"
+      ]
+    ]
+  },
+  "suffix_groups": {
+    "eey": [
+      [
+        1,
+        "AUXILIARY"
+      ]
+    ],
+    "dy": [
+      [
+        2,
+        "AUXILIARY"
+      ],
+      [
+        18,
+        "AUXILIARY"
+      ],
+      [
+        42,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        44,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "ey": [
+      [
+        3,
+        "AUXILIARY"
+      ]
+    ],
+    "r": [
+      [
+        16,
+        "AUXILIARY"
+      ]
+    ],
+    "edy": [
+      [
+        17,
+        "AUXILIARY"
+      ],
+      [
+        33,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        46,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        49,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "y": [
+      [
+        20,
+        "AUXILIARY"
+      ],
+      [
+        32,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "al": [
+      [
+        21,
+        "AUXILIARY"
+      ],
+      [
+        43,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "hy": [
+      [
+        34,
+        "ENERGY_OPERATOR"
+      ],
+      [
+        47,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "s": [
+      [
+        35,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "ar": [
+      [
+        36,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "am": [
+      [
+        45,
+        "ENERGY_OPERATOR"
+      ]
+    ],
+    "aiin": [
+      [
+        48,
+        "ENERGY_OPERATOR"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "description": "Material-class REGIME mapping",
+    "date": "2026-01-25"
+  },
+  "material_classes": {
+    "animal": {
+      "high_confidence_records": 120,
+      "threshold": 1.2012880641167518,
+      "compatible_middles": 120,
+      "regime_distribution": {
+        "REGIME_4": 15,
+        "REGIME_3": 4,
+        "REGIME_2": 2
+      },
+      "chi_square": 19.609523809523807,
+      "chi_square_p": 0.00020449270680916322,
+      "anova_f": 11.692085493309117,
+      "anova_p": 2.088160688562722e-06,
+      "regime_mean_reception": {
+        "REGIME_3": 0.6100054281395673,
+        "REGIME_1": 0.5183496722706933,
+        "REGIME_2": 0.551833052591322,
+        "REGIME_4": 0.6643531354505771
+      }
+    },
+    "herb": {
+      "high_confidence_records": 84,
+      "threshold": 0.07827338787380712,
+      "compatible_middles": 96,
+      "regime_distribution": {
+        "REGIME_4": 13,
+        "REGIME_2": 3,
+        "REGIME_3": 4,
+        "REGIME_1": 1
+      },
+      "chi_square": 12.941198156682029,
+      "chi_square_p": 0.00476550883366185,
+      "anova_f": 7.485767570230712,
+      "anova_p": 0.00018155057359510484,
+      "regime_mean_reception": {
+        "REGIME_3": 0.5392438661977448,
+        "REGIME_1": 0.47164550698407737,
+        "REGIME_2": 0.5042372369750712,
+        "REGIME_4": 0.592972872287306
+      }
+    }
+  },
+  "baseline": {
+    "total_folios": 82,
+    "regime_distribution": {
+      "REGIME_4": 25,
+      "REGIME_2": 10,
+      "REGIME_3": 16,
+      "REGIME_1": 31
+    }
+  }
+}

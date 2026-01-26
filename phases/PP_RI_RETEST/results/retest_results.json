@@ -1,0 +1,52 @@
+{
+  "dataset": {
+    "ri_count": 609,
+    "pp_count": 404,
+    "pp_mean_length": 3.1064356435643563,
+    "ri_mean_length": 4.559934318555008
+  },
+  "test1_containment": {
+    "contained": 609,
+    "total": 609,
+    "pct": 100.0,
+    "pass": true
+  },
+  "test2_null_model": {
+    "null_mean": 100.0,
+    "null_std": 0.0,
+    "real_pct": 100.0,
+    "z_score": null,
+    "pass": true
+  },
+  "test3_length_matched_null": {
+    "null_mean": 99.03809523809524,
+    "null_std": 0.8890656867810528,
+    "real_pct": 100.0,
+    "z_score": 1.0819276642960207,
+    "pass": false
+  },
+  "test4_multi_containment": {
+    "multi_count": 606,
+    "total": 609,
+    "pct": 99.50738916256158,
+    "pass": true
+  },
+  "detailed_breakdown": {
+    "no_match": 0,
+    "single_match": 36,
+    "multi_match_overlapping": 551,
+    "multi_match_non_overlapping": 22
+  },
+  "verdict": {
+    "test1_pass": true,
+    "test2_pass": true,
+    "test3_pass": false,
+    "test4_pass": true,
+    "overall": false
+  },
+  "interpretation": {
+    "test2_problem": "Null model saturated - ANY random 412-element MIDDLE set achieves 100% containment. Test meaningless.",
+    "test3_finding": "Length-matched null achieves 99.0% containment. Real PP (100%) is only z=1.08 above baseline. NOT significant.",
+    "conclusion": "PP-as-atoms observation is likely a statistical artifact of short MIDDLEs naturally appearing as substrings in longer strings. The pattern is NOT specific to PP vocabulary."
+  }
+}

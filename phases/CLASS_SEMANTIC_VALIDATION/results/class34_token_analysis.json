@@ -1,0 +1,301 @@
+{
+  "class33_tokens": [
+    "qokaiin",
+    "qokain",
+    "qokchdy",
+    "qokchy",
+    "qokedy",
+    "qokeedy",
+    "qokeey",
+    "qokeol",
+    "qotaiin",
+    "qotain",
+    "qotchy",
+    "qotedy",
+    "qoteedy"
+  ],
+  "class34_tokens": [
+    "chaiin",
+    "chckhy",
+    "chcthy",
+    "chear",
+    "checkhy",
+    "cheedy",
+    "cheey",
+    "cheky",
+    "cheody",
+    "cheol",
+    "cheor",
+    "chody",
+    "shckhy",
+    "sheedy",
+    "sheey",
+    "sheody",
+    "sheol",
+    "sheor",
+    "shody"
+  ],
+  "class33_morphology": {
+    "prefixes": {
+      "qo": 13
+    },
+    "middles": {
+      "te": 1,
+      "k": 5,
+      "kc": 1,
+      "t": 3,
+      "tc": 1,
+      "kch": 1,
+      "ke": 1
+    },
+    "suffixes": {
+      "edy": 4,
+      "eey": 1,
+      "hy": 2,
+      "ain": 2,
+      "dy": 1,
+      "eol": 1,
+      "aiin": 2
+    }
+  },
+  "class34_morphology": {
+    "prefixes": {
+      "ch": 12,
+      "sh": 7
+    },
+    "middles": {
+      "eey": 2,
+      "eck": 1,
+      "eo": 2,
+      "e": 5,
+      "o": 2,
+      "eol": 2,
+      "ck": 2,
+      "ct": 1,
+      "aiin": 1,
+      "ek": 1
+    },
+    "suffixes": {
+      "hy": 4,
+      "dy": 4,
+      "edy": 2,
+      "ar": 1,
+      "or": 2,
+      "y": 1
+    }
+  },
+  "pharma_enriched_tokens": [
+    {
+      "token": "sheody",
+      "class": 34,
+      "pharma": 6,
+      "herbal": 3,
+      "bio": 0,
+      "recipe": 21,
+      "pharma_pct": 20.0,
+      "total": 30
+    },
+    {
+      "token": "cheody",
+      "class": 34,
+      "pharma": 6,
+      "herbal": 6,
+      "bio": 0,
+      "recipe": 39,
+      "pharma_pct": 11.76470588235294,
+      "total": 51
+    },
+    {
+      "token": "cheky",
+      "class": 34,
+      "pharma": 5,
+      "herbal": 19,
+      "bio": 10,
+      "recipe": 11,
+      "pharma_pct": 11.11111111111111,
+      "total": 45
+    },
+    {
+      "token": "chody",
+      "class": 34,
+      "pharma": 5,
+      "herbal": 12,
+      "bio": 1,
+      "recipe": 29,
+      "pharma_pct": 10.638297872340425,
+      "total": 47
+    },
+    {
+      "token": "sheor",
+      "class": 34,
+      "pharma": 2,
+      "herbal": 0,
+      "bio": 11,
+      "recipe": 11,
+      "pharma_pct": 8.333333333333332,
+      "total": 24
+    },
+    {
+      "token": "shody",
+      "class": 34,
+      "pharma": 2,
+      "herbal": 6,
+      "bio": 1,
+      "recipe": 20,
+      "pharma_pct": 6.896551724137931,
+      "total": 29
+    },
+    {
+      "token": "sheol",
+      "class": 34,
+      "pharma": 4,
+      "herbal": 4,
+      "bio": 29,
+      "recipe": 32,
+      "pharma_pct": 5.797101449275362,
+      "total": 69
+    },
+    {
+      "token": "sheedy",
+      "class": 34,
+      "pharma": 3,
+      "herbal": 5,
+      "bio": 43,
+      "recipe": 31,
+      "pharma_pct": 3.6585365853658534,
+      "total": 82
+    },
+    {
+      "token": "cheor",
+      "class": 34,
+      "pharma": 1,
+      "herbal": 5,
+      "bio": 12,
+      "recipe": 14,
+      "pharma_pct": 3.125,
+      "total": 32
+    },
+    {
+      "token": "sheey",
+      "class": 34,
+      "pharma": 2,
+      "herbal": 5,
+      "bio": 36,
+      "recipe": 58,
+      "pharma_pct": 1.9801980198019802,
+      "total": 101
+    },
+    {
+      "token": "cheedy",
+      "class": 34,
+      "pharma": 1,
+      "herbal": 1,
+      "bio": 25,
+      "recipe": 27,
+      "pharma_pct": 1.8518518518518516,
+      "total": 54
+    },
+    {
+      "token": "qokchdy",
+      "class": 33,
+      "pharma": 1,
+      "herbal": 13,
+      "bio": 16,
+      "recipe": 24,
+      "pharma_pct": 1.8518518518518516,
+      "total": 54
+    },
+    {
+      "token": "shckhy",
+      "class": 34,
+      "pharma": 1,
+      "herbal": 2,
+      "bio": 29,
+      "recipe": 22,
+      "pharma_pct": 1.8518518518518516,
+      "total": 54
+    },
+    {
+      "token": "chckhy",
+      "class": 34,
+      "pharma": 2,
+      "herbal": 29,
+      "bio": 41,
+      "recipe": 48,
+      "pharma_pct": 1.6666666666666667,
+      "total": 120
+    },
+    {
+      "token": "cheol",
+      "class": 34,
+      "pharma": 1,
+      "herbal": 6,
+      "bio": 29,
+      "recipe": 54,
+      "pharma_pct": 1.1111111111111112,
+      "total": 90
+    },
+    {
+      "token": "qotedy",
+      "class": 33,
+      "pharma": 1,
+      "herbal": 12,
+      "bio": 48,
+      "recipe": 30,
+      "pharma_pct": 1.098901098901099,
+      "total": 91
+    },
+    {
+      "token": "qokedy",
+      "class": 33,
+      "pharma": 2,
+      "herbal": 38,
+      "bio": 164,
+      "recipe": 67,
+      "pharma_pct": 0.7380073800738007,
+      "total": 271
+    },
+    {
+      "token": "qokeedy",
+      "class": 33,
+      "pharma": 2,
+      "herbal": 8,
+      "bio": 154,
+      "recipe": 142,
+      "pharma_pct": 0.6535947712418301,
+      "total": 306
+    },
+    {
+      "token": "qokeey",
+      "class": 33,
+      "pharma": 1,
+      "herbal": 6,
+      "bio": 89,
+      "recipe": 168,
+      "pharma_pct": 0.3787878787878788,
+      "total": 264
+    },
+    {
+      "token": "chaiin",
+      "class": 34,
+      "pharma": 0,
+      "herbal": 1,
+      "bio": 0,
+      "recipe": 9,
+      "pharma_pct": 0.0,
+      "total": 10
+    }
+  ],
+  "position_distribution": {
+    "class33": {
+      "initial": 152,
+      "medial": 1543,
+      "final": 64
+    },
+    "class34": {
+      "initial": 30,
+      "medial": 1016,
+      "final": 47
+    }
+  }
+}

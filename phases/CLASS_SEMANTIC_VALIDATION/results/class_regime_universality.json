@@ -1,0 +1,772 @@
+{
+  "universal_classes": [
+    16,
+    17,
+    11,
+    10,
+    37,
+    23,
+    30,
+    21,
+    24,
+    28,
+    13,
+    46,
+    14,
+    31,
+    6,
+    22,
+    34,
+    35,
+    29,
+    26,
+    47,
+    39,
+    18,
+    27,
+    36,
+    5,
+    8,
+    20,
+    40,
+    49,
+    4,
+    43
+  ],
+  "class_metrics": [
+    {
+      "class": 16,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.8491228070175438,
+      "total": 95,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3157894736842105,
+      "regimes": {
+        "REGIME_2": 28,
+        "REGIME_3": 13,
+        "REGIME_4": 30,
+        "REGIME_1": 24
+      }
+    },
+    {
+      "class": 17,
+      "role": "CC",
+      "coverage": 1.0,
+      "evenness": 0.837962962962963,
+      "total": 288,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.3680555555555556,
+      "regimes": {
+        "REGIME_3": 41,
+        "REGIME_2": 68,
+        "REGIME_1": 106,
+        "REGIME_4": 73
+      }
+    },
+    {
+      "class": 11,
+      "role": "CC",
+      "coverage": 1.0,
+      "evenness": 0.836104513064133,
+      "total": 421,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.37292161520190026,
+      "regimes": {
+        "REGIME_3": 62,
+        "REGIME_4": 102,
+        "REGIME_1": 157,
+        "REGIME_2": 100
+      }
+    },
+    {
+      "class": 10,
+      "role": "CC",
+      "coverage": 1.0,
+      "evenness": 0.8343949044585988,
+      "total": 314,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3630573248407643,
+      "regimes": {
+        "REGIME_3": 42,
+        "REGIME_4": 114,
+        "REGIME_2": 76,
+        "REGIME_1": 82
+      }
+    },
+    {
+      "class": 37,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.8205128205128205,
+      "total": 52,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3269230769230769,
+      "regimes": {
+        "REGIME_3": 7,
+        "REGIME_2": 12,
+        "REGIME_4": 17,
+        "REGIME_1": 16
+      }
+    },
+    {
+      "class": 23,
+      "role": "FQ",
+      "coverage": 1.0,
+      "evenness": 0.7918968692449355,
+      "total": 362,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.3342541436464088,
+      "regimes": {
+        "REGIME_3": 34,
+        "REGIME_2": 94,
+        "REGIME_4": 113,
+        "REGIME_1": 121
+      }
+    },
+    {
+      "class": 30,
+      "role": "FL",
+      "coverage": 1.0,
+      "evenness": 0.7828863346104725,
+      "total": 522,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.37547892720306514,
+      "regimes": {
+        "REGIME_3": 51,
+        "REGIME_2": 125,
+        "REGIME_4": 150,
+        "REGIME_1": 196
+      }
+    },
+    {
+      "class": 21,
+      "role": "FQ",
+      "coverage": 1.0,
+      "evenness": 0.7777777777777778,
+      "total": 111,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.40540540540540543,
+      "regimes": {
+        "REGIME_2": 27,
+        "REGIME_3": 10,
+        "REGIME_4": 29,
+        "REGIME_1": 45
+      }
+    },
+    {
+      "class": 24,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7777777777777778,
+      "total": 579,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.38687392055267705,
+      "regimes": {
+        "REGIME_3": 51,
+        "REGIME_2": 142,
+        "REGIME_4": 162,
+        "REGIME_1": 224
+      }
+    },
+    {
+      "class": 28,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7776000000000001,
+      "total": 625,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3312,
+      "regimes": {
+        "REGIME_3": 52,
+        "REGIME_2": 184,
+        "REGIME_4": 207,
+        "REGIME_1": 182
+      }
+    },
+    {
+      "class": 13,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7744192555275679,
+      "total": 1191,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3853904282115869,
+      "regimes": {
+        "REGIME_3": 102,
+        "REGIME_2": 338,
+        "REGIME_4": 459,
+        "REGIME_1": 292
+      }
+    },
+    {
+      "class": 46,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7637540453074434,
+      "total": 206,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.3300970873786408,
+      "regimes": {
+        "REGIME_4": 59,
+        "REGIME_2": 64,
+        "REGIME_1": 68,
+        "REGIME_3": 15
+      }
+    },
+    {
+      "class": 14,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7557755775577557,
+      "total": 707,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3451202263083451,
+      "regimes": {
+        "REGIME_3": 59,
+        "REGIME_2": 239,
+        "REGIME_4": 244,
+        "REGIME_1": 165
+      }
+    },
+    {
+      "class": 31,
+      "role": "EN",
+      "coverage": 1.0,
+      "evenness": 0.7556578442654391,
+      "total": 869,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.378596087456847,
+      "regimes": {
+        "REGIME_3": 58,
+        "REGIME_2": 234,
+        "REGIME_4": 248,
+        "REGIME_1": 329
+      }
+    },
+    {
+      "class": 6,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7542087542087542,
+      "total": 198,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.32323232323232326,
+      "regimes": {
+        "REGIME_3": 13,
+        "REGIME_2": 64,
+        "REGIME_4": 60,
+        "REGIME_1": 61
+      }
+    },
+    {
+      "class": 22,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7481481481481482,
+      "total": 45,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.35555555555555557,
+      "regimes": {
+        "REGIME_3": 5,
+        "REGIME_2": 9,
+        "REGIME_4": 15,
+        "REGIME_1": 16
+      }
+    },
+    {
+      "class": 34,
+      "role": "EN",
+      "coverage": 1.0,
+      "evenness": 0.7471790179932907,
+      "total": 1093,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.40439158279963405,
+      "regimes": {
+        "REGIME_3": 66,
+        "REGIME_2": 296,
+        "REGIME_4": 289,
+        "REGIME_1": 442
+      }
+    },
+    {
+      "class": 35,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7444876783398184,
+      "total": 257,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.3735408560311284,
+      "regimes": {
+        "REGIME_3": 15,
+        "REGIME_2": 68,
+        "REGIME_4": 78,
+        "REGIME_1": 96
+      }
+    },
+    {
+      "class": 29,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7438423645320197,
+      "total": 812,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.33866995073891626,
+      "regimes": {
+        "REGIME_3": 47,
+        "REGIME_2": 220,
+        "REGIME_4": 275,
+        "REGIME_1": 270
+      }
+    },
+    {
+      "class": 26,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7429718875502008,
+      "total": 166,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.40963855421686746,
+      "regimes": {
+        "REGIME_3": 13,
+        "REGIME_4": 68,
+        "REGIME_2": 38,
+        "REGIME_1": 47
+      }
+    },
+    {
+      "class": 47,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7401129943502824,
+      "total": 236,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.4025423728813559,
+      "regimes": {
+        "REGIME_3": 18,
+        "REGIME_2": 54,
+        "REGIME_4": 69,
+        "REGIME_1": 95
+      }
+    },
+    {
+      "class": 39,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7371794871794872,
+      "total": 208,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.36538461538461536,
+      "regimes": {
+        "REGIME_3": 11,
+        "REGIME_4": 76,
+        "REGIME_2": 59,
+        "REGIME_1": 62
+      }
+    },
+    {
+      "class": 18,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7317073170731707,
+      "total": 164,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.38414634146341464,
+      "regimes": {
+        "REGIME_2": 63,
+        "REGIME_4": 52,
+        "REGIME_3": 12,
+        "REGIME_1": 37
+      }
+    },
+    {
+      "class": 27,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.729559748427673,
+      "total": 212,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.37264150943396224,
+      "regimes": {
+        "REGIME_2": 79,
+        "REGIME_4": 70,
+        "REGIME_3": 12,
+        "REGIME_1": 51
+      }
+    },
+    {
+      "class": 36,
+      "role": "EN",
+      "coverage": 1.0,
+      "evenness": 0.7270233196159122,
+      "total": 243,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.3868312757201646,
+      "regimes": {
+        "REGIME_4": 74,
+        "REGIME_2": 64,
+        "REGIME_3": 11,
+        "REGIME_1": 94
+      }
+    },
+    {
+      "class": 5,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7261904761904762,
+      "total": 112,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.35714285714285715,
+      "regimes": {
+        "REGIME_4": 40,
+        "REGIME_2": 32,
+        "REGIME_1": 35,
+        "REGIME_3": 5
+      }
+    },
+    {
+      "class": 8,
+      "role": "EN",
+      "coverage": 1.0,
+      "evenness": 0.7243207422133864,
+      "total": 1006,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.452286282306163,
+      "regimes": {
+        "REGIME_3": 93,
+        "REGIME_2": 202,
+        "REGIME_4": 256,
+        "REGIME_1": 455
+      }
+    },
+    {
+      "class": 20,
+      "role": "FQ",
+      "coverage": 1.0,
+      "evenness": 0.7239057239057238,
+      "total": 198,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.41414141414141414,
+      "regimes": {
+        "REGIME_4": 58,
+        "REGIME_2": 42,
+        "REGIME_1": 82,
+        "REGIME_3": 16
+      }
+    },
+    {
+      "class": 40,
+      "role": "FL",
+      "coverage": 1.0,
+      "evenness": 0.7222222222222222,
+      "total": 72,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.4305555555555556,
+      "regimes": {
+        "REGIME_4": 15,
+        "REGIME_2": 20,
+        "REGIME_3": 6,
+        "REGIME_1": 31
+      }
+    },
+    {
+      "class": 49,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7204301075268817,
+      "total": 124,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3790322580645161,
+      "regimes": {
+        "REGIME_4": 47,
+        "REGIME_1": 41,
+        "REGIME_2": 24,
+        "REGIME_3": 12
+      }
+    },
+    {
+      "class": 4,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7142857142857143,
+      "total": 140,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.42857142857142855,
+      "regimes": {
+        "REGIME_3": 9,
+        "REGIME_2": 60,
+        "REGIME_4": 31,
+        "REGIME_1": 40
+      }
+    },
+    {
+      "class": 43,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.7037037037037037,
+      "total": 108,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.4722222222222222,
+      "regimes": {
+        "REGIME_2": 23,
+        "REGIME_4": 27,
+        "REGIME_3": 7,
+        "REGIME_1": 51
+      }
+    },
+    {
+      "class": 7,
+      "role": "FL",
+      "coverage": 1.0,
+      "evenness": 0.6866359447004609,
+      "total": 434,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.3778801843317972,
+      "regimes": {
+        "REGIME_2": 164,
+        "REGIME_4": 155,
+        "REGIME_3": 20,
+        "REGIME_1": 95
+      }
+    },
+    {
+      "class": 25,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.6730158730158731,
+      "total": 105,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.49523809523809526,
+      "regimes": {
+        "REGIME_2": 21,
+        "REGIME_1": 52,
+        "REGIME_4": 21,
+        "REGIME_3": 11
+      }
+    },
+    {
+      "class": 15,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.6666666666666667,
+      "total": 68,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.4264705882352941,
+      "regimes": {
+        "REGIME_2": 22,
+        "REGIME_3": 5,
+        "REGIME_1": 29,
+        "REGIME_4": 12
+      }
+    },
+    {
+      "class": 19,
+      "role": "AX",
+      "coverage": 1.0,
+      "evenness": 0.6576576576576576,
+      "total": 74,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.4594594594594595,
+      "regimes": {
+        "REGIME_2": 22,
+        "REGIME_3": 5,
+        "REGIME_4": 34,
+        "REGIME_1": 13
+      }
+    },
+    {
+      "class": 9,
+      "role": "FQ",
+      "coverage": 1.0,
+      "evenness": 0.6571428571428571,
+      "total": 630,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.3873015873015873,
+      "regimes": {
+        "REGIME_3": 39,
+        "REGIME_2": 244,
+        "REGIME_4": 233,
+        "REGIME_1": 114
+      }
+    },
+    {
+      "class": 33,
+      "role": "EN",
+      "coverage": 1.0,
+      "evenness": 0.6471480007580064,
+      "total": 1759,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.44002274019329163,
+      "regimes": {
+        "REGIME_3": 100,
+        "REGIME_2": 314,
+        "REGIME_4": 571,
+        "REGIME_1": 774
+      }
+    },
+    {
+      "class": 32,
+      "role": "EN",
+      "coverage": 1.0,
+      "evenness": 0.6404199475065617,
+      "total": 762,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.5196850393700787,
+      "regimes": {
+        "REGIME_4": 172,
+        "REGIME_3": 75,
+        "REGIME_1": 396,
+        "REGIME_2": 119
+      }
+    },
+    {
+      "class": 41,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.727699530516432,
+      "total": 71,
+      "dominant_regime": "REGIME_1",
+      "dominant_rate": 0.4084507042253521,
+      "regimes": {
+        "REGIME_2": 17,
+        "REGIME_3": 4,
+        "REGIME_1": 29,
+        "REGIME_4": 21
+      }
+    },
+    {
+      "class": 2,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.7222222222222222,
+      "total": 48,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3541666666666667,
+      "regimes": {
+        "REGIME_2": 17,
+        "REGIME_1": 10,
+        "REGIME_3": 4,
+        "REGIME_4": 17
+      }
+    },
+    {
+      "class": 48,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.7210884353741497,
+      "total": 98,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3673469387755102,
+      "regimes": {
+        "REGIME_2": 28,
+        "REGIME_4": 36,
+        "REGIME_1": 30,
+        "REGIME_3": 4
+      }
+    },
+    {
+      "class": 1,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.7017543859649122,
+      "total": 38,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.3684210526315789,
+      "regimes": {
+        "REGIME_2": 13,
+        "REGIME_4": 14,
+        "REGIME_1": 10,
+        "REGIME_3": 1
+      }
+    },
+    {
+      "class": 45,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.696969696969697,
+      "total": 33,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.45454545454545453,
+      "regimes": {
+        "REGIME_4": 9,
+        "REGIME_1": 8,
+        "REGIME_2": 15,
+        "REGIME_3": 1
+      }
+    },
+    {
+      "class": 3,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.6881720430107527,
+      "total": 62,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.4032258064516129,
+      "regimes": {
+        "REGIME_4": 25,
+        "REGIME_2": 19,
+        "REGIME_3": 1,
+        "REGIME_1": 17
+      }
+    },
+    {
+      "class": 44,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.6744186046511628,
+      "total": 43,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.37209302325581395,
+      "regimes": {
+        "REGIME_4": 16,
+        "REGIME_1": 9,
+        "REGIME_2": 16,
+        "REGIME_3": 2
+      }
+    },
+    {
+      "class": 42,
+      "role": "AX",
+      "coverage": 0.75,
+      "evenness": 0.6666666666666667,
+      "total": 43,
+      "dominant_regime": "REGIME_4",
+      "dominant_rate": 0.37209302325581395,
+      "regimes": {
+        "REGIME_4": 16,
+        "REGIME_1": 13,
+        "REGIME_2": 14
+      }
+    },
+    {
+      "class": 38,
+      "role": "FL",
+      "coverage": 0.75,
+      "evenness": 0.6,
+      "total": 50,
+      "dominant_regime": "REGIME_2",
+      "dominant_rate": 0.44,
+      "regimes": {
+        "REGIME_3": 3,
+        "REGIME_2": 22,
+        "REGIME_4": 18,
+        "REGIME_1": 7
+      }
+    }
+  ],
+  "regime_specialists": {
+    "REGIME_1": [
+      32
+    ],
+    "REGIME_2": [
+      45
+    ]
+  },
+  "role_evenness": {
+    "AX": 0.7307136273526913,
+    "CC": 0.8361541268285649,
+    "FQ": 0.7376808070178235,
+    "FL": 0.6979361253832889,
+    "EN": 0.7069581453920994
+  }
+}

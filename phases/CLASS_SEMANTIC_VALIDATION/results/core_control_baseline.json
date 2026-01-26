@@ -1,0 +1,44 @@
+{
+  "baseline_energy_rate": 0.3696358467578178,
+  "cc_energy_rate": 0.4057142857142857,
+  "enrichment": 1.097605357469851,
+  "chi2": 3.9104607062945376,
+  "p_value": 0.04798644090046922,
+  "role_followon_matrix": {
+    "OTHER": {
+      "OTHER": 2017,
+      "FREQUENT_OPERATOR": 344,
+      "CORE_CONTROL": 273,
+      "ENERGY_OPERATOR": 1622,
+      "FLOW_OPERATOR": 327
+    },
+    "ENERGY_OPERATOR": {
+      "OTHER": 1646,
+      "ENERGY_OPERATOR": 1824,
+      "FLOW_OPERATOR": 190,
+      "FREQUENT_OPERATOR": 218,
+      "CORE_CONTROL": 235
+    },
+    "FREQUENT_OPERATOR": {
+      "ENERGY_OPERATOR": 196,
+      "FLOW_OPERATOR": 77,
+      "FREQUENT_OPERATOR": 144,
+      "OTHER": 311,
+      "CORE_CONTROL": 48
+    },
+    "FLOW_OPERATOR": {
+      "OTHER": 249,
+      "ENERGY_OPERATOR": 165,
+      "FREQUENT_OPERATOR": 87,
+      "CORE_CONTROL": 46,
+      "FLOW_OPERATOR": 88
+    },
+    "CORE_CONTROL": {
+      "ENERGY_OPERATOR": 284,
+      "OTHER": 267,
+      "FREQUENT_OPERATOR": 56,
+      "FLOW_OPERATOR": 42,
+      "CORE_CONTROL": 51
+    }
+  }
+}

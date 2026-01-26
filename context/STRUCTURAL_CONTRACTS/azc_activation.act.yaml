@@ -185,12 +185,29 @@ transformations:
     provenance: "C469"
 
   vocabulary_legality:
-    mechanism: "A-record MIDDLEs define B legality directly"
+    mechanism: "A-record morphology defines B legality directly"
     expansion: false  # AZC does NOT expand vocabulary beyond A specification
-    effect: "Only tokens with MIDDLEs present in the A record are legal for B execution"
-    filtering_magnitude: "~80% of B vocabulary filtered per A context (~96 of 480 tokens legal)"
+    effect: "Only tokens with matching PREFIX, MIDDLE, and SUFFIX are legal for B execution"
+    filtering_cascade:  # C502.a - full morphological filtering
+      middle_only:
+        legal_tokens: "257 (5.3%)"
+        filtered: "94.7%"
+        note: "MIDDLE is primary filter (C472)"
+      middle_plus_prefix:
+        legal_tokens: "92 (1.9%)"
+        additional_reduction: "64%"
+        note: "PREFIX adds AZC family affinity (C471)"
+      middle_plus_suffix:
+        legal_tokens: "130 (2.7%)"
+        additional_reduction: "50%"
+        note: "SUFFIX adds regime breadth (C495)"
+      full_morphology:
+        legal_tokens: "38 (0.8%)"
+        additional_reduction: "85% beyond MIDDLE"
+        note: "All three axes compose independently"
+    legacy_claim: "Original ~80%/~96 of 480 was MIDDLE-only against token types"
     note: "AZC provides compatibility grouping and escape modulation, not vocabulary expansion"
-    provenance: "C481, C502"
+    provenance: "C481, C502, C502.a"
 
   content_invariants:
     - "No movement of tokens"

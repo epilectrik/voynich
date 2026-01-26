@@ -1,0 +1,198 @@
+{
+  "initial_role_enrichments": {
+    "CORE_CONTROL": 1.1568244427748562,
+    "ENERGY": 0.4512160237149136,
+    "FLOW": 0.7436728560695502,
+    "FREQUENT": 0.6968955857223623,
+    "AUXILIARY": 0.9736884345292122,
+    "UNCLASSIFIED": 1.5450062317945925
+  },
+  "class_enrichments": [
+    {
+      "class": 5,
+      "role": "AX",
+      "initial": 38,
+      "initial_pct": 1.5702479338842976,
+      "corpus_pct": 0.48493245583650846,
+      "enrichment": 3.2380755608028338
+    },
+    {
+      "class": 4,
+      "role": "AX",
+      "initial": 47,
+      "initial_pct": 1.9421487603305785,
+      "corpus_pct": 0.6061655697956356,
+      "enrichment": 3.2039905548996455
+    },
+    {
+      "class": 26,
+      "role": "AX",
+      "initial": 47,
+      "initial_pct": 1.9421487603305785,
+      "corpus_pct": 0.718739175614825,
+      "enrichment": 2.7021607089515087
+    },
+    {
+      "class": 10,
+      "role": "CC",
+      "initial": 85,
+      "initial_pct": 3.512396694214876,
+      "corpus_pct": 1.3595427779702112,
+      "enrichment": 2.583513186292573
+    },
+    {
+      "class": 24,
+      "role": "AX",
+      "initial": 131,
+      "initial_pct": 5.413223140495868,
+      "corpus_pct": 2.50692760651195,
+      "enrichment": 2.1593057280292323
+    },
+    {
+      "class": 6,
+      "role": "AX",
+      "initial": 40,
+      "initial_pct": 1.6528925619834711,
+      "corpus_pct": 0.8572913058538275,
+      "enrichment": 1.9280407379580933
+    },
+    {
+      "class": 29,
+      "role": "AX",
+      "initial": 144,
+      "initial_pct": 5.950413223140496,
+      "corpus_pct": 3.5157603048146866,
+      "enrichment": 1.6924968448479418
+    },
+    {
+      "class": 27,
+      "role": "AX",
+      "initial": 32,
+      "initial_pct": 1.322314049586777,
+      "corpus_pct": 0.9179078628333911,
+      "enrichment": 1.4405738343988772
+    },
+    {
+      "class": 30,
+      "role": "FL",
+      "initial": 78,
+      "initial_pct": 3.2231404958677685,
+      "corpus_pct": 2.2601316245237273,
+      "enrichment": 1.4260853044552102
+    },
+    {
+      "class": 20,
+      "role": "FQ",
+      "initial": 26,
+      "initial_pct": 1.0743801652892562,
+      "corpus_pct": 0.8572913058538275,
+      "enrichment": 1.2532264796727606
+    },
+    {
+      "class": 28,
+      "role": "AX",
+      "initial": 80,
+      "initial_pct": 3.3057851239669422,
+      "corpus_pct": 2.706096293730516,
+      "enrichment": 1.221606611570248
+    },
+    {
+      "class": 23,
+      "role": "FQ",
+      "initial": 44,
+      "initial_pct": 1.8181818181818181,
+      "corpus_pct": 1.5673709733287151,
+      "enrichment": 1.1600200904068305
+    },
+    {
+      "class": 49,
+      "role": "AX",
+      "initial": 13,
+      "initial_pct": 0.5371900826446281,
+      "corpus_pct": 0.5368895046761344,
+      "enrichment": 1.0005598507064783
+    },
+    {
+      "class": 41,
+      "role": "AX",
+      "initial": 6,
+      "initial_pct": 0.24793388429752067,
+      "corpus_pct": 0.30741253896778664,
+      "enrichment": 0.8065184495402165
+    },
+    {
+      "class": 33,
+      "role": "EN",
+      "initial": 146,
+      "initial_pct": 6.033057851239669,
+      "corpus_pct": 7.616037409075164,
+      "enrichment": 0.792151814282157
+    },
+    {
+      "class": 46,
+      "role": "AX",
+      "initial": 14,
+      "initial_pct": 0.5785123966942148,
+      "corpus_pct": 0.891929338413578,
+      "enrichment": 0.6486078793227955
+    },
+    {
+      "class": 3,
+      "role": "AX",
+      "initial": 4,
+      "initial_pct": 0.1652892561983471,
+      "corpus_pct": 0.2684447523380672,
+      "enrichment": 0.6157291388962943
+    },
+    {
+      "class": 17,
+      "role": "CC",
+      "initial": 18,
+      "initial_pct": 0.743801652892562,
+      "corpus_pct": 1.2469691721510219,
+      "enrichment": 0.5964876033057851
+    },
+    {
+      "class": 37,
+      "role": "AX",
+      "initial": 3,
+      "initial_pct": 0.12396694214876033,
+      "corpus_pct": 0.22514721163837895,
+      "enrichment": 0.5506039415130324
+    },
+    {
+      "class": 40,
+      "role": "FL",
+      "initial": 4,
+      "initial_pct": 0.1652892561983471,
+      "corpus_pct": 0.31174229303775547,
+      "enrichment": 0.5302112029384757
+    }
+  ],
+  "chi2_test": {
+    "chi2": 423.1305129077498,
+    "p": 3.061839209310167e-89
+  },
+  "top_initial_tokens": {
+    "daiin": 85,
+    "saiin": 48,
+    "dain": 34,
+    "sain": 34,
+    "qokeedy": 31,
+    "dshedy": 29,
+    "y": 27,
+    "qokeey": 26,
+    "sol": 26,
+    "sor": 25,
+    "qokain": 24,
+    "qokaiin": 23,
+    "sar": 22,
+    "dar": 21,
+    "ol": 21,
+    "tchedy": 20,
+    "qokedy": 19,
+    "dair": 19,
+    "pol": 17,
+    "dchedy": 16
+  }
+}

@@ -1,0 +1,2636 @@
+{
+  "per_class_context": {
+    "1": {
+      "n_tokens": 38,
+      "left_role_counts": {
+        "CC": 0,
+        "EN": 10,
+        "FL": 1,
+        "FQ": 3,
+        "AX": 6,
+        "UN": 15,
+        "LINE_START": 3,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 0,
+        "EN": 13,
+        "FL": 0,
+        "FQ": 4,
+        "AX": 5,
+        "UN": 13,
+        "LINE_START": 0,
+        "LINE_END": 3
+      },
+      "left_role_rates": {
+        "CC": 0.0,
+        "EN": 0.2632,
+        "FL": 0.0263,
+        "FQ": 0.0789,
+        "AX": 0.1579,
+        "UN": 0.3947,
+        "LINE_START": 0.0789,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0,
+        "EN": 0.3421,
+        "FL": 0.0,
+        "FQ": 0.1053,
+        "AX": 0.1316,
+        "UN": 0.3421,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0789
+      }
+    },
+    "2": {
+      "n_tokens": 48,
+      "left_role_counts": {
+        "CC": 2,
+        "EN": 8,
+        "FL": 1,
+        "FQ": 7,
+        "AX": 13,
+        "UN": 15,
+        "LINE_START": 2,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 5,
+        "EN": 8,
+        "FL": 4,
+        "FQ": 6,
+        "AX": 10,
+        "UN": 11,
+        "LINE_START": 0,
+        "LINE_END": 4
+      },
+      "left_role_rates": {
+        "CC": 0.0417,
+        "EN": 0.1667,
+        "FL": 0.0208,
+        "FQ": 0.1458,
+        "AX": 0.2708,
+        "UN": 0.3125,
+        "LINE_START": 0.0417,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.1042,
+        "EN": 0.1667,
+        "FL": 0.0833,
+        "FQ": 0.125,
+        "AX": 0.2083,
+        "UN": 0.2292,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0833
+      }
+    },
+    "3": {
+      "n_tokens": 62,
+      "left_role_counts": {
+        "CC": 0,
+        "EN": 18,
+        "FL": 3,
+        "FQ": 8,
+        "AX": 10,
+        "UN": 19,
+        "LINE_START": 4,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 3,
+        "EN": 21,
+        "FL": 4,
+        "FQ": 3,
+        "AX": 11,
+        "UN": 13,
+        "LINE_START": 0,
+        "LINE_END": 7
+      },
+      "left_role_rates": {
+        "CC": 0.0,
+        "EN": 0.2903,
+        "FL": 0.0484,
+        "FQ": 0.129,
+        "AX": 0.1613,
+        "UN": 0.3065,
+        "LINE_START": 0.0645,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0484,
+        "EN": 0.3387,
+        "FL": 0.0645,
+        "FQ": 0.0484,
+        "AX": 0.1774,
+        "UN": 0.2097,
+        "LINE_START": 0.0,
+        "LINE_END": 0.1129
+      }
+    },
+    "4": {
+      "n_tokens": 140,
+      "left_role_counts": {
+        "CC": 1,
+        "EN": 23,
+        "FL": 1,
+        "FQ": 8,
+        "AX": 26,
+        "UN": 34,
+        "LINE_START": 47,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 5,
+        "EN": 38,
+        "FL": 3,
+        "FQ": 9,
+        "AX": 27,
+        "UN": 54,
+        "LINE_START": 0,
+        "LINE_END": 4
+      },
+      "left_role_rates": {
+        "CC": 0.0071,
+        "EN": 0.1643,
+        "FL": 0.0071,
+        "FQ": 0.0571,
+        "AX": 0.1857,
+        "UN": 0.2429,
+        "LINE_START": 0.3357,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0357,
+        "EN": 0.2714,
+        "FL": 0.0214,
+        "FQ": 0.0643,
+        "AX": 0.1929,
+        "UN": 0.3857,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0286
+      }
+    },
+    "5": {
+      "n_tokens": 112,
+      "left_role_counts": {
+        "CC": 7,
+        "EN": 32,
+        "FL": 0,
+        "FQ": 2,
+        "AX": 13,
+        "UN": 20,
+        "LINE_START": 38,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 3,
+        "EN": 34,
+        "FL": 2,
+        "FQ": 10,
+        "AX": 22,
+        "UN": 36,
+        "LINE_START": 0,
+        "LINE_END": 5
+      },
+      "left_role_rates": {
+        "CC": 0.0625,
+        "EN": 0.2857,
+        "FL": 0.0,
+        "FQ": 0.0179,
+        "AX": 0.1161,
+        "UN": 0.1786,
+        "LINE_START": 0.3393,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0268,
+        "EN": 0.3036,
+        "FL": 0.0179,
+        "FQ": 0.0893,
+        "AX": 0.1964,
+        "UN": 0.3214,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0446
+      }
+    },
+    "6": {
+      "n_tokens": 198,
+      "left_role_counts": {
+        "CC": 2,
+        "EN": 51,
+        "FL": 6,
+        "FQ": 14,
+        "AX": 44,
+        "UN": 41,
+        "LINE_START": 40,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 4,
+        "EN": 49,
+        "FL": 9,
+        "FQ": 16,
+        "AX": 43,
+        "UN": 53,
+        "LINE_START": 0,
+        "LINE_END": 24
+      },
+      "left_role_rates": {
+        "CC": 0.0101,
+        "EN": 0.2576,
+        "FL": 0.0303,
+        "FQ": 0.0707,
+        "AX": 0.2222,
+        "UN": 0.2071,
+        "LINE_START": 0.202,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0202,
+        "EN": 0.2475,
+        "FL": 0.0455,
+        "FQ": 0.0808,
+        "AX": 0.2172,
+        "UN": 0.2677,
+        "LINE_START": 0.0,
+        "LINE_END": 0.1212
+      }
+    },
+    "14": {
+      "n_tokens": 707,
+      "left_role_counts": {
+        "CC": 31,
+        "EN": 232,
+        "FL": 32,
+        "FQ": 87,
+        "AX": 145,
+        "UN": 171,
+        "LINE_START": 9,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 34,
+        "EN": 168,
+        "FL": 59,
+        "FQ": 62,
+        "AX": 148,
+        "UN": 157,
+        "LINE_START": 0,
+        "LINE_END": 79
+      },
+      "left_role_rates": {
+        "CC": 0.0438,
+        "EN": 0.3281,
+        "FL": 0.0453,
+        "FQ": 0.1231,
+        "AX": 0.2051,
+        "UN": 0.2419,
+        "LINE_START": 0.0127,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0481,
+        "EN": 0.2376,
+        "FL": 0.0835,
+        "FQ": 0.0877,
+        "AX": 0.2093,
+        "UN": 0.2221,
+        "LINE_START": 0.0,
+        "LINE_END": 0.1117
+      }
+    },
+    "15": {
+      "n_tokens": 68,
+      "left_role_counts": {
+        "CC": 2,
+        "EN": 18,
+        "FL": 3,
+        "FQ": 10,
+        "AX": 15,
+        "UN": 17,
+        "LINE_START": 3,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 0,
+        "EN": 11,
+        "FL": 0,
+        "FQ": 4,
+        "AX": 10,
+        "UN": 7,
+        "LINE_START": 0,
+        "LINE_END": 36
+      },
+      "left_role_rates": {
+        "CC": 0.0294,
+        "EN": 0.2647,
+        "FL": 0.0441,
+        "FQ": 0.1471,
+        "AX": 0.2206,
+        "UN": 0.25,
+        "LINE_START": 0.0441,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0,
+        "EN": 0.1618,
+        "FL": 0.0,
+        "FQ": 0.0588,
+        "AX": 0.1471,
+        "UN": 0.1029,
+        "LINE_START": 0.0,
+        "LINE_END": 0.5294
+      }
+    },
+    "16": {
+      "n_tokens": 95,
+      "left_role_counts": {
+        "CC": 3,
+        "EN": 22,
+        "FL": 1,
+        "FQ": 6,
+        "AX": 34,
+        "UN": 24,
+        "LINE_START": 5,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 5,
+        "EN": 25,
+        "FL": 1,
+        "FQ": 12,
+        "AX": 21,
+        "UN": 18,
+        "LINE_START": 0,
+        "LINE_END": 13
+      },
+      "left_role_rates": {
+        "CC": 0.0316,
+        "EN": 0.2316,
+        "FL": 0.0105,
+        "FQ": 0.0632,
+        "AX": 0.3579,
+        "UN": 0.2526,
+        "LINE_START": 0.0526,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0526,
+        "EN": 0.2632,
+        "FL": 0.0105,
+        "FQ": 0.1263,
+        "AX": 0.2211,
+        "UN": 0.1895,
+        "LINE_START": 0.0,
+        "LINE_END": 0.1368
+      }
+    },
+    "18": {
+      "n_tokens": 164,
+      "left_role_counts": {
+        "CC": 3,
+        "EN": 49,
+        "FL": 4,
+        "FQ": 17,
+        "AX": 34,
+        "UN": 50,
+        "LINE_START": 7,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 4,
+        "EN": 57,
+        "FL": 8,
+        "FQ": 15,
+        "AX": 20,
+        "UN": 48,
+        "LINE_START": 0,
+        "LINE_END": 12
+      },
+      "left_role_rates": {
+        "CC": 0.0183,
+        "EN": 0.2988,
+        "FL": 0.0244,
+        "FQ": 0.1037,
+        "AX": 0.2073,
+        "UN": 0.3049,
+        "LINE_START": 0.0427,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0244,
+        "EN": 0.3476,
+        "FL": 0.0488,
+        "FQ": 0.0915,
+        "AX": 0.122,
+        "UN": 0.2927,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0732
+      }
+    },
+    "19": {
+      "n_tokens": 74,
+      "left_role_counts": {
+        "CC": 4,
+        "EN": 20,
+        "FL": 4,
+        "FQ": 8,
+        "AX": 17,
+        "UN": 18,
+        "LINE_START": 3,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 1,
+        "EN": 17,
+        "FL": 4,
+        "FQ": 3,
+        "AX": 19,
+        "UN": 13,
+        "LINE_START": 0,
+        "LINE_END": 17
+      },
+      "left_role_rates": {
+        "CC": 0.0541,
+        "EN": 0.2703,
+        "FL": 0.0541,
+        "FQ": 0.1081,
+        "AX": 0.2297,
+        "UN": 0.2432,
+        "LINE_START": 0.0405,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0135,
+        "EN": 0.2297,
+        "FL": 0.0541,
+        "FQ": 0.0405,
+        "AX": 0.2568,
+        "UN": 0.1757,
+        "LINE_START": 0.0,
+        "LINE_END": 0.2297
+      }
+    },
+    "20": {
+      "n_tokens": 198,
+      "left_role_counts": {
+        "CC": 9,
+        "EN": 59,
+        "FL": 8,
+        "FQ": 18,
+        "AX": 38,
+        "UN": 40,
+        "LINE_START": 26,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 9,
+        "EN": 45,
+        "FL": 10,
+        "FQ": 20,
+        "AX": 31,
+        "UN": 31,
+        "LINE_START": 0,
+        "LINE_END": 52
+      },
+      "left_role_rates": {
+        "CC": 0.0455,
+        "EN": 0.298,
+        "FL": 0.0404,
+        "FQ": 0.0909,
+        "AX": 0.1919,
+        "UN": 0.202,
+        "LINE_START": 0.1313,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0455,
+        "EN": 0.2273,
+        "FL": 0.0505,
+        "FQ": 0.101,
+        "AX": 0.1566,
+        "UN": 0.1566,
+        "LINE_START": 0.0,
+        "LINE_END": 0.2626
+      }
+    },
+    "21": {
+      "n_tokens": 111,
+      "left_role_counts": {
+        "CC": 3,
+        "EN": 37,
+        "FL": 3,
+        "FQ": 9,
+        "AX": 21,
+        "UN": 33,
+        "LINE_START": 5,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 3,
+        "EN": 15,
+        "FL": 5,
+        "FQ": 10,
+        "AX": 8,
+        "UN": 26,
+        "LINE_START": 0,
+        "LINE_END": 44
+      },
+      "left_role_rates": {
+        "CC": 0.027,
+        "EN": 0.3333,
+        "FL": 0.027,
+        "FQ": 0.0811,
+        "AX": 0.1892,
+        "UN": 0.2973,
+        "LINE_START": 0.045,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.027,
+        "EN": 0.1351,
+        "FL": 0.045,
+        "FQ": 0.0901,
+        "AX": 0.0721,
+        "UN": 0.2342,
+        "LINE_START": 0.0,
+        "LINE_END": 0.3964
+      }
+    },
+    "22": {
+      "n_tokens": 45,
+      "left_role_counts": {
+        "CC": 2,
+        "EN": 15,
+        "FL": 2,
+        "FQ": 3,
+        "AX": 10,
+        "UN": 12,
+        "LINE_START": 1,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 0,
+        "EN": 4,
+        "FL": 3,
+        "FQ": 1,
+        "AX": 3,
+        "UN": 6,
+        "LINE_START": 0,
+        "LINE_END": 28
+      },
+      "left_role_rates": {
+        "CC": 0.0444,
+        "EN": 0.3333,
+        "FL": 0.0444,
+        "FQ": 0.0667,
+        "AX": 0.2222,
+        "UN": 0.2667,
+        "LINE_START": 0.0222,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0,
+        "EN": 0.0889,
+        "FL": 0.0667,
+        "FQ": 0.0222,
+        "AX": 0.0667,
+        "UN": 0.1333,
+        "LINE_START": 0.0,
+        "LINE_END": 0.6222
+      }
+    },
+    "24": {
+      "n_tokens": 579,
+      "left_role_counts": {
+        "CC": 15,
+        "EN": 152,
+        "FL": 27,
+        "FQ": 51,
+        "AX": 83,
+        "UN": 120,
+        "LINE_START": 131,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 31,
+        "EN": 171,
+        "FL": 34,
+        "FQ": 70,
+        "AX": 98,
+        "UN": 122,
+        "LINE_START": 0,
+        "LINE_END": 53
+      },
+      "left_role_rates": {
+        "CC": 0.0259,
+        "EN": 0.2625,
+        "FL": 0.0466,
+        "FQ": 0.0881,
+        "AX": 0.1434,
+        "UN": 0.2073,
+        "LINE_START": 0.2263,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0535,
+        "EN": 0.2953,
+        "FL": 0.0587,
+        "FQ": 0.1209,
+        "AX": 0.1693,
+        "UN": 0.2107,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0915
+      }
+    },
+    "25": {
+      "n_tokens": 105,
+      "left_role_counts": {
+        "CC": 9,
+        "EN": 30,
+        "FL": 6,
+        "FQ": 10,
+        "AX": 23,
+        "UN": 25,
+        "LINE_START": 2,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 5,
+        "EN": 19,
+        "FL": 4,
+        "FQ": 15,
+        "AX": 13,
+        "UN": 18,
+        "LINE_START": 0,
+        "LINE_END": 31
+      },
+      "left_role_rates": {
+        "CC": 0.0857,
+        "EN": 0.2857,
+        "FL": 0.0571,
+        "FQ": 0.0952,
+        "AX": 0.219,
+        "UN": 0.2381,
+        "LINE_START": 0.019,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0476,
+        "EN": 0.181,
+        "FL": 0.0381,
+        "FQ": 0.1429,
+        "AX": 0.1238,
+        "UN": 0.1714,
+        "LINE_START": 0.0,
+        "LINE_END": 0.2952
+      }
+    },
+    "26": {
+      "n_tokens": 166,
+      "left_role_counts": {
+        "CC": 1,
+        "EN": 37,
+        "FL": 4,
+        "FQ": 8,
+        "AX": 18,
+        "UN": 51,
+        "LINE_START": 47,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 5,
+        "EN": 56,
+        "FL": 7,
+        "FQ": 7,
+        "AX": 27,
+        "UN": 54,
+        "LINE_START": 0,
+        "LINE_END": 10
+      },
+      "left_role_rates": {
+        "CC": 0.006,
+        "EN": 0.2229,
+        "FL": 0.0241,
+        "FQ": 0.0482,
+        "AX": 0.1084,
+        "UN": 0.3072,
+        "LINE_START": 0.2831,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0301,
+        "EN": 0.3373,
+        "FL": 0.0422,
+        "FQ": 0.0422,
+        "AX": 0.1627,
+        "UN": 0.3253,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0602
+      }
+    },
+    "27": {
+      "n_tokens": 212,
+      "left_role_counts": {
+        "CC": 9,
+        "EN": 61,
+        "FL": 8,
+        "FQ": 9,
+        "AX": 42,
+        "UN": 51,
+        "LINE_START": 32,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 6,
+        "EN": 59,
+        "FL": 15,
+        "FQ": 26,
+        "AX": 39,
+        "UN": 57,
+        "LINE_START": 0,
+        "LINE_END": 10
+      },
+      "left_role_rates": {
+        "CC": 0.0425,
+        "EN": 0.2877,
+        "FL": 0.0377,
+        "FQ": 0.0425,
+        "AX": 0.1981,
+        "UN": 0.2406,
+        "LINE_START": 0.1509,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0283,
+        "EN": 0.2783,
+        "FL": 0.0708,
+        "FQ": 0.1226,
+        "AX": 0.184,
+        "UN": 0.2689,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0472
+      }
+    },
+    "28": {
+      "n_tokens": 625,
+      "left_role_counts": {
+        "CC": 30,
+        "EN": 204,
+        "FL": 27,
+        "FQ": 56,
+        "AX": 108,
+        "UN": 120,
+        "LINE_START": 80,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 38,
+        "EN": 190,
+        "FL": 34,
+        "FQ": 52,
+        "AX": 124,
+        "UN": 147,
+        "LINE_START": 0,
+        "LINE_END": 40
+      },
+      "left_role_rates": {
+        "CC": 0.048,
+        "EN": 0.3264,
+        "FL": 0.0432,
+        "FQ": 0.0896,
+        "AX": 0.1728,
+        "UN": 0.192,
+        "LINE_START": 0.128,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.0608,
+        "EN": 0.304,
+        "FL": 0.0544,
+        "FQ": 0.0832,
+        "AX": 0.1984,
+        "UN": 0.2352,
+        "LINE_START": 0.0,
+        "LINE_END": 0.064
+      }
+    },
+    "29": {
+      "n_tokens": 812,
+      "left_role_counts": {
+        "CC": 30,
+        "EN": 250,
+        "FL": 25,
+        "FQ": 54,
+        "AX": 138,
+        "UN": 171,
+        "LINE_START": 144,
+        "LINE_END": 0
+      },
+      "right_role_counts": {
+        "CC": 26,
+        "EN": 267,
+        "FL": 24,
+        "FQ": 58,
+        "AX": 159,
+        "UN": 221,
+        "LINE_START": 0,
+        "LINE_END": 57
+      },
+      "left_role_rates": {
+        "CC": 0.0369,
+        "EN": 0.3079,
+        "FL": 0.0308,
+        "FQ": 0.0665,
+        "AX": 0.17,
+        "UN": 0.2106,
+        "LINE_START": 0.1773,
+        "LINE_END": 0.0
+      },
+      "right_role_rates": {
+        "CC": 0.032,
+        "EN": 0.3288,
+        "FL": 0.0296,
+        "FQ": 0.0714,
+        "AX": 0.1958,
+        "UN": 0.2722,
+        "LINE_START": 0.0,
+        "LINE_END": 0.0702
+      }
+    }
+  },
+  "population_baseline": {
+    "left_rates": {
+      "CC": 0.0358,
+      "EN": 0.2913,
+      "FL": 0.0364,
+      "FQ": 0.0851,
+      "AX": 0.1838,
+      "UN": 0.2297,
+      "LINE_START": 0.138,
+      "LINE_END": 0.0
+    },
+    "right_rates": {
+      "CC": 0.041,
+      "EN": 0.2779,
+      "FL": 0.0504,
+      "FQ": 0.0884,
+      "AX": 0.1838,
+      "UN": 0.2424,
+      "LINE_START": 0.0,
+      "LINE_END": 0.116
+    }
+  },
+  "bigram_enrichment": {
+    "1": {
+      "left_CC": {
+        "observed": 0.0,
+        "expected": 0.0358,
+        "enrichment": 0.0
+      },
+      "right_CC": {
+        "observed": 0.0,
+        "expected": 0.041,
+        "enrichment": 0.0
+      },
+      "left_EN": {
+        "observed": 0.2632,
+        "expected": 0.2913,
+        "enrichment": 0.903
+      },
+      "right_EN": {
+        "observed": 0.3421,
+        "expected": 0.2779,
+        "enrichment": 1.231
+      },
+      "left_FL": {
+        "observed": 0.0263,
+        "expected": 0.0364,
+        "enrichment": 0.723
+      },
+      "right_FL": {
+        "observed": 0.0,
+        "expected": 0.0504,
+        "enrichment": 0.0
+      },
+      "left_FQ": {
+        "observed": 0.0789,
+        "expected": 0.0851,
+        "enrichment": 0.928
+      },
+      "right_FQ": {
+        "observed": 0.1053,
+        "expected": 0.0884,
+        "enrichment": 1.191
+      },
+      "left_AX": {
+        "observed": 0.1579,
+        "expected": 0.1838,
+        "enrichment": 0.859
+      },
+      "right_AX": {
+        "observed": 0.1316,
+        "expected": 0.1838,
+        "enrichment": 0.716
+      },
+      "left_UN": {
+        "observed": 0.3947,
+        "expected": 0.2297,
+        "enrichment": 1.718
+      },
+      "right_UN": {
+        "observed": 0.3421,
+        "expected": 0.2424,
+        "enrichment": 1.411
+      },
+      "left_LINE_START": {
+        "observed": 0.0789,
+        "expected": 0.138,
+        "enrichment": 0.572
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0789,
+        "expected": 0.116,
+        "enrichment": 0.681
+      }
+    },
+    "2": {
+      "left_CC": {
+        "observed": 0.0417,
+        "expected": 0.0358,
+        "enrichment": 1.164
+      },
+      "right_CC": {
+        "observed": 0.1042,
+        "expected": 0.041,
+        "enrichment": 2.541
+      },
+      "left_EN": {
+        "observed": 0.1667,
+        "expected": 0.2913,
+        "enrichment": 0.572
+      },
+      "right_EN": {
+        "observed": 0.1667,
+        "expected": 0.2779,
+        "enrichment": 0.6
+      },
+      "left_FL": {
+        "observed": 0.0208,
+        "expected": 0.0364,
+        "enrichment": 0.572
+      },
+      "right_FL": {
+        "observed": 0.0833,
+        "expected": 0.0504,
+        "enrichment": 1.653
+      },
+      "left_FQ": {
+        "observed": 0.1458,
+        "expected": 0.0851,
+        "enrichment": 1.714
+      },
+      "right_FQ": {
+        "observed": 0.125,
+        "expected": 0.0884,
+        "enrichment": 1.414
+      },
+      "left_AX": {
+        "observed": 0.2708,
+        "expected": 0.1838,
+        "enrichment": 1.474
+      },
+      "right_AX": {
+        "observed": 0.2083,
+        "expected": 0.1838,
+        "enrichment": 1.133
+      },
+      "left_UN": {
+        "observed": 0.3125,
+        "expected": 0.2297,
+        "enrichment": 1.36
+      },
+      "right_UN": {
+        "observed": 0.2292,
+        "expected": 0.2424,
+        "enrichment": 0.945
+      },
+      "left_LINE_START": {
+        "observed": 0.0417,
+        "expected": 0.138,
+        "enrichment": 0.302
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0833,
+        "expected": 0.116,
+        "enrichment": 0.718
+      }
+    },
+    "3": {
+      "left_CC": {
+        "observed": 0.0,
+        "expected": 0.0358,
+        "enrichment": 0.0
+      },
+      "right_CC": {
+        "observed": 0.0484,
+        "expected": 0.041,
+        "enrichment": 1.18
+      },
+      "left_EN": {
+        "observed": 0.2903,
+        "expected": 0.2913,
+        "enrichment": 0.997
+      },
+      "right_EN": {
+        "observed": 0.3387,
+        "expected": 0.2779,
+        "enrichment": 1.219
+      },
+      "left_FL": {
+        "observed": 0.0484,
+        "expected": 0.0364,
+        "enrichment": 1.329
+      },
+      "right_FL": {
+        "observed": 0.0645,
+        "expected": 0.0504,
+        "enrichment": 1.28
+      },
+      "left_FQ": {
+        "observed": 0.129,
+        "expected": 0.0851,
+        "enrichment": 1.516
+      },
+      "right_FQ": {
+        "observed": 0.0484,
+        "expected": 0.0884,
+        "enrichment": 0.547
+      },
+      "left_AX": {
+        "observed": 0.1613,
+        "expected": 0.1838,
+        "enrichment": 0.878
+      },
+      "right_AX": {
+        "observed": 0.1774,
+        "expected": 0.1838,
+        "enrichment": 0.965
+      },
+      "left_UN": {
+        "observed": 0.3065,
+        "expected": 0.2297,
+        "enrichment": 1.334
+      },
+      "right_UN": {
+        "observed": 0.2097,
+        "expected": 0.2424,
+        "enrichment": 0.865
+      },
+      "left_LINE_START": {
+        "observed": 0.0645,
+        "expected": 0.138,
+        "enrichment": 0.468
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.1129,
+        "expected": 0.116,
+        "enrichment": 0.973
+      }
+    },
+    "4": {
+      "left_CC": {
+        "observed": 0.0071,
+        "expected": 0.0358,
+        "enrichment": 0.2
+      },
+      "right_CC": {
+        "observed": 0.0357,
+        "expected": 0.041,
+        "enrichment": 0.871
+      },
+      "left_EN": {
+        "observed": 0.1643,
+        "expected": 0.2913,
+        "enrichment": 0.564
+      },
+      "right_EN": {
+        "observed": 0.2714,
+        "expected": 0.2779,
+        "enrichment": 0.977
+      },
+      "left_FL": {
+        "observed": 0.0071,
+        "expected": 0.0364,
+        "enrichment": 0.196
+      },
+      "right_FL": {
+        "observed": 0.0214,
+        "expected": 0.0504,
+        "enrichment": 0.425
+      },
+      "left_FQ": {
+        "observed": 0.0571,
+        "expected": 0.0851,
+        "enrichment": 0.671
+      },
+      "right_FQ": {
+        "observed": 0.0643,
+        "expected": 0.0884,
+        "enrichment": 0.727
+      },
+      "left_AX": {
+        "observed": 0.1857,
+        "expected": 0.1838,
+        "enrichment": 1.01
+      },
+      "right_AX": {
+        "observed": 0.1929,
+        "expected": 0.1838,
+        "enrichment": 1.049
+      },
+      "left_UN": {
+        "observed": 0.2429,
+        "expected": 0.2297,
+        "enrichment": 1.057
+      },
+      "right_UN": {
+        "observed": 0.3857,
+        "expected": 0.2424,
+        "enrichment": 1.591
+      },
+      "left_LINE_START": {
+        "observed": 0.3357,
+        "expected": 0.138,
+        "enrichment": 2.433
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0286,
+        "expected": 0.116,
+        "enrichment": 0.246
+      }
+    },
+    "5": {
+      "left_CC": {
+        "observed": 0.0625,
+        "expected": 0.0358,
+        "enrichment": 1.746
+      },
+      "right_CC": {
+        "observed": 0.0268,
+        "expected": 0.041,
+        "enrichment": 0.653
+      },
+      "left_EN": {
+        "observed": 0.2857,
+        "expected": 0.2913,
+        "enrichment": 0.981
+      },
+      "right_EN": {
+        "observed": 0.3036,
+        "expected": 0.2779,
+        "enrichment": 1.092
+      },
+      "left_FL": {
+        "observed": 0.0,
+        "expected": 0.0364,
+        "enrichment": 0.0
+      },
+      "right_FL": {
+        "observed": 0.0179,
+        "expected": 0.0504,
+        "enrichment": 0.354
+      },
+      "left_FQ": {
+        "observed": 0.0179,
+        "expected": 0.0851,
+        "enrichment": 0.21
+      },
+      "right_FQ": {
+        "observed": 0.0893,
+        "expected": 0.0884,
+        "enrichment": 1.01
+      },
+      "left_AX": {
+        "observed": 0.1161,
+        "expected": 0.1838,
+        "enrichment": 0.632
+      },
+      "right_AX": {
+        "observed": 0.1964,
+        "expected": 0.1838,
+        "enrichment": 1.069
+      },
+      "left_UN": {
+        "observed": 0.1786,
+        "expected": 0.2297,
+        "enrichment": 0.777
+      },
+      "right_UN": {
+        "observed": 0.3214,
+        "expected": 0.2424,
+        "enrichment": 1.326
+      },
+      "left_LINE_START": {
+        "observed": 0.3393,
+        "expected": 0.138,
+        "enrichment": 2.459
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0446,
+        "expected": 0.116,
+        "enrichment": 0.385
+      }
+    },
+    "6": {
+      "left_CC": {
+        "observed": 0.0101,
+        "expected": 0.0358,
+        "enrichment": 0.282
+      },
+      "right_CC": {
+        "observed": 0.0202,
+        "expected": 0.041,
+        "enrichment": 0.493
+      },
+      "left_EN": {
+        "observed": 0.2576,
+        "expected": 0.2913,
+        "enrichment": 0.884
+      },
+      "right_EN": {
+        "observed": 0.2475,
+        "expected": 0.2779,
+        "enrichment": 0.891
+      },
+      "left_FL": {
+        "observed": 0.0303,
+        "expected": 0.0364,
+        "enrichment": 0.833
+      },
+      "right_FL": {
+        "observed": 0.0455,
+        "expected": 0.0504,
+        "enrichment": 0.902
+      },
+      "left_FQ": {
+        "observed": 0.0707,
+        "expected": 0.0851,
+        "enrichment": 0.831
+      },
+      "right_FQ": {
+        "observed": 0.0808,
+        "expected": 0.0884,
+        "enrichment": 0.914
+      },
+      "left_AX": {
+        "observed": 0.2222,
+        "expected": 0.1838,
+        "enrichment": 1.209
+      },
+      "right_AX": {
+        "observed": 0.2172,
+        "expected": 0.1838,
+        "enrichment": 1.182
+      },
+      "left_UN": {
+        "observed": 0.2071,
+        "expected": 0.2297,
+        "enrichment": 0.901
+      },
+      "right_UN": {
+        "observed": 0.2677,
+        "expected": 0.2424,
+        "enrichment": 1.104
+      },
+      "left_LINE_START": {
+        "observed": 0.202,
+        "expected": 0.138,
+        "enrichment": 1.464
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.1212,
+        "expected": 0.116,
+        "enrichment": 1.045
+      }
+    },
+    "14": {
+      "left_CC": {
+        "observed": 0.0438,
+        "expected": 0.0358,
+        "enrichment": 1.225
+      },
+      "right_CC": {
+        "observed": 0.0481,
+        "expected": 0.041,
+        "enrichment": 1.173
+      },
+      "left_EN": {
+        "observed": 0.3281,
+        "expected": 0.2913,
+        "enrichment": 1.126
+      },
+      "right_EN": {
+        "observed": 0.2376,
+        "expected": 0.2779,
+        "enrichment": 0.855
+      },
+      "left_FL": {
+        "observed": 0.0453,
+        "expected": 0.0364,
+        "enrichment": 1.243
+      },
+      "right_FL": {
+        "observed": 0.0835,
+        "expected": 0.0504,
+        "enrichment": 1.656
+      },
+      "left_FQ": {
+        "observed": 0.1231,
+        "expected": 0.0851,
+        "enrichment": 1.446
+      },
+      "right_FQ": {
+        "observed": 0.0877,
+        "expected": 0.0884,
+        "enrichment": 0.992
+      },
+      "left_AX": {
+        "observed": 0.2051,
+        "expected": 0.1838,
+        "enrichment": 1.116
+      },
+      "right_AX": {
+        "observed": 0.2093,
+        "expected": 0.1838,
+        "enrichment": 1.139
+      },
+      "left_UN": {
+        "observed": 0.2419,
+        "expected": 0.2297,
+        "enrichment": 1.053
+      },
+      "right_UN": {
+        "observed": 0.2221,
+        "expected": 0.2424,
+        "enrichment": 0.916
+      },
+      "left_LINE_START": {
+        "observed": 0.0127,
+        "expected": 0.138,
+        "enrichment": 0.092
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.1117,
+        "expected": 0.116,
+        "enrichment": 0.963
+      }
+    },
+    "15": {
+      "left_CC": {
+        "observed": 0.0294,
+        "expected": 0.0358,
+        "enrichment": 0.822
+      },
+      "right_CC": {
+        "observed": 0.0,
+        "expected": 0.041,
+        "enrichment": 0.0
+      },
+      "left_EN": {
+        "observed": 0.2647,
+        "expected": 0.2913,
+        "enrichment": 0.909
+      },
+      "right_EN": {
+        "observed": 0.1618,
+        "expected": 0.2779,
+        "enrichment": 0.582
+      },
+      "left_FL": {
+        "observed": 0.0441,
+        "expected": 0.0364,
+        "enrichment": 1.212
+      },
+      "right_FL": {
+        "observed": 0.0,
+        "expected": 0.0504,
+        "enrichment": 0.0
+      },
+      "left_FQ": {
+        "observed": 0.1471,
+        "expected": 0.0851,
+        "enrichment": 1.728
+      },
+      "right_FQ": {
+        "observed": 0.0588,
+        "expected": 0.0884,
+        "enrichment": 0.665
+      },
+      "left_AX": {
+        "observed": 0.2206,
+        "expected": 0.1838,
+        "enrichment": 1.2
+      },
+      "right_AX": {
+        "observed": 0.1471,
+        "expected": 0.1838,
+        "enrichment": 0.8
+      },
+      "left_UN": {
+        "observed": 0.25,
+        "expected": 0.2297,
+        "enrichment": 1.088
+      },
+      "right_UN": {
+        "observed": 0.1029,
+        "expected": 0.2424,
+        "enrichment": 0.425
+      },
+      "left_LINE_START": {
+        "observed": 0.0441,
+        "expected": 0.138,
+        "enrichment": 0.32
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.5294,
+        "expected": 0.116,
+        "enrichment": 4.564
+      }
+    },
+    "16": {
+      "left_CC": {
+        "observed": 0.0316,
+        "expected": 0.0358,
+        "enrichment": 0.882
+      },
+      "right_CC": {
+        "observed": 0.0526,
+        "expected": 0.041,
+        "enrichment": 1.284
+      },
+      "left_EN": {
+        "observed": 0.2316,
+        "expected": 0.2913,
+        "enrichment": 0.795
+      },
+      "right_EN": {
+        "observed": 0.2632,
+        "expected": 0.2779,
+        "enrichment": 0.947
+      },
+      "left_FL": {
+        "observed": 0.0105,
+        "expected": 0.0364,
+        "enrichment": 0.289
+      },
+      "right_FL": {
+        "observed": 0.0105,
+        "expected": 0.0504,
+        "enrichment": 0.209
+      },
+      "left_FQ": {
+        "observed": 0.0632,
+        "expected": 0.0851,
+        "enrichment": 0.742
+      },
+      "right_FQ": {
+        "observed": 0.1263,
+        "expected": 0.0884,
+        "enrichment": 1.429
+      },
+      "left_AX": {
+        "observed": 0.3579,
+        "expected": 0.1838,
+        "enrichment": 1.947
+      },
+      "right_AX": {
+        "observed": 0.2211,
+        "expected": 0.1838,
+        "enrichment": 1.203
+      },
+      "left_UN": {
+        "observed": 0.2526,
+        "expected": 0.2297,
+        "enrichment": 1.1
+      },
+      "right_UN": {
+        "observed": 0.1895,
+        "expected": 0.2424,
+        "enrichment": 0.782
+      },
+      "left_LINE_START": {
+        "observed": 0.0526,
+        "expected": 0.138,
+        "enrichment": 0.381
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.1368,
+        "expected": 0.116,
+        "enrichment": 1.18
+      }
+    },
+    "18": {
+      "left_CC": {
+        "observed": 0.0183,
+        "expected": 0.0358,
+        "enrichment": 0.511
+      },
+      "right_CC": {
+        "observed": 0.0244,
+        "expected": 0.041,
+        "enrichment": 0.595
+      },
+      "left_EN": {
+        "observed": 0.2988,
+        "expected": 0.2913,
+        "enrichment": 1.026
+      },
+      "right_EN": {
+        "observed": 0.3476,
+        "expected": 0.2779,
+        "enrichment": 1.251
+      },
+      "left_FL": {
+        "observed": 0.0244,
+        "expected": 0.0364,
+        "enrichment": 0.67
+      },
+      "right_FL": {
+        "observed": 0.0488,
+        "expected": 0.0504,
+        "enrichment": 0.968
+      },
+      "left_FQ": {
+        "observed": 0.1037,
+        "expected": 0.0851,
+        "enrichment": 1.218
+      },
+      "right_FQ": {
+        "observed": 0.0915,
+        "expected": 0.0884,
+        "enrichment": 1.035
+      },
+      "left_AX": {
+        "observed": 0.2073,
+        "expected": 0.1838,
+        "enrichment": 1.128
+      },
+      "right_AX": {
+        "observed": 0.122,
+        "expected": 0.1838,
+        "enrichment": 0.663
+      },
+      "left_UN": {
+        "observed": 0.3049,
+        "expected": 0.2297,
+        "enrichment": 1.327
+      },
+      "right_UN": {
+        "observed": 0.2927,
+        "expected": 0.2424,
+        "enrichment": 1.207
+      },
+      "left_LINE_START": {
+        "observed": 0.0427,
+        "expected": 0.138,
+        "enrichment": 0.309
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0732,
+        "expected": 0.116,
+        "enrichment": 0.631
+      }
+    },
+    "19": {
+      "left_CC": {
+        "observed": 0.0541,
+        "expected": 0.0358,
+        "enrichment": 1.51
+      },
+      "right_CC": {
+        "observed": 0.0135,
+        "expected": 0.041,
+        "enrichment": 0.33
+      },
+      "left_EN": {
+        "observed": 0.2703,
+        "expected": 0.2913,
+        "enrichment": 0.928
+      },
+      "right_EN": {
+        "observed": 0.2297,
+        "expected": 0.2779,
+        "enrichment": 0.827
+      },
+      "left_FL": {
+        "observed": 0.0541,
+        "expected": 0.0364,
+        "enrichment": 1.485
+      },
+      "right_FL": {
+        "observed": 0.0541,
+        "expected": 0.0504,
+        "enrichment": 1.073
+      },
+      "left_FQ": {
+        "observed": 0.1081,
+        "expected": 0.0851,
+        "enrichment": 1.27
+      },
+      "right_FQ": {
+        "observed": 0.0405,
+        "expected": 0.0884,
+        "enrichment": 0.459
+      },
+      "left_AX": {
+        "observed": 0.2297,
+        "expected": 0.1838,
+        "enrichment": 1.25
+      },
+      "right_AX": {
+        "observed": 0.2568,
+        "expected": 0.1838,
+        "enrichment": 1.397
+      },
+      "left_UN": {
+        "observed": 0.2432,
+        "expected": 0.2297,
+        "enrichment": 1.059
+      },
+      "right_UN": {
+        "observed": 0.1757,
+        "expected": 0.2424,
+        "enrichment": 0.725
+      },
+      "left_LINE_START": {
+        "observed": 0.0405,
+        "expected": 0.138,
+        "enrichment": 0.294
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.2297,
+        "expected": 0.116,
+        "enrichment": 1.98
+      }
+    },
+    "20": {
+      "left_CC": {
+        "observed": 0.0455,
+        "expected": 0.0358,
+        "enrichment": 1.27
+      },
+      "right_CC": {
+        "observed": 0.0455,
+        "expected": 0.041,
+        "enrichment": 1.109
+      },
+      "left_EN": {
+        "observed": 0.298,
+        "expected": 0.2913,
+        "enrichment": 1.023
+      },
+      "right_EN": {
+        "observed": 0.2273,
+        "expected": 0.2779,
+        "enrichment": 0.818
+      },
+      "left_FL": {
+        "observed": 0.0404,
+        "expected": 0.0364,
+        "enrichment": 1.11
+      },
+      "right_FL": {
+        "observed": 0.0505,
+        "expected": 0.0504,
+        "enrichment": 1.002
+      },
+      "left_FQ": {
+        "observed": 0.0909,
+        "expected": 0.0851,
+        "enrichment": 1.068
+      },
+      "right_FQ": {
+        "observed": 0.101,
+        "expected": 0.0884,
+        "enrichment": 1.143
+      },
+      "left_AX": {
+        "observed": 0.1919,
+        "expected": 0.1838,
+        "enrichment": 1.044
+      },
+      "right_AX": {
+        "observed": 0.1566,
+        "expected": 0.1838,
+        "enrichment": 0.852
+      },
+      "left_UN": {
+        "observed": 0.202,
+        "expected": 0.2297,
+        "enrichment": 0.879
+      },
+      "right_UN": {
+        "observed": 0.1566,
+        "expected": 0.2424,
+        "enrichment": 0.646
+      },
+      "left_LINE_START": {
+        "observed": 0.1313,
+        "expected": 0.138,
+        "enrichment": 0.952
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.2626,
+        "expected": 0.116,
+        "enrichment": 2.264
+      }
+    },
+    "21": {
+      "left_CC": {
+        "observed": 0.027,
+        "expected": 0.0358,
+        "enrichment": 0.755
+      },
+      "right_CC": {
+        "observed": 0.027,
+        "expected": 0.041,
+        "enrichment": 0.659
+      },
+      "left_EN": {
+        "observed": 0.3333,
+        "expected": 0.2913,
+        "enrichment": 1.144
+      },
+      "right_EN": {
+        "observed": 0.1351,
+        "expected": 0.2779,
+        "enrichment": 0.486
+      },
+      "left_FL": {
+        "observed": 0.027,
+        "expected": 0.0364,
+        "enrichment": 0.743
+      },
+      "right_FL": {
+        "observed": 0.045,
+        "expected": 0.0504,
+        "enrichment": 0.894
+      },
+      "left_FQ": {
+        "observed": 0.0811,
+        "expected": 0.0851,
+        "enrichment": 0.953
+      },
+      "right_FQ": {
+        "observed": 0.0901,
+        "expected": 0.0884,
+        "enrichment": 1.019
+      },
+      "left_AX": {
+        "observed": 0.1892,
+        "expected": 0.1838,
+        "enrichment": 1.029
+      },
+      "right_AX": {
+        "observed": 0.0721,
+        "expected": 0.1838,
+        "enrichment": 0.392
+      },
+      "left_UN": {
+        "observed": 0.2973,
+        "expected": 0.2297,
+        "enrichment": 1.294
+      },
+      "right_UN": {
+        "observed": 0.2342,
+        "expected": 0.2424,
+        "enrichment": 0.966
+      },
+      "left_LINE_START": {
+        "observed": 0.045,
+        "expected": 0.138,
+        "enrichment": 0.326
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.3964,
+        "expected": 0.116,
+        "enrichment": 3.417
+      }
+    },
+    "22": {
+      "left_CC": {
+        "observed": 0.0444,
+        "expected": 0.0358,
+        "enrichment": 1.241
+      },
+      "right_CC": {
+        "observed": 0.0,
+        "expected": 0.041,
+        "enrichment": 0.0
+      },
+      "left_EN": {
+        "observed": 0.3333,
+        "expected": 0.2913,
+        "enrichment": 1.144
+      },
+      "right_EN": {
+        "observed": 0.0889,
+        "expected": 0.2779,
+        "enrichment": 0.32
+      },
+      "left_FL": {
+        "observed": 0.0444,
+        "expected": 0.0364,
+        "enrichment": 1.221
+      },
+      "right_FL": {
+        "observed": 0.0667,
+        "expected": 0.0504,
+        "enrichment": 1.323
+      },
+      "left_FQ": {
+        "observed": 0.0667,
+        "expected": 0.0851,
+        "enrichment": 0.783
+      },
+      "right_FQ": {
+        "observed": 0.0222,
+        "expected": 0.0884,
+        "enrichment": 0.251
+      },
+      "left_AX": {
+        "observed": 0.2222,
+        "expected": 0.1838,
+        "enrichment": 1.209
+      },
+      "right_AX": {
+        "observed": 0.0667,
+        "expected": 0.1838,
+        "enrichment": 0.363
+      },
+      "left_UN": {
+        "observed": 0.2667,
+        "expected": 0.2297,
+        "enrichment": 1.161
+      },
+      "right_UN": {
+        "observed": 0.1333,
+        "expected": 0.2424,
+        "enrichment": 0.55
+      },
+      "left_LINE_START": {
+        "observed": 0.0222,
+        "expected": 0.138,
+        "enrichment": 0.161
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.6222,
+        "expected": 0.116,
+        "enrichment": 5.364
+      }
+    },
+    "24": {
+      "left_CC": {
+        "observed": 0.0259,
+        "expected": 0.0358,
+        "enrichment": 0.724
+      },
+      "right_CC": {
+        "observed": 0.0535,
+        "expected": 0.041,
+        "enrichment": 1.306
+      },
+      "left_EN": {
+        "observed": 0.2625,
+        "expected": 0.2913,
+        "enrichment": 0.901
+      },
+      "right_EN": {
+        "observed": 0.2953,
+        "expected": 0.2779,
+        "enrichment": 1.063
+      },
+      "left_FL": {
+        "observed": 0.0466,
+        "expected": 0.0364,
+        "enrichment": 1.281
+      },
+      "right_FL": {
+        "observed": 0.0587,
+        "expected": 0.0504,
+        "enrichment": 1.165
+      },
+      "left_FQ": {
+        "observed": 0.0881,
+        "expected": 0.0851,
+        "enrichment": 1.035
+      },
+      "right_FQ": {
+        "observed": 0.1209,
+        "expected": 0.0884,
+        "enrichment": 1.368
+      },
+      "left_AX": {
+        "observed": 0.1434,
+        "expected": 0.1838,
+        "enrichment": 0.78
+      },
+      "right_AX": {
+        "observed": 0.1693,
+        "expected": 0.1838,
+        "enrichment": 0.921
+      },
+      "left_UN": {
+        "observed": 0.2073,
+        "expected": 0.2297,
+        "enrichment": 0.902
+      },
+      "right_UN": {
+        "observed": 0.2107,
+        "expected": 0.2424,
+        "enrichment": 0.869
+      },
+      "left_LINE_START": {
+        "observed": 0.2263,
+        "expected": 0.138,
+        "enrichment": 1.64
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0915,
+        "expected": 0.116,
+        "enrichment": 0.789
+      }
+    },
+    "25": {
+      "left_CC": {
+        "observed": 0.0857,
+        "expected": 0.0358,
+        "enrichment": 2.394
+      },
+      "right_CC": {
+        "observed": 0.0476,
+        "expected": 0.041,
+        "enrichment": 1.161
+      },
+      "left_EN": {
+        "observed": 0.2857,
+        "expected": 0.2913,
+        "enrichment": 0.981
+      },
+      "right_EN": {
+        "observed": 0.181,
+        "expected": 0.2779,
+        "enrichment": 0.651
+      },
+      "left_FL": {
+        "observed": 0.0571,
+        "expected": 0.0364,
+        "enrichment": 1.57
+      },
+      "right_FL": {
+        "observed": 0.0381,
+        "expected": 0.0504,
+        "enrichment": 0.756
+      },
+      "left_FQ": {
+        "observed": 0.0952,
+        "expected": 0.0851,
+        "enrichment": 1.119
+      },
+      "right_FQ": {
+        "observed": 0.1429,
+        "expected": 0.0884,
+        "enrichment": 1.616
+      },
+      "left_AX": {
+        "observed": 0.219,
+        "expected": 0.1838,
+        "enrichment": 1.192
+      },
+      "right_AX": {
+        "observed": 0.1238,
+        "expected": 0.1838,
+        "enrichment": 0.674
+      },
+      "left_UN": {
+        "observed": 0.2381,
+        "expected": 0.2297,
+        "enrichment": 1.037
+      },
+      "right_UN": {
+        "observed": 0.1714,
+        "expected": 0.2424,
+        "enrichment": 0.707
+      },
+      "left_LINE_START": {
+        "observed": 0.019,
+        "expected": 0.138,
+        "enrichment": 0.138
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.2952,
+        "expected": 0.116,
+        "enrichment": 2.545
+      }
+    },
+    "26": {
+      "left_CC": {
+        "observed": 0.006,
+        "expected": 0.0358,
+        "enrichment": 0.168
+      },
+      "right_CC": {
+        "observed": 0.0301,
+        "expected": 0.041,
+        "enrichment": 0.735
+      },
+      "left_EN": {
+        "observed": 0.2229,
+        "expected": 0.2913,
+        "enrichment": 0.765
+      },
+      "right_EN": {
+        "observed": 0.3373,
+        "expected": 0.2779,
+        "enrichment": 1.214
+      },
+      "left_FL": {
+        "observed": 0.0241,
+        "expected": 0.0364,
+        "enrichment": 0.662
+      },
+      "right_FL": {
+        "observed": 0.0422,
+        "expected": 0.0504,
+        "enrichment": 0.837
+      },
+      "left_FQ": {
+        "observed": 0.0482,
+        "expected": 0.0851,
+        "enrichment": 0.566
+      },
+      "right_FQ": {
+        "observed": 0.0422,
+        "expected": 0.0884,
+        "enrichment": 0.477
+      },
+      "left_AX": {
+        "observed": 0.1084,
+        "expected": 0.1838,
+        "enrichment": 0.59
+      },
+      "right_AX": {
+        "observed": 0.1627,
+        "expected": 0.1838,
+        "enrichment": 0.885
+      },
+      "left_UN": {
+        "observed": 0.3072,
+        "expected": 0.2297,
+        "enrichment": 1.338
+      },
+      "right_UN": {
+        "observed": 0.3253,
+        "expected": 0.2424,
+        "enrichment": 1.342
+      },
+      "left_LINE_START": {
+        "observed": 0.2831,
+        "expected": 0.138,
+        "enrichment": 2.052
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0602,
+        "expected": 0.116,
+        "enrichment": 0.519
+      }
+    },
+    "27": {
+      "left_CC": {
+        "observed": 0.0425,
+        "expected": 0.0358,
+        "enrichment": 1.186
+      },
+      "right_CC": {
+        "observed": 0.0283,
+        "expected": 0.041,
+        "enrichment": 0.69
+      },
+      "left_EN": {
+        "observed": 0.2877,
+        "expected": 0.2913,
+        "enrichment": 0.988
+      },
+      "right_EN": {
+        "observed": 0.2783,
+        "expected": 0.2779,
+        "enrichment": 1.001
+      },
+      "left_FL": {
+        "observed": 0.0377,
+        "expected": 0.0364,
+        "enrichment": 1.037
+      },
+      "right_FL": {
+        "observed": 0.0708,
+        "expected": 0.0504,
+        "enrichment": 1.404
+      },
+      "left_FQ": {
+        "observed": 0.0425,
+        "expected": 0.0851,
+        "enrichment": 0.499
+      },
+      "right_FQ": {
+        "observed": 0.1226,
+        "expected": 0.0884,
+        "enrichment": 1.387
+      },
+      "left_AX": {
+        "observed": 0.1981,
+        "expected": 0.1838,
+        "enrichment": 1.078
+      },
+      "right_AX": {
+        "observed": 0.184,
+        "expected": 0.1838,
+        "enrichment": 1.001
+      },
+      "left_UN": {
+        "observed": 0.2406,
+        "expected": 0.2297,
+        "enrichment": 1.047
+      },
+      "right_UN": {
+        "observed": 0.2689,
+        "expected": 0.2424,
+        "enrichment": 1.109
+      },
+      "left_LINE_START": {
+        "observed": 0.1509,
+        "expected": 0.138,
+        "enrichment": 1.094
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0472,
+        "expected": 0.116,
+        "enrichment": 0.407
+      }
+    },
+    "28": {
+      "left_CC": {
+        "observed": 0.048,
+        "expected": 0.0358,
+        "enrichment": 1.341
+      },
+      "right_CC": {
+        "observed": 0.0608,
+        "expected": 0.041,
+        "enrichment": 1.483
+      },
+      "left_EN": {
+        "observed": 0.3264,
+        "expected": 0.2913,
+        "enrichment": 1.12
+      },
+      "right_EN": {
+        "observed": 0.304,
+        "expected": 0.2779,
+        "enrichment": 1.094
+      },
+      "left_FL": {
+        "observed": 0.0432,
+        "expected": 0.0364,
+        "enrichment": 1.187
+      },
+      "right_FL": {
+        "observed": 0.0544,
+        "expected": 0.0504,
+        "enrichment": 1.079
+      },
+      "left_FQ": {
+        "observed": 0.0896,
+        "expected": 0.0851,
+        "enrichment": 1.053
+      },
+      "right_FQ": {
+        "observed": 0.0832,
+        "expected": 0.0884,
+        "enrichment": 0.941
+      },
+      "left_AX": {
+        "observed": 0.1728,
+        "expected": 0.1838,
+        "enrichment": 0.94
+      },
+      "right_AX": {
+        "observed": 0.1984,
+        "expected": 0.1838,
+        "enrichment": 1.079
+      },
+      "left_UN": {
+        "observed": 0.192,
+        "expected": 0.2297,
+        "enrichment": 0.836
+      },
+      "right_UN": {
+        "observed": 0.2352,
+        "expected": 0.2424,
+        "enrichment": 0.97
+      },
+      "left_LINE_START": {
+        "observed": 0.128,
+        "expected": 0.138,
+        "enrichment": 0.928
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.064,
+        "expected": 0.116,
+        "enrichment": 0.552
+      }
+    },
+    "29": {
+      "left_CC": {
+        "observed": 0.0369,
+        "expected": 0.0358,
+        "enrichment": 1.032
+      },
+      "right_CC": {
+        "observed": 0.032,
+        "expected": 0.041,
+        "enrichment": 0.781
+      },
+      "left_EN": {
+        "observed": 0.3079,
+        "expected": 0.2913,
+        "enrichment": 1.057
+      },
+      "right_EN": {
+        "observed": 0.3288,
+        "expected": 0.2779,
+        "enrichment": 1.183
+      },
+      "left_FL": {
+        "observed": 0.0308,
+        "expected": 0.0364,
+        "enrichment": 0.846
+      },
+      "right_FL": {
+        "observed": 0.0296,
+        "expected": 0.0504,
+        "enrichment": 0.586
+      },
+      "left_FQ": {
+        "observed": 0.0665,
+        "expected": 0.0851,
+        "enrichment": 0.781
+      },
+      "right_FQ": {
+        "observed": 0.0714,
+        "expected": 0.0884,
+        "enrichment": 0.808
+      },
+      "left_AX": {
+        "observed": 0.17,
+        "expected": 0.1838,
+        "enrichment": 0.925
+      },
+      "right_AX": {
+        "observed": 0.1958,
+        "expected": 0.1838,
+        "enrichment": 1.065
+      },
+      "left_UN": {
+        "observed": 0.2106,
+        "expected": 0.2297,
+        "enrichment": 0.917
+      },
+      "right_UN": {
+        "observed": 0.2722,
+        "expected": 0.2424,
+        "enrichment": 1.123
+      },
+      "left_LINE_START": {
+        "observed": 0.1773,
+        "expected": 0.138,
+        "enrichment": 1.285
+      },
+      "right_LINE_START": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "left_LINE_END": {
+        "observed": 0.0,
+        "expected": 0.0,
+        "enrichment": null
+      },
+      "right_LINE_END": {
+        "observed": 0.0702,
+        "expected": 0.116,
+        "enrichment": 0.605
+      }
+    }
+  },
+  "classification": {
+    "method": "nearest_centroid_one_hot_context",
+    "features": "16D (8 left + 8 right role one-hot centroids)",
+    "overall_accuracy": 0.068,
+    "weighted_random_baseline": 0.1033,
+    "lift_over_baseline": 0.66,
+    "per_class_accuracy": {
+      "1": 0.3158,
+      "2": 0.2292,
+      "3": 0.0161,
+      "4": 0.1286,
+      "5": 0.3214,
+      "6": 0.0,
+      "14": 0.1018,
+      "15": 0.1176,
+      "16": 0.3263,
+      "18": 0.0,
+      "19": 0.0405,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.6,
+      "24": 0.0,
+      "25": 0.0571,
+      "26": 0.0,
+      "27": 0.0,
+      "28": 0.136,
+      "29": 0.0
+    },
+    "top_confusion": [
+      {
+        "true": 29,
+        "predicted": 5,
+        "count": 167
+      },
+      {
+        "true": 24,
+        "predicted": 5,
+        "count": 143
+      },
+      {
+        "true": 14,
+        "predicted": 2,
+        "count": 127
+      },
+      {
+        "true": 29,
+        "predicted": 16,
+        "count": 120
+      },
+      {
+        "true": 28,
+        "predicted": 5,
+        "count": 116
+      },
+      {
+        "true": 29,
+        "predicted": 1,
+        "count": 113
+      },
+      {
+        "true": 14,
+        "predicted": 16,
+        "count": 105
+      },
+      {
+        "true": 29,
+        "predicted": 28,
+        "count": 101
+      },
+      {
+        "true": 28,
+        "predicted": 2,
+        "count": 95
+      },
+      {
+        "true": 28,
+        "predicted": 16,
+        "count": 95
+      }
+    ]
+  },
+  "summary": {
+    "total_ax_tokens": 4559,
+    "n_classes": 20,
+    "most_contextually_distinct": [
+      {
+        "class": 22,
+        "accuracy": 0.6
+      },
+      {
+        "class": 16,
+        "accuracy": 0.3263
+      },
+      {
+        "class": 5,
+        "accuracy": 0.3214
+      },
+      {
+        "class": 1,
+        "accuracy": 0.3158
+      },
+      {
+        "class": 2,
+        "accuracy": 0.2292
+      }
+    ],
+    "context_predicts_class": false
+  }
+}

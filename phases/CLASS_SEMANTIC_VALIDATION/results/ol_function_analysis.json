@@ -1,0 +1,75 @@
+{
+  "ol_stats": {
+    "total": 421,
+    "initial": 22,
+    "final": 40,
+    "medial": 359
+  },
+  "ol_preceder_roles": {
+    "UN": 91,
+    "AX": 131,
+    "EN": 104,
+    "FQ": 30,
+    "FL": 23,
+    "CC": 21
+  },
+  "ol_follower_roles": {
+    "AX": 111,
+    "FQ": 35,
+    "UN": 79,
+    "FL": 16,
+    "CC": 19,
+    "EN": 121
+  },
+  "ol_by_regime": {
+    "REGIME_3": {
+      "total": 62,
+      "initial": 3,
+      "final": 1
+    },
+    "REGIME_4": {
+      "total": 102,
+      "initial": 10,
+      "final": 11
+    },
+    "REGIME_1": {
+      "total": 157,
+      "initial": 6,
+      "final": 18
+    },
+    "REGIME_2": {
+      "total": 100,
+      "initial": 3,
+      "final": 10
+    }
+  },
+  "ol_by_section": {
+    "HERBAL": {
+      "total": 24,
+      "initial": 1,
+      "final": 4
+    },
+    "PHARMA": {
+      "total": 7,
+      "initial": 1,
+      "final": 1
+    },
+    "BIO": {
+      "total": 233,
+      "initial": 8,
+      "final": 24
+    },
+    "RECIPE": {
+      "total": 157,
+      "initial": 12,
+      "final": 11
+    }
+  },
+  "daiin_ol_cooccurrence": {
+    "both": 42,
+    "daiin_only": 239,
+    "ol_only": 327,
+    "daiin_before_ol": 24,
+    "ol_before_daiin": 18
+  }
+}

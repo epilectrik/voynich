@@ -1,0 +1,1570 @@
+{
+  "ax_to_ax_matrix": {
+    "1": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0,
+      "5": 1,
+      "6": 3,
+      "14": 3,
+      "15": 0,
+      "16": 0,
+      "18": 2,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 0,
+      "24": 1,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 3,
+      "29": 6
+    },
+    "2": {
+      "1": 1,
+      "2": 3,
+      "3": 0,
+      "4": 2,
+      "5": 0,
+      "6": 0,
+      "14": 5,
+      "15": 1,
+      "16": 2,
+      "18": 1,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 0,
+      "24": 2,
+      "25": 0,
+      "26": 0,
+      "27": 3,
+      "28": 4,
+      "29": 5
+    },
+    "3": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 1,
+      "6": 1,
+      "14": 11,
+      "15": 0,
+      "16": 0,
+      "18": 0,
+      "19": 0,
+      "20": 2,
+      "21": 1,
+      "22": 0,
+      "24": 3,
+      "25": 2,
+      "26": 0,
+      "27": 4,
+      "28": 5,
+      "29": 3
+    },
+    "4": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 5,
+      "14": 7,
+      "15": 4,
+      "16": 2,
+      "18": 5,
+      "19": 2,
+      "20": 5,
+      "21": 3,
+      "22": 1,
+      "24": 7,
+      "25": 5,
+      "26": 0,
+      "27": 2,
+      "28": 17,
+      "29": 14
+    },
+    "5": {
+      "1": 3,
+      "2": 1,
+      "3": 3,
+      "4": 2,
+      "5": 0,
+      "6": 3,
+      "14": 12,
+      "15": 1,
+      "16": 1,
+      "18": 3,
+      "19": 0,
+      "20": 3,
+      "21": 1,
+      "22": 1,
+      "24": 5,
+      "25": 1,
+      "26": 4,
+      "27": 3,
+      "28": 12,
+      "29": 9
+    },
+    "6": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 2,
+      "5": 3,
+      "6": 6,
+      "14": 17,
+      "15": 1,
+      "16": 0,
+      "18": 3,
+      "19": 0,
+      "20": 5,
+      "21": 4,
+      "22": 2,
+      "24": 13,
+      "25": 0,
+      "26": 2,
+      "27": 6,
+      "28": 23,
+      "29": 21
+    },
+    "14": {
+      "1": 3,
+      "2": 3,
+      "3": 6,
+      "4": 6,
+      "5": 3,
+      "6": 16,
+      "14": 97,
+      "15": 6,
+      "16": 7,
+      "18": 18,
+      "19": 11,
+      "20": 21,
+      "21": 7,
+      "22": 4,
+      "24": 41,
+      "25": 11,
+      "26": 8,
+      "27": 20,
+      "28": 43,
+      "29": 42
+    },
+    "15": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 0,
+      "6": 0,
+      "14": 8,
+      "15": 0,
+      "16": 1,
+      "18": 1,
+      "19": 1,
+      "20": 0,
+      "21": 1,
+      "22": 2,
+      "24": 3,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 1,
+      "29": 4
+    },
+    "16": {
+      "1": 0,
+      "2": 3,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 0,
+      "14": 15,
+      "15": 1,
+      "16": 2,
+      "18": 1,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "24": 6,
+      "25": 1,
+      "26": 2,
+      "27": 2,
+      "28": 5,
+      "29": 10
+    },
+    "18": {
+      "1": 3,
+      "2": 2,
+      "3": 0,
+      "4": 0,
+      "5": 3,
+      "6": 4,
+      "14": 21,
+      "15": 2,
+      "16": 2,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 5,
+      "22": 1,
+      "24": 13,
+      "25": 2,
+      "26": 1,
+      "27": 6,
+      "28": 10,
+      "29": 10
+    },
+    "19": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 0,
+      "6": 2,
+      "14": 7,
+      "15": 1,
+      "16": 2,
+      "18": 1,
+      "19": 1,
+      "20": 0,
+      "21": 2,
+      "22": 0,
+      "24": 6,
+      "25": 2,
+      "26": 0,
+      "27": 1,
+      "28": 9,
+      "29": 6
+    },
+    "20": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 4,
+      "6": 5,
+      "14": 12,
+      "15": 2,
+      "16": 1,
+      "18": 2,
+      "19": 3,
+      "20": 7,
+      "21": 2,
+      "22": 0,
+      "24": 16,
+      "25": 3,
+      "26": 0,
+      "27": 9,
+      "28": 12,
+      "29": 20
+    },
+    "21": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "14": 10,
+      "15": 1,
+      "16": 1,
+      "18": 1,
+      "19": 0,
+      "20": 2,
+      "21": 0,
+      "22": 0,
+      "24": 3,
+      "25": 2,
+      "26": 0,
+      "27": 2,
+      "28": 9,
+      "29": 8
+    },
+    "22": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 0,
+      "6": 0,
+      "14": 2,
+      "15": 2,
+      "16": 0,
+      "18": 0,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 0,
+      "24": 2,
+      "25": 0,
+      "26": 0,
+      "27": 1,
+      "28": 4,
+      "29": 0
+    },
+    "24": {
+      "1": 1,
+      "2": 3,
+      "3": 3,
+      "4": 5,
+      "5": 6,
+      "6": 16,
+      "14": 51,
+      "15": 10,
+      "16": 10,
+      "18": 13,
+      "19": 7,
+      "20": 15,
+      "21": 6,
+      "22": 4,
+      "24": 50,
+      "25": 17,
+      "26": 9,
+      "27": 10,
+      "28": 49,
+      "29": 48
+    },
+    "25": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 0,
+      "6": 1,
+      "14": 9,
+      "15": 2,
+      "16": 1,
+      "18": 0,
+      "19": 1,
+      "20": 2,
+      "21": 3,
+      "22": 0,
+      "24": 3,
+      "25": 2,
+      "26": 2,
+      "27": 0,
+      "28": 4,
+      "29": 7
+    },
+    "26": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2,
+      "5": 3,
+      "6": 4,
+      "14": 12,
+      "15": 2,
+      "16": 4,
+      "18": 5,
+      "19": 3,
+      "20": 7,
+      "21": 4,
+      "22": 0,
+      "24": 13,
+      "25": 1,
+      "26": 5,
+      "27": 5,
+      "28": 17,
+      "29": 17
+    },
+    "27": {
+      "1": 3,
+      "2": 2,
+      "3": 2,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "14": 22,
+      "15": 1,
+      "16": 7,
+      "18": 11,
+      "19": 1,
+      "20": 8,
+      "21": 3,
+      "22": 2,
+      "24": 12,
+      "25": 3,
+      "26": 3,
+      "27": 9,
+      "28": 16,
+      "29": 8
+    },
+    "28": {
+      "1": 4,
+      "2": 6,
+      "3": 7,
+      "4": 9,
+      "5": 7,
+      "6": 11,
+      "14": 62,
+      "15": 7,
+      "16": 8,
+      "18": 16,
+      "19": 5,
+      "20": 18,
+      "21": 12,
+      "22": 6,
+      "24": 43,
+      "25": 7,
+      "26": 9,
+      "27": 17,
+      "28": 53,
+      "29": 77
+    },
+    "29": {
+      "1": 3,
+      "2": 6,
+      "3": 5,
+      "4": 15,
+      "5": 12,
+      "6": 17,
+      "14": 95,
+      "15": 6,
+      "16": 13,
+      "18": 11,
+      "19": 15,
+      "20": 19,
+      "21": 19,
+      "22": 7,
+      "24": 40,
+      "25": 18,
+      "26": 15,
+      "27": 18,
+      "28": 55,
+      "29": 88
+    }
+  },
+  "ax_to_role_matrix": {
+    "1": {
+      "CC": 0,
+      "EN": 13,
+      "FL": 0,
+      "FQ": 4,
+      "AX": 5,
+      "UN": 13,
+      "LINE_END": 3
+    },
+    "2": {
+      "CC": 5,
+      "EN": 8,
+      "FL": 4,
+      "FQ": 6,
+      "AX": 10,
+      "UN": 11,
+      "LINE_END": 4
+    },
+    "3": {
+      "CC": 3,
+      "EN": 21,
+      "FL": 4,
+      "FQ": 3,
+      "AX": 11,
+      "UN": 13,
+      "LINE_END": 7
+    },
+    "4": {
+      "CC": 5,
+      "EN": 38,
+      "FL": 3,
+      "FQ": 9,
+      "AX": 27,
+      "UN": 54,
+      "LINE_END": 4
+    },
+    "5": {
+      "CC": 3,
+      "EN": 34,
+      "FL": 2,
+      "FQ": 10,
+      "AX": 22,
+      "UN": 36,
+      "LINE_END": 5
+    },
+    "6": {
+      "CC": 4,
+      "EN": 49,
+      "FL": 9,
+      "FQ": 16,
+      "AX": 43,
+      "UN": 53,
+      "LINE_END": 24
+    },
+    "14": {
+      "CC": 34,
+      "EN": 168,
+      "FL": 59,
+      "FQ": 62,
+      "AX": 148,
+      "UN": 157,
+      "LINE_END": 79
+    },
+    "15": {
+      "CC": 0,
+      "EN": 11,
+      "FL": 0,
+      "FQ": 4,
+      "AX": 10,
+      "UN": 7,
+      "LINE_END": 36
+    },
+    "16": {
+      "CC": 5,
+      "EN": 25,
+      "FL": 1,
+      "FQ": 12,
+      "AX": 21,
+      "UN": 18,
+      "LINE_END": 13
+    },
+    "18": {
+      "CC": 4,
+      "EN": 57,
+      "FL": 8,
+      "FQ": 15,
+      "AX": 20,
+      "UN": 48,
+      "LINE_END": 12
+    },
+    "19": {
+      "CC": 1,
+      "EN": 17,
+      "FL": 4,
+      "FQ": 3,
+      "AX": 19,
+      "UN": 13,
+      "LINE_END": 17
+    },
+    "20": {
+      "CC": 9,
+      "EN": 45,
+      "FL": 10,
+      "FQ": 20,
+      "AX": 31,
+      "UN": 31,
+      "LINE_END": 52
+    },
+    "21": {
+      "CC": 3,
+      "EN": 15,
+      "FL": 5,
+      "FQ": 10,
+      "AX": 8,
+      "UN": 26,
+      "LINE_END": 44
+    },
+    "22": {
+      "CC": 0,
+      "EN": 4,
+      "FL": 3,
+      "FQ": 1,
+      "AX": 3,
+      "UN": 6,
+      "LINE_END": 28
+    },
+    "24": {
+      "CC": 31,
+      "EN": 171,
+      "FL": 34,
+      "FQ": 70,
+      "AX": 98,
+      "UN": 122,
+      "LINE_END": 53
+    },
+    "25": {
+      "CC": 5,
+      "EN": 19,
+      "FL": 4,
+      "FQ": 15,
+      "AX": 13,
+      "UN": 18,
+      "LINE_END": 31
+    },
+    "26": {
+      "CC": 5,
+      "EN": 56,
+      "FL": 7,
+      "FQ": 7,
+      "AX": 27,
+      "UN": 54,
+      "LINE_END": 10
+    },
+    "27": {
+      "CC": 6,
+      "EN": 59,
+      "FL": 15,
+      "FQ": 26,
+      "AX": 39,
+      "UN": 57,
+      "LINE_END": 10
+    },
+    "28": {
+      "CC": 38,
+      "EN": 190,
+      "FL": 34,
+      "FQ": 52,
+      "AX": 124,
+      "UN": 147,
+      "LINE_END": 40
+    },
+    "29": {
+      "CC": 26,
+      "EN": 267,
+      "FL": 24,
+      "FQ": 58,
+      "AX": 159,
+      "UN": 221,
+      "LINE_END": 57
+    }
+  },
+  "per_class_metrics": {
+    "1": {
+      "n_tokens": 38,
+      "total_ax_successors": 22,
+      "self_chain_count": 0,
+      "self_chain_rate": 0.0,
+      "expected_self_chain_rate": 0.0083,
+      "self_chain_enrichment": 0.0,
+      "transition_entropy": 3.015,
+      "transition_max_entropy": 3.322,
+      "transition_normalized_entropy": 0.908,
+      "chi_squared": {
+        "statistic": 3.33,
+        "df": 4,
+        "p_value": 0.593549,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 29,
+        "count": 6
+      },
+      "preferred_role_successor": {
+        "role": "UN",
+        "count": 13
+      },
+      "preferred_role_predecessor": {
+        "role": "UN",
+        "count": 15
+      },
+      "role_successor_dist": {
+        "UN": 13,
+        "EN": 13,
+        "FQ": 4,
+        "AX": 5,
+        "LINE_END": 3
+      },
+      "role_predecessor_dist": {
+        "UN": 15,
+        "AX": 6,
+        "FL": 1,
+        "EN": 10,
+        "LINE_START": 3,
+        "FQ": 3
+      }
+    },
+    "2": {
+      "n_tokens": 48,
+      "total_ax_successors": 30,
+      "self_chain_count": 3,
+      "self_chain_rate": 0.1,
+      "expected_self_chain_rate": 0.0105,
+      "self_chain_enrichment": 9.498,
+      "transition_entropy": 3.349,
+      "transition_max_entropy": 3.585,
+      "transition_normalized_entropy": 0.934,
+      "chi_squared": {
+        "statistic": 5.23,
+        "df": 8,
+        "p_value": 0.755768,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 5
+      },
+      "preferred_role_successor": {
+        "role": "UN",
+        "count": 11
+      },
+      "preferred_role_predecessor": {
+        "role": "UN",
+        "count": 15
+      },
+      "role_successor_dist": {
+        "UN": 11,
+        "FQ": 6,
+        "AX": 10,
+        "EN": 8,
+        "FL": 4,
+        "LINE_END": 4,
+        "CC": 5
+      },
+      "role_predecessor_dist": {
+        "AX": 13,
+        "UN": 15,
+        "FQ": 7,
+        "EN": 8,
+        "FL": 1,
+        "CC": 2,
+        "LINE_START": 2
+      }
+    },
+    "3": {
+      "n_tokens": 62,
+      "total_ax_successors": 34,
+      "self_chain_count": 0,
+      "self_chain_rate": 0.0,
+      "expected_self_chain_rate": 0.0136,
+      "self_chain_enrichment": 0.0,
+      "transition_entropy": 2.994,
+      "transition_max_entropy": 3.459,
+      "transition_normalized_entropy": 0.865,
+      "chi_squared": {
+        "statistic": 15.74,
+        "df": 9,
+        "p_value": 0.05619,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 11
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 21
+      },
+      "preferred_role_predecessor": {
+        "role": "UN",
+        "count": 19
+      },
+      "role_successor_dist": {
+        "UN": 13,
+        "LINE_END": 7,
+        "EN": 21,
+        "AX": 11,
+        "FQ": 3,
+        "FL": 4,
+        "CC": 3
+      },
+      "role_predecessor_dist": {
+        "LINE_START": 4,
+        "FQ": 8,
+        "UN": 19,
+        "EN": 18,
+        "AX": 10,
+        "FL": 3
+      }
+    },
+    "4": {
+      "n_tokens": 140,
+      "total_ax_successors": 84,
+      "self_chain_count": 2,
+      "self_chain_rate": 0.0238,
+      "expected_self_chain_rate": 0.0307,
+      "self_chain_enrichment": 0.775,
+      "transition_entropy": 3.639,
+      "transition_max_entropy": 4.087,
+      "transition_normalized_entropy": 0.89,
+      "chi_squared": {
+        "statistic": 24.82,
+        "df": 16,
+        "p_value": 0.059534,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 28,
+        "count": 17
+      },
+      "preferred_role_successor": {
+        "role": "UN",
+        "count": 54
+      },
+      "preferred_role_predecessor": {
+        "role": "LINE_START",
+        "count": 47
+      },
+      "role_successor_dist": {
+        "AX": 27,
+        "EN": 38,
+        "UN": 54,
+        "CC": 5,
+        "FQ": 9,
+        "LINE_END": 4,
+        "FL": 3
+      },
+      "role_predecessor_dist": {
+        "UN": 34,
+        "LINE_START": 47,
+        "EN": 23,
+        "FQ": 8,
+        "AX": 26,
+        "FL": 1,
+        "CC": 1
+      }
+    },
+    "5": {
+      "n_tokens": 112,
+      "total_ax_successors": 68,
+      "self_chain_count": 0,
+      "self_chain_rate": 0.0,
+      "expected_self_chain_rate": 0.0246,
+      "self_chain_enrichment": 0.0,
+      "transition_entropy": 3.665,
+      "transition_max_entropy": 4.17,
+      "transition_normalized_entropy": 0.879,
+      "chi_squared": {
+        "statistic": 7.74,
+        "df": 15,
+        "p_value": 0.907539,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 12
+      },
+      "preferred_role_successor": {
+        "role": "UN",
+        "count": 36
+      },
+      "preferred_role_predecessor": {
+        "role": "LINE_START",
+        "count": 38
+      },
+      "role_successor_dist": {
+        "EN": 34,
+        "UN": 36,
+        "LINE_END": 5,
+        "FL": 2,
+        "AX": 22,
+        "CC": 3,
+        "FQ": 10
+      },
+      "role_predecessor_dist": {
+        "EN": 32,
+        "UN": 20,
+        "LINE_START": 38,
+        "FQ": 2,
+        "AX": 13,
+        "CC": 7
+      }
+    },
+    "6": {
+      "n_tokens": 198,
+      "total_ax_successors": 111,
+      "self_chain_count": 6,
+      "self_chain_rate": 0.0541,
+      "expected_self_chain_rate": 0.0434,
+      "self_chain_enrichment": 1.245,
+      "transition_entropy": 3.353,
+      "transition_max_entropy": 4.0,
+      "transition_normalized_entropy": 0.838,
+      "chi_squared": {
+        "statistic": 14.95,
+        "df": 18,
+        "p_value": 0.694505,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 28,
+        "count": 23
+      },
+      "preferred_role_successor": {
+        "role": "UN",
+        "count": 53
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 51
+      },
+      "role_successor_dist": {
+        "UN": 53,
+        "AX": 43,
+        "EN": 49,
+        "LINE_END": 24,
+        "CC": 4,
+        "FQ": 16,
+        "FL": 9
+      },
+      "role_predecessor_dist": {
+        "LINE_START": 40,
+        "EN": 51,
+        "FL": 6,
+        "UN": 41,
+        "AX": 44,
+        "FQ": 14,
+        "CC": 2
+      }
+    },
+    "14": {
+      "n_tokens": 707,
+      "total_ax_successors": 373,
+      "self_chain_count": 97,
+      "self_chain_rate": 0.2601,
+      "expected_self_chain_rate": 0.1551,
+      "self_chain_enrichment": 1.677,
+      "transition_entropy": 3.595,
+      "transition_max_entropy": 4.322,
+      "transition_normalized_entropy": 0.832,
+      "chi_squared": {
+        "statistic": 55.8,
+        "df": 19,
+        "p_value": 0.0,
+        "is_structured": true
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 97
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 168
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 232
+      },
+      "role_successor_dist": {
+        "LINE_END": 79,
+        "AX": 148,
+        "UN": 157,
+        "EN": 168,
+        "FL": 59,
+        "FQ": 62,
+        "CC": 34
+      },
+      "role_predecessor_dist": {
+        "EN": 232,
+        "FQ": 87,
+        "AX": 145,
+        "UN": 171,
+        "CC": 31,
+        "FL": 32,
+        "LINE_START": 9
+      }
+    },
+    "15": {
+      "n_tokens": 68,
+      "total_ax_successors": 23,
+      "self_chain_count": 0,
+      "self_chain_rate": 0.0,
+      "expected_self_chain_rate": 0.0149,
+      "self_chain_enrichment": 0.0,
+      "transition_entropy": 2.839,
+      "transition_max_entropy": 3.322,
+      "transition_normalized_entropy": 0.854,
+      "chi_squared": {
+        "statistic": 8.05,
+        "df": 4,
+        "p_value": 0.075871,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 8
+      },
+      "preferred_role_successor": {
+        "role": "LINE_END",
+        "count": 36
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 18
+      },
+      "role_successor_dist": {
+        "UN": 7,
+        "FQ": 4,
+        "AX": 10,
+        "EN": 11,
+        "LINE_END": 36
+      },
+      "role_predecessor_dist": {
+        "UN": 17,
+        "AX": 15,
+        "EN": 18,
+        "FL": 3,
+        "FQ": 10,
+        "CC": 2,
+        "LINE_START": 3
+      }
+    },
+    "16": {
+      "n_tokens": 95,
+      "total_ax_successors": 56,
+      "self_chain_count": 2,
+      "self_chain_rate": 0.0357,
+      "expected_self_chain_rate": 0.0208,
+      "self_chain_enrichment": 1.714,
+      "transition_entropy": 3.42,
+      "transition_max_entropy": 4.087,
+      "transition_normalized_entropy": 0.837,
+      "chi_squared": {
+        "statistic": 10.71,
+        "df": 13,
+        "p_value": 0.673085,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 15
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 25
+      },
+      "preferred_role_predecessor": {
+        "role": "AX",
+        "count": 34
+      },
+      "role_successor_dist": {
+        "AX": 21,
+        "LINE_END": 13,
+        "UN": 18,
+        "EN": 25,
+        "FL": 1,
+        "CC": 5,
+        "FQ": 12
+      },
+      "role_predecessor_dist": {
+        "AX": 34,
+        "FQ": 6,
+        "EN": 22,
+        "LINE_START": 5,
+        "UN": 24,
+        "FL": 1,
+        "CC": 3
+      }
+    },
+    "18": {
+      "n_tokens": 164,
+      "total_ax_successors": 88,
+      "self_chain_count": 1,
+      "self_chain_rate": 0.0114,
+      "expected_self_chain_rate": 0.036,
+      "self_chain_enrichment": 0.316,
+      "transition_entropy": 3.512,
+      "transition_max_entropy": 4.17,
+      "transition_normalized_entropy": 0.842,
+      "chi_squared": {
+        "statistic": 21.18,
+        "df": 16,
+        "p_value": 0.179706,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 21
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 57
+      },
+      "preferred_role_predecessor": {
+        "role": "UN",
+        "count": 50
+      },
+      "role_successor_dist": {
+        "AX": 20,
+        "EN": 57,
+        "UN": 48,
+        "LINE_END": 12,
+        "CC": 4,
+        "FL": 8,
+        "FQ": 15
+      },
+      "role_predecessor_dist": {
+        "AX": 34,
+        "EN": 49,
+        "UN": 50,
+        "FL": 4,
+        "FQ": 17,
+        "LINE_START": 7,
+        "CC": 3
+      }
+    },
+    "19": {
+      "n_tokens": 74,
+      "total_ax_successors": 41,
+      "self_chain_count": 1,
+      "self_chain_rate": 0.0244,
+      "expected_self_chain_rate": 0.0162,
+      "self_chain_enrichment": 1.503,
+      "transition_entropy": 3.231,
+      "transition_max_entropy": 3.7,
+      "transition_normalized_entropy": 0.873,
+      "chi_squared": {
+        "statistic": 7.39,
+        "df": 10,
+        "p_value": 0.719919,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 28,
+        "count": 9
+      },
+      "preferred_role_successor": {
+        "role": "AX",
+        "count": 19
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 20
+      },
+      "role_successor_dist": {
+        "FL": 4,
+        "LINE_END": 17,
+        "AX": 19,
+        "UN": 13,
+        "EN": 17,
+        "FQ": 3,
+        "CC": 1
+      },
+      "role_predecessor_dist": {
+        "UN": 18,
+        "AX": 17,
+        "LINE_START": 3,
+        "FQ": 8,
+        "EN": 20,
+        "FL": 4,
+        "CC": 4
+      }
+    },
+    "20": {
+      "n_tokens": 198,
+      "total_ax_successors": 100,
+      "self_chain_count": 7,
+      "self_chain_rate": 0.07,
+      "expected_self_chain_rate": 0.0434,
+      "self_chain_enrichment": 1.612,
+      "transition_entropy": 3.426,
+      "transition_max_entropy": 3.907,
+      "transition_normalized_entropy": 0.877,
+      "chi_squared": {
+        "statistic": 18.23,
+        "df": 17,
+        "p_value": 0.416716,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 29,
+        "count": 20
+      },
+      "preferred_role_successor": {
+        "role": "LINE_END",
+        "count": 52
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 59
+      },
+      "role_successor_dist": {
+        "LINE_END": 52,
+        "AX": 31,
+        "FQ": 20,
+        "UN": 31,
+        "EN": 45,
+        "CC": 9,
+        "FL": 10
+      },
+      "role_predecessor_dist": {
+        "EN": 59,
+        "AX": 38,
+        "CC": 9,
+        "FQ": 18,
+        "LINE_START": 26,
+        "UN": 40,
+        "FL": 8
+      }
+    },
+    "21": {
+      "n_tokens": 111,
+      "total_ax_successors": 41,
+      "self_chain_count": 0,
+      "self_chain_rate": 0.0,
+      "expected_self_chain_rate": 0.0243,
+      "self_chain_enrichment": 0.0,
+      "transition_entropy": 3.004,
+      "transition_max_entropy": 3.585,
+      "transition_normalized_entropy": 0.838,
+      "chi_squared": {
+        "statistic": 10.84,
+        "df": 10,
+        "p_value": 0.425155,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 10
+      },
+      "preferred_role_successor": {
+        "role": "LINE_END",
+        "count": 44
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 37
+      },
+      "role_successor_dist": {
+        "LINE_END": 44,
+        "FQ": 10,
+        "FL": 5,
+        "EN": 15,
+        "AX": 8,
+        "UN": 26,
+        "CC": 3
+      },
+      "role_predecessor_dist": {
+        "UN": 33,
+        "FQ": 9,
+        "AX": 21,
+        "EN": 37,
+        "LINE_START": 5,
+        "CC": 3,
+        "FL": 3
+      }
+    },
+    "22": {
+      "n_tokens": 45,
+      "total_ax_successors": 14,
+      "self_chain_count": 0,
+      "self_chain_rate": 0.0,
+      "expected_self_chain_rate": 0.0099,
+      "self_chain_enrichment": 0.0,
+      "transition_entropy": 2.807,
+      "transition_max_entropy": 3.0,
+      "transition_normalized_entropy": 0.936,
+      "chi_squared": {
+        "statistic": 0,
+        "df": 0,
+        "p_value": null,
+        "is_structured": null
+      },
+      "preferred_ax_successor": {
+        "class": 28,
+        "count": 4
+      },
+      "preferred_role_successor": {
+        "role": "LINE_END",
+        "count": 28
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 15
+      },
+      "role_successor_dist": {
+        "LINE_END": 28,
+        "FL": 3,
+        "UN": 6,
+        "EN": 4,
+        "FQ": 1,
+        "AX": 3
+      },
+      "role_predecessor_dist": {
+        "UN": 12,
+        "AX": 10,
+        "EN": 15,
+        "LINE_START": 1,
+        "FQ": 3,
+        "CC": 2,
+        "FL": 2
+      }
+    },
+    "24": {
+      "n_tokens": 579,
+      "total_ax_successors": 333,
+      "self_chain_count": 50,
+      "self_chain_rate": 0.1502,
+      "expected_self_chain_rate": 0.127,
+      "self_chain_enrichment": 1.182,
+      "transition_entropy": 3.686,
+      "transition_max_entropy": 4.322,
+      "transition_normalized_entropy": 0.853,
+      "chi_squared": {
+        "statistic": 30.79,
+        "df": 19,
+        "p_value": 0.027938,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 51
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 171
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 152
+      },
+      "role_successor_dist": {
+        "UN": 122,
+        "FQ": 70,
+        "LINE_END": 53,
+        "FL": 34,
+        "CC": 31,
+        "EN": 171,
+        "AX": 98
+      },
+      "role_predecessor_dist": {
+        "AX": 83,
+        "FQ": 51,
+        "LINE_START": 131,
+        "FL": 27,
+        "EN": 152,
+        "UN": 120,
+        "CC": 15
+      }
+    },
+    "25": {
+      "n_tokens": 105,
+      "total_ax_successors": 41,
+      "self_chain_count": 2,
+      "self_chain_rate": 0.0488,
+      "expected_self_chain_rate": 0.023,
+      "self_chain_enrichment": 2.118,
+      "transition_entropy": 3.511,
+      "transition_max_entropy": 3.907,
+      "transition_normalized_entropy": 0.899,
+      "chi_squared": {
+        "statistic": 7.5,
+        "df": 10,
+        "p_value": 0.712189,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 9
+      },
+      "preferred_role_successor": {
+        "role": "LINE_END",
+        "count": 31
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 30
+      },
+      "role_successor_dist": {
+        "AX": 13,
+        "UN": 18,
+        "FL": 4,
+        "LINE_END": 31,
+        "FQ": 15,
+        "EN": 19,
+        "CC": 5
+      },
+      "role_predecessor_dist": {
+        "EN": 30,
+        "AX": 23,
+        "CC": 9,
+        "UN": 25,
+        "FL": 6,
+        "FQ": 10,
+        "LINE_START": 2
+      }
+    },
+    "26": {
+      "n_tokens": 166,
+      "total_ax_successors": 106,
+      "self_chain_count": 5,
+      "self_chain_rate": 0.0472,
+      "expected_self_chain_rate": 0.0364,
+      "self_chain_enrichment": 1.295,
+      "transition_entropy": 3.67,
+      "transition_max_entropy": 4.087,
+      "transition_normalized_entropy": 0.898,
+      "chi_squared": {
+        "statistic": 10.92,
+        "df": 18,
+        "p_value": 0.880881,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 29,
+        "count": 17
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 56
+      },
+      "preferred_role_predecessor": {
+        "role": "UN",
+        "count": 51
+      },
+      "role_successor_dist": {
+        "CC": 5,
+        "EN": 56,
+        "LINE_END": 10,
+        "AX": 27,
+        "UN": 54,
+        "FL": 7,
+        "FQ": 7
+      },
+      "role_predecessor_dist": {
+        "UN": 51,
+        "EN": 37,
+        "AX": 18,
+        "LINE_START": 47,
+        "FQ": 8,
+        "FL": 4,
+        "CC": 1
+      }
+    },
+    "27": {
+      "n_tokens": 212,
+      "total_ax_successors": 122,
+      "self_chain_count": 9,
+      "self_chain_rate": 0.0738,
+      "expected_self_chain_rate": 0.0465,
+      "self_chain_enrichment": 1.586,
+      "transition_entropy": 3.823,
+      "transition_max_entropy": 4.322,
+      "transition_normalized_entropy": 0.885,
+      "chi_squared": {
+        "statistic": 38.1,
+        "df": 19,
+        "p_value": 0.000975,
+        "is_structured": true
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 22
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 59
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 61
+      },
+      "role_successor_dist": {
+        "EN": 59,
+        "AX": 39,
+        "UN": 57,
+        "FL": 15,
+        "FQ": 26,
+        "CC": 6,
+        "LINE_END": 10
+      },
+      "role_predecessor_dist": {
+        "UN": 51,
+        "FQ": 9,
+        "AX": 42,
+        "LINE_START": 32,
+        "EN": 61,
+        "FL": 8,
+        "CC": 9
+      }
+    },
+    "28": {
+      "n_tokens": 625,
+      "total_ax_successors": 384,
+      "self_chain_count": 53,
+      "self_chain_rate": 0.138,
+      "expected_self_chain_rate": 0.1371,
+      "self_chain_enrichment": 1.007,
+      "transition_entropy": 3.667,
+      "transition_max_entropy": 4.322,
+      "transition_normalized_entropy": 0.848,
+      "chi_squared": {
+        "statistic": 12.06,
+        "df": 19,
+        "p_value": 0.869873,
+        "is_structured": false
+      },
+      "preferred_ax_successor": {
+        "class": 29,
+        "count": 77
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 190
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 204
+      },
+      "role_successor_dist": {
+        "FQ": 52,
+        "EN": 190,
+        "UN": 147,
+        "AX": 124,
+        "LINE_END": 40,
+        "CC": 38,
+        "FL": 34
+      },
+      "role_predecessor_dist": {
+        "EN": 204,
+        "LINE_START": 80,
+        "UN": 120,
+        "AX": 108,
+        "FQ": 56,
+        "FL": 27,
+        "CC": 30
+      }
+    },
+    "29": {
+      "n_tokens": 812,
+      "total_ax_successors": 477,
+      "self_chain_count": 88,
+      "self_chain_rate": 0.1845,
+      "expected_self_chain_rate": 0.1781,
+      "self_chain_enrichment": 1.036,
+      "transition_entropy": 3.706,
+      "transition_max_entropy": 4.322,
+      "transition_normalized_entropy": 0.858,
+      "chi_squared": {
+        "statistic": 37.86,
+        "df": 19,
+        "p_value": 0.00111,
+        "is_structured": true
+      },
+      "preferred_ax_successor": {
+        "class": 14,
+        "count": 95
+      },
+      "preferred_role_successor": {
+        "role": "EN",
+        "count": 267
+      },
+      "preferred_role_predecessor": {
+        "role": "EN",
+        "count": 250
+      },
+      "role_successor_dist": {
+        "FQ": 58,
+        "AX": 159,
+        "UN": 221,
+        "FL": 24,
+        "LINE_END": 57,
+        "EN": 267,
+        "CC": 26
+      },
+      "role_predecessor_dist": {
+        "EN": 250,
+        "UN": 171,
+        "LINE_START": 144,
+        "AX": 138,
+        "FQ": 54,
+        "FL": 25,
+        "CC": 30
+      }
+    }
+  },
+  "summary": {
+    "total_ax_tokens": 4559,
+    "n_classes": 20,
+    "classes_with_structured_transitions": 3,
+    "classes_insufficient_data": [
+      22
+    ],
+    "mean_self_chain_rate": 0.0611,
+    "mean_transition_entropy": 3.396
+  }
+}

@@ -74,6 +74,42 @@ The fourth axis is control tightness, not intensity:
 
 ---
 
+## Empirical Confirmation: Section H Data (C494.a)
+
+**Finding:** Section H provides empirical evidence for the "gentle but precise" case.
+
+| Section | REGIME_4 % | ch/sh ratio | High-fire % | Profile |
+|---------|------------|-------------|-------------|---------|
+| H | **43.8%** | **1.86** | **3.9%** | Gentle + Precise |
+| S | 43.0% | 2.00 | 7.1% | Aggressive + Precise |
+| B | 10.0% | 0.96 | 7.5% | Balanced |
+
+**Section H shows:**
+- Highest REGIME_4 concentration among Currier B sections (43.8%)
+- Highest ch/sh ratio (1.86) = precision mode dominates
+- LOWEST high-fire suffix rate (3.9%) = gentle processing
+
+**Cross-analysis within ch-prefix tokens:**
+
+| Section | Within-ch high/low ratio | Interpretation |
+|---------|--------------------------|----------------|
+| S | 0.43 | Precision + high fire |
+| B | 0.34 | Balanced |
+| H | **0.20** | **Precision + low fire** |
+
+Even when using precision mode (ch), Section H stays at low fire-degree.
+
+**Interpretation:** Section H documents "volatile aromatic distillation" - procedures requiring:
+- Gentle heat (low fire-degree)
+- Precise temperature control (ch-dominance)
+- High monitoring (REGIME_4 concentration)
+
+This confirms C494's claim that precision and intensity are orthogonal. Section H is the empirical instantiation of "gentle but exact timing."
+
+**Source:** REGIME_SEMANTIC_INTERPRETATION phase (2026-01-25)
+
+---
+
 ## Provenance
 
 - **Phase:** BRUNSCHWIG_TEMPLATE_FIT

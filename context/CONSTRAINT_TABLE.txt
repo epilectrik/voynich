@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 562 constraints | 2026-01-23
+CONSTRAINT_REFERENCE v2.6 | 630 constraints | 2026-01-25
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -47,19 +47,17 @@ C126	0 contradictions across 8 families	2	B	in: grammar_system
 C126	0 Cross-Family Contradictions	2	B	in: grammar_system
 C129	Family differences = coverage artifacts	2	B	in: grammar_system
 C129	Family Differences = Coverage Artifacts	2	B	in: grammar_system
-C130	DSL hypothesis rejected (0.19% reference rate)	1	B	in: falsified
-C130	DSL Hypothesis Rejected	0	B	in: tier0_core
+C130	DSL hypothesis rejected (0.19% reference rate)	1	B	-> CORE/falsifications
 C131	Role consistency LOW (23.8%)	2	B	in: grammar_system
 C131	Role Consistency LOW	0	B	in: tier0_core
-C132	Language encoding CLOSED	1	B	in: falsified
-C132	Language Encoding CLOSED	0	B	in: tier0_core
-C137	Swap invariance confirmed (p=1.0)	1	B	in: falsified
+C132	Language encoding CLOSED	1	B	-> CORE/falsifications
+C137	Swap invariance confirmed (p=1.0)	1	B	-> CORE/falsifications
 C137	Swap Invariance Confirmed	2	B	in: grammar_system
-C138	Illustrations do not constrain execution	1	B	in: falsified
+C138	Illustrations do not constrain execution	1	B	-> CORE/falsifications
 C138	Illustrations Don't Constrain Execution	2	B	in: grammar_system
 C139	Grammar recovered from text-only	2	B	in: grammar_system
 C139	Grammar Recovered from Text-Only	2	B	in: grammar_system
-C140	Illustrations are epiphenomenal	1	B	in: falsified
+C140	Illustrations are epiphenomenal	1	B	-> CORE/falsifications
 C140	Illustrations Are Epiphenomenal	2	B	in: grammar_system
 C141	Cross-family transplant = ZERO degradation	2	B	in: grammar_system
 C141	Cross-Family Transplant = Zero Degradation	2	B	in: grammar_system
@@ -73,7 +71,7 @@ C155	Piecewise-sequential geometry (PC1 rho=-0.624)	2	B	in: organization
 C155	Piecewise-Sequential Geometry	2	B	in: organization
 C156	Detected sections match codicology (4.3x quire alignment)	2	B	in: organization
 C156	Sections Match Codicology	2	B	in: organization
-C157	Circulatory reflux uniquely compatible (100%)	3	B	in: speculative
+C157	Circulatory reflux uniquely compatible (100%)	3	B	-> SPECULATIVE/
 C157	Circulatory Reflux Compatible	2	B	in: organization
 C158	Extended runs necessary (12.6% envelope gap)	2	B	in: organization
 C159	Section boundaries organizational (F-ratio 0.37)	2	B	in: organization
@@ -132,7 +130,7 @@ C196	100% EXPERT_REFERENCE Match	2	B	in: operations
 C197	Designed for experts, not novices	2	B	in: operations
 C197	Designed for Experts	2	B	in: operations
 C198	OPS CLOSED	2	B	in: operations
-C199	Both mineral AND botanical survive	3	B	in: speculative
+C199	Both mineral AND botanical survive	3	B	in: operations
 C199	Both Mineral AND Botanical Survive	2	B	in: operations
 C200	6 Product Survivors	2	B	in: operations
 C201	Guild-Restricted Ecosystem	2	B	in: operations
@@ -150,7 +148,7 @@ C211	Seasonal ordering underpowered	2	B	in: operations
 C212	93% plants peak May-August	2	B	in: operations
 C213	Opportunity-loss model supported (64.7% premature hazards)	2	B	in: operations
 C214	EXT-4 duration criterion INVALIDATED	2	B	in: operations
-C215	BOTANICAL_FAVORED (8/8 tests, ratio 2.37)	3	B	in: speculative
+C215	BOTANICAL_FAVORED (8/8 tests, ratio 2.37)	3	B	in: operations
 C215	BOTANICAL_FAVORED	2	B	in: operations
 C216	Hybrid hazard model (71% batch, 29% apparatus)	2	B	in: operations
 C216	Hybrid Hazard Model	2	B	in: operations
@@ -503,7 +501,7 @@ C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC	in: azc_syst
 C496	Nymph-Adjacent S-Position Prefix Bias	2	AZC	in: azc_system
 C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits)	2	A	in: currier_a
 C497	f49v Instructional Apparatus Folio	2	A	in: currier_a
-C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
+C498	**Registry-Internal Vocabulary Track** (61.8% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
 C498	Registry-Internal Vocabulary Track	2	A	in: currier_a
 C498.a	**A∩B Shared Vocabulary Bifurcation** (154 AZC-Mediated + 114 B-Native Overlap; pipeline scope narrowed)	2	A	in: currier_a
 C498.b	**RI Singleton Population** (~977 singletons, mean 4.82 chars; functional interpretation WEAKENED - see C498.d)	2	A	in: currier_a
@@ -517,8 +515,12 @@ C501	**B-Exclusive MIDDLE Stratification** (569 B-exclusive types: L-compounds 4
 C501	B-Exclusive MIDDLE Stratification	2	A	in: currier_a
 C502	**A-Record Viability Filtering** (Strict interpretation: ~96/480 B tokens legal per A; 13.3% mean B folio coverage; 80% filtered)	2	A+B	in: currier_a
 C502	A-Record Viability Filtering	2	A	in: currier_a
-C503	**Class-Level Filtering** (1,203 unique patterns, 6 always-survive classes, 32.3 mean; infrastructure classes vulnerable)	2	A+B	in: currier_a
+C502.a	**Full Morphological Filtering Cascade** (PREFIX+MIDDLE+SUFFIX: 38 tokens legal (0.8%); MIDDLE 5.3%, +PREFIX 64% reduction, +SUFFIX 50% reduction, combined 85% beyond MIDDLE)	2	A+B	in: currier_a
+C503	**Class-Level Filtering** (MIDDLE-only: 1,203 unique patterns, 6 always-survive classes, 32.3 mean; infrastructure classes vulnerable)	2	A+B	in: currier_a
 C503	Class-Level Filtering Under Strict Model	2	A	in: currier_a
+C503.a	**Class Survival Under Full Morphology** (PREFIX+MIDDLE+SUFFIX: 6.8 mean classes (10.8%); 83.7% reduction from MIDDLE-only; ~7 classes = actual instruction budget)	2	A+B	in: currier_a
+C503.b	**No Universal Classes Under Full Morphology** (C121's 49 classes: 0 universal; Class 9 highest at 56.1%; C503's "6 unfilterable" = 10-56% coverage; MIDDLE-only claim doesn't hold under full filtering)	2	A+B	in: currier_a
+C503.c	**Kernel Character Coverage** (k/h/e are chars within tokens, not standalone; h=95.6%, k=81.1%, e=60.8%; union=97.6%; only 2.4% lack kernel access; kernel nearly universal)	2	A+B	in: currier_a
 C504	**MIDDLE Function Bifurcation** (PP 86 types r=0.772 with survival; RI 1,293 types r=-0.046; 75% records have both)	2	A+B	in: currier_a
 C504	MIDDLE Function Bifurcation in A Records	2	A	in: currier_a
 C505	**PP Profile Differentiation by Material Class** ('te' 16.1×, 'ho' 8.6×, 'ke' 5.1× in animal records; A-registry organization only)	2	A	in: currier_a
@@ -529,17 +531,21 @@ C506.a	**Intra-Class Token Configuration** (Same classes, different PP: Jaccard=
 C506.b	**Intra-Class Behavioral Heterogeneity** (Different-MIDDLE tokens: same position p=0.11, different transitions p<0.0001; 73% MIDDLE pairs have JS>0.4)	2	B	in: currier_a
 C507	**PP-HT Partial Responsibility Substitution** (rho=-0.294, p=0.0015; PP 0-3 = 18.8% HT vs PP 6+ = 12.6% HT; HT TTR r=+0.40)	2	A+HT	in: currier_a, human_track
 C507	Partial Responsibility Substitution between PP and HT	2	A	in: currier_a
-C508	**Token-Level Discrimination Primacy** (Class Jaccard=0.391, Token Jaccard=0.700; 27.5% within-class mutual exclusion; fine discrimination at member level, not class level)	2	A→B	in: currier_a
+C508	**Token-Level Discrimination Primacy** (MIDDLE-only: Class Jaccard=0.391, Token Jaccard=0.700; 27.5% within-class mutual exclusion; fine discrimination at member level, not class level)	2	A→B	in: currier_a
 C508	Token-Level Discrimination Primacy	2	A	in: currier_a
+C508.a	**Class-Level Discrimination Under Full Morphology** (REVISION: Full morph Class Jaccard=0.755, Token=0.961; 27% class mutual exclusion; "WHICH" now matters, not just "HOW MANY")	2	A→B	in: currier_a
 C509	**PP/RI Dimensional Separability** (72 PP sets shared by records with different RI; 229 records (14.5%) share PP; 26 pure-RI, 399 pure-PP; dimensions orthogonal)	2	A	in: currier_a
 C509	PP/RI Dimensional Separability	2	A	in: currier_a
 C509.a	**RI Morphological Divergence** (RI: 58.5% PREFIX, 3.96-char MIDDLE; PP: 85.4% PREFIX, 1.46-char MIDDLE; RI is MIDDLE-centric, PP is template-balanced)	2	A	in: currier_a
+C509.b	**PREFIX-Class Determinism** (Class P_xxx requires A-PREFIX 'xxx' with 100% necessity; sufficiency 72-100%; 27% mutual exclusion = PREFIX sparsity)	2	A→B	in: currier_a
+C509.c	**No Universal Instruction Set** (0 classes in ALL records; BARE highest at 96.8%; 50 records lack BARE-compatible MIDDLEs; ~7 classes = ~2.5 PREFIXes + BARE + SUFFIXes)	2	A→B	in: currier_a
+C509.d	**Independent Morphological Filtering** (PREFIX/MIDDLE/SUFFIX filter independently; 27% class ME = morphological sparsity not class interaction; SUFFIX classes 100% PREFIX-free)	2	A→B	in: currier_a
 C510	**Positional Sub-Component Grammar** (41.2% constrained: 62 START, 14 END, 110 FREE; z=34.16, p<0.0001; grammar is permissive)	2	A	in: currier_a
 C510	Positional Sub-Component Grammar	2	A	in: currier_a
 C511	**Derivational Productivity** (Repeater MIDDLEs seed singletons at 12.67x above chance; 89.8% exceed baseline)	2	A	in: currier_a
 C511	Derivational Productivity	2	A	in: currier_a
-C512	**PP as Compositional Substrate** (99.1% RI containment; 8.3x section-invariance ratio; PP is universal foundation)	2	GLOBAL	in: currier_a
-C512	PP as Compositional Substrate	2	A	in: currier_a
+C512	**PP/RI Stylistic Bifurcation** (100% containment but z=1.11 vs null - NOT significant; 8.3x section-invariance; composition PROVISIONAL)	2	GLOBAL	in: currier_a
+C512	PP/RI Stylistic Bifurcation	2	A	in: currier_a
 C512.a	**Positional Asymmetry** (END-class 71.4% PP; START-class 16.1% PP; pattern: RI-START + PP-FREE + PP-END)	2	A	in: currier_a
 C513	**Short Singleton Sampling Variance** (Jaccard=1.00 vs repeaters; singleton status at ≤3 chars is sampling, not function)	2	A	in: currier_a
 C513	Short Singleton Sampling Variance	2	A	in: currier_a
@@ -548,8 +554,8 @@ C514	RI Compositional Bifurcation	2	A	in: currier_a
 C515	**RI Compositional Mode Correlates with Length** (short RI = atomic/global; long RI = compound/local; rho=0.192, p<0.0001)	2	A	in: currier_a
 C515	RI Compositional Mode Correlates with Length	2	A	in: currier_a
 C515.a	**Compositional Embedding Mechanism** (local derivation is additive - embedding local PP context requires more sub-components)	2	A	in: currier_a
-C516	**RI Multi-Atom Composition** (85.4% of RI contain multiple PP atoms; 261 PP bases; 0.03% sparsity; RI = compatibility intersections)	2	A	in: currier_a
-C516	RI Multi-Atom Composition	2	A	in: currier_a
+C516	**RI Multi-Atom Observation** (99.6% multi-atom but trivially expected from lengths; intersection formula PROVISIONAL)	2	A	in: currier_a
+C516	RI Multi-Atom Observation	2	A	in: currier_a
 C517	**Superstring Compression (GLOBAL)** (65-77% overlap, 2.2-2.7x compression; hinge letters are 7/8 kernel primitives; global substrate)	3	GLOBAL	in: currier_a
 C517	Superstring Compression (GLOBAL)	2	A	in: currier_a
 C518	**Compatibility Enrichment (GLOBAL)** (5-7x enrichment across all systems; extends C383 global type system)	3	GLOBAL	in: currier_a
@@ -566,3 +572,65 @@ C523	**Pharma Label Vocabulary Bifurcation** (jar labels Jaccard=0.000 with cont
 C523	Pharma Label Vocabulary Bifurcation	2	A	in: currier_a
 C524	**Jar Label Morphological Compression** (7.1 vs 6.0 char mean; 5-8 PP atoms per MIDDLE; superstring packing)	2	A	in: currier_a
 C524	Jar Label Morphological Compression	2	A	in: currier_a
+C525	**Label Morphological Stratification** (o-prefix 50% vs 20% text; qo-prefix ~0% vs 14%; 61% label-only vocabulary; within-group MIDDLE sharing)	3	A	in: currier_a
+C525	Label Morphological Stratification	2	A	in: currier_a
+C526	**RI Lexical Layer Hypothesis** (609 unique RI as referential lexicon; 87% localized to 1-2 folios; PREFIX/SUFFIX global grammar vs RI extensions as substance anchors)	3	A	in: currier_a
+C526	RI Lexical Layer Hypothesis	2	A	in: currier_a
+C527	**Suffix-Material Class Correlation** (Animal PP: 0% -y/-dy, 78% -ey/-ol; Herb PP: 41% -y/-dy, 27% -ey/-ol; chi2=178, p<10^-40; fire-degree interpretation conditional on Brunschwig)	3	A	in: currier_a
+C527	Suffix-Material Class Correlation (Fire Degree)	2	A	in: currier_a
+C528	**RI PREFIX Lexical Bifurcation** (334 PREFIX-REQUIRED, 321 PREFIX-FORBIDDEN, 12 optional; 98.2% disjoint; PREFIX attachment lexically determined; section-independent; refines C509.a aggregate rate)	2	A	in: currier_a
+C528	RI PREFIX Lexical Bifurcation	2	A	in: currier_a
+C529	**Gallows Positional Asymmetry** (PP gallows-initial 30% vs RI 20%; RI gallows-medial 58% vs PP 39%; chi2=7.69 p<0.01; bench gallows cph 81% RI; parallel bifurcation to C528)	2	A	in: currier_a
+C529	Gallows Positional Asymmetry in PP/RI	2	A	in: currier_a
+C530	**Gallows Folio Specialization** (k-default 54%, t-specialized folios cluster; p/f never folio-dominant; 2-5x same-gallows co-occurrence RI↔PP in records)	2	A	in: currier_a
+C530	Gallows Folio Specialization	2	A	in: currier_a
+C531	**Folio Unique Vocabulary Prevalence** (98.8% of B folios have ≥1 unique MIDDLE; only f95r1 lacks unique vocabulary; mean 10.5 unique MIDDLEs per folio)	2	B	in: currier_a
+C531	Folio Unique Vocabulary Prevalence	2	A	in: currier_a
+C532	**Unique MIDDLE B-Exclusivity** (88% of unique B MIDDLEs are B-exclusive, not in A; 12% are PP; unique vocabulary is primarily B-internal grammar, not AZC-modulated)	2	B	in: currier_a
+C532	Unique MIDDLE B-Exclusivity	2	A	in: currier_a
+C533	**Unique MIDDLE Grammatical Slot Consistency** (75% of unique MIDDLE tokens share PREFIX/SUFFIX patterns with classified tokens; adjacent folios' unique MIDDLEs fill similar slots 1.30x vs non-adjacent)	2	B	in: currier_a
+C533	Unique MIDDLE Grammatical Slot Consistency	2	A	in: currier_a
+C534	Section-Specific Prefixless MIDDLE Profiles (prefixless unique MIDDLEs show section-specific distribution p=0.023; effect vanishes for prefixed tokens where PREFIX-section associations explain pattern; partial signal only)	3	B	in: currier_a
+C534	Section-Specific Prefixless MIDDLE Profiles	2	A	in: currier_a
+C535	**B Folio Vocabulary Minimality** (81/82 folios needed for complete MIDDLE coverage; redundancy ratio 1.01x; zero folio pairs exceed 50% Jaccard; each folio contributes mean 10.5 unique MIDDLEs)	2	B	in: currier_a
+C535	B Folio Vocabulary Minimality	2	A	in: currier_a
+C536	**Material-Class REGIME Invariance** (Both animal AND herb material classes route to REGIME_4: animal 2.03x p=0.024, herb 2.09x p=0.011; REGIME encodes precision requirement, not material identity)	2	A->B	in: currier_a
+C536	Material-Class REGIME Invariance	2	A	in: currier_a
+C537	**Token-Level Material Differentiation** (Despite identical REGIME routing, 62% of token variants differ: overall Jaccard=0.382, per-class mean=0.371; confirms C506.b behavioral heterogeneity)	2	A->B	in: currier_a
+C537	Token-Level Material Differentiation	2	A	in: currier_a
+C538	PP Material-Class Distribution (ANIMAL 15.6%, HERB 28.0%, MIXED 16.6%, NEUTRAL 39.9%; classification conditional on Brunschwig suffix alignment)	3	A	in: currier_a
+C538	PP Material-Class Distribution	2	A	in: currier_a
+C539	**LATE Prefix Morphological Class** (al/ar/or: V+L pattern, 3.78x line-final enrichment, 68-70% suffix-depleted, short MIDDLE preference)	2	B	-> C539_late_prefix_class.md
+C540	**Kernel Primitives Are Bound Morphemes** (k, e, h never standalone; 0 occurrences each; intervention modifiers only)	2	MORPHOLOGY	-> C540_kernel_bound_morpheme.md
+C541	**Hazard Class Enumeration** (only 6/49 classes participate in 17 forbidden transitions; 43 classes have 0% hazard involvement)	2	HAZARD_TOPOLOGY	-> C541_hazard_class_enumeration.md
+C542	**Gateway/Terminal Hazard Class Asymmetry** (Class 30 = pure gateway, Class 31 = pure terminal; 100% asymmetry)	2	HAZARD_TOPOLOGY	-> C542_gateway_terminal_asymmetry.md
+C543	**Role Positional Grammar** (FLOW final-biased 0.68, CORE initial-biased 0.45; Class 40 = 69% line-final)	2	POSITIONAL_GRAMMAR	-> C543_role_positional_grammar.md
+C544	**ENERGY_OPERATOR Interleaving** (qo/ch-sh families alternate with 2.5x enrichment; Class 33 self-repeat 14.6%)	2	CO-OCCURRENCE	-> C544_energy_interleaving.md
+C545	**REGIME Instruction Class Profiles** (REGIME_3 = 1.83x CORE_CONTROL; REGIME_1 = 52% qo-family; each REGIME has signature classes)	2	REGIME_INTERPRETATION	-> C545_regime_class_profiles.md
+C546	**Class 40 Safe Flow Operator** (daly/aly/ary: 4.22 avg distance from hazards, 0% hazard rate, 69% line-final; safe flow alternative)	2	HAZARD_TOPOLOGY	-> C546_class40_safe_flow.md
+C547	qo-Chain REGIME_1 Enrichment (1.53x enrichment, 51.4% of chains in REGIME_1; depleted in REGIME_2/3; thermal processing context)	3	B	-> C547_qo_chain_regime_enrichment.md
+C548	**Manuscript-Level Gateway/Terminal Envelope** (90.2% folios have both; rho=0.499 count correlation; gateways front-loaded rho=-0.368; arc from entry to exit)	2	B	-> C548_manuscript_level_envelope.md
+C549	**qo/ch-sh Interleaving Significance** (56.3% vs 50.6% expected; z=10.27, p<0.001; grammatical preference for alternation; REGIME_3 highest 59.0%)	2	B	-> C549_interleaving_significance.md
+C550	**Role Transition Grammar** (roles self-chain: FREQ 2.38x, FLOW 2.11x, ENERGY 1.35x; FLOW-FREQ bidirectional affinity 1.54-1.73x; ENERGY avoids other roles 0.71-0.80x; phrasal role structure)	2	B	-> C550_role_transition_grammar.md
+C551	**Grammar Universality and REGIME Specialization** (67% classes universal; CC most universal 0.836; ENERGY REGIME_1 enriched 1.26-1.48x; FLOW REGIME_1 depleted 0.40-0.63x; thermal/flow anticorrelation)	2	B	-> C551_grammar_universality.md
+C552	**Section-Specific Role Profiles** (Chi2=565.8, p<0.001; BIO +CC +EN thermal-intensive; HERBAL_B +FQ -EN repetitive; PHARMA +FL flow-dominated; RECIPE_B -CC autonomous; sections encode procedural types)	2	B	-> C552_section_role_profiles.md
+C553	**BIO-REGIME Energy Independence** (BIO 70% REGIME_1; effects additive: baseline 27.5%, +6.5pp REGIME, +9.8pp section; both significant p<0.001; BIO+R1 reaches 48.9% ENERGY through independent combination)	2	B	-> C553_bio_regime_independence.md
+C554	**Hazard Class Clustering** (dispersion index 1.29, p<0.001; 93% lines have hazard classes, mean 3.1/line; gateway-terminal 1.06x confirms C548; hazard management is zone-concentrated not point-distributed)	2	B	-> C554_hazard_clustering.md
+C555	**PHARMA Thermal Operator Substitution** (Class 33 0.20x depleted, Class 34 1.90x enriched in PHARMA; ~10x divergence; section-specific not REGIME-driven; ENERGY operators not interchangeable)	2	B	-> C555_pharma_thermal_substitution.md
+C556	**ENERGY Medial Concentration** (ENERGY 0.45x initial, 0.50x final - medial-concentrated; FLOW/FREQ 1.65x final; UNCLASS 1.55x initial; lines have positional template; p=3e-89)	2	B	-> C556_energy_medial_concentration.md
+C557	**daiin Line-Initial ENERGY Trigger** (27.7% line-initial rate, 2.2x CC average; 47.1% ENERGY followers; Class 10 singleton; RECIPE 36.3% initial; unique control signal)	2	B	-> C557_daiin_line_opener.md
+C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; daiin initial-biased 27.7%, ol final-biased 9.5%; complementary control primitives)	2	B	-> C558_singleton_class_structure.md
+C559	**FREQUENT Role Structure** (35 tokens, 5.6% corpus; morphologically minimal; 19.6% final-biased; HERBAL 1.62x enriched; Class 9 exception: 16.2% self-chains, NOT final-biased)	2	B	-> C559_frequent_role_structure.md
+C560	**Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived)	2	B	-> C560_class17_ol_derivation.md
+C561	**Class 9 or->aiin Directional Bigram** (87.5% of chains are or->aiin; zero aiin->aiin; directional grammatical unit; HERBAL 21.7% chain rate; refines C559 "self-chaining")	2	B	-> C561_class9_or_aiin_bigram.md
+C562	**FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern)	2	B	-> C562_flow_role_structure.md
+C563	**AX Internal Positional Stratification** (20 AX classes split into INIT/5, MED/9, FINAL/6; H=213.9 p=3.6e-47; 71.8% INIT-before-FINAL; Cohen's d=0.69; positional gradient not clusters)	2	B	-> C563_ax_positional_stratification.md
+C564	**AX Morphological-Positional Correspondence** (AX_INIT: 17.5% articulator; AX_MED: ok/ot 88.8%; AX_FINAL: prefix-light 60.9%, zero articulators; prefix family predicts position)	2	B	-> C564_ax_morphological_positional_correspondence.md
+C565	**AX Execution Scaffold Function** (AX mirrors named role positions; 0% hazard; 1.09x self-chaining; AX_FINAL enriched R1 39.4% BIO 40.9%; structural frame not functional operations)	2	B	-> C565_ax_scaffold_function.md
+C566	**UN Token Resolution** (7042 UN = 30.5% of B; 74.1% hapax, 74.8% single-folio; morphologically normal; cosurvival threshold artifact; NOT a separate role)	2	B	-> C566_un_token_resolution.md
+C567	**AX-Operational MIDDLE Sharing** (57 AX MIDDLEs; 98.2% PP; 72% shared with operational roles; AX-EN Jaccard=0.400; 16 AX-exclusive; 78% PREFIX+ARTICULATOR differentiated)	2	B	-> C567_ax_operational_middle_sharing.md
+C568	**AX Pipeline Ubiquity** (97.2% of A records carry AX vocabulary; 0 zero-AX B contexts; classes 21,22 always survive; AX_FINAL 100%, all subgroups 95.6%)	2	B	-> C568_ax_pipeline_ubiquity.md
+C569	**AX Proportional Scaling** (AX fraction 0.454 vs expected 0.455; R²=0.83; NOT pure byproduct; AX_INIT over-represented slope 0.130 vs 0.102; AX_FINAL under-represented)	2	B	-> C569_ax_proportional_scaling.md
+C570	**AX PREFIX Derivability** (89.6% binary accuracy; PREFIX is role selector; 22 AX-exclusive prefixes; F1=0.904; same MIDDLE becomes AX or operational via PREFIX)	2	B	-> C570_ax_prefix_derivability.md
+C571	**AX Functional Identity Resolution** (AX = PREFIX-determined default mode of pipeline vocabulary; same MIDDLEs serve as scaffold or operations; PREFIX selects role, MIDDLE carries material)	2	B	-> C571_ax_functional_identity.md
+C572	**AX Class Behavioral Collapse**	2	B	AX_CLASS_BEHAVIOR

@@ -1,0 +1,160 @@
+{
+  "class17_tokens": [
+    "olaiin",
+    "olchedy",
+    "olchey",
+    "olkaiin",
+    "olkain",
+    "olkedy",
+    "olkeedy",
+    "olkeey",
+    "olshedy"
+  ],
+  "token_frequencies": {
+    "olkeedy": 41,
+    "olkeey": 38,
+    "olchedy": 37,
+    "olaiin": 34,
+    "olkain": 33,
+    "olkaiin": 31,
+    "olkedy": 27,
+    "olchey": 24,
+    "olshedy": 23
+  },
+  "total_occurrences": 288,
+  "positional_patterns": {
+    "olaiin": {
+      "initial": 2,
+      "final": 2,
+      "total": 34
+    },
+    "olchedy": {
+      "initial": 1,
+      "final": 8,
+      "total": 37
+    },
+    "olchey": {
+      "initial": 2,
+      "final": 2,
+      "total": 24
+    },
+    "olkaiin": {
+      "initial": 2,
+      "final": 1,
+      "total": 31
+    },
+    "olkain": {
+      "initial": 1,
+      "final": 3,
+      "total": 33
+    },
+    "olkedy": {
+      "initial": 0,
+      "final": 5,
+      "total": 27
+    },
+    "olkeedy": {
+      "initial": 3,
+      "final": 3,
+      "total": 41
+    },
+    "olkeey": {
+      "initial": 6,
+      "final": 0,
+      "total": 38
+    },
+    "olshedy": {
+      "initial": 2,
+      "final": 4,
+      "total": 23
+    }
+  },
+  "cc_comparison": {
+    "10": {
+      "tokens": [
+        "daiin"
+      ],
+      "total": 314,
+      "follower_roles": {
+        "UN": 81,
+        "EN": 87,
+        "AX": 76,
+        "FQ": 11,
+        "FL": 21,
+        "CC": 14
+      }
+    },
+    "11": {
+      "tokens": [
+        "ol"
+      ],
+      "total": 421,
+      "follower_roles": {
+        "AX": 111,
+        "FQ": 35,
+        "UN": 79,
+        "FL": 16,
+        "CC": 19,
+        "EN": 121
+      }
+    },
+    "17": {
+      "tokens": [
+        "olkeey",
+        "olaiin",
+        "olchedy",
+        "olkain",
+        "olkedy",
+        "olkaiin",
+        "olchey",
+        "olshedy",
+        "olkeedy"
+      ],
+      "total": 288,
+      "follower_roles": {
+        "UN": 72,
+        "AX": 80,
+        "EN": 76,
+        "FQ": 10,
+        "CC": 18,
+        "FL": 5
+      }
+    }
+  },
+  "by_regime": {
+    "REGIME_3": {
+      "total": 1734,
+      "c17": 41
+    },
+    "REGIME_2": {
+      "total": 6251,
+      "c17": 68
+    },
+    "REGIME_4": {
+      "total": 7350,
+      "c17": 73
+    },
+    "REGIME_1": {
+      "total": 7761,
+      "c17": 106
+    }
+  },
+  "by_section": {
+    "HERBAL": {
+      "total": 2687,
+      "c17": 15
+    },
+    "PHARMA": {
+      "total": 529,
+      "c17": 0
+    },
+    "BIO": {
+      "total": 6850,
+      "c17": 147
+    },
+    "RECIPE": {
+      "total": 13030,
+      "c17": 126
+    }
+  }
+}

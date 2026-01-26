@@ -1,0 +1,17 @@
+{
+  "observed_rate": 0.5627407815079802,
+  "null_mean": 0.5059153274628508,
+  "null_std": 0.005535783493397795,
+  "z_score": 10.265114976570487,
+  "p_value": 0.0,
+  "theoretical_expected": 0.49968483889337206,
+  "total_transitions": 3634,
+  "total_interleave": 2045,
+  "total_same": 1589,
+  "regime_rates": {
+    "REGIME_3": 0.5901639344262295,
+    "REGIME_2": 0.5776223776223777,
+    "REGIME_4": 0.5220125786163522,
+    "REGIME_1": 0.5752469494479954
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "minimum_ax_classes": 2,
+  "maximum_ax_classes": 20,
+  "min_ax_record": "f102r1:0a",
+  "max_ax_record": "f101r1:2",
+  "always_present_ax_classes": [
+    21,
+    22
+  ],
+  "zero_ax_records": 0,
+  "subgroup_presence": {
+    "AX_INIT": {
+      "always_present": false,
+      "presence_rate": 0.9588,
+      "records_present": 1514,
+      "records_missing": 65
+    },
+    "AX_MED": {
+      "always_present": false,
+      "presence_rate": 0.9696,
+      "records_present": 1531,
+      "records_missing": 48
+    },
+    "AX_FINAL": {
+      "always_present": true,
+      "presence_rate": 1.0,
+      "records_present": 1579,
+      "records_missing": 0
+    },
+    "all_three_present": {
+      "count": 1509,
+      "rate": 0.9557
+    }
+  },
+  "ax_count_distribution": {
+    "2": 41,
+    "3": 5,
+    "4": 11,
+    "5": 11,
+    "6": 15,
+    "7": 31,
+    "8": 30,
+    "9": 25,
+    "10": 34,
+    "11": 47,
+    "12": 29,
+    "13": 136,
+    "14": 170,
+    "15": 185,
+    "16": 213,
+    "17": 277,
+    "18": 164,
+    "19": 119,
+    "20": 36
+  },
+  "per_class_presence": {
+    "1": {
+      "count": 604,
+      "rate": 0.3825,
+      "subgroup": "AX_MED"
+    },
+    "2": {
+      "count": 1058,
+      "rate": 0.67,
+      "subgroup": "AX_MED"
+    },
+    "3": {
+      "count": 947,
+      "rate": 0.5997,
+      "subgroup": "AX_MED"
+    },
+    "4": {
+      "count": 714,
+      "rate": 0.4522,
+      "subgroup": "AX_INIT"
+    },
+    "5": {
+      "count": 1319,
+      "rate": 0.8353,
+      "subgroup": "AX_INIT"
+    },
+    "6": {
+      "count": 1445,
+      "rate": 0.9151,
+      "subgroup": "AX_INIT"
+    },
+    "14": {
+      "count": 1335,
+      "rate": 0.8455,
+      "subgroup": "AX_MED"
+    },
+    "15": {
+      "count": 577,
+      "rate": 0.3654,
+      "subgroup": "AX_FINAL"
+    },
+    "16": {
+      "count": 1147,
+      "rate": 0.7264,
+      "subgroup": "AX_MED"
+    },
+    "18": {
+      "count": 436,
+      "rate": 0.2761,
+      "subgroup": "AX_MED"
+    },
+    "19": {
+      "count": 1312,
+      "rate": 0.8309,
+      "subgroup": "AX_FINAL"
+    },
+    "20": {
+      "count": 1373,
+      "rate": 0.8695,
+      "subgroup": "AX_FINAL"
+    },
+    "21": {
+      "count": 1579,
+      "rate": 1.0,
+      "subgroup": "AX_FINAL"
+    },
+    "22": {
+      "count": 1579,
+      "rate": 1.0,
+      "subgroup": "AX_FINAL"
+    },
+    "24": {
+      "count": 1269,
+      "rate": 0.8037,
+      "subgroup": "AX_INIT"
+    },
+    "25": {
+      "count": 1243,
+      "rate": 0.7872,
+      "subgroup": "AX_FINAL"
+    },
+    "26": {
+      "count": 855,
+      "rate": 0.5415,
+      "subgroup": "AX_INIT"
+    },
+    "27": {
+      "count": 1468,
+      "rate": 0.9297,
+      "subgroup": "AX_MED"
+    },
+    "28": {
+      "count": 1458,
+      "rate": 0.9234,
+      "subgroup": "AX_MED"
+    },
+    "29": {
+      "count": 1428,
+      "rate": 0.9044,
+      "subgroup": "AX_MED"
+    }
+  },
+  "correlation_ax_vs_total": 0.911,
+  "minimal_records": [
+    {
+      "a_record": "f102r1:0a",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f102r1:0b",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f102r1:0c",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f102r2:0a",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f102r2:0b",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f102r2:0c",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f16r:4",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f17r:12",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f17r:6",
+      "total_classes": 7,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f17r:7",
+      "total_classes": 10,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f1r:6",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f22v:16",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f23r:11",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f24r:20",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f27r:13",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f27v:8",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f30v:6",
+      "total_classes": 12,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f32r:15",
+      "total_classes": 14,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f32r:17",
+      "total_classes": 8,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    },
+    {
+      "a_record": "f37v:13",
+      "total_classes": 6,
+      "ax_classes": 2,
+      "has_init": false,
+      "has_med": false,
+      "has_final": true,
+      "ax_init_classes": [],
+      "ax_med_classes": [],
+      "ax_final_classes": [
+        21,
+        22
+      ]
+    }
+  ]
+}

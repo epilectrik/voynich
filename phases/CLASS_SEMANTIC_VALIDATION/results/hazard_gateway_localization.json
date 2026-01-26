@@ -1,0 +1,38 @@
+{
+  "section_b_enrichment": 1.2336985765025028,
+  "regime_enrichment": {
+    "REGIME_3": 1.301329727293216,
+    "REGIME_2": 0.8847626525349813,
+    "REGIME_4": 0.9029634842442723,
+    "REGIME_1": 1.117389679510629
+  },
+  "gateway_terminal_order": {
+    "correct": 55,
+    "reversed": 81,
+    "correct_rate": 0.40441176470588236
+  },
+  "top_gateway_folios": {
+    "f75r": 21,
+    "f76r": 21,
+    "f84r": 19,
+    "f86v6": 19,
+    "f116r": 16,
+    "f75v": 15,
+    "f77v": 15,
+    "f85r1": 15,
+    "f114r": 15,
+    "f111r": 14
+  },
+  "top_terminal_folios": {
+    "f76r": 34,
+    "f103v": 34,
+    "f111v": 32,
+    "f116r": 32,
+    "f75r": 25,
+    "f103r": 25,
+    "f79r": 24,
+    "f106v": 23,
+    "f108r": 23,
+    "f111r": 23
+  }
+}

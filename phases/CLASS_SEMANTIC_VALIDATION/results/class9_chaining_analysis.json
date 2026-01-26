@@ -1,0 +1,36 @@
+{
+  "class9_tokens": [
+    "aiin",
+    "o",
+    "or"
+  ],
+  "token_frequencies": {
+    "aiin": 351,
+    "o": 29,
+    "or": 250
+  },
+  "total_chains": 48,
+  "pure_aiin_chains": 0,
+  "chain_pairs": {
+    "aiin->o": 2,
+    "or->aiin": 42,
+    "aiin->or": 4,
+    "or->or": 4,
+    "o->aiin": 2
+  },
+  "chain_lengths": {
+    "2": 42,
+    "3": 6
+  },
+  "chains_by_regime": {
+    "REGIME_2": 24,
+    "REGIME_4": 16,
+    "REGIME_1": 5,
+    "REGIME_3": 3
+  },
+  "chains_by_section": {
+    "HERBAL": 13,
+    "BIO": 4,
+    "RECIPE": 31
+  }
+}

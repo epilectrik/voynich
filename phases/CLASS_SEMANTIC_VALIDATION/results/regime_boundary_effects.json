@@ -1,0 +1,373 @@
+{
+  "boundaries": [
+    {
+      "index": 1,
+      "prev_folio": "f26r",
+      "curr_folio": "f26v",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 2,
+      "prev_folio": "f26v",
+      "curr_folio": "f31r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 3,
+      "prev_folio": "f31r",
+      "curr_folio": "f31v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 4,
+      "prev_folio": "f31v",
+      "curr_folio": "f33r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 5,
+      "prev_folio": "f33r",
+      "curr_folio": "f33v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 6,
+      "prev_folio": "f33v",
+      "curr_folio": "f34r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_3"
+    },
+    {
+      "index": 7,
+      "prev_folio": "f34r",
+      "curr_folio": "f34v",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 8,
+      "prev_folio": "f34v",
+      "curr_folio": "f39r",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 9,
+      "prev_folio": "f39r",
+      "curr_folio": "f39v",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 12,
+      "prev_folio": "f40v",
+      "curr_folio": "f41r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 13,
+      "prev_folio": "f41r",
+      "curr_folio": "f41v",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 19,
+      "prev_folio": "f48r",
+      "curr_folio": "f48v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 20,
+      "prev_folio": "f48v",
+      "curr_folio": "f50r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 21,
+      "prev_folio": "f50r",
+      "curr_folio": "f50v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 23,
+      "prev_folio": "f55r",
+      "curr_folio": "f55v",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 25,
+      "prev_folio": "f57r",
+      "curr_folio": "f66r",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 33,
+      "prev_folio": "f77v",
+      "curr_folio": "f78r",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 34,
+      "prev_folio": "f78r",
+      "curr_folio": "f78v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_3"
+    },
+    {
+      "index": 35,
+      "prev_folio": "f78v",
+      "curr_folio": "f79r",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 36,
+      "prev_folio": "f79r",
+      "curr_folio": "f79v",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 37,
+      "prev_folio": "f79v",
+      "curr_folio": "f80r",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 39,
+      "prev_folio": "f80v",
+      "curr_folio": "f81r",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 40,
+      "prev_folio": "f81r",
+      "curr_folio": "f81v",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_3"
+    },
+    {
+      "index": 41,
+      "prev_folio": "f81v",
+      "curr_folio": "f82r",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 46,
+      "prev_folio": "f84r",
+      "curr_folio": "f84v",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_3"
+    },
+    {
+      "index": 48,
+      "prev_folio": "f94r",
+      "curr_folio": "f94v",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 50,
+      "prev_folio": "f103r",
+      "curr_folio": "f103v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 51,
+      "prev_folio": "f103v",
+      "curr_folio": "f104r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 52,
+      "prev_folio": "f104r",
+      "curr_folio": "f104v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 54,
+      "prev_folio": "f105r",
+      "curr_folio": "f105v",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 55,
+      "prev_folio": "f105v",
+      "curr_folio": "f106r",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 56,
+      "prev_folio": "f106r",
+      "curr_folio": "f106v",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 57,
+      "prev_folio": "f106v",
+      "curr_folio": "f107r",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 62,
+      "prev_folio": "f111r",
+      "curr_folio": "f111v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 63,
+      "prev_folio": "f111v",
+      "curr_folio": "f112r",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 64,
+      "prev_folio": "f112r",
+      "curr_folio": "f112v",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 67,
+      "prev_folio": "f113v",
+      "curr_folio": "f114r",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_3"
+    },
+    {
+      "index": 68,
+      "prev_folio": "f114r",
+      "curr_folio": "f114v",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 69,
+      "prev_folio": "f114v",
+      "curr_folio": "f115r",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 71,
+      "prev_folio": "f115v",
+      "curr_folio": "f116r",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_2"
+    },
+    {
+      "index": 77,
+      "prev_folio": "f86v5",
+      "curr_folio": "f86v6",
+      "from_regime": "REGIME_2",
+      "to_regime": "REGIME_4"
+    },
+    {
+      "index": 79,
+      "prev_folio": "f95r1",
+      "curr_folio": "f95v1",
+      "from_regime": "REGIME_4",
+      "to_regime": "REGIME_1"
+    },
+    {
+      "index": 80,
+      "prev_folio": "f95v1",
+      "curr_folio": "f95r2",
+      "from_regime": "REGIME_1",
+      "to_regime": "REGIME_3"
+    },
+    {
+      "index": 81,
+      "prev_folio": "f95r2",
+      "curr_folio": "f95v2",
+      "from_regime": "REGIME_3",
+      "to_regime": "REGIME_2"
+    }
+  ],
+  "boundary_jumps": [
+    0.43341213553979685,
+    4.316990440949738,
+    -24.110671936758894,
+    7.027724049000646,
+    0.6185056902523485,
+    12.841253791708798,
+    2.0066889632106992,
+    -4.615384615384613,
+    -7.777777777777779,
+    11.278195488721803,
+    -22.58771929824561,
+    2.27956989247312,
+    9.79060554612337,
+    -4.8817696414950404,
+    -6.9683257918552055,
+    4.599834983498351,
+    -24.755645433097406,
+    3.9058271694028477,
+    8.818810511756567,
+    -6.218942189421895,
+    5.960235721760206,
+    -1.5659777424483323,
+    -5.484254307783722,
+    18.155236576289212,
+    -6.005768031594265,
+    -3.3004926108374377,
+    -5.445881552076237,
+    -9.909485514317442,
+    9.41504404422012,
+    -11.657988263492854,
+    24.733979262281146,
+    -2.671131431515228,
+    -3.2696031754522963,
+    7.535132392344202,
+    -12.811903290377927,
+    7.293891217801679,
+    1.7531390665719044,
+    9.118789613575956,
+    9.734026597340268,
+    2.548473304145112,
+    10.564934539697944,
+    -7.762557077625573,
+    0.0,
+    -13.333333333333329
+  ],
+  "non_boundary_stats": {
+    "mean_abs": 8.186678117930608,
+    "std": 10.185902140036076
+  },
+  "boundary_stats": {
+    "mean_abs": 8.178748045762658,
+    "std": 10.349140234358492
+  },
+  "mann_whitney_p": 0.4565885189678932,
+  "regime_variances": {
+    "REGIME_1": 0.00874207688859094,
+    "REGIME_2": 0.0067604294464568655,
+    "REGIME_3": 0.0022191724499641794,
+    "REGIME_4": 0.007454777877210137
+  }
+}

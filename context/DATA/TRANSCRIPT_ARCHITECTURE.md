@@ -379,11 +379,76 @@ def load_azc():
 
 ---
 
+## Canonical Library: scripts/voynich.py
+
+**PREFERRED: Use this library instead of writing custom data loading code.**
+
+The `scripts/voynich.py` module provides:
+- Automatic H-track filtering
+- Proper placement type handling
+- Morphological analysis (PREFIX/MIDDLE/SUFFIX)
+- Token classification (RI/PP/INFRA)
+- Record-level analysis
+
+### Basic Usage
+
+```python
+from scripts.voynich import Transcript, Morphology, RecordAnalyzer
+
+# Iterate Currier A tokens (H-track, labels excluded, uncertain excluded)
+tx = Transcript()
+for token in tx.currier_a():
+    print(token.word, token.folio, token.line)
+
+# Morphological analysis
+morph = Morphology()
+m = morph.extract('chody')
+# m.articulator, m.prefix, m.middle, m.suffix
+
+# Full record analysis with classification
+analyzer = RecordAnalyzer()
+record = analyzer.analyze_record('f1r', '1')
+print(f"Composition: {record.composition}")  # MIXED, PURE_RI, PURE_PP
+for t in record.tokens:
+    print(f"{t.word}: {t.token_class} (MID={t.middle})")
+```
+
+### Token Classes
+
+| Class | Meaning | Source |
+|-------|---------|--------|
+| RI | Registry-Internal | MIDDLE in a_exclusive_middles |
+| PP | Pipeline-Participant | MIDDLE in a_shared_middles |
+| INFRA | Infrastructure | DA-family prefix + short MIDDLE (C407) |
+| UNKNOWN | Unclassified | MIDDLE not in either set |
+
+### Key Methods
+
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `Transcript().currier_a()` | Iterator[Token] | All Currier A tokens |
+| `Transcript().currier_b()` | Iterator[Token] | All Currier B tokens |
+| `Transcript().azc()` | Iterator[Token] | All AZC tokens |
+| `Morphology().extract(word)` | MorphAnalysis | Parse into ART/PRE/MID/SUF |
+| `RecordAnalyzer().analyze_record(folio, line)` | RecordAnalysis | Full record breakdown |
+| `RecordAnalyzer().analyze_folio(folio)` | List[RecordAnalysis] | All records in folio |
+| `RecordAnalyzer().iter_records()` | Iterator[RecordAnalysis] | All Currier A records |
+
+### Morphology Notes
+
+- MIDDLE is always non-empty (per C293 - MIDDLE is primary discriminator)
+- Gallows-initial tokens (cph-, cfh-, ckh-) are correctly prefixless (C528)
+- Articulators detected when followed by known prefix
+- Atomic suffix list only (compound suffixes moved to MIDDLE)
+
+---
+
 ## Checklist for New Scripts
 
 Before committing any script that loads the transcript:
 
-- [ ] Filter to `transcriber == 'H'`
+- [ ] **PREFERRED: Use `scripts/voynich.py` library** (handles all filtering automatically)
+- [ ] If writing custom loader: Filter to `transcriber == 'H'`
 - [ ] **Filter by placement type** (TEXT vs LABEL vs RING, etc.)
 - [ ] Handle empty words
 - [ ] Handle asterisk (*) tokens appropriately

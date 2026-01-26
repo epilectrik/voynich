@@ -1,0 +1,495 @@
+{
+  "total_a_records": 1579,
+  "records_with_ax_middles": 1535,
+  "records_without_ax_middles": 44,
+  "ax_coverage_rate": 0.9721,
+  "zero_ax_with_operational": 10,
+  "ax_middles_per_record": {
+    "mean": 3.7,
+    "median": 4,
+    "min": 0,
+    "max": 10,
+    "histogram": {
+      "0": 44,
+      "1": 112,
+      "2": 251,
+      "3": 345,
+      "4": 324,
+      "5": 271,
+      "6": 141,
+      "7": 54,
+      "8": 24,
+      "9": 10,
+      "10": 3
+    }
+  },
+  "correlation_ax_vs_total_middles": 0.7525,
+  "per_middle_a_record_count": {
+    "a": {
+      "a_record_count": 424,
+      "presence_rate": 0.2685
+    },
+    "ai": {
+      "a_record_count": 31,
+      "presence_rate": 0.0196
+    },
+    "aii": {
+      "a_record_count": 14,
+      "presence_rate": 0.0089
+    },
+    "aiin": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "ain": {
+      "a_record_count": 2,
+      "presence_rate": 0.0013
+    },
+    "al": {
+      "a_record_count": 36,
+      "presence_rate": 0.0228
+    },
+    "am": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "ar": {
+      "a_record_count": 15,
+      "presence_rate": 0.0095
+    },
+    "c": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "ch": {
+      "a_record_count": 208,
+      "presence_rate": 0.1317
+    },
+    "cho": {
+      "a_record_count": 35,
+      "presence_rate": 0.0222
+    },
+    "ck": {
+      "a_record_count": 7,
+      "presence_rate": 0.0044
+    },
+    "ckh": {
+      "a_record_count": 154,
+      "presence_rate": 0.0975
+    },
+    "cp": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "cph": {
+      "a_record_count": 52,
+      "presence_rate": 0.0329
+    },
+    "d": {
+      "a_record_count": 258,
+      "presence_rate": 0.1634
+    },
+    "do": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "dy": {
+      "a_record_count": 2,
+      "presence_rate": 0.0013
+    },
+    "e": {
+      "a_record_count": 538,
+      "presence_rate": 0.3407
+    },
+    "ed": {
+      "a_record_count": 2,
+      "presence_rate": 0.0013
+    },
+    "edy": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "ee": {
+      "a_record_count": 92,
+      "presence_rate": 0.0583
+    },
+    "eeo": {
+      "a_record_count": 23,
+      "presence_rate": 0.0146
+    },
+    "eeol": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "eey": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "eo": {
+      "a_record_count": 147,
+      "presence_rate": 0.0931
+    },
+    "eol": {
+      "a_record_count": 15,
+      "presence_rate": 0.0095
+    },
+    "ey": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "g": {
+      "a_record_count": 11,
+      "presence_rate": 0.007
+    },
+    "h": {
+      "a_record_count": 257,
+      "presence_rate": 0.1628
+    },
+    "hy": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "i": {
+      "a_record_count": 618,
+      "presence_rate": 0.3914
+    },
+    "iin": {
+      "a_record_count": 5,
+      "presence_rate": 0.0032
+    },
+    "in": {
+      "a_record_count": 2,
+      "presence_rate": 0.0013
+    },
+    "k": {
+      "a_record_count": 204,
+      "presence_rate": 0.1292
+    },
+    "l": {
+      "a_record_count": 287,
+      "presence_rate": 0.1818
+    },
+    "lo": {
+      "a_record_count": 10,
+      "presence_rate": 0.0063
+    },
+    "ly": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "m": {
+      "a_record_count": 70,
+      "presence_rate": 0.0443
+    },
+    "o": {
+      "a_record_count": 943,
+      "presence_rate": 0.5972
+    },
+    "ock": {
+      "a_record_count": 1,
+      "presence_rate": 0.0006
+    },
+    "od": {
+      "a_record_count": 86,
+      "presence_rate": 0.0545
+    },
+    "oiin": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "ol": {
+      "a_record_count": 75,
+      "presence_rate": 0.0475
+    },
+    "om": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "op": {
+      "a_record_count": 17,
+      "presence_rate": 0.0108
+    },
+    "opc": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "opch": {
+      "a_record_count": 32,
+      "presence_rate": 0.0203
+    },
+    "or": {
+      "a_record_count": 39,
+      "presence_rate": 0.0247
+    },
+    "r": {
+      "a_record_count": 301,
+      "presence_rate": 0.1906
+    },
+    "ry": {
+      "a_record_count": 0,
+      "presence_rate": 0.0
+    },
+    "s": {
+      "a_record_count": 219,
+      "presence_rate": 0.1387
+    },
+    "sh": {
+      "a_record_count": 38,
+      "presence_rate": 0.0241
+    },
+    "t": {
+      "a_record_count": 115,
+      "presence_rate": 0.0728
+    },
+    "y": {
+      "a_record_count": 378,
+      "presence_rate": 0.2394
+    },
+    "yt": {
+      "a_record_count": 67,
+      "presence_rate": 0.0424
+    }
+  },
+  "ax_only_middles_in_a": {
+    "count": 14,
+    "total_ax_only": 16,
+    "middles": [
+      "a",
+      "ai",
+      "aii",
+      "c",
+      "cho",
+      "cph",
+      "do",
+      "g",
+      "h",
+      "hy",
+      "lo",
+      "op",
+      "opch",
+      "yt"
+    ]
+  },
+  "zero_ax_records": [
+    {
+      "a_record": "f100r:2a",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f102r1:0a",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f102r1:0b",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f102r1:0c",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f102r2:0a",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f102r2:0b",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f102r2:0c",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f16r:4",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f17r:12",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f17r:6",
+      "total_middles": 4,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f17r:7",
+      "total_middles": 6,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f19r:13",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f1r:6",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f22v:16",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f23r:11",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f24r:20",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f27r:13",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f27v:8",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f29r:4",
+      "total_middles": 2,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f30v:6",
+      "total_middles": 4,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f32r:17",
+      "total_middles": 2,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f37v:13",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f37v:19",
+      "total_middles": 3,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f49v:6",
+      "total_middles": 4,
+      "operational_middles": 2
+    },
+    {
+      "a_record": "f49v:9",
+      "total_middles": 4,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f4v:14",
+      "total_middles": 3,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f4v:6",
+      "total_middles": 3,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f51r:1",
+      "total_middles": 4,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f58r:26",
+      "total_middles": 7,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f6r:11",
+      "total_middles": 3,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f87r:2",
+      "total_middles": 6,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f88v:0",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f89r1:0",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f89r2:0b",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f89v2:3a",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f89v2:3b",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f8r:13",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f93r:24",
+      "total_middles": 3,
+      "operational_middles": 1
+    },
+    {
+      "a_record": "f96v:2",
+      "total_middles": 6,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f99r:0",
+      "total_middles": 4,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f99r:3a",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f99v:0",
+      "total_middles": 4,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f99v:0b",
+      "total_middles": 1,
+      "operational_middles": 0
+    },
+    {
+      "a_record": "f99v:14a",
+      "total_middles": 2,
+      "operational_middles": 0
+    }
+  ]
+}

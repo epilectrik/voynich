@@ -1,0 +1,9 @@
+{
+  "phase": "BRUNSCHWIG_PP_RI_TEST",
+  "test": "FUNCTIONAL_ROLES",
+  "date": "2026-01-24",
+  "model": {
+    "PP": "Procedural affordances - what you can DO with this",
+    "RI": "Material identity - what this IS specifically"
+  }
+}

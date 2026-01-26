@@ -1,0 +1,50 @@
+{
+  "per_record_stats": {
+    "total_records": 1579,
+    "mean_total_classes": 32.25,
+    "mean_ax_classes": 14.66,
+    "mean_ax_fraction": 0.454,
+    "expected_ax_fraction_uniform": 0.4082,
+    "expected_ax_fraction_weighted": 0.4545
+  },
+  "linear_model": {
+    "slope": 0.424608,
+    "intercept": 0.9634,
+    "r_squared": 0.8299,
+    "pearson_r": 0.911
+  },
+  "byproduct_test": {
+    "actual_mean_ax_fraction": 0.454,
+    "expected_mean_ax_fraction_weighted": 0.4545,
+    "deviation_from_weighted": -0.0005,
+    "deviation_from_uniform": 0.0459,
+    "is_byproduct_consistent": false
+  },
+  "subgroup_scaling": {
+    "AX_INIT": {
+      "slope": 0.1295,
+      "intercept": -0.6277,
+      "r_squared": 0.6226,
+      "mean": 3.55
+    },
+    "AX_MED": {
+      "slope": 0.2023,
+      "intercept": -0.2684,
+      "r_squared": 0.7249,
+      "mean": 6.26
+    },
+    "AX_FINAL": {
+      "slope": 0.0928,
+      "intercept": 1.8594,
+      "r_squared": 0.5019,
+      "mean": 4.85
+    }
+  },
+  "residual_analysis": {
+    "mean_residual": -0.0,
+    "max_positive_residual": 4.85,
+    "max_negative_residual": -4.91,
+    "records_ax_overrepresented": 625,
+    "records_ax_underrepresented": 610
+  }
+}

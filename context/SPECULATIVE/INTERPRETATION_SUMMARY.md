@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.38
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.45
 
 ---
 
@@ -36,7 +36,7 @@ Every Currier A/B token decomposes into four functional components:
 TOKEN = PREFIX   → material-behavior class (what kind of thing)
       + SISTER   → operational mode (how carefully)
       + MIDDLE   → variant discriminator (which specific variant)
-      + SUFFIX   → decision archetype (what decision is needed)
+      + SUFFIX   → context-dependent marker (system role + material class)
 ```
 
 ### Component-to-Class Mapping
@@ -46,7 +46,18 @@ TOKEN = PREFIX   → material-behavior class (what kind of thing)
 | **PREFIX** | Material-behavior | 4 classes (M-A/B/C/D) | Grammar roles, enrichment |
 | **SISTER** | Operational mode | 2 modes (precision/tolerance) | C412 anticorrelation |
 | **MIDDLE** | Variant identity | ~1,184 discriminators | 80% prefix-exclusive |
-| **SUFFIX** | Decision archetype | 12 archetypes (D1-D12) | A/B enrichment patterns |
+| **SUFFIX** | Two-axis marker | A/B system role + material class | C283, C495, C527 |
+
+**SUFFIX Two-Axis Model (revised 2026-01-24):**
+
+Suffix operates on two orthogonal dimensions:
+
+| Axis | Scope | Finding | Tier |
+|------|-------|---------|------|
+| System role | A vs B enrichment | -edy 49x B, -ol 0.35x A-enriched | 2 (C283) |
+| Material class | Within A: animal vs herb | Animal: 78% -ey/-ol; Herb: 41% -y/-dy | 3 (C527) |
+
+The earlier "decision archetype (D1-D12)" mapping in ccm_suffix_mapping.md is **provisional and incomplete**. The fire-degree interpretation (C527) is conditional on Brunschwig alignment.
 
 ### Material-Behavior Classes
 
@@ -65,6 +76,106 @@ TOKEN = PREFIX   → material-behavior class (what kind of thing)
 | **sh** (vs ch) | Tolerance | 24.7% | Loose tolerances, more escape routes |
 
 Statistical validation: rho = -0.326, p = 0.002 (C412)
+
+### LATE Prefixes as Output/Completion Phase (Tier 3)
+
+The V+L prefixes (al, ar, or) may function as output/completion markers within line-level control loops:
+
+| Prefix | Position | Suffix-Less | Interpretation |
+|--------|----------|-------------|----------------|
+| al | 0.692 | 43.9% | Output marker |
+| ar | 0.744 | 68.4% | Terminal form |
+| or | 0.664 | 70.5% | Terminal form |
+
+**Structural evidence (C539, Tier 2):**
+- 3.78x enrichment at absolute line end
+- V+L morphology distinct from consonantal ENERGY prefixes
+- Short MIDDLE preference (om, am, y enriched)
+- When not line-final, followed by ENERGY prefixes (cycle reset)
+
+**Interpretive hypothesis (Tier 3):**
+- EARLY position (ENERGY prefixes) = Initialize energy state
+- MIDDLE position (mixed roles) = Monitor and intervene
+- LATE position (V+L prefixes) = Record output / mark completion
+
+This interpretation is consistent with closed-loop control semantics where each line represents a control cycle: setup → work → output. The V+L morphology may be phonologically motivated (easier articulation at phrase boundaries).
+
+**Contrast with ol:** Despite sharing V+L morphology, ol sits at MIDDLE position (0.560) and has only 27.8% suffix-less rate (below baseline). ol is CORE_CONTROL, not LATE class. V+L pattern is necessary but not sufficient.
+
+### L-compound as Modified Energy Operators (Tier 3)
+
+L-compound operators (lch, lk, lsh) are structurally `l` + energy operator root (C298.a):
+
+| Pattern | Count | Interpretation |
+|---------|-------|----------------|
+| lch = l + ch | 74 | Modified ch operation |
+| lk = l + k | 58 | Modified k operation |
+| lsh = l + sh | 24 | Modified sh operation |
+
+**Positional shift:** The `l` modifier moves energy operations earlier in line (lch 0.344 vs ch 0.483). This may represent "pre-positioned" or "setup" energy operations before the main working phase.
+
+**Provenance contrast with LATE:**
+- L-compound: Fully B-internal (97% exclusive tokens, 86% exclusive MIDDLEs)
+- LATE: B-prefix on PP vocabulary (85% exclusive tokens, 76% PP MIDDLEs)
+
+L-compound is B's own infrastructure; LATE marks pipeline content at boundaries.
+
+### Folio Program Type Differentiation (Tier 3)
+
+L-compound rate and LATE rate show negative correlation (r = -0.305) at folio level:
+
+| Folio Type | Example | L-compound | LATE | ENERGY |
+|------------|---------|------------|------|--------|
+| Control-intensive | f83v | 4.94% | 0.00% | High |
+| Output-intensive | f40r | 0.00% | 6.19% | Lower |
+
+**REGIME correlation:**
+- REGIME_1/3: Higher L-compound (1.2-1.6%), higher ENERGY (48-50%), lower LATE
+- REGIME_2/4: Lower L-compound (0.7-1.0%), lower ENERGY (35-38%), higher LATE
+
+This suggests folios differ not just in content but in **control architecture**: some programs emphasize active control (L-compound heavy), others emphasize output recording (LATE heavy).
+
+**Note:** Symmetric bracketing hypothesis (L-compound + LATE as line brackets) was tested and **falsified** - co-occurrence ratio 0.95x (independent), bracket order only 67.4%.
+
+### Grammar Infrastructure Allocation by Section (Tier 3)
+
+REGIME classifications reflect **grammar infrastructure allocation**, orthogonal to C494's execution precision axis:
+
+| REGIME | L-compound | Kernel | LATE | Profile |
+|--------|------------|--------|------|---------|
+| REGIME_1 | 2.35% | 16.8% | 1.37% | Control-infrastructure-heavy |
+| REGIME_2 | 0.32% | 10.2% | 3.14% | Output-intensive |
+| REGIME_4 | 0.87% | 14.0% | 1.98% | Balanced |
+
+**Section B Concentration (70% REGIME_1):**
+
+| Section | REGIME_1 | REGIME_2 | REGIME_4 | Interpretation |
+|---------|----------|----------|----------|----------------|
+| B (balneological) | 70% | 5% | 10% | Control-heavy |
+| H (herbal) | 13% | 31% | 44% | Output-distributed |
+| S (stellar) | 17% | 35% | 43% | Output-distributed |
+
+Section B (traditionally "bathing figures") concentrates in REGIME_1, suggesting these folios document procedures requiring:
+- Heavy control infrastructure (L-compound, kernel)
+- Active intervention (16.8% kernel contact per line)
+- Modified energy operations (L-compounds enriched 2.6-7.5x)
+
+**Enriched MIDDLEs in REGIME_1:**
+- lsh: 7.51x, lch: 4.38x, lk: 2.61x (L-compound family)
+- ect: 4.66x, ct: 2.31x (control operators)
+
+**Fire-degree distributes by Section, not REGIME:**
+
+| Section | High-Fire | Low-Fire | Ratio |
+|---------|-----------|----------|-------|
+| H | 3.9% | 17.8% | 0.22 (lowest) |
+| B | 7.5% | 19.4% | 0.39 |
+| S | 7.1% | 15.2% | 0.47 |
+| C | 6.1% | 12.9% | 0.48 (highest) |
+
+**Orthogonality with C494:** This classification (grammar composition) is independent of C494's precision axis (execution requirements). A folio can be both high-precision (C494 REGIME_4) AND control-infrastructure-heavy (this analysis REGIME_1).
+
+**Source:** REGIME_SEMANTIC_INTERPRETATION phase (2026-01-25)
 
 ### MIDDLE Frequency Structure
 
@@ -494,6 +605,668 @@ This explains why RI is:
 | C522 | Layer independence (falsified isomorphism) |
 
 **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+---
+
+## 0.D. RI LEXICAL LAYER HYPOTHESIS (RI_STRUCTURE_ANALYSIS Phase) - NEW in v4.39
+
+### Tier 3: Grammar vs Lexicon Distinction
+
+> **RI extensions within MIDDLEs may function as a LEXICAL layer that anchors abstract grammar to specific external substances, while PREFIX/SUFFIX/PP remain purely functional markers operating as GRAMMAR.**
+
+This extends C526 with a detailed characterization of the two-layer model.
+
+### The Problem This Addresses
+
+C120 (PURE_OPERATIONAL) establishes that Voynich tokens have no semantic content. But RI MIDDLEs exhibit vocabulary-like behavior:
+- 609 unique identifiers (regenerated 2026-01-24 with atomic-suffix parser)
+- Localized to specific folios (87% on only 1 folio)
+- Non-compositional (don't decompose systematically)
+- Appear with varying PREFIX/SUFFIX combinations
+
+This creates tension: How can 609 arbitrary localized identifiers have "no semantic content"?
+
+### Resolution: Grammar vs Lexicon
+
+The resolution distinguishes two functional layers:
+
+| Layer | Components | Function | Semantic Status |
+|-------|------------|----------|-----------------|
+| **Grammar** | PREFIX, SUFFIX, PP atoms | Control-flow, procedural | No content (C120 applies) |
+| **Lexicon** | RI extensions | Referential anchoring | Points to substances (THAT, not WHAT) |
+
+**Grammar** is combinatorial and global:
+- ch prefix used with 57 different MIDDLEs
+- dy suffix used with 40 different MIDDLEs
+- PP atoms appear across all systems (A, B, AZC)
+
+**Lexicon** is arbitrary and localized:
+- RI extensions don't decompose systematically
+- 83% appear on only 1-2 folios
+- Extensions function as dictionary entries, not grammatical positions
+
+### Evidence Summary
+
+**RI Localization Pattern:**
+
+| Category | Percent | Avg Folios | Interpretation |
+|----------|---------|------------|----------------|
+| Strictly local (1 folio) | 87.3% | 1.0 | Specific material identifiers |
+| Local (1-2 folios) | ~90% | 1.28 avg | Material identifiers |
+| Distributed (10+ folios) | <1% | varies | Compatibility bridges |
+
+**NOTE (2026-01-24):** Regenerated with atomic-suffix parser. With 609 RI MIDDLEs: 87% appear on only 1 folio, avg ~1.3 folios.
+
+**PREFIX/SUFFIX Versatility:**
+
+| Affix | Different MIDDLEs | Role |
+|-------|-------------------|------|
+| ch | 57 | Global grammatical marker |
+| sh | 29 | Global grammatical marker |
+| qo | 27 | Global grammatical marker |
+| dy | 40 | Global grammatical marker |
+| y | 34 | Global grammatical marker |
+
+Same affixes combine with many different RI extensions - the grammar layer is independent of the lexical layer.
+
+**Variation Pattern:**
+- 95% of localized RI appear with multiple PREFIX/SUFFIX combinations
+- Same RI MIDDLE, different grammatical context
+- Example: `cheom`, `sheom`, `okeom`, `cheomam` all share MIDDLE `eom`
+
+### The Two-Layer Model
+
+```
+Word Structure:
+  TOKEN = PREFIX + MIDDLE + SUFFIX
+          ↓        ↓        ↓
+          Grammar  MIDDLE   Grammar
+                   ↓
+           PP_atom + Extension
+           ↓         ↓
+           Grammar   Lexicon
+```
+
+**Interpretation:**
+- PP atoms encode **procedural compatibility** (what can be done)
+- RI extensions encode **referential identity** (to what)
+- PREFIX/SUFFIX encode **grammatical context** (in what form)
+
+### RI PREFIX Bifurcation (C528) - NEW in v4.40
+
+RI MIDDLEs split into two nearly-disjoint populations based on PREFIX behavior:
+
+| Population | Count | % of RI |
+|------------|-------|---------|
+| PREFIX-REQUIRED | 334 | 50.1% |
+| PREFIX-FORBIDDEN | 321 | 48.1% |
+| PREFIX-OPTIONAL | 12 | 1.8% |
+
+**Key finding:** Only 1.8% of RI MIDDLEs appear both ways. The rest are locked into one pattern.
+
+**Section independence:** Both populations show identical distributions across H and P sections (~54% PREFIX rate in each). The split is substance-inherent, not section-driven.
+
+**Implication for two-layer model:** PREFIX is grammatical globally, but its attachment to specific RI MIDDLEs is **lexically encoded**. Each substance identifier inherently requires or forbids PREFIX marking:
+
+```
+RI Vocabulary (609 MIDDLEs)  [regenerated 2026-01-24]
++-- PREFIX-REQUIRED (~50%): Always appear with PREFIX
+|     Examples: acp, afd, aiikh, akod, alda
+|
++-- PREFIX-FORBIDDEN (~50%): Never appear with PREFIX
+      Examples: aiee, aiid, cckh, cfaras, cfhod
+```
+
+This creates two parallel substance vocabularies on each folio, both following the same localization pattern (87-90% on exactly 1 folio).
+
+### Semantic Ceiling Refinement
+
+This refines C120 (PURE_OPERATIONAL):
+
+| What | Status |
+|------|--------|
+| Grammar (PREFIX, SUFFIX, PP) | No semantic content - abstract functional positions |
+| Lexicon (RI extensions) | REFERENTIAL content - points to substances |
+| Entity identity | IRRECOVERABLE - we know THAT 609 things are distinguished, not WHAT |
+
+The system can **reference** specific substances without **encoding** which substances they are. The manuscript is operational AND referential - these are not contradictory.
+
+### Why This Matters
+
+**For the apparatus model:**
+- Grammar tells the operator WHAT TO DO
+- Lexicon tells the operator TO WHAT
+- Both are necessary for functional completeness
+
+**For interpretation:**
+- ~609 substances/categories are distinguished in Currier A
+- Cannot identify which (semantic ceiling)
+- But we know they exist as distinct referents
+
+**For the expert-oriented design:**
+- Expert knows WHAT each RI extension refers to
+- Grammar provides procedural context
+- System assumes external knowledge of referents
+
+### What This Does NOT Claim
+
+- ❌ RI extensions encode specific plants (we can't know which)
+- ❌ The lexical layer enables translation
+- ❌ Meaning can be recovered from the text
+- ❌ RI extensions are linguistic labels
+
+**The distinction is functional, not semantic:** RI extensions POINT TO substances the way dictionary entries point to concepts - without encoding WHICH concepts.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C120 | PURE_OPERATIONAL (applies to grammar, refined for lexicon) |
+| C498 | RI vocabulary track (83% localized) |
+| C475 | MIDDLE incompatibility (compatibility layer) |
+| C509 | PP/RI dimensional separability |
+| C517 | Superstring compression |
+| C526 | RI Lexical Layer Hypothesis |
+
+**Source:** RI_STRUCTURE_ANALYSIS (2026-01-24)
+
+### Gallows Domain Coherence (Tier 3)
+
+**Finding (C530):** When RI contains gallows letter X, PP in the same record is 2-5x more likely to also contain X:
+
+| Gallows | PP baseline | Observed in same record | Enrichment |
+|---------|-------------|-------------------------|------------|
+| k | 23.5% | 54.8% | 2.3x |
+| t | 15.8% | 33.1% | 2.1x |
+| p | 8.7% | 42.9% | 4.9x |
+| f | 5.0% | 17.9% | 3.6x |
+
+**Interpretation:**
+
+This supports the RI lexical layer hypothesis: RI MIDDLEs reference specific materials that cluster by some property. Records and folios appear to organize around gallows "domains":
+
+- **k-domain:** Default/unmarked (78/109 folios are k-dominant)
+- **t-domain:** Alternative category (cluster of t-specialized folios)
+- **p/f-domains:** Rare specialized markers (never folio-dominant)
+
+This is NOT compositional derivation (the PP-as-atoms theory was statistically insignificant per C512 retest). Rather, it suggests **thematic coherence** - records dealing with the same category of material tend to use vocabulary (both RI and PP) from the same gallows domain.
+
+**What this supports:**
+- RI references external substances organized by some categorical property
+- That property correlates with gallows letter usage
+- The expert user would recognize these domain clusters
+
+**What this does NOT claim:**
+- ❌ Gallows letters encode specific meanings (we can't know what k vs t signifies)
+- ❌ Domain clustering enables translation or identification
+
+**Source:** GALLOWS_MIDDLE_ANALYSIS (2026-01-24)
+
+---
+
+## 0.E. B FOLIO AS CONDITIONAL PROCEDURE (CLASS_COMPATIBILITY_ANALYSIS Phase) - NEW in v4.41
+
+### Tier 3: Core Finding
+
+> **Each B folio is a distinct procedure defined by unique vocabulary. Folio selection is external (human choice based on desired outcome). AZC modulates which core operations are available, creating conditional execution paths through the selected procedure.**
+
+This upgrades "specific folio = specific recipe" from **NOT CLAIMED** (previous X.10 disclaimer) to **TIER 3 SUPPORTED**.
+
+### Evidence Summary (C531-C534)
+
+| Finding | Value | Constraint |
+|---------|-------|------------|
+| Folios with unique MIDDLE | **98.8%** (81/82) | C531 |
+| Unique MIDDLEs that are B-exclusive | **88%** | C532 |
+| Adjacent folio grammatical slot overlap | **1.30x** vs non-adjacent | C533 |
+| Mean unique MIDDLEs per folio | 10.5 | C531 |
+| Only folio without unique vocabulary | f95r1 | C531 |
+
+### The Two-Vocabulary Model
+
+Each B folio contains two vocabulary layers:
+
+| Layer | Source | AZC Role | Function |
+|-------|--------|----------|----------|
+| **Core vocabulary** | Shared (41 MIDDLEs) | **Filtered** - determines what's legal | Control flow (~79% of tokens) |
+| **Unique vocabulary** | B-exclusive (88%) | **Not filtered** - always available | Procedure identity (~21% of tokens) |
+
+**Key insight:** AZC doesn't determine WHICH folio runs. AZC determines which OPERATIONS are available within any folio.
+
+### The Conditional Execution Model
+
+The same B folio can produce different execution paths depending on the A record:
+
+```
+B Folio F (fixed procedure):
+├── Unique vocabulary: Always available (procedure identity)
+│   └── 10-15 MIDDLEs specific to this folio
+│
+└── Core vocabulary: Conditionally available
+    ├── A record X active → core ops {a, b, c} legal
+    │   └── Execution path: unique + {a, b, c}
+    │
+    └── A record Y active → core ops {a, d, e} legal
+        └── Execution path: unique + {a, d, e}
+```
+
+This is **constraint satisfaction**, not **program selection**:
+- The manuscript provides 83 procedures (B folios)
+- AZC provides runtime constraints (which core ops are legal)
+- Actual execution = intersection of procedure content and AZC legality
+
+### The Operational Workflow
+
+```
+1. MATERIAL IDENTIFICATION
+   Human has substance → finds matching A record
+   A record's PP vocabulary encodes compatibility profile
+
+2. COMPATIBILITY CHECK
+   A record position activates AZC constraints
+   ~80% of B core vocabulary filtered (C502)
+
+3. PROCEDURE SELECTION
+   Human chooses B folio based on desired outcome
+   Each folio is a complete procedure with unique specifics
+
+4. CONDITIONAL EXECUTION
+   Procedure runs with:
+   - Unique vocabulary (always available) = procedure identity
+   - Legal core vocabulary (AZC-filtered) = available operations
+
+5. MONITORING
+   Human Track annotations record observations
+   Higher HT with rare materials (C461)
+```
+
+### Why 83 Folios With Unique Vocabulary?
+
+Each folio is a **specific recipe**, not a generic template:
+
+| Property | Evidence | Interpretation |
+|----------|----------|----------------|
+| Unique vocabulary | 98.8% have unique MIDDLEs | Each procedure has specific details |
+| Same grammar | All use 49 classes (C121) | Shared control structure |
+| Adjacent similarity | 1.30x slot overlap | Related procedures (variations) |
+| Section clustering | Partial (C534) | Domain organization |
+
+The ~10.5 unique MIDDLEs per folio encode:
+- Specific equipment/apparatus references
+- Specific timing/temperature markers
+- Specific outcome indicators
+- What makes THIS procedure distinct from others
+
+### Integration with Brunschwig Model
+
+This strengthens the Brunschwig alignment:
+
+| Brunschwig | Voynich | Mapping |
+|------------|---------|---------|
+| Fire degree (1-4) | REGIME (1-4) | Completeness requirements |
+| Recipe within degree | B folio within REGIME | Specific procedure |
+| Recipe-specific steps | Unique vocabulary | Procedure identity |
+| Shared techniques | Core vocabulary | Control operations |
+
+The pathway becomes concrete:
+
+```
+Brunschwig recipe
+    → Product type
+    → REGIME (completeness tier)
+    → B folio (specific procedure)
+    → Execution with A-record constraints
+```
+
+### What This Does NOT Claim
+
+- ❌ Folio selection is encoded in the text (it's external/human)
+- ❌ Unique vocabulary has recoverable meaning (semantic ceiling applies)
+- ❌ Each folio maps to exactly one Brunschwig recipe
+- ❌ AZC "chooses" which folio runs
+
+### What This DOES Claim (Tier 3)
+
+- ✓ Each B folio is a distinct procedure (unique vocabulary defines it)
+- ✓ Folio identity is independent of AZC (88% B-exclusive)
+- ✓ AZC modulates execution paths, not procedure selection
+- ✓ The manuscript is a conditional procedure library, not a sequential program
+- ✓ Human operator selects folio based on external context
+
+### Architectural Implication
+
+The Voynich B section is a **reference library** of 83 conditional procedures:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                   B PROCEDURE LIBRARY                    │
+│                      (83 folios)                         │
+├─────────────────────────────────────────────────────────┤
+│  Each folio:                                             │
+│  ├── IDENTITY: Unique vocabulary (always available)     │
+│  ├── GRAMMAR: 49 instruction classes (shared)           │
+│  └── CONSTRAINTS: Core vocab filtered by AZC            │
+├─────────────────────────────────────────────────────────┤
+│  Human selects folio based on:                          │
+│  ├── Domain (herbal, pharma, astro sections)            │
+│  ├── Desired outcome (product type)                     │
+│  └── Material compatibility (A record determines)        │
+└─────────────────────────────────────────────────────────┘
+```
+
+This is why:
+- Illustrations exist (visual indexing for folio selection)
+- Sections exist (domain organization for navigation)
+- Labels exist (identification markers)
+- Each folio has unique vocabulary (procedure specificity)
+
+The text encodes procedures and constraints. The decision of WHEN to use them is external.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C531 | Folio unique vocabulary prevalence |
+| C532 | Unique MIDDLE B-exclusivity |
+| C533 | Grammatical slot consistency |
+| C534 | Section-specific profiles (partial) |
+| C502 | A-record viability filtering |
+| C470 | MIDDLE restriction inheritance |
+| C121 | 49-class grammar universality |
+
+**Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+---
+
+## 0.F. LINE-LEVEL EXECUTION SYNTAX (CLASS_SEMANTIC_VALIDATION Phase) - NEW in v4.43
+
+### Tier 2-3: Execution Cycle Discovery
+
+> **Each line follows a positional template: SETUP (initial) → THERMAL WORK (medial) → CHECKPOINT/CLOSURE (final). The 5 role categories (CC, EN, FL, FQ, AX) have distinct positional preferences, transition grammars, and REGIME/section profiles that collectively define line-level execution syntax.**
+
+This fills a critical gap: we previously knew the VOCABULARY of operations (what roles exist) but not the SYNTAX (how they flow within a line).
+
+### The Line as Control Cycle
+
+The 49 instruction classes participate in 5 validated roles with distinct positional preferences (C556, Chi2 p=3e-89):
+
+```
+LINE STRUCTURE:
+
+INITIAL zone              MEDIAL zone              FINAL zone
+[0.0 -------- 0.3]        [0.3 -------- 0.7]       [0.7 -------- 1.0]
+
+  daiin (CC trigger)         ENERGY chains            FLOW (ar, al, ary)
+  AUXILIARY setup            qo ↔ ch-sh interleave    FREQUENT (or→aiin)
+  UNCLASSIFIED (1.55x)      ENERGY (avoids edges)     FL/FQ (~1.65x)
+
+        CC/AX                  ENERGY 0.45x              FL/FQ
+      (openers)              (medial-concentrated)       (closers)
+```
+
+### Key Structural Findings (C547-C562)
+
+**Positional Grammar (C556):**
+
+| Role | Initial Enrichment | Final Enrichment | Position |
+|------|-------------------|------------------|----------|
+| UNCLASSIFIED | 1.55x | 1.42x | Initial-biased |
+| AUXILIARY | 0.97x | 0.79x | Initial-biased |
+| ENERGY | **0.45x** | **0.50x** | **Medial-concentrated** |
+| CORE_CONTROL | 1.16x | 0.83x | Initial-biased |
+| FREQUENT | 0.70x | **1.67x** | **Final-biased** |
+| FLOW | 0.73x | **1.65x** | **Final-biased** |
+
+**Transition Grammar (C550):**
+
+| Pattern | Finding |
+|---------|---------|
+| Self-chaining hierarchy | FREQUENT 2.38x > FLOW 2.11x > ENERGY 1.35x |
+| FLOW-FREQUENT affinity | Bidirectional 1.54-1.73x |
+| ENERGY transition asymmetry | Avoids FL (0.75x), FQ (0.71x), UN (0.80x) |
+
+ENERGY operators preferentially chain with themselves (transition preference asymmetry), forming functionally coherent thermal sequences that avoid mixing with non-thermal roles.
+
+**ENERGY/FLOW Anticorrelation (C551, C562):**
+
+| Dimension | ENERGY | FLOW |
+|-----------|--------|------|
+| Position | Medial (0.45x initial) | Final (17.5%) |
+| REGIME_1 | **Enriched** (1.26-1.48x) | **Depleted** (0.40-0.63x) |
+| BIO section | **Enriched** (1.72x) | **Depleted** (0.83x) |
+| PHARMA section | Class 33 depleted (0.20x) | **Enriched** (1.38x) |
+| EN/FL ratio | REGIME_1: **7.57** | REGIME_2: **3.71** |
+
+### Role-Specific Structure
+
+**CORE_CONTROL Hierarchy (C557, C558, C560):**
+
+```
+CORE_CONTROL
+├── Singletons (atomic)
+│   ├── daiin (Class 10): 27.7% line-initial, 47.1% ENERGY followers
+│   ├── ol (Class 11): 9.5% line-final, closure signal
+│   └── k (Class 12): 0 occurrences in Currier B (bound morpheme)
+└── Derived (compound)
+    └── Class 17 (ol+X): 9 tokens, ALL PREFIX=ol
+        BIO enriched 1.72x, PHARMA 0 occurrences
+```
+
+**daiin** functions as an ENERGY trigger - "begin thermal sequence." **ol** functions as closure - "processing complete." Class 17 represents elaborated control operators derived from the atomic ol.
+
+**or→aiin Directional Bigram (C561):**
+
+| Expected (random) | Observed |
+|-------------------|----------|
+| aiin→aiin: 31% | **0%** |
+| or→aiin: 22% | **87.5%** |
+
+Zero aiin→aiin sequences exist (structural constraint, not statistical tendency). The or→aiin bigram functions as a grammatical unit: or initiates (85%), aiin terminates (90%). This is a checkpoint marker, not token repetition.
+
+**FLOW Final Hierarchy (C562):**
+
+| Class | Final% | Function |
+|-------|--------|----------|
+| 40 (ary, dary, aly) | 59.7% | Strong closers |
+| 38 (aral, aram) | 52.0% | Strong closers |
+| 30 (dar, dal, dam) | 14.8% | Neutral/provisional |
+| 7 (al, ar) | 9.9% | Soft closers |
+
+**ary is 100% line-final** - a pure termination signal. The hierarchy represents degrees of closure from provisional (ar) to absolute (ary).
+
+**Section Profiles (C552, C553, C555):**
+
+| Section | Signature | Profile |
+|---------|-----------|---------|
+| BIO | +CC +EN (45.2% ENERGY) | Thermal-intensive processing |
+| HERBAL_B | +FQ -EN (1.62x FREQUENT) | Repetitive non-thermal cycles |
+| PHARMA | +FL, Class 34 replaces 33 | Flow-dominated, controlled collection |
+| RECIPE_B | -CC | Reduced control overhead |
+
+BIO-REGIME effects are independent and additive (C553): baseline 27.5% ENERGY, +6.5pp from REGIME_1, +9.8pp from BIO section. BIO + REGIME_1 = 48.9% ENERGY (highest in manuscript).
+
+### Tier 3-4: Distillation Cycle Interpretation
+
+The line-level execution syntax maps directly to a distillation control cycle:
+
+| Line Phase | Structural Evidence | Distillation Interpretation |
+|------------|--------------------|-----------------------------|
+| **SETUP** (initial) | daiin 27.7% initial, 47.1% ENERGY followers (C557) | "Begin heating sequence" - operator initiates fire |
+| **WORK** (medial) | ENERGY chains, qo↔ch-sh interleaving at 56.3% (C549, C550) | Sustained thermal processing: heat (ch-sh) → vent/monitor (qo) → heat again |
+| **CHECK** (medial-final) | or→aiin bigram, 87.5% directional (C561) | Sensory checkpoint - "taste and scent" verification |
+| **CLOSE** (final) | FLOW hierarchy, ary 100% final (C562) | Completion: provisional (ar) to absolute (ary) |
+
+**REGIME as operational mode:**
+
+| REGIME | EN/FL Ratio | Interpretation |
+|--------|-------------|----------------|
+| REGIME_1 | 7.57 | Active heating mode (Brunschwig first degree) |
+| REGIME_2 | 3.71 | Cooling/collection mode (second degree) |
+| REGIME_3 | 5.04 | Intervention mode (third degree) |
+| REGIME_4 | 4.76 | Precision mode (controlled execution) |
+
+**Section as procedural type:**
+
+| Section | Thermal Intensity | Distillation Parallel |
+|---------|-------------------|-----------------------|
+| BIO (45% ENERGY) | Maximum | Hot bath distillation (balneum mariae) |
+| HERBAL (FREQUENT-enriched) | Low | Maceration/infusion (cold processing) |
+| PHARMA (FLOW-dominated) | Moderate | Controlled condensation/collection |
+
+### Integration with Brunschwig
+
+**Brunschwig's fire-degree cycle now maps to line structure:**
+
+| Brunschwig Phase | Voynich Line Position | Key Marker |
+|------------------|-----------------------|------------|
+| "First degree - initiate heat" | Initial zone | daiin (trigger) |
+| "Second/third degree - work" | Medial zone | ENERGY chains, qo↔ch-sh |
+| "Finger test / scent test" | Medial-final boundary | or→aiin (checkpoint) |
+| "Overnight cooling" | Final zone | FLOW hierarchy (ar < ary) |
+
+Brunschwig writes: *"Rose and lavender waters are discarded when their taste and scent have diminished."* The or→aiin bigram may mark exactly this moment - where sensory judgment determines whether the batch passes.
+
+Brunschwig writes: *"must be left to stand overnight to cool."* The FLOW final hierarchy encodes degrees of this commitment - from provisional cooling (ar) to irreversible batch completion (ary).
+
+### The Gap This Fills
+
+| Before CLASS_SEMANTIC_VALIDATION | After |
+|----------------------------------|-------|
+| Knew token decomposition (PREFIX+MIDDLE+SUFFIX) | Now know how tokens FLOW within lines |
+| Knew roles existed (CC, EN, FL, FQ, AX) | Now know roles have positional grammar |
+| Knew REGIME controlled intensity | Now know REGIME controls ENERGY/FLOW ratio |
+| Knew sections had different profiles | Now know profiles map to procedural types |
+| Knew lines were control blocks | Now know control blocks have SETUP→WORK→CHECK→CLOSE structure |
+
+### What This Does NOT Claim
+
+- That specific Brunschwig passages map to specific tokens
+- That or→aiin literally means "sensory test"
+- That daiin literally means "begin heating"
+- That any token has recoverable referential meaning
+
+The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cycle structure consistent with thermal processing, but the semantic ceiling (C171) still applies.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C547 | qo-chain REGIME_1 enrichment |
+| C548 | Manuscript-level gateway/terminal envelope |
+| C549 | qo/ch-sh interleaving significance |
+| C550 | Role transition grammar (ENERGY asymmetry) |
+| C551 | Grammar universality, REGIME specialization |
+| C552 | Section-specific role profiles |
+| C553 | BIO-REGIME independence |
+| C554 | Hazard class clustering |
+| C555 | PHARMA thermal operator substitution |
+| C556 | ENERGY medial concentration |
+| C557 | daiin line-initial ENERGY trigger |
+| C558 | Singleton class structure |
+| C559 | FREQUENT role structure |
+| C560 | Class 17 ol-derived operators |
+| C561 | or→aiin directional bigram |
+| C562 | FLOW role structure |
+
+**Source:** CLASS_SEMANTIC_VALIDATION (2026-01-25)
+
+---
+
+## 0.G. THE SCAFFOLD AND THE SHADOW (AX_FUNCTIONAL_ANATOMY Phase) - NEW in v4.44
+
+### Tier 3-4: What the Other 28% Was Doing All Along
+
+For months, one-fifth of the instruction classes sat in a bucket labeled AUXILIARY — 480 tokens, 20 classes, 28.4% of everything Currier B ever wrote — and nobody could say what they *did*. They weren't ENERGY. They weren't FLOW. They weren't CONTROL or FREQUENT. They were just... there. Structurally present, positionally real (C563-C566 proved they had INIT/MED/FINAL sub-positions with p=3.6e-47), but functionally invisible. The grammar had a heartbeat and a skeleton and a nervous system, and then this enormous quiet mass of tissue that nobody could name.
+
+It turns out we were looking at the problem backwards.
+
+We kept asking: *What does AUXILIARY do that the other roles don't?* The answer is nothing. AX doesn't do anything the other roles don't do. It uses the same vocabulary, drawn from the same pipeline, carrying the same material identity. The difference isn't in the vocabulary. The difference is in the *prefix*.
+
+### One Vocabulary, Two Postures
+
+Take a MIDDLE — any MIDDLE, say `edy`. The pipeline delivers it from Currier A through AZC into B. Now watch what happens:
+
+Attach the prefix `ch` and you get `chedy` — an ENERGY operator. The distiller picks up the material and puts it to work. Heat applied, vapor rising, the cucurbit is active.
+
+Attach the prefix `ok` and you get `okedy` — an AUXILIARY scaffold token. The distiller *stages* the material. It's on the bench, accounted for, positioned for use. But the fire isn't lit yet.
+
+Strip the prefix entirely and you get bare `edy` — an AX_FINAL frame-closer. The material is declared ready. The workspace around this step is complete.
+
+Now add an articulator: `ychedy`, `dchedy`, `lchedy` — AX_INIT frame-openers. The distiller announces: *this workspace is now open for processing this material*. The `ch` prefix is still there — it still names the operational mode — but the articulator (`y`, `d`, `l`) shifts it from present tense to future tense. Not "processing now" but "preparing to process."
+
+Same MIDDLE. Same material. Four different deployment modes, selected entirely by what prefix wraps around it (C571). A classifier using nothing but prefix achieves 89.6% accuracy at telling AX from non-AX (C570). The remaining 10.4% are exactly the ambiguous cases — the articulated ch/sh forms where the system deliberately blurs the line between announcing work and doing it.
+
+This is the resolution: **PREFIX is the role selector. MIDDLE is the material carrier. AX is not a different vocabulary — it is the same vocabulary in scaffold mode** (C571).
+
+### The Numbers Behind the Story
+
+The overlap is not subtle. Of 57 unique MIDDLEs that appear in AX tokens, 41 — seventy-two percent — are shared with operational ENERGY tokens (C567). The Jaccard similarity between AX and EN vocabulary is 0.400, which is enormous for two categories that were supposed to be doing different things. And 98.2% of AX MIDDLEs come through the PP pipeline from Currier A. This is not independent material. This is the same material the pipeline sends everywhere else.
+
+How much of Currier A feeds into AX? Nearly all of it. 97.2% of A records carry at least one MIDDLE that ends up in an AX class (C568). The average record contributes 3.7 AX-relevant MIDDLEs. The top contributors are the universal single-character forms — `o` appears in 60% of records, `i` in 39%, `e` in 34% — the same hub MIDDLEs that anchor the entire discrimination space. Only 44 records (2.8%) have zero AX vocabulary, and every one of them is tiny, with four or fewer total MIDDLEs. They're not AX-excluded; they're just small.
+
+On the B side, the guarantee is absolute: zero contexts have zero AX classes. Classes 21 and 22 survive in every single pipeline configuration. You cannot construct a legal B line without scaffolding. The frame is architecturally mandatory (C568).
+
+### Proportional but Not Random
+
+Here is where it gets interesting. The fraction of surviving classes that are AX is 0.4540. The expected fraction under uniform distribution is 0.4545. The deviation is -0.0005 — less than a tenth of a percent. AX doesn't grow or shrink relative to operational roles. It scales in perfect proportion to pipeline throughput (C569).
+
+But the linear model only achieves R²=0.83, not 0.99. The *volume* is proportional; the *composition* has structure of its own. AX_INIT is systematically over-represented (regression slope 0.130 vs expected 0.102) while AX_FINAL is under-represented (0.093 vs 0.122). The manuscript opens frames more eagerly than it closes them. Workspaces are declared with enthusiasm and wrapped up with restraint — which, if you've ever watched someone set up a distillation bench versus clean one up, sounds about right.
+
+### The Shadow on the Scaffold
+
+So what *is* AUXILIARY?
+
+It is the shadow cast by operational vocabulary onto the structural frame of each line. The same light source — MIDDLEs from the pipeline — hits two surfaces. When it hits an operational prefix (ch, sh, qo), you get active processing: ENERGY work, thermal sequences, the grammar's engine running. When it hits a scaffold prefix (ok, ot, bare, articulated), you get staging: workspace management, frame boundaries, material accounting.
+
+The shadow is real. It has shape — INIT/MED/FINAL positional structure with p=3.6e-47 (C563). It has guaranteed presence — classes 21 and 22 always survive (C568). It has independent composition — the subgroup slopes differ from expectation (C569). But it is defined by what casts it. Remove the operational vocabulary and the shadow vanishes. The scaffold has no vocabulary of its own — or rather, it has 16 exclusive MIDDLEs (28.1%), just enough to prove it isn't *entirely* derivative, but not enough to stand alone.
+
+This means the line-level execution cycle from Section 0.F is richer than we thought. Each line doesn't just run SETUP→WORK→CHECK→CLOSE. Each line *brackets* its work in a structural frame made from the same material it processes:
+
+```
+ AX_INIT                    ENERGY work               AX_FINAL
+ "Opening workspace:        "Processing lavender:      "Workspace closed:
+  lavender staged"           heat, vent, monitor"       lavender complete"
+  (ychedy)                   (chedy, shedy)             (dy)
+       └──── same MIDDLE ──────── same MIDDLE ──────────┘
+              different PREFIX      different PREFIX
+```
+
+The manuscript records not just what was done to the lavender, but the opening and closing of the workspace *around* the lavender. Every step is framed. Every frame is built from the step's own material. This is why AX is 28.4% of the text — it takes real structural work to bracket every operation with its own scaffold, and that scaffold is proportional to the operations it frames.
+
+### What This Means for the Workshop
+
+Picture Brunschwig's distillery. The master has a bench, a furnace, a cucurbit, an alembic, collection vessels. Before each operation, he stages: lays out the rose petals, checks the alembic's seal, positions the receiver. This staging uses the same materials that will be processed — you can't stage lavender without handling lavender — but the *posture* is different. Staging is inventory. Processing is chemistry. Same hands, same materials, different intent.
+
+The manuscript, it appears, records both. Not just "heat the lavender" (ENERGY) and "collect the distillate" (FLOW) and "check the scent" (FREQUENT) and "begin the sequence" (CONTROL) — but also "workspace open for lavender" (AX_INIT), "lavender staged" (AX_MED), "lavender workspace closed" (AX_FINAL). The staging protocol. The part of the procedure that a modern recipe would leave implicit but that a 15th-century reference manual for trained operators — a manual designed to be *safe* — would make explicit.
+
+This is consistent with a system that takes safety seriously enough to encode it structurally. The scaffold is guaranteed (C568). The frame always opens (AX_INIT present 95.9% of the time). The frame always closes (AX_FINAL present 100%). You cannot skip the staging protocol. The grammar won't let you.
+
+If the manuscript is a manual for operating dangerous thermal-chemical equipment — and the structural evidence increasingly says it is — then the 28% we couldn't explain wasn't wasted space. It was the safety margin. The part of every procedure that says: *before you light the fire, confirm your workspace is ready. After the fire goes out, confirm your workspace is clear.*
+
+Every good workshop has this discipline. The Voynich manuscript, it seems, wrote it down.
+
+### Twenty Classes, One Shadow (C572)
+
+One question remained after the anatomy was clear: if AX has 20 instruction classes, do those 20 classes correspond to 20 different *kinds* of scaffolding? Twenty distinct staging protocols? Twenty ways to open a workspace?
+
+No. We tested every dimension we could think of — transition structure, positional profiles, neighborhood context — and the answer was emphatic. Only 3 of 20 classes showed any structured transitions. A classifier trained on context signatures scored 6.8% accuracy, *below* the 10.3% random baseline. The best clustering algorithm could manage was k=2 with silhouette 0.18 — worse than the prior attempt that already found weak signal. The sole outlier was Class 22, AX_FINAL's workhorse, which distinguished itself not by what it *did* but by where it *sat*.
+
+The 20 classes are not 20 kinds of scaffold. They are one shadow, cast from 20 slightly different angles. Position is the only thing that separates them. The AX vocabulary is positionally structured (INIT/MED/FINAL is real, p=3.6e-47) but behaviorally uniform. Every scaffold token does the same thing: frame the workspace. The grammar gives you 20 classes because the morphological system — 22 AX-exclusive prefixes crossed with articulators — generates 20 distinct surface forms. But the behavioral space those forms occupy is a single cloud, not 20 clusters.
+
+This is the final simplification. Currier B's 49 instruction classes decompose into 29 behaviorally meaningful roles (the operational classes) plus 20 positional variants of a single scaffold function. The grammar is simpler than it looks. The complexity is in the operations. The scaffold is just... scaffolding.
+
+### Evidence Summary (C567-C572)
+
+| Constraint | Finding | Key Number |
+|------------|---------|------------|
+| C567 | AX MIDDLEs overlap with operational roles | 72% shared, Jaccard=0.400 |
+| C568 | AX vocabulary present in nearly all pipeline contexts | 97.2% A-records, 0 zero-AX B-contexts |
+| C569 | AX volume scales proportionally, composition is independent | Fraction 0.454, R²=0.83 |
+| C570 | PREFIX alone predicts AX membership | 89.6% accuracy, 22 AX-exclusive prefixes |
+| C571 | AX = PREFIX-determined scaffold mode of pipeline vocabulary | PREFIX is role selector, MIDDLE is material |
+| C572 | 20 AX classes collapse to ≤2 effective behavioral groups | silhouette=0.18, context below baseline |
+
+**Source:** AX_FUNCTIONAL_ANATOMY (2026-01-25), AUXILIARY_STRATIFICATION (2026-01-25), AX_CLASS_BEHAVIOR (2026-01-25)
 
 ---
 
@@ -1629,6 +2402,23 @@ Together:
 
 Common signature: **CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL**
 
+### Line-Level Execution Cycle (NEW - v4.43)
+
+CLASS_SEMANTIC_VALIDATION revealed that lines follow a thermal processing cycle:
+
+| Phase | Position | Markers | Distillation Parallel |
+|-------|----------|---------|----------------------|
+| SETUP | Initial | daiin trigger, AX context | Initiate fire, set degree |
+| WORK | Medial | ENERGY chains, qo↔ch-sh | Sustained heating with monitoring |
+| CHECK | Medial-final | or→aiin bigram | Sensory verification (scent/taste) |
+| CLOSE | Final | FLOW hierarchy, ary=100% final | Cooling/collection, batch commitment |
+
+ENERGY/FLOW anticorrelation by REGIME confirms operational mode interpretation:
+- REGIME_1 (EN/FL=7.57): Active heating
+- REGIME_2 (EN/FL=3.71): Cooling/collection
+
+See Section 0.F for full details (C547-C562).
+
 ### Historical Pattern Alignment
 
 | Voynich Feature | Historical Match | Strength |
@@ -1640,8 +2430,11 @@ Common signature: **CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL**
 | Expert knowledge assumed | Guild training model | STRONG |
 | Kernel control points | Process control theory | STRONG |
 | Local continuity | Codex organization | STRONG |
+| Line-level SETUP→WORK→CHECK→CLOSE | Fire-degree cycle | STRONG |
+| ENERGY medial concentration | "Work phase" in process middle | STRONG |
+| or→aiin checkpoint | Sensory verification points | STRONG |
 
-7/12 patterns show STRONG alignment.
+10/15 patterns show STRONG alignment.
 
 ---
 
@@ -1797,7 +2590,7 @@ Only Tier 0-2 structural findings are binding.
 
 ## IX. Open Questions
 
-### Fully Answered (v4.0)
+### Fully Answered (v4.43)
 
 | Question | Status | Finding |
 |----------|--------|---------|
@@ -1806,6 +2599,10 @@ Only Tier 0-2 structural findings are binding.
 | What role does AZC play in the manuscript? | **FULLY ANSWERED** | Decision-point grammar, compatibility filter, phase-indexed escape gating - C437-C444 |
 | Why are there so many AZC folios? | **FULLY ANSWERED** | Enumerates all compatibility classes; each folio = distinct legal combination space - C437, C442 |
 | How does AZC relate to A and B? | **FULLY ANSWERED** | AZC converts static A entries into phase-gated decision points within B procedures - F-AZC-011/012/013 |
+| How do roles flow within a line? | **FULLY ANSWERED** | SETUP→WORK→CHECK→CLOSE positional template (p=3e-89) - C547-C562 |
+| What is the relationship between ENERGY and FLOW? | **FULLY ANSWERED** | Anticorrelated by REGIME and section; heating vs cooling modes - C551, C562 |
+| What does daiin do? | **FULLY ANSWERED** | Line-initial ENERGY trigger (27.7% initial, 47.1% EN followers) - C557 |
+| What is Class 9 "self-chaining"? | **FULLY ANSWERED** | Directional or→aiin bigram (87.5%), zero aiin→aiin - C561 |
 
 ### Still Open (structural)
 
@@ -1890,6 +2687,25 @@ The 83-unit structure is UNIQUE to Puff and Voynich among 11 surveyed historical
 | REGIME_3 | 7 | 16 | **7** | YES (rank 13/14) |
 
 Distribution mismatch evaporates when proper abstraction level is applied.
+
+**Structural Grounding (C535, v4.41):**
+
+The 83-folio count is not arbitrary but **structurally determined** by vocabulary coverage:
+
+| Metric | Value |
+|--------|-------|
+| Minimum folios for MIDDLE coverage | **81** |
+| Actual folios | **82** |
+| Redundancy ratio | **1.01x** |
+
+Greedy set cover analysis shows 81 folios are needed to cover all 1,339 B MIDDLEs. Zero folio pairs exceed 50% Jaccard overlap. Each folio contributes unique vocabulary (mean 10.5 MIDDLEs) appearing in no other folio.
+
+This **grounds** the mastery horizon interpretation rather than replacing it:
+- The domain requires ~83 distinct configurations for complete coverage
+- Both Puff (materials) and Voynich (procedures) converge on this number
+- The "mastery horizon" is a *consequence*: you need ~83 because that's what the domain requires, and that count happens to be learnable
+
+The question "why can experts learn ~83 things?" is answered by "because that's how many operationally distinct configurations exist."
 
 ---
 
@@ -2061,7 +2877,7 @@ This matches both Puff (flowers → herbs → anomalies) and Brunschwig (first d
 **What this does NOT claim:**
 - Voynich was copied from Puff
 - Puff was derived from Voynich
-- Specific folio = specific recipe
+- ~~Specific folio = specific recipe~~ **UPGRADED to Tier 3** - see section 0.E (C531-C533)
 - The proposed order is THE original
 - Semantic content recovered
 
@@ -2467,6 +3283,139 @@ This explains:
 **Constraints:** C523 (Pharma Label Vocabulary Bifurcation), C524 (Jar Label Morphological Compression)
 
 **Status:** CLOSED - Confirms apparatus interpretation with morphological evidence
+
+---
+
+### X.19.b Morphological Function Model: PP/RI Pipeline Architecture (2026-01-23)
+
+**Tier:** 4 (Speculative synthesis) with Tier 2-3 structural components
+
+This section synthesizes findings from C509.a, C516-C520, C523-C524, and the pharma label analysis into a functional interpretation of Voynich morphology.
+
+#### Core Model: A-Records as Mapping Instructions
+
+An A-record functions as a specification:
+> "This material (with PREFIX control-flow context) has compatibility capacity [PP], with these specific discrimination characteristics [RI], legal during [SUFFIX phase]."
+
+#### Component Functions
+
+**PREFIX = Control-Flow Participation (Tier 2, per C466-C467, C383)**
+
+- Encodes intervention/monitoring/core mode
+- Universal across all token types (PP and RI)
+- Not part of the PP/RI distinction
+- Global type system spanning A, B, and AZC
+
+**PP MIDDLE = Compatibility Capacity Markers (Tier 3 interpretation)**
+
+- Short MIDDLEs (originally avg 1.46 chars per C509.a; see methodology note for revised values)
+- Encode what process categories a material can participate in
+- Must remain as discrete tokens because:
+  - AZC checks legality per-token
+  - Currier B responds to tokens as atomic units
+  - Shared vocabulary enables recombinability across materials
+- PP count correlates with B class survival breadth (r=0.715, C506)
+- Note: PP tokens also encode behavioral variants within classes (C506.b)
+
+**RI MIDDLE = Locally-Scoped Discrimination Vocabulary (Tier 3-4)**
+
+- Longer MIDDLEs (originally avg 3.96 chars per C509.a; revised to 4.73 with corrected extraction)
+- 85.4% contain multiple PP atoms (C516)
+- Use superstring compression via shared hinge letters (C517)
+- Encode multidimensional discrimination: intersection of multiple PP-type properties
+- Structurally excluded from A→AZC→B pipeline (per C444 vanishing semantics)
+- Can compress freely because no downstream parsing required
+- Length gradient is emergent from compositional morphology (C498.d: rho=-0.367)
+
+**SUFFIX = Two-Axis Context Marker (Tier 2-3, per C283, C495, C527)**
+
+SUFFIX operates on two orthogonal dimensions:
+- **System role** (Tier 2): A/B enrichment patterns (C283, C495)
+- **Material class** (Tier 3): Animal vs herb within A, correlated with fire degree (C527)
+
+The earlier "decision archetype (D1-D12)" mapping is provisional. See ccm_suffix_mapping.md for details and uncertainty markers.
+
+#### The Compression Gradient
+
+| Token Type | Compression | Reusability | Architectural Role |
+|------------|-------------|-------------|-------------------|
+| PP tokens | Low (atomic) | High (shared A∩B) | Pipeline-compatible units |
+| RI tokens | Moderate (2-4 atoms) | Low (mostly singletons) | Local discrimination |
+| Jar labels | Maximum (5-8 atoms) | None (unique) | Physical configuration IDs |
+
+**Key insight:** More downstream pipeline exposure requires less compression. PP must stay discrete for AZC/B processing. RI is local to A. Jar labels never enter the pipeline.
+
+#### Architectural Interpretation (Tier 4)
+
+The system may function as a working pharmaceutical/alchemical manual (consistent with C196-C197 "EXPERT_REFERENCE archetype"):
+
+```
+Layer 1: CURRIER A (Registry)
+- Material discrimination via PP (capacity) + RI (specifics)
+- PP provides shared vocabulary substrate
+- RI adds fine-grained multidimensional discrimination
+
+Layer 2: AZC (Legality Filter)
+- Per-token compatibility checking
+- Requires discrete PP units for independent validation
+
+Layer 3: CURRIER B (Execution)
+- Closed-loop control responding to PP tokens
+- RI structurally excluded (already used for selection)
+
+Layer 4: JAR LABELS (Physical Interface - Tier 4)
+- Maximally compressed configuration identifiers
+- Coordinate symbolic system with physical apparatus
+- Never enter execution pipeline
+```
+
+#### Why PP Stays Discrete
+
+If everything were compressed into single superstrings per material:
+- AZC couldn't check individual compatibilities
+- B couldn't respond to individual properties
+- Shared vocabulary would be lost
+- Recombinability across materials would break
+
+The separation of concerns enables both:
+- **Reusability** via atomic PP vocabulary (shared across system)
+- **Specificity** via compressed RI discrimination (local to A)
+
+#### Speculative Extension: The Workshop Model (Tier 4)
+
+If this is a working manual, the practitioner's workflow might be:
+
+1. **Consult PP vocabulary** → Find materials with required compatibility
+2. **Check RI discrimination** → Select specific material matching constraints
+3. **Verify via AZC** → Confirm positional legality for combination
+4. **Execute via B** → Run the closed-loop control program
+5. **Physical coordination** → Use jar labels to identify apparatus configuration
+
+The jar labels are the "last mile" - where abstract constraints meet physical vessels.
+
+#### Constraints Supporting This Model
+
+| Constraint | Contribution |
+|------------|--------------|
+| C509.a | PP/RI morphological bifurcation |
+| C516 | RI multi-atom composition (85.4%) |
+| C517 | Superstring compression mechanism |
+| C506 | PP count → class survival correlation |
+| C506.b | PP behavioral heterogeneity within classes |
+| C523 | Pharma label vocabulary bifurcation |
+| C524 | Jar label morphological compression |
+| C383 | Global PREFIX type system |
+| C466-C467 | PREFIX as control-flow participation |
+| C495 | SUFFIX regime breadth correlation |
+
+#### Explicit Uncertainties
+
+- Whether compression is "intentional" or emergent from compositional morphology
+- Exact semantic content (if any) of PP compatibility dimensions
+- Whether jar labels encode apparatus configurations specifically
+- The "workshop manual" framing is consistent but not proven
+
+**Status:** OPEN - Tier 4 synthesis for further investigation
 
 ---
 
@@ -3309,3 +4258,90 @@ Refines C384 (no entry-level A-B coupling):
 - Methodology: `context/SPECULATIVE/recipe_triangulation_methodology.md`
 - Results: `phases/ANIMAL_PRECISION_CORRELATION/results/`
 - Scripts: `phases/ANIMAL_PRECISION_CORRELATION/scripts/`
+
+---
+
+### X.29 Material-Class REGIME Invariance: Precision as Universal Requirement (2026-01-25) - REVISED
+
+**REVISED FINDING:** Both animal AND herb material classes route preferentially to REGIME_4 (precision control). Material differentiation occurs at **token variant level**, not REGIME level.
+
+#### Key Discovery
+
+| Material Class | REGIME_4 Enrichment | p-value |
+|----------------|---------------------|---------|
+| Animal | **2.03x** | 0.024 |
+| Herb | **2.09x** | 0.011 |
+
+Both material classes prefer REGIME_4 at nearly identical enrichment (~2x). This contradicts the initial hypothesis that different materials would route to different REGIMEs.
+
+#### Hypothesis Evolution
+
+| Version | Prediction | Result |
+|---------|------------|--------|
+| **Original** | Animal -> REGIME_1/2 | WRONG |
+| **Intermediate** | Animal -> REGIME_4 | INCOMPLETE |
+| **Final** | Both Animal AND Herb -> REGIME_4 | CONFIRMED |
+
+#### Where Differentiation Actually Occurs
+
+| Level | Differentiation? | Evidence |
+|-------|-----------------|----------|
+| REGIME | **NO** | Both ~2x REGIME_4 enriched |
+| Folio | **NO** | r=0.845 correlation |
+| Token Variants | **YES** | Jaccard=0.38 (62% different) |
+
+#### Statistical Evidence
+
+**REGIME distribution:**
+- Animal: 13/21 high-reception folios in REGIME_4 (62%)
+- Herb: 14/22 high-reception folios in REGIME_4 (64%)
+- Baseline: 25/82 folios in REGIME_4 (30.5%)
+
+**Token-level differentiation:**
+- Overall Jaccard: 0.382
+- Per-class mean Jaccard: 0.371
+- Most differentiated: ke (0.037), fch (0.111), ol (0.169)
+
+#### Interpretation
+
+**REGIME_4 encodes execution precision requirements, not material identity.** Different materials can share execution requirements while differing in behavioral parameterization.
+
+The manuscript achieves material-appropriate execution NOT by routing to different procedures, but by **selecting different token variants within a shared grammatical framework**:
+
+```
+Material -> REGIME: Same (both -> precision)
+Material -> Token: Different (62% non-overlap)
+```
+
+This confirms C506.b: tokens within same class are positionally compatible but behaviorally distinct. The 480-token vocabulary parameterizes a 49-class grammar, not replaces it.
+
+#### PP Classification (Tier 3)
+
+| Class | Count | % | Top Markers |
+|-------|-------|---|-------------|
+| ANIMAL | 63 | 15.6% | pch, opch, ch, h |
+| HERB | 113 | 28.0% | keo, eok, ko, to |
+| MIXED | 67 | 16.6% | - |
+| NEUTRAL | 161 | 39.9% | - |
+
+RI projection: 95.9% of RI contain classifiable PP atoms, enabling material-class inference through composition.
+
+#### Relationship to X.6
+
+This finding STRONGLY REINFORCES X.6 (REGIME_4 Interpretation Correction):
+
+> "REGIME_4 is NOT 'forbidden materials' - it IS 'precision-constrained execution'"
+
+Now demonstrated across BOTH material classes: REGIME_4 is universal precision infrastructure, not material-specific processing.
+
+#### Tier Compliance
+
+- **C536 (Tier 2):** Material-class REGIME invariance (structural fact)
+- **C537 (Tier 2):** Token-level differentiation (structural fact)
+- **C538 (Tier 3):** PP material-class distribution (conditional on Brunschwig)
+- **This section (Tier 4):** Interpretation as execution parameterization
+
+**Files:**
+- Phase: `phases/MATERIAL_REGIME_MAPPING/`
+- PP Classification: `phases/PP_CLASSIFICATION/`
+- Results: `phases/*/results/`

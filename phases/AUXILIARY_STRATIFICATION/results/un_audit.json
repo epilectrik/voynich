@@ -1,0 +1,303 @@
+{
+  "total_b_tokens": 23096,
+  "matched": 16054,
+  "unmatched": 7042,
+  "un_pct": 30.5,
+  "unique_un_types": 4421,
+  "hapax_un": 3274,
+  "single_folio_un": 3306,
+  "uncertain_un": 0,
+  "top_un_tokens": [
+    {
+      "word": "chckhedy",
+      "count": 11
+    },
+    {
+      "word": "qokshedy",
+      "count": 11
+    },
+    {
+      "word": "olshey",
+      "count": 11
+    },
+    {
+      "word": "qolchey",
+      "count": 11
+    },
+    {
+      "word": "olkal",
+      "count": 11
+    },
+    {
+      "word": "shedain",
+      "count": 11
+    },
+    {
+      "word": "ytchedy",
+      "count": 10
+    },
+    {
+      "word": "chdam",
+      "count": 10
+    },
+    {
+      "word": "qolchedy",
+      "count": 10
+    },
+    {
+      "word": "yshedy",
+      "count": 10
+    },
+    {
+      "word": "otedar",
+      "count": 10
+    },
+    {
+      "word": "qodain",
+      "count": 10
+    },
+    {
+      "word": "araiin",
+      "count": 10
+    },
+    {
+      "word": "cthedy",
+      "count": 9
+    },
+    {
+      "word": "ytchdy",
+      "count": 9
+    },
+    {
+      "word": "ysheey",
+      "count": 9
+    },
+    {
+      "word": "ochedy",
+      "count": 9
+    },
+    {
+      "word": "ykain",
+      "count": 9
+    },
+    {
+      "word": "lkl",
+      "count": 9
+    },
+    {
+      "word": "okeeedy",
+      "count": 9
+    },
+    {
+      "word": "lcheedy",
+      "count": 9
+    },
+    {
+      "word": "qokl",
+      "count": 9
+    },
+    {
+      "word": "olkeeey",
+      "count": 9
+    },
+    {
+      "word": "qofchedy",
+      "count": 8
+    },
+    {
+      "word": "qokees",
+      "count": 8
+    },
+    {
+      "word": "oram",
+      "count": 8
+    },
+    {
+      "word": "chdain",
+      "count": 8
+    },
+    {
+      "word": "olchdy",
+      "count": 8
+    },
+    {
+      "word": "qokedar",
+      "count": 8
+    },
+    {
+      "word": "cthdy",
+      "count": 8
+    },
+    {
+      "word": "oteed",
+      "count": 8
+    },
+    {
+      "word": "chdor",
+      "count": 8
+    },
+    {
+      "word": "alol",
+      "count": 8
+    },
+    {
+      "word": "olkam",
+      "count": 8
+    },
+    {
+      "word": "oain",
+      "count": 8
+    },
+    {
+      "word": "oiiin",
+      "count": 8
+    },
+    {
+      "word": "cphedy",
+      "count": 8
+    },
+    {
+      "word": "qokan",
+      "count": 8
+    },
+    {
+      "word": "okshey",
+      "count": 8
+    },
+    {
+      "word": "solchedy",
+      "count": 8
+    },
+    {
+      "word": "lsheey",
+      "count": 8
+    },
+    {
+      "word": "tshedy",
+      "count": 8
+    },
+    {
+      "word": "lkchey",
+      "count": 8
+    },
+    {
+      "word": "lcheol",
+      "count": 8
+    },
+    {
+      "word": "tshey",
+      "count": 8
+    },
+    {
+      "word": "qokshey",
+      "count": 8
+    },
+    {
+      "word": "shdar",
+      "count": 8
+    },
+    {
+      "word": "oteeey",
+      "count": 8
+    },
+    {
+      "word": "lkeeey",
+      "count": 8
+    },
+    {
+      "word": "checkhey",
+      "count": 7
+    }
+  ],
+  "morphology": {
+    "top_prefixes": [
+      {
+        "prefix": "NONE",
+        "count": 1149
+      },
+      {
+        "prefix": "ch",
+        "count": 982
+      },
+      {
+        "prefix": "qo",
+        "count": 863
+      },
+      {
+        "prefix": "sh",
+        "count": 734
+      },
+      {
+        "prefix": "ol",
+        "count": 400
+      },
+      {
+        "prefix": "ot",
+        "count": 311
+      },
+      {
+        "prefix": "ok",
+        "count": 291
+      },
+      {
+        "prefix": "da",
+        "count": 183
+      },
+      {
+        "prefix": "lk",
+        "count": 181
+      },
+      {
+        "prefix": "pch",
+        "count": 155
+      }
+    ],
+    "top_middles": [
+      {
+        "middle": "e",
+        "count": 221
+      },
+      {
+        "middle": "ed",
+        "count": 209
+      },
+      {
+        "middle": "d",
+        "count": 207
+      },
+      {
+        "middle": "l",
+        "count": 169
+      },
+      {
+        "middle": "k",
+        "count": 157
+      },
+      {
+        "middle": "eo",
+        "count": 128
+      },
+      {
+        "middle": "o",
+        "count": 126
+      },
+      {
+        "middle": "ch",
+        "count": 124
+      },
+      {
+        "middle": "r",
+        "count": 112
+      },
+      {
+        "middle": "dy",
+        "count": 103
+      }
+    ],
+    "articulator_rate": 10.1
+  },
+  "folio_spread": {
+    "single_folio_types": 3306,
+    "multi_folio_types": 1115
+  }
+}

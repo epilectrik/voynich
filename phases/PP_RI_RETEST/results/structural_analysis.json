@@ -1,0 +1,29 @@
+{
+  "affix_patterns": {
+    "ri": {
+      "total": 1011,
+      "prefix_rate": 96.73590504451039,
+      "suffix_rate": 76.26112759643917
+    },
+    "pp": {
+      "total": 7982,
+      "prefix_rate": 91.56852919067903,
+      "suffix_rate": 84.85342019543974
+    }
+  },
+  "length_decomposition": {
+    "ri": {
+      "mean_word": 5.490603363006924,
+      "mean_middle": 2.960435212660732,
+      "mean_prefix": 1.0712166172106825,
+      "mean_suffix": 1.4589515331355094
+    },
+    "pp": {
+      "mean_word": 4.3575544976196445,
+      "mean_middle": 1.6861688799799548,
+      "mean_prefix": 1.1951891756452018,
+      "mean_suffix": 1.4761964419944875
+    }
+  },
+  "conclusion": "See console output for detailed analysis"
+}

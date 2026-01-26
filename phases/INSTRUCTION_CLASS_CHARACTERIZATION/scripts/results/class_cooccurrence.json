@@ -1,0 +1,630 @@
+{
+  "enriched_pairs": [
+    {
+      "class1": 26,
+      "class2": 49,
+      "observed": 16,
+      "expected": 7.698247078464108,
+      "enrichment": 2.0783952290593652
+    },
+    {
+      "class1": 2,
+      "class2": 9,
+      "observed": 19,
+      "expected": 9.259181969949918,
+      "enrichment": 2.0520171286905566
+    },
+    {
+      "class1": 2,
+      "class2": 7,
+      "observed": 13,
+      "expected": 6.7237061769616036,
+      "enrichment": 1.9334574798261948
+    },
+    {
+      "class1": 23,
+      "class2": 37,
+      "observed": 12,
+      "expected": 6.482888146911519,
+      "enrichment": 1.8510268460696582
+    },
+    {
+      "class1": 39,
+      "class2": 48,
+      "observed": 14,
+      "expected": 7.685308848080133,
+      "enrichment": 1.8216574345606604
+    },
+    {
+      "class1": 24,
+      "class2": 42,
+      "observed": 16,
+      "expected": 8.834724540901503,
+      "enrichment": 1.8110355253212396
+    },
+    {
+      "class1": 18,
+      "class2": 48,
+      "observed": 11,
+      "expected": 6.093906510851419,
+      "enrichment": 1.8050818437093348
+    },
+    {
+      "class1": 20,
+      "class2": 25,
+      "observed": 14,
+      "expected": 7.804674457429048,
+      "enrichment": 1.7937967914438504
+    },
+    {
+      "class1": 9,
+      "class2": 38,
+      "observed": 18,
+      "expected": 10.0822203672788,
+      "enrichment": 1.7853210249617084
+    },
+    {
+      "class1": 27,
+      "class2": 35,
+      "observed": 35,
+      "expected": 19.71410684474123,
+      "enrichment": 1.7753784270138673
+    },
+    {
+      "class1": 27,
+      "class2": 40,
+      "observed": 10,
+      "expected": 5.87228714524207,
+      "enrichment": 1.702914001421464
+    },
+    {
+      "class1": 30,
+      "class2": 37,
+      "observed": 15,
+      "expected": 9.039232053422372,
+      "enrichment": 1.6594330039708187
+    },
+    {
+      "class1": 15,
+      "class2": 24,
+      "observed": 23,
+      "expected": 14.303839732888147,
+      "enrichment": 1.6079598506069095
+    },
+    {
+      "class1": 7,
+      "class2": 9,
+      "observed": 117,
+      "expected": 73.6619365609349,
+      "enrichment": 1.5883372805874418
+    },
+    {
+      "class1": 11,
+      "class2": 40,
+      "observed": 17,
+      "expected": 10.838898163606009,
+      "enrichment": 1.5684251058914134
+    },
+    {
+      "class1": 3,
+      "class2": 30,
+      "observed": 17,
+      "expected": 10.883973288814692,
+      "enrichment": 1.5619295958279007
+    },
+    {
+      "class1": 9,
+      "class2": 19,
+      "observed": 23,
+      "expected": 14.814691151919867,
+      "enrichment": 1.552512959206671
+    },
+    {
+      "class1": 5,
+      "class2": 39,
+      "observed": 14,
+      "expected": 9.090150250417361,
+      "enrichment": 1.5401285583103768
+    },
+    {
+      "class1": 3,
+      "class2": 14,
+      "observed": 21,
+      "expected": 13.863522537562604,
+      "enrichment": 1.5147665352078756
+    },
+    {
+      "class1": 5,
+      "class2": 20,
+      "observed": 13,
+      "expected": 8.585141903171952,
+      "enrichment": 1.5142440447253285
+    },
+    {
+      "class1": 46,
+      "class2": 49,
+      "observed": 14,
+      "expected": 9.287562604340566,
+      "enrichment": 1.5073922617175215
+    }
+  ],
+  "depleted_pairs": [
+    {
+      "class1": 13,
+      "class2": 40,
+      "observed": 11,
+      "expected": 25.329716193656097,
+      "enrichment": 0.4342725325424287
+    }
+  ],
+  "enriched_bigrams": [
+    {
+      "class1": 7,
+      "class2": 7,
+      "observed": 39,
+      "enrichment": 3.906713961097865
+    },
+    {
+      "class1": 9,
+      "class2": 9,
+      "observed": 64,
+      "enrichment": 3.1168763512913644
+    },
+    {
+      "class1": 7,
+      "class2": 9,
+      "observed": 40,
+      "enrichment": 2.793851348371734
+    },
+    {
+      "class1": 31,
+      "class2": 20,
+      "observed": 24,
+      "enrichment": 2.6227030813354304
+    },
+    {
+      "class1": 32,
+      "class2": 8,
+      "observed": 104,
+      "enrichment": 2.5615554483753566
+    },
+    {
+      "class1": 23,
+      "class2": 9,
+      "observed": 29,
+      "enrichment": 2.534854868605771
+    },
+    {
+      "class1": 8,
+      "class2": 32,
+      "observed": 99,
+      "enrichment": 2.4384037441265414
+    },
+    {
+      "class1": 9,
+      "class2": 18,
+      "observed": 13,
+      "enrichment": 2.412053564414799
+    },
+    {
+      "class1": 36,
+      "class2": 8,
+      "observed": 30,
+      "enrichment": 2.3332393427389646
+    },
+    {
+      "class1": 10,
+      "class2": 34,
+      "observed": 42,
+      "enrichment": 2.3141945864353874
+    },
+    {
+      "class1": 24,
+      "class2": 9,
+      "observed": 44,
+      "enrichment": 2.306258920674969
+    },
+    {
+      "class1": 8,
+      "class2": 33,
+      "observed": 210,
+      "enrichment": 2.2377343781697743
+    },
+    {
+      "class1": 30,
+      "class2": 17,
+      "observed": 17,
+      "enrichment": 2.142732541055604
+    },
+    {
+      "class1": 33,
+      "class2": 47,
+      "observed": 47,
+      "enrichment": 2.1354379494534412
+    },
+    {
+      "class1": 8,
+      "class2": 49,
+      "observed": 14,
+      "enrichment": 2.1334280602713456
+    },
+    {
+      "class1": 7,
+      "class2": 23,
+      "observed": 17,
+      "enrichment": 2.1311191246214163
+    },
+    {
+      "class1": 24,
+      "class2": 7,
+      "observed": 28,
+      "enrichment": 2.1048304699084794
+    },
+    {
+      "class1": 11,
+      "class2": 34,
+      "observed": 50,
+      "enrichment": 2.0531261495302613
+    },
+    {
+      "class1": 35,
+      "class2": 7,
+      "observed": 12,
+      "enrichment": 2.0331816648502112
+    },
+    {
+      "class1": 10,
+      "class2": 31,
+      "observed": 29,
+      "enrichment": 2.0047339048226895
+    },
+    {
+      "class1": 30,
+      "class2": 7,
+      "observed": 24,
+      "enrichment": 1.9980595247664263
+    },
+    {
+      "class1": 36,
+      "class2": 14,
+      "observed": 18,
+      "enrichment": 1.995367699651018
+    },
+    {
+      "class1": 6,
+      "class2": 28,
+      "observed": 13,
+      "enrichment": 1.9861650555671553
+    },
+    {
+      "class1": 24,
+      "class2": 23,
+      "observed": 21,
+      "enrichment": 1.975559812435777
+    },
+    {
+      "class1": 14,
+      "class2": 18,
+      "observed": 12,
+      "enrichment": 1.9668041538482424
+    },
+    {
+      "class1": 11,
+      "class2": 8,
+      "observed": 44,
+      "enrichment": 1.9636246024130142
+    },
+    {
+      "class1": 9,
+      "class2": 7,
+      "observed": 28,
+      "enrichment": 1.955695943860214
+    },
+    {
+      "class1": 39,
+      "class2": 9,
+      "observed": 13,
+      "enrichment": 1.899346526568175
+    },
+    {
+      "class1": 47,
+      "class2": 32,
+      "observed": 18,
+      "enrichment": 1.890352457729048
+    },
+    {
+      "class1": 23,
+      "class2": 7,
+      "observed": 15,
+      "enrichment": 1.880399227607132
+    }
+  ],
+  "common_trigrams": [
+    {
+      "sequence": [
+        33,
+        33,
+        33
+      ],
+      "count": 45
+    },
+    {
+      "sequence": [
+        32,
+        8,
+        33
+      ],
+      "count": 33
+    },
+    {
+      "sequence": [
+        8,
+        33,
+        33
+      ],
+      "count": 32
+    },
+    {
+      "sequence": [
+        33,
+        34,
+        33
+      ],
+      "count": 30
+    },
+    {
+      "sequence": [
+        33,
+        8,
+        33
+      ],
+      "count": 26
+    },
+    {
+      "sequence": [
+        33,
+        33,
+        13
+      ],
+      "count": 25
+    },
+    {
+      "sequence": [
+        34,
+        33,
+        33
+      ],
+      "count": 24
+    },
+    {
+      "sequence": [
+        8,
+        33,
+        13
+      ],
+      "count": 20
+    },
+    {
+      "sequence": [
+        33,
+        33,
+        8
+      ],
+      "count": 17
+    },
+    {
+      "sequence": [
+        13,
+        13,
+        13
+      ],
+      "count": 17
+    },
+    {
+      "sequence": [
+        31,
+        33,
+        34
+      ],
+      "count": 17
+    },
+    {
+      "sequence": [
+        33,
+        13,
+        13
+      ],
+      "count": 17
+    },
+    {
+      "sequence": [
+        13,
+        8,
+        33
+      ],
+      "count": 17
+    },
+    {
+      "sequence": [
+        13,
+        13,
+        33
+      ],
+      "count": 16
+    },
+    {
+      "sequence": [
+        34,
+        33,
+        13
+      ],
+      "count": 16
+    },
+    {
+      "sequence": [
+        8,
+        33,
+        8
+      ],
+      "count": 16
+    },
+    {
+      "sequence": [
+        33,
+        13,
+        33
+      ],
+      "count": 16
+    },
+    {
+      "sequence": [
+        33,
+        33,
+        29
+      ],
+      "count": 15
+    },
+    {
+      "sequence": [
+        8,
+        33,
+        34
+      ],
+      "count": 15
+    },
+    {
+      "sequence": [
+        33,
+        34,
+        32
+      ],
+      "count": 15
+    },
+    {
+      "sequence": [
+        32,
+        8,
+        32
+      ],
+      "count": 15
+    },
+    {
+      "sequence": [
+        33,
+        8,
+        32
+      ],
+      "count": 15
+    },
+    {
+      "sequence": [
+        13,
+        33,
+        33
+      ],
+      "count": 14
+    },
+    {
+      "sequence": [
+        34,
+        33,
+        8
+      ],
+      "count": 14
+    },
+    {
+      "sequence": [
+        31,
+        33,
+        33
+      ],
+      "count": 14
+    },
+    {
+      "sequence": [
+        11,
+        34,
+        33
+      ],
+      "count": 14
+    },
+    {
+      "sequence": [
+        28,
+        8,
+        33
+      ],
+      "count": 14
+    },
+    {
+      "sequence": [
+        33,
+        33,
+        34
+      ],
+      "count": 13
+    },
+    {
+      "sequence": [
+        31,
+        32,
+        8
+      ],
+      "count": 13
+    },
+    {
+      "sequence": [
+        8,
+        32,
+        8
+      ],
+      "count": 13
+    }
+  ],
+  "self_repeat_rates": {
+    "2": 0.0425531914893617,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.02030456852791878,
+    "7": 0.09006928406466513,
+    "8": 0.05189620758483034,
+    "9": 0.10305958132045089,
+    "10": 0.012779552715654952,
+    "11": 0.01904761904761905,
+    "13": 0.11223628691983123,
+    "14": 0.06827880512091039,
+    "16": 0.01098901098901099,
+    "17": 0.03496503496503497,
+    "18": 0.006134969325153374,
+    "19": 0.013513513513513514,
+    "20": 0.020202020202020204,
+    "21": 0.0,
+    "23": 0.017341040462427744,
+    "24": 0.03986135181975736,
+    "25": 0.0,
+    "26": 0.0,
+    "27": 0.02358490566037736,
+    "28": 0.03365384615384615,
+    "29": 0.043478260869565216,
+    "30": 0.023032629558541268,
+    "31": 0.03571428571428571,
+    "32": 0.04336399474375821,
+    "33": 0.14553723706651506,
+    "34": 0.049586776859504134,
+    "35": 0.0234375,
+    "36": 0.004149377593360996,
+    "37": 0.0,
+    "38": 0.0,
+    "39": 0.0,
+    "40": 0.0,
+    "41": 0.0,
+    "42": 0.0,
+    "43": 0.0,
+    "44": 0.0,
+    "46": 0.05853658536585366,
+    "47": 0.00425531914893617,
+    "48": 0.0,
+    "49": 0.008130081300813009
+  }
+}
