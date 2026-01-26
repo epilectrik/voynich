@@ -1,0 +1,147 @@
+{
+  "clustering": {
+    "silhouettes": {
+      "2": 0.1804,
+      "3": 0.1701,
+      "4": 0.1733,
+      "5": 0.1835,
+      "6": 0.1881
+    },
+    "best_k": 6,
+    "best_silhouette": 0.1881,
+    "k2_silhouette": 0.1804,
+    "k2_clusters": {
+      "1": [
+        42,
+        44,
+        45,
+        48
+      ],
+      "2": [
+        8,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        43,
+        46,
+        47,
+        49
+      ]
+    },
+    "k2_purity": 0.5357
+  },
+  "kruskal_wallis": {
+    "mean_position": {
+      "h_stat": 0.2381,
+      "p_value": 0.625585,
+      "qo_mean": 0.5088,
+      "chsh_mean": 0.4902
+    },
+    "var_position": {
+      "h_stat": 0.0215,
+      "p_value": 0.883547,
+      "qo_mean": 0.0809,
+      "chsh_mean": 0.0812
+    },
+    "initial_rate": {
+      "h_stat": 6.446,
+      "p_value": 0.01112,
+      "qo_mean": 0.0613,
+      "chsh_mean": 0.025
+    },
+    "final_rate": {
+      "h_stat": 0.0596,
+      "p_value": 0.807134,
+      "qo_mean": 0.0762,
+      "chsh_mean": 0.0527
+    },
+    "regime_entropy": {
+      "h_stat": 0.9535,
+      "p_value": 0.328817,
+      "qo_mean": 0.8796,
+      "chsh_mean": 0.8913
+    },
+    "regime_1_share": {
+      "h_stat": 0.0857,
+      "p_value": 0.769698,
+      "qo_mean": 0.3513,
+      "chsh_mean": 0.3698
+    },
+    "regime_4_share": {
+      "h_stat": 0.1168,
+      "p_value": 0.732521,
+      "qo_mean": 0.3093,
+      "chsh_mean": 0.3082
+    },
+    "bio_share": {
+      "h_stat": 0.0857,
+      "p_value": 0.769698,
+      "qo_mean": 0.2627,
+      "chsh_mean": 0.2797
+    },
+    "recipe_b_share": {
+      "h_stat": 1.6095,
+      "p_value": 0.204559,
+      "qo_mean": 0.6535,
+      "chsh_mean": 0.5594
+    },
+    "pharma_share": {
+      "h_stat": 1.8667,
+      "p_value": 0.171857,
+      "qo_mean": 0.02,
+      "chsh_mean": 0.0318
+    },
+    "suffix_rate": {
+      "h_stat": 3.0552,
+      "p_value": 0.080479,
+      "qo_mean": 0.893,
+      "chsh_mean": 0.6083
+    },
+    "self_chain_rate": {
+      "h_stat": 1.1289,
+      "p_value": 0.28802,
+      "qo_mean": 0.03,
+      "chsh_mean": 0.0102
+    },
+    "en_chain_rate": {
+      "h_stat": 6.6963,
+      "p_value": 0.009661,
+      "qo_mean": 0.3836,
+      "chsh_mean": 0.2868
+    }
+  },
+  "significant_features": [
+    "initial_rate",
+    "en_chain_rate"
+  ],
+  "section_independence": {
+    "chi2": 122.0343,
+    "p_value": 0.0,
+    "cramers_v": 0.092,
+    "rejected": true
+  },
+  "regime_independence": {
+    "chi2": 32.4814,
+    "p_value": 1.319e-05,
+    "cramers_v": 0.0475,
+    "rejected": true
+  },
+  "js_divergences": {
+    "QO_vs_CHSH": 0.002411,
+    "QO_vs_MINOR": 0.045041,
+    "CHSH_vs_MINOR": 0.042267
+  },
+  "context_prediction": {
+    "accuracy": 59.92,
+    "majority_baseline": 55.6,
+    "improvement_pp": 4.31
+  },
+  "verdict": "COLLAPSED",
+  "explanation": "Weak clustering, no distinguishing features (like AX)"
+}

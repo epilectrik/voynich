@@ -3,7 +3,7 @@
 **Tier:** 2 (Structural Inference)
 **Scope:** B
 **Phase:** AUXILIARY_STRATIFICATION
-**Status:** VALIDATED
+**Status:** VALIDATED (re-verified 2026-01-26 with 19 AX classes)
 
 ## Claim
 
@@ -21,15 +21,15 @@ AUXILIARY provides a positionally ordered execution scaffold that mirrors the na
 | Hazard involvement | EN/FL have hazard classes | AX: **0% across all sub-groups** |
 | ENERGY triggering | CC triggers EN (C557) | AX_INIT does NOT trigger EN |
 | Flow semantics | FL redirects flow (C562) | AX_FINAL closes frames only |
-| Self-chaining | EN 2.38x, FL 2.11x (C550) | AX 1.09x (barely above random) |
+| Self-chaining | EN 2.38x, FL 2.11x (C550) | AX 1.10x (barely above random) |
 
 ### Key Properties
 
-1. **Zero hazard involvement**: All 20 AX classes are structurally safe. No AX class appears in any forbidden transition (C109). This is absolute across all sub-groups.
+1. **Zero hazard involvement**: All 19 AX classes are structurally safe. No AX class appears in any forbidden transition (C109). This is absolute across all sub-groups.
 
 2. **Flat transition grammar**: AX -> any role enrichment is 0.95-1.19x (near-random). AX does not preferentially connect to any specific role. This is unique -- EN, FL, CC all have strong transition preferences (C550).
 
-3. **Weak self-chaining**: AX -> AX = 20.8% vs 19.0% expected = 1.09x. Compare EN -> EN = 2.38x (C550). AX is not "clumpy" -- it's uniformly distributed.
+3. **Weak self-chaining**: AX -> AX enrichment = 1.10x (barely above random). Compare EN -> EN = 2.38x (C550). AX is not "clumpy" -- it's uniformly distributed.
 
 4. **Structural framing without semantic commitment**: AX_INIT opens frames but doesn't trigger ENERGY chains (unlike CC/daiin which has 47.1% ENERGY followers per C557). AX_FINAL closes frames but doesn't redirect flow (unlike FL which has terminal bias per C562).
 

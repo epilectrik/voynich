@@ -1,6 +1,8 @@
 # C559: FREQUENT Role Structure
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+**Tier:** 2 | **Status:** SUPERSEDED | **Scope:** B
+
+> **SUPERSEDED:** This constraint used incorrect FQ membership {9, 20, 21, 23} from CLASS_SEMANTIC_VALIDATION scripts. Classes 20 and 21 are AX per C563. Correct FQ membership is {9, 13, 14, 23} per ICC (C121). See **C583** (FQ Definitive Census) and **C587** (FQ Internal Differentiation) for corrected analysis. Downstream constraints C550, C551, C552, C556 are flagged for re-verification with corrected membership (see C592).
 
 ---
 

@@ -115,9 +115,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 2.13 FROZEN STATE |
-| Constraints | 389 validated |
-| Phases | 193 completed |
+| Version | 2.82 FROZEN STATE |
+| Constraints | 419 validated |
+| Phases | 217 completed |
 | Folios | 83 (Currier B) |
 | Pipeline | CLOSED (PCA-v1 CERTIFIED) |
 
@@ -143,7 +143,7 @@ The user can ask for precision when needed. Default to clarity over pedantry in 
 
 > **"I don't know" is NEVER an acceptable answer about this project.**
 
-The context system contains 356 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
+The context system contains 419 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
 
 1. **STOP** - Do not answer from memory or intuition
 2. **SEARCH** - Grep/read `context/` for relevant constraints
@@ -181,7 +181,7 @@ context/
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
 ├── STRUCTURAL_CONTRACTS/ ← API layer (CASC, AZC-ACT, AZC-B-ACT, BCSC)
-├── CLAIMS/              ← 356 constraints (INDEX + files)
+├── CLAIMS/              ← 419 constraints (INDEX + files)
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
 ├── METRICS/             ← Quantitative facts
@@ -250,7 +250,7 @@ When planning changes that affect the constraint system, structural contracts, o
 
 Claude will automatically delegate to the expert-advisor agent based on the request.
 
-**Why this matters:** The expert-advisor has all 356 constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
+**Why this matters:** The expert-advisor has all 419 constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
 ---
 
 ## App Development

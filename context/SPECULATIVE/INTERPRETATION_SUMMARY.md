@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.45
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.48
 
 ---
 
@@ -1163,7 +1163,7 @@ The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cyc
 | C556 | ENERGY medial concentration |
 | C557 | daiin line-initial ENERGY trigger |
 | C558 | Singleton class structure |
-| C559 | FREQUENT role structure |
+| C559 | FREQUENT role structure **(SUPERSEDED by C583, C587 — used wrong FQ membership)** |
 | C560 | Class 17 ol-derived operators |
 | C561 | or→aiin directional bigram |
 | C562 | FLOW role structure |
@@ -1247,13 +1247,13 @@ Every good workshop has this discipline. The Voynich manuscript, it seems, wrote
 
 ### Twenty Classes, One Shadow (C572)
 
-One question remained after the anatomy was clear: if AX has 20 instruction classes, do those 20 classes correspond to 20 different *kinds* of scaffolding? Twenty distinct staging protocols? Twenty ways to open a workspace?
+One question remained after the anatomy was clear: if AX has 19 instruction classes, do those 19 classes correspond to 19 different *kinds* of scaffolding? Nineteen distinct staging protocols? Nineteen ways to open a workspace?
 
-No. We tested every dimension we could think of — transition structure, positional profiles, neighborhood context — and the answer was emphatic. Only 3 of 20 classes showed any structured transitions. A classifier trained on context signatures scored 6.8% accuracy, *below* the 10.3% random baseline. The best clustering algorithm could manage was k=2 with silhouette 0.18 — worse than the prior attempt that already found weak signal. The sole outlier was Class 22, AX_FINAL's workhorse, which distinguished itself not by what it *did* but by where it *sat*.
+No. We tested every dimension we could think of — transition structure, positional profiles, neighborhood context — and the answer was emphatic. Only 3 of 19 classes showed any structured transitions. A classifier trained on context signatures scored 6.8% accuracy, *below* the 10.3% random baseline. The best clustering algorithm could manage was k=2 with silhouette 0.18 — worse than the prior attempt that already found weak signal. The sole outlier was Class 22, AX_FINAL's workhorse, which distinguished itself not by what it *did* but by where it *sat*.
 
-The 20 classes are not 20 kinds of scaffold. They are one shadow, cast from 20 slightly different angles. Position is the only thing that separates them. The AX vocabulary is positionally structured (INIT/MED/FINAL is real, p=3.6e-47) but behaviorally uniform. Every scaffold token does the same thing: frame the workspace. The grammar gives you 20 classes because the morphological system — 22 AX-exclusive prefixes crossed with articulators — generates 20 distinct surface forms. But the behavioral space those forms occupy is a single cloud, not 20 clusters.
+The 19 classes are not 19 kinds of scaffold. They are one shadow, cast from 19 slightly different angles. Position is the only thing that separates them. The AX vocabulary is positionally structured (INIT/MED/FINAL is real, p=3.6e-47) but behaviorally uniform. Every scaffold token does the same thing: frame the workspace. The grammar gives you 19 classes because the morphological system — 22 AX-exclusive prefixes crossed with articulators — generates 19 distinct surface forms. But the behavioral space those forms occupy is a single cloud, not 19 clusters.
 
-This is the final simplification. Currier B's 49 instruction classes decompose into 29 behaviorally meaningful roles (the operational classes) plus 20 positional variants of a single scaffold function. The grammar is simpler than it looks. The complexity is in the operations. The scaffold is just... scaffolding.
+This is the final simplification. Currier B's 49 instruction classes decompose into 30 behaviorally meaningful roles (the operational classes) plus 19 positional variants of a single scaffold function. The grammar is simpler than it looks. The complexity is in the operations. The scaffold is just... scaffolding.
 
 ### Evidence Summary (C567-C572)
 
@@ -1264,9 +1264,318 @@ This is the final simplification. Currier B's 49 instruction classes decompose i
 | C569 | AX volume scales proportionally, composition is independent | Fraction 0.454, R²=0.83 |
 | C570 | PREFIX alone predicts AX membership | 89.6% accuracy, 22 AX-exclusive prefixes |
 | C571 | AX = PREFIX-determined scaffold mode of pipeline vocabulary | PREFIX is role selector, MIDDLE is material |
-| C572 | 20 AX classes collapse to ≤2 effective behavioral groups | silhouette=0.18, context below baseline |
+| C572 | 19 AX classes collapse to ≤2 effective behavioral groups | silhouette=0.18, context below baseline |
 
 **Source:** AX_FUNCTIONAL_ANATOMY (2026-01-25), AUXILIARY_STRATIFICATION (2026-01-25), AX_CLASS_BEHAVIOR (2026-01-25)
+
+---
+
+## 0.H. ENERGY ANATOMY (EN_ANATOMY Phase) - NEW in v4.45
+
+### Tier 2: EN Internal Architecture
+
+> **EN comprises 18 instruction classes (not 11 as BCSC stated), accounting for 7,211 tokens (31.2% of B). Internally, EN classes show DISTRIBUTIONAL_CONVERGENCE — grammatically equivalent but lexically partitioned by PREFIX family. EN is 100% pipeline-derived and has 30 exclusive MIDDLEs.**
+
+This resolves the EN undercount (BCSC v1.2 listed 11 classes) and completes the EN role characterization.
+
+### The 18-Class Census (C573)
+
+ICC-based definitive count: {8, 31-37, 39, 41-49}. Core 6 classes provide 79.5% of EN tokens; Minor 12 provide 20.5%. The discrepancy with BCSC's 11-class count arose because the original grammar analysis used a coarser clustering.
+
+### Distributional Convergence (C574)
+
+The 18 EN classes do NOT form distinct behavioral clusters. Best clustering: k=2, silhouette=0.180. QO-prefixed and CHSH-prefixed classes have identical positions, REGIME profiles, and context distributions (JS divergence = 0.0024). But their MIDDLE vocabularies are nearly disjoint: QO uses 25 MIDDLEs, CHSH uses 43, only 8 shared (Jaccard=0.133, C576).
+
+**Verdict:** EN is grammatically equivalent but lexically partitioned. PREFIX selects which material subvocabulary to use, not what grammatical function to perform. The QO/CHSH split (C276, C423) operates within a single role, not between roles.
+
+### Pipeline Purity (C575)
+
+All 64 unique EN MIDDLEs are PP (pipeline-participating). Zero RI, zero B-exclusive. EN is the purest role — even purer than AX (98.2% PP). The entire EN vocabulary traces back to Currier A.
+
+### Content-Driven Interleaving (C577)
+
+QO and CHSH occupy the same positions (p=0.104, not significantly different). Alternation is driven by material-type selection (BIO 58.5%, PHARMA 27.5%), not positional preferences.
+
+### Exclusive Vocabulary (C578)
+
+EN has 30 exclusive MIDDLEs — 46.9% of its vocabulary is not shared with AX, CC, FL, or FQ. This is a dedicated content subvocabulary within the pipeline.
+
+### Trigger Profile Differentiation (C580)
+
+CHSH is triggered by AX (32.5%) and CC (11%). QO is triggered by EN-self (53.5%) and boundary contexts (68.8%). Chi2=134, p<0.001. The two PREFIX families enter EN through different grammatical pathways.
+
+### Evidence Summary (C573-C580)
+
+| Constraint | Finding | Key Number |
+|------------|---------|------------|
+| C573 | EN definitive count | 18 classes (not 11) |
+| C574 | Distributional convergence | silhouette=0.180, JS=0.0024 |
+| C575 | 100% pipeline-derived | 64 MIDDLEs, all PP |
+| C576 | MIDDLE vocabulary bifurcation | QO 25, CHSH 43, 8 shared |
+| C577 | Interleaving is content-driven | Position p=0.104 (NS) |
+| C578 | 30 exclusive MIDDLEs | 46.9% of EN vocabulary |
+| C579 | CHSH-first ordering bias | 53.9%, p=0.010 |
+| C580 | Trigger profile differentiation | chi2=134, p<0.001 |
+
+**Source:** EN_ANATOMY (2026-01-26)
+
+---
+
+## 0.I. SMALL ROLE ANATOMY AND FIVE-ROLE SYNTHESIS (SMALL_ROLE_ANATOMY Phase) - NEW in v4.45
+
+### Tier 2: Complete Role Taxonomy
+
+> **The 49 Currier B instruction classes partition into 5 roles — CC (3-4 classes), EN (18), FL (4), FQ (4), AX (19-20) — with complete coverage. All roles are 100% PP (AX 98.2%). Small roles (CC, FL, FQ) show GENUINE internal structure; large roles (EN, AX) are COLLAPSED or CONVERGENT. Suffix usage is strongly role-stratified (chi2=5063.2). FL is hazard-source-biased; EN is hazard-target.**
+
+This phase completes the five-role taxonomy by characterizing the three small operational roles (CC, FL, FQ), resolving census discrepancies, introducing the suffix dimension, and producing a unified cross-role comparison.
+
+### Census Resolution (C581-C583)
+
+Three long-standing discrepancies resolved:
+
+| Role | Resolved Classes | Tokens | % of B | Note |
+|------|-----------------|--------|--------|------|
+| CC | {10, 11, 12, 17} | ~1,023 | 4.4% | Class 12 ghost (0 tokens, C540); Class 17 per C560 |
+| FL | {7, 30, 38, 40} | 1,078 | 4.7% | BCSC undercounted at 2; ICC gives 4 |
+| FQ | {9, 13, 14, 23} | 2,890 | 12.5% | C559 used wrong set {9,20,21,23} — SUPERSEDED |
+
+**Resolved (2026-01-26):** Class 14 = FQ per ICC phase20a + behavioral evidence (suffix rate 0.0 vs AX_MED 0.56–1.0; token count 707 vs AX_MED 38–212; JS divergence 0.0018 with FQ Class 13). Class 17 = CC per C560. AX corrected from 20 to 19 classes. C563 updated.
+
+### The Structure Inversion (C589)
+
+The most counterintuitive finding: small roles are more internally structured than large roles.
+
+| Role | Classes | KW Significant | Verdict |
+|------|---------|---------------|---------|
+| CC | 2 active | 75% | GENUINE_STRUCTURE |
+| FL | 4 | 100% | GENUINE_STRUCTURE |
+| FQ | 4 | 100% | GENUINE_STRUCTURE |
+| EN | 18 | — | DISTRIBUTIONAL_CONVERGENCE (C574) |
+| AX | 19 | — | COLLAPSED (C572) |
+
+Small roles have few classes but each class does something distinct. Large roles have many classes doing roughly the same thing. Control signals are differentiated; content carriers are interchangeable.
+
+**Tier 3 interpretation:** This maps to how procedural knowledge is organized. You need a few specialized control tools (begin, transition, iterate, close) but many interchangeable content instances (different materials through the same operations). The system differentiates its control signals and mass-produces its content carriers.
+
+### Suffix Role Selectivity (C588)
+
+First cross-role suffix analysis. Chi-square = 5063.2, dof=80, p < 1e-300.
+
+| Stratum | Role | Suffix Types | Bare Rate |
+|---------|------|-------------|-----------|
+| SUFFIX_RICH | EN | 17 | 39.0% |
+| SUFFIX_MODERATE | AX | 19 | 62.3% |
+| SUFFIX_DEPLETED | FL, FQ | 1-2 | 93-94% |
+| SUFFIX_FREE | CC | 0 | 100.0% |
+
+EN and AX share suffix vocabulary (Jaccard = 0.800). CC/FL/FQ are suffix-isolated.
+
+**Tier 3 interpretation:** Suffixes encode material variants on content tokens. EN is suffix-rich because it specifies *which variant* of an operation to perform — different materials need different treatment. CC/FL/FQ are suffix-free because control signals are material-independent. "Begin" is "begin" regardless of what you're distilling.
+
+### FL Hazard-Safe Split (C586)
+
+FL divides into two genuine subgroups:
+
+| Subgroup | Classes | Mean Position | Final Rate | Hazard Role |
+|----------|---------|--------------|------------|-------------|
+| Hazard | {7, 30} | 0.55 | 12.3% | Source (4.5x initiation bias) |
+| Safe | {38, 40} | 0.81 | 55.7% | Non-hazardous |
+
+Mann-Whitney: position p=9.4e-20, final rate p=7.3e-33. FL initiates forbidden transitions far more than it receives them. EN is the mirror: mostly a target.
+
+**Tier 3 interpretation:** In distillation, the danger comes from flow decisions — opening a valve at the wrong time, transitioning between phases incorrectly. The material itself (EN) doesn't create hazards; it suffers the consequences. FL → EN hazard directionality is exactly what you'd see in a system where flow control errors damage the batch.
+
+### FQ Four-Way Differentiation (C587)
+
+| Class | Tokens | Character | Distinctive Feature |
+|-------|--------|-----------|-------------------|
+| 9 | 630 | aiin/o/or | Medial self-chaining, prefix-free |
+| 13 | 1,191 | ok/ot+suffix | Largest FQ class, 16% suffixed |
+| 14 | 707 | ok/ot+bare | Distinct from 13 (p=1.6e-10) |
+| 23 | 362 | d/l/r/s/y | Final-biased, morphologically minimal |
+
+Classes 13 and 14 share the ok/ot PREFIX family but differ in suffix behavior. This mirrors C570's PREFIX-as-role-selector principle operating *within* a single role.
+
+### CC Positional Dichotomy (C590)
+
+Class 10 (daiin): initial-biased (0.413), 27.1% line-initial. Class 11 (ol): medial (0.511), 5.0% initial. Mann-Whitney p=2.8e-5. CC is operationally a two-token toggle with complementary control primitives. Class 12 (k) is ghost. If Class 17 is included (C560), it adds ol-derived compound control operators.
+
+### C559 Correction (C592)
+
+C559 (FREQUENT Role Structure) used incorrect membership {9, 20, 21, 23}. Classes 20 and 21 are AX (C563). Correct FQ is {9, 13, 14, 23} per ICC. C559 is SUPERSEDED by C583 and C587. Downstream constraints C550, C551, C552, C556 flagged for re-verification with corrected membership.
+
+### Five-Role Summary Table (C591)
+
+| Property | CC | EN | FL | FQ | AX |
+|----------|-----|-----|-----|-----|-----|
+| Classes | 3-4 | 18 | 4 | 4 | 19-20 |
+| Tokens | 735-1023 | 7,211 | 1,078 | 2,890 | 4,559 |
+| % of B | 3-4% | 31.2% | 4.7% | 12.5% | 19.7% |
+| PP% | 100% | 100% | 100% | 100% | 98.2% |
+| Suffix types | 0 | 17 | 2 | 1 | 19 |
+| Bare rate | 100% | 39% | 94% | 93% | 62% |
+| Hazard role | None | Target | Source | Mixed | None |
+| Structure | GENUINE | CONVERGENCE | GENUINE | GENUINE | COLLAPSED |
+
+### Integration with Distillation Interpretation
+
+The five-role taxonomy maps to a layered execution model:
+
+| Layer | Role | Function | Distillation Parallel |
+|-------|------|----------|----------------------|
+| Frame | AX | Positional template | Apparatus arrangement |
+| Signal | CC | Control primitives | Operator hand signals |
+| Content | EN | Material operations (suffix-modified) | Substance processing |
+| Flow | FL | State transitions (hazard-aware) | Valve/gate operations |
+| Iteration | FQ | Repetition and closure | Cycle count, batch completion |
+
+A line reads as: AX frame → CC signal → EN content + FL transitions + FQ iteration → FQ/FL close.
+
+The suffix boundary confirms the apparatus-centric model: content tokens (EN) carry material-specific parameterization via suffixes; control tokens (CC/FL/FQ) are universal and bare. The system encodes *what material* through suffixes on EN, but *how to process* through suffix-free control signals.
+
+### Evidence Summary (C581-C592)
+
+| Constraint | Finding | Key Number |
+|------------|---------|------------|
+| C581 | CC definitive census | {10,11,12,17} — Class 17 confirmed CC per C560 |
+| C582 | FL definitive census | {7,30,38,40}, 4 classes (was 2) |
+| C583 | FQ definitive census | {9,13,14,23}, 2890 tokens (supersedes C559) |
+| C584 | Near-universal pipeline purity | CC/EN/FL/FQ 100% PP; AX 98.2% |
+| C585 | Cross-role MIDDLE sharing | EN-AX Jaccard=0.402; CC isolated |
+| C586 | FL hazard-safe split | p=9.4e-20; FL source-biased 4.5x |
+| C587 | FQ internal differentiation | 4-way genuine, 100% KW significant |
+| C588 | Suffix role selectivity | chi2=5063.2; three suffix strata |
+| C589 | Small role genuine structure | CC/FL/FQ all GENUINE vs large roles |
+| C590 | CC positional dichotomy | daiin initial vs ol medial, p=2.8e-5 |
+| C591 | Five-role complete taxonomy | 49 classes → 5 roles, complete partition |
+| C592 | C559 membership correction | C559 SUPERSEDED; downstream flags |
+
+**Source:** SMALL_ROLE_ANATOMY (2026-01-26)
+
+---
+
+## 0.J. FQ INTERNAL ARCHITECTURE (FQ_ANATOMY Phase) - NEW in v4.47
+
+### Tier 2: FQ 3-Group Structure
+
+> **FQ's 4 classes form 3 functional groups: CONNECTOR {9}, PREFIXED_PAIR {13, 14}, CLOSER {23}. Classes 13 and 14 have completely non-overlapping MIDDLE vocabularies (Jaccard=0.000). Internal transitions follow a directed grammar (chi2=111, p<0.0001). Class 23 is a boundary specialist with 29.8% final rate. FQ-FL symbiosis is position-driven, not hazard-mediated.**
+
+This phase deepens the FQ characterization from SMALL_ROLE_ANATOMY (C587) by examining internal vocabulary, transitions, and upstream context.
+
+### 3-Group Structure (C593)
+
+Silhouette analysis yields 3 groups (silhouette=0.68):
+- **CONNECTOR** {9}: or/aiin bigram, medial self-chaining, prefix-free. Functions as the operational connector between EN blocks.
+- **PREFIXED_PAIR** {13, 14}: ok/ot-prefixed classes, the bulk of FQ (1,898 tokens). Share PREFIX family but differ completely in MIDDLE vocabulary.
+- **CLOSER** {23}: morphologically minimal (d/l/r/s/y), final-biased. Terminates sequences.
+
+### Complete 13-14 Vocabulary Bifurcation (C594)
+
+Classes 13 and 14 share zero MIDDLEs (Jaccard=0.000). This is sharper than EN's QO/CHSH split (Jaccard=0.133). Class 13 has 18.2% suffix rate; Class 14 has 0%. Despite sharing the ok/ot PREFIX family, they access completely different content vocabularies — the most extreme vocabulary segregation in the corpus.
+
+### Internal Transition Grammar (C595)
+
+FQ internal transitions are non-random (chi2=111, p<0.0001):
+- 23->9 enriched 2.85x (closer feeds connector)
+- 9->13 vs 9->14 ratio is 4.6:1 (connector preferentially feeds Class 13)
+- 13->23 enriched (Class 13 feeds closer to terminate)
+
+### FQ-FL Symbiosis (C596)
+
+FQ and FL co-occur in positionally structured patterns, but hazard alignment is non-significant (p=0.33). The symbiosis is position-driven — both roles concentrate at line boundaries — not hazard-mediated. FQ does not preferentially pair with hazardous FL classes.
+
+### Class 23 Boundary Dominance (C597)
+
+Class 23 has the highest final rate of any FQ class (29.8%) and accounts for 39% of all FQ line-final tokens despite being only 12.5% of FQ by count. Mean run length 1.19 — almost always appears as a singleton. It functions as a dedicated boundary marker.
+
+### Tier 3 Interpretation
+
+FQ implements **iteration control** within the line grammar:
+- CONNECTOR (Class 9) chains operational blocks — the "and then" between EN sequences
+- PREFIXED_PAIR (13, 14) provides parameterized repetition with two completely different content vocabularies (possibly different iteration modes or targets)
+- CLOSER (23) terminates sequences — the "stop" signal
+
+The 13-14 complete bifurcation suggests two distinct iteration pathways sharing a common structural frame (ok/ot PREFIX) but accessing different material specifications.
+
+### Evidence Summary (C593-C597)
+
+| Constraint | Finding | Key Number |
+|------------|---------|------------|
+| C593 | FQ 3-group structure | silhouette=0.68 |
+| C594 | Complete 13-14 vocabulary bifurcation | Jaccard=0.000 |
+| C595 | Internal transition grammar | chi2=111, p<0.0001 |
+| C596 | FQ-FL position-driven symbiosis | hazard p=0.33 (NS) |
+| C597 | Class 23 boundary dominance | 29.8% final, 39% of FQ finals |
+
+**Source:** FQ_ANATOMY (2026-01-26)
+
+---
+
+## 0.K. SUB-ROLE INTERACTION GRAMMAR (SUB_ROLE_INTERACTION Phase) - NEW in v4.47
+
+### Tier 2: Cross-Boundary Sub-Group Routing
+
+> **Internal sub-groups of each role interact non-randomly across role boundaries. 8/10 cross-role pairs show significant sub-group routing (5 survive Bonferroni). CC sub-groups are differentiated triggers: daiin/ol activate EN_CHSH while ol-derived activates EN_QO. All 19 hazard events originate from exactly 3 sub-groups (FL_HAZ, EN_CHSH, FQ_CONN). REGIME modulates routing magnitude but not direction.**
+
+This phase connects the role-level transition grammar (C550) with the internal anatomy of each role, testing whether sub-group identity is visible across role boundaries.
+
+### Cross-Boundary Structure (C598)
+
+13 sub-groups across 5 roles (EN: QO/CHSH/MINOR; FQ: CONN/PAIR/CLOSER; FL: HAZ/SAFE; AX: INIT/MED/FINAL; CC: DAIIN/OL/OL_D) produce 10 testable cross-role pairs. 8/10 are significant raw, 5/10 survive Bonferroni. Strongest: CC->EN (chi2=104, p=2.5e-20), FQ->EN (chi2=35, p=3.5e-8).
+
+### CC Trigger Selectivity (C600)
+
+The sharpest finding. CC sub-groups are **differentiated triggers** (chi2=129.2, p=9.6e-21):
+- **daiin** (Class 10) and **ol** (Class 11): trigger EN_CHSH at 1.60-1.74x, suppress EN_QO to 0.18x
+- **ol-derived** (Class 17): triggers EN_QO at 1.39x, suppresses EN_CHSH to 0.77x
+
+This refines C557 ("daiin opens lines") to "daiin specifically opens the CHSH pathway." The QO pathway has a completely different upstream activator.
+
+### AX Scaffolding Routing (C599)
+
+AX sub-positions route differently to operational sub-groups (chi2=48.3, p=3.9e-4):
+- AX_INIT feeds QO at 1.32x
+- AX_FINAL avoids QO (0.59x) and feeds FQ_CONN (1.31x)
+- AX is not a uniform frame — it is a directional routing mechanism
+
+### Hazard Sub-Group Concentration (C601)
+
+All 19 corpus hazard events originate from exactly 3 source sub-groups: FL_HAZ (47%), EN_CHSH (26%), FQ_CONN (26%). EN_CHSH absorbs 58% of hazard targets. EN_QO never participates — zero as source, zero as target. This confirms the QO/CHSH bifurcation is functional, not just lexical.
+
+### REGIME-Conditioned Routing (C602)
+
+4/5 tested cross-role pairs are REGIME-dependent (homogeneity p<0.05). The exception is AX->FQ which is REGIME-independent (p=0.86), consistent with AX being structural scaffolding rather than content-sensitive. REGIME modulates magnitude but never flips direction — FQ_CONN always feeds CHSH in every REGIME.
+
+### Tier 3 Interpretation: Two Parallel Processing Lanes
+
+The sub-role interaction data reveals **two parallel processing pathways**:
+
+```
+CC_DAIIN/OL  --triggers-->  EN_CHSH  --feeds-->  FQ_CONN
+                                                    |
+                                             (hazard loop)
+                                                    |
+CC_OL_D      --triggers-->  EN_QO    --feeds-->  FQ_PAIR
+                                                 (safe)
+```
+
+- **CHSH lane:** Triggered by daiin/ol, carries hazardous operations, uses connector routing
+- **QO lane:** Triggered by ol-derived compounds, carries safe operations, uses prefixed pair routing
+- **AX scaffolding:** Routes differentially — INIT feeds QO, FINAL feeds CONN
+
+In the apparatus-centric model: daiin opens a hazardous processing sequence (high-temperature distillation, reactive materials), while ol-derived compounds open a safe processing sequence (routine operations, stable materials). The two lanes share grammar but access different vocabularies and carry different risk profiles.
+
+### Evidence Summary (C598-C602)
+
+| Constraint | Finding | Key Number |
+|------------|---------|------------|
+| C598 | Cross-boundary sub-group structure | 8/10 significant, 5/10 Bonferroni |
+| C599 | AX scaffolding routing | chi2=48.3, p=3.9e-4 |
+| C600 | CC trigger sub-group selectivity | chi2=129.2, p=9.6e-21 |
+| C601 | Hazard sub-group concentration | 3 sources, QO never participates |
+| C602 | REGIME-conditioned sub-role grammar | 4/5 REGIME-dependent, AX->FQ exception |
+
+**Source:** SUB_ROLE_INTERACTION (2026-01-26)
 
 ---
 

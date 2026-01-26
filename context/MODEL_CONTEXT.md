@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.12 | **Date:** 2026-01-25 | **Status:** FROZEN
+**Version:** 3.13 | **Date:** 2026-01-26 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -448,11 +448,11 @@ Currier B's 49 classes organize into 5 functional roles:
 
 | Role | Function | Classes | Key Property |
 |------|----------|---------|--------------|
-| **CC** | Core Control | kernel + boundary markers | Execution boundaries, line-initial/final |
-| **EN** | Energy | 11 classes | Medial line concentration (positions 3-6) |
-| **FL** | Flow | 2 classes | Line-final hierarchy (FL > CC at end) |
-| **FQ** | Frequent | 4 classes | Common instructions, section S elevation |
-| **AX** | Auxiliary | 20 classes (28.4% of B) | PREFIX-switched scaffold layer |
+| **CC** | Core Control | 4 classes (4.4% of B) | Execution boundaries, line-initial/final |
+| **EN** | Energy | 18 classes (31.2% of B) | Medial line concentration (positions 3-6) |
+| **FL** | Flow | 4 classes (4.7% of B) | Line-final hierarchy (FL > CC at end) |
+| **FQ** | Frequent | 4 classes (12.5% of B) | Common instructions, section S elevation |
+| **AX** | Auxiliary | 19 classes (16.6% of B) | PREFIX-switched scaffold layer |
 
 ### Line Execution Syntax (C556-C562)
 
@@ -485,18 +485,36 @@ AX is not a separate vocabulary — it is a **scaffold MODE** of the shared pipe
 - **Same MIDDLEs** appear as AX or operational depending on PREFIX (C571)
 - **98.2%** of AX tokens use PP MIDDLEs — shared pipeline vocabulary (C567)
 - AX tokens stratify into 3 positional sub-types: **INIT / MED / FINAL** (C563)
-- 20 classes collapse to **≤2 effective behavioral groups** (C572)
+- 19 classes collapse to **≤2 effective behavioral groups** (C572)
 - Position is the sole differentiator; transitions uniform, context classifier below random baseline
 
 **What AX Is NOT:**
 - Not a separate vocabulary (same MIDDLEs as operational roles)
-- Not 20 meaningfully distinct modes (behavioral collapse)
+- Not 19 meaningfully distinct modes (behavioral collapse)
 - Not semantic carriers (no material, procedure, or substance encoding)
 
 **Interpretive Bound:**
 > These roles implement structural mediation between control primitives and contextual grammar. They do not encode semantics, materials, or procedures.
 
-**Reference:** See BCSC v1.2 for full structural contract; `phases/CLASS_SEMANTIC_VALIDATION/`, `phases/AUXILIARY_STRATIFICATION/`, `phases/AX_FUNCTIONAL_ANATOMY/`, `phases/AX_CLASS_BEHAVIOR/` for evidence.
+**Reference:** See BCSC v1.3 for full structural contract; `phases/CLASS_SEMANTIC_VALIDATION/`, `phases/AUXILIARY_STRATIFICATION/`, `phases/AX_FUNCTIONAL_ANATOMY/`, `phases/AX_CLASS_BEHAVIOR/` for evidence.
+
+### Role Internal Anatomy (C573-C602)
+
+**Status:** Tier 2 validated. Five anatomy phases completed 2026-01-26 (EN_ANATOMY, SMALL_ROLE_ANATOMY, FQ_ANATOMY, AX_REVERIFICATION, SUB_ROLE_INTERACTION).
+
+Each role's internal class structure has been characterized. Key findings:
+
+**ENERGY (EN):** 18 classes exhibit **distributional convergence** (C574) — grammatically identical (same positions, REGIME, context) but lexically partitioned by PREFIX family. QO-prefixed classes use 25 MIDDLEs, CHSH-prefixed use 43, with only 8 shared (Jaccard=0.133, C576). EN is 100% pipeline-derived (C575) with 30 exclusive MIDDLEs (C578). Interleaving is content-driven (BIO vs PHARMA), not positional (C577).
+
+**FREQUENT (FQ):** 4 classes form a **3-group structure** (C593): CONNECTOR {9}, PREFIXED_PAIR {13, 14}, CLOSER {23}. Classes 13 and 14 have completely non-overlapping vocabulary (Jaccard=0.000, C594). Internal transitions follow a directed grammar (chi2=111, C595). Class 23 is a boundary specialist (29.8% final rate, C597).
+
+**FLOW (FL):** 4 classes split into **hazard/safe** subgroups (C586). Hazard {7, 30} sits at mean position 0.55 with 12.3% final rate; Safe {38, 40} at position 0.81 with 55.7% final rate (p=9.4e-20). FL initiates forbidden transitions at 4.5x the rate it receives them.
+
+**CORE CONTROL (CC):** 3 active classes form a **positional dichotomy** (C590). Class 10 (daiin) is initial-biased (0.413, 27.1% line-initial); Class 11 (ol) is medial (0.511); Class 17 (ol-derived) adds compound operators. Critically, daiin/ol trigger EN_CHSH specifically (1.6-1.7x) while ol-derived triggers EN_QO (1.39x) — CC sub-groups are **differentiated triggers** (C600).
+
+**Cross-Boundary Routing (C598-C602):** Sub-group identity is visible across role boundaries. 8/10 cross-role pairs show non-random sub-group routing (5 survive Bonferroni, C598). AX scaffolding routes differentially: AX_INIT feeds QO, AX_FINAL feeds FQ_CONN (C599). All 19 hazard events originate from exactly 3 sub-groups: FL_HAZ, EN_CHSH, FQ_CONN. QO never participates in hazards (C601). REGIME modulates routing magnitude but not direction for 4/5 pairs; AX->FQ is the REGIME-independent exception (C602).
+
+**Reference:** See constraint files C573-C602; `phases/EN_ANATOMY/`, `phases/SMALL_ROLE_ANATOMY/`, `phases/FQ_ANATOMY/`, `phases/SUB_ROLE_INTERACTION/` for evidence.
 
 ---
 

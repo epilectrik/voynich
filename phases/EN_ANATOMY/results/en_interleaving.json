@@ -1,0 +1,98 @@
+{
+  "subfamily_definitions": {
+    "QO": [
+      32,
+      33,
+      36
+    ],
+    "CHSH": [
+      8,
+      31,
+      34
+    ],
+    "MINOR": [
+      35,
+      37,
+      39,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  "positional_analysis": {
+    "qo_mean_pos": 0.4899,
+    "qo_std_pos": 0.2861,
+    "chsh_mean_pos": 0.4801,
+    "chsh_std_pos": 0.282,
+    "mann_whitney_p": 0.104449,
+    "positional_separation": "False"
+  },
+  "chain_analysis": {
+    "QO": {
+      "n_chains": 2385,
+      "mean_length": 1.16,
+      "max_length": 6
+    },
+    "CHSH": {
+      "n_chains": 2740,
+      "mean_length": 1.08,
+      "max_length": 4
+    },
+    "MINOR": {
+      "n_chains": 1368,
+      "mean_length": 1.08,
+      "max_length": 4
+    }
+  },
+  "transitions": {
+    "MINOR->CHSH": 395,
+    "QO->MINOR": 336,
+    "MINOR->QO": 344,
+    "CHSH->QO": 991,
+    "CHSH->MINOR": 398,
+    "QO->CHSH": 888
+  },
+  "core_interleaving_rate": 1.0,
+  "section_interleaving": {
+    "HERBAL_A": 0,
+    "HERBAL_B": 0.4797,
+    "PHARMA": 0.2745,
+    "BIO": 0.5845,
+    "RECIPE_A": 0.5333,
+    "RECIPE_B": 0.5621,
+    "ASTRO": 0,
+    "COSMO": 0
+  },
+  "regime_interleaving": {
+    "REGIME_1": 0.5752,
+    "REGIME_2": 0.5776,
+    "REGIME_3": 0.5902,
+    "REGIME_4": 0.522
+  },
+  "ordering": {
+    "lines_with_both": 1130,
+    "qo_first": 521,
+    "chsh_first": 609,
+    "qo_first_pct": 46.11
+  },
+  "minor_class_counts": {
+    "47": 236,
+    "35": 257,
+    "39": 208,
+    "41": 71,
+    "42": 43,
+    "49": 124,
+    "46": 206,
+    "43": 108,
+    "48": 98,
+    "37": 52,
+    "44": 43,
+    "45": 33
+  }
+}

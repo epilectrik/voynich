@@ -1,0 +1,442 @@
+{
+  "role_suffix_inventory": {
+    "CC": {
+      "total_tokens": 735,
+      "suffix_types": 0,
+      "nosuffix_count": 735,
+      "nosuffix_pct": 100.0,
+      "top_suffixes": {
+        "NONE": 735
+      },
+      "all_suffixes": []
+    },
+    "EN": {
+      "total_tokens": 7211,
+      "suffix_types": 17,
+      "nosuffix_count": 2811,
+      "nosuffix_pct": 38.98,
+      "top_suffixes": {
+        "NONE": 2811,
+        "edy": 991,
+        "hy": 464,
+        "aiin": 434,
+        "ain": 372,
+        "y": 339,
+        "al": 325,
+        "eey": 324,
+        "ar": 307,
+        "dy": 302
+      },
+      "all_suffixes": [
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "ar",
+        "dy",
+        "edy",
+        "eey",
+        "eol",
+        "ey",
+        "hy",
+        "ly",
+        "ol",
+        "or",
+        "r",
+        "s",
+        "y"
+      ]
+    },
+    "FL": {
+      "total_tokens": 1078,
+      "suffix_types": 2,
+      "nosuffix_count": 1011,
+      "nosuffix_pct": 93.78,
+      "top_suffixes": {
+        "NONE": 1011,
+        "r": 56,
+        "dy": 11
+      },
+      "all_suffixes": [
+        "dy",
+        "r"
+      ]
+    },
+    "FQ": {
+      "total_tokens": 2890,
+      "suffix_types": 1,
+      "nosuffix_count": 2699,
+      "nosuffix_pct": 93.39,
+      "top_suffixes": {
+        "NONE": 2699,
+        "edy": 191
+      },
+      "all_suffixes": [
+        "edy"
+      ]
+    },
+    "AX": {
+      "total_tokens": 4140,
+      "suffix_types": 19,
+      "nosuffix_count": 2580,
+      "nosuffix_pct": 62.32,
+      "top_suffixes": {
+        "NONE": 2580,
+        "edy": 329,
+        "dy": 201,
+        "aiin": 154,
+        "r": 153,
+        "ey": 102,
+        "or": 78,
+        "ar": 75,
+        "ain": 72,
+        "eey": 67
+      },
+      "all_suffixes": [
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "ar",
+        "dy",
+        "edy",
+        "eey",
+        "ey",
+        "hy",
+        "iin",
+        "l",
+        "ly",
+        "ol",
+        "or",
+        "r",
+        "ry",
+        "s",
+        "y"
+      ]
+    }
+  },
+  "suffix_selectivity": {
+    "chi2": 5063.19,
+    "p_value": 0.0,
+    "dof": 80,
+    "significant": "True",
+    "top_enrichments": [
+      {
+        "role": "FQ",
+        "suffix": "NONE",
+        "residual": 22.06,
+        "count": 2699
+      },
+      {
+        "role": "EN",
+        "suffix": "hy",
+        "residual": 15.25,
+        "count": 464
+      },
+      {
+        "role": "FL",
+        "suffix": "NONE",
+        "residual": 13.64,
+        "count": 1011
+      },
+      {
+        "role": "CC",
+        "suffix": "NONE",
+        "residual": 13.42,
+        "count": 735
+      },
+      {
+        "role": "EN",
+        "suffix": "al",
+        "residual": 13.16,
+        "count": 325
+      },
+      {
+        "role": "AX",
+        "suffix": "r",
+        "residual": 12.72,
+        "count": 153
+      },
+      {
+        "role": "EN",
+        "suffix": "ain",
+        "residual": 12.22,
+        "count": 372
+      },
+      {
+        "role": "EN",
+        "suffix": "y",
+        "residual": 12.03,
+        "count": 339
+      },
+      {
+        "role": "EN",
+        "suffix": "edy",
+        "residual": 11.99,
+        "count": 991
+      },
+      {
+        "role": "EN",
+        "suffix": "eey",
+        "residual": 11.2,
+        "count": 324
+      }
+    ],
+    "top_depletions": [
+      {
+        "role": "EN",
+        "suffix": "NONE",
+        "residual": -24.18,
+        "count": 2811
+      },
+      {
+        "role": "FQ",
+        "suffix": "aiin",
+        "residual": -10.29,
+        "count": 0
+      },
+      {
+        "role": "FL",
+        "suffix": "edy",
+        "residual": -10.07,
+        "count": 0
+      },
+      {
+        "role": "FQ",
+        "suffix": "hy",
+        "residual": -9.64,
+        "count": 0
+      },
+      {
+        "role": "FQ",
+        "suffix": "dy",
+        "residual": -9.62,
+        "count": 0
+      },
+      {
+        "role": "FQ",
+        "suffix": "ain",
+        "residual": -8.94,
+        "count": 0
+      },
+      {
+        "role": "EN",
+        "suffix": "r",
+        "residual": -8.76,
+        "count": 12
+      },
+      {
+        "role": "FQ",
+        "suffix": "y",
+        "residual": -8.45,
+        "count": 0
+      },
+      {
+        "role": "FQ",
+        "suffix": "eey",
+        "residual": -8.39,
+        "count": 0
+      },
+      {
+        "role": "CC",
+        "suffix": "edy",
+        "residual": -8.32,
+        "count": 0
+      }
+    ]
+  },
+  "nosuffix_rates": {
+    "CC": 100.0,
+    "EN": 38.98211066426293,
+    "FL": 93.7847866419295,
+    "FQ": 93.39100346020761,
+    "AX": 62.31884057971014
+  },
+  "nosuffix_chi2": {
+    "chi2": 3712.8,
+    "p_value": 0.0
+  },
+  "section_suffix_interaction": {
+    "CC": {
+      "chi2": null,
+      "p_value": null,
+      "note": "insufficient data"
+    },
+    "EN": {
+      "chi2": 554.05,
+      "p_value": 1.2048350098468014e-85
+    },
+    "FL": {
+      "chi2": 22.88,
+      "p_value": 0.0008361773204202866
+    },
+    "FQ": {
+      "chi2": 14.63,
+      "p_value": 0.0021635670829319425
+    },
+    "AX": {
+      "chi2": 296.13,
+      "p_value": 5.174126383931645e-34
+    }
+  },
+  "regime_suffix_interaction": {
+    "CC": {
+      "chi2": null,
+      "p_value": null,
+      "note": "insufficient data"
+    },
+    "EN": {
+      "chi2": 223.89,
+      "p_value": 1.5876533402177854e-23
+    },
+    "FL": {
+      "chi2": 14.3,
+      "p_value": 0.026412176081257212
+    },
+    "FQ": {
+      "chi2": 6.22,
+      "p_value": 0.1012594624575695
+    },
+    "AX": {
+      "chi2": 102.61,
+      "p_value": 0.00020167674692865087
+    }
+  },
+  "suffix_jaccard_matrix": {
+    "CC": {
+      "CC": 0,
+      "EN": 0.0,
+      "FL": 0.0,
+      "FQ": 0.0,
+      "AX": 0.0
+    },
+    "EN": {
+      "CC": 0.0,
+      "EN": 1.0,
+      "FL": 0.1176,
+      "FQ": 0.0588,
+      "AX": 0.8
+    },
+    "FL": {
+      "CC": 0.0,
+      "EN": 0.1176,
+      "FL": 1.0,
+      "FQ": 0.0,
+      "AX": 0.1053
+    },
+    "FQ": {
+      "CC": 0.0,
+      "EN": 0.0588,
+      "FL": 0.0,
+      "FQ": 1.0,
+      "AX": 0.0526
+    },
+    "AX": {
+      "CC": 0.0,
+      "EN": 0.8,
+      "FL": 0.1053,
+      "FQ": 0.0526,
+      "AX": 1.0
+    }
+  },
+  "class_suffix_profiles": {
+    "10": {
+      "role": "CC",
+      "total": 314,
+      "nosuffix_pct": 100.0,
+      "n_suffix_types": 0,
+      "top_suffix": "-",
+      "top_suffix_pct": 0,
+      "suffix_distribution": {}
+    },
+    "11": {
+      "role": "CC",
+      "total": 421,
+      "nosuffix_pct": 100.0,
+      "n_suffix_types": 0,
+      "top_suffix": "-",
+      "top_suffix_pct": 0,
+      "suffix_distribution": {}
+    },
+    "7": {
+      "role": "FL",
+      "total": 434,
+      "nosuffix_pct": 100.0,
+      "n_suffix_types": 0,
+      "top_suffix": "-",
+      "top_suffix_pct": 0,
+      "suffix_distribution": {}
+    },
+    "30": {
+      "role": "FL",
+      "total": 522,
+      "nosuffix_pct": 90.61,
+      "n_suffix_types": 1,
+      "top_suffix": "r",
+      "top_suffix_pct": 9.39,
+      "suffix_distribution": {
+        "r": 49
+      }
+    },
+    "38": {
+      "role": "FL",
+      "total": 50,
+      "nosuffix_pct": 78.0,
+      "n_suffix_types": 1,
+      "top_suffix": "dy",
+      "top_suffix_pct": 22.0,
+      "suffix_distribution": {
+        "dy": 11
+      }
+    },
+    "40": {
+      "role": "FL",
+      "total": 72,
+      "nosuffix_pct": 90.28,
+      "n_suffix_types": 1,
+      "top_suffix": "r",
+      "top_suffix_pct": 9.72,
+      "suffix_distribution": {
+        "r": 7
+      }
+    },
+    "9": {
+      "role": "FQ",
+      "total": 630,
+      "nosuffix_pct": 100.0,
+      "n_suffix_types": 0,
+      "top_suffix": "-",
+      "top_suffix_pct": 0,
+      "suffix_distribution": {}
+    },
+    "13": {
+      "role": "FQ",
+      "total": 1191,
+      "nosuffix_pct": 83.96,
+      "n_suffix_types": 1,
+      "top_suffix": "edy",
+      "top_suffix_pct": 16.04,
+      "suffix_distribution": {
+        "edy": 191
+      }
+    },
+    "14": {
+      "role": "FQ",
+      "total": 707,
+      "nosuffix_pct": 100.0,
+      "n_suffix_types": 0,
+      "top_suffix": "-",
+      "top_suffix_pct": 0,
+      "suffix_distribution": {}
+    },
+    "23": {
+      "role": "FQ",
+      "total": 362,
+      "nosuffix_pct": 100.0,
+      "n_suffix_types": 0,
+      "top_suffix": "-",
+      "top_suffix_pct": 0,
+      "suffix_distribution": {}
+    }
+  }
+}

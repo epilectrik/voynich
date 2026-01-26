@@ -1,6 +1,6 @@
 # C551: Grammar Universality and REGIME Specialization
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+**Tier:** 2 | **Status:** CLOSED | **Scope:** B | **Re-verified:** FQ_ANATOMY (UNCHANGED)
 
 ---
 
@@ -102,6 +102,25 @@ CORE_CONTROL's maximal universality (0.836) means control operations are **conte
 - **Phase:** CLASS_SEMANTIC_VALIDATION
 - **Date:** 2026-01-25
 - **Script:** class_regime_universality.py
+
+---
+
+## Re-Verification (FQ_ANATOMY, 2026-01-26)
+
+**Verdict:** UNCHANGED — mean evenness 0.911→0.916, universal fraction 4/4 unchanged.
+
+| Metric | Old (FQ={9,20,21,23}) | New (FQ={9,13,14,23}) |
+|--------|----------------------|----------------------|
+| Mean evenness | 0.911 | 0.916 |
+| Universal fraction | 4/4 (100%) | 4/4 (100%) |
+| Per-class: 9 | 0.878 | 0.878 |
+| Per-class: 13 (was 20) | 0.907 | 0.923 |
+| Per-class: 14 (was 21) | 0.922 | 0.924 |
+| Per-class: 23 | 0.939 | 0.939 |
+
+All FQ classes remain universal. Classes 13/14 have slightly higher REGIME evenness than old classes 20/21.
+
+**Source:** `phases/FQ_ANATOMY/scripts/fq_upstream_reverify.py`
 
 ---
 

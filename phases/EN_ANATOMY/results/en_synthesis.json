@@ -1,0 +1,59 @@
+{
+  "census": {
+    "definitive_count": 18,
+    "resolution": "BCSC=11 UNDERCOUNTED, CSV=6 UNDERCOUNTED, ICC=18 CORRECT",
+    "token_total": 7211,
+    "pct_of_b": 31.22,
+    "core_pct": 79.49,
+    "minor_pct": 20.51
+  },
+  "structural_verdict": {
+    "verdict": "COLLAPSED",
+    "k2_silhouette": 0.1804,
+    "best_silhouette": 0.1881,
+    "best_k": 6,
+    "context_gain_pp": 4.31,
+    "comparison_to_ax": "EN is MORE collapsed than AX (0.180 vs 0.232)"
+  },
+  "middle_vocabulary": {
+    "total": 64,
+    "pp_pct": 100.0,
+    "ri_pct": 0.0,
+    "en_exclusive_count": 30,
+    "en_exclusive_pct": 46.9,
+    "inter_family_jaccard": 0.1333,
+    "interpretation": "PREFIX selects MIDDLE subvocabulary, not grammatical function"
+  },
+  "interleaving": {
+    "mechanism": "CONTENT-DRIVEN, not positional",
+    "positional_p": 0.104449,
+    "section_rates": {
+      "HERBAL_A": 0,
+      "HERBAL_B": 0.4797,
+      "PHARMA": 0.2745,
+      "BIO": 0.5845,
+      "RECIPE_A": 0.5333,
+      "RECIPE_B": 0.5621,
+      "ASTRO": 0,
+      "COSMO": 0
+    },
+    "regime_rates": {
+      "REGIME_1": 0.5752,
+      "REGIME_2": 0.5776,
+      "REGIME_3": 0.5902,
+      "REGIME_4": 0.522
+    },
+    "ordering_bias": "CHSH-first 53.9%"
+  },
+  "new_constraints": [
+    "C573",
+    "C574",
+    "C575",
+    "C576",
+    "C577",
+    "C578",
+    "C579",
+    "C580"
+  ],
+  "cross_constraint_checks": "All C544-C557 CONFIRMED or EXTENDED"
+}

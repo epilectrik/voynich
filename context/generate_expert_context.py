@@ -19,10 +19,41 @@ Usage:
     python generate_expert_context.py --legacy     # Also generate EXPERT_CONTEXT.md
 """
 
+import re
 from pathlib import Path
 from datetime import datetime
 
 CONTEXT_DIR = Path(__file__).parent
+
+
+def get_counts():
+    """Parse constraint and fit counts from their respective index files."""
+    constraint_count = 0
+    fit_count = 0
+
+    # Parse constraint count from INDEX.md line 3: "**Total:** NNN validated constraints"
+    index_file = CONTEXT_DIR / "CLAIMS" / "INDEX.md"
+    if index_file.exists():
+        first_lines = index_file.read_text(encoding='utf-8').split('\n')[:5]
+        for line in first_lines:
+            m = re.search(r'\*\*Total:\*\*\s*(\d+)', line)
+            if m:
+                constraint_count = int(m.group(1))
+                break
+
+    # Parse fit count from FIT_TABLE.txt line 4: "# Total: NN fits"
+    fit_file = CONTEXT_DIR / "MODEL_FITS" / "FIT_TABLE.txt"
+    if fit_file.exists():
+        first_lines = fit_file.read_text(encoding='utf-8').split('\n')[:10]
+        for line in first_lines:
+            m = re.search(r'#\s*Total:\s*(\d+)\s*fits', line)
+            if m:
+                fit_count = int(m.group(1))
+                break
+
+    return constraint_count, fit_count
+
+
 AGENT_FILE = CONTEXT_DIR.parent / ".claude" / "agents" / "expert-advisor.md"
 LEGACY_FILE = CONTEXT_DIR / "EXPERT_CONTEXT.md"
 
@@ -69,7 +100,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 356 validated constraints and 35 explanatory fits loaded
+embedded below. You have ALL {constraint_count} validated constraints and {fit_count} explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -115,14 +146,15 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 def generate_content(header, include_contracts=True):
     """Generate expert context content with given header."""
+    constraint_count, fit_count = get_counts()
     sections = []
 
-    # Header with instructions
-    sections.append(header)
+    # Header with instructions (fill in dynamic counts)
+    sections.append(header.format(constraint_count=constraint_count, fit_count=fit_count))
 
-    # Metadata
+    # Metadata (counts parsed dynamically from INDEX.md and FIT_TABLE.txt)
     sections.append(f"""**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}
-**Version:** FROZEN STATE (356 constraints, 35 fits)
+**Version:** FROZEN STATE ({constraint_count} constraints, {fit_count} fits)
 
 ---
 

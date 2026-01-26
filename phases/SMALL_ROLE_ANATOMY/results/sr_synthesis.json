@@ -1,0 +1,270 @@
+{
+  "census_resolution": {
+    "CC": {
+      "classes": [
+        10,
+        11,
+        12
+      ],
+      "count": 3
+    },
+    "FL": {
+      "classes": [
+        7,
+        30,
+        38,
+        40
+      ],
+      "count": 4
+    },
+    "FQ": {
+      "classes": [
+        9,
+        13,
+        14,
+        23
+      ],
+      "count": 4
+    },
+    "EN": {
+      "classes": [
+        8,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "count": 18
+    },
+    "AX": {
+      "classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "count": 20
+    }
+  },
+  "five_role_comparison": {
+    "CC": {
+      "classes": 3,
+      "active": 2,
+      "tokens": 735,
+      "pct_b": 3.2,
+      "pp_pct": 100.0,
+      "suffix_types": 0,
+      "nosuffix_pct": 100.0,
+      "hazard_pct": 0.0,
+      "structure": "GENUINE (2+ghost)"
+    },
+    "EN": {
+      "classes": 18,
+      "active": 18,
+      "tokens": 7211,
+      "pct_b": 31.22,
+      "pp_pct": 100.0,
+      "suffix_types": 17,
+      "nosuffix_pct": 39.0,
+      "hazard_pct": 0.23,
+      "structure": "CONVERGENCE"
+    },
+    "FL": {
+      "classes": 4,
+      "active": 4,
+      "tokens": 1078,
+      "pct_b": 4.7,
+      "pp_pct": 100.0,
+      "suffix_types": 2,
+      "nosuffix_pct": 93.8,
+      "hazard_pct": 1.23,
+      "structure": "GENUINE (haz/safe)"
+    },
+    "FQ": {
+      "classes": 4,
+      "active": 4,
+      "tokens": 2890,
+      "pct_b": 12.5,
+      "pp_pct": 100.0,
+      "suffix_types": 1,
+      "nosuffix_pct": 93.4,
+      "hazard_pct": 0.42,
+      "structure": "GENUINE (4-way)"
+    },
+    "AX": {
+      "classes": 20,
+      "active": 20,
+      "tokens": 4559,
+      "pct_b": 19.7,
+      "pp_pct": 98.2,
+      "suffix_types": 19,
+      "nosuffix_pct": 62.3,
+      "hazard_pct": 0.0,
+      "structure": "COLLAPSED (gradient)"
+    }
+  },
+  "bcsc_updates": [
+    "EN class_count: 11 -> 18 (C573 confirmed)",
+    "FL class_count: 2 -> 4 (ICC gives {7,30,38,40})",
+    "FQ token description: update from C559 data to ICC-based data",
+    "FQ classes: document as {9,13,14,23}, not {9,20,21,23}",
+    "CC: add Class 12 ghost note",
+    "Add suffix dimension: CC/FL/FQ suffix-free, EN suffix-rich",
+    "Add hazard direction: FL initiates, EN receives",
+    "Internal structure: small roles GENUINE, large roles COLLAPSED/CONVERGENCE",
+    "C559: flagged for membership correction (used wrong FQ set)"
+  ],
+  "constraints": [
+    {
+      "id": "C581",
+      "name": "CC Definitive Census",
+      "statement": "CORE_CONTROL comprises 3 classes {10, 11, 12} with 735 tokens (3.2% of B). Class 12 (k) is a ghost class with zero corpus tokens (C540). Only Classes 10 (daiin) and 11 (ol) are instantiated.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C582",
+      "name": "FL Definitive Census",
+      "statement": "FLOW_OPERATOR comprises 4 classes {7, 30, 38, 40} with 1,078 tokens (4.7% of B). BCSC undercounted at 2 classes. Classes 7 (ar/al) and 30 (dar/dal) are hazard-involved; Classes 38 and 40 are non-hazardous.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C583",
+      "name": "FQ Definitive Census",
+      "statement": "FREQUENT_OPERATOR comprises 4 classes {9, 13, 14, 23} with 2,890 tokens (12.5% of B). C559 used wrong membership {9, 20, 21, 23} (Classes 20, 21 are AX per ICC/C563). Correct FQ includes ok-prefixed Class 13 (1,191 tokens) and ot-prefixed Class 14 (707 tokens).",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C584",
+      "name": "Universal Pipeline Purity",
+      "statement": "All 5 operational roles (CC, EN, FL, FQ, AX) are 100% PP (pipeline-participating) at the MIDDLE level. Zero RI MIDDLEs and zero B-exclusive MIDDLEs in any role. Pipeline vocabulary completely dominates Currier B execution.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C585",
+      "name": "Cross-Role MIDDLE Sharing",
+      "statement": "The 5 roles share MIDDLE vocabulary non-uniformly: EN-AX highest (Jaccard 0.402), CC minimal (Jaccard < 0.06 with all roles, 0 exclusive MIDDLEs). EN has 29 exclusive MIDDLEs (45.3%), AX has 17 (29.3%), FL has 3 (17.6%), CC and FQ have 0 exclusive MIDDLEs.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C586",
+      "name": "FL Hazard/Safe Structural Split",
+      "statement": "FL divides into two genuine subgroups: hazard classes {7, 30} at medial positions (mean 0.55, 12.3% final) and safe classes {38, 40} at final positions (mean 0.81, 55.7% final). Mann-Whitney p=9.4e-20 for position, p=7.3e-33 for final rate. FL is hazard-source-biased (initiates 4.5x more than receives).",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C587",
+      "name": "FQ Internal Differentiation",
+      "statement": "FQ shows 4-way genuine structure: Class 9 (aiin/o/or) is medial, prefix-free, self-chaining; Classes 13/14 (ok/ot-prefixed) are medial, large, non-hazardous; Class 23 (d/l/r/s/y) is final-biased, morphologically minimal. All 4 KW tests significant (100%), Class 9 vs others: p=3.9e-7.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C588",
+      "name": "Suffix Role Selectivity",
+      "statement": "Suffix usage is strongly role-dependent (chi2=5063.2, p<1e-300). Three suffix strata: SUFFIX-RICH (EN: 17 types, 39% bare), SUFFIX-MODERATE (AX: 19 types, 62% bare), SUFFIX-DEPLETED (FL/FQ: 1-2 types, 93-94% bare; CC: 0 types, 100% bare). EN-AX share suffix vocabulary (Jaccard 0.800); CC/FL/FQ are suffix-isolated.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C589",
+      "name": "Small Role Genuine Structure",
+      "statement": "All 3 small roles (CC, FL, FQ) show GENUINE_STRUCTURE internally, with 75-100% significant Kruskal-Wallis tests and mean J-S divergence 0.014-0.039. This contrasts with the large roles: AX is COLLAPSED (positional gradient) and EN is DISTRIBUTIONAL_CONVERGENCE (vocabulary/trigger divergence only). Small roles are more internally differentiated than large roles.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C590",
+      "name": "CC Positional Dichotomy",
+      "statement": "CC has a genuine positional dichotomy: Class 10 (daiin) is initial-biased (mean 0.413, 27.1% initial) while Class 11 (ol) is medial (mean 0.511, 5.0% initial). Mann-Whitney p=2.8e-5. CC is 100% suffix-free and has only 3 MIDDLEs. Class 12 (k) is a ghost class with zero corpus tokens.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C591",
+      "name": "Five-Role Complete Taxonomy",
+      "statement": "The 49 Currier B instruction classes partition into 5 roles totaling ~16,054 tokens: CC (3 classes, 3.2%), EN (18 classes, 31.1%), FL (4 classes, 4.7%), FQ (4 classes, 12.5%), AX (20 classes, 19.7%). All roles are 100% PP. Pipeline vocabulary is universal across all execution roles.",
+      "tier": 2,
+      "scope": "B"
+    },
+    {
+      "id": "C592",
+      "name": "C559 Membership Correction",
+      "statement": "C559 (FREQUENT Role Structure) used incorrect membership {9, 20, 21, 23}. Correct ICC-based membership is {9, 13, 14, 23}. Classes 20, 21 belong to AX (confirmed by C563 AX_FINAL subgroup). C559 statistical findings about positional patterns, self-chaining, and REGIME/section distributions may describe a mixed AX/FQ set.",
+      "tier": 2,
+      "scope": "B"
+    }
+  ],
+  "structural_verdicts": {
+    "CC": "GENUINE_STRUCTURE (2 active classes + 1 ghost)",
+    "FL": "GENUINE_STRUCTURE",
+    "FQ": "GENUINE_STRUCTURE",
+    "EN": "DISTRIBUTIONAL_CONVERGENCE",
+    "AX": "COLLAPSED (positional gradient)"
+  },
+  "suffix_strata": {
+    "SUFFIX_RICH": [
+      "EN"
+    ],
+    "SUFFIX_MODERATE": [
+      "AX"
+    ],
+    "SUFFIX_DEPLETED": [
+      "FL",
+      "FQ"
+    ],
+    "SUFFIX_FREE": [
+      "CC"
+    ]
+  },
+  "pipeline_purity": "UNIVERSAL_100_PCT_PP",
+  "c559_correction": {
+    "wrong": [
+      9,
+      20,
+      21,
+      23
+    ],
+    "correct": [
+      9,
+      13,
+      14,
+      23
+    ],
+    "impact": "C559 statistics may describe mixed AX/FQ set"
+  }
+}

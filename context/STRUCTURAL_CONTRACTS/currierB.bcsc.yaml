@@ -19,8 +19,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "1.2"
-  date: "2026-01-25"
+  version: "1.3"
+  date: "2026-01-26"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints only"
@@ -179,8 +179,8 @@ invariants:
     provenance: "C551"
 
   ax_behavioral_collapse:
-    statement: "20 AX classes do not form distinct behavioral groups"
-    description: "Transitions uniform, context below random baseline, best clustering k=2 silhouette=0.18"
+    statement: "19 AX classes do not form distinct behavioral groups"
+    description: "Transitions uniform (0/19 structured), context below random baseline (9.8% vs 11.1%), best clustering k=2 silhouette=0.43"
     provenance: "C572"
 
 # ============================================================
@@ -222,71 +222,192 @@ role_taxonomy:
   roles:
     CORE_CONTROL:
       function: "Execution boundaries"
-      provenance: "C121"
+      classes: "{10, 11, 12, 17}"
+      token_share: "4.4% of B (~1023 tokens)"
+      provenance: "C121, C557, C558, C560, C581"
+      # INTERNAL STRUCTURE (C590):
+      #   GENUINE_STRUCTURE — Class 10 (daiin) initial-biased (mean 0.413),
+      #   Class 11 (ol) medial (mean 0.511), p=2.8e-5.
+      #   Class 12 (k) is ghost — zero corpus tokens (C540).
+      #   Class 17 assigned to CC per C560 (ol-derived compound control).
+      # SUFFIX-FREE (C588):
+      #   0 suffix types, 100% bare. Most constrained suffix profile.
+      # PIPELINE PURITY (C584):
+      #   100% PP — all 3 MIDDLEs (iin, k, ol) are pipeline-participating.
 
     ENERGY_OPERATOR:
       function: "Energy modulation"
-      class_count: 11
-      provenance: "C121"
+      class_count: 18
+      classes: "{8, 31-37, 39, 41-49}"
+      token_share: "31.2% of B (7211 tokens)"
+      provenance: "C121, C573"
+      # INTERNAL STRUCTURE (C574):
+      #   18 classes show DISTRIBUTIONAL_CONVERGENCE — grammatically
+      #   equivalent (same positions, same REGIME, same context) but
+      #   lexically partitioned (QO uses 25 MIDDLEs, CHSH uses 43,
+      #   only 8 shared; Jaccard=0.133). PREFIX selects material
+      #   subvocabulary, not grammatical function (C576, C577).
+      # SUFFIX-RICH (C588):
+      #   17 suffix types, only 39% bare. Suffixes encode material
+      #   variants — EN and AX share suffix vocabulary (Jaccard=0.800).
+      # PIPELINE PURITY (C575):
+      #   100% PP — all 64 unique MIDDLEs are pipeline-participating.
+      # HAZARD ROLE (C586):
+      #   EN is hazard-TARGET — absorbs 11 of 19 corpus forbidden transitions.
+      #   Opposite of FL which is hazard-source.
 
     AUXILIARY:
       function: "PREFIX-switched scaffold layer of shared pipeline vocabulary"
-      class_count: 20
-      token_share: "28.4% of B"
-      provenance: "C121, C563-C572"
+      class_count: 19
+      classes: "{1, 2, 3, 4, 5, 6, 15, 16, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29}"
+      token_share: "16.6% of B (~3852 tokens)"
+      provenance: "C121, C563-C572, C583"
       # ARCHITECTURE:
-      #   AX tokens use the SAME MIDDLEs as operational roles (98.2% PP).
+      #   AX tokens use the SAME MIDDLEs as operational roles (98.2% PP, C567).
       #   PREFIX determines whether a MIDDLE acts as AX or operational (C571).
       #   AX is not a separate vocabulary—it is a scaffold MODE of the pipeline.
       #
-      # POSITIONAL SUB-STRUCTURE (C563):
-      #   AX_INIT  (classes 3, 4, 5, 6): line-initial scaffold
-      #   AX_MED   (classes 24, 25, 26, 27, 28, 29): medial scaffold
-      #   AX_FINAL (classes 1, 2, 14, 15, 16, 18, 19, 20, 21, 22): line-final scaffold
+      # POSITIONAL SUB-STRUCTURE (C563, corrected 2026-01-26):
+      #   AX_INIT  (classes 4, 5, 6, 24, 26): line-initial scaffold
+      #   AX_MED   (classes 1, 2, 3, 16, 18, 27, 28, 29): medial scaffold
+      #   AX_FINAL (classes 15, 19, 20, 21, 22, 25): line-final scaffold
+      #   Note: Class 14 removed from AX_MED — confirmed FQ per ICC + behavioral
+      #   evidence (suffix rate 0.0, token count 707). See C583.
+      #   Class 17 removed per C560 — confirmed CC (ol-derived control). See C581.
       #
       # BEHAVIORAL COLLAPSE (C572):
-      #   20 classes do NOT form distinct behavioral groups.
-      #   Transitions: uniform (only 3/20 structured). Context: below random baseline.
+      #   19 classes do NOT form distinct behavioral groups.
+      #   Transitions: uniform (only 3/19 structured). Context: below random baseline.
       #   Best clustering: k=2, silhouette=0.18. Position is the only differentiator.
-      #   Effective behavioral groups: ≤2 (not 20).
+      #   Effective behavioral groups: ≤2 (not 19).
+      #
+      # SUFFIX-MODERATE (C588):
+      #   19 suffix types, 62% bare. Shares suffix vocabulary with EN (Jaccard=0.800).
       #
       # CO-OCCURRENCE:
       #   97.4% of class pairs co-occur; no pair mutually exclusive.
-      #   At Jaccard 0.7, all 20 cluster together (functional coherence).
+      #   At Jaccard 0.7, all 19 cluster together (functional coherence).
       #   Survival stratification (28%-100%) reflects MIDDLE availability, not importance.
 
     FREQUENT_OPERATOR:
       function: "Common instructions"
       class_count: 4
-      provenance: "C121"
+      classes: "{9, 13, 14, 23}"
+      token_share: "12.5% of B (2890 tokens)"
+      provenance: "C121, C583, C587, C593-C597"
+      # INTERNAL STRUCTURE (C587, C593):
+      #   4-way GENUINE_STRUCTURE — 100% Kruskal-Wallis significance.
+      #   3-group organizing principle (k=3 silhouette 0.68):
+      #     CONNECTOR {9}: bare, medial, or→aiin bigram (C561), hazardous
+      #     PREFIXED_PAIR {13, 14}: ok/ot-prefixed, medial-to-final, non-hazardous
+      #     CLOSER {23}: bare, final-biased, hazardous, boundary specialist
+      #   Morphology × hazard: BARE={9,23}=HAZARDOUS, PREFIXED={13,14}=SAFE (perfect overlap)
+      # VOCABULARY BIFURCATION (C594):
+      #   Classes 13/14 share ZERO MIDDLEs (Jaccard=0.000). Complete lexical partition.
+      #   13: {aiin,ain,e,edy,eey,eol} 18.2% suffixed. 14: {al,am,ar,ey,ol,or,y} 0% suffixed.
+      #   Sharper than EN's QO/CHSH bifurcation (Jaccard=0.133, C576).
+      # INTERNAL TRANSITIONS (C595):
+      #   chi2=111, p<0.0001 (470 pairs). Sequential structure, not random.
+      #   23→9 enriched 2.85x (closer→connector restart loop).
+      #   9→13 directional 4.6:1 (connector→workhorse feed-forward).
+      #   All classes self-chain (1.27-1.60x).
+      # FQ-FL SYMBIOSIS (C596):
+      #   Position-driven, NOT hazard-mediated (hazard p=0.33).
+      #   FL7→FQ9 (medial-medial), FL30→FQ13/14 (final-medial).
+      # BOUNDARY BEHAVIOR (C597):
+      #   Class 23: 29.8% final rate, 39% of FQ finals. Boundary specialist.
+      #   Mean run length 1.19 — FQ is 84% singletons.
+      # SUFFIX-DEPLETED (C588):
+      #   1 suffix type (edy, on Class 13 only), 93.4% bare.
+      # PIPELINE PURITY (C584):
+      #   100% PP — all unique MIDDLEs are pipeline-participating.
+      # NOTE: C559 used wrong membership {9,20,21,23} — SUPERSEDED by C583.
+      #   Classes 20,21 are AX_FINAL per C563. Class 14 is FQ per ICC,
+      #   confirmed by behavioral evidence (suffix rate 0.0, 707 tokens).
+      # RE-VERIFICATION (C550/C551/C552/C556):
+      #   C550: MAGNITUDES_SHIFTED — FQ self 2.38x→1.44x, FL→FQ 1.73x→1.34x (directions preserved)
+      #   C551: UNCHANGED — mean evenness 0.911→0.916
+      #   C552: MAGNITUDES_SHIFTED — FQ baseline 5.6%→12.5%, PHARMA 1.31x→0.79x
+      #   C556: DIRECTION_SHIFTED — FQ final 1.67x→0.92x (no longer final-biased)
 
     HIGH_IMPACT:
       function: "Major interventions"
       class_count: 3
+      status: "LEGACY — classes absorbed into ENERGY_OPERATOR per C573"
       provenance: "C121"
+      # RETAINED for backward compatibility with C366, C394, C402 which
+      # reference HIGH_IMPACT by name. The 3 HIGH_IMPACT classes are now
+      # part of EN's 18-class taxonomy. Role label no longer in active use.
 
     FLOW_OPERATOR:
       function: "Flow control"
-      class_count: 2
-      provenance: "C121"
+      class_count: 4
+      classes: "{7, 30, 38, 40}"
+      token_share: "4.7% of B (1078 tokens)"
+      provenance: "C121, C562, C582"
+      # INTERNAL STRUCTURE (C586):
+      #   GENUINE_STRUCTURE with hazard/safe split:
+      #   Hazard pair {7, 30}: medial position (mean 0.55), 12.3% final.
+      #     Class 30 (dar/dal) is gateway — precedes hazard events (C542).
+      #   Safe pair {38, 40}: final position (mean 0.81), 55.7% final.
+      #     Class 40 is maximally hazard-distant (C546).
+      #   Mann-Whitney position p=9.4e-20, final rate p=7.3e-33.
+      # HAZARD ROLE (C586):
+      #   FL is hazard-SOURCE — initiates 4.5x more than receives.
+      #   Opposite of EN which is hazard-target.
+      # SUFFIX-DEPLETED (C588):
+      #   2 suffix types (r, dy), 93.8% bare.
+      # PIPELINE PURITY (C584):
+      #   100% PP — all 17 unique MIDDLEs are pipeline-participating.
 
     LINK:
       function: "Monitoring/observation phase marker"
       provenance: "C366"
 
   functional_classification:
-    description: "ICC-based 5-role functional system"
+    description: "ICC-based 5-role functional system (C591: complete taxonomy)"
     roles_mapped:
-      CC: "Core Control (kernel operators + boundary markers)"
-      EN: "Energy Operators (energy modulation, 11 classes)"
-      FL: "Flow Operators (flow control, 2 classes)"
-      FQ: "Frequent Operators (common instructions, 4 classes)"
-      AX: "Auxiliary (scaffold, 20 classes)"
-    provenance: "C547, C548, C549, C550"
+      CC: "Core Control (execution boundaries, 4 classes, 4.4% of B)"
+      EN: "Energy Operators (energy modulation, 18 classes, 31.2% of B)"
+      FL: "Flow Operators (flow control, 4 classes, 4.7% of B)"
+      FQ: "Frequent Operators (common instructions, 4 classes, 12.5% of B)"
+      AX: "Auxiliary (scaffold, 19 classes, 16.6% of B)"
+    provenance: "C547-C550, C573, C581-C583, C591"
     note: |
       ICC classification independently converged on the same role boundaries
       as the original grammar analysis. This validates the role taxonomy
       as structural rather than artifact of classification method.
+
+      Class 14/17 resolved: Class 14 = FQ per ICC + behavioral evidence
+      (C583); Class 17 = CC per C560. AX = 19 classes (corrected from 20).
+    internal_structure:
+      # C589: Structure inversion — small roles are more internally
+      # differentiated than large roles.
+      CC: "GENUINE_STRUCTURE (2 active + 1 ghost, 75% KW significant)"
+      EN: "DISTRIBUTIONAL_CONVERGENCE (C574: grammatically equivalent, lexically partitioned)"
+      FL: "GENUINE_STRUCTURE (hazard/safe split, 100% KW significant)"
+      FQ: "GENUINE_STRUCTURE (3-group: CONNECTOR/PREFIXED_PAIR/CLOSER, C593; 13-14 Jaccard=0.000, C594; internal transitions chi2=111, C595)"
+      AX: "COLLAPSED (positional gradient only, C572)"
+    pipeline_purity:
+      # C584: Near-universal pipeline purity
+      CC: "100% PP"
+      EN: "100% PP (C575)"
+      FL: "100% PP"
+      FQ: "100% PP"
+      AX: "98.2% PP (C567)"
+    suffix_strata:
+      # C588: Suffix role selectivity (chi2=5063.2)
+      SUFFIX_RICH: "EN (17 types, 39% bare)"
+      SUFFIX_MODERATE: "AX (19 types, 62% bare)"
+      SUFFIX_DEPLETED: "FL (2 types, 94% bare), FQ (1 type, 93% bare)"
+      SUFFIX_FREE: "CC (0 types, 100% bare)"
+    hazard_direction:
+      # C586: Roles have distinct hazard directionality
+      FL: "SOURCE-biased (initiates 4.5x more than receives)"
+      EN: "TARGET-biased (absorbs 11/19 corpus forbidden transitions)"
+      FQ: "MIXED (both source and target)"
+      CC: "NON-PARTICIPANT (0% hazard exposure)"
+      AX: "NON-PARTICIPANT (0% hazard exposure)"
 
   note: |
     Role classes are abstract grammar categories.
@@ -715,9 +836,13 @@ disallowed:
     reason: "Closed-loop control only"
     provenance: "C171"
 
-  - interpretation: "20 AX classes represent 20 distinct behavioral modes"
+  - interpretation: "AX classes represent distinct behavioral modes"
     reason: "Classes collapse to ≤2 effective groups; position is sole differentiator"
     provenance: "C572"
+
+  - interpretation: "C559 FQ membership {9,20,21,23} is correct"
+    reason: "Classes 20,21 are AX per C563; correct FQ is {9,13,14,23} per ICC"
+    provenance: "C583, C592"
 
 # ============================================================
 # NON-NORMATIVE ANNOTATIONS
@@ -778,8 +903,36 @@ annotations:
     daiin_trigger_frequency: "highest initial bigram"
     provenance: "C547, C551, C556, C557"
 
+  role_anatomy_statistics:
+    en_classes: 18
+    en_tokens: 7211
+    en_suffix_types: 17
+    en_internal_verdict: "DISTRIBUTIONAL_CONVERGENCE"
+    fl_classes: 4
+    fl_tokens: 1078
+    fl_suffix_types: 2
+    fl_hazard_source_bias: "4.5x"
+    fl_internal_verdict: "GENUINE_STRUCTURE"
+    fq_classes: 4
+    fq_tokens: 2890
+    fq_suffix_types: 1
+    fq_internal_verdict: "GENUINE_STRUCTURE"
+    fq_3group_silhouette: 0.68
+    fq_13_14_jaccard: 0.000
+    fq_transition_chi2: 111.0
+    fq_mean_run_length: 1.19
+    fq_class23_final_rate: "29.8%"
+    cc_classes: 4  # {10, 11, 12, 17} per C560, C581
+    cc_tokens: 1023
+    cc_suffix_types: 0
+    cc_internal_verdict: "GENUINE_STRUCTURE"
+    suffix_selectivity_chi2: 5063.2
+    pipeline_purity: "CC/EN/FL/FQ 100% PP; AX 98.2%"
+    provenance: "C573-C597"
+
   ax_architecture_statistics:
-    ax_token_share: "28.4%"
+    ax_classes: 19
+    ax_token_share: "16.6%"  # corrected: Class 14 removed (FQ), Class 17 removed (CC)
     ax_pp_middle_rate: "98.2%"
     ax_positional_subtypes: 3  # INIT, MED, FINAL
     ax_effective_groups: "≤2"
@@ -889,6 +1042,44 @@ provenance:
     - "C570"   # AX articulator stratification
     - "C571"   # PREFIX as role selector
     - "C572"   # AX class behavioral collapse
+
+  en_anatomy:
+    - "C573"   # EN definitive count (18 classes)
+    - "C574"   # EN distributional convergence
+    - "C575"   # EN 100% pipeline-derived
+    - "C576"   # EN MIDDLE vocabulary bifurcation
+    - "C577"   # EN interleaving content-driven
+    - "C578"   # EN exclusive MIDDLEs (30)
+    - "C579"   # CHSH-first ordering bias
+    - "C580"   # EN trigger profile differentiation
+
+  small_role_anatomy:
+    - "C581"   # CC definitive census
+    - "C582"   # FL definitive census
+    - "C583"   # FQ definitive census
+    - "C584"   # Near-universal pipeline purity
+    - "C585"   # Cross-role MIDDLE sharing
+    - "C586"   # FL hazard-safe split
+    - "C587"   # FQ internal differentiation
+    - "C588"   # Suffix role selectivity
+    - "C589"   # Small role genuine structure
+    - "C590"   # CC positional dichotomy
+    - "C591"   # Five-role complete taxonomy
+    - "C592"   # C559 membership correction
+
+  fq_anatomy:
+    - "C593"   # FQ 3-group structure (CONNECTOR/PREFIXED_PAIR/CLOSER)
+    - "C594"   # FQ 13-14 complete vocabulary bifurcation (Jaccard=0.000)
+    - "C595"   # FQ internal transition grammar (chi2=111)
+    - "C596"   # FQ-FL position-driven symbiosis (hazard p=0.33 NS)
+    - "C597"   # FQ Class 23 boundary dominance (29.8% final)
+
+  sub_role_interaction:
+    - "C598"   # Cross-boundary sub-group structure (8/10 significant)
+    - "C599"   # AX scaffolding routing (AX_FINAL->FQ_CONN)
+    - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO)
+    - "C601"   # Hazard sub-group concentration (FL_HAZ/EN_CHSH/FQ_CONN)
+    - "C602"   # REGIME-conditioned sub-role grammar (4/5 REGIME-dependent)
 
 # ============================================================
 # END OF BCSC

@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 630 constraints | 2026-01-25
+CONSTRAINT_REFERENCE v2.6 | 659 constraints | 2026-01-26
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -620,7 +620,6 @@ C555	**PHARMA Thermal Operator Substitution** (Class 33 0.20x depleted, Class 34
 C556	**ENERGY Medial Concentration** (ENERGY 0.45x initial, 0.50x final - medial-concentrated; FLOW/FREQ 1.65x final; UNCLASS 1.55x initial; lines have positional template; p=3e-89)	2	B	-> C556_energy_medial_concentration.md
 C557	**daiin Line-Initial ENERGY Trigger** (27.7% line-initial rate, 2.2x CC average; 47.1% ENERGY followers; Class 10 singleton; RECIPE 36.3% initial; unique control signal)	2	B	-> C557_daiin_line_opener.md
 C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; daiin initial-biased 27.7%, ol final-biased 9.5%; complementary control primitives)	2	B	-> C558_singleton_class_structure.md
-C559	**FREQUENT Role Structure** (35 tokens, 5.6% corpus; morphologically minimal; 19.6% final-biased; HERBAL 1.62x enriched; Class 9 exception: 16.2% self-chains, NOT final-biased)	2	B	-> C559_frequent_role_structure.md
 C560	**Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived)	2	B	-> C560_class17_ol_derivation.md
 C561	**Class 9 or->aiin Directional Bigram** (87.5% of chains are or->aiin; zero aiin->aiin; directional grammatical unit; HERBAL 21.7% chain rate; refines C559 "self-chaining")	2	B	-> C561_class9_or_aiin_bigram.md
 C562	**FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern)	2	B	-> C562_flow_role_structure.md
@@ -634,3 +633,33 @@ C569	**AX Proportional Scaling** (AX fraction 0.454 vs expected 0.455; R²=0.83;
 C570	**AX PREFIX Derivability** (89.6% binary accuracy; PREFIX is role selector; 22 AX-exclusive prefixes; F1=0.904; same MIDDLE becomes AX or operational via PREFIX)	2	B	-> C570_ax_prefix_derivability.md
 C571	**AX Functional Identity Resolution** (AX = PREFIX-determined default mode of pipeline vocabulary; same MIDDLEs serve as scaffold or operations; PREFIX selects role, MIDDLE carries material)	2	B	-> C571_ax_functional_identity.md
 C572	**AX Class Behavioral Collapse**	2	B	AX_CLASS_BEHAVIOR
+C573	**EN Definitive Count: 18 Classes** (ICC-based: {8, 31-37, 39, 41-49}; resolves BCSC=11 undercount; 7211 tokens = 31.2% of B; Core 6 = 79.5%, Minor 12 = 20.5%)	2	B	-> C573_en_definitive_count.md
+C574	**EN Distributional Convergence** (k=2 silhouette 0.180; QO/CHSH identical positions, REGIME, context (JS=0.0024); but MIDDLE Jaccard=0.133, trigger chi2=134; grammatically equivalent, lexically partitioned; C276/C423 within single role)	2	B	-> C574_en_behavioral_collapse.md
+C575	**EN is 100% Pipeline-Derived** (64 unique MIDDLEs, all PP; 0 RI, 0 B-exclusive; even purer than AX's 98.2% PP; vocabulary entirely inherited from Currier A)	2	B	-> C575_en_pipeline_derived.md
+C576	**EN MIDDLE Vocabulary Bifurcation by Prefix** (QO uses 25 MIDDLEs, CHSH uses 43; only 8 shared, Jaccard=0.133; PREFIX selects MIDDLE subvocabulary, not grammatical function)	2	B	-> C576_en_middle_bifurcation.md
+C577	**EN Interleaving is Content-Driven** (QO/CHSH same positions p=0.104; BIO 58.5%, PHARMA 27.5%; alternation is material-type selection, not positional)	2	B	-> C577_en_interleaving_content_driven.md
+C578	**EN Has 30 Exclusive MIDDLEs** (46.9% of EN vocabulary; not shared with AX, CC, FL, or FQ; dedicated content subvocabulary within pipeline)	2	B	-> C578_en_exclusive_middles.md
+C579	**CHSH-First Ordering Bias** (53.9% CHSH-first in mixed lines; p=0.010, n=1130; modest but significant asymmetry)	2	B	-> C579_chsh_first_ordering.md
+C580	**EN Trigger Profile Differentiation** (CHSH triggered by AX 32.5%, CC 11%; QO triggered by EN-self 53.5%, boundary 68.8%; chi2=134, p<0.001)	2	B	-> C580_en_trigger_profiles.md
+C581	**CC Definitive Census** (CC={10,11,12,17}; 1023 tokens, 4.4% of B; Classes 10,11 active, 12 ghost (zero tokens per C540), 17 ol-derived per C560)	2	B	-> C581_cc_definitive_census.md
+C582	**FL Definitive Census** (FL={7,30,38,40}; 1078 tokens, 4.7% of B; 4 classes confirmed vs BCSC=2; hazard pair {7,30} + safe pair {38,40})	2	B	-> C582_fl_definitive_census.md
+C583	**FQ Definitive Census** (FQ={9,13,14,23}; 2890 tokens, 12.5% of B; supersedes C559's {9,20,21,23}; Classes 20,21 are AX per C563)	2	B	-> C583_fq_definitive_census.md
+C584	**Near-Universal Pipeline Purity** (CC/EN/FL/FQ all 100% PP; AX 98.2% per C567; pipeline vocabulary dominates all roles; operational roles pure, scaffold near-pure)	2	B	-> C584_near_universal_pipeline_purity.md
+C585	**Cross-Role MIDDLE Sharing** (EN-AX Jaccard=0.400; EN 30 exclusive MIDDLEs; CC/FL/FQ 0-5 exclusive; small roles share heavily with EN/AX; vocabulary partition follows role hierarchy)	2	B	-> C585_cross_role_middle_sharing.md
+C586	**FL Hazard-Safe Split** (hazard {7,30} vs safe {38,40}; position p=9.4e-20; final rate p=7.3e-33; FL source-biased 4.5x; Class 30 gateway, Class 40 maximally hazard-distant)	2	B	-> C586_fl_hazard_safe_split.md
+C587	**FQ Internal Differentiation** (4-way genuine structure, 100% KW significance; Class 9 medial self-chaining; 13/14 ok/ot-prefixed large medial; 23 minimal final-biased)	2	B	-> C587_fq_internal_differentiation.md
+C588	**Suffix Role Selectivity** (chi2=5063.2, p<0.001; EN 17 suffix types 61% suffixed; CC 100% suffix-free; FL/FQ ~93% suffix-free; AX intermediate 38%; three-tier suffix structure)	2	B	-> C588_suffix_role_selectivity.md
+C589	**Small Role Genuine Structure** (CC, FL, FQ all GENUINE_STRUCTURE; CC 75%, FL 100%, FQ 100% KW features significant; contrasts AX COLLAPSED and EN CONVERGENCE)	2	B	-> C589_small_role_genuine_structure.md
+C590	**CC Positional Dichotomy** (Class 10 daiin initial-biased mean=0.41; Class 11 ol medial-biased mean=0.51; p=2.8e-5; complementary control primitives)	2	B	-> C590_cc_positional_dichotomy.md
+C591	**Five-Role Complete Taxonomy** (49 classes → 5 roles: EN=18, AX=19, FQ=4, CC=4, FL=4; complete partition; each role has distinct suffix, position, hazard, section, REGIME profile)	2	B	-> C591_five_role_complete_taxonomy.md
+C592	**C559 Membership Correction** (C559 used {9,20,21,23} for FQ; correct is {9,13,14,23}; C559 SUPERSEDED; downstream C550/C551/C552/C556 flagged for re-verification with corrected membership)	2	B	-> C592_c559_membership_correction.md
+C593	**FQ 3-Group Structure** ({9} connector, {13,14} prefixed-pair, {23} closer; k=3 silhouette 0.68; PC1=position 64.2%, PC2=morphology 28.2%; BARE=HAZARDOUS, PREFIXED=SAFE perfect overlap)	2	B	-> C593_fq_3group_structure.md
+C594	**FQ 13-14 Complete Vocabulary Bifurcation** (Jaccard=0.000, zero shared MIDDLEs; 13: {aiin,ain,e,edy,eey,eol} 18.2% suffixed; 14: {al,am,ar,ey,ol,or,y} 0% suffixed; sharper than EN C576)	2	B	-> C594_fq_13_14_vocabulary_bifurcation.md
+C595	**FQ Internal Transition Grammar** (chi2=111 p<0.0001; 23→9 enriched 2.85x; 9→13 ratio 4.6:1; all self-chain; 2×2 BARE/PREFIXED chi2=69.7; sequential structure not random mixing)	2	B	-> C595_fq_internal_transition_grammar.md
+C596	**FQ-FL Position-Driven Symbiosis** (chi2=20.5 p=0.015; hazard alignment p=0.33 NS; FL7→FQ9 medial, FL30→FQ13/14 final; symbiosis is positional not hazard-mediated)	2	B	-> C596_fq_fl_position_driven_symbiosis.md
+C597	**FQ Class 23 Boundary Dominance** (29.8% final rate, 39% of FQ finals despite 12.5% token share; 12.2% initial; mean run length 1.19, 84% singletons; boundary specialist)	2	B	-> C597_fq_class23_boundary_dominance.md
+C598	**Cross-Boundary Sub-Group Structure** (8/10 pairs significant; FQ_CONN->EN_CHSH 1.41x, FQ_CONN->EN_QO 0.16x; sub-group routing visible across role boundaries)	2	B	-> C598_cross_boundary_subgroup_structure.md
+C599	**AX Scaffolding Routing** (chi2=48.3 p=3.9e-4; AX_FINAL avoids EN_QO 0.59x, feeds FQ_CONN 1.31x; AX is routing mechanism not neutral frame)	2	B	-> C599_ax_scaffolding_routing.md
+C600	**CC Trigger Sub-Group Selectivity** (chi2=129.2 p=9.6e-21; daiin/ol trigger EN_CHSH 1.60-1.74x, avoid EN_QO 0.18x; ol-derived reverses: EN_QO 1.39x)	2	B	-> C600_cc_trigger_subgroup_selectivity.md
+C601	**Hazard Sub-Group Concentration** (19 events from 3 source sub-groups: FL_HAZ/EN_CHSH/FQ_CONN; EN_CHSH absorbs 58%; QO never participates)	2	B	-> C601_hazard_subgroup_concentration.md
+C602	**REGIME-Conditioned Sub-Role Grammar** (4/5 pairs REGIME-dependent; AX->FQ REGIME-independent; core routing invariant, magnitudes shift by REGIME)	2	B	-> C602_regime_conditioned_subrole_grammar.md

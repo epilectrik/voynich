@@ -1,12 +1,12 @@
 # C556: ENERGY Medial Concentration
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+**Tier:** 2 | **Status:** CLOSED | **Scope:** B | **Re-verified:** FQ_ANATOMY (DIRECTION_SHIFTED)
 
 ---
 
 ## Statement
 
-> ENERGY operators are medial-concentrated, avoiding both line boundaries: 0.45x initial enrichment, 0.50x final enrichment. Lines have positional grammar: UNCLASSIFIED/AUXILIARY open (1.55x, 0.97x), FLOW/FREQUENT close (1.65x, 1.67x), ENERGY operates in centers. Chi-square p=3e-89 confirms significant positional bias.
+> ENERGY operators are medial-concentrated, avoiding both line boundaries: 0.45x initial enrichment, 0.50x final enrichment. Lines have positional grammar: UNCLASSIFIED/AUXILIARY open (1.55x, 0.97x), FLOW closes (1.18x final), ENERGY operates in centers. Chi-square p=3e-89 confirms significant positional bias. *(FQ positional enrichment corrected: 0.92x final, position-neutral — see Re-Verification section.)*
 
 ---
 
@@ -21,7 +21,7 @@
 | CORE_CONTROL | 5.1% | 3.8% | 4.4% | 1.16x | 0.85x | Initial |
 | **ENERGY** | 11.2% | 12.4% | 24.8% | **0.45x** | **0.50x** | **Medial** |
 | FLOW | 3.5% | 7.7% | 4.7% | 0.74x | **1.65x** | Final |
-| FREQUENT | 3.9% | 9.4% | 5.6% | 0.70x | **1.67x** | Final |
+| FREQUENT | 3.9% | 9.4% | 12.5% | 0.39x | 0.92x | ~~Final~~ Neutral* |
 | AUXILIARY | 29.2% | 23.6% | 30.0% | 0.97x | 0.79x | Initial |
 | UNCLASSIFIED | 47.1% | 43.3% | 30.5% | **1.55x** | 1.42x | Initial |
 
@@ -104,6 +104,24 @@ If lines are control blocks:
 - **Phase:** CLASS_SEMANTIC_VALIDATION
 - **Date:** 2026-01-25
 - **Script:** line_initial_patterns.py
+
+---
+
+## Re-Verification (FQ_ANATOMY, 2026-01-26)
+
+**Verdict:** DIRECTION_SHIFTED — FQ final enrichment changes from 1.67x (final-biased) to 0.92x (position-neutral).
+
+| Metric | Old (FQ={9,20,21,23}) | New (FQ={9,13,14,23}) | Change |
+|--------|----------------------|----------------------|--------|
+| FQ initial enrichment | 0.70x | 0.39x | Increased depletion |
+| FQ final enrichment | **1.67x** | **0.92x** | **DIRECTION CHANGE** |
+| FQ token count | 1,301 | 2,890 | +122% |
+
+**Critical correction:** The old FQ included AX_FINAL classes (20, 21) which were strongly final-biased. This inflated FQ's apparent final enrichment to 1.67x. The corrected FQ is position-neutral (0.92x final), consistent with FQ being predominantly a medial role. The final-biased behavior comes from Class 23 alone (29.8% final rate, C597), not from FQ as a whole.
+
+**Statement update:** The original claim "FLOW/FREQUENT 1.65x, 1.67x final" should read "FLOW 1.18x final; FQ 0.92x final (position-neutral)." The FQ column in the positional enrichment table is no longer final-biased. ENERGY medial concentration (the primary claim) is unaffected.
+
+**Source:** `phases/FQ_ANATOMY/scripts/fq_upstream_reverify.py`
 
 ---
 
