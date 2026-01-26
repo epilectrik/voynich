@@ -1,0 +1,272 @@
+{
+  "section_tokens": {
+    "HERBAL_B": 1818,
+    "PHARMA": 317,
+    "BIO": 5324,
+    "RECIPE_B": 8467,
+    "RECIPE_A": 128
+  },
+  "role_by_section": {
+    "BIO": {
+      "CC": 8.696468820435763,
+      "EN": 45.1915852742299,
+      "FL": 4.958677685950414,
+      "FQ": 6.1607813673929375,
+      "AX": 34.99248685199098
+    },
+    "HERBAL_B": {
+      "CC": 5.555555555555555,
+      "EN": 25.687568756875688,
+      "FL": 8.855885588558856,
+      "FQ": 13.476347634763478,
+      "AX": 46.424642464246425
+    },
+    "PHARMA": {
+      "CC": 5.993690851735016,
+      "EN": 30.28391167192429,
+      "FL": 10.725552050473187,
+      "FQ": 12.302839116719243,
+      "AX": 40.694006309148264
+    },
+    "RECIPE_A": {
+      "CC": 9.375,
+      "EN": 25.78125,
+      "FL": 6.25,
+      "FQ": 13.28125,
+      "AX": 45.3125
+    },
+    "RECIPE_B": {
+      "CC": 5.05491909767332,
+      "EN": 32.24282508562655,
+      "FL": 7.2162513286878465,
+      "FQ": 7.9366954056926895,
+      "AX": 47.549309082319596
+    }
+  },
+  "baseline": {
+    "CC": 6.3722436775881395,
+    "EN": 35.704497321539804,
+    "FL": 6.714837423695029,
+    "FQ": 8.103899339728416,
+    "AX": 43.10452223744861
+  },
+  "section_signatures": {
+    "BIO": {
+      "enrichments": {
+        "CC": 1.3647420375686778,
+        "EN": 1.2657112874956156,
+        "FL": 0.7384657845106488,
+        "FQ": 0.760224320308426,
+        "AX": 0.8118054680951781
+      },
+      "signature": "+CC -FL"
+    },
+    "HERBAL_B": {
+      "enrichments": {
+        "CC": 0.8718366460301945,
+        "EN": 0.7194491082046097,
+        "FL": 1.318853313902819,
+        "FQ": 1.6629460793888768,
+        "AX": 1.0770248701170695
+      },
+      "signature": "+FQ -EN"
+    },
+    "PHARMA": {
+      "enrichments": {
+        "CC": 0.9405934793133328,
+        "EN": 0.8481819922907755,
+        "FL": 1.5972913972012668,
+        "FQ": 1.5181381950792523,
+        "AX": 0.9440774238252402
+      },
+      "signature": "+FL"
+    },
+    "RECIPE_A": {
+      "enrichments": {
+        "CC": 1.4712243401759533,
+        "EN": 0.7220729021284019,
+        "FL": 0.930774582560297,
+        "FQ": 1.6388715411222137,
+        "AX": 1.0512238078034681
+      },
+      "signature": "+FQ -EN"
+    },
+    "RECIPE_B": {
+      "enrichments": {
+        "CC": 0.7932714681725072,
+        "EN": 0.9030466048929668,
+        "FL": 1.074672530897539,
+        "FQ": 0.97936747150646,
+        "AX": 1.103116485560056
+      },
+      "signature": "-CC"
+    }
+  },
+  "specialists": [
+    {
+      "class": 23,
+      "role": "FQ",
+      "section": "PHARMA",
+      "observed": 23,
+      "expected": 7.148000498318177,
+      "enrichment": 3.217683043728323
+    },
+    {
+      "class": 19,
+      "role": "AX",
+      "section": "HERBAL_B",
+      "observed": 21,
+      "expected": 8.37996760931855,
+      "enrichment": 2.505976273303006
+    },
+    {
+      "class": 37,
+      "role": "AX",
+      "section": "HERBAL_B",
+      "observed": 13,
+      "expected": 5.888625887629251,
+      "enrichment": 2.2076457645764576
+    },
+    {
+      "class": 23,
+      "role": "FQ",
+      "section": "HERBAL_B",
+      "observed": 85,
+      "expected": 40.9938956023421,
+      "enrichment": 2.073479447392253
+    },
+    {
+      "class": 10,
+      "role": "CC",
+      "section": "PHARMA",
+      "observed": 12,
+      "expected": 6.200199327270462,
+      "enrichment": 1.935421648013824
+    },
+    {
+      "class": 27,
+      "role": "AX",
+      "section": "HERBAL_B",
+      "observed": 46,
+      "expected": 24.007474772642333,
+      "enrichment": 1.9160699088776803
+    },
+    {
+      "class": 34,
+      "role": "EN",
+      "section": "PHARMA",
+      "observed": 41,
+      "expected": 21.582222499065654,
+      "enrichment": 1.8997116725015224
+    },
+    {
+      "class": 30,
+      "role": "FL",
+      "section": "PHARMA",
+      "observed": 19,
+      "expected": 10.30733773514389,
+      "enrichment": 1.8433469910680833
+    },
+    {
+      "class": 40,
+      "role": "FL",
+      "section": "HERBAL_B",
+      "observed": 15,
+      "expected": 8.153481998255886,
+      "enrichment": 1.8397048038137147
+    },
+    {
+      "class": 9,
+      "role": "FQ",
+      "section": "HERBAL_B",
+      "observed": 129,
+      "expected": 71.342967484739,
+      "enrichment": 1.8081670071769083
+    },
+    {
+      "class": 14,
+      "role": "AX",
+      "section": "RECIPE_A",
+      "observed": 10,
+      "expected": 5.636975208670736,
+      "enrichment": 1.7740010608203678
+    },
+    {
+      "class": 35,
+      "role": "AX",
+      "section": "PHARMA",
+      "observed": 9,
+      "expected": 5.074685436651302,
+      "enrichment": 1.7735089420515777
+    },
+    {
+      "class": 25,
+      "role": "AX",
+      "section": "BIO",
+      "observed": 61,
+      "expected": 34.821228354304225,
+      "enrichment": 1.7518049443669277
+    },
+    {
+      "class": 10,
+      "role": "CC",
+      "section": "HERBAL_B",
+      "observed": 62,
+      "expected": 35.558240936838175,
+      "enrichment": 1.7436183108756733
+    },
+    {
+      "class": 32,
+      "role": "EN",
+      "section": "BIO",
+      "observed": 433,
+      "expected": 252.70262862837924,
+      "enrichment": 1.7134764380973788
+    },
+    {
+      "class": 11,
+      "role": "CC",
+      "section": "BIO",
+      "observed": 233,
+      "expected": 139.61654416344834,
+      "enrichment": 1.668856663055835
+    },
+    {
+      "class": 15,
+      "role": "AX",
+      "section": "BIO",
+      "observed": 37,
+      "expected": 22.550890743739878,
+      "enrichment": 1.6407334158306448
+    },
+    {
+      "class": 9,
+      "role": "FQ",
+      "section": "RECIPE_A",
+      "observed": 8,
+      "expected": 5.023047215647191,
+      "enrichment": 1.59265873015873
+    },
+    {
+      "class": 15,
+      "role": "AX",
+      "section": "HERBAL_B",
+      "observed": 12,
+      "expected": 7.700510776130559,
+      "enrichment": 1.5583381867598525
+    },
+    {
+      "class": 17,
+      "role": "CC",
+      "section": "BIO",
+      "observed": 147,
+      "expected": 95.509654914663,
+      "enrichment": 1.5391114137240172
+    }
+  ],
+  "chi2_test": {
+    "chi2": 565.7868220390015,
+    "p": 4.080597663178193e-110,
+    "cramers_v": 0.09386523871541812
+  }
+}

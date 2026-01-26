@@ -1,0 +1,755 @@
+{
+  "metadata": {
+    "phase": 3,
+    "description": "Animal folio reception analysis",
+    "animal_middles_used": 120,
+    "enriched_middles_used": 15,
+    "b_folios_analyzed": 82
+  },
+  "statistics": {
+    "reception_rate_mean": 0.5848303122292955,
+    "reception_rate_std": 0.11148307457519269,
+    "reception_rate_min": 0.36551724137931035,
+    "reception_rate_max": 0.8571428571428571,
+    "enriched_rate_mean": 0.049893586649653696,
+    "enriched_rate_std": 0.01869898504083393,
+    "top_bottom_ratio": 1.8007179148769148,
+    "top_bottom_p_value": 1.105335632303695e-14,
+    "enriched_top_bottom_p_value": 0.32777509400029947
+  },
+  "high_reception_threshold": 0.6405718495168918,
+  "high_reception_folios": [
+    {
+      "folio": "f33v",
+      "reception_rate": 0.8571428571428571,
+      "enriched_rate": 0.02857142857142857,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f95r2",
+      "reception_rate": 0.8333333333333334,
+      "enriched_rate": 0.05555555555555555,
+      "section": "recipe"
+    },
+    {
+      "folio": "f40v",
+      "reception_rate": 0.8205128205128205,
+      "enriched_rate": 0.05128205128205128,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f41v",
+      "reception_rate": 0.8055555555555556,
+      "enriched_rate": 0.08333333333333333,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f94v",
+      "reception_rate": 0.782608695652174,
+      "enriched_rate": 0.043478260869565216,
+      "section": "recipe"
+    },
+    {
+      "folio": "f95r1",
+      "reception_rate": 0.7631578947368421,
+      "enriched_rate": 0.05263157894736842,
+      "section": "recipe"
+    },
+    {
+      "folio": "f34v",
+      "reception_rate": 0.76,
+      "enriched_rate": 0.04,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f48v",
+      "reception_rate": 0.76,
+      "enriched_rate": 0.06,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f95v2",
+      "reception_rate": 0.7586206896551724,
+      "enriched_rate": 0.06896551724137931,
+      "section": "recipe"
+    },
+    {
+      "folio": "f33r",
+      "reception_rate": 0.75,
+      "enriched_rate": 0.027777777777777776,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f40r",
+      "reception_rate": 0.7435897435897436,
+      "enriched_rate": 0.02564102564102564,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f34r",
+      "reception_rate": 0.7213114754098361,
+      "enriched_rate": 0.04918032786885246,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f94r",
+      "reception_rate": 0.717391304347826,
+      "enriched_rate": 0.043478260869565216,
+      "section": "recipe"
+    },
+    {
+      "folio": "f55r",
+      "reception_rate": 0.7058823529411765,
+      "enriched_rate": 0.058823529411764705,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f39v",
+      "reception_rate": 0.7,
+      "enriched_rate": 0.04,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f50v",
+      "reception_rate": 0.6888888888888889,
+      "enriched_rate": 0.044444444444444446,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f55v",
+      "reception_rate": 0.6888888888888889,
+      "enriched_rate": 0.022222222222222223,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f48r",
+      "reception_rate": 0.6730769230769231,
+      "enriched_rate": 0.057692307692307696,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f31v",
+      "reception_rate": 0.6595744680851063,
+      "enriched_rate": 0.0425531914893617,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f43v",
+      "reception_rate": 0.65625,
+      "enriched_rate": 0.03125,
+      "section": "herbal_b"
+    },
+    {
+      "folio": "f85r2",
+      "reception_rate": 0.6515151515151515,
+      "enriched_rate": 0.045454545454545456,
+      "section": "recipe"
+    },
+    {
+      "folio": "f81r",
+      "reception_rate": 0.6481481481481481,
+      "enriched_rate": 0.09259259259259259,
+      "section": "astro"
+    },
+    {
+      "folio": "f26v",
+      "reception_rate": 0.6458333333333334,
+      "enriched_rate": 0.0625,
+      "section": "herbal_b"
+    }
+  ],
+  "section_analysis": {
+    "herbal_b": {
+      "mean_reception": 0.6856306129735826,
+      "count": 24
+    },
+    "pharma": {
+      "mean_reception": 0.5831581897155668,
+      "count": 3
+    },
+    "astro": {
+      "mean_reception": 0.5521272795753397,
+      "count": 20
+    },
+    "recipe": {
+      "mean_reception": 0.5345408780223639,
+      "count": 35
+    }
+  },
+  "all_folios": {
+    "f33v": {
+      "reception_rate": 0.8571428571428571,
+      "enriched_rate": 0.02857142857142857,
+      "animal_compatible": 30,
+      "total_middles": 35,
+      "enriched_present": 1
+    },
+    "f95r2": {
+      "reception_rate": 0.8333333333333334,
+      "enriched_rate": 0.05555555555555555,
+      "animal_compatible": 30,
+      "total_middles": 36,
+      "enriched_present": 2
+    },
+    "f40v": {
+      "reception_rate": 0.8205128205128205,
+      "enriched_rate": 0.05128205128205128,
+      "animal_compatible": 32,
+      "total_middles": 39,
+      "enriched_present": 2
+    },
+    "f41v": {
+      "reception_rate": 0.8055555555555556,
+      "enriched_rate": 0.08333333333333333,
+      "animal_compatible": 29,
+      "total_middles": 36,
+      "enriched_present": 3
+    },
+    "f94v": {
+      "reception_rate": 0.782608695652174,
+      "enriched_rate": 0.043478260869565216,
+      "animal_compatible": 36,
+      "total_middles": 46,
+      "enriched_present": 2
+    },
+    "f95r1": {
+      "reception_rate": 0.7631578947368421,
+      "enriched_rate": 0.05263157894736842,
+      "animal_compatible": 29,
+      "total_middles": 38,
+      "enriched_present": 2
+    },
+    "f34v": {
+      "reception_rate": 0.76,
+      "enriched_rate": 0.04,
+      "animal_compatible": 38,
+      "total_middles": 50,
+      "enriched_present": 2
+    },
+    "f48v": {
+      "reception_rate": 0.76,
+      "enriched_rate": 0.06,
+      "animal_compatible": 38,
+      "total_middles": 50,
+      "enriched_present": 3
+    },
+    "f95v2": {
+      "reception_rate": 0.7586206896551724,
+      "enriched_rate": 0.06896551724137931,
+      "animal_compatible": 22,
+      "total_middles": 29,
+      "enriched_present": 2
+    },
+    "f33r": {
+      "reception_rate": 0.75,
+      "enriched_rate": 0.027777777777777776,
+      "animal_compatible": 27,
+      "total_middles": 36,
+      "enriched_present": 1
+    },
+    "f40r": {
+      "reception_rate": 0.7435897435897436,
+      "enriched_rate": 0.02564102564102564,
+      "animal_compatible": 29,
+      "total_middles": 39,
+      "enriched_present": 1
+    },
+    "f34r": {
+      "reception_rate": 0.7213114754098361,
+      "enriched_rate": 0.04918032786885246,
+      "animal_compatible": 44,
+      "total_middles": 61,
+      "enriched_present": 3
+    },
+    "f94r": {
+      "reception_rate": 0.717391304347826,
+      "enriched_rate": 0.043478260869565216,
+      "animal_compatible": 33,
+      "total_middles": 46,
+      "enriched_present": 2
+    },
+    "f55r": {
+      "reception_rate": 0.7058823529411765,
+      "enriched_rate": 0.058823529411764705,
+      "animal_compatible": 36,
+      "total_middles": 51,
+      "enriched_present": 3
+    },
+    "f39v": {
+      "reception_rate": 0.7,
+      "enriched_rate": 0.04,
+      "animal_compatible": 35,
+      "total_middles": 50,
+      "enriched_present": 2
+    },
+    "f50v": {
+      "reception_rate": 0.6888888888888889,
+      "enriched_rate": 0.044444444444444446,
+      "animal_compatible": 31,
+      "total_middles": 45,
+      "enriched_present": 2
+    },
+    "f55v": {
+      "reception_rate": 0.6888888888888889,
+      "enriched_rate": 0.022222222222222223,
+      "animal_compatible": 31,
+      "total_middles": 45,
+      "enriched_present": 1
+    },
+    "f48r": {
+      "reception_rate": 0.6730769230769231,
+      "enriched_rate": 0.057692307692307696,
+      "animal_compatible": 35,
+      "total_middles": 52,
+      "enriched_present": 3
+    },
+    "f31v": {
+      "reception_rate": 0.6595744680851063,
+      "enriched_rate": 0.0425531914893617,
+      "animal_compatible": 31,
+      "total_middles": 47,
+      "enriched_present": 2
+    },
+    "f43v": {
+      "reception_rate": 0.65625,
+      "enriched_rate": 0.03125,
+      "animal_compatible": 42,
+      "total_middles": 64,
+      "enriched_present": 2
+    },
+    "f85r2": {
+      "reception_rate": 0.6515151515151515,
+      "enriched_rate": 0.045454545454545456,
+      "animal_compatible": 43,
+      "total_middles": 66,
+      "enriched_present": 3
+    },
+    "f81r": {
+      "reception_rate": 0.6481481481481481,
+      "enriched_rate": 0.09259259259259259,
+      "animal_compatible": 35,
+      "total_middles": 54,
+      "enriched_present": 5
+    },
+    "f26v": {
+      "reception_rate": 0.6458333333333334,
+      "enriched_rate": 0.0625,
+      "animal_compatible": 31,
+      "total_middles": 48,
+      "enriched_present": 3
+    },
+    "f79r": {
+      "reception_rate": 0.64,
+      "enriched_rate": 0.04,
+      "animal_compatible": 48,
+      "total_middles": 75,
+      "enriched_present": 3
+    },
+    "f57r": {
+      "reception_rate": 0.639344262295082,
+      "enriched_rate": 0.09836065573770492,
+      "animal_compatible": 39,
+      "total_middles": 61,
+      "enriched_present": 6
+    },
+    "f31r": {
+      "reception_rate": 0.6304347826086957,
+      "enriched_rate": 0.043478260869565216,
+      "animal_compatible": 29,
+      "total_middles": 46,
+      "enriched_present": 2
+    },
+    "f78v": {
+      "reception_rate": 0.6271186440677966,
+      "enriched_rate": 0.05084745762711865,
+      "animal_compatible": 37,
+      "total_middles": 59,
+      "enriched_present": 3
+    },
+    "f39r": {
+      "reception_rate": 0.625,
+      "enriched_rate": 0.015625,
+      "animal_compatible": 40,
+      "total_middles": 64,
+      "enriched_present": 1
+    },
+    "f84v": {
+      "reception_rate": 0.625,
+      "enriched_rate": 0.015625,
+      "animal_compatible": 40,
+      "total_middles": 64,
+      "enriched_present": 1
+    },
+    "f66v": {
+      "reception_rate": 0.6229508196721312,
+      "enriched_rate": 0.06557377049180328,
+      "animal_compatible": 38,
+      "total_middles": 61,
+      "enriched_present": 4
+    },
+    "f26r": {
+      "reception_rate": 0.6190476190476191,
+      "enriched_rate": 0.023809523809523808,
+      "animal_compatible": 26,
+      "total_middles": 42,
+      "enriched_present": 1
+    },
+    "f46v": {
+      "reception_rate": 0.6153846153846154,
+      "enriched_rate": 0.019230769230769232,
+      "animal_compatible": 32,
+      "total_middles": 52,
+      "enriched_present": 1
+    },
+    "f75r": {
+      "reception_rate": 0.6060606060606061,
+      "enriched_rate": 0.030303030303030304,
+      "animal_compatible": 40,
+      "total_middles": 66,
+      "enriched_present": 2
+    },
+    "f50r": {
+      "reception_rate": 0.6046511627906976,
+      "enriched_rate": 0.023255813953488372,
+      "animal_compatible": 26,
+      "total_middles": 43,
+      "enriched_present": 1
+    },
+    "f86v5": {
+      "reception_rate": 0.5978260869565217,
+      "enriched_rate": 0.08695652173913043,
+      "animal_compatible": 55,
+      "total_middles": 92,
+      "enriched_present": 8
+    },
+    "f86v4": {
+      "reception_rate": 0.5975609756097561,
+      "enriched_rate": 0.07317073170731707,
+      "animal_compatible": 49,
+      "total_middles": 82,
+      "enriched_present": 6
+    },
+    "f84r": {
+      "reception_rate": 0.5942028985507246,
+      "enriched_rate": 0.057971014492753624,
+      "animal_compatible": 41,
+      "total_middles": 69,
+      "enriched_present": 4
+    },
+    "f80v": {
+      "reception_rate": 0.59375,
+      "enriched_rate": 0.046875,
+      "animal_compatible": 38,
+      "total_middles": 64,
+      "enriched_present": 3
+    },
+    "f95v1": {
+      "reception_rate": 0.5882352941176471,
+      "enriched_rate": 0.0196078431372549,
+      "animal_compatible": 30,
+      "total_middles": 51,
+      "enriched_present": 1
+    },
+    "f81v": {
+      "reception_rate": 0.582089552238806,
+      "enriched_rate": 0.04477611940298507,
+      "animal_compatible": 39,
+      "total_middles": 67,
+      "enriched_present": 3
+    },
+    "f41r": {
+      "reception_rate": 0.5769230769230769,
+      "enriched_rate": 0.038461538461538464,
+      "animal_compatible": 30,
+      "total_middles": 52,
+      "enriched_present": 2
+    },
+    "f43r": {
+      "reception_rate": 0.5757575757575758,
+      "enriched_rate": 0.030303030303030304,
+      "animal_compatible": 38,
+      "total_middles": 66,
+      "enriched_present": 2
+    },
+    "f46r": {
+      "reception_rate": 0.5714285714285714,
+      "enriched_rate": 0.02857142857142857,
+      "animal_compatible": 40,
+      "total_middles": 70,
+      "enriched_present": 2
+    },
+    "f77v": {
+      "reception_rate": 0.5633802816901409,
+      "enriched_rate": 0.014084507042253521,
+      "animal_compatible": 40,
+      "total_middles": 71,
+      "enriched_present": 1
+    },
+    "f78r": {
+      "reception_rate": 0.5633802816901409,
+      "enriched_rate": 0.056338028169014086,
+      "animal_compatible": 40,
+      "total_middles": 71,
+      "enriched_present": 4
+    },
+    "f86v3": {
+      "reception_rate": 0.5476190476190477,
+      "enriched_rate": 0.08333333333333333,
+      "animal_compatible": 46,
+      "total_middles": 84,
+      "enriched_present": 7
+    },
+    "f112r": {
+      "reception_rate": 0.5471698113207547,
+      "enriched_rate": 0.0660377358490566,
+      "animal_compatible": 58,
+      "total_middles": 106,
+      "enriched_present": 7
+    },
+    "f82r": {
+      "reception_rate": 0.546875,
+      "enriched_rate": 0.046875,
+      "animal_compatible": 35,
+      "total_middles": 64,
+      "enriched_present": 3
+    },
+    "f77r": {
+      "reception_rate": 0.5454545454545454,
+      "enriched_rate": 0.05194805194805195,
+      "animal_compatible": 42,
+      "total_middles": 77,
+      "enriched_present": 4
+    },
+    "f112v": {
+      "reception_rate": 0.5188679245283019,
+      "enriched_rate": 0.05660377358490566,
+      "animal_compatible": 55,
+      "total_middles": 106,
+      "enriched_present": 6
+    },
+    "f106v": {
+      "reception_rate": 0.5169491525423728,
+      "enriched_rate": 0.059322033898305086,
+      "animal_compatible": 61,
+      "total_middles": 118,
+      "enriched_present": 7
+    },
+    "f103v": {
+      "reception_rate": 0.5168539325842697,
+      "enriched_rate": 0.056179775280898875,
+      "animal_compatible": 46,
+      "total_middles": 89,
+      "enriched_present": 5
+    },
+    "f82v": {
+      "reception_rate": 0.5063291139240507,
+      "enriched_rate": 0.02531645569620253,
+      "animal_compatible": 40,
+      "total_middles": 79,
+      "enriched_present": 2
+    },
+    "f107v": {
+      "reception_rate": 0.5052631578947369,
+      "enriched_rate": 0.042105263157894736,
+      "animal_compatible": 48,
+      "total_middles": 95,
+      "enriched_present": 4
+    },
+    "f104v": {
+      "reception_rate": 0.5038759689922481,
+      "enriched_rate": 0.06976744186046512,
+      "animal_compatible": 65,
+      "total_middles": 129,
+      "enriched_present": 9
+    },
+    "f80r": {
+      "reception_rate": 0.5,
+      "enriched_rate": 0.04878048780487805,
+      "animal_compatible": 41,
+      "total_middles": 82,
+      "enriched_present": 4
+    },
+    "f114v": {
+      "reception_rate": 0.5,
+      "enriched_rate": 0.09166666666666666,
+      "animal_compatible": 60,
+      "total_middles": 120,
+      "enriched_present": 11
+    },
+    "f107r": {
+      "reception_rate": 0.4957983193277311,
+      "enriched_rate": 0.05042016806722689,
+      "animal_compatible": 59,
+      "total_middles": 119,
+      "enriched_present": 6
+    },
+    "f108r": {
+      "reception_rate": 0.49107142857142855,
+      "enriched_rate": 0.05357142857142857,
+      "animal_compatible": 55,
+      "total_middles": 112,
+      "enriched_present": 6
+    },
+    "f76r": {
+      "reception_rate": 0.4895833333333333,
+      "enriched_rate": 0.0625,
+      "animal_compatible": 47,
+      "total_middles": 96,
+      "enriched_present": 6
+    },
+    "f116r": {
+      "reception_rate": 0.48936170212765956,
+      "enriched_rate": 0.0425531914893617,
+      "animal_compatible": 46,
+      "total_middles": 94,
+      "enriched_present": 4
+    },
+    "f115r": {
+      "reception_rate": 0.48905109489051096,
+      "enriched_rate": 0.08759124087591241,
+      "animal_compatible": 67,
+      "total_middles": 137,
+      "enriched_present": 12
+    },
+    "f83r": {
+      "reception_rate": 0.4888888888888889,
+      "enriched_rate": 0.05555555555555555,
+      "animal_compatible": 44,
+      "total_middles": 90,
+      "enriched_present": 5
+    },
+    "f115v": {
+      "reception_rate": 0.4881889763779528,
+      "enriched_rate": 0.06299212598425197,
+      "animal_compatible": 62,
+      "total_middles": 127,
+      "enriched_present": 8
+    },
+    "f66r": {
+      "reception_rate": 0.48717948717948717,
+      "enriched_rate": 0.06837606837606838,
+      "animal_compatible": 57,
+      "total_middles": 117,
+      "enriched_present": 8
+    },
+    "f79v": {
+      "reception_rate": 0.48717948717948717,
+      "enriched_rate": 0.038461538461538464,
+      "animal_compatible": 38,
+      "total_middles": 78,
+      "enriched_present": 3
+    },
+    "f76v": {
+      "reception_rate": 0.4838709677419355,
+      "enriched_rate": 0.043010752688172046,
+      "animal_compatible": 45,
+      "total_middles": 93,
+      "enriched_present": 4
+    },
+    "f83v": {
+      "reception_rate": 0.4782608695652174,
+      "enriched_rate": 0.028985507246376812,
+      "animal_compatible": 33,
+      "total_middles": 69,
+      "enriched_present": 2
+    },
+    "f103r": {
+      "reception_rate": 0.4778761061946903,
+      "enriched_rate": 0.035398230088495575,
+      "animal_compatible": 54,
+      "total_middles": 113,
+      "enriched_present": 4
+    },
+    "f111v": {
+      "reception_rate": 0.47619047619047616,
+      "enriched_rate": 0.0380952380952381,
+      "animal_compatible": 50,
+      "total_middles": 105,
+      "enriched_present": 4
+    },
+    "f75v": {
+      "reception_rate": 0.47297297297297297,
+      "enriched_rate": 0.05405405405405406,
+      "animal_compatible": 35,
+      "total_middles": 74,
+      "enriched_present": 4
+    },
+    "f111r": {
+      "reception_rate": 0.47244094488188976,
+      "enriched_rate": 0.047244094488188976,
+      "animal_compatible": 60,
+      "total_middles": 127,
+      "enriched_present": 6
+    },
+    "f105r": {
+      "reception_rate": 0.46825396825396826,
+      "enriched_rate": 0.07142857142857142,
+      "animal_compatible": 59,
+      "total_middles": 126,
+      "enriched_present": 9
+    },
+    "f113r": {
+      "reception_rate": 0.4652777777777778,
+      "enriched_rate": 0.05555555555555555,
+      "animal_compatible": 67,
+      "total_middles": 144,
+      "enriched_present": 8
+    },
+    "f85r1": {
+      "reception_rate": 0.45794392523364486,
+      "enriched_rate": 0.06542056074766354,
+      "animal_compatible": 49,
+      "total_middles": 107,
+      "enriched_present": 7
+    },
+    "f108v": {
+      "reception_rate": 0.45794392523364486,
+      "enriched_rate": 0.04672897196261682,
+      "animal_compatible": 49,
+      "total_middles": 107,
+      "enriched_present": 5
+    },
+    "f86v6": {
+      "reception_rate": 0.448,
+      "enriched_rate": 0.064,
+      "animal_compatible": 56,
+      "total_middles": 125,
+      "enriched_present": 8
+    },
+    "f104r": {
+      "reception_rate": 0.44360902255639095,
+      "enriched_rate": 0.06766917293233082,
+      "animal_compatible": 59,
+      "total_middles": 133,
+      "enriched_present": 9
+    },
+    "f113v": {
+      "reception_rate": 0.43548387096774194,
+      "enriched_rate": 0.056451612903225805,
+      "animal_compatible": 54,
+      "total_middles": 124,
+      "enriched_present": 7
+    },
+    "f106r": {
+      "reception_rate": 0.4338235294117647,
+      "enriched_rate": 0.051470588235294115,
+      "animal_compatible": 59,
+      "total_middles": 136,
+      "enriched_present": 7
+    },
+    "f105v": {
+      "reception_rate": 0.40625,
+      "enriched_rate": 0.046875,
+      "animal_compatible": 52,
+      "total_middles": 128,
+      "enriched_present": 6
+    },
+    "f114r": {
+      "reception_rate": 0.36551724137931035,
+      "enriched_rate": 0.04827586206896552,
+      "animal_compatible": 53,
+      "total_middles": 145,
+      "enriched_present": 7
+    }
+  }
+}

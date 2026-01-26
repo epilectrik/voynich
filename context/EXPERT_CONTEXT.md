@@ -13,7 +13,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 356 validated constraints and 35 explanatory fits loaded
+embedded below. You have ALL 389 validated constraints and 38 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -54,7 +54,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-01-22 23:41
+**Generated:** 2026-01-24 20:25
 **Version:** FROZEN STATE (356 constraints, 35 fits)
 
 ---
@@ -418,7 +418,7 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 # MODEL_CONTEXT.md
 
-**Version:** 3.8 | **Date:** 2026-01-20 | **Status:** FROZEN
+**Version:** 3.11 | **Date:** 2026-01-23 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -585,12 +585,11 @@ Prefixes encode **functional type**, not semantic category:
 ### MIDDLE Function
 
 MIDDLEs are the primary vocabulary layer:
-- **1,186 distinct MIDDLEs globally** (A ∪ B union)
-- Currier A: 617 unique MIDDLEs
-- Currier B: 837 unique MIDDLEs
-- Shared (A ∩ B): 268 MIDDLEs (Jaccard = 0.226)
-- A-exclusive: 349 (56.6% of A's MIDDLEs never appear in B)
-- B-exclusive: 569 (68.0% of B's MIDDLEs never appear in A)
+- **Currier A: 1,013 unique MIDDLEs** (609 RI + 404 PP)
+- Currier B: 1,339 unique MIDDLEs (regenerated 2026-01-24)
+- Shared (A + B): 404 MIDDLEs (PP, Pipeline-Participating)
+- A-exclusive: 609 (60.1% of A's MIDDLEs never appear in B) [RI, Registry-Internal]
+- B-exclusive: 935 (69.8% of B's MIDDLEs never appear in A)
 
 **Tier 2 Interpretation:**
 > Currier A enumerates the *potential discrimination space*;
@@ -600,9 +599,9 @@ MIDDLEs are the primary vocabulary layer:
 
 | Class | Role |
 |-------|------|
-| **A-exclusive** (349) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
-| **A/B-shared** (268) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
-| **B-exclusive** (569) | Stratified: L-compound operators (49 types, line-initial) + boundary closers (-edy/-dy, line-final) + singleton cloud (80%, orthographic variants) |
+| **A-exclusive (RI)** (609) | Pure discrimination coordinates - discriminations that exist in principle but are never jointly instantiated with surviving B procedures |
+| **A/B-shared (PP)** (404) | Execution-safe compatibility substrate - the ~95% of B usage that makes execution possible everywhere |
+| **B-exclusive** (935) | Stratified: L-compound operators (49 types, line-initial) + boundary closers (-edy/-dy, line-final) + singleton cloud (80%, orthographic variants) |
 
 **B-Exclusive MIDDLE Stratification (C501):**
 
@@ -625,6 +624,135 @@ MIDDLEs are the primary vocabulary layer:
 - Core (top 30): 67.6% of usage, mode-flexible, section-stable
 - Tail (~1,150): 32.4% of usage, mode-specific, hazard-concentrated
 - Rare MIDDLEs cluster in high-hazard contexts (rho=-0.339, p=0.0001)
+
+### PP vs RI: The Two-Track Vocabulary (C498, C498.d, C504-C506)
+
+A-record MIDDLEs partition into **two populations** with different B-side effects:
+
+| Type | Count | Propagates to B? | Length | Function |
+|------|-------|------------------|--------|----------|
+| **PP** | ~90 | **Yes** | 1-2 chars | Compatibility carriers |
+| **RI** | ~1,290 | **No** | 2-6 chars | A-internal discrimination |
+
+**RI as Complexity Gradient (C498.d):**
+
+RI singleton/repeater status is **primarily a combinatorial effect**, not a functional bifurcation:
+
+```
+RI MIDDLEs (~1,290 types)
+│
+└── Single population with LENGTH/COMPLEXITY GRADIENT:
+
+    Short (2-3 chars) ←────────────────→ Long (5+ chars)
+         │                                    │
+     More repeats                        More unique
+      (48-55%)                           (82-100%)
+         │                                    │
+     Combinatorially                    Combinatorially
+       limited                             diverse
+```
+
+**Evidence (C498.d):**
+- Spearman correlation: rho = -0.367, p < 10⁻⁴²
+- Singleton rate by length: 2-char=48%, 4-char=73%, 6-char=96%, 8+=100%
+- Mean length singletons: 4.82 chars; repeaters: 3.61 chars
+
+**MIDDLE Sub-Component Structure (C267.a):**
+
+MIDDLEs are compositional - **218 sub-components** reconstruct 97.8% of all MIDDLEs:
+
+```
+TOKEN = PREFIX + MIDDLE + SUFFIX
+                   ↓
+              MIDDLE = SUB1 + SUB2 + [SUB3...]
+```
+
+This explains why longer MIDDLEs are more likely unique: more sub-components → more combinations.
+
+**Previous interpretations WEAKENED:**
+- "RI-D as section markers" → Tier 3 (provisional)
+- "RI-B as scaffolding" → Tier 3 (provisional)
+- The structural observations remain Tier 2; functional interpretations demoted
+
+**'fachys' clarification:** 'fachys' (the famous first word) appears exactly once and is folio-first. However, this pattern represents only 4.2% of RI singletons (41 tokens). The remaining 95.8% appear mid-record.
+
+**Two-level PP effect (C506, C506.a):**
+
+| Level | What PP Determines | Evidence |
+|-------|-------------------|----------|
+| **Class** | Which instruction types survive | COUNT matters (r=0.715), COMPOSITION doesn't (cosine=0.995) |
+| **Token** | Which variants within classes are available | COMPOSITION matters (Jaccard=0.953 when same classes) |
+
+PP is a **capacity variable** at class level, but a **configuration variable** at token level:
+- PP COUNT strongly predicts B class survival (r=0.715, p<10^-247)
+- PP COMPOSITION does not affect which classes survive (cosine=0.995)
+- PP COMPOSITION does affect which tokens within surviving classes are available (~5% variation)
+
+**Intra-class behavioral heterogeneity (C506.b):**
+
+Tokens within the same class but with different MIDDLEs are **positionally compatible but behaviorally distinct**:
+
+| Dimension | Same-MIDDLE | Different-MIDDLE | p-value |
+|-----------|-------------|------------------|---------|
+| Position | Similar | Similar | 0.11 (NS) |
+| Transitions | Similar | **Different** | <0.0001 |
+
+73% of MIDDLE pairs within classes have transition JS divergence > 0.4. This is the "chop vs grind" pattern: both can appear in the same grammatical slot, but they lead to different subsequent operations.
+
+**Variable taxonomy:**
+
+| Variable | System | What It Does |
+|----------|--------|--------------|
+| **Routing** | AZC | Position-indexed legality |
+| **Differentiation** | RI | Identity exclusion |
+| **Capacity** | PP | Class survival breadth (count) |
+| **Configuration** | PP | Intra-class token selection (composition) |
+
+**Key insight:** Classes define **grammatical equivalence** (what can substitute), not **semantic equivalence** (what does the same thing). The 49 classes provide the operational grammar. The ~480 tokens provide behaviorally distinct variants within that grammar. PP COUNT determines class breadth. PP COMPOSITION determines which behavioral variants are available.
+
+This resolves the "480 token paradox": why maintain 480 tokens if 49 classes suffice? Answer: material-specific behavioral parameterization. Animal materials don't need different *classes* than plant materials — they need different *execution flows* within the same class structure.
+
+### MIDDLE Compositional Grammar (C510-C513)
+
+MIDDLEs have internal compositional structure with systematic construction rules:
+
+**Generative Architecture:**
+```
+[RI elaboration] + [PP flexible core] + [PP terminator]
+   START-class        FREE-class          END-class
+   (16.1% PP)         (40.9% PP)          (71.4% PP)
+```
+
+**Key Properties:**
+
+| Property | Value | Constraint |
+|----------|-------|------------|
+| Positional constraint rate | 41.2% | C510 |
+| Positional FREE rate | 58.8% | C510 |
+| Derivational seeding ratio | 12.67x | C511 |
+| RI containing PP atoms | 99.1% | C512 |
+| PP section-invariance ratio | 8.3x | C512 |
+
+**PP as Generative Substrate (C512):**
+- PP MIDDLEs are 8.3x more section-invariant than RI MIDDLEs (Jaccard 0.729 vs 0.088)
+- 60.7% of PP atoms appear in ALL three sections (H/P/T) vs 2.6% of RI MIDDLEs
+- RI MIDDLEs are compositional elaborations of PP stock, not independently constructed
+
+**Positional Asymmetry (C512.a):**
+- END-class dominated by PP atoms (71.4%): `ch`, `d`, `e`, `g`, `h`, `k`, `s`, `t`
+- START-class dominated by RI elaborations (only 16.1% PP)
+- PP atoms are more positionally FREE (69.2%) than average (58.8%)
+
+**Interpretation:**
+The grammar is permissive but structured. PP atoms are the universal morphological substrate — the "Lego bricks" that appear across all sections. RI elaborations provide section-specific discriminative extensions, predominantly at the start of MIDDLEs. PP terminators close forms.
+
+**This explains:**
+- C498.d (length predicts uniqueness): Short forms seed long forms derivationally
+- C475 (95.7% incompatibility): Positional grammar restricts legal combinations
+- C506.b (intra-class heterogeneity): PP composition determines behavioral variants
+- C502 (~80% filtering): Extracts PP primitives from RI elaborations
+
+**Short Singleton Variance (C513):** Singleton status at ≤3 characters is sampling variance (Jaccard = 1.00 with repeaters), not a functional distinction.
 
 ### SUFFIX Function
 
@@ -664,6 +792,29 @@ They ARE:
 - Continuous monitoring loops
 - Gradient-following trajectories
 - Convergence-seeking procedures
+
+### Tokens as State-Triggered Interventions (C171 Clarification)
+
+B tokens are **interventions selected by a control loop**, not recipe steps:
+
+```
+MONITOR → ASSESS → SELECT intervention → EXECUTE → RETURN to MONITOR
+```
+
+| Recipe Model (WRONG) | Control Model (CORRECT) |
+|---------------------|------------------------|
+| Step 1: Chop | IF material too coarse → apply chop |
+| Step 2: Grind | IF needs fine texture → apply grind |
+| Step 3: Heat | IF temp low → apply heat |
+| Fixed sequence | Condition-triggered response |
+
+**Why 94.2% line-to-line class change:** Each line represents a new assessment cycle. The intervention selected depends on assessed state, not sequence position.
+
+**Why positional preferences exist:** Monitoring/assessment operations cluster at certain positions; intervention operations at others. This is phase structure within the control loop, not narrative sequence.
+
+**Why tokens within classes differ (C506.b):** Different tokens are **related but distinct interventions** triggered by different conditions - like "chop" vs "grind" for different material states. They're grammatically equivalent (same class) but operationally distinct (different transitions).
+
+The grammar constrains **which interventions are legal** for a given state, not **which comes next** in a sequence.
 
 ### LINK Operators
 
@@ -767,23 +918,23 @@ See [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) for c
 Currier A MIDDLEs divide into two vocabulary tracks, with the shared track further bifurcated:
 
 ```
-A MIDDLEs (617 total)
-├── RI: Registry-Internal (349, 56.6%)
-│     A-exclusive, instance discrimination, folio-localized
-│
-└── Shared with B (268, 43.4%)
-    ├── AZC-Mediated (154, 25.0% of A vocabulary)
-    │     A→AZC→B constraint propagation
-    │     ├── Universal (17) - 10+ AZC folios
-    │     ├── Moderate (45) - 3-10 AZC folios
-    │     └── Restricted (92) - 1-2 AZC folios
-    │
-    └── B-Native Overlap (114, 18.5% of A vocabulary)
+A MIDDLEs (1,013 total)  [REGENERATED 2026-01-24 atomic-suffix parser]
++-- RI: Registry-Internal (609, 60.1%)
+|     A-exclusive, instance discrimination, folio-localized
+|     Only 7.0% of A token instances (778/11,174)
+|
++-- Shared with B (404, 39.9%)
+    +-- AZC-Mediated (~214, ~21% of A vocabulary)
+    |     A->AZC->B constraint propagation
+    |
+    +-- B-Native Overlap (~190, ~19% of A vocabulary)
           Zero AZC presence, B-dominant frequency
           Execution-layer vocabulary with incidental A appearance
 ```
 
-**Key insight (C498.a):** Only 154 MIDDLEs (25% of A vocabulary) genuinely participate in the A→AZC→B pipeline. The 114 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
+**METHODOLOGY NOTE (2026-01-24):** Regenerated with atomic-suffix parser (voynich.py). Uses atomic suffixes only, smart MIDDLE preservation, gallows-initial handling (C528). C498.a substructure estimates await re-verification with new counts.
+
+**Key insight (C498.a):** Only 214 MIDDLEs (19.8% of A vocabulary) genuinely participate in the A->AZC->B pipeline. The 198 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
 
 Registry-internal MIDDLEs encode **within-category fine distinctions** for A-registry navigation that don't propagate to B execution. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
 
@@ -1292,6 +1443,22 @@ Sections (H, P, T for A; quire-aligned for B) are strong boundaries. Cross-secti
 
 The strongest temptation is to assign meaning to tokens. Resist this. Tokens have **roles**, not meanings. Semantics exist only in operator practice.
 
+### Class-Level vs Token-Level Analysis (C508)
+
+**Class-level analysis yields coarse, universal patterns. Token-level analysis reveals actual discrimination.**
+
+| Level | Jaccard | Mutual Exclusion | What It Shows |
+|-------|---------|------------------|---------------|
+| CLASS | 0.391 | 0% | Universal grammar structure |
+| TOKEN | 0.700 | **27.5%** | Fine-grained discrimination |
+
+Common errors:
+- Looking for "process types" at class level (they don't exist there)
+- Expecting class co-occurrence to reveal refinements (all classes can co-occur)
+- Forgetting that classes are universal but tokens are discriminative
+
+**Rule:** When testing for fine-grained differentiation (material types, process types, execution variants), analyze at TOKEN/MEMBER level, not CLASS level. Classes define the grammar; tokens encode specific execution variants within that grammar.
+
 ---
 
 ## XIV. WHAT CANNOT BE RECOVERED
@@ -1415,7 +1582,7 @@ Nothing else is logically required.
 
 **Source:** `context/CONSTRAINT_TABLE.txt`
 
-CONSTRAINT_REFERENCE v2.6 | 513 constraints | 2026-01-22
+CONSTRAINT_REFERENCE v2.6 | 574 constraints | 2026-01-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1630,6 +1797,7 @@ C265	1,123 unique marker tokens across 8 classes; 85 core tokens (freq>=10); `da
 C266	Block vs Non-Block Entry Types	2	A	in: currier_a
 C267	Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)	2	A→B	-> C267_compositional_morphology.md
 C267	Tokens are COMPOSITIONAL	2	A	in: currier_a
+C267.a	**MIDDLE Sub-Component Structure** (218 sub-components reconstruct 97.8% of MIDDLEs; morphology extends to sub-MIDDLE level)	2	GLOBAL	in: currier_a
 C268	897 observed combinations	2	A→B	in: morphology
 C268	897 Combinations	2	A	in: currier_a
 C269	7 Universal Suffixes	2	A	in: currier_a
@@ -1919,9 +2087,12 @@ C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC	in: azc_syst
 C496	Nymph-Adjacent S-Position Prefix Bias	2	AZC	in: azc_system
 C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits)	2	A	in: currier_a
 C497	f49v Instructional Apparatus Folio	2	A	in: currier_a
-C498	**Registry-Internal Vocabulary Track** (56.6% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
+C498	**Registry-Internal Vocabulary Track** (61.8% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A	in: currier_a
 C498	Registry-Internal Vocabulary Track	2	A	in: currier_a
 C498.a	**A∩B Shared Vocabulary Bifurcation** (154 AZC-Mediated + 114 B-Native Overlap; pipeline scope narrowed)	2	A	in: currier_a
+C498.b	**RI Singleton Population** (~977 singletons, mean 4.82 chars; functional interpretation WEAKENED - see C498.d)	2	A	in: currier_a
+C498.c	**RI Repeater Population** (~313 repeaters, mean 3.61 chars; functional interpretation WEAKENED - see C498.d)	2	A	in: currier_a
+C498.d	**RI Length-Frequency Correlation** (rho=-0.367, p<10⁻⁴²; singleton rate: 2-char=48%, 6-char=96%; complexity gradient, not functional bifurcation)	2	A	in: currier_a
 C499	Bounded Material-Class Recoverability (128 MIDDLEs with P(material_class) vectors; conditional on Brunschwig)	3	A	in: currier_a
 C499	Bounded Material-Class Recoverability	2	A	in: currier_a
 C500	Suffix Posture Temporal Pattern (CLOSURE front-loaded 77% Q1, NAKED late 38% Q4, ratio 5.69×)	3	A	in: currier_a
@@ -1934,6 +2105,63 @@ C503	**Class-Level Filtering** (1,203 unique patterns, 6 always-survive classes,
 C503	Class-Level Filtering Under Strict Model	2	A	in: currier_a
 C504	**MIDDLE Function Bifurcation** (PP 86 types r=0.772 with survival; RI 1,293 types r=-0.046; 75% records have both)	2	A+B	in: currier_a
 C504	MIDDLE Function Bifurcation in A Records	2	A	in: currier_a
+C505	**PP Profile Differentiation by Material Class** ('te' 16.1×, 'ho' 8.6×, 'ke' 5.1× in animal records; A-registry organization only)	2	A	in: currier_a
+C505	PP Profile Differentiation by Material Class (A-Registry Organization)	2	A	in: currier_a
+C506	**PP Composition Non-Propagation** (PP count r=0.715; composition cosine=0.995 with baseline; capacity not routing)	2	A+B	in: currier_a
+C506	PP Composition Non-Propagation	2	A	in: currier_a
+C506.a	**Intra-Class Token Configuration** (Same classes, different PP: Jaccard=0.953; ~5% token variation; classes=types, tokens=parameterizations)	2	A+B	in: currier_a
+C506.b	**Intra-Class Behavioral Heterogeneity** (Different-MIDDLE tokens: same position p=0.11, different transitions p<0.0001; 73% MIDDLE pairs have JS>0.4)	2	B	in: currier_a
+C507	**PP-HT Partial Responsibility Substitution** (rho=-0.294, p=0.0015; PP 0-3 = 18.8% HT vs PP 6+ = 12.6% HT; HT TTR r=+0.40)	2	A+HT	in: currier_a, human_track
+C507	Partial Responsibility Substitution between PP and HT	2	A	in: currier_a
+C508	**Token-Level Discrimination Primacy** (Class Jaccard=0.391, Token Jaccard=0.700; 27.5% within-class mutual exclusion; fine discrimination at member level, not class level)	2	A→B	in: currier_a
+C508	Token-Level Discrimination Primacy	2	A	in: currier_a
+C509	**PP/RI Dimensional Separability** (72 PP sets shared by records with different RI; 229 records (14.5%) share PP; 26 pure-RI, 399 pure-PP; dimensions orthogonal)	2	A	in: currier_a
+C509	PP/RI Dimensional Separability	2	A	in: currier_a
+C509.a	**RI Morphological Divergence** (RI: 58.5% PREFIX, 3.96-char MIDDLE; PP: 85.4% PREFIX, 1.46-char MIDDLE; RI is MIDDLE-centric, PP is template-balanced)	2	A	in: currier_a
+C510	**Positional Sub-Component Grammar** (41.2% constrained: 62 START, 14 END, 110 FREE; z=34.16, p<0.0001; grammar is permissive)	2	A	in: currier_a
+C510	Positional Sub-Component Grammar	2	A	in: currier_a
+C511	**Derivational Productivity** (Repeater MIDDLEs seed singletons at 12.67x above chance; 89.8% exceed baseline)	2	A	in: currier_a
+C511	Derivational Productivity	2	A	in: currier_a
+C512	**PP/RI Stylistic Bifurcation** (100% containment but z=1.11 vs null - NOT significant; 8.3x section-invariance; composition PROVISIONAL)	2	GLOBAL	in: currier_a
+C512	PP/RI Stylistic Bifurcation	2	A	in: currier_a
+C512.a	**Positional Asymmetry** (END-class 71.4% PP; START-class 16.1% PP; pattern: RI-START + PP-FREE + PP-END)	2	A	in: currier_a
+C513	**Short Singleton Sampling Variance** (Jaccard=1.00 vs repeaters; singleton status at ≤3 chars is sampling, not function)	2	A	in: currier_a
+C513	Short Singleton Sampling Variance	2	A	in: currier_a
+C514	**RI Compositional Bifurcation** (17.4% locally-derived, 82.6% globally-composed; Section P highest local rate 26.1%)	2	A	in: currier_a
+C514	RI Compositional Bifurcation	2	A	in: currier_a
+C515	**RI Compositional Mode Correlates with Length** (short RI = atomic/global; long RI = compound/local; rho=0.192, p<0.0001)	2	A	in: currier_a
+C515	RI Compositional Mode Correlates with Length	2	A	in: currier_a
+C515.a	**Compositional Embedding Mechanism** (local derivation is additive - embedding local PP context requires more sub-components)	2	A	in: currier_a
+C516	**RI Multi-Atom Observation** (99.6% multi-atom but trivially expected from lengths; intersection formula PROVISIONAL)	2	A	in: currier_a
+C516	RI Multi-Atom Observation	2	A	in: currier_a
+C517	**Superstring Compression (GLOBAL)** (65-77% overlap, 2.2-2.7x compression; hinge letters are 7/8 kernel primitives; global substrate)	3	GLOBAL	in: currier_a
+C517	Superstring Compression (GLOBAL)	2	A	in: currier_a
+C518	**Compatibility Enrichment (GLOBAL)** (5-7x enrichment across all systems; extends C383 global type system)	3	GLOBAL	in: currier_a
+C518	Compatibility Enrichment (GLOBAL)	2	A	in: currier_a
+C519	**Global Compatibility Architecture** (compression + enrichment = embedded compatibility relationships spanning A/B/AZC)	3	GLOBAL	in: currier_a
+C519	Global Compatibility Architecture	2	A	in: currier_a
+C520	**System-Specific Exploitation Gradient** (RI 6.8x > AZC 7.2x > PP 5.5x > B 5.3x; discrimination intensity varies)	3	GLOBAL	in: currier_a
+C520	System-Specific Exploitation Gradient	2	A	in: currier_a
+C521	**Kernel Primitive Directional Asymmetry** (one-way valve: e→h=0.00, h→k=0.22, e→k=0.27 suppressed; h→e=7.00x, k→e=4.32x elevated; stabilization is absorbing)	2	B	in: grammar_system
+C521	Kernel Primitive Directional Asymmetry	2	B	in: grammar_system
+C522	**Construction-Execution Layer Independence** (r=-0.21, p=0.07; character and class constraints are independent regimes sharing symbol substrate)	2	B	in: grammar_system
+C522	Construction-Execution Layer Independence	2	B	in: grammar_system
+C523	**Pharma Label Vocabulary Bifurcation** (jar labels Jaccard=0.000 with content; content 58.3% PP vs 33.5% baseline)	2	A	in: currier_a
+C523	Pharma Label Vocabulary Bifurcation	2	A	in: currier_a
+C524	**Jar Label Morphological Compression** (7.1 vs 6.0 char mean; 5-8 PP atoms per MIDDLE; superstring packing)	2	A	in: currier_a
+C524	Jar Label Morphological Compression	2	A	in: currier_a
+C525	**Label Morphological Stratification** (o-prefix 50% vs 20% text; qo-prefix ~0% vs 14%; 61% label-only vocabulary; within-group MIDDLE sharing)	3	A	in: currier_a
+C525	Label Morphological Stratification	2	A	in: currier_a
+C526	**RI Lexical Layer Hypothesis** (609 unique RI as referential lexicon; 87% localized to 1-2 folios; PREFIX/SUFFIX global grammar vs RI extensions as substance anchors)	3	A	in: currier_a
+C526	RI Lexical Layer Hypothesis	2	A	in: currier_a
+C527	**Suffix-Material Class Correlation** (Animal PP: 0% -y/-dy, 78% -ey/-ol; Herb PP: 41% -y/-dy, 27% -ey/-ol; chi2=178, p<10^-40; fire-degree interpretation conditional on Brunschwig)	3	A	in: currier_a
+C527	Suffix-Material Class Correlation (Fire Degree)	2	A	in: currier_a
+C528	**RI PREFIX Lexical Bifurcation** (334 PREFIX-REQUIRED, 321 PREFIX-FORBIDDEN, 12 optional; 98.2% disjoint; PREFIX attachment lexically determined; section-independent; refines C509.a aggregate rate)	2	A	in: currier_a
+C528	RI PREFIX Lexical Bifurcation	2	A	in: currier_a
+C529	**Gallows Positional Asymmetry** (PP gallows-initial 30% vs RI 20%; RI gallows-medial 58% vs PP 39%; chi2=7.69 p<0.01; bench gallows cph 81% RI; parallel bifurcation to C528)	2	A	in: currier_a
+C529	Gallows Positional Asymmetry in PP/RI	2	A	in: currier_a
+C530	**Gallows Folio Specialization** (k-default 54%, t-specialized folios cluster; p/f never folio-dominant; 2-5x same-gallows co-occurrence RI↔PP in records)	2	A	in: currier_a
+C530	Gallows Folio Specialization	2	A	in: currier_a
 
 ---
 
@@ -1995,7 +2223,7 @@ F-BRU-009	Zone-Modality Addressing (Two-Stage Model)	F3	B	CONFIRMED	C477 (HT), C
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.32
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.40
 
 ---
 
@@ -2031,7 +2259,7 @@ Every Currier A/B token decomposes into four functional components:
 TOKEN = PREFIX   → material-behavior class (what kind of thing)
       + SISTER   → operational mode (how carefully)
       + MIDDLE   → variant discriminator (which specific variant)
-      + SUFFIX   → decision archetype (what decision is needed)
+      + SUFFIX   → context-dependent marker (system role + material class)
 ```
 
 ### Component-to-Class Mapping
@@ -2041,7 +2269,18 @@ TOKEN = PREFIX   → material-behavior class (what kind of thing)
 | **PREFIX** | Material-behavior | 4 classes (M-A/B/C/D) | Grammar roles, enrichment |
 | **SISTER** | Operational mode | 2 modes (precision/tolerance) | C412 anticorrelation |
 | **MIDDLE** | Variant identity | ~1,184 discriminators | 80% prefix-exclusive |
-| **SUFFIX** | Decision archetype | 12 archetypes (D1-D12) | A/B enrichment patterns |
+| **SUFFIX** | Two-axis marker | A/B system role + material class | C283, C495, C527 |
+
+**SUFFIX Two-Axis Model (revised 2026-01-24):**
+
+Suffix operates on two orthogonal dimensions:
+
+| Axis | Scope | Finding | Tier |
+|------|-------|---------|------|
+| System role | A vs B enrichment | -edy 49x B, -ol 0.35x A-enriched | 2 (C283) |
+| Material class | Within A: animal vs herb | Animal: 78% -ey/-ol; Herb: 41% -y/-dy | 3 (C527) |
+
+The earlier "decision archetype (D1-D12)" mapping in ccm_suffix_mapping.md is **provisional and incomplete**. The fire-degree interpretation (C527) is conditional on Brunschwig alignment.
 
 ### Material-Behavior Classes
 
@@ -2206,6 +2445,488 @@ This is interface characterization, not semantic mapping. The system supports ex
 
 ---
 
+## 0.B. PP FUNCTIONAL ROLE CLOSURE (PP_B_EXECUTION_TEST Phase) - NEW in v4.33
+
+### Tier 2: Core Finding
+
+> **PP (Pipeline-Participating) MIDDLEs have a two-level effect: COUNT determines class survival breadth, COMPOSITION determines intra-class token configuration.**
+
+This resolves both the C505 paradox (material-class PP differentiation with null class-level effects) and the "480 token paradox" (why maintain 480 tokens if 49 classes suffice).
+
+### The Two-Level PP Effect (C506, C506.a)
+
+| Level | What PP Determines | Evidence |
+|-------|-------------------|----------|
+| **Class** | Which instruction types survive | COUNT matters (r=0.715), COMPOSITION doesn't (cosine=0.995) |
+| **Token** | Which variants within classes are available | COMPOSITION matters (Jaccard=0.953 when same classes) |
+
+**Variable taxonomy:**
+
+| Variable Type | System | What It Does | Evidence |
+|---------------|--------|--------------|----------|
+| **Routing** | AZC | Position-indexed legality | C443, C468 |
+| **Differentiation** | RI | Identity exclusion (95.7% incompatibility) | C475, C481 |
+| **Capacity** | PP | Class survival breadth (count) | C504, C506 |
+| **Configuration** | PP | Intra-class token selection (composition) | C506.a |
+
+**Key insight:** Classes are instruction types; tokens are parameterized variants.
+
+### Evidence Summary
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| PP count vs B class survival | r=0.715, p<10^-247 | COUNT determines class breadth |
+| PP composition vs B class mix | Cosine=0.995 | COMPOSITION irrelevant at class level |
+| PP composition vs token availability | Jaccard=0.953 | COMPOSITION matters at token level (~5% variation) |
+| Per-class survival | 0/49 significant | No individual class differs |
+
+### PP Count Gradient (Class Level)
+
+| PP Count | Mean B Classes | n |
+|----------|----------------|---|
+| 0-2 | 19.0 | 171 |
+| 3-5 | 30.9 | 805 |
+| 6-8 | 37.2 | 525 |
+| 9-11 | 41.4 | 64 |
+| 12-15 | 43.9 | 13 |
+
+### Resolution of the 480 Token Paradox
+
+Why maintain 480 distinct tokens across 49 classes?
+
+Answer: **Intra-class behavioral parameterization.**
+
+- The 49 classes provide the operational grammar (what instructions exist)
+- The ~480 tokens provide behaviorally distinct variants (how each instruction executes)
+- PP COUNT determines class survival breadth (how many instruction types)
+- PP COMPOSITION determines intra-class configuration (which behavioral variants)
+
+Animal materials don't need different *classes* than plant materials — they need different *execution flows* within the same class structure. C505's PP profile differences shape which behavioral variants are available, not which classes survive.
+
+### Intra-Class Behavioral Heterogeneity (C506.b, v4.36)
+
+Tokens within the same class but with different MIDDLEs are **positionally compatible but behaviorally distinct**:
+
+| Dimension | Same-MIDDLE | Different-MIDDLE | p-value |
+|-----------|-------------|------------------|---------|
+| Position | Similar | Similar | 0.11 (NS) |
+| Transitions | Similar | **Different** | <0.0001 |
+
+73% of MIDDLE pairs within classes have transition JS divergence > 0.4.
+
+**The "Chop vs Grind" Pattern:**
+
+Like "chop" and "grind" in a recipe:
+- Both appear in the same grammatical slot (positionally compatible)
+- But they lead to different subsequent operations (behaviorally distinct)
+
+Classes define **grammatical equivalence** (what can substitute syntactically), not **semantic equivalence** (what does the same thing operationally).
+
+**Implication for PP composition:**
+
+```
+PP composition → MIDDLE selection → transition pattern variation
+                                  → execution flow differences
+                                  (within fixed class structure)
+```
+
+The ~5% token variation (C506.a) is **behaviorally meaningful**, not noise.
+
+### What C505 Actually Means (Revised)
+
+C505's material-class PP profile differences are **configuration markers**:
+
+> PP profiles shape which token variants are available within surviving classes.
+
+PP profile variation allows:
+- Material-specific parameterization within shared class framework
+- Same operational grammar, different execution variants
+- Structural adaptation without semantic encoding
+
+### Why Class-Level Null Effects Are Correct
+
+The class-level null results (C506) protect the semantic ceiling (C171, C469):
+
+- If PP composition caused different *classes* to survive → PP would encode material-specific instruction sets
+- Material-specific instruction sets → violates PURE_OPERATIONAL constraint
+- Therefore: class-level null effects are architecturally necessary
+
+But token-level variation (C506.a, C506.b) is permitted:
+- Same classes, different behavioral variants
+- Structural adaptation without changing the instruction vocabulary
+- This is parameterization, not semantic encoding
+
+### What This Closes
+
+- PP composition → class survival: **FALSIFIED** (C506)
+- PP composition → token configuration: **CONFIRMED** (C506.a)
+- PP composition → behavioral variation: **CONFIRMED** (C506.b)
+- PP functional characterization: **COMPLETE** (two-level model)
+
+### PP-HT Responsibility Substitution (C507, v4.34)
+
+**Resolved:** PP capacity is weakly but significantly inversely correlated with HT density.
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| Spearman rho | **-0.294** | Moderate negative |
+| p-value | **0.0015** | Highly significant |
+| PP 0-3 HT density | 18.83% | High HT when low PP |
+| PP 6+ HT density | 12.62% | Low HT when high PP |
+| PP vs HT TTR | **+0.40** | More varied HT with more PP |
+
+**Two-axis HT model:**
+1. **HT density axis** — how much HT appears (negatively correlated with PP)
+2. **HT diversity axis** — how varied HT is when it appears (positively correlated with PP)
+
+**Interpretation:** PP and HT partially substitute in a "responsibility budget." More grammatical freedom (PP capacity) correlates with less human vigilance (HT density) but more varied vigilance (HT TTR).
+
+This is NOT:
+- Complete substitution (r = -0.29, not -0.8)
+- HT tracking PP content (composition doesn't matter per C506)
+- Causal relationship (correlation only)
+
+### What Remains Open
+
+The next frontier is **PP × HT × AZC three-way interaction**:
+- Does AZC position modulate the PP-HT trade-off?
+- Does PP count increase operator error tolerance?
+- Regime-specific HT compensation patterns
+
+This shifts from "what PP is" to "what the artifact does to the human."
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C504 | PP count correlation (r=0.772) |
+| C505 | A-side profile differences |
+| C506 | Non-propagation to B |
+| C507 | PP-HT partial substitution |
+| C171 | Semantic ceiling protection |
+| C469 | Categorical resolution |
+
+**Source:** PP_B_EXECUTION_TEST (2026-01-23), PP_HT_INTERACTION_TEST (2026-01-23)
+
+---
+
+## 0.C. THREE-LAYER CONSTRAINT ARCHITECTURE (MIDDLE_SUBCOMPONENT_GRAMMAR Phase) - NEW in v4.38
+
+### Tier 2-3: Architectural Discovery
+
+> **The manuscript's symbol system operates through three independent constraint layers sharing a single substrate - construction, compatibility, and execution - which together achieve complex morphology, extreme vocabulary sparsity, AND execution safety simultaneously.**
+
+### The Problem This Solves
+
+Prior analysis identified multiple constraint regimes:
+- C085: 10 kernel primitives (s, e, t, d, l, o, h, c, k, r)
+- C109: 17 forbidden transitions between token classes
+- C475: 95.7% of MIDDLE pairs are incompatible
+- C517: Superstring compression with hinge letters
+
+The question: Are these the same constraint seen at different scales, or independent systems?
+
+### Key Evidence (Test 17)
+
+**Hypothesis tested:** Construction constraints (within-token) are isomorphic to execution constraints (between-token).
+
+**Result:** FALSIFIED
+
+| Metric | Value |
+|--------|-------|
+| Pearson correlation | r = -0.21 |
+| p-value | 0.07 (not significant) |
+| Category match rate | 28.4% (near random) |
+
+Construction-suppressed pairs: only 2.9% also suppressed in execution.
+Construction-elevated pairs: 0% also elevated in execution.
+
+### Three-Layer Architecture
+
+```
+SYMBOL SUBSTRATE (10 primitives: s,e,t,d,l,o,h,c,k,r)
+         |
+         ├── CONSTRUCTION LAYER (C521)
+         |     - Directional asymmetry within tokens
+         |     - One-way valve: e→h blocked (0.00), h→e favored (7.00x)
+         |     - Result: Legal token forms
+         |
+         ├── COMPATIBILITY LAYER (C475)
+         |     - MIDDLE atomic incompatibility
+         |     - 95.7% of pairs forbidden
+         |     - Result: Legal co-occurrence
+         |
+         └── EXECUTION LAYER (C109)
+               - 17 forbidden transitions between classes
+               - Phase-ordering dominant (41%)
+               - Result: Legal program paths
+```
+
+### Why This Matters
+
+**Independence enables modularity:**
+- Construction constraints can evolve without breaking execution
+- Compatibility constraints can be tuned without rebuilding morphology
+- Execution hazards can be managed without token redesign
+
+**Shared substrate enables compactness:**
+- Same 10 characters do triple duty
+- No separate "syntax layer" needed
+- Information density maximized
+
+**Real-world analogy:** Consider a programming language where:
+- Character encoding rules govern what strings are valid identifiers
+- Type system rules govern what combinations are semantically valid
+- Control flow rules govern what execution orders are safe
+
+These are independent - changing identifier rules doesn't change type checking.
+
+### Kernel Primitive Reality
+
+Test 15-16 confirmed kernel primitives (k, h, e) are **real operators**, not compression artifacts:
+
+**Directional Asymmetry (C521):**
+| Transition | Ratio | Interpretation |
+|------------|-------|----------------|
+| e→h | 0.00 | STABILITY → PHASE: completely blocked |
+| h→e | 7.00x | PHASE → STABILITY: highly favored |
+| k→e | 4.32x | ENERGY → STABILITY: favored |
+
+This one-way valve topology **cannot arise from compression mechanics**. Compression would create symmetric patterns (hinges work both directions). The asymmetry proves functional operator status.
+
+### Interpretive Implication (Tier 3)
+
+The three-layer architecture suggests the manuscript was designed for:
+
+1. **Expressive power:** Complex token morphology (construction layer)
+2. **Safety:** Incompatibility prevents dangerous combinations (compatibility layer)
+3. **Control:** Execution constraints maintain system stability (execution layer)
+
+These goals are achieved **independently**, allowing each to be optimized without trade-offs.
+
+### RI as Operational Signature (Tier 3)
+
+RI MIDDLEs encode **compatibility intersections** at the construction layer:
+- 85.4% contain multiple PP atoms (C516)
+- Each atom is a compatibility dimension
+- RI = PP₁ ∩ PP₂ ∩ PP₃ ∩ ... ∩ modifier
+
+This explains why RI is:
+- Unique to A (compatibility specification is A-side)
+- Highly specific (multi-atom = narrow intersection)
+- Length-correlated with uniqueness (more atoms = more specific)
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C085 | 10 kernel primitives (shared substrate) |
+| C109 | Execution hazards (execution layer) |
+| C475 | MIDDLE incompatibility (compatibility layer) |
+| C517 | Superstring compression (hinge letters) |
+| C521 | Directional asymmetry (construction layer) |
+| C522 | Layer independence (falsified isomorphism) |
+
+**Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+---
+
+## 0.D. RI LEXICAL LAYER HYPOTHESIS (RI_STRUCTURE_ANALYSIS Phase) - NEW in v4.39
+
+### Tier 3: Grammar vs Lexicon Distinction
+
+> **RI extensions within MIDDLEs may function as a LEXICAL layer that anchors abstract grammar to specific external substances, while PREFIX/SUFFIX/PP remain purely functional markers operating as GRAMMAR.**
+
+This extends C526 with a detailed characterization of the two-layer model.
+
+### The Problem This Addresses
+
+C120 (PURE_OPERATIONAL) establishes that Voynich tokens have no semantic content. But RI MIDDLEs exhibit vocabulary-like behavior:
+- 609 unique identifiers (regenerated 2026-01-24 with atomic-suffix parser)
+- Localized to specific folios (87% on only 1 folio)
+- Non-compositional (don't decompose systematically)
+- Appear with varying PREFIX/SUFFIX combinations
+
+This creates tension: How can 609 arbitrary localized identifiers have "no semantic content"?
+
+### Resolution: Grammar vs Lexicon
+
+The resolution distinguishes two functional layers:
+
+| Layer | Components | Function | Semantic Status |
+|-------|------------|----------|-----------------|
+| **Grammar** | PREFIX, SUFFIX, PP atoms | Control-flow, procedural | No content (C120 applies) |
+| **Lexicon** | RI extensions | Referential anchoring | Points to substances (THAT, not WHAT) |
+
+**Grammar** is combinatorial and global:
+- ch prefix used with 57 different MIDDLEs
+- dy suffix used with 40 different MIDDLEs
+- PP atoms appear across all systems (A, B, AZC)
+
+**Lexicon** is arbitrary and localized:
+- RI extensions don't decompose systematically
+- 83% appear on only 1-2 folios
+- Extensions function as dictionary entries, not grammatical positions
+
+### Evidence Summary
+
+**RI Localization Pattern:**
+
+| Category | Percent | Avg Folios | Interpretation |
+|----------|---------|------------|----------------|
+| Strictly local (1 folio) | 87.3% | 1.0 | Specific material identifiers |
+| Local (1-2 folios) | ~90% | 1.28 avg | Material identifiers |
+| Distributed (10+ folios) | <1% | varies | Compatibility bridges |
+
+**NOTE (2026-01-24):** Regenerated with atomic-suffix parser. With 609 RI MIDDLEs: 87% appear on only 1 folio, avg ~1.3 folios.
+
+**PREFIX/SUFFIX Versatility:**
+
+| Affix | Different MIDDLEs | Role |
+|-------|-------------------|------|
+| ch | 57 | Global grammatical marker |
+| sh | 29 | Global grammatical marker |
+| qo | 27 | Global grammatical marker |
+| dy | 40 | Global grammatical marker |
+| y | 34 | Global grammatical marker |
+
+Same affixes combine with many different RI extensions - the grammar layer is independent of the lexical layer.
+
+**Variation Pattern:**
+- 95% of localized RI appear with multiple PREFIX/SUFFIX combinations
+- Same RI MIDDLE, different grammatical context
+- Example: `cheom`, `sheom`, `okeom`, `cheomam` all share MIDDLE `eom`
+
+### The Two-Layer Model
+
+```
+Word Structure:
+  TOKEN = PREFIX + MIDDLE + SUFFIX
+          ↓        ↓        ↓
+          Grammar  MIDDLE   Grammar
+                   ↓
+           PP_atom + Extension
+           ↓         ↓
+           Grammar   Lexicon
+```
+
+**Interpretation:**
+- PP atoms encode **procedural compatibility** (what can be done)
+- RI extensions encode **referential identity** (to what)
+- PREFIX/SUFFIX encode **grammatical context** (in what form)
+
+### RI PREFIX Bifurcation (C528) - NEW in v4.40
+
+RI MIDDLEs split into two nearly-disjoint populations based on PREFIX behavior:
+
+| Population | Count | % of RI |
+|------------|-------|---------|
+| PREFIX-REQUIRED | 334 | 50.1% |
+| PREFIX-FORBIDDEN | 321 | 48.1% |
+| PREFIX-OPTIONAL | 12 | 1.8% |
+
+**Key finding:** Only 1.8% of RI MIDDLEs appear both ways. The rest are locked into one pattern.
+
+**Section independence:** Both populations show identical distributions across H and P sections (~54% PREFIX rate in each). The split is substance-inherent, not section-driven.
+
+**Implication for two-layer model:** PREFIX is grammatical globally, but its attachment to specific RI MIDDLEs is **lexically encoded**. Each substance identifier inherently requires or forbids PREFIX marking:
+
+```
+RI Vocabulary (609 MIDDLEs)  [regenerated 2026-01-24]
++-- PREFIX-REQUIRED (~50%): Always appear with PREFIX
+|     Examples: acp, afd, aiikh, akod, alda
+|
++-- PREFIX-FORBIDDEN (~50%): Never appear with PREFIX
+      Examples: aiee, aiid, cckh, cfaras, cfhod
+```
+
+This creates two parallel substance vocabularies on each folio, both following the same localization pattern (87-90% on exactly 1 folio).
+
+### Semantic Ceiling Refinement
+
+This refines C120 (PURE_OPERATIONAL):
+
+| What | Status |
+|------|--------|
+| Grammar (PREFIX, SUFFIX, PP) | No semantic content - abstract functional positions |
+| Lexicon (RI extensions) | REFERENTIAL content - points to substances |
+| Entity identity | IRRECOVERABLE - we know THAT 609 things are distinguished, not WHAT |
+
+The system can **reference** specific substances without **encoding** which substances they are. The manuscript is operational AND referential - these are not contradictory.
+
+### Why This Matters
+
+**For the apparatus model:**
+- Grammar tells the operator WHAT TO DO
+- Lexicon tells the operator TO WHAT
+- Both are necessary for functional completeness
+
+**For interpretation:**
+- ~609 substances/categories are distinguished in Currier A
+- Cannot identify which (semantic ceiling)
+- But we know they exist as distinct referents
+
+**For the expert-oriented design:**
+- Expert knows WHAT each RI extension refers to
+- Grammar provides procedural context
+- System assumes external knowledge of referents
+
+### What This Does NOT Claim
+
+- ❌ RI extensions encode specific plants (we can't know which)
+- ❌ The lexical layer enables translation
+- ❌ Meaning can be recovered from the text
+- ❌ RI extensions are linguistic labels
+
+**The distinction is functional, not semantic:** RI extensions POINT TO substances the way dictionary entries point to concepts - without encoding WHICH concepts.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C120 | PURE_OPERATIONAL (applies to grammar, refined for lexicon) |
+| C498 | RI vocabulary track (83% localized) |
+| C475 | MIDDLE incompatibility (compatibility layer) |
+| C509 | PP/RI dimensional separability |
+| C517 | Superstring compression |
+| C526 | RI Lexical Layer Hypothesis |
+
+**Source:** RI_STRUCTURE_ANALYSIS (2026-01-24)
+
+### Gallows Domain Coherence (Tier 3)
+
+**Finding (C530):** When RI contains gallows letter X, PP in the same record is 2-5x more likely to also contain X:
+
+| Gallows | PP baseline | Observed in same record | Enrichment |
+|---------|-------------|-------------------------|------------|
+| k | 23.5% | 54.8% | 2.3x |
+| t | 15.8% | 33.1% | 2.1x |
+| p | 8.7% | 42.9% | 4.9x |
+| f | 5.0% | 17.9% | 3.6x |
+
+**Interpretation:**
+
+This supports the RI lexical layer hypothesis: RI MIDDLEs reference specific materials that cluster by some property. Records and folios appear to organize around gallows "domains":
+
+- **k-domain:** Default/unmarked (78/109 folios are k-dominant)
+- **t-domain:** Alternative category (cluster of t-specialized folios)
+- **p/f-domains:** Rare specialized markers (never folio-dominant)
+
+This is NOT compositional derivation (the PP-as-atoms theory was statistically insignificant per C512 retest). Rather, it suggests **thematic coherence** - records dealing with the same category of material tend to use vocabulary (both RI and PP) from the same gallows domain.
+
+**What this supports:**
+- RI references external substances organized by some categorical property
+- That property correlates with gallows letter usage
+- The expert user would recognize these domain clusters
+
+**What this does NOT claim:**
+- ❌ Gallows letters encode specific meanings (we can't know what k vs t signifies)
+- ❌ Domain clustering enables translation or identification
+
+**Source:** GALLOWS_MIDDLE_ANALYSIS (2026-01-24)
+
+---
+
 ## I. Human Track (HT) Interpretation
 
 ### Tier 2: Core Finding (v2.13)
@@ -2362,8 +3083,10 @@ AZC serves as a **decision-point grammar** that transforms static A-registry ent
 | System | Function | Type |
 |--------|----------|------|
 | Currier A | WHAT exists | Static registry |
-| Currier B | HOW to proceed | Procedural sequence |
+| Currier B | HOW to respond | State-triggered interventions |
 | AZC | WHEN to decide | Decision grammar |
+
+**Note (C171 clarification, v4.37):** "HOW to respond" means state-triggered interventions, NOT sequential steps. B tokens are control actions selected based on assessed system state, following a MONITOR→ASSESS→SELECT→EXECUTE→RETURN cycle. See MODEL_CONTEXT.md Section VI.
 
 ### Phase-to-Workflow Mapping
 
@@ -4138,6 +4861,178 @@ This:
 
 ---
 
+### X.19.a Jar Labels as Compressed Configuration Signatures (2026-01-23)
+
+Extended analysis of pharma label morphology reveals structural evidence for the apparatus interpretation.
+
+#### Key Findings (C523, C524)
+
+**Vocabulary Bifurcation:**
+- Jar labels: 12.5% in Currier A (2/16), both RI, 87.5% NOT in text
+- Content labels: 50% in Currier A (103/206), 58.3% PP vs 33.5% baseline
+
+**Morphological Compression:**
+
+| Metric | Jar Labels | Currier A Baseline |
+|--------|------------|--------------------|
+| Mean length | 7.1 chars | 6.0 chars |
+| PP atoms per MIDDLE | 5-8 | ~3-4 |
+| In vocabulary | 12.5% | 100% (by definition) |
+
+Examples of jar label compression:
+- `yteoldy` → 8 PP atoms: y, t, e, o, l, d, ol, eo
+- `darolaly` → 7 PP atoms: d, a, r, o, l, al, ar
+- `porshols` → 5 PP atoms: o, r, s, ol, or
+
+#### Tier 3 Interpretation
+
+> **Jar labels are densely-packed configuration signatures encoding apparatus states via superstring compression. They are NOT vocabulary items because they are NOT meant to be parsed - they are holistic identifiers for specific physical configurations. Content labels use shared vocabulary (PP-enriched) because they describe processable materials that participate in the downstream pipeline.**
+
+This explains:
+- Why jar labels are longer (packing more discrimination)
+- Why jar labels are almost entirely absent from text (not parseable units)
+- Why content labels are PP-enriched (materials that will be processed)
+- Why vocabulary separation is complete (different encoding purposes)
+
+**Constraints:** C523 (Pharma Label Vocabulary Bifurcation), C524 (Jar Label Morphological Compression)
+
+**Status:** CLOSED - Confirms apparatus interpretation with morphological evidence
+
+---
+
+### X.19.b Morphological Function Model: PP/RI Pipeline Architecture (2026-01-23)
+
+**Tier:** 4 (Speculative synthesis) with Tier 2-3 structural components
+
+This section synthesizes findings from C509.a, C516-C520, C523-C524, and the pharma label analysis into a functional interpretation of Voynich morphology.
+
+#### Core Model: A-Records as Mapping Instructions
+
+An A-record functions as a specification:
+> "This material (with PREFIX control-flow context) has compatibility capacity [PP], with these specific discrimination characteristics [RI], legal during [SUFFIX phase]."
+
+#### Component Functions
+
+**PREFIX = Control-Flow Participation (Tier 2, per C466-C467, C383)**
+
+- Encodes intervention/monitoring/core mode
+- Universal across all token types (PP and RI)
+- Not part of the PP/RI distinction
+- Global type system spanning A, B, and AZC
+
+**PP MIDDLE = Compatibility Capacity Markers (Tier 3 interpretation)**
+
+- Short MIDDLEs (originally avg 1.46 chars per C509.a; see methodology note for revised values)
+- Encode what process categories a material can participate in
+- Must remain as discrete tokens because:
+  - AZC checks legality per-token
+  - Currier B responds to tokens as atomic units
+  - Shared vocabulary enables recombinability across materials
+- PP count correlates with B class survival breadth (r=0.715, C506)
+- Note: PP tokens also encode behavioral variants within classes (C506.b)
+
+**RI MIDDLE = Locally-Scoped Discrimination Vocabulary (Tier 3-4)**
+
+- Longer MIDDLEs (originally avg 3.96 chars per C509.a; revised to 4.73 with corrected extraction)
+- 85.4% contain multiple PP atoms (C516)
+- Use superstring compression via shared hinge letters (C517)
+- Encode multidimensional discrimination: intersection of multiple PP-type properties
+- Structurally excluded from A→AZC→B pipeline (per C444 vanishing semantics)
+- Can compress freely because no downstream parsing required
+- Length gradient is emergent from compositional morphology (C498.d: rho=-0.367)
+
+**SUFFIX = Two-Axis Context Marker (Tier 2-3, per C283, C495, C527)**
+
+SUFFIX operates on two orthogonal dimensions:
+- **System role** (Tier 2): A/B enrichment patterns (C283, C495)
+- **Material class** (Tier 3): Animal vs herb within A, correlated with fire degree (C527)
+
+The earlier "decision archetype (D1-D12)" mapping is provisional. See ccm_suffix_mapping.md for details and uncertainty markers.
+
+#### The Compression Gradient
+
+| Token Type | Compression | Reusability | Architectural Role |
+|------------|-------------|-------------|-------------------|
+| PP tokens | Low (atomic) | High (shared A∩B) | Pipeline-compatible units |
+| RI tokens | Moderate (2-4 atoms) | Low (mostly singletons) | Local discrimination |
+| Jar labels | Maximum (5-8 atoms) | None (unique) | Physical configuration IDs |
+
+**Key insight:** More downstream pipeline exposure requires less compression. PP must stay discrete for AZC/B processing. RI is local to A. Jar labels never enter the pipeline.
+
+#### Architectural Interpretation (Tier 4)
+
+The system may function as a working pharmaceutical/alchemical manual (consistent with C196-C197 "EXPERT_REFERENCE archetype"):
+
+```
+Layer 1: CURRIER A (Registry)
+- Material discrimination via PP (capacity) + RI (specifics)
+- PP provides shared vocabulary substrate
+- RI adds fine-grained multidimensional discrimination
+
+Layer 2: AZC (Legality Filter)
+- Per-token compatibility checking
+- Requires discrete PP units for independent validation
+
+Layer 3: CURRIER B (Execution)
+- Closed-loop control responding to PP tokens
+- RI structurally excluded (already used for selection)
+
+Layer 4: JAR LABELS (Physical Interface - Tier 4)
+- Maximally compressed configuration identifiers
+- Coordinate symbolic system with physical apparatus
+- Never enter execution pipeline
+```
+
+#### Why PP Stays Discrete
+
+If everything were compressed into single superstrings per material:
+- AZC couldn't check individual compatibilities
+- B couldn't respond to individual properties
+- Shared vocabulary would be lost
+- Recombinability across materials would break
+
+The separation of concerns enables both:
+- **Reusability** via atomic PP vocabulary (shared across system)
+- **Specificity** via compressed RI discrimination (local to A)
+
+#### Speculative Extension: The Workshop Model (Tier 4)
+
+If this is a working manual, the practitioner's workflow might be:
+
+1. **Consult PP vocabulary** → Find materials with required compatibility
+2. **Check RI discrimination** → Select specific material matching constraints
+3. **Verify via AZC** → Confirm positional legality for combination
+4. **Execute via B** → Run the closed-loop control program
+5. **Physical coordination** → Use jar labels to identify apparatus configuration
+
+The jar labels are the "last mile" - where abstract constraints meet physical vessels.
+
+#### Constraints Supporting This Model
+
+| Constraint | Contribution |
+|------------|--------------|
+| C509.a | PP/RI morphological bifurcation |
+| C516 | RI multi-atom composition (85.4%) |
+| C517 | Superstring compression mechanism |
+| C506 | PP count → class survival correlation |
+| C506.b | PP behavioral heterogeneity within classes |
+| C523 | Pharma label vocabulary bifurcation |
+| C524 | Jar label morphological compression |
+| C383 | Global PREFIX type system |
+| C466-C467 | PREFIX as control-flow participation |
+| C495 | SUFFIX regime breadth correlation |
+
+#### Explicit Uncertainties
+
+- Whether compression is "intentional" or emergent from compositional morphology
+- Exact semantic content (if any) of PP compatibility dimensions
+- Whether jar labels encode apparatus configurations specifically
+- The "workshop manual" framing is consistent but not proven
+
+**Status:** OPEN - Tier 4 synthesis for further investigation
+
+---
+
 ### X.20 A->AZC->B Pipeline Closure: Reachability Suppression (2026-01-17) - NEW
 
 **Phase:** AZC_REACHABILITY_SUPPRESSION
@@ -5112,32 +6007,116 @@ morphology:
     entropy: "6.70 bits (65.6% of maximum)"
     incompatibility_rate: "95.7% of pairs are illegal"  # C475
     two_track_structure:
-      description: "MIDDLEs divide into shared-with-B (43.4%) and registry-internal (56.6%)"
+      # REGENERATED 2026-01-24: Atomic-suffix parser (voynich.py)
+      description: "MIDDLEs divide into shared-with-B (39.9%) and registry-internal (60.1%)"
       shared_with_b:
-        count: 268
-        substructure:  # C498.a
+        count: 404
+        substructure:  # C498.a - RE-VERIFIED 2026-01-24
           azc_mediated:
-            count: 154
-            percent: "25.0% of A vocabulary"
-            role: "True pipeline participation: A→AZC→B constraint propagation"
+            count: 214
+            percent: "19.8% of A vocabulary"
+            role: "True pipeline participation: A->AZC->B constraint propagation"
             breakdown:
-              universal: 17  # 10+ AZC folios, 48.7 B spread
-              moderate: 45   # 3-10 AZC folios, 20.1 B spread
-              restricted: 92 # 1-2 AZC folios, 6.8 B spread
+              universal: 28   # 10+ AZC folios, avg 54.8 B spread
+              moderate: 69    # 3-9 AZC folios, avg 15.4 B spread
+              restricted: 117 # 1-2 AZC folios, avg 6.3 B spread
           b_native_overlap:
-            count: 114
-            percent: "18.5% of A vocabulary"
+            count: 198
+            percent: "18.4% of A vocabulary"
             role: "B operational vocabulary with incidental A presence"
-            characteristics: "Zero AZC presence, B-heavy frequency (58.8% have B > 2×A)"
-            note: "NOT pipeline-participating despite A∩B membership"
+            characteristics: "Zero AZC presence, avg 3.5 B folios"
+            note: "NOT pipeline-participating despite A&B membership"
         provenance: "C498.a"
       registry_internal:
-        count: 349
-        characteristics: "ct-prefix 5.1× enriched, suffix-less 3×, folio-localized (1.34 folios)"
+        count: 609
+        characteristics: "ct-prefix enriched, suffix-less, folio-localized"
         role: "Stay in A registry, encode within-category fine distinctions"
         interpretation: "Below granularity threshold for execution"
       provenance: "C498, C498.a"
-    provenance: "C293, C423, C475, C498"
+      revision_date: "2026-01-24"
+
+    # Gallows patterns (C529-C530)
+    gallows:
+      description: "Gallows letters (p,t,k,f) show positional and distributional asymmetry"
+
+      positional_asymmetry:  # C529
+        pp_gallows_initial: "30.4%"
+        ri_gallows_initial: "20.1%"
+        pp_gallows_medial: "39.3%"
+        ri_gallows_medial: "57.8%"
+        statistical_significance: "chi2=7.69, p<0.01"
+        interpretation: "PP gallows are atomic (initial); RI gallows are embedded (medial)"
+        bench_gallows_ri_enriched:
+          cph: "81% RI"
+          ckh: "65% RI"
+          cth: "59% RI"
+        discrimination_heuristic: "len>=4 AND not gallows-initial -> 76.6% RI accuracy"
+        provenance: "C529"
+
+      folio_specialization:  # C530
+        global_distribution:
+          k: "53.7%"
+          t: "30.4%"
+          p: "11.4%"
+          f: "4.5%"
+        k_dominant_folios: "78/109 (72%)"
+        t_specialized_folios: ["f4r (69%)", "f10r (74%)", "f29v (71%)"]
+        p_f_never_dominant: true
+        ri_pp_coherence: "62.2% same dominant (vs 54% expected)"
+        interpretation: "k=default domain, t=alternative domain, p/f=specialized markers"
+        provenance: "C530"
+
+    # Sub-component grammar (C510-C513)
+    sub_component_grammar:
+      description: "MIDDLEs exhibit internal compositional structure with systematic construction rules"
+      sub_component_count: 218  # C267.a
+      reconstruction_coverage: "97.8%"
+
+      positional_classes:  # C510
+        START_class: 62
+        END_class: 14
+        MIDDLE_class: 1
+        FREE_class: 110
+        constrained_rate: "41.2%"
+        free_rate: "58.8%"
+        statistical_significance: "z=34.16, p<0.0001"
+        interpretation: "Permissive grammar - constraints exist but majority of components are positionally free"
+        provenance: "C510"
+
+      derivational_productivity:  # C511
+        seeding_ratio: "12.67x above chance"
+        relationships_above_chance: "89.8%"
+        mechanism: "Short frequent forms extended into longer unique forms"
+        explains: "C498.d length-frequency correlation"
+        provenance: "C511"
+
+      pp_substrate:  # C512
+        pp_as_subcomponents: "72.2%"
+        ri_containing_pp: "99.1%"
+        section_invariance_ratio: "8.3x (PP vs RI)"
+        pp_in_all_sections: "60.7%"
+        ri_in_all_sections: "2.6%"
+        interpretation: "PP is universal substrate; RI is section-specific elaboration"
+        provenance: "C512"
+
+      positional_asymmetry:  # C512.a
+        END_class_pp_rate: "71.4%"
+        START_class_pp_rate: "16.1%"
+        FREE_class_pp_rate: "40.9%"
+        pp_free_rate: "69.2%"
+        architecture: "RI-START + PP-FREE + PP-END"
+        pp_terminators: ["ch", "d", "e", "g", "h", "k", "s", "t"]
+        interpretation: "RI elaborates at start, PP terminates at end"
+        provenance: "C512.a"
+
+      short_singleton_variance:  # C513
+        character_inventory_jaccard: "1.00"
+        interpretation: "Singleton status at ≤3 chars is sampling variance, not functional distinction"
+        provenance: "C513"
+
+      provenance: "C267.a, C510, C511, C512, C512.a, C513"
+
+    provenance: "C293, C423, C475, C498, C510-C513"
 
   suffix:
     count: 25

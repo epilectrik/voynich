@@ -1,0 +1,256 @@
+{
+  "total_chains": 313,
+  "mean_chain_length": 2.2108626198083066,
+  "chains_by_regime": {
+    "REGIME_3": 13,
+    "REGIME_2": 36,
+    "REGIME_4": 103,
+    "REGIME_1": 161
+  },
+  "regime_enrichment": {
+    "REGIME_3": 0.5532057589057048,
+    "REGIME_2": 0.42495743811980496,
+    "REGIME_4": 1.0340518571645911,
+    "REGIME_1": 1.5307371625062316
+  },
+  "qo_chsh_ratio_by_regime": {
+    "REGIME_3": 0.8571428571428571,
+    "REGIME_2": 0.6789617486338798,
+    "REGIME_4": 1.030264817150063,
+    "REGIME_1": 1.030995106035889
+  },
+  "top_chains": [
+    {
+      "folio": "f108v",
+      "line": "39",
+      "regime": "REGIME_4",
+      "length": 6,
+      "tokens": [
+        "qokeedy",
+        "qokeedy",
+        "qokeedy",
+        "qotey",
+        "qokeey",
+        "qokeey"
+      ]
+    },
+    {
+      "folio": "f75r",
+      "line": "13",
+      "regime": "REGIME_1",
+      "length": 5,
+      "tokens": [
+        "qokedy",
+        "qokedy",
+        "qokedy",
+        "qokedy",
+        "qokain"
+      ]
+    },
+    {
+      "folio": "f75r",
+      "line": "38",
+      "regime": "REGIME_1",
+      "length": 5,
+      "tokens": [
+        "qokeedy",
+        "qokeedy",
+        "qokedy",
+        "qokedy",
+        "qokeedy"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "34",
+      "regime": "REGIME_1",
+      "length": 5,
+      "tokens": [
+        "qokeedy",
+        "qotedy",
+        "qokeedy",
+        "qokeedy",
+        "qokeey"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "11",
+      "regime": "REGIME_1",
+      "length": 4,
+      "tokens": [
+        "qokeedy",
+        "qokeedy",
+        "qokar",
+        "qokeey"
+      ]
+    },
+    {
+      "folio": "f80v",
+      "line": "24",
+      "regime": "REGIME_1",
+      "length": 4,
+      "tokens": [
+        "qokeey",
+        "qokey",
+        "qoty",
+        "qotol"
+      ]
+    },
+    {
+      "folio": "f82v",
+      "line": "3",
+      "regime": "REGIME_1",
+      "length": 4,
+      "tokens": [
+        "qotal",
+        "qoty",
+        "qokal",
+        "qokedy"
+      ]
+    },
+    {
+      "folio": "f75v",
+      "line": "21",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokedy",
+        "qokeedy",
+        "qokar"
+      ]
+    },
+    {
+      "folio": "f76r",
+      "line": "12",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokeedy",
+        "qotey",
+        "qotain"
+      ]
+    },
+    {
+      "folio": "f76r",
+      "line": "43",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokedy",
+        "qokeedy",
+        "qokedy"
+      ]
+    },
+    {
+      "folio": "f76v",
+      "line": "23",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokeedy",
+        "qoteey",
+        "qokol"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "2",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qotaiin",
+        "qotedy",
+        "qokol"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "9",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qoteedy",
+        "qoteedy",
+        "qokedy"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "12",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokeedy",
+        "qoteey",
+        "qokain"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "13",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokeedy",
+        "qokedy",
+        "qokeey"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "18",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qoteedy",
+        "qokeedy",
+        "qokaiin"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "21",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokeedy",
+        "qokeedy",
+        "qotal"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "23",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qokeey",
+        "qotedy",
+        "qotedy"
+      ]
+    },
+    {
+      "folio": "f77r",
+      "line": "35",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qotaiin",
+        "qoteedy",
+        "qotedy"
+      ]
+    },
+    {
+      "folio": "f77v",
+      "line": "1",
+      "regime": "REGIME_1",
+      "length": 3,
+      "tokens": [
+        "qotedy",
+        "qotedy",
+        "qokedy"
+      ]
+    }
+  ]
+}

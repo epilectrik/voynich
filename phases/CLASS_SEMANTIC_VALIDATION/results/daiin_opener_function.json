@@ -1,0 +1,134 @@
+{
+  "daiin_stats": {
+    "total": 314,
+    "initial": 87,
+    "initial_rate": 27.70700636942675
+  },
+  "daiin_class": 10,
+  "daiin_role": "CC",
+  "daiin_morphology": {
+    "prefix": "da",
+    "middle": "iin",
+    "suffix": null
+  },
+  "top_openers": [
+    {
+      "token": "daiin",
+      "count": 87
+    },
+    {
+      "token": "saiin",
+      "count": 48
+    },
+    {
+      "token": "dain",
+      "count": 35
+    },
+    {
+      "token": "sain",
+      "count": 34
+    },
+    {
+      "token": "qokeedy",
+      "count": 32
+    },
+    {
+      "token": "dshedy",
+      "count": 31
+    },
+    {
+      "token": "sol",
+      "count": 28
+    },
+    {
+      "token": "qokeey",
+      "count": 27
+    },
+    {
+      "token": "y",
+      "count": 27
+    },
+    {
+      "token": "sor",
+      "count": 26
+    }
+  ],
+  "daiin_followers": [
+    {
+      "token": "sheol",
+      "count": 4
+    },
+    {
+      "token": "chey",
+      "count": 4
+    },
+    {
+      "token": "or",
+      "count": 3
+    },
+    {
+      "token": "chedy",
+      "count": 3
+    },
+    {
+      "token": "shody",
+      "count": 3
+    },
+    {
+      "token": "shey",
+      "count": 3
+    },
+    {
+      "token": "shedy",
+      "count": 2
+    },
+    {
+      "token": "shckhy",
+      "count": 2
+    },
+    {
+      "token": "cheol",
+      "count": 2
+    },
+    {
+      "token": "sheey",
+      "count": 2
+    }
+  ],
+  "daiin_by_regime": {
+    "REGIME_3": {
+      "initial": 5,
+      "total": 42
+    },
+    "REGIME_4": {
+      "initial": 33,
+      "total": 114
+    },
+    "REGIME_2": {
+      "initial": 26,
+      "total": 76
+    },
+    "REGIME_1": {
+      "initial": 23,
+      "total": 82
+    }
+  },
+  "daiin_by_section": {
+    "HERBAL": {
+      "initial": 11,
+      "total": 62
+    },
+    "PHARMA": {
+      "initial": 2,
+      "total": 12
+    },
+    "BIO": {
+      "initial": 17,
+      "total": 83
+    },
+    "RECIPE": {
+      "initial": 57,
+      "total": 157
+    }
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "phase": 2,
+    "description": "Animal AZC trace",
+    "animal_records_traced": 120,
+    "unique_compatible_middles": 120,
+    "unique_compatible_tokens": 1011
+  },
+  "statistics": {
+    "mean_compatible_tokens": 23.233333333333334,
+    "min_compatible_tokens": 0,
+    "max_compatible_tokens": 94,
+    "baseline_mean_tokens": 41.891666666666666,
+    "animal_vs_baseline_ratio": 0.5546051322856574
+  },
+  "animal_compatible_middles": {
+    "o": 255,
+    "l": 253,
+    "y": 196,
+    "ol": 194,
+    "iin": 159,
+    "r": 144,
+    "eo": 139,
+    "or": 130,
+    "od": 112,
+    "k": 97,
+    "d": 71,
+    "eey": 60,
+    "e": 59,
+    "ey": 56,
+    "ar": 53,
+    "ckh": 48,
+    "s": 48,
+    "aiin": 42,
+    "in": 35,
+    "ch": 31,
+    "dy": 31,
+    "eeo": 29,
+    "t": 28,
+    "eod": 28,
+    "al": 26,
+    "ee": 26,
+    "eol": 26,
+    "ok": 22,
+    "h": 21,
+    "cph": 20,
+    "cho": 19,
+    "ck": 18,
+    "ot": 16,
+    "ain": 16,
+    "teo": 14,
+    "edy": 14,
+    "am": 9,
+    "tcho": 8,
+    "op": 8,
+    "ek": 7,
+    "ly": 7,
+    "oct": 6,
+    "tch": 6,
+    "ctho": 6,
+    "ai": 6,
+    "sho": 6,
+    "pch": 6,
+    "kch": 6,
+    "hy": 6,
+    "keo": 5,
+    "teeo": 5,
+    "kcho": 5,
+    "keeo": 5,
+    "te": 5,
+    "i": 5,
+    "eeol": 5,
+    "ckho": 5,
+    "och": 5,
+    "aii": 5,
+    "opcho": 4,
+    "ockh": 4,
+    "et": 4,
+    "ke": 4,
+    "kc": 4,
+    "cth": 4,
+    "do": 3,
+    "ock": 3,
+    "chod": 3,
+    "to": 3,
+    "ry": 3,
+    "okc": 3,
+    "cfh": 3,
+    "ad": 3,
+    "cp": 3,
+    "lchd": 3,
+    "octho": 2,
+    "chd": 2,
+    "eee": 2,
+    "so": 2,
+    "c": 2,
+    "cf": 2,
+    "ocho": 2,
+    "olo": 2,
+    "tsh": 2,
+    "eot": 2,
+    "eed": 2,
+    "tc": 2,
+    "eocp": 2,
+    "yt": 2,
+    "oee": 2,
+    "ct": 2,
+    "keod": 1,
+    "opc": 1,
+    "cpheo": 1,
+    "eke": 1,
+    "ekeod": 1,
+    "oeeeo": 1,
+    "ete": 1,
+    "otch": 1,
+    "yfol": 1,
+    "tee": 1,
+    "yk": 1,
+    "cpho": 1,
+    "kee": 1,
+    "ii": 1,
+    "otc": 1,
+    "a": 1,
+    "cheo": 1,
+    "fch": 1,
+    "of": 1,
+    "orch": 1,
+    "ofcho": 1,
+    "che": 1,
+    "okcho": 1,
+    "ckheo": 1,
+    "yd": 1,
+    "n": 1,
+    "ts": 1,
+    "oeee": 1,
+    "ld": 1
+  },
+  "enriched_middles": [
+    {
+      "middle": "cph",
+      "enrichment": 166.66666666666666,
+      "count": 20
+    },
+    {
+      "middle": "edy",
+      "enrichment": 116.66666666666667,
+      "count": 14
+    },
+    {
+      "middle": "op",
+      "enrichment": 66.66666666666667,
+      "count": 8
+    },
+    {
+      "middle": "tch",
+      "enrichment": 50.0,
+      "count": 6
+    },
+    {
+      "middle": "ctho",
+      "enrichment": 50.0,
+      "count": 6
+    },
+    {
+      "middle": "sho",
+      "enrichment": 50.0,
+      "count": 6
+    },
+    {
+      "middle": "pch",
+      "enrichment": 50.0,
+      "count": 6
+    },
+    {
+      "middle": "teeo",
+      "enrichment": 41.666666666666664,
+      "count": 5
+    },
+    {
+      "middle": "te",
+      "enrichment": 41.666666666666664,
+      "count": 5
+    },
+    {
+      "middle": "cho",
+      "enrichment": 9.5,
+      "count": 19
+    },
+    {
+      "middle": "tcho",
+      "enrichment": 8.0,
+      "count": 8
+    },
+    {
+      "middle": "eod",
+      "enrichment": 4.0,
+      "count": 28
+    },
+    {
+      "middle": "teo",
+      "enrichment": 1.75,
+      "count": 14
+    },
+    {
+      "middle": "kcho",
+      "enrichment": 1.6666666666666665,
+      "count": 5
+    },
+    {
+      "middle": "keeo",
+      "enrichment": 1.6666666666666665,
+      "count": 5
+    }
+  ],
+  "folio_reception_preview": {
+    "f33v": {
+      "total_middles": 35,
+      "animal_compatible": 30,
+      "reception_rate": 0.8571428571428571
+    },
+    "f95r2": {
+      "total_middles": 36,
+      "animal_compatible": 30,
+      "reception_rate": 0.8333333333333334
+    },
+    "f40v": {
+      "total_middles": 39,
+      "animal_compatible": 32,
+      "reception_rate": 0.8205128205128205
+    },
+    "f41v": {
+      "total_middles": 36,
+      "animal_compatible": 29,
+      "reception_rate": 0.8055555555555556
+    },
+    "f94v": {
+      "total_middles": 46,
+      "animal_compatible": 36,
+      "reception_rate": 0.782608695652174
+    },
+    "f95r1": {
+      "total_middles": 38,
+      "animal_compatible": 29,
+      "reception_rate": 0.7631578947368421
+    },
+    "f34v": {
+      "total_middles": 50,
+      "animal_compatible": 38,
+      "reception_rate": 0.76
+    },
+    "f48v": {
+      "total_middles": 50,
+      "animal_compatible": 38,
+      "reception_rate": 0.76
+    },
+    "f95v2": {
+      "total_middles": 29,
+      "animal_compatible": 22,
+      "reception_rate": 0.7586206896551724
+    },
+    "f33r": {
+      "total_middles": 36,
+      "animal_compatible": 27,
+      "reception_rate": 0.75
+    },
+    "f40r": {
+      "total_middles": 39,
+      "animal_compatible": 29,
+      "reception_rate": 0.7435897435897436
+    },
+    "f34r": {
+      "total_middles": 61,
+      "animal_compatible": 44,
+      "reception_rate": 0.7213114754098361
+    },
+    "f94r": {
+      "total_middles": 46,
+      "animal_compatible": 33,
+      "reception_rate": 0.717391304347826
+    },
+    "f55r": {
+      "total_middles": 51,
+      "animal_compatible": 36,
+      "reception_rate": 0.7058823529411765
+    },
+    "f39v": {
+      "total_middles": 50,
+      "animal_compatible": 35,
+      "reception_rate": 0.7
+    },
+    "f50v": {
+      "total_middles": 45,
+      "animal_compatible": 31,
+      "reception_rate": 0.6888888888888889
+    },
+    "f55v": {
+      "total_middles": 45,
+      "animal_compatible": 31,
+      "reception_rate": 0.6888888888888889
+    },
+    "f48r": {
+      "total_middles": 52,
+      "animal_compatible": 35,
+      "reception_rate": 0.6730769230769231
+    },
+    "f31v": {
+      "total_middles": 47,
+      "animal_compatible": 31,
+      "reception_rate": 0.6595744680851063
+    },
+    "f43v": {
+      "total_middles": 64,
+      "animal_compatible": 42,
+      "reception_rate": 0.65625
+    },
+    "f85r2": {
+      "total_middles": 66,
+      "animal_compatible": 43,
+      "reception_rate": 0.6515151515151515
+    },
+    "f81r": {
+      "total_middles": 54,
+      "animal_compatible": 35,
+      "reception_rate": 0.6481481481481481
+    },
+    "f26v": {
+      "total_middles": 48,
+      "animal_compatible": 31,
+      "reception_rate": 0.6458333333333334
+    },
+    "f79r": {
+      "total_middles": 75,
+      "animal_compatible": 48,
+      "reception_rate": 0.64
+    },
+    "f57r": {
+      "total_middles": 61,
+      "animal_compatible": 39,
+      "reception_rate": 0.639344262295082
+    },
+    "f31r": {
+      "total_middles": 46,
+      "animal_compatible": 29,
+      "reception_rate": 0.6304347826086957
+    },
+    "f78v": {
+      "total_middles": 59,
+      "animal_compatible": 37,
+      "reception_rate": 0.6271186440677966
+    },
+    "f39r": {
+      "total_middles": 64,
+      "animal_compatible": 40,
+      "reception_rate": 0.625
+    },
+    "f84v": {
+      "total_middles": 64,
+      "animal_compatible": 40,
+      "reception_rate": 0.625
+    },
+    "f66v": {
+      "total_middles": 61,
+      "animal_compatible": 38,
+      "reception_rate": 0.6229508196721312
+    }
+  }
+}

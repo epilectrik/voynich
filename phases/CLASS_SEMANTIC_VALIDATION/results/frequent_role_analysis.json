@@ -1,0 +1,198 @@
+{
+  "frequent_classes": [
+    9,
+    20,
+    21,
+    23
+  ],
+  "frequent_tokens": {
+    "9": [
+      "o",
+      "aiin",
+      "or"
+    ],
+    "20": [
+      "os",
+      "tor",
+      "ky",
+      "pol",
+      "dl",
+      "kor",
+      "yty",
+      "sy",
+      "yky",
+      "rol",
+      "tal",
+      "om",
+      "kal",
+      "ldy",
+      "rar"
+    ],
+    "21": [
+      "ory",
+      "do",
+      "ral",
+      "ror",
+      "ty",
+      "lky",
+      "key",
+      "ram",
+      "oar",
+      "lo"
+    ],
+    "23": [
+      "am",
+      "l",
+      "s",
+      "r",
+      "y",
+      "d",
+      "dy"
+    ]
+  },
+  "token_frequencies": {
+    "aiin": 351,
+    "or": 250,
+    "dy": 109,
+    "y": 66,
+    "am": 55,
+    "s": 53,
+    "r": 39,
+    "l": 34,
+    "o": 29,
+    "pol": 22,
+    "ldy": 22,
+    "kal": 20,
+    "rol": 19,
+    "lky": 17,
+    "rar": 16,
+    "ral": 16,
+    "dl": 15,
+    "ror": 15,
+    "lo": 14,
+    "ram": 13,
+    "tal": 12,
+    "tor": 11,
+    "om": 11,
+    "os": 10,
+    "ky": 10,
+    "sy": 10,
+    "ory": 10,
+    "yty": 9,
+    "oar": 9,
+    "kor": 8,
+    "ty": 8,
+    "key": 7,
+    "d": 6,
+    "yky": 3,
+    "do": 2
+  },
+  "class_positions": {
+    "9": {
+      "initial": 20,
+      "final": 31,
+      "total": 630
+    },
+    "20": {
+      "initial": 32,
+      "final": 56,
+      "total": 198
+    },
+    "21": {
+      "initial": 5,
+      "final": 44,
+      "total": 111
+    },
+    "23": {
+      "initial": 44,
+      "final": 124,
+      "total": 362
+    }
+  },
+  "role_positions": {
+    "UN": {
+      "initial": 1205,
+      "final": 1104,
+      "total": 7042
+    },
+    "AX": {
+      "initial": 741,
+      "final": 602,
+      "total": 6920
+    },
+    "EN": {
+      "initial": 282,
+      "final": 312,
+      "total": 5732
+    },
+    "FQ": {
+      "initial": 101,
+      "final": 255,
+      "total": 1301
+    },
+    "CC": {
+      "initial": 128,
+      "final": 92,
+      "total": 1023
+    },
+    "FL": {
+      "initial": 87,
+      "final": 189,
+      "total": 1078
+    }
+  },
+  "frequent_by_regime": {
+    "REGIME_3": {
+      "total": 1734,
+      "frequent": 99
+    },
+    "REGIME_2": {
+      "total": 6251,
+      "frequent": 407
+    },
+    "REGIME_4": {
+      "total": 7350,
+      "frequent": 433
+    },
+    "REGIME_1": {
+      "total": 7761,
+      "frequent": 362
+    }
+  },
+  "frequent_by_section": {
+    "HERBAL": {
+      "total": 2687,
+      "frequent": 245
+    },
+    "PHARMA": {
+      "total": 529,
+      "frequent": 39
+    },
+    "BIO": {
+      "total": 6850,
+      "frequent": 328
+    },
+    "RECIPE": {
+      "total": 13030,
+      "frequent": 689
+    }
+  },
+  "class_chains": {
+    "9": {
+      "chains": 48,
+      "total_in_chains": 102
+    },
+    "20": {
+      "chains": 4,
+      "total_in_chains": 8
+    },
+    "21": {
+      "chains": 0,
+      "total_in_chains": 0
+    },
+    "23": {
+      "chains": 4,
+      "total_in_chains": 9
+    }
+  }
+}

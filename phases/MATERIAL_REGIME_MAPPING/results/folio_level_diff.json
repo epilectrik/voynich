@@ -1,0 +1,38 @@
+{
+  "regime_4_analysis": {
+    "correlation": 0.845021844633989,
+    "correlation_p": 1.0712700261379191e-07,
+    "paired_t": -11.396916571915423,
+    "paired_p": 3.6067131726089554e-11,
+    "animal_dominant": [],
+    "herb_dominant": [
+      "f26r",
+      "f31v",
+      "f34r",
+      "f34v",
+      "f39v",
+      "f40r",
+      "f40v",
+      "f41r",
+      "f41v",
+      "f43r",
+      "f43v",
+      "f46v",
+      "f50v",
+      "f55r",
+      "f55v",
+      "f57r",
+      "f66v",
+      "f85r1",
+      "f85r2",
+      "f86v6",
+      "f94r",
+      "f94v",
+      "f95v1"
+    ],
+    "neutral": [
+      "f50r",
+      "f95v2"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "class33_pharma_enrichment": 0.20153765313314312,
+  "energy_pharma_enrichments": {
+    "32": 0.8639972842511405,
+    "33": 0.20153765313314312,
+    "34": 1.8997116725015222,
+    "36": 1.0420480066466746,
+    "8": 0.7047807790481089,
+    "31": 0.9324471000787735
+  },
+  "class33_tokens": [
+    "qokeey",
+    "qokeedy",
+    "qokain",
+    "qokedy",
+    "qokaiin",
+    "qotedy",
+    "qotaiin",
+    "qoteedy",
+    "qokchy",
+    "qotain",
+    "qotchy",
+    "qokchdy",
+    "qokeol"
+  ],
+  "pharma_regime_composition": {
+    "REGIME_4": 87,
+    "REGIME_1": 442
+  }
+}

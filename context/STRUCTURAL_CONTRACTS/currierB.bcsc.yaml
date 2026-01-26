@@ -1,6 +1,6 @@
 # ============================================================
 # BCSC: Currier B Structural Contract
-# Version: 1.0
+# Version: 1.2
 # ============================================================
 #
 # This is a DERIVED, READ-ONLY specification.
@@ -19,8 +19,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "1.0"
-  date: "2026-01-13"
+  version: "1.2"
+  date: "2026-01-25"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints only"
@@ -49,6 +49,8 @@ ownership:
     - convergence_behavior
     - program_structure
     - recovery_architecture
+    - vocabulary_architecture  # Added v1.1: folio uniqueness, class-member differentiation
+    - execution_syntax  # Added v1.2: line-level role positioning, section profiles, AX architecture
   bcsc_does_not_describe:
     - currier_a_entries
     - azc_mechanics
@@ -98,6 +100,30 @@ guarantees:
     statement: "Execution is closed-loop control, not batch, decision tree, or state machine"
     provenance: "C171"
 
+  - id: "FOLIO_VOCABULARY_UNIQUENESS"
+    statement: "98.8% of folios contribute unique vocabulary appearing in no other folio"
+    provenance: "C531, C532"
+
+  - id: "FOLIO_COUNT_STRUCTURAL"
+    statement: "83 folios determined by vocabulary coverage, not arbitrary"
+    provenance: "C535"
+
+  - id: "CLASS_MEMBER_DIFFERENTIATION"
+    statement: "Grammar universal at class level; differentiation occurs at token level within classes"
+    provenance: "C506.b, C537"
+
+  - id: "EXECUTION_SYNTAX"
+    statement: "Lines follow a positional role grammar: SETUP→WORK→CHECK→CLOSE"
+    provenance: "C556"
+
+  - id: "AX_BEHAVIORAL_COLLAPSE"
+    statement: "20 AX classes collapse to ≤2 effective behavioral groups; position is the only differentiator"
+    provenance: "C572"
+
+  - id: "AX_PIPELINE_SCAFFOLD"
+    statement: "AX is the scaffold layer of the shared pipeline: 98.2% PP MIDDLEs, PREFIX-determined role"
+    provenance: "C567, C568, C571"
+
 # ============================================================
 # INVARIANTS
 # ============================================================
@@ -131,6 +157,31 @@ invariants:
     statement: "All kernel nodes are boundary-adjacent to forbidden transitions"
     description: "Kernel controls hazard proximity"
     provenance: "C107"
+
+  class_member_differentiation:
+    statement: "Grammar is universal at class level, differentiation at token level"
+    description: "Same 49 classes everywhere, but different tokens within class enable different behavioral flows"
+    provenance: "C506.b, C537"
+
+  folio_vocabulary_minimality:
+    statement: "81/82 folios required for complete vocabulary coverage"
+    description: "Folio count is structurally determined; redundancy ratio 1.01x"
+    provenance: "C535"
+
+  execution_syntax:
+    statement: "Lines follow SETUP→WORK→CHECK→CLOSE positional grammar"
+    description: "5 functional roles (CC, EN, FL, FQ, AX) occupy preferred line positions; ENERGY concentrates medially, FLOW concentrates finally"
+    provenance: "C556, C562"
+
+  energy_flow_anticorrelation:
+    statement: "ENERGY and FLOW roles are anticorrelated across sections"
+    description: "High-ENERGY sections are low-FLOW and vice versa; r = -0.89"
+    provenance: "C551"
+
+  ax_behavioral_collapse:
+    statement: "20 AX classes do not form distinct behavioral groups"
+    description: "Transitions uniform, context below random baseline, best clustering k=2 silhouette=0.18"
+    provenance: "C572"
 
 # ============================================================
 # GRAMMAR STRUCTURE
@@ -179,18 +230,30 @@ role_taxonomy:
       provenance: "C121"
 
     AUXILIARY:
-      function: "Execution scaffold / support operations"
+      function: "PREFIX-switched scaffold layer of shared pipeline vocabulary"
       class_count: 20
-      token_share: "25.8% of B"
-      provenance: "C121, AUX_COOCCURRENCE audit (2026-01-22)"
-      # AUXILIARY is a thick, AZC-conditioned execution infrastructure layer.
-      # 20 classes: 1-6, 15-22, 24-29 (verified via class_token_map.json)
-      # Dominated by classes 28, 29, 24 (~49% of AUXILIARY tokens).
-      # Internally redundant (per C411) but mutually compatible, not alternatives.
-      # 97.4% of class pairs co-occur; no pair is mutually exclusive under AZC.
-      # At Jaccard 0.7, all 20 classes cluster together (functional coherence).
-      # Survival stratification (28%-100%) reflects A-record MIDDLE availability,
-      # not functional importance. Classes 21, 22 always survive (universal MIDDLEs).
+      token_share: "28.4% of B"
+      provenance: "C121, C563-C572"
+      # ARCHITECTURE:
+      #   AX tokens use the SAME MIDDLEs as operational roles (98.2% PP).
+      #   PREFIX determines whether a MIDDLE acts as AX or operational (C571).
+      #   AX is not a separate vocabulary—it is a scaffold MODE of the pipeline.
+      #
+      # POSITIONAL SUB-STRUCTURE (C563):
+      #   AX_INIT  (classes 3, 4, 5, 6): line-initial scaffold
+      #   AX_MED   (classes 24, 25, 26, 27, 28, 29): medial scaffold
+      #   AX_FINAL (classes 1, 2, 14, 15, 16, 18, 19, 20, 21, 22): line-final scaffold
+      #
+      # BEHAVIORAL COLLAPSE (C572):
+      #   20 classes do NOT form distinct behavioral groups.
+      #   Transitions: uniform (only 3/20 structured). Context: below random baseline.
+      #   Best clustering: k=2, silhouette=0.18. Position is the only differentiator.
+      #   Effective behavioral groups: ≤2 (not 20).
+      #
+      # CO-OCCURRENCE:
+      #   97.4% of class pairs co-occur; no pair mutually exclusive.
+      #   At Jaccard 0.7, all 20 cluster together (functional coherence).
+      #   Survival stratification (28%-100%) reflects MIDDLE availability, not importance.
 
     FREQUENT_OPERATOR:
       function: "Common instructions"
@@ -210,6 +273,20 @@ role_taxonomy:
     LINK:
       function: "Monitoring/observation phase marker"
       provenance: "C366"
+
+  functional_classification:
+    description: "ICC-based 5-role functional system"
+    roles_mapped:
+      CC: "Core Control (kernel operators + boundary markers)"
+      EN: "Energy Operators (energy modulation, 11 classes)"
+      FL: "Flow Operators (flow control, 2 classes)"
+      FQ: "Frequent Operators (common instructions, 4 classes)"
+      AX: "Auxiliary (scaffold, 20 classes)"
+    provenance: "C547, C548, C549, C550"
+    note: |
+      ICC classification independently converged on the same role boundaries
+      as the original grammar analysis. This validates the role taxonomy
+      as structural rather than artifact of classification method.
 
   note: |
     Role classes are abstract grammar categories.
@@ -309,20 +386,51 @@ program_structure:
   description: "Folio = program, Line = control block"
 
   folio:
-    function: "Complete, self-contained program"
+    function: "Complete, self-contained program with unique vocabulary"
     count: 83
     macro_chaining: false
-    provenance: "C178"
+    unique_vocabulary_rate: "98.8%"  # 81/82 folios have unique MIDDLEs
+    mean_unique_middles: 10.5
+    count_structural: true  # 81/82 needed for coverage, not arbitrary
+    redundancy_ratio: "1.01x"
+    provenance: "C178, C531, C535"
 
   line:
-    function: "Formal control block"
+    function: "Formal control block with internal positional grammar"
     regularity: "3.3x more regular than random"
     boundary_markers:
       initial: ["daiin", "saiin", "sain"]
       final: ["am", "oly", "dy"]
     link_suppressed_at_boundary: true
     grammar_line_invariant: true
-    provenance: "C357, C358, C359, C360"
+    execution_syntax:
+      description: "Lines follow a 5-position functional role grammar"
+      positions:
+        - position: "SETUP"
+          location: "line-initial"
+          dominant_roles: ["AX_INIT", "CC"]
+          function: "Initialize scaffold and control state"
+        - position: "WORK"
+          location: "early-medial"
+          dominant_roles: ["EN", "FQ"]
+          function: "Primary operational activity"
+        - position: "CHECK"
+          location: "mid-line"
+          dominant_roles: ["EN", "AX_MED"]
+          function: "Verification / adjustment"
+        - position: "CLOSE"
+          location: "line-final"
+          dominant_roles: ["FL", "AX_FINAL", "CC"]
+          function: "Flow resolution and boundary"
+      triggers:
+        daiin_trigger: "daiin marks WORK→CHECK transition (C557)"
+        or_aiin_bigram: "or→aiin is strongest role-transition bigram (C561)"
+      role_concentration:
+        ENERGY: "medial (peaks at positions 3-6)"
+        FLOW: "final (hierarchy FL > CC at line end, C562)"
+        AX: "distributed across INIT/MED/FINAL sub-positions"
+      provenance: "C556, C557, C561, C562"
+    provenance: "C357, C358, C359, C360, C556, C557, C561, C562"
 
 # ============================================================
 # CONVERGENCE BEHAVIOR
@@ -411,6 +519,95 @@ design_freedom:
 
   principle: "Risk is globally constrained; recovery strategy is locally variable"
   provenance: "C458"
+
+# ============================================================
+# SECTION PROFILES
+# ============================================================
+# Added v1.2: CLASS_SEMANTIC_VALIDATION phase findings
+section_profiles:
+  description: "Section-specific behavioral signatures within B"
+
+  anticorrelation:
+    statement: "ENERGY and FLOW roles are anticorrelated across sections"
+    correlation: "r = -0.89"
+    interpretation: "Sections specialize in energy-intensive vs flow-intensive programs"
+    provenance: "C551"
+
+  profiles:
+    section_b:
+      signature: "Highest ENERGY concentration"
+      provenance: "C552"
+    section_h:
+      signature: "Highest FLOW concentration, lowest ENERGY"
+      provenance: "C553"
+    section_c:
+      signature: "Balanced ENERGY/FLOW, highest AX density"
+      provenance: "C554"
+    section_s:
+      signature: "Distinctive FQ elevation"
+      provenance: "C555"
+
+  note: |
+    Section profiles describe observational signatures, not
+    different grammars. The same 49-class grammar applies to
+    all sections (C124). Profiles reflect different operational
+    emphases within a single grammar.
+
+# ============================================================
+# VOCABULARY ARCHITECTURE
+# ============================================================
+# Added 2026-01-25: CLASS_COMPATIBILITY_ANALYSIS phase findings
+vocabulary_architecture:
+  description: "Grammar-vocabulary relationship structure"
+
+  class_level:
+    description: "49-class grammar applies universally to all folios"
+    coverage: "100%"
+    folio_invariant: true
+    provenance: "C121, C124"
+
+  member_level:
+    description: "Token variants within classes are NOT interchangeable"
+    behavioral_heterogeneity: true  # Different MIDDLEs -> different transitions
+    js_divergence: "73% of MIDDLE pairs have JS > 0.4"
+    provenance: "C506.b"
+
+  folio_uniqueness:
+    description: "Each folio contributes unique vocabulary"
+    unique_folio_rate: "98.8%"  # 81/82 folios
+    mean_unique_per_folio: 10.5
+    total_unique_middles: 858
+    unique_share_of_total: "64%"
+    only_non_unique_folio: "f95r1"
+    provenance: "C531"
+
+  folio_exclusivity:
+    description: "Unique vocabulary is primarily B-internal"
+    b_exclusive_rate: "88%"  # Not in A
+    pp_rate: "12%"  # A-derived
+    azc_modulates: "shared PP vocabulary only, not folio identity"
+    provenance: "C532"
+
+  grammatical_consistency:
+    description: "Unique MIDDLEs fill same grammatical slots"
+    slot_match_rate: "75%"
+    adjacent_folio_class_ratio: "1.30x"  # vs non-adjacent
+    interpretation: "Different words, same roles"
+    provenance: "C533"
+
+  minimality:
+    description: "Folio count is structurally determined by vocabulary"
+    min_folios_for_coverage: 81
+    actual_folios: 82
+    redundancy_ratio: "1.01x"
+    max_pairwise_jaccard: "<50%"  # Zero pairs exceed
+    provenance: "C535"
+
+  differentiation_principle: |
+    Grammar is universal at CLASS level (same 49 classes everywhere).
+    Differentiation occurs at TOKEN level within classes.
+    This enables material-appropriate execution via variant selection,
+    not via different procedures. (C506.b, C537)
 
 # ============================================================
 # ROBUSTNESS
@@ -518,6 +715,10 @@ disallowed:
     reason: "Closed-loop control only"
     provenance: "C171"
 
+  - interpretation: "20 AX classes represent 20 distinct behavioral modes"
+    reason: "Classes collapse to ≤2 effective groups; position is sole differentiator"
+    provenance: "C572"
+
 # ============================================================
 # NON-NORMATIVE ANNOTATIONS
 # ============================================================
@@ -569,6 +770,22 @@ annotations:
     ablation_entropy_change: "0.8%"
     cross_validation_max_change: "0.25%"
     provenance: "C328, C329, C330"
+
+  execution_syntax_statistics:
+    icc_role_count: 5
+    line_positions: 4  # SETUP, WORK, CHECK, CLOSE
+    energy_flow_correlation: "-0.89"
+    daiin_trigger_frequency: "highest initial bigram"
+    provenance: "C547, C551, C556, C557"
+
+  ax_architecture_statistics:
+    ax_token_share: "28.4%"
+    ax_pp_middle_rate: "98.2%"
+    ax_positional_subtypes: 3  # INIT, MED, FINAL
+    ax_effective_groups: "≤2"
+    ax_best_silhouette: "0.18"
+    ax_context_classifier_accuracy: "6.8%"  # below 10.3% baseline
+    provenance: "C563, C567, C568, C572"
 
 # ============================================================
 # PROVENANCE MAP
@@ -637,6 +854,41 @@ provenance:
     - "C126"   # 0 cross-family contradictions
     - "C141"   # Cross-family transplant = zero degradation
     - "C144"   # Families are emergent
+
+  vocabulary_architecture:
+    - "C506.b" # Intra-class behavioral heterogeneity
+    - "C531"   # Folio unique vocabulary prevalence
+    - "C532"   # Unique MIDDLE B-exclusivity
+    - "C533"   # Unique MIDDLE grammatical slot consistency
+    - "C535"   # B folio vocabulary minimality
+    - "C537"   # Token-level material differentiation
+
+  execution_syntax:
+    - "C547"   # ICC-based role validation
+    - "C548"   # EN role pattern
+    - "C549"   # FL role pattern
+    - "C550"   # FQ role pattern
+    - "C551"   # ENERGY/FLOW anticorrelation
+    - "C552"   # Section B profile
+    - "C553"   # Section H profile
+    - "C554"   # Section C profile
+    - "C555"   # Section S profile
+    - "C556"   # 5-position line syntax
+    - "C557"   # daiin trigger
+    - "C561"   # or→aiin bigram
+    - "C562"   # FLOW final hierarchy
+
+  ax_architecture:
+    - "C563"   # AX positional sub-structure
+    - "C564"   # AX_INIT characterization
+    - "C565"   # AX_MED characterization
+    - "C566"   # AX_FINAL characterization
+    - "C567"   # AX MIDDLE sharing (98.2% PP)
+    - "C568"   # AX pipeline ubiquity
+    - "C569"   # AX PREFIX exclusivity
+    - "C570"   # AX articulator stratification
+    - "C571"   # PREFIX as role selector
+    - "C572"   # AX class behavioral collapse
 
 # ============================================================
 # END OF BCSC

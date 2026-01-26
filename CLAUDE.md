@@ -14,6 +14,37 @@ This project uses a **progressive context system**.
 
 > **All agents writing Python scripts MUST follow these rules.**
 
+### 0. USE THE CANONICAL LIBRARY (PREFERRED)
+
+**Before writing custom data loading code, use `scripts/voynich.py`:**
+
+```python
+from scripts.voynich import Transcript, Morphology, RecordAnalyzer
+
+# Iterate tokens (H-track, labels excluded, uncertain excluded automatically)
+tx = Transcript()
+for token in tx.currier_a():
+    print(token.word, token.folio)
+
+# Morphological analysis (TOKEN = [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX])
+morph = Morphology()
+m = morph.extract('chody')
+print(m.articulator, m.prefix, m.middle, m.suffix)  # None, 'ch', 'od', 'y'
+print(m.has_articulator)  # False (property, not method)
+
+# Articulated token example
+m2 = morph.extract('ychody')
+print(m2.articulator, m2.prefix, m2.middle)  # 'y', 'ch', 'od'
+
+# Full record analysis with RI/PP/INFRA classification
+analyzer = RecordAnalyzer()
+record = analyzer.analyze_record('f1r', '1')
+for t in record.tokens:
+    print(f"{t.word}: {t.token_class}")  # RI, PP, INFRA, UNKNOWN
+```
+
+This library handles all filtering, morphology, and classification automatically.
+
 ### 1. Transcriber Filter (MANDATORY)
 
 The transcript has 18 parallel transcriber readings. **Always filter to H track:**
@@ -85,8 +116,8 @@ Use these to verify your filtering is correct:
 | Metric | Value |
 |--------|-------|
 | Version | 2.13 FROZEN STATE |
-| Constraints | 363 validated |
-| Phases | 189 completed |
+| Constraints | 389 validated |
+| Phases | 193 completed |
 | Folios | 83 (Currier B) |
 | Pipeline | CLOSED (PCA-v1 CERTIFIED) |
 

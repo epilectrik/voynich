@@ -60,23 +60,9 @@ Final classification: The Currier B text is an operational control notation, not
 
 ---
 
-## C130 - DSL Hypothesis Rejected
-**Tier:** 0 | **Status:** FROZEN
-Domain-specific language encoding rejected. Reference rate 0.19% (threshold was 5%).
-**Source:** Phase X.5
-
----
-
 ## C131 - Role Consistency LOW
 **Tier:** 0 | **Status:** FROZEN
 Token role consistency is 23.8%, inconsistent with linguistic encoding where words have stable roles.
-**Source:** Phase X.5
-
----
-
-## C132 - Language Encoding CLOSED
-**Tier:** 0 | **Status:** FROZEN
-All linguistic hypotheses exhausted and rejected. Text does not encode natural language.
 **Source:** Phase X.5
 
 ---

@@ -1,0 +1,1885 @@
+{
+  "ax_middle_count": 57,
+  "pipeline_breakdown": {
+    "PP": {
+      "count": 56,
+      "middles": [
+        "a",
+        "ai",
+        "aii",
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "ar",
+        "c",
+        "ch",
+        "cho",
+        "ck",
+        "ckh",
+        "cp",
+        "cph",
+        "d",
+        "do",
+        "dy",
+        "e",
+        "ed",
+        "edy",
+        "ee",
+        "eeo",
+        "eeol",
+        "eey",
+        "eo",
+        "eol",
+        "ey",
+        "g",
+        "h",
+        "hy",
+        "i",
+        "iin",
+        "in",
+        "k",
+        "l",
+        "lo",
+        "ly",
+        "m",
+        "o",
+        "ock",
+        "od",
+        "oiin",
+        "ol",
+        "om",
+        "op",
+        "opc",
+        "opch",
+        "or",
+        "r",
+        "ry",
+        "s",
+        "sh",
+        "t",
+        "y",
+        "yt"
+      ]
+    },
+    "RI": {
+      "count": 1,
+      "middles": [
+        "ho"
+      ]
+    }
+  },
+  "per_middle": {
+    "a": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        2,
+        3,
+        16
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "ai": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        16,
+        24,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "aii": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        27
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "aiin": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        29
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "CC",
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        9,
+        13,
+        17,
+        34,
+        47,
+        49
+      ],
+      "is_shared_with_operational": true
+    },
+    "ain": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        3,
+        24,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        13,
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "al": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        6,
+        14
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FL"
+      ],
+      "non_ax_classes": [
+        7,
+        35,
+        38,
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "am": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        14,
+        19
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        38,
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "ar": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        3,
+        14,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FL"
+      ],
+      "non_ax_classes": [
+        7,
+        31,
+        35,
+        45
+      ],
+      "is_shared_with_operational": true
+    },
+    "c": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        19,
+        27
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "ch": {
+      "pipeline_class": "PP",
+      "ax_class_count": 4,
+      "ax_classes": [
+        1,
+        4,
+        16,
+        18
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "CC"
+      ],
+      "non_ax_classes": [
+        17
+      ],
+      "is_shared_with_operational": true
+    },
+    "cho": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        3
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "ck": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        28
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        34,
+        49
+      ],
+      "is_shared_with_operational": true
+    },
+    "ckh": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        42,
+        47,
+        49
+      ],
+      "is_shared_with_operational": true
+    },
+    "cp": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        6
+      ],
+      "ax_subgroups": [
+        "AX_INIT"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        43
+      ],
+      "is_shared_with_operational": true
+    },
+    "cph": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        6
+      ],
+      "ax_subgroups": [
+        "AX_INIT"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "d": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        20
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        39,
+        45,
+        46,
+        48
+      ],
+      "is_shared_with_operational": true
+    },
+    "do": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        21
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "dy": {
+      "pipeline_class": "PP",
+      "ax_class_count": 5,
+      "ax_classes": [
+        5,
+        6,
+        25,
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        31,
+        35,
+        38,
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "e": {
+      "pipeline_class": "PP",
+      "ax_class_count": 5,
+      "ax_classes": [
+        3,
+        16,
+        18,
+        26,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        13,
+        34,
+        35,
+        37,
+        39,
+        41,
+        49
+      ],
+      "is_shared_with_operational": true
+    },
+    "ed": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        4
+      ],
+      "ax_subgroups": [
+        "AX_INIT"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        39,
+        43,
+        47,
+        48
+      ],
+      "is_shared_with_operational": true
+    },
+    "edy": {
+      "pipeline_class": "PP",
+      "ax_class_count": 6,
+      "ax_classes": [
+        4,
+        5,
+        26,
+        27,
+        28,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        8,
+        13
+      ],
+      "is_shared_with_operational": true
+    },
+    "ee": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        1,
+        2
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        35,
+        37,
+        43
+      ],
+      "is_shared_with_operational": true
+    },
+    "eeo": {
+      "pipeline_class": "PP",
+      "ax_class_count": 4,
+      "ax_classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        39,
+        42
+      ],
+      "is_shared_with_operational": true
+    },
+    "eeol": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        4,
+        16
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        43
+      ],
+      "is_shared_with_operational": true
+    },
+    "eey": {
+      "pipeline_class": "PP",
+      "ax_class_count": 5,
+      "ax_classes": [
+        4,
+        5,
+        26,
+        28,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        13,
+        34,
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "eo": {
+      "pipeline_class": "PP",
+      "ax_class_count": 5,
+      "ax_classes": [
+        2,
+        4,
+        6,
+        18,
+        19
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        31,
+        34,
+        35,
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "eol": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        4,
+        5,
+        19
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        13,
+        34
+      ],
+      "is_shared_with_operational": true
+    },
+    "ey": {
+      "pipeline_class": "PP",
+      "ax_class_count": 6,
+      "ax_classes": [
+        4,
+        5,
+        6,
+        14,
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        31
+      ],
+      "is_shared_with_operational": true
+    },
+    "g": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        22
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "h": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        1,
+        15,
+        25
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "ho": {
+      "pipeline_class": "RI",
+      "ax_class_count": 1,
+      "ax_classes": [
+        25
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "hy": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        15
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "i": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        6,
+        16,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "FL"
+      ],
+      "non_ax_classes": [
+        30
+      ],
+      "is_shared_with_operational": true
+    },
+    "iin": {
+      "pipeline_class": "PP",
+      "ax_class_count": 4,
+      "ax_classes": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "CC"
+      ],
+      "non_ax_classes": [
+        10
+      ],
+      "is_shared_with_operational": true
+    },
+    "in": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        5,
+        6,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "FL"
+      ],
+      "non_ax_classes": [
+        30
+      ],
+      "is_shared_with_operational": true
+    },
+    "k": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        3,
+        20,
+        25
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "CC",
+        "EN"
+      ],
+      "non_ax_classes": [
+        12,
+        17,
+        32,
+        33,
+        36,
+        37,
+        39,
+        43,
+        48
+      ],
+      "is_shared_with_operational": true
+    },
+    "l": {
+      "pipeline_class": "PP",
+      "ax_class_count": 7,
+      "ax_classes": [
+        5,
+        6,
+        16,
+        20,
+        22,
+        24,
+        27
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FL",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        30,
+        32,
+        41
+      ],
+      "is_shared_with_operational": true
+    },
+    "lo": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        21
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "ly": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        22
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        40
+      ],
+      "is_shared_with_operational": true
+    },
+    "m": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        6,
+        22
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT"
+      ],
+      "non_ax_roles": [
+        "FL"
+      ],
+      "non_ax_classes": [
+        30
+      ],
+      "is_shared_with_operational": true
+    },
+    "o": {
+      "pipeline_class": "PP",
+      "ax_class_count": 8,
+      "ax_classes": [
+        2,
+        3,
+        4,
+        20,
+        21,
+        24,
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        9,
+        31,
+        34,
+        35,
+        37,
+        38,
+        39,
+        43
+      ],
+      "is_shared_with_operational": true
+    },
+    "ock": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        5
+      ],
+      "ax_subgroups": [
+        "AX_INIT"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        48
+      ],
+      "is_shared_with_operational": true
+    },
+    "od": {
+      "pipeline_class": "PP",
+      "ax_class_count": 3,
+      "ax_classes": [
+        6,
+        27,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        37,
+        43,
+        47
+      ],
+      "is_shared_with_operational": true
+    },
+    "oiin": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        28
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        43
+      ],
+      "is_shared_with_operational": true
+    },
+    "ol": {
+      "pipeline_class": "PP",
+      "ax_class_count": 7,
+      "ax_classes": [
+        1,
+        5,
+        6,
+        14,
+        25,
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "CC",
+        "EN"
+      ],
+      "non_ax_classes": [
+        8,
+        11,
+        31,
+        38
+      ],
+      "is_shared_with_operational": true
+    },
+    "om": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        20
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        39
+      ],
+      "is_shared_with_operational": true
+    },
+    "op": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        4
+      ],
+      "ax_subgroups": [
+        "AX_INIT"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "opc": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        6
+      ],
+      "ax_subgroups": [
+        "AX_INIT"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "opch": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        26,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    },
+    "or": {
+      "pipeline_class": "PP",
+      "ax_class_count": 8,
+      "ax_classes": [
+        4,
+        5,
+        6,
+        14,
+        19,
+        25,
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        9,
+        31
+      ],
+      "is_shared_with_operational": true
+    },
+    "r": {
+      "pipeline_class": "PP",
+      "ax_class_count": 6,
+      "ax_classes": [
+        6,
+        20,
+        21,
+        24,
+        27,
+        29
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FL",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        30,
+        41
+      ],
+      "is_shared_with_operational": true
+    },
+    "ry": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        22
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        40
+      ],
+      "is_shared_with_operational": true
+    },
+    "s": {
+      "pipeline_class": "PP",
+      "ax_class_count": 2,
+      "ax_classes": [
+        20,
+        25
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        41
+      ],
+      "is_shared_with_operational": true
+    },
+    "sh": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        1
+      ],
+      "ax_subgroups": [
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "CC",
+        "EN"
+      ],
+      "non_ax_classes": [
+        17,
+        41
+      ],
+      "is_shared_with_operational": true
+    },
+    "t": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        21
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [
+        "EN"
+      ],
+      "non_ax_classes": [
+        32,
+        33,
+        36,
+        37,
+        45
+      ],
+      "is_shared_with_operational": true
+    },
+    "y": {
+      "pipeline_class": "PP",
+      "ax_class_count": 8,
+      "ax_classes": [
+        6,
+        14,
+        15,
+        20,
+        21,
+        22,
+        27,
+        28
+      ],
+      "ax_subgroups": [
+        "AX_FINAL",
+        "AX_INIT",
+        "AX_MED"
+      ],
+      "non_ax_roles": [
+        "EN",
+        "FQ"
+      ],
+      "non_ax_classes": [
+        23,
+        31,
+        40
+      ],
+      "is_shared_with_operational": true
+    },
+    "yt": {
+      "pipeline_class": "PP",
+      "ax_class_count": 1,
+      "ax_classes": [
+        20
+      ],
+      "ax_subgroups": [
+        "AX_FINAL"
+      ],
+      "non_ax_roles": [],
+      "non_ax_classes": [],
+      "is_shared_with_operational": false
+    }
+  },
+  "cross_role_summary": {
+    "ax_only_middles": 16,
+    "ax_only_list": [
+      "a",
+      "ai",
+      "aii",
+      "c",
+      "cho",
+      "cph",
+      "do",
+      "g",
+      "h",
+      "ho",
+      "hy",
+      "lo",
+      "op",
+      "opc",
+      "opch",
+      "yt"
+    ],
+    "shared_with_nonax": 41,
+    "shared_with_EN": 36,
+    "shared_with_CC": 6,
+    "shared_with_FL": 7,
+    "shared_with_FQ": 15,
+    "shared_EN_list": [
+      "aiin",
+      "ain",
+      "al",
+      "am",
+      "ar",
+      "ck",
+      "ckh",
+      "cp",
+      "d",
+      "dy",
+      "e",
+      "ed",
+      "edy",
+      "ee",
+      "eeo",
+      "eeol",
+      "eey",
+      "eo",
+      "eol",
+      "ey",
+      "k",
+      "l",
+      "ly",
+      "o",
+      "ock",
+      "od",
+      "oiin",
+      "ol",
+      "om",
+      "or",
+      "r",
+      "ry",
+      "s",
+      "sh",
+      "t",
+      "y"
+    ],
+    "shared_CC_list": [
+      "aiin",
+      "ch",
+      "iin",
+      "k",
+      "ol",
+      "sh"
+    ],
+    "shared_FL_list": [
+      "al",
+      "ar",
+      "i",
+      "in",
+      "l",
+      "m",
+      "r"
+    ],
+    "shared_FQ_list": [
+      "aiin",
+      "ain",
+      "am",
+      "d",
+      "dy",
+      "e",
+      "edy",
+      "eey",
+      "eol",
+      "l",
+      "o",
+      "or",
+      "r",
+      "s",
+      "y"
+    ]
+  },
+  "multi_class_distribution": {
+    "3+": 25,
+    "1": 23,
+    "2": 9
+  },
+  "per_class": {
+    "1": {
+      "token_count": 8,
+      "middle_count": 6,
+      "middles": [
+        "ch",
+        "ee",
+        "eeo",
+        "h",
+        "ol",
+        "sh"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 6,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 5
+    },
+    "2": {
+      "token_count": 8,
+      "middle_count": 5,
+      "middles": [
+        "a",
+        "ee",
+        "eeo",
+        "eo",
+        "o"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 5,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 4
+    },
+    "3": {
+      "token_count": 9,
+      "middle_count": 8,
+      "middles": [
+        "a",
+        "ain",
+        "ar",
+        "cho",
+        "e",
+        "eeo",
+        "k",
+        "o"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 8,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 6
+    },
+    "4": {
+      "token_count": 17,
+      "middle_count": 12,
+      "middles": [
+        "ch",
+        "ed",
+        "edy",
+        "eeo",
+        "eeol",
+        "eey",
+        "eo",
+        "eol",
+        "ey",
+        "o",
+        "op",
+        "or"
+      ],
+      "subgroup": "AX_INIT",
+      "pp_middles": 12,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 11
+    },
+    "5": {
+      "token_count": 15,
+      "middle_count": 10,
+      "middles": [
+        "dy",
+        "edy",
+        "eey",
+        "eol",
+        "ey",
+        "in",
+        "l",
+        "ock",
+        "ol",
+        "or"
+      ],
+      "subgroup": "AX_INIT",
+      "pp_middles": 10,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 10
+    },
+    "6": {
+      "token_count": 23,
+      "middle_count": 16,
+      "middles": [
+        "al",
+        "cp",
+        "cph",
+        "dy",
+        "eo",
+        "ey",
+        "i",
+        "in",
+        "l",
+        "m",
+        "od",
+        "ol",
+        "opc",
+        "or",
+        "r",
+        "y"
+      ],
+      "subgroup": "AX_INIT",
+      "pp_middles": 16,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 14
+    },
+    "14": {
+      "token_count": 12,
+      "middle_count": 7,
+      "middles": [
+        "al",
+        "am",
+        "ar",
+        "ey",
+        "ol",
+        "or",
+        "y"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 7,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 7
+    },
+    "15": {
+      "token_count": 5,
+      "middle_count": 3,
+      "middles": [
+        "h",
+        "hy",
+        "y"
+      ],
+      "subgroup": "AX_FINAL",
+      "pp_middles": 3,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 1
+    },
+    "16": {
+      "token_count": 10,
+      "middle_count": 7,
+      "middles": [
+        "a",
+        "ai",
+        "ch",
+        "e",
+        "eeol",
+        "i",
+        "l"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 7,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 5
+    },
+    "18": {
+      "token_count": 9,
+      "middle_count": 3,
+      "middles": [
+        "ch",
+        "e",
+        "eo"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 3,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 3
+    },
+    "19": {
+      "token_count": 6,
+      "middle_count": 5,
+      "middles": [
+        "am",
+        "c",
+        "eo",
+        "eol",
+        "or"
+      ],
+      "subgroup": "AX_FINAL",
+      "pp_middles": 5,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 4
+    },
+    "20": {
+      "token_count": 15,
+      "middle_count": 9,
+      "middles": [
+        "d",
+        "k",
+        "l",
+        "o",
+        "om",
+        "r",
+        "s",
+        "y",
+        "yt"
+      ],
+      "subgroup": "AX_FINAL",
+      "pp_middles": 9,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 8
+    },
+    "21": {
+      "token_count": 10,
+      "middle_count": 6,
+      "middles": [
+        "do",
+        "lo",
+        "o",
+        "r",
+        "t",
+        "y"
+      ],
+      "subgroup": "AX_FINAL",
+      "pp_middles": 6,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 4
+    },
+    "22": {
+      "token_count": 7,
+      "middle_count": 6,
+      "middles": [
+        "g",
+        "l",
+        "ly",
+        "m",
+        "ry",
+        "y"
+      ],
+      "subgroup": "AX_FINAL",
+      "pp_middles": 6,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 5
+    },
+    "24": {
+      "token_count": 15,
+      "middle_count": 5,
+      "middles": [
+        "ai",
+        "ain",
+        "l",
+        "o",
+        "r"
+      ],
+      "subgroup": "AX_INIT",
+      "pp_middles": 5,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 4
+    },
+    "25": {
+      "token_count": 9,
+      "middle_count": 7,
+      "middles": [
+        "dy",
+        "h",
+        "ho",
+        "k",
+        "ol",
+        "or",
+        "s"
+      ],
+      "subgroup": "AX_FINAL",
+      "pp_middles": 6,
+      "ri_middles": 1,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 5
+    },
+    "26": {
+      "token_count": 8,
+      "middle_count": 5,
+      "middles": [
+        "e",
+        "edy",
+        "eey",
+        "iin",
+        "opch"
+      ],
+      "subgroup": "AX_INIT",
+      "pp_middles": 5,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 4
+    },
+    "27": {
+      "token_count": 21,
+      "middle_count": 14,
+      "middles": [
+        "aii",
+        "c",
+        "ckh",
+        "dy",
+        "edy",
+        "ey",
+        "iin",
+        "l",
+        "o",
+        "od",
+        "ol",
+        "or",
+        "r",
+        "y"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 14,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 12
+    },
+    "28": {
+      "token_count": 25,
+      "middle_count": 17,
+      "middles": [
+        "ai",
+        "ain",
+        "ar",
+        "ck",
+        "ckh",
+        "dy",
+        "edy",
+        "eey",
+        "ey",
+        "i",
+        "iin",
+        "in",
+        "o",
+        "oiin",
+        "ol",
+        "or",
+        "y"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 17,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 16
+    },
+    "29": {
+      "token_count": 17,
+      "middle_count": 8,
+      "middles": [
+        "aiin",
+        "e",
+        "edy",
+        "eey",
+        "iin",
+        "od",
+        "opch",
+        "r"
+      ],
+      "subgroup": "AX_MED",
+      "pp_middles": 8,
+      "ri_middles": 0,
+      "b_exclusive_middles": 0,
+      "shared_with_operational": 7
+    }
+  },
+  "all_role_middles": {
+    "AX": {
+      "count": 57,
+      "middles": [
+        "a",
+        "ai",
+        "aii",
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "ar",
+        "c",
+        "ch",
+        "cho",
+        "ck",
+        "ckh",
+        "cp",
+        "cph",
+        "d",
+        "do",
+        "dy",
+        "e",
+        "ed",
+        "edy",
+        "ee",
+        "eeo",
+        "eeol",
+        "eey",
+        "eo",
+        "eol",
+        "ey",
+        "g",
+        "h",
+        "ho",
+        "hy",
+        "i",
+        "iin",
+        "in",
+        "k",
+        "l",
+        "lo",
+        "ly",
+        "m",
+        "o",
+        "ock",
+        "od",
+        "oiin",
+        "ol",
+        "om",
+        "op",
+        "opc",
+        "opch",
+        "or",
+        "r",
+        "ry",
+        "s",
+        "sh",
+        "t",
+        "y",
+        "yt"
+      ]
+    },
+    "FL": {
+      "count": 7,
+      "middles": [
+        "al",
+        "ar",
+        "i",
+        "in",
+        "l",
+        "m",
+        "r"
+      ]
+    },
+    "EN": {
+      "count": 69,
+      "middles": [
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "an",
+        "ar",
+        "ck",
+        "ckh",
+        "cp",
+        "ct",
+        "d",
+        "dy",
+        "e",
+        "eck",
+        "ect",
+        "ed",
+        "edy",
+        "ee",
+        "eek",
+        "eeo",
+        "eeol",
+        "eey",
+        "ek",
+        "eo",
+        "eod",
+        "eol",
+        "et",
+        "ey",
+        "ii",
+        "im",
+        "k",
+        "ka",
+        "kai",
+        "kc",
+        "kch",
+        "ke",
+        "kec",
+        "keed",
+        "keeo",
+        "keo",
+        "l",
+        "ly",
+        "n",
+        "o",
+        "ock",
+        "oct",
+        "od",
+        "oiin",
+        "ok",
+        "okc",
+        "ol",
+        "om",
+        "or",
+        "ot",
+        "otc",
+        "pc",
+        "pch",
+        "qo",
+        "r",
+        "ry",
+        "s",
+        "sh",
+        "t",
+        "tc",
+        "tch",
+        "tcho",
+        "te",
+        "teo",
+        "y"
+      ]
+    },
+    "FQ": {
+      "count": 15,
+      "middles": [
+        "aiin",
+        "ain",
+        "am",
+        "d",
+        "dy",
+        "e",
+        "edy",
+        "eey",
+        "eol",
+        "l",
+        "o",
+        "or",
+        "r",
+        "s",
+        "y"
+      ]
+    },
+    "CC": {
+      "count": 7,
+      "middles": [
+        "aiin",
+        "ch",
+        "iin",
+        "k",
+        "ke",
+        "ol",
+        "sh"
+      ]
+    }
+  }
+}

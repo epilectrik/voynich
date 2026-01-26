@@ -115,14 +115,16 @@ Singleton entries (not clustered) show distinct properties:
 
 | Metric | Count |
 |--------|-------|
-| Currier A unique MIDDLEs | 617 |
-| Currier B unique MIDDLEs | 837 |
-| Shared (A & B) | 268 |
-| A-exclusive | 349 (56.6% of A) |
-| B-exclusive | 569 (68.0% of B) |
-| Jaccard similarity | 0.226 |
+| Currier A unique MIDDLEs | 1,013 |
+| Currier B unique MIDDLEs | 1,339 |
+| Shared (A & B) | 404 (39.9% of A) |
+| A-exclusive | 609 (60.1% of A) |
+| B-exclusive | 935 |
+| Jaccard similarity | 0.262 |
 
-**Interpretation:** Currier A enumerates a *potential discrimination space*; Currier B traverses only a *submanifold* of that space. Over half of A's MIDDLEs never appear in B, supporting the registry model where A catalogues entities beyond B's operational scope.
+**METHODOLOGY NOTE (2026-01-24):** Regenerated with atomic-suffix parser (voynich.py). Previous counts used compound suffixes and different extraction logic.
+
+**Interpretation:** Currier A enumerates a *potential discrimination space*; Currier B traverses only a *submanifold* of that space. Most of A's MIDDLEs (61.8%) never appear in B, supporting the registry model where A catalogues entities beyond B's operational scope.
 
 ### 4.2 Marker Classes (C235)
 Eight mutually exclusive PREFIX families:
@@ -179,8 +181,8 @@ Treat as **content regimes**, not temporal phases (rebinding uncertainty).
 - Population-level correlation does NOT imply entry mapping
 
 **Vocabulary overlap exists but is partial:**
-- 268 shared MIDDLEs (Jaccard = 0.226)
-- 56.6% of A's MIDDLEs are A-exclusive (never appear in B)
+- 404 shared MIDDLEs (PP, Pipeline-Participating)
+- 60.1% of A's MIDDLEs are A-exclusive (609 RI, Registry-Internal)
 - Shared vocabulary is cross-reference infrastructure, not entry coupling
 
 ### 6.3 Not Order-Dependent (mostly)

@@ -158,12 +158,63 @@ Other verification and analysis scripts.
 
 ---
 
+## Articulator/Extraction Correction Session (Jan 24, 2026)
+
+Additional ~59 scripts added from methodology correction session:
+
+### Key Scripts
+
+| Script | Purpose |
+|--------|---------|
+| temp_correct_extraction.py | Proper articulator-before-prefix handling |
+| temp_closure_token_check.py | Closure token (SUFFIX-only) classification |
+| temp_closure_middle_check.py | MIDDLE extraction from closure tokens |
+| temp_articulator_check.py | Articulator pattern verification |
+| temp_articulator_middle_sharing.py | Articulator/MIDDLE sharing analysis |
+| temp_prefixless_position.py | Prefix-less token positional analysis |
+| temp_prefixless_structure.py | Prefix-less token internal structure |
+| temp_y_initial_class.py | Y-initial MIDDLE class analysis |
+
+### RI Extraction Verification
+
+| Script | Purpose |
+|--------|---------|
+| temp_ri_analysis.py, temp_ri_count.py | RI count verification |
+| temp_ri_definitive_count.py | Definitive RI count |
+| temp_ri_localization.py | RI folio localization |
+| temp_ri_prefix_section_test.py | RI prefix by section |
+| temp_ri_proper_extraction.py | Corrected RI extraction |
+| temp_ri_length_*.py | RI length distribution analysis |
+
+### Suffix/Prefix Analysis
+
+| Script | Purpose |
+|--------|---------|
+| temp_suffix_*.py (8 files) | Suffix position, pairing, validation |
+| temp_prefix_*.py (4 files) | Prefix overlap, behavior analysis |
+
+### Constraint Verification
+
+| Script | Purpose |
+|--------|---------|
+| temp_c498a_reverification.py | C498.a re-verification |
+| temp_c499_*.py (3 files) | C499 coverage and consistency |
+
+### Outcome
+
+This session led to creation of canonical `scripts/voynich.py` library.
+
+---
+
 ## Associated JSON Results
 
 Located in `archive/reports/`:
 - temp_pp_cluster_results.json
 - temp_ri_pp_sharing_results.json
 - temp_sensory_result.json
+- temp_c498a_results.json
+- temp_middle_classes_v2.json
+- temp_ri_definitive_results.json
 
 ---
 

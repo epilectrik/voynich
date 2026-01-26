@@ -1,0 +1,19 @@
+{
+  "bio_regime_composition": {
+    "REGIME_1": 14,
+    "REGIME_4": 2,
+    "REGIME_3": 3,
+    "REGIME_2": 1
+  },
+  "energy_rates": {
+    "bio_all": 0.4539391414097855,
+    "regime1_all": 0.4307405621237746,
+    "bio_regime1": 0.4885871330951587,
+    "non_bio_regime1": 0.3407570072793994,
+    "baseline": 0.2753811352145432
+  },
+  "effects": {
+    "regime_effect": 6.537587206485618,
+    "section_effect": 9.771269226270512
+  }
+}

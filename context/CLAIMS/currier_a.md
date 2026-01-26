@@ -1,4 +1,4 @@
-# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C508)
+# Currier A Constraints (C224-C299, C345-C346, C420-C424, C475-C478, C498-C525)
 
 **Scope:** Currier A disjunction, schema, multiplicity, morphology, positional, section boundary, DA articulation, vocabulary domains, MIDDLE compatibility, coverage, temporal trajectories, suffix posture
 **Status:** CLOSED
@@ -679,6 +679,8 @@ Component ENRICHMENT: CT is A-enriched (0.14x), OL/QO are B-enriched (5x/4x); -d
 Suffixes show CONTEXT PREFERENCE: -or (0.67x), -chy (0.61x), -chor (0.18x) A-enriched; -edy (191x!), -dy (4.6x), -ar (3.2x) B-enriched; -ol, -aiin BALANCED (EXT-9)
 **Source:** v1.8-import
 
+**CORRECTION (2026-01-24):** Re-analysis shows -ol is 0.35x B/A (A-enriched), NOT balanced as originally claimed. The "balanced" classification for -ol is incorrect. -aiin status not yet re-verified.
+
 ### C284 - CT in B is CONCENTRATED in specific folios (48 folios); when CT appears in B it uses B-suffixes (-edy, -dy); registry materials take operational form in procedures (EXT-9)
 **Tier:** 2 | **Status:** CLOSED
 CT in B is CONCENTRATED in specific folios (48 folios); when CT appears in B it uses B-suffixes (-edy, -dy); registry materials take operational form in procedures (EXT-9)
@@ -754,6 +756,14 @@ CH appears in nearly all common prefix pairs (CH+DA, CH+QO, CH+SH); functions as
 L-compound middle patterns (lch-, lk-, lsh-) function as B-specific grammatical operators; 30-135x more common in B, largely absent from A; grammar-level specialization not covered by shared component inventory (B-MORPH)
 **Source:** v1.8-import
 
+**C298.a (Extension):** L-compound compositional structure and positional behavior.
+- 75.9% of L-compound MIDDLEs contain energy operator roots (ch/sh/k)
+- `l` is a grammatical modifier: lch = l + ch, lk = l + k, lsh = l + sh
+- `l` modifier shifts position earlier in line: lch mean 0.344 vs ch 0.483 (delta -0.139)
+- 97.0% B-exclusive tokens, 85.9% B-exclusive MIDDLEs (fully B-internal)
+- Contrast with LATE prefixes (C539): LATE applies B-prefix to PP vocabulary; L-compound uses B-exclusive vocabulary
+**Source:** LINE_BOUNDARY_OPERATORS phase (2026-01-25)
+
 ### C299 - Section H vocabulary dominates B procedures (76/83 = 91.6%); Section P rare (7/83 = 8.4%); Section T absent (0/83 = 0%); chi² = 127.54, p < 0.0001; A sections have NON-UNIFORM mapping to B procedure applicability (CAS-XREF)
 **Tier:** 2 | **Status:** CLOSED
 Section H vocabulary dominates B procedures (76/83 = 91.6%); Section P rare (7/83 = 8.4%); Section T absent (0/83 = 0%); chi² = 127.54, p < 0.0001; A sections have NON-UNIFORM mapping to B procedure applicability (CAS-XREF)
@@ -769,15 +779,17 @@ C299 measures the presence of *section-characteristic* vocabulary (discriminator
 ## A-Exclusive Vocabulary Track (C498)
 
 ### C498 - Registry-Internal Vocabulary Track
-**Tier:** 2 | **Status:** CLOSED
+**Tier:** 2 | **Status:** CLOSED | **REVISED 2026-01-24**
 
-A-exclusive MIDDLEs (56.6%, 349 types) form a morphologically distinct registry-internal vocabulary track that does not propagate through the A→AZC→B pipeline.
+A-exclusive MIDDLEs (60.1%, 609 types) form a morphologically distinct registry-internal vocabulary track that does not propagate through the A→AZC→B pipeline.
+
+**METHODOLOGY NOTE (2026-01-24):** Regenerated with atomic-suffix parser (voynich.py). Counts: 609 RI, 404 PP, 1,013 total A MIDDLEs.
 
 **Evidence:**
-- 349 MIDDLEs appear in Currier A but never in Currier B
+- 609 MIDDLEs appear in Currier A but never in Currier B
 - ct-prefix enrichment: 5.1× (vs shared MIDDLEs)
-- Suffix-lessness: 3× enriched (no decision archetype needed)
-- Folio-localization: 1.34 folios (vs 7.96 for shared)
+- Suffix-lessness: enriched (no decision archetype needed)
+- Folio-localization: 1.28 folios (vs 8.64 for shared)
 - AZC presence: 8.9% (vs 57.5% for shared) - residue is noise, not distinct stratum
 
 **Morphological signature interpretation:**
@@ -789,8 +801,10 @@ A-exclusive MIDDLEs (56.6%, 349 types) form a morphologically distinct registry-
 
 | Track | MIDDLEs | Characteristics | Role |
 |-------|---------|-----------------|------|
-| **Pipeline-participating** | 268 (43.4%) | Standard prefixes, standard suffixes, broad folio spread | Flow through A→AZC→B |
-| **Registry-internal** | 349 (56.6%) | ct-enriched, suffix-less, folio-localized | Stay in A registry |
+| **Pipeline-participating (PP)** | 404 (39.9%) | Standard prefixes, standard suffixes, broad folio spread | Flow through A→AZC→B |
+| **Registry-internal (RI)** | 609 (60.1%) | ct-enriched, suffix-less, folio-localized | Stay in A registry |
+
+**Note:** Of the 404 PP MIDDLEs, ~86-90 are "functional PP" with strong B survival correlation (r=0.772). The rest are shared MIDDLEs without that predictive relationship.
 
 **Interpretation:**
 Registry-internal MIDDLEs encode **within-category fine distinctions** that matter for A-registry organization but don't propagate because they are below the granularity threshold for execution. They help an expert navigate A's complexity frontier (C240) without burdening B with irrelevant precision.
@@ -822,37 +836,38 @@ This confirms that the two-track structure reflects real discrimination complexi
 ### C498.a - A∩B Shared Vocabulary Bifurcation (Tier 2 Refinement)
 **Tier:** 2 | **Status:** CLOSED
 
-The A∩B shared MIDDLE vocabulary (originally labeled "Pipeline-Participating") comprises two structurally distinct subclasses:
+The A∩B shared MIDDLE vocabulary (originally labeled "Pipeline-Participating") comprises two structurally distinct subclasses.
 
-| Subclass | Count | % of Shared | Mechanism |
-|----------|-------|-------------|-----------|
-| **AZC-Mediated** | 154 | 57.5% | A→AZC→B constraint propagation |
-| **B-Native Overlap (BN)** | 114 | 42.5% | B operational vocabulary with incidental A presence |
+**REVISED 2026-01-24:** Regenerated with atomic-suffix parser (404 shared MIDDLEs):
 
-**Evidence:**
-- Traced all 268 A∩B MIDDLEs through Currier A, AZC folios, and Currier B
-- 114 MIDDLEs appear in A and B but **never** in any AZC folio
-- Zero-AZC MIDDLEs show B-heavy frequency ratios (e.g., `eck` A=2, B=85; `ect` A=2, B=46)
+| Subclass | Count | % of Shared | % of A | Mechanism |
+|----------|-------|-------------|--------|-----------|
+| **AZC-Mediated** | 235 | 58.2% | 23.2% | A→AZC→B constraint propagation |
+| **B-Native Overlap (BN)** | 169 | 41.8% | 16.7% | B operational vocabulary with incidental A presence |
+
+**Evidence (regenerated with atomic-suffix parser):**
+- Traced all 404 A+B MIDDLEs through Currier A, AZC folios, and Currier B
+- 169 MIDDLEs appear in A and B but **never** in any AZC folio
+- Zero-AZC MIDDLEs show B-heavy frequency ratios (e.g., `eck` 41 B folios, 0 AZC; `tch` 23 B folios, 0 AZC)
 - Pattern consistent with B-native origin, not A→B transmission
 
 **AZC-Mediated substructure:**
 
 | AZC Presence | Count | Mean B Folio Spread |
 |--------------|-------|---------------------|
-| Universal (10+ AZC folios) | 17 | 48.7 folios |
-| Moderate (3-10 AZC folios) | 45 | 20.1 folios |
-| Restricted (1-2 AZC folios) | 92 | 6.8 folios |
+| Universal (10+ AZC folios) | 28 | 54.8 folios |
+| Moderate (3-9 AZC folios) | 69 | 15.4 folios |
+| Restricted (1-2 AZC folios) | 117 | 6.3 folios |
 
 **B-Native Overlap characteristics:**
-- Mean B folio spread: 4.0 folios (flat, AZC-independent)
-- B-heavy (B > 2×A): 67 MIDDLEs (58.8%)
-- A-heavy (A > 2×B): 12 MIDDLEs (10.5%)
+- Mean B folio spread: 3.5 folios (flat, AZC-independent)
+- Examples with high B spread: `eck` (41 B folios), `tch` (23), `pch` (22), `ka` (20)
 - Execution-infrastructure vocabulary: boundary discriminators, stabilizers, orthographic variants
 
 **Architectural implications:**
 - Constraint inheritance (C468-C470) applies only to AZC-Mediated subclass
 - Pipeline scope is narrower than "all A∩B shared" implies
-- A's outbound vocabulary to pipeline is 154 MIDDLEs (25% of A vocabulary), not 268 (43.4%)
+- A's outbound vocabulary to pipeline is a subset of 404 shared MIDDLEs (39.9% of A vocabulary)
 
 **Relationship to existing constraints:**
 - Consistent with C384 (No Token-Level A-B Lookup): BN MIDDLEs demonstrate statistical, not referential, sharing
@@ -861,26 +876,28 @@ The A∩B shared MIDDLE vocabulary (originally labeled "Pipeline-Participating")
 
 **Terminology correction:**
 The original "Pipeline-Participating" label is misleading. Recommended terminology:
-- **AZC-Mediated Shared** (154): Genuine pipeline participation
-- **B-Native Overlap / BN** (114): Domain overlap, not pipeline flow
+- **AZC-Mediated Shared** (214): Genuine pipeline participation via AZC
+- **B-Native Overlap / BN** (198): Domain overlap, not pipeline flow
 
-**Complete A MIDDLE hierarchy:**
+**Complete A MIDDLE hierarchy (REGENERATED 2026-01-24 with atomic-suffix parser):**
 ```
-A MIDDLEs (617 total)
-├── RI: Registry-Internal (349, 56.6%)
-│     A-exclusive, instance discrimination, folio-localized
-│
-└── Shared with B (268, 43.4%)
-    ├── AZC-Mediated (154, 25.0% of A vocabulary)
-    │     A→AZC→B constraint propagation
-    │     ├── Universal (17) - 10+ AZC folios
-    │     ├── Moderate (45) - 3-10 AZC folios
-    │     └── Restricted (92) - 1-2 AZC folios
-    │
-    └── B-Native Overlap (114, 18.5% of A vocabulary)
-          Zero AZC presence, B-dominant frequency
-          Execution-layer vocabulary with incidental A appearance
+A MIDDLEs (1,013 total)
++-- RI: Registry-Internal (609, 60.1%)
+|     A-exclusive, instance discrimination, folio-localized
+|     Only 7.0% of A token instances
+|
++-- Shared with B (404, 39.9%)
+    +-- AZC-Mediated (214, 19.8% of A)
+    |     True pipeline participation: A->AZC->B
+    |     +-- Universal (10+ AZC folios): 28
+    |     +-- Moderate (3-9 AZC folios): 69
+    |     +-- Restricted (1-2 AZC folios): 117
+    |
+    +-- B-Native Overlap (198, 18.4% of A)
+          Zero AZC presence, B execution vocabulary
+          Incidental A appearance, not pipeline flow
 ```
+**Methodology note:** Previous hierarchy (617 total, 349 RI, 268 shared) used flawed extraction (PREFIX required, SUFFIX kept). Corrected 2026-01-24 with v2 extraction (PREFIX optional, SUFFIX stripped).
 
 **Source:** A_RECORD_STRUCTURE_ANALYSIS phase (2026-01-20)
 **External validation:** Reviewed by domain expert; confirmed as architecture-strengthening refinement that sharpens pipeline scope without contradiction.
@@ -1261,6 +1278,48 @@ Under the strict survivor-set interpretation, A records create differential B fo
 
 **Cross-references:** C384.a (permits conditional correspondence), C481 (survivor-set uniqueness), C475 (MIDDLE incompatibility), C469 (categorical resolution)
 
+### C502.a - Full Morphological Filtering Cascade
+**Tier:** 2 | **Status:** NEW | **Scope:** A+B | **Source:** GALLOWS_B_COMPATIBILITY (2026-01-24)
+
+The A→B filtering mechanism operates through three cascading morphological layers. All three components (PREFIX, MIDDLE, SUFFIX) contribute independently to vocabulary restriction.
+
+**Filtering cascade (per A record, against 4889 B tokens):**
+
+| Filter | Legal Tokens | % of B | Additional Reduction |
+|--------|-------------|--------|---------------------|
+| MIDDLE only | 257.3 | 5.3% | — |
+| MIDDLE + PREFIX | 92.4 | 1.9% | 64.1% |
+| MIDDLE + SUFFIX | 129.9 | 2.7% | 49.5% |
+| **Full morphology** | **38.5** | **0.8%** | **85.0%** |
+
+**Statistical significance:** All reductions are significant (paired t-test, p≈0).
+
+**Mechanism:**
+- MIDDLE is the primary filter (C472): determines folio-level compatibility
+- PREFIX adds AZC family affinity filtering (C471): 64% additional reduction
+- SUFFIX adds regime breadth filtering (C495): 50% additional reduction
+- Combined: 85% reduction beyond MIDDLE alone
+
+**Key insight:**
+For a B token to be legal under an A record, all three morphological components must be compatible:
+```
+B token legal iff:
+  - token.MIDDLE in A-record.MIDDLEs (primary filter)
+  - token.PREFIX in A-record.PREFIXes OR token has no PREFIX
+  - token.SUFFIX in A-record.SUFFIXes OR token has no SUFFIX
+```
+
+**Revision to C502:**
+The original C502 measured MIDDLE-only filtering against 480 token types (20% legal / 80% filtered). This finding extends C502 to full morphological filtering: **0.8% of B tokens legal per A record** (~38 tokens).
+
+**Relationship to C473:**
+This quantifies what C473 describes qualitatively: "morphological composition (PREFIX + MIDDLE + SUFFIX) implicitly specifies a compatibility signature." The 85% additional reduction demonstrates all three axes contribute meaningfully.
+
+**Gallows domain effect (secondary finding):**
+Within the MIDDLE-filtered set, same-gallows-domain A-B pairs have 1.07x stronger vocabulary overlap (p<0.0001). This is a weak preference gradient, not a routing mechanism.
+
+**Cross-references:** C502 (A-record viability filtering), C472 (MIDDLE primary carrier), C471 (PREFIX AZC affinity), C495 (SUFFIX regime breadth), C473 (constraint bundle)
+
 ---
 
 ## Class-Level Filtering (C503)
@@ -1278,12 +1337,14 @@ Under strict interpretation (C502), class-level filtering is meaningful, not tri
 | Mean classes surviving | 49 | **32.3** |
 | Range | 47-49 | **6-48** |
 
-**Unfilterable core (6 classes):**
+**Unfilterable core (6 classes) — MIDDLE-only filtering:**
 | Class | Type | Reason |
 |-------|------|--------|
-| 7, 11 | ATOMIC | MIDDLE=None, always pass any filter |
-| 9 | CORE_CONTROL | MIDDLEs 'a', 'o' (universal) |
-| 21, 22, 41 | AUXILIARY | MIDDLEs 'y', 'o', 'l', 'r', 'e' (universal) |
+| 7, 11 | ATOMIC | MIDDLEs 'ar', 'al', 'ol' highly common |
+| 9 | CORE_CONTROL | MIDDLEs 'aiin', 'or', 'o' highly common |
+| 21, 22, 41 | AUXILIARY | MIDDLEs 'y', 'o', 'l', 'r', 'e' highly common |
+
+**⚠️ REVISION (C503.b):** Under full morphology (PREFIX+MIDDLE+SUFFIX), NONE of these classes are universal. See C503.b for details.
 
 **Infrastructure class vulnerability:**
 | Class | Survival Rate |
@@ -1300,6 +1361,98 @@ Under strict interpretation (C502), class-level filtering is meaningful, not tri
 - Only 6 classes form the "minimum viable instruction set"
 
 **Cross-references:** C502 (strict interpretation), C481 (discrimination space), C411 (reducibility)
+
+### C503.a - Class Survival Under Full Morphological Filtering
+**Tier:** 2 | **Status:** NEW | **Scope:** A+B | **Source:** GALLOWS_B_COMPATIBILITY (2026-01-24)
+
+C503 documents class survival under MIDDLE-only filtering (32.3 mean, 66%). Full morphological filtering (PREFIX+MIDDLE+SUFFIX) dramatically reduces class survival.
+
+**Comparison:**
+| Filter | Mean Classes | % of 63 | Reduction from MIDDLE |
+|--------|-------------|---------|----------------------|
+| MIDDLE only | 41.5 | 65.9% | — |
+| Full morphology | **6.8** | **10.8%** | **83.7%** |
+
+**Note:** The test used 63 classes (prefix-based classification), not exactly C121's 49. The proportional reduction is the key finding.
+
+**Surviving class patterns:**
+- **Always survive (100%):** Classes with universal MIDDLEs ('a', 'o', 'y', 'l', 'r', 'e') AND no PREFIX/SUFFIX requirements
+- **Never survive (0%):** Classes requiring rare PREFIX/SUFFIX combinations
+- **Rarely survive (<10%):** Many infrastructure-adjacent classes
+
+**Architectural implication:**
+Each A record doesn't just filter vocabulary — it constrains B execution to a **tiny subset of instruction classes**. The ~7 surviving classes form the actual "instruction budget" per A context, not the ~32 classes suggested by MIDDLE-only analysis.
+
+**Cross-references:** C503 (MIDDLE-only baseline), C502.a (token-level filtering cascade), C121 (49 instruction classes)
+
+### C503.b - No Universal Classes Under Full Morphology
+**Tier:** 2 | **Status:** NEW | **Scope:** A+B | **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+C503 claimed 6 classes are "unfilterable" under MIDDLE-only filtering. Under full morphology (C502.a), **NONE of these classes are universal**.
+
+**Verification using C121's original 49 classes:**
+| Class | C503 Claim | Full Morph Coverage | Universal? |
+|-------|------------|---------------------|------------|
+| 7 (ar, al) | "Always pass" | **14.0%** | NO |
+| 11 (ol) | "Always pass" | **36.3%** | NO |
+| 9 (aiin, or, o) | "Universal MIDDLEs" | **56.1%** | NO |
+| 21 | "Universal MIDDLEs" | **18.1%** | NO |
+| 22 | "Universal MIDDLEs" | **10.3%** | NO |
+| 41 | "Universal MIDDLEs" | **38.1%** | NO |
+
+**Why C503's claim fails under full morphology:**
+1. **Classes 7, 11, 9 have MIDDLEs** — contrary to C503's "MIDDLE=None" claim, these tokens DO have MIDDLE components (ar, al, ol, aiin, or, o)
+2. **MIDDLE must appear in PP vocabulary** — under full filtering, even "common" MIDDLEs aren't present in all A records
+3. **Classes 21, 22, 41 have PREFIX/SUFFIX requirements** — some tokens require PREFIX or SUFFIX matches that aren't always present
+
+**Key finding:**
+0 out of 49 C121 classes appear in ALL 1,559 A records under full morphology. Even Class 9 (the highest) only achieves 56.1% coverage.
+
+**Reconciliation with C509.c:**
+- C509.c found 0 universal classes using 63 PREFIX-based classes
+- C503.b confirms 0 universal classes using C121's 49 classes
+- **Conclusion:** No universal instruction classes exist under full morphological filtering, regardless of taxonomy
+
+**Cross-references:** C503 (original claim), C503.a (class survival), C509.c (63-class verification), C502.a (filtering cascade)
+
+### C503.c - Kernel Character Coverage (Corrected)
+**Tier:** 2 | **Status:** NEW | **Scope:** A+B | **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+The kernel primitives (k, h, e) are **characters within tokens**, not standalone tokens. Class 12 (`k` standalone) has 0 occurrences in B text — it's a structural artifact, not a real token.
+
+**Kernel character coverage (tokens CONTAINING k, h, or e):**
+| Character | In B Vocabulary | A Record Coverage |
+|-----------|-----------------|-------------------|
+| h | 54.0% of tokens | **95.6%** |
+| k | 31.8% of tokens | **81.1%** |
+| e | 49.5% of tokens | **60.8%** |
+
+**Union coverage:**
+| Metric | Records | % |
+|--------|---------|---|
+| At least one kernel char | 1,521 | **97.6%** |
+| All three kernel chars | 813 | 52.1% |
+| NO kernel chars | 38 | **2.4%** |
+
+**The kernel is nearly universal.** 97.6% of A records have access to at least one token containing k, h, or e. Only 38 edge-case records (2.4%) lack kernel character access.
+
+**Edge cases (38 records with no kernel access):**
+- Most have very few surviving tokens (0-6)
+- 11 records have NO surviving B tokens at all
+- These are minimal morphological profiles (1-2 MIDDLEs, narrow PREFIX/SUFFIX)
+
+**Token survival distribution:**
+| Surviving Tokens | Records | % |
+|------------------|---------|---|
+| 0 | 11 | 0.7% |
+| 1-9 | 140 | 9.0% |
+| 10-49 | 1,001 | 64.2% |
+| 50+ | 407 | 26.1% |
+
+**Architectural implication:**
+The kernel (k, h, e) IS effectively universal through containing tokens like `ok`, `ch`, `she`, `chey`. The 2.4% without kernel access are edge cases with minimal morphological profiles, not a systematic gap.
+
+**Cross-references:** C503.b (no universal classes), C502.a (filtering cascade), C085 (10 single-character primitives), C089 (kernel k/h/e)
 
 ---
 
@@ -1780,6 +1933,51 @@ TOKEN LEVEL (Fine, Discriminative):
 
 **Cross-references:** C506.b (intra-class behavioral heterogeneity), C503 (class-level filtering), C121 (49 instruction classes), C171 (unified control architecture)
 
+### C508.a - Class-Level Discrimination Under Full Morphology (REVISION)
+**Tier:** 2 | **Status:** NEW | **Scope:** A→B | **Source:** GALLOWS_B_COMPATIBILITY (2026-01-25)
+
+**C508's claim "HOW MANY not WHICH" is REVISED under full morphological filtering.**
+
+The original C508 tested MIDDLE-only filtering (~32 classes surviving). Under full morphology (PREFIX+MIDDLE+SUFFIX, ~7 classes surviving), class-level discrimination becomes significant.
+
+**Comparison:**
+
+| Metric | MIDDLE-only (C508) | Full Morphology |
+|--------|-------------------|-----------------|
+| Class Jaccard | 0.345 | **0.755** |
+| Token Jaccard | 0.700 | **0.961** |
+| Class mutual exclusion | 0.2% | **27.0%** |
+| Token mutual exclusion | 27.5% | **69.0%** |
+
+**Key finding:**
+- Class Jaccard more than doubles (0.345 → 0.755)
+- 27% of class pairs are mutually exclusive (vs 0% under MIDDLE-only)
+- Both class AND token levels are now highly discriminative
+
+**Revised architectural summary:**
+
+```
+MIDDLE-ONLY FILTERING (~32 classes):
+- Class level: coarse, universal (Jaccard 0.345, 0% ME)
+- Token level: discriminative (Jaccard 0.700, 27.5% ME)
+- "HOW MANY, not WHICH" - VALID
+
+FULL MORPHOLOGY FILTERING (~7 classes):
+- Class level: ALSO discriminative (Jaccard 0.755, 27% ME)
+- Token level: highly discriminative (Jaccard 0.961, 69% ME)
+- "BOTH HOW MANY AND WHICH" - class selection matters
+```
+
+**Implications:**
+- Under full morphology, A records select BOTH class types AND token variants
+- The "universal grammar" is not uniformly accessible - different A contexts access different class subsets
+- Token-level primacy still holds (token Jaccard > class Jaccard), but class-level is no longer "coarse"
+
+**Interpretive note (per C509.d):**
+The 27% class mutual exclusion is explained by morphological sparsity (PREFIX/SUFFIX/MIDDLE independence), not complex class interactions. Classes are grammar positions; mutual exclusion reflects vocabulary filtering, not functional incompatibility.
+
+**Cross-references:** C508 (original MIDDLE-only finding), C503.a (class survival under full morphology), C502.a (filtering cascade), C509.d (independent morphological filtering)
+
 ---
 
 ## PP/RI Dimensional Separability (C509)
@@ -1841,11 +2039,22 @@ Records occupy positions in this 2D space. The 72 shared PP sets demonstrate tha
 **Cross-references:** C504 (MIDDLE function bifurcation), C506 (PP non-propagation), C508 (token-level discrimination primacy), C498 (A-exclusive vocabulary track)
 
 ### C509.a - RI Morphological Divergence
-**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_PP_MORPHOLOGY_TEST (2026-01-23)
+**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** RI_PP_MORPHOLOGY_TEST (2026-01-23) | **REVISED 2026-01-24**
 
 RI tokens exhibit dramatically different morphological profiles than PP tokens, suggesting the morphological apparatus serves different structural roles in each population.
 
-**Statistical evidence:**
+**METHODOLOGY NOTE (2026-01-24):** Original values used flawed extraction (PREFIX required, SUFFIX kept). Corrected extraction (PREFIX optional, SUFFIX stripped) gives different values. The PP MIDDLE length discrepancy (1.46 vs 3.22) suggests original "PP" was the ~86 functional PP atoms, not all 412 shared MIDDLEs.
+
+**Statistical evidence (REVISED):**
+
+| Metric | RI Tokens | PP Tokens | Original RI | Original PP |
+|--------|-----------|-----------|-------------|-------------|
+| Has PREFIX | **54.0%** | 79.8% | 58.5% | 85.4% |
+| Mean MIDDLE length | **4.73** chars | 3.22 chars | 3.96 | 1.46 |
+
+**Note:** PREFIX rates are close to original (validates methodology direction). MIDDLE length differences reflect different population definitions - original PP was likely the ~86 functional atoms with short MIDDLEs.
+
+**Original evidence (retained for reference):**
 
 | Metric | RI Tokens | PP Tokens | Significance |
 |--------|-----------|-----------|--------------|
@@ -1865,13 +2074,13 @@ RI tokens exhibit dramatically different morphological profiles than PP tokens, 
 | 'al' | **2.15×** |
 | 'y' | 1.39× |
 
-**Morphological profile characterization:**
+**Morphological profile characterization (REVISED):**
 
 | Aspect | PP Tokens | RI Tokens |
 |--------|-----------|-----------|
 | Template | Balanced (P+M+S) | **MIDDLE-centric** |
-| PREFIX | Near-mandatory (85%) | Optional (58%) |
-| MIDDLE | Short (1.46 chars), shared vocabulary | **Long (3.96 chars), unique identifiers** |
+| PREFIX | Near-mandatory (80%) | Optional (54%) |
+| MIDDLE | Shorter, shared vocabulary | **Longer (4.73 chars), unique identifiers** |
 | SUFFIX | Standard distribution | Enriched for m, dy, al, y |
 | Structure | Template-distributed | Discrimination-concentrated |
 
@@ -1891,6 +2100,86 @@ This explains why RI and PP are dimensionally separable (C509): they use differe
 - NOT phonetic interpretation (no phonetic evidence available)
 
 **Cross-references:** C509 (PP/RI dimensional separability), C498 (A-exclusive vocabulary track), C267 (compositional tokens), C293 (component essentiality hierarchy), C383 (global morphological type system)
+
+### C509.b - PREFIX-Class Determinism
+**Tier:** 2 | **Status:** NEW | **Scope:** A→B | **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+Under full morphological filtering, class availability is determined by PREFIX match with near-perfect determinism.
+
+**Necessity (class → A-PREFIX): 100%**
+For all PREFIX classes (P_xxx), having the class REQUIRES having the matching A-PREFIX. No exceptions.
+
+**Sufficiency (A-PREFIX → class): 72-100%**
+Having the A-PREFIX usually (but not always) yields the class. Failures occur when MIDDLE doesn't match any P_xxx token despite PREFIX match.
+
+**Example evidence:**
+| Class | Has class | Has A-PREFIX | Both | Sufficiency | Necessity |
+|-------|-----------|--------------|------|-------------|-----------|
+| P_sh | 733 | 733 | 733 | 100% | 100% |
+| P_ch | 1101 | 1106 | 1101 | 99.5% | 100% |
+| P_da | 732 | 745 | 732 | 98.3% | 100% |
+| P_ct | 276 | 380 | 276 | 72.6% | 100% |
+
+**Implication:**
+The "27% class mutual exclusion" (C508.a) is not evidence of complex class interactions. It's simply PREFIX sparsity: A records typically have 2-3 PREFIXes, so they can only access 2-3 PREFIX classes.
+
+**Cross-references:** C508.a (class discrimination contextualized), C503.a (class survival explained), C471 (PREFIX AZC affinity)
+
+### C509.c - No Universal Instruction Set
+**Tier:** 2 | **Status:** NEW | **Scope:** A→B | **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+Under full morphological filtering, NO class appears in all A records.
+
+**Class coverage:**
+| Coverage | Classes |
+|----------|---------|
+| >95% | 1 (BARE at 96.8%) |
+| >75% | 1 |
+| >50% | 2 |
+| <10% | 41 |
+
+**Why even BARE isn't universal:**
+- BARE tokens require no PREFIX (only MIDDLE match)
+- 50 records (3.2%) lack ANY BARE-compatible MIDDLE
+- These records have narrow morphological profiles (mean 2.4 PP MIDDLEs vs 6.0)
+
+**The ~7 classes per record explained:**
+- Mean ~2.5 PREFIXes → ~2.5 PREFIX classes
+- BARE (96.8%) → +1 class usually
+- Mean ~3-4 SUFFIX matches → variable SUFFIX classes
+- Total: 6-8 classes (confirms C503.a mean of 6.8)
+
+**Cross-references:** C503.a (class survival), C509.b (PREFIX determinism), C502.a (filtering cascade)
+
+### C509.d - Independent Morphological Filtering
+**Tier:** 2 | **Status:** NEW | **Scope:** A→B | **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+The three morphological filters (PREFIX, MIDDLE, SUFFIX) operate independently under C502.a filtering. Class mutual exclusion is fully explained by morphological sparsity rather than class interaction.
+
+**Evidence breakdown for 27% class mutual exclusion:**
+
+| Exclusion Type | Mechanism | % |
+|----------------|-----------|---|
+| PREFIX vs PREFIX (54 pairs) | A-PREFIX absence | 100% |
+| SUFFIX vs SUFFIX (32 pairs) | A-SUFFIX absence | 41% |
+| SUFFIX vs SUFFIX | No MIDDLE overlap | 31% |
+| SUFFIX vs SUFFIX | PP sparsity at record level | 28% |
+
+**Key structural finding:**
+SUFFIX classes are **100% PREFIX-free**. All tokens in S_xxx classes have no PREFIX, forming a morphologically distinct subspace.
+
+**Filtering model:**
+```
+PREFIX class P_xxx: Requires A-PREFIX 'xxx' + matching MIDDLE in PP
+BARE class:         Requires matching MIDDLE in PP only
+SUFFIX class S_yyy: Requires A-SUFFIX 'yyy' + matching MIDDLE in PP
+                    (all S_yyy tokens are unprefixed)
+```
+
+**Implication for C508.a:**
+The 27% class mutual exclusion documented in C508.a is explained by morphological sparsity (PREFIX/SUFFIX/MIDDLE independence), not complex class interactions. Classes are grammar positions; mutual exclusion reflects vocabulary filtering, not functional incompatibility.
+
+**Cross-references:** C508.a (class discrimination contextualized), C509.b (PREFIX determinism), C509.c (no universal set), C502.a (filtering cascade), C471 (PREFIX AZC affinity), C472 (MIDDLE primary), C495 (SUFFIX regime breadth)
 
 ---
 
@@ -1933,32 +2222,57 @@ Repeater MIDDLEs (short, frequent forms) seed singleton MIDDLEs (long, unique fo
 
 **Cross-references:** C498.d (length-frequency correlation), C267.a (sub-component structure)
 
-### C512 - PP as Compositional Substrate
-**Tier:** 2 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+### C512 - PP/RI Stylistic Bifurcation
+**Tier:** 2 | **Status:** REVISED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23), PP_RI_RETEST (2026-01-24)
 
-PP MIDDLEs constitute the generative substrate of MIDDLE vocabulary.
+PP and RI MIDDLEs exhibit high substring overlap, but this is **statistically expected** given length distributions and limited alphabet. The functional distinction (PP participates in B pipeline, RI stays in A) remains structural; the compositional relationship is likely **stylistic**, not derivational.
 
-**Evidence:**
+**Quantitative Evidence (unchanged):**
 
 | Metric | Value |
 |--------|-------|
 | PP MIDDLEs that are sub-components | 72.2% (65/90) |
-| RI MIDDLEs containing PP as substring | 99.1% (1,279/1,290) |
+| RI MIDDLEs containing PP as substring | 100% (609/609) |
 | PP section-invariance (avg Jaccard H/P/T) | 0.729 |
 | RI section-invariance (avg Jaccard H/P/T) | 0.088 |
 | Invariance ratio | 8.3x |
 | PP in ALL sections | 60.7% |
 | RI in ALL sections | 2.6% |
 
-**Interpretation:**
-RI vocabulary is compositionally derived from PP stock, not independently constructed. PP provides the universal morphological foundation (appears across all sections); RI provides section-specific elaborations (highly section-divergent).
+**Null Model Findings (2026-01-24):**
 
-This explains:
-- **C502** (~80% filtering): Extracts PP primitives from RI elaborations
-- **C506** (PP composition non-propagation): Only PP survives the pipeline
-- **C384** (no token-level lookup): RI doesn't cross A/B boundary, only PP does
+| Test | Result |
+|------|--------|
+| Random 404-element MIDDLE sets | 100% containment (vocabulary saturated) |
+| Length-matched random null | 99.0% containment |
+| Real PP containment | 100% |
+| Z-score vs length-matched null | **1.08** (not significant, threshold 3.0) |
 
-**Cross-references:** C267.a (sub-component structure), C509 (PP/RI separability), C504 (PP count correlation)
+**Structural Style Differences:**
+
+| Feature | RI | PP |
+|---------|----|----|
+| Mean MIDDLE length | 4.56 chars | 3.11 chars |
+| Complex digraphs ('ch','sh','cph') | Over-represented (2-3x) | Baseline |
+| 'h'-initial MIDDLEs | 92% RI | 8% PP |
+| 'e' glyph frequency | 11.9% | 16.4% |
+
+**Revised Interpretation:**
+The substring containment pattern is **not statistically significant** vs length-matched random baseline. The PP/RI distinction likely reflects **stylistic elaboration** rather than compositional derivation:
+- PP = simpler, shorter MIDDLEs that B grammar accepts
+- RI = more elaborate MIDDLEs (complex digraphs, longer cores) that only A uses
+- The substring relationship is coincidental character overlap from limited alphabet
+
+**What remains valid:**
+- PP provides cross-section vocabulary (section-invariance 8.3x higher)
+- RI provides section-specific discrimination (folio-localized)
+- Only PP survives A→B pipeline (C384, C506 unchanged)
+
+**What is now PROVISIONAL:**
+- "Compositional derivation" interpretation (PP as atoms building RI)
+- RI = PP₁ ∩ PP₂ ∩ ... formulation (see C516)
+
+**Cross-references:** C267.a (sub-component structure), C509 (PP/RI separability), C504 (PP count correlation), C516 (multi-atom - REVISED)
 
 ### C512.a - Positional Asymmetry
 **Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
@@ -2004,6 +2318,87 @@ Singleton status at short lengths reflects sampling variance within a homogeneou
 This PROTECTS against over-interpretation of singleton status per C498.b/c. Short singletons are not a special class - they are repeaters that happened to appear once.
 
 **Cross-references:** C498.b (RI singletons), C498.c (RI repeaters), C498.d (length-frequency correlation)
+
+### C513-NOTE: Y-Initial Minimal MIDDLEs (Characterization)
+**Tier:** 3 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_CLASS_V3 (2026-01-24)
+
+A small set of RI MIDDLEs (n≈34) are y-initial but do not admit articulator parsing under the canonical morphology, because recognizing articulation would eliminate the MIDDLE entirely. Per C293, these forms are treated as atomic, non-articulated minimal discriminators. Their y-initial surface form is incidental rather than morphological.
+
+**Examples:** `ysh`, `yqo`, `yee`, `yeee`, `yckho`, `ypc`, `ytch`
+
+**Key points:**
+- These are legitimate short MIDDLEs, not failures of articulator detection
+- Articulator recognition is contingent on leaving a non-empty MIDDLE
+- If articulator+prefix would eliminate MIDDLE → articulation is not recognized
+- No special parser handling required
+
+These y-initial minimal MIDDLEs cluster near the lower bound of MIDDLE length (≤3-4 chars), consistent with short-form sampling variance (C513) and not indicative of a distinct grammatical subclass.
+
+**What this is NOT:**
+- NOT failed articulations
+- NOT a new subtype requiring special handling
+- NOT evidence for "two prefixes" in RI tokens
+
+**Cross-references:** C293 (MIDDLE primacy), C513 (short singleton variance), C498.d (length-frequency correlation), C291-C294 (articulator constraints)
+
+### C513-NOTE-B: RI Orthogonal Feature Structure (Characterization)
+**Tier:** 3 | **Status:** CLOSED | **Scope:** A | **Source:** RI_FEATURE_ANALYSIS (2026-01-24)
+
+RI tokens encode multiple **independent features** that combine freely, rather than forming hierarchical subtypes. Statistical independence tests show observed/expected ratios near 1.0 for all feature pairs.
+
+**Five Orthogonal Axes:**
+
+| Axis | Feature | Rate | Function (speculative) |
+|------|---------|------|------------------------|
+| **DOMAIN** | Gallows presence (k/t/p/f) | 54.9% | Operational regime / fire degree |
+| **POSITION** | Line-initial or line-final | 40.7% | Structural role: opener vs closer |
+| **SCOPE** | Record-anchored vs independent | 57.5% / 42.5% | Context-bound vs universal discriminator |
+| **EMPHASIS** | Articulator present | 2.7% | Attention marker (71.5% at boundaries) |
+| **PREFIX** | Required vs forbidden (C528) | 50.1% / 48.1% | Lexically determined attachment |
+
+**Independence Evidence:**
+
+| Feature Pair | Expected | Observed | Ratio |
+|--------------|----------|----------|-------|
+| Articulator × Gallows | 11.5 | 10 | 0.87x |
+| Gallows × Record-scope | 181.7 | 166 | 0.91x |
+| Articulator × Record-scope | 8.9 | 9 | 1.01x |
+
+All ratios ≈ 1.0 confirms statistical independence.
+
+**Interpretation:**
+
+RI tokens are **feature bundles**, not categorical types:
+```
+RI = [± gallows] × [± boundary] × [± record-anchored] × [± articulated] × [± prefix]
+```
+
+Each token carries multiple orthogonal signals. The apparent "RI types" (gallows-RI, articulated-RI, closure-RI) are projections onto single dimensions of a multi-dimensional encoding space.
+
+**Terminology Note:**
+
+"Record-anchored" (57.5%) differs from C514's "locally-derived" (17.4%):
+- **C514 local:** RI contains PP atoms from same-folio sources (compositional origin)
+- **Record-anchored:** RI shares PP vocabulary with same record (compatibility context)
+
+Both are valid measurements of different properties.
+
+**Brunschwig Alignment (Tier 4, speculative):**
+
+If Currier A is a material registry:
+- DOMAIN (gallows) → processing regime / apparatus configuration
+- POSITION → ingredient marker (opener) vs result marker (closer)
+- SCOPE → material-specific vs universal operations
+- EMPHASIS → critical steps requiring attention
+
+This extends the RI Lexical Layer Hypothesis (C526) by characterizing how multiple independent material/operational properties are encoded simultaneously.
+
+**What this is NOT:**
+- NOT hierarchical subtypes (H1, H2, H3)
+- NOT mutually exclusive categories
+- NOT proof of semantic content (features are distributional, not referential)
+
+**Cross-references:** C498 (RI vocabulary track), C510 (positional sub-components), C514-C515 (compositional modes), C526 (lexical layer hypothesis), C528 (PREFIX bifurcation), C529-C530 (gallows patterns)
 
 ### C514 - RI Compositional Bifurcation
 **Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
@@ -2071,33 +2466,49 @@ Local derivation in RI reflects sub-component embedding from same-record PP, req
 
 **Cross-references:** C267.a (sub-components), C475 (incompatibility lattice), C498.d (length-frequency), C515 (length correlation)
 
-### C516 - RI Multi-Atom Composition
-**Tier:** 2 | **Status:** CLOSED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+### C516 - RI Multi-Atom Observation
+**Tier:** 2 | **Status:** WEAKENED | **Scope:** A | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23), PP_RI_RETEST (2026-01-24)
 
-Registry-internal MIDDLEs are composite structures containing multiple PP atoms. RI encodes **compatibility intersections**, not simple material variations.
+Registry-internal MIDDLEs contain multiple PP substrings, but this is **trivially expected** from length distributions. The "compatibility intersection" interpretation is now **PROVISIONAL**.
 
-**Evidence:**
+**Quantitative Evidence (unchanged):**
 | Metric | Value |
 |--------|-------|
-| RI with PP match | 94.5% |
-| RI with multiple PP atoms | 85.4% |
+| RI with PP match | 100% (retest: 609/609) |
+| RI with multiple non-overlapping PP | 99.6% (retest) |
 | PP bases used | 261 |
 | Collapse ratio | 2.7x (712 RI → 261 bases) |
 | Sparsity | 0.03% of theoretical combinations |
 
-**Interpretation:**
+**Null Model Context (2026-01-24):**
+The multi-atom pattern is **not diagnostic**:
+- ANY set of ~400 short MIDDLEs achieves similar containment rates
+- Length-matched random sets achieve 99.0% containment
+- Multi-containment emerges naturally from: short strings + longer strings + limited alphabet
 
-Each PP atom is a **compatibility dimension**. RI structure represents:
+**PROVISIONAL Interpretation (requires further evidence):**
+
+The intersection formulation may still be meaningful:
 ```
-RI = PP₁ ∩ PP₂ ∩ PP₃ ∩ ... ∩ modifier
+RI = PP₁ ∩ PP₂ ∩ PP₃ ∩ ... ∩ modifier (PROVISIONAL)
 ```
-Where each PP contributes a compatibility filter and the RI is their intersection.
+But the substring observation alone does not prove compositional derivation.
 
-**Why 0.03% sparsity:** C475 established 95.7% of MIDDLE pairs are illegal. Multi-atom combinations face multiplicative constraint satisfaction.
+**What could validate the compositional interpretation:**
+- Non-random positional placement of PP substrings within RI
+- Semantic/functional correlation between PP atoms and RI behavior
+- Evidence that specific PP combinations predict RI properties
 
-**Why 261 bases vs ~90 shared with B:** Only ~90 PP propagate through AZC to B execution. Remaining bases provide A-internal discrimination.
+**What remains valid:**
+- 0.03% sparsity is real (RI space is sparse)
+- 261 bases vs ~90 shared with B is real (A uses more discriminative vocabulary)
+- C475 incompatibility constraints are real (pairs are illegal)
 
-**Cross-references:** C267.a (sub-components), C475 (incompatibility), C498.d (length correlation), C512 (PP substrate)
+**What is now PROVISIONAL:**
+- "Compatibility intersection" formulation
+- PP atoms as meaningful compositional units (vs coincidental substrings)
+
+**Cross-references:** C267.a (sub-components), C475 (incompatibility), C498.d (length correlation), C512 (PP/RI bifurcation - REVISED)
 
 ### C517 - Superstring Compression (GLOBAL)
 **Tier:** 3 | **Status:** CLOSED | **Scope:** GLOBAL | **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
@@ -2246,6 +2657,612 @@ Jar labels exhibit elevated morphological compression via PP sub-component packi
 **Interpretation:** Jar labels are dense superstrings encoding multiple specification components. Their absence from the vocabulary (87.5% unique) suggests they are one-time "configuration signatures" rather than reusable vocabulary. This is consistent with C267.a (MIDDLE sub-component structure) applied at higher density.
 
 **Cross-references:** C267.a (sub-components), C517 (superstring compression), C523 (vocabulary bifurcation)
+
+### C525 - Label Morphological Stratification
+
+**Tier:** 3 (Structural Characterization)
+**Scope:** A (pharmaceutical labels)
+**Phase:** PHARMA_LABEL_ANALYSIS (2026-01-24)
+
+AZC pharmaceutical labels exhibit morphological stratification distinct from text tokens, with systematic PREFIX/SUFFIX preferences and high vocabulary exclusivity.
+
+**PREFIX Distribution Comparison:**
+
+| PREFIX | PP Text | RI Text | Labels |
+|--------|---------|---------|--------|
+| o | 24% | 19% | **50%** |
+| c | 20% | 24% | 13% |
+| qo | 14% | 10% | **~0%** |
+| s | 13% | 12% | 13% |
+| d | 6% | 11% | 13% |
+
+**Key Morphological Differences:**
+- Labels show 2x elevation in o-prefix (50% vs 20-24% in text)
+- Labels show near-complete suppression of qo-prefix (~0% vs 14% in PP text)
+- Labels show elevated -y suffix concentration (38% vs 22-32% in text)
+- GALLOW distribution (k > t > p > f) remains consistent across all categories
+
+**Vocabulary Overlap:**
+- 33% of labels are PP tokens (shared vocabulary)
+- 6% of labels are RI tokens (A-exclusive)
+- **61% of labels are NOT in text vocabulary** (label-only tokens)
+
+**Within-Group Morphological Sharing:**
+Grouped plants (same jar/folio region) show systematic sharing:
+- Shared GALLOW letters (k, t, p, f) marking processing category
+- Shared MIDDLE substrings (e.g., "dar", "ar", "ol") marking morphological features
+- Example: f102r2 horizontal roots share "dar" in MIDDLE (koldarod, odalydary)
+
+**Interpretation:**
+1. **o-prefix elevation:** Labels preferentially use low-control-flow prefixes because they name things rather than commanding operations. Consistent with C466-C467 (PREFIX = control-flow participation).
+
+2. **qo-prefix suppression:** qo- marks escape routes in control grammar (C397, C467). Labels don't participate in procedural escape - they identify specimens. This validates PREFIX function model.
+
+3. **61% label-only vocabulary:** Labels occupy an even more specialized discrimination stratum than RI text tokens. They identify specific visual specimens, not constraint bundles for procedural text.
+
+4. **Within-group MIDDLE sharing:** Similar specimens sharing MIDDLE substrings supports C293 (MIDDLE = primary discriminator). Shared components encode properties relevant to specimen similarity.
+
+**Visual Correlation (observed):**
+- PP labels correlate with processed/standardized materials (cut, interchangeable)
+- RI labels correlate with unique specimens requiring specific identification
+- Label-only tokens mark the most distinctive specimens
+
+**Cross-references:** C293 (MIDDLE essentiality), C397 (qo-prefix escape), C466-C467 (PREFIX control-flow), C498 (vocabulary stratification), C517 (superstring compression), C523-C524 (pharma label structure)
+
+### C526 - RI Lexical Layer Hypothesis
+
+**Tier:** 3 (Structural Characterization)
+**Scope:** A (RI vocabulary)
+**Phase:** RI_STRUCTURE_ANALYSIS (2026-01-24)
+
+RI extensions within MIDDLEs may function as a **lexical layer** that anchors abstract grammar to specific external substances, while PREFIX/SUFFIX/PP remain purely functional markers.
+
+**The Grammar vs Lexicon Distinction:**
+
+| Layer | Function | Semantic Content | Behavior |
+|-------|----------|------------------|----------|
+| **Grammar** (PREFIX, SUFFIX, PP) | Functional marking | None (abstract positions) | Combinatorial, global roles |
+| **Lexicon** (RI extensions) | Referential anchoring | Points to substances | Arbitrary identifiers, localized |
+
+**Evidence for Lexical Function (REVISED 2026-01-24):**
+
+1. **Scale:** 609 unique RI MIDDLEs in Currier A (regenerated with atomic-suffix parser 2026-01-24)
+2. **Localization:** 87.3% appear on only 1 folio (vocabulary-like distribution)
+3. **Non-compositional:** Extensions don't decompose systematically (arbitrary identifiers)
+4. **Variation:** Localized RI appear with multiple PREFIX/SUFFIX combinations (same referent, different grammar)
+
+**Evidence for Grammar Layer Independence:**
+
+1. **PREFIX versatility:** ch used with 57 different MIDDLEs, sh with 29, qo with 27
+2. **SUFFIX versatility:** dy used with 40 different MIDDLEs, y with 34
+3. **Global roles:** Same PREFIX/SUFFIX patterns apply across different RI MIDDLEs
+
+**RI Distribution Pattern:**
+
+| Category | Count | Avg Folios | Function |
+|----------|-------|------------|----------|
+| Strictly local (1 folio) | 123 | 1.0 | Specific material identifiers |
+| Local (1-2 folios) | 144 | 1.4 | Material identifiers |
+| Distributed (10+ folios) | 5 | 23.2 | Compatibility bridges (odaiin, ho, ols, eom, chol) |
+
+**The ct+ho Pattern (MIDDLE-Specific Constraint):**
+
+One exception to PREFIX universality: ho, hod, hol, heo appear ONLY with ct prefix. This suggests certain RI extensions may have PREFIX requirements beyond grammar.
+
+**Semantic Ceiling Refinement:**
+
+The lexical layer hypothesis refines C120 (PURE_OPERATIONAL):
+- **Grammar:** No semantic content (C120 applies)
+- **Lexicon:** REFERENTIAL content (points to THAT, not WHAT)
+
+What IS recoverable: that 609 distinct substances/categories are distinguished
+What is NOT recoverable: which substances they are
+
+**Two-Layer Model:**
+
+```
+Word = PREFIX + MIDDLE + SUFFIX
+       ↓        ↓        ↓
+       Grammar  MIDDLE   Grammar
+                ↓
+        PP_atom + Extension
+        ↓         ↓
+        Grammar   Lexicon (referential)
+```
+
+**Interpretation:**
+
+RI extensions behave like dictionary entries (arbitrary, localized, non-compositional) rather than grammar (systematic, global, combinatorial). This allows the system to reference ~609 specific external substances/categories while keeping all procedural/control information in abstract grammar. The grammar tells you WHAT TO DO; the lexicon tells you TO WHAT.
+
+**Caveats:**
+- Tier 3: Structural characterization, not semantic mapping
+- Cannot identify WHICH substances (semantic ceiling)
+- "Lexical" is functional description, not linguistic claim
+- Does not enable material identification or translation
+
+**Cross-references:** C120 (PURE_OPERATIONAL), C498 (RI vocabulary track), C475 (folio localization), C509 (PP/RI separability), C517 (superstring compression), C528 (RI PREFIX bifurcation - PREFIX attachment is lexically determined)
+
+### C527 - Suffix-Material Class Correlation (Fire Degree)
+
+**Tier:** 3 (Structural Characterization)
+**Scope:** A (suffix patterns)
+**Phase:** SUFFIX_MATERIAL_ANALYSIS (2026-01-24)
+
+Within Currier A, suffix distribution correlates strongly with material class as indicated by PP atoms. Animal-associated PP (te, ho, ke per C505) shows dramatically different suffix patterns than herb PP.
+
+**Evidence:**
+
+| Suffix Group | Animal PP | Herb PP | Interpretation |
+|--------------|-----------|---------|----------------|
+| -y, -dy | 0% | 41% | LOW fire (gentle processing) |
+| -ey, -ol | 78% | 27% | HIGH fire (strong processing) |
+
+**Statistical Validation:**
+- Chi-square: 178.34
+- p-value: 1.12 x 10^-40 (highly significant)
+- Length confounding: RULED OUT (effect persists at same MIDDLE length)
+- Sample size: 181 animal PP tokens, 4,285 herb PP tokens
+
+**Fire Degree Interpretation (Conditional on Brunschwig):**
+
+Animal materials in Brunschwig's distillation manual require higher fire degrees than herbs. The suffix pattern is consistent with:
+- -y, -dy = Gentle/low-fire processing (herbs)
+- -ey, -ol = Strong/high-fire processing (animal materials)
+
+**Two-Axis Suffix Model:**
+
+Suffix operates on two orthogonal dimensions:
+
+| Axis | Scope | Evidence | Tier |
+|------|-------|----------|------|
+| System role | A vs B enrichment | C283, C495 | 2 |
+| Material class | Within A: animal vs herb | This finding | 3 |
+
+This parallels the HT two-axis model (C477: density vs morphology).
+
+**Relationship to C495:**
+
+C495 establishes suffix correlates with REGIME compatibility breadth at the A/B boundary. C527 extends this into A-internal structure: suffix also correlates with material class within the registry.
+
+**The -dy Puzzle:**
+- C527: -dy is herb-associated (0% animal PP)
+- C283: -dy is B-enriched (1.75x)
+
+Both can be true: herbs prefer -dy in A registry, AND -dy appears frequently in B execution for different reasons (different axes).
+
+**Caveats:**
+- Fire-degree interpretation is conditional on Brunschwig alignment
+- Associative, not causal (per C495 framing)
+- Does not establish suffix "encodes" fire degree, only correlates with material class
+
+**Cross-references:** C283 (suffix A/B enrichment - CORRECTED), C495 (suffix-regime breadth), C505 (animal PP enrichment), C506 (PP non-propagation)
+
+### C528 - RI PREFIX Lexical Bifurcation
+
+**Tier:** 2 (empirical split) / 3 (interpretation)
+**Scope:** A (RI vocabulary)
+**Phase:** RI_PREFIX_ANALYSIS (2026-01-24)
+
+RI MIDDLEs split into two nearly-disjoint populations based on PREFIX behavior:
+
+| Population | Count | % of RI |
+|------------|-------|---------|
+| **PREFIX-REQUIRED** | 334 | 50.1% |
+| **PREFIX-FORBIDDEN** | 321 | 48.1% |
+| **PREFIX-OPTIONAL** | 12 | 1.8% |
+
+Only 12 MIDDLEs (1.8%) ever appear both with and without PREFIX. The rest are locked into one morphological pattern.
+
+**Evidence:**
+
+- 98.2% of RI MIDDLEs exclusively take or reject PREFIX
+- PREFIX-REQUIRED examples: acp, afd, aiikh, aiind, akod, alda, alok
+- PREFIX-FORBIDDEN examples: aiee, aiid, aiio, aikhe, cckh, cfaras, cfhod
+
+**Section Independence (Tier 2):**
+
+The split is NOT section-driven. Both populations show identical section distributions:
+
+| Section | PREFIX Rate | PREFIX-REQ H-only | PREFIX-FORB H-only |
+|---------|-------------|-------------------|-------------------|
+| H | 53.7% | 65.3% | 68.8% |
+| P | 54.8% | 29.0% | 27.7% |
+
+The ~50/50 split holds within each section, confirming the distinction is substance-inherent.
+
+**Interpretation (Tier 3):**
+
+PREFIX attachment is **lexically determined** for RI, not grammatically optional:
+
+- Some substance identifiers inherently require PREFIX marking
+- Others inherently forbid it
+- This creates two parallel substance vocabularies on each folio
+
+**Relationship to C509.a:**
+
+The aggregate 54% PREFIX rate in RI (C509.a) is now explained: it emerges from mixing two disjoint populations (~50% each), not from PREFIX being "optional" on all MIDDLEs.
+
+**Relationship to C526:**
+
+This **strengthens** the grammar vs lexicon model. PREFIX is grammatical globally, but its attachment to specific RI MIDDLEs is lexically encoded:
+
+| Layer | PREFIX Behavior |
+|-------|-----------------|
+| Grammar (global) | Combinatorially free |
+| Lexicon (RI) | Lexically fixed per entry |
+
+**Possible Functional Interpretation (Tier 4, speculative):**
+
+If PREFIX encodes control-flow participation (C466-C467), then:
+- PREFIX-REQUIRED: substances that inherently engage control-flow marking
+- PREFIX-FORBIDDEN: pure discrimination without control-flow marking
+
+**Cross-references:** C509.a (RI morphological divergence), C526 (RI lexical layer), C466-C467 (PREFIX control-flow), C498 (RI vocabulary track), C529 (gallows positional asymmetry - parallel bifurcation)
+
+### C529 - Gallows Positional Asymmetry in PP/RI
+
+**Tier:** 2 | **Status:** NEW | **Scope:** A
+**Phase:** GALLOWS_MIDDLE_ANALYSIS (2026-01-24)
+
+Gallows letters (p, t, k, f) show significant positional asymmetry between PP and RI MIDDLEs:
+
+| Position | PP | RI |
+|----------|-----|-----|
+| Gallows-initial | 30.4% | 20.1% |
+| Gallows-medial | 39.3% | 57.8% |
+| Gallows-final | 30.4% | 22.1% |
+
+**Statistical significance:** Chi-square = 7.69, p < 0.01
+
+**Evidence:**
+- PP gallows are "atomic" - simple forms that START with gallows: `k`, `ka`, `t`, `fo`, `fch`
+- RI gallows are "embedded" - longer forms with gallows in MIDDLE: `aiikh`, `cfaras`, `cfhod`, `alolk`
+- 84% of gallows-RI are ≥4 chars; only 44% of gallows-PP are ≥4 chars
+
+**Bench gallows (cXh patterns) are RI-enriched:**
+
+| Pattern | RI | PP | % RI |
+|---------|----|----|------|
+| cph | 26 | 6 | 81% |
+| ckh | 20 | 11 | 65% |
+| cth | 13 | 9 | 59% |
+| cfh | 4 | 3 | 57% |
+
+This explains the 3-4x A-enrichment of bench gallows observed in gallows_distribution.json: they are RI-heavy, and RI is A-internal vocabulary.
+
+**Discrimination heuristic:**
+- Length ≥4 AND not gallows-initial → predict RI: 76.6% accuracy
+- Short + gallows-initial → predict PP
+
+**Interpretation:**
+This is a **parallel bifurcation** to C528 (PREFIX attachment):
+- C528: PREFIX attachment is lexically bifurcated (REQUIRED vs FORBIDDEN)
+- C529: Gallows POSITION is bifurcated (PP-initial vs RI-medial)
+
+PP provides atomic gallows building blocks; RI elaborates them into complex discriminators with embedded gallows.
+
+**Cross-references:** C528 (PREFIX bifurcation), C509.a (morphological divergence), C511 (derivational productivity), C512.a (positional asymmetry in sub-components)
+
+### C530 - Gallows Folio Specialization
+
+**Tier:** 2 | **Status:** NEW | **Scope:** A
+**Phase:** GALLOWS_MIDDLE_ANALYSIS (2026-01-24)
+
+Currier A folios show gallows specialization patterns:
+
+**Global distribution:**
+
+| Gallows | % of total |
+|---------|------------|
+| k | 53.7% |
+| t | 30.4% |
+| p | 11.4% |
+| f | 4.5% |
+
+**Folio-level patterns:**
+- k is the "default" gallows: 78/109 folios (72%) are k-dominant
+- t-specialized folios cluster: f4r (69% t), f10r (74% t), f29v (71% t), f2v (70% t)
+- **p and f are NEVER folio-dominant** - always minority markers
+
+**RI-PP coherence within folios:**
+- 62.2% of folios have same dominant gallows in both RI and PP
+- Expected if independent: ~54%
+- Modest but real within-folio coherence
+
+**Record-level co-occurrence (Tier 3 interpretation):**
+When RI contains gallows X, PP in the same record is enriched for X:
+
+| Gallows | PP baseline | Observed | Enrichment |
+|---------|-------------|----------|------------|
+| k | 23.5% | 54.8% | 2.3x |
+| t | 15.8% | 33.1% | 2.1x |
+| p | 8.7% | 42.9% | 4.9x |
+| f | 5.0% | 17.9% | 3.6x |
+
+**Interpretation:**
+Gallows letters may mark **categorical domains**:
+- k = default/unmarked domain (most folios)
+- t = alternative domain (cluster of specialized folios)
+- p, f = rare specialized markers (never dominant)
+
+This suggests thematic coherence: records and folios cluster around gallows "domains" where both RI and PP use the same gallows vocabulary.
+
+**Cross-references:** C498 (RI folio localization), C529 (gallows positional asymmetry)
+
+---
+
+## B Folio Differentiation (C531-C534)
+
+> **Summary:** B folios share the same 49-class grammar but each has unique vocabulary. 98.8% of B folios have at least one unique MIDDLE. This unique vocabulary is 88% B-exclusive (not in A, not AZC-filtered) and fills the same grammatical slots as classified tokens. Adjacent folios' unique MIDDLEs are grammatically similar (same slots, different words). Section-specific profiles exist but are partially confounded by PREFIX associations.
+
+### C531 - Folio Unique Vocabulary Prevalence
+
+**Tier:** 2 | **Status:** NEW | **Scope:** B
+**Phase:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+B folios exhibit near-universal unique vocabulary:
+
+| Metric | Value |
+|--------|-------|
+| Folios with unique MIDDLE | **81/82 (98.8%)** |
+| Only folio without unique vocabulary | f95r1 |
+| Mean unique MIDDLEs per folio | 10.5 |
+| Total unique MIDDLEs | 858 |
+
+**Evidence:**
+- "Unique MIDDLE" = appears in exactly 1 B folio
+- f95r1's 38 MIDDLEs are all shared with other folios
+- Unique vocabulary is distinct from core vocabulary (41 MIDDLEs appearing in >50% of folios)
+
+**Interpretation:**
+Each B folio contributes unique vocabulary to the overall B grammar. Folios are not interchangeable copies - they are **specific procedures** using a shared grammar.
+
+**Cross-references:** C501 (B-exclusive stratification), C121 (49-class grammar)
+
+### C532 - Unique MIDDLE B-Exclusivity
+
+**Tier:** 2 | **Status:** NEW | **Scope:** B
+**Phase:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+Unique B MIDDLEs are overwhelmingly B-exclusive:
+
+| Classification | Count | Percentage |
+|----------------|-------|------------|
+| **B-exclusive** (not in A) | 755 | 88.0% |
+| PP (A-derived, AZC-filtered) | 103 | 12.0% |
+
+**Evidence:**
+- B-exclusive = MIDDLE appears in B but not in A
+- PP = MIDDLE appears in both A and B (subject to A→B pipeline)
+- Per-folio breakdown: mean 8.8 B-exclusive unique, mean 1.2 PP unique
+
+**Implications:**
+1. Unique vocabulary is primarily B-internal grammar, not A-derived
+2. 88% of unique MIDDLEs are NOT subject to AZC filtering
+3. Each folio's unique vocabulary is always locally available
+4. AZC modulates shared PP vocabulary, not folio-specific identity
+
+**Validates C501:** The B-exclusive stratification finding holds for unique vocabulary subset.
+
+**Cross-references:** C501 (B-exclusive stratification), C470 (MIDDLE restriction inheritance), C502.a (morphological filtering cascade)
+
+### C533 - Unique MIDDLE Grammatical Slot Consistency
+
+**Tier:** 2 | **Status:** NEW | **Scope:** B
+**Phase:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+Unique MIDDLEs fill the same grammatical slots as classified tokens:
+
+| Metric | Value |
+|--------|-------|
+| Unique MIDDLE tokens with matching PREFIX/SUFFIX | **75%** |
+| Classes used by unique MIDDLE tokens | 32 / 49 |
+| Adjacent folio class overlap (Jaccard) | 0.196 |
+| Non-adjacent folio class overlap | 0.150 |
+| **Adjacent/non-adjacent ratio** | **1.30x** |
+
+**Evidence:**
+- Morphological signature = (PREFIX, SUFFIX) pair
+- 75% of unique MIDDLE tokens have a signature that appears in classified tokens
+- Inferred class = most common class for that signature in classified data
+- Adjacent folios share class sets at 1.30x the rate of non-adjacent
+
+**Interpretation:**
+Unique MIDDLEs are grammatically equivalent to their classified counterparts. They fill the same slots but with different "words" - like synonyms in a grammar.
+
+Adjacent folios' unique vocabulary serves similar grammatical functions: **different words, same role**.
+
+**Note on containment:** 99.3% of unique MIDDLEs contain a core MIDDLE as substring. Per expert validation (C511, C512), this is trivially expected from string mathematics and compositional morphology, not a semantic "parent-child" relationship.
+
+**Cross-references:** C121 (49 classes), C501 (orthographic elaboration), C511 (derivational productivity), C512 (stylistic bifurcation)
+
+### C534 - Section-Specific Prefixless MIDDLE Profiles
+
+**Tier:** 3 | **Status:** NEW (PARTIAL) | **Scope:** B
+**Phase:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+Prefixless unique MIDDLEs show section-specific distribution, but effect is partially confounded:
+
+**Overall test:** chi2=106.2, p=0.000059 (highly significant)
+
+| Section | Over-represented Operators |
+|---------|---------------------------|
+| astro_cosmo | 'ke' 2.17x |
+| herbal_A | 'ckh' 2.19x |
+| herbal_B | 'sh' 2.01x |
+| pharma | 'or' 2.10x, 'dy' 2.02x |
+| recipe_stars | 'ai' 1.52x |
+
+**PREFIX control test:**
+
+| PREFIX Stratum | Section Differentiation |
+|----------------|------------------------|
+| NONE (prefixless) | **p=0.0230** (SURVIVES) |
+| ch | p=0.151 (not significant) |
+| qo | p=0.497 (not significant) |
+| sh | p=0.176 (not significant) |
+
+**Interpretation:**
+- For **prefixless tokens** (~35% of unique MIDDLEs): Section effects are REAL
+- For **prefixed tokens**: Section effects are explained by PREFIX-section associations (C374, C423)
+- The overall highly-significant result is a **mix of real and confounded effects**
+
+**Caveat:** Only ~35% of unique MIDDLEs are prefixless, so the independent section signal is partial.
+
+**Cross-references:** C374 (section-specific PREFIX distributions), C423 (PREFIX-bound vocabulary domains)
+
+### C535 - B Folio Vocabulary Minimality
+
+**Tier:** 2 | **Status:** NEW | **Scope:** B
+**Phase:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+B folios achieve near-minimal MIDDLE vocabulary coverage:
+
+| Metric | Value |
+|--------|-------|
+| Total distinct MIDDLEs in B | 1,339 |
+| Minimum folios for coverage (greedy) | **81** |
+| Actual folios | **82** |
+| Redundancy ratio | **1.01x** |
+
+**Evidence:**
+
+1. **Greedy set cover analysis:** Starting with the folio covering most MIDDLEs, iteratively adding folios that cover the most remaining MIDDLEs, 81 folios are needed to cover all 1,339 B MIDDLEs.
+
+2. **Pairwise distinctiveness:** Zero folio pairs exceed 50% Jaccard overlap. Folios are highly distinct from each other.
+
+3. **Unique contribution:** Each folio contributes vocabulary appearing in no other folio:
+   - Mean: 10.5 unique MIDDLEs per folio
+   - Only 1 folio (f95r1) has zero unique MIDDLEs
+   - 858 total unique MIDDLEs (64% of all B MIDDLEs)
+
+4. **Section distribution:**
+   | Section | Folios | Unique MIDDLEs | % of Total Unique |
+   |---------|--------|----------------|-------------------|
+   | recipe_stars (f103+) | 23 | 446 | 52% |
+   | herbal_A | 25 | 138 | 16% |
+   | herbal_B | 20 | 146 | 17% |
+   | pharma | 12 | 99 | 12% |
+   | astro_cosmo | 2 | 29 | 3% |
+
+**Interpretation:**
+
+The 83-folio count is not arbitrary but **structurally determined** by vocabulary coverage:
+- Each folio exists because it contributes vocabulary no other folio provides
+- You cannot have fewer folios without losing MIDDLE vocabulary
+- The 19:1 A:B ratio (1,559 A records : 82 B folios) emerges from this coverage requirement
+
+**Note on procedural coverage:** Per C506.b, vocabulary coverage is a **lower bound** on procedural coverage. Different MIDDLEs within the same class enable different execution flows (73% of MIDDLE pairs have transition JS > 0.4). The structural minimum ensures access to all behavioral variants.
+
+**Relationship to mastery horizon (X.1):** This finding grounds rather than replaces the Puff-Voynich 83:84 alignment. The "mastery horizon" becomes a consequence: you need ~83 units because that's what the domain requires for complete coverage, and that count happens to be learnable by experts.
+
+**Cross-references:** C531 (unique vocabulary prevalence), C532 (B-exclusivity), C476 (A-side coverage optimality), C506.b (intra-class behavioral heterogeneity)
+
+### C536 - Material-Class REGIME Invariance
+
+**Tier:** 2 | **Status:** REVISED | **Scope:** A->B
+**Phase:** MATERIAL_REGIME_MAPPING (2026-01-25)
+
+Both animal AND herb material classes preferentially route to REGIME_4 (precision control):
+
+| Material Class | REGIME_4 Enrichment | p-value | High-reception folios |
+|----------------|---------------------|---------|----------------------|
+| Animal | **2.03x** | 0.024 | 13/21 (62%) |
+| Herb | **2.09x** | 0.011 | 14/22 (64%) |
+| Baseline | 1.00x | - | 25/82 (30.5%) |
+
+**Key finding:** REGIME routing is NOT material-class-specific. Both material classes prefer precision execution at nearly identical enrichment levels.
+
+**Evidence:**
+
+1. **Material classification:**
+   - Animal markers: te/ho/ke PP (C505), ey/ol suffixes (C527)
+   - Herb markers: keo/eok/ko/cho/to PP, y/dy suffixes
+   - Animal high-confidence: 44 records
+   - Herb high-confidence: 104 records
+
+2. **Folio-level correlation:** r = 0.845 between animal and herb reception patterns. They route to the SAME folios, not different ones.
+
+3. **REGIME distribution (both classes):**
+   - REGIME_4: ~2x enriched
+   - REGIME_1: <0.15x (strongly avoided)
+   - REGIME_2/3: near baseline
+
+**Interpretation:**
+
+REGIME_4 encodes **execution precision requirements**, not material identity. Different materials can share execution requirements while differing in behavioral parameterization. This strengthens C494 (REGIME_4 = precision axis).
+
+**Cross-references:** C494 (REGIME_4 precision axis), C537 (token-level differentiation), C506.b (behavioral heterogeneity)
+
+---
+
+### C537 - Token-Level Material Differentiation
+
+**Tier:** 2 | **Status:** NEW | **Scope:** A->B
+**Phase:** MATERIAL_REGIME_MAPPING (2026-01-25)
+
+Despite identical REGIME routing (C536), material classes differentiate at token variant level:
+
+| Metric | Value |
+|--------|-------|
+| Overall Jaccard (animal vs herb tokens) | **0.382** |
+| Per-class mean Jaccard | **0.371** |
+| Animal-only tokens | 198 (26.6%) |
+| Herb-only tokens | 684 (55.6%) |
+| Shared tokens | 546 (38.2%) |
+
+**62% of token variants differ between animal and herb** despite routing to identical REGIMEs.
+
+**Most differentiated classes (PREFIX groups):**
+| Class | Jaccard | Description |
+|-------|---------|-------------|
+| ke | 0.037 | Near-zero overlap |
+| fch | 0.111 | Strong differentiation |
+| ol | 0.169 | Strong differentiation |
+| qo | 0.322 | Moderate differentiation |
+
+**Interpretation:**
+
+The manuscript achieves material-appropriate execution NOT by routing to different procedures, but by **selecting different variants within a shared grammatical framework**. This confirms C506.b: tokens within same class are positionally compatible but behaviorally distinct.
+
+**Combined model:**
+```
+Material Class -> REGIME: NO differentiation (both -> REGIME_4)
+Material Class -> Folio: NO differentiation (r=0.845 correlation)
+Material Class -> Token Variants: YES differentiation (Jaccard=0.38)
+```
+
+**Cross-references:** C536 (REGIME invariance), C506.b (intra-class behavioral heterogeneity), C506.a (token-level PP effects)
+
+---
+
+### C538 - PP Material-Class Distribution
+
+**Tier:** 3 | **Status:** NEW | **Scope:** A
+**Phase:** PP_CLASSIFICATION (2026-01-25)
+
+PP MIDDLEs partition into material-class associations based on enrichment in animal vs herb suffix-signature records:
+
+| Class | Count | % | Description |
+|-------|-------|---|-------------|
+| ANIMAL | 63 | 15.6% | >2x enriched in animal-suffix records |
+| HERB | 113 | 28.0% | >2x enriched in herb-suffix records |
+| MIXED | 67 | 16.6% | Present in both, no strong preference |
+| NEUTRAL | 161 | 39.9% | Not enriched in either |
+
+**Top animal-associated PPs:** pch (43x), opch (18x), octh (9x), cph (3.7x), kch (3.7x), ch (2.9x), h (2.5x)
+
+**Top herb-associated PPs:** keo (66x), eok (52x), ko (33x), cho (33x), to (33x), eo (3.3x)
+
+**RI Projection:**
+- 95.9% of RI contain PP atoms (mean 4.36 atoms per RI)
+- RI can be tentatively tagged through PP composition
+- High-confidence: 16 animal RI, 57 herb RI
+- High noise: 44.5% project as MIXED
+
+**Caveat:** Classification is conditional on Brunschwig alignment (suffix patterns from C527). This is Tier 3, not Tier 2.
+
+**Cross-references:** C505 (PP profile differentiation), C527 (suffix-material correlation), C516 (RI multi-atom composition)
 
 ---
 

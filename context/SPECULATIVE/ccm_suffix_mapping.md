@@ -1,8 +1,20 @@
 # Component-to-Class Mapping: Suffix Analysis (CCM-2)
 
-**Tier:** 3 | **Status:** IN PROGRESS | **Date:** 2026-01-10
+**Tier:** 3 | **Status:** PROVISIONAL | **Date:** 2026-01-10 | **Revised:** 2026-01-24
 
 > **Goal:** Map the 7 universal suffixes to decision archetype clusters using A/B enrichment patterns.
+
+---
+
+## IMPORTANT: Uncertainty and Corrections (2026-01-24)
+
+**This mapping is PROVISIONAL.** Key issues:
+
+1. **C283 Error Corrected:** -ol is 0.35x B/A (A-enriched), NOT "balanced" as originally claimed
+2. **D1-D12 Mapping Incomplete:** Several archetype assignments have LOW confidence
+3. **Two-Axis Model:** C527 establishes suffix also correlates with material class (animal vs herb) within Currier A - a dimension not captured by A/B enrichment alone
+
+The suffix-to-archetype mapping below should be treated as **exploratory, not established**.
 
 ---
 
@@ -11,7 +23,8 @@
 | Source | What It Provides |
 |--------|------------------|
 | C277 | Suffixes are UNIVERSAL (appear across all prefixes) |
-| C283 | Suffix enrichment ratios (A vs B) |
+| C283 | Suffix enrichment ratios (A vs B) - **CORRECTED: -ol is A-enriched** |
+| C527 | Suffix-material class correlation (animal vs herb, fire degree) - **NEW** |
 | ECR-3 | 12 decision archetypes by layer |
 | canonical_grammar.json | Token → role with suffix patterns |
 
@@ -19,15 +32,15 @@
 
 ## Step 1: Suffix Enrichment Patterns
 
-From C283:
+From C283 (**with corrections**):
 
 | Suffix | Enrichment | Interpretation |
 |--------|------------|----------------|
-| **-edy** | 191x B-enriched | Extreme B specialization |
-| **-dy** | 4.6x B-enriched | Strong B preference |
-| **-ar** | 3.2x B-enriched | Moderate B preference |
-| **-ol** | ~1x balanced | Cross-system |
-| **-aiin** | ~1x balanced | Cross-system |
+| **-edy** | 49x B-enriched | Extreme B specialization |
+| **-dy** | 1.75x B-enriched | Moderate B preference |
+| **-ar** | 1.37x B-enriched | Slight B preference |
+| **-ol** | 0.35x B/A | **A-enriched (CORRECTED)** |
+| **-or** | 0.28x B/A | A-enriched |
 | **-or** | 0.67x A-enriched | Moderate A preference |
 | **-chy** | 0.61x A-enriched | Moderate A preference |
 | **-chor** | 0.18x A-enriched | Strong A preference |

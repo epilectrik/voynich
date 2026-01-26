@@ -1,0 +1,35 @@
+{
+  "hazard_presence": {
+    "lines_with_hazard": 2240,
+    "lines_with_multiple": 1856,
+    "mean_per_line": 3.0673553719008266
+  },
+  "dispersion": {
+    "variance": 3.942983915033126,
+    "expected_variance": 3.0673553719008266,
+    "dispersion_index": 1.2854669371386453
+  },
+  "gateway_terminal": {
+    "observed": 136,
+    "expected": 128.399173553719,
+    "enrichment": 1.0591968486705328
+  },
+  "significant_pairs": [
+    {
+      "c1": 8,
+      "c2": 32,
+      "observed": 272,
+      "expected": 201.0706611570248,
+      "enrichment": 1.3527582713202668,
+      "p_value": 5.671190808076432e-07
+    },
+    {
+      "c1": 8,
+      "c2": 33,
+      "observed": 467,
+      "expected": 386.2933884297521,
+      "enrichment": 1.208925687023309,
+      "p_value": 4.020505209245684e-05
+    }
+  ]
+}

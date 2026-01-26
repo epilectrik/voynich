@@ -1,0 +1,46 @@
+{
+  "phase": "BRUNSCHWIG_PP_RI_TEST",
+  "date": "2026-01-24",
+  "summary": {
+    "supports": 0,
+    "contradicts": 0,
+    "inconclusive": 7
+  },
+  "tests": {
+    "test1_has_procedure": {
+      "result": "inconclusive",
+      "p_value": null,
+      "z_score": null
+    },
+    "test2_animal_class": {
+      "result": "inconclusive",
+      "p_value": 0.06343030773857139,
+      "z_score": -1.856163143397377
+    },
+    "test3_fire_degree": {
+      "result": "inconclusive",
+      "p_value": 0.1666897268335772,
+      "z_score": -1.3829189247505507
+    },
+    "test4_use_count": {
+      "result": "inconclusive",
+      "p_value": 0.3392997822881276,
+      "z_score": -0.9555497043061454
+    },
+    "test5_prefix_dist": {
+      "result": "inconclusive",
+      "p_value": null,
+      "z_score": null
+    },
+    "test6_processing": {
+      "result": "inconclusive",
+      "p_value": null,
+      "z_score": null
+    },
+    "test7_parts_complexity": {
+      "result": "inconclusive",
+      "p_value": null,
+      "z_score": null
+    }
+  }
+}

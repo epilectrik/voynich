@@ -1,0 +1,645 @@
+{
+  "definitive_ax_classes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "definitive_ax_count": 20,
+  "ax_token_total": 4559,
+  "ax_pct_of_b": 28.4,
+  "total_classified_b": 16054,
+  "per_class": {
+    "1": {
+      "types": 8,
+      "tokens": 38,
+      "pct_of_ax": 0.8,
+      "prefix_profile": {
+        "dominant_prefix": "ok",
+        "prefix_counts": {
+          "ok": 3,
+          "ct": 2,
+          "ol": 1,
+          "ot": 2
+        },
+        "articulator_rate": 0.0,
+        "n_types": 8
+      }
+    },
+    "2": {
+      "types": 8,
+      "tokens": 48,
+      "pct_of_ax": 1.1,
+      "prefix_profile": {
+        "dominant_prefix": "ok",
+        "prefix_counts": {
+          "ot": 3,
+          "ok": 5
+        },
+        "articulator_rate": 0.0,
+        "n_types": 8
+      }
+    },
+    "3": {
+      "types": 9,
+      "tokens": 62,
+      "pct_of_ax": 1.4,
+      "prefix_profile": {
+        "dominant_prefix": "ot",
+        "prefix_counts": {
+          "ol": 3,
+          "ok": 2,
+          "ot": 4
+        },
+        "articulator_rate": 0.0,
+        "n_types": 9
+      }
+    },
+    "4": {
+      "types": 17,
+      "tokens": 140,
+      "pct_of_ax": 3.1,
+      "prefix_profile": {
+        "dominant_prefix": "yk",
+        "prefix_counts": {
+          "yk": 3,
+          "lk": 1,
+          "te": 1,
+          "ch": 2,
+          "dch": 1,
+          "tch": 2,
+          "NONE": 1,
+          "lch": 1,
+          "pch": 3,
+          "rch": 1,
+          "fch": 1
+        },
+        "articulator_rate": 0.35294117647058826,
+        "n_types": 17
+      }
+    },
+    "5": {
+      "types": 15,
+      "tokens": 112,
+      "pct_of_ax": 2.5,
+      "prefix_profile": {
+        "dominant_prefix": "sh",
+        "prefix_counts": {
+          "sh": 3,
+          "yk": 1,
+          "ta": 1,
+          "tch": 1,
+          "NONE": 2,
+          "ke": 2,
+          "te": 1,
+          "pch": 3,
+          "ch": 1
+        },
+        "articulator_rate": 0.3333333333333333,
+        "n_types": 15
+      }
+    },
+    "6": {
+      "types": 23,
+      "tokens": 198,
+      "pct_of_ax": 4.3,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "dch": 1,
+          "NONE": 5,
+          "lch": 1,
+          "lsh": 1,
+          "ch": 3,
+          "yk": 2,
+          "ta": 3,
+          "tch": 1,
+          "te": 2,
+          "or": 1,
+          "ka": 1,
+          "to": 2
+        },
+        "articulator_rate": 0.30434782608695654,
+        "n_types": 23
+      }
+    },
+    "14": {
+      "types": 12,
+      "tokens": 707,
+      "pct_of_ax": 15.5,
+      "prefix_profile": {
+        "dominant_prefix": "ot",
+        "prefix_counts": {
+          "ot": 7,
+          "ok": 5
+        },
+        "articulator_rate": 0.0,
+        "n_types": 12
+      }
+    },
+    "15": {
+      "types": 5,
+      "tokens": 68,
+      "pct_of_ax": 1.5,
+      "prefix_profile": {
+        "dominant_prefix": "ct",
+        "prefix_counts": {
+          "ct": 4,
+          "ol": 1
+        },
+        "articulator_rate": 0.0,
+        "n_types": 5
+      }
+    },
+    "16": {
+      "types": 10,
+      "tokens": 95,
+      "pct_of_ax": 2.1,
+      "prefix_profile": {
+        "dominant_prefix": "ok",
+        "prefix_counts": {
+          "ok": 6,
+          "ot": 2,
+          "da": 2
+        },
+        "articulator_rate": 0.0,
+        "n_types": 10
+      }
+    },
+    "18": {
+      "types": 9,
+      "tokens": 164,
+      "pct_of_ax": 3.6,
+      "prefix_profile": {
+        "dominant_prefix": "ot",
+        "prefix_counts": {
+          "ot": 5,
+          "ok": 4
+        },
+        "articulator_rate": 0.0,
+        "n_types": 9
+      }
+    },
+    "19": {
+      "types": 6,
+      "tokens": 74,
+      "pct_of_ax": 1.6,
+      "prefix_profile": {
+        "dominant_prefix": "ot",
+        "prefix_counts": {
+          "ot": 3,
+          "ok": 3
+        },
+        "articulator_rate": 0.0,
+        "n_types": 6
+      }
+    },
+    "20": {
+      "types": 15,
+      "tokens": 198,
+      "pct_of_ax": 4.3,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "NONE": 9,
+          "ko": 1,
+          "po": 1,
+          "to": 1,
+          "ka": 1,
+          "ta": 1,
+          "yk": 1
+        },
+        "articulator_rate": 0.0,
+        "n_types": 15
+      }
+    },
+    "21": {
+      "types": 10,
+      "tokens": 111,
+      "pct_of_ax": 2.4,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "or": 1,
+          "NONE": 7,
+          "lk": 1,
+          "ke": 1
+        },
+        "articulator_rate": 0.0,
+        "n_types": 10
+      }
+    },
+    "22": {
+      "types": 7,
+      "tokens": 45,
+      "pct_of_ax": 1.0,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "NONE": 6,
+          "te": 1
+        },
+        "articulator_rate": 0.0,
+        "n_types": 7
+      }
+    },
+    "24": {
+      "types": 15,
+      "tokens": 579,
+      "pct_of_ax": 12.7,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "do": 2,
+          "NONE": 5,
+          "sa": 2,
+          "so": 2,
+          "ka": 1,
+          "to": 1,
+          "ta": 1,
+          "ko": 1
+        },
+        "articulator_rate": 0.0,
+        "n_types": 15
+      }
+    },
+    "25": {
+      "types": 9,
+      "tokens": 105,
+      "pct_of_ax": 2.3,
+      "prefix_profile": {
+        "dominant_prefix": "ol",
+        "prefix_counts": {
+          "ol": 6,
+          "ct": 3
+        },
+        "articulator_rate": 0.0,
+        "n_types": 9
+      }
+    },
+    "26": {
+      "types": 8,
+      "tokens": 166,
+      "pct_of_ax": 3.6,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "yk": 1,
+          "NONE": 2,
+          "te": 1,
+          "dch": 1,
+          "ch": 1,
+          "kch": 1,
+          "da": 1
+        },
+        "articulator_rate": 0.375,
+        "n_types": 8
+      }
+    },
+    "27": {
+      "types": 21,
+      "tokens": 212,
+      "pct_of_ax": 4.7,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "ta": 2,
+          "NONE": 4,
+          "tch": 4,
+          "yk": 2,
+          "ke": 2,
+          "so": 1,
+          "kch": 4,
+          "te": 1,
+          "do": 1
+        },
+        "articulator_rate": 0.14285714285714285,
+        "n_types": 21
+      }
+    },
+    "28": {
+      "types": 25,
+      "tokens": 625,
+      "pct_of_ax": 13.7,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "sa": 2,
+          "ka": 1,
+          "lch": 1,
+          "ke": 2,
+          "te": 3,
+          "ta": 1,
+          "NONE": 5,
+          "lk": 4,
+          "yk": 1,
+          "dch": 3,
+          "kch": 1,
+          "or": 1
+        },
+        "articulator_rate": 0.08,
+        "n_types": 25
+      }
+    },
+    "29": {
+      "types": 17,
+      "tokens": 812,
+      "pct_of_ax": 17.8,
+      "prefix_profile": {
+        "dominant_prefix": "NONE",
+        "prefix_counts": {
+          "sa": 1,
+          "lch": 1,
+          "NONE": 3,
+          "ka": 1,
+          "yk": 2,
+          "ke": 1,
+          "lk": 2,
+          "ta": 1,
+          "lsh": 1,
+          "or": 1,
+          "sh": 1,
+          "pch": 1,
+          "tch": 1
+        },
+        "articulator_rate": 0.11764705882352941,
+        "n_types": 17
+      }
+    }
+  },
+  "prefix_families": {
+    "OK/OT": [
+      1,
+      2,
+      3,
+      14,
+      16,
+      18,
+      19
+    ],
+    "ARTICULATED": [
+      4,
+      5,
+      6,
+      26
+    ],
+    "OTHER(ct)": [
+      15
+    ],
+    "OTHER(NONE)": [
+      20,
+      21,
+      22,
+      24,
+      27,
+      28,
+      29
+    ],
+    "OL": [
+      25
+    ]
+  },
+  "discrepancies": [
+    {
+      "class": 12,
+      "bcsc": "CC",
+      "icc": "CC",
+      "csv": "AX"
+    },
+    {
+      "class": 13,
+      "bcsc": "other",
+      "icc": "FQ",
+      "csv": "AX"
+    },
+    {
+      "class": 17,
+      "bcsc": "AX",
+      "icc": "AX",
+      "csv": "CC"
+    },
+    {
+      "class": 20,
+      "bcsc": "AX",
+      "icc": "AX",
+      "csv": "FQ"
+    },
+    {
+      "class": 21,
+      "bcsc": "AX",
+      "icc": "AX",
+      "csv": "FQ"
+    },
+    {
+      "class": 35,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 37,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 38,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "FL"
+    },
+    {
+      "class": 39,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 40,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "FL"
+    },
+    {
+      "class": 41,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 42,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 43,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 44,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 45,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 46,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 47,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 48,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    },
+    {
+      "class": 49,
+      "bcsc": "other",
+      "icc": "EN",
+      "csv": "AX"
+    }
+  ],
+  "taxonomy_comparison": {
+    "icc_ax": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "csv_ax": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      35,
+      37,
+      39,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "bcsc_ax": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "icc_en": [
+      8,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "csv_en": [
+      8,
+      31,
+      32,
+      33,
+      34,
+      36
+    ]
+  }
+}

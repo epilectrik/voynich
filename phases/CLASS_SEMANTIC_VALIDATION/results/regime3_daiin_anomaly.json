@@ -1,0 +1,32 @@
+{
+  "regime3_daiin": {
+    "total": 42,
+    "initial": 5,
+    "initial_rate": 11.904761904761903
+  },
+  "other_regimes_daiin": {
+    "total": 272,
+    "initial": 80,
+    "initial_rate": 29.411764705882355
+  },
+  "regime3_sections": {
+    "HERBAL": 2,
+    "BIO": 3,
+    "RECIPE": 3
+  },
+  "regime3_follower_roles": {
+    "UN": 12,
+    "EN": 10,
+    "FL": 3,
+    "AX": 12,
+    "CC": 2
+  },
+  "other_follower_roles": {
+    "AX": 64,
+    "EN": 77,
+    "UN": 69,
+    "FQ": 11,
+    "FL": 18,
+    "CC": 12
+  }
+}

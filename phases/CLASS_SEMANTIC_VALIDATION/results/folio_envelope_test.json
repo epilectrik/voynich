@@ -1,0 +1,13 @@
+{
+  "total_folios": 82,
+  "both": 74,
+  "gateway_only": 4,
+  "terminal_only": 4,
+  "neither": 0,
+  "fisher_odds_ratio": 0.0,
+  "fisher_p_value": 1.0,
+  "spearman_rho": 0.4989760179927347,
+  "spearman_p": 1.8295243628913716e-06,
+  "trend_rho": -0.3675451732625532,
+  "trend_p": 0.0006815582246600533
+}

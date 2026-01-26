@@ -1,0 +1,8697 @@
+{
+  "metadata": {
+    "n_ri": 609,
+    "n_ri_with_atoms": 584,
+    "mean_atoms_per_ri": 4.362889983579639
+  },
+  "projected_distribution": {
+    "HERB": 169,
+    "MIXED": 271,
+    "ANIMAL": 107,
+    "NEUTRAL": 6,
+    "HERB_MIXED": 23,
+    "UNKNOWN": 25,
+    "ANIMAL_MIXED": 8
+  },
+  "high_confidence_count": {
+    "animal": 16,
+    "herb": 57
+  },
+  "ri_classification": {
+    "toii": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "to",
+        "oi",
+        "oii"
+      ]
+    },
+    "oepchksh": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 6,
+      "pp_atoms": [
+        "epch",
+        "oe",
+        "pc",
+        "pch",
+        "oep",
+        "sh",
+        "ks",
+        "ch",
+        "epc",
+        "ep"
+      ]
+    },
+    "ycphko": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "ko",
+        "cph"
+      ]
+    },
+    "yqo": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qo"
+      ]
+    },
+    "sckh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck"
+      ]
+    },
+    "dypc": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "pc",
+        "yp",
+        "dy"
+      ]
+    },
+    "hre": {
+      "projected_class": "NEUTRAL",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "re"
+      ]
+    },
+    "cholc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "lc",
+        "ol",
+        "olc",
+        "cho"
+      ]
+    },
+    "orc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "or",
+        "rc"
+      ]
+    },
+    "opod": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "op",
+        "od"
+      ]
+    },
+    "raloa": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "lo",
+        "ra",
+        "alo",
+        "al"
+      ]
+    },
+    "opyd": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "op",
+        "pyd"
+      ]
+    },
+    "id": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "kchee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "kche",
+        "che",
+        "ch",
+        "chee",
+        "he",
+        "ee",
+        "kch",
+        "kc"
+      ]
+    },
+    "iino": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "in",
+        "iin"
+      ]
+    },
+    "talo": {
+      "projected_class": "HERB",
+      "confidence": 0.8,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ta",
+        "tal",
+        "lo",
+        "alo",
+        "al"
+      ]
+    },
+    "iiinche": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ii",
+        "che",
+        "ch",
+        "in",
+        "he",
+        "iin"
+      ]
+    },
+    "kalo": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "lo",
+        "alo",
+        "al",
+        "ka",
+        "kal"
+      ]
+    },
+    "tydlo": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "yd",
+        "dl",
+        "lo",
+        "ty"
+      ]
+    },
+    "syaii": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "yaii",
+        "ii",
+        "aii",
+        "yai",
+        "ai"
+      ]
+    },
+    "cheol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eol",
+        "cheo",
+        "che",
+        "ch",
+        "ol",
+        "he",
+        "eo"
+      ]
+    },
+    "ekh": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ek"
+      ]
+    },
+    "yeee": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "eee",
+        "ee"
+      ]
+    },
+    "dd": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "ochol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "och",
+        "ocho",
+        "ch",
+        "ol",
+        "oc",
+        "cho"
+      ]
+    },
+    "kolol": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "olo",
+        "lo",
+        "kol",
+        "ol",
+        "ko"
+      ]
+    },
+    "aly": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ly",
+        "al"
+      ]
+    },
+    "qkeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qk",
+        "ke",
+        "eo",
+        "keo"
+      ]
+    },
+    "iiit": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ii",
+        "it"
+      ]
+    },
+    "tcheea": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "tch",
+        "che",
+        "ch",
+        "chee",
+        "he",
+        "ee",
+        "tc",
+        "eea",
+        "tche",
+        "ea"
+      ]
+    },
+    "cheot": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cheo",
+        "che",
+        "eot",
+        "ch",
+        "ot",
+        "he",
+        "eo"
+      ]
+    },
+    "rasod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.6666666666666666,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ra",
+        "so",
+        "od"
+      ]
+    },
+    "eeckh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2857142857142857,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ec",
+        "eckh",
+        "eeck",
+        "ee",
+        "eck"
+      ]
+    },
+    "oka": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ka",
+        "ok"
+      ]
+    },
+    "oalda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ald",
+        "ld",
+        "da",
+        "al"
+      ]
+    },
+    "eokeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oke",
+        "eoke",
+        "eok",
+        "ke",
+        "okeo",
+        "eo",
+        "keo",
+        "ok"
+      ]
+    },
+    "eai": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ai",
+        "ea"
+      ]
+    },
+    "alt": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "al"
+      ]
+    },
+    "ict": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct"
+      ]
+    },
+    "loda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "lo",
+        "da",
+        "oda",
+        "od"
+      ]
+    },
+    "olal": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "la",
+        "ol",
+        "ola",
+        "al"
+      ]
+    },
+    "ydsh": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "sh",
+        "dsh"
+      ]
+    },
+    "ytyc": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yt",
+        "ty"
+      ]
+    },
+    "irod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.4,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "rod",
+        "ro",
+        "iro",
+        "od",
+        "ir"
+      ]
+    },
+    "ora": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "ra"
+      ]
+    },
+    "eetc": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "et",
+        "etc",
+        "ee",
+        "tc",
+        "eet"
+      ]
+    },
+    "keoda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "keod",
+        "eod",
+        "da",
+        "ke",
+        "oda",
+        "eo",
+        "keo",
+        "od"
+      ]
+    },
+    "eoep": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "oe",
+        "oep",
+        "ep",
+        "eo"
+      ]
+    },
+    "iiirc": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "iir",
+        "ii",
+        "rc",
+        "ir"
+      ]
+    },
+    "odd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "od"
+      ]
+    },
+    "horc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "or",
+        "rc"
+      ]
+    },
+    "schod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "chod",
+        "cho",
+        "od"
+      ]
+    },
+    "sholsh": {
+      "projected_class": "HERB",
+      "confidence": 0.42857142857142855,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "olsh",
+        "ols",
+        "sho",
+        "sh",
+        "ls",
+        "ol",
+        "lsh"
+      ]
+    },
+    "alok": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "lo",
+        "alo",
+        "al",
+        "ok"
+      ]
+    },
+    "orpch": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "or",
+        "ch"
+      ]
+    },
+    "ikeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ik",
+        "ke",
+        "eo",
+        "keo"
+      ]
+    },
+    "oeeee": {
+      "projected_class": "MIXED",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "oeee",
+        "eee",
+        "ee"
+      ]
+    },
+    "keolo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "eol",
+        "olo",
+        "lo",
+        "ol",
+        "ke",
+        "eo",
+        "keo"
+      ]
+    },
+    "osocth": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "oso",
+        "cth",
+        "octh",
+        "oct",
+        "os",
+        "so",
+        "oc"
+      ]
+    },
+    "chyk": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "yk",
+        "hy"
+      ]
+    },
+    "ckoo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "ko"
+      ]
+    },
+    "opchor": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "opc",
+        "or",
+        "op",
+        "ch",
+        "opcho",
+        "pcho",
+        "opch",
+        "cho"
+      ]
+    },
+    "ckha": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck"
+      ]
+    },
+    "hodaii": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "odai",
+        "ii",
+        "odaii",
+        "dai",
+        "da",
+        "aii",
+        "ai",
+        "oda",
+        "od"
+      ]
+    },
+    "oros": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "or",
+        "ro",
+        "os"
+      ]
+    },
+    "ekcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ekch",
+        "ch",
+        "kcho",
+        "kch",
+        "cho",
+        "ek",
+        "ekc",
+        "kc"
+      ]
+    },
+    "octo": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "to",
+        "oct",
+        "oc"
+      ]
+    },
+    "ytsho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "sho",
+        "tsh",
+        "sh",
+        "ts",
+        "yt",
+        "yts"
+      ]
+    },
+    "olfch": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "fch",
+        "ol",
+        "olf"
+      ]
+    },
+    "pydchd": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "yd",
+        "dc",
+        "pyd",
+        "ch",
+        "chd",
+        "dch"
+      ]
+    },
+    "cthso": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "cth",
+        "so"
+      ]
+    },
+    "yc": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "okeeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "keeo",
+        "oke",
+        "ee",
+        "ke",
+        "eeo",
+        "okee",
+        "eo",
+        "kee",
+        "ok"
+      ]
+    },
+    "di": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "pdych": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "pd",
+        "dy"
+      ]
+    },
+    "opchod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 3,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "opc",
+        "op",
+        "ch",
+        "opcho",
+        "chod",
+        "pcho",
+        "opch",
+        "cho"
+      ]
+    },
+    "rarda": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.6666666666666666,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ar",
+        "ra",
+        "da"
+      ]
+    },
+    "yda": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "da"
+      ]
+    },
+    "ocheek": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "och",
+        "che",
+        "ch",
+        "chee",
+        "he",
+        "ee",
+        "oc",
+        "ek",
+        "eek"
+      ]
+    },
+    "ofyskyd": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of",
+        "yd",
+        "sk"
+      ]
+    },
+    "pdrair": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "rai",
+        "ra",
+        "pd",
+        "air",
+        "ai",
+        "ir"
+      ]
+    },
+    "hosh": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "osh",
+        "sh",
+        "os"
+      ]
+    },
+    "ramd": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "am",
+        "ra"
+      ]
+    },
+    "kalc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "alc",
+        "lc",
+        "al",
+        "ka",
+        "kal"
+      ]
+    },
+    "ckch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "ch",
+        "kch",
+        "kc"
+      ]
+    },
+    "hee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "he",
+        "ee"
+      ]
+    },
+    "faii": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "aii",
+        "ai"
+      ]
+    },
+    "cfho": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cfh",
+        "cf"
+      ]
+    },
+    "ools": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ols",
+        "ool",
+        "ls",
+        "ol"
+      ]
+    },
+    "rsheo": {
+      "projected_class": "HERB",
+      "confidence": 0.2857142857142857,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "she",
+        "sheo",
+        "sh",
+        "rsh",
+        "he",
+        "rs",
+        "eo"
+      ]
+    },
+    "dydyd": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "dydy",
+        "dyd",
+        "dy"
+      ]
+    },
+    "esed": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "es",
+        "ese",
+        "ed"
+      ]
+    },
+    "tchotc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tch",
+        "chot",
+        "ch",
+        "ot",
+        "otc",
+        "tcho",
+        "tc",
+        "cho"
+      ]
+    },
+    "odeeeeod": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 5,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ode",
+        "eod",
+        "eee",
+        "eeod",
+        "ee",
+        "eeo",
+        "eo",
+        "eeeo",
+        "od",
+        "odee"
+      ]
+    },
+    "otyokc": {
+      "projected_class": "HERB",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "okc",
+        "ot",
+        "ty",
+        "kc",
+        "ok"
+      ]
+    },
+    "dlod": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "dl",
+        "lo",
+        "od"
+      ]
+    },
+    "heea": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "he",
+        "ee",
+        "eea",
+        "ea"
+      ]
+    },
+    "oeeock": {
+      "projected_class": "HERB",
+      "confidence": 0.5454545454545454,
+      "n_animal": 0,
+      "n_herb": 6,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "ck",
+        "oee",
+        "eoc",
+        "eock",
+        "ock",
+        "oeeo",
+        "ee",
+        "oc",
+        "eeo"
+      ]
+    },
+    "oesearee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oe",
+        "ar",
+        "es",
+        "re",
+        "ese",
+        "ee",
+        "ea"
+      ]
+    },
+    "eoiee": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oi",
+        "ee",
+        "eo"
+      ]
+    },
+    "osheok": {
+      "projected_class": "HERB",
+      "confidence": 0.3,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 3,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "oshe",
+        "osh",
+        "she",
+        "sheo",
+        "sh",
+        "eok",
+        "he",
+        "os",
+        "eo",
+        "ok"
+      ]
+    },
+    "hod": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "od"
+      ]
+    },
+    "aira": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ra",
+        "air",
+        "ai",
+        "ir"
+      ]
+    },
+    "otsh": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "tsh",
+        "sh",
+        "ot",
+        "ts"
+      ]
+    },
+    "lct": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "lc"
+      ]
+    },
+    "cthod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "cth",
+        "ctho",
+        "od"
+      ]
+    },
+    "okchod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 4,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "okc",
+        "ch",
+        "okcho",
+        "okch",
+        "kcho",
+        "kchod",
+        "chod",
+        "kch",
+        "cho",
+        "kc"
+      ]
+    },
+    "mchor": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "ch",
+        "cho"
+      ]
+    },
+    "teold": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 4,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "eold",
+        "teo",
+        "eol",
+        "te",
+        "ld",
+        "ol",
+        "old",
+        "eo"
+      ]
+    },
+    "ealch": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "alc",
+        "eal",
+        "ch",
+        "lc",
+        "al",
+        "lch",
+        "alch",
+        "ea"
+      ]
+    },
+    "ealkai": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "kai",
+        "eal",
+        "lk",
+        "al",
+        "ai",
+        "ka",
+        "ea"
+      ]
+    },
+    "fyd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd"
+      ]
+    },
+    "cfaras": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ar",
+        "ra",
+        "ara",
+        "cf"
+      ]
+    },
+    "etsee": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "et",
+        "ts",
+        "ee",
+        "see"
+      ]
+    },
+    "olta": {
+      "projected_class": "MIXED",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ta",
+        "ol",
+        "olt"
+      ]
+    },
+    "oyt": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yt",
+        "oy"
+      ]
+    },
+    "iinc": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "in",
+        "iin"
+      ]
+    },
+    "opolke": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.16666666666666666,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "olke",
+        "op",
+        "lk",
+        "ol",
+        "olk",
+        "ke"
+      ]
+    },
+    "hos": {
+      "projected_class": "NEUTRAL",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "os"
+      ]
+    },
+    "eocph": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ocp",
+        "eocp",
+        "ocph",
+        "eoc",
+        "cp",
+        "oc",
+        "eo",
+        "cph"
+      ]
+    },
+    "eoea": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "eo",
+        "ea"
+      ]
+    },
+    "ypsho": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "yp"
+      ]
+    },
+    "cphdait": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2857142857142857,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ait",
+        "cp",
+        "dai",
+        "da",
+        "ai",
+        "it",
+        "cph"
+      ]
+    },
+    "olda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ld",
+        "ol",
+        "da",
+        "old"
+      ]
+    },
+    "teoda": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "teo",
+        "te",
+        "eod",
+        "da",
+        "oda",
+        "eo",
+        "od"
+      ]
+    },
+    "ckhoc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckho",
+        "oc"
+      ]
+    },
+    "eoda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eod",
+        "da",
+        "oda",
+        "eo",
+        "od"
+      ]
+    },
+    "chop": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "op",
+        "ch",
+        "cho"
+      ]
+    },
+    "lald": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ald",
+        "ld",
+        "la",
+        "al"
+      ]
+    },
+    "airs": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "air",
+        "ai",
+        "rs",
+        "ir"
+      ]
+    },
+    "ckheeo": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckhe",
+        "he",
+        "ee",
+        "eeo",
+        "eo"
+      ]
+    },
+    "dydc": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "dc",
+        "dyd",
+        "dy"
+      ]
+    },
+    "for": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "fo"
+      ]
+    },
+    "dytc": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "dyt",
+        "yt",
+        "tc",
+        "dy"
+      ]
+    },
+    "ys": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "ikheeo": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ik",
+        "he",
+        "ee",
+        "eeo",
+        "eo"
+      ]
+    },
+    "oscho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "os",
+        "cho"
+      ]
+    },
+    "okol": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oko",
+        "kol",
+        "ol",
+        "ko",
+        "ok"
+      ]
+    },
+    "tchee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "tch",
+        "che",
+        "ch",
+        "chee",
+        "he",
+        "ee",
+        "tc",
+        "tche"
+      ]
+    },
+    "ealod": {
+      "projected_class": "HERB",
+      "confidence": 0.7142857142857143,
+      "n_animal": 0,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eal",
+        "alod",
+        "lo",
+        "alo",
+        "al",
+        "od",
+        "ea"
+      ]
+    },
+    "ho": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "ckhols": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckho",
+        "ols",
+        "ls",
+        "ol"
+      ]
+    },
+    "ha": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "ckheok": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckheo",
+        "ckhe",
+        "eok",
+        "he",
+        "eo",
+        "ok"
+      ]
+    },
+    "stsh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "tsh",
+        "sh",
+        "ts"
+      ]
+    },
+    "tsho": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sho",
+        "tsh",
+        "sh",
+        "ts"
+      ]
+    },
+    "lee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "le",
+        "ee"
+      ]
+    },
+    "shet": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "et",
+        "sh",
+        "he"
+      ]
+    },
+    "aiind": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.14285714285714285,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 5,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ind",
+        "ii",
+        "aiin",
+        "in",
+        "aii",
+        "iin",
+        "ai"
+      ]
+    },
+    "odala": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ala",
+        "odal",
+        "la",
+        "da",
+        "al",
+        "oda",
+        "od"
+      ]
+    },
+    "cphea": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cphe",
+        "cp",
+        "he",
+        "ea",
+        "cph"
+      ]
+    },
+    "imd": {
+      "projected_class": "NEUTRAL",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "im"
+      ]
+    },
+    "schsa": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.6666666666666666,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "sa",
+        "ch",
+        "chs"
+      ]
+    },
+    "ydcph": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "dc",
+        "cp",
+        "cph"
+      ]
+    },
+    "okor": {
+      "projected_class": "HERB",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "oko",
+        "ko",
+        "kor",
+        "ok"
+      ]
+    },
+    "ocpheos": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.7142857142857143,
+      "n_animal": 2,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "eos",
+        "ocp",
+        "cphe",
+        "ocph",
+        "ocpheo",
+        "cp",
+        "cpheo",
+        "he",
+        "os",
+        "oc"
+      ]
+    },
+    "ryd": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "ry"
+      ]
+    },
+    "hol": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ol"
+      ]
+    },
+    "lchyd": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "ch",
+        "lc",
+        "lch",
+        "hy"
+      ]
+    },
+    "cholqod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "ol",
+        "cho",
+        "od",
+        "qo"
+      ]
+    },
+    "opyk": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "op",
+        "yk"
+      ]
+    },
+    "eeeet": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "et",
+        "eee",
+        "ee",
+        "eet"
+      ]
+    },
+    "lych": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ly",
+        "ch"
+      ]
+    },
+    "ssheo": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "sheo",
+        "sh",
+        "he",
+        "eo"
+      ]
+    },
+    "oetalch": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8333333333333334,
+      "n_animal": 1,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "oe",
+        "alc",
+        "ta",
+        "oet",
+        "et",
+        "tal",
+        "ch",
+        "lc",
+        "al",
+        "lch"
+      ]
+    },
+    "kokc": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "okc",
+        "ko",
+        "kc",
+        "ok"
+      ]
+    },
+    "okcheo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "kche",
+        "cheo",
+        "che",
+        "okc",
+        "ch",
+        "okch",
+        "he",
+        "kch",
+        "kcheo",
+        "eo"
+      ]
+    },
+    "hoda": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "da",
+        "oda",
+        "od"
+      ]
+    },
+    "eeoldai": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 3,
+      "n_mixed": 5,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eold",
+        "eol",
+        "ld",
+        "dai",
+        "ol",
+        "eeol",
+        "da",
+        "ee",
+        "eeo",
+        "ai"
+      ]
+    },
+    "eoschso": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "eos",
+        "ch",
+        "chs",
+        "os",
+        "so",
+        "eo"
+      ]
+    },
+    "opy": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "op"
+      ]
+    },
+    "ira": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ra",
+        "ir"
+      ]
+    },
+    "lsho": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "ls",
+        "lsh"
+      ]
+    },
+    "ofyc": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of"
+      ]
+    },
+    "lot": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ot",
+        "lo"
+      ]
+    },
+    "dor": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "do"
+      ]
+    },
+    "opchea": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 5,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "opc",
+        "op",
+        "che",
+        "ch",
+        "he",
+        "opche",
+        "opch",
+        "ea"
+      ]
+    },
+    "osche": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "che",
+        "ch",
+        "he",
+        "os"
+      ]
+    },
+    "hcke": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "ke"
+      ]
+    },
+    "otoko": {
+      "projected_class": "HERB",
+      "confidence": 0.8333333333333334,
+      "n_animal": 0,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oko",
+        "to",
+        "ot",
+        "ko",
+        "oto",
+        "ok"
+      ]
+    },
+    "dlo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "dl",
+        "lo"
+      ]
+    },
+    "lyd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "ly"
+      ]
+    },
+    "alsalch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "alc",
+        "sa",
+        "ch",
+        "lc",
+        "ls",
+        "al",
+        "lch",
+        "alch"
+      ]
+    },
+    "orai": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "rai",
+        "or",
+        "ra",
+        "ai"
+      ]
+    },
+    "tocth": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "to",
+        "cth",
+        "octh",
+        "oct",
+        "oc"
+      ]
+    },
+    "olod": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "olo",
+        "lo",
+        "ol",
+        "od"
+      ]
+    },
+    "olosh": {
+      "projected_class": "HERB",
+      "confidence": 0.16666666666666666,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "osh",
+        "olo",
+        "sh",
+        "lo",
+        "ol",
+        "os"
+      ]
+    },
+    "aikhek": {
+      "projected_class": "MIXED",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ik",
+        "aik",
+        "he",
+        "ai",
+        "ek"
+      ]
+    },
+    "rare": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ar",
+        "ra",
+        "re"
+      ]
+    },
+    "aiee": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ee",
+        "ai"
+      ]
+    },
+    "oporo": {
+      "projected_class": "MIXED",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "opor",
+        "or",
+        "op",
+        "ro"
+      ]
+    },
+    "ekec": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ec",
+        "kec",
+        "ke",
+        "eke",
+        "ek"
+      ]
+    },
+    "tod": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "od"
+      ]
+    },
+    "iiid": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii"
+      ]
+    },
+    "heockhosho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 5,
+      "n_mixed": 6,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ockh",
+        "eoc",
+        "ckho",
+        "osh",
+        "eock",
+        "sho",
+        "eockh",
+        "sh"
+      ]
+    },
+    "ofy": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of"
+      ]
+    },
+    "ocheo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "och",
+        "cheo",
+        "che",
+        "ch",
+        "he",
+        "oc",
+        "eo"
+      ]
+    },
+    "oro": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "ro"
+      ]
+    },
+    "hoa": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "odp": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "od"
+      ]
+    },
+    "orchet": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "or",
+        "et",
+        "rch",
+        "che",
+        "ch",
+        "rc",
+        "orch",
+        "he"
+      ]
+    },
+    "on": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "okoishe": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "oko",
+        "sh",
+        "oi",
+        "ko",
+        "is",
+        "he",
+        "ok"
+      ]
+    },
+    "okeeod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 6,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "keeo",
+        "oke",
+        "eod",
+        "eeod",
+        "ee",
+        "ke",
+        "eeo",
+        "okee",
+        "eo",
+        "kee"
+      ]
+    },
+    "sf": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "hail": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ai"
+      ]
+    },
+    "shck": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "sh"
+      ]
+    },
+    "yee": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ee"
+      ]
+    },
+    "cphol": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "cpho",
+        "ol",
+        "cph"
+      ]
+    },
+    "inal": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "in",
+        "al"
+      ]
+    },
+    "yto": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "yt"
+      ]
+    },
+    "ockhoee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 5,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "ckh",
+        "ck",
+        "oee",
+        "ockh",
+        "ckho",
+        "ock",
+        "ee",
+        "ockho",
+        "oc"
+      ]
+    },
+    "esech": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ec",
+        "ch",
+        "es",
+        "ese"
+      ]
+    },
+    "eso": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "es",
+        "so"
+      ]
+    },
+    "ytar": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ta",
+        "ar",
+        "yt"
+      ]
+    },
+    "tchyt": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "tch",
+        "ch",
+        "yt",
+        "tc",
+        "hy"
+      ]
+    },
+    "eeso": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "es",
+        "ee",
+        "so",
+        "ees"
+      ]
+    },
+    "fochof": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of",
+        "och",
+        "ocho",
+        "ch",
+        "fo",
+        "oc",
+        "cho"
+      ]
+    },
+    "eoee": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "ee",
+        "eo"
+      ]
+    },
+    "eamsh": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sh",
+        "am",
+        "eam",
+        "ea"
+      ]
+    },
+    "dyche": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "che",
+        "ch",
+        "he",
+        "dy"
+      ]
+    },
+    "kchcf": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "kch",
+        "kc",
+        "cf"
+      ]
+    },
+    "lpych": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch"
+      ]
+    },
+    "ysho": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sho",
+        "sh"
+      ]
+    },
+    "okyd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "ok"
+      ]
+    },
+    "ykc": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yk",
+        "kc"
+      ]
+    },
+    "odshe": {
+      "projected_class": "HERB",
+      "confidence": 0.2,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "sh",
+        "he",
+        "dsh",
+        "od"
+      ]
+    },
+    "foch": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "och",
+        "ch",
+        "fo",
+        "oc"
+      ]
+    },
+    "qko": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qk",
+        "ko"
+      ]
+    },
+    "odchee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "dc",
+        "odc",
+        "che",
+        "odch",
+        "ch",
+        "chee",
+        "he",
+        "ee",
+        "od",
+        "dch"
+      ]
+    },
+    "oschotsh": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tsh",
+        "sh",
+        "chot",
+        "ch",
+        "ot",
+        "ts",
+        "os",
+        "cho"
+      ]
+    },
+    "opalef": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "op",
+        "le",
+        "pa",
+        "al"
+      ]
+    },
+    "hdaoto": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "ot",
+        "da",
+        "oto"
+      ]
+    },
+    "oheek": {
+      "projected_class": "MIXED",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "he",
+        "ee",
+        "ek",
+        "eek"
+      ]
+    },
+    "tyd": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "ty"
+      ]
+    },
+    "odsh": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sh",
+        "dsh",
+        "od"
+      ]
+    },
+    "qp": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "aiio": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "aii",
+        "ai"
+      ]
+    },
+    "apc": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "pc"
+      ]
+    },
+    "oair": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oai",
+        "air",
+        "ai",
+        "ir"
+      ]
+    },
+    "acp": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp"
+      ]
+    },
+    "daiik": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ik",
+        "ii",
+        "dai",
+        "da",
+        "aii",
+        "ai"
+      ]
+    },
+    "oal": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "al"
+      ]
+    },
+    "oeesor": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.14285714285714285,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 4,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "or",
+        "es",
+        "ee",
+        "so",
+        "ees"
+      ]
+    },
+    "yo": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "ofaldo": {
+      "projected_class": "HERB",
+      "confidence": 0.8,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of",
+        "ald",
+        "do",
+        "ld",
+        "al"
+      ]
+    },
+    "ckhoct": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ct",
+        "ckho",
+        "oct",
+        "oc"
+      ]
+    },
+    "aroek": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "oek",
+        "ar",
+        "ro",
+        "aro",
+        "ek"
+      ]
+    },
+    "lschee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "che",
+        "ch",
+        "ls",
+        "chee",
+        "he",
+        "ee"
+      ]
+    },
+    "eaii": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "aii",
+        "ai",
+        "ea"
+      ]
+    },
+    "alolk": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "lk",
+        "lo",
+        "ol",
+        "olk",
+        "alo",
+        "al"
+      ]
+    },
+    "okocf": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oko",
+        "ko",
+        "ocf",
+        "oc",
+        "cf",
+        "ok"
+      ]
+    },
+    "eoepo": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "oe",
+        "oep",
+        "ep",
+        "eo"
+      ]
+    },
+    "scheo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cheo",
+        "che",
+        "ch",
+        "he",
+        "eo"
+      ]
+    },
+    "teche": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ec",
+        "che",
+        "ch",
+        "te",
+        "he"
+      ]
+    },
+    "leod": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "le",
+        "eod",
+        "eo",
+        "od"
+      ]
+    },
+    "coek": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "oek",
+        "ek"
+      ]
+    },
+    "hoo": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "oeksa": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "oek",
+        "sa",
+        "ks",
+        "ek"
+      ]
+    },
+    "deesho": {
+      "projected_class": "MIXED",
+      "confidence": 0.8,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "es",
+        "ee",
+        "ees"
+      ]
+    },
+    "okeeok": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 4,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "keeo",
+        "oke",
+        "eeok",
+        "eok",
+        "ee",
+        "keeok",
+        "ke",
+        "eeo",
+        "okee",
+        "eo"
+      ]
+    },
+    "ochepcho": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.7142857142857143,
+      "n_animal": 5,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 5,
+      "pp_atoms": [
+        "epch",
+        "pc",
+        "och",
+        "pch",
+        "che",
+        "ch",
+        "epc",
+        "ep",
+        "he",
+        "pcho"
+      ]
+    },
+    "kold": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ld",
+        "kol",
+        "ol",
+        "ko",
+        "old"
+      ]
+    },
+    "dalc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "alc",
+        "lc",
+        "da",
+        "al"
+      ]
+    },
+    "qkeeod": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 6,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "keeo",
+        "qk",
+        "eod",
+        "eeod",
+        "ee",
+        "ke",
+        "eeo",
+        "eo",
+        "kee",
+        "od"
+      ]
+    },
+    "keeol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 5,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "keeo",
+        "eol",
+        "ol",
+        "eeol",
+        "ee",
+        "ke",
+        "eeo",
+        "eo",
+        "kee"
+      ]
+    },
+    "cphod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "cpho",
+        "od",
+        "cph"
+      ]
+    },
+    "chokeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oke",
+        "ch",
+        "ke",
+        "okeo",
+        "eo",
+        "cho",
+        "keo",
+        "ok"
+      ]
+    },
+    "octhoda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "cth",
+        "octh",
+        "octho",
+        "oct",
+        "da",
+        "oc",
+        "ctho",
+        "oda",
+        "od"
+      ]
+    },
+    "eods": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "eod",
+        "eo",
+        "od"
+      ]
+    },
+    "cphokch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "cpho",
+        "okc",
+        "ch",
+        "okch",
+        "kch",
+        "kc",
+        "cph",
+        "ok"
+      ]
+    },
+    "odalyda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "odal",
+        "yd",
+        "ly",
+        "da",
+        "al",
+        "oda",
+        "od"
+      ]
+    },
+    "mo": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "rodsf": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "rod",
+        "ro",
+        "od"
+      ]
+    },
+    "ytch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "tch",
+        "ch",
+        "yt",
+        "tc"
+      ]
+    },
+    "eokchet": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "kche",
+        "et",
+        "che",
+        "okc",
+        "ch",
+        "okch",
+        "eok",
+        "he",
+        "kch",
+        "eo"
+      ]
+    },
+    "cpha": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "cph"
+      ]
+    },
+    "yoee": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "ee"
+      ]
+    },
+    "ekok": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ko",
+        "ek",
+        "ok"
+      ]
+    },
+    "odar": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ar",
+        "da",
+        "oda",
+        "od"
+      ]
+    },
+    "shodee": {
+      "projected_class": "HERB",
+      "confidence": 0.16666666666666666,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ode",
+        "sho",
+        "sh",
+        "ee",
+        "od",
+        "odee"
+      ]
+    },
+    "oeeso": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.16666666666666666,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "es",
+        "ee",
+        "so",
+        "ees"
+      ]
+    },
+    "iild": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "ld"
+      ]
+    },
+    "raiin": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 5,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "rai",
+        "ii",
+        "aiin",
+        "ra",
+        "in",
+        "aii",
+        "iin",
+        "ai"
+      ]
+    },
+    "opsheol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "eol",
+        "she",
+        "op",
+        "sheo",
+        "sh",
+        "ol",
+        "he",
+        "eo"
+      ]
+    },
+    "rycho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "ry",
+        "cho"
+      ]
+    },
+    "eks": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ks",
+        "ek"
+      ]
+    },
+    "cheet": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "et",
+        "che",
+        "ch",
+        "chee",
+        "he",
+        "ee",
+        "eet"
+      ]
+    },
+    "qchod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "chod",
+        "cho",
+        "od"
+      ]
+    },
+    "etyd": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "et",
+        "ty"
+      ]
+    },
+    "ocheod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "och",
+        "cheo",
+        "che",
+        "ch",
+        "eod",
+        "he",
+        "oc",
+        "cheod",
+        "eo",
+        "od"
+      ]
+    },
+    "chor": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "ch",
+        "cho"
+      ]
+    },
+    "eeees": {
+      "projected_class": "MIXED",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "es",
+        "eee",
+        "ee",
+        "ees"
+      ]
+    },
+    "echod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ec",
+        "ch",
+        "chod",
+        "cho",
+        "od"
+      ]
+    },
+    "toit": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "to",
+        "oi",
+        "it"
+      ]
+    },
+    "rsho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "rsh",
+        "rs"
+      ]
+    },
+    "qkeeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 4,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "keeo",
+        "qk",
+        "ee",
+        "ke",
+        "eeo",
+        "eo",
+        "kee"
+      ]
+    },
+    "choit": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oi",
+        "ch",
+        "cho",
+        "it"
+      ]
+    },
+    "daii": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.4,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ii",
+        "dai",
+        "da",
+        "aii",
+        "ai"
+      ]
+    },
+    "opcheod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 5,
+      "n_herb": 5,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "pc",
+        "pcheo",
+        "pch",
+        "opc",
+        "op",
+        "cheo",
+        "che",
+        "ch",
+        "eod",
+        "he"
+      ]
+    },
+    "eeor": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "eor",
+        "ee",
+        "eeo",
+        "eo"
+      ]
+    },
+    "earch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ar",
+        "arc",
+        "rch",
+        "ch",
+        "rc",
+        "ea"
+      ]
+    },
+    "choch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "och",
+        "ch",
+        "oc",
+        "cho"
+      ]
+    },
+    "iio": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii"
+      ]
+    },
+    "eeese": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "es",
+        "eee",
+        "ese",
+        "ee",
+        "ees"
+      ]
+    },
+    "haich": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "ai"
+      ]
+    },
+    "opolkod": {
+      "projected_class": "HERB",
+      "confidence": 0.2857142857142857,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "op",
+        "lk",
+        "kod",
+        "ol",
+        "ko",
+        "olk",
+        "od"
+      ]
+    },
+    "lcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "lc",
+        "lch",
+        "cho"
+      ]
+    },
+    "dyotyd": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "ot",
+        "dy",
+        "ty"
+      ]
+    },
+    "ckheod": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckheo",
+        "ckhe",
+        "eod",
+        "he",
+        "eo",
+        "od"
+      ]
+    },
+    "esee": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "es",
+        "ese",
+        "ee",
+        "see"
+      ]
+    },
+    "roi": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oi",
+        "ro"
+      ]
+    },
+    "sheod": {
+      "projected_class": "HERB",
+      "confidence": 0.42857142857142855,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "sheo",
+        "sh",
+        "eod",
+        "he",
+        "eo",
+        "od"
+      ]
+    },
+    "odshch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "sh",
+        "ch",
+        "shch",
+        "dsh",
+        "od"
+      ]
+    },
+    "chotc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "chot",
+        "ch",
+        "ot",
+        "otc",
+        "tc",
+        "cho"
+      ]
+    },
+    "etodaith": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "ait",
+        "odai",
+        "et",
+        "to",
+        "dai",
+        "da",
+        "ai",
+        "oda",
+        "it",
+        "od"
+      ]
+    },
+    "odol": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "do",
+        "ol",
+        "odo",
+        "od"
+      ]
+    },
+    "eeetc": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "et",
+        "etc",
+        "eee",
+        "ee",
+        "tc",
+        "eet"
+      ]
+    },
+    "cphodale": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "odal",
+        "cp",
+        "cpho",
+        "le",
+        "da",
+        "al",
+        "oda",
+        "od",
+        "cph"
+      ]
+    },
+    "ots": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ot",
+        "ts"
+      ]
+    },
+    "qkh": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qk"
+      ]
+    },
+    "oral": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "ra",
+        "al"
+      ]
+    },
+    "cfhod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cfh",
+        "od",
+        "cf"
+      ]
+    },
+    "oteo": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "teo",
+        "ote",
+        "te",
+        "ot",
+        "eo"
+      ]
+    },
+    "otcheytch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 5,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "otch",
+        "tch",
+        "che",
+        "ch",
+        "ot",
+        "otc",
+        "yt",
+        "eyt",
+        "he",
+        "tc"
+      ]
+    },
+    "etolcth": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8333333333333334,
+      "n_animal": 1,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "et",
+        "to",
+        "cth",
+        "lc",
+        "tol",
+        "ol",
+        "olc"
+      ]
+    },
+    "techoep": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "oe",
+        "ec",
+        "oep",
+        "ch",
+        "te",
+        "ep",
+        "cho"
+      ]
+    },
+    "esek": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "es",
+        "ese",
+        "ek"
+      ]
+    },
+    "oir": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oi",
+        "ir"
+      ]
+    },
+    "kydain": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "dai",
+        "ain",
+        "in",
+        "da",
+        "ai"
+      ]
+    },
+    "dtsh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "tsh",
+        "sh",
+        "ts"
+      ]
+    },
+    "cfhodor": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "do",
+        "cfh",
+        "odo",
+        "od",
+        "cf"
+      ]
+    },
+    "ochkch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "och",
+        "ch",
+        "oc",
+        "kch",
+        "chk",
+        "kc"
+      ]
+    },
+    "sea": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ea"
+      ]
+    },
+    "dyeee": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "eee",
+        "ee",
+        "dy"
+      ]
+    },
+    "kd": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "etcheo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 5,
+      "pp_atoms": [
+        "tch",
+        "cheo",
+        "et",
+        "etc",
+        "etch",
+        "che",
+        "tcheo",
+        "ch",
+        "he",
+        "tc"
+      ]
+    },
+    "hc": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "opald": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "op",
+        "ald",
+        "ld",
+        "pa",
+        "al"
+      ]
+    },
+    "lds": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ld"
+      ]
+    },
+    "pyda": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "pyd",
+        "da"
+      ]
+    },
+    "ldarod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ar",
+        "ld",
+        "rod",
+        "ro",
+        "da",
+        "aro",
+        "od"
+      ]
+    },
+    "ysh": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sh"
+      ]
+    },
+    "heod": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eod",
+        "he",
+        "eo",
+        "od"
+      ]
+    },
+    "koi": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oi",
+        "ko"
+      ]
+    },
+    "yka": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yk",
+        "ka"
+      ]
+    },
+    "sc": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "otol": {
+      "projected_class": "HERB",
+      "confidence": 0.8,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "ot",
+        "tol",
+        "ol",
+        "oto"
+      ]
+    },
+    "okyt": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yt",
+        "ok"
+      ]
+    },
+    "ss": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "oqota": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ta",
+        "oqo",
+        "ot",
+        "oqot",
+        "qo"
+      ]
+    },
+    "alshs": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sh",
+        "ls",
+        "lsh",
+        "al"
+      ]
+    },
+    "komo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "om",
+        "ko"
+      ]
+    },
+    "sees": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "es",
+        "ee",
+        "ees",
+        "see"
+      ]
+    },
+    "ckcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "ch",
+        "kcho",
+        "kch",
+        "cho",
+        "kc"
+      ]
+    },
+    "eeckho": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.375,
+      "n_animal": 3,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckho",
+        "ec",
+        "eckh",
+        "eeck",
+        "ee",
+        "eck"
+      ]
+    },
+    "cpheoct": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8888888888888888,
+      "n_animal": 1,
+      "n_herb": 8,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "cphe",
+        "eoc",
+        "cp",
+        "cpheo",
+        "oct",
+        "eoct",
+        "he",
+        "oc",
+        "eo"
+      ]
+    },
+    "otee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ote",
+        "tee",
+        "te",
+        "ot",
+        "ee"
+      ]
+    },
+    "atol": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "at",
+        "to",
+        "tol",
+        "ol"
+      ]
+    },
+    "lyk": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ly",
+        "yk"
+      ]
+    },
+    "laii": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "la",
+        "aii",
+        "lai",
+        "ai"
+      ]
+    },
+    "eoar": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ar",
+        "eoa",
+        "eo"
+      ]
+    },
+    "okok": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oko",
+        "ko",
+        "ok"
+      ]
+    },
+    "rshol": {
+      "projected_class": "MIXED",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "rsh",
+        "ol",
+        "rs"
+      ]
+    },
+    "tolo": {
+      "projected_class": "HERB",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "olo",
+        "to",
+        "tol",
+        "lo",
+        "ol"
+      ]
+    },
+    "ocka": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "ock",
+        "oc",
+        "ka"
+      ]
+    },
+    "co": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "ypa": {
+      "projected_class": "NEUTRAL",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "yp",
+        "pa"
+      ]
+    },
+    "ytc": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yt",
+        "tc"
+      ]
+    },
+    "chocf": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "ocf",
+        "oc",
+        "cho",
+        "cf"
+      ]
+    },
+    "yfai": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ai",
+        "yf"
+      ]
+    },
+    "sy": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "archod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ar",
+        "arc",
+        "rch",
+        "ch",
+        "rc",
+        "chod",
+        "cho",
+        "od"
+      ]
+    },
+    "koc": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ko",
+        "oc"
+      ]
+    },
+    "otcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "otch",
+        "tch",
+        "ch",
+        "ot",
+        "otc",
+        "tcho",
+        "tc",
+        "cho"
+      ]
+    },
+    "dlssho": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "dl",
+        "sho",
+        "sh",
+        "ls"
+      ]
+    },
+    "okshc": {
+      "projected_class": "HERB",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sh",
+        "ks",
+        "oksh",
+        "ksh",
+        "ok"
+      ]
+    },
+    "odykc": {
+      "projected_class": "HERB",
+      "confidence": 0.2,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ody",
+        "yk",
+        "dy",
+        "kc",
+        "od"
+      ]
+    },
+    "dychokc": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "okc",
+        "ch",
+        "dy",
+        "cho",
+        "kc",
+        "ok"
+      ]
+    },
+    "dsa": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sa"
+      ]
+    },
+    "hor": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or"
+      ]
+    },
+    "lsheo": {
+      "projected_class": "HERB",
+      "confidence": 0.5714285714285714,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "sheo",
+        "sh",
+        "ls",
+        "he",
+        "lsh",
+        "eo"
+      ]
+    },
+    "ykeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yke",
+        "yk",
+        "ke",
+        "eo",
+        "keo"
+      ]
+    },
+    "qke": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qk",
+        "ke"
+      ]
+    },
+    "oeoik": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oe",
+        "ik",
+        "oi",
+        "oeo",
+        "oik",
+        "eo"
+      ]
+    },
+    "sysheo": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "sheo",
+        "sh",
+        "he",
+        "eo"
+      ]
+    },
+    "osc": {
+      "projected_class": "NEUTRAL",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "os"
+      ]
+    },
+    "opsho": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "op",
+        "sho",
+        "sh"
+      ]
+    },
+    "ldal": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ld",
+        "da",
+        "al"
+      ]
+    },
+    "olfcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "fch",
+        "ol",
+        "olf",
+        "cho"
+      ]
+    },
+    "odaiii": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "odai",
+        "ii",
+        "odaii",
+        "dai",
+        "da",
+        "aii",
+        "ai",
+        "oda",
+        "od"
+      ]
+    },
+    "eoik": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ik",
+        "oi",
+        "oik",
+        "eo"
+      ]
+    },
+    "iil": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii"
+      ]
+    },
+    "ckheck": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ec",
+        "ckhe",
+        "he",
+        "eck"
+      ]
+    },
+    "ldcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "dc",
+        "ch",
+        "ld",
+        "cho",
+        "dch"
+      ]
+    },
+    "choda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "da",
+        "chod",
+        "oda",
+        "cho",
+        "od"
+      ]
+    },
+    "ram": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "am",
+        "ra"
+      ]
+    },
+    "oyd": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "oy"
+      ]
+    },
+    "em": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "choks": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ks",
+        "ch",
+        "cho",
+        "ok"
+      ]
+    },
+    "hodoa": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "do",
+        "odo",
+        "od"
+      ]
+    },
+    "cholocth": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 5,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "olo",
+        "cth",
+        "ch",
+        "octh",
+        "lo",
+        "oct",
+        "ol",
+        "oc",
+        "cho"
+      ]
+    },
+    "leesh": {
+      "projected_class": "MIXED",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "sh",
+        "es",
+        "le",
+        "ee",
+        "ees"
+      ]
+    },
+    "olsho": {
+      "projected_class": "HERB",
+      "confidence": 0.42857142857142855,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "olsh",
+        "ols",
+        "sho",
+        "sh",
+        "ls",
+        "ol",
+        "lsh"
+      ]
+    },
+    "chods": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "chod",
+        "cho",
+        "od"
+      ]
+    },
+    "ach": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch"
+      ]
+    },
+    "odees": {
+      "projected_class": "HERB",
+      "confidence": 0.16666666666666666,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ode",
+        "es",
+        "ee",
+        "ees",
+        "od",
+        "odee"
+      ]
+    },
+    "cphy": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "hy",
+        "cph"
+      ]
+    },
+    "holo": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "olo",
+        "lo",
+        "ol"
+      ]
+    },
+    "keeyct": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "ee",
+        "ke",
+        "ey",
+        "eey",
+        "kee"
+      ]
+    },
+    "ars": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ar",
+        "rs"
+      ]
+    },
+    "kchocth": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 6,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "cth",
+        "ch",
+        "octh",
+        "kcho",
+        "oct",
+        "oc",
+        "kch",
+        "cho",
+        "kc"
+      ]
+    },
+    "ochok": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "och",
+        "ocho",
+        "ch",
+        "oc",
+        "cho",
+        "ok"
+      ]
+    },
+    "inod": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "in",
+        "od"
+      ]
+    },
+    "ockhs": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ockh",
+        "ock",
+        "oc"
+      ]
+    },
+    "hachct": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "ch"
+      ]
+    },
+    "yty": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yt",
+        "ty"
+      ]
+    },
+    "orchols": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8333333333333334,
+      "n_animal": 1,
+      "n_herb": 5,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "or",
+        "ols",
+        "rch",
+        "ch",
+        "ls",
+        "ol",
+        "rc",
+        "orch",
+        "cho"
+      ]
+    },
+    "koii": {
+      "projected_class": "HERB",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "oi",
+        "oii",
+        "ko"
+      ]
+    },
+    "afd": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "efsh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "fsh",
+        "sh"
+      ]
+    },
+    "tomo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "om"
+      ]
+    },
+    "teeeo": {
+      "projected_class": "HERB",
+      "confidence": 0.5714285714285714,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tee",
+        "te",
+        "eee",
+        "ee",
+        "eeo",
+        "eo",
+        "eeeo"
+      ]
+    },
+    "ekche": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "ekch",
+        "kche",
+        "che",
+        "ch",
+        "he",
+        "kch",
+        "ek",
+        "ekc",
+        "kc"
+      ]
+    },
+    "ckhod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckho",
+        "od"
+      ]
+    },
+    "toi": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "oi"
+      ]
+    },
+    "cthos": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "cth",
+        "os",
+        "ctho"
+      ]
+    },
+    "iich": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "ch"
+      ]
+    },
+    "dlct": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ct",
+        "dl",
+        "lc"
+      ]
+    },
+    "dct": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "dc"
+      ]
+    },
+    "oryd": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "or",
+        "ry"
+      ]
+    },
+    "airal": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ra",
+        "air",
+        "al",
+        "ai",
+        "ir"
+      ]
+    },
+    "kea": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ke",
+        "ea"
+      ]
+    },
+    "cholche": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "olch",
+        "che",
+        "ch",
+        "lc",
+        "ol",
+        "lche",
+        "he",
+        "olc",
+        "lch",
+        "cho"
+      ]
+    },
+    "oytoyd": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yd",
+        "to",
+        "yt",
+        "oy"
+      ]
+    },
+    "ead": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ad",
+        "ea"
+      ]
+    },
+    "hoc": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oc"
+      ]
+    },
+    "shocp": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ocp",
+        "sho",
+        "cp",
+        "sh",
+        "oc"
+      ]
+    },
+    "eteey": {
+      "projected_class": "HERB",
+      "confidence": 0.2857142857142857,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "tee",
+        "et",
+        "te",
+        "ee",
+        "ey",
+        "eey",
+        "ete"
+      ]
+    },
+    "cphoeed": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.125,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 5,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "cp",
+        "cpho",
+        "ee",
+        "ed",
+        "eed",
+        "cph"
+      ]
+    },
+    "ockhh": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ockh",
+        "ock",
+        "oc"
+      ]
+    },
+    "qykch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "yk",
+        "kch",
+        "kc"
+      ]
+    },
+    "kaiino": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2222222222222222,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 5,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "kai",
+        "ii",
+        "aiin",
+        "aiino",
+        "in",
+        "aii",
+        "iin",
+        "ai",
+        "ka"
+      ]
+    },
+    "ltol": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "to",
+        "tol",
+        "ol"
+      ]
+    },
+    "olsheeo": {
+      "projected_class": "HERB",
+      "confidence": 0.45454545454545453,
+      "n_animal": 0,
+      "n_herb": 5,
+      "n_mixed": 3,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "she",
+        "olsh",
+        "ols",
+        "sh",
+        "ls",
+        "ol",
+        "he",
+        "ee",
+        "lsh",
+        "eeo"
+      ]
+    },
+    "eesee": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "es",
+        "ese",
+        "ee",
+        "ees",
+        "see"
+      ]
+    },
+    "cckh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck"
+      ]
+    },
+    "loi": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oi",
+        "lo"
+      ]
+    },
+    "cshe": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "cs",
+        "she",
+        "sh",
+        "he"
+      ]
+    },
+    "odych": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ody",
+        "ch",
+        "dy",
+        "od"
+      ]
+    },
+    "cphey": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cphe",
+        "cp",
+        "he",
+        "ey",
+        "cph"
+      ]
+    },
+    "chad": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ad",
+        "ch",
+        "cha"
+      ]
+    },
+    "orodo": {
+      "projected_class": "HERB",
+      "confidence": 0.16666666666666666,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "or",
+        "do",
+        "rod",
+        "ro",
+        "odo",
+        "od"
+      ]
+    },
+    "tchyf": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tch",
+        "ch",
+        "tc",
+        "yf",
+        "hy"
+      ]
+    },
+    "chst": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "chs"
+      ]
+    },
+    "chok": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "cho",
+        "ok"
+      ]
+    },
+    "cphes": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cphe",
+        "cp",
+        "es",
+        "he",
+        "cph"
+      ]
+    },
+    "olol": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "olo",
+        "lo",
+        "ol"
+      ]
+    },
+    "cphodaiil": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.8,
+      "n_animal": 4,
+      "n_herb": 1,
+      "n_mixed": 5,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "odai",
+        "ii",
+        "cp",
+        "cpho",
+        "odaii",
+        "dai",
+        "da",
+        "aii",
+        "ai",
+        "oda"
+      ]
+    },
+    "kchyk": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "yk",
+        "kch",
+        "kc",
+        "hy"
+      ]
+    },
+    "cke": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "ke"
+      ]
+    },
+    "oldc": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "dc",
+        "ld",
+        "ol",
+        "old"
+      ]
+    },
+    "ofchos": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "of",
+        "ofc",
+        "ofch",
+        "ch",
+        "fch",
+        "os",
+        "cho",
+        "ofcho"
+      ]
+    },
+    "qekeo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "qek",
+        "qe",
+        "ke",
+        "eo",
+        "keo",
+        "eke",
+        "ek",
+        "qeke"
+      ]
+    },
+    "cpheeck": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 4,
+      "pp_atoms": [
+        "ck",
+        "cphe",
+        "ec",
+        "cp",
+        "eeck",
+        "he",
+        "ee",
+        "eck",
+        "cph"
+      ]
+    },
+    "opord": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "opor",
+        "or",
+        "op",
+        "ord"
+      ]
+    },
+    "qkhol": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qk",
+        "ol"
+      ]
+    },
+    "tchol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tch",
+        "ch",
+        "ol",
+        "tcho",
+        "tc",
+        "cho"
+      ]
+    },
+    "ochock": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "och",
+        "ocho",
+        "ch",
+        "ock",
+        "oc",
+        "cho"
+      ]
+    },
+    "oks": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ks",
+        "ok"
+      ]
+    },
+    "csee": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cs",
+        "ee",
+        "see"
+      ]
+    },
+    "theo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "he",
+        "eo"
+      ]
+    },
+    "tchod": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tch",
+        "ch",
+        "chod",
+        "tcho",
+        "tc",
+        "cho",
+        "od"
+      ]
+    },
+    "hodd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "od"
+      ]
+    },
+    "lchsyckh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2857142857142857,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "yckh",
+        "ch",
+        "lc",
+        "chs",
+        "lch"
+      ]
+    },
+    "qeo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "qe",
+        "eo"
+      ]
+    },
+    "osal": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "sa",
+        "os",
+        "al"
+      ]
+    },
+    "yck": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck"
+      ]
+    },
+    "sydara": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "ar",
+        "ra",
+        "da",
+        "ara"
+      ]
+    },
+    "ofad": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "of",
+        "ad"
+      ]
+    },
+    "cthh": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "cth"
+      ]
+    },
+    "eekd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ee",
+        "ek",
+        "eek"
+      ]
+    },
+    "cpheck": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "ck",
+        "cphe",
+        "ec",
+        "cp",
+        "he",
+        "eck",
+        "cph"
+      ]
+    },
+    "okal": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "al",
+        "ka",
+        "kal",
+        "ok"
+      ]
+    },
+    "shot": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "ot"
+      ]
+    },
+    "hold": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ld",
+        "ol",
+        "old"
+      ]
+    },
+    "ocfhh": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "cfh",
+        "ocfh",
+        "ocf",
+        "oc",
+        "cf"
+      ]
+    },
+    "kara": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ar",
+        "ra",
+        "ka",
+        "ara"
+      ]
+    },
+    "okees": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 4,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oke",
+        "es",
+        "ee",
+        "ke",
+        "ees",
+        "okee",
+        "kee",
+        "ok"
+      ]
+    },
+    "oykch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "yk",
+        "kch",
+        "oy",
+        "kc"
+      ]
+    },
+    "oloch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "och",
+        "olo",
+        "ch",
+        "loch",
+        "lo",
+        "ol",
+        "oc"
+      ]
+    },
+    "aiph": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ai",
+        "ip",
+        "aip"
+      ]
+    },
+    "rech": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ec",
+        "ch",
+        "re"
+      ]
+    },
+    "dks": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ks",
+        "dk"
+      ]
+    },
+    "rcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "rch",
+        "ch",
+        "rc",
+        "cho"
+      ]
+    },
+    "qekeol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "qek",
+        "eol",
+        "qe",
+        "ol",
+        "ke",
+        "eo",
+        "keo",
+        "eke",
+        "ek",
+        "qeke"
+      ]
+    },
+    "teee": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "tee",
+        "te",
+        "eee",
+        "ee"
+      ]
+    },
+    "ekeess": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.14285714285714285,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 4,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "es",
+        "ee",
+        "ke",
+        "ees",
+        "eke",
+        "ek",
+        "kee"
+      ]
+    },
+    "ckhol": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "ckho",
+        "ol"
+      ]
+    },
+    "ofa": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of"
+      ]
+    },
+    "toee": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "to",
+        "ee"
+      ]
+    },
+    "dlocta": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ta",
+        "ct",
+        "dl",
+        "lo",
+        "oct",
+        "oc"
+      ]
+    },
+    "oochock": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "och",
+        "ocho",
+        "ch",
+        "ock",
+        "oc",
+        "cho"
+      ]
+    },
+    "eat": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "at",
+        "ea"
+      ]
+    },
+    "hyd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "hy"
+      ]
+    },
+    "eyd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd",
+        "ey"
+      ]
+    },
+    "ykald": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 1,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ald",
+        "ld",
+        "yk",
+        "al",
+        "ka",
+        "kal"
+      ]
+    },
+    "opchal": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "opc",
+        "op",
+        "ch",
+        "cha",
+        "al",
+        "opch"
+      ]
+    },
+    "yfod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "fo",
+        "fod",
+        "yf",
+        "od"
+      ]
+    },
+    "kshe": {
+      "projected_class": "HERB",
+      "confidence": 0.4,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "she",
+        "sh",
+        "ks",
+        "he",
+        "ksh"
+      ]
+    },
+    "ochoik": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ik",
+        "och",
+        "ocho",
+        "oi",
+        "ch",
+        "oik",
+        "oc",
+        "cho"
+      ]
+    },
+    "chaf": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ch",
+        "cha"
+      ]
+    },
+    "iit": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ii",
+        "it"
+      ]
+    },
+    "osho": {
+      "projected_class": "MIXED",
+      "confidence": 0.75,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "osh",
+        "sho",
+        "sh",
+        "os"
+      ]
+    },
+    "ird": {
+      "projected_class": "ANIMAL",
+      "confidence": 1.0,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ir"
+      ]
+    },
+    "cphch": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.6666666666666666,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "ch",
+        "cph"
+      ]
+    },
+    "aiikh": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ik",
+        "ii",
+        "aii",
+        "ai"
+      ]
+    },
+    "eto": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "et",
+        "to"
+      ]
+    },
+    "eqok": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "qo",
+        "ok"
+      ]
+    },
+    "teot": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "teo",
+        "eot",
+        "te",
+        "ot",
+        "eo"
+      ]
+    },
+    "typch": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "yp",
+        "ch",
+        "ypch",
+        "ty"
+      ]
+    },
+    "etcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 0,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "tch",
+        "et",
+        "etc",
+        "etch",
+        "ch",
+        "tcho",
+        "tc",
+        "cho"
+      ]
+    },
+    "ocha": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "och",
+        "ch",
+        "cha",
+        "oc"
+      ]
+    },
+    "olp": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ol"
+      ]
+    },
+    "odyd": {
+      "projected_class": "MIXED",
+      "confidence": 0.6,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 3,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "yd",
+        "ody",
+        "dyd",
+        "dy",
+        "od"
+      ]
+    },
+    "pysaiin": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2857142857142857,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 5,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sa",
+        "ii",
+        "aiin",
+        "in",
+        "aii",
+        "iin",
+        "ai"
+      ]
+    },
+    "yta": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ta",
+        "yt"
+      ]
+    },
+    "ekea": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ke",
+        "eke",
+        "ek",
+        "ea"
+      ]
+    },
+    "fachy": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "hy"
+      ]
+    },
+    "oys": {
+      "projected_class": "NEUTRAL",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oy"
+      ]
+    },
+    "oshctho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ct",
+        "osh",
+        "sh",
+        "cth",
+        "os",
+        "ctho"
+      ]
+    },
+    "hdeect": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ect",
+        "ct",
+        "ec",
+        "ee"
+      ]
+    },
+    "etod": {
+      "projected_class": "HERB",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "et",
+        "to",
+        "od"
+      ]
+    },
+    "cphorod": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.14285714285714285,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 5,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "or",
+        "cp",
+        "cpho",
+        "rod",
+        "ro",
+        "od",
+        "cph"
+      ]
+    },
+    "ocphor": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ocp",
+        "ocph",
+        "or",
+        "cp",
+        "cpho",
+        "oc",
+        "cph"
+      ]
+    },
+    "kcck": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ck",
+        "kc"
+      ]
+    },
+    "alda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ald",
+        "ld",
+        "da",
+        "al"
+      ]
+    },
+    "sholda": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 4,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sho",
+        "sh",
+        "ld",
+        "ol",
+        "da",
+        "old"
+      ]
+    },
+    "keoef": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "ke",
+        "eo",
+        "keo"
+      ]
+    },
+    "aiid": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "aii",
+        "ai"
+      ]
+    },
+    "yckho": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ckh",
+        "ck",
+        "yckh",
+        "ckho"
+      ]
+    },
+    "epsheo": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "she",
+        "sheo",
+        "sh",
+        "ep",
+        "he",
+        "eo"
+      ]
+    },
+    "iiod": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii",
+        "od"
+      ]
+    },
+    "sheeos": {
+      "projected_class": "HERB",
+      "confidence": 0.375,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "eos",
+        "she",
+        "sh",
+        "he",
+        "ee",
+        "os",
+        "eeo",
+        "eo"
+      ]
+    },
+    "pchypcho": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "pc",
+        "pch",
+        "yp",
+        "ch",
+        "ypch",
+        "pcho",
+        "cho",
+        "hy"
+      ]
+    },
+    "rala": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ala",
+        "ra",
+        "la",
+        "al"
+      ]
+    },
+    "eect": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ect",
+        "ct",
+        "ec",
+        "ee"
+      ]
+    },
+    "eokec": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "oke",
+        "ec",
+        "eoke",
+        "eok",
+        "kec",
+        "ke",
+        "eo",
+        "ok"
+      ]
+    },
+    "efchocp": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ocp",
+        "cp",
+        "ch",
+        "fch",
+        "oc",
+        "cho"
+      ]
+    },
+    "ska": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "sk",
+        "ka"
+      ]
+    },
+    "heodo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "do",
+        "eod",
+        "odo",
+        "he",
+        "eo",
+        "od"
+      ]
+    },
+    "yrole": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.25,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "le",
+        "rol",
+        "ol",
+        "ro"
+      ]
+    },
+    "oyks": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ks",
+        "yk",
+        "oy"
+      ]
+    },
+    "ofych": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "of",
+        "ch"
+      ]
+    },
+    "kyd": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yd"
+      ]
+    },
+    "ypal": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "yp",
+        "pa",
+        "al"
+      ]
+    },
+    "oyk": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "yk",
+        "oy"
+      ]
+    },
+    "lol": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "lo",
+        "ol"
+      ]
+    },
+    "eeeok": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 4,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eeok",
+        "eok",
+        "eee",
+        "ee",
+        "eeo",
+        "eo",
+        "eeeo",
+        "ok"
+      ]
+    },
+    "ypc": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "pc",
+        "yp"
+      ]
+    },
+    "ainaral": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 2,
+      "n_mixed": 3,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ar",
+        "ra",
+        "ain",
+        "in",
+        "al",
+        "ai",
+        "ara"
+      ]
+    },
+    "lys": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ly"
+      ]
+    },
+    "eeoa": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eoa",
+        "ee",
+        "eeo",
+        "eo"
+      ]
+    },
+    "ota": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ta",
+        "ot"
+      ]
+    },
+    "otchot": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 4,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "otch",
+        "tch",
+        "chot",
+        "ch",
+        "ot",
+        "otc",
+        "tcho",
+        "tc",
+        "cho"
+      ]
+    },
+    "iid": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ii"
+      ]
+    },
+    "hd": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "opolch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 3,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "olch",
+        "op",
+        "ch",
+        "lc",
+        "ol",
+        "olc",
+        "lch"
+      ]
+    },
+    "echo": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ec",
+        "ch",
+        "cho"
+      ]
+    },
+    "tco": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "tc"
+      ]
+    },
+    "oaor": {
+      "projected_class": "MIXED",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or"
+      ]
+    },
+    "eokch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 3,
+      "n_herb": 4,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "okc",
+        "ch",
+        "okch",
+        "eok",
+        "kch",
+        "eo",
+        "kc",
+        "ok"
+      ]
+    },
+    "eoef": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "oe",
+        "eo"
+      ]
+    },
+    "chald": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ald",
+        "ch",
+        "ld",
+        "cha",
+        "al"
+      ]
+    },
+    "oeeeso": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.125,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 4,
+      "n_neutral": 3,
+      "pp_atoms": [
+        "oe",
+        "oee",
+        "oeee",
+        "es",
+        "eee",
+        "ee",
+        "so",
+        "ees"
+      ]
+    },
+    "hscth": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "cth"
+      ]
+    },
+    "heot": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eot",
+        "ot",
+        "he",
+        "eo"
+      ]
+    },
+    "syt": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yt"
+      ]
+    },
+    "qyo": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "arch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "ar",
+        "arc",
+        "rch",
+        "ch",
+        "rc"
+      ]
+    },
+    "cpheod": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.8,
+      "n_animal": 1,
+      "n_herb": 4,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cphe",
+        "cp",
+        "cpheo",
+        "eod",
+        "he",
+        "eo",
+        "od",
+        "cph"
+      ]
+    },
+    "cphal": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "cp",
+        "al",
+        "cph"
+      ]
+    },
+    "heee": {
+      "projected_class": "MIXED",
+      "confidence": 0.6666666666666666,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "eee",
+        "he",
+        "ee"
+      ]
+    },
+    "odaiin": {
+      "projected_class": "ANIMAL_MIXED",
+      "confidence": 0.75,
+      "n_animal": 3,
+      "n_herb": 1,
+      "n_mixed": 6,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "odai",
+        "ii",
+        "aiin",
+        "odaii",
+        "dai",
+        "in",
+        "da",
+        "aii",
+        "iin",
+        "ai"
+      ]
+    },
+    "oralc": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "alc",
+        "or",
+        "lc",
+        "ra",
+        "al"
+      ]
+    },
+    "akod": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "ak",
+        "kod",
+        "ko",
+        "od"
+      ]
+    },
+    "olra": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ra",
+        "ol"
+      ]
+    },
+    "eeyk": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.2,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 4,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yk",
+        "ee",
+        "eyk",
+        "ey",
+        "eey"
+      ]
+    },
+    "key": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ke",
+        "ey"
+      ]
+    },
+    "cphee": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "cphe",
+        "cp",
+        "he",
+        "ee",
+        "cph"
+      ]
+    },
+    "opols": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "op",
+        "ols",
+        "ls",
+        "ol"
+      ]
+    },
+    "qkol": {
+      "projected_class": "HERB",
+      "confidence": 0.25,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "qk",
+        "kol",
+        "ol",
+        "ko"
+      ]
+    },
+    "ois": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "oi",
+        "is"
+      ]
+    },
+    "ocholshod": {
+      "projected_class": "HERB_MIXED",
+      "confidence": 0.75,
+      "n_animal": 2,
+      "n_herb": 6,
+      "n_mixed": 4,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "och",
+        "olsh",
+        "ols",
+        "ocho",
+        "sho",
+        "sh",
+        "ch",
+        "ls",
+        "ol",
+        "lsh"
+      ]
+    },
+    "tea": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 2,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "te",
+        "ea"
+      ]
+    },
+    "eeoseeo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 3,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "eos",
+        "ee",
+        "os",
+        "eeo",
+        "see",
+        "eo"
+      ]
+    },
+    "aras": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ar",
+        "ra",
+        "ara"
+      ]
+    },
+    "fcho": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 2,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ch",
+        "fch",
+        "cho"
+      ]
+    },
+    "sheol": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 2,
+      "n_mixed": 2,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "eol",
+        "she",
+        "sheo",
+        "sh",
+        "ol",
+        "he",
+        "eo"
+      ]
+    },
+    "qekeoch": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 4,
+      "n_herb": 5,
+      "n_mixed": 1,
+      "n_neutral": 2,
+      "pp_atoms": [
+        "qek",
+        "eoc",
+        "och",
+        "qe",
+        "ch",
+        "oc",
+        "ke",
+        "eo",
+        "keo",
+        "eke"
+      ]
+    },
+    "rr": {
+      "projected_class": "UNKNOWN",
+      "confidence": 0.0,
+      "n_animal": 0,
+      "n_herb": 0,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": []
+    },
+    "eom": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "om",
+        "eo"
+      ]
+    },
+    "kyt": {
+      "projected_class": "HERB",
+      "confidence": 1.0,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "yt"
+      ]
+    },
+    "olds": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ld",
+        "ol",
+        "old"
+      ]
+    },
+    "heo": {
+      "projected_class": "HERB",
+      "confidence": 0.5,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "he",
+        "eo"
+      ]
+    },
+    "oroc": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "or",
+        "ro",
+        "oc"
+      ]
+    },
+    "cphar": {
+      "projected_class": "ANIMAL",
+      "confidence": 0.3333333333333333,
+      "n_animal": 1,
+      "n_herb": 0,
+      "n_mixed": 2,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ar",
+        "cp",
+        "cph"
+      ]
+    },
+    "orkc": {
+      "projected_class": "HERB",
+      "confidence": 0.3333333333333333,
+      "n_animal": 0,
+      "n_herb": 1,
+      "n_mixed": 1,
+      "n_neutral": 1,
+      "pp_atoms": [
+        "rk",
+        "or",
+        "kc"
+      ]
+    },
+    "cths": {
+      "projected_class": "MIXED",
+      "confidence": 0.5,
+      "n_animal": 1,
+      "n_herb": 1,
+      "n_mixed": 0,
+      "n_neutral": 0,
+      "pp_atoms": [
+        "ct",
+        "cth"
+      ]
+    }
+  }
+}

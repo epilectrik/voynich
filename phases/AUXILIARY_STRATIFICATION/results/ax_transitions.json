@@ -1,0 +1,288 @@
+{
+  "role_transition_matrix": {
+    "CC->CC": 51,
+    "CC->EN": 347,
+    "CC->FL": 42,
+    "CC->FQ": 97,
+    "CC->AX": 163,
+    "CC->UN": 232,
+    "EN->CC": 293,
+    "EN->EN": 2635,
+    "EN->FL": 256,
+    "EN->FQ": 580,
+    "EN->AX": 1328,
+    "EN->UN": 1750,
+    "FL->CC": 46,
+    "FL->EN": 224,
+    "FL->FL": 88,
+    "FL->FQ": 111,
+    "FL->AX": 166,
+    "FL->UN": 257,
+    "FQ->CC": 76,
+    "FQ->EN": 602,
+    "FQ->FL": 108,
+    "FQ->FQ": 281,
+    "FQ->AX": 388,
+    "FQ->UN": 530,
+    "AX->CC": 187,
+    "AX->EN": 1267,
+    "AX->FL": 230,
+    "AX->FQ": 403,
+    "AX->AX": 838,
+    "AX->UN": 1105,
+    "UN->CC": 246,
+    "UN->EN": 1803,
+    "UN->FL": 270,
+    "UN->FQ": 601,
+    "UN->AX": 1047,
+    "UN->UN": 2028
+  },
+  "ax_self_chain": {
+    "rate": 0.2079,
+    "expected": 0.1901,
+    "enrichment": 1.09
+  },
+  "top_ax_trigrams": [
+    {
+      "trigram": [
+        "EN",
+        "EN",
+        "AX"
+      ],
+      "count": 446
+    },
+    {
+      "trigram": [
+        "AX",
+        "EN",
+        "EN"
+      ],
+      "count": 403
+    },
+    {
+      "trigram": [
+        "EN",
+        "AX",
+        "EN"
+      ],
+      "count": 394
+    },
+    {
+      "trigram": [
+        "UN",
+        "UN",
+        "AX"
+      ],
+      "count": 322
+    },
+    {
+      "trigram": [
+        "AX",
+        "EN",
+        "UN"
+      ],
+      "count": 319
+    },
+    {
+      "trigram": [
+        "AX",
+        "UN",
+        "UN"
+      ],
+      "count": 312
+    },
+    {
+      "trigram": [
+        "UN",
+        "AX",
+        "UN"
+      ],
+      "count": 306
+    },
+    {
+      "trigram": [
+        "UN",
+        "EN",
+        "AX"
+      ],
+      "count": 303
+    },
+    {
+      "trigram": [
+        "EN",
+        "AX",
+        "UN"
+      ],
+      "count": 297
+    },
+    {
+      "trigram": [
+        "AX",
+        "EN",
+        "AX"
+      ],
+      "count": 275
+    },
+    {
+      "trigram": [
+        "UN",
+        "AX",
+        "EN"
+      ],
+      "count": 252
+    },
+    {
+      "trigram": [
+        "AX",
+        "UN",
+        "EN"
+      ],
+      "count": 244
+    },
+    {
+      "trigram": [
+        "EN",
+        "UN",
+        "AX"
+      ],
+      "count": 243
+    },
+    {
+      "trigram": [
+        "EN",
+        "AX",
+        "AX"
+      ],
+      "count": 233
+    },
+    {
+      "trigram": [
+        "AX",
+        "AX",
+        "UN"
+      ],
+      "count": 197
+    },
+    {
+      "trigram": [
+        "AX",
+        "AX",
+        "EN"
+      ],
+      "count": 190
+    },
+    {
+      "trigram": [
+        "UN",
+        "AX",
+        "AX"
+      ],
+      "count": 189
+    },
+    {
+      "trigram": [
+        "AX",
+        "AX",
+        "AX"
+      ],
+      "count": 174
+    },
+    {
+      "trigram": [
+        "AX",
+        "UN",
+        "AX"
+      ],
+      "count": 169
+    },
+    {
+      "trigram": [
+        "FQ",
+        "EN",
+        "AX"
+      ],
+      "count": 137
+    }
+  ],
+  "subgroup_bigrams": [
+    {
+      "from": "AX_MED",
+      "to": "AX_MED",
+      "count": 1020
+    },
+    {
+      "from": "AX_INIT",
+      "to": "AX_MED",
+      "count": 418
+    },
+    {
+      "from": "AX_MED",
+      "to": "AX_INIT",
+      "count": 323
+    },
+    {
+      "from": "AX_MED",
+      "to": "AX_FINAL",
+      "count": 243
+    },
+    {
+      "from": "AX_INIT",
+      "to": "AX_INIT",
+      "count": 169
+    },
+    {
+      "from": "AX_FINAL",
+      "to": "AX_MED",
+      "count": 161
+    },
+    {
+      "from": "AX_INIT",
+      "to": "AX_FINAL",
+      "count": 115
+    },
+    {
+      "from": "AX_FINAL",
+      "to": "AX_INIT",
+      "count": 53
+    },
+    {
+      "from": "AX_FINAL",
+      "to": "AX_FINAL",
+      "count": 46
+    }
+  ],
+  "positional_order": {
+    "init_before_final": 265,
+    "final_before_init": 104,
+    "total_pairs": 369,
+    "init_first_rate": 0.7182
+  },
+  "subgroup_membership": {
+    "INIT": [
+      4,
+      5,
+      6,
+      24,
+      26
+    ],
+    "FINAL": [
+      15,
+      19,
+      20,
+      21,
+      22,
+      25
+    ],
+    "MEDIAL": [
+      1,
+      2,
+      3,
+      14,
+      16,
+      18,
+      27,
+      28,
+      29
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "BRUNSCHWIG_PP_RI_TEST",
+  "test": "LABEL_LAYER",
+  "date": "2026-01-24",
+  "text_pp_ratio": 0.8970130971450109,
+  "label_pp_ratio": 0.9351851851851852,
+  "label_only_vocabulary_pct": 45.54455445544554,
+  "o_prefix_text": 3.81414067502058,
+  "o_prefix_label": 13.496932515337424,
+  "qo_prefix_text": 9.960669532607701,
+  "qo_prefix_label": 0.0,
+  "c525_predictions": {
+    "o_elevation": "SUPPORTS",
+    "qo_suppression": "SUPPORTS",
+    "label_only_vocab": "PARTIAL"
+  }
+}
