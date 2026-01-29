@@ -63,7 +63,9 @@ def parse_index_constraints(index_path):
         # Clean up description - remove markdown links
         desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)
 
-        constraints[num_str] = {
+        # Normalize key to int for proper deduplication (handle sub-numbers like '384.a')
+        key = num_str if '.' in num_str else int(num_str)
+        constraints[key] = {
             'num': num_str,
             'desc': desc,
             'tier': tier,
