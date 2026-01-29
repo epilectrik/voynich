@@ -171,16 +171,22 @@ else:
     print("  Test not run")
 
 # Test 4: Hazard-Quality Mapping
-print("\n5. HAZARD-QUALITY MAPPING")
+print("\n5. HAZARD-QUALITY STRUCTURAL PARALLEL")
 print("-"*40)
 if tests['hazard_quality']:
     verdict = tests['hazard_quality'].get('verdict', 'UNKNOWN')
     match_count = tests['hazard_quality'].get('match_count', 0)
+    active_classes = tests['hazard_quality'].get('active_hazard_classes', 5)
 
-    print(f"  Structural matches: {match_count}/4")
+    print(f"  Structural parallels: {match_count}/4")
+    print(f"  Active Voynich classes: {active_classes}/5 (CONTAINMENT_TIMING = 0 corpus impact)")
     print(f"  Test verdict: {verdict}")
 
-    if 'STRONG' in verdict:
+    # STRUCTURAL PARALLEL is valid but not a strong semantic match
+    if 'PARALLEL' in verdict:
+        verdicts['hazard_quality'] = 'SUPPORT'  # Downgraded from STRONG
+        print("  Note: Complementary levels, not isomorphic mapping")
+    elif 'STRONG' in verdict:
         verdicts['hazard_quality'] = 'STRONG'
     elif 'MODERATE' in verdict:
         verdicts['hazard_quality'] = 'SUPPORT'
@@ -271,10 +277,11 @@ Key findings:
    - High recovery-to-processing rate (65%)
    - e-kernel (cooling/equilibration) dominates recovery (97.7%)
 
-2. HAZARD-QUALITY MAPPING: STRUCTURAL MATCH
-   - Both systems have exactly 5 rejection categories
+2. HAZARD-QUALITY: STRUCTURAL PARALLEL (not isomorphic)
+   - Both address overlapping concerns (contamination, thermal, separation)
    - Categorical prohibition (ENERGY_OVERSHOOT/burning) in both
-   - Distribution shape matches (some common, some rare)
+   - BUT: 5 Brunschwig tests vs 4 ACTIVE Voynich classes
+   - Different levels: sensory detection vs grammar topology
 
 3. PARAMETRIC STRUCTURE: CORRESPONDENCE
    - Both separate identity (material/MIDDLE) from behavior (fire/PREFIX)
@@ -292,7 +299,13 @@ Key findings:
 CONCLUSION:
 The Voynich Manuscript shows MODERATE correspondence to Brunschwig protocols.
 The strongest match is in RECOVERY ARCHITECTURE (error handling/retry behavior).
-The parametric structure and 5-category rejection system also correspond.
+The parametric structure shows correspondence.
+
+The hazard-quality comparison shows STRUCTURAL PARALLEL at the domain level
+(both address contamination, thermal damage, separation concerns), but NOT
+isomorphic 1-to-1 mapping. Voynich encodes grammar topology (what is forbidden);
+Brunschwig describes sensory detection (how to check). Complementary, not equivalent.
+
 Linear sequence predictions (kernel ordering) do not match, suggesting
 Voynich may encode PARALLEL operations vs Brunschwig's LINEAR procedures.
 """)
@@ -311,7 +324,7 @@ results = {
     'overall_verdict': overall,
     'key_findings': {
         'recovery_architecture': 'STRONG MATCH - 99.9% chains <=2, 65% FQ->EN, 97.7% e-recovery',
-        'hazard_quality': 'STRUCTURAL MATCH - 5 categories, categorical prohibition',
+        'hazard_quality': 'STRUCTURAL PARALLEL - overlapping concerns but different levels (4 active vs 5 tests)',
         'parametric_structure': 'CORRESPONDENCE - identity/behavior separation',
         'kernel_sequence': 'WEAK - e->h->k not dominant (13.6%)',
         'fire_link': 'NOT SIGNIFICANT - no correlation found'

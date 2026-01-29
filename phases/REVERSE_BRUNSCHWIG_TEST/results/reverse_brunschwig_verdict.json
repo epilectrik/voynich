@@ -1,24 +1,24 @@
 {
-  "date": "2026-01-29T17:12:42.881800",
+  "date": "2026-01-29T17:39:22.275144",
   "tests_run": 6,
   "verdicts": {
     "kernel_sequence": "WEAK",
     "fire_link": "WEAK",
     "section_material": "SUPPORT",
     "recovery": "STRONG",
-    "hazard_quality": "STRONG",
+    "hazard_quality": "SUPPORT",
     "parametric": "STRONG"
   },
   "counts": {
-    "strong": 3,
+    "strong": 2,
     "support": 4,
     "weak": 2,
     "contradict": 0
   },
-  "overall_verdict": "STRONG - Multiple strong matches to Brunschwig protocols",
+  "overall_verdict": "MODERATE - Majority of tests support Brunschwig correspondence",
   "key_findings": {
     "recovery_architecture": "STRONG MATCH - 99.9% chains <=2, 65% FQ->EN, 97.7% e-recovery",
-    "hazard_quality": "STRUCTURAL MATCH - 5 categories, categorical prohibition",
+    "hazard_quality": "STRUCTURAL PARALLEL - overlapping concerns but different levels (4 active vs 5 tests)",
     "parametric_structure": "CORRESPONDENCE - identity/behavior separation",
     "kernel_sequence": "WEAK - e->h->k not dominant (13.6%)",
     "fire_link": "NOT SIGNIFICANT - no correlation found"

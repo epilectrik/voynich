@@ -3,79 +3,90 @@
     "taste": {
       "test": "No taste = pure distillate",
       "failure": "Contamination from source material",
-      "importance": "high",
-      "frequency": "every batch"
+      "detection_level": "sensory"
     },
     "viscosity": {
       "test": "Thumbnail test for consistency",
       "failure": "Wrong concentration",
-      "importance": "high",
-      "frequency": "every batch"
+      "detection_level": "sensory"
     },
     "clarity": {
       "test": "Clear, not cloudy",
       "failure": "Emulsion, improper separation",
-      "importance": "medium",
-      "frequency": "every batch"
+      "detection_level": "sensory"
     },
     "color_smell": {
       "test": "Appropriate color and odor",
       "failure": "Degradation or burning",
-      "importance": "high",
-      "frequency": "every batch"
+      "detection_level": "sensory"
     },
     "completeness": {
       "test": "Proper separation achieved",
       "failure": "Incomplete distillation",
-      "importance": "medium",
-      "frequency": "some batches"
+      "detection_level": "sensory"
     }
   },
   "voynich_hazard_classes": {
     "PHASE_ORDERING": {
       "frequency": 0.41,
-      "description": "Wrong sequence of operations",
-      "pairs": 7
-    },
-    "CONTAINMENT_TIMING": {
-      "frequency": 0.34,
-      "description": "Container state mismatch",
-      "pairs": 6
+      "description": "Material in wrong phase location",
+      "pairs": 7,
+      "corpus_impact": "ACTIVE"
     },
     "COMPOSITION_JUMP": {
-      "frequency": 0.17,
-      "description": "Material composition mismatch",
-      "pairs": 3
+      "frequency": 0.24,
+      "description": "Impure fractions passing",
+      "pairs": 4,
+      "corpus_impact": "ACTIVE"
+    },
+    "CONTAINMENT_TIMING": {
+      "frequency": 0.24,
+      "description": "Overflow/pressure events",
+      "pairs": 4,
+      "corpus_impact": "ZERO"
     },
     "RATE_MISMATCH": {
-      "frequency": 0.04,
-      "description": "Process speed mismatch",
-      "pairs": 1
+      "frequency": 0.06,
+      "description": "Flow balance destroyed",
+      "pairs": 1,
+      "corpus_impact": "ACTIVE"
     },
     "ENERGY_OVERSHOOT": {
-      "frequency": 0.04,
-      "description": "Excessive energy application",
-      "pairs": 0
+      "frequency": 0.06,
+      "description": "Thermal damage/scorching",
+      "pairs": 1,
+      "corpus_impact": "ACTIVE"
     }
   },
-  "mapping_hypothesis": {
-    "taste": "COMPOSITION_JUMP",
-    "viscosity": "RATE_MISMATCH",
-    "clarity": "CONTAINMENT_TIMING",
-    "color_smell": "ENERGY_OVERSHOOT",
-    "completeness": "PHASE_ORDERING"
-  },
-  "structural_tests": {
-    "same_category_count": true,
-    "categorical_prohibition_exists": true,
-    "distribution_has_extremes": true,
-    "temperature_most_common": true
+  "active_hazard_classes": 4,
+  "structural_parallels": {
+    "multiple_categories": true,
+    "categorical_prohibition": true,
+    "distribution_shape": true,
+    "overlapping_domains": true
   },
   "match_count": 4,
-  "verdict": "STRONG MATCH",
+  "verdict": "STRUCTURAL PARALLEL",
+  "key_findings": {
+    "asymmetry": "5 Brunschwig tests vs 4 active Voynich classes",
+    "containment_timing": "Has 0 corpus impact (theoretical only)",
+    "categorical_prohibition": "Both have absolute thermal damage prohibition",
+    "complementary_levels": "Detection (sensory) vs Structure (grammar topology)"
+  },
   "interpretation": {
-    "five_categories": "5-to-5 correspondence suggests similar classification scheme",
-    "categorical_prohibition": "ENERGY_OVERSHOOT = burning (no recovery)",
-    "phase_ordering": "Temperature sequencing most critical in both systems"
+    "relationship": "Complementary, not isomorphic",
+    "shared_concerns": [
+      "contamination",
+      "thermal_damage",
+      "separation",
+      "rate"
+    ],
+    "different_levels": "Voynich = what is forbidden; Brunschwig = how to detect",
+    "no_1to1_mapping": "Specific semantic mappings not constraint-supported"
+  },
+  "methodology_notes": {
+    "tier": "Tier 3-4 (speculative structural observation)",
+    "not_validated": "1-to-1 semantic mappings",
+    "validated": "Structural parallel at domain level"
   }
 }
