@@ -19,7 +19,7 @@ This project uses a **progressive context system**.
 **Before writing custom data loading code, use `scripts/voynich.py`:**
 
 ```python
-from scripts.voynich import Transcript, Morphology, RecordAnalyzer
+from scripts.voynich import Transcript, Morphology, RecordAnalyzer, MiddleAnalyzer
 
 # Iterate tokens (H-track, labels excluded, uncertain excluded automatically)
 tx = Transcript()
@@ -41,6 +41,22 @@ analyzer = RecordAnalyzer()
 record = analyzer.analyze_record('f1r', '1')
 for t in record.tokens:
     print(f"{t.word}: {t.token_class}")  # RI, PP, INFRA, UNKNOWN
+
+# MIDDLE compound structure analysis
+mid_analyzer = MiddleAnalyzer()
+mid_analyzer.build_inventory('B')  # Build from Currier B tokens
+
+# Check if a MIDDLE is compound (contains core MIDDLEs as substrings)
+if mid_analyzer.is_compound('opcheodai'):
+    atoms = mid_analyzer.get_contained_atoms('opcheodai')
+    print(f"Compound MIDDLE, contains: {atoms}")
+
+# Get folio-unique MIDDLEs (identification vocabulary)
+unique_middles = mid_analyzer.get_folio_unique_middles()
+
+# Get summary statistics
+summary = mid_analyzer.summary()
+print(f"Core MIDDLEs: {summary['core_count']}, Folio-unique: {summary['folio_unique_count']}")
 ```
 
 This library handles all filtering, morphology, and classification automatically.
@@ -115,9 +131,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 2.82 FROZEN STATE |
-| Constraints | 419 validated |
-| Phases | 217 completed |
+| Version | 3.08 FROZEN STATE |
+| Constraints | 648 validated |
+| Phases | 225 completed |
 | Folios | 83 (Currier B) |
 | Pipeline | CLOSED (PCA-v1 CERTIFIED) |
 
@@ -143,7 +159,7 @@ The user can ask for precision when needed. Default to clarity over pedantry in 
 
 > **"I don't know" is NEVER an acceptable answer about this project.**
 
-The context system contains 419 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
+The context system contains 464 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
 
 1. **STOP** - Do not answer from memory or intuition
 2. **SEARCH** - Grep/read `context/` for relevant constraints
@@ -181,7 +197,7 @@ context/
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
 ├── STRUCTURAL_CONTRACTS/ ← API layer (CASC, AZC-ACT, AZC-B-ACT, BCSC)
-├── CLAIMS/              ← 419 constraints (INDEX + files)
+├── CLAIMS/              ← 459 constraints (INDEX + files)
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
 ├── METRICS/             ← Quantitative facts
@@ -250,7 +266,7 @@ When planning changes that affect the constraint system, structural contracts, o
 
 Claude will automatically delegate to the expert-advisor agent based on the request.
 
-**Why this matters:** The expert-advisor has all 419 constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
+**Why this matters:** The expert-advisor has all 459 constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
 ---
 
 ## App Development

@@ -1,0 +1,24 @@
+{
+  "sequence_length": 50,
+  "p_positions": [
+    6,
+    23
+  ],
+  "f_positions": [
+    33,
+    42
+  ],
+  "all_gallows_positions": [
+    6,
+    23,
+    33,
+    42
+  ],
+  "spacings": [
+    17,
+    10,
+    9
+  ],
+  "same_preceding_pattern": true,
+  "verdict": "SYSTEMATIC_VARIATION"
+}

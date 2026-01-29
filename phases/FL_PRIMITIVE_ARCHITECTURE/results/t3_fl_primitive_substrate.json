@@ -1,0 +1,100 @@
+{
+  "fl_chars": [
+    "a",
+    "d",
+    "i",
+    "l",
+    "m",
+    "n",
+    "o",
+    "r",
+    "y"
+  ],
+  "kernel_chars": [
+    "e",
+    "h",
+    "k"
+  ],
+  "role_char_usage": {
+    "CC": [
+      "a",
+      "c",
+      "e",
+      "h",
+      "i",
+      "k",
+      "l",
+      "n",
+      "o",
+      "s"
+    ],
+    "EN": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "y"
+    ],
+    "FL": [
+      "a",
+      "d",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "y"
+    ],
+    "FQ": [
+      "a",
+      "d",
+      "e",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "AX": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "r",
+      "s",
+      "t",
+      "y"
+    ]
+  },
+  "fl_compatible_rate": 32.94117647058823,
+  "en_kernel_rate": 60.65573770491803,
+  "findings": [
+    "FL_KERNEL_FREE: FL uses 0 kernel characters",
+    "EN_KERNEL_RICH: EN MIDDLEs are 60.7% kernel-containing"
+  ]
+}

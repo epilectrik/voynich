@@ -1,0 +1,30 @@
+{
+  "en_tokens_total": 7211,
+  "kernel_signatures": {
+    "h+e": 2585,
+    "k": 1053,
+    "k+e": 1034,
+    "h": 1004,
+    "none": 582,
+    "k+h": 370,
+    "k+h+e": 324,
+    "e": 259
+  },
+  "kernel_rates": {
+    "any": 91.9289973651366,
+    "k": 38.56607960061018,
+    "h": 59.395368187491336,
+    "e": 58.2720843156289
+  },
+  "en_mean_position": 0.48323417742545255,
+  "fl_en_fl_transitions": {
+    "MEDIAL->MEDIAL": 5,
+    "EARLY->MEDIAL": 2,
+    "MEDIAL->EARLY": 2,
+    "LATE->MEDIAL": 1
+  },
+  "findings": [
+    "DOMINANT_KERNEL: 'h+e' at 35.8%",
+    "FORWARD_BIAS: 20.0% of EN-mediated FL transitions are forward"
+  ]
+}

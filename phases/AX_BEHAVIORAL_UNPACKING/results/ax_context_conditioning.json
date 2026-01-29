@@ -1,0 +1,129 @@
+{
+  "ax_count": 3852,
+  "section_transitions": {
+    "chi2_test": {
+      "chi2": 739.65,
+      "p": 0.0,
+      "V": 0.227,
+      "significant": true
+    },
+    "sections": {
+      "B": {
+        "UN": 216,
+        "EN": 382,
+        "FQ": 107,
+        "AX": 171,
+        "CC": 44,
+        "FL": 44
+      },
+      "C": {
+        "FQ": 39,
+        "AX": 51,
+        "UN": 87,
+        "FL": 26,
+        "CC": 9,
+        "EN": 59
+      },
+      "H": {
+        "AX": 114,
+        "UN": 147,
+        "FQ": 93,
+        "EN": 145,
+        "FL": 29,
+        "CC": 21
+      },
+      "S": {
+        "UN": 468,
+        "AX": 277,
+        "EN": 490,
+        "FQ": 200,
+        "CC": 31,
+        "FL": 67
+      },
+      "T": {
+        "UN": 30,
+        "FL": 5,
+        "EN": 23,
+        "CC": 3,
+        "AX": 17,
+        "FQ": 7
+      }
+    }
+  },
+  "section_middle_selection": {
+    "unique_middles": 56,
+    "frequent_middles": 28
+  },
+  "regime_interaction": {
+    "chi2_test": {
+      "chi2": 68.43,
+      "p": 0.0,
+      "V": 0.082,
+      "significant": true
+    },
+    "regimes": {
+      "REGIME_1": {
+        "UN": 296,
+        "EN": 424,
+        "AX": 175,
+        "CC": 35,
+        "FL": 45,
+        "FQ": 95
+      },
+      "REGIME_2": {
+        "UN": 284,
+        "EN": 264,
+        "FQ": 153,
+        "AX": 205,
+        "FL": 56,
+        "CC": 26
+      },
+      "REGIME_3": {
+        "AX": 51,
+        "UN": 65,
+        "FQ": 42,
+        "EN": 63,
+        "CC": 14,
+        "FL": 13
+      },
+      "REGIME_4": {
+        "CC": 33,
+        "UN": 303,
+        "EN": 348,
+        "AX": 199,
+        "FQ": 156,
+        "FL": 57
+      }
+    }
+  },
+  "link_interaction": {
+    "ax_link_rate": 13.3,
+    "by_subgroup": {
+      "AX_INIT": {
+        "link_rate_pct": 19.4,
+        "total": 1195,
+        "link_count": 232
+      },
+      "AX_MED": {
+        "link_rate_pct": 3.3,
+        "total": 2056,
+        "link_count": 67
+      },
+      "AX_FINAL": {
+        "link_rate_pct": 35.3,
+        "total": 601,
+        "link_count": 212
+      }
+    },
+    "folio_correlation": {
+      "rho": 0.144,
+      "p": 0.1976
+    },
+    "line_cooccurrence": {
+      "both": 1383,
+      "ax_only": 580,
+      "link_only": 277,
+      "neither": 180
+    }
+  }
+}

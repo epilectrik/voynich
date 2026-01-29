@@ -1,0 +1,119 @@
+{
+  "un_transition_divergence": {
+    "successor": {
+      "unique_total": 677,
+      "shared_total": 5318,
+      "unique_dist": {
+        "EN": 175,
+        "AX": 118,
+        "FQ": 64,
+        "FL": 27,
+        "CC": 12,
+        "UN": 281
+      },
+      "shared_dist": {
+        "EN": 1628,
+        "AX": 836,
+        "FQ": 708,
+        "FL": 243,
+        "CC": 156,
+        "UN": 1747
+      }
+    },
+    "predecessor": {
+      "unique_total": 744,
+      "shared_total": 5158,
+      "unique_dist": {
+        "EN": 214,
+        "AX": 119,
+        "FQ": 73,
+        "FL": 22,
+        "CC": 18,
+        "UN": 298
+      },
+      "shared_dist": {
+        "EN": 1536,
+        "AX": 901,
+        "FQ": 614,
+        "FL": 235,
+        "CC": 142,
+        "UN": 1730
+      }
+    }
+  },
+  "context": {
+    "unique_un_neighbor_rate": 0.546,
+    "shared_un_neighbor_rate": 0.475
+  },
+  "folio_coupling": {
+    "Token count": {
+      "rho": 0.73,
+      "p": 0.0
+    },
+    "TTR": {
+      "rho": -0.28,
+      "p": 0.010801
+    },
+    "UN proportion": {
+      "rho": 0.431,
+      "p": 5.4e-05
+    },
+    "LINK density": {
+      "rho": -0.094,
+      "p": 0.402907
+    },
+    "Hazard density": {
+      "rho": 0.014,
+      "p": 0.902805
+    }
+  },
+  "section_concentration": {
+    "B": {
+      "n": 20,
+      "mean": 7.3,
+      "mean_density": 0.0214
+    },
+    "C": {
+      "n": 5,
+      "mean": 13.6,
+      "mean_density": 0.0497
+    },
+    "H": {
+      "n": 32,
+      "mean": 5.1,
+      "mean_density": 0.0465
+    },
+    "S": {
+      "n": 23,
+      "mean": 19.4,
+      "mean_density": 0.0431
+    },
+    "T": {
+      "n": 2,
+      "mean": 17.5,
+      "mean_density": 0.0529
+    }
+  },
+  "regime_concentration": {
+    "REGIME_1": {
+      "n": 23,
+      "mean": 10.7,
+      "mean_density": 0.0365
+    },
+    "REGIME_2": {
+      "n": 24,
+      "mean": 9.8,
+      "mean_density": 0.035
+    },
+    "REGIME_3": {
+      "n": 8,
+      "mean": 8.4,
+      "mean_density": 0.0409
+    },
+    "REGIME_4": {
+      "n": 27,
+      "mean": 11.4,
+      "mean_density": 0.0464
+    }
+  }
+}

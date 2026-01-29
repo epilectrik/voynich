@@ -1,0 +1,108 @@
+{
+  "folios": ["f66r"],
+  "date": "2026-01-29",
+  "type": "single_folio",
+  "section": "T",
+  "language": "B",
+  "method": "Visual inspection + transcript analysis",
+
+  "structure": {
+    "f66r": {
+      "tokens": 349,
+      "description": "Indexed Currier B text with margin annotation system - unique format",
+      "layout": {
+        "paragraph_labels": {
+          "placement": "L",
+          "tokens": 15,
+          "lines": "1-15",
+          "description": "Vertical column of short tokens marking paragraph positions",
+          "tokens_list": ["rary", "rals", "qor", "dara", "ykcol", "syly", "salf", "fary", "qotesy", "ykaly", "daoly", "raiin", "qokal", "qolsa", "raral"],
+          "visual_note": "One token every 2-3 lines, approximately where paragraphs begin in main text"
+        },
+        "line_markers": {
+          "placement": "M",
+          "tokens": 34,
+          "lines": "1-34",
+          "encoding": "Mostly single characters, approximately one per line",
+          "characters": ["y", "o", "s", "sh", "y", "d", "o", "f", "*", "x", "air", "d", "sh", "y", "f", "f", "y", "o", "d", "r", "f", "c", "r*", "x", "t", "o", "*", "l", "r", "t", "o", "x", "p", "d"],
+          "description": "Vertical column of single characters serving as line markers/labels",
+          "visual_note": "Some lines have two markers, alignment is approximate not perfect"
+        },
+        "main_text": {
+          "placement": "R",
+          "tokens": 297,
+          "lines": "1-34",
+          "description": "Standard Currier B vocabulary in ring/non-paragraph layout",
+          "vocabulary_profile": {
+            "overlap_with_B": "74.3%",
+            "overlap_with_A": "55.9%",
+            "overlap_with_AZC": "43.7%",
+            "unique_tokens": 51
+          },
+          "common_tokens": ["daiin", "ol", "shedy", "chedy", "dal", "qoky", "okedy", "dar"]
+        },
+        "other": {
+          "placement": "W",
+          "tokens": 3,
+          "description": "Unknown placement - 3 tokens"
+        }
+      },
+      "diagram_type": "indexed_text",
+      "visual_notes": [
+        "NOT a circular/ring diagram despite R placement code",
+        "Three vertical columns: L-placement (tokens) | M-placement (single chars) | R-placement (main text)",
+        "Main text to the right looks like typical Currier B",
+        "Margin columns provide indexing/labeling system",
+        "Transcribers used R placement for main text because it's not standard paragraph flow"
+      ]
+    }
+  },
+
+  "transcript_encoding_notes": {
+    "R_placement": "Used for main text body - not literally ring-shaped, just non-paragraph layout",
+    "M_placement": "Single-character line markers in margin",
+    "L_placement": "Short token paragraph markers in leftmost column",
+    "no_P_placement": "No standard paragraph (P) placement on this folio"
+  },
+
+  "user_observations": [
+    "Vertical column of tokens (L-placement) on left",
+    "Vertical column of single characters (M-placement) next to it",
+    "Main text (R-placement) to the right looks like normal Currier B",
+    "Token column markers appear every 2-3 lines, roughly aligned with paragraph starts",
+    "Single char column has approximately one marker per line, some lines have two",
+    "Alignment is approximate, not perfectly grid-like"
+  ],
+
+  "oddities": [
+    {
+      "type": "indexed_format",
+      "description": "Unique margin annotation system with both paragraph-level (L) and line-level (M) markers"
+    },
+    {
+      "type": "no_paragraph_placement",
+      "description": "Zero P-placement tokens despite being Currier B text - all main text encoded as R"
+    },
+    {
+      "type": "vocabulary_is_B_like",
+      "description": "74.3% vocabulary overlap with Currier B despite unusual layout - this IS B content"
+    },
+    {
+      "type": "L_tokens_unusual",
+      "description": "L-placement tokens (rary, rals, qor, etc.) have unusual patterns - may be abbreviated labels or cross-references"
+    },
+    {
+      "type": "one_of_a_kind",
+      "description": "No other folio in the manuscript has this indexed text format"
+    }
+  ],
+
+  "analysis_implications": {
+    "include_in_B_analysis": "YES - R-placement tokens (297) should be included in Currier B analysis",
+    "exclude_from_B_analysis": "L-placement (15) and M-placement (34) margin labels should be excluded",
+    "section_membership": "Part of PHARMA section by folio number (f57-f67) but unique format",
+    "not_a_diagram": "Despite R-placement code, this is not a circular diagram like AZC folios"
+  },
+
+  "source": "SECTION_ARCHITECTURE phase investigation (2026-01-29)"
+}

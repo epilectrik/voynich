@@ -1,0 +1,22 @@
+{
+  "cohesion_metrics": {
+    "vocab_jaccard_mean": 0.061480569229749725,
+    "vocab_jaccard_stdev": 0.03674764319740581,
+    "role_distance_mean": 0.23622898474815537,
+    "ht_overlap_mean": 0.12157502109127497,
+    "prefix_jaccard_mean": 0.29983887108529256
+  },
+  "normalized_scores": {
+    "vocabulary": 0.061480569229749725,
+    "role_similarity": 0.8312650108941747,
+    "ht_overlap": 0.02431500421825499,
+    "prefix_overlap": 0.29983887108529256
+  },
+  "primary_source": "Role",
+  "ranking": [
+    "Role",
+    "Prefix",
+    "Vocabulary",
+    "HT"
+  ]
+}

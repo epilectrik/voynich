@@ -1,0 +1,46 @@
+{
+  "by_section": {
+    "H": {
+      "total": 3433,
+      "compound_rate": 32.94494611127294,
+      "un_rate": 32.85755898630935
+    },
+    "T": {
+      "total": 662,
+      "compound_rate": 35.80060422960725,
+      "un_rate": 38.972809667673715
+    },
+    "B": {
+      "total": 6850,
+      "compound_rate": 31.605839416058394,
+      "un_rate": 22.277372262773724
+    },
+    "C": {
+      "total": 1480,
+      "compound_rate": 32.229729729729726,
+      "un_rate": 32.83783783783784
+    },
+    "S": {
+      "total": 10671,
+      "compound_rate": 39.405866366788494,
+      "un_rate": 34.148627120232405
+    }
+  },
+  "by_position": {
+    "line1_compound_rate": 40.39517014270033,
+    "body_compound_rate": 35.37074599954924,
+    "line1_un_compound_rate": 51.09649122807018,
+    "body_un_compound_rate": 46.06741573033708
+  },
+  "folio_level": {
+    "mean_compound_rate": 34.7480277286119,
+    "std_compound_rate": 6.395249594496597,
+    "uniqueness_correlation": 0.5528762587068125
+  },
+  "findings": [
+    "LINE_POSITION: Line-1 has higher compound rate (+5.0pp)",
+    "FOLIO_UNIQUENESS: Compound rate positively correlates with vocabulary uniqueness (r=0.55)",
+    "FOLIO_VARIATION: Compound rate varies across folios (std=6.4%)"
+  ],
+  "verdict": "PREDICTIVE"
+}

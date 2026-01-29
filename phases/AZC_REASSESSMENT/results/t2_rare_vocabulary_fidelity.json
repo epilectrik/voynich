@@ -1,0 +1,53 @@
+{
+  "test": "T2_rare_vocabulary_fidelity",
+  "pp_middles_count": 404,
+  "tier_counts": {
+    "rare": 271,
+    "uncommon": 81,
+    "common": 23,
+    "ubiquitous": 29
+  },
+  "tier_b_spreads": {
+    "rare": {
+      "mean": 4.402214022140221,
+      "median": 2.0,
+      "std": 6.974163884493528,
+      "n": 271
+    },
+    "uncommon": {
+      "mean": 13.592592592592593,
+      "median": 10.0,
+      "std": 14.100851719112201,
+      "n": 81
+    },
+    "common": {
+      "mean": 35.95652173913044,
+      "median": 32.0,
+      "std": 18.140701920338447,
+      "n": 23
+    },
+    "ubiquitous": {
+      "mean": 66.55172413793103,
+      "median": 72.0,
+      "std": 16.736468969859576,
+      "n": 29
+    }
+  },
+  "correlations": {
+    "a_freq_vs_b_spread": {
+      "rho": 0.6876922898192123,
+      "p": 7.211793332866841e-58
+    },
+    "a_freq_vs_normalized_spread": {
+      "rho": -0.36445511998971086,
+      "p": 3.8936601245994197e-14
+    },
+    "a_freq_vs_ba_ratio": {
+      "rho": -0.43482463775791735,
+      "p": 5.582254084641028e-12
+    }
+  },
+  "threshold_rho": -0.3,
+  "verdict": "COMMON_MORE_SPREAD",
+  "explanation": "rho=0.688 > 0.3: common MIDDLEs spread more in B, consistent with shared vocabulary"
+}

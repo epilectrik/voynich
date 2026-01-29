@@ -1,0 +1,103 @@
+{
+  "test": "T4_exclusion_asymmetry",
+  "role_counts": {
+    "CORE_CONTROL": 735,
+    "FLOW_OPERATOR": 1078,
+    "FREQUENT_OPERATOR": 2890,
+    "ENERGY_OPERATOR": 7211,
+    "AUXILIARY": 4140,
+    "HT": 7042
+  },
+  "pool_tertiles": {
+    "thresholds": [
+      40.0,
+      47.0
+    ],
+    "small_n": 39,
+    "medium_n": 39,
+    "large_n": 36
+  },
+  "role_asymmetries": {
+    "CORE_CONTROL": {
+      "small_rate": 0.9487179487179487,
+      "medium_rate": 0.978091749520321,
+      "large_rate": 1.0,
+      "small_large_diff": -0.05128205128205132
+    },
+    "FLOW_OPERATOR": {
+      "small_rate": 0.40666476380762095,
+      "medium_rate": 0.5684791399077114,
+      "large_rate": 0.661178107606679,
+      "small_large_diff": -0.2545133437990581
+    },
+    "FREQUENT_OPERATOR": {
+      "small_rate": 0.4682370685830893,
+      "medium_rate": 0.5653358175849525,
+      "large_rate": 0.6682622068435218,
+      "small_large_diff": -0.2000251382604325
+    },
+    "ENERGY_OPERATOR": {
+      "small_rate": 0.2913853123255425,
+      "medium_rate": 0.3743283942978853,
+      "large_rate": 0.5337408896901339,
+      "small_large_diff": -0.2423555773645914
+    },
+    "AUXILIARY": {
+      "small_rate": 0.20478136999876131,
+      "medium_rate": 0.30616871051653655,
+      "large_rate": 0.4275563607085346,
+      "small_large_diff": -0.22277499070977327
+    },
+    "HT": {
+      "small_rate": 0.085752881975546,
+      "medium_rate": 0.12901710615428308,
+      "large_rate": 0.2153941430780397,
+      "small_large_diff": -0.1296412611024937
+    }
+  },
+  "role_correlations": {
+    "CORE_CONTROL": {
+      "rho": 0.15165027338941037,
+      "p": 0.10725219344305681
+    },
+    "FLOW_OPERATOR": {
+      "rho": 0.48983131542097097,
+      "p": 3.1814599773646766e-08
+    },
+    "FREQUENT_OPERATOR": {
+      "rho": 0.5277648014619141,
+      "p": 1.6017059698256515e-09
+    },
+    "ENERGY_OPERATOR": {
+      "rho": 0.703140509033252,
+      "p": 2.7440070152994348e-18
+    },
+    "AUXILIARY": {
+      "rho": 0.7663906351128024,
+      "p": 2.894585676103176e-23
+    },
+    "HT": {
+      "rho": 0.8912881675373537,
+      "p": 2.8529631203265515e-40
+    }
+  },
+  "gradient_comparison": {
+    "p_value": 1.5834022981664475e-10
+  },
+  "mcnemar_test": {
+    "contingency": [
+      [
+        6,
+        0
+      ],
+      [
+        51,
+        57
+      ]
+    ],
+    "p_value": 2.5341950760093823e-12
+  },
+  "threshold_p": 0.01,
+  "verdict": "ASYMMETRIC_EXCLUSION",
+  "explanation": "McNemar p=0.0000 < 0.01: role exclusion is asymmetric across A folios"
+}

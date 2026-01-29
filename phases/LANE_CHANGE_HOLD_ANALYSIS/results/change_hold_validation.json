@@ -1,0 +1,139 @@
+{
+  "preparation": {
+    "n_lines": 2420,
+    "n_en_tokens": 7140,
+    "n_qo": 3192,
+    "n_chsh": 3948
+  },
+  "kernel_cooccurrence": {
+    "counts": {
+      "QO": {
+        "k": 570,
+        "h": 439
+      },
+      "CHSH": {
+        "k": 746,
+        "h": 584
+      }
+    },
+    "chi2": 0.023017603302992233,
+    "p": 0.8794113045258745,
+    "cramers_v": 0.0031370030400216134,
+    "qo_e_pct": 0.16165413533834586,
+    "chsh_e_pct": 0.686676798378926,
+    "prediction": "REJECTED"
+  },
+  "transition_stability": {
+    "qo_mean": 0.3178405434393994,
+    "chsh_mean": 0.2784324472458208,
+    "qo_n": 2797,
+    "chsh_n": 3649,
+    "p": 0.0005894646437534887,
+    "r_rb": -0.039408096193578546,
+    "qo_entropy": 4.081222782064909,
+    "chsh_entropy": 4.510745616392635,
+    "prediction": "CONFIRMED"
+  },
+  "recovery_routing": {
+    "post_hazard_qo": 125,
+    "post_hazard_chsh": 379,
+    "qo_escape_rate": 0.24801587301587302,
+    "base_qo_rate": 0.4470588235294118,
+    "enrichment": 0.5547723475355054,
+    "binom_p": 1.0,
+    "prediction": "REJECTED"
+  },
+  "hazard_proximity": {
+    "qo_mean": 3.823391812865497,
+    "chsh_mean": 3.8136696501220504,
+    "qo_n": 855,
+    "chsh_n": 1229,
+    "p": 0.0023222504544169404,
+    "r_rb": 0.07193220371242726,
+    "prediction": "CONFIRMED"
+  },
+  "hysteresis": {
+    "n_lines_tested": 869,
+    "observed_alternation": 0.5633477633477634,
+    "null_mean": 0.4937325252525252,
+    "null_std": 0.006618800808411969,
+    "perm_p": 0.0,
+    "direction": "ELEVATED (more alternation than chance = hysteresis)",
+    "transition_matrix": {
+      "QO->QO": 627,
+      "QO->CHSH": 941,
+      "CHSH->QO": 1011,
+      "CHSH->CHSH": 886
+    },
+    "run_lengths": {
+      "QO": {
+        "mean": 1.4556686046511629,
+        "median": 1.0,
+        "max": 7
+      },
+      "CHSH": {
+        "mean": 1.6131487889273357,
+        "median": 1.0,
+        "max": 8
+      }
+    },
+    "section_alternation": {
+      "H": {
+        "rate": 0.4268774703557312,
+        "n_pairs": 253
+      },
+      "T": {
+        "rate": 0.49056603773584906,
+        "n_pairs": 53
+      },
+      "B": {
+        "rate": 0.6058064516129033,
+        "n_pairs": 1550
+      },
+      "C": {
+        "rate": 0.5064102564102564,
+        "n_pairs": 156
+      },
+      "S": {
+        "rate": 0.5505849965588437,
+        "n_pairs": 1453
+      }
+    },
+    "prediction": "CONFIRMED"
+  },
+  "scorecard": [
+    {
+      "test": "Kernel co-occurrence",
+      "prediction": "QO->more e, CHSH->more k/h",
+      "result": "REJECTED",
+      "detail": "QO e%=0.162, CHSH e%=0.687, chi2 p=0.879411"
+    },
+    {
+      "test": "Transition stability",
+      "prediction": "QO more stable contexts",
+      "result": "CONFIRMED",
+      "detail": "QO mean=0.3178, CHSH mean=0.2784, p=0.000589"
+    },
+    {
+      "test": "Recovery/escape routing",
+      "prediction": "QO dominates post-hazard",
+      "result": "REJECTED",
+      "detail": "QO escape rate=0.248, base=0.447, enrichment=0.55x"
+    },
+    {
+      "test": "Hazard proximity",
+      "prediction": "CHSH closer to hazard tokens",
+      "result": "CONFIRMED",
+      "detail": "CHSH mean=3.81, QO mean=3.82, p=0.002322"
+    },
+    {
+      "test": "Hysteresis oscillation",
+      "prediction": "Alternation > chance, short runs",
+      "result": "CONFIRMED",
+      "detail": "observed=0.5633, null=0.4937, p=0.0000, direction=ELEVATED (more alternation than chance = hysteresis)"
+    }
+  ],
+  "verdict": "MODERATE",
+  "confirmed_count": 3,
+  "total_tests": 5
+}

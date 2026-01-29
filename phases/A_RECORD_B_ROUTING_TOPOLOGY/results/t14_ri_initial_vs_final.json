@@ -1,0 +1,8 @@
+{
+  "initial_count": 195,
+  "final_count": 220,
+  "overlap_count": 4,
+  "jaccard": 0.01015228426395939,
+  "initial_has_suffix": 0.764102564102564,
+  "final_has_suffix": 0.7681818181818182
+}

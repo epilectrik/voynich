@@ -1,0 +1,51 @@
+{
+  "cc_positions": {
+    "10": {
+      "n": 314,
+      "mean": 0.412840584973225,
+      "median": 0.4,
+      "std": 0.3469113653206903
+    },
+    "11": {
+      "n": 421,
+      "mean": 0.5112619215047245,
+      "median": 0.5,
+      "std": 0.3080248153807658
+    },
+    "12": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "std": null
+    },
+    "17": {
+      "n": 288,
+      "mean": 0.5147819743731694,
+      "median": 0.5454545454545454,
+      "std": 0.30452783977864434
+    }
+  },
+  "group_a_position": {
+    "mean": 0.46921525528582536,
+    "n": 735
+  },
+  "group_b_position": {
+    "mean": 0.5147819743731694,
+    "n": 288
+  },
+  "position_test_pvalue": 0.04511400989727319,
+  "lines_with_cc": 800,
+  "lines_with_multiple_cc": 172,
+  "cc_cooccur": {
+    "(11, 17)": 81,
+    "(10, 11)": 62,
+    "(11, 11)": 59,
+    "(10, 10)": 36,
+    "(10, 17)": 33,
+    "(17, 17)": 27
+  },
+  "findings": [
+    "POSITIONAL_DIFFERENTIATION: Group A earlier (mean 0.469) vs Group B (mean 0.515), p=0.0451",
+    "MULTI_CC_RATE: 21.5% of CC-containing lines have multiple CC"
+  ]
+}

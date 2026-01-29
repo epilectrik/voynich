@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "phase": "RI_BINDING_ANALYSIS",
+    "script": "ri_binding_tests.py",
+    "n_folios": 114,
+    "n_records": 1562,
+    "non_singleton_ri": 75
+  },
+  "T1_cross_folio_pp_similarity": {
+    "cross_folio_ri_count": 75,
+    "within_group_jaccard": 0.0742,
+    "between_group_jaccard": 0.0646,
+    "ratio": 1.148,
+    "mann_whitney_p": 0.00033836986446314423,
+    "pass": false
+  },
+  "T2_section_specificity": {
+    "within_section": 596,
+    "cross_section": 182,
+    "total_pairs": 778,
+    "within_section_frac": 0.7661,
+    "expected_within_frac": 0.7148,
+    "enrichment_ratio": 1.072,
+    "binom_p": 0.0007338028398875188,
+    "pass": false
+  },
+  "T3_prefix_bifurcation_pp": {
+    "prefix_required_count": 363,
+    "prefix_forbidden_count": 219,
+    "lines_prefix_req": 418,
+    "lines_prefix_forb": 218,
+    "pp_jaccard": 0.5197,
+    "bias_mean": 0.4469,
+    "chi2": 32.89,
+    "chi2_df": 29,
+    "chi2_p": 0.28202536703083286,
+    "pass": false
+  },
+  "T4_gallows_domain": {
+    "within_group_cosine": 0.2437,
+    "between_group_cosine": 0.2441,
+    "ratio": 0.998,
+    "mann_whitney_p": 0.5179730819874383,
+    "pass": false
+  },
+  "T5_pp_consistency": {
+    "observed_consistency": 0.0698,
+    "null_consistency": 0.0663,
+    "ratio": 1.053,
+    "paired_t_p": 0.3206279406470759,
+    "n_ri_middles_tested": 75,
+    "pass": false
+  },
+  "T6_adjacent_pp": {
+    "observed_consistency": 0.4366,
+    "null_consistency": 0.4403,
+    "ratio": 0.992,
+    "paired_t_p": 0.6121792368689941,
+    "n_ri_tested": 55,
+    "pass": false
+  },
+  "summary": {
+    "pass_count": 0,
+    "total_tests": 6,
+    "verdict": "MODEL A SUPPORTED: RI is an independent label with no PP relationship.",
+    "verdict_code": "MODEL_A"
+  }
+}

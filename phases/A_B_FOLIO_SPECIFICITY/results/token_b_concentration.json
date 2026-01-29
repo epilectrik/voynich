@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "phase": "A_B_FOLIO_SPECIFICITY",
+    "analysis": "token_b_concentration",
+    "timestamp": "2026-01-27T20:02:10.153280",
+    "n_a_folios": 114,
+    "n_b_folios": 82,
+    "n_shared_tokens": 1038,
+    "n_pp_tokens": 2372,
+    "n_b_tokens": 4889
+  },
+  "T1_token_breadth": {
+    "mean_b_folios_per_token": 7.167630057803469,
+    "median": 3.0,
+    "min": 1,
+    "max": 78,
+    "pct_1_5": 67.72639691714836,
+    "pct_singleton": 31.59922928709056
+  },
+  "T2_concentration": {
+    "mean_herfindahl": 0.01461919313115468,
+    "uniform_herfindahl": 0.012195121951219513,
+    "mean_effective_b": 68.56045074681114,
+    "median_effective_b": 69.22703997037041,
+    "mean_gini": 0.24970782578441528,
+    "mean_top3_share": 0.07161829967506526
+  },
+  "T3_affinity": {
+    "mean_affinity": 0.20783939423714765,
+    "mean_best": 0.42942330799666234,
+    "mean_lift": 2.08602431959245,
+    "mean_b_above_25pct": 25.596491228070175,
+    "mean_b_above_50pct": 0.13157894736842105,
+    "variance_by_a_pct": 9.611102987314666,
+    "variance_by_b_pct": 64.9728109335888
+  },
+  "T4_permutation": {
+    "observed_mean_eff_b": 68.56045074681114,
+    "null_mean_eff_b": 58.350295128834425,
+    "null_std": 0.49934243371295134,
+    "p_more_diffuse": 0.0,
+    "p_more_concentrated": 1.0,
+    "verdict": "DIFFUSE"
+  }
+}

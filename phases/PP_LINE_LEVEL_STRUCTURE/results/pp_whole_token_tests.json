@@ -1,0 +1,36 @@
+{
+  "T9a_whole_token_free_shuffle": {
+    "test": "T9a_whole_token_free_shuffle",
+    "unique_word_types": 2372,
+    "unique_middle_types": 389,
+    "expansion_factor": 6.097686375321337,
+    "lines_with_2plus": 1506,
+    "total_word_pairs": 24996,
+    "observed_unique_word_pairs": 20757,
+    "observed_unique_middle_pairs": 5460,
+    "observed_word_variance": 0.896628140143439,
+    "null_unique_mean": 21646.309,
+    "null_unique_std": 74.5247443403867,
+    "null_variance_mean": 0.7101807798595785,
+    "null_variance_std": 0.03100251245547576,
+    "p_unique_lower": 0.0,
+    "p_unique_upper": 1.0,
+    "p_variance": 0.0,
+    "PASS": true,
+    "verdict": "PASS"
+  },
+  "T9b_whole_token_variant_shuffle": {
+    "test": "T9b_whole_token_variant_shuffle",
+    "observed_unique_word_pairs": 20757,
+    "observed_word_variance": 0.896628140143439,
+    "variant_null_unique_mean": 21094.447,
+    "variant_null_unique_std": 59.95520987370488,
+    "variant_null_variance_mean": 0.7910603370858511,
+    "variant_null_variance_std": 0.028269079652236496,
+    "p_unique_lower": 0.0,
+    "p_unique_upper": 1.0,
+    "p_variance": 0.0,
+    "PASS": true,
+    "verdict": "PASS"
+  }
+}

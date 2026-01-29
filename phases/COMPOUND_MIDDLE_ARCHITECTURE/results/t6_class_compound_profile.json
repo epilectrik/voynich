@@ -1,0 +1,509 @@
+{
+  "class_profiles": [
+    {
+      "class": 23,
+      "total_tokens": 362,
+      "unique_types": 7,
+      "unique_middles": 7,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.4530386740331491
+    },
+    {
+      "class": 22,
+      "total_tokens": 45,
+      "unique_types": 6,
+      "unique_middles": 6,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.4666666666666666
+    },
+    {
+      "class": 35,
+      "total_tokens": 257,
+      "unique_types": 12,
+      "unique_middles": 10,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.7626459143968871
+    },
+    {
+      "class": 38,
+      "total_tokens": 50,
+      "unique_types": 6,
+      "unique_middles": 6,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.78
+    },
+    {
+      "class": 30,
+      "total_tokens": 522,
+      "unique_types": 5,
+      "unique_middles": 5,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.2164750957854407
+    },
+    {
+      "class": 11,
+      "total_tokens": 421,
+      "unique_types": 1,
+      "unique_middles": 1,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 2.0
+    },
+    {
+      "class": 31,
+      "total_tokens": 869,
+      "unique_types": 12,
+      "unique_middles": 8,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.8883774453394706
+    },
+    {
+      "class": 14,
+      "total_tokens": 707,
+      "unique_types": 12,
+      "unique_middles": 7,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.8458274398868457
+    },
+    {
+      "class": 41,
+      "total_tokens": 71,
+      "unique_types": 6,
+      "unique_middles": 6,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.295774647887324
+    },
+    {
+      "class": 7,
+      "total_tokens": 434,
+      "unique_types": 2,
+      "unique_middles": 2,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 2.0
+    },
+    {
+      "class": 21,
+      "total_tokens": 111,
+      "unique_types": 10,
+      "unique_middles": 6,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.1441441441441442
+    },
+    {
+      "class": 36,
+      "total_tokens": 243,
+      "unique_types": 8,
+      "unique_middles": 2,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.0
+    },
+    {
+      "class": 32,
+      "total_tokens": 762,
+      "unique_types": 7,
+      "unique_middles": 3,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.0
+    },
+    {
+      "class": 20,
+      "total_tokens": 198,
+      "unique_types": 15,
+      "unique_middles": 9,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.101010101010101
+    },
+    {
+      "class": 40,
+      "total_tokens": 72,
+      "unique_types": 6,
+      "unique_middles": 5,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.5138888888888888
+    },
+    {
+      "class": 18,
+      "total_tokens": 164,
+      "unique_types": 9,
+      "unique_middles": 3,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.8902439024390243
+    },
+    {
+      "class": 15,
+      "total_tokens": 68,
+      "unique_types": 5,
+      "unique_middles": 3,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.088235294117647
+    },
+    {
+      "class": 25,
+      "total_tokens": 105,
+      "unique_types": 7,
+      "unique_middles": 6,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.5047619047619047
+    },
+    {
+      "class": 37,
+      "total_tokens": 52,
+      "unique_types": 8,
+      "unique_middles": 8,
+      "compound_count": 0,
+      "compound_rate": 0.0,
+      "mean_middle_length": 1.5384615384615385
+    },
+    {
+      "class": 33,
+      "total_tokens": 1759,
+      "unique_types": 13,
+      "unique_middles": 7,
+      "compound_count": 54,
+      "compound_rate": 3.069926094371802,
+      "mean_middle_length": 1.3001705514496873
+    },
+    {
+      "class": 6,
+      "total_tokens": 198,
+      "unique_types": 23,
+      "unique_middles": 16,
+      "compound_count": 7,
+      "compound_rate": 3.5353535353535355,
+      "mean_middle_length": 1.8383838383838385
+    },
+    {
+      "class": 16,
+      "total_tokens": 95,
+      "unique_types": 10,
+      "unique_middles": 7,
+      "compound_count": 5,
+      "compound_rate": 5.2631578947368425,
+      "mean_middle_length": 1.768421052631579
+    },
+    {
+      "class": 45,
+      "total_tokens": 33,
+      "unique_types": 6,
+      "unique_middles": 5,
+      "compound_count": 2,
+      "compound_rate": 6.0606060606060606,
+      "mean_middle_length": 1.5454545454545454
+    },
+    {
+      "class": 17,
+      "total_tokens": 288,
+      "unique_types": 9,
+      "unique_middles": 5,
+      "compound_count": 34,
+      "compound_rate": 11.805555555555555,
+      "mean_middle_length": 1.7881944444444444
+    },
+    {
+      "class": 24,
+      "total_tokens": 579,
+      "unique_types": 15,
+      "unique_middles": 5,
+      "compound_count": 79,
+      "compound_rate": 13.644214162348877,
+      "mean_middle_length": 1.3557858376511227
+    },
+    {
+      "class": 39,
+      "total_tokens": 208,
+      "unique_types": 16,
+      "unique_middles": 13,
+      "compound_count": 34,
+      "compound_rate": 16.346153846153847,
+      "mean_middle_length": 1.7836538461538463
+    },
+    {
+      "class": 2,
+      "total_tokens": 48,
+      "unique_types": 8,
+      "unique_middles": 5,
+      "compound_count": 10,
+      "compound_rate": 20.833333333333332,
+      "mean_middle_length": 1.7708333333333333
+    },
+    {
+      "class": 1,
+      "total_tokens": 38,
+      "unique_types": 6,
+      "unique_middles": 6,
+      "compound_count": 8,
+      "compound_rate": 21.05263157894737,
+      "mean_middle_length": 2.1578947368421053
+    },
+    {
+      "class": 27,
+      "total_tokens": 212,
+      "unique_types": 21,
+      "unique_middles": 14,
+      "compound_count": 52,
+      "compound_rate": 24.528301886792452,
+      "mean_middle_length": 1.8867924528301887
+    },
+    {
+      "class": 19,
+      "total_tokens": 74,
+      "unique_types": 6,
+      "unique_middles": 5,
+      "compound_count": 20,
+      "compound_rate": 27.027027027027028,
+      "mean_middle_length": 1.9324324324324325
+    },
+    {
+      "class": 28,
+      "total_tokens": 625,
+      "unique_types": 25,
+      "unique_middles": 17,
+      "compound_count": 176,
+      "compound_rate": 28.16,
+      "mean_middle_length": 2.2512
+    },
+    {
+      "class": 43,
+      "total_tokens": 108,
+      "unique_types": 13,
+      "unique_middles": 10,
+      "compound_count": 31,
+      "compound_rate": 28.703703703703702,
+      "mean_middle_length": 2.0555555555555554
+    },
+    {
+      "class": 5,
+      "total_tokens": 112,
+      "unique_types": 15,
+      "unique_middles": 10,
+      "compound_count": 33,
+      "compound_rate": 29.464285714285715,
+      "mean_middle_length": 2.1785714285714284
+    },
+    {
+      "class": 3,
+      "total_tokens": 62,
+      "unique_types": 9,
+      "unique_middles": 8,
+      "compound_count": 21,
+      "compound_rate": 33.87096774193548,
+      "mean_middle_length": 1.8225806451612903
+    },
+    {
+      "class": 48,
+      "total_tokens": 98,
+      "unique_types": 9,
+      "unique_middles": 8,
+      "compound_count": 34,
+      "compound_rate": 34.69387755102041,
+      "mean_middle_length": 2.0918367346938775
+    },
+    {
+      "class": 34,
+      "total_tokens": 1093,
+      "unique_types": 19,
+      "unique_middles": 10,
+      "compound_count": 443,
+      "compound_rate": 40.530649588289116,
+      "mean_middle_length": 2.145471180237877
+    },
+    {
+      "class": 47,
+      "total_tokens": 236,
+      "unique_types": 11,
+      "unique_middles": 8,
+      "compound_count": 112,
+      "compound_rate": 47.45762711864407,
+      "mean_middle_length": 2.5
+    },
+    {
+      "class": 9,
+      "total_tokens": 630,
+      "unique_types": 3,
+      "unique_middles": 3,
+      "compound_count": 351,
+      "compound_rate": 55.714285714285715,
+      "mean_middle_length": 3.0682539682539685
+    },
+    {
+      "class": 49,
+      "total_tokens": 124,
+      "unique_types": 11,
+      "unique_middles": 11,
+      "compound_count": 78,
+      "compound_rate": 62.903225806451616,
+      "mean_middle_length": 2.8225806451612905
+    },
+    {
+      "class": 4,
+      "total_tokens": 140,
+      "unique_types": 17,
+      "unique_middles": 12,
+      "compound_count": 93,
+      "compound_rate": 66.42857142857143,
+      "mean_middle_length": 2.664285714285714
+    },
+    {
+      "class": 46,
+      "total_tokens": 206,
+      "unique_types": 8,
+      "unique_middles": 6,
+      "compound_count": 156,
+      "compound_rate": 75.72815533980582,
+      "mean_middle_length": 2.6262135922330097
+    },
+    {
+      "class": 26,
+      "total_tokens": 166,
+      "unique_types": 8,
+      "unique_middles": 5,
+      "compound_count": 138,
+      "compound_rate": 83.13253012048193,
+      "mean_middle_length": 2.9036144578313254
+    },
+    {
+      "class": 29,
+      "total_tokens": 812,
+      "unique_types": 17,
+      "unique_middles": 8,
+      "compound_count": 677,
+      "compound_rate": 83.3743842364532,
+      "mean_middle_length": 2.899014778325123
+    },
+    {
+      "class": 42,
+      "total_tokens": 43,
+      "unique_types": 6,
+      "unique_middles": 5,
+      "compound_count": 36,
+      "compound_rate": 83.72093023255815,
+      "mean_middle_length": 2.8372093023255816
+    },
+    {
+      "class": 13,
+      "total_tokens": 1191,
+      "unique_types": 11,
+      "unique_middles": 6,
+      "compound_count": 1000,
+      "compound_rate": 83.9630562552477,
+      "mean_middle_length": 2.9109991603694376
+    },
+    {
+      "class": 8,
+      "total_tokens": 1006,
+      "unique_types": 3,
+      "unique_middles": 2,
+      "compound_count": 907,
+      "compound_rate": 90.15904572564612,
+      "mean_middle_length": 2.9015904572564613
+    },
+    {
+      "class": 10,
+      "total_tokens": 314,
+      "unique_types": 1,
+      "unique_middles": 1,
+      "compound_count": 314,
+      "compound_rate": 100.0,
+      "mean_middle_length": 3.0
+    },
+    {
+      "class": 44,
+      "total_tokens": 43,
+      "unique_types": 5,
+      "unique_middles": 5,
+      "compound_count": 43,
+      "compound_rate": 100.0,
+      "mean_middle_length": 3.2093023255813953
+    }
+  ],
+  "categories": {
+    "base_only": [
+      23,
+      22,
+      35,
+      38,
+      30,
+      11,
+      31,
+      14,
+      41,
+      7,
+      21,
+      36,
+      32,
+      20,
+      40,
+      18,
+      15,
+      25,
+      37,
+      33,
+      6
+    ],
+    "low_compound": [
+      16,
+      45,
+      17,
+      24,
+      39,
+      2,
+      1,
+      27,
+      19,
+      28,
+      43,
+      5
+    ],
+    "medium_compound": [
+      3,
+      48,
+      34,
+      47,
+      9
+    ],
+    "high_compound": [
+      49,
+      4,
+      46,
+      26,
+      29,
+      42,
+      13
+    ],
+    "compound_heavy": [
+      8,
+      10,
+      44
+    ]
+  },
+  "token_distribution": {
+    "base_only": 7470,
+    "low_compound": 2420,
+    "medium_compound": 2119,
+    "high_compound": 2682,
+    "compound_heavy": 1363
+  },
+  "derivation": {
+    "base_middles_count": 49,
+    "base_seeds_compound": 9,
+    "seed_rate": 0.1836734693877551
+  },
+  "verdict": "BIMODAL_INDEPENDENT"
+}

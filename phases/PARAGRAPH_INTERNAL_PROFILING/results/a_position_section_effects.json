@@ -1,0 +1,65 @@
+{
+  "by_folio_position": {
+    "first": {
+      "count": 86,
+      "ri_rate_mean": 0.093,
+      "ri_rate_stdev": 0.154,
+      "pp_rate_mean": 0.457,
+      "pp_rate_stdev": 0.19
+    },
+    "middle": {
+      "count": 142,
+      "ri_rate_mean": 0.143,
+      "ri_rate_stdev": 0.305,
+      "pp_rate_mean": 0.617,
+      "pp_rate_stdev": 0.359
+    },
+    "last": {
+      "count": 86,
+      "ri_rate_mean": 0.118,
+      "ri_rate_stdev": 0.232,
+      "pp_rate_mean": 0.457,
+      "pp_rate_stdev": 0.198
+    },
+    "only": {
+      "count": 28,
+      "ri_rate_mean": 0.071,
+      "ri_rate_stdev": 0.038,
+      "pp_rate_mean": 0.436,
+      "pp_rate_stdev": 0.088
+    }
+  },
+  "by_section": {
+    "H": {
+      "count": 197,
+      "ri_rate_mean": 0.084,
+      "pp_rate_mean": 0.42,
+      "pp_compound_rate_mean": 0.277
+    },
+    "P": {
+      "count": 130,
+      "ri_rate_mean": 0.172,
+      "pp_rate_mean": 0.675,
+      "pp_compound_rate_mean": 0.32
+    },
+    "T": {
+      "count": 15,
+      "ri_rate_mean": 0.098,
+      "pp_rate_mean": 0.533,
+      "pp_compound_rate_mean": 0.299
+    }
+  },
+  "tests": {
+    "ri_by_position_kruskal": {
+      "H": 13.552,
+      "p": 0.0011,
+      "significant": true
+    },
+    "ri_first_vs_last_cohens_d": -0.127,
+    "ri_by_section_kruskal": {
+      "H": 14.713,
+      "p": 0.0006,
+      "significant": true
+    }
+  }
+}

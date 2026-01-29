@@ -1,0 +1,45 @@
+{
+  "transitions": {
+    "fl_preceded_by": {
+      "FQ": 167,
+      "EN": 256,
+      "UN": 270,
+      "AX": 171,
+      "CC": 42,
+      "FL": 88
+    },
+    "fl_followed_by": {
+      "EN": 224,
+      "UN": 257,
+      "FQ": 143,
+      "AX": 134,
+      "CC": 46,
+      "FL": 88
+    },
+    "fl_fl_chains": 88
+  },
+  "position": {
+    "mean": 0.5759345359632698,
+    "initial_rate": 10.667903525046382,
+    "final_rate": 65.27777777777777,
+    "distribution": {
+      "initial": 115,
+      "early": 157,
+      "medial": 326,
+      "late": 228,
+      "final": 252
+    }
+  },
+  "hazard_split": {
+    "hazard_tokens": 956,
+    "safe_tokens": 122,
+    "hazard_mean_pos": 0.545875615013971,
+    "safe_mean_pos": 0.8114782115987517
+  },
+  "findings": [
+    "MEDIAL: FL mean position 0.576",
+    "LINE_CLOSER: 65.3% of FL tokens are line-final",
+    "HAZARD_DOMINANT: 88.7% hazard classes",
+    "FQ_FEEDER: FL -> FQ at 16.0%"
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "folio_stats": {
+    "f57v": {
+      "total_tokens": 166,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 69,
+        "OPERATIONAL": 97
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 58.433734939759034,
+        "UN": 41.566265060240966
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "T",
+        "X",
+        "Y"
+      ]
+    },
+    "f65r": {
+      "total_tokens": 3,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 2,
+        "OPERATIONAL": 1
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 33.333333333333336,
+        "UN": 66.66666666666667
+      },
+      "placements": [
+        "L"
+      ]
+    },
+    "f67r1": {
+      "total_tokens": 119,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 63,
+        "OPERATIONAL": 56
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 47.05882352941177,
+        "UN": 52.94117647058823
+      },
+      "placements": [
+        "R",
+        "S"
+      ]
+    },
+    "f67r2": {
+      "total_tokens": 141,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 81,
+        "OPERATIONAL": 60
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 42.5531914893617,
+        "UN": 57.4468085106383
+      },
+      "placements": [
+        "C",
+        "L",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "f67v1": {
+      "total_tokens": 69,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 48,
+        "OPERATIONAL": 21
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 30.434782608695652,
+        "UN": 69.56521739130434
+      },
+      "placements": [
+        "X",
+        "Y"
+      ]
+    },
+    "f67v2": {
+      "total_tokens": 60,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 38,
+        "OPERATIONAL": 22
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 36.666666666666664,
+        "UN": 63.333333333333336
+      },
+      "placements": [
+        "C",
+        "F",
+        "L",
+        "R",
+        "S"
+      ]
+    },
+    "f68r1": {
+      "total_tokens": 36,
+      "family": "A/C",
+      "role_counts": {
+        "OPERATIONAL": 9,
+        "UN": 27
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 25.0,
+        "UN": 75.0
+      },
+      "placements": [
+        "S",
+        "X",
+        "Y"
+      ]
+    },
+    "f68r2": {
+      "total_tokens": 43,
+      "family": "A/C",
+      "role_counts": {
+        "OPERATIONAL": 15,
+        "UN": 28
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 34.883720930232556,
+        "UN": 65.11627906976744
+      },
+      "placements": [
+        "L",
+        "S",
+        "U"
+      ]
+    },
+    "f68r3": {
+      "total_tokens": 100,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 51,
+        "OPERATIONAL": 49
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 49.0,
+        "UN": 51.0
+      },
+      "placements": [
+        "C1",
+        "C2",
+        "R",
+        "X"
+      ]
+    },
+    "f68v1": {
+      "total_tokens": 96,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 42,
+        "OPERATIONAL": 54
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 56.25,
+        "UN": 43.75
+      },
+      "placements": [
+        "C",
+        "X"
+      ]
+    },
+    "f68v2": {
+      "total_tokens": 56,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 36,
+        "OPERATIONAL": 20
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 35.714285714285715,
+        "UN": 64.28571428571429
+      },
+      "placements": [
+        "C",
+        "R",
+        "S"
+      ]
+    },
+    "f68v3": {
+      "total_tokens": 119,
+      "family": "A/C",
+      "role_counts": {
+        "UN": 61,
+        "OPERATIONAL": 58
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 48.739495798319325,
+        "UN": 51.260504201680675
+      },
+      "placements": [
+        "B",
+        "I",
+        "L",
+        "O",
+        "S"
+      ]
+    },
+    "f69r": {
+      "total_tokens": 128,
+      "family": "A/C",
+      "role_counts": {
+        "OPERATIONAL": 82,
+        "UN": 46
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 64.0625,
+        "UN": 35.9375
+      },
+      "placements": [
+        "C",
+        "R",
+        "S",
+        "W"
+      ]
+    },
+    "f69v": {
+      "total_tokens": 137,
+      "family": "A/C",
+      "role_counts": {
+        "OPERATIONAL": 81,
+        "UN": 56
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 59.12408759124087,
+        "UN": 40.87591240875913
+      },
+      "placements": [
+        "C",
+        "L"
+      ]
+    },
+    "f70r1": {
+      "total_tokens": 111,
+      "family": "A/C",
+      "role_counts": {
+        "OPERATIONAL": 73,
+        "UN": 38
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 65.76576576576576,
+        "UN": 34.234234234234236
+      },
+      "placements": [
+        "C",
+        "I",
+        "X",
+        "Y"
+      ]
+    },
+    "f70r2": {
+      "total_tokens": 147,
+      "family": "A/C",
+      "role_counts": {
+        "OPERATIONAL": 84,
+        "UN": 63
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 57.142857142857146,
+        "UN": 42.857142857142854
+      },
+      "placements": [
+        "C",
+        "I"
+      ]
+    },
+    "f70v1": {
+      "total_tokens": 86,
+      "family": "Zodiac",
+      "role_counts": {
+        "OPERATIONAL": 43,
+        "UN": 43
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 50.0,
+        "UN": 50.0
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "S1",
+        "S2"
+      ]
+    },
+    "f70v2": {
+      "total_tokens": 139,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 63,
+        "OPERATIONAL": 76
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 54.67625899280576,
+        "UN": 45.32374100719424
+      },
+      "placements": [
+        "C",
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f71r": {
+      "total_tokens": 91,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 44,
+        "OPERATIONAL": 47
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 51.64835164835165,
+        "UN": 48.35164835164835
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f71v": {
+      "total_tokens": 99,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 43,
+        "OPERATIONAL": 56
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 56.56565656565657,
+        "UN": 43.43434343434343
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f72r1": {
+      "total_tokens": 105,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 46,
+        "OPERATIONAL": 59
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 56.19047619047619,
+        "UN": 43.80952380952381
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f72r2": {
+      "total_tokens": 110,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 51,
+        "OPERATIONAL": 59
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 53.63636363636363,
+        "UN": 46.36363636363637
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S0",
+        "S1",
+        "S2"
+      ]
+    },
+    "f72r3": {
+      "total_tokens": 163,
+      "family": "Zodiac",
+      "role_counts": {
+        "OPERATIONAL": 85,
+        "UN": 78
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 52.147239263803684,
+        "UN": 47.852760736196316
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    "f72v1": {
+      "total_tokens": 99,
+      "family": "Zodiac",
+      "role_counts": {
+        "OPERATIONAL": 35,
+        "UN": 64
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 35.35353535353536,
+        "UN": 64.64646464646465
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f72v2": {
+      "total_tokens": 105,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 64,
+        "OPERATIONAL": 41
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 39.04761904761905,
+        "UN": 60.95238095238095
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f72v3": {
+      "total_tokens": 111,
+      "family": "Zodiac",
+      "role_counts": {
+        "UN": 63,
+        "OPERATIONAL": 48
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 43.24324324324324,
+        "UN": 56.75675675675676
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ]
+    },
+    "f73r": {
+      "total_tokens": 94,
+      "family": "Zodiac",
+      "role_counts": {
+        "OPERATIONAL": 47,
+        "UN": 47
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 50.0,
+        "UN": 50.0
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S0",
+        "S1",
+        "S2"
+      ]
+    },
+    "f73v": {
+      "total_tokens": 97,
+      "family": "Zodiac",
+      "role_counts": {
+        "OPERATIONAL": 48,
+        "UN": 49
+      },
+      "role_pct": {
+        "KERNEL": 0.0,
+        "LINK": 0.0,
+        "OPERATIONAL": 49.48453608247423,
+        "UN": 50.51546391752577
+      },
+      "placements": [
+        "R1",
+        "R2",
+        "R3",
+        "S0",
+        "S1",
+        "S2"
+      ]
+    }
+  },
+  "summary": {
+    "total_folios": 28,
+    "zodiac_folios": 13,
+    "ac_folios": 15,
+    "zodiac_tokens": 1465,
+    "ac_tokens": 1365,
+    "family_chi2": 0.03009473740334929,
+    "family_chi2_p": 0.8622754452318262,
+    "zodiac_role_means": {
+      "KERNEL": 0.0,
+      "LINK": 0.0,
+      "OPERATIONAL": 50.03284730492988,
+      "UN": 49.96715269507012
+    },
+    "ac_role_means": {
+      "KERNEL": 0.0,
+      "LINK": 0.0,
+      "OPERATIONAL": 45.71530070467803,
+      "UN": 54.28469929532198
+    }
+  },
+  "verdict": "FAMILY_UNIFORM"
+}

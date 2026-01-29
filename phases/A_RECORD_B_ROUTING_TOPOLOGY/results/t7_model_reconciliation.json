@@ -1,0 +1,35 @@
+{
+  "Single Line": {
+    "n": 1559,
+    "mean_pp": 5.838357921744708,
+    "c502_mean_survival": 0.11237106034728685,
+    "c502_rho": 0.7342741868654338,
+    "c502_direction": "positive",
+    "t6_mean_viable": 15.32264271969211,
+    "t6_rho": -0.43860204174275746,
+    "t6_direction": "negative"
+  },
+  "Paragraph": {
+    "n": 306,
+    "mean_pp": 20.18954248366013,
+    "c502_mean_survival": 0.3183391401044633,
+    "c502_rho": 0.862480738911594,
+    "c502_direction": "positive",
+    "t6_mean_viable": 1.5784313725490196,
+    "t6_rho": -0.4663838226860114,
+    "t6_direction": "negative"
+  },
+  "Full A-Folio": {
+    "n": 114,
+    "mean_pp": 38.87719298245614,
+    "c502_mean_survival": 0.5003832362712229,
+    "c502_rho": 0.7719088033048558,
+    "c502_direction": "positive",
+    "t6_mean_viable": 0.017543859649122806,
+    "t6_rho": -0.13164235630645385,
+    "t6_direction": "negative"
+  },
+  "verdict": "C502_CORRECT",
+  "c502_verdict": "CONFIRMS_C693",
+  "t6_verdict": "CONTRADICTS_C693"
+}

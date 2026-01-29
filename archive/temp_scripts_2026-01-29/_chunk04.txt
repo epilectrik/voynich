@@ -1,0 +1,14 @@
+    # TEST 1: Token count
+    print("")
+    print("-" * 70)
+    print("TEST 1: Token Count per Line")
+    print("-" * 70)
+    pp_len = [len(rec.tokens) for rec in pp_pure]
+    ri_len = [len(rec.tokens) for rec in ri_bearing]
+    t1 = mw_report(pp_len, ri_len, "PP-pure", "RI-bearing", "tokens_per_line")
+    print("  PP-pure:    mean=%.2f, median=%.1f, std=%.2f" % (t1["mean_a"], t1["median_a"], t1["std_a"]))
+    print("  RI-bearing: mean=%.2f, median=%.1f, std=%.2f" % (t1["mean_b"], t1["median_b"], t1["std_b"]))
+    print("  Mann-Whitney U=%.0f, p=%.2e" % (t1["U_statistic"], t1["p_value"]))
+    print("  Cohen d=%.3f, rank-biserial r=%.3f" % (t1["cohens_d"], t1["rank_biserial"]))
+    results["tests"]["token_count"] = t1
+

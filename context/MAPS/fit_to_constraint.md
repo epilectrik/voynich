@@ -28,6 +28,12 @@ Look up a constraint number to see which fits explain its mechanism.
 | F-ECR-001 | Material-Class Identification | F3 | C109-C114, C232 | SUCCESS |
 | F-ECR-002 | Apparatus-Role Identification | F3 | C085-C108, C171, C216 | SUCCESS |
 | F-ECR-003 | Decision-State Semantics | F3 | C384, C404-C405, C459-C460 | SUCCESS |
+| F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | C366, C609, C190 | SUCCESS |
+| F-B-002 | QO Lane as Safe Energy Pathway | F3 | C601, C574, C600 | SUCCESS |
+| F-B-003 | Pre-Operational Configuration via A→AZC→B Pipeline | F2 | C473, C506, C468 | SUCCESS |
+| F-B-004 | Lane Hysteresis Control Model | F2 | C643, C549, C577, C608 | SUCCESS |
+| F-B-005 | PP-Lane MIDDLE Discrimination | F2 | C646, C576, C642 | SUCCESS |
+| F-B-006 | Energy/Stabilization Lane Assignment | F3 | C647, C645, C601, C521 | PARTIAL |
 | F-AZC-015 | Windowed AZC Activation Trace | F2 | C440, C441-C444 | SUCCESS |
 | F-AZC-016 | AZC->B Constraint Fit Validation | F2 | C468, C469, C470 | SUCCESS |
 
@@ -87,6 +93,44 @@ Look up a constraint number to see which fits explain its mechanism.
 | C287-C290 | F-A-008 | NULL: repetition is uniform across universality classes |
 
 **Interpretation:** F-A-008 tested whether universal vocabulary receives more repetition (salience reinforcement). It does not. Relationality is enforced through selection (F-A-007), not reinforcement. Repetition serves literal enumeration uniformly.
+
+---
+
+### Currier B Operational Controls (C190, C366, C468, C473, C506, C574, C600, C601, C609)
+
+| Constraint | Fit ID | What Fit Explains |
+|------------|--------|-------------------|
+| C366 | F-B-001 | LINK phase boundary maps to monitoring-to-intervention transition |
+| C609 | F-B-001 | 13.2% LINK density maps to sustained monitoring duty cycle |
+| C190 | F-B-001 | LINK-CEI anticorrelation (r=-0.7057) maps to stable-process monitoring pattern |
+| C601 | F-B-002 | QO's 0/19 hazard exclusion maps to non-fire/safe thermal pathway |
+| C574 | F-B-002 | QO-CHSH grammatical identity maps to same operations at different risk levels |
+| C600 | F-B-002 | CC sub-group trigger selectivity maps to distinct entry points for different methods |
+| C473 | F-B-003 | A-record as constraint bundle maps to pre-operational configuration (fuel, vessel, method) |
+| C506 | F-B-003 | PP→survival correlation (r=0.715) maps to better configuration → more operational options |
+| C468 | F-B-003 | B blind execution maps to operator executing within pre-set apparatus constraints |
+
+**Interpretation:** F-B-001 through F-B-003 demonstrate alignment between Brunschwig's verified distillation control practices and Currier B's structural architecture. All mappings verified against original German text (sources/brunschwig_1500_text.txt, Part 1, lines 1-2800).
+
+---
+
+### Lane Architecture (C549, C576, C577, C601, C608, C642-C647)
+
+| Constraint | Fit ID | What Fit Explains |
+|------------|--------|-------------------|
+| C643 | F-B-004 | Lane oscillation (0.563 vs 0.494 null) accounts for hysteresis control pattern |
+| C549 | F-B-004 | Interleaving significance re-confirmed at within-line level with run lengths |
+| C577 | F-B-004 | Content-driven oscillation rates (BIO=0.606, HERBAL_B=0.427) |
+| C608 | F-B-004 | Short runs (median 1.0) confirm no lane coherence |
+| C646 | F-B-005 | 20/99 PP MIDDLEs predict lane preference (z=24.26) |
+| C576 | F-B-005 | Vocabulary bifurcation has k/t vs o character-content basis |
+| C642 | F-B-005 | A-record architecture transmits lane-relevant information |
+| C647 | F-B-006 | QO k=70.7%, CHSH e=68.7% accounts for energy/stabilization assignment |
+| C645 | F-B-006 | CHSH 75.2% post-hazard accounts for stabilization function |
+| C601 | F-B-006 | QO zero hazard accounts for safe (non-hazardous) energy application |
+| C521 | F-B-006 | Kernel directionality (e absorbing) consistent with CHSH stabilization role |
+
+**Interpretation:** F-B-004 through F-B-006 establish that the two execution lanes (QO/CHSH) exhibit hysteresis-like oscillation, are predicted by A-side PP MIDDLE vocabulary, and carry distinct kernel-character morphological signatures (QO=k-energy, CHSH=e-stability). The "Change/Hold" interpretation (QO=hold, CHSH=change) is falsified in its literal form; the reversed mapping (QO=energy addition, CHSH=stabilization) is consistent with all Tier 0-2 constraints. F-B-002 annotation confirms "safe energy pathway" = controlled energy application.
 
 ---
 

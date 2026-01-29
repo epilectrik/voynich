@@ -1,0 +1,2667 @@
+{
+  "contingency": {
+    "dimensions": {
+      "middles": 404,
+      "prefixes": 36
+    },
+    "total_cells": 14544,
+    "nonzero_cells": 1560,
+    "sparsity": 0.8927,
+    "total_b_pp_tokens": 21642,
+    "prefix_list": [
+      "NONE",
+      "al",
+      "ar",
+      "ch",
+      "ct",
+      "da",
+      "dch",
+      "de",
+      "do",
+      "fch",
+      "ka",
+      "kch",
+      "ke",
+      "ko",
+      "lch",
+      "lk",
+      "lsh",
+      "ok",
+      "ol",
+      "or",
+      "ot",
+      "pch",
+      "pe",
+      "po",
+      "qo",
+      "rch",
+      "sa",
+      "sch",
+      "se",
+      "sh",
+      "so",
+      "ta",
+      "tch",
+      "te",
+      "to",
+      "yk"
+    ],
+    "middle_prefix_diversity": {
+      "dy": 27,
+      "y": 27,
+      "d": 25,
+      "e": 25,
+      "ar": 23,
+      "s": 23,
+      "ee": 22,
+      "l": 22,
+      "or": 22,
+      "edy": 21,
+      "o": 21,
+      "eey": 20,
+      "ed": 19,
+      "ol": 19,
+      "ey": 18,
+      "ch": 17,
+      "eo": 17,
+      "r": 17,
+      "al": 16,
+      "eeo": 16,
+      "eol": 16,
+      "od": 16,
+      "aiin": 15,
+      "am": 15,
+      "eed": 15,
+      "ain": 14,
+      "eod": 14,
+      "k": 14,
+      "c": 13,
+      "sh": 13,
+      "ai": 12,
+      "eeol": 12,
+      "lch": 12,
+      "i": 11,
+      "iin": 11,
+      "ld": 10,
+      "lk": 10,
+      "ly": 10,
+      "ck": 9,
+      "dai": 9,
+      "oiin": 9,
+      "ok": 9,
+      "olk": 9,
+      "ry": 9,
+      "a": 8,
+      "an": 8,
+      "ct": 8,
+      "da": 8,
+      "ec": 8,
+      "ek": 8
+    },
+    "diversity_distribution": {
+      "1": 156,
+      "2": 86,
+      "3": 48,
+      "4": 24,
+      "5": 17,
+      "6": 11,
+      "7": 7,
+      "8": 11,
+      "9": 6,
+      "10": 3,
+      "11": 2,
+      "12": 3,
+      "13": 2,
+      "14": 3,
+      "15": 3,
+      "16": 4,
+      "17": 3,
+      "18": 1,
+      "19": 2,
+      "20": 1,
+      "21": 2,
+      "22": 3,
+      "23": 2,
+      "25": 2,
+      "27": 2
+    },
+    "exclusivity_spectrum": {
+      "exclusive_1": 156,
+      "low_2_3": 134,
+      "high_4plus": 114,
+      "exclusive_pct": 38.6
+    },
+    "prefix_diversity": {
+      "NONE": 180,
+      "ch": 163,
+      "qo": 132,
+      "sh": 132,
+      "ol": 79,
+      "ot": 73,
+      "ok": 70,
+      "yk": 49,
+      "lk": 40,
+      "da": 39,
+      "pch": 39,
+      "lch": 37,
+      "al": 36,
+      "or": 34,
+      "to": 34,
+      "te": 31,
+      "ar": 30,
+      "so": 30,
+      "ke": 29,
+      "lsh": 27,
+      "po": 27,
+      "dch": 26,
+      "tch": 25,
+      "fch": 24,
+      "ka": 24,
+      "do": 23,
+      "ta": 21,
+      "sa": 20,
+      "kch": 19,
+      "rch": 18,
+      "ko": 15,
+      "sch": 11,
+      "de": 10,
+      "se": 8,
+      "ct": 4,
+      "pe": 1
+    },
+    "c276_comparison": "156 exclusive vs C276's 28 (different scope: B-side PP vs full vocab)",
+    "c423_comparison": "38.6% exclusive vs C423's 80% (different scope)"
+  },
+  "selectivity": {
+    "n_testable": 128,
+    "n_excluded": 276,
+    "min_tokens": 10,
+    "category_sizes": {
+      "locked": 5,
+      "dominant": 35,
+      "bimodal": 29,
+      "promiscuous": 59
+    },
+    "category_pcts": {
+      "locked": 3.9,
+      "dominant": 27.3,
+      "bimodal": 22.7,
+      "promiscuous": 46.1
+    },
+    "concentration_distribution": {
+      "0.50-0.60": 73,
+      "0.60-0.70": 15,
+      "0.70-0.80": 11,
+      "0.80-0.90": 16,
+      "0.90-1.00": 13
+    },
+    "concentration_stats": {
+      "mean": 0.5622,
+      "median": 0.5631,
+      "min": 0.1786,
+      "max": 1.0,
+      "std": 0.2316
+    },
+    "entropy_stats": {
+      "mean": 1.808,
+      "median": 1.7277,
+      "min": -0.0,
+      "max": 3.7259
+    },
+    "per_middle": {
+      "k": {
+        "concentration": 0.8197981739548295,
+        "entropy": 1.0363850919416737,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 14,
+        "total_tokens": 2081,
+        "prefix_fracs": {
+          "qo": 0.8198,
+          "ol": 0.1048,
+          "ch": 0.0332,
+          "al": 0.0159,
+          "sh": 0.0111,
+          "NONE": 0.0062,
+          "to": 0.0034,
+          "so": 0.0019,
+          "po": 0.0014,
+          "tch": 0.0005,
+          "da": 0.0005,
+          "sa": 0.0005,
+          "or": 0.0005,
+          "do": 0.0005
+        }
+      },
+      "edy": {
+        "concentration": 0.2881452070334657,
+        "entropy": 3.081250827195747,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 21,
+        "total_tokens": 1763,
+        "prefix_fracs": {
+          "ch": 0.2881,
+          "sh": 0.2796,
+          "ot": 0.0862,
+          "lch": 0.0669,
+          "ok": 0.0647,
+          "ke": 0.0301,
+          "pch": 0.0295,
+          "te": 0.025,
+          "tch": 0.0244,
+          "lsh": 0.0244,
+          "lk": 0.0164,
+          "dch": 0.0147,
+          "yk": 0.0142,
+          "kch": 0.0125,
+          "fch": 0.0085,
+          "rch": 0.0062,
+          "sch": 0.004,
+          "qo": 0.0023,
+          "de": 0.0011,
+          "ka": 0.0006,
+          "se": 0.0006
+        }
+      },
+      "l": {
+        "concentration": 0.23329425556858147,
+        "entropy": 3.281374124628647,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 22,
+        "total_tokens": 853,
+        "prefix_fracs": {
+          "NONE": 0.2333,
+          "da": 0.1934,
+          "qo": 0.1841,
+          "do": 0.0715,
+          "so": 0.0621,
+          "po": 0.041,
+          "sa": 0.0387,
+          "ch": 0.0352,
+          "ta": 0.0317,
+          "to": 0.0293,
+          "ka": 0.0281,
+          "ko": 0.0141,
+          "lk": 0.0129,
+          "ol": 0.0059,
+          "sh": 0.0047,
+          "ot": 0.0047,
+          "ar": 0.0023,
+          "lch": 0.0023,
+          "ok": 0.0012,
+          "lsh": 0.0012,
+          "yk": 0.0012,
+          "rch": 0.0012
+        }
+      },
+      "e": {
+        "concentration": 0.2319526627218935,
+        "entropy": 3.15059935039037,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 25,
+        "total_tokens": 845,
+        "prefix_fracs": {
+          "ch": 0.232,
+          "sh": 0.213,
+          "ok": 0.1645,
+          "ot": 0.1432,
+          "lk": 0.0627,
+          "yk": 0.0414,
+          "qo": 0.0308,
+          "lch": 0.0237,
+          "pch": 0.0142,
+          "ke": 0.0118,
+          "te": 0.0107,
+          "lsh": 0.0095,
+          "NONE": 0.0083,
+          "ol": 0.0059,
+          "sch": 0.0047,
+          "de": 0.0047,
+          "dch": 0.0047,
+          "kch": 0.0047,
+          "or": 0.0024,
+          "to": 0.0012,
+          "se": 0.0012,
+          "rch": 0.0012,
+          "fch": 0.0012,
+          "tch": 0.0012,
+          "so": 0.0012
+        }
+      },
+      "aiin": {
+        "concentration": 0.4259927797833935,
+        "entropy": 2.5734869961334432,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 15,
+        "total_tokens": 831,
+        "prefix_fracs": {
+          "NONE": 0.426,
+          "ok": 0.2022,
+          "ot": 0.1312,
+          "lk": 0.0614,
+          "ol": 0.0433,
+          "yk": 0.0385,
+          "or": 0.0349,
+          "ar": 0.0193,
+          "qo": 0.0156,
+          "ch": 0.012,
+          "sh": 0.0072,
+          "al": 0.0036,
+          "so": 0.0024,
+          "to": 0.0012,
+          "do": 0.0012
+        }
+      },
+      "ey": {
+        "concentration": 0.3368010403120936,
+        "entropy": 2.796046858865767,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 18,
+        "total_tokens": 769,
+        "prefix_fracs": {
+          "ch": 0.3368,
+          "sh": 0.3147,
+          "lch": 0.0585,
+          "te": 0.0494,
+          "ot": 0.0481,
+          "ok": 0.0455,
+          "ke": 0.0312,
+          "lsh": 0.0247,
+          "pch": 0.0208,
+          "tch": 0.0195,
+          "kch": 0.0104,
+          "dch": 0.0091,
+          "lk": 0.0091,
+          "rch": 0.0091,
+          "de": 0.0039,
+          "yk": 0.0039,
+          "fch": 0.0039,
+          "sch": 0.0013
+        }
+      },
+      "ol": {
+        "concentration": 0.5546772068511199,
+        "entropy": 2.4079433841378526,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 19,
+        "total_tokens": 759,
+        "prefix_fracs": {
+          "NONE": 0.5547,
+          "ch": 0.1436,
+          "sh": 0.0935,
+          "ot": 0.0461,
+          "ok": 0.0316,
+          "or": 0.0184,
+          "te": 0.0158,
+          "ol": 0.0145,
+          "ar": 0.0132,
+          "al": 0.0132,
+          "ke": 0.0119,
+          "yk": 0.0092,
+          "pch": 0.0079,
+          "lk": 0.0066,
+          "dch": 0.0053,
+          "qo": 0.004,
+          "kch": 0.004,
+          "tch": 0.004,
+          "lch": 0.0026
+        }
+      },
+      "r": {
+        "concentration": 0.2883845126835781,
+        "entropy": 2.9166301293509105,
+        "category": "bimodal",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 17,
+        "total_tokens": 749,
+        "prefix_fracs": {
+          "NONE": 0.2884,
+          "da": 0.2777,
+          "ta": 0.0921,
+          "sa": 0.0841,
+          "ka": 0.0721,
+          "so": 0.0534,
+          "do": 0.0307,
+          "qo": 0.0267,
+          "to": 0.0214,
+          "po": 0.0174,
+          "ko": 0.0134,
+          "ol": 0.0093,
+          "ch": 0.0067,
+          "rch": 0.0027,
+          "sh": 0.0013,
+          "ok": 0.0013,
+          "lch": 0.0013
+        }
+      },
+      "ar": {
+        "concentration": 0.3701492537313433,
+        "entropy": 2.800389592122252,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 23,
+        "total_tokens": 670,
+        "prefix_fracs": {
+          "NONE": 0.3701,
+          "ot": 0.191,
+          "ok": 0.1701,
+          "ch": 0.0672,
+          "lk": 0.0448,
+          "yk": 0.0418,
+          "sh": 0.0418,
+          "ol": 0.0134,
+          "ar": 0.0119,
+          "or": 0.009,
+          "qo": 0.009,
+          "lch": 0.0045,
+          "tch": 0.0045,
+          "al": 0.0045,
+          "po": 0.0045,
+          "to": 0.0015,
+          "se": 0.0015,
+          "lsh": 0.0015,
+          "te": 0.0015,
+          "so": 0.0015,
+          "da": 0.0015,
+          "rch": 0.0015,
+          "pch": 0.0015
+        }
+      },
+      "eey": {
+        "concentration": 0.23739837398373984,
+        "entropy": 2.968450250370386,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 20,
+        "total_tokens": 615,
+        "prefix_fracs": {
+          "ch": 0.2374,
+          "ok": 0.2016,
+          "sh": 0.1967,
+          "ot": 0.1512,
+          "lk": 0.065,
+          "yk": 0.0455,
+          "lch": 0.0228,
+          "qo": 0.0163,
+          "lsh": 0.013,
+          "ke": 0.0114,
+          "dch": 0.0098,
+          "fch": 0.0065,
+          "rch": 0.0049,
+          "te": 0.0049,
+          "tch": 0.0033,
+          "kch": 0.0033,
+          "NONE": 0.0016,
+          "ol": 0.0016,
+          "pch": 0.0016,
+          "al": 0.0016
+        }
+      },
+      "dy": {
+        "concentration": 0.2255892255892256,
+        "entropy": 3.5210740861239316,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 27,
+        "total_tokens": 594,
+        "prefix_fracs": {
+          "ch": 0.2256,
+          "NONE": 0.1902,
+          "te": 0.1263,
+          "sh": 0.0943,
+          "ke": 0.0791,
+          "tch": 0.0438,
+          "kch": 0.0354,
+          "ol": 0.0337,
+          "pch": 0.0303,
+          "lch": 0.0303,
+          "qo": 0.0202,
+          "to": 0.0168,
+          "al": 0.0118,
+          "dch": 0.0118,
+          "fch": 0.0101,
+          "do": 0.0067,
+          "sch": 0.0067,
+          "ko": 0.0051,
+          "po": 0.0034,
+          "de": 0.0034,
+          "lsh": 0.0034,
+          "da": 0.0034,
+          "or": 0.0017,
+          "yk": 0.0017,
+          "ar": 0.0017,
+          "ot": 0.0017,
+          "ok": 0.0017
+        }
+      },
+      "t": {
+        "concentration": 0.872822299651568,
+        "entropy": 0.8380189467676815,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 8,
+        "total_tokens": 574,
+        "prefix_fracs": {
+          "qo": 0.8728,
+          "ch": 0.0488,
+          "ol": 0.0296,
+          "NONE": 0.0209,
+          "sh": 0.0174,
+          "do": 0.0035,
+          "to": 0.0035,
+          "so": 0.0035
+        }
+      },
+      "iin": {
+        "concentration": 0.5857142857142857,
+        "entropy": 1.8350201196375093,
+        "category": "promiscuous",
+        "dominant_prefix": "da",
+        "n_prefixes": 11,
+        "total_tokens": 560,
+        "prefix_fracs": {
+          "da": 0.5857,
+          "sa": 0.1821,
+          "ta": 0.1036,
+          "ka": 0.0875,
+          "so": 0.0161,
+          "do": 0.0071,
+          "po": 0.0054,
+          "qo": 0.0054,
+          "ok": 0.0036,
+          "ar": 0.0018,
+          "to": 0.0018
+        }
+      },
+      "al": {
+        "concentration": 0.3576923076923077,
+        "entropy": 2.6213977608559267,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 16,
+        "total_tokens": 520,
+        "prefix_fracs": {
+          "NONE": 0.3577,
+          "ot": 0.2231,
+          "ok": 0.2096,
+          "ch": 0.0635,
+          "ar": 0.0269,
+          "sh": 0.025,
+          "yk": 0.0212,
+          "or": 0.0154,
+          "lk": 0.0135,
+          "ol": 0.0115,
+          "lch": 0.0096,
+          "pch": 0.0058,
+          "al": 0.0058,
+          "qo": 0.0058,
+          "tch": 0.0038,
+          "fch": 0.0019
+        }
+      },
+      "y": {
+        "concentration": 0.18340611353711792,
+        "entropy": 3.725947172513394,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 27,
+        "total_tokens": 458,
+        "prefix_fracs": {
+          "NONE": 0.1834,
+          "ot": 0.1419,
+          "ol": 0.1179,
+          "ok": 0.1114,
+          "sh": 0.0808,
+          "ch": 0.0808,
+          "al": 0.0437,
+          "ar": 0.0437,
+          "lk": 0.0371,
+          "or": 0.0262,
+          "te": 0.0218,
+          "tch": 0.0175,
+          "lch": 0.0175,
+          "yk": 0.0153,
+          "ke": 0.0153,
+          "qo": 0.0087,
+          "kch": 0.0087,
+          "rch": 0.0044,
+          "dch": 0.0044,
+          "fch": 0.0044,
+          "sch": 0.0022,
+          "se": 0.0022,
+          "pch": 0.0022,
+          "da": 0.0022,
+          "so": 0.0022,
+          "to": 0.0022,
+          "lsh": 0.0022
+        }
+      },
+      "or": {
+        "concentration": 0.573394495412844,
+        "entropy": 2.4634725942051037,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 22,
+        "total_tokens": 436,
+        "prefix_fracs": {
+          "NONE": 0.5734,
+          "ch": 0.0872,
+          "sh": 0.078,
+          "ol": 0.0688,
+          "ot": 0.0528,
+          "pch": 0.0206,
+          "ok": 0.0183,
+          "ar": 0.0161,
+          "lch": 0.0115,
+          "tch": 0.0115,
+          "or": 0.0115,
+          "lk": 0.0092,
+          "al": 0.0092,
+          "fch": 0.0069,
+          "yk": 0.0046,
+          "qo": 0.0046,
+          "ke": 0.0046,
+          "se": 0.0023,
+          "dch": 0.0023,
+          "lsh": 0.0023,
+          "te": 0.0023,
+          "kch": 0.0023
+        }
+      },
+      "ke": {
+        "concentration": 0.8456057007125891,
+        "entropy": 0.791540123194334,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 6,
+        "total_tokens": 421,
+        "prefix_fracs": {
+          "qo": 0.8456,
+          "ol": 0.1235,
+          "al": 0.0119,
+          "ch": 0.0071,
+          "so": 0.0071,
+          "sh": 0.0048
+        }
+      },
+      "ain": {
+        "concentration": 0.3269689737470167,
+        "entropy": 2.702096767659442,
+        "category": "promiscuous",
+        "dominant_prefix": "ok",
+        "n_prefixes": 14,
+        "total_tokens": 419,
+        "prefix_fracs": {
+          "ok": 0.327,
+          "ot": 0.2196,
+          "NONE": 0.1885,
+          "lk": 0.0835,
+          "or": 0.0621,
+          "ol": 0.0334,
+          "yk": 0.0239,
+          "ch": 0.0215,
+          "qo": 0.0143,
+          "sh": 0.0095,
+          "al": 0.0072,
+          "ar": 0.0048,
+          "so": 0.0024,
+          "lch": 0.0024
+        }
+      },
+      "ed": {
+        "concentration": 0.38461538461538464,
+        "entropy": 2.93023432573825,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 19,
+        "total_tokens": 377,
+        "prefix_fracs": {
+          "ch": 0.3846,
+          "sh": 0.2149,
+          "ot": 0.0716,
+          "pch": 0.069,
+          "ok": 0.0637,
+          "lch": 0.0345,
+          "tch": 0.0292,
+          "te": 0.0265,
+          "ke": 0.0239,
+          "lk": 0.0186,
+          "dch": 0.0159,
+          "qo": 0.0106,
+          "lsh": 0.008,
+          "yk": 0.008,
+          "rch": 0.0053,
+          "kch": 0.0053,
+          "fch": 0.0053,
+          "sch": 0.0027,
+          "de": 0.0027
+        }
+      },
+      "o": {
+        "concentration": 0.2872340425531915,
+        "entropy": 3.22275600165463,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 21,
+        "total_tokens": 376,
+        "prefix_fracs": {
+          "NONE": 0.2872,
+          "ch": 0.2181,
+          "sh": 0.1489,
+          "ot": 0.0505,
+          "ke": 0.0479,
+          "te": 0.0399,
+          "ar": 0.0346,
+          "ok": 0.0293,
+          "al": 0.0239,
+          "ol": 0.0213,
+          "tch": 0.016,
+          "lch": 0.016,
+          "or": 0.016,
+          "pch": 0.0133,
+          "kch": 0.0106,
+          "dch": 0.008,
+          "lk": 0.008,
+          "se": 0.0027,
+          "lsh": 0.0027,
+          "qo": 0.0027,
+          "rch": 0.0027
+        }
+      },
+      "ch": {
+        "concentration": 0.2564102564102564,
+        "entropy": 2.9029710299480236,
+        "category": "promiscuous",
+        "dominant_prefix": "ol",
+        "n_prefixes": 17,
+        "total_tokens": 351,
+        "prefix_fracs": {
+          "ol": 0.2564,
+          "ot": 0.2422,
+          "ok": 0.2023,
+          "lk": 0.094,
+          "al": 0.0427,
+          "yk": 0.0399,
+          "qo": 0.0313,
+          "ke": 0.0228,
+          "or": 0.0228,
+          "po": 0.0114,
+          "sh": 0.0085,
+          "te": 0.0057,
+          "NONE": 0.0057,
+          "ch": 0.0057,
+          "to": 0.0028,
+          "ar": 0.0028,
+          "se": 0.0028
+        }
+      },
+      "eo": {
+        "concentration": 0.3764705882352941,
+        "entropy": 2.8988091790200956,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 17,
+        "total_tokens": 340,
+        "prefix_fracs": {
+          "ch": 0.3765,
+          "sh": 0.2412,
+          "ot": 0.0676,
+          "ok": 0.0559,
+          "te": 0.0412,
+          "pch": 0.0382,
+          "ke": 0.0353,
+          "tch": 0.0265,
+          "kch": 0.0265,
+          "yk": 0.0176,
+          "lk": 0.0176,
+          "dch": 0.0176,
+          "lch": 0.0176,
+          "lsh": 0.0118,
+          "sch": 0.0029,
+          "rch": 0.0029,
+          "de": 0.0029
+        }
+      },
+      "d": {
+        "concentration": 0.2916666666666667,
+        "entropy": 3.4657211578298317,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 25,
+        "total_tokens": 312,
+        "prefix_fracs": {
+          "ch": 0.2917,
+          "qo": 0.1667,
+          "sh": 0.1186,
+          "NONE": 0.0769,
+          "pch": 0.0609,
+          "te": 0.0481,
+          "ol": 0.0353,
+          "to": 0.0256,
+          "po": 0.0224,
+          "lch": 0.0224,
+          "ke": 0.0192,
+          "tch": 0.0192,
+          "al": 0.016,
+          "dch": 0.0128,
+          "ko": 0.0096,
+          "so": 0.0096,
+          "kch": 0.0096,
+          "lsh": 0.0096,
+          "do": 0.0064,
+          "or": 0.0032,
+          "ar": 0.0032,
+          "fch": 0.0032,
+          "ot": 0.0032,
+          "se": 0.0032,
+          "da": 0.0032
+        }
+      },
+      "eol": {
+        "concentration": 0.36298932384341637,
+        "entropy": 2.6731792438663535,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 16,
+        "total_tokens": 281,
+        "prefix_fracs": {
+          "ch": 0.363,
+          "sh": 0.306,
+          "ot": 0.0747,
+          "ok": 0.0712,
+          "lch": 0.0285,
+          "dch": 0.0249,
+          "pch": 0.0249,
+          "ke": 0.0214,
+          "lk": 0.0214,
+          "te": 0.0178,
+          "tch": 0.0142,
+          "yk": 0.0107,
+          "fch": 0.0071,
+          "lsh": 0.0071,
+          "de": 0.0036,
+          "qo": 0.0036
+        }
+      },
+      "in": {
+        "concentration": 0.4431818181818182,
+        "entropy": 2.0174257253915364,
+        "category": "promiscuous",
+        "dominant_prefix": "da",
+        "n_prefixes": 8,
+        "total_tokens": 264,
+        "prefix_fracs": {
+          "da": 0.4432,
+          "sa": 0.2311,
+          "ka": 0.1856,
+          "ta": 0.1098,
+          "so": 0.0114,
+          "do": 0.0114,
+          "qo": 0.0038,
+          "NONE": 0.0038
+        }
+      },
+      "ck": {
+        "concentration": 0.6224489795918368,
+        "entropy": 1.4801811292962808,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 9,
+        "total_tokens": 196,
+        "prefix_fracs": {
+          "ch": 0.6224,
+          "sh": 0.2755,
+          "NONE": 0.0561,
+          "qo": 0.0204,
+          "da": 0.0051,
+          "lsh": 0.0051,
+          "sch": 0.0051,
+          "to": 0.0051,
+          "lch": 0.0051
+        }
+      },
+      "ai": {
+        "concentration": 0.5402298850574713,
+        "entropy": 2.2282120836580495,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 12,
+        "total_tokens": 174,
+        "prefix_fracs": {
+          "NONE": 0.5402,
+          "ok": 0.1437,
+          "ot": 0.1322,
+          "or": 0.0575,
+          "yk": 0.0345,
+          "lk": 0.0287,
+          "ar": 0.0172,
+          "al": 0.0115,
+          "ol": 0.0115,
+          "qo": 0.0115,
+          "ch": 0.0057,
+          "sh": 0.0057
+        }
+      },
+      "od": {
+        "concentration": 0.47398843930635837,
+        "entropy": 2.5130934308209483,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 16,
+        "total_tokens": 173,
+        "prefix_fracs": {
+          "NONE": 0.474,
+          "ch": 0.1965,
+          "sh": 0.1214,
+          "ot": 0.0347,
+          "pch": 0.0347,
+          "ar": 0.0289,
+          "al": 0.0231,
+          "ke": 0.0173,
+          "tch": 0.0173,
+          "te": 0.0173,
+          "lk": 0.0058,
+          "fch": 0.0058,
+          "qo": 0.0058,
+          "or": 0.0058,
+          "lch": 0.0058,
+          "ok": 0.0058
+        }
+      },
+      "am": {
+        "concentration": 0.3430232558139535,
+        "entropy": 2.9334546905272245,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 15,
+        "total_tokens": 172,
+        "prefix_fracs": {
+          "NONE": 0.343,
+          "ot": 0.2151,
+          "ok": 0.1221,
+          "ar": 0.064,
+          "or": 0.0465,
+          "lk": 0.0407,
+          "ch": 0.0349,
+          "ol": 0.0349,
+          "sh": 0.0291,
+          "al": 0.0291,
+          "yk": 0.0174,
+          "fch": 0.0058,
+          "ke": 0.0058,
+          "te": 0.0058,
+          "lch": 0.0058
+        }
+      },
+      "ek": {
+        "concentration": 0.5542168674698795,
+        "entropy": 1.4943721050325083,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 8,
+        "total_tokens": 166,
+        "prefix_fracs": {
+          "ch": 0.5542,
+          "sh": 0.3614,
+          "qo": 0.0301,
+          "NONE": 0.0241,
+          "rch": 0.012,
+          "fch": 0.006,
+          "kch": 0.006,
+          "lsh": 0.006
+        }
+      },
+      "kch": {
+        "concentration": 0.831081081081081,
+        "entropy": 0.9761246960961506,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 8,
+        "total_tokens": 148,
+        "prefix_fracs": {
+          "qo": 0.8311,
+          "ol": 0.1014,
+          "sh": 0.027,
+          "al": 0.0135,
+          "so": 0.0068,
+          "ot": 0.0068,
+          "or": 0.0068,
+          "ch": 0.0068
+        }
+      },
+      "ee": {
+        "concentration": 0.23972602739726026,
+        "entropy": 3.4274612978451025,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 22,
+        "total_tokens": 146,
+        "prefix_fracs": {
+          "ch": 0.2397,
+          "ok": 0.1986,
+          "sh": 0.137,
+          "ot": 0.0753,
+          "NONE": 0.0548,
+          "yk": 0.0548,
+          "lk": 0.0548,
+          "qo": 0.0479,
+          "lch": 0.0205,
+          "ol": 0.0137,
+          "lsh": 0.0137,
+          "dch": 0.0137,
+          "kch": 0.0137,
+          "ar": 0.0068,
+          "to": 0.0068,
+          "pch": 0.0068,
+          "so": 0.0068,
+          "or": 0.0068,
+          "do": 0.0068,
+          "fch": 0.0068,
+          "te": 0.0068,
+          "rch": 0.0068
+        }
+      },
+      "s": {
+        "concentration": 0.4507042253521127,
+        "entropy": 3.156818928189362,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 23,
+        "total_tokens": 142,
+        "prefix_fracs": {
+          "NONE": 0.4507,
+          "ol": 0.1056,
+          "ch": 0.0775,
+          "da": 0.0423,
+          "sh": 0.0352,
+          "ka": 0.0352,
+          "qo": 0.0352,
+          "al": 0.0282,
+          "lch": 0.0282,
+          "ok": 0.0282,
+          "sa": 0.0141,
+          "fch": 0.0141,
+          "kch": 0.0141,
+          "ta": 0.0141,
+          "to": 0.0141,
+          "rch": 0.0141,
+          "do": 0.007,
+          "yk": 0.007,
+          "or": 0.007,
+          "sch": 0.007,
+          "te": 0.007,
+          "tch": 0.007,
+          "so": 0.007
+        }
+      },
+      "i": {
+        "concentration": 0.45985401459854014,
+        "entropy": 2.2854365634030036,
+        "category": "promiscuous",
+        "dominant_prefix": "da",
+        "n_prefixes": 11,
+        "total_tokens": 137,
+        "prefix_fracs": {
+          "da": 0.4599,
+          "sa": 0.1898,
+          "ka": 0.1314,
+          "ta": 0.1241,
+          "qo": 0.0292,
+          "so": 0.0292,
+          "po": 0.0073,
+          "NONE": 0.0073,
+          "ot": 0.0073,
+          "or": 0.0073,
+          "do": 0.0073
+        }
+      },
+      "eeo": {
+        "concentration": 0.3076923076923077,
+        "entropy": 3.056814890018419,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 16,
+        "total_tokens": 130,
+        "prefix_fracs": {
+          "ch": 0.3077,
+          "ok": 0.1692,
+          "ot": 0.1154,
+          "sh": 0.1,
+          "lk": 0.0923,
+          "yk": 0.0846,
+          "qo": 0.0308,
+          "dch": 0.0231,
+          "pch": 0.0154,
+          "ke": 0.0154,
+          "po": 0.0077,
+          "te": 0.0077,
+          "fch": 0.0077,
+          "kch": 0.0077,
+          "NONE": 0.0077,
+          "rch": 0.0077
+        }
+      },
+      "ckh": {
+        "concentration": 0.5354330708661418,
+        "entropy": 1.8203096462992452,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 6,
+        "total_tokens": 127,
+        "prefix_fracs": {
+          "ch": 0.5354,
+          "sh": 0.1654,
+          "NONE": 0.1496,
+          "qo": 0.1339,
+          "so": 0.0079,
+          "dch": 0.0079
+        }
+      },
+      "sh": {
+        "concentration": 0.44954128440366975,
+        "entropy": 2.525108602150962,
+        "category": "promiscuous",
+        "dominant_prefix": "ol",
+        "n_prefixes": 13,
+        "total_tokens": 109,
+        "prefix_fracs": {
+          "ol": 0.4495,
+          "ot": 0.2018,
+          "ok": 0.1193,
+          "lk": 0.0642,
+          "NONE": 0.0367,
+          "al": 0.0275,
+          "yk": 0.0275,
+          "ke": 0.0183,
+          "ar": 0.0183,
+          "pe": 0.0092,
+          "de": 0.0092,
+          "qo": 0.0092,
+          "ko": 0.0092
+        }
+      },
+      "opch": {
+        "concentration": 0.9626168224299065,
+        "entropy": 0.26049089479334353,
+        "category": "locked",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 3,
+        "total_tokens": 107,
+        "prefix_fracs": {
+          "NONE": 0.9626,
+          "ch": 0.028,
+          "sh": 0.0093
+        }
+      },
+      "ct": {
+        "concentration": 0.6483516483516484,
+        "entropy": 1.350790545868839,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 8,
+        "total_tokens": 91,
+        "prefix_fracs": {
+          "ch": 0.6484,
+          "sh": 0.2857,
+          "to": 0.011,
+          "lsh": 0.011,
+          "sch": 0.011,
+          "tch": 0.011,
+          "lch": 0.011,
+          "qo": 0.011
+        }
+      },
+      "eck": {
+        "concentration": 0.5113636363636364,
+        "entropy": 1.3081870465025804,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 4,
+        "total_tokens": 88,
+        "prefix_fracs": {
+          "ch": 0.5114,
+          "sh": 0.4318,
+          "lch": 0.0341,
+          "lsh": 0.0227
+        }
+      },
+      "te": {
+        "concentration": 0.9655172413793104,
+        "entropy": 0.21639693245126462,
+        "category": "locked",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 87,
+        "prefix_fracs": {
+          "qo": 0.9655,
+          "ol": 0.0345
+        }
+      },
+      "eed": {
+        "concentration": 0.17857142857142858,
+        "entropy": 3.2396413740656436,
+        "category": "promiscuous",
+        "dominant_prefix": "ot",
+        "n_prefixes": 15,
+        "total_tokens": 84,
+        "prefix_fracs": {
+          "ot": 0.1786,
+          "sh": 0.1667,
+          "ch": 0.1667,
+          "ok": 0.1548,
+          "lk": 0.0952,
+          "yk": 0.0714,
+          "qo": 0.0476,
+          "ol": 0.0238,
+          "ke": 0.0238,
+          "do": 0.0119,
+          "lch": 0.0119,
+          "lsh": 0.0119,
+          "te": 0.0119,
+          "NONE": 0.0119,
+          "pch": 0.0119
+        }
+      },
+      "eod": {
+        "concentration": 0.2875,
+        "entropy": 2.992894583185486,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 14,
+        "total_tokens": 80,
+        "prefix_fracs": {
+          "ch": 0.2875,
+          "sh": 0.2875,
+          "ot": 0.075,
+          "pch": 0.0625,
+          "tch": 0.0625,
+          "te": 0.0375,
+          "ke": 0.0375,
+          "yk": 0.025,
+          "lk": 0.025,
+          "lch": 0.025,
+          "kch": 0.025,
+          "dch": 0.025,
+          "fch": 0.0125,
+          "ok": 0.0125
+        }
+      },
+      "pch": {
+        "concentration": 0.8481012658227848,
+        "entropy": 0.850181409984224,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 5,
+        "total_tokens": 79,
+        "prefix_fracs": {
+          "qo": 0.8481,
+          "ol": 0.0886,
+          "ch": 0.038,
+          "lch": 0.0127,
+          "al": 0.0127
+        }
+      },
+      "m": {
+        "concentration": 0.5921052631578947,
+        "entropy": 1.8257190568903612,
+        "category": "promiscuous",
+        "dominant_prefix": "da",
+        "n_prefixes": 7,
+        "total_tokens": 76,
+        "prefix_fracs": {
+          "da": 0.5921,
+          "ta": 0.1842,
+          "ka": 0.0921,
+          "NONE": 0.0526,
+          "sa": 0.0526,
+          "ko": 0.0132,
+          "po": 0.0132
+        }
+      },
+      "lch": {
+        "concentration": 0.33783783783783783,
+        "entropy": 2.78194714065539,
+        "category": "promiscuous",
+        "dominant_prefix": "qo",
+        "n_prefixes": 12,
+        "total_tokens": 74,
+        "prefix_fracs": {
+          "qo": 0.3378,
+          "so": 0.2027,
+          "po": 0.1622,
+          "da": 0.0946,
+          "sa": 0.0405,
+          "do": 0.0405,
+          "ko": 0.0405,
+          "ka": 0.027,
+          "or": 0.0135,
+          "to": 0.0135,
+          "NONE": 0.0135,
+          "lk": 0.0135
+        }
+      },
+      "ok": {
+        "concentration": 0.6142857142857143,
+        "entropy": 1.7566505604541998,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 9,
+        "total_tokens": 70,
+        "prefix_fracs": {
+          "ch": 0.6143,
+          "sh": 0.2286,
+          "ol": 0.0429,
+          "NONE": 0.0286,
+          "tch": 0.0286,
+          "dch": 0.0143,
+          "fch": 0.0143,
+          "ot": 0.0143,
+          "te": 0.0143
+        }
+      },
+      "tch": {
+        "concentration": 0.9076923076923077,
+        "entropy": 0.5596610451461678,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 4,
+        "total_tokens": 65,
+        "prefix_fracs": {
+          "qo": 0.9077,
+          "ol": 0.0615,
+          "pch": 0.0154,
+          "ch": 0.0154
+        }
+      },
+      "a": {
+        "concentration": 0.36507936507936506,
+        "entropy": 2.2974445113019244,
+        "category": "bimodal",
+        "dominant_prefix": "ok",
+        "n_prefixes": 8,
+        "total_tokens": 63,
+        "prefix_fracs": {
+          "ok": 0.3651,
+          "ot": 0.2857,
+          "NONE": 0.1587,
+          "ch": 0.0952,
+          "or": 0.0317,
+          "yk": 0.0317,
+          "ol": 0.0159,
+          "lk": 0.0159
+        }
+      },
+      "et": {
+        "concentration": 0.603448275862069,
+        "entropy": 1.6986661261043854,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 7,
+        "total_tokens": 58,
+        "prefix_fracs": {
+          "ch": 0.6034,
+          "sh": 0.2241,
+          "NONE": 0.0862,
+          "lsh": 0.0345,
+          "sch": 0.0172,
+          "qo": 0.0172,
+          "kch": 0.0172
+        }
+      },
+      "lk": {
+        "concentration": 0.3103448275862069,
+        "entropy": 2.6885059958322515,
+        "category": "bimodal",
+        "dominant_prefix": "qo",
+        "n_prefixes": 10,
+        "total_tokens": 58,
+        "prefix_fracs": {
+          "qo": 0.3103,
+          "so": 0.2759,
+          "da": 0.1207,
+          "to": 0.0862,
+          "ko": 0.0517,
+          "po": 0.0517,
+          "do": 0.0345,
+          "ka": 0.0345,
+          "NONE": 0.0172,
+          "ta": 0.0172
+        }
+      },
+      "eek": {
+        "concentration": 0.5,
+        "entropy": 1.5606382768220946,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 7,
+        "total_tokens": 54,
+        "prefix_fracs": {
+          "ch": 0.5,
+          "sh": 0.4074,
+          "tch": 0.0185,
+          "kch": 0.0185,
+          "dch": 0.0185,
+          "NONE": 0.0185,
+          "qo": 0.0185
+        }
+      },
+      "c": {
+        "concentration": 0.25,
+        "entropy": 3.0222814136813665,
+        "category": "promiscuous",
+        "dominant_prefix": "ok",
+        "n_prefixes": 13,
+        "total_tokens": 52,
+        "prefix_fracs": {
+          "ok": 0.25,
+          "ot": 0.2308,
+          "ol": 0.1731,
+          "NONE": 0.0962,
+          "te": 0.0385,
+          "yk": 0.0385,
+          "ke": 0.0385,
+          "sh": 0.0385,
+          "qo": 0.0192,
+          "ch": 0.0192,
+          "al": 0.0192,
+          "lk": 0.0192,
+          "rch": 0.0192
+        }
+      },
+      "ly": {
+        "concentration": 0.3673469387755102,
+        "entropy": 2.5690065891489704,
+        "category": "promiscuous",
+        "dominant_prefix": "da",
+        "n_prefixes": 10,
+        "total_tokens": 49,
+        "prefix_fracs": {
+          "da": 0.3673,
+          "NONE": 0.2449,
+          "qo": 0.1429,
+          "ta": 0.0612,
+          "sa": 0.0612,
+          "po": 0.0408,
+          "ko": 0.0204,
+          "ka": 0.0204,
+          "so": 0.0204,
+          "al": 0.0204
+        }
+      },
+      "cth": {
+        "concentration": 0.6041666666666666,
+        "entropy": 1.5555713783944811,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 5,
+        "total_tokens": 48,
+        "prefix_fracs": {
+          "ch": 0.6042,
+          "sh": 0.1875,
+          "qo": 0.1667,
+          "to": 0.0208,
+          "de": 0.0208
+        }
+      },
+      "h": {
+        "concentration": 0.9375,
+        "entropy": 0.43635022291208614,
+        "category": "dominant",
+        "dominant_prefix": "ct",
+        "n_prefixes": 4,
+        "total_tokens": 48,
+        "prefix_fracs": {
+          "ct": 0.9375,
+          "NONE": 0.0208,
+          "to": 0.0208,
+          "ok": 0.0208
+        }
+      },
+      "ect": {
+        "concentration": 0.5957446808510638,
+        "entropy": 0.9733854352299557,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 2,
+        "total_tokens": 47,
+        "prefix_fracs": {
+          "ch": 0.5957,
+          "sh": 0.4043
+        }
+      },
+      "p": {
+        "concentration": 0.5957446808510638,
+        "entropy": 1.4968940824553583,
+        "category": "bimodal",
+        "dominant_prefix": "qo",
+        "n_prefixes": 5,
+        "total_tokens": 47,
+        "prefix_fracs": {
+          "qo": 0.5957,
+          "NONE": 0.2766,
+          "ch": 0.0851,
+          "ta": 0.0213,
+          "to": 0.0213
+        }
+      },
+      "eeol": {
+        "concentration": 0.2608695652173913,
+        "entropy": 3.085758358504456,
+        "category": "promiscuous",
+        "dominant_prefix": "sh",
+        "n_prefixes": 12,
+        "total_tokens": 46,
+        "prefix_fracs": {
+          "sh": 0.2609,
+          "ch": 0.1739,
+          "yk": 0.1304,
+          "ok": 0.1087,
+          "ot": 0.087,
+          "lk": 0.087,
+          "NONE": 0.0435,
+          "ol": 0.0217,
+          "qo": 0.0217,
+          "lch": 0.0217,
+          "fch": 0.0217,
+          "ke": 0.0217
+        }
+      },
+      "ot": {
+        "concentration": 0.7555555555555555,
+        "entropy": 1.3201058940035637,
+        "category": "dominant",
+        "dominant_prefix": "ch",
+        "n_prefixes": 6,
+        "total_tokens": 45,
+        "prefix_fracs": {
+          "ch": 0.7556,
+          "NONE": 0.0889,
+          "sh": 0.0667,
+          "ar": 0.0444,
+          "te": 0.0222,
+          "ot": 0.0222
+        }
+      },
+      "eok": {
+        "concentration": 0.5897435897435898,
+        "entropy": 1.5145951676323721,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 6,
+        "total_tokens": 39,
+        "prefix_fracs": {
+          "ch": 0.5897,
+          "sh": 0.3077,
+          "lsh": 0.0256,
+          "po": 0.0256,
+          "ok": 0.0256,
+          "pch": 0.0256
+        }
+      },
+      "keeo": {
+        "concentration": 0.7368421052631579,
+        "entropy": 0.8314743880097293,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 38,
+        "prefix_fracs": {
+          "qo": 0.7368,
+          "ol": 0.2632
+        }
+      },
+      "cph": {
+        "concentration": 0.5,
+        "entropy": 1.7788638893696596,
+        "category": "bimodal",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 6,
+        "total_tokens": 36,
+        "prefix_fracs": {
+          "NONE": 0.5,
+          "ch": 0.3333,
+          "sh": 0.0556,
+          "qo": 0.0556,
+          "to": 0.0278,
+          "lch": 0.0278
+        }
+      },
+      "op": {
+        "concentration": 0.9722222222222222,
+        "entropy": 0.18312206830137276,
+        "category": "locked",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 2,
+        "total_tokens": 36,
+        "prefix_fracs": {
+          "NONE": 0.9722,
+          "ch": 0.0278
+        }
+      },
+      "kee": {
+        "concentration": 0.6470588235294118,
+        "entropy": 1.0827203878670804,
+        "category": "bimodal",
+        "dominant_prefix": "qo",
+        "n_prefixes": 3,
+        "total_tokens": 34,
+        "prefix_fracs": {
+          "qo": 0.6471,
+          "ol": 0.3235,
+          "al": 0.0294
+        }
+      },
+      "kc": {
+        "concentration": 0.8787878787878788,
+        "entropy": 0.6311718053929062,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 3,
+        "total_tokens": 33,
+        "prefix_fracs": {
+          "qo": 0.8788,
+          "ol": 0.0909,
+          "sh": 0.0303
+        }
+      },
+      "lo": {
+        "concentration": 0.8181818181818182,
+        "entropy": 1.0934255569822822,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 6,
+        "total_tokens": 33,
+        "prefix_fracs": {
+          "NONE": 0.8182,
+          "da": 0.0606,
+          "ta": 0.0303,
+          "to": 0.0303,
+          "ka": 0.0303,
+          "sa": 0.0303
+        }
+      },
+      "ry": {
+        "concentration": 0.3939393939393939,
+        "entropy": 2.419089836061029,
+        "category": "bimodal",
+        "dominant_prefix": "da",
+        "n_prefixes": 9,
+        "total_tokens": 33,
+        "prefix_fracs": {
+          "da": 0.3939,
+          "NONE": 0.2727,
+          "ka": 0.1212,
+          "ta": 0.0606,
+          "to": 0.0303,
+          "sa": 0.0303,
+          "de": 0.0303,
+          "ch": 0.0303,
+          "so": 0.0303
+        }
+      },
+      "aii": {
+        "concentration": 0.71875,
+        "entropy": 1.561189844084022,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 7,
+        "total_tokens": 32,
+        "prefix_fracs": {
+          "NONE": 0.7188,
+          "ol": 0.0625,
+          "yk": 0.0625,
+          "lk": 0.0625,
+          "lsh": 0.0312,
+          "ok": 0.0312,
+          "ot": 0.0312
+        }
+      },
+      "oiin": {
+        "concentration": 0.59375,
+        "entropy": 2.1027930388928713,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 9,
+        "total_tokens": 32,
+        "prefix_fracs": {
+          "NONE": 0.5938,
+          "ol": 0.125,
+          "sh": 0.0625,
+          "ar": 0.0625,
+          "te": 0.0312,
+          "yk": 0.0312,
+          "ok": 0.0312,
+          "al": 0.0312,
+          "ot": 0.0312
+        }
+      },
+      "keed": {
+        "concentration": 0.9,
+        "entropy": 0.4689955935892812,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 30,
+        "prefix_fracs": {
+          "qo": 0.9,
+          "ol": 0.1
+        }
+      },
+      "eckh": {
+        "concentration": 0.4642857142857143,
+        "entropy": 1.658802631313159,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 5,
+        "total_tokens": 28,
+        "prefix_fracs": {
+          "ch": 0.4643,
+          "sh": 0.3929,
+          "lch": 0.0714,
+          "dch": 0.0357,
+          "lsh": 0.0357
+        }
+      },
+      "olk": {
+        "concentration": 0.5185185185185185,
+        "entropy": 2.382374301757175,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 9,
+        "total_tokens": 27,
+        "prefix_fracs": {
+          "ch": 0.5185,
+          "pch": 0.1111,
+          "sh": 0.0741,
+          "qo": 0.0741,
+          "ar": 0.0741,
+          "or": 0.037,
+          "tch": 0.037,
+          "ka": 0.037,
+          "lch": 0.037
+        }
+      },
+      "keo": {
+        "concentration": 0.8461538461538461,
+        "entropy": 0.7441942138263227,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 3,
+        "total_tokens": 26,
+        "prefix_fracs": {
+          "qo": 0.8462,
+          "ol": 0.1154,
+          "sh": 0.0385
+        }
+      },
+      "ksh": {
+        "concentration": 0.8846153846153846,
+        "entropy": 0.5159469300074474,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 26,
+        "prefix_fracs": {
+          "qo": 0.8846,
+          "ol": 0.1154
+        }
+      },
+      "ka": {
+        "concentration": 0.76,
+        "entropy": 1.2554312795575997,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 5,
+        "total_tokens": 25,
+        "prefix_fracs": {
+          "qo": 0.76,
+          "ol": 0.08,
+          "ch": 0.08,
+          "sh": 0.04,
+          "to": 0.04
+        }
+      },
+      "om": {
+        "concentration": 0.44,
+        "entropy": 2.1511197773146975,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 6,
+        "total_tokens": 25,
+        "prefix_fracs": {
+          "NONE": 0.44,
+          "al": 0.24,
+          "ol": 0.12,
+          "ok": 0.08,
+          "or": 0.08,
+          "ot": 0.04
+        }
+      },
+      "kai": {
+        "concentration": 0.625,
+        "entropy": 1.4135819199522097,
+        "category": "bimodal",
+        "dominant_prefix": "qo",
+        "n_prefixes": 4,
+        "total_tokens": 24,
+        "prefix_fracs": {
+          "qo": 0.625,
+          "ol": 0.25,
+          "sh": 0.0833,
+          "al": 0.0417
+        }
+      },
+      "lsh": {
+        "concentration": 0.25,
+        "entropy": 2.756866543182522,
+        "category": "promiscuous",
+        "dominant_prefix": "qo",
+        "n_prefixes": 8,
+        "total_tokens": 24,
+        "prefix_fracs": {
+          "qo": 0.25,
+          "da": 0.2083,
+          "so": 0.1667,
+          "po": 0.125,
+          "to": 0.0833,
+          "do": 0.0833,
+          "NONE": 0.0417,
+          "ta": 0.0417
+        }
+      },
+      "dai": {
+        "concentration": 0.21739130434782608,
+        "entropy": 3.029452044030914,
+        "category": "promiscuous",
+        "dominant_prefix": "pch",
+        "n_prefixes": 9,
+        "total_tokens": 23,
+        "prefix_fracs": {
+          "pch": 0.2174,
+          "qo": 0.1739,
+          "te": 0.1304,
+          "po": 0.087,
+          "ke": 0.087,
+          "so": 0.087,
+          "sh": 0.087,
+          "ch": 0.087,
+          "yk": 0.0435
+        }
+      },
+      "fch": {
+        "concentration": 0.6956521739130435,
+        "entropy": 1.0666152167384504,
+        "category": "bimodal",
+        "dominant_prefix": "qo",
+        "n_prefixes": 3,
+        "total_tokens": 23,
+        "prefix_fracs": {
+          "qo": 0.6957,
+          "ol": 0.2609,
+          "ch": 0.0435
+        }
+      },
+      "ii": {
+        "concentration": 0.6086956521739131,
+        "entropy": 1.9123508077539728,
+        "category": "promiscuous",
+        "dominant_prefix": "da",
+        "n_prefixes": 7,
+        "total_tokens": 23,
+        "prefix_fracs": {
+          "da": 0.6087,
+          "sa": 0.1304,
+          "NONE": 0.087,
+          "do": 0.0435,
+          "so": 0.0435,
+          "ot": 0.0435,
+          "ka": 0.0435
+        }
+      },
+      "eet": {
+        "concentration": 0.5,
+        "entropy": 1.6388067184095578,
+        "category": "bimodal",
+        "dominant_prefix": "sh",
+        "n_prefixes": 5,
+        "total_tokens": 22,
+        "prefix_fracs": {
+          "sh": 0.5,
+          "ch": 0.3636,
+          "pch": 0.0455,
+          "lsh": 0.0455,
+          "rch": 0.0455
+        }
+      },
+      "chd": {
+        "concentration": 0.5714285714285714,
+        "entropy": 1.9268680175017443,
+        "category": "promiscuous",
+        "dominant_prefix": "ok",
+        "n_prefixes": 6,
+        "total_tokens": 21,
+        "prefix_fracs": {
+          "ok": 0.5714,
+          "ol": 0.1429,
+          "ot": 0.0952,
+          "al": 0.0952,
+          "yk": 0.0476,
+          "qo": 0.0476
+        }
+      },
+      "och": {
+        "concentration": 0.85,
+        "entropy": 0.8475846798245739,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 4,
+        "total_tokens": 20,
+        "prefix_fracs": {
+          "NONE": 0.85,
+          "sh": 0.05,
+          "ch": 0.05,
+          "ok": 0.05
+        }
+      },
+      "ir": {
+        "concentration": 0.5263157894736842,
+        "entropy": 1.57797720011724,
+        "category": "bimodal",
+        "dominant_prefix": "da",
+        "n_prefixes": 4,
+        "total_tokens": 19,
+        "prefix_fracs": {
+          "da": 0.5263,
+          "sa": 0.3158,
+          "ka": 0.1053,
+          "qo": 0.0526
+        }
+      },
+      "an": {
+        "concentration": 0.2222222222222222,
+        "entropy": 2.794653473544342,
+        "category": "promiscuous",
+        "dominant_prefix": "ot",
+        "n_prefixes": 8,
+        "total_tokens": 18,
+        "prefix_fracs": {
+          "ot": 0.2222,
+          "NONE": 0.2222,
+          "ok": 0.1667,
+          "yk": 0.1111,
+          "ch": 0.1111,
+          "ol": 0.0556,
+          "or": 0.0556,
+          "lk": 0.0556
+        }
+      },
+      "qo": {
+        "concentration": 0.9444444444444444,
+        "entropy": 0.3095434291503252,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 2,
+        "total_tokens": 18,
+        "prefix_fracs": {
+          "NONE": 0.9444,
+          "ol": 0.0556
+        }
+      },
+      "teo": {
+        "concentration": 0.8333333333333334,
+        "entropy": 0.8030717273241024,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 3,
+        "total_tokens": 18,
+        "prefix_fracs": {
+          "qo": 0.8333,
+          "ol": 0.1111,
+          "ch": 0.0556
+        }
+      },
+      "f": {
+        "concentration": 0.4117647058823529,
+        "entropy": 1.9903166968736787,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 5,
+        "total_tokens": 17,
+        "prefix_fracs": {
+          "NONE": 0.4118,
+          "qo": 0.2353,
+          "ol": 0.2353,
+          "ch": 0.0588,
+          "sh": 0.0588
+        }
+      },
+      "ofch": {
+        "concentration": 0.9411764705882353,
+        "entropy": 0.3227569588973982,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 2,
+        "total_tokens": 17,
+        "prefix_fracs": {
+          "NONE": 0.9412,
+          "ch": 0.0588
+        }
+      },
+      "eeod": {
+        "concentration": 0.3125,
+        "entropy": 2.3522170014624826,
+        "category": "bimodal",
+        "dominant_prefix": "sh",
+        "n_prefixes": 6,
+        "total_tokens": 16,
+        "prefix_fracs": {
+          "sh": 0.3125,
+          "ch": 0.25,
+          "yk": 0.1875,
+          "ot": 0.125,
+          "NONE": 0.0625,
+          "ok": 0.0625
+        }
+      },
+      "ep": {
+        "concentration": 0.875,
+        "entropy": 0.6685644431995964,
+        "category": "dominant",
+        "dominant_prefix": "ch",
+        "n_prefixes": 3,
+        "total_tokens": 16,
+        "prefix_fracs": {
+          "ch": 0.875,
+          "sh": 0.0625,
+          "NONE": 0.0625
+        }
+      },
+      "ko": {
+        "concentration": 0.8125,
+        "entropy": 0.8683927290103626,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 3,
+        "total_tokens": 16,
+        "prefix_fracs": {
+          "qo": 0.8125,
+          "NONE": 0.125,
+          "ol": 0.0625
+        }
+      },
+      "ockh": {
+        "concentration": 0.625,
+        "entropy": 1.2987949406953985,
+        "category": "bimodal",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 3,
+        "total_tokens": 16,
+        "prefix_fracs": {
+          "NONE": 0.625,
+          "ch": 0.25,
+          "sh": 0.125
+        }
+      },
+      "os": {
+        "concentration": 0.625,
+        "entropy": 1.6737949406953985,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 5,
+        "total_tokens": 16,
+        "prefix_fracs": {
+          "NONE": 0.625,
+          "sh": 0.125,
+          "ch": 0.125,
+          "fch": 0.0625,
+          "ar": 0.0625
+        }
+      },
+      "tc": {
+        "concentration": 0.75,
+        "entropy": 1.311278124459133,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 5,
+        "total_tokens": 16,
+        "prefix_fracs": {
+          "qo": 0.75,
+          "ol": 0.0625,
+          "ch": 0.0625,
+          "sh": 0.0625,
+          "ko": 0.0625
+        }
+      },
+      "che": {
+        "concentration": 0.4,
+        "entropy": 2.072905595320056,
+        "category": "bimodal",
+        "dominant_prefix": "ol",
+        "n_prefixes": 5,
+        "total_tokens": 15,
+        "prefix_fracs": {
+          "ol": 0.4,
+          "ot": 0.2667,
+          "yk": 0.1333,
+          "lk": 0.1333,
+          "al": 0.0667
+        }
+      },
+      "cheo": {
+        "concentration": 0.26666666666666666,
+        "entropy": 2.4225797618424916,
+        "category": "promiscuous",
+        "dominant_prefix": "ol",
+        "n_prefixes": 6,
+        "total_tokens": 15,
+        "prefix_fracs": {
+          "ol": 0.2667,
+          "ot": 0.2,
+          "or": 0.2,
+          "lk": 0.2,
+          "qo": 0.0667,
+          "ok": 0.0667
+        }
+      },
+      "octh": {
+        "concentration": 0.7333333333333333,
+        "entropy": 1.2366407419411674,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 4,
+        "total_tokens": 15,
+        "prefix_fracs": {
+          "NONE": 0.7333,
+          "ch": 0.1333,
+          "ke": 0.0667,
+          "fch": 0.0667
+        }
+      },
+      "of": {
+        "concentration": 0.7333333333333333,
+        "entropy": 1.2366407419411676,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 4,
+        "total_tokens": 15,
+        "prefix_fracs": {
+          "NONE": 0.7333,
+          "pch": 0.1333,
+          "sh": 0.0667,
+          "yk": 0.0667
+        }
+      },
+      "ec": {
+        "concentration": 0.2857142857142857,
+        "entropy": 2.8073549220576037,
+        "category": "promiscuous",
+        "dominant_prefix": "ok",
+        "n_prefixes": 8,
+        "total_tokens": 14,
+        "prefix_fracs": {
+          "ok": 0.2857,
+          "sh": 0.1429,
+          "ke": 0.1429,
+          "ot": 0.1429,
+          "ct": 0.0714,
+          "lsh": 0.0714,
+          "ch": 0.0714,
+          "lk": 0.0714
+        }
+      },
+      "es": {
+        "concentration": 0.21428571428571427,
+        "entropy": 2.78845045730829,
+        "category": "promiscuous",
+        "dominant_prefix": "ok",
+        "n_prefixes": 8,
+        "total_tokens": 14,
+        "prefix_fracs": {
+          "ok": 0.2143,
+          "ch": 0.2143,
+          "sh": 0.2143,
+          "ke": 0.0714,
+          "qo": 0.0714,
+          "lk": 0.0714,
+          "yk": 0.0714,
+          "ot": 0.0714
+        }
+      },
+      "oct": {
+        "concentration": 0.5,
+        "entropy": 1.2958363892911637,
+        "category": "bimodal",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 3,
+        "total_tokens": 14,
+        "prefix_fracs": {
+          "NONE": 0.5,
+          "ch": 0.4286,
+          "sh": 0.0714
+        }
+      },
+      "da": {
+        "concentration": 0.3076923076923077,
+        "entropy": 2.7192945256669794,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 8,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "NONE": 0.3077,
+          "ch": 0.2308,
+          "qo": 0.0769,
+          "to": 0.0769,
+          "ko": 0.0769,
+          "sh": 0.0769,
+          "dch": 0.0769,
+          "ot": 0.0769
+        }
+      },
+      "eee": {
+        "concentration": 0.46153846153846156,
+        "entropy": 2.1416195253341384,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 6,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "NONE": 0.4615,
+          "qo": 0.2308,
+          "ch": 0.0769,
+          "ok": 0.0769,
+          "sh": 0.0769,
+          "lk": 0.0769
+        }
+      },
+      "eot": {
+        "concentration": 0.5384615384615384,
+        "entropy": 1.823026490712885,
+        "category": "promiscuous",
+        "dominant_prefix": "ch",
+        "n_prefixes": 5,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "ch": 0.5385,
+          "sh": 0.2308,
+          "ok": 0.0769,
+          "dch": 0.0769,
+          "NONE": 0.0769
+        }
+      },
+      "ld": {
+        "concentration": 0.3076923076923077,
+        "entropy": 3.085055102756477,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 10,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "NONE": 0.3077,
+          "ka": 0.0769,
+          "qo": 0.0769,
+          "do": 0.0769,
+          "da": 0.0769,
+          "to": 0.0769,
+          "ta": 0.0769,
+          "ch": 0.0769,
+          "sa": 0.0769,
+          "po": 0.0769
+        }
+      },
+      "ock": {
+        "concentration": 0.5384615384615384,
+        "entropy": 1.2957378005380122,
+        "category": "bimodal",
+        "dominant_prefix": "ch",
+        "n_prefixes": 3,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "ch": 0.5385,
+          "NONE": 0.3846,
+          "sh": 0.0769
+        }
+      },
+      "osh": {
+        "concentration": 0.9230769230769231,
+        "entropy": 0.39124356362925566,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 2,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "NONE": 0.9231,
+          "al": 0.0769
+        }
+      },
+      "ro": {
+        "concentration": 0.6153846153846154,
+        "entropy": 1.5465935642949384,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 4,
+        "total_tokens": 13,
+        "prefix_fracs": {
+          "NONE": 0.6154,
+          "ta": 0.1538,
+          "da": 0.1538,
+          "ka": 0.0769
+        }
+      },
+      "ak": {
+        "concentration": 0.5833333333333334,
+        "entropy": 1.780672129520887,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 5,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "NONE": 0.5833,
+          "ot": 0.1667,
+          "ar": 0.0833,
+          "yk": 0.0833,
+          "ch": 0.0833
+        }
+      },
+      "cs": {
+        "concentration": 0.6666666666666666,
+        "entropy": 1.584962500721156,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 5,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "NONE": 0.6667,
+          "yk": 0.0833,
+          "ol": 0.0833,
+          "tch": 0.0833,
+          "ar": 0.0833
+        }
+      },
+      "ecth": {
+        "concentration": 0.75,
+        "entropy": 1.0408520829727552,
+        "category": "dominant",
+        "dominant_prefix": "ch",
+        "n_prefixes": 3,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "ch": 0.75,
+          "sh": 0.1667,
+          "yk": 0.0833
+        }
+      },
+      "kec": {
+        "concentration": 0.8333333333333334,
+        "entropy": 0.6500224216483541,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "qo": 0.8333,
+          "ol": 0.1667
+        }
+      },
+      "oi": {
+        "concentration": 0.6666666666666666,
+        "entropy": 1.188721875540867,
+        "category": "bimodal",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 3,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "NONE": 0.6667,
+          "or": 0.25,
+          "al": 0.0833
+        }
+      },
+      "rai": {
+        "concentration": 0.6666666666666666,
+        "entropy": 1.4182958340544896,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 4,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "NONE": 0.6667,
+          "ta": 0.1667,
+          "da": 0.0833,
+          "po": 0.0833
+        }
+      },
+      "yt": {
+        "concentration": 0.75,
+        "entropy": 1.0408520829727552,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 3,
+        "total_tokens": 12,
+        "prefix_fracs": {
+          "NONE": 0.75,
+          "ch": 0.1667,
+          "ot": 0.0833
+        }
+      },
+      "oe": {
+        "concentration": 0.8181818181818182,
+        "entropy": 0.6840384356390417,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 2,
+        "total_tokens": 11,
+        "prefix_fracs": {
+          "NONE": 0.8182,
+          "ol": 0.1818
+        }
+      },
+      "to": {
+        "concentration": 0.9090909090909091,
+        "entropy": 0.4394969869215134,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 11,
+        "prefix_fracs": {
+          "qo": 0.9091,
+          "ko": 0.0909
+        }
+      },
+      "yk": {
+        "concentration": 0.36363636363636365,
+        "entropy": 2.5503407095463886,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 7,
+        "total_tokens": 11,
+        "prefix_fracs": {
+          "NONE": 0.3636,
+          "qo": 0.1818,
+          "yk": 0.0909,
+          "dch": 0.0909,
+          "pch": 0.0909,
+          "ch": 0.0909,
+          "sh": 0.0909
+        }
+      },
+      "cp": {
+        "concentration": 0.7,
+        "entropy": 0.8812908992306927,
+        "category": "dominant",
+        "dominant_prefix": "ch",
+        "n_prefixes": 2,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "ch": 0.7,
+          "NONE": 0.3
+        }
+      },
+      "eeeo": {
+        "concentration": 0.2,
+        "entropy": 2.7219280948873625,
+        "category": "promiscuous",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 7,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "NONE": 0.2,
+          "yk": 0.2,
+          "ok": 0.2,
+          "ot": 0.1,
+          "lk": 0.1,
+          "qo": 0.1,
+          "ch": 0.1
+        }
+      },
+      "kal": {
+        "concentration": 0.9,
+        "entropy": 0.4689955935892812,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "qo": 0.9,
+          "ol": 0.1
+        }
+      },
+      "oee": {
+        "concentration": 0.8,
+        "entropy": 0.9219280948873623,
+        "category": "dominant",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 3,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "NONE": 0.8,
+          "al": 0.1,
+          "ol": 0.1
+        }
+      },
+      "pc": {
+        "concentration": 0.7,
+        "entropy": 0.8812908992306927,
+        "category": "dominant",
+        "dominant_prefix": "qo",
+        "n_prefixes": 2,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "qo": 0.7,
+          "ch": 0.3
+        }
+      },
+      "q": {
+        "concentration": 1.0,
+        "entropy": -0.0,
+        "category": "locked",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 1,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "NONE": 1.0
+        }
+      },
+      "qek": {
+        "concentration": 1.0,
+        "entropy": -0.0,
+        "category": "locked",
+        "dominant_prefix": "NONE",
+        "n_prefixes": 1,
+        "total_tokens": 10,
+        "prefix_fracs": {
+          "NONE": 1.0
+        }
+      }
+    }
+  },
+  "lane_alignment": {
+    "crosstab": {
+      "QO": {
+        "dominant": 19,
+        "bimodal": 3,
+        "locked": 1
+      },
+      "CHSH": {
+        "promiscuous": 23,
+        "bimodal": 16,
+        "dominant": 10,
+        "locked": 2
+      },
+      "neutral": {
+        "bimodal": 10,
+        "promiscuous": 36,
+        "dominant": 6,
+        "locked": 2
+      }
+    },
+    "chi2": 50.655,
+    "p_value": 0.0,
+    "dof": 6,
+    "cramers_v": 0.4448,
+    "dominant_prefix_by_lane": {
+      "QO": {
+        "qo": 23
+      },
+      "CHSH": {
+        "ch": 24,
+        "NONE": 21,
+        "sh": 3,
+        "ok": 2,
+        "ot": 1
+      },
+      "neutral": {
+        "NONE": 24,
+        "da": 8,
+        "ch": 7,
+        "ok": 4,
+        "ol": 4,
+        "qo": 4,
+        "ot": 1,
+        "pch": 1,
+        "ct": 1
+      }
+    },
+    "en_family_dominance": {
+      "QO": {
+        "en_dominant": 23,
+        "total": 23,
+        "pct": 100.0
+      },
+      "CHSH": {
+        "en_dominant": 27,
+        "total": 51,
+        "pct": 52.9
+      },
+      "neutral": {
+        "en_dominant": 11,
+        "total": 54,
+        "pct": 20.4
+      }
+    }
+  },
+  "ab_comparison": {
+    "n_compared": 120,
+    "min_tokens": 5,
+    "jaccard_stats": {
+      "mean": 0.4836,
+      "median": 0.5,
+      "min": 0.1429,
+      "max": 1.0,
+      "std": 0.1839
+    },
+    "breadth_comparison": {
+      "a_wider": 34,
+      "b_wider": 68,
+      "equal": 18,
+      "direction": "B_WIDER"
+    },
+    "a_only_prefix_middles": 91,
+    "b_only_prefix_middles": 107
+  }
+}

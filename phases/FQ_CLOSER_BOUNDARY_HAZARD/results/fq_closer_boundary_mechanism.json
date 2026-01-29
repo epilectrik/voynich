@@ -1,0 +1,531 @@
+{
+  "metadata": {
+    "phase": "FQ_CLOSER_BOUNDARY_HAZARD",
+    "script": "fq_closer_boundary_mechanism",
+    "timestamp": "2026-01-26T17:58:27.004201"
+  },
+  "section1_boundary_asymmetry": {
+    "forbidden": [
+      {
+        "source": "dy",
+        "target": "aiin",
+        "direction": "CROSS_GROUP",
+        "src_count": 109,
+        "src_final_rate": 0.3578,
+        "tgt_count": 351,
+        "tgt_initial_rate": 0.0,
+        "boundary_gap_prob": 0.0
+      },
+      {
+        "source": "dy",
+        "target": "chey",
+        "direction": "FORWARD",
+        "src_count": 109,
+        "src_final_rate": 0.3578,
+        "tgt_count": 250,
+        "tgt_initial_rate": 0.02,
+        "boundary_gap_prob": 0.007156
+      },
+      {
+        "source": "l",
+        "target": "chol",
+        "direction": "FORWARD",
+        "src_count": 34,
+        "src_final_rate": 0.0294,
+        "tgt_count": 99,
+        "tgt_initial_rate": 0.0606,
+        "boundary_gap_prob": 0.001783
+      }
+    ],
+    "allowed": [
+      {
+        "source": "l",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_final_rate": 0.0294,
+        "tgt_initial_rate": 0.0143,
+        "boundary_gap_prob": 0.000419,
+        "observed_count": 2
+      },
+      {
+        "source": "l",
+        "target": "shedy",
+        "context": "c23->c8",
+        "src_final_rate": 0.0294,
+        "tgt_initial_rate": 0.0168,
+        "boundary_gap_prob": 0.000495,
+        "observed_count": 2
+      },
+      {
+        "source": "y",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_final_rate": 0.1515,
+        "tgt_initial_rate": 0.0143,
+        "boundary_gap_prob": 0.00216,
+        "observed_count": 1
+      },
+      {
+        "source": "y",
+        "target": "shedy",
+        "context": "c23->c8",
+        "src_final_rate": 0.1515,
+        "tgt_initial_rate": 0.0168,
+        "boundary_gap_prob": 0.00255,
+        "observed_count": 1
+      },
+      {
+        "source": "r",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_final_rate": 0.1026,
+        "tgt_initial_rate": 0.0143,
+        "boundary_gap_prob": 0.001462,
+        "observed_count": 1
+      },
+      {
+        "source": "dy",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_final_rate": 0.3578,
+        "tgt_initial_rate": 0.0143,
+        "boundary_gap_prob": 0.005101,
+        "observed_count": 1
+      },
+      {
+        "source": "s",
+        "target": "aiin",
+        "context": "c23->c9",
+        "src_final_rate": 0.1509,
+        "tgt_initial_rate": 0.0,
+        "boundary_gap_prob": 0.0,
+        "observed_count": 18
+      },
+      {
+        "source": "r",
+        "target": "aiin",
+        "context": "c23->c9",
+        "src_final_rate": 0.1026,
+        "tgt_initial_rate": 0.0,
+        "boundary_gap_prob": 0.0,
+        "observed_count": 7
+      },
+      {
+        "source": "y",
+        "target": "or",
+        "context": "c23->c9",
+        "src_final_rate": 0.1515,
+        "tgt_initial_rate": 0.044,
+        "boundary_gap_prob": 0.006667,
+        "observed_count": 2
+      },
+      {
+        "source": "l",
+        "target": "or",
+        "context": "c23->c9",
+        "src_final_rate": 0.0294,
+        "tgt_initial_rate": 0.044,
+        "boundary_gap_prob": 0.001294,
+        "observed_count": 1
+      },
+      {
+        "source": "y",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_final_rate": 0.1515,
+        "tgt_initial_rate": 0.0245,
+        "boundary_gap_prob": 0.003714,
+        "observed_count": 2
+      },
+      {
+        "source": "l",
+        "target": "chey",
+        "context": "c23->c31",
+        "src_final_rate": 0.0294,
+        "tgt_initial_rate": 0.02,
+        "boundary_gap_prob": 0.000588,
+        "observed_count": 1
+      },
+      {
+        "source": "am",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_final_rate": 0.8,
+        "tgt_initial_rate": 0.0245,
+        "boundary_gap_prob": 0.019608,
+        "observed_count": 1
+      },
+      {
+        "source": "am",
+        "target": "chdy",
+        "context": "c23->c31",
+        "src_final_rate": 0.8,
+        "tgt_initial_rate": 0.0,
+        "boundary_gap_prob": 0.0,
+        "observed_count": 1
+      },
+      {
+        "source": "y",
+        "target": "chy",
+        "context": "c23->c31",
+        "src_final_rate": 0.1515,
+        "tgt_initial_rate": 0.0,
+        "boundary_gap_prob": 0.0,
+        "observed_count": 1
+      },
+      {
+        "source": "y",
+        "target": "shor",
+        "context": "c23->c31",
+        "src_final_rate": 0.1515,
+        "tgt_initial_rate": 0.1538,
+        "boundary_gap_prob": 0.02331,
+        "observed_count": 1
+      },
+      {
+        "source": "dy",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_final_rate": 0.3578,
+        "tgt_initial_rate": 0.0245,
+        "boundary_gap_prob": 0.00877,
+        "observed_count": 1
+      },
+      {
+        "source": "l",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_final_rate": 0.0294,
+        "tgt_initial_rate": 0.0245,
+        "boundary_gap_prob": 0.000721,
+        "observed_count": 1
+      }
+    ]
+  },
+  "section2_restart_loop": {
+    "dy": {
+      "total_successors": 51,
+      "c9_count": 0,
+      "c9_rate": 0.0,
+      "c8_count": 1,
+      "c31_count": 1,
+      "en_chsh_rate": 0.0392,
+      "is_forbidden_source": true
+    },
+    "y": {
+      "total_successors": 42,
+      "c9_count": 2,
+      "c9_rate": 0.0476,
+      "c8_count": 2,
+      "c31_count": 4,
+      "en_chsh_rate": 0.1429,
+      "is_forbidden_source": false
+    },
+    "s": {
+      "total_successors": 37,
+      "c9_count": 18,
+      "c9_rate": 0.4865,
+      "c8_count": 0,
+      "c31_count": 0,
+      "en_chsh_rate": 0.0,
+      "is_forbidden_source": false
+    },
+    "l": {
+      "total_successors": 27,
+      "c9_count": 1,
+      "c9_rate": 0.037,
+      "c8_count": 4,
+      "c31_count": 2,
+      "en_chsh_rate": 0.2222,
+      "is_forbidden_source": true
+    },
+    "r": {
+      "total_successors": 27,
+      "c9_count": 7,
+      "c9_rate": 0.2593,
+      "c8_count": 1,
+      "c31_count": 0,
+      "en_chsh_rate": 0.037,
+      "is_forbidden_source": false
+    },
+    "am": {
+      "total_successors": 8,
+      "c9_count": 0,
+      "c9_rate": 0.0,
+      "c8_count": 0,
+      "c31_count": 2,
+      "en_chsh_rate": 0.25,
+      "is_forbidden_source": false
+    },
+    "d": {
+      "total_successors": 4,
+      "c9_count": 0,
+      "c9_rate": 0.0,
+      "c8_count": 0,
+      "c31_count": 0,
+      "en_chsh_rate": 0.0,
+      "is_forbidden_source": false
+    }
+  },
+  "section3_expected_counts": {
+    "total_bigrams": 20676,
+    "forbidden": [
+      {
+        "source": "dy",
+        "target": "aiin",
+        "direction": "CROSS_GROUP",
+        "src_freq": 109,
+        "tgt_freq": 351,
+        "expected": 1.8504,
+        "observed": 0,
+        "p_zero": 0.157173,
+        "verdict": "LIKELY"
+      },
+      {
+        "source": "dy",
+        "target": "chey",
+        "direction": "FORWARD",
+        "src_freq": 109,
+        "tgt_freq": 250,
+        "expected": 1.318,
+        "observed": 0,
+        "p_zero": 0.267683,
+        "verdict": "BORDERLINE"
+      },
+      {
+        "source": "l",
+        "target": "chol",
+        "direction": "FORWARD",
+        "src_freq": 34,
+        "tgt_freq": 99,
+        "expected": 0.1628,
+        "observed": 0,
+        "p_zero": 0.849763,
+        "verdict": "ARTIFACT"
+      }
+    ],
+    "allowed": [
+      {
+        "source": "l",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_freq": 34,
+        "tgt_freq": 491,
+        "expected": 0.8074,
+        "observed": 2,
+        "oe_ratio": 2.477
+      },
+      {
+        "source": "l",
+        "target": "shedy",
+        "context": "c23->c8",
+        "src_freq": 34,
+        "tgt_freq": 416,
+        "expected": 0.6841,
+        "observed": 2,
+        "oe_ratio": 2.924
+      },
+      {
+        "source": "y",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_freq": 66,
+        "tgt_freq": 491,
+        "expected": 1.5673,
+        "observed": 1,
+        "oe_ratio": 0.638
+      },
+      {
+        "source": "y",
+        "target": "shedy",
+        "context": "c23->c8",
+        "src_freq": 66,
+        "tgt_freq": 416,
+        "expected": 1.3279,
+        "observed": 1,
+        "oe_ratio": 0.753
+      },
+      {
+        "source": "r",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_freq": 39,
+        "tgt_freq": 491,
+        "expected": 0.9261,
+        "observed": 1,
+        "oe_ratio": 1.08
+      },
+      {
+        "source": "dy",
+        "target": "chedy",
+        "context": "c23->c8",
+        "src_freq": 109,
+        "tgt_freq": 491,
+        "expected": 2.5885,
+        "observed": 1,
+        "oe_ratio": 0.386
+      },
+      {
+        "source": "s",
+        "target": "aiin",
+        "context": "c23->c9",
+        "src_freq": 53,
+        "tgt_freq": 351,
+        "expected": 0.8997,
+        "observed": 18,
+        "oe_ratio": 20.006
+      },
+      {
+        "source": "r",
+        "target": "aiin",
+        "context": "c23->c9",
+        "src_freq": 39,
+        "tgt_freq": 351,
+        "expected": 0.6621,
+        "observed": 7,
+        "oe_ratio": 10.573
+      },
+      {
+        "source": "y",
+        "target": "or",
+        "context": "c23->c9",
+        "src_freq": 66,
+        "tgt_freq": 250,
+        "expected": 0.798,
+        "observed": 2,
+        "oe_ratio": 2.506
+      },
+      {
+        "source": "l",
+        "target": "or",
+        "context": "c23->c9",
+        "src_freq": 34,
+        "tgt_freq": 250,
+        "expected": 0.4111,
+        "observed": 1,
+        "oe_ratio": 2.432
+      },
+      {
+        "source": "y",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_freq": 66,
+        "tgt_freq": 204,
+        "expected": 0.6512,
+        "observed": 2,
+        "oe_ratio": 3.071
+      },
+      {
+        "source": "l",
+        "target": "chey",
+        "context": "c23->c31",
+        "src_freq": 34,
+        "tgt_freq": 250,
+        "expected": 0.4111,
+        "observed": 1,
+        "oe_ratio": 2.432
+      },
+      {
+        "source": "am",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_freq": 55,
+        "tgt_freq": 204,
+        "expected": 0.5427,
+        "observed": 1,
+        "oe_ratio": 1.843
+      },
+      {
+        "source": "am",
+        "target": "chdy",
+        "context": "c23->c31",
+        "src_freq": 55,
+        "tgt_freq": 132,
+        "expected": 0.3511,
+        "observed": 1,
+        "oe_ratio": 2.848
+      },
+      {
+        "source": "y",
+        "target": "chy",
+        "context": "c23->c31",
+        "src_freq": 66,
+        "tgt_freq": 36,
+        "expected": 0.1149,
+        "observed": 1,
+        "oe_ratio": 8.702
+      },
+      {
+        "source": "y",
+        "target": "shor",
+        "context": "c23->c31",
+        "src_freq": 66,
+        "tgt_freq": 26,
+        "expected": 0.083,
+        "observed": 1,
+        "oe_ratio": 12.049
+      },
+      {
+        "source": "dy",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_freq": 109,
+        "tgt_freq": 204,
+        "expected": 1.0754,
+        "observed": 1,
+        "oe_ratio": 0.93
+      },
+      {
+        "source": "l",
+        "target": "shey",
+        "context": "c23->c31",
+        "src_freq": 34,
+        "tgt_freq": 204,
+        "expected": 0.3355,
+        "observed": 1,
+        "oe_ratio": 2.981
+      }
+    ]
+  },
+  "section4_integrated_verdict": [
+    {
+      "source": "dy",
+      "target": "aiin",
+      "direction": "CROSS_GROUP",
+      "positional_verdict": "POSITIONALLY_SEPARATED",
+      "boundary_gap": 0.0,
+      "expected_count": 1.8504,
+      "p_zero": 0.157173,
+      "src_restart_rate": 0.0,
+      "adj_to_class": 0,
+      "verdict": "POSITIONAL_PLUS_FREQUENCY",
+      "explanation": "Source never adjacent to target class; partially positional, partially frequency"
+    },
+    {
+      "source": "dy",
+      "target": "chey",
+      "direction": "FORWARD",
+      "positional_verdict": "GENUINE_PROHIBITION",
+      "boundary_gap": 0.007156,
+      "expected_count": 1.318,
+      "p_zero": 0.267683,
+      "src_restart_rate": 0.0,
+      "adj_to_class": 1,
+      "verdict": "LIKELY_PROHIBITION",
+      "explanation": "Source adjacent to target class (1x) but never to target; expected=1.318, P(0)=0.268 (borderline)"
+    },
+    {
+      "source": "l",
+      "target": "chol",
+      "direction": "FORWARD",
+      "positional_verdict": "GENUINE_PROHIBITION",
+      "boundary_gap": 0.001783,
+      "expected_count": 0.1628,
+      "p_zero": 0.849763,
+      "src_restart_rate": 0.037,
+      "adj_to_class": 4,
+      "verdict": "FREQUENCY_ARTIFACT",
+      "explanation": "Expected count 0.163 too low; P(0)=0.850"
+    }
+  ]
+}

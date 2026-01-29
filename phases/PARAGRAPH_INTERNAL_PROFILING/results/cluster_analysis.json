@@ -1,0 +1,94 @@
+{
+  "A": {
+    "silhouette_scores": {
+      "2": 0.26,
+      "3": 0.289,
+      "4": 0.32,
+      "5": 0.337
+    },
+    "best_k": 5,
+    "cluster_profiles": {
+      "cluster_0": {
+        "count": 80,
+        "mean_lines": 5.44,
+        "mean_ri_rate": 0.086,
+        "linker_rate": 0.075
+      },
+      "cluster_1": {
+        "count": 117,
+        "mean_lines": 2.01,
+        "mean_ri_rate": 0.201,
+        "linker_rate": 0.034
+      },
+      "cluster_2": {
+        "count": 15,
+        "mean_lines": 7.2,
+        "mean_ri_rate": 0.098,
+        "linker_rate": 0.0
+      },
+      "cluster_3": {
+        "count": 28,
+        "mean_lines": 11.79,
+        "mean_ri_rate": 0.071,
+        "linker_rate": 0.321
+      },
+      "cluster_4": {
+        "count": 102,
+        "mean_lines": 5.23,
+        "mean_ri_rate": 0.064,
+        "linker_rate": 0.108
+      }
+    }
+  },
+  "B": {
+    "silhouette_scores": {
+      "2": 0.202,
+      "3": 0.196,
+      "4": 0.229,
+      "5": 0.237
+    },
+    "best_k": 5,
+    "cluster_profiles": {
+      "cluster_0": {
+        "count": 51,
+        "mean_lines": 1.16,
+        "mean_ht_delta": -0.033,
+        "gallows_rate": 0.157,
+        "mean_en_rate": 0.0,
+        "mean_fl_rate": 0.0
+      },
+      "cluster_1": {
+        "count": 185,
+        "mean_lines": 3.26,
+        "mean_ht_delta": 0.128,
+        "gallows_rate": 0.0,
+        "mean_en_rate": 0.349,
+        "mean_fl_rate": 0.055
+      },
+      "cluster_2": {
+        "count": 60,
+        "mean_lines": 12.38,
+        "mean_ht_delta": 0.206,
+        "gallows_rate": 0.767,
+        "mean_en_rate": 0.511,
+        "mean_fl_rate": 0.054
+      },
+      "cluster_3": {
+        "count": 205,
+        "mean_lines": 3.82,
+        "mean_ht_delta": 0.162,
+        "gallows_rate": 1.0,
+        "mean_en_rate": 0.408,
+        "mean_fl_rate": 0.08
+      },
+      "cluster_4": {
+        "count": 84,
+        "mean_lines": 4.37,
+        "mean_ht_delta": 0.131,
+        "gallows_rate": 1.0,
+        "mean_en_rate": 0.456,
+        "mean_fl_rate": 0.061
+      }
+    }
+  }
+}

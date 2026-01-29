@@ -1,0 +1,27 @@
+{
+  "tests": {
+    "vocab_reuse": {
+      "mean": 0.11432192212649633,
+      "stdev": 0.13213931253012418
+    },
+    "role_correlation": {
+      "mean": 0.7154465368349108,
+      "stdev": 0.38252328160219623
+    },
+    "role_stability": {
+      "mean_variance": 0.010280992106049146
+    }
+  },
+  "scores": {
+    "vocabulary": 0.11432192212649633,
+    "role_correlation": 0.8577232684174554,
+    "role_stability": 0.8971900789395085,
+    "combined": 0.6230784231611534
+  },
+  "verdict": "TEMPLATE",
+  "probe_evidence": {
+    "new_vocab_per_par": "63-85%",
+    "role_flatness": "FLAT across sequence",
+    "intra_inter_ratio": 1.51
+  }
+}

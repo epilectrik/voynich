@@ -1,0 +1,39 @@
+{
+  "clustering": {
+    "2": {
+      "silhouette": 0.263,
+      "calinski": 2069.4
+    },
+    "3": {
+      "silhouette": 0.183,
+      "calinski": 1517.8
+    },
+    "4": {
+      "silhouette": 0.19,
+      "calinski": 1241.5
+    },
+    "5": {
+      "silhouette": 0.217,
+      "calinski": 1124.3
+    }
+  },
+  "best_k": 2,
+  "best_silhouette": 0.263,
+  "hapax_vs_repeater": {
+    "hapax_types": 3274,
+    "repeater_types": 1147,
+    "hapax_prefix_rate": 0.818,
+    "repeater_prefix_rate": 0.843,
+    "hapax_suffix_rate": 0.83,
+    "repeater_suffix_rate": 0.742,
+    "hapax_art_rate": 0.107,
+    "repeater_art_rate": 0.095,
+    "hapax_mean_length": 6.65,
+    "repeater_mean_length": 5.84
+  },
+  "ax_un_boundary": {
+    "ax_predicted_un": 2150,
+    "classified_ax": 4140,
+    "ax_if_absorbed_pct": 27.2
+  }
+}

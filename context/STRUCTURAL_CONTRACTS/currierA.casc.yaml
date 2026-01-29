@@ -16,8 +16,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.3"
-  date: "2026-01-24"
+  version: "1.4"
+  date: "2026-01-29"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -192,8 +192,55 @@ morphology:
           interpretation: "RI = feature bundle, not categorical type. Apparent subtypes are projections onto single dimensions."
           provenance: "C513-NOTE-B"
 
-      provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528"
-      revision_date: "2026-01-24"
+        # RI functional population structure (C831-C839)
+        ri_functional_structure:
+          description: "RI MIDDLEs partition into three functional tiers with distinct behaviors"
+
+          three_tier_population:  # C831
+            singletons: { rate: "95.3%", count: 674, behavior: "Appear exactly once corpus-wide" }
+            position_locked: { rate: "~4%", count: 29, behavior: "Repeat but stay within INITIAL/MIDDLE/FINAL" }
+            linkers: { rate: "0.6%", count: 4, behavior: "Appear as FINAL then INITIAL (cross-paragraph bridge)" }
+            provenance: "C831"
+
+          positional_separation:  # C832
+            initial_only_count: 10
+            final_only_count: 15
+            middle_only_count: 8
+            overlap_rate: "0% between INITIAL-only and FINAL-only"
+            interpretation: "Positional assignment is lexical, not contextual"
+            provenance: "C832"
+
+          line1_concentration:  # C833
+            ri_line1_rate: "3.84x baseline"
+            interpretation: "Line 1 serves as paragraph header zone"
+            provenance: "C833"
+
+          linker_mechanism:  # C835-C838
+            linkers: ["cthody", "ctho", "ctheody", "qokoiiin"]
+            link_count: 12
+            direction_bias: "66.7% forward"
+            mean_distance: "+6.6 folios"
+            topology: "Convergent (many-to-one)"
+            hub_structure:
+              f93v: "5 incoming links (major collector)"
+              f32r: "4 incoming links"
+            ct_prefix_signature: "3/4 linkers have ct- prefix"  # C836
+            qo_exception: "qokoiiin is only non-ct linker"  # C838
+            provenance: "C835, C836, C837, C838"
+
+          input_output_asymmetry:  # C839
+            input_markers: 12
+            output_markers: 5
+            asymmetry_ratio: "2.4x"
+            strongest_input: ["ko- (9x)", "to- (inf)", "-r (7x)", "-ey (4.5x)"]
+            strongest_output: ["-ry (0.20x = 5x OUTPUT bias)"]
+            interpretation: "Many inputs → fewer outputs (convergent processing)"
+            provenance: "C839"
+
+          provenance: "C831, C832, C833, C835, C836, C837, C838, C839"
+
+      provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528, C831-C839"
+      revision_date: "2026-01-29"
 
     # Gallows patterns (C529-C530)
     gallows:
@@ -341,6 +388,80 @@ line_structure:
     provenance: "C422"
 
 # ============================================================
+# PARAGRAPH STRUCTURE (C827, C834, C846-C850, C854)
+# ============================================================
+paragraph_structure:
+  description: "Paragraphs serve as operational aggregation units with systematic organization"
+
+  operational_unit:  # C827
+    statement: "Paragraphs are the operational aggregation level (not lines, not folios)"
+    evidence: "Token survival rates increase with aggregation: line 11.2% -> paragraph 31.8% -> folio 50.0%"
+    provenance: "C827"
+
+  paragraph_granularity:  # C834
+    validated: true
+    line_aggregation_insufficient: "Too narrow for operational coverage"
+    folio_aggregation_excessive: "Obscures meaningful variation"
+    provenance: "C834"
+
+  a_paragraph_properties:
+    size_distribution:  # C847
+      mean_lines: 4.8
+      by_position:
+        first: { lines: 5.35, tokens: 39.0 }
+        middle: { lines: 2.75, tokens: 18.7 }
+        last: { lines: 5.36, tokens: 36.2 }
+        only: { lines: 11.79, tokens: 73.4 }
+      interpretation: "'Only' paragraphs are complete programs; 'middle' paragraphs are compact metadata"
+      provenance: "C847"
+
+    ri_position_variance:  # C848
+      pattern: "RI concentrated in specific paragraph positions"
+      line1_concentration: "3.84x baseline (header zone)"
+      provenance: "C848"
+
+    section_profile:  # C849
+      H_section: "Standard paragraph structure"
+      P_section: "Variant paragraph structure"
+      T_section: "Different organizational pattern"
+      provenance: "C849"
+
+    cluster_taxonomy:  # C850
+      cluster_count: 5
+      silhouette: 0.337
+      types: ["short", "standard", "long", "only", "metadata"]
+      provenance: "C850"
+
+  ab_relationship:  # C846
+    model: "Pool-based, not address-based"
+    statement: "A paragraphs provide vocabulary pools; B draws without specific pairing"
+    best_match_lift: "2.49x raw, 1.20x pool-size-controlled"
+    hub_concentration: "Top 10 A paragraphs capture 85.9% of best matches"
+    pool_size_correlation: "Spearman rho = 0.694"
+    interpretation: "Selection artifact from large PP pools, not specific correspondence"
+    provenance: "C846"
+
+  structural_parallel:  # C854
+    a_b_comparison:
+      a_mean_lines: 4.8
+      b_mean_lines: 4.37
+      statistical_significance: "Mann-Whitney p=0.067 (not significant)"
+      effect_size: "Cohen's d = 0.110 (negligible)"
+    header_enrichment:
+      a_ri_line1: "3.84x"
+      b_ht_line1: "46.5%"
+      b_ht_body: "23.7%"
+    clustering:
+      a_clusters: 5
+      b_clusters: 5
+      a_silhouette: 0.337
+      b_silhouette: 0.237
+    interpretation: "Shared design principle: header zone (RI/HT) + body zone (PP/classified)"
+    provenance: "C854"
+
+  provenance: "C827, C834, C846, C847, C848, C849, C850, C854"
+
+# ============================================================
 # PARTICIPATION RULES
 # ============================================================
 participation:
@@ -390,7 +511,35 @@ participation:
       mechanism: "B token legal iff MIDDLE in A-record AND PREFIX in A-record AND SUFFIX in A-record"
       provenance: "C502.a"
 
-    provenance: "C299, C384, C384.a, C502.a"
+    # A-record filtering validation (C824-C826)
+    filtering_validation:
+      description: "Comprehensive validation of A->B filtering mechanism"
+
+      mechanism_confirmation:  # C824
+        mean_filtering_rate: "81.3%"
+        pp_count_correlation: "rho=+0.734 (more PP = more survival)"
+        aggregation_effect:
+          line_level: "11.2% survival"
+          paragraph_level: "31.8% survival"
+          folio_level: "50.0% survival"
+        routing_lift: "82.9% of A-records have >2x routing lift"
+        provenance: "C824"
+
+      routing_topology:  # C825
+        model: "Continuous, not discrete"
+        viability_distribution: "Continuous gradient, not categorical bins"
+        evidence: "No natural clustering in folio viability"
+        provenance: "C825"
+
+      model_reconciliation:  # C826
+        correct_model: "Token filtering (C502)"
+        rejected_model: "Subset viability"
+        interpretation: "B tokens legal when MIDDLE in A's PP set; more PP = more tokens survive"
+        provenance: "C826"
+
+      provenance: "C824, C825, C826"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826"
 
 # ============================================================
 # POSITIONAL PROPERTIES
@@ -530,6 +679,14 @@ provenance:
     - "C498.d"  # RI length-frequency correlation
     - "C513-NOTE-B"  # RI orthogonal feature structure
     - "C528"  # RI PREFIX lexical bifurcation
+    - "C831"  # RI three-tier population structure
+    - "C832"  # INITIAL/FINAL positional separation
+    - "C833"  # RI line-1 concentration
+    - "C835"  # RI linker mechanism
+    - "C836"  # ct-prefix linker signature
+    - "C837"  # ct-ho linker signature
+    - "C838"  # qo linker exception
+    - "C839"  # Input-output morphological asymmetry
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -542,6 +699,16 @@ provenance:
     - "C483"  # Ordinal repetition
     - "C484"  # Minimum sizes
 
+  paragraph_structure:
+    - "C827"  # Paragraph operational unit
+    - "C834"  # Paragraph granularity validation
+    - "C846"  # A-B paragraph pool relationship
+    - "C847"  # A paragraph size distribution
+    - "C848"  # A paragraph RI position variance
+    - "C849"  # A paragraph section profile
+    - "C850"  # A paragraph cluster taxonomy
+    - "C854"  # A-B paragraph structural parallel
+
   participation:
     - "C299"  # Section distribution in B
     - "C384"  # No A-B coupling
@@ -549,6 +716,9 @@ provenance:
     - "C442"  # AZC compatibility filter
     - "C484"  # Control operator exclusion
     - "C502.a"  # Full morphological filtering cascade
+    - "C824"  # A-record filtering mechanism validated
+    - "C825"  # Continuous routing topology
+    - "C826"  # Token filtering model reconciliation
 
   positional:
     - "C260"  # Section isolation

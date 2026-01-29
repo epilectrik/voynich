@@ -1,0 +1,157 @@
+{
+  "a_folio_count": 114,
+  "azc_folio_count": 28,
+  "azc_coverage": {
+    "f57v": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f65r": {
+      "a_count": 62,
+      "pct": 54.3859649122807,
+      "family": "AC"
+    },
+    "f67r1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f67r2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f67v1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f67v2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f68r1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f68r2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f68r3": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f68v1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f68v2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f68v3": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f69r": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f69v": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f70r1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f70r2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "AC"
+    },
+    "f70v1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f70v2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f71r": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f71v": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f72r1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f72r2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f72r3": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f72v1": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f72v2": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f72v3": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f73r": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    },
+    "f73v": {
+      "a_count": 114,
+      "pct": 100.0,
+      "family": "Z"
+    }
+  },
+  "a_spread_summary": {
+    "mean": 27.54385964912281,
+    "median": 28.0,
+    "min": 27,
+    "max": 28
+  },
+  "zodiac_mean_jaccard": 0.1930229685128523,
+  "ac_mean_jaccard": 0.177788795741299,
+  "family_ttest_p": 5.4723755701731565e-15,
+  "jaccard_variance": 0.0018283993074844629,
+  "verdict": "FAMILY_DIFFERENTIATED"
+}

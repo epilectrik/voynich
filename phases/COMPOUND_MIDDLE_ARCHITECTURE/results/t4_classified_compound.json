@@ -1,0 +1,33 @@
+{
+  "token_counts": {
+    "classified": 16054,
+    "un": 7042,
+    "un_fraction": 0.3049012816072047
+  },
+  "middle_counts": {
+    "classified": 88,
+    "un": 1339,
+    "shared": 88,
+    "classified_only": 0,
+    "un_only": 1251
+  },
+  "compound_rates": {
+    "classified": 35.22727272727273,
+    "un": 81.10530246452576,
+    "difference": 45.87802973725304,
+    "shared": 35.22727272727273,
+    "classified_only": 0,
+    "un_only": 84.33253397282174
+  },
+  "folio_unique_rates": {
+    "classified": 2.272727272727273,
+    "un": 64.52576549663928,
+    "difference": 62.25303822391201
+  },
+  "length": {
+    "classified_mean": 2.2613636363636362,
+    "un_mean": 4.08588498879761,
+    "difference": 1.8245213524339738
+  },
+  "verdict": "STRONG_CONFIRMATION"
+}

@@ -1,0 +1,502 @@
+{
+  "metadata": {
+    "phase": "INTRA_CLASS_DIVERSITY",
+    "script": "morphology_subtype_prediction.py",
+    "features_tested": [
+      "prefix",
+      "middle",
+      "suffix",
+      "articulator"
+    ],
+    "ari_strong_threshold": 0.3,
+    "significance_threshold": 0.05
+  },
+  "summary": {
+    "n_heterogeneous_analyzed": 7,
+    "n_strong_ari": 6,
+    "n_significant": 0,
+    "n_both": 0,
+    "predictor_wins": {
+      "middle": 6,
+      "prefix": 1
+    },
+    "mean_ari_by_feature": {
+      "prefix": -0.0714,
+      "middle": 0.8571,
+      "suffix": 0.5357,
+      "articulator": 0.0
+    }
+  },
+  "per_class": {
+    "3": {
+      "class_id": 3,
+      "n_tokens": 2,
+      "optimal_k": 2,
+      "role": "AUXILIARY",
+      "features": {
+        "prefix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "ol": 2
+          }
+        },
+        "middle": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "ain": 1,
+            "k": 1
+          }
+        },
+        "suffix": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "NONE": 1,
+            "ey": 1
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        }
+      },
+      "best_predictor": "middle",
+      "best_ari": 1.0,
+      "best_p_value": 1.0,
+      "significant": false
+    },
+    "7": {
+      "class_id": 7,
+      "n_tokens": 2,
+      "optimal_k": 2,
+      "role": "FLOW_OPERATOR",
+      "features": {
+        "prefix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        },
+        "middle": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "ar": 1,
+            "al": 1
+          }
+        },
+        "suffix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        }
+      },
+      "best_predictor": "middle",
+      "best_ari": 1.0,
+      "best_p_value": 1.0,
+      "significant": false
+    },
+    "8": {
+      "class_id": 8,
+      "n_tokens": 3,
+      "optimal_k": 2,
+      "role": "ENERGY_OPERATOR",
+      "features": {
+        "prefix": {
+          "ari": -0.5,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "ch": 2,
+            "sh": 1
+          }
+        },
+        "middle": {
+          "ari": 1.0,
+          "p_value": 0.333333,
+          "method": "FISHER",
+          "partition": {
+            "edy": 2,
+            "ol": 1
+          }
+        },
+        "suffix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 3
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 3
+          }
+        }
+      },
+      "best_predictor": "middle",
+      "best_ari": 1.0,
+      "best_p_value": 0.333333,
+      "significant": "False"
+    },
+    "22": {
+      "class_id": 22,
+      "n_tokens": 2,
+      "optimal_k": 2,
+      "role": "AUXILIARY",
+      "features": {
+        "prefix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        },
+        "middle": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "ly": 1,
+            "l": 1
+          }
+        },
+        "suffix": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "NONE": 1,
+            "r": 1
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        }
+      },
+      "best_predictor": "middle",
+      "best_ari": 1.0,
+      "best_p_value": 1.0,
+      "significant": false
+    },
+    "30": {
+      "class_id": 30,
+      "n_tokens": 5,
+      "optimal_k": 2,
+      "role": "FLOW_OPERATOR",
+      "features": {
+        "prefix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "da": 5
+          }
+        },
+        "middle": {
+          "ari": 0.0,
+          "p_value": 0.287297,
+          "method": "CHI2_LOW_EXPECTED",
+          "partition": {
+            "r": 1,
+            "l": 1,
+            "in": 1,
+            "i": 1,
+            "m": 1
+          }
+        },
+        "suffix": {
+          "ari": -0.25,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "NONE": 4,
+            "r": 1
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 5
+          }
+        }
+      },
+      "best_predictor": "prefix",
+      "best_ari": 0.0,
+      "best_p_value": 1.0,
+      "significant": false
+    },
+    "37": {
+      "class_id": 37,
+      "n_tokens": 2,
+      "optimal_k": 2,
+      "role": "ENERGY_OPERATOR",
+      "features": {
+        "prefix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "sh": 2
+          }
+        },
+        "middle": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "k": 1,
+            "ek": 1
+          }
+        },
+        "suffix": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "y": 1,
+            "NONE": 1
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        }
+      },
+      "best_predictor": "middle",
+      "best_ari": 1.0,
+      "best_p_value": 1.0,
+      "significant": false
+    },
+    "44": {
+      "class_id": 44,
+      "n_tokens": 2,
+      "optimal_k": 2,
+      "role": "ENERGY_OPERATOR",
+      "features": {
+        "prefix": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "qo": 2
+          }
+        },
+        "middle": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "pch": 1,
+            "kec": 1
+          }
+        },
+        "suffix": {
+          "ari": 1.0,
+          "p_value": 1.0,
+          "method": "FISHER",
+          "partition": {
+            "dy": 1,
+            "hy": 1
+          }
+        },
+        "articulator": {
+          "ari": 0.0,
+          "p_value": 1.0,
+          "method": "DEGENERATE",
+          "partition": {
+            "NONE": 2
+          }
+        }
+      },
+      "best_predictor": "middle",
+      "best_ari": 1.0,
+      "best_p_value": 1.0,
+      "significant": false
+    }
+  },
+  "token_morphology": {
+    "olain": {
+      "prefix": "ol",
+      "middle": "ain",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 5
+    },
+    "olkey": {
+      "prefix": "ol",
+      "middle": "k",
+      "suffix": "ey",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 5
+    },
+    "ar": {
+      "prefix": "NONE",
+      "middle": "ar",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 2
+    },
+    "al": {
+      "prefix": "NONE",
+      "middle": "al",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 2
+    },
+    "chedy": {
+      "prefix": "ch",
+      "middle": "edy",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 5
+    },
+    "shedy": {
+      "prefix": "sh",
+      "middle": "edy",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 5
+    },
+    "chol": {
+      "prefix": "ch",
+      "middle": "ol",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 4
+    },
+    "ly": {
+      "prefix": "NONE",
+      "middle": "ly",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 2
+    },
+    "lr": {
+      "prefix": "NONE",
+      "middle": "l",
+      "suffix": "r",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 2
+    },
+    "dar": {
+      "prefix": "da",
+      "middle": "r",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 3
+    },
+    "dal": {
+      "prefix": "da",
+      "middle": "l",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 3
+    },
+    "dain": {
+      "prefix": "da",
+      "middle": "in",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 4
+    },
+    "dair": {
+      "prefix": "da",
+      "middle": "i",
+      "suffix": "r",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 4
+    },
+    "dam": {
+      "prefix": "da",
+      "middle": "m",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 3
+    },
+    "shky": {
+      "prefix": "sh",
+      "middle": "k",
+      "suffix": "y",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 4
+    },
+    "shek": {
+      "prefix": "sh",
+      "middle": "ek",
+      "suffix": "NONE",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 4
+    },
+    "qopchdy": {
+      "prefix": "qo",
+      "middle": "pch",
+      "suffix": "dy",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 7
+    },
+    "qokechy": {
+      "prefix": "qo",
+      "middle": "kec",
+      "suffix": "hy",
+      "articulator": "NONE",
+      "has_articulator": false,
+      "length": 7
+    }
+  }
+}

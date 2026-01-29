@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "phase": "RI_FUNCTIONAL_IDENTITY",
+    "script": "line_type_comparison.py",
+    "tests": "T1-T8 (PP-pure vs RI-bearing comparison)",
+    "n_folios": 114,
+    "n_records": 1562,
+    "n_pp_pure": 988,
+    "n_ri_bearing": 574,
+    "hypothesis": "PP-pure = toolbox, RI-bearing = product entries"
+  },
+  "T1_token_count": {
+    "pp_pure_mean": 6.81,
+    "pp_pure_median": 7.0,
+    "ri_bearing_mean": 7.75,
+    "ri_bearing_median": 8.0,
+    "ratio_ri_over_pp": 1.138,
+    "mann_whitney_p": 2.1702413816029446e-09
+  },
+  "T2_pp_density": {
+    "pp_pure_density_mean": 0.8434,
+    "ri_bearing_density_mean": 0.6935,
+    "ratio_pure_over_ri": 1.216,
+    "mann_whitney_p": 5.110248434564204e-66,
+    "ri_bearing_composition": {
+      "pp_fraction": 0.718,
+      "ri_fraction": 0.17,
+      "infra_fraction": 0.112
+    }
+  },
+  "T3_infra_content": {
+    "pp_pure_infra_mean": 1.015,
+    "ri_bearing_infra_mean": 0.868,
+    "pp_pure_has_infra_frac": 0.617,
+    "ri_bearing_has_infra_frac": 0.566,
+    "mann_whitney_p": 0.00967664757624022
+  },
+  "T4_pp_middle_overlap": {
+    "pp_pure_types": 323,
+    "ri_bearing_types": 280,
+    "overlap": 214,
+    "only_pp_pure": 109,
+    "only_ri_bearing": 66,
+    "jaccard_global": 0.5501,
+    "overlap_frac_of_pure": 0.6625,
+    "overlap_frac_of_ri": 0.7643,
+    "per_folio_jaccard_mean": 0.2346,
+    "per_folio_n": 112
+  },
+  "T5_pp_middle_exclusivity": {
+    "total_pp_middle_types": 389,
+    "expected_proportional_bias": 0.633,
+    "observed_mean_bias": 0.608,
+    "observed_median_bias": 0.667,
+    "strongly_pp_pure_gt09": 110,
+    "strongly_ri_bearing_lt01": 66,
+    "balanced_03_08": 182,
+    "chi2_top50": 83.72,
+    "chi2_df": 49,
+    "chi2_p": 0.0014650239592683431
+  },
+  "T6_positional": {
+    "pp_pure_mean_position": 0.5068,
+    "ri_bearing_mean_position": 0.4882,
+    "ks_D": 0.0837,
+    "ks_p": 0.01153891868061115,
+    "ri_bearing_thirds": {
+      "first": 0.331,
+      "middle": 0.352,
+      "last": 0.317
+    },
+    "first_line_ri_frac": 0.632,
+    "last_line_ri_frac": 0.36
+  },
+  "T7_pp_diversity": {
+    "pp_pure_diversity_mean": 0.901,
+    "ri_bearing_diversity_mean": 0.9033,
+    "diversity_mann_whitney_p": 0.9515697478658026,
+    "pp_count_pure_mean": 5.79,
+    "pp_count_ri_mean": 5.56,
+    "pp_count_mann_whitney_p": 0.038161245124624675
+  },
+  "T8_ri_pp_composition": {
+    "folio_coverage_by_pure_mean": 0.7542,
+    "folio_coverage_by_ri_mean": 0.4762,
+    "unique_pp_middles_per_line_pure": 5.09,
+    "unique_pp_middles_per_line_ri": 4.91,
+    "pp_middles_per_line_mann_whitney_p": 0.04919448336051386,
+    "ri_exclusive_pp_middles_frac": 0.4819
+  },
+  "summary": {
+    "conclusion": "PARTIAL_OVERLAP",
+    "key_numbers": {
+      "pp_pure_fraction": 0.633,
+      "ri_bearing_fraction": 0.367,
+      "global_pp_jaccard": 0.5501,
+      "per_folio_pp_jaccard": 0.2346,
+      "ri_bearing_pp_fraction": 0.718,
+      "ri_bearing_ri_fraction": 0.17,
+      "token_count_ratio": 1.138
+    }
+  }
+}

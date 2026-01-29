@@ -1,0 +1,58 @@
+{
+  "pure_initial_count": 199,
+  "pure_final_count": 116,
+  "linker_count": 4,
+  "linker_words": [
+    "ctheody",
+    "ctho",
+    "cthody",
+    "qokoiiin"
+  ],
+  "linker_morphology": [
+    {
+      "word": "ctheody",
+      "prefix": "ct",
+      "middle": "heo",
+      "suffix": "dy",
+      "articulator": null,
+      "length": 7,
+      "mid_first": "h",
+      "mid_last": "o"
+    },
+    {
+      "word": "ctho",
+      "prefix": "ct",
+      "middle": "ho",
+      "suffix": null,
+      "articulator": null,
+      "length": 4,
+      "mid_first": "h",
+      "mid_last": "o"
+    },
+    {
+      "word": "cthody",
+      "prefix": "ct",
+      "middle": "ho",
+      "suffix": "dy",
+      "articulator": null,
+      "length": 6,
+      "mid_first": "h",
+      "mid_last": "o"
+    },
+    {
+      "word": "qokoiiin",
+      "prefix": "qo",
+      "middle": "koi",
+      "suffix": "iin",
+      "articulator": null,
+      "length": 8,
+      "mid_first": "k",
+      "mid_last": "i"
+    }
+  ],
+  "ct_prefix_rates": {
+    "pure_input": 0.05025125628140704,
+    "linker": 0.75,
+    "pure_output": 0.0603448275862069
+  }
+}

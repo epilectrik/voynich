@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "phase": "HAZARD_CIRCUIT_TOKEN_RESOLUTION",
+    "script": "lane_middle_discrimination",
+    "timestamp": "2026-01-26T17:15:40.445979"
+  },
+  "section1_middle_vocabulary": {
+    "subgroup_middles": {
+      "AX": [
+        "a",
+        "ai",
+        "aii",
+        "al",
+        "ar",
+        "ch",
+        "che",
+        "cho",
+        "ckh",
+        "cph",
+        "d",
+        "dsh",
+        "dshe",
+        "e",
+        "ed",
+        "ee",
+        "eeo",
+        "ees",
+        "eo",
+        "eos",
+        "g",
+        "h",
+        "he",
+        "ho",
+        "i",
+        "k",
+        "l",
+        "lo",
+        "m",
+        "o",
+        "ockh",
+        "od",
+        "ol",
+        "op",
+        "opch",
+        "opche",
+        "os",
+        "r",
+        "ra",
+        "s",
+        "she",
+        "t",
+        "y",
+        "ych",
+        "yche",
+        "ycheo",
+        "ypche",
+        "ysh",
+        "yt",
+        "yta",
+        "ytch",
+        "yte",
+        "ytee",
+        "yteo"
+      ],
+      "EN_CHSH": [
+        "a",
+        "d",
+        "e",
+        "eo",
+        "o",
+        "y"
+      ],
+      "FQ_CONN": [
+        "a",
+        "o"
+      ],
+      "CC_DAIIN": [
+        "i"
+      ],
+      "CC_OTHER": [
+        "k"
+      ],
+      "FQ_PAIR": [
+        "a",
+        "e",
+        "ee",
+        "o",
+        "y"
+      ],
+      "CC_OL_D": [
+        "a",
+        "ch",
+        "che",
+        "k",
+        "ke",
+        "kee",
+        "she"
+      ],
+      "FQ_CLOSER": [
+        "a",
+        "d",
+        "l",
+        "r",
+        "s",
+        "y"
+      ],
+      "FL_HAZ": [
+        "i",
+        "l",
+        "m",
+        "r"
+      ],
+      "EN_QO": [
+        "a",
+        "ckh",
+        "cth",
+        "d",
+        "e",
+        "eckh",
+        "ee",
+        "ees",
+        "ek",
+        "eo",
+        "eos",
+        "es",
+        "k",
+        "ka",
+        "kai",
+        "kal",
+        "kch",
+        "kche",
+        "ke",
+        "kech",
+        "kee",
+        "keed",
+        "keeo",
+        "keo",
+        "l",
+        "o",
+        "ok",
+        "os",
+        "ot",
+        "pch",
+        "pche",
+        "r",
+        "s",
+        "t",
+        "ta",
+        "tch",
+        "tche",
+        "tcho",
+        "te",
+        "tee",
+        "teo"
+      ],
+      "EN_MINOR": [
+        "a",
+        "ckh",
+        "cph",
+        "cth",
+        "d",
+        "e",
+        "eckh",
+        "ecth",
+        "ed",
+        "ee",
+        "eek",
+        "eeo",
+        "ek",
+        "eo",
+        "eod",
+        "eos",
+        "es",
+        "et",
+        "k",
+        "ke",
+        "o",
+        "ockh",
+        "octh",
+        "od",
+        "ok",
+        "okch",
+        "ol",
+        "or",
+        "ot",
+        "otch",
+        "t"
+      ],
+      "FL_SAFE": [
+        "a",
+        "d",
+        "i",
+        "ii",
+        "l",
+        "n",
+        "o",
+        "r",
+        "y"
+      ]
+    },
+    "chsh_lane_middles": [
+      "a",
+      "d",
+      "e",
+      "eo",
+      "i",
+      "l",
+      "m",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "qo_lane_middles": [
+      "a",
+      "ckh",
+      "cth",
+      "d",
+      "e",
+      "eckh",
+      "ee",
+      "ees",
+      "ek",
+      "eo",
+      "eos",
+      "es",
+      "i",
+      "ii",
+      "k",
+      "ka",
+      "kai",
+      "kal",
+      "kch",
+      "kche",
+      "ke",
+      "kech",
+      "kee",
+      "keed",
+      "keeo",
+      "keo",
+      "l",
+      "n",
+      "o",
+      "ok",
+      "os",
+      "ot",
+      "pch",
+      "pche",
+      "r",
+      "s",
+      "t",
+      "ta",
+      "tch",
+      "tche",
+      "tcho",
+      "te",
+      "tee",
+      "teo",
+      "y"
+    ],
+    "chsh_exclusive": [
+      "m"
+    ],
+    "qo_exclusive": [
+      "ckh",
+      "cth",
+      "eckh",
+      "ee",
+      "ees",
+      "ek",
+      "eos",
+      "es",
+      "ii",
+      "k",
+      "ka",
+      "kai",
+      "kal",
+      "kch",
+      "kche",
+      "ke",
+      "kech",
+      "kee",
+      "keed",
+      "keeo",
+      "keo",
+      "n",
+      "ok",
+      "os",
+      "ot",
+      "pch",
+      "pche",
+      "t",
+      "ta",
+      "tch",
+      "tche",
+      "tcho",
+      "te",
+      "tee",
+      "teo"
+    ],
+    "forbidden_exclusive_lane": {
+      "aiin": {
+        "in_chsh": false,
+        "in_qo": false
+      },
+      "al": {
+        "in_chsh": false,
+        "in_qo": false
+      },
+      "edy": {
+        "in_chsh": false,
+        "in_qo": false
+      },
+      "ey": {
+        "in_chsh": false,
+        "in_qo": false
+      },
+      "l": {
+        "in_chsh": true,
+        "in_qo": true
+      }
+    },
+    "safe_exclusive_lane": {
+      "am": {
+        "in_chsh": false,
+        "in_qo": false
+      },
+      "d": {
+        "in_chsh": true,
+        "in_qo": true
+      },
+      "eo": {
+        "in_chsh": true,
+        "in_qo": true
+      },
+      "i": {
+        "in_chsh": true,
+        "in_qo": true
+      },
+      "in": {
+        "in_chsh": false,
+        "in_qo": false
+      },
+      "m": {
+        "in_chsh": true,
+        "in_qo": false
+      },
+      "s": {
+        "in_chsh": true,
+        "in_qo": true
+      },
+      "y": {
+        "in_chsh": true,
+        "in_qo": true
+      }
+    }
+  },
+  "section2_cc_trigger_context": {
+    "cc_before_forbidden": {
+      "CC_OL": 177,
+      "CC_DAIIN": 139,
+      "CC_OL_D": 96
+    },
+    "cc_before_nonforbidden": {
+      "CC_DAIIN": 139,
+      "CC_OL": 159,
+      "CC_OL_D": 87
+    },
+    "total_forbidden_with_cc": 412,
+    "total_nonforbidden_with_cc": 385,
+    "fisher_test": {
+      "table": [
+        [
+          316,
+          96
+        ],
+        [
+          298,
+          87
+        ]
+      ],
+      "odds_ratio": 0.961,
+      "p_value": 0.866218
+    }
+  },
+  "section3_lane_activation": {
+    "context_by_direction": {
+      "FORWARD": {
+        "UNCLEAR": 128,
+        "CHSH": 31,
+        "MIXED": 31,
+        "QO": 51
+      },
+      "REVERSE": {
+        "CHSH": 26,
+        "UNCLEAR": 55,
+        "QO": 40,
+        "MIXED": 24
+      },
+      "SELF_LOOP": {
+        "QO": 65,
+        "UNCLEAR": 96,
+        "CHSH": 36,
+        "MIXED": 22
+      },
+      "CROSS_GROUP": {
+        "MIXED": 6,
+        "CHSH": 15,
+        "QO": 11,
+        "UNCLEAR": 12
+      }
+    }
+  },
+  "section4_lane_direction": {
+    "qo_context_hazard": {
+      "FQ_CONN->FQ_CONN": 16,
+      "FQ_CLOSER->FQ_CONN": 6,
+      "EN_CHSH->FQ_CLOSER": 10,
+      "EN_CHSH->FQ_CONN": 6,
+      "EN_CHSH->EN_CHSH": 29,
+      "FQ_CLOSER->EN_CHSH": 4,
+      "FL_HAZ->FL_HAZ": 18,
+      "FL_HAZ->FQ_CONN": 17,
+      "FL_HAZ->EN_CHSH": 17,
+      "FQ_CONN->FQ_CLOSER": 5,
+      "FQ_CONN->EN_CHSH": 9,
+      "FQ_CONN->FL_HAZ": 7,
+      "EN_CHSH->FL_HAZ": 13,
+      "FL_HAZ->FQ_CLOSER": 4,
+      "FQ_CLOSER->FQ_CLOSER": 2,
+      "FQ_CLOSER->FL_HAZ": 4
+    },
+    "chsh_context_hazard": {
+      "FQ_CONN->EN_CHSH": 9,
+      "EN_CHSH->FL_HAZ": 10,
+      "FQ_CONN->FQ_CLOSER": 6,
+      "EN_CHSH->EN_CHSH": 18,
+      "FL_HAZ->FL_HAZ": 10,
+      "FQ_CONN->FQ_CONN": 6,
+      "FQ_CLOSER->FQ_CLOSER": 2,
+      "FQ_CLOSER->FQ_CONN": 9,
+      "EN_CHSH->FQ_CONN": 3,
+      "FL_HAZ->EN_CHSH": 11,
+      "FL_HAZ->FQ_CLOSER": 5,
+      "FQ_CONN->FL_HAZ": 5,
+      "FQ_CLOSER->EN_CHSH": 1,
+      "FQ_CLOSER->FL_HAZ": 7,
+      "FL_HAZ->FQ_CONN": 5,
+      "EN_CHSH->FQ_CLOSER": 1
+    },
+    "qo_reverse": 40,
+    "chsh_reverse": 26,
+    "total_qo": 167,
+    "total_chsh": 108
+  }
+}

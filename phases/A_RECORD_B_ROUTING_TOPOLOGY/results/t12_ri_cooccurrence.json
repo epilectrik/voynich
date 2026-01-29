@@ -1,0 +1,90 @@
+{
+  "total_ri_occurrences": 778,
+  "unique_ri_types": 707,
+  "singleton_rate": 95.33239038189534,
+  "shared_across_paragraphs_rate": 4.667609618104668,
+  "top_ri": [
+    [
+      "cthody",
+      16
+    ],
+    [
+      "ctho",
+      15
+    ],
+    [
+      "ctheody",
+      6
+    ],
+    [
+      "ctholy",
+      4
+    ],
+    [
+      "cthod",
+      4
+    ],
+    [
+      "chotols",
+      3
+    ],
+    [
+      "opydaiin",
+      3
+    ],
+    [
+      "damo",
+      3
+    ],
+    [
+      "sydy",
+      2
+    ],
+    [
+      "loiiin",
+      2
+    ],
+    [
+      "qkeody",
+      2
+    ],
+    [
+      "cthchy",
+      2
+    ],
+    [
+      "dytchy",
+      2
+    ],
+    [
+      "qotchod",
+      2
+    ],
+    [
+      "opydy",
+      2
+    ],
+    [
+      "cthodal",
+      2
+    ],
+    [
+      "chykchy",
+      2
+    ],
+    [
+      "yto",
+      2
+    ],
+    [
+      "cthols",
+      2
+    ],
+    [
+      "chotshol",
+      2
+    ]
+  ],
+  "paras_with_multi_ri": 172,
+  "all_unique_within_para": 169
+}

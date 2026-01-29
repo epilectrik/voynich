@@ -1,0 +1,58 @@
+{
+  "unique_middle_count": 858,
+  "shared_middle_count": 481,
+  "unique_token_count": 868,
+  "shared_token_count": 22228,
+  "folios_with_unique": 81,
+  "role_distribution": {
+    "classified_only": {
+      "EN": 0,
+      "AX": 0,
+      "FQ": 0,
+      "FL": 0,
+      "CC": 0,
+      "UN": 868
+    },
+    "with_prediction": {
+      "EN": 344,
+      "AX": 139,
+      "FQ": 0,
+      "FL": 0,
+      "CC": 0,
+      "UN": 385
+    }
+  },
+  "un_overlap": {
+    "unique_in_un": 858,
+    "unique_in_classified": 0,
+    "unique_in_both": 0,
+    "unique_only_un": 858,
+    "unique_only_classified": 0,
+    "un_tokens_with_unique_middle": 868,
+    "un_tokens_with_unique_middle_pct": 12.3
+  },
+  "morphology": {
+    "unique_middle_length_mean": 4.55,
+    "shared_middle_length_mean": 2.12,
+    "middle_length_p": 0.0,
+    "unique_word_length_mean": 7.58,
+    "shared_word_length_mean": 5.06,
+    "word_length_p": 0.0,
+    "unique_suffix_rate": 0.831,
+    "shared_suffix_rate": 0.492,
+    "unique_artic_rate": 0.02,
+    "shared_artic_rate": 0.045,
+    "unique_pp_types": 103,
+    "unique_bexcl_types": 755,
+    "unique_pp_atom_containment_pct": 95.7
+  },
+  "position": {
+    "unique_mean_pos": 0.544,
+    "shared_mean_pos": 0.498,
+    "position_p": 3.7e-05,
+    "unique_initial_rate": 0.164,
+    "shared_initial_rate": 0.108,
+    "unique_final_rate": 0.227,
+    "shared_final_rate": 0.106
+  }
+}

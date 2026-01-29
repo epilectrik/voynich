@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 419 validated constraints | **Version:** 2.82
+**Total:** 709 validated constraints | **Version:** 3.16
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -269,6 +269,53 @@ Every new constraint MUST specify system scope:
 | 360 | Grammar is LINE-INVARIANT | 2 | B | ⊂ grammar_system |
 | 361 | Adjacent B folios share 1.30x more vocabulary | 2 | B | ⊂ organization |
 | 367 | Sections are QUIRE-ALIGNED (4.3x) | 2 | B | ⊂ organization |
+
+---
+
+## Paragraph Architecture (C840-C869)
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| 840 | B paragraph = mini-program (gallows-initial 89%, HT line-1 enriched) | 2 | B | → [C840_b_paragraph_mini_program_structure.md](C840_b_paragraph_mini_program_structure.md) |
+| 841 | B paragraph gallows-initial pattern | 2 | B | → [C841_b_paragraph_gallows_initial.md](C841_b_paragraph_gallows_initial.md) |
+| 842 | B paragraph step-function pattern | 2 | B | → [C842_b_paragraph_step_function.md](C842_b_paragraph_step_function.md) |
+| 843 | B paragraph prefix markers | 2 | B | → [C843_b_paragraph_prefix_markers.md](C843_b_paragraph_prefix_markers.md) |
+| 844 | Folio line-1 double header | 2 | B | → [C844_folio_line1_double_header.md](C844_folio_line1_double_header.md) |
+| 845 | B paragraph self-containment | 2 | B | → [C845_b_paragraph_self_containment.md](C845_b_paragraph_self_containment.md) |
+| 846 | A-B paragraph pool relationship | 2 | A↔B | → [C846_ab_paragraph_pool_relationship.md](C846_ab_paragraph_pool_relationship.md) |
+| 847 | A paragraph size distribution | 2 | A | → [C847_a_paragraph_size_distribution.md](C847_a_paragraph_size_distribution.md) |
+| 848 | A paragraph RI position variance | 2 | A | → [C848_a_paragraph_ri_position_variance.md](C848_a_paragraph_ri_position_variance.md) |
+| 849 | A paragraph section profile | 2 | A | → [C849_a_paragraph_section_profile.md](C849_a_paragraph_section_profile.md) |
+| 850 | A paragraph cluster taxonomy (5 clusters) | 2 | A | → [C850_a_paragraph_cluster_taxonomy.md](C850_a_paragraph_cluster_taxonomy.md) |
+| 851 | B paragraph HT variance validation | 2 | B | → [C851_b_paragraph_ht_variance_validation.md](C851_b_paragraph_ht_variance_validation.md) |
+| 852 | B paragraph section-role interaction | 2 | B | → [C852_b_paragraph_section_role_interaction.md](C852_b_paragraph_section_role_interaction.md) |
+| 853 | B paragraph cluster taxonomy (5 clusters) | 2 | B | → [C853_b_paragraph_cluster_taxonomy.md](C853_b_paragraph_cluster_taxonomy.md) |
+| 854 | A-B paragraph structural parallel | 2 | A↔B | → [C854_ab_paragraph_structural_parallel.md](C854_ab_paragraph_structural_parallel.md) |
+| 855 | Folio role template (role cohesion 0.831) | 2 | B | → [C855_folio_role_template.md](C855_folio_role_template.md) |
+| 856 | Vocabulary distribution (Gini 0.279, distributed) | 2 | B | → [C856_vocabulary_distribution.md](C856_vocabulary_distribution.md) |
+| 857 | First paragraph ordinariness (predicts 11.8%) | 2 | B | → [C857_first_paragraph_ordinariness.md](C857_first_paragraph_ordinariness.md) |
+| 858 | Paragraph count reflects complexity (rho 0.836) | 2 | B | → [C858_paragraph_count_complexity.md](C858_paragraph_count_complexity.md) |
+| 859 | Vocabulary convergence (14%→39% overlap) | 2 | B | → [C859_vocabulary_convergence.md](C859_vocabulary_convergence.md) |
+| 860 | Section paragraph organization (HERBAL 2.2 vs RECIPE 10.2) | 2 | B | → [C860_section_paragraph_organization.md](C860_section_paragraph_organization.md) |
+| 861 | LINK/hazard paragraph neutrality (CV < 0.21) | 2 | B | → [C861_link_hazard_paragraph_neutrality.md](C861_link_hazard_paragraph_neutrality.md) |
+| 862 | Role template verdict: hybrid model | 2 | B | → [C862_role_template_verdict.md](C862_role_template_verdict.md) |
+| 863 | Paragraph-ordinal EN subfamily gradient (qo-early, ch-late) | 3 | B | → [C863_paragraph_ordinal_en_gradient.md](C863_paragraph_ordinal_en_gradient.md) |
+| 864 | Gallows paragraph marker (81.5% gallows-initial) | 2 | B | → [C864_gallows_paragraph_marker.md](C864_gallows_paragraph_marker.md) |
+| 865 | Gallows folio position (k/f front-biased, p/t distributed) | 2 | B | → [C865_gallows_folio_position.md](C865_gallows_folio_position.md) |
+| 866 | Gallows morphological patterns (k uses e, f often bare) | 2 | B | → [C866_gallows_morphological_patterns.md](C866_gallows_morphological_patterns.md) |
+| 867 | P-T transition dynamics (p stable 54%, t returns to p 50%) | 2 | B | → [C867_p_t_transition_dynamics.md](C867_p_t_transition_dynamics.md) |
+| 868 | Gallows-QO/CHSH independence (0.3% variance explained) | 2 | B | → [C868_gallows_qochsh_independence.md](C868_gallows_qochsh_independence.md) |
+| 869 | Gallows functional model (f/k openers, p/t modes) | 3 | B | → [C869_gallows_functional_model.md](C869_gallows_functional_model.md) |
+
+---
+
+## HT Token Identity (C870-C872)
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| 870 | Line-1 HT folio specificity (86% singletons, 1229 Line-1-only) | 2 | HT | → [C870_line1_ht_folio_specificity.md](C870_line1_ht_folio_specificity.md) |
+| 871 | HT role cooccurrence pattern (enriched FL, depleted CC/FQ) | 2 | HT | → [C871_ht_role_cooccurrence_pattern.md](C871_ht_role_cooccurrence_pattern.md) |
+| 872 | HT discrimination vocabulary interpretation | 3 | HT | → [C872_ht_discrimination_vocabulary.md](C872_ht_discrimination_vocabulary.md) |
 
 ---
 
@@ -623,6 +670,411 @@ Every new constraint MUST specify system scope:
 | **600** | **CC Trigger Sub-Group Selectivity** (chi2=129.2 p=9.6e-21; daiin/ol trigger EN_CHSH 1.60-1.74x, avoid EN_QO 0.18x; ol-derived reverses: EN_QO 1.39x) | 2 | B | -> [C600_cc_trigger_subgroup_selectivity.md](C600_cc_trigger_subgroup_selectivity.md) |
 | **601** | **Hazard Sub-Group Concentration** (19 events from 3 source sub-groups: FL_HAZ/EN_CHSH/FQ_CONN; EN_CHSH absorbs 58%; QO never participates) | 2 | B | -> [C601_hazard_subgroup_concentration.md](C601_hazard_subgroup_concentration.md) |
 | **602** | **REGIME-Conditioned Sub-Role Grammar** (4/5 pairs REGIME-dependent; AX->FQ REGIME-independent; core routing invariant, magnitudes shift by REGIME) | 2 | B | -> [C602_regime_conditioned_subrole_grammar.md](C602_regime_conditioned_subrole_grammar.md) |
+| **603** | **CC Folio-Level Subfamily Prediction** (CC_OL_D fraction->QO proportion rho=0.355 p=0.001; CC_DAIIN fraction->CHSH proportion rho=0.345 p=0.002; CC composition strongest predictor of EN subfamily balance) | 2 | B | -> [C603_cc_folio_level_subfamily_prediction.md](C603_cc_folio_level_subfamily_prediction.md) |
+| **604** | **C412 REGIME Decomposition** (C412 rho=-0.304 partially REGIME-mediated, 27.6% reduction; vanishes within REGIME_1 rho=-0.075 and REGIME_2 rho=-0.051; EN subfamily 8.2% and CC composition 11.7% do not mediate) | 2 | B | -> [C604_c412_regime_decomposition.md](C604_c412_regime_decomposition.md) |
+| **605** | **Two-Lane Folio-Level Validation** (lane balance predicts escape_density rho=-0.506 vs ch_preference rho=-0.301; adds independent info partial rho=-0.452 p<0.0001; two-lane model validated at folio level) | 2 | B | -> [C605_two_lane_folio_validation.md](C605_two_lane_folio_validation.md) |
+| **606** | **CC->EN Line-Level Routing** (chi2=40.28 p<10^-6 V=0.246; CC_OL_D->QO 1.67x enrichment; same-lane pairs 1.81-1.83 tokens apart vs cross-lane 2.48-2.78; token-level routing confirmed) | 2 | B | -> [C606_cc_en_line_level_routing.md](C606_cc_en_line_level_routing.md) |
+| **607** | **Line-Level Escape Prediction** (EN_CHSH->escape rho=-0.707 n=2240 p<10^-6, 2.3x stronger than folio C412 rho=-0.304; lane balance->escape rho=-0.363 n=409; escape is line-level phenomenon) | 2 | B | -> [C607_line_level_escape_prediction.md](C607_line_level_escape_prediction.md) |
+| **608** | **No Lane Coherence / Local Routing** (coherence p=0.963, lines do not specialize; directionality diff=-0.008 CI[-0.151,0.141]; two-lane model is local token routing, not line-level identity) | 2 | B | -> [C608_no_lane_coherence.md](C608_no_lane_coherence.md) |
+| **609** | **LINK Density Reconciliation** (true density 13.2%=3,047/23,096; legacy 6.6% and 38% not reproducible; LINK cuts all 5 ICC roles: AX 26.2%, EN 19.0%, CC 13.8%; 'ol' in MIDDLE 41.2%, PREFIX 28.7%) | 2 | B | -> [C609_link_density_reconciliation.md](C609_link_density_reconciliation.md) |
+| **610** | **UN Morphological Profile** (7,042 tokens=30.5% B; 2x suffix rate 77.3% vs 38.7%; 5.3x articulator rate; 79.4% PP MIDDLEs, 0% RI; 90.7% novel MIDDLEs contain PP atoms; complexity is mechanism of non-classification) | 2 | B | -> [C610_un_morphological_profile.md](C610_un_morphological_profile.md) |
+| **611** | **UN Role Prediction** (PREFIX assigns 99.2%; consensus 99.9%; EN 37.1%, AX 34.6%, FQ 22.4%, FL 5.9%, CC 0.0%; CC fully resolved; UN is morphological tail of EN/AX/FQ) | 2 | B | -> [C611_un_role_prediction.md](C611_un_role_prediction.md) |
+| **612** | **UN Population Structure** (bifurcates k=2 silhouette=0.263; Cluster 0 high-suffix EN/AX, Cluster 1 lower-suffix FQ/AX; hapax longer 6.65 vs 5.84 p<0.0001; UN~TTR rho=+0.631***, UN~LINK rho=-0.524***; REGIME ns) | 2 | B | -> [C612_un_population_structure.md](C612_un_population_structure.md) |
+| **613** | **AX-UN Boundary** (2,150 AX-predicted UN tokens; similar positions p=0.084; similar transition contexts; boundary continuous not categorical; if absorbed AX grows 17.9%->27.2% of B) | 2 | B | -> [C613_ax_un_boundary.md](C613_ax_un_boundary.md) |
+| **614** | **AX MIDDLE-Level Routing** (MIDDLE predicts successor role: INIT V=0.167 p<0.001, MED V=0.147 p<0.001, FINAL n.s.; no priming; AX~EN diversity rho=+0.796***; Class 22 = extreme FINAL 62.2% line-final) | 2 | B | -> [C614_ax_middle_level_routing.md](C614_ax_middle_level_routing.md) |
+| **615** | **AX-UN Functional Integration** (2,246 AX-predicted UN route identically all subgroups p>0.1; 89.3% classified AX MIDDLEs shared; 312 truly novel MIDDLEs; combined AX = 6,098 = 26.4% of B) | 2 | B | -> [C615_ax_un_functional_integration.md](C615_ax_un_functional_integration.md) |
+| **616** | **AX Section/REGIME Conditioning** (section: transitions V=0.081, MIDDLE V=0.227; REGIME: transitions V=0.082, AX->EN varies 24.5-39.1% p=0.0006; AX->FQ REGIME-dependent p=0.003 refining C602) | 2 | B | -> [C616_ax_context_conditioning.md](C616_ax_context_conditioning.md) |
+| **617** | **AX-LINK Subgroup Asymmetry** (AX_FINAL 35.3% LINK, AX_INIT 19.4%, AX_MED 3.3%; LINK concentrates at AX boundaries; line co-occurrence chi2=16.21 p<0.001; no folio-level correlation p=0.198) | 2 | B | -> [C617_ax_link_subgroup_asymmetry.md](C617_ax_link_subgroup_asymmetry.md) |
+| **618** | **Unique MIDDLE Identity** (858 unique MIDDLEs are 100% UN, 99.7% hapax, MIDDLE length 4.55 vs 2.12 shared, 83.1% suffix rate, 88% B-exclusive, 95.7% contain PP atoms; morphological extreme tail of B) | 2 | B | -> [C618_unique_middle_identity.md](C618_unique_middle_identity.md) |
+| **619** | **Unique MIDDLE Behavioral Equivalence** (unique vs shared UN transitions: successor V=0.070, predecessor V=0.051; UN-neighbor rate 54.6% vs 47.5%; unique density = UN proportion rho=+0.740***; H1 lexical tail CONFIRMED, H2/H3 REJECTED) | 2 | B | -> [C619_unique_middle_behavioral_equivalence.md](C619_unique_middle_behavioral_equivalence.md) |
+| **620** | **Folio Vocabulary Network** (k=2 silhouette=0.055, ARI_section=0.497, ARI_REGIME=0.022; section-controlled adjacency 1.057x vs raw 1.179x; section H vs rest; no manuscript gradient in unique density p=0.676) | 2 | B | -> [C620_folio_vocabulary_network.md](C620_folio_vocabulary_network.md) |
+| **621** | **Vocabulary Removal Impact** (removing 868 unique MIDDLE tokens: 96.2% survival, mean role shift 2.80 pp, max 7.04 pp, 1/82 folios lose ICC role; UN -2.71 pp; vocabulary minimality is type diversity, not functional necessity) | 2 | B | -> [C621_vocabulary_removal_impact.md](C621_vocabulary_removal_impact.md) |
+| **622** | **Hazard Exposure Anatomy** (43 safe classes: 23 role-excluded (20 AX + 3 CC) + 20 sub-group-excluded (16 EN + 2 FL + 2 FQ); 0 incidental; safe classes route to hazard at 24.6%; FL_SAFE line-final mean=0.811 vs hazard FL 0.546 p<0.001) | 2 | B | -> [C622_hazard_exposure_anatomy.md](C622_hazard_exposure_anatomy.md) |
+| **623** | **Hazard Token Morphological Profile** (18 forbidden tokens: 0% suffix, 0% articulator, 33% prefix; best discriminant 68.8% on n=32 baseline 56.2%; hazard participation is lexically specific, not morphologically predictable) | 2 | B | -> [C623_hazard_token_morphological_profile.md](C623_hazard_token_morphological_profile.md) |
+| **624** | **Hazard Boundary Architecture** (17 forbidden pairs: 0 occurrences confirmed; 114 near-misses; FL/CC buffer enrichment 1.55x/1.50x; AX under-represented 0.84x; selectivity 6.4% of observed pairs; regime does not predict hazard density p=0.26) | 2 | B | -> [C624_hazard_boundary_architecture.md](C624_hazard_boundary_architecture.md) |
+| **625** | **Hazard Circuit Token Mapping** (6/12 classifiable forbidden pairs are reverse-circuit flows; circuit topology explains 75% of classifiable pairs; 4 unclassified tokens trivial; Fisher p=0.193 odds ratio 2.44) | 2 | B | -> [C625_hazard_circuit_token_mapping.md](C625_hazard_circuit_token_mapping.md) |
+| **626** | **Lane-Hazard MIDDLE Discrimination** (NULL: two-lane architecture does NOT predict hazard; forbidden MIDDLEs in neither lane 4/5; CC trigger p=0.866; QO contexts have 55% more hazard bigrams than CHSH) | 2 | B | -> [C626_lane_hazard_middle_discrimination.md](C626_lane_hazard_middle_discrimination.md) |
+| **627** | **Forbidden Pair Selectivity** (no frequency bias rank 0.562; 0/17 reciprocal-forbidden; circuit topology explains 9/12=75%; FQ_CLOSER boundary tokens account for 3 unexplained; directional token-specific lookup table) | 2 | B | -> [C627_forbidden_pair_selectivity.md](C627_forbidden_pair_selectivity.md) |
+| **628** | **FQ_CLOSER Positional Segregation Test** (dy→aiin positionally separated via 35.8% final bias p<0.000001; dy→chey genuine prohibition 1 adj to class but 0 to token; l→chol genuine prohibition 4 adj to class but 0 to token; boundary gap not discriminative) | 2 | B | -> [C628_fq_closer_positional_segregation.md](C628_fq_closer_positional_segregation.md) |
+| **629** | **FQ_CLOSER Source Token Discrimination** (dy c9 restart rate 0% vs s 48.6%; forbidden sources lower hazard rate 28.2% vs 35.5%; higher EN_CHSH rate 13.1% vs 8.6%; JSD 0.219; class 23 contains restart specialists and general distributors) | 2 | B | -> [C629_fq_closer_source_discrimination.md](C629_fq_closer_source_discrimination.md) |
+| **630** | **FQ_CLOSER Boundary Mechanism** (25% gap resolved: dy→aiin positional, l→chol frequency artifact P(0)=0.85, dy→chey likely genuine E=1.32; s→aiin 20x over-represented dominates restart loop; class 23 not unified mechanism) | 2 | B | -> [C630_fq_closer_boundary_mechanism.md](C630_fq_closer_boundary_mechanism.md) |
+| **631** | **Intra-Class Clustering Census** (effective vocabulary 56 from 49 classes + 7 k=2 splits; 86% uniform; mean JSD 0.639 continuous not clustered; silhouette <0.25 in 34/36 classes; 480 types compress 8.6x) | 2 | B | -> [C631_intra_class_clustering_census.md](C631_intra_class_clustering_census.md) |
+| **632** | **Morphological Subtype Prediction** (MIDDLE predicts clusters in 6/7 classes ARI=1.0; no significance at n=2-5; class 30 FL_HAZ morphologically opaque; PREFIX/ARTICULATOR zero power; MIDDLE-centric identity validated) | 2 | B | -> [C632_morphological_subtype_prediction.md](C632_morphological_subtype_prediction.md) |
+| **633** | **Effective Vocabulary Census** (56 effective sub-types; FLOW_OPERATOR most diverse mean k=1.50; hazard 50% heterogeneous vs non-hazard 9% Fisher p=0.031; size inversely predicts k rho=-0.321 p=0.025; JSD continuous not discrete) | 2 | B | -> [C633_effective_vocabulary_census.md](C633_effective_vocabulary_census.md) |
+| **634** | **Recovery Pathway Profiling** (0/13 KW tests significant; kernel absorption exit rate ~98-100% all REGIMEs; recovery path mean 3.76-4.78; post-kernel EN-dominated ~49-75%; recovery pathways NOT regime-stratified) | 2 | B | -> [C634_recovery_pathway_profiling.md](C634_recovery_pathway_profiling.md) |
+| **635** | **Escape Strategy Decomposition** (0/9 per-folio KW significant; aggregate chi2 first-EN p=0.0003 but folio-level NS; JSD between REGIME fingerprints 0.031-0.082; escape strategies NOT regime-stratified) | 2 | B | -> [C635_escape_strategy_decomposition.md](C635_escape_strategy_decomposition.md) |
+| **636** | **Recovery-Regime Interaction** (10/12 features FREE; 2/12 SUPPRESSOR: e_rate partial_p=0.0005 eta_sq=0.188, h_rate partial_p<0.0001 eta_sq=0.293; class composition masks kernel routing; recovery UNCONDITIONALLY FREE with latent e/h suppressor) | 2 | B | -> [C636_recovery_regime_interaction.md](C636_recovery_regime_interaction.md) |
+| **637** | **B MIDDLE Sister Preference** (77 MIDDLEs, 22.9% of ch_preference variance from MIDDLE composition rho=0.479 p=0.000005; B less differentiated than A 0.140 vs 0.254; A-B cross-system rho=0.440 p=0.003; ok/ot near 50/50 less differentiated) | 2 | B | -> [C637_b_middle_sister_preference.md](C637_b_middle_sister_preference.md) |
+| **638** | **Quire Sister Consistency** (quire KW H=32.002 p=0.0001 eta_sq=0.329; ICC(1,1)=0.362 FAIR; but CONFOUNDED with section Cramer's V=0.875; within section H quire NS p=0.665; section KW eta_sq=0.321 3.6x stronger than REGIME eta_sq=0.088) | 2 | B | -> [C638_quire_sister_consistency.md](C638_quire_sister_consistency.md) |
+| **639** | **Sister Pair Variance Decomposition** (47.1% explained adj_R2=32.3%; 52.9% UNEXPLAINED free choice; shared variance 36.4% dominates; unique: quire 3.8%, lane balance 2.7%, MIDDLE 2.6%, REGIME 1.2%, section 0.4%; clean residuals no autocorrelation) | 2 | B | -> [C639_sister_pair_variance_decomposition.md](C639_sister_pair_variance_decomposition.md) |
+| **640** | **PP Role Projection Architecture** (89/404 PP match B classes 22%; B has only 90 MIDDLEs from 480 types; B-Native 100% EN-dominant 8/8; AZC-Med AX 53.1% EN 40.7%; PP role dist differs from B shares chi2=42.37 p<0.0001; AX over-represented CC/FQ absent; frequency confound severe p<0.0001) | 2 | CROSS_SYSTEM | -> [C640_pp_role_projection_architecture.md](C640_pp_role_projection_architecture.md) |
+| **641** | **PP Population Execution Profiles** (AZC-Med/B-Native differ: AX p=0.006, EN p=0.001; REGIME_2 p=0.0004, REGIME_3 p<0.0001; suffix diversity p<0.0001 frequency-confounded rho=0.795; EN subfamily partially independent of PREFIX rho=0.510; QO records smaller 5.5 vs 7.4, ANIMAL-enriched p=0.003) | 2 | CROSS_SYSTEM | -> [C641_pp_population_execution_profiles.md](C641_pp_population_execution_profiles.md) |
+| **642** | **A Record Role & Material Architecture** (lattice 8.0% density 92% incompatibility; pair-level role heterogeneity at chance p=0.55; record-level role coverage below expected 1.91 vs 2.13 p=0.022; material consistency BELOW chance 0.6% vs 4.1% p=0.0006 active mixing; material-role NS V=0.122) | 2 | CROSS_SYSTEM | -> [C642_a_record_role_material_architecture.md](C642_a_record_role_material_architecture.md) |
+| **643** | **Lane Hysteresis Oscillation** (EN alternation 0.563 vs null 0.494 p<0.0001; run lengths QO=1.46 CHSH=1.61 median 1.0; QO exits faster 60.0% vs CHSH 53.3%; section variation BIO=0.606 HERBAL_B=0.427; extends C549 within-line) | 2 | B | -> [C643_lane_hysteresis_oscillation.md](C643_lane_hysteresis_oscillation.md) |
+| **644** | **QO Transition Stability** (QO mean stability=0.318 CHSH=0.278 p=0.0006 r=-0.039; entropy QO=4.08 CHSH=4.51; small effect; QO in more predictable contexts) | 2 | B | -> [C644_qo_transition_stability.md](C644_qo_transition_stability.md) |
+| **645** | **CHSH Post-Hazard Dominance** (post-hazard EN: CHSH=75.2% QO=24.8%; QO enrichment 0.55x depleted; CHSH closer to hazard mean=3.81 vs 3.82 p=0.002 r=0.072; extends C601 continuous gradient) | 2 | B | -> [C645_chsh_post_hazard_dominance.md](C645_chsh_post_hazard_dominance.md) |
+| **646** | **PP-Lane MIDDLE Discrimination** (20/99 PP MIDDLEs predict lane FDR<0.05 z=24.26; 15 QO 5 CHSH; QO=k/t ENERGY_OPERATOR 11/15; CHSH=o AUXILIARY 3/5; 17/20 EN-mediated caveat; 3 non-EN novel; no obligatory slots) | 2 | A/B | -> [C646_pp_lane_middle_discrimination.md](C646_pp_lane_middle_discrimination.md) |
+| **647** | **Morphological Lane Signature** (QO k=70.7% CHSH e=68.7% V=0.654 p<0.0001; CC proximity shows no discrimination p=0.879; signature is MIDDLE-internal not positional; lanes built from different kernel-character vocabularies) | 2 | B | -> [C647_morphological_lane_signature.md](C647_morphological_lane_signature.md) |
+| **648** | **LINK-Lane Independence** (QO 15.4% vs CHSH 14.7% LINK chi2=0.44 p=0.506 V=0.0095; excluding AX_FINAL 11.0% vs 11.1%; monitoring operates above lane identity) | 2 | B | -> [C648_link_lane_independence.md](C648_link_lane_independence.md) |
+| **649** | **EN-Exclusive MIDDLE Deterministic Lane Partition** (22/30 exclusive MIDDLEs 100% lane-specific FDR<0.05; 13 QO-only k/t/p-initial 9 CHSH-only e/o-initial; absolute not probabilistic) | 2 | B | -> [C649_exclusive_middle_lane_partition.md](C649_exclusive_middle_lane_partition.md) |
+| **650** | **Section-Driven EN Oscillation Rate** (section partial eta2=0.174 p=0.024 controlling REGIME; REGIME eta2=0.158 p=0.069 NS controlling section; BIO=0.593 HERBAL=0.457; material type drives oscillation) | 2 | B | -> [C650_section_driven_oscillation.md](C650_section_driven_oscillation.md) |
+| **651** | **Fast Uniform Post-Hazard QO Recovery** (CHSH 75.2% first-EN post-hazard replicates C645; mean 0.77 CHSH before QO median=1.0; 45.1% immediate; no section/REGIME/class variation; unconditionally stable) | 2 | B | -> [C651_fast_post_hazard_recovery.md](C651_fast_post_hazard_recovery.md) |
+| **652** | **PP Lane Character Asymmetry** (25.5% QO-predicting at type level p<3e-14; 31.3% token level; 3:1 CHSH bias in PP vocabulary; material class NS chi2=2.4 p=0.49) | 2 | GLOBAL | -> [C652_pp_lane_character_asymmetry.md](C652_pp_lane_character_asymmetry.md) |
+| **653** | **AZC Lane Filtering Bias** (AZC-Med 19.7% QO vs B-Native 33.7% QO; OR=0.48 p=0.023; token-level OR=0.47 p<1e-17; pipeline suppresses QO vocabulary) | 2 | GLOBAL | -> [C653_azc_lane_filtering_bias.md](C653_azc_lane_filtering_bias.md) |
+| **654** | **Non-EN PP Lane Independence** (partial r=0.028 p=0.80 controlling section+REGIME; tautological sensitivity r=0.645; lane is EN-internal not vocabulary-landscape; grammar compensates 2.2x) | 2 | B | -> [C654_non_en_pp_lane_independence.md](C654_non_en_pp_lane_independence.md) |
+| **655** | **PP Lane Balance Redundancy** (incr R2=0.0005 F=0.058 p=0.81; AZC-Med incr=0.000 B-Native incr=0.004 both NS; A-record vs B-folio KS D=0.554 p<1e-10 divergent; section+REGIME fully account) | 2 | B | -> [C655_pp_lane_balance_redundancy.md](C655_pp_lane_balance_redundancy.md) |
+| **656** | **PP Co-Occurrence Continuity** (max silhouette 0.016 across k=2..20; 76% zero-Jaccard; single connected component; within-Herbal sil=0.020; no discrete PP pools by co-occurrence) | 2 | A | -> [C656_pp_cooccurrence_continuity.md](C656_pp_cooccurrence_continuity.md) |
+| **657** | **PP Behavioral Profile Continuity** (93 eligible PP; best sil=0.237 degenerate k=2: 2 vs 91; mean JSD=0.537; lane character ARI=0.010; no discrete behavioral clusters) | 2 | B | -> [C657_pp_behavioral_profile_continuity.md](C657_pp_behavioral_profile_continuity.md) |
+| **658** | **PP Material Gradient** (36.2% entropy reduction as gradient not partition; NMI(pool,material)=0.129; chi2 p=0.002 V=0.392; pool 18 54% MIXED; all cross-axis NMI<0.15) | 2 | A | -> [C658_pp_material_gradient.md](C658_pp_material_gradient.md) |
+| **659** | **PP Axis Independence** (co-occurrence vs behavior ARI=0.052; NMI material=0.129 pathway=0.032 lane=0.062 section=0.087; role eta2 mean=0.146; axes mutually independent; PP is high-dimensional continuous space) | 2 | A/B | -> [C659_pp_axis_independence.md](C659_pp_axis_independence.md) |
+| **660** | **PREFIX x MIDDLE Selectivity Spectrum** (128 testable: 3.9% locked, 27.3% dominant, 22.7% bimodal, 46.1% promiscuous; QO 100% qo-locked; chi2=50.65 V=0.445; B wider than A Jaccard=0.484) | 2 | B | -> [C660_prefix_middle_selectivity_spectrum.md](C660_prefix_middle_selectivity_spectrum.md) |
+| **661** | **PREFIX x MIDDLE Behavioral Interaction** (within-MIDDLE between-PREFIX JSD=0.425 vs between-MIDDLE JSD=0.436; effect ratio=0.975 computed / 0.792 vs C657; PREFIX transforms behavior; ckh JSD=0.710 max) | 2 | B | -> [C661_prefix_middle_behavioral_interaction.md](C661_prefix_middle_behavioral_interaction.md) |
+| **662** | **PREFIX Role Reclassification** (mean 75% class reduction median 82%; EN PREFIX->EN class 94.1%; AX PREFIX->AX/FQ 70.8%; 50.4% of pairs reduce to <20% of MIDDLE's classes) | 2 | B | -> [C662_prefix_role_reclassification.md](C662_prefix_role_reclassification.md) |
+| **663** | **Effective PREFIX x MIDDLE Inventory** (1190 observed, 501 effective pairs, 1.24x expansion; best sil=0.350 k=2 vs C657 0.237; k=3 degenerate; binary EN/non-EN split) | 2 | B | -> [C663_effective_prefix_middle_inventory.md](C663_effective_prefix_middle_inventory.md) |
+| **664** | **Role Profile Trajectory** (AX increases late rho=+0.082 p<0.001 Q1=15.4% Q4=18.1%; EN marginal decline; CC/FL/FQ flat; EN slope regime-dependent KW p=0.038; folio trajectory clustering k=2 sil=0.451 two outliers) | 2 | B | -> [C664_role_profile_trajectory.md](C664_role_profile_trajectory.md) |
+| **665** | **LINK Density Trajectory** (stationary within folios rho=+0.020 p=0.333 KW p=0.559; extends C365 line-level uniformity to meso-temporal; REGIME_3 steepest +0.051 but NS) | 2 | B | -> [C665_link_density_trajectory.md](C665_link_density_trajectory.md) |
+| **666** | **Kernel Contact Trajectory** (k/h/e all stationary within folios; e dominates ~29% flat; k rare ~0.2% flat; k/e ratio flat rho=-0.023 p=0.29; extends C458 between-folio clamping to within-folio) | 2 | B | -> [C666_kernel_contact_trajectory.md](C666_kernel_contact_trajectory.md) |
+| **667** | **Escape/Hazard Density Trajectory** (hazard density flat rho=+0.009 p=0.650; 0 forbidden events in corpus; escape density flat; Q4 escape efficiency drops 0.579 vs 0.636; REGIME_2/3 late hazard increase) | 2 | B | -> [C667_escape_hazard_trajectory.md](C667_escape_hazard_trajectory.md) |
+| **668** | **Lane Balance Trajectory** (QO fraction declines rho=-0.058 p=0.006 Q1=46.3% Q4=41.3%; REGIME_2 strongest -9.9pp; REGIME_4 flat +1.4pp; CHSH-ward drift = energy-to-stabilization shift) | 2 | B | -> [C668_lane_balance_trajectory.md](C668_lane_balance_trajectory.md) |
+| **669** | **Hazard Proximity Trajectory** (mean distance-to-hazard tightens rho=-0.104 p<0.001 Q1=2.75 Q4=2.45; QO tightens rho=-0.082 p=0.003 CHSH static; REGIME_2 strongest -0.602; REGIME_4 flat -0.051) | 2 | B | -> [C669_hazard_proximity_trajectory.md](C669_hazard_proximity_trajectory.md) |
+| **670** | **Adjacent-Line Vocabulary Coupling** (no coupling; Jaccard obs=0.140 perm=0.126 diff=+0.014; 0/79 folios sig; MIDDLEs selected independently per line) | 0 | B | -> [C670_adjacent_line_vocabulary_coupling.md](C670_adjacent_line_vocabulary_coupling.md) |
+| **671** | **MIDDLE Novelty Shape** (front-loaded; 87.3% FL 0% BL; first-half frac=0.685 vs perm=0.653; vocabulary introduced early, reused late) | 0 | B | -> [C671_middle_novelty_shape.md](C671_middle_novelty_shape.md) |
+| **672** | **Cross-Line Boundary Grammar** (grammar-transparent; H_boundary=4.284 H_within=4.628 ratio=0.926; chi2 p=0.187 not sig non-independent; 7.4% entropy reduction at boundaries) | 0 | B | -> [C672_cross_line_boundary_grammar.md](C672_cross_line_boundary_grammar.md) |
+| **673** | **CC Trigger Sequential Independence** (no memory; self-transition 0.390 vs perm 0.395 p=1.0; CC trigger re-selected each line independently) | 0 | B | -> [C673_cc_trigger_sequential_independence.md](C673_cc_trigger_sequential_independence.md) |
+| **674** | **EN Lane Balance Autocorrelation** (folio-driven; raw lag-1 rho=0.167 p<1e-6 but perm p=1.0; lag-2/3 stronger than lag-1; autocorrelation entirely explained by folio identity) | 0 | B | -> [C674_en_lane_balance_autocorrelation.md](C674_en_lane_balance_autocorrelation.md) |
+| **675** | **MIDDLE Vocabulary Trajectory** (minimal drift; JSD Q1-Q4=0.081 ratio=1.078; 4/135 MIDDLEs positionally biased after Bonferroni; token identity position-invariant) | 0 | B | -> [C675_middle_vocabulary_trajectory.md](C675_middle_vocabulary_trajectory.md) |
+| **676** | **Morphological Parameterization Trajectory** (PREFIX chi2 p=3.7e-9 suffix p=1.7e-7; qo PREFIX rho=-0.085 bare suffix rho=+0.095; morphological simplification late) | 0 | B | -> [C676_morphological_parameterization_trajectory.md](C676_morphological_parameterization_trajectory.md) |
+| **677** | **Line Complexity Trajectory** (unique tokens rho=-0.196 p<1e-21; unique MIDDLEs rho=-0.174; mean token len rho=-0.093; TTR flat 0.962; lines shorten late, equally diverse per token) | 0 | B | -> [C677_line_complexity_trajectory.md](C677_line_complexity_trajectory.md) |
+| **678** | **Line Profile Classification** (continuous; best KMeans sil=0.100 no discrete types; PC1=morphological complexity 12.1%; PC2=monitoring intensity 9.3%; 10 PCs for 68.3%) | 0 | B | -> [C678_line_profile_classification.md](C678_line_profile_classification.md) |
+| **679** | **Line Type Sequencing** (weak coupling; adjacent cosine sim=0.675 vs random=0.641 diff=+0.031 p<0.001; 3.1% similarity elevation for consecutive lines) | 0 | B | -> [C679_line_type_sequencing.md](C679_line_type_sequencing.md) |
+| **680** | **Positional Feature Prediction** (11/27 features position-correlated; 9/27 add beyond REGIME; line_length dR2=0.040 strongest; 16/27 position-independent) | 0 | B | -> [C680_positional_feature_prediction.md](C680_positional_feature_prediction.md) |
+| **681** | **Sequential Coupling Verdict** (24/27 features lag-1 sig; SEQUENTIALLY_COUPLED but folio-mediated not sequential; top: line_length dR2=0.098 EN dR2=0.091 LINK dR2=0.063; lines = contextually-coupled independently-assessed) | 0 | B | -> [C681_sequential_coupling_verdict.md](C681_sequential_coupling_verdict.md) |
+| **682** | **Survivor Distribution Profile** (mean 11.08/49 classes survive per A record; median=10 std=5.79; 1.2% zero-class; token survival mean=38.5/4889; right-skewed distribution) | 2 | A-B | -> [C682_survivor_distribution_profile.md](C682_survivor_distribution_profile.md) |
+| **683** | **Role Composition Under Filtering** (FL most depleted 60.9%; CC 44.6%; FQ most resilient 12.5%; role entropy mean=1.611/2.322; asymmetric depletion hierarchy) | 2 | A-B | -> [C683_role_composition_under_filtering.md](C683_role_composition_under_filtering.md) |
+| **684** | **Hazard Pruning Under Filtering** (83.9% full elimination of all 17 forbidden transitions; mean 0.21 active; max 5; filtering = natural hazard suppression) | 2 | A-B | -> [C684_hazard_pruning_under_filtering.md](C684_hazard_pruning_under_filtering.md) |
+| **685** | **LINK and Kernel Survival Rates** (97.4% kernel union access h=95.5% k=81.0% e=60.7%; 36.5% lose all LINK tokens; monitoring capacity fragile) | 2 | A-B | -> [C685_link_kernel_survival_rates.md](C685_link_kernel_survival_rates.md) |
+| **686** | **Role Vulnerability Gradient** (FL most fragile 2.3% at 0-2 PP; FQ most resilient 13.5%; vulnerability ordering FL>EN>AX>CC>FQ; all roles >0% in all PP bins) | 2 | A-B | -> [C686_role_vulnerability_gradient.md](C686_role_vulnerability_gradient.md) |
+| **687** | **Composition-Filtering Interaction** (PURE_RI mean=0.44 classes near-zero; MIXED=PURE_PP p=0.997; only 9 PURE_RI records; composition binary divide PP vs RI) | 2 | A-B | -> [C687_composition_filtering_interaction.md](C687_composition_filtering_interaction.md) |
+| **688** | **REGIME Filtering Robustness** (REGIME_2 most robust 0.222; REGIME_3 least 0.167; REGIMEs 1/2/4 clustered ~0.21; filtering severity A-record-driven not REGIME-driven) | 2 | A-B | -> [C688_regime_filtering_robustness.md](C688_regime_filtering_robustness.md) |
+| **689** | **Survivor Set Uniqueness** (1525/1562 unique class sets = 97.6%; Jaccard mean=0.199; each A record = near-unique filter fingerprint) | 2 | A-B | -> [C689_survivor_set_uniqueness.md](C689_survivor_set_uniqueness.md) |
+| **690** | **Line-Level Legality Distribution** (25/32 pairings >50% empty lines; median record makes 74-100% empty; no positional effect rho=0.005 p=0.87; max-classes = 7-27% empty) | 2 | A-B | -> [C690_line_level_legality_distribution.md](C690_line_level_legality_distribution.md) |
+| **691** | **Program Coherence Under Filtering** (0-20% operational completeness; work group survives best up to 87%; close group is bottleneck; max gap = entire folio for most records) | 2 | A-B | -> [C691_program_coherence_under_filtering.md](C691_program_coherence_under_filtering.md) |
+| **692** | **Filtering Failure Mode Distribution** (94.7% MIDDLE miss, 3.6% PREFIX, 1.7% SUFFIX; consistent across all roles 91-97% MIDDLE; MIDDLE = gatekeeper) | 2 | A-B | -> [C692_filtering_failure_mode_distribution.md](C692_filtering_failure_mode_distribution.md) |
+| **693** | **Usability Gradient** (266x dynamic range; best=0.107 Max-classes; 78% pairings unusable >50% empty; single A record does NOT produce usable B program) | 2 | A-B | -> [C693_usability_gradient.md](C693_usability_gradient.md) |
+| **694** | **RI Placement Non-Random** (Fisher combined KS p ~ 10^-306; inter-RI gaps deviate from geometric; Wald-Wolfowitz runs test p=0.78 ns) | 2 | A | |
+| **695** | **PP-Run Length Distribution** (KS p ~ 10^-44; PP-pure runs non-geometric; 365 bundles, sizes 1-12, mean 2.71) | 2 | A | |
+| **696** | **RI Line-Final Preference** (1.48x enrichment, p=1.26e-07; threshold artifact from strict RI definition vs C498's 1.76x) | 2 | A | |
+| **697** | **PREFIX Clustering Within Lines** (observed entropy < shuffled, p < 10^-4; PREFIXes cluster within A lines) | 2 | A | |
+| **698** | **Bundle-C424 Size Match** (INFORMATIONAL; bundles and C424 adjacency clusters are distinct constructs; KS p < 0.001) | 2 | A | |
+| **699** | **Within-Bundle PP Coherence** (FALSIFIED; within=0.0973, between=0.0962, ratio 1.01x; no vocabulary coherence in bundles) | 1 | A | |
+| **700** | **Bundle PP Exceeds Random** (MARGINAL; 1.02x effect, Fisher p < 10^-157 but median per-bundle p=0.512) | 2 | A | |
+| **701** | **Bundle PP Diversity** (FALSIFIED; observed=0.7387 vs shuffled=0.7438, p=0.336; no structured diversity) | 1 | A | |
+| **702** | **Boundary Vocabulary Discontinuity** (FALSIFIED; interior/boundary ratio 1.06x, p=0.207; no vocabulary cliff at RI boundaries) | 1 | A | |
+| **703** | **PP Folio-Level Homogeneity** (PP MIDDLEs distribute uniformly within A folios; within-bundle = between-bundle Jaccard; RI = structural not vocabular) | 2 | A | -> [C703_pp_folio_level_homogeneity.md](C703_pp_folio_level_homogeneity.md) |
+| **704** | **Folio PP Pool Size** (mean 35.3 MIDDLEs per folio, 7.0x record-level; range 20-88; folio = complete PP specification) | 2 | A | |
+| **705** | **Folio-Level Class Survival** (mean 39.8/49 classes = 81.2%; 3.6x improvement over record-level 11.08/49; min 30/49) | 2 | A-B | -> [C705_folio_level_class_survival.md](C705_folio_level_class_survival.md) |
+| **706** | **B Line Viability Under Folio Filtering** (13.7% empty lines vs 78% record-level; 76.3% pairings have <=20% empty) | 2 | A-B | |
+| **707** | **Folio Usability Dynamic Range** (14.3x range vs 266x record-level; best=0.343 vs 0.107; worst nonzero=0.024) | 2 | A-B | |
+| **708** | **Inter-Folio PP Discrimination** (PP Jaccard=0.274 discriminative; CLASS Jaccard=0.830 convergent; funnel topology) | 2 | A-B | -> [C708_inter_folio_pp_discrimination.md](C708_inter_folio_pp_discrimination.md) |
+| **709** | **Section Invariance** (all sections H/P/T 100% viable; P=0.182, T=0.293 higher than H=0.085; no dead zones) | 2 | A-B | |
+
+### RI Functional Identity (C710-C716) — Phase: RI_FUNCTIONAL_IDENTITY
+
+| # | Constraint | Tier | Scope | Detail |
+|---|------------|------|-------|--------|
+| **710** | **RI-PP Positional Complementarity** (d=0.12, RI slightly later in lines; effect too small for structural complementarity) | 2 | A | |
+| **711** | **RI Vocabulary Density** (rho=0.419 with folio size, below PP's 0.588; mean 6.6 RI types/folio vs 35.3 PP; RI is sparse) | 2 | A | |
+| **712** | **RI Singleton-Repeater Behavioral Equivalence** (KS p=0.16; singletons and repeaters show same positional/final-rate behavior) | 2 | A | |
+| **713** | **Adjacent Line RI Similarity** (ratio 2.25x but absolute Jaccard 0.008 near zero; no meaningful RI sharing between adjacent lines) | 2 | A | |
+| **714** | **Line-Final RI Morphological Profile** (143 unique types in 156 final positions; no morphological difference from non-final RI) | 2 | A | |
+| **715** | **RI-PP Independence** (rho=-0.052; RI diversity 0.74 within PP groups; RI content independent of PP context) | 2 | A | |
+| **716** | **Cross-Folio RI Reuse Independence** (75 RI on 2+ folios; PP Jaccard ratio 1.045; reuse independent of PP context) | 2 | A | |
+
+### PP Line-Type Homogeneity (C717-C718) — Phase: RI_FUNCTIONAL_IDENTITY
+
+| # | Constraint | Tier | Scope | Detail |
+|---|------------|------|-------|--------|
+| **717** | **PP Homogeneity Across Line Types** (PP-pure and RI-bearing lines draw from same PP pool; RI-exclusive PP is sampling artifact, null=9.4 vs obs=8.9, 106% explained; PP-pure alone recovers 90.1% of B class survival) | 2 | A | |
+| **718** | **RI Pipeline Invisibility** (3.9 "RI-gated" B classes per folio are random; zero classes gated in >25% of folios; RI structurally invisible to A-to-B execution pipeline) | 2 | A-B | |
+
+### RI Binding Analysis (C719-C721) — Phase: RI_BINDING_ANALYSIS
+
+| # | Constraint | Tier | Scope | Detail |
+|---|------------|------|-------|--------|
+| **719** | **RI-PP Functional Independence** (0/6 binding tests pass; shared RI does not predict PP similarity J=0.074 vs 0.065, PP consistency ratio 1.05, adjacent PP ratio 0.99; RI and PP are orthogonal discrimination axes) | 2 | A | |
+| **720** | **RI Gallows Independence** (shared RI does not predict gallows domain; cosine 0.244 vs 0.244, ratio 0.998; within-record gallows enrichment C530 is folio-level not RI-mediated) | 2 | A | |
+| **721** | **RI Section Sharing Trivial** (76.6% within-section vs 71.5% expected from section sizes; enrichment 1.07x trivially explained by 95/114 folios being Herbal) | 2 | A | |
+
+### B Legality Gradient (C722-C727) — Phase: B_LEGALITY_GRADIENT
+
+| # | Constraint | Tier | Scope | Detail |
+|---|------------|------|-------|--------|
+| **722** | **Within-Line Accessibility Arch** (B token accessibility follows nonlinear arch by within-line position; initial 0.279, medial 0.306, final 0.282; KW H=74.4, p=2.67e-15; mirrors C556 SETUP-WORK-CLOSE via morphological composition) | 2 | A-B | -> [C722_within_line_accessibility_arch.md](C722_within_line_accessibility_arch.md) |
+| **723** | **Role Accessibility Hierarchy** (FQ 0.582 > EN 0.382 > AX 0.321 > CC 0.261 > FL 0.085; KW p=2.4e-10; FL and CC are near-exclusively B-internal grammar infrastructure) | 2 | A-B | -> [C723_role_accessibility_hierarchy.md](C723_role_accessibility_hierarchy.md) |
+| **724** | **Within-Class Suffix Accessibility Gradient** (up to 19x accessibility variation within same class from SUFFIX alone; Class 33: qokaiin=0.675 vs qokeedy=0.035; confirms C502.a three-axis filtering at individual token resolution) | 2 | A-B | -> [C724_within_class_suffix_accessibility.md](C724_within_class_suffix_accessibility.md) |
+| **725** | **Across-Line Accessibility Gradient** (later B folio lines have higher accessibility; rho=0.124, p=8.6e-10; 56/82 folios positive; first-third 0.276, last-third 0.306; consistent with C325 completion gradient) | 2 | B | -> [C725_across_line_accessibility_gradient.md](C725_across_line_accessibility_gradient.md) |
+| **726** | **Role-Position Accessibility Interaction** (aggregate arch decomposes into role-specific trajectories; CC/AX increase toward final, EN/FQ decrease; non-unanimous but morphologically explained by C590/C564 composition effects) | 2 | A-B | -> [C726_role_position_accessibility_interaction.md](C726_role_position_accessibility_interaction.md) |
+| **727** | **B Vocabulary Autonomy Rate** (69.3% of B token types have low-or-zero accessibility from A; 34.4% completely B-exclusive; 0% universally legal; B's structural scaffold is autonomously determined) | 2 | A-B | -> [C727_b_vocabulary_autonomy_rate.md](C727_b_vocabulary_autonomy_rate.md) |
+
+### PP Line-Level Structure (C728-C732) — Phase: PP_LINE_LEVEL_STRUCTURE
+
+| # | Constraint | Tier | Scope | Detail |
+|---|------------|------|-------|--------|
+| **728** | **PP Co-occurrence Incompatibility Compliance** (PP MIDDLE co-occurrence is non-random: 5,460 vs 5,669 null unique pairs, p<0.001; fully explained by MIDDLE incompatibility C475; 0 avoidance violations; legal-pair variance below null; lines are compatibility-valid subsets) | 2 | A | -> [C728_pp_cooccurrence_incompatibility_compliance.md](C728_pp_cooccurrence_incompatibility_compliance.md) |
+| **729** | **C475 Record-Level Scope** (MIDDLE incompatibility operates perfectly at A record level; 0 violations across 19,576 pair occurrences; 15,518 within-folio avoidance pairs never appear on same line; extends C475 from AZC to A) | 2 | A | -> [C729_c475_record_level_scope.md](C729_c475_record_level_scope.md) |
+| **730** | **PP PREFIX-MIDDLE Within-Line Coupling** (cross-token PREFIX-MIDDLE MI 0.133 vs null 0.121, p<0.001; MI ratio 2.79x between-line; may be mediated by C475 incompatibility) | 2 | A | -> [C730_pp_prefix_middle_line_coupling.md](C730_pp_prefix_middle_line_coupling.md) |
+| **731** | **PP Adjacent Line Continuity** (adjacent lines share more PP MIDDLEs; Jaccard 0.102 vs 0.092 non-adjacent, ratio 1.10x, p=0.001; soft local sequential continuity) | 2 | A | -> [C731_pp_adjacent_line_continuity.md](C731_pp_adjacent_line_continuity.md) |
+| **732** | **PP Within-Line Selection Uniformity** (no SUFFIX coherence 1.02x, no diversity anomaly effect=0.13, no folio position trajectory p=0.633; PP selection is uniform beyond incompatibility across SUFFIX/diversity/position dimensions) | 2 | A | -> [C732_pp_within_line_selection_uniformity.md](C732_pp_within_line_selection_uniformity.md) |
+| **733** | **PP Token Variant Line Structure** (whole-token co-occurrence is non-random beyond MIDDLE assignment; variant shuffle p<0.001 for both unique pairs and variance; ~38% of word-level structure from PREFIX+SUFFIX coordination; reverses MIDDLE-level uniformity finding) | 2 | A | -> [C733_pp_token_variant_line_structure.md](C733_pp_token_variant_line_structure.md) |
+
+### A-B Folio Specificity (C734-C739, C751-C752) — Phase: A_B_FOLIO_SPECIFICITY
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **734** | **A-B Coverage Architecture** (per-A-folio C502.a coverage of B folios: mean 26.1%, range 2.6-79.3%; A folio identity explains 72.0% of variance, B folio 18.1%; routing architecture, not flat) | 2 | A<>B | -> [C734_ab_coverage_architecture.md](C734_ab_coverage_architecture.md) |
+| **735** | **Pool Size Coverage Dominance** (A folio PP pool size predicts B coverage: Spearman rho=0.85, p=5e-33; pool range 20-88 MIDDLEs; relationship primarily quantitative) | 2 | A<>B | -> [C735_pool_size_coverage_dominance.md](C735_pool_size_coverage_dominance.md) |
+| **736** | **B Vocabulary Accessibility Partition** (0 B tokens universally legal; 34.4% never legal under any A folio; median accessibility 3 A folios; tripartite: B-exclusive 34.4%, narrow-access 33.9%, broad-access 31.7%) | 2 | A<>B | -> [C736_b_vocabulary_accessibility_partition.md](C736_b_vocabulary_accessibility_partition.md) |
+| **737** | **A-Folio Cluster Structure** (A folios cluster into ~6 groups by B-coverage profile; mean pairwise correlation 0.648; specificity ratio 1.544x null; dominant standard cluster n=62 plus 5 specialized groups) | 2 | A<>B | -> [C737_a_folio_cluster_structure.md](C737_a_folio_cluster_structure.md) |
+| **738** | **Union Coverage Ceiling** (all 114 A folios combined reach ~83-89% B folio coverage, never 95%; 34.4% of B vocabulary permanently B-exclusive; represents B's autonomous grammar) | 2 | A<>B | -> [C738_union_coverage_ceiling.md](C738_union_coverage_ceiling.md) |
+| **739** | **Best-Match Specificity** (every B folio has a strongly preferred A folio: all 82 show lift >1.5x, mean 2.43x, mean z=3.77; routing is directional: B folios are consumers, A folios are providers) | 2 | A<>B | -> [C739_best_match_specificity.md](C739_best_match_specificity.md) |
+| **751** | **Coverage Pool-Size Confound** (raw best-match degenerate: 2 A folios serve all 82 B; coverage~pool r=0.883; folio length->pool r=0.584; residual reveals 24 distinct A folios with content specificity) | 2 | A<>B | -> [C751_coverage_pool_size_confound.md](C751_coverage_pool_size_confound.md) |
+| **752** | **No Section-to-Section Routing** (permutation test: 27/82 same-section = null 26.7, z=0.08, p=0.57; section labels are physical organization, not routing addresses; routing is vocabulary-driven) | 2 | A<>B | -> [C752_no_section_routing.md](C752_no_section_routing.md) |
+| **792** | **B-Exclusive = HT Identity** (100% of B-exclusive vocabulary is HT/UN; 0 classified tokens are B-exclusive; all 88 classified MIDDLEs are in PP; C736's "autonomous grammar" is HT layer, not classified) | 2 | A<>B/HT | -> [C792_b_exclusive_ht_identity.md](C792_b_exclusive_ht_identity.md) |
+| **793** | **Residual Specificity = Vocabulary Coincidence** (the 24 residual-best A folios are those with best sample of common PP MIDDLEs; f42r dominates via 8 near-universal MIDDLEs; no content routing) | 2 | A<>B | -> [C793_residual_specificity_is_vocabulary_coincidence.md](C793_residual_specificity_is_vocabulary_coincidence.md) |
+
+### HT Reconciliation (C740-C746) — Phase: HT_RECONCILIATION
+
+> **Summary:** HT = UN (zero-delta identity, C740). HT tokens comply with C475 at classified-baseline rates (0.69% vs 0.63%, C742) but only 4.6% of HT MIDDLE types participate in the incompatibility graph (C741). Lane distribution is radically different from classified (p=4e-60, C743) but lane transitions are neutral (C744). Removing HT inflates coverage metrics but preserves routing architecture (r=0.85, C745). HT density is non-uniform across folios and anti-correlated with coverage (r=-0.376, C746). **C404-C405 (non-operational) confirmed.**
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **740** | **HT/UN Population Identity** (HT = UN: 4,421 types, 7,042 occ, zero delta; both defined by exclusion from 479-type grammar) | 2 | B/HT | -> [C740_ht_un_population_identity.md](C740_ht_un_population_identity.md) |
+| **741** | **HT C475 Minimal Graph Participation** (4.6% of HT MIDDLE types in C475 graph, but 38.5% of occurrences; 95.4% too rare to test) | 2 | B/HT | -> [C741_ht_c475_minimal_participation.md](C741_ht_c475_minimal_participation.md) |
+| **742** | **HT C475 Line-Level Compliance** (0.69% violation rate vs 0.63% classified baseline; z=+1.74 marginal; compliance by structural sparsity) | 2 | B/HT | -> [C742_ht_c475_compliance.md](C742_ht_c475_compliance.md) |
+| **743** | **HT Lane Segregation** (chi2=278.71, p=4e-60; OTHER +9.5pp, QO -7.7pp; HT skews toward non-standard prefixes) | 2 | B/HT | -> [C743_ht_lane_segregation.md](C743_ht_lane_segregation.md) |
+| **744** | **HT Lane Indifference** (same-lane rate 37.7% = expected 37.9%, lift=0.994x; z=-1.66 ns; HT is lane-neutral in placement) | 2 | B/HT | -> [C744_ht_lane_indifference.md](C744_ht_lane_indifference.md) |
+| **745** | **HT Coverage Metric Sensitivity** (coverage 31%->43% on HT removal; routing preserved r=0.85; metric artifact, not operational) | 2 | A<>B/HT | -> [C745_ht_coverage_metric_sensitivity.md](C745_ht_coverage_metric_sensitivity.md) |
+| **746** | **HT Folio Compensatory Distribution** (density 15.5-47.2%, chi2=429.72; anti-correlated with coverage r=-0.376, p=0.0005) | 2 | B/HT | -> [C746_ht_folio_compensatory_distribution.md](C746_ht_folio_compensatory_distribution.md) |
+
+### B Line-Position HT Structure (C747-C750, C794-C795) — Phase: B_LINE_POSITION_HT
+
+> **Summary:** Opening lines of B folios are massively enriched in HT tokens (50.2% vs 29.8%, d=0.99, C747). The enrichment is a sharp step function confined to line position 1 (C748). First-line HT tokens are morphologically distinct from working-line HT (95.9% unique types, pch-prefix elevated, chi2=496, C749). The effect is opening-only — last lines are indistinguishable from interior (p=0.50, C750). B folio-programs have a one-line non-operational header. **Extension:** Line-1 HT is a composite header with two parts: PP component (68.3%) declaring A-folio context at 15.8x random prediction (C794-C795), and B-exclusive component (31.7%) serving as folio identification (94.1% folio-unique).
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **747** | **Line-1 HT Enrichment** (50.2% HT vs 29.8% rest, +20.3pp, d=0.99, p<10^-6; 69/82 folios positive; permutation z=11.07) | 0 | B/HT | -> [C747_line1_ht_enrichment.md](C747_line1_ht_enrichment.md) |
+| **748** | **Line-1 Step Function** (pos 1=50.2%, pos 2=31.7%, pos 3-10=27-33%; enrichment confined to single opening line) | 0 | B/HT | -> [C748_line1_step_function.md](C748_line1_step_function.md) |
+| **749** | **First-Line HT Morphological Distinction** (95.9% unique types vs 62.8% working; pch prefix 7.0% vs 1.9%; articulator 13.0% vs 9.9%; chi2=496.37) | 2 | B/HT | -> [C749_line1_ht_morphological_distinction.md](C749_line1_ht_morphological_distinction.md) |
+| **750** | **Opening-Only HT Asymmetry** (last line 30.8% HT = interior 29.8%, p=0.50; no closing HT enrichment) | 0 | B/HT | -> [C750_opening_only_asymmetry.md](C750_opening_only_asymmetry.md) |
+| **794** | **Line-1 Composite Header Structure** (68.3% PP for A-context declaration, 31.7% B-exclusive for folio ID; PP predicts A at 15.8x random; B-exclusive 94.1% folio-unique) | 2 | B/A<>B | -> [C794_line1_composite_header.md](C794_line1_composite_header.md) |
+| **795** | **Line-1 A-Context Prediction** (PP line-1 HT predicts best-match A folio: 13.9% correct vs 0.88% random baseline, lift=15.8x) | 2 | A<>B | -> [C795_line1_a_context_prediction.md](C795_line1_a_context_prediction.md) |
+
+### B Paragraph Structure (C840-C845) — Phase: B_PARAGRAPH_STRUCTURE
+
+> **Summary:** B paragraphs function as mini-programs within folios (C840). Each has a one-line header zone with +15.8pp HT enrichment over body (44.9% vs 29.1%), mirroring the folio-level pattern. 71.5% of paragraphs are gallows-initiated (C841), matching A paragraph structure. HT drops sharply at line 2 and stabilizes (C842) - same step function as folios. Prefixes pch- and po- (33.5% combined, 78-86% HT) serve as paragraph identification markers (C843). Folio line 1's elevated HT (50.2%) results from double-header overlap (C844). Unlike A's RI linkers, B paragraphs do NOT link to each other - they are self-contained (C845).
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **840** | **B Paragraph Mini-Program Structure** (line 1: 44.9% HT vs body 29.1%, +15.8pp, d=0.72, p<10^-20; 76% of paragraphs show enrichment) | 2 | B | -> [C840_b_paragraph_mini_program_structure.md](C840_b_paragraph_mini_program_structure.md) |
+| **841** | **B Paragraph Gallows-Initial Markers** (71.5% p/t/k/f initial; p=43.6%, t=19.3%, k=5.5%, f=3.1%; matches A paragraph structure) | 2 | B | -> [C841_b_paragraph_gallows_initial.md](C841_b_paragraph_gallows_initial.md) |
+| **842** | **B Paragraph HT Step Function** (pos 1=45.2%, pos 2=26.5%, pos 3-5+=26-27%; -18.7pp drop at line 2; body flat) | 2 | B | -> [C842_b_paragraph_step_function.md](C842_b_paragraph_step_function.md) |
+| **843** | **B Paragraph Prefix Markers** (pch- 16.9% + po- 16.6% = 33.5% of initiators; 78-86% HT; paragraph identification vocabulary) | 2 | B | -> [C843_b_paragraph_prefix_markers.md](C843_b_paragraph_prefix_markers.md) |
+| **844** | **Folio Line 1 Double-Header** (50.2% HT = folio header + paragraph 1 header overlap; mid-folio paragraphs 43.6% HT) | 2 | B | -> [C844_folio_line1_double_header.md](C844_folio_line1_double_header.md) |
+| **845** | **B Paragraph Self-Containment** (no inter-paragraph linking; 7.1% both-position rate vs A's 0.6%; no ct-ho signature; symmetric topology) | 2 | B | -> [C845_b_paragraph_self_containment.md](C845_b_paragraph_self_containment.md) |
+
+### A-B Paragraph Correspondence (C846) — Phase: A_B_PARAGRAPH_CORRESPONDENCE
+
+> **Summary:** No specific paragraph-to-paragraph correspondence between A and B. The A→B relationship is POOL-BASED, not ADDRESS-BASED. Only 39 unique A paragraphs serve as "best match" for 568 B paragraphs, with top 10 capturing 85.9%. Pool size dominates (rho=0.694). Raw lift 2.49x drops to 1.20x when controlling for pool size. Confirms C384, C502, C735 at paragraph granularity.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **846** | **A-B Paragraph Pool Relationship** (no specific A→B pairing; 39 A paragraphs serve 568 B; pool-size rho=0.694; raw lift 2.49x → 1.20x controlled; relationship is pool-based not address-based) | 2 | A<>B | -> [C846_ab_paragraph_pool_relationship.md](C846_ab_paragraph_pool_relationship.md) |
+
+### Paragraph Internal Profiling (C847-C854) — Phase: PARAGRAPH_INTERNAL_PROFILING
+
+> **Summary:** Both A and B paragraphs show parallel header-body architecture: line 1 enriched with marker vocabulary (A: RI 3.84x; B: HT +0.134 delta), body with operational vocabulary. Line counts are statistically indistinguishable (A: 4.8, B: 4.37, p=0.067). Both systems cluster into 5 natural paragraph types. Section P (A) has 2x higher RI/PP than H. Section RECIPE (B) dominates EN (44.5%), PHARMA dominates FQ (43.2%).
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **847** | **A Paragraph Size Distribution** (mean 4.8 lines; "only" position = 11.79 lines; Cohen's d = 0.110 vs B) | 2 | A | -> [C847_a_paragraph_size_distribution.md](C847_a_paragraph_size_distribution.md) |
+| **848** | **A Paragraph RI Position Variance** (middle 14.3% RI vs first 9.3%; Kruskal-Wallis p=0.001; RI line-1 concentration 3.84x) | 2 | A | -> [C848_a_paragraph_ri_position_variance.md](C848_a_paragraph_ri_position_variance.md) |
+| **849** | **A Paragraph Section Profile** (P section: 17.2% RI, 67.5% PP vs H: 8.4% RI, 42% PP; p=0.0006) | 2 | A | -> [C849_a_paragraph_section_profile.md](C849_a_paragraph_section_profile.md) |
+| **850** | **A Paragraph Cluster Taxonomy** (5 clusters: short-RI 34%, long-linker 8%, standard 58%; silhouette=0.337) | 2 | A | -> [C850_a_paragraph_cluster_taxonomy.md](C850_a_paragraph_cluster_taxonomy.md) |
+| **851** | **B Paragraph HT Variance Validation** (delta +0.134; 76.8% positive; line 1 = 46.5% HT; validates C840) | 2 | B | -> [C851_b_paragraph_ht_variance_validation.md](C851_b_paragraph_ht_variance_validation.md) |
+| **852** | **B Paragraph Section-Role Interaction** (RECIPE 44.5% EN; PHARMA 43.2% FQ; Kruskal-Wallis p<0.0001) | 2 | B | -> [C852_b_paragraph_section_role_interaction.md](C852_b_paragraph_section_role_interaction.md) |
+| **853** | **B Paragraph Cluster Taxonomy** (5 clusters: single-line 9%, long-EN 10%, standard 81%; silhouette=0.237) | 2 | B | -> [C853_b_paragraph_cluster_taxonomy.md](C853_b_paragraph_cluster_taxonomy.md) |
+| **854** | **A-B Paragraph Structural Parallel** (both header-body; line counts indistinguishable p=0.067; both k=5 clusters) | 2 | A<>B | -> [C854_ab_paragraph_structural_parallel.md](C854_ab_paragraph_structural_parallel.md) |
+
+### AZC Reassessment (C753-C756) — Phase: AZC_REASSESSMENT
+
+> **Summary:** A→B "routing" is reframed as **constraint propagation**, not content targeting. A folios are deliberately homogeneous (11x more similar than random, C756) to maximize vocabulary coverage, not discriminate B programs. Filtering is real and role-aware (CORE_CONTROL 95%+ survival, C754), but operates via vocabulary restriction, not content routing. The first 10 A folios cover 60% of all PP vocabulary.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **753** | **No Content-Specific A-B Routing** (partial r=-0.038 after size control; no granularity achieves discrimination; reframe as constraint propagation) | 2 | A<>B | -> [C753_no_content_routing.md](C753_no_content_routing.md) |
+| **754** | **Role-Aware Infrastructure Filtering** (CORE_CONTROL 95%+ survival regardless of pool size; AUXILIARY 20% under small pools; McNemar p<0.0001) | 2 | A<>B | -> [C754_role_aware_filtering.md](C754_role_aware_filtering.md) |
+| **755** | **A Folio Coverage Homogeneity** (real A folios at 0th percentile for discrimination vs random; deliberate coverage optimization) | 2 | A | -> [C755_a_folio_coverage_homogeneity.md](C755_a_folio_coverage_homogeneity.md) |
+| **756** | **Coverage Optimization Confirmed** (11x higher pairwise similarity than random; first 10 folios cover 60% PP; hub MIDDLEs 100% PP) | 2 | A | -> [C756_coverage_optimization_confirmed.md](C756_coverage_optimization_confirmed.md) |
+
+### AZC Folio Differentiation (C757-C763) - Phase: AZC_FOLIO_DIFFERENTIATION
+
+> **Summary:** AZC folios are vocabulary-specialized (70% MIDDLEs exclusive to single folio) but structurally uniform. Zero KERNEL/LINK tokens confirms AZC is outside execution layer. P-text is linguistically Currier A (0.97 cosine). Position within diagrams determines vocabulary (p<0.001). Zodiac and A/C families provide redundant B coverage (r=0.90). f57v R2 ring is 100% single characters with repeating ~27-char pattern - structurally non-Voynichese.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **757** | **AZC Zero Kernel/Link** (0 KERNEL, 0 LINK; ~50% OPERATIONAL, ~50% UN; AZC is outside execution layer) | 2 | AZC | -> [C757_azc_zero_kernel.md](C757_azc_zero_kernel.md) |
+| **758** | **P-Text Currier A Identity** (PREFIX cosine 0.97 to A, 0.74 to diagram; 19.5% MIDDLE overlap with same-folio diagram) | 2 | AZC | -> [C758_ptext_currier_a_identity.md](C758_ptext_currier_a_identity.md) |
+| **759** | **AZC Position-Vocabulary Correlation** (position affects PREFIX: chi2=112.6, p<0.001, V=0.21; S=56% ok+ot, C=28% ch) | 2 | AZC | -> [C759_azc_position_vocabulary.md](C759_azc_position_vocabulary.md) |
+| **760** | **AZC Folio Vocabulary Specialization** (70% MIDDLEs exclusive to 1 folio; 13 universal MIDDLEs; no family pattern) | 2 | AZC | -> [C760_azc_folio_vocabulary_specialization.md](C760_azc_folio_vocabulary_specialization.md) |
+| **761** | **AZC Family B-Coverage Redundancy** (Zodiac-A/C correlation r=0.90; 81/82 B folios balanced; both families contribute ~5-6 exclusive MIDDLEs per B) | 2 | AZC | -> [C761_azc_family_b_redundancy.md](C761_azc_family_b_redundancy.md) |
+| **762** | **Cross-System Single-Char Primitive Overlap** (f49v/f76r/f57v share 4 chars d,k,o,r - all C085 primitives; spans PREFIX/MIDDLE/SUFFIX positions) | 2 | GLOBAL | -> [C762_cross_system_single_char_primitives.md](C762_cross_system_single_char_primitives.md) |
+| **763** | **f57v R2 Single-Char Ring Anomaly** (100% single chars, 0% morphology; ~27-char repeating pattern with p/f variation; m,n unique terminators; diagram-integrated unlike margin labels) | 2 | AZC | -> [C763_f57v_r2_single_char_ring.md](C763_f57v_r2_single_char_ring.md) |
+| **764** | **f57v R2 Coordinate System** (UNIQUE to f57v across 13 Zodiac folios; p/f at 27-pos apart mark ring halves; R1-R2 1:1 token correspondence; 'x' coord-only char never in R1) | 2 | AZC | -> [C764_f57v_coordinate_system.md](C764_f57v_coordinate_system.md) |
+| **765** | **AZC Kernel Access Bottleneck** (AZC-mediated: 31.3% escape, 51.3% kernel; B-native: 21.5% escape, 77.8% kernel; AZC constrains B by limiting kernel access, not escape directly) | 2 | GLOBAL | -> [C765_azc_kernel_access_bottleneck.md](C765_azc_kernel_access_bottleneck.md) |
+
+---
+
+### Compound MIDDLE Architecture (C766-C769) - Phase: COMPOUND_MIDDLE_ARCHITECTURE
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **766** | **UN = Derived Identification Vocabulary** (UN 81.1% compound vs classified 35.2%; +45.9pp; 1,251 UN-only MIDDLEs at 84.3% compound; 0 classified-only MIDDLEs) | 2 | B | -> [C766_un_derived_vocabulary.md](C766_un_derived_vocabulary.md) |
+| **767** | **Class Compound Bimodality** (21 base-only classes at 0-5% compound, 3 compound-heavy classes at 85%+; grammar has two functional vocabularies) | 2 | B | -> [C767_class_compound_bimodality.md](C767_class_compound_bimodality.md) |
+| **768** | **Role-Compound Correlation** (FL=0% compound, FQ=46.7%; 46.7pp spread; FL uses 0 kernel chars k/h/e; role determines vocabulary type) | 2 | B | -> [C768_role_compound_correlation.md](C768_role_compound_correlation.md) |
+| **769** | **Compound Context Prediction** (Line-1 +5pp more compound; folio-unique correlation r=0.553; class range 0%-100%; compound structure is informative) | 2 | B | -> [C769_compound_context_prediction.md](C769_compound_context_prediction.md) |
+
+### FL Primitive Architecture (C770-C781) - Phase: FL_PRIMITIVE_ARCHITECTURE
+
+> **Summary:** FL (Flow Operator) is a kernel-free state index ('i'=start, 'y'=end). EN is the **phase/stability operator** (h+e, 92% kernel) managing state transitions. FQ is the **phase-bypass escape** (k+e, **0% h**) - escape routes skip phase management entirely. Roles partition kernel responsibilities: FL=0%, EN=92% h+e, FQ=46% k+e, CC=25%, AX=57%. Forbidden pairs involve CC (20), FQ (10), EN (4); FL and AX are outside.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **770** | **FL Kernel Exclusion** (FL uses 0 kernel chars k/h/e; only role with complete kernel exclusion; 17 MIDDLEs, 1,078 tokens) | 2 | B | -> [C770_fl_kernel_exclusion.md](C770_fl_kernel_exclusion.md) |
+| **771** | **FL Character Restriction** (FL uses exactly 9 chars: a,d,i,l,m,n,o,r,y; excludes c,e,h,k,s,t; mean MIDDLE length 1.58) | 2 | B | -> [C771_fl_character_restriction.md](C771_fl_character_restriction.md) |
+| **772** | **FL Primitive Substrate** (FL provides substrate layer; other roles add kernel k/h/e then helpers c/s/t; EN 60.7% kernel-containing highest) | 2 | B | -> [C772_fl_primitive_substrate.md](C772_fl_primitive_substrate.md) |
+| **773** | **FL Hazard-Safe Position Split** (Hazard FL 88.7% at mean pos 0.546 medial; Safe FL 11.3% at mean pos 0.811 line-final; 0.265 position gap) | 2 | B | -> [C773_fl_hazard_position_split.md](C773_fl_hazard_position_split.md) |
+| **774** | **FL Outside Forbidden Topology** (FL classes not in any of 17 forbidden pairs; FL operates below hazard layer) | 2 | B | -> [C774_fl_outside_forbidden_topology.md](C774_fl_outside_forbidden_topology.md) |
+| **775** | **Hazard FL Escape Driver** (Hazard FL 7/30 drive 98% of FL->FQ; safe FL 38/40 drive 2%; FL->FQ rate 22.5%) | 2 | B | -> [C775_hazard_fl_escape_driver.md](C775_hazard_fl_escape_driver.md) |
+| **776** | **Post-FL Kernel Enrichment** (59.4% of post-FL tokens have kernel chars k/h/e; confirms FL -> kernel-modulated flow pattern) | 2 | B | -> [C776_post_fl_kernel_enrichment.md](C776_post_fl_kernel_enrichment.md) |
+| **777** | **FL State Index** (FL MIDDLEs index material state; 'i'-forms at start (0.30), 'y'-forms at end (0.94); position range 0.64; 77% state change rate) | 2 | B | -> [C777_fl_state_index.md](C777_fl_state_index.md) |
+| **778** | **EN Kernel Profile** (EN 91.9% kernel; dominant h+e (35.8%); h=59.4%, e=58.3%, k=38.6%; phase/stability operator not energy) | 2 | B | -> [C778_en_kernel_profile.md](C778_en_kernel_profile.md) |
+| **779** | **EN-FL State Coupling** (EN 'h' rate drops 95%->77% as FL advances early->late; early states need phase management, late states stable) | 2 | B | -> [C779_en_fl_state_coupling.md](C779_en_fl_state_coupling.md) |
+| **780** | **Role Kernel Taxonomy** (FL=0%, EN=92% h+e, FQ=46% k+e 0%h, CC=25%, AX=57%; roles partition kernel responsibilities) | 2 | B | -> [C780_role_kernel_taxonomy.md](C780_role_kernel_taxonomy.md) |
+| **781** | **FQ Phase Bypass** (FQ has exactly 0% 'h'; escape routes bypass phase management using k+e only) | 2 | B | -> [C781_fq_phase_bypass.md](C781_fq_phase_bypass.md) |
+
+### Control Topology Analysis (C782-C787) - Phase: CONTROL_TOPOLOGY_ANALYSIS
+
+> **Summary:** Forbidden pair topology is **directional** (17 asymmetric, 0 symmetric). CC role bifurcates: classes 10,11 (0% kernel, hazard sources) vs class 17 (88% kernel, hazard target). FL and AX are **immune** to hazard topology (0 forbidden pair participation). FQ escape targets FL[MEDIAL] at 77%. FL state transitions are **forward-biased** (27% forward, 5% backward); LATE->EARLY is **forbidden** (0 occurrences).
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **782** | **CC Kernel Paradox** (Classes 10,11=0% kernel, class 17=88%; CC bifurcates into hazard sources vs hazard buffers) | 2 | B | -> [C782_cc_kernel_paradox.md](C782_cc_kernel_paradox.md) |
+| **783** | **Forbidden Pair Asymmetry** (All 17 forbidden pairs are asymmetric/directional; 0 symmetric; hazard is directed graph) | 2 | B | -> [C783_forbidden_pair_asymmetry.md](C783_forbidden_pair_asymmetry.md) |
+| **784** | **FL/AX Hazard Immunity** (FL and AX never appear in any forbidden pair; exempt from hazard topology) | 2 | B | -> [C784_fl_ax_hazard_immunity.md](C784_fl_ax_hazard_immunity.md) |
+| **785** | **FQ Medial Targeting** (FQ->FL routes to MEDIAL at 77.2%; escape re-injects at mid-process, not start/end) | 2 | B | -> [C785_fq_medial_targeting.md](C785_fq_medial_targeting.md) |
+| **786** | **FL Forward Bias** (FL state transitions: 27% forward, 68% same, 5% backward; 5:1 forward:backward ratio) | 2 | B | -> [C786_fl_forward_bias.md](C786_fl_forward_bias.md) |
+| **787** | **FL State Reset Prohibition** (LATE->EARLY transition = 0 occurrences; full state reset is forbidden) | 2 | B | -> [C787_fl_state_reset_prohibition.md](C787_fl_state_reset_prohibition.md) |
+
+### CC Mechanics Deep Dive (C788-C791) - Phase: CC_MECHANICS_DEEP_DIVE
+
+> **Summary:** CC classes are singleton/near-singleton token sets: Class 10="daiin", Class 11="ol", Class 17=9 "ol-" tokens. Class 12="k" is a **structural ghost** (0 B occurrences). Forbidden pairs are **NOT absolute** - 34% of CC->FQ transitions violate them. CC shows positional gradient (Group A earlier, p=0.045). CC->EN is the dominant flow (3:1 over CC->FQ).
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **788** | **CC Singleton Identity** (Class 10=daiin, Class 11=ol, Class 12=k(absent), Class 17=9 ol- tokens; CC classes are specific tokens not broad categories) | 2 | B | -> [C788_cc_singleton_identity.md](C788_cc_singleton_identity.md) |
+| **789** | **Forbidden Pair Permeability** (34% of CC->FQ transitions violate forbidden pairs; forbidden = disfavored, not prohibited) | 2 | B | -> [C789_forbidden_pair_permeability.md](C789_forbidden_pair_permeability.md) |
+| **790** | **CC Positional Gradient** (Group A mean 0.469, Group B mean 0.515, p=0.045; sources earlier, targets later) | 2 | B | -> [C790_cc_positional_gradient.md](C790_cc_positional_gradient.md) |
+| **791** | **CC-EN Dominant Flow** (CC->EN at 33% vs CC->FQ at 12%; CC primarily routes to kernel ops, not escape) | 2 | B | -> [C791_cc_en_dominant_flow.md](C791_cc_en_dominant_flow.md) |
+
+### PP-HT-AZC Interaction (C796-C803) - Phase: PP_HT_AZC_INTERACTION
+
+> **Summary:** HT density is controlled by two orthogonal factors: AZC mediation (negative: rho=-0.352) and escape activity (positive: rho=0.377). These are independent (AZC-FL correlation = -0.023 NS) and additive. Low AZC + High FL folios have 37% HT; High AZC + Low FL have 25% HT. Line-1 header structure (C794-C795) is AZC-independent — the A-context prediction mechanism operates uniformly regardless of AZC involvement. HT is not random padding but encodes **dual structural information**: vocabulary provenance (AZC axis) and operational intensity (escape axis). **Body HT (C800-C803):** The escape correlation is driven entirely by body HT (lines 2+), not line-1. Body HT uses primitive PP vocabulary (80.1% PP, top MIDDLEs are C085 primitives) and clusters at line boundaries (45.8%/42.9% first/last vs 25.7% middle) and near LINK tokens (2.53 vs 3.08 distance, p<0.0001), but NOT near FL tokens. HT marks monitoring/waiting zones, not escape points.
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **796** | **HT-Escape Correlation** (HT% correlates with FL%: rho=0.377, p=0.0005; high escape -> more HT; independent of AZC) | 2 | B/HT | -> [C796_ht_escape_correlation.md](C796_ht_escape_correlation.md) |
+| **797** | **AZC-HT Inverse Relationship** (AZC% anti-correlates with HT%: rho=-0.352, p=0.0012; high AZC -> less HT; confounded by vocab size) | 2 | A<>B/HT | -> [C797_azc_ht_inverse.md](C797_azc_ht_inverse.md) |
+| **798** | **HT Dual Control Architecture** (AZC and FL are orthogonal predictors of HT; effects additive; quadrant range 25%-37% HT) | 2 | GLOBAL/HT | -> [C798_ht_dual_control.md](C798_ht_dual_control.md) |
+| **799** | **Line-1 AZC Independence** (Line-1 PP fraction and A-context prediction accuracy do NOT vary by AZC tertile; header is fixed structure) | 2 | B/HT | -> [C799_line1_azc_independence.md](C799_line1_azc_independence.md) |
+| **800** | **Body HT Escape Driver** (Body HT drives escape correlation: rho=0.367, p=0.0007; line-1 HT is independent: rho=0.107, p=0.35) | 2 | B/HT | -> [C800_body_ht_escape_driver.md](C800_body_ht_escape_driver.md) |
+| **801** | **Body HT Primitive Vocabulary** (80.1% PP, top MIDDLEs are C085 primitives e/ed/d/l/k/o; Jaccard overlap with line-1 = 0.122) | 2 | B/HT | -> [C801_body_ht_primitive_vocabulary.md](C801_body_ht_primitive_vocabulary.md) |
+| **802** | **Body HT LINK Proximity** (HT clusters near LINK: 2.53 vs 3.08 distance, p<0.0001; NOT near FL: 4.04 vs 3.82, p=0.056 NS) | 2 | B/HT | -> [C802_body_ht_link_proximity.md](C802_body_ht_link_proximity.md) |
+| **803** | **Body HT Boundary Enrichment** (HT rate: first=45.8%, last=42.9%, middle=25.7%; marks control block boundaries) | 2 | B/HT | -> [C803_body_ht_boundary_enrichment.md](C803_body_ht_boundary_enrichment.md) |
+
+---
+
+### LINK Operator Architecture (C804-C809) - Phase: LINK_OPERATOR_ARCHITECTURE
+
+> **Summary:** LINK ('ol' in token, 13.2% of B) is characterized as a monitoring/waiting phase marker. Key findings: (1) C366 transition grammar claims are NOT reproducible with current role taxonomy - predecessor enrichment not confirmed, successor enrichment weak; (2) C365 spatial uniformity is REFUTED - LINK shows boundary enrichment like HT; (3) LINK-HT overlap is moderate (OR=1.50) driven by vocabulary composition; (4) LINK is INVERSELY related to FL (escape) - farther distance, negative correlation, depleted around FL; (5) 'ol' is a legitimate PP MIDDLE (in A vocabulary, 92.4% PP rate); (6) LINK is spatially separated from kernel (k,h,e) operations. Architecture: LINK marks monitoring zones distinct from both kernel processing and escape recovery.
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **804** | **LINK Transition Grammar Revision** (C366 predecessor claims not confirmed; successor enrichment weak; chi2=5.1 pred NS, chi2=48.2 succ p<0.001) | 2 | B | -> [C804_link_transition_grammar_revision.md](C804_link_transition_grammar_revision.md) |
+| **805** | **LINK Positional Bias (C365 Refutation)** (Mean pos 0.476 vs 0.504; first=17.2%, last=15.3%, middle=12.4%; shares HT boundary pattern) | 2 | B | -> [C805_link_positional_bias.md](C805_link_positional_bias.md) |
+| **806** | **LINK-HT Positive Association** (OR=1.50, p<0.001; 38.3% of LINK are HT; HT contains 'ol' at 16.6% vs 11.7%) | 2 | B/HT | -> [C806_link_ht_overlap.md](C806_link_ht_overlap.md) |
+| **807** | **LINK-FL Inverse Relationship** (LINK farther from FL: 3.91 vs 3.38, p<0.0001; rho=-0.222; depleted around FL 0.67x/0.87x) | 2 | B | -> [C807_link_fl_inverse.md](C807_link_fl_inverse.md) |
+| **808** | **LINK 'ol' is PP MIDDLE** ('ol' appears 759x as MIDDLE, in A vocabulary; LINK PP rate 92.4%) | 2 | B | -> [C808_link_ol_pp_middle.md](C808_link_ol_pp_middle.md) |
+| **809** | **LINK-Kernel Separation** (LINK depleted of k/h/e: 0.82-0.93x; distance 1.31 vs 0.41, p<0.0001) | 2 | B | -> [C809_link_kernel_separation.md](C809_link_kernel_separation.md) |
+
+---
+
+### Control Loop Synthesis (C810-C815) - Phase: CONTROL_LOOP_SYNTHESIS
+
+> **Summary:** Integration of KERNEL, LINK, and FL into unified control loop model. Key findings: (1) LINK-FL non-adjacency confirmed - direct transitions rare (0.70x); (2) FL chains at 2.11x - extended escape sequences, not single-token events; (3) HT uses novel MIDDLE combinations (11.19% novel pairs) but obeys C475 forbidden pairs (0.44% violation per C742) - distinct combinatorial space, not grammar violation; (4) Canonical ordering LINK(0.476)->KERNEL(0.482)->FL(0.576) - monitoring early, escape late; (5) KERNEL is strongest negative predictor of FL (rho=-0.528) - high kernel = stable program; (6) Phase positions significant (p<10^-73) but only 1.5% variance explained - temporally flexible, not rigidly positional.
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **810** | **LINK-FL Non-Adjacency** (Direct LINK->FL rare: 0.70x expected; confirms complementary phases) | 2 | B | -> [C810_link_fl_non_adjacency.md](C810_link_fl_non_adjacency.md) |
+| **811** | **FL Chaining** (FL->FL enriched 2.11x; extended escape sequences; FL->KERNEL neutral 0.86x) | 2 | B | -> [C811_fl_chaining.md](C811_fl_chaining.md) |
+| **812** | **HT Novel MIDDLE Combinations** (11.19% novel pairs; NOT C475 violation; HT in distinct combinatorial space) | 2 | B/HT | -> [C812_ht_c475_violation.md](C812_ht_c475_violation.md) |
+| **813** | **Canonical Phase Ordering** (LINK 0.476 -> KERNEL 0.482 -> FL 0.576; monitoring early, escape late) | 2 | B | -> [C813_canonical_phase_ordering.md](C813_canonical_phase_ordering.md) |
+| **814** | **Kernel-Escape Inverse** (KERNEL vs FL rho=-0.528; high kernel = low escape; strongest predictor) | 2 | B | -> [C814_kernel_escape_inverse.md](C814_kernel_escape_inverse.md) |
+| **815** | **Phase Position Significance** (F=70.28, p<10^-73 but eta^2=0.015; phases flexible, not rigid) | 2 | B | -> [C815_phase_position_significance.md](C815_phase_position_significance.md) |
+
+### CC Control Loop Integration (C816-C820) - Phase: CC_CONTROL_LOOP_INTEGRATION
+
+> **Summary:** Integrates Core Control (CC) into the LINK-KERNEL-FL control loop. Key findings: (1) daiin initiates the loop at 0.413, significantly earlier than LINK (0.476) - complete ordering is daiin->LINK->KERNEL->ol->FL; (2) C600 lane routing CONFIRMED: daiin->CHSH 90.8%, ol_derived->QO 57.4%, but lane bias decays rapidly by offset +2; (3) "kernel paradox" RESOLVED: Class 17 (ol_derived) is the CC-KERNEL bridge layer with 88% kernel chars; (4) daiin is initial-biased (27.1%), ol/ol_derived are middle-concentrated (85%); (5) CC has ZERO forbidden transitions (0/700) - EN absorbs 99.8% of all hazard.
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **816** | **CC Positional Ordering** (daiin 0.413 -> LINK 0.476 -> KERNEL -> ol 0.511 -> FL 0.576; daiin initiates loop) | 2 | B | -> [C816_cc_positional_ordering.md](C816_cc_positional_ordering.md) |
+| **817** | **CC Lane Routing** (C600 confirmed: daiin->CHSH 90.8%, ol_derived->QO 57.4%; rapid decay by +2) | 2 | B | -> [C817_cc_lane_routing.md](C817_cc_lane_routing.md) |
+| **818** | **CC Kernel Bridge** (Class 17 = CC-KERNEL interface; 88% kernel chars; resolves C782 paradox) | 2 | B | -> [C818_cc_kernel_bridge.md](C818_cc_kernel_bridge.md) |
+| **819** | **CC Boundary Asymmetry** (daiin initial 27.1%; ol/ol_derived medial 85%; unlike LINK 1.23x) | 2 | B | -> [C819_cc_boundary_asymmetry.md](C819_cc_boundary_asymmetry.md) |
+| **820** | **CC Hazard Immunity** (0/700 forbidden; EN absorbs 99.8% hazard; CC is safe control layer) | 2 | B | -> [C820_cc_hazard_immunity.md](C820_cc_hazard_immunity.md) |
+
+### REGIME Line Syntax Interaction (C821-C823) - Phase: REGIME_LINE_SYNTAX_INTERACTION
+
+> **Summary:** Tests whether line-level execution syntax varies by REGIME. **NULL RESULT confirms grammar universality (C124).** All 5 roles show INVARIANT position by REGIME (p>0.4). REGIME explains only 0.13% of position variance (vs 1.5% for PHASE per C815). REGIME encodes execution requirements (what to do), not syntax structure (where to put it). One exception: or->aiin bigram shows frequency variation by REGIME (6x higher in REGIME_4), but this is frequency not position.
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **821** | **Line Syntax REGIME Invariance** (All 5 roles invariant; eta^2=0.13%; confirms C124 universality) | 2 | B | -> [C821_line_syntax_regime_invariance.md](C821_line_syntax_regime_invariance.md) |
+| **822** | **CC Position REGIME Invariance** (REGIME affects CC frequency not placement; daiin initial-bias p=0.65) | 2 | B | -> [C822_cc_position_regime_invariance.md](C822_cc_position_regime_invariance.md) |
+| **823** | **Bigram REGIME Partial Variation** (or->aiin varies 6x; daiin->CHSH invariant p=0.63) | 2 | B | -> [C823_bigram_regime_partial_variation.md](C823_bigram_regime_partial_variation.md) |
+
+### A-Record B-Routing Topology (C824-C836) - Phase: A_RECORD_B_ROUTING_TOPOLOGY
+
+> **Summary:** Tests A->B filtering mechanics, aggregation effects, repetition function, and RI internal structure. **KEY FINDINGS:** (1) C502 token-filtering model CORRECT: more PP = more token survival (rho=+0.734). Aggregation HELPS: line 11.2% -> paragraph 31.8% -> folio 50.0%. (2) Repetition is 100% PP, 0% RI - confirms functional bifurcation. (3) daiin (control loop trigger) accounts for 22% of all repeats. (4) **RI THREE-TIER STRUCTURE:** Singletons (95.3%), position-locked repeaters (~4%), linkers (0.6%). (5) **RI LINKER DISCOVERY:** 4 tokens create 12 directed links connecting 12 folios; 66.7% forward flow. (6) **ct-ho SIGNATURE:** Linkers show 75% ct-prefix + 75% h-MIDDLE (12-15x enrichment) marking "transferable outputs". (7) **INPUT/OUTPUT ASYMMETRY:** 12+ INPUT morphological markers vs 5 OUTPUT markers; -ry is strongest OUTPUT signal.
+
+| # | Constraint | Tier | Scope | Link |
+|---|------------|------|-------|------|
+| **824** | **A-Record Filtering Mechanism** (81.3% filtering confirms C502; aggregation helps usability) | 2 | A/B | -> [C824_a_record_filtering_mechanism.md](C824_a_record_filtering_mechanism.md) |
+| **825** | **Continuous Not Discrete Routing** (silhouette=0.124; no discrete clusters; 97.6% unique profiles) | 2 | A/B | -> [C825_continuous_not_discrete_routing.md](C825_continuous_not_discrete_routing.md) |
+| **826** | **Token Filtering Model Validation** (C502 CORRECT: more PP = more survival rho=+0.734; aggregation 4.45x) | 2 | A/B | -> [C826_token_filtering_model_validation.md](C826_token_filtering_model_validation.md) |
+| **827** | **Paragraph Operational Unit** (gallows-initial paragraphs: 31.8% survival, 2.8x better than lines) | 2 | A/B | -> [C827_paragraph_operational_unit.md](C827_paragraph_operational_unit.md) |
+| **828** | **PP Repetition Exclusivity** (100% PP, 0% RI within-line repeats; p=2.64e-07; confirms C498 bifurcation) | 2 | A | -> [C828_pp_repetition_exclusivity.md](C828_pp_repetition_exclusivity.md) |
+| **829** | **daiin Repetition Dominance** (22% of all repeats; CC trigger may encode control-loop cycle count) | 2 | A | -> [C829_daiin_repetition_dominance.md](C829_daiin_repetition_dominance.md) |
+| **830** | **Repetition Position Bias** (late-biased 0.675; FINAL 12x higher than INITIAL; parameters follow identity) | 2 | A | -> [C830_repetition_position_bias.md](C830_repetition_position_bias.md) |
+| **831** | **RI Three-Tier Population Structure** (singletons 95.3%, position-locked ~4%, linkers 0.6%) | 2 | A | -> [C831_ri_three_tier_structure.md](C831_ri_three_tier_structure.md) |
+| **832** | **Initial/Final RI Vocabulary Separation** (Jaccard=0.010; only 4 words overlap; different PREFIX profiles) | 2 | A | -> [C832_initial_final_ri_separation.md](C832_initial_final_ri_separation.md) |
+| **833** | **RI First-Line Concentration** (1.85x in paragraph first line; 1.03x at folio level - no structure) | 2 | A | -> [C833_ri_first_line_concentration.md](C833_ri_first_line_concentration.md) |
+| **834** | **Paragraph Granularity Validation** (RI structure visible ONLY at paragraph level; validates record size) | 2 | A | -> [C834_paragraph_granularity_validation.md](C834_paragraph_granularity_validation.md) |
+| **835** | **RI Linker Mechanism** (4 tokens, 12 links, 12 folios; 66.7% forward flow; f93v=5 inputs collector) | 2 | A | -> [C835_ri_linker_mechanism.md](C835_ri_linker_mechanism.md) |
+| **836** | **RI Linker ct-Prefix Signature** (75% ct-prefix; ho/heo MIDDLE; may mark linkable outputs) | 2/3 | A | -> [C836_ri_linker_ct_prefix.md](C836_ri_linker_ct_prefix.md) |
+| **837** | **ct-ho Linker Morphological Signature** (75% ct-prefix + 75% h-MIDDLE = 12-15x enrichment; unique signature) | 2/3 | A | -> [C837_ct_ho_linker_signature.md](C837_ct_ho_linker_signature.md) |
+| **838** | **qo-Linker Exception** (qokoiiin doesn't follow ct-ho; may be different linkage mechanism) | 2 | A | -> [C838_qo_linker_exception.md](C838_qo_linker_exception.md) |
+| **839** | **RI Input-Output Morphological Asymmetry** (12+ INPUT markers vs 5 OUTPUT markers; -ry strongest OUTPUT) | 2 | A | -> [C839_input_output_morphological_asymmetry.md](C839_input_output_morphological_asymmetry.md) |
 
 ---
 
@@ -662,7 +1114,7 @@ These files contain detailed constraint documentation. Constraint ranges are app
 | [currier_a.md](currier_a.md) | Currier A registry | C224-C299, C345-C346, C420-C424, C475-C478, C498-C525 |
 | [morphology.md](morphology.md) | Compositional morphology | C267-C298, C349-C410, C495 |
 | [operations.md](operations.md) | OPS doctrine and control | C178-C223, C394-C403 |
-| [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453, C477, C507 |
+| [human_track.md](human_track.md) | Human Track layer | C166-C172, C341-C348, C404-C419, C450-C453, C477, C507, C740-C750, C870-C872 |
 | [azc_system.md](azc_system.md) | AZC hybrid system | C300-C327, C430-C436, C496 |
 | [organization.md](organization.md) | Organizational structure | C153-C176, C323-C370 |
 

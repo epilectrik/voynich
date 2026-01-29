@@ -1,0 +1,4339 @@
+{
+  "summary": {
+    "total_folios": 82,
+    "total_paragraphs": 585,
+    "mean_pars_per_folio": 7.134146341463414
+  },
+  "folios": [
+    {
+      "folio": "f103r",
+      "section": "RECIPE_B",
+      "paragraph_count": 18,
+      "total_tokens": 522,
+      "total_lines": 54,
+      "unique_words": 287,
+      "paragraphs": [
+        {
+          "par_id": "B_297",
+          "lines": 4,
+          "tokens": 49,
+          "unique_words": 47
+        },
+        {
+          "par_id": "B_298",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_299",
+          "lines": 5,
+          "tokens": 63,
+          "unique_words": 52
+        },
+        {
+          "par_id": "B_300",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_301",
+          "lines": 2,
+          "tokens": 21,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_302",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_303",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_304",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_305",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_306",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_307",
+          "lines": 2,
+          "tokens": 13,
+          "unique_words": 13
+        },
+        {
+          "par_id": "B_308",
+          "lines": 2,
+          "tokens": 18,
+          "unique_words": 16
+        },
+        {
+          "par_id": "B_309",
+          "lines": 3,
+          "tokens": 24,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_310",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_311",
+          "lines": 2,
+          "tokens": 16,
+          "unique_words": 15
+        },
+        {
+          "par_id": "B_312",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_313",
+          "lines": 4,
+          "tokens": 36,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_314",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 21
+        }
+      ]
+    },
+    {
+      "folio": "f103v",
+      "section": "RECIPE_B",
+      "paragraph_count": 13,
+      "total_tokens": 449,
+      "total_lines": 46,
+      "unique_words": 243,
+      "paragraphs": [
+        {
+          "par_id": "B_315",
+          "lines": 4,
+          "tokens": 43,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_316",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_317",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_318",
+          "lines": 2,
+          "tokens": 23,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_319",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_320",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_321",
+          "lines": 7,
+          "tokens": 71,
+          "unique_words": 59
+        },
+        {
+          "par_id": "B_322",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_323",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_324",
+          "lines": 4,
+          "tokens": 35,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_325",
+          "lines": 2,
+          "tokens": 18,
+          "unique_words": 14
+        },
+        {
+          "par_id": "B_326",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_327",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 34
+        }
+      ]
+    },
+    {
+      "folio": "f104r",
+      "section": "RECIPE_B",
+      "paragraph_count": 13,
+      "total_tokens": 438,
+      "total_lines": 45,
+      "unique_words": 318,
+      "paragraphs": [
+        {
+          "par_id": "B_328",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_329",
+          "lines": 5,
+          "tokens": 49,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_330",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_331",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_332",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_333",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_334",
+          "lines": 5,
+          "tokens": 50,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_335",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_336",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_337",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_338",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_339",
+          "lines": 4,
+          "tokens": 35,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_340",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 27
+        }
+      ]
+    },
+    {
+      "folio": "f104v",
+      "section": "RECIPE_B",
+      "paragraph_count": 13,
+      "total_tokens": 458,
+      "total_lines": 44,
+      "unique_words": 311,
+      "paragraphs": [
+        {
+          "par_id": "B_341",
+          "lines": 5,
+          "tokens": 50,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_342",
+          "lines": 2,
+          "tokens": 24,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_343",
+          "lines": 4,
+          "tokens": 44,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_344",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_345",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_346",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_347",
+          "lines": 5,
+          "tokens": 48,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_348",
+          "lines": 2,
+          "tokens": 22,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_349",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_350",
+          "lines": 3,
+          "tokens": 34,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_351",
+          "lines": 2,
+          "tokens": 16,
+          "unique_words": 16
+        },
+        {
+          "par_id": "B_352",
+          "lines": 4,
+          "tokens": 48,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_353",
+          "lines": 4,
+          "tokens": 38,
+          "unique_words": 32
+        }
+      ]
+    },
+    {
+      "folio": "f105r",
+      "section": "RECIPE_B",
+      "paragraph_count": 12,
+      "total_tokens": 370,
+      "total_lines": 37,
+      "unique_words": 276,
+      "paragraphs": [
+        {
+          "par_id": "B_354",
+          "lines": 5,
+          "tokens": 56,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_355",
+          "lines": 4,
+          "tokens": 35,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_356",
+          "lines": 1,
+          "tokens": 4,
+          "unique_words": 4
+        },
+        {
+          "par_id": "B_357",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_358",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_359",
+          "lines": 7,
+          "tokens": 72,
+          "unique_words": 64
+        },
+        {
+          "par_id": "B_360",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_361",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_362",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_363",
+          "lines": 4,
+          "tokens": 44,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_364",
+          "lines": 2,
+          "tokens": 24,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_365",
+          "lines": 1,
+          "tokens": 4,
+          "unique_words": 4
+        }
+      ]
+    },
+    {
+      "folio": "f105v",
+      "section": "RECIPE_B",
+      "paragraph_count": 10,
+      "total_tokens": 390,
+      "total_lines": 38,
+      "unique_words": 283,
+      "paragraphs": [
+        {
+          "par_id": "B_366",
+          "lines": 4,
+          "tokens": 40,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_367",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_368",
+          "lines": 6,
+          "tokens": 70,
+          "unique_words": 64
+        },
+        {
+          "par_id": "B_369",
+          "lines": 4,
+          "tokens": 42,
+          "unique_words": 38
+        },
+        {
+          "par_id": "B_370",
+          "lines": 2,
+          "tokens": 21,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_371",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_372",
+          "lines": 2,
+          "tokens": 18,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_373",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_374",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_375",
+          "lines": 7,
+          "tokens": 71,
+          "unique_words": 61
+        }
+      ]
+    },
+    {
+      "folio": "f106r",
+      "section": "RECIPE_B",
+      "paragraph_count": 15,
+      "total_tokens": 421,
+      "total_lines": 46,
+      "unique_words": 297,
+      "paragraphs": [
+        {
+          "par_id": "B_376",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_377",
+          "lines": 4,
+          "tokens": 42,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_378",
+          "lines": 2,
+          "tokens": 17,
+          "unique_words": 17
+        },
+        {
+          "par_id": "B_379",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_380",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_381",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_382",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_383",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_384",
+          "lines": 3,
+          "tokens": 22,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_385",
+          "lines": 4,
+          "tokens": 40,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_386",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_387",
+          "lines": 2,
+          "tokens": 15,
+          "unique_words": 15
+        },
+        {
+          "par_id": "B_388",
+          "lines": 2,
+          "tokens": 13,
+          "unique_words": 13
+        },
+        {
+          "par_id": "B_389",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_390",
+          "lines": 6,
+          "tokens": 55,
+          "unique_words": 49
+        }
+      ]
+    },
+    {
+      "folio": "f106v",
+      "section": "RECIPE_B",
+      "paragraph_count": 15,
+      "total_tokens": 449,
+      "total_lines": 47,
+      "unique_words": 308,
+      "paragraphs": [
+        {
+          "par_id": "B_391",
+          "lines": 4,
+          "tokens": 45,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_392",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_393",
+          "lines": 2,
+          "tokens": 18,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_394",
+          "lines": 4,
+          "tokens": 42,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_395",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_396",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_397",
+          "lines": 2,
+          "tokens": 16,
+          "unique_words": 16
+        },
+        {
+          "par_id": "B_398",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_399",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_400",
+          "lines": 4,
+          "tokens": 36,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_401",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_402",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_403",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_404",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_405",
+          "lines": 6,
+          "tokens": 59,
+          "unique_words": 51
+        }
+      ]
+    },
+    {
+      "folio": "f107r",
+      "section": "RECIPE_B",
+      "paragraph_count": 15,
+      "total_tokens": 488,
+      "total_lines": 51,
+      "unique_words": 316,
+      "paragraphs": [
+        {
+          "par_id": "B_406",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_407",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_408",
+          "lines": 5,
+          "tokens": 49,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_409",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_410",
+          "lines": 2,
+          "tokens": 14,
+          "unique_words": 13
+        },
+        {
+          "par_id": "B_411",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_412",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_413",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_414",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_415",
+          "lines": 4,
+          "tokens": 43,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_416",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_417",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_418",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_419",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_420",
+          "lines": 4,
+          "tokens": 44,
+          "unique_words": 38
+        }
+      ]
+    },
+    {
+      "folio": "f107v",
+      "section": "RECIPE_B",
+      "paragraph_count": 15,
+      "total_tokens": 455,
+      "total_lines": 49,
+      "unique_words": 256,
+      "paragraphs": [
+        {
+          "par_id": "B_421",
+          "lines": 4,
+          "tokens": 44,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_422",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_423",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_424",
+          "lines": 5,
+          "tokens": 50,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_425",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_426",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_427",
+          "lines": 2,
+          "tokens": 15,
+          "unique_words": 15
+        },
+        {
+          "par_id": "B_428",
+          "lines": 4,
+          "tokens": 38,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_429",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_430",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_431",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_432",
+          "lines": 4,
+          "tokens": 35,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_433",
+          "lines": 2,
+          "tokens": 14,
+          "unique_words": 14
+        },
+        {
+          "par_id": "B_434",
+          "lines": 2,
+          "tokens": 17,
+          "unique_words": 15
+        },
+        {
+          "par_id": "B_435",
+          "lines": 5,
+          "tokens": 51,
+          "unique_words": 36
+        }
+      ]
+    },
+    {
+      "folio": "f108r",
+      "section": "RECIPE_B",
+      "paragraph_count": 16,
+      "total_tokens": 491,
+      "total_lines": 50,
+      "unique_words": 277,
+      "paragraphs": [
+        {
+          "par_id": "B_436",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_437",
+          "lines": 3,
+          "tokens": 35,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_438",
+          "lines": 3,
+          "tokens": 35,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_439",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_440",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_441",
+          "lines": 4,
+          "tokens": 38,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_442",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_443",
+          "lines": 5,
+          "tokens": 50,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_444",
+          "lines": 2,
+          "tokens": 17,
+          "unique_words": 17
+        },
+        {
+          "par_id": "B_445",
+          "lines": 4,
+          "tokens": 36,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_446",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_447",
+          "lines": 2,
+          "tokens": 18,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_448",
+          "lines": 2,
+          "tokens": 22,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_449",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_450",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_451",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 23
+        }
+      ]
+    },
+    {
+      "folio": "f108v",
+      "section": "RECIPE_B",
+      "paragraph_count": 10,
+      "total_tokens": 570,
+      "total_lines": 53,
+      "unique_words": 301,
+      "paragraphs": [
+        {
+          "par_id": "B_452",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_453",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 17
+        },
+        {
+          "par_id": "B_454",
+          "lines": 5,
+          "tokens": 53,
+          "unique_words": 50
+        },
+        {
+          "par_id": "B_455",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_456",
+          "lines": 5,
+          "tokens": 46,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_457",
+          "lines": 8,
+          "tokens": 96,
+          "unique_words": 78
+        },
+        {
+          "par_id": "B_458",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_459",
+          "lines": 4,
+          "tokens": 45,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_460",
+          "lines": 19,
+          "tokens": 214,
+          "unique_words": 127
+        },
+        {
+          "par_id": "B_461",
+          "lines": 1,
+          "tokens": 4,
+          "unique_words": 4
+        }
+      ]
+    },
+    {
+      "folio": "f111r",
+      "section": "RECIPE_B",
+      "paragraph_count": 6,
+      "total_tokens": 614,
+      "total_lines": 54,
+      "unique_words": 354,
+      "paragraphs": [
+        {
+          "par_id": "B_462",
+          "lines": 5,
+          "tokens": 54,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_463",
+          "lines": 30,
+          "tokens": 359,
+          "unique_words": 237
+        },
+        {
+          "par_id": "B_464",
+          "lines": 8,
+          "tokens": 82,
+          "unique_words": 67
+        },
+        {
+          "par_id": "B_465",
+          "lines": 4,
+          "tokens": 47,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_466",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_467",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 34
+        }
+      ]
+    },
+    {
+      "folio": "f111v",
+      "section": "RECIPE_B",
+      "paragraph_count": 7,
+      "total_tokens": 561,
+      "total_lines": 51,
+      "unique_words": 306,
+      "paragraphs": [
+        {
+          "par_id": "B_468",
+          "lines": 25,
+          "tokens": 293,
+          "unique_words": 177
+        },
+        {
+          "par_id": "B_469",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_470",
+          "lines": 5,
+          "tokens": 56,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_471",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_472",
+          "lines": 8,
+          "tokens": 78,
+          "unique_words": 62
+        },
+        {
+          "par_id": "B_473",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_474",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 33
+        }
+      ]
+    },
+    {
+      "folio": "f112r",
+      "section": "RECIPE_B",
+      "paragraph_count": 10,
+      "total_tokens": 394,
+      "total_lines": 45,
+      "unique_words": 257,
+      "paragraphs": [
+        {
+          "par_id": "B_475",
+          "lines": 10,
+          "tokens": 78,
+          "unique_words": 60
+        },
+        {
+          "par_id": "B_476",
+          "lines": 4,
+          "tokens": 34,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_477",
+          "lines": 1,
+          "tokens": 8,
+          "unique_words": 8
+        },
+        {
+          "par_id": "B_478",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_479",
+          "lines": 4,
+          "tokens": 33,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_480",
+          "lines": 4,
+          "tokens": 34,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_481",
+          "lines": 4,
+          "tokens": 36,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_482",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_483",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_484",
+          "lines": 9,
+          "tokens": 86,
+          "unique_words": 77
+        }
+      ]
+    },
+    {
+      "folio": "f112v",
+      "section": "RECIPE_B",
+      "paragraph_count": 13,
+      "total_tokens": 415,
+      "total_lines": 47,
+      "unique_words": 254,
+      "paragraphs": [
+        {
+          "par_id": "B_485",
+          "lines": 6,
+          "tokens": 52,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_486",
+          "lines": 4,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_487",
+          "lines": 4,
+          "tokens": 35,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_488",
+          "lines": 5,
+          "tokens": 45,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_489",
+          "lines": 3,
+          "tokens": 24,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_490",
+          "lines": 2,
+          "tokens": 18,
+          "unique_words": 16
+        },
+        {
+          "par_id": "B_491",
+          "lines": 2,
+          "tokens": 17,
+          "unique_words": 17
+        },
+        {
+          "par_id": "B_492",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_493",
+          "lines": 2,
+          "tokens": 15,
+          "unique_words": 14
+        },
+        {
+          "par_id": "B_494",
+          "lines": 4,
+          "tokens": 34,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_495",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_496",
+          "lines": 3,
+          "tokens": 24,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_497",
+          "lines": 6,
+          "tokens": 62,
+          "unique_words": 60
+        }
+      ]
+    },
+    {
+      "folio": "f113r",
+      "section": "RECIPE_B",
+      "paragraph_count": 16,
+      "total_tokens": 518,
+      "total_lines": 51,
+      "unique_words": 369,
+      "paragraphs": [
+        {
+          "par_id": "B_498",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_499",
+          "lines": 4,
+          "tokens": 47,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_500",
+          "lines": 2,
+          "tokens": 24,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_501",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_502",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_503",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_504",
+          "lines": 2,
+          "tokens": 21,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_505",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_506",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_507",
+          "lines": 3,
+          "tokens": 34,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_508",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_509",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_510",
+          "lines": 2,
+          "tokens": 17,
+          "unique_words": 16
+        },
+        {
+          "par_id": "B_511",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_512",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_513",
+          "lines": 7,
+          "tokens": 72,
+          "unique_words": 58
+        }
+      ]
+    },
+    {
+      "folio": "f113v",
+      "section": "RECIPE_B",
+      "paragraph_count": 15,
+      "total_tokens": 479,
+      "total_lines": 49,
+      "unique_words": 306,
+      "paragraphs": [
+        {
+          "par_id": "B_514",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_515",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_516",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_517",
+          "lines": 3,
+          "tokens": 34,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_518",
+          "lines": 5,
+          "tokens": 54,
+          "unique_words": 50
+        },
+        {
+          "par_id": "B_519",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_520",
+          "lines": 4,
+          "tokens": 39,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_521",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_522",
+          "lines": 5,
+          "tokens": 52,
+          "unique_words": 45
+        },
+        {
+          "par_id": "B_523",
+          "lines": 3,
+          "tokens": 24,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_524",
+          "lines": 2,
+          "tokens": 16,
+          "unique_words": 16
+        },
+        {
+          "par_id": "B_525",
+          "lines": 4,
+          "tokens": 38,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_526",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_527",
+          "lines": 2,
+          "tokens": 15,
+          "unique_words": 14
+        },
+        {
+          "par_id": "B_528",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 30
+        }
+      ]
+    },
+    {
+      "folio": "f114r",
+      "section": "RECIPE_B",
+      "paragraph_count": 12,
+      "total_tokens": 447,
+      "total_lines": 45,
+      "unique_words": 317,
+      "paragraphs": [
+        {
+          "par_id": "B_529",
+          "lines": 3,
+          "tokens": 21,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_530",
+          "lines": 7,
+          "tokens": 69,
+          "unique_words": 60
+        },
+        {
+          "par_id": "B_531",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_532",
+          "lines": 5,
+          "tokens": 55,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_533",
+          "lines": 5,
+          "tokens": 47,
+          "unique_words": 45
+        },
+        {
+          "par_id": "B_534",
+          "lines": 4,
+          "tokens": 44,
+          "unique_words": 43
+        },
+        {
+          "par_id": "B_535",
+          "lines": 4,
+          "tokens": 45,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_536",
+          "lines": 2,
+          "tokens": 24,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_537",
+          "lines": 1,
+          "tokens": 5,
+          "unique_words": 5
+        },
+        {
+          "par_id": "B_538",
+          "lines": 4,
+          "tokens": 42,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_539",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_540",
+          "lines": 4,
+          "tokens": 40,
+          "unique_words": 37
+        }
+      ]
+    },
+    {
+      "folio": "f114v",
+      "section": "RECIPE_B",
+      "paragraph_count": 11,
+      "total_tokens": 362,
+      "total_lines": 41,
+      "unique_words": 268,
+      "paragraphs": [
+        {
+          "par_id": "B_541",
+          "lines": 5,
+          "tokens": 48,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_542",
+          "lines": 5,
+          "tokens": 47,
+          "unique_words": 43
+        },
+        {
+          "par_id": "B_543",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_544",
+          "lines": 4,
+          "tokens": 38,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_545",
+          "lines": 2,
+          "tokens": 13,
+          "unique_words": 13
+        },
+        {
+          "par_id": "B_546",
+          "lines": 3,
+          "tokens": 28,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_547",
+          "lines": 3,
+          "tokens": 23,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_548",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_549",
+          "lines": 4,
+          "tokens": 33,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_550",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_551",
+          "lines": 6,
+          "tokens": 56,
+          "unique_words": 50
+        }
+      ]
+    },
+    {
+      "folio": "f115r",
+      "section": "RECIPE_B",
+      "paragraph_count": 13,
+      "total_tokens": 444,
+      "total_lines": 45,
+      "unique_words": 312,
+      "paragraphs": [
+        {
+          "par_id": "B_552",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_553",
+          "lines": 4,
+          "tokens": 40,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_554",
+          "lines": 2,
+          "tokens": 22,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_555",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_556",
+          "lines": 6,
+          "tokens": 62,
+          "unique_words": 56
+        },
+        {
+          "par_id": "B_557",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_558",
+          "lines": 4,
+          "tokens": 45,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_559",
+          "lines": 3,
+          "tokens": 30,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_560",
+          "lines": 6,
+          "tokens": 56,
+          "unique_words": 53
+        },
+        {
+          "par_id": "B_561",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_562",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_563",
+          "lines": 2,
+          "tokens": 15,
+          "unique_words": 15
+        },
+        {
+          "par_id": "B_564",
+          "lines": 4,
+          "tokens": 36,
+          "unique_words": 32
+        }
+      ]
+    },
+    {
+      "folio": "f115v",
+      "section": "RECIPE_B",
+      "paragraph_count": 13,
+      "total_tokens": 399,
+      "total_lines": 45,
+      "unique_words": 312,
+      "paragraphs": [
+        {
+          "par_id": "B_565",
+          "lines": 5,
+          "tokens": 46,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_566",
+          "lines": 2,
+          "tokens": 20,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_567",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_568",
+          "lines": 2,
+          "tokens": 14,
+          "unique_words": 14
+        },
+        {
+          "par_id": "B_569",
+          "lines": 5,
+          "tokens": 48,
+          "unique_words": 47
+        },
+        {
+          "par_id": "B_570",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_571",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_572",
+          "lines": 5,
+          "tokens": 49,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_573",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_574",
+          "lines": 3,
+          "tokens": 24,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_575",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_576",
+          "lines": 4,
+          "tokens": 34,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_577",
+          "lines": 5,
+          "tokens": 42,
+          "unique_words": 37
+        }
+      ]
+    },
+    {
+      "folio": "f116r",
+      "section": "RECIPE_B",
+      "paragraph_count": 8,
+      "total_tokens": 537,
+      "total_lines": 50,
+      "unique_words": 267,
+      "paragraphs": [
+        {
+          "par_id": "B_578",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_579",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_580",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_581",
+          "lines": 5,
+          "tokens": 53,
+          "unique_words": 48
+        },
+        {
+          "par_id": "B_582",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_583",
+          "lines": 13,
+          "tokens": 152,
+          "unique_words": 115
+        },
+        {
+          "par_id": "B_584",
+          "lines": 15,
+          "tokens": 156,
+          "unique_words": 100
+        },
+        {
+          "par_id": "B_585",
+          "lines": 5,
+          "tokens": 51,
+          "unique_words": 44
+        }
+      ]
+    },
+    {
+      "folio": "f26r",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 85,
+      "total_lines": 10,
+      "unique_words": 66,
+      "paragraphs": [
+        {
+          "par_id": "B_001",
+          "lines": 6,
+          "tokens": 49,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_002",
+          "lines": 4,
+          "tokens": 36,
+          "unique_words": 31
+        }
+      ]
+    },
+    {
+      "folio": "f26v",
+      "section": "HERBAL_B",
+      "paragraph_count": 4,
+      "total_tokens": 89,
+      "total_lines": 9,
+      "unique_words": 74,
+      "paragraphs": [
+        {
+          "par_id": "B_003",
+          "lines": 2,
+          "tokens": 21,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_004",
+          "lines": 2,
+          "tokens": 22,
+          "unique_words": 22
+        },
+        {
+          "par_id": "B_005",
+          "lines": 2,
+          "tokens": 22,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_006",
+          "lines": 3,
+          "tokens": 24,
+          "unique_words": 23
+        }
+      ]
+    },
+    {
+      "folio": "f31r",
+      "section": "HERBAL_B",
+      "paragraph_count": 4,
+      "total_tokens": 100,
+      "total_lines": 16,
+      "unique_words": 77,
+      "paragraphs": [
+        {
+          "par_id": "B_007",
+          "lines": 5,
+          "tokens": 34,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_008",
+          "lines": 4,
+          "tokens": 27,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_009",
+          "lines": 6,
+          "tokens": 37,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_010",
+          "lines": 1,
+          "tokens": 2,
+          "unique_words": 2
+        }
+      ]
+    },
+    {
+      "folio": "f31v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 108,
+      "total_lines": 11,
+      "unique_words": 98,
+      "paragraphs": [
+        {
+          "par_id": "B_011",
+          "lines": 5,
+          "tokens": 44,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_012",
+          "lines": 6,
+          "tokens": 64,
+          "unique_words": 61
+        }
+      ]
+    },
+    {
+      "folio": "f33r",
+      "section": "HERBAL_B",
+      "paragraph_count": 1,
+      "total_tokens": 72,
+      "total_lines": 7,
+      "unique_words": 59,
+      "paragraphs": [
+        {
+          "par_id": "B_013",
+          "lines": 7,
+          "tokens": 72,
+          "unique_words": 59
+        }
+      ]
+    },
+    {
+      "folio": "f33v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 109,
+      "total_lines": 11,
+      "unique_words": 77,
+      "paragraphs": [
+        {
+          "par_id": "B_014",
+          "lines": 6,
+          "tokens": 61,
+          "unique_words": 47
+        },
+        {
+          "par_id": "B_015",
+          "lines": 5,
+          "tokens": 48,
+          "unique_words": 40
+        }
+      ]
+    },
+    {
+      "folio": "f34r",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 144,
+      "total_lines": 15,
+      "unique_words": 119,
+      "paragraphs": [
+        {
+          "par_id": "B_016",
+          "lines": 9,
+          "tokens": 86,
+          "unique_words": 78
+        },
+        {
+          "par_id": "B_017",
+          "lines": 6,
+          "tokens": 58,
+          "unique_words": 51
+        }
+      ]
+    },
+    {
+      "folio": "f34v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 115,
+      "total_lines": 11,
+      "unique_words": 94,
+      "paragraphs": [
+        {
+          "par_id": "B_018",
+          "lines": 5,
+          "tokens": 53,
+          "unique_words": 50
+        },
+        {
+          "par_id": "B_019",
+          "lines": 6,
+          "tokens": 62,
+          "unique_words": 51
+        }
+      ]
+    },
+    {
+      "folio": "f39r",
+      "section": "HERBAL_B",
+      "paragraph_count": 4,
+      "total_tokens": 154,
+      "total_lines": 16,
+      "unique_words": 121,
+      "paragraphs": [
+        {
+          "par_id": "B_020",
+          "lines": 5,
+          "tokens": 49,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_021",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 35
+        },
+        {
+          "par_id": "B_022",
+          "lines": 6,
+          "tokens": 63,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_023",
+          "lines": 1,
+          "tokens": 5,
+          "unique_words": 5
+        }
+      ]
+    },
+    {
+      "folio": "f39v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 142,
+      "total_lines": 14,
+      "unique_words": 105,
+      "paragraphs": [
+        {
+          "par_id": "B_024",
+          "lines": 6,
+          "tokens": 71,
+          "unique_words": 59
+        },
+        {
+          "par_id": "B_025",
+          "lines": 8,
+          "tokens": 71,
+          "unique_words": 56
+        }
+      ]
+    },
+    {
+      "folio": "f40r",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 97,
+      "total_lines": 11,
+      "unique_words": 74,
+      "paragraphs": [
+        {
+          "par_id": "B_026",
+          "lines": 7,
+          "tokens": 65,
+          "unique_words": 50
+        },
+        {
+          "par_id": "B_027",
+          "lines": 4,
+          "tokens": 32,
+          "unique_words": 30
+        }
+      ]
+    },
+    {
+      "folio": "f40v",
+      "section": "HERBAL_B",
+      "paragraph_count": 3,
+      "total_tokens": 106,
+      "total_lines": 19,
+      "unique_words": 82,
+      "paragraphs": [
+        {
+          "par_id": "B_028",
+          "lines": 12,
+          "tokens": 50,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_029",
+          "lines": 6,
+          "tokens": 52,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_030",
+          "lines": 1,
+          "tokens": 4,
+          "unique_words": 4
+        }
+      ]
+    },
+    {
+      "folio": "f41r",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 97,
+      "total_lines": 11,
+      "unique_words": 78,
+      "paragraphs": [
+        {
+          "par_id": "B_031",
+          "lines": 5,
+          "tokens": 46,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_032",
+          "lines": 6,
+          "tokens": 51,
+          "unique_words": 40
+        }
+      ]
+    },
+    {
+      "folio": "f41v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 68,
+      "total_lines": 8,
+      "unique_words": 58,
+      "paragraphs": [
+        {
+          "par_id": "B_033",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_034",
+          "lines": 7,
+          "tokens": 67,
+          "unique_words": 57
+        }
+      ]
+    },
+    {
+      "folio": "f43r",
+      "section": "HERBAL_B",
+      "paragraph_count": 3,
+      "total_tokens": 150,
+      "total_lines": 14,
+      "unique_words": 114,
+      "paragraphs": [
+        {
+          "par_id": "B_035",
+          "lines": 6,
+          "tokens": 64,
+          "unique_words": 55
+        },
+        {
+          "par_id": "B_036",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_037",
+          "lines": 5,
+          "tokens": 57,
+          "unique_words": 50
+        }
+      ]
+    },
+    {
+      "folio": "f43v",
+      "section": "HERBAL_B",
+      "paragraph_count": 3,
+      "total_tokens": 153,
+      "total_lines": 16,
+      "unique_words": 125,
+      "paragraphs": [
+        {
+          "par_id": "B_038",
+          "lines": 5,
+          "tokens": 50,
+          "unique_words": 47
+        },
+        {
+          "par_id": "B_039",
+          "lines": 4,
+          "tokens": 32,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_040",
+          "lines": 7,
+          "tokens": 71,
+          "unique_words": 63
+        }
+      ]
+    },
+    {
+      "folio": "f46r",
+      "section": "HERBAL_B",
+      "paragraph_count": 4,
+      "total_tokens": 157,
+      "total_lines": 15,
+      "unique_words": 122,
+      "paragraphs": [
+        {
+          "par_id": "B_041",
+          "lines": 5,
+          "tokens": 57,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_042",
+          "lines": 3,
+          "tokens": 37,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_043",
+          "lines": 2,
+          "tokens": 22,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_044",
+          "lines": 5,
+          "tokens": 41,
+          "unique_words": 40
+        }
+      ]
+    },
+    {
+      "folio": "f46v",
+      "section": "HERBAL_B",
+      "paragraph_count": 1,
+      "total_tokens": 111,
+      "total_lines": 12,
+      "unique_words": 87,
+      "paragraphs": [
+        {
+          "par_id": "B_045",
+          "lines": 12,
+          "tokens": 111,
+          "unique_words": 87
+        }
+      ]
+    },
+    {
+      "folio": "f48r",
+      "section": "HERBAL_B",
+      "paragraph_count": 1,
+      "total_tokens": 89,
+      "total_lines": 9,
+      "unique_words": 87,
+      "paragraphs": [
+        {
+          "par_id": "B_046",
+          "lines": 9,
+          "tokens": 89,
+          "unique_words": 87
+        }
+      ]
+    },
+    {
+      "folio": "f48v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 126,
+      "total_lines": 11,
+      "unique_words": 102,
+      "paragraphs": [
+        {
+          "par_id": "B_047",
+          "lines": 6,
+          "tokens": 72,
+          "unique_words": 62
+        },
+        {
+          "par_id": "B_048",
+          "lines": 5,
+          "tokens": 54,
+          "unique_words": 49
+        }
+      ]
+    },
+    {
+      "folio": "f50r",
+      "section": "HERBAL_B",
+      "paragraph_count": 1,
+      "total_tokens": 89,
+      "total_lines": 10,
+      "unique_words": 75,
+      "paragraphs": [
+        {
+          "par_id": "B_049",
+          "lines": 10,
+          "tokens": 89,
+          "unique_words": 75
+        }
+      ]
+    },
+    {
+      "folio": "f50v",
+      "section": "HERBAL_B",
+      "paragraph_count": 1,
+      "total_tokens": 98,
+      "total_lines": 11,
+      "unique_words": 84,
+      "paragraphs": [
+        {
+          "par_id": "B_050",
+          "lines": 11,
+          "tokens": 98,
+          "unique_words": 84
+        }
+      ]
+    },
+    {
+      "folio": "f55r",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 124,
+      "total_lines": 13,
+      "unique_words": 92,
+      "paragraphs": [
+        {
+          "par_id": "B_051",
+          "lines": 6,
+          "tokens": 58,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_052",
+          "lines": 7,
+          "tokens": 66,
+          "unique_words": 61
+        }
+      ]
+    },
+    {
+      "folio": "f55v",
+      "section": "HERBAL_B",
+      "paragraph_count": 2,
+      "total_tokens": 104,
+      "total_lines": 12,
+      "unique_words": 74,
+      "paragraphs": [
+        {
+          "par_id": "B_053",
+          "lines": 6,
+          "tokens": 45,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_054",
+          "lines": 6,
+          "tokens": 59,
+          "unique_words": 46
+        }
+      ]
+    },
+    {
+      "folio": "f57r",
+      "section": "PHARMA",
+      "paragraph_count": 2,
+      "total_tokens": 87,
+      "total_lines": 11,
+      "unique_words": 77,
+      "paragraphs": [
+        {
+          "par_id": "B_055",
+          "lines": 5,
+          "tokens": 41,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_056",
+          "lines": 6,
+          "tokens": 46,
+          "unique_words": 44
+        }
+      ]
+    },
+    {
+      "folio": "f66r",
+      "section": "PHARMA",
+      "paragraph_count": 37,
+      "total_tokens": 329,
+      "total_lines": 64,
+      "unique_words": 236,
+      "paragraphs": [
+        {
+          "par_id": "B_057",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_058",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_059",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_060",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_061",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_062",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_063",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_064",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_065",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_066",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_067",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_068",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_069",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_070",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_071",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_072",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_073",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_074",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_075",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_076",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_077",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_078",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_079",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_080",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_081",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_082",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_083",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_084",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_085",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_086",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_087",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_088",
+          "lines": 7,
+          "tokens": 58,
+          "unique_words": 53
+        },
+        {
+          "par_id": "B_089",
+          "lines": 6,
+          "tokens": 57,
+          "unique_words": 52
+        },
+        {
+          "par_id": "B_090",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_091",
+          "lines": 3,
+          "tokens": 31,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_092",
+          "lines": 12,
+          "tokens": 112,
+          "unique_words": 93
+        },
+        {
+          "par_id": "B_093",
+          "lines": 1,
+          "tokens": 3,
+          "unique_words": 3
+        }
+      ]
+    },
+    {
+      "folio": "f66v",
+      "section": "PHARMA",
+      "paragraph_count": 3,
+      "total_tokens": 113,
+      "total_lines": 13,
+      "unique_words": 93,
+      "paragraphs": [
+        {
+          "par_id": "B_094",
+          "lines": 5,
+          "tokens": 42,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_095",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 24
+        },
+        {
+          "par_id": "B_096",
+          "lines": 5,
+          "tokens": 46,
+          "unique_words": 42
+        }
+      ]
+    },
+    {
+      "folio": "f75r",
+      "section": "BIO",
+      "paragraph_count": 3,
+      "total_tokens": 412,
+      "total_lines": 46,
+      "unique_words": 187,
+      "paragraphs": [
+        {
+          "par_id": "B_097",
+          "lines": 26,
+          "tokens": 235,
+          "unique_words": 125
+        },
+        {
+          "par_id": "B_098",
+          "lines": 5,
+          "tokens": 57,
+          "unique_words": 46
+        },
+        {
+          "par_id": "B_099",
+          "lines": 15,
+          "tokens": 120,
+          "unique_words": 68
+        }
+      ]
+    },
+    {
+      "folio": "f75v",
+      "section": "BIO",
+      "paragraph_count": 10,
+      "total_tokens": 339,
+      "total_lines": 42,
+      "unique_words": 174,
+      "paragraphs": [
+        {
+          "par_id": "B_100",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_101",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_102",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_103",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_104",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_105",
+          "lines": 11,
+          "tokens": 118,
+          "unique_words": 87
+        },
+        {
+          "par_id": "B_106",
+          "lines": 5,
+          "tokens": 59,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_107",
+          "lines": 7,
+          "tokens": 77,
+          "unique_words": 52
+        },
+        {
+          "par_id": "B_108",
+          "lines": 11,
+          "tokens": 71,
+          "unique_words": 60
+        },
+        {
+          "par_id": "B_109",
+          "lines": 3,
+          "tokens": 9,
+          "unique_words": 9
+        }
+      ]
+    },
+    {
+      "folio": "f76r",
+      "section": "BIO",
+      "paragraph_count": 4,
+      "total_tokens": 546,
+      "total_lines": 47,
+      "unique_words": 260,
+      "paragraphs": [
+        {
+          "par_id": "B_110",
+          "lines": 29,
+          "tokens": 357,
+          "unique_words": 193
+        },
+        {
+          "par_id": "B_111",
+          "lines": 5,
+          "tokens": 58,
+          "unique_words": 47
+        },
+        {
+          "par_id": "B_112",
+          "lines": 7,
+          "tokens": 74,
+          "unique_words": 58
+        },
+        {
+          "par_id": "B_113",
+          "lines": 6,
+          "tokens": 57,
+          "unique_words": 47
+        }
+      ]
+    },
+    {
+      "folio": "f76v",
+      "section": "BIO",
+      "paragraph_count": 6,
+      "total_tokens": 400,
+      "total_lines": 41,
+      "unique_words": 227,
+      "paragraphs": [
+        {
+          "par_id": "B_114",
+          "lines": 9,
+          "tokens": 91,
+          "unique_words": 72
+        },
+        {
+          "par_id": "B_115",
+          "lines": 6,
+          "tokens": 58,
+          "unique_words": 44
+        },
+        {
+          "par_id": "B_116",
+          "lines": 9,
+          "tokens": 86,
+          "unique_words": 71
+        },
+        {
+          "par_id": "B_117",
+          "lines": 9,
+          "tokens": 86,
+          "unique_words": 73
+        },
+        {
+          "par_id": "B_118",
+          "lines": 3,
+          "tokens": 25,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_119",
+          "lines": 5,
+          "tokens": 54,
+          "unique_words": 37
+        }
+      ]
+    },
+    {
+      "folio": "f77r",
+      "section": "BIO",
+      "paragraph_count": 13,
+      "total_tokens": 325,
+      "total_lines": 50,
+      "unique_words": 169,
+      "paragraphs": [
+        {
+          "par_id": "B_120",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_121",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_122",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_123",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_124",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_125",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_126",
+          "lines": 16,
+          "tokens": 142,
+          "unique_words": 85
+        },
+        {
+          "par_id": "B_127",
+          "lines": 13,
+          "tokens": 92,
+          "unique_words": 62
+        },
+        {
+          "par_id": "B_128",
+          "lines": 11,
+          "tokens": 81,
+          "unique_words": 62
+        },
+        {
+          "par_id": "B_129",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_130",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_131",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_132",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        }
+      ]
+    },
+    {
+      "folio": "f77v",
+      "section": "BIO",
+      "paragraph_count": 8,
+      "total_tokens": 331,
+      "total_lines": 42,
+      "unique_words": 171,
+      "paragraphs": [
+        {
+          "par_id": "B_133",
+          "lines": 1,
+          "tokens": 2,
+          "unique_words": 2
+        },
+        {
+          "par_id": "B_134",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_135",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_136",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_137",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_138",
+          "lines": 10,
+          "tokens": 103,
+          "unique_words": 67
+        },
+        {
+          "par_id": "B_139",
+          "lines": 13,
+          "tokens": 101,
+          "unique_words": 67
+        },
+        {
+          "par_id": "B_140",
+          "lines": 14,
+          "tokens": 121,
+          "unique_words": 77
+        }
+      ]
+    },
+    {
+      "folio": "f78r",
+      "section": "BIO",
+      "paragraph_count": 8,
+      "total_tokens": 294,
+      "total_lines": 47,
+      "unique_words": 168,
+      "paragraphs": [
+        {
+          "par_id": "B_141",
+          "lines": 25,
+          "tokens": 171,
+          "unique_words": 106
+        },
+        {
+          "par_id": "B_142",
+          "lines": 16,
+          "tokens": 116,
+          "unique_words": 83
+        },
+        {
+          "par_id": "B_143",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_144",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_145",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_146",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_147",
+          "lines": 1,
+          "tokens": 2,
+          "unique_words": 2
+        },
+        {
+          "par_id": "B_148",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        }
+      ]
+    },
+    {
+      "folio": "f78v",
+      "section": "BIO",
+      "paragraph_count": 2,
+      "total_tokens": 292,
+      "total_lines": 32,
+      "unique_words": 157,
+      "paragraphs": [
+        {
+          "par_id": "B_149",
+          "lines": 19,
+          "tokens": 175,
+          "unique_words": 105
+        },
+        {
+          "par_id": "B_150",
+          "lines": 13,
+          "tokens": 117,
+          "unique_words": 78
+        }
+      ]
+    },
+    {
+      "folio": "f79r",
+      "section": "BIO",
+      "paragraph_count": 8,
+      "total_tokens": 389,
+      "total_lines": 44,
+      "unique_words": 211,
+      "paragraphs": [
+        {
+          "par_id": "B_151",
+          "lines": 6,
+          "tokens": 63,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_152",
+          "lines": 6,
+          "tokens": 51,
+          "unique_words": 43
+        },
+        {
+          "par_id": "B_153",
+          "lines": 8,
+          "tokens": 77,
+          "unique_words": 59
+        },
+        {
+          "par_id": "B_154",
+          "lines": 5,
+          "tokens": 47,
+          "unique_words": 43
+        },
+        {
+          "par_id": "B_155",
+          "lines": 5,
+          "tokens": 40,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_156",
+          "lines": 4,
+          "tokens": 33,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_157",
+          "lines": 4,
+          "tokens": 31,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_158",
+          "lines": 6,
+          "tokens": 47,
+          "unique_words": 38
+        }
+      ]
+    },
+    {
+      "folio": "f79v",
+      "section": "BIO",
+      "paragraph_count": 7,
+      "total_tokens": 354,
+      "total_lines": 42,
+      "unique_words": 201,
+      "paragraphs": [
+        {
+          "par_id": "B_159",
+          "lines": 9,
+          "tokens": 68,
+          "unique_words": 55
+        },
+        {
+          "par_id": "B_160",
+          "lines": 2,
+          "tokens": 15,
+          "unique_words": 14
+        },
+        {
+          "par_id": "B_161",
+          "lines": 11,
+          "tokens": 94,
+          "unique_words": 70
+        },
+        {
+          "par_id": "B_162",
+          "lines": 5,
+          "tokens": 42,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_163",
+          "lines": 5,
+          "tokens": 47,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_164",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_165",
+          "lines": 6,
+          "tokens": 51,
+          "unique_words": 40
+        }
+      ]
+    },
+    {
+      "folio": "f80r",
+      "section": "BIO",
+      "paragraph_count": 16,
+      "total_tokens": 441,
+      "total_lines": 53,
+      "unique_words": 238,
+      "paragraphs": [
+        {
+          "par_id": "B_166",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_167",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_168",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_169",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_170",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_171",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_172",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_173",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_174",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_175",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_176",
+          "lines": 7,
+          "tokens": 77,
+          "unique_words": 58
+        },
+        {
+          "par_id": "B_177",
+          "lines": 10,
+          "tokens": 117,
+          "unique_words": 89
+        },
+        {
+          "par_id": "B_178",
+          "lines": 6,
+          "tokens": 53,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_179",
+          "lines": 6,
+          "tokens": 64,
+          "unique_words": 49
+        },
+        {
+          "par_id": "B_180",
+          "lines": 7,
+          "tokens": 52,
+          "unique_words": 34
+        },
+        {
+          "par_id": "B_181",
+          "lines": 7,
+          "tokens": 68,
+          "unique_words": 54
+        }
+      ]
+    },
+    {
+      "folio": "f80v",
+      "section": "BIO",
+      "paragraph_count": 8,
+      "total_tokens": 378,
+      "total_lines": 44,
+      "unique_words": 197,
+      "paragraphs": [
+        {
+          "par_id": "B_182",
+          "lines": 6,
+          "tokens": 47,
+          "unique_words": 39
+        },
+        {
+          "par_id": "B_183",
+          "lines": 7,
+          "tokens": 61,
+          "unique_words": 50
+        },
+        {
+          "par_id": "B_184",
+          "lines": 5,
+          "tokens": 44,
+          "unique_words": 40
+        },
+        {
+          "par_id": "B_185",
+          "lines": 4,
+          "tokens": 33,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_186",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_187",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 21
+        },
+        {
+          "par_id": "B_188",
+          "lines": 8,
+          "tokens": 69,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_189",
+          "lines": 7,
+          "tokens": 61,
+          "unique_words": 48
+        }
+      ]
+    },
+    {
+      "folio": "f81r",
+      "section": "BIO",
+      "paragraph_count": 3,
+      "total_tokens": 207,
+      "total_lines": 31,
+      "unique_words": 128,
+      "paragraphs": [
+        {
+          "par_id": "B_190",
+          "lines": 15,
+          "tokens": 94,
+          "unique_words": 66
+        },
+        {
+          "par_id": "B_191",
+          "lines": 8,
+          "tokens": 52,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_192",
+          "lines": 8,
+          "tokens": 61,
+          "unique_words": 48
+        }
+      ]
+    },
+    {
+      "folio": "f81v",
+      "section": "BIO",
+      "paragraph_count": 3,
+      "total_tokens": 258,
+      "total_lines": 28,
+      "unique_words": 159,
+      "paragraphs": [
+        {
+          "par_id": "B_193",
+          "lines": 9,
+          "tokens": 89,
+          "unique_words": 64
+        },
+        {
+          "par_id": "B_194",
+          "lines": 18,
+          "tokens": 167,
+          "unique_words": 114
+        },
+        {
+          "par_id": "B_195",
+          "lines": 1,
+          "tokens": 2,
+          "unique_words": 2
+        }
+      ]
+    },
+    {
+      "folio": "f82r",
+      "section": "BIO",
+      "paragraph_count": 4,
+      "total_tokens": 275,
+      "total_lines": 32,
+      "unique_words": 163,
+      "paragraphs": [
+        {
+          "par_id": "B_196",
+          "lines": 9,
+          "tokens": 72,
+          "unique_words": 56
+        },
+        {
+          "par_id": "B_197",
+          "lines": 8,
+          "tokens": 72,
+          "unique_words": 56
+        },
+        {
+          "par_id": "B_198",
+          "lines": 1,
+          "tokens": 5,
+          "unique_words": 4
+        },
+        {
+          "par_id": "B_199",
+          "lines": 14,
+          "tokens": 126,
+          "unique_words": 85
+        }
+      ]
+    },
+    {
+      "folio": "f82v",
+      "section": "BIO",
+      "paragraph_count": 6,
+      "total_tokens": 298,
+      "total_lines": 34,
+      "unique_words": 173,
+      "paragraphs": [
+        {
+          "par_id": "B_200",
+          "lines": 6,
+          "tokens": 57,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_201",
+          "lines": 4,
+          "tokens": 37,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_202",
+          "lines": 5,
+          "tokens": 51,
+          "unique_words": 43
+        },
+        {
+          "par_id": "B_203",
+          "lines": 8,
+          "tokens": 62,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_204",
+          "lines": 5,
+          "tokens": 40,
+          "unique_words": 32
+        },
+        {
+          "par_id": "B_205",
+          "lines": 6,
+          "tokens": 51,
+          "unique_words": 46
+        }
+      ]
+    },
+    {
+      "folio": "f83r",
+      "section": "BIO",
+      "paragraph_count": 10,
+      "total_tokens": 340,
+      "total_lines": 55,
+      "unique_words": 200,
+      "paragraphs": [
+        {
+          "par_id": "B_206",
+          "lines": 8,
+          "tokens": 71,
+          "unique_words": 53
+        },
+        {
+          "par_id": "B_207",
+          "lines": 9,
+          "tokens": 83,
+          "unique_words": 71
+        },
+        {
+          "par_id": "B_208",
+          "lines": 7,
+          "tokens": 64,
+          "unique_words": 48
+        },
+        {
+          "par_id": "B_209",
+          "lines": 20,
+          "tokens": 91,
+          "unique_words": 68
+        },
+        {
+          "par_id": "B_210",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_211",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_212",
+          "lines": 3,
+          "tokens": 11,
+          "unique_words": 11
+        },
+        {
+          "par_id": "B_213",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_214",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_215",
+          "lines": 4,
+          "tokens": 16,
+          "unique_words": 14
+        }
+      ]
+    },
+    {
+      "folio": "f83v",
+      "section": "BIO",
+      "paragraph_count": 7,
+      "total_tokens": 263,
+      "total_lines": 35,
+      "unique_words": 149,
+      "paragraphs": [
+        {
+          "par_id": "B_216",
+          "lines": 8,
+          "tokens": 75,
+          "unique_words": 53
+        },
+        {
+          "par_id": "B_217",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_218",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_219",
+          "lines": 10,
+          "tokens": 98,
+          "unique_words": 71
+        },
+        {
+          "par_id": "B_220",
+          "lines": 13,
+          "tokens": 86,
+          "unique_words": 59
+        },
+        {
+          "par_id": "B_221",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_222",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        }
+      ]
+    },
+    {
+      "folio": "f84r",
+      "section": "BIO",
+      "paragraph_count": 18,
+      "total_tokens": 361,
+      "total_lines": 47,
+      "unique_words": 195,
+      "paragraphs": [
+        {
+          "par_id": "B_223",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_224",
+          "lines": 1,
+          "tokens": 2,
+          "unique_words": 2
+        },
+        {
+          "par_id": "B_225",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_226",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_227",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_228",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_229",
+          "lines": 1,
+          "tokens": 2,
+          "unique_words": 2
+        },
+        {
+          "par_id": "B_230",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_231",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_232",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_233",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_234",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        },
+        {
+          "par_id": "B_235",
+          "lines": 4,
+          "tokens": 48,
+          "unique_words": 37
+        },
+        {
+          "par_id": "B_236",
+          "lines": 3,
+          "tokens": 35,
+          "unique_words": 28
+        },
+        {
+          "par_id": "B_237",
+          "lines": 7,
+          "tokens": 81,
+          "unique_words": 57
+        },
+        {
+          "par_id": "B_238",
+          "lines": 9,
+          "tokens": 102,
+          "unique_words": 75
+        },
+        {
+          "par_id": "B_239",
+          "lines": 11,
+          "tokens": 80,
+          "unique_words": 60
+        },
+        {
+          "par_id": "B_240",
+          "lines": 1,
+          "tokens": 1,
+          "unique_words": 1
+        }
+      ]
+    },
+    {
+      "folio": "f84v",
+      "section": "BIO",
+      "paragraph_count": 5,
+      "total_tokens": 347,
+      "total_lines": 51,
+      "unique_words": 164,
+      "paragraphs": [
+        {
+          "par_id": "B_241",
+          "lines": 2,
+          "tokens": 9,
+          "unique_words": 8
+        },
+        {
+          "par_id": "B_242",
+          "lines": 18,
+          "tokens": 154,
+          "unique_words": 81
+        },
+        {
+          "par_id": "B_243",
+          "lines": 21,
+          "tokens": 174,
+          "unique_words": 108
+        },
+        {
+          "par_id": "B_244",
+          "lines": 4,
+          "tokens": 4,
+          "unique_words": 4
+        },
+        {
+          "par_id": "B_245",
+          "lines": 6,
+          "tokens": 6,
+          "unique_words": 6
+        }
+      ]
+    },
+    {
+      "folio": "f85r1",
+      "section": "RECIPE_B",
+      "paragraph_count": 10,
+      "total_tokens": 333,
+      "total_lines": 35,
+      "unique_words": 242,
+      "paragraphs": [
+        {
+          "par_id": "B_246",
+          "lines": 6,
+          "tokens": 60,
+          "unique_words": 51
+        },
+        {
+          "par_id": "B_247",
+          "lines": 4,
+          "tokens": 35,
+          "unique_words": 33
+        },
+        {
+          "par_id": "B_248",
+          "lines": 6,
+          "tokens": 62,
+          "unique_words": 53
+        },
+        {
+          "par_id": "B_249",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_250",
+          "lines": 3,
+          "tokens": 27,
+          "unique_words": 25
+        },
+        {
+          "par_id": "B_251",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 26
+        },
+        {
+          "par_id": "B_252",
+          "lines": 2,
+          "tokens": 19,
+          "unique_words": 19
+        },
+        {
+          "par_id": "B_253",
+          "lines": 3,
+          "tokens": 32,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_254",
+          "lines": 4,
+          "tokens": 41,
+          "unique_words": 38
+        },
+        {
+          "par_id": "B_255",
+          "lines": 1,
+          "tokens": 5,
+          "unique_words": 5
+        }
+      ]
+    },
+    {
+      "folio": "f85r2",
+      "section": "RECIPE_B",
+      "paragraph_count": 6,
+      "total_tokens": 155,
+      "total_lines": 24,
+      "unique_words": 113,
+      "paragraphs": [
+        {
+          "par_id": "B_256",
+          "lines": 1,
+          "tokens": 34,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_257",
+          "lines": 6,
+          "tokens": 35,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_258",
+          "lines": 5,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_259",
+          "lines": 5,
+          "tokens": 27,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_260",
+          "lines": 6,
+          "tokens": 25,
+          "unique_words": 23
+        },
+        {
+          "par_id": "B_261",
+          "lines": 1,
+          "tokens": 15,
+          "unique_words": 13
+        }
+      ]
+    },
+    {
+      "folio": "f86v3",
+      "section": "RECIPE_B",
+      "paragraph_count": 7,
+      "total_tokens": 277,
+      "total_lines": 36,
+      "unique_words": 194,
+      "paragraphs": [
+        {
+          "par_id": "B_276",
+          "lines": 2,
+          "tokens": 14,
+          "unique_words": 13
+        },
+        {
+          "par_id": "B_277",
+          "lines": 6,
+          "tokens": 41,
+          "unique_words": 31
+        },
+        {
+          "par_id": "B_278",
+          "lines": 6,
+          "tokens": 50,
+          "unique_words": 42
+        },
+        {
+          "par_id": "B_279",
+          "lines": 8,
+          "tokens": 49,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_280",
+          "lines": 6,
+          "tokens": 63,
+          "unique_words": 60
+        },
+        {
+          "par_id": "B_281",
+          "lines": 3,
+          "tokens": 19,
+          "unique_words": 18
+        },
+        {
+          "par_id": "B_282",
+          "lines": 5,
+          "tokens": 41,
+          "unique_words": 36
+        }
+      ]
+    },
+    {
+      "folio": "f86v4",
+      "section": "RECIPE_B",
+      "paragraph_count": 4,
+      "total_tokens": 188,
+      "total_lines": 9,
+      "unique_words": 143,
+      "paragraphs": [
+        {
+          "par_id": "B_262",
+          "lines": 4,
+          "tokens": 140,
+          "unique_words": 114
+        },
+        {
+          "par_id": "B_263",
+          "lines": 3,
+          "tokens": 33,
+          "unique_words": 27
+        },
+        {
+          "par_id": "B_264",
+          "lines": 1,
+          "tokens": 11,
+          "unique_words": 11
+        },
+        {
+          "par_id": "B_265",
+          "lines": 1,
+          "tokens": 4,
+          "unique_words": 4
+        }
+      ]
+    },
+    {
+      "folio": "f86v5",
+      "section": "RECIPE_B",
+      "paragraph_count": 6,
+      "total_tokens": 381,
+      "total_lines": 39,
+      "unique_words": 228,
+      "paragraphs": [
+        {
+          "par_id": "B_270",
+          "lines": 6,
+          "tokens": 62,
+          "unique_words": 56
+        },
+        {
+          "par_id": "B_271",
+          "lines": 5,
+          "tokens": 53,
+          "unique_words": 50
+        },
+        {
+          "par_id": "B_272",
+          "lines": 6,
+          "tokens": 60,
+          "unique_words": 47
+        },
+        {
+          "par_id": "B_273",
+          "lines": 8,
+          "tokens": 75,
+          "unique_words": 59
+        },
+        {
+          "par_id": "B_274",
+          "lines": 13,
+          "tokens": 126,
+          "unique_words": 100
+        },
+        {
+          "par_id": "B_275",
+          "lines": 1,
+          "tokens": 5,
+          "unique_words": 5
+        }
+      ]
+    },
+    {
+      "folio": "f86v6",
+      "section": "RECIPE_B",
+      "paragraph_count": 4,
+      "total_tokens": 479,
+      "total_lines": 45,
+      "unique_words": 290,
+      "paragraphs": [
+        {
+          "par_id": "B_266",
+          "lines": 12,
+          "tokens": 131,
+          "unique_words": 98
+        },
+        {
+          "par_id": "B_267",
+          "lines": 7,
+          "tokens": 73,
+          "unique_words": 62
+        },
+        {
+          "par_id": "B_268",
+          "lines": 10,
+          "tokens": 112,
+          "unique_words": 90
+        },
+        {
+          "par_id": "B_269",
+          "lines": 16,
+          "tokens": 163,
+          "unique_words": 127
+        }
+      ]
+    },
+    {
+      "folio": "f94r",
+      "section": "OTHER",
+      "paragraph_count": 2,
+      "total_tokens": 82,
+      "total_lines": 9,
+      "unique_words": 75,
+      "paragraphs": [
+        {
+          "par_id": "B_283",
+          "lines": 8,
+          "tokens": 79,
+          "unique_words": 73
+        },
+        {
+          "par_id": "B_284",
+          "lines": 1,
+          "tokens": 3,
+          "unique_words": 3
+        }
+      ]
+    },
+    {
+      "folio": "f94v",
+      "section": "OTHER",
+      "paragraph_count": 3,
+      "total_tokens": 101,
+      "total_lines": 12,
+      "unique_words": 85,
+      "paragraphs": [
+        {
+          "par_id": "B_285",
+          "lines": 4,
+          "tokens": 33,
+          "unique_words": 30
+        },
+        {
+          "par_id": "B_286",
+          "lines": 3,
+          "tokens": 21,
+          "unique_words": 20
+        },
+        {
+          "par_id": "B_287",
+          "lines": 5,
+          "tokens": 47,
+          "unique_words": 41
+        }
+      ]
+    },
+    {
+      "folio": "f95r1",
+      "section": "RECIPE_B",
+      "paragraph_count": 2,
+      "total_tokens": 103,
+      "total_lines": 11,
+      "unique_words": 79,
+      "paragraphs": [
+        {
+          "par_id": "B_288",
+          "lines": 5,
+          "tokens": 45,
+          "unique_words": 36
+        },
+        {
+          "par_id": "B_289",
+          "lines": 6,
+          "tokens": 58,
+          "unique_words": 48
+        }
+      ]
+    },
+    {
+      "folio": "f95r2",
+      "section": "RECIPE_B",
+      "paragraph_count": 2,
+      "total_tokens": 79,
+      "total_lines": 9,
+      "unique_words": 64,
+      "paragraphs": [
+        {
+          "par_id": "B_290",
+          "lines": 4,
+          "tokens": 34,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_291",
+          "lines": 5,
+          "tokens": 45,
+          "unique_words": 39
+        }
+      ]
+    },
+    {
+      "folio": "f95v1",
+      "section": "RECIPE_B",
+      "paragraph_count": 4,
+      "total_tokens": 117,
+      "total_lines": 13,
+      "unique_words": 102,
+      "paragraphs": [
+        {
+          "par_id": "B_293",
+          "lines": 5,
+          "tokens": 45,
+          "unique_words": 41
+        },
+        {
+          "par_id": "B_294",
+          "lines": 3,
+          "tokens": 29,
+          "unique_words": 29
+        },
+        {
+          "par_id": "B_295",
+          "lines": 2,
+          "tokens": 17,
+          "unique_words": 17
+        },
+        {
+          "par_id": "B_296",
+          "lines": 3,
+          "tokens": 26,
+          "unique_words": 25
+        }
+      ]
+    },
+    {
+      "folio": "f95v2",
+      "section": "RECIPE_B",
+      "paragraph_count": 1,
+      "total_tokens": 64,
+      "total_lines": 7,
+      "unique_words": 55,
+      "paragraphs": [
+        {
+          "par_id": "B_292",
+          "lines": 7,
+          "tokens": 64,
+          "unique_words": 55
+        }
+      ]
+    }
+  ]
+}

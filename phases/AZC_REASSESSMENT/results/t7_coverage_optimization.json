@@ -1,0 +1,29 @@
+{
+  "test": "T7_coverage_optimization",
+  "pairwise_overlap": {
+    "real_mean_jaccard": 0.24560032278298677,
+    "synthetic_mean": 0.022292516446262498,
+    "synthetic_std": 0.00019511815710986343,
+    "percentile": 100.0,
+    "z_score": 1144.474761572232,
+    "verdict": "HIGHER_THAN_RANDOM"
+  },
+  "cumulative_coverage": {
+    "after_10": 401,
+    "after_20": 533,
+    "after_50": 775,
+    "total": 1013,
+    "pp_after_10": 243,
+    "pp_total": 404,
+    "pp_saturation_at_10": 0.6014851485148515
+  },
+  "hub_structure": {
+    "hub_threshold": 57,
+    "n_hub_middles": 25,
+    "hub_pp_rate": 1.0,
+    "expected_pp_rate": 0.39881539980256664,
+    "hub_pp_p": 1.0454373062407592e-10
+  },
+  "verdict": "COVERAGE_OPTIMIZED",
+  "explanation": "A folios show higher-than-random overlap, consistent with deliberate coverage optimization"
+}

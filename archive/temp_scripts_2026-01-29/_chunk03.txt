@@ -1,0 +1,20 @@
+def main():
+    print("=" * 70)
+    print("LINE TYPE COMPARISON: PP-pure vs RI-bearing in Currier A")
+    print("=" * 70)
+    analyzer = RecordAnalyzer()
+    folios = analyzer.get_folios()
+    all_records = []
+    folio_records = defaultdict(list)
+    for folio in folios:
+        records = analyzer.analyze_folio(folio)
+        for rec in records:
+            if len(rec.tokens)                 all_records.append(rec)
+                folio_records[folio].append(rec)
+    pp_pure = [rec for rec in all_records if rec.ri_count == 0]
+    ri_bearing = [rec for rec in all_records if rec.ri_count     print("")
+    print("Total lines: %d" % len(all_records))
+    print("PP-pure lines (ri_count == 0): %d (%.1f%%)" % (len(pp_pure), 100*len(pp_pure)/len(all_records)))
+    print("RI-bearing lines (ri_count  %d (%.1f%%)" % (len(ri_bearing), 100*len(ri_bearing)/len(all_records)))
+    results = {"summary": {"total_lines": len(all_records), "pp_pure_count": len(pp_pure), "ri_bearing_count": len(ri_bearing), "pp_pure_pct": round(100*len(pp_pure)/len(all_records),2), "ri_bearing_pct": round(100*len(ri_bearing)/len(all_records),2), "total_folios": len(folios)}, "tests": {}}
+

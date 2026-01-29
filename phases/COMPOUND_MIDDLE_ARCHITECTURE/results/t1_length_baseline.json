@@ -1,0 +1,20 @@
+{
+  "observed": {
+    "n_middles": 99,
+    "compound_count": 84,
+    "compound_rate": 84.84848484848484
+  },
+  "random_baseline": {
+    "n_iterations": 1000,
+    "mean_rate": 54.938383838383835,
+    "std_rate": 4.9103459966021035,
+    "min_rate": 36.36363636363637,
+    "max_rate": 68.68686868686869
+  },
+  "comparison": {
+    "elevation_pp": 29.91010101010101,
+    "z_score": 6.091241030835386,
+    "p_value": 0.0
+  },
+  "verdict": "SIGNIFICANTLY_ABOVE_CHANCE"
+}

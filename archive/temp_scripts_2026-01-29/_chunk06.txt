@@ -1,0 +1,20 @@
+    # TEST 3: INFRA
+    print("")
+    print("-" * 70)
+    print("TEST 3: INFRA (DA-family) Content")
+    print("-" * 70)
+    t3a = mw_report([rec.infra_count for rec in pp_pure], [rec.infra_count for rec in ri_bearing], "PP-pure", "RI-bearing", "infra_tokens_per_line")
+    print("  INFRA tokens per line:")
+    print("    PP-pure:    mean=%.2f, median=%.1f" % (t3a["mean_a"], t3a["median_a"]))
+    print("    RI-bearing: mean=%.2f, median=%.1f" % (t3a["mean_b"], t3a["median_b"]))
+    print("    Mann-Whitney p=%.2e, Cohen d=%.3f" % (t3a["p_value"], t3a["cohens_d"]))
+    ifrac_pp = [rec.infra_count/len(rec.tokens) if len(rec.tokens) else 0 for rec in pp_pure]
+    ifrac_ri = [rec.infra_count/len(rec.tokens) if len(rec.tokens) else 0 for rec in ri_bearing]
+    t3b = mw_report(ifrac_pp, ifrac_ri, "PP-pure", "RI-bearing", "infra_fraction")
+    print("  INFRA fraction:")
+    print("    PP-pure:    mean=%.3f" % t3b["mean_a"])
+    print("    RI-bearing: mean=%.3f" % t3b["mean_b"])
+    print("    Mann-Whitney p=%.2e, Cohen d=%.3f" % (t3b["p_value"], t3b["cohens_d"]))
+    results["tests"]["infra_absolute"] = t3a
+    results["tests"]["infra_fraction"] = t3b
+

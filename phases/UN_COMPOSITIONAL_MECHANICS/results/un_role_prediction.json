@@ -1,0 +1,60 @@
+{
+  "prefix_prediction": {
+    "assigned": 6989,
+    "assigned_pct": 99.2,
+    "by_role": {
+      "EN": 2579,
+      "FQ": 1751,
+      "AX": 2246,
+      "FL": 413
+    },
+    "mean_confidence": 0.863
+  },
+  "joint_prediction": {
+    "assigned": 4763,
+    "assigned_pct": 67.6,
+    "by_role": {
+      "EN": 2216,
+      "AX": 2139,
+      "FQ": 260,
+      "FL": 148
+    },
+    "mean_confidence": 0.978
+  },
+  "middle_prediction": {
+    "assigned": 3821,
+    "assigned_pct": 54.3,
+    "by_role": {
+      "FQ": 376,
+      "EN": 2088,
+      "AX": 1118,
+      "CC": 86,
+      "FL": 153
+    },
+    "mean_confidence": 0.749
+  },
+  "consensus": {
+    "by_role": {
+      "EN": 2612,
+      "FQ": 1574,
+      "AX": 2439,
+      "FL": 412
+    },
+    "confidence_levels": {
+      "high": 3058,
+      "low": 1783,
+      "medium": 1294,
+      "single": 902,
+      "none": 5
+    },
+    "total_assigned": 7037,
+    "total_assigned_pct": 99.9,
+    "high_confidence_by_role": {
+      "EN": 2145,
+      "FQ": 190,
+      "AX": 687,
+      "FL": 36
+    },
+    "high_confidence_total": 3058
+  }
+}

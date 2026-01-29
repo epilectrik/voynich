@@ -1,0 +1,37 @@
+{
+  "kernel_ht_correlation": {
+    "spearman_rho": -0.2407135316333083,
+    "spearman_p": 0.029374032304688012,
+    "kruskal_wallis_H": 8.04543376759068,
+    "kruskal_wallis_p": 0.017904255019539045
+  },
+  "escape_ht_correlation": {
+    "spearman_rho": 0.37698905089862833,
+    "spearman_p": 0.0004809980204100676,
+    "kruskal_wallis_H": 12.625706076337849,
+    "kruskal_wallis_p": 0.0018128537131925147
+  },
+  "quadrant_analysis": {
+    "low_k_low_e": {
+      "n": 12,
+      "mean_ht": 29.891144781246396
+    },
+    "low_k_high_e": {
+      "n": 29,
+      "mean_ht": 34.64016951029455
+    },
+    "high_k_low_e": {
+      "n": 29,
+      "mean_ht": 27.760593104030793
+    },
+    "high_k_high_e": {
+      "n": 12,
+      "mean_ht": 30.91127730447147
+    }
+  },
+  "line1_elevation_by_kernel": {
+    "low_kernel_mean": 25.1325080960992,
+    "high_kernel_mean": 23.93848092111019,
+    "mann_whitney_p": 0.7048310372077735
+  }
+}

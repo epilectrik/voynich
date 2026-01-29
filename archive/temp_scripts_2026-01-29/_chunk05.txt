@@ -1,0 +1,20 @@
+    # TEST 2: PP token density
+    print("")
+    print("-" * 70)
+    print("TEST 2: PP Token Density")
+    print("-" * 70)
+    t2a = mw_report([rec.pp_count for rec in pp_pure], [rec.pp_count for rec in ri_bearing], "PP-pure", "RI-bearing", "pp_tokens_per_line")
+    print("  PP tokens per line:")
+    print("    PP-pure:    mean=%.2f, median=%.1f" % (t2a["mean_a"], t2a["median_a"]))
+    print("    RI-bearing: mean=%.2f, median=%.1f" % (t2a["mean_b"], t2a["median_b"]))
+    print("    Mann-Whitney p=%.2e, Cohen d=%.3f" % (t2a["p_value"], t2a["cohens_d"]))
+    pp_frac = [rec.pp_count/len(rec.tokens) if len(rec.tokens) else 0 for rec in pp_pure]
+    ri_frac = [rec.pp_count/len(rec.tokens) if len(rec.tokens) else 0 for rec in ri_bearing]
+    t2b = mw_report(pp_frac, ri_frac, "PP-pure", "RI-bearing", "pp_fraction")
+    print("  PP fraction:")
+    print("    PP-pure:    mean=%.3f" % t2b["mean_a"])
+    print("    RI-bearing: mean=%.3f" % t2b["mean_b"])
+    print("    Mann-Whitney p=%.2e, Cohen d=%.3f" % (t2b["p_value"], t2b["cohens_d"]))
+    results["tests"]["pp_density_absolute"] = t2a
+    results["tests"]["pp_density_fraction"] = t2b
+

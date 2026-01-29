@@ -1,0 +1,8221 @@
+{
+  "summary": {
+    "system": "B",
+    "paragraph_count": 585,
+    "classified_tokens_available": 480,
+    "ht_rate": {
+      "mean": 0.364,
+      "median": 0.324,
+      "stdev": 0.234
+    },
+    "line1_ht_rate": {
+      "mean": 0.465,
+      "median": 0.455
+    },
+    "body_ht_rate": {
+      "mean": 0.237,
+      "median": 0.25
+    },
+    "ht_delta": {
+      "mean": 0.134,
+      "median": 0.116,
+      "expected": 0.158
+    },
+    "positive_delta_rate": 0.768,
+    "positive_delta_count": 367,
+    "multi_line_count": 478,
+    "first_token_ht_rate": 0.756
+  },
+  "profiles": [
+    {
+      "par_id": "B_001",
+      "folio": "f26r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.408,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.341,
+        "ht_delta": 0.409,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_002",
+      "folio": "f26r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.306,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.231,
+        "ht_delta": 0.269,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_003",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.429,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.417,
+        "ht_delta": 0.028,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_004",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.6,
+        "ht_delta": -0.183,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_005",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.318,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.15,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_006",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.625,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.786,
+        "ht_delta": -0.386,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_007",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.353,
+        "line1_ht_rate": 0.833,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.583,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_008",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.259,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.263,
+        "ht_delta": -0.013,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_009",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.297,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.31,
+        "ht_delta": -0.06,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_010",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_011",
+      "folio": "f31v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.364,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.324,
+        "ht_delta": 0.176,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_012",
+      "folio": "f31v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 26,
+        "ht_rate": 0.406,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.358,
+        "ht_delta": 0.278,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_013",
+      "folio": "f33r",
+      "section": "H",
+      "folio_position": "only",
+      "ht_profile": {
+        "ht_count": 25,
+        "ht_rate": 0.347,
+        "line1_ht_rate": 0.778,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.492,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_014",
+      "folio": "f33v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.18,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.157,
+        "ht_delta": 0.143,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_015",
+      "folio": "f33v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.158,
+        "ht_delta": 0.442,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_016",
+      "folio": "f34r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 37,
+        "ht_rate": 0.43,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.416,
+        "ht_delta": 0.14,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_017",
+      "folio": "f34r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.259,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.226,
+        "ht_delta": 0.374,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_018",
+      "folio": "f34v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 24,
+        "ht_rate": 0.453,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.395,
+        "ht_delta": 0.305,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_019",
+      "folio": "f34v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.21,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.192,
+        "ht_delta": 0.108,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_020",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.429,
+        "line1_ht_rate": 0.615,
+        "body_ht_rate": 0.361,
+        "ht_delta": 0.254,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_021",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.378,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.308,
+        "ht_delta": 0.238,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_022",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.27,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.245,
+        "ht_delta": 0.155,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_023",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_024",
+      "folio": "f39v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.197,
+        "line1_ht_rate": 0.385,
+        "body_ht_rate": 0.155,
+        "ht_delta": 0.229,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_025",
+      "folio": "f39v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.282,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.27,
+        "ht_delta": 0.105,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_026",
+      "folio": "f40r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.277,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.255,
+        "ht_delta": 0.145,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_027",
+      "folio": "f40r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.281,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.136,
+        "ht_delta": 0.464,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_028",
+      "folio": "f40v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.26,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.234,
+        "ht_delta": 0.433,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_029",
+      "folio": "f40v",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.135,
+        "line1_ht_rate": 0.429,
+        "body_ht_rate": 0.089,
+        "ht_delta": 0.34,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_030",
+      "folio": "f40v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_031",
+      "folio": "f41r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.435,
+        "line1_ht_rate": 0.875,
+        "body_ht_rate": 0.342,
+        "ht_delta": 0.533,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_032",
+      "folio": "f41r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.392,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.333,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_033",
+      "folio": "f41v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_034",
+      "folio": "f41v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.284,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.224,
+        "ht_delta": 0.443,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_035",
+      "folio": "f43r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.297,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.245,
+        "ht_delta": 0.3,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_036",
+      "folio": "f43r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.345,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.294,
+        "ht_delta": 0.123,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_037",
+      "folio": "f43r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.368,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.37,
+        "ht_delta": -0.006,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_038",
+      "folio": "f43v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.38,
+        "line1_ht_rate": 0.818,
+        "body_ht_rate": 0.256,
+        "ht_delta": 0.562,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_039",
+      "folio": "f43v",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.406,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.348,
+        "ht_delta": 0.208,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_040",
+      "folio": "f43v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.282,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.205,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_041",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.316,
+        "line1_ht_rate": 0.308,
+        "body_ht_rate": 0.318,
+        "ht_delta": -0.01,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_042",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.297,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.2,
+        "ht_delta": 0.3,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_043",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.545,
+        "line1_ht_rate": 0.615,
+        "body_ht_rate": 0.444,
+        "ht_delta": 0.171,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_044",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.39,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.323,
+        "ht_delta": 0.277,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_045",
+      "folio": "f46v",
+      "section": "H",
+      "folio_position": "only",
+      "ht_profile": {
+        "ht_count": 32,
+        "ht_rate": 0.288,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.242,
+        "ht_delta": 0.424,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_046",
+      "folio": "f48r",
+      "section": "H",
+      "folio_position": "only",
+      "ht_profile": {
+        "ht_count": 39,
+        "ht_rate": 0.438,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.43,
+        "ht_delta": 0.07,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_047",
+      "folio": "f48v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.278,
+        "line1_ht_rate": 0.385,
+        "body_ht_rate": 0.254,
+        "ht_delta": 0.13,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_048",
+      "folio": "f48v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.241,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.227,
+        "ht_delta": 0.073,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_049",
+      "folio": "f50r",
+      "section": "H",
+      "folio_position": "only",
+      "ht_profile": {
+        "ht_count": 32,
+        "ht_rate": 0.36,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.292,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_050",
+      "folio": "f50v",
+      "section": "H",
+      "folio_position": "only",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.296,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.284,
+        "ht_delta": 0.116,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_051",
+      "folio": "f55r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.293,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.224,
+        "ht_delta": 0.442,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_052",
+      "folio": "f55r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.571,
+        "body_ht_rate": 0.305,
+        "ht_delta": 0.266,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_053",
+      "folio": "f55v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.289,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.256,
+        "ht_delta": 0.244,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_054",
+      "folio": "f55v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.22,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.188,
+        "ht_delta": 0.176,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_055",
+      "folio": "f57r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.415,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.387,
+        "ht_delta": 0.113,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_056",
+      "folio": "f57r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.478,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.486,
+        "ht_delta": -0.042,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_057",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_058",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_059",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_060",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_061",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_062",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_063",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_064",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_065",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_066",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_067",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_068",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_069",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_070",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_071",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_072",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_073",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_074",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_075",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_076",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_077",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_078",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_079",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_080",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_081",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_082",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_083",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_084",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_085",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_086",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_087",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_088",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 26,
+        "ht_rate": 0.448,
+        "line1_ht_rate": 0.778,
+        "body_ht_rate": 0.388,
+        "ht_delta": 0.39,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_089",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 25,
+        "ht_rate": 0.439,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.396,
+        "ht_delta": 0.271,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_090",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.405,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.321,
+        "ht_delta": 0.345,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_091",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.355,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.273,
+        "ht_delta": 0.283,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_092",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 37,
+        "ht_rate": 0.33,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.347,
+        "ht_delta": -0.165,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_093",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.667,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_094",
+      "folio": "f66v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.381,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.294,
+        "ht_delta": 0.456,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_095",
+      "folio": "f66v",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.44,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.438,
+        "ht_delta": 0.007,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_096",
+      "folio": "f66v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.413,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.368,
+        "ht_delta": 0.257,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_097",
+      "folio": "f75r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 34,
+        "ht_rate": 0.145,
+        "line1_ht_rate": 0.125,
+        "body_ht_rate": 0.145,
+        "ht_delta": -0.02,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_098",
+      "folio": "f75r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.158,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.109,
+        "ht_delta": 0.255,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_099",
+      "folio": "f75r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.175,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.164,
+        "ht_delta": 0.136,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_100",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_101",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_102",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_103",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_104",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_105",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 26,
+        "ht_rate": 0.22,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.211,
+        "ht_delta": 0.122,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_106",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.136,
+        "line1_ht_rate": 0.154,
+        "body_ht_rate": 0.13,
+        "ht_delta": 0.023,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_107",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.13,
+        "line1_ht_rate": 0.154,
+        "body_ht_rate": 0.125,
+        "ht_delta": 0.029,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_108",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.225,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.215,
+        "ht_delta": 0.118,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_109",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.556,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.6,
+        "ht_delta": -0.1,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_110",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 75,
+        "ht_rate": 0.21,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.196,
+        "ht_delta": 0.504,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_111",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.276,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.208,
+        "ht_delta": 0.392,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_112",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.162,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.127,
+        "ht_delta": 0.237,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_113",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.246,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.261,
+        "ht_delta": -0.079,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_114",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 27,
+        "ht_rate": 0.297,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.247,
+        "ht_delta": 0.453,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_115",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.276,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.271,
+        "ht_delta": 0.029,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_116",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 27,
+        "ht_rate": 0.314,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.269,
+        "ht_delta": 0.481,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_117",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 25,
+        "ht_rate": 0.291,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.263,
+        "ht_delta": 0.237,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_118",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.32,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.194,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_119",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.13,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.093,
+        "ht_delta": 0.18,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_120",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_121",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_122",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_123",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_124",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_125",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_126",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 27,
+        "ht_rate": 0.19,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.182,
+        "ht_delta": 0.118,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_127",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.185,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.179,
+        "ht_delta": 0.071,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_128",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 24,
+        "ht_rate": 0.296,
+        "line1_ht_rate": 0.222,
+        "body_ht_rate": 0.306,
+        "ht_delta": -0.083,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_129",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_130",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_131",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_132",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_133",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_134",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_135",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_136",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_137",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_138",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 24,
+        "ht_rate": 0.233,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.239,
+        "ht_delta": -0.057,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_139",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.218,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.215,
+        "ht_delta": 0.035,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_140",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 23,
+        "ht_rate": 0.19,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.182,
+        "ht_delta": 0.091,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_141",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 35,
+        "ht_rate": 0.205,
+        "line1_ht_rate": 0.143,
+        "body_ht_rate": 0.207,
+        "ht_delta": -0.064,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_142",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 23,
+        "ht_rate": 0.198,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.159,
+        "ht_delta": 0.508,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_143",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_144",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_145",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_146",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_147",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_148",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_149",
+      "folio": "f78v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 30,
+        "ht_rate": 0.171,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.157,
+        "ht_delta": 0.288,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_150",
+      "folio": "f78v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.179,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.165,
+        "ht_delta": 0.21,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_151",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.19,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.189,
+        "ht_delta": 0.011,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_152",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.294,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.317,
+        "ht_delta": -0.117,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_153",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.247,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.235,
+        "ht_delta": 0.098,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_154",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.277,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.243,
+        "ht_delta": 0.157,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_155",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.219,
+        "ht_delta": 0.156,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_156",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.152,
+        "line1_ht_rate": 0.111,
+        "body_ht_rate": 0.167,
+        "ht_delta": -0.056,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_157",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 4,
+        "ht_rate": 0.129,
+        "line1_ht_rate": 0.125,
+        "body_ht_rate": 0.13,
+        "ht_delta": -0.005,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_158",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.234,
+        "line1_ht_rate": 0.714,
+        "body_ht_rate": 0.15,
+        "ht_delta": 0.564,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_159",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.265,
+        "line1_ht_rate": 0.857,
+        "body_ht_rate": 0.197,
+        "ht_delta": 0.66,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_160",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.143,
+        "body_ht_rate": 0.25,
+        "ht_delta": -0.107,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_161",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.223,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.209,
+        "ht_delta": 0.166,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_162",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.265,
+        "ht_delta": 0.11,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_163",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.213,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.154,
+        "ht_delta": 0.346,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_164",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.216,
+        "line1_ht_rate": 0.167,
+        "body_ht_rate": 0.24,
+        "ht_delta": -0.073,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_165",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.216,
+        "line1_ht_rate": 0.222,
+        "body_ht_rate": 0.214,
+        "ht_delta": 0.008,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_166",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_167",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_168",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_169",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_170",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_171",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_172",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_173",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_174",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_175",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_176",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.224,
+        "ht_delta": 0.476,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_177",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.171,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.17,
+        "ht_delta": 0.012,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_178",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.151,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.116,
+        "ht_delta": 0.184,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_179",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.281,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.259,
+        "ht_delta": 0.141,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_180",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.173,
+        "line1_ht_rate": 0.286,
+        "body_ht_rate": 0.156,
+        "ht_delta": 0.13,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_181",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.324,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.322,
+        "ht_delta": 0.011,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_182",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.213,
+        "line1_ht_rate": 0.429,
+        "body_ht_rate": 0.175,
+        "ht_delta": 0.254,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_183",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.164,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.113,
+        "ht_delta": 0.387,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_184",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.227,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.171,
+        "ht_delta": 0.273,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_185",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.273,
+        "line1_ht_rate": 0.857,
+        "body_ht_rate": 0.115,
+        "ht_delta": 0.742,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_186",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.189,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.107,
+        "ht_delta": 0.337,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_187",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.115,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.062,
+        "ht_delta": 0.138,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_188",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.275,
+        "line1_ht_rate": 0.111,
+        "body_ht_rate": 0.3,
+        "ht_delta": -0.189,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_189",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.23,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.157,
+        "ht_delta": 0.443,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_190",
+      "folio": "f81r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.181,
+        "line1_ht_rate": 0.429,
+        "body_ht_rate": 0.161,
+        "ht_delta": 0.268,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_191",
+      "folio": "f81r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.212,
+        "line1_ht_rate": 0.833,
+        "body_ht_rate": 0.13,
+        "ht_delta": 0.703,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_192",
+      "folio": "f81r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.148,
+        "line1_ht_rate": 0.286,
+        "body_ht_rate": 0.13,
+        "ht_delta": 0.156,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_193",
+      "folio": "f81v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.146,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.13,
+        "ht_delta": 0.12,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_194",
+      "folio": "f81v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 45,
+        "ht_rate": 0.269,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.252,
+        "ht_delta": 0.373,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_195",
+      "folio": "f81v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_196",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.236,
+        "line1_ht_rate": 0.125,
+        "body_ht_rate": 0.25,
+        "ht_delta": -0.125,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_197",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.236,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.188,
+        "ht_delta": 0.438,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_198",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_199",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 31,
+        "ht_rate": 0.246,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.231,
+        "ht_delta": 0.214,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_200",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.211,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.167,
+        "ht_delta": 0.278,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_201",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.135,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0.192,
+        "ht_delta": -0.192,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_202",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.157,
+        "line1_ht_rate": 0.1,
+        "body_ht_rate": 0.171,
+        "ht_delta": -0.071,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_203",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.339,
+        "line1_ht_rate": 0.714,
+        "body_ht_rate": 0.291,
+        "ht_delta": 0.423,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_204",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.275,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.125,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_205",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.314,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.293,
+        "ht_delta": 0.107,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_206",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.31,
+        "line1_ht_rate": 0.429,
+        "body_ht_rate": 0.297,
+        "ht_delta": 0.132,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_207",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.349,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.324,
+        "ht_delta": 0.231,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_208",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.185,
+        "ht_delta": 0.415,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_209",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.209,
+        "line1_ht_rate": 0.167,
+        "body_ht_rate": 0.212,
+        "ht_delta": -0.045,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_210",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_211",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_212",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_213",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_214",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_215",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.375,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.5,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_216",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.213,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.182,
+        "ht_delta": 0.263,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_217",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_218",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_219",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.296,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.284,
+        "ht_delta": 0.116,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_220",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.174,
+        "line1_ht_rate": 0.125,
+        "body_ht_rate": 0.179,
+        "ht_delta": -0.054,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_221",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_222",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_223",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_224",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_225",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_226",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_227",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_228",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_229",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_230",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_231",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_232",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 1.0,
+        "line1_ht_rate": 1.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_233",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_234",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_235",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.188,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.108,
+        "ht_delta": 0.346,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_236",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.171,
+        "line1_ht_rate": 0.143,
+        "body_ht_rate": 0.19,
+        "ht_delta": -0.048,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_237",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.136,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.116,
+        "ht_delta": 0.134,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_238",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.284,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.35,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_239",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.143,
+        "body_ht_rate": 0.212,
+        "ht_delta": -0.069,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_240",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 0,
+        "ht_rate": 0.0,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_241",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.222,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.4,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_242",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 30,
+        "ht_rate": 0.195,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.189,
+        "ht_delta": 0.144,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_243",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 36,
+        "ht_rate": 0.207,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.19,
+        "ht_delta": 0.264,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_244",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0.667,
+        "ht_delta": -0.667,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_245",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.833,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 1.0,
+        "ht_delta": -1.0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_246",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.283,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.245,
+        "ht_delta": 0.21,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_247",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.486,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.48,
+        "ht_delta": 0.02,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_248",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.339,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.3,
+        "ht_delta": 0.2,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_249",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.236,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_250",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.118,
+        "ht_delta": 0.582,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_251",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.121,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_252",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.421,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.167,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_253",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.438,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.381,
+        "ht_delta": 0.165,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_254",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.512,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.419,
+        "ht_delta": 0.381,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_255",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_256",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.412,
+        "line1_ht_rate": 0.412,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_257",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.371,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.4,
+        "ht_delta": -0.2,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_258",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.263,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0.357,
+        "ht_delta": -0.357,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_259",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.407,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.409,
+        "ht_delta": -0.009,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_260",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.417,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_261",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_262",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 57,
+        "ht_rate": 0.407,
+        "line1_ht_rate": 0.538,
+        "body_ht_rate": 0.356,
+        "ht_delta": 0.182,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_263",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.364,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.292,
+        "ht_delta": 0.264,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_264",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.182,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_265",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_266",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 39,
+        "ht_rate": 0.298,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.261,
+        "ht_delta": 0.406,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_267",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 25,
+        "ht_rate": 0.342,
+        "line1_ht_rate": 0.889,
+        "body_ht_rate": 0.266,
+        "ht_delta": 0.623,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_268",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 38,
+        "ht_rate": 0.339,
+        "line1_ht_rate": 0.9,
+        "body_ht_rate": 0.284,
+        "ht_delta": 0.616,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_269",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 60,
+        "ht_rate": 0.368,
+        "line1_ht_rate": 0.889,
+        "body_ht_rate": 0.338,
+        "ht_delta": 0.551,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_270",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.323,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.28,
+        "ht_delta": 0.22,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_271",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.302,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.227,
+        "ht_delta": 0.439,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_272",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.283,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.245,
+        "ht_delta": 0.21,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_273",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.267,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.281,
+        "ht_delta": -0.099,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_274",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 34,
+        "ht_rate": 0.27,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.252,
+        "ht_delta": 0.202,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_275",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_276",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.214,
+        "line1_ht_rate": 0.286,
+        "body_ht_rate": 0.143,
+        "ht_delta": 0.143,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_277",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.195,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0.242,
+        "ht_delta": -0.242,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_278",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.28,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.214,
+        "ht_delta": 0.411,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_279",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.245,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.227,
+        "ht_delta": 0.173,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_280",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.346,
+        "ht_delta": -0.073,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_281",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.632,
+        "line1_ht_rate": 0.714,
+        "body_ht_rate": 0.583,
+        "ht_delta": 0.131,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_282",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.366,
+        "line1_ht_rate": 0.429,
+        "body_ht_rate": 0.353,
+        "ht_delta": 0.076,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_283",
+      "folio": "f94r",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 23,
+        "ht_rate": 0.291,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.257,
+        "ht_delta": 0.298,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_284",
+      "folio": "f94r",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_285",
+      "folio": "f94v",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.32,
+        "ht_delta": 0.055,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_286",
+      "folio": "f94v",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.381,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.308,
+        "ht_delta": 0.192,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_287",
+      "folio": "f94v",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.255,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.184,
+        "ht_delta": 0.371,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_288",
+      "folio": "f95r1",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.289,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.333,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_289",
+      "folio": "f95r1",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.293,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.292,
+        "ht_delta": 0.008,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_290",
+      "folio": "f95r2",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.206,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.077,
+        "ht_delta": 0.548,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_291",
+      "folio": "f95r2",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.267,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.222,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_292",
+      "folio": "f95v2",
+      "section": "H",
+      "folio_position": "only",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.297,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.236,
+        "ht_delta": 0.43,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_293",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.422,
+        "line1_ht_rate": 0.778,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.444,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_294",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.448,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.316,
+        "ht_delta": 0.384,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_295",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.471,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.314,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_296",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.423,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.375,
+        "ht_delta": 0.125,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_297",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.327,
+        "line1_ht_rate": 0.308,
+        "body_ht_rate": 0.333,
+        "ht_delta": -0.026,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_298",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.29,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.158,
+        "ht_delta": 0.342,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_299",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.302,
+        "line1_ht_rate": 0.571,
+        "body_ht_rate": 0.224,
+        "ht_delta": 0.347,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_300",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.233,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.028,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_301",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.238,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.455,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_302",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.241,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.211,
+        "ht_delta": 0.089,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_303",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.083,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_304",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 4,
+        "ht_rate": 0.129,
+        "line1_ht_rate": 0.083,
+        "body_ht_rate": 0.158,
+        "ht_delta": -0.075,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_305",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.294,
+        "ht_delta": -0.112,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_306",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.211,
+        "ht_delta": 0.234,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_307",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.462,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.667,
+        "ht_delta": -0.267,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_308",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 4,
+        "ht_rate": 0.222,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.125,
+        "ht_delta": 0.175,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_309",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.178,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_310",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.308,
+        "line1_ht_rate": 0.091,
+        "body_ht_rate": 0.467,
+        "ht_delta": -0.376,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_311",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.188,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.2,
+        "ht_delta": -0.018,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_312",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.308,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.294,
+        "ht_delta": 0.039,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_313",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.278,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.185,
+        "ht_delta": 0.37,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_314",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.32,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.133,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_315",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.163,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.129,
+        "ht_delta": 0.121,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_316",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.256,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.241,
+        "ht_delta": 0.059,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_317",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.294,
+        "ht_delta": -0.112,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_318",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.261,
+        "line1_ht_rate": 0.083,
+        "body_ht_rate": 0.455,
+        "ht_delta": -0.371,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_319",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.167,
+        "body_ht_rate": 0.222,
+        "ht_delta": -0.056,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_320",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.0,
+        "body_ht_rate": 0.412,
+        "ht_delta": -0.412,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_321",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.31,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.317,
+        "ht_delta": -0.044,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_322",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.357,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.2,
+        "ht_delta": 0.55,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_323",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.178,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_324",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.143,
+        "line1_ht_rate": 0.1,
+        "body_ht_rate": 0.16,
+        "ht_delta": -0.06,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_325",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.278,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.286,
+        "ht_delta": -0.013,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_326",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.231,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.138,
+        "ht_delta": 0.362,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_327",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.205,
+        "line1_ht_rate": 0.111,
+        "body_ht_rate": 0.233,
+        "ht_delta": -0.122,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_328",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.341,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.4,
+        "ht_delta": -0.218,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_329",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.347,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.297,
+        "ht_delta": 0.203,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_330",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.45,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.375,
+        "ht_delta": 0.125,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_331",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.317,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.3,
+        "ht_delta": 0.064,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_332",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.56,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.562,
+        "ht_delta": -0.007,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_333",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.517,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.412,
+        "ht_delta": 0.255,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_334",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.3,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.263,
+        "ht_delta": 0.154,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_335",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.375,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.381,
+        "ht_delta": -0.017,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_336",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 24,
+        "ht_rate": 0.585,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.581,
+        "ht_delta": 0.019,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_337",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.421,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.5,
+        "ht_delta": -0.136,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_338",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.44,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.433,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_339",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.457,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.458,
+        "ht_delta": -0.004,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_340",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.226,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.238,
+        "ht_delta": -0.038,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_341",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.44,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.421,
+        "ht_delta": 0.079,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_342",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.417,
+        "line1_ht_rate": 0.308,
+        "body_ht_rate": 0.545,
+        "ht_delta": -0.238,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_343",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.273,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.188,
+        "ht_delta": 0.312,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_344",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.452,
+        "line1_ht_rate": 0.615,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.282,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_345",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.488,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.5,
+        "ht_delta": -0.045,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_346",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.419,
+        "line1_ht_rate": 0.385,
+        "body_ht_rate": 0.444,
+        "ht_delta": -0.06,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_347",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.396,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.368,
+        "ht_delta": 0.132,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_348",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.273,
+        "line1_ht_rate": 0.231,
+        "body_ht_rate": 0.333,
+        "ht_delta": -0.103,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_349",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.355,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.3,
+        "ht_delta": 0.155,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_350",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.412,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.273,
+        "ht_delta": 0.394,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_351",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.375,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.067,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_352",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.354,
+        "line1_ht_rate": 0.538,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.253,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_353",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.342,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.357,
+        "ht_delta": -0.057,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_354",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.339,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.311,
+        "ht_delta": 0.143,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_355",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.28,
+        "ht_delta": 0.02,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_356",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.75,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_357",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.562,
+        "line1_ht_rate": 0.818,
+        "body_ht_rate": 0.429,
+        "ht_delta": 0.39,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_358",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.433,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.316,
+        "ht_delta": 0.321,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_359",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 28,
+        "ht_rate": 0.389,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.377,
+        "ht_delta": 0.077,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_360",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.526,
+        "line1_ht_rate": 0.385,
+        "body_ht_rate": 0.833,
+        "ht_delta": -0.449,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_361",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.526,
+        "line1_ht_rate": 0.583,
+        "body_ht_rate": 0.429,
+        "ht_delta": 0.155,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_362",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.387,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.3,
+        "ht_delta": 0.245,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_363",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.477,
+        "line1_ht_rate": 0.538,
+        "body_ht_rate": 0.452,
+        "ht_delta": 0.087,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_364",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.292,
+        "line1_ht_rate": 0.231,
+        "body_ht_rate": 0.364,
+        "ht_delta": -0.133,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_365",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_366",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.525,
+        "line1_ht_rate": 0.889,
+        "body_ht_rate": 0.419,
+        "ht_delta": 0.47,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_367",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.35,
+        "ht_delta": 0.15,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_368",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.414,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.373,
+        "ht_delta": 0.263,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_369",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.381,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.281,
+        "ht_delta": 0.419,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_370",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.571,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.455,
+        "ht_delta": 0.245,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_371",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.444,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_372",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.667,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.625,
+        "ht_delta": 0.075,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_373",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.538,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.5,
+        "ht_delta": 0.136,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_374",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.281,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.19,
+        "ht_delta": 0.264,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_375",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 24,
+        "ht_rate": 0.338,
+        "line1_ht_rate": 0.727,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.461,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_376",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.471,
+        "ht_delta": 0.075,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_377",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.357,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.367,
+        "ht_delta": -0.033,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_378",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.353,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.114,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_379",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.353,
+        "ht_delta": 0.092,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_380",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.3,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.083,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_381",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.357,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.316,
+        "ht_delta": 0.129,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_382",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.351,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.308,
+        "ht_delta": 0.147,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_383",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.45,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.3,
+        "ht_delta": 0.3,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_384",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.318,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.231,
+        "ht_delta": 0.214,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_385",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.35,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.333,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_386",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.368,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.111,
+        "ht_delta": 0.489,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_387",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.533,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.8,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_388",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.538,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 1.0,
+        "ht_delta": -0.6,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_389",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.308,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.178,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_390",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.327,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.289,
+        "ht_delta": 0.211,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_391",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.378,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.364,
+        "ht_delta": 0.053,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_392",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.359,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.296,
+        "ht_delta": 0.204,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_393",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.444,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.429,
+        "ht_delta": 0.026,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_394",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.31,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.267,
+        "ht_delta": 0.15,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_395",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.407,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.438,
+        "ht_delta": -0.074,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_396",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.421,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.8,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_397",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.562,
+        "line1_ht_rate": 0.778,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.492,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_398",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.324,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.259,
+        "ht_delta": 0.241,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_399",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.421,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.571,
+        "ht_delta": -0.238,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_400",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.306,
+        "line1_ht_rate": 0.091,
+        "body_ht_rate": 0.4,
+        "ht_delta": -0.309,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_401",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.368,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.205,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_402",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.259,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.133,
+        "ht_delta": 0.283,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_403",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.214,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_404",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.3,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.111,
+        "ht_delta": 0.343,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_405",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.254,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.229,
+        "ht_delta": 0.134,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_406",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.323,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.114,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_407",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.167,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_408",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.256,
+        "ht_delta": 0.144,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_409",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.344,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.273,
+        "ht_delta": 0.227,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_410",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.429,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.25,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_411",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.44,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.351,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_412",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.28,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.357,
+        "ht_delta": -0.175,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_413",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.323,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.211,
+        "ht_delta": 0.289,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_414",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.462,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.55,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_415",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.465,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.364,
+        "ht_delta": 0.436,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_416",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.321,
+        "ht_delta": 0.042,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_417",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.243,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.179,
+        "ht_delta": 0.266,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_418",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.48,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.429,
+        "ht_delta": 0.117,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_419",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.176,
+        "ht_delta": 0.187,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_420",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.273,
+        "line1_ht_rate": 0.167,
+        "body_ht_rate": 0.312,
+        "ht_delta": -0.146,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_421",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.212,
+        "ht_delta": 0.152,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_422",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.121,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_423",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.296,
+        "line1_ht_rate": 0.444,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.222,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_424",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.2,
+        "ht_delta": 0.0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_425",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.297,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.259,
+        "ht_delta": 0.141,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_426",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.241,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.105,
+        "ht_delta": 0.395,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_427",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.467,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.7,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_428",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.263,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.269,
+        "ht_delta": -0.019,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_429",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.37,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.278,
+        "ht_delta": 0.278,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_430",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.12,
+        "line1_ht_rate": 0.111,
+        "body_ht_rate": 0.125,
+        "ht_delta": -0.014,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_431",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.15,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0.1,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_432",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.257,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.2,
+        "ht_delta": 0.2,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_433",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.214,
+        "line1_ht_rate": 0.182,
+        "body_ht_rate": 0.333,
+        "ht_delta": -0.152,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_434",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.294,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.167,
+        "ht_delta": 0.197,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_435",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.176,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.122,
+        "ht_delta": 0.278,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_436",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.513,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.414,
+        "ht_delta": 0.386,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_437",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.171,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.083,
+        "ht_delta": 0.28,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_438",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.343,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.261,
+        "ht_delta": 0.239,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_439",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.357,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.375,
+        "ht_delta": -0.042,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_440",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.214,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.118,
+        "ht_delta": 0.246,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_441",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.316,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.114,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_442",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.269,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.188,
+        "ht_delta": 0.213,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_443",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.28,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.289,
+        "ht_delta": -0.039,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_444",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.294,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.083,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_445",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.194,
+        "line1_ht_rate": 0.1,
+        "body_ht_rate": 0.231,
+        "ht_delta": -0.131,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_446",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.368,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.278,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_447",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_448",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.364,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.364,
+        "ht_delta": 0.0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_449",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.405,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.37,
+        "ht_delta": 0.13,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_450",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.156,
+        "line1_ht_rate": 0.091,
+        "body_ht_rate": 0.19,
+        "ht_delta": -0.1,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_451",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.097,
+        "line1_ht_rate": 0.091,
+        "body_ht_rate": 0.1,
+        "ht_delta": -0.009,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_452",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.317,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.276,
+        "ht_delta": 0.141,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_453",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.35,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.4,
+        "ht_delta": -0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_454",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.415,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.429,
+        "ht_delta": -0.065,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_455",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.29,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.211,
+        "ht_delta": 0.206,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_456",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.457,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.405,
+        "ht_delta": 0.261,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_457",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.302,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.302,
+        "ht_delta": -0.002,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_458",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.35,
+        "line1_ht_rate": 0.385,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.099,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_459",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.222,
+        "line1_ht_rate": 0.167,
+        "body_ht_rate": 0.242,
+        "ht_delta": -0.076,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_460",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 46,
+        "ht_rate": 0.215,
+        "line1_ht_rate": 0.167,
+        "body_ht_rate": 0.218,
+        "ht_delta": -0.051,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_461",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 2,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_462",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.302,
+        "ht_delta": 0.152,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_463",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 129,
+        "ht_rate": 0.359,
+        "line1_ht_rate": 0.077,
+        "body_ht_rate": 0.37,
+        "ht_delta": -0.293,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_464",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 32,
+        "ht_rate": 0.39,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.467,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_465",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.298,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.205,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_466",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.323,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.114,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_467",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.244,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.241,
+        "ht_delta": 0.009,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_468",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 71,
+        "ht_rate": 0.242,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.226,
+        "ht_delta": 0.474,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_469",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.393,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.167,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_470",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 23,
+        "ht_rate": 0.411,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.391,
+        "ht_delta": 0.109,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_471",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.227,
+        "ht_delta": 0.318,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_472",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.282,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.254,
+        "ht_delta": 0.201,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_473",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.312,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.238,
+        "ht_delta": 0.216,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_474",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.244,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.133,
+        "ht_delta": 0.412,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_475",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 21,
+        "ht_rate": 0.269,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.232,
+        "ht_delta": 0.324,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_476",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 3,
+        "ht_rate": 0.088,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.038,
+        "ht_delta": 0.212,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_477",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 4,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_478",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.207,
+        "line1_ht_rate": 0.375,
+        "body_ht_rate": 0.143,
+        "ht_delta": 0.232,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_479",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.273,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.261,
+        "ht_delta": 0.039,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_480",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.441,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.367,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_481",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.361,
+        "line1_ht_rate": 0.625,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.339,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_482",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.45,
+        "ht_delta": -0.15,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_483",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.269,
+        "line1_ht_rate": 0.556,
+        "body_ht_rate": 0.118,
+        "ht_delta": 0.438,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_484",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 35,
+        "ht_rate": 0.407,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.408,
+        "ht_delta": -0.008,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_485",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.269,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.19,
+        "ht_delta": 0.41,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_486",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.393,
+        "line1_ht_rate": 0.714,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.429,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_487",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.314,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.24,
+        "ht_delta": 0.26,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_488",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.222,
+        "line1_ht_rate": 0.222,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_489",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.125,
+        "ht_delta": 0.375,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_490",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_491",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.412,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.571,
+        "ht_delta": -0.271,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_492",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.393,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.389,
+        "ht_delta": 0.011,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_493",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_494",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.353,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.35,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_495",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.182,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.13,
+        "ht_delta": 0.17,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_496",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.375,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.4,
+        "ht_delta": -0.067,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_497",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 24,
+        "ht_rate": 0.387,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.346,
+        "ht_delta": 0.254,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_498",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.516,
+        "line1_ht_rate": 0.727,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.327,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_499",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.277,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.232,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_500",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.167,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_501",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.485,
+        "line1_ht_rate": 0.583,
+        "body_ht_rate": 0.429,
+        "ht_delta": 0.155,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_502",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.571,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.529,
+        "ht_delta": 0.107,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_503",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.321,
+        "ht_delta": 0.224,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_504",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.476,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.145,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_505",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.357,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.067,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_506",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.6,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.4,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_507",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.471,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.455,
+        "ht_delta": 0.045,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_508",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.286,
+        "ht_delta": 0.351,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_509",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.48,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.2,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_510",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.353,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.0,
+        "ht_delta": 0.6,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_511",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.594,
+        "line1_ht_rate": 0.909,
+        "body_ht_rate": 0.429,
+        "ht_delta": 0.481,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_512",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.286,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.222,
+        "ht_delta": 0.178,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_513",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 22,
+        "ht_rate": 0.306,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.311,
+        "ht_delta": -0.039,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_514",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.344,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.03,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_515",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.571,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.588,
+        "ht_delta": -0.043,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_516",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 15,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.5,
+        "ht_delta": 0.0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_517",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.265,
+        "line1_ht_rate": 0.125,
+        "body_ht_rate": 0.389,
+        "ht_delta": -0.264,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_518",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.296,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.262,
+        "ht_delta": 0.155,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_519",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.519,
+        "line1_ht_rate": 0.8,
+        "body_ht_rate": 0.353,
+        "ht_delta": 0.447,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_520",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.231,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.143,
+        "ht_delta": 0.312,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_521",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.429,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.438,
+        "ht_delta": -0.021,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_522",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.269,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.19,
+        "ht_delta": 0.41,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_523",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.214,
+        "ht_delta": 0.286,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_524",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.438,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.143,
+        "ht_delta": 0.524,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_525",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.342,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.35,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_526",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.233,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.167,
+        "ht_delta": 0.167,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_527",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 5,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.2,
+        "ht_delta": 0.2,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_528",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.25,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.238,
+        "ht_delta": 0.035,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_529",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.667,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.667,
+        "ht_delta": 0.0,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_530",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 29,
+        "ht_rate": 0.42,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.373,
+        "ht_delta": 0.327,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_531",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.615,
+        "line1_ht_rate": 0.818,
+        "body_ht_rate": 0.467,
+        "ht_delta": 0.352,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_532",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 27,
+        "ht_rate": 0.491,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.455,
+        "ht_delta": 0.182,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_533",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.404,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.429,
+        "ht_delta": -0.095,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_534",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.386,
+        "line1_ht_rate": 0.462,
+        "body_ht_rate": 0.355,
+        "ht_delta": 0.107,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_535",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.378,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.324,
+        "ht_delta": 0.222,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_536",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 4,
+        "ht_rate": 0.167,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.071,
+        "ht_delta": 0.229,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_537",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 1,
+        "ht_rate": 0.2,
+        "line1_ht_rate": 0.2,
+        "body_ht_rate": 0,
+        "ht_delta": 0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_538",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.31,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.233,
+        "ht_delta": 0.267,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_539",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.448,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.35,
+        "ht_delta": 0.317,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_540",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.225,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.2,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_541",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 18,
+        "ht_rate": 0.375,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.316,
+        "ht_delta": 0.284,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_542",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.404,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.405,
+        "ht_delta": -0.005,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_543",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.467,
+        "ht_delta": -0.167,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_544",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.342,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.345,
+        "ht_delta": -0.011,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_545",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.462,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.667,
+        "ht_delta": -0.267,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_546",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.321,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.278,
+        "ht_delta": 0.122,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_547",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.478,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.417,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_548",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.56,
+        "line1_ht_rate": 0.875,
+        "body_ht_rate": 0.412,
+        "ht_delta": 0.463,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_549",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.394,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.292,
+        "ht_delta": 0.375,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_550",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.385,
+        "line1_ht_rate": 0.333,
+        "body_ht_rate": 0.412,
+        "ht_delta": -0.078,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_551",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.357,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.283,
+        "ht_delta": 0.417,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_552",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 17,
+        "ht_rate": 0.586,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.55,
+        "ht_delta": 0.117,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_553",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 16,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.414,
+        "ht_delta": -0.05,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_554",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.364,
+        "line1_ht_rate": 0.385,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.051,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_555",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.345,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.368,
+        "ht_delta": -0.068,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_556",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 26,
+        "ht_rate": 0.419,
+        "line1_ht_rate": 0.667,
+        "body_ht_rate": 0.377,
+        "ht_delta": 0.289,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_557",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.364,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.304,
+        "ht_delta": 0.196,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_558",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.289,
+        "line1_ht_rate": 0.583,
+        "body_ht_rate": 0.182,
+        "ht_delta": 0.402,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_559",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 12,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.368,
+        "ht_delta": 0.086,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_560",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.339,
+        "line1_ht_rate": 0.778,
+        "body_ht_rate": 0.255,
+        "ht_delta": 0.522,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_561",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 8,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.417,
+        "body_ht_rate": 0.375,
+        "ht_delta": 0.042,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_562",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.333,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.176,
+        "ht_delta": 0.424,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_563",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.467,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_564",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.361,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.346,
+        "ht_delta": 0.054,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_565",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.435,
+        "line1_ht_rate": 0.545,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.145,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_566",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.35,
+        "line1_ht_rate": 0.3,
+        "body_ht_rate": 0.4,
+        "ht_delta": -0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_567",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.407,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.294,
+        "ht_delta": 0.306,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_568",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.643,
+        "line1_ht_rate": 0.7,
+        "body_ht_rate": 0.5,
+        "ht_delta": 0.2,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_569",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 23,
+        "ht_rate": 0.479,
+        "line1_ht_rate": 0.727,
+        "body_ht_rate": 0.405,
+        "ht_delta": 0.322,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_570",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.5,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.389,
+        "ht_delta": 0.361,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_571",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 11,
+        "ht_rate": 0.44,
+        "line1_ht_rate": 0.5,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_572",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.388,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.333,
+        "ht_delta": 0.267,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_573",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.474,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.5,
+        "ht_delta": -0.045,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_574",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 13,
+        "ht_rate": 0.542,
+        "line1_ht_rate": 0.6,
+        "body_ht_rate": 0.5,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_575",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 10,
+        "ht_rate": 0.4,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.4,
+        "ht_delta": 0.0,
+        "first_token_is_ht": false
+      }
+    },
+    {
+      "par_id": "B_576",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 19,
+        "ht_rate": 0.559,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.5,
+        "ht_delta": 0.25,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_577",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 20,
+        "ht_rate": 0.476,
+        "line1_ht_rate": 0.75,
+        "body_ht_rate": 0.412,
+        "ht_delta": 0.338,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_578",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "first",
+      "ht_profile": {
+        "ht_count": 9,
+        "ht_rate": 0.273,
+        "line1_ht_rate": 0.4,
+        "body_ht_rate": 0.217,
+        "ht_delta": 0.183,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_579",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.182,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.091,
+        "ht_delta": 0.273,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_580",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 7,
+        "ht_rate": 0.259,
+        "line1_ht_rate": 0.455,
+        "body_ht_rate": 0.125,
+        "ht_delta": 0.33,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_581",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.264,
+        "line1_ht_rate": 0.273,
+        "body_ht_rate": 0.262,
+        "ht_delta": 0.011,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_582",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 6,
+        "ht_rate": 0.188,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.15,
+        "ht_delta": 0.1,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_583",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 34,
+        "ht_rate": 0.224,
+        "line1_ht_rate": 0.25,
+        "body_ht_rate": 0.221,
+        "ht_delta": 0.029,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_584",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "ht_profile": {
+        "ht_count": 38,
+        "ht_rate": 0.244,
+        "line1_ht_rate": 0.636,
+        "body_ht_rate": 0.214,
+        "ht_delta": 0.423,
+        "first_token_is_ht": true
+      }
+    },
+    {
+      "par_id": "B_585",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "last",
+      "ht_profile": {
+        "ht_count": 14,
+        "ht_rate": 0.275,
+        "line1_ht_rate": 0.364,
+        "body_ht_rate": 0.25,
+        "ht_delta": 0.114,
+        "first_token_is_ht": true
+      }
+    }
+  ]
+}

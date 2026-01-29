@@ -1,6 +1,6 @@
 # Fit Registry Index
 
-**Version:** 2.0 | **Last Updated:** 2026-01-11
+**Version:** 2.2 | **Last Updated:** 2026-01-26
 
 ---
 
@@ -14,11 +14,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Fits | 11 |
+| Total Fits | 17 |
 | F0 (Trivial) | 0 |
 | F1 (Failed) | 4 |
-| F2 (Adequate) | 4 |
-| F3 (Compelling) | 3 |
+| F2 (Adequate) | 8 |
+| F3 (Compelling) | 5 |
 | F4 (Exploratory) | 0 |
 
 ---
@@ -28,7 +28,7 @@
 | System | File | Fit Count |
 |--------|------|-----------|
 | Currier A | [fits_currier_a.md](fits_currier_a.md) | 8 |
-| Currier B | [fits_currier_b.md](fits_currier_b.md) | 0 |
+| Currier B | [fits_currier_b.md](fits_currier_b.md) | 6 |
 | AZC | [fits_azc.md](fits_azc.md) | 0 |
 | Human Track | [fits_ht.md](fits_ht.md) | 0 |
 | Global | [fits_global.md](fits_global.md) | 3 |
@@ -80,7 +80,14 @@ See [FIT_METHODOLOGY.md](../SYSTEM/FIT_METHODOLOGY.md) for the complete standard
 
 ### Currier B (F-B-###)
 
-*No fits logged yet.*
+| ID | Fit | Tier | Result | Supports |
+|----|-----|------|--------|----------|
+| F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | SUCCESS | C366, C609, C190 |
+| F-B-002 | QO Lane as Safe Energy Pathway | F3 | SUCCESS | C601, C574, C600 |
+| F-B-003 | Pre-Operational Configuration via A->AZC->B Pipeline | F2 | SUCCESS | C473, C506, C468 |
+| F-B-004 | Lane Hysteresis Control Model | F2 | SUCCESS | C643, C549, C577, C608 |
+| F-B-005 | PP-Lane MIDDLE Discrimination | F2 | SUCCESS | C646, C576, C642 |
+| F-B-006 | Energy/Stabilization Lane Assignment | F3 | PARTIAL | C647, C645, C601, C521 |
 
 ### AZC (F-AZC-###)
 

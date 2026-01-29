@@ -1,0 +1,74 @@
+{
+  "token_count": 1078,
+  "class_counts": {
+    "40": 72,
+    "7": 434,
+    "38": 50,
+    "30": 522
+  },
+  "unique_middles": [
+    "al",
+    "am",
+    "ar",
+    "dy",
+    "i",
+    "ii",
+    "im",
+    "in",
+    "l",
+    "ly",
+    "m",
+    "n",
+    "o",
+    "ol",
+    "r",
+    "ry",
+    "y"
+  ],
+  "middle_count": 17,
+  "characters_used": [
+    "a",
+    "d",
+    "i",
+    "l",
+    "m",
+    "n",
+    "o",
+    "r",
+    "y"
+  ],
+  "kernel_chars_present": false,
+  "missing_primitives": [
+    "c",
+    "e",
+    "h",
+    "k",
+    "s",
+    "t"
+  ],
+  "mean_middle_length": 1.577922077922078,
+  "prefix_none_rate": 0.4025974025974026,
+  "suffix_none_rate": 0.937847866419295,
+  "core_overlap": [
+    "al",
+    "am",
+    "ar",
+    "dy",
+    "i",
+    "in",
+    "l",
+    "ly",
+    "m",
+    "o",
+    "ol",
+    "r",
+    "ry",
+    "y"
+  ],
+  "findings": [
+    "NO_KERNEL_CHARS: FL uses 0 MIDDLEs with k, h, or e",
+    "MISSING_PRIMITIVES: FL doesn't use ['c', 'e', 'h', 'k', 's', 't'] from C085",
+    "SHORT_MIDDLES: Mean length 1.58 < 2 chars",
+    "SUFFIX_DEPLETED: 93.8% have no SUFFIX"
+  ]
+}

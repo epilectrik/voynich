@@ -8,10 +8,11 @@
 
 | System | LINK Density |
 |--------|--------------|
-| Currier B | 6.6% |
+| Currier B | 13.2% (3,047/23,096) |
 | Currier A | 3.0% |
 | AZC | 7.6% (highest) |
-| Overall B text | 38% (weighted by folio) |
+
+> **C609 Correction:** Previous values of "6.6%" and "38% (weighted by folio)" were legacy figures with undocumented methodology. Reconciliation audit (Phase LINK_DENSITY_RECONCILIATION) established true B density at 13.2% token-level, 12.5% folio mean. No aggregation reproduces 38%.
 
 ---
 

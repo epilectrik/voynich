@@ -1,0 +1,93 @@
+{
+  "linker_count": 4,
+  "linker_words": [
+    "ctheody",
+    "ctho",
+    "cthody",
+    "qokoiiin"
+  ],
+  "total_links": 12,
+  "unique_pairs": 12,
+  "source_folios": [
+    "f21r",
+    "f27r",
+    "f30v",
+    "f42r",
+    "f53v",
+    "f54r",
+    "f87r",
+    "f89v1",
+    "f93r"
+  ],
+  "target_folios": [
+    "f32r",
+    "f37v",
+    "f87r",
+    "f93v"
+  ],
+  "mean_distance": 6.583333333333333,
+  "forward_links": 8,
+  "backward_links": 3,
+  "links": [
+    [
+      "f53v",
+      "f87r",
+      "ctheody"
+    ],
+    [
+      "f87r",
+      "f87r",
+      "ctheody"
+    ],
+    [
+      "f27r",
+      "f32r",
+      "ctho"
+    ],
+    [
+      "f30v",
+      "f32r",
+      "ctho"
+    ],
+    [
+      "f42r",
+      "f32r",
+      "ctho"
+    ],
+    [
+      "f93r",
+      "f32r",
+      "ctho"
+    ],
+    [
+      "f21r",
+      "f93v",
+      "cthody"
+    ],
+    [
+      "f53v",
+      "f93v",
+      "cthody"
+    ],
+    [
+      "f54r",
+      "f93v",
+      "cthody"
+    ],
+    [
+      "f87r",
+      "f93v",
+      "cthody"
+    ],
+    [
+      "f89v1",
+      "f93v",
+      "cthody"
+    ],
+    [
+      "f89v1",
+      "f37v",
+      "qokoiiin"
+    ]
+  ]
+}

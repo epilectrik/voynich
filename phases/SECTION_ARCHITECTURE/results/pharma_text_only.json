@@ -1,0 +1,124 @@
+{
+  "finding": "f66r_is_diagram",
+  "section_profiles_text_only": {
+    "BIO": {
+      "tokens": 6195,
+      "ht_count": 1355,
+      "ht_rate": 0.21872477804681195,
+      "folios": [
+        "f75r",
+        "f75v",
+        "f76v",
+        "f77r",
+        "f77v",
+        "f78r",
+        "f78v",
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v",
+        "f81r",
+        "f81v",
+        "f82r",
+        "f82v",
+        "f83r",
+        "f83v",
+        "f84r",
+        "f84v"
+      ]
+    },
+    "HERBAL_B": {
+      "tokens": 2675,
+      "ht_count": 863,
+      "ht_rate": 0.3226168224299065,
+      "folios": [
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v",
+        "f33r",
+        "f33v",
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v",
+        "f40r",
+        "f40v",
+        "f41r",
+        "f41v",
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v",
+        "f48r",
+        "f48v",
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v"
+      ]
+    },
+    "PHARMA": {
+      "tokens": 200,
+      "ht_count": 85,
+      "ht_rate": 0.425,
+      "folios": [
+        "f57r",
+        "f66v"
+      ]
+    },
+    "RECIPE_B": {
+      "tokens": 12360,
+      "ht_count": 4214,
+      "ht_rate": 0.3409385113268608,
+      "folios": [
+        "f103r",
+        "f103v",
+        "f104r",
+        "f104v",
+        "f105r",
+        "f105v",
+        "f106r",
+        "f106v",
+        "f107r",
+        "f107v",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v",
+        "f112r",
+        "f112v",
+        "f113r",
+        "f113v",
+        "f114r",
+        "f114v",
+        "f115r",
+        "f115v",
+        "f116r",
+        "f85r1",
+        "f85r2",
+        "f86v3",
+        "f86v4",
+        "f86v5",
+        "f86v6",
+        "f95r1",
+        "f95r2",
+        "f95v1",
+        "f95v2"
+      ]
+    }
+  },
+  "f66r_placement": {
+    "R": 295,
+    "M": 31,
+    "W": 3,
+    "P": 0
+  },
+  "pharma_text_folios": [
+    "f57r",
+    "f66v"
+  ],
+  "pharma_diagram_folios": [
+    "f66r"
+  ]
+}

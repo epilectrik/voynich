@@ -1,0 +1,103 @@
+{
+  "role_pairs": {
+    "CC->FQ": 8,
+    "CC->CC": 4,
+    "EN->CC": 4,
+    "FQ->FQ": 1
+  },
+  "class_participation": {
+    "12": 6,
+    "23": 5,
+    "9": 5,
+    "17": 6,
+    "10": 4,
+    "11": 4,
+    "32": 2,
+    "31": 2
+  },
+  "cc_to_cc": [
+    [
+      10,
+      12
+    ],
+    [
+      10,
+      17
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      17
+    ]
+  ],
+  "cc_to_fq": [
+    [
+      12,
+      23
+    ],
+    [
+      12,
+      9
+    ],
+    [
+      17,
+      23
+    ],
+    [
+      17,
+      9
+    ],
+    [
+      10,
+      23
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      11,
+      23
+    ],
+    [
+      11,
+      9
+    ]
+  ],
+  "en_to_cc": [
+    [
+      32,
+      12
+    ],
+    [
+      32,
+      17
+    ],
+    [
+      31,
+      12
+    ],
+    [
+      31,
+      17
+    ]
+  ],
+  "fq_to_fq": [
+    [
+      23,
+      9
+    ]
+  ],
+  "symmetric_count": 0,
+  "asymmetric_count": 17,
+  "findings": [
+    "CC_INTERNAL_HAZARD: 4 CC->CC forbidden pairs",
+    "CC_FQ_GATING: 8 CC->FQ forbidden pairs",
+    "EN_CC_RESTRICTED: 4 EN->CC forbidden pairs",
+    "DIRECTIONAL_HAZARDS: 17 asymmetric vs 0 symmetric",
+    "FL_AX_EXEMPT: FL and AX never appear in forbidden pairs"
+  ]
+}

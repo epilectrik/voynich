@@ -393,7 +393,7 @@ The `scripts/voynich.py` module provides:
 ### Basic Usage
 
 ```python
-from scripts.voynich import Transcript, Morphology, RecordAnalyzer
+from scripts.voynich import Transcript, Morphology, RecordAnalyzer, MiddleAnalyzer
 
 # Iterate Currier A tokens (H-track, labels excluded, uncertain excluded)
 tx = Transcript()
@@ -411,6 +411,12 @@ record = analyzer.analyze_record('f1r', '1')
 print(f"Composition: {record.composition}")  # MIXED, PURE_RI, PURE_PP
 for t in record.tokens:
     print(f"{t.word}: {t.token_class} (MID={t.middle})")
+
+# MIDDLE compound structure analysis (see COMPOUND_MIDDLE_ARCHITECTURE phase)
+mid_analyzer = MiddleAnalyzer()
+mid_analyzer.build_inventory('B')  # Build from Currier B
+print(mid_analyzer.is_compound('opcheodai'))  # True if contains core MIDDLEs
+print(mid_analyzer.get_contained_atoms('opcheodai'))  # List of core substrings
 ```
 
 ### Token Classes
@@ -433,6 +439,12 @@ for t in record.tokens:
 | `RecordAnalyzer().analyze_record(folio, line)` | RecordAnalysis | Full record breakdown |
 | `RecordAnalyzer().analyze_folio(folio)` | List[RecordAnalysis] | All records in folio |
 | `RecordAnalyzer().iter_records()` | Iterator[RecordAnalysis] | All Currier A records |
+| `MiddleAnalyzer().build_inventory(system)` | None | Build MIDDLE inventory from A/B/all |
+| `MiddleAnalyzer().is_compound(middle)` | bool | True if contains core MIDDLEs |
+| `MiddleAnalyzer().get_contained_atoms(middle)` | List[str] | Core MIDDLEs in compound |
+| `MiddleAnalyzer().get_folio_unique_middles()` | Set[str] | MIDDLEs in exactly 1 folio |
+| `MiddleAnalyzer().classify_middle(middle)` | str | CORE/COMMON/RARE/FOLIO_UNIQUE |
+| `MiddleAnalyzer().summary()` | dict | Inventory statistics |
 
 ### Morphology Notes
 
@@ -440,6 +452,20 @@ for t in record.tokens:
 - Gallows-initial tokens (cph-, cfh-, ckh-) are correctly prefixless (C528)
 - Articulators detected when followed by known prefix
 - Atomic suffix list only (compound suffixes moved to MIDDLE)
+
+### MiddleAnalyzer Notes
+
+The MiddleAnalyzer class provides compound MIDDLE detection based on findings from the COMPOUND_MIDDLE_ARCHITECTURE phase:
+
+- **Compound MIDDLEs:** Longer MIDDLEs built by combining core MIDDLEs as substrings
+- **Core MIDDLEs:** Appear in 20+ folios (75 types in B, 5.6% of inventory)
+- **Folio-unique MIDDLEs:** Appear in exactly 1 folio (858 types in B, 64.1%)
+- **Key finding:** 84.8% of line-1 folio-unique MIDDLEs are compound (+29.9pp above chance)
+
+Use cases:
+- Detecting identification vocabulary (folio-unique compound forms)
+- Analyzing compositional structure of HT/UN tokens
+- Testing compound rates for label vs body text
 
 ---
 
@@ -459,7 +485,8 @@ Before committing any script that loads the transcript:
 
 ---
 
-*Last updated: 2026-01-19*
+*Last updated: 2026-01-28*
 *This document prevents the transcriber filtering bug from recurring.*
 *Placement type taxonomy added from TRANSCRIPT-ARCHITECTURE-AUDIT (2026-01-16).*
 *AZC encoding cross-reference added from AZC_INTERFACE_VALIDATION (2026-01-19).*
+*MiddleAnalyzer added from COMPOUND_MIDDLE_ARCHITECTURE (2026-01-28).*

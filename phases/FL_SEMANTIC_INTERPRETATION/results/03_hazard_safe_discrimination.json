@@ -1,0 +1,74 @@
+{
+  "hazard_token_count": 956,
+  "safe_token_count": 122,
+  "hazard_middles": {
+    "r": 188,
+    "ar": 248,
+    "l": 130,
+    "i": 49,
+    "al": 186,
+    "m": 42,
+    "in": 113
+  },
+  "safe_middles": {
+    "dy": 6,
+    "ii": 7,
+    "y": 33,
+    "ly": 17,
+    "am": 8,
+    "ol": 10,
+    "o": 11,
+    "ry": 13,
+    "im": 4,
+    "al": 11,
+    "n": 2
+  },
+  "hazard_stages": {
+    "MEDIAL": 752,
+    "INITIAL": 49,
+    "TERMINAL": 42,
+    "EARLY": 113
+  },
+  "safe_stages": {
+    "TERMINAL": 66,
+    "INITIAL": 7,
+    "LATE": 28,
+    "MEDIAL": 21
+  },
+  "hazard_preceded_by": {
+    "ENERGY_OPERATOR": 228,
+    "UNKNOWN": 243,
+    "AUXILIARY": 148,
+    "FREQUENT_OPERATOR": 149,
+    "CORE_CONTROL": 33,
+    "FLOW_OPERATOR": 75
+  },
+  "safe_preceded_by": {
+    "FREQUENT_OPERATOR": 18,
+    "AUXILIARY": 28,
+    "ENERGY_OPERATOR": 28,
+    "CORE_CONTROL": 4,
+    "UNKNOWN": 27,
+    "FLOW_OPERATOR": 13
+  },
+  "hazard_followed_by": {
+    "ENERGY_OPERATOR": 210,
+    "UNKNOWN": 236,
+    "FREQUENT_OPERATOR": 140,
+    "AUXILIARY": 140,
+    "CORE_CONTROL": 28,
+    "FLOW_OPERATOR": 84
+  },
+  "safe_followed_by": {
+    "UNKNOWN": 21,
+    "ENERGY_OPERATOR": 14,
+    "FREQUENT_OPERATOR": 3,
+    "AUXILIARY": 9,
+    "FLOW_OPERATOR": 4,
+    "CORE_CONTROL": 3
+  },
+  "hazard_fq_rate": 16.706443914081145,
+  "safe_fq_rate": 5.555555555555555,
+  "hazard_mean_position": 0.545875615013971,
+  "safe_mean_position": 0.8114782115987514
+}

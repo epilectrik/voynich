@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "phase": "A_RECORD_B_FILTERING",
+    "script": "survivor_population_profile.py",
+    "tests": "T1-T4 (C682-C685)",
+    "n_records": 1562,
+    "n_b_token_types": 4889,
+    "n_b_classes": 49
+  },
+  "T1_class_survival_distribution": {
+    "constraint": "C682",
+    "mean": 11.080025608194623,
+    "median": 10.0,
+    "std": 5.789908922068524,
+    "min": 0,
+    "max": 38,
+    "percentiles": {
+      "p5": 3.0,
+      "p25": 7.0,
+      "p50": 10.0,
+      "p75": 15.0,
+      "p95": 21.0
+    },
+    "zero_class_records": 18,
+    "zero_class_pct": 1.15,
+    "token_level": {
+      "mean_legal_tokens": 38.45582586427657,
+      "percentiles": {
+        "p5": 6.0,
+        "p25": 17.0,
+        "p50": 32.0,
+        "p75": 51.0,
+        "p95": 91.94999999999982
+      }
+    }
+  },
+  "T2_role_composition": {
+    "constraint": "C683",
+    "baseline_classes": {
+      "CC": 4,
+      "EN": 18,
+      "FL": 4,
+      "FQ": 4,
+      "AX": 19
+    },
+    "role_survival": {
+      "CC": {
+        "mean": 0.707,
+        "median": 1.0,
+        "survival_pct": 17.67
+      },
+      "EN": {
+        "mean": 3.85,
+        "median": 3.0,
+        "survival_pct": 21.39
+      },
+      "FL": {
+        "mean": 0.481,
+        "median": 0.0,
+        "survival_pct": 12.04
+      },
+      "FQ": {
+        "mean": 1.727,
+        "median": 2.0,
+        "survival_pct": 43.18
+      },
+      "AX": {
+        "mean": 4.314,
+        "median": 4.0,
+        "survival_pct": 22.71
+      }
+    },
+    "role_depletion_pct": {
+      "CC": 44.62,
+      "EN": 8.51,
+      "FL": 60.95,
+      "FQ": 12.48,
+      "AX": 3.91
+    },
+    "role_entropy": {
+      "mean": 1.6109,
+      "median": 1.6894,
+      "max_possible": 2.3219,
+      "zero_entropy_count": 47
+    }
+  },
+  "T3_hazard_pruning": {
+    "constraint": "C684",
+    "total_forbidden": 17,
+    "mean_active": 0.207,
+    "median_active": 0.0,
+    "max_active": 5,
+    "full_elimination_count": 1311,
+    "full_elimination_pct": 83.93,
+    "distribution": {
+      "0": 1311,
+      "1": 194,
+      "2": 45,
+      "3": 9,
+      "4": 2,
+      "5": 1
+    }
+  },
+  "T4_link_kernel_survival": {
+    "constraint": "C685",
+    "link_token_types": 801,
+    "link_density_mean": 0.16839,
+    "link_density_median": 0.13333,
+    "zero_link_records": 570,
+    "zero_link_pct": 36.49,
+    "kernel_access": {
+      "k_pct": 80.99,
+      "h_pct": 95.45,
+      "e_pct": 60.69,
+      "any_pct": 97.38
+    }
+  }
+}

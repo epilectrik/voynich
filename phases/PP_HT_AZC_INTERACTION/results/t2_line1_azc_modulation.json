@@ -1,0 +1,39 @@
+{
+  "line1_pp_fraction_by_tertile": {
+    "low_azc": 0.6666666666666666,
+    "med_azc": 0.653179190751445,
+    "high_azc": 0.7407407407407407,
+    "kruskal_wallis_H": 2.6304320514592385,
+    "kruskal_wallis_p": 0.2684163321416849
+  },
+  "a_context_prediction_by_tertile": {
+    "low_azc": {
+      "correct": 4,
+      "total": 26
+    },
+    "med_azc": {
+      "correct": 3,
+      "total": 22
+    },
+    "high_azc": {
+      "correct": 3,
+      "total": 24
+    },
+    "chi2_low_vs_high": 0.0,
+    "chi2_p": 1.0
+  },
+  "azc_additional_prediction": {
+    "a_only": {
+      "correct": 10,
+      "total": 72
+    },
+    "a_plus_azc": {
+      "correct": 7,
+      "total": 68
+    }
+  },
+  "azc_only_in_line1": {
+    "types": 18,
+    "tokens": 18
+  }
+}

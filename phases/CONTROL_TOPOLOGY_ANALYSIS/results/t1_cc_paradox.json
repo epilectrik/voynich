@@ -1,0 +1,40 @@
+{
+  "cc_class_tokens": {
+    "17": 288,
+    "10": 314,
+    "11": 421,
+    "12": 0
+  },
+  "cc_class_kernel_rates": {
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0,
+    "17": 88.19444444444444
+  },
+  "cc_as_source": {
+    "12": 2,
+    "17": 2,
+    "10": 4,
+    "11": 4
+  },
+  "cc_as_target": {
+    "12": 4,
+    "17": 4
+  },
+  "forbidden_before_cc": {
+    "10": 2,
+    "11": 2,
+    "32": 2,
+    "31": 2
+  },
+  "forbidden_after_cc": {
+    "23": 4,
+    "9": 4,
+    "12": 2,
+    "17": 2
+  },
+  "findings": [
+    "CC_LOW_KERNEL: Classes [10, 11, 12] are <30% kernel",
+    "CC_FQ_FORBIDDEN: CC -> FQ is heavily restricted (8 pairs)"
+  ]
+}

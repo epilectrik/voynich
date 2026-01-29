@@ -1,0 +1,29 @@
+{
+  "Single Line": {
+    "n": 1559,
+    "mean_pp": 5.838357921744708,
+    "mean_viability": 15.32264271969211,
+    "mean_viability_pct": 18.68614965816111,
+    "zero_viability_pct": 22.19371391917896,
+    "narrow_pct": 38.03720333547145,
+    "broad_pct": 14.368184733803721
+  },
+  "Paragraph (gallows-chunk)": {
+    "n": 306,
+    "mean_pp": 20.18954248366013,
+    "mean_viability": 1.5784313725490196,
+    "mean_viability_pct": 1.9249163079866092,
+    "zero_viability_pct": 84.9673202614379,
+    "narrow_pct": 11.76470588235294,
+    "broad_pct": 1.6339869281045754
+  },
+  "Full A-Folio": {
+    "n": 114,
+    "mean_pp": 38.87719298245614,
+    "mean_viability": 0.017543859649122806,
+    "mean_viability_pct": 0.021394950791613177,
+    "zero_viability_pct": 99.12280701754386,
+    "narrow_pct": 0.8771929824561403,
+    "broad_pct": 0.0
+  }
+}

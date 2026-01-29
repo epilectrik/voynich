@@ -1,0 +1,225 @@
+{
+  "gallows_ht_rates": {
+    "p": 0.300805305542397,
+    "none": 0.3157894736842105,
+    "k": 0.2761071623838163,
+    "t": 0.30879934210526316,
+    "f": 0.3859375
+  },
+  "f_ht_tokens": {
+    "f": 4,
+    "araiin": 2,
+    "oiiin": 2,
+    "chtl": 2,
+    "otedar": 2,
+    "oram": 2,
+    "dody": 2,
+    "qokeeor": 2,
+    "fodal": 1,
+    "kedar": 1,
+    "olpchesd": 1,
+    "ksheeol": 1,
+    "opcheddl": 1,
+    "pchdar": 1,
+    "qoeees": 1,
+    "okairy": 1,
+    "ockhedy": 1,
+    "ookam": 1,
+    "che": 1,
+    "okairo": 1,
+    "lkair": 1,
+    "sodar": 1,
+    "oral": 1,
+    "odam": 1,
+    "roees": 1,
+    "chckhoda": 1,
+    "ckhddl": 1,
+    "aiis": 1,
+    "opar": 1,
+    "kaiishdy": 1
+  },
+  "line1_ht_tokens": {
+    "qofchedy": 7,
+    "polaiin": 7,
+    "ypchdy": 6,
+    "polchedy": 6,
+    "ofchedy": 6,
+    "tshedy": 6,
+    "lpchedy": 6,
+    "qopchey": 6,
+    "pchdar": 5,
+    "opal": 5,
+    "pcheody": 5,
+    "qopaiin": 5,
+    "shedar": 5,
+    "pchol": 5,
+    "otedar": 5,
+    "qopar": 5,
+    "shdar": 5,
+    "ofchdy": 4,
+    "olfchedy": 4,
+    "fchdy": 4,
+    "pchdair": 4,
+    "f": 4,
+    "qokshy": 4,
+    "psheody": 4,
+    "ro": 4,
+    "qopshedy": 4,
+    "por": 4,
+    "opor": 4,
+    "opy": 4,
+    "olpchedy": 4
+  },
+  "line1_specific": [
+    [
+      "qofchedy",
+      7,
+      1
+    ],
+    [
+      "polaiin",
+      7,
+      0
+    ],
+    [
+      "ypchdy",
+      6,
+      0
+    ],
+    [
+      "polchedy",
+      6,
+      0
+    ],
+    [
+      "ofchedy",
+      6,
+      1
+    ],
+    [
+      "tshedy",
+      6,
+      2
+    ],
+    [
+      "lpchedy",
+      6,
+      0
+    ],
+    [
+      "qopchey",
+      6,
+      1
+    ],
+    [
+      "pchdar",
+      5,
+      0
+    ],
+    [
+      "opal",
+      5,
+      1
+    ],
+    [
+      "pcheody",
+      5,
+      0
+    ],
+    [
+      "qopaiin",
+      5,
+      1
+    ],
+    [
+      "shedar",
+      5,
+      2
+    ],
+    [
+      "pchol",
+      5,
+      0
+    ],
+    [
+      "qopar",
+      5,
+      0
+    ],
+    [
+      "ofchdy",
+      4,
+      1
+    ],
+    [
+      "olfchedy",
+      4,
+      0
+    ],
+    [
+      "fchdy",
+      4,
+      0
+    ],
+    [
+      "pchdair",
+      4,
+      0
+    ],
+    [
+      "f",
+      4,
+      0
+    ],
+    [
+      "psheody",
+      4,
+      0
+    ],
+    [
+      "qopshedy",
+      4,
+      0
+    ],
+    [
+      "opy",
+      4,
+      0
+    ],
+    [
+      "olpchedy",
+      4,
+      0
+    ],
+    [
+      "qopchol",
+      4,
+      1
+    ],
+    [
+      "pchedaiin",
+      4,
+      0
+    ],
+    [
+      "pchedal",
+      4,
+      1
+    ],
+    [
+      "pcheor",
+      4,
+      0
+    ],
+    [
+      "opair",
+      4,
+      0
+    ],
+    [
+      "opchedaiin",
+      4,
+      0
+    ]
+  ]
+}

@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.48
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.54
 
 ---
 
@@ -802,6 +802,47 @@ This is NOT compositional derivation (the PP-as-atoms theory was statistically i
 
 **Source:** GALLOWS_MIDDLE_ANALYSIS (2026-01-24)
 
+### RI Linker Mechanism: Convergent Inter-Record References (Tier 3) - NEW in v4.54
+
+**Finding (C835):** 0.6% of RI tokens (4 out of 707 types) function as "linkers" - they appear as FINAL in one paragraph and INITIAL in another, creating directed links between records.
+
+**Topology is CONVERGENT (many-to-one):**
+
+```
+cthody:  5 folios (FINAL) ───→ 1 folio (INITIAL): f93v
+ctho:    4 folios (FINAL) ───→ 1 folio (INITIAL): f32r
+```
+
+Each linker appears as INITIAL in exactly ONE folio but as FINAL in MULTIPLE folios. This creates collector hubs (f93v receives 5 inputs).
+
+**Two Alternative Interpretations (cannot distinguish structurally):**
+
+| Model | Logic | Meaning | Physical Analog |
+|-------|-------|---------|-----------------|
+| **AND (aggregation)** | Intersection | f93v requires ALL 5 conditions satisfied | Compound needing 5 ingredients |
+| **OR (alternatives)** | Union | f93v accepts ANY of the 5 as valid input | 5 equivalent suppliers for same ingredient |
+
+**Why the ambiguity matters:**
+
+The same structural pattern supports both interpretations. An encoding where the logical operator (AND vs OR) is context-dependent would be:
+- **Compact** - same notation serves multiple purposes
+- **Expert-dependent** - practitioners know which applies
+- **Opaque to outsiders** - hard to decode without domain knowledge
+
+**Network Properties (Tier 2):**
+- 12 directed links connecting 12 folios
+- 66.7% forward flow (earlier folio → later folio)
+- 75% ct-prefix in linkers (morphological marker)
+- 95.3% of RI are singletons (linkers are rare)
+
+**Interpretation:** Collector records (f93v, f32r) may document:
+- **AND:** Compound materials/procedures requiring multiple source satisfactions
+- **OR:** Procedures accepting alternative equivalent inputs
+
+The sparse linking (0.6%) suggests most records are self-contained. Only rare "hub" entries aggregate or accept alternatives from multiple sources.
+
+**Source:** A_RECORD_B_ROUTING_TOPOLOGY (2026-01-28)
+
 ---
 
 ## 0.E. B FOLIO AS CONDITIONAL PROCEDURE (CLASS_COMPATIBILITY_ANALYSIS Phase) - NEW in v4.41
@@ -1576,6 +1617,192 @@ In the apparatus-centric model: daiin opens a hazardous processing sequence (hig
 | C602 | REGIME-conditioned sub-role grammar | 4/5 REGIME-dependent, AX->FQ exception |
 
 **Source:** SUB_ROLE_INTERACTION (2026-01-26)
+
+---
+
+## 0.L. LANE CONTROL ARCHITECTURE (LANE_CHANGE_HOLD_ANALYSIS Phase) - NEW in v4.49
+
+### Tier 3: Core Finding
+
+> **The two EN execution lanes (QO/CHSH) encode complementary control functions — energy application and stabilization — that alternate with inertia-driven dynamics within a phase-gated legality framework. Thresholds are categorical (legality transitions), not numeric (accumulation values).**
+
+### Two-Lane Functional Assignment
+
+EN tokens carry one of two PREFIX subfamilies (C570-571) drawing from non-overlapping MIDDLE vocabularies (C576, Jaccard = 0.133):
+
+| Lane | PREFIX | MIDDLE Character | Kernel Content | Hazard Role | Post-Hazard |
+|------|--------|-----------------|----------------|-------------|-------------|
+| **QO** | qo- | k-rich (70.7%) | ENERGY_MODULATOR | Zero participation (C601) | 24.8% (depleted) |
+| **CHSH** | ch-/sh- | e-rich (68.7%) | STABILITY_ANCHOR | All 19 forbidden transitions | 75.2% (dominant) |
+
+**Morphological lane signature** (C647): Cramer's V = 0.654, p < 0.0001. The lanes are built from different kernel-character vocabularies.
+
+**Interpretation:** QO = controlled energy addition (non-hazardous). CHSH = stabilization/correction (hazard recovery). "Safe energy pathway" (F-B-002) means energy application that stays within bounds, not absence of energy.
+
+### Change/Hold Label: FALSIFIED
+
+The original interpretation (CHSH = state-changing, QO = state-preserving) was tested with 5 predictions. Two critical reversals falsified it:
+- QO tokens contain k (energy), not e (stability) — opposite of prediction
+- CHSH dominates post-hazard recovery (75.2%), not QO — opposite of prediction
+
+The reversed mapping (QO = energy, CHSH = stabilization) resolves all 5 predictions. F-B-006 documents this.
+
+### Oscillation Architecture
+
+**Hysteresis oscillation confirmed** (C643): alternation rate = 0.563 vs null = 0.494 (p < 0.0001, z > 10). Short runs (median = 1.0). Section-dependent: BIO = 0.606, HERBAL_B = 0.427.
+
+**Switching dynamics are inertia-driven, not threshold-driven:**
+
+| Run Length N | QO P(switch) | CHSH P(switch) |
+|-------------|-------------|---------------|
+| 1 | 0.500 | 0.482 |
+| 2 | 0.438 | 0.417 |
+| 3 | 0.416 | 0.324 |
+| 4 | 0.111 | 0.180 |
+| 5 | 0.308 | 0.111 |
+
+Hazard function is **DECREASING** (Spearman rho = -0.90 QO, -1.00 CHSH). Once in a lane, the system tends to stay. No numeric accumulation toward a switching threshold.
+
+CC tokens between EN pairs **suppress** switching (42.6% switch rate with CC vs 57.1% without, p = 0.0002). Gap content explains only 1.25% of switching variance (pseudo-R2). Switching is not externally triggered — it emerges from the grammar's alternation preference at N=1.
+
+### Categorical Legality Thresholds (Phase-Gated)
+
+While token-level switching is memoryless-with-inertia, the system encodes **macro-level categorical thresholds** as legality transitions:
+
+| Threshold | Mechanism | Evidence |
+|-----------|-----------|----------|
+| **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability |
+| **Upper bound** | Stabilization is absorbing (e->h = 0.00) | C521: kernel one-way valve; once stable, can't destabilize |
+| **Observation band** | LINK enforces monitoring posture (r = -0.7057 with CEI) | C366, C190: non-operational boundary operator |
+| **Intervention clamp** | Hazard exposure CV = 0.04-0.11 (tightly constrained) | C458: risky dimensions locked, recovery free |
+
+**Key distinction:** Thresholds are not "push until temperature X." They are "at this phase, intervention Y is structurally impossible." Legality transitions, not parametric bounds (C469, C287-290).
+
+### PP-Lane Discrimination (Cross-System)
+
+20/99 PP MIDDLEs predict lane preference (FDR < 0.05, z = 24.26). QO-enriched MIDDLEs are k/t-based ENERGY_OPERATORs (11/15). CHSH-enriched are o-based AUXILIARY (3/5). Signal is primarily EN-mediated (17/20); 3 non-EN novel discriminators. No obligatory slots.
+
+**Interpretation:** Pre-operational material vocabulary (A) carries kernel-character signatures that align with downstream execution lanes (B). The A->AZC->B pipeline transmits lane-relevant information.
+
+### Constraints Produced
+
+| # | Name | Tier |
+|---|------|------|
+| C643 | Lane Hysteresis Oscillation | 2 |
+| C644 | QO Transition Stability | 2 |
+| C645 | CHSH Post-Hazard Dominance | 2 |
+| C646 | PP-Lane MIDDLE Discrimination | 2 |
+| C647 | Morphological Lane Signature | 2 |
+
+### Fits Produced
+
+| ID | Name | Tier | Result |
+|----|------|------|--------|
+| F-B-004 | Lane Hysteresis Control Model | F2 | SUCCESS |
+| F-B-005 | PP-Lane MIDDLE Discrimination | F2 | SUCCESS |
+| F-B-006 | Energy/Stabilization Lane Assignment | F3 | PARTIAL |
+
+### Functional Profiling (v4.50, LANE_FUNCTIONAL_PROFILING)
+
+**LINK-lane independence (C648):** LINK monitoring operates above lane identity -- both lanes receive equal observation. This is consistent with LINK as a phase-marking function (C366) rather than a lane-specific intervention. If LINK encodes observation posture, the operator observes regardless of which energy mode is active.
+
+**Deterministic MIDDLE partition (C649):** The 22 testable EN-exclusive MIDDLEs are 100% lane-specific (k/t/p-initial = QO only; e/o-initial = CHSH only). This means the token construction layer (C522) hard-codes lane assignment through morphological composition -- the initial character of a MIDDLE determines its lane. Sensory implication: if k presupposes thermal affordance and e presupposes multi-modal affordance, the exclusive vocabulary is partitioned by perceptual domain at the morphological level.
+
+**Section-driven oscillation (C650):** BIO oscillates fastest (0.593), HERBAL slowest (0.457). This is section-driven, not REGIME-driven. Sensory interpretation: BIO content (volatile materials, rapid phase changes) requires faster sensory mode-switching; herbal processing allows sustained attention in one mode.
+
+**Fast recovery (C651):** Post-hazard QO return in 0-1 CHSH tokens, unconditionally. If CHSH = stabilization posture and QO = energy application, the system's recovery time is a single stabilization check before returning to active energy management. This is consistent with a brief perceptual confirmation ("is it settled?") before resuming thermal work.
+
+**HT is not elevated at lane switches** (no constraint; methodological artifact). The inertia pattern (decreasing hazard function from Script 3) is grammatical momentum, not perceptual cost. HT density is also lane-balance-independent after controlling confounds.
+
+### Open Questions
+
+1. Does the inertia pattern (decreasing hazard function) have a physical correlate? Thermal momentum (vessel retains heat) would produce exactly this signature.
+2. Can the phase-gated legality transitions (C490, C521, C458) be mapped to specific Brunschwig procedural stages?
+3. Do the 3 non-EN discriminators (g, kcho, ko) reveal a PP-level material distinction that the EN system doesn't capture?
+4. Does the deterministic MIDDLE partition (C649) extend to non-exclusive MIDDLEs? The 34 shared MIDDLEs may show softer probabilistic enrichment.
+5. Is the section-driven oscillation (C650) related to material volatility, or does it reflect structural properties of the text (line length, token density)?
+
+**Source:** LANE_CHANGE_HOLD_ANALYSIS (2026-01-26), LANE_FUNCTIONAL_PROFILING (2026-01-27)
+
+### PP Pipeline Lane Architecture (v4.51, PP_LANE_PIPELINE)
+
+**PP vocabulary is lane-structured but non-functional (C652, C653):** The 404 PP MIDDLEs carry a 3:1 CHSH bias by initial character (25.5% QO, 74.5% CHSH). AZC filtering amplifies this to 5:1 in the pipeline pathway (19.7% QO, OR=0.48). If PP vocabulary defined the "rules" of the hysteresis control loop, this asymmetry should manifest as CHSH-dominated B programs. It doesn't.
+
+**Grammar compensates for vocabulary bias (C654):** B programs show ~40.7% QO in EN lane balance -- 2.2x more than the vocabulary landscape predicts (18.7%). Non-EN PP composition does not predict EN lane balance (partial r=0.028, p=0.80). The grammar-level PREFIX->MIDDLE binding overrides vocabulary-level character distribution. Sensory implication: the operator's energy/stabilization balance is set by the grammar (instruction selection), not by the vocabulary available to the grammar. The control loop doesn't read its parameters from the A-side vocabulary shelf -- it generates them internally at execution time.
+
+**PP does not define control loop rules (C655):** PP character composition adds zero incremental prediction beyond section and REGIME (incr R2=0.0005, p=0.81). Neither AZC-Med nor B-Native PP adds anything. The Tier 3 hypothesis that "PP is meant to define the rules in our hysteresis system" is **falsified at the lane-balance level**. PP constrains vocabulary availability (Tier 2, C502), but this constraint does not propagate to lane selection.
+
+**Revised interpretation:** The pipeline is a vocabulary supply chain, not a rule-setting mechanism. A records define what PP MIDDLEs are available. AZC filtering refines availability. But once vocabulary reaches B, the grammar selects freely from what's available, applying its own PREFIX->MIDDLE binding to determine lane. The pipeline shapes the *palette*; the grammar paints the *picture*.
+
+**Source:** PP_LANE_PIPELINE (2026-01-27)
+
+### PP Pool Classification (v4.52, PP_POOL_CLASSIFICATION)
+
+**PP MIDDLEs form a continuous parameter space, not discrete functional pools (C656, C657).** Hierarchical clustering on A-record co-occurrence (Jaccard similarity) produces maximum silhouette of 0.016 across k=2..20 (threshold: 0.25). B-side behavioral profiles are also continuous (best sil=0.237, degenerate k=2 split). The two axes are independent (ARI=0.052).
+
+**Material class creates a gradient, not a partition (C658).** Forced co-occurrence clusters reduce material entropy by 36.2% (1.88 to 1.20 bits), but NMI=0.13. ANIMAL-enriched and HERB-enriched PP partially segregate, but 56% of PP are MIXED or NEUTRAL, occupying the gradient's middle.
+
+**All PP axes are mutually independent (C659).** No axis pair exceeds NMI=0.15. Co-occurrence tells you nothing about behavior. Material class tells you nothing about pathway. PP is a high-dimensional continuous space where each MIDDLE occupies a unique position defined by weak, independent gradients.
+
+**Revised Tier 4 interpretation:** The "toolbox" metaphor for PP is partially correct -- different A records have different PP compositions biased by material class -- but the toolboxes are not discrete types. They shade into each other. There are no "ANIMAL toolboxes" vs "HERB toolboxes." Instead, each A record draws from a continuous PP landscape where the draw is weakly biased by material. The 404 PP MIDDLEs are best understood as a continuous parametric vocabulary where each MIDDLE encodes a specific operational technique, and the techniques vary along multiple independent axes (material affinity, execution role, pipeline pathway) without forming coherent groupings.
+
+**Source:** PP_POOL_CLASSIFICATION (2026-01-27)
+
+### PREFIX x MIDDLE Selectivity (v4.53, PREFIX_MIDDLE_SELECTIVITY)
+
+**PREFIX is a behavioral transformer, not a modifier (C661).** Changing the PREFIX on the same MIDDLE produces behavioral divergence (JSD=0.425) nearly as large as changing the MIDDLE entirely (JSD=0.436). Effect ratio = 0.975. The same PP MIDDLE deployed with different PREFIXes produces completely different successor class profiles.
+
+**PREFIX massively narrows class membership (C662).** Mean 75% reduction (median 82%). EN PREFIXes (ch/sh/qo) channel MIDDLEs into EN classes at 94.1%. The combination (PREFIX, MIDDLE) -- not MIDDLE alone -- determines instruction class membership.
+
+**Most PP MIDDLEs are PREFIX-promiscuous (C660).** Only 3.9% of testable MIDDLEs are locked to a single PREFIX. 46.1% are promiscuous (no dominant PREFIX). Exception: QO-predicting MIDDLEs (k/t/p-initial) are 100% qo-PREFIX locked. B uses more PREFIX combinations than A records show.
+
+**PREFIX x MIDDLE pairs cluster better than MIDDLEs alone (C663).** Best silhouette = 0.350 at k=2 (vs C657's 0.237). The binary split likely reflects the EN/non-EN role dichotomy. Beyond this split, variation remains continuous.
+
+**Revised Tier 4 interpretation:** The PP continuity puzzle (C656-C659) is resolved. MIDDLEs don't form discrete pools because their functional identity is determined by the PREFIX+MIDDLE combination. MIDDLE encodes the material/technique identity (continuous). PREFIX determines what role that technique plays (discrete: EN, AX, FQ, INFRA). The same technique can serve completely different roles depending on PREFIX. The 404 PP MIDDLEs are a continuous landscape of techniques; PREFIX provides the discrete operational grammar that deploys them.
+
+**Source:** PREFIX_MIDDLE_SELECTIVITY (2026-01-27)
+
+### Within-Folio Temporal Profile (v4.54, B_FOLIO_TEMPORAL_PROFILE)
+
+**Programs are quasi-stationary at the meso-temporal level (C664-C669).** Within-folio evolution (line 1 to line N) was measured across 9 dimensions: 5 role fractions, LINK density, 3 kernel rates, hazard density, escape density, lane balance, and hazard proximity. Six of nine metrics are flat. Three show significant but mild positional evolution:
+
+1. **AX scaffold increases late** (C664: rho=+0.082, p<0.001, Q1=15.4% -> Q4=18.1%) -- convergence-phase scaffolding
+2. **QO lane fraction declines late** (C668: rho=-0.058, p=0.006, Q1=46.3% -> Q4=41.3%) -- energy-to-stabilization shift
+3. **Hazard proximity tightens late** (C669: rho=-0.104, p<0.001, Q1=2.75 -> Q4=2.45 tokens) -- narrowing risk envelope
+
+**Interpretation:** The controller maintains constant hazard exposure (C667), monitoring intensity (C665), and kernel contact (C666) throughout program execution. The mild late-program signals are consistent with convergence behavior: the control loop narrows its operating range as it approaches terminal state, accumulating scaffolding and shifting from energy-emphasis to stabilization-emphasis. This is thermostat steady-state approach, not phased execution.
+
+**REGIME_4 is uniquely flat** across all dimensions (lane balance +1.4pp, hazard proximity slope -0.051), consistent with its precision-constrained identity (C494). **REGIME_2 shows the strongest temporal evolution** (lane balance -9.9pp, proximity slope -0.602), consistent with its aggressive energy-to-stabilization transition.
+
+**Zero forbidden transition events** across the entire H-track B corpus. The 17 token-level forbidden pairs (C109) never occur literally. Hazard topology operates at the class level, not the specific token-pair level.
+
+**This phase closes the meso-temporal gap.** Combined with within-line structure (C556-C562) and between-folio structure (C325, C458, C548), temporal behavior is now characterized at all three scales. The dominant finding: stationarity, with mild convergence drift.
+
+**Source:** B_FOLIO_TEMPORAL_PROFILE (2026-01-27)
+
+### Line-to-Line Sequential Structure (v4.55, B_LINE_SEQUENTIAL_STRUCTURE)
+
+**Lines are contextually-coupled, individually-independent assessments (C670-C681).** This phase measured what changes from line to line at the token level, answering whether lines are sequentially coupled or independent draws from a stationary distribution.
+
+**Independence findings:**
+- **No vocabulary coupling** (C670): adjacent lines share no more MIDDLEs than random (Jaccard obs=0.140, 0/79 folios significant)
+- **No CC trigger memory** (C673): CC type re-selected independently each line (permutation p=1.0)
+- **No lane balance memory** (C674): QO fraction autocorrelation is entirely folio-driven (raw lag-1 rho=0.167 but permutation p=1.0; lag-2/3 stronger than lag-1, confirming folio clustering not sequential propagation)
+
+**Structural findings:**
+- **Vocabulary is front-loaded** (C671): 87.3% of folios introduce >60% of unique MIDDLEs in first half of lines
+- **Line boundaries are grammar-transparent** (C672): boundary entropy 7.4% lower than within-line (H_boundary=4.28 vs H_within=4.63)
+- **MIDDLE identity is position-stable** (C675): JSD Q1-Q4=0.081, only 4/135 MIDDLEs positionally biased
+- **Morphological mode evolves** (C676): PREFIX chi2 p=3.7e-9, suffix chi2 p=1.7e-7; qo PREFIX declines late, bare suffix increases
+- **Lines simplify late** (C677): unique tokens rho=-0.196 (p<1e-21), but TTR flat at 0.962 — concision, not repetition
+- **No discrete line types** (C678): best KMeans silhouette=0.100, continuous variation across 27 features
+- **Weak adjacent coupling** (C679): consecutive lines +3.1% more similar than random (p<0.001), but mild
+
+**The critical test (C681):** 24/27 features show significant lag-1 prediction beyond position — verdict SEQUENTIALLY_COUPLED. But reconciliation with C670/C673/C674 reveals this coupling is **folio-mediated** (shared operating context), not line-to-line state transfer. The "memory" is the folio's configuration, not information passed between lines.
+
+**Tier 4 synthesis:** Each folio configures a parameter context (REGIME + folio-specific conditions). Each line independently assesses the system within that context. Early lines use broad vocabulary and complex morphology; late lines are shorter, simpler, more bare-suffix. The controller converges toward a minimal-parameter operating mode across the folio, but each individual assessment is stateless — informed by folio context, not by what the previous line found.
+
+**Source:** B_LINE_SEQUENTIAL_STRUCTURE (2026-01-27)
 
 ---
 

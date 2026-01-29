@@ -1,0 +1,62 @@
+{
+  "by_section": {
+    "BIO": {
+      "count": 149,
+      "ht_delta_mean": 0.093,
+      "en_rate_mean": 0.306,
+      "fl_rate_mean": 0.029,
+      "fq_rate_mean": 0.167,
+      "gallows_initial_rate": 0.383
+    },
+    "HERBAL_B": {
+      "count": 54,
+      "ht_delta_mean": 0.209,
+      "en_rate_mean": 0.338,
+      "fl_rate_mean": 0.095,
+      "fq_rate_mean": 0.209,
+      "gallows_initial_rate": 0.667
+    },
+    "PHARMA": {
+      "count": 42,
+      "ht_delta_mean": 0.046,
+      "en_rate_mean": 0.184,
+      "fl_rate_mean": 0.029,
+      "fq_rate_mean": 0.432,
+      "gallows_initial_rate": 0.31
+    },
+    "RECIPE_B": {
+      "count": 289,
+      "ht_delta_mean": 0.144,
+      "en_rate_mean": 0.445,
+      "fl_rate_mean": 0.068,
+      "fq_rate_mean": 0.191,
+      "gallows_initial_rate": 0.727
+    },
+    "other": {
+      "count": 51,
+      "ht_delta_mean": 0.194,
+      "en_rate_mean": 0.333,
+      "fl_rate_mean": 0.09,
+      "fq_rate_mean": 0.227,
+      "gallows_initial_rate": 0.529
+    }
+  },
+  "tests": {
+    "ht_delta_by_section": {
+      "H": 30.129,
+      "p": 0.0,
+      "significant": true,
+      "sections": [
+        "BIO",
+        "HERBAL_B",
+        "PHARMA",
+        "RECIPE_B"
+      ]
+    },
+    "en_rate_by_section": {
+      "H": 57.331,
+      "p": 0.0,
+      "significant": true
+    }
+  }
+}

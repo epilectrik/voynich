@@ -1,0 +1,100 @@
+{
+  "verification": {
+    "total_lines": 2420,
+    "total_tokens": 23096,
+    "en_total": 7211,
+    "cc_total": 1023,
+    "lines_with_cc": 800,
+    "lines_with_en": 2244,
+    "lines_with_both": 743
+  },
+  "section1_routing": {
+    "contingency": {
+      "CC_DAIIN": {
+        "QO": 46,
+        "CHSH": 169
+      },
+      "CC_OL": {
+        "QO": 56,
+        "CHSH": 219
+      },
+      "CC_OL_D": {
+        "QO": 80,
+        "CHSH": 95
+      }
+    },
+    "total_pairs": 665,
+    "chi2": 40.2775,
+    "p_value": 1.7941637626740195e-09,
+    "dof": 2,
+    "cramers_v": 0.2461,
+    "significant": true,
+    "mean_distances": {
+      "CC_DAIIN->QO": 2.78,
+      "CC_DAIIN->CHSH": 1.83,
+      "CC_OL->QO": 2.77,
+      "CC_OL->CHSH": 1.94,
+      "CC_OL_D->QO": 1.81,
+      "CC_OL_D->CHSH": 2.48
+    }
+  },
+  "section2_composition": {
+    "n_lines": 743,
+    "rho": 0.1096,
+    "p_value": 0.002770172099190099,
+    "folio_benchmark": 0.345,
+    "exceeds_folio": false
+  },
+  "section2_old_qo": {
+    "rho": 0.1012,
+    "p_value": 0.005774631785607485,
+    "n": 743
+  },
+  "section3_coherence": {
+    "n_lines": 462,
+    "min_en_threshold": 5,
+    "base_chsh_rate": 0.5314,
+    "observed_mean_dominant": 0.6617,
+    "null_mean": 0.6717,
+    "null_std": 0.0057,
+    "p_value": 0.9626,
+    "cohens_d": -1.754,
+    "significant": false,
+    "pure_lines_80pct": 109
+  },
+  "section4_escape_en": {
+    "n_lines": 2240,
+    "rho": -0.7066,
+    "p_value": 0.0,
+    "folio_benchmark": -0.304
+  },
+  "section4_lane_escape": {
+    "n_lines": 409,
+    "rho": -0.3627,
+    "p_value": 3.7009591184549404e-14,
+    "folio_benchmark": -0.506
+  },
+  "section5_directionality": {
+    "forward": {
+      "n": 372,
+      "rho": 0.027,
+      "p": 0.6032595087467701
+    },
+    "reverse": {
+      "n": 363,
+      "rho": 0.0353,
+      "p": 0.5030352512754543
+    },
+    "difference": -0.0082,
+    "bootstrap_ci_95": [
+      -0.1512,
+      0.1409
+    ],
+    "forward_exceeds": false
+  },
+  "summary": {
+    "confirmed": 4,
+    "total_tests": 5,
+    "verdict": "GRAMMAR-LEVEL: Two-lane model operates at line level"
+  }
+}

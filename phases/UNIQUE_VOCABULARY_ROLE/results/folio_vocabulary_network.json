@@ -1,0 +1,49 @@
+{
+  "adjacency": {
+    "all_adjacent_mean": 0.3239,
+    "adjacent_same_section_mean": 0.3285,
+    "adjacent_diff_section_mean": 0.2758,
+    "same_section_nonadj_mean": 0.3107,
+    "diff_section_nonadj_mean": 0.2614,
+    "section_controlled_ratio": 1.057,
+    "raw_ratio": 1.179
+  },
+  "clustering": {
+    "best_k": 2,
+    "best_silhouette": 0.0545,
+    "ari_section": 0.4972,
+    "ari_regime": 0.0215,
+    "silhouette_scores": {
+      "2": 0.0545,
+      "3": 0.0443,
+      "4": 0.0423,
+      "5": 0.0355,
+      "6": 0.025,
+      "7": 0.0271,
+      "8": 0.0288,
+      "9": 0.0274,
+      "10": 0.0277
+    }
+  },
+  "gradient": {
+    "count_vs_position_rho": 0.6,
+    "count_vs_position_p": 0.0,
+    "density_vs_position_rho": -0.047,
+    "density_vs_position_p": 0.676089
+  },
+  "removal_impact": {
+    "mean_survival_pct": 96.0,
+    "min_survival_pct": 89.4,
+    "folios_above_95pct": 55,
+    "mean_max_role_shift_pp": 2.8,
+    "max_role_shift_pp": 7.04,
+    "folios_losing_role_coverage": 1
+  },
+  "network": {
+    "most_isolated": "f114r",
+    "most_isolated_similarity": 0.2199,
+    "most_central": "f78v",
+    "most_central_similarity": 0.3378,
+    "mean_pairwise_jaccard": 0.2759
+  }
+}

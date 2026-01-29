@@ -1,0 +1,10 @@
+{
+  "n_a_lines": 1549,
+  "n_b_lines": 2241,
+  "shared_middles": 88,
+  "mean_best_coverage": 0.7135986755120142,
+  "median_best_coverage": 0.7,
+  "pct_over_50": 0.9776885319053994,
+  "unique_best_a_lines": 415,
+  "conclusion": "Coverage is driven by shared vocabulary, not line correspondence"
+}

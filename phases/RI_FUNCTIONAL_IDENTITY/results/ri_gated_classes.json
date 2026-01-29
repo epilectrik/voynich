@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "phase": "RI_FUNCTIONAL_IDENTITY",
+    "script": "ri_gated_classes.py",
+    "n_folios": 114
+  },
+  "ri_gated_per_folio": {
+    "mean": 3.89,
+    "median": 3.0,
+    "max": 29,
+    "zero_count": 20
+  },
+  "ri_gated_classes": {
+    "total_ever_gated": 46,
+    "frequently_gated_gt25pct": [],
+    "class_detail": {
+      "1": {
+        "role": "AX",
+        "ri_gated_folios": 17,
+        "pp_reachable_folios": 88
+      },
+      "2": {
+        "role": "AX",
+        "ri_gated_folios": 16,
+        "pp_reachable_folios": 88
+      },
+      "3": {
+        "role": "AX",
+        "ri_gated_folios": 13,
+        "pp_reachable_folios": 85
+      },
+      "4": {
+        "role": "AX",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 94
+      },
+      "5": {
+        "role": "AX",
+        "ri_gated_folios": 1,
+        "pp_reachable_folios": 113
+      },
+      "6": {
+        "role": "AX",
+        "ri_gated_folios": 1,
+        "pp_reachable_folios": 113
+      },
+      "7": {
+        "role": "FL",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 61
+      },
+      "8": {
+        "role": "EN",
+        "ri_gated_folios": 6,
+        "pp_reachable_folios": 106
+      },
+      "9": {
+        "role": "FQ",
+        "ri_gated_folios": 2,
+        "pp_reachable_folios": 112
+      },
+      "10": {
+        "role": "CC",
+        "ri_gated_folios": 1,
+        "pp_reachable_folios": 1
+      },
+      "11": {
+        "role": "CC",
+        "ri_gated_folios": 6,
+        "pp_reachable_folios": 106
+      },
+      "13": {
+        "role": "FQ",
+        "ri_gated_folios": 10,
+        "pp_reachable_folios": 96
+      },
+      "14": {
+        "role": "FQ",
+        "ri_gated_folios": 2,
+        "pp_reachable_folios": 111
+      },
+      "15": {
+        "role": "AX",
+        "ri_gated_folios": 10,
+        "pp_reachable_folios": 93
+      },
+      "16": {
+        "role": "AX",
+        "ri_gated_folios": 15,
+        "pp_reachable_folios": 90
+      },
+      "17": {
+        "role": "CC",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 50
+      },
+      "18": {
+        "role": "AX",
+        "ri_gated_folios": 14,
+        "pp_reachable_folios": 90
+      },
+      "19": {
+        "role": "AX",
+        "ri_gated_folios": 5,
+        "pp_reachable_folios": 105
+      },
+      "20": {
+        "role": "AX",
+        "ri_gated_folios": 4,
+        "pp_reachable_folios": 109
+      },
+      "21": {
+        "role": "AX",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 101
+      },
+      "22": {
+        "role": "AX",
+        "ri_gated_folios": 22,
+        "pp_reachable_folios": 49
+      },
+      "23": {
+        "role": "FQ",
+        "ri_gated_folios": 2,
+        "pp_reachable_folios": 111
+      },
+      "24": {
+        "role": "AX",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 101
+      },
+      "25": {
+        "role": "AX",
+        "ri_gated_folios": 13,
+        "pp_reachable_folios": 74
+      },
+      "26": {
+        "role": "AX",
+        "ri_gated_folios": 16,
+        "pp_reachable_folios": 60
+      },
+      "27": {
+        "role": "AX",
+        "ri_gated_folios": 8,
+        "pp_reachable_folios": 106
+      },
+      "28": {
+        "role": "AX",
+        "ri_gated_folios": 1,
+        "pp_reachable_folios": 113
+      },
+      "29": {
+        "role": "AX",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 94
+      },
+      "32": {
+        "role": "EN",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 95
+      },
+      "33": {
+        "role": "EN",
+        "ri_gated_folios": 11,
+        "pp_reachable_folios": 96
+      },
+      "34": {
+        "role": "EN",
+        "ri_gated_folios": 3,
+        "pp_reachable_folios": 111
+      },
+      "35": {
+        "role": "EN",
+        "ri_gated_folios": 4,
+        "pp_reachable_folios": 109
+      },
+      "36": {
+        "role": "EN",
+        "ri_gated_folios": 14,
+        "pp_reachable_folios": 88
+      },
+      "37": {
+        "role": "EN",
+        "ri_gated_folios": 7,
+        "pp_reachable_folios": 106
+      },
+      "38": {
+        "role": "FL",
+        "ri_gated_folios": 4,
+        "pp_reachable_folios": 17
+      },
+      "39": {
+        "role": "EN",
+        "ri_gated_folios": 5,
+        "pp_reachable_folios": 108
+      },
+      "40": {
+        "role": "FL",
+        "ri_gated_folios": 6,
+        "pp_reachable_folios": 14
+      },
+      "41": {
+        "role": "EN",
+        "ri_gated_folios": 6,
+        "pp_reachable_folios": 106
+      },
+      "42": {
+        "role": "EN",
+        "ri_gated_folios": 15,
+        "pp_reachable_folios": 60
+      },
+      "43": {
+        "role": "EN",
+        "ri_gated_folios": 10,
+        "pp_reachable_folios": 94
+      },
+      "44": {
+        "role": "EN",
+        "ri_gated_folios": 20,
+        "pp_reachable_folios": 32
+      },
+      "45": {
+        "role": "EN",
+        "ri_gated_folios": 22,
+        "pp_reachable_folios": 64
+      },
+      "46": {
+        "role": "EN",
+        "ri_gated_folios": 19,
+        "pp_reachable_folios": 69
+      },
+      "47": {
+        "role": "EN",
+        "ri_gated_folios": 12,
+        "pp_reachable_folios": 98
+      },
+      "48": {
+        "role": "EN",
+        "ri_gated_folios": 14,
+        "pp_reachable_folios": 86
+      },
+      "49": {
+        "role": "EN",
+        "ri_gated_folios": 10,
+        "pp_reachable_folios": 99
+      }
+    },
+    "role_event_counts": {
+      "AX": 200,
+      "FL": 21,
+      "EN": 189,
+      "FQ": 16,
+      "CC": 18
+    }
+  },
+  "ri_exclusive_pp_middles": {
+    "globally_exclusive_to_ri": 66,
+    "globally_exclusive_to_pure": 109,
+    "globally_shared": 214,
+    "ri_excl_median_freq": 1.0,
+    "ri_excl_median_folio_spread": 1.0
+  },
+  "sampling_artifact_test": {
+    "observed_mean": 8.88,
+    "null_mean": 9.38,
+    "ratio": 0.946,
+    "t_stat": -2.259,
+    "p_value": 0.9870942276360962,
+    "sampling_explains_pct": 105.7,
+    "verdict": "SAMPLING ARTIFACT. RI-exclusive PP MIDDLEs explained by line count imbalance."
+  }
+}

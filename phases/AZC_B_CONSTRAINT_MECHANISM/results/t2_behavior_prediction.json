@@ -1,0 +1,56 @@
+{
+  "n_folios": 82,
+  "correlations": {
+    "azc_pct": {
+      "escape_rate": {
+        "r": -0.311,
+        "p": 0.0044
+      },
+      "kernel_rate": {
+        "r": -0.42,
+        "p": 0.0001
+      },
+      "tokens_per_line": {
+        "r": -0.096,
+        "p": 0.39
+      },
+      "n_tokens": {
+        "r": -0.661,
+        "p": 0.0
+      },
+      "n_lines": {
+        "r": -0.641,
+        "p": 0.0
+      }
+    },
+    "vocab_size": {
+      "escape_rate": {
+        "r": 0.275,
+        "p": 0.0124
+      },
+      "kernel_rate": {
+        "r": 0.317,
+        "p": 0.0037
+      },
+      "tokens_per_line": {
+        "r": 0.127,
+        "p": 0.2559
+      },
+      "n_tokens": {
+        "r": 0.856,
+        "p": 0.0
+      },
+      "n_lines": {
+        "r": 0.818,
+        "p": 0.0
+      }
+    }
+  },
+  "partial_correlation": {
+    "azc_vs_escape_controlling_vocab": {
+      "r": -0.159,
+      "p": 0.1549
+    }
+  },
+  "verdict": "VOCAB_SIZE_MEDIATES"
+}

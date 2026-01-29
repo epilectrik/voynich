@@ -1,0 +1,95 @@
+{
+  "role_stats": {
+    "CC": {
+      "total": 1023,
+      "any_kernel": 24.82893450635386,
+      "k_rate": 16.617790811339198,
+      "h_rate": 8.211143695014663,
+      "e_rate": 18.57282502443793,
+      "dominant_sig": "none",
+      "dominant_pct": 75.17106549364614
+    },
+    "EN": {
+      "total": 7211,
+      "any_kernel": 91.9289973651366,
+      "k_rate": 38.56607960061018,
+      "h_rate": 59.395368187491336,
+      "e_rate": 58.2720843156289,
+      "dominant_sig": "h+e",
+      "dominant_pct": 35.84800998474553
+    },
+    "FL": {
+      "total": 1078,
+      "any_kernel": 0.0,
+      "k_rate": 0.0,
+      "h_rate": 0.0,
+      "e_rate": 0.0,
+      "dominant_sig": "none",
+      "dominant_pct": 100.0
+    },
+    "FQ": {
+      "total": 2890,
+      "any_kernel": 45.98615916955017,
+      "k_rate": 33.18339100346021,
+      "h_rate": 0.0,
+      "e_rate": 26.228373702422147,
+      "dominant_sig": "none",
+      "dominant_pct": 54.01384083044983
+    },
+    "AX": {
+      "total": 3852,
+      "any_kernel": 57.320872274143305,
+      "k_rate": 29.49117341640706,
+      "h_rate": 26.427829698857735,
+      "e_rate": 37.668743509865,
+      "dominant_sig": "none",
+      "dominant_pct": 42.679127725856695
+    }
+  },
+  "role_kernel_sigs": {
+    "AX": {
+      "h+e": 682,
+      "none": 1644,
+      "e": 223,
+      "k+e": 458,
+      "k+h": 81,
+      "k+h+e": 88,
+      "k": 509,
+      "h": 167
+    },
+    "EN": {
+      "h+e": 2585,
+      "h": 1004,
+      "k+e": 1034,
+      "k+h": 370,
+      "k+h+e": 324,
+      "e": 259,
+      "none": 582,
+      "k": 1053
+    },
+    "FQ": {
+      "none": 1561,
+      "e": 370,
+      "k+e": 388,
+      "k": 571
+    },
+    "CC": {
+      "h+e": 84,
+      "none": 769,
+      "k": 64,
+      "k+e": 106
+    },
+    "FL": {
+      "none": 1078
+    }
+  },
+  "forbidden_pair_counts": {
+    "CC": 20,
+    "FQ": 10,
+    "EN": 4
+  },
+  "findings": [
+    "FL_KERNEL_FREE: FL is 0% kernel (state index only)",
+    "ROLE_KERNEL_PARTITION: Roles have distinct kernel profiles"
+  ]
+}

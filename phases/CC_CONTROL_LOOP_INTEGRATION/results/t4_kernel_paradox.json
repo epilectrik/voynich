@@ -1,0 +1,27 @@
+{
+  "DAIIN (Class 10)": {
+    "count": 314,
+    "with_kernel": 0,
+    "kernel_rate": 0.0,
+    "kernel_chars": {},
+    "unique_words": 1
+  },
+  "OL (Class 11)": {
+    "count": 421,
+    "with_kernel": 0,
+    "kernel_rate": 0.0,
+    "kernel_chars": {},
+    "unique_words": 1
+  },
+  "OL_DERIVED (Class 17)": {
+    "count": 288,
+    "with_kernel": 254,
+    "kernel_rate": 0.8819444444444444,
+    "kernel_chars": {
+      "h": 84,
+      "e": 269,
+      "k": 170
+    },
+    "unique_words": 9
+  }
+}

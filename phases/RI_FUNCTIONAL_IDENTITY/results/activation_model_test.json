@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "phase": "RI_FUNCTIONAL_IDENTITY",
+    "script": "activation_model_test.py",
+    "hypothesis": "B activation = PP-pure toolbox + single RI entry",
+    "n_folios": 114
+  },
+  "condition_a_pp_pure_only": {
+    "mean_classes": 35.9,
+    "mean_recovery_pct": 90.1,
+    "mean_pp_middles": 26.4
+  },
+  "condition_b_best_ri": {
+    "mean_classes": 38.3,
+    "mean_recovery_pct": 96.4
+  },
+  "condition_b_mean_ri": {
+    "mean_classes": 37.2,
+    "mean_recovery_pct": 93.4
+  },
+  "condition_c_full_folio": {
+    "mean_classes": 39.8
+  },
+  "ri_line_pp_contribution": {
+    "mean_total_pp_middles": 4.91,
+    "mean_shared": 2.86,
+    "mean_exclusive": 2.05,
+    "exclusive_fraction": 41.8
+  },
+  "single_record_survival": {
+    "pp_pure_mean": 9.3,
+    "ri_bearing_mean": 8.96,
+    "mann_whitney_p": 0.11792164323685897
+  },
+  "recovery_curve": {
+    "0": 90.1,
+    "1": 96.3,
+    "2": 98.4,
+    "3": 99.3,
+    "4": 99.8,
+    "5": 99.9,
+    "6": 100.0,
+    "7": 100.0,
+    "8": 100.0,
+    "9": 100.0,
+    "10": 100.0,
+    "11": 100.0,
+    "12": 100.0,
+    "13": 100.0,
+    "14": 100.0,
+    "15": 100.0
+  },
+  "verdict": "PP-pure lines ALONE nearly sufficient. RI adds minimal filtering value."
+}

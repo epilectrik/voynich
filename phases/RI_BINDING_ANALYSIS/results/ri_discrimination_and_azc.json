@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "phase": "RI_BINDING_ANALYSIS",
+    "script": "ri_discrimination_and_azc.py",
+    "tests": "T7-T9",
+    "n_folios": 114
+  },
+  "T7_folio_orthogonality": {
+    "full_jaccard": 0.2456,
+    "pp_only_jaccard": 0.2735,
+    "ri_only_jaccard": 0.0116,
+    "c437_reference": 0.056,
+    "diff_removing_ri": 0.0279,
+    "pct_change": 11.3,
+    "wilcoxon_p": 0.0,
+    "full_unique_fingerprints": 114,
+    "pp_unique_fingerprints": 114,
+    "n_folios": 114,
+    "pass": false
+  },
+  "T8_ri_azc_interaction": {
+    "ri_in_azc_count": 39,
+    "ri_in_azc_pct": 6.4,
+    "zone_chi2": 6.83,
+    "zone_chi2_df": 6,
+    "zone_chi2_p": 0.33661645043695826,
+    "ri_azc_placements": {
+      "P": 8,
+      "S": 7,
+      "Y": 3,
+      "C": 16,
+      "X": 3,
+      "U": 1,
+      "R": 20,
+      "O": 2,
+      "W": 1
+    },
+    "all_azc_placements": {
+      "T": 1,
+      "R": 1382,
+      "X": 77,
+      "Y": 111,
+      "L": 68,
+      "P": 398,
+      "S": 505,
+      "C": 635,
+      "Z": 9,
+      "F": 2,
+      "U": 8,
+      "O": 49,
+      "I": 37,
+      "B": 11,
+      "W": 6
+    },
+    "length_azc_present": 3.59,
+    "length_azc_absent": 4.63,
+    "length_p": 1.166054129769592e-06,
+    "spread_azc_present": 2.18,
+    "spread_azc_absent": 1.16,
+    "spread_p": 0.0036119870434499356,
+    "prefix_azc_req_rate": 0.821,
+    "prefix_notazc_req_rate": 0.581,
+    "fisher_p": 0.0013559645670148603,
+    "zone_pass": false,
+    "morph_pass": "True",
+    "pass": "True"
+  },
+  "T9_ri_density": {
+    "rho_size": -0.0713,
+    "p_size": 0.45067651782513385,
+    "rho_types_size": 0.4189,
+    "p_types_size": 3.500414301414075e-06,
+    "section_kruskal_p": 0.0001119894169417958,
+    "regime_kruskal_p": 1.0,
+    "rho_ri_pp_density": 0.1679,
+    "p_ri_pp_density": 0.07423809853906574,
+    "pass": "True"
+  },
+  "summary": {
+    "pass_count": "2",
+    "total_tests": 3,
+    "T7_pass": false,
+    "T8_pass": "True",
+    "T9_pass": "True"
+  }
+}
