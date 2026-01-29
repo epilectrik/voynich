@@ -1,0 +1,522 @@
+# ============================================================
+# BRSC: Brunschwig Structural Contract
+# Version: 1.0
+# ============================================================
+#
+# This is an EXTERNAL REFERENCE specification.
+# It documents the parametric structure of Brunschwig's
+# "Liber de arte distillandi" (1500) for comparison with
+# Voynich structural contracts.
+#
+# Purpose: Formalize Brunschwig's general protocols to enable
+# systematic mapping to Voynich grammar structures.
+#
+# Source: sources/brunschwig_1500_text.txt (OCR'd German)
+#         sources/brunschwig_english_translation.md
+#         data/brunschwig_curated_v3.json (245 recipes)
+#
+# ============================================================
+
+meta:
+  name: "Brunschwig Structural Contract"
+  acronym: "BRSC"
+  version: "1.0"
+  date: "2026-01-29"
+  status: "DRAFT"
+  layer_type: "external reference contract"
+  derived_from: "Hieronymus Brunschwig, Liber de arte distillandi (1500)"
+  governance: |
+    BRSC documents an EXTERNAL historical text.
+    It enables systematic comparison with Voynich structures.
+    Mappings to Voynich are hypotheses, not proven correspondences.
+
+# ============================================================
+# DOCUMENT STRUCTURE
+# ============================================================
+document_structure:
+  total_recipes: 245
+  recipes_with_procedures: 228
+
+  three_part_organization:
+    part_1:
+      name: "Craft Practices"
+      content: "Apparatus, methods, general protocols"
+      material_references: false  # NO plant references
+      lines: "1-3500 approx"
+    part_2:
+      name: "Illustrated Herbal"
+      content: "Individual plant recipes A-Z"
+      lines: "3500-25000 approx"
+    part_3:
+      name: "Disease Register"
+      content: "Ailment -> remedy cross-reference"
+
+  note: |
+    Part 1 contains GENERAL PROTOCOLS that apply to all recipes.
+    Part 2 contains INDIVIDUAL RECIPES that specify parameters.
+    This separation mirrors Voynich's grammar/entry distinction.
+
+# ============================================================
+# FIRE DEGREE PROTOCOL
+# ============================================================
+fire_degree:
+  description: "4-level heat intensity classification"
+
+  degrees:
+    - degree: 1
+      name: "First Degree"
+      german: "ersten grad"
+      intensity: "lukewarm"
+      description: "Water bath barely warm, finger can bear it indefinitely"
+      monitoring: "Continuous finger test required"
+
+    - degree: 2
+      name: "Second Degree"
+      german: "anderen grad"
+      intensity: "noticeably warm"
+      description: "Distinctly warm but not hot"
+      monitoring: "Regular finger test, drip timing"
+
+    - degree: 3
+      name: "Third Degree"
+      german: "dritten grad"
+      intensity: "almost seething"
+      description: "Hot, approaching boiling point"
+      monitoring: "Visual monitoring, watch for overheating"
+
+    - degree: 4
+      name: "Fourth Degree"
+      german: "vierden grad"
+      intensity: "FORBIDDEN"
+      description: "Boiling, destructive heat"
+      status: "CATEGORICAL_PROHIBITION"
+      quote: |
+        "The fourth degree should be avoided at all times, not just
+        because it threatens to scorch the distilled material, but
+        also because it would coerce the thing, which the art of
+        true distillation rejects, because nature too rejects,
+        forbids, and repels all coercion."
+
+  distribution_in_recipes:
+    degree_1: 48   # 19.6%
+    degree_2: 417  # 82.0% (most common)
+    degree_3: 35   # 14.3%
+    degree_4: 9    # 3.7% (precision/animal - special handling)
+
+  voynich_mapping_hypothesis:
+    degree_1: "REGIME_2 (gentle handling, high LINK)"
+    degree_2: "REGIME_1 (standard processing)"
+    degree_3: "REGIME_3 (intense extraction)"
+    degree_4: "HIGH_IMPACT forbidden in REGIME_4"
+
+# ============================================================
+# DISTILLATION METHODS
+# ============================================================
+distillation_methods:
+  description: "10 methods divided into fireless and fire-based"
+
+  without_fire:
+    count: 5
+    methods:
+      - name: "Filtration"
+        german: "filtrieren"
+      - name: "Sunshine"
+        german: "sonnen"
+        description: "Glass vessel in sunlight"
+      - name: "Ant Hill"
+        german: "ameis hauffen"
+        description: "Buried in ant hill for gentle heat"
+      - name: "Baker's Oven"
+        german: "becken ofen"
+        description: "Residual heat from bread oven"
+      - name: "Horse Dung"
+        german: "ross mist"
+        description: "Buried in fermenting dung for sustained heat"
+
+  with_fire:
+    count: 5
+    methods:
+      - name: "Balneum Marie"
+        german: "balneum marie"
+        description: "Water bath - gentlest fire method"
+        use_case: "Delicate flowers, animal materials"
+        degree: 1
+      - name: "Ash Bath"
+        german: "per cinerem"
+        description: "Vessel in hot ashes"
+        degree: 2
+      - name: "Sand Bath"
+        german: "per arenam"
+        description: "Vessel in hot sand"
+        degree: 2-3
+      - name: "Direct Fire"
+        german: "per ignem"
+        description: "Vessel over flame"
+        degree: 3
+      - name: "Alembic Standard"
+        german: "per alembicum"
+        description: "Standard alembic distillation"
+        degree: 2-3
+
+# ============================================================
+# SENSORY MONITORING PROTOCOL
+# ============================================================
+sensory_monitoring:
+  description: |
+    General monitoring instructions in Part 1 (lines 1880-3340).
+    These apply to ALL recipes based on fire degree.
+    Individual recipes do NOT repeat monitoring instructions.
+
+  location_in_text:
+    finger_test: "lines 1880-1895"
+    drip_timing: "lines 2035-2055"
+    quality_tests: "lines 3315-3340"
+
+  protocols:
+    - name: "Finger Test"
+      modality: "TOUCH"
+      german: "ein finger dar in gelyden magst"
+      english: "that you can bear a finger in it"
+      applies_to: [1, 2]  # Degrees 1 and 2
+      frequency: "Continuous for degree 1, regular for degree 2"
+
+    - name: "Drip Rate Timing"
+      modality: "SOUND/SIGHT"
+      german: "wie die glock schlecht eyns zwei das ein tropffen felt"
+      english: "as the clock strikes one, two, a drop falls"
+      applies_to: [1, 2, 3]
+      frequency: "Regular monitoring"
+      action_on_fast: "Reduce fire (block air holes)"
+      action_on_stop: "Distillation complete, begin cooling"
+
+    - name: "Overnight Cooling"
+      modality: "TIMING"
+      german: "lassen zeston das glas uber nacht zu bekalten"
+      english: "let the glass stand overnight to cool"
+      applies_to: [1, 2, 3]
+      reason: "Thermal shock breaks glass"
+      status: "MANDATORY"
+
+    - name: "Thumbnail Test"
+      modality: "TOUCH/SIGHT"
+      german: "ein tropffen uff ein dumen nagel...ob er nit bald uber ab fliessen"
+      english: "a drop on thumbnail...if it doesn't quickly flow off"
+      purpose: "Viscosity/quality test"
+      action_on_fail: "Discard water"
+
+    - name: "Cloudiness Check"
+      modality: "SIGHT"
+      german: "wolcken furent die sich zerspreit hatten wie flocken"
+      english: "clouds that spread like flakes"
+      purpose: "Contamination detection"
+      action_on_fail: "Discard water"
+
+    - name: "Color/Smell Check"
+      modality: "SIGHT/SMELL"
+      german: "rotfar ran oder trieb oder ubel schmacken"
+      english: "red-colored or murky or bad-smelling"
+      purpose: "Degradation detection"
+      action_on_fail: "Discard water"
+
+    - name: "Taste Check"
+      modality: "TASTE"
+      german: "ob die kruter keinen geschmack haben"
+      english: "if the herbs have no taste"
+      purpose: "Potency verification"
+      action_on_fail: "Discard water"
+
+  voynich_mapping_hypothesis:
+    finger_test: "LINK monitoring phase"
+    drip_timing: "k/h kernel operations"
+    overnight_cooling: "e kernel (equilibration)"
+    quality_tests: "FL stage validation"
+
+# ============================================================
+# RECOVERY PROTOCOL
+# ============================================================
+recovery:
+  description: "What to do when distillation goes wrong"
+
+  retry_limit:
+    value: 2
+    quote: |
+      "A batch approaching corruption can prevail against its
+      time if it is reinfused with fresh herbs and then distilled,
+      but this may happen no more than twice."
+
+  primary_recovery_path: "Cooling (equilibration)"
+  quote_cooling: "must be left to stand overnight to cool"
+
+  total_failure:
+    description: "Beyond 2 retries or complete corruption"
+    action: "Discard - no salvage procedure exists"
+    quote: "No procedures exist for salvaging completely failed batches"
+
+  voynich_mapping_hypothesis:
+    retry_limit: "FQ escape handler (limited retries)"
+    cooling_path: "e kernel dominance in recovery"
+    total_failure: "Hazard class IRRECOVERABLE"
+
+# ============================================================
+# QUALITY REJECTION PROTOCOL
+# ============================================================
+quality_rejection:
+  description: "5 categorical tests for finished water"
+  location: "lines 3315-3340"
+
+  tests:
+    - test: 1
+      criterion: "No taste"
+      german: "keinen geschmack"
+      action: "Discard"
+
+    - test: 2
+      criterion: "Flows like thread"
+      german: "louffen ist wie ein faden"
+      action: "Discard"
+      meaning: "Wrong viscosity - degraded"
+
+    - test: 3
+      criterion: "Doesn't flow off thumbnail"
+      german: "nit bald uber ab fliessen"
+      action: "Discard"
+      meaning: "Too thick - contaminated"
+
+    - test: 4
+      criterion: "Cloudiness/flakes"
+      german: "wolcken...wie flocken"
+      action: "Discard"
+      meaning: "Suspended particles - contaminated"
+
+    - test: 5
+      criterion: "Red color, murky, bad smell"
+      german: "rotfar ran oder trieb oder ubel"
+      action: "Discard"
+      meaning: "Degraded or corrupted"
+
+  note: "All tests are CATEGORICAL (pass/fail), not quantitative"
+
+  voynich_mapping_hypothesis:
+    categorical_tests: "Hazard classes (forbidden transitions)"
+    pass_fail_logic: "Binary state transitions in grammar"
+
+# ============================================================
+# STORAGE DURATION PROTOCOL
+# ============================================================
+storage:
+  description: "How long waters can be kept, by material type"
+  location: "lines 3050-3100"
+
+  by_material_type:
+    - type: "Hot/dry herbs"
+      german: "hitzig"
+      duration: "3 years"
+      german_duration: "biss in das end des dritten iars"
+
+    - type: "Moist/slimy roots"
+      german: "fuchten oder schlymigen substantz"
+      duration: "1 year"
+      german_duration: "von eym iar zum ander"
+
+    - type: "Dry roots"
+      german: "herssen oder durren substantz"
+      duration: "Longer than moist"
+
+    - type: "Flowers"
+      duration: "Shortest - use quickly"
+
+  voynich_mapping_hypothesis:
+    material_type: "PREFIX material-behavior class"
+    duration_encoding: "Possibly in SUFFIX or MIDDLE"
+
+# ============================================================
+# HARVEST TIMING PROTOCOL
+# ============================================================
+harvest_timing:
+  description: "When to collect materials for distillation"
+
+  by_plant_part:
+    - part: "Most herbs"
+      timing: "End of May"
+      german: "im end des meyens"
+      frequency_in_recipes: "Very common"
+
+    - part: "Roots"
+      timing: "March (St. Gertrude's Day, March 17)"
+      german: "im Mertzen umb sant Gertruden tag"
+
+    - part: "Flowers"
+      timing: "When bearing flowers"
+      german: "wann es blumen tregt"
+
+    - part: "Tree sap"
+      timing: "May"
+      example: "Birch sap - bore hole, collect"
+
+  voynich_mapping_hypothesis:
+    timing_parameter: "Possibly encoded in procedural_steps or timing field"
+
+# ============================================================
+# APPARATUS SELECTION PROTOCOL
+# ============================================================
+apparatus:
+  description: "Which equipment for which material/method"
+
+  vessel_selection:
+    - material: "Delicate flowers"
+      method: "Balneum marie"
+      vessel: "Glass"
+
+    - material: "Standard herbs"
+      method: "Per alembicum"
+      vessel: "Glass or earthenware"
+
+    - material: "Intense extraction"
+      method: "Per ignem"
+      vessel: "Earthenware"
+
+  quality_sources:
+    glass: "Bohemian or Venetian glassblowers"
+    earthenware: "Dense clay from Syburg or Haguenau"
+    crucibles: "White clay (goldsmith quality)"
+
+  voynich_mapping_hypothesis:
+    apparatus_agnostic: "Voynich grammar is material-agnostic (C171)"
+    method_selection: "Possibly encoded in fire_degree + material_class"
+
+# ============================================================
+# MATERIAL CLASSIFICATION
+# ============================================================
+material_classification:
+  description: "Categories of materials with different handling"
+
+  categories:
+    - name: "herb"
+      count: 360
+      fire_degree: "Typically 2"
+      handling: "Standard"
+
+    - name: "hot_dry_herb"
+      count: 33
+      fire_degree: "Typically 3"
+      handling: "Careful - volatile"
+
+    - name: "moderate_herb"
+      count: 20
+      fire_degree: "Typically 2"
+      handling: "Standard"
+
+    - name: "flower"
+      count: 48  # hot + cold combined
+      fire_degree: "1-2"
+      handling: "Gentle - balneum marie preferred"
+
+    - name: "root"
+      count: 11  # moist + hot_dry
+      fire_degree: "2-3"
+      handling: "Varies by moisture content"
+
+    - name: "animal"
+      count: 9
+      fire_degree: "1 (precision)"
+      handling: "Balneum marie only - proteins denature"
+
+    - name: "fruit"
+      count: 16
+      fire_degree: "2"
+      handling: "Standard"
+
+  voynich_mapping_hypothesis:
+    material_class: "PREFIX (M-A/B/C/D)"
+    animal_routing: "C536: Animal -> REGIME_4 at 2.14x"
+
+# ============================================================
+# PARAMETRIC STRUCTURE SUMMARY
+# ============================================================
+parametric_structure:
+  description: |
+    Brunschwig recipes are PARAMETRIC: individual recipes specify
+    parameters, and general protocols determine behavior.
+
+  recipe_specifies:
+    - fire_degree: "1-4"
+    - material_type: "herb, root, flower, animal, etc."
+    - plant_parts: "root, stem, herb, flower, berry, etc."
+    - harvest_timing: "End of May, March, when flowering, etc."
+    - method: "per alembicum, balneum marie, etc."
+
+  general_protocols_determine:
+    - monitoring_intensity: "Based on fire_degree"
+    - recovery_options: "Based on fire_degree and material"
+    - storage_duration: "Based on material_type"
+    - rejection_criteria: "Universal (5 categorical tests)"
+    - cooling_requirement: "Universal (overnight)"
+
+  voynich_parallel:
+    entry_specifies: "PREFIX, MIDDLE, SUFFIX"
+    grammar_determines: "REGIME, kernel operations, hazard avoidance"
+
+# ============================================================
+# VOYNICH MAPPING SUMMARY
+# ============================================================
+voynich_mapping:
+  status: "HYPOTHESIS - requires validation"
+
+  structural_parallels:
+    - brunschwig: "Fire degree (1-4)"
+      voynich: "REGIME (1-4)"
+      confidence: "MEDIUM"
+      evidence: "F-BRU-001, F-BRU-002"
+
+    - brunschwig: "Material classification"
+      voynich: "PREFIX material-behavior class (M-A/B/C/D)"
+      confidence: "MEDIUM"
+      evidence: "C475, C476"
+
+    - brunschwig: "Sensory monitoring protocol"
+      voynich: "LINK monitoring phase + kernel operations"
+      confidence: "LOW-MEDIUM"
+      evidence: "C873, C876"
+
+    - brunschwig: "Recovery (2 retry limit)"
+      voynich: "FQ escape handler"
+      confidence: "MEDIUM"
+      evidence: "C875, F-BRU-007"
+
+    - brunschwig: "Quality rejection (5 tests)"
+      voynich: "17 forbidden transitions (5 hazard classes)"
+      confidence: "MEDIUM"
+      evidence: "C109"
+
+    - brunschwig: "Fourth degree FORBIDDEN"
+      voynich: "HIGH_IMPACT forbidden in REGIME_4"
+      confidence: "MEDIUM"
+      evidence: "C490"
+
+    - brunschwig: "Material-apparatus separation"
+      voynich: "C171: No material encoding in execution grammar"
+      confidence: "HIGH"
+      evidence: "C171, C384"
+
+  key_difference:
+    brunschwig: "Teaching text for novices"
+    voynich: "Reference manual for experts"
+    evidence: "brunschwig_comparison.md Axis 5: MISMATCH"
+
+# ============================================================
+# PROVENANCE
+# ============================================================
+provenance:
+  primary_source: "sources/brunschwig_1500_text.txt"
+  translation: "sources/brunschwig_english_translation.md"
+  curated_data: "data/brunschwig_curated_v3.json"
+
+  related_constraints:
+    - "C493: Brunschwig grammar embedding (0 violations)"
+    - "C527: Suffix fire-degree correlation"
+    - "C536: Animal material REGIME routing"
+
+  related_fits:
+    - "F-BRU-001 through F-BRU-009"
+
+  comparison_document: "context/SPECULATIVE/brunschwig_comparison.md"
