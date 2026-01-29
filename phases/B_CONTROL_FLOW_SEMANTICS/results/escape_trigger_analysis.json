@@ -1,0 +1,221 @@
+{
+  "pre_fq": {
+    "roles": {
+      "ENERGY_OPERATOR": 812,
+      "UN": 772,
+      "AUXILIARY": 484,
+      "FLOW_OPERATOR": 143,
+      "CORE_CONTROL": 90
+    },
+    "fl_stages": {
+      "MEDIAL": 399,
+      "TERMINAL": 73,
+      "LATE": 38,
+      "EARLY": 35,
+      "INITIAL": 22
+    },
+    "hazard_rate": 0.8042,
+    "kernel_before": {
+      "has_k": 776,
+      "has_h": 873,
+      "has_e": 995,
+      "no_kernel": 697
+    },
+    "top_middles": [
+      [
+        "k",
+        278
+      ],
+      [
+        "edy",
+        126
+      ],
+      [
+        "r",
+        118
+      ],
+      [
+        "ar",
+        97
+      ],
+      [
+        "iin",
+        84
+      ],
+      [
+        "l",
+        84
+      ],
+      [
+        "e",
+        83
+      ],
+      [
+        "t",
+        75
+      ],
+      [
+        "ol",
+        74
+      ],
+      [
+        "ey",
+        56
+      ],
+      [
+        "ed",
+        52
+      ],
+      [
+        "dy",
+        48
+      ],
+      [
+        "ke",
+        43
+      ],
+      [
+        "eo",
+        38
+      ],
+      [
+        "aiin",
+        37
+      ],
+      [
+        "ch",
+        37
+      ],
+      [
+        "o",
+        35
+      ],
+      [
+        "in",
+        35
+      ],
+      [
+        "d",
+        33
+      ],
+      [
+        "eey",
+        32
+      ]
+    ]
+  },
+  "post_fq": {
+    "roles": {
+      "ENERGY_OPERATOR": 770,
+      "UN": 687,
+      "AUXILIARY": 441,
+      "FLOW_OPERATOR": 167,
+      "CORE_CONTROL": 78
+    },
+    "fl_stages": {
+      "MEDIAL": 377,
+      "TERMINAL": 128,
+      "LATE": 49,
+      "EARLY": 23,
+      "INITIAL": 9
+    },
+    "top_middles": [
+      [
+        "k",
+        176
+      ],
+      [
+        "edy",
+        174
+      ],
+      [
+        "ol",
+        88
+      ],
+      [
+        "ar",
+        85
+      ],
+      [
+        "l",
+        81
+      ],
+      [
+        "e",
+        78
+      ],
+      [
+        "ey",
+        71
+      ],
+      [
+        "r",
+        66
+      ],
+      [
+        "dy",
+        61
+      ],
+      [
+        "t",
+        59
+      ],
+      [
+        "al",
+        57
+      ],
+      [
+        "eey",
+        48
+      ],
+      [
+        "o",
+        46
+      ],
+      [
+        "ed",
+        41
+      ],
+      [
+        "ch",
+        41
+      ],
+      [
+        "iin",
+        39
+      ],
+      [
+        "eo",
+        36
+      ],
+      [
+        "ai",
+        36
+      ],
+      [
+        "y",
+        36
+      ],
+      [
+        "ke",
+        36
+      ]
+    ]
+  },
+  "chains": {
+    "length_distribution": {
+      "1": 2040,
+      "2": 305,
+      "3": 61,
+      "4": 13,
+      "5": 1
+    },
+    "mean_length": 1.194,
+    "total_events": 2420
+  },
+  "escape_grammar": {
+    "primary_trigger_role": "ENERGY_OPERATOR",
+    "hazard_fl_trigger_rate": 0.8042,
+    "kernel_absent_trigger_rate": 0.2086
+  }
+}

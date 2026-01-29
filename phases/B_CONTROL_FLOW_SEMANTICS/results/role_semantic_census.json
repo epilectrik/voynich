@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "total_tokens": 23096,
+    "total_types": 4889,
+    "roles": [
+      "UNKNOWN",
+      "AUXILIARY",
+      "ENERGY_OPERATOR",
+      "FREQUENT_OPERATOR",
+      "CORE_CONTROL",
+      "FLOW_OPERATOR"
+    ]
+  },
+  "roles": {
+    "AUXILIARY": {
+      "token_count": 4140,
+      "type_count": 241,
+      "kernel_rate": 0.5947,
+      "hazard_rate": 0.0,
+      "mean_position": 0.4399,
+      "classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "top_middles": [
+        [
+          "edy",
+          499
+        ],
+        [
+          "r",
+          396
+        ],
+        [
+          "l",
+          355
+        ],
+        [
+          "ch",
+          227
+        ],
+        [
+          "iin",
+          222
+        ],
+        [
+          "dy",
+          190
+        ],
+        [
+          "k",
+          188
+        ],
+        [
+          "ey",
+          186
+        ],
+        [
+          "ain",
+          151
+        ],
+        [
+          "aiin",
+          142
+        ]
+      ],
+      "semantic_annotations": {
+        "function": "support_operation",
+        "includes_link": true,
+        "link_class": 29,
+        "interpretation": "Auxiliary operations including LINK (class 29) monitoring",
+        "abbreviation": "AX"
+      }
+    },
+    "CORE_CONTROL": {
+      "token_count": 735,
+      "type_count": 2,
+      "kernel_rate": 0.0,
+      "hazard_rate": 0.0,
+      "mean_position": 0.4218,
+      "classes": [
+        10,
+        11
+      ],
+      "top_middles": [
+        [
+          "ol",
+          421
+        ],
+        [
+          "iin",
+          314
+        ]
+      ],
+      "semantic_annotations": {
+        "function": "control_word",
+        "key_tokens": [
+          "daiin",
+          "ol"
+        ],
+        "interpretation": "High-frequency control tokens with positional bias",
+        "abbreviation": "CC"
+      }
+    },
+    "ENERGY_OPERATOR": {
+      "token_count": 7211,
+      "type_count": 173,
+      "kernel_rate": 0.9193,
+      "hazard_rate": 0.0,
+      "mean_position": 0.432,
+      "classes": [
+        8,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "top_middles": [
+        [
+          "k",
+          1736
+        ],
+        [
+          "edy",
+          907
+        ],
+        [
+          "t",
+          498
+        ],
+        [
+          "ey",
+          454
+        ],
+        [
+          "ke",
+          340
+        ],
+        [
+          "e",
+          329
+        ],
+        [
+          "eey",
+          239
+        ],
+        [
+          "dy",
+          186
+        ],
+        [
+          "ck",
+          177
+        ],
+        [
+          "l",
+          165
+        ]
+      ],
+      "semantic_annotations": {
+        "function": "transition_operator",
+        "kernel_types": {
+          "k": "energy/activation",
+          "h": "phase/alignment",
+          "e": "stability/verification"
+        },
+        "interpretation": "Drives state transitions via kernel injection",
+        "abbreviation": "EN"
+      }
+    },
+    "FLOW_OPERATOR": {
+      "token_count": 1078,
+      "type_count": 19,
+      "kernel_rate": 0.0,
+      "hazard_rate": 1.0,
+      "mean_position": 0.5195,
+      "classes": [
+        7,
+        30,
+        38,
+        40
+      ],
+      "top_middles": [
+        [
+          "ar",
+          248
+        ],
+        [
+          "al",
+          197
+        ],
+        [
+          "r",
+          188
+        ],
+        [
+          "l",
+          130
+        ],
+        [
+          "in",
+          113
+        ],
+        [
+          "i",
+          49
+        ],
+        [
+          "m",
+          42
+        ],
+        [
+          "y",
+          33
+        ],
+        [
+          "ly",
+          17
+        ],
+        [
+          "ry",
+          13
+        ]
+      ],
+      "semantic_annotations": {
+        "function": "state_index",
+        "stage_map": {
+          "INITIAL": [
+            "ii",
+            "i"
+          ],
+          "EARLY": [
+            "in"
+          ],
+          "MEDIAL": [
+            "r",
+            "ar",
+            "al",
+            "l",
+            "ol"
+          ],
+          "LATE": [
+            "o",
+            "ly"
+          ],
+          "TERMINAL": [
+            "am",
+            "m",
+            "dy",
+            "ry",
+            "y"
+          ]
+        },
+        "domain_hint": "material_position",
+        "interpretation": "Indexes where material is in transformation process",
+        "abbreviation": "FL"
+      }
+    },
+    "FREQUENT_OPERATOR": {
+      "token_count": 2890,
+      "type_count": 33,
+      "kernel_rate": 0.4599,
+      "hazard_rate": 0.0,
+      "mean_position": 0.5007,
+      "classes": [
+        9,
+        13,
+        14,
+        23
+      ],
+      "top_middles": [
+        [
+          "aiin",
+          627
+        ],
+        [
+          "or",
+          273
+        ],
+        [
+          "edy",
+          264
+        ],
+        [
+          "ain",
+          227
+        ],
+        [
+          "ar",
+          217
+        ],
+        [
+          "eey",
+          215
+        ],
+        [
+          "al",
+          198
+        ],
+        [
+          "e",
+          191
+        ],
+        [
+          "y",
+          175
+        ],
+        [
+          "dy",
+          109
+        ]
+      ],
+      "semantic_annotations": {
+        "function": "escape_handler",
+        "trigger": "hazard_state",
+        "interpretation": "Provides escape route from unstable states",
+        "abbreviation": "FQ"
+      }
+    },
+    "UNKNOWN": {
+      "token_count": 7042,
+      "type_count": 4421,
+      "kernel_rate": 0.7867,
+      "hazard_rate": 0.0,
+      "mean_position": 0.4385,
+      "classes": [
+        -1
+      ],
+      "top_middles": [
+        [
+          "e",
+          221
+        ],
+        [
+          "ed",
+          209
+        ],
+        [
+          "d",
+          207
+        ],
+        [
+          "l",
+          169
+        ],
+        [
+          "k",
+          157
+        ],
+        [
+          "eo",
+          128
+        ],
+        [
+          "o",
+          126
+        ],
+        [
+          "ch",
+          124
+        ],
+        [
+          "r",
+          112
+        ],
+        [
+          "dy",
+          103
+        ]
+      ],
+      "semantic_annotations": {
+        "function": "unknown",
+        "interpretation": "Unclassified tokens (not in 49-class system)",
+        "abbreviation": "UN"
+      }
+    }
+  }
+}

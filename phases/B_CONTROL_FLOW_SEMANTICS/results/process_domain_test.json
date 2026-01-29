@@ -1,0 +1,56 @@
+{
+  "irreversibility": {
+    "forward_transitions": 1102,
+    "backward_transitions": 758,
+    "same_stage": 1758,
+    "forward_bias": 0.5925
+  },
+  "monotonicity": {
+    "monotonic_lines": 929,
+    "non_monotonic_lines": 628,
+    "monotonic_rate": 0.5967
+  },
+  "branching": {
+    "TERMINAL": {
+      "MEDIAL": 354,
+      "TERMINAL": 226,
+      "LATE": 52,
+      "EARLY": 23,
+      "INITIAL": 11
+    },
+    "LATE": {
+      "MEDIAL": 166,
+      "TERMINAL": 70,
+      "LATE": 32,
+      "INITIAL": 8,
+      "EARLY": 2
+    },
+    "INITIAL": {
+      "MEDIAL": 66,
+      "TERMINAL": 19,
+      "LATE": 10,
+      "INITIAL": 5,
+      "EARLY": 2
+    },
+    "MEDIAL": {
+      "MEDIAL": 1488,
+      "TERMINAL": 604,
+      "LATE": 145,
+      "EARLY": 102,
+      "INITIAL": 39
+    },
+    "EARLY": {
+      "MEDIAL": 127,
+      "TERMINAL": 50,
+      "LATE": 9,
+      "EARLY": 7,
+      "INITIAL": 1
+    }
+  },
+  "loops": {
+    "terminal_to_initial": 11,
+    "loop_rate": 1.6517,
+    "backward_rate": 40.7527
+  },
+  "domain_verdict": "batch_processing_or_chemical_transformation"
+}

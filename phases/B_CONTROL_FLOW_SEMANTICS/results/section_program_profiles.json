@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "HERBAL_B": {
+      "folio_count": 23,
+      "token_count": 2602,
+      "kernel_rates": {
+        "k": 33.47,
+        "h": 38.62,
+        "e": 36.51
+      },
+      "role_rates": {
+        "AX": 19.45,
+        "UN": 32.21,
+        "EN": 22.79,
+        "FQ": 16.3,
+        "FL": 6.11,
+        "CC": 3.15
+      },
+      "fl_rate": 6.11,
+      "fq_rate": 16.3
+    },
+    "BIO": {
+      "folio_count": 20,
+      "token_count": 6850,
+      "kernel_rates": {
+        "k": 32.74,
+        "h": 38.35,
+        "e": 47.65
+      },
+      "role_rates": {
+        "AX": 18.93,
+        "UN": 22.28,
+        "FQ": 10.2,
+        "EN": 40.12,
+        "FL": 3.85,
+        "CC": 4.61
+      },
+      "fl_rate": 3.85,
+      "fq_rate": 10.2
+    },
+    "RECIPE_B": {
+      "folio_count": 23,
+      "token_count": 10671,
+      "kernel_rates": {
+        "k": 32.04,
+        "h": 40.76,
+        "e": 46.84
+      },
+      "role_rates": {
+        "UN": 34.15,
+        "EN": 29.63,
+        "FQ": 12.68,
+        "FL": 4.58,
+        "AX": 16.77,
+        "CC": 2.18
+      },
+      "fl_rate": 4.58,
+      "fq_rate": 12.68
+    },
+    "OTHER": {
+      "folio_count": 16,
+      "token_count": 2973,
+      "kernel_rates": {
+        "k": 25.87,
+        "h": 39.56,
+        "e": 33.84
+      },
+      "role_rates": {
+        "UN": 34.78,
+        "AX": 18.4,
+        "EN": 23.81,
+        "FQ": 13.93,
+        "CC": 3.5,
+        "FL": 5.58
+      },
+      "fl_rate": 5.58,
+      "fq_rate": 13.93
+    }
+  }
+}
