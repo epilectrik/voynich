@@ -1,0 +1,60 @@
+{
+  "folios_analyzed": 82,
+  "mean_link_density": 0.04159908213704818,
+  "section_link_density": {
+    "B": 0.05442814612505602,
+    "C": 0.021619655993249103,
+    "H": 0.016509017592616613,
+    "S": 0.07014981328644465,
+    "T": 0.03636463210931296
+  },
+  "material_fire_degrees": {
+    "herb": 1.9166666666666667,
+    "plant_parasite": 2.0,
+    "root": 2.8,
+    "ANIMAL": 1.6666666666666667,
+    "flower": 1.53125,
+    "flower_part": 1.0,
+    "leaf": 1.7777777777777777,
+    "sap": 2.0,
+    "legume": 1.0,
+    "pod": 2.0,
+    "fruit": 1.875,
+    "seed": 2.0,
+    "vegetable": 2.0,
+    "bark": 1.0,
+    "fern": 2.0,
+    "animal product": 2.25,
+    "succulent": 3.0,
+    "tree/shrub": 2.0,
+    "animal": 1.6,
+    "berry": 2.0,
+    "bulb": 2.0,
+    "fungus": 1.0,
+    "plant sap": 2.0,
+    "flower_root_compound": 2.0,
+    "root_vegetable": 2.0,
+    "fungal_substance": 1.0,
+    "aquatic_flower": 1.0,
+    "herb_fruit": 3.0,
+    "exotic_import": 2.0,
+    "shrub": 2.0,
+    "parasitic plant": 2.0,
+    "plant byproduct": 2.0,
+    "tree": 1.5,
+    "vine": 3.0
+  },
+  "fire_degree_distribution": {
+    "degree_1": 62,
+    "degree_2": 147,
+    "degree_3": 36,
+    "degree_4": 0
+  },
+  "regime_link_correlation": null,
+  "k_link_correlation": {
+    "r": -0.007370593080597655,
+    "p": 0.9476009125596929
+  },
+  "hypothesis": "Fire degree inversely correlates with LINK density",
+  "brunschwig_interpretation": "Higher fire = less monitoring needed (faster process)"
+}

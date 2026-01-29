@@ -22,10 +22,14 @@ Method:
 """
 
 import json
-import pandas as pd
+import sys
 from pathlib import Path
 from collections import Counter, defaultdict
 import numpy as np
+
+# Add scripts to path for voynich library
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / 'scripts'))
+from voynich import Transcript
 
 # Paths
 results_dir = Path(__file__).parent.parent / "results"
@@ -36,22 +40,30 @@ print("RECOVERY ARCHITECTURE ANALYSIS")
 print("="*70)
 
 # Load transcript
-df = pd.read_csv('data/voynich_transcript.csv')
-df = df[df['transcriber'] == 'H']
-df_b = df[df['language'] == 'B']
-df_b = df_b[~df_b['word'].isna()]
-df_b = df_b[~df_b['word'].str.contains(r'\*', na=False)]
+tx = Transcript()
+
+# Build line-grouped tokens for B
+line_tokens = defaultdict(list)
+for token in tx.currier_b():
+    if '*' in token.word:
+        continue
+    key = (token.folio, token.line)
+    line_tokens[key].append(token)
 
 # Load class map for role identification
 try:
     with open('phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json') as f:
         class_map = json.load(f)
 
-    # Build token -> class mapping
+    # Get token -> class mapping directly from the file
     token_to_class = {}
-    for class_id, tokens in class_map.items():
-        for token in tokens:
+    if 'token_to_class' in class_map:
+        for token, class_id in class_map['token_to_class'].items():
             token_to_class[token] = int(class_id)
+    elif 'class_to_tokens' in class_map:
+        for class_id, tokens in class_map['class_to_tokens'].items():
+            for token in tokens:
+                token_to_class[token] = int(class_id)
 
     print(f"Loaded class map with {len(token_to_class)} tokens")
 except FileNotFoundError:
@@ -103,8 +115,8 @@ print("="*70)
 chain_lengths = []
 chain_contexts = []
 
-for (folio, line_num), group in df_b.groupby(['folio', 'line']):
-    words = group['word'].tolist()
+for (folio, line_num), tokens in line_tokens.items():
+    words = [t.word for t in tokens]
     roles = [get_role(w) for w in words]
 
     # Find FQ chains
@@ -197,7 +209,8 @@ for context in chain_contexts:
     line = context['line']
 
     # Get full line
-    line_words = df_b[(df_b['folio'] == folio) & (df_b['line'] == line)]['word'].tolist()
+    line_key = (folio, line)
+    line_words = [t.word for t in line_tokens.get(line_key, [])]
 
     # Check if 'e' appears after FQ chain
     chain_end_idx = len(context['chain_words'])

@@ -1,0 +1,57 @@
+{
+  "brunschwig_parameters": {
+    "fire_degree_distribution": {
+      "3": 36,
+      "2": 147,
+      "1": 62
+    },
+    "material_class_count": 34,
+    "method_count": 29
+  },
+  "voynich_parameters": {
+    "prefix_count": 35,
+    "middle_count": 1339,
+    "suffix_count": 35,
+    "kernel_pattern_count": 113,
+    "top_prefixes": {
+      "qo": 4069,
+      "ch": 3492,
+      "sh": 2329,
+      "ok": 1476,
+      "ot": 1448,
+      "da": 1083,
+      "ol": 875,
+      "lk": 438,
+      "sa": 329,
+      "lch": 315
+    },
+    "top_kernel_patterns": {
+      "he": 3850,
+      "k": 2724,
+      "h": 1963,
+      "kee": 1435,
+      "ke": 977,
+      "hee": 832,
+      "e": 694,
+      "ee": 656,
+      "kh": 356,
+      "khe": 335
+    }
+  },
+  "correspondences": {
+    "parametric_structure": true,
+    "fire_regime": true,
+    "behavior_selector_size": false,
+    "identity_set_open": true,
+    "separation_of_concerns": true
+  },
+  "match_count": 4,
+  "total_tests": 5,
+  "verdict": "STRONG CORRESPONDENCE",
+  "interpretation": {
+    "parametric_structure": "Both encode behavior through parameters, not inline instructions",
+    "fire_regime": "Fire degree 1-4 maps to REGIME 1-4",
+    "identity_vs_behavior": "Both separate what (material/MIDDLE) from how (fire/PREFIX/kernel)",
+    "closed_vs_open": "Small closed sets for behavior selection, open sets for identity"
+  }
+}

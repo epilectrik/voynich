@@ -1,0 +1,81 @@
+{
+  "brunschwig_quality_tests": {
+    "taste": {
+      "test": "No taste = pure distillate",
+      "failure": "Contamination from source material",
+      "importance": "high",
+      "frequency": "every batch"
+    },
+    "viscosity": {
+      "test": "Thumbnail test for consistency",
+      "failure": "Wrong concentration",
+      "importance": "high",
+      "frequency": "every batch"
+    },
+    "clarity": {
+      "test": "Clear, not cloudy",
+      "failure": "Emulsion, improper separation",
+      "importance": "medium",
+      "frequency": "every batch"
+    },
+    "color_smell": {
+      "test": "Appropriate color and odor",
+      "failure": "Degradation or burning",
+      "importance": "high",
+      "frequency": "every batch"
+    },
+    "completeness": {
+      "test": "Proper separation achieved",
+      "failure": "Incomplete distillation",
+      "importance": "medium",
+      "frequency": "some batches"
+    }
+  },
+  "voynich_hazard_classes": {
+    "PHASE_ORDERING": {
+      "frequency": 0.41,
+      "description": "Wrong sequence of operations",
+      "pairs": 7
+    },
+    "CONTAINMENT_TIMING": {
+      "frequency": 0.34,
+      "description": "Container state mismatch",
+      "pairs": 6
+    },
+    "COMPOSITION_JUMP": {
+      "frequency": 0.17,
+      "description": "Material composition mismatch",
+      "pairs": 3
+    },
+    "RATE_MISMATCH": {
+      "frequency": 0.04,
+      "description": "Process speed mismatch",
+      "pairs": 1
+    },
+    "ENERGY_OVERSHOOT": {
+      "frequency": 0.04,
+      "description": "Excessive energy application",
+      "pairs": 0
+    }
+  },
+  "mapping_hypothesis": {
+    "taste": "COMPOSITION_JUMP",
+    "viscosity": "RATE_MISMATCH",
+    "clarity": "CONTAINMENT_TIMING",
+    "color_smell": "ENERGY_OVERSHOOT",
+    "completeness": "PHASE_ORDERING"
+  },
+  "structural_tests": {
+    "same_category_count": true,
+    "categorical_prohibition_exists": true,
+    "distribution_has_extremes": true,
+    "temperature_most_common": true
+  },
+  "match_count": 4,
+  "verdict": "STRONG MATCH",
+  "interpretation": {
+    "five_categories": "5-to-5 correspondence suggests similar classification scheme",
+    "categorical_prohibition": "ENERGY_OVERSHOOT = burning (no recovery)",
+    "phase_ordering": "Temperature sequencing most critical in both systems"
+  }
+}

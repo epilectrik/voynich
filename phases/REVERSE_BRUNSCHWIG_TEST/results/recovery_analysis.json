@@ -1,0 +1,28 @@
+{
+  "total_fq_chains": 1022,
+  "mean_chain_length": 1.0303326810176126,
+  "max_chain_length": 3,
+  "chain_length_distribution": {
+    "1": 992,
+    "2": 29,
+    "3": 1
+  },
+  "pct_short_chains": 99.90215264187867,
+  "next_role_distribution": {
+    "EN": 664,
+    "UN": 200,
+    "END": 93,
+    "CC": 52,
+    "AX": 13
+  },
+  "fq_to_en_recovery_rate": 0.649706457925636,
+  "e_in_recovery_rate": 0.9765166340508806,
+  "brunschwig_retry_limit": 2,
+  "voynich_modal_chain": 1,
+  "match_assessment": "MATCH",
+  "interpretation": {
+    "short_chains": "FQ chains are mostly single-token escape handlers",
+    "fq_to_en": "Recovery typically returns to processing (EN)",
+    "e_recovery": "e-kernel (equilibration/cooling) role in recovery"
+  }
+}
