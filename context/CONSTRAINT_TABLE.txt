@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 912 constraints | 2026-01-29
+CONSTRAINT_REFERENCE v2.6 | 915 constraints | 2026-01-29
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -916,3 +916,6 @@ C866	Gallows morphological patterns (k uses e, f often bare)	2	B	-> C866_gallows
 C867	P-T transition dynamics (p stable 54%, t returns to p 50%)	2	B	-> C867_p_t_transition_dynamics.md
 C868	Gallows-QO/CHSH independence (0.3% variance explained)	2	B	-> C868_gallows_qochsh_independence.md
 C869	Gallows functional model (f/k openers, p/t modes)	3	B	-> C869_gallows_functional_model.md
+C870	Line-1 HT folio specificity (86% singletons, 1229 Line-1-only)	2	HT	-> C870_line1_ht_folio_specificity.md
+C871	HT role cooccurrence pattern (enriched FL, depleted CC/FQ)	2	HT	-> C871_ht_role_cooccurrence_pattern.md
+C872	HT discrimination vocabulary interpretation	3	HT	-> C872_ht_discrimination_vocabulary.md
