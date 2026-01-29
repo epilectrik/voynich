@@ -1,0 +1,68 @@
+{
+  "total_b_tokens": 23096,
+  "lines_with_kernels": 2416,
+  "ordering_distribution": {
+    "h->e->k": 540,
+    "h->k->e": 419,
+    "k->h->e": 375,
+    "k->e->h": 301,
+    "e->h->k": 293,
+    "e->k->h": 225,
+    "h->e": 120,
+    "e->h": 31,
+    "h->k": 29,
+    "k->e": 28,
+    "k->h": 18,
+    "e->k": 14
+  },
+  "lines_with_all_three": 2153,
+  "ehk_orderings": {
+    "k->e->h": 301,
+    "h->k->e": 419,
+    "k->h->e": 375,
+    "e->h->k": 293,
+    "h->e->k": 540,
+    "e->k->h": 225
+  },
+  "e_before_k_count": 1030,
+  "k_before_e_count": 1165,
+  "e_before_k_rate": 0.46924829157175396,
+  "section_patterns": {
+    "H": {
+      "h": 367,
+      "e": 349,
+      "k": 357
+    },
+    "T": {
+      "h": 67,
+      "e": 66,
+      "k": 61
+    },
+    "B": {
+      "k": 725,
+      "h": 741,
+      "e": 759
+    },
+    "C": {
+      "h": 119,
+      "e": 117,
+      "k": 105
+    },
+    "S": {
+      "h": 1066,
+      "e": 1062,
+      "k": 1001
+    }
+  },
+  "combo_counts": {
+    "e+h+k": 2153,
+    "e+h": 151,
+    "h+k": 47,
+    "e+k": 42,
+    "h": 9,
+    "k": 7,
+    "e": 7
+  },
+  "c873_prediction": "e->h->k",
+  "brunschwig_interpretation": "verify stability (e) -> align apparatus (h) -> apply heat (k)"
+}

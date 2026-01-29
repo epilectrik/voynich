@@ -15,26 +15,36 @@ This script inventories actual kernel sequences in B lines to see if this orderi
 """
 
 import json
-import pandas as pd
+import sys
 from pathlib import Path
 from collections import Counter, defaultdict
 import numpy as np
+
+# Add scripts to path for voynich library
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / 'scripts'))
+from voynich import Transcript
 
 # Paths
 results_dir = Path(__file__).parent.parent / "results"
 results_dir.mkdir(exist_ok=True)
 
 # Load transcript
-df = pd.read_csv('data/voynich_transcript.csv')
-df = df[df['transcriber'] == 'H']
-df = df[df['language'] == 'B']
-df = df[~df['word'].isna()]
-df = df[~df['word'].str.contains(r'\*', na=False)]
+tx = Transcript()
+
+# Build line-grouped tokens for B
+line_tokens = defaultdict(list)
+for token in tx.currier_b():
+    if '*' in token.word:
+        continue
+    key = (token.folio, token.line)
+    line_tokens[key].append(token)
+
+total_b = sum(len(tokens) for tokens in line_tokens.values())
 
 print("="*70)
 print("KERNEL SEQUENCE INVENTORY")
 print("="*70)
-print(f"Total B tokens: {len(df)}")
+print(f"Total B tokens: {total_b}")
 
 # Kernel characters
 KERNELS = {'k', 'h', 'e'}
@@ -52,8 +62,8 @@ def get_kernel_signature(kernels):
 # Analyze by line
 line_analysis = []
 
-for (folio, line_num), group in df.groupby(['folio', 'line']):
-    words = group['word'].tolist()
+for (folio, line_num), tokens in line_tokens.items():
+    words = [t.word for t in tokens]
 
     # Extract kernels from each word and track positions
     line_kernels = []
@@ -81,6 +91,9 @@ for (folio, line_num), group in df.groupby(['folio', 'line']):
     for kernel, positions in kernel_positions.items():
         mean_positions[kernel] = np.mean(positions)
 
+    # Get section from first token
+    section = tokens[0].section if hasattr(tokens[0], 'section') else 'unknown'
+
     line_analysis.append({
         'folio': folio,
         'line': line_num,
@@ -92,7 +105,7 @@ for (folio, line_num), group in df.groupby(['folio', 'line']):
         'has_h': 'h' in kernel_seq,
         'has_k': 'k' in kernel_seq,
         'mean_positions': mean_positions,
-        'section': group['section'].iloc[0] if 'section' in group.columns else 'unknown'
+        'section': section
     })
 
 print(f"Lines with kernels: {len(line_analysis)}")
@@ -208,7 +221,7 @@ if total_ek > 0:
 
 # Save results
 results = {
-    'total_b_tokens': len(df),
+    'total_b_tokens': total_b,
     'lines_with_kernels': len(line_analysis),
     'ordering_distribution': dict(ordering_counts.most_common()),
     'lines_with_all_three': len(all_three),

@@ -15,11 +15,15 @@ Method:
 """
 
 import json
-import pandas as pd
+import sys
 from pathlib import Path
 from collections import defaultdict, Counter
 import numpy as np
 from scipy import stats
+
+# Add scripts to path for voynich library
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / 'scripts'))
+from voynich import Transcript, Morphology
 
 # Paths
 results_dir = Path(__file__).parent.parent / "results"
@@ -34,20 +38,21 @@ with open('data/brunschwig_curated_v3.json', encoding='utf-8') as f:
     brunschwig = json.load(f)
 
 # Load transcript
-df = pd.read_csv('data/voynich_transcript.csv')
-df = df[df['transcriber'] == 'H']
-df_b = df[df['language'] == 'B']
-df_b = df_b[~df_b['word'].isna()]
+tx = Transcript()
+
+# Build folio-grouped tokens for B
+folio_tokens = defaultdict(list)
+for token in tx.currier_b():
+    if '*' in token.word:
+        continue
+    folio_tokens[token.folio].append(token)
 
 # Load morphology for MIDDLE extraction
-import sys
-sys.path.insert(0, 'scripts')
 try:
-    from voynich import Morphology
     morph = Morphology()
     has_morph = True
     print("Loaded Morphology class")
-except ImportError:
+except:
     has_morph = False
     print("Morphology not available, using simple MIDDLE extraction")
 
@@ -107,11 +112,12 @@ print("="*70)
 section_middles = defaultdict(Counter)
 section_tokens = defaultdict(int)
 
-for folio, group in df_b.groupby('folio'):
-    section = group['section'].iloc[0] if 'section' in group.columns else 'unknown'
+for folio, tokens in folio_tokens.items():
+    section = tokens[0].section if hasattr(tokens[0], 'section') else 'unknown'
 
-    for word in group['word']:
-        if pd.isna(word):
+    for token in tokens:
+        word = token.word
+        if not word or not word.strip():
             continue
         middle = extract_middle(word)
         if middle:

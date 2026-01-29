@@ -1,0 +1,32 @@
+{
+  "date": "2026-01-29T17:12:42.881800",
+  "tests_run": 6,
+  "verdicts": {
+    "kernel_sequence": "WEAK",
+    "fire_link": "WEAK",
+    "section_material": "SUPPORT",
+    "recovery": "STRONG",
+    "hazard_quality": "STRONG",
+    "parametric": "STRONG"
+  },
+  "counts": {
+    "strong": 3,
+    "support": 4,
+    "weak": 2,
+    "contradict": 0
+  },
+  "overall_verdict": "STRONG - Multiple strong matches to Brunschwig protocols",
+  "key_findings": {
+    "recovery_architecture": "STRONG MATCH - 99.9% chains <=2, 65% FQ->EN, 97.7% e-recovery",
+    "hazard_quality": "STRUCTURAL MATCH - 5 categories, categorical prohibition",
+    "parametric_structure": "CORRESPONDENCE - identity/behavior separation",
+    "kernel_sequence": "WEAK - e->h->k not dominant (13.6%)",
+    "fire_link": "NOT SIGNIFICANT - no correlation found"
+  },
+  "interpretation": {
+    "overall": "Moderate correspondence to Brunschwig protocols",
+    "strongest": "Recovery architecture (error handling)",
+    "weakest": "Linear sequence predictions",
+    "implication": "Voynich may encode parallel operations vs Brunschwig linear procedures"
+  }
+}

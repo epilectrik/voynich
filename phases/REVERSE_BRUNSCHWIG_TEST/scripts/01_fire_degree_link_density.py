@@ -15,11 +15,15 @@ Method:
 """
 
 import json
-import pandas as pd
+import sys
 from pathlib import Path
 from collections import defaultdict
 import numpy as np
 from scipy import stats
+
+# Add scripts to path for voynich library
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / 'scripts'))
+from voynich import Transcript
 
 # Paths
 results_dir = Path(__file__).parent.parent / "results"
@@ -34,10 +38,14 @@ with open('data/brunschwig_curated_v3.json', encoding='utf-8') as f:
     brunschwig = json.load(f)
 
 # Load transcript
-df = pd.read_csv('data/voynich_transcript.csv')
-df = df[df['transcriber'] == 'H']
-df_b = df[df['language'] == 'B']
-df_b = df_b[~df_b['word'].isna()]
+tx = Transcript()
+
+# Build folio-grouped tokens for B
+folio_tokens = defaultdict(list)
+for token in tx.currier_b():
+    if '*' in token.word:
+        continue
+    folio_tokens[token.folio].append(token)
 
 # Load class map for LINK identification
 try:
@@ -66,8 +74,8 @@ for material, fires in sorted(fire_by_material.items()):
 # Compute LINK density per folio
 folio_stats = []
 
-for folio, group in df_b.groupby('folio'):
-    words = group['word'].tolist()
+for folio, tokens in folio_tokens.items():
+    words = [t.word for t in tokens]
     n_tokens = len(words)
 
     # Count LINK tokens
@@ -79,8 +87,8 @@ for folio, group in df_b.groupby('folio'):
 
     link_density = n_link / n_tokens if n_tokens > 0 else 0
 
-    # Get section
-    section = group['section'].iloc[0] if 'section' in group.columns else 'unknown'
+    # Get section from first token
+    section = tokens[0].section if hasattr(tokens[0], 'section') else 'unknown'
 
     folio_stats.append({
         'folio': folio,
@@ -90,6 +98,8 @@ for folio, group in df_b.groupby('folio'):
         'section': section
     })
 
+# Convert to simple dict-based structure for analysis
+import pandas as pd
 folio_df = pd.DataFrame(folio_stats)
 print(f"\nFolios analyzed: {len(folio_df)}")
 print(f"Mean LINK density: {folio_df['link_density'].mean():.4f}")
@@ -206,8 +216,8 @@ print("="*70)
 # k kernel represents energy application (fire)
 # If more k -> more fire -> less monitoring needed
 
-for folio, group in df_b.groupby('folio'):
-    words = group['word'].tolist()
+for folio, tokens in folio_tokens.items():
+    words = [t.word for t in tokens]
     n_k = sum(1 for w in words for c in w if c == 'k')
     n_total = sum(len(w) for w in words)
     k_density = n_k / n_total if n_total > 0 else 0

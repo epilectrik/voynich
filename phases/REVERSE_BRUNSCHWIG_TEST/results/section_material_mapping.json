@@ -1,0 +1,596 @@
+{
+  "material_categories": {
+    "HERB": 133,
+    "OTHER": 42,
+    "ROOT": 11,
+    "ANIMAL": 16,
+    "FLOWER": 35,
+    "FRUIT": 8
+  },
+  "section_profiles": {
+    "H": {
+      "unique_middles": 420,
+      "total_tokens": 3433,
+      "top_middles": [
+        "edy",
+        "dy",
+        "k",
+        "aiin",
+        "ar",
+        "r",
+        "iin",
+        "y",
+        "or",
+        "o",
+        "d",
+        "ol",
+        "l",
+        "e",
+        "eo",
+        "ek",
+        "al",
+        "ey",
+        "s",
+        "t"
+      ]
+    },
+    "T": {
+      "unique_middles": 174,
+      "total_tokens": 662,
+      "top_middles": [
+        "edy",
+        "r",
+        "k",
+        "l",
+        "ol",
+        "d",
+        "aiin",
+        "e",
+        "dy",
+        "o",
+        "iin",
+        "eo",
+        "ch",
+        "t",
+        "ey",
+        "ar",
+        "y",
+        "or",
+        "eol",
+        "al"
+      ]
+    },
+    "B": {
+      "unique_middles": 411,
+      "total_tokens": 6850,
+      "top_middles": [
+        "k",
+        "edy",
+        "l",
+        "ol",
+        "ey",
+        "r",
+        "e",
+        "t",
+        "ke",
+        "dy",
+        "y",
+        "iin",
+        "eey",
+        "ain",
+        "or",
+        "in",
+        "al",
+        "ar",
+        "aiin",
+        "eol"
+      ]
+    },
+    "C": {
+      "unique_middles": 241,
+      "total_tokens": 1480,
+      "top_middles": [
+        "k",
+        "aiin",
+        "ar",
+        "edy",
+        "or",
+        "r",
+        "ol",
+        "iin",
+        "dy",
+        "ey",
+        "o",
+        "t",
+        "d",
+        "y",
+        "al",
+        "eey",
+        "l",
+        "eo",
+        "e",
+        "ch"
+      ]
+    },
+    "S": {
+      "unique_middles": 884,
+      "total_tokens": 10671,
+      "top_middles": [
+        "k",
+        "edy",
+        "e",
+        "aiin",
+        "eey",
+        "ar",
+        "ey",
+        "al",
+        "r",
+        "l",
+        "ol",
+        "t",
+        "ain",
+        "iin",
+        "ed",
+        "eo",
+        "ke",
+        "o",
+        "ch",
+        "y"
+      ]
+    }
+  },
+  "section_enrichment": {
+    "H": [
+      {
+        "middle": "y",
+        "count": 110,
+        "enrichment": 1.6158095647561492
+      },
+      {
+        "middle": "dy",
+        "count": 216,
+        "enrichment": 2.446415803829145
+      },
+      {
+        "middle": "o",
+        "count": 98,
+        "enrichment": 1.7534815402445598
+      },
+      {
+        "middle": "s",
+        "count": 51,
+        "enrichment": 2.416266313288997
+      },
+      {
+        "middle": "ek",
+        "count": 67,
+        "enrichment": 2.715374167804337
+      },
+      {
+        "middle": "h",
+        "count": 16,
+        "enrichment": 2.2425478201767164
+      },
+      {
+        "middle": "ck",
+        "count": 47,
+        "enrichment": 1.613261442065903
+      },
+      {
+        "middle": "da",
+        "count": 6,
+        "enrichment": 3.105066212552376
+      },
+      {
+        "middle": "or",
+        "count": 108,
+        "enrichment": 1.6664804902230643
+      },
+      {
+        "middle": "d",
+        "count": 92,
+        "enrichment": 1.983792302464018
+      },
+      {
+        "middle": "ko",
+        "count": 5,
+        "enrichment": 2.1023885814156715
+      },
+      {
+        "middle": "ep",
+        "count": 5,
+        "enrichment": 2.1023885814156715
+      },
+      {
+        "middle": "keo",
+        "count": 8,
+        "enrichment": 2.070044141701584
+      },
+      {
+        "middle": "ii",
+        "count": 7,
+        "enrichment": 2.04754366190048
+      },
+      {
+        "middle": "a",
+        "count": 19,
+        "enrichment": 2.028971837302743
+      },
+      {
+        "middle": "yk",
+        "count": 5,
+        "enrichment": 3.0580197547864314
+      },
+      {
+        "middle": "am",
+        "count": 40,
+        "enrichment": 1.5645682466349182
+      },
+      {
+        "middle": "m",
+        "count": 31,
+        "enrichment": 2.7441703589004556
+      },
+      {
+        "middle": "yt",
+        "count": 7,
+        "enrichment": 3.9244586853092533
+      },
+      {
+        "middle": "aii",
+        "count": 9,
+        "enrichment": 1.8921497232741042
+      }
+    ],
+    "T": [
+      {
+        "middle": "o",
+        "count": 17,
+        "enrichment": 1.5773928135244586
+      },
+      {
+        "middle": "s",
+        "count": 7,
+        "enrichment": 1.7198417088634526
+      },
+      {
+        "middle": "sh",
+        "count": 7,
+        "enrichment": 2.2405277308129383
+      },
+      {
+        "middle": "d",
+        "count": 19,
+        "enrichment": 2.1246029901619026
+      },
+      {
+        "middle": "f",
+        "count": 5,
+        "enrichment": 10.261240447840768
+      },
+      {
+        "middle": "c",
+        "count": 6,
+        "enrichment": 4.025563560306763
+      },
+      {
+        "middle": "p",
+        "count": 5,
+        "enrichment": 3.711512502410491
+      },
+      {
+        "middle": "eo",
+        "count": 17,
+        "enrichment": 1.7444108761329307
+      },
+      {
+        "middle": "eod",
+        "count": 5,
+        "enrichment": 2.180513595166163
+      },
+      {
+        "middle": "cph",
+        "count": 7,
+        "enrichment": 6.7838200738502845
+      },
+      {
+        "middle": "i",
+        "count": 9,
+        "enrichment": 2.291926698568814
+      },
+      {
+        "middle": "ch",
+        "count": 17,
+        "enrichment": 1.6897427290176534
+      }
+    ],
+    "B": [
+      {
+        "middle": "edy",
+        "count": 795,
+        "enrichment": 1.5204110445450065
+      },
+      {
+        "middle": "k",
+        "count": 952,
+        "enrichment": 1.5424499030154648
+      },
+      {
+        "middle": "ly",
+        "count": 28,
+        "enrichment": 1.9266736183524502
+      },
+      {
+        "middle": "lch",
+        "count": 48,
+        "enrichment": 2.1870349181298088
+      },
+      {
+        "middle": "q",
+        "count": 5,
+        "enrichment": 1.6858394160583943
+      },
+      {
+        "middle": "l",
+        "count": 444,
+        "enrichment": 1.7550121939740375
+      },
+      {
+        "middle": "ke",
+        "count": 192,
+        "enrichment": 1.5376777571649012
+      },
+      {
+        "middle": "ksh",
+        "count": 13,
+        "enrichment": 1.685839416058394
+      },
+      {
+        "middle": "eck",
+        "count": 49,
+        "enrichment": 1.8774120769741207
+      },
+      {
+        "middle": "eda",
+        "count": 5,
+        "enrichment": 1.8731549067315492
+      },
+      {
+        "middle": "ect",
+        "count": 32,
+        "enrichment": 2.29561111973909
+      },
+      {
+        "middle": "lsh",
+        "count": 19,
+        "enrichment": 2.6692457420924574
+      },
+      {
+        "middle": "lk",
+        "count": 32,
+        "enrichment": 1.8602365970299521
+      },
+      {
+        "middle": "eet",
+        "count": 10,
+        "enrichment": 1.532581287325813
+      },
+      {
+        "middle": "te",
+        "count": 43,
+        "enrichment": 1.6664619515059989
+      },
+      {
+        "middle": "cs",
+        "count": 8,
+        "enrichment": 2.2477858880778587
+      },
+      {
+        "middle": "qo",
+        "count": 10,
+        "enrichment": 1.8731549067315492
+      },
+      {
+        "middle": "eckh",
+        "count": 15,
+        "enrichment": 1.8062565172054221
+      },
+      {
+        "middle": "ta",
+        "count": 5,
+        "enrichment": 1.8731549067315492
+      },
+      {
+        "middle": "lke",
+        "count": 14,
+        "enrichment": 2.360175182481752
+      }
+    ],
+    "C": [
+      {
+        "middle": "ar",
+        "count": 71,
+        "enrichment": 1.6537071399757968
+      },
+      {
+        "middle": "od",
+        "count": 23,
+        "enrichment": 2.074707077019216
+      },
+      {
+        "middle": "op",
+        "count": 7,
+        "enrichment": 3.0343843843843845
+      },
+      {
+        "middle": "aiin",
+        "count": 94,
+        "enrichment": 1.7652323803948353
+      },
+      {
+        "middle": "o",
+        "count": 43,
+        "enrichment": 1.7846607245543415
+      },
+      {
+        "middle": "ksh",
+        "count": 5,
+        "enrichment": 3.001039501039501
+      },
+      {
+        "middle": "d",
+        "count": 36,
+        "enrichment": 1.8006237006237007
+      },
+      {
+        "middle": "or",
+        "count": 63,
+        "enrichment": 2.254909496652616
+      },
+      {
+        "middle": "opch",
+        "count": 11,
+        "enrichment": 1.604294013639808
+      },
+      {
+        "middle": "ot",
+        "count": 6,
+        "enrichment": 2.080720720720721
+      },
+      {
+        "middle": "am",
+        "count": 21,
+        "enrichment": 1.905311125078567
+      },
+      {
+        "middle": "ai",
+        "count": 19,
+        "enrichment": 1.7040385212799005
+      },
+      {
+        "middle": "pch",
+        "count": 8,
+        "enrichment": 1.5802942182689017
+      },
+      {
+        "middle": "m",
+        "count": 11,
+        "enrichment": 2.258677098150782
+      },
+      {
+        "middle": "p",
+        "count": 8,
+        "enrichment": 2.6562392179413457
+      }
+    ],
+    "S": [
+      {
+        "middle": "eot",
+        "count": 11,
+        "enrichment": 1.8313906129481052
+      },
+      {
+        "middle": "an",
+        "count": 13,
+        "enrichment": 1.563156634283989
+      },
+      {
+        "middle": "eeo",
+        "count": 104,
+        "enrichment": 1.7314965795145723
+      },
+      {
+        "middle": "ec",
+        "count": 10,
+        "enrichment": 1.5459790888522966
+      },
+      {
+        "middle": "keec",
+        "count": 7,
+        "enrichment": 1.8938243838440634
+      },
+      {
+        "middle": "opc",
+        "count": 8,
+        "enrichment": 1.9238850883495249
+      },
+      {
+        "middle": "kec",
+        "count": 9,
+        "enrichment": 1.6232780432949117
+      },
+      {
+        "middle": "eeol",
+        "count": 34,
+        "enrichment": 1.5997522745515071
+      },
+      {
+        "middle": "tai",
+        "count": 6,
+        "enrichment": 1.6232780432949114
+      },
+      {
+        "middle": "eod",
+        "count": 59,
+        "enrichment": 1.5962234092399963
+      },
+      {
+        "middle": "kee",
+        "count": 24,
+        "enrichment": 1.5277910995716815
+      },
+      {
+        "middle": "ks",
+        "count": 5,
+        "enrichment": 1.5459790888522966
+      },
+      {
+        "middle": "alk",
+        "count": 7,
+        "enrichment": 1.5150595070752506
+      },
+      {
+        "middle": "ech",
+        "count": 28,
+        "enrichment": 1.782422949500295
+      },
+      {
+        "middle": "eed",
+        "count": 65,
+        "enrichment": 1.674810679589988
+      },
+      {
+        "middle": "teeo",
+        "count": 6,
+        "enrichment": 1.6232780432949114
+      },
+      {
+        "middle": "kchd",
+        "count": 5,
+        "enrichment": 1.8036422703276795
+      },
+      {
+        "middle": "kai",
+        "count": 17,
+        "enrichment": 1.5330959297785276
+      },
+      {
+        "middle": "keeo",
+        "count": 31,
+        "enrichment": 1.7656708541102544
+      },
+      {
+        "middle": "opai",
+        "count": 6,
+        "enrichment": 2.1643707243932155
+      }
+    ]
+  },
+  "hypothesis_mapping": {
+    "herbal_b": "HERB/FLOWER",
+    "bio": "ANIMAL",
+    "pharma": "ROOT",
+    "recipe_b": "MIXED"
+  },
+  "note": "This test checks if sections specialize by material type"
+}
