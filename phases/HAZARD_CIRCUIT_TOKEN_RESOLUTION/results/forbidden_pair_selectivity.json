@@ -1,0 +1,1162 @@
+{
+  "metadata": {
+    "phase": "HAZARD_CIRCUIT_TOKEN_RESOLUTION",
+    "script": "forbidden_pair_selectivity",
+    "timestamp": "2026-01-26T17:17:31.203277"
+  },
+  "section1_within_pair": {
+    "c7->c30": {
+      "source_class": 7,
+      "target_class": 30,
+      "source_subgroup": "FL_HAZ",
+      "target_subgroup": "FL_HAZ",
+      "direction": "SELF_LOOP",
+      "n_forbidden": 1,
+      "n_observed": 4,
+      "total_volume": 5,
+      "forbidden_pairs": [
+        {
+          "source": "ar",
+          "target": "dal"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "al",
+          "target": "dal",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "al",
+          "target": "dar",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "al",
+          "target": "dain",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "ar",
+          "target": "dair",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c8->c9": {
+      "source_class": 8,
+      "target_class": 9,
+      "source_subgroup": "EN_CHSH",
+      "target_subgroup": "FQ_CONN",
+      "direction": "REVERSE",
+      "n_forbidden": 2,
+      "n_observed": 2,
+      "total_volume": 3,
+      "forbidden_pairs": [
+        {
+          "source": "shedy",
+          "target": "aiin"
+        },
+        {
+          "source": "shedy",
+          "target": "o"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "chedy",
+          "target": "or",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "chol",
+          "target": "or",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c8->c23": {
+      "source_class": 8,
+      "target_class": 23,
+      "source_subgroup": "EN_CHSH",
+      "target_subgroup": "FQ_CLOSER",
+      "direction": "REVERSE",
+      "n_forbidden": 1,
+      "n_observed": 6,
+      "total_volume": 10,
+      "forbidden_pairs": [
+        {
+          "source": "chol",
+          "target": "r"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "shedy",
+          "target": "dy",
+          "count": 3,
+          "is_forbidden": false
+        },
+        {
+          "source": "chedy",
+          "target": "dy",
+          "count": 3,
+          "is_forbidden": false
+        },
+        {
+          "source": "chedy",
+          "target": "r",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chedy",
+          "target": "s",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chedy",
+          "target": "am",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chol",
+          "target": "dy",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c9->c30": {
+      "source_class": 9,
+      "target_class": 30,
+      "source_subgroup": "FQ_CONN",
+      "target_subgroup": "FL_HAZ",
+      "direction": "REVERSE",
+      "n_forbidden": 1,
+      "n_observed": 4,
+      "total_volume": 7,
+      "forbidden_pairs": [
+        {
+          "source": "or",
+          "target": "dal"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "aiin",
+          "target": "dal",
+          "count": 3,
+          "is_forbidden": false
+        },
+        {
+          "source": "or",
+          "target": "dain",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "or",
+          "target": "dam",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "aiin",
+          "target": "dar",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c23->c8": {
+      "source_class": 23,
+      "target_class": 8,
+      "source_subgroup": "FQ_CLOSER",
+      "target_subgroup": "EN_CHSH",
+      "direction": "FORWARD",
+      "n_forbidden": 1,
+      "n_observed": 6,
+      "total_volume": 8,
+      "forbidden_pairs": [
+        {
+          "source": "l",
+          "target": "chol"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "l",
+          "target": "chedy",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "l",
+          "target": "shedy",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "y",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "y",
+          "target": "shedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "r",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "dy",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c23->c9": {
+      "source_class": 23,
+      "target_class": 9,
+      "source_subgroup": "FQ_CLOSER",
+      "target_subgroup": "FQ_CONN",
+      "direction": "CROSS_GROUP",
+      "n_forbidden": 1,
+      "n_observed": 4,
+      "total_volume": 28,
+      "forbidden_pairs": [
+        {
+          "source": "dy",
+          "target": "aiin"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "s",
+          "target": "aiin",
+          "count": 18,
+          "is_forbidden": false
+        },
+        {
+          "source": "r",
+          "target": "aiin",
+          "count": 7,
+          "is_forbidden": false
+        },
+        {
+          "source": "y",
+          "target": "or",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "l",
+          "target": "or",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c23->c31": {
+      "source_class": 23,
+      "target_class": 31,
+      "source_subgroup": "FQ_CLOSER",
+      "target_subgroup": "EN_CHSH",
+      "direction": "FORWARD",
+      "n_forbidden": 1,
+      "n_observed": 8,
+      "total_volume": 9,
+      "forbidden_pairs": [
+        {
+          "source": "dy",
+          "target": "chey"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "y",
+          "target": "shey",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "l",
+          "target": "chey",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "am",
+          "target": "shey",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "am",
+          "target": "chdy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "y",
+          "target": "chy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "y",
+          "target": "shor",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "dy",
+          "target": "shey",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "l",
+          "target": "shey",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c31->c7": {
+      "source_class": 31,
+      "target_class": 7,
+      "source_subgroup": "EN_CHSH",
+      "target_subgroup": "FL_HAZ",
+      "direction": "REVERSE",
+      "n_forbidden": 1,
+      "n_observed": 7,
+      "total_volume": 10,
+      "forbidden_pairs": [
+        {
+          "source": "shey",
+          "target": "al"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "chor",
+          "target": "ar",
+          "count": 3,
+          "is_forbidden": false
+        },
+        {
+          "source": "char",
+          "target": "ar",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "shey",
+          "target": "ar",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "cho",
+          "target": "al",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "char",
+          "target": "al",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chor",
+          "target": "al",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "cheo",
+          "target": "al",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c31->c8": {
+      "source_class": 31,
+      "target_class": 8,
+      "source_subgroup": "EN_CHSH",
+      "target_subgroup": "EN_CHSH",
+      "direction": "SELF_LOOP",
+      "n_forbidden": 2,
+      "n_observed": 11,
+      "total_volume": 13,
+      "forbidden_pairs": [
+        {
+          "source": "chey",
+          "target": "chedy"
+        },
+        {
+          "source": "chey",
+          "target": "shedy"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "chey",
+          "target": "chol",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "shol",
+          "target": "chedy",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "shey",
+          "target": "chol",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chdy",
+          "target": "chol",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chdy",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chor",
+          "target": "shedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "shy",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "shey",
+          "target": "shedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "shey",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chdy",
+          "target": "shedy",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chor",
+          "target": "chedy",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "c31->c9": {
+      "source_class": 31,
+      "target_class": 9,
+      "source_subgroup": "EN_CHSH",
+      "target_subgroup": "FQ_CONN",
+      "direction": "REVERSE",
+      "n_forbidden": 1,
+      "n_observed": 11,
+      "total_volume": 21,
+      "forbidden_pairs": [
+        {
+          "source": "shey",
+          "target": "aiin"
+        }
+      ],
+      "observed_pairs": [
+        {
+          "source": "char",
+          "target": "aiin",
+          "count": 5,
+          "is_forbidden": false
+        },
+        {
+          "source": "chor",
+          "target": "aiin",
+          "count": 3,
+          "is_forbidden": false
+        },
+        {
+          "source": "chey",
+          "target": "or",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "chey",
+          "target": "aiin",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "chor",
+          "target": "or",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "shol",
+          "target": "or",
+          "count": 2,
+          "is_forbidden": false
+        },
+        {
+          "source": "cheo",
+          "target": "or",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "chey",
+          "target": "o",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "cheo",
+          "target": "aiin",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "char",
+          "target": "or",
+          "count": 1,
+          "is_forbidden": false
+        },
+        {
+          "source": "shey",
+          "target": "or",
+          "count": 1,
+          "is_forbidden": false
+        }
+      ]
+    }
+  },
+  "section2_frequency": {
+    "7": {
+      "subgroup": "FL_HAZ",
+      "n_members": 2,
+      "n_forbidden": 2,
+      "forbidden_ranks": [
+        1,
+        2
+      ],
+      "ranking": [
+        {
+          "token": "ar",
+          "freq": 248,
+          "is_forbidden": true
+        },
+        {
+          "token": "al",
+          "freq": 186,
+          "is_forbidden": true
+        }
+      ]
+    },
+    "8": {
+      "subgroup": "EN_CHSH",
+      "n_members": 3,
+      "n_forbidden": 3,
+      "forbidden_ranks": [
+        1,
+        2,
+        3
+      ],
+      "ranking": [
+        {
+          "token": "chedy",
+          "freq": 491,
+          "is_forbidden": true
+        },
+        {
+          "token": "shedy",
+          "freq": 416,
+          "is_forbidden": true
+        },
+        {
+          "token": "chol",
+          "freq": 99,
+          "is_forbidden": true
+        }
+      ]
+    },
+    "9": {
+      "subgroup": "FQ_CONN",
+      "n_members": 3,
+      "n_forbidden": 3,
+      "forbidden_ranks": [
+        1,
+        2,
+        3
+      ],
+      "ranking": [
+        {
+          "token": "aiin",
+          "freq": 351,
+          "is_forbidden": true
+        },
+        {
+          "token": "or",
+          "freq": 250,
+          "is_forbidden": true
+        },
+        {
+          "token": "o",
+          "freq": 29,
+          "is_forbidden": true
+        }
+      ]
+    },
+    "23": {
+      "subgroup": "FQ_CLOSER",
+      "n_members": 7,
+      "n_forbidden": 3,
+      "forbidden_ranks": [
+        1,
+        5,
+        6
+      ],
+      "ranking": [
+        {
+          "token": "dy",
+          "freq": 109,
+          "is_forbidden": true
+        },
+        {
+          "token": "y",
+          "freq": 66,
+          "is_forbidden": false
+        },
+        {
+          "token": "am",
+          "freq": 55,
+          "is_forbidden": false
+        },
+        {
+          "token": "s",
+          "freq": 53,
+          "is_forbidden": false
+        },
+        {
+          "token": "r",
+          "freq": 39,
+          "is_forbidden": true
+        },
+        {
+          "token": "l",
+          "freq": 34,
+          "is_forbidden": true
+        },
+        {
+          "token": "d",
+          "freq": 6,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "30": {
+      "subgroup": "FL_HAZ",
+      "n_members": 5,
+      "n_forbidden": 1,
+      "forbidden_ranks": [
+        2
+      ],
+      "ranking": [
+        {
+          "token": "dar",
+          "freq": 188,
+          "is_forbidden": false
+        },
+        {
+          "token": "dal",
+          "freq": 130,
+          "is_forbidden": true
+        },
+        {
+          "token": "dain",
+          "freq": 113,
+          "is_forbidden": false
+        },
+        {
+          "token": "dair",
+          "freq": 49,
+          "is_forbidden": false
+        },
+        {
+          "token": "dam",
+          "freq": 42,
+          "is_forbidden": false
+        }
+      ]
+    },
+    "31": {
+      "subgroup": "EN_CHSH",
+      "n_members": 12,
+      "n_forbidden": 2,
+      "forbidden_ranks": [
+        1,
+        2
+      ],
+      "ranking": [
+        {
+          "token": "chey",
+          "freq": 250,
+          "is_forbidden": true
+        },
+        {
+          "token": "shey",
+          "freq": 204,
+          "is_forbidden": true
+        },
+        {
+          "token": "chdy",
+          "freq": 132,
+          "is_forbidden": false
+        },
+        {
+          "token": "shol",
+          "freq": 59,
+          "is_forbidden": false
+        },
+        {
+          "token": "chy",
+          "freq": 36,
+          "is_forbidden": false
+        },
+        {
+          "token": "char",
+          "freq": 36,
+          "is_forbidden": false
+        },
+        {
+          "token": "shy",
+          "freq": 34,
+          "is_forbidden": false
+        },
+        {
+          "token": "cheo",
+          "freq": 33,
+          "is_forbidden": false
+        },
+        {
+          "token": "chor",
+          "freq": 32,
+          "is_forbidden": false
+        },
+        {
+          "token": "shor",
+          "freq": 26,
+          "is_forbidden": false
+        },
+        {
+          "token": "sho",
+          "freq": 15,
+          "is_forbidden": false
+        },
+        {
+          "token": "cho",
+          "freq": 12,
+          "is_forbidden": false
+        }
+      ]
+    }
+  },
+  "section3_reciprocal": [
+    {
+      "id": 1,
+      "source": "shey",
+      "target": "aiin",
+      "forward_direction": "REVERSE",
+      "reverse_count": 1,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(1)",
+      "reverse_direction": "FORWARD"
+    },
+    {
+      "id": 2,
+      "source": "shey",
+      "target": "al",
+      "forward_direction": "REVERSE",
+      "reverse_count": 2,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(2)",
+      "reverse_direction": "FORWARD"
+    },
+    {
+      "id": 3,
+      "source": "shey",
+      "target": "c",
+      "forward_direction": "?",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "?"
+    },
+    {
+      "id": 4,
+      "source": "chol",
+      "target": "r",
+      "forward_direction": "REVERSE",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "FORWARD"
+    },
+    {
+      "id": 5,
+      "source": "chedy",
+      "target": "ee",
+      "forward_direction": "?",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "?"
+    },
+    {
+      "id": 6,
+      "source": "dy",
+      "target": "aiin",
+      "forward_direction": "CROSS_GROUP",
+      "reverse_count": 1,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(1)",
+      "reverse_direction": "CROSS_GROUP"
+    },
+    {
+      "id": 7,
+      "source": "dy",
+      "target": "chey",
+      "forward_direction": "FORWARD",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "REVERSE"
+    },
+    {
+      "id": 8,
+      "source": "l",
+      "target": "chol",
+      "forward_direction": "FORWARD",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "REVERSE"
+    },
+    {
+      "id": 9,
+      "source": "or",
+      "target": "dal",
+      "forward_direction": "REVERSE",
+      "reverse_count": 5,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(5)",
+      "reverse_direction": "FORWARD"
+    },
+    {
+      "id": 10,
+      "source": "chey",
+      "target": "chedy",
+      "forward_direction": "SELF_LOOP",
+      "reverse_count": 1,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(1)",
+      "reverse_direction": "SELF_LOOP"
+    },
+    {
+      "id": 11,
+      "source": "chey",
+      "target": "shedy",
+      "forward_direction": "SELF_LOOP",
+      "reverse_count": 4,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(4)",
+      "reverse_direction": "SELF_LOOP"
+    },
+    {
+      "id": 12,
+      "source": "ar",
+      "target": "dal",
+      "forward_direction": "SELF_LOOP",
+      "reverse_count": 2,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(2)",
+      "reverse_direction": "SELF_LOOP"
+    },
+    {
+      "id": 13,
+      "source": "c",
+      "target": "ee",
+      "forward_direction": "?",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "?"
+    },
+    {
+      "id": 14,
+      "source": "he",
+      "target": "t",
+      "forward_direction": "?",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "?"
+    },
+    {
+      "id": 15,
+      "source": "he",
+      "target": "or",
+      "forward_direction": "?",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "?"
+    },
+    {
+      "id": 16,
+      "source": "shedy",
+      "target": "aiin",
+      "forward_direction": "REVERSE",
+      "reverse_count": 3,
+      "reverse_forbidden": false,
+      "reverse_status": "ALLOWED(3)",
+      "reverse_direction": "FORWARD"
+    },
+    {
+      "id": 17,
+      "source": "shedy",
+      "target": "o",
+      "forward_direction": "REVERSE",
+      "reverse_count": 0,
+      "reverse_forbidden": false,
+      "reverse_status": "UNOBSERVED",
+      "reverse_direction": "FORWARD"
+    }
+  ],
+  "section4_predictive": {
+    "explanations": [
+      {
+        "id": 1,
+        "source": "shey",
+        "target": "aiin",
+        "direction": "REVERSE",
+        "src_freq": 204,
+        "tgt_freq": 351,
+        "reciprocal": "ALLOWED(1)",
+        "explanation": "REVERSE_CIRCUIT"
+      },
+      {
+        "id": 2,
+        "source": "shey",
+        "target": "al",
+        "direction": "REVERSE",
+        "src_freq": 204,
+        "tgt_freq": 186,
+        "reciprocal": "ALLOWED(2)",
+        "explanation": "REVERSE_CIRCUIT"
+      },
+      {
+        "id": 3,
+        "source": "shey",
+        "target": "c",
+        "direction": "UNCLASSIFIABLE",
+        "src_freq": 204,
+        "tgt_freq": 2,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "UNCLASSIFIED_TOKEN"
+      },
+      {
+        "id": 4,
+        "source": "chol",
+        "target": "r",
+        "direction": "REVERSE",
+        "src_freq": 99,
+        "tgt_freq": 39,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "REVERSE_CIRCUIT"
+      },
+      {
+        "id": 5,
+        "source": "chedy",
+        "target": "ee",
+        "direction": "UNCLASSIFIABLE",
+        "src_freq": 491,
+        "tgt_freq": 0,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "UNCLASSIFIED_TOKEN"
+      },
+      {
+        "id": 6,
+        "source": "dy",
+        "target": "aiin",
+        "direction": "CROSS_GROUP",
+        "src_freq": 109,
+        "tgt_freq": 351,
+        "reciprocal": "ALLOWED(1)",
+        "explanation": "CROSS_GROUP"
+      },
+      {
+        "id": 7,
+        "source": "dy",
+        "target": "chey",
+        "direction": "FORWARD",
+        "src_freq": 109,
+        "tgt_freq": 250,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "FORWARD_SPECIFIC"
+      },
+      {
+        "id": 8,
+        "source": "l",
+        "target": "chol",
+        "direction": "FORWARD",
+        "src_freq": 34,
+        "tgt_freq": 99,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "FORWARD_SPECIFIC"
+      },
+      {
+        "id": 9,
+        "source": "or",
+        "target": "dal",
+        "direction": "REVERSE",
+        "src_freq": 250,
+        "tgt_freq": 130,
+        "reciprocal": "ALLOWED(5)",
+        "explanation": "REVERSE_CIRCUIT"
+      },
+      {
+        "id": 10,
+        "source": "chey",
+        "target": "chedy",
+        "direction": "SELF_LOOP",
+        "src_freq": 250,
+        "tgt_freq": 491,
+        "reciprocal": "ALLOWED(1)",
+        "explanation": "EN_CHSH_INTERNAL"
+      },
+      {
+        "id": 11,
+        "source": "chey",
+        "target": "shedy",
+        "direction": "SELF_LOOP",
+        "src_freq": 250,
+        "tgt_freq": 416,
+        "reciprocal": "ALLOWED(4)",
+        "explanation": "EN_CHSH_INTERNAL"
+      },
+      {
+        "id": 12,
+        "source": "ar",
+        "target": "dal",
+        "direction": "SELF_LOOP",
+        "src_freq": 248,
+        "tgt_freq": 130,
+        "reciprocal": "ALLOWED(2)",
+        "explanation": "FL_HAZ_INTERNAL"
+      },
+      {
+        "id": 13,
+        "source": "c",
+        "target": "ee",
+        "direction": "UNCLASSIFIABLE",
+        "src_freq": 2,
+        "tgt_freq": 0,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "UNCLASSIFIED_TOKEN"
+      },
+      {
+        "id": 14,
+        "source": "he",
+        "target": "t",
+        "direction": "UNCLASSIFIABLE",
+        "src_freq": 0,
+        "tgt_freq": 3,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "UNCLASSIFIED_TOKEN"
+      },
+      {
+        "id": 15,
+        "source": "he",
+        "target": "or",
+        "direction": "UNCLASSIFIABLE",
+        "src_freq": 0,
+        "tgt_freq": 250,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "UNCLASSIFIED_TOKEN"
+      },
+      {
+        "id": 16,
+        "source": "shedy",
+        "target": "aiin",
+        "direction": "REVERSE",
+        "src_freq": 416,
+        "tgt_freq": 351,
+        "reciprocal": "ALLOWED(3)",
+        "explanation": "REVERSE_CIRCUIT"
+      },
+      {
+        "id": 17,
+        "source": "shedy",
+        "target": "o",
+        "direction": "REVERSE",
+        "src_freq": 416,
+        "tgt_freq": 29,
+        "reciprocal": "UNOBSERVED",
+        "explanation": "REVERSE_CIRCUIT"
+      }
+    ],
+    "summary": {
+      "REVERSE_CIRCUIT": 6,
+      "UNCLASSIFIED_TOKEN": 5,
+      "CROSS_GROUP": 1,
+      "FORWARD_SPECIFIC": 2,
+      "EN_CHSH_INTERNAL": 2,
+      "FL_HAZ_INTERNAL": 1
+    },
+    "circuit_explained": 9,
+    "total": 17,
+    "classifiable": 12
+  }
+}

@@ -1,6 +1,6 @@
 # ============================================================
 # BCSC: Currier B Structural Contract
-# Version: 1.2
+# Version: 1.8
 # ============================================================
 #
 # This is a DERIVED, READ-ONLY specification.
@@ -19,8 +19,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "1.3"
-  date: "2026-01-26"
+  version: "1.9"
+  date: "2026-01-29"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints only"
@@ -73,8 +73,8 @@ guarantees:
     provenance: "C074, C079, C084"
 
   - id: "HAZARD_TOPOLOGY_FIXED"
-    statement: "17 forbidden transitions in 5 classes are absolute"
-    provenance: "C109"
+    statement: "17 forbidden transitions in 5 classes are DISFAVORED (~65% compliance, not absolute)"
+    provenance: "C109, C789"
 
   - id: "KERNEL_CENTRALITY"
     statement: "k, h, e form irreducible control core, boundary-adjacent to hazards"
@@ -183,6 +183,21 @@ invariants:
     description: "Transitions uniform (0/19 structured), context below random baseline (9.8% vs 11.1%), best clustering k=2 silhouette=0.43"
     provenance: "C572"
 
+  regime_syntax_invariance:
+    statement: "Line syntax is INVARIANT across all four REGIMEs"
+    description: "All 5 roles show p>0.4 for REGIME effect; REGIME explains 0.13% of position variance (11x less than phase). REGIME determines WHAT to do, not WHERE in line."
+    provenance: "C821"
+
+  regime_cc_position_invariance:
+    statement: "CC token positions are INVARIANT across REGIMEs"
+    description: "daiin and ol positions show no significant REGIME variation; control loop structure is universal"
+    provenance: "C822"
+
+  regime_bigram_partial_variation:
+    statement: "Bigram transition patterns show PARTIAL REGIME variation"
+    description: "23.3% of top bigrams show REGIME effects; 76.7% are universal. REGIME tunes execution details, not syntax structure."
+    provenance: "C823"
+
 # ============================================================
 # GRAMMAR STRUCTURE
 # ============================================================
@@ -224,16 +239,35 @@ role_taxonomy:
       function: "Execution boundaries"
       classes: "{10, 11, 12, 17}"
       token_share: "4.4% of B (~1023 tokens)"
-      provenance: "C121, C557, C558, C560, C581"
+      provenance: "C121, C557, C558, C560, C581, C788-C791"
+      # SINGLETON IDENTITY (C788):
+      #   CC "classes" are NOT broad categories — they are SPECIFIC TOKENS:
+      #   Class 10 = "daiin" only (1 type, 314 tokens)
+      #   Class 11 = "ol" only (1 type, 421 tokens)
+      #   Class 12 = "k" only (1 type, 0 tokens — ghost class, never appears in B)
+      #   Class 17 = 9 "ol-" prefixed tokens (olkeedy, olkeey, etc., 288 tokens)
+      #   This reframes CC from "control role" to "specific control tokens."
       # INTERNAL STRUCTURE (C590):
       #   GENUINE_STRUCTURE — Class 10 (daiin) initial-biased (mean 0.413),
       #   Class 11 (ol) medial (mean 0.511), p=2.8e-5.
       #   Class 12 (k) is ghost — zero corpus tokens (C540).
       #   Class 17 assigned to CC per C560 (ol-derived compound control).
+      # TRANSITION ROUTING (C791):
+      #   CC->EN dominant: 78.3% of CC successors are EN (kernel operations).
+      #   CC->FQ: only 19.1%. CC primarily routes to energy modulation.
       # SUFFIX-FREE (C588):
       #   0 suffix types, 100% bare. Most constrained suffix profile.
       # PIPELINE PURITY (C584):
       #   100% PP — all 3 MIDDLEs (iin, k, ol) are pipeline-participating.
+      # CONTROL LOOP INTEGRATION (C816-C820):
+      #   CC INITIATES the control loop:
+      #   - daiin (0.413) -> LINK (0.476) -> KERNEL (0.477) -> ol (0.511) -> FL (0.576)
+      #   - daiin is earliest control token, significantly earlier than LINK (p<0.001)
+      #   Lane routing (C817): daiin->CHSH 90.8%, ol_derived->QO 57.4%, rapid decay by +2
+      #   Kernel bridge (C818): Class 17 is CC-KERNEL interface (88% kernel chars)
+      #   Boundary asymmetry (C819): daiin initial 27.1%, ol/ol_derived medial 85%
+      #   HAZARD IMMUNITY (C820): CC has ZERO forbidden transitions (0/700)
+      #     EN absorbs 99.8% of all hazard; CC is the SAFE control layer
 
     ENERGY_OPERATOR:
       function: "Energy modulation"
@@ -340,11 +374,19 @@ role_taxonomy:
       # part of EN's 18-class taxonomy. Role label no longer in active use.
 
     FLOW_OPERATOR:
-      function: "Flow control"
+      function: "Flow control - primitive substrate layer"
       class_count: 4
       classes: "{7, 30, 38, 40}"
       token_share: "4.7% of B (1078 tokens)"
-      provenance: "C121, C562, C582"
+      provenance: "C121, C562, C582, C770-C777"
+      # PRIMITIVE ARCHITECTURE (C770-C772):
+      #   FL is the PRIMITIVE SUBSTRATE for the entire grammar.
+      #   Character set: ONLY {a, d, i, l, m, n, o, r, y} — 9 chars total.
+      #   Kernel chars (k, h, e): ZERO. FL operates below kernel layer.
+      #   Helper chars (c, s, t): ZERO. Complete exclusion.
+      #   Compound rate: 0%. FL MIDDLEs cannot be decomposed further.
+      #   Other roles are built by ADDING kernel/helper chars to FL-like bases.
+      #   EN is most kernel-enriched (60.7% kernel-containing MIDDLEs).
       # INTERNAL STRUCTURE (C586):
       #   GENUINE_STRUCTURE with hazard/safe split:
       #   Hazard pair {7, 30}: medial position (mean 0.55), 12.3% final.
@@ -352,9 +394,11 @@ role_taxonomy:
       #   Safe pair {38, 40}: final position (mean 0.81), 55.7% final.
       #     Class 40 is maximally hazard-distant (C546).
       #   Mann-Whitney position p=9.4e-20, final rate p=7.3e-33.
-      # HAZARD ROLE (C586):
+      # HAZARD ROLE (C586, C773-C775):
       #   FL is hazard-SOURCE — initiates 4.5x more than receives.
       #   Opposite of EN which is hazard-target.
+      #   FL has 83.3% forward-facing hazard exposure (C786).
+      #   No FL->FL transitions exist (state reset prohibited, C787).
       # SUFFIX-DEPLETED (C588):
       #   2 suffix types (r, dy), 93.8% bare.
       # PIPELINE PURITY (C584):
@@ -414,6 +458,39 @@ role_taxonomy:
     Morphological realization (PREFIX/MIDDLE/SUFFIX composition)
     is NOT part of BCSC. See global morphology contracts.
 
+  gallows_dynamics:
+    description: "Gallows characters (t, k, p, f) as paragraph-level markers"
+    paragraph_marker:
+      statement: "Gallows-initial tokens mark paragraph boundaries"
+      initial_rate: "8.6% paragraph-initial vs 2.7% body"
+      enrichment: "3.2x"
+      provenance: "C864"
+    folio_position:
+      statement: "Gallows distribution varies by folio position"
+      early_folio_rate: "higher"
+      late_folio_rate: "lower"
+      provenance: "C865"
+    morphological_patterns:
+      statement: "Gallows have distinct morphological contexts"
+      t_context: "most common, broadest distribution"
+      k_context: "kernel operator, restricted"
+      p_context: "paragraph marker, positional"
+      f_context: "rare, specialized"
+      provenance: "C866"
+    p_t_transition:
+      statement: "P->T transitions follow paragraph dynamics"
+      mechanism: "P initiates, T continues"
+      provenance: "C867"
+    qo_chsh_independence:
+      statement: "Gallows use is INDEPENDENT of QO/CHSH lane"
+      interpretation: "Gallows mark structure, not material class"
+      provenance: "C868"
+    functional_model:
+      statement: "Gallows function as paragraph/section delimiters"
+      interpretation: "Not semantic content, but structural scaffolding"
+      provenance: "C869"
+    provenance: "C863-C869"
+
 # ============================================================
 # KERNEL STRUCTURE
 # ============================================================
@@ -457,11 +534,13 @@ kernel:
 # HAZARD TOPOLOGY
 # ============================================================
 hazards:
-  description: "17 forbidden transitions in 5 failure classes"
+  description: "17 disfavored transitions in 5 failure classes (~65% compliance)"
 
   forbidden_transitions:
     count: 17
-    provenance: "C109"
+    compliance_rate: "~65%"  # C789: 34% violation rate - disfavored, not prohibited
+    interpretation: "Statistical bias creating 'cost', not absolute barrier"
+    provenance: "C109, C789"
 
   failure_classes:
     PHASE_ORDERING:
@@ -553,6 +632,70 @@ program_structure:
       provenance: "C556, C557, C561, C562"
     provenance: "C357, C358, C359, C360, C556, C557, C561, C562"
 
+  paragraph:
+    function: "Mini-program unit within folio with header-body structure"
+    mean_per_folio: 7.1
+    mean_lines_per_paragraph: 4.4
+    header_body_structure:
+      description: "Paragraph line 1 is HEADER (identification), lines 2+ are BODY (operational)"
+      line1_ht_rate: "44.9%"
+      body_ht_rate: "29.1%"
+      delta: "+15.8pp"
+      significance: "Wilcoxon z=13.63, p<10^-20, Cohen's d=0.721"
+      provenance: "C840"
+    gallows_initial:
+      description: "Gallows-initial tokens (t,k,p,f) mark paragraph boundaries"
+      paragraph_initial_rate: "8.6% vs 2.7% body"
+      ratio: "3.2x enrichment"
+      provenance: "C841, C864"
+    ht_step_function:
+      description: "HT drops from 44.9% (line 1) to 29.1% (lines 2+), then stable"
+      pattern: "Step function, not gradual decline"
+      provenance: "C842"
+    prefix_markers:
+      description: "Specific prefixes (ct, ok, qo) mark paragraph header vs body"
+      provenance: "C843"
+    self_containment:
+      description: "Paragraphs are self-contained; no cross-paragraph transitions required"
+      provenance: "C845"
+    provenance: "C840-C845"
+
+  folio_paragraph_architecture:
+    description: "How paragraphs organize within folios"
+    role_template:
+      statement: "Paragraphs are NOT variations on a folio template"
+      evidence: "Each paragraph introduces 63-85% new vocabulary; template model correlation only 0.23"
+      verdict: "PARALLEL_PROGRAMS model (independent mini-programs)"
+      provenance: "C855, C862"
+    vocabulary_distribution:
+      statement: "Folio unique vocabulary is DISTRIBUTED across paragraphs, not concentrated"
+      par1_share: "~15%"
+      distribution: "Roughly uniform across ordinals"
+      provenance: "C856"
+    first_paragraph_ordinariness:
+      statement: "Paragraph 1 is NOT structurally special"
+      ht_rate_par1: "comparable to later paragraphs"
+      unique_vocab_rate: "not elevated"
+      provenance: "C857"
+    paragraph_count_complexity:
+      statement: "Paragraph count is weak proxy for folio complexity"
+      correlation_with_unique_middles: "rho=0.42"
+      provenance: "C858"
+    vocabulary_convergence:
+      statement: "Later paragraphs show WEAK vocabulary convergence"
+      interpretation: "Paragraphs are largely independent but share folio-level vocabulary pool"
+      provenance: "C859"
+    section_organization:
+      statement: "Different sections show different paragraph patterns"
+      bio_profile: "larger paragraphs (46 tok/par)"
+      pharma_profile: "smaller paragraphs (13 tok/par)"
+      provenance: "C860"
+    link_hazard_neutrality:
+      statement: "LINK and hazard density are NEUTRAL across paragraph ordinals"
+      interpretation: "No paragraph position specializes in monitoring or hazard navigation"
+      provenance: "C861"
+    provenance: "C855-C862"
+
 # ============================================================
 # CONVERGENCE BEHAVIOR
 # ============================================================
@@ -585,15 +728,59 @@ link_operator:
   function: "Deliberate waiting/monitoring phases"
   provenance: "C366"
 
+  definition:
+    marker: "'ol' substring in token"
+    density: "13.2% of B tokens (3,047 tokens)"
+    provenance: "C609"
+
   properties:
-    spatially_uniform: true
-    position_marking: false
-    provenance: "C365"
+    # C365 REFUTED by C805: LINK shows boundary enrichment like HT
+    spatially_uniform: false  # CORRECTED v1.7
+    boundary_enriched: true
+    first_token_rate: "17.2%"
+    middle_token_rate: "12.4%"
+    last_token_rate: "15.3%"
+    mean_position: 0.476  # Earlier than baseline 0.504
+    provenance: "C805 (refutes C365)"
 
   grammar_transitions:
-    preceded_by: ["AUXILIARY", "FLOW_OPERATOR"]
-    followed_by: ["HIGH_IMPACT", "ENERGY_OPERATOR"]
-    provenance: "C366"
+    # C366 quantitative claims NOT REPRODUCIBLE with current taxonomy (C804)
+    # Qualitative "monitoring/intervention boundary" supported
+    predecessor_bias: "NOT SIGNIFICANT (p=0.41)"
+    successor_bias: "WEAK (p<0.001, enrichments ~1.1x)"
+    note: "Original 1.5x/1.3x/2.7x claims not reproducible"
+    provenance: "C804 (revises C366)"
+
+  fl_relationship:
+    # LINK and FL are inversely related (C807, C810)
+    inverse: true
+    distance: "LINK farther from FL (3.91 vs 3.38, p<0.0001)"
+    correlation: "rho=-0.222 (negative)"
+    direct_transitions: "0.70x expected (depleted)"
+    interpretation: "Complementary phases, not adjacent"
+    provenance: "C807, C810"
+
+  kernel_relationship:
+    # LINK separated from kernel (C809)
+    separated: true
+    kernel_depletion: "k=0.86x, h=0.93x, e=0.82x"
+    distance: "1.31 vs 0.41 (farther from kernel)"
+    provenance: "C809"
+
+  ht_overlap:
+    # LINK-HT positive association (C806)
+    odds_ratio: 1.50
+    link_are_ht: "38.3%"
+    ht_are_link: "16.6%"
+    mechanism: "Vocabulary composition (HT contains 'ol' more often)"
+    provenance: "C806"
+
+  morphology:
+    # 'ol' is a legitimate PP MIDDLE (C808)
+    ol_is_pp: true
+    ol_in_a_vocab: true
+    link_pp_rate: "92.4%"
+    provenance: "C808"
 
   complementarity:
     with_escalation: true
@@ -640,6 +827,63 @@ design_freedom:
 
   principle: "Risk is globally constrained; recovery strategy is locally variable"
   provenance: "C458"
+
+# ============================================================
+# CONTROL LOOP SYNTHESIS
+# ============================================================
+# Added v1.7: CONTROL_LOOP_SYNTHESIS phase findings (C810-C815)
+control_loop:
+  description: "Integration of KERNEL, LINK, FL into unified control model"
+
+  three_zones:
+    kernel:
+      function: "Active processing (k, h, e operators)"
+      mean_position: 0.482
+      density: "~69% of tokens contain kernel characters"
+    link:
+      function: "Monitoring/waiting phases ('ol' marker)"
+      mean_position: 0.476
+      density: "13.2% of tokens"
+    fl:
+      function: "Escape/recovery operations"
+      mean_position: 0.576
+      density: "4.7% of tokens"
+
+  canonical_ordering:
+    sequence: "daiin -> LINK -> KERNEL -> ol -> FL"
+    positions: "0.413 -> 0.476 -> 0.482 -> 0.511 -> 0.576"
+    interpretation: "CC initiates, monitoring early, processing throughout, CC bridges to escape"
+    significance: "daiin vs LINK p<0.001, KERNEL vs FL p<0.0001"
+    provenance: "C813, C816"
+    cc_integration:
+      daiin_position: 0.413  # Earliest - initiates control loop
+      ol_position: 0.511  # Medial - bridges to FL
+      ol_derived_position: 0.515  # Medial - kernel interface
+
+  phase_flexibility:
+    # Phases have significant but weak positional preferences
+    anova_f: 70.28
+    anova_p: "<10^-73"
+    eta_squared: 0.015  # Only 1.5% variance explained
+    interpretation: "Phases are temporally flexible, not rigidly positional"
+    provenance: "C815"
+
+  phase_relationships:
+    link_fl:
+      relationship: "Inverse/complementary (not adjacent)"
+      direct_transitions: "0.70x expected"
+      provenance: "C807, C810"
+    fl_chaining:
+      enrichment: "2.11x"
+      interpretation: "Escape is multi-step, not single-token"
+      loop_closure: "FL->KERNEL neutral (0.86x)"
+      provenance: "C811"
+
+  folio_predictors:
+    # What predicts escape (FL) rate at folio level
+    strongest: "KERNEL (rho=-0.528, p<0.0001)"
+    interpretation: "High kernel density = stable program, low escape"
+    provenance: "C814"
 
 # ============================================================
 # SECTION PROFILES
@@ -731,6 +975,108 @@ vocabulary_architecture:
     not via different procedures. (C506.b, C537)
 
 # ============================================================
+# HT/UN STRUCTURAL INTEGRATION
+# ============================================================
+# Note: HT (Human Track) = UN (Unclassified) are identical populations (C740).
+# While HT is OUTSIDE the 49-class grammar, it has structural properties
+# that interface with the grammar. BCSC documents these interface properties.
+ht_un_integration:
+  description: "HT/UN tokens (4,421 types, 7,042 occurrences) are outside 49-class grammar but structurally integrated"
+
+  population_identity:
+    statement: "HT = UN (identical by definition)"
+    ht_types: 4421
+    ht_occurrences: 7042
+    hapax_rate: "74.1%"
+    provenance: "C740"
+
+  c475_compliance:
+    statement: "HT tokens obey C475 MIDDLE incompatibility when co-occurring with classified tokens"
+    violation_rate: "0.44%"
+    interpretation: "HT is structurally constrained by the same forbidden pair rules"
+    provenance: "C742"
+
+  novel_combinations:
+    statement: "HT uses MIDDLE combinations that never occur in classified adjacencies"
+    novel_pair_rate: "11.19%"  # Pairs where both MIDDLEs in classified but pair not seen
+    ht_exclusive_middles: "90.7%"  # MIDDLEs that appear only in HT
+    classified_overlap: "14.4%"  # HT-HT pairs also seen in classified
+    interpretation: |
+      HT operates in a distinct combinatorial space. It doesn't violate C475
+      forbidden pair rules (0.44%), but it combines MIDDLEs differently than
+      classified tokens. This supports HT as a structurally separate layer
+      that shares morphological building blocks but uses them independently.
+    provenance: "C812"
+
+  lane_architecture:
+    statement: "HT tokens are lane-segregated (CHSH-dominant) but lane-indifferent in transitions"
+    chsh_fraction: "dominant"
+    lane_transitions: "indifferent (no lane-tracking)"
+    provenance: "C743, C744"
+
+  line1_enrichment:
+    statement: "Line-1 has 50.2% HT vs 29.8% on lines 2+ (Tier 0 frozen fact)"
+    delta: "+20.3 percentage points"
+    interpretation: "Opening lines use non-operational vocabulary before executable sequence"
+    tier: 0
+    provenance: "C747"
+
+  line1_composite_header:
+    statement: "Line-1 HT is a two-part composite header"
+    structure:
+      pp_component:
+        share: "68.3%"
+        function: "A-context declaration"
+        mechanism: "PP MIDDLEs predict best-match A folio at 15.8x random"
+        prediction_accuracy: "13.9% vs 0.88% baseline"
+      b_exclusive_component:
+        share: "31.7%"
+        function: "Folio identification"
+        folio_unique_rate: "94.1%"
+    independence: "PP fraction does NOT correlate with body PP size (rho=0.002)"
+    interpretation: |
+      Line-1 is metadata, not operational content.
+      PP portion declares: "This program operates under A-folio X's constraints"
+      B-exclusive portion declares: "This is program Y"
+      The operational sequence begins on line 2.
+    provenance: "C794, C795"
+
+  folio_distribution:
+    statement: "HT density varies by folio in compensatory pattern"
+    interpretation: "Folios with lower classified coverage have higher HT density"
+    provenance: "C746"
+
+  non_operational:
+    statement: "HT tokens do not participate in grammar operations (C404-C405 protected)"
+    note: "Structural integration does not imply operational participation"
+    provenance: "C404, C405"
+
+  line1_ht_folio_specificity:
+    statement: "Line-1 HT tokens are highly folio-specific"
+    folio_singleton_rate: "85.9%"  # appear in only ONE folio
+    folio_unique_and_line1_only: "1,229 tokens (67%)"
+    interpretation: "Line-1 HT = folio identification vocabulary"
+    provenance: "C870"
+
+  ht_role_cooccurrence:
+    statement: "HT tokens show systematic role cooccurrence patterns"
+    chsh_bias: "HT preferentially co-occurs with CHSH lane"
+    interpretation: "HT identification is lane-aware"
+    provenance: "C871"
+
+  ht_discrimination_vocabulary:
+    statement: "HT tokens form a discrimination vocabulary for folio/procedure identification"
+    function: "Identify WHICH procedure, not WHAT material"
+    semantic_ceiling_compliant: true
+    vocabulary_size: "4,421 types"
+    line1_concentration: "50.2% of Line-1 are HT"
+    interpretation: |
+      HT is the identification layer that complements the operational grammar (PP).
+      Grammar (PP) encodes HOW to execute; HT encodes WHICH procedure is active.
+      This division is by design - maintains semantic ceiling (C120).
+    provenance: "C872"
+
+# ============================================================
 # ROBUSTNESS
 # ============================================================
 robustness:
@@ -762,8 +1108,8 @@ negative_guarantees:
   - guarantee: "No AZC references"
     reason: "BCSC is AZC-agnostic"
 
-  - guarantee: "No Human Track references"
-    reason: "HT is separate layer"
+  - guarantee: "No Human Track internal structure"
+    reason: "HT is separate layer; however HT/UN obeys C475 and lane architecture (C740-C750)"
 
   - guarantee: "No process domain semantics"
     reason: "Tier 3 speculative layer"
@@ -930,6 +1276,14 @@ annotations:
     pipeline_purity: "CC/EN/FL/FQ 100% PP; AX 98.2%"
     provenance: "C573-C597"
 
+  folio_level_composition:
+    cc_subfamily_prediction_rho: "0.345-0.355"  # CC_DAIIN->CHSH and CC_OL_D->QO
+    c412_regime_mediation: "27.6%"  # C412 partially REGIME artifact
+    two_lane_escape_rho: "-0.506"  # Lane balance -> escape density
+    two_lane_vs_ch_preference: "68% stronger"  # |0.506| vs |0.301|
+    lane_balance_independent: true  # Partial rho=-0.452 after controlling ch_pref
+    provenance: "C603, C604, C605"
+
   ax_architecture_statistics:
     ax_classes: 19
     ax_token_share: "16.6%"  # corrected: Class 14 removed (FQ), Class 17 removed (CC)
@@ -978,8 +1332,8 @@ provenance:
     - "C334"   # LINK section conditioning
     - "C339"   # E-class dominance
     - "C340"   # LINK-escalation complementarity
-    - "C365"   # LINK spatially uniform
-    - "C366"   # LINK marks grammar state transitions
+    - "C365"   # LINK spatially uniform - REFUTED by C805 (boundary enrichment)
+    - "C366"   # LINK marks grammar state transitions - REVISED by C804 (quantitative claims not reproducible)
 
   convergence:
     - "C323"   # Terminal distribution
@@ -1080,6 +1434,111 @@ provenance:
     - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO)
     - "C601"   # Hazard sub-group concentration (FL_HAZ/EN_CHSH/FQ_CONN)
     - "C602"   # REGIME-conditioned sub-role grammar (4/5 REGIME-dependent)
+
+  sister_pair_decomposition:
+    - "C603"   # CC folio-level subfamily prediction (OL_D->QO rho=0.355, DAIIN->CHSH rho=0.345)
+    - "C604"   # C412 REGIME decomposition (27.6% mediation; vanishes within REGIME_1/2)
+    - "C605"   # Two-lane folio-level validation (lane balance rho=-0.506, independent of ch_preference)
+
+  ht_un_reconciliation:
+    - "C740"   # HT/UN population identity (identical by definition)
+    - "C741"   # HT C475 minimal participation
+    - "C742"   # HT C475 compliance (0.44% violation)
+    - "C743"   # HT lane segregation (CHSH-dominant)
+    - "C744"   # HT lane indifference (no lane-tracking)
+    - "C745"   # HT coverage metric sensitivity
+    - "C746"   # HT folio compensatory distribution
+    - "C747"   # Line-1 HT enrichment (50.2% vs 29.8%, Tier 0)
+    - "C748"   # Line-1 step function
+    - "C749"   # Line-1 HT morphological distinction
+    - "C750"   # Opening-only asymmetry
+    - "C794"   # Line-1 composite header structure (68.3% PP + 31.7% B-exclusive)
+    - "C795"   # Line-1 A-context prediction (15.8x random)
+    - "C812"   # HT novel MIDDLE combinations (11.19% novel pairs, distinct combinatorial space)
+
+  fl_primitive_architecture:
+    - "C770"   # FL kernel exclusion (0 kernel chars)
+    - "C771"   # FL character restriction (only a,d,i,l,m,n,o,r,y)
+    - "C772"   # FL primitive substrate (base layer for all roles)
+    - "C773"   # FL hazard position split
+    - "C774"   # FL outside forbidden topology
+    - "C775"   # Hazard FL escape driver
+    - "C776"   # Post-FL kernel enrichment
+    - "C777"   # FL state index
+
+  control_topology:
+    - "C782"   # CC kernel paradox (highest contact, lowest compound)
+    - "C783"   # Forbidden pair asymmetry (direction matters)
+    - "C784"   # FL/AX hazard immunity (0% exposure)
+    - "C785"   # FQ medial targeting
+    - "C786"   # FL forward bias (83.3% forward-facing)
+    - "C787"   # FL state reset prohibition (no FL->FL)
+
+  cc_mechanics:
+    - "C788"   # CC singleton identity (daiin, ol, k are specific tokens)
+    - "C789"   # Forbidden pair permeability (34% violation - disfavored not prohibited)
+    - "C790"   # CC positional gradient
+    - "C791"   # CC-EN dominant flow (78.3% CC->EN)
+
+  link_operator_architecture:
+    - "C804"   # LINK transition grammar revision (C366 quantitative claims not reproducible)
+    - "C805"   # LINK boundary enrichment (refutes C365 spatially uniform)
+    - "C806"   # LINK-HT overlap (OR=1.50)
+    - "C807"   # LINK-FL inverse relationship (distance 3.91 vs 3.38)
+    - "C808"   # 'ol' is PP MIDDLE (92.4% LINK tokens are PP)
+    - "C809"   # LINK-kernel separation (farther from kernel chars)
+
+  control_loop_synthesis:
+    - "C810"   # LINK-FL non-adjacency (0.70x direct transitions)
+    - "C811"   # FL chaining (2.11x enrichment, multi-step escape)
+    - "C812"   # HT novel MIDDLE combinations (11.19% novel pairs)
+    - "C813"   # Canonical phase ordering (LINK->KERNEL->FL)
+    - "C814"   # Kernel-escape inverse (rho=-0.528)
+    - "C815"   # Phase position significance (1.5% variance, flexible timing)
+
+  cc_control_loop_integration:
+    - "C816"   # CC positional ordering (daiin->LINK->KERNEL->ol->FL)
+    - "C817"   # CC lane routing confirmed (daiin->CHSH 90.8%, rapid decay)
+    - "C818"   # CC kernel bridge (Class 17 = CC-KERNEL interface, 88% kernel)
+    - "C819"   # CC boundary asymmetry (daiin initial, ol/ol_derived medial)
+    - "C820"   # CC hazard immunity (0/700 forbidden, EN absorbs 99.8%)
+
+  regime_line_syntax_interaction:
+    - "C821"   # Line syntax REGIME invariance (all roles p>0.4, 0.13% variance)
+    - "C822"   # CC position REGIME invariance (daiin/ol universal)
+    - "C823"   # Bigram REGIME partial variation (23.3% show effects, 76.7% universal)
+
+  b_paragraph_structure:
+    - "C840"   # B paragraph mini-program structure (header 44.9% HT, body 29.1%)
+    - "C841"   # B paragraph gallows-initial markers (3.2x enrichment)
+    - "C842"   # B paragraph HT step function (line 1 vs body)
+    - "C843"   # B paragraph prefix identification markers
+    - "C844"   # Folio line 1 double-header effect
+    - "C845"   # B paragraph self-containment
+
+  folio_paragraph_architecture:
+    - "C855"   # Folio role template (parallel programs, not template)
+    - "C856"   # Folio vocabulary distribution (distributed, not concentrated)
+    - "C857"   # First paragraph ordinariness (not special)
+    - "C858"   # Paragraph count complexity proxy (rho=0.42)
+    - "C859"   # Paragraph vocabulary convergence (weak)
+    - "C860"   # Section paragraph organization (BIO large, PHARMA small)
+    - "C861"   # LINK/hazard paragraph neutrality
+    - "C862"   # Role template verdict (PARALLEL_PROGRAMS)
+
+  gallows_paragraph_dynamics:
+    - "C863"   # Paragraph-ordinal EN subfamily gradient
+    - "C864"   # Gallows paragraph marker (8.6% initial vs 2.7% body)
+    - "C865"   # Gallows folio position distribution
+    - "C866"   # Gallows morphological patterns
+    - "C867"   # P-T transition dynamics
+    - "C868"   # Gallows-QO/CHSH independence
+    - "C869"   # Gallows functional model
+
+  ht_discrimination_vocabulary:
+    - "C870"   # Line-1 HT folio specificity (85.9% singleton)
+    - "C871"   # HT role cooccurrence pattern (CHSH bias)
+    - "C872"   # HT discrimination vocabulary interpretation
 
 # ============================================================
 # END OF BCSC

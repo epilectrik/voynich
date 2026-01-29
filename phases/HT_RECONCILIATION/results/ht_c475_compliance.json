@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "phase": "HT_RECONCILIATION",
+    "script": "ht_c475_compliance.py",
+    "tests": [
+      "T2",
+      "T3"
+    ],
+    "n_illegal_pairs": 100,
+    "n_graph_middles": 69
+  },
+  "T2_incompatibility_coverage": {
+    "ht_middle_types": 1339,
+    "ht_in_graph": 61,
+    "ht_not_in_graph": 1278,
+    "ht_participation_pct": 4.56,
+    "ht_in_graph_occ": 2711,
+    "ht_total_occ": 7042,
+    "ht_occ_coverage_pct": 38.5,
+    "classified_middle_types": 88,
+    "classified_in_graph": 34,
+    "classified_participation_pct": 38.64,
+    "verdict": "MINIMAL",
+    "detail": "Only 4.6% of HT MIDDLEs in C475 graph"
+  },
+  "T3_violation_rate": {
+    "mixed_lines": 2253,
+    "total_lines": 2420,
+    "cross_pairs_checked": 44666,
+    "cross_violations": 310,
+    "cross_rate_pct": 0.69404,
+    "cc_pairs_checked": 55293,
+    "cc_violations": 348,
+    "cc_rate_pct": 0.629374,
+    "hh_pairs_checked": 11471,
+    "hh_violations": 50,
+    "hh_rate_pct": 0.435882,
+    "permutation": {
+      "n_permutations": 1000,
+      "observed": 310,
+      "null_mean": 281.1,
+      "null_std": 16.5908,
+      "z_score": 1.7417,
+      "p_fewer": 0.048,
+      "p_more": 0.956
+    },
+    "verdict": "COMPLIANT",
+    "detail": "HT-classified violation rate 0.6940% < 2%"
+  }
+}

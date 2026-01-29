@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "RECIPE_B": {
+      "folio_count": 33,
+      "par_count_mean": 10.151515151515152,
+      "par_count_stdev": 4.711165010650312,
+      "par_size_mean": 38.34925373134328,
+      "cohesion_mean": 0.05316835991182262,
+      "par1_ht_rate": 0.36182847989560324,
+      "later_ht_rate": 0.354848733073686
+    },
+    "HERBAL_B": {
+      "folio_count": 24,
+      "par_count_mean": 2.25,
+      "par_count_stdev": 0.9890707100936805,
+      "par_size_mean": 49.75925925925926,
+      "cohesion_mean": 0.07020513539084836,
+      "par1_ht_rate": 0.37192619216127304,
+      "later_ht_rate": 0.3426651249093572
+    },
+    "PHARMA": {
+      "folio_count": 3,
+      "par_count_mean": 14,
+      "par_count_stdev": 19.924858845171276,
+      "par_size_mean": 12.595238095238095,
+      "cohesion_mean": 0.05575203402544975,
+      "par1_ht_rate": 0.2651955090979481,
+      "later_ht_rate": 0.3839857596340963
+    },
+    "BIO": {
+      "folio_count": 20,
+      "par_count_mean": 7.45,
+      "par_count_stdev": 4.310025033508934,
+      "par_size_mean": 45.97315436241611,
+      "cohesion_mean": 0.07114296750227636,
+      "par1_ht_rate": 0.31072468813020127,
+      "later_ht_rate": 0.39919132839305776
+    },
+    "OTHER": {
+      "folio_count": 2,
+      "par_count_mean": 2.5,
+      "par_count_stdev": 0.7071067811865476,
+      "par_size_mean": 36.6,
+      "cohesion_mean": 0.023561359867330017,
+      "par1_ht_rate": 0.3122362869198312,
+      "later_ht_rate": 0.3232016210739615
+    }
+  }
+}

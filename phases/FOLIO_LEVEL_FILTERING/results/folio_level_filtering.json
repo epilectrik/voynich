@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "phase": "FOLIO_LEVEL_FILTERING",
+    "script": "folio_level_filtering.py",
+    "tests": "T3.1-T3.6 (C704-C709)",
+    "n_a_folios": 114,
+    "n_b_token_types": 4889,
+    "representative_b_folios": [
+      "f26v",
+      "f26r",
+      "f103r",
+      "f31r",
+      "f39r"
+    ]
+  },
+  "T3_1_folio_pp_pool": {
+    "constraint": "C704",
+    "folio_mean": 35.27,
+    "folio_median": 34.0,
+    "folio_min": 20,
+    "folio_max": 88,
+    "folio_std": 10.18,
+    "folio_percentiles": {
+      "p5": 23.6,
+      "p25": 28.0,
+      "p50": 34.0,
+      "p75": 39.0,
+      "p95": 51.3
+    },
+    "record_mean": 5.02,
+    "expansion_factor": 7.03,
+    "pass": true
+  },
+  "T3_2_class_survival": {
+    "constraint": "C705",
+    "folio_mean": 39.75,
+    "folio_median": 40.0,
+    "folio_min": 30,
+    "folio_max": 46,
+    "folio_std": 3.65,
+    "folio_percentiles": {
+      "p5": 33.0,
+      "p25": 37.0,
+      "p50": 40.0,
+      "p75": 43.0,
+      "p95": 45.0
+    },
+    "record_level_reference": 11.08,
+    "improvement_factor": 3.59,
+    "pass": true
+  },
+  "T3_3_b_line_viability": {
+    "constraint": "C706",
+    "n_pairings": 570,
+    "mean_empty_rate": 0.13688,
+    "median_empty_rate": 0.1,
+    "min_empty_rate": 0.0,
+    "max_empty_rate": 0.75,
+    "record_level_reference": 0.78,
+    "pass": true
+  },
+  "T3_4_usability_range": {
+    "constraint": "C707",
+    "mean_usability": 0.10413,
+    "median_usability": 0.08955,
+    "best": {
+      "folio": "f58v",
+      "usability": 0.34342,
+      "n_classes": 46,
+      "legality": 0.34342
+    },
+    "worst_nonzero": {
+      "folio": "f5v",
+      "usability": 0.02399
+    },
+    "dynamic_range": 14.31,
+    "record_level_reference": {
+      "range": 266,
+      "best": 0.107
+    },
+    "pass": "True"
+  },
+  "T3_5_discrimination": {
+    "constraint": "C708",
+    "n_pairs": 6441,
+    "pp_jaccard_mean": 0.27345,
+    "pp_jaccard_median": 0.27083,
+    "pp_jaccard_min": 0.06667,
+    "pp_jaccard_max": 0.5,
+    "pp_jaccard_std": 0.06329,
+    "class_jaccard_mean": 0.82961,
+    "class_jaccard_median": 0.83333,
+    "references": {
+      "c437_azc_jaccard": 0.056,
+      "c689_record_jaccard": 0.199
+    },
+    "pass": true
+  },
+  "T3_6_section_invariance": {
+    "constraint": "C709",
+    "sections": {
+      "H": {
+        "n_folios": 95,
+        "mean_usability": 0.08503,
+        "mean_classes": 38.91,
+        "viable_rate": 1.0
+      },
+      "P": {
+        "n_folios": 16,
+        "mean_usability": 0.1822,
+        "mean_classes": 44.0,
+        "viable_rate": 1.0
+      },
+      "T": {
+        "n_folios": 3,
+        "mean_usability": 0.2927,
+        "mean_classes": 44.0,
+        "viable_rate": 1.0
+      }
+    },
+    "dead_sections": [],
+    "pass": true
+  },
+  "gate": {
+    "threshold": "T3.2 >= 25 classes AND T3.3 < 30% empty AND T3.5 < 0.6 Jaccard",
+    "passed": 6,
+    "total": 6,
+    "core_gate": "PASSED",
+    "overall": "PASSED"
+  }
+}

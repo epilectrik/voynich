@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "phase": "HT_RECONCILIATION",
+    "script": "ht_lane_participation.py",
+    "tests": [
+      "T4",
+      "T5"
+    ]
+  },
+  "T4_lane_distribution": {
+    "ht_lanes": {
+      "QO": 863,
+      "CHSH": 1716,
+      "OTHER": 3314,
+      "NONE": 1149
+    },
+    "ht_total": 7042,
+    "cl_lanes": {
+      "QO": 3206,
+      "CHSH": 4105,
+      "OTHER": 6028,
+      "NONE": 2715
+    },
+    "cl_total": 16054,
+    "chi2": 278.7146,
+    "chi_p": 4.0176039051911116e-60,
+    "dof": 3,
+    "ht_top_prefixes": {
+      "ch": 982,
+      "qo": 863,
+      "sh": 734,
+      "ol": 400,
+      "ot": 311,
+      "ok": 291,
+      "da": 183,
+      "lk": 181,
+      "pch": 155,
+      "al": 150,
+      "yk": 144,
+      "lch": 123,
+      "te": 122,
+      "po": 114,
+      "so": 100
+    },
+    "verdict": "SEGREGATED",
+    "detail": "Chi2=278.71, p=4.02e-60 - different distribution. HT over-represented in OTHER (+9.5pp), under-represented in QO (-7.7pp)"
+  },
+  "T5_lane_transitions": {
+    "total_adj_pairs": 5508,
+    "same_lane": 2074,
+    "diff_lane": 3434,
+    "same_rate": 0.376543,
+    "expected_same_rate": 0.378947,
+    "lift": 0.9937,
+    "ht_cl_transitions": 2748,
+    "ht_cl_same_lane": 1061,
+    "cl_ht_transitions": 2760,
+    "cl_ht_same_lane": 1013,
+    "permutation": {
+      "n_permutations": 1000,
+      "observed_same": 2074,
+      "null_mean": 2126.08,
+      "null_std": 31.429,
+      "z_score": -1.6569,
+      "p_above": 0.952,
+      "p_below": 0.053
+    },
+    "verdict": "NEUTRAL",
+    "detail": "Same-lane rate 37.7% ~ null (38.6%), z=-1.66"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "total_ri_types": 707,
+  "singleton_count": 674,
+  "repeater_count": 33,
+  "position_patterns": {
+    "FINAL+MIDDLE": 10,
+    "MIDDLE": 8,
+    "FINAL+INITIAL+MIDDLE": 3,
+    "INITIAL+MIDDLE": 7,
+    "INITIAL": 3,
+    "FINAL+INITIAL": 1,
+    "FINAL": 1
+  },
+  "linking_candidates": 4,
+  "linking_words": [
+    "ctheody",
+    "ctho",
+    "cthody",
+    "qokoiiin"
+  ]
+}

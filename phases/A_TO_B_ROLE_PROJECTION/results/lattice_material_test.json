@@ -1,0 +1,694 @@
+{
+  "metadata": {
+    "phase": "A_TO_B_ROLE_PROJECTION",
+    "script": "lattice_material_test.py",
+    "description": "PP-PP co-occurrence lattice and material consistency in A records",
+    "n_permutations": 10000
+  },
+  "lattice": {
+    "n_active_pp": 404,
+    "n_records_2plus_pp": 1536,
+    "total_possible_pairs": 81406,
+    "n_legal_pairs": 6488,
+    "incompatibility_rate": 0.9203007149350171,
+    "density": 0.07969928506498293,
+    "mean_pair_recurrence": 4.071670776818742,
+    "max_pair_recurrence": 218,
+    "single_occurrence_pairs": 3965
+  },
+  "role_heterogeneity": {
+    "n_pairs": 2284,
+    "n_different": 1261,
+    "n_same": 1023,
+    "obs_heterogeneity": 0.5521015761821366,
+    "perm_mean": 0.5585276707530649,
+    "perm_std": 0.010200591131608155,
+    "p_value": 0.5474,
+    "direction": "LESS_HETEROGENEOUS",
+    "significant": false,
+    "n_permutations": 10000,
+    "pathway_strata": {
+      "AZC_x_AZC": {
+        "n_pairs": 2069,
+        "n_different": 1117,
+        "heterogeneity": 0.5398743354277429
+      },
+      "BN_x_BN": {
+        "n_pairs": 2,
+        "n_different": 0,
+        "heterogeneity": 0.0
+      },
+      "CROSS": {
+        "n_pairs": 213,
+        "n_different": 144,
+        "heterogeneity": 0.676056338028169
+      }
+    },
+    "record_role_coverage": {
+      "mean_roles_per_record": 1.913355048859935,
+      "n_records": 1535,
+      "perm_mean": 2.130358371335505,
+      "p_value": 0.0216,
+      "significant": true
+    }
+  },
+  "material_consistency": {
+    "n_classified_records": 1531,
+    "consistency_distribution": {
+      "HETEROGENEOUS": 1351,
+      "ALL_MIXED": 171,
+      "ALL_HERB": 9
+    },
+    "obs_consistent": 9,
+    "obs_rate": 0.005878510777269758,
+    "n_records_tested": 1531,
+    "perm_mean": 62.6082,
+    "perm_std": 31.232692691473144,
+    "perm_rate_mean": 0.04089366427171783,
+    "p_one_tailed": 0.9999,
+    "p_two_tailed": 0.0006,
+    "direction": "LESS_CONSISTENT",
+    "significant_one_tailed": false,
+    "significant_two_tailed": true,
+    "n_permutations": 10000,
+    "n_unique_non_neutral_pp": 243,
+    "per_folio_consistency": {
+      "f100r": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f100v": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f101r1": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f101v2": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f102r1": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f102r2": {
+        "consistent": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "f102v1": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f102v2": {
+        "consistent": 0,
+        "total": 18,
+        "rate": 0.0
+      },
+      "f10r": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f10v": {
+        "consistent": 0,
+        "total": 7,
+        "rate": 0.0
+      },
+      "f11r": {
+        "consistent": 0,
+        "total": 7,
+        "rate": 0.0
+      },
+      "f11v": {
+        "consistent": 0,
+        "total": 6,
+        "rate": 0.0
+      },
+      "f13r": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f13v": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f14r": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f14v": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f15r": {
+        "consistent": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "f15v": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f16r": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f16v": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f17r": {
+        "consistent": 2,
+        "total": 11,
+        "rate": 0.18181818181818182
+      },
+      "f17v": {
+        "consistent": 0,
+        "total": 23,
+        "rate": 0.0
+      },
+      "f18r": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f18v": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f19r": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f19v": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f1r": {
+        "consistent": 0,
+        "total": 26,
+        "rate": 0.0
+      },
+      "f1v": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f20r": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f20v": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f21r": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f21v": {
+        "consistent": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "f22r": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f22v": {
+        "consistent": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "f23r": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f23v": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f24r": {
+        "consistent": 0,
+        "total": 19,
+        "rate": 0.0
+      },
+      "f24v": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f25r": {
+        "consistent": 1,
+        "total": 7,
+        "rate": 0.14285714285714285
+      },
+      "f25v": {
+        "consistent": 0,
+        "total": 7,
+        "rate": 0.0
+      },
+      "f27r": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f27v": {
+        "consistent": 0,
+        "total": 7,
+        "rate": 0.0
+      },
+      "f28r": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f28v": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f29r": {
+        "consistent": 1,
+        "total": 9,
+        "rate": 0.1111111111111111
+      },
+      "f29v": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f2r": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f2v": {
+        "consistent": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "f30r": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f30v": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f32r": {
+        "consistent": 0,
+        "total": 18,
+        "rate": 0.0
+      },
+      "f32v": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f35r": {
+        "consistent": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "f35v": {
+        "consistent": 0,
+        "total": 20,
+        "rate": 0.0
+      },
+      "f36r": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f36v": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f37r": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f37v": {
+        "consistent": 0,
+        "total": 22,
+        "rate": 0.0
+      },
+      "f38r": {
+        "consistent": 0,
+        "total": 6,
+        "rate": 0.0
+      },
+      "f38v": {
+        "consistent": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "f3r": {
+        "consistent": 0,
+        "total": 20,
+        "rate": 0.0
+      },
+      "f3v": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f42r": {
+        "consistent": 0,
+        "total": 23,
+        "rate": 0.0
+      },
+      "f42v": {
+        "consistent": 0,
+        "total": 15,
+        "rate": 0.0
+      },
+      "f44r": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f44v": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f45r": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f45v": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f47r": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f47v": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f49r": {
+        "consistent": 0,
+        "total": 21,
+        "rate": 0.0
+      },
+      "f49v": {
+        "consistent": 1,
+        "total": 26,
+        "rate": 0.038461538461538464
+      },
+      "f4r": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f4v": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f51r": {
+        "consistent": 1,
+        "total": 15,
+        "rate": 0.06666666666666667
+      },
+      "f51v": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f52r": {
+        "consistent": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "f52v": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f53r": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f53v": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f54r": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f54v": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f56r": {
+        "consistent": 2,
+        "total": 19,
+        "rate": 0.10526315789473684
+      },
+      "f56v": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f58r": {
+        "consistent": 0,
+        "total": 41,
+        "rate": 0.0
+      },
+      "f58v": {
+        "consistent": 0,
+        "total": 39,
+        "rate": 0.0
+      },
+      "f5r": {
+        "consistent": 0,
+        "total": 7,
+        "rate": 0.0
+      },
+      "f5v": {
+        "consistent": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "f6r": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f6v": {
+        "consistent": 0,
+        "total": 21,
+        "rate": 0.0
+      },
+      "f7r": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f7v": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f87r": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f87v": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f88r": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f88v": {
+        "consistent": 0,
+        "total": 17,
+        "rate": 0.0
+      },
+      "f89r1": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f89r2": {
+        "consistent": 0,
+        "total": 14,
+        "rate": 0.0
+      },
+      "f89v1": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f89v2": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      },
+      "f8r": {
+        "consistent": 0,
+        "total": 20,
+        "rate": 0.0
+      },
+      "f8v": {
+        "consistent": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "f90r1": {
+        "consistent": 0,
+        "total": 9,
+        "rate": 0.0
+      },
+      "f90r2": {
+        "consistent": 0,
+        "total": 6,
+        "rate": 0.0
+      },
+      "f90v1": {
+        "consistent": 0,
+        "total": 11,
+        "rate": 0.0
+      },
+      "f90v2": {
+        "consistent": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "f93r": {
+        "consistent": 0,
+        "total": 31,
+        "rate": 0.0
+      },
+      "f93v": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f96r": {
+        "consistent": 1,
+        "total": 13,
+        "rate": 0.07692307692307693
+      },
+      "f96v": {
+        "consistent": 0,
+        "total": 13,
+        "rate": 0.0
+      },
+      "f99r": {
+        "consistent": 0,
+        "total": 18,
+        "rate": 0.0
+      },
+      "f99v": {
+        "consistent": 0,
+        "total": 18,
+        "rate": 0.0
+      },
+      "f9r": {
+        "consistent": 0,
+        "total": 10,
+        "rate": 0.0
+      },
+      "f9v": {
+        "consistent": 0,
+        "total": 12,
+        "rate": 0.0
+      }
+    },
+    "material_role_crosstab": {
+      "materials": [
+        "ANIMAL",
+        "HERB",
+        "MIXED"
+      ],
+      "roles": [
+        "AUXILIARY",
+        "ENERGY_OPERATOR",
+        "FLOW_OPERATOR",
+        "FREQUENT_OPERATOR"
+      ],
+      "table": [
+        [
+          8.0,
+          9.0,
+          0.0,
+          0.0
+        ],
+        [
+          11.0,
+          13.0,
+          2.0,
+          0.0
+        ],
+        [
+          24.0,
+          14.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "chi2": 2.4511893200498514,
+      "df": 6,
+      "p": 0.8738898640356825,
+      "cramers_v": 0.12151625703251345,
+      "significant": false,
+      "warning": "Some expected counts < 5"
+    }
+  },
+  "summary": {
+    "lattice_density": "0.0797 (SPARSE)",
+    "n_legal_pairs": 6488,
+    "n_active_pp": 404,
+    "role_heterogeneity_verdict": "ROLE_MIXING_AS_EXPECTED",
+    "material_consistency_verdict": "MATERIAL_CONSISTENCY_AT_CHANCE"
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "b_folio_stats": {
+    "f103r": {
+      "vocab_size": 113,
+      "zodiac_coverage": 0.6283185840707964,
+      "ac_coverage": 0.5929203539823009,
+      "coverage_ratio": 1.0597014925373134
+    },
+    "f103v": {
+      "vocab_size": 89,
+      "zodiac_coverage": 0.6853932584269663,
+      "ac_coverage": 0.5955056179775281,
+      "coverage_ratio": 1.150943396226415
+    },
+    "f104r": {
+      "vocab_size": 133,
+      "zodiac_coverage": 0.5413533834586466,
+      "ac_coverage": 0.5864661654135338,
+      "coverage_ratio": 0.9230769230769231
+    },
+    "f104v": {
+      "vocab_size": 129,
+      "zodiac_coverage": 0.5736434108527132,
+      "ac_coverage": 0.5968992248062015,
+      "coverage_ratio": 0.9610389610389611
+    },
+    "f105r": {
+      "vocab_size": 126,
+      "zodiac_coverage": 0.5476190476190477,
+      "ac_coverage": 0.5476190476190477,
+      "coverage_ratio": 1.0
+    },
+    "f105v": {
+      "vocab_size": 128,
+      "zodiac_coverage": 0.5,
+      "ac_coverage": 0.5,
+      "coverage_ratio": 1.0
+    },
+    "f106r": {
+      "vocab_size": 136,
+      "zodiac_coverage": 0.5367647058823529,
+      "ac_coverage": 0.5367647058823529,
+      "coverage_ratio": 1.0
+    },
+    "f106v": {
+      "vocab_size": 118,
+      "zodiac_coverage": 0.6016949152542372,
+      "ac_coverage": 0.5677966101694916,
+      "coverage_ratio": 1.0597014925373132
+    },
+    "f107r": {
+      "vocab_size": 119,
+      "zodiac_coverage": 0.5798319327731093,
+      "ac_coverage": 0.5714285714285714,
+      "coverage_ratio": 1.0147058823529413
+    },
+    "f107v": {
+      "vocab_size": 95,
+      "zodiac_coverage": 0.6631578947368421,
+      "ac_coverage": 0.6,
+      "coverage_ratio": 1.1052631578947367
+    },
+    "f108r": {
+      "vocab_size": 112,
+      "zodiac_coverage": 0.6071428571428571,
+      "ac_coverage": 0.5982142857142857,
+      "coverage_ratio": 1.0149253731343284
+    },
+    "f108v": {
+      "vocab_size": 107,
+      "zodiac_coverage": 0.5700934579439252,
+      "ac_coverage": 0.5794392523364486,
+      "coverage_ratio": 0.9838709677419355
+    },
+    "f111r": {
+      "vocab_size": 127,
+      "zodiac_coverage": 0.6299212598425197,
+      "ac_coverage": 0.5511811023622047,
+      "coverage_ratio": 1.1428571428571428
+    },
+    "f111v": {
+      "vocab_size": 105,
+      "zodiac_coverage": 0.6,
+      "ac_coverage": 0.5904761904761905,
+      "coverage_ratio": 1.0161290322580645
+    },
+    "f112r": {
+      "vocab_size": 106,
+      "zodiac_coverage": 0.6320754716981132,
+      "ac_coverage": 0.6509433962264151,
+      "coverage_ratio": 0.9710144927536232
+    },
+    "f112v": {
+      "vocab_size": 106,
+      "zodiac_coverage": 0.6226415094339622,
+      "ac_coverage": 0.6132075471698113,
+      "coverage_ratio": 1.0153846153846153
+    },
+    "f113r": {
+      "vocab_size": 144,
+      "zodiac_coverage": 0.5555555555555556,
+      "ac_coverage": 0.5902777777777778,
+      "coverage_ratio": 0.9411764705882353
+    },
+    "f113v": {
+      "vocab_size": 124,
+      "zodiac_coverage": 0.6129032258064516,
+      "ac_coverage": 0.5887096774193549,
+      "coverage_ratio": 1.0410958904109588
+    },
+    "f114r": {
+      "vocab_size": 145,
+      "zodiac_coverage": 0.47586206896551725,
+      "ac_coverage": 0.47586206896551725,
+      "coverage_ratio": 1.0
+    },
+    "f114v": {
+      "vocab_size": 120,
+      "zodiac_coverage": 0.5833333333333334,
+      "ac_coverage": 0.5583333333333333,
+      "coverage_ratio": 1.0447761194029852
+    },
+    "f115r": {
+      "vocab_size": 137,
+      "zodiac_coverage": 0.5255474452554745,
+      "ac_coverage": 0.5182481751824818,
+      "coverage_ratio": 1.0140845070422535
+    },
+    "f115v": {
+      "vocab_size": 127,
+      "zodiac_coverage": 0.5590551181102362,
+      "ac_coverage": 0.5905511811023622,
+      "coverage_ratio": 0.9466666666666668
+    },
+    "f116r": {
+      "vocab_size": 94,
+      "zodiac_coverage": 0.6702127659574468,
+      "ac_coverage": 0.6276595744680851,
+      "coverage_ratio": 1.0677966101694916
+    },
+    "f26r": {
+      "vocab_size": 42,
+      "zodiac_coverage": 0.6428571428571429,
+      "ac_coverage": 0.6904761904761905,
+      "coverage_ratio": 0.9310344827586208
+    },
+    "f26v": {
+      "vocab_size": 48,
+      "zodiac_coverage": 0.8541666666666666,
+      "ac_coverage": 0.8541666666666666,
+      "coverage_ratio": 1.0
+    },
+    "f31r": {
+      "vocab_size": 46,
+      "zodiac_coverage": 0.717391304347826,
+      "ac_coverage": 0.717391304347826,
+      "coverage_ratio": 1.0
+    },
+    "f31v": {
+      "vocab_size": 47,
+      "zodiac_coverage": 0.723404255319149,
+      "ac_coverage": 0.7446808510638298,
+      "coverage_ratio": 0.9714285714285715
+    },
+    "f33r": {
+      "vocab_size": 36,
+      "zodiac_coverage": 0.8055555555555556,
+      "ac_coverage": 0.6944444444444444,
+      "coverage_ratio": 1.1600000000000001
+    },
+    "f33v": {
+      "vocab_size": 35,
+      "zodiac_coverage": 0.8857142857142857,
+      "ac_coverage": 0.8857142857142857,
+      "coverage_ratio": 1.0
+    },
+    "f34r": {
+      "vocab_size": 61,
+      "zodiac_coverage": 0.7704918032786885,
+      "ac_coverage": 0.7704918032786885,
+      "coverage_ratio": 1.0
+    },
+    "f34v": {
+      "vocab_size": 50,
+      "zodiac_coverage": 0.78,
+      "ac_coverage": 0.74,
+      "coverage_ratio": 1.0540540540540542
+    },
+    "f39r": {
+      "vocab_size": 64,
+      "zodiac_coverage": 0.640625,
+      "ac_coverage": 0.65625,
+      "coverage_ratio": 0.9761904761904762
+    },
+    "f39v": {
+      "vocab_size": 50,
+      "zodiac_coverage": 0.76,
+      "ac_coverage": 0.74,
+      "coverage_ratio": 1.027027027027027
+    },
+    "f40r": {
+      "vocab_size": 39,
+      "zodiac_coverage": 0.8717948717948718,
+      "ac_coverage": 0.9230769230769231,
+      "coverage_ratio": 0.9444444444444444
+    },
+    "f40v": {
+      "vocab_size": 39,
+      "zodiac_coverage": 0.8717948717948718,
+      "ac_coverage": 0.8205128205128205,
+      "coverage_ratio": 1.0625
+    },
+    "f41r": {
+      "vocab_size": 52,
+      "zodiac_coverage": 0.6923076923076923,
+      "ac_coverage": 0.6730769230769231,
+      "coverage_ratio": 1.0285714285714285
+    },
+    "f41v": {
+      "vocab_size": 36,
+      "zodiac_coverage": 0.8611111111111112,
+      "ac_coverage": 0.8888888888888888,
+      "coverage_ratio": 0.9687500000000001
+    },
+    "f43r": {
+      "vocab_size": 66,
+      "zodiac_coverage": 0.6818181818181818,
+      "ac_coverage": 0.696969696969697,
+      "coverage_ratio": 0.9782608695652173
+    },
+    "f43v": {
+      "vocab_size": 64,
+      "zodiac_coverage": 0.765625,
+      "ac_coverage": 0.734375,
+      "coverage_ratio": 1.0425531914893618
+    },
+    "f46r": {
+      "vocab_size": 70,
+      "zodiac_coverage": 0.6428571428571429,
+      "ac_coverage": 0.6428571428571429,
+      "coverage_ratio": 1.0
+    },
+    "f46v": {
+      "vocab_size": 52,
+      "zodiac_coverage": 0.8076923076923077,
+      "ac_coverage": 0.75,
+      "coverage_ratio": 1.0769230769230769
+    },
+    "f48r": {
+      "vocab_size": 52,
+      "zodiac_coverage": 0.8269230769230769,
+      "ac_coverage": 0.8076923076923077,
+      "coverage_ratio": 1.0238095238095237
+    },
+    "f48v": {
+      "vocab_size": 50,
+      "zodiac_coverage": 0.8,
+      "ac_coverage": 0.86,
+      "coverage_ratio": 0.930232558139535
+    },
+    "f50r": {
+      "vocab_size": 43,
+      "zodiac_coverage": 0.6046511627906976,
+      "ac_coverage": 0.6511627906976745,
+      "coverage_ratio": 0.9285714285714285
+    },
+    "f50v": {
+      "vocab_size": 45,
+      "zodiac_coverage": 0.7333333333333333,
+      "ac_coverage": 0.7555555555555555,
+      "coverage_ratio": 0.9705882352941176
+    },
+    "f55r": {
+      "vocab_size": 51,
+      "zodiac_coverage": 0.7647058823529411,
+      "ac_coverage": 0.7647058823529411,
+      "coverage_ratio": 1.0
+    },
+    "f55v": {
+      "vocab_size": 45,
+      "zodiac_coverage": 0.7555555555555555,
+      "ac_coverage": 0.8222222222222222,
+      "coverage_ratio": 0.918918918918919
+    },
+    "f57r": {
+      "vocab_size": 61,
+      "zodiac_coverage": 0.6885245901639344,
+      "ac_coverage": 0.6721311475409836,
+      "coverage_ratio": 1.024390243902439
+    },
+    "f66r": {
+      "vocab_size": 117,
+      "zodiac_coverage": 0.6153846153846154,
+      "ac_coverage": 0.5982905982905983,
+      "coverage_ratio": 1.0285714285714287
+    },
+    "f66v": {
+      "vocab_size": 61,
+      "zodiac_coverage": 0.6721311475409836,
+      "ac_coverage": 0.639344262295082,
+      "coverage_ratio": 1.051282051282051
+    },
+    "f75r": {
+      "vocab_size": 66,
+      "zodiac_coverage": 0.7424242424242424,
+      "ac_coverage": 0.7727272727272727,
+      "coverage_ratio": 0.9607843137254902
+    },
+    "f75v": {
+      "vocab_size": 74,
+      "zodiac_coverage": 0.6486486486486487,
+      "ac_coverage": 0.6351351351351351,
+      "coverage_ratio": 1.021276595744681
+    },
+    "f76r": {
+      "vocab_size": 96,
+      "zodiac_coverage": 0.5729166666666666,
+      "ac_coverage": 0.5520833333333334,
+      "coverage_ratio": 1.0377358490566035
+    },
+    "f76v": {
+      "vocab_size": 93,
+      "zodiac_coverage": 0.5806451612903226,
+      "ac_coverage": 0.5806451612903226,
+      "coverage_ratio": 1.0
+    },
+    "f77r": {
+      "vocab_size": 77,
+      "zodiac_coverage": 0.6363636363636364,
+      "ac_coverage": 0.6753246753246753,
+      "coverage_ratio": 0.9423076923076923
+    },
+    "f77v": {
+      "vocab_size": 71,
+      "zodiac_coverage": 0.6619718309859155,
+      "ac_coverage": 0.704225352112676,
+      "coverage_ratio": 0.9400000000000001
+    },
+    "f78r": {
+      "vocab_size": 71,
+      "zodiac_coverage": 0.676056338028169,
+      "ac_coverage": 0.704225352112676,
+      "coverage_ratio": 0.9600000000000001
+    },
+    "f78v": {
+      "vocab_size": 59,
+      "zodiac_coverage": 0.8135593220338984,
+      "ac_coverage": 0.8135593220338984,
+      "coverage_ratio": 1.0
+    },
+    "f79r": {
+      "vocab_size": 75,
+      "zodiac_coverage": 0.6666666666666666,
+      "ac_coverage": 0.72,
+      "coverage_ratio": 0.9259259259259259
+    },
+    "f79v": {
+      "vocab_size": 78,
+      "zodiac_coverage": 0.6410256410256411,
+      "ac_coverage": 0.7051282051282052,
+      "coverage_ratio": 0.9090909090909091
+    },
+    "f80r": {
+      "vocab_size": 82,
+      "zodiac_coverage": 0.6951219512195121,
+      "ac_coverage": 0.6219512195121951,
+      "coverage_ratio": 1.1176470588235294
+    },
+    "f80v": {
+      "vocab_size": 64,
+      "zodiac_coverage": 0.640625,
+      "ac_coverage": 0.65625,
+      "coverage_ratio": 0.9761904761904762
+    },
+    "f81r": {
+      "vocab_size": 54,
+      "zodiac_coverage": 0.7037037037037037,
+      "ac_coverage": 0.7037037037037037,
+      "coverage_ratio": 1.0
+    },
+    "f81v": {
+      "vocab_size": 67,
+      "zodiac_coverage": 0.7014925373134329,
+      "ac_coverage": 0.7313432835820896,
+      "coverage_ratio": 0.9591836734693878
+    },
+    "f82r": {
+      "vocab_size": 64,
+      "zodiac_coverage": 0.71875,
+      "ac_coverage": 0.6875,
+      "coverage_ratio": 1.0454545454545454
+    },
+    "f82v": {
+      "vocab_size": 79,
+      "zodiac_coverage": 0.5822784810126582,
+      "ac_coverage": 0.5822784810126582,
+      "coverage_ratio": 1.0
+    },
+    "f83r": {
+      "vocab_size": 90,
+      "zodiac_coverage": 0.5444444444444444,
+      "ac_coverage": 0.5444444444444444,
+      "coverage_ratio": 1.0
+    },
+    "f83v": {
+      "vocab_size": 69,
+      "zodiac_coverage": 0.6521739130434783,
+      "ac_coverage": 0.5797101449275363,
+      "coverage_ratio": 1.125
+    },
+    "f84r": {
+      "vocab_size": 69,
+      "zodiac_coverage": 0.6666666666666666,
+      "ac_coverage": 0.7101449275362319,
+      "coverage_ratio": 0.9387755102040816
+    },
+    "f84v": {
+      "vocab_size": 64,
+      "zodiac_coverage": 0.703125,
+      "ac_coverage": 0.8125,
+      "coverage_ratio": 0.8653846153846154
+    },
+    "f85r1": {
+      "vocab_size": 107,
+      "zodiac_coverage": 0.5794392523364486,
+      "ac_coverage": 0.5607476635514018,
+      "coverage_ratio": 1.0333333333333334
+    },
+    "f85r2": {
+      "vocab_size": 66,
+      "zodiac_coverage": 0.7272727272727273,
+      "ac_coverage": 0.696969696969697,
+      "coverage_ratio": 1.0434782608695652
+    },
+    "f86v3": {
+      "vocab_size": 84,
+      "zodiac_coverage": 0.6666666666666666,
+      "ac_coverage": 0.5952380952380952,
+      "coverage_ratio": 1.1199999999999999
+    },
+    "f86v4": {
+      "vocab_size": 82,
+      "zodiac_coverage": 0.6707317073170732,
+      "ac_coverage": 0.6463414634146342,
+      "coverage_ratio": 1.0377358490566038
+    },
+    "f86v5": {
+      "vocab_size": 92,
+      "zodiac_coverage": 0.7282608695652174,
+      "ac_coverage": 0.6847826086956522,
+      "coverage_ratio": 1.0634920634920635
+    },
+    "f86v6": {
+      "vocab_size": 125,
+      "zodiac_coverage": 0.552,
+      "ac_coverage": 0.536,
+      "coverage_ratio": 1.0298507462686568
+    },
+    "f94r": {
+      "vocab_size": 46,
+      "zodiac_coverage": 0.8043478260869565,
+      "ac_coverage": 0.8260869565217391,
+      "coverage_ratio": 0.9736842105263158
+    },
+    "f94v": {
+      "vocab_size": 46,
+      "zodiac_coverage": 0.782608695652174,
+      "ac_coverage": 0.8043478260869565,
+      "coverage_ratio": 0.972972972972973
+    },
+    "f95r1": {
+      "vocab_size": 38,
+      "zodiac_coverage": 0.9210526315789473,
+      "ac_coverage": 0.7105263157894737,
+      "coverage_ratio": 1.2962962962962963
+    },
+    "f95r2": {
+      "vocab_size": 36,
+      "zodiac_coverage": 0.8611111111111112,
+      "ac_coverage": 0.8611111111111112,
+      "coverage_ratio": 1.0
+    },
+    "f95v1": {
+      "vocab_size": 51,
+      "zodiac_coverage": 0.6274509803921569,
+      "ac_coverage": 0.6470588235294118,
+      "coverage_ratio": 0.9696969696969696
+    },
+    "f95v2": {
+      "vocab_size": 29,
+      "zodiac_coverage": 0.896551724137931,
+      "ac_coverage": 0.8275862068965517,
+      "coverage_ratio": 1.0833333333333333
+    }
+  },
+  "summary": {
+    "zodiac_middles": 372,
+    "ac_middles": 372,
+    "shared_middles": 139,
+    "zodiac_only": 233,
+    "ac_only": 233,
+    "zodiac_mean_coverage": 0.6805450219870226,
+    "ac_mean_coverage": 0.674544614018985,
+    "paired_ttest_p": 0.23348918034198268,
+    "wilcoxon_p": 0.43765230704721036,
+    "coverage_correlation": 0.90326946813785,
+    "zodiac_preferred_count": 1,
+    "ac_preferred_count": 0,
+    "balanced_count": 81
+  },
+  "verdict": "FAMILIES_REDUNDANT"
+}

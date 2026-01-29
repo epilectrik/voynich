@@ -1,0 +1,208 @@
+{
+  "total_fl_tokens": 1078,
+  "unique_fl_middles": 17,
+  "fl_middle_counts": {
+    "dy": 6,
+    "r": 188,
+    "ar": 248,
+    "l": 130,
+    "ii": 7,
+    "i": 49,
+    "al": 197,
+    "y": 33,
+    "m": 42,
+    "in": 113,
+    "ly": 17,
+    "am": 8,
+    "ol": 10,
+    "o": 11,
+    "ry": 13,
+    "im": 4,
+    "n": 2
+  },
+  "position_stats": [
+    {
+      "middle": "ii",
+      "count": 7,
+      "mean_pos": 0.29931972789115646,
+      "min_pos": 0.0,
+      "max_pos": 0.8888888888888888,
+      "spread": 0.8888888888888888
+    },
+    {
+      "middle": "i",
+      "count": 49,
+      "mean_pos": 0.34498483376034395,
+      "min_pos": 0.0,
+      "max_pos": 1.0,
+      "spread": 1.0
+    },
+    {
+      "middle": "in",
+      "count": 113,
+      "mean_pos": 0.4214534727809063,
+      "min_pos": 0.0,
+      "max_pos": 1.0,
+      "spread": 1.0
+    },
+    {
+      "middle": "r",
+      "count": 188,
+      "mean_pos": 0.5073815761124648,
+      "min_pos": 0.0,
+      "max_pos": 1.0,
+      "spread": 1.0
+    },
+    {
+      "middle": "ar",
+      "count": 248,
+      "mean_pos": 0.5449640122496897,
+      "min_pos": 0.0,
+      "max_pos": 1.0,
+      "spread": 1.0
+    },
+    {
+      "middle": "al",
+      "count": 197,
+      "mean_pos": 0.6057733321084255,
+      "min_pos": 0.07692307692307693,
+      "max_pos": 1.0,
+      "spread": 0.9230769230769231
+    },
+    {
+      "middle": "l",
+      "count": 130,
+      "mean_pos": 0.6177093419401111,
+      "min_pos": 0.0,
+      "max_pos": 1.0,
+      "spread": 1.0
+    },
+    {
+      "middle": "ol",
+      "count": 10,
+      "mean_pos": 0.6433477633477633,
+      "min_pos": 0.1111111111111111,
+      "max_pos": 1.0,
+      "spread": 0.8888888888888888
+    },
+    {
+      "middle": "o",
+      "count": 11,
+      "mean_pos": 0.750596877869605,
+      "min_pos": 0.1111111111111111,
+      "max_pos": 1.0,
+      "spread": 0.8888888888888888
+    },
+    {
+      "middle": "ly",
+      "count": 17,
+      "mean_pos": 0.7851752822341057,
+      "min_pos": 0.3,
+      "max_pos": 1.0,
+      "spread": 0.7
+    },
+    {
+      "middle": "am",
+      "count": 8,
+      "mean_pos": 0.8016191325014854,
+      "min_pos": 0.20588235294117646,
+      "max_pos": 1.0,
+      "spread": 0.7941176470588236
+    },
+    {
+      "middle": "n",
+      "count": 2,
+      "mean_pos": 0.8111111111111111,
+      "min_pos": 0.6222222222222222,
+      "max_pos": 1.0,
+      "spread": 0.37777777777777777
+    },
+    {
+      "middle": "im",
+      "count": 4,
+      "mean_pos": 0.8578431372549019,
+      "min_pos": 0.6666666666666666,
+      "max_pos": 1.0,
+      "spread": 0.33333333333333337
+    },
+    {
+      "middle": "m",
+      "count": 42,
+      "mean_pos": 0.8605270390984676,
+      "min_pos": 0.1111111111111111,
+      "max_pos": 1.0,
+      "spread": 0.8888888888888888
+    },
+    {
+      "middle": "dy",
+      "count": 6,
+      "mean_pos": 0.9075757575757576,
+      "min_pos": 0.5454545454545454,
+      "max_pos": 1.0,
+      "spread": 0.4545454545454546
+    },
+    {
+      "middle": "ry",
+      "count": 13,
+      "mean_pos": 0.9128510378510378,
+      "min_pos": 0.625,
+      "max_pos": 1.0,
+      "spread": 0.375
+    },
+    {
+      "middle": "y",
+      "count": 33,
+      "mean_pos": 0.9423059263968355,
+      "min_pos": 0.25,
+      "max_pos": 1.0,
+      "spread": 0.75
+    }
+  ],
+  "stage_class_distribution": {
+    "TERMINAL": {
+      "hazard": 42,
+      "safe": 66
+    },
+    "MEDIAL": {
+      "hazard": 752,
+      "safe": 21
+    },
+    "INITIAL": {
+      "hazard": 49,
+      "safe": 7
+    },
+    "EARLY": {
+      "hazard": 113,
+      "safe": 0
+    },
+    "LATE": {
+      "hazard": 0,
+      "safe": 28
+    }
+  },
+  "character_groups": {
+    "i_forms": [
+      "ii",
+      "i",
+      "in",
+      "im"
+    ],
+    "consonant_forms": [
+      "r",
+      "ar",
+      "al",
+      "l",
+      "ol",
+      "o",
+      "am",
+      "n",
+      "m"
+    ],
+    "y_forms": [
+      "ly",
+      "dy",
+      "ry",
+      "y"
+    ]
+  }
+}

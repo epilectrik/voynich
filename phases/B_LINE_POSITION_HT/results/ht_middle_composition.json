@@ -1,0 +1,49 @@
+{
+  "line1_ht": {
+    "total_tokens": 456,
+    "classification": {
+      "PP": 312,
+      "RI": 0,
+      "B_EXCL": 144,
+      "UNKNOWN": 0
+    },
+    "classification_pct": {
+      "PP": 68.42105263157895,
+      "RI": 0.0,
+      "B_EXCL": 31.57894736842105,
+      "UNKNOWN": 0.0
+    },
+    "b_excl_unique_count": 133,
+    "b_excl_with_pp_atom": 123,
+    "b_excl_with_ri_atom": 40,
+    "b_excl_with_both": 40,
+    "b_excl_with_neither": 10
+  },
+  "working_ht": {
+    "total_tokens": 6586,
+    "classification": {
+      "PP": 5276,
+      "RI": 0,
+      "B_EXCL": 1310,
+      "UNKNOWN": 0
+    },
+    "classification_pct": {
+      "PP": 80.10932280595202,
+      "RI": 0.0,
+      "B_EXCL": 19.89067719404798,
+      "UNKNOWN": 0.0
+    },
+    "b_excl_unique_count": 844,
+    "b_excl_with_pp_atom": 794,
+    "b_excl_with_ri_atom": 242,
+    "b_excl_with_both": 240,
+    "b_excl_with_neither": 48
+  },
+  "comparison": {
+    "pp_rate_delta": -11.688270174373073,
+    "b_excl_rate_delta": 11.68827017437307,
+    "ri_atom_containment_delta": 1.4022021879342894
+  },
+  "verdict": "NO_RI_DERIVATION",
+  "explanation": "No evidence of RI derivation pathway in line-1 HT"
+}

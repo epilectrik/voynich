@@ -1,0 +1,36 @@
+def shannon_entropy(counter):
+    total = sum(counter.values())
+    if total == 0:
+        return 0.0
+    probs = [c / total for c in counter.values() if c     return -sum(p * math.log2(p) for p in probs)
+
+
+def mw_report(a, b, la, lb, name):
+    a = np.array(a, dtype=float)
+    b = np.array(b, dtype=float)
+    r = {}
+    r["metric"] = name
+    r["group_a"] = la
+    r["group_b"] = lb
+    r["n_a"] = len(a)
+    r["n_b"] = len(b)
+    r["mean_a"] = float(np.mean(a)) if len(a)  else None
+    r["mean_b"] = float(np.mean(b)) if len(b)  else None
+    r["median_a"] = float(np.median(a)) if len(a)  else None
+    r["median_b"] = float(np.median(b)) if len(b)  else None
+    r["std_a"] = float(np.std(a, ddof=1)) if len(a)  else None
+    r["std_b"] = float(np.std(b, ddof=1)) if len(b)  else None
+    if len(a)  and len(b)         stat, pval = stats.mannwhitneyu(a, b, alternative="two-sided")
+        r["U_statistic"] = float(stat)
+        r["p_value"] = float(pval)
+        n1n2 = len(a) * len(b)
+        r["rank_biserial"] = float(1 - 2 * stat / n1n2) if n1n2  else None
+        ps = math.sqrt(((len(a)-1)*np.var(a,ddof=1)+(len(b)-1)*np.var(b,ddof=1))/(len(a)+len(b)-2)) if (len(a)+len(b)) else 1.0
+        r["cohens_d"] = float((np.mean(a)-np.mean(b))/ps) if ps  else None
+    else:
+        r["U_statistic"] = None
+        r["p_value"] = None
+        r["rank_biserial"] = None
+        r["cohens_d"] = None
+    return r
+

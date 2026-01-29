@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "phase": "HT_RECONCILIATION",
+    "script": "ht_coverage_impact.py",
+    "tests": [
+      "T6",
+      "T7"
+    ],
+    "n_a_folios": 114,
+    "n_b_folios": 82
+  },
+  "T6_operational_coverage": {
+    "full_metrics": {
+      "mean_coverage": 0.309932,
+      "a_var_share_pct": 70.76,
+      "b_var_share_pct": 20.05,
+      "mean_lift": 2.2132,
+      "total_var": 0.01407682
+    },
+    "classified_only_metrics": {
+      "mean_coverage": 0.431761,
+      "a_var_share_pct": 78.67,
+      "b_var_share_pct": 11.27,
+      "mean_lift": 2.048,
+      "total_var": 0.0201289
+    },
+    "deltas_pct": {
+      "mean_coverage": 39.31,
+      "a_var_share_pct": 11.18,
+      "b_var_share_pct": 43.79,
+      "mean_lift": 7.46,
+      "total_var": 42.99
+    },
+    "max_delta_pct": 43.79,
+    "per_b_folio_correlation": {
+      "r": 0.850207,
+      "p": 5.321020098218994e-24
+    },
+    "verdict": "MATERIAL",
+    "detail": "Max delta 43.8% > 20% - HT materially affects routing (review C404)"
+  },
+  "T7_ht_folio_distribution": {
+    "global_ht_density": 0.304901,
+    "density_stats": {
+      "mean": 0.309665,
+      "std": 0.075766,
+      "min": 0.15534,
+      "max": 0.47191,
+      "median": 0.301867,
+      "q1": 0.240399,
+      "q3": 0.369086
+    },
+    "chi_squared_gof": {
+      "chi2": 429.7203,
+      "p": 6.109438598031636e-49,
+      "n_folios_tested": 82
+    },
+    "correlations": {
+      "density_vs_size": {
+        "r": -0.110301,
+        "p": 0.32389
+      },
+      "density_vs_cl_vocab": {
+        "r": -0.100888,
+        "p": 0.36713
+      },
+      "density_vs_coverage": {
+        "r": -0.375885,
+        "p": 0.000501
+      }
+    },
+    "lowest_density": {
+      "f75r": 0.15534,
+      "f78v": 0.174658,
+      "f81r": 0.178744,
+      "f75v": 0.19174,
+      "f40v": 0.207547
+    },
+    "highest_density": {
+      "f95v1": 0.435897,
+      "f48r": 0.438202,
+      "f57r": 0.448276,
+      "f115v": 0.461153,
+      "f26v": 0.47191
+    },
+    "verdict": "STRUCTURED",
+    "detail": "Chi2=429.72, p=6.11e-49 - HT density varies significantly by folio | COMPENSATORY: HT fills coverage gaps (negative correlation with coverage)"
+  }
+}

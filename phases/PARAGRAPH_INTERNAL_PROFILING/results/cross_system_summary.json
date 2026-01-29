@@ -1,0 +1,72 @@
+{
+  "system_counts": {
+    "A": 342,
+    "B": 585
+  },
+  "comparisons": {
+    "line_count": {
+      "A": {
+        "mean": 4.8,
+        "median": 4.0,
+        "stdev": 4.06
+      },
+      "B": {
+        "mean": 4.37,
+        "median": 3,
+        "stdev": 3.82
+      }
+    },
+    "token_count": {
+      "A": {
+        "mean": 32.67,
+        "median": 33.0
+      },
+      "B": {
+        "mean": 39.48,
+        "median": 32
+      }
+    },
+    "tokens_per_line": {
+      "A": {
+        "mean": 5.81,
+        "median": 6.5
+      },
+      "B": {
+        "mean": 8.04,
+        "median": 9.2
+      }
+    },
+    "header_enrichment": {
+      "A": {
+        "metric": "RI_concentration_line1",
+        "mean": 3.84,
+        "interpretation": "line1_RI_rate / body_RI_rate"
+      },
+      "B": {
+        "metric": "HT_delta",
+        "mean": 0.134,
+        "line1_ht_mean": 0.465,
+        "body_ht_mean": 0.237,
+        "interpretation": "line1_HT_rate - body_HT_rate"
+      }
+    },
+    "gallows_initial": {
+      "A": {
+        "note": "See C841 - historically similar gallows-initial pattern"
+      },
+      "B": {
+        "rate": 0.586,
+        "expected": 0.715
+      }
+    }
+  },
+  "tests": {
+    "line_count_cohens_d": 0.11,
+    "token_count_cohens_d": -0.192,
+    "line_count_mannwhitney": {
+      "U": 107164.0,
+      "p": 0.06683,
+      "significant": false
+    }
+  }
+}

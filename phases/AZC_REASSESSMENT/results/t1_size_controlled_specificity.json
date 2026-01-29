@@ -1,0 +1,24 @@
+{
+  "test": "T1_size_controlled_specificity",
+  "per_b_folio": {
+    "mean_partial_r": 0.2996260623380738,
+    "median_partial_r": 0.3328050272638573,
+    "std_partial_r": 0.13246596185676932,
+    "significant_count": 71,
+    "total_b_folios": 82
+  },
+  "global": {
+    "n_pairs": 9348,
+    "raw_size_coverage_r": -0.0014762457260499605,
+    "raw_jaccard_coverage_r": -0.036817289952137594,
+    "raw_size_jaccard_r": 0.2604863282791519,
+    "partial_r": -0.037735510624345034,
+    "partial_p": 0.00026298482605113615
+  },
+  "threshold": {
+    "r": 0.15,
+    "p": 0.01
+  },
+  "verdict": "NO_SIGNAL",
+  "explanation": "Partial r=-0.038 shows no content signal beyond size"
+}

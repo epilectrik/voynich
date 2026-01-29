@@ -21,7 +21,7 @@ Usage:
 import csv
 from pathlib import Path
 from dataclasses import dataclass
-from typing import Optional, Iterator, List, Set, Tuple
+from typing import Optional, Iterator, List, Set, Tuple, Dict
 from collections import Counter
 
 # ============================================================
@@ -555,6 +555,599 @@ class RecordAnalyzer:
 
 
 # ============================================================
+# MIDDLE ANALYZER (Compound Detection & Folio-Spread Analysis)
+# ============================================================
+@dataclass
+class MiddleStats:
+    """Statistics for a single MIDDLE."""
+    middle: str
+    token_count: int
+    folio_count: int
+    folios: Set[str]
+
+    @property
+    def is_folio_unique(self) -> bool:
+        """True if MIDDLE appears in exactly one folio."""
+        return self.folio_count == 1
+
+    @property
+    def is_core(self) -> bool:
+        """True if MIDDLE appears in 20+ folios (highly shared)."""
+        return self.folio_count >= 20
+
+    @property
+    def is_common(self) -> bool:
+        """True if MIDDLE appears in 5+ folios."""
+        return self.folio_count >= 5
+
+
+class MiddleAnalyzer:
+    """
+    Analyzer for MIDDLE compound structure and folio distribution.
+
+    Provides methods to:
+    - Track MIDDLE inventory and folio spread
+    - Detect compound MIDDLEs (containing core MIDDLEs as substrings)
+    - Classify MIDDLEs by uniqueness (folio-unique, common, core)
+    - Analyze compositional structure
+
+    Usage:
+        analyzer = MiddleAnalyzer()
+        analyzer.build_inventory()  # Scans all B tokens
+
+        # Check if a MIDDLE is compound
+        if analyzer.is_compound('opcheodai'):
+            atoms = analyzer.get_contained_atoms('opcheodai')
+            print(f"Contains: {atoms}")
+
+        # Get folio-unique MIDDLEs
+        unique = analyzer.get_folio_unique_middles()
+
+        # Get statistics for a specific MIDDLE
+        stats = analyzer.get_stats('od')
+        print(f"'od' appears in {stats.folio_count} folios")
+
+    The compound detection is based on findings from the COMPOUND_MIDDLE_ARCHITECTURE
+    phase, which established that folio-unique MIDDLEs are built by combining
+    core operational MIDDLEs (84.8% contain core MIDDLEs, +29.9pp above chance).
+    """
+
+    def __init__(self, min_atom_length: int = 2, core_threshold: int = 20,
+                 common_threshold: int = 5):
+        """
+        Initialize MiddleAnalyzer.
+
+        Args:
+            min_atom_length: Minimum length for substring matching (default: 2)
+            core_threshold: Folio count for "core" classification (default: 20)
+            common_threshold: Folio count for "common" classification (default: 5)
+        """
+        self.min_atom_length = min_atom_length
+        self.core_threshold = core_threshold
+        self.common_threshold = common_threshold
+
+        self._transcript = Transcript()
+        self._morphology = Morphology()
+        self._inventory: Optional[Dict[str, MiddleStats]] = None
+        self._core_middles: Optional[Set[str]] = None
+        self._common_middles: Optional[Set[str]] = None
+        self._folio_unique_middles: Optional[Set[str]] = None
+
+    def build_inventory(self, system: str = 'B') -> None:
+        """
+        Build MIDDLE inventory from transcript.
+
+        Args:
+            system: Which system to analyze ('A', 'B', 'all'). Default 'B'.
+        """
+        from collections import defaultdict
+
+        middle_to_folios: Dict[str, Set[str]] = defaultdict(set)
+        middle_counts: Counter = Counter()
+
+        # Select token iterator based on system
+        if system == 'A':
+            tokens = self._transcript.currier_a()
+        elif system == 'B':
+            tokens = self._transcript.currier_b()
+        elif system == 'all':
+            tokens = self._transcript.all()
+        else:
+            raise ValueError(f"Unknown system: {system}. Use 'A', 'B', or 'all'.")
+
+        for token in tokens:
+            if not token.word or '*' in token.word:
+                continue
+            m = self._morphology.extract(token.word)
+            if m.middle:
+                middle_to_folios[m.middle].add(token.folio)
+                middle_counts[m.middle] += 1
+
+        # Build inventory
+        self._inventory = {}
+        for middle, folios in middle_to_folios.items():
+            self._inventory[middle] = MiddleStats(
+                middle=middle,
+                token_count=middle_counts[middle],
+                folio_count=len(folios),
+                folios=folios
+            )
+
+        # Build classification sets
+        self._core_middles = {
+            mid for mid, stats in self._inventory.items()
+            if stats.folio_count >= self.core_threshold
+        }
+        self._common_middles = {
+            mid for mid, stats in self._inventory.items()
+            if stats.folio_count >= self.common_threshold
+        }
+        self._folio_unique_middles = {
+            mid for mid, stats in self._inventory.items()
+            if stats.folio_count == 1
+        }
+
+    def _ensure_inventory(self) -> None:
+        """Ensure inventory is built, build if not."""
+        if self._inventory is None:
+            self.build_inventory()
+
+    def get_stats(self, middle: str) -> Optional[MiddleStats]:
+        """
+        Get statistics for a specific MIDDLE.
+
+        Args:
+            middle: The MIDDLE string to look up
+
+        Returns:
+            MiddleStats object or None if MIDDLE not in inventory
+        """
+        self._ensure_inventory()
+        return self._inventory.get(middle)
+
+    def is_compound(self, middle: str, use_core: bool = True) -> bool:
+        """
+        Check if a MIDDLE contains other MIDDLEs as substrings.
+
+        Args:
+            middle: The MIDDLE to check
+            use_core: If True, check against core MIDDLEs only (default).
+                      If False, check against common MIDDLEs.
+
+        Returns:
+            True if MIDDLE contains at least one atom from the reference set
+        """
+        self._ensure_inventory()
+        reference_set = self._core_middles if use_core else self._common_middles
+
+        for atom in reference_set:
+            if (len(atom) >= self.min_atom_length and
+                atom in middle and
+                atom != middle):
+                return True
+        return False
+
+    def get_contained_atoms(self, middle: str, use_core: bool = True) -> List[str]:
+        """
+        Get list of atomic MIDDLEs contained in a compound MIDDLE.
+
+        Args:
+            middle: The MIDDLE to analyze
+            use_core: If True, use core MIDDLEs. If False, use common MIDDLEs.
+
+        Returns:
+            List of MIDDLEs from reference set that appear as substrings
+        """
+        self._ensure_inventory()
+        reference_set = self._core_middles if use_core else self._common_middles
+
+        found = []
+        for atom in reference_set:
+            if (len(atom) >= self.min_atom_length and
+                atom in middle and
+                atom != middle):
+                found.append(atom)
+        return sorted(found, key=len, reverse=True)
+
+    def get_compound_rate(self, middles: List[str], use_core: bool = True) -> float:
+        """
+        Calculate compound rate for a list of MIDDLEs.
+
+        Args:
+            middles: List of MIDDLEs to analyze
+            use_core: Reference set to use
+
+        Returns:
+            Fraction (0.0-1.0) of MIDDLEs that are compound
+        """
+        if not middles:
+            return 0.0
+        compound_count = sum(1 for m in middles if self.is_compound(m, use_core))
+        return compound_count / len(middles)
+
+    def get_core_middles(self) -> Set[str]:
+        """Get set of core MIDDLEs (appear in 20+ folios)."""
+        self._ensure_inventory()
+        return self._core_middles.copy()
+
+    def get_common_middles(self) -> Set[str]:
+        """Get set of common MIDDLEs (appear in 5+ folios)."""
+        self._ensure_inventory()
+        return self._common_middles.copy()
+
+    def get_folio_unique_middles(self) -> Set[str]:
+        """Get set of folio-unique MIDDLEs (appear in exactly 1 folio)."""
+        self._ensure_inventory()
+        return self._folio_unique_middles.copy()
+
+    def classify_middle(self, middle: str) -> str:
+        """
+        Classify a MIDDLE by its folio spread.
+
+        Args:
+            middle: The MIDDLE to classify
+
+        Returns:
+            'CORE' (20+ folios), 'COMMON' (5-19 folios),
+            'RARE' (2-4 folios), 'FOLIO_UNIQUE' (1 folio),
+            or 'UNKNOWN' if not in inventory
+        """
+        self._ensure_inventory()
+        stats = self._inventory.get(middle)
+        if stats is None:
+            return 'UNKNOWN'
+        if stats.folio_count >= self.core_threshold:
+            return 'CORE'
+        elif stats.folio_count >= self.common_threshold:
+            return 'COMMON'
+        elif stats.folio_count >= 2:
+            return 'RARE'
+        else:
+            return 'FOLIO_UNIQUE'
+
+    def analyze_token(self, word: str) -> dict:
+        """
+        Analyze a token's MIDDLE for compound structure.
+
+        Args:
+            word: The token to analyze
+
+        Returns:
+            Dict with middle, classification, is_compound, contained_atoms
+        """
+        self._ensure_inventory()
+        m = self._morphology.extract(word)
+        if not m.middle:
+            return {
+                'word': word,
+                'middle': None,
+                'classification': None,
+                'is_compound': False,
+                'contained_atoms': []
+            }
+
+        return {
+            'word': word,
+            'middle': m.middle,
+            'classification': self.classify_middle(m.middle),
+            'is_compound': self.is_compound(m.middle),
+            'contained_atoms': self.get_contained_atoms(m.middle)
+        }
+
+    def summary(self) -> dict:
+        """
+        Get summary statistics of the MIDDLE inventory.
+
+        Returns:
+            Dict with counts and rates
+        """
+        self._ensure_inventory()
+        total = len(self._inventory)
+        return {
+            'total_middles': total,
+            'core_count': len(self._core_middles),
+            'core_pct': 100 * len(self._core_middles) / total if total else 0,
+            'common_count': len(self._common_middles),
+            'common_pct': 100 * len(self._common_middles) / total if total else 0,
+            'folio_unique_count': len(self._folio_unique_middles),
+            'folio_unique_pct': 100 * len(self._folio_unique_middles) / total if total else 0,
+        }
+
+
+# ============================================================
+# PP SEMANTIC ANALYZER
+# ============================================================
+# Based on FL_SEMANTIC_INTERPRETATION phase findings (2026-01-29)
+# Assigns semantic roles to PP MIDDLEs based on character composition
+
+@dataclass
+class PPSemanticAnalysis:
+    """Semantic analysis of a PP MIDDLE."""
+    middle: str
+    semantic_class: str      # STATE_INDEX, OPERATOR, MODIFIER, UNKNOWN
+    subclass: Optional[str]  # For STATE_INDEX: stage; For OPERATOR: kernel type
+    kernel_chars: List[str]  # Which kernel chars present (k, h, e)
+    is_fl_vocabulary: bool   # True if this MIDDLE is in FL class vocabulary
+    confidence: str          # HIGH, MEDIUM, LOW
+
+
+class PPSemantics:
+    """
+    Semantic analyzer for PP (Pipeline-Participating) MIDDLEs.
+
+    Based on FL_SEMANTIC_INTERPRETATION phase findings:
+    - FL MIDDLEs use only 9 chars: a, d, i, l, m, n, o, r, y
+    - FL MIDDLEs index material state in transformation process
+    - Kernel chars (k, h, e) indicate operators, not state indices
+
+    Classification:
+    - STATE_INDEX: Kernel-free, FL-like vocabulary -> marks material states
+    - OPERATOR: Contains kernel chars (k, h, e) -> marks transformations
+    - MODIFIER: Contains helper chars (c, s, t, p, f, q, g) but no kernel
+
+    Usage:
+        sem = PPSemantics()
+        result = sem.analyze('od')
+        print(f"{result.middle}: {result.semantic_class} ({result.subclass})")
+
+        # Batch analysis
+        for mid, analysis in sem.analyze_vocabulary(pp_middles):
+            print(f"{mid}: {analysis.semantic_class}")
+    """
+
+    # FL primitive character set (C770, C772)
+    FL_CHARS = set('adilmnory')
+
+    # Kernel characters (operators)
+    KERNEL_CHARS = set('khe')
+
+    # Helper/modifier characters
+    HELPER_CHARS = set('cstpfqg')
+
+    # FL MIDDLEs and their stages (from FL_SEMANTIC_INTERPRETATION phase)
+    FL_STAGE_MAP = {
+        'ii': 'INITIAL', 'i': 'INITIAL',
+        'in': 'EARLY',
+        'r': 'MEDIAL', 'ar': 'MEDIAL', 'al': 'MEDIAL', 'l': 'MEDIAL', 'ol': 'MEDIAL',
+        'o': 'LATE', 'ly': 'LATE',
+        'am': 'TERMINAL', 'n': 'TERMINAL', 'im': 'TERMINAL', 'm': 'TERMINAL',
+        'dy': 'TERMINAL', 'ry': 'TERMINAL', 'y': 'TERMINAL'
+    }
+
+    # Extended stage inference for non-FL MIDDLEs based on character patterns
+    CHAR_STAGE_HINTS = {
+        'i': 'INITIAL',   # i-initial suggests input
+        'y': 'TERMINAL',  # y-final suggests output
+    }
+
+    def __init__(self):
+        self._fl_middles = set(self.FL_STAGE_MAP.keys())
+
+    def _get_kernel_chars(self, middle: str) -> List[str]:
+        """Extract kernel characters from MIDDLE."""
+        return [c for c in 'khe' if c in middle]
+
+    def _get_char_classes(self, middle: str) -> dict:
+        """Classify characters in MIDDLE."""
+        chars = set(middle)
+        return {
+            'has_kernel': bool(chars & self.KERNEL_CHARS),
+            'has_helper': bool(chars & self.HELPER_CHARS),
+            'fl_only': chars <= self.FL_CHARS,
+            'kernel_chars': list(chars & self.KERNEL_CHARS),
+            'helper_chars': list(chars & self.HELPER_CHARS),
+        }
+
+    def _infer_stage(self, middle: str) -> Optional[str]:
+        """Infer process stage for FL-like MIDDLE."""
+        # Direct FL lookup
+        if middle in self.FL_STAGE_MAP:
+            return self.FL_STAGE_MAP[middle]
+
+        # Heuristic inference based on character patterns
+        if middle.startswith('i') and 'y' not in middle:
+            return 'INITIAL'
+        elif middle.endswith('y'):
+            return 'TERMINAL'
+        elif middle.startswith('a') or middle.startswith('o'):
+            return 'MEDIAL'
+
+        return None
+
+    def analyze(self, middle: str) -> PPSemanticAnalysis:
+        """
+        Analyze semantic role of a PP MIDDLE.
+
+        Args:
+            middle: The MIDDLE string to analyze
+
+        Returns:
+            PPSemanticAnalysis with classification and details
+        """
+        if not middle:
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='UNKNOWN',
+                subclass=None,
+                kernel_chars=[],
+                is_fl_vocabulary=False,
+                confidence='LOW'
+            )
+
+        char_info = self._get_char_classes(middle)
+        is_fl = middle in self._fl_middles
+
+        # Classification logic
+        if char_info['has_kernel']:
+            # OPERATOR: Contains kernel characters
+            kernel_list = char_info['kernel_chars']
+            # Subclass based on dominant kernel
+            if 'k' in kernel_list:
+                subclass = 'ENERGY'
+            elif 'h' in kernel_list:
+                subclass = 'PHASE'
+            elif 'e' in kernel_list:
+                subclass = 'STABILITY'
+            else:
+                subclass = 'MIXED'
+
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='OPERATOR',
+                subclass=subclass,
+                kernel_chars=kernel_list,
+                is_fl_vocabulary=False,
+                confidence='HIGH'
+            )
+
+        elif char_info['fl_only']:
+            # STATE_INDEX: Uses only FL characters
+            stage = self._infer_stage(middle)
+            confidence = 'HIGH' if is_fl else 'MEDIUM'
+
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='STATE_INDEX',
+                subclass=stage,
+                kernel_chars=[],
+                is_fl_vocabulary=is_fl,
+                confidence=confidence
+            )
+
+        elif char_info['has_helper']:
+            # MODIFIER: Has helper chars but no kernel
+            helper_type = None
+            if 'c' in middle or 's' in middle or 't' in middle:
+                helper_type = 'CONTROL_MODIFIER'
+            elif any(c in middle for c in 'pfqg'):
+                helper_type = 'DOMAIN_MARKER'
+
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='MODIFIER',
+                subclass=helper_type,
+                kernel_chars=[],
+                is_fl_vocabulary=False,
+                confidence='MEDIUM'
+            )
+
+        else:
+            # Shouldn't reach here, but handle gracefully
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='UNKNOWN',
+                subclass=None,
+                kernel_chars=[],
+                is_fl_vocabulary=False,
+                confidence='LOW'
+            )
+
+    def analyze_vocabulary(self, middles: List[str]) -> List[Tuple[str, PPSemanticAnalysis]]:
+        """
+        Analyze a list of PP MIDDLEs.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            List of (middle, PPSemanticAnalysis) tuples
+        """
+        return [(m, self.analyze(m)) for m in middles]
+
+    def get_class_distribution(self, middles: List[str]) -> dict:
+        """
+        Get distribution of semantic classes in a vocabulary.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            Dict with counts per semantic class
+        """
+        results = self.analyze_vocabulary(middles)
+        distribution = Counter(r.semantic_class for _, r in results)
+        return dict(distribution)
+
+    def filter_by_class(self, middles: List[str],
+                        semantic_class: str) -> List[str]:
+        """
+        Filter MIDDLEs by semantic class.
+
+        Args:
+            middles: List of MIDDLE strings
+            semantic_class: 'STATE_INDEX', 'OPERATOR', 'MODIFIER', or 'UNKNOWN'
+
+        Returns:
+            List of MIDDLEs matching the class
+        """
+        return [m for m, a in self.analyze_vocabulary(middles)
+                if a.semantic_class == semantic_class]
+
+    def get_operators_by_kernel(self, middles: List[str]) -> dict:
+        """
+        Group OPERATOR MIDDLEs by kernel type.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            Dict mapping kernel type to list of MIDDLEs
+        """
+        operators = {}
+        for m, a in self.analyze_vocabulary(middles):
+            if a.semantic_class == 'OPERATOR':
+                key = a.subclass or 'UNKNOWN'
+                if key not in operators:
+                    operators[key] = []
+                operators[key].append(m)
+        return operators
+
+    def get_state_indices_by_stage(self, middles: List[str]) -> dict:
+        """
+        Group STATE_INDEX MIDDLEs by process stage.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            Dict mapping stage to list of MIDDLEs
+        """
+        states = {}
+        for m, a in self.analyze_vocabulary(middles):
+            if a.semantic_class == 'STATE_INDEX':
+                key = a.subclass or 'UNKNOWN'
+                if key not in states:
+                    states[key] = []
+                states[key].append(m)
+        return states
+
+    def summary(self, middles: List[str]) -> dict:
+        """
+        Get comprehensive summary of PP vocabulary semantics.
+
+        Args:
+            middles: List of PP MIDDLEs
+
+        Returns:
+            Dict with distribution, breakdowns, and statistics
+        """
+        results = self.analyze_vocabulary(middles)
+
+        class_dist = Counter(r.semantic_class for _, r in results)
+        fl_count = sum(1 for _, r in results if r.is_fl_vocabulary)
+        high_conf = sum(1 for _, r in results if r.confidence == 'HIGH')
+
+        return {
+            'total': len(middles),
+            'class_distribution': dict(class_dist),
+            'fl_vocabulary_count': fl_count,
+            'high_confidence_count': high_conf,
+            'operators_by_kernel': self.get_operators_by_kernel(middles),
+            'states_by_stage': self.get_state_indices_by_stage(middles),
+        }
+
+
+# ============================================================
 # QUICK VERIFICATION
 # ============================================================
 if __name__ == '__main__':
@@ -599,3 +1192,54 @@ if __name__ == '__main__':
                 class_tag = f"[{t.token_class:7}]"
                 morph_str = f"PRE={t.prefix or '-':5} MID={t.middle or '-':10} SUF={t.suffix or '-'}"
                 print(f"  {t.word:15} {class_tag} {morph_str}")
+
+    # Test MiddleAnalyzer
+    print("\n" + "=" * 50)
+    print("Middle Analyzer Test (Currier B)")
+    print("=" * 50)
+
+    mid_analyzer = MiddleAnalyzer()
+    mid_analyzer.build_inventory('B')
+
+    summary = mid_analyzer.summary()
+    print(f"\nInventory summary:")
+    print(f"  Total MIDDLEs: {summary['total_middles']}")
+    print(f"  Core (20+ folios): {summary['core_count']} ({summary['core_pct']:.1f}%)")
+    print(f"  Folio-unique: {summary['folio_unique_count']} ({summary['folio_unique_pct']:.1f}%)")
+
+    # Test compound detection
+    print(f"\nCompound analysis examples:")
+    test_middles = ['od', 'aiin', 'odaiin', 'cheod', 'oteey']
+    for mid in test_middles:
+        stats = mid_analyzer.get_stats(mid)
+        if stats:
+            is_cmp = mid_analyzer.is_compound(mid)
+            atoms = mid_analyzer.get_contained_atoms(mid)
+            cls = mid_analyzer.classify_middle(mid)
+            print(f"  '{mid}': {cls}, compound={is_cmp}, atoms={atoms}")
+
+    # Test PPSemantics
+    print("\n" + "=" * 50)
+    print("PP Semantics Test")
+    print("=" * 50)
+
+    sem = PPSemantics()
+
+    # Test individual MIDDLEs
+    test_pp = ['od', 'al', 'ar', 'y', 'in', 'k', 'e', 'ey', 'ckh', 'aiin', 'or', 't', 'ct']
+    print("\nSemantic analysis examples:")
+    for mid in test_pp:
+        a = sem.analyze(mid)
+        fl_tag = "[FL]" if a.is_fl_vocabulary else ""
+        kernel_str = f"kernel={a.kernel_chars}" if a.kernel_chars else ""
+        print(f"  {mid:10} -> {a.semantic_class:12} ({a.subclass or '-':15}) {fl_tag} {kernel_str}")
+
+    # Test vocabulary summary
+    print("\nVocabulary summary (sample PP MIDDLEs):")
+    sample_pp = ['od', 'al', 'ar', 'y', 'in', 'k', 'e', 'ey', 'ckh', 'aiin', 'or', 't', 'ct',
+                 'ol', 'r', 'dy', 'm', 'eol', 'ch', 'ok', 'ek', 'he', 'ke']
+    summary = sem.summary(sample_pp)
+    print(f"  Total: {summary['total']}")
+    print(f"  Class distribution: {summary['class_distribution']}")
+    print(f"  FL vocabulary: {summary['fl_vocabulary_count']}")
+    print(f"  High confidence: {summary['high_confidence_count']}")

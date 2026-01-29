@@ -1,0 +1,1945 @@
+{
+  "metadata": {
+    "phase": "RECOVERY_ARCHITECTURE_DECOMPOSITION",
+    "script": "recovery_pathway_profiling.py",
+    "description": "Per-REGIME kernel absorption rates, recovery path lengths, post-kernel destinations",
+    "n_folios": 82,
+    "n_folios_with_regime": 82,
+    "kernel_classes": [
+      1,
+      2,
+      3
+    ],
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ]
+  },
+  "regime_profiles": {
+    "REGIME_1": {
+      "n_folios": 15,
+      "kernel_absorption": {
+        "e_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "h_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "k_rate": {
+          "mean": 0.0095,
+          "std": 0.0356
+        },
+        "exit_rate": {
+          "mean": 0.9905,
+          "std": 0.0356
+        }
+      },
+      "recovery_paths": {
+        "mean_length": {
+          "mean": 3.8163,
+          "std": 0.8977
+        },
+        "mean_max_length": 8.61,
+        "mean_n_paths": 28.48
+      },
+      "post_kernel_routing": {
+        "AX": {
+          "mean": 0.1467,
+          "std": 0.3384
+        },
+        "EN": {
+          "mean": 0.6533,
+          "std": 0.414
+        },
+        "FL": {
+          "mean": 0.0556,
+          "std": 0.1449
+        },
+        "FQ": {
+          "mean": 0.1222,
+          "std": 0.2615
+        },
+        "CC": {
+          "mean": 0.0222,
+          "std": 0.0831
+        }
+      }
+    },
+    "REGIME_2": {
+      "n_folios": 18,
+      "kernel_absorption": {
+        "e_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "h_rate": {
+          "mean": 0.0139,
+          "std": 0.0573
+        },
+        "k_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "exit_rate": {
+          "mean": 0.9861,
+          "std": 0.0573
+        }
+      },
+      "recovery_paths": {
+        "mean_length": {
+          "mean": 4.7777,
+          "std": 3.2629
+        },
+        "mean_max_length": 10.5,
+        "mean_n_paths": 20.42
+      },
+      "post_kernel_routing": {
+        "AX": {
+          "mean": 0.3056,
+          "std": 0.3525
+        },
+        "EN": {
+          "mean": 0.4259,
+          "std": 0.4275
+        },
+        "FL": {
+          "mean": 0.0556,
+          "std": 0.2291
+        },
+        "FQ": {
+          "mean": 0.213,
+          "std": 0.293
+        },
+        "CC": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      }
+    },
+    "REGIME_3": {
+      "n_folios": 4,
+      "kernel_absorption": {
+        "e_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "h_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "k_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "exit_rate": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      },
+      "recovery_paths": {
+        "mean_length": {
+          "mean": 4.0954,
+          "std": 0.7077
+        },
+        "mean_max_length": 8.88,
+        "mean_n_paths": 17.5
+      },
+      "post_kernel_routing": {
+        "AX": {
+          "mean": 0.125,
+          "std": 0.2165
+        },
+        "EN": {
+          "mean": 0.75,
+          "std": 0.433
+        },
+        "FL": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "FQ": {
+          "mean": 0.125,
+          "std": 0.2165
+        },
+        "CC": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      }
+    },
+    "REGIME_4": {
+      "n_folios": 16,
+      "kernel_absorption": {
+        "e_rate": {
+          "mean": 0.0089,
+          "std": 0.0346
+        },
+        "h_rate": {
+          "mean": 0.0089,
+          "std": 0.0346
+        },
+        "k_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "exit_rate": {
+          "mean": 0.9821,
+          "std": 0.0692
+        }
+      },
+      "recovery_paths": {
+        "mean_length": {
+          "mean": 3.7562,
+          "std": 1.0783
+        },
+        "mean_max_length": 8.67,
+        "mean_n_paths": 21.41
+      },
+      "post_kernel_routing": {
+        "AX": {
+          "mean": 0.1552,
+          "std": 0.2089
+        },
+        "EN": {
+          "mean": 0.4792,
+          "std": 0.3908
+        },
+        "FL": {
+          "mean": 0.1297,
+          "std": 0.2694
+        },
+        "FQ": {
+          "mean": 0.1786,
+          "std": 0.2265
+        },
+        "CC": {
+          "mean": 0.0573,
+          "std": 0.1685
+        }
+      }
+    }
+  },
+  "kw_tests": {
+    "kernel_absorption": {
+      "e_rate": {
+        "H": 2.3125,
+        "p": 0.51013,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "h_rate": {
+        "H": 1.1442,
+        "p": 0.766409,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "k_rate": {
+        "H": 2.5333,
+        "p": 0.469297,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "exit_rate": {
+        "H": 0.2713,
+        "p": 0.965334,
+        "eta_sq": 0,
+        "significant": false
+      }
+    },
+    "recovery_paths": {
+      "mean_lengths": {
+        "H": 1.4543,
+        "p": 0.692864,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "median_lengths": {
+        "H": 2.8981,
+        "p": 0.407599,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "max_lengths": {
+        "H": 0.1213,
+        "p": 0.989162,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "n_paths": {
+        "H": 6.2919,
+        "p": 0.098243,
+        "eta_sq": 0.0422,
+        "significant": false
+      }
+    },
+    "post_kernel_routing": {
+      "AX": {
+        "H": 3.3875,
+        "p": 0.335647,
+        "eta_sq": 0.0079,
+        "significant": false
+      },
+      "EN": {
+        "H": 3.0684,
+        "p": 0.381205,
+        "eta_sq": 0.0014,
+        "significant": false
+      },
+      "FL": {
+        "H": 3.1895,
+        "p": 0.363315,
+        "eta_sq": 0.0039,
+        "significant": false
+      },
+      "FQ": {
+        "H": 1.8195,
+        "p": 0.610703,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "CC": {
+        "H": 2.6955,
+        "p": 0.440991,
+        "eta_sq": 0,
+        "significant": false
+      }
+    }
+  },
+  "all_kw_summary": {
+    "n_tests": 13,
+    "n_significant": 0,
+    "verdict": "NOT_REGIME_STRATIFIED",
+    "verdict_detail": "No recovery pathway metric shows significant REGIME dependence"
+  },
+  "per_folio": {
+    "kernel_stats": {
+      "f103r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f103v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f104r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 5
+      },
+      "f104v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f105r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f105v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f106r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f106v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f107r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f107v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f108r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f108v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 4
+      },
+      "f111r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 8
+      },
+      "f111v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 5
+      },
+      "f112r": {
+        "e_rate": 0.1429,
+        "h_rate": 0.1429,
+        "k_rate": 0.0,
+        "exit_rate": 0.7143,
+        "total_kernel_transitions": 7
+      },
+      "f112v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f113r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f113v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 6
+      },
+      "f114r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f114v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 4
+      },
+      "f115r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f115v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f116r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f26r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f26v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f31r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f31v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f33r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f33v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f34r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f34v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f39r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f39v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f40r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f40v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f41r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f41v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f43r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f43v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f46r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f46v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f48r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f48v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f50r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f50v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f55r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f55v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f57r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f66r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f66v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f75r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f75v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f76r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.1429,
+        "exit_rate": 0.8571,
+        "total_kernel_transitions": 7
+      },
+      "f76v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f77r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f77v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f78r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f78v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f79r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f79v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f80r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f80v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f81r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f81v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f82r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f82v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f83r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f83v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f84r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f84v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f85r1": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f85r2": {
+        "e_rate": 0.0,
+        "h_rate": 0.25,
+        "k_rate": 0.0,
+        "exit_rate": 0.75,
+        "total_kernel_transitions": 4
+      },
+      "f86v3": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f86v4": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f86v5": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 3
+      },
+      "f86v6": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f94r": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 2
+      },
+      "f94v": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f95r1": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f95r2": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 0.0,
+        "total_kernel_transitions": 0
+      },
+      "f95v1": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      },
+      "f95v2": {
+        "e_rate": 0.0,
+        "h_rate": 0.0,
+        "k_rate": 0.0,
+        "exit_rate": 1.0,
+        "total_kernel_transitions": 1
+      }
+    },
+    "recovery_paths": {
+      "f103r": {
+        "mean_path_length": 4.3171,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.9995,
+        "n_recovery_paths": 41
+      },
+      "f103v": {
+        "mean_path_length": 5.2162,
+        "median_path_length": 5.0,
+        "max_path_length": 10,
+        "std_path_length": 2.4177,
+        "n_recovery_paths": 37
+      },
+      "f104r": {
+        "mean_path_length": 2.697,
+        "median_path_length": 2.0,
+        "max_path_length": 8,
+        "std_path_length": 2.1389,
+        "n_recovery_paths": 33
+      },
+      "f104v": {
+        "mean_path_length": 3.8667,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.8837,
+        "n_recovery_paths": 30
+      },
+      "f105r": {
+        "mean_path_length": 3.5862,
+        "median_path_length": 4.0,
+        "max_path_length": 7,
+        "std_path_length": 2.2209,
+        "n_recovery_paths": 29
+      },
+      "f105v": {
+        "mean_path_length": 3.2,
+        "median_path_length": 3.0,
+        "max_path_length": 8,
+        "std_path_length": 2.2271,
+        "n_recovery_paths": 25
+      },
+      "f106r": {
+        "mean_path_length": 3.5294,
+        "median_path_length": 3.5,
+        "max_path_length": 8,
+        "std_path_length": 2.1589,
+        "n_recovery_paths": 34
+      },
+      "f106v": {
+        "mean_path_length": 3.6486,
+        "median_path_length": 3.0,
+        "max_path_length": 9,
+        "std_path_length": 2.5385,
+        "n_recovery_paths": 37
+      },
+      "f107r": {
+        "mean_path_length": 3.8158,
+        "median_path_length": 4.0,
+        "max_path_length": 8,
+        "std_path_length": 2.3153,
+        "n_recovery_paths": 38
+      },
+      "f107v": {
+        "mean_path_length": 4.1081,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.5339,
+        "n_recovery_paths": 37
+      },
+      "f108r": {
+        "mean_path_length": 3.7674,
+        "median_path_length": 3.0,
+        "max_path_length": 9,
+        "std_path_length": 2.5685,
+        "n_recovery_paths": 43
+      },
+      "f108v": {
+        "mean_path_length": 4.2683,
+        "median_path_length": 5.0,
+        "max_path_length": 10,
+        "std_path_length": 2.5664,
+        "n_recovery_paths": 41
+      },
+      "f111r": {
+        "mean_path_length": 4.3556,
+        "median_path_length": 4.0,
+        "max_path_length": 11,
+        "std_path_length": 2.5661,
+        "n_recovery_paths": 45
+      },
+      "f111v": {
+        "mean_path_length": 4.3256,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.9152,
+        "n_recovery_paths": 43
+      },
+      "f112r": {
+        "mean_path_length": 3.6,
+        "median_path_length": 4.0,
+        "max_path_length": 9,
+        "std_path_length": 2.7031,
+        "n_recovery_paths": 30
+      },
+      "f112v": {
+        "mean_path_length": 4.0,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.3741,
+        "n_recovery_paths": 33
+      },
+      "f113r": {
+        "mean_path_length": 3.3077,
+        "median_path_length": 3.0,
+        "max_path_length": 9,
+        "std_path_length": 2.5934,
+        "n_recovery_paths": 39
+      },
+      "f113v": {
+        "mean_path_length": 3.8667,
+        "median_path_length": 4.0,
+        "max_path_length": 9,
+        "std_path_length": 2.5785,
+        "n_recovery_paths": 30
+      },
+      "f114r": {
+        "mean_path_length": 4.0714,
+        "median_path_length": 3.5,
+        "max_path_length": 11,
+        "std_path_length": 2.8275,
+        "n_recovery_paths": 28
+      },
+      "f114v": {
+        "mean_path_length": 3.0769,
+        "median_path_length": 2.5,
+        "max_path_length": 9,
+        "std_path_length": 2.3192,
+        "n_recovery_paths": 26
+      },
+      "f115r": {
+        "mean_path_length": 3.6857,
+        "median_path_length": 4.0,
+        "max_path_length": 9,
+        "std_path_length": 2.3516,
+        "n_recovery_paths": 35
+      },
+      "f115v": {
+        "mean_path_length": 2.3571,
+        "median_path_length": 2.0,
+        "max_path_length": 6,
+        "std_path_length": 1.6948,
+        "n_recovery_paths": 28
+      },
+      "f116r": {
+        "mean_path_length": 5.4318,
+        "median_path_length": 6.0,
+        "max_path_length": 11,
+        "std_path_length": 2.5619,
+        "n_recovery_paths": 44
+      },
+      "f26r": {
+        "mean_path_length": 3.625,
+        "median_path_length": 3.0,
+        "max_path_length": 7,
+        "std_path_length": 1.7984,
+        "n_recovery_paths": 8
+      },
+      "f26v": {
+        "mean_path_length": 3.2857,
+        "median_path_length": 3.0,
+        "max_path_length": 7,
+        "std_path_length": 2.3733,
+        "n_recovery_paths": 7
+      },
+      "f31r": {
+        "mean_path_length": 2.5455,
+        "median_path_length": 3.0,
+        "max_path_length": 6,
+        "std_path_length": 2.0611,
+        "n_recovery_paths": 11
+      },
+      "f31v": {
+        "mean_path_length": 3.1,
+        "median_path_length": 2.5,
+        "max_path_length": 7,
+        "std_path_length": 2.119,
+        "n_recovery_paths": 10
+      },
+      "f33r": {
+        "mean_path_length": 7.25,
+        "median_path_length": 7.0,
+        "max_path_length": 9,
+        "std_path_length": 1.0897,
+        "n_recovery_paths": 4
+      },
+      "f33v": {
+        "mean_path_length": 4.4545,
+        "median_path_length": 4.0,
+        "max_path_length": 11,
+        "std_path_length": 2.8401,
+        "n_recovery_paths": 11
+      },
+      "f34r": {
+        "mean_path_length": 5.2222,
+        "median_path_length": 5.0,
+        "max_path_length": 11,
+        "std_path_length": 3.3259,
+        "n_recovery_paths": 9
+      },
+      "f34v": {
+        "mean_path_length": 4.2727,
+        "median_path_length": 3.0,
+        "max_path_length": 10,
+        "std_path_length": 2.957,
+        "n_recovery_paths": 11
+      },
+      "f39r": {
+        "mean_path_length": 4.0625,
+        "median_path_length": 4.0,
+        "max_path_length": 9,
+        "std_path_length": 2.2491,
+        "n_recovery_paths": 16
+      },
+      "f39v": {
+        "mean_path_length": 5.4667,
+        "median_path_length": 5.0,
+        "max_path_length": 11,
+        "std_path_length": 2.8253,
+        "n_recovery_paths": 15
+      },
+      "f40r": {
+        "mean_path_length": 3.7,
+        "median_path_length": 4.0,
+        "max_path_length": 7,
+        "std_path_length": 2.3259,
+        "n_recovery_paths": 10
+      },
+      "f40v": {
+        "mean_path_length": 3.5556,
+        "median_path_length": 3.0,
+        "max_path_length": 8,
+        "std_path_length": 2.5434,
+        "n_recovery_paths": 9
+      },
+      "f41r": {
+        "mean_path_length": 2.8571,
+        "median_path_length": 4.0,
+        "max_path_length": 6,
+        "std_path_length": 2.2946,
+        "n_recovery_paths": 7
+      },
+      "f41v": {
+        "mean_path_length": 3.0,
+        "median_path_length": 1.5,
+        "max_path_length": 8,
+        "std_path_length": 2.9439,
+        "n_recovery_paths": 6
+      },
+      "f43r": {
+        "mean_path_length": 4.0,
+        "median_path_length": 3.5,
+        "max_path_length": 9,
+        "std_path_length": 2.7386,
+        "n_recovery_paths": 12
+      },
+      "f43v": {
+        "mean_path_length": 3.8235,
+        "median_path_length": 3.0,
+        "max_path_length": 12,
+        "std_path_length": 3.3822,
+        "n_recovery_paths": 17
+      },
+      "f46r": {
+        "mean_path_length": 5.0,
+        "median_path_length": 5.0,
+        "max_path_length": 10,
+        "std_path_length": 2.9089,
+        "n_recovery_paths": 13
+      },
+      "f46v": {
+        "mean_path_length": 4.1818,
+        "median_path_length": 3.0,
+        "max_path_length": 10,
+        "std_path_length": 3.5115,
+        "n_recovery_paths": 11
+      },
+      "f48r": {
+        "mean_path_length": 3.0,
+        "median_path_length": 3.0,
+        "max_path_length": 5,
+        "std_path_length": 1.6036,
+        "n_recovery_paths": 7
+      },
+      "f48v": {
+        "mean_path_length": 4.1818,
+        "median_path_length": 4.0,
+        "max_path_length": 8,
+        "std_path_length": 2.0369,
+        "n_recovery_paths": 11
+      },
+      "f50r": {
+        "mean_path_length": 3.4,
+        "median_path_length": 4.0,
+        "max_path_length": 6,
+        "std_path_length": 2.0591,
+        "n_recovery_paths": 5
+      },
+      "f50v": {
+        "mean_path_length": 3.8333,
+        "median_path_length": 5.0,
+        "max_path_length": 7,
+        "std_path_length": 2.7938,
+        "n_recovery_paths": 6
+      },
+      "f55r": {
+        "mean_path_length": 4.9091,
+        "median_path_length": 5.0,
+        "max_path_length": 9,
+        "std_path_length": 2.9374,
+        "n_recovery_paths": 11
+      },
+      "f55v": {
+        "mean_path_length": 3.8889,
+        "median_path_length": 4.0,
+        "max_path_length": 8,
+        "std_path_length": 2.4696,
+        "n_recovery_paths": 9
+      },
+      "f57r": {
+        "mean_path_length": 1.4286,
+        "median_path_length": 1.0,
+        "max_path_length": 5,
+        "std_path_length": 1.5908,
+        "n_recovery_paths": 7
+      },
+      "f66r": {
+        "mean_path_length": 4.5,
+        "median_path_length": 4.5,
+        "max_path_length": 10,
+        "std_path_length": 2.719,
+        "n_recovery_paths": 28
+      },
+      "f66v": {
+        "mean_path_length": 2.875,
+        "median_path_length": 2.5,
+        "max_path_length": 6,
+        "std_path_length": 2.1469,
+        "n_recovery_paths": 8
+      },
+      "f75r": {
+        "mean_path_length": 4.2051,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.4514,
+        "n_recovery_paths": 39
+      },
+      "f75v": {
+        "mean_path_length": 5.3333,
+        "median_path_length": 5.0,
+        "max_path_length": 11,
+        "std_path_length": 3.5066,
+        "n_recovery_paths": 27
+      },
+      "f76r": {
+        "mean_path_length": 5.6383,
+        "median_path_length": 6.0,
+        "max_path_length": 11,
+        "std_path_length": 2.8316,
+        "n_recovery_paths": 47
+      },
+      "f76v": {
+        "mean_path_length": 3.6562,
+        "median_path_length": 3.0,
+        "max_path_length": 9,
+        "std_path_length": 2.6411,
+        "n_recovery_paths": 32
+      },
+      "f77r": {
+        "mean_path_length": 3.6296,
+        "median_path_length": 4.0,
+        "max_path_length": 7,
+        "std_path_length": 2.0575,
+        "n_recovery_paths": 27
+      },
+      "f77v": {
+        "mean_path_length": 3.8182,
+        "median_path_length": 4.0,
+        "max_path_length": 9,
+        "std_path_length": 2.4674,
+        "n_recovery_paths": 33
+      },
+      "f78r": {
+        "mean_path_length": 2.9655,
+        "median_path_length": 3.0,
+        "max_path_length": 11,
+        "std_path_length": 2.2816,
+        "n_recovery_paths": 29
+      },
+      "f78v": {
+        "mean_path_length": 4.5862,
+        "median_path_length": 5.0,
+        "max_path_length": 8,
+        "std_path_length": 2.2053,
+        "n_recovery_paths": 29
+      },
+      "f79r": {
+        "mean_path_length": 4.4444,
+        "median_path_length": 4.5,
+        "max_path_length": 10,
+        "std_path_length": 2.4432,
+        "n_recovery_paths": 36
+      },
+      "f79v": {
+        "mean_path_length": 3.5833,
+        "median_path_length": 2.5,
+        "max_path_length": 9,
+        "std_path_length": 3.0265,
+        "n_recovery_paths": 24
+      },
+      "f80r": {
+        "mean_path_length": 4.2188,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.6662,
+        "n_recovery_paths": 32
+      },
+      "f80v": {
+        "mean_path_length": 4.0312,
+        "median_path_length": 4.0,
+        "max_path_length": 8,
+        "std_path_length": 2.1137,
+        "n_recovery_paths": 32
+      },
+      "f81r": {
+        "mean_path_length": 3.5,
+        "median_path_length": 3.5,
+        "max_path_length": 8,
+        "std_path_length": 2.0835,
+        "n_recovery_paths": 22
+      },
+      "f81v": {
+        "mean_path_length": 4.8333,
+        "median_path_length": 5.5,
+        "max_path_length": 8,
+        "std_path_length": 2.0883,
+        "n_recovery_paths": 18
+      },
+      "f82r": {
+        "mean_path_length": 2.5455,
+        "median_path_length": 3.0,
+        "max_path_length": 6,
+        "std_path_length": 1.8022,
+        "n_recovery_paths": 22
+      },
+      "f82v": {
+        "mean_path_length": 3.8214,
+        "median_path_length": 4.0,
+        "max_path_length": 9,
+        "std_path_length": 2.9039,
+        "n_recovery_paths": 28
+      },
+      "f83r": {
+        "mean_path_length": 2.5882,
+        "median_path_length": 2.0,
+        "max_path_length": 7,
+        "std_path_length": 2.0309,
+        "n_recovery_paths": 34
+      },
+      "f83v": {
+        "mean_path_length": 3.8333,
+        "median_path_length": 3.5,
+        "max_path_length": 9,
+        "std_path_length": 2.4095,
+        "n_recovery_paths": 24
+      },
+      "f84r": {
+        "mean_path_length": 5.3,
+        "median_path_length": 5.0,
+        "max_path_length": 11,
+        "std_path_length": 3.1744,
+        "n_recovery_paths": 30
+      },
+      "f84v": {
+        "mean_path_length": 3.8182,
+        "median_path_length": 4.0,
+        "max_path_length": 10,
+        "std_path_length": 2.4797,
+        "n_recovery_paths": 33
+      },
+      "f85r1": {
+        "mean_path_length": 3.1538,
+        "median_path_length": 3.0,
+        "max_path_length": 7,
+        "std_path_length": 2.196,
+        "n_recovery_paths": 26
+      },
+      "f85r2": {
+        "mean_path_length": 3.2,
+        "median_path_length": 2.0,
+        "max_path_length": 18,
+        "std_path_length": 4.4151,
+        "n_recovery_paths": 15
+      },
+      "f86v3": {
+        "mean_path_length": 8.6667,
+        "median_path_length": 5.0,
+        "max_path_length": 24,
+        "std_path_length": 8.1049,
+        "n_recovery_paths": 15
+      },
+      "f86v4": {
+        "mean_path_length": 19.4,
+        "median_path_length": 25.0,
+        "max_path_length": 32,
+        "std_path_length": 11.0743,
+        "n_recovery_paths": 5
+      },
+      "f86v5": {
+        "mean_path_length": 3.8824,
+        "median_path_length": 4.0,
+        "max_path_length": 8,
+        "std_path_length": 2.3858,
+        "n_recovery_paths": 34
+      },
+      "f86v6": {
+        "mean_path_length": 4.7714,
+        "median_path_length": 5.0,
+        "max_path_length": 10,
+        "std_path_length": 2.5976,
+        "n_recovery_paths": 35
+      },
+      "f94r": {
+        "mean_path_length": 2.8571,
+        "median_path_length": 2.0,
+        "max_path_length": 8,
+        "std_path_length": 2.5873,
+        "n_recovery_paths": 7
+      },
+      "f94v": {
+        "mean_path_length": 2.1,
+        "median_path_length": 2.5,
+        "max_path_length": 4,
+        "std_path_length": 1.4457,
+        "n_recovery_paths": 10
+      },
+      "f95r1": {
+        "mean_path_length": 5.0,
+        "median_path_length": 6.0,
+        "max_path_length": 10,
+        "std_path_length": 2.958,
+        "n_recovery_paths": 8
+      },
+      "f95r2": {
+        "mean_path_length": 3.75,
+        "median_path_length": 2.5,
+        "max_path_length": 8,
+        "std_path_length": 2.6339,
+        "n_recovery_paths": 8
+      },
+      "f95v1": {
+        "mean_path_length": 2.4,
+        "median_path_length": 2.0,
+        "max_path_length": 6,
+        "std_path_length": 1.9596,
+        "n_recovery_paths": 10
+      },
+      "f95v2": {
+        "mean_path_length": 3.5714,
+        "median_path_length": 4.0,
+        "max_path_length": 6,
+        "std_path_length": 1.7613,
+        "n_recovery_paths": 7
+      }
+    },
+    "post_kernel": {
+      "f103r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 3
+      },
+      "f103v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f104r": {
+        "role_fractions": {
+          "EN": 0.6,
+          "FQ": 0.2,
+          "FL": 0.2
+        },
+        "total_exits": 5
+      },
+      "f104v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f105r": {
+        "role_fractions": {
+          "AX": 0.6667,
+          "FQ": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f105v": {
+        "role_fractions": {
+          "CC": 0.6667,
+          "EN": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f106r": {
+        "role_fractions": {
+          "FQ": 1.0
+        },
+        "total_exits": 2
+      },
+      "f106v": {
+        "role_fractions": {
+          "CC": 0.3333,
+          "EN": 0.3333,
+          "FQ": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f107r": {
+        "role_fractions": {
+          "AX": 0.3333,
+          "EN": 0.3333,
+          "FQ": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f107v": {
+        "role_fractions": {
+          "FQ": 0.5,
+          "AX": 0.5
+        },
+        "total_exits": 2
+      },
+      "f108r": {
+        "role_fractions": {
+          "FL": 1.0
+        },
+        "total_exits": 1
+      },
+      "f108v": {
+        "role_fractions": {
+          "FQ": 0.75,
+          "EN": 0.25
+        },
+        "total_exits": 4
+      },
+      "f111r": {
+        "role_fractions": {
+          "FL": 0.375,
+          "AX": 0.5,
+          "FQ": 0.125
+        },
+        "total_exits": 8
+      },
+      "f111v": {
+        "role_fractions": {
+          "EN": 0.8,
+          "AX": 0.2
+        },
+        "total_exits": 5
+      },
+      "f112r": {
+        "role_fractions": {
+          "AX": 0.4,
+          "EN": 0.4,
+          "FQ": 0.2
+        },
+        "total_exits": 5
+      },
+      "f112v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f113r": {
+        "role_fractions": {
+          "FQ": 0.6667,
+          "EN": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f113v": {
+        "role_fractions": {
+          "FQ": 0.1667,
+          "EN": 0.3333,
+          "AX": 0.5
+        },
+        "total_exits": 6
+      },
+      "f114r": {
+        "role_fractions": {
+          "AX": 0.5,
+          "FQ": 0.5
+        },
+        "total_exits": 2
+      },
+      "f114v": {
+        "role_fractions": {
+          "EN": 0.25,
+          "AX": 0.25,
+          "FQ": 0.25,
+          "CC": 0.25
+        },
+        "total_exits": 4
+      },
+      "f115r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f115v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 2
+      },
+      "f116r": {
+        "role_fractions": {
+          "FQ": 0.3333,
+          "EN": 0.3333,
+          "AX": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f26r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f26v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f31r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f31v": {
+        "role_fractions": {
+          "AX": 0.3333,
+          "FQ": 0.6667
+        },
+        "total_exits": 3
+      },
+      "f33r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f33v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f34r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f34v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f39r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f39v": {
+        "role_fractions": {
+          "AX": 1.0
+        },
+        "total_exits": 1
+      },
+      "f40r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f40v": {
+        "role_fractions": {
+          "FL": 1.0
+        },
+        "total_exits": 1
+      },
+      "f41r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f41v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f43r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f43v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f46r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f46v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f48r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f48v": {
+        "role_fractions": {
+          "FQ": 0.3333,
+          "EN": 0.3333,
+          "AX": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f50r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f50v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f55r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f55v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f57r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f66r": {
+        "role_fractions": {
+          "AX": 1.0
+        },
+        "total_exits": 1
+      },
+      "f66v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f75r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f75v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f76r": {
+        "role_fractions": {
+          "FL": 0.5,
+          "EN": 0.3333,
+          "FQ": 0.1667
+        },
+        "total_exits": 6
+      },
+      "f76v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f77r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f77v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f78r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f78v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f79r": {
+        "role_fractions": {
+          "AX": 1.0
+        },
+        "total_exits": 1
+      },
+      "f79v": {
+        "role_fractions": {
+          "AX": 0.5,
+          "FQ": 0.5
+        },
+        "total_exits": 2
+      },
+      "f80r": {
+        "role_fractions": {
+          "FQ": 1.0
+        },
+        "total_exits": 1
+      },
+      "f80v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f81r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f81v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f82r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f82v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f83r": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f83v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 2
+      },
+      "f84r": {
+        "role_fractions": {
+          "FL": 0.3333,
+          "FQ": 0.3333,
+          "EN": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f84v": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f85r1": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f85r2": {
+        "role_fractions": {
+          "AX": 0.6667,
+          "EN": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f86v3": {
+        "role_fractions": {
+          "AX": 1.0
+        },
+        "total_exits": 1
+      },
+      "f86v4": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f86v5": {
+        "role_fractions": {
+          "AX": 0.6667,
+          "FQ": 0.3333
+        },
+        "total_exits": 3
+      },
+      "f86v6": {
+        "role_fractions": {
+          "FL": 0.5,
+          "EN": 0.5
+        },
+        "total_exits": 2
+      },
+      "f94r": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 2
+      },
+      "f94v": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f95r1": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f95r2": {
+        "role_fractions": {},
+        "total_exits": 0
+      },
+      "f95v1": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      },
+      "f95v2": {
+        "role_fractions": {
+          "EN": 1.0
+        },
+        "total_exits": 1
+      }
+    }
+  }
+}

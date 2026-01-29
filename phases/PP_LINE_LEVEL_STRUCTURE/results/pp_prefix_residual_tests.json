@@ -1,0 +1,47 @@
+{
+  "T10_prefix_residual": {
+    "test": "T10_prefix_residual",
+    "lines_analyzed": 1506,
+    "mean_observed_herfindahl": 0.338164222017166,
+    "mean_expected_herfindahl": 0.33329148961640187,
+    "mean_residual": 0.004872732400764113,
+    "std_residual": 0.08630542549042663,
+    "bootstrap_CI_95": [
+      0.0003824223348285356,
+      0.00920500755175945
+    ],
+    "CI_excludes_zero": true,
+    "effect_size": 0.056459166652328446,
+    "direction": "MORE_CONCENTRATED",
+    "null_herfindahl_mean": 0.3288946192500837,
+    "null_herfindahl_std": 0.0017304163082669925,
+    "p_concentration": 0.0,
+    "pct_middle_explained": 98.55906329424856,
+    "pct_residual": 1.4409367057514328,
+    "PASS": true,
+    "verdict": "PASS"
+  },
+  "T11_adjacent_prefix_decomposition": {
+    "test": "T11_adjacent_prefix_decomposition",
+    "adjacent_pairs": 1422,
+    "nonadjacent_pairs": 10223,
+    "middle_jaccard_adj": 0.10163398215040967,
+    "middle_jaccard_nonadj": 0.09208854632658582,
+    "middle_ratio": 1.103654973442317,
+    "prefix_jaccard_adj": 0.28622169555713856,
+    "prefix_jaccard_nonadj": 0.2810286784633845,
+    "prefix_ratio": 1.018478601978092,
+    "shared_mid_prefix_match_adj": 0.424797157405853,
+    "shared_mid_prefix_match_nonadj": 0.3823546705610799,
+    "match_ratio": 1.1110029250655984,
+    "null_prefix_ratio_mean": 0.9902173303537776,
+    "null_prefix_ratio_std": 0.013972385600533987,
+    "p_prefix_ratio": 0.022,
+    "null_match_ratio_mean": 1.0096787367148043,
+    "null_match_ratio_std": 0.038117466990914194,
+    "p_match_ratio": 0.006,
+    "diagnostic": "PREFIX_LESS_ADJACENT",
+    "PASS": true,
+    "verdict": "PASS"
+  }
+}

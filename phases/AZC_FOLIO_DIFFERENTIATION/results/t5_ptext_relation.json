@@ -1,0 +1,80 @@
+{
+  "folio_stats": {
+    "f67r1": {
+      "ptext_tokens": 36,
+      "diagram_tokens": 119,
+      "ptext_middles": 25,
+      "diagram_middles": 72,
+      "overlap_middles": 12,
+      "jaccard": 0.141
+    },
+    "f67r2": {
+      "ptext_tokens": 33,
+      "diagram_tokens": 141,
+      "ptext_middles": 27,
+      "diagram_middles": 75,
+      "overlap_middles": 12,
+      "jaccard": 0.133
+    },
+    "f68r1": {
+      "ptext_tokens": 28,
+      "diagram_tokens": 36,
+      "ptext_middles": 23,
+      "diagram_middles": 30,
+      "overlap_middles": 4,
+      "jaccard": 0.082
+    },
+    "f68r2": {
+      "ptext_tokens": 37,
+      "diagram_tokens": 43,
+      "ptext_middles": 29,
+      "diagram_middles": 33,
+      "overlap_middles": 10,
+      "jaccard": 0.192
+    },
+    "f68v2": {
+      "ptext_tokens": 43,
+      "diagram_tokens": 56,
+      "ptext_middles": 24,
+      "diagram_middles": 43,
+      "overlap_middles": 12,
+      "jaccard": 0.218
+    },
+    "f68v3": {
+      "ptext_tokens": 40,
+      "diagram_tokens": 119,
+      "ptext_middles": 32,
+      "diagram_middles": 68,
+      "overlap_middles": 21,
+      "jaccard": 0.266
+    },
+    "f69r": {
+      "ptext_tokens": 36,
+      "diagram_tokens": 128,
+      "ptext_middles": 23,
+      "diagram_middles": 61,
+      "overlap_middles": 15,
+      "jaccard": 0.217
+    },
+    "f70r2": {
+      "ptext_tokens": 100,
+      "diagram_tokens": 147,
+      "ptext_middles": 48,
+      "diagram_middles": 61,
+      "overlap_middles": 26,
+      "jaccard": 0.313
+    }
+  },
+  "summary": {
+    "folios_with_both": 8,
+    "total_ptext_tokens": 353,
+    "total_diagram_tokens": 789,
+    "mean_jaccard": 0.19538738358480612,
+    "std_jaccard": 0.07035300486810495,
+    "ptext_a_overlap": 0.7441860465116279,
+    "ptext_b_overlap": 0.7674418604651163,
+    "ptext_a_prefix_sim": 0.9735780867287758,
+    "ptext_diagram_prefix_sim": 0.7391582423138997
+  },
+  "verdict": "PTEXT_IS_CURRIER_A"
+}

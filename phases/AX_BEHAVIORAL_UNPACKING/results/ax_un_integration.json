@@ -1,0 +1,69 @@
+{
+  "ax_un_count": 2246,
+  "subgroup_classification": {
+    "position_based": {
+      "AX_INIT": 981,
+      "AX_FINAL": 776,
+      "AX_MED": 489
+    },
+    "prefix_based": {
+      "AX_MED": 1096,
+      "AX_FINAL": 546,
+      "AX_INIT": 604
+    },
+    "unassigned_prefix": 0,
+    "agreement_rate": 0.35
+  },
+  "routing_comparison": {
+    "AX_INIT": {
+      "chi2": 3.56,
+      "p": 0.614232,
+      "dof": 5,
+      "V": 0.046,
+      "significant": false,
+      "classified_n": 1099,
+      "un_n": 550
+    },
+    "AX_MED": {
+      "chi2": 8.76,
+      "p": 0.119025,
+      "dof": 5,
+      "V": 0.056,
+      "significant": false,
+      "classified_n": 1910,
+      "un_n": 930
+    },
+    "AX_FINAL": {
+      "chi2": 8.11,
+      "p": 0.150058,
+      "dof": 5,
+      "V": 0.098,
+      "significant": false,
+      "classified_n": 393,
+      "un_n": 456
+    }
+  },
+  "middle_overlap": {
+    "classified_unique": 56,
+    "un_unique": 389,
+    "shared": 50,
+    "novel": 339,
+    "jaccard": 0.127,
+    "shared_token_coverage_pct": 64.8,
+    "truly_novel": 312,
+    "cross_role_en": 56,
+    "cross_role_fq": 19
+  },
+  "combined_profile": {
+    "classified_ax": 3852,
+    "ax_un": 2246,
+    "combined": 6098,
+    "classified_pct_of_b": 16.7,
+    "combined_pct_of_b": 26.4,
+    "subgroups": {
+      "AX_INIT": 1799,
+      "AX_MED": 3152,
+      "AX_FINAL": 1147
+    }
+  }
+}

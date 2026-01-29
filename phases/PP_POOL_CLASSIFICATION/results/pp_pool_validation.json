@@ -1,0 +1,2343 @@
+{
+  "metadata": {
+    "phase": "PP_POOL_CLASSIFICATION",
+    "script": "pp_pool_validation.py",
+    "min_freq": 10,
+    "max_k_behavioral": 15,
+    "silhouette_threshold": 0.25
+  },
+  "behavioral_clustering": {
+    "n_eligible": 93,
+    "guard": false,
+    "jsd_stats": {
+      "mean": 0.5367943375871306,
+      "median": 0.548085603321588
+    },
+    "optimal_k": 2,
+    "optimal_silhouette": 0.23716154145252427,
+    "meets_threshold": false,
+    "silhouette_scores": {
+      "2": 0.23716154145252427,
+      "3": 0.2040797738590941,
+      "4": 0.1748195903220929,
+      "5": 0.16694308985474435,
+      "6": 0.14785204814290973,
+      "7": 0.14317173434520206,
+      "8": 0.13947221242393867,
+      "9": 0.13201721866929292,
+      "10": 0.11736920494879836,
+      "11": 0.11276809395170223,
+      "12": 0.113239956479049,
+      "13": 0.11126436839209697,
+      "14": 0.10617682029508453,
+      "15": 0.10213511863835269
+    },
+    "cluster_sizes": {
+      "2": 91,
+      "1": 2
+    },
+    "cluster_assignments": {
+      "a": 2,
+      "ai": 2,
+      "aii": 2,
+      "aiin": 2,
+      "ain": 2,
+      "ak": 2,
+      "al": 2,
+      "am": 2,
+      "ar": 2,
+      "c": 2,
+      "ch": 2,
+      "chd": 2,
+      "cheo": 2,
+      "ck": 2,
+      "ckh": 2,
+      "cph": 2,
+      "ct": 2,
+      "cth": 2,
+      "d": 2,
+      "dai": 2,
+      "dy": 2,
+      "e": 2,
+      "eck": 2,
+      "eckh": 2,
+      "ect": 2,
+      "ed": 2,
+      "edy": 2,
+      "ee": 2,
+      "eed": 2,
+      "eee": 1,
+      "eek": 2,
+      "eeo": 2,
+      "eeol": 2,
+      "eet": 2,
+      "eey": 2,
+      "ek": 2,
+      "eo": 2,
+      "eod": 2,
+      "eok": 2,
+      "eol": 2,
+      "ep": 2,
+      "et": 2,
+      "ey": 2,
+      "fch": 2,
+      "h": 2,
+      "i": 2,
+      "ii": 2,
+      "iin": 2,
+      "in": 2,
+      "k": 2,
+      "ka": 2,
+      "kai": 2,
+      "kc": 2,
+      "kch": 2,
+      "ke": 2,
+      "kee": 2,
+      "keed": 2,
+      "keeo": 2,
+      "keo": 2,
+      "ksh": 2,
+      "l": 2,
+      "lch": 2,
+      "ld": 2,
+      "lk": 2,
+      "lo": 2,
+      "lsh": 2,
+      "ly": 2,
+      "m": 2,
+      "o": 2,
+      "och": 2,
+      "ockh": 2,
+      "od": 2,
+      "of": 2,
+      "oiin": 2,
+      "ok": 2,
+      "ol": 2,
+      "op": 2,
+      "opch": 2,
+      "or": 2,
+      "osh": 2,
+      "ot": 2,
+      "p": 2,
+      "pch": 2,
+      "qo": 2,
+      "r": 2,
+      "s": 2,
+      "sh": 2,
+      "t": 2,
+      "tc": 2,
+      "tch": 2,
+      "te": 2,
+      "teo": 1,
+      "y": 2
+    },
+    "within_jsd_mean": 0.5297819306477912,
+    "between_jsd_mean": 0.6946120234307233,
+    "morphological_prediction": {
+      "ari_lane_character": 0.010382516312461792
+    }
+  },
+  "cross_validation": {
+    "guard": false,
+    "overlap_n": 84,
+    "ari": 0.052437072900682065,
+    "contingency_table": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        51
+      ]
+    ],
+    "cooccurrence_pools": [
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "behavioral_clusters": [
+      1,
+      2
+    ],
+    "chi2_test": {
+      "test": "chi2",
+      "chi2": 19.46341463414635,
+      "p": 0.10942128854892404,
+      "dof": 13,
+      "min_expected": 0.023809523809523808
+    },
+    "pool_to_behavior": {
+      "2": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 2
+        }
+      },
+      "4": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 1,
+          "2": 3
+        }
+      },
+      "5": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 3
+        }
+      },
+      "6": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 2
+        }
+      },
+      "8": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 1
+        }
+      },
+      "9": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 1
+        }
+      },
+      "10": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 1,
+          "2": 3
+        }
+      },
+      "11": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 1
+        }
+      },
+      "12": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 5
+        }
+      },
+      "13": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 5
+        }
+      },
+      "14": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 1
+        }
+      },
+      "16": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 3
+        }
+      },
+      "17": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 1
+        }
+      },
+      "18": {
+        "dominant_behavioral": 2,
+        "distribution": {
+          "1": 0,
+          "2": 51
+        }
+      }
+    },
+    "behavior_to_pool": {
+      "1": {
+        "dominant_pool": 4,
+        "distribution": {
+          "2": 0,
+          "4": 1,
+          "5": 0,
+          "6": 0,
+          "8": 0,
+          "9": 0,
+          "10": 1,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "16": 0,
+          "17": 0,
+          "18": 0
+        }
+      },
+      "2": {
+        "dominant_pool": 18,
+        "distribution": {
+          "2": 2,
+          "4": 3,
+          "5": 3,
+          "6": 2,
+          "8": 1,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 5,
+          "14": 1,
+          "16": 3,
+          "17": 1,
+          "18": 51
+        }
+      }
+    },
+    "interpretation": "independent"
+  },
+  "pool_census": {
+    "n_pools": 20,
+    "compression_ratio": 20.2,
+    "n_assigned_primary": 203,
+    "n_excluded_assigned": 201,
+    "n_no_records": 0,
+    "pool_profiles": {
+      "1": {
+        "n_members": 11,
+        "material_class": {
+          "HERB": 6,
+          "NEUTRAL": 2,
+          "ANIMAL": 2,
+          "MIXED": 1
+        },
+        "pathway": {
+          "AZC-Med": 6,
+          "B-Native": 5
+        },
+        "lane_character": {
+          "neutral": 6,
+          "CHSH": 4,
+          "QO": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 3.909090909090909,
+        "top_members": [
+          {
+            "middle": "she",
+            "b_freq": 7
+          },
+          {
+            "middle": "eoct",
+            "b_freq": 5
+          },
+          {
+            "middle": "ald",
+            "b_freq": 4
+          },
+          {
+            "middle": "kod",
+            "b_freq": 4
+          },
+          {
+            "middle": "oii",
+            "b_freq": 4
+          }
+        ],
+        "dominant_behavioral_cluster": null,
+        "members": [
+          "ald",
+          "cpheo",
+          "ekch",
+          "eoct",
+          "kod",
+          "oii",
+          "oik",
+          "ra",
+          "she",
+          "sheo",
+          "sho"
+        ]
+      },
+      "2": {
+        "n_members": 6,
+        "material_class": {
+          "HERB": 3,
+          "MIXED": 1,
+          "NEUTRAL": 1,
+          "ANIMAL": 1
+        },
+        "pathway": {
+          "B-Native": 2,
+          "AZC-Med": 4
+        },
+        "lane_character": {
+          "neutral": 1,
+          "QO": 2,
+          "CHSH": 3
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.16666666666666666,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 23.666666666666668,
+        "top_members": [
+          {
+            "middle": "te",
+            "b_freq": 87
+          },
+          {
+            "middle": "kee",
+            "b_freq": 34
+          },
+          {
+            "middle": "oe",
+            "b_freq": 11
+          },
+          {
+            "middle": "otch",
+            "b_freq": 7
+          },
+          {
+            "middle": "ckhe",
+            "b_freq": 2
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "ckhe",
+          "kee",
+          "oe",
+          "okeo",
+          "otch",
+          "te"
+        ]
+      },
+      "3": {
+        "n_members": 6,
+        "material_class": {
+          "HERB": 6
+        },
+        "pathway": {
+          "B-Native": 2,
+          "AZC-Med": 4
+        },
+        "lane_character": {
+          "neutral": 1,
+          "QO": 4,
+          "CHSH": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.16666666666666666,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 5.666666666666667,
+        "top_members": [
+          {
+            "middle": "ko",
+            "b_freq": 16
+          },
+          {
+            "middle": "kec",
+            "b_freq": 12
+          },
+          {
+            "middle": "kcho",
+            "b_freq": 3
+          },
+          {
+            "middle": "dc",
+            "b_freq": 1
+          },
+          {
+            "middle": "kor",
+            "b_freq": 1
+          }
+        ],
+        "dominant_behavioral_cluster": null,
+        "members": [
+          "dc",
+          "kcho",
+          "kec",
+          "ko",
+          "kor",
+          "oc"
+        ]
+      },
+      "4": {
+        "n_members": 7,
+        "material_class": {
+          "HERB": 5,
+          "MIXED": 1,
+          "NEUTRAL": 1
+        },
+        "pathway": {
+          "AZC-Med": 6,
+          "B-Native": 1
+        },
+        "lane_character": {
+          "neutral": 3,
+          "CHSH": 4
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 14.142857142857142,
+        "top_members": [
+          {
+            "middle": "eok",
+            "b_freq": 39
+          },
+          {
+            "middle": "ep",
+            "b_freq": 16
+          },
+          {
+            "middle": "cheo",
+            "b_freq": 15
+          },
+          {
+            "middle": "eee",
+            "b_freq": 13
+          },
+          {
+            "middle": "odai",
+            "b_freq": 8
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "cheo",
+          "cphe",
+          "eee",
+          "eok",
+          "ep",
+          "ls",
+          "odai"
+        ]
+      },
+      "5": {
+        "n_members": 8,
+        "material_class": {
+          "HERB": 3,
+          "MIXED": 2,
+          "ANIMAL": 2,
+          "NEUTRAL": 1
+        },
+        "pathway": {
+          "B-Native": 2,
+          "AZC-Med": 6
+        },
+        "lane_character": {
+          "neutral": 1,
+          "CHSH": 6,
+          "QO": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 11.375,
+        "top_members": [
+          {
+            "middle": "ksh",
+            "b_freq": 26
+          },
+          {
+            "middle": "och",
+            "b_freq": 20
+          },
+          {
+            "middle": "eeod",
+            "b_freq": 16
+          },
+          {
+            "middle": "osh",
+            "b_freq": 13
+          },
+          {
+            "middle": "olch",
+            "b_freq": 8
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "ckheo",
+          "eeod",
+          "er",
+          "ksh",
+          "och",
+          "oeee",
+          "olch",
+          "osh"
+        ]
+      },
+      "6": {
+        "n_members": 12,
+        "material_class": {
+          "HERB": 6,
+          "NEUTRAL": 4,
+          "MIXED": 1,
+          "ANIMAL": 1
+        },
+        "pathway": {
+          "AZC-Med": 8,
+          "B-Native": 4
+        },
+        "lane_character": {
+          "neutral": 4,
+          "CHSH": 5,
+          "QO": 3
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.16666666666666666,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.16666666666666666,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 10.083333333333334,
+        "top_members": [
+          {
+            "middle": "lo",
+            "b_freq": 33
+          },
+          {
+            "middle": "olk",
+            "b_freq": 27
+          },
+          {
+            "middle": "qo",
+            "b_freq": 18
+          },
+          {
+            "middle": "do",
+            "b_freq": 9
+          },
+          {
+            "middle": "ea",
+            "b_freq": 8
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "do",
+          "ea",
+          "eea",
+          "keee",
+          "lo",
+          "odc",
+          "olk",
+          "olt",
+          "qo",
+          "rch",
+          "tai",
+          "tcho"
+        ]
+      },
+      "7": {
+        "n_members": 3,
+        "material_class": {
+          "ANIMAL": 1,
+          "NEUTRAL": 1,
+          "MIXED": 1
+        },
+        "pathway": {
+          "AZC-Med": 3
+        },
+        "lane_character": {
+          "neutral": 1,
+          "CHSH": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 8.0,
+        "top_members": [
+          {
+            "middle": "da",
+            "b_freq": 13
+          },
+          {
+            "middle": "oee",
+            "b_freq": 10
+          },
+          {
+            "middle": "odal",
+            "b_freq": 1
+          }
+        ],
+        "dominant_behavioral_cluster": null,
+        "members": [
+          "da",
+          "odal",
+          "oee"
+        ]
+      },
+      "8": {
+        "n_members": 4,
+        "material_class": {
+          "ANIMAL": 2,
+          "NEUTRAL": 1,
+          "MIXED": 1
+        },
+        "pathway": {
+          "AZC-Med": 3,
+          "B-Native": 1
+        },
+        "lane_character": {
+          "neutral": 3,
+          "CHSH": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 14.0,
+        "top_members": [
+          {
+            "middle": "cth",
+            "b_freq": 48
+          },
+          {
+            "middle": "olo",
+            "b_freq": 3
+          },
+          {
+            "middle": "sa",
+            "b_freq": 3
+          },
+          {
+            "middle": "he",
+            "b_freq": 2
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "cth",
+          "he",
+          "olo",
+          "sa"
+        ]
+      },
+      "9": {
+        "n_members": 11,
+        "material_class": {
+          "NEUTRAL": 2,
+          "MIXED": 3,
+          "HERB": 4,
+          "ANIMAL": 2
+        },
+        "pathway": {
+          "AZC-Med": 7,
+          "B-Native": 4
+        },
+        "lane_character": {
+          "neutral": 5,
+          "QO": 5,
+          "CHSH": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.18181818181818182,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 13.818181818181818,
+        "top_members": [
+          {
+            "middle": "ct",
+            "b_freq": 91
+          },
+          {
+            "middle": "ro",
+            "b_freq": 13
+          },
+          {
+            "middle": "kal",
+            "b_freq": 10
+          },
+          {
+            "middle": "pc",
+            "b_freq": 10
+          },
+          {
+            "middle": "tsh",
+            "b_freq": 9
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "air",
+          "cpho",
+          "ct",
+          "dck",
+          "kal",
+          "oek",
+          "pc",
+          "pyd",
+          "ro",
+          "ts",
+          "tsh"
+        ]
+      },
+      "10": {
+        "n_members": 8,
+        "material_class": {
+          "ANIMAL": 3,
+          "HERB": 3,
+          "MIXED": 2
+        },
+        "pathway": {
+          "AZC-Med": 5,
+          "B-Native": 3
+        },
+        "lane_character": {
+          "CHSH": 4,
+          "neutral": 3,
+          "QO": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.09375,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.140625,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.015625
+        },
+        "mean_role_entropy": 0.13265976555739162,
+        "mean_b_frequency": 229.875,
+        "top_members": [
+          {
+            "middle": "edy",
+            "b_freq": 1763
+          },
+          {
+            "middle": "eckh",
+            "b_freq": 28
+          },
+          {
+            "middle": "teo",
+            "b_freq": 18
+          },
+          {
+            "middle": "ld",
+            "b_freq": 13
+          },
+          {
+            "middle": "opche",
+            "b_freq": 6
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "eckh",
+          "edy",
+          "eockh",
+          "iro",
+          "ld",
+          "opche",
+          "qk",
+          "teo"
+        ]
+      },
+      "11": {
+        "n_members": 3,
+        "material_class": {
+          "ANIMAL": 3
+        },
+        "pathway": {
+          "AZC-Med": 2,
+          "B-Native": 1
+        },
+        "lane_character": {
+          "neutral": 1,
+          "QO": 1,
+          "CHSH": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.3333333333333333,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 19.666666666666668,
+        "top_members": [
+          {
+            "middle": "ka",
+            "b_freq": 25
+          },
+          {
+            "middle": "ir",
+            "b_freq": 19
+          },
+          {
+            "middle": "octh",
+            "b_freq": 15
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "ir",
+          "ka",
+          "octh"
+        ]
+      },
+      "12": {
+        "n_members": 21,
+        "material_class": {
+          "ANIMAL": 7,
+          "HERB": 6,
+          "MIXED": 6,
+          "NEUTRAL": 2
+        },
+        "pathway": {
+          "AZC-Med": 18,
+          "B-Native": 3
+        },
+        "lane_character": {
+          "neutral": 7,
+          "CHSH": 12,
+          "QO": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.19047619047619047,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.19047619047619047,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.09523809523809523,
+        "mean_b_frequency": 19.476190476190474,
+        "top_members": [
+          {
+            "middle": "opch",
+            "b_freq": 107
+          },
+          {
+            "middle": "pch",
+            "b_freq": 79
+          },
+          {
+            "middle": "p",
+            "b_freq": 47
+          },
+          {
+            "middle": "aii",
+            "b_freq": 32
+          },
+          {
+            "middle": "fch",
+            "b_freq": 23
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "aii",
+          "cho",
+          "chod",
+          "cp",
+          "eold",
+          "es",
+          "fch",
+          "ock",
+          "ocp",
+          "oct",
+          "octho",
+          "ofch",
+          "oi",
+          "oko",
+          "opch",
+          "os",
+          "otc",
+          "p",
+          "pch",
+          "yd",
+          "ypch"
+        ]
+      },
+      "13": {
+        "n_members": 13,
+        "material_class": {
+          "HERB": 4,
+          "ANIMAL": 4,
+          "NEUTRAL": 2,
+          "MIXED": 3
+        },
+        "pathway": {
+          "AZC-Med": 10,
+          "B-Native": 3
+        },
+        "lane_character": {
+          "neutral": 6,
+          "CHSH": 5,
+          "QO": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.02564102564102564,
+          "CORE_CONTROL": 0.044871794871794865,
+          "ENERGY_OPERATOR": 0.08333333333333333,
+          "FLOW_OPERATOR": 0.07692307692307693,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.18432620193694532,
+        "mean_b_frequency": 53.07692307692308,
+        "top_members": [
+          {
+            "middle": "ke",
+            "b_freq": 421
+          },
+          {
+            "middle": "sh",
+            "b_freq": 109
+          },
+          {
+            "middle": "lch",
+            "b_freq": 74
+          },
+          {
+            "middle": "ii",
+            "b_freq": 23
+          },
+          {
+            "middle": "f",
+            "b_freq": 17
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "alo",
+          "cfh",
+          "eot",
+          "etc",
+          "f",
+          "ii",
+          "ke",
+          "kol",
+          "lch",
+          "of",
+          "oso",
+          "oto",
+          "sh"
+        ]
+      },
+      "14": {
+        "n_members": 4,
+        "material_class": {
+          "ANIMAL": 2,
+          "NEUTRAL": 2
+        },
+        "pathway": {
+          "AZC-Med": 3,
+          "B-Native": 1
+        },
+        "lane_character": {
+          "neutral": 2,
+          "CHSH": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.25,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 15.25,
+        "top_members": [
+          {
+            "middle": "cph",
+            "b_freq": 36
+          },
+          {
+            "middle": "che",
+            "b_freq": 15
+          },
+          {
+            "middle": "ekc",
+            "b_freq": 5
+          },
+          {
+            "middle": "ocph",
+            "b_freq": 5
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "che",
+          "cph",
+          "ekc",
+          "ocph"
+        ]
+      },
+      "15": {
+        "n_members": 6,
+        "material_class": {
+          "HERB": 3,
+          "NEUTRAL": 2,
+          "MIXED": 1
+        },
+        "pathway": {
+          "AZC-Med": 4,
+          "B-Native": 2
+        },
+        "lane_character": {
+          "CHSH": 3,
+          "neutral": 1,
+          "QO": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.08333333333333333,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.08333333333333333,
+          "FLOW_OPERATOR": 0.16666666666666666,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.16666666666666666,
+        "mean_b_frequency": 8.666666666666666,
+        "top_members": [
+          {
+            "middle": "om",
+            "b_freq": 25
+          },
+          {
+            "middle": "im",
+            "b_freq": 8
+          },
+          {
+            "middle": "eock",
+            "b_freq": 7
+          },
+          {
+            "middle": "ks",
+            "b_freq": 7
+          },
+          {
+            "middle": "oda",
+            "b_freq": 4
+          }
+        ],
+        "dominant_behavioral_cluster": null,
+        "members": [
+          "eock",
+          "im",
+          "kcheo",
+          "ks",
+          "oda",
+          "om"
+        ]
+      },
+      "16": {
+        "n_members": 6,
+        "material_class": {
+          "MIXED": 3,
+          "HERB": 2,
+          "ANIMAL": 1
+        },
+        "pathway": {
+          "AZC-Med": 5,
+          "B-Native": 1
+        },
+        "lane_character": {
+          "neutral": 2,
+          "QO": 2,
+          "CHSH": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.5,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 41.5,
+        "top_members": [
+          {
+            "middle": "ai",
+            "b_freq": 174
+          },
+          {
+            "middle": "op",
+            "b_freq": 36
+          },
+          {
+            "middle": "chd",
+            "b_freq": 21
+          },
+          {
+            "middle": "opc",
+            "b_freq": 9
+          },
+          {
+            "middle": "teeo",
+            "b_freq": 8
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "ai",
+          "chd",
+          "kchod",
+          "op",
+          "opc",
+          "teeo"
+        ]
+      },
+      "17": {
+        "n_members": 3,
+        "material_class": {
+          "HERB": 3
+        },
+        "pathway": {
+          "AZC-Med": 3
+        },
+        "lane_character": {
+          "neutral": 1,
+          "CHSH": 2
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.6666666666666666,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 21.333333333333332,
+        "top_members": [
+          {
+            "middle": "et",
+            "b_freq": 58
+          },
+          {
+            "middle": "okc",
+            "b_freq": 4
+          },
+          {
+            "middle": "dsh",
+            "b_freq": 2
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "dsh",
+          "et",
+          "okc"
+        ]
+      },
+      "18": {
+        "n_members": 69,
+        "material_class": {
+          "MIXED": 37,
+          "NEUTRAL": 2,
+          "ANIMAL": 12,
+          "HERB": 18
+        },
+        "pathway": {
+          "AZC-Med": 62,
+          "B-Native": 7
+        },
+        "lane_character": {
+          "neutral": 34,
+          "CHSH": 23,
+          "QO": 12
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.34794581425016213,
+          "CORE_CONTROL": 0.011600476817868122,
+          "ENERGY_OPERATOR": 0.34978407261015965,
+          "FLOW_OPERATOR": 0.0587806114980028,
+          "FREQUENT_OPERATOR": 0.04348322772235815
+        },
+        "mean_role_entropy": 0.6360792259353951,
+        "mean_b_frequency": 239.7826086956522,
+        "top_members": [
+          {
+            "middle": "k",
+            "b_freq": 2081
+          },
+          {
+            "middle": "l",
+            "b_freq": 853
+          },
+          {
+            "middle": "e",
+            "b_freq": 845
+          },
+          {
+            "middle": "aiin",
+            "b_freq": 831
+          },
+          {
+            "middle": "ey",
+            "b_freq": 769
+          }
+        ],
+        "dominant_behavioral_cluster": 2,
+        "members": [
+          "a",
+          "ad",
+          "aiin",
+          "ain",
+          "al",
+          "am",
+          "an",
+          "ar",
+          "c",
+          "cf",
+          "ch",
+          "ck",
+          "ckh",
+          "ckho",
+          "ctho",
+          "d",
+          "dy",
+          "e",
+          "ed",
+          "ee",
+          "eek",
+          "eeo",
+          "eeol",
+          "eey",
+          "ek",
+          "eo",
+          "eod",
+          "eol",
+          "ey",
+          "g",
+          "h",
+          "hy",
+          "i",
+          "iin",
+          "in",
+          "k",
+          "kai",
+          "kalch",
+          "kc",
+          "kch",
+          "keeo",
+          "keo",
+          "keod",
+          "l",
+          "ly",
+          "m",
+          "n",
+          "o",
+          "ocho",
+          "ockh",
+          "od",
+          "ofc",
+          "oiin",
+          "ok",
+          "okch",
+          "ol",
+          "or",
+          "ot",
+          "r",
+          "ry",
+          "s",
+          "so",
+          "t",
+          "tc",
+          "tch",
+          "to",
+          "y",
+          "yk",
+          "yt"
+        ]
+      },
+      "19": {
+        "n_members": 1,
+        "material_class": {
+          "HERB": 1
+        },
+        "pathway": {
+          "AZC-Med": 1
+        },
+        "lane_character": {
+          "neutral": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 2.0,
+        "top_members": [
+          {
+            "middle": "la",
+            "b_freq": 2
+          }
+        ],
+        "dominant_behavioral_cluster": null,
+        "members": [
+          "la"
+        ]
+      },
+      "20": {
+        "n_members": 1,
+        "material_class": {
+          "HERB": 1
+        },
+        "pathway": {
+          "AZC-Med": 1
+        },
+        "lane_character": {
+          "CHSH": 1
+        },
+        "mean_role_vector": {
+          "AUXILIARY": 0.0,
+          "CORE_CONTROL": 0.0,
+          "ENERGY_OPERATOR": 0.0,
+          "FLOW_OPERATOR": 0.0,
+          "FREQUENT_OPERATOR": 0.0
+        },
+        "mean_role_entropy": 0.0,
+        "mean_b_frequency": 4.0,
+        "top_members": [
+          {
+            "middle": "old",
+            "b_freq": 4
+          }
+        ],
+        "dominant_behavioral_cluster": null,
+        "members": [
+          "old"
+        ]
+      }
+    },
+    "variance_explained": {
+      "role_eta_squared": {
+        "AUXILIARY": 0.24685118582754242,
+        "CORE_CONTROL": 0.08657868664075244,
+        "ENERGY_OPERATOR": 0.17383741333626662,
+        "FLOW_OPERATOR": 0.0797609520771505,
+        "FREQUENT_OPERATOR": 0.1437545515075897
+      },
+      "mean_role_eta_squared": 0.14615655787786036
+    },
+    "excluded_assignments": {
+      "oqo": {
+        "assigned_pool": 1,
+        "mean_jaccard": 0.0101010101010101
+      },
+      "edo": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.017857142857142856
+      },
+      "yf": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0011923426664510362
+      },
+      "ocpheo": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.008771929824561403
+      },
+      "oekeo": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.061111111111111116
+      },
+      "ofar": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.03333333333333333
+      },
+      "is": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.047619047619047616
+      },
+      "ofched": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.008771929824561403
+      },
+      "eyt": {
+        "assigned_pool": 3,
+        "mean_jaccard": 0.015151515151515152
+      },
+      "rs": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.0071428571428571435
+      },
+      "opor": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.003968253968253968
+      },
+      "yod": {
+        "assigned_pool": 7,
+        "mean_jaccard": 0.027777777777777776
+      },
+      "tol": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.002525252525252525
+      },
+      "oqot": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.0026455026455026454
+      },
+      "rai": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.03333333333333333
+      },
+      "eka": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.003968253968253968
+      },
+      "ola": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.020833333333333332
+      },
+      "keeok": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.017857142857142856
+      },
+      "otai": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.0196078431372549
+      },
+      "see": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.007575757575757575
+      },
+      "okee": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.0196078431372549
+      },
+      "dytch": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0006587615283267457
+      },
+      "ocfh": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.018491032776747063
+      },
+      "ik": {
+        "assigned_pool": 1,
+        "mean_jaccard": 0.022727272727272728
+      },
+      "pcheo": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.0052328623757195184
+      },
+      "qckh": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.041666666666666664
+      },
+      "olsh": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.003663003663003663
+      },
+      "eotch": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00035787198009371783
+      },
+      "qeke": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.002425698876355226
+      },
+      "yts": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.041666666666666664
+      },
+      "chk": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.0025974025974025974
+      },
+      "ldak": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.000373337389526738
+      },
+      "tal": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.011363636363636364
+      },
+      "eocth": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0010707320356517075
+      },
+      "opcho": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.10555555555555556
+      },
+      "tysh": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.013980263157894737
+      },
+      "eos": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.06037414965986394
+      },
+      "dk": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.002380952380952381
+      },
+      "oeeeo": {
+        "assigned_pool": 8,
+        "mean_jaccard": 0.013157894736842105
+      },
+      "ekeod": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0018074389567388008
+      },
+      "eop": {
+        "assigned_pool": 7,
+        "mean_jaccard": 0.055944055944055944
+      },
+      "rol": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.05208333333333333
+      },
+      "eal": {
+        "assigned_pool": 14,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "oksh": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.007575757575757575
+      },
+      "ete": {
+        "assigned_pool": 8,
+        "mean_jaccard": 0.013157894736842105
+      },
+      "eor": {
+        "assigned_pool": 1,
+        "mean_jaccard": 0.022727272727272728
+      },
+      "yke": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0003899221395753166
+      },
+      "lsh": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0013107165387464888
+      },
+      "ord": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0003109434152613281
+      },
+      "oqok": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.007575757575757576
+      },
+      "chot": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0013649572084795398
+      },
+      "ty": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.022727272727272728
+      },
+      "efo": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.004048582995951417
+      },
+      "kche": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0033659276387740526
+      },
+      "dyd": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0002214578401255705
+      },
+      "ara": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.009615384615384616
+      },
+      "ytd": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.05555555555555555
+      },
+      "opchee": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0002681829877759295
+      },
+      "etch": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.002649707033576664
+      },
+      "dyt": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.030303030303030304
+      },
+      "eck": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.020833333333333332
+      },
+      "qek": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.006578947368421052
+      },
+      "iir": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00302459080349746
+      },
+      "ind": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00033091692682062735
+      },
+      "sk": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.002564102564102564
+      },
+      "yl": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00135872533466838
+      },
+      "yp": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "cks": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.003663003663003663
+      },
+      "arc": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00010128947400769506
+      },
+      "eolt": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.012987012987012986
+      },
+      "ak": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0012016046468319508
+      },
+      "lche": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.041666666666666664
+      },
+      "dl": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0007608317292308687
+      },
+      "oeo": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.015625
+      },
+      "olke": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.05416666666666667
+      },
+      "oke": {
+        "assigned_pool": 2,
+        "mean_jaccard": 0.016666666666666666
+      },
+      "kii": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.003663003663003663
+      },
+      "ctheo": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00015945759987360449
+      },
+      "eam": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.011904761904761904
+      },
+      "odee": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.015625
+      },
+      "qe": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0005921844403125618
+      },
+      "chee": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.004331238281679504
+      },
+      "rain": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00043618712957426255
+      },
+      "dyto": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.0034965034965034965
+      },
+      "yai": {
+        "assigned_pool": 20,
+        "mean_jaccard": 0.16666666666666666
+      },
+      "dch": {
+        "assigned_pool": 2,
+        "mean_jaccard": 0.03333333333333333
+      },
+      "oshe": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00021693872009172376
+      },
+      "eoteo": {
+        "assigned_pool": 1,
+        "mean_jaccard": 0.022727272727272728
+      },
+      "lai": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0077141179877986245
+      },
+      "oet": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.013333333333333334
+      },
+      "dair": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.004285714285714286
+      },
+      "ols": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.009615384615384616
+      },
+      "ool": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.008333333333333333
+      },
+      "yckh": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00015386002861479296
+      },
+      "oaii": {
+        "assigned_pool": 14,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "ees": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.044642857142857144
+      },
+      "eeeo": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.006802721088435374
+      },
+      "eocp": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.025
+      },
+      "rsh": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.018181818181818184
+      },
+      "okcho": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.001160626869516707
+      },
+      "eoc": {
+        "assigned_pool": 3,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "ockho": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.007575757575757576
+      },
+      "cheod": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.000888598717788494
+      },
+      "rc": {
+        "assigned_pool": 3,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "ec": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.018518518518518517
+      },
+      "dydy": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "keed": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0006261753858811008
+      },
+      "eeyt": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00047986538202964956
+      },
+      "loch": {
+        "assigned_pool": 3,
+        "mean_jaccard": 0.012820512820512822
+      },
+      "ocf": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.03571428571428571
+      },
+      "eoek": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0008823948125086065
+      },
+      "eolke": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.012987012987012986
+      },
+      "aip": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.003968253968253968
+      },
+      "cha": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.04329004329004329
+      },
+      "eet": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.028571428571428574
+      },
+      "yfol": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.020833333333333332
+      },
+      "eeck": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.04155844155844156
+      },
+      "kesh": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0005753067206497145
+      },
+      "alod": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.008771929824561403
+      },
+      "oep": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.005952380952380952
+      },
+      "alc": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.005208333333333333
+      },
+      "olkch": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.004219667816434223
+      },
+      "it": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0003531967690663468
+      },
+      "tche": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0014376041078510374
+      },
+      "oeeo": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.004060237147528585
+      },
+      "opd": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.0025974025974025974
+      },
+      "rais": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0
+      },
+      "aiino": {
+        "assigned_pool": 8,
+        "mean_jaccard": 0.027777777777777776
+      },
+      "at": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00038317572478952227
+      },
+      "ode": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.002564102564102564
+      },
+      "keech": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00046264990150473635
+      },
+      "eed": {
+        "assigned_pool": 14,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "rod": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0003885007916826594
+      },
+      "kchd": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00023327537034291307
+      },
+      "ches": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.041666666666666664
+      },
+      "pa": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00040368666184870057
+      },
+      "dii": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.027777777777777776
+      },
+      "shch": {
+        "assigned_pool": 14,
+        "mean_jaccard": 0.00625
+      },
+      "olc": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.012987012987012986
+      },
+      "eodc": {
+        "assigned_pool": 3,
+        "mean_jaccard": 0.015151515151515152
+      },
+      "dai": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00017355346982099676
+      },
+      "pcho": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.047619047619047616
+      },
+      "fod": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.0024813895781637717
+      },
+      "eyk": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00037160741675105563
+      },
+      "eoke": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00035787198009371783
+      },
+      "lk": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0007454453225155027
+      },
+      "chs": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.03571428571428571
+      },
+      "alch": {
+        "assigned_pool": 20,
+        "mean_jaccard": 0.16666666666666666
+      },
+      "ect": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.03571428571428571
+      },
+      "oy": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.008264462809917356
+      },
+      "el": {
+        "assigned_pool": 14,
+        "mean_jaccard": 0.00625
+      },
+      "eeot": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00045577773339071007
+      },
+      "orch": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.03125
+      },
+      "aik": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.022394487510766576
+      },
+      "ip": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.03333333333333333
+      },
+      "ese": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.008771929824561403
+      },
+      "irai": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.008333333333333333
+      },
+      "fsh": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.005863559448346002
+      },
+      "rk": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.005208333333333333
+      },
+      "pai": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.020833333333333332
+      },
+      "ody": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00022235308081792392
+      },
+      "eecth": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0002564644117913285
+      },
+      "tee": {
+        "assigned_pool": 1,
+        "mean_jaccard": 0.006993006993006993
+      },
+      "ecth": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0003121591394761227
+      },
+      "okes": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0002259069557713002
+      },
+      "pd": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.05299746020569819
+      },
+      "epch": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.0018315018315018315
+      },
+      "loeee": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.006410256410256411
+      },
+      "tcheo": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.000239075085946554
+      },
+      "odch": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0004301465912676831
+      },
+      "ait": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0006366753476541298
+      },
+      "oin": {
+        "assigned_pool": 2,
+        "mean_jaccard": 0.027777777777777776
+      },
+      "cfheo": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.018065268065268064
+      },
+      "ofcho": {
+        "assigned_pool": 13,
+        "mean_jaccard": 0.009615384615384616
+      },
+      "q": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.011363636363636364
+      },
+      "octheo": {
+        "assigned_pool": 2,
+        "mean_jaccard": 0.020833333333333332
+      },
+      "ala": {
+        "assigned_pool": 8,
+        "mean_jaccard": 0.027777777777777776
+      },
+      "lc": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0009623772349426724
+      },
+      "ote": {
+        "assigned_pool": 5,
+        "mean_jaccard": 0.00625
+      },
+      "aro": {
+        "assigned_pool": 7,
+        "mean_jaccard": 0.030303030303030304
+      },
+      "odo": {
+        "assigned_pool": 9,
+        "mean_jaccard": 0.01515151515151515
+      },
+      "re": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0011357685860202624
+      },
+      "eoa": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.008771929824561403
+      },
+      "eeok": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.041666666666666664
+      },
+      "kair": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.030303030303030304
+      },
+      "dksh": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.012362637362637362
+      },
+      "eke": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.00021321154851664827
+      },
+      "epc": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.025641025641025644
+      },
+      "le": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0004707537854247387
+      },
+      "olf": {
+        "assigned_pool": 16,
+        "mean_jaccard": 0.015151515151515152
+      },
+      "tchd": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.025000000000000005
+      },
+      "fo": {
+        "assigned_pool": 14,
+        "mean_jaccard": 0.006097560975609756
+      },
+      "oai": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.0003907881618432232
+      },
+      "cs": {
+        "assigned_pool": 11,
+        "mean_jaccard": 0.05555555555555555
+      },
+      "ta": {
+        "assigned_pool": 15,
+        "mean_jaccard": 0.0248015873015873
+      },
+      "ckhyd": {
+        "assigned_pool": 17,
+        "mean_jaccard": 0.08333333333333333
+      },
+      "olyd": {
+        "assigned_pool": 4,
+        "mean_jaccard": 0.0071428571428571435
+      },
+      "lchd": {
+        "assigned_pool": 10,
+        "mean_jaccard": 0.020833333333333332
+      },
+      "eekeo": {
+        "assigned_pool": 18,
+        "mean_jaccard": 0.000193162278644961
+      },
+      "odaii": {
+        "assigned_pool": 6,
+        "mean_jaccard": 0.013888888888888888
+      },
+      "yaii": {
+        "assigned_pool": 12,
+        "mean_jaccard": 0.001443001443001443
+      }
+    }
+  },
+  "verdicts": {
+    "behavioral": "BEHAVIORAL_CONTINUOUS",
+    "cross_validation": "INDEPENDENT"
+  }
+}

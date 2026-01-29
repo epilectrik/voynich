@@ -1,0 +1,29 @@
+{
+  "ring_lengths": {
+    "R1": 50,
+    "R2": 50,
+    "R3": 29,
+    "R4": 29
+  },
+  "xkk_positions": [
+    3,
+    30
+  ],
+  "x_positions": [
+    3,
+    20,
+    30,
+    44
+  ],
+  "terminators": {
+    "m": [
+      48
+    ],
+    "n": [
+      49
+    ]
+  },
+  "r1_unique_middles": 28,
+  "r3_unique_middles": 19,
+  "verdict": "ALIGNMENT_POSSIBLE"
+}

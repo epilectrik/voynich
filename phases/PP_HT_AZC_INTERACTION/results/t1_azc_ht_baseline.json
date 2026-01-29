@@ -1,0 +1,771 @@
+{
+  "n_folios": 82,
+  "azc_mediation": {
+    "mean": 75.45845639043112,
+    "std": 8.952682168978061,
+    "min": 54.48275862068966,
+    "max": 94.87179487179488
+  },
+  "ht_density": {
+    "mean": 30.966477815171334,
+    "std": 7.576582182787319,
+    "min": 15.533980582524272,
+    "max": 47.19101123595506
+  },
+  "correlations": {
+    "spearman_rho": -0.35159476930901734,
+    "spearman_p": 0.0011993841302891234,
+    "pearson_r": -0.33275396700574633,
+    "pearson_p": 0.0022543207766563735,
+    "partial_rho_vocab": -0.12509727309026603,
+    "partial_p_vocab": 0.2627909526469606
+  },
+  "tertile_analysis": {
+    "low_azc_mean_ht": 34.92994203542536,
+    "med_azc_mean_ht": 29.66360114997612,
+    "high_azc_mean_ht": 28.400911244221763,
+    "kruskal_wallis_H": 11.080850696630876,
+    "kruskal_wallis_p": 0.003924857051875027,
+    "high_low_diff": -6.529030791203599
+  },
+  "per_folio": [
+    {
+      "folio": "f103r",
+      "total_tokens": 522,
+      "total_middles": 113,
+      "azc_mediated_middles": 81,
+      "azc_pct": 71.68141592920354,
+      "ht_tokens": 145,
+      "ht_pct": 27.77777777777778
+    },
+    {
+      "folio": "f103v",
+      "total_tokens": 449,
+      "total_middles": 89,
+      "azc_mediated_middles": 63,
+      "azc_pct": 70.78651685393258,
+      "ht_tokens": 110,
+      "ht_pct": 24.498886414253896
+    },
+    {
+      "folio": "f104r",
+      "total_tokens": 438,
+      "total_middles": 133,
+      "azc_mediated_middles": 92,
+      "azc_pct": 69.17293233082707,
+      "ht_tokens": 175,
+      "ht_pct": 39.954337899543376
+    },
+    {
+      "folio": "f104v",
+      "total_tokens": 458,
+      "total_middles": 129,
+      "azc_mediated_middles": 88,
+      "azc_pct": 68.21705426356588,
+      "ht_tokens": 177,
+      "ht_pct": 38.646288209606986
+    },
+    {
+      "folio": "f105r",
+      "total_tokens": 370,
+      "total_middles": 126,
+      "azc_mediated_middles": 81,
+      "azc_pct": 64.28571428571429,
+      "ht_tokens": 152,
+      "ht_pct": 41.08108108108108
+    },
+    {
+      "folio": "f105v",
+      "total_tokens": 390,
+      "total_middles": 128,
+      "azc_mediated_middles": 74,
+      "azc_pct": 57.8125,
+      "ht_tokens": 168,
+      "ht_pct": 43.07692307692308
+    },
+    {
+      "folio": "f106r",
+      "total_tokens": 421,
+      "total_middles": 136,
+      "azc_mediated_middles": 85,
+      "azc_pct": 62.5,
+      "ht_tokens": 156,
+      "ht_pct": 37.05463182897862
+    },
+    {
+      "folio": "f106v",
+      "total_tokens": 449,
+      "total_middles": 118,
+      "azc_mediated_middles": 81,
+      "azc_pct": 68.64406779661017,
+      "ht_tokens": 156,
+      "ht_pct": 34.74387527839644
+    },
+    {
+      "folio": "f107r",
+      "total_tokens": 488,
+      "total_middles": 119,
+      "azc_mediated_middles": 79,
+      "azc_pct": 66.38655462184875,
+      "ht_tokens": 169,
+      "ht_pct": 34.631147540983605
+    },
+    {
+      "folio": "f107v",
+      "total_tokens": 455,
+      "total_middles": 95,
+      "azc_mediated_middles": 67,
+      "azc_pct": 70.52631578947368,
+      "ht_tokens": 116,
+      "ht_pct": 25.494505494505493
+    },
+    {
+      "folio": "f108r",
+      "total_tokens": 491,
+      "total_middles": 112,
+      "azc_mediated_middles": 80,
+      "azc_pct": 71.42857142857143,
+      "ht_tokens": 143,
+      "ht_pct": 29.124236252545824
+    },
+    {
+      "folio": "f108v",
+      "total_tokens": 570,
+      "total_middles": 107,
+      "azc_mediated_middles": 70,
+      "azc_pct": 65.42056074766356,
+      "ht_tokens": 166,
+      "ht_pct": 29.12280701754386
+    },
+    {
+      "folio": "f111r",
+      "total_tokens": 614,
+      "total_middles": 127,
+      "azc_mediated_middles": 87,
+      "azc_pct": 68.50393700787401,
+      "ht_tokens": 213,
+      "ht_pct": 34.69055374592834
+    },
+    {
+      "folio": "f111v",
+      "total_tokens": 561,
+      "total_middles": 105,
+      "azc_mediated_middles": 72,
+      "azc_pct": 68.57142857142857,
+      "ht_tokens": 158,
+      "ht_pct": 28.163992869875223
+    },
+    {
+      "folio": "f112r",
+      "total_tokens": 394,
+      "total_middles": 106,
+      "azc_mediated_middles": 81,
+      "azc_pct": 76.41509433962264,
+      "ht_tokens": 125,
+      "ht_pct": 31.725888324873097
+    },
+    {
+      "folio": "f112v",
+      "total_tokens": 415,
+      "total_middles": 106,
+      "azc_mediated_middles": 75,
+      "azc_pct": 70.75471698113208,
+      "ht_tokens": 133,
+      "ht_pct": 32.04819277108434
+    },
+    {
+      "folio": "f113r",
+      "total_tokens": 518,
+      "total_middles": 144,
+      "azc_mediated_middles": 97,
+      "azc_pct": 67.36111111111111,
+      "ht_tokens": 214,
+      "ht_pct": 41.31274131274131
+    },
+    {
+      "folio": "f113v",
+      "total_tokens": 479,
+      "total_middles": 124,
+      "azc_mediated_middles": 85,
+      "azc_pct": 68.54838709677419,
+      "ht_tokens": 164,
+      "ht_pct": 34.23799582463466
+    },
+    {
+      "folio": "f114r",
+      "total_tokens": 447,
+      "total_middles": 145,
+      "azc_mediated_middles": 79,
+      "azc_pct": 54.48275862068966,
+      "ht_tokens": 179,
+      "ht_pct": 40.044742729306485
+    },
+    {
+      "folio": "f114v",
+      "total_tokens": 362,
+      "total_middles": 120,
+      "azc_mediated_middles": 79,
+      "azc_pct": 65.83333333333333,
+      "ht_tokens": 143,
+      "ht_pct": 39.50276243093923
+    },
+    {
+      "folio": "f115r",
+      "total_tokens": 444,
+      "total_middles": 137,
+      "azc_mediated_middles": 86,
+      "azc_pct": 62.77372262773723,
+      "ht_tokens": 170,
+      "ht_pct": 38.288288288288285
+    },
+    {
+      "folio": "f115v",
+      "total_tokens": 399,
+      "total_middles": 127,
+      "azc_mediated_middles": 86,
+      "azc_pct": 67.71653543307086,
+      "ht_tokens": 184,
+      "ht_pct": 46.11528822055138
+    },
+    {
+      "folio": "f116r",
+      "total_tokens": 537,
+      "total_middles": 94,
+      "azc_mediated_middles": 71,
+      "azc_pct": 75.53191489361703,
+      "ht_tokens": 128,
+      "ht_pct": 23.83612662942272
+    },
+    {
+      "folio": "f26r",
+      "total_tokens": 85,
+      "total_middles": 42,
+      "azc_mediated_middles": 31,
+      "azc_pct": 73.80952380952381,
+      "ht_tokens": 31,
+      "ht_pct": 36.470588235294116
+    },
+    {
+      "folio": "f26v",
+      "total_tokens": 89,
+      "total_middles": 48,
+      "azc_mediated_middles": 44,
+      "azc_pct": 91.66666666666667,
+      "ht_tokens": 42,
+      "ht_pct": 47.19101123595506
+    },
+    {
+      "folio": "f31r",
+      "total_tokens": 100,
+      "total_middles": 46,
+      "azc_mediated_middles": 37,
+      "azc_pct": 80.43478260869566,
+      "ht_tokens": 31,
+      "ht_pct": 31.0
+    },
+    {
+      "folio": "f31v",
+      "total_tokens": 108,
+      "total_middles": 47,
+      "azc_mediated_middles": 37,
+      "azc_pct": 78.72340425531915,
+      "ht_tokens": 42,
+      "ht_pct": 38.888888888888886
+    },
+    {
+      "folio": "f33r",
+      "total_tokens": 72,
+      "total_middles": 36,
+      "azc_mediated_middles": 30,
+      "azc_pct": 83.33333333333333,
+      "ht_tokens": 25,
+      "ht_pct": 34.72222222222222
+    },
+    {
+      "folio": "f33v",
+      "total_tokens": 109,
+      "total_middles": 35,
+      "azc_mediated_middles": 32,
+      "azc_pct": 91.42857142857143,
+      "ht_tokens": 23,
+      "ht_pct": 21.10091743119266
+    },
+    {
+      "folio": "f34r",
+      "total_tokens": 144,
+      "total_middles": 61,
+      "azc_mediated_middles": 50,
+      "azc_pct": 81.9672131147541,
+      "ht_tokens": 52,
+      "ht_pct": 36.111111111111114
+    },
+    {
+      "folio": "f34v",
+      "total_tokens": 115,
+      "total_middles": 50,
+      "azc_mediated_middles": 42,
+      "azc_pct": 84.0,
+      "ht_tokens": 37,
+      "ht_pct": 32.17391304347826
+    },
+    {
+      "folio": "f39r",
+      "total_tokens": 154,
+      "total_middles": 64,
+      "azc_mediated_middles": 45,
+      "azc_pct": 70.3125,
+      "ht_tokens": 54,
+      "ht_pct": 35.064935064935064
+    },
+    {
+      "folio": "f39v",
+      "total_tokens": 142,
+      "total_middles": 50,
+      "azc_mediated_middles": 40,
+      "azc_pct": 80.0,
+      "ht_tokens": 34,
+      "ht_pct": 23.943661971830984
+    },
+    {
+      "folio": "f40r",
+      "total_tokens": 97,
+      "total_middles": 39,
+      "azc_mediated_middles": 37,
+      "azc_pct": 94.87179487179488,
+      "ht_tokens": 27,
+      "ht_pct": 27.835051546391753
+    },
+    {
+      "folio": "f40v",
+      "total_tokens": 106,
+      "total_middles": 39,
+      "azc_mediated_middles": 35,
+      "azc_pct": 89.74358974358974,
+      "ht_tokens": 22,
+      "ht_pct": 20.754716981132077
+    },
+    {
+      "folio": "f41r",
+      "total_tokens": 97,
+      "total_middles": 52,
+      "azc_mediated_middles": 38,
+      "azc_pct": 73.07692307692308,
+      "ht_tokens": 40,
+      "ht_pct": 41.23711340206186
+    },
+    {
+      "folio": "f41v",
+      "total_tokens": 68,
+      "total_middles": 36,
+      "azc_mediated_middles": 32,
+      "azc_pct": 88.88888888888889,
+      "ht_tokens": 20,
+      "ht_pct": 29.41176470588235
+    },
+    {
+      "folio": "f43r",
+      "total_tokens": 150,
+      "total_middles": 66,
+      "azc_mediated_middles": 50,
+      "azc_pct": 75.75757575757575,
+      "ht_tokens": 50,
+      "ht_pct": 33.333333333333336
+    },
+    {
+      "folio": "f43v",
+      "total_tokens": 153,
+      "total_middles": 64,
+      "azc_mediated_middles": 51,
+      "azc_pct": 79.6875,
+      "ht_tokens": 52,
+      "ht_pct": 33.98692810457516
+    },
+    {
+      "folio": "f46r",
+      "total_tokens": 157,
+      "total_middles": 70,
+      "azc_mediated_middles": 49,
+      "azc_pct": 70.0,
+      "ht_tokens": 57,
+      "ht_pct": 36.30573248407644
+    },
+    {
+      "folio": "f46v",
+      "total_tokens": 111,
+      "total_middles": 52,
+      "azc_mediated_middles": 45,
+      "azc_pct": 86.53846153846153,
+      "ht_tokens": 32,
+      "ht_pct": 28.82882882882883
+    },
+    {
+      "folio": "f48r",
+      "total_tokens": 89,
+      "total_middles": 52,
+      "azc_mediated_middles": 46,
+      "azc_pct": 88.46153846153847,
+      "ht_tokens": 39,
+      "ht_pct": 43.82022471910113
+    },
+    {
+      "folio": "f48v",
+      "total_tokens": 126,
+      "total_middles": 50,
+      "azc_mediated_middles": 44,
+      "azc_pct": 88.0,
+      "ht_tokens": 33,
+      "ht_pct": 26.19047619047619
+    },
+    {
+      "folio": "f50r",
+      "total_tokens": 89,
+      "total_middles": 43,
+      "azc_mediated_middles": 29,
+      "azc_pct": 67.44186046511628,
+      "ht_tokens": 32,
+      "ht_pct": 35.95505617977528
+    },
+    {
+      "folio": "f50v",
+      "total_tokens": 98,
+      "total_middles": 45,
+      "azc_mediated_middles": 37,
+      "azc_pct": 82.22222222222223,
+      "ht_tokens": 29,
+      "ht_pct": 29.591836734693878
+    },
+    {
+      "folio": "f55r",
+      "total_tokens": 124,
+      "total_middles": 51,
+      "azc_mediated_middles": 45,
+      "azc_pct": 88.23529411764706,
+      "ht_tokens": 39,
+      "ht_pct": 31.451612903225808
+    },
+    {
+      "folio": "f55v",
+      "total_tokens": 104,
+      "total_middles": 45,
+      "azc_mediated_middles": 38,
+      "azc_pct": 84.44444444444444,
+      "ht_tokens": 26,
+      "ht_pct": 25.0
+    },
+    {
+      "folio": "f57r",
+      "total_tokens": 87,
+      "total_middles": 61,
+      "azc_mediated_middles": 45,
+      "azc_pct": 73.77049180327869,
+      "ht_tokens": 39,
+      "ht_pct": 44.827586206896555
+    },
+    {
+      "folio": "f66r",
+      "total_tokens": 329,
+      "total_middles": 117,
+      "azc_mediated_middles": 81,
+      "azc_pct": 69.23076923076923,
+      "ht_tokens": 127,
+      "ht_pct": 38.60182370820669
+    },
+    {
+      "folio": "f66v",
+      "total_tokens": 113,
+      "total_middles": 61,
+      "azc_mediated_middles": 43,
+      "azc_pct": 70.49180327868852,
+      "ht_tokens": 46,
+      "ht_pct": 40.70796460176991
+    },
+    {
+      "folio": "f75r",
+      "total_tokens": 412,
+      "total_middles": 66,
+      "azc_mediated_middles": 54,
+      "azc_pct": 81.81818181818181,
+      "ht_tokens": 64,
+      "ht_pct": 15.533980582524272
+    },
+    {
+      "folio": "f75v",
+      "total_tokens": 339,
+      "total_middles": 74,
+      "azc_mediated_middles": 54,
+      "azc_pct": 72.97297297297297,
+      "ht_tokens": 65,
+      "ht_pct": 19.174041297935105
+    },
+    {
+      "folio": "f76r",
+      "total_tokens": 546,
+      "total_middles": 96,
+      "azc_mediated_middles": 64,
+      "azc_pct": 66.66666666666667,
+      "ht_tokens": 117,
+      "ht_pct": 21.428571428571427
+    },
+    {
+      "folio": "f76v",
+      "total_tokens": 400,
+      "total_middles": 93,
+      "azc_mediated_middles": 62,
+      "azc_pct": 66.66666666666667,
+      "ht_tokens": 110,
+      "ht_pct": 27.5
+    },
+    {
+      "folio": "f77r",
+      "total_tokens": 325,
+      "total_middles": 77,
+      "azc_mediated_middles": 57,
+      "azc_pct": 74.02597402597402,
+      "ht_tokens": 75,
+      "ht_pct": 23.076923076923077
+    },
+    {
+      "folio": "f77v",
+      "total_tokens": 331,
+      "total_middles": 71,
+      "azc_mediated_middles": 54,
+      "azc_pct": 76.05633802816901,
+      "ht_tokens": 73,
+      "ht_pct": 22.05438066465257
+    },
+    {
+      "folio": "f78r",
+      "total_tokens": 294,
+      "total_middles": 71,
+      "azc_mediated_middles": 53,
+      "azc_pct": 74.64788732394366,
+      "ht_tokens": 64,
+      "ht_pct": 21.768707482993197
+    },
+    {
+      "folio": "f78v",
+      "total_tokens": 292,
+      "total_middles": 59,
+      "azc_mediated_middles": 52,
+      "azc_pct": 88.13559322033899,
+      "ht_tokens": 51,
+      "ht_pct": 17.465753424657535
+    },
+    {
+      "folio": "f79r",
+      "total_tokens": 389,
+      "total_middles": 75,
+      "azc_mediated_middles": 60,
+      "azc_pct": 80.0,
+      "ht_tokens": 89,
+      "ht_pct": 22.87917737789203
+    },
+    {
+      "folio": "f79v",
+      "total_tokens": 354,
+      "total_middles": 78,
+      "azc_mediated_middles": 62,
+      "azc_pct": 79.48717948717949,
+      "ht_tokens": 83,
+      "ht_pct": 23.44632768361582
+    },
+    {
+      "folio": "f80r",
+      "total_tokens": 441,
+      "total_middles": 82,
+      "azc_mediated_middles": 62,
+      "azc_pct": 75.60975609756098,
+      "ht_tokens": 106,
+      "ht_pct": 24.03628117913832
+    },
+    {
+      "folio": "f80v",
+      "total_tokens": 378,
+      "total_middles": 64,
+      "azc_mediated_middles": 45,
+      "azc_pct": 70.3125,
+      "ht_tokens": 82,
+      "ht_pct": 21.693121693121693
+    },
+    {
+      "folio": "f81r",
+      "total_tokens": 207,
+      "total_middles": 54,
+      "azc_mediated_middles": 42,
+      "azc_pct": 77.77777777777777,
+      "ht_tokens": 37,
+      "ht_pct": 17.8743961352657
+    },
+    {
+      "folio": "f81v",
+      "total_tokens": 258,
+      "total_middles": 67,
+      "azc_mediated_middles": 53,
+      "azc_pct": 79.1044776119403,
+      "ht_tokens": 60,
+      "ht_pct": 23.25581395348837
+    },
+    {
+      "folio": "f82r",
+      "total_tokens": 275,
+      "total_middles": 64,
+      "azc_mediated_middles": 50,
+      "azc_pct": 78.125,
+      "ht_tokens": 66,
+      "ht_pct": 24.0
+    },
+    {
+      "folio": "f82v",
+      "total_tokens": 298,
+      "total_middles": 79,
+      "azc_mediated_middles": 50,
+      "azc_pct": 63.29113924050633,
+      "ht_tokens": 73,
+      "ht_pct": 24.496644295302012
+    },
+    {
+      "folio": "f83r",
+      "total_tokens": 340,
+      "total_middles": 90,
+      "azc_mediated_middles": 55,
+      "azc_pct": 61.111111111111114,
+      "ht_tokens": 96,
+      "ht_pct": 28.235294117647058
+    },
+    {
+      "folio": "f83v",
+      "total_tokens": 263,
+      "total_middles": 69,
+      "azc_mediated_middles": 50,
+      "azc_pct": 72.46376811594203,
+      "ht_tokens": 62,
+      "ht_pct": 23.574144486692017
+    },
+    {
+      "folio": "f84r",
+      "total_tokens": 361,
+      "total_middles": 69,
+      "azc_mediated_middles": 53,
+      "azc_pct": 76.81159420289855,
+      "ht_tokens": 78,
+      "ht_pct": 21.606648199445985
+    },
+    {
+      "folio": "f84v",
+      "total_tokens": 347,
+      "total_middles": 64,
+      "azc_mediated_middles": 53,
+      "azc_pct": 82.8125,
+      "ht_tokens": 75,
+      "ht_pct": 21.613832853025936
+    },
+    {
+      "folio": "f85r1",
+      "total_tokens": 333,
+      "total_middles": 107,
+      "azc_mediated_middles": 69,
+      "azc_pct": 64.48598130841121,
+      "ht_tokens": 131,
+      "ht_pct": 39.33933933933934
+    },
+    {
+      "folio": "f85r2",
+      "total_tokens": 155,
+      "total_middles": 66,
+      "azc_mediated_middles": 51,
+      "azc_pct": 77.27272727272727,
+      "ht_tokens": 58,
+      "ht_pct": 37.41935483870968
+    },
+    {
+      "folio": "f86v3",
+      "total_tokens": 277,
+      "total_middles": 84,
+      "azc_mediated_middles": 62,
+      "azc_pct": 73.80952380952381,
+      "ht_tokens": 85,
+      "ht_pct": 30.685920577617328
+    },
+    {
+      "folio": "f86v4",
+      "total_tokens": 188,
+      "total_middles": 82,
+      "azc_mediated_middles": 60,
+      "azc_pct": 73.17073170731707,
+      "ht_tokens": 73,
+      "ht_pct": 38.829787234042556
+    },
+    {
+      "folio": "f86v5",
+      "total_tokens": 381,
+      "total_middles": 92,
+      "azc_mediated_middles": 73,
+      "azc_pct": 79.34782608695652,
+      "ht_tokens": 108,
+      "ht_pct": 28.346456692913385
+    },
+    {
+      "folio": "f86v6",
+      "total_tokens": 479,
+      "total_middles": 125,
+      "azc_mediated_middles": 80,
+      "azc_pct": 64.0,
+      "ht_tokens": 162,
+      "ht_pct": 33.82045929018789
+    },
+    {
+      "folio": "f94r",
+      "total_tokens": 82,
+      "total_middles": 46,
+      "azc_mediated_middles": 40,
+      "azc_pct": 86.95652173913044,
+      "ht_tokens": 24,
+      "ht_pct": 29.26829268292683
+    },
+    {
+      "folio": "f94v",
+      "total_tokens": 101,
+      "total_middles": 46,
+      "azc_mediated_middles": 39,
+      "azc_pct": 84.78260869565217,
+      "ht_tokens": 31,
+      "ht_pct": 30.693069306930692
+    },
+    {
+      "folio": "f95r1",
+      "total_tokens": 103,
+      "total_middles": 38,
+      "azc_mediated_middles": 35,
+      "azc_pct": 92.10526315789474,
+      "ht_tokens": 30,
+      "ht_pct": 29.12621359223301
+    },
+    {
+      "folio": "f95r2",
+      "total_tokens": 79,
+      "total_middles": 36,
+      "azc_mediated_middles": 33,
+      "azc_pct": 91.66666666666667,
+      "ht_tokens": 19,
+      "ht_pct": 24.050632911392405
+    },
+    {
+      "folio": "f95v1",
+      "total_tokens": 117,
+      "total_middles": 51,
+      "azc_mediated_middles": 37,
+      "azc_pct": 72.54901960784314,
+      "ht_tokens": 51,
+      "ht_pct": 43.58974358974359
+    },
+    {
+      "folio": "f95v2",
+      "total_tokens": 64,
+      "total_middles": 29,
+      "azc_mediated_middles": 26,
+      "azc_pct": 89.65517241379311,
+      "ht_tokens": 19,
+      "ht_pct": 29.6875
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "metadata": {
+    "phase": "PP_LANE_PIPELINE",
+    "script": "pp_lane_vocabulary_architecture",
+    "description": "PP vocabulary lane character architecture: census, AZC asymmetry, discriminator pathways"
+  },
+  "pp_character_census": {
+    "total_pp": 404,
+    "type_level": {
+      "qo_predicting": 60,
+      "chsh_predicting": 175,
+      "neutral": 169,
+      "qo_fraction_of_lane_predicting": 0.2553,
+      "binom_p_vs_equal": 3.1114701400487856e-14
+    },
+    "token_level": {
+      "qo_tokens": 3962,
+      "chsh_tokens": 8681,
+      "neutral_tokens": 8999,
+      "qo_fraction_of_lane_predicting": 0.3134,
+      "binom_p_vs_equal": 0.0
+    },
+    "by_material": {
+      "ANIMAL": {
+        "qo": 9,
+        "chsh": 23,
+        "qo_frac": 0.2812
+      },
+      "HERB": {
+        "qo": 22,
+        "chsh": 48,
+        "qo_frac": 0.3143
+      },
+      "MIXED": {
+        "qo": 7,
+        "chsh": 27,
+        "qo_frac": 0.2059
+      },
+      "NEUTRAL": {
+        "qo": 22,
+        "chsh": 77,
+        "qo_frac": 0.2222
+      }
+    },
+    "material_x_lane_test": {
+      "method": "chi2",
+      "stat": 2.4007,
+      "p": 0.4935,
+      "cramers_v": 0.1011
+    },
+    "by_pathway": {
+      "AZC-Med": {
+        "qo": 27,
+        "chsh": 110,
+        "qo_frac": 0.1971
+      },
+      "B-Native": {
+        "qo": 33,
+        "chsh": 65,
+        "qo_frac": 0.3367
+      }
+    }
+  },
+  "azc_filtering_asymmetry": {
+    "type_level": {
+      "azc_med": {
+        "qo": 27,
+        "chsh": 110,
+        "qo_frac": 0.1971
+      },
+      "b_native": {
+        "qo": 33,
+        "chsh": 65,
+        "qo_frac": 0.3367
+      },
+      "table": [
+        [
+          27,
+          110
+        ],
+        [
+          33,
+          65
+        ]
+      ],
+      "test": {
+        "method": "chi2_yates",
+        "stat": 5.149,
+        "p": 0.02326
+      },
+      "odds_ratio": 0.4835,
+      "or_ci_95": [
+        0.267,
+        0.8756
+      ],
+      "cramers_v": 0.1579
+    },
+    "token_level": {
+      "azc_med": {
+        "qo_tokens": 3694,
+        "chsh_tokens": 8393,
+        "qo_frac": 0.3056
+      },
+      "b_native": {
+        "qo_tokens": 268,
+        "chsh_tokens": 288,
+        "qo_frac": 0.482
+      },
+      "table": [
+        [
+          3694,
+          8393
+        ],
+        [
+          268,
+          288
+        ]
+      ],
+      "test": {
+        "method": "chi2_yates",
+        "stat": 76.0495,
+        "p": 0.0
+      },
+      "odds_ratio": 0.473,
+      "or_ci_95": [
+        0.3987,
+        0.5611
+      ],
+      "cramers_v": 0.078
+    },
+    "interpretation": "AZC filtering is asymmetric at both type and token level"
+  },
+  "discriminator_pathway_analysis": {
+    "n_discriminators": 20,
+    "by_pathway": {
+      "AZC-Med": {
+        "n": 17,
+        "qo": 12,
+        "chsh": 5,
+        "mean_abs_r": 0.1255
+      },
+      "B-Native": {
+        "n": 3,
+        "qo": 3,
+        "chsh": 0,
+        "mean_abs_r": 0.1363
+      }
+    },
+    "pathway_x_direction_table": [
+      [
+        12,
+        5
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "fisher_test": {
+      "method": "fisher_exact",
+      "odds_ratio": 0.0,
+      "p": 0.5395
+    },
+    "abs_r_comparison": {
+      "method": "mann_whitney",
+      "u_stat": 20.0,
+      "p": 0.6158
+    },
+    "en_breakdown": {
+      "AZC-Med": {
+        "en": 14,
+        "non_en": 3
+      },
+      "B-Native": {
+        "en": 3,
+        "non_en": 0
+      }
+    },
+    "detailed_discriminators": [
+      {
+        "middle": "al",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.07158528371801136,
+        "abs_r": 0.07158528371801136,
+        "fdr": 0.031814776352516574,
+        "material_class": "HERB",
+        "en_subfamily": "CHSH",
+        "has_en_association": true,
+        "b_role": "FLOW_OPERATOR"
+      },
+      {
+        "middle": "d",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.09723279539836163,
+        "abs_r": 0.09723279539836163,
+        "fdr": 0.0018984079710268444,
+        "material_class": "MIXED",
+        "en_subfamily": "MIXED_EN",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "e",
+        "pathway": "AZC-Med",
+        "direction": "CHSH",
+        "r": -0.08700523915263103,
+        "abs_r": 0.08700523915263103,
+        "fdr": 0.00649899622458001,
+        "material_class": "MIXED",
+        "en_subfamily": "CHSH",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "g",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.09998953235758211,
+        "abs_r": 0.09998953235758211,
+        "fdr": 0.0013694987362574233,
+        "material_class": "ANIMAL",
+        "en_subfamily": "none",
+        "has_en_association": false,
+        "b_role": "AUXILIARY"
+      },
+      {
+        "middle": "k",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.3458518395430259,
+        "abs_r": 0.3458518395430259,
+        "fdr": 5.9593269973280886e-40,
+        "material_class": "MIXED",
+        "en_subfamily": "MIXED_EN",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "ka",
+        "pathway": "B-Native",
+        "direction": "QO",
+        "r": 0.0775372678678979,
+        "abs_r": 0.0775372678678979,
+        "fdr": 0.01945313448235426,
+        "material_class": "ANIMAL",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "kc",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.20303987237830298,
+        "abs_r": 0.20303987237830298,
+        "fdr": 2.0281994844961706e-13,
+        "material_class": "HERB",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "kch",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.15258313160408252,
+        "abs_r": 0.15258313160408252,
+        "fdr": 1.0626946974811206e-07,
+        "material_class": "ANIMAL",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "kcho",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.09633747765827066,
+        "abs_r": 0.09633747765827066,
+        "fdr": 0.0019911460810346556,
+        "material_class": "HERB",
+        "en_subfamily": "none",
+        "has_en_association": false,
+        "b_role": "unmatched"
+      },
+      {
+        "middle": "keeo",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.07660412827254627,
+        "abs_r": 0.07660412827254627,
+        "fdr": 0.01945313448235426,
+        "material_class": "MIXED",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "keo",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.08566662251345458,
+        "abs_r": 0.08566662251345458,
+        "fdr": 0.007275244665330499,
+        "material_class": "HERB",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "ko",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.07553938642417585,
+        "abs_r": 0.07553938642417585,
+        "fdr": 0.020978913486676486,
+        "material_class": "HERB",
+        "en_subfamily": "none",
+        "has_en_association": false,
+        "b_role": "unmatched"
+      },
+      {
+        "middle": "o",
+        "pathway": "AZC-Med",
+        "direction": "CHSH",
+        "r": -0.14032616340531573,
+        "abs_r": 0.14032616340531573,
+        "fdr": 1.3602017360786486e-06,
+        "material_class": "HERB",
+        "en_subfamily": "CHSH",
+        "has_en_association": true,
+        "b_role": "AUXILIARY"
+      },
+      {
+        "middle": "ol",
+        "pathway": "AZC-Med",
+        "direction": "CHSH",
+        "r": -0.12991128550654468,
+        "abs_r": 0.12991128550654468,
+        "fdr": 9.958162256791877e-06,
+        "material_class": "MIXED",
+        "en_subfamily": "CHSH",
+        "has_en_association": true,
+        "b_role": "AUXILIARY"
+      },
+      {
+        "middle": "or",
+        "pathway": "AZC-Med",
+        "direction": "CHSH",
+        "r": -0.10520687213852933,
+        "abs_r": 0.10520687213852933,
+        "fdr": 0.0006648776141957997,
+        "material_class": "MIXED",
+        "en_subfamily": "CHSH",
+        "has_en_association": true,
+        "b_role": "AUXILIARY"
+      },
+      {
+        "middle": "ot",
+        "pathway": "AZC-Med",
+        "direction": "CHSH",
+        "r": -0.07668896805179497,
+        "abs_r": 0.07668896805179497,
+        "fdr": 0.01945313448235426,
+        "material_class": "HERB",
+        "en_subfamily": "CHSH",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "pch",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.0917417617287185,
+        "abs_r": 0.0917417617287185,
+        "fdr": 0.0036051534027369803,
+        "material_class": "ANIMAL",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "t",
+        "pathway": "AZC-Med",
+        "direction": "QO",
+        "r": 0.19886817549456545,
+        "abs_r": 0.19886817549456545,
+        "fdr": 5.489275387113877e-13,
+        "material_class": "MIXED",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "tc",
+        "pathway": "B-Native",
+        "direction": "QO",
+        "r": 0.22438662391923297,
+        "abs_r": 0.22438662391923297,
+        "fdr": 2.745242770900088e-16,
+        "material_class": "HERB",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      },
+      {
+        "middle": "tch",
+        "pathway": "B-Native",
+        "direction": "QO",
+        "r": 0.10691026336900158,
+        "abs_r": 0.10691026336900158,
+        "fdr": 0.0005660420866567814,
+        "material_class": "ANIMAL",
+        "en_subfamily": "QO",
+        "has_en_association": true,
+        "b_role": "ENERGY_OPERATOR"
+      }
+    ],
+    "all_tested_comparison": {
+      "AZC-Med": {
+        "n_tested": 94,
+        "mean_abs_r": 0.0452
+      },
+      "B-Native": {
+        "n_tested": 5,
+        "mean_abs_r": 0.0949
+      },
+      "mann_whitney": {
+        "u_stat": 131.0,
+        "p": 0.0993
+      }
+    }
+  },
+  "verdicts": {
+    "census": "CHSH_BIASED",
+    "filtering": "AZC_ASYMMETRIC",
+    "discriminators": "PATHWAY_UNIFORM"
+  }
+}

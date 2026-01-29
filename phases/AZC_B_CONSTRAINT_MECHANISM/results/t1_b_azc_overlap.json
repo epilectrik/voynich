@@ -1,0 +1,589 @@
+{
+  "azc_total_middles": 690,
+  "b_folios": 82,
+  "per_folio": [
+    {
+      "folio": "f103r",
+      "total_middles": 113,
+      "azc_mediated": 81,
+      "b_native": 32,
+      "pct_azc_mediated": 71.7
+    },
+    {
+      "folio": "f103v",
+      "total_middles": 89,
+      "azc_mediated": 63,
+      "b_native": 26,
+      "pct_azc_mediated": 70.8
+    },
+    {
+      "folio": "f104r",
+      "total_middles": 133,
+      "azc_mediated": 92,
+      "b_native": 41,
+      "pct_azc_mediated": 69.2
+    },
+    {
+      "folio": "f104v",
+      "total_middles": 129,
+      "azc_mediated": 88,
+      "b_native": 41,
+      "pct_azc_mediated": 68.2
+    },
+    {
+      "folio": "f105r",
+      "total_middles": 126,
+      "azc_mediated": 81,
+      "b_native": 45,
+      "pct_azc_mediated": 64.3
+    },
+    {
+      "folio": "f105v",
+      "total_middles": 128,
+      "azc_mediated": 74,
+      "b_native": 54,
+      "pct_azc_mediated": 57.8
+    },
+    {
+      "folio": "f106r",
+      "total_middles": 136,
+      "azc_mediated": 85,
+      "b_native": 51,
+      "pct_azc_mediated": 62.5
+    },
+    {
+      "folio": "f106v",
+      "total_middles": 118,
+      "azc_mediated": 81,
+      "b_native": 37,
+      "pct_azc_mediated": 68.6
+    },
+    {
+      "folio": "f107r",
+      "total_middles": 119,
+      "azc_mediated": 79,
+      "b_native": 40,
+      "pct_azc_mediated": 66.4
+    },
+    {
+      "folio": "f107v",
+      "total_middles": 95,
+      "azc_mediated": 67,
+      "b_native": 28,
+      "pct_azc_mediated": 70.5
+    },
+    {
+      "folio": "f108r",
+      "total_middles": 112,
+      "azc_mediated": 80,
+      "b_native": 32,
+      "pct_azc_mediated": 71.4
+    },
+    {
+      "folio": "f108v",
+      "total_middles": 107,
+      "azc_mediated": 70,
+      "b_native": 37,
+      "pct_azc_mediated": 65.4
+    },
+    {
+      "folio": "f111r",
+      "total_middles": 127,
+      "azc_mediated": 87,
+      "b_native": 40,
+      "pct_azc_mediated": 68.5
+    },
+    {
+      "folio": "f111v",
+      "total_middles": 105,
+      "azc_mediated": 72,
+      "b_native": 33,
+      "pct_azc_mediated": 68.6
+    },
+    {
+      "folio": "f112r",
+      "total_middles": 106,
+      "azc_mediated": 81,
+      "b_native": 25,
+      "pct_azc_mediated": 76.4
+    },
+    {
+      "folio": "f112v",
+      "total_middles": 106,
+      "azc_mediated": 75,
+      "b_native": 31,
+      "pct_azc_mediated": 70.8
+    },
+    {
+      "folio": "f113r",
+      "total_middles": 144,
+      "azc_mediated": 97,
+      "b_native": 47,
+      "pct_azc_mediated": 67.4
+    },
+    {
+      "folio": "f113v",
+      "total_middles": 124,
+      "azc_mediated": 85,
+      "b_native": 39,
+      "pct_azc_mediated": 68.5
+    },
+    {
+      "folio": "f114r",
+      "total_middles": 145,
+      "azc_mediated": 79,
+      "b_native": 66,
+      "pct_azc_mediated": 54.5
+    },
+    {
+      "folio": "f114v",
+      "total_middles": 120,
+      "azc_mediated": 79,
+      "b_native": 41,
+      "pct_azc_mediated": 65.8
+    },
+    {
+      "folio": "f115r",
+      "total_middles": 137,
+      "azc_mediated": 86,
+      "b_native": 51,
+      "pct_azc_mediated": 62.8
+    },
+    {
+      "folio": "f115v",
+      "total_middles": 127,
+      "azc_mediated": 86,
+      "b_native": 41,
+      "pct_azc_mediated": 67.7
+    },
+    {
+      "folio": "f116r",
+      "total_middles": 94,
+      "azc_mediated": 71,
+      "b_native": 23,
+      "pct_azc_mediated": 75.5
+    },
+    {
+      "folio": "f26r",
+      "total_middles": 42,
+      "azc_mediated": 31,
+      "b_native": 11,
+      "pct_azc_mediated": 73.8
+    },
+    {
+      "folio": "f26v",
+      "total_middles": 48,
+      "azc_mediated": 44,
+      "b_native": 4,
+      "pct_azc_mediated": 91.7
+    },
+    {
+      "folio": "f31r",
+      "total_middles": 46,
+      "azc_mediated": 37,
+      "b_native": 9,
+      "pct_azc_mediated": 80.4
+    },
+    {
+      "folio": "f31v",
+      "total_middles": 47,
+      "azc_mediated": 37,
+      "b_native": 10,
+      "pct_azc_mediated": 78.7
+    },
+    {
+      "folio": "f33r",
+      "total_middles": 36,
+      "azc_mediated": 30,
+      "b_native": 6,
+      "pct_azc_mediated": 83.3
+    },
+    {
+      "folio": "f33v",
+      "total_middles": 35,
+      "azc_mediated": 32,
+      "b_native": 3,
+      "pct_azc_mediated": 91.4
+    },
+    {
+      "folio": "f34r",
+      "total_middles": 61,
+      "azc_mediated": 50,
+      "b_native": 11,
+      "pct_azc_mediated": 82.0
+    },
+    {
+      "folio": "f34v",
+      "total_middles": 50,
+      "azc_mediated": 42,
+      "b_native": 8,
+      "pct_azc_mediated": 84.0
+    },
+    {
+      "folio": "f39r",
+      "total_middles": 64,
+      "azc_mediated": 45,
+      "b_native": 19,
+      "pct_azc_mediated": 70.3
+    },
+    {
+      "folio": "f39v",
+      "total_middles": 50,
+      "azc_mediated": 40,
+      "b_native": 10,
+      "pct_azc_mediated": 80.0
+    },
+    {
+      "folio": "f40r",
+      "total_middles": 39,
+      "azc_mediated": 37,
+      "b_native": 2,
+      "pct_azc_mediated": 94.9
+    },
+    {
+      "folio": "f40v",
+      "total_middles": 39,
+      "azc_mediated": 35,
+      "b_native": 4,
+      "pct_azc_mediated": 89.7
+    },
+    {
+      "folio": "f41r",
+      "total_middles": 52,
+      "azc_mediated": 38,
+      "b_native": 14,
+      "pct_azc_mediated": 73.1
+    },
+    {
+      "folio": "f41v",
+      "total_middles": 36,
+      "azc_mediated": 32,
+      "b_native": 4,
+      "pct_azc_mediated": 88.9
+    },
+    {
+      "folio": "f43r",
+      "total_middles": 66,
+      "azc_mediated": 50,
+      "b_native": 16,
+      "pct_azc_mediated": 75.8
+    },
+    {
+      "folio": "f43v",
+      "total_middles": 64,
+      "azc_mediated": 51,
+      "b_native": 13,
+      "pct_azc_mediated": 79.7
+    },
+    {
+      "folio": "f46r",
+      "total_middles": 70,
+      "azc_mediated": 49,
+      "b_native": 21,
+      "pct_azc_mediated": 70.0
+    },
+    {
+      "folio": "f46v",
+      "total_middles": 52,
+      "azc_mediated": 45,
+      "b_native": 7,
+      "pct_azc_mediated": 86.5
+    },
+    {
+      "folio": "f48r",
+      "total_middles": 52,
+      "azc_mediated": 46,
+      "b_native": 6,
+      "pct_azc_mediated": 88.5
+    },
+    {
+      "folio": "f48v",
+      "total_middles": 50,
+      "azc_mediated": 44,
+      "b_native": 6,
+      "pct_azc_mediated": 88.0
+    },
+    {
+      "folio": "f50r",
+      "total_middles": 43,
+      "azc_mediated": 29,
+      "b_native": 14,
+      "pct_azc_mediated": 67.4
+    },
+    {
+      "folio": "f50v",
+      "total_middles": 45,
+      "azc_mediated": 37,
+      "b_native": 8,
+      "pct_azc_mediated": 82.2
+    },
+    {
+      "folio": "f55r",
+      "total_middles": 51,
+      "azc_mediated": 45,
+      "b_native": 6,
+      "pct_azc_mediated": 88.2
+    },
+    {
+      "folio": "f55v",
+      "total_middles": 45,
+      "azc_mediated": 38,
+      "b_native": 7,
+      "pct_azc_mediated": 84.4
+    },
+    {
+      "folio": "f57r",
+      "total_middles": 61,
+      "azc_mediated": 45,
+      "b_native": 16,
+      "pct_azc_mediated": 73.8
+    },
+    {
+      "folio": "f66r",
+      "total_middles": 117,
+      "azc_mediated": 81,
+      "b_native": 36,
+      "pct_azc_mediated": 69.2
+    },
+    {
+      "folio": "f66v",
+      "total_middles": 61,
+      "azc_mediated": 43,
+      "b_native": 18,
+      "pct_azc_mediated": 70.5
+    },
+    {
+      "folio": "f75r",
+      "total_middles": 66,
+      "azc_mediated": 54,
+      "b_native": 12,
+      "pct_azc_mediated": 81.8
+    },
+    {
+      "folio": "f75v",
+      "total_middles": 74,
+      "azc_mediated": 54,
+      "b_native": 20,
+      "pct_azc_mediated": 73.0
+    },
+    {
+      "folio": "f76r",
+      "total_middles": 96,
+      "azc_mediated": 64,
+      "b_native": 32,
+      "pct_azc_mediated": 66.7
+    },
+    {
+      "folio": "f76v",
+      "total_middles": 93,
+      "azc_mediated": 62,
+      "b_native": 31,
+      "pct_azc_mediated": 66.7
+    },
+    {
+      "folio": "f77r",
+      "total_middles": 77,
+      "azc_mediated": 57,
+      "b_native": 20,
+      "pct_azc_mediated": 74.0
+    },
+    {
+      "folio": "f77v",
+      "total_middles": 71,
+      "azc_mediated": 54,
+      "b_native": 17,
+      "pct_azc_mediated": 76.1
+    },
+    {
+      "folio": "f78r",
+      "total_middles": 71,
+      "azc_mediated": 53,
+      "b_native": 18,
+      "pct_azc_mediated": 74.6
+    },
+    {
+      "folio": "f78v",
+      "total_middles": 59,
+      "azc_mediated": 52,
+      "b_native": 7,
+      "pct_azc_mediated": 88.1
+    },
+    {
+      "folio": "f79r",
+      "total_middles": 75,
+      "azc_mediated": 60,
+      "b_native": 15,
+      "pct_azc_mediated": 80.0
+    },
+    {
+      "folio": "f79v",
+      "total_middles": 78,
+      "azc_mediated": 62,
+      "b_native": 16,
+      "pct_azc_mediated": 79.5
+    },
+    {
+      "folio": "f80r",
+      "total_middles": 82,
+      "azc_mediated": 62,
+      "b_native": 20,
+      "pct_azc_mediated": 75.6
+    },
+    {
+      "folio": "f80v",
+      "total_middles": 64,
+      "azc_mediated": 45,
+      "b_native": 19,
+      "pct_azc_mediated": 70.3
+    },
+    {
+      "folio": "f81r",
+      "total_middles": 54,
+      "azc_mediated": 42,
+      "b_native": 12,
+      "pct_azc_mediated": 77.8
+    },
+    {
+      "folio": "f81v",
+      "total_middles": 67,
+      "azc_mediated": 53,
+      "b_native": 14,
+      "pct_azc_mediated": 79.1
+    },
+    {
+      "folio": "f82r",
+      "total_middles": 64,
+      "azc_mediated": 50,
+      "b_native": 14,
+      "pct_azc_mediated": 78.1
+    },
+    {
+      "folio": "f82v",
+      "total_middles": 79,
+      "azc_mediated": 50,
+      "b_native": 29,
+      "pct_azc_mediated": 63.3
+    },
+    {
+      "folio": "f83r",
+      "total_middles": 90,
+      "azc_mediated": 55,
+      "b_native": 35,
+      "pct_azc_mediated": 61.1
+    },
+    {
+      "folio": "f83v",
+      "total_middles": 69,
+      "azc_mediated": 50,
+      "b_native": 19,
+      "pct_azc_mediated": 72.5
+    },
+    {
+      "folio": "f84r",
+      "total_middles": 69,
+      "azc_mediated": 53,
+      "b_native": 16,
+      "pct_azc_mediated": 76.8
+    },
+    {
+      "folio": "f84v",
+      "total_middles": 64,
+      "azc_mediated": 53,
+      "b_native": 11,
+      "pct_azc_mediated": 82.8
+    },
+    {
+      "folio": "f85r1",
+      "total_middles": 107,
+      "azc_mediated": 69,
+      "b_native": 38,
+      "pct_azc_mediated": 64.5
+    },
+    {
+      "folio": "f85r2",
+      "total_middles": 66,
+      "azc_mediated": 51,
+      "b_native": 15,
+      "pct_azc_mediated": 77.3
+    },
+    {
+      "folio": "f86v3",
+      "total_middles": 84,
+      "azc_mediated": 62,
+      "b_native": 22,
+      "pct_azc_mediated": 73.8
+    },
+    {
+      "folio": "f86v4",
+      "total_middles": 82,
+      "azc_mediated": 60,
+      "b_native": 22,
+      "pct_azc_mediated": 73.2
+    },
+    {
+      "folio": "f86v5",
+      "total_middles": 92,
+      "azc_mediated": 73,
+      "b_native": 19,
+      "pct_azc_mediated": 79.3
+    },
+    {
+      "folio": "f86v6",
+      "total_middles": 125,
+      "azc_mediated": 80,
+      "b_native": 45,
+      "pct_azc_mediated": 64.0
+    },
+    {
+      "folio": "f94r",
+      "total_middles": 46,
+      "azc_mediated": 40,
+      "b_native": 6,
+      "pct_azc_mediated": 87.0
+    },
+    {
+      "folio": "f94v",
+      "total_middles": 46,
+      "azc_mediated": 39,
+      "b_native": 7,
+      "pct_azc_mediated": 84.8
+    },
+    {
+      "folio": "f95r1",
+      "total_middles": 38,
+      "azc_mediated": 35,
+      "b_native": 3,
+      "pct_azc_mediated": 92.1
+    },
+    {
+      "folio": "f95r2",
+      "total_middles": 36,
+      "azc_mediated": 33,
+      "b_native": 3,
+      "pct_azc_mediated": 91.7
+    },
+    {
+      "folio": "f95v1",
+      "total_middles": 51,
+      "azc_mediated": 37,
+      "b_native": 14,
+      "pct_azc_mediated": 72.5
+    },
+    {
+      "folio": "f95v2",
+      "total_middles": 29,
+      "azc_mediated": 26,
+      "b_native": 3,
+      "pct_azc_mediated": 89.7
+    }
+  ],
+  "summary": {
+    "mean_pct": 75.5,
+    "std_pct": 9.0,
+    "min_pct": 54.5,
+    "max_pct": 94.9,
+    "median_pct": 73.9,
+    "vocab_size_correlation": -0.8
+  },
+  "verdict": "MODERATE_VARIATION"
+}

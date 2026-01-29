@@ -1,0 +1,38 @@
+{
+  "label_counts": {
+    "total": 339,
+    "by_language": {
+      "A": 183,
+      "NA": 68,
+      "B": 99
+    }
+  },
+  "by_language": {
+    "A": {
+      "token_count": 172,
+      "unique_middles": 96,
+      "folio_unique_rate": 75.0,
+      "compound_rate": 58.333333333333336,
+      "mean_length": 3.28125
+    },
+    "B": {
+      "token_count": 99,
+      "unique_middles": 46,
+      "folio_unique_rate": 69.56521739130434,
+      "compound_rate": 30.434782608695652,
+      "mean_length": 2.130434782608696
+    },
+    "NA": {
+      "token_count": 68,
+      "unique_middles": 44,
+      "folio_unique_rate": 84.0909090909091,
+      "compound_rate": 43.18181818181818,
+      "mean_length": 3.1363636363636362
+    }
+  },
+  "all_labels": {
+    "unique_middles": 142,
+    "compound_rate": 56.33802816901409,
+    "in_b_text_rate": 61.971830985915496
+  }
+}

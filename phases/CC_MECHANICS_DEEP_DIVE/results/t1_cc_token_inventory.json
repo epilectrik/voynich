@@ -1,0 +1,60 @@
+{
+  "cc_types": {
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "17": 9
+  },
+  "cc_occurrences": {
+    "10": 314,
+    "11": 421,
+    "12": 0,
+    "17": 288
+  },
+  "cc_middles": {
+    "10": {
+      "iin": 1
+    },
+    "11": {
+      "ol": 1
+    },
+    "12": {
+      "k": 1
+    },
+    "17": {
+      "k": 4,
+      "ch": 2,
+      "aiin": 1,
+      "ke": 1,
+      "sh": 1
+    }
+  },
+  "cc_kernel_rates": {
+    "10": 0.0,
+    "11": 0.0,
+    "12": 100.0,
+    "17": 88.9
+  },
+  "cc_kernel_chars": {
+    "10": {},
+    "11": {},
+    "12": {
+      "k": 1
+    },
+    "17": {
+      "k": 5,
+      "e": 1,
+      "h": 3
+    }
+  },
+  "class_12_types": [
+    "k"
+  ],
+  "class_12_in_b": 0,
+  "findings": [
+    "CLASS_12_ABSENT: Class 12 has 1 types but 0 B occurrences",
+    "KERNEL_BIFURCATION_CONFIRMED: 10=0%, 11=0%, 17=89%",
+    "CC_GROUP_A_SOURCE_ONLY: Classes 10,11 are never forbidden targets",
+    "CC_GROUP_B_BIDIRECTIONAL: Classes 12,17 are both source and target"
+  ]
+}

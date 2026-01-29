@@ -1,0 +1,116 @@
+{
+  "T1_cooccurrence": {
+    "test": "T1_cooccurrence",
+    "lines_with_2plus_pp": 1506,
+    "total_within_line_pairs": 19576,
+    "observed_unique_pairs": 5460,
+    "observed_variance": 80.92696480564614,
+    "observed_max_count": 169,
+    "null_unique_mean": 5668.58,
+    "null_unique_std": 42.8801539176342,
+    "null_variance_mean": 84.27326400901055,
+    "null_variance_std": 2.1566077542357744,
+    "p_unique_lower": 0.0,
+    "p_unique_upper": 1.0,
+    "p_variance": 0.934,
+    "enrichment_ratio_top10pct": 5.864521613735051,
+    "top_10_pairs": [
+      {
+        "pair": [
+          "ol",
+          "or"
+        ],
+        "count": 169
+      },
+      {
+        "pair": [
+          "o",
+          "ol"
+        ],
+        "count": 156
+      },
+      {
+        "pair": [
+          "ol",
+          "y"
+        ],
+        "count": 132
+      },
+      {
+        "pair": [
+          "or",
+          "y"
+        ],
+        "count": 125
+      },
+      {
+        "pair": [
+          "o",
+          "or"
+        ],
+        "count": 124
+      },
+      {
+        "pair": [
+          "o",
+          "y"
+        ],
+        "count": 122
+      },
+      {
+        "pair": [
+          "k",
+          "ol"
+        ],
+        "count": 109
+      },
+      {
+        "pair": [
+          "aiin",
+          "ol"
+        ],
+        "count": 98
+      },
+      {
+        "pair": [
+          "ey",
+          "ol"
+        ],
+        "count": 93
+      },
+      {
+        "pair": [
+          "e",
+          "ol"
+        ],
+        "count": 89
+      }
+    ],
+    "pass_unique": true,
+    "pass_variance": false,
+    "PASS": true,
+    "verdict": "PASS"
+  },
+  "T2_incompatibility_driver": {
+    "test": "T2_incompatibility_driver",
+    "cooccurring_pair_types": 5460,
+    "avoidance_pair_types": 15518,
+    "observed_avoidance_violations": 0,
+    "illegal_rate": 0.0,
+    "avoidance_confirmed": true,
+    "mean_avoidance_in_shuffle": 2530.266,
+    "observed_legal_unique": 5460,
+    "observed_legal_variance": 80.92696480564614,
+    "null_legal_variance_mean": 142.9738618300315,
+    "null_legal_variance_std": 3.7454654731240673,
+    "p_legal_variance": 1.0,
+    "structure_beyond_incompatibility": false,
+    "PASS": false,
+    "verdict": "FAIL"
+  },
+  "gate_status": "T2_FAIL_STOP",
+  "T3_attraction_clusters": {
+    "skipped": true,
+    "reason": "T2 FAIL"
+  }
+}

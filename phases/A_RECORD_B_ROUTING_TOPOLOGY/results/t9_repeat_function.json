@@ -1,0 +1,90 @@
+{
+  "total_repeats": 357,
+  "pp_rate_repeats": 100.0,
+  "pp_rate_nonrepeats": 92.80761763890173,
+  "position_bias": 0.6750284821007267,
+  "middle_freq_ratio": 1.7602129919856027,
+  "exact_vs_middle_ratio": 0.3810032017075774,
+  "top_repeated_tokens": [
+    [
+      "daiin",
+      80
+    ],
+    [
+      "chol",
+      43
+    ],
+    [
+      "chor",
+      12
+    ],
+    [
+      "shol",
+      11
+    ],
+    [
+      "dy",
+      11
+    ],
+    [
+      "s",
+      10
+    ],
+    [
+      "or",
+      10
+    ],
+    [
+      "okeol",
+      8
+    ],
+    [
+      "chy",
+      7
+    ],
+    [
+      "sho",
+      6
+    ],
+    [
+      "dar",
+      6
+    ],
+    [
+      "ol",
+      6
+    ],
+    [
+      "dol",
+      5
+    ],
+    [
+      "qokol",
+      5
+    ],
+    [
+      "dal",
+      5
+    ],
+    [
+      "cthy",
+      4
+    ],
+    [
+      "shor",
+      4
+    ],
+    [
+      "shey",
+      4
+    ],
+    [
+      "dam",
+      4
+    ],
+    [
+      "cheol",
+      4
+    ]
+  ]
+}

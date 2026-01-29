@@ -1,0 +1,35 @@
+{
+  "ht_en_correlation": -0.50568670345338,
+  "section_profiles": {
+    "BIO": {
+      "ht_rate": 0.22277372262773723,
+      "en_rate": 0.40116788321167884,
+      "folios": 20,
+      "tokens": 6850
+    },
+    "HERBAL_B": {
+      "ht_rate": 0.32340900632675845,
+      "en_rate": 0.2285076293263863,
+      "folios": 24,
+      "tokens": 2687
+    },
+    "PHARMA": {
+      "ht_rate": 0.4007561436672968,
+      "en_rate": 0.2684310018903592,
+      "folios": 3,
+      "tokens": 529
+    },
+    "RECIPE_B": {
+      "ht_rate": 0.3409356269946291,
+      "en_rate": 0.2852027710749591,
+      "folios": 33,
+      "tokens": 12847
+    }
+  },
+  "pharma_anomaly": {
+    "f66r_labels": 32,
+    "f66r_normal": 5,
+    "mean_par_size": 12.595238095238095
+  },
+  "interpretation": "SECTION_PROGRAM_TYPE"
+}

@@ -1,0 +1,93 @@
+{
+  "token_level": {
+    "total_b": 23096,
+    "link_count": 3047,
+    "link_pct": 13.19,
+    "unique_link_types": 801
+  },
+  "section_densities": {
+    "B": {
+      "total": 6850,
+      "link": 1385,
+      "density_pct": 20.22
+    },
+    "C": {
+      "total": 1480,
+      "link": 172,
+      "density_pct": 11.62
+    },
+    "H": {
+      "total": 3433,
+      "link": 318,
+      "density_pct": 9.26
+    },
+    "S": {
+      "total": 10671,
+      "link": 1099,
+      "density_pct": 10.3
+    },
+    "T": {
+      "total": 662,
+      "link": 73,
+      "density_pct": 11.03
+    }
+  },
+  "folio_level": {
+    "n_folios": 82,
+    "mean_density": 0.1249,
+    "median_density": 0.1096,
+    "std_density": 0.0618,
+    "min_density": 0.0103,
+    "max_density": 0.2995,
+    "folios_with_link": 82,
+    "pct_folios_with_link": 100.0
+  },
+  "line_level": {
+    "total_lines": 2420,
+    "lines_with_link": 1660,
+    "pct_lines_with_link": 68.6,
+    "mean_line_density": 0.1364
+  },
+  "icc_cross_classification": {
+    "classified": 1879,
+    "unclassified": 1168,
+    "by_role": {
+      "UN": 1168,
+      "AX": 799,
+      "CC": 421,
+      "EN": 578,
+      "FQ": 71,
+      "FL": 10
+    },
+    "by_class_top10": {
+      "11": 421,
+      "17": 288,
+      "32": 202,
+      "24": 169,
+      "34": 159,
+      "25": 101,
+      "8": 99,
+      "31": 59,
+      "14": 53,
+      "15": 50
+    }
+  },
+  "ol_morphological_position": {
+    "PREFIX": 875,
+    "MIDDLE": 1254,
+    "SPAN": 579,
+    "SUFFIX": 377
+  },
+  "reconciliation": {
+    "best_match": "Line mean density",
+    "best_match_value": 13.6,
+    "distance_from_38": 24.4,
+    "all_candidates": {
+      "Token-level": 13.2,
+      "Folio mean": 12.5,
+      "Folio median": 11.0,
+      "Line coverage": 68.6,
+      "Line mean density": 13.6
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 2.82 | **Status:** FROZEN | **Constraints:** 419 | **Date:** 2026-01-26
+**Version:** 3.08 | **Status:** FROZEN | **Constraints:** 648 | **Date:** 2026-01-28
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -237,7 +237,7 @@ See [CORE/falsifications.md](CORE/falsifications.md) for complete list with evid
 - Kernel control (3 operators: k, h, e)
 - Hazard topology (17 forbidden transitions, 5 failure classes)
 - Convergence to stable states (57.8% terminal STATE-C)
-- LINK operator (38% of text = deliberate waiting)
+- LINK operator (13.2% of tokens = deliberate waiting; C609 corrected from legacy 38%)
 - Folio = complete program, Line = formal control block
 
 **Not encoded (operator provides externally):**
@@ -253,8 +253,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 419 |
-| Completed phases | 217 |
+| Validated constraints | 640 |
+| Completed phases | 225 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -349,4 +349,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v2.82 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-26*
+*Context System v3.07 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-27*

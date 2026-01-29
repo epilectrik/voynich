@@ -1,0 +1,23 @@
+{
+  "line_level": {
+    "coverage": 0.5618304426435033,
+    "baseline": 0.10334863705614576,
+    "lift": 5.436263686170144
+  },
+  "paragraph_level": {
+    "coverage": 0.6423506972363129,
+    "baseline": 0.2661725736805796,
+    "lift": 2.4132865695139794
+  },
+  "folio_to_paragraph": {
+    "coverage": 0.7303166694253476,
+    "baseline": 0.42651645595207754,
+    "lift": 1.7122825139187698
+  },
+  "union_ceiling": {
+    "paragraphs": 0.8823333407117561,
+    "lines": 0.9292730832727226
+  },
+  "verdict": "NO_SPECIFIC_CORRESPONDENCE",
+  "mechanism": "POOL_BASED_VOCABULARY_SHARING"
+}

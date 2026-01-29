@@ -1,0 +1,12 @@
+{
+  "pharma_mean_size": 12.595238095238095,
+  "bio_mean_size": 45.97315436241611,
+  "pharma_single_line_rate": 0.7619047619047619,
+  "bio_single_line_rate": 0.3959731543624161,
+  "pharma_line1_ht": 0.504,
+  "pharma_body_ht": 0.3688118811881188,
+  "bio_line1_ht": 0.37951105937136204,
+  "bio_body_ht": 0.200300450676014,
+  "vocabulary_overlap": 0.4535211267605634,
+  "ht_vocabulary_overlap": 0.14285714285714285
+}

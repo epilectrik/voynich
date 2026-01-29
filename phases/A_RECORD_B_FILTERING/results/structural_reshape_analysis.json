@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "phase": "A_RECORD_B_FILTERING",
+    "script": "structural_reshape_analysis.py",
+    "tests": "T5-T8 (C686-C689)",
+    "n_records": 1562
+  },
+  "T5_role_vulnerability_gradient": {
+    "constraint": "C686",
+    "bins": {
+      "0-2": {
+        "n_records": 87,
+        "role_survival_fraction": {
+          "CC": 0.07471264367816093,
+          "EN": 0.038314176245210725,
+          "FL": 0.022988505747126436,
+          "FQ": 0.13505747126436782,
+          "AX": 0.05323653962492438
+        }
+      },
+      "3-5": {
+        "n_records": 633,
+        "role_survival_fraction": {
+          "CC": 0.13467614533965244,
+          "EN": 0.1397226610496753,
+          "FL": 0.07148499210110584,
+          "FQ": 0.32898894154818326,
+          "AX": 0.1598071006901139
+        }
+      },
+      "6-8": {
+        "n_records": 673,
+        "role_survival_fraction": {
+          "CC": 0.20356612184249628,
+          "EN": 0.25788344064718505,
+          "FL": 0.1400445765230312,
+          "FQ": 0.5014858841010401,
+          "AX": 0.2671463204817392
+        }
+      },
+      "9-11": {
+        "n_records": 136,
+        "role_survival_fraction": {
+          "CC": 0.25183823529411764,
+          "EN": 0.37254901960784315,
+          "FL": 0.2702205882352941,
+          "FQ": 0.65625,
+          "AX": 0.3657120743034055
+        }
+      },
+      "12+": {
+        "n_records": 33,
+        "role_survival_fraction": {
+          "CC": 0.3939393939393939,
+          "EN": 0.5488215488215487,
+          "FL": 0.29545454545454547,
+          "FQ": 0.8409090909090909,
+          "AX": 0.586921850079745
+        }
+      }
+    },
+    "vulnerability_ordering": [
+      "FL",
+      "EN",
+      "AX",
+      "CC",
+      "FQ"
+    ],
+    "protected_roles": [
+      "CC",
+      "EN",
+      "FL",
+      "FQ",
+      "AX"
+    ]
+  },
+  "T6_composition_filtering": {
+    "constraint": "C687",
+    "groups": {
+      "MIXED": {
+        "n_records": 565,
+        "mean_classes": 11.26,
+        "median_classes": 10.0,
+        "role_mean_survival": {
+          "CC": 0.634,
+          "EN": 3.982,
+          "FL": 0.476,
+          "FQ": 1.781,
+          "AX": 4.389
+        }
+      },
+      "PURE_PP": {
+        "n_records": 982,
+        "mean_classes": 11.13,
+        "median_classes": 11.0,
+        "role_mean_survival": {
+          "CC": 0.759,
+          "EN": 3.833,
+          "FL": 0.491,
+          "FQ": 1.721,
+          "AX": 4.331
+        }
+      },
+      "UNKNOWN": {
+        "n_records": 6,
+        "mean_classes": 1.0,
+        "median_classes": 0.0,
+        "role_mean_survival": {
+          "CC": 0.0,
+          "EN": 0.0,
+          "FL": 0.0,
+          "FQ": 0.333,
+          "AX": 0.667
+        }
+      },
+      "PURE_RI": {
+        "n_records": 9,
+        "mean_classes": 0.44,
+        "median_classes": 0.0,
+        "role_mean_survival": {
+          "CC": 0.111,
+          "EN": 0.0,
+          "FL": 0.111,
+          "FQ": 0.0,
+          "AX": 0.222
+        }
+      }
+    },
+    "mann_whitney": {
+      "MIXED_vs_PURE_PP": {
+        "U": 277451.0,
+        "p": 0.9966465497516213
+      },
+      "MIXED_vs_UNKNOWN": {
+        "U": 3324.0,
+        "p": 4.952701502450547e-05
+      },
+      "MIXED_vs_PURE_RI": {
+        "U": 5051.5,
+        "p": 3.578189320490312e-07
+      },
+      "PURE_PP_vs_UNKNOWN": {
+        "U": 5790.0,
+        "p": 4.367119051041055e-05
+      },
+      "PURE_PP_vs_PURE_RI": {
+        "U": 8777.0,
+        "p": 3.287834170522203e-07
+      },
+      "PURE_RI_vs_UNKNOWN": {
+        "U": 24.0,
+        "p": 0.7250637887175069
+      }
+    }
+  },
+  "T7_regime_robustness": {
+    "constraint": "C688",
+    "per_regime": {
+      "REGIME_1": {
+        "mean_effective_classes": 10.19,
+        "median_effective_classes": 10.0,
+        "baseline_classes": 48,
+        "robustness_ratio": 0.2122
+      },
+      "REGIME_2": {
+        "mean_effective_classes": 10.64,
+        "median_effective_classes": 10.0,
+        "baseline_classes": 48,
+        "robustness_ratio": 0.2216
+      },
+      "REGIME_3": {
+        "mean_effective_classes": 7.85,
+        "median_effective_classes": 7.0,
+        "baseline_classes": 47,
+        "robustness_ratio": 0.1669
+      },
+      "REGIME_4": {
+        "mean_effective_classes": 10.49,
+        "median_effective_classes": 10.0,
+        "baseline_classes": 48,
+        "robustness_ratio": 0.2186
+      }
+    },
+    "robustness_ratio": {
+      "REGIME_1": 0.21220123772940672,
+      "REGIME_2": 0.2215909090909091,
+      "REGIME_3": 0.16693001334895252,
+      "REGIME_4": 0.218576611182245
+    },
+    "most_robust": "REGIME_2",
+    "least_robust": "REGIME_3"
+  },
+  "T8_survivor_set_uniqueness": {
+    "constraint": "C689",
+    "total_records": 1562,
+    "unique_sets": 1525,
+    "uniqueness_ratio": 0.9763,
+    "jaccard": {
+      "n_pairs": 1000,
+      "mean": 0.1988,
+      "median": 0.1818,
+      "std": 0.1308
+    }
+  }
+}

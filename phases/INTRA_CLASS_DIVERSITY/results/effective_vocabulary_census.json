@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "phase": "INTRA_CLASS_DIVERSITY",
+    "script": "effective_vocabulary_census.py",
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ]
+  },
+  "effective_vocabulary": {
+    "total_classes": 49,
+    "total_token_types": 480,
+    "effective_vocab_size": 56,
+    "compression_ratio": 8.57,
+    "expansion_ratio": 1.143,
+    "n_heterogeneous": 7,
+    "n_uniform": 42,
+    "k_distribution": {
+      "1": 42,
+      "2": 7
+    }
+  },
+  "role_decomposition": {
+    "AUXILIARY": {
+      "n_classes": 20,
+      "effective_vocab": 22,
+      "n_heterogeneous": 2,
+      "mean_k": 1.1,
+      "max_k": 2,
+      "total_tokens": 246,
+      "total_eligible": 144,
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "CORE_CONTROL": {
+      "n_classes": 3,
+      "effective_vocab": 3,
+      "n_heterogeneous": 0,
+      "mean_k": 1.0,
+      "max_k": 1,
+      "total_tokens": 3,
+      "total_eligible": 2,
+      "class_ids": [
+        10,
+        11,
+        12
+      ]
+    },
+    "ENERGY_OPERATOR": {
+      "n_classes": 18,
+      "effective_vocab": 21,
+      "n_heterogeneous": 3,
+      "mean_k": 1.167,
+      "max_k": 2,
+      "total_tokens": 179,
+      "total_eligible": 128,
+      "class_ids": [
+        8,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    "FLOW_OPERATOR": {
+      "n_classes": 4,
+      "effective_vocab": 6,
+      "n_heterogeneous": 2,
+      "mean_k": 1.5,
+      "max_k": 2,
+      "total_tokens": 19,
+      "total_eligible": 13,
+      "class_ids": [
+        7,
+        30,
+        38,
+        40
+      ]
+    },
+    "FREQUENT_OPERATOR": {
+      "n_classes": 4,
+      "effective_vocab": 4,
+      "n_heterogeneous": 0,
+      "mean_k": 1.0,
+      "max_k": 1,
+      "total_tokens": 33,
+      "total_eligible": 32,
+      "class_ids": [
+        9,
+        13,
+        14,
+        23
+      ]
+    }
+  },
+  "correlations": {
+    "size_vs_k": {
+      "rho": -0.3206,
+      "p": 0.0247
+    },
+    "freq_vs_k": {
+      "rho": -0.101,
+      "p": 0.4897
+    },
+    "eligible_vs_k": {
+      "rho": -0.3311,
+      "p": 0.0201
+    },
+    "jsd_vs_k": {
+      "rho": 0.0041,
+      "p": 0.9775
+    },
+    "size_vs_jsd": {
+      "rho": 0.3723,
+      "p": 0.0084
+    }
+  },
+  "hazard_comparison": {
+    "hazard": {
+      "n_classes": 6,
+      "n_heterogeneous": 3,
+      "het_rate": 0.5,
+      "mean_k": 1.5,
+      "mean_jsd": 0.508,
+      "mean_size": 5.3
+    },
+    "non_hazard": {
+      "n_classes": 43,
+      "n_heterogeneous": 4,
+      "het_rate": 0.093,
+      "mean_k": 1.093,
+      "mean_jsd": 0.662,
+      "mean_size": 10.4
+    },
+    "tests": {
+      "k_mannwhitney_p": 0.0089,
+      "jsd_mannwhitney_p": 0.001,
+      "het_rate_fisher_p": 0.031
+    }
+  },
+  "outliers": {
+    "large_uniform": [
+      {
+        "class_id": 28,
+        "n_tokens": 25,
+        "n_eligible": 20,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.6443258732366762
+      },
+      {
+        "class_id": 6,
+        "n_tokens": 23,
+        "n_eligible": 9,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.7345375428508709
+      },
+      {
+        "class_id": 27,
+        "n_tokens": 21,
+        "n_eligible": 9,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.6795049724425166
+      },
+      {
+        "class_id": 34,
+        "n_tokens": 19,
+        "n_eligible": 19,
+        "role": "ENERGY_OPERATOR",
+        "mean_jsd": 0.5560144563257464
+      },
+      {
+        "class_id": 4,
+        "n_tokens": 17,
+        "n_eligible": 8,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.7311868472941853
+      },
+      {
+        "class_id": 29,
+        "n_tokens": 17,
+        "n_eligible": 17,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.6050728760215321
+      },
+      {
+        "class_id": 39,
+        "n_tokens": 17,
+        "n_eligible": 13,
+        "role": "ENERGY_OPERATOR",
+        "mean_jsd": 0.6895144354706766
+      },
+      {
+        "class_id": 5,
+        "n_tokens": 15,
+        "n_eligible": 7,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.7283161460234451
+      },
+      {
+        "class_id": 20,
+        "n_tokens": 15,
+        "n_eligible": 12,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.7297958302148324
+      },
+      {
+        "class_id": 24,
+        "n_tokens": 15,
+        "n_eligible": 14,
+        "role": "AUXILIARY",
+        "mean_jsd": 0.5539765920571821
+      }
+    ],
+    "heterogeneous": [
+      {
+        "class_id": 7,
+        "n_tokens": 2,
+        "n_eligible": 2,
+        "role": "FLOW_OPERATOR",
+        "optimal_k": 2,
+        "mean_jsd": 0.4079843833604141
+      },
+      {
+        "class_id": 8,
+        "n_tokens": 3,
+        "n_eligible": 3,
+        "role": "ENERGY_OPERATOR",
+        "optimal_k": 2,
+        "mean_jsd": 0.362532136269689
+      },
+      {
+        "class_id": 30,
+        "n_tokens": 5,
+        "n_eligible": 5,
+        "role": "FLOW_OPERATOR",
+        "optimal_k": 2,
+        "mean_jsd": 0.5224852033834605
+      },
+      {
+        "class_id": 22,
+        "n_tokens": 7,
+        "n_eligible": 2,
+        "role": "AUXILIARY",
+        "optimal_k": 2,
+        "mean_jsd": 0.8325546111576977
+      },
+      {
+        "class_id": 44,
+        "n_tokens": 7,
+        "n_eligible": 2,
+        "role": "ENERGY_OPERATOR",
+        "optimal_k": 2,
+        "mean_jsd": 0.6860727208158351
+      },
+      {
+        "class_id": 37,
+        "n_tokens": 8,
+        "n_eligible": 2,
+        "role": "ENERGY_OPERATOR",
+        "optimal_k": 2,
+        "mean_jsd": 0.6784400621530832
+      },
+      {
+        "class_id": 3,
+        "n_tokens": 9,
+        "n_eligible": 2,
+        "role": "AUXILIARY",
+        "optimal_k": 2,
+        "mean_jsd": 0.658698449841145
+      }
+    ]
+  }
+}

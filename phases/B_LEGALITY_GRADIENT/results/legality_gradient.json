@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "phase": "B_LEGALITY_GRADIENT",
+    "script": "legality_gradient.py",
+    "timestamp": "2026-01-27 17:27:30.733887",
+    "n_a_folios": 114,
+    "n_b_folios": 82,
+    "n_b_token_types": 4889,
+    "mean_accessibility": 0.12224542743645778,
+    "median_accessibility": 0.02631578947368421
+  },
+  "T1_within_line_position": {
+    "spearman_rho": 0.010917089944429484,
+    "spearman_p": 0.0971451241303171,
+    "kruskal_H": 74.39901127966125,
+    "kruskal_p": 2.6700396680334407e-15,
+    "quintile_means": {
+      "0": 0.27938998232339113,
+      "1": 0.30478369837637576,
+      "2": 0.30638749230997686,
+      "3": 0.3019169998575033,
+      "4": 0.2816718563176508
+    },
+    "quintile_counts": {
+      "0": 5022,
+      "1": 4186,
+      "2": 4135,
+      "3": 4186,
+      "4": 5561
+    },
+    "direction": "final-higher",
+    "pass": "False"
+  },
+  "T2_role_legality": {
+    "role_means": {
+      "CC": 0.2607655502392345,
+      "EN": 0.3816550045634317,
+      "FL": 0.08494921514312095,
+      "FQ": 0.5818713450292398,
+      "AX": 0.32062915910465817,
+      "UN": 0.09806862780112462
+    },
+    "role_counts": {
+      "UN": 4421,
+      "AX": 232,
+      "EN": 173,
+      "FQ": 33,
+      "CC": 11,
+      "FL": 19
+    },
+    "kruskal_H": 50.852727768716974,
+    "kruskal_p": 2.3961162307739244e-10,
+    "operational_mean": 0.3522934941520468,
+    "structural_mean": 0.31791928380622336,
+    "mw_p": 0.23452235574922187,
+    "pass": "True"
+  },
+  "T3_across_line": {
+    "global_rho": 0.12426586643604454,
+    "global_p": 8.585752978801124e-10,
+    "mean_per_folio_rho": 0.13014001803082184,
+    "median_per_folio_rho": 0.1516517316248988,
+    "positive_count": 56,
+    "negative_count": 26,
+    "third_means": {
+      "first": 0.2764245542174506,
+      "middle": 0.286278873767578,
+      "last": 0.3064209580102213
+    },
+    "direction": "last-higher",
+    "pass": "True"
+  },
+  "T4_setup_work_close": {
+    "setup_mean": 0.2867630253330042,
+    "work_mean": 0.30611445085129296,
+    "close_mean": 0.2875938217090407,
+    "kruskal_H": 35.154544426531096,
+    "kruskal_p": 2.3242758558747624e-08,
+    "pass": "True"
+  },
+  "T5_role_position_interaction": {
+    "role_gradients": {
+      "CC": 0.0763405593570447,
+      "EN": -0.029861857368113698,
+      "FL": -0.0008237321006319964,
+      "FQ": -0.041518515133543765,
+      "AX": 0.03678163188192468,
+      "UN": -0.02082168026601991
+    },
+    "unanimous_direction": false,
+    "pass": false
+  },
+  "accessibility_distribution": {
+    "zero_count": 1684,
+    "low_count": 1706,
+    "mid_count": 1147,
+    "high_count": 352,
+    "full_count": 0,
+    "total": 4889
+  },
+  "best_a_folio_legality": {
+    "mean_rate": 0.6985969695274432,
+    "median_rate": 0.711334177955365,
+    "min_rate": 0.5517241379310345,
+    "max_rate": 0.8155339805825242
+  },
+  "summary": {
+    "T1_pass": "False",
+    "T2_pass": "True",
+    "T3_pass": "True",
+    "T4_pass": "True",
+    "T5_pass": false,
+    "pass_count": "3",
+    "total_tests": 5
+  }
+}

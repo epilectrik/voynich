@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "phase": "HT_RECONCILIATION",
+    "script": "ht_un_identity.py",
+    "test": "T1",
+    "classified_types": 480,
+    "total_b_tokens": 23096
+  },
+  "T1_identity": {
+    "ht_types": 4421,
+    "ht_occurrences": 7042,
+    "ht_hapax": 3274,
+    "un_types": 4421,
+    "un_occurrences": 7042,
+    "type_match_pct": 100.0,
+    "occ_match_pct": 100.0,
+    "jaccard": null,
+    "overlap_types": null,
+    "ht_only_types": null,
+    "un_only_types": null,
+    "verdict": "PASS",
+    "detail": "Populations match within 1% on both types and occurrences"
+  },
+  "morphological_summary": {
+    "types_with_articulator": 460,
+    "distinct_prefixes": 35,
+    "top_prefixes": {
+      "ch": 617,
+      "qo": 463,
+      "sh": 459,
+      "ol": 225,
+      "ot": 204,
+      "ok": 186,
+      "da": 127,
+      "pch": 99,
+      "yk": 97,
+      "lk": 87
+    }
+  }
+}

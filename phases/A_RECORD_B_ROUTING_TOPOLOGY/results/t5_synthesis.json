@@ -1,0 +1,31 @@
+{
+  "hypotheses": {
+    "H1_clustering": {
+      "value": 0.12366263496857186,
+      "passed": false
+    },
+    "H2_sharpness": {
+      "value": 1.141307865758611,
+      "p": 0.0,
+      "passed": false
+    },
+    "H3_pp_breadth": {
+      "value": -0.43860204174275746,
+      "p": 2.670836259631115e-74,
+      "passed": true
+    },
+    "H4_specificity": {
+      "value": 82.9045643153527,
+      "passed": true
+    }
+  },
+  "passed_count": 2,
+  "total_count": 4,
+  "key_stats": {
+    "filtering_rate": 0.8131385034183889,
+    "narrow_record_pct": 60.23091725465042,
+    "best_k": 2
+  },
+  "verdict": "PARTIAL SUPPORT FOR CONDITIONAL REFERENCE",
+  "tier_recommendation": "Section 0.E remains Tier 3"
+}

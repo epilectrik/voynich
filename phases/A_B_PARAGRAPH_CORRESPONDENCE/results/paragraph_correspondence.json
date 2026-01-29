@@ -1,0 +1,36 @@
+{
+  "a_paragraph_count": 306,
+  "b_paragraph_count": 585,
+  "matched_b_count": 568,
+  "coverage_mean": 0.6615759821888081,
+  "coverage_median": 0.6306042884990253,
+  "coverage_std": 0.16259782013516233,
+  "coverage_above_50_pct": 0.8573943661971831,
+  "coverage_above_70_pct": 0.2746478873239437,
+  "coverage_above_90_pct": 0.14084507042253522,
+  "random_baseline": 0.26591535814722417,
+  "lift_over_random": 2.4879194146527115,
+  "clustering": {
+    "total_b_paragraphs_matched": 568,
+    "unique_a_paragraphs_used": 39,
+    "mean_b_per_a": 14.564102564102564,
+    "median_b_per_a": 2,
+    "max_b_per_a": 166,
+    "a_with_single_match": 14,
+    "a_with_5plus_matches": 16,
+    "a_with_10plus_matches": 10,
+    "concentration_ratio": 0.8591549295774648
+  },
+  "top_a_folios": {
+    "f101v2": 166,
+    "f101r1": 150,
+    "f99v": 39,
+    "f100r": 39,
+    "f1r": 37,
+    "f58r": 22,
+    "f100v": 16,
+    "f15r": 11,
+    "f58v": 11,
+    "f89v2": 10
+  }
+}

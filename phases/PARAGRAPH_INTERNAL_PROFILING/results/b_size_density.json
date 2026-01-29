@@ -1,0 +1,6483 @@
+{
+  "summary": {
+    "system": "B",
+    "paragraph_count": 585,
+    "line_count": {
+      "mean": 4.37,
+      "median": 3,
+      "stdev": 3.82,
+      "min": 1,
+      "max": 30
+    },
+    "token_count": {
+      "mean": 39.48,
+      "median": 32,
+      "stdev": 38.86,
+      "min": 1,
+      "max": 359
+    },
+    "tokens_per_line": {
+      "mean": 8.04,
+      "median": 9.2
+    },
+    "by_folio_position": {
+      "first": {
+        "count": 76,
+        "mean_lines": 6.39,
+        "mean_tokens": 61.07
+      },
+      "middle": {
+        "count": 427,
+        "mean_lines": 3.83,
+        "mean_tokens": 34.12
+      },
+      "last": {
+        "count": 76,
+        "mean_lines": 4.99,
+        "mean_tokens": 44.22
+      },
+      "only": {
+        "count": 6,
+        "mean_lines": 9.33,
+        "mean_tokens": 87.17
+      }
+    }
+  },
+  "profiles": [
+    {
+      "par_id": "B_001",
+      "folio": "f26r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 49,
+        "tokens_per_line": 8.17
+      }
+    },
+    {
+      "par_id": "B_002",
+      "folio": "f26r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 36,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_003",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 2,
+        "token_count": 21,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_004",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 22,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_005",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 22,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_006",
+      "folio": "f26v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 24,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_007",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 34,
+        "tokens_per_line": 6.8
+      }
+    },
+    {
+      "par_id": "B_008",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 27,
+        "tokens_per_line": 6.75
+      }
+    },
+    {
+      "par_id": "B_009",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 37,
+        "tokens_per_line": 6.17
+      }
+    },
+    {
+      "par_id": "B_010",
+      "folio": "f31r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 2,
+        "tokens_per_line": 2.0
+      }
+    },
+    {
+      "par_id": "B_011",
+      "folio": "f31v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 44,
+        "tokens_per_line": 8.8
+      }
+    },
+    {
+      "par_id": "B_012",
+      "folio": "f31v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 64,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_013",
+      "folio": "f33r",
+      "section": "H",
+      "folio_position": "only",
+      "size": {
+        "line_count": 7,
+        "token_count": 72,
+        "tokens_per_line": 10.29
+      }
+    },
+    {
+      "par_id": "B_014",
+      "folio": "f33v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 61,
+        "tokens_per_line": 10.17
+      }
+    },
+    {
+      "par_id": "B_015",
+      "folio": "f33v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 48,
+        "tokens_per_line": 9.6
+      }
+    },
+    {
+      "par_id": "B_016",
+      "folio": "f34r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 9,
+        "token_count": 86,
+        "tokens_per_line": 9.56
+      }
+    },
+    {
+      "par_id": "B_017",
+      "folio": "f34r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 58,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_018",
+      "folio": "f34v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 53,
+        "tokens_per_line": 10.6
+      }
+    },
+    {
+      "par_id": "B_019",
+      "folio": "f34v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 62,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_020",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 49,
+        "tokens_per_line": 9.8
+      }
+    },
+    {
+      "par_id": "B_021",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_022",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 63,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_023",
+      "folio": "f39r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 5,
+        "tokens_per_line": 5.0
+      }
+    },
+    {
+      "par_id": "B_024",
+      "folio": "f39v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 71,
+        "tokens_per_line": 11.83
+      }
+    },
+    {
+      "par_id": "B_025",
+      "folio": "f39v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 8,
+        "token_count": 71,
+        "tokens_per_line": 8.88
+      }
+    },
+    {
+      "par_id": "B_026",
+      "folio": "f40r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 7,
+        "token_count": 65,
+        "tokens_per_line": 9.29
+      }
+    },
+    {
+      "par_id": "B_027",
+      "folio": "f40r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 32,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_028",
+      "folio": "f40v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 12,
+        "token_count": 50,
+        "tokens_per_line": 4.17
+      }
+    },
+    {
+      "par_id": "B_029",
+      "folio": "f40v",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 52,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_030",
+      "folio": "f40v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 4,
+        "tokens_per_line": 4.0
+      }
+    },
+    {
+      "par_id": "B_031",
+      "folio": "f41r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 46,
+        "tokens_per_line": 9.2
+      }
+    },
+    {
+      "par_id": "B_032",
+      "folio": "f41r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 51,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_033",
+      "folio": "f41v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_034",
+      "folio": "f41v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 67,
+        "tokens_per_line": 9.57
+      }
+    },
+    {
+      "par_id": "B_035",
+      "folio": "f43r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 64,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_036",
+      "folio": "f43r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_037",
+      "folio": "f43r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 57,
+        "tokens_per_line": 11.4
+      }
+    },
+    {
+      "par_id": "B_038",
+      "folio": "f43v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 50,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_039",
+      "folio": "f43v",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 32,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_040",
+      "folio": "f43v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 71,
+        "tokens_per_line": 10.14
+      }
+    },
+    {
+      "par_id": "B_041",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 57,
+        "tokens_per_line": 11.4
+      }
+    },
+    {
+      "par_id": "B_042",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 37,
+        "tokens_per_line": 12.33
+      }
+    },
+    {
+      "par_id": "B_043",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 22,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_044",
+      "folio": "f46r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 41,
+        "tokens_per_line": 8.2
+      }
+    },
+    {
+      "par_id": "B_045",
+      "folio": "f46v",
+      "section": "H",
+      "folio_position": "only",
+      "size": {
+        "line_count": 12,
+        "token_count": 111,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_046",
+      "folio": "f48r",
+      "section": "H",
+      "folio_position": "only",
+      "size": {
+        "line_count": 9,
+        "token_count": 89,
+        "tokens_per_line": 9.89
+      }
+    },
+    {
+      "par_id": "B_047",
+      "folio": "f48v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 72,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_048",
+      "folio": "f48v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 54,
+        "tokens_per_line": 10.8
+      }
+    },
+    {
+      "par_id": "B_049",
+      "folio": "f50r",
+      "section": "H",
+      "folio_position": "only",
+      "size": {
+        "line_count": 10,
+        "token_count": 89,
+        "tokens_per_line": 8.9
+      }
+    },
+    {
+      "par_id": "B_050",
+      "folio": "f50v",
+      "section": "H",
+      "folio_position": "only",
+      "size": {
+        "line_count": 11,
+        "token_count": 98,
+        "tokens_per_line": 8.91
+      }
+    },
+    {
+      "par_id": "B_051",
+      "folio": "f55r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 58,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_052",
+      "folio": "f55r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 66,
+        "tokens_per_line": 9.43
+      }
+    },
+    {
+      "par_id": "B_053",
+      "folio": "f55v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 45,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_054",
+      "folio": "f55v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 59,
+        "tokens_per_line": 9.83
+      }
+    },
+    {
+      "par_id": "B_055",
+      "folio": "f57r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 41,
+        "tokens_per_line": 8.2
+      }
+    },
+    {
+      "par_id": "B_056",
+      "folio": "f57r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 46,
+        "tokens_per_line": 7.67
+      }
+    },
+    {
+      "par_id": "B_057",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_058",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_059",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_060",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_061",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_062",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_063",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_064",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_065",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_066",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_067",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_068",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_069",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_070",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_071",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_072",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_073",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_074",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_075",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_076",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_077",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_078",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_079",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_080",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_081",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_082",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_083",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_084",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_085",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_086",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_087",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_088",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 58,
+        "tokens_per_line": 8.29
+      }
+    },
+    {
+      "par_id": "B_089",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 57,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_090",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_091",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_092",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 12,
+        "token_count": 112,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_093",
+      "folio": "f66r",
+      "section": "T",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 3,
+        "tokens_per_line": 3.0
+      }
+    },
+    {
+      "par_id": "B_094",
+      "folio": "f66v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 42,
+        "tokens_per_line": 8.4
+      }
+    },
+    {
+      "par_id": "B_095",
+      "folio": "f66v",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_096",
+      "folio": "f66v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 46,
+        "tokens_per_line": 9.2
+      }
+    },
+    {
+      "par_id": "B_097",
+      "folio": "f75r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 26,
+        "token_count": 235,
+        "tokens_per_line": 9.04
+      }
+    },
+    {
+      "par_id": "B_098",
+      "folio": "f75r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 57,
+        "tokens_per_line": 11.4
+      }
+    },
+    {
+      "par_id": "B_099",
+      "folio": "f75r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 15,
+        "token_count": 120,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_100",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_101",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_102",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_103",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_104",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_105",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 11,
+        "token_count": 118,
+        "tokens_per_line": 10.73
+      }
+    },
+    {
+      "par_id": "B_106",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 59,
+        "tokens_per_line": 11.8
+      }
+    },
+    {
+      "par_id": "B_107",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 77,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_108",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 11,
+        "token_count": 71,
+        "tokens_per_line": 6.45
+      }
+    },
+    {
+      "par_id": "B_109",
+      "folio": "f75v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 9,
+        "tokens_per_line": 3.0
+      }
+    },
+    {
+      "par_id": "B_110",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 29,
+        "token_count": 357,
+        "tokens_per_line": 12.31
+      }
+    },
+    {
+      "par_id": "B_111",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 58,
+        "tokens_per_line": 11.6
+      }
+    },
+    {
+      "par_id": "B_112",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 74,
+        "tokens_per_line": 10.57
+      }
+    },
+    {
+      "par_id": "B_113",
+      "folio": "f76r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 57,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_114",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 9,
+        "token_count": 91,
+        "tokens_per_line": 10.11
+      }
+    },
+    {
+      "par_id": "B_115",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 58,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_116",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 9,
+        "token_count": 86,
+        "tokens_per_line": 9.56
+      }
+    },
+    {
+      "par_id": "B_117",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 9,
+        "token_count": 86,
+        "tokens_per_line": 9.56
+      }
+    },
+    {
+      "par_id": "B_118",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_119",
+      "folio": "f76v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 54,
+        "tokens_per_line": 10.8
+      }
+    },
+    {
+      "par_id": "B_120",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_121",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_122",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_123",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_124",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_125",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_126",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 16,
+        "token_count": 142,
+        "tokens_per_line": 8.88
+      }
+    },
+    {
+      "par_id": "B_127",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 13,
+        "token_count": 92,
+        "tokens_per_line": 7.08
+      }
+    },
+    {
+      "par_id": "B_128",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 11,
+        "token_count": 81,
+        "tokens_per_line": 7.36
+      }
+    },
+    {
+      "par_id": "B_129",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_130",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_131",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_132",
+      "folio": "f77r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_133",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 2,
+        "tokens_per_line": 2.0
+      }
+    },
+    {
+      "par_id": "B_134",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_135",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_136",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_137",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_138",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 10,
+        "token_count": 103,
+        "tokens_per_line": 10.3
+      }
+    },
+    {
+      "par_id": "B_139",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 13,
+        "token_count": 101,
+        "tokens_per_line": 7.77
+      }
+    },
+    {
+      "par_id": "B_140",
+      "folio": "f77v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 14,
+        "token_count": 121,
+        "tokens_per_line": 8.64
+      }
+    },
+    {
+      "par_id": "B_141",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 25,
+        "token_count": 171,
+        "tokens_per_line": 6.84
+      }
+    },
+    {
+      "par_id": "B_142",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 16,
+        "token_count": 116,
+        "tokens_per_line": 7.25
+      }
+    },
+    {
+      "par_id": "B_143",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_144",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_145",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_146",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_147",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 2,
+        "tokens_per_line": 2.0
+      }
+    },
+    {
+      "par_id": "B_148",
+      "folio": "f78r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_149",
+      "folio": "f78v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 19,
+        "token_count": 175,
+        "tokens_per_line": 9.21
+      }
+    },
+    {
+      "par_id": "B_150",
+      "folio": "f78v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 13,
+        "token_count": 117,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_151",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 63,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_152",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 51,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_153",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 77,
+        "tokens_per_line": 9.62
+      }
+    },
+    {
+      "par_id": "B_154",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 47,
+        "tokens_per_line": 9.4
+      }
+    },
+    {
+      "par_id": "B_155",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 40,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_156",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 33,
+        "tokens_per_line": 8.25
+      }
+    },
+    {
+      "par_id": "B_157",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 31,
+        "tokens_per_line": 7.75
+      }
+    },
+    {
+      "par_id": "B_158",
+      "folio": "f79r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 47,
+        "tokens_per_line": 7.83
+      }
+    },
+    {
+      "par_id": "B_159",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 9,
+        "token_count": 68,
+        "tokens_per_line": 7.56
+      }
+    },
+    {
+      "par_id": "B_160",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 15,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_161",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 11,
+        "token_count": 94,
+        "tokens_per_line": 8.55
+      }
+    },
+    {
+      "par_id": "B_162",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 42,
+        "tokens_per_line": 8.4
+      }
+    },
+    {
+      "par_id": "B_163",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 47,
+        "tokens_per_line": 9.4
+      }
+    },
+    {
+      "par_id": "B_164",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_165",
+      "folio": "f79v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 51,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_166",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_167",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_168",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_169",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_170",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_171",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_172",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_173",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_174",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_175",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_176",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 77,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_177",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 10,
+        "token_count": 117,
+        "tokens_per_line": 11.7
+      }
+    },
+    {
+      "par_id": "B_178",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 53,
+        "tokens_per_line": 8.83
+      }
+    },
+    {
+      "par_id": "B_179",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 64,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_180",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 52,
+        "tokens_per_line": 7.43
+      }
+    },
+    {
+      "par_id": "B_181",
+      "folio": "f80r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 68,
+        "tokens_per_line": 9.71
+      }
+    },
+    {
+      "par_id": "B_182",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 47,
+        "tokens_per_line": 7.83
+      }
+    },
+    {
+      "par_id": "B_183",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 61,
+        "tokens_per_line": 8.71
+      }
+    },
+    {
+      "par_id": "B_184",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 44,
+        "tokens_per_line": 8.8
+      }
+    },
+    {
+      "par_id": "B_185",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 33,
+        "tokens_per_line": 8.25
+      }
+    },
+    {
+      "par_id": "B_186",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_187",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_188",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 69,
+        "tokens_per_line": 8.62
+      }
+    },
+    {
+      "par_id": "B_189",
+      "folio": "f80v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 61,
+        "tokens_per_line": 8.71
+      }
+    },
+    {
+      "par_id": "B_190",
+      "folio": "f81r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 15,
+        "token_count": 94,
+        "tokens_per_line": 6.27
+      }
+    },
+    {
+      "par_id": "B_191",
+      "folio": "f81r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 52,
+        "tokens_per_line": 6.5
+      }
+    },
+    {
+      "par_id": "B_192",
+      "folio": "f81r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 8,
+        "token_count": 61,
+        "tokens_per_line": 7.62
+      }
+    },
+    {
+      "par_id": "B_193",
+      "folio": "f81v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 9,
+        "token_count": 89,
+        "tokens_per_line": 9.89
+      }
+    },
+    {
+      "par_id": "B_194",
+      "folio": "f81v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 18,
+        "token_count": 167,
+        "tokens_per_line": 9.28
+      }
+    },
+    {
+      "par_id": "B_195",
+      "folio": "f81v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 2,
+        "tokens_per_line": 2.0
+      }
+    },
+    {
+      "par_id": "B_196",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 9,
+        "token_count": 72,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_197",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 72,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_198",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 5,
+        "tokens_per_line": 5.0
+      }
+    },
+    {
+      "par_id": "B_199",
+      "folio": "f82r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 14,
+        "token_count": 126,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_200",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 57,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_201",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_202",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 51,
+        "tokens_per_line": 10.2
+      }
+    },
+    {
+      "par_id": "B_203",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 62,
+        "tokens_per_line": 7.75
+      }
+    },
+    {
+      "par_id": "B_204",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 40,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_205",
+      "folio": "f82v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 51,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_206",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 8,
+        "token_count": 71,
+        "tokens_per_line": 8.88
+      }
+    },
+    {
+      "par_id": "B_207",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 9,
+        "token_count": 83,
+        "tokens_per_line": 9.22
+      }
+    },
+    {
+      "par_id": "B_208",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 64,
+        "tokens_per_line": 9.14
+      }
+    },
+    {
+      "par_id": "B_209",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 20,
+        "token_count": 91,
+        "tokens_per_line": 4.55
+      }
+    },
+    {
+      "par_id": "B_210",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_211",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_212",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 11,
+        "tokens_per_line": 3.67
+      }
+    },
+    {
+      "par_id": "B_213",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_214",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_215",
+      "folio": "f83r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 16,
+        "tokens_per_line": 4.0
+      }
+    },
+    {
+      "par_id": "B_216",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 8,
+        "token_count": 75,
+        "tokens_per_line": 9.38
+      }
+    },
+    {
+      "par_id": "B_217",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_218",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_219",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 10,
+        "token_count": 98,
+        "tokens_per_line": 9.8
+      }
+    },
+    {
+      "par_id": "B_220",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 13,
+        "token_count": 86,
+        "tokens_per_line": 6.62
+      }
+    },
+    {
+      "par_id": "B_221",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_222",
+      "folio": "f83v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_223",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_224",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 2,
+        "tokens_per_line": 2.0
+      }
+    },
+    {
+      "par_id": "B_225",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_226",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_227",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_228",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_229",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 2,
+        "tokens_per_line": 2.0
+      }
+    },
+    {
+      "par_id": "B_230",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_231",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_232",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_233",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_234",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_235",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 48,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_236",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 35,
+        "tokens_per_line": 11.67
+      }
+    },
+    {
+      "par_id": "B_237",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 81,
+        "tokens_per_line": 11.57
+      }
+    },
+    {
+      "par_id": "B_238",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 9,
+        "token_count": 102,
+        "tokens_per_line": 11.33
+      }
+    },
+    {
+      "par_id": "B_239",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 11,
+        "token_count": 80,
+        "tokens_per_line": 7.27
+      }
+    },
+    {
+      "par_id": "B_240",
+      "folio": "f84r",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 1,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_241",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "first",
+      "size": {
+        "line_count": 2,
+        "token_count": 9,
+        "tokens_per_line": 4.5
+      }
+    },
+    {
+      "par_id": "B_242",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 18,
+        "token_count": 154,
+        "tokens_per_line": 8.56
+      }
+    },
+    {
+      "par_id": "B_243",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 21,
+        "token_count": 174,
+        "tokens_per_line": 8.29
+      }
+    },
+    {
+      "par_id": "B_244",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 4,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_245",
+      "folio": "f84v",
+      "section": "B",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 6,
+        "tokens_per_line": 1.0
+      }
+    },
+    {
+      "par_id": "B_246",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 60,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_247",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 35,
+        "tokens_per_line": 8.75
+      }
+    },
+    {
+      "par_id": "B_248",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 62,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_249",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_250",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_251",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_252",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_253",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_254",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_255",
+      "folio": "f85r1",
+      "section": "T",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 5,
+        "tokens_per_line": 5.0
+      }
+    },
+    {
+      "par_id": "B_256",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "first",
+      "size": {
+        "line_count": 1,
+        "token_count": 34,
+        "tokens_per_line": 34.0
+      }
+    },
+    {
+      "par_id": "B_257",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 35,
+        "tokens_per_line": 5.83
+      }
+    },
+    {
+      "par_id": "B_258",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 19,
+        "tokens_per_line": 3.8
+      }
+    },
+    {
+      "par_id": "B_259",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 27,
+        "tokens_per_line": 5.4
+      }
+    },
+    {
+      "par_id": "B_260",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 25,
+        "tokens_per_line": 4.17
+      }
+    },
+    {
+      "par_id": "B_261",
+      "folio": "f85r2",
+      "section": "C",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 15,
+        "tokens_per_line": 15.0
+      }
+    },
+    {
+      "par_id": "B_262",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 140,
+        "tokens_per_line": 35.0
+      }
+    },
+    {
+      "par_id": "B_263",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_264",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 11,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_265",
+      "folio": "f86v4",
+      "section": "C",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 4,
+        "tokens_per_line": 4.0
+      }
+    },
+    {
+      "par_id": "B_266",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "first",
+      "size": {
+        "line_count": 12,
+        "token_count": 131,
+        "tokens_per_line": 10.92
+      }
+    },
+    {
+      "par_id": "B_267",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 73,
+        "tokens_per_line": 10.43
+      }
+    },
+    {
+      "par_id": "B_268",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 10,
+        "token_count": 112,
+        "tokens_per_line": 11.2
+      }
+    },
+    {
+      "par_id": "B_269",
+      "folio": "f86v6",
+      "section": "C",
+      "folio_position": "last",
+      "size": {
+        "line_count": 16,
+        "token_count": 163,
+        "tokens_per_line": 10.19
+      }
+    },
+    {
+      "par_id": "B_270",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 62,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_271",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 53,
+        "tokens_per_line": 10.6
+      }
+    },
+    {
+      "par_id": "B_272",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 60,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_273",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 75,
+        "tokens_per_line": 9.38
+      }
+    },
+    {
+      "par_id": "B_274",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 13,
+        "token_count": 126,
+        "tokens_per_line": 9.69
+      }
+    },
+    {
+      "par_id": "B_275",
+      "folio": "f86v5",
+      "section": "C",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 5,
+        "tokens_per_line": 5.0
+      }
+    },
+    {
+      "par_id": "B_276",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "first",
+      "size": {
+        "line_count": 2,
+        "token_count": 14,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_277",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 41,
+        "tokens_per_line": 6.83
+      }
+    },
+    {
+      "par_id": "B_278",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 50,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_279",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 49,
+        "tokens_per_line": 6.12
+      }
+    },
+    {
+      "par_id": "B_280",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 63,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_281",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 19,
+        "tokens_per_line": 6.33
+      }
+    },
+    {
+      "par_id": "B_282",
+      "folio": "f86v3",
+      "section": "C",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 41,
+        "tokens_per_line": 8.2
+      }
+    },
+    {
+      "par_id": "B_283",
+      "folio": "f94r",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 8,
+        "token_count": 79,
+        "tokens_per_line": 9.88
+      }
+    },
+    {
+      "par_id": "B_284",
+      "folio": "f94r",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 3,
+        "tokens_per_line": 3.0
+      }
+    },
+    {
+      "par_id": "B_285",
+      "folio": "f94v",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 33,
+        "tokens_per_line": 8.25
+      }
+    },
+    {
+      "par_id": "B_286",
+      "folio": "f94v",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 21,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_287",
+      "folio": "f94v",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 47,
+        "tokens_per_line": 9.4
+      }
+    },
+    {
+      "par_id": "B_288",
+      "folio": "f95r1",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 45,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_289",
+      "folio": "f95r1",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 58,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_290",
+      "folio": "f95r2",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 34,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_291",
+      "folio": "f95r2",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 45,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_292",
+      "folio": "f95v2",
+      "section": "H",
+      "folio_position": "only",
+      "size": {
+        "line_count": 7,
+        "token_count": 64,
+        "tokens_per_line": 9.14
+      }
+    },
+    {
+      "par_id": "B_293",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 45,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_294",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_295",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 17,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_296",
+      "folio": "f95v1",
+      "section": "H",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_297",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 49,
+        "tokens_per_line": 12.25
+      }
+    },
+    {
+      "par_id": "B_298",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_299",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 63,
+        "tokens_per_line": 12.6
+      }
+    },
+    {
+      "par_id": "B_300",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_301",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 21,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_302",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_303",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_304",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_305",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_306",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_307",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 13,
+        "tokens_per_line": 6.5
+      }
+    },
+    {
+      "par_id": "B_308",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 18,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_309",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 24,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_310",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_311",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 16,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_312",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_313",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 36,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_314",
+      "folio": "f103r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_315",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 43,
+        "tokens_per_line": 10.75
+      }
+    },
+    {
+      "par_id": "B_316",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_317",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_318",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 23,
+        "tokens_per_line": 11.5
+      }
+    },
+    {
+      "par_id": "B_319",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_320",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_321",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 71,
+        "tokens_per_line": 10.14
+      }
+    },
+    {
+      "par_id": "B_322",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_323",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_324",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 35,
+        "tokens_per_line": 8.75
+      }
+    },
+    {
+      "par_id": "B_325",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 18,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_326",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_327",
+      "folio": "f103v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_328",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_329",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 49,
+        "tokens_per_line": 9.8
+      }
+    },
+    {
+      "par_id": "B_330",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_331",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_332",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_333",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_334",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 50,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_335",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_336",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_337",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_338",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_339",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 35,
+        "tokens_per_line": 8.75
+      }
+    },
+    {
+      "par_id": "B_340",
+      "folio": "f104r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_341",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 50,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_342",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 24,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_343",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 44,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_344",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_345",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_346",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_347",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 48,
+        "tokens_per_line": 9.6
+      }
+    },
+    {
+      "par_id": "B_348",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 22,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_349",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_350",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 34,
+        "tokens_per_line": 11.33
+      }
+    },
+    {
+      "par_id": "B_351",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 16,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_352",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 48,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_353",
+      "folio": "f104v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 38,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_354",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 56,
+        "tokens_per_line": 11.2
+      }
+    },
+    {
+      "par_id": "B_355",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 35,
+        "tokens_per_line": 8.75
+      }
+    },
+    {
+      "par_id": "B_356",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 4,
+        "tokens_per_line": 4.0
+      }
+    },
+    {
+      "par_id": "B_357",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_358",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_359",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 72,
+        "tokens_per_line": 10.29
+      }
+    },
+    {
+      "par_id": "B_360",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_361",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_362",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_363",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 44,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_364",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 24,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_365",
+      "folio": "f105r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 4,
+        "tokens_per_line": 4.0
+      }
+    },
+    {
+      "par_id": "B_366",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 40,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_367",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_368",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 70,
+        "tokens_per_line": 11.67
+      }
+    },
+    {
+      "par_id": "B_369",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 42,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_370",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 21,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_371",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_372",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 18,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_373",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_374",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_375",
+      "folio": "f105v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 71,
+        "tokens_per_line": 10.14
+      }
+    },
+    {
+      "par_id": "B_376",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_377",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 42,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_378",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 17,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_379",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_380",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_381",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_382",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_383",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_384",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 22,
+        "tokens_per_line": 7.33
+      }
+    },
+    {
+      "par_id": "B_385",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 40,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_386",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_387",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 15,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_388",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 13,
+        "tokens_per_line": 6.5
+      }
+    },
+    {
+      "par_id": "B_389",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_390",
+      "folio": "f106r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 55,
+        "tokens_per_line": 9.17
+      }
+    },
+    {
+      "par_id": "B_391",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 45,
+        "tokens_per_line": 11.25
+      }
+    },
+    {
+      "par_id": "B_392",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_393",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 18,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_394",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 42,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_395",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_396",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_397",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 16,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_398",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_399",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_400",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 36,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_401",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_402",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_403",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_404",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_405",
+      "folio": "f106v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 59,
+        "tokens_per_line": 9.83
+      }
+    },
+    {
+      "par_id": "B_406",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_407",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_408",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 49,
+        "tokens_per_line": 9.8
+      }
+    },
+    {
+      "par_id": "B_409",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_410",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 14,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_411",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_412",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_413",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_414",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_415",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 43,
+        "tokens_per_line": 10.75
+      }
+    },
+    {
+      "par_id": "B_416",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_417",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_418",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_419",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_420",
+      "folio": "f107r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 44,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_421",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 44,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_422",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_423",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_424",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 50,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_425",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_426",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_427",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 15,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_428",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 38,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_429",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_430",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_431",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_432",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 35,
+        "tokens_per_line": 8.75
+      }
+    },
+    {
+      "par_id": "B_433",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 14,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_434",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 17,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_435",
+      "folio": "f107v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 51,
+        "tokens_per_line": 10.2
+      }
+    },
+    {
+      "par_id": "B_436",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_437",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 35,
+        "tokens_per_line": 11.67
+      }
+    },
+    {
+      "par_id": "B_438",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 35,
+        "tokens_per_line": 11.67
+      }
+    },
+    {
+      "par_id": "B_439",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_440",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_441",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 38,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_442",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_443",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 50,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_444",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 17,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_445",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 36,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_446",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_447",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 18,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_448",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 22,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_449",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 37,
+        "tokens_per_line": 9.25
+      }
+    },
+    {
+      "par_id": "B_450",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_451",
+      "folio": "f108r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_452",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_453",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_454",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 53,
+        "tokens_per_line": 10.6
+      }
+    },
+    {
+      "par_id": "B_455",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_456",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 46,
+        "tokens_per_line": 9.2
+      }
+    },
+    {
+      "par_id": "B_457",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 96,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_458",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_459",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 45,
+        "tokens_per_line": 11.25
+      }
+    },
+    {
+      "par_id": "B_460",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 19,
+        "token_count": 214,
+        "tokens_per_line": 11.26
+      }
+    },
+    {
+      "par_id": "B_461",
+      "folio": "f108v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 1,
+        "token_count": 4,
+        "tokens_per_line": 4.0
+      }
+    },
+    {
+      "par_id": "B_462",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 54,
+        "tokens_per_line": 10.8
+      }
+    },
+    {
+      "par_id": "B_463",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 30,
+        "token_count": 359,
+        "tokens_per_line": 11.97
+      }
+    },
+    {
+      "par_id": "B_464",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 82,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_465",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 47,
+        "tokens_per_line": 11.75
+      }
+    },
+    {
+      "par_id": "B_466",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_467",
+      "folio": "f111r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_468",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 25,
+        "token_count": 293,
+        "tokens_per_line": 11.72
+      }
+    },
+    {
+      "par_id": "B_469",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_470",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 56,
+        "tokens_per_line": 11.2
+      }
+    },
+    {
+      "par_id": "B_471",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_472",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 8,
+        "token_count": 78,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_473",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_474",
+      "folio": "f111v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 41,
+        "tokens_per_line": 10.25
+      }
+    },
+    {
+      "par_id": "B_475",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 10,
+        "token_count": 78,
+        "tokens_per_line": 7.8
+      }
+    },
+    {
+      "par_id": "B_476",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 34,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_477",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 8,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_478",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_479",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 33,
+        "tokens_per_line": 8.25
+      }
+    },
+    {
+      "par_id": "B_480",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 34,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_481",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 36,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_482",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_483",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_484",
+      "folio": "f112r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 9,
+        "token_count": 86,
+        "tokens_per_line": 9.56
+      }
+    },
+    {
+      "par_id": "B_485",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 6,
+        "token_count": 52,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_486",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 28,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_487",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 35,
+        "tokens_per_line": 8.75
+      }
+    },
+    {
+      "par_id": "B_488",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 45,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_489",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 24,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_490",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 18,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_491",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 17,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_492",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_493",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 15,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_494",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 34,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_495",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_496",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 24,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_497",
+      "folio": "f112v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 62,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_498",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 31,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_499",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 47,
+        "tokens_per_line": 11.75
+      }
+    },
+    {
+      "par_id": "B_500",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 24,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_501",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_502",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_503",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_504",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 21,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_505",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_506",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_507",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 34,
+        "tokens_per_line": 11.33
+      }
+    },
+    {
+      "par_id": "B_508",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_509",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_510",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 17,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_511",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_512",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_513",
+      "folio": "f113r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 7,
+        "token_count": 72,
+        "tokens_per_line": 10.29
+      }
+    },
+    {
+      "par_id": "B_514",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_515",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_516",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_517",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 34,
+        "tokens_per_line": 11.33
+      }
+    },
+    {
+      "par_id": "B_518",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 54,
+        "tokens_per_line": 10.8
+      }
+    },
+    {
+      "par_id": "B_519",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_520",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 39,
+        "tokens_per_line": 9.75
+      }
+    },
+    {
+      "par_id": "B_521",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_522",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 52,
+        "tokens_per_line": 10.4
+      }
+    },
+    {
+      "par_id": "B_523",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 24,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_524",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 16,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_525",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 38,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_526",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_527",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 15,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_528",
+      "folio": "f113v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_529",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 21,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_530",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 7,
+        "token_count": 69,
+        "tokens_per_line": 9.86
+      }
+    },
+    {
+      "par_id": "B_531",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_532",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 55,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_533",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 47,
+        "tokens_per_line": 9.4
+      }
+    },
+    {
+      "par_id": "B_534",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 44,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_535",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 45,
+        "tokens_per_line": 11.25
+      }
+    },
+    {
+      "par_id": "B_536",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 24,
+        "tokens_per_line": 12.0
+      }
+    },
+    {
+      "par_id": "B_537",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 1,
+        "token_count": 5,
+        "tokens_per_line": 5.0
+      }
+    },
+    {
+      "par_id": "B_538",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 42,
+        "tokens_per_line": 10.5
+      }
+    },
+    {
+      "par_id": "B_539",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_540",
+      "folio": "f114r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 40,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_541",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 48,
+        "tokens_per_line": 9.6
+      }
+    },
+    {
+      "par_id": "B_542",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 47,
+        "tokens_per_line": 9.4
+      }
+    },
+    {
+      "par_id": "B_543",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_544",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 38,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_545",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 13,
+        "tokens_per_line": 6.5
+      }
+    },
+    {
+      "par_id": "B_546",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 28,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_547",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 23,
+        "tokens_per_line": 7.67
+      }
+    },
+    {
+      "par_id": "B_548",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_549",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 33,
+        "tokens_per_line": 8.25
+      }
+    },
+    {
+      "par_id": "B_550",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_551",
+      "folio": "f114v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 6,
+        "token_count": 56,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_552",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_553",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 40,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_554",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 22,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_555",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 29,
+        "tokens_per_line": 9.67
+      }
+    },
+    {
+      "par_id": "B_556",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 62,
+        "tokens_per_line": 10.33
+      }
+    },
+    {
+      "par_id": "B_557",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_558",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 45,
+        "tokens_per_line": 11.25
+      }
+    },
+    {
+      "par_id": "B_559",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 30,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_560",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 6,
+        "token_count": 56,
+        "tokens_per_line": 9.33
+      }
+    },
+    {
+      "par_id": "B_561",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_562",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_563",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 15,
+        "tokens_per_line": 7.5
+      }
+    },
+    {
+      "par_id": "B_564",
+      "folio": "f115r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 4,
+        "token_count": 36,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_565",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 5,
+        "token_count": 46,
+        "tokens_per_line": 9.2
+      }
+    },
+    {
+      "par_id": "B_566",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 20,
+        "tokens_per_line": 10.0
+      }
+    },
+    {
+      "par_id": "B_567",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_568",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 14,
+        "tokens_per_line": 7.0
+      }
+    },
+    {
+      "par_id": "B_569",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 48,
+        "tokens_per_line": 9.6
+      }
+    },
+    {
+      "par_id": "B_570",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 26,
+        "tokens_per_line": 8.67
+      }
+    },
+    {
+      "par_id": "B_571",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_572",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 49,
+        "tokens_per_line": 9.8
+      }
+    },
+    {
+      "par_id": "B_573",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 2,
+        "token_count": 19,
+        "tokens_per_line": 9.5
+      }
+    },
+    {
+      "par_id": "B_574",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 24,
+        "tokens_per_line": 8.0
+      }
+    },
+    {
+      "par_id": "B_575",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 25,
+        "tokens_per_line": 8.33
+      }
+    },
+    {
+      "par_id": "B_576",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 4,
+        "token_count": 34,
+        "tokens_per_line": 8.5
+      }
+    },
+    {
+      "par_id": "B_577",
+      "folio": "f115v",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 42,
+        "tokens_per_line": 8.4
+      }
+    },
+    {
+      "par_id": "B_578",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "first",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_579",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 33,
+        "tokens_per_line": 11.0
+      }
+    },
+    {
+      "par_id": "B_580",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 27,
+        "tokens_per_line": 9.0
+      }
+    },
+    {
+      "par_id": "B_581",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 5,
+        "token_count": 53,
+        "tokens_per_line": 10.6
+      }
+    },
+    {
+      "par_id": "B_582",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 3,
+        "token_count": 32,
+        "tokens_per_line": 10.67
+      }
+    },
+    {
+      "par_id": "B_583",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 13,
+        "token_count": 152,
+        "tokens_per_line": 11.69
+      }
+    },
+    {
+      "par_id": "B_584",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "middle",
+      "size": {
+        "line_count": 15,
+        "token_count": 156,
+        "tokens_per_line": 10.4
+      }
+    },
+    {
+      "par_id": "B_585",
+      "folio": "f116r",
+      "section": "S",
+      "folio_position": "last",
+      "size": {
+        "line_count": 5,
+        "token_count": 51,
+        "tokens_per_line": 10.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "T4_prefix_middle_coupling": {
+    "test": "T4_prefix_middle_coupling",
+    "within_line_MI": 0.13301880976752148,
+    "between_line_MI": 0.04767483761813512,
+    "MI_ratio": 2.7901261213089525,
+    "within_total_pairs": 53724,
+    "between_total_pairs": 279379,
+    "null_MI_mean": 0.1207436457519527,
+    "null_MI_std": 0.0018534313050632182,
+    "p_MI": 0.0,
+    "PASS": true,
+    "verdict": "PASS"
+  },
+  "T5_suffix_coherence": {
+    "test": "T5_suffix_coherence",
+    "observed_match_rate": 0.32644628099173556,
+    "expected_match_rate": 0.3190379012529297,
+    "ratio": 1.0232210019866341,
+    "total_pairs": 26862,
+    "total_matches": 8769,
+    "null_match_rate_mean": 0.3053900677537041,
+    "null_match_rate_std": 0.0023650751893737497,
+    "p_suffix": 0.0,
+    "PASS": false,
+    "verdict": "FAIL"
+  },
+  "T6_diversity_scaling": {
+    "test": "T6_diversity_scaling",
+    "n_lines": 1506,
+    "mean_residual": -0.09706487124178471,
+    "std_residual": 0.7352359403105113,
+    "effect_size": 0.13201867036150522,
+    "bootstrap_CI_95": [
+      -0.13451139176821728,
+      -0.05944545374630879
+    ],
+    "CI_excludes_zero": true,
+    "direction": "LESS_DIVERSE",
+    "PASS": false,
+    "verdict": "FAIL"
+  },
+  "T7_pp_volatility": {
+    "test": "T7_pp_volatility",
+    "adjacent_pairs": 1422,
+    "nonadjacent_pairs": 10223,
+    "adjacent_mean_jaccard": 0.10163398215040967,
+    "nonadjacent_mean_jaccard": 0.09208854632658582,
+    "ratio": 1.103654973442317,
+    "null_ratio_mean": 1.0198126233962916,
+    "null_ratio_std": 0.027430713391180056,
+    "p_volatility": 0.001,
+    "PASS": true,
+    "verdict": "PASS"
+  },
+  "T8_folio_position": {
+    "test": "T8_folio_position",
+    "n_folios_analyzed": 114,
+    "early_late_JS_mean": 0.5859755915058367,
+    "within_third_JS_mean": 0.737804849639913,
+    "ratio": 0.7942148818780781,
+    "null_ratio_mean": 0.8010487175510059,
+    "null_ratio_std": 0.019476800559521217,
+    "p_position": 0.633,
+    "PASS": false,
+    "verdict": "FAIL"
+  }
+}

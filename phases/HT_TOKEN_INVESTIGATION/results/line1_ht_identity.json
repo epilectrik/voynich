@@ -1,0 +1,22 @@
+{
+  "total_line1_ht_vocab": 1834,
+  "folio_singleton_rate": 0.8593238822246456,
+  "folio_unique_line1_only": 1229,
+  "gallows_initial_rate": 0.25497127706584183,
+  "is_opener_rate": 0.19531595227574017,
+  "widespread_line1_ht": {
+    "qofchedy": 7,
+    "polchedy": 6,
+    "ofchedy": 6,
+    "tshedy": 6,
+    "qopchey": 6,
+    "ypchdy": 5,
+    "pchdar": 5,
+    "qopaiin": 5,
+    "shedar": 5,
+    "lpchedy": 5,
+    "pchol": 5,
+    "otedar": 5,
+    "shdar": 5
+  }
+}

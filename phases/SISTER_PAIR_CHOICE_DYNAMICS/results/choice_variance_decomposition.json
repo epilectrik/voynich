@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "phase": "SISTER_PAIR_CHOICE_DYNAMICS",
+    "script": "choice_variance_decomposition.py",
+    "description": "Hierarchical variance decomposition of ch_preference",
+    "n_complete_folios": 79,
+    "total_predictors": 17,
+    "en_definition_note": "Uses C603-C605 EN definitions (EN_CHSH=10 classes, EN_QO=7 classes) for lane_balance comparability with C605"
+  },
+  "predictor_battery": {
+    "section": {
+      "categories": [
+        "B",
+        "C",
+        "H",
+        "S",
+        "T"
+      ],
+      "n_dummies": 4
+    },
+    "regime": {
+      "categories": [
+        "REGIME_1",
+        "REGIME_2",
+        "REGIME_3",
+        "REGIME_4"
+      ],
+      "n_dummies": 3
+    },
+    "quire": {
+      "categories": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "M",
+        "N",
+        "Q",
+        "T"
+      ],
+      "n_dummies": 8,
+      "min_count": 3
+    },
+    "middle_comp_score": {
+      "type": "continuous_rank"
+    },
+    "lane_balance": {
+      "type": "continuous_rank"
+    }
+  },
+  "hierarchical_regression": {
+    "steps": [
+      {
+        "step": 1,
+        "predictors": "Section",
+        "R2": 0.3539274506592781,
+        "adj_R2": 0.3190046101543742,
+        "delta_R2": 0.3539274506592781,
+        "p_count": 4
+      },
+      {
+        "step": 2,
+        "predictors": "+ REGIME",
+        "R2": 0.36029099665007314,
+        "adj_R2": 0.29722109491134796,
+        "delta_R2": 0.006363545990795028,
+        "p_count": 7
+      },
+      {
+        "step": 3,
+        "predictors": "+ Quire",
+        "R2": 0.41865787758889506,
+        "adj_R2": 0.28024308653863195,
+        "delta_R2": 0.05836688093882192,
+        "p_count": 15
+      },
+      {
+        "step": 4,
+        "predictors": "+ MIDDLE comp",
+        "R2": 0.4432979433224121,
+        "adj_R2": 0.2996328964378734,
+        "delta_R2": 0.02464006573351707,
+        "p_count": 16
+      },
+      {
+        "step": 5,
+        "predictors": "+ Lane balance",
+        "R2": 0.47065827419549655,
+        "adj_R2": 0.3231368096270284,
+        "delta_R2": 0.027360330873084426,
+        "p_count": 17
+      }
+    ],
+    "total_R2": 0.47065827419549655,
+    "total_adj_R2": 0.3231368096270284,
+    "unexplained": 0.5293417258045034,
+    "N": 79,
+    "p": 17
+  },
+  "semipartial": {
+    "unique_section": 0.0035109801325707846,
+    "unique_regime": 0.012225283346951832,
+    "unique_quire": 0.038196314438766144,
+    "unique_middle": 0.02569050348088553,
+    "unique_lane_balance": 0.027360330873084315,
+    "shared": 0.36367486192323795,
+    "unexplained": 0.5293417258045034,
+    "total_explained": 0.47065827419549655
+  },
+  "residual_analysis": {
+    "lag1_autocorrelation": 0.09605445179670553,
+    "durbin_watson": 1.6953575697667713,
+    "size_effect_r": -0.06267273037719134,
+    "n_outliers": 5,
+    "outliers": [
+      {
+        "folio": "f103r",
+        "residual": -41.65599095571943,
+        "z_score": -2.5108357651418483,
+        "ch_preference": 0.41566265060240964,
+        "predicted_rank": 48.65599095571943,
+        "section": "S",
+        "regime": "REGIME_4"
+      },
+      {
+        "folio": "f46r",
+        "residual": -39.143977648989235,
+        "z_score": -2.3594229021096123,
+        "ch_preference": 0.43478260869565216,
+        "predicted_rank": 49.143977648989235,
+        "section": "H",
+        "regime": "REGIME_4"
+      },
+      {
+        "folio": "f94r",
+        "residual": 35.48694713340101,
+        "z_score": 2.1389935520428933,
+        "ch_preference": 0.8421052631578947,
+        "predicted_rank": 40.51305286659899,
+        "section": "H",
+        "regime": "REGIME_3"
+      },
+      {
+        "folio": "f95r1",
+        "residual": 34.11598640839947,
+        "z_score": 2.0563582061547643,
+        "ch_preference": 0.8947368421052632,
+        "predicted_rank": 43.88401359160053,
+        "section": "H",
+        "regime": "REGIME_4"
+      },
+      {
+        "folio": "f95v1",
+        "residual": -38.614570087040995,
+        "z_score": -2.3275125955635696,
+        "ch_preference": 0.37142857142857144,
+        "predicted_rank": 39.614570087040995,
+        "section": "H",
+        "regime": "REGIME_1"
+      }
+    ],
+    "skewness": -0.32964595036733596,
+    "excess_kurtosis": -0.11839535687621039
+  },
+  "verdict": "MAJORITY_FREE_CHOICE",
+  "predictor_ranking": [
+    {
+      "predictor": "Quire",
+      "unique_R2": 0.038196314438766144,
+      "pct": 3.8
+    },
+    {
+      "predictor": "Lane balance",
+      "unique_R2": 0.027360330873084315,
+      "pct": 2.7
+    },
+    {
+      "predictor": "MIDDLE comp",
+      "unique_R2": 0.02569050348088553,
+      "pct": 2.6
+    },
+    {
+      "predictor": "REGIME",
+      "unique_R2": 0.012225283346951832,
+      "pct": 1.2
+    },
+    {
+      "predictor": "Section",
+      "unique_R2": 0.0035109801325707846,
+      "pct": 0.4
+    }
+  ]
+}

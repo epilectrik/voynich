@@ -1,0 +1,476 @@
+{
+  "max_spread_tokens": [
+    {
+      "word": "chckhedy",
+      "folio_count": 10,
+      "occurrence_count": 11,
+      "sections": [
+        "B",
+        "T",
+        "H",
+        "S"
+      ],
+      "section_count": 4,
+      "mean_line": 18,
+      "line_1_count": 0,
+      "folios": [
+        "f76v",
+        "f84v",
+        "f113v",
+        "f111v",
+        "f108r",
+        "f66r",
+        "f83v",
+        "f48v",
+        "f78r",
+        "f111r"
+      ]
+    },
+    {
+      "word": "olkal",
+      "folio_count": 10,
+      "occurrence_count": 11,
+      "sections": [
+        "C",
+        "B",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 23.818181818181817,
+      "line_1_count": 0,
+      "folios": [
+        "f113r",
+        "f79r",
+        "f84v",
+        "f86v5",
+        "f111r",
+        "f81r",
+        "f86v6",
+        "f105v",
+        "f80v",
+        "f107v"
+      ]
+    },
+    {
+      "word": "araiin",
+      "folio_count": 10,
+      "occurrence_count": 10,
+      "sections": [
+        "C",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 14.4,
+      "line_1_count": 0,
+      "folios": [
+        "f113r",
+        "f86v5",
+        "f112r",
+        "f113v",
+        "f86v6",
+        "f105v",
+        "f86v3",
+        "f108v",
+        "f103v",
+        "f114v"
+      ]
+    },
+    {
+      "word": "qokshedy",
+      "folio_count": 9,
+      "occurrence_count": 11,
+      "sections": [
+        "C",
+        "B",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 12.454545454545455,
+      "line_1_count": 0,
+      "folios": [
+        "f79v",
+        "f76v",
+        "f79r",
+        "f84v",
+        "f111v",
+        "f115v",
+        "f83r",
+        "f75r",
+        "f85r2"
+      ]
+    },
+    {
+      "word": "yshedy",
+      "folio_count": 9,
+      "occurrence_count": 10,
+      "sections": [
+        "B",
+        "H",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 22.7,
+      "line_1_count": 0,
+      "folios": [
+        "f79v",
+        "f94v",
+        "f79r",
+        "f115v",
+        "f80v",
+        "f84r",
+        "f82v",
+        "f75r",
+        "f78v"
+      ]
+    },
+    {
+      "word": "ytchdy",
+      "folio_count": 9,
+      "occurrence_count": 9,
+      "sections": [
+        "C",
+        "H",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 9,
+      "line_1_count": 0,
+      "folios": [
+        "f86v5",
+        "f66v",
+        "f46r",
+        "f48v",
+        "f86v3",
+        "f106r",
+        "f26v",
+        "f50r",
+        "f95v1"
+      ]
+    },
+    {
+      "word": "ysheey",
+      "folio_count": 9,
+      "occurrence_count": 9,
+      "sections": [
+        "C",
+        "B",
+        "H",
+        "S"
+      ],
+      "section_count": 4,
+      "mean_line": 25.333333333333332,
+      "line_1_count": 0,
+      "folios": [
+        "f79v",
+        "f79r",
+        "f104v",
+        "f113v",
+        "f77r",
+        "f115v",
+        "f80v",
+        "f86v3",
+        "f26v"
+      ]
+    },
+    {
+      "word": "olkeeey",
+      "folio_count": 9,
+      "occurrence_count": 9,
+      "sections": [
+        "B",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 26.11111111111111,
+      "line_1_count": 1,
+      "folios": [
+        "f79v",
+        "f79r",
+        "f113v",
+        "f80r",
+        "f112v",
+        "f104r",
+        "f107v",
+        "f108v",
+        "f103v"
+      ]
+    },
+    {
+      "word": "olshey",
+      "folio_count": 8,
+      "occurrence_count": 11,
+      "sections": [
+        "B",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 18.363636363636363,
+      "line_1_count": 0,
+      "folios": [
+        "f105r",
+        "f79v",
+        "f76v",
+        "f79r",
+        "f81r",
+        "f80v",
+        "f103v",
+        "f75v"
+      ]
+    },
+    {
+      "word": "qolchey",
+      "folio_count": 8,
+      "occurrence_count": 11,
+      "sections": [
+        "B",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 20.181818181818183,
+      "line_1_count": 0,
+      "folios": [
+        "f83r",
+        "f79r",
+        "f84v",
+        "f77r",
+        "f84r",
+        "f76r",
+        "f82v",
+        "f116r"
+      ]
+    },
+    {
+      "word": "shedain",
+      "folio_count": 8,
+      "occurrence_count": 11,
+      "sections": [
+        "H",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 28.90909090909091,
+      "line_1_count": 0,
+      "folios": [
+        "f113r",
+        "f103r",
+        "f115v",
+        "f112v",
+        "f111r",
+        "f108v",
+        "f95v2",
+        "f114v"
+      ]
+    },
+    {
+      "word": "ytchedy",
+      "folio_count": 8,
+      "occurrence_count": 10,
+      "sections": [
+        "H",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 11.3,
+      "line_1_count": 0,
+      "folios": [
+        "f48r",
+        "f104v",
+        "f112r",
+        "f115v",
+        "f33r",
+        "f106r",
+        "f43r",
+        "f114v"
+      ]
+    },
+    {
+      "word": "chdam",
+      "folio_count": 8,
+      "occurrence_count": 10,
+      "sections": [
+        "B",
+        "H",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 12,
+      "line_1_count": 0,
+      "folios": [
+        "f46r",
+        "f46v",
+        "f106v",
+        "f112v",
+        "f76r",
+        "f39r",
+        "f106r",
+        "f95v1"
+      ]
+    },
+    {
+      "word": "qolchedy",
+      "folio_count": 8,
+      "occurrence_count": 10,
+      "sections": [
+        "B"
+      ],
+      "section_count": 1,
+      "mean_line": 12.8,
+      "line_1_count": 0,
+      "folios": [
+        "f81v",
+        "f82r",
+        "f80v",
+        "f83v",
+        "f76r",
+        "f82v",
+        "f75r",
+        "f75v"
+      ]
+    },
+    {
+      "word": "otedar",
+      "folio_count": 8,
+      "occurrence_count": 10,
+      "sections": [
+        "C",
+        "B",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 18.8,
+      "line_1_count": 3,
+      "folios": [
+        "f84v",
+        "f113v",
+        "f108r",
+        "f106v",
+        "f112v",
+        "f111r",
+        "f108v",
+        "f85r2"
+      ]
+    },
+    {
+      "word": "cthedy",
+      "folio_count": 8,
+      "occurrence_count": 9,
+      "sections": [
+        "B",
+        "H",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 11.555555555555555,
+      "line_1_count": 0,
+      "folios": [
+        "f26r",
+        "f76v",
+        "f114v",
+        "f107r",
+        "f75v",
+        "f31v",
+        "f116r",
+        "f57r"
+      ]
+    },
+    {
+      "word": "ochedy",
+      "folio_count": 8,
+      "occurrence_count": 9,
+      "sections": [
+        "C",
+        "B",
+        "H",
+        "S"
+      ],
+      "section_count": 4,
+      "mean_line": 12.555555555555555,
+      "line_1_count": 1,
+      "folios": [
+        "f105r",
+        "f76v",
+        "f84v",
+        "f104v",
+        "f114v",
+        "f107v",
+        "f43v",
+        "f85r2"
+      ]
+    },
+    {
+      "word": "okeeedy",
+      "folio_count": 8,
+      "occurrence_count": 9,
+      "sections": [
+        "B",
+        "S"
+      ],
+      "section_count": 2,
+      "mean_line": 26.333333333333332,
+      "line_1_count": 0,
+      "folios": [
+        "f76v",
+        "f112r",
+        "f104v",
+        "f113v",
+        "f111v",
+        "f112v",
+        "f114r",
+        "f111r"
+      ]
+    },
+    {
+      "word": "qofchedy",
+      "folio_count": 8,
+      "occurrence_count": 8,
+      "sections": [
+        "B",
+        "H",
+        "S"
+      ],
+      "section_count": 3,
+      "mean_line": 19,
+      "line_1_count": 1,
+      "folios": [
+        "f81v",
+        "f113r",
+        "f31r",
+        "f107r",
+        "f106v",
+        "f39r",
+        "f111r",
+        "f115r"
+      ]
+    },
+    {
+      "word": "qokees",
+      "folio_count": 8,
+      "occurrence_count": 8,
+      "sections": [
+        "C",
+        "B",
+        "T",
+        "H"
+      ],
+      "section_count": 4,
+      "mean_line": 12.125,
+      "line_1_count": 0,
+      "folios": [
+        "f79v",
+        "f84v",
+        "f86v5",
+        "f31r",
+        "f95r1",
+        "f66r",
+        "f34v",
+        "f40v"
+      ]
+    }
+  ],
+  "section_clustering": {
+    "rare_ht_count": 928,
+    "same_section": 310,
+    "mixed_section": 618,
+    "same_section_rate": 0.33405172413793105,
+    "section_pair_counts": {
+      

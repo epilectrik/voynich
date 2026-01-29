@@ -21,11 +21,12 @@
 meta:
   name: "AZC-B Activation Contract"
   acronym: "AZC-B-ACT"
-  version: "1.0"
-  date: "2026-01-13"
+  version: "1.1"
+  date: "2026-01-29"
   status: "LOCKED"
   layer_type: "propagation contract"
   derived_from: "Tier-2 constraints only"
+  audit_note: "Reviewed against constraints through C872. No changes needed - new constraints are internal A/B structure, not pipeline boundaries."
   governance: |
     AZC-B-ACT is NOT authoritative. Constraints are authoritative.
     AZC-B-ACT describes HOW AZC legality states propagate into B.

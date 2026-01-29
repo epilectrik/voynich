@@ -1,0 +1,62 @@
+{
+  "model_name": "FL State Indexing Model",
+  "tier": 3,
+  "date": "2026-01-29",
+  "core_claims": [
+    "FL indexes material position in transformation process",
+    "Hazard FL marks unstable/in-process material",
+    "Safe FL marks stable/completed material",
+    "Kernel characters modulate transitions (k=energy, h=phase, e=stability)",
+    "Forward-biased progression resembles batch processing"
+  ],
+  "fl_stage_map": {
+    "INITIAL": [
+      "ii",
+      "i"
+    ],
+    "EARLY": [
+      "in"
+    ],
+    "MEDIAL": [
+      "r",
+      "ar",
+      "al",
+      "l",
+      "ol"
+    ],
+    "LATE": [
+      "o",
+      "ly"
+    ],
+    "TERMINAL": [
+      "am",
+      "m",
+      "dy",
+      "ry",
+      "y"
+    ]
+  },
+  "hazard_safe_boundary": "After MEDIAL (hazard) / At LATE (safe)",
+  "kernel_semantics": {
+    "k": "Energy injection for transitions",
+    "h": "Phase/orientation alignment",
+    "e": "Stability verification"
+  },
+  "process_analogy": "Batch processing with safety interlocks",
+  "candidate_domains": [
+    "Chemical transformation",
+    "Biological extraction",
+    "Material preparation",
+    "Alchemical operation"
+  ],
+  "structural_provenance": [
+    "C770",
+    "C772",
+    "C777",
+    "C779",
+    "C786",
+    "C787",
+    "C775",
+    "C811"
+  ]
+}

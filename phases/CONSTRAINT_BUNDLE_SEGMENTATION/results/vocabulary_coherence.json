@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "phase": "CONSTRAINT_BUNDLE_SEGMENTATION",
+    "script": "vocabulary_coherence.py",
+    "tests": "T2.1-T2.4 (C699-C702)",
+    "n_bundles": 365
+  },
+  "T2_1_within_vs_between": {
+    "constraint": "C699",
+    "within_pairs": 1464,
+    "between_pairs": 2830,
+    "within_mean_jaccard": 0.09735,
+    "between_mean_jaccard": 0.09618,
+    "ratio": 1.012,
+    "mann_whitney_u": 2085217.5,
+    "mann_whitney_p": 0.35613696661257405,
+    "pass": false
+  },
+  "T2_2_bundle_pp_vs_random": {
+    "constraint": "C700",
+    "n_bundles_tested": 223,
+    "observed_mean_pp": 14.466,
+    "null_mean_pp": 14.155,
+    "ratio": 1.022,
+    "fisher_combined_p": 5.354993756768726e-157,
+    "wilcoxon_p": 0.014360446567764237,
+    "n_permutations": 1000,
+    "pass": "True"
+  },
+  "T2_3_pp_diversity": {
+    "constraint": "C701",
+    "n_bundles": 222,
+    "observed_mean_diversity": 0.73867,
+    "shuffled_mean_diversity": 0.74379,
+    "shuffled_std": 0.00511,
+    "direction": "lower",
+    "p_value": 0.336,
+    "n_permutations": 500,
+    "pass": "False"
+  },
+  "T2_4_boundary_discontinuity": {
+    "constraint": "C702",
+    "interior_pairs": 618,
+    "boundary_pairs": 602,
+    "interior_mean_jaccard": 0.10397,
+    "boundary_mean_jaccard": 0.09765,
+    "ratio": 1.065,
+    "mann_whitney_u": 190882.0,
+    "mann_whitney_p": 0.20667267348496432,
+    "pass": false
+  },
+  "gate": {
+    "threshold": "3/4",
+    "passed": 1,
+    "total": 4,
+    "result": "FAILED"
+  }
+}

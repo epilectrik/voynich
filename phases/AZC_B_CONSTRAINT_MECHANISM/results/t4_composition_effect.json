@@ -1,0 +1,22 @@
+{
+  "n_folios": 82,
+  "correlations": {
+    "azc_pct_vs_escape": {
+      "r": -0.066,
+      "p": 0.5558
+    },
+    "azc_pct_vs_b_native_tokens": {
+      "r": -0.518,
+      "p": 0.0
+    },
+    "b_native_tokens_vs_escape": {
+      "r": 0.28,
+      "p": 0.0108
+    }
+  },
+  "folio_comparison": {
+    "azc_higher_escape": 29,
+    "b_native_higher_escape": 45
+  },
+  "verdict": "KERNEL_ACCESS_BOTTLENECK"
+}

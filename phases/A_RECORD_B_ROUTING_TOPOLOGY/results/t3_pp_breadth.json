@@ -1,0 +1,45 @@
+{
+  "bins": {
+    "0 PP": {
+      "count": 6,
+      "mean_viability": 82.0,
+      "pct_of_max": 100.0
+    },
+    "1-2 PP": {
+      "count": 78,
+      "mean_viability": 44.06410256410256,
+      "pct_of_max": 53.736710444027516
+    },
+    "3-5 PP": {
+      "count": 633,
+      "mean_viability": 20.954186413902054,
+      "pct_of_max": 25.55388587061226
+    },
+    "6-10 PP": {
+      "count": 798,
+      "mean_viability": 8.201754385964913,
+      "pct_of_max": 10.002139495079161
+    },
+    "11-20 PP": {
+      "count": 44,
+      "mean_viability": 3.409090909090909,
+      "pct_of_max": 4.157427937915743
+    },
+    "21+ PP": {
+      "count": 0,
+      "mean_viability": 0.0,
+      "pct_of_max": 0.0
+    }
+  },
+  "regression": {
+    "slope": -3.581618691888069,
+    "intercept": 36.05659583616561,
+    "r_squared": 0.17101027105081712,
+    "p_value": 3.338669787686354e-65
+  },
+  "correlation": {
+    "spearman_rho": -0.43860204174275746,
+    "p_value": 2.670836259631115e-74
+  },
+  "verdict": "H3 SUPPORTED: High PP = narrow viability (negative correlation)"
+}

@@ -1,0 +1,18 @@
+{
+  "ht_rate": 0.3049012816072047,
+  "line1_ht_rate": 0.47,
+  "later_ht_rate": 0.27,
+  "line1_enrichment": 1.74,
+  "folio_singleton_rate": 0.8593238822246456,
+  "folio_unique_line1_only": 1229,
+  "mixed_line_rate": 0.8935166994106091,
+  "interpretation": "MATERIAL_IDENTIFICATION_VOCABULARY",
+  "key_claims": [
+    "HT is line-positional (concentrates in Line 1)",
+    "HT is folio-specific (86% singletons)",
+    "HT cooccurs with classified tokens (89% mixed lines)",
+    "HT avoids core control zones",
+    "Line-1 HT is identification/header vocabulary",
+    "HT = the material-specific part of each procedure"
+  ]
+}

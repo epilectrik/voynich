@@ -1,0 +1,342 @@
+{
+  "test4_regime_oscillation": {
+    "n_folios": 66,
+    "by_regime": {
+      "REGIME_1": {
+        "mean": 0.5617822712858227,
+        "median": 0.5765129483451046,
+        "std": 0.11043657953922921,
+        "n": 22
+      },
+      "REGIME_2": {
+        "mean": 0.5701849333632246,
+        "median": 0.5470085470085471,
+        "std": 0.1100577826009781,
+        "n": 16
+      },
+      "REGIME_3": {
+        "mean": 0.553471510299063,
+        "median": 0.5714285714285714,
+        "std": 0.075004955554757,
+        "n": 7
+      },
+      "REGIME_4": {
+        "mean": 0.4565360125825556,
+        "median": 0.47761194029850745,
+        "std": 0.13461863443478383,
+        "n": 21
+      }
+    },
+    "by_section": {
+      "B": {
+        "mean": 0.5929985116209667,
+        "median": 0.5891566265060241,
+        "std": 0.07117773461997003,
+        "n": 20
+      },
+      "C": {
+        "mean": 0.5122790404040404,
+        "median": 0.5104166666666667,
+        "std": 0.030253718163147054,
+        "n": 4
+      },
+      "H": {
+        "mean": 0.45676583955737726,
+        "median": 0.458041958041958,
+        "std": 0.16676514594694247,
+        "n": 18
+      },
+      "S": {
+        "mean": 0.5294645493644116,
+        "median": 0.5253283302063789,
+        "std": 0.09602435950530272,
+        "n": 22
+      },
+      "T": {
+        "mean": 0.5823170731707317,
+        "median": 0.5823170731707317,
+        "std": 0.1676829268292683,
+        "n": 2
+      }
+    },
+    "regime_kruskal": {
+      "H": 10.438654433931362,
+      "p": 0.015182866320396622
+    },
+    "section_kruskal": {
+      "H": 10.494569549327037,
+      "p": 0.03287187528509473
+    },
+    "within_section_regime_effect": {
+      "B": {
+        "insufficient_data": true,
+        "n_regimes_testable": 1,
+        "group_sizes": {
+          "REGIME_1": 14,
+          "REGIME_2": 1,
+          "REGIME_3": 3,
+          "REGIME_4": 2
+        }
+      },
+      "C": {
+        "insufficient_data": true,
+        "n_regimes_testable": 0,
+        "group_sizes": {
+          "REGIME_2": 3,
+          "REGIME_4": 1
+        }
+      },
+      "H": {
+        "insufficient_data": true,
+        "n_regimes_testable": 1,
+        "group_sizes": {
+          "REGIME_1": 3,
+          "REGIME_2": 3,
+          "REGIME_3": 3,
+          "REGIME_4": 9
+        }
+      },
+      "S": {
+        "H": 1.8148148148148167,
+        "p": 0.17793172526825055,
+        "n_regimes": 2,
+        "group_sizes": {
+          "REGIME_2": 8,
+          "REGIME_4": 9
+        }
+      },
+      "T": {
+        "insufficient_data": true,
+        "n_regimes_testable": 0,
+        "group_sizes": {
+          "REGIME_1": 1,
+          "REGIME_2": 1
+        }
+      }
+    },
+    "within_regime_section_effect": {
+      "REGIME_1": {
+        "insufficient_data": true,
+        "n_sections_testable": 1,
+        "group_sizes": {
+          "B": 14,
+          "H": 3,
+          "S": 4,
+          "T": 1
+        }
+      },
+      "REGIME_2": {
+        "insufficient_data": true,
+        "n_sections_testable": 1,
+        "group_sizes": {
+          "B": 1,
+          "C": 3,
+          "H": 3,
+          "S": 8,
+          "T": 1
+        }
+      },
+      "REGIME_3": {
+        "insufficient_data": true,
+        "n_sections_testable": 0,
+        "group_sizes": {
+          "B": 3,
+          "H": 3,
+          "S": 1
+        }
+      },
+      "REGIME_4": {
+        "H": 0.8596491228070136,
+        "p": 0.3538369006847303,
+        "n_sections": 2,
+        "group_sizes": {
+          "H": 9,
+          "S": 9
+        }
+      }
+    },
+    "two_way": {
+      "regime_partial_eta2": 0.15776995052218346,
+      "regime_perm_p": 0.0685,
+      "section_partial_eta2": 0.17438313297578584,
+      "section_perm_p": 0.0236,
+      "n_permutations": 10000
+    },
+    "interpretation": "SECTION_DRIVEN"
+  },
+  "test5_post_hazard_recovery": {
+    "n_hazard_events": 504,
+    "first_en_after_hazard": {
+      "QO": 125,
+      "CHSH": 379,
+      "chsh_rate": 0.751984126984127,
+      "base_qo_rate": 0.4470588235294118,
+      "binom_p_vs_base": 2.8701580728047e-20,
+      "c645_match": true
+    },
+    "chsh_before_qo": {
+      "n_with_qo_found": 277,
+      "n_censored": 227,
+      "mean": 0.7653429602888087,
+      "median": 1.0,
+      "std": 0.8825367367789976,
+      "distribution": {
+        "0": 125,
+        "1": 112,
+        "2": 23,
+        "3": 14,
+        "4": 3
+      }
+    },
+    "by_section": {
+      "B": {
+        "mean_chsh_before_qo": 0.8481012658227848,
+        "median": 1.0,
+        "n": 79
+      },
+      "C": {
+        "mean_chsh_before_qo": 0.918918918918919,
+        "median": 0.0,
+        "n": 37
+      },
+      "H": {
+        "mean_chsh_before_qo": 0.7083333333333334,
+        "median": 1.0,
+        "n": 24
+      },
+      "S": {
+        "mean_chsh_before_qo": 0.6923076923076923,
+        "median": 1.0,
+        "n": 130
+      },
+      "T": {
+        "mean_chsh_before_qo": 0.5714285714285714,
+        "median": 1.0,
+        "n": 7
+      }
+    },
+    "section_kruskal": {
+      "H": 3.873288843816238,
+      "p": 0.42342585985657233
+    },
+    "by_regime": {
+      "REGIME_1": {
+        "mean_chsh_before_qo": 0.8444444444444444,
+        "median": 1.0,
+        "n": 90
+      },
+      "REGIME_2": {
+        "mean_chsh_before_qo": 0.8452380952380952,
+        "median": 1.0,
+        "n": 84
+      },
+      "REGIME_3": {
+        "mean_chsh_before_qo": 0.6428571428571429,
+        "median": 0.5,
+        "n": 14
+      },
+      "REGIME_4": {
+        "mean_chsh_before_qo": 0.6292134831460674,
+        "median": 0.0,
+        "n": 89
+      }
+    },
+    "regime_kruskal": {
+      "H": 4.8991224051399325,
+      "p": 0.17933469296650587
+    },
+    "by_hazard_class": {
+      "7": {
+        "mean": 0.6929824561403509,
+        "median": 0.0,
+        "n": 114
+      },
+      "30": {
+        "mean": 0.8159509202453987,
+        "median": 1.0,
+        "n": 163
+      }
+    },
+    "hazard_class_mw": {
+      "U": 8352.5,
+      "p": 0.11908106246965533
+    },
+    "interpretation": "FAST_RECOVERY"
+  },
+  "test6_hazard_entropy": {
+    "section_level": {
+      "spearman_rho": -0.49999999999999994,
+      "p": 0.39100221895577053,
+      "n": 5,
+      "data": [
+        {
+          "section": "B",
+          "entropy": 0.6956492981613016,
+          "n_hazards": 235,
+          "class_distribution": {
+            "7": 44,
+            "30": 191
+          },
+          "oscillation_rate": 0.6058064516129033
+        },
+        {
+          "section": "C",
+          "entropy": 0.9995708393473224,
+          "n_hazards": 82,
+          "class_distribution": {
+            "7": 40,
+            "30": 42
+          },
+          "oscillation_rate": 0.5064102564102564
+        },
+        {
+          "section": "H",
+          "entropy": 0.9658028795108957,
+          "n_hazards": 166,
+          "class_distribution": {
+            "7": 65,
+            "30": 101
+          },
+          "oscillation_rate": 0.4268774703557312
+        },
+        {
+          "section": "S",
+          "entropy": 0.94926580742365,
+          "n_hazards": 440,
+          "class_distribution": {
+            "7": 278,
+            "30": 162
+          },
+          "oscillation_rate": 0.5505849965588437
+        },
+        {
+          "section": "T",
+          "entropy": 0.7455178428108284,
+          "n_hazards": 33,
+          "class_distribution": {
+            "7": 7,
+            "30": 26
+          },
+          "oscillation_rate": 0.49056603773584906
+        }
+      ]
+    },
+    "folio_level": {
+      "n_folios": 65,
+      "spearman_rho": -0.20253111884137653,
+      "p": 0.10566430481729172,
+      "partial_r": -0.15111234670153711,
+      "partial_p": 0.2295254912695365,
+      "controlling": [
+        "section",
+        "regime"
+      ]
+    },
+    "interpretation": "NO_ASSOCIATION"
+  },
+  "summary": {
+    "test4": "SECTION_DRIVEN",
+    "test5": "FAST_RECOVERY",
+    "test6": "NO_ASSOCIATION"
+  }
+}

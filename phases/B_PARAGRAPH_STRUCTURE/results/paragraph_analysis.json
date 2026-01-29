@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "phase": "B_PARAGRAPH_STRUCTURE",
+    "date": "2026-01-29",
+    "description": "Analysis of paragraph structure in Currier B"
+  },
+  "paragraph_counts": {
+    "total_paragraphs": 585,
+    "total_folios": 82,
+    "mean_paragraphs_per_folio": 7.13,
+    "max_paragraphs_in_folio": 37,
+    "folio_with_max": "f66r"
+  },
+  "lines_per_paragraph": {
+    "mean": 4.37,
+    "stdev": 3.82,
+    "min": 1,
+    "max": 30
+  },
+  "ht_enrichment": {
+    "all_paragraphs": {
+      "sample_size": 478,
+      "paragraph_line1_ht_pct": 44.9,
+      "paragraph_body_ht_pct": 29.1,
+      "delta_pp": 15.8,
+      "direction_positive": 363,
+      "direction_zero": 10,
+      "direction_negative": 105,
+      "wilcoxon_z": 13.63,
+      "p_value": "<10^-20",
+      "cohens_d": 0.721
+    },
+    "non_folio_line1_paragraphs": {
+      "sample_size": 391,
+      "paragraph_line1_ht_pct": 43.6,
+      "paragraph_body_ht_pct": 29.4,
+      "delta_pp": 14.2,
+      "direction_positive": 286,
+      "direction_zero": 9,
+      "direction_negative": 96
+    },
+    "comparison_to_c747": {
+      "folio_line1_ht_pct": 50.2,
+      "folio_body_ht_pct": 29.8,
+      "folio_delta_pp": 20.3
+    }
+  },
+  "step_function_pattern": {
+    "paragraphs_with_5plus_lines": 196,
+    "ht_by_position": {
+      "position_1": 45.2,
+      "position_2": 26.5,
+      "position_3": 26.2,
+      "position_4": 27.1,
+      "position_5plus": 25.6
+    },
+    "interpretation": "HT drops sharply from position 1 to position 2, then stabilizes"
+  },
+  "paragraph_initiation": {
+    "gallows_initial_rate_pct": 71.5,
+    "first_character_distribution": {
+      "p": 43.6,
+      "t": 19.3,
+      "o": 12.0,
+      "k": 5.5,
+      "d": 4.1,
+      "s": 3.8,
+      "f": 3.1,
+      "q": 2.7,
+      "y": 2.6
+    },
+    "top_prefixes": {
+      "pch": 16.9,
+      "po": 16.6,
+      "none": 12.1,
+      "sh": 11.6,
+      "tch": 6.5,
+      "to": 4.4
+    },
+    "prefix_ht_rates": {
+      "sh": 94.1,
+      "po": 85.6,
+      "ol": 85.7,
+      "to": 80.8,
+      "pch": 78.8,
+      "da": 76.5,
+      "tch": 65.8,
+      "none": 60.6,
+      "ot": 45.5,
+      "ok": 40.9,
+      "qo": 35.7
+    }
+  },
+  "folio_vs_mid_folio_start": {
+    "paragraphs_at_folio_line1": 100,
+    "paragraphs_elsewhere": 485,
+    "first_token_ht_rate_at_folio_line1": 79.0,
+    "first_token_ht_rate_elsewhere": 73.8
+  },
+  "conclusions": {
+    "C1": "B paragraphs function as mini-programs with header-body structure",
+    "C2": "Paragraph line 1 shows HT enrichment (+15.8pp) similar to folio line 1",
+    "C3": "HT enrichment is a step function (line 1 only), not a gradient",
+    "C4": "Paragraph initiation is gallows-dominated (71.5% p/t/k/f initial)",
+    "C5": "pch- and po- prefixes are paragraph markers (33.5% combined, 78-86% HT)",
+    "C6": "Mid-folio paragraphs show same pattern as folio-initial paragraphs"
+  }
+}

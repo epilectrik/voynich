@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "phase": "B_FOLIO_TEMPORAL_PROFILE",
+    "script": "folio_temporal_dynamics",
+    "timestamp": "2026-01-27T12:17:12.227237",
+    "total_b_tokens": 23096,
+    "total_folios": 82,
+    "total_lines": 2420,
+    "total_forbidden_events": 0,
+    "total_hazard_tokens": 3823,
+    "total_escape_events": 2374,
+    "lines_with_hazard": 1833,
+    "lines_with_en": 2247
+  },
+  "test4_escape_hazard": {
+    "hazard_class_density": {
+      "spearman": {
+        "rho": 0.0092,
+        "p": 0.6500840785675994
+      },
+      "kruskal_wallis": {
+        "H": 2.43,
+        "p": 0.4877191181703312
+      },
+      "quartile_means": {
+        "Q1": 0.1543,
+        "Q2": 0.1651,
+        "Q3": 0.1545,
+        "Q4": 0.1631
+      }
+    },
+    "forbidden_density": {
+      "spearman": {
+        "rho": 0.0,
+        "p": 1.0
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0
+      },
+      "quartile_means": {
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 0.0,
+        "Q4": 0.0
+      }
+    },
+    "escape_density": {
+      "spearman": {
+        "rho": -0.0293,
+        "p": 0.1489670586146672
+      },
+      "kruskal_wallis": {
+        "H": 5.28,
+        "p": 0.15217446652005936
+      },
+      "quartile_means": {
+        "Q1": 0.0955,
+        "Q2": 0.1012,
+        "Q3": 0.0946,
+        "Q4": 0.0894
+      }
+    },
+    "escape_hazard_ratio": {
+      "Q1": {
+        "hazard_tokens": 1018,
+        "escape_events": 647,
+        "ratio": 0.6356
+      },
+      "Q2": {
+        "hazard_tokens": 938,
+        "escape_events": 597,
+        "ratio": 0.6365
+      },
+      "Q3": {
+        "hazard_tokens": 923,
+        "escape_events": 583,
+        "ratio": 0.6316
+      },
+      "Q4": {
+        "hazard_tokens": 944,
+        "escape_events": 547,
+        "ratio": 0.5794
+      }
+    },
+    "regime_stratified": {
+      "REGIME_1": {
+        "hazard_quartile_means": {
+          "Q1": 0.1684,
+          "Q2": 0.1751,
+          "Q3": 0.1601,
+          "Q4": 0.1512
+        },
+        "hazard_slope": -0.0172
+      },
+      "REGIME_2": {
+        "hazard_quartile_means": {
+          "Q1": 0.1511,
+          "Q2": 0.1698,
+          "Q3": 0.1386,
+          "Q4": 0.1906
+        },
+        "hazard_slope": 0.0395
+      },
+      "REGIME_3": {
+        "hazard_quartile_means": {
+          "Q1": 0.1307,
+          "Q2": 0.148,
+          "Q3": 0.1823,
+          "Q4": 0.1834
+        },
+        "hazard_slope": 0.0527
+      },
+      "REGIME_4": {
+        "hazard_quartile_means": {
+          "Q1": 0.1476,
+          "Q2": 0.1545,
+          "Q3": 0.1547,
+          "Q4": 0.148
+        },
+        "hazard_slope": 0.0004
+      }
+    }
+  },
+  "test5_lane_balance": {
+    "n_lines_with_lane": 2244,
+    "spearman": {
+      "rho": -0.0576,
+      "p": 0.0063635026350629545
+    },
+    "kruskal_wallis": {
+      "H": 9.52,
+      "p": 0.02309724775008775
+    },
+    "quartile_means": {
+      "Q1": 0.4633,
+      "Q2": 0.4125,
+      "Q3": 0.435,
+      "Q4": 0.4129
+    },
+    "regime_stratified": {
+      "REGIME_1": {
+        "quartile_means": {
+          "Q1": 0.4986,
+          "Q2": 0.4233,
+          "Q3": 0.4554,
+          "Q4": 0.4219
+        },
+        "slope": -0.0767,
+        "n_lines": 799
+      },
+      "REGIME_2": {
+        "quartile_means": {
+          "Q1": 0.4231,
+          "Q2": 0.3574,
+          "Q3": 0.393,
+          "Q4": 0.3242
+        },
+        "slope": -0.099,
+        "n_lines": 566
+      },
+      "REGIME_3": {
+        "quartile_means": {
+          "Q1": 0.4358,
+          "Q2": 0.4822,
+          "Q3": 0.4163,
+          "Q4": 0.3882
+        },
+        "slope": -0.0476,
+        "n_lines": 171
+      },
+      "REGIME_4": {
+        "quartile_means": {
+          "Q1": 0.4634,
+          "Q2": 0.4254,
+          "Q3": 0.45,
+          "Q4": 0.4775
+        },
+        "slope": 0.014,
+        "n_lines": 708
+      }
+    }
+  },
+  "test6_hazard_proximity": {
+    "n_lines_with_hazard": 1831,
+    "spearman": {
+      "rho": -0.104,
+      "p": 8.272187896176286e-06
+    },
+    "kruskal_wallis": {
+      "H": 15.0,
+      "p": 0.001816567477692557
+    },
+    "quartile_means": {
+      "Q1": 2.7498,
+      "Q2": 2.5743,
+      "Q3": 2.4902,
+      "Q4": 2.4543
+    },
+    "lane_stratified": {
+      "QO": {
+        "n_lines": 1274,
+        "spearman": {
+          "rho": -0.082,
+          "p": 0.00341882316860767
+        },
+        "quartile_means": {
+          "Q1": 2.6806,
+          "Q2": 2.2422,
+          "Q3": 2.3713,
+          "Q4": 2.4335
+        },
+        "overall_mean": 2.4398
+      },
+      "CHSH": {
+        "n_lines": 1055,
+        "spearman": {
+          "rho": -0.0203,
+          "p": 0.5099405138191602
+        },
+        "quartile_means": {
+          "Q1": 2.7494,
+          "Q2": 2.6199,
+          "Q3": 2.6988,
+          "Q4": 2.5963
+        },
+        "overall_mean": 2.6681
+      }
+    },
+    "regime_stratified": {
+      "REGIME_1": {
+        "quartile_means": {
+          "Q1": 2.7166,
+          "Q2": 2.5339,
+          "Q3": 2.4668,
+          "Q4": 2.505
+        },
+        "slope": -0.2116,
+        "n_lines": 643
+      },
+      "REGIME_2": {
+        "quartile_means": {
+          "Q1": 2.8584,
+          "Q2": 2.5274,
+          "Q3": 2.625,
+          "Q4": 2.2563
+        },
+        "slope": -0.6021,
+        "n_lines": 479
+      },
+      "REGIME_3": {
+        "quartile_means": {
+          "Q1": 2.8292,
+          "Q2": 2.7262,
+          "Q3": 2.2964,
+          "Q4": 2.2779
+        },
+        "slope": -0.5514,
+        "n_lines": 140
+      },
+      "REGIME_4": {
+        "quartile_means": {
+          "Q1": 2.6763,
+          "Q2": 2.6253,
+          "Q3": 2.4589,
+          "Q4": 2.625
+        },
+        "slope": -0.0513,
+        "n_lines": 569
+      }
+    }
+  }
+}

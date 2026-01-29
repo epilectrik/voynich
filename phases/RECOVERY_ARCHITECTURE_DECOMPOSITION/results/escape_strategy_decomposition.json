@@ -1,0 +1,2212 @@
+{
+  "metadata": {
+    "phase": "RECOVERY_ARCHITECTURE_DECOMPOSITION",
+    "script": "escape_strategy_decomposition.py",
+    "description": "Per-REGIME escape strategy fingerprints and sub-group routing",
+    "n_folios": 82,
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ],
+    "en_subgroups": [
+      "EN_CHSH",
+      "EN_MINOR",
+      "EN_QO"
+    ],
+    "cc_subgroups": [
+      "CC_DAIIN",
+      "CC_OL",
+      "CC_OL_D"
+    ]
+  },
+  "kw_tests": {
+    "en_recovery_zones": {
+      "EN_CHSH": {
+        "H": 2.1001,
+        "p": 0.551886,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "EN_MINOR": {
+        "H": 1.6136,
+        "p": 0.656318,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "EN_QO": {
+        "H": 2.4467,
+        "p": 0.484998,
+        "eta_sq": 0,
+        "significant": false
+      }
+    },
+    "first_en_after_hazard": {
+      "EN_CHSH": {
+        "H": 1.9335,
+        "p": 0.586327,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "EN_MINOR": {
+        "H": 5.9755,
+        "p": 0.112809,
+        "eta_sq": 0.0381,
+        "significant": false
+      },
+      "EN_QO": {
+        "H": 2.8076,
+        "p": 0.422254,
+        "eta_sq": 0,
+        "significant": false
+      }
+    },
+    "cc_recovery_zones": {
+      "CC_DAIIN": {
+        "H": 0.301,
+        "p": 0.959835,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "CC_OL": {
+        "H": 2.0067,
+        "p": 0.57101,
+        "eta_sq": 0,
+        "significant": false
+      },
+      "CC_OL_D": {
+        "H": 1.3748,
+        "p": 0.711456,
+        "eta_sq": 0,
+        "significant": false
+      }
+    }
+  },
+  "chi2_first_en": {
+    "chi2": 25.4542,
+    "p": 0.000281,
+    "dof": 6,
+    "significant": true
+  },
+  "regime_fingerprints": {
+    "REGIME_1": {
+      "EN_CHSH": 0.262,
+      "EN_MINOR": 0.1077,
+      "EN_QO": 0.6304,
+      "first_EN_CHSH": 0.2756,
+      "first_EN_MINOR": 0.0987,
+      "first_EN_QO": 0.6257,
+      "CC_DAIIN": 0.2838,
+      "CC_OL": 0.4434,
+      "CC_OL_D": 0.2728
+    },
+    "REGIME_2": {
+      "EN_CHSH": 0.3091,
+      "EN_MINOR": 0.1223,
+      "EN_QO": 0.5685,
+      "first_EN_CHSH": 0.2689,
+      "first_EN_MINOR": 0.1394,
+      "first_EN_QO": 0.5917,
+      "CC_DAIIN": 0.2731,
+      "CC_OL": 0.4652,
+      "CC_OL_D": 0.2617
+    },
+    "REGIME_3": {
+      "EN_CHSH": 0.2832,
+      "EN_MINOR": 0.1039,
+      "EN_QO": 0.6129,
+      "first_EN_CHSH": 0.2941,
+      "first_EN_MINOR": 0.0703,
+      "first_EN_QO": 0.6356,
+      "CC_DAIIN": 0.2463,
+      "CC_OL": 0.5042,
+      "CC_OL_D": 0.2495
+    },
+    "REGIME_4": {
+      "EN_CHSH": 0.2456,
+      "EN_MINOR": 0.1257,
+      "EN_QO": 0.6287,
+      "first_EN_CHSH": 0.2486,
+      "first_EN_MINOR": 0.1512,
+      "first_EN_QO": 0.6002,
+      "CC_DAIIN": 0.3761,
+      "CC_OL": 0.3666,
+      "CC_OL_D": 0.2573
+    }
+  },
+  "fingerprint_jsd_matrix": {
+    "REGIME_1_vs_REGIME_2": 0.0335,
+    "REGIME_1_vs_REGIME_3": 0.033,
+    "REGIME_1_vs_REGIME_4": 0.0532,
+    "REGIME_2_vs_REGIME_3": 0.0307,
+    "REGIME_2_vs_REGIME_4": 0.0694,
+    "REGIME_3_vs_REGIME_4": 0.0823
+  },
+  "all_kw_summary": {
+    "n_tests": 9,
+    "n_significant": 0,
+    "verdict": "WEAKLY_REGIME_STRATIFIED",
+    "verdict_detail": "0/9 metrics show REGIME dependence"
+  },
+  "per_folio": {
+    "en_recovery": {
+      "f103r": {
+        "fractions": {
+          "EN_CHSH": 0.2442,
+          "EN_MINOR": 0.1047,
+          "EN_QO": 0.6512
+        },
+        "total": 86
+      },
+      "f103v": {
+        "fractions": {
+          "EN_CHSH": 0.3182,
+          "EN_MINOR": 0.0455,
+          "EN_QO": 0.6364
+        },
+        "total": 88
+      },
+      "f104r": {
+        "fractions": {
+          "EN_CHSH": 0.2703,
+          "EN_MINOR": 0.1081,
+          "EN_QO": 0.6216
+        },
+        "total": 37
+      },
+      "f104v": {
+        "fractions": {
+          "EN_CHSH": 0.254,
+          "EN_MINOR": 0.1111,
+          "EN_QO": 0.6349
+        },
+        "total": 63
+      },
+      "f105r": {
+        "fractions": {
+          "EN_CHSH": 0.2727,
+          "EN_MINOR": 0.0909,
+          "EN_QO": 0.6364
+        },
+        "total": 33
+      },
+      "f105v": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.25,
+          "EN_QO": 0.4167
+        },
+        "total": 12
+      },
+      "f106r": {
+        "fractions": {
+          "EN_CHSH": 0.2069,
+          "EN_MINOR": 0.1552,
+          "EN_QO": 0.6379
+        },
+        "total": 58
+      },
+      "f106v": {
+        "fractions": {
+          "EN_CHSH": 0.3559,
+          "EN_MINOR": 0.1186,
+          "EN_QO": 0.5254
+        },
+        "total": 59
+      },
+      "f107r": {
+        "fractions": {
+          "EN_CHSH": 0.283,
+          "EN_MINOR": 0.1321,
+          "EN_QO": 0.5849
+        },
+        "total": 53
+      },
+      "f107v": {
+        "fractions": {
+          "EN_CHSH": 0.2097,
+          "EN_MINOR": 0.0645,
+          "EN_QO": 0.7258
+        },
+        "total": 62
+      },
+      "f108r": {
+        "fractions": {
+          "EN_CHSH": 0.2794,
+          "EN_MINOR": 0.1324,
+          "EN_QO": 0.5882
+        },
+        "total": 68
+      },
+      "f108v": {
+        "fractions": {
+          "EN_CHSH": 0.1919,
+          "EN_MINOR": 0.1111,
+          "EN_QO": 0.697
+        },
+        "total": 99
+      },
+      "f111r": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.131,
+          "EN_QO": 0.5357
+        },
+        "total": 84
+      },
+      "f111v": {
+        "fractions": {
+          "EN_CHSH": 0.2841,
+          "EN_MINOR": 0.1364,
+          "EN_QO": 0.5795
+        },
+        "total": 88
+      },
+      "f112r": {
+        "fractions": {
+          "EN_CHSH": 0.2308,
+          "EN_MINOR": 0.1026,
+          "EN_QO": 0.6667
+        },
+        "total": 39
+      },
+      "f112v": {
+        "fractions": {
+          "EN_CHSH": 0.1875,
+          "EN_MINOR": 0.1406,
+          "EN_QO": 0.6719
+        },
+        "total": 64
+      },
+      "f113r": {
+        "fractions": {
+          "EN_CHSH": 0.2069,
+          "EN_MINOR": 0.2241,
+          "EN_QO": 0.569
+        },
+        "total": 58
+      },
+      "f113v": {
+        "fractions": {
+          "EN_CHSH": 0.1071,
+          "EN_MINOR": 0.1071,
+          "EN_QO": 0.7857
+        },
+        "total": 28
+      },
+      "f114r": {
+        "fractions": {
+          "EN_CHSH": 0.375,
+          "EN_MINOR": 0.25,
+          "EN_QO": 0.375
+        },
+        "total": 40
+      },
+      "f114v": {
+        "fractions": {
+          "EN_CHSH": 0.175,
+          "EN_MINOR": 0.2,
+          "EN_QO": 0.625
+        },
+        "total": 40
+      },
+      "f115r": {
+        "fractions": {
+          "EN_CHSH": 0.2375,
+          "EN_MINOR": 0.0875,
+          "EN_QO": 0.675
+        },
+        "total": 80
+      },
+      "f115v": {
+        "fractions": {
+          "EN_CHSH": 0.1212,
+          "EN_MINOR": 0.0606,
+          "EN_QO": 0.8182
+        },
+        "total": 33
+      },
+      "f116r": {
+        "fractions": {
+          "EN_CHSH": 0.2857,
+          "EN_MINOR": 0.0982,
+          "EN_QO": 0.6161
+        },
+        "total": 112
+      },
+      "f26r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0909,
+          "EN_QO": 0.9091
+        },
+        "total": 11
+      },
+      "f26v": {
+        "fractions": {
+          "EN_CHSH": 0.4545,
+          "EN_MINOR": 0.0909,
+          "EN_QO": 0.4545
+        },
+        "total": 11
+      },
+      "f31r": {
+        "fractions": {
+          "EN_CHSH": 0.1818,
+          "EN_MINOR": 0.1818,
+          "EN_QO": 0.6364
+        },
+        "total": 11
+      },
+      "f31v": {
+        "fractions": {
+          "EN_CHSH": 0.1111,
+          "EN_MINOR": 0.3333,
+          "EN_QO": 0.5556
+        },
+        "total": 9
+      },
+      "f33r": {
+        "fractions": {
+          "EN_CHSH": 0.1111,
+          "EN_MINOR": 0.3333,
+          "EN_QO": 0.5556
+        },
+        "total": 9
+      },
+      "f33v": {
+        "fractions": {
+          "EN_CHSH": 0.5,
+          "EN_MINOR": 0.0833,
+          "EN_QO": 0.4167
+        },
+        "total": 12
+      },
+      "f34r": {
+        "fractions": {
+          "EN_CHSH": 0.3125,
+          "EN_MINOR": 0.125,
+          "EN_QO": 0.5625
+        },
+        "total": 16
+      },
+      "f34v": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.1905,
+          "EN_QO": 0.4762
+        },
+        "total": 21
+      },
+      "f39r": {
+        "fractions": {
+          "EN_CHSH": 0.381,
+          "EN_MINOR": 0.2381,
+          "EN_QO": 0.381
+        },
+        "total": 21
+      },
+      "f39v": {
+        "fractions": {
+          "EN_CHSH": 0.1364,
+          "EN_MINOR": 0.0909,
+          "EN_QO": 0.7727
+        },
+        "total": 22
+      },
+      "f40r": {
+        "fractions": {
+          "EN_CHSH": 0.4286,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.5714
+        },
+        "total": 7
+      },
+      "f40v": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.2,
+          "EN_QO": 0.6
+        },
+        "total": 5
+      },
+      "f41r": {
+        "fractions": {
+          "EN_CHSH": 0.25,
+          "EN_MINOR": 0.0833,
+          "EN_QO": 0.6667
+        },
+        "total": 12
+      },
+      "f41v": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.3333,
+          "EN_QO": 0.3333
+        },
+        "total": 3
+      },
+      "f43r": {
+        "fractions": {
+          "EN_CHSH": 0.4,
+          "EN_MINOR": 0.1333,
+          "EN_QO": 0.4667
+        },
+        "total": 15
+      },
+      "f43v": {
+        "fractions": {
+          "EN_CHSH": 0.3704,
+          "EN_MINOR": 0.1481,
+          "EN_QO": 0.4815
+        },
+        "total": 27
+      },
+      "f46r": {
+        "fractions": {
+          "EN_CHSH": 0.2105,
+          "EN_MINOR": 0.2632,
+          "EN_QO": 0.5263
+        },
+        "total": 38
+      },
+      "f46v": {
+        "fractions": {
+          "EN_CHSH": 0.4,
+          "EN_MINOR": 0.0667,
+          "EN_QO": 0.5333
+        },
+        "total": 15
+      },
+      "f48r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0,
+          "EN_QO": 1.0
+        },
+        "total": 1
+      },
+      "f48v": {
+        "fractions": {
+          "EN_CHSH": 0.7,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.2
+        },
+        "total": 10
+      },
+      "f50r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0,
+          "EN_QO": 1.0
+        },
+        "total": 3
+      },
+      "f50v": {
+        "fractions": {
+          "EN_CHSH": 0.3,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.6
+        },
+        "total": 10
+      },
+      "f55r": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.1333,
+          "EN_QO": 0.6667
+        },
+        "total": 15
+      },
+      "f55v": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.6667
+        },
+        "total": 3
+      },
+      "f57r": {
+        "fractions": {
+          "EN_CHSH": 0.4,
+          "EN_MINOR": 0.2,
+          "EN_QO": 0.4
+        },
+        "total": 5
+      },
+      "f66r": {
+        "fractions": {
+          "EN_CHSH": 0.2698,
+          "EN_MINOR": 0.1111,
+          "EN_QO": 0.619
+        },
+        "total": 63
+      },
+      "f66v": {
+        "fractions": {
+          "EN_CHSH": 0.125,
+          "EN_MINOR": 0.375,
+          "EN_QO": 0.5
+        },
+        "total": 8
+      },
+      "f75r": {
+        "fractions": {
+          "EN_CHSH": 0.4146,
+          "EN_MINOR": 0.0366,
+          "EN_QO": 0.5488
+        },
+        "total": 82
+      },
+      "f75v": {
+        "fractions": {
+          "EN_CHSH": 0.2031,
+          "EN_MINOR": 0.0625,
+          "EN_QO": 0.7344
+        },
+        "total": 64
+      },
+      "f76r": {
+        "fractions": {
+          "EN_CHSH": 0.4097,
+          "EN_MINOR": 0.0556,
+          "EN_QO": 0.5347
+        },
+        "total": 144
+      },
+      "f76v": {
+        "fractions": {
+          "EN_CHSH": 0.3519,
+          "EN_MINOR": 0.0741,
+          "EN_QO": 0.5741
+        },
+        "total": 54
+      },
+      "f77r": {
+        "fractions": {
+          "EN_CHSH": 0.2143,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.6857
+        },
+        "total": 70
+      },
+      "f77v": {
+        "fractions": {
+          "EN_CHSH": 0.1625,
+          "EN_MINOR": 0.025,
+          "EN_QO": 0.8125
+        },
+        "total": 80
+      },
+      "f78r": {
+        "fractions": {
+          "EN_CHSH": 0.1613,
+          "EN_MINOR": 0.0968,
+          "EN_QO": 0.7419
+        },
+        "total": 31
+      },
+      "f78v": {
+        "fractions": {
+          "EN_CHSH": 0.2553,
+          "EN_MINOR": 0.0213,
+          "EN_QO": 0.7234
+        },
+        "total": 47
+      },
+      "f79r": {
+        "fractions": {
+          "EN_CHSH": 0.2308,
+          "EN_MINOR": 0.1026,
+          "EN_QO": 0.6667
+        },
+        "total": 78
+      },
+      "f79v": {
+        "fractions": {
+          "EN_CHSH": 0.1935,
+          "EN_MINOR": 0.0645,
+          "EN_QO": 0.7419
+        },
+        "total": 31
+      },
+      "f80r": {
+        "fractions": {
+          "EN_CHSH": 0.1471,
+          "EN_MINOR": 0.1765,
+          "EN_QO": 0.6765
+        },
+        "total": 68
+      },
+      "f80v": {
+        "fractions": {
+          "EN_CHSH": 0.254,
+          "EN_MINOR": 0.0635,
+          "EN_QO": 0.6825
+        },
+        "total": 63
+      },
+      "f81r": {
+        "fractions": {
+          "EN_CHSH": 0.3871,
+          "EN_MINOR": 0.0968,
+          "EN_QO": 0.5161
+        },
+        "total": 31
+      },
+      "f81v": {
+        "fractions": {
+          "EN_CHSH": 0.3684,
+          "EN_MINOR": 0.0526,
+          "EN_QO": 0.5789
+        },
+        "total": 38
+      },
+      "f82r": {
+        "fractions": {
+          "EN_CHSH": 0.1667,
+          "EN_MINOR": 0.0833,
+          "EN_QO": 0.75
+        },
+        "total": 36
+      },
+      "f82v": {
+        "fractions": {
+          "EN_CHSH": 0.2535,
+          "EN_MINOR": 0.0141,
+          "EN_QO": 0.7324
+        },
+        "total": 71
+      },
+      "f83r": {
+        "fractions": {
+          "EN_CHSH": 0.2889,
+          "EN_MINOR": 0.1778,
+          "EN_QO": 0.5333
+        },
+        "total": 45
+      },
+      "f83v": {
+        "fractions": {
+          "EN_CHSH": 0.2623,
+          "EN_MINOR": 0.0656,
+          "EN_QO": 0.6721
+        },
+        "total": 61
+      },
+      "f84r": {
+        "fractions": {
+          "EN_CHSH": 0.3086,
+          "EN_MINOR": 0.0617,
+          "EN_QO": 0.6296
+        },
+        "total": 81
+      },
+      "f84v": {
+        "fractions": {
+          "EN_CHSH": 0.4186,
+          "EN_MINOR": 0.0233,
+          "EN_QO": 0.5581
+        },
+        "total": 43
+      },
+      "f85r1": {
+        "fractions": {
+          "EN_CHSH": 0.3667,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.5333
+        },
+        "total": 30
+      },
+      "f85r2": {
+        "fractions": {
+          "EN_CHSH": 0.5455,
+          "EN_MINOR": 0.1818,
+          "EN_QO": 0.2727
+        },
+        "total": 11
+      },
+      "f86v3": {
+        "fractions": {
+          "EN_CHSH": 0.2609,
+          "EN_MINOR": 0.1087,
+          "EN_QO": 0.6304
+        },
+        "total": 46
+      },
+      "f86v4": {
+        "fractions": {
+          "EN_CHSH": 0.2333,
+          "EN_MINOR": 0.2667,
+          "EN_QO": 0.5
+        },
+        "total": 30
+      },
+      "f86v5": {
+        "fractions": {
+          "EN_CHSH": 0.2564,
+          "EN_MINOR": 0.0769,
+          "EN_QO": 0.6667
+        },
+        "total": 39
+      },
+      "f86v6": {
+        "fractions": {
+          "EN_CHSH": 0.2424,
+          "EN_MINOR": 0.0455,
+          "EN_QO": 0.7121
+        },
+        "total": 66
+      },
+      "f94r": {
+        "fractions": {
+          "EN_CHSH": 0.2857,
+          "EN_MINOR": 0.1429,
+          "EN_QO": 0.5714
+        },
+        "total": 7
+      },
+      "f94v": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0,
+          "EN_QO": 1.0
+        },
+        "total": 5
+      },
+      "f95r1": {
+        "fractions": {
+          "EN_CHSH": 0.4091,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.5909
+        },
+        "total": 22
+      },
+      "f95r2": {
+        "fractions": {
+          "EN_CHSH": 0.25,
+          "EN_MINOR": 0.125,
+          "EN_QO": 0.625
+        },
+        "total": 16
+      },
+      "f95v1": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.1667,
+          "EN_QO": 0.5
+        },
+        "total": 6
+      },
+      "f95v2": {
+        "fractions": {
+          "EN_CHSH": 0.5,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.5
+        },
+        "total": 4
+      }
+    },
+    "first_en": {
+      "f103r": {
+        "fractions": {
+          "EN_CHSH": 0.28,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.62
+        },
+        "total_hazard": 78,
+        "total_first_en": 50
+      },
+      "f103v": {
+        "fractions": {
+          "EN_CHSH": 0.2281,
+          "EN_MINOR": 0.0175,
+          "EN_QO": 0.7544
+        },
+        "total_hazard": 84,
+        "total_first_en": 57
+      },
+      "f104r": {
+        "fractions": {
+          "EN_CHSH": 0.375,
+          "EN_MINOR": 0.0625,
+          "EN_QO": 0.5625
+        },
+        "total_hazard": 56,
+        "total_first_en": 32
+      },
+      "f104v": {
+        "fractions": {
+          "EN_CHSH": 0.2381,
+          "EN_MINOR": 0.2143,
+          "EN_QO": 0.5476
+        },
+        "total_hazard": 63,
+        "total_first_en": 42
+      },
+      "f105r": {
+        "fractions": {
+          "EN_CHSH": 0.2692,
+          "EN_MINOR": 0.1538,
+          "EN_QO": 0.5769
+        },
+        "total_hazard": 51,
+        "total_first_en": 26
+      },
+      "f105v": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.2667,
+          "EN_QO": 0.4
+        },
+        "total_hazard": 53,
+        "total_first_en": 15
+      },
+      "f106r": {
+        "fractions": {
+          "EN_CHSH": 0.1026,
+          "EN_MINOR": 0.2564,
+          "EN_QO": 0.641
+        },
+        "total_hazard": 64,
+        "total_first_en": 39
+      },
+      "f106v": {
+        "fractions": {
+          "EN_CHSH": 0.4286,
+          "EN_MINOR": 0.0714,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 72,
+        "total_first_en": 42
+      },
+      "f107r": {
+        "fractions": {
+          "EN_CHSH": 0.3111,
+          "EN_MINOR": 0.1333,
+          "EN_QO": 0.5556
+        },
+        "total_hazard": 73,
+        "total_first_en": 45
+      },
+      "f107v": {
+        "fractions": {
+          "EN_CHSH": 0.2432,
+          "EN_MINOR": 0.0541,
+          "EN_QO": 0.7027
+        },
+        "total_hazard": 65,
+        "total_first_en": 37
+      },
+      "f108r": {
+        "fractions": {
+          "EN_CHSH": 0.1277,
+          "EN_MINOR": 0.1489,
+          "EN_QO": 0.7234
+        },
+        "total_hazard": 82,
+        "total_first_en": 47
+      },
+      "f108v": {
+        "fractions": {
+          "EN_CHSH": 0.2222,
+          "EN_MINOR": 0.1296,
+          "EN_QO": 0.6481
+        },
+        "total_hazard": 79,
+        "total_first_en": 54
+      },
+      "f111r": {
+        "fractions": {
+          "EN_CHSH": 0.375,
+          "EN_MINOR": 0.1562,
+          "EN_QO": 0.4688
+        },
+        "total_hazard": 108,
+        "total_first_en": 64
+      },
+      "f111v": {
+        "fractions": {
+          "EN_CHSH": 0.1964,
+          "EN_MINOR": 0.125,
+          "EN_QO": 0.6786
+        },
+        "total_hazard": 94,
+        "total_first_en": 56
+      },
+      "f112r": {
+        "fractions": {
+          "EN_CHSH": 0.2632,
+          "EN_MINOR": 0.2105,
+          "EN_QO": 0.5263
+        },
+        "total_hazard": 61,
+        "total_first_en": 38
+      },
+      "f112v": {
+        "fractions": {
+          "EN_CHSH": 0.1463,
+          "EN_MINOR": 0.1463,
+          "EN_QO": 0.7073
+        },
+        "total_hazard": 59,
+        "total_first_en": 41
+      },
+      "f113r": {
+        "fractions": {
+          "EN_CHSH": 0.25,
+          "EN_MINOR": 0.225,
+          "EN_QO": 0.525
+        },
+        "total_hazard": 70,
+        "total_first_en": 40
+      },
+      "f113v": {
+        "fractions": {
+          "EN_CHSH": 0.0625,
+          "EN_MINOR": 0.1562,
+          "EN_QO": 0.7812
+        },
+        "total_hazard": 60,
+        "total_first_en": 32
+      },
+      "f114r": {
+        "fractions": {
+          "EN_CHSH": 0.3721,
+          "EN_MINOR": 0.1628,
+          "EN_QO": 0.4651
+        },
+        "total_hazard": 63,
+        "total_first_en": 43
+      },
+      "f114v": {
+        "fractions": {
+          "EN_CHSH": 0.0435,
+          "EN_MINOR": 0.3478,
+          "EN_QO": 0.6087
+        },
+        "total_hazard": 41,
+        "total_first_en": 23
+      },
+      "f115r": {
+        "fractions": {
+          "EN_CHSH": 0.2292,
+          "EN_MINOR": 0.0625,
+          "EN_QO": 0.7083
+        },
+        "total_hazard": 70,
+        "total_first_en": 48
+      },
+      "f115v": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.7
+        },
+        "total_hazard": 36,
+        "total_first_en": 20
+      },
+      "f116r": {
+        "fractions": {
+          "EN_CHSH": 0.2568,
+          "EN_MINOR": 0.1351,
+          "EN_QO": 0.6081
+        },
+        "total_hazard": 102,
+        "total_first_en": 74
+      },
+      "f26r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.9
+        },
+        "total_hazard": 16,
+        "total_first_en": 10
+      },
+      "f26v": {
+        "fractions": {
+          "EN_CHSH": 0.5,
+          "EN_MINOR": 0.1667,
+          "EN_QO": 0.3333
+        },
+        "total_hazard": 16,
+        "total_first_en": 12
+      },
+      "f31r": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.2,
+          "EN_QO": 0.6
+        },
+        "total_hazard": 20,
+        "total_first_en": 10
+      },
+      "f31v": {
+        "fractions": {
+          "EN_CHSH": 0.1111,
+          "EN_MINOR": 0.2222,
+          "EN_QO": 0.6667
+        },
+        "total_hazard": 17,
+        "total_first_en": 9
+      },
+      "f33r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.5,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 14,
+        "total_first_en": 8
+      },
+      "f33v": {
+        "fractions": {
+          "EN_CHSH": 0.5556,
+          "EN_MINOR": 0.0556,
+          "EN_QO": 0.3889
+        },
+        "total_hazard": 37,
+        "total_first_en": 18
+      },
+      "f34r": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.0556,
+          "EN_QO": 0.6111
+        },
+        "total_hazard": 27,
+        "total_first_en": 18
+      },
+      "f34v": {
+        "fractions": {
+          "EN_CHSH": 0.2632,
+          "EN_MINOR": 0.2105,
+          "EN_QO": 0.5263
+        },
+        "total_hazard": 24,
+        "total_first_en": 19
+      },
+      "f39r": {
+        "fractions": {
+          "EN_CHSH": 0.44,
+          "EN_MINOR": 0.16,
+          "EN_QO": 0.4
+        },
+        "total_hazard": 42,
+        "total_first_en": 25
+      },
+      "f39v": {
+        "fractions": {
+          "EN_CHSH": 0.16,
+          "EN_MINOR": 0.2,
+          "EN_QO": 0.64
+        },
+        "total_hazard": 40,
+        "total_first_en": 25
+      },
+      "f40r": {
+        "fractions": {
+          "EN_CHSH": 0.1429,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.8571
+        },
+        "total_hazard": 20,
+        "total_first_en": 7
+      },
+      "f40v": {
+        "fractions": {
+          "EN_CHSH": 0.25,
+          "EN_MINOR": 0.25,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 17,
+        "total_first_en": 8
+      },
+      "f41r": {
+        "fractions": {
+          "EN_CHSH": 0.2857,
+          "EN_MINOR": 0.1429,
+          "EN_QO": 0.5714
+        },
+        "total_hazard": 13,
+        "total_first_en": 7
+      },
+      "f41v": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.4,
+          "EN_QO": 0.4
+        },
+        "total_hazard": 10,
+        "total_first_en": 5
+      },
+      "f43r": {
+        "fractions": {
+          "EN_CHSH": 0.4167,
+          "EN_MINOR": 0.1667,
+          "EN_QO": 0.4167
+        },
+        "total_hazard": 31,
+        "total_first_en": 12
+      },
+      "f43v": {
+        "fractions": {
+          "EN_CHSH": 0.4,
+          "EN_MINOR": 0.1,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 34,
+        "total_first_en": 20
+      },
+      "f46r": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.4,
+          "EN_QO": 0.4
+        },
+        "total_hazard": 32,
+        "total_first_en": 25
+      },
+      "f46v": {
+        "fractions": {
+          "EN_CHSH": 0.4167,
+          "EN_MINOR": 0.0833,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 24,
+        "total_first_en": 12
+      },
+      "f48r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0,
+          "EN_QO": 1.0
+        },
+        "total_hazard": 11,
+        "total_first_en": 1
+      },
+      "f48v": {
+        "fractions": {
+          "EN_CHSH": 0.7273,
+          "EN_MINOR": 0.0909,
+          "EN_QO": 0.1818
+        },
+        "total_hazard": 26,
+        "total_first_en": 11
+      },
+      "f50r": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0,
+          "EN_QO": 1.0
+        },
+        "total_hazard": 10,
+        "total_first_en": 3
+      },
+      "f50v": {
+        "fractions": {
+          "EN_CHSH": 0.1667,
+          "EN_MINOR": 0.1667,
+          "EN_QO": 0.6667
+        },
+        "total_hazard": 10,
+        "total_first_en": 6
+      },
+      "f55r": {
+        "fractions": {
+          "EN_CHSH": 0.2667,
+          "EN_MINOR": 0.0667,
+          "EN_QO": 0.6667
+        },
+        "total_hazard": 30,
+        "total_first_en": 15
+      },
+      "f55v": {
+        "fractions": {
+          "EN_CHSH": 0.5,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 22,
+        "total_first_en": 4
+      },
+      "f57r": {
+        "fractions": {
+          "EN_CHSH": 0.4,
+          "EN_MINOR": 0.2,
+          "EN_QO": 0.4
+        },
+        "total_hazard": 11,
+        "total_first_en": 5
+      },
+      "f66r": {
+        "fractions": {
+          "EN_CHSH": 0.2979,
+          "EN_MINOR": 0.1489,
+          "EN_QO": 0.5532
+        },
+        "total_hazard": 60,
+        "total_first_en": 47
+      },
+      "f66v": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.4444,
+          "EN_QO": 0.2222
+        },
+        "total_hazard": 15,
+        "total_first_en": 9
+      },
+      "f75r": {
+        "fractions": {
+          "EN_CHSH": 0.3846,
+          "EN_MINOR": 0.0462,
+          "EN_QO": 0.5692
+        },
+        "total_hazard": 96,
+        "total_first_en": 65
+      },
+      "f75v": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.075,
+          "EN_QO": 0.725
+        },
+        "total_hazard": 53,
+        "total_first_en": 40
+      },
+      "f76r": {
+        "fractions": {
+          "EN_CHSH": 0.5,
+          "EN_MINOR": 0.0784,
+          "EN_QO": 0.4216
+        },
+        "total_hazard": 133,
+        "total_first_en": 102
+      },
+      "f76v": {
+        "fractions": {
+          "EN_CHSH": 0.2703,
+          "EN_MINOR": 0.027,
+          "EN_QO": 0.7027
+        },
+        "total_hazard": 65,
+        "total_first_en": 37
+      },
+      "f77r": {
+        "fractions": {
+          "EN_CHSH": 0.2222,
+          "EN_MINOR": 0.1111,
+          "EN_QO": 0.6667
+        },
+        "total_hazard": 45,
+        "total_first_en": 36
+      },
+      "f77v": {
+        "fractions": {
+          "EN_CHSH": 0.1429,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.8571
+        },
+        "total_hazard": 61,
+        "total_first_en": 42
+      },
+      "f78r": {
+        "fractions": {
+          "EN_CHSH": 0.1923,
+          "EN_MINOR": 0.1154,
+          "EN_QO": 0.6923
+        },
+        "total_hazard": 54,
+        "total_first_en": 26
+      },
+      "f78v": {
+        "fractions": {
+          "EN_CHSH": 0.2727,
+          "EN_MINOR": 0.0303,
+          "EN_QO": 0.697
+        },
+        "total_hazard": 55,
+        "total_first_en": 33
+      },
+      "f79r": {
+        "fractions": {
+          "EN_CHSH": 0.2157,
+          "EN_MINOR": 0.1373,
+          "EN_QO": 0.6471
+        },
+        "total_hazard": 67,
+        "total_first_en": 51
+      },
+      "f79v": {
+        "fractions": {
+          "EN_CHSH": 0.16,
+          "EN_MINOR": 0.04,
+          "EN_QO": 0.8
+        },
+        "total_hazard": 40,
+        "total_first_en": 25
+      },
+      "f80r": {
+        "fractions": {
+          "EN_CHSH": 0.1579,
+          "EN_MINOR": 0.1316,
+          "EN_QO": 0.7105
+        },
+        "total_hazard": 48,
+        "total_first_en": 38
+      },
+      "f80v": {
+        "fractions": {
+          "EN_CHSH": 0.2683,
+          "EN_MINOR": 0.122,
+          "EN_QO": 0.6098
+        },
+        "total_hazard": 61,
+        "total_first_en": 41
+      },
+      "f81r": {
+        "fractions": {
+          "EN_CHSH": 0.3043,
+          "EN_MINOR": 0.087,
+          "EN_QO": 0.6087
+        },
+        "total_hazard": 38,
+        "total_first_en": 23
+      },
+      "f81v": {
+        "fractions": {
+          "EN_CHSH": 0.3548,
+          "EN_MINOR": 0.0968,
+          "EN_QO": 0.5484
+        },
+        "total_hazard": 40,
+        "total_first_en": 31
+      },
+      "f82r": {
+        "fractions": {
+          "EN_CHSH": 0.1579,
+          "EN_MINOR": 0.1053,
+          "EN_QO": 0.7368
+        },
+        "total_hazard": 32,
+        "total_first_en": 19
+      },
+      "f82v": {
+        "fractions": {
+          "EN_CHSH": 0.2381,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.7619
+        },
+        "total_hazard": 54,
+        "total_first_en": 42
+      },
+      "f83r": {
+        "fractions": {
+          "EN_CHSH": 0.3824,
+          "EN_MINOR": 0.0882,
+          "EN_QO": 0.5294
+        },
+        "total_hazard": 55,
+        "total_first_en": 34
+      },
+      "f83v": {
+        "fractions": {
+          "EN_CHSH": 0.2703,
+          "EN_MINOR": 0.0541,
+          "EN_QO": 0.6757
+        },
+        "total_hazard": 47,
+        "total_first_en": 37
+      },
+      "f84r": {
+        "fractions": {
+          "EN_CHSH": 0.2941,
+          "EN_MINOR": 0.0392,
+          "EN_QO": 0.6667
+        },
+        "total_hazard": 72,
+        "total_first_en": 51
+      },
+      "f84v": {
+        "fractions": {
+          "EN_CHSH": 0.4615,
+          "EN_MINOR": 0.0256,
+          "EN_QO": 0.5128
+        },
+        "total_hazard": 64,
+        "total_first_en": 39
+      },
+      "f85r1": {
+        "fractions": {
+          "EN_CHSH": 0.381,
+          "EN_MINOR": 0.1429,
+          "EN_QO": 0.4762
+        },
+        "total_hazard": 54,
+        "total_first_en": 21
+      },
+      "f85r2": {
+        "fractions": {
+          "EN_CHSH": 0.3333,
+          "EN_MINOR": 0.0833,
+          "EN_QO": 0.5833
+        },
+        "total_hazard": 34,
+        "total_first_en": 12
+      },
+      "f86v3": {
+        "fractions": {
+          "EN_CHSH": 0.4706,
+          "EN_MINOR": 0.0294,
+          "EN_QO": 0.5
+        },
+        "total_hazard": 48,
+        "total_first_en": 34
+      },
+      "f86v4": {
+        "fractions": {
+          "EN_CHSH": 0.0968,
+          "EN_MINOR": 0.3871,
+          "EN_QO": 0.5161
+        },
+        "total_hazard": 38,
+        "total_first_en": 31
+      },
+      "f86v5": {
+        "fractions": {
+          "EN_CHSH": 0.2326,
+          "EN_MINOR": 0.093,
+          "EN_QO": 0.6744
+        },
+        "total_hazard": 71,
+        "total_first_en": 43
+      },
+      "f86v6": {
+        "fractions": {
+          "EN_CHSH": 0.3269,
+          "EN_MINOR": 0.0577,
+          "EN_QO": 0.6154
+        },
+        "total_hazard": 85,
+        "total_first_en": 52
+      },
+      "f94r": {
+        "fractions": {
+          "EN_CHSH": 0.2857,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.7143
+        },
+        "total_hazard": 18,
+        "total_first_en": 7
+      },
+      "f94v": {
+        "fractions": {
+          "EN_CHSH": 0.0,
+          "EN_MINOR": 0.0,
+          "EN_QO": 1.0
+        },
+        "total_hazard": 17,
+        "total_first_en": 8
+      },
+      "f95r1": {
+        "fractions": {
+          "EN_CHSH": 0.4615,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.5385
+        },
+        "total_hazard": 20,
+        "total_first_en": 13
+      },
+      "f95r2": {
+        "fractions": {
+          "EN_CHSH": 0.2727,
+          "EN_MINOR": 0.0909,
+          "EN_QO": 0.6364
+        },
+        "total_hazard": 12,
+        "total_first_en": 11
+      },
+      "f95v1": {
+        "fractions": {
+          "EN_CHSH": 0.2222,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.7778
+        },
+        "total_hazard": 19,
+        "total_first_en": 9
+      },
+      "f95v2": {
+        "fractions": {
+          "EN_CHSH": 0.2,
+          "EN_MINOR": 0.0,
+          "EN_QO": 0.8
+        },
+        "total_hazard": 14,
+        "total_first_en": 5
+      }
+    },
+    "cc_recovery": {
+      "f103r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.8,
+          "CC_OL_D": 0.2
+        },
+        "total": 5
+      },
+      "f103v": {
+        "fractions": {
+          "CC_DAIIN": 0.1538,
+          "CC_OL": 0.4615,
+          "CC_OL_D": 0.3846
+        },
+        "total": 13
+      },
+      "f104r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f104v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f105r": {
+        "fractions": {
+          "CC_DAIIN": 0.6,
+          "CC_OL": 0.2,
+          "CC_OL_D": 0.2
+        },
+        "total": 5
+      },
+      "f105v": {
+        "fractions": {
+          "CC_DAIIN": 0.8571,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.1429
+        },
+        "total": 7
+      },
+      "f106r": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.25,
+          "CC_OL_D": 0.25
+        },
+        "total": 4
+      },
+      "f106v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.75,
+          "CC_OL_D": 0.25
+        },
+        "total": 4
+      },
+      "f107r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.5
+        },
+        "total": 2
+      },
+      "f107v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.1667,
+          "CC_OL_D": 0.8333
+        },
+        "total": 6
+      },
+      "f108r": {
+        "fractions": {
+          "CC_DAIIN": 0.3333,
+          "CC_OL": 0.6667,
+          "CC_OL_D": 0.0
+        },
+        "total": 3
+      },
+      "f108v": {
+        "fractions": {
+          "CC_DAIIN": 0.4286,
+          "CC_OL": 0.2857,
+          "CC_OL_D": 0.2857
+        },
+        "total": 7
+      },
+      "f111r": {
+        "fractions": {
+          "CC_DAIIN": 0.625,
+          "CC_OL": 0.125,
+          "CC_OL_D": 0.25
+        },
+        "total": 8
+      },
+      "f111v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.6,
+          "CC_OL_D": 0.4
+        },
+        "total": 5
+      },
+      "f112r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.5
+        },
+        "total": 2
+      },
+      "f112v": {
+        "fractions": {
+          "CC_DAIIN": 0.375,
+          "CC_OL": 0.125,
+          "CC_OL_D": 0.5
+        },
+        "total": 8
+      },
+      "f113r": {
+        "fractions": {
+          "CC_DAIIN": 0.2857,
+          "CC_OL": 0.5714,
+          "CC_OL_D": 0.1429
+        },
+        "total": 7
+      },
+      "f113v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.4,
+          "CC_OL_D": 0.6
+        },
+        "total": 5
+      },
+      "f114r": {
+        "fractions": {
+          "CC_DAIIN": 0.6,
+          "CC_OL": 0.2,
+          "CC_OL_D": 0.2
+        },
+        "total": 5
+      },
+      "f114v": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.25,
+          "CC_OL_D": 0.25
+        },
+        "total": 4
+      },
+      "f115r": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.25,
+          "CC_OL_D": 0.25
+        },
+        "total": 4
+      },
+      "f115v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 0
+      },
+      "f116r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.5714,
+          "CC_OL_D": 0.4286
+        },
+        "total": 7
+      },
+      "f26r": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f26v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 0
+      },
+      "f31r": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f31v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 0
+      },
+      "f33r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f33v": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f34r": {
+        "fractions": {
+          "CC_DAIIN": 0.3333,
+          "CC_OL": 0.6667,
+          "CC_OL_D": 0.0
+        },
+        "total": 3
+      },
+      "f34v": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f39r": {
+        "fractions": {
+          "CC_DAIIN": 0.25,
+          "CC_OL": 0.25,
+          "CC_OL_D": 0.5
+        },
+        "total": 4
+      },
+      "f39v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.5
+        },
+        "total": 2
+      },
+      "f40r": {
+        "fractions": {
+          "CC_DAIIN": 0.3333,
+          "CC_OL": 0.3333,
+          "CC_OL_D": 0.3333
+        },
+        "total": 3
+      },
+      "f40v": {
+        "fractions": {
+          "CC_DAIIN": 0.6667,
+          "CC_OL": 0.3333,
+          "CC_OL_D": 0.0
+        },
+        "total": 3
+      },
+      "f41r": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f41v": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f43r": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f43v": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f46r": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 3
+      },
+      "f46v": {
+        "fractions": {
+          "CC_DAIIN": 0.8,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.2
+        },
+        "total": 5
+      },
+      "f48r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 1.0
+        },
+        "total": 1
+      },
+      "f48v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f50r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 1.0
+        },
+        "total": 1
+      },
+      "f50v": {
+        "fractions": {
+          "CC_DAIIN": 0.3333,
+          "CC_OL": 0.3333,
+          "CC_OL_D": 0.3333
+        },
+        "total": 3
+      },
+      "f55r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f55v": {
+        "fractions": {
+          "CC_DAIIN": 0.3333,
+          "CC_OL": 0.6667,
+          "CC_OL_D": 0.0
+        },
+        "total": 3
+      },
+      "f57r": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f66r": {
+        "fractions": {
+          "CC_DAIIN": 0.4444,
+          "CC_OL": 0.5556,
+          "CC_OL_D": 0.0
+        },
+        "total": 9
+      },
+      "f66v": {
+        "fractions": {
+          "CC_DAIIN": 1.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f75r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.7692,
+          "CC_OL_D": 0.2308
+        },
+        "total": 13
+      },
+      "f75v": {
+        "fractions": {
+          "CC_DAIIN": 0.15,
+          "CC_OL": 0.45,
+          "CC_OL_D": 0.4
+        },
+        "total": 20
+      },
+      "f76r": {
+        "fractions": {
+          "CC_DAIIN": 0.125,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.375
+        },
+        "total": 8
+      },
+      "f76v": {
+        "fractions": {
+          "CC_DAIIN": 0.4286,
+          "CC_OL": 0.1429,
+          "CC_OL_D": 0.4286
+        },
+        "total": 7
+      },
+      "f77r": {
+        "fractions": {
+          "CC_DAIIN": 0.1667,
+          "CC_OL": 0.3333,
+          "CC_OL_D": 0.5
+        },
+        "total": 6
+      },
+      "f77v": {
+        "fractions": {
+          "CC_DAIIN": 0.2222,
+          "CC_OL": 0.6667,
+          "CC_OL_D": 0.1111
+        },
+        "total": 9
+      },
+      "f78r": {
+        "fractions": {
+          "CC_DAIIN": 0.2,
+          "CC_OL": 0.4,
+          "CC_OL_D": 0.4
+        },
+        "total": 10
+      },
+      "f78v": {
+        "fractions": {
+          "CC_DAIIN": 0.1,
+          "CC_OL": 0.6,
+          "CC_OL_D": 0.3
+        },
+        "total": 20
+      },
+      "f79r": {
+        "fractions": {
+          "CC_DAIIN": 0.1,
+          "CC_OL": 0.8,
+          "CC_OL_D": 0.1
+        },
+        "total": 20
+      },
+      "f79v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.6667,
+          "CC_OL_D": 0.3333
+        },
+        "total": 9
+      },
+      "f80r": {
+        "fractions": {
+          "CC_DAIIN": 0.1818,
+          "CC_OL": 0.6364,
+          "CC_OL_D": 0.1818
+        },
+        "total": 11
+      },
+      "f80v": {
+        "fractions": {
+          "CC_DAIIN": 0.0625,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.4375
+        },
+        "total": 16
+      },
+      "f81r": {
+        "fractions": {
+          "CC_DAIIN": 0.0714,
+          "CC_OL": 0.6429,
+          "CC_OL_D": 0.2857
+        },
+        "total": 14
+      },
+      "f81v": {
+        "fractions": {
+          "CC_DAIIN": 0.1429,
+          "CC_OL": 0.7143,
+          "CC_OL_D": 0.1429
+        },
+        "total": 14
+      },
+      "f82r": {
+        "fractions": {
+          "CC_DAIIN": 0.5,
+          "CC_OL": 0.0,
+          "CC_OL_D": 0.5
+        },
+        "total": 2
+      },
+      "f82v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.375,
+          "CC_OL_D": 0.625
+        },
+        "total": 8
+      },
+      "f83r": {
+        "fractions": {
+          "CC_DAIIN": 0.6,
+          "CC_OL": 0.4,
+          "CC_OL_D": 0.0
+        },
+        "total": 5
+      },
+      "f83v": {
+        "fractions": {
+          "CC_DAIIN": 0.2,
+          "CC_OL": 0.4,
+          "CC_OL_D": 0.4
+        },
+        "total": 5
+      },
+      "f84r": {
+        "fractions": {
+          "CC_DAIIN": 0.3125,
+          "CC_OL": 0.375,
+          "CC_OL_D": 0.3125
+        },
+        "total": 16
+      },
+      "f84v": {
+        "fractions": {
+          "CC_DAIIN": 0.2941,
+          "CC_OL": 0.3529,
+          "CC_OL_D": 0.3529
+        },
+        "total": 17
+      },
+      "f85r1": {
+        "fractions": {
+          "CC_DAIIN": 0.1667,
+          "CC_OL": 0.5,
+          "CC_OL_D": 0.3333
+        },
+        "total": 6
+      },
+      "f85r2": {
+        "fractions": {
+          "CC_DAIIN": 0.25,
+          "CC_OL": 0.375,
+          "CC_OL_D": 0.375
+        },
+        "total": 8
+      },
+      "f86v3": {
+        "fractions": {
+          "CC_DAIIN": 0.8,
+          "CC_OL": 0.2,
+          "CC_OL_D": 0.0
+        },
+        "total": 5
+      },
+      "f86v4": {
+        "fractions": {
+          "CC_DAIIN": 0.2727,
+          "CC_OL": 0.6364,
+          "CC_OL_D": 0.0909
+        },
+        "total": 11
+      },
+      "f86v5": {
+        "fractions": {
+          "CC_DAIIN": 0.2,
+          "CC_OL": 0.8,
+          "CC_OL_D": 0.0
+        },
+        "total": 5
+      },
+      "f86v6": {
+        "fractions": {
+          "CC_DAIIN": 0.0769,
+          "CC_OL": 0.5385,
+          "CC_OL_D": 0.3846
+        },
+        "total": 13
+      },
+      "f94r": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 1.0
+        },
+        "total": 2
+      },
+      "f94v": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f95r1": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.3333,
+          "CC_OL_D": 0.6667
+        },
+        "total": 3
+      },
+      "f95r2": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 2
+      },
+      "f95v1": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 1.0,
+          "CC_OL_D": 0.0
+        },
+        "total": 1
+      },
+      "f95v2": {
+        "fractions": {
+          "CC_DAIIN": 0.0,
+          "CC_OL": 0.0,
+          "CC_OL_D": 1.0
+        },
+        "total": 2
+      }
+    }
+  }
+}

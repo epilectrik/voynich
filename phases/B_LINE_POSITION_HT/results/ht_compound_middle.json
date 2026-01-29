@@ -1,0 +1,129 @@
+{
+  "line1_folio_unique": {
+    "count": 99,
+    "mean_length": 4.626262626262626,
+    "contains_common_pct": 91.91919191919192,
+    "contains_core_pct": 84.84848484848484,
+    "fully_decomposable_pct": 39.39393939393939
+  },
+  "working_folio_unique": {
+    "count": 759,
+    "contains_common_pct": 93.67588932806323,
+    "contains_core_pct": 88.01054018445323
+  },
+  "reference": {
+    "common_mean_length": 2.710144927536232,
+    "core_mean_length": 2.28
+  },
+  "decomposition_examples": [
+    [
+      "pchet",
+      [
+        "pch",
+        "et"
+      ]
+    ],
+    [
+      "pchch",
+      [
+        "pch",
+        "ch"
+      ]
+    ],
+    [
+      "eesod",
+      [
+        "ees",
+        "od"
+      ]
+    ],
+    [
+      "echypc",
+      [
+        "ec",
+        "hy",
+        "pc"
+      ]
+    ],
+    [
+      "epakeo",
+      [
+        "ep",
+        "ak",
+        "eo"
+      ]
+    ],
+    [
+      "ldak",
+      [
+        "ld",
+        "ak"
+      ]
+    ],
+    [
+      "odal",
+      [
+        "od",
+        "al"
+      ]
+    ],
+    [
+      "eykeeo",
+      [
+        "eyk",
+        "eeo"
+      ]
+    ],
+    [
+      "kake",
+      [
+        "ka",
+        "ke"
+      ]
+    ],
+    [
+      "alkc",
+      [
+        "al",
+        "kc"
+      ]
+    ],
+    [
+      "opcs",
+      [
+        "op",
+        "cs"
+      ]
+    ],
+    [
+      "chdldlo",
+      [
+        "chd",
+        "ld",
+        "lo"
+      ]
+    ],
+    [
+      "pcheeo",
+      [
+        "pche",
+        "eo"
+      ]
+    ],
+    [
+      "opol",
+      [
+        "op",
+        "ol"
+      ]
+    ],
+    [
+      "opoee",
+      [
+        "op",
+        "oee"
+      ]
+    ]
+  ],
+  "verdict": "COMPOUND_CONFIRMED"
+}

@@ -1,0 +1,27 @@
+{
+  "global_stats": {
+    "total_middles_in_b": 1339,
+    "folio_unique_middles": 858,
+    "folio_unique_pct": 64.07766990291262
+  },
+  "line1_ht": {
+    "total_middles": 456,
+    "folio_unique": 99,
+    "folio_unique_pct": 21.710526315789473
+  },
+  "working_ht": {
+    "total_middles": 6586,
+    "folio_unique": 769,
+    "folio_unique_pct": 11.676283024597632
+  },
+  "comparison": {
+    "delta_pp": 10.03424329119184,
+    "chi2": 38.811199741504694,
+    "p_value": 4.668416295181841e-10,
+    "n_folios_analyzed": 74,
+    "n_positive": 48,
+    "n_negative": 25
+  },
+  "verdict": "FOLIO_UNIQUE_ELEVATED",
+  "explanation": "Line-1 HT uses significantly more folio-unique MIDDLEs (+10.0pp, p=0.000000)"
+}

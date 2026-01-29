@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "total": 10807,
+    "forbidden": 562,
+    "rate": 0.05200333117423892
+  },
+  "by_role": {
+    "CC": {
+      "total": 700,
+      "forbidden": 0,
+      "rate": 0.0,
+      "ratio": 0.0
+    },
+    "EN": {
+      "total": 5092,
+      "forbidden": 561,
+      "rate": 0.11017282010997644,
+      "ratio": 2.1185723610827676
+    },
+    "FL": {
+      "total": 635,
+      "forbidden": 1,
+      "rate": 0.0015748031496062992,
+      "ratio": 0.030282736010311877
+    },
+    "FQ": {
+      "total": 1926,
+      "forbidden": 0,
+      "rate": 0.0,
+      "ratio": 0.0
+    },
+    "AX": {
+      "total": 2454,
+      "forbidden": 0,
+      "rate": 0.0,
+      "ratio": 0.0
+    }
+  }
+}

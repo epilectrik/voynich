@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "phase": "HAZARD_CIRCUIT_TOKEN_RESOLUTION",
+    "script": "hazard_circuit_token_mapping",
+    "timestamp": "2026-01-26T17:15:28.675429",
+    "total_forbidden": 17,
+    "total_b_tokens": 23096
+  },
+  "section1_classification": {
+    "classified_pairs": [
+      {
+        "id": 1,
+        "source": "shey",
+        "target": "aiin",
+        "source_class": 31,
+        "target_class": 9,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CONN",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 2,
+        "source": "shey",
+        "target": "al",
+        "source_class": 31,
+        "target_class": 7,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FL_HAZ",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 3,
+        "source": "shey",
+        "target": "c",
+        "source_class": 31,
+        "target_class": null,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 4,
+        "source": "chol",
+        "target": "r",
+        "source_class": 8,
+        "target_class": 23,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CLOSER",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 5,
+        "source": "chedy",
+        "target": "ee",
+        "source_class": 8,
+        "target_class": null,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 6,
+        "source": "dy",
+        "target": "aiin",
+        "source_class": 23,
+        "target_class": 9,
+        "source_subgroup": "FQ_CLOSER",
+        "target_subgroup": "FQ_CONN",
+        "direction": "CROSS_GROUP"
+      },
+      {
+        "id": 7,
+        "source": "dy",
+        "target": "chey",
+        "source_class": 23,
+        "target_class": 31,
+        "source_subgroup": "FQ_CLOSER",
+        "target_subgroup": "EN_CHSH",
+        "direction": "FORWARD"
+      },
+      {
+        "id": 8,
+        "source": "l",
+        "target": "chol",
+        "source_class": 23,
+        "target_class": 8,
+        "source_subgroup": "FQ_CLOSER",
+        "target_subgroup": "EN_CHSH",
+        "direction": "FORWARD"
+      },
+      {
+        "id": 9,
+        "source": "or",
+        "target": "dal",
+        "source_class": 9,
+        "target_class": 30,
+        "source_subgroup": "FQ_CONN",
+        "target_subgroup": "FL_HAZ",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 10,
+        "source": "chey",
+        "target": "chedy",
+        "source_class": 31,
+        "target_class": 8,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "EN_CHSH",
+        "direction": "SELF_LOOP"
+      },
+      {
+        "id": 11,
+        "source": "chey",
+        "target": "shedy",
+        "source_class": 31,
+        "target_class": 8,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "EN_CHSH",
+        "direction": "SELF_LOOP"
+      },
+      {
+        "id": 12,
+        "source": "ar",
+        "target": "dal",
+        "source_class": 7,
+        "target_class": 30,
+        "source_subgroup": "FL_HAZ",
+        "target_subgroup": "FL_HAZ",
+        "direction": "SELF_LOOP"
+      },
+      {
+        "id": 13,
+        "source": "c",
+        "target": "ee",
+        "source_class": null,
+        "target_class": null,
+        "source_subgroup": "UNCLASSIFIED",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 14,
+        "source": "he",
+        "target": "t",
+        "source_class": null,
+        "target_class": null,
+        "source_subgroup": "UNCLASSIFIED",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 15,
+        "source": "he",
+        "target": "or",
+        "source_class": null,
+        "target_class": 9,
+        "source_subgroup": "UNCLASSIFIED",
+        "target_subgroup": "FQ_CONN",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 16,
+        "source": "shedy",
+        "target": "aiin",
+        "source_class": 8,
+        "target_class": 9,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CONN",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 17,
+        "source": "shedy",
+        "target": "o",
+        "source_class": 8,
+        "target_class": 9,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CONN",
+        "direction": "REVERSE"
+      }
+    ],
+    "unclassified_tokens": [
+      "c",
+      "ee",
+      "he",
+      "t"
+    ]
+  },
+  "section2_direction_analysis": {
+    "forbidden_directions": {
+      "1": "REVERSE",
+      "2": "REVERSE",
+      "3": "UNCLASSIFIABLE",
+      "4": "REVERSE",
+      "5": "UNCLASSIFIABLE",
+      "6": "CROSS_GROUP",
+      "7": "FORWARD",
+      "8": "FORWARD",
+      "9": "REVERSE",
+      "10": "SELF_LOOP",
+      "11": "SELF_LOOP",
+      "12": "SELF_LOOP",
+      "13": "UNCLASSIFIABLE",
+      "14": "UNCLASSIFIABLE",
+      "15": "UNCLASSIFIABLE",
+      "16": "REVERSE",
+      "17": "REVERSE"
+    },
+    "direction_counts": {
+      "forbidden": {
+        "REVERSE": 6,
+        "UNCLASSIFIABLE": 5,
+        "CROSS_GROUP": 1,
+        "FORWARD": 2,
+        "SELF_LOOP": 3
+      },
+      "all_hazard_volume": {
+        "FORWARD": 241,
+        "CROSS_GROUP": 44,
+        "SELF_LOOP": 219,
+        "REVERSE": 145
+      },
+      "observed_unique_pairs": {
+        "FORWARD": 102,
+        "CROSS_GROUP": 13,
+        "SELF_LOOP": 73,
+        "REVERSE": 77
+      }
+    },
+    "fisher_test": {
+      "table": [
+        [
+          6,
+          6
+        ],
+        [
+          77,
+          188
+        ]
+      ],
+      "odds_ratio": 2.442,
+      "p_value": 0.193051
+    },
+    "classified_pairs": [
+      {
+        "id": 1,
+        "source": "shey",
+        "target": "aiin",
+        "source_class": 31,
+        "target_class": 9,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CONN",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 2,
+        "source": "shey",
+        "target": "al",
+        "source_class": 31,
+        "target_class": 7,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FL_HAZ",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 3,
+        "source": "shey",
+        "target": "c",
+        "source_class": 31,
+        "target_class": null,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 4,
+        "source": "chol",
+        "target": "r",
+        "source_class": 8,
+        "target_class": 23,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CLOSER",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 5,
+        "source": "chedy",
+        "target": "ee",
+        "source_class": 8,
+        "target_class": null,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 6,
+        "source": "dy",
+        "target": "aiin",
+        "source_class": 23,
+        "target_class": 9,
+        "source_subgroup": "FQ_CLOSER",
+        "target_subgroup": "FQ_CONN",
+        "direction": "CROSS_GROUP"
+      },
+      {
+        "id": 7,
+        "source": "dy",
+        "target": "chey",
+        "source_class": 23,
+        "target_class": 31,
+        "source_subgroup": "FQ_CLOSER",
+        "target_subgroup": "EN_CHSH",
+        "direction": "FORWARD"
+      },
+      {
+        "id": 8,
+        "source": "l",
+        "target": "chol",
+        "source_class": 23,
+        "target_class": 8,
+        "source_subgroup": "FQ_CLOSER",
+        "target_subgroup": "EN_CHSH",
+        "direction": "FORWARD"
+      },
+      {
+        "id": 9,
+        "source": "or",
+        "target": "dal",
+        "source_class": 9,
+        "target_class": 30,
+        "source_subgroup": "FQ_CONN",
+        "target_subgroup": "FL_HAZ",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 10,
+        "source": "chey",
+        "target": "chedy",
+        "source_class": 31,
+        "target_class": 8,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "EN_CHSH",
+        "direction": "SELF_LOOP"
+      },
+      {
+        "id": 11,
+        "source": "chey",
+        "target": "shedy",
+        "source_class": 31,
+        "target_class": 8,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "EN_CHSH",
+        "direction": "SELF_LOOP"
+      },
+      {
+        "id": 12,
+        "source": "ar",
+        "target": "dal",
+        "source_class": 7,
+        "target_class": 30,
+        "source_subgroup": "FL_HAZ",
+        "target_subgroup": "FL_HAZ",
+        "direction": "SELF_LOOP"
+      },
+      {
+        "id": 13,
+        "source": "c",
+        "target": "ee",
+        "source_class": null,
+        "target_class": null,
+        "source_subgroup": "UNCLASSIFIED",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 14,
+        "source": "he",
+        "target": "t",
+        "source_class": null,
+        "target_class": null,
+        "source_subgroup": "UNCLASSIFIED",
+        "target_subgroup": "UNCLASSIFIED",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 15,
+        "source": "he",
+        "target": "or",
+        "source_class": null,
+        "target_class": 9,
+        "source_subgroup": "UNCLASSIFIED",
+        "target_subgroup": "FQ_CONN",
+        "direction": "UNCLASSIFIABLE"
+      },
+      {
+        "id": 16,
+        "source": "shedy",
+        "target": "aiin",
+        "source_class": 8,
+        "target_class": 9,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CONN",
+        "direction": "REVERSE"
+      },
+      {
+        "id": 17,
+        "source": "shedy",
+        "target": "o",
+        "source_class": 8,
+        "target_class": 9,
+        "source_subgroup": "EN_CHSH",
+        "target_subgroup": "FQ_CONN",
+        "direction": "REVERSE"
+      }
+    ]
+  },
+  "section3_traffic_volume": {
+    "direction_volume": {
+      "FORWARD": 241,
+      "REVERSE": 145,
+      "SELF_LOOP": 219,
+      "CROSS_GROUP": 44
+    },
+    "direction_unique_pairs": {
+      "FORWARD": 102,
+      "REVERSE": 77,
+      "SELF_LOOP": 73,
+      "CROSS_GROUP": 13
+    },
+    "sgpair_detail": {
+      "FL_HAZ->FQ_CLOSER": {
+        "volume": 26,
+        "unique": 16,
+        "direction": "FORWARD"
+      },
+      "FQ_CLOSER->FQ_CONN": {
+        "volume": 28,
+        "unique": 4,
+        "direction": "CROSS_GROUP"
+      },
+      "FQ_CONN->EN_CHSH": {
+        "volume": 53,
+        "unique": 20,
+        "direction": "FORWARD"
+      },
+      "FQ_CONN->FQ_CONN": {
+        "volume": 54,
+        "unique": 5,
+        "direction": "SELF_LOOP"
+      },
+      "FL_HAZ->EN_CHSH": {
+        "volume": 96,
+        "unique": 42,
+        "direction": "FORWARD"
+      },
+      "EN_CHSH->FL_HAZ": {
+        "volume": 51,
+        "unique": 32,
+        "direction": "REVERSE"
+      },
+      "FQ_CLOSER->FL_HAZ": {
+        "volume": 20,
+        "unique": 11,
+        "direction": "REVERSE"
+      },
+      "FL_HAZ->FL_HAZ": {
+        "volume": 72,
+        "unique": 22,
+        "direction": "SELF_LOOP"
+      },
+      "FQ_CONN->FQ_CLOSER": {
+        "volume": 16,
+        "unique": 9,
+        "direction": "CROSS_GROUP"
+      },
+      "FQ_CLOSER->EN_CHSH": {
+        "volume": 17,
+        "unique": 14,
+        "direction": "FORWARD"
+      },
+      "EN_CHSH->EN_CHSH": {
+        "volume": 88,
+        "unique": 42,
+        "direction": "SELF_LOOP"
+      },
+      "FL_HAZ->FQ_CONN": {
+        "volume": 49,
+        "unique": 10,
+        "direction": "FORWARD"
+      },
+      "FQ_CLOSER->FQ_CLOSER": {
+        "volume": 5,
+        "unique": 4,
+        "direction": "SELF_LOOP"
+      },
+      "EN_CHSH->FQ_CLOSER": {
+        "volume": 19,
+        "unique": 13,
+        "direction": "REVERSE"
+      },
+      "FQ_CONN->FL_HAZ": {
+        "volume": 31,
+        "unique": 8,
+        "direction": "REVERSE"
+      },
+      "EN_CHSH->FQ_CONN": {
+        "volume": 24,
+        "unique": 13,
+        "direction": "REVERSE"
+      }
+    }
+  },
+  "section4_unclassified": {
+    "c": {
+      "corpus_count": 2,
+      "morph": {
+        "articulator": null,
+        "prefix": null,
+        "middle": "c",
+        "suffix": null
+      },
+      "length": 1,
+      "is_kernel_adjacent": false,
+      "top_neighbors": {
+        "prev:EN_QO": 1,
+        "next:EN_QO": 1
+      }
+    },
+    "ee": {
+      "corpus_count": 0,
+      "morph": {
+        "articulator": null,
+        "prefix": null,
+        "middle": "ee",
+        "suffix": null
+      },
+      "length": 2,
+      "is_kernel_adjacent": true,
+      "top_neighbors": {}
+    },
+    "he": {
+      "corpus_count": 0,
+      "morph": {
+        "articulator": null,
+        "prefix": null,
+        "middle": "he",
+        "suffix": null
+      },
+      "length": 2,
+      "is_kernel_adjacent": true,
+      "top_neighbors": {}
+    },
+    "t": {
+      "corpus_count": 3,
+      "morph": {
+        "articulator": null,
+        "prefix": null,
+        "middle": "t",
+        "suffix": null
+      },
+      "length": 1,
+      "is_kernel_adjacent": false,
+      "top_neighbors": {
+        "prev:FL_HAZ": 1,
+        "next:AX": 1,
+        "next:EN_QO": 1
+      }
+    }
+  }
+}

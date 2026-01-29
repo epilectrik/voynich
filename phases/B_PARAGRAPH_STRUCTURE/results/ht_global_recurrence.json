@@ -1,0 +1,539 @@
+{
+  "spread_data": {
+    "total_unique_ht": 4421,
+    "singleton_rate": 0.7477946166025786,
+    "hubs_20plus": 0,
+    "hub_words": []
+  },
+  "positional_data": {
+    "hub_line_distribution": {},
+    "common_line_distribution": {
+      "5": 1050,
+      "4": 48,
+      "3": 49,
+      "1": 39,
+      "2": 47,
+      "0": 5
+    },
+    "rare_line_distribution": {
+      "1": 137,
+      "3": 109,
+      "5": 2026,
+      "2": 97,
+      "4": 83,
+      "0": 11
+    },
+    "hub_par_initial_rate": 0,
+    "hub_par_final_rate": 0,
+    "line1_unique_words": 434,
+    "body_unique_words": 4132,
+    "line1_total": 461,
+    "body_total": 6581
+  },
+  "adjacency_data": {
+    "rare_ht_count": 928,
+    "mean_distance": 18.40462833099579,
+    "all_adjacent_count": 55
+  },
+  "morphological_data": {
+    "ct_rates": {
+      "hub": 0,
+      "common": 0.0106951871657754,
+      "singleton": 0.003629764065335753
+    },
+    "hub_words_sample": []
+  },
+  "line1_vs_body": {
+    "line1_unique_words": 434,
+    "body_unique_words": 4132,
+    "line1_only_count": 289,
+    "body_only_count": 3987,
+    "shared_count": 145,
+    "line1_only_multifolio": 6,
+    "body_only_multifolio": 966,
+    "line1_only_mean_spread": 1.0207612456747406,
+    "body_only_mean_spread": 1.5084023074993729,
+    "line1_multifolio_examples": [
+      [
+        "cher",
+        [
+          "f86v4",
+          "f86v6"
+        ]
+      ],
+      [
+        "ofaiin",
+        [
+          "f85r2",
+          "f95r1"
+        ]
+      ],
+      [
+        "chepchedy",
+        [
+          "f83v",
+          "f111r"
+        ]
+      ],
+      [
+        "chcphhy",
+        [
+          "f86v4",
+          "f75v"
+        ]
+      ],
+      [
+        "ofy",
+        [
+          "f86v6",
+          "f39r"
+        ]
+      ],
+      [
+        "olfchey",
+        [
+          "f86v3",
+          "f103v"
+        ]
+      ]
+    ],
+    "body_multifolio_examples": [
+      [
+        "olkal",
+        [
+          "f86v5",
+          "f105v",
+          "f81r",
+          "f79r",
+          "f111r",
+          "f107v",
+          "f86v6",
+          "f84v",
+          "f113r",
+          "f80v"
+        ]
+      ],
+      [
+        "chckhedy",
+        [
+          "f66r",
+          "f76v",
+          "f111r",
+          "f83v",
+          "f111v",
+          "f78r",
+          "f113v",
+          "f84v",
+          "f48v",
+          "f108r"
+        ]
+      ],
+      [
+        "araiin",
+        [
+          "f86v3",
+          "f86v5",
+          "f105v",
+          "f112r",
+          "f114v",
+          "f86v6",
+          "f103v",
+          "f113r",
+          "f113v",
+          "f108v"
+        ]
+      ],
+      [
+        "yshedy",
+        [
+          "f115v",
+          "f79r",
+          "f78v",
+          "f79v",
+          "f94v",
+          "f75r",
+          "f84r",
+          "f82v",
+          "f80v"
+        ]
+      ],
+      [
+        "qokshedy",
+        [
+          "f76v",
+          "f115v",
+          "f79r",
+          "f79v",
+          "f75r",
+          "f85r2",
+          "f83r",
+          "f111v",
+          "f84v"
+        ]
+      ],
+      [
+        "ytchdy",
+        [
+          "f86v3",
+          "f86v5",
+          "f46r",
+          "f66v",
+          "f95v1",
+          "f26v",
+          "f50r",
+          "f48v",
+          "f106r"
+        ]
+      ],
+      [
+        "ysheey",
+        [
+          "f86v3",
+          "f115v",
+          "f79r",
+          "f79v",
+          "f26v",
+          "f104v",
+          "f77r",
+          "f80v",
+          "f113v"
+        ]
+      ],
+      [
+        "cthedy",
+        [
+          "f76v",
+          "f75v",
+          "f114v",
+          "f31v",
+          "f57r",
+          "f26r",
+          "f116r",
+          "f107r"
+        ]
+      ],
+      [
+        "oiiin",
+        [
+          "f76v",
+          "f105v",
+          "f115v",
+          "f78v",
+          "f81v",
+          "f105r",
+          "f113r",
+          "f55r"
+        ]
+      ],
+      [
+        "qolchey",
+        [
+          "f79r",
+          "f84r",
+          "f83r",
+          "f116r",
+          "f77r",
+          "f76r",
+          "f84v",
+          "f82v"
+        ]
+      ],
+      [
+        "qolchedy",
+        [
+          "f75v",
+          "f83v",
+          "f81v",
+          "f75r",
+          "f76r",
+          "f82v",
+          "f80v",
+          "f82r"
+        ]
+      ],
+      [
+        "okeeedy",
+        [
+          "f112r",
+          "f76v",
+          "f111r",
+          "f112v",
+          "f104v",
+          "f111v",
+          "f113v",
+          "f114r"
+        ]
+      ],
+      [
+        "qokedar",
+        [
+          "f39r",
+          "f112v",
+          "f83v",
+          "f34v",
+          "f111v",
+          "f78r",
+          "f76r",
+          "f108v"
+        ]
+      ],
+      [
+        "qokan",
+        [
+          "f79v",
+          "f80r",
+          "f75r",
+          "f103v",
+          "f111v",
+          "f78r",
+          "f116r",
+          "f95v2"
+        ]
+      ],
+      [
+        "shedain",
+        [
+          "f111r",
+          "f114v",
+          "f115v",
+          "f112v",
+          "f103r",
+          "f113r",
+          "f108v",
+          "f95v2"
+        ]
+      ]
+    ]
+  },
+  "network_data": {
+    "total_edges": 2848,
+    "forward_fraction": 0.5154494382022472,
+    "mean_distance": 22.452598314606742,
+    "median_distance": 17.0,
+    "top_hubs": [
+      [
+        "f111r",
+        187
+      ],
+      [
+        "f104r",
+        160
+      ],
+      [
+        "f86v6",
+        150
+      ],
+      [
+        "f115v",
+        147
+      ],
+      [
+        "f113r",
+        142
+      ],
+      [
+        "f106v",
+        139
+      ],
+      [
+        "f111v",
+        134
+      ],
+      [
+        "f104v",
+        134
+      ],
+      [
+        "f107r",
+        133
+      ],
+      [
+        "f115r",
+        132
+      ]
+    ],
+    "sample_edges": [
+      {
+        "word": "qoy",
+        "source": "f107v",
+        "target": "f103r",
+        "source_idx": 68,
+        "target_idx": 59,
+        "distance": -9,
+        "direction": "backward"
+      },
+      {
+        "word": "qoy",
+        "source": "f107v",
+        "target": "f26r",
+        "source_idx": 68,
+        "target_idx": 0,
+        "distance": -68,
+        "direction": "backward"
+      },
+      {
+        "word": "qoy",
+        "source": "f107v",
+        "target": "f79r",
+        "source_idx": 68,
+        "target_idx": 35,
+        "distance": -33,
+        "direction": "backward"
+      },
+      {
+        "word": "qoy",
+        "source": "f103r",
+        "target": "f26r",
+        "source_idx": 59,
+        "target_idx": 0,
+        "distance": -59,
+        "direction": "backward"
+      },
+      {
+        "word": "qoy",
+        "source": "f103r",
+        "target": "f79r",
+        "source_idx": 59,
+        "target_idx": 35,
+        "distance": -24,
+        "direction": "backward"
+      },
+      {
+        "word": "qoy",
+        "source": "f26r",
+        "target": "f79r",
+        "source_idx": 0,
+        "target_idx": 35,
+        "distance": 35,
+        "direction": "forward"
+      },
+      {
+        "word": "checthedy",
+        "source": "f83v",
+        "target": "f26r",
+        "source_idx": 44,
+        "target_idx": 0,
+        "distance": -44,
+        "direction": "backward"
+      },
+      {
+        "word": "oloy",
+        "source": "f84r",
+        "target": "f26r",
+        "source_idx": 45,
+        "target_idx": 0,
+        "distance": -45,
+        "direction": "backward"
+      },
+      {
+        "word": "chekedy",
+        "source": "f41r",
+        "target": "f26v",
+        "source_idx": 12,
+        "target_idx": 1,
+        "distance": -11,
+        "direction": "backward"
+      },
+      {
+        "word": "chekedy",
+        "source": "f41r",
+        "target": "f26r",
+        "source_idx": 12,
+        "target_idx": 0,
+        "distance": -12,
+        "direction": "backward"
+      },
+      {
+        "word": "chekedy",
+        "source": "f26v",
+        "target": "f26r",
+        "source_idx": 1,
+        "target_idx": 0,
+        "distance": -1,
+        "direction": "backward"
+      },
+      {
+        "word": "odam",
+        "source": "f105v",
+        "target": "f50r",
+        "source_idx": 64,
+        "target_idx": 20,
+        "distance": -44,
+        "direction": "backward"
+      },
+      {
+        "word": "odam",
+        "source": "f105v",
+        "target": "f26r",
+        "source_idx": 64,
+        "target_idx": 0,
+        "distance": -64,
+        "direction": "backward"
+      },
+      {
+        "word": "odam",
+        "source": "f50r",
+        "target": "f26r",
+        "source_idx": 20,
+        "target_idx": 0,
+        "distance": -20,
+        "direction": "backward"
+      },
+      {
+        "word": "eedy",
+        "source": "f84r",
+        "target": "f94v",
+        "source_idx": 45,
+        "target_idx": 54,
+        "distance": 9,
+        "direction": "forward"
+      },
+      {
+        "word": "eedy",
+        "source": "f84r",
+        "target": "f26r",
+        "source_idx": 45,
+        "target_idx": 0,
+        "distance": -45,
+        "direction": "backward"
+      },
+      {
+        "word": "eedy",
+        "source": "f94v",
+        "target": "f26r",
+        "source_idx": 54,
+        "target_idx": 0,
+        "distance": -54,
+        "direction": "backward"
+      },
+      {
+        "word": "cthhy",
+        "source": "f46v",
+        "target": "f26r",
+        "source_idx": 17,
+        "target_idx": 0,
+        "distance": -17,
+        "direction": "backward"
+      },
+      {
+        "word": "dalchedy",
+        "source": "f115v",
+        "target": "f77r",
+        "source_idx": 80,
+        "target_idx": 31,
+        "distance": -49,
+        "direction": "backward"
+      },
+      {
+        "word": "dalchedy",
+        "source": "f115v",
+        "target": "f26r",
+        "source_idx": 80,
+        "target_idx": 0,
+        "distance": -80,
+        "direction": "backward"
+      }
+    ]
+  },
+  "verdict": "NEGATIVE - No global navigation structure"
+}

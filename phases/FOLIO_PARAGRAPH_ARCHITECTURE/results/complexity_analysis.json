@@ -1,0 +1,16 @@
+{
+  "correlations": {
+    "par_count_vs_vocab": 0.8362011732567125,
+    "par_count_vs_tokens": 0.8018741633199464,
+    "par_count_vs_diversity": 0.8259270142902232
+  },
+  "section_means": {
+    "RECIPE_B": 10.151515151515152,
+    "HERBAL_B": 2.25,
+    "PHARMA": 14,
+    "BIO": 7.45,
+    "OTHER": 2.5
+  },
+  "section_f_ratio": 10.845773061629558,
+  "verdict": "COMPLEXITY_PROXY"
+}

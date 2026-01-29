@@ -1,0 +1,18 @@
+{
+  "initial_ri_count": 214,
+  "final_ri_count": 141,
+  "initial_stage_distribution": {
+    "NEUTRAL": 181,
+    "EARLY": 18,
+    "LATE": 15
+  },
+  "final_stage_distribution": {
+    "NEUTRAL": 122,
+    "EARLY": 7,
+    "LATE": 12
+  },
+  "initial_y_suffix_rate": 0.4392523364485981,
+  "final_y_suffix_rate": 0.41134751773049644,
+  "initial_fl_overlap": [],
+  "final_fl_overlap": []
+}

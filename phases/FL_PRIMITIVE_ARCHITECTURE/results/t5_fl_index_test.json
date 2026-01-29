@@ -1,0 +1,219 @@
+{
+  "fl_middle_stats": [
+    {
+      "middle": "ii",
+      "mean_pos": 0.29931972789115646,
+      "std_pos": 0.3687021835823916,
+      "count": 7
+    },
+    {
+      "middle": "i",
+      "mean_pos": 0.34498483376034395,
+      "std_pos": 0.3437092194861668,
+      "count": 49
+    },
+    {
+      "middle": "in",
+      "mean_pos": 0.42145347278090634,
+      "std_pos": 0.3491526912462628,
+      "count": 113
+    },
+    {
+      "middle": "r",
+      "mean_pos": 0.5073815761124648,
+      "std_pos": 0.3204183761147379,
+      "count": 188
+    },
+    {
+      "middle": "ar",
+      "mean_pos": 0.5449640122496894,
+      "std_pos": 0.30023357587515886,
+      "count": 248
+    },
+    {
+      "middle": "al",
+      "mean_pos": 0.6057733321084253,
+      "std_pos": 0.301797822742666,
+      "count": 197
+    },
+    {
+      "middle": "l",
+      "mean_pos": 0.6177093419401111,
+      "std_pos": 0.3007901821307698,
+      "count": 130
+    },
+    {
+      "middle": "ol",
+      "mean_pos": 0.6433477633477633,
+      "std_pos": 0.33355776756279704,
+      "count": 10
+    },
+    {
+      "middle": "o",
+      "mean_pos": 0.7505968778696052,
+      "std_pos": 0.29796982272931616,
+      "count": 11
+    },
+    {
+      "middle": "ly",
+      "mean_pos": 0.7851752822341058,
+      "std_pos": 0.25691064040301154,
+      "count": 17
+    },
+    {
+      "middle": "am",
+      "mean_pos": 0.8016191325014854,
+      "std_pos": 0.2764024735115787,
+      "count": 8
+    },
+    {
+      "middle": "m",
+      "mean_pos": 0.8605270390984676,
+      "std_pos": 0.26142069793223394,
+      "count": 42
+    },
+    {
+      "middle": "dy",
+      "mean_pos": 0.9075757575757576,
+      "std_pos": 0.16601110742043892,
+      "count": 6
+    },
+    {
+      "middle": "ry",
+      "mean_pos": 0.9128510378510378,
+      "std_pos": 0.12234560182992933,
+      "count": 13
+    },
+    {
+      "middle": "y",
+      "mean_pos": 0.9423059263968356,
+      "std_pos": 0.14477175585134455,
+      "count": 33
+    }
+  ],
+  "position_range": 0.6429861985056792,
+  "position_std": 0.20276266465287585,
+  "early_fl_middles": [
+    "ii",
+    "i"
+  ],
+  "late_fl_middles": [
+    "al",
+    "l",
+    "ol",
+    "o",
+    "ly",
+    "am",
+    "m",
+    "dy",
+    "ry",
+    "y"
+  ],
+  "self_transition_rate": 22.99270072992701,
+  "fl_fl_transitions_top": [
+    {
+      "from": "ar",
+      "to": "al",
+      "count": 29
+    },
+    {
+      "from": "ar",
+      "to": "ar",
+      "count": 23
+    },
+    {
+      "from": "r",
+      "to": "ar",
+      "count": 14
+    },
+    {
+      "from": "al",
+      "to": "ar",
+      "count": 12
+    },
+    {
+      "from": "r",
+      "to": "r",
+      "count": 11
+    },
+    {
+      "from": "al",
+      "to": "al",
+      "count": 11
+    },
+    {
+      "from": "r",
+      "to": "al",
+      "count": 9
+    },
+    {
+      "from": "i",
+      "to": "al",
+      "count": 8
+    },
+    {
+      "from": "r",
+      "to": "l",
+      "count": 8
+    },
+    {
+      "from": "l",
+      "to": "l",
+      "count": 8
+    },
+    {
+      "from": "in",
+      "to": "in",
+      "count": 8
+    },
+    {
+      "from": "ar",
+      "to": "r",
+      "count": 7
+    },
+    {
+      "from": "al",
+      "to": "r",
+      "count": 7
+    },
+    {
+      "from": "l",
+      "to": "r",
+      "count": 6
+    },
+    {
+      "from": "in",
+      "to": "l",
+      "count": 5
+    },
+    {
+      "from": "al",
+      "to": "l",
+      "count": 5
+    },
+    {
+      "from": "in",
+      "to": "al",
+      "count": 5
+    },
+    {
+      "from": "r",
+      "to": "m",
+      "count": 4
+    },
+    {
+      "from": "ar",
+      "to": "l",
+      "count": 4
+    },
+    {
+      "from": "l",
+      "to": "ar",
+      "count": 4
+    }
+  ],
+  "findings": [
+    "POSITION_DIFFERENTIATED: FL MIDDLEs span 0.64 position range",
+    "EARLY_LATE_SPLIT: 2 early MIDDLEs, 10 late MIDDLEs"
+  ]
+}

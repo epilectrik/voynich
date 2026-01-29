@@ -1,0 +1,49 @@
+{
+  "fl_fl_state_trans": {
+    "MEDIAL->MEDIAL": 57,
+    "EARLY->LATE": 2,
+    "MEDIAL->LATE": 9,
+    "LATE->LATE": 1,
+    "EARLY->MEDIAL": 13,
+    "EARLY->EARLY": 2,
+    "LATE->MEDIAL": 1,
+    "MEDIAL->EARLY": 3
+  },
+  "direction_counts": {
+    "forward": 24,
+    "same": 60,
+    "backward": 4
+  },
+  "fl_gap_trans": {
+    "2": {
+      "MEDIAL->MEDIAL": 18,
+      "LATE->LATE": 2,
+      "MEDIAL->EARLY": 3,
+      "EARLY->EARLY": 1,
+      "EARLY->MEDIAL": 2,
+      "MEDIAL->LATE": 2
+    },
+    "1": {
+      "MEDIAL->MEDIAL": 18,
+      "MEDIAL->LATE": 8,
+      "LATE->MEDIAL": 2,
+      "EARLY->MEDIAL": 6,
+      "MEDIAL->EARLY": 3,
+      "EARLY->LATE": 1
+    },
+    "3": {
+      "LATE->EARLY": 1,
+      "MEDIAL->MEDIAL": 15,
+      "EARLY->MEDIAL": 1,
+      "EARLY->EARLY": 2,
+      "MEDIAL->EARLY": 4,
+      "EARLY->LATE": 1
+    }
+  },
+  "late_to_early": 0,
+  "findings": [
+    "FORWARD_DOMINANT: 27% forward vs 5% backward",
+    "RARE_TRANSITIONS: 5 state pairs have <3 occurrences",
+    "NO_LATE_EARLY: LATE -> EARLY never occurs (state reset forbidden?)"
+  ]
+}

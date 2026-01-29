@@ -1,0 +1,61 @@
+{
+  "test": "T5_operating_unit_discovery",
+  "b_folios_count": 82,
+  "granularities": {
+    "1_line": {
+      "unit_size": "1",
+      "n_units": 1559,
+      "unique_best_matches": 15,
+      "mean_coverage": 0.2601346461814083,
+      "mean_discrimination": 1.1186989772977265,
+      "strong_discrimination_count": 0
+    },
+    "2_line": {
+      "unit_size": "2",
+      "n_units": 1559,
+      "unique_best_matches": 10,
+      "mean_coverage": 0.3720146456493129,
+      "mean_discrimination": 1.0684463896222312,
+      "strong_discrimination_count": 0
+    },
+    "3_line": {
+      "unit_size": "3",
+      "n_units": 1559,
+      "unique_best_matches": 11,
+      "mean_coverage": 0.4531902340454625,
+      "mean_discrimination": 1.0550695937822547,
+      "strong_discrimination_count": 0
+    },
+    "5_line": {
+      "unit_size": "5",
+      "n_units": 809,
+      "unique_best_matches": 9,
+      "mean_coverage": 0.5223914033161071,
+      "mean_discrimination": 1.0439990510624217,
+      "strong_discrimination_count": 0
+    },
+    "half_folio": {
+      "unit_size": "half",
+      "n_units": 228,
+      "unique_best_matches": 6,
+      "mean_coverage": 0.6380697680462097,
+      "mean_discrimination": 1.0494752571883077,
+      "strong_discrimination_count": 0
+    },
+    "full_folio": {
+      "unit_size": "full",
+      "n_units": 114,
+      "unique_best_matches": 3,
+      "mean_coverage": 0.760282769899124,
+      "mean_discrimination": 1.0640009732281763,
+      "strong_discrimination_count": 0
+    }
+  },
+  "thresholds": {
+    "discrimination": 1.5,
+    "unique_matches": 30
+  },
+  "best_granularity": null,
+  "verdict": "NO_GRANULARITY",
+  "explanation": "No granularity achieves thresholds. Closest: 1_line"
+}

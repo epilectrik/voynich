@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "phase": "A_B_FOLIO_SPECIFICITY",
+    "analysis": "middle_b_concentration",
+    "timestamp": "2026-01-27T19:55:10.566171",
+    "n_a_folios": 114,
+    "n_b_folios": 82,
+    "n_shared_middles": 389,
+    "n_pp_middles": 389,
+    "n_b_middles": 1339
+  },
+  "T1_middle_breadth": {
+    "mean_b_folios_per_middle": 12.825192802056556,
+    "median": 3.0,
+    "min": 1,
+    "max": 82
+  },
+  "T2_concentration": {
+    "mean_herfindahl": 0.012633952169021002,
+    "median_herfindahl": 0.012610854420706839,
+    "uniform_herfindahl": 0.012195121951219513,
+    "mean_effective_b": 79.16114848382486,
+    "median_effective_b": 79.29676822480536,
+    "mean_top3_share": 0.050352592995161864,
+    "mean_gini": 0.10600843638649869
+  },
+  "T3_affinity": {
+    "mean_affinity": 0.5538139905055166,
+    "mean_best_affinity": 0.7810435904940904,
+    "mean_lift": 1.416874375989255,
+    "variance_by_a_pct": 25.37723631361457,
+    "variance_by_b_pct": 59.38351187116392,
+    "mean_b_above_50pct": 51.666666666666664,
+    "mean_b_above_75pct": 3.912280701754386
+  },
+  "T4_permutation": {
+    "observed_mean_eff_b": 79.16114848382486,
+    "null_mean_eff_b": 67.86730846205766,
+    "null_std_eff_b": 0.5563144217477385,
+    "p_more_concentrated": 0.0,
+    "p_less_concentrated": 1.0,
+    "verdict": "CONCENTRATED"
+  },
+  "T5_breadth": {
+    "n_broad": 41,
+    "n_narrow": 230,
+    "narrow_vs_herf_rho": 0.24907847924362497,
+    "narrow_vs_herf_p": 0.007531582773587709
+  }
+}

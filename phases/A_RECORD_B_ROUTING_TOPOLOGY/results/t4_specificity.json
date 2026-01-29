@@ -1,0 +1,22 @@
+{
+  "n_records": 1205,
+  "lift_stats": {
+    "mean": 22.34791946665139,
+    "median": 8.2,
+    "max": 82.0,
+    "std": 27.757078847699834
+  },
+  "high_lift_counts": {
+    ">2x": 999,
+    ">3x": 858,
+    ">5x": 733,
+    ">10x": 564
+  },
+  "high_lift_pct": 82.9045643153527,
+  "h4_supported": true,
+  "pp_lift_correlation": {
+    "spearman_rho": 0.3686976633548765,
+    "p_value": 4.212656859941858e-40
+  },
+  "verdict": "H4 SUPPORTED: 82.9% of records have >2x lift (threshold: 20%)"
+}

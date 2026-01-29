@@ -1,0 +1,29 @@
+{
+  "test": "T6_null_model_comparison",
+  "n_a_folios": 114,
+  "n_b_folios": 82,
+  "pp_vocabulary": {
+    "middles": 404,
+    "prefixes": 34,
+    "suffixes": 33
+  },
+  "real_discrimination": 1.0640009732281763,
+  "real_unique_matches": 3,
+  "synthetic": {
+    "n_trials": 100,
+    "disc_mean": 1.2806255865626408,
+    "disc_std": 0.15289807627388288,
+    "disc_5th": 1.1313006837325135,
+    "disc_95th": 1.5499879609233382,
+    "unique_mean": 5.26,
+    "unique_std": 2.278683830635571
+  },
+  "comparison": {
+    "real_disc_percentile": 0.0,
+    "real_disc_z": -1.4167909669865937,
+    "real_unique_percentile": 19.0
+  },
+  "threshold_percentile": 95,
+  "verdict": "REAL_BELOW_SYNTHETIC",
+  "explanation": "Real disc (1.064) < 5th percentile: real A folios are WORSE than random (unexpected)"
+}

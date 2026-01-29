@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "phase": "RI_FUNCTIONAL_IDENTITY",
+    "script": "ri_functional_tests.py",
+    "tests": "T1-T7 (C710-C716)",
+    "n_folios": 114,
+    "n_records": 1562,
+    "hypothesis": "H4: RI as independent content (A payload)"
+  },
+  "T2_ri_density": {
+    "constraint": "C711",
+    "ri_rho": 0.4189,
+    "ri_rho_p": 3.5004143014141026e-06,
+    "pp_rho": 0.5881,
+    "pp_rho_p": 5.985603469371645e-12,
+    "mean_ri_types": 6.55,
+    "mean_pp_types": 35.27,
+    "mean_lines": 13.7,
+    "pass": "False"
+  },
+  "T4_adjacent_ri": {
+    "constraint": "C713",
+    "adjacent_pairs": 210,
+    "nonadjacent_pairs": 673,
+    "adjacent_mean": 0.0081,
+    "nonadjacent_mean": 0.00359,
+    "ratio": 2.254,
+    "mann_whitney_p": 0.2489411306537973,
+    "c346_reference": 1.2,
+    "pass": false
+  },
+  "T1_positional_complementarity": {
+    "constraint": "C710",
+    "n_mixed_lines": 559,
+    "ri_mean_position": 0.52611,
+    "pp_mean_position": 0.47577,
+    "mean_difference": 0.05034,
+    "t_stat": 2.88,
+    "t_p": 0.004125080177573609,
+    "cohens_d": 0.1219,
+    "direction": "RI later",
+    "pass": false
+  },
+  "T6_ri_pp_independence": {
+    "constraint": "C715",
+    "ri_pp_rho": -0.0516,
+    "ri_pp_rho_p": 0.04150107036262066,
+    "n_pp_groups": 22,
+    "mean_ri_diversity_within_pp": 0.7396,
+    "pass": true
+  },
+  "T5_final_ri_profile": {
+    "constraint": "C714",
+    "n_final_ri": 156,
+    "n_unique_final_middles": 143,
+    "n_nonfinal_ri": 601,
+    "n_unique_nonfinal_middles": 475,
+    "top5_concentration": 0.0962,
+    "top5_middles": [
+      {
+        "middle": "ho",
+        "count": 7
+      },
+      {
+        "middle": "otol",
+        "count": 2
+      },
+      {
+        "middle": "olod",
+        "count": 2
+      },
+      {
+        "middle": "qko",
+        "count": 2
+      },
+      {
+        "middle": "hc",
+        "count": 2
+      }
+    ],
+    "suffix_rate_final": 0.7885,
+    "suffix_rate_nonfinal": 0.7754,
+    "suffix_chi2_p": 0.8084895431314922,
+    "prefix_rate_final": 0.7179,
+    "prefix_rate_nonfinal": 0.6373,
+    "middle_length_final": 4.333,
+    "middle_length_nonfinal": 4.313,
+    "middle_length_p": 0.8207407503684105,
+    "pass": "False"
+  },
+  "T3_singleton_vs_repeater": {
+    "constraint": "C712",
+    "n_singletons": 517,
+    "n_repeaters": 25,
+    "singleton_tokens": 517,
+    "repeater_tokens": 140,
+    "singleton_final_rate": 0.2186,
+    "repeater_final_rate": 0.1429,
+    "singleton_mean_pos": 0.5061,
+    "repeater_mean_pos": 0.5453,
+    "ks_stat": 0.10531,
+    "ks_p": 0.1596819187626206,
+    "pass": "True"
+  },
+  "T7_crossfolio_ri_reuse": {
+    "constraint": "C716",
+    "n_multi_folio_ri": 75,
+    "n_single_folio_ri": 517,
+    "host_pairs": 778,
+    "host_mean_pp_jaccard": 0.2801,
+    "random_mean_pp_jaccard": 0.26807,
+    "ratio": 1.045,
+    "mann_whitney_p": 0.0002521702012480502,
+    "pass": true
+  },
+  "summary": {
+    "passed": 3,
+    "total": 7,
+    "h4_assessment": "MIXED"
+  }
+}

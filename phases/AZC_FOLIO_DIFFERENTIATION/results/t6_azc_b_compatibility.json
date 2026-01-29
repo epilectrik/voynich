@@ -1,0 +1,211 @@
+{
+  "azc_stats": {
+    "f57v": {
+      "family": "Zodiac",
+      "vocab_size": 56,
+      "mean_jaccard": 0.22497146748375893,
+      "max_jaccard": 0.34210526315789475,
+      "b_folios_covered": 82
+    },
+    "f65r": {
+      "family": "A/C",
+      "vocab_size": 3,
+      "mean_jaccard": 0.02529297307750577,
+      "max_jaccard": 0.08571428571428572,
+      "b_folios_covered": 73
+    },
+    "f67r1": {
+      "family": "A/C",
+      "vocab_size": 72,
+      "mean_jaccard": 0.21929707114335775,
+      "max_jaccard": 0.27835051546391754,
+      "b_folios_covered": 82
+    },
+    "f67r2": {
+      "family": "A/C",
+      "vocab_size": 75,
+      "mean_jaccard": 0.19364618079651366,
+      "max_jaccard": 0.2808988764044944,
+      "b_folios_covered": 82
+    },
+    "f67v1": {
+      "family": "A/C",
+      "vocab_size": 57,
+      "mean_jaccard": 0.16651042625354728,
+      "max_jaccard": 0.23863636363636365,
+      "b_folios_covered": 82
+    },
+    "f67v2": {
+      "family": "A/C",
+      "vocab_size": 46,
+      "mean_jaccard": 0.14800055225677458,
+      "max_jaccard": 0.2318840579710145,
+      "b_folios_covered": 82
+    },
+    "f68r1": {
+      "family": "A/C",
+      "vocab_size": 30,
+      "mean_jaccard": 0.12425504039425722,
+      "max_jaccard": 0.17857142857142858,
+      "b_folios_covered": 82
+    },
+    "f68r2": {
+      "family": "A/C",
+      "vocab_size": 33,
+      "mean_jaccard": 0.14297249913014895,
+      "max_jaccard": 0.23636363636363636,
+      "b_folios_covered": 82
+    },
+    "f68r3": {
+      "family": "A/C",
+      "vocab_size": 62,
+      "mean_jaccard": 0.17847220495789662,
+      "max_jaccard": 0.24050632911392406,
+      "b_folios_covered": 82
+    },
+    "f68v1": {
+      "family": "A/C",
+      "vocab_size": 55,
+      "mean_jaccard": 0.23352038143861412,
+      "max_jaccard": 0.32051282051282054,
+      "b_folios_covered": 82
+    },
+    "f68v2": {
+      "family": "A/C",
+      "vocab_size": 43,
+      "mean_jaccard": 0.1712392832380925,
+      "max_jaccard": 0.25675675675675674,
+      "b_folios_covered": 82
+    },
+    "f68v3": {
+      "family": "A/C",
+      "vocab_size": 68,
+      "mean_jaccard": 0.25402972501749355,
+      "max_jaccard": 0.3181818181818182,
+      "b_folios_covered": 82
+    },
+    "f69r": {
+      "family": "A/C",
+      "vocab_size": 61,
+      "mean_jaccard": 0.24979032313336524,
+      "max_jaccard": 0.3373493975903614,
+      "b_folios_covered": 82
+    },
+    "f69v": {
+      "family": "A/C",
+      "vocab_size": 54,
+      "mean_jaccard": 0.22326239887529203,
+      "max_jaccard": 0.3,
+      "b_folios_covered": 82
+    },
+    "f70r1": {
+      "family": "A/C",
+      "vocab_size": 50,
+      "mean_jaccard": 0.19886193284203926,
+      "max_jaccard": 0.2987012987012987,
+      "b_folios_covered": 82
+    },
+    "f70r2": {
+      "family": "A/C",
+      "vocab_size": 61,
+      "mean_jaccard": 0.2381563506732591,
+      "max_jaccard": 0.32941176470588235,
+      "b_folios_covered": 82
+    },
+    "f70v1": {
+      "family": "Zodiac",
+      "vocab_size": 55,
+      "mean_jaccard": 0.21469620802060596,
+      "max_jaccard": 0.2891566265060241,
+      "b_folios_covered": 82
+    },
+    "f70v2": {
+      "family": "Zodiac",
+      "vocab_size": 68,
+      "mean_jaccard": 0.2596725252987302,
+      "max_jaccard": 0.32051282051282054,
+      "b_folios_covered": 82
+    },
+    "f71r": {
+      "family": "Zodiac",
+      "vocab_size": 54,
+      "mean_jaccard": 0.20186985425081502,
+      "max_jaccard": 0.30434782608695654,
+      "b_folios_covered": 82
+    },
+    "f71v": {
+      "family": "Zodiac",
+      "vocab_size": 50,
+      "mean_jaccard": 0.20257917236915313,
+      "max_jaccard": 0.2911392405063291,
+      "b_folios_covered": 82
+    },
+    "f72r1": {
+      "family": "Zodiac",
+      "vocab_size": 54,
+      "mean_jaccard": 0.2235419680090619,
+      "max_jaccard": 0.30864197530864196,
+      "b_folios_covered": 82
+    },
+    "f72r2": {
+      "family": "Zodiac",
+      "vocab_size": 52,
+      "mean_jaccard": 0.2513071159893009,
+      "max_jaccard": 0.36,
+      "b_folios_covered": 82
+    },
+    "f72r3": {
+      "family": "Zodiac",
+      "vocab_size": 78,
+      "mean_jaccard": 0.2010738442701313,
+      "max_jaccard": 0.27927927927927926,
+      "b_folios_covered": 82
+    },
+    "f72v1": {
+      "family": "Zodiac",
+      "vocab_size": 60,
+      "mean_jaccard": 0.1846608099030877,
+      "max_jaccard": 0.2441860465116279,
+      "b_folios_covered": 82
+    },
+    "f72v2": {
+      "family": "Zodiac",
+      "vocab_size": 68,
+      "mean_jaccard": 0.19608289705059967,
+      "max_jaccard": 0.2777777777777778,
+      "b_folios_covered": 82
+    },
+    "f72v3": {
+      "family": "Zodiac",
+      "vocab_size": 66,
+      "mean_jaccard": 0.1961843923575165,
+      "max_jaccard": 0.25842696629213485,
+      "b_folios_covered": 82
+    },
+    "f73r": {
+      "family": "Zodiac",
+      "vocab_size": 59,
+      "mean_jaccard": 0.22429845536548096,
+      "max_jaccard": 0.3048780487804878,
+      "b_folios_covered": 82
+    },
+    "f73v": {
+      "family": "Zodiac",
+      "vocab_size": 56,
+      "mean_jaccard": 0.22143843116542977,
+      "max_jaccard": 0.2857142857142857,
+      "b_folios_covered": 82
+    }
+  },
+  "summary": {
+    "azc_folio_count": 28,
+    "b_folio_count": 82,
+    "zodiac_mean_coverage": 0.21556747242566707,
+    "ac_mean_coverage": 0.18448715621521047,
+    "family_ttest_p": 0.08814078380213441,
+    "top5_coverage_pct": 22.495996739853524,
+    "top10_coverage_pct": 42.777121716729326,
+    "b_azc_overlap_mean": 27.890243902439025
+  },
+  "verdict": "DISTRIBUTED_COVERAGE"
+}

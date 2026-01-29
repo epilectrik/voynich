@@ -1,0 +1,11 @@
+{
+  "azc_mediated_tokens": 21107,
+  "b_native_tokens": 1989,
+  "azc_escape_rate": 31.3,
+  "b_native_escape_rate": 21.5,
+  "escape_chi2": 66.2,
+  "escape_p": 3.9772e-16,
+  "azc_kernel_rate": 51.3,
+  "b_native_kernel_rate": 77.8,
+  "verdict": "MECHANISM_UNCLEAR"
+}

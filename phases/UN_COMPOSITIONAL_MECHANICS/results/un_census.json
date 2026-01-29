@@ -1,0 +1,45 @@
+{
+  "inventory": {
+    "total_b": 23096,
+    "classified": 16054,
+    "un_tokens": 7042,
+    "un_pct": 30.5,
+    "un_types": 4421,
+    "un_hapax": 3274,
+    "un_hapax_pct": 74.1
+  },
+  "morphology": {
+    "un_with_prefix_pct": 83.7,
+    "un_with_suffix_pct": 77.3,
+    "un_articulator_pct": 10.1,
+    "cls_with_suffix_pct": 38.7,
+    "un_pp_middle_pct": 79.4,
+    "un_ri_middle_pct": 0.0
+  },
+  "middle_overlap": {
+    "un_middle_types": 1339,
+    "in_classified": 88,
+    "novel": 1251,
+    "novel_with_pp_atom_pct": 90.7,
+    "jaccard_by_role": {
+      "CC": 0.001,
+      "EN": 0.046,
+      "FL": 0.013,
+      "FQ": 0.014,
+      "AX": 0.043
+    }
+  },
+  "section_distribution": {
+    "B": 22.3,
+    "C": 32.8,
+    "H": 32.9,
+    "S": 34.1,
+    "T": 39.0
+  },
+  "regime_distribution": {
+    "REGIME_1": 27.6,
+    "REGIME_2": 32.6,
+    "REGIME_3": 28.3,
+    "REGIME_4": 32.3
+  }
+}

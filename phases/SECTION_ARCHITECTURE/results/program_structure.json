@@ -1,0 +1,42 @@
+{
+  "section_types": {
+    "HERBAL_B": {
+      "LARGE": 36,
+      "MEDIUM": 14,
+      "MICRO": 3,
+      "SINGLE_TOKEN": 1
+    },
+    "PHARMA": {
+      "LARGE": 7,
+      "SINGLE_CHAR": 28,
+      "SINGLE_TOKEN": 3,
+      "MEDIUM": 3,
+      "MICRO": 1
+    },
+    "BIO": {
+      "LARGE": 72,
+      "SINGLE_CHAR": 5,
+      "SMALL": 5,
+      "MEDIUM": 12,
+      "SINGLE_TOKEN": 48,
+      "MICRO": 7
+    },
+    "RECIPE_B": {
+      "LARGE": 99,
+      "MEDIUM": 214,
+      "MICRO": 7,
+      "SMALL": 15
+    },
+    "OTHER": {
+      "LARGE": 2,
+      "MICRO": 1,
+      "MEDIUM": 2
+    }
+  },
+  "single_char_by_section": {
+    "PHARMA": 28,
+    "BIO": 5,
+    "HERBAL_B": 0,
+    "RECIPE_B": 0
+  }
+}
