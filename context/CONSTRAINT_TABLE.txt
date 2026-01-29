@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 738 constraints | 2026-01-29
+CONSTRAINT_REFERENCE v2.6 | 746 constraints | 2026-01-29
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -742,3 +742,11 @@ C869	Gallows functional model (f/k openers, p/t modes)	3	B	-> C869_gallows_funct
 C870	Line-1 HT folio specificity (86% singletons, 1229 Line-1-only)	2	HT	-> C870_line1_ht_folio_specificity.md
 C871	HT role cooccurrence pattern (enriched FL, depleted CC/FQ)	2	HT	-> C871_ht_role_cooccurrence_pattern.md
 C872	HT discrimination vocabulary interpretation	3	HT	-> C872_ht_discrimination_vocabulary.md
+C873	Kernel positional ordering: e (0.404) < h (0.410) < k (0.443)	3	B	-> C873_kernel_positional_ordering.md
+C874	CC token functions: daiin=init (0.370), ol=continue (0.461)	3	B	-> C874_cc_token_functions.md
+C875	Escape trigger grammar: 80.4% from hazard FL stages	3	B	-> C875_escape_trigger_grammar.md
+C876	LINK checkpoint function (position 0.405, routes to EN)	3	B	-> C876_link_checkpoint_function.md
+C877	Role transition grammar: EN->EN 38.5%, CC->EN 37.7%, FQ->EN 29.5%	2	B	-> C877_role_transition_grammar.md
+C878	Section program variation: BIO high EN, HERBAL_B high FL/FQ	2	B	-> C878_section_program_variation.md
+C879	Process domain: batch processing, 59.2% forward bias	3	B	-> C879_process_domain_verdict.md
+C880	Integrated control model: batch processing with escape handling	3	B	-> C880_integrated_control_model.md

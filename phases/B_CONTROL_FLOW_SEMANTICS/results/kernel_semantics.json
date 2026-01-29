@@ -1,0 +1,336 @@
+{
+  "kernel_profiles": {
+    "k": {
+      "count": 7302,
+      "mean_position": 0.4433,
+      "roles_before": {
+        "ENERGY_OPERATOR": 2576,
+        "UN": 1870,
+        "AUXILIARY": 1158,
+        "FREQUENT_OPERATOR": 784,
+        "FLOW_OPERATOR": 211
+      },
+      "roles_after": {
+        "ENERGY_OPERATOR": 2405,
+        "UN": 1832,
+        "AUXILIARY": 1082,
+        "FREQUENT_OPERATOR": 901,
+        "FLOW_OPERATOR": 300
+      },
+      "top_middles_before": [
+        [
+          "edy",
+          723
+        ],
+        [
+          "k",
+          669
+        ],
+        [
+          "ey",
+          335
+        ],
+        [
+          "e",
+          323
+        ],
+        [
+          "aiin",
+          240
+        ],
+        [
+          "eey",
+          237
+        ],
+        [
+          "ol",
+          210
+        ],
+        [
+          "ke",
+          189
+        ],
+        [
+          "iin",
+          168
+        ],
+        [
+          "dy",
+          167
+        ]
+      ],
+      "top_middles_after": [
+        [
+          "k",
+          701
+        ],
+        [
+          "edy",
+          586
+        ],
+        [
+          "l",
+          251
+        ],
+        [
+          "e",
+          248
+        ],
+        [
+          "ey",
+          239
+        ],
+        [
+          "ar",
+          222
+        ],
+        [
+          "ol",
+          211
+        ],
+        [
+          "r",
+          197
+        ],
+        [
+          "aiin",
+          194
+        ],
+        [
+          "dy",
+          184
+        ]
+      ]
+    },
+    "h": {
+      "count": 9158,
+      "mean_position": 0.4104,
+      "roles_before": {
+        "ENERGY_OPERATOR": 2540,
+        "UN": 2453,
+        "AUXILIARY": 1493,
+        "FREQUENT_OPERATOR": 946,
+        "FLOW_OPERATOR": 344
+      },
+      "roles_after": {
+        "ENERGY_OPERATOR": 2902,
+        "UN": 2667,
+        "AUXILIARY": 1511,
+        "FREQUENT_OPERATOR": 873,
+        "FLOW_OPERATOR": 311
+      },
+      "top_middles_before": [
+        [
+          "k",
+          861
+        ],
+        [
+          "edy",
+          530
+        ],
+        [
+          "l",
+          342
+        ],
+        [
+          "aiin",
+          309
+        ],
+        [
+          "ol",
+          298
+        ],
+        [
+          "iin",
+          268
+        ],
+        [
+          "e",
+          267
+        ],
+        [
+          "r",
+          263
+        ],
+        [
+          "t",
+          224
+        ],
+        [
+          "ey",
+          201
+        ]
+      ],
+      "top_middles_after": [
+        [
+          "k",
+          1085
+        ],
+        [
+          "edy",
+          522
+        ],
+        [
+          "l",
+          365
+        ],
+        [
+          "t",
+          305
+        ],
+        [
+          "r",
+          266
+        ],
+        [
+          "e",
+          256
+        ],
+        [
+          "ol",
+          252
+        ],
+        [
+          "dy",
+          250
+        ],
+        [
+          "aiin",
+          234
+        ],
+        [
+          "ey",
+          213
+        ]
+      ]
+    },
+    "e": {
+      "count": 10218,
+      "mean_position": 0.4045,
+      "roles_before": {
+        "ENERGY_OPERATOR": 3071,
+        "UN": 2665,
+        "AUXILIARY": 1603,
+        "FREQUENT_OPERATOR": 1089,
+        "FLOW_OPERATOR": 336
+      },
+      "roles_after": {
+        "ENERGY_OPERATOR": 3446,
+        "UN": 2844,
+        "AUXILIARY": 1673,
+        "FREQUENT_OPERATOR": 1090,
+        "FLOW_OPERATOR": 342
+      },
+      "top_middles_before": [
+        [
+          "k",
+          912
+        ],
+        [
+          "edy",
+          828
+        ],
+        [
+          "e",
+          421
+        ],
+        [
+          "l",
+          351
+        ],
+        [
+          "ol",
+          326
+        ],
+        [
+          "aiin",
+          303
+        ],
+        [
+          "ey",
+          297
+        ],
+        [
+          "eey",
+          277
+        ],
+        [
+          "iin",
+          250
+        ],
+        [
+          "r",
+          243
+        ]
+      ],
+      "top_middles_after": [
+        [
+          "k",
+          1309
+        ],
+        [
+          "edy",
+          684
+        ],
+        [
+          "l",
+          396
+        ],
+        [
+          "t",
+          361
+        ],
+        [
+          "e",
+          354
+        ],
+        [
+          "r",
+          302
+        ],
+        [
+          "ke",
+          299
+        ],
+        [
+          "ey",
+          280
+        ],
+        [
+          "aiin",
+          273
+        ],
+        [
+          "eey",
+          264
+        ]
+      ]
+    }
+  },
+  "combinations": {
+    "he": 5005,
+    "k": 2738,
+    "ke": 2599,
+    "h": 2188,
+    "e": 1465,
+    "khe": 1149,
+    "kh": 816
+  },
+  "semantic_assignments": {
+    "k": {
+      "function": "activation",
+      "mean_position": 0.4433,
+      "count": 7302
+    },
+    "h": {
+      "function": "alignment",
+      "mean_position": 0.4104,
+      "count": 9158
+    },
+    "e": {
+      "function": "verification",
+      "mean_position": 0.4045,
+      "count": 10218
+    }
+  }
+}

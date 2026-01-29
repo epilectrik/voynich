@@ -1,0 +1,71 @@
+{
+  "link_tokens": [
+    "tchedy",
+    "ytaiin",
+    "opchedy",
+    "odaiin",
+    "raiin",
+    "keedy",
+    "lshedy",
+    "lkeedy",
+    "ykaiin",
+    "oraiin",
+    "kaiin",
+    "ykeey",
+    "dshedy",
+    "pchedy",
+    "saiin",
+    "lkaiin",
+    "lchedy"
+  ],
+  "total": 812,
+  "position": {
+    "mean": 0.4055,
+    "early_pct": 41.75,
+    "mid_pct": 31.65,
+    "late_pct": 26.6
+  },
+  "roles_before": {
+    "ENERGY_OPERATOR": 250,
+    "UN": 171,
+    "AUXILIARY": 129,
+    "FREQUENT_OPERATOR": 73,
+    "FLOW_OPERATOR": 25,
+    "CORE_CONTROL": 20
+  },
+  "roles_after": {
+    "ENERGY_OPERATOR": 267,
+    "UN": 221,
+    "AUXILIARY": 139,
+    "FREQUENT_OPERATOR": 87,
+    "FLOW_OPERATOR": 24,
+    "CORE_CONTROL": 17
+  },
+  "kernel_before": {
+    "k": 233,
+    "h": 302,
+    "e": 372,
+    "none": 149
+  },
+  "kernel_after": {
+    "k": 274,
+    "h": 327,
+    "e": 365,
+    "none": 189
+  },
+  "fl_stages_before": {
+    "MEDIAL": 99,
+    "TERMINAL": 32,
+    "LATE": 6,
+    "EARLY": 3,
+    "INITIAL": 1
+  },
+  "fl_stages_after": {
+    "MEDIAL": 101,
+    "TERMINAL": 43,
+    "LATE": 15,
+    "INITIAL": 2,
+    "EARLY": 1
+  },
+  "proposed_function": "checkpoint_verify_operator"
+}

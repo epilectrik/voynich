@@ -1,0 +1,62 @@
+{
+  "daiin": {
+    "count": 314,
+    "mean_position": 0.3697,
+    "line_initial_rate": 0.2707,
+    "line_final_rate": 0.0764,
+    "morphology": {
+      "prefix": "da",
+      "middle": "iin",
+      "suffix": null
+    },
+    "proposed_function": "initialization_marker",
+    "roles_before": {
+      "ENERGY_OPERATOR": 86,
+      "UN": 77,
+      "AUXILIARY": 33,
+      "FREQUENT_OPERATOR": 17,
+      "FLOW_OPERATOR": 8,
+      "CORE_CONTROL": 8
+    },
+    "roles_after": {
+      "ENERGY_OPERATOR": 115,
+      "UN": 81,
+      "FREQUENT_OPERATOR": 43,
+      "FLOW_OPERATOR": 21,
+      "AUXILIARY": 21,
+      "CORE_CONTROL": 9
+    }
+  },
+  "ol": {
+    "count": 421,
+    "mean_position": 0.4606,
+    "line_initial_rate": 0.0499,
+    "line_final_rate": 0.095,
+    "morphology": {
+      "prefix": null,
+      "middle": "ol",
+      "suffix": null
+    },
+    "proposed_function": "continuation_marker",
+    "roles_before": {
+      "ENERGY_OPERATOR": 127,
+      "UN": 91,
+      "AUXILIARY": 85,
+      "FREQUENT_OPERATOR": 61,
+      "FLOW_OPERATOR": 23,
+      "CORE_CONTROL": 13
+    },
+    "roles_after": {
+      "ENERGY_OPERATOR": 138,
+      "AUXILIARY": 89,
+      "UN": 79,
+      "FREQUENT_OPERATOR": 47,
+      "FLOW_OPERATOR": 16,
+      "CORE_CONTROL": 12
+    }
+  },
+  "direct_transitions": {
+    "daiin_to_ol": 6,
+    "ol_to_daiin": 5
+  }
+}

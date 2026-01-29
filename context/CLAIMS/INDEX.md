@@ -315,7 +315,22 @@ Every new constraint MUST specify system scope:
 |---|------------|------|-------|--------|
 | 870 | Line-1 HT folio specificity (86% singletons, 1229 Line-1-only) | 2 | HT | → [C870_line1_ht_folio_specificity.md](C870_line1_ht_folio_specificity.md) |
 | 871 | HT role cooccurrence pattern (enriched FL, depleted CC/FQ) | 2 | HT | → [C871_ht_role_cooccurrence_pattern.md](C871_ht_role_cooccurrence_pattern.md) |
-| 872 | HT discrimination vocabulary interpretation | 3 | HT | → [C872_ht_discrimination_vocabulary.md](C872_ht_discrimination_vocabulary.md) |
+| 872 | HT discrimination vocabulary interpretation | 3 | HT | -> [C872_ht_discrimination_vocabulary.md](C872_ht_discrimination_vocabulary.md) |
+
+---
+
+## B Control Flow Semantics (C873-C880)
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| 873 | Kernel positional ordering: e (0.404) < h (0.410) < k (0.443) | 3 | B | -> [C873_kernel_positional_ordering.md](C873_kernel_positional_ordering.md) |
+| 874 | CC token functions: daiin=init (0.370), ol=continue (0.461) | 3 | B | -> [C874_cc_token_functions.md](C874_cc_token_functions.md) |
+| 875 | Escape trigger grammar: 80.4% from hazard FL stages | 3 | B | -> [C875_escape_trigger_grammar.md](C875_escape_trigger_grammar.md) |
+| 876 | LINK checkpoint function (position 0.405, routes to EN) | 3 | B | -> [C876_link_checkpoint_function.md](C876_link_checkpoint_function.md) |
+| 877 | Role transition grammar: EN->EN 38.5%, CC->EN 37.7%, FQ->EN 29.5% | 2 | B | -> [C877_role_transition_grammar.md](C877_role_transition_grammar.md) |
+| 878 | Section program variation: BIO high EN, HERBAL_B high FL/FQ | 2 | B | -> [C878_section_program_variation.md](C878_section_program_variation.md) |
+| 879 | Process domain: batch processing, 59.2% forward bias | 3 | B | -> [C879_process_domain_verdict.md](C879_process_domain_verdict.md) |
+| 880 | Integrated control model: batch processing with escape handling | 3 | B | -> [C880_integrated_control_model.md](C880_integrated_control_model.md) |
 
 ---
 

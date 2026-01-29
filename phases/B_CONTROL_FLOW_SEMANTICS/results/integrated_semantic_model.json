@@ -1,0 +1,122 @@
+{
+  "model_name": "B Control Flow Semantic Model",
+  "version": "1.0",
+  "tier": 3,
+  "date": "2026-01-29",
+  "core_interpretation": "Batch processing control system with forward-biased state progression, exception handling, and kernel-based transitions",
+  "role_semantics": {
+    "ENERGY_OPERATOR": {
+      "abbreviation": "EN",
+      "function": "state_transition_operator",
+      "token_share": 0.312,
+      "kernel_rate": 0.919,
+      "semantic": "Process/transform/operate"
+    },
+    "FLOW_OPERATOR": {
+      "abbreviation": "FL",
+      "function": "material_state_index",
+      "token_share": 0.047,
+      "kernel_rate": 0.0,
+      "stages": [
+        "INITIAL",
+        "EARLY",
+        "MEDIAL",
+        "LATE",
+        "TERMINAL"
+      ],
+      "semantic": "Where material is in process"
+    },
+    "FREQUENT_OPERATOR": {
+      "abbreviation": "FQ",
+      "function": "escape_handler",
+      "token_share": 0.125,
+      "hazard_trigger_rate": 0.804,
+      "semantic": "Handle exception/escape"
+    },
+    "CORE_CONTROL": {
+      "abbreviation": "CC",
+      "function": "control_flow_marker",
+      "token_share": 0.032,
+      "key_tokens": {
+        "daiin": {
+          "function": "initialization",
+          "mean_position": 0.37
+        },
+        "ol": {
+          "function": "continuation",
+          "mean_position": 0.461
+        }
+      },
+      "semantic": "Control flow markers"
+    },
+    "AUXILIARY": {
+      "abbreviation": "AX",
+      "function": "support_and_monitoring",
+      "token_share": 0.179,
+      "includes_link": true,
+      "semantic": "Support operations including LINK monitoring"
+    }
+  },
+  "kernel_semantics": {
+    "k": {
+      "function": "activation",
+      "mean_position": 0.443
+    },
+    "h": {
+      "function": "alignment",
+      "mean_position": 0.41
+    },
+    "e": {
+      "function": "stability_setup",
+      "mean_position": 0.404
+    },
+    "pattern": "e-setup -> h-align -> k-activate",
+    "most_common_combo": "he"
+  },
+  "control_loop": {
+    "canonical_order": "LINK -> KERNEL -> FL",
+    "high_prob_transitions": {
+      "EN_to_EN": 0.385,
+      "CC_to_EN": 0.377,
+      "AX_to_EN": 0.326,
+      "FQ_to_EN": 0.295
+    },
+    "escape_route": {
+      "FL_to_FQ": 0.16,
+      "FQ_recovery_to_EN": 0.295
+    }
+  },
+  "process_domain": {
+    "verdict": "batch_processing_with_correction",
+    "forward_bias": 0.592,
+    "monotonic_rate": 0.597,
+    "loop_rate": 0.017,
+    "backward_rate": 0.408
+  },
+  "confidence_levels": {
+    "HIGH": [
+      "role_distribution",
+      "transition_grammar",
+      "FL_stage_ordering",
+      "CC_positions"
+    ],
+    "MEDIUM": [
+      "kernel_semantics",
+      "escape_triggers",
+      "LINK_function"
+    ],
+    "LOW": [
+      "process_domain",
+      "semantic_labels",
+      "section_differences"
+    ]
+  },
+  "structural_provenance": [
+    "C467",
+    "C552",
+    "C770-C815",
+    "C788-C791",
+    "C804-C809",
+    "C855-C862"
+  ]
+}
