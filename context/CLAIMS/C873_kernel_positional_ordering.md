@@ -4,7 +4,7 @@
 
 ## Statement
 
-Kernel characters show positional ordering: e (0.404) < h (0.410) < k (0.443). The pattern suggests e-setup -> h-align -> k-activate, opposite to the initial hypothesis of k-first.
+Kernel characters show positional ordering: e (0.404) < h (0.410) < k (0.443). This represents a safety interlock pattern: verify stability before applying energy.
 
 ## Evidence
 
@@ -15,9 +15,20 @@ Kernel characters show positional ordering: e (0.404) < h (0.410) < k (0.443). T
 
 ## Interpretation
 
-- 'e' = equilibrium/stability setup (appears first)
-- 'h' = phase/harmony alignment (middle)
-- 'k' = energy/activation (drives changes last)
+The ordering encodes a safe process control sequence:
+
+1. **e first** - "Is the current state stable?" - verify before proceeding
+2. **h middle** - "Is alignment correct?" - phase/prepare
+3. **k last** - "Apply energy" - only after checks pass
+
+This is analogous to: "Don't apply heat until you've observed your preparation is stable."
+
+The "he" combination (31.4%) represents the verification pair - stability check + alignment - that precedes action. The grammar prevents "heating blind."
+
+Supporting evidence:
+- C814 (kernel-escape inverse, rho=-0.528): proper kernel sequence = less escape needed
+- C875 (escape triggers): hazard FL without proper verification triggers escape
+- High kernel rate in stable processing (EN 91.9% kernel)
 
 ## Provenance
 
