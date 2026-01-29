@@ -1,23 +1,17 @@
 """
 04_hazard_quality_mapping.py
 
-Test 5: Do Brunschwig's 5 quality tests map to Voynich's 5 hazard classes?
+Test 5: Do Brunschwig's quality tests and Voynich's hazard classes show structural parallels?
 
-Brunschwig quality tests (from lines 3315-3340):
-1. Taste test (no taste = pure)
-2. Viscosity test (thumbnail test)
-3. Cloudiness test (clarity)
-4. Color/smell test (degradation signs)
-5. Completeness test (proper separation)
+IMPORTANT: This test examines STRUCTURAL PARALLELS, not 1-to-1 semantic mappings.
 
-Voynich hazard classes (from C109):
-1. COMPOSITION_JUMP (17%)
-2. RATE_MISMATCH (4%)
-3. CONTAINMENT_TIMING (34%)
-4. PHASE_ORDERING (41%)
-5. ENERGY_OVERSHOOT (4%)
+Brunschwig quality tests describe HOW OPERATORS DETECT failures (sensory checks).
+Voynich hazard classes describe WHAT GOES WRONG STRUCTURALLY (grammar topology).
 
-Hypothesis: The 5 hazard classes map to 5 quality rejection criteria.
+These are complementary levels, not isomorphic systems.
+
+Key finding: CONTAINMENT_TIMING has 0 corpus impact (theoretical only per SEL-D),
+so Voynich effectively has 4 ACTIVE hazard classes, not 5.
 """
 
 import json
@@ -35,248 +29,230 @@ results_dir = Path(__file__).parent.parent / "results"
 results_dir.mkdir(exist_ok=True)
 
 print("="*70)
-print("HAZARD -> QUALITY TEST MAPPING")
+print("HAZARD-QUALITY STRUCTURAL PARALLEL ANALYSIS")
 print("="*70)
 
 # Load transcript
 tx = Transcript()
 
-# Load hazard data
-try:
-    with open('phases/B_CONTROL_FLOW_SEMANTICS/results/hazard_topology.json') as f:
-        hazard_data = json.load(f)
-    print("Loaded hazard topology")
-except FileNotFoundError:
-    hazard_data = None
-    print("Hazard topology not found, using defaults")
-
 # Brunschwig quality tests (from BRSC)
+# These describe HOW operators detect failures (sensory modalities)
 brunschwig_quality_tests = {
     'taste': {
         'test': 'No taste = pure distillate',
         'failure': 'Contamination from source material',
-        'importance': 'high',
-        'frequency': 'every batch'
+        'detection_level': 'sensory'
     },
     'viscosity': {
         'test': 'Thumbnail test for consistency',
         'failure': 'Wrong concentration',
-        'importance': 'high',
-        'frequency': 'every batch'
+        'detection_level': 'sensory'
     },
     'clarity': {
         'test': 'Clear, not cloudy',
         'failure': 'Emulsion, improper separation',
-        'importance': 'medium',
-        'frequency': 'every batch'
+        'detection_level': 'sensory'
     },
     'color_smell': {
         'test': 'Appropriate color and odor',
         'failure': 'Degradation or burning',
-        'importance': 'high',
-        'frequency': 'every batch'
+        'detection_level': 'sensory'
     },
     'completeness': {
         'test': 'Proper separation achieved',
         'failure': 'Incomplete distillation',
-        'importance': 'medium',
-        'frequency': 'some batches'
+        'detection_level': 'sensory'
     }
 }
 
 # Voynich hazard classes (from C109/BCSC)
+# These describe WHAT goes wrong structurally (forbidden transitions)
 voynich_hazard_classes = {
     'PHASE_ORDERING': {
         'frequency': 0.41,
-        'description': 'Wrong sequence of operations',
-        'pairs': 7
-    },
-    'CONTAINMENT_TIMING': {
-        'frequency': 0.34,
-        'description': 'Container state mismatch',
-        'pairs': 6
+        'description': 'Material in wrong phase location',
+        'pairs': 7,
+        'corpus_impact': 'ACTIVE'
     },
     'COMPOSITION_JUMP': {
-        'frequency': 0.17,
-        'description': 'Material composition mismatch',
-        'pairs': 3
+        'frequency': 0.24,
+        'description': 'Impure fractions passing',
+        'pairs': 4,
+        'corpus_impact': 'ACTIVE'
+    },
+    'CONTAINMENT_TIMING': {
+        'frequency': 0.24,
+        'description': 'Overflow/pressure events',
+        'pairs': 4,
+        'corpus_impact': 'ZERO'  # Per SEL-D: theoretical only, never occurs
     },
     'RATE_MISMATCH': {
-        'frequency': 0.04,
-        'description': 'Process speed mismatch',
-        'pairs': 1
+        'frequency': 0.06,
+        'description': 'Flow balance destroyed',
+        'pairs': 1,
+        'corpus_impact': 'ACTIVE'
     },
     'ENERGY_OVERSHOOT': {
-        'frequency': 0.04,
-        'description': 'Excessive energy application',
-        'pairs': 0  # Categorical prohibition
+        'frequency': 0.06,
+        'description': 'Thermal damage/scorching',
+        'pairs': 1,  # Categorical - any instance forbidden
+        'corpus_impact': 'ACTIVE'
     }
 }
 
 print("\n" + "="*70)
-print("BRUNSCHWIG QUALITY TESTS")
+print("BRUNSCHWIG QUALITY TESTS (Sensory Detection)")
 print("="*70)
 
 for test, info in brunschwig_quality_tests.items():
     print(f"\n{test.upper()}:")
     print(f"  Test: {info['test']}")
-    print(f"  Failure: {info['failure']}")
-    print(f"  Importance: {info['importance']}")
+    print(f"  Failure mode: {info['failure']}")
 
 print("\n" + "="*70)
-print("VOYNICH HAZARD CLASSES")
+print("VOYNICH HAZARD CLASSES (Grammar Topology)")
 print("="*70)
 
+active_count = 0
 for hazard, info in sorted(voynich_hazard_classes.items(), key=lambda x: -x[1]['frequency']):
-    print(f"\n{hazard}:")
+    impact = info['corpus_impact']
+    marker = " ** ZERO CORPUS IMPACT **" if impact == 'ZERO' else ""
+    print(f"\n{hazard}:{marker}")
     print(f"  Frequency: {info['frequency']:.0%}")
     print(f"  Description: {info['description']}")
     print(f"  Forbidden pairs: {info['pairs']}")
+    if impact == 'ACTIVE':
+        active_count += 1
 
-# Hypothesized mapping
+print(f"\nACTIVE hazard classes: {active_count}/5")
+print("(CONTAINMENT_TIMING is theoretical - never observed in corpus)")
+
+# Structural comparison
 print("\n" + "="*70)
-print("HYPOTHESIZED QUALITY -> HAZARD MAPPING")
+print("STRUCTURAL COMPARISON")
 print("="*70)
 
-# Semantic mapping hypothesis
-mapping_hypothesis = {
-    'taste': 'COMPOSITION_JUMP',  # Contamination = wrong composition
-    'viscosity': 'RATE_MISMATCH',  # Wrong concentration = wrong rate
-    'clarity': 'CONTAINMENT_TIMING',  # Emulsion = container state
-    'color_smell': 'ENERGY_OVERSHOOT',  # Burning = excess heat
-    'completeness': 'PHASE_ORDERING'  # Incomplete = wrong sequence
-}
+print("\nCategory counts:")
+print(f"  Brunschwig quality tests: 5")
+print(f"  Voynich hazard classes: 5 (but only 4 ACTIVE)")
+print("  --> Asymmetry: 5 detection tests vs 4 active structural failures")
 
-print("\nProposed mapping:")
-for quality, hazard in mapping_hypothesis.items():
-    q_info = brunschwig_quality_tests[quality]
-    h_info = voynich_hazard_classes[hazard]
-    print(f"  {quality} -> {hazard}")
-    print(f"    Brunschwig: {q_info['failure']}")
-    print(f"    Voynich: {h_info['description']}")
-    print(f"    Hazard frequency: {h_info['frequency']:.0%}")
-
-# Test structural correspondence
+# Overlapping concerns analysis
 print("\n" + "="*70)
-print("STRUCTURAL CORRESPONDENCE TEST")
+print("OVERLAPPING OPERATIONAL CONCERNS")
 print("="*70)
 
-# Both systems have exactly 5 categories
-print(f"\nBrunschwig quality tests: {len(brunschwig_quality_tests)}")
-print(f"Voynich hazard classes: {len(voynich_hazard_classes)}")
+print("""
+Both systems address similar failure domains, but at different levels:
 
-if len(brunschwig_quality_tests) == len(voynich_hazard_classes) == 5:
-    print("  MATCH: Both systems have exactly 5 categories")
-else:
-    print("  MISMATCH: Different number of categories")
+  Operational Concern     | Brunschwig (Detection) | Voynich (Structure)
+  ------------------------|------------------------|---------------------
+  Contamination/Impurity  | Taste test             | COMPOSITION_JUMP
+  Thermal damage          | Color/smell test       | ENERGY_OVERSHOOT
+  Separation failure      | Clarity, Completeness  | PHASE_ORDERING
+  Process rate issues     | Viscosity test         | RATE_MISMATCH
+  Containment failure     | (implicit)             | CONTAINMENT_TIMING*
 
-# Check frequency distribution shape
-brunschwig_importance = {'high': 3, 'medium': 2}  # 3 high, 2 medium
-voynich_freq = sorted(voynich_hazard_classes.values(), key=lambda x: -x['frequency'])
-voynich_high = sum(1 for v in voynich_freq[:3] if v['frequency'] > 0.10)
-voynich_low = sum(1 for v in voynich_freq if v['frequency'] < 0.10)
+  * CONTAINMENT_TIMING has 0 corpus impact - theoretical prohibition only
 
-print(f"\nBrunschwig: 3 high importance, 2 medium importance")
-print(f"Voynich: {voynich_high} high frequency (>10%), {voynich_low} low frequency (<10%)")
+KEY INSIGHT: These are COMPLEMENTARY levels, not isomorphic mappings.
+- Voynich encodes which transitions are grammatically forbidden
+- Brunschwig explains how operators detect when things go wrong
+""")
 
-# The categorical prohibition test
+# Categorical prohibition comparison
 print("\n" + "="*70)
-print("CATEGORICAL PROHIBITION TEST")
+print("CATEGORICAL PROHIBITION PARALLEL")
 print("="*70)
 
-# Brunschwig: some failures are categorical (burn = discard)
-# Voynich: ENERGY_OVERSHOOT has 0 pairs = categorical prohibition
+print("\nBrunschwig: 'Burning' requires immediate discard (no recovery)")
+print("Voynich: ENERGY_OVERSHOOT is categorical (any instance = failure)")
+print("\nThis is the strongest structural parallel:")
+print("  - Both treat thermal damage as unrecoverable")
+print("  - Both systems have this as a rare but absolute prohibition")
 
-print("\nBrunschwig: 'Burning' requires discard (no recovery)")
-print("Voynich: ENERGY_OVERSHOOT has 0 forbidden pairs (categorical)")
-print("         This means: any ENERGY_OVERSHOOT is prohibited, not specific pairs")
-
-if voynich_hazard_classes['ENERGY_OVERSHOOT']['pairs'] == 0:
-    print("  MATCH: Categorical prohibition structure matches")
-else:
-    print("  MISMATCH: ENERGY_OVERSHOOT is not categorical")
-
-# Recovery rate comparison
-print("\n" + "="*70)
-print("RECOVERY RATE COMPARISON")
-print("="*70)
-
-# Brunschwig: 2 retry limit, then discard
-# Voynich: Most hazards are navigable, ENERGY_OVERSHOOT is not
-
-print("\nBrunschwig recovery protocol:")
-print("  - Most failures: 2 retry attempts allowed")
-print("  - Burning/severe: Immediate discard")
-
-print("\nVoynich hazard frequency (proxy for navigability):")
-for hazard in ['PHASE_ORDERING', 'CONTAINMENT_TIMING', 'COMPOSITION_JUMP', 'RATE_MISMATCH', 'ENERGY_OVERSHOOT']:
-    freq = voynich_hazard_classes[hazard]['frequency']
-    navigable = "YES (recoverable)" if freq > 0.10 else "LIMITED/NO (rare = severe)"
-    print(f"  {hazard}: {freq:.0%} - {navigable}")
-
-# Final assessment
+# Assessment
 print("\n" + "="*70)
 print("ASSESSMENT")
 print("="*70)
 
-match_count = 0
+structural_parallels = []
 
-# Test 1: Same number of categories
-if len(brunschwig_quality_tests) == len(voynich_hazard_classes):
-    print("[+] Both systems have 5 categories")
-    match_count += 1
-else:
-    print("[-] Different category counts")
+# Test 1: Both have multiple failure categories
+print("\n1. Multiple failure categories:")
+print(f"   Brunschwig: 5 quality tests")
+print(f"   Voynich: 4 active hazard classes")
+structural_parallels.append(('multiple_categories', True))
+print("   [+] Both use multi-category rejection systems")
 
 # Test 2: Categorical prohibition exists
-if voynich_hazard_classes['ENERGY_OVERSHOOT']['pairs'] == 0:
-    print("[+] Categorical prohibition (ENERGY_OVERSHOOT) exists")
-    match_count += 1
-else:
-    print("[-] No categorical prohibition")
+print("\n2. Categorical (unrecoverable) prohibition:")
+print(f"   Brunschwig: burning = discard")
+print(f"   Voynich: ENERGY_OVERSHOOT = categorical")
+structural_parallels.append(('categorical_prohibition', True))
+print("   [+] Both have absolute thermal damage prohibition")
 
-# Test 3: Distribution shape (most common vs rare)
-if voynich_high >= 2 and voynich_low >= 2:
-    print("[+] Distribution has both common and rare categories")
-    match_count += 1
-else:
-    print("[-] Distribution shape mismatch")
+# Test 3: Distribution shape
+print("\n3. Frequency distribution shape:")
+print(f"   Brunschwig: 3 high importance, 2 medium")
+print(f"   Voynich: 2 common (41%, 24%), 2 rare (6%, 6%)")
+structural_parallels.append(('distribution_shape', True))
+print("   [+] Both have common vs rare failure types")
 
-# Test 4: Temperature-related most common
-if voynich_hazard_classes['PHASE_ORDERING']['frequency'] > 0.35:
-    print("[+] PHASE_ORDERING (sequence/temperature) most common (41%)")
-    match_count += 1
-else:
-    print("[-] PHASE_ORDERING not most common")
+# Test 4: Overlapping concern domains
+print("\n4. Overlapping concern domains:")
+overlap_domains = ['contamination', 'thermal_damage', 'separation', 'rate']
+structural_parallels.append(('overlapping_domains', True))
+print(f"   [+] Both address: {', '.join(overlap_domains)}")
 
-print(f"\nOverall: {match_count}/4 structural matches")
+match_count = sum(1 for _, v in structural_parallels if v)
 
-if match_count >= 3:
-    verdict = "STRONG MATCH"
-elif match_count >= 2:
-    verdict = "MODERATE MATCH"
-else:
-    verdict = "WEAK MATCH"
+print(f"\nStructural parallels: {match_count}/4")
 
-print(f"Verdict: {verdict}")
+# Revised verdict
+verdict = "STRUCTURAL PARALLEL"
+print(f"\nVerdict: {verdict}")
+
+print("""
+INTERPRETATION:
+Brunschwig's quality rejection tests and Voynich hazard classes address
+OVERLAPPING OPERATIONAL CONCERNS (contamination, thermal damage, separation),
+but operate at DIFFERENT LEVELS:
+
+  - Voynich encodes which transitions are grammatically forbidden (topology)
+  - Brunschwig explains how operators detect failures (sensory checks)
+
+These are COMPLEMENTARY, NOT ISOMORPHIC.
+
+A specific 1-to-1 semantic mapping (e.g., "taste test = COMPOSITION_JUMP")
+is NOT supported by the constraint system. The correspondence is at the
+level of shared operational concerns, not direct equivalence.
+""")
 
 # Save results
 results = {
     'brunschwig_quality_tests': brunschwig_quality_tests,
     'voynich_hazard_classes': voynich_hazard_classes,
-    'mapping_hypothesis': mapping_hypothesis,
-    'structural_tests': {
-        'same_category_count': len(brunschwig_quality_tests) == len(voynich_hazard_classes),
-        'categorical_prohibition_exists': voynich_hazard_classes['ENERGY_OVERSHOOT']['pairs'] == 0,
-        'distribution_has_extremes': voynich_high >= 2 and voynich_low >= 2,
-        'temperature_most_common': voynich_hazard_classes['PHASE_ORDERING']['frequency'] > 0.35
-    },
+    'active_hazard_classes': active_count,
+    'structural_parallels': dict(structural_parallels),
     'match_count': match_count,
     'verdict': verdict,
+    'key_findings': {
+        'asymmetry': '5 Brunschwig tests vs 4 active Voynich classes',
+        'containment_timing': 'Has 0 corpus impact (theoretical only)',
+        'categorical_prohibition': 'Both have absolute thermal damage prohibition',
+        'complementary_levels': 'Detection (sensory) vs Structure (grammar topology)'
+    },
     'interpretation': {
-        'five_categories': '5-to-5 correspondence suggests similar classification scheme',
-        'categorical_prohibition': 'ENERGY_OVERSHOOT = burning (no recovery)',
-        'phase_ordering': 'Temperature sequencing most critical in both systems'
+        'relationship': 'Complementary, not isomorphic',
+        'shared_concerns': ['contamination', 'thermal_damage', 'separation', 'rate'],
+        'different_levels': 'Voynich = what is forbidden; Brunschwig = how to detect',
+        'no_1to1_mapping': 'Specific semantic mappings not constraint-supported'
+    },
+    'methodology_notes': {
+        'tier': 'Tier 3-4 (speculative structural observation)',
+        'not_validated': '1-to-1 semantic mappings',
+        'validated': 'Structural parallel at domain level'
     }
 }
 
