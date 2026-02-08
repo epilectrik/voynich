@@ -19,10 +19,12 @@ Usage:
 """
 
 import csv
+import json
+from datetime import datetime
 from pathlib import Path
 from dataclasses import dataclass
 from typing import Optional, Iterator, List, Set, Tuple, Dict
-from collections import Counter
+from collections import Counter, defaultdict
 
 # ============================================================
 # PATHS
@@ -1148,6 +1150,2098 @@ class PPSemantics:
 
 
 # ============================================================
+# B FOLIO DECODER
+# ============================================================
+# Consolidates structural knowledge for decoding Currier B folios.
+# Based on constraints: C371-378, C510-522, C766-769, C884, C906-907,
+#                      F-BRU-011, F-BRU-018-020
+
+@dataclass
+class BTokenAnalysis:
+    """
+    Complete analysis of a single Currier B token.
+
+    Combines morphological decomposition with functional role classification
+    and semantic markers from the constraint system.
+    """
+    word: str
+    morph: MorphAnalysis
+
+    # Role classification (Tier 0-2, from C371-378)
+    prefix_role: Optional[str]   # EN_KERNEL, EN_QO, AX_SCAFFOLD, etc.
+    suffix_role: Optional[str]   # KERN_HEAVY, LINK_ATTR, LINE_FINAL, etc.
+
+    # MIDDLE analysis (F-BRU-011)
+    middle_tier: Optional[str]   # PREP, THERMO, EXTENDED
+    middle_meaning: Optional[str]  # Brunschwig-grounded description
+
+    # FL state classification (C777, FL_SEMANTIC_INTERPRETATION)
+    fl_stage: Optional[str]      # INITIAL, EARLY, MEDIAL, LATE, TERMINAL
+    fl_meaning: Optional[str]    # State index description
+    is_fl_role: bool             # True if FL-role token (pure FL vocab, no kernel/helper)
+
+    # HT (Human Track) classification (C740, C747, C872)
+    is_ht: bool                  # True if HT/UN token (unclassified, identification layer)
+
+    # Kernel content
+    kernels: List[str]           # ['k'], ['h', 'e'], etc.
+
+    # Material/output markers (C884, F-BRU-018-020)
+    material_markers: List[str]  # ['ANIMAL'], ['ROOT'], []
+    output_markers: List[str]    # ['OIL'], ['WATER'], []
+
+    # Positional info
+    is_line_initial: bool
+    is_line_final: bool
+
+    # Execution roles (C556 phases, C539 suffix roles)
+    prefix_phase: Optional[str]      # SETUP, PREP, WORK, CLOSE (C556)
+    suffix_terminal: Optional[str]   # TERMINAL, CHECKPOINT, CONNECTOR
+
+    # MIDDLE semantic profile (MIDDLE_SEMANTIC_MAPPING phase)
+    middle_kernel: Optional[str]     # K, H, E - kernel correlation
+    middle_regime: Optional[str]     # PRECISION, HIGH_ENERGY, SETTLING
+    middle_section: Optional[str]    # HERBAL, BIO, STARS
+
+    def structural(self) -> str:
+        """
+        Tier 0-2 technical representation.
+
+        Returns structural role codes for precise analysis.
+        """
+        parts = []
+        if self.prefix_role:
+            parts.append(self.prefix_role)
+        if self.middle_tier:
+            parts.append(self.middle_tier)
+        if self.fl_stage:
+            parts.append(f"FL:{self.fl_stage}")
+        if self.suffix_role:
+            parts.append(self.suffix_role)
+        if self.kernels:
+            parts.append(f"kern:{','.join(self.kernels)}")
+        return ' + '.join(parts) if parts else '(unclassified)'
+
+    def interpretive(self) -> str:
+        """
+        Auto-composed interpretive gloss.
+
+        Priority:
+        1. Whole-token gloss from TokenDictionary (manual, if set)
+        2. Auto-composed: PREFIX_ACTION + MIDDLE_GLOSS + SUFFIX_GLOSS
+        3. Structural fallback: [LANE] middle:kernel [-suffix PROPS]
+
+        Auto-composition activates when MIDDLE has a learned or tier-based
+        gloss. Otherwise falls back to structural format.
+        """
+        # 1. WHOLE-TOKEN LOOKUP (manual gloss takes priority)
+        if hasattr(self, '_token_dict') and self._token_dict:
+            gloss = self._token_dict.get_gloss(self.word)
+            if gloss:
+                # Expand *middle references to middle dictionary glosses
+                if '*' in gloss and hasattr(self, '_middle_dict') and self._middle_dict:
+                    import re
+                    def replace_middle_ref(match):
+                        mid_name = match.group(1)
+                        mid_gloss = self._middle_dict.get_gloss(mid_name)
+                        return mid_gloss if mid_gloss else f"[{mid_name}]"
+                    gloss = re.sub(r'\*(\w+)', replace_middle_ref, gloss)
+                return gloss
+
+        middle = self.morph.middle if self.morph else None
+        prefix = self.morph.prefix if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        # 2. AUTO-COMPOSED GLOSS (when MIDDLE meaning is known)
+        mid_meaning = None
+        if middle:
+            # Dictionary gloss first (manually curated)
+            if hasattr(self, '_middle_dict') and self._middle_dict:
+                mid_meaning = self._middle_dict.get_gloss(middle)
+            # Fall back to middle_tiers gloss (F-BRU tier-based)
+            # Skip when prefix_role is PREP_TIER — middle_meaning was overridden
+            # with the prep action, not the actual MIDDLE semantics
+            # Skip "contains X" substring matches — compound decomposition is better
+            if not mid_meaning and self.middle_meaning and self.prefix_role != 'PREP_TIER':
+                if not str(self.middle_meaning).startswith('contains '):
+                    mid_meaning = self.middle_meaning
+
+            # Compound MIDDLE decomposition: atom_gloss (+extension_gloss)
+            # Compound MIDDLEs = PP atom + parameter extensions (C872, C522)
+            if not mid_meaning:
+                mid_meaning = self._compose_compound_gloss(middle)
+
+        if mid_meaning:
+            # Compose: [PREFIX_ACTION] MIDDLE_MEANING [SUFFIX_GLOSS]
+            composed = []
+
+            # Prefix: use prep action if available, otherwise lane tag
+            # For qo: suppress prefix verb in compose path. qo is the default
+            # execution pathway (EN_QO, 17.6% of B tokens). The MIDDLE meaning
+            # already carries the full operation — "heat-check" not "execute
+            # heat-check". Other prefixes keep their verbs for contrast:
+            # "test heat" (ch), "monitor heat" (sh), "store heat" (ol).
+            prep_action = None
+            if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
+                prep_action = self._prefix_actions.get(prefix)
+
+            if prep_action:
+                composed.append(prep_action)
+            elif prefix and prefix != 'qo':
+                lane = self._get_prefix_lane(prefix)
+                composed.append(f"[{lane}]")
+
+            # Suffix-into-operation composition for k-MIDDLE:
+            # Folds suffix semantics INTO the heat term so each k+suffix
+            # renders as a distinct heat operation.
+            # Criterion suffixes: k+edy B-enriched 2.08x, k+eey S-enriched
+            # 1.25x, k+ey B-enriched 1.54x.
+            # Gate suffixes: k+ain B-enriched 1.92x (inline check, self-chains),
+            # k+aiin evenly distributed (quality gate, follows thorough ops).
+            _K_SUFFIX_COMPOSE = {
+                'edy':  'thorough heat',   # complete heat cycle (B 2.08x)
+                'eey':  'prolonged heat',  # extended = sustained duration (S 1.25x)
+                'ey':   'selective heat',  # selective = targeted application (B 1.54x)
+                'ain':  'heat-check',      # inline progress check (B 1.92x, self-chains)
+                'aiin': 'heat-verify',     # quality gate (even distribution, post-thorough)
+            }
+            suffix_consumed = False
+            if middle == 'k' and suffix in _K_SUFFIX_COMPOSE:
+                composed.append(_K_SUFFIX_COMPOSE[suffix])
+                suffix_consumed = True
+            else:
+                composed.append(mid_meaning)
+
+            # FL-role marking
+            if self.is_fl_role:
+                composed.append('{FL}')
+
+            # Suffix: use interpretive gloss if available (skip if already composed)
+            if not suffix_consumed and suffix and hasattr(self, '_suffix_gloss'):
+                suf_gloss = self._suffix_gloss.get(suffix)
+                if suf_gloss:
+                    composed.append(suf_gloss)
+                else:
+                    composed.append(f"[-{suffix}]")
+            return ' '.join(composed)
+
+        # 3. STRUCTURAL FALLBACK (no MIDDLE meaning available)
+        parts = []
+
+        if prefix:
+            # Use prep action verb when available, lane tag otherwise
+            prep_action = None
+            if hasattr(self, '_prefix_actions'):
+                prep_action = self._prefix_actions.get(prefix)
+            if prep_action:
+                parts.append(prep_action)
+            else:
+                lane = self._get_prefix_lane(prefix)
+                parts.append(f"[{lane}]")
+
+        if middle:
+            kernel_hint = ''
+            if self.kernels:
+                kernel_hint = ':' + ''.join(sorted(self.kernels))
+            parts.append(f"{middle}{kernel_hint}")
+
+        if self.is_fl_role:
+            parts.append('{FL}')
+
+        # Suffix structural properties (C375-378)
+        suffix_props = {
+            'dy': 'K+', 'edy': 'K+', 'ey': 'K+ IN', 'eey': 'K+',
+            'hy': 'IN', 'ly': 'K+', 'ry': 'OUT', 'y': '',
+            'r': 'L+ IN', 'l': 'L+', 'in': 'L+',
+            'ar': 'L+ IN', 'or': 'L+ IN', 'al': 'L+ IN', 'ol': 'L+',
+            'am': 'LF', 'om': 'LF', 'im': 'LF', 'oly': 'LF',
+            'aiin': 'L+', 'ain': 'L+', 'iin': 'L+', 'oiin': 'L+',
+            's': '', 'an': '',
+        }
+        if suffix:
+            props = suffix_props.get(suffix, '')
+            if props:
+                parts.append(f"[-{suffix} {props}]")
+            else:
+                parts.append(f"[-{suffix}]")
+
+        return ' '.join(parts) if parts else self.word
+
+    def flow_gloss(self) -> dict:
+        """Three-layer flow rendering: FL_STAGE + OPERATION + CONTROL_FLOW.
+
+        Returns dict with keys:
+            fl_stage: INITIAL/EARLY/MEDIAL/LATE/TERMINAL (only for FL-role tokens)
+            fl_meaning: Tier 4 semantic description (only for FL-role tokens)
+            operation: prefix_verb + middle_gloss (no suffix punctuation)
+            flow: suffix control-flow label (CHECKPOINT, ITERATE, etc.)
+            flow_type: GATE/LOOP/CHECK/HOLD/TERMINAL/CRITERION/SEQUENCE/MOVE
+        """
+        result = {
+            'fl_stage': self.fl_stage if self.is_fl_role else None,
+            'fl_meaning': self.fl_meaning if self.is_fl_role else None,
+            'operation': '',
+            'flow': '',
+            'flow_type': '',
+        }
+
+        # OPERATION layer: prefix verb + middle gloss
+        middle = self.morph.middle if self.morph else None
+        prefix = self.morph.prefix if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        mid_meaning = None
+        if middle and hasattr(self, '_middle_dict') and self._middle_dict:
+            mid_meaning = self._middle_dict.get_gloss(middle)
+        if not mid_meaning and self.middle_meaning and self.prefix_role != 'PREP_TIER':
+            if not str(self.middle_meaning).startswith('contains '):
+                mid_meaning = self.middle_meaning
+        # Compound MIDDLE decomposition (same as interpretive())
+        if not mid_meaning and middle:
+            mid_meaning = self._compose_compound_gloss(middle)
+
+        # For qo: suppress prefix verb (same as interpretive())
+        prep_action = None
+        if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
+            prep_action = self._prefix_actions.get(prefix)
+
+        # Suffix-into-operation composition for k-MIDDLE (same as interpretive())
+        _K_SUFFIX_COMPOSE = {
+            'edy':  'thorough heat',
+            'eey':  'prolonged heat',
+            'ey':   'selective heat',
+            'ain':  'heat-check',
+            'aiin': 'heat-verify',
+        }
+        suffix_consumed = False
+        if middle == 'k' and suffix in _K_SUFFIX_COMPOSE:
+            effective_mid = _K_SUFFIX_COMPOSE[suffix]
+            suffix_consumed = True
+        else:
+            effective_mid = mid_meaning
+
+        if prep_action and effective_mid:
+            result['operation'] = f"{prep_action} {effective_mid}"
+        elif prep_action:
+            result['operation'] = prep_action
+        elif prefix and effective_mid:
+            lane = self._get_prefix_lane(prefix)
+            result['operation'] = f"[{lane}] {effective_mid}"
+        elif effective_mid:
+            result['operation'] = effective_mid
+        else:
+            result['operation'] = self.word
+
+        # FLOW layer: suffix control-flow semantics (skip if suffix was composed into operation)
+        if not suffix_consumed and suffix and hasattr(self, '_suffix_flow'):
+            flow_entry = self._suffix_flow.get(suffix, {})
+            result['flow'] = flow_entry.get('value', '')
+            result['flow_type'] = flow_entry.get('flow_type', '')
+
+        return result
+
+    def _decompose_compound(self, middle: str):
+        """Decompose compound MIDDLE into (atom, pre_ext, suf_ext).
+
+        Finds the longest core PP atom contained in the MIDDLE.
+        Returns (atom, pre_ext, suf_ext) tuple or None.
+        """
+        if not hasattr(self, '_mid_analyzer') or not self._mid_analyzer:
+            return None
+        core = self._mid_analyzer._core_middles
+        if not core or middle in core:
+            return None  # Already a core atom, no decomposition needed
+
+        best = None
+        for atom in sorted(core, key=len, reverse=True):
+            idx = middle.find(atom)
+            if idx >= 0:
+                pre = middle[:idx]
+                post = middle[idx + len(atom):]
+                ext_len = len(pre) + len(post)
+                if ext_len <= 3 and (best is None or ext_len < best[3]):
+                    best = (atom, pre, post, ext_len)
+
+        if best:
+            return (best[0], best[1], best[2])
+        return None
+
+    def _compose_compound_gloss(self, middle: str):
+        """Try to compose a gloss for a compound MIDDLE from atom + extension meanings.
+
+        Uses PP atom gloss as the base operation, with extension character
+        glosses as parameters. Compound MIDDLEs specify WHICH variant of an
+        operation, not a different operation (C872, C522).
+        """
+        decomp = self._decompose_compound(middle)
+        if not decomp:
+            return None
+        atom, pre_ext, suf_ext = decomp
+
+        # Get atom gloss
+        atom_gloss = None
+        if hasattr(self, '_middle_dict') and self._middle_dict:
+            atom_gloss = self._middle_dict.get_gloss(atom)
+        if not atom_gloss:
+            return None
+
+        # Get extension glosses from single-char MIDDLE meanings
+        ext_glosses = []
+        for ch in pre_ext + suf_ext:
+            if hasattr(self, '_middle_dict') and self._middle_dict:
+                g = self._middle_dict.get_gloss(ch)
+                if g:
+                    ext_glosses.append(g)
+
+        if ext_glosses:
+            return f"{atom_gloss} (+{', '.join(ext_glosses)})"
+        elif pre_ext or suf_ext:
+            return f"{atom_gloss} (+{pre_ext}{suf_ext})"
+        else:
+            return atom_gloss
+
+    @staticmethod
+    def _get_prefix_lane(prefix: str) -> str:
+        """Map prefix to execution lane for display."""
+        lanes = {
+            'qo': 'QO', 'ok': 'QO', 'ot': 'QO', 'o': 'QO',
+            'ko': 'QO', 'to': 'QO', 'po': 'QO',
+            'ch': 'CHSH', 'sh': 'CHSH', 'lsh': 'CHSH',
+            'pch': 'PREP', 'tch': 'PREP', 'lch': 'PREP', 'dch': 'PREP',
+            'fch': 'PREP', 'kch': 'PREP', 'rch': 'PREP', 'sch': 'PREP',
+            'da': 'SETUP', 'sa': 'SETUP', 'so': 'SETUP',
+            'al': 'CLOSE', 'ar': 'CLOSE', 'or': 'CLOSE', 'ol': 'CLOSE',
+            'lk': 'LINK', 'lo': 'LINK',
+            'yk': 'INIT', 'ka': 'MAINT', 'ta': 'XFER',
+            'ct': 'CTRL', 'ck': 'CTRL',
+            'ke': 'KE', 'te': 'TE',
+        }
+        return lanes.get(prefix, prefix.upper())
+
+
+@dataclass
+class BFolioAnalysis:
+    """
+    Complete analysis of a Currier B folio.
+
+    Aggregates token-level analysis into folio-level interpretation
+    including kernel balance, material category, and output type.
+    """
+    folio: str
+    token_count: int
+    tokens: List[BTokenAnalysis]
+
+    # Aggregate distributions
+    prefix_role_dist: Dict[str, int]
+    suffix_role_dist: Dict[str, int]
+    middle_tier_dist: Dict[str, int]
+    kernel_dist: Dict[str, int]
+
+    # Interpretations
+    kernel_balance: str          # 'ESCAPE_DOMINANT', 'ENERGY_DOMINANT', etc.
+    material_category: str       # 'ANIMAL', 'ROOT', 'DELICATE_PLANT'
+    output_category: str         # 'WATER', 'OIL', 'PRECISION'
+
+    # Classification rates
+    prefix_classified_pct: float
+    suffix_classified_pct: float
+    middle_classified_pct: float
+
+
+@dataclass
+class BLineAnalysis:
+    """
+    Line-level analysis of a Currier B control block.
+
+    Lines are formal control blocks (C357), not scribal wrapping.
+    Each line represents a micro-stage in the procedure.
+    """
+    line_id: str
+    tokens: List[BTokenAnalysis]
+    token_count: int
+
+    # Line structure (C357-358)
+    has_init_marker: bool        # daiin, saiin at start
+    has_final_marker: bool       # am, oly, dy at end
+    init_token: Optional[str]    # The actual init token
+    final_token: Optional[str]   # The actual final token
+
+    # FL progression through line
+    fl_stages: List[str]         # Sequence of FL stages
+    fl_progression: str          # 'FORWARD', 'STATIC', 'MIXED'
+
+    # Kernel sequence (C873: e < h < k)
+    kernel_sequence: List[str]   # Order of kernels encountered
+    kernel_order_compliant: bool # Does it follow e->h->k pattern?
+
+    # Role sequence
+    role_sequence: List[str]     # Sequence of prefix roles
+
+    # Line-level interpretation
+    line_type: str               # 'INIT', 'PROCESS', 'TERMINAL', 'ESCAPE', 'HEADER'
+    is_header: bool = False      # C747: Line-1 is 50% HT, non-operational
+
+    def structural(self) -> str:
+        """Tier 0-2 technical line summary."""
+        parts = []
+        if self.has_init_marker:
+            parts.append(f"INIT:{self.init_token}")
+        if self.fl_stages:
+            parts.append(f"FL:{self.fl_progression}")
+        if self.kernel_sequence:
+            parts.append(f"kern:[{','.join(self.kernel_sequence)}]")
+        if self.has_final_marker:
+            parts.append(f"FINAL:{self.final_token}")
+        return ' | '.join(parts) if parts else '(no structure)'
+
+    def interpretive(self) -> str:
+        """Tier 3-4 human-readable line summary."""
+        # C747: Line-1 is HEADER (50% HT, non-operational)
+        if self.is_header:
+            return f"[HEADER] Identification line - {self.token_count} tokens (50% unclassified per C747)"
+
+        parts = []
+
+        # Line structure follows SETUP->WORK->CLOSE pattern (C556)
+        setup_roles = {'CC_INIT', 'PREP_TIER', 'AX_SCAFFOLD'}
+        work_roles = {'EN_KERNEL', 'EN_QO'}
+        close_roles = {'AX_LATE', 'FL_FINAL'}
+
+        has_setup = any(r in setup_roles for r in self.role_sequence[:2] if r)
+        has_work = any(r in work_roles for r in self.role_sequence)
+        has_close = any(r in close_roles for r in self.role_sequence[-2:] if r)
+
+        # Opening
+        if self.has_init_marker:
+            if self.init_token and 'daiin' in self.init_token:
+                parts.append("Begin procedure")
+            else:
+                parts.append("Start step")
+        elif has_setup and 'PREP_TIER' in self.role_sequence[:2]:
+            parts.append("Prepare material")
+
+        # Main action based on line type
+        type_gloss = {
+            'INIT': 'setting up',
+            'PROCESS': 'processing material',
+            'TERMINAL': 'finishing step',
+            'ESCAPE': 'handling exception',
+            'MONITOR': 'checking progress',
+        }
+        if self.line_type in type_gloss:
+            parts.append(type_gloss[self.line_type])
+
+        # FL progression
+        if self.fl_progression == 'FORWARD':
+            parts.append('(progressing)')
+        elif self.fl_progression == 'STATIC':
+            parts.append('(steady state)')
+
+        # Closing
+        if self.has_final_marker:
+            parts.append("-> done")
+
+        return ' - '.join(parts) if parts else f"Line with {self.token_count} operations"
+
+    def flow_render(self) -> str:
+        """Render line as operations with control-flow labels and inline FL markers."""
+        if not self.tokens:
+            return ''
+
+        parts = []
+        for tok in self.tokens:
+            fg = tok.flow_gloss()
+            s = fg['operation']
+            if fg['fl_stage']:
+                s += f" {{FL:{fg['fl_stage']}}}"
+            if fg['flow']:
+                s += f" [{fg['flow']}]"
+            parts.append(s)
+
+        return ' -> '.join(parts)
+
+
+@dataclass
+class BParagraphAnalysis:
+    """
+    Paragraph-level analysis of a Currier B operational unit.
+
+    CRITICAL: Paragraphs are PARALLEL_PROGRAMS (C855), NOT sequential stages.
+    Each paragraph is an independent mini-program. Do NOT assume sequential
+    progression between paragraphs.
+
+    Paragraph boundaries detected by gallows-initial lines (C827):
+    k, t, p, f at line start indicate new operational unit.
+    """
+    paragraph_id: str               # P1, P2, P3...
+    lines: List[BLineAnalysis]
+    line_count: int
+    token_count: int
+
+    # Paragraph structure
+    boundary_token: Optional[str]   # The gallows token that started this paragraph
+    is_gallows_initial: bool        # Did paragraph start with gallows?
+
+    # Aggregate from lines
+    kernel_dist: Dict[str, int]
+    role_dist: Dict[str, int]
+    fl_distribution: Dict[str, int]  # INITIAL/EARLY/MEDIAL/LATE/TERMINAL counts
+
+    # Line type composition
+    init_lines: int                 # Lines with init markers
+    process_lines: int              # Normal processing lines
+    escape_lines: int               # Lines with backward FL
+    terminal_lines: int             # Lines with terminal markers
+
+    # Paragraph characterization
+    kernel_balance: str             # ESCAPE_DOMINANT, ENERGY_DOMINANT, etc.
+    dominant_role: Optional[str]    # Most common prefix role
+    fl_trend: str                   # EARLY_HEAVY, LATE_HEAVY, DISTRIBUTED
+
+    def structural(self) -> str:
+        """Tier 0-2 technical paragraph summary."""
+        parts = [f"{self.paragraph_id}"]
+        if self.boundary_token:
+            parts.append(f"({self.boundary_token})")
+        parts.append(f": {self.line_count}L/{self.token_count}T")
+
+        if self.kernel_dist:
+            k_str = ','.join(f"{k}:{v}" for k, v in sorted(self.kernel_dist.items()))
+            parts.append(f"kern=[{k_str}]")
+
+        parts.append(f"type=[{self.kernel_balance}]")
+        if self.dominant_role:
+            parts.append(f"role={self.dominant_role}")
+
+        return ' | '.join(parts)
+
+    def interpretive(self) -> str:
+        """Tier 3-4 human-readable paragraph summary."""
+        parts = []
+
+        # Kernel balance interpretation
+        balance_gloss = {
+            'ESCAPE_DOMINANT': "Waiting/settling phase",
+            'ENERGY_DOMINANT': "Active heating phase",
+            'HAZARD_HEAVY': "Careful monitoring phase",
+            'BALANCED': "Mixed operations",
+            'NO_KERNELS': "Control/setup phase",
+        }
+        parts.append(balance_gloss.get(self.kernel_balance, self.kernel_balance))
+
+        # Line composition hint
+        if self.escape_lines > self.line_count * 0.3:
+            parts.append("with exception handling")
+        if self.init_lines > 0:
+            parts.append("with initialization")
+        if self.terminal_lines > 0:
+            parts.append("to completion")
+
+        # FL trend
+        fl_gloss = {
+            'EARLY_HEAVY': "(early-stage focus)",
+            'LATE_HEAVY': "(late-stage focus)",
+            'TERMINAL_HEAVY': "(finishing)",
+        }
+        if self.fl_trend in fl_gloss:
+            parts.append(fl_gloss[self.fl_trend])
+
+        return ' - '.join(parts) if parts else f"Paragraph with {self.line_count} steps"
+
+
+class BFolioDecoder:
+    """
+    Decoder for Currier B folios using consolidated structural knowledge.
+
+    Uses constraints: C371-378, C510-522, C766-769, C884, C906-907,
+                     F-BRU-011, F-BRU-018-020
+
+    Two output modes:
+    - Structural (Tier 0-2): Technical constraint-based terminology
+    - Interpretive (Tier 3-4): Brunschwig-grounded human-readable
+
+    Example:
+        decoder = BFolioDecoder()
+        analysis = decoder.analyze_folio('f107r')
+        print(analysis.kernel_balance)      # 'ESCAPE_DOMINANT'
+        print(analysis.material_category)   # 'ANIMAL'
+        print(decoder.decode_summary('f107r'))
+    """
+
+    # Maps are loaded from data/decoder_maps.json at init.
+    # See that file for constraint citations per entry.
+    DECODER_MAPS_PATH = PROJECT_ROOT / 'data' / 'decoder_maps.json'
+
+    @classmethod
+    def _load_maps(cls) -> dict:
+        """Load decoder maps from external JSON file."""
+        with open(cls.DECODER_MAPS_PATH, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data['maps']
+
+    @staticmethod
+    def _extract_simple(map_data: dict) -> dict:
+        """Extract {key: value} from map entries."""
+        return {k: v['value'] for k, v in map_data['entries'].items()}
+
+    @staticmethod
+    def _extract_tuple(map_data: dict) -> dict:
+        """Extract {key: (category, gloss)} from map entries."""
+        return {k: (v['category'], v['gloss']) for k, v in map_data['entries'].items()}
+
+    def __init__(self):
+        self.tx = Transcript()
+        self.morph = Morphology()
+        self.token_dict = TokenDictionary()
+        self.middle_dict = MiddleDictionary()
+
+        # MiddleAnalyzer for compound MIDDLE decomposition (C872, C522)
+        self.mid_analyzer = MiddleAnalyzer()
+        self.mid_analyzer.build_inventory('B')
+
+        # Load maps from external JSON
+        maps = self._load_maps()
+
+        # Simple string-value maps
+        self.PREFIX_PHASE = self._extract_simple(maps['prefix_phase'])
+        self.PREFIX_ROLES = self._extract_simple(maps['prefix_roles'])
+        self.SUFFIX_GLOSS = self._extract_simple(maps['suffix_gloss'])
+        self.SUFFIX_TERMINAL = self._extract_simple(maps['suffix_terminal'])
+        self.SUFFIX_ROLES = self._extract_simple(maps['suffix_roles'])
+        self.PREFIX_ACTIONS = self._extract_simple(maps['prefix_actions'])
+        self.BRUNSCHWIG_GLOSS = self._extract_simple(maps['brunschwig_gloss'])
+        self.MIDDLE_KERNEL_PROFILE = self._extract_simple(maps['middle_kernel_profile'])
+        self.MIDDLE_REGIME = self._extract_simple(maps['middle_regime'])
+        self.MIDDLE_SECTION = self._extract_simple(maps['middle_section'])
+
+        # Dict-value maps (suffix_flow: {key: {value, flow_type}})
+        self.SUFFIX_FLOW = {k: v for k, v in maps['suffix_flow']['entries'].items()}
+
+        # Tuple-value maps (category, gloss)
+        self.MIDDLE_TIERS = self._extract_tuple(maps['middle_tiers'])
+        self.FL_STAGE_MAP = self._extract_tuple(maps['fl_stage_map'])
+        self.CC_TOKENS = self._extract_tuple(maps['cc_tokens'])
+
+        # Simple list
+        self.KERNEL_CHARS = maps['kernel_chars']['value']
+
+        # Pre-sort substring-matching maps (longest first) for _get_*() methods
+        self._middle_tiers_sorted = sorted(
+            self.MIDDLE_TIERS.items(), key=lambda x: len(x[0]), reverse=True)
+        self._middle_kernel_sorted = sorted(
+            [(k, v) for k, v in self.MIDDLE_KERNEL_PROFILE.items() if v],
+            key=lambda x: len(x[0]), reverse=True)
+        self._middle_regime_sorted = sorted(
+            self.MIDDLE_REGIME.items(), key=lambda x: len(x[0]), reverse=True)
+        self._middle_section_sorted = sorted(
+            self.MIDDLE_SECTION.items(), key=lambda x: len(x[0]), reverse=True)
+
+        # Caches for expensive lookups
+        self._cache_middle_tier = {}
+        self._cache_middle_kernel = {}
+        self._cache_middle_regime = {}
+        self._cache_middle_section = {}
+
+    def _get_prefix_role(self, prefix: Optional[str]) -> Optional[str]:
+        """Get functional role for a prefix (C371-374)."""
+        if prefix and prefix in self.PREFIX_ROLES:
+            return self.PREFIX_ROLES[prefix]
+        return None
+
+    def _get_suffix_role(self, suffix: Optional[str]) -> Optional[str]:
+        """Get functional role for a suffix (C375-378)."""
+        if suffix and suffix in self.SUFFIX_ROLES:
+            return self.SUFFIX_ROLES[suffix]
+        return None
+
+    def _get_middle_tier(self, middle: Optional[str]) -> Tuple[Optional[str], Optional[str]]:
+        """Get tier and meaning for a MIDDLE (F-BRU-011)."""
+        if not middle:
+            return None, None
+        if middle in self._cache_middle_tier:
+            return self._cache_middle_tier[middle]
+
+        # Direct match
+        if middle in self.MIDDLE_TIERS:
+            result = self.MIDDLE_TIERS[middle]
+        else:
+            # Check for contained patterns (pre-sorted longest first)
+            result = (None, None)
+            for mid, (tier, meaning) in self._middle_tiers_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = (tier, f"contains {mid}")
+                    break
+
+        self._cache_middle_tier[middle] = result
+        return result
+
+    def _get_kernels(self, middle: Optional[str]) -> List[str]:
+        """Extract kernel characters from MIDDLE."""
+        if not middle:
+            return []
+        return [k for k in self.KERNEL_CHARS if k in middle]
+
+    def _get_material_markers(self, m: MorphAnalysis) -> List[str]:
+        """Detect material category markers (C884, F-BRU-018)."""
+        markers = []
+
+        # Animal markers from suffix (C884)
+        if m.suffix in ['ey', 'ol', 'eey', 'or']:
+            markers.append('ANIMAL')
+
+        # Root markers from MIDDLE (F-BRU-018)
+        if m.middle and ('tch' in m.middle or 'pch' in m.middle):
+            markers.append('ROOT')
+
+        return markers
+
+    def _get_output_markers(self, m: MorphAnalysis) -> List[str]:
+        """Detect output category markers (F-BRU-020)."""
+        markers = []
+
+        # OIL markers from MIDDLE
+        if m.middle and any(oil in m.middle for oil in ['kc', 'okch']):
+            markers.append('OIL')
+
+        # WATER markers from suffix
+        if m.suffix in ['ly', 'al']:
+            markers.append('WATER')
+
+        return markers
+
+    def _get_fl_stage(self, word: str, m: MorphAnalysis) -> Tuple[Optional[str], Optional[str]]:
+        """
+        Get FL state stage for a token (C777, FL_SEMANTIC_INTERPRETATION).
+
+        FL state markers are standalone tokens or MIDDLEs that index
+        material position in transformation process.
+
+        Priority:
+        1. Token dictionary (pre-computed, v6+)
+        2. CC control token check
+        3. FL_STAGE_MAP fallback
+        """
+        # 1. Check token dictionary first (pre-computed FL state)
+        entry = self.token_dict.get(word)
+        if entry and entry.get('fl_state'):
+            return entry['fl_state'], entry.get('fl_meaning')
+
+        # 2. Check if whole word is a CC control token
+        if word in self.CC_TOKENS:
+            role, meaning = self.CC_TOKENS[word]
+            return f"CC_{role}", meaning
+
+        # 3. Fall back to FL_STAGE_MAP computation
+        middle = m.middle if m.middle else word
+
+        if middle in self.FL_STAGE_MAP:
+            return self.FL_STAGE_MAP[middle]
+
+        # For tokens without prefix, check if the word itself is FL-like
+        if not m.prefix and word in self.FL_STAGE_MAP:
+            return self.FL_STAGE_MAP[word]
+
+        return None, None
+
+    def _get_middle_kernel(self, middle: Optional[str]) -> Optional[str]:
+        """Get kernel profile for a MIDDLE (MIDDLE_SEMANTIC_MAPPING phase)."""
+        if not middle:
+            return None
+        if middle in self._cache_middle_kernel:
+            return self._cache_middle_kernel[middle]
+        # Direct lookup
+        if middle in self.MIDDLE_KERNEL_PROFILE:
+            result = self.MIDDLE_KERNEL_PROFILE[middle]
+        else:
+            # Check for contained patterns (pre-sorted longest first, non-None only)
+            result = None
+            for mid, kernel in self._middle_kernel_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = kernel
+                    break
+        self._cache_middle_kernel[middle] = result
+        return result
+
+    def _get_middle_regime(self, middle: Optional[str]) -> Optional[str]:
+        """Get execution regime for a MIDDLE (MIDDLE_SEMANTIC_MAPPING phase)."""
+        if not middle:
+            return None
+        if middle in self._cache_middle_regime:
+            return self._cache_middle_regime[middle]
+        # Direct lookup
+        if middle in self.MIDDLE_REGIME:
+            result = self.MIDDLE_REGIME[middle]
+        else:
+            result = None
+            for mid, regime in self._middle_regime_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = regime
+                    break
+        self._cache_middle_regime[middle] = result
+        return result
+
+    def _get_middle_section(self, middle: Optional[str]) -> Optional[str]:
+        """Get section affinity for a MIDDLE (MIDDLE_SEMANTIC_MAPPING phase)."""
+        if not middle:
+            return None
+        if middle in self._cache_middle_section:
+            return self._cache_middle_section[middle]
+        # Direct lookup
+        if middle in self.MIDDLE_SECTION:
+            result = self.MIDDLE_SECTION[middle]
+        else:
+            result = None
+            for mid, section in self._middle_section_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = section
+                    break
+        self._cache_middle_section[middle] = result
+        return result
+
+    def analyze_token(self, word: str,
+                      line_initial: bool = False,
+                      line_final: bool = False) -> BTokenAnalysis:
+        """
+        Complete analysis of a single Currier B token.
+
+        Args:
+            word: The token string
+            line_initial: Whether token is at line start
+            line_final: Whether token is at line end
+
+        Returns:
+            BTokenAnalysis with all classifications
+        """
+        m = self.morph.extract(word)
+        tier, meaning = self._get_middle_tier(m.middle)
+        fl_stage, fl_meaning = self._get_fl_stage(word, m)
+
+        # Get FL role and HT status from token dictionary
+        entry = self.token_dict.get(word)
+        is_fl_role = entry.get('is_fl_role', False) if entry else False
+
+        # FL exclusion: known FQ/CC tokens that use FL-compatible characters
+        # but are NOT FL (C583: aiin=FQ Class 9, C557: daiin=CC Class 10)
+        FL_EXCLUDED = {'aiin', 'ain', 'oaiin'}
+        if word in FL_EXCLUDED:
+            is_fl_role = False
+        # HT (Human Track) = UNKNOWN role in token dictionary (C740, C872)
+        is_ht = entry.get('role', {}).get('primary') == 'UNKNOWN' if entry else False
+
+        # Get prefix role
+        prefix_role = self._get_prefix_role(m.prefix)
+
+        # For PREP_TIER prefixes, use specific F-BRU-012 action instead of generic MIDDLE tier
+        if prefix_role == 'PREP_TIER' and m.prefix in self.PREFIX_ACTIONS:
+            meaning = self.PREFIX_ACTIONS[m.prefix]
+            tier = 'PREP'
+
+        analysis = BTokenAnalysis(
+            word=word,
+            morph=m,
+            prefix_role=prefix_role,
+            suffix_role=self._get_suffix_role(m.suffix),
+            middle_tier=tier,
+            middle_meaning=meaning,
+            fl_stage=fl_stage,
+            fl_meaning=fl_meaning,
+            is_fl_role=is_fl_role,
+            is_ht=is_ht,
+            kernels=self._get_kernels(m.middle),
+            material_markers=self._get_material_markers(m),
+            output_markers=self._get_output_markers(m),
+            is_line_initial=line_initial,
+            is_line_final=line_final,
+            prefix_phase=self.PREFIX_PHASE.get(m.prefix),
+            suffix_terminal=self.SUFFIX_TERMINAL.get(m.suffix),
+            middle_kernel=self._get_middle_kernel(m.middle),
+            middle_regime=self._get_middle_regime(m.middle),
+            middle_section=self._get_middle_section(m.middle),
+        )
+        # Pass references for whole-token, middle, suffix gloss, and prep action lookup
+        analysis._token_dict = self.token_dict
+        analysis._middle_dict = self.middle_dict
+        analysis._suffix_gloss = self.SUFFIX_GLOSS
+        analysis._suffix_flow = self.SUFFIX_FLOW
+        analysis._prefix_actions = self.PREFIX_ACTIONS
+        analysis._middle_tiers = self.MIDDLE_TIERS
+        analysis._mid_analyzer = self.mid_analyzer
+        return analysis
+
+    def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:
+        """Interpret kernel distribution as process characterization."""
+        total = sum(kernel_dist.values())
+        if total == 0:
+            return 'NO_KERNELS'
+
+        k_pct = kernel_dist.get('k', 0) / total
+        h_pct = kernel_dist.get('h', 0) / total
+        e_pct = kernel_dist.get('e', 0) / total
+
+        if e_pct > 0.45:
+            return 'ESCAPE_DOMINANT'
+        elif k_pct > 0.50:
+            return 'ENERGY_DOMINANT'
+        elif h_pct > 0.30:
+            return 'HAZARD_HEAVY'
+        else:
+            return 'BALANCED'
+
+    def _interpret_material_category(self, tokens: List[BTokenAnalysis]) -> str:
+        """Interpret material category from token markers."""
+        animal_count = sum(1 for t in tokens if 'ANIMAL' in t.material_markers)
+        root_count = sum(1 for t in tokens if 'ROOT' in t.material_markers)
+        total = len(tokens)
+
+        # Threshold for detection (5% of tokens)
+        if animal_count > total * 0.05:
+            return 'ANIMAL'
+        elif root_count > total * 0.03:
+            return 'ROOT'
+        else:
+            return 'DELICATE_PLANT'  # Unmarked default (F-BRU-019)
+
+    def _interpret_output_category(self, tokens: List[BTokenAnalysis]) -> str:
+        """Interpret output category from token markers."""
+        oil_count = sum(1 for t in tokens if 'OIL' in t.output_markers)
+        water_count = sum(1 for t in tokens if 'WATER' in t.output_markers)
+        total = len(tokens)
+
+        if oil_count > total * 0.02:
+            return 'OIL'
+        elif water_count > total * 0.05:
+            return 'WATER'
+        else:
+            return 'WATER'  # Default
+
+    # === LINE-LEVEL MARKERS (C357-358) ===
+    LINE_INIT_MARKERS = {'daiin', 'saiin', 'sain', 'dain'}  # 3-11x enriched at line start
+    LINE_FINAL_MARKERS = {'am', 'oly', 'dy', 'om'}  # 4-31x enriched at line end
+
+    # === PARAGRAPH DETECTION (C827) ===
+    # Gallows characters mark paragraph boundaries when line-initial
+    # These are the tall looped characters in EVA: k, t, p, f
+    GALLOWS_CHARS = {'k', 't', 'p', 'f'}
+
+    def _is_gallows_initial(self, word: str) -> bool:
+        """Check if a word starts with a gallows character (k, t, p, f)."""
+        if not word:
+            return False
+        return word[0] in self.GALLOWS_CHARS
+
+    def analyze_line(self, line_tokens: List[BTokenAnalysis], line_id: str) -> BLineAnalysis:
+        """
+        Analyze a line as a control block (C357).
+
+        Args:
+            line_tokens: List of BTokenAnalysis for this line
+            line_id: Line identifier
+
+        Returns:
+            BLineAnalysis with line-level interpretation
+        """
+        if not line_tokens:
+            return BLineAnalysis(
+                line_id=line_id, tokens=[], token_count=0,
+                has_init_marker=False, has_final_marker=False,
+                init_token=None, final_token=None,
+                fl_stages=[], fl_progression='EMPTY',
+                kernel_sequence=[], kernel_order_compliant=True,
+                role_sequence=[], line_type='EMPTY',
+                is_header=(line_id == '1')
+            )
+
+        # Check for init/final markers
+        first_word = line_tokens[0].word if line_tokens else ''
+        last_word = line_tokens[-1].word if line_tokens else ''
+
+        has_init = first_word in self.LINE_INIT_MARKERS
+        has_final = last_word in self.LINE_FINAL_MARKERS
+
+        # Collect FL stages through line
+        fl_stages = [t.fl_stage for t in line_tokens if t.fl_stage and not t.fl_stage.startswith('CC_')]
+
+        # Determine FL progression
+        if len(fl_stages) < 2:
+            fl_progression = 'STATIC'
+        else:
+            stage_order = {'INITIAL': 0, 'EARLY': 1, 'MEDIAL': 2, 'LATE': 3, 'TERMINAL': 4}
+            stage_nums = [stage_order.get(s, 2) for s in fl_stages]
+            if all(stage_nums[i] <= stage_nums[i+1] for i in range(len(stage_nums)-1)):
+                fl_progression = 'FORWARD'
+            elif all(stage_nums[i] >= stage_nums[i+1] for i in range(len(stage_nums)-1)):
+                fl_progression = 'BACKWARD'
+            else:
+                fl_progression = 'MIXED'
+
+        # Collect kernel sequence
+        kernel_sequence = []
+        for t in line_tokens:
+            for k in t.kernels:
+                if k not in kernel_sequence[-1:]:  # Avoid consecutive duplicates
+                    kernel_sequence.append(k)
+
+        # Check kernel order compliance (C873: e < h < k)
+        kernel_order = {'e': 0, 'h': 1, 'k': 2}
+        kernel_nums = [kernel_order.get(k, 1) for k in kernel_sequence]
+        kernel_order_compliant = all(kernel_nums[i] <= kernel_nums[i+1]
+                                     for i in range(len(kernel_nums)-1)) if len(kernel_nums) > 1 else True
+
+        # Collect role sequence
+        role_sequence = [t.prefix_role for t in line_tokens if t.prefix_role]
+
+        # C747: Line-1 is HEADER (50% HT, non-operational)
+        is_header = (line_id == '1')
+
+        # Determine line type
+        if is_header:
+            line_type = 'HEADER'
+        elif has_init:
+            line_type = 'INIT'
+        elif has_final and any(s in ['TERMINAL', 'LATE'] for s in fl_stages):
+            line_type = 'TERMINAL'
+        elif 'FQ' in str(role_sequence) or fl_progression == 'BACKWARD':
+            line_type = 'ESCAPE'
+        elif 'AX_LATE' in role_sequence or 'EN_KERNEL' in role_sequence:
+            line_type = 'MONITOR' if 'AX_LATE' in role_sequence else 'PROCESS'
+        else:
+            line_type = 'PROCESS'
+
+        return BLineAnalysis(
+            line_id=line_id,
+            tokens=line_tokens,
+            token_count=len(line_tokens),
+            has_init_marker=has_init,
+            has_final_marker=has_final,
+            init_token=first_word if has_init else None,
+            final_token=last_word if has_final else None,
+            fl_stages=fl_stages,
+            fl_progression=fl_progression,
+            kernel_sequence=kernel_sequence,
+            kernel_order_compliant=kernel_order_compliant,
+            role_sequence=role_sequence,
+            line_type=line_type,
+            is_header=is_header,
+        )
+
+    def analyze_folio_lines(self, folio: str) -> List[BLineAnalysis]:
+        """
+        Analyze all lines in a folio as control blocks.
+
+        Args:
+            folio: Folio identifier
+
+        Returns:
+            List of BLineAnalysis, one per line
+        """
+        # Get folio tokens grouped by line
+        folio_tokens = [t for t in self.tx.currier_b() if t.folio == folio]
+        if not folio_tokens:
+            return []
+
+        # Group by line
+        lines = defaultdict(list)
+        for t in folio_tokens:
+            analysis = self.analyze_token(t.word, t.line_initial, t.line_final)
+            lines[t.line].append(analysis)
+
+        # Analyze each line (sort numerically by line ID)
+        def line_sort_key(item):
+            line_id = item[0]
+            try:
+                return int(line_id)
+            except (ValueError, TypeError):
+                return line_id
+        return [self.analyze_line(tokens, line_id)
+                for line_id, tokens in sorted(lines.items(), key=line_sort_key)]
+
+    def _analyze_paragraph(self, lines: List[BLineAnalysis], para_id: str,
+                           boundary_token: Optional[str]) -> BParagraphAnalysis:
+        """
+        Analyze a paragraph (operational unit) from its constituent lines.
+
+        Args:
+            lines: List of BLineAnalysis for this paragraph
+            para_id: Paragraph identifier (P1, P2, etc.)
+            boundary_token: The gallows token that started this paragraph (if any)
+
+        Returns:
+            BParagraphAnalysis with aggregate statistics
+        """
+        if not lines:
+            return BParagraphAnalysis(
+                paragraph_id=para_id, lines=[], line_count=0, token_count=0,
+                boundary_token=None, is_gallows_initial=False,
+                kernel_dist={}, role_dist={}, fl_distribution={},
+                init_lines=0, process_lines=0, escape_lines=0, terminal_lines=0,
+                kernel_balance='NO_KERNELS', dominant_role=None, fl_trend='DISTRIBUTED'
+            )
+
+        # Aggregate from lines
+        token_count = sum(la.token_count for la in lines)
+        kernel_dist = Counter()
+        role_dist = Counter()
+        fl_dist = Counter()
+
+        for la in lines:
+            for k in la.kernel_sequence:
+                kernel_dist[k] += 1
+            for r in la.role_sequence:
+                role_dist[r] += 1
+            for fl in la.fl_stages:
+                fl_dist[fl] += 1
+
+        # Line type counts
+        init_lines = sum(1 for la in lines if la.line_type == 'INIT')
+        process_lines = sum(1 for la in lines if la.line_type == 'PROCESS')
+        escape_lines = sum(1 for la in lines if la.line_type == 'ESCAPE')
+        terminal_lines = sum(1 for la in lines if la.line_type == 'TERMINAL')
+
+        # Interpret kernel balance
+        kernel_balance = self._interpret_kernel_balance(kernel_dist)
+
+        # Find dominant role
+        dominant_role = None
+        if role_dist:
+            dominant_role = max(role_dist.keys(), key=lambda r: role_dist[r])
+
+        # Determine FL trend
+        early_count = fl_dist.get('INITIAL', 0) + fl_dist.get('EARLY', 0)
+        late_count = fl_dist.get('LATE', 0) + fl_dist.get('TERMINAL', 0)
+        total_fl = sum(fl_dist.values())
+
+        if total_fl == 0:
+            fl_trend = 'DISTRIBUTED'
+        elif fl_dist.get('TERMINAL', 0) > total_fl * 0.3:
+            fl_trend = 'TERMINAL_HEAVY'
+        elif late_count > total_fl * 0.5:
+            fl_trend = 'LATE_HEAVY'
+        elif early_count > total_fl * 0.5:
+            fl_trend = 'EARLY_HEAVY'
+        else:
+            fl_trend = 'DISTRIBUTED'
+
+        return BParagraphAnalysis(
+            paragraph_id=para_id,
+            lines=lines,
+            line_count=len(lines),
+            token_count=token_count,
+            boundary_token=boundary_token,
+            is_gallows_initial=boundary_token is not None,
+            kernel_dist=dict(kernel_dist),
+            role_dist=dict(role_dist),
+            fl_distribution=dict(fl_dist),
+            init_lines=init_lines,
+            process_lines=process_lines,
+            escape_lines=escape_lines,
+            terminal_lines=terminal_lines,
+            kernel_balance=kernel_balance,
+            dominant_role=dominant_role,
+            fl_trend=fl_trend,
+        )
+
+    def analyze_folio_paragraphs(self, folio: str) -> List[BParagraphAnalysis]:
+        """
+        Analyze all paragraphs in a folio as independent operational units.
+
+        CRITICAL: Paragraphs are PARALLEL_PROGRAMS (C855), NOT sequential stages.
+        Each paragraph is an independent mini-program. The analysis does NOT
+        assume any progression between paragraphs.
+
+        Paragraph boundaries detected by gallows-initial lines (C827).
+
+        Args:
+            folio: Folio identifier
+
+        Returns:
+            List of BParagraphAnalysis, one per paragraph
+        """
+        line_analyses = self.analyze_folio_lines(folio)
+        if not line_analyses:
+            return []
+
+        # Group lines into paragraphs by gallows-initial heuristic
+        paragraphs = []
+        current_para_lines = []
+        current_boundary = None
+        para_count = 0
+
+        for la in line_analyses:
+            # Check if this line starts a new paragraph
+            first_word = la.tokens[0].word if la.tokens else ''
+            is_boundary = self._is_gallows_initial(first_word)
+
+            if is_boundary and current_para_lines:
+                # Save current paragraph and start new one
+                para_count += 1
+                para = self._analyze_paragraph(
+                    current_para_lines,
+                    f"P{para_count}",
+                    current_boundary
+                )
+                paragraphs.append(para)
+                current_para_lines = [la]
+                current_boundary = first_word
+            else:
+                current_para_lines.append(la)
+                if is_boundary and current_boundary is None:
+                    current_boundary = first_word
+
+        # Don't forget the last paragraph
+        if current_para_lines:
+            para_count += 1
+            para = self._analyze_paragraph(
+                current_para_lines,
+                f"P{para_count}",
+                current_boundary
+            )
+            paragraphs.append(para)
+
+        return paragraphs
+
+    def decode_folio_paragraphs(self, folio: str, mode: str = 'structural') -> str:
+        """
+        Generate paragraph-level decode of a folio.
+
+        IMPORTANT: Paragraphs are INDEPENDENT operational units (C855).
+        They do NOT represent sequential stages of a single procedure.
+
+        Args:
+            folio: Folio identifier
+            mode: 'structural' or 'interpretive'
+
+        Returns:
+            Multi-line string with paragraph-level analysis
+        """
+        para_analyses = self.analyze_folio_paragraphs(folio)
+        if not para_analyses:
+            return f"No paragraphs found for folio {folio}"
+
+        output = [f"{'=' * 60}"]
+        output.append(f"FOLIO {folio}: {len(para_analyses)} paragraphs (PARALLEL_PROGRAMS)")
+        output.append(f"NOTE: Paragraphs are INDEPENDENT units, not sequential stages (C855)")
+        output.append(f"{'=' * 60}")
+
+        for pa in para_analyses:
+            output.append("")
+            if mode == 'structural':
+                output.append(f"--- {pa.structural()} ---")
+                output.append(f"    Lines: {pa.line_count} | Tokens: {pa.token_count}")
+                output.append(f"    Types: init={pa.init_lines}, process={pa.process_lines}, "
+                            f"escape={pa.escape_lines}, terminal={pa.terminal_lines}")
+                output.append(f"    FL trend: {pa.fl_trend}")
+
+                # Show line summaries
+                for la in pa.lines[:3]:  # First 3 lines
+                    output.append(f"      L{la.line_id}: {la.structural()}")
+                if len(pa.lines) > 3:
+                    output.append(f"      ... ({len(pa.lines) - 3} more lines)")
+            else:
+                output.append(f"--- {pa.paragraph_id}: {pa.interpretive()} ---")
+                output.append(f"    ({pa.line_count} steps, {pa.token_count} operations)")
+
+                # Show line interpretations
+                for la in pa.lines[:3]:
+                    output.append(f"      Step: {la.interpretive()}")
+                if len(pa.lines) > 3:
+                    output.append(f"      ... ({len(pa.lines) - 3} more steps)")
+
+        return '\n'.join(output)
+
+    def decode_folio_lines(self, folio: str, mode: str = 'structural') -> str:
+        """
+        Generate line-by-line decode of a folio.
+
+        Args:
+            folio: Folio identifier
+            mode: 'structural' or 'interpretive'
+
+        Returns:
+            Multi-line string with line-level analysis
+        """
+        line_analyses = self.analyze_folio_lines(folio)
+        if not line_analyses:
+            return f"No lines found for folio {folio}"
+
+        output = [f"{'=' * 60}"]
+        output.append(f"FOLIO {folio}: {len(line_analyses)} lines")
+        output.append(f"{'=' * 60}")
+
+        for la in line_analyses:
+            if mode == 'structural':
+                output.append(f"\nLine {la.line_id} ({la.token_count} tokens): {la.structural()}")
+                # Show first few tokens
+                for t in la.tokens[:4]:
+                    output.append(f"    {t.word:12} {t.structural()}")
+            else:
+                output.append(f"\nLine {la.line_id}: {la.interpretive()}")
+                # Show token glosses
+                for t in la.tokens[:4]:
+                    output.append(f"    {t.word:12} -> {t.interpretive()}")
+
+        return '\n'.join(output)
+
+    def analyze_folio(self, folio: str) -> Optional[BFolioAnalysis]:
+        """
+        Complete analysis of a Currier B folio.
+
+        Args:
+            folio: Folio identifier (e.g., 'f107r')
+
+        Returns:
+            BFolioAnalysis with aggregate statistics and interpretations,
+            or None if folio not found
+        """
+        # Get folio tokens
+        folio_tokens = [t for t in self.tx.currier_b() if t.folio == folio]
+        if not folio_tokens:
+            return None
+
+        # Analyze each token
+        analyses = []
+        lines = defaultdict(list)
+        for t in folio_tokens:
+            lines[t.line].append(t)
+
+        for line_id, line_tokens in lines.items():
+            for i, t in enumerate(line_tokens):
+                analysis = self.analyze_token(
+                    t.word,
+                    line_initial=(i == 0),
+                    line_final=(i == len(line_tokens) - 1)
+                )
+                analyses.append(analysis)
+
+        # Aggregate distributions
+        prefix_dist = Counter(a.prefix_role for a in analyses if a.prefix_role)
+        suffix_dist = Counter(a.suffix_role for a in analyses if a.suffix_role)
+        middle_dist = Counter(a.middle_tier for a in analyses if a.middle_tier)
+        kernel_dist = Counter()
+        for a in analyses:
+            for k in a.kernels:
+                kernel_dist[k] += 1
+
+        total = len(analyses)
+
+        return BFolioAnalysis(
+            folio=folio,
+            token_count=total,
+            tokens=analyses,
+            prefix_role_dist=dict(prefix_dist),
+            suffix_role_dist=dict(suffix_dist),
+            middle_tier_dist=dict(middle_dist),
+            kernel_dist=dict(kernel_dist),
+            kernel_balance=self._interpret_kernel_balance(kernel_dist),
+            material_category=self._interpret_material_category(analyses),
+            output_category=self._interpret_output_category(analyses),
+            prefix_classified_pct=100 * sum(prefix_dist.values()) / total if total else 0,
+            suffix_classified_pct=100 * sum(suffix_dist.values()) / total if total else 0,
+            middle_classified_pct=100 * sum(middle_dist.values()) / total if total else 0,
+        )
+
+    def decode_summary(self, folio: str, mode: str = 'structural') -> str:
+        """
+        Generate human-readable summary of a folio.
+
+        Args:
+            folio: Folio identifier
+            mode: 'structural' (Tier 0-2) or 'interpretive' (Tier 3-4)
+
+        Returns:
+            Multi-line summary string
+        """
+        analysis = self.analyze_folio(folio)
+        if not analysis:
+            return f"Folio {folio} not found in Currier B"
+
+        lines = [f"{'=' * 60}"]
+        lines.append(f"FOLIO {folio}: {analysis.token_count} tokens")
+        lines.append(f"{'=' * 60}")
+
+        if mode == 'structural':
+            # Tier 0-2 technical output
+            lines.append(f"\nPREFIX ROLES (C371-374):")
+            lines.append(f"  Classified: {analysis.prefix_classified_pct:.1f}%")
+            for role, count in sorted(analysis.prefix_role_dist.items(),
+                                       key=lambda x: -x[1]):
+                pct = 100 * count / analysis.token_count
+                lines.append(f"  {role:12}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nSUFFIX ROLES (C375-378):")
+            lines.append(f"  Classified: {analysis.suffix_classified_pct:.1f}%")
+            for role, count in sorted(analysis.suffix_role_dist.items(),
+                                       key=lambda x: -x[1]):
+                pct = 100 * count / analysis.token_count
+                lines.append(f"  {role:12}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nMIDDLE TIERS (F-BRU-011):")
+            lines.append(f"  Classified: {analysis.middle_classified_pct:.1f}%")
+            for tier, count in sorted(analysis.middle_tier_dist.items(),
+                                       key=lambda x: -x[1]):
+                pct = 100 * count / analysis.token_count
+                lines.append(f"  {tier:12}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nKERNEL DISTRIBUTION:")
+            kernel_total = sum(analysis.kernel_dist.values())
+            for k in ['k', 'h', 'e']:
+                if kernel_total > 0:
+                    count = analysis.kernel_dist.get(k, 0)
+                    pct = 100 * count / kernel_total
+                    lines.append(f"  {k}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nINTERPRETATION:")
+            lines.append(f"  Kernel balance: {analysis.kernel_balance}")
+            lines.append(f"  Material: {analysis.material_category}")
+            lines.append(f"  Output: {analysis.output_category}")
+
+        else:
+            # Tier 3-4 interpretive output
+            lines.append(f"\nPROCESS CHARACTERIZATION:")
+
+            # Kernel balance interpretation
+            balance_gloss = {
+                'ESCAPE_DOMINANT': "Mostly waiting for things to settle",
+                'ENERGY_DOMINANT': "Active heating throughout",
+                'HAZARD_HEAVY': "Careful monitoring required",
+                'BALANCED': "Mixed heating and settling",
+            }
+            lines.append(f"  {balance_gloss.get(analysis.kernel_balance, analysis.kernel_balance)}")
+
+            # Material interpretation
+            material_gloss = {
+                'ANIMAL': "Processing animal material (careful timing needed)",
+                'ROOT': "Processing roots (mechanical preparation first)",
+                'DELICATE_PLANT': "Processing delicate plant material (gentle handling)",
+            }
+            lines.append(f"  {material_gloss.get(analysis.material_category, analysis.material_category)}")
+
+            # Output interpretation
+            output_gloss = {
+                'OIL': "Producing oil/resin extract",
+                'WATER': "Producing water-based distillate",
+            }
+            lines.append(f"  {output_gloss.get(analysis.output_category, analysis.output_category)}")
+
+            # Sample decoded lines
+            lines.append(f"\nSAMPLE DECODED TOKENS:")
+            for tok in analysis.tokens[:10]:
+                interp = tok.interpretive()
+                lines.append(f"  {tok.word:15} -> {interp}")
+
+        return '\n'.join(lines)
+
+
+# ============================================================
+# TOKEN DICTIONARY
+# ============================================================
+class TokenDictionary:
+    """
+    Unified token lookup with persistent notes.
+
+    Provides access to all 8,150 unique tokens in the H-track with:
+    - Morphological decomposition (articulator, prefix, middle, suffix)
+    - System membership (A, B, AZC)
+    - Distribution statistics (counts, folios, sections)
+    - Persistent notes for accumulated knowledge
+
+    Usage:
+        td = TokenDictionary()
+        entry = td.get('daiin')
+        print(td.lookup('chedy'))  # Quick summary
+        td.add_note('daiin', 'High frequency in HERBAL_B')
+        td.save()
+    """
+
+    DICT_PATH = PROJECT_ROOT / 'data' / 'token_dictionary.json'
+
+    def __init__(self, path: Path = None):
+        """Initialize dictionary with optional custom path."""
+        self.path = path or self.DICT_PATH
+        self._data = None
+
+    def _load(self) -> dict:
+        """Lazy load dictionary data."""
+        if self._data is None:
+            with open(self.path, 'r', encoding='utf-8') as f:
+                self._data = json.load(f)
+        return self._data
+
+    def get(self, token: str) -> Optional[dict]:
+        """Get full entry for a token."""
+        return self._load()['tokens'].get(token)
+
+    def lookup(self, token: str) -> str:
+        """Quick summary string for a token."""
+        entry = self.get(token)
+        if not entry:
+            return f"{token}: not found"
+        systems = '/'.join(entry['systems'])
+        total = entry['distribution']['total']
+        return f"{token}: {systems}, {total} occurrences"
+
+    def add_note(self, token: str, note: str):
+        """Add a timestamped note to a token."""
+        data = self._load()
+        if token in data['tokens']:
+            data['tokens'][token]['notes'].append({
+                'date': datetime.now().strftime('%Y-%m-%d'),
+                'text': note
+            })
+
+    def save(self):
+        """Persist changes to disk."""
+        if self._data is not None:
+            with open(self.path, 'w', encoding='utf-8') as f:
+                json.dump(self._data, f, indent=2)
+
+    # --------------------------------------------------------
+    # Gloss Management (Tier 3-4 Interpretive Content)
+    # --------------------------------------------------------
+
+    def get_gloss(self, token: str) -> Optional[str]:
+        """Get Tier 3-4 interpretive gloss for a token."""
+        entry = self.get(token)
+        if entry:
+            return entry.get('gloss')
+        return None
+
+    def set_gloss(self, token: str, gloss: str, save: bool = False):
+        """
+        Set gloss for a token, optionally persisting to disk.
+
+        Args:
+            token: The token word
+            gloss: The interpretive gloss (human-readable meaning)
+            save: If True, immediately persist to disk
+        """
+        data = self._load()
+        if token in data['tokens']:
+            data['tokens'][token]['gloss'] = gloss
+            if save:
+                self.save()
+
+    def clear_gloss(self, token: str, save: bool = False):
+        """Clear gloss for a token (set to None)."""
+        data = self._load()
+        if token in data['tokens']:
+            data['tokens'][token]['gloss'] = None
+            if save:
+                self.save()
+
+    def get_glossed_tokens(self) -> List[str]:
+        """Get all tokens that have a gloss defined."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e.get('gloss') is not None]
+
+    def get_by_middle(self, middle: str) -> List[str]:
+        """Get all tokens with a specific MIDDLE."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e['morphology']['middle'] == middle]
+
+    def get_by_system(self, system: str) -> List[str]:
+        """Get all tokens in a system (A, B, or AZC)."""
+        return [t for t, e in self._load()['tokens'].items()
+                if system in e['systems']]
+
+    def get_by_prefix(self, prefix: str) -> List[str]:
+        """Get all tokens with a specific PREFIX."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e['morphology']['prefix'] == prefix]
+
+    def get_by_suffix(self, suffix: str) -> List[str]:
+        """Get all tokens with a specific SUFFIX."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e['morphology']['suffix'] == suffix]
+
+    def stats(self) -> dict:
+        """Get summary statistics."""
+        data = self._load()
+        tokens = data['tokens']
+        azc_with_positions = len([t for t, e in tokens.items()
+                                   if e.get('azc', {}).get('positions')])
+        return {
+            'total_tokens': len(tokens),
+            'a_tokens': len([t for t, e in tokens.items() if 'A' in e['systems']]),
+            'b_tokens': len([t for t, e in tokens.items() if 'B' in e['systems']]),
+            'azc_tokens': len([t for t, e in tokens.items() if 'AZC' in e['systems']]),
+            'label_tokens': len([t for t, e in tokens.items() if e['distribution']['is_label']]),
+            'with_notes': len([t for t, e in tokens.items() if e['notes']]),
+            'azc_with_positions': azc_with_positions,
+        }
+
+    # --------------------------------------------------------
+    # AZC Position Management
+    # --------------------------------------------------------
+
+    def add_azc_position(self, token: str, folio: str, position: str):
+        """
+        Add an AZC diagram position for a token.
+
+        Args:
+            token: The token word
+            folio: The folio where this position was observed (e.g., 'f57v')
+            position: The placement code (e.g., 'C', 'R1', 'S2')
+        """
+        data = self._load()
+        if token not in data['tokens']:
+            return
+
+        entry = data['tokens'][token]
+
+        # Initialize azc structure if missing
+        if 'azc' not in entry:
+            entry['azc'] = {'positions': [], 'by_folio': {}}
+
+        # Add to positions list (unique)
+        if position not in entry['azc']['positions']:
+            entry['azc']['positions'].append(position)
+            entry['azc']['positions'].sort()
+
+        # Add to by_folio mapping
+        if folio not in entry['azc']['by_folio']:
+            entry['azc']['by_folio'][folio] = []
+        if position not in entry['azc']['by_folio'][folio]:
+            entry['azc']['by_folio'][folio].append(position)
+            entry['azc']['by_folio'][folio].sort()
+
+    def get_azc_positions(self, token: str) -> Optional[dict]:
+        """Get AZC position data for a token."""
+        entry = self.get(token)
+        if entry:
+            return entry.get('azc')
+        return None
+
+    def get_by_azc_position(self, position: str) -> List[str]:
+        """Get all tokens that appear at a specific AZC position."""
+        return [t for t, e in self._load()['tokens'].items()
+                if position in e.get('azc', {}).get('positions', [])]
+
+    def get_azc_zone_tokens(self, zone: str) -> List[str]:
+        """
+        Get tokens by zone type (C, R, S, P).
+
+        Matches position prefixes: 'R' matches R, R1, R2, R3, R4.
+        """
+        results = []
+        for t, e in self._load()['tokens'].items():
+            positions = e.get('azc', {}).get('positions', [])
+            for pos in positions:
+                if pos == zone or pos.startswith(zone):
+                    results.append(t)
+                    break
+        return results
+
+    # DA-family prefixes (infrastructure markers per C407)
+    INFRA_PREFIXES = {'da', 'do', 'sa', 'so'}
+
+    @classmethod
+    def generate(cls, output_path: Path = None, preserve_annotations: bool = True):
+        """
+        Generate token dictionary from transcript.
+
+        Reads all H-track tokens and builds comprehensive dictionary
+        with morphology, distribution statistics, and role classification.
+
+        Args:
+            output_path: Where to write. Defaults to DICT_PATH.
+            preserve_annotations: If True (default), preserves manually curated
+                fields (gloss, notes, fl_state, fl_meaning, is_fl_role, role.subrole)
+                from the existing dictionary. Prevents accidental data loss during
+                schema migrations or regeneration.
+        """
+        output_path = output_path or cls.DICT_PATH
+        morph = Morphology()
+
+        # Load existing annotations to preserve
+        existing_annotations = {}
+        if preserve_annotations and output_path.exists():
+            try:
+                with open(output_path, 'r', encoding='utf-8') as f:
+                    existing = json.load(f)
+                for word, entry in existing.get('tokens', {}).items():
+                    preserved = {}
+                    if entry.get('gloss') is not None:
+                        preserved['gloss'] = entry['gloss']
+                    if entry.get('notes'):
+                        preserved['notes'] = entry['notes']
+                    if entry.get('fl_state') is not None:
+                        preserved['fl_state'] = entry['fl_state']
+                    if entry.get('fl_meaning') is not None:
+                        preserved['fl_meaning'] = entry['fl_meaning']
+                    if entry.get('is_fl_role') is not None:
+                        preserved['is_fl_role'] = entry['is_fl_role']
+                    if entry.get('role', {}).get('subrole') is not None:
+                        preserved['subrole'] = entry['role']['subrole']
+                    if preserved:
+                        existing_annotations[word] = preserved
+                print(f"Preserving annotations for {len(existing_annotations)} tokens")
+            except (json.JSONDecodeError, KeyError):
+                print("Warning: Could not read existing dictionary for annotation preservation")
+
+        # Load MIDDLE classifications for role assignment
+        ri_middles, pp_middles = load_middle_classes()
+
+        # Collect all token data
+        token_data = defaultdict(lambda: {
+            'systems': set(),
+            'a_count': 0,
+            'b_count': 0,
+            'azc_count': 0,
+            'total': 0,
+            'folios': set(),
+            'sections': set(),
+            'is_label': False,
+            'locations': [],  # Track all occurrences as folio.line.position
+            'azc_positions': set(),  # Unique AZC positions
+            'azc_by_folio': defaultdict(set)  # Positions per folio
+        })
+
+        # Track position within each line for location IDs
+        current_line_key = None
+        position_in_line = 0
+
+        with open(DATA_PATH, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+
+            for row in reader:
+                # Filter to H transcriber
+                transcriber = row.get('transcriber', '').strip().strip('"')
+                if transcriber != 'H':
+                    continue
+
+                word = row.get('word', '').strip()
+                if not word:
+                    continue
+
+                # Get metadata
+                language = row.get('language', '').strip()
+                folio = row.get('folio', '').strip()
+                line = row.get('line_number', '').strip()
+                placement = row.get('placement', '').strip()
+
+                # Track position in line for location IDs
+                line_key = (folio, line)
+                if line_key != current_line_key:
+                    current_line_key = line_key
+                    position_in_line = 1
+                else:
+                    position_in_line += 1
+
+                # Determine section from folio (simplified)
+                if folio:
+                    section = folio[0].upper() if folio[0].isalpha() else 'X'
+                else:
+                    section = 'X'
+
+                # Track data
+                td = token_data[word]
+                td['total'] += 1
+
+                if language == 'A':
+                    td['systems'].add('A')
+                    td['a_count'] += 1
+                elif language == 'B':
+                    td['systems'].add('B')
+                    td['b_count'] += 1
+                elif language == 'NA':
+                    td['systems'].add('AZC')
+                    td['azc_count'] += 1
+                    # Track AZC diagram positions
+                    if placement and not placement.startswith('L'):
+                        td['azc_positions'].add(placement)
+                        if folio:
+                            td['azc_by_folio'][folio].add(placement)
+
+                if folio:
+                    td['folios'].add(folio)
+                if section:
+                    td['sections'].add(section)
+
+                # Check if label
+                if placement and placement.startswith('L'):
+                    td['is_label'] = True
+
+                # Add location ID (folio.line.position)
+                if folio and line:
+                    location_id = f"{folio}.{line}.{position_in_line}"
+                    td['locations'].append(location_id)
+
+        # Build final dictionary
+        tokens = {}
+        for word, data in token_data.items():
+            # Extract morphology
+            m = morph.extract(word)
+
+            # Compute primary role based on MIDDLE classification
+            primary_role = None
+            middle = m.middle
+            prefix = m.prefix
+
+            # Check for INFRA first (DA-family with short MIDDLE)
+            if prefix in cls.INFRA_PREFIXES and middle and len(middle) <= 3:
+                primary_role = 'INFRA'
+            elif middle in ri_middles:
+                primary_role = 'RI'
+            elif middle in pp_middles:
+                primary_role = 'PP'
+            else:
+                primary_role = 'UNKNOWN'
+
+            # Build azc position data
+            azc_by_folio = {f: sorted(list(positions))
+                           for f, positions in data['azc_by_folio'].items()}
+
+            entry = {
+                'morphology': {
+                    'articulator': m.articulator,
+                    'prefix': m.prefix,
+                    'middle': m.middle,
+                    'suffix': m.suffix
+                },
+                'systems': sorted(list(data['systems'])),
+                'distribution': {
+                    'total': data['total'],
+                    'a_count': data['a_count'],
+                    'b_count': data['b_count'],
+                    'azc_count': data['azc_count'],
+                    'folio_count': len(data['folios']),
+                    'sections': sorted(list(data['sections'])),
+                    'is_label': data['is_label']
+                },
+                'role': {
+                    'primary': primary_role,
+                    'subrole': None
+                },
+                'locations': data['locations'],
+                'azc': {
+                    'positions': sorted(list(data['azc_positions'])),
+                    'by_folio': azc_by_folio
+                },
+                'notes': [],
+                'gloss': None,
+                'fl_state': None,
+                'fl_meaning': None,
+                'is_fl_role': False
+            }
+
+            # Restore preserved annotations
+            if word in existing_annotations:
+                ann = existing_annotations[word]
+                if 'gloss' in ann:
+                    entry['gloss'] = ann['gloss']
+                if 'notes' in ann:
+                    entry['notes'] = ann['notes']
+                if 'fl_state' in ann:
+                    entry['fl_state'] = ann['fl_state']
+                if 'fl_meaning' in ann:
+                    entry['fl_meaning'] = ann['fl_meaning']
+                if 'is_fl_role' in ann:
+                    entry['is_fl_role'] = ann['is_fl_role']
+                if 'subrole' in ann:
+                    entry['role']['subrole'] = ann['subrole']
+
+            tokens[word] = entry
+
+        # Count preserved annotations
+        glossed = sum(1 for t in tokens.values() if t.get('gloss'))
+        noted = sum(1 for t in tokens.values() if t.get('notes'))
+
+        # Build final output
+        output = {
+            'meta': {
+                'version': '6.0',
+                'generated': datetime.now().strftime('%Y-%m-%d'),
+                'token_count': len(tokens),
+                'schema_notes': 'v3: locations[], role, notes. v4: azc{positions[], by_folio{}}. v5: gloss field (Tier 3-4). v6: fl_state, fl_meaning, is_fl_role (C770-C777).',
+                'glossed': glossed,
+                'annotated': noted
+            },
+            'tokens': tokens
+        }
+
+        # Ensure directory exists
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Write
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(output, f, indent=2)
+
+        print(f"Generated token dictionary: {len(tokens)} tokens")
+        if existing_annotations:
+            print(f"Preserved: {glossed} glosses, {noted} annotated tokens")
+        print(f"Saved to: {output_path}")
+
+        return output
+
+
+# ============================================================
+# MIDDLE DICTIONARY
+# ============================================================
+
+class MiddleDictionary:
+    """
+    MIDDLE semantic tracking dictionary.
+
+    MIDDLEs carry the core semantic content of tokens. This dictionary
+    tracks all unique MIDDLEs with their kernel profiles, regime
+    associations, and learned glosses.
+
+    Usage:
+        md = MiddleDictionary()
+        entry = md.get('ypch')
+        print(entry['kernel'])  # 'H'
+        print(entry['gloss'])   # None (until we learn it)
+
+        # Set a gloss
+        md.set_gloss('od', 'output ready', save=True)
+    """
+
+    DEFAULT_PATH = PROJECT_ROOT / 'data' / 'middle_dictionary.json'
+
+    def __init__(self, path: Optional[Path] = None):
+        self._path = path or self.DEFAULT_PATH
+        self._data: Optional[Dict] = None
+
+    def _load(self) -> Dict:
+        if self._data is None:
+            if self._path.exists():
+                with open(self._path, 'r', encoding='utf-8') as f:
+                    self._data = json.load(f)
+            else:
+                self._data = {'meta': {'version': '1.0'}, 'middles': {}}
+        return self._data
+
+    def save(self):
+        """Save dictionary to disk."""
+        data = self._load()
+        # Update glossed count
+        glossed = sum(1 for m in data['middles'].values() if m.get('gloss'))
+        data['meta']['glossed'] = glossed
+        with open(self._path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+    def get(self, middle: str) -> Optional[Dict]:
+        """Get entry for a MIDDLE."""
+        data = self._load()
+        return data['middles'].get(middle)
+
+    def get_gloss(self, middle: str) -> Optional[str]:
+        """Get gloss for a MIDDLE."""
+        entry = self.get(middle)
+        return entry.get('gloss') if entry else None
+
+    def get_kernel(self, middle: str) -> Optional[str]:
+        """Get kernel type for a MIDDLE."""
+        entry = self.get(middle)
+        return entry.get('kernel') if entry else None
+
+    def set_gloss(self, middle: str, gloss: str, save: bool = False):
+        """Set gloss for a MIDDLE."""
+        data = self._load()
+        if middle in data['middles']:
+            data['middles'][middle]['gloss'] = gloss
+            if save:
+                self.save()
+
+    def get_glossed_middles(self) -> Dict[str, str]:
+        """Get all MIDDLEs that have glosses."""
+        data = self._load()
+        return {m: e['gloss'] for m, e in data['middles'].items() if e.get('gloss')}
+
+    def summary(self) -> Dict:
+        """Get summary statistics."""
+        data = self._load()
+        middles = data['middles']
+        return {
+            'total': len(middles),
+            'glossed': sum(1 for m in middles.values() if m.get('gloss')),
+            'kernel_k': sum(1 for m in middles.values() if m.get('kernel') == 'K'),
+            'kernel_h': sum(1 for m in middles.values() if m.get('kernel') == 'H'),
+            'kernel_e': sum(1 for m in middles.values() if m.get('kernel') == 'E'),
+        }
+
+
+# ============================================================
+# FOLIO NOTES
+# ============================================================
+
+class FolioNotes:
+    """
+    Persistent folio-level observations and notes.
+
+    Stores structural observations about each folio that emerge
+    during annotation - patterns, anomalies, questions to investigate.
+
+    Usage:
+        fn = FolioNotes()
+        fn.add_note('f1r', 'High concentration of qo- escape tokens in lines 3-7')
+        fn.save()
+        notes = fn.get('f1r')
+    """
+
+    NOTES_PATH = PROJECT_ROOT / 'data' / 'folio_notes.json'
+
+    def __init__(self, path: Path = None):
+        """Initialize with optional custom path."""
+        self.path = path or self.NOTES_PATH
+        self._data = None
+
+    def _load(self) -> dict:
+        """Lazy load notes data."""
+        if self._data is None:
+            if self.path.exists():
+                with open(self.path, 'r', encoding='utf-8') as f:
+                    self._data = json.load(f)
+            else:
+                self._data = {
+                    'meta': {
+                        'version': '1.0',
+                        'generated': datetime.now().strftime('%Y-%m-%d'),
+                        'description': 'Folio-level observations and notes'
+                    },
+                    'folios': {}
+                }
+        return self._data
+
+    def get(self, folio: str) -> Optional[dict]:
+        """Get all notes for a folio."""
+        return self._load()['folios'].get(folio)
+
+    def add_note(self, folio: str, note: str):
+        """Add a timestamped note to a folio."""
+        data = self._load()
+        if folio not in data['folios']:
+            data['folios'][folio] = {
+                'notes': [],
+                'first_annotated': datetime.now().strftime('%Y-%m-%d')
+            }
+        data['folios'][folio]['notes'].append({
+            'date': datetime.now().strftime('%Y-%m-%d'),
+            'text': note
+        })
+
+    def save(self):
+        """Persist changes to disk."""
+        if self._data is not None:
+            with open(self.path, 'w', encoding='utf-8') as f:
+                json.dump(self._data, f, indent=2)
+
+    def list_folios(self) -> List[str]:
+        """Get list of folios with notes."""
+        return list(self._load()['folios'].keys())
+
+    def stats(self) -> dict:
+        """Get summary statistics."""
+        data = self._load()
+        folios = data['folios']
+        total_notes = sum(len(f['notes']) for f in folios.values())
+        return {
+            'folios_with_notes': len(folios),
+            'total_notes': total_notes
+        }
+
+
+# ============================================================
 # QUICK VERIFICATION
 # ============================================================
 if __name__ == '__main__':
@@ -1243,3 +3337,49 @@ if __name__ == '__main__':
     print(f"  Class distribution: {summary['class_distribution']}")
     print(f"  FL vocabulary: {summary['fl_vocabulary_count']}")
     print(f"  High confidence: {summary['high_confidence_count']}")
+
+    # Test BFolioDecoder
+    print("\n" + "=" * 50)
+    print("B Folio Decoder Test (f107r)")
+    print("=" * 50)
+
+    decoder = BFolioDecoder()
+    analysis = decoder.analyze_folio('f107r')
+
+    if analysis:
+        print(f"\nFolio: {analysis.folio} ({analysis.token_count} tokens)")
+        print(f"\nClassification rates:")
+        print(f"  PREFIX: {analysis.prefix_classified_pct:.1f}%")
+        print(f"  SUFFIX: {analysis.suffix_classified_pct:.1f}%")
+        print(f"  MIDDLE tier: {analysis.middle_classified_pct:.1f}%")
+
+        print(f"\nInterpretations:")
+        print(f"  Kernel balance: {analysis.kernel_balance}")
+        print(f"  Material: {analysis.material_category}")
+        print(f"  Output: {analysis.output_category}")
+
+        print(f"\nKernel distribution:")
+        for k in ['k', 'h', 'e']:
+            count = analysis.kernel_dist.get(k, 0)
+            print(f"  {k}: {count}")
+
+        # Test both output modes
+        print("\nSample token analysis (structural mode):")
+        for tok in analysis.tokens[:5]:
+            print(f"  {tok.word:15} -> {tok.structural()}")
+
+        print("\nSample token analysis (interpretive mode):")
+        for tok in analysis.tokens[:5]:
+            print(f"  {tok.word:15} -> {tok.interpretive()}")
+
+        # Test line-level analysis
+        print("\n" + "=" * 50)
+        print("B Line-Level Analysis Test (f107r, first 3 lines)")
+        print("=" * 50)
+
+        lines = decoder.analyze_folio_lines('f107r')
+        for la in lines[:3]:
+            print(f"\nLine {la.line_id}: {la.interpretive()}")
+            print(f"  Type: {la.line_type} | FL: {la.fl_progression} | Kernels: {la.kernel_sequence[:5]}")
+            for t in la.tokens[:2]:
+                print(f"    {t.word:12} -> {t.interpretive()}")
