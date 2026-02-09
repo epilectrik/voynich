@@ -1,22 +1,22 @@
 # ============================================================
 
 meta:
-  name: "AZC Activation Contract"
+  name: "AZC Positional Classification Contract"
   acronym: "AZC-ACT"
-  version: "1.1"
-  date: "2026-01-29"
+  version: "1.2"
+  date: "2026-02-06"
   status: "LOCKED"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "Reviewed against constraints through C872. No changes needed - new constraints are internal A/B structure, not pipeline boundaries."
+  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
-    AZC-ACT describes HOW A entries activate AZC constraints.
+    AZC-ACT describes HOW vocabulary is positionally classified in AZC.
     Do not edit without updating source constraints first.
 
 # ============================================================
 scope:
-  function: "How AZC constrains Currier A entries under positional legality"
+  function: "How vocabulary shared between A and AZC is positionally classified"
   direction: "A -> AZC (one-way transformation, not reverse)"
   vocabulary_authority: false  # AZC does not "own" vocabulary
   generativity: false  # No derivation rules
@@ -40,8 +40,8 @@ guarantees:
     statement: "AZC folios group vocabulary by compatibility signature"
     provenance: "C442"
 
-  - id: "LEGALITY_INHERITANCE"
-    statement: "AZC constraint profiles propagate causally into B"
+  - id: "LEGALITY_CORRELATION"
+    statement: "AZC positional vocabulary profiles correlate reliably with B behavior (28x escape rate difference)"
     provenance: "C468"
 
   - id: "NO_CONTENT_MUTATION"
@@ -197,7 +197,7 @@ negative_guarantees:
     reason: "AZC encodes position, does not route"
 
   - guarantee: "No selection"
-    reason: "AZC records vocabulary position, operator selects vocabulary"
+    reason: "AZC records vocabulary position; it does not select or route vocabulary"
 
   - guarantee: "No branching"
     reason: "No conditional paths in AZC structure"
@@ -246,9 +246,9 @@ disallowed:
     reason: "Position encodes legality constraints, not semantics"
     provenance: "C313"
 
-  - interpretation: "AZC is lookup table for A entries"
-    reason: "Vocabulary-activated constraints, not addressable mapping"
-    provenance: "C441"
+  - interpretation: "AZC is addressable lookup from A entries to B programs"
+    reason: "No entry-level A-B coupling exists (C384); AZC classifies vocabulary, not entries"
+    provenance: "C384, C441"
 
   - interpretation: "AZC decides dynamically"
     reason: "Ambient legality field, not decision engine"
@@ -320,7 +320,7 @@ provenance:
     - "C443"  # Positional escape gradient
     - "C444"  # A-type position distribution
 
-  pipeline_causality:
+  vocabulary_correlation:
     - "C468"  # Legality inheritance
     - "C469"  # Categorical resolution principle
     - "C470"  # MIDDLE restriction inheritance

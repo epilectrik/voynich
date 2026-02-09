@@ -181,7 +181,7 @@ Treat as **content regimes**, not temporal phases (rebinding uncertainty).
 - Population-level correlation does NOT imply entry mapping
 
 **Vocabulary overlap exists but is partial:**
-- 404 shared MIDDLEs (PP, Pipeline-Participating)
+- 404 shared MIDDLEs (PP, present in both A and B)
 - 60.1% of A's MIDDLEs are A-exclusive (609 RI, Registry-Internal)
 - Shared vocabulary is cross-reference infrastructure, not entry coupling
 

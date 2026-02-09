@@ -12,7 +12,7 @@ The Voynich Manuscript contains three distinct text systems:
 |--------|----------|--------|----------|
 | **Currier B** | 61.9% | 83 | Sequential executable programs |
 | **Currier A** | 30.5% | 114 | Non-sequential categorical registry |
-| **AZC** | 7.7% | 30 | Hybrid diagram annotation |
+| **AZC** | 8.7% | 30 | Static positional vocabulary classification |
 
 ---
 
@@ -101,19 +101,19 @@ This dichotomy holds **identically** in:
 | Sequential grammar | A has none |
 | Forbidden transitions | Different violations |
 
-### Hybrid Access Pattern (C336)
+### Vocabulary Overlap Pattern (C336)
 
-B programs access A vocabulary through **both**:
-- **Sequential reading**: Adjacent B folios share more A-vocab (0.548 vs 0.404)
-- **Semantic lookup**: Similar B programs share more A-vocab (0.427 vs 0.256)
+B and A vocabulary overlap shows both sequential and semantic correlation:
+- **Sequential correlation**: Adjacent B folios share more A-vocabulary (0.548 vs 0.404)
+- **Semantic correlation**: Similar B programs share more A-vocabulary (0.427 vs 0.256)
 
-Operators use **both** sequential reading and semantic lookup.
+The functional mechanism producing these correlations is not established at Tier 2.
 
 ---
 
-## AZC Bridge Role
+## AZC Vocabulary Classification
 
-AZC mediates between A and B:
+AZC classifies vocabulary from the shared type system by positional properties:
 
 | Connection | Value |
 |------------|-------|
@@ -122,7 +122,7 @@ AZC mediates between A and B:
 | Shared vocabulary (A∩B) | 60.5% |
 | Unique vocabulary | 25.4% |
 
-AZC draws primarily from the **shared core** while adding diagram-specific terms.
+AZC vocabulary is primarily from the shared A/B vocabulary pool, with additional diagram-specific terms.
 
 ---
 
@@ -130,11 +130,11 @@ AZC draws primarily from the **shared core** while adding diagram-specific terms
 
 | System | Analogy | Function |
 |--------|---------|----------|
-| Currier A | Parts catalog | Index of available components |
-| Currier B | Assembly instructions | How to use components |
-| AZC | Diagram labels | Position markers on illustrations |
+| Currier A | Discrimination index | Fine distinctions within shared vocabulary |
+| Currier B | Execution grammar | Sequential programs using shared vocabulary |
+| AZC | Positional classification | Vocabulary organized by operational character |
 
-Same part types, different formal systems.
+Same vocabulary, different formal systems.
 
 ---
 
@@ -160,6 +160,10 @@ Currier A and Currier B share a global morphological type system (C383). This pr
 
 This distinction resolves a common confusion: observing that A's material/variant encoding aligns with B's hazard topology does not indicate semantic coupling. It indicates that both systems instantiate the same type system - one as registry, one as executable grammar. The alignment is structural, not referential.
 
+### Construction-Time vs Runtime (Tier 3)
+
+The vocabulary overlap is clearly deliberate but no runtime coupling mechanism exists (A_PURPOSE_INVESTIGATION, 2026-02-04: 6 hypotheses tested, all failed). The most parsimonious explanation is a **construction-time relationship**: A served as the reference vocabulary when B programs were authored. AZC classified that vocabulary by operational character. Once written, B programs are fixed and self-contained — no active compilation from A data occurs during execution. A may also have served as a lookup reference for operators encountering unfamiliar tokens.
+
 ---
 
 ## Section Mapping (Tier 2)
@@ -182,7 +186,7 @@ H-section vocabulary dominates B procedures.
 |---|------------|
 | 272 | A and B are folio-disjoint (0 shared) |
 | 335 | 69.8% vocabulary integration |
-| 336 | Hybrid access (sequential + semantic) |
+| 336 | Vocabulary overlap (sequential + semantic correlation) |
 | 383 | GLOBAL TYPE SYSTEM across A/B/AZC |
 | 384 | NO entry-level coupling |
 

@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.5"
-  date: "2026-01-31"
+  version: "1.6"
+  date: "2026-02-06"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -106,7 +106,7 @@ morphology:
           azc_mediated:
             count: 214
             percent: "19.8% of A vocabulary"
-            role: "True pipeline participation: A->AZC->B constraint propagation"
+            role: "Vocabulary appearing in A, AZC, and B contexts (three-system vocabulary)"
             breakdown:
               universal: 28   # 10+ AZC folios, avg 54.8 B spread
               moderate: 69    # 3-9 AZC folios, avg 15.4 B spread
@@ -114,7 +114,7 @@ morphology:
           b_native_overlap:
             count: 198
             percent: "18.4% of A vocabulary"
-            role: "B operational vocabulary with incidental A presence"
+            role: "Vocabulary shared between A and B but absent from AZC contexts"
             characteristics: "Zero AZC presence, avg 3.5 B folios"
         provenance: "C498.a"
       registry_internal:
@@ -373,7 +373,7 @@ paragraph_structure:
 
   ab_relationship:  # C846
     model: "Pool-based, not address-based"
-    statement: "A paragraphs provide vocabulary pools; B draws without specific pairing"
+    statement: "A paragraphs and B programs overlap in vocabulary (pool-based, not address-based)"
     best_match_lift: "2.49x raw, 1.20x pool-size-controlled"
     hub_concentration: "Top 10 A paragraphs capture 85.9% of best matches"
     pool_size_correlation: "Spearman rho = 0.694"
@@ -403,8 +403,8 @@ participation:
   azc:
     registry_entries:
       participates: true
-      pipeline: "A -> AZC -> B"
-      compatibility_filtering: true
+      shared_vocabulary: true
+      vocabulary_overlap: true
     control_operators:
       participates: false
       azc_tokens_in_folios: 0

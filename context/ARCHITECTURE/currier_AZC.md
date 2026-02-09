@@ -1,6 +1,6 @@
-# Currier AZC: Context-Locking Scaffold System
+# Currier AZC: Static Positional Vocabulary Classification
 
-**Status:** CLOSED | **Tier:** 2 | **Scope:** 7.7% of tokens, 30 folios
+**Status:** CLOSED | **Tier:** 2 | **Scope:** 8.7% of tokens, 30 folios
 
 **See also:** [azc_transcript_encoding.md](azc_transcript_encoding.md) — Physical diagram encoding in transcript
 
@@ -8,13 +8,13 @@
 
 ## The Core Insight
 
-> **AZC is not "diagrams with labels." It is a rigid, page-bound control scaffold that locks the system into constrained contexts.**
+> **AZC is not "diagrams with labels." It is a rigid, page-bound positional encoding that classifies vocabulary by operational character.**
 
 AZC does not execute procedures (that's Currier B).
 AZC does not catalog distinctions (that's Currier A).
-AZC controls **where things are allowed to appear**.
+AZC **records where things appear** — each PREFIX+MIDDLE combination maps to exactly one position.
 
-Every AZC page enforces a hard placement lock. The human enters AZC to commit to a context constraint.
+Position reflects the vocabulary's intrinsic operational nature; it does not cause behavior.
 
 ---
 
@@ -173,25 +173,25 @@ No ordered subscripts (R1/R2/R3, S1/S2) appear in this family.
 
 ## What AZC Does (Functional Role)
 
-AZC is **the human entry point** to the system. It is where the operator commits to a context lock:
+AZC is a **static positional encoding** where vocabulary clusters by operational character:
 
-| Family | Commitment |
-|--------|------------|
-| Zodiac | "Enter the standard cycle" |
-| A/C | "Enter this specific configuration" |
+| Family | Pattern |
+|--------|---------|
+| Zodiac | Same rigid scaffold reused 12 times with local vocabulary variation |
+| A/C | Different rigid scaffold per folio, each with distinct vocabulary profile |
 
-AZC does not tell you what to do. It tells you **how narrowly constrained you are about to be**.
+AZC does not tell you what to do. It **classifies what vocabulary appears where**.
 
-### Coordination by Constraint
+### Vocabulary Clustering by Position
 
-AZC coordinates procedures by **forbidding wrong combinations**, not by choosing right ones:
+AZC positions reflect distinct vocabulary profiles — different operational character concentrated at different positions:
 
-- Which morphologies are legal in this context
-- Where boundaries apply
-- How long you stay inside one regime
+- S-series: Stabilization vocabulary (highest AX%, highest ok/ot%, lowest EN%)
+- R-series: Processing vocabulary (balanced profile, moderate kernel contact)
+- C position: Core vocabulary (balanced)
 
 This explains why:
-- AZC has 219 forbidden token-placement pairs (C313)
+- AZC has 219 forbidden token-placement pairs (C313) — vocabulary profiles are position-specific
 - Placement constrains LEGALITY not PREDICTION (only 14% prediction gain)
 - Position-locked operators exist (9/18 restricted to single placement)
 
@@ -203,12 +203,12 @@ AZC completes the Voynich control architecture:
 
 | Layer | System | Function |
 |-------|--------|----------|
-| **Execution** | Currier B | Controls what you do over time |
-| **Distinction** | Currier A | Catalogs where distinctions matter |
-| **Context** | AZC | Locks which things may appear where |
-| **Orientation** | HT | Keeps the human stable once locked |
+| **Execution** | Currier B | Sequential programs using shared vocabulary |
+| **Distinction** | Currier A | Independent discrimination registry |
+| **Context** | AZC | Static positional vocabulary classification |
+| **Orientation** | HT | Compound specifications; keeps operator oriented during production |
 
-AZC does not execute. It does not route. It **encodes position**.
+AZC does not execute. It does not route. It **classifies vocabulary by position**.
 
 ---
 
@@ -293,13 +293,13 @@ AZC uses the shared core while adding diagram-specific terms.
 
 ## Summary
 
-AZC is not decorative annotation. It is **bulk mechanical structure** that implements context-locking for an operational system.
+AZC is not decorative annotation. It is **bulk positional structure** that classifies vocabulary by operational character.
 
-The Zodiac pages are not "about" twelve things. They are the **same control structure reused twelve times**.
+The Zodiac pages are not "about" twelve things. They are the **same positional scaffold reused twelve times**.
 
 The A/C pages are not "loose." They are **equally rigid but diagram-specific**.
 
-Together, they form a positional encoding layer. Each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character. B vocabulary availability correlates with A vocabulary through AZC positional correspondence.
+Together, they form a positional encoding layer. Each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character. AZC position and B behavior co-vary because both are determined by the same underlying vocabulary properties.
 
 ---
 

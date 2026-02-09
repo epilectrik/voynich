@@ -135,7 +135,7 @@ Use these to verify your filtering is correct:
 | Constraints | 794 validated |
 | Phases | 274 completed |
 | Folios | 83 (Currier B) |
-| Pipeline | CLOSED (PCA-v1 CERTIFIED) |
+| Analysis | CLOSED (PCA-v1 CERTIFIED) |
 
 ---
 
