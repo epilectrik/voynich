@@ -198,21 +198,28 @@ Control scaffolds tolerate these patterns. Semantic or communicative systems do 
 
 ## HT: The Orientation Layer
 
-**What it is:** 7,042 tokens distributed across the entire manuscript. HT tokens are defined by exclusion — they don't belong to the 479-type Currier B grammar vocabulary. They use the same morphological system but produce compound words with rare combinations.
+**What it is:** 7,042 tokens distributed across the entire manuscript. HT tokens were originally defined by exclusion — they don't belong to the 479-type classified grammar. But recent analysis (C935) shows they are **enriched compound MIDDLEs** — longer, more complex tokens that decompose into the same core atoms found in simpler form throughout the paragraph body.
 
-**What it does:** HT is an **anticipatory vigilance signal** — its density tracks upcoming discrimination complexity. When upcoming content is harder to distinguish (more rare vocabulary), HT density increases. The correlation between HT density and content difficulty is statistically significant (r = 0.504 with tail MIDDLEs).
+**What it does:** HT tokens are **compound operational specifications** that serve a dual purpose:
 
-HT serves multiple functions:
+1. **Operational specification** — Each compound token encodes multiple operations compressed into a single word. For example, `opcheodai` decomposes into atoms (op, ch, e, od, ai) that each correspond to a core operation. 71.6% of these atoms appear as simple MIDDLEs in the paragraph body (vs 59.2% random baseline). The header compresses what the body unpacks.
 
-1. **Anticipatory vigilance** — HT density ramps up before complex content, signaling the operator to increase attention
-2. **Header identification** — First-line HT tokens specifically serve as paragraph headers: 68.3% function as context declarations, 31.7% as folio identification. These compound tokens contain atoms that also appear as simple MIDDLEs in the body.
-3. **Session continuity** — HT tracks which production session the operator is in, synchronizes with procedural phase (different prefixes appear early vs. late), and avoids hazard positions where attention must be on the apparatus
+2. **Program identification** — Because the specific combination of atoms in each compound is rare or unique, these tokens also function like technical part numbers — they identify *which specific program* this is. Two different compound headers can invoke similar generic control loops in the body while remaining distinguishable.
 
-### Non-Operational but Not Empty
+HT tokens are 1.46x more likely to be compound than classified grammar tokens (45.8% vs 31.5%), and their MIDDLEs average 2.64 characters vs 2.04 for the grammar. They are genuinely operational — just redundant with the body content.
 
-Three independent tests prove that removing all HT tokens would not change any program's outcome (p = 0.92 for terminal independence). This isn't because HT is empty — it's because the paragraph body already contains the same operations in simpler form. HT is operationally **redundant**, not meaningless.
+### Operationally Redundant, Not Empty
 
-The redundancy serves the human operator, not the grammar. HT's compound headers let an operator identify where they are in a production session (via rare combinations that function like part numbers) while the body handles actual execution.
+Three independent tests prove that removing all HT tokens would not change any program's outcome (p = 0.92 for terminal independence). This isn't because HT is empty — it's because the paragraph body already contains the same operations in simpler form. The header is a compressed specification; the body unpacks it.
+
+Line-1 HT tokens concentrate heavily: 50.2% of first-line tokens come from the HT vocabulary vs 29.8% in body lines. This concentration may still serve a human-facing function — giving the operator a quick reference for what the paragraph does — but the primary finding is that HT tokens are functional compound specifications, not a separate non-operational layer.
+
+### Other Properties
+
+- **Unified across systems:** The same HT prefixes appear in A, B, and AZC (Jaccard similarity >= 0.947)
+- **Quire-organized:** Clustering follows physical production units (quires), not content organization
+- **Phase-synchronized:** Different HT prefixes correlate with early vs. late procedural phases
+- **Hazard-avoiding:** HT tokens cluster in positions where the operator would be waiting, not at forbidden transition points
 
 ### Key Properties
 
