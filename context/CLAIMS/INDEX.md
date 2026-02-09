@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 794 validated constraints | **Version:** 3.37 | **Date:** 2026-02-09
+**Total:** 802 validated constraints | **Version:** 3.38 | **Date:** 2026-02-09
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1565,6 +1565,28 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Section-specific tail vocabulary extends C909 to the rare tail distribution
 - C619 strengthened: unique MIDDLE behavioral equivalence holds within procedural phases
 - Semantic ceiling (C120) confirmed: material encoding does NOT live in MIDDLE morphology
+
+### Material Locus Search (C941-C948) - Phase: MATERIAL_LOCUS_SEARCH
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **941** | **Section Is the Primary Vocabulary Organizer** (ARI=0.40, NMI=0.53, p<0.0001; residual after section removal ~0; no sub-section material categories) | 2 | B | -> [C941_section_vocabulary_organizer.md](C941_section_vocabulary_organizer.md) |
+| **942** | **Context-Dependent MIDDLE Successor Profiles** (45.8% significant by section after Bonferroni; section KL 2.0x > position KL; 100% MIDDLEs have section KL > position KL) | 2 | B | -> [C942_context_dependent_successors.md](C942_context_dependent_successors.md) |
+| **943** | **Whole-Token Variant Coordination Carries Section Signal** (residual MI=0.105 bits after PREFIX conditioning, p=0.0; 60% persists; 97.6% MIDDLEs have V>0.2) | 2 | B | -> [C943_whole_token_variant_coordination.md](C943_whole_token_variant_coordination.md) |
+| **944** | **Paragraph Kernel Sequence Stereotypy** (entropy p=0.004; section T=1.32 bits, S=2.79 bits; section-specific paragraph ordering patterns) | 2 | B | -> [C944_paragraph_kernel_sequence_stereotypy.md](C944_paragraph_kernel_sequence_stereotypy.md) |
+| **945** | **No Folio-Persistent Rare MIDDLEs as Material Markers FALSIFIED** (0 rare MIDDLEs at >80% persistence; 81.8% confined to single paragraph; mean edit distance 1.33) | 1 | B | -> [C945_no_folio_persistent_material_markers.md](C945_no_folio_persistent_material_markers.md) |
+| **946** | **A Folios Show No Material-Domain Routing FALSIFIED** (cosine similarity 0.997; ARI=-0.007; RI extension V=0.071; A is generic pool) | 1 | A | -> [C946_no_a_material_routing.md](C946_no_a_material_routing.md) |
+| **947** | **No Specification Vocabulary Gradient FALSIFIED** (early 62.5% vs late 64.2%; difference -1.7pp; Wilcoxon p=0.632) | 1 | B | -> [C947_no_specification_vocabulary_gradient.md](C947_no_specification_vocabulary_gradient.md) |
+| **948** | **Gloss Gap Paragraph-Start Enrichment** (4.03x at par_start; section H gap rate 8.6% vs B 2.4%; 16 distinct gaps all hapax) | 2 | B | -> [C948_gloss_gap_paragraph_start_enrichment.md](C948_gloss_gap_paragraph_start_enrichment.md) |
+
+**Phase findings:**
+- **Section IS the material coordinate** — vocabulary profiles, successor distributions, token variant coordination, and paragraph sequences all organize by section
+- **No sub-section material markers exist** — no discrete tokens, morphological features, or positional slots carry material identity
+- Material identity is **emergently encoded** in the section-level combinatorial vocabulary profile
+- A folios are a generic pool (cosine 0.997) with no material-domain routing
+- No specification gradient: early and late paragraph vocabulary discriminate section equally
+- Gloss gaps enriched at paragraph starts (4.03x) but all distinct gaps are hapax
+- Semantic ceiling (C120/C171) reinforced: material information is bound to section identity and cannot be recovered from individual tokens
 
 ---
 

@@ -1,0 +1,240 @@
+{
+  "test": "whole_token_variant_coordination",
+  "phase": "MATERIAL_LOCUS_SEARCH",
+  "test_number": 4,
+  "question": "Is PREFIX+SUFFIX variant coordination section-specific beyond PREFIX-MIDDLE compatibility?",
+  "method": {
+    "description": "Mutual information decomposition of variant-section association, controlling for PREFIX class",
+    "qualifying_criteria": "3+ sections with 10+ tokens each per MIDDLE",
+    "permutations": 500,
+    "random_seed": 42
+  },
+  "verdict": "PASS",
+  "verdict_detail": "Residual MI = 0.105002 bits (> 0.01 threshold), p = 0.0 (< 0.01). Section identity carries information about token variant selection beyond PREFIX compatibility.",
+  "currier_b": {
+    "language": "B",
+    "total_tokens_analyzed": 23096,
+    "qualifying_middles": 41,
+    "total_filtered_tokens": 18609,
+    "mi_variant_section_bits": 0.175037,
+    "mi_variant_prefix_bits": 3.885298,
+    "residual_mi_bits": 0.105002,
+    "residual_fraction_of_total": 0.5999,
+    "permutation_test": {
+      "n_permutations": 500,
+      "observed_residual_mi": 0.105002,
+      "null_mean": 0.07667,
+      "null_95th_percentile": 0.080224,
+      "null_99th_percentile": 0.081319,
+      "p_value": 0.0
+    },
+    "cramers_v_summary": {
+      "mean": 0.3911,
+      "median": 0.3633,
+      "n_strong_v_gt_0_2": 40,
+      "fraction_strong": 0.9756
+    },
+    "per_middle_top10": [
+      {
+        "middle": "s",
+        "n_tokens": 144,
+        "n_sections": 5,
+        "n_variants": 49,
+        "chi_square": 270.61,
+        "cramers_v": 0.6854
+      },
+      {
+        "middle": "ee",
+        "n_tokens": 151,
+        "n_sections": 5,
+        "n_variants": 62,
+        "chi_square": 269.68,
+        "cramers_v": 0.6682
+      },
+      {
+        "middle": "et",
+        "n_tokens": 58,
+        "n_sections": 5,
+        "n_variants": 22,
+        "chi_square": 101.72,
+        "cramers_v": 0.6622
+      },
+      {
+        "middle": "d",
+        "n_tokens": 337,
+        "n_sections": 5,
+        "n_variants": 104,
+        "chi_square": 476.74,
+        "cramers_v": 0.5947
+      },
+      {
+        "middle": "ckh",
+        "n_tokens": 127,
+        "n_sections": 5,
+        "n_variants": 36,
+        "chi_square": 172.28,
+        "cramers_v": 0.5823
+      },
+      {
+        "middle": "ek",
+        "n_tokens": 169,
+        "n_sections": 5,
+        "n_variants": 37,
+        "chi_square": 227.12,
+        "cramers_v": 0.5796
+      },
+      {
+        "middle": "eo",
+        "n_tokens": 359,
+        "n_sections": 5,
+        "n_variants": 71,
+        "chi_square": 454.98,
+        "cramers_v": 0.5629
+      },
+      {
+        "middle": "ai",
+        "n_tokens": 174,
+        "n_sections": 5,
+        "n_variants": 33,
+        "chi_square": 211.58,
+        "cramers_v": 0.5514
+      },
+      {
+        "middle": "ed",
+        "n_tokens": 401,
+        "n_sections": 5,
+        "n_variants": 104,
+        "chi_square": 465.68,
+        "cramers_v": 0.5388
+      },
+      {
+        "middle": "o",
+        "n_tokens": 388,
+        "n_sections": 5,
+        "n_variants": 84,
+        "chi_square": 428.04,
+        "cramers_v": 0.5252
+      }
+    ]
+  },
+  "currier_a": {
+    "language": "A",
+    "total_tokens_analyzed": 11174,
+    "qualifying_middles": 20,
+    "total_filtered_tokens": 6857,
+    "mi_variant_section_bits": 0.147831,
+    "mi_variant_prefix_bits": 3.833015,
+    "residual_mi_bits": 0.095878,
+    "residual_fraction_of_total": 0.6486,
+    "permutation_test": {
+      "n_permutations": 500,
+      "observed_residual_mi": 0.095878,
+      "null_mean": 0.061701,
+      "null_95th_percentile": 0.066448,
+      "null_99th_percentile": 0.068882,
+      "p_value": 0.0
+    },
+    "cramers_v_summary": {
+      "mean": 0.4624,
+      "median": 0.4767,
+      "n_strong_v_gt_0_2": 19,
+      "fraction_strong": 0.95
+    },
+    "per_middle_top10": [
+      {
+        "middle": "t",
+        "n_tokens": 156,
+        "n_sections": 3,
+        "n_variants": 32,
+        "chi_square": 135.45,
+        "cramers_v": 0.6589
+      },
+      {
+        "middle": "e",
+        "n_tokens": 310,
+        "n_sections": 3,
+        "n_variants": 78,
+        "chi_square": 216.96,
+        "cramers_v": 0.5916
+      },
+      {
+        "middle": "ok",
+        "n_tokens": 99,
+        "n_sections": 3,
+        "n_variants": 33,
+        "chi_square": 63.84,
+        "cramers_v": 0.5678
+      },
+      {
+        "middle": "k",
+        "n_tokens": 338,
+        "n_sections": 3,
+        "n_variants": 48,
+        "chi_square": 209.79,
+        "cramers_v": 0.5571
+      },
+      {
+        "middle": "od",
+        "n_tokens": 198,
+        "n_sections": 3,
+        "n_variants": 68,
+        "chi_square": 114.46,
+        "cramers_v": 0.5376
+      },
+      {
+        "middle": "l",
+        "n_tokens": 355,
+        "n_sections": 3,
+        "n_variants": 48,
+        "chi_square": 204.95,
+        "cramers_v": 0.5373
+      },
+      {
+        "middle": "o",
+        "n_tokens": 602,
+        "n_sections": 3,
+        "n_variants": 105,
+        "chi_square": 338.8,
+        "cramers_v": 0.5305
+      },
+      {
+        "middle": "eo",
+        "n_tokens": 216,
+        "n_sections": 3,
+        "n_variants": 47,
+        "chi_square": 109.02,
+        "cramers_v": 0.5024
+      },
+      {
+        "middle": "ar",
+        "n_tokens": 161,
+        "n_sections": 3,
+        "n_variants": 26,
+        "chi_square": 78.69,
+        "cramers_v": 0.4944
+      },
+      {
+        "middle": "al",
+        "n_tokens": 143,
+        "n_sections": 3,
+        "n_variants": 33,
+        "chi_square": 65.0,
+        "cramers_v": 0.4767
+      }
+    ]
+  },
+  "comparison": {
+    "b_residual_mi": 0.105002,
+    "a_residual_mi": 0.095878,
+    "b_over_a_ratio": 1.1,
+    "b_p_value": 0.0,
+    "a_p_value": 0.0
+  },
+  "references": [
+    "C733",
+    "C911",
+    "C728",
+    "C697",
+    "C730"
+  ]
+}

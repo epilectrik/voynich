@@ -4,6 +4,36 @@
 
 ---
 
+## Version 3.38 (2026-02-09) - Material Locus Search Phase
+
+### Summary
+
+16-test research phase systematically searched all remaining combinatorial hiding places for material identity encoding. **Verdict: MATERIAL EMERGENT** — section identity IS the material coordinate; no sub-section material markers exist. Material is implicitly encoded in the section-level vocabulary profile.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C941 | Section Is Primary Vocabulary Organizer | 2 | ARI=0.40, NMI=0.53, residual ~0 |
+| C942 | Context-Dependent MIDDLE Successor Profiles | 2 | 45.8% section-dependent, KL ratio 2.0x |
+| C943 | Whole-Token Variant Coordination | 2 | Residual MI=0.105 bits, 60% persists |
+| C944 | Paragraph Kernel Sequence Stereotypy | 2 | Entropy p=0.004, section T=1.32 bits |
+| C945 | No Folio-Persistent Material Markers FALSIFIED | 1 | 0 at >80%, 81.8% single-paragraph |
+| C946 | No A Material-Domain Routing FALSIFIED | 1 | Cosine=0.997, ARI=-0.007 |
+| C947 | No Specification Vocabulary Gradient FALSIFIED | 1 | Early 62.5% vs Late 64.2%, p=0.632 |
+| C948 | Gloss Gap Paragraph-Start Enrichment | 2 | 4.03x at par_start, all distinct gaps hapax |
+
+### Key Findings
+
+- Every positive signal traces to section identity — token variants, successors, paragraph sequences
+- No individual token, morphological slot, or positional feature serves as material marker
+- A folios are a generic pool (cosine 0.997) — no material routing from A to B
+- Gloss gaps enriched at paragraph starts (4.03x) and section-specific, but all distinct ones are hapax
+- Section functions simultaneously as operational configuration AND implicit material domain
+- Semantic ceiling (C120/C171) reinforced at a deeper level
+
+---
+
 ## Version 3.37 (2026-02-09) - MIDDLE Material Semantics Phase
 
 ### Summary

@@ -1,0 +1,206 @@
+{
+  "test": "paragraph_initial_signature",
+  "test_number": 8,
+  "question": "Do paragraph-initial tokens predict body vocabulary/section?",
+  "method": {
+    "description": "Extract first 3 tokens (INITIAL) and remaining tokens (BODY) per paragraph. Build presence/absence feature vectors from MIDDLE vocabulary. Leave-one-out cross-validation with KNN(k=5) and NearestCentroid. Compare initial-token accuracy vs body-vocabulary accuracy and random baseline.",
+    "min_paragraph_tokens": 10,
+    "initial_token_count": 3,
+    "common_middle_threshold": 3,
+    "n_permutation_baseline": 100
+  },
+  "data_summary": {
+    "total_currier_b_tokens": 23096,
+    "total_paragraphs_raw": 477,
+    "paragraphs_after_filter": 477,
+    "sections": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "n_sections": 5,
+    "section_distribution": {
+      "B": 86,
+      "C": 25,
+      "H": 68,
+      "S": 284,
+      "T": 14
+    },
+    "n_common_initial_middles": 65,
+    "n_common_body_middles": 293
+  },
+  "test1_section_prediction": {
+    "initial_knn_k5_accuracy": 0.3543,
+    "initial_nearest_centroid_accuracy": 0.392,
+    "body_knn_k5_accuracy": 0.6625,
+    "body_nearest_centroid_accuracy": 0.7128,
+    "best_initial_accuracy": 0.392,
+    "best_initial_method": "NearestCentroid",
+    "best_body_accuracy": 0.7128,
+    "best_body_method": "NearestCentroid",
+    "initial_to_body_ratio": 0.55,
+    "chance_level": 0.2,
+    "majority_baseline": 0.5954,
+    "majority_class": "S",
+    "permutation_baseline": {
+      "n_permutations": 100,
+      "mean_accuracy": 0.2257,
+      "std_accuracy": 0.0353,
+      "z_score": 4.71,
+      "p_value": 0.0
+    },
+    "per_section_accuracy": {
+      "B": {
+        "n": 86,
+        "correct": 46,
+        "accuracy": 0.535
+      },
+      "C": {
+        "n": 25,
+        "correct": 3,
+        "accuracy": 0.12
+      },
+      "H": {
+        "n": 68,
+        "correct": 19,
+        "accuracy": 0.279
+      },
+      "S": {
+        "n": 284,
+        "correct": 119,
+        "accuracy": 0.419
+      },
+      "T": {
+        "n": 14,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "chi_square_analysis": {
+    "middles_tested": 47,
+    "significant_at_005": 7,
+    "top_10_predictive": {
+      "dy": {
+        "chi2": 36.722,
+        "p_value": 2.0556336688689448e-07,
+        "best_section": "H",
+        "enrichment_ratio": 3.301,
+        "count": 34
+      },
+      "k": {
+        "chi2": 30.159,
+        "p_value": 4.543178535911062e-06,
+        "best_section": "B",
+        "enrichment_ratio": 2.04,
+        "count": 87
+      },
+      "d": {
+        "chi2": 21.973,
+        "p_value": 0.0002028763816791573,
+        "best_section": "T",
+        "enrichment_ratio": 2.781,
+        "count": 49
+      },
+      "l": {
+        "chi2": 18.972,
+        "p_value": 0.0007959840132908693,
+        "best_section": "B",
+        "enrichment_ratio": 2.143,
+        "count": 44
+      },
+      "ed": {
+        "chi2": 14.601,
+        "p_value": 0.005604215738481406,
+        "best_section": "C",
+        "enrichment_ratio": 1.974,
+        "count": 58
+      },
+      "eo": {
+        "chi2": 13.091,
+        "p_value": 0.010840488204269918,
+        "best_section": "T",
+        "enrichment_ratio": 1.481,
+        "count": 46
+      },
+      "lk": {
+        "chi2": 10.174,
+        "p_value": 0.03759588937317195,
+        "best_section": "T",
+        "enrichment_ratio": 3.407,
+        "count": 10
+      },
+      "iin": {
+        "chi2": 9.356,
+        "p_value": 0.052787770673853894,
+        "best_section": "C",
+        "enrichment_ratio": 3.578,
+        "count": 16
+      },
+      "in": {
+        "chi2": 8.661,
+        "p_value": 0.0701443815487836,
+        "best_section": "C",
+        "enrichment_ratio": 5.451,
+        "count": 7
+      },
+      "aiin": {
+        "chi2": 8.064,
+        "p_value": 0.08927520307342793,
+        "best_section": "T",
+        "enrichment_ratio": 1.622,
+        "count": 21
+      }
+    }
+  },
+  "test2_initial_body_coupling": {
+    "overall_mean_jaccard": 0.056,
+    "overall_std_jaccard": 0.0437,
+    "per_section_jaccard": {
+      "B": {
+        "n": 86,
+        "mean": 0.0635,
+        "std": 0.0426,
+        "median": 0.0594
+      },
+      "C": {
+        "n": 25,
+        "mean": 0.063,
+        "std": 0.0502,
+        "median": 0.0455
+      },
+      "H": {
+        "n": 68,
+        "mean": 0.0471,
+        "std": 0.0374,
+        "median": 0.0392
+      },
+      "S": {
+        "n": 284,
+        "mean": 0.0563,
+        "std": 0.0447,
+        "median": 0.05
+      },
+      "T": {
+        "n": 14,
+        "mean": 0.0363,
+        "std": 0.0311,
+        "median": 0.0392
+      }
+    },
+    "kruskal_wallis": {
+      "H_statistic": 10.569,
+      "p_value": 0.031864,
+      "significant_at_005": true
+    }
+  },
+  "pass_criteria": {
+    "initial_accuracy_threshold": 0.6,
+    "initial_to_body_ratio_threshold": 0.7,
+    "chance_level": 0.2
+  },
+  "verdict": "MARGINAL",
+  "interpretation": "Paragraph-initial tokens carry moderate section signal. Best initial-token accuracy (39.2%) exceeds chance (20.0%) but falls short of 60% threshold or 70% body-accuracy ratio (55.0%). Initial tokens contain partial but not fully reliable section information."
+}

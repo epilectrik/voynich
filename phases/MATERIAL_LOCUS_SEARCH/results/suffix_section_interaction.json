@@ -1,0 +1,2178 @@
+{
+  "test": "suffix_section_interaction",
+  "description": "Does the same MIDDLE take different suffix distributions in different sections?",
+  "timestamp": "2026-02-09T11:33:55.316436",
+  "parameters": {
+    "middle_min_count": 100,
+    "bonferroni_alpha": 0.01,
+    "sections": [
+      "B",
+      "H",
+      "S",
+      "T",
+      "C"
+    ],
+    "regimes": [
+      "REGIME_1",
+      "REGIME_2",
+      "REGIME_3",
+      "REGIME_4"
+    ]
+  },
+  "counts": {
+    "total_middles": 1293,
+    "common_middles_tested": 36,
+    "testable_section": 34,
+    "testable_regime": 34
+  },
+  "section_test": {
+    "mean_cramers_v": 0.1976,
+    "median_cramers_v": 0.2012,
+    "significant_count": 9,
+    "pct_significant": 26.5,
+    "bonferroni_threshold": 0.00029411764705882356,
+    "c495_baseline_v": 0.159
+  },
+  "regime_confound": {
+    "mean_cramers_v": 0.1728,
+    "median_cramers_v": 0.1661,
+    "significant_count": 1,
+    "pct_significant": 2.9
+  },
+  "comparison": {
+    "section_stronger_count": 26,
+    "regime_stronger_count": 8,
+    "pct_section_stronger": 76.5,
+    "mean_V_diff": 0.0248
+  },
+  "within_section_regime": {
+    "B": {
+      "V": 0.0883,
+      "chi2": 160.4,
+      "p": 4.199709899545021e-05,
+      "n": 6850
+    },
+    "H": {
+      "V": 0.1,
+      "chi2": 103.1,
+      "p": 0.030148873653449395,
+      "n": 3433
+    },
+    "S": {
+      "V": 0.1,
+      "chi2": 320.3,
+      "p": 6.267154861957713e-26,
+      "n": 10671
+    },
+    "T": {
+      "V": 0.2478,
+      "chi2": 40.6,
+      "p": 0.018231775695057028,
+      "n": 662
+    },
+    "C": {
+      "V": 0.2077,
+      "chi2": 63.9,
+      "p": 8.02708162842126e-05,
+      "n": 1480
+    }
+  },
+  "verdict": "PARTIAL",
+  "verdict_reason": "Mean V=0.198 exceeds C495 baseline 0.159 but below 0.20 threshold or 26.5% < 50% significant",
+  "per_middle_results": {
+    "k": {
+      "count": 2083,
+      "section_V": 0.2061,
+      "section_p": 7.440628927735841e-35,
+      "section_significant": true,
+      "regime_V": 0.1744,
+      "regime_p": 1.1531484847745262e-14,
+      "regime_significant": true
+    },
+    "edy": {
+      "count": 1938,
+      "section_V": 0.0748,
+      "section_p": 0.0018176176241505712,
+      "section_significant": false,
+      "regime_V": 0.0396,
+      "regime_p": 0.8722776166529491,
+      "regime_significant": false
+    },
+    "ey": {
+      "count": 889,
+      "section_V": 0.1266,
+      "section_p": 1.6837239699707104e-06,
+      "section_significant": true,
+      "regime_V": 0.0604,
+      "regime_p": 0.6408897408115861,
+      "regime_significant": false
+    },
+    "e": {
+      "count": 867,
+      "section_V": 0.2006,
+      "section_p": 7.254847789360427e-07,
+      "section_significant": true,
+      "regime_V": 0.1781,
+      "regime_p": 0.0034649028668820676,
+      "regime_significant": false
+    },
+    "l": {
+      "count": 855,
+      "section_V": 0.1787,
+      "section_p": 0.0011201662002918859,
+      "section_significant": false,
+      "regime_V": 0.1537,
+      "regime_p": 0.16824352842970733,
+      "regime_significant": false
+    },
+    "aiin": {
+      "count": 834,
+      "section_V": 0.1177,
+      "section_p": 0.003253054829740645,
+      "section_significant": false,
+      "regime_V": 0.0979,
+      "regime_p": 0.013812262070335481,
+      "regime_significant": false
+    },
+    "ol": {
+      "count": 762,
+      "section_V": 0.0994,
+      "section_p": 0.1816590524243323,
+      "section_significant": false,
+      "regime_V": 0.0811,
+      "regime_p": 0.6606014192160088,
+      "regime_significant": false
+    },
+    "r": {
+      "count": 749,
+      "section_V": 0.2075,
+      "section_p": 2.424316820435203e-09,
+      "section_significant": true,
+      "regime_V": 0.148,
+      "regime_p": 0.06963901351911239,
+      "regime_significant": false
+    },
+    "ar": {
+      "count": 677,
+      "section_V": 0.1332,
+      "section_p": 0.08664495803338224,
+      "section_significant": false,
+      "regime_V": 0.1512,
+      "regime_p": 0.011395548012620988,
+      "regime_significant": false
+    },
+    "dy": {
+      "count": 675,
+      "section_V": 0.0733,
+      "section_p": 0.803882535988379,
+      "section_significant": false,
+      "regime_V": 0.0783,
+      "regime_p": 0.6481108399658713,
+      "regime_significant": false
+    },
+    "eey": {
+      "count": 644,
+      "section_V": null,
+      "section_p": null,
+      "section_significant": false,
+      "regime_V": null,
+      "regime_p": null,
+      "regime_significant": false
+    },
+    "t": {
+      "count": 576,
+      "section_V": 0.2443,
+      "section_p": 1.2641285856737469e-06,
+      "section_significant": true,
+      "regime_V": 0.191,
+      "regime_p": 0.12055507950859742,
+      "regime_significant": false
+    },
+    "iin": {
+      "count": 560,
+      "section_V": 0.0704,
+      "section_p": 0.5960048978036545,
+      "section_significant": false,
+      "regime_V": 0.0999,
+      "regime_p": 0.1334964871251771,
+      "regime_significant": false
+    },
+    "al": {
+      "count": 521,
+      "section_V": 0.2244,
+      "section_p": 4.002946982042468e-06,
+      "section_significant": true,
+      "regime_V": 0.1623,
+      "regime_p": 0.25367854012706076,
+      "regime_significant": false
+    },
+    "y": {
+      "count": 513,
+      "section_V": 0.1961,
+      "section_p": 0.003251648573399768,
+      "section_significant": false,
+      "regime_V": 0.157,
+      "regime_p": 0.3804357702772864,
+      "regime_significant": false
+    },
+    "or": {
+      "count": 446,
+      "section_V": 0.0985,
+      "section_p": 0.6337034290761604,
+      "section_significant": false,
+      "regime_V": 0.0817,
+      "regime_p": 0.8816352291165395,
+      "regime_significant": false
+    },
+    "ke": {
+      "count": 421,
+      "section_V": 0.212,
+      "section_p": 0.0001221606230023404,
+      "section_significant": true,
+      "regime_V": 0.1603,
+      "regime_p": 0.2156133400734392,
+      "regime_significant": false
+    },
+    "ain": {
+      "count": 420,
+      "section_V": 0.0416,
+      "section_p": 0.9481817830925504,
+      "section_significant": false,
+      "regime_V": 0.0513,
+      "regime_p": 0.7760563007402227,
+      "regime_significant": false
+    },
+    "ed": {
+      "count": 401,
+      "section_V": 0.2017,
+      "section_p": 0.18600894763976072,
+      "section_significant": false,
+      "regime_V": 0.1913,
+      "regime_p": 0.38560621344569584,
+      "regime_significant": false
+    },
+    "o": {
+      "count": 388,
+      "section_V": 0.3225,
+      "section_p": 2.231472448160496e-10,
+      "section_significant": true,
+      "regime_V": 0.2111,
+      "regime_p": 0.3245772663258362,
+      "regime_significant": false
+    },
+    "eo": {
+      "count": 359,
+      "section_V": 0.2879,
+      "section_p": 7.96841956201462e-09,
+      "section_significant": true,
+      "regime_V": 0.1698,
+      "regime_p": 0.5651927770541325,
+      "regime_significant": false
+    },
+    "d": {
+      "count": 337,
+      "section_V": 0.213,
+      "section_p": 0.43373057906921925,
+      "section_significant": false,
+      "regime_V": 0.2055,
+      "regime_p": 0.5706309673996832,
+      "regime_significant": false
+    },
+    "eol": {
+      "count": 294,
+      "section_V": 0.1534,
+      "section_p": 0.27393945327584873,
+      "section_significant": false,
+      "regime_V": 0.137,
+      "regime_p": 0.5540146114810931,
+      "regime_significant": false
+    },
+    "in": {
+      "count": 264,
+      "section_V": null,
+      "section_p": null,
+      "section_significant": false,
+      "regime_V": null,
+      "regime_p": null,
+      "regime_significant": false
+    },
+    "ck": {
+      "count": 197,
+      "section_V": 0.0951,
+      "section_p": 0.8941351463415138,
+      "section_significant": false,
+      "regime_V": 0.1092,
+      "regime_p": 0.5829656445360827,
+      "regime_significant": false
+    },
+    "od": {
+      "count": 177,
+      "section_V": 0.2932,
+      "section_p": 0.10073217743247452,
+      "section_significant": false,
+      "regime_V": 0.2406,
+      "regime_p": 0.7167416491086764,
+      "regime_significant": false
+    },
+    "am": {
+      "count": 174,
+      "section_V": 0.11,
+      "section_p": 0.9355585348786721,
+      "section_significant": false,
+      "regime_V": 0.2198,
+      "regime_p": 0.013825972168999395,
+      "regime_significant": false
+    },
+    "ai": {
+      "count": 174,
+      "section_V": 0.2245,
+      "section_p": 0.3247365963281299,
+      "section_significant": false,
+      "regime_V": 0.254,
+      "regime_p": 0.09052452282591775,
+      "regime_significant": false
+    },
+    "ek": {
+      "count": 169,
+      "section_V": 0.3299,
+      "section_p": 0.010193376076813756,
+      "section_significant": false,
+      "regime_V": 0.2487,
+      "regime_p": 0.6884329784030668,
+      "regime_significant": false
+    },
+    "ee": {
+      "count": 151,
+      "section_V": 0.3308,
+      "section_p": 0.16743728467830496,
+      "section_significant": false,
+      "regime_V": 0.2981,
+      "regime_p": 0.547913602034428,
+      "regime_significant": false
+    },
+    "kch": {
+      "count": 148,
+      "section_V": 0.2618,
+      "section_p": 0.14246371083259232,
+      "section_significant": false,
+      "regime_V": 0.1869,
+      "regime_p": 0.9046867335216808,
+      "regime_significant": false
+    },
+    "s": {
+      "count": 144,
+      "section_V": 0.3519,
+      "section_p": 0.03875818422716435,
+      "section_significant": false,
+      "regime_V": 0.3323,
+      "regime_p": 0.1599853315356472,
+      "regime_significant": false
+    },
+    "i": {
+      "count": 137,
+      "section_V": 0.1861,
+      "section_p": 0.7534238786718197,
+      "section_significant": false,
+      "regime_V": 0.1575,
+      "regime_p": 0.9251831877514958,
+      "regime_significant": false
+    },
+    "eeo": {
+      "count": 133,
+      "section_V": 0.1432,
+      "section_p": 0.9896581079222736,
+      "section_significant": false,
+      "regime_V": 0.2186,
+      "regime_p": 0.3878740245884095,
+      "regime_significant": false
+    },
+    "ckh": {
+      "count": 127,
+      "section_V": 0.4024,
+      "section_p": 0.012715762924881658,
+      "section_significant": false,
+      "regime_V": 0.3588,
+      "regime_p": 0.2114640070903255,
+      "regime_significant": false
+    },
+    "opch": {
+      "count": 107,
+      "section_V": 0.3048,
+      "section_p": 0.30639465215636746,
+      "section_significant": false,
+      "regime_V": 0.2685,
+      "regime_p": 0.6774819516192903,
+      "regime_significant": false
+    }
+  },
+  "enrichment_details": {
+    "k": {
+      "total_n": 2083,
+      "V": 0.20614803729916553,
+      "sections": {
+        "B": {
+          "section_n": 953,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "eeol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.3
+            },
+            {
+              "suffix": "eol",
+              "ratio": 0.3,
+              "obs_count": 3,
+              "obs_pct": 0.3,
+              "exp_pct": 1.1
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.46,
+              "obs_count": 8,
+              "obs_pct": 0.8,
+              "exp_pct": 1.8
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.49,
+              "obs_count": 2,
+              "obs_pct": 0.2,
+              "exp_pct": 0.4
+            }
+          ]
+        },
+        "H": {
+          "section_n": 198,
+          "enriched": [
+            {
+              "suffix": "BARE",
+              "ratio": 3.51,
+              "obs_count": 3,
+              "obs_pct": 1.5,
+              "exp_pct": 0.4
+            },
+            {
+              "suffix": "ar",
+              "ratio": 1.85,
+              "obs_count": 30,
+              "obs_pct": 15.2,
+              "exp_pct": 8.2
+            },
+            {
+              "suffix": "y",
+              "ratio": 1.74,
+              "obs_count": 29,
+              "obs_pct": 14.6,
+              "exp_pct": 8.4
+            },
+            {
+              "suffix": "ol",
+              "ratio": 1.73,
+              "obs_count": 11,
+              "obs_pct": 5.6,
+              "exp_pct": 3.2
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "l",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "eeol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.3
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.35,
+              "obs_count": 11,
+              "obs_pct": 5.6,
+              "exp_pct": 16.0
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.44,
+              "obs_count": 13,
+              "obs_pct": 6.6,
+              "exp_pct": 15.0
+            }
+          ]
+        },
+        "S": {
+          "section_n": 802,
+          "enriched": [
+            {
+              "suffix": "eeol",
+              "ratio": 2.6,
+              "obs_count": 7,
+              "obs_pct": 0.9,
+              "exp_pct": 0.3
+            },
+            {
+              "suffix": "l",
+              "ratio": 1.8,
+              "obs_count": 9,
+              "obs_pct": 1.1,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "eol",
+              "ratio": 1.77,
+              "obs_count": 15,
+              "obs_pct": 1.9,
+              "exp_pct": 1.1
+            },
+            {
+              "suffix": "eey",
+              "ratio": 1.5,
+              "obs_count": 181,
+              "obs_pct": 22.6,
+              "exp_pct": 15.0
+            }
+          ],
+          "depleted": []
+        },
+        "T": {
+          "section_n": 29,
+          "enriched": [
+            {
+              "suffix": "y",
+              "ratio": 3.28,
+              "obs_count": 8,
+              "obs_pct": 27.6,
+              "exp_pct": 8.4
+            },
+            {
+              "suffix": "ar",
+              "ratio": 1.68,
+              "obs_count": 4,
+              "obs_pct": 13.8,
+              "exp_pct": 8.2
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 16.0
+            },
+            {
+              "suffix": "an",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.4
+            },
+            {
+              "suffix": "l",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.4
+            },
+            {
+              "suffix": "eeol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.3
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.25,
+              "obs_count": 1,
+              "obs_pct": 3.4,
+              "exp_pct": 14.0
+            }
+          ]
+        },
+        "C": {
+          "section_n": 101,
+          "enriched": [
+            {
+              "suffix": "ar",
+              "ratio": 3.38,
+              "obs_count": 28,
+              "obs_pct": 27.7,
+              "exp_pct": 8.2
+            },
+            {
+              "suffix": "am",
+              "ratio": 3.26,
+              "obs_count": 6,
+              "obs_pct": 5.9,
+              "exp_pct": 1.8
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 1.56,
+              "obs_count": 22,
+              "obs_pct": 21.8,
+              "exp_pct": 14.0
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "an",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.4
+            },
+            {
+              "suffix": "l",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.4
+            },
+            {
+              "suffix": "eeol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.3
+            },
+            {
+              "suffix": "edy",
+              "ratio": 0.2,
+              "obs_count": 3,
+              "obs_pct": 3.0,
+              "exp_pct": 14.8
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.43,
+              "obs_count": 7,
+              "obs_pct": 6.9,
+              "exp_pct": 16.0
+            }
+          ]
+        }
+      }
+    },
+    "e": {
+      "total_n": 867,
+      "V": 0.20064938290146384,
+      "sections": {
+        "B": {
+          "section_n": 253,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "om",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.12,
+              "obs_count": 2,
+              "obs_pct": 0.8,
+              "exp_pct": 6.8
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.24,
+              "obs_count": 1,
+              "obs_pct": 0.4,
+              "exp_pct": 1.6
+            }
+          ]
+        },
+        "H": {
+          "section_n": 74,
+          "enriched": [
+            {
+              "suffix": "BARE",
+              "ratio": 4.18,
+              "obs_count": 5,
+              "obs_pct": 6.8,
+              "exp_pct": 1.6
+            },
+            {
+              "suffix": "s",
+              "ratio": 1.77,
+              "obs_count": 8,
+              "obs_pct": 10.8,
+              "exp_pct": 6.1
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "al",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 6.2
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.0
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.4,
+              "obs_count": 2,
+              "obs_pct": 2.7,
+              "exp_pct": 6.8
+            }
+          ]
+        },
+        "S": {
+          "section_n": 496,
+          "enriched": [
+            {
+              "suffix": "aiin",
+              "ratio": 1.75,
+              "obs_count": 5,
+              "obs_pct": 1.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "ain",
+              "ratio": 1.75,
+              "obs_count": 5,
+              "obs_pct": 1.0,
+              "exp_pct": 0.6
+            }
+          ],
+          "depleted": []
+        },
+        "T": {
+          "section_n": 18,
+          "enriched": [
+            {
+              "suffix": "or",
+              "ratio": 1.54,
+              "obs_count": 3,
+              "obs_pct": 16.7,
+              "exp_pct": 10.8
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ar",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 6.9
+            },
+            {
+              "suffix": "al",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 6.2
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.0
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 6.8
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.6
+            },
+            {
+              "suffix": "g",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "om",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            }
+          ]
+        },
+        "C": {
+          "section_n": 26,
+          "enriched": [
+            {
+              "suffix": "eey",
+              "ratio": 2.83,
+              "obs_count": 5,
+              "obs_pct": 19.2,
+              "exp_pct": 6.8
+            },
+            {
+              "suffix": "ar",
+              "ratio": 2.22,
+              "obs_count": 4,
+              "obs_pct": 15.4,
+              "exp_pct": 6.9
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "al",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 6.2
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.0
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.6
+            },
+            {
+              "suffix": "g",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "om",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.6
+            }
+          ]
+        }
+      }
+    },
+    "r": {
+      "total_n": 749,
+      "V": 0.2074853076610856,
+      "sections": {
+        "B": {
+          "section_n": 252,
+          "enriched": [
+            {
+              "suffix": "om",
+              "ratio": 1.78,
+              "obs_count": 3,
+              "obs_pct": 1.2,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "oiin",
+              "ratio": 1.78,
+              "obs_count": 3,
+              "obs_pct": 1.2,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "ol",
+              "ratio": 1.76,
+              "obs_count": 16,
+              "obs_pct": 6.3,
+              "exp_pct": 3.6
+            },
+            {
+              "suffix": "al",
+              "ratio": 1.66,
+              "obs_count": 14,
+              "obs_pct": 5.6,
+              "exp_pct": 3.3
+            }
+          ],
+          "depleted": []
+        },
+        "H": {
+          "section_n": 125,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "or",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.5
+            },
+            {
+              "suffix": "om",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 4.7
+            },
+            {
+              "suffix": "oiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "ol",
+              "ratio": 0.22,
+              "obs_count": 1,
+              "obs_pct": 0.8,
+              "exp_pct": 3.6
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.3,
+              "obs_count": 4,
+              "obs_pct": 3.2,
+              "exp_pct": 10.7
+            },
+            {
+              "suffix": "al",
+              "ratio": 0.48,
+              "obs_count": 2,
+              "obs_pct": 1.6,
+              "exp_pct": 3.3
+            }
+          ]
+        },
+        "S": {
+          "section_n": 288,
+          "enriched": [
+            {
+              "suffix": "ain",
+              "ratio": 1.86,
+              "obs_count": 25,
+              "obs_pct": 8.7,
+              "exp_pct": 4.7
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 1.76,
+              "obs_count": 54,
+              "obs_pct": 18.8,
+              "exp_pct": 10.7
+            },
+            {
+              "suffix": "am",
+              "ratio": 1.73,
+              "obs_count": 12,
+              "obs_pct": 4.2,
+              "exp_pct": 2.4
+            }
+          ],
+          "depleted": []
+        },
+        "T": {
+          "section_n": 30,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.4
+            },
+            {
+              "suffix": "ol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 3.6
+            },
+            {
+              "suffix": "om",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "al",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 3.3
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 4.7
+            },
+            {
+              "suffix": "oiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.7
+            }
+          ]
+        },
+        "C": {
+          "section_n": 54,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.4
+            },
+            {
+              "suffix": "ol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 3.6
+            },
+            {
+              "suffix": "om",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "oiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.7
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.17,
+              "obs_count": 1,
+              "obs_pct": 1.9,
+              "exp_pct": 10.7
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.4,
+              "obs_count": 1,
+              "obs_pct": 1.9,
+              "exp_pct": 4.7
+            }
+          ]
+        }
+      }
+    },
+    "t": {
+      "total_n": 576,
+      "V": 0.2443361772788637,
+      "sections": {
+        "B": {
+          "section_n": 211,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "eol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.0
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.9
+            },
+            {
+              "suffix": "or",
+              "ratio": 0.21,
+              "obs_count": 1,
+              "obs_pct": 0.5,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.27,
+              "obs_count": 1,
+              "obs_pct": 0.5,
+              "exp_pct": 1.7
+            }
+          ]
+        },
+        "H": {
+          "section_n": 50,
+          "enriched": [
+            {
+              "suffix": "edy",
+              "ratio": 1.63,
+              "obs_count": 14,
+              "obs_pct": 28.0,
+              "exp_pct": 17.2
+            },
+            {
+              "suffix": "ar",
+              "ratio": 1.57,
+              "obs_count": 9,
+              "obs_pct": 18.0,
+              "exp_pct": 11.5
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "eey",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 5.9
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.7
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 11.6
+            },
+            {
+              "suffix": "l",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.9
+            }
+          ]
+        },
+        "S": {
+          "section_n": 256,
+          "enriched": [
+            {
+              "suffix": "am",
+              "ratio": 1.8,
+              "obs_count": 8,
+              "obs_pct": 3.1,
+              "exp_pct": 1.7
+            }
+          ],
+          "depleted": []
+        },
+        "T": {
+          "section_n": 16,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "eey",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 5.9
+            },
+            {
+              "suffix": "am",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.7
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 11.6
+            },
+            {
+              "suffix": "l",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.9
+            },
+            {
+              "suffix": "eol",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.0
+            }
+          ]
+        },
+        "C": {
+          "section_n": 43,
+          "enriched": [
+            {
+              "suffix": "aiin",
+              "ratio": 1.7,
+              "obs_count": 9,
+              "obs_pct": 20.9,
+              "exp_pct": 12.3
+            },
+            {
+              "suffix": "ar",
+              "ratio": 1.62,
+              "obs_count": 8,
+              "obs_pct": 18.6,
+              "exp_pct": 11.5
+            },
+            {
+              "suffix": "eey",
+              "ratio": 1.58,
+              "obs_count": 4,
+              "obs_pct": 9.3,
+              "exp_pct": 5.9
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "l",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.9
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 0.9
+            },
+            {
+              "suffix": "edy",
+              "ratio": 0.27,
+              "obs_count": 2,
+              "obs_pct": 4.7,
+              "exp_pct": 17.2
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.4,
+              "obs_count": 2,
+              "obs_pct": 4.7,
+              "exp_pct": 11.6
+            }
+          ]
+        }
+      }
+    },
+    "al": {
+      "total_n": 521,
+      "V": 0.22436464494943825,
+      "sections": {
+        "B": {
+          "section_n": 102,
+          "enriched": [
+            {
+              "suffix": "or",
+              "ratio": 2.55,
+              "obs_count": 4,
+              "obs_pct": 3.9,
+              "exp_pct": 1.5
+            },
+            {
+              "suffix": "dy",
+              "ratio": 2.27,
+              "obs_count": 4,
+              "obs_pct": 3.9,
+              "exp_pct": 1.7
+            }
+          ],
+          "depleted": []
+        },
+        "H": {
+          "section_n": 67,
+          "enriched": [
+            {
+              "suffix": "dy",
+              "ratio": 3.46,
+              "obs_count": 4,
+              "obs_pct": 6.0,
+              "exp_pct": 1.7
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "or",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.5
+            }
+          ]
+        },
+        "S": {
+          "section_n": 314,
+          "enriched": [
+            {
+              "suffix": "al",
+              "ratio": 1.66,
+              "obs_count": 3,
+              "obs_pct": 1.0,
+              "exp_pct": 0.6
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "dy",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.7
+            }
+          ]
+        },
+        "T": {
+          "section_n": 9,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "dy",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.7
+            }
+          ]
+        },
+        "C": {
+          "section_n": 29,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "or",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.5
+            }
+          ]
+        }
+      }
+    },
+    "ke": {
+      "total_n": 421,
+      "V": 0.21196975401492593,
+      "sections": {
+        "B": {
+          "section_n": 192,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "eey",
+              "ratio": 0.47,
+              "obs_count": 7,
+              "obs_pct": 3.6,
+              "exp_pct": 7.8
+            }
+          ]
+        },
+        "H": {
+          "section_n": 18,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "ar",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.4
+            }
+          ]
+        },
+        "S": {
+          "section_n": 196,
+          "enriched": [
+            {
+              "suffix": "ain",
+              "ratio": 2.15,
+              "obs_count": 3,
+              "obs_pct": 1.5,
+              "exp_pct": 0.7
+            }
+          ],
+          "depleted": []
+        }
+      }
+    },
+    "o": {
+      "total_n": 388,
+      "V": 0.32253633012113714,
+      "sections": {
+        "B": {
+          "section_n": 29,
+          "enriched": [
+            {
+              "suffix": "ly",
+              "ratio": 8.92,
+              "obs_count": 6,
+              "obs_pct": 20.7,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "ry",
+              "ratio": 8.92,
+              "obs_count": 4,
+              "obs_pct": 13.8,
+              "exp_pct": 1.5
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "aiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 4.4
+            },
+            {
+              "suffix": "ar",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 4.1
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.3
+            },
+            {
+              "suffix": "s",
+              "ratio": 0.36,
+              "obs_count": 1,
+              "obs_pct": 3.4,
+              "exp_pct": 9.5
+            },
+            {
+              "suffix": "dy",
+              "ratio": 0.46,
+              "obs_count": 6,
+              "obs_pct": 20.7,
+              "exp_pct": 44.6
+            }
+          ]
+        },
+        "H": {
+          "section_n": 99,
+          "enriched": [
+            {
+              "suffix": "y",
+              "ratio": 1.63,
+              "obs_count": 5,
+              "obs_pct": 5.1,
+              "exp_pct": 3.1
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ry",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.5
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.3
+            },
+            {
+              "suffix": "ly",
+              "ratio": 0.44,
+              "obs_count": 1,
+              "obs_pct": 1.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.44,
+              "obs_count": 1,
+              "obs_pct": 1.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.47,
+              "obs_count": 11,
+              "obs_pct": 11.1,
+              "exp_pct": 23.5
+            }
+          ]
+        },
+        "S": {
+          "section_n": 196,
+          "enriched": [
+            {
+              "suffix": "ain",
+              "ratio": 1.76,
+              "obs_count": 8,
+              "obs_pct": 4.1,
+              "exp_pct": 2.3
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ly",
+              "ratio": 0.44,
+              "obs_count": 2,
+              "obs_pct": 1.0,
+              "exp_pct": 2.3
+            }
+          ]
+        },
+        "T": {
+          "section_n": 19,
+          "enriched": [
+            {
+              "suffix": "BARE",
+              "ratio": 1.57,
+              "obs_count": 7,
+              "obs_pct": 36.8,
+              "exp_pct": 23.5
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ly",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "ry",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.5
+            },
+            {
+              "suffix": "s",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 9.5
+            },
+            {
+              "suffix": "y",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 3.1
+            },
+            {
+              "suffix": "aiin",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 4.4
+            },
+            {
+              "suffix": "ar",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 4.1
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "eey",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.3
+            }
+          ]
+        },
+        "C": {
+          "section_n": 45,
+          "enriched": [
+            {
+              "suffix": "ar",
+              "ratio": 1.62,
+              "obs_count": 3,
+              "obs_pct": 6.7,
+              "exp_pct": 4.1
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ly",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "ry",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.5
+            },
+            {
+              "suffix": "y",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 3.1
+            },
+            {
+              "suffix": "ain",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.3
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.47,
+              "obs_count": 5,
+              "obs_pct": 11.1,
+              "exp_pct": 23.5
+            }
+          ]
+        }
+      }
+    },
+    "eo": {
+      "total_n": 359,
+      "V": 0.28785284189439725,
+      "sections": {
+        "B": {
+          "section_n": 5,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "s",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 12.3
+            },
+            {
+              "suffix": "dy",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 45.4
+            },
+            {
+              "suffix": "ar",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.2
+            },
+            {
+              "suffix": "y",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.4
+            }
+          ]
+        },
+        "H": {
+          "section_n": 67,
+          "enriched": [
+            {
+              "suffix": "s",
+              "ratio": 1.7,
+              "obs_count": 14,
+              "obs_pct": 20.9,
+              "exp_pct": 12.3
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "y",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.4
+            }
+          ]
+        },
+        "S": {
+          "section_n": 241,
+          "enriched": [],
+          "depleted": [
+            {
+              "suffix": "ly",
+              "ratio": 0.5,
+              "obs_count": 2,
+              "obs_pct": 0.8,
+              "exp_pct": 1.7
+            }
+          ]
+        },
+        "T": {
+          "section_n": 19,
+          "enriched": [
+            {
+              "suffix": "dy",
+              "ratio": 1.51,
+              "obs_count": 13,
+              "obs_pct": 68.4,
+              "exp_pct": 45.4
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "ly",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.7
+            },
+            {
+              "suffix": "s",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 12.3
+            },
+            {
+              "suffix": "ar",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 2.2
+            }
+          ]
+        },
+        "C": {
+          "section_n": 27,
+          "enriched": [
+            {
+              "suffix": "s",
+              "ratio": 1.51,
+              "obs_count": 5,
+              "obs_pct": 18.5,
+              "exp_pct": 12.3
+            }
+          ],
+          "depleted": [
+            {
+              "suffix": "y",
+              "ratio": 0.0,
+              "obs_count": 0,
+              "obs_pct": 0.0,
+              "exp_pct": 1.4
+            },
+            {
+              "suffix": "BARE",
+              "ratio": 0.33,
+              "obs_count": 3,
+              "obs_pct": 11.1,
+              "exp_pct": 33.7
+            }
+          ]
+        }
+      }
+    }
+  },
+  "top_significant": [
+    {
+      "middle": "o",
+      "V": 0.3225,
+      "chi2": 161.5,
+      "p": 2.231472448160496e-10,
+      "n": 388
+    },
+    {
+      "middle": "eo",
+      "V": 0.2879,
+      "chi2": 119.0,
+      "p": 7.96841956201462e-09,
+      "n": 359
+    },
+    {
+      "middle": "t",
+      "V": 0.2443,
+      "chi2": 137.5,
+      "p": 1.2641285856737469e-06,
+      "n": 576
+    },
+    {
+      "middle": "al",
+      "V": 0.2244,
+      "chi2": 104.9,
+      "p": 4.002946982042468e-06,
+      "n": 521
+    },
+    {
+      "middle": "ke",
+      "V": 0.212,
+      "chi2": 75.7,
+      "p": 0.0001221606230023404,
+      "n": 421
+    },
+    {
+      "middle": "r",
+      "V": 0.2075,
+      "chi2": 129.0,
+      "p": 2.424316820435203e-09,
+      "n": 749
+    },
+    {
+      "middle": "k",
+      "V": 0.2061,
+      "chi2": 354.1,
+      "p": 7.440628927735841e-35,
+      "n": 2083
+    },
+    {
+      "middle": "e",
+      "V": 0.2006,
+      "chi2": 139.6,
+      "p": 7.254847789360427e-07,
+      "n": 867
+    },
+    {
+      "middle": "ey",
+      "V": 0.1266,
+      "chi2": 57.0,
+      "p": 1.6837239699707104e-06,
+      "n": 889
+    }
+  ],
+  "comparison_per_middle": [
+    {
+      "middle": "k",
+      "V_section": 0.2061,
+      "V_regime": 0.1744,
+      "V_diff": 0.0318,
+      "section_stronger": true
+    },
+    {
+      "middle": "edy",
+      "V_section": 0.0748,
+      "V_regime": 0.0396,
+      "V_diff": 0.0353,
+      "section_stronger": true
+    },
+    {
+      "middle": "ey",
+      "V_section": 0.1266,
+      "V_regime": 0.0604,
+      "V_diff": 0.0662,
+      "section_stronger": true
+    },
+    {
+      "middle": "e",
+      "V_section": 0.2006,
+      "V_regime": 0.1781,
+      "V_diff": 0.0226,
+      "section_stronger": true
+    },
+    {
+      "middle": "l",
+      "V_section": 0.1787,
+      "V_regime": 0.1537,
+      "V_diff": 0.025,
+      "section_stronger": true
+    },
+    {
+      "middle": "aiin",
+      "V_section": 0.1177,
+      "V_regime": 0.0979,
+      "V_diff": 0.0197,
+      "section_stronger": true
+    },
+    {
+      "middle": "ol",
+      "V_section": 0.0994,
+      "V_regime": 0.0811,
+      "V_diff": 0.0183,
+      "section_stronger": true
+    },
+    {
+      "middle": "r",
+      "V_section": 0.2075,
+      "V_regime": 0.148,
+      "V_diff": 0.0595,
+      "section_stronger": true
+    },
+    {
+      "middle": "ar",
+      "V_section": 0.1332,
+      "V_regime": 0.1512,
+      "V_diff": -0.018,
+      "section_stronger": false
+    },
+    {
+      "middle": "dy",
+      "V_section": 0.0733,
+      "V_regime": 0.0783,
+      "V_diff": -0.005,
+      "section_stronger": false
+    },
+    {
+      "middle": "t",
+      "V_section": 0.2443,
+      "V_regime": 0.191,
+      "V_diff": 0.0534,
+      "section_stronger": true
+    },
+    {
+      "middle": "iin",
+      "V_section": 0.0704,
+      "V_regime": 0.0999,
+      "V_diff": -0.0295,
+      "section_stronger": false
+    },
+    {
+      "middle": "al",
+      "V_section": 0.2244,
+      "V_regime": 0.1623,
+      "V_diff": 0.062,
+      "section_stronger": true
+    },
+    {
+      "middle": "y",
+      "V_section": 0.1961,
+      "V_regime": 0.157,
+      "V_diff": 0.0391,
+      "section_stronger": true
+    },
+    {
+      "middle": "or",
+      "V_section": 0.0985,
+      "V_regime": 0.0817,
+      "V_diff": 0.0168,
+      "section_stronger": true
+    },
+    {
+      "middle": "ke",
+      "V_section": 0.212,
+      "V_regime": 0.1603,
+      "V_diff": 0.0517,
+      "section_stronger": true
+    },
+    {
+      "middle": "ain",
+      "V_section": 0.0416,
+      "V_regime": 0.0513,
+      "V_diff": -0.0097,
+      "section_stronger": false
+    },
+    {
+      "middle": "ed",
+      "V_section": 0.2017,
+      "V_regime": 0.1913,
+      "V_diff": 0.0104,
+      "section_stronger": true
+    },
+    {
+      "middle": "o",
+      "V_section": 0.3225,
+      "V_regime": 0.2111,
+      "V_diff": 0.1114,
+      "section_stronger": true
+    },
+    {
+      "middle": "eo",
+      "V_section": 0.2879,
+      "V_regime": 0.1698,
+      "V_diff": 0.1181,
+      "section_stronger": true
+    },
+    {
+      "middle": "d",
+      "V_section": 0.213,
+      "V_regime": 0.2055,
+      "V_diff": 0.0076,
+      "section_stronger": true
+    },
+    {
+      "middle": "eol",
+      "V_section": 0.1534,
+      "V_regime": 0.137,
+      "V_diff": 0.0164,
+      "section_stronger": true
+    },
+    {
+      "middle": "ck",
+      "V_section": 0.0951,
+      "V_regime": 0.1092,
+      "V_diff": -0.0141,
+      "section_stronger": false
+    },
+    {
+      "middle": "od",
+      "V_section": 0.2932,
+      "V_regime": 0.2406,
+      "V_diff": 0.0526,
+      "section_stronger": true
+    },
+    {
+      "middle": "am",
+      "V_section": 0.11,
+      "V_regime": 0.2198,
+      "V_diff": -0.1098,
+      "section_stronger": false
+    },
+    {
+      "middle": "ai",
+      "V_section": 0.2245,
+      "V_regime": 0.254,
+      "V_diff": -0.0295,
+      "section_stronger": false
+    },
+    {
+      "middle": "ek",
+      "V_section": 0.3299,
+      "V_regime": 0.2487,
+      "V_diff": 0.0812,
+      "section_stronger": true
+    },
+    {
+      "middle": "ee",
+      "V_section": 0.3308,
+      "V_regime": 0.2981,
+      "V_diff": 0.0327,
+      "section_stronger": true
+    },
+    {
+      "middle": "kch",
+      "V_section": 0.2618,
+      "V_regime": 0.1869,
+      "V_diff": 0.0748,
+      "section_stronger": true
+    },
+    {
+      "middle": "s",
+      "V_section": 0.3519,
+      "V_regime": 0.3323,
+      "V_diff": 0.0196,
+      "section_stronger": true
+    }
+  ]
+}

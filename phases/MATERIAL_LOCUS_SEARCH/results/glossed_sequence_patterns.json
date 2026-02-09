@@ -1,0 +1,4187 @@
+{
+  "test": "T16_glossed_sequence_patterns",
+  "description": "Glossed token sequence pattern mining using middle_dictionary.json",
+  "folios_analyzed": {
+    "B": [
+      "f78r",
+      "f76r"
+    ],
+    "H": [
+      "f43r",
+      "f39r"
+    ],
+    "S": [
+      "f107r",
+      "f111r"
+    ],
+    "T": [
+      "f66r",
+      "f85r1"
+    ],
+    "C": [
+      "f86v3",
+      "f86v5"
+    ]
+  },
+  "summary": {
+    "total_tokens": 3566,
+    "glossed_tokens": 3398,
+    "gloss_gaps": 168,
+    "gap_rate_pct": 4.7,
+    "morphologically_distinct_gaps": 16,
+    "distinct_fraction_pct": 9.5
+  },
+  "gap_position_distribution": {
+    "line_start": {
+      "count": 11,
+      "observed_pct": 6.5,
+      "expected_pct": 7.4,
+      "enrichment": 0.89
+    },
+    "line_end": {
+      "count": 26,
+      "observed_pct": 15.5,
+      "expected_pct": 9.5,
+      "enrichment": 1.62
+    },
+    "line_mid": {
+      "count": 112,
+      "observed_pct": 66.7,
+      "expected_pct": 80.3,
+      "enrichment": 0.83
+    },
+    "par_start": {
+      "count": 19,
+      "observed_pct": 11.3,
+      "expected_pct": 2.8,
+      "enrichment": 4.03
+    }
+  },
+  "gap_by_section": {
+    "B": {
+      "total_tokens": 840,
+      "gaps": 20,
+      "gap_rate_pct": 2.4,
+      "morphologically_distinct": 3
+    },
+    "H": {
+      "total_tokens": 304,
+      "gaps": 26,
+      "gap_rate_pct": 8.6,
+      "morphologically_distinct": 2
+    },
+    "S": {
+      "total_tokens": 1102,
+      "gaps": 50,
+      "gap_rate_pct": 4.5,
+      "morphologically_distinct": 4
+    },
+    "T": {
+      "total_tokens": 662,
+      "gaps": 44,
+      "gap_rate_pct": 6.6,
+      "morphologically_distinct": 4
+    },
+    "C": {
+      "total_tokens": 658,
+      "gaps": 28,
+      "gap_rate_pct": 4.3,
+      "morphologically_distinct": 3
+    }
+  },
+  "gap_frequency_distribution": {
+    "hapax (1)": 134,
+    "rare (2-5)": 34,
+    "moderate (6-20)": 0,
+    "common (>20)": 0
+  },
+  "gap_edit_distance_distribution": {
+    "1": 120,
+    "2": 32,
+    "3": 14,
+    "4+": 2
+  },
+  "example_sequences": {
+    "f78r": {
+      "1": [
+        {
+          "gloss": "discharge",
+          "word": "tshedor",
+          "middle": "ed"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "pause, check",
+          "word": "qopchedy",
+          "middle": "pch"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "close",
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokol",
+          "middle": "k"
+        },
+        {
+          "gloss": "end",
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "gloss": "?",
+          "word": "okchdldlo",
+          "middle": "dldlo"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "sustained heat",
+          "word": "qokeedy",
+          "middle": "ke"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "batch",
+          "word": "tchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "close",
+          "word": "otar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "heat",
+          "word": "olkedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "stage:final",
+          "word": "dam",
+          "middle": "m"
+        },
+        {
+          "gloss": "close",
+          "word": "okchdy",
+          "middle": "dy"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "energy, heat-check",
+          "word": "qckhedy",
+          "middle": "qckh"
+        },
+        {
+          "gloss": "precision",
+          "word": "cheky",
+          "middle": "ek"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "dol",
+          "middle": "l"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokain",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat",
+          "word": "olkedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "?",
+          "word": "daraloikhy",
+          "middle": "raloik"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "batch",
+          "word": "yteedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotal",
+          "middle": "t"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "dol",
+          "middle": "l"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat-release",
+          "word": "qokedar",
+          "middle": "ked"
+        },
+        {
+          "gloss": "precision hazard",
+          "word": "chcthhy",
+          "middle": "cth"
+        },
+        {
+          "gloss": "portion",
+          "word": "otor",
+          "middle": "or"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dor",
+          "middle": "r"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "discharge, attach",
+          "word": "dchedaly",
+          "middle": "eda"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "heat",
+          "word": "qokal",
+          "middle": "k"
+        },
+        {
+          "gloss": "batch",
+          "word": "otedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "dal",
+          "middle": "l"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "break",
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "gloss": "stage:final",
+          "word": "kam",
+          "middle": "m"
+        },
+        {
+          "gloss": "?",
+          "word": "otasodlory",
+          "middle": "asodlo"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "orory",
+          "middle": "o"
+        }
+      ]
+    },
+    "f76r": {
+      "1": [
+        {
+          "gloss": "?",
+          "word": "potchokar",
+          "middle": "tchok"
+        },
+        {
+          "gloss": "close, mark, hazard",
+          "word": "chcfhdy",
+          "middle": "cfh"
+        },
+        {
+          "gloss": "work-start, verify",
+          "word": "opshdy",
+          "middle": "opsh"
+        },
+        {
+          "gloss": "frame, pause",
+          "word": "qolp",
+          "middle": "lp"
+        },
+        {
+          "gloss": "close, pause",
+          "word": "chcphy",
+          "middle": "cp"
+        },
+        {
+          "gloss": "precision measure",
+          "word": "chcphdy",
+          "middle": "cph"
+        },
+        {
+          "gloss": "work-start, verify",
+          "word": "opshey",
+          "middle": "opsh"
+        },
+        {
+          "gloss": "?",
+          "word": "qofshy",
+          "middle": "fs"
+        },
+        {
+          "gloss": "process",
+          "word": "opchdy",
+          "middle": "opch"
+        },
+        {
+          "gloss": "link",
+          "word": "sain",
+          "middle": "in"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "batch",
+          "word": "dshedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "?",
+          "word": "qotddyar",
+          "middle": "tddy"
+        },
+        {
+          "gloss": "monitor",
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "gloss": "precision cool",
+          "word": "chep",
+          "middle": "ep"
+        },
+        {
+          "gloss": "link",
+          "word": "dain",
+          "middle": "in"
+        },
+        {
+          "gloss": "intake",
+          "word": "okain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokeor",
+          "middle": "ke"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "qol",
+          "middle": "l"
+        },
+        {
+          "gloss": "intake",
+          "word": "ain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "sustain output",
+          "word": "sheols",
+          "middle": "eol"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokeey",
+          "middle": "k"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "set",
+          "word": "yshey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokeey",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokey",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat-discharge",
+          "word": "qokeed",
+          "middle": "keed"
+        },
+        {
+          "gloss": "batch",
+          "word": "okedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "shky",
+          "middle": "k"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotedy",
+          "middle": "t"
+        },
+        {
+          "gloss": "batch",
+          "word": "otedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "continue",
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "gloss": "continue",
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "check",
+          "word": "aiiny",
+          "middle": "aiin"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "intense heat-seal",
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "gloss": "close",
+          "word": "orar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "heat-attach, input",
+          "word": "chkarol",
+          "middle": "kar"
+        },
+        {
+          "gloss": "set",
+          "word": "otey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "batch",
+          "word": "lkedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "precision heat",
+          "word": "qokchdy",
+          "middle": "kch"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokal",
+          "middle": "k"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "chdam",
+          "middle": "d"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "frame, check",
+          "word": "solchedy",
+          "middle": "lch"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokeedy",
+          "middle": "ke"
+        },
+        {
+          "gloss": "pause, check",
+          "word": "qopchedy",
+          "middle": "pch"
+        },
+        {
+          "gloss": "sustained heat, extended cool",
+          "word": "qokeeo",
+          "middle": "keeo"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "sol",
+          "middle": "l"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "extended cool",
+          "word": "okees",
+          "middle": "ee"
+        },
+        {
+          "gloss": "collect",
+          "word": "al",
+          "middle": "al"
+        },
+        {
+          "gloss": "collect",
+          "word": "al",
+          "middle": "al"
+        },
+        {
+          "gloss": "discharge",
+          "word": "chedain",
+          "middle": "ed"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        }
+      ]
+    },
+    "f43r": {
+      "1": [
+        {
+          "gloss": "input-work, mark",
+          "word": "tarodaiin",
+          "middle": "rod"
+        },
+        {
+          "gloss": "close",
+          "word": "ytedy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "gloss": "?",
+          "word": "ofchtar",
+          "middle": "ofcht"
+        },
+        {
+          "gloss": "precision measure",
+          "word": "chcphedy",
+          "middle": "cph"
+        },
+        {
+          "gloss": "end, pause",
+          "word": "ypar",
+          "middle": "yp"
+        },
+        {
+          "gloss": "continue",
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "portion",
+          "word": "folor",
+          "middle": "or"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "precision measure",
+          "word": "cphhy",
+          "middle": "cph"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "stage:near-end",
+          "word": "yteody",
+          "middle": "o"
+        },
+        {
+          "gloss": "sustain output",
+          "word": "oteol",
+          "middle": "eol"
+        },
+        {
+          "gloss": "close",
+          "word": "ytedy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "energy-path",
+          "word": "chety",
+          "middle": "et"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        },
+        {
+          "gloss": "unseal",
+          "word": "aiir",
+          "middle": "aii"
+        },
+        {
+          "gloss": "collect",
+          "word": "okaldy",
+          "middle": "al"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "daral",
+          "middle": "r"
+        },
+        {
+          "gloss": "close",
+          "word": "otchdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "dal",
+          "middle": "l"
+        },
+        {
+          "gloss": "break",
+          "word": "s",
+          "middle": "s"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "end, transfer",
+          "word": "yty",
+          "middle": "yt"
+        },
+        {
+          "gloss": "end, transfer",
+          "word": "yty",
+          "middle": "yt"
+        },
+        {
+          "gloss": "end",
+          "word": "oty",
+          "middle": "y"
+        },
+        {
+          "gloss": "cool",
+          "word": "she",
+          "middle": "e"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "ody",
+          "middle": "o"
+        },
+        {
+          "gloss": "end",
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "gloss": "portion",
+          "word": "olor",
+          "middle": "or"
+        },
+        {
+          "gloss": "iterate",
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "heat",
+          "word": "chky",
+          "middle": "k"
+        },
+        {
+          "gloss": "transfer, end",
+          "word": "qotydy",
+          "middle": "ty"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "finalize",
+          "word": "ykam",
+          "middle": "am"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "break",
+          "word": "dasar",
+          "middle": "s"
+        },
+        {
+          "gloss": "end",
+          "word": "ytey",
+          "middle": "y"
+        },
+        {
+          "gloss": "close",
+          "word": "tedy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "kar",
+          "middle": "r"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "?",
+          "word": "shekalchdy",
+          "middle": "ekalch"
+        },
+        {
+          "gloss": "continue, transfer",
+          "word": "cholty",
+          "middle": "olt"
+        },
+        {
+          "gloss": "transfer, attach",
+          "word": "qotaly",
+          "middle": "ta"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "end",
+          "word": "oty",
+          "middle": "y"
+        },
+        {
+          "gloss": "finalize",
+          "word": "otam",
+          "middle": "am"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "portion",
+          "word": "ykor",
+          "middle": "or"
+        },
+        {
+          "gloss": "?",
+          "word": "shekody",
+          "middle": "eko"
+        },
+        {
+          "gloss": "transfer, work",
+          "word": "qotody",
+          "middle": "to"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotar",
+          "middle": "t"
+        },
+        {
+          "gloss": "batch",
+          "word": "okedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        },
+        {
+          "gloss": "?",
+          "word": "choetchy",
+          "middle": "oetc"
+        },
+        {
+          "gloss": "stage:final",
+          "word": "dam",
+          "middle": "m"
+        },
+        {
+          "gloss": "intake",
+          "word": "otain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "stage:final",
+          "word": "ytam",
+          "middle": "m"
+        }
+      ]
+    },
+    "f39r": {
+      "1": [
+        {
+          "gloss": "mark, work",
+          "word": "tedo",
+          "middle": "do"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "chshd",
+          "middle": "d"
+        },
+        {
+          "gloss": "?",
+          "word": "cphhofy",
+          "middle": "cphhof"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "chdain",
+          "middle": "d"
+        },
+        {
+          "gloss": "set",
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "end",
+          "word": "fsey",
+          "middle": "y"
+        },
+        {
+          "gloss": "close",
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "intake",
+          "word": "orain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "?",
+          "word": "cheepaiin",
+          "middle": "eep"
+        },
+        {
+          "gloss": "work, mark",
+          "word": "ofy",
+          "middle": "of"
+        },
+        {
+          "gloss": "set",
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "cool-end",
+          "word": "koly",
+          "middle": "ly"
+        },
+        {
+          "gloss": "close",
+          "word": "dy",
+          "middle": "dy"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "set",
+          "word": "olchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "precision",
+          "word": "cheky",
+          "middle": "ek"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "precision, verify",
+          "word": "shekshey",
+          "middle": "eksh"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "qolain",
+          "middle": "l"
+        },
+        {
+          "gloss": "?",
+          "word": "chckshy",
+          "middle": "cks"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "stage:early",
+          "word": "dair",
+          "middle": "i"
+        },
+        {
+          "gloss": "heat-check",
+          "word": "shckhey",
+          "middle": "ckh"
+        },
+        {
+          "gloss": "frame, mark",
+          "word": "dold",
+          "middle": "ld"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "heat-attach, frame, check",
+          "word": "qokalchdy",
+          "middle": "kalch"
+        },
+        {
+          "gloss": "precision",
+          "word": "chekaiin",
+          "middle": "ek"
+        },
+        {
+          "gloss": "hard precision",
+          "word": "checkhy",
+          "middle": "eck"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        },
+        {
+          "gloss": "discharge",
+          "word": "shed",
+          "middle": "ed"
+        },
+        {
+          "gloss": "heat-discharge",
+          "word": "qokeedar",
+          "middle": "keed"
+        },
+        {
+          "gloss": "extended cool",
+          "word": "eeedy",
+          "middle": "ee"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "cheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "close",
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "direct heat",
+          "word": "ckhy",
+          "middle": "ck"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "monitor",
+          "word": "tohedy",
+          "middle": "h"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "check",
+          "word": "olaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "?",
+          "word": "shckhdchy",
+          "middle": "ckhdc"
+        },
+        {
+          "gloss": "continue",
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "close",
+          "word": "ordy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "extended cool",
+          "word": "chees",
+          "middle": "ee"
+        },
+        {
+          "gloss": "end",
+          "word": "aly",
+          "middle": "y"
+        },
+        {
+          "gloss": "?",
+          "word": "okalcheg",
+          "middle": "alche"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "close",
+          "word": "dchdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "check",
+          "word": "ykaiin",
+          "middle": "aiin"
+        }
+      ]
+    },
+    "f107r": {
+      "1": [
+        {
+          "gloss": "mark, frame",
+          "word": "pchdlar",
+          "middle": "dl"
+        },
+        {
+          "gloss": "sustain output",
+          "word": "sheolor",
+          "middle": "eol"
+        },
+        {
+          "gloss": "overnight standing",
+          "word": "ykeeol",
+          "middle": "eeol"
+        },
+        {
+          "gloss": "intense heat-seal",
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "gloss": "portion",
+          "word": "otor",
+          "middle": "or"
+        },
+        {
+          "gloss": "?",
+          "word": "okeesodar",
+          "middle": "eesod"
+        },
+        {
+          "gloss": "input, open",
+          "word": "tarair",
+          "middle": "rai"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "oteey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "check",
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "ytar",
+          "middle": "r"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "set",
+          "word": "dchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "gather, work",
+          "word": "qoteos",
+          "middle": "teo"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "extended discharge",
+          "word": "oteed",
+          "middle": "eed"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "qor",
+          "middle": "r"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "cool-open, hard heat",
+          "word": "cheockhy",
+          "middle": "eock"
+        },
+        {
+          "gloss": "heat",
+          "word": "olkeey",
+          "middle": "k"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotain",
+          "middle": "t"
+        },
+        {
+          "gloss": "set",
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "energy, cool",
+          "word": "qeeey",
+          "middle": "qe"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "lor",
+          "middle": "l"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "deep cool",
+          "word": "olcheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "sheos",
+          "middle": "eo"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokeeey",
+          "middle": "ke"
+        },
+        {
+          "gloss": "cool",
+          "word": "ycheedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotain",
+          "middle": "t"
+        },
+        {
+          "gloss": "intake",
+          "word": "ykain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "okeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "raiin",
+          "middle": "r"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "cool-open",
+          "word": "teeody",
+          "middle": "eo"
+        },
+        {
+          "gloss": "discharge",
+          "word": "chedain",
+          "middle": "ed"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qoteey",
+          "middle": "t"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "deeo",
+          "middle": "eo"
+        },
+        {
+          "gloss": "close",
+          "word": "ltedy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "close",
+          "word": "otar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "intake",
+          "word": "ain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "yield",
+          "word": "chady",
+          "middle": "a"
+        },
+        {
+          "gloss": "?",
+          "word": "otokcho",
+          "middle": "okcho"
+        },
+        {
+          "gloss": "heat-release",
+          "word": "qoked",
+          "middle": "ked"
+        },
+        {
+          "gloss": "batch",
+          "word": "okchedy",
+          "middle": "edy"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "precision heat",
+          "word": "olkchedy",
+          "middle": "kch"
+        },
+        {
+          "gloss": "close",
+          "word": "tedy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "cool",
+          "word": "oteeey",
+          "middle": "e"
+        },
+        {
+          "gloss": "batch",
+          "word": "okchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat-discharge",
+          "word": "qokeed",
+          "middle": "keed"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokear",
+          "middle": "ke"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "lock, check",
+          "word": "chokchedy",
+          "middle": "okch"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokain",
+          "middle": "k"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        }
+      ]
+    },
+    "f111r": {
+      "1": [
+        {
+          "gloss": "?",
+          "word": "kcholchdar",
+          "middle": "olchd"
+        },
+        {
+          "gloss": "close",
+          "word": "shar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "?",
+          "word": "aiip",
+          "middle": "aiip"
+        },
+        {
+          "gloss": "cool-pause, check",
+          "word": "chepchedy",
+          "middle": "epch"
+        },
+        {
+          "gloss": "?",
+          "word": "chetalshy",
+          "middle": "etals"
+        },
+        {
+          "gloss": "energy-lock",
+          "word": "sheek",
+          "middle": "eek"
+        },
+        {
+          "gloss": "cool",
+          "word": "shear",
+          "middle": "e"
+        },
+        {
+          "gloss": "set",
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "ror",
+          "middle": "r"
+        },
+        {
+          "gloss": "finalize",
+          "word": "am",
+          "middle": "am"
+        },
+        {
+          "gloss": "set",
+          "word": "shey",
+          "middle": "ey"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "iterate",
+          "word": "doiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "energy-lock",
+          "word": "sheeky",
+          "middle": "eek"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "okeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "okeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "energy, deep cool",
+          "word": "qeeal",
+          "middle": "qee"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "okeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "oteey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "control",
+          "word": "chcthy",
+          "middle": "ct"
+        },
+        {
+          "gloss": "sustain output",
+          "word": "lcheol",
+          "middle": "eol"
+        },
+        {
+          "gloss": "extended cool",
+          "word": "oteeam",
+          "middle": "ee"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "cool",
+          "word": "dsheedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "cool",
+          "word": "lkeedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "direct heat",
+          "word": "chckhy",
+          "middle": "ck"
+        },
+        {
+          "gloss": "batch",
+          "word": "lchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokeey",
+          "middle": "k"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokear",
+          "middle": "ke"
+        },
+        {
+          "gloss": "collect",
+          "word": "chal",
+          "middle": "al"
+        },
+        {
+          "gloss": "?",
+          "word": "qokeeas",
+          "middle": "keea"
+        },
+        {
+          "gloss": "cool-down",
+          "word": "cheokedy",
+          "middle": "eok"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "sal",
+          "middle": "l"
+        },
+        {
+          "gloss": "finalize",
+          "word": "lokam",
+          "middle": "am"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "iterate",
+          "word": "saiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "cool",
+          "word": "oteedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokeey",
+          "middle": "k"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "discharge",
+          "word": "okedal",
+          "middle": "ed"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "batch",
+          "word": "lshedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "precision hazard",
+          "word": "chcthhy",
+          "middle": "cth"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "okeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "lor",
+          "middle": "l"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "collect",
+          "word": "al",
+          "middle": "al"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "iterate",
+          "word": "saiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "?",
+          "word": "sheekshy",
+          "middle": "eeks"
+        },
+        {
+          "gloss": "continue",
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "lock, check",
+          "word": "chokchey",
+          "middle": "okch"
+        },
+        {
+          "gloss": "set",
+          "word": "lkey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "intake",
+          "word": "otain",
+          "middle": "ain"
+        }
+      ]
+    },
+    "f66r": {
+      "1": [
+        {
+          "gloss": "end",
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "gloss": "iterate",
+          "word": "pdaiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "cool",
+          "word": "oteedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "process",
+          "word": "opchedy",
+          "middle": "opch"
+        },
+        {
+          "gloss": "?",
+          "word": "chap",
+          "middle": "ap"
+        },
+        {
+          "gloss": "cool, mark, close",
+          "word": "chefchy",
+          "middle": "efc"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "shddy",
+          "middle": "d"
+        },
+        {
+          "gloss": "cool, input",
+          "word": "ypcher",
+          "middle": "er"
+        },
+        {
+          "gloss": "?",
+          "word": "cholpchd",
+          "middle": "olpchd"
+        },
+        {
+          "gloss": "discharge, collect",
+          "word": "okedals",
+          "middle": "edal"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "otcheo",
+          "middle": "eo"
+        },
+        {
+          "gloss": "transfer",
+          "word": "chty",
+          "middle": "t"
+        },
+        {
+          "gloss": "?",
+          "word": "ykchscheg",
+          "middle": "sche"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "stage:near-end",
+          "word": "o",
+          "middle": "o"
+        },
+        {
+          "gloss": "input, open",
+          "word": "rair",
+          "middle": "rai"
+        },
+        {
+          "gloss": "precision",
+          "word": "shekey",
+          "middle": "ek"
+        },
+        {
+          "gloss": "heat-discharge",
+          "word": "qokeedar",
+          "middle": "keed"
+        },
+        {
+          "gloss": "collect",
+          "word": "okal",
+          "middle": "al"
+        },
+        {
+          "gloss": "batch",
+          "word": "okedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokeedy",
+          "middle": "ke"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokal",
+          "middle": "k"
+        },
+        {
+          "gloss": "batch",
+          "word": "okedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat, verify, mark",
+          "word": "qokshd",
+          "middle": "kshd"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "break",
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "gloss": "batch",
+          "word": "ykshedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "gloss": "monitor",
+          "word": "cthdy",
+          "middle": "h"
+        },
+        {
+          "gloss": "deep heat",
+          "word": "qokees",
+          "middle": "kee"
+        },
+        {
+          "gloss": "extended cool-open",
+          "word": "cheeo",
+          "middle": "eeo"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "okcho",
+          "middle": "o"
+        },
+        {
+          "gloss": "close",
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "precision",
+          "word": "chekeey",
+          "middle": "ek"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "direct heat",
+          "word": "chckhy",
+          "middle": "ck"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "verify",
+          "word": "sh",
+          "middle": "sh"
+        },
+        {
+          "gloss": "close",
+          "word": "shdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotedy",
+          "middle": "t"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "gather, mark",
+          "word": "qotedal",
+          "middle": "ted"
+        },
+        {
+          "gloss": "?",
+          "word": "chcfheor",
+          "middle": "cfhe"
+        },
+        {
+          "gloss": "cool",
+          "word": "ykeedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "dar",
+          "middle": "r"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotey",
+          "middle": "t"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "kol",
+          "middle": "l"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "end",
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "gloss": "sustained heat, extended cool",
+          "word": "qokeeody",
+          "middle": "keeo"
+        },
+        {
+          "gloss": "heat-open",
+          "word": "qokeody",
+          "middle": "keo"
+        },
+        {
+          "gloss": "heat-open",
+          "word": "qokeody",
+          "middle": "keo"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "gloss": "precision",
+          "word": "sheky",
+          "middle": "ek"
+        },
+        {
+          "gloss": "sustained heat, extended cool",
+          "word": "qokeeody",
+          "middle": "keeo"
+        },
+        {
+          "gloss": "batch",
+          "word": "okedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "start",
+          "word": "kodary",
+          "middle": "da"
+        }
+      ]
+    },
+    "f85r1": {
+      "29a": [
+        {
+          "gloss": "input, check",
+          "word": "dorchdy",
+          "middle": "rch"
+        },
+        {
+          "gloss": "work, sequence",
+          "word": "osaiin",
+          "middle": "os"
+        },
+        {
+          "gloss": "discharge, cool",
+          "word": "okedes",
+          "middle": "ede"
+        },
+        {
+          "gloss": "control",
+          "word": "chcthy",
+          "middle": "ct"
+        },
+        {
+          "gloss": "batch",
+          "word": "okedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "collect",
+          "word": "otal",
+          "middle": "al"
+        },
+        {
+          "gloss": "close",
+          "word": "otchdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "collect",
+          "word": "otalom",
+          "middle": "al"
+        }
+      ],
+      "1": [
+        {
+          "gloss": "?",
+          "word": "pdsheody",
+          "middle": "pdsheo"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "shdol",
+          "middle": "d"
+        },
+        {
+          "gloss": "set",
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "close",
+          "word": "otchdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "batch",
+          "word": "dshedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "extended cool",
+          "word": "soeeedy",
+          "middle": "ee"
+        },
+        {
+          "gloss": "?",
+          "word": "dchefoey",
+          "middle": "efo"
+        },
+        {
+          "gloss": "stage:early",
+          "word": "sair",
+          "middle": "i"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "start, step",
+          "word": "sodair",
+          "middle": "dai"
+        },
+        {
+          "gloss": "set",
+          "word": "shey",
+          "middle": "ey"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "end",
+          "word": "yoiin",
+          "middle": "y"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "cheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "precision hazard",
+          "word": "qocthdy",
+          "middle": "cth"
+        },
+        {
+          "gloss": "batch",
+          "word": "otedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "dol",
+          "middle": "l"
+        },
+        {
+          "gloss": "check",
+          "word": "oraiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "okshd",
+          "middle": "d"
+        },
+        {
+          "gloss": "batch",
+          "word": "okchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "batch",
+          "word": "otedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat-check",
+          "word": "chckhdy",
+          "middle": "ckh"
+        },
+        {
+          "gloss": "finalize",
+          "word": "otam",
+          "middle": "am"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "stage:mid",
+          "word": "tarar",
+          "middle": "r"
+        },
+        {
+          "gloss": "batch",
+          "word": "otedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "process",
+          "word": "opcheey",
+          "middle": "opch"
+        },
+        {
+          "gloss": "start, step",
+          "word": "ykdair",
+          "middle": "dai"
+        },
+        {
+          "gloss": "end",
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotedy",
+          "middle": "t"
+        },
+        {
+          "gloss": "precision heat",
+          "word": "qokchdy",
+          "middle": "kch"
+        },
+        {
+          "gloss": "batch",
+          "word": "otedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "sustain output",
+          "word": "cheol",
+          "middle": "eol"
+        },
+        {
+          "gloss": "iterate",
+          "word": "saiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "discharge",
+          "word": "otedam",
+          "middle": "ed"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "?",
+          "word": "odeedaiin",
+          "middle": "odeed"
+        },
+        {
+          "gloss": "gentle heat, close",
+          "word": "qokechy",
+          "middle": "kec"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "precision, close",
+          "word": "chekchy",
+          "middle": "ekc"
+        },
+        {
+          "gloss": "batch",
+          "word": "olshedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokeedy",
+          "middle": "ke"
+        },
+        {
+          "gloss": "?",
+          "word": "doltshdy",
+          "middle": "ltsh"
+        },
+        {
+          "gloss": "close",
+          "word": "otar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "close",
+          "word": "otchdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "break",
+          "word": "ols",
+          "middle": "s"
+        }
+      ]
+    },
+    "f86v3": {
+      "1": [
+        {
+          "gloss": "batch",
+          "word": "tchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "sustained heat",
+          "word": "qokeedy",
+          "middle": "ke"
+        },
+        {
+          "gloss": "batch",
+          "word": "qoedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "pause, close",
+          "word": "qopchy",
+          "middle": "pc"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "raiin",
+          "middle": "r"
+        },
+        {
+          "gloss": "pause, check",
+          "word": "olpchey",
+          "middle": "pch"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokaiin",
+          "middle": "k"
+        },
+        {
+          "gloss": "discharge",
+          "word": "tshedal",
+          "middle": "ed"
+        },
+        {
+          "gloss": "set",
+          "word": "ypchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "close",
+          "word": "shdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "?",
+          "word": "qopcheeody",
+          "middle": "pcheeo"
+        },
+        {
+          "gloss": "process",
+          "word": "opchdy",
+          "middle": "opch"
+        },
+        {
+          "gloss": "mark, check",
+          "word": "olfchey",
+          "middle": "fch"
+        },
+        {
+          "gloss": "set",
+          "word": "ypchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotaiin",
+          "middle": "t"
+        },
+        {
+          "gloss": "?",
+          "word": "toeeedchy",
+          "middle": "eeedc"
+        },
+        {
+          "gloss": "set",
+          "word": "okchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "precision heat",
+          "word": "qokchedy",
+          "middle": "kch"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "standing cool",
+          "word": "ytcheodar",
+          "middle": "eod"
+        },
+        {
+          "gloss": "continue",
+          "word": "tchol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "heat",
+          "word": "olkey",
+          "middle": "k"
+        },
+        {
+          "gloss": "?",
+          "word": "cfhyaiin",
+          "middle": "cfhy"
+        },
+        {
+          "gloss": "process",
+          "word": "opchedy",
+          "middle": "opch"
+        },
+        {
+          "gloss": "batch",
+          "word": "okchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "?",
+          "word": "acheody",
+          "middle": "acheo"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "set",
+          "word": "yteey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "close",
+          "word": "dady",
+          "middle": "dy"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "link",
+          "word": "sain",
+          "middle": "in"
+        },
+        {
+          "gloss": "batch",
+          "word": "ychedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "cool",
+          "word": "qoeeey",
+          "middle": "e"
+        },
+        {
+          "gloss": "open",
+          "word": "otair",
+          "middle": "ai"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "cheody",
+          "middle": "eo"
+        },
+        {
+          "gloss": "link",
+          "word": "ytain",
+          "middle": "in"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokaiin",
+          "middle": "k"
+        },
+        {
+          "gloss": "batch",
+          "word": "dshedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokeey",
+          "middle": "k"
+        },
+        {
+          "gloss": "transfer, close",
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokaiin",
+          "middle": "k"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "portion",
+          "word": "otor",
+          "middle": "or"
+        },
+        {
+          "gloss": "check",
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "check",
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "set",
+          "word": "ychey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "continue",
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "keeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "rapid transfer-check",
+          "word": "qotchedy",
+          "middle": "tch"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokeey",
+          "middle": "k"
+        },
+        {
+          "gloss": "transfer, check, discharge",
+          "word": "qotchedar",
+          "middle": "tched"
+        },
+        {
+          "gloss": "cool",
+          "word": "sheedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokaiin",
+          "middle": "k"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokedy",
+          "middle": "k"
+        },
+        {
+          "gloss": "check",
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "transfer, open-wide",
+          "word": "qotaiior",
+          "middle": "taii"
+        },
+        {
+          "gloss": "finalize",
+          "word": "am",
+          "middle": "am"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "iterate",
+          "word": "taiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "iterate",
+          "word": "ytaiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "iterate",
+          "word": "ytaiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "iterate",
+          "word": "ytaiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "ytar",
+          "middle": "r"
+        },
+        {
+          "gloss": "finalize",
+          "word": "am",
+          "middle": "am"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "qodaiin",
+          "middle": "d"
+        },
+        {
+          "gloss": "?",
+          "word": "yochedy",
+          "middle": "yoch"
+        },
+        {
+          "gloss": "rapid transfer-check",
+          "word": "qotchey",
+          "middle": "tch"
+        },
+        {
+          "gloss": "heat",
+          "word": "qoky",
+          "middle": "k"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "cool",
+          "word": "oteedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "work, precision marker",
+          "word": "om",
+          "middle": "om"
+        },
+        {
+          "gloss": "set",
+          "word": "ytchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "set",
+          "word": "yteey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "chdal",
+          "middle": "d"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "cheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "iterate",
+          "word": "daiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "?",
+          "word": "cheokaiim",
+          "middle": "eokai"
+        },
+        {
+          "gloss": "standing cool",
+          "word": "tcheod",
+          "middle": "eod"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "oteey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "yteeody",
+          "middle": "eo"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "discharge, work",
+          "word": "chedos",
+          "middle": "edo"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "cheos",
+          "middle": "eo"
+        },
+        {
+          "gloss": "unseal",
+          "word": "aiir",
+          "middle": "aii"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "close, sequence",
+          "word": "ytchcseey",
+          "middle": "cs"
+        },
+        {
+          "gloss": "deep cool, work, mark",
+          "word": "oteeodam",
+          "middle": "eeod"
+        }
+      ],
+      "4": [
+        {
+          "gloss": "check",
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "cool",
+          "word": "qoeedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "qor",
+          "middle": "r"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "end",
+          "word": "ytechy",
+          "middle": "y"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "finalize",
+          "word": "aram",
+          "middle": "am"
+        },
+        {
+          "gloss": "portion",
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "gloss": "set",
+          "word": "yteey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "cool",
+          "word": "oteedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "discharge",
+          "word": "shedaiin",
+          "middle": "ed"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "check",
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "iterate",
+          "word": "ytaiin",
+          "middle": "iin"
+        },
+        {
+          "gloss": "collect",
+          "word": "otodar",
+          "middle": "od"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "batch",
+          "word": "tchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "end",
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "gloss": "set",
+          "word": "tchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "batch",
+          "word": "otchedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokal",
+          "middle": "k"
+        },
+        {
+          "gloss": "work, cool",
+          "word": "oeedy",
+          "middle": "oe"
+        },
+        {
+          "gloss": "finalize",
+          "word": "lkam",
+          "middle": "am"
+        },
+        {
+          "gloss": "batch",
+          "word": "yteedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "ykeey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "step-mark",
+          "word": "daim",
+          "middle": "im"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "choaiin",
+          "middle": "o"
+        },
+        {
+          "gloss": "hard precision",
+          "word": "checkhy",
+          "middle": "eck"
+        },
+        {
+          "gloss": "?",
+          "word": "sykeeeochy",
+          "middle": "eeeoc"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "tcheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "collect",
+          "word": "otodaiin",
+          "middle": "od"
+        },
+        {
+          "gloss": "process start",
+          "word": "opaiin",
+          "middle": "op"
+        },
+        {
+          "gloss": "set",
+          "word": "otchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "finalize",
+          "word": "otam",
+          "middle": "am"
+        }
+      ],
+      "5": [
+        {
+          "gloss": "deep cool",
+          "word": "ysheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotaiin",
+          "middle": "t"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "?",
+          "word": "ypsheor",
+          "middle": "ypshe"
+        },
+        {
+          "gloss": "link",
+          "word": "ytain",
+          "middle": "in"
+        },
+        {
+          "gloss": "intake",
+          "word": "otain",
+          "middle": "ain"
+        },
+        {
+          "gloss": "stage:final",
+          "word": "ytam",
+          "middle": "m"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "teeos",
+          "middle": "eo"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "set",
+          "word": "yteey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qoteey",
+          "middle": "t"
+        },
+        {
+          "gloss": "set",
+          "word": "otchey",
+          "middle": "ey"
+        },
+        {
+          "gloss": "gather, cool-open",
+          "word": "qoteeody",
+          "middle": "teeo"
+        },
+        {
+          "gloss": "extended cool",
+          "word": "cheeor",
+          "middle": "ee"
+        },
+        {
+          "gloss": "extended discharge",
+          "word": "cheedaiin",
+          "middle": "eed"
+        },
+        {
+          "gloss": "work, deep cool",
+          "word": "oees",
+          "middle": "oee"
+        },
+        {
+          "gloss": "open",
+          "word": "aiiin",
+          "middle": "ai"
+        },
+        {
+          "gloss": "cool",
+          "word": "yteeedy",
+          "middle": "e"
+        },
+        {
+          "gloss": "batch",
+          "word": "chedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "transfer",
+          "word": "qotaiin",
+          "middle": "t"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "cheody",
+          "middle": "eo"
+        },
+        {
+          "gloss": "work-verify",
+          "word": "osheey",
+          "middle": "osh"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "deep cool",
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "tcheody",
+          "middle": "eo"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokain",
+          "middle": "k"
+        },
+        {
+          "gloss": "checkpoint",
+          "word": "qodaiin",
+          "middle": "d"
+        },
+        {
+          "gloss": "heat",
+          "word": "olkar",
+          "middle": "k"
+        },
+        {
+          "gloss": "discharge",
+          "word": "chedaiin",
+          "middle": "ed"
+        },
+        {
+          "gloss": "batch",
+          "word": "ychedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "precision heat-work",
+          "word": "qokody",
+          "middle": "ko"
+        },
+        {
+          "gloss": "sustain seal",
+          "word": "cholkain",
+          "middle": "olk"
+        }
+      ]
+    },
+    "f86v5": {
+      "9a": [
+        {
+          "gloss": "close",
+          "word": "ykar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "heat",
+          "word": "olkal",
+          "middle": "k"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "kar",
+          "middle": "r"
+        },
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "portion",
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "gloss": "portion",
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "gloss": "portion",
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "gloss": "check",
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "finalize",
+          "word": "otam",
+          "middle": "am"
+        },
+        {
+          "gloss": "stage:final",
+          "word": "ytam",
+          "middle": "m"
+        }
+      ],
+      "18a": [
+        {
+          "gloss": "portion",
+          "word": "ychor",
+          "middle": "or"
+        },
+        {
+          "gloss": "close",
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "cool-end",
+          "word": "ytaly",
+          "middle": "ly"
+        },
+        {
+          "gloss": "check",
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "check",
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "close",
+          "word": "otar",
+          "middle": "ar"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "ytar",
+          "middle": "r"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "stage:early",
+          "word": "ytaiim",
+          "middle": "i"
+        }
+      ],
+      "1": [
+        {
+          "gloss": "checkpoint",
+          "word": "pshdal",
+          "middle": "d"
+        },
+        {
+          "gloss": "seal",
+          "word": "choky",
+          "middle": "ok"
+        },
+        {
+          "gloss": "cool-open",
+          "word": "sheody",
+          "middle": "eo"
+        },
+        {
+          "gloss": "end",
+          "word": "lfchy",
+          "middle": "y"
+        },
+        {
+          "gloss": "?",
+          "word": "fyshey",
+          "middle": "fysh"
+        },
+        {
+          "gloss": "heat",
+          "word": "qoky",
+          "middle": "k"
+        },
+        {
+          "gloss": "process start",
+          "word": "opy",
+          "middle": "op"
+        },
+        {
+          "gloss": "end, pause",
+          "word": "ypar",
+          "middle": "yp"
+        },
+        {
+          "gloss": "check",
+          "word": "oraiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "stage:mid",
+          "word": "ytor",
+          "middle": "r"
+        },
+        {
+          "gloss": "check",
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "process start",
+          "word": "opy",
+          "middle": "op"
+        }
+      ],
+      "2": [
+        {
+          "gloss": "?",
+          "word": "losair",
+          "middle": "losai"
+        },
+        {
+          "gloss": "stage:near-end",
+          "word": "yteody",
+          "middle": "o"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "gloss": "end",
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "gloss": "portion",
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "gloss": "pause, check",
+          "word": "qopchol",
+          "middle": "pch"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "tal",
+          "middle": "l"
+        },
+        {
+          "gloss": "continue",
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "gloss": "stage:late",
+          "word": "ytal",
+          "middle": "l"
+        },
+        {
+          "gloss": "finalize",
+          "word": "otam",
+          "middle": "am"
+        },
+        {
+          "gloss": "finalize",
+          "word": "otam",
+          "middle": "am"
+        }
+      ],
+      "3": [
+        {
+          "gloss": "batch",
+          "word": "shedy",
+          "middle": "edy"
+        },
+        {
+          "gloss": "close",
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "gloss": "heat",
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "gloss": "cool",
+          "word": "okeeey",
+          "middle": "e"
+        },
+        {
+          "gloss": "cool-down",
+          "word": "sheokaiin",
+          "middle": "eok"
+        },
+        {
+          "gloss": "cool-down",
+          "word": "cheoky",
+          "middle": "eok"
+        },
+        {
+          "gloss": "?",
+          "word": "oteeodail",
+          "middle": "eeodai"
+        },
+        {
+          "gloss": "check",
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "gloss": "intake",
+          "word": "otain",
+          "middle": "ain"
+        }
+      ]
+    }
+  },
+  "repeated_subsequences": {
+    "bigrams": [
+      {
+        "pattern": [
+          "batch",
+          "heat"
+        ],
+        "count": 40
+      },
+      {
+        "pattern": [
+          "batch",
+          "batch"
+        ],
+        "count": 35
+      },
+      {
+        "pattern": [
+          "heat",
+          "batch"
+        ],
+        "count": 30
+      },
+      {
+        "pattern": [
+          "batch",
+          "close"
+        ],
+        "count": 23
+      },
+      {
+        "pattern": [
+          "heat",
+          "heat"
+        ],
+        "count": 19
+      },
+      {
+        "pattern": [
+          "close",
+          "close"
+        ],
+        "count": 19
+      },
+      {
+        "pattern": [
+          "stage:mid",
+          "check"
+        ],
+        "count": 18
+      },
+      {
+        "pattern": [
+          "close",
+          "heat"
+        ],
+        "count": 17
+      },
+      {
+        "pattern": [
+          "set",
+          "heat"
+        ],
+        "count": 17
+      },
+      {
+        "pattern": [
+          "continue",
+          "close"
+        ],
+        "count": 16
+      },
+      {
+        "pattern": [
+          "close",
+          "check"
+        ],
+        "count": 16
+      },
+      {
+        "pattern": [
+          "stage:late",
+          "batch"
+        ],
+        "count": 15
+      },
+      {
+        "pattern": [
+          "close",
+          "batch"
+        ],
+        "count": 15
+      },
+      {
+        "pattern": [
+          "transfer",
+          "close"
+        ],
+        "count": 14
+      },
+      {
+        "pattern": [
+          "heat",
+          "set"
+        ],
+        "count": 14
+      },
+      {
+        "pattern": [
+          "heat",
+          "close"
+        ],
+        "count": 13
+      },
+      {
+        "pattern": [
+          "batch",
+          "sustained heat"
+        ],
+        "count": 13
+      },
+      {
+        "pattern": [
+          "cool",
+          "heat"
+        ],
+        "count": 13
+      },
+      {
+        "pattern": [
+          "check",
+          "close"
+        ],
+        "count": 13
+      },
+      {
+        "pattern": [
+          "discharge",
+          "batch"
+        ],
+        "count": 12
+      }
+    ],
+    "trigrams": [
+      {
+        "pattern": [
+          "batch",
+          "batch",
+          "heat"
+        ],
+        "count": 8
+      },
+      {
+        "pattern": [
+          "batch",
+          "batch",
+          "batch"
+        ],
+        "count": 7
+      },
+      {
+        "pattern": [
+          "heat",
+          "batch",
+          "batch"
+        ],
+        "count": 6
+      },
+      {
+        "pattern": [
+          "stage:late",
+          "batch",
+          "heat"
+        ],
+        "count": 6
+      },
+      {
+        "pattern": [
+          "heat",
+          "batch",
+          "heat"
+        ],
+        "count": 5
+      },
+      {
+        "pattern": [
+          "batch",
+          "heat",
+          "close"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "batch",
+          "heat",
+          "stage:mid"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "batch",
+          "close",
+          "batch"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "batch",
+          "heat",
+          "batch"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "heat",
+          "close",
+          "heat"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "sustained heat",
+          "heat",
+          "batch"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "batch",
+          "batch",
+          "close"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "batch",
+          "heat",
+          "heat"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "batch",
+          "sustained heat",
+          "batch"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "batch",
+          "continue",
+          "close"
+        ],
+        "count": 3
+      }
+    ]
+  },
+  "section_specific_patterns": {
+    "B": [
+      {
+        "pattern": [
+          "close",
+          "stage:late"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "batch",
+          "intake"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "batch",
+          "pause, check"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "cool",
+          "continue"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "stage:late",
+          "intake"
+        ],
+        "count": 3
+      }
+    ],
+    "S": [
+      {
+        "pattern": [
+          "cool",
+          "cool"
+        ],
+        "count": 9
+      },
+      {
+        "pattern": [
+          "collect",
+          "stage:late"
+        ],
+        "count": 6
+      },
+      {
+        "pattern": [
+          "heat",
+          "open"
+        ],
+        "count": 5
+      },
+      {
+        "pattern": [
+          "deep cool",
+          "deep cool"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "batch",
+          "discharge"
+        ],
+        "count": 3
+      }
+    ],
+    "T": [
+      {
+        "pattern": [
+          "stage:near-end",
+          "cool-open"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "precision heat",
+          "transfer"
+        ],
+        "count": 2
+      },
+      {
+        "pattern": [
+          "continue",
+          "energy-lock"
+        ],
+        "count": 2
+      },
+      {
+        "pattern": [
+          "stage:late",
+          "cool-open"
+        ],
+        "count": 2
+      },
+      {
+        "pattern": [
+          "cool-open",
+          "precision hazard"
+        ],
+        "count": 2
+      }
+    ],
+    "C": [
+      {
+        "pattern": [
+          "set",
+          "transfer"
+        ],
+        "count": 4
+      },
+      {
+        "pattern": [
+          "set",
+          "collect"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "check",
+          "stage:near-end"
+        ],
+        "count": 3
+      },
+      {
+        "pattern": [
+          "set",
+          "continue"
+        ],
+        "count": 2
+      },
+      {
+        "pattern": [
+          "rapid transfer-check",
+          "heat"
+        ],
+        "count": 2
+      }
+    ]
+  },
+  "cross_section_patterns": [
+    {
+      "pattern": [
+        "batch",
+        "heat"
+      ],
+      "count": 40,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "batch",
+        "batch"
+      ],
+      "count": 35,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T"
+      ]
+    },
+    {
+      "pattern": [
+        "heat",
+        "batch"
+      ],
+      "count": 30,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "batch",
+        "close"
+      ],
+      "count": 23,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "heat",
+        "heat"
+      ],
+      "count": 19,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "close",
+        "close"
+      ],
+      "count": 19,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "stage:mid",
+        "check"
+      ],
+      "count": 18,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "close",
+        "heat"
+      ],
+      "count": 17,
+      "sections": [
+        "B",
+        "S",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "pattern": [
+        "set",
+        "heat"
+      ],
+      "count": 17,
+      "sections": [
+        "B",
+        "H",
+        "S",
+        "T"
+      ]
+    },
+    {
+      "pattern": [
+        "continue",
+        "close"
+      ],
+      "count": 16,
+      "sections": [
+        "B",
+        "S",
+        "T",
+        "C"
+      ]
+    }
+  ],
+  "distinct_gap_examples": [
+    {
+      "middle": "edyteok",
+      "word": "chedyteokain",
+      "folio": "f111r",
+      "section": "S",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "eeck",
+      "closest_glossed_gloss": "deep cool, hard heat",
+      "edit_distance": 4
+    },
+    {
+      "middle": "odyteyt",
+      "word": "teodyteytar",
+      "folio": "f86v5",
+      "section": "C",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "eyt",
+      "closest_glossed_gloss": "set, transfer",
+      "edit_distance": 4
+    },
+    {
+      "middle": "raloik",
+      "word": "daraloikhy",
+      "folio": "f78r",
+      "section": "B",
+      "position": "par_start",
+      "frequency": 1,
+      "closest_glossed": "oik",
+      "closest_glossed_gloss": "work, step, heat",
+      "edit_distance": 3
+    },
+    {
+      "middle": "asodlo",
+      "word": "otasodlory",
+      "folio": "f78r",
+      "section": "B",
+      "position": "par_start",
+      "frequency": 1,
+      "closest_glossed": "alo",
+      "closest_glossed_gloss": "collect, work",
+      "edit_distance": 3
+    },
+    {
+      "middle": "kaloro",
+      "word": "qokaloro",
+      "folio": "f76r",
+      "section": "B",
+      "position": "line_end",
+      "frequency": 1,
+      "closest_glossed": "kalch",
+      "closest_glossed_gloss": "heat-attach, frame, check",
+      "edit_distance": 3
+    },
+    {
+      "middle": "eolkeepc",
+      "word": "cheolkeepchy",
+      "folio": "f43r",
+      "section": "H",
+      "position": "line_end",
+      "frequency": 1,
+      "closest_glossed": "eolke",
+      "closest_glossed_gloss": "sustain, gentle heat",
+      "edit_distance": 3
+    },
+    {
+      "middle": "ofcheef",
+      "word": "ofcheefar",
+      "folio": "f39r",
+      "section": "H",
+      "position": "line_end",
+      "frequency": 1,
+      "closest_glossed": "opche",
+      "closest_glossed_gloss": "process, cool",
+      "edit_distance": 3
+    },
+    {
+      "middle": "aiisod",
+      "word": "aiisod",
+      "folio": "f107r",
+      "section": "S",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "aii",
+      "closest_glossed_gloss": "unseal",
+      "edit_distance": 3
+    },
+    {
+      "middle": "aiiikh",
+      "word": "aiiikhedy",
+      "folio": "f107r",
+      "section": "S",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "aik",
+      "closest_glossed_gloss": "open, heat",
+      "edit_distance": 3
+    },
+    {
+      "middle": "raitht",
+      "word": "raithty",
+      "folio": "f107r",
+      "section": "S",
+      "position": "line_end",
+      "frequency": 1,
+      "closest_glossed": "ait",
+      "closest_glossed_gloss": "open, transfer",
+      "edit_distance": 3
+    },
+    {
+      "middle": "olfosd",
+      "word": "sholfosdaiin",
+      "folio": "f66r",
+      "section": "T",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "old",
+      "closest_glossed_gloss": "continue, mark",
+      "edit_distance": 3
+    },
+    {
+      "middle": "lcheeek",
+      "word": "dalcheeeky",
+      "folio": "f66r",
+      "section": "T",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "cheeo",
+      "closest_glossed_gloss": "check, deep cool, work",
+      "edit_distance": 3
+    },
+    {
+      "middle": "efshoro",
+      "word": "shefshoro",
+      "folio": "f85r1",
+      "section": "T",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "esho",
+      "closest_glossed_gloss": "cool-sequence, hazard, work",
+      "edit_distance": 3
+    },
+    {
+      "middle": "oeesea",
+      "word": "oeeseary",
+      "folio": "f85r1",
+      "section": "T",
+      "position": "line_mid",
+      "frequency": 1,
+      "closest_glossed": "eees",
+      "closest_glossed_gloss": "deep cool, cool-sequence",
+      "edit_distance": 3
+    },
+    {
+      "middle": "lkalyt",
+      "word": "dalkalytam",
+      "folio": "f86v5",
+      "section": "C",
+      "position": "line_end",
+      "frequency": 1,
+      "closest_glossed": "kalch",
+      "closest_glossed_gloss": "heat-attach, frame, check",
+      "edit_distance": 3
+    },
+    {
+      "middle": "eeytyd",
+      "word": "ycheeytydaiin",
+      "folio": "f86v5",
+      "section": "C",
+      "position": "line_start",
+      "frequency": 1,
+      "closest_glossed": "eyt",
+      "closest_glossed_gloss": "set, transfer",
+      "edit_distance": 3
+    }
+  ],
+  "verdict": "PASS",
+  "narrative": "Gloss gaps are systematically positioned (max enrichment 4.03x at par_start) and section-specific (gap rate range 6.2pp). 16 gaps involve morphologically distinct MIDDLEs (edit distance >2 from any glossed MIDDLE), suggesting these are not simple variants of known operations but potentially encode material-specific or context-specific information that the operational gloss system does not capture.",
+  "methodology": {
+    "gloss_source": "data/middle_dictionary.json (v2.0, 340 glossed MIDDLEs)",
+    "morphological_distinctiveness": "Levenshtein distance >2 from any glossed MIDDLE",
+    "position_enrichment": "Observed vs expected gap rate by position (line_start/end/mid/par_start)",
+    "section_specificity": "Gap rate variation across B/H/S/T/C sections",
+    "pass_criteria": "Max positional enrichment >1.5x AND section gap rate range >5pp"
+  }
+}
