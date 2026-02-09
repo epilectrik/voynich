@@ -1,0 +1,102 @@
+{
+  "test": "Compositional Distance",
+  "question": "Are tail MIDDLEs compositional elaborations or independent identifiers?",
+  "n_common_middles": 82,
+  "n_rare_middles": 1143,
+  "rarity_threshold_folios": 15,
+  "n_exclusive_rare": 47,
+  "n_non_exclusive_rare": 49,
+  "n_unclassified_rare": 1047,
+  "exclusive_distances": {
+    "label": "Zone-Exclusive Rare MIDDLEs",
+    "n": 47,
+    "n_dist0": 0,
+    "n_dist1": 42,
+    "n_dist2": 5,
+    "n_dist3plus": 0,
+    "pct_dist0": 0.0,
+    "pct_dist1": 89.36,
+    "pct_dist2": 10.64,
+    "pct_dist3plus": 0.0,
+    "mean_distance": 1.1064,
+    "median_distance": 1,
+    "n_contained": 46,
+    "pct_contained": 97.87,
+    "distance_distribution": {
+      "1": 42,
+      "2": 5
+    }
+  },
+  "non_exclusive_distances": {
+    "label": "Non-Exclusive Rare MIDDLEs",
+    "n": 49,
+    "n_dist0": 0,
+    "n_dist1": 44,
+    "n_dist2": 4,
+    "n_dist3plus": 1,
+    "pct_dist0": 0.0,
+    "pct_dist1": 89.8,
+    "pct_dist2": 8.16,
+    "pct_dist3plus": 2.04,
+    "mean_distance": 1.1224,
+    "median_distance": 1,
+    "n_contained": 48,
+    "pct_contained": 97.96,
+    "distance_distribution": {
+      "1": 44,
+      "2": 4,
+      "3": 1
+    }
+  },
+  "all_rare_distances": {
+    "label": "All Rare MIDDLEs",
+    "n": 1143,
+    "n_dist0": 0,
+    "n_dist1": 536,
+    "n_dist2": 385,
+    "n_dist3plus": 222,
+    "pct_dist0": 0.0,
+    "pct_dist1": 46.89,
+    "pct_dist2": 33.68,
+    "pct_dist3plus": 19.42,
+    "mean_distance": 1.811,
+    "median_distance": 2,
+    "n_contained": 1138,
+    "pct_contained": 99.56,
+    "distance_distribution": {
+      "1": 536,
+      "2": 385,
+      "3": 151,
+      "4": 49,
+      "5": 17,
+      "6": 5
+    }
+  },
+  "comparison": {
+    "mann_whitney_u": 1154.0,
+    "p_value": 0.977911,
+    "effect_size_d": -0.0455,
+    "mean_exclusive": 1.1064,
+    "mean_non_exclusive": 1.1224,
+    "chi2_elab_vs_indep": 0.0,
+    "chi2_p_value": 1.0,
+    "contingency_table": {
+      "exclusive": {
+        "elaboration_d01": 42,
+        "independent_d2plus": 5
+      },
+      "non_exclusive": {
+        "elaboration_d01": 44,
+        "independent_d2plus": 5
+      }
+    }
+  },
+  "containment": {
+    "exclusive_rate": 97.87,
+    "non_exclusive_rate": 97.96,
+    "exclusive_n": 46,
+    "non_exclusive_n": 48
+  },
+  "verdict": "ELABORATION",
+  "notes": "Zone-exclusive rare MIDDLEs are predominantly distance-0/1 (89.4%), indicating compositional elaborations (operational variants of common MIDDLEs). Exclusive vs non-exclusive distances do NOT differ significantly (p=0.9779, d=-0.045)"
+}

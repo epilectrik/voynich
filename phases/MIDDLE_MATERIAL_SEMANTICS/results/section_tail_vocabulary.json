@@ -1,0 +1,45 @@
+{
+  "test": "Section-Specific Tail Vocabulary",
+  "n_tail_middles": 1208,
+  "n_sections": 5,
+  "mean_within_jaccard": 0.024661,
+  "mean_between_jaccard": 0.017629,
+  "within_over_between_ratio": 1.3989,
+  "mann_whitney_u": 1005315.5,
+  "p_value": 1.2854692010844104e-06,
+  "effect_size_d": 0.3251,
+  "per_section": {
+    "B": {
+      "n_folios": 20,
+      "n_tail_middles": 314,
+      "n_section_exclusive": 147,
+      "pct_exclusive": 46.8
+    },
+    "C": {
+      "n_folios": 5,
+      "n_tail_middles": 159,
+      "n_section_exclusive": 67,
+      "pct_exclusive": 42.1
+    },
+    "H": {
+      "n_folios": 32,
+      "n_tail_middles": 322,
+      "n_section_exclusive": 165,
+      "pct_exclusive": 51.2
+    },
+    "S": {
+      "n_folios": 23,
+      "n_tail_middles": 766,
+      "n_section_exclusive": 505,
+      "pct_exclusive": 65.9
+    },
+    "T": {
+      "n_folios": 2,
+      "n_tail_middles": 96,
+      "n_section_exclusive": 35,
+      "pct_exclusive": 36.5
+    }
+  },
+  "verdict": "SUPPORTED",
+  "notes": "significant at p=1.29e-06; within/between ratio=1.40; Cohen's d=0.325; avg section-exclusive=48.5%"
+}

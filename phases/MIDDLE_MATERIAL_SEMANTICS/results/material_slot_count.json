@@ -1,0 +1,915 @@
+{
+  "test": "Material Slot Count vs Brunschwig",
+  "question": "Does phase-exclusive rare middle count match historical recipe complexity?",
+  "method": "Zone-exclusive rare MIDDLEs per folio (rare=<15 folios, 2+ occurrences, 1 zone)",
+  "n_folios": 80,
+  "n_tokens_analyzed": 21610,
+  "rarity_threshold_folios": 15,
+  "min_folio_occurrences": 2,
+  "slot_count_summary": {
+    "mean": 1.01,
+    "median": 0,
+    "min": 0,
+    "max": 7,
+    "pct_in_3_8_range": 15.0,
+    "distribution": {
+      "0": 42,
+      "1": 15,
+      "2": 11,
+      "3": 7,
+      "4": 4,
+      "7": 1
+    }
+  },
+  "zone_distribution_of_slots": {
+    "SETUP": {
+      "count": 4,
+      "pct": 4.9
+    },
+    "PROCESS": {
+      "count": 71,
+      "pct": 87.7
+    },
+    "FINISH": {
+      "count": 6,
+      "pct": 7.4
+    }
+  },
+  "regime_analysis": {
+    "kruskal_wallis_H": 15.4532,
+    "kruskal_wallis_p": 0.001468,
+    "per_regime": {
+      "REGIME_1": {
+        "n_folios": 29,
+        "mean_slots": 1.52,
+        "median_slots": 1,
+        "min_slots": 0,
+        "max_slots": 7
+      },
+      "REGIME_2": {
+        "n_folios": 10,
+        "mean_slots": 1.6,
+        "median_slots": 2,
+        "min_slots": 0,
+        "max_slots": 4
+      },
+      "REGIME_3": {
+        "n_folios": 16,
+        "mean_slots": 0.81,
+        "median_slots": 0,
+        "min_slots": 0,
+        "max_slots": 4
+      },
+      "REGIME_4": {
+        "n_folios": 25,
+        "mean_slots": 0.32,
+        "median_slots": 0,
+        "min_slots": 0,
+        "max_slots": 3
+      }
+    }
+  },
+  "kernel_correlation": {
+    "spearman_k_ratio": {
+      "rho": -0.2868,
+      "p_value": 0.0099
+    },
+    "spearman_h_ratio": {
+      "rho": -0.055,
+      "p_value": 0.628048
+    }
+  },
+  "brunschwig_comparison": {
+    "overall_mean_parts": 1.56,
+    "overall_range": [
+      0,
+      6
+    ],
+    "by_fire_degree": {
+      "1": {
+        "n_recipes": 62,
+        "mean_parts": 1.35,
+        "median_parts": 1,
+        "min_parts": 1,
+        "max_parts": 4
+      },
+      "2": {
+        "n_recipes": 141,
+        "mean_parts": 1.65,
+        "median_parts": 1,
+        "min_parts": 0,
+        "max_parts": 6
+      },
+      "3": {
+        "n_recipes": 36,
+        "mean_parts": 1.56,
+        "median_parts": 1,
+        "min_parts": 1,
+        "max_parts": 4
+      }
+    },
+    "procedural_steps_by_degree": {
+      "1": {
+        "n_recipes": 62,
+        "mean_steps": 2.4,
+        "median_steps": 2,
+        "min_steps": 0,
+        "max_steps": 7
+      },
+      "2": {
+        "n_recipes": 141,
+        "mean_steps": 2.33,
+        "median_steps": 2,
+        "min_steps": 0,
+        "max_steps": 4
+      },
+      "3": {
+        "n_recipes": 36,
+        "mean_steps": 2.64,
+        "median_steps": 3,
+        "min_steps": 0,
+        "max_steps": 8
+      }
+    }
+  },
+  "regime_fire_degree_alignment": {
+    "REGIME_2": {
+      "fire_degree": 1,
+      "brunschwig_mean_parts": 1.35,
+      "voynich_mean_slots": 1.6
+    },
+    "REGIME_1": {
+      "fire_degree": 2,
+      "brunschwig_mean_parts": 1.65,
+      "voynich_mean_slots": 1.52
+    },
+    "REGIME_3": {
+      "fire_degree": 3,
+      "brunschwig_mean_parts": 1.56,
+      "voynich_mean_slots": 0.81
+    }
+  },
+  "per_folio": {
+    "f103r": {
+      "slot_count": 1,
+      "n_paragraphs": 18,
+      "n_tokens": 522,
+      "regime": "REGIME_3",
+      "k_ratio": 0.2269,
+      "slot_middles": [
+        "ec"
+      ]
+    },
+    "f103v": {
+      "slot_count": 3,
+      "n_paragraphs": 13,
+      "n_tokens": 449,
+      "regime": "REGIME_1",
+      "k_ratio": 0.1994,
+      "slot_middles": [
+        "kees",
+        "an",
+        "osh"
+      ]
+    },
+    "f104r": {
+      "slot_count": 4,
+      "n_paragraphs": 13,
+      "n_tokens": 438,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2193,
+      "slot_middles": [
+        "ockh",
+        "oee",
+        "olch",
+        "tai"
+      ]
+    },
+    "f104v": {
+      "slot_count": 3,
+      "n_paragraphs": 13,
+      "n_tokens": 458,
+      "regime": "REGIME_3",
+      "k_ratio": 0.1471,
+      "slot_middles": [
+        "kchd",
+        "tcheo",
+        "eeda"
+      ]
+    },
+    "f105r": {
+      "slot_count": 4,
+      "n_paragraphs": 10,
+      "n_tokens": 362,
+      "regime": "REGIME_2",
+      "k_ratio": 0.1888,
+      "slot_middles": [
+        "teo",
+        "aiir",
+        "opai",
+        "oee"
+      ]
+    },
+    "f105v": {
+      "slot_count": 2,
+      "n_paragraphs": 10,
+      "n_tokens": 390,
+      "regime": "REGIME_2",
+      "k_ratio": 0.2398,
+      "slot_middles": [
+        "airo",
+        "opai"
+      ]
+    },
+    "f106r": {
+      "slot_count": 3,
+      "n_paragraphs": 15,
+      "n_tokens": 421,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2108,
+      "slot_middles": [
+        "eee",
+        "pc",
+        "ro"
+      ]
+    },
+    "f106v": {
+      "slot_count": 2,
+      "n_paragraphs": 15,
+      "n_tokens": 449,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2218,
+      "slot_middles": [
+        "lsh",
+        "os"
+      ]
+    },
+    "f107r": {
+      "slot_count": 2,
+      "n_paragraphs": 15,
+      "n_tokens": 488,
+      "regime": "REGIME_2",
+      "k_ratio": 0.2898,
+      "slot_middles": [
+        "f",
+        "ofch"
+      ]
+    },
+    "f107v": {
+      "slot_count": 1,
+      "n_paragraphs": 15,
+      "n_tokens": 455,
+      "regime": "REGIME_1",
+      "k_ratio": 0.3809,
+      "slot_middles": [
+        "opalk"
+      ]
+    },
+    "f108r": {
+      "slot_count": 2,
+      "n_paragraphs": 16,
+      "n_tokens": 491,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2775,
+      "slot_middles": [
+        "of",
+        "ockh"
+      ]
+    },
+    "f108v": {
+      "slot_count": 3,
+      "n_paragraphs": 9,
+      "n_tokens": 566,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2189,
+      "slot_middles": [
+        "edk",
+        "ecth",
+        "eee"
+      ]
+    },
+    "f111r": {
+      "slot_count": 7,
+      "n_paragraphs": 6,
+      "n_tokens": 614,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2108,
+      "slot_middles": [
+        "ecth",
+        "eeod",
+        "eeeo",
+        "keeod",
+        "ox",
+        "kech",
+        "kec"
+      ]
+    },
+    "f111v": {
+      "slot_count": 1,
+      "n_paragraphs": 7,
+      "n_tokens": 561,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2455,
+      "slot_middles": [
+        "ll"
+      ]
+    },
+    "f112r": {
+      "slot_count": 1,
+      "n_paragraphs": 10,
+      "n_tokens": 394,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2377,
+      "slot_middles": [
+        "q"
+      ]
+    },
+    "f112v": {
+      "slot_count": 0,
+      "n_paragraphs": 13,
+      "n_tokens": 415,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2124,
+      "slot_middles": []
+    },
+    "f113r": {
+      "slot_count": 4,
+      "n_paragraphs": 16,
+      "n_tokens": 518,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2154,
+      "slot_middles": [
+        "os",
+        "okc",
+        "rai",
+        "ock"
+      ]
+    },
+    "f113v": {
+      "slot_count": 2,
+      "n_paragraphs": 15,
+      "n_tokens": 479,
+      "regime": "REGIME_2",
+      "k_ratio": 0.25,
+      "slot_middles": [
+        "alch",
+        "eee"
+      ]
+    },
+    "f114r": {
+      "slot_count": 3,
+      "n_paragraphs": 11,
+      "n_tokens": 442,
+      "regime": "REGIME_1",
+      "k_ratio": 0.1707,
+      "slot_middles": [
+        "dai",
+        "opd",
+        "oe"
+      ]
+    },
+    "f114v": {
+      "slot_count": 3,
+      "n_paragraphs": 11,
+      "n_tokens": 362,
+      "regime": "REGIME_3",
+      "k_ratio": 0.135,
+      "slot_middles": [
+        "kod",
+        "to",
+        "pcheo"
+      ]
+    },
+    "f115r": {
+      "slot_count": 2,
+      "n_paragraphs": 13,
+      "n_tokens": 444,
+      "regime": "REGIME_3",
+      "k_ratio": 0.1662,
+      "slot_middles": [
+        "tc",
+        "eoct"
+      ]
+    },
+    "f115v": {
+      "slot_count": 2,
+      "n_paragraphs": 13,
+      "n_tokens": 399,
+      "regime": "REGIME_2",
+      "k_ratio": 0.1914,
+      "slot_middles": [
+        "tc",
+        "kec"
+      ]
+    },
+    "f116r": {
+      "slot_count": 0,
+      "n_paragraphs": 6,
+      "n_tokens": 330,
+      "regime": "REGIME_3",
+      "k_ratio": 0.191,
+      "slot_middles": []
+    },
+    "f26r": {
+      "slot_count": 1,
+      "n_paragraphs": 2,
+      "n_tokens": 85,
+      "regime": "REGIME_4",
+      "k_ratio": 0.1496,
+      "slot_middles": [
+        "ecth"
+      ]
+    },
+    "f26v": {
+      "slot_count": 1,
+      "n_paragraphs": 4,
+      "n_tokens": 89,
+      "regime": "REGIME_2",
+      "k_ratio": 0.1522,
+      "slot_middles": [
+        "eeeo"
+      ]
+    },
+    "f31r": {
+      "slot_count": 0,
+      "n_paragraphs": 3,
+      "n_tokens": 98,
+      "regime": "REGIME_3",
+      "k_ratio": 0.2249,
+      "slot_middles": []
+    },
+    "f31v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 108,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2278,
+      "slot_middles": []
+    },
+    "f33r": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 72,
+      "regime": "REGIME_3",
+      "k_ratio": 0.3077,
+      "slot_middles": []
+    },
+    "f33v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 109,
+      "regime": "REGIME_3",
+      "k_ratio": 0.3483,
+      "slot_middles": []
+    },
+    "f34r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 144,
+      "regime": "REGIME_4",
+      "k_ratio": 0.25,
+      "slot_middles": []
+    },
+    "f34v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 115,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2468,
+      "slot_middles": []
+    },
+    "f39r": {
+      "slot_count": 0,
+      "n_paragraphs": 3,
+      "n_tokens": 149,
+      "regime": "REGIME_3",
+      "k_ratio": 0.2204,
+      "slot_middles": []
+    },
+    "f39v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 142,
+      "regime": "REGIME_4",
+      "k_ratio": 0.4031,
+      "slot_middles": []
+    },
+    "f40r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 97,
+      "regime": "REGIME_4",
+      "k_ratio": 0.4783,
+      "slot_middles": []
+    },
+    "f40v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 102,
+      "regime": "REGIME_4",
+      "k_ratio": 0.3652,
+      "slot_middles": []
+    },
+    "f41r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 97,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2538,
+      "slot_middles": []
+    },
+    "f41v": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 67,
+      "regime": "REGIME_4",
+      "k_ratio": 0.26,
+      "slot_middles": []
+    },
+    "f43r": {
+      "slot_count": 1,
+      "n_paragraphs": 3,
+      "n_tokens": 150,
+      "regime": "REGIME_4",
+      "k_ratio": 0.1953,
+      "slot_middles": [
+        "ckhh"
+      ]
+    },
+    "f43v": {
+      "slot_count": 1,
+      "n_paragraphs": 3,
+      "n_tokens": 153,
+      "regime": "REGIME_4",
+      "k_ratio": 0.1914,
+      "slot_middles": [
+        "oct"
+      ]
+    },
+    "f46r": {
+      "slot_count": 0,
+      "n_paragraphs": 4,
+      "n_tokens": 157,
+      "regime": "REGIME_3",
+      "k_ratio": 0.2035,
+      "slot_middles": []
+    },
+    "f46v": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 111,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2045,
+      "slot_middles": []
+    },
+    "f48r": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 89,
+      "regime": "REGIME_2",
+      "k_ratio": 0.2114,
+      "slot_middles": []
+    },
+    "f48v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 126,
+      "regime": "REGIME_2",
+      "k_ratio": 0.1837,
+      "slot_middles": []
+    },
+    "f50r": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 89,
+      "regime": "REGIME_4",
+      "k_ratio": 0.4167,
+      "slot_middles": []
+    },
+    "f50v": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 98,
+      "regime": "REGIME_4",
+      "k_ratio": 0.3615,
+      "slot_middles": []
+    },
+    "f55r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 124,
+      "regime": "REGIME_4",
+      "k_ratio": 0.4322,
+      "slot_middles": []
+    },
+    "f55v": {
+      "slot_count": 1,
+      "n_paragraphs": 2,
+      "n_tokens": 104,
+      "regime": "REGIME_4",
+      "k_ratio": 0.4021,
+      "slot_middles": [
+        "ak"
+      ]
+    },
+    "f57r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 87,
+      "regime": "REGIME_4",
+      "k_ratio": 0.1634,
+      "slot_middles": []
+    },
+    "f66v": {
+      "slot_count": 0,
+      "n_paragraphs": 3,
+      "n_tokens": 113,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2791,
+      "slot_middles": []
+    },
+    "f75r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 412,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2862,
+      "slot_middles": []
+    },
+    "f75v": {
+      "slot_count": 0,
+      "n_paragraphs": 5,
+      "n_tokens": 334,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2748,
+      "slot_middles": []
+    },
+    "f76v": {
+      "slot_count": 0,
+      "n_paragraphs": 6,
+      "n_tokens": 400,
+      "regime": "REGIME_1",
+      "k_ratio": 0.1589,
+      "slot_middles": []
+    },
+    "f77r": {
+      "slot_count": 0,
+      "n_paragraphs": 3,
+      "n_tokens": 315,
+      "regime": "REGIME_3",
+      "k_ratio": 0.1624,
+      "slot_middles": []
+    },
+    "f77v": {
+      "slot_count": 1,
+      "n_paragraphs": 3,
+      "n_tokens": 325,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2174,
+      "slot_middles": [
+        "q"
+      ]
+    },
+    "f78r": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 287,
+      "regime": "REGIME_1",
+      "k_ratio": 0.3217,
+      "slot_middles": []
+    },
+    "f78v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 292,
+      "regime": "REGIME_1",
+      "k_ratio": 0.228,
+      "slot_middles": []
+    },
+    "f79r": {
+      "slot_count": 2,
+      "n_paragraphs": 8,
+      "n_tokens": 389,
+      "regime": "REGIME_1",
+      "k_ratio": 0.1841,
+      "slot_middles": [
+        "oik",
+        "lke"
+      ]
+    },
+    "f79v": {
+      "slot_count": 1,
+      "n_paragraphs": 7,
+      "n_tokens": 354,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2683,
+      "slot_middles": [
+        "ofch"
+      ]
+    },
+    "f80r": {
+      "slot_count": 2,
+      "n_paragraphs": 6,
+      "n_tokens": 431,
+      "regime": "REGIME_1",
+      "k_ratio": 0.3,
+      "slot_middles": [
+        "epch",
+        "eyk"
+      ]
+    },
+    "f80v": {
+      "slot_count": 2,
+      "n_paragraphs": 8,
+      "n_tokens": 378,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2877,
+      "slot_middles": [
+        "lsh",
+        "psh"
+      ]
+    },
+    "f81r": {
+      "slot_count": 0,
+      "n_paragraphs": 3,
+      "n_tokens": 207,
+      "regime": "REGIME_3",
+      "k_ratio": 0.1603,
+      "slot_middles": []
+    },
+    "f81v": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 256,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2814,
+      "slot_middles": []
+    },
+    "f82r": {
+      "slot_count": 0,
+      "n_paragraphs": 4,
+      "n_tokens": 275,
+      "regime": "REGIME_1",
+      "k_ratio": 0.1996,
+      "slot_middles": []
+    },
+    "f82v": {
+      "slot_count": 0,
+      "n_paragraphs": 6,
+      "n_tokens": 298,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2736,
+      "slot_middles": []
+    },
+    "f83r": {
+      "slot_count": 1,
+      "n_paragraphs": 4,
+      "n_tokens": 309,
+      "regime": "REGIME_1",
+      "k_ratio": 0.1921,
+      "slot_middles": [
+        "lke"
+      ]
+    },
+    "f83v": {
+      "slot_count": 4,
+      "n_paragraphs": 3,
+      "n_tokens": 259,
+      "regime": "REGIME_3",
+      "k_ratio": 0.2205,
+      "slot_middles": [
+        "eda",
+        "lke",
+        "eolk",
+        "lsh"
+      ]
+    },
+    "f84r": {
+      "slot_count": 0,
+      "n_paragraphs": 5,
+      "n_tokens": 346,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2414,
+      "slot_middles": []
+    },
+    "f84v": {
+      "slot_count": 1,
+      "n_paragraphs": 2,
+      "n_tokens": 328,
+      "regime": "REGIME_1",
+      "k_ratio": 0.2884,
+      "slot_middles": [
+        "lke"
+      ]
+    },
+    "f85r1": {
+      "slot_count": 1,
+      "n_paragraphs": 9,
+      "n_tokens": 328,
+      "regime": "REGIME_4",
+      "k_ratio": 0.1798,
+      "slot_middles": [
+        "ofch"
+      ]
+    },
+    "f85r2": {
+      "slot_count": 0,
+      "n_paragraphs": 4,
+      "n_tokens": 106,
+      "regime": "REGIME_4",
+      "k_ratio": 0.1504,
+      "slot_middles": []
+    },
+    "f86v3": {
+      "slot_count": 1,
+      "n_paragraphs": 5,
+      "n_tokens": 217,
+      "regime": "REGIME_2",
+      "k_ratio": 0.1268,
+      "slot_middles": [
+        "ii"
+      ]
+    },
+    "f86v4": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 44,
+      "regime": "REGIME_3",
+      "k_ratio": 0.25,
+      "slot_middles": []
+    },
+    "f86v5": {
+      "slot_count": 2,
+      "n_paragraphs": 5,
+      "n_tokens": 376,
+      "regime": "REGIME_2",
+      "k_ratio": 0.2667,
+      "slot_middles": [
+        "octh",
+        "im"
+      ]
+    },
+    "f86v6": {
+      "slot_count": 3,
+      "n_paragraphs": 4,
+      "n_tokens": 479,
+      "regime": "REGIME_4",
+      "k_ratio": 0.312,
+      "slot_middles": [
+        "pc",
+        "iro",
+        "oct"
+      ]
+    },
+    "f94r": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 79,
+      "regime": "REGIME_4",
+      "k_ratio": 0.3924,
+      "slot_middles": []
+    },
+    "f94v": {
+      "slot_count": 0,
+      "n_paragraphs": 3,
+      "n_tokens": 101,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2155,
+      "slot_middles": []
+    },
+    "f95r1": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 103,
+      "regime": "REGIME_3",
+      "k_ratio": 0.3359,
+      "slot_middles": []
+    },
+    "f95r2": {
+      "slot_count": 0,
+      "n_paragraphs": 2,
+      "n_tokens": 79,
+      "regime": "REGIME_3",
+      "k_ratio": 0.358,
+      "slot_middles": []
+    },
+    "f95v1": {
+      "slot_count": 0,
+      "n_paragraphs": 4,
+      "n_tokens": 117,
+      "regime": "REGIME_4",
+      "k_ratio": 0.2534,
+      "slot_middles": []
+    },
+    "f95v2": {
+      "slot_count": 0,
+      "n_paragraphs": 1,
+      "n_tokens": 64,
+      "regime": "REGIME_4",
+      "k_ratio": 0.3958,
+      "slot_middles": []
+    }
+  },
+  "verdict": "NOT_SUPPORTED",
+  "notes": "Mean slot count=1.01, median=0, range=[0-7]; 15.0% folios in 3-8 range; KW H=15.453 p=0.0015; Spearman(slot,k_ratio) rho=-0.2868 p=0.0099; Spearman(slot,h_ratio) rho=-0.0550 p=0.6280; Brunschwig parts range=(0, 6)"
+}

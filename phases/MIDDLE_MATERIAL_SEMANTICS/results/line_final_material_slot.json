@@ -1,0 +1,58 @@
+{
+  "test": "Line-Final Material Slot",
+  "n_line_final": 2554,
+  "n_line_other": 20542,
+  "rare_rate_final": 0.1778,
+  "rare_rate_other": 0.1057,
+  "rare_odds_ratio": 1.8285,
+  "rare_chi_square": 116.2265,
+  "rare_p_value": 0.0,
+  "unique_rate_final": 0.076,
+  "unique_rate_other": 0.0314,
+  "unique_odds_ratio": 2.5318,
+  "unique_chi_square": 127.149,
+  "unique_p_value": 0.0,
+  "line_length_controlled": {
+    "short": {
+      "n_final": 115,
+      "n_other": 278,
+      "rare_or": 1.8185,
+      "rare_p": 0.066479,
+      "unique_or": 3.0936,
+      "unique_p": 0.011213
+    },
+    "medium": {
+      "n_final": 628,
+      "n_other": 3552,
+      "rare_or": 1.85,
+      "rare_p": 1e-06,
+      "unique_or": 3.1823,
+      "unique_p": 0.0
+    },
+    "long": {
+      "n_final": 1811,
+      "n_other": 16712,
+      "rare_or": 1.8425,
+      "rare_p": 0.0,
+      "unique_or": 2.2787,
+      "unique_p": 0.0
+    }
+  },
+  "suffix_confound": {
+    "line_final_suffix_rate_rare": 0.3811,
+    "line_final_suffix_rate_all": 0.2181,
+    "suffix_explains": true
+  },
+  "zone_distribution": {
+    "setup_pct": 16.1,
+    "process_pct": 68.7,
+    "finish_pct": 15.2
+  },
+  "zone_baseline": {
+    "setup_pct": 21.3,
+    "process_pct": 63.3,
+    "finish_pct": 15.4
+  },
+  "verdict": "NOT_SUPPORTED",
+  "notes": "Rare OR=1.8285, p=0.0; Unique OR=2.5318, p=0.0; Length-controlled signal survives in: medium, long; Suffix confound: line-final suffixes explain rare MIDDLE enrichment"
+}
