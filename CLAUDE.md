@@ -217,12 +217,16 @@ context/
 
 ---
 
+## Change History
+
+The authoritative changelog is `context/SYSTEM/CHANGELOG.md` (covers v1.0 through v3.10+).
+
 ## Legacy Documentation
 
 | File | Purpose |
 |------|---------|
 | `archive/CLAUDE_full_2026-01-06.md` | Full verbose version |
-| `REVISION_LOG.md` | Change history |
+| `archive/REVISION_LOG.md` | Early change history (v1.0-v1.9, 352 constraints) |
 | `MODEL_SCOPE.md` | Scope boundaries |
 
 ---
