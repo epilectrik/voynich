@@ -150,6 +150,10 @@ voynich/
 | 3 | SPECULATIVE — interpretive layer | ~150 |
 | 4 | EXPLORATORY — idea generation only | ~60 |
 
+## Methodology
+
+This project was built using AI-assisted computational analysis. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), which wrote the analysis scripts, maintained the constraint system, and performed statistical validation. GPT-5 (OpenAI) provided independent cross-validation and alternative analytical perspectives at key decision points. All claims are grounded in statistical evidence from the transcript data — no result depends on AI intuition or pattern-matching alone.
+
 ## Data Source
 
 Transcript: EVA (Extensible Voynich Alphabet) interlinear format, H transcriber track (primary). 37,957 tokens across 225 folios.
