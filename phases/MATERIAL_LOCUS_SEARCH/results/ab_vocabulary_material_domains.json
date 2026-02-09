@@ -1,0 +1,2289 @@
+{
+  "test": "ab_vocabulary_material_domains",
+  "phase": "MATERIAL_LOCUS_SEARCH",
+  "question": "Do A folios specialize in covering specific B sections?",
+  "method": {
+    "description": "Jaccard similarity of A folio MIDDLE vocabulary against each B section vocabulary, then cluster A folios by reach vectors",
+    "scope": "Currier A folios vs Currier B sections",
+    "n_a_folios": 114,
+    "n_a_folios_valid": 114,
+    "min_token_threshold": 10,
+    "b_sections": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "b_section_vocabulary_sizes": {
+      "B": 396,
+      "C": 232,
+      "H": 406,
+      "S": 851,
+      "T": 168
+    },
+    "b_section_token_counts": {
+      "B": 6850,
+      "C": 1480,
+      "H": 3433,
+      "S": 10671,
+      "T": 662
+    },
+    "b_section_folio_counts": {
+      "B": 20,
+      "C": 5,
+      "H": 32,
+      "S": 23,
+      "T": 2
+    },
+    "distance_metric": "euclidean (on reach vectors)",
+    "linkage_method": "ward",
+    "k_values_tested": [
+      3,
+      4,
+      5
+    ],
+    "primary_k": 3,
+    "n_permutations": 1000
+  },
+  "reach_summary": {
+    "per_section": {
+      "B": {
+        "mean": 0.0771,
+        "std": 0.0188,
+        "min": 0.0469,
+        "max": 0.1585
+      },
+      "C": {
+        "mean": 0.1253,
+        "std": 0.0263,
+        "min": 0.07,
+        "max": 0.2153
+      },
+      "H": {
+        "mean": 0.0796,
+        "std": 0.019,
+        "min": 0.0483,
+        "max": 0.1558
+      },
+      "S": {
+        "mean": 0.042,
+        "std": 0.0116,
+        "min": 0.0233,
+        "max": 0.0963
+      },
+      "T": {
+        "mean": 0.1502,
+        "std": 0.0339,
+        "min": 0.0761,
+        "max": 0.2629
+      }
+    },
+    "pairwise_reach_cosine": {
+      "mean": 0.9971,
+      "std": 0.0031,
+      "min": 0.9714,
+      "max": 1.0
+    }
+  },
+  "dominant_section_analysis": {
+    "distribution": {
+      "T": 108,
+      "C": 6
+    },
+    "per_folio": {
+      "f100r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0694,
+          "C": 0.1142,
+          "H": 0.0804,
+          "S": 0.044,
+          "T": 0.1406
+        },
+        "n_tokens": 92,
+        "entropy": 2.2166,
+        "specialization_index": 1.568
+      },
+      "f100v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0887,
+          "C": 0.1417,
+          "H": 0.1021,
+          "S": 0.0533,
+          "T": 0.1649
+        },
+        "n_tokens": 91,
+        "entropy": 2.226,
+        "specialization_index": 1.497
+      },
+      "f101r1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1114,
+          "C": 0.166,
+          "H": 0.1114,
+          "S": 0.0603,
+          "T": 0.2094
+        },
+        "n_tokens": 208,
+        "entropy": 2.2099,
+        "specialization_index": 1.59
+      },
+      "f101v2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0965,
+          "C": 0.1571,
+          "H": 0.1096,
+          "S": 0.0611,
+          "T": 0.2081
+        },
+        "n_tokens": 192,
+        "entropy": 2.2045,
+        "specialization_index": 1.646
+      },
+      "f102r1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0983,
+          "C": 0.1457,
+          "H": 0.0959,
+          "S": 0.0513,
+          "T": 0.1967
+        },
+        "n_tokens": 105,
+        "entropy": 2.1924,
+        "specialization_index": 1.673
+      },
+      "f102r2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0745,
+          "C": 0.1275,
+          "H": 0.0778,
+          "S": 0.0428,
+          "T": 0.1587
+        },
+        "n_tokens": 131,
+        "entropy": 2.1875,
+        "specialization_index": 1.649
+      },
+      "f102v1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0864,
+          "C": 0.1358,
+          "H": 0.087,
+          "S": 0.0468,
+          "T": 0.1844
+        },
+        "n_tokens": 117,
+        "entropy": 2.1828,
+        "specialization_index": 1.706
+      },
+      "f102v2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0976,
+          "C": 0.1626,
+          "H": 0.0952,
+          "S": 0.0523,
+          "T": 0.1935
+        },
+        "n_tokens": 163,
+        "entropy": 2.1899,
+        "specialization_index": 1.609
+      },
+      "f10r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.076,
+          "C": 0.1411,
+          "H": 0.0872,
+          "S": 0.042,
+          "T": 0.153
+        },
+        "n_tokens": 92,
+        "entropy": 2.1914,
+        "specialization_index": 1.533
+      },
+      "f10v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0628,
+          "C": 0.1068,
+          "H": 0.0587,
+          "S": 0.0293,
+          "T": 0.1272
+        },
+        "n_tokens": 53,
+        "entropy": 2.1647,
+        "specialization_index": 1.652
+      },
+      "f11r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0498,
+          "C": 0.0932,
+          "H": 0.0511,
+          "S": 0.0257,
+          "T": 0.1023
+        },
+        "n_tokens": 57,
+        "entropy": 2.1721,
+        "specialization_index": 1.588
+      },
+      "f11v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0625,
+          "C": 0.1013,
+          "H": 0.0636,
+          "S": 0.0304,
+          "T": 0.113
+        },
+        "n_tokens": 47,
+        "entropy": 2.1991,
+        "specialization_index": 1.524
+      },
+      "f13r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0616,
+          "C": 0.1033,
+          "H": 0.0576,
+          "S": 0.0326,
+          "T": 0.1154
+        },
+        "n_tokens": 78,
+        "entropy": 2.1943,
+        "specialization_index": 1.557
+      },
+      "f13v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0594,
+          "C": 0.1046,
+          "H": 0.0631,
+          "S": 0.0327,
+          "T": 0.1236
+        },
+        "n_tokens": 67,
+        "entropy": 2.1861,
+        "specialization_index": 1.612
+      },
+      "f14r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0875,
+          "C": 0.1245,
+          "H": 0.0775,
+          "S": 0.0422,
+          "T": 0.1629
+        },
+        "n_tokens": 77,
+        "entropy": 2.1926,
+        "specialization_index": 1.647
+      },
+      "f14v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0613,
+          "C": 0.0935,
+          "H": 0.0598,
+          "S": 0.0302,
+          "T": 0.1081
+        },
+        "n_tokens": 68,
+        "entropy": 2.2065,
+        "specialization_index": 1.532
+      },
+      "f15r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0848,
+          "C": 0.1387,
+          "H": 0.0827,
+          "S": 0.0422,
+          "T": 0.15
+        },
+        "n_tokens": 92,
+        "entropy": 2.2012,
+        "specialization_index": 1.505
+      },
+      "f15v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0551,
+          "C": 0.0936,
+          "H": 0.0512,
+          "S": 0.0258,
+          "T": 0.1092
+        },
+        "n_tokens": 70,
+        "entropy": 2.1686,
+        "specialization_index": 1.63
+      },
+      "f16r": {
+        "dominant_section": "C",
+        "reach_profile": {
+          "B": 0.0756,
+          "C": 0.1352,
+          "H": 0.0764,
+          "S": 0.0419,
+          "T": 0.133
+        },
+        "n_tokens": 77,
+        "entropy": 2.2064,
+        "specialization_index": 1.463
+      },
+      "f16v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0695,
+          "C": 0.1172,
+          "H": 0.073,
+          "S": 0.0338,
+          "T": 0.1278
+        },
+        "n_tokens": 73,
+        "entropy": 2.1948,
+        "specialization_index": 1.517
+      },
+      "f17r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0633,
+          "C": 0.0964,
+          "H": 0.0643,
+          "S": 0.036,
+          "T": 0.1176
+        },
+        "n_tokens": 72,
+        "entropy": 2.217,
+        "specialization_index": 1.558
+      },
+      "f17v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0958,
+          "C": 0.1371,
+          "H": 0.0988,
+          "S": 0.0538,
+          "T": 0.1848
+        },
+        "n_tokens": 134,
+        "entropy": 2.213,
+        "specialization_index": 1.62
+      },
+      "f18r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.079,
+          "C": 0.1328,
+          "H": 0.0797,
+          "S": 0.0396,
+          "T": 0.1484
+        },
+        "n_tokens": 83,
+        "entropy": 2.1929,
+        "specialization_index": 1.547
+      },
+      "f18v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.072,
+          "C": 0.1261,
+          "H": 0.0754,
+          "S": 0.0386,
+          "T": 0.1525
+        },
+        "n_tokens": 71,
+        "entropy": 2.1791,
+        "specialization_index": 1.642
+      },
+      "f19r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0469,
+          "C": 0.07,
+          "H": 0.0483,
+          "S": 0.0233,
+          "T": 0.0829
+        },
+        "n_tokens": 76,
+        "entropy": 2.2118,
+        "specialization_index": 1.527
+      },
+      "f19v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.062,
+          "C": 0.1,
+          "H": 0.0631,
+          "S": 0.0327,
+          "T": 0.1111
+        },
+        "n_tokens": 77,
+        "entropy": 2.2102,
+        "specialization_index": 1.506
+      },
+      "f1r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1077,
+          "C": 0.1617,
+          "H": 0.1078,
+          "S": 0.0618,
+          "T": 0.1951
+        },
+        "n_tokens": 202,
+        "entropy": 2.2223,
+        "specialization_index": 1.539
+      },
+      "f1v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0762,
+          "C": 0.1093,
+          "H": 0.09,
+          "S": 0.0444,
+          "T": 0.1413
+        },
+        "n_tokens": 90,
+        "entropy": 2.2295,
+        "specialization_index": 1.532
+      },
+      "f20r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0758,
+          "C": 0.1265,
+          "H": 0.0766,
+          "S": 0.0443,
+          "T": 0.1398
+        },
+        "n_tokens": 85,
+        "entropy": 2.2139,
+        "specialization_index": 1.51
+      },
+      "f20v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0767,
+          "C": 0.1292,
+          "H": 0.0801,
+          "S": 0.0409,
+          "T": 0.15
+        },
+        "n_tokens": 89,
+        "entropy": 2.1957,
+        "specialization_index": 1.573
+      },
+      "f21r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0709,
+          "C": 0.1138,
+          "H": 0.0718,
+          "S": 0.036,
+          "T": 0.117
+        },
+        "n_tokens": 95,
+        "entropy": 2.2164,
+        "specialization_index": 1.429
+      },
+      "f21v": {
+        "dominant_section": "C",
+        "reach_profile": {
+          "B": 0.0493,
+          "C": 0.0782,
+          "H": 0.0531,
+          "S": 0.0268,
+          "T": 0.0761
+        },
+        "n_tokens": 56,
+        "entropy": 2.2351,
+        "specialization_index": 1.379
+      },
+      "f22r": {
+        "dominant_section": "C",
+        "reach_profile": {
+          "B": 0.0728,
+          "C": 0.1347,
+          "H": 0.0762,
+          "S": 0.0394,
+          "T": 0.1323
+        },
+        "n_tokens": 106,
+        "entropy": 2.1978,
+        "specialization_index": 1.479
+      },
+      "f22v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0697,
+          "C": 0.1176,
+          "H": 0.068,
+          "S": 0.0351,
+          "T": 0.1412
+        },
+        "n_tokens": 75,
+        "entropy": 2.1775,
+        "specialization_index": 1.636
+      },
+      "f23r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0733,
+          "C": 0.127,
+          "H": 0.0793,
+          "S": 0.042,
+          "T": 0.1657
+        },
+        "n_tokens": 106,
+        "entropy": 2.1768,
+        "specialization_index": 1.7
+      },
+      "f23v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0709,
+          "C": 0.1184,
+          "H": 0.0743,
+          "S": 0.0396,
+          "T": 0.1602
+        },
+        "n_tokens": 89,
+        "entropy": 2.1738,
+        "specialization_index": 1.729
+      },
+      "f24r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0909,
+          "C": 0.1382,
+          "H": 0.0913,
+          "S": 0.0466,
+          "T": 0.1803
+        },
+        "n_tokens": 106,
+        "entropy": 2.1928,
+        "specialization_index": 1.647
+      },
+      "f24v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0751,
+          "C": 0.1336,
+          "H": 0.081,
+          "S": 0.0417,
+          "T": 0.1368
+        },
+        "n_tokens": 80,
+        "entropy": 2.207,
+        "specialization_index": 1.461
+      },
+      "f25r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0619,
+          "C": 0.1042,
+          "H": 0.0681,
+          "S": 0.0351,
+          "T": 0.1229
+        },
+        "n_tokens": 48,
+        "entropy": 2.2033,
+        "specialization_index": 1.567
+      },
+      "f25v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0545,
+          "C": 0.0871,
+          "H": 0.0583,
+          "S": 0.0316,
+          "T": 0.1314
+        },
+        "n_tokens": 57,
+        "entropy": 2.1659,
+        "specialization_index": 1.811
+      },
+      "f27r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.072,
+          "C": 0.1261,
+          "H": 0.0728,
+          "S": 0.035,
+          "T": 0.1657
+        },
+        "n_tokens": 91,
+        "entropy": 2.1476,
+        "specialization_index": 1.757
+      },
+      "f27v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0489,
+          "C": 0.0772,
+          "H": 0.0528,
+          "S": 0.0291,
+          "T": 0.1105
+        },
+        "n_tokens": 58,
+        "entropy": 2.1857,
+        "specialization_index": 1.735
+      },
+      "f28r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0569,
+          "C": 0.0958,
+          "H": 0.0633,
+          "S": 0.0304,
+          "T": 0.1243
+        },
+        "n_tokens": 67,
+        "entropy": 2.1793,
+        "specialization_index": 1.677
+      },
+      "f28v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0702,
+          "C": 0.105,
+          "H": 0.0633,
+          "S": 0.0352,
+          "T": 0.1243
+        },
+        "n_tokens": 68,
+        "entropy": 2.2043,
+        "specialization_index": 1.562
+      },
+      "f29r": {
+        "dominant_section": "C",
+        "reach_profile": {
+          "B": 0.0619,
+          "C": 0.1134,
+          "H": 0.0681,
+          "S": 0.0351,
+          "T": 0.1105
+        },
+        "n_tokens": 65,
+        "entropy": 2.2094,
+        "specialization_index": 1.458
+      },
+      "f29v": {
+        "dominant_section": "C",
+        "reach_profile": {
+          "B": 0.0786,
+          "C": 0.1364,
+          "H": 0.0819,
+          "S": 0.0407,
+          "T": 0.1344
+        },
+        "n_tokens": 95,
+        "entropy": 2.2078,
+        "specialization_index": 1.444
+      },
+      "f2r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0837,
+          "C": 0.1358,
+          "H": 0.0817,
+          "S": 0.0419,
+          "T": 0.1459
+        },
+        "n_tokens": 99,
+        "entropy": 2.2049,
+        "specialization_index": 1.492
+      },
+      "f2v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0599,
+          "C": 0.0921,
+          "H": 0.061,
+          "S": 0.0304,
+          "T": 0.1067
+        },
+        "n_tokens": 61,
+        "entropy": 2.2105,
+        "specialization_index": 1.525
+      },
+      "f30r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.076,
+          "C": 0.1411,
+          "H": 0.0793,
+          "S": 0.0432,
+          "T": 0.1657
+        },
+        "n_tokens": 95,
+        "entropy": 2.175,
+        "specialization_index": 1.64
+      },
+      "f30v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0637,
+          "C": 0.0976,
+          "H": 0.0673,
+          "S": 0.0361,
+          "T": 0.1196
+        },
+        "n_tokens": 63,
+        "entropy": 2.217,
+        "specialization_index": 1.556
+      },
+      "f32r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0794,
+          "C": 0.1339,
+          "H": 0.0801,
+          "S": 0.0385,
+          "T": 0.1564
+        },
+        "n_tokens": 77,
+        "entropy": 2.1808,
+        "specialization_index": 1.602
+      },
+      "f32v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0693,
+          "C": 0.112,
+          "H": 0.0702,
+          "S": 0.0399,
+          "T": 0.1397
+        },
+        "n_tokens": 85,
+        "entropy": 2.2,
+        "specialization_index": 1.62
+      },
+      "f35r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0846,
+          "C": 0.1429,
+          "H": 0.0852,
+          "S": 0.0409,
+          "T": 0.162
+        },
+        "n_tokens": 92,
+        "entropy": 2.1849,
+        "specialization_index": 1.571
+      },
+      "f35v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0868,
+          "C": 0.1322,
+          "H": 0.0874,
+          "S": 0.0444,
+          "T": 0.1667
+        },
+        "n_tokens": 87,
+        "entropy": 2.1989,
+        "specialization_index": 1.61
+      },
+      "f36r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.072,
+          "C": 0.1029,
+          "H": 0.0728,
+          "S": 0.0362,
+          "T": 0.1209
+        },
+        "n_tokens": 62,
+        "entropy": 2.2228,
+        "specialization_index": 1.493
+      },
+      "f36v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0642,
+          "C": 0.1079,
+          "H": 0.0652,
+          "S": 0.0314,
+          "T": 0.1341
+        },
+        "n_tokens": 71,
+        "entropy": 2.172,
+        "specialization_index": 1.664
+      },
+      "f37r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0697,
+          "C": 0.113,
+          "H": 0.0706,
+          "S": 0.0375,
+          "T": 0.1543
+        },
+        "n_tokens": 77,
+        "entropy": 2.1729,
+        "specialization_index": 1.734
+      },
+      "f37v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0657,
+          "C": 0.1138,
+          "H": 0.0641,
+          "S": 0.0348,
+          "T": 0.1475
+        },
+        "n_tokens": 88,
+        "entropy": 2.1608,
+        "specialization_index": 1.732
+      },
+      "f38r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0525,
+          "C": 0.0798,
+          "H": 0.0487,
+          "S": 0.0258,
+          "T": 0.1092
+        },
+        "n_tokens": 41,
+        "entropy": 2.172,
+        "specialization_index": 1.728
+      },
+      "f38v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0655,
+          "C": 0.1116,
+          "H": 0.0639,
+          "S": 0.0317,
+          "T": 0.1471
+        },
+        "n_tokens": 65,
+        "entropy": 2.1514,
+        "specialization_index": 1.752
+      },
+      "f3r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0862,
+          "C": 0.1542,
+          "H": 0.092,
+          "S": 0.0443,
+          "T": 0.1639
+        },
+        "n_tokens": 114,
+        "entropy": 2.1911,
+        "specialization_index": 1.516
+      },
+      "f3v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0941,
+          "C": 0.1632,
+          "H": 0.1051,
+          "S": 0.0491,
+          "T": 0.1955
+        },
+        "n_tokens": 83,
+        "entropy": 2.1844,
+        "specialization_index": 1.611
+      },
+      "f42r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.101,
+          "C": 0.1646,
+          "H": 0.0986,
+          "S": 0.0537,
+          "T": 0.2099
+        },
+        "n_tokens": 140,
+        "entropy": 2.1818,
+        "specialization_index": 1.672
+      },
+      "f42v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0911,
+          "C": 0.1388,
+          "H": 0.0916,
+          "S": 0.0478,
+          "T": 0.1497
+        },
+        "n_tokens": 113,
+        "entropy": 2.2255,
+        "specialization_index": 1.442
+      },
+      "f44r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0702,
+          "C": 0.1032,
+          "H": 0.066,
+          "S": 0.0358,
+          "T": 0.1204
+        },
+        "n_tokens": 75,
+        "entropy": 2.2154,
+        "specialization_index": 1.522
+      },
+      "f44v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0898,
+          "C": 0.1375,
+          "H": 0.0823,
+          "S": 0.0433,
+          "T": 0.1611
+        },
+        "n_tokens": 96,
+        "entropy": 2.197,
+        "specialization_index": 1.567
+      },
+      "f45r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.085,
+          "C": 0.1345,
+          "H": 0.0829,
+          "S": 0.041,
+          "T": 0.1705
+        },
+        "n_tokens": 86,
+        "entropy": 2.1793,
+        "specialization_index": 1.659
+      },
+      "f45v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0769,
+          "C": 0.125,
+          "H": 0.0777,
+          "S": 0.0434,
+          "T": 0.1444
+        },
+        "n_tokens": 87,
+        "entropy": 2.2095,
+        "specialization_index": 1.545
+      },
+      "f47r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0622,
+          "C": 0.1097,
+          "H": 0.0659,
+          "S": 0.034,
+          "T": 0.1243
+        },
+        "n_tokens": 79,
+        "entropy": 2.1916,
+        "specialization_index": 1.569
+      },
+      "f47v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0741,
+          "C": 0.1292,
+          "H": 0.0827,
+          "S": 0.0409,
+          "T": 0.1374
+        },
+        "n_tokens": 85,
+        "entropy": 2.2082,
+        "specialization_index": 1.479
+      },
+      "f49r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0858,
+          "C": 0.1205,
+          "H": 0.0837,
+          "S": 0.0491,
+          "T": 0.1497
+        },
+        "n_tokens": 114,
+        "entropy": 2.2304,
+        "specialization_index": 1.532
+      },
+      "f49v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0969,
+          "C": 0.1628,
+          "H": 0.1101,
+          "S": 0.0551,
+          "T": 0.1859
+        },
+        "n_tokens": 142,
+        "entropy": 2.2108,
+        "specialization_index": 1.522
+      },
+      "f4r": {
+        "dominant_section": "C",
+        "reach_profile": {
+          "B": 0.0571,
+          "C": 0.0962,
+          "H": 0.0557,
+          "S": 0.0268,
+          "T": 0.0939
+        },
+        "n_tokens": 64,
+        "entropy": 2.2003,
+        "specialization_index": 1.459
+      },
+      "f4v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.076,
+          "C": 0.127,
+          "H": 0.0819,
+          "S": 0.0444,
+          "T": 0.1593
+        },
+        "n_tokens": 83,
+        "entropy": 2.1962,
+        "specialization_index": 1.63
+      },
+      "f51r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0726,
+          "C": 0.125,
+          "H": 0.0863,
+          "S": 0.0442,
+          "T": 0.1497
+        },
+        "n_tokens": 86,
+        "entropy": 2.2074,
+        "specialization_index": 1.567
+      },
+      "f51v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0767,
+          "C": 0.1292,
+          "H": 0.0801,
+          "S": 0.0422,
+          "T": 0.15
+        },
+        "n_tokens": 79,
+        "entropy": 2.199,
+        "specialization_index": 1.569
+      },
+      "f52r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0663,
+          "C": 0.125,
+          "H": 0.0803,
+          "S": 0.0386,
+          "T": 0.1444
+        },
+        "n_tokens": 68,
+        "entropy": 2.1865,
+        "specialization_index": 1.589
+      },
+      "f52v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0794,
+          "C": 0.1292,
+          "H": 0.0749,
+          "S": 0.0397,
+          "T": 0.15
+        },
+        "n_tokens": 75,
+        "entropy": 2.1898,
+        "specialization_index": 1.585
+      },
+      "f53r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0493,
+          "C": 0.0917,
+          "H": 0.0531,
+          "S": 0.0256,
+          "T": 0.1
+        },
+        "n_tokens": 56,
+        "entropy": 2.1791,
+        "specialization_index": 1.564
+      },
+      "f53v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0558,
+          "C": 0.0972,
+          "H": 0.0595,
+          "S": 0.0349,
+          "T": 0.107
+        },
+        "n_tokens": 75,
+        "entropy": 2.2151,
+        "specialization_index": 1.509
+      },
+      "f54r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0782,
+          "C": 0.126,
+          "H": 0.0815,
+          "S": 0.0455,
+          "T": 0.1703
+        },
+        "n_tokens": 111,
+        "entropy": 2.1881,
+        "specialization_index": 1.698
+      },
+      "f54v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0866,
+          "C": 0.1458,
+          "H": 0.0872,
+          "S": 0.0444,
+          "T": 0.1788
+        },
+        "n_tokens": 90,
+        "entropy": 2.1788,
+        "specialization_index": 1.647
+      },
+      "f56r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0688,
+          "C": 0.1061,
+          "H": 0.0697,
+          "S": 0.0349,
+          "T": 0.1189
+        },
+        "n_tokens": 99,
+        "entropy": 2.2142,
+        "specialization_index": 1.492
+      },
+      "f56v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.059,
+          "C": 0.0943,
+          "H": 0.0652,
+          "S": 0.0338,
+          "T": 0.1154
+        },
+        "n_tokens": 87,
+        "entropy": 2.211,
+        "specialization_index": 1.569
+      },
+      "f58r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1466,
+          "C": 0.1688,
+          "H": 0.1558,
+          "S": 0.0963,
+          "T": 0.2131
+        },
+        "n_tokens": 366,
+        "entropy": 2.2787,
+        "specialization_index": 1.365
+      },
+      "f58v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1585,
+          "C": 0.2153,
+          "H": 0.1419,
+          "S": 0.0892,
+          "T": 0.2629
+        },
+        "n_tokens": 365,
+        "entropy": 2.2335,
+        "specialization_index": 1.515
+      },
+      "f5r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0469,
+          "C": 0.0833,
+          "H": 0.0534,
+          "S": 0.0293,
+          "T": 0.0889
+        },
+        "n_tokens": 55,
+        "entropy": 2.2181,
+        "specialization_index": 1.473
+      },
+      "f5v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0549,
+          "C": 0.0928,
+          "H": 0.0535,
+          "S": 0.0293,
+          "T": 0.1207
+        },
+        "n_tokens": 45,
+        "entropy": 2.168,
+        "specialization_index": 1.718
+      },
+      "f6r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0716,
+          "C": 0.125,
+          "H": 0.0725,
+          "S": 0.0386,
+          "T": 0.1508
+        },
+        "n_tokens": 85,
+        "entropy": 2.1783,
+        "specialization_index": 1.645
+      },
+      "f6v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0758,
+          "C": 0.1174,
+          "H": 0.0791,
+          "S": 0.0395,
+          "T": 0.1337
+        },
+        "n_tokens": 114,
+        "entropy": 2.2156,
+        "specialization_index": 1.5
+      },
+      "f7r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0562,
+          "C": 0.0939,
+          "H": 0.0574,
+          "S": 0.0326,
+          "T": 0.1209
+        },
+        "n_tokens": 62,
+        "entropy": 2.1868,
+        "specialization_index": 1.674
+      },
+      "f7v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0733,
+          "C": 0.1317,
+          "H": 0.0742,
+          "S": 0.042,
+          "T": 0.153
+        },
+        "n_tokens": 73,
+        "entropy": 2.1846,
+        "specialization_index": 1.613
+      },
+      "f87r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0723,
+          "C": 0.1331,
+          "H": 0.0808,
+          "S": 0.0393,
+          "T": 0.1604
+        },
+        "n_tokens": 98,
+        "entropy": 2.1722,
+        "specialization_index": 1.651
+      },
+      "f87v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0925,
+          "C": 0.131,
+          "H": 0.0877,
+          "S": 0.0475,
+          "T": 0.1693
+        },
+        "n_tokens": 89,
+        "entropy": 2.2081,
+        "specialization_index": 1.604
+      },
+      "f88r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0944,
+          "C": 0.1474,
+          "H": 0.0948,
+          "S": 0.051,
+          "T": 0.1915
+        },
+        "n_tokens": 150,
+        "entropy": 2.1931,
+        "specialization_index": 1.653
+      },
+      "f88v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1021,
+          "C": 0.1719,
+          "H": 0.1179,
+          "S": 0.0637,
+          "T": 0.2165
+        },
+        "n_tokens": 146,
+        "entropy": 2.2052,
+        "specialization_index": 1.611
+      },
+      "f89r1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1106,
+          "C": 0.1686,
+          "H": 0.108,
+          "S": 0.065,
+          "T": 0.1878
+        },
+        "n_tokens": 141,
+        "entropy": 2.232,
+        "specialization_index": 1.467
+      },
+      "f89r2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1159,
+          "C": 0.155,
+          "H": 0.1106,
+          "S": 0.065,
+          "T": 0.2251
+        },
+        "n_tokens": 220,
+        "entropy": 2.2089,
+        "specialization_index": 1.676
+      },
+      "f89v1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1084,
+          "C": 0.1793,
+          "H": 0.1059,
+          "S": 0.0566,
+          "T": 0.2021
+        },
+        "n_tokens": 159,
+        "entropy": 2.198,
+        "specialization_index": 1.549
+      },
+      "f89v2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1124,
+          "C": 0.1992,
+          "H": 0.1256,
+          "S": 0.0648,
+          "T": 0.2216
+        },
+        "n_tokens": 153,
+        "entropy": 2.2027,
+        "specialization_index": 1.531
+      },
+      "f8r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0853,
+          "C": 0.1575,
+          "H": 0.0986,
+          "S": 0.0494,
+          "T": 0.1735
+        },
+        "n_tokens": 146,
+        "entropy": 2.1965,
+        "specialization_index": 1.537
+      },
+      "f8v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.079,
+          "C": 0.1189,
+          "H": 0.0771,
+          "S": 0.0396,
+          "T": 0.1611
+        },
+        "n_tokens": 119,
+        "entropy": 2.1833,
+        "specialization_index": 1.693
+      },
+      "f90r1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0835,
+          "C": 0.126,
+          "H": 0.0867,
+          "S": 0.0443,
+          "T": 0.1639
+        },
+        "n_tokens": 70,
+        "entropy": 2.2013,
+        "specialization_index": 1.625
+      },
+      "f90r2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0547,
+          "C": 0.0879,
+          "H": 0.056,
+          "S": 0.0305,
+          "T": 0.1329
+        },
+        "n_tokens": 49,
+        "entropy": 2.1556,
+        "specialization_index": 1.836
+      },
+      "f90v1": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0749,
+          "C": 0.1331,
+          "H": 0.0782,
+          "S": 0.0453,
+          "T": 0.1543
+        },
+        "n_tokens": 96,
+        "entropy": 2.1966,
+        "specialization_index": 1.588
+      },
+      "f90v2": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0695,
+          "C": 0.1033,
+          "H": 0.0704,
+          "S": 0.0338,
+          "T": 0.1278
+        },
+        "n_tokens": 69,
+        "entropy": 2.2025,
+        "specialization_index": 1.578
+      },
+      "f93r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0857,
+          "C": 0.1362,
+          "H": 0.0965,
+          "S": 0.052,
+          "T": 0.1633
+        },
+        "n_tokens": 152,
+        "entropy": 2.2227,
+        "specialization_index": 1.53
+      },
+      "f93v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0673,
+          "C": 0.12,
+          "H": 0.0784,
+          "S": 0.0429,
+          "T": 0.1551
+        },
+        "n_tokens": 87,
+        "entropy": 2.1886,
+        "specialization_index": 1.672
+      },
+      "f96r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0777,
+          "C": 0.1336,
+          "H": 0.0913,
+          "S": 0.0478,
+          "T": 0.1613
+        },
+        "n_tokens": 86,
+        "entropy": 2.2069,
+        "specialization_index": 1.576
+      },
+      "f96v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0634,
+          "C": 0.0968,
+          "H": 0.0721,
+          "S": 0.0373,
+          "T": 0.1243
+        },
+        "n_tokens": 61,
+        "entropy": 2.2171,
+        "specialization_index": 1.578
+      },
+      "f99r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1049,
+          "C": 0.1606,
+          "H": 0.1077,
+          "S": 0.0546,
+          "T": 0.2097
+        },
+        "n_tokens": 162,
+        "entropy": 2.1941,
+        "specialization_index": 1.645
+      },
+      "f99v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.1117,
+          "C": 0.1807,
+          "H": 0.1143,
+          "S": 0.0604,
+          "T": 0.2234
+        },
+        "n_tokens": 147,
+        "entropy": 2.1949,
+        "specialization_index": 1.618
+      },
+      "f9r": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0707,
+          "C": 0.127,
+          "H": 0.0716,
+          "S": 0.0395,
+          "T": 0.1344
+        },
+        "n_tokens": 84,
+        "entropy": 2.197,
+        "specialization_index": 1.516
+      },
+      "f9v": {
+        "dominant_section": "T",
+        "reach_profile": {
+          "B": 0.0764,
+          "C": 0.1328,
+          "H": 0.0797,
+          "S": 0.0396,
+          "T": 0.1547
+        },
+        "n_tokens": 84,
+        "entropy": 2.1836,
+        "specialization_index": 1.601
+      }
+    }
+  },
+  "entropy_analysis": {
+    "max_possible_entropy": 2.3219,
+    "mean_entropy": 2.1973,
+    "std_entropy": 0.0197,
+    "entropy_ratio": 0.9463,
+    "interpretation": "uniform"
+  },
+  "clustering_results": {
+    "3": {
+      "k": 3,
+      "ari_vs_dominant_section": -0.0069,
+      "silhouette": 0.5274,
+      "cluster_composition": {
+        "cluster_1": {
+          "size": 16,
+          "folios": [
+            "f101r1",
+            "f101v2",
+            "f102v2",
+            "f1r",
+            "f3v",
+            "f42r",
+            "f49v",
+            "f58r",
+            "f58v",
+            "f88v",
+            "f89r1",
+            "f89r2",
+            "f89v1",
+            "f89v2",
+            "f99r",
+            "f99v"
+          ],
+          "dominant_section_distribution": {
+            "T": 16
+          },
+          "mean_reach_profile": {
+            "B": 0.111,
+            "C": 0.1711,
+            "H": 0.1141,
+            "S": 0.0631,
+            "T": 0.21
+          }
+        },
+        "cluster_2": {
+          "size": 37,
+          "folios": [
+            "f10v",
+            "f11r",
+            "f11v",
+            "f13r",
+            "f13v",
+            "f14v",
+            "f15v",
+            "f16v",
+            "f17r",
+            "f19r",
+            "f19v",
+            "f21r",
+            "f21v",
+            "f25r",
+            "f25v",
+            "f27v",
+            "f28r",
+            "f28v",
+            "f29r",
+            "f2v",
+            "f30v",
+            "f36r",
+            "f36v",
+            "f38r",
+            "f44r",
+            "f47r",
+            "f4r",
+            "f53r",
+            "f53v",
+            "f56r",
+            "f56v",
+            "f5r",
+            "f5v",
+            "f7r",
+            "f90r2",
+            "f90v2",
+            "f96v"
+          ],
+          "dominant_section_distribution": {
+            "T": 34,
+            "C": 3
+          },
+          "mean_reach_profile": {
+            "B": 0.0597,
+            "C": 0.0971,
+            "H": 0.0612,
+            "S": 0.0316,
+            "T": 0.1146
+          }
+        },
+        "cluster_3": {
+          "size": 61,
+          "folios": [
+            "f100r",
+            "f100v",
+            "f102r1",
+            "f102r2",
+            "f102v1",
+            "f10r",
+            "f14r",
+            "f15r",
+            "f16r",
+            "f17v",
+            "f18r",
+            "f18v",
+            "f1v",
+            "f20r",
+            "f20v",
+            "f22r",
+            "f22v",
+            "f23r",
+            "f23v",
+            "f24r",
+            "f24v",
+            "f27r",
+            "f29v",
+            "f2r",
+            "f30r",
+            "f32r",
+            "f32v",
+            "f35r",
+            "f35v",
+            "f37r",
+            "f37v",
+            "f38v",
+            "f3r",
+            "f42v",
+            "f44v",
+            "f45r",
+            "f45v",
+            "f47v",
+            "f49r",
+            "f4v",
+            "f51r",
+            "f51v",
+            "f52r",
+            "f52v",
+            "f54r",
+            "f54v",
+            "f6r",
+            "f6v",
+            "f7v",
+            "f87r",
+            "f87v",
+            "f88r",
+            "f8r",
+            "f8v",
+            "f90r1",
+            "f90v1",
+            "f93r",
+            "f93v",
+            "f96r",
+            "f9r",
+            "f9v"
+          ],
+          "dominant_section_distribution": {
+            "T": 58,
+            "C": 3
+          },
+          "mean_reach_profile": {
+            "B": 0.0788,
+            "C": 0.1303,
+            "H": 0.0818,
+            "S": 0.0428,
+            "T": 0.1561
+          }
+        }
+      }
+    },
+    "4": {
+      "k": 4,
+      "ari_vs_dominant_section": -0.0144,
+      "silhouette": 0.3966,
+      "cluster_composition": {
+        "cluster_1": {
+          "size": 16,
+          "folios": [
+            "f101r1",
+            "f101v2",
+            "f102v2",
+            "f1r",
+            "f3v",
+            "f42r",
+            "f49v",
+            "f58r",
+            "f58v",
+            "f88v",
+            "f89r1",
+            "f89r2",
+            "f89v1",
+            "f89v2",
+            "f99r",
+            "f99v"
+          ],
+          "dominant_section_distribution": {
+            "T": 16
+          },
+          "mean_reach_profile": {
+            "B": 0.111,
+            "C": 0.1711,
+            "H": 0.1141,
+            "S": 0.0631,
+            "T": 0.21
+          }
+        },
+        "cluster_2": {
+          "size": 37,
+          "folios": [
+            "f10v",
+            "f11r",
+            "f11v",
+            "f13r",
+            "f13v",
+            "f14v",
+            "f15v",
+            "f16v",
+            "f17r",
+            "f19r",
+            "f19v",
+            "f21r",
+            "f21v",
+            "f25r",
+            "f25v",
+            "f27v",
+            "f28r",
+            "f28v",
+            "f29r",
+            "f2v",
+            "f30v",
+            "f36r",
+            "f36v",
+            "f38r",
+            "f44r",
+            "f47r",
+            "f4r",
+            "f53r",
+            "f53v",
+            "f56r",
+            "f56v",
+            "f5r",
+            "f5v",
+            "f7r",
+            "f90r2",
+            "f90v2",
+            "f96v"
+          ],
+          "dominant_section_distribution": {
+            "T": 34,
+            "C": 3
+          },
+          "mean_reach_profile": {
+            "B": 0.0597,
+            "C": 0.0971,
+            "H": 0.0612,
+            "S": 0.0316,
+            "T": 0.1146
+          }
+        },
+        "cluster_3": {
+          "size": 38,
+          "folios": [
+            "f100r",
+            "f102r2",
+            "f16r",
+            "f18r",
+            "f18v",
+            "f1v",
+            "f20r",
+            "f20v",
+            "f22r",
+            "f22v",
+            "f23r",
+            "f23v",
+            "f24v",
+            "f27r",
+            "f29v",
+            "f32r",
+            "f32v",
+            "f37r",
+            "f37v",
+            "f38v",
+            "f45v",
+            "f47v",
+            "f49r",
+            "f4v",
+            "f51r",
+            "f51v",
+            "f52r",
+            "f52v",
+            "f54r",
+            "f6r",
+            "f6v",
+            "f7v",
+            "f87r",
+            "f8v",
+            "f90v1",
+            "f93v",
+            "f9r",
+            "f9v"
+          ],
+          "dominant_section_distribution": {
+            "T": 35,
+            "C": 3
+          },
+          "mean_reach_profile": {
+            "B": 0.0739,
+            "C": 0.1251,
+            "H": 0.0774,
+            "S": 0.0407,
+            "T": 0.1489
+          }
+        },
+        "cluster_4": {
+          "size": 23,
+          "folios": [
+            "f100v",
+            "f102r1",
+            "f102v1",
+            "f10r",
+            "f14r",
+            "f15r",
+            "f17v",
+            "f24r",
+            "f2r",
+            "f30r",
+            "f35r",
+            "f35v",
+            "f3r",
+            "f42v",
+            "f44v",
+            "f45r",
+            "f54v",
+            "f87v",
+            "f88r",
+            "f8r",
+            "f90r1",
+            "f93r",
+            "f96r"
+          ],
+          "dominant_section_distribution": {
+            "T": 23
+          },
+          "mean_reach_profile": {
+            "B": 0.0868,
+            "C": 0.139,
+            "H": 0.089,
+            "S": 0.0461,
+            "T": 0.168
+          }
+        }
+      }
+    },
+    "5": {
+      "k": 5,
+      "ari_vs_dominant_section": -0.0156,
+      "silhouette": 0.4051,
+      "cluster_composition": {
+        "cluster_1": {
+          "size": 14,
+          "folios": [
+            "f101r1",
+            "f101v2",
+            "f102v2",
+            "f1r",
+            "f3v",
+            "f42r",
+            "f49v",
+            "f88v",
+            "f89r1",
+            "f89r2",
+            "f89v1",
+            "f89v2",
+            "f99r",
+            "f99v"
+          ],
+          "dominant_section_distribution": {
+            "T": 14
+          },
+          "mean_reach_profile": {
+            "B": 0.1051,
+            "C": 0.1681,
+            "H": 0.1091,
+            "S": 0.0588,
+            "T": 0.206
+          }
+        },
+        "cluster_2": {
+          "size": 2,
+          "folios": [
+            "f58r",
+            "f58v"
+          ],
+          "dominant_section_distribution": {
+            "T": 2
+          },
+          "mean_reach_profile": {
+            "B": 0.1526,
+            "C": 0.1921,
+            "H": 0.1489,
+            "S": 0.0928,
+            "T": 0.238
+          }
+        },
+        "cluster_3": {
+          "size": 37,
+          "folios": [
+            "f10v",
+            "f11r",
+            "f11v",
+            "f13r",
+            "f13v",
+            "f14v",
+            "f15v",
+            "f16v",
+            "f17r",
+            "f19r",
+            "f19v",
+            "f21r",
+            "f21v",
+            "f25r",
+            "f25v",
+            "f27v",
+            "f28r",
+            "f28v",
+            "f29r",
+            "f2v",
+            "f30v",
+            "f36r",
+            "f36v",
+            "f38r",
+            "f44r",
+            "f47r",
+            "f4r",
+            "f53r",
+            "f53v",
+            "f56r",
+            "f56v",
+            "f5r",
+            "f5v",
+            "f7r",
+            "f90r2",
+            "f90v2",
+            "f96v"
+          ],
+          "dominant_section_distribution": {
+            "T": 34,
+            "C": 3
+          },
+          "mean_reach_profile": {
+            "B": 0.0597,
+            "C": 0.0971,
+            "H": 0.0612,
+            "S": 0.0316,
+            "T": 0.1146
+          }
+        },
+        "cluster_4": {
+          "size": 38,
+          "folios": [
+            "f100r",
+            "f102r2",
+            "f16r",
+            "f18r",
+            "f18v",
+            "f1v",
+            "f20r",
+            "f20v",
+            "f22r",
+            "f22v",
+            "f23r",
+            "f23v",
+            "f24v",
+            "f27r",
+            "f29v",
+            "f32r",
+            "f32v",
+            "f37r",
+            "f37v",
+            "f38v",
+            "f45v",
+            "f47v",
+            "f49r",
+            "f4v",
+            "f51r",
+            "f51v",
+            "f52r",
+            "f52v",
+            "f54r",
+            "f6r",
+            "f6v",
+            "f7v",
+            "f87r",
+            "f8v",
+            "f90v1",
+            "f93v",
+            "f9r",
+            "f9v"
+          ],
+          "dominant_section_distribution": {
+            "T": 35,
+            "C": 3
+          },
+          "mean_reach_profile": {
+            "B": 0.0739,
+            "C": 0.1251,
+            "H": 0.0774,
+            "S": 0.0407,
+            "T": 0.1489
+          }
+        },
+        "cluster_5": {
+          "size": 23,
+          "folios": [
+            "f100v",
+            "f102r1",
+            "f102v1",
+            "f10r",
+            "f14r",
+            "f15r",
+            "f17v",
+            "f24r",
+            "f2r",
+            "f30r",
+            "f35r",
+            "f35v",
+            "f3r",
+            "f42v",
+            "f44v",
+            "f45r",
+            "f54v",
+            "f87v",
+            "f88r",
+            "f8r",
+            "f90r1",
+            "f93r",
+            "f96r"
+          ],
+          "dominant_section_distribution": {
+            "T": 23
+          },
+          "mean_reach_profile": {
+            "B": 0.0868,
+            "C": 0.139,
+            "H": 0.089,
+            "S": 0.0461,
+            "T": 0.168
+          }
+        }
+      }
+    }
+  },
+  "permutation_test": {
+    "primary_k": 3,
+    "n_permutations": 1000,
+    "observed_ari": -0.0069,
+    "null_mean_ari": -0.0003,
+    "null_std_ari": 0.0195,
+    "p_value_ari": 0.6164
+  },
+  "section_reach_spread": {
+    "B": {
+      "mean_reach": 0.0771,
+      "std_reach": 0.0188,
+      "cv": 0.2432,
+      "top_5_a_folios": [
+        {
+          "folio": "f58v",
+          "jaccard": 0.1585
+        },
+        {
+          "folio": "f58r",
+          "jaccard": 0.1466
+        },
+        {
+          "folio": "f89r2",
+          "jaccard": 0.1159
+        },
+        {
+          "folio": "f89v2",
+          "jaccard": 0.1124
+        },
+        {
+          "folio": "f99v",
+          "jaccard": 0.1117
+        }
+      ]
+    },
+    "C": {
+      "mean_reach": 0.1253,
+      "std_reach": 0.0263,
+      "cv": 0.2097,
+      "top_5_a_folios": [
+        {
+          "folio": "f58v",
+          "jaccard": 0.2153
+        },
+        {
+          "folio": "f89v2",
+          "jaccard": 0.1992
+        },
+        {
+          "folio": "f99v",
+          "jaccard": 0.1807
+        },
+        {
+          "folio": "f89v1",
+          "jaccard": 0.1793
+        },
+        {
+          "folio": "f88v",
+          "jaccard": 0.1719
+        }
+      ]
+    },
+    "H": {
+      "mean_reach": 0.0796,
+      "std_reach": 0.019,
+      "cv": 0.2389,
+      "top_5_a_folios": [
+        {
+          "folio": "f58r",
+          "jaccard": 0.1558
+        },
+        {
+          "folio": "f58v",
+          "jaccard": 0.1419
+        },
+        {
+          "folio": "f89v2",
+          "jaccard": 0.1256
+        },
+        {
+          "folio": "f88v",
+          "jaccard": 0.1179
+        },
+        {
+          "folio": "f99v",
+          "jaccard": 0.1143
+        }
+      ]
+    },
+    "S": {
+      "mean_reach": 0.042,
+      "std_reach": 0.0116,
+      "cv": 0.2751,
+      "top_5_a_folios": [
+        {
+          "folio": "f58r",
+          "jaccard": 0.0963
+        },
+        {
+          "folio": "f58v",
+          "jaccard": 0.0892
+        },
+        {
+          "folio": "f89r2",
+          "jaccard": 0.065
+        },
+        {
+          "folio": "f89r1",
+          "jaccard": 0.065
+        },
+        {
+          "folio": "f89v2",
+          "jaccard": 0.0648
+        }
+      ]
+    },
+    "T": {
+      "mean_reach": 0.1502,
+      "std_reach": 0.0339,
+      "cv": 0.2254,
+      "top_5_a_folios": [
+        {
+          "folio": "f58v",
+          "jaccard": 0.2629
+        },
+        {
+          "folio": "f89r2",
+          "jaccard": 0.2251
+        },
+        {
+          "folio": "f99v",
+          "jaccard": 0.2234
+        },
+        {
+          "folio": "f89v2",
+          "jaccard": 0.2216
+        },
+        {
+          "folio": "f88v",
+          "jaccard": 0.2165
+        }
+      ]
+    }
+  },
+  "verdict": "FAIL",
+  "verdict_detail": "A folios cover all B sections uniformly (generic pool). ARI=-0.0069 < 0.05, entropy ratio=0.946 near 1.0, pairwise reach similarity std=0.0031 very low. Consistent with C846 (shared vocabulary pool).",
+  "pass_criteria": "ARI > 0.10, p < 0.05; A folios specialize in specific B sections",
+  "fail_criteria": "A folios cover all B sections uniformly (generic pool, C846)",
+  "references": [
+    "C846 (A/B paragraph pool relationship)"
+  ]
+}

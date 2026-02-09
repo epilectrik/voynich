@@ -1,0 +1,201 @@
+{
+  "test": "specification_vocabulary_distinctiveness",
+  "test_number": 10,
+  "question": "Is the specification vocabulary (early body) more section-discriminative than execution vocabulary (late body)?",
+  "method": {
+    "description": "Split each paragraph into EARLY (first 33%) and LATE (last 33%) token partitions. Extract MIDDLE vocabulary for each. Build presence/absence feature vectors from common MIDDLEs (in 20+ paragraphs). Classify section using LOO-CV with KNN(k=5) and NearestCentroid. Compare early vs late accuracy. Also compute Cramer's V for MIDDLE x section in each position partition.",
+    "min_paragraph_tokens": 10,
+    "early_fraction": 0.33,
+    "late_fraction": 0.33,
+    "common_middle_threshold": 20,
+    "n_permutations": 200
+  },
+  "data_summary": {
+    "total_currier_b_tokens": 23096,
+    "total_paragraphs_raw": 585,
+    "paragraphs_after_filter": 477,
+    "sections": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "n_sections": 5,
+    "section_distribution": {
+      "B": 86,
+      "C": 25,
+      "H": 68,
+      "S": 284,
+      "T": 14
+    },
+    "n_common_middles": 81,
+    "feature_density_early": 11.14,
+    "feature_density_late": 11.7
+  },
+  "classification_results": {
+    "early_knn_k5_accuracy": 0.6247,
+    "early_nearest_centroid_accuracy": 0.6122,
+    "late_knn_k5_accuracy": 0.6415,
+    "late_nearest_centroid_accuracy": 0.5912,
+    "best_early_accuracy": 0.6247,
+    "best_early_method": "KNN_k5",
+    "best_late_accuracy": 0.6415,
+    "best_late_method": "KNN_k5",
+    "early_minus_late_pp": -1.68,
+    "chance_level": 0.2,
+    "majority_baseline": 0.5954,
+    "majority_class": "S"
+  },
+  "per_section_accuracy": {
+    "early": {
+      "B": {
+        "n": 86,
+        "correct": 41,
+        "accuracy": 0.477
+      },
+      "C": {
+        "n": 25,
+        "correct": 1,
+        "accuracy": 0.04
+      },
+      "H": {
+        "n": 68,
+        "correct": 23,
+        "accuracy": 0.338
+      },
+      "S": {
+        "n": 284,
+        "correct": 233,
+        "accuracy": 0.82
+      },
+      "T": {
+        "n": 14,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "late": {
+      "B": {
+        "n": 86,
+        "correct": 48,
+        "accuracy": 0.558
+      },
+      "C": {
+        "n": 25,
+        "correct": 1,
+        "accuracy": 0.04
+      },
+      "H": {
+        "n": 68,
+        "correct": 16,
+        "accuracy": 0.235
+      },
+      "S": {
+        "n": 284,
+        "correct": 241,
+        "accuracy": 0.849
+      },
+      "T": {
+        "n": 14,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "cramers_v_analysis": {
+    "middles_tested_early": 81,
+    "middles_tested_late": 76,
+    "mean_cramers_v_early": 0.1659,
+    "mean_cramers_v_late": 0.167,
+    "median_cramers_v_early": 0.161,
+    "median_cramers_v_late": 0.1461,
+    "significant_early": 47,
+    "significant_late": 44,
+    "paired_comparison": {
+      "n_shared_middles": 76,
+      "mean_paired_diff_early_minus_late": 0.0024,
+      "early_higher_count": 36,
+      "late_higher_count": 40,
+      "ties": 0,
+      "wilcoxon_W": 1370.5,
+      "wilcoxon_p": 0.632006
+    },
+    "top_10_early_discriminative": {
+      "dy": {
+        "cramers_v": 0.3881,
+        "chi2": 71.848,
+        "p_value": 0.0,
+        "n_present": 152
+      },
+      "l": {
+        "cramers_v": 0.386,
+        "chi2": 71.079,
+        "p_value": 0.0,
+        "n_present": 156
+      },
+      "k": {
+        "cramers_v": 0.3775,
+        "chi2": 67.959,
+        "p_value": 0.0,
+        "n_present": 243
+      },
+      "ey": {
+        "cramers_v": 0.3418,
+        "chi2": 55.736,
+        "p_value": 0.0,
+        "n_present": 153
+      },
+      "or": {
+        "cramers_v": 0.3038,
+        "chi2": 44.023,
+        "p_value": 0.0,
+        "n_present": 92
+      },
+      "ol": {
+        "cramers_v": 0.3025,
+        "chi2": 43.635,
+        "p_value": 0.0,
+        "n_present": 142
+      },
+      "d": {
+        "cramers_v": 0.2949,
+        "chi2": 41.477,
+        "p_value": 0.0,
+        "n_present": 107
+      },
+      "ke": {
+        "cramers_v": 0.288,
+        "chi2": 39.556,
+        "p_value": 0.0,
+        "n_present": 91
+      },
+      "y": {
+        "cramers_v": 0.2544,
+        "chi2": 30.87,
+        "p_value": 3e-06,
+        "n_present": 117
+      },
+      "t": {
+        "cramers_v": 0.247,
+        "chi2": 29.106,
+        "p_value": 7e-06,
+        "n_present": 154
+      }
+    }
+  },
+  "permutation_test": {
+    "n_permutations": 200,
+    "observed_diff": -0.0168,
+    "permutation_mean_diff": 0.0008,
+    "permutation_std_diff": 0.0314,
+    "z_score": -0.56,
+    "p_value_one_sided": 0.72
+  },
+  "pass_criteria": {
+    "early_late_diff_threshold_pp": 10,
+    "permutation_significance": 0.05
+  },
+  "verdict": "FAIL",
+  "interpretation": "Early and late body vocabulary show no specification gradient. Best EARLY accuracy (62.5%) does not exceed best LATE accuracy (64.2%) (difference: -1.7 pp). Section discrimination is equally distributed across paragraph positions, consistent with the specification gradient being operational (rarity-based) rather than material-specific."
+}

@@ -1,0 +1,274 @@
+{
+  "test": "cross_section_folio_pairs",
+  "phase": "MATERIAL_LOCUS_SEARCH",
+  "test_number": 13,
+  "question": "When two folios from DIFFERENT sections share unusually high vocabulary overlap, is the overlap operational or material?",
+  "method": {
+    "metric": "MIDDLE Jaccard similarity (binary presence/absence per folio)",
+    "scope": "Currier B, H track only, no labels, no uncertain tokens",
+    "n_folios": 82,
+    "n_cross_section_pairs": 2371,
+    "frequency_thresholds": {
+      "common": "40+ folios (operational infrastructure, no material signal)",
+      "moderate": "15-39 folios (widely distributed, weak signal)",
+      "rare": "<15 folios (potential material markers)"
+    },
+    "decoder": "BFolioDecoder (structural + interpretive modes)"
+  },
+  "jaccard_distribution": {
+    "mean": 0.2629,
+    "max": 0.4429,
+    "min": 0.1457,
+    "top10_scores": [0.4429, 0.4328, 0.4211, 0.4189, 0.4179, 0.4, 0.4, 0.3978, 0.3977, 0.3953]
+  },
+  "key_observation": "All top 10 cross-section pairs are B-H pairs. No S-H, S-B, or other section combinations appear. This reflects that sections B and H use the most similar operational grammar, not material correspondence.",
+  "top_10_pairs": [
+    {
+      "rank": 1,
+      "folio1": "f78v",
+      "section1": "B",
+      "folio2": "f94v",
+      "section2": "H",
+      "jaccard": 0.4429,
+      "n_shared": 31,
+      "n_union": 70,
+      "n_common": 29,
+      "n_moderate": 2,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["cph", "et"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["edy", "iin", "k", "ol", "r"],
+        "shared_at_par_initial_both": ["edy"]
+      },
+      "narrative": "f78v (Biological, 32 lines) and f94v (Herbal, 12 lines) share 31 MIDDLEs, but ALL are common operational vocabulary (29 in 40+ folios) or moderate-frequency forms (cph, et). Zero rare MIDDLEs are shared. The decoded output shows both folios running standard kernel-heavy processing: f78v uses repeated qokedy (apply thorough heat) and shedy (monitor batch) patterns; f94v similarly runs test-heat-monitor cycles. The positional overlap at line-initial (edy, iin, k, ol, r) confirms these are standard control-flow entry points used across the entire B corpus. These folios share vocabulary because they both execute the same operational grammar -- the Currier B control program. The overlap is entirely structural: both folios sit in the shared kernel-centric instruction space, with no vocabulary suggesting they reference the same material domain.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 2,
+      "folio1": "f81r",
+      "section1": "B",
+      "folio2": "f94v",
+      "section2": "H",
+      "jaccard": 0.4328,
+      "n_shared": 29,
+      "n_union": 67,
+      "n_common": 26,
+      "n_moderate": 3,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["ksh", "cph", "et"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["edy", "k", "ol", "r"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f81r (Biological, 31 lines) and f94v (Herbal, 12 lines) share 29 MIDDLEs, all common or moderate. The moderate-frequency forms (ksh, cph, et) appear in 15+ folios each, well above the rare threshold. f81r's decoded output shows extensive qo-prefixed kernel operations (qokedy, qokeey, qokeedy) with WATER output markers (qokal, qotal -- al suffix) and ANIMAL markers (cphol, qopchol). f94v runs shorter, denser control lines. Despite both folios appearing to run heat-processing programs, their unique vocabularies are completely different: f81r has oee, ese, oi, ofsh etc. while f94v has kshd, qek, eoct, orch. These folios share vocabulary because they draw on the same operational instruction set. The unique MIDDLEs are where material identity lives, and those are fully disjoint.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 3,
+      "folio1": "f84r",
+      "section1": "B",
+      "folio2": "f94v",
+      "section2": "H",
+      "jaccard": 0.4211,
+      "n_shared": 32,
+      "n_union": 76,
+      "n_common": 28,
+      "n_moderate": 4,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["cph", "p", "cth", "et"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["d", "dy", "edy", "k", "ol", "r"],
+        "shared_at_par_initial_both": ["d", "edy"]
+      },
+      "narrative": "f84r (Biological, 34 lines, the longest B folio in the top 10) and f94v (Herbal, 12 lines) share 32 MIDDLEs with zero rare forms. f84r is a large folio with extremely diverse vocabulary (32 unique MIDDLEs not shared with f94v, 17 of which are rare). f94v has only 12 unique MIDDLEs. The high Jaccard arises because f84r's large vocabulary sweeps up almost every common MIDDLE, creating high overlap with any other folio. The decoded output shows f84r running complex multi-kernel operations with WATER markers (qokal, chedal, orchedal) and scaffold operations, while f94v runs simpler heat-test cycles. These folios share vocabulary because f84r is vocabulary-rich (large folio effect) and the common operational MIDDLEs account for 87.5% of the shared set.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 4,
+      "folio1": "f48v",
+      "section1": "H",
+      "folio2": "f78v",
+      "section2": "B",
+      "jaccard": 0.4189,
+      "n_shared": 31,
+      "n_union": 74,
+      "n_common": 28,
+      "n_moderate": 3,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["lo", "h", "et"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["edy", "eey", "ey", "l", "r"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f48v (Herbal, 11 lines) and f78v (Biological, 32 lines) share 31 MIDDLEs, all common or moderate. f48v appears four times in the top 10 (pairs 4, 6, 7, 9, 10), identifying it as a vocabulary hub -- a Herbal folio with unusually broad operational vocabulary that overlaps with many Biological folios. The decoded output shows f48v running complex compound-MIDDLE operations with extended kernel sequences. f78v runs the standard Biological heat-monitor program. No rare MIDDLEs are shared. These folios share vocabulary because f48v has an unusually complete operational vocabulary for a Herbal folio, making it a high-overlap partner for any large B-section folio.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 5,
+      "folio1": "f40v",
+      "section1": "H",
+      "folio2": "f78v",
+      "section2": "B",
+      "jaccard": 0.4179,
+      "n_shared": 28,
+      "n_union": 67,
+      "n_common": 25,
+      "n_moderate": 3,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["fch", "eek", "et"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["edy", "ey", "iin", "k", "l", "ol", "r"],
+        "shared_at_par_initial_both": ["edy"]
+      },
+      "narrative": "f40v (Herbal) and f78v (Biological) share 28 MIDDLEs, all common or moderate. f78v also appears multiple times in the top 10 (pairs 1, 4, 5), identifying it as a Biological vocabulary hub. The moderate forms fch and eek appear in 15+ folios -- not rare enough to signal material specificity. The strong positional overlap at line-initial (7 shared positions) confirms these are standard control-flow entry points. These folios share vocabulary because both are vocabulary-hub folios that sample broadly from the shared operational instruction set.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 6,
+      "folio1": "f48v",
+      "section1": "H",
+      "folio2": "f75r",
+      "section2": "B",
+      "jaccard": 0.4,
+      "n_shared": 32,
+      "n_union": 80,
+      "n_common": 27,
+      "n_moderate": 5,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["lo", "ry", "ly", "cth", "lk"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["ed", "edy", "ey", "l", "r"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f48v (Herbal) and f75r (Biological) share 32 MIDDLEs with zero rare forms. This pair has the highest count of moderate-frequency shared MIDDLEs (5: lo, ry, ly, cth, lk) in the top 10, but all five appear in 15+ folios, placing them firmly in the operational grammar. The suffix-like MIDDLEs ry and ly are widely distributed terminal forms. cth and lk are kernel-heavy compound forms used across sections. These folios share vocabulary because both use a dense operational vocabulary with moderate-frequency kernel extensions. The five moderate MIDDLEs reflect operational grammar variants, not material identity.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 7,
+      "folio1": "f48v",
+      "section1": "H",
+      "folio2": "f84r",
+      "section2": "B",
+      "jaccard": 0.4,
+      "n_shared": 32,
+      "n_union": 80,
+      "n_common": 28,
+      "n_moderate": 4,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["ry", "cth", "lk", "et"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["dy", "edy", "ey", "l", "r", "y"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f48v (Herbal, appearing in its third pair in the top 10) and f84r (Biological, also recurring) share 32 MIDDLEs with zero rare forms. The moderate-frequency shared MIDDLEs (ry, cth, lk, et) are all operational grammar components -- cth is a kernel-heavy control form, lk is a compound prefix-MIDDLE, et appears in 15+ folios. Both folios are vocabulary hubs for their respective sections, which mechanically inflates their pairwise overlap. These folios share vocabulary because they are the broadest-vocabulary representatives of their respective sections, and the shared grammar is the universal B control program.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 8,
+      "folio1": "f43v",
+      "section1": "H",
+      "folio2": "f77v",
+      "section2": "B",
+      "jaccard": 0.3978,
+      "n_shared": 37,
+      "n_union": 93,
+      "n_common": 29,
+      "n_moderate": 5,
+      "n_rare": 3,
+      "shared_rare_middles": [
+        {"middle": "lkch", "folio_count": 2, "count_in_f43v": 1, "count_in_f77v": 1},
+        {"middle": "ro", "folio_count": 12, "count_in_f43v": 1, "count_in_f77v": 1},
+        {"middle": "ld", "folio_count": 12, "count_in_f43v": 1, "count_in_f77v": 1}
+      ],
+      "shared_moderate_middles": ["ked", "ry", "ly", "lk", "eed"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["edy", "ey", "lkch", "r"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f43v (Herbal, 16 lines) and f77v (Biological, 37 lines) share 37 MIDDLEs -- the highest shared count in the top 10 -- including 3 rare forms. The rare MIDDLE 'lkch' appears in ONLY 2 folios in the entire corpus (these two), making it a near-exclusive shared marker. Both use it once, and it appears at line-initial position in both folios. 'ro' (12 folios) and 'ld' (12 folios) are moderately rare. The decoded output reveals that f43v runs compound MIDDLE operations with extended kernel sequences (ykeedy, oykeedy, chekcheey) and f77v runs water-output focused operations (qokal, chedal, orchedal, dsheedal appearing repeatedly). Both folios show unusual structural features: f43v has da at line-initial (infrastructure marker) and complex compound tokens (shetcheodchs); f77v shows persistent WATER markers (al-suffix) and ANIMAL markers (rol, chdor, sheor). The exclusive sharing of 'lkch' is striking -- this compound MIDDLE (lk+ch) combines a compound prefix form with a kernel form, suggesting these two folios may reference a specific compound kernel operation not needed elsewhere. However, 'lkch' appears only once in each folio, and the bulk of the overlap (29/37 = 78%) remains common operational vocabulary. The signal is present but thin.",
+      "verdict": "AMBIGUOUS"
+    },
+    {
+      "rank": 9,
+      "folio1": "f48v",
+      "section1": "H",
+      "folio2": "f77r",
+      "section2": "B",
+      "jaccard": 0.3977,
+      "n_shared": 35,
+      "n_union": 88,
+      "n_common": 28,
+      "n_moderate": 6,
+      "n_rare": 1,
+      "shared_rare_middles": [
+        {"middle": "sh", "folio_count": 4, "count_in_f48v": 1, "count_in_f77r": 1}
+      ],
+      "shared_moderate_middles": ["lo", "ry", "cth", "lk", "et", "eed"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["dy", "ed", "edy", "eey", "ey", "l", "r"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f48v (Herbal, again) and f77r (Biological, recto of the f77v folio from Pair 8) share 35 MIDDLEs including 1 rare form: 'sh' appearing in only 4 folios. 'sh' as a standalone MIDDLE is unusual -- it is normally parsed as a prefix. When it appears as a MIDDLE, it may represent a truncated or reduced form of a monitoring instruction. Both folios use it once. However, a single rare MIDDLE at single occurrence is a very weak signal. The 6 moderate-frequency shared MIDDLEs (lo, ry, cth, lk, et, eed) are operational grammar components appearing in 15-39 folios. f48v's recurring presence in the top 10 confirms it as a Herbal vocabulary hub. f77r is the recto companion of f77v (Pair 8), suggesting the f77 bifolio has broad vocabulary. These folios share vocabulary because f48v has broad operational coverage and f77r has a large, diverse vocabulary. The single rare MIDDLE 'sh' is too thin to constitute material signal.",
+      "verdict": "OPERATIONAL"
+    },
+    {
+      "rank": 10,
+      "folio1": "f48v",
+      "section1": "H",
+      "folio2": "f79r",
+      "section2": "B",
+      "jaccard": 0.3953,
+      "n_shared": 34,
+      "n_union": 86,
+      "n_common": 30,
+      "n_moderate": 4,
+      "n_rare": 0,
+      "shared_rare_middles": [],
+      "shared_moderate_middles": ["ry", "ly", "lk", "h"],
+      "positional_overlap": {
+        "shared_at_line_initial_both": ["edy", "eey", "ey", "l", "r", "y"],
+        "shared_at_par_initial_both": []
+      },
+      "narrative": "f48v (Herbal, its fifth appearance in the top 10) and f79r (Biological) share 34 MIDDLEs with zero rare forms. The overlap is 88% common operational MIDDLEs (30/34). The moderate forms (ry, ly, lk, h) are standard grammar extensions. f48v is clearly the dominant Herbal vocabulary hub, and its presence in 5 of the top 10 pairs is a structural artifact: it has the broadest MIDDLE inventory in section H, creating high Jaccard scores with every large B-section folio. These folios share vocabulary because f48v acts as a section H vocabulary hub that mechanically matches with vocabulary-rich B-section folios through shared operational grammar.",
+      "verdict": "OPERATIONAL"
+    }
+  ],
+  "section_pair_distribution_top10": {"B-H": 10},
+  "recurring_folios": {
+    "f48v": {"section": "H", "appearances": 5, "note": "Herbal vocabulary hub -- broadest MIDDLE inventory in section H, drives overlap with B folios"},
+    "f78v": {"section": "B", "appearances": 3, "note": "Biological vocabulary hub -- recurrent high-overlap partner"},
+    "f94v": {"section": "H", "appearances": 3, "note": "Herbal folio paired with three different B folios (78v, 81r, 84r)"},
+    "f84r": {"section": "B", "appearances": 2, "note": "Large 34-line folio with very broad vocabulary"}
+  },
+  "rare_middle_summary": {
+    "pairs_with_any_rare": 2,
+    "pairs_with_zero_rare": 8,
+    "total_rare_shared_instances": 4,
+    "strongest_signal": "Pair 8 (f43v-f77v): 'lkch' appears in only 2 folios corpus-wide (exclusively these two). However, it appears only once in each folio.",
+    "assessment": "Rare MIDDLE sharing is extremely sparse. Only 2 of 10 pairs share any rare MIDDLEs, and the total count is 4 instances across all pairs. The one genuinely exclusive shared MIDDLE ('lkch' in Pair 8) is a single-occurrence compound form, too thin to establish material correspondence."
+  },
+  "overall_analysis": {
+    "pattern": "Cross-section folio vocabulary overlap in Currier B is overwhelmingly operational. The top 10 pairs are ALL B-H pairs, reflecting that these two sections use the most similar operational grammar. The shared vocabulary is dominated by common MIDDLEs (k, e, ed, edy, ar, or, ol, etc.) that appear in 40+ folios and constitute the universal B instruction set.",
+    "vocabulary_hub_effect": "The recurring presence of f48v (5 pairs) and f78v (3 pairs) reveals a vocabulary hub artifact: folios with the broadest MIDDLE inventories mechanically produce high Jaccard scores with many partners. This is a size effect, not a material signal.",
+    "material_signal_assessment": "Only Pair 8 (f43v-f77v) shows any potentially interesting material signal, driven by the exclusive MIDDLE 'lkch' (2-folio form). However, this single-occurrence compound form is insufficient to establish material correspondence. Pair 9's 'sh' (4 folios) is similarly too sparse. The overwhelming pattern is that cross-section overlap is operational grammar, not material identity.",
+    "what_distinguishes_cross_section_pairs": "High-overlap cross-section pairs are distinguished by their operational completeness (broad use of the common instruction set), NOT by rare shared vocabulary. The unique-to-each-folio MIDDLEs are where material identity might reside, and these are fully disjoint between pair members. Material identity, if encoded in MIDDLE vocabulary at all, operates through the RARE forms that do NOT overlap across sections."
+  },
+  "verdict": "FAIL",
+  "verdict_detail": "Only 1 pair (Pair 8) shows any ambiguous material signal via the exclusive 'lkch' MIDDLE; 0 pairs show clear material signal. The 3+ MATERIAL_SIGNAL threshold is not met. Cross-section vocabulary overlap is overwhelmingly operational.",
+  "pass_criteria": "3+ pairs with MATERIAL_SIGNAL verdict",
+  "fail_criteria": "Fewer than 3 pairs with material signals",
+  "per_pair_verdicts": {
+    "OPERATIONAL": 9,
+    "AMBIGUOUS": 1,
+    "MATERIAL_SIGNAL": 0
+  },
+  "implication": "Material identity in the Voynich B text is NOT encoded through cross-section MIDDLE vocabulary sharing. If material loci exist, they must be sought in section-internal rare vocabulary, positional structure, or non-MIDDLE features (suffix patterns, prefix distributions, whole-token coordination).",
+  "references": ["C909 (section MIDDLE vocabularies)", "C910 (regime MIDDLE clustering)", "Test 1 folio_vocabulary_clustering results"]
+}

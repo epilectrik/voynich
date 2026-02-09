@@ -1,0 +1,1821 @@
+{
+  "test": "folio_vocabulary_clustering",
+  "phase": "MATERIAL_LOCUS_SEARCH",
+  "question": "Do folio-level MIDDLE profiles cluster into material-like categories beyond section/regime?",
+  "method": {
+    "description": "Hierarchical clustering of folio MIDDLE frequency vectors",
+    "scope": "Currier B",
+    "n_folios": 82,
+    "n_common_middles": 72,
+    "common_middle_threshold": "20+ folios",
+    "common_middles": [
+      "a",
+      "ai",
+      "aii",
+      "aiin",
+      "ain",
+      "al",
+      "am",
+      "ar",
+      "ck",
+      "ckh",
+      "cph",
+      "ct",
+      "cth",
+      "d",
+      "dy",
+      "e",
+      "ech",
+      "eck",
+      "ect",
+      "ed",
+      "edy",
+      "ee",
+      "eed",
+      "eek",
+      "eeo",
+      "eeol",
+      "eey",
+      "ek",
+      "eo",
+      "eod",
+      "eok",
+      "eol",
+      "et",
+      "ey",
+      "h",
+      "i",
+      "iin",
+      "in",
+      "k",
+      "ka",
+      "kc",
+      "kch",
+      "ke",
+      "ked",
+      "kee",
+      "keed",
+      "keeo",
+      "l",
+      "lch",
+      "lk",
+      "lo",
+      "ly",
+      "m",
+      "o",
+      "od",
+      "oiin",
+      "ok",
+      "ol",
+      "olk",
+      "op",
+      "opch",
+      "or",
+      "ot",
+      "p",
+      "pch",
+      "r",
+      "ry",
+      "s",
+      "t",
+      "tch",
+      "te",
+      "y"
+    ],
+    "distance_metric": "cosine",
+    "linkage_method": "ward",
+    "k_values_tested": [
+      4,
+      5,
+      6
+    ],
+    "n_permutations": 10000,
+    "primary_k": 5
+  },
+  "similarity_summary": {
+    "cosine": {
+      "mean": 0.7002,
+      "std": 0.1214,
+      "min": 0.2145,
+      "max": 0.964
+    },
+    "jaccard": {
+      "mean": 0.5418,
+      "std": 0.0945,
+      "min": 0.2889,
+      "max": 0.8281
+    }
+  },
+  "clustering_results": {
+    "4": {
+      "k": 4,
+      "ari_section": 0.3903,
+      "nmi_section": 0.5634,
+      "ari_regime": 0.0903,
+      "nmi_regime": 0.1038,
+      "cluster_composition": {
+        "cluster_1": {
+          "size": 25,
+          "folios": [
+            "f103r",
+            "f103v",
+            "f108r",
+            "f111v",
+            "f116r",
+            "f75r",
+            "f75v",
+            "f76r",
+            "f76v",
+            "f77r",
+            "f77v",
+            "f78r",
+            "f78v",
+            "f79r",
+            "f79v",
+            "f80r",
+            "f80v",
+            "f81r",
+            "f81v",
+            "f82r",
+            "f82v",
+            "f83r",
+            "f83v",
+            "f84r",
+            "f84v"
+          ],
+          "section_distribution": {
+            "S": 5,
+            "B": 20
+          },
+          "regime_distribution": {
+            "REGIME_4": 4,
+            "REGIME_2": 3,
+            "REGIME_1": 15,
+            "REGIME_3": 3
+          }
+        },
+        "cluster_2": {
+          "size": 32,
+          "folios": [
+            "f104r",
+            "f104v",
+            "f105r",
+            "f105v",
+            "f106r",
+            "f106v",
+            "f107r",
+            "f107v",
+            "f108v",
+            "f111r",
+            "f112r",
+            "f112v",
+            "f113r",
+            "f113v",
+            "f114r",
+            "f114v",
+            "f115r",
+            "f115v",
+            "f31r",
+            "f31v",
+            "f33r",
+            "f41v",
+            "f55v",
+            "f66r",
+            "f85r1",
+            "f85r2",
+            "f86v3",
+            "f86v4",
+            "f86v5",
+            "f86v6",
+            "f94r",
+            "f95v2"
+          ],
+          "section_distribution": {
+            "S": 18,
+            "H": 7,
+            "T": 2,
+            "C": 5
+          },
+          "regime_distribution": {
+            "REGIME_4": 13,
+            "REGIME_2": 13,
+            "REGIME_1": 4,
+            "REGIME_3": 2
+          }
+        },
+        "cluster_3": {
+          "size": 15,
+          "folios": [
+            "f33v",
+            "f34r",
+            "f34v",
+            "f39r",
+            "f39v",
+            "f40r",
+            "f40v",
+            "f46r",
+            "f50r",
+            "f50v",
+            "f55r",
+            "f94v",
+            "f95r1",
+            "f95r2",
+            "f95v1"
+          ],
+          "section_distribution": {
+            "H": 15
+          },
+          "regime_distribution": {
+            "REGIME_2": 6,
+            "REGIME_3": 2,
+            "REGIME_4": 5,
+            "REGIME_1": 2
+          }
+        },
+        "cluster_4": {
+          "size": 10,
+          "folios": [
+            "f26r",
+            "f26v",
+            "f41r",
+            "f43r",
+            "f43v",
+            "f46v",
+            "f48r",
+            "f48v",
+            "f57r",
+            "f66v"
+          ],
+          "section_distribution": {
+            "H": 10
+          },
+          "regime_distribution": {
+            "REGIME_3": 1,
+            "REGIME_2": 2,
+            "REGIME_1": 2,
+            "REGIME_4": 5
+          }
+        }
+      },
+      "cross_section_folios": [
+        {
+          "folio": "f103r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f103v",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f108r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f111v",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f116r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f31r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f31v",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f33r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f41v",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f55v",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f66r",
+          "folio_section": "T",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f85r1",
+          "folio_section": "T",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f85r2",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f86v3",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f86v4",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f86v5",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f86v6",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f94r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        },
+        {
+          "folio": "f95v2",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.5625
+        }
+      ],
+      "n_cross_section": 19
+    },
+    "5": {
+      "k": 5,
+      "ari_section": 0.4019,
+      "nmi_section": 0.5344,
+      "ari_regime": 0.0768,
+      "nmi_regime": 0.1163,
+      "cluster_composition": {
+        "cluster_1": {
+          "size": 25,
+          "folios": [
+            "f103r",
+            "f103v",
+            "f108r",
+            "f111v",
+            "f116r",
+            "f75r",
+            "f75v",
+            "f76r",
+            "f76v",
+            "f77r",
+            "f77v",
+            "f78r",
+            "f78v",
+            "f79r",
+            "f79v",
+            "f80r",
+            "f80v",
+            "f81r",
+            "f81v",
+            "f82r",
+            "f82v",
+            "f83r",
+            "f83v",
+            "f84r",
+            "f84v"
+          ],
+          "section_distribution": {
+            "S": 5,
+            "B": 20
+          },
+          "regime_distribution": {
+            "REGIME_4": 4,
+            "REGIME_2": 3,
+            "REGIME_1": 15,
+            "REGIME_3": 3
+          }
+        },
+        "cluster_2": {
+          "size": 10,
+          "folios": [
+            "f105v",
+            "f107r",
+            "f107v",
+            "f113v",
+            "f33r",
+            "f55v",
+            "f86v5",
+            "f86v6",
+            "f94r",
+            "f95v2"
+          ],
+          "section_distribution": {
+            "S": 4,
+            "H": 4,
+            "C": 2
+          },
+          "regime_distribution": {
+            "REGIME_4": 6,
+            "REGIME_2": 3,
+            "REGIME_3": 1
+          }
+        },
+        "cluster_3": {
+          "size": 22,
+          "folios": [
+            "f104r",
+            "f104v",
+            "f105r",
+            "f106r",
+            "f106v",
+            "f108v",
+            "f111r",
+            "f112r",
+            "f112v",
+            "f113r",
+            "f114r",
+            "f114v",
+            "f115r",
+            "f115v",
+            "f31r",
+            "f31v",
+            "f41v",
+            "f66r",
+            "f85r1",
+            "f85r2",
+            "f86v3",
+            "f86v4"
+          ],
+          "section_distribution": {
+            "S": 14,
+            "H": 3,
+            "T": 2,
+            "C": 3
+          },
+          "regime_distribution": {
+            "REGIME_4": 7,
+            "REGIME_2": 10,
+            "REGIME_1": 4,
+            "REGIME_3": 1
+          }
+        },
+        "cluster_4": {
+          "size": 15,
+          "folios": [
+            "f33v",
+            "f34r",
+            "f34v",
+            "f39r",
+            "f39v",
+            "f40r",
+            "f40v",
+            "f46r",
+            "f50r",
+            "f50v",
+            "f55r",
+            "f94v",
+            "f95r1",
+            "f95r2",
+            "f95v1"
+          ],
+          "section_distribution": {
+            "H": 15
+          },
+          "regime_distribution": {
+            "REGIME_2": 6,
+            "REGIME_3": 2,
+            "REGIME_4": 5,
+            "REGIME_1": 2
+          }
+        },
+        "cluster_5": {
+          "size": 10,
+          "folios": [
+            "f26r",
+            "f26v",
+            "f41r",
+            "f43r",
+            "f43v",
+            "f46v",
+            "f48r",
+            "f48v",
+            "f57r",
+            "f66v"
+          ],
+          "section_distribution": {
+            "H": 10
+          },
+          "regime_distribution": {
+            "REGIME_3": 1,
+            "REGIME_2": 2,
+            "REGIME_1": 2,
+            "REGIME_4": 5
+          }
+        }
+      },
+      "cross_section_folios": [
+        {
+          "folio": "f103r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f103v",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f108r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f111v",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f116r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f33r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f55v",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f86v5",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f86v6",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f94r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f95v2",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f31r",
+          "folio_section": "H",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f31v",
+          "folio_section": "H",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f41v",
+          "folio_section": "H",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f66r",
+          "folio_section": "T",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f85r1",
+          "folio_section": "T",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f85r2",
+          "folio_section": "C",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f86v3",
+          "folio_section": "C",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f86v4",
+          "folio_section": "C",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        }
+      ],
+      "n_cross_section": 19
+    },
+    "6": {
+      "k": 6,
+      "ari_section": 0.3808,
+      "nmi_section": 0.5209,
+      "ari_regime": 0.0753,
+      "nmi_regime": 0.1246,
+      "cluster_composition": {
+        "cluster_1": {
+          "size": 25,
+          "folios": [
+            "f103r",
+            "f103v",
+            "f108r",
+            "f111v",
+            "f116r",
+            "f75r",
+            "f75v",
+            "f76r",
+            "f76v",
+            "f77r",
+            "f77v",
+            "f78r",
+            "f78v",
+            "f79r",
+            "f79v",
+            "f80r",
+            "f80v",
+            "f81r",
+            "f81v",
+            "f82r",
+            "f82v",
+            "f83r",
+            "f83v",
+            "f84r",
+            "f84v"
+          ],
+          "section_distribution": {
+            "S": 5,
+            "B": 20
+          },
+          "regime_distribution": {
+            "REGIME_4": 4,
+            "REGIME_2": 3,
+            "REGIME_1": 15,
+            "REGIME_3": 3
+          }
+        },
+        "cluster_2": {
+          "size": 10,
+          "folios": [
+            "f105v",
+            "f107r",
+            "f107v",
+            "f113v",
+            "f33r",
+            "f55v",
+            "f86v5",
+            "f86v6",
+            "f94r",
+            "f95v2"
+          ],
+          "section_distribution": {
+            "S": 4,
+            "H": 4,
+            "C": 2
+          },
+          "regime_distribution": {
+            "REGIME_4": 6,
+            "REGIME_2": 3,
+            "REGIME_3": 1
+          }
+        },
+        "cluster_3": {
+          "size": 22,
+          "folios": [
+            "f104r",
+            "f104v",
+            "f105r",
+            "f106r",
+            "f106v",
+            "f108v",
+            "f111r",
+            "f112r",
+            "f112v",
+            "f113r",
+            "f114r",
+            "f114v",
+            "f115r",
+            "f115v",
+            "f31r",
+            "f31v",
+            "f41v",
+            "f66r",
+            "f85r1",
+            "f85r2",
+            "f86v3",
+            "f86v4"
+          ],
+          "section_distribution": {
+            "S": 14,
+            "H": 3,
+            "T": 2,
+            "C": 3
+          },
+          "regime_distribution": {
+            "REGIME_4": 7,
+            "REGIME_2": 10,
+            "REGIME_1": 4,
+            "REGIME_3": 1
+          }
+        },
+        "cluster_4": {
+          "size": 15,
+          "folios": [
+            "f33v",
+            "f34r",
+            "f34v",
+            "f39r",
+            "f39v",
+            "f40r",
+            "f40v",
+            "f46r",
+            "f50r",
+            "f50v",
+            "f55r",
+            "f94v",
+            "f95r1",
+            "f95r2",
+            "f95v1"
+          ],
+          "section_distribution": {
+            "H": 15
+          },
+          "regime_distribution": {
+            "REGIME_2": 6,
+            "REGIME_3": 2,
+            "REGIME_4": 5,
+            "REGIME_1": 2
+          }
+        },
+        "cluster_5": {
+          "size": 7,
+          "folios": [
+            "f26r",
+            "f26v",
+            "f41r",
+            "f43r",
+            "f43v",
+            "f46v",
+            "f48v"
+          ],
+          "section_distribution": {
+            "H": 7
+          },
+          "regime_distribution": {
+            "REGIME_3": 1,
+            "REGIME_2": 2,
+            "REGIME_1": 1,
+            "REGIME_4": 3
+          }
+        },
+        "cluster_6": {
+          "size": 3,
+          "folios": [
+            "f48r",
+            "f57r",
+            "f66v"
+          ],
+          "section_distribution": {
+            "H": 3
+          },
+          "regime_distribution": {
+            "REGIME_4": 2,
+            "REGIME_1": 1
+          }
+        }
+      },
+      "cross_section_folios": [
+        {
+          "folio": "f103r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f103v",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f108r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f111v",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f116r",
+          "folio_section": "S",
+          "cluster": 1,
+          "cluster_majority_section": "B",
+          "cluster_majority_fraction": 0.8
+        },
+        {
+          "folio": "f33r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f55v",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f86v5",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f86v6",
+          "folio_section": "C",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f94r",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f95v2",
+          "folio_section": "H",
+          "cluster": 2,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.4
+        },
+        {
+          "folio": "f31r",
+          "folio_section": "H",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f31v",
+          "folio_section": "H",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f41v",
+          "folio_section": "H",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f66r",
+          "folio_section": "T",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f85r1",
+          "folio_section": "T",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f85r2",
+          "folio_section": "C",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f86v3",
+          "folio_section": "C",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        },
+        {
+          "folio": "f86v4",
+          "folio_section": "C",
+          "cluster": 3,
+          "cluster_majority_section": "S",
+          "cluster_majority_fraction": 0.6363636363636364
+        }
+      ],
+      "n_cross_section": 19
+    }
+  },
+  "permutation_test": {
+    "primary_k": 5,
+    "n_permutations": 10000,
+    "section": {
+      "observed_ari": 0.4019,
+      "null_mean_ari": 0.0003,
+      "null_std_ari": 0.018,
+      "p_value_ari": 0.0001,
+      "observed_nmi": 0.5344,
+      "null_mean_nmi": 0.0752,
+      "null_std_nmi": 0.0225,
+      "p_value_nmi": 0.0001
+    },
+    "regime": {
+      "observed_ari": 0.0768,
+      "null_mean_ari": 0.0001,
+      "null_std_ari": 0.0175,
+      "p_value_ari": 0.001,
+      "observed_nmi": 0.1163,
+      "null_mean_nmi": 0.0577,
+      "null_std_nmi": 0.0229,
+      "p_value_nmi": 0.0168
+    }
+  },
+  "residual_clustering": {
+    "description": "Clustering after removing section-mean MIDDLE profiles",
+    "results": {
+      "4": {
+        "k": 4,
+        "ari_section": -0.0044,
+        "nmi_section": 0.0458,
+        "ari_regime": 0.004,
+        "nmi_regime": 0.0523
+      },
+      "5": {
+        "k": 5,
+        "ari_section": 0.0051,
+        "nmi_section": 0.0877,
+        "ari_regime": 0.0068,
+        "nmi_regime": 0.0651
+      },
+      "6": {
+        "k": 6,
+        "ari_section": 0.0149,
+        "nmi_section": 0.1216,
+        "ari_regime": 0.0073,
+        "nmi_regime": 0.0636
+      }
+    }
+  },
+  "cluster_discriminators": {
+    "description": "Top enriched MIDDLEs per cluster at k=5",
+    "clusters": {
+      "cluster_1": [
+        {
+          "middle": "ect",
+          "enrichment_ratio": 2.11,
+          "cluster_proportion": 0.0039,
+          "global_proportion": 0.0019
+        },
+        {
+          "middle": "lch",
+          "enrichment_ratio": 2.06,
+          "cluster_proportion": 0.0066,
+          "global_proportion": 0.0032
+        },
+        {
+          "middle": "te",
+          "enrichment_ratio": 1.98,
+          "cluster_proportion": 0.0064,
+          "global_proportion": 0.0032
+        },
+        {
+          "middle": "eck",
+          "enrichment_ratio": 1.95,
+          "cluster_proportion": 0.0077,
+          "global_proportion": 0.0039
+        },
+        {
+          "middle": "ke",
+          "enrichment_ratio": 1.73,
+          "cluster_proportion": 0.0291,
+          "global_proportion": 0.0168
+        },
+        {
+          "middle": "oiin",
+          "enrichment_ratio": 1.72,
+          "cluster_proportion": 0.0019,
+          "global_proportion": 0.0011
+        },
+        {
+          "middle": "l",
+          "enrichment_ratio": 1.71,
+          "cluster_proportion": 0.0654,
+          "global_proportion": 0.0381
+        },
+        {
+          "middle": "lk",
+          "enrichment_ratio": 1.67,
+          "cluster_proportion": 0.0047,
+          "global_proportion": 0.0028
+        }
+      ],
+      "cluster_2": [
+        {
+          "middle": "olk",
+          "enrichment_ratio": 2.77,
+          "cluster_proportion": 0.004,
+          "global_proportion": 0.0014
+        },
+        {
+          "middle": "ai",
+          "enrichment_ratio": 2.36,
+          "cluster_proportion": 0.0196,
+          "global_proportion": 0.0083
+        },
+        {
+          "middle": "aiin",
+          "enrichment_ratio": 2.36,
+          "cluster_proportion": 0.1024,
+          "global_proportion": 0.0435
+        },
+        {
+          "middle": "al",
+          "enrichment_ratio": 2.2,
+          "cluster_proportion": 0.0536,
+          "global_proportion": 0.0244
+        },
+        {
+          "middle": "kc",
+          "enrichment_ratio": 2.17,
+          "cluster_proportion": 0.0035,
+          "global_proportion": 0.0016
+        },
+        {
+          "middle": "p",
+          "enrichment_ratio": 1.76,
+          "cluster_proportion": 0.0039,
+          "global_proportion": 0.0022
+        },
+        {
+          "middle": "op",
+          "enrichment_ratio": 1.69,
+          "cluster_proportion": 0.0027,
+          "global_proportion": 0.0016
+        },
+        {
+          "middle": "o",
+          "enrichment_ratio": 1.68,
+          "cluster_proportion": 0.0398,
+          "global_proportion": 0.0237
+        }
+      ],
+      "cluster_3": [
+        {
+          "middle": "keeo",
+          "enrichment_ratio": 2.92,
+          "cluster_proportion": 0.0044,
+          "global_proportion": 0.0015
+        },
+        {
+          "middle": "eed",
+          "enrichment_ratio": 2.27,
+          "cluster_proportion": 0.0079,
+          "global_proportion": 0.0035
+        },
+        {
+          "middle": "eod",
+          "enrichment_ratio": 2.24,
+          "cluster_proportion": 0.0095,
+          "global_proportion": 0.0042
+        },
+        {
+          "middle": "eeo",
+          "enrichment_ratio": 2.08,
+          "cluster_proportion": 0.0141,
+          "global_proportion": 0.0068
+        },
+        {
+          "middle": "kee",
+          "enrichment_ratio": 2.04,
+          "cluster_proportion": 0.0031,
+          "global_proportion": 0.0015
+        },
+        {
+          "middle": "ot",
+          "enrichment_ratio": 2.03,
+          "cluster_proportion": 0.004,
+          "global_proportion": 0.002
+        },
+        {
+          "middle": "eo",
+          "enrichment_ratio": 2.01,
+          "cluster_proportion": 0.041,
+          "global_proportion": 0.0204
+        },
+        {
+          "middle": "eeol",
+          "enrichment_ratio": 1.96,
+          "cluster_proportion": 0.0039,
+          "global_proportion": 0.002
+        }
+      ],
+      "cluster_4": [
+        {
+          "middle": "aii",
+          "enrichment_ratio": 2.27,
+          "cluster_proportion": 0.0041,
+          "global_proportion": 0.0018
+        },
+        {
+          "middle": "olk",
+          "enrichment_ratio": 2.25,
+          "cluster_proportion": 0.0033,
+          "global_proportion": 0.0014
+        },
+        {
+          "middle": "ck",
+          "enrichment_ratio": 1.99,
+          "cluster_proportion": 0.0222,
+          "global_proportion": 0.0111
+        },
+        {
+          "middle": "d",
+          "enrichment_ratio": 1.98,
+          "cluster_proportion": 0.0432,
+          "global_proportion": 0.0218
+        },
+        {
+          "middle": "dy",
+          "enrichment_ratio": 1.94,
+          "cluster_proportion": 0.0903,
+          "global_proportion": 0.0466
+        },
+        {
+          "middle": "ka",
+          "enrichment_ratio": 1.91,
+          "cluster_proportion": 0.0023,
+          "global_proportion": 0.0012
+        },
+        {
+          "middle": "m",
+          "enrichment_ratio": 1.86,
+          "cluster_proportion": 0.0102,
+          "global_proportion": 0.0055
+        },
+        {
+          "middle": "ar",
+          "enrichment_ratio": 1.7,
+          "cluster_proportion": 0.0594,
+          "global_proportion": 0.035
+        }
+      ],
+      "cluster_5": [
+        {
+          "middle": "h",
+          "enrichment_ratio": 3.68,
+          "cluster_proportion": 0.0122,
+          "global_proportion": 0.0033
+        },
+        {
+          "middle": "et",
+          "enrichment_ratio": 2.56,
+          "cluster_proportion": 0.0085,
+          "global_proportion": 0.0033
+        },
+        {
+          "middle": "s",
+          "enrichment_ratio": 2.49,
+          "cluster_proportion": 0.027,
+          "global_proportion": 0.0109
+        },
+        {
+          "middle": "eo",
+          "enrichment_ratio": 2.31,
+          "cluster_proportion": 0.047,
+          "global_proportion": 0.0204
+        },
+        {
+          "middle": "eod",
+          "enrichment_ratio": 2.25,
+          "cluster_proportion": 0.0095,
+          "global_proportion": 0.0042
+        },
+        {
+          "middle": "m",
+          "enrichment_ratio": 2.2,
+          "cluster_proportion": 0.012,
+          "global_proportion": 0.0055
+        },
+        {
+          "middle": "eok",
+          "enrichment_ratio": 2.17,
+          "cluster_proportion": 0.004,
+          "global_proportion": 0.0018
+        },
+        {
+          "middle": "eek",
+          "enrichment_ratio": 2.1,
+          "cluster_proportion": 0.006,
+          "global_proportion": 0.0028
+        }
+      ]
+    }
+  },
+  "folio_metadata": {
+    "f103r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 522,
+      "cluster_k5": 1
+    },
+    "f103v": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 449,
+      "cluster_k5": 1
+    },
+    "f104r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 438,
+      "cluster_k5": 3
+    },
+    "f104v": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 458,
+      "cluster_k5": 3
+    },
+    "f105r": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 370,
+      "cluster_k5": 3
+    },
+    "f105v": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 390,
+      "cluster_k5": 2
+    },
+    "f106r": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 421,
+      "cluster_k5": 3
+    },
+    "f106v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "n_tokens": 449,
+      "cluster_k5": 3
+    },
+    "f107r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 488,
+      "cluster_k5": 2
+    },
+    "f107v": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 455,
+      "cluster_k5": 2
+    },
+    "f108r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 491,
+      "cluster_k5": 1
+    },
+    "f108v": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 570,
+      "cluster_k5": 3
+    },
+    "f111r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 614,
+      "cluster_k5": 3
+    },
+    "f111v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "n_tokens": 561,
+      "cluster_k5": 1
+    },
+    "f112r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 394,
+      "cluster_k5": 3
+    },
+    "f112v": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 415,
+      "cluster_k5": 3
+    },
+    "f113r": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 518,
+      "cluster_k5": 3
+    },
+    "f113v": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 479,
+      "cluster_k5": 2
+    },
+    "f114r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "n_tokens": 447,
+      "cluster_k5": 3
+    },
+    "f114v": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "n_tokens": 362,
+      "cluster_k5": 3
+    },
+    "f115r": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "n_tokens": 444,
+      "cluster_k5": 3
+    },
+    "f115v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "n_tokens": 399,
+      "cluster_k5": 3
+    },
+    "f116r": {
+      "section": "S",
+      "regime": "REGIME_2",
+      "n_tokens": 537,
+      "cluster_k5": 1
+    },
+    "f26r": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "n_tokens": 85,
+      "cluster_k5": 5
+    },
+    "f26v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 89,
+      "cluster_k5": 5
+    },
+    "f31r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 100,
+      "cluster_k5": 3
+    },
+    "f31v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 108,
+      "cluster_k5": 3
+    },
+    "f33r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 72,
+      "cluster_k5": 2
+    },
+    "f33v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 109,
+      "cluster_k5": 4
+    },
+    "f34r": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "n_tokens": 144,
+      "cluster_k5": 4
+    },
+    "f34v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 115,
+      "cluster_k5": 4
+    },
+    "f39r": {
+      "section": "H",
+      "regime": "REGIME_1",
+      "n_tokens": 154,
+      "cluster_k5": 4
+    },
+    "f39v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 142,
+      "cluster_k5": 4
+    },
+    "f40r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 97,
+      "cluster_k5": 4
+    },
+    "f40v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 106,
+      "cluster_k5": 4
+    },
+    "f41r": {
+      "section": "H",
+      "regime": "REGIME_1",
+      "n_tokens": 97,
+      "cluster_k5": 5
+    },
+    "f41v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 68,
+      "cluster_k5": 3
+    },
+    "f43r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 150,
+      "cluster_k5": 5
+    },
+    "f43v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 153,
+      "cluster_k5": 5
+    },
+    "f46r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 157,
+      "cluster_k5": 4
+    },
+    "f46v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 111,
+      "cluster_k5": 5
+    },
+    "f48r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 89,
+      "cluster_k5": 5
+    },
+    "f48v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 126,
+      "cluster_k5": 5
+    },
+    "f50r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 89,
+      "cluster_k5": 4
+    },
+    "f50v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 98,
+      "cluster_k5": 4
+    },
+    "f55r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 124,
+      "cluster_k5": 4
+    },
+    "f55v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 104,
+      "cluster_k5": 2
+    },
+    "f57r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 87,
+      "cluster_k5": 5
+    },
+    "f66r": {
+      "section": "T",
+      "regime": "REGIME_1",
+      "n_tokens": 329,
+      "cluster_k5": 3
+    },
+    "f66v": {
+      "section": "H",
+      "regime": "REGIME_1",
+      "n_tokens": 113,
+      "cluster_k5": 5
+    },
+    "f75r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 412,
+      "cluster_k5": 1
+    },
+    "f75v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 339,
+      "cluster_k5": 1
+    },
+    "f76r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 546,
+      "cluster_k5": 1
+    },
+    "f76v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 400,
+      "cluster_k5": 1
+    },
+    "f77r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 325,
+      "cluster_k5": 1
+    },
+    "f77v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 331,
+      "cluster_k5": 1
+    },
+    "f78r": {
+      "section": "B",
+      "regime": "REGIME_4",
+      "n_tokens": 294,
+      "cluster_k5": 1
+    },
+    "f78v": {
+      "section": "B",
+      "regime": "REGIME_3",
+      "n_tokens": 292,
+      "cluster_k5": 1
+    },
+    "f79r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 389,
+      "cluster_k5": 1
+    },
+    "f79v": {
+      "section": "B",
+      "regime": "REGIME_4",
+      "n_tokens": 354,
+      "cluster_k5": 1
+    },
+    "f80r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 441,
+      "cluster_k5": 1
+    },
+    "f80v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 378,
+      "cluster_k5": 1
+    },
+    "f81r": {
+      "section": "B",
+      "regime": "REGIME_2",
+      "n_tokens": 207,
+      "cluster_k5": 1
+    },
+    "f81v": {
+      "section": "B",
+      "regime": "REGIME_3",
+      "n_tokens": 258,
+      "cluster_k5": 1
+    },
+    "f82r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 275,
+      "cluster_k5": 1
+    },
+    "f82v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 298,
+      "cluster_k5": 1
+    },
+    "f83r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 340,
+      "cluster_k5": 1
+    },
+    "f83v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 263,
+      "cluster_k5": 1
+    },
+    "f84r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "n_tokens": 361,
+      "cluster_k5": 1
+    },
+    "f84v": {
+      "section": "B",
+      "regime": "REGIME_3",
+      "n_tokens": 347,
+      "cluster_k5": 1
+    },
+    "f85r1": {
+      "section": "T",
+      "regime": "REGIME_2",
+      "n_tokens": 333,
+      "cluster_k5": 3
+    },
+    "f85r2": {
+      "section": "C",
+      "regime": "REGIME_2",
+      "n_tokens": 155,
+      "cluster_k5": 3
+    },
+    "f86v3": {
+      "section": "C",
+      "regime": "REGIME_2",
+      "n_tokens": 277,
+      "cluster_k5": 3
+    },
+    "f86v4": {
+      "section": "C",
+      "regime": "REGIME_2",
+      "n_tokens": 188,
+      "cluster_k5": 3
+    },
+    "f86v5": {
+      "section": "C",
+      "regime": "REGIME_2",
+      "n_tokens": 381,
+      "cluster_k5": 2
+    },
+    "f86v6": {
+      "section": "C",
+      "regime": "REGIME_4",
+      "n_tokens": 479,
+      "cluster_k5": 2
+    },
+    "f94r": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "n_tokens": 82,
+      "cluster_k5": 2
+    },
+    "f94v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 101,
+      "cluster_k5": 4
+    },
+    "f95r1": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "n_tokens": 103,
+      "cluster_k5": 4
+    },
+    "f95r2": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "n_tokens": 79,
+      "cluster_k5": 4
+    },
+    "f95v1": {
+      "section": "H",
+      "regime": "REGIME_1",
+      "n_tokens": 117,
+      "cluster_k5": 4
+    },
+    "f95v2": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "n_tokens": 64,
+      "cluster_k5": 2
+    }
+  },
+  "verdict": "PASS",
+  "verdict_detail": "Clusters significantly correspond to section (ARI=0.4019 > 0.15, NMI=0.5344 > 0.10, p=0.0001 < 0.01)",
+  "pass_criteria": "ARI > 0.15, NMI > 0.10, permutation p < 0.01",
+  "fail_criteria": "ARI < 0.05 (clusters mirror section only)",
+  "references": [
+    "C909 (section MIDDLE vocabularies)",
+    "C910 (regime MIDDLE clustering)"
+  ]
+}

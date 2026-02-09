@@ -1,0 +1,191 @@
+{
+  "test": "paragraph_vocabulary_scope",
+  "test_number": 3,
+  "question": "Do paragraphs sharing kernel signatures share more MIDDLE vocabulary?",
+  "method": {
+    "description": "Pairwise Jaccard similarity of MIDDLE vocabulary sets within folios, stratified by kernel-signature match. Kernel signature is assigned via tertile classification on the k-h differential (k-proportion minus h-proportion per paragraph MIDDLE set).",
+    "kernel_classification": {
+      "method": "Tertile on k-h differential",
+      "HIGH_K": "k-h diff > 0.110 (top tertile)",
+      "HIGH_H": "k-h diff < 0.000 (bottom tertile)",
+      "BALANCED": "k-h diff in [0.000, 0.110]"
+    },
+    "min_paragraph_tokens": 3,
+    "n_permutations": 1000,
+    "permutation_strategy": "Shuffle kernel signatures within each folio while preserving MIDDLE sets. This tests whether kernel-vocabulary coupling is genuine or an artifact of folio structure."
+  },
+  "data_summary": {
+    "total_currier_b_tokens": 23096,
+    "total_paragraphs": 494,
+    "folios_with_paragraphs": 82,
+    "folios_with_2plus_paragraphs": 75,
+    "kernel_signature_distribution": {
+      "BALANCED": 228,
+      "HIGH_K": 165,
+      "HIGH_H": 101
+    },
+    "kh_differential": {
+      "mean": 0.0633,
+      "std": 0.1073,
+      "q33": 0.0,
+      "q66": 0.1103
+    },
+    "group_profiles": {
+      "HIGH_K": {
+        "n": 165,
+        "mean_k_prop": 0.2474,
+        "mean_h_prop": 0.0703,
+        "mean_e_prop": 0.3587,
+        "mean_vocab_size": 24.3
+      },
+      "HIGH_H": {
+        "n": 101,
+        "mean_k_prop": 0.1081,
+        "mean_h_prop": 0.1949,
+        "mean_e_prop": 0.3267,
+        "mean_vocab_size": 24.4
+      },
+      "BALANCED": {
+        "n": 228,
+        "mean_k_prop": 0.1583,
+        "mean_h_prop": 0.111,
+        "mean_e_prop": 0.3469,
+        "mean_vocab_size": 25.2
+      }
+    }
+  },
+  "pairwise_results": {
+    "n_same_kernel_pairs": 892,
+    "n_diff_kernel_pairs": 1257,
+    "mean_jaccard_same": 0.2346,
+    "mean_jaccard_diff": 0.2194,
+    "median_jaccard_same": 0.2308,
+    "median_jaccard_diff": 0.2121,
+    "std_jaccard_same": 0.0871,
+    "std_jaccard_diff": 0.0856,
+    "lift_same_over_diff": 1.069,
+    "cohens_d": 0.1753
+  },
+  "statistical_test": {
+    "test": "Mann-Whitney U (one-sided: same > diff)",
+    "U_statistic": 616578.0,
+    "p_value": 3.939e-05,
+    "significant_at_001": true
+  },
+  "permutation_null": {
+    "n_permutations": 1000,
+    "null_mean_lift": 1.0061,
+    "null_std_lift": 0.018,
+    "observed_lift": 1.069,
+    "z_score": 3.49,
+    "permutation_p_value": 0.0,
+    "exceeds_null": true
+  },
+  "pair_type_breakdown": {
+    "BALANCED_vs_BALANCED": {
+      "n_pairs": 464,
+      "mean_jaccard": 0.2348,
+      "median_jaccard": 0.2315,
+      "std_jaccard": 0.0887
+    },
+    "BALANCED_vs_HIGH_H": {
+      "n_pairs": 429,
+      "mean_jaccard": 0.2067,
+      "median_jaccard": 0.2,
+      "std_jaccard": 0.0802
+    },
+    "BALANCED_vs_HIGH_K": {
+      "n_pairs": 608,
+      "mean_jaccard": 0.238,
+      "median_jaccard": 0.2333,
+      "std_jaccard": 0.0877
+    },
+    "HIGH_H_vs_HIGH_H": {
+      "n_pairs": 113,
+      "mean_jaccard": 0.1808,
+      "median_jaccard": 0.1774,
+      "std_jaccard": 0.0706
+    },
+    "HIGH_H_vs_HIGH_K": {
+      "n_pairs": 220,
+      "mean_jaccard": 0.1929,
+      "median_jaccard": 0.1923,
+      "std_jaccard": 0.0778
+    },
+    "HIGH_K_vs_HIGH_K": {
+      "n_pairs": 315,
+      "mean_jaccard": 0.2534,
+      "median_jaccard": 0.25,
+      "std_jaccard": 0.0818
+    }
+  },
+  "paragraph_initial_prediction": {
+    "description": "Can first 3 tokens predict paragraph kernel signature?",
+    "paragraphs_testable": 329,
+    "paragraphs_total": 494,
+    "prediction_accuracy": 0.5623,
+    "baseline_accuracy": 0.4615,
+    "accuracy_lift": 1.2183,
+    "initial_tokens_predictive": true,
+    "predictive_middles_count": 33,
+    "top_predictive_middles": {
+      "edy": {
+        "predicts": "BALANCED",
+        "fraction": 0.531,
+        "total_occurrences": 96
+      },
+      "d": {
+        "predicts": "BALANCED",
+        "fraction": 0.54,
+        "total_occurrences": 50
+      },
+      "r": {
+        "predicts": "BALANCED",
+        "fraction": 0.59,
+        "total_occurrences": 39
+      },
+      "dy": {
+        "predicts": "BALANCED",
+        "fraction": 0.514,
+        "total_occurrences": 37
+      },
+      "or": {
+        "predicts": "BALANCED",
+        "fraction": 0.52,
+        "total_occurrences": 25
+      },
+      "t": {
+        "predicts": "BALANCED",
+        "fraction": 0.522,
+        "total_occurrences": 23
+      },
+      "al": {
+        "predicts": "HIGH_K",
+        "fraction": 0.562,
+        "total_occurrences": 16
+      },
+      "eey": {
+        "predicts": "HIGH_K",
+        "fraction": 0.6,
+        "total_occurrences": 15
+      },
+      "pch": {
+        "predicts": "HIGH_H",
+        "fraction": 0.583,
+        "total_occurrences": 12
+      },
+      "y": {
+        "predicts": "BALANCED",
+        "fraction": 0.583,
+        "total_occurrences": 12
+      }
+    }
+  },
+  "pass_criteria": {
+    "required_p_value": "< 0.01",
+    "required_lift": "> 1.15",
+    "required_perm_exceed": true
+  },
+  "verdict": "FAIL",
+  "interpretation": "Vocabulary overlap is not strongly explained by kernel signature. Paragraph MIDDLE vocabulary appears driven by folio-level pool rather than by kernel process mode."
+}

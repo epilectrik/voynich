@@ -1,0 +1,221 @@
+{
+  "test": "paragraph_kernel_sequence_stereotypy",
+  "phase": "MATERIAL_LOCUS_SEARCH",
+  "test_number": 7,
+  "question": "Do paragraph kernel profile sequences follow section-specific patterns?",
+  "method": {
+    "description": "Classify each paragraph by kernel profile (HIGH_K, HIGH_E, BALANCED) using tertile thresholds on k-class and e-class MIDDLE proportions. Build paragraph-to-paragraph transition matrices per section. Test section-specificity via chi-square and entropy analysis with permutation null.",
+    "kernel_class_rules": {
+      "k_class": "MIDDLE contains 'k' (k, ck, kch, ke, ked, kee, ek, etc.)",
+      "e_class": "MIDDLE starts with 'e' (e, ed, edy, eo, eol, etc.)",
+      "h_class": "MIDDLE is 'h' or starts with 'h' (not ch-initial) -- too sparse for tertile, merged into BALANCED"
+    },
+    "classification_thresholds": {
+      "k_prop_67th_percentile": 0.2037,
+      "e_prop_67th_percentile": 0.3333
+    },
+    "min_paragraphs_per_folio": 3,
+    "permutations": 1000,
+    "random_seed": 42
+  },
+  "data_summary": {
+    "total_paragraphs": 585,
+    "class_distribution": {
+      "BALANCED": 307,
+      "HIGH_E": 199,
+      "HIGH_K": 79
+    },
+    "qualifying_folios": 59,
+    "total_transitions": 486,
+    "transitions_per_section": {
+      "B": 128,
+      "C": 22,
+      "H": 25,
+      "S": 266,
+      "T": 45
+    }
+  },
+  "global_transition_matrix": {
+    "BALANCED->BALANCED": 156,
+    "HIGH_E->HIGH_E": 89,
+    "HIGH_E->BALANCED": 71,
+    "BALANCED->HIGH_E": 61,
+    "BALANCED->HIGH_K": 34,
+    "HIGH_K->BALANCED": 24,
+    "HIGH_K->HIGH_E": 19,
+    "HIGH_E->HIGH_K": 17,
+    "HIGH_K->HIGH_K": 15
+  },
+  "section_entropy": {
+    "B": {
+      "entropy_bits": 2.789504,
+      "n_transitions": 128,
+      "n_unique_transition_types": 9,
+      "top_transitions": {
+        "BALANCED->BALANCED": 46,
+        "HIGH_E->BALANCED": 18,
+        "BALANCED->HIGH_E": 15,
+        "BALANCED->HIGH_K": 12,
+        "HIGH_K->BALANCED": 9
+      }
+    },
+    "C": {
+      "entropy_bits": 1.488602,
+      "n_transitions": 22,
+      "n_unique_transition_types": 5,
+      "top_transitions": {
+        "BALANCED->BALANCED": 15,
+        "HIGH_E->BALANCED": 3,
+        "HIGH_E->HIGH_E": 2,
+        "BALANCED->HIGH_E": 1,
+        "BALANCED->HIGH_K": 1
+      }
+    },
+    "H": {
+      "entropy_bits": 2.501151,
+      "n_transitions": 25,
+      "n_unique_transition_types": 7,
+      "top_transitions": {
+        "HIGH_E->HIGH_E": 7,
+        "BALANCED->BALANCED": 7,
+        "BALANCED->HIGH_E": 3,
+        "BALANCED->HIGH_K": 3,
+        "HIGH_E->BALANCED": 3
+      }
+    },
+    "S": {
+      "entropy_bits": 2.79252,
+      "n_transitions": 266,
+      "n_unique_transition_types": 9,
+      "top_transitions": {
+        "HIGH_E->HIGH_E": 70,
+        "BALANCED->BALANCED": 54,
+        "HIGH_E->BALANCED": 44,
+        "BALANCED->HIGH_E": 38,
+        "BALANCED->HIGH_K": 18
+      }
+    },
+    "T": {
+      "entropy_bits": 1.320106,
+      "n_transitions": 45,
+      "n_unique_transition_types": 6,
+      "top_transitions": {
+        "BALANCED->BALANCED": 34,
+        "BALANCED->HIGH_E": 4,
+        "HIGH_E->BALANCED": 3,
+        "HIGH_E->HIGH_E": 2,
+        "HIGH_E->HIGH_K": 1
+      }
+    }
+  },
+  "permutation_test": {
+    "observed_chi2": 102.9032,
+    "observed_chi2_analytical_p": 0.0,
+    "observed_df": 32,
+    "observed_mean_entropy": 2.581378,
+    "null_chi2_mean": 97.6235,
+    "null_chi2_95th": 110.2456,
+    "null_chi2_99th": 116.6202,
+    "chi2_permutation_p": 0.233,
+    "null_entropy_mean": 2.628555,
+    "null_entropy_5th": 2.60039,
+    "entropy_permutation_p": 0.004,
+    "n_permutations": 1000
+  },
+  "example_sequences": {
+    "B": [
+      {
+        "folio": "f84r",
+        "sequence": "BALANCED -> BALANCED -> BALANCED -> HIGH_E -> BALANCED -> BALANCED -> BALANCED -> HIGH_E -> BALANCED -> BALANCED -> BALANCED -> HIGH_E -> BALANCED -> HIGH_K -> BALANCED -> HIGH_K -> HIGH_E -> BALANCED",
+        "length": 18
+      },
+      {
+        "folio": "f80r",
+        "sequence": "BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> HIGH_K -> BALANCED -> BALANCED -> BALANCED -> HIGH_K -> BALANCED -> HIGH_K -> HIGH_K -> HIGH_K -> BALANCED",
+        "length": 16
+      },
+      {
+        "folio": "f77r",
+        "sequence": "HIGH_K -> HIGH_E -> HIGH_K -> BALANCED -> BALANCED -> BALANCED -> HIGH_E -> HIGH_E -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED",
+        "length": 13
+      }
+    ],
+    "C": [
+      {
+        "folio": "f86v3",
+        "sequence": "HIGH_E -> BALANCED -> HIGH_E -> HIGH_E -> HIGH_E -> BALANCED -> BALANCED",
+        "length": 7
+      },
+      {
+        "folio": "f85r2",
+        "sequence": "BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED",
+        "length": 6
+      },
+      {
+        "folio": "f86v5",
+        "sequence": "BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED",
+        "length": 6
+      }
+    ],
+    "H": [
+      {
+        "folio": "f26v",
+        "sequence": "HIGH_E -> HIGH_E -> HIGH_E -> HIGH_E",
+        "length": 4
+      },
+      {
+        "folio": "f31r",
+        "sequence": "BALANCED -> HIGH_E -> HIGH_E -> HIGH_E",
+        "length": 4
+      },
+      {
+        "folio": "f39r",
+        "sequence": "BALANCED -> BALANCED -> BALANCED -> HIGH_K",
+        "length": 4
+      }
+    ],
+    "S": [
+      {
+        "folio": "f103r",
+        "sequence": "BALANCED -> HIGH_E -> HIGH_E -> HIGH_K -> HIGH_E -> HIGH_E -> HIGH_K -> HIGH_E -> HIGH_E -> BALANCED -> HIGH_E -> HIGH_E -> BALANCED -> HIGH_E -> HIGH_E -> HIGH_E -> HIGH_E -> BALANCED",
+        "length": 18
+      },
+      {
+        "folio": "f108r",
+        "sequence": "HIGH_E -> HIGH_E -> BALANCED -> BALANCED -> HIGH_K -> HIGH_E -> HIGH_E -> BALANCED -> HIGH_E -> HIGH_E -> HIGH_E -> HIGH_E -> BALANCED -> HIGH_E -> HIGH_E -> HIGH_K",
+        "length": 16
+      },
+      {
+        "folio": "f113r",
+        "sequence": "HIGH_E -> BALANCED -> BALANCED -> HIGH_E -> HIGH_E -> BALANCED -> HIGH_K -> HIGH_K -> BALANCED -> HIGH_E -> BALANCED -> BALANCED -> HIGH_E -> HIGH_E -> HIGH_E -> HIGH_E",
+        "length": 16
+      }
+    ],
+    "T": [
+      {
+        "folio": "f66r",
+        "sequence": "BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> BALANCED -> HIGH_E -> HIGH_K -> HIGH_E -> BALANCED -> HIGH_E -> HIGH_E",
+        "length": 37
+      },
+      {
+        "folio": "f85r1",
+        "sequence": "HIGH_E -> BALANCED -> BALANCED -> BALANCED -> HIGH_E -> HIGH_E -> BALANCED -> BALANCED -> BALANCED -> HIGH_E",
+        "length": 10
+      }
+    ]
+  },
+  "verdict": "PASS",
+  "verdict_detail": "Section-specific paragraph ordering confirmed via entropy analysis. Entropy permutation p = 0.0040 (< 0.01): observed mean entropy (2.5814 bits) is significantly lower than null (2.6286 bits). Entropy range across sections: 1.4724 bits (lowest: section T at 1.3201, highest: section S at 2.7925). Chi-square permutation p = 0.2330 (transition distributions overlap across sections, but ordering stereotypy differs).",
+  "entropy_summary": {
+    "min_entropy_section": "T",
+    "min_entropy_value": 1.320106,
+    "max_entropy_section": "S",
+    "max_entropy_value": 2.79252,
+    "entropy_range": 1.472414
+  },
+  "references": [
+    "C827",
+    "C834",
+    "BCSC"
+  ]
+}

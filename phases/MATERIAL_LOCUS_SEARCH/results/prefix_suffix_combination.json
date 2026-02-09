@@ -1,0 +1,259 @@
+{
+  "test": "prefix_suffix_combination",
+  "description": "Does the (PREFIX, SUFFIX) pair carry emergent section information beyond either component alone?",
+  "timestamp": "2026-02-09T11:51:21.064211",
+  "parameters": {
+    "min_type_count": 5,
+    "n_permutations": 1000,
+    "sections": [
+      "B",
+      "H",
+      "S",
+      "T",
+      "C"
+    ]
+  },
+  "counts": {
+    "total_tokens": 23096,
+    "prefix_types": 35,
+    "prefix_types_total": 36,
+    "suffix_types": 29,
+    "suffix_types_total": 36,
+    "pair_types": 283,
+    "pair_types_total": 617
+  },
+  "exclusivity": {
+    "prefix": 0.0,
+    "prefix_exclusive_n": 0,
+    "prefix_total_n": 35,
+    "suffix": 0.0,
+    "suffix_exclusive_n": 0,
+    "suffix_total_n": 29,
+    "pair": 0.0177,
+    "pair_exclusive_n": 5,
+    "pair_total_n": 283,
+    "pair_minus_prefix_pp": 1.8,
+    "pair_minus_suffix_pp": 1.8,
+    "exceeds_both_by_10pp": false
+  },
+  "independence_model": {
+    "expected_pair_excl": 0.0,
+    "observed_minus_expected": 0.0177
+  },
+  "permutation_test": {
+    "null_mean": 0.0038,
+    "null_std": 0.0037,
+    "observed": 0.0177,
+    "p_value": 0.003,
+    "significant": true,
+    "n_permutations": 1000
+  },
+  "cramers_v": {
+    "prefix_v": 0.1511,
+    "prefix_chi2": 2108.4,
+    "prefix_p": 0.0,
+    "suffix_v": 0.1158,
+    "suffix_chi2": 1238.3,
+    "suffix_p": 3.881469541696701e-189,
+    "pair_v": 0.2232,
+    "pair_chi2": 4476.0,
+    "pair_p": 0.0
+  },
+  "exclusive_pairs_top": [
+    {
+      "prefix": "ok",
+      "suffix": "ain",
+      "section": "S",
+      "count": 10
+    },
+    {
+      "prefix": "lk",
+      "suffix": "eey",
+      "section": "S",
+      "count": 8
+    },
+    {
+      "prefix": "lk",
+      "suffix": "al",
+      "section": "S",
+      "count": 6
+    },
+    {
+      "prefix": "lk",
+      "suffix": "r",
+      "section": "S",
+      "count": 6
+    },
+    {
+      "prefix": "lk",
+      "suffix": "ain",
+      "section": "S",
+      "count": 5
+    }
+  ],
+  "multi_section_pairs_top": [
+    {
+      "prefix": "ot",
+      "suffix": "al",
+      "n_sections": 2,
+      "total": 19,
+      "max_section": "S",
+      "max_share": 0.947
+    },
+    {
+      "prefix": "ot",
+      "suffix": "eey",
+      "n_sections": 2,
+      "total": 12,
+      "max_section": "S",
+      "max_share": 0.917
+    },
+    {
+      "prefix": "ot",
+      "suffix": "hy",
+      "n_sections": 2,
+      "total": 11,
+      "max_section": "S",
+      "max_share": 0.909
+    },
+    {
+      "prefix": "ok",
+      "suffix": "aiin",
+      "n_sections": 2,
+      "total": 11,
+      "max_section": "S",
+      "max_share": 0.909
+    },
+    {
+      "prefix": "pch",
+      "suffix": "or",
+      "n_sections": 2,
+      "total": 9,
+      "max_section": "S",
+      "max_share": 0.889
+    },
+    {
+      "prefix": "so",
+      "suffix": "ey",
+      "n_sections": 2,
+      "total": 9,
+      "max_section": "B",
+      "max_share": 0.889
+    },
+    {
+      "prefix": "qo",
+      "suffix": "iin",
+      "n_sections": 2,
+      "total": 9,
+      "max_section": "S",
+      "max_share": 0.889
+    },
+    {
+      "prefix": "ot",
+      "suffix": "r",
+      "n_sections": 3,
+      "total": 25,
+      "max_section": "S",
+      "max_share": 0.88
+    },
+    {
+      "prefix": "qo",
+      "suffix": "eeol",
+      "n_sections": 2,
+      "total": 8,
+      "max_section": "S",
+      "max_share": 0.875
+    },
+    {
+      "prefix": "lk",
+      "suffix": "dy",
+      "n_sections": 3,
+      "total": 16,
+      "max_section": "S",
+      "max_share": 0.875
+    },
+    {
+      "prefix": "al",
+      "suffix": "ain",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "S",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "ol",
+      "suffix": "ol",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "B",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "pch",
+      "suffix": "ain",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "S",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "lk",
+      "suffix": "s",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "S",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "lsh",
+      "suffix": "edy",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "B",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "dch",
+      "suffix": "s",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "S",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "po",
+      "suffix": "al",
+      "n_sections": 2,
+      "total": 7,
+      "max_section": "S",
+      "max_share": 0.857
+    },
+    {
+      "prefix": "lk",
+      "suffix": "edy",
+      "n_sections": 4,
+      "total": 50,
+      "max_section": "S",
+      "max_share": 0.84
+    },
+    {
+      "prefix": "yk",
+      "suffix": "or",
+      "n_sections": 2,
+      "total": 6,
+      "max_section": "S",
+      "max_share": 0.833
+    },
+    {
+      "prefix": "lk",
+      "suffix": "or",
+      "n_sections": 2,
+      "total": 6,
+      "max_section": "S",
+      "max_share": 0.833
+    }
+  ],
+  "multi_section_mean_max_share": 0.5663,
+  "verdict": "PARTIAL",
+  "verdict_reason": "Pair exclusivity does NOT exceed both by >10pp (vs PREFIX: +1.8pp, vs SUFFIX: +1.8pp); Permutation p=0.0030 < 0.01"
+}

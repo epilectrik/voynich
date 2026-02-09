@@ -1,0 +1,132 @@
+{
+  "test": "cross_paragraph_persistence",
+  "test_number": 12,
+  "question": "Do folio-persistent rare MIDDLEs (appearing in >80% of a folio's paragraphs but in <15 folios total) exist as material markers?",
+  "method": {
+    "description": "For each Currier B folio with 3+ paragraphs, identify rare MIDDLEs (<15 folios) that persist across >80% of paragraphs. Test whether these are morphologically distinct from common MIDDLEs (40+ folios) using Levenshtein distance, and whether they are section-specific.",
+    "rare_folio_threshold": 15,
+    "common_folio_threshold": 40,
+    "min_paragraphs_per_folio": 3,
+    "persistence_threshold_strict": 0.8,
+    "persistence_threshold_used": 0.6,
+    "strict_threshold_yielded_zero": true,
+    "distance_pass_threshold": 2.0
+  },
+  "data_summary": {
+    "total_b_tokens_with_middle": 23096,
+    "total_paragraphs": 585,
+    "total_b_folios": 82,
+    "eligible_folios": 59,
+    "unique_middles": 1293,
+    "rare_middles": 1208,
+    "common_middles": 41
+  },
+  "persistence_results": {
+    "folio_persistent_rare_instances": 3,
+    "unique_persistent_rare_middles": 3,
+    "folios_with_persistent_rare": 3,
+    "mean_persistent_per_folio": 1.0,
+    "top_examples": [
+      {
+        "middle": "lsh",
+        "folio": "f76r",
+        "section": "B",
+        "paragraph_fraction": 0.75,
+        "n_paragraphs": 4,
+        "paragraphs_with_middle": 3,
+        "folio_count": 14,
+        "nearest_common_middle": "ckh",
+        "distance_to_nearest_common": 2
+      },
+      {
+        "middle": "ef",
+        "folio": "f40v",
+        "section": "H",
+        "paragraph_fraction": 0.6667,
+        "n_paragraphs": 3,
+        "paragraphs_with_middle": 2,
+        "folio_count": 5,
+        "nearest_common_middle": "e",
+        "distance_to_nearest_common": 1
+      },
+      {
+        "middle": "yt",
+        "folio": "f43r",
+        "section": "H",
+        "paragraph_fraction": 0.6667,
+        "n_paragraphs": 3,
+        "paragraphs_with_middle": 2,
+        "folio_count": 9,
+        "nearest_common_middle": "ct",
+        "distance_to_nearest_common": 1
+      }
+    ]
+  },
+  "edit_distance_analysis": {
+    "n_analyzed": 3,
+    "mean_distance": 1.333,
+    "median_distance": 1,
+    "distance_1_count": 2,
+    "distance_1_fraction": 0.6667,
+    "distance_distribution": {
+      "1": 2,
+      "2": 1
+    },
+    "sample_entries": {
+      "ef": {
+        "nearest_common": "e",
+        "distance": 1,
+        "folio_count": 5
+      },
+      "yt": {
+        "nearest_common": "ct",
+        "distance": 1,
+        "folio_count": 9
+      },
+      "lsh": {
+        "nearest_common": "ckh",
+        "distance": 2,
+        "folio_count": 14
+      }
+    }
+  },
+  "section_analysis": {
+    "sections_represented": [
+      "B",
+      "H"
+    ],
+    "section_breakdown": {
+      "B": {
+        "instances": 1,
+        "unique_middles": 1,
+        "example_middles": [
+          "lsh"
+        ]
+      },
+      "H": {
+        "instances": 2,
+        "unique_middles": 2,
+        "example_middles": [
+          "ef",
+          "yt"
+        ]
+      }
+    },
+    "section_exclusive_count": 3,
+    "multi_section_count": 0,
+    "exclusive_fraction": 1.0
+  },
+  "pass_criteria": {
+    "min_persistent_middles": 10,
+    "min_mean_distance": 2.0,
+    "min_exclusive_fraction": 0.5,
+    "checks": {
+      "enough_persistent": false,
+      "morphologically_distant": false,
+      "section_specific": true,
+      "low_variant_fraction": false
+    }
+  },
+  "verdict": "FAIL",
+  "interpretation": "Insufficient folio-persistent rare MIDDLEs found. Only 3 unique persistent rare MIDDLEs (threshold: >10). At the strict >80% paragraph persistence level, zero rare MIDDLEs qualify. The phenomenon of cross-paragraph material persistence does not exist at the tested thresholds."
+}

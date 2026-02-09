@@ -1,0 +1,3907 @@
+{
+  "test": "Test 15: Paragraph-by-Paragraph Material Tracking",
+  "question": "Can we track material identity through a folio by reading its paragraphs sequentially?",
+  "folios_analyzed": [
+    "f103r",
+    "f39r",
+    "f86v3",
+    "f66r",
+    "f107r",
+    "f103v"
+  ],
+  "folio_sections": {
+    "f103r": "S",
+    "f39r": "H",
+    "f86v3": "C",
+    "f66r": "T",
+    "f107r": "S",
+    "f103v": "S"
+  },
+  "global_stats": {
+    "total_b_folios": 82,
+    "unique_middles": 1293,
+    "rare_middles_count": 1208,
+    "common_middles_count": 41
+  },
+  "per_folio_narratives": {
+    "f103r": {
+      "section": "S",
+      "n_paragraphs": 12,
+      "signal_count": 4,
+      "signals": [
+        "Low specificity rate (23.7%): vocabulary shared across paragraphs",
+        "Consistent markers across paragraphs: ['ANIMAL', 'WATER']",
+        "Kernel varies ({'ESCAPE_DOMINANT', 'BALANCED'}) but vocabulary overlaps (avg Jaccard 0.24)",
+        "P1 has intro-only MIDDLEs: ['echypc']"
+      ],
+      "has_material_signal": true,
+      "avg_jaccard": 0.242,
+      "specificity_rate": 0.237,
+      "kernel_balances": [
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "material_reading": "SHARED VOCABULARY (avg Jaccard 0.24): High overlap suggests material continuity, though no single rare MIDDLE dominates. Material identity may be distributed across common vocabulary rather than marked by rare tokens."
+    },
+    "f39r": {
+      "section": "H",
+      "n_paragraphs": 6,
+      "signal_count": 2,
+      "signals": [
+        "Kernel varies ({'ESCAPE_DOMINANT', 'HAZARD_HEAVY', 'BALANCED'}) but vocabulary overlaps (avg Jaccard 0.19)",
+        "P1 has intro-only MIDDLEs: ['cphhof', 'do']"
+      ],
+      "has_material_signal": true,
+      "avg_jaccard": 0.188,
+      "specificity_rate": 0.383,
+      "kernel_balances": [
+        "BALANCED",
+        "HAZARD_HEAVY",
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "ESCAPE_DOMINANT"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "material_reading": "INDEPENDENT PROGRAMS: Low vocabulary overlap (avg Jaccard 0.19) and no persistent rare MIDDLEs. Each paragraph appears to operate on different material or the same material with different vocabulary focus."
+    },
+    "f86v3": {
+      "section": "C",
+      "n_paragraphs": 3,
+      "signal_count": 3,
+      "signals": [
+        "Consistent markers across paragraphs: ['ANIMAL', 'WATER', 'ROOT', 'OIL']",
+        "Kernel varies ({'ESCAPE_DOMINANT', 'BALANCED'}) but vocabulary overlaps (avg Jaccard 0.27)",
+        "P1 has intro-only MIDDLEs: ['ke']"
+      ],
+      "has_material_signal": true,
+      "avg_jaccard": 0.272,
+      "specificity_rate": 0.444,
+      "kernel_balances": [
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "BALANCED"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "material_reading": "SHARED VOCABULARY (avg Jaccard 0.27): High overlap suggests material continuity, though no single rare MIDDLE dominates. Material identity may be distributed across common vocabulary rather than marked by rare tokens."
+    },
+    "f66r": {
+      "section": "T",
+      "n_paragraphs": 8,
+      "signal_count": 3,
+      "signals": [
+        "Consistent markers across paragraphs: ['ANIMAL', 'WATER']",
+        "Kernel varies ({'ESCAPE_DOMINANT', 'NO_KERNELS', 'BALANCED'}) but vocabulary overlaps (avg Jaccard 0.15)",
+        "P1 has intro-only MIDDLEs: ['iin']"
+      ],
+      "has_material_signal": true,
+      "avg_jaccard": 0.152,
+      "specificity_rate": 0.344,
+      "kernel_balances": [
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "NO_KERNELS"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "material_reading": "INDEPENDENT PROGRAMS: Low vocabulary overlap (avg Jaccard 0.15) and no persistent rare MIDDLEs. Each paragraph appears to operate on different material or the same material with different vocabulary focus."
+    },
+    "f107r": {
+      "section": "S",
+      "n_paragraphs": 18,
+      "signal_count": 4,
+      "signals": [
+        "Low specificity rate (21.2%): vocabulary shared across paragraphs",
+        "Consistent markers across paragraphs: ['ANIMAL', 'WATER']",
+        "Kernel varies ({'ESCAPE_DOMINANT', 'HAZARD_HEAVY', 'ENERGY_DOMINANT', 'BALANCED'}) but vocabulary overlaps (avg Jaccard 0.18)",
+        "P1 has intro-only MIDDLEs: ['dl', 'eeol', 'eol']"
+      ],
+      "has_material_signal": true,
+      "avg_jaccard": 0.179,
+      "specificity_rate": 0.212,
+      "kernel_balances": [
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "ENERGY_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ENERGY_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "HAZARD_HEAVY",
+        "ENERGY_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "BALANCED"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "material_reading": "INDEPENDENT PROGRAMS: Low vocabulary overlap (avg Jaccard 0.18) and no persistent rare MIDDLEs. Each paragraph appears to operate on different material or the same material with different vocabulary focus."
+    },
+    "f103v": {
+      "section": "S",
+      "n_paragraphs": 11,
+      "signal_count": 4,
+      "signals": [
+        "Low specificity rate (21.3%): vocabulary shared across paragraphs",
+        "Consistent markers across paragraphs: ['ANIMAL', 'WATER']",
+        "Kernel varies ({'ESCAPE_DOMINANT', 'ENERGY_DOMINANT', 'BALANCED'}) but vocabulary overlaps (avg Jaccard 0.28)",
+        "P1 has intro-only MIDDLEs: ['fch']"
+      ],
+      "has_material_signal": true,
+      "avg_jaccard": 0.277,
+      "specificity_rate": 0.213,
+      "kernel_balances": [
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "BALANCED",
+        "ESCAPE_DOMINANT",
+        "ENERGY_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT",
+        "ESCAPE_DOMINANT"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "material_reading": "SHARED VOCABULARY (avg Jaccard 0.28): High overlap suggests material continuity, though no single rare MIDDLE dominates. Material identity may be distributed across common vocabulary rather than marked by rare tokens."
+    }
+  },
+  "per_folio_vocabulary": {
+    "f103r": {
+      "folio_wide_middles": [],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "paragraph_vocabulary": {
+        "P1": {
+          "total_middles": 29,
+          "middles": [
+            "ain",
+            "al",
+            "ar",
+            "ck",
+            "cphh",
+            "d",
+            "dar",
+            "dy",
+            "echypc",
+            "ed",
+            "edy",
+            "eek",
+            "eey",
+            "ek",
+            "eot",
+            "ep",
+            "ey",
+            "in",
+            "k",
+            "l",
+            "lok",
+            "ok",
+            "ol",
+            "opch",
+            "or",
+            "ot",
+            "r",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "cphh",
+            "dar",
+            "echypc",
+            "eot",
+            "lok",
+            "ot"
+          ],
+          "initial_middles": [
+            "dy",
+            "echypc",
+            "ed"
+          ],
+          "intro_only_middles": [
+            "echypc"
+          ],
+          "material_markers": {
+            "WATER": 4,
+            "ANIMAL": 3,
+            "ROOT": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 9,
+              "h": 3,
+              "k": 7
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P2": {
+          "total_middles": 40,
+          "middles": [
+            "adch",
+            "aiin",
+            "ain",
+            "al",
+            "am",
+            "an",
+            "ar",
+            "ck",
+            "ct",
+            "dy",
+            "e",
+            "ec",
+            "ed",
+            "edy",
+            "eedar",
+            "eek",
+            "eeo",
+            "eey",
+            "ek",
+            "eol",
+            "et",
+            "ey",
+            "iin",
+            "ikhyk",
+            "in",
+            "is",
+            "k",
+            "keal",
+            "l",
+            "lo",
+            "n",
+            "o",
+            "och",
+            "ofcho",
+            "ol",
+            "ols",
+            "r",
+            "ro",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "adch",
+            "an",
+            "eedar",
+            "ikhyk",
+            "is",
+            "keal",
+            "lo",
+            "n",
+            "och",
+            "ofcho",
+            "ols",
+            "ro"
+          ],
+          "initial_middles": [
+            "ar",
+            "ed",
+            "edy"
+          ],
+          "intro_only_middles": [
+            "ed"
+          ],
+          "material_markers": {
+            "WATER": 3,
+            "ANIMAL": 8
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 13,
+              "k": 7,
+              "h": 3
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P3": {
+          "total_middles": 25,
+          "middles": [
+            "aiin",
+            "ain",
+            "ck",
+            "ct",
+            "d",
+            "dy",
+            "e",
+            "eck",
+            "edy",
+            "eek",
+            "eey",
+            "efh",
+            "ek",
+            "ey",
+            "k",
+            "keec",
+            "l",
+            "ol",
+            "olk",
+            "opch",
+            "or",
+            "r",
+            "s",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "efh",
+            "keec",
+            "olk",
+            "s"
+          ],
+          "initial_middles": [
+            "d",
+            "e",
+            "t"
+          ],
+          "intro_only_middles": [],
+          "material_markers": {
+            "ANIMAL": 7,
+            "ROOT": 1,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 12,
+              "k": 12,
+              "h": 2
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P4": {
+          "total_middles": 15,
+          "middles": [
+            "aiin",
+            "ain",
+            "ar",
+            "ck",
+            "ect",
+            "edy",
+            "eey",
+            "eol",
+            "ey",
+            "k",
+            "kalsh",
+            "l",
+            "lch",
+            "or",
+            "y"
+          ],
+          "specific_middles": [
+            "ect",
+            "kalsh",
+            "lch"
+          ],
+          "initial_middles": [
+            "ain",
+            "k",
+            "lch"
+          ],
+          "intro_only_middles": [
+            "lch"
+          ],
+          "material_markers": {
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 2,
+              "k": 6,
+              "e": 7
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P5": {
+          "total_middles": 21,
+          "middles": [
+            "a",
+            "ain",
+            "al",
+            "ar",
+            "ck",
+            "ckho",
+            "ct",
+            "d",
+            "e",
+            "eck",
+            "edy",
+            "ep",
+            "iin",
+            "k",
+            "ke",
+            "l",
+            "lk",
+            "ls",
+            "ol",
+            "opc",
+            "t"
+          ],
+          "specific_middles": [
+            "a",
+            "ckho",
+            "ls",
+            "opc"
+          ],
+          "initial_middles": [
+            "e",
+            "k",
+            "lk"
+          ],
+          "intro_only_middles": [
+            "e",
+            "lk"
+          ],
+          "material_markers": {
+            "WATER": 3,
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 6,
+              "k": 7,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P6": {
+          "total_middles": 30,
+          "middles": [
+            "aiin",
+            "ain",
+            "al",
+            "ckh",
+            "ct",
+            "e",
+            "ed",
+            "edy",
+            "eed",
+            "eeo",
+            "eey",
+            "eol",
+            "ey",
+            "in",
+            "k",
+            "ka",
+            "kc",
+            "kch",
+            "kec",
+            "kechc",
+            "lk",
+            "o",
+            "od",
+            "ok",
+            "ol",
+            "opch",
+            "r",
+            "t",
+            "tc",
+            "y"
+          ],
+          "specific_middles": [
+            "ckh",
+            "kch",
+            "kec",
+            "kechc",
+            "od",
+            "tc"
+          ],
+          "initial_middles": [
+            "e",
+            "edy",
+            "ok"
+          ],
+          "intro_only_middles": [],
+          "material_markers": {
+            "WATER": 4,
+            "ROOT": 1,
+            "ANIMAL": 8,
+            "OIL": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 14,
+              "e": 15,
+              "h": 4
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P7": {
+          "total_middles": 35,
+          "middles": [
+            "aiin",
+            "ain",
+            "al",
+            "ck",
+            "ct",
+            "d",
+            "da",
+            "dy",
+            "e",
+            "ec",
+            "eck",
+            "ed",
+            "edy",
+            "eedal",
+            "eeol",
+            "eey",
+            "eeyks",
+            "eod",
+            "eol",
+            "et",
+            "ey",
+            "iin",
+            "in",
+            "k",
+            "ka",
+            "ke",
+            "kee",
+            "ol",
+            "olkch",
+            "ool",
+            "opch",
+            "osh",
+            "pc",
+            "t",
+            "tai"
+          ],
+          "specific_middles": [
+            "da",
+            "eedal",
+            "eeyks",
+            "eod",
+            "kee",
+            "olkch",
+            "ool",
+            "osh",
+            "pc",
+            "tai"
+          ],
+          "initial_middles": [
+            "eck",
+            "k",
+            "olkch"
+          ],
+          "intro_only_middles": [
+            "eck",
+            "olkch"
+          ],
+          "material_markers": {
+            "OIL": 1,
+            "ANIMAL": 6,
+            "ROOT": 1,
+            "WATER": 4
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 13,
+              "h": 3,
+              "e": 15
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P8": {
+          "total_middles": 27,
+          "middles": [
+            "aiin",
+            "ain",
+            "alk",
+            "am",
+            "ar",
+            "ck",
+            "ct",
+            "e",
+            "ech",
+            "eck",
+            "edy",
+            "ee",
+            "eeol",
+            "eey",
+            "eo",
+            "eol",
+            "etsho",
+            "ey",
+            "k",
+            "ke",
+            "keodai",
+            "ks",
+            "l",
+            "o",
+            "ol",
+            "sk",
+            "t"
+          ],
+          "specific_middles": [
+            "alk",
+            "ech",
+            "ee",
+            "eo",
+            "etsho",
+            "keodai",
+            "ks",
+            "sk"
+          ],
+          "initial_middles": [
+            "edy",
+            "k",
+            "keodai"
+          ],
+          "intro_only_middles": [
+            "keodai"
+          ],
+          "material_markers": {
+            "ANIMAL": 6,
+            "WATER": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 15,
+              "k": 12,
+              "h": 2
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P9": {
+          "total_middles": 4,
+          "middles": [
+            "al",
+            "eol",
+            "eols",
+            "ey"
+          ],
+          "specific_middles": [
+            "eols"
+          ],
+          "initial_middles": [
+            "eol",
+            "eols",
+            "ey"
+          ],
+          "intro_only_middles": [
+            "eol",
+            "eols",
+            "ey"
+          ],
+          "material_markers": {
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P10": {
+          "total_middles": 20,
+          "middles": [
+            "e",
+            "ed",
+            "edy",
+            "eeol",
+            "eey",
+            "eol",
+            "esh",
+            "ey",
+            "k",
+            "ka",
+            "ke",
+            "l",
+            "ode",
+            "ok",
+            "ol",
+            "or",
+            "r",
+            "ry",
+            "t",
+            "te"
+          ],
+          "specific_middles": [
+            "esh",
+            "ode",
+            "ry"
+          ],
+          "initial_middles": [
+            "e",
+            "ol",
+            "r"
+          ],
+          "intro_only_middles": [
+            "r"
+          ],
+          "material_markers": {
+            "WATER": 6,
+            "ANIMAL": 7
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 12,
+              "k": 9,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P11": {
+          "total_middles": 22,
+          "middles": [
+            "ain",
+            "am",
+            "edy",
+            "eed",
+            "eey",
+            "ek",
+            "eol",
+            "eos",
+            "ey",
+            "iin",
+            "k",
+            "kc",
+            "ke",
+            "l",
+            "lar",
+            "leees",
+            "m",
+            "ol",
+            "opcheal",
+            "t",
+            "tol",
+            "y"
+          ],
+          "specific_middles": [
+            "eos",
+            "lar",
+            "leees",
+            "m",
+            "opcheal",
+            "tol"
+          ],
+          "initial_middles": [
+            "edy",
+            "lar",
+            "tol"
+          ],
+          "intro_only_middles": [
+            "lar",
+            "tol"
+          ],
+          "material_markers": {
+            "ANIMAL": 6,
+            "OIL": 1,
+            "ROOT": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 10,
+              "k": 7,
+              "h": 1
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P12": {
+          "total_middles": 15,
+          "middles": [
+            "aiin",
+            "als",
+            "dy",
+            "ed",
+            "edy",
+            "eey",
+            "epc",
+            "ey",
+            "k",
+            "l",
+            "pch",
+            "rch",
+            "t",
+            "te",
+            "y"
+          ],
+          "specific_middles": [
+            "als",
+            "epc",
+            "pch",
+            "rch"
+          ],
+          "initial_middles": [
+            "ed",
+            "eey",
+            "l"
+          ],
+          "intro_only_middles": [
+            "ed",
+            "eey",
+            "l"
+          ],
+          "material_markers": {
+            "WATER": 1,
+            "ANIMAL": 7,
+            "ROOT": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 6,
+              "k": 4,
+              "h": 2
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        }
+      },
+      "pairwise_jaccard": {
+        "P1-P2": 0.353,
+        "P1-P3": 0.459,
+        "P1-P4": 0.294,
+        "P1-P5": 0.282,
+        "P1-P6": 0.311,
+        "P1-P7": 0.28,
+        "P1-P8": 0.217,
+        "P1-P9": 0.065,
+        "P1-P10": 0.289,
+        "P1-P11": 0.244,
+        "P1-P12": 0.257,
+        "P2-P3": 0.354,
+        "P2-P4": 0.25,
+        "P2-P5": 0.245,
+        "P2-P6": 0.346,
+        "P2-P7": 0.339,
+        "P2-P8": 0.314,
+        "P2-P9": 0.073,
+        "P2-P10": 0.224,
+        "P2-P11": 0.265,
+        "P2-P12": 0.222,
+        "P3-P4": 0.333,
+        "P3-P5": 0.314,
+        "P3-P6": 0.31,
+        "P3-P7": 0.333,
+        "P3-P8": 0.333,
+        "P3-P9": 0.036,
+        "P3-P10": 0.286,
+        "P3-P11": 0.27,
+        "P3-P12": 0.29,
+        "P4-P5": 0.2,
+        "P4-P6": 0.216,
+        "P4-P7": 0.19,
+        "P4-P8": 0.312,
+        "P4-P9": 0.118,
+        "P4-P10": 0.25,
+        "P4-P11": 0.276,
+        "P4-P12": 0.304,
+        "P5-P6": 0.214,
+        "P5-P7": 0.302,
+        "P5-P8": 0.333,
+        "P5-P9": 0.042,
+        "P5-P10": 0.206,
+        "P5-P11": 0.229,
+        "P5-P12": 0.125,
+        "P6-P7": 0.327,
+        "P6-P8": 0.267,
+        "P6-P9": 0.097,
+        "P6-P10": 0.316,
+        "P6-P11": 0.268,
+        "P6-P12": 0.216,
+        "P7-P8": 0.319,
+        "P7-P9": 0.083,
+        "P7-P10": 0.279,
+        "P7-P11": 0.213,
+        "P7-P12": 0.19,
+        "P8-P9": 0.069,
+        "P8-P10": 0.306,
+        "P8-P11": 0.289,
+        "P8-P12": 0.2,
+        "P9-P10": 0.091,
+        "P9-P11": 0.083,
+        "P9-P12": 0.056,
+        "P10-P11": 0.273,
+        "P10-P12": 0.296,
+        "P11-P12": 0.233
+      }
+    },
+    "f39r": {
+      "folio_wide_middles": [],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "paragraph_vocabulary": {
+        "P1": {
+          "total_middles": 27,
+          "middles": [
+            "ain",
+            "ck",
+            "ckh",
+            "cks",
+            "cphhof",
+            "d",
+            "do",
+            "dy",
+            "eck",
+            "ed",
+            "ee",
+            "eep",
+            "eey",
+            "ek",
+            "eksh",
+            "ey",
+            "i",
+            "k",
+            "kalch",
+            "keed",
+            "l",
+            "ld",
+            "ly",
+            "of",
+            "or",
+            "r",
+            "y"
+          ],
+          "specific_middles": [
+            "ain",
+            "cks",
+            "cphhof",
+            "do",
+            "eck",
+            "ed",
+            "eep",
+            "eksh",
+            "i",
+            "kalch",
+            "keed",
+            "ld",
+            "ly",
+            "of"
+          ],
+          "initial_middles": [
+            "cphhof",
+            "d",
+            "do"
+          ],
+          "intro_only_middles": [
+            "cphhof",
+            "do"
+          ],
+          "material_markers": {
+            "ANIMAL": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "h": 4,
+              "e": 7,
+              "k": 8
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P2": {
+          "total_middles": 10,
+          "middles": [
+            "aiin",
+            "alche",
+            "ckhdc",
+            "dy",
+            "edy",
+            "ee",
+            "h",
+            "ol",
+            "or",
+            "y"
+          ],
+          "specific_middles": [
+            "alche",
+            "ckhdc",
+            "h"
+          ],
+          "initial_middles": [
+            "aiin",
+            "dy",
+            "h"
+          ],
+          "intro_only_middles": [
+            "h"
+          ],
+          "material_markers": {},
+          "kernel_info": {
+            "kernel_balance": "HAZARD_HEAVY",
+            "kernel_dist": {
+              "h": 3,
+              "e": 3,
+              "k": 1
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P3": {
+          "total_middles": 24,
+          "middles": [
+            "al",
+            "am",
+            "ar",
+            "cfh",
+            "ckh",
+            "cp",
+            "d",
+            "dalo",
+            "dy",
+            "e",
+            "edy",
+            "eees",
+            "fch",
+            "iin",
+            "ir",
+            "k",
+            "ked",
+            "m",
+            "ockhc",
+            "ol",
+            "opchek",
+            "r",
+            "ry",
+            "y"
+          ],
+          "specific_middles": [
+            "am",
+            "cfh",
+            "cp",
+            "dalo",
+            "eees",
+            "fch",
+            "ir",
+            "ked",
+            "m",
+            "ockhc",
+            "opchek",
+            "ry"
+          ],
+          "initial_middles": [
+            "d",
+            "e",
+            "m"
+          ],
+          "intro_only_middles": [
+            "e",
+            "m"
+          ],
+          "material_markers": {
+            "ROOT": 1,
+            "WATER": 1,
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 8,
+              "h": 5,
+              "k": 5
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P4": {
+          "total_middles": 5,
+          "middles": [
+            "d",
+            "edy",
+            "k",
+            "od",
+            "ol"
+          ],
+          "specific_middles": [
+            "od"
+          ],
+          "initial_middles": [
+            "edy",
+            "od",
+            "ol"
+          ],
+          "intro_only_middles": [
+            "edy",
+            "od",
+            "ol"
+          ],
+          "material_markers": {
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 1,
+              "k": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P5": {
+          "total_middles": 15,
+          "middles": [
+            "ai",
+            "aii",
+            "aiin",
+            "al",
+            "ar",
+            "ckh",
+            "d",
+            "dy",
+            "edy",
+            "eol",
+            "k",
+            "kald",
+            "l",
+            "r",
+            "y"
+          ],
+          "specific_middles": [
+            "ai",
+            "aii",
+            "kald"
+          ],
+          "initial_middles": [
+            "ar",
+            "d",
+            "edy"
+          ],
+          "intro_only_middles": [
+            "d"
+          ],
+          "material_markers": {},
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 2,
+              "k": 2,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P6": {
+          "total_middles": 26,
+          "middles": [
+            "ad",
+            "aiin",
+            "al",
+            "ck",
+            "d",
+            "dld",
+            "dy",
+            "e",
+            "edy",
+            "eey",
+            "ek",
+            "eol",
+            "eolk",
+            "ey",
+            "ii",
+            "iin",
+            "k",
+            "l",
+            "lchd",
+            "lk",
+            "ofcheef",
+            "ol",
+            "olk",
+            "or",
+            "r",
+            "y"
+          ],
+          "specific_middles": [
+            "ad",
+            "dld",
+            "eolk",
+            "ii",
+            "lchd",
+            "lk",
+            "ofcheef",
+            "olk"
+          ],
+          "initial_middles": [
+            "ck",
+            "iin",
+            "lchd"
+          ],
+          "intro_only_middles": [
+            "lchd"
+          ],
+          "material_markers": {
+            "ANIMAL": 1,
+            "WATER": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 2,
+              "k": 6,
+              "e": 7
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        }
+      },
+      "pairwise_jaccard": {
+        "P1-P2": 0.121,
+        "P1-P3": 0.133,
+        "P1-P4": 0.067,
+        "P1-P5": 0.2,
+        "P1-P6": 0.262,
+        "P2-P3": 0.133,
+        "P2-P4": 0.154,
+        "P2-P5": 0.19,
+        "P2-P6": 0.2,
+        "P3-P4": 0.16,
+        "P3-P5": 0.3,
+        "P3-P6": 0.25,
+        "P4-P5": 0.176,
+        "P4-P6": 0.148,
+        "P5-P6": 0.323
+      }
+    },
+    "f86v3": {
+      "folio_wide_middles": [
+        "aiin",
+        "dy",
+        "ed",
+        "edy",
+        "eo",
+        "ey",
+        "k",
+        "kch",
+        "or",
+        "r",
+        "t"
+      ],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "paragraph_vocabulary": {
+        "P1": {
+          "total_middles": 32,
+          "middles": [
+            "acheo",
+            "ai",
+            "aiin",
+            "am",
+            "cfhy",
+            "dy",
+            "e",
+            "ed",
+            "edy",
+            "eeedc",
+            "eey",
+            "eo",
+            "eod",
+            "ey",
+            "fch",
+            "iin",
+            "in",
+            "k",
+            "kch",
+            "ke",
+            "ol",
+            "opch",
+            "or",
+            "pc",
+            "pch",
+            "pcheeo",
+            "r",
+            "t",
+            "taii",
+            "tc",
+            "tch",
+            "tched"
+          ],
+          "specific_middles": [
+            "acheo",
+            "cfhy",
+            "eeedc",
+            "fch",
+            "ke",
+            "opch",
+            "pc",
+            "pcheeo",
+            "taii",
+            "tc",
+            "tched"
+          ],
+          "initial_middles": [
+            "edy",
+            "ke"
+          ],
+          "intro_only_middles": [
+            "ke"
+          ],
+          "material_markers": {
+            "ANIMAL": 7,
+            "ROOT": 6,
+            "WATER": 1,
+            "OIL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 13,
+              "k": 9,
+              "h": 8
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P2": {
+          "total_middles": 63,
+          "middles": [
+            "ai",
+            "aii",
+            "aiin",
+            "ain",
+            "airo",
+            "al",
+            "alk",
+            "am",
+            "ar",
+            "cs",
+            "ct",
+            "d",
+            "dcs",
+            "dy",
+            "e",
+            "eck",
+            "ed",
+            "eda",
+            "edo",
+            "edy",
+            "ee",
+            "eed",
+            "eeeoc",
+            "eeo",
+            "eeod",
+            "eey",
+            "eksh",
+            "eo",
+            "eod",
+            "eokai",
+            "ey",
+            "i",
+            "ii",
+            "iin",
+            "iinl",
+            "im",
+            "in",
+            "k",
+            "kch",
+            "ko",
+            "ksh",
+            "l",
+            "lksh",
+            "m",
+            "o",
+            "ocf",
+            "od",
+            "ode",
+            "oe",
+            "oee",
+            "olk",
+            "om",
+            "op",
+            "or",
+            "osh",
+            "p",
+            "r",
+            "t",
+            "tch",
+            "teeo",
+            "y",
+            "yoch",
+            "ypshe"
+          ],
+          "specific_middles": [
+            "aii",
+            "airo",
+            "al",
+            "alk",
+            "cs",
+            "ct",
+            "d",
+            "dcs",
+            "eck",
+            "eda",
+            "edo",
+            "ee",
+            "eed",
+            "eeeoc",
+            "eeod",
+            "eksh",
+            "eokai",
+            "i",
+            "ii",
+            "iinl",
+            "im",
+            "ko",
+            "ksh",
+            "l",
+            "lksh",
+            "ocf",
+            "od",
+            "ode",
+            "oe",
+            "oee",
+            "olk",
+            "om",
+            "op",
+            "osh",
+            "p",
+            "teeo",
+            "yoch",
+            "ypshe"
+          ],
+          "initial_middles": [
+            "iin"
+          ],
+          "intro_only_middles": [],
+          "material_markers": {
+            "ANIMAL": 14,
+            "ROOT": 1,
+            "WATER": 4,
+            "OIL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 7,
+              "k": 11,
+              "e": 19
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P3": {
+          "total_middles": 22,
+          "middles": [
+            "aiin",
+            "ain",
+            "ar",
+            "cth",
+            "dy",
+            "ed",
+            "edy",
+            "eeo",
+            "eo",
+            "ey",
+            "k",
+            "kch",
+            "kec",
+            "m",
+            "o",
+            "odai",
+            "ol",
+            "or",
+            "pch",
+            "r",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "cth",
+            "kec",
+            "odai"
+          ],
+          "initial_middles": [
+            "ed",
+            "edy",
+            "kch"
+          ],
+          "intro_only_middles": [
+            "ed"
+          ],
+          "material_markers": {
+            "OIL": 2,
+            "ANIMAL": 2,
+            "ROOT": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 6,
+              "k": 5,
+              "h": 3
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        }
+      },
+      "pairwise_jaccard": {
+        "P1-P2": 0.25,
+        "P1-P3": 0.317,
+        "P2-P3": 0.25
+      }
+    },
+    "f66r": {
+      "folio_wide_middles": [],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "paragraph_vocabulary": {
+        "P1": {
+          "total_middles": 43,
+          "middles": [
+            "aiin",
+            "al",
+            "ap",
+            "ar",
+            "cfhe",
+            "ck",
+            "ctho",
+            "d",
+            "da",
+            "dy",
+            "e",
+            "edal",
+            "edy",
+            "eeo",
+            "efc",
+            "ek",
+            "ekeo",
+            "eo",
+            "eod",
+            "eol",
+            "er",
+            "h",
+            "iin",
+            "k",
+            "ke",
+            "kee",
+            "keed",
+            "keeo",
+            "keo",
+            "kshd",
+            "l",
+            "o",
+            "oekc",
+            "olpchd",
+            "opch",
+            "r",
+            "rai",
+            "s",
+            "sche",
+            "sh",
+            "t",
+            "ted",
+            "y"
+          ],
+          "specific_middles": [
+            "ap",
+            "cfhe",
+            "ck",
+            "ctho",
+            "da",
+            "edal",
+            "efc",
+            "ekeo",
+            "er",
+            "h",
+            "ke",
+            "kee",
+            "keed",
+            "keeo",
+            "kshd",
+            "oekc",
+            "olpchd",
+            "opch",
+            "rai",
+            "sche",
+            "ted"
+          ],
+          "initial_middles": [
+            "e",
+            "iin",
+            "y"
+          ],
+          "intro_only_middles": [
+            "iin"
+          ],
+          "material_markers": {
+            "ROOT": 2,
+            "ANIMAL": 5,
+            "WATER": 2,
+            "OIL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 22,
+              "h": 8,
+              "k": 16
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P2": {
+          "total_middles": 48,
+          "middles": [
+            "ai",
+            "ak",
+            "al",
+            "ax",
+            "ckh",
+            "cph",
+            "cta",
+            "d",
+            "dy",
+            "e",
+            "edai",
+            "edy",
+            "eek",
+            "ek",
+            "ekai",
+            "eod",
+            "et",
+            "f",
+            "fc",
+            "i",
+            "ii",
+            "iin",
+            "k",
+            "ka",
+            "kaii",
+            "kch",
+            "keo",
+            "ks",
+            "l",
+            "ly",
+            "o",
+            "oda",
+            "odai",
+            "of",
+            "ofar",
+            "okaii",
+            "ol",
+            "olfosd",
+            "or",
+            "ot",
+            "p",
+            "r",
+            "sd",
+            "sh",
+            "t",
+            "x",
+            "y",
+            "yd"
+          ],
+          "specific_middles": [
+            "ai",
+            "ak",
+            "ax",
+            "cta",
+            "edai",
+            "ekai",
+            "fc",
+            "kaii",
+            "kch",
+            "ks",
+            "oda",
+            "odai",
+            "ofar",
+            "okaii",
+            "olfosd",
+            "ot",
+            "sd",
+            "yd"
+          ],
+          "initial_middles": [
+            "cph",
+            "f",
+            "l"
+          ],
+          "intro_only_middles": [
+            "cph",
+            "f"
+          ],
+          "material_markers": {
+            "ANIMAL": 5,
+            "WATER": 2,
+            "OIL": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "h": 5,
+              "k": 10,
+              "e": 8
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P3": {
+          "total_middles": 10,
+          "middles": [
+            "e",
+            "ed",
+            "ekc",
+            "eol",
+            "esheo",
+            "ey",
+            "f",
+            "iro",
+            "l",
+            "lcheeek"
+          ],
+          "specific_middles": [
+            "ed",
+            "ekc",
+            "esheo",
+            "iro",
+            "lcheeek"
+          ],
+          "initial_middles": [
+            "eol",
+            "f",
+            "lcheeek"
+          ],
+          "intro_only_middles": [
+            "eol",
+            "f",
+            "lcheeek"
+          ],
+          "material_markers": {
+            "OIL": 1,
+            "ANIMAL": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "k": 2,
+              "h": 2,
+              "e": 3
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P4": {
+          "total_middles": 29,
+          "middles": [
+            "al",
+            "ar",
+            "cfh",
+            "d",
+            "e",
+            "edy",
+            "ee",
+            "eek",
+            "ekeeo",
+            "eo",
+            "f",
+            "i",
+            "iin",
+            "ir",
+            "k",
+            "kal",
+            "kol",
+            "l",
+            "ly",
+            "o",
+            "of",
+            "ol",
+            "or",
+            "r",
+            "ro",
+            "ry",
+            "s",
+            "x",
+            "y"
+          ],
+          "specific_middles": [
+            "cfh",
+            "ekeeo",
+            "ir",
+            "kal",
+            "kol",
+            "ro",
+            "ry"
+          ],
+          "initial_middles": [
+            "edy",
+            "f",
+            "r"
+          ],
+          "intro_only_middles": [
+            "f"
+          ],
+          "material_markers": {
+            "ANIMAL": 3,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 10,
+              "k": 5,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P5": {
+          "total_middles": 29,
+          "middles": [
+            "c",
+            "ckh",
+            "cth",
+            "de",
+            "dy",
+            "e",
+            "edy",
+            "eeo",
+            "eeod",
+            "ek",
+            "ekeef",
+            "eo",
+            "eoct",
+            "eol",
+            "ey",
+            "f",
+            "ii",
+            "k",
+            "keo",
+            "l",
+            "ld",
+            "ly",
+            "o",
+            "ok",
+            "ol",
+            "r",
+            "t",
+            "teeod",
+            "x"
+          ],
+          "specific_middles": [
+            "c",
+            "de",
+            "eeod",
+            "ekeef",
+            "eoct",
+            "ld",
+            "ok",
+            "teeod"
+          ],
+          "initial_middles": [
+            "de",
+            "f",
+            "o"
+          ],
+          "intro_only_middles": [
+            "de",
+            "f"
+          ],
+          "material_markers": {
+            "ANIMAL": 4
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 9,
+              "k": 5,
+              "h": 2
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P6": {
+          "total_middles": 28,
+          "middles": [
+            "aiin",
+            "am",
+            "ar",
+            "ct",
+            "cth",
+            "dy",
+            "e",
+            "ect",
+            "edy",
+            "ee",
+            "eeol",
+            "ek",
+            "eo",
+            "eoch",
+            "eok",
+            "eol",
+            "ey",
+            "iin",
+            "k",
+            "ka",
+            "l",
+            "lch",
+            "lod",
+            "ltsho",
+            "o",
+            "ol",
+            "r",
+            "t"
+          ],
+          "specific_middles": [
+            "am",
+            "ect",
+            "eeol",
+            "eoch",
+            "eok",
+            "lch",
+            "lod",
+            "ltsho"
+          ],
+          "initial_middles": [
+            "iin",
+            "o",
+            "t"
+          ],
+          "intro_only_middles": [],
+          "material_markers": {
+            "ANIMAL": 6,
+            "WATER": 4
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 11,
+              "h": 4,
+              "k": 7
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P7": {
+          "total_middles": 20,
+          "middles": [
+            "alch",
+            "ckh",
+            "cph",
+            "ct",
+            "dy",
+            "e",
+            "edy",
+            "eey",
+            "eka",
+            "eol",
+            "et",
+            "ey",
+            "iin",
+            "k",
+            "o",
+            "r",
+            "t",
+            "tch",
+            "teo",
+            "x"
+          ],
+          "specific_middles": [
+            "alch",
+            "eey",
+            "eka",
+            "tch",
+            "teo"
+          ],
+          "initial_middles": [
+            "eey",
+            "eol",
+            "t"
+          ],
+          "intro_only_middles": [
+            "eey",
+            "t"
+          ],
+          "material_markers": {
+            "ROOT": 1,
+            "WATER": 2,
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 5,
+              "h": 3,
+              "k": 3
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P8": {
+          "total_middles": 2,
+          "middles": [
+            "d",
+            "p"
+          ],
+          "specific_middles": [],
+          "initial_middles": [
+            "d",
+            "p"
+          ],
+          "intro_only_middles": [
+            "d",
+            "p"
+          ],
+          "material_markers": {},
+          "kernel_info": {
+            "kernel_balance": "NO_KERNELS",
+            "kernel_dist": {},
+            "fl_trend": "DISTRIBUTED"
+          }
+        }
+      },
+      "pairwise_jaccard": {
+        "P1-P2": 0.213,
+        "P1-P3": 0.06,
+        "P1-P4": 0.22,
+        "P1-P5": 0.22,
+        "P1-P6": 0.246,
+        "P1-P7": 0.167,
+        "P1-P8": 0.023,
+        "P2-P3": 0.055,
+        "P2-P4": 0.305,
+        "P2-P5": 0.262,
+        "P2-P6": 0.188,
+        "P2-P7": 0.214,
+        "P2-P8": 0.042,
+        "P3-P4": 0.083,
+        "P3-P5": 0.147,
+        "P3-P6": 0.118,
+        "P3-P7": 0.111,
+        "P3-P8": 0.0,
+        "P4-P5": 0.234,
+        "P4-P6": 0.239,
+        "P4-P7": 0.167,
+        "P4-P8": 0.033,
+        "P5-P6": 0.326,
+        "P5-P7": 0.289,
+        "P5-P8": 0.0,
+        "P6-P7": 0.297,
+        "P6-P8": 0.0,
+        "P7-P8": 0.0
+      }
+    },
+    "f107r": {
+      "folio_wide_middles": [],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "paragraph_vocabulary": {
+        "P1": {
+          "total_middles": 23,
+          "middles": [
+            "aiin",
+            "ain",
+            "dl",
+            "e",
+            "edy",
+            "eed",
+            "eeol",
+            "eesod",
+            "eey",
+            "eo",
+            "eock",
+            "eol",
+            "ey",
+            "k",
+            "kc",
+            "ke",
+            "l",
+            "or",
+            "qe",
+            "r",
+            "rai",
+            "t",
+            "teo"
+          ],
+          "specific_middles": [
+            "dl",
+            "eesod",
+            "eock",
+            "kc",
+            "qe",
+            "rai",
+            "teo"
+          ],
+          "initial_middles": [
+            "dl",
+            "eeol",
+            "eol"
+          ],
+          "intro_only_middles": [
+            "dl",
+            "eeol",
+            "eol"
+          ],
+          "material_markers": {
+            "ANIMAL": 5,
+            "OIL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 7,
+              "k": 4
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P2": {
+          "total_middles": 24,
+          "middles": [
+            "a",
+            "aiin",
+            "ain",
+            "am",
+            "ar",
+            "ck",
+            "dy",
+            "e",
+            "ed",
+            "edy",
+            "eey",
+            "eo",
+            "eotch",
+            "ey",
+            "iin",
+            "k",
+            "kch",
+            "ke",
+            "ked",
+            "keed",
+            "okch",
+            "okcho",
+            "otch",
+            "t"
+          ],
+          "specific_middles": [
+            "a",
+            "eotch",
+            "ked",
+            "keed",
+            "okch",
+            "okcho",
+            "otch"
+          ],
+          "initial_middles": [
+            "ed",
+            "eo",
+            "t"
+          ],
+          "intro_only_middles": [
+            "t"
+          ],
+          "material_markers": {
+            "ANIMAL": 3,
+            "OIL": 3,
+            "ROOT": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 11,
+              "k": 10,
+              "h": 5
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P3": {
+          "total_middles": 26,
+          "middles": [
+            "aii",
+            "aiin",
+            "al",
+            "an",
+            "ar",
+            "dykch",
+            "e",
+            "edy",
+            "eed",
+            "eeo",
+            "eeol",
+            "eey",
+            "ek",
+            "eol",
+            "ey",
+            "i",
+            "in",
+            "irolc",
+            "k",
+            "ke",
+            "l",
+            "oiin",
+            "ol",
+            "om",
+            "or",
+            "rsh"
+          ],
+          "specific_middles": [
+            "aii",
+            "an",
+            "dykch",
+            "irolc",
+            "rsh"
+          ],
+          "initial_middles": [
+            "e",
+            "eeol",
+            "rsh"
+          ],
+          "intro_only_middles": [
+            "rsh"
+          ],
+          "material_markers": {
+            "ANIMAL": 6,
+            "OIL": 1,
+            "WATER": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 2,
+              "e": 9,
+              "k": 6
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P4": {
+          "total_middles": 23,
+          "middles": [
+            "aiin",
+            "ain",
+            "air",
+            "al",
+            "am",
+            "ar",
+            "ckh",
+            "e",
+            "ed",
+            "edy",
+            "ek",
+            "eol",
+            "ey",
+            "h",
+            "k",
+            "lchl",
+            "od",
+            "oiin",
+            "ol",
+            "opch",
+            "or",
+            "r",
+            "t"
+          ],
+          "specific_middles": [
+            "air",
+            "h",
+            "lchl"
+          ],
+          "initial_middles": [
+            "aiin",
+            "ek",
+            "lchl"
+          ],
+          "intro_only_middles": [
+            "lchl"
+          ],
+          "material_markers": {
+            "ROOT": 1,
+            "WATER": 5,
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "h": 4,
+              "k": 5,
+              "e": 5
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P5": {
+          "total_middles": 11,
+          "middles": [
+            "aiin",
+            "al",
+            "am",
+            "ey",
+            "i",
+            "ke",
+            "los",
+            "lshos",
+            "opch",
+            "qeeo",
+            "t"
+          ],
+          "specific_middles": [
+            "los",
+            "lshos",
+            "qeeo"
+          ],
+          "initial_middles": [
+            "ke",
+            "lshos",
+            "t"
+          ],
+          "intro_only_middles": [
+            "ke",
+            "lshos",
+            "t"
+          ],
+          "material_markers": {
+            "ANIMAL": 1,
+            "ROOT": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 2,
+              "k": 1,
+              "e": 3
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P6": {
+          "total_middles": 18,
+          "middles": [
+            "aiin",
+            "aip",
+            "al",
+            "alos",
+            "dy",
+            "e",
+            "eeo",
+            "eey",
+            "eod",
+            "ey",
+            "f",
+            "o",
+            "ol",
+            "opalk",
+            "r",
+            "y",
+            "yl",
+            "yp"
+          ],
+          "specific_middles": [
+            "aip",
+            "alos",
+            "opalk",
+            "yl",
+            "yp"
+          ],
+          "initial_middles": [
+            "alos",
+            "ey",
+            "r"
+          ],
+          "intro_only_middles": [
+            "alos",
+            "ey"
+          ],
+          "material_markers": {
+            "ANIMAL": 2,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 2,
+              "k": 1
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P7": {
+          "total_middles": 2,
+          "middles": [
+            "e",
+            "eol"
+          ],
+          "specific_middles": [],
+          "initial_middles": [
+            "e",
+            "eol"
+          ],
+          "intro_only_middles": [
+            "e",
+            "eol"
+          ],
+          "material_markers": {},
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P8": {
+          "total_middles": 16,
+          "middles": [
+            "ai",
+            "aiin",
+            "ain",
+            "al",
+            "ar",
+            "edy",
+            "eeo",
+            "eol",
+            "iin",
+            "k",
+            "ll",
+            "od",
+            "oik",
+            "r",
+            "t",
+            "tal"
+          ],
+          "specific_middles": [
+            "ll",
+            "oik",
+            "tal"
+          ],
+          "initial_middles": [
+            "ain",
+            "al",
+            "r"
+          ],
+          "intro_only_middles": [
+            "ain",
+            "al"
+          ],
+          "material_markers": {
+            "ANIMAL": 1,
+            "WATER": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 3,
+              "e": 3
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P9": {
+          "total_middles": 25,
+          "middles": [
+            "ai",
+            "aiin",
+            "ain",
+            "al",
+            "ar",
+            "dal",
+            "e",
+            "edy",
+            "eey",
+            "eo",
+            "eol",
+            "ey",
+            "f",
+            "i",
+            "iin",
+            "ilch",
+            "k",
+            "kch",
+            "keeo",
+            "l",
+            "o",
+            "od",
+            "om",
+            "p",
+            "r"
+          ],
+          "specific_middles": [
+            "dal",
+            "ilch"
+          ],
+          "initial_middles": [
+            "ilch",
+            "k",
+            "p"
+          ],
+          "intro_only_middles": [
+            "ilch",
+            "p"
+          ],
+          "material_markers": {
+            "WATER": 3,
+            "OIL": 1,
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "k": 4,
+              "h": 2,
+              "e": 3
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P10": {
+          "total_middles": 9,
+          "middles": [
+            "aiisod",
+            "d",
+            "fch",
+            "ii",
+            "k",
+            "kii",
+            "ofch",
+            "ol",
+            "p"
+          ],
+          "specific_middles": [
+            "aiisod",
+            "fch",
+            "ii",
+            "kii"
+          ],
+          "initial_middles": [
+            "aiisod",
+            "d",
+            "kii"
+          ],
+          "intro_only_middles": [
+            "aiisod",
+            "d",
+            "kii"
+          ],
+          "material_markers": {
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ENERGY_DOMINANT",
+            "kernel_dist": {
+              "k": 2,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P11": {
+          "total_middles": 11,
+          "middles": [
+            "aiin",
+            "al",
+            "ar",
+            "eee",
+            "eeo",
+            "eey",
+            "keeo",
+            "l",
+            "ol",
+            "r",
+            "y"
+          ],
+          "specific_middles": [
+            "eee"
+          ],
+          "initial_middles": [
+            "aiin",
+            "l",
+            "r"
+          ],
+          "intro_only_middles": [
+            "r"
+          ],
+          "material_markers": {
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 2,
+              "k": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P12": {
+          "total_middles": 26,
+          "middles": [
+            "aiiikh",
+            "aiin",
+            "ain",
+            "al",
+            "alk",
+            "ar",
+            "ckh",
+            "ct",
+            "dy",
+            "e",
+            "ek",
+            "eo",
+            "eol",
+            "ey",
+            "eyk",
+            "i",
+            "iin",
+            "k",
+            "l",
+            "lx",
+            "op",
+            "opaic",
+            "pai",
+            "r",
+            "s",
+            "y"
+          ],
+          "specific_middles": [
+            "aiiikh",
+            "alk",
+            "ct",
+            "eyk",
+            "lx",
+            "opaic",
+            "pai",
+            "s"
+          ],
+          "initial_middles": [
+            "aiiikh",
+            "alk",
+            "pai"
+          ],
+          "intro_only_middles": [
+            "aiiikh",
+            "alk",
+            "pai"
+          ],
+          "material_markers": {
+            "WATER": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ENERGY_DOMINANT",
+            "kernel_dist": {
+              "k": 8,
+              "h": 2,
+              "e": 4
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P13": {
+          "total_middles": 22,
+          "middles": [
+            "aiin",
+            "al",
+            "ar",
+            "ck",
+            "edy",
+            "eeol",
+            "eey",
+            "eo",
+            "eot",
+            "ey",
+            "iin",
+            "k",
+            "kch",
+            "l",
+            "lda",
+            "o",
+            "ol",
+            "opa",
+            "or",
+            "pair",
+            "r",
+            "t"
+          ],
+          "specific_middles": [
+            "eot",
+            "lda",
+            "opa",
+            "pair"
+          ],
+          "initial_middles": [
+            "al",
+            "o",
+            "pair"
+          ],
+          "intro_only_middles": [
+            "o",
+            "pair"
+          ],
+          "material_markers": {
+            "WATER": 1,
+            "ANIMAL": 2,
+            "OIL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 5,
+              "k": 4,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P14": {
+          "total_middles": 8,
+          "middles": [
+            "ar",
+            "kch",
+            "lchd",
+            "ofch",
+            "opch",
+            "t",
+            "te",
+            "y"
+          ],
+          "specific_middles": [
+            "lchd",
+            "te"
+          ],
+          "initial_middles": [
+            "ar",
+            "ofch"
+          ],
+          "intro_only_middles": [
+            "ar",
+            "ofch"
+          ],
+          "material_markers": {
+            "WATER": 1,
+            "ANIMAL": 2,
+            "ROOT": 1,
+            "OIL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "HAZARD_HEAVY",
+            "kernel_dist": {
+              "h": 3,
+              "e": 1,
+              "k": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P15": {
+          "total_middles": 17,
+          "middles": [
+            "ai",
+            "aiin",
+            "ain",
+            "al",
+            "am",
+            "ar",
+            "ee",
+            "ek",
+            "eol",
+            "ey",
+            "i",
+            "k",
+            "o",
+            "ockh",
+            "oe",
+            "oiin",
+            "ol"
+          ],
+          "specific_middles": [
+            "ockh",
+            "oe"
+          ],
+          "initial_middles": [
+            "eol",
+            "i"
+          ],
+          "intro_only_middles": [
+            "eol",
+            "i"
+          ],
+          "material_markers": {
+            "ANIMAL": 1,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ENERGY_DOMINANT",
+            "kernel_dist": {
+              "e": 3,
+              "k": 5,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P16": {
+          "total_middles": 21,
+          "middles": [
+            "aiin",
+            "ait",
+            "al",
+            "am",
+            "ar",
+            "edy",
+            "ee",
+            "eey",
+            "eo",
+            "eod",
+            "ey",
+            "iin",
+            "in",
+            "ir",
+            "k",
+            "keeo",
+            "od",
+            "olk",
+            "ot",
+            "paic",
+            "yk"
+          ],
+          "specific_middles": [
+            "ait",
+            "ir",
+            "olk",
+            "ot",
+            "paic",
+            "yk"
+          ],
+          "initial_middles": [
+            "aiin",
+            "k",
+            "olk"
+          ],
+          "intro_only_middles": [
+            "aiin",
+            "olk"
+          ],
+          "material_markers": {
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 4,
+              "e": 4
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P17": {
+          "total_middles": 22,
+          "middles": [
+            "aiin",
+            "ain",
+            "al",
+            "ar",
+            "ck",
+            "d",
+            "dk",
+            "e",
+            "edy",
+            "ee",
+            "eey",
+            "iin",
+            "k",
+            "ke",
+            "koki",
+            "l",
+            "lo",
+            "oiin",
+            "ol",
+            "op",
+            "r",
+            "y"
+          ],
+          "specific_middles": [
+            "dk",
+            "koki",
+            "lo"
+          ],
+          "initial_middles": [
+            "ck",
+            "dk",
+            "edy"
+          ],
+          "intro_only_middles": [
+            "ck",
+            "dk",
+            "edy"
+          ],
+          "material_markers": {
+            "WATER": 3,
+            "ANIMAL": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 5,
+              "e": 6
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P18": {
+          "total_middles": 22,
+          "middles": [
+            "ai",
+            "aif",
+            "aiin",
+            "ain",
+            "al",
+            "ar",
+            "dy",
+            "eey",
+            "faiir",
+            "i",
+            "iin",
+            "k",
+            "l",
+            "lk",
+            "o",
+            "ol",
+            "om",
+            "p",
+            "r",
+            "raitht",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "aif",
+            "faiir",
+            "lk",
+            "raitht"
+          ],
+          "initial_middles": [
+            "faiir",
+            "k",
+            "y"
+          ],
+          "intro_only_middles": [
+            "faiir"
+          ],
+          "material_markers": {
+            "WATER": 5
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "k": 3,
+              "h": 1,
+              "e": 2
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        }
+      },
+      "pairwise_jaccard": {
+        "P1-P2": 0.27,
+        "P1-P3": 0.324,
+        "P1-P4": 0.278,
+        "P1-P5": 0.133,
+        "P1-P6": 0.139,
+        "P1-P7": 0.087,
+        "P1-P8": 0.219,
+        "P1-P9": 0.297,
+        "P1-P10": 0.032,
+        "P1-P11": 0.133,
+        "P1-P12": 0.225,
+        "P1-P13": 0.324,
+        "P1-P14": 0.033,
+        "P1-P15": 0.143,
+        "P1-P16": 0.158,
+        "P1-P17": 0.25,
+        "P1-P18": 0.184,
+        "P2-P3": 0.19,
+        "P2-P4": 0.27,
+        "P2-P5": 0.167,
+        "P2-P6": 0.135,
+        "P2-P7": 0.04,
+        "P2-P8": 0.212,
+        "P2-P9": 0.289,
+        "P2-P10": 0.031,
+        "P2-P11": 0.094,
+        "P2-P12": 0.22,
+        "P2-P13": 0.314,
+        "P2-P14": 0.103,
+        "P2-P15": 0.171,
+        "P2-P16": 0.25,
+        "P2-P17": 0.278,
+        "P2-P18": 0.211,
+        "P3-P4": 0.324,
+        "P3-P5": 0.156,
+        "P3-P6": 0.189,
+        "P3-P7": 0.077,
+        "P3-P8": 0.2,
+        "P3-P9": 0.308,
+        "P3-P10": 0.061,
+        "P3-P11": 0.233,
+        "P3-P12": 0.238,
+        "P3-P13": 0.297,
+        "P3-P14": 0.03,
+        "P3-P15": 0.303,
+        "P3-P16": 0.205,
+        "P3-P17": 0.297,
+        "P3-P18": 0.231,
+        "P4-P5": 0.214,
+        "P4-P6": 0.171,
+        "P4-P7": 0.087,
+        "P4-P8": 0.345,
+        "P4-P9": 0.297,
+        "P4-P10": 0.067,
+        "P4-P11": 0.172,
+        "P4-P12": 0.289,
+        "P4-P13": 0.286,
+        "P4-P14": 0.107,
+        "P4-P15": 0.379,
+        "P4-P16": 0.222,
+        "P4-P17": 0.286,
+        "P4-P18": 0.216,
+        "P5-P6": 0.115,
+        "P5-P7": 0.0,
+        "P5-P8": 0.125,
+        "P5-P9": 0.125,
+        "P5-P10": 0.0,
+        "P5-P11": 0.1,
+        "P5-P12": 0.121,
+        "P5-P13": 0.138,
+        "P5-P14": 0.118,
+        "P5-P15": 0.217,
+        "P5-P16": 0.143,
+        "P5-P17": 0.1,
+        "P5-P18": 0.138,
+        "P6-P7": 0.053,
+        "P6-P8": 0.133,
+        "P6-P9": 0.229,
+        "P6-P10": 0.038,
+        "P6-P11": 0.318,
+        "P6-P12": 0.189,
+        "P6-P13": 0.212,
+        "P6-P14": 0.04,
+        "P6-P15": 0.167,
+        "P6-P16": 0.147,
+        "P6-P17": 0.212,
+        "P6-P18": 0.25,
+        "P7-P8": 0.059,
+        "P7-P9": 0.08,
+        "P7-P10": 0.0,
+        "P7-P11": 0.0,
+        "P7-P12": 0.077,
+        "P7-P13": 0.0,
+        "P7-P14": 0.0,
+        "P7-P15": 0.056,
+        "P7-P16": 0.0,
+        "P7-P17": 0.043,
+        "P7-P18": 0.0,
+        "P8-P9": 0.367,
+        "P8-P10": 0.042,
+        "P8-P11": 0.227,
+        "P8-P12": 0.235,
+        "P8-P13": 0.267,
+        "P8-P14": 0.091,
+        "P8-P15": 0.269,
+        "P8-P16": 0.233,
+        "P8-P17": 0.267,
+        "P8-P18": 0.31,
+        "P9-P10": 0.062,
+        "P9-P11": 0.241,
+        "P9-P12": 0.342,
+        "P9-P13": 0.382,
+        "P9-P14": 0.065,
+        "P9-P15": 0.312,
+        "P9-P16": 0.314,
+        "P9-P17": 0.306,
+        "P9-P18": 0.424,
+        "P10-P11": 0.053,
+        "P10-P12": 0.029,
+        "P10-P13": 0.069,
+        "P10-P14": 0.062,
+        "P10-P15": 0.083,
+        "P10-P16": 0.034,
+        "P10-P17": 0.107,
+        "P10-P18": 0.107,
+        "P11-P12": 0.194,
+        "P11-P13": 0.269,
+        "P11-P14": 0.118,
+        "P11-P15": 0.167,
+        "P11-P16": 0.185,
+        "P11-P17": 0.32,
+        "P11-P18": 0.32,
+        "P12-P13": 0.231,
+        "P12-P14": 0.062,
+        "P12-P15": 0.265,
+        "P12-P16": 0.175,
+        "P12-P17": 0.297,
+        "P12-P18": 0.297,
+        "P13-P14": 0.111,
+        "P13-P15": 0.219,
+        "P13-P16": 0.265,
+        "P13-P17": 0.333,
+        "P13-P18": 0.333,
+        "P14-P15": 0.042,
+        "P14-P16": 0.036,
+        "P14-P17": 0.071,
+        "P14-P18": 0.111,
+        "P15-P16": 0.226,
+        "P15-P17": 0.258,
+        "P15-P18": 0.3,
+        "P16-P17": 0.229,
+        "P16-P18": 0.162,
+        "P17-P18": 0.333
+      }
+    },
+    "f103v": {
+      "folio_wide_middles": [],
+      "folio_persistent_rare": [],
+      "majority_persistent_rare": [],
+      "paragraph_vocabulary": {
+        "P1": {
+          "total_middles": 21,
+          "middles": [
+            "al",
+            "ck",
+            "ct",
+            "dy",
+            "e",
+            "edy",
+            "ee",
+            "eedak",
+            "eey",
+            "ey",
+            "fch",
+            "iin",
+            "k",
+            "ke",
+            "l",
+            "ol",
+            "or",
+            "r",
+            "t",
+            "te",
+            "y"
+          ],
+          "specific_middles": [
+            "eedak",
+            "fch",
+            "te"
+          ],
+          "initial_middles": [
+            "fch",
+            "l",
+            "r"
+          ],
+          "intro_only_middles": [
+            "fch"
+          ],
+          "material_markers": {
+            "ANIMAL": 7,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 1,
+              "k": 8,
+              "e": 8
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P2": {
+          "total_middles": 21,
+          "middles": [
+            "aiin",
+            "e",
+            "ech",
+            "edy",
+            "ee",
+            "eey",
+            "ek",
+            "ekee",
+            "eol",
+            "ey",
+            "i",
+            "iin",
+            "in",
+            "k",
+            "ke",
+            "ksh",
+            "ol",
+            "or",
+            "pch",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "ech",
+            "ek",
+            "ekee",
+            "i",
+            "pch"
+          ],
+          "initial_middles": [
+            "e",
+            "ek",
+            "k"
+          ],
+          "intro_only_middles": [
+            "e",
+            "ek"
+          ],
+          "material_markers": {
+            "ANIMAL": 4,
+            "ROOT": 1,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 11,
+              "k": 10,
+              "h": 3
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P3": {
+          "total_middles": 25,
+          "middles": [
+            "aiin",
+            "ain",
+            "al",
+            "an",
+            "ar",
+            "cs",
+            "e",
+            "ed",
+            "edy",
+            "eey",
+            "ey",
+            "in",
+            "k",
+            "ke",
+            "kees",
+            "l",
+            "oit",
+            "ol",
+            "opal",
+            "or",
+            "orch",
+            "t",
+            "tch",
+            "tsh",
+            "y"
+          ],
+          "specific_middles": [
+            "cs",
+            "kees",
+            "oit",
+            "opal",
+            "orch",
+            "tch",
+            "tsh"
+          ],
+          "initial_middles": [
+            "al",
+            "orch"
+          ],
+          "intro_only_middles": [
+            "al",
+            "orch"
+          ],
+          "material_markers": {
+            "ANIMAL": 6,
+            "ROOT": 1,
+            "WATER": 2
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 3,
+              "e": 10,
+              "k": 5
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P4": {
+          "total_middles": 10,
+          "middles": [
+            "aiin",
+            "am",
+            "ar",
+            "e",
+            "edy",
+            "eol",
+            "k",
+            "ke",
+            "o",
+            "osh"
+          ],
+          "specific_middles": [],
+          "initial_middles": [
+            "eol",
+            "o"
+          ],
+          "intro_only_middles": [
+            "eol",
+            "o"
+          ],
+          "material_markers": {
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "BALANCED",
+            "kernel_dist": {
+              "e": 3,
+              "k": 3,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P5": {
+          "total_middles": 27,
+          "middles": [
+            "a",
+            "aiin",
+            "ain",
+            "al",
+            "alk",
+            "ar",
+            "ck",
+            "dy",
+            "e",
+            "eal",
+            "ed",
+            "edy",
+            "eekc",
+            "ees",
+            "eey",
+            "eo",
+            "ey",
+            "iin",
+            "k",
+            "ke",
+            "keed",
+            "l",
+            "ol",
+            "opch",
+            "oq",
+            "or",
+            "t"
+          ],
+          "specific_middles": [
+            "alk",
+            "eal",
+            "eekc",
+            "ees",
+            "oq"
+          ],
+          "initial_middles": [
+            "ed",
+            "eey",
+            "ey"
+          ],
+          "intro_only_middles": [
+            "ed"
+          ],
+          "material_markers": {
+            "WATER": 4,
+            "OIL": 1,
+            "ANIMAL": 3,
+            "ROOT": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 8,
+              "k": 7,
+              "h": 1
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P6": {
+          "total_middles": 8,
+          "middles": [
+            "aik",
+            "ain",
+            "ar",
+            "e",
+            "edy",
+            "k",
+            "l",
+            "t"
+          ],
+          "specific_middles": [
+            "aik"
+          ],
+          "initial_middles": [
+            "ar",
+            "l"
+          ],
+          "intro_only_middles": [
+            "ar",
+            "l"
+          ],
+          "material_markers": {
+            "WATER": 2,
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ENERGY_DOMINANT",
+            "kernel_dist": {
+              "k": 2,
+              "e": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P7": {
+          "total_middles": 28,
+          "middles": [
+            "ai",
+            "aiin",
+            "aikh",
+            "ain",
+            "al",
+            "am",
+            "an",
+            "ar",
+            "e",
+            "edy",
+            "ee",
+            "eet",
+            "eey",
+            "eo",
+            "eok",
+            "ey",
+            "in",
+            "k",
+            "ke",
+            "keed",
+            "ks",
+            "l",
+            "oiin",
+            "op",
+            "or",
+            "r",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "ai",
+            "aikh",
+            "eet",
+            "ks",
+            "op"
+          ],
+          "initial_middles": [
+            "al",
+            "k",
+            "keed"
+          ],
+          "intro_only_middles": [
+            "keed"
+          ],
+          "material_markers": {
+            "WATER": 1,
+            "ANIMAL": 5
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 10,
+              "e": 11,
+              "h": 1
+            },
+            "fl_trend": "DISTRIBUTED"
+          }
+        },
+        "P8": {
+          "total_middles": 17,
+          "middles": [
+            "aiin",
+            "ain",
+            "ar",
+            "ary",
+            "ck",
+            "e",
+            "eck",
+            "edy",
+            "eey",
+            "eeylch",
+            "eo",
+            "ey",
+            "iin",
+            "lp",
+            "r",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "ary",
+            "eeylch",
+            "lp"
+          ],
+          "initial_middles": [
+            "ar",
+            "eeylch",
+            "eo"
+          ],
+          "intro_only_middles": [
+            "ar",
+            "eeylch",
+            "eo"
+          ],
+          "material_markers": {
+            "WATER": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 4,
+              "h": 1,
+              "k": 2
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P9": {
+          "total_middles": 33,
+          "middles": [
+            "a",
+            "aiin",
+            "ain",
+            "al",
+            "ck",
+            "dpc",
+            "dy",
+            "e",
+            "eck",
+            "ed",
+            "edy",
+            "eey",
+            "eo",
+            "eok",
+            "et",
+            "ey",
+            "iin",
+            "k",
+            "ke",
+            "keshe",
+            "ksh",
+            "l",
+            "ly",
+            "ok",
+            "ol",
+            "opch",
+            "oqok",
+            "osh",
+            "qckh",
+            "qcph",
+            "r",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "dpc",
+            "et",
+            "keshe",
+            "ly",
+            "ok",
+            "oqok",
+            "qckh",
+            "qcph"
+          ],
+          "initial_middles": [
+            "ain",
+            "e",
+            "opch"
+          ],
+          "intro_only_middles": [
+            "e"
+          ],
+          "material_markers": {
+            "ROOT": 2,
+            "ANIMAL": 9,
+            "WATER": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "e": 19,
+              "h": 7,
+              "k": 14
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P10": {
+          "total_middles": 30,
+          "middles": [
+            "ain",
+            "al",
+            "ar",
+            "ck",
+            "ckh",
+            "dy",
+            "e",
+            "eck",
+            "edy",
+            "eed",
+            "eey",
+            "eolsh",
+            "er",
+            "ey",
+            "iin",
+            "in",
+            "it",
+            "k",
+            "keo",
+            "lsh",
+            "oiin",
+            "ol",
+            "opc",
+            "qk",
+            "r",
+            "ra",
+            "ro",
+            "sa",
+            "t",
+            "y"
+          ],
+          "specific_middles": [
+            "ckh",
+            "eed",
+            "eolsh",
+            "er",
+            "it",
+            "keo",
+            "lsh",
+            "opc",
+            "qk",
+            "ra",
+            "ro",
+            "sa"
+          ],
+          "initial_middles": [
+            "eolsh",
+            "ey",
+            "lsh"
+          ],
+          "intro_only_middles": [
+            "eolsh",
+            "lsh"
+          ],
+          "material_markers": {
+            "ANIMAL": 3,
+            "WATER": 3
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "h": 2,
+              "e": 11,
+              "k": 7
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        },
+        "P11": {
+          "total_middles": 15,
+          "middles": [
+            "a",
+            "aiin",
+            "ck",
+            "ct",
+            "dy",
+            "ec",
+            "ee",
+            "eey",
+            "ey",
+            "in",
+            "k",
+            "l",
+            "o",
+            "ol",
+            "y"
+          ],
+          "specific_middles": [
+            "ec"
+          ],
+          "initial_middles": [
+            "in",
+            "k",
+            "ol"
+          ],
+          "intro_only_middles": [
+            "in"
+          ],
+          "material_markers": {
+            "ANIMAL": 1
+          },
+          "kernel_info": {
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "kernel_dist": {
+              "k": 2,
+              "e": 2
+            },
+            "fl_trend": "TERMINAL_HEAVY"
+          }
+        }
+      },
+      "pairwise_jaccard": {
+        "P1-P2": 0.4,
+        "P1-P3": 0.353,
+        "P1-P4": 0.148,
+        "P1-P5": 0.412,
+        "P1-P6": 0.208,
+        "P1-P7": 0.361,
+        "P1-P8": 0.31,
+        "P1-P9": 0.385,
+        "P1-P10": 0.342,
+        "P1-P11": 0.385,
+        "P2-P3": 0.353,
+        "P2-P4": 0.24,
+        "P2-P5": 0.297,
+        "P2-P6": 0.16,
+        "P2-P7": 0.324,
+        "P2-P8": 0.267,
+        "P2-P9": 0.286,
+        "P2-P10": 0.244,
+        "P2-P11": 0.286,
+        "P3-P4": 0.207,
+        "P3-P5": 0.405,
+        "P3-P6": 0.269,
+        "P3-P7": 0.432,
+        "P3-P8": 0.273,
+        "P3-P9": 0.318,
+        "P3-P10": 0.279,
+        "P3-P11": 0.25,
+        "P4-P5": 0.194,
+        "P4-P6": 0.286,
+        "P4-P7": 0.226,
+        "P4-P8": 0.174,
+        "P4-P9": 0.162,
+        "P4-P10": 0.111,
+        "P4-P11": 0.136,
+        "P5-P6": 0.25,
+        "P5-P7": 0.375,
+        "P5-P8": 0.333,
+        "P5-P9": 0.463,
+        "P5-P10": 0.295,
+        "P5-P11": 0.273,
+        "P6-P7": 0.241,
+        "P6-P8": 0.25,
+        "P6-P9": 0.171,
+        "P6-P10": 0.188,
+        "P6-P11": 0.095,
+        "P7-P8": 0.324,
+        "P7-P9": 0.326,
+        "P7-P10": 0.289,
+        "P7-P11": 0.229,
+        "P8-P9": 0.351,
+        "P8-P10": 0.343,
+        "P8-P11": 0.185,
+        "P9-P10": 0.312,
+        "P9-P11": 0.263,
+        "P10-P11": 0.216
+      }
+    }
+  },
+  "verdict": "PASS",
+  "material_signal_count": 6,
+  "total_folios_tested": 6,
+  "pass_threshold": "3+ folios with consistent material-tracking signals",
+  "methodology_notes": [
+    "Paragraphs are INDEPENDENT operational units (C855), not sequential stages",
+    "Material persistence is detected by MIDDLEs appearing across operationally independent paragraphs",
+    "Folio-persistent rare MIDDLEs are the strongest material signal",
+    "Jaccard similarity measures vocabulary overlap between paragraphs",
+    "Specificity rate measures what fraction of each paragraphs vocabulary is unique to it"
+  ],
+  "narrative_analysis": {
+    "f103r": {
+      "section": "S",
+      "paragraph_count": 12,
+      "narrative": "f103r has 12 paragraphs, overwhelmingly ESCAPE_DOMINANT. No MIDDLE appears in all 12 paragraphs -- the vocabulary turns over completely. However, the specificity rate is low (23.7%), meaning most MIDDLEs in any given paragraph also appear in other paragraphs. The shared vocabulary is common grammatical infrastructure (edy, ey, k, or, ol, etc.), not rare material-specific tokens. Paragraph-initial MIDDLEs (echypc in P1, ed in P2) do not form a consistent material introduction pattern. Material markers ANIMAL and WATER are consistent across paragraphs, but these are driven by common suffixes (ey, ol, or) that appear universally across Currier B.",
+      "material_reading": "If single-material: the material is a generic delicate-plant substance processed with extensive settling (escape-dominant kernel balance). No rare vocabulary marker identifies the specific plant. If multi-material: no evidence of material switching between paragraphs, as each paragraph uses the same common vocabulary pool.",
+      "interpretation": "OPERATIONAL_VARIATION -- vocabulary overlap reflects shared grammar, not shared material. The kernel balance uniformity (11/12 ESCAPE_DOMINANT) actually argues AGAINST material variation (all paragraphs process similarly), but the vocabulary that shifts between paragraphs is operational, not material."
+    },
+    "f39r": {
+      "section": "H",
+      "paragraph_count": 6,
+      "narrative": "f39r shows the most varied kernel balance profile: BALANCED, HAZARD_HEAVY, BALANCED, ESCAPE_DOMINANT, BALANCED, ESCAPE_DOMINANT. This folio has the lowest Jaccard similarity (avg 0.19) and highest specificity rate (38.3%) -- each paragraph uses substantially different vocabulary. The P1 header is a 13-token HT identification line. No MIDDLEs persist across all paragraphs. The gallows-initial boundary tokens vary: tedo, tohedy, pchdaiin, tchedy, pchdar, tolchdaiin -- diverse morphological openings suggesting different operational contexts. Paragraphs are truly independent with minimal vocabulary sharing.",
+      "material_reading": "If single-material: the material is set by the header (P1 line 1) and does not need to be re-established. The vocabulary variation across paragraphs is entirely operational -- different processing modes (hazard monitoring, balanced processing, settling) applied to the same material. If multi-material: the high specificity and low overlap could indicate different materials in each paragraph, but the absence of any folio-persistent rare MIDDLE provides no positive evidence for this.",
+      "interpretation": "INDEPENDENT_PROGRAMS -- each paragraph is a truly separate operation. Material context, if any, is established once in the folio header and not tracked through vocabulary."
+    },
+    "f86v3": {
+      "section": "C",
+      "paragraph_count": 3,
+      "narrative": "f86v3 has only 3 paragraphs but the highest per-paragraph vocabulary. P1 is a 59-token block with 31 tokens in a single header line -- an unusually dense HT identification line. P2 is the dominant paragraph (177 tokens, 9 lines, 63 unique MIDDLEs) containing the bulk of the folio's content. 11 MIDDLEs appear in all 3 paragraphs (aiin, dy, ed, edy, eo, ey, k, kch, or, r, t), but ALL are common MIDDLEs (appearing in 40+ folios). The material markers span all categories (ANIMAL, WATER, ROOT, OIL), which is more likely a sign that this folio covers multiple processing types than a single material. The Jaccard values (0.25-0.32) reflect shared common grammar.",
+      "material_reading": "If single-material: the material involves multiple processing modes (balanced P1 header + escape-dominant P2 body + balanced P3 closing). The ALL-category marker spread could indicate an animal-origin material requiring oil extraction and water processing. If multi-material: the P2 paragraph's massive size and distinct vocabulary suggest it is the primary operation, with P1 and P3 as framing operations.",
+      "interpretation": "SHARED_GRAMMAR -- the folio-wide MIDDLEs are all high-frequency common tokens. Material identity is NOT tracked through MIDDLE vocabulary."
+    },
+    "f66r": {
+      "section": "T",
+      "paragraph_count": 8,
+      "narrative": "f66r has 8 paragraphs with the lowest average Jaccard (0.15). The vocabulary is highly paragraph-specific. Notably, paragraphs P2-P5 all start with boundary token 'f' (gallows), which is morphologically minimal -- possibly a section T pattern rather than a material marker. P8 is degenerate (2 tokens, NO_KERNELS). The first paragraph P1 is headerless (starts with 'y', an articulator). Material markers ANIMAL and WATER are consistent but driven by common suffixes. The paragraph-initial MIDDLEs show no pattern: iin (P1), cph/f (P2), eol/f/lcheeek (P3), edy/f/r (P4), de/f/o (P5), etc.",
+      "material_reading": "If single-material: the material is processed in 8 independent operational modes with very little vocabulary overlap. The consistent ANIMAL markers suggest animal-origin material. If multi-material: the low Jaccard and high paragraph-specificity could indicate 8 different material operations, but the 'f' boundary token repetition argues against this.",
+      "interpretation": "OPERATIONAL_VARIATION -- the 'f' gallows repetition suggests a single operational template applied repeatedly with different specific vocabulary, not different materials."
+    },
+    "f107r": {
+      "section": "S",
+      "paragraph_count": 18,
+      "narrative": "f107r has the most paragraphs (18) and the widest kernel balance variation: ESCAPE_DOMINANT, BALANCED, ENERGY_DOMINANT, and HAZARD_HEAVY all present. This is the original trigger folio for material investigation. With 18 small paragraphs (many just 1-3 lines), the folio reads as a recipe collection rather than a single process. The low specificity (21.2%) combined with moderate Jaccard (0.18) suggests paragraphs draw from a shared vocabulary pool. Many paragraphs start with distinctive boundary tokens: pchdlar, teeody, torshor, polchls, tolshosor -- these are morphologically complex and folio-specific. Each boundary token could be naming a recipe variant or sub-procedure. No rare MIDDLEs persist across the 18 paragraphs.",
+      "material_reading": "If single-material: the 18 paragraphs represent 18 independent operations on the same material (consistent with C855 PARALLEL_PROGRAMS). The diversity of kernel balances (heating, settling, monitoring, hazard-control) supports this -- different processing phases. If multi-material: the paragraph boundary tokens (torshor, polchls, tolshosor, etc.) could be material labels, but they are all morphologically distinct with no shared rare MIDDLE suggesting material continuity.",
+      "interpretation": "RECIPE_COLLECTION -- f107r functions as a multi-recipe folio. Material identity, if present, is set at the folio level (section S context) and not tracked through paragraph vocabulary."
+    },
+    "f103v": {
+      "section": "S",
+      "paragraph_count": 11,
+      "narrative": "f103v has 11 paragraphs and the highest average Jaccard (0.28) of all folios tested. The low specificity (21.3%) means paragraphs share most of their vocabulary. Multiple paragraph pairs exceed 0.40 Jaccard: P1-P2 (0.40), P1-P5 (0.41), P3-P7 (0.43), P5-P9 (0.46). This is the strongest vocabulary continuity signal in the dataset. However, the folio-wide MIDDLEs set is empty (no MIDDLE appears in all 11 paragraphs). The shared vocabulary is common tokens. Material markers ANIMAL and WATER are consistent. The paragraphs show typical S-section escape-dominant processing.",
+      "material_reading": "If single-material: f103v shows the strongest case for a single material processed 11 ways. The high pairwise Jaccard values suggest the same operational vocabulary is reused across paragraphs, consistent with a single material context. If multi-material: no evidence supports material switching -- no paragraph-specific rare vocabularies form clusters.",
+      "interpretation": "BEST_CANDIDATE_SINGLE_MATERIAL -- among all 6 folios, f103v shows the strongest vocabulary continuity. However, even here the shared vocabulary is common tokens, not material-specific rare MIDDLEs."
+    },
+    "overall_synthesis": {
+      "key_finding": "No folio has folio-persistent rare MIDDLEs. No folio has majority-persistent rare MIDDLEs. The strongest material signal type (rare vocabulary appearing across operationally independent paragraphs) is completely absent.",
+      "what_IS_shared": "Common grammatical infrastructure MIDDLEs (edy, ey, k, or, ol, ed, etc.) appear across paragraphs. These are the 41 MIDDLEs found in 40+ folios. They carry operational, not material, meaning.",
+      "what_varies": "Paragraph-specific MIDDLEs are either rare compound forms (keodai, lcheeek, cphhof) that appear as one-off hapax legomena, or section-typical vocabulary that appears in some but not all paragraphs.",
+      "material_markers_are_generic": "ANIMAL and WATER markers fire consistently because they are driven by common suffixes (ey, ol, or, al) that are part of the base grammar. Their consistency across paragraphs reflects grammar, not material continuity.",
+      "vocabulary_overlap_is_grammatical": "Jaccard values of 0.15-0.28 reflect shared grammar, not shared material. The same common MIDDLEs appear in all paragraphs because they are the grammatical building blocks, not because they encode a persistent material.",
+      "conclusion": "Material identity is NOT tracked through paragraph-level MIDDLE vocabulary. If material is encoded, it is either (a) set once at the folio level and never restated, (b) encoded through a mechanism other than MIDDLE vocabulary (e.g., prefix combinations, suffix patterns, or structural position), or (c) not encoded through vocabulary at all but rather through the folio's section membership."
+    }
+  }
+}
