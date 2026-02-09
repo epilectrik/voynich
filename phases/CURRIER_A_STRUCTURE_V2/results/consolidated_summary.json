@@ -1,0 +1,29 @@
+{
+  "test": "CONSOLIDATED_SUMMARY",
+  "basic_counts": {
+    "total_paragraphs": 342,
+    "with_ri": 215,
+    "without_ri": 127
+  },
+  "paragraph_size": {
+    "avg_with_ri": 31.88372093023256,
+    "avg_without_ri": 34.00787401574803
+  },
+  "key_findings": {
+    "pure_pp_first_line": "92.7%",
+    "ri_vocab_jaccard": 0.028,
+    "linker_density_ratio": 1.35,
+    "link_prefix_enrichment": 2.7,
+    "last_position_enrichment": 1.62,
+    "first_position_rate": 0.22,
+    "bridge_overlap_ratio": 0.53,
+    "b_folio_jaccard": 1.0
+  },
+  "interpretation": "PROCESS_ONLY_RECORDS",
+  "function": [
+    "Document process steps without material identification",
+    "Concentrate at folio endings",
+    "Use LINK-oriented vocabulary",
+    "Independent units (not continuations)"
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "summary": {
+    "total_b_folios": 82,
+    "explicit_folios": 6,
+    "heuristic_folios": 76,
+    "explicit_paragraphs": 13,
+    "explicit_gallows_rate": 0.6923076923076923,
+    "heuristic_paragraphs": 551,
+    "mean_paragraphs_per_folio": 7.25,
+    "mean_lines_per_paragraph": 4.036297640653357,
+    "mean_tokens_per_paragraph": 38.45372050816697,
+    "c841_validated": true
+  },
+  "explicit_results": [
+    {
+      "folio": "f105r",
+      "paragraph_count": 2,
+      "detection_method": "explicit",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 9,
+          "tokens": 91,
+          "first_token": "paiin",
+          "gallows_initial": true,
+          "line_range": "1-9"
+        },
+        {
+          "number": 2,
+          "lines": 26,
+          "tokens": 271,
+          "first_token": "pdar",
+          "gallows_initial": true,
+          "line_range": "10-35"
+        }
+      ]
+    },
+    {
+      "folio": "f114r",
+      "paragraph_count": 2,
+      "detection_method": "explicit",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 33,
+          "tokens": 331,
+          "first_token": "tchedol",
+          "gallows_initial": true,
+          "line_range": "1-33"
+        },
+        {
+          "number": 2,
+          "lines": 11,
+          "tokens": 111,
+          "first_token": "pcheos",
+          "gallows_initial": true,
+          "line_range": "35-45"
+        }
+      ]
+    },
+    {
+      "folio": "f75v",
+      "paragraph_count": 3,
+      "detection_method": "explicit",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 7,
+          "tokens": 84,
+          "first_token": "qokeed",
+          "gallows_initial": false,
+          "line_range": "5-11"
+        },
+        {
+          "number": 2,
+          "lines": 3,
+          "tokens": 30,
+          "first_token": "qokain",
+          "gallows_initial": false,
+          "line_range": "21-23"
+        },
+        {
+          "number": 3,
+          "lines": 11,
+          "tokens": 90,
+          "first_token": "kolkedy",
+          "gallows_initial": true,
+          "line_range": "24-34"
+        }
+      ]
+    },
+    {
+      "folio": "f82r",
+      "paragraph_count": 2,
+      "detection_method": "explicit",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 9,
+          "tokens": 84,
+          "first_token": "qocseedy",
+          "gallows_initial": false,
+          "line_range": "1-9"
+        },
+        {
+          "number": 2,
+          "lines": 23,
+          "tokens": 206,
+          "first_token": "kolchdy",
+          "gallows_initial": true,
+          "line_range": "10-32"
+        }
+      ]
+    },
+    {
+      "folio": "f83v",
+      "paragraph_count": 2,
+      "detection_method": "explicit",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 8,
+          "tokens": 79,
+          "first_token": "poldaky",
+          "gallows_initial": true,
+          "line_range": "1-8"
+        },
+        {
+          "number": 2,
+          "lines": 23,
+          "tokens": 184,
+          "first_token": "pchedas",
+          "gallows_initial": true,
+          "line_range": "9-31"
+        }
+      ]
+    },
+    {
+      "folio": "f86v3",
+      "paragraph_count": 2,
+      "detection_method": "explicit",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 8,
+          "tokens": 213,
+          "first_token": "tchedy",
+          "gallows_initial": true,
+          "line_range": "1-8"
+        },
+        {
+          "number": 3,
+          "lines": 1,
+          "tokens": 11,
+          "first_token": "ykeeedy",
+          "gallows_initial": false,
+          "line_range": "9-9"
+        }
+      ]
+    }
+  ],
+  "heuristic_sample": [
+    {
+      "folio": "f103r",
+      "paragraph_count": 12,
+      "detection_method": "heuristic",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 4,
+          "tokens": 49,
+          "first_token": "pchedal",
+          "gallows_initial": true,
+          "line_range": "1-4"
+        },
+        {
+          "number": 2,
+          "lines": 8,
+          "tokens": 94,
+          "first_token": "pocharal",
+          "gallows_initial": true,
+          "line_range": "5-12"
+        },
+        {
+          "number": 3,
+          "lines": 5,
+          "tokens": 51,
+          "first_token": "podar",
+          "gallows_initial": true,
+          "line_range": "13-17"
+        },
+        {
+          "number": 4,
+          "lines": 3,
+          "tokens": 29,
+          "first_token": "polchedy",
+          "gallows_initial": true,
+          "line_range": "18-20"
+        },
+        {
+          "number": 5,
+          "lines": 3,
+          "tokens": 28,
+          "first_token": "pcheam",
+          "gallows_initial": true,
+          "line_range": "21-23"
+        },
+        {
+          "number": 6,
+          "lines": 6,
+          "tokens": 59,
+          "first_token": "tchoky",
+          "gallows_initial": true,
+          "line_range": "24-29"
+        },
+        {
+          "number": 7,
+          "lines": 7,
+          "tokens": 59,
+          "first_token": "pcholkchdy",
+          "gallows_initial": true,
+          "line_range": "30-36"
+        },
+        {
+          "number": 8,
+          "lines": 5,
+          "tokens": 46,
+          "first_token": "pchedy",
+          "gallows_initial": true,
+          "line_range": "37-41"
+        },
+        {
+          "number": 9,
+          "lines": 1,
+          "tokens": 4,
+          "first_token": "tshey",
+          "gallows_initial": true,
+          "line_range": "42-42"
+        },
+        {
+          "number": 10,
+          "lines": 5,
+          "tokens": 42,
+          "first_token": "tar",
+          "gallows_initial": true,
+          "line_range": "43-47"
+        },
+        {
+          "number": 11,
+          "lines": 4,
+          "tokens": 36,
+          "first_token": "polarar",
+          "gallows_initial": true,
+          "line_range": "48-51"
+        },
+        {
+          "number": 12,
+          "lines": 3,
+          "tokens": 25,
+          "first_token": "pchedal",
+          "gallows_initial": true,
+          "line_range": "52-54"
+        }
+      ]
+    },
+    {
+      "folio": "f104r",
+      "paragraph_count": 11,
+      "detection_method": "heuristic",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 4,
+          "tokens": 41,
+          "first_token": "pchdar",
+          "gallows_initial": true,
+          "line_range": "1-4"
+        },
+        {
+          "number": 2,
+          "lines": 5,
+          "tokens": 49,
+          "first_token": "kchdal",
+          "gallows_initial": true,
+          "line_range": "5-9"
+        },
+        {
+          "number": 3,
+          "lines": 2,
+          "tokens": 20,
+          "first_token": "tol",
+          "gallows_initial": true,
+          "line_range": "10-11"
+        },
+        {
+          "number": 4,
+          "lines": 7,
+          "tokens": 66,
+          "first_token": "tshdol",
+          "gallows_initial": true,
+          "line_range": "12-18"
+        },
+        {
+          "number": 5,
+          "lines": 3,
+          "tokens": 29,
+          "first_token": "toaiin",
+          "gallows_initial": true,
+          "line_range": "19-21"
+        },
+        {
+          "number": 6,
+          "lines": 5,
+          "tokens": 50,
+          "first_token": "tshedar",
+          "gallows_initial": true,
+          "line_range": "22-26"
+        },
+        {
+          "number": 7,
+          "lines": 7,
+          "tokens": 73,
+          "first_token": "pchedar",
+          "gallows_initial": true,
+          "line_range": "27-33"
+        },
+        {
+          "number": 8,
+          "lines": 2,
+          "tokens": 19,
+          "first_token": "pchol",
+          "gallows_initial": true,
+          "line_range": "34-35"
+        },
+        {
+          "number": 9,
+          "lines": 3,
+          "tokens": 25,
+          "first_token": "psheody",
+          "gallows_initial": true,
+          "line_range": "36-38"
+        },
+        {
+          "number": 10,
+          "lines": 4,
+          "tokens": 35,
+          "first_token": "pcholor",
+          "gallows_initial": true,
+          "line_range": "39-42"
+        },
+        {
+          "number": 11,
+          "lines": 3,
+          "tokens": 31,
+          "first_token": "tsheodl",
+          "gallows_initial": true,
+          "line_range": "43-45"
+        }
+      ]
+    },
+    {
+      "folio": "f41v",
+      "paragraph_count": 3,
+      "detection_method": "heuristic",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 1,
+          "tokens": 1,
+          "first_token": "keerodal",
+          "gallows_initial": true,
+          "line_range": "0-0"
+        },
+        {
+          "number": 2,
+          "lines": 4,
+          "tokens": 43,
+          "first_token": "pcheody",
+          "gallows_initial": true,
+          "line_range": "1-4"
+        },
+        {
+          "number": 3,
+          "lines": 3,
+          "tokens": 24,
+          "first_token": "todaiin",
+          "gallows_initial": true,
+          "line_range": "5-7"
+        }
+      ]
+    },
+    {
+      "folio": "f43r",
+      "paragraph_count": 5,
+      "detection_method": "heuristic",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 5,
+          "tokens": 59,
+          "first_token": "tarodaiin",
+          "gallows_initial": true,
+          "line_range": "1-5"
+        },
+        {
+          "number": 2,
+          "lines": 1,
+          "tokens": 5,
+          "first_token": "kchedy",
+          "gallows_initial": true,
+          "line_range": "6-6"
+        },
+        {
+          "number": 3,
+          "lines": 3,
+          "tokens": 29,
+          "first_token": "pshesy",
+          "gallows_initial": true,
+          "line_range": "7-9"
+        },
+        {
+          "number": 4,
+          "lines": 3,
+          "tokens": 39,
+          "first_token": "pshdar",
+          "gallows_initial": true,
+          "line_range": "10-12"
+        },
+        {
+          "number": 5,
+          "lines": 2,
+          "tokens": 18,
+          "first_token": "tshed",
+          "gallows_initial": true,
+          "line_range": "13-14"
+        }
+      ]
+    },
+    {
+      "folio": "f46r",
+      "paragraph_count": 7,
+      "detection_method": "heuristic",
+      "paragraphs": [
+        {
+          "number": 1,
+          "lines": 3,
+          "tokens": 37,
+          "first_token": "pcheocphy",
+          "gallows_initial": true,
+          "line_range": "1-3"
+        },
+        {
+          "number": 2,
+          "lines": 2,
+          "tokens": 20,
+          "first_token": "tshedar",
+          "gallows_initial": true,
+          "line_range": "4-5"
+        },
+        {
+          "number": 3,
+          "lines": 3,
+          "tokens": 37,
+          "first_token": "tedy",
+          "gallows_initial": true,
+          "line_range": "6-8"
+        },
+        {
+          "number": 4,
+          "lines": 1,
+          "tokens": 13,
+          "first_token": "tshdy",
+          "gallows_initial": true,
+          "line_range": "9-9"
+        },
+        {
+          "number": 5,
+          "lines": 1,
+          "tokens": 9,
+          "first_token": "tchey",
+          "gallows_initial": true,
+          "line_range": "10-10"
+        },
+        {
+          "number": 6,
+          "lines": 1,
+          "tokens": 10,
+          "first_token": "pchdair",
+          "gallows_initial": true,
+          "line_range": "11-11"
+        },
+        {
+          "number": 7,
+          "lines": 4,
+          "tokens": 31,
+          "first_token": "techy",
+          "gallows_initial": true,
+          "line_range": "12-15"
+        }
+      ]
+    }
+  ],
+  "paragraph_count_distribution": {
+    "12": 4,
+    "11": 4,
+    "10": 2,
+    "16": 2,
+    "15": 3,
+    "18": 1,
+    "20": 2,
+    "9": 3,
+    "7": 6,
+    "14": 2,
+    "8": 5,
+    "3": 12,
+    "5": 8,
+    "2": 9,
+    "6": 4,
+    "4": 8,
+    "17": 1
+  }
+}

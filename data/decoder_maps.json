@@ -1,0 +1,1876 @@
+{
+  "meta": {
+    "version": "1.4",
+    "description": "Externalized BFolioDecoder maps with constraint citations",
+    "source": "Extracted from scripts/voynich.py BFolioDecoder class",
+    "v1.1_changes": "Expert validation: fixed -ey (strong→selective), -dy (gentle→basic), -ar (recover→close), removed sch=grind (unsupported), demoted ksh/FL glosses to Tier 4, fixed CC_TOKENS to use C874 labels",
+    "v1.2_changes": "Fixed lch/te prefix_roles: PREP→PREP_TIER to separate role taxonomy from phase taxonomy",
+    "v1.3_changes": "Expert deep validation: ct CC_CORE→A_ENRICHED (C282), al/ar/or AX_LINK→AX_LATE (C539/C609), ly WATER demoted to Tier 4, OIL_MARKER kc/okch demoted to Tier 4 (F-BRU-020 is F4)",
+    "v1.4_changes": "Expert f26r glossing: -edy energy-check→thorough (C283), -dy basic→close (C597), -hy maintain→verify-maintain (C907)",
+    "tier_note": "tier 0-2 = structural (constraint-backed), tier 3 = interpretive (Brunschwig-grounded), tier 4 = speculative"
+  },
+  "maps": {
+    "prefix_phase": {
+      "constraint_group": "C556, C539, C557",
+      "tier": 2,
+      "entries": {
+        "da": {
+          "value": "SETUP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "sa": {
+          "value": "SETUP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "so": {
+          "value": "SETUP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "pch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "tch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "lch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "dch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "fch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "kch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "rch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "sch": {
+          "value": "PREP",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ch": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "sh": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "qo": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ok": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ot": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ke": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "te": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "lk": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "yk": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "lsh": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "po": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "do": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "to": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ko": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ct": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "de": {
+          "value": "WORK",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "al": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ar": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "or": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ol": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "lo": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ka": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        },
+        "ta": {
+          "value": "CLOSE",
+          "constraint": "C556, C539, C557",
+          "tier": 2
+        }
+      }
+    },
+    "prefix_roles": {
+      "constraint_group": "C371-374",
+      "tier": 2,
+      "entries": {
+        "ch": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "sh": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ok": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "lk": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "lch": {
+          "value": "PREP_TIER",
+          "constraint": "C371-374, F-BRU-012",
+          "tier": 2
+        },
+        "yk": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ke": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "te": {
+          "value": "PREP_TIER",
+          "constraint": "C371-374, F-BRU-012",
+          "tier": 2
+        },
+        "lsh": {
+          "value": "EN_KERNEL",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "qo": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "o": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ot": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ko": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "to": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "do": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "po": {
+          "value": "EN_QO",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "da": {
+          "value": "AX_SCAFFOLD",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "sa": {
+          "value": "AX_SCAFFOLD",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ka": {
+          "value": "AX_SCAFFOLD",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ta": {
+          "value": "AX_SCAFFOLD",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "al": {
+          "value": "AX_LATE",
+          "constraint": "C371-374, C539",
+          "tier": 2,
+          "note": "LATE/CLOSE prefix (3.78x line-final per C539), not LINK operator"
+        },
+        "ol": {
+          "value": "AX_LATE",
+          "constraint": "C371-374, C539, C609",
+          "tier": 2,
+          "note": "LATE prefix; also creates LINK tokens (C609) and CC Class 11 (C788)"
+        },
+        "ar": {
+          "value": "AX_LATE",
+          "constraint": "C371-374, C539",
+          "tier": 2,
+          "note": "LATE/CLOSE prefix (3.78x line-final per C539)"
+        },
+        "or": {
+          "value": "AX_LATE",
+          "constraint": "C371-374, C539",
+          "tier": 2,
+          "note": "LATE/CLOSE prefix (3.78x line-final per C539)"
+        },
+        "ct": {
+          "value": "A_ENRICHED",
+          "constraint": "C282, C284",
+          "tier": 2,
+          "note": "CT is 0.14x B-enriched (A-enriched per C282), NOT CC_CORE. Rare in B, folio-specific (C284)"
+        },
+        "so": {
+          "value": "CC_INIT",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "ych": {
+          "value": "CC_INIT",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "pch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "tch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "kch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "dch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "fch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "rch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "sch": {
+          "value": "PREP",
+          "constraint": "C371-374",
+          "tier": 2
+        },
+        "lo": {
+          "value": "FL_FINAL",
+          "constraint": "C371-374",
+          "tier": 2
+        }
+      }
+    },
+    "suffix_gloss": {
+      "constraint_group": "C495, C527, C539, C588, C906-907, C919",
+      "tier": 3,
+      "entries": {
+        "y": {
+          "value": ".",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "dy": {
+          "value": ". [close]",
+          "constraint": "C283, C597",
+          "tier": 3,
+          "note": "4.6x B-enriched (C283); Class 23 FQ_CLOSER boundary specialist (C597)"
+        },
+        "edy": {
+          "value": ". [thorough]",
+          "constraint": "C283, C588",
+          "tier": 3,
+          "note": "49x B-enriched (C283): marks complete/thorough execution, not energy-check"
+        },
+        "eey": {
+          "value": ". [extended]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "ey": {
+          "value": ". [selective]",
+          "constraint": "C527, F-BRU-012",
+          "tier": 3
+        },
+        "hy": {
+          "value": ". [verify-maintain]",
+          "constraint": "C495, C527, C907",
+          "tier": 3,
+          "note": "C907: maintenance checkpoint formula (ch/sh + consonant MIDDLE + hy)"
+        },
+        "ry": {
+          "value": ". [complete]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "ly": {
+          "value": ". [settled]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "aiin": {
+          "value": " [checkpoint]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "ain": {
+          "value": " [checkpoint]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "iin": {
+          "value": " [checkpoint]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "oiin": {
+          "value": " [late-check]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "ar": {
+          "value": ", [close]",
+          "constraint": "C562, C539",
+          "tier": 3
+        },
+        "or": {
+          "value": ", [portion]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "ol": {
+          "value": " [hold]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "al": {
+          "value": " [transfer]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "r": {
+          "value": ",",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "l": {
+          "value": " |",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "s": {
+          "value": ";",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "in": {
+          "value": ",",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "an": {
+          "value": " ~",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "am": {
+          "value": ".",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "om": {
+          "value": ".",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "im": {
+          "value": ".",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        },
+        "oly": {
+          "value": ". [done]",
+          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "tier": 3
+        }
+      }
+    },
+    "suffix_flow": {
+      "constraint_group": "C171, C556, C375-378",
+      "tier": 3,
+      "note": "Control-flow semantics for suffixes. Used by --flow rendering mode.",
+      "entries": {
+        "aiin": {"value": "CHECKPOINT", "flow_type": "GATE", "tier": 3},
+        "ain": {"value": "CHECKPOINT", "flow_type": "GATE", "tier": 3},
+        "iin": {"value": "ITERATE", "flow_type": "LOOP", "tier": 3},
+        "oiin": {"value": "LATE-CHECK", "flow_type": "GATE", "tier": 3},
+        "hy": {"value": "VERIFY", "flow_type": "CHECK", "tier": 3},
+        "ol": {"value": "HOLD", "flow_type": "HOLD", "tier": 3},
+        "al": {"value": "TRANSFER", "flow_type": "MOVE", "tier": 3},
+        "s": {"value": "NEXT", "flow_type": "SEQUENCE", "tier": 3},
+        "am": {"value": "FINALIZE", "flow_type": "TERMINAL", "tier": 3},
+        "om": {"value": "FINALIZE", "flow_type": "TERMINAL", "tier": 3},
+        "im": {"value": "FINALIZE", "flow_type": "TERMINAL", "tier": 3},
+        "oly": {"value": "DONE", "flow_type": "TERMINAL", "tier": 3},
+        "y": {"value": "END", "flow_type": "TERMINAL", "tier": 3},
+        "dy": {"value": "CLOSE", "flow_type": "TERMINAL", "tier": 3},
+        "edy": {"value": "THOROUGH", "flow_type": "CRITERION", "tier": 3},
+        "eey": {"value": "EXTENDED", "flow_type": "CRITERION", "tier": 3},
+        "ey": {"value": "SELECTIVE", "flow_type": "CRITERION", "tier": 3},
+        "ry": {"value": "COMPLETE", "flow_type": "TERMINAL", "tier": 3},
+        "ly": {"value": "SETTLED", "flow_type": "CRITERION", "tier": 3},
+        "ar": {"value": "CLOSE-IN", "flow_type": "MOVE", "tier": 3},
+        "or": {"value": "PORTION", "flow_type": "MOVE", "tier": 3},
+        "r": {"value": "CONTINUE", "flow_type": "SEQUENCE", "tier": 3},
+        "l": {"value": "FRAME", "flow_type": "SEQUENCE", "tier": 3},
+        "in": {"value": "CONTINUE", "flow_type": "SEQUENCE", "tier": 3},
+        "an": {"value": "APPROX", "flow_type": "SEQUENCE", "tier": 3}
+      }
+    },
+    "suffix_terminal": {
+      "constraint_group": "C375-378, C777, C897",
+      "tier": 2,
+      "entries": {
+        "am": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "y": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "dy": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "edy": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "ey": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "ly": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "ry": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "hy": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "eey": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "om": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "im": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "aiin": {
+          "value": "CHECKPOINT",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "ain": {
+          "value": "CHECKPOINT",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "iin": {
+          "value": "CHECKPOINT",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "oiin": {
+          "value": "CHECKPOINT",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "in": {
+          "value": "CONNECTOR",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "r": {
+          "value": "CONNECTOR",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "l": {
+          "value": "CONNECTOR",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "s": {
+          "value": "CONNECTOR",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        },
+        "an": {
+          "value": "CONNECTOR",
+          "constraint": "C375-378, C777, C897",
+          "tier": 2
+        }
+      }
+    },
+    "suffix_roles": {
+      "constraint_group": "C375-378, C884",
+      "tier": 2,
+      "entries": {
+        "edy": {
+          "value": "KERN_HEAVY",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "ey": {
+          "value": "KERN_HEAVY",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "dy": {
+          "value": "KERN_HEAVY",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "eey": {
+          "value": "KERN_HEAVY",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "hy": {
+          "value": "KERN_HEAVY",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "ry": {
+          "value": "KERN_HEAVY",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "l": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "in": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "r": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "aiin": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "ain": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "iin": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "ar": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "oiin": {
+          "value": "LINK_ATTR",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "am": {
+          "value": "LINE_FINAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "om": {
+          "value": "LINE_FINAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "oly": {
+          "value": "LINE_FINAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "im": {
+          "value": "LINE_FINAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "y": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "s": {
+          "value": "TERMINAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "ol": {
+          "value": "ANIMAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "or": {
+          "value": "ANIMAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "eol": {
+          "value": "ANIMAL",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        },
+        "ly": {
+          "value": "WATER",
+          "constraint": "C375-378",
+          "tier": 4,
+          "note": "No direct constraint maps -ly to WATER. C527 covers -y/-dy (herb) and -ey/-ol (animal) but not -ly specifically"
+        },
+        "al": {
+          "value": "WATER",
+          "constraint": "C375-378, C884",
+          "tier": 2
+        }
+      }
+    },
+    "brunschwig_gloss": {
+      "constraint_group": "F-BRU-011",
+      "tier": 3,
+      "entries": {
+        "k": {
+          "value": "apply heat",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "h": {
+          "value": "watch for problems",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "e": {
+          "value": "let settle",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "ke": {
+          "value": "keep heat steady",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "kch": {
+          "value": "precision heat pulse",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "tch": {
+          "value": "pound the material",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "pch": {
+          "value": "chop the material",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "qo": {
+          "value": "main heat operation",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "da": {
+          "value": "set up apparatus",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "ch": {
+          "value": "monitor fire",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        },
+        "sh": {
+          "value": "monitor fire",
+          "constraint": "F-BRU-011",
+          "tier": 3
+        }
+      }
+    },
+    "middle_kernel_profile": {
+      "constraint_group": "MIDDLE_SEMANTIC_MAPPING",
+      "tier": 2,
+      "entries": {
+        "ck": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eck": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "lk": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "k": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ek": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eek": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "lch": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ke": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ckh": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "l": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "kch": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "dy": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ol": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "in": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "r": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "al": {
+          "value": "K",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "opch": {
+          "value": "H",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "sh": {
+          "value": "H",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ch": {
+          "value": "H",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "pch": {
+          "value": "H",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "d": {
+          "value": "H",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eed": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eeo": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ed": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eod": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eey": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eo": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "e": {
+          "value": "E",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "aiin": {
+          "value": null,
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "edy": {
+          "value": null,
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ar": {
+          "value": null,
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "tch": {
+          "value": null,
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "o": {
+          "value": null,
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "t": {
+          "value": null,
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        }
+      }
+    },
+    "middle_regime": {
+      "constraint_group": "MIDDLE_SEMANTIC_MAPPING",
+      "tier": 2,
+      "entries": {
+        "m": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ek": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "et": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "y": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "d": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "dy": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "od": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "am": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "a": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "s": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "i": {
+          "value": "PRECISION",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "lk": {
+          "value": "HIGH_ENERGY",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eck": {
+          "value": "HIGH_ENERGY",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eek": {
+          "value": "HIGH_ENERGY",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "k": {
+          "value": "HIGH_ENERGY",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ck": {
+          "value": "HIGH_ENERGY",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ol": {
+          "value": "HIGH_ENERGY",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eed": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eod": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ed": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eeo": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ai": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ee": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eo": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eey": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "iin": {
+          "value": "SETTLING",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        }
+      }
+    },
+    "middle_section": {
+      "constraint_group": "MIDDLE_SEMANTIC_MAPPING",
+      "tier": 2,
+      "entries": {
+        "ek": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "m": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "s": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "a": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ck": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "y": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "or": {
+          "value": "HERBAL",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "l": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "lch": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "lk": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eck": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "k": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "edy": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ke": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ol": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "te": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "sh": {
+          "value": "BIO",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eey": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eeo": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eed": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eod": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "eo": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ed": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ai": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "ok": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        },
+        "pch": {
+          "value": "STARS",
+          "constraint": "MIDDLE_SEMANTIC_MAPPING",
+          "tier": 2
+        }
+      }
+    },
+    "middle_tiers": {
+      "constraint_group": "F-BRU-011, F-BRU-012, F-BRU-018",
+      "tier": 3,
+      "entries": {
+        "te": {
+          "category": "PREP",
+          "gloss": "gather material",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "pch": {
+          "category": "PREP",
+          "gloss": "chop (herbs)",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "lch": {
+          "category": "PREP",
+          "gloss": "strip/separate",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "tch": {
+          "category": "PREP",
+          "gloss": "pound (intensive)",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "ksh": {
+          "category": "PREP",
+          "gloss": "special prep",
+          "constraint": "F-BRU-012 (low confidence)",
+          "tier": 4
+        },
+        "sch": {
+          "category": "PREP",
+          "gloss": "prepare (unspecified)",
+          "constraint": "NONE",
+          "tier": 4
+        },
+        "cth": {
+          "category": "PREP",
+          "gloss": "cut/divide",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "k": {
+          "category": "THERMO",
+          "gloss": "apply heat",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "t": {
+          "category": "THERMO",
+          "gloss": "energy transfer",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "e": {
+          "category": "THERMO",
+          "gloss": "let settle",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "ch": {
+          "category": "THERMO",
+          "gloss": "monitor fire",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "sh": {
+          "category": "THERMO",
+          "gloss": "watch process",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "h": {
+          "category": "THERMO",
+          "gloss": "check hazards",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "ke": {
+          "category": "EXTENDED",
+          "gloss": "sustain gentle heat",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "kch": {
+          "category": "EXTENDED",
+          "gloss": "precision heat pulse",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "the": {
+          "category": "EXTENDED",
+          "gloss": "extended thermal",
+          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "tier": 3
+        },
+        "kc": {
+          "category": "OIL_MARKER",
+          "gloss": "oil procedure end",
+          "constraint": "F-BRU-020",
+          "tier": 4,
+          "note": "F-BRU-020 (Output Category Vocabulary Signatures) is F4 tier"
+        },
+        "okch": {
+          "category": "OIL_MARKER",
+          "gloss": "oil procedure end",
+          "constraint": "F-BRU-020",
+          "tier": 4,
+          "note": "F-BRU-020 (Output Category Vocabulary Signatures) is F4 tier"
+        }
+      }
+    },
+    "fl_stage_map": {
+      "constraint_group": "C777",
+      "tier_note": "Stage names (INITIAL/EARLY/MEDIAL/LATE/TERMINAL) are Tier 2 per C777. Semantic glosses (raw material, reacting, etc.) are Tier 4.",
+      "tier": 4,
+      "entries": {
+        "ii": {
+          "category": "INITIAL",
+          "gloss": "raw material",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "i": {
+          "category": "INITIAL",
+          "gloss": "material in",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "in": {
+          "category": "EARLY",
+          "gloss": "loaded",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "r": {
+          "category": "MEDIAL",
+          "gloss": "reacting",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ar": {
+          "category": "MEDIAL",
+          "gloss": "needs adjustment",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "al": {
+          "category": "MEDIAL",
+          "gloss": "adjusting",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "l": {
+          "category": "MEDIAL",
+          "gloss": "separating",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ol": {
+          "category": "MEDIAL",
+          "gloss": "processing",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "s": {
+          "category": "MEDIAL",
+          "gloss": "next step",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "o": {
+          "category": "LATE",
+          "gloss": "almost ready",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ly": {
+          "category": "LATE",
+          "gloss": "settling out",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "am": {
+          "category": "TERMINAL",
+          "gloss": "step done",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "om": {
+          "category": "TERMINAL",
+          "gloss": "step done",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "m": {
+          "category": "TERMINAL",
+          "gloss": "step done",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "dy": {
+          "category": "TERMINAL",
+          "gloss": "got yield",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ry": {
+          "category": "TERMINAL",
+          "gloss": "got yield",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "y": {
+          "category": "TERMINAL",
+          "gloss": "step done",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "aiin": {
+          "category": "MEDIAL",
+          "gloss": "still separating",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ain": {
+          "category": "MEDIAL",
+          "gloss": "separating",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "oiin": {
+          "category": "LATE",
+          "gloss": "settling",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "an": {
+          "category": "INITIAL",
+          "gloss": "adding",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "yl": {
+          "category": "MEDIAL",
+          "gloss": "pouring",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "or": {
+          "category": "MEDIAL",
+          "gloss": "continue",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "a": {
+          "category": "INITIAL",
+          "gloss": "begin",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "d": {
+          "category": "MEDIAL",
+          "gloss": "during",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "t": {
+          "category": "MEDIAL",
+          "gloss": "transfer",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "h": {
+          "category": "MEDIAL",
+          "gloss": "observe",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "k": {
+          "category": "MEDIAL",
+          "gloss": "apply heat",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "e": {
+          "category": "MEDIAL",
+          "gloss": "let settle",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "da": {
+          "category": "MEDIAL",
+          "gloss": "apparatus",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ok": {
+          "category": "MEDIAL",
+          "gloss": "check temp",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "od": {
+          "category": "LATE",
+          "gloss": "output ready",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ot": {
+          "category": "MEDIAL",
+          "gloss": "moving",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "oe": {
+          "category": "LATE",
+          "gloss": "settling",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "odaii": {
+          "category": "LATE",
+          "gloss": "output separating",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "eteeda": {
+          "category": "MEDIAL",
+          "gloss": "let settle",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        },
+        "ofseod": {
+          "category": "MEDIAL",
+          "gloss": "watch settling",
+          "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
+          "tier": 3
+        }
+      }
+    },
+    "cc_tokens": {
+      "constraint_group": "C874",
+      "tier": 2,
+      "entries": {
+        "daiin": {
+          "category": "INIT",
+          "gloss": "init (energy trigger)",
+          "constraint": "C874, C557",
+          "tier": 2
+        },
+        "ol": {
+          "category": "CONTINUE",
+          "gloss": "continue (closure signal)",
+          "constraint": "C874, C558",
+          "tier": 2
+        },
+        "or": {
+          "category": "CONTINUE",
+          "gloss": "proceed",
+          "constraint": "C874",
+          "tier": 2
+        },
+        "ar": {
+          "category": "ADJUST",
+          "gloss": "make adjustment",
+          "constraint": "C874",
+          "tier": 2
+        }
+      }
+    },
+    "prefix_actions": {
+      "constraint_group": "C556, C929, C930, C931, F-BRU-012",
+      "tier": 3,
+      "note": "Operational verbs. PREP from F-BRU-012, WORK from C929/C556, Brunschwig mapping from C930/C931/BRUNSCHWIG_APPARATUS_MAPPING phase.",
+      "entries": {
+        "ch": {
+          "value": "test",
+          "constraint": "C929, C556",
+          "tier": 3,
+          "note": "Sensory check (C929: ch=test, sh=monitor discrimination)"
+        },
+        "sh": {
+          "value": "monitor",
+          "constraint": "C929, C556",
+          "tier": 3,
+          "note": "Ongoing watch (C929: sh=monitor, ch=test discrimination)"
+        },
+        "qo": {
+          "value": "execute",
+          "constraint": "C556, C931",
+          "tier": 3,
+          "note": "Core distillation/execution. Rank 1 prefix, selects kernel MIDDLEs (k,t,ke) exclusively. Uniform positional distribution (always present). B-enriched 1.30x."
+        },
+        "ok": {
+          "value": "vessel",
+          "constraint": "C556, C931, C936",
+          "tier": 3,
+          "note": "DOMAIN SELECTOR: vessel/apparatus target (C936 revised). MIDDLE provides action on vessel. Late position (mean 0.538). H-enriched 1.36x. e-family + infra MIDDLEs (C911). Sister pair with ot (proactive/corrective). Jaccard 0.82 with ot."
+        },
+        "ot": {
+          "value": "rectify",
+          "constraint": "C556, C931",
+          "tier": 3,
+          "note": "Post-process (rectify/filter/pour). Late position (init/final 0.36x). C-enriched 1.48x. Selects finalize MIDDLEs (al 4.6x, am 4.3x, ar 4.0x). Jaccard 0.82 with ok."
+        },
+        "da": {
+          "value": "setup",
+          "constraint": "C556, C557, C931",
+          "tier": 3,
+          "note": "Setup/mix/replenish. Bimodal position (both setup and teardown). H-enriched 1.53x, T-enriched 2.02x. Selects continuation MIDDLEs (iin 10.4x, r 6.9x, m 11.1x). Jaccard 0.67 with sa."
+        },
+        "ol": {
+          "value": "store",
+          "constraint": "C558, C931",
+          "tier": 3,
+          "note": "Store/continue. Final position (init/final 0.40x). B-enriched 1.47x. Selects kernel MIDDLEs (k dominant in all sections, sh 10.3x). Complements lk (section anti-correlated)."
+        },
+        "ct": {
+          "value": "control",
+          "constraint": "C556",
+          "tier": 3,
+          "note": "Direct control (CTRL lane)"
+        },
+        "sa": {
+          "value": "dry",
+          "constraint": "C556, C931",
+          "tier": 3,
+          "note": "Dry/macerate (pre-treatment). 43.8% line-initial (3.89x init/final). Selects continuation MIDDLEs (iin 10.6x, i 11.2x, in 13.6x). Jaccard 0.67 with da, 0.00 with ch/sh/ok/ot."
+        },
+        "so": {
+          "value": "scaffold-work",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "lk": {
+          "value": "watch-fire",
+          "constraint": "C556, C930",
+          "tier": 3,
+          "note": "Monitor drips / regulate fire. 81.7% section S (1.78x, C930). Selects checkpoint MIDDLEs (aiin 4.7x, ain 4.5x, ech 9.3x). Completely avoids k/t/ke. Fire-method specific."
+        },
+        "lsh": {
+          "value": "link-monitor",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "ke": {
+          "value": "cool",
+          "constraint": "C556, C931",
+          "tier": 3,
+          "note": "Cool/settle (thermal equilibration). Late position (init/final 0.29x). H-enriched 1.37x. Selects dy (7.3x), o (5.0x), eo (2.6x). Avoids k/l/t/iin/r."
+        },
+        "ka": {
+          "value": "heat-anchor",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "ta": {
+          "value": "transfer",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "yk": {
+          "value": "init",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "ko": {
+          "value": "heat-work",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "to": {
+          "value": "transfer-work",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "po": {
+          "value": "pre-work",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "do": {
+          "value": "mark",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "pch": {
+          "value": "gather",
+          "constraint": "F-BRU-012, C931",
+          "tier": 3,
+          "note": "Gather/collect. 48.2% line-initial, 25.5x par-initial (highest procedure opener). Even section distribution (universal operation)."
+        },
+        "tch": {
+          "value": "chop",
+          "constraint": "F-BRU-012, C931",
+          "tier": 3,
+          "note": "Chop/cut. 52.9% line-initial, 10.7x par-initial. C-enriched 2.33x, H-enriched 1.82x."
+        },
+        "lch": {
+          "value": "pour",
+          "constraint": "F-BRU-012, C931",
+          "tier": 3,
+          "note": "Pour/strain (liquid transfer). Final position (init/final 0.40x). B-enriched 1.30x, H-depleted 0.24x. Selects edy (4.1x), ey (3.6x). Co-occurs with lk (1.39x)."
+        },
+        "kch": {
+          "value": "precision-chop",
+          "constraint": "F-BRU-012",
+          "tier": 3
+        },
+        "dch": {
+          "value": "divide",
+          "constraint": "F-BRU-012",
+          "tier": 3
+        },
+        "fch": {
+          "value": "prepare",
+          "constraint": "F-BRU-012",
+          "tier": 3
+        },
+        "rch": {
+          "value": "prepare",
+          "constraint": "F-BRU-012",
+          "tier": 3
+        },
+        "sch": {
+          "value": "prepare",
+          "constraint": "NONE",
+          "tier": 4
+        },
+        "ksh": {
+          "value": "special-prep",
+          "constraint": "F-BRU-012 (low confidence)",
+          "tier": 4
+        },
+        "te": {
+          "value": "strip",
+          "constraint": "F-BRU-012, C931",
+          "tier": 3,
+          "note": "Strip/wash (preparation). 19.7% line-initial (3.35x init/final). C-enriched 1.91x, H-enriched 1.40x. Selects dy (10.4x), o, d, ey."
+        },
+        "de": {
+          "value": "divide",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "se": {
+          "value": "scaffold-sustain",
+          "constraint": "C556",
+          "tier": 4
+        },
+        "pe": {
+          "value": "start",
+          "constraint": "C556",
+          "tier": 4
+        },
+        "al": {
+          "value": "transfer-close",
+          "constraint": "C539",
+          "tier": 3
+        },
+        "or": {
+          "value": "portion",
+          "constraint": "C556",
+          "tier": 3
+        },
+        "ar": {
+          "value": "close",
+          "constraint": "C539",
+          "tier": 3,
+          "note": "Close/adjust (CLOSE lane)"
+        }
+      }
+    },
+    "kernel_chars": {
+      "constraint_group": "C371",
+      "tier": 0,
+      "value": [
+        "k",
+        "h",
+        "e"
+      ]
+    }
+  }
+}

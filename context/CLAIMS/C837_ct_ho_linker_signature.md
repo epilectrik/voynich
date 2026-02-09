@@ -48,10 +48,35 @@ One linker (qokoiiin = qo-koi-iin) does NOT follow the ct-ho pattern:
 - May represent a different linkage mechanism
 - See C838 for analysis
 
+## ct-ho is Necessary But Not Sufficient (2026-01-30)
+
+From linker_destination_followup.py:
+
+| ct-ho token category | Count |
+|---------------------|-------|
+| Total unique ct-ho tokens in Currier A | 42 |
+| ct-ho tokens that ARE linkers | 3 (cthody, ctho, ctheody) |
+| ct-ho tokens that are NOT linkers | 39 |
+
+**Linker rate within ct-ho population: 7.1%**
+
+The ct-ho morphological pattern is **necessary** (3/4 linkers have it) but **not sufficient** (only 7.1% of ct-ho tokens function as linkers). Additional structural properties beyond morphology determine linker function.
+
+## Extension to PP Level
+
+CURRIER_A_STRUCTURE_V2 phase confirmed that ct-ho operates at BOTH RI and PP levels:
+
+| Level | Tokens | Function |
+|-------|--------|----------|
+| RI (this constraint) | ctho, cthody, ctheody | Mark transferable materials |
+| PP (C889) | cthy, cthol, cthor | Process instructions for transfers |
+
+In Section H, MIDDLEs h/hy/ho are 98-100% ct-prefixed, creating a reserved vocabulary for linking/transfer operations at the PP level.
+
 ## Provenance
 
 - t20_linker_morphology.json: ct_prefix_rates, linker_morphology
-- Related: C282 (ct A-enrichment), C467 (PREFIX control-flow), C528 (RI PREFIX bifurcation), C835 (linker mechanism)
+- Related: C282 (ct A-enrichment), C467 (PREFIX control-flow), C528 (RI PREFIX bifurcation), C835 (linker mechanism), C889 (ct-ho PP extension)
 
 ## Status
 

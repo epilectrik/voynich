@@ -1,0 +1,1900 @@
+{
+  "summary": {
+    "folios_analyzed": 82,
+    "terminal_gradient_mean": -0.03729531745965204,
+    "terminal_gradient_std": 0.09260843724163341,
+    "terminal_gradient_p": 0.0005041124306586734,
+    "ax_gradient_mean": 0.005765148894518121,
+    "ax_gradient_std": 0.07934420784618881,
+    "ax_gradient_p": 0.5150028681005145,
+    "mean_jaccard": 0.30520467807028684
+  },
+  "folios": [
+    {
+      "folio": "f103r",
+      "n_lines": 54,
+      "n_tokens": 522,
+      "gradients": {
+        "fl_terminal": -0.027777777777777783,
+        "fl_initial": -0.02287581699346405,
+        "ax": -0.08169934640522875,
+        "chsh": 0.04575163398692811
+      },
+      "vocabulary": {
+        "early_unique": 63,
+        "late_unique": 55,
+        "overlap": 27,
+        "early_only": 36,
+        "late_only": 28,
+        "jaccard": 0.2967032967032967
+      },
+      "early_fl_terminal": 0.07352941176470588,
+      "late_fl_terminal": 0.0457516339869281,
+      "early_ax": 0.20588235294117646,
+      "late_ax": 0.12418300653594772
+    },
+    {
+      "folio": "f103v",
+      "n_lines": 46,
+      "n_tokens": 449,
+      "gradients": {
+        "fl_terminal": -0.08157709870038637,
+        "fl_initial": -0.049525816649104326,
+        "ax": -0.025026343519494204,
+        "chsh": 0.09246575342465752
+      },
+      "vocabulary": {
+        "early_unique": 49,
+        "late_unique": 50,
+        "overlap": 28,
+        "early_only": 21,
+        "late_only": 22,
+        "jaccard": 0.39436619718309857
+      },
+      "early_fl_terminal": 0.10897435897435898,
+      "late_fl_terminal": 0.0273972602739726,
+      "early_ax": 0.1346153846153846,
+      "late_ax": 0.1095890410958904
+    },
+    {
+      "folio": "f104r",
+      "n_lines": 45,
+      "n_tokens": 438,
+      "gradients": {
+        "fl_terminal": -0.04025174956554414,
+        "fl_initial": -0.006669484758818275,
+        "ax": -0.002442346531398243,
+        "chsh": -0.0535437508806538
+      },
+      "vocabulary": {
+        "early_unique": 67,
+        "late_unique": 64,
+        "overlap": 30,
+        "early_only": 37,
+        "late_only": 34,
+        "jaccard": 0.297029702970297
+      },
+      "early_fl_terminal": 0.13245033112582782,
+      "late_fl_terminal": 0.09219858156028368,
+      "early_ax": 0.16556291390728478,
+      "late_ax": 0.16312056737588654
+    },
+    {
+      "folio": "f104v",
+      "n_lines": 44,
+      "n_tokens": 458,
+      "gradients": {
+        "fl_terminal": -0.04006751597476189,
+        "fl_initial": -0.016115420166378652,
+        "ax": 0.045934975686211466,
+        "chsh": -0.078085439858538
+      },
+      "vocabulary": {
+        "early_unique": 70,
+        "late_unique": 67,
+        "overlap": 30,
+        "early_only": 40,
+        "late_only": 37,
+        "jaccard": 0.2803738317757009
+      },
+      "early_fl_terminal": 0.09395973154362416,
+      "late_fl_terminal": 0.05389221556886228,
+      "early_ax": 0.0738255033557047,
+      "late_ax": 0.11976047904191617
+    },
+    {
+      "folio": "f105r",
+      "n_lines": 37,
+      "n_tokens": 370,
+      "gradients": {
+        "fl_terminal": -0.04336043360433606,
+        "fl_initial": 0.062330623306233054,
+        "ax": 0.04529616724738675,
+        "chsh": -0.04355400696864112
+      },
+      "vocabulary": {
+        "early_unique": 55,
+        "late_unique": 67,
+        "overlap": 26,
+        "early_only": 29,
+        "late_only": 41,
+        "jaccard": 0.2708333333333333
+      },
+      "early_fl_terminal": 0.15447154471544716,
+      "late_fl_terminal": 0.1111111111111111,
+      "early_ax": 0.0975609756097561,
+      "late_ax": 0.14285714285714285
+    },
+    {
+      "folio": "f105v",
+      "n_lines": 38,
+      "n_tokens": 390,
+      "gradients": {
+        "fl_terminal": 0.0001067008109261608,
+        "fl_initial": 0.004481434058898864,
+        "ax": 0.038092189500640194,
+        "chsh": 0.04236022193768674
+      },
+      "vocabulary": {
+        "early_unique": 64,
+        "late_unique": 68,
+        "overlap": 30,
+        "early_only": 34,
+        "late_only": 38,
+        "jaccard": 0.29411764705882354
+      },
+      "early_fl_terminal": 0.09848484848484848,
+      "late_fl_terminal": 0.09859154929577464,
+      "early_ax": 0.1590909090909091,
+      "late_ax": 0.19718309859154928
+    },
+    {
+      "folio": "f106r",
+      "n_lines": 46,
+      "n_tokens": 421,
+      "gradients": {
+        "fl_terminal": -0.006442912795924488,
+        "fl_initial": -0.034561981819998006,
+        "ax": -0.006043352312456285,
+        "chsh": 0.10113874737788436
+      },
+      "vocabulary": {
+        "early_unique": 65,
+        "late_unique": 65,
+        "overlap": 25,
+        "early_only": 40,
+        "late_only": 40,
+        "jaccard": 0.23809523809523808
+      },
+      "early_fl_terminal": 0.09154929577464789,
+      "late_fl_terminal": 0.0851063829787234,
+      "early_ax": 0.14788732394366197,
+      "late_ax": 0.14184397163120568
+    },
+    {
+      "folio": "f106v",
+      "n_lines": 47,
+      "n_tokens": 449,
+      "gradients": {
+        "fl_terminal": -0.02005789909015715,
+        "fl_initial": 0.01228287841191067,
+        "ax": 0.07630272952853598,
+        "chsh": -0.06625310173697274
+      },
+      "vocabulary": {
+        "early_unique": 64,
+        "late_unique": 63,
+        "overlap": 30,
+        "early_only": 34,
+        "late_only": 33,
+        "jaccard": 0.30927835051546393
+      },
+      "early_fl_terminal": 0.12903225806451613,
+      "late_fl_terminal": 0.10897435897435898,
+      "early_ax": 0.0967741935483871,
+      "late_ax": 0.17307692307692307
+    },
+    {
+      "folio": "f107r",
+      "n_lines": 51,
+      "n_tokens": 488,
+      "gradients": {
+        "fl_terminal": 0.013131313131313126,
+        "fl_initial": -0.047362514029180694,
+        "ax": -0.05162738496071831,
+        "chsh": -0.0632996632996633
+      },
+      "vocabulary": {
+        "early_unique": 60,
+        "late_unique": 59,
+        "overlap": 30,
+        "early_only": 30,
+        "late_only": 29,
+        "jaccard": 0.33707865168539325
+      },
+      "early_fl_terminal": 0.04242424242424243,
+      "late_fl_terminal": 0.05555555555555555,
+      "early_ax": 0.21212121212121213,
+      "late_ax": 0.16049382716049382
+    },
+    {
+      "folio": "f107v",
+      "n_lines": 49,
+      "n_tokens": 455,
+      "gradients": {
+        "fl_terminal": -0.08850589067898922,
+        "fl_initial": -0.02431206028058782,
+        "ax": -0.03455309937138337,
+        "chsh": -0.021314682985720812
+      },
+      "vocabulary": {
+        "early_unique": 58,
+        "late_unique": 50,
+        "overlap": 32,
+        "early_only": 26,
+        "late_only": 18,
+        "jaccard": 0.42105263157894735
+      },
+      "early_fl_terminal": 0.11464968152866242,
+      "late_fl_terminal": 0.026143790849673203,
+      "early_ax": 0.17834394904458598,
+      "late_ax": 0.1437908496732026
+    },
+    {
+      "folio": "f108r",
+      "n_lines": 50,
+      "n_tokens": 491,
+      "gradients": {
+        "fl_terminal": -0.04000700648099492,
+        "fl_initial": -0.032545104221404796,
+        "ax": 0.001191101769136449,
+        "chsh": 0.006971448589945695
+      },
+      "vocabulary": {
+        "early_unique": 70,
+        "late_unique": 56,
+        "overlap": 32,
+        "early_only": 38,
+        "late_only": 24,
+        "jaccard": 0.3404255319148936
+      },
+      "early_fl_terminal": 0.11515151515151516,
+      "late_fl_terminal": 0.07514450867052024,
+      "early_ax": 0.22424242424242424,
+      "late_ax": 0.2254335260115607
+    },
+    {
+      "folio": "f108v",
+      "n_lines": 53,
+      "n_tokens": 570,
+      "gradients": {
+        "fl_terminal": -0.04414335664335664,
+        "fl_initial": -0.017045454545454544,
+        "ax": -0.08916083916083917,
+        "chsh": 0.13548951048951047
+      },
+      "vocabulary": {
+        "early_unique": 62,
+        "late_unique": 51,
+        "overlap": 31,
+        "early_only": 31,
+        "late_only": 20,
+        "jaccard": 0.3780487804878049
+      },
+      "early_fl_terminal": 0.06818181818181818,
+      "late_fl_terminal": 0.02403846153846154,
+      "early_ax": 0.20454545454545456,
+      "late_ax": 0.11538461538461539
+    },
+    {
+      "folio": "f111r",
+      "n_lines": 54,
+      "n_tokens": 614,
+      "gradients": {
+        "fl_terminal": -0.033702666504322416,
+        "fl_initial": -0.00810909533666139,
+        "ax": -0.020845001826372833,
+        "chsh": -0.05625228296602944
+      },
+      "vocabulary": {
+        "early_unique": 68,
+        "late_unique": 62,
+        "overlap": 41,
+        "early_only": 27,
+        "late_only": 21,
+        "jaccard": 0.4606741573033708
+      },
+      "early_fl_terminal": 0.06511627906976744,
+      "late_fl_terminal": 0.031413612565445025,
+      "early_ax": 0.16744186046511628,
+      "late_ax": 0.14659685863874344
+    },
+    {
+      "folio": "f111v",
+      "n_lines": 51,
+      "n_tokens": 561,
+      "gradients": {
+        "fl_terminal": 0.014195851751105066,
+        "fl_initial": -0.03131021194605009,
+        "ax": -0.023914768219426508,
+        "chsh": 0.03624050776379917
+      },
+      "vocabulary": {
+        "early_unique": 65,
+        "late_unique": 53,
+        "overlap": 30,
+        "early_only": 35,
+        "late_only": 23,
+        "jaccard": 0.3409090909090909
+      },
+      "early_fl_terminal": 0.014705882352941176,
+      "late_fl_terminal": 0.028901734104046242,
+      "early_ax": 0.1568627450980392,
+      "late_ax": 0.1329479768786127
+    },
+    {
+      "folio": "f112r",
+      "n_lines": 45,
+      "n_tokens": 394,
+      "gradients": {
+        "fl_terminal": 0.035798122065727696,
+        "fl_initial": 0.04917840375586856,
+        "ax": 0.05856807511737089,
+        "chsh": -0.02065727699530516
+      },
+      "vocabulary": {
+        "early_unique": 47,
+        "late_unique": 54,
+        "overlap": 25,
+        "early_only": 22,
+        "late_only": 29,
+        "jaccard": 0.32894736842105265
+      },
+      "early_fl_terminal": 0.041666666666666664,
+      "late_fl_terminal": 0.07746478873239436,
+      "early_ax": 0.25833333333333336,
+      "late_ax": 0.31690140845070425
+    },
+    {
+      "folio": "f112v",
+      "n_lines": 47,
+      "n_tokens": 415,
+      "gradients": {
+        "fl_terminal": -0.016231114740710498,
+        "fl_initial": 0.005104124132298896,
+        "ax": -0.09003674969375255,
+        "chsh": 0.17302980808493262
+      },
+      "vocabulary": {
+        "early_unique": 58,
+        "late_unique": 64,
+        "overlap": 31,
+        "early_only": 27,
+        "late_only": 33,
+        "jaccard": 0.34065934065934067
+      },
+      "early_fl_terminal": 0.10483870967741936,
+      "late_fl_terminal": 0.08860759493670886,
+      "early_ax": 0.24193548387096775,
+      "late_ax": 0.1518987341772152
+    },
+    {
+      "folio": "f113r",
+      "n_lines": 51,
+      "n_tokens": 518,
+      "gradients": {
+        "fl_terminal": -0.011408339889850502,
+        "fl_initial": -0.030422239706268034,
+        "ax": -0.0024259113558877526,
+        "chsh": -0.08116968266456859
+      },
+      "vocabulary": {
+        "early_unique": 73,
+        "late_unique": 63,
+        "overlap": 30,
+        "early_only": 43,
+        "late_only": 33,
+        "jaccard": 0.2830188679245283
+      },
+      "early_fl_terminal": 0.0967741935483871,
+      "late_fl_terminal": 0.08536585365853659,
+      "early_ax": 0.11827956989247312,
+      "late_ax": 0.11585365853658537
+    },
+    {
+      "folio": "f113v",
+      "n_lines": 49,
+      "n_tokens": 479,
+      "gradients": {
+        "fl_terminal": -0.04781783681214421,
+        "fl_initial": -0.06375711574952561,
+        "ax": -0.052941176470588214,
+        "chsh": 0.0335863377609108
+      },
+      "vocabulary": {
+        "early_unique": 71,
+        "late_unique": 56,
+        "overlap": 30,
+        "early_only": 41,
+        "late_only": 26,
+        "jaccard": 0.30927835051546393
+      },
+      "early_fl_terminal": 0.10588235294117647,
+      "late_fl_terminal": 0.05806451612903226,
+      "early_ax": 0.2529411764705882,
+      "late_ax": 0.2
+    },
+    {
+      "folio": "f114r",
+      "n_lines": 45,
+      "n_tokens": 447,
+      "gradients": {
+        "fl_terminal": -0.05225068750904617,
+        "fl_initial": 0.03025039803155305,
+        "ax": -0.01259227095093357,
+        "chsh": 0.02561875814155451
+      },
+      "vocabulary": {
+        "early_unique": 74,
+        "late_unique": 58,
+        "overlap": 32,
+        "early_only": 42,
+        "late_only": 26,
+        "jaccard": 0.32
+      },
+      "early_fl_terminal": 0.11347517730496454,
+      "late_fl_terminal": 0.061224489795918366,
+      "early_ax": 0.14184397163120568,
+      "late_ax": 0.1292517006802721
+    },
+    {
+      "folio": "f114v",
+      "n_lines": 41,
+      "n_tokens": 362,
+      "gradients": {
+        "fl_terminal": 0.015151515151515152,
+        "fl_initial": 0.026515151515151512,
+        "ax": 0.1128787878787879,
+        "chsh": -0.09015151515151515
+      },
+      "vocabulary": {
+        "early_unique": 60,
+        "late_unique": 67,
+        "overlap": 33,
+        "early_only": 27,
+        "late_only": 34,
+        "jaccard": 0.35106382978723405
+      },
+      "early_fl_terminal": 0.08333333333333333,
+      "late_fl_terminal": 0.09848484848484848,
+      "early_ax": 0.09166666666666666,
+      "late_ax": 0.20454545454545456
+    },
+    {
+      "folio": "f115r",
+      "n_lines": 45,
+      "n_tokens": 444,
+      "gradients": {
+        "fl_terminal": 0.010052910052910063,
+        "fl_initial": -0.09292929292929293,
+        "ax": 0.0202982202982203,
+        "chsh": -0.009812409812409828
+      },
+      "vocabulary": {
+        "early_unique": 73,
+        "late_unique": 61,
+        "overlap": 31,
+        "early_only": 42,
+        "late_only": 30,
+        "jaccard": 0.30097087378640774
+      },
+      "early_fl_terminal": 0.07142857142857142,
+      "late_fl_terminal": 0.08148148148148149,
+      "early_ax": 0.03896103896103896,
+      "late_ax": 0.05925925925925926
+    },
+    {
+      "folio": "f115v",
+      "n_lines": 45,
+      "n_tokens": 399,
+      "gradients": {
+        "fl_terminal": -0.03292753623188406,
+        "fl_initial": -0.02869565217391304,
+        "ax": -0.037449275362318846,
+        "chsh": 0.11060869565217393
+      },
+      "vocabulary": {
+        "early_unique": 64,
+        "late_unique": 70,
+        "overlap": 30,
+        "early_only": 34,
+        "late_only": 40,
+        "jaccard": 0.28846153846153844
+      },
+      "early_fl_terminal": 0.14492753623188406,
+      "late_fl_terminal": 0.112,
+      "early_ax": 0.10144927536231885,
+      "late_ax": 0.064
+    },
+    {
+      "folio": "f116r",
+      "n_lines": 50,
+      "n_tokens": 537,
+      "gradients": {
+        "fl_terminal": -0.022122762148337603,
+        "fl_initial": 0.0014066496163682857,
+        "ax": -0.1248081841432225,
+        "chsh": 0.0858056265984655
+      },
+      "vocabulary": {
+        "early_unique": 49,
+        "late_unique": 51,
+        "overlap": 27,
+        "early_only": 22,
+        "late_only": 24,
+        "jaccard": 0.3698630136986301
+      },
+      "early_fl_terminal": 0.07647058823529412,
+      "late_fl_terminal": 0.05434782608695652,
+      "early_ax": 0.21176470588235294,
+      "late_ax": 0.08695652173913043
+    },
+    {
+      "folio": "f26r",
+      "n_lines": 10,
+      "n_tokens": 85,
+      "gradients": {
+        "fl_terminal": -0.06481481481481481,
+        "fl_initial": -0.046296296296296294,
+        "ax": 0.1111111111111111,
+        "chsh": -0.009259259259259245
+      },
+      "vocabulary": {
+        "early_unique": 22,
+        "late_unique": 25,
+        "overlap": 7,
+        "early_only": 15,
+        "late_only": 18,
+        "jaccard": 0.175
+      },
+      "early_fl_terminal": 0.14814814814814814,
+      "late_fl_terminal": 0.08333333333333333,
+      "early_ax": 0.0,
+      "late_ax": 0.1111111111111111
+    },
+    {
+      "folio": "f26v",
+      "n_lines": 9,
+      "n_tokens": 89,
+      "gradients": {
+        "fl_terminal": -0.06818181818181819,
+        "fl_initial": -0.14015151515151517,
+        "ax": 0.03409090909090909,
+        "chsh": 0.19318181818181818
+      },
+      "vocabulary": {
+        "early_unique": 23,
+        "late_unique": 18,
+        "overlap": 7,
+        "early_only": 16,
+        "late_only": 11,
+        "jaccard": 0.20588235294117646
+      },
+      "early_fl_terminal": 0.15151515151515152,
+      "late_fl_terminal": 0.08333333333333333,
+      "early_ax": 0.09090909090909091,
+      "late_ax": 0.125
+    },
+    {
+      "folio": "f31r",
+      "n_lines": 16,
+      "n_tokens": 100,
+      "gradients": {
+        "fl_terminal": 0.005692599620493358,
+        "fl_initial": 0.04079696394686906,
+        "ax": 0.16413662239089183,
+        "chsh": 0.02277039848197343
+      },
+      "vocabulary": {
+        "early_unique": 26,
+        "late_unique": 19,
+        "overlap": 10,
+        "early_only": 16,
+        "late_only": 9,
+        "jaccard": 0.2857142857142857
+      },
+      "early_fl_terminal": 0.058823529411764705,
+      "late_fl_terminal": 0.06451612903225806,
+      "early_ax": 0.029411764705882353,
+      "late_ax": 0.1935483870967742
+    },
+    {
+      "folio": "f31v",
+      "n_lines": 11,
+      "n_tokens": 108,
+      "gradients": {
+        "fl_terminal": -0.09559748427672957,
+        "fl_initial": 0.013207547169811318,
+        "ax": -0.09245283018867922,
+        "chsh": 0.14968553459119496
+      },
+      "vocabulary": {
+        "early_unique": 18,
+        "late_unique": 33,
+        "overlap": 11,
+        "early_only": 7,
+        "late_only": 22,
+        "jaccard": 0.275
+      },
+      "early_fl_terminal": 0.13333333333333333,
+      "late_fl_terminal": 0.03773584905660377,
+      "early_ax": 0.3,
+      "late_ax": 0.20754716981132076
+    },
+    {
+      "folio": "f33r",
+      "n_lines": 7,
+      "n_tokens": 72,
+      "gradients": {
+        "fl_terminal": -0.3543859649122807,
+        "fl_initial": -0.16315789473684209,
+        "ax": 0.0368421052631579,
+        "chsh": -0.010526315789473661
+      },
+      "vocabulary": {
+        "early_unique": 17,
+        "late_unique": 18,
+        "overlap": 7,
+        "early_only": 10,
+        "late_only": 11,
+        "jaccard": 0.25
+      },
+      "early_fl_terminal": 0.42105263157894735,
+      "late_fl_terminal": 0.06666666666666667,
+      "early_ax": 0.2631578947368421,
+      "late_ax": 0.3
+    },
+    {
+      "folio": "f33v",
+      "n_lines": 11,
+      "n_tokens": 109,
+      "gradients": {
+        "fl_terminal": -0.07543103448275862,
+        "fl_initial": 0.06968390804597702,
+        "ax": -0.00574712643678163,
+        "chsh": 0.11206896551724138
+      },
+      "vocabulary": {
+        "early_unique": 16,
+        "late_unique": 27,
+        "overlap": 12,
+        "early_only": 4,
+        "late_only": 15,
+        "jaccard": 0.3870967741935484
+      },
+      "early_fl_terminal": 0.13793103448275862,
+      "late_fl_terminal": 0.0625,
+      "early_ax": 0.1724137931034483,
+      "late_ax": 0.16666666666666666
+    },
+    {
+      "folio": "f34r",
+      "n_lines": 15,
+      "n_tokens": 144,
+      "gradients": {
+        "fl_terminal": 0.00808625336927224,
+        "fl_initial": 0.09433962264150944,
+        "ax": -0.08779360800924142,
+        "chsh": 0.017712745475548686
+      },
+      "vocabulary": {
+        "early_unique": 28,
+        "late_unique": 32,
+        "overlap": 13,
+        "early_only": 15,
+        "late_only": 19,
+        "jaccard": 0.2765957446808511
+      },
+      "early_fl_terminal": 0.14285714285714285,
+      "late_fl_terminal": 0.1509433962264151,
+      "early_ax": 0.16326530612244897,
+      "late_ax": 0.07547169811320754
+    },
+    {
+      "folio": "f34v",
+      "n_lines": 11,
+      "n_tokens": 115,
+      "gradients": {
+        "fl_terminal": -0.19580419580419578,
+        "fl_initial": 0.07692307692307693,
+        "ax": 0.11247086247086246,
+        "chsh": -0.03671328671328672
+      },
+      "vocabulary": {
+        "early_unique": 22,
+        "late_unique": 24,
+        "overlap": 7,
+        "early_only": 15,
+        "late_only": 17,
+        "jaccard": 0.1794871794871795
+      },
+      "early_fl_terminal": 0.2727272727272727,
+      "late_fl_terminal": 0.07692307692307693,
+      "early_ax": 0.06060606060606061,
+      "late_ax": 0.17307692307692307
+    },
+    {
+      "folio": "f39r",
+      "n_lines": 16,
+      "n_tokens": 154,
+      "gradients": {
+        "fl_terminal": -0.04714989444053483,
+        "fl_initial": 0.0453905700211119,
+        "ax": 0.04855735397607319,
+        "chsh": -0.14954257565095003
+      },
+      "vocabulary": {
+        "early_unique": 35,
+        "late_unique": 29,
+        "overlap": 15,
+        "early_only": 20,
+        "late_only": 14,
+        "jaccard": 0.30612244897959184
+      },
+      "early_fl_terminal": 0.08163265306122448,
+      "late_fl_terminal": 0.034482758620689655,
+      "early_ax": 0.02040816326530612,
+      "late_ax": 0.06896551724137931
+    },
+    {
+      "folio": "f39v",
+      "n_lines": 14,
+      "n_tokens": 142,
+      "gradients": {
+        "fl_terminal": -0.10675039246467818,
+        "fl_initial": -0.0035321821036106704,
+        "ax": 0.05180533751962324,
+        "chsh": 0.04591836734693877
+      },
+      "vocabulary": {
+        "early_unique": 27,
+        "late_unique": 26,
+        "overlap": 13,
+        "early_only": 14,
+        "late_only": 13,
+        "jaccard": 0.325
+      },
+      "early_fl_terminal": 0.1836734693877551,
+      "late_fl_terminal": 0.07692307692307693,
+      "early_ax": 0.10204081632653061,
+      "late_ax": 0.15384615384615385
+    },
+    {
+      "folio": "f40r",
+      "n_lines": 11,
+      "n_tokens": 97,
+      "gradients": {
+        "fl_terminal": 0.016666666666666663,
+        "fl_initial": -0.04444444444444445,
+        "ax": -0.13333333333333333,
+        "chsh": 0.0
+      },
+      "vocabulary": {
+        "early_unique": 20,
+        "late_unique": 23,
+        "overlap": 11,
+        "early_only": 9,
+        "late_only": 12,
+        "jaccard": 0.34375
+      },
+      "early_fl_terminal": 0.06666666666666667,
+      "late_fl_terminal": 0.08333333333333333,
+      "early_ax": 0.3,
+      "late_ax": 0.16666666666666666
+    },
+    {
+      "folio": "f40v",
+      "n_lines": 19,
+      "n_tokens": 106,
+      "gradients": {
+        "fl_terminal": 0.07142857142857142,
+        "fl_initial": 0.023809523809523808,
+        "ax": 0.011904761904761918,
+        "chsh": 0.0
+      },
+      "vocabulary": {
+        "early_unique": 19,
+        "late_unique": 32,
+        "overlap": 15,
+        "early_only": 4,
+        "late_only": 17,
+        "jaccard": 0.4166666666666667
+      },
+      "early_fl_terminal": 0.0,
+      "late_fl_terminal": 0.07142857142857142,
+      "early_ax": 0.16666666666666666,
+      "late_ax": 0.17857142857142858
+    },
+    {
+      "folio": "f41r",
+      "n_lines": 11,
+      "n_tokens": 97,
+      "gradients": {
+        "fl_terminal": -0.023809523809523808,
+        "fl_initial": 0.047619047619047616,
+        "ax": 0.011904761904761904,
+        "chsh": 0.08333333333333331
+      },
+      "vocabulary": {
+        "early_unique": 21,
+        "late_unique": 25,
+        "overlap": 7,
+        "early_only": 14,
+        "late_only": 18,
+        "jaccard": 0.1794871794871795
+      },
+      "early_fl_terminal": 0.14285714285714285,
+      "late_fl_terminal": 0.11904761904761904,
+      "early_ax": 0.03571428571428571,
+      "late_ax": 0.047619047619047616
+    },
+    {
+      "folio": "f41v",
+      "n_lines": 8,
+      "n_tokens": 68,
+      "gradients": {
+        "fl_terminal": -0.5142857142857142,
+        "fl_initial": 0.02857142857142857,
+        "ax": 0.22857142857142856,
+        "chsh": -0.05714285714285716
+      },
+      "vocabulary": {
+        "early_unique": 10,
+        "late_unique": 21,
+        "overlap": 3,
+        "early_only": 7,
+        "late_only": 18,
+        "jaccard": 0.10714285714285714
+      },
+      "early_fl_terminal": 0.6,
+      "late_fl_terminal": 0.08571428571428572,
+      "early_ax": 0.0,
+      "late_ax": 0.22857142857142856
+    },
+    {
+      "folio": "f43r",
+      "n_lines": 14,
+      "n_tokens": 150,
+      "gradients": {
+        "fl_terminal": 0.013166556945358787,
+        "fl_initial": -0.033245556287030936,
+        "ax": -0.025674786043449638,
+        "chsh": 0.11849901250822908
+      },
+      "vocabulary": {
+        "early_unique": 29,
+        "late_unique": 35,
+        "overlap": 12,
+        "early_only": 17,
+        "late_only": 23,
+        "jaccard": 0.23076923076923078
+      },
+      "early_fl_terminal": 0.24489795918367346,
+      "late_fl_terminal": 0.25806451612903225,
+      "early_ax": 0.12244897959183673,
+      "late_ax": 0.0967741935483871
+    },
+    {
+      "folio": "f43v",
+      "n_lines": 16,
+      "n_tokens": 153,
+      "gradients": {
+        "fl_terminal": -0.006666666666666682,
+        "fl_initial": 0.013333333333333332,
+        "ax": -0.08333333333333334,
+        "chsh": 0.033333333333333326
+      },
+      "vocabulary": {
+        "early_unique": 31,
+        "late_unique": 37,
+        "overlap": 20,
+        "early_only": 11,
+        "late_only": 17,
+        "jaccard": 0.4166666666666667
+      },
+      "early_fl_terminal": 0.14,
+      "late_fl_terminal": 0.13333333333333333,
+      "early_ax": 0.2,
+      "late_ax": 0.11666666666666667
+    },
+    {
+      "folio": "f46r",
+      "n_lines": 15,
+      "n_tokens": 157,
+      "gradients": {
+        "fl_terminal": 0.07231493367565256,
+        "fl_initial": 0.0693196405648267,
+        "ax": 0.05562687205819426,
+        "chsh": -0.04150620453572956
+      },
+      "vocabulary": {
+        "early_unique": 34,
+        "late_unique": 32,
+        "overlap": 12,
+        "early_only": 22,
+        "late_only": 20,
+        "jaccard": 0.2222222222222222
+      },
+      "early_fl_terminal": 0.12280701754385964,
+      "late_fl_terminal": 0.1951219512195122,
+      "early_ax": 0.017543859649122806,
+      "late_ax": 0.07317073170731707
+    },
+    {
+      "folio": "f46v",
+      "n_lines": 12,
+      "n_tokens": 111,
+      "gradients": {
+        "fl_terminal": -0.11473684210526316,
+        "fl_initial": -0.00736842105263158,
+        "ax": 0.05052631578947367,
+        "chsh": 0.12842105263157894
+      },
+      "vocabulary": {
+        "early_unique": 31,
+        "late_unique": 15,
+        "overlap": 8,
+        "early_only": 23,
+        "late_only": 7,
+        "jaccard": 0.21052631578947367
+      },
+      "early_fl_terminal": 0.22,
+      "late_fl_terminal": 0.10526315789473684,
+      "early_ax": 0.16,
+      "late_ax": 0.21052631578947367
+    },
+    {
+      "folio": "f48r",
+      "n_lines": 9,
+      "n_tokens": 89,
+      "gradients": {
+        "fl_terminal": -0.1471861471861472,
+        "fl_initial": 0.017316017316017313,
+        "ax": 0.2424242424242424,
+        "chsh": -0.1645021645021645
+      },
+      "vocabulary": {
+        "early_unique": 24,
+        "late_unique": 17,
+        "overlap": 3,
+        "early_only": 21,
+        "late_only": 14,
+        "jaccard": 0.07894736842105263
+      },
+      "early_fl_terminal": 0.24242424242424243,
+      "late_fl_terminal": 0.09523809523809523,
+      "early_ax": 0.09090909090909091,
+      "late_ax": 0.3333333333333333
+    },
+    {
+      "folio": "f48v",
+      "n_lines": 11,
+      "n_tokens": 126,
+      "gradients": {
+        "fl_terminal": -0.07407407407407407,
+        "fl_initial": -0.027777777777777776,
+        "ax": 0.05555555555555555,
+        "chsh": 0.02777777777777779
+      },
+      "vocabulary": {
+        "early_unique": 23,
+        "late_unique": 30,
+        "overlap": 11,
+        "early_only": 12,
+        "late_only": 19,
+        "jaccard": 0.2619047619047619
+      },
+      "early_fl_terminal": 0.16666666666666666,
+      "late_fl_terminal": 0.09259259259259259,
+      "early_ax": 0.16666666666666666,
+      "late_ax": 0.2222222222222222
+    },
+    {
+      "folio": "f50r",
+      "n_lines": 10,
+      "n_tokens": 89,
+      "gradients": {
+        "fl_terminal": -0.0632183908045977,
+        "fl_initial": -0.031034482758620696,
+        "ax": 0.004597701149425287,
+        "chsh": -0.06091954022988505
+      },
+      "vocabulary": {
+        "early_unique": 20,
+        "late_unique": 22,
+        "overlap": 5,
+        "early_only": 15,
+        "late_only": 17,
+        "jaccard": 0.13513513513513514
+      },
+      "early_fl_terminal": 0.16666666666666666,
+      "late_fl_terminal": 0.10344827586206896,
+      "early_ax": 0.13333333333333333,
+      "late_ax": 0.13793103448275862
+    },
+    {
+      "folio": "f50v",
+      "n_lines": 11,
+      "n_tokens": 98,
+      "gradients": {
+        "fl_terminal": -0.06984969053934573,
+        "fl_initial": -0.008841732979664015,
+        "ax": 0.032714412024756834,
+        "chsh": -0.16445623342175067
+      },
+      "vocabulary": {
+        "early_unique": 26,
+        "late_unique": 25,
+        "overlap": 13,
+        "early_only": 13,
+        "late_only": 12,
+        "jaccard": 0.34210526315789475
+      },
+      "early_fl_terminal": 0.1724137931034483,
+      "late_fl_terminal": 0.10256410256410256,
+      "early_ax": 0.1724137931034483,
+      "late_ax": 0.20512820512820512
+    },
+    {
+      "folio": "f55r",
+      "n_lines": 13,
+      "n_tokens": 124,
+      "gradients": {
+        "fl_terminal": -0.0775609756097561,
+        "fl_initial": -0.10634146341463413,
+        "ax": 0.033658536585365856,
+        "chsh": -0.10390243902439023
+      },
+      "vocabulary": {
+        "early_unique": 23,
+        "late_unique": 32,
+        "overlap": 14,
+        "early_only": 9,
+        "late_only": 18,
+        "jaccard": 0.34146341463414637
+      },
+      "early_fl_terminal": 0.0975609756097561,
+      "late_fl_terminal": 0.02,
+      "early_ax": 0.14634146341463414,
+      "late_ax": 0.18
+    },
+    {
+      "folio": "f55v",
+      "n_lines": 12,
+      "n_tokens": 104,
+      "gradients": {
+        "fl_terminal": -0.06129032258064515,
+        "fl_initial": -0.03951612903225806,
+        "ax": 0.07096774193548389,
+        "chsh": -0.06129032258064515
+      },
+      "vocabulary": {
+        "early_unique": 23,
+        "late_unique": 20,
+        "overlap": 9,
+        "early_only": 14,
+        "late_only": 11,
+        "jaccard": 0.2647058823529412
+      },
+      "early_fl_terminal": 0.16129032258064516,
+      "late_fl_terminal": 0.1,
+      "early_ax": 0.12903225806451613,
+      "late_ax": 0.2
+    },
+    {
+      "folio": "f57r",
+      "n_lines": 11,
+      "n_tokens": 87,
+      "gradients": {
+        "fl_terminal": -0.2982292637465051,
+        "fl_initial": -0.014911463187325252,
+        "ax": 0.04659832246039143,
+        "chsh": -0.2814538676607642
+      },
+      "vocabulary": {
+        "early_unique": 23,
+        "late_unique": 30,
+        "overlap": 6,
+        "early_only": 17,
+        "late_only": 24,
+        "jaccard": 0.1276595744680851
+      },
+      "early_fl_terminal": 0.3793103448275862,
+      "late_fl_terminal": 0.08108108108108109,
+      "early_ax": 0.034482758620689655,
+      "late_ax": 0.08108108108108109
+    },
+    {
+      "folio": "f66r",
+      "n_lines": 34,
+      "n_tokens": 329,
+      "gradients": {
+        "fl_terminal": -0.04239423942394241,
+        "fl_initial": -0.0711071107110711,
+        "ax": -0.029072907290729075,
+        "chsh": -0.05004500450045002
+      },
+      "vocabulary": {
+        "early_unique": 70,
+        "late_unique": 46,
+        "overlap": 23,
+        "early_only": 47,
+        "late_only": 23,
+        "jaccard": 0.24731182795698925
+      },
+      "early_fl_terminal": 0.19090909090909092,
+      "late_fl_terminal": 0.1485148514851485,
+      "early_ax": 0.11818181818181818,
+      "late_ax": 0.0891089108910891
+    },
+    {
+      "folio": "f66v",
+      "n_lines": 13,
+      "n_tokens": 113,
+      "gradients": {
+        "fl_terminal": -0.21034077555816688,
+        "fl_initial": 0.13043478260869565,
+        "ax": 0.011750881316098694,
+        "chsh": -0.014688601645123422
+      },
+      "vocabulary": {
+        "early_unique": 29,
+        "late_unique": 33,
+        "overlap": 15,
+        "early_only": 14,
+        "late_only": 18,
+        "jaccard": 0.3191489361702128
+      },
+      "early_fl_terminal": 0.2972972972972973,
+      "late_fl_terminal": 0.08695652173913043,
+      "early_ax": 0.16216216216216217,
+      "late_ax": 0.17391304347826086
+    },
+    {
+      "folio": "f75r",
+      "n_lines": 46,
+      "n_tokens": 412,
+      "gradients": {
+        "fl_terminal": 0.01685910988236569,
+        "fl_initial": -0.0164254350300862,
+        "ax": 0.10608771073887352,
+        "chsh": -0.04244592616685641
+      },
+      "vocabulary": {
+        "early_unique": 40,
+        "late_unique": 31,
+        "overlap": 19,
+        "early_only": 21,
+        "late_only": 12,
+        "jaccard": 0.36538461538461536
+      },
+      "early_fl_terminal": 0.08391608391608392,
+      "late_fl_terminal": 0.10077519379844961,
+      "early_ax": 0.04895104895104895,
+      "late_ax": 0.15503875968992248
+    },
+    {
+      "folio": "f75v",
+      "n_lines": 35,
+      "n_tokens": 339,
+      "gradients": {
+        "fl_terminal": -0.028874813710879285,
+        "fl_initial": 0.017697466467958268,
+        "ax": 0.0871833084947839,
+        "chsh": -0.06352459016393441
+      },
+      "vocabulary": {
+        "early_unique": 49,
+        "late_unique": 35,
+        "overlap": 19,
+        "early_only": 30,
+        "late_only": 16,
+        "jaccard": 0.2923076923076923
+      },
+      "early_fl_terminal": 0.13114754098360656,
+      "late_fl_terminal": 0.10227272727272728,
+      "early_ax": 0.04918032786885246,
+      "late_ax": 0.13636363636363635
+    },
+    {
+      "folio": "f76r",
+      "n_lines": 47,
+      "n_tokens": 546,
+      "gradients": {
+        "fl_terminal": -0.003774724445115507,
+        "fl_initial": 0.007036086365695304,
+        "ax": 0.03732447531330213,
+        "chsh": -0.05094368111127889
+      },
+      "vocabulary": {
+        "early_unique": 63,
+        "late_unique": 46,
+        "overlap": 33,
+        "early_only": 30,
+        "late_only": 13,
+        "jaccard": 0.4342105263157895
+      },
+      "early_fl_terminal": 0.05405405405405406,
+      "late_fl_terminal": 0.05027932960893855,
+      "early_ax": 0.11351351351351352,
+      "late_ax": 0.15083798882681565
+    },
+    {
+      "folio": "f76v",
+      "n_lines": 41,
+      "n_tokens": 400,
+      "gradients": {
+        "fl_terminal": 0.03911477097272259,
+        "fl_initial": -0.03901183736489964,
+        "ax": -0.11127123005661349,
+        "chsh": 0.0629439011837365
+      },
+      "vocabulary": {
+        "early_unique": 53,
+        "late_unique": 44,
+        "overlap": 26,
+        "early_only": 27,
+        "late_only": 18,
+        "jaccard": 0.36619718309859156
+      },
+      "early_fl_terminal": 0.029850746268656716,
+      "late_fl_terminal": 0.06896551724137931,
+      "early_ax": 0.19402985074626866,
+      "late_ax": 0.08275862068965517
+    },
+    {
+      "folio": "f77r",
+      "n_lines": 40,
+      "n_tokens": 325,
+      "gradients": {
+        "fl_terminal": -0.002649909145972136,
+        "fl_initial": 0.00696547546941248,
+        "ax": -0.028013325257419744,
+        "chsh": -0.04747122955784372
+      },
+      "vocabulary": {
+        "early_unique": 43,
+        "late_unique": 43,
+        "overlap": 24,
+        "early_only": 19,
+        "late_only": 19,
+        "jaccard": 0.3870967741935484
+      },
+      "early_fl_terminal": 0.031496062992125984,
+      "late_fl_terminal": 0.028846153846153848,
+      "early_ax": 0.047244094488188976,
+      "late_ax": 0.019230769230769232
+    },
+    {
+      "folio": "f77v",
+      "n_lines": 37,
+      "n_tokens": 331,
+      "gradients": {
+        "fl_terminal": -0.00498533724340176,
+        "fl_initial": 0.011143695014662756,
+        "ax": -0.03929618768328445,
+        "chsh": -0.05293255131964811
+      },
+      "vocabulary": {
+        "early_unique": 44,
+        "late_unique": 31,
+        "overlap": 21,
+        "early_only": 23,
+        "late_only": 10,
+        "jaccard": 0.3888888888888889
+      },
+      "early_fl_terminal": 0.03225806451612903,
+      "late_fl_terminal": 0.02727272727272727,
+      "early_ax": 0.04838709677419355,
+      "late_ax": 0.00909090909090909
+    },
+    {
+      "folio": "f78r",
+      "n_lines": 41,
+      "n_tokens": 294,
+      "gradients": {
+        "fl_terminal": -0.014721693821850963,
+        "fl_initial": 0.0009924737407989402,
+        "ax": -0.06583409147299644,
+        "chsh": 8.270614506655782e-05
+      },
+      "vocabulary": {
+        "early_unique": 36,
+        "late_unique": 43,
+        "overlap": 19,
+        "early_only": 17,
+        "late_only": 24,
+        "jaccard": 0.31666666666666665
+      },
+      "early_fl_terminal": 0.07079646017699115,
+      "late_fl_terminal": 0.056074766355140186,
+      "early_ax": 0.1592920353982301,
+      "late_ax": 0.09345794392523364
+    },
+    {
+      "folio": "f78v",
+      "n_lines": 32,
+      "n_tokens": 292,
+      "gradients": {
+        "fl_terminal": -0.006760019314340893,
+        "fl_initial": 0.05369386769676485,
+        "ax": -0.011105746016417173,
+        "chsh": 0.11221632061805892
+      },
+      "vocabulary": {
+        "early_unique": 33,
+        "late_unique": 35,
+        "overlap": 18,
+        "early_only": 15,
+        "late_only": 17,
+        "jaccard": 0.36
+      },
+      "early_fl_terminal": 0.05263157894736842,
+      "late_fl_terminal": 0.045871559633027525,
+      "early_ax": 0.15789473684210525,
+      "late_ax": 0.14678899082568808
+    },
+    {
+      "folio": "f79r",
+      "n_lines": 44,
+      "n_tokens": 389,
+      "gradients": {
+        "fl_terminal": 0.004911472228959504,
+        "fl_initial": -0.03541110841620179,
+        "ax": 0.04577977201067185,
+        "chsh": -0.07057967499393641
+      },
+      "vocabulary": {
+        "early_unique": 44,
+        "late_unique": 38,
+        "overlap": 25,
+        "early_only": 19,
+        "late_only": 13,
+        "jaccard": 0.43859649122807015
+      },
+      "early_fl_terminal": 0.06766917293233082,
+      "late_fl_terminal": 0.07258064516129033,
+      "early_ax": 0.07518796992481203,
+      "late_ax": 0.12096774193548387
+    },
+    {
+      "folio": "f79v",
+      "n_lines": 42,
+      "n_tokens": 354,
+      "gradients": {
+        "fl_terminal": 0.030268005490139416,
+        "fl_initial": 0.014447735317488983,
+        "ax": 0.07361121144260638,
+        "chsh": 0.03691396373618436
+      },
+      "vocabulary": {
+        "early_unique": 42,
+        "late_unique": 40,
+        "overlap": 21,
+        "early_only": 21,
+        "late_only": 19,
+        "jaccard": 0.3442622950819672
+      },
+      "early_fl_terminal": 0.06422018348623854,
+      "late_fl_terminal": 0.09448818897637795,
+      "early_ax": 0.09174311926605505,
+      "late_ax": 0.16535433070866143
+    },
+    {
+      "folio": "f80r",
+      "n_lines": 43,
+      "n_tokens": 441,
+      "gradients": {
+        "fl_terminal": -0.037500000000000006,
+        "fl_initial": -0.03161764705882353,
+        "ax": -0.0023897058823529466,
+        "chsh": 0.03023897058823527
+      },
+      "vocabulary": {
+        "early_unique": 53,
+        "late_unique": 45,
+        "overlap": 27,
+        "early_only": 26,
+        "late_only": 18,
+        "jaccard": 0.38028169014084506
+      },
+      "early_fl_terminal": 0.1,
+      "late_fl_terminal": 0.0625,
+      "early_ax": 0.11176470588235295,
+      "late_ax": 0.109375
+    },
+    {
+      "folio": "f80v",
+      "n_lines": 44,
+      "n_tokens": 378,
+      "gradients": {
+        "fl_terminal": -0.023931623931623937,
+        "fl_initial": 0.01766381766381766,
+        "ax": 0.0017094017094017103,
+        "chsh": -0.039316239316239315
+      },
+      "vocabulary": {
+        "early_unique": 40,
+        "late_unique": 37,
+        "overlap": 24,
+        "early_only": 16,
+        "late_only": 13,
+        "jaccard": 0.4528301886792453
+      },
+      "early_fl_terminal": 0.06837606837606838,
+      "late_fl_terminal": 0.044444444444444446,
+      "early_ax": 0.042735042735042736,
+      "late_ax": 0.044444444444444446
+    },
+    {
+      "folio": "f81r",
+      "n_lines": 31,
+      "n_tokens": 207,
+      "gradients": {
+        "fl_terminal": 0.005841548010222707,
+        "fl_initial": 0.04819277108433735,
+        "ax": -0.05823293172690762,
+        "chsh": 0.0801387367652428
+      },
+      "vocabulary": {
+        "early_unique": 29,
+        "late_unique": 28,
+        "overlap": 16,
+        "early_only": 13,
+        "late_only": 12,
+        "jaccard": 0.3902439024390244
+      },
+      "early_fl_terminal": 0.030303030303030304,
+      "late_fl_terminal": 0.03614457831325301,
+      "early_ax": 0.16666666666666666,
+      "late_ax": 0.10843373493975904
+    },
+    {
+      "folio": "f81v",
+      "n_lines": 27,
+      "n_tokens": 258,
+      "gradients": {
+        "fl_terminal": 0.028388278388278385,
+        "fl_initial": 0.0027472527472527444,
+        "ax": -0.06043956043956045,
+        "chsh": 0.097985347985348
+      },
+      "vocabulary": {
+        "early_unique": 33,
+        "late_unique": 36,
+        "overlap": 19,
+        "early_only": 14,
+        "late_only": 17,
+        "jaccard": 0.38
+      },
+      "early_fl_terminal": 0.054945054945054944,
+      "late_fl_terminal": 0.08333333333333333,
+      "early_ax": 0.13186813186813187,
+      "late_ax": 0.07142857142857142
+    },
+    {
+      "folio": "f82r",
+      "n_lines": 32,
+      "n_tokens": 275,
+      "gradients": {
+        "fl_terminal": -0.006425233644859814,
+        "fl_initial": 0.015420560747663542,
+        "ax": -0.009462616822429906,
+        "chsh": -0.0258177570093458
+      },
+      "vocabulary": {
+        "early_unique": 35,
+        "late_unique": 30,
+        "overlap": 16,
+        "early_only": 19,
+        "late_only": 14,
+        "jaccard": 0.32653061224489793
+      },
+      "early_fl_terminal": 0.0625,
+      "late_fl_terminal": 0.056074766355140186,
+      "early_ax": 0.0375,
+      "late_ax": 0.028037383177570093
+    },
+    {
+      "folio": "f82v",
+      "n_lines": 34,
+      "n_tokens": 298,
+      "gradients": {
+        "fl_terminal": -0.014373513084853295,
+        "fl_initial": 0.06393735130848532,
+        "ax": 0.044012688342585246,
+        "chsh": -0.05273592386994447
+      },
+      "vocabulary": {
+        "early_unique": 36,
+        "late_unique": 46,
+        "overlap": 16,
+        "early_only": 20,
+        "late_only": 30,
+        "jaccard": 0.24242424242424243
+      },
+      "early_fl_terminal": 0.08653846153846154,
+      "late_fl_terminal": 0.07216494845360824,
+      "early_ax": 0.038461538461538464,
+      "late_ax": 0.08247422680412371
+    },
+    {
+      "folio": "f83r",
+      "n_lines": 44,
+      "n_tokens": 340,
+      "gradients": {
+        "fl_terminal": 0.015710919088766692,
+        "fl_initial": 0.0017282010997643378,
+        "ax": 0.01225451688923802,
+        "chsh": -0.044540455616653596
+      },
+      "vocabulary": {
+        "early_unique": 54,
+        "late_unique": 41,
+        "overlap": 25,
+        "early_only": 29,
+        "late_only": 16,
+        "jaccard": 0.35714285714285715
+      },
+      "early_fl_terminal": 0.08955223880597014,
+      "late_fl_terminal": 0.10526315789473684,
+      "early_ax": 0.029850746268656716,
+      "late_ax": 0.042105263157894736
+    },
+    {
+      "folio": "f83v",
+      "n_lines": 31,
+      "n_tokens": 263,
+      "gradients": {
+        "fl_terminal": -0.019577464788732388,
+        "fl_initial": -0.027746478873239444,
+        "ax": -0.10774647887323943,
+        "chsh": 0.09028169014084508
+      },
+      "vocabulary": {
+        "early_unique": 39,
+        "late_unique": 30,
+        "overlap": 15,
+        "early_only": 24,
+        "late_only": 15,
+        "jaccard": 0.2777777777777778
+      },
+      "early_fl_terminal": 0.09,
+      "late_fl_terminal": 0.07042253521126761,
+      "early_ax": 0.15,
+      "late_ax": 0.04225352112676056
+    },
+    {
+      "folio": "f84r",
+      "n_lines": 34,
+      "n_tokens": 361,
+      "gradients": {
+        "fl_terminal": 0.026036419992251064,
+        "fl_initial": 0.0510654784967067,
+        "ax": 0.04261913986826811,
+        "chsh": -0.0322355676094537
+      },
+      "vocabulary": {
+        "early_unique": 44,
+        "late_unique": 30,
+        "overlap": 19,
+        "early_only": 25,
+        "late_only": 11,
+        "jaccard": 0.34545454545454546
+      },
+      "early_fl_terminal": 0.041379310344827586,
+      "late_fl_terminal": 0.06741573033707865,
+      "early_ax": 0.10344827586206896,
+      "late_ax": 0.14606741573033707
+    },
+    {
+      "folio": "f84v",
+      "n_lines": 39,
+      "n_tokens": 347,
+      "gradients": {
+        "fl_terminal": -0.020690181707130856,
+        "fl_initial": 0.024889296075736755,
+        "ax": -0.07268285234386929,
+        "chsh": 0.01580393953275308
+      },
+      "vocabulary": {
+        "early_unique": 35,
+        "late_unique": 34,
+        "overlap": 16,
+        "early_only": 19,
+        "late_only": 18,
+        "jaccard": 0.3018867924528302
+      },
+      "early_fl_terminal": 0.06306306306306306,
+      "late_fl_terminal": 0.0423728813559322,
+      "early_ax": 0.22522522522522523,
+      "late_ax": 0.15254237288135594
+    },
+    {
+      "folio": "f85r1",
+      "n_lines": 35,
+      "n_tokens": 333,
+      "gradients": {
+        "fl_terminal": 0.022414710128409704,
+        "fl_initial": 0.0248461363118304,
+        "ax": 0.049236380214269446,
+        "chsh": -0.016564090874553572
+      },
+      "vocabulary": {
+        "early_unique": 57,
+        "late_unique": 62,
+        "overlap": 31,
+        "early_only": 26,
+        "late_only": 31,
+        "jaccard": 0.3522727272727273
+      },
+      "early_fl_terminal": 0.14018691588785046,
+      "late_fl_terminal": 0.16260162601626016,
+      "early_ax": 0.12149532710280374,
+      "late_ax": 0.17073170731707318
+    },
+    {
+      "folio": "f85r2",
+      "n_lines": 22,
+      "n_tokens": 155,
+      "gradients": {
+        "fl_terminal": -0.04923992068737607,
+        "fl_initial": -0.024124256444150685,
+        "ax": -0.13218770654329148,
+        "chsh": 0.17052214144084601
+      },
+      "vocabulary": {
+        "early_unique": 48,
+        "late_unique": 24,
+        "overlap": 15,
+        "early_only": 33,
+        "late_only": 9,
+        "jaccard": 0.2631578947368421
+      },
+      "early_fl_terminal": 0.07865168539325842,
+      "late_fl_terminal": 0.029411764705882353,
+      "early_ax": 0.19101123595505617,
+      "late_ax": 0.058823529411764705
+    },
+    {
+      "folio": "f86v3",
+      "n_lines": 16,
+      "n_tokens": 277,
+      "gradients": {
+        "fl_terminal": 0.09613869188337273,
+        "fl_initial": -0.0342789598108747,
+        "ax": -0.062385080115576565,
+        "chsh": 0.011820330969267157
+      },
+      "vocabulary": {
+        "early_unique": 61,
+        "late_unique": 27,
+        "overlap": 20,
+        "early_only": 41,
+        "late_only": 7,
+        "jaccard": 0.29411764705882354
+      },
+      "early_fl_terminal": 0.07407407407407407,
+      "late_fl_terminal": 0.1702127659574468,
+      "early_ax": 0.10493827160493827,
+      "late_ax": 0.0425531914893617
+    },
+    {
+      "folio": "f86v4",
+      "n_lines": 5,
+      "n_tokens": 188,
+      "gradients": {
+        "fl_terminal": 0.08333333333333334,
+        "fl_initial": -0.20833333333333337,
+        "ax": 0.11458333333333334,
+        "chsh": -0.10416666666666666
+      },
+      "vocabulary": {
+        "early_unique": 37,
+        "late_unique": 53,
+        "overlap": 18,
+        "early_only": 19,
+        "late_only": 35,
+        "jaccard": 0.25
+      },
+      "early_fl_terminal": 0.041666666666666664,
+      "late_fl_terminal": 0.125,
+      "early_ax": 0.041666666666666664,
+      "late_ax": 0.15625
+    },
+    {
+      "folio": "f86v5",
+      "n_lines": 39,
+      "n_tokens": 381,
+      "gradients": {
+        "fl_terminal": -0.030352798053527974,
+        "fl_initial": -0.05425790754257908,
+        "ax": -0.05225060827250608,
+        "chsh": 0.026885644768856465
+      },
+      "vocabulary": {
+        "early_unique": 51,
+        "late_unique": 38,
+        "overlap": 25,
+        "early_only": 26,
+        "late_only": 13,
+        "jaccard": 0.390625
+      },
+      "early_fl_terminal": 0.1386861313868613,
+      "late_fl_terminal": 0.10833333333333334,
+      "early_ax": 0.16058394160583941,
+      "late_ax": 0.10833333333333334
+    },
+    {
+      "folio": "f86v6",
+      "n_lines": 45,
+      "n_tokens": 479,
+      "gradients": {
+        "fl_terminal": 0.024290524290524293,
+        "fl_initial": -0.07054673721340388,
+        "ax": 0.0808080808080808,
+        "chsh": -0.11704345037678371
+      },
+      "vocabulary": {
+        "early_unique": 68,
+        "late_unique": 56,
+        "overlap": 28,
+        "early_only": 40,
+        "late_only": 28,
+        "jaccard": 0.2916666666666667
+      },
+      "early_fl_terminal": 0.09259259259259259,
+      "late_fl_terminal": 0.11688311688311688,
+      "early_ax": 0.05555555555555555,
+      "late_ax": 0.13636363636363635
+    },
+    {
+      "folio": "f94r",
+      "n_lines": 9,
+      "n_tokens": 82,
+      "gradients": {
+        "fl_terminal": 0.003030303030303022,
+        "fl_initial": -0.07575757575757575,
+        "ax": -0.18787878787878787,
+        "chsh": -0.018181818181818188
+      },
+      "vocabulary": {
+        "early_unique": 24,
+        "late_unique": 17,
+        "overlap": 9,
+        "early_only": 15,
+        "late_only": 8,
+        "jaccard": 0.28125
+      },
+      "early_fl_terminal": 0.13333333333333333,
+      "late_fl_terminal": 0.13636363636363635,
+      "early_ax": 0.23333333333333334,
+      "late_ax": 0.045454545454545456
+    },
+    {
+      "folio": "f94v",
+      "n_lines": 12,
+      "n_tokens": 101,
+      "gradients": {
+        "fl_terminal": 0.022328548644338114,
+        "fl_initial": 0.04465709728867623,
+        "ax": -0.03189792663476876,
+        "chsh": 0.05901116427432215
+      },
+      "vocabulary": {
+        "early_unique": 20,
+        "late_unique": 23,
+        "overlap": 9,
+        "early_only": 11,
+        "late_only": 14,
+        "jaccard": 0.2647058823529412
+      },
+      "early_fl_terminal": 0.030303030303030304,
+      "late_fl_terminal": 0.05263157894736842,
+      "early_ax": 0.24242424242424243,
+      "late_ax": 0.21052631578947367
+    },
+    {
+      "folio": "f95r1",
+      "n_lines": 11,
+      "n_tokens": 103,
+      "gradients": {
+        "fl_terminal": -0.03376436781609195,
+        "fl_initial": 0.00718390804597701,
+        "ax": 0.01436781609195402,
+        "chsh": -0.004310344827586188
+      },
+      "vocabulary": {
+        "early_unique": 17,
+        "late_unique": 20,
+        "overlap": 9,
+        "early_only": 8,
+        "late_only": 11,
+        "jaccard": 0.32142857142857145
+      },
+      "early_fl_terminal": 0.13793103448275862,
+      "late_fl_terminal": 0.10416666666666667,
+      "early_ax": 0.06896551724137931,
+      "late_ax": 0.08333333333333333
+    },
+    {
+      "folio": "f95r2",
+      "n_lines": 9,
+      "n_tokens": 79,
+      "gradients": {
+        "fl_terminal": 0.1642857142857143,
+        "fl_initial": -0.07142857142857142,
+        "ax": 0.10571428571428573,
+        "chsh": -0.07714285714285712
+      },
+      "vocabulary": {
+        "early_unique": 19,
+        "late_unique": 18,
+        "overlap": 9,
+        "early_only": 10,
+        "late_only": 9,
+        "jaccard": 0.32142857142857145
+      },
+      "early_fl_terminal": 0.03571428571428571,
+      "late_fl_terminal": 0.2,
+      "early_ax": 0.21428571428571427,
+      "late_ax": 0.32
+    },
+    {
+      "folio": "f95v1",
+      "n_lines": 13,
+      "n_tokens": 117,
+      "gradients": {
+        "fl_terminal": -0.028927963698241632,
+        "fl_initial": -0.0499149177538287,
+        "ax": -0.15087918321043675,
+        "chsh": 0.1537152580828134
+      },
+      "vocabulary": {
+        "early_unique": 27,
+        "late_unique": 27,
+        "overlap": 9,
+        "early_only": 18,
+        "late_only": 18,
+        "jaccard": 0.2
+      },
+      "early_fl_terminal": 0.12195121951219512,
+      "late_fl_terminal": 0.09302325581395349,
+      "early_ax": 0.24390243902439024,
+      "late_ax": 0.09302325581395349
+    },
+    {
+      "folio": "f95v2",
+      "n_lines": 7,
+      "n_tokens": 64,
+      "gradients": {
+        "fl_terminal": -0.22999999999999998,
+        "fl_initial": -0.05,
+        "ax": 0.13999999999999999,
+        "chsh": -0.04999999999999999
+      },
+      "vocabulary": {
+        "early_unique": 13,
+        "late_unique": 19,
+        "overlap": 5,
+        "early_only": 8,
+        "late_only": 14,
+        "jaccard": 0.18518518518518517
+      },
+      "early_fl_terminal": 0.35,
+      "late_fl_terminal": 0.12,
+      "early_ax": 0.1,
+      "late_ax": 0.24
+    }
+  ]
+}

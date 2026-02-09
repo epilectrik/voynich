@@ -4,6 +4,10 @@
 
 ## Statement
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,536 A records
+> with 2+ PP). Per C881, A records are paragraphs (342 units). Per C885, the operational
+> unit for A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
 The PP-PP co-occurrence lattice from A records is **sparse** (8.0% density, 6488/81406 possible pairs observed) with 92.0% of PP MIDDLE pairs never co-occurring. Role heterogeneity within legal pairs is **at chance** (55.2% observed vs 55.9% expected, permutation p=0.55), but **record-level role coverage is below expected** (1.91 distinct roles per record vs 2.13 expected, p=0.022). Material class consistency is **significantly below chance** (0.6% observed vs 4.1% expected, permutation p=0.0006) — A records **actively mix material classes** rather than maintaining per-record consistency. Material class shows no association with B-side role (Cramer's V=0.122, chi2 p=0.874).
 
 ## Evidence

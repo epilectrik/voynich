@@ -6,6 +6,10 @@
 
 Whole PP token co-occurrence within Currier A lines is non-random **beyond MIDDLE assignment**. The specific token variant (PREFIX+SUFFIX combination) chosen to represent a MIDDLE on a given line is correlated with the variants of other tokens on that line.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes within-line token variant selection.
+> Line-level patterns describe A-internal structure. For A-B vocabulary correspondence, the
+> operational unit is the A FOLIO (114 units, 81% coverage per C885).
+
 ### T9a: Whole-Token Free Shuffle
 
 | Metric | Value |

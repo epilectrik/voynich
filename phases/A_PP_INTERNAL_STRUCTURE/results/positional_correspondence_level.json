@@ -1,0 +1,12 @@
+{
+  "corpus_r": 0.6539614709883732,
+  "n_folios_tested": 55,
+  "mean_folio_r": 0.1491086337866657,
+  "pct_significant_positive": 7.2727272727272725,
+  "mean_cross_folio_std": 0.15307733644111915,
+  "findings": [
+    "CORPUS level shows STRONGER correspondence than individual folios",
+    "VARIABLE positions across folios (mean std=0.153)"
+  ],
+  "verdict": "CORPUS-LEVEL"
+}

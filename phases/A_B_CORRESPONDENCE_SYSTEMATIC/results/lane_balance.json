@@ -1,0 +1,9 @@
+{
+  "n_a_paras": 306,
+  "n_b_paras": 591,
+  "mean_lane_distance": 0.011849654036613342,
+  "kernel_correlation": 0.9965176543971704,
+  "lane_correlation": 0.9891337411343571,
+  "high_qo_b_lane": 0.40819785410031484,
+  "low_qo_b_lane": 0.12913899251588817
+}

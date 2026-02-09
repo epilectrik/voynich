@@ -1,0 +1,47 @@
+{
+  "phase": "REVERSE_BRUNSCHWIG_V3",
+  "test": "herb_regime2_pathway",
+  "tier": 4,
+  "external_anchor": "Brunschwig gentle processing (fire degree 1-2)",
+  "sample_sizes": {
+    "herb_suffix_tokens": 1832,
+    "animal_suffix_tokens": 1047,
+    "herb_dominant_a_folios": 6,
+    "animal_dominant_a_folios": 19,
+    "herb_pp_bases": 154,
+    "common_b_folios": 82
+  },
+  "herb_overlap_regime_correlation": {
+    "regime_means": {
+      "3": 0.2730095990965557,
+      "2": 0.2591991341991342,
+      "4": 0.25737898465171194,
+      "1": 0.17857142857142858
+    },
+    "kruskal_wallis_p": 0.797740060184222
+  },
+  "herb_gentle_correlations": {
+    "herb_vs_gentle": {
+      "r": 0.2426518890135032,
+      "p": 0.028055214574033593
+    },
+    "herb_vs_intensive": {
+      "r": 0.3272831022954028,
+      "p": 0.002688306569930589
+    },
+    "herb_vs_ke": {
+      "r": 0.18012932175145976,
+      "p": 0.10536659227645692
+    }
+  },
+  "animal_control": {
+    "animal_vs_intensive": {
+      "r": 0.3361510886495145,
+      "p": 0.0020176194340906332
+    },
+    "animal_vs_gentle": {
+      "r": 0.2848626935390263,
+      "p": 0.009488831392211131
+    }
+  }
+}

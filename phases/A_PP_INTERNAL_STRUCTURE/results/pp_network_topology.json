@@ -1,0 +1,142 @@
+{
+  "n_nodes": 673,
+  "n_edges": 4233,
+  "n_connected": 351,
+  "mean_degree": 21.586894586894587,
+  "cv_degree": 1.6918661156096138,
+  "top_hubs": [
+    {
+      "middle": "iin",
+      "degree": 277,
+      "strength": 1592,
+      "betweenness": 1.0,
+      "frequency": 618
+    },
+    {
+      "middle": "ol",
+      "degree": 208,
+      "strength": 1036,
+      "betweenness": 0.4666666666666667,
+      "frequency": 325
+    },
+    {
+      "middle": "s",
+      "degree": 197,
+      "strength": 783,
+      "betweenness": 0.4666666666666667,
+      "frequency": 227
+    },
+    {
+      "middle": "or",
+      "degree": 188,
+      "strength": 844,
+      "betweenness": 0.5066666666666667,
+      "frequency": 249
+    },
+    {
+      "middle": "y",
+      "degree": 181,
+      "strength": 875,
+      "betweenness": 0.32,
+      "frequency": 303
+    },
+    {
+      "middle": "r",
+      "degree": 165,
+      "strength": 684,
+      "betweenness": 0.37333333333333335,
+      "frequency": 194
+    },
+    {
+      "middle": "o",
+      "degree": 163,
+      "strength": 631,
+      "betweenness": 0.36,
+      "frequency": 207
+    },
+    {
+      "middle": "aiin",
+      "degree": 153,
+      "strength": 699,
+      "betweenness": 0.12,
+      "frequency": 196
+    },
+    {
+      "middle": "l",
+      "degree": 148,
+      "strength": 592,
+      "betweenness": 0.6266666666666667,
+      "frequency": 170
+    },
+    {
+      "middle": "ch",
+      "degree": 143,
+      "strength": 577,
+      "betweenness": 0.3333333333333333,
+      "frequency": 179
+    }
+  ],
+  "top_bridges": [
+    {
+      "middle": "l",
+      "bridge_ratio": 1.1728828828828828,
+      "degree": 148,
+      "betweenness": 0.6266666666666667
+    },
+    {
+      "middle": "iin",
+      "bridge_ratio": 1.0,
+      "degree": 277,
+      "betweenness": 1.0
+    },
+    {
+      "middle": "or",
+      "bridge_ratio": 0.7465248226950355,
+      "degree": 188,
+      "betweenness": 0.5066666666666667
+    },
+    {
+      "middle": "al",
+      "bridge_ratio": 0.6688713910761154,
+      "degree": 127,
+      "betweenness": 0.30666666666666664
+    },
+    {
+      "middle": "s",
+      "bridge_ratio": 0.656175972927242,
+      "degree": 197,
+      "betweenness": 0.4666666666666667
+    },
+    {
+      "middle": "ch",
+      "bridge_ratio": 0.6456876456876457,
+      "degree": 143,
+      "betweenness": 0.3333333333333333
+    },
+    {
+      "middle": "r",
+      "bridge_ratio": 0.6267474747474747,
+      "degree": 165,
+      "betweenness": 0.37333333333333335
+    },
+    {
+      "middle": "ol",
+      "bridge_ratio": 0.621474358974359,
+      "degree": 208,
+      "betweenness": 0.4666666666666667
+    },
+    {
+      "middle": "o",
+      "bridge_ratio": 0.6117791411042944,
+      "degree": 163,
+      "betweenness": 0.36
+    },
+    {
+      "middle": "y",
+      "bridge_ratio": 0.4897237569060774,
+      "degree": 181,
+      "betweenness": 0.32
+    }
+  ],
+  "verdict": "CONFIRMED"
+}

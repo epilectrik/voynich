@@ -1,0 +1,149 @@
+{
+  "total_stems_with_pairs": 295,
+  "significant_position_diffs": [
+    {
+      "stem": "dar",
+      "suffix1": "",
+      "pos1": 0.506,
+      "n1": 195,
+      "suffix2": "am",
+      "pos2": 1.0,
+      "n2": 3,
+      "diff": 0.494
+    },
+    {
+      "stem": "dal",
+      "suffix1": "",
+      "pos1": 0.607,
+      "n1": 133,
+      "suffix2": "dy",
+      "pos2": 0.752,
+      "n2": 8,
+      "diff": 0.145
+    },
+    {
+      "stem": "olk",
+      "suffix1": "aiin",
+      "pos1": 0.433,
+      "n1": 33,
+      "suffix2": "ain",
+      "pos2": 0.555,
+      "n2": 33,
+      "diff": 0.122
+    },
+    {
+      "stem": "cheo",
+      "suffix1": "dy",
+      "pos1": 0.546,
+      "n1": 53,
+      "suffix2": "",
+      "pos2": 0.356,
+      "n2": 42,
+      "diff": 0.19
+    },
+    {
+      "stem": "otar",
+      "suffix1": "",
+      "pos1": 0.616,
+      "n1": 115,
+      "suffix2": "ar",
+      "pos2": 0.769,
+      "n2": 4,
+      "diff": 0.153
+    },
+    {
+      "stem": "okar",
+      "suffix1": "",
+      "pos1": 0.515,
+      "n1": 104,
+      "suffix2": "al",
+      "pos2": 0.644,
+      "n2": 5,
+      "diff": 0.128
+    },
+    {
+      "stem": "chol",
+      "suffix1": "",
+      "pos1": 0.429,
+      "n1": 102,
+      "suffix2": "or",
+      "pos2": 0.6,
+      "n2": 3,
+      "diff": 0.171
+    },
+    {
+      "stem": "o",
+      "suffix1": "",
+      "pos1": 0.297,
+      "n1": 29,
+      "suffix2": "dy",
+      "pos2": 0.618,
+      "n2": 27,
+      "diff": 0.321
+    },
+    {
+      "stem": "qokch",
+      "suffix1": "dy",
+      "pos1": 0.515,
+      "n1": 54,
+      "suffix2": "ey",
+      "pos2": 0.347,
+      "n2": 24,
+      "diff": 0.168
+    }
+  ],
+  "global_suffix_profiles": {
+    "y": {
+      "count": 678,
+      "mean_pos": 0.583
+    },
+    "ey": {
+      "count": 618,
+      "mean_pos": 0.435
+    },
+    "dy": {
+      "count": 1081,
+      "mean_pos": 0.528
+    },
+    "hy": {
+      "count": 910,
+      "mean_pos": 0.504
+    },
+    "aiin": {
+      "count": 952,
+      "mean_pos": 0.465
+    },
+    "al": {
+      "count": 661,
+      "mean_pos": 0.494
+    },
+    "s": {
+      "count": 429,
+      "mean_pos": 0.458
+    },
+    "am": {
+      "count": 236,
+      "mean_pos": 0.93
+    },
+    "ar": {
+      "count": 834,
+      "mean_pos": 0.48
+    },
+    "or": {
+      "count": 418,
+      "mean_pos": 0.473
+    },
+    "ol": {
+      "count": 295,
+      "mean_pos": 0.534
+    },
+    "ly": {
+      "count": 108,
+      "mean_pos": 0.695
+    },
+    "ain": {
+      "count": 742,
+      "mean_pos": 0.477
+    }
+  }
+}

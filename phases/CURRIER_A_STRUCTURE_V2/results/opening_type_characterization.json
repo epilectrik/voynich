@@ -1,0 +1,22 @@
+{
+  "test": "OPENING_TYPE_CHARACTERIZATION",
+  "counts": {
+    "with_ri_paras": 200,
+    "without_ri_paras": 142
+  },
+  "linker_analysis": {
+    "with_ri_has_linker_pct": 2.7189659014932026,
+    "without_ri_has_linker_pct": 3.4742327735958307,
+    "with_ri_linker_density": 0.1248097412480974,
+    "without_ri_linker_density": 0.16822429906542055,
+    "total_with_ri_linkers": 82,
+    "total_without_ri_linkers": 36
+  },
+  "structural": {
+    "avg_lines_with": 4.41,
+    "avg_lines_without": 5.345070422535211,
+    "avg_ri_with": 3.285,
+    "avg_ri_without": 1.5070422535211268
+  },
+  "verdict": "WITHOUT_RI_MORE_LINKERS"
+}

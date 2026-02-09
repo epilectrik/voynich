@@ -1,0 +1,67 @@
+{
+  "phase": "RI_AZC_LINKING_INVESTIGATION",
+  "date": "2026-02-02",
+  "status": "COMPLETE",
+  "verdict": "NEGATIVE_RESULT",
+  "hypothesis": "RI tokens in AZC diagram positions serve as 'see also' pointers to semantically related A content",
+  "hypothesis_supported": false,
+  "summary": "Vocabulary clustering hypothesis falsified through controlled testing",
+  "observations": {
+    "ri_in_azc_diagram_positions": {
+      "total_ri_tokens": 60,
+      "diagram_positions": 52,
+      "diagram_percentage": 86.7,
+      "p_text_positions": 8
+    },
+    "ri_vocabulary_coverage": {
+      "azc_diagram_ri_middles": 33,
+      "total_ri_middles": 592,
+      "coverage_percentage": 5.6
+    },
+    "cthody_appearances": {
+      "azc_positions": ["f68v1 C", "f69r R"],
+      "a_folios_before_azc": 8,
+      "a_folios_after_azc": 5
+    }
+  },
+  "tests": {
+    "initial_overlap": {
+      "azc_linked_jaccard": 0.151,
+      "random_baseline": 0.079,
+      "ratio": 1.92,
+      "interpretation": "Appeared significant before controls"
+    },
+    "frequency_control": {
+      "testable_middles_mean_rank": 37.5,
+      "expected_mean_rank": 296.5,
+      "ratio": 0.13,
+      "interpretation": "CONFOUND - testable MIDDLEs in top 13% by frequency"
+    },
+    "section_control": {
+      "within_section": {
+        "azc_linked": 0.077,
+        "random": 0.079,
+        "ratio": 0.98
+      },
+      "cross_section": {
+        "azc_linked": 0.070,
+        "random": 0.072,
+        "ratio": 0.97
+      },
+      "interpretation": "EFFECT COLLAPSES when separated by section"
+    },
+    "directionality": {
+      "ct_prefix_tokens_in_azc": 3,
+      "documented_linkers_in_azc": 2,
+      "interpretation": "INSUFFICIENT DATA"
+    }
+  },
+  "conclusions": [
+    "1.92x overlap effect was artifact of frequency bias and section composition",
+    "No vocabulary clustering beyond baseline when properly controlled",
+    "Confirms C835: linker function is navigational, not semantic",
+    "No new constraint warranted - existing architecture covers observations"
+  ],
+  "path_status": "CLOSED",
+  "related_constraints": ["C301", "C835", "C498"]
+}

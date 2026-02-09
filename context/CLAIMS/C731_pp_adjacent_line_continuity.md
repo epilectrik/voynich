@@ -6,6 +6,11 @@
 
 Adjacent lines within Currier A folios share more PP MIDDLE vocabulary than non-adjacent lines. The effect is small but significant.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level and shows
+> local sequential continuity. For A-B vocabulary correspondence, the operational unit
+> is the A FOLIO (114 units, 81% coverage per C885). Line-level continuity contributes
+> to folio-level coherence.
+
 | Metric | Value |
 |--------|-------|
 | Adjacent line pairs | 1,422 |

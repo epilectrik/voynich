@@ -1,0 +1,18 @@
+{
+  "test": "B_FOLIO_CONVERGENCE",
+  "convergence": {
+    "avg_b_folios_with_ri": 79.77209302325582,
+    "avg_b_folios_without_ri": 79.44881889763779
+  },
+  "coverage": {
+    "b_folios_from_with_ri": 82,
+    "b_folios_from_without_ri": 82,
+    "shared_b_folios": 82,
+    "jaccard_b": 1.0
+  },
+  "exclusive_targets": {
+    "only_with_ri": [],
+    "only_without_ri": []
+  },
+  "verdict": "SIMILAR_CONVERGENCE"
+}

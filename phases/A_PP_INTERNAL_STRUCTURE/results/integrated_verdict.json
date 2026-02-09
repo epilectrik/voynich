@@ -1,0 +1,28 @@
+{
+  "phase": "A_PP_INTERNAL_STRUCTURE",
+  "date": "2026-01-30",
+  "tests_run": [
+    "pp_positional_preferences",
+    "pp_network_topology",
+    "with_without_ri_comparison",
+    "pp_gradient_analysis"
+  ],
+  "individual_verdicts": {
+    "positional_preferences": "CONFIRMED",
+    "network_topology": "CONFIRMED",
+    "with_without_ri": "SUPPORT",
+    "gradient_analysis": "NOT SUPPORTED"
+  },
+  "counts": {
+    "confirmed": 2,
+    "support": 1,
+    "not_supported": 1
+  },
+  "overall_verdict": "STRONG",
+  "recommended_tier": "Tier 2 (structural)",
+  "key_findings": [
+    "PP has positional preferences (e.g., m at position 0.85)",
+    "PP network has hub structure (top hubs: iin, ol, s)",
+    "WITH-RI and WITHOUT-RI lines have different PP profiles (Jaccard=0.232)"
+  ]
+}

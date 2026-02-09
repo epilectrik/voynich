@@ -53,3 +53,6 @@ temp_images/
 
 # Misc screenshots
 *.PNG
+
+# Working scratchpad (session-specific temp files)
+scratchpad/

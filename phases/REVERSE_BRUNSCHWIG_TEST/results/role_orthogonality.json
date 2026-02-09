@@ -1,0 +1,96 @@
+{
+  "test": "Role Composition Orthogonality",
+  "findings": {
+    "C891_energy_frequent_inverse": {
+      "rho": -0.7999999999999999,
+      "strong_inverse": true,
+      "interpretation": "High energy = low escape; low energy = high escape"
+    }
+  },
+  "correlations": {
+    "ENERGY_OPERATOR_vs_FREQUENT_OPERATOR": {
+      "rho": -0.7999999999999999,
+      "p": 0.20000000000000007,
+      "interpretation": "INVERSE"
+    },
+    "ENERGY_OPERATOR_vs_FLOW_OPERATOR": {
+      "rho": -0.6000000000000001,
+      "p": 0.3999999999999999,
+      "interpretation": "INVERSE"
+    },
+    "CORE_CONTROL_vs_FREQUENT_OPERATOR": {
+      "rho": 0.0,
+      "p": 1.0,
+      "interpretation": "orthogonal"
+    },
+    "CORE_CONTROL_vs_ENERGY_OPERATOR": {
+      "rho": 0.39999999999999997,
+      "p": 0.6,
+      "interpretation": "aligned"
+    }
+  },
+  "regime_profiles": {
+    "1": {
+      "CORE_CONTROL": 3.450737743931461,
+      "ENERGY_OPERATOR": 34.30905917816913,
+      "FLOW_OPERATOR": 4.259876249405045,
+      "FREQUENT_OPERATOR": 12.073615738537205,
+      "AUXILIARY": 17.959701729335237
+    },
+    "2": {
+      "CORE_CONTROL": 2.040155440414508,
+      "ENERGY_OPERATOR": 20.822538860103627,
+      "FLOW_OPERATOR": 5.3432642487046635,
+      "FREQUENT_OPERATOR": 13.244818652849741,
+      "AUXILIARY": 21.502590673575128
+    },
+    "3": {
+      "CORE_CONTROL": 3.0637254901960786,
+      "ENERGY_OPERATOR": 36.470588235294116,
+      "FLOW_OPERATOR": 4.46078431372549,
+      "FREQUENT_OPERATOR": 11.176470588235293,
+      "AUXILIARY": 14.215686274509803
+    },
+    "4": {
+      "CORE_CONTROL": 3.3714629741119806,
+      "ENERGY_OPERATOR": 22.727272727272727,
+      "FLOW_OPERATOR": 5.839855508729681,
+      "FREQUENT_OPERATOR": 15.141481035520771,
+      "AUXILIARY": 19.024683925346178
+    }
+  },
+  "rankings": {
+    "CORE_CONTROL": [
+      "R1",
+      "R4",
+      "R3",
+      "R2"
+    ],
+    "ENERGY_OPERATOR": [
+      "R3",
+      "R1",
+      "R4",
+      "R2"
+    ],
+    "FLOW_OPERATOR": [
+      "R4",
+      "R2",
+      "R3",
+      "R1"
+    ],
+    "FREQUENT_OPERATOR": [
+      "R4",
+      "R2",
+      "R1",
+      "R3"
+    ],
+    "AUXILIARY": [
+      "R2",
+      "R4",
+      "R1",
+      "R3"
+    ]
+  },
+  "verdict": "SUPPORT",
+  "note": "n=4 REGIMEs; folio-level confirmation recommended for confidence intervals"
+}

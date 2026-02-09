@@ -1,0 +1,8 @@
+{
+  "s_prefix_follows_apparatus": 38,
+  "s_prefix_follows_non_apparatus": 336,
+  "apparatus_to_s_ratio": 1.3558862433862433,
+  "chi_square_p": 0.06539129127856856,
+  "complete_cycles_found": 31,
+  "mean_cycle_length": 15.161290322580646
+}

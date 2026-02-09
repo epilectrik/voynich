@@ -1,0 +1,55 @@
+{
+  "test": "Recovery Orthogonality",
+  "findings": {
+    "C890_rate_pathway_independence": {
+      "fq_rate_ranking": [
+        "R4",
+        "R2",
+        "R1",
+        "R3"
+      ],
+      "post_fq_e_ranking": [
+        "R2",
+        "R1",
+        "R3",
+        "R4"
+      ],
+      "orthogonal": true
+    },
+    "C892_post_fq_h_dominance": {
+      "h_dominates_all_regimes": true,
+      "ordering": "h > k > e (all REGIMEs)"
+    }
+  },
+  "regime_profiles": {
+    "1": {
+      "fq_rate": 0.12073615738537205,
+      "post_fq_e": 6.570302233902759,
+      "post_fq_h": 31.14323258869908,
+      "post_fq_k": 25.295663600525625,
+      "total_fq": 1522
+    },
+    "2": {
+      "fq_rate": 0.1324481865284974,
+      "post_fq_e": 8.06845965770171,
+      "post_fq_h": 24.205378973105134,
+      "post_fq_k": 19.070904645476773,
+      "total_fq": 409
+    },
+    "3": {
+      "fq_rate": 0.11176470588235295,
+      "post_fq_e": 5.043859649122807,
+      "post_fq_h": 36.40350877192982,
+      "post_fq_k": 17.32456140350877,
+      "total_fq": 456
+    },
+    "4": {
+      "fq_rate": 0.1514148103552077,
+      "post_fq_e": 2.783300198807157,
+      "post_fq_h": 25.049701789264414,
+      "post_fq_k": 22.067594433399602,
+      "total_fq": 503
+    }
+  },
+  "verdict": "SUPPORT"
+}

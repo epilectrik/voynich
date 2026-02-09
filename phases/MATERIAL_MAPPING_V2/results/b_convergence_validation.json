@@ -1,0 +1,22 @@
+{
+  "precision_candidates": 6,
+  "unique_pp_middles": 69,
+  "b_folios_covered": 82,
+  "regime_distribution": {
+    "REGIME_1": 31,
+    "REGIME_4": 25,
+    "REGIME_3": 16,
+    "REGIME_2": 10
+  },
+  "precision_b_kernel": {
+    "k": 0.20318391286133222,
+    "h": 0.051588964031360346,
+    "e": 0.2325692740439284
+  },
+  "baseline_b_kernel": {
+    "k": 0.19146172497402147,
+    "h": 0.09707308624870108,
+    "e": 0.3418340838240388
+  },
+  "kernel_test_pass": true
+}

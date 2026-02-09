@@ -1,0 +1,81 @@
+{
+  "test": "prep_operation_cooccurrence",
+  "question": "Do label MIDDLEs preferentially co-occur with specific preparation operations?",
+  "results_by_type": {
+    "jar": {
+      "label_count": 16,
+      "unique_middles": 14,
+      "lines_with_label": 2326,
+      "lines_with_label_and_prep": 547,
+      "prep_counts": {
+        "GATHER": 181,
+        "CHOP": 261,
+        "STRIP": 128,
+        "POUND": 106,
+        "BREAK": 43
+      },
+      "enrichments": {
+        "GATHER": 1.0070304992160235,
+        "CHOP": 0.983868555833863,
+        "STRIP": 0.9864653991911085,
+        "POUND": 0.9759623798689688,
+        "BREAK": 1.040412725709372
+      }
+    },
+    "root": {
+      "label_count": 78,
+      "unique_middles": 59,
+      "lines_with_label": 2418,
+      "lines_with_label_and_prep": 571,
+      "prep_counts": {
+        "CHOP": 276,
+        "GATHER": 187,
+        "STRIP": 135,
+        "POUND": 113,
+        "BREAK": 43
+      },
+      "enrichments": {
+        "GATHER": 1.0008271298593878,
+        "CHOP": 1.0008271298593878,
+        "STRIP": 1.0008271298593878,
+        "POUND": 1.0008271298593878,
+        "BREAK": 1.0008271298593878
+      }
+    },
+    "leaf": {
+      "label_count": 20,
+      "unique_middles": 16,
+      "lines_with_label": 2378,
+      "lines_with_label_and_prep": 562,
+      "prep_counts": {
+        "CHOP": 274,
+        "GATHER": 185,
+        "STRIP": 132,
+        "POUND": 110,
+        "BREAK": 43
+      },
+      "enrichments": {
+        "GATHER": 1.0067778162568644,
+        "CHOP": 1.0102875391572508,
+        "STRIP": 0.9950471918512289,
+        "POUND": 0.9906443281704712,
+        "BREAK": 1.0176619007569385
+      }
+    }
+  },
+  "overall_statistics": {
+    "chi2": 0.12564764674249282,
+    "p_value": 0.999999382720411,
+    "cramers_v": 0.0053232803047639846,
+    "significant": false
+  },
+  "brunschwig_prediction": {
+    "root_intensive": 389,
+    "root_gentle": 322,
+    "leaf_intensive": 384,
+    "leaf_gentle": 317,
+    "fisher_odds_ratio": 0.9972906961697723,
+    "fisher_p_value": 1.0,
+    "supports_prediction": false
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "label_total": 25,
+  "text_total": 512,
+  "extensions": {
+    "h": {
+      "label_count": 0,
+      "text_count": 49,
+      "label_pct": 0.0,
+      "text_pct": 9.57,
+      "enrichment": 0.0
+    },
+    "k": {
+      "label_count": 2,
+      "text_count": 28,
+      "label_pct": 8.0,
+      "text_pct": 5.47,
+      "enrichment": 1.46
+    },
+    "t": {
+      "label_count": 0,
+      "text_count": 25,
+      "label_pct": 0.0,
+      "text_pct": 4.88,
+      "enrichment": 0.0
+    },
+    "d": {
+      "label_count": 0,
+      "text_count": 61,
+      "label_pct": 0.0,
+      "text_pct": 11.91,
+      "enrichment": 0.0
+    },
+    "o": {
+      "label_count": 8,
+      "text_count": 99,
+      "label_pct": 32.0,
+      "text_pct": 19.34,
+      "enrichment": 1.65
+    },
+    "l": {
+      "label_count": 1,
+      "text_count": 27,
+      "label_pct": 4.0,
+      "text_pct": 5.27,
+      "enrichment": 0.76
+    },
+    "s": {
+      "label_count": 1,
+      "text_count": 28,
+      "label_pct": 4.0,
+      "text_pct": 5.47,
+      "enrichment": 0.73
+    },
+    "e": {
+      "label_count": 2,
+      "text_count": 37,
+      "label_pct": 8.0,
+      "text_pct": 7.23,
+      "enrichment": 1.11
+    },
+    "a": {
+      "label_count": 2,
+      "text_count": 34,
+      "label_pct": 8.0,
+      "text_pct": 6.64,
+      "enrichment": 1.2
+    },
+    "r": {
+      "label_count": 8,
+      "text_count": 14,
+      "label_pct": 32.0,
+      "text_pct": 2.73,
+      "enrichment": 11.7
+    }
+  },
+  "significant_diffs": [
+    {
+      "extension": "d",
+      "p_value": 0.0981,
+      "odds_ratio": 0.0,
+      "direction": "TEXT"
+    },
+    {
+      "extension": "r",
+      "p_value": 0.0,
+      "odds_ratio": 16.74,
+      "direction": "LABEL"
+    }
+  ]
+}

@@ -162,9 +162,10 @@ The difference: A/C folios don't share their scaffolds. Each diagram has custom 
 | Code | Frequency | Role |
 |------|-----------|------|
 | C | 32.3% | Interior (77.6%) |
-| P | 26.6% | Interior (75.8%) |
 | R | 11.2% | Mixed (55.2%) |
 | S | 8.0% | Boundary (74.9%) |
+
+*Note: P (Paragraph) is NOT a diagram position - it is paragraph text appearing on AZC folios. P text is reclassified as Currier A material. See `azc_transcript_encoding.md`.*
 
 No ordered subscripts (R1/R2/R3, S1/S2) appear in this family.
 
@@ -207,7 +208,7 @@ AZC completes the Voynich control architecture:
 | **Context** | AZC | Locks which things may appear where |
 | **Orientation** | HT | Keeps the human stable once locked |
 
-AZC does not execute. It does not index. It **gates**.
+AZC does not execute. It does not route. It **encodes position**.
 
 ---
 
@@ -298,7 +299,7 @@ The Zodiac pages are not "about" twelve things. They are the **same control stru
 
 The A/C pages are not "loose." They are **equally rigid but diagram-specific**.
 
-Together, they form a context-gating layer that constrains what Currier B procedures may legally execute and where Currier A distinctions apply.
+Together, they form a positional encoding layer. Each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character. B vocabulary availability correlates with A vocabulary through AZC positional correspondence.
 
 ---
 

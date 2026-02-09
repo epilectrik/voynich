@@ -1,0 +1,61 @@
+{
+  "section_summary": {
+    "H": {
+      "n_paragraphs": 232,
+      "n_folios": 95,
+      "mean_length": 33.89655172413793,
+      "with_ri_rate": 0.49137931034482757,
+      "n_middles": 741
+    },
+    "P": {
+      "n_paragraphs": 62,
+      "n_folios": 16,
+      "mean_length": 38.33870967741935,
+      "with_ri_rate": 0.6451612903225806,
+      "n_middles": 371
+    },
+    "T": {
+      "n_paragraphs": 23,
+      "n_folios": 3,
+      "mean_length": 40.56521739130435,
+      "with_ri_rate": 0.4782608695652174,
+      "n_middles": 228
+    }
+  },
+  "section_lengths": {
+    "T": {
+      "mean": 40.56521739130435,
+      "std": 38.73749569575747
+    },
+    "H": {
+      "mean": 33.89655172413793,
+      "std": 18.929715424179733
+    },
+    "P": {
+      "mean": 38.33870967741935,
+      "std": 33.87212363619072
+    }
+  },
+  "section_structure": {
+    "T": {
+      "with_ri": 11,
+      "without_ri": 12,
+      "with_ri_rate": 0.4782608695652174
+    },
+    "H": {
+      "with_ri": 114,
+      "without_ri": 118,
+      "with_ri_rate": 0.49137931034482757
+    },
+    "P": {
+      "with_ri": 40,
+      "without_ri": 22,
+      "with_ri_rate": 0.6451612903225806
+    }
+  },
+  "vocabulary_overlap": {
+    "H-P": 0.20869565217391303,
+    "H-T": 0.1508313539192399,
+    "P-T": 0.198
+  }
+}

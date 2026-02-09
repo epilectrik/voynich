@@ -4,7 +4,13 @@
 
 ## Finding
 
-All four REGIMEs show similar robustness to A-record filtering. REGIME_2 is marginally the most robust (0.222 effective-to-baseline ratio), REGIME_3 the least (0.167). The effective instruction budget — classes that survive filtering AND actually appear in the REGIME's folios — is tightly clustered around 21-22% of baseline across REGIMEs 1, 2, and 4.
+All four REGIMEs show similar robustness to A-record filtering.
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+REGIME_2 is marginally the most robust (0.222 effective-to-baseline ratio), REGIME_3 the least (0.167). The effective instruction budget — classes that survive filtering AND actually appear in the REGIME's folios — is tightly clustered around 21-22% of baseline across REGIMEs 1, 2, and 4.
 
 ## Key Numbers
 

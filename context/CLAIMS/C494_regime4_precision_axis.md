@@ -18,10 +18,17 @@
 
 | Property | Value | Meaning |
 |----------|-------|---------|
-| Escape rate | 0.107 (lowest) | Least forgiving of deviation |
+| Escape rate (qo) | 0.107 (lowest) | Lowest thermal intensity |
 | HIGH_IMPACT | Forbidden | Precision excludes aggressive intervention |
 | max_k_steps | 3 | Controlled energy operations |
 | min_LINK_ratio | 25% | High monitoring overhead |
+
+> **Terminology Note (2026-01-30):** "Escape rate" here refers to qo_density (qo-prefixed tokens,
+> Classes 32/33/36), which measures thermal/energy operation intensity. This is distinct from
+> FQ density (FREQUENT_OPERATOR classes 9/13/14/23), which measures grammatical escape/flow
+> control operators. REGIME_4 has LOWEST qo_density (gentle heat) but HIGHEST FQ_density
+> (tight tolerances requiring high error correction). These orthogonal measures support the
+> precision interpretation: gentle processing with rigorous error handling.
 
 ### Test Results
 

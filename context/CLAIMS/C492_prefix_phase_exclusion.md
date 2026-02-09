@@ -7,9 +7,17 @@
 
 ---
 
+> **REFRAMING NOTE (PTEXT_FOLIO_ANALYSIS):** P is not a diagram zone - it denotes
+> *paragraph text* on AZC folios, which is linguistically Currier A (C758).
+> This constraint should be understood as: `ct` PREFIX appears in Currier A
+> paragraph material on AZC folios, not in diagram positions (C, R, S).
+> The exclusion pattern remains valid; the interpretation is clarified.
+
+---
+
 ## Statement
 
-One PREFIX class (control-flow category `ct`) exhibits a *phase-exclusive legality profile*: its tokens are grammatically admissible only in P-zone AZC contexts and are categorically absent from C- and S-zones. This exclusion is invariant under frequency control.
+One PREFIX class (control-flow category `ct`) exhibits a *phase-exclusive legality profile*: its tokens are grammatically admissible only in P-text (paragraph text) on AZC folios and are categorically absent from diagram positions (C- and S-zones). This exclusion is invariant under frequency control.
 
 ---
 

@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "H": {
+      "n": 344,
+      "rates": {
+        "h": 0.108,
+        "k": 0.041,
+        "t": 0.055,
+        "d": 0.122,
+        "o": 0.198,
+        "l": 0.061,
+        "s": 0.061
+      }
+    },
+    "P": {
+      "n": 109,
+      "rates": {
+        "h": 0.055,
+        "k": 0.055,
+        "t": 0.037,
+        "d": 0.101,
+        "o": 0.193,
+        "l": 0.064,
+        "s": 0.046
+      }
+    },
+    "T": {
+      "n": 59,
+      "rates": {
+        "h": 0.102,
+        "k": 0.034,
+        "t": 0.051,
+        "d": 0.068,
+        "o": 0.186,
+        "l": 0.119,
+        "s": 0.085
+      }
+    }
+  },
+  "enrichments": [
+    {
+      "section": "T",
+      "extension": "l",
+      "rate": 0.119,
+      "baseline": 0.068,
+      "enrichment": 1.74
+    },
+    {
+      "extension": "h",
+      "top_section": "H",
+      "concentration": 0.76,
+      "total": 49
+    },
+    {
+      "extension": "k",
+      "top_section": "H",
+      "concentration": 0.64,
+      "total": 22
+    },
+    {
+      "extension": "t",
+      "top_section": "H",
+      "concentration": 0.73,
+      "total": 26
+    },
+    {
+      "extension": "d",
+      "top_section": "H",
+      "concentration": 0.74,
+      "total": 57
+    },
+    {
+      "extension": "o",
+      "top_section": "H",
+      "concentration": 0.68,
+      "total": 100
+    },
+    {
+      "extension": "l",
+      "top_section": "H",
+      "concentration": 0.6,
+      "total": 35
+    },
+    {
+      "extension": "s",
+      "top_section": "H",
+      "concentration": 0.68,
+      "total": 31
+    }
+  ],
+  "chi_square": {
+    "chi2": 6.790101583975467,
+    "p_value": 0.7451009290625371,
+    "dof": 10,
+    "significant": false
+  }
+}

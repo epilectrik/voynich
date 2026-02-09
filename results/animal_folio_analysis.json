@@ -1,0 +1,35 @@
+{
+  "animal_folios": [
+    "f58r",
+    "f25v",
+    "f13r",
+    "f10r",
+    "f88r",
+    "f89v1",
+    "f99r",
+    "f89r2",
+    "f88v",
+    "f99v",
+    "f58v",
+    "f102v2"
+  ],
+  "high_concentration_folios": [
+    "f58v",
+    "f89v1"
+  ],
+  "animal_record_count": 20,
+  "prefix_distribution": {
+    "ct": 3,
+    "qo": 8,
+    "ch": 2,
+    "ta": 1,
+    "sh": 5,
+    "da": 3,
+    "ok": 6,
+    "po": 1,
+    "so": 1,
+    "ol": 1,
+    "ot": 2,
+    "sa": 1
+  }
+}

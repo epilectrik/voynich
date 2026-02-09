@@ -1,0 +1,30 @@
+{
+  "test": "Line-Level Phase Prediction",
+  "question": "Can line MIDDLE tier predict folio position?",
+  "tier_stats": {
+    "EARLY": {
+      "n": 20,
+      "mean": 0.348434837615847,
+      "std": 0.23398624640879725
+    },
+    "MID": {
+      "n": 1206,
+      "mean": 0.5275123387362994,
+      "std": 0.2989729603746101
+    },
+    "LATE": {
+      "n": 40,
+      "mean": 0.5856372096591869,
+      "std": 0.3037372359165957
+    }
+  },
+  "statistics": {
+    "anova_f": 4.348615154396672,
+    "anova_p": 0.01311877472118233,
+    "cohens_d": -0.8749166557759873,
+    "spearman_rho": 0.07207524179946666,
+    "spearman_p": 0.010308510221141806
+  },
+  "prediction_accuracy": 43.333333333333336,
+  "verdict": "SUPPORT"
+}

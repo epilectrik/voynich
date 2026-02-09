@@ -1,0 +1,28 @@
+{
+  "test": "SECTION_DISTRIBUTION",
+  "overall_pct_without": 37.134502923976605,
+  "by_section": {
+    "H": {
+      "folios": 95,
+      "with_ri": 101,
+      "without_ri": 96,
+      "pct_without": 48.73096446700507,
+      "ratio_vs_overall": 1.3122826651744675
+    },
+    "P": {
+      "folios": 16,
+      "with_ri": 103,
+      "without_ri": 27,
+      "pct_without": 20.76923076923077,
+      "ratio_vs_overall": 0.5592973955178681
+    },
+    "T": {
+      "folios": 3,
+      "with_ri": 11,
+      "without_ri": 4,
+      "pct_without": 26.666666666666668,
+      "ratio_vs_overall": 0.7181102362204725
+    }
+  },
+  "verdict": "SECTION_VARIATION"
+}

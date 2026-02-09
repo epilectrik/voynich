@@ -1,0 +1,211 @@
+{
+  "date": "2026-01-29T18:04:58.880510",
+  "phase": "MATERIAL_MAPPING_V2",
+  "statistics": {
+    "brunschwig_recipes": 245,
+    "a_records_profiled": 1063,
+    "match_scores_computed": 260435,
+    "high_score_matches": 21056,
+    "validated_mappings": 20,
+    "unique_materials_matched": 2
+  },
+  "validated_mappings_by_recipe": {
+    "ox blood water": [
+      {
+        "record_id": "f58v:10",
+        "ri_tokens": [
+          "ctholy",
+          "qotalom"
+        ],
+        "score": 0.8280907075395602
+      },
+      {
+        "record_id": "f25v:1",
+        "ri_tokens": [
+          "poeeaiin",
+          "qofchor",
+          "sos"
+        ],
+        "score": 0.8117356233937526
+      },
+      {
+        "record_id": "f89r2:10",
+        "ri_tokens": [
+          "yokeeol",
+          "eeeokor"
+        ],
+        "score": 0.8110308092005997
+      },
+      {
+        "record_id": "f89v1:12",
+        "ri_tokens": [
+          "okalda",
+          "dalg"
+        ],
+        "score": 0.8087186999714989
+      },
+      {
+        "record_id": "f13r:7",
+        "ri_tokens": [
+          "qokhy"
+        ],
+        "score": 0.8070437113061095
+      },
+      {
+        "record_id": "f58v:16",
+        "ri_tokens": [
+          "cheockhey",
+          "taldar"
+        ],
+        "score": 0.806379200154458
+      },
+      {
+        "record_id": "f58v:31",
+        "ri_tokens": [
+          "psheey"
+        ],
+        "score": 0.8050638292307253
+      },
+      {
+        "record_id": "f58v:29",
+        "ri_tokens": [
+          "sheoikhy"
+        ],
+        "score": 0.8034489299931388
+      },
+      {
+        "record_id": "f58r:38",
+        "ri_tokens": [
+          "dtshol",
+          "dytal",
+          "salol"
+        ],
+        "score": 0.8017985389748165
+      },
+      {
+        "record_id": "f58v:35",
+        "ri_tokens": [
+          "dalas"
+        ],
+        "score": 0.7997260939734634
+      },
+      {
+        "record_id": "f88v:8",
+        "ri_tokens": [
+          "qokeoda"
+        ],
+        "score": 0.7940716693326808
+      },
+      {
+        "record_id": "f99v:7",
+        "ri_tokens": [
+          "okeoldy",
+          "qokeolo",
+          "sheodol",
+          "qokeechom"
+        ],
+        "score": 0.7905045310070561
+      },
+      {
+        "record_id": "f58v:34",
+        "ri_tokens": [
+          "chhy",
+          "dalychs"
+        ],
+        "score": 0.7887485796506658
+      },
+      {
+        "record_id": "f99r:7",
+        "ri_tokens": [
+          "okoly",
+          "qokoly",
+          "okchol",
+          "qokold"
+        ],
+        "score": 0.7868459944216902
+      },
+      {
+        "record_id": "f89v1:2",
+        "ri_tokens": [
+          "otoikhy",
+          "cthody"
+        ],
+        "score": 0.7863270684080463
+      }
+    ],
+    "hen (chicken)": [
+      {
+        "record_id": "f88r:2",
+        "ri_tokens": [
+          "sheom",
+          "shekor"
+        ],
+        "score": 0.8077358400671598
+      },
+      {
+        "record_id": "f102v2:4",
+        "ri_tokens": [
+          "oeoikhy"
+        ],
+        "score": 0.8033643202145772
+      },
+      {
+        "record_id": "f89v1:15",
+        "ri_tokens": [
+          "a",
+          "cthody",
+          "olkeeycthy"
+        ],
+        "score": 0.795140193359096
+      },
+      {
+        "record_id": "f58v:25",
+        "ri_tokens": [
+          "okalar"
+        ],
+        "score": 0.7944977722207299
+      },
+      {
+        "record_id": "f10r:11",
+        "ri_tokens": [
+          "rotcho"
+        ],
+        "score": 0.785016092367251
+      }
+    ]
+  },
+  "eoschso_validation": {
+    "found_in_matches": false,
+    "matches": []
+  },
+  "kernel_test_summary": {
+    "total_correct": 40,
+    "total_tests": 60,
+    "accuracy": 0.6666666666666666
+  },
+  "suffix_test_summary": {
+    "correct": 2,
+    "total": 4,
+    "accuracy": 0.5
+  },
+  "verdict": "MODERATE",
+  "verdict_description": "Some validated mappings found",
+  "success_criteria": {
+    "STRONG": "5+ validated mappings with p < 0.05",
+    "MODERATE": "2-4 validated mappings",
+    "WEAK": "Only confirms existing eoschso=chicken",
+    "FAILURE": "No validated mappings"
+  },
+  "key_findings": [
+    "Standard fire degree 2 herbs dont discriminate",
+    "Animal materials with distinctive fire degrees show better discrimination",
+    "Ox blood water shows strongest signal",
+    "PREFIX profile matching adds discriminative power",
+    "eoschso=chicken mapping not reproduced (different methodology)"
+  ],
+  "limitations": [
+    "Many herbs have identical signatures",
+    "Need instruction-level pattern matching for finer discrimination",
+    "PP convergence alone insufficient"
+  ]
+}

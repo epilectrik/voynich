@@ -1,0 +1,31 @@
+{
+  "n_fl_tokens": 5733,
+  "stage_counts": {
+    "TERMINAL": 1161,
+    "LATE": 2132,
+    "FINAL": 597,
+    "MEDIAL": 1419,
+    "INITIAL": 160,
+    "EARLY": 264
+  },
+  "correlations": {
+    "para_ordinal": {
+      "r": -0.8235704154472195,
+      "p": 0.00340585192135606
+    },
+    "line_in_para": {
+      "r": 0.0880680321686973,
+      "p": 0.8088384192428462
+    },
+    "line_in_folio": {
+      "r": -0.7072883199482287,
+      "p": 0.000487232334695251
+    }
+  },
+  "findings": [
+    "PARAGRAPH LEVEL: FL stage DECREASES with paragraph ordinal (r=-0.82, p=0.0034)",
+    "LINE-IN-FOLIO LEVEL: FL stage DECREASES with line ordinal (r=-0.71, p=0.0005)",
+    "First vs last PARAGRAPH: significant difference (p=0.0027)"
+  ],
+  "verdict": "MIXED"
+}

@@ -163,9 +163,9 @@ H(X|prev 2)=0.41 bits (95.9% reduction). Next token nearly predetermined by prio
 
 ## Grammar Architecture (C391-C393)
 
-### C391 - Time-Reversal Symmetry
+### C391 - Conditional Entropy Symmetry
 **Tier:** 2 | **Status:** CLOSED
-H(X|past k) = H(X|future k). Bidirectional adjacency constraints.
+H(X|past k) = H(X|future k) for k=1,2,3 (ratio ~1.00). Grammar encodes bidirectional adjacency constraints - predictability from past equals predictability from future. This is UNLIKE natural language where past context is more informative. **Note:** This measures constraint symmetry, not transition probability symmetry. Individual bigram frequencies P(A→B) vs P(B→A) are uncorrelated (see C886). The grammar has symmetric constraints but directional execution.
 **Source:** SYM
 
 ### C392 - Role-Level Capacity
@@ -214,15 +214,17 @@ This refinement does not introduce a new mechanism or constraint. It clarifies t
 
 ## Hazard Avoidance (C397-C402)
 
-### C397 - QO-Prefix Escape Route
-**Tier:** 2 | **Status:** CLOSED
-qo- tokens are universal escape from hazard sources (25-47%).
+### C397 - QO-Prefix Post-Source Frequency (REVISED)
+**Tier:** 2 | **Status:** CLOSED | **Revised:** 2026-01-31
+After hazard source tokens (which are CHSH-lane tokens), qo-prefixed tokens appear 25-47% of the time. This reflects the normal CHSH→QO lane transition pattern (C643), not hazard escape. When hazards are actually nearby, QO is depleted (C645).
 **Source:** HAV
+**Cross-ref:** C601 (QO 0/19 hazard), C643 (QO-CHSH alternation), C645 (CHSH 75% post-hazard)
 
-### C398 - Escape Role Stratification
-**Tier:** 2 | **Status:** CLOSED
-ENERGY_OPERATOR primary escape (40-67%). CORE_CONTROL secondary (22-32%).
+### C398 - Post-Source Role Distribution (REVISED)
+**Tier:** 2 | **Status:** CLOSED | **Revised:** 2026-01-31
+After hazard source tokens, ENERGY_OPERATOR appears 40-67%, CORE_CONTROL 22-32%. This reflects baseline role frequencies after CHSH tokens. Actual hazard recovery is handled by CHSH (75.2% post-hazard per C645).
 **Source:** HAV
+**Cross-ref:** C645 (CHSH post-hazard dominance)
 
 ### C399 - Safe Precedence Pattern
 **Tier:** 2 | **Status:** CLOSED
@@ -290,14 +292,14 @@ The qo- prefix is enriched near kernel nodes (1.31x) and virtually never line-in
 
 ## Imported Constraints
 
-### C365 - LINK tokens are SPATIALLY UNIFORM within folios and lines: no positional clustering (p=0.005), run lengths match random (z=0.14), line-position uniform (p=0.80); LINK has no positional marking function (LDF, Tier 2)
-**Tier:** 2 | **Status:** CLOSED
-LINK tokens are SPATIALLY UNIFORM within folios and lines: no positional clustering (p=0.005), run lengths match random (z=0.14), line-position uniform (p=0.80); LINK has no positional marking function (LDF, Tier 2)
+### C365 - ~~LINK tokens are SPATIALLY UNIFORM~~ **REFUTED by C805**
+**Tier:** 2 | **Status:** REFUTED | **Superseded by:** C805
+Original claim: LINK spatially uniform within folios and lines (p=0.005 clustering, z=0.14 runs, p=0.80 line-position). **C805 shows significant positional bias:** mean pos 0.476 vs 0.504, first-token 17.2% vs middle 12.4% (chi2=44.1, p<0.0001). LINK shares HT boundary enrichment pattern.
 **Source:** v1.8-import
 
-### C366 - LINK marks GRAMMAR STATE TRANSITIONS: preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x); followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x); p<10^-18; LINK is boundary between monitoring and intervention phases (LDF, Tier 2)
-**Tier:** 2 | **Status:** CLOSED
-LINK marks GRAMMAR STATE TRANSITIONS: preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x); followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x); p<10^-18; LINK is boundary between monitoring and intervention phases (LDF, Tier 2)
+### C366 - LINK marks GRAMMAR STATE TRANSITIONS **REVISED by C804**
+**Tier:** 2 | **Status:** REVISED | **Revised by:** C804
+Original enrichment ratios (1.50x AUXILIARY predecessor, 1.30x FLOW_OPERATOR, 2.70x HIGH_IMPACT successor) **NOT CONFIRMED** with current 5-role ICC taxonomy (C804: pred chi2=5.1 NS, succ chi2=48.2 weak). Qualitative claim (LINK = monitoring/intervention boundary) may still hold but quantitative transition grammar requires revision.
 **Source:** v1.8-import
 
 ### C383 - GLOBAL MORPHOLOGICAL TYPE SYSTEM: Prefixes encode functional type (INTERVENTION vs MONITORING) globally across A, B, and AZC; ch/sh/ok=100% kernel contact in ALL systems, da/sa<5% in ALL systems; LINK affinity patterns identical (da/al attracted, qo/ok avoiding); type system is grammar-independent (A has no sequential grammar but same types); B instantiates types in sequential programs, A instantiates types in non-sequential registry; explains vocabulary sharing without semantic transfer (A-ARCH, Tier 2)

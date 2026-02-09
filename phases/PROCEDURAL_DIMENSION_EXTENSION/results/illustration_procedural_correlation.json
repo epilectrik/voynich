@@ -1,0 +1,48 @@
+{
+  "phase": "PROCEDURAL_DIMENSION_EXTENSION",
+  "test": "illustration_procedural_correlation",
+  "tier": 4,
+  "external_anchor": "Brunschwig material-operation mapping",
+  "sample_sizes": {
+    "root_emphasized_folios": 5,
+    "non_root_folios": 18,
+    "total_common_folios": 23
+  },
+  "test_1_root_ops": {
+    "prediction": "Root illustrations -> higher tch/pch density",
+    "root_ill_mean": 0.027164122427280325,
+    "nonroot_ill_mean": 0.023117324831606292,
+    "p_value": 0.5,
+    "significant": false,
+    "direction_correct": true
+  },
+  "class_profiles": {
+    "ALH": {
+      "n": 6,
+      "root_ops_mean": 0.02275103326266986,
+      "leaf_ops_mean": 0.0
+    },
+    "AF": {
+      "n": 12,
+      "root_ops_mean": 0.023688105450892023,
+      "leaf_ops_mean": 0.0033333039170696695
+    }
+  },
+  "brunschwig_alignment": {
+    "root_ops": [
+      "pch",
+      "tch"
+    ],
+    "leaf_ops": [
+      "lch",
+      "te"
+    ],
+    "mapping": {
+      "te": "GATHER",
+      "pch": "CHOP",
+      "lch": "STRIP",
+      "tch": "POUND",
+      "ksh": "BREAK"
+    }
+  }
+}

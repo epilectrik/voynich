@@ -1,0 +1,905 @@
+{
+  "n_tokens": 334,
+  "top_apparatus_candidates": [
+    {
+      "token": "sor",
+      "score": 0.6993478078982598,
+      "metrics": {
+        "count": 32.0,
+        "n_folios": 23.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.27710843373493976,
+        "mean_pos": 0.09079861111111112,
+        "line_initial_rate": 0.78125,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "daiin",
+      "score": 0.6733408692688805,
+      "metrics": {
+        "count": 314.0,
+        "n_folios": 76.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.9156626506024096,
+        "mean_pos": 0.412840584973225,
+        "line_initial_rate": 0.27070063694267515,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "CORE_CONTROL"
+      }
+    },
+    {
+      "token": "pol",
+      "score": 0.6586510781417683,
+      "metrics": {
+        "count": 22.0,
+        "n_folios": 14.0,
+        "n_sections": 3.0,
+        "folio_coverage": 0.1686746987951807,
+        "mean_pos": 0.11884756657483932,
+        "line_initial_rate": 0.7727272727272727,
+        "para_initial_rate": 0.7727272727272727,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "saiin",
+      "score": 0.6567897261690617,
+      "metrics": {
+        "count": 99.0,
+        "n_folios": 48.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.5783132530120482,
+        "mean_pos": 0.3107939759454911,
+        "line_initial_rate": 0.48484848484848486,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "sain",
+      "score": 0.6334277574204494,
+      "metrics": {
+        "count": 61.0,
+        "n_folios": 33.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.39759036144578314,
+        "mean_pos": 0.26531232883691896,
+        "line_initial_rate": 0.5573770491803278,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "sol",
+      "score": 0.606792081746901,
+      "metrics": {
+        "count": 48.0,
+        "n_folios": 24.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.2891566265060241,
+        "mean_pos": 0.212274531024531,
+        "line_initial_rate": 0.5416666666666666,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "y",
+      "score": 0.5967504759043643,
+      "metrics": {
+        "count": 66.0,
+        "n_folios": 42.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.5060240963855421,
+        "mean_pos": 0.3889201286928559,
+        "line_initial_rate": 0.4090909090909091,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "tol",
+      "score": 0.5769926081136139,
+      "metrics": {
+        "count": 23.0,
+        "n_folios": 18.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.21686746987951808,
+        "mean_pos": 0.22294685990338167,
+        "line_initial_rate": 0.5217391304347826,
+        "para_initial_rate": 0.5217391304347826,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "or",
+      "score": 0.5692150812849994,
+      "metrics": {
+        "count": 250.0,
+        "n_folios": 70.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.8433734939759037,
+        "mean_pos": 0.484984834538858,
+        "line_initial_rate": 0.044,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "dar",
+      "score": 0.5669740821115239,
+      "metrics": {
+        "count": 188.0,
+        "n_folios": 65.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.7831325301204819,
+        "mean_pos": 0.5073815761124648,
+        "line_initial_rate": 0.11170212765957446,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FLOW_OPERATOR"
+      }
+    },
+    {
+      "token": "sar",
+      "score": 0.5656792272873932,
+      "metrics": {
+        "count": 49.0,
+        "n_folios": 30.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.3614457831325301,
+        "mean_pos": 0.3872419260169313,
+        "line_initial_rate": 0.4489795918367347,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "ol",
+      "score": 0.5584951187754938,
+      "metrics": {
+        "count": 421.0,
+        "n_folios": 68.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.8192771084337349,
+        "mean_pos": 0.5112619215047245,
+        "line_initial_rate": 0.0498812351543943,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "CORE_CONTROL"
+      }
+    },
+    {
+      "token": "dain",
+      "score": 0.5577820210851452,
+      "metrics": {
+        "count": 113.0,
+        "n_folios": 42.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.5060240963855421,
+        "mean_pos": 0.42145347278090634,
+        "line_initial_rate": 0.3008849557522124,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FLOW_OPERATOR"
+      }
+    },
+    {
+      "token": "dair",
+      "score": 0.5557632987999352,
+      "metrics": {
+        "count": 49.0,
+        "n_folios": 30.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.3614457831325301,
+        "mean_pos": 0.34498483376034395,
+        "line_initial_rate": 0.3877551020408163,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FLOW_OPERATOR"
+      }
+    },
+    {
+      "token": "aiin",
+      "score": 0.5461366597222319,
+      "metrics": {
+        "count": 351.0,
+        "n_folios": 70.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.8433734939759037,
+        "mean_pos": 0.5343769423526957,
+        "line_initial_rate": 0.0,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "ar",
+      "score": 0.5392096849188923,
+      "metrics": {
+        "count": 248.0,
+        "n_folios": 68.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.8192771084337349,
+        "mean_pos": 0.5449640122496894,
+        "line_initial_rate": 0.008064516129032258,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FLOW_OPERATOR"
+      }
+    },
+    {
+      "token": "tar",
+      "score": 0.5277163692101534,
+      "metrics": {
+        "count": 38.0,
+        "n_folios": 30.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.3614457831325301,
+        "mean_pos": 0.41674472338487023,
+        "line_initial_rate": 0.34210526315789475,
+        "para_initial_rate": 0.34210526315789475,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "dshedy",
+      "score": 0.5112888414327504,
+      "metrics": {
+        "count": 36.0,
+        "n_folios": 25.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.30120481927710846,
+        "mean_pos": 0.10369635508524395,
+        "line_initial_rate": 0.8055555555555556,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 1.0,
+        "e_per_occ": 1.0,
+        "total_kernel": 2.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "o",
+      "score": 0.5023690886964671,
+      "metrics": {
+        "count": 29.0,
+        "n_folios": 19.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.2289156626506024,
+        "mean_pos": 0.2970452918728781,
+        "line_initial_rate": 0.3103448275862069,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "taiin",
+      "score": 0.495839207398779,
+      "metrics": {
+        "count": 27.0,
+        "n_folios": 20.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.24096385542168675,
+        "mean_pos": 0.38224974613863505,
+        "line_initial_rate": 0.3333333333333333,
+        "para_initial_rate": 0.3333333333333333,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "sair",
+      "score": 0.4871024985723781,
+      "metrics": {
+        "count": 20.0,
+        "n_folios": 16.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.1927710843373494,
+        "mean_pos": 0.37864413364413363,
+        "line_initial_rate": 0.35,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "dal",
+      "score": 0.47725516590298794,
+      "metrics": {
+        "count": 130.0,
+        "n_folios": 53.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.6385542168674698,
+        "mean_pos": 0.6177093419401111,
+        "line_initial_rate": 0.03076923076923077,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FLOW_OPERATOR"
+      }
+    },
+    {
+      "token": "dor",
+      "score": 0.47396060827331365,
+      "metrics": {
+        "count": 22.0,
+        "n_folios": 18.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.21686746987951808,
+        "mean_pos": 0.4327708907254361,
+        "line_initial_rate": 0.3181818181818182,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "dol",
+      "score": 0.46875281751610604,
+      "metrics": {
+        "count": 51.0,
+        "n_folios": 32.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.3855421686746988,
+        "mean_pos": 0.44043151837269484,
+        "line_initial_rate": 0.13725490196078433,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "otar",
+      "score": 0.4678536221927962,
+      "metrics": {
+        "count": 114.0,
+        "n_folios": 52.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.6265060240963856,
+        "mean_pos": 0.6136488199174395,
+        "line_initial_rate": 0.008771929824561403,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "sal",
+      "score": 0.46749457904879593,
+      "metrics": {
+        "count": 30.0,
+        "n_folios": 21.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.25301204819277107,
+        "mean_pos": 0.44204517704517704,
+        "line_initial_rate": 0.26666666666666666,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "qol",
+      "score": 0.4629432741933781,
+      "metrics": {
+        "count": 145.0,
+        "n_folios": 32.0,
+        "n_sections": 3.0,
+        "folio_coverage": 0.3855421686746988,
+        "mean_pos": 0.4291141234244682,
+        "line_initial_rate": 0.1103448275862069,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "al",
+      "score": 0.4584574367097348,
+      "metrics": {
+        "count": 186.0,
+        "n_folios": 49.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.5903614457831325,
+        "mean_pos": 0.5932549851260247,
+        "line_initial_rate": 0.0,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FLOW_OPERATOR"
+      }
+    },
+    {
+      "token": "s",
+      "score": 0.45835361148159515,
+      "metrics": {
+        "count": 53.0,
+        "n_folios": 36.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.43373493975903615,
+        "mean_pos": 0.5286456729852955,
+        "line_initial_rate": 0.11320754716981132,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "tchedy",
+      "score": 0.4446146925363793,
+      "metrics": {
+        "count": 32.0,
+        "n_folios": 25.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.30120481927710846,
+        "mean_pos": 0.16623376623376623,
+        "line_initial_rate": 0.625,
+        "para_initial_rate": 0.625,
+        "k_per_occ": 0.0,
+        "h_per_occ": 1.0,
+        "e_per_occ": 1.0,
+        "total_kernel": 2.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "ain",
+      "score": 0.43602446991268096,
+      "metrics": {
+        "count": 79.0,
+        "n_folios": 39.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.46987951807228917,
+        "mean_pos": 0.524696927545029,
+        "line_initial_rate": 0.0,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "otal",
+      "score": 0.43262839589544466,
+      "metrics": {
+        "count": 103.0,
+        "n_folios": 43.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.5180722891566265,
+        "mean_pos": 0.6285295610538328,
+        "line_initial_rate": 0.009708737864077669,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "qokaiin",
+      "score": 0.43247443226860904,
+      "metrics": {
+        "count": 240.0,
+        "n_folios": 54.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.6506024096385542,
+        "mean_pos": 0.45728145311478646,
+        "line_initial_rate": 0.09583333333333334,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 1.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 1.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "dy",
+      "score": 0.4295921070443012,
+      "metrics": {
+        "count": 109.0,
+        "n_folios": 49.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.5903614457831325,
+        "mean_pos": 0.737581633453193,
+        "line_initial_rate": 0.0,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "dchedy",
+      "score": 0.4287757757637276,
+      "metrics": {
+        "count": 26.0,
+        "n_folios": 23.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.27710843373493976,
+        "mean_pos": 0.19486069486069488,
+        "line_initial_rate": 0.6153846153846154,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 1.0,
+        "e_per_occ": 1.0,
+        "total_kernel": 2.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "qotaiin",
+      "score": 0.42674309952610834,
+      "metrics": {
+        "count": 66.0,
+        "n_folios": 31.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.37349397590361444,
+        "mean_pos": 0.5174345571339708,
+        "line_initial_rate": 0.06060606060606061,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "okaiin",
+      "score": 0.42332097298857196,
+      "metrics": {
+        "count": 168.0,
+        "n_folios": 58.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.6987951807228916,
+        "mean_pos": 0.503016477570049,
+        "line_initial_rate": 0.047619047619047616,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 1.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 1.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "otaiin",
+      "score": 0.4232072435375629,
+      "metrics": {
+        "count": 108.0,
+        "n_folios": 38.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.4578313253012048,
+        "mean_pos": 0.5984885480417708,
+        "line_initial_rate": 0.018518518518518517,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "qotar",
+      "score": 0.41824402198192434,
+      "metrics": {
+        "count": 61.0,
+        "n_folios": 35.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.42168674698795183,
+        "mean_pos": 0.5904903384411583,
+        "line_initial_rate": 0.03278688524590164,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "otain",
+      "score": 0.4173833985558162,
+      "metrics": {
+        "count": 92.0,
+        "n_folios": 39.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.46987951807228917,
+        "mean_pos": 0.6179022843293529,
+        "line_initial_rate": 0.0,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "air",
+      "score": 0.4156070786353947,
+      "metrics": {
+        "count": 48.0,
+        "n_folios": 31.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.37349397590361444,
+        "mean_pos": 0.513455570678448,
+        "line_initial_rate": 0.020833333333333332,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "orain",
+      "score": 0.41501060171421617,
+      "metrics": {
+        "count": 25.0,
+        "n_folios": 18.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.21686746987951808,
+        "mean_pos": 0.5502481962481963,
+        "line_initial_rate": 0.2,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "olaiin",
+      "score": 0.4118909587159724,
+      "metrics": {
+        "count": 34.0,
+        "n_folios": 26.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.3132530120481928,
+        "mean_pos": 0.49866001861007414,
+        "line_initial_rate": 0.058823529411764705,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "ytaiin",
+      "score": 0.41007803710319657,
+      "metrics": {
+        "count": 30.0,
+        "n_folios": 13.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.1566265060240964,
+        "mean_pos": 0.43454957352016166,
+        "line_initial_rate": 0.16666666666666666,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "odaiin",
+      "score": 0.40901201766608075,
+      "metrics": {
+        "count": 30.0,
+        "n_folios": 22.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.26506024096385544,
+        "mean_pos": 0.5025302731153795,
+        "line_initial_rate": 0.1,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "AUXILIARY"
+      }
+    },
+    {
+      "token": "qokar",
+      "score": 0.4073971059671526,
+      "metrics": {
+        "count": 137.0,
+        "n_folios": 55.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.6626506024096386,
+        "mean_pos": 0.500785994216651,
+        "line_initial_rate": 0.029197080291970802,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 1.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 1.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "l",
+      "score": 0.40625088117646585,
+      "metrics": {
+        "count": 34.0,
+        "n_folios": 20.0,
+        "n_sections": 4.0,
+        "folio_coverage": 0.24096385542168675,
+        "mean_pos": 0.5066619654854949,
+        "line_initial_rate": 0.11764705882352941,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "FREQUENT_OPERATOR"
+      }
+    },
+    {
+      "token": "qotain",
+      "score": 0.4053809722902222,
+      "metrics": {
+        "count": 62.0,
+        "n_folios": 30.0,
+        "n_sections": 3.0,
+        "folio_coverage": 0.3614457831325301,
+        "mean_pos": 0.5636509100218777,
+        "line_initial_rate": 0.03225806451612903,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "qotal",
+      "score": 0.4040512421326243,
+      "metrics": {
+        "count": 53.0,
+        "n_folios": 31.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.37349397590361444,
+        "mean_pos": 0.5682866399847532,
+        "line_initial_rate": 0.018867924528301886,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 0.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 0.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    },
+    {
+      "token": "qokal",
+      "score": 0.402473564066799,
+      "metrics": {
+        "count": 167.0,
+        "n_folios": 51.0,
+        "n_sections": 5.0,
+        "folio_coverage": 0.6144578313253012,
+        "mean_pos": 0.5081213218635378,
+        "line_initial_rate": 0.0658682634730539,
+        "para_initial_rate": 0.0,
+        "k_per_occ": 1.0,
+        "h_per_occ": 0.0,
+        "e_per_occ": 0.0,
+        "total_kernel": 1.0,
+        "role": "ENERGY_OPERATOR"
+      }
+    }
+  ]
+}

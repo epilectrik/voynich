@@ -1,0 +1,19 @@
+{
+  "a_middles_count": 1013,
+  "b_zone_vocab": {
+    "early": 648,
+    "middle": 599,
+    "late": 706
+  },
+  "a_coverage_of_b_zones": {
+    "early": 0.4398148148148148,
+    "middle": 0.4691151919866444,
+    "late": 0.3937677053824363
+  },
+  "a_token_rates_in_b_zones": {
+    "early": 0.9388339406559084,
+    "middle": 0.9429347826086957,
+    "late": 0.9293336803748048
+  },
+  "verdict": "SUPPORTS"
+}

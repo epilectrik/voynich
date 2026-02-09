@@ -1,0 +1,28 @@
+{
+  "test": "Monitoring Orthogonality",
+  "n_folios": 82,
+  "correlations": {
+    "LINK_vs_Kernel": {
+      "rho": 0.15075672244861618,
+      "p": 0.17639346206461007
+    },
+    "LINK_vs_FQ": {
+      "rho": -0.17342940494247042,
+      "p": 0.11918737565306871
+    },
+    "Kernel_vs_FQ": {
+      "rho": -0.5003510032235777,
+      "p": 1.696019715814237e-06
+    }
+  },
+  "orthogonal_pairs": [
+    "LINK_vs_Kernel",
+    "LINK_vs_FQ"
+  ],
+  "verdict": "SUPPORT",
+  "summary": {
+    "mean_link": 0.03173301683070796,
+    "mean_fq": 0.13606722494688517,
+    "mean_kernel": 0.6811684328622136
+  }
+}

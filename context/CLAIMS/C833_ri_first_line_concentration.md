@@ -8,6 +8,12 @@
 
 RI tokens concentrate 1.85x in the first line of paragraphs compared to subsequent lines. This pattern exists at paragraph level but NOT at folio level (1.03x ratio for first paragraph vs others).
 
+> **Refinement (2026-02-01):** Systematic annotation of 114 Currier A folios reveals RI tokens appear outside L1 in **57 folios (50%)**. This establishes that L1 concentration is a **preference, not a requirement**. RI has "header affinity" but can appear anywhere. Non-L1 RI tokens should be flagged during annotation (C833 FLAG) but are structurally valid.
+
+> **Scope Clarification (2026-01-30):** This constraint correctly identifies paragraph as the
+> A-internal record unit where RI structure manifests. For A-B vocabulary correspondence,
+> C885 establishes that folio is the operational unit (81% coverage vs paragraph's 58%).
+
 ## Evidence
 
 From t15_granularity_validation.py:

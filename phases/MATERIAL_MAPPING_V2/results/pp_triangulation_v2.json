@@ -1,0 +1,7177 @@
+{
+  "total_paragraphs": 342,
+  "with_initial_ri": 79,
+  "without_initial_ri": 263,
+  "ri_middles_count": 609,
+  "pp_middles_count": 404,
+  "profiles": [
+    {
+      "para_id": "A_001",
+      "total_tokens": 44,
+      "ri_count": 4,
+      "pp_count": 35,
+      "infra_count": 5,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "fachys",
+          "middle": "fachy"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "fachys",
+          "middle": "fachy"
+        },
+        {
+          "word": "cthres",
+          "middle": "hre"
+        },
+        {
+          "word": "syaiir",
+          "middle": "syaii"
+        },
+        {
+          "word": "cthoary",
+          "middle": "hoa"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "ykal",
+          "middle": "al"
+        },
+        {
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "word": "ataiin",
+          "middle": "at"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "shory",
+          "middle": "o"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "kor",
+          "middle": "r"
+        },
+        {
+          "word": "sholdy",
+          "middle": "ol"
+        },
+        {
+          "word": "ckhar",
+          "middle": "ckh"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "kair",
+          "middle": "i"
+        },
+        {
+          "word": "chtaiin",
+          "middle": "t"
+        },
+        {
+          "word": "shar",
+          "middle": "ar"
+        },
+        {
+          "word": "are",
+          "middle": "e"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "sheky",
+          "middle": "ek"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "shod",
+          "middle": "od"
+        },
+        {
+          "word": "cthes",
+          "middle": "he"
+        },
+        {
+          "word": "sa",
+          "middle": "sa"
+        },
+        {
+          "word": "ooiin",
+          "middle": "o"
+        },
+        {
+          "word": "oteey",
+          "middle": "eey"
+        },
+        {
+          "word": "oteos",
+          "middle": "eo"
+        },
+        {
+          "word": "roloty",
+          "middle": "ot"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "okan",
+          "middle": "an"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        },
+        {
+          "word": "cthaiin",
+          "middle": "h"
+        },
+        {
+          "word": "cphar",
+          "middle": "cph"
+        },
+        {
+          "word": "cfhaiin",
+          "middle": "cfh"
+        }
+      ]
+    },
+    {
+      "para_id": "A_002",
+      "total_tokens": 24,
+      "ri_count": 3,
+      "pp_count": 19,
+      "infra_count": 2,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "oydar",
+          "middle": "oyd"
+        },
+        {
+          "word": "cfhoaiin",
+          "middle": "cfho"
+        },
+        {
+          "word": "oschy",
+          "middle": "osc"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "ydaraishy",
+          "middle": "rais"
+        },
+        {
+          "word": "odar",
+          "middle": "od"
+        },
+        {
+          "word": "o",
+          "middle": "o"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cphoy",
+          "middle": "cpho"
+        },
+        {
+          "word": "sh",
+          "middle": "sh"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "shodary",
+          "middle": "oda"
+        },
+        {
+          "word": "yshey",
+          "middle": "ey"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "okchoy",
+          "middle": "cho"
+        },
+        {
+          "word": "otchol",
+          "middle": "ch"
+        },
+        {
+          "word": "chocthy",
+          "middle": "oct"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "kos",
+          "middle": "s"
+        },
+        {
+          "word": "shos",
+          "middle": "o"
+        },
+        {
+          "word": "cfhol",
+          "middle": "cfh"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        }
+      ]
+    },
+    {
+      "para_id": "A_003",
+      "total_tokens": 86,
+      "ri_count": 10,
+      "pp_count": 65,
+      "infra_count": 11,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cphesaiin",
+          "middle": "cphes"
+        },
+        {
+          "word": "cphodales",
+          "middle": "cphodale"
+        },
+        {
+          "word": "sckhey",
+          "middle": "sckh"
+        },
+        {
+          "word": "cphodaiils",
+          "middle": "cphodaiil"
+        },
+        {
+          "word": "ckeor",
+          "middle": "cke"
+        },
+        {
+          "word": "dydyd",
+          "middle": "dydyd"
+        },
+        {
+          "word": "yto",
+          "middle": "yto"
+        },
+        {
+          "word": "cphealy",
+          "middle": "cphea"
+        },
+        {
+          "word": "cthols",
+          "middle": "hol"
+        },
+        {
+          "word": "dlocta",
+          "middle": "dlocta"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "os",
+          "middle": "o"
+        },
+        {
+          "word": "teody",
+          "middle": "o"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "cphey",
+          "middle": "cph"
+        },
+        {
+          "word": "ytain",
+          "middle": "in"
+        },
+        {
+          "word": "shoshy",
+          "middle": "os"
+        },
+        {
+          "word": "oksho",
+          "middle": "sho"
+        },
+        {
+          "word": "kshoy",
+          "middle": "o"
+        },
+        {
+          "word": "otairin",
+          "middle": "air"
+        },
+        {
+          "word": "oteol",
+          "middle": "eol"
+        },
+        {
+          "word": "okan",
+          "middle": "an"
+        },
+        {
+          "word": "shodain",
+          "middle": "od"
+        },
+        {
+          "word": "shoy",
+          "middle": "o"
+        },
+        {
+          "word": "ckhey",
+          "middle": "ckh"
+        },
+        {
+          "word": "kodaiin",
+          "middle": "d"
+        },
+        {
+          "word": "cphy",
+          "middle": "cp"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "she",
+          "middle": "e"
+        },
+        {
+          "word": "oldain",
+          "middle": "d"
+        },
+        {
+          "word": "d",
+          "middle": "d"
+        },
+        {
+          "word": "oiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "odaiin",
+          "middle": "od"
+        },
+        {
+          "word": "chodain",
+          "middle": "od"
+        },
+        {
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "word": "okain",
+          "middle": "ain"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "kod",
+          "middle": "d"
+        },
+        {
+          "word": "shckhey",
+          "middle": "ckh"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "kol",
+          "middle": "l"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "kor",
+          "middle": "r"
+        },
+        {
+          "word": "chal",
+          "middle": "al"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shodan",
+          "middle": "od"
+        },
+        {
+          "word": "kshy",
+          "middle": "y"
+        },
+        {
+          "word": "kchy",
+          "middle": "y"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "kchom",
+          "middle": "om"
+        },
+        {
+          "word": "ycho",
+          "middle": "o"
+        },
+        {
+          "word": "tchey",
+          "middle": "ey"
+        },
+        {
+          "word": "chokain",
+          "middle": "ok"
+        },
+        {
+          "word": "sheo",
+          "middle": "eo"
+        },
+        {
+          "word": "pshol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "she",
+          "middle": "e"
+        },
+        {
+          "word": "kodshey",
+          "middle": "dsh"
+        },
+        {
+          "word": "ckhyds",
+          "middle": "ckhyd"
+        },
+        {
+          "word": "dchar",
+          "middle": "ar"
+        },
+        {
+          "word": "shcthaiin",
+          "middle": "cth"
+        },
+        {
+          "word": "okaiir",
+          "middle": "aii"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "rchy",
+          "middle": "y"
+        },
+        {
+          "word": "potol",
+          "middle": "t"
+        },
+        {
+          "word": "shok",
+          "middle": "ok"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "ckhey",
+          "middle": "ckh"
+        }
+      ]
+    },
+    {
+      "para_id": "A_004",
+      "total_tokens": 2,
+      "ri_count": 0,
+      "pp_count": 1,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "otol",
+          "middle": "ol"
+        }
+      ]
+    },
+    {
+      "para_id": "A_005",
+      "total_tokens": 45,
+      "ri_count": 2,
+      "pp_count": 35,
+      "infra_count": 8,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "tshodeesy",
+          "middle": "odees"
+        },
+        {
+          "word": "ctholdar",
+          "middle": "hold"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "cpho",
+          "middle": "cpho"
+        },
+        {
+          "word": "shaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "shokcheey",
+          "middle": "okch"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "pydeey",
+          "middle": "pyd"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "ro",
+          "middle": "ro"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthal",
+          "middle": "h"
+        },
+        {
+          "word": "shear",
+          "middle": "e"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "shoaiin",
+          "middle": "o"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "far",
+          "middle": "f"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "ycheey",
+          "middle": "eey"
+        },
+        {
+          "word": "okay",
+          "middle": "a"
+        },
+        {
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "word": "okchey",
+          "middle": "ch"
+        },
+        {
+          "word": "kokaiin",
+          "middle": "k"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "koshey",
+          "middle": "sh"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "okchey",
+          "middle": "ch"
+        },
+        {
+          "word": "keey",
+          "middle": "ey"
+        },
+        {
+          "word": "keey",
+          "middle": "ey"
+        },
+        {
+          "word": "chtor",
+          "middle": "t"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chok",
+          "middle": "ok"
+        },
+        {
+          "word": "choty",
+          "middle": "ot"
+        },
+        {
+          "word": "chotey",
+          "middle": "ot"
+        }
+      ]
+    },
+    {
+      "para_id": "A_006",
+      "total_tokens": 1,
+      "ri_count": 0,
+      "pp_count": 1,
+      "infra_count": 0,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "dchaiin",
+          "middle": "aiin"
+        }
+      ]
+    },
+    {
+      "para_id": "A_007",
+      "total_tokens": 30,
+      "ri_count": 0,
+      "pp_count": 25,
+      "infra_count": 5,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "kchsy",
+          "middle": "s"
+        },
+        {
+          "word": "chadaiin",
+          "middle": "ad"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "oltchey",
+          "middle": "tch"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "cfhar",
+          "middle": "cfh"
+        },
+        {
+          "word": "am",
+          "middle": "am"
+        },
+        {
+          "word": "yteeay",
+          "middle": "ea"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "ochy",
+          "middle": "oc"
+        },
+        {
+          "word": "dcho",
+          "middle": "o"
+        },
+        {
+          "word": "lkody",
+          "middle": "o"
+        },
+        {
+          "word": "okodar",
+          "middle": "od"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "ckho",
+          "middle": "ckho"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "dksheey",
+          "middle": "dksh"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "kotchody",
+          "middle": "tcho"
+        },
+        {
+          "word": "chokeo",
+          "middle": "okeo"
+        },
+        {
+          "word": "chokody",
+          "middle": "oko"
+        }
+      ]
+    },
+    {
+      "para_id": "A_008",
+      "total_tokens": 60,
+      "ri_count": 0,
+      "pp_count": 49,
+      "infra_count": 11,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "potoy",
+          "middle": "to"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cphoal",
+          "middle": "cpho"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "tody",
+          "middle": "dy"
+        },
+        {
+          "word": "otoaiin",
+          "middle": "o"
+        },
+        {
+          "word": "shoshy",
+          "middle": "os"
+        },
+        {
+          "word": "choky",
+          "middle": "ok"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "okal",
+          "middle": "al"
+        },
+        {
+          "word": "chodo",
+          "middle": "odo"
+        },
+        {
+          "word": "lol",
+          "middle": "l"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "qo",
+          "middle": "qo"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "choeee",
+          "middle": "oeee"
+        },
+        {
+          "word": "cheol",
+          "middle": "eol"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "ykol",
+          "middle": "ol"
+        },
+        {
+          "word": "ykol",
+          "middle": "ol"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "lchody",
+          "middle": "o"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "kol",
+          "middle": "l"
+        },
+        {
+          "word": "kechy",
+          "middle": "c"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "ky",
+          "middle": "k"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "ky",
+          "middle": "k"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "dchor",
+          "middle": "or"
+        },
+        {
+          "word": "otcho",
+          "middle": "cho"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "taor",
+          "middle": "or"
+        },
+        {
+          "word": "chotchey",
+          "middle": "otch"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "schody",
+          "middle": "o"
+        },
+        {
+          "word": "pol",
+          "middle": "l"
+        },
+        {
+          "word": "chodar",
+          "middle": "od"
+        }
+      ]
+    },
+    {
+      "para_id": "A_009",
+      "total_tokens": 46,
+      "ri_count": 4,
+      "pp_count": 33,
+      "infra_count": 9,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "kydainy",
+          "middle": "kydain"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "kydainy",
+          "middle": "kydain"
+        },
+        {
+          "word": "ckholsy",
+          "middle": "ckhols"
+        },
+        {
+          "word": "dorchory",
+          "middle": "rcho"
+        },
+        {
+          "word": "chtod",
+          "middle": "tod"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "ypchol",
+          "middle": "ol"
+        },
+        {
+          "word": "otchal",
+          "middle": "ch"
+        },
+        {
+          "word": "ypchaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chkar",
+          "middle": "k"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "cth",
+          "middle": "h"
+        },
+        {
+          "word": "qotaiin",
+          "middle": "t"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "ydy",
+          "middle": "y"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chaindy",
+          "middle": "ain"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "cphy",
+          "middle": "cp"
+        },
+        {
+          "word": "chokaiin",
+          "middle": "ok"
+        },
+        {
+          "word": "d",
+          "middle": "d"
+        },
+        {
+          "word": "otochor",
+          "middle": "och"
+        },
+        {
+          "word": "al",
+          "middle": "al"
+        },
+        {
+          "word": "shodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "ytchaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "dkol",
+          "middle": "l"
+        },
+        {
+          "word": "ytoldy",
+          "middle": "l"
+        },
+        {
+          "word": "dchol",
+          "middle": "ol"
+        },
+        {
+          "word": "dchy",
+          "middle": "y"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        }
+      ]
+    },
+    {
+      "para_id": "A_010",
+      "total_tokens": 53,
+      "ri_count": 2,
+      "pp_count": 39,
+      "infra_count": 12,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "kydain",
+          "middle": "kyd"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "kydain",
+          "middle": "kyd"
+        },
+        {
+          "word": "dlssho",
+          "middle": "dlssho"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "shaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "qoy",
+          "middle": "y"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "fodan",
+          "middle": "fod"
+        },
+        {
+          "word": "yksh",
+          "middle": "sh"
+        },
+        {
+          "word": "olsheey",
+          "middle": "sh"
+        },
+        {
+          "word": "kol",
+          "middle": "l"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "qokey",
+          "middle": "k"
+        },
+        {
+          "word": "ykody",
+          "middle": "o"
+        },
+        {
+          "word": "so",
+          "middle": "so"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "yky",
+          "middle": "y"
+        },
+        {
+          "word": "qoky",
+          "middle": "k"
+        },
+        {
+          "word": "cholaiin",
+          "middle": "ol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "sheky",
+          "middle": "ek"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "keol",
+          "middle": "ol"
+        },
+        {
+          "word": "ychain",
+          "middle": "ain"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "shan",
+          "middle": "an"
+        },
+        {
+          "word": "olsaiin",
+          "middle": "s"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "ckhor",
+          "middle": "ckh"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "yor",
+          "middle": "y"
+        },
+        {
+          "word": "an",
+          "middle": "an"
+        },
+        {
+          "word": "chan",
+          "middle": "an"
+        },
+        {
+          "word": "chety",
+          "middle": "et"
+        },
+        {
+          "word": "chyky",
+          "middle": "yk"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "ykeey",
+          "middle": "eey"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "chcthy",
+          "middle": "ct"
+        }
+      ]
+    },
+    {
+      "para_id": "A_011",
+      "total_tokens": 30,
+      "ri_count": 0,
+      "pp_count": 26,
+      "infra_count": 4,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "kooiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "cheo",
+          "middle": "eo"
+        },
+        {
+          "word": "pchor",
+          "middle": "or"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "o",
+          "middle": "o"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "shty",
+          "middle": "t"
+        },
+        {
+          "word": "kcho",
+          "middle": "o"
+        },
+        {
+          "word": "kchy",
+          "middle": "y"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "qotcho",
+          "middle": "tcho"
+        },
+        {
+          "word": "loeees",
+          "middle": "loeee"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "otchy",
+          "middle": "c"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "lshy",
+          "middle": "y"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "chodain",
+          "middle": "od"
+        },
+        {
+          "word": "chcthy",
+          "middle": "ct"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "cholo",
+          "middle": "olo"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        }
+      ]
+    },
+    {
+      "para_id": "A_012",
+      "total_tokens": 31,
+      "ri_count": 1,
+      "pp_count": 23,
+      "infra_count": 7,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "chokoishe",
+          "middle": "okoishe"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "kchor",
+          "middle": "or"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "chckhoy",
+          "middle": "ckho"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "keol",
+          "middle": "ol"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "chty",
+          "middle": "t"
+        },
+        {
+          "word": "otchor",
+          "middle": "ch"
+        },
+        {
+          "word": "chan",
+          "middle": "an"
+        },
+        {
+          "word": "chotchey",
+          "middle": "otch"
+        },
+        {
+          "word": "qoteeey",
+          "middle": "te"
+        },
+        {
+          "word": "chokeos",
+          "middle": "okeo"
+        },
+        {
+          "word": "chees",
+          "middle": "ee"
+        },
+        {
+          "word": "chr",
+          "middle": "r"
+        },
+        {
+          "word": "cheaiin",
+          "middle": "e"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cheol",
+          "middle": "eol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        }
+      ]
+    },
+    {
+      "para_id": "A_013",
+      "total_tokens": 48,
+      "ri_count": 0,
+      "pp_count": 41,
+      "infra_count": 7,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "tsheos",
+          "middle": "eo"
+        },
+        {
+          "word": "qopal",
+          "middle": "p"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "ycheor",
+          "middle": "e"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "qotcham",
+          "middle": "tch"
+        },
+        {
+          "word": "cham",
+          "middle": "am"
+        },
+        {
+          "word": "ochor",
+          "middle": "och"
+        },
+        {
+          "word": "qocheor",
+          "middle": "che"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "schey",
+          "middle": "ey"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chal",
+          "middle": "al"
+        },
+        {
+          "word": "cham",
+          "middle": "am"
+        },
+        {
+          "word": "cham",
+          "middle": "am"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "qokol",
+          "middle": "k"
+        },
+        {
+          "word": "chololy",
+          "middle": "olo"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "cham",
+          "middle": "am"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "ychtaiin",
+          "middle": "t"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthom",
+          "middle": "h"
+        },
+        {
+          "word": "otal",
+          "middle": "al"
+        },
+        {
+          "word": "otchol",
+          "middle": "ch"
+        },
+        {
+          "word": "qodaiin",
+          "middle": "d"
+        },
+        {
+          "word": "chom",
+          "middle": "om"
+        },
+        {
+          "word": "shom",
+          "middle": "om"
+        },
+        {
+          "word": "ysheor",
+          "middle": "e"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "sheoldam",
+          "middle": "eold"
+        },
+        {
+          "word": "otchody",
+          "middle": "cho"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthom",
+          "middle": "h"
+        }
+      ]
+    },
+    {
+      "para_id": "A_014",
+      "total_tokens": 19,
+      "ri_count": 1,
+      "pp_count": 17,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "qoschodam",
+          "middle": "schod"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pcheol",
+          "middle": "eol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "sheol",
+          "middle": "eol"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "okadaiin",
+          "middle": "ad"
+        },
+        {
+          "word": "qokchor",
+          "middle": "kch"
+        },
+        {
+          "word": "octhy",
+          "middle": "oct"
+        },
+        {
+          "word": "qokeey",
+          "middle": "k"
+        },
+        {
+          "word": "qot",
+          "middle": "t"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "qokody",
+          "middle": "ko"
+        },
+        {
+          "word": "qokchey",
+          "middle": "kch"
+        },
+        {
+          "word": "cheody",
+          "middle": "eo"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "qodair",
+          "middle": "dai"
+        },
+        {
+          "word": "okeey",
+          "middle": "eey"
+        },
+        {
+          "word": "qokeey",
+          "middle": "k"
+        }
+      ]
+    },
+    {
+      "para_id": "A_015",
+      "total_tokens": 23,
+      "ri_count": 2,
+      "pp_count": 16,
+      "infra_count": 5,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "tsheoarom",
+          "middle": "eoar"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "tsheoarom",
+          "middle": "eoar"
+        },
+        {
+          "word": "ekshy",
+          "middle": "eks"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "olchsy",
+          "middle": "chs"
+        },
+        {
+          "word": "chom",
+          "middle": "om"
+        },
+        {
+          "word": "otchom",
+          "middle": "ch"
+        },
+        {
+          "word": "oporar",
+          "middle": "opor"
+        },
+        {
+          "word": "oteol",
+          "middle": "eol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "cheol",
+          "middle": "eol"
+        },
+        {
+          "word": "qokeom",
+          "middle": "ke"
+        },
+        {
+          "word": "qokol",
+          "middle": "k"
+        },
+        {
+          "word": "okeom",
+          "middle": "e"
+        },
+        {
+          "word": "yteody",
+          "middle": "o"
+        },
+        {
+          "word": "qokeeo",
+          "middle": "keeo"
+        }
+      ]
+    },
+    {
+      "para_id": "A_016",
+      "total_tokens": 24,
+      "ri_count": 0,
+      "pp_count": 23,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "pcheoldom",
+          "middle": "eold"
+        },
+        {
+          "word": "shodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "qopchor",
+          "middle": "pch"
+        },
+        {
+          "word": "qopol",
+          "middle": "p"
+        },
+        {
+          "word": "opchol",
+          "middle": "opch"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "otolom",
+          "middle": "ol"
+        },
+        {
+          "word": "otchor",
+          "middle": "ch"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "qoeor",
+          "middle": "e"
+        },
+        {
+          "word": "qoteol",
+          "middle": "t"
+        },
+        {
+          "word": "qosaiin",
+          "middle": "s"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "ycheor",
+          "middle": "e"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "odaiin",
+          "middle": "od"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "okolor",
+          "middle": "ol"
+        },
+        {
+          "word": "am",
+          "middle": "am"
+        }
+      ]
+    },
+    {
+      "para_id": "A_017",
+      "total_tokens": 41,
+      "ri_count": 2,
+      "pp_count": 36,
+      "infra_count": 3,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cheeykam",
+          "middle": "eeyk"
+        },
+        {
+          "word": "yeeear",
+          "middle": "yeee"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "koaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cphor",
+          "middle": "cph"
+        },
+        {
+          "word": "qotoy",
+          "middle": "to"
+        },
+        {
+          "word": "sha",
+          "middle": "a"
+        },
+        {
+          "word": "ckhol",
+          "middle": "ckh"
+        },
+        {
+          "word": "ykoaiin",
+          "middle": "o"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "oly",
+          "middle": "y"
+        },
+        {
+          "word": "qoteeol",
+          "middle": "t"
+        },
+        {
+          "word": "okchor",
+          "middle": "ch"
+        },
+        {
+          "word": "okor",
+          "middle": "or"
+        },
+        {
+          "word": "olytol",
+          "middle": "yt"
+        },
+        {
+          "word": "okom",
+          "middle": "om"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "seees",
+          "middle": "ee"
+        },
+        {
+          "word": "chom",
+          "middle": "om"
+        },
+        {
+          "word": "okai",
+          "middle": "ai"
+        },
+        {
+          "word": "qodar",
+          "middle": "d"
+        },
+        {
+          "word": "ees",
+          "middle": "ee"
+        },
+        {
+          "word": "eey",
+          "middle": "eey"
+        },
+        {
+          "word": "kcheol",
+          "middle": "eol"
+        },
+        {
+          "word": "okal",
+          "middle": "al"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "r",
+          "middle": "r"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        },
+        {
+          "word": "een",
+          "middle": "e"
+        },
+        {
+          "word": "otchal",
+          "middle": "ch"
+        },
+        {
+          "word": "eeor",
+          "middle": "ee"
+        },
+        {
+          "word": "eear",
+          "middle": "ee"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "kor",
+          "middle": "r"
+        },
+        {
+          "word": "chodaly",
+          "middle": "oda"
+        },
+        {
+          "word": "chom",
+          "middle": "om"
+        }
+      ]
+    },
+    {
+      "para_id": "A_018",
+      "total_tokens": 42,
+      "ri_count": 1,
+      "pp_count": 38,
+      "infra_count": 3,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cthodoaly",
+          "middle": "hodoa"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "tchor",
+          "middle": "or"
+        },
+        {
+          "word": "otcham",
+          "middle": "ch"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cfham",
+          "middle": "cfh"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "ykchy",
+          "middle": "c"
+        },
+        {
+          "word": "kchom",
+          "middle": "om"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chekeol",
+          "middle": "ek"
+        },
+        {
+          "word": "oka",
+          "middle": "a"
+        },
+        {
+          "word": "ytcheear",
+          "middle": "ee"
+        },
+        {
+          "word": "okeol",
+          "middle": "eol"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "ochor",
+          "middle": "och"
+        },
+        {
+          "word": "qokshol",
+          "middle": "ksh"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "okary",
+          "middle": "a"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "shockho",
+          "middle": "ockho"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "tchor",
+          "middle": "or"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "chom",
+          "middle": "om"
+        },
+        {
+          "word": "osh",
+          "middle": "osh"
+        },
+        {
+          "word": "chodair",
+          "middle": "odai"
+        },
+        {
+          "word": "ytchy",
+          "middle": "y"
+        },
+        {
+          "word": "tchor",
+          "middle": "or"
+        },
+        {
+          "word": "kcham",
+          "middle": "am"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "shar",
+          "middle": "ar"
+        },
+        {
+          "word": "shkaiin",
+          "middle": "k"
+        },
+        {
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "word": "yty",
+          "middle": "yt"
+        },
+        {
+          "word": "cthal",
+          "middle": "h"
+        },
+        {
+          "word": "chky",
+          "middle": "k"
+        },
+        {
+          "word": "sheam",
+          "middle": "e"
+        },
+        {
+          "word": "yteam",
+          "middle": "am"
+        }
+      ]
+    },
+    {
+      "para_id": "A_019",
+      "total_tokens": 31,
+      "ri_count": 1,
+      "pp_count": 27,
+      "infra_count": 3,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "kodalchy",
+          "middle": "dalc"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "kodalchy",
+          "middle": "dalc"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "chpady",
+          "middle": "pa"
+        },
+        {
+          "word": "sheol",
+          "middle": "eol"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "qotey",
+          "middle": "t"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "ytoy",
+          "middle": "y"
+        },
+        {
+          "word": "dchor",
+          "middle": "or"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "shtchy",
+          "middle": "tc"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "choraiin",
+          "middle": "or"
+        },
+        {
+          "word": "chom",
+          "middle": "om"
+        },
+        {
+          "word": "otchol",
+          "middle": "ch"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "qotaiin",
+          "middle": "t"
+        },
+        {
+          "word": "shain",
+          "middle": "ain"
+        },
+        {
+          "word": "qotchol",
+          "middle": "tch"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "yty",
+          "middle": "yt"
+        },
+        {
+          "word": "okaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        }
+      ]
+    },
+    {
+      "para_id": "A_020",
+      "total_tokens": 33,
+      "ri_count": 4,
+      "pp_count": 25,
+      "infra_count": 4,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "shytchy",
+          "middle": "ytc"
+        },
+        {
+          "word": "cpholdy",
+          "middle": "cphol"
+        },
+        {
+          "word": "ckhochy",
+          "middle": "ckhoc"
+        },
+        {
+          "word": "shyshol",
+          "middle": "ysh"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pydaiin",
+          "middle": "pyd"
+        },
+        {
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "tydy",
+          "middle": "ty"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "tcheay",
+          "middle": "ea"
+        },
+        {
+          "word": "qotaiin",
+          "middle": "t"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "cthom",
+          "middle": "h"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "tchy",
+          "middle": "y"
+        },
+        {
+          "word": "koraiin",
+          "middle": "r"
+        },
+        {
+          "word": "odal",
+          "middle": "od"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "cphaiin",
+          "middle": "cph"
+        },
+        {
+          "word": "qotchoiin",
+          "middle": "tch"
+        },
+        {
+          "word": "sheyr",
+          "middle": "ey"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        }
+      ]
+    },
+    {
+      "para_id": "A_021",
+      "total_tokens": 39,
+      "ri_count": 1,
+      "pp_count": 35,
+      "infra_count": 3,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "dlod",
+          "middle": "dlod"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pchooiin",
+          "middle": "o"
+        },
+        {
+          "word": "ksheo",
+          "middle": "eo"
+        },
+        {
+          "word": "kchoy",
+          "middle": "o"
+        },
+        {
+          "word": "chopchy",
+          "middle": "opc"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "shkchor",
+          "middle": "kch"
+        },
+        {
+          "word": "sheo",
+          "middle": "eo"
+        },
+        {
+          "word": "cheory",
+          "middle": "eo"
+        },
+        {
+          "word": "choldy",
+          "middle": "ol"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "shaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "qodaiin",
+          "middle": "d"
+        },
+        {
+          "word": "o",
+          "middle": "o"
+        },
+        {
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "word": "am",
+          "middle": "am"
+        },
+        {
+          "word": "qokshy",
+          "middle": "ks"
+        },
+        {
+          "word": "qocthy",
+          "middle": "ct"
+        },
+        {
+          "word": "choteol",
+          "middle": "ot"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "choaiin",
+          "middle": "o"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "cto",
+          "middle": "o"
+        },
+        {
+          "word": "otoiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "qotchoiin",
+          "middle": "tch"
+        },
+        {
+          "word": "chodain",
+          "middle": "od"
+        },
+        {
+          "word": "ytchoy",
+          "middle": "o"
+        },
+        {
+          "word": "shokchy",
+          "middle": "okc"
+        },
+        {
+          "word": "cphody",
+          "middle": "cpho"
+        }
+      ]
+    },
+    {
+      "para_id": "A_022",
+      "total_tokens": 44,
+      "ri_count": 3,
+      "pp_count": 39,
+      "infra_count": 2,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cphydy",
+          "middle": "cphy"
+        },
+        {
+          "word": "cthory",
+          "middle": "ho"
+        },
+        {
+          "word": "iiincheom",
+          "middle": "iiinche"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "torchy",
+          "middle": "rc"
+        },
+        {
+          "word": "sheeor",
+          "middle": "ee"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "shokchy",
+          "middle": "okc"
+        },
+        {
+          "word": "olaen",
+          "middle": "a"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "otor",
+          "middle": "or"
+        },
+        {
+          "word": "qooko",
+          "middle": "oko"
+        },
+        {
+          "word": "chcthy",
+          "middle": "ct"
+        },
+        {
+          "word": "shoky",
+          "middle": "ok"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "sheo",
+          "middle": "eo"
+        },
+        {
+          "word": "okeody",
+          "middle": "eo"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chokeody",
+          "middle": "okeo"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "kcheor",
+          "middle": "e"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "shtaiin",
+          "middle": "t"
+        },
+        {
+          "word": "qotol",
+          "middle": "t"
+        },
+        {
+          "word": "qokoy",
+          "middle": "ko"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "okeol",
+          "middle": "eol"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "keey",
+          "middle": "ey"
+        },
+        {
+          "word": "shar",
+          "middle": "ar"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "ody",
+          "middle": "o"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "chokody",
+          "middle": "oko"
+        },
+        {
+          "word": "shodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "ochody",
+          "middle": "ocho"
+        },
+        {
+          "word": "chykey",
+          "middle": "yk"
+        },
+        {
+          "word": "chtody",
+          "middle": "to"
+        }
+      ]
+    },
+    {
+      "para_id": "A_023",
+      "total_tokens": 33,
+      "ri_count": 1,
+      "pp_count": 31,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "dkshy",
+          "middle": "dks"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "kshody",
+          "middle": "o"
+        },
+        {
+          "word": "fchoy",
+          "middle": "o"
+        },
+        {
+          "word": "chkoy",
+          "middle": "ko"
+        },
+        {
+          "word": "oaiin",
+          "middle": "o"
+        },
+        {
+          "word": "oar",
+          "middle": "o"
+        },
+        {
+          "word": "olsy",
+          "middle": "s"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "ochey",
+          "middle": "och"
+        },
+        {
+          "word": "okey",
+          "middle": "ey"
+        },
+        {
+          "word": "qokaiin",
+          "middle": "k"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "ckhoy",
+          "middle": "ckho"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "otol",
+          "middle": "ol"
+        },
+        {
+          "word": "qoaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "otan",
+          "middle": "an"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "oteeen",
+          "middle": "ee"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "otchy",
+          "middle": "c"
+        },
+        {
+          "word": "qotcho",
+          "middle": "tcho"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "otain",
+          "middle": "ain"
+        },
+        {
+          "word": "sheody",
+          "middle": "eo"
+        },
+        {
+          "word": "chan",
+          "middle": "an"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "chocthy",
+          "middle": "oct"
+        }
+      ]
+    },
+    {
+      "para_id": "A_024",
+      "total_tokens": 22,
+      "ri_count": 2,
+      "pp_count": 19,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cholols",
+          "middle": "olol"
+        },
+        {
+          "word": "shotshy",
+          "middle": "ots"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "tshy",
+          "middle": "y"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "qoaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "qotcheo",
+          "middle": "tcheo"
+        },
+        {
+          "word": "shodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "qoeeey",
+          "middle": "e"
+        },
+        {
+          "word": "qoykeeey",
+          "middle": "yke"
+        },
+        {
+          "word": "qoeor",
+          "middle": "e"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "qotoeey",
+          "middle": "to"
+        },
+        {
+          "word": "keey",
+          "middle": "ey"
+        },
+        {
+          "word": "cheo",
+          "middle": "eo"
+        },
+        {
+          "word": "kchy",
+          "middle": "y"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        }
+      ]
+    },
+    {
+      "para_id": "A_025",
+      "total_tokens": 45,
+      "ri_count": 2,
+      "pp_count": 34,
+      "infra_count": 9,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [
+        {
+          "word": "dairodg",
+          "middle": "irod"
+        }
+      ],
+      "ri_tokens": [
+        {
+          "word": "ychopordg",
+          "middle": "opord"
+        },
+        {
+          "word": "dairodg",
+          "middle": "irod"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "kocheor",
+          "middle": "che"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "ytchey",
+          "middle": "ey"
+        },
+        {
+          "word": "pshod",
+          "middle": "od"
+        },
+        {
+          "word": "chols",
+          "middle": "ol"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "ytoiiin",
+          "middle": "i"
+        },
+        {
+          "word": "dchol",
+          "middle": "ol"
+        },
+        {
+          "word": "sy",
+          "middle": "s"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "chots",
+          "middle": "ot"
+        },
+        {
+          "word": "qotcho",
+          "middle": "tcho"
+        },
+        {
+          "word": "ytor",
+          "middle": "r"
+        },
+        {
+          "word": "otchor",
+          "middle": "ch"
+        },
+        {
+          "word": "qo",
+          "middle": "qo"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        },
+        {
+          "word": "shees",
+          "middle": "ee"
+        },
+        {
+          "word": "otol",
+          "middle": "ol"
+        },
+        {
+          "word": "ykoiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "okchy",
+          "middle": "c"
+        },
+        {
+          "word": "taiin",
+          "middle": "iin"
+        },
+        {
+          "word": "shokeeol",
+          "middle": "ok"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cheotol",
+          "middle": "eot"
+        },
+        {
+          "word": "otchol",
+          "middle": "ch"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chotaiin",
+          "middle": "ot"
+        },
+        {
+          "word": "otol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        }
+      ]
+    },
+    {
+      "para_id": "A_026",
+      "total_tokens": 85,
+      "ri_count": 6,
+      "pp_count": 72,
+      "infra_count": 7,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "chotols",
+          "middle": "otol"
+        },
+        {
+          "word": "cheoees",
+          "middle": "eoee"
+        },
+        {
+          "word": "skaiiodar",
+          "middle": "iiod"
+        },
+        {
+          "word": "ctheod",
+          "middle": "heod"
+        },
+        {
+          "word": "odshe",
+          "middle": "odshe"
+        },
+        {
+          "word": "olchad",
+          "middle": "chad"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "foar",
+          "middle": "fo"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cholor",
+          "middle": "ol"
+        },
+        {
+          "word": "cphol",
+          "middle": "cph"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chckh",
+          "middle": "ckh"
+        },
+        {
+          "word": "chopchol",
+          "middle": "opch"
+        },
+        {
+          "word": "otcham",
+          "middle": "ch"
+        },
+        {
+          "word": "chckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "kar",
+          "middle": "r"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "poeear",
+          "middle": "ee"
+        },
+        {
+          "word": "kshor",
+          "middle": "or"
+        },
+        {
+          "word": "choky",
+          "middle": "ok"
+        },
+        {
+          "word": "os",
+          "middle": "o"
+        },
+        {
+          "word": "ykeor",
+          "middle": "e"
+        },
+        {
+          "word": "ytaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "sheor",
+          "middle": "e"
+        },
+        {
+          "word": "chocthy",
+          "middle": "oct"
+        },
+        {
+          "word": "otcham",
+          "middle": "ch"
+        },
+        {
+          "word": "yaiir",
+          "middle": "yaii"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "tar",
+          "middle": "r"
+        },
+        {
+          "word": "okoiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "shees",
+          "middle": "ee"
+        },
+        {
+          "word": "ytaly",
+          "middle": "ly"
+        },
+        {
+          "word": "cthaiin",
+          "middle": "h"
+        },
+        {
+          "word": "odam",
+          "middle": "od"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "al",
+          "middle": "al"
+        },
+        {
+          "word": "ckham",
+          "middle": "ckh"
+        },
+        {
+          "word": "okom",
+          "middle": "om"
+        },
+        {
+          "word": "cthaiin",
+          "middle": "h"
+        },
+        {
+          "word": "qodaiin",
+          "middle": "d"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "okaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "ychol",
+          "middle": "ol"
+        },
+        {
+          "word": "ckhor",
+          "middle": "ckh"
+        },
+        {
+          "word": "pchar",
+          "middle": "ar"
+        },
+        {
+          "word": "sheo",
+          "middle": "eo"
+        },
+        {
+          "word": "ckhaiin",
+          "middle": "ckh"
+        },
+        {
+          "word": "sheeol",
+          "middle": "eeol"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chory",
+          "middle": "o"
+        },
+        {
+          "word": "tchor",
+          "middle": "or"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "od",
+          "middle": "od"
+        },
+        {
+          "word": "ychar",
+          "middle": "ar"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "chokaiin",
+          "middle": "ok"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthom",
+          "middle": "h"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "qocthol",
+          "middle": "cth"
+        },
+        {
+          "word": "qodaiin",
+          "middle": "d"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "ysho",
+          "middle": "o"
+        },
+        {
+          "word": "taiin",
+          "middle": "iin"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "kaiim",
+          "middle": "i"
+        }
+      ]
+    },
+    {
+      "para_id": "A_027",
+      "total_tokens": 45,
+      "ri_count": 6,
+      "pp_count": 33,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "oheekar",
+          "middle": "oheek"
+        },
+        {
+          "word": "chapchy",
+          "middle": "apc"
+        },
+        {
+          "word": "oochockhy",
+          "middle": "oochock"
+        },
+        {
+          "word": "chekchoy",
+          "middle": "ekcho"
+        },
+        {
+          "word": "rychos",
+          "middle": "rycho"
+        },
+        {
+          "word": "cshe",
+          "middle": "cshe"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "koar",
+          "middle": "ar"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "qoar",
+          "middle": "ar"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "otchy",
+          "middle": "c"
+        },
+        {
+          "word": "oees",
+          "middle": "oee"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "qoekchar",
+          "middle": "ekch"
+        },
+        {
+          "word": "cheas",
+          "middle": "ea"
+        },
+        {
+          "word": "odaiin",
+          "middle": "od"
+        },
+        {
+          "word": "kchey",
+          "middle": "ey"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "qoair",
+          "middle": "ai"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "shckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "ytchoy",
+          "middle": "o"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "dchy",
+          "middle": "y"
+        },
+        {
+          "word": "dey",
+          "middle": "y"
+        },
+        {
+          "word": "okody",
+          "middle": "o"
+        },
+        {
+          "word": "ytody",
+          "middle": "dy"
+        },
+        {
+          "word": "chodam",
+          "middle": "od"
+        },
+        {
+          "word": "okor",
+          "middle": "or"
+        },
+        {
+          "word": "oty",
+          "middle": "y"
+        }
+      ]
+    },
+    {
+      "para_id": "A_028",
+      "total_tokens": 69,
+      "ri_count": 1,
+      "pp_count": 62,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cthodam",
+          "middle": "hod"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "tchody",
+          "middle": "o"
+        },
+        {
+          "word": "shocthol",
+          "middle": "octh"
+        },
+        {
+          "word": "chocthey",
+          "middle": "octh"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "ychos",
+          "middle": "o"
+        },
+        {
+          "word": "ychol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "ychor",
+          "middle": "or"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "okchey",
+          "middle": "ch"
+        },
+        {
+          "word": "qokom",
+          "middle": "k"
+        },
+        {
+          "word": "oeeo",
+          "middle": "oeeo"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthom",
+          "middle": "h"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "ychear",
+          "middle": "e"
+        },
+        {
+          "word": "kchdy",
+          "middle": "dy"
+        },
+        {
+          "word": "lor",
+          "middle": "l"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "otam",
+          "middle": "am"
+        },
+        {
+          "word": "cthom",
+          "middle": "h"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "ytchos",
+          "middle": "o"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "qokam",
+          "middle": "k"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "yodaiin",
+          "middle": "yod"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "oees",
+          "middle": "oee"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "qokor",
+          "middle": "k"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "tchalody",
+          "middle": "alo"
+        },
+        {
+          "word": "chockhy",
+          "middle": "ock"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "os",
+          "middle": "o"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "ochy",
+          "middle": "oc"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "chaiir",
+          "middle": "aii"
+        },
+        {
+          "word": "ckhal",
+          "middle": "ckh"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "ytcho",
+          "middle": "o"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "ches",
+          "middle": "e"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "ocholy",
+          "middle": "ocho"
+        },
+        {
+          "word": "kchos",
+          "middle": "o"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "dchor",
+          "middle": "or"
+        },
+        {
+          "word": "choldar",
+          "middle": "old"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "ycheor",
+          "middle": "e"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "octham",
+          "middle": "octh"
+        }
+      ]
+    },
+    {
+      "para_id": "A_029",
+      "total_tokens": 30,
+      "ri_count": 3,
+      "pp_count": 25,
+      "infra_count": 2,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "qko",
+          "middle": "qko"
+        },
+        {
+          "word": "chorochy",
+          "middle": "oroc"
+        },
+        {
+          "word": "oeeees",
+          "middle": "oeeee"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "fchodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "shopchey",
+          "middle": "opch"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "qoos",
+          "middle": "o"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "dcheey",
+          "middle": "eey"
+        },
+        {
+          "word": "keor",
+          "middle": "or"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "dchey",
+          "middle": "ey"
+        },
+        {
+          "word": "kchey",
+          "middle": "ey"
+        },
+        {
+          "word": "otchy",
+          "middle": "c"
+        },
+        {
+          "word": "cheody",
+          "middle": "eo"
+        },
+        {
+          "word": "cheodaiin",
+          "middle": "eod"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "ytcheey",
+          "middle": "eey"
+        },
+        {
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "word": "chald",
+          "middle": "ald"
+        },
+        {
+          "word": "qokcho",
+          "middle": "kcho"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "lochey",
+          "middle": "loch"
+        },
+        {
+          "word": "ychey",
+          "middle": "ey"
+        },
+        {
+          "word": "kchos",
+          "middle": "o"
+        },
+        {
+          "word": "odaiin",
+          "middle": "od"
+        },
+        {
+          "word": "oaiir",
+          "middle": "oaii"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        }
+      ]
+    },
+    {
+      "para_id": "A_030",
+      "total_tokens": 32,
+      "ri_count": 3,
+      "pp_count": 26,
+      "infra_count": 3,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "ksholochey",
+          "middle": "oloch"
+        },
+        {
+          "word": "qotoees",
+          "middle": "toee"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "ksholochey",
+          "middle": "oloch"
+        },
+        {
+          "word": "qotoees",
+          "middle": "toee"
+        },
+        {
+          "word": "deeeese",
+          "middle": "eeese"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "chkoldy",
+          "middle": "kol"
+        },
+        {
+          "word": "otchor",
+          "middle": "ch"
+        },
+        {
+          "word": "choaiin",
+          "middle": "o"
+        },
+        {
+          "word": "dshoy",
+          "middle": "o"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "otchol",
+          "middle": "ch"
+        },
+        {
+          "word": "shody",
+          "middle": "o"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "chotchy",
+          "middle": "otc"
+        },
+        {
+          "word": "okchey",
+          "middle": "ch"
+        },
+        {
+          "word": "choty",
+          "middle": "ot"
+        },
+        {
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "keey",
+          "middle": "ey"
+        },
+        {
+          "word": "choty",
+          "middle": "ot"
+        },
+        {
+          "word": "qokechy",
+          "middle": "kec"
+        },
+        {
+          "word": "olchoiin",
+          "middle": "ch"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cphey",
+          "middle": "cph"
+        },
+        {
+          "word": "shckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "chochy",
+          "middle": "oc"
+        },
+        {
+          "word": "kchod",
+          "middle": "od"
+        },
+        {
+          "word": "schain",
+          "middle": "ain"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chckhy",
+          "middle": "ck"
+        }
+      ]
+    },
+    {
+      "para_id": "A_031",
+      "total_tokens": 41,
+      "ri_count": 4,
+      "pp_count": 31,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "polyshy",
+          "middle": "lys"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "polyshy",
+          "middle": "lys"
+        },
+        {
+          "word": "cthd",
+          "middle": "hd"
+        },
+        {
+          "word": "choteeen",
+          "middle": "otee"
+        },
+        {
+          "word": "choschy",
+          "middle": "osc"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "tchody",
+          "middle": "o"
+        },
+        {
+          "word": "qopchy",
+          "middle": "pc"
+        },
+        {
+          "word": "otshol",
+          "middle": "sh"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "tshodody",
+          "middle": "odo"
+        },
+        {
+          "word": "chochy",
+          "middle": "oc"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "qoky",
+          "middle": "k"
+        },
+        {
+          "word": "chcphhy",
+          "middle": "cph"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "word": "dykchy",
+          "middle": "c"
+        },
+        {
+          "word": "chkeey",
+          "middle": "k"
+        },
+        {
+          "word": "kshy",
+          "middle": "y"
+        },
+        {
+          "word": "ky",
+          "middle": "k"
+        },
+        {
+          "word": "ty",
+          "middle": "t"
+        },
+        {
+          "word": "cheey",
+          "middle": "eey"
+        },
+        {
+          "word": "ol",
+          "middle": "ol"
+        },
+        {
+          "word": "cheol",
+          "middle": "eol"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "oeear",
+          "middle": "oee"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "kshy",
+          "middle": "y"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "deees",
+          "middle": "ee"
+        },
+        {
+          "word": "dchodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "word": "cheey",
+          "middle": "eey"
+        },
+        {
+          "word": "tcheey",
+          "middle": "eey"
+        }
+      ]
+    },
+    {
+      "para_id": "A_032",
+      "total_tokens": 32,
+      "ri_count": 4,
+      "pp_count": 19,
+      "infra_count": 9,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "oksholshol",
+          "middle": "sholsh"
+        },
+        {
+          "word": "okshodeeen",
+          "middle": "shodee"
+        },
+        {
+          "word": "shotcho",
+          "middle": "otcho"
+        },
+        {
+          "word": "qoteeeo",
+          "middle": "teeeo"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "kchor",
+          "middle": "or"
+        },
+        {
+          "word": "sheod",
+          "middle": "eod"
+        },
+        {
+          "word": "sheodaiin",
+          "middle": "eod"
+        },
+        {
+          "word": "shodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "qos",
+          "middle": "s"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cheor",
+          "middle": "e"
+        },
+        {
+          "word": "odaiin",
+          "middle": "od"
+        },
+        {
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "rcho",
+          "middle": "o"
+        },
+        {
+          "word": "cheeody",
+          "middle": "eeo"
+        },
+        {
+          "word": "qotchey",
+          "middle": "tch"
+        },
+        {
+          "word": "tey",
+          "middle": "y"
+        },
+        {
+          "word": "okchor",
+          "middle": "ch"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "keeo",
+          "middle": "eo"
+        },
+        {
+          "word": "chokchy",
+          "middle": "okc"
+        },
+        {
+          "word": "deol",
+          "middle": "ol"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        }
+      ]
+    },
+    {
+      "para_id": "A_033",
+      "total_tokens": 55,
+      "ri_count": 5,
+      "pp_count": 46,
+      "infra_count": 4,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cfhodar",
+          "middle": "cfhod"
+        },
+        {
+          "word": "shesed",
+          "middle": "esed"
+        },
+        {
+          "word": "ckooaiin",
+          "middle": "ckoo"
+        },
+        {
+          "word": "ckcheey",
+          "middle": "ckch"
+        },
+        {
+          "word": "koltoldy",
+          "middle": "ltol"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pshol",
+          "middle": "ol"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "otshal",
+          "middle": "sh"
+        },
+        {
+          "word": "chopy",
+          "middle": "op"
+        },
+        {
+          "word": "cphol",
+          "middle": "cph"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "tchty",
+          "middle": "t"
+        },
+        {
+          "word": "sh",
+          "middle": "sh"
+        },
+        {
+          "word": "kcheals",
+          "middle": "eal"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "okche",
+          "middle": "che"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "dchy",
+          "middle": "y"
+        },
+        {
+          "word": "al",
+          "middle": "al"
+        },
+        {
+          "word": "chodar",
+          "middle": "od"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "ry",
+          "middle": "ry"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "shokchy",
+          "middle": "okc"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "sheey",
+          "middle": "eey"
+        },
+        {
+          "word": "dchol",
+          "middle": "ol"
+        },
+        {
+          "word": "chofchy",
+          "middle": "ofc"
+        },
+        {
+          "word": "okchey",
+          "middle": "ch"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "r",
+          "middle": "r"
+        },
+        {
+          "word": "cheeey",
+          "middle": "e"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "ky",
+          "middle": "k"
+        },
+        {
+          "word": "scho",
+          "middle": "o"
+        },
+        {
+          "word": "chky",
+          "middle": "k"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "taiin",
+          "middle": "iin"
+        },
+        {
+          "word": "tosh",
+          "middle": "sh"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "chocty",
+          "middle": "oct"
+        },
+        {
+          "word": "cheeody",
+          "middle": "eeo"
+        },
+        {
+          "word": "choto",
+          "middle": "oto"
+        },
+        {
+          "word": "kchoan",
+          "middle": "o"
+        },
+        {
+          "word": "choor",
+          "middle": "o"
+        }
+      ]
+    },
+    {
+      "para_id": "A_034",
+      "total_tokens": 2,
+      "ri_count": 0,
+      "pp_count": 1,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "ocho",
+          "middle": "ocho"
+        }
+      ]
+    },
+    {
+      "para_id": "A_035",
+      "total_tokens": 28,
+      "ri_count": 1,
+      "pp_count": 22,
+      "infra_count": 5,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "shotokody",
+          "middle": "otoko"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "tchoep",
+          "middle": "oep"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "pcheey",
+          "middle": "eey"
+        },
+        {
+          "word": "pchey",
+          "middle": "ey"
+        },
+        {
+          "word": "ofchey",
+          "middle": "ofch"
+        },
+        {
+          "word": "dsheey",
+          "middle": "eey"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "cheey",
+          "middle": "eey"
+        },
+        {
+          "word": "teeodan",
+          "middle": "eod"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "cheocthy",
+          "middle": "eoct"
+        },
+        {
+          "word": "oksheo",
+          "middle": "sheo"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cheodaiin",
+          "middle": "eod"
+        },
+        {
+          "word": "do",
+          "middle": "do"
+        },
+        {
+          "word": "ytchody",
+          "middle": "o"
+        },
+        {
+          "word": "chot",
+          "middle": "ot"
+        },
+        {
+          "word": "choty",
+          "middle": "ot"
+        },
+        {
+          "word": "otariin",
+          "middle": "ar"
+        },
+        {
+          "word": "qochodaiin",
+          "middle": "chod"
+        },
+        {
+          "word": "chotol",
+          "middle": "ot"
+        }
+      ]
+    },
+    {
+      "para_id": "A_036",
+      "total_tokens": 1,
+      "ri_count": 1,
+      "pp_count": 0,
+      "infra_count": 0,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "okokchodm",
+          "middle": "okchod"
+        }
+      ],
+      "final_ri": [
+        {
+          "word": "okokchodm",
+          "middle": "okchod"
+        }
+      ],
+      "ri_tokens": [
+        {
+          "word": "okokchodm",
+          "middle": "okchod"
+        }
+      ],
+      "pp_tokens": []
+    },
+    {
+      "para_id": "A_037",
+      "total_tokens": 58,
+      "ri_count": 6,
+      "pp_count": 46,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "ctho",
+          "middle": "ho"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "ctho",
+          "middle": "ho"
+        },
+        {
+          "word": "chofydy",
+          "middle": "ofy"
+        },
+        {
+          "word": "etodaiin",
+          "middle": "etod"
+        },
+        {
+          "word": "daiiirchy",
+          "middle": "iiirc"
+        },
+        {
+          "word": "cthaichar",
+          "middle": "haich"
+        },
+        {
+          "word": "rchealcham",
+          "middle": "ealch"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "kshey",
+          "middle": "ey"
+        },
+        {
+          "word": "lody",
+          "middle": "lo"
+        },
+        {
+          "word": "cholal",
+          "middle": "ol"
+        },
+        {
+          "word": "dchey",
+          "middle": "ey"
+        },
+        {
+          "word": "ckhol",
+          "middle": "ckh"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "kchs",
+          "middle": "s"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "ychey",
+          "middle": "ey"
+        },
+        {
+          "word": "kchokchy",
+          "middle": "okc"
+        },
+        {
+          "word": "chsey",
+          "middle": "s"
+        },
+        {
+          "word": "kchy",
+          "middle": "y"
+        },
+        {
+          "word": "scheaiin",
+          "middle": "e"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "dchy",
+          "middle": "y"
+        },
+        {
+          "word": "qokar",
+          "middle": "k"
+        },
+        {
+          "word": "chl",
+          "middle": "l"
+        },
+        {
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chean",
+          "middle": "e"
+        },
+        {
+          "word": "cky",
+          "middle": "ck"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "okar",
+          "middle": "ar"
+        },
+        {
+          "word": "cphaiin",
+          "middle": "cph"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "el",
+          "middle": "el"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cha",
+          "middle": "a"
+        },
+        {
+          "word": "cheain",
+          "middle": "e"
+        },
+        {
+          "word": "cphol",
+          "middle": "cph"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "chokesey",
+          "middle": "okes"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "okal",
+          "middle": "al"
+        },
+        {
+          "word": "chal",
+          "middle": "al"
+        }
+      ]
+    },
+    {
+      "para_id": "A_038",
+      "total_tokens": 2,
+      "ri_count": 0,
+      "pp_count": 1,
+      "infra_count": 1,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "schol",
+          "middle": "ol"
+        }
+      ]
+    },
+    {
+      "para_id": "A_039",
+      "total_tokens": 74,
+      "ri_count": 5,
+      "pp_count": 56,
+      "infra_count": 13,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "cthod",
+          "middle": "hod"
+        }
+      ],
+      "final_ri": [
+        {
+          "word": "cpharom",
+          "middle": "cphar"
+        }
+      ],
+      "ri_tokens": [
+        {
+          "word": "cthod",
+          "middle": "hod"
+        },
+        {
+          "word": "opydaiin",
+          "middle": "opyd"
+        },
+        {
+          "word": "chykchy",
+          "middle": "ykc"
+        },
+        {
+          "word": "oeesody",
+          "middle": "oeeso"
+        },
+        {
+          "word": "cpharom",
+          "middle": "cphar"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "soocth",
+          "middle": "octh"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "otol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "opcheaiin",
+          "middle": "opche"
+        },
+        {
+          "word": "shcthal",
+          "middle": "cth"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "sheaiin",
+          "middle": "e"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cty",
+          "middle": "y"
+        },
+        {
+          "word": "qody",
+          "middle": "dy"
+        },
+        {
+          "word": "cheal",
+          "middle": "e"
+        },
+        {
+          "word": "sy",
+          "middle": "s"
+        },
+        {
+          "word": "chory",
+          "middle": "o"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "shaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "dshol",
+          "middle": "ol"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "chean",
+          "middle": "e"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "shealy",
+          "middle": "ea"
+        },
+        {
+          "word": "chary",
+          "middle": "a"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "otchar",
+          "middle": "ch"
+        },
+        {
+          "word": "etaiin",
+          "middle": "et"
+        },
+        {
+          "word": "cthol",
+          "middle": "h"
+        },
+        {
+          "word": "cthan",
+          "middle": "h"
+        },
+        {
+          "word": "ytchy",
+          "middle": "y"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "kchol",
+          "middle": "ol"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "cthar",
+          "middle": "h"
+        },
+        {
+          "word": "chotain",
+          "middle": "ot"
+        },
+        {
+          "word": "ry",
+          "middle": "ry"
+        },
+        {
+          "word": "okchol",
+          "middle": "ch"
+        },
+        {
+          "word": "ksh",
+          "middle": "ksh"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthaiin",
+          "middle": "h"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "orchl",
+          "middle": "ch"
+        },
+        {
+          "word": "chokchy",
+          "middle": "okc"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "scharchy",
+          "middle": "arc"
+        },
+        {
+          "word": "kchey",
+          "middle": "ey"
+        },
+        {
+          "word": "pchy",
+          "middle": "y"
+        }
+      ]
+    },
+    {
+      "para_id": "A_040",
+      "total_tokens": 45,
+      "ri_count": 1,
+      "pp_count": 39,
+      "infra_count": 5,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "otorchy",
+          "middle": "orc"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pchar",
+          "middle": "ar"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "rol",
+          "middle": "r"
+        },
+        {
+          "word": "shear",
+          "middle": "e"
+        },
+        {
+          "word": "cheeotaiin",
+          "middle": "eeot"
+        },
+        {
+          "word": "chal",
+          "middle": "al"
+        },
+        {
+          "word": "kchor",
+          "middle": "or"
+        },
+        {
+          "word": "otchar",
+          "middle": "ch"
+        },
+        {
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "word": "chokain",
+          "middle": "ok"
+        },
+        {
+          "word": "keoky",
+          "middle": "ok"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "okol",
+          "middle": "ol"
+        },
+        {
+          "word": "lokaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "kol",
+          "middle": "l"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "tchy",
+          "middle": "y"
+        },
+        {
+          "word": "ckham",
+          "middle": "ckh"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cheen",
+          "middle": "e"
+        },
+        {
+          "word": "chcky",
+          "middle": "ck"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cheain",
+          "middle": "e"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "cheeky",
+          "middle": "eek"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "ry",
+          "middle": "ry"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        },
+        {
+          "word": "oteey",
+          "middle": "eey"
+        },
+        {
+          "word": "dchor",
+          "middle": "or"
+        },
+        {
+          "word": "chodey",
+          "middle": "od"
+        },
+        {
+          "word": "cho",
+          "middle": "o"
+        },
+        {
+          "word": "raiin",
+          "middle": "r"
+        },
+        {
+          "word": "chear",
+          "middle": "e"
+        }
+      ]
+    },
+    {
+      "para_id": "A_041",
+      "total_tokens": 47,
+      "ri_count": 5,
+      "pp_count": 37,
+      "infra_count": 5,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "tydlo",
+          "middle": "tydlo"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "tydlo",
+          "middle": "tydlo"
+        },
+        {
+          "word": "oykeey",
+          "middle": "oyk"
+        },
+        {
+          "word": "qotod",
+          "middle": "tod"
+        },
+        {
+          "word": "cthod",
+          "middle": "hod"
+        },
+        {
+          "word": "chcthod",
+          "middle": "cthod"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "choly",
+          "middle": "o"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "orchey",
+          "middle": "ch"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "odaiin",
+          "middle": "od"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "ytaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "okchody",
+          "middle": "cho"
+        },
+        {
+          "word": "toeoky",
+          "middle": "eok"
+        },
+        {
+          "word": "okoiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "toiin",
+          "middle": "iin"
+        },
+        {
+          "word": "cphy",
+          "middle": "cp"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "okor",
+          "middle": "or"
+        },
+        {
+          "word": "chey",
+          "middle": "ey"
+        },
+        {
+          "word": "ram",
+          "middle": "r"
+        },
+        {
+          "word": "yshy",
+          "middle": "y"
+        },
+        {
+          "word": "chokcho",
+          "middle": "okcho"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "shaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "otar",
+          "middle": "ar"
+        },
+        {
+          "word": "ytol",
+          "middle": "l"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "chokoiin",
+          "middle": "ok"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "dsholdy",
+          "middle": "ol"
+        },
+        {
+          "word": "otchol",
+          "middle": "ch"
+        },
+        {
+          "word": "ot",
+          "middle": "ot"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        }
+      ]
+    },
+    {
+      "para_id": "A_042",
+      "total_tokens": 34,
+      "ri_count": 4,
+      "pp_count": 27,
+      "infra_count": 3,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "cfhodoral",
+          "middle": "cfhodor"
+        },
+        {
+          "word": "chytchy",
+          "middle": "ytc"
+        },
+        {
+          "word": "choctoy",
+          "middle": "octo"
+        },
+        {
+          "word": "chodykchy",
+          "middle": "odykc"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pshoain",
+          "middle": "o"
+        },
+        {
+          "word": "cthyaiin",
+          "middle": "hy"
+        },
+        {
+          "word": "okaiir",
+          "middle": "aii"
+        },
+        {
+          "word": "shar",
+          "middle": "ar"
+        },
+        {
+          "word": "sy",
+          "middle": "s"
+        },
+        {
+          "word": "shydal",
+          "middle": "yd"
+        },
+        {
+          "word": "chdy",
+          "middle": "dy"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "tchol",
+          "middle": "ol"
+        },
+        {
+          "word": "ytor",
+          "middle": "r"
+        },
+        {
+          "word": "qotol",
+          "middle": "t"
+        },
+        {
+          "word": "chyky",
+          "middle": "yk"
+        },
+        {
+          "word": "chodar",
+          "middle": "od"
+        },
+        {
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "qotcho",
+          "middle": "tcho"
+        },
+        {
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "word": "cthey",
+          "middle": "h"
+        },
+        {
+          "word": "koraiin",
+          "middle": "r"
+        },
+        {
+          "word": "okain",
+          "middle": "ain"
+        },
+        {
+          "word": "d",
+          "middle": "d"
+        },
+        {
+          "word": "s",
+          "middle": "s"
+        },
+        {
+          "word": "olsho",
+          "middle": "sho"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "ocho",
+          "middle": "ocho"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "dchy",
+          "middle": "y"
+        }
+      ]
+    },
+    {
+      "para_id": "A_043",
+      "total_tokens": 3,
+      "ri_count": 0,
+      "pp_count": 3,
+      "infra_count": 0,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "ytchas",
+          "middle": "a"
+        },
+        {
+          "word": "oraiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chkar",
+          "middle": "k"
+        }
+      ]
+    },
+    {
+      "para_id": "A_044",
+      "total_tokens": 37,
+      "ri_count": 3,
+      "pp_count": 30,
+      "infra_count": 4,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "fochor",
+          "middle": "foch"
+        },
+        {
+          "word": "oporody",
+          "middle": "oporo"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "fochor",
+          "middle": "foch"
+        },
+        {
+          "word": "oporody",
+          "middle": "oporo"
+        },
+        {
+          "word": "qopchypcho",
+          "middle": "pchypcho"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "opy",
+          "middle": "op"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "qofol",
+          "middle": "f"
+        },
+        {
+          "word": "shol",
+          "middle": "ol"
+        },
+        {
+          "word": "cfhol",
+          "middle": "cfh"
+        },
+        {
+          "word": "dchor",
+          "middle": "or"
+        },
+        {
+          "word": "qoaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chkaiin",
+          "middle": "k"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cphol",
+          "middle": "cph"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "oty",
+          "middle": "y"
+        },
+        {
+          "word": "qokaiin",
+          "middle": "k"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "ykey",
+          "middle": "ey"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "ykaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "otaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "word": "oeees",
+          "middle": "oeee"
+        },
+        {
+          "word": "ytey",
+          "middle": "y"
+        },
+        {
+          "word": "tchy",
+          "middle": "y"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "otol",
+          "middle": "ol"
+        },
+        {
+          "word": "oty",
+          "middle": "y"
+        },
+        {
+          "word": "toldy",
+          "middle": "l"
+        }
+      ]
+    },
+    {
+      "para_id": "A_045",
+      "total_tokens": 47,
+      "ri_count": 4,
+      "pp_count": 33,
+      "infra_count": 10,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "olcfholy",
+          "middle": "cfho"
+        },
+        {
+          "word": "cthod",
+          "middle": "hod"
+        },
+        {
+          "word": "kyty",
+          "middle": "kyt"
+        },
+        {
+          "word": "chshoty",
+          "middle": "shot"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pchor",
+          "middle": "or"
+        },
+        {
+          "word": "ypcheey",
+          "middle": "eey"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        },
+        {
+          "word": "ypchy",
+          "middle": "y"
+        },
+        {
+          "word": "te",
+          "middle": "te"
+        },
+        {
+          "word": "ar",
+          "middle": "ar"
+        },
+        {
+          "word": "chty",
+          "middle": "t"
+        },
+        {
+          "word": "odol",
+          "middle": "od"
+        },
+        {
+          "word": "choy",
+          "middle": "o"
+        },
+        {
+          "word": "ksheody",
+          "middle": "eo"
+        },
+        {
+          "word": "chody",
+          "middle": "o"
+        },
+        {
+          "word": "otchy",
+          "middle": "c"
+        },
+        {
+          "word": "yky",
+          "middle": "y"
+        },
+        {
+          "word": "qochol",
+          "middle": "ch"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "ctchy",
+          "middle": "c"
+        },
+        {
+          "word": "otal",
+          "middle": "al"
+        },
+        {
+          "word": "qokcho",
+          "middle": "kcho"
+        },
+        {
+          "word": "rokyd",
+          "middle": "yd"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "tor",
+          "middle": "r"
+        },
+        {
+          "word": "chyty",
+          "middle": "yt"
+        },
+        {
+          "word": "ytoldy",
+          "middle": "l"
+        },
+        {
+          "word": "oty",
+          "middle": "y"
+        },
+        {
+          "word": "kchol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "ychor",
+          "middle": "or"
+        },
+        {
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "word": "kaiin",
+          "middle": "iin"
+        },
+        {
+          "word": "chkaiin",
+          "middle": "k"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        }
+      ]
+    },
+    {
+      "para_id": "A_046",
+      "total_tokens": 42,
+      "ri_count": 5,
+      "pp_count": 33,
+      "infra_count": 4,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "chorchy",
+          "middle": "orc"
+        },
+        {
+          "word": "cthoor",
+          "middle": "ho"
+        },
+        {
+          "word": "otytchol",
+          "middle": "ytch"
+        },
+        {
+          "word": "etyd",
+          "middle": "etyd"
+        },
+        {
+          "word": "ctho",
+          "middle": "ho"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "pchocthy",
+          "middle": "oct"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "octhody",
+          "middle": "octho"
+        },
+        {
+          "word": "pchodol",
+          "middle": "od"
+        },
+        {
+          "word": "chopchal",
+          "middle": "opch"
+        },
+        {
+          "word": "ypch",
+          "middle": "ypch"
+        },
+        {
+          "word": "kom",
+          "middle": "m"
+        },
+        {
+          "word": "dchey",
+          "middle": "ey"
+        },
+        {
+          "word": "char",
+          "middle": "ar"
+        },
+        {
+          "word": "chty",
+          "middle": "t"
+        },
+        {
+          "word": "os",
+          "middle": "o"
+        },
+        {
+          "word": "chair",
+          "middle": "ai"
+        },
+        {
+          "word": "oky",
+          "middle": "y"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        },
+        {
+          "word": "otchy",
+          "middle": "c"
+        },
+        {
+          "word": "chocthy",
+          "middle": "oct"
+        },
+        {
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "yty",
+          "middle": "yt"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chcthy",
+          "middle": "ct"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "or",
+          "middle": "or"
+        },
+        {
+          "word": "aiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "chtchor",
+          "middle": "tch"
+        },
+        {
+          "word": "ody",
+          "middle": "o"
+        },
+        {
+          "word": "qokchy",
+          "middle": "kc"
+        },
+        {
+          "word": "qotchol",
+          "middle": "tch"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        }
+      ]
+    },
+    {
+      "para_id": "A_047",
+      "total_tokens": 50,
+      "ri_count": 1,
+      "pp_count": 43,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "oykchor",
+          "middle": "oykch"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "ycheor",
+          "middle": "e"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "cthaiin",
+          "middle": "h"
+        },
+        {
+          "word": "qoctholy",
+          "middle": "ctho"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "taiin",
+          "middle": "iin"
+        },
+        {
+          "word": "shy",
+          "middle": "y"
+        },
+        {
+          "word": "dchy",
+          "middle": "y"
+        },
+        {
+          "word": "qokchol",
+          "middle": "kch"
+        },
+        {
+          "word": "ykchaiin",
+          "middle": "ch"
+        },
+        {
+          "word": "yty",
+          "middle": "yt"
+        },
+        {
+          "word": "cth",
+          "middle": "h"
+        },
+        {
+          "word": "am",
+          "middle": "am"
+        },
+        {
+          "word": "qotchor",
+          "middle": "tch"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "otol",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cholor",
+          "middle": "ol"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "kaiiin",
+          "middle": "i"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "oqotar",
+          "middle": "oqot"
+        },
+        {
+          "word": "otor",
+          "middle": "or"
+        },
+        {
+          "word": "cfhy",
+          "middle": "cf"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "osain",
+          "middle": "os"
+        },
+        {
+          "word": "ytoiin",
+          "middle": "iin"
+        },
+        {
+          "word": "rotcho",
+          "middle": "cho"
+        },
+        {
+          "word": "shor",
+          "middle": "or"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "d",
+          "middle": "d"
+        },
+        {
+          "word": "otar",
+          "middle": "ar"
+        },
+        {
+          "word": "rodaiin",
+          "middle": "rod"
+        },
+        {
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        }
+      ]
+    },
+    {
+      "para_id": "A_048",
+      "total_tokens": 24,
+      "ri_count": 0,
+      "pp_count": 18,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [],
+      "pp_tokens": [
+        {
+          "word": "paiin",
+          "middle": "p"
+        },
+        {
+          "word": "sheo",
+          "middle": "eo"
+        },
+        {
+          "word": "pcheey",
+          "middle": "eey"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "cthor",
+          "middle": "h"
+        },
+        {
+          "word": "otydy",
+          "middle": "y"
+        },
+        {
+          "word": "ckhy",
+          "middle": "ck"
+        },
+        {
+          "word": "chcthor",
+          "middle": "cth"
+        },
+        {
+          "word": "choiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "qot",
+          "middle": "t"
+        },
+        {
+          "word": "chodaiin",
+          "middle": "od"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "dsho",
+          "middle": "o"
+        },
+        {
+          "word": "ytey",
+          "middle": "y"
+        },
+        {
+          "word": "kchol",
+          "middle": "ol"
+        },
+        {
+          "word": "olty",
+          "middle": "t"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        }
+      ]
+    },
+    {
+      "para_id": "A_049",
+      "total_tokens": 29,
+      "ri_count": 2,
+      "pp_count": 21,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [
+        {
+          "word": "qotchytor",
+          "middle": "tchyt"
+        }
+      ],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "qotchytor",
+          "middle": "tchyt"
+        },
+        {
+          "word": "qokchyky",
+          "middle": "kchyk"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "shoiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "qotchey",
+          "middle": "tch"
+        },
+        {
+          "word": "shcthey",
+          "middle": "cth"
+        },
+        {
+          "word": "ytor",
+          "middle": "r"
+        },
+        {
+          "word": "sho",
+          "middle": "o"
+        },
+        {
+          "word": "ykeey",
+          "middle": "eey"
+        },
+        {
+          "word": "qotchy",
+          "middle": "tc"
+        },
+        {
+          "word": "qotor",
+          "middle": "t"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "shoiin",
+          "middle": "oiin"
+        },
+        {
+          "word": "chor",
+          "middle": "or"
+        },
+        {
+          "word": "shcthy",
+          "middle": "ct"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "qotoiin",
+          "middle": "t"
+        },
+        {
+          "word": "qokol",
+          "middle": "k"
+        },
+        {
+          "word": "choraiin",
+          "middle": "or"
+        },
+        {
+          "word": "qokol",
+          "middle": "k"
+        },
+        {
+          "word": "chyky",
+          "middle": "yk"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cheky",
+          "middle": "ek"
+        },
+        {
+          "word": "chckhan",
+          "middle": "ckh"
+        }
+      ]
+    },
+    {
+      "para_id": "A_050",
+      "total_tokens": 32,
+      "ri_count": 3,
+      "pp_count": 23,
+      "infra_count": 6,
+      "unknown_count": 0,
+      "initial_ri": [],
+      "final_ri": [],
+      "ri_tokens": [
+        {
+          "word": "shfydaiin",
+          "middle": "fyd"
+        },
+        {
+          "word": "shoyty",
+          "middle": "oyt"
+        },
+        {
+          "word": "ykychy",
+          "middle": "yc"
+        }
+      ],
+      "pp_tokens": [
+        {
+          "word": "tshol",
+          "middle": "ol"
+        },
+        {
+          "word": "schoal",
+          "middle": "o"
+        },
+        {
+          "word": "cfhy",
+          "middle": "cf"
+        },
+        {
+          "word": "cphy",
+          "middle": "cp"
+        },
+        {
+          "word": "shey",
+          "middle": "ey"
+        },
+        {
+          "word": "tchody",
+          "middle": "o"
+        },
+        {
+          "word": "socthody",
+          "middle": "ctho"
+        },
+        {
+          "word": "qodor",
+          "middle": "d"
+        },
+        {
+          "word": "y",
+          "middle": "y"
+        },
+        {
+          "word": "kshy",
+          "middle": "y"
+        },
+        {
+          "word": "ytchy",
+          "middle": "y"
+        },
+        {
+          "word": "ytchoky",
+          "middle": "ok"
+        },
+        {
+          "word": "kchol",
+          "middle": "ol"
+        },
+        {
+          "word": "qoty",
+          "middle": "t"
+        },
+        {
+          "word": "chol",
+          "middle": "ol"
+        },
+        {
+          "word": "cthy",
+          "middle": "hy"
+        },
+        {
+          "word": "choty",
+          "middle": "ot"
+        },
+        {
+          "word": "chaiin",
+          "middle": "aiin"
+        },
+        {
+          "word": "ded",
+          "middle": "d"
+        },
+        {
+          "word": "dchol",
+          "middle": "ol"
+        },
+        {
+          "word": "chy",
+          "middle": "y"
+        },
+        {
+          "word": "kchy",
+          "middle": "y"
+        },
+        {
+          "word": "dy",
+          "middle": "dy"
+        }
+      ]
+    }
+  ]
+}

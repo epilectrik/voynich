@@ -1,0 +1,90 @@
+{
+  "n_folios": 82,
+  "n_paragraphs": 657,
+  "correlations": {
+    "k": {
+      "spearman_r": 0.03219644271393522,
+      "p_value": 0.40999542314150683,
+      "significant": false,
+      "direction": "increasing"
+    },
+    "h": {
+      "spearman_r": 0.009952386646520704,
+      "p_value": 0.7990164424771766,
+      "significant": false,
+      "direction": "increasing"
+    },
+    "e": {
+      "spearman_r": -0.004359384631659701,
+      "p_value": 0.9111980243263182,
+      "significant": false,
+      "direction": "decreasing"
+    }
+  },
+  "ordinal_bins": {
+    "k": {
+      "early_mean": 0.2871502465459698,
+      "middle_mean": 0.3090621125043276,
+      "late_mean": 0.2915447238255474
+    },
+    "h": {
+      "early_mean": 0.3228010779682074,
+      "middle_mean": 0.3750879169596978,
+      "late_mean": 0.33197147848370406
+    },
+    "e": {
+      "early_mean": 0.37136007267099785,
+      "middle_mean": 0.34695777273421347,
+      "late_mean": 0.3874491518213603
+    }
+  },
+  "gradient_tests": {
+    "k": {
+      "kruskal_wallis_h": 0.6896487841579094,
+      "p_value": 0.7083447334924535,
+      "significant": false
+    },
+    "h": {
+      "kruskal_wallis_h": 7.278676546413386,
+      "p_value": 0.02626972159406421,
+      "significant": true
+    },
+    "e": {
+      "kruskal_wallis_h": 1.304533271871501,
+      "p_value": 0.5208638290718908,
+      "significant": false
+    }
+  },
+  "first_vs_last": {
+    "k": {
+      "first_mean": 0.29638622249374996,
+      "last_mean": 0.31330783517687855,
+      "mann_whitney_u": 2654.0,
+      "p_value": 0.3891315438912426,
+      "significant": false
+    },
+    "h": {
+      "first_mean": 0.3627469541468269,
+      "last_mean": 0.3554415852716717,
+      "mann_whitney_u": 2926.0,
+      "p_value": 0.8900251499418319,
+      "significant": false
+    },
+    "e": {
+      "first_mean": 0.40404712697538164,
+      "last_mean": 0.3623241376762178,
+      "mann_whitney_u": 3280.0,
+      "p_value": 0.14888433460842282,
+      "significant": false
+    }
+  },
+  "verdict": {
+    "significant_correlations": 0,
+    "significant_gradients": 1,
+    "significant_contrasts": 0,
+    "total_significant": 1,
+    "max_possible": 9,
+    "level": "WEAK",
+    "interpretation": "Minimal kernel gradient"
+  }
+}

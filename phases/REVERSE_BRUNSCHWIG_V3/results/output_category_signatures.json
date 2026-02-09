@@ -1,0 +1,201 @@
+{
+  "phase": "REVERSE_BRUNSCHWIG_V3",
+  "test": "output_category_signatures",
+  "tier": 4,
+  "external_anchor": "Brunschwig product types (WATER vs OIL_RESIN)",
+  "folio_regime_distribution": {
+    "REGIME_1": 52,
+    "REGIME_2": 14,
+    "REGIME_3": 6,
+    "REGIME_4": 10
+  },
+  "output_class_distribution": {
+    "WATER": 66,
+    "OIL": 6,
+    "PRECISION": 10
+  },
+  "suffix_enrichment": {
+    "oil_enriched": [
+      [
+        "oiin",
+        {
+          "water_rate": 0.0013027001421127427,
+          "oil_rate": 0.004708097928436911,
+          "oil_water_ratio": 2.478871575175955,
+          "direction": "OIL"
+        }
+      ],
+      [
+        "or",
+        {
+          "water_rate": 0.03410705826622454,
+          "oil_rate": 0.05743879472693032,
+          "oil_water_ratio": 1.66458819431056,
+          "direction": "OIL"
+        }
+      ],
+      [
+        "s",
+        {
+          "water_rate": 0.03754144954997631,
+          "oil_rate": 0.062146892655367235,
+          "oil_water_ratio": 1.6384150931709323,
+          "direction": "OIL"
+        }
+      ]
+    ],
+    "water_enriched": [
+      [
+        "ly",
+        {
+          "water_rate": 0.011013737565135007,
+          "oil_rate": 0.002824858757062147,
+          "oil_water_ratio": 0.31837375640385596,
+          "direction": "WATER"
+        }
+      ],
+      [
+        "g",
+        {
+          "water_rate": 0.0017764092846991946,
+          "oil_rate": 0.0,
+          "oil_water_ratio": 0.3601774441221635,
+          "direction": "WATER"
+        }
+      ],
+      [
+        "al",
+        {
+          "water_rate": 0.057437233538607295,
+          "oil_rate": 0.027306967984934087,
+          "oil_water_ratio": 0.4843995218601978,
+          "direction": "WATER"
+        }
+      ],
+      [
+        "an",
+        {
+          "water_rate": 0.0023685457129322598,
+          "oil_rate": 0.0009416195856873823,
+          "oil_water_ratio": 0.576396982897773,
+          "direction": "WATER"
+        }
+      ],
+      [
+        "eol",
+        {
+          "water_rate": 0.006631927996210327,
+          "oil_rate": 0.003766478342749529,
+          "oil_water_ratio": 0.624544459161086,
+          "direction": "WATER"
+        }
+      ],
+      [
+        "y",
+        {
+          "water_rate": 0.06395073424917101,
+          "oil_rate": 0.04143126177024482,
+          "oil_water_ratio": 0.6532837890248544,
+          "direction": "WATER"
+        }
+      ]
+    ]
+  },
+  "vocabulary_output_correlation": {
+    "folio_count": 82,
+    "oil_folio_count": 6,
+    "water_folio_count": 76,
+    "oil_marker_correlation": {
+      "r": 0.6730279394587585,
+      "p": 4.318934241656163e-12
+    },
+    "water_marker_correlation": {
+      "r": -0.06825197431194295,
+      "p": 0.5423449580680922
+    }
+  },
+  "completion_marker_differentiation": [
+    [
+      "aiin",
+      {
+        "water_rate": 0.0235,
+        "oil_rate": 0.0,
+        "ratio": 0.04
+      }
+    ],
+    [
+      "s",
+      {
+        "water_rate": 0.0157,
+        "oil_rate": 0.0,
+        "ratio": 0.06
+      }
+    ],
+    [
+      "ly",
+      {
+        "water_rate": 0.0129,
+        "oil_rate": 0.0,
+        "ratio": 0.07
+      }
+    ],
+    [
+      "kc",
+      {
+        "water_rate": 0.0,
+        "oil_rate": 0.0101,
+        "ratio": 11.1
+      }
+    ],
+    [
+      "okch",
+      {
+        "water_rate": 0.0,
+        "oil_rate": 0.0101,
+        "ratio": 11.1
+      }
+    ],
+    [
+      "cth",
+      {
+        "water_rate": 0.0011,
+        "oil_rate": 0.0152,
+        "ratio": 7.62
+      }
+    ],
+    [
+      "pch",
+      {
+        "water_rate": 0.0006,
+        "oil_rate": 0.0101,
+        "ratio": 7.12
+      }
+    ],
+    [
+      "rod",
+      {
+        "water_rate": 0.0006,
+        "oil_rate": 0.0101,
+        "ratio": 7.12
+      }
+    ],
+    [
+      "eed",
+      {
+        "water_rate": 0.0017,
+        "oil_rate": 0.0152,
+        "ratio": 6.03
+      }
+    ],
+    [
+      "et",
+      {
+        "water_rate": 0.0011,
+        "oil_rate": 0.0101,
+        "ratio": 5.24
+      }
+    ]
+  ],
+  "verdict": "CONFIRMED",
+  "interpretation": "Output category has vocabulary signature beyond REGIME structure"
+}

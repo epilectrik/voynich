@@ -4,7 +4,13 @@
 
 ## Finding
 
-Each A record produces a **near-unique** filter fingerprint: 1,525 unique surviving class sets from 1,562 records (97.6% uniqueness ratio). Pairwise Jaccard similarity is low (mean 0.199), confirming that different A records create substantially different B vocabulary restrictions. The most common set is the empty set (18 records, 1.2%).
+Each A record produces a **near-unique** filter fingerprint: 1,525 unique surviving class sets from 1,562 records (97.6% uniqueness ratio).
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+Pairwise Jaccard similarity is low (mean 0.199), confirming that different A records create substantially different B vocabulary restrictions. The most common set is the empty set (18 records, 1.2%).
 
 ## Key Numbers
 

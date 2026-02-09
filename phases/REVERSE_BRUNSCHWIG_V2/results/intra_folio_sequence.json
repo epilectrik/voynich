@@ -1,0 +1,28 @@
+{
+  "test": "Intra-Folio Sequence Validation",
+  "question": "Does EARLY < MID < LATE MIDDLE sequence hold within folios?",
+  "n_folios": 49,
+  "results": {
+    "early_lt_mid": {
+      "count": 32,
+      "rate": 0.6530612244897959,
+      "p_value": 0.022192080493574906
+    },
+    "mid_lt_late": {
+      "count": 21,
+      "rate": 0.42857142857142855,
+      "p_value": 0.8735651349161984
+    },
+    "full_order": {
+      "count": 15,
+      "rate": 0.30612244897959184,
+      "p_value": 0.22526818027284895
+    }
+  },
+  "aggregate_means": {
+    "early": 0.4523325858201572,
+    "mid": 0.5004142523441161,
+    "late": 0.4800781574953788
+  },
+  "verdict": "NOT SUPPORTED"
+}

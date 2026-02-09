@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.13 | **Date:** 2026-01-26 | **Status:** FROZEN
+**Version:** 3.14 | **Date:** 2026-02-04 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -112,7 +112,7 @@ The Voynich Manuscript contains four coexisting systems sharing a morphological 
 |--------|------|----------|-----------|----------|
 | Currier B | Sequential | Closed-loop control programs | Yes | 49-class |
 | Currier A | Non-sequential | Complexity-frontier registry | No | None |
-| AZC | Placement-coded | Context-gated workflow | Hybrid | Positional |
+| AZC | Placement-coded | Positional encoding | Hybrid | Positional |
 | Human Track | Distributed | Non-operational human pacing | No | Statistical |
 
 ### Critical Distinctions
@@ -131,7 +131,7 @@ The manuscript distributes responsibility between system and human across four l
 |-------|------|-----------------|
 | **Currier B** | Constrains you | Execution grammar, safety envelope |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
-| **AZC** | Gates you | Phase-indexed decision legality, compatibility filtering |
+| **AZC** | Encodes position | Phase-indexed positional encoding, compatibility grouping |
 | **HT** | Prepares you | Anticipatory vigilance signal |
 
 The right mental model is not "What does this page tell me to do?" but:
@@ -614,9 +614,9 @@ Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
 
 ---
 
-## VIII. AZC - DECISION-POINT GRAMMAR & COMPATIBILITY FILTER
+## VIII. AZC - POSITIONAL ENCODING & COMPATIBILITY GROUPING
 
-AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. It operates as a **decision-point grammar** that converts static A-registry entries into phase-gated choice nodes.
+AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. It operates as a **static positional encoding** where each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character.
 
 **P-text note (2026-01-19):** Of 3,299 AZC tokens, 398 (12.1%) are P-placement paragraph text that is linguistically Currier A. For legality analysis, diagram-only count = **2,901 tokens**. See AZC_INTERFACE_VALIDATION phase.
 
@@ -639,28 +639,29 @@ AZC is the **interface layer** that converts static knowledge (A) into actionabl
 | Folio-specific HT profiles | 18pp escape variance | C439 |
 | Uniform B sourcing | 34-36 folios per B | C440 |
 | Vocabulary-activated constraints | 49% A-types in 1 folio | C441 |
-| Compatibility filter | 94% unique vocabulary | C442 |
+| Compatibility grouping | 94% unique vocabulary | C442 |
 
 ### Positional Grammar
 
-Position on the page constrains legality (C→P→R→S progression):
+**Diagram** positions constrain legality (C→R→S progression):
 
-| Position | Workflow Phase | Escape Rate | Meaning |
-|----------|----------------|-------------|---------|
-| C | Setup/Loading | 1.4% | Entry constrained, errors fixable |
-| P | Active work | 11.6% | Recovery permitted, intervention legal |
+| Diagram Position | Workflow Phase | Escape Rate | Meaning |
+|------------------|----------------|-------------|---------|
+| C | Core/Interior | ~1.4% | Moderate flexibility |
 | R1→R2→R3 | Progression | 2.0%→1.2%→0% | Options narrowing, committing |
-| S | Collection/Exit | 0-3.8% | Locked, must accept outcome |
+| S | Boundary/Exit | 0% | Locked, must accept outcome |
 
-### Compatibility Filter Mechanism
+*Note: P (Paragraph) is NOT a diagram position - it is Currier A text appearing on AZC folios.*
 
-AZC folios function as **compatibility filters**:
+### Compatibility Grouping Mechanism
+
+AZC folios group vocabulary by **compatibility signature**:
 - Specialized A-types appear in only 1-3 folios
-- Using vocabulary from one folio excludes vocabulary from others
-- Incompatible A-registry entries CANNOT be combined
-- The grammar blocks dangerous combinations at specification level
+- Each PREFIX+MIDDLE appears at exactly one position
+- Combinations that don't occur together reflect fixed positional encoding
+- AZC does not actively block - it records which combinations exist
 
-**Why AZC is large:** It enumerates all compatibility classes. Each folio = a different set of legal combinations.
+**Why AZC is large:** It encodes many distinct position classes. Each folio = a different set of vocabulary grouped by operational character.
 
 ### Ambient Constraint Activation
 
@@ -822,17 +823,17 @@ The correct model:
 
 ### A-AZC Relationship (v3.0)
 
-AZC converts static A-registry entries into **phase-gated decision points**:
+AZC encodes vocabulary position - each PREFIX+MIDDLE appears at exactly one position:
 
-- **Vocabulary-activated constraints** (C441): Using an A-type activates its associated AZC constraint profile
-- **Compatibility filtering** (C442): AZC folios block incompatible A-type combinations
-- **Position-indexed escape** (C443): Same A-type has different intervention legality depending on AZC position
-- **Universal distribution** (C444): No A-type is locked to specific positions - position determines legality, not content
+- **Vocabulary-position correspondence** (C441): Each A-type has a fixed AZC position
+- **Compatibility grouping** (C442): AZC folios group vocabulary by operational character
+- **Position-indexed escape vocabulary** (C443): Different positions have different escape vocabulary rates
+- **Universal distribution** (C444): No A-type is locked to specific positions - position reflects vocabulary character, not content
 
 The correct model:
 > Currier A provides the vocabulary of possibilities.
-> AZC converts each possibility into a phase-gated decision with location-dependent legality.
-> No explicit selection - constraints activate ambientally based on vocabulary used.
+> AZC encodes each vocabulary item's position, reflecting its operational character.
+> Position correlates with B behavior but does not cause it - vocabulary determines behavior.
 
 ### HT-A Relationship
 
@@ -861,37 +862,58 @@ The Component-to-Class Mapping (CCM) phase achieved complete role-level semantic
 Every token decomposes as:
 
 ```
-TOKEN = PREFIX   → control-flow participation (how token engages control)
+TOKEN = PREFIX   → operation domain selector (which MIDDLE family is legal)
       + SISTER   → operational mode (precision/tolerance)
-      + MIDDLE   → variant discriminator (compatibility carrier)
+      + MIDDLE   → operation type (heating/cooling/monitoring)
       + SUFFIX   → decision archetype (phase-indexed)
 ```
 
-### Component Mappings (Tier 3)
+### Component Mappings (Tier 2-3)
 
 | Component | Encodes | Evidence |
 |-----------|---------|----------|
-| **PREFIX** | Control-flow participation (intervention/core/anchor) | C466-C467, F-A-014b |
+| **PREFIX** | Operation domain selector | C911: 102 forbidden PREFIX+MIDDLE combinations |
 | **SISTER** | Operational mode | C412 anticorrelation (rho=-0.326) |
-| **MIDDLE** | Compatibility carrier | C441-C442, 80% prefix-exclusive |
+| **MIDDLE** | Operation type (3 families) | C908-C910: kernel/section/REGIME correlation |
 | **SUFFIX** | Phase-indexed decision archetype | F-AZC-014 (74% P-position for -ain) |
+
+### PREFIX-MIDDLE Selection (C911 - Tier 2)
+
+PREFIX and MIDDLE are NOT independent. Each PREFIX class selects which MIDDLE family is grammatically legal:
+
+| PREFIX Class | Selects For | Enrichment |
+|--------------|-------------|------------|
+| **qo-** | k-family (heating) | 4.6-5.5x |
+| **ch-/sh-** | e-family (stability) | 2.0-3.1x |
+| **da-/sa-** | infrastructure (iin, in, r, l) | 5.9-12.8x |
+| **ot-/ol-** | h-family (monitoring) | 3.3-6.8x |
+
+### MIDDLE Semantic Families (C908-C910 - Tier 2)
+
+MIDDLEs encode operation types, not just variant identity:
+
+| Family | MIDDLEs | Function | Section Concentration |
+|--------|---------|----------|----------------------|
+| **k-family** | k, ke, ck, ek, kch | Heating/energy | B (bathing/balneum) |
+| **e-family** | e, ed, eed, eo, eey | Cooling/stability | S (recipes) |
+| **h-family** | ch, sh, pch, d | Phase monitoring | T (text/instructions) |
 
 ### The Unifying Perspective
 
 > The manuscript encodes the operational worldview of a controlled apparatus, not the descriptive worldview of a human observer.
 
 From the apparatus's perspective:
-- PREFIX encodes **how tokens participate in control** at complexity peaks
-- MIDDLE encodes **what must not be confused** (compatibility)
+- PREFIX encodes **which operation domain** is being addressed
+- MIDDLE encodes **what operation type** within that domain
 - SUFFIX encodes **when decisions are allowed** (phase)
 - SISTER encodes **how tightly to execute** (mode)
 
 ### Semantic Ceiling
 
 **Recoverable (role-level):**
-- 3 control-flow roles (PREFIX): intervention, core, anchor
+- 4 operation domains (PREFIX): energy, stability, monitoring, infrastructure
 - 2 operational modes (SISTER): precision, tolerance
-- ~1,000 variant discriminators (MIDDLE): compatibility carriers
+- 3 operation type families (MIDDLE): k-heating, e-cooling, h-monitoring
 - 12 decision archetypes (SUFFIX): phase-indexed
 
 **Irrecoverable (entity-level):**

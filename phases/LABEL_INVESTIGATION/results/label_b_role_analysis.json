@@ -1,0 +1,34 @@
+{
+  "summary": {
+    "unique_label_pp_bases": 104,
+    "pp_bases_found_in_b": 104
+  },
+  "role_distribution": {
+    "label_pp_in_b": {
+      "EN": 22618,
+      "AX_FINAL": 11225,
+      "OTHER": 14909,
+      "AX_MED": 9034
+    },
+    "b_baseline": {
+      "EN": 9890,
+      "AX_FINAL": 3864,
+      "OTHER": 6418,
+      "AX_MED": 2924
+    }
+  },
+  "jar_vs_content": {
+    "jar_roles": {
+      "AX_FINAL": 489,
+      "EN": 551,
+      "OTHER": 249,
+      "AX_MED": 140
+    },
+    "content_roles": {
+      "EN": 17211,
+      "AX_FINAL": 7479,
+      "OTHER": 10228,
+      "AX_MED": 6506
+    }
+  }
+}

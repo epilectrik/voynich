@@ -6,6 +6,10 @@
 
 Beyond MIDDLE incompatibility (C728), PP selection within Currier A lines shows no structured patterns across three independent dimensions:
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes within-line selection patterns.
+> Line-level uniformity describes A-internal structure. For A-B vocabulary correspondence,
+> the operational unit is the A FOLIO (114 units, 81% coverage per C885).
+
 ### SUFFIX Coherence (T5): Marginal
 
 | Metric | Value |

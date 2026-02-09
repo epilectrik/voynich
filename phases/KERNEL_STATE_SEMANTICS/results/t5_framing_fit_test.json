@@ -1,0 +1,50 @@
+{
+  "HAZARD": {
+    "description": "h is danger, e is safety, flow is escape",
+    "score": 0,
+    "max_score": 5,
+    "percentage": 0.0
+  },
+  "SEQUENTIAL": {
+    "description": "k->h->e is correct order, violations are errors",
+    "score": 0,
+    "max_score": 5,
+    "percentage": 0.0
+  },
+  "ENERGY": {
+    "description": "k=high, h=mid, e=low, flow is dissipation",
+    "score": 0,
+    "max_score": 5,
+    "percentage": 0.0
+  },
+  "PHASE": {
+    "description": "k=init, h=active, e=complete",
+    "score": 0,
+    "max_score": 5,
+    "percentage": 0.0
+  },
+  "transition_ratios": {
+    "k->n": 0.8727129690248916,
+    "n->n": 1.2086852341427234,
+    "n->e": 0.8093071575159425,
+    "e->h": 0.8181159058327835,
+    "h->h": 0.9111081191835692,
+    "h->n": 0.9327570793407046,
+    "n->h": 1.1461270919515938,
+    "h->e": 1.119268157727714,
+    "e->k": 0.93407880655931,
+    "k->h": 0.9970921693218391,
+    "e->n": 1.0519023590474583,
+    "n->k": 0.7084309042251917,
+    "k->e": 0.8541574863235278,
+    "e->e": 1.950387356813205,
+    "h->k": 1.1213291203967493,
+    "k->k": 1.1493649001760438
+  },
+  "position_means": {
+    "k": 0.49641214373950043,
+    "n": 0.5513300394750115,
+    "e": 0.486070002338259,
+    "h": 0.45556886590092316
+  }
+}

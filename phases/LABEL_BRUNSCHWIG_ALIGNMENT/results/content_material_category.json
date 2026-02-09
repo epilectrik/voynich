@@ -1,0 +1,42 @@
+{
+  "test": "content_material_category",
+  "question": "Do root vs leaf labels show different handling profiles?",
+  "sample": {
+    "root_labels": 78,
+    "leaf_labels": 20,
+    "root_with_morph": 78,
+    "leaf_with_morph": 20
+  },
+  "handling_profiles": {
+    "root": {
+      "SCAFFOLD": 34,
+      "BARE": 13,
+      "OTHER": 14,
+      "ANCHOR": 11,
+      "ENERGY": 6
+    },
+    "leaf": {
+      "OTHER": 2,
+      "SCAFFOLD": 10,
+      "ENERGY": 2,
+      "ANCHOR": 2,
+      "BARE": 4
+    }
+  },
+  "statistics": {
+    "chi2": 1.1694926114609376,
+    "p_value": 0.8830954642504065,
+    "cramers_v": 0.10924100913179087,
+    "significant": false
+  },
+  "middle_overlap": {
+    "jaccard": 0.08695652173913043,
+    "shared": 6,
+    "root_only": 53,
+    "leaf_only": 10
+  },
+  "prep_associations": {
+    "root": {},
+    "leaf": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "finding": "Extensions encode operational context via PREFIX-EXTENSION alignment",
+  "patterns": {
+    "ct_h": {
+      "b_rate": 0.75,
+      "a_rate": 0.821,
+      "meaning": "linker/monitoring context"
+    },
+    "qo_k": {
+      "b_rate": 0.419,
+      "a_rate": 0.294,
+      "meaning": "energy context"
+    },
+    "qo_t": {
+      "b_rate": 0.123,
+      "a_rate": 0.464,
+      "meaning": "terminal context"
+    }
+  },
+  "model": "A provides operational specification; extension = context selector for B materials"
+}

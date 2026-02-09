@@ -1,0 +1,42 @@
+{
+  "test": "section_label_differentiation",
+  "question": "Do labels differ by section in Brunschwig-relevant dimensions?",
+  "sections": [
+    "PHARMA",
+    "OTHER"
+  ],
+  "label_counts": {
+    "PHARMA": 100,
+    "OTHER": 14
+  },
+  "section_profiles": {
+    "PHARMA": {
+      "handling_counts": {
+        "OTHER": 19,
+        "SCAFFOLD": 42,
+        "ANCHOR": 15,
+        "BARE": 17,
+        "ENERGY": 7
+      },
+      "unique_middle_count": 72,
+      "total_with_morph": 100
+    },
+    "OTHER": {
+      "handling_counts": {
+        "SCAFFOLD": 8,
+        "ENERGY": 2,
+        "BARE": 1,
+        "OTHER": 1,
+        "ANCHOR": 2
+      },
+      "unique_middle_count": 13,
+      "total_with_morph": 14
+    }
+  },
+  "statistics": {
+    "chi2": 3.2118302521008397,
+    "p_value": 0.5230222794224486,
+    "cramers_v": 0.1678509743189831,
+    "significant": false
+  }
+}

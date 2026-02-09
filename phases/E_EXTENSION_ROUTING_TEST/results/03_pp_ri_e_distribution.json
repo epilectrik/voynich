@@ -1,0 +1,33 @@
+{
+  "middle_counts": {
+    "pp_dominant": 370,
+    "ri_dominant": 592,
+    "mixed": 51
+  },
+  "max_consecutive_e": {
+    "pp_mean": 0.8378,
+    "ri_mean": 0.5828,
+    "effect_size": -0.2551,
+    "mann_whitney_p": 4e-06,
+    "significant": true,
+    "ri_higher": false
+  },
+  "mean_e_content": {
+    "pp_mean": 0.659,
+    "ri_mean": 0.6481,
+    "effect_size": -0.0109,
+    "mann_whitney_p": 0.006259,
+    "significant": true,
+    "ri_higher": false
+  },
+  "high_e_distribution": {
+    "threshold": "triple_e_or_higher",
+    "pp_count": 21,
+    "ri_count": 17,
+    "mixed_count": 1,
+    "total": 39,
+    "pp_fraction": 0.5385,
+    "ri_fraction": 0.4359,
+    "chi2": 4.5322,
+    "chi2_p": 0.033262,
+    "chi2_significant": 

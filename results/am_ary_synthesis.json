@@ -1,0 +1,24 @@
+{
+  "total_tokens": 253,
+  "line_final_rate": 0.7272727272727273,
+  "vessel_count": 134,
+  "state_count": 103,
+  "collect_count": 16,
+  "vessel_energy_preceded_pct": 0.1865671641791045,
+  "state_energy_preceded_pct": 0.3786407766990291,
+  "predecessor_chi_sq_p": 0.0112,
+  "findings": {
+    "vessel_class": [
+      "otam",
+      "am",
+      "dam"
+    ],
+    "state_class": [
+      "oldy",
+      "oly",
+      "ldy",
+      "daly"
+    ],
+    "key_difference": "STATE class 2x more likely preceded by ENERGY_OPERATOR"
+  }
+}

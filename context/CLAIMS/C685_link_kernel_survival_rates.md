@@ -4,7 +4,13 @@
 
 ## Finding
 
-Kernel access is highly preserved under filtering: **97.4% of records retain at least one token containing k, h, or e** (confirming C503.c). LINK token survival is more fragile: 36.5% of records have zero legal LINK tokens.
+Kernel access is highly preserved under filtering: **97.4% of records retain at least one token containing k, h, or e** (confirming C503.c).
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+LINK token survival is more fragile: 36.5% of records have zero legal LINK tokens.
 
 ## Key Numbers
 

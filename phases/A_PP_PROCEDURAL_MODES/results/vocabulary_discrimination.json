@@ -1,0 +1,79 @@
+{
+  "cluster_middle_counts": {
+    "1": 365,
+    "2": 230,
+    "3": 300
+  },
+  "cluster_totals": {
+    "1": 2832,
+    "2": 1422,
+    "3": 2230
+  },
+  "jaccard_scores": {
+    "1-2": 0.5175438596491229,
+    "1-3": 0.5785123966942148,
+    "2-3": 0.5643564356435643
+  },
+  "avg_jaccard": 0.5534708973289674,
+  "exclusive_counts": {
+    "1": 27,
+    "2": 7,
+    "3": 14
+  },
+  "exclusive_middles": {
+    "1": [
+      "ks",
+      "osh",
+      "fch",
+      "yd",
+      "eeod",
+      "keeo",
+      "g",
+      "cf",
+      "to",
+      "kod",
+      "keo",
+      "eeo",
+      "im",
+      "ckheo",
+      "da",
+      "ckhe",
+      "ka",
+      "oeee",
+      "kee",
+      "ro"
+    ],
+    "2": [
+      "es",
+      "oko",
+      "eot",
+      "okch",
+      "odc",
+      "ke",
+      "okeo"
+    ],
+    "3": [
+      "ly",
+      "octh",
+      "olo",
+      "hod",
+      "lch",
+      "os",
+      "tod",
+      "ea",
+      "ctho",
+      "ocho",
+      "lo",
+      "tsh",
+      "oe",
+      "ock"
+    ]
+  },
+  "enriched_counts": {
+    "1": 6,
+    "2": 8,
+    "3": 2
+  },
+  "permutation_p_value": 0.057,
+  "verdict": "SUPPORT"
+}

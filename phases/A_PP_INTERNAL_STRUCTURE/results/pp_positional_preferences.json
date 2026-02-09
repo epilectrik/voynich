@@ -1,0 +1,79 @@
+{
+  "total_lines": 1515,
+  "total_pp_tokens": 6047,
+  "n_middles_tested": 32,
+  "n_middles_significant": 16,
+  "n_prefixes_tested": 18,
+  "n_prefixes_significant": 11,
+  "bias_counts": {
+    "LATE": 9,
+    "EARLY": 1,
+    "NONE": 16,
+    "MIDDLE": 6
+  },
+  "overall_ks_p": 1.914860307162358e-161,
+  "overall_mean_position": 0.5383743589025988,
+  "top_biased_middles": [
+    {
+      "middle": "m",
+      "mean_pos": 0.8481308887191239,
+      "bias": "LATE",
+      "p": 1.2395119206864452e-19
+    },
+    {
+      "middle": "am",
+      "mean_pos": 0.7873521215626479,
+      "bias": "LATE",
+      "p": 1.963004826746724e-06
+    },
+    {
+      "middle": "d",
+      "mean_pos": 0.7520100459858574,
+      "bias": "LATE",
+      "p": 4.764121845812798e-10
+    },
+    {
+      "middle": "dy",
+      "mean_pos": 0.7321095378387045,
+      "bias": "LATE",
+      "p": 1.443049682783225e-17
+    },
+    {
+      "middle": "hy",
+      "mean_pos": 0.6519566557451741,
+      "bias": "LATE",
+      "p": 2.3146108143273264e-06
+    },
+    {
+      "middle": "or",
+      "mean_pos": 0.35123376409316104,
+      "bias": "EARLY",
+      "p": 1.663907034168538e-11
+    },
+    {
+      "middle": "cho",
+      "mean_pos": 0.3668386243386243,
+      "bias": "NONE",
+      "p": 0.05390073635499708
+    },
+    {
+      "middle": "l",
+      "mean_pos": 0.6285997206369178,
+      "bias": "LATE",
+      "p": 5.036681692241184e-07
+    },
+    {
+      "middle": "al",
+      "mean_pos": 0.6262239972416963,
+      "bias": "LATE",
+      "p": 2.2739903756763034e-05
+    },
+    {
+      "middle": "in",
+      "mean_pos": 0.6237712140367007,
+      "bias": "LATE",
+      "p": 0.00020092352860897846
+    }
+  ],
+  "verdict": "CONFIRMED"
+}

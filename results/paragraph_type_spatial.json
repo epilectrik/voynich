@@ -1,0 +1,81 @@
+{
+  "n_paragraphs": 527,
+  "section_distribution": {
+    "H": {
+      "HIGH_H": 47,
+      "BALANCED": 33,
+      "HIGH_K": 25
+    },
+    "T": {
+      "HIGH_H": 15,
+      "BALANCED": 6,
+      "HIGH_K": 1
+    },
+    "B": {
+      "BALANCED": 63,
+      "HIGH_H": 29,
+      "HIGH_E": 5,
+      "HIGH_K": 6
+    },
+    "C": {
+      "HIGH_H": 12,
+      "BALANCED": 5,
+      "HIGH_K": 4
+    },
+    "S": {
+      "BALANCED": 128,
+      "HIGH_H": 100,
+      "HIGH_E": 26,
+      "HIGH_K": 22
+    }
+  },
+  "specialized_k_folios": [
+    "f39v",
+    "f40r",
+    "f50r",
+    "f50v",
+    "f94r",
+    "f107v"
+  ],
+  "specialized_h_folios": [
+    "f34v",
+    "f39r",
+    "f43r",
+    "f46r",
+    "f46v",
+    "f57r",
+    "f85r1",
+    "f94v",
+    "f95v1",
+    "f106v",
+    "f113r",
+    "f115r",
+    "f115v"
+  ],
+  "sequence_pattern": {
+    "H_FIRST": 15,
+    "K_FIRST": 6
+  },
+  "position_by_type": {
+    "HIGH_H": {
+      "mean": 0.443872678461051,
+      "std": 0.3266410051474894,
+      "n": 203
+    },
+    "BALANCED": {
+      "mean": 0.5243309994391938,
+      "std": 0.3396415654098211,
+      "n": 235
+    },
+    "HIGH_K": {
+      "mean": 0.5123729171970337,
+      "std": 0.32517185546842414,
+      "n": 58
+    },
+    "HIGH_E": {
+      "mean": 0.5484770417283151,
+      "std": 0.3476055887991701,
+      "n": 31
+    }
+  }
+}

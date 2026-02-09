@@ -1,0 +1,28 @@
+{
+  "qo_tokens": 6993,
+  "chsh_tokens": 5821,
+  "qo_kernel_total": 6111,
+  "chsh_kernel_total": 5857,
+  "qo_kernel_dist": {
+    "k": 2657,
+    "h": 828,
+    "e": 2626
+  },
+  "chsh_kernel_dist": {
+    "k": 1019,
+    "h": 374,
+    "e": 4464
+  },
+  "qo_kernel_pct": {
+    "k": 43.5,
+    "h": 13.5,
+    "e": 43.0
+  },
+  "chsh_kernel_pct": {
+    "k": 17.4,
+    "h": 6.4,
+    "e": 76.2
+  },
+  "chi2": 1373.07,
+  "p_value": 6.955567792301418e-299,
+  "significant": 

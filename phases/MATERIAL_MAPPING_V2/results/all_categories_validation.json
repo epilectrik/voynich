@@ -1,0 +1,1091 @@
+{
+  "category_stats": {
+    "gentle": {
+      "count": 2,
+      "k": 0.12857142857142856,
+      "h": 0.18095238095238095,
+      "e": 0.02857142857142857,
+      "k+e": 0.15714285714285714
+    },
+    "standard": {
+      "count": 18,
+      "k": 0.12119347717128948,
+      "h": 0.1593788760220106,
+      "e": 0.22087682741886255,
+      "k+e": 0.34207030459015203
+    },
+    "careful": {
+      "count": 107,
+      "k": 0.11411964217889774,
+      "h": 0.16208037737829273,
+      "e": 0.19918775705338387,
+      "k+e": 0.3133073992322816
+    },
+    "precision": {
+      "count": 9,
+      "k": 0.239333870162019,
+      "h": 0.154605828985928,
+      "e": 0.21550638816421555,
+      "k+e": 0.45484025832623454
+    },
+    "unknown": {
+      "count": 25,
+      "k": 0.08,
+      "h": 0.33333333333333337,
+      "e": 0.15333333333333335,
+      "k+e": 0.23333333333333334
+    }
+  },
+  "handling_groups": {
+    "careful": [
+      {
+        "para_id": "A_001",
+        "initial_ri": [
+          "fachy",
+          "hre"
+        ]
+      },
+      {
+        "para_id": "A_005",
+        "initial_ri": [
+          "odees"
+        ]
+      },
+      {
+        "para_id": "A_009",
+        "initial_ri": [
+          "kydain",
+          "ckhols"
+        ]
+      },
+      {
+        "para_id": "A_010",
+        "initial_ri": [
+          "kyd"
+        ]
+      },
+      {
+        "para_id": "A_015",
+        "initial_ri": [
+          "eoar"
+        ]
+      },
+      {
+        "para_id": "A_019",
+        "initial_ri": [
+          "dalc"
+        ]
+      },
+      {
+        "para_id": "A_021",
+        "initial_ri": [
+          "dlod"
+        ]
+      },
+      {
+        "para_id": "A_022",
+        "initial_ri": [
+          "cphy"
+        ]
+      },
+      {
+        "para_id": "A_023",
+        "initial_ri": [
+          "dks"
+        ]
+      },
+      {
+        "para_id": "A_027",
+        "initial_ri": [
+          "oheek",
+          "apc"
+        ]
+      },
+      {
+        "para_id": "A_029",
+        "initial_ri": [
+          "qko",
+          "oroc"
+        ]
+      },
+      {
+        "para_id": "A_030",
+        "initial_ri": [
+          "oloch",
+          "toee"
+        ]
+      },
+      {
+        "para_id": "A_031",
+        "initial_ri": [
+          "lys"
+        ]
+      },
+      {
+        "para_id": "A_032",
+        "initial_ri": [
+          "sholsh"
+        ]
+      },
+      {
+        "para_id": "A_033",
+        "initial_ri": [
+          "cfhod"
+        ]
+      },
+      {
+        "para_id": "A_037",
+        "initial_ri": [
+          "ho",
+          "ofy"
+        ]
+      },
+      {
+        "para_id": "A_039",
+        "initial_ri": [
+          "hod",
+          "opyd"
+        ]
+      },
+      {
+        "para_id": "A_041",
+        "initial_ri": [
+          "tydlo"
+        ]
+      },
+      {
+        "para_id": "A_042",
+        "initial_ri": [
+          "cfhodor"
+        ]
+      },
+      {
+        "para_id": "A_044",
+        "initial_ri": [
+          "foch",
+          "oporo",
+          "pchypcho"
+        ]
+      },
+      {
+        "para_id": "A_045",
+        "initial_ri": [
+          "cfho"
+        ]
+      },
+      {
+        "para_id": "A_046",
+        "initial_ri": [
+          "orc"
+        ]
+      },
+      {
+        "para_id": "A_052",
+        "initial_ri": [
+          "ldcho"
+        ]
+      },
+      {
+        "para_id": "A_054",
+        "initial_ri": [
+          "orodo"
+        ]
+      },
+      {
+        "para_id": "A_056",
+        "initial_ri": [
+          "tyd"
+        ]
+      },
+      {
+        "para_id": "A_059",
+        "initial_ri": [
+          "pdych",
+          "yfod",
+          "ys"
+        ]
+      },
+      {
+        "para_id": "A_067",
+        "initial_ri": [
+          "ypc"
+        ]
+      },
+      {
+        "para_id": "A_068",
+        "initial_ri": [
+          "opy"
+        ]
+      },
+      {
+        "para_id": "A_069",
+        "initial_ri": [
+          "olds",
+          "dsa",
+          "opchor"
+        ]
+      },
+      {
+        "para_id": "A_070",
+        "initial_ri": [
+          "opyd"
+        ]
+      },
+      {
+        "para_id": "A_071",
+        "initial_ri": [
+          "pdrair",
+          "rodsf",
+          "yo"
+        ]
+      },
+      {
+        "para_id": "A_081",
+        "initial_ri": [
+          "okol"
+        ]
+      },
+      {
+        "para_id": "A_082",
+        "initial_ri": [
+          "faii",
+          "foch",
+          "opy"
+        ]
+      },
+      {
+        "para_id": "A_084",
+        "initial_ri": [
+          "oeeock",
+          "ofych"
+        ]
+      },
+      {
+        "para_id": "A_086",
+        "initial_ri": [
+          "oks",
+          "opchea",
+          "hod"
+        ]
+      },
+      {
+        "para_id": "A_087",
+        "initial_ri": [
+          "lds"
+        ]
+      },
+      {
+        "para_id": "A_090",
+        "initial_ri": [
+          "ska"
+        ]
+      },
+      {
+        "para_id": "A_092",
+        "initial_ri": [
+          "pysaiin"
+        ]
+      },
+      {
+        "para_id": "A_095",
+        "initial_ri": [
+          "pydchd",
+          "opy"
+        ]
+      },
+      {
+        "para_id": "A_098",
+        "initial_ri": [
+          "odaiii",
+          "oal"
+        ]
+      },
+      {
+        "para_id": "A_102",
+        "initial_ri": [
+          "ocfhh",
+          "opsho",
+          "ocphor"
+        ]
+      },
+      {
+        "para_id": "A_103",
+        "initial_ri": [
+          "cfaras"
+        ]
+      },
+      {
+        "para_id": "A_105",
+        "initial_ri": [
+          "ochol",
+          "cphol"
+        ]
+      },
+      {
+        "para_id": "A_111",
+        "initial_ri": [
+          "fochof"
+        ]
+      },
+      {
+        "para_id": "A_112",
+        "initial_ri": [
+          "yqo"
+        ]
+      },
+      {
+        "para_id": "A_116",
+        "initial_ri": [
+          "tco"
+        ]
+      },
+      {
+        "para_id": "A_117",
+        "initial_ri": [
+          "eect"
+        ]
+      },
+      {
+        "para_id": "A_119",
+        "initial_ri": [
+          "ytc"
+        ]
+      },
+      {
+        "para_id": "A_124",
+        "initial_ri": [
+          "hscth"
+        ]
+      },
+      {
+        "para_id": "A_125",
+        "initial_ri": [
+          "ykeo"
+        ]
+      },
+      {
+        "para_id": "A_129",
+        "initial_ri": [
+          "hoo"
+        ]
+      },
+      {
+        "para_id": "A_133",
+        "initial_ri": [
+          "daii"
+        ]
+      },
+      {
+        "para_id": "A_134",
+        "initial_ri": [
+          "aras",
+          "for"
+        ]
+      },
+      {
+        "para_id": "A_135",
+        "initial_ri": [
+          "cphch"
+        ]
+      },
+      {
+        "para_id": "A_138",
+        "initial_ri": [
+          "oro"
+        ]
+      },
+      {
+        "para_id": "A_143",
+        "initial_ri": [
+          "chop"
+        ]
+      },
+      {
+        "para_id": "A_144",
+        "initial_ri": [
+          "hachct"
+        ]
+      },
+      {
+        "para_id": "A_146",
+        "initial_ri": [
+          "ho"
+        ]
+      },
+      {
+        "para_id": "A_149",
+        "initial_ri": [
+          "lschee"
+        ]
+      },
+      {
+        "para_id": "A_153",
+        "initial_ri": [
+          "odp",
+          "acp",
+          "ypsho"
+        ]
+      },
+      {
+        "para_id": "A_154",
+        "initial_ri": [
+          "ysho"
+        ]
+      },
+      {
+        "para_id": "A_157",
+        "initial_ri": [
+          "oro",
+          "opchod"
+        ]
+      },
+      {
+        "para_id": "A_167",
+        "initial_ri": [
+          "olsho"
+        ]
+      },
+      {
+        "para_id": "A_172",
+        "initial_ri": [
+          "cphokch"
+        ]
+      },
+      {
+        "para_id": "A_173",
+        "initial_ri": [
+          "opcheod"
+        ]
+      },
+      {
+        "para_id": "A_177",
+        "initial_ri": [
+          "kchcf",
+          "ycphko",
+          "fyd"
+        ]
+      },
+      {
+        "para_id": "A_183",
+        "initial_ri": [
+          "rare"
+        ]
+      },
+      {
+        "para_id": "A_184",
+        "initial_ri": [
+          "cphee"
+        ]
+      },
+      {
+        "para_id": "A_185",
+        "initial_ri": [
+          "chst"
+        ]
+      },
+      {
+        "para_id": "A_186",
+        "initial_ri": [
+          "otcheytch"
+        ]
+      },
+      {
+        "para_id": "A_188",
+        "initial_ri": [
+          "ckch"
+        ]
+      },
+      {
+        "para_id": "A_189",
+        "initial_ri": [
+          "oralc"
+        ]
+      },
+      {
+        "para_id": "A_190",
+        "initial_ri": [
+          "typch",
+          "pyda"
+        ]
+      },
+      {
+        "para_id": "A_191",
+        "initial_ri": [
+          "kalo"
+        ]
+      },
+      {
+        "para_id": "A_193",
+        "initial_ri": [
+          "ekea"
+        ]
+      },
+      {
+        "para_id": "A_197",
+        "initial_ri": [
+          "lsheo",
+          "aiph"
+        ]
+      },
+      {
+        "para_id": "A_198",
+        "initial_ri": [
+          "ho",
+          "heo"
+        ]
+      },
+      {
+        "para_id": "A_199",
+        "initial_ri": [
+          "eods"
+        ]
+      },
+      {
+        "para_id": "A_200",
+        "initial_ri": [
+          "hos"
+        ]
+      },
+      {
+        "para_id": "A_208",
+        "initial_ri": [
+          "rsheo",
+          "olfch",
+          "ckhod"
+        ]
+      },
+      {
+        "para_id": "A_215",
+        "initial_ri": [
+          "aiph"
+        ]
+      },
+      {
+        "para_id": "A_230",
+        "initial_ri": [
+          "sholda",
+          "opyk"
+        ]
+      },
+      {
+        "para_id": "A_231",
+        "initial_ri": [
+          "airs"
+        ]
+      },
+      {
+        "para_id": "A_247",
+        "initial_ri": [
+          "eoep"
+        ]
+      },
+      {
+        "para_id": "A_252",
+        "initial_ri": [
+          "eyd",
+          "cphoeed"
+        ]
+      },
+      {
+        "para_id": "A_253",
+        "initial_ri": [
+          "rech",
+          "olfcho"
+        ]
+      },
+      {
+        "para_id": "A_254",
+        "initial_ri": [
+          "keoef"
+        ]
+      },
+      {
+        "para_id": "A_255",
+        "initial_ri": [
+          "tod"
+        ]
+      },
+      {
+        "para_id": "A_256",
+        "initial_ri": [
+          "oair",
+          "eai"
+        ]
+      },
+      {
+        "para_id": "A_257",
+        "initial_ri": [
+          "efsh",
+          "eoepo"
+        ]
+      },
+      {
+        "para_id": "A_270",
+        "initial_ri": [
+          "cphdait"
+        ]
+      },
+      {
+        "para_id": "A_273",
+        "initial_ri": [
+          "cheot",
+          "etodaith"
+        ]
+      },
+      {
+        "para_id": "A_274",
+        "initial_ri": [
+          "olsheeo",
+          "octhoda",
+          "opalef",
+          "oepchksh",
+          "tod"
+        ]
+      },
+      {
+        "para_id": "A_275",
+        "initial_ri": [
+          "ssheo",
+          "shocp"
+        ]
+      },
+      {
+        "para_id": "A_276",
+        "initial_ri": [
+          "sheeos"
+        ]
+      },
+      {
+        "para_id": "A_277",
+        "initial_ri": [
+          "ho",
+          "okocf"
+        ]
+      },
+      {
+        "para_id": "A_281",
+        "initial_ri": [
+          "tocth",
+          "qko"
+        ]
+      },
+      {
+        "para_id": "A_287",
+        "initial_ri": [
+          "cpheeck",
+          "hdaoto",
+          "qeo",
+          "cthso"
+        ]
+      },
+      {
+        "para_id": "A_288",
+        "initial_ri": [
+          "odych",
+          "eso"
+        ]
+      },
+      {
+        "para_id": "A_302",
+        "initial_ri": [
+          "hdeect",
+          "komo"
+        ]
+      },
+      {
+        "para_id": "A_304",
+        "initial_ri": [
+          "etolcth",
+          "heea",
+          "toii"
+        ]
+      },
+      {
+        "para_id": "A_305",
+        "initial_ri": [
+          "odar",
+          "olp"
+        ]
+      },
+      {
+        "para_id": "A_325",
+        "initial_ri": [
+          "eteey",
+          "heo",
+          "heockhosho"
+        ]
+      },
+      {
+        "para_id": "A_329",
+        "initial_ri": [
+          "eso"
+        ]
+      },
+      {
+        "para_id": "A_331",
+        "initial_ri": [
+          "opolkod"
+        ]
+      },
+      {
+        "para_id": "A_337",
+        "initial_ri": [
+          "deesho"
+        ]
+      },
+      {
+        "para_id": "A_338",
+        "initial_ri": [
+          "pyda"
+        ]
+      }
+    ],
+    "standard": [
+      {
+        "para_id": "A_024",
+        "initial_ri": [
+          "olol"
+        ]
+      },
+      {
+        "para_id": "A_049",
+        "initial_ri": [
+          "tchyt"
+        ]
+      },
+      {
+        "para_id": "A_050",
+        "initial_ri": [
+          "fyd",
+          "oyt"
+        ]
+      },
+      {
+        "para_id": "A_053",
+        "initial_ri": [
+          "dypc"
+        ]
+      },
+      {
+        "para_id": "A_108",
+        "initial_ri": [
+          "oteo",
+          "for"
+        ]
+      },
+      {
+        "para_id": "A_132",
+        "initial_ri": [
+          "afd"
+        ]
+      },
+      {
+        "para_id": "A_169",
+        "initial_ri": [
+          "orpch",
+          "orkc"
+        ]
+      },
+      {
+        "para_id": "A_170",
+        "initial_ri": [
+          "ots"
+        ]
+      },
+      {
+        "para_id": "A_174",
+        "initial_ri": [
+          "otcho"
+        ]
+      },
+      {
+        "para_id": "A_187",
+        "initial_ri": [
+          "eat"
+        ]
+      },
+      {
+        "para_id": "A_195",
+        "initial_ri": [
+          "eeckh",
+          "yfai"
+        ]
+      },
+      {
+        "para_id": "A_225",
+        "initial_ri": [
+          "shck"
+        ]
+      },
+      {
+        "para_id": "A_246",
+        "initial_ri": [
+          "eai",
+          "eocph"
+        ]
+      },
+      {
+        "para_id": "A_278",
+        "initial_ri": [
+          "epsheo",
+          "rasod"
+        ]
+      },
+      {
+        "para_id": "A_301",
+        "initial_ri": [
+          "hor"
+        ]
+      },
+      {
+        "para_id": "A_303",
+        "initial_ri": [
+          "qp",
+          "cpheoct"
+        ]
+      },
+      {
+        "para_id": "A_326",
+        "initial_ri": [
+          "qko"
+        ]
+      },
+      {
+        "para_id": "A_340",
+        "initial_ri": [
+          "ockhs"
+        ]
+      }
+    ],
+    "unknown": [
+      {
+        "para_id": "A_036",
+        "initial_ri": [
+          "okchod"
+        ]
+      },
+      {
+        "para_id": "A_063",
+        "initial_ri": [
+          "inod",
+          "ealod"
+        ]
+      },
+      {
+        "para_id": "A_078",
+        "initial_ri": [
+          "cholche"
+        ]
+      },
+      {
+        "para_id": "A_094",
+        "initial_ri": [
+          "iinc",
+          "ldal"
+        ]
+      },
+      {
+        "para_id": "A_101",
+        "initial_ri": [
+          "mchor"
+        ]
+      },
+      {
+        "para_id": "A_202",
+        "initial_ri": [
+          "orchet"
+        ]
+      },
+      {
+        "para_id": "A_214",
+        "initial_ri": [
+          "yda"
+        ]
+      },
+      {
+        "para_id": "A_216",
+        "initial_ri": [
+          "ofyskyd"
+        ]
+      },
+      {
+        "para_id": "A_218",
+        "initial_ri": [
+          "ofaldo"
+        ]
+      },
+      {
+        "para_id": "A_232",
+        "initial_ri": [
+          "ramd"
+        ]
+      },
+      {
+        "para_id": "A_233",
+        "initial_ri": [
+          "yda"
+        ]
+      },
+      {
+        "para_id": "A_234",
+        "initial_ri": [
+          "dor"
+        ]
+      },
+      {
+        "para_id": "A_235",
+        "initial_ri": [
+          "rarda"
+        ]
+      },
+      {
+        "para_id": "A_240",
+        "initial_ri": [
+          "archod"
+        ]
+      },
+      {
+        "para_id": "A_250",
+        "initial_ri": [
+          "sydara"
+        ]
+      },
+      {
+        "para_id": "A_251",
+        "initial_ri": [
+          "ydcph"
+        ]
+      },
+      {
+        "para_id": "A_258",
+        "initial_ri": [
+          "oral"
+        ]
+      },
+      {
+        "para_id": "A_261",
+        "initial_ri": [
+          "rsho"
+        ]
+      },
+      {
+        "para_id": "A_264",
+        "initial_ri": [
+          "eeor"
+        ]
+      },
+      {
+        "para_id": "A_293",
+        "initial_ri": [
+          "eeso"
+        ]
+      },
+      {
+        "para_id": "A_294",
+        "initial_ri": [
+          "choch"
+        ]
+      },
+      {
+        "para_id": "A_309",
+        "initial_ri": [
+          "yta"
+        ]
+      },
+      {
+        "para_id": "A_333",
+        "initial_ri": [
+          "ldarod"
+        ]
+      },
+      {
+        "para_id": "A_334",
+        "initial_ri": [
+          "odalyda"
+        ]
+      },
+      {
+        "para_id": "A_335",
+        "initial_ri": [
+          "rshol"
+        ]
+      }
+    ],
+    "precision": [
+      {
+        "para_id": "A_085",
+        "initial_ri": [
+          "ofyc",
+          "olosh",
+          "lcho"
+        ]
+      },
+      {
+        "para_id": "A_155",
+        "initial_ri": [
+          "roi"
+        ]
+      },
+      {
+        "para_id": "A_160",
+        "initial_ri": [
+          "lsho",
+          "opchal"
+        ]
+      },
+      {
+        "para_id": "A_194",
+        "initial_ri": [
+          "opolch"
+        ]
+      },
+      {
+        "para_id": "A_196",
+        "initial_ri": [
+          "eoik"
+        ]
+      },
+      {
+        "para_id": "A_280",
+        "initial_ri": [
+          "opsho",
+          "eoef"
+        ]
+      },
+      {
+        "para_id": "A_283",
+        "initial_ri": [
+          "qkol"
+        ]
+      },
+      {
+        "para_id": "A_324",
+        "initial_ri": [
+          "qekeol",
+          "laii"
+        ]
+      },
+      {
+        "para_id": "A_332",
+        "initial_ri": [
+          "ho",
+          "efchocp"
+        ]
+      }
+    ],
+    "gentle": [
+      {
+        "para_id": "A_096",
+        "initial_ri": [
+          "chald"
+        ]
+      },
+      {
+        "para_id": "A_141",
+        "initial_ri": [
+          "oyt"
+        ]
+      }
+    ]
+  }
+}

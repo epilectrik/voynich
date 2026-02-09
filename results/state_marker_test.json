@@ -1,0 +1,14 @@
+{
+  "lines_with_multiple": 8,
+  "lines_with_am_and_y": 2,
+  "y_by_kernel": {
+    "BALANCED": 42,
+    "HIGH_H": 28,
+    "HIGH_K": 3
+  },
+  "am_by_kernel": {
+    "HIGH_K": 11,
+    "HIGH_H": 32,
+    "BALANCED": 62
+  }
+}

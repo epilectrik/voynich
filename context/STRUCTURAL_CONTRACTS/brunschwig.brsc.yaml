@@ -20,8 +20,8 @@
 meta:
   name: "Brunschwig Structural Contract"
   acronym: "BRSC"
-  version: "1.0"
-  date: "2026-01-29"
+  version: "2.1"
+  date: "2026-02-08"
   status: "DRAFT"
   layer_type: "external reference contract"
   derived_from: "Hieronymus Brunschwig, Liber de arte distillandi (1500)"
@@ -157,6 +157,490 @@ distillation_methods:
         german: "per alembicum"
         description: "Standard alembic distillation"
         degree: 2-3
+
+# ============================================================
+# ACTION TAXONOMY (Complete)
+# ============================================================
+#
+# Audit: 2026-02-06, manual review of sources/brunschwig_1500_text.txt
+# Prior extraction (v1.0) captured only PREPARATION actions.
+# This taxonomy covers ALL procedural operations across all phases.
+#
+# IMPORTANT: Brunschwig's text separates GENERAL PROTOCOLS (Book 1,
+# chapters V-XXIII) from INDIVIDUAL RECIPES (Book 2). General
+# protocols describe mid-process operations (temperature control,
+# filtering, sealing, fermentation, rectification) that apply to
+# ALL recipes based on fire degree and material type. Individual
+# recipes typically specify only preparation steps (GATHER, CHOP,
+# DISTILL) because the mid-process operations are understood from
+# the general protocols. The v1.0 extraction only read the recipes,
+# missing the entire mid-process vocabulary from Book 1.
+#
+action_taxonomy:
+  description: |
+    Complete procedural operations found in Brunschwig (1500).
+    Organized by phase in the distillation workflow.
+    German terms from OCR'd source (Early New High German).
+
+  # --------------------------------------------------------
+  # PHASE 1: COLLECTION & SELECTION
+  # --------------------------------------------------------
+  phase_1_collection:
+    name: "Collection & Selection"
+    location: "Book 2 (individual recipes) + Book 1 ch. XVII-XIX"
+    actions:
+
+      - action: "GATHER"
+        german: ["gesamlet", "genummen"]
+        english: "Collect/gather materials"
+        occurrences: "162+ (most common recipe-level action)"
+        notes: "Universal opener for plant recipes"
+
+      - action: "SELECT"
+        german: ["erleſen", "vß geleſen"]
+        english: "Carefully select/sort best specimens"
+        occurrences: "10+"
+        notes: "Quality selection before processing"
+
+      - action: "HARVEST_TIMING"
+        german: ["im end des meyens", "sant Gertruden tag"]
+        english: "Harvest at specified time"
+        notes: "Not an action per se but a mandatory parameter"
+
+  # --------------------------------------------------------
+  # PHASE 2: PREPARATION (mechanical breakdown)
+  # --------------------------------------------------------
+  phase_2_preparation:
+    name: "Preparation"
+    location: "Book 2 (individual recipes)"
+    notes: "These were the ONLY actions in the v1.0 taxonomy"
+    actions:
+
+      - action: "CHOP"
+        german: ["gehackt", "clein gehackt", "zerhackt"]
+        english: "Cut/chop into small pieces"
+        occurrences: "92+"
+        notes: "Most common mechanical operation"
+
+      - action: "STRIP"
+        german: ["gestreifft", "ab gestreifft"]
+        english: "Strip leaves from stems"
+        occurrences: "32+"
+
+      - action: "POUND"
+        german: ["gestoſſen", "stoſſen"]
+        english: "Pound/crush in mortar"
+        occurrences: "14+"
+
+      - action: "CRUSH"
+        german: ["gequetſcht", "quetſchen"]
+        english: "Crush/press (softer than POUND)"
+        occurrences: "9+"
+        notes: "Often combined with CHOP: 'gehackt vnd gequetſcht'"
+
+      - action: "BREAK"
+        german: ["ab gebrochen"]
+        english: "Break off parts (flower tips, branches)"
+        occurrences: "6+"
+
+      - action: "PLUCK"
+        german: ["geropffet", "beropff"]
+        english: "Pluck feathers (animal recipes only)"
+        occurrences: "3"
+        notes: "Animal-specific"
+
+      - action: "BORE"
+        german: ["bore ein loch"]
+        english: "Bore hole (for sap extraction)"
+        occurrences: "1"
+        notes: "Birch sap recipe only"
+
+      - action: "WASH"
+        german: ["geweſchen"]
+        english: "Wash/clean materials before processing"
+        occurrences: "4+"
+
+      - action: "KILL"
+        german: ["würg", "doͤtten", "erwürgen"]
+        english: "Kill animal (by strangling, not cutting)"
+        occurrences: "2"
+        notes: "Animal recipes specify no bloodletting"
+
+      - action: "CLEAN"
+        german: ["thü daruon alle feiſtikeit"]
+        english: "Remove unwanted parts (fat, skin)"
+        occurrences: "2"
+        notes: "Animal-specific"
+
+      - action: "POWDER"
+        german: ["gepuluert", "gepuluerten", "clein gepuluert"]
+        english: "Reduce to powder"
+        occurrences: "33"
+        notes: "For minerals, dried herbs, luting ingredients"
+
+      - action: "GRIND"
+        german: ["geriben", "geryb", "clein geriben"]
+        english: "Grind/rub fine"
+        occurrences: "Many (458 matches but includes medical uses)"
+        notes: "Overlaps with POUND; finer result"
+
+  # --------------------------------------------------------
+  # PHASE 3: PRE-TREATMENT (chemical/temporal)
+  # --------------------------------------------------------
+  phase_3_pretreatment:
+    name: "Pre-Treatment"
+    location: "Book 1 ch. XVII-XIX, Book 2 (some recipes)"
+    notes: |
+      COMPLETELY ABSENT from v1.0 taxonomy.
+      These operations transform materials BEFORE distillation.
+    actions:
+
+      - action: "MACERATE"
+        german: ["gebeiſſet", "gebeißt", "in wyn gebeiſſet"]
+        english: "Soak in liquid (wine, vinegar, aqua vitae)"
+        occurrences: "14+"
+        duration: "Overnight to 6 days"
+        examples:
+          - "in wyn gebeiſſet über nacht (soaked in wine overnight)"
+          - "ſechs tag vnder einander gebeißt (soaked 6 days together)"
+          - "vier tag in eſſich gebeißt (4 days in vinegar)"
+        notes: "Major missing operation. Transforms material before distillation."
+
+      - action: "DRY"
+        german: ["gedoͤꝛrt", "gedoͤꝛret", "trucken", "trücknen", "laſſen drucken werden"]
+        english: "Dry (in shade, in sun, in oven, passively)"
+        occurrences: "182 matches (many in procedural context)"
+        variants:
+          - "gedoͤꝛret an dem ſchatten (dried in the shade)"
+          - "laſſen trucken werden (let dry by itself)"
+          - "an der sonn (in the sun)"
+        notes: "Massive presence. Both preparation and post-process."
+
+      - action: "FERMENT"
+        german: ["putrificieren", "putrificiert"]
+        english: "Putrefy/ferment in controlled warmth"
+        occurrences: "4"
+        duration: "5-6 weeks (in horse dung) or 3-4 days (balneum marie)"
+        examples:
+          - "in ein roßmyſt verdolben fünff od ſechs wochen zů putrificieren"
+        notes: "Intentional fermentation step. Uses horse dung for gentle heat."
+
+      - action: "DIGEST"
+        german: ["digerieren"]
+        english: "Digest (alchemical: controlled gentle heating in sealed vessel)"
+        occurrences: "1 (technical term)"
+        example: "laſſen digerieren (let digest)"
+        notes: "Alchemical precursor to distillation"
+
+      - action: "MIX"
+        german: ["vermyſcht", "vermengt", "vnder einander"]
+        english: "Mix/combine materials together"
+        occurrences: "37+"
+        examples:
+          - "vnder einander vermyſt (mixed together)"
+          - "vermengt mit eyer clar (mixed with egg white)"
+        notes: "Both preparation mixing and luting compound preparation"
+
+  # --------------------------------------------------------
+  # PHASE 4: DISTILLATION (the core operation)
+  # --------------------------------------------------------
+  phase_4_distillation:
+    name: "Distillation"
+    location: "Book 1 ch. VIII-XVII, Book 2 (all recipes)"
+    actions:
+
+      - action: "DISTILL"
+        german: ["gediſtilliert", "gebꝛant", "diſtillieren", "bꝛennen"]
+        english: "Distill (by any method)"
+        occurrences: "227+ (appears in nearly every recipe)"
+        notes: |
+          'gebꝛant' (burned) and 'gediſtilliert' (distilled) used interchangeably.
+          Method determined by fire_degree and material_class.
+
+      - action: "REDISTILL"
+        german: ["zum andern mal gediſtilliert", "zum dꝛitten mal"]
+        english: "Distill again (2nd, 3rd time)"
+        occurrences: "Multiple"
+        notes: "Iterative distillation for higher quality. Up to 9x for best waters."
+
+  # --------------------------------------------------------
+  # PHASE 5: MID-PROCESS OPERATIONS (during distillation)
+  # --------------------------------------------------------
+  phase_5_midprocess:
+    name: "Mid-Process Operations"
+    location: "Book 1 ch. XI-XVII (general protocols)"
+    notes: |
+      COMPLETELY ABSENT from v1.0 taxonomy.
+      These are the GENERAL PROTOCOLS from Book 1 that apply
+      to all recipes. Individual recipes don't repeat them.
+      This is why the v1.0 recipe-only extraction missed them.
+    actions:
+
+      - action: "LUTE_THERMAL"
+        german: ["verlotiert", "verloͤtiert", "verlutiert über dz halb teil"]
+        english: "Apply clay coating to lower half of vessel for thermal protection"
+        occurrences: "9+ (verlotiert/verlutiert)"
+        applies_to: "Ash bath, sand bath, direct fire"
+        NOT_required_for: "Balneum marie"
+        quote: |
+          "ist not das du die gleser verlotiereſt über dz halb teil mit eym
+          vorgenãten leymen oder lutum als ich dir im fünfften capitel gezeigt
+          hab. Aber die in balneũ marie dürffent nit verlottiert sin."
+          (line 1345-1351)
+        translation: |
+          "It is necessary that you lute the glasses over the half part with the
+          aforementioned clay or lutum as I taught you in the fifth chapter.
+          But those in balneum marie do NOT need to be luted."
+        purpose: "Prevents glass from cracking under direct/conducted heat"
+        recipe_for_lutum: |
+          Lutum sapientie (ch. V, line 945-968):
+          Cleaned clay + 2 parts horse dung + brick powder + iron filings
+          + unslaked lime + gypite, mixed with salted water + egg white.
+        notes: |
+          The luting is THERMAL INSULATION, not vapor sealing.
+          Balneum marie's water bath provides gentle even heat that
+          won't crack glass, so this step is explicitly skipped.
+
+      - action: "LUTE_JOINTS"
+        german: ["verlutiert die zwei gleser vff einand", "verlutt er das wol dar vff"]
+        english: "Seal joints between apparatus parts with clay to prevent vapor escape"
+        occurrences: "Multiple (general protocol)"
+        quote: |
+          "verlutiert die zwei gleser vff einand dz kein ohtem dar vß gang"
+          (line 1583-1584)
+        translation: "Lute the two glasses together so no breath/vapor escapes"
+        applies_to: "All distillation methods (alembic on cucurbit)"
+        purpose: "Prevent vapor loss at glass-to-glass joints"
+        notes: |
+          DISTINCT from thermal luting. This seals the alembic head
+          onto the cucurbit. Uses the same lutum compound but for
+          a different purpose: vapor containment, not heat protection.
+          THIS IS WHY STIRRING DOESN'T EXIST: vessel is sealed.
+
+      - action: "PLUG"
+        german: ["verſtopfft", "wol verſtopfft mit em zapffen"]
+        english: "Plug opening with wooden stopper"
+        occurrences: "Many (both mid-process and storage)"
+        examples:
+          - "wol verſtopfft mit em zapffen (well stopped with a plug) - line 1738"
+          - "verſtopff das wynt od lufftloch (stop the air/vent hole) - line 2043"
+          - "wol verſtopfft vnd vermacht (well stopped and closed) - line 1818"
+        dual_use:
+          mid_process: "Plug vessel during fermentation/maceration"
+          fire_regulation: "Plug/unplug air vents to control heat intensity"
+          storage: "Plug vessel for long-term storage"
+        notes: |
+          verstopffen is the MOST COMMON sealing word in Brunschwig.
+          It means plugging/stopping an opening, NOT luting with clay.
+          Used for wooden stoppers (zapffen) in vessel mouths AND
+          for controlling fire via air vent holes in the furnace.
+
+      - action: "COVER"
+        german: ["vermacht", "verdeckt", "zudecken"]
+        english: "Close/cover vessel (general closure)"
+        occurrences: "Multiple"
+        examples:
+          - "wol vermacht (well closed) - line 524"
+          - "wol verdeckt (well covered) - line 13252"
+          - "ein deckel (a lid) - line 1937"
+        notes: |
+          General closure term. Less specific than verlutiert or
+          verstopfft. Often combined: "wol verstopfft vnd vermacht"
+          (well plugged and closed). Likely corresponds to putting
+          a lid or cover on a vessel.
+
+      - action: "REGULATE_FIRE"
+        german: ["verſtopff das wynt loch", "lufftloch"]
+        english: "Regulate heat by opening/closing air vents"
+        occurrences: "Multiple (general protocol)"
+        notes: "Primary temperature control mechanism"
+
+      - action: "MONITOR_DRIPS"
+        german: ["wie die glock ſchlecht eyns zwei das ein tropffen felt"]
+        english: "Count drip rate (one drop per clock-strike)"
+        occurrences: "Multiple (general protocol)"
+        responses:
+          too_fast: "Reduce fire (close vents)"
+          stopped: "Distillation complete, begin cooling"
+        notes: "Primary process monitoring method"
+
+      - action: "MONITOR_TEMP"
+        german: ["ein finger dar in gelyden magſt"]
+        english: "Finger test for water bath temperature"
+        occurrences: "Multiple (general protocol)"
+        applies_to: "Degrees 1-2 (balneum marie)"
+        notes: "Must be able to bear finger in water indefinitely"
+
+      - action: "REPLENISH"
+        german: ["hab allzit warm waſſer do mit du den keſſel wider fülleſt"]
+        english: "Refill water bath with warm water"
+        occurrences: "Multiple (general protocol)"
+        notes: "Must use WARM water (cold water cracks glass)"
+
+      - action: "COOL"
+        german: ["laſſen kalt werden", "laſſ zeſton über nacht ʒů bekalten"]
+        english: "Let cool passively (overnight mandatory)"
+        occurrences: "Multiple (general protocol)"
+        status: "MANDATORY - thermal shock breaks glass"
+        duration: "Overnight minimum"
+        notes: "Never remove hot glass. Never add cold water."
+
+  # --------------------------------------------------------
+  # PHASE 6: POST-DISTILLATION (purification & quality)
+  # --------------------------------------------------------
+  phase_6_postprocess:
+    name: "Post-Distillation"
+    location: "Book 1 ch. XXI-XXIII"
+    notes: |
+      COMPLETELY ABSENT from v1.0 taxonomy.
+      These operations improve and validate the distillate.
+    actions:
+
+      - action: "STRAIN"
+        german: ["geſeigt", "ſeig das luter obẽ ab"]
+        english: "Strain/decant the clear liquid"
+        occurrences: "4+"
+        notes: "Separate clear distillate from sediment"
+
+      - action: "FILTER"
+        german: ["durch ein filtz diſtillierẽ", "gelütert"]
+        english: "Filter through felt cloth"
+        occurrences: "18+ (filtz/filter/lütert combined)"
+        notes: "Per filtrum distillation is a separate method (ch. VIII)"
+
+      - action: "RECTIFY"
+        german: ["rectificieren", "rechtfertigen", "gerectificiert"]
+        english: "Rectify (purify distillate in sun or by redistillation)"
+        occurrences: "10+"
+        duration: "40 days in sun (standard), or redistillation"
+        method: "Glass in sand, exposed to sun for 40 days"
+        notes: "Removes 'bꝛant' (burnt taste) and tempers complexion"
+
+      - action: "SETTLE"
+        german: ["die dꝛiebe an den boden"]
+        english: "Let sediment settle to bottom"
+        occurrences: "Several"
+        reagent: "Strong wine vinegar (few drops per pound)"
+        notes: "Adding vinegar forces sediment to settle"
+
+      - action: "POUR"
+        german: ["güß", "gegoſſen", "ſchütte"]
+        english: "Pour liquid (over herbs, into vessel, etc.)"
+        occurrences: "11+"
+        notes: "Used in re-infusion cycles (pour distillate back over fresh herbs)"
+
+      - action: "COLLECT"
+        german: ["das waſſer...in ein glas"]
+        english: "Collect distillate into receiving vessel"
+        occurrences: "10+"
+
+      - action: "MELT"
+        german: ["zerlaſſen"]
+        english: "Melt/dissolve (wax, tallow, etc.)"
+        occurrences: "10+"
+        notes: "Primarily for vessel preparation (waxing jugs)"
+
+  # --------------------------------------------------------
+  # PHASE 7: STORAGE & PRESERVATION
+  # --------------------------------------------------------
+  phase_7_storage:
+    name: "Storage & Preservation"
+    location: "Book 1 ch. XXII-XXIII"
+    actions:
+
+      - action: "SEAL_VESSEL"
+        german: ["wol verſtopfft", "verbunden mit eym leder"]
+        english: "Seal storage vessel (wooden plug, leather binding)"
+        occurrences: "Many"
+        notes: |
+          Uses PLUG (verstopfft) + leather binding. Different from
+          mid-process LUTE_JOINTS or LUTE_THERMAL.
+          "wol verſtopfft mit eim hültzen zapffen gedꝛeget von einem
+          dꝛeger vnd angehencket mit eym kettlin von meſſin dꝛete"
+          (well stopped with a wooden plug turned by a turner and
+          attached with a chain of brass wire) - line 2716-2718
+
+      - action: "LABEL"
+        german: ["blihen bꝛieff dar an gehenckt"]
+        english: "Attach lead label with contents and date"
+        occurrences: "Several"
+        notes: "Lead labels resist mice and moisture"
+
+      - action: "STORE"
+        german: ["behalten", "in eyn keller gſetzt"]
+        english: "Store in appropriate location"
+        conditions: "Not too hot, not too cold, not too damp"
+
+      - action: "RENEW"
+        german: ["ernüwert"]
+        english: "Renew (re-infuse old water with fresh herbs)"
+        occurrences: "Several"
+        notes: "Annual renewal recommended. Max 2x, then discard."
+
+  # --------------------------------------------------------
+  # PHASE SUMMARY
+  # --------------------------------------------------------
+  phase_summary:
+    total_actions: 36
+    by_phase:
+      collection: 3
+      preparation: 12
+      pretreatment: 5
+      distillation: 2
+      midprocess: 9   # LUTE_THERMAL, LUTE_JOINTS, PLUG, COVER, REGULATE, MONITOR_DRIPS, MONITOR_TEMP, REPLENISH, COOL
+      postprocess: 7
+      storage: 4
+    v1_coverage: "12 of 36 (33%)"
+    v1_gap: |
+      v1.0 captured only preparation + distill.
+      Completely missed: pretreatment (MACERATE, DRY, FERMENT, MIX),
+      mid-process (LUTE_THERMAL, LUTE_JOINTS, PLUG, COVER, REGULATE, MONITOR, COOL),
+      post-process (STRAIN, FILTER, RECTIFY, SETTLE),
+      and storage (SEAL_VESSEL, LABEL, RENEW).
+    v2_seal_correction: |
+      v2.0 had a single SEAL action conflating four distinct operations.
+      v2.1 splits into LUTE_THERMAL (heat protection), LUTE_JOINTS
+      (vapor containment), PLUG (stoppers/vents), COVER (lids).
+      Brunschwig uses different German vocabulary for each.
+      CRITICAL: Luting is NOT required for balneum marie (explicit in text).
+
+  # --------------------------------------------------------
+  # CRITICAL ABSENCE: STIR
+  # --------------------------------------------------------
+  absent_stir:
+    searched_terms: ["rüren", "rueren", "umbrüren"]
+    occurrences: "0 (zero genuine stirring references)"
+    explanation: |
+      Stirring is genuinely absent from Brunschwig because
+      distillation is a SEALED VESSEL process. The alembic head
+      is luted onto the cucurbit (LUTE_JOINTS) before heating.
+      There is no access to the contents during distillation.
+      Temperature is controlled entirely from the outside
+      (fire regulation via air vents, PLUG/unplug vent holes).
+      Quality is judged by observing the output (drip rate,
+      not internal inspection).
+      This absence is NOT an extraction gap — it is a real
+      feature of distillation practice.
+
+  # --------------------------------------------------------
+  # ITERATIVE LOOP STRUCTURE
+  # --------------------------------------------------------
+  iterative_structure:
+    description: |
+      Brunschwig's highest-quality protocols are explicitly iterative:
+      POUR distillate back over fresh herbs → MACERATE → REDISTILL.
+      This cycle is repeated 3x (standard) or up to 9x (best quality).
+    quote: "ye offter dz gſchicht ye edler das waſſer würt"
+    translation: "The more often this happens, the nobler the water becomes"
+    max_iterations: 9
+    standard_iterations: 3
+    voynich_mapping_hypothesis: |
+      Maps to suffix control-flow semantics (C171):
+      -aiin/-ain = CHECKPOINT (end of cycle, test quality)
+      -iin = ITERATE (continue loop)
+      -hy = VERIFY (quality check)
+      The sealed-vessel + iterative-loop structure matches
+      the Voynich grammar's control-flow architecture.
 
 # ============================================================
 # SENSORY MONITORING PROTOCOL
@@ -508,15 +992,58 @@ voynich_mapping:
 # ============================================================
 provenance:
   primary_source: "sources/brunschwig_1500_text.txt"
-  translation: "sources/brunschwig_english_translation.md"
-  curated_data: "data/brunschwig_curated_v3.json"
+  primary_source_note: |
+    ALWAYS consult the OCR source directly for Brunschwig claims.
+    The curated JSON and AI translation are convenience layers that
+    have been shown to conflate distinct operations (e.g. the SEAL
+    merge in v2.0). The OCR is noisy but preserves distinctions that
+    derived sources lose.
+  translation: "sources/brunschwig_english_translation.md (UNRELIABLE - AI-generated, not verified)"
+  curated_data: "data/brunschwig_curated_v3.json (CONVENIENCE ONLY - known to conflate operations)"
+
+  audit_history:
+    - version: "1.0"
+      date: "2026-01-29"
+      scope: "Recipe-level extraction only (Book 2)"
+      actions_captured: 11
+      gap: "Missed all Book 1 general protocols"
+    - version: "2.0"
+      date: "2026-02-06"
+      scope: "Full manual audit of original German text (Book 1 + Book 2)"
+      actions_captured: 33
+      method: "Manual reading of OCR'd German source + systematic grep for verb stems"
+      key_finding: |
+        v1.0 only extracted from individual recipes (Book 2), which
+        only specify preparation steps. The complete procedural vocabulary
+        is in Book 1 (chapters V-XXIII), which describes general protocols
+        for temperature control, sealing, monitoring, filtering, fermenting,
+        rectifying, and storage. These apply to ALL recipes by reference.
+    - version: "2.1"
+      date: "2026-02-08"
+      scope: "Seal operation differentiation from OCR source"
+      actions_captured: 36
+      method: "Systematic search for verlutiert/verstopfft/vermacht/verdeckt in OCR"
+      key_finding: |
+        v2.0 conflated four distinct sealing operations under one SEAL action.
+        OCR source reveals Brunschwig uses different German vocabulary for:
+        1. LUTE_THERMAL (verlotiert über dz halb teil): clay coating on vessel
+           bottom for heat protection. NOT needed for balneum marie.
+        2. LUTE_JOINTS (verlutiert vff einand): clay at glass-to-glass joints
+           to prevent vapor escape. Required for distillation apparatus.
+        3. PLUG (verstopfft mit zapffen): wooden stopper in vessel mouth
+           or furnace air vents. Dual-use: storage + fire regulation.
+        4. COVER (vermacht/verdeckt): general closure, lids.
+        The curated JSON data (brunschwig_curated_v3.json) had merged these
+        into a single SEAL action, which obscured a key distinction:
+        balneum marie explicitly does NOT require luting (line 1348).
 
   related_constraints:
     - "C493: Brunschwig grammar embedding (0 violations)"
     - "C527: Suffix fire-degree correlation"
     - "C536: Animal material REGIME routing"
+    - "C171: No material encoding in execution grammar"
 
   related_fits:
-    - "F-BRU-001 through F-BRU-009"
+    - "F-BRU-001 through F-BRU-015"
 
   comparison_document: "context/SPECULATIVE/brunschwig_comparison.md"

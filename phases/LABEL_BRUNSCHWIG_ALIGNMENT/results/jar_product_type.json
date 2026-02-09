@@ -1,0 +1,325 @@
+{
+  "test": "jar_product_type",
+  "question": "Do jar MIDDLEs cluster by Brunschwig product type?",
+  "summary": {
+    "total_jars": 16,
+    "jars_with_b_connection": 16,
+    "product_distribution": {
+      "WATER_GENTLE": 2,
+      "PRECISION": 13,
+      "OIL_RESIN": 1
+    },
+    "chi2": 27.5,
+    "p_value": 4.624519629175551e-06,
+    "significant": true
+  },
+  "folio_coherence": {
+    "multi_jar_folios": 5,
+    "same_product_folios": 2,
+    "coherence_rate": 0.4
+  },
+  "jar_details": [
+    {
+      "jar": "dordod",
+      "folio": "f102r1",
+      "middle": "od",
+      "b_folio_count": 52,
+      "total_b_tokens": 173,
+      "regime_distribution": {
+        "3": 46,
+        "2": 90,
+        "4": 37
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2658959537572254,
+        "WATER_GENTLE": 0.5202312138728323,
+        "PRECISION": 0.2138728323699422
+      },
+      "dominant_product": "WATER_GENTLE"
+    },
+    {
+      "jar": "dardsh",
+      "folio": "f102r1",
+      "middle": "sh",
+      "b_folio_count": 49,
+      "total_b_tokens": 109,
+      "regime_distribution": {
+        "4": 55,
+        "3": 33,
+        "2": 21
+      },
+      "product_scores": {
+        "PRECISION": 0.5045871559633027,
+        "OIL_RESIN": 0.30275229357798167,
+        "WATER_GENTLE": 0.1926605504587156
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "ddardsh",
+      "folio": "f102r2",
+      "middle": "sh",
+      "b_folio_count": 49,
+      "total_b_tokens": 109,
+      "regime_distribution": {
+        "4": 55,
+        "3": 33,
+        "2": 21
+      },
+      "product_scores": {
+        "PRECISION": 0.5045871559633027,
+        "OIL_RESIN": 0.30275229357798167,
+        "WATER_GENTLE": 0.1926605504587156
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "okrolda",
+      "folio": "f102r2",
+      "middle": "ol",
+      "b_folio_count": 76,
+      "total_b_tokens": 759,
+      "regime_distribution": {
+        "3": 189,
+        "2": 159,
+        "4": 410,
+        "1": 1
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2490118577075099,
+        "WATER_GENTLE": 0.20948616600790515,
+        "PRECISION": 0.5401844532279315,
+        "WATER_STANDARD": 0.0013175230566534915
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "keoraiiin",
+      "folio": "f102v1",
+      "middle": "or",
+      "b_folio_count": 77,
+      "total_b_tokens": 436,
+      "regime_distribution": {
+        "2": 132,
+        "4": 181,
+        "1": 9,
+        "3": 114
+      },
+      "product_scores": {
+        "WATER_GENTLE": 0.30275229357798167,
+        "PRECISION": 0.4151376146788991,
+        "WATER_STANDARD": 0.020642201834862386,
+        "OIL_RESIN": 0.26146788990825687
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "porshols",
+      "folio": "f102v2",
+      "middle": "ol",
+      "b_folio_count": 76,
+      "total_b_tokens": 759,
+      "regime_distribution": {
+        "3": 189,
+        "2": 159,
+        "4": 410,
+        "1": 1
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2490118577075099,
+        "WATER_GENTLE": 0.20948616600790515,
+        "PRECISION": 0.5401844532279315,
+        "WATER_STANDARD": 0.0013175230566534915
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "okolky",
+      "folio": "f102v2",
+      "middle": "olk",
+      "b_folio_count": 22,
+      "total_b_tokens": 27,
+      "regime_distribution": {
+        "2": 5,
+        "3": 13,
+        "4": 9
+      },
+      "product_scores": {
+        "WATER_GENTLE": 0.18518518518518517,
+        "OIL_RESIN": 0.48148148148148145,
+        "PRECISION": 0.3333333333333333
+      },
+      "dominant_product": "OIL_RESIN"
+    },
+    {
+      "jar": "daramdal",
+      "folio": "f88v",
+      "middle": "am",
+      "b_folio_count": 62,
+      "total_b_tokens": 172,
+      "regime_distribution": {
+        "2": 59,
+        "4": 85,
+        "1": 3,
+        "3": 25
+      },
+      "product_scores": {
+        "WATER_GENTLE": 0.3430232558139535,
+        "PRECISION": 0.4941860465116279,
+        "WATER_STANDARD": 0.01744186046511628,
+        "OIL_RESIN": 0.14534883720930233
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "okaradag",
+      "folio": "f99r",
+      "middle": "da",
+      "b_folio_count": 12,
+      "total_b_tokens": 13,
+      "regime_distribution": {
+        "2": 4,
+        "4": 6,
+        "3": 3
+      },
+      "product_scores": {
+        "WATER_GENTLE": 0.3076923076923077,
+        "PRECISION": 0.46153846153846156,
+        "OIL_RESIN": 0.23076923076923078
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "oparal",
+      "folio": "f99r",
+      "middle": "op",
+      "b_folio_count": 27,
+      "total_b_tokens": 36,
+      "regime_distribution": {
+        "2": 15,
+        "4": 14,
+        "3": 7
+      },
+      "product_scores": {
+        "WATER_GENTLE": 0.4166666666666667,
+        "PRECISION": 0.3888888888888889,
+        "OIL_RESIN": 0.19444444444444445
+      },
+      "dominant_product": "WATER_GENTLE"
+    },
+    {
+      "jar": "tsholdy",
+      "folio": "f99r",
+      "middle": "ol",
+      "b_folio_count": 76,
+      "total_b_tokens": 759,
+      "regime_distribution": {
+        "3": 189,
+        "2": 159,
+        "4": 410,
+        "1": 1
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2490118577075099,
+        "WATER_GENTLE": 0.20948616600790515,
+        "PRECISION": 0.5401844532279315,
+        "WATER_STANDARD": 0.0013175230566534915
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "yteoldy",
+      "folio": "f99r",
+      "middle": "ol",
+      "b_folio_count": 76,
+      "total_b_tokens": 759,
+      "regime_distribution": {
+        "3": 189,
+        "2": 159,
+        "4": 410,
+        "1": 1
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2490118577075099,
+        "WATER_GENTLE": 0.20948616600790515,
+        "PRECISION": 0.5401844532279315,
+        "WATER_STANDARD": 0.0013175230566534915
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "okaramy",
+      "folio": "f99v",
+      "middle": "ar",
+      "b_folio_count": 78,
+      "total_b_tokens": 670,
+      "regime_distribution": {
+        "2": 167,
+        "4": 288,
+        "1": 12,
+        "3": 203
+      },
+      "product_scores": {
+        "WATER_GENTLE": 0.24925373134328357,
+        "PRECISION": 0.4298507462686567,
+        "WATER_STANDARD": 0.01791044776119403,
+        "OIL_RESIN": 0.3029850746268657
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "okoldody",
+      "folio": "f99v",
+      "middle": "ol",
+      "b_folio_count": 76,
+      "total_b_tokens": 759,
+      "regime_distribution": {
+        "3": 189,
+        "2": 159,
+        "4": 410,
+        "1": 1
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2490118577075099,
+        "WATER_GENTLE": 0.20948616600790515,
+        "PRECISION": 0.5401844532279315,
+        "WATER_STANDARD": 0.0013175230566534915
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "darolaly",
+      "folio": "f99v",
+      "middle": "ol",
+      "b_folio_count": 76,
+      "total_b_tokens": 759,
+      "regime_distribution": {
+        "3": 189,
+        "2": 159,
+        "4": 410,
+        "1": 1
+      },
+      "product_scores": {
+        "OIL_RESIN": 0.2490118577075099,
+        "WATER_GENTLE": 0.20948616600790515,
+        "PRECISION": 0.5401844532279315,
+        "WATER_STANDARD": 0.0013175230566534915
+      },
+      "dominant_product": "PRECISION"
+    },
+    {
+      "jar": "oralas",
+      "folio": "f99v",
+      "middle": "ala",
+      "b_folio_count": 1,
+      "total_b_tokens": 1,
+      "regime_distribution": {
+        "4": 1
+      },
+      "product_scores": {
+        "PRECISION": 1.0
+      },
+      "dominant_product": "PRECISION"
+    }
+  ]
+}

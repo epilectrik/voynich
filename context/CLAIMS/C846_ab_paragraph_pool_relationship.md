@@ -8,6 +8,10 @@
 
 A paragraphs provide vocabulary pools without specific pairing to B paragraphs. The A→B relationship is POOL-BASED, not ADDRESS-BASED. Best-match relationships are dominated by pool size, not specific correspondence.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at paragraph level (306 units).
+> C885 establishes that A FOLIO (114 units) achieves 81% vocabulary coverage for B paragraphs,
+> compared to 58% at paragraph level. Folio-level aggregation is the operational unit.
+
 ## Evidence
 
 Testing paragraph-to-paragraph correspondence:

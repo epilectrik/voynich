@@ -1,0 +1,72 @@
+{
+  "qo_exclusive_middles": [
+    "kai",
+    "kc",
+    "te",
+    "ke",
+    "keeo",
+    "keed",
+    "kec",
+    "ka",
+    "tc",
+    "kch",
+    "tch",
+    "keo",
+    "pch"
+  ],
+  "chsh_exclusive_middles": [
+    "ect",
+    "et",
+    "ok",
+    "ot",
+    "eod",
+    "ct",
+    "ek",
+    "eek",
+    "eck"
+  ],
+  "qo_tier_distribution_types": {
+    "EXTENDED": 9,
+    "PREP": 4
+  },
+  "chsh_tier_distribution_types": {
+    "EXTENDED": 4,
+    "THERMO": 5
+  },
+  "qo_mapping": {
+    "kai": "EXTENDED",
+    "kc": "EXTENDED",
+    "te": "PREP",
+    "ke": "EXTENDED",
+    "keeo": "EXTENDED",
+    "keed": "EXTENDED",
+    "kec": "EXTENDED",
+    "ka": "EXTENDED",
+    "tc": "PREP",
+    "kch": "EXTENDED",
+    "tch": "PREP",
+    "keo": "EXTENDED",
+    "pch": "PREP"
+  },
+  "chsh_mapping": {
+    "ect": "EXTENDED",
+    "et": "THERMO",
+    "ok": "THERMO",
+    "ot": "THERMO",
+    "eod": "EXTENDED",
+    "ct": "THERMO",
+    "ek": "THERMO",
+    "eek": "EXTENDED",
+    "eck": "EXTENDED"
+  },
+  "qo_token_tiers": {
+    "THERMO": 2784,
+    "EXTENDED": 779,
+    "PREP": 374
+  },
+  "chsh_token_tiers": {
+    "THERMO": 988,
+    "EXTENDED": 248,
+    "PREP": 46
+  }
+}

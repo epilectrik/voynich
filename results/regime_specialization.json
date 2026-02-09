@@ -1,0 +1,694 @@
+{
+  "regime_specializations": {
+    "REGIME_4": {
+      "MIXED": 8,
+      "DISTILL": 8,
+      "RECOVERY": 8
+    },
+    "REGIME_2": {
+      "MIXED": 9,
+      "DISTILL": 1
+    },
+    "REGIME_3": {
+      "MIXED": 13,
+      "DISTILL": 3
+    },
+    "REGIME_1": {
+      "MIXED": 28,
+      "DISTILL": 2,
+      "RECOVERY": 1
+    }
+  },
+  "regime_para_types": {
+    "REGIME_4": {
+      "HIGH_H": 47,
+      "OTHER": 23,
+      "HIGH_K": 22
+    },
+    "REGIME_2": {
+      "OTHER": 49,
+      "HIGH_H": 22,
+      "HIGH_K": 8
+    },
+    "REGIME_3": {
+      "OTHER": 40,
+      "HIGH_H": 46,
+      "HIGH_K": 5
+    },
+    "REGIME_1": {
+      "HIGH_H": 88,
+      "OTHER": 154,
+      "HIGH_K": 23
+    }
+  },
+  "folio_profiles": {
+    "f26r": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f26v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 5,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    "f31r": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f31v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f33r": {
+      "k_count": 1,
+      "h_count": 1,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f33v": {
+      "k_count": 1,
+      "h_count": 2,
+      "total": 4,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f34v": {
+      "k_count": 0,
+      "h_count": 4,
+      "total": 4,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f39r": {
+      "k_count": 1,
+      "h_count": 4,
+      "total": 5,
+      "specialization": "DISTILL",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f39v": {
+      "k_count": 3,
+      "h_count": 1,
+      "total": 4,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f40r": {
+      "k_count": 3,
+      "h_count": 0,
+      "total": 4,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f40v": {
+      "k_count": 1,
+      "h_count": 0,
+      "total": 4,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f41r": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f41v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f43r": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 3,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f43v": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f46r": {
+      "k_count": 0,
+      "h_count": 6,
+      "total": 6,
+      "specialization": "DISTILL",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f46v": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 3,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f48r": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    "f48v": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    "f50r": {
+      "k_count": 2,
+      "h_count": 2,
+      "total": 4,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f50v": {
+      "k_count": 2,
+      "h_count": 1,
+      "total": 4,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f55r": {
+      "k_count": 1,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f55v": {
+      "k_count": 2,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f57r": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 3,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f66r": {
+      "k_count": 1,
+      "h_count": 5,
+      "total": 8,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "T"
+    },
+    "f66v": {
+      "k_count": 1,
+      "h_count": 2,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f75r": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 7,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f75v": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 5,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f76r": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 4,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f76v": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 5,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f77r": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "B"
+    },
+    "f77v": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 7,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f78r": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f78v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f79r": {
+      "k_count": 0,
+      "h_count": 4,
+      "total": 8,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f79v": {
+      "k_count": 1,
+      "h_count": 0,
+      "total": 6,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f80r": {
+      "k_count": 1,
+      "h_count": 2,
+      "total": 6,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f80v": {
+      "k_count": 4,
+      "h_count": 6,
+      "total": 13,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f81r": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 5,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "B"
+    },
+    "f81v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f82r": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 7,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f82v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 7,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f83r": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 5,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f83v": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "B"
+    },
+    "f84r": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f84v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    "f85r1": {
+      "k_count": 0,
+      "h_count": 10,
+      "total": 14,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "T"
+    },
+    "f85r2": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 2,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "C"
+    },
+    "f86v4": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "C"
+    },
+    "f86v6": {
+      "k_count": 2,
+      "h_count": 4,
+      "total": 8,
+      "specialization": "MIXED",
+      "regime": "REGIME_4",
+      "section": "C"
+    },
+    "f86v5": {
+      "k_count": 2,
+      "h_count": 2,
+      "total": 5,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "C"
+    },
+    "f86v3": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "C"
+    },
+    "f94r": {
+      "k_count": 2,
+      "h_count": 0,
+      "total": 3,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f94v": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 4,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f95r1": {
+      "k_count": 1,
+      "h_count": 1,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f95r2": {
+      "k_count": 1,
+      "h_count": 1,
+      "total": 3,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    "f95v2": {
+      "k_count": 2,
+      "h_count": 0,
+      "total": 2,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f95v1": {
+      "k_count": 1,
+      "h_count": 5,
+      "total": 6,
+      "specialization": "DISTILL",
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    "f103r": {
+      "k_count": 0,
+      "h_count": 2,
+      "total": 11,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    "f103v": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 10,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f104r": {
+      "k_count": 1,
+      "h_count": 5,
+      "total": 11,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f104v": {
+      "k_count": 0,
+      "h_count": 6,
+      "total": 12,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    "f105r": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 8,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    "f105v": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 10,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    "f106r": {
+      "k_count": 0,
+      "h_count": 8,
+      "total": 15,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f106v": {
+      "k_count": 0,
+      "h_count": 13,
+      "total": 15,
+      "specialization": "DISTILL",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f107r": {
+      "k_count": 5,
+      "h_count": 3,
+      "total": 15,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    "f107v": {
+      "k_count": 11,
+      "h_count": 1,
+      "total": 18,
+      "specialization": "RECOVERY",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f108r": {
+      "k_count": 2,
+      "h_count": 2,
+      "total": 15,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f108v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 9,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f111r": {
+      "k_count": 0,
+      "h_count": 1,
+      "total": 7,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f111v": {
+      "k_count": 0,
+      "h_count": 5,
+      "total": 10,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f112r": {
+      "k_count": 2,
+      "h_count": 1,
+      "total": 12,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f112v": {
+      "k_count": 0,
+      "h_count": 0,
+      "total": 13,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f113r": {
+      "k_count": 0,
+      "h_count": 14,
+      "total": 20,
+      "specialization": "DISTILL",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f113v": {
+      "k_count": 1,
+      "h_count": 3,
+      "total": 15,
+      "specialization": "MIXED",
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    "f114r": {
+      "k_count": 0,
+      "h_count": 5,
+      "total": 10,
+      "specialization": "MIXED",
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    "f114v": {
+      "k_count": 0,
+      "h_count": 7,
+      "total": 11,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    "f115r": {
+      "k_count": 0,
+      "h_count": 7,
+      "total": 10,
+      "specialization": "DISTILL",
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    "f115v": {
+      "k_count": 0,
+      "h_count": 9,
+      "total": 12,
+      "specialization": "DISTILL",
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    "f116r": {
+      "k_count": 0,
+      "h_count": 3,
+      "total": 7,
+      "specialization": "MIXED",
+      "regime": "REGIME_3",
+      "section": "S"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "test": "FOLIO_POSITION_VS_CLUSTER_TYPE",
+  "n_paragraphs": 342,
+  "contingency_table": {
+    "FIRST": {
+      "LINKER_RICH": 27,
+      "STANDARD": 35,
+      "SHORT_RI_HEAVY": 5,
+      "NO_RI": 10,
+      "MIDDLE_RI_ONLY": 9
+    },
+    "MIDDLE": {
+      "SHORT_RI_HEAVY": 49,
+      "LINKER_RICH": 27,
+      "NO_RI": 26,
+      "STANDARD": 25,
+      "MIDDLE_RI_ONLY": 15
+    },
+    "LAST": {
+      "MIDDLE_RI_ONLY": 29,
+      "LINKER_RICH": 14,
+      "STANDARD": 19,
+      "SHORT_RI_HEAVY": 8,
+      "NO_RI": 16
+    },
+    "ONLY": {
+      "LINKER_RICH": 19,
+      "MIDDLE_RI_ONLY": 5,
+      "NO_RI": 1,
+      "STANDARD": 3
+    }
+  },
+  "chi_squared": 102.22209039604539,
+  "degrees_of_freedom": 12,
+  "significance": "HIGHLY_SIGNIFICANT",
+  "enrichment": {
+    "FIRST": {
+      "LINKER_RICH": 1.2341619887730553,
+      "MIDDLE_RI_ONLY": 0.6170809943865276,
+      "NO_RI": 0.750329091706889,
+      "SHORT_RI_HEAVY": 0.3207051762940735,
+      "STANDARD": 1.6973908111174134
+    },
+    "MIDDLE": {
+      "LINKER_RICH": 0.7474502185526954,
+      "MIDDLE_RI_ONLY": 0.6228751821272462,
+      "NO_RI": 1.1815041190539464,
+      "SHORT_RI_HEAVY": 1.9034529759200363,
+      "STANDARD": 0.7342837512882171
+    },
+    "LAST": {
+      "LINKER_RICH": 0.6399358460304732,
+      "MIDDLE_RI_ONLY": 1.9883720930232558,
+      "NO_RI": 1.2005265467310224,
+      "SHORT_RI_HEAVY": 0.5131282820705176,
+      "STANDARD": 0.9214407260351674
+    },
+    "ONLY": {
+      "LINKER_RICH": 2.667487684729064,
+      "MIDDLE_RI_ONLY": 1.0529556650246306,
+      "NO_RI": 0.23045822102425878,
+      "SHORT_RI_HEAVY": 0.0,
+      "STANDARD": 0.44686411149825783
+    }
+  },
+  "strongest_patterns": [
+    [
+      "ONLY",
+      "LINKER_RICH",
+      2.667487684729064
+    ],
+    [
+      "ONLY",
+      "SHORT_RI_HEAVY",
+      0.0
+    ],
+    [
+      "LAST",
+      "MIDDLE_RI_ONLY",
+      1.9883720930232558
+    ],
+    [
+      "MIDDLE",
+      "SHORT_RI_HEAVY",
+      1.9034529759200363
+    ],
+    [
+      "ONLY",
+      "NO_RI",
+      0.23045822102425878
+    ],
+    [
+      "FIRST",
+      "STANDARD",
+      1.6973908111174134
+    ],
+    [
+      "FIRST",
+      "SHORT_RI_HEAVY",
+      0.3207051762940735
+    ],
+    [
+      "ONLY",
+      "STANDARD",
+      0.44686411149825783
+    ]
+  ],
+  "verdict": "POSITION_PREDICTS_CLUSTER",
+  "cluster_type_distribution": {
+    "LINKER_RICH": 87,
+    "MIDDLE_RI_ONLY": 58,
+    "SHORT_RI_HEAVY": 62,
+    "STANDARD": 82,
+    "NO_RI": 53
+  }
+}

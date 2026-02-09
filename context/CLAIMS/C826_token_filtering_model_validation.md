@@ -6,6 +6,10 @@
 
 The **C502 token-filtering model is the correct interpretation** of A->B mechanics. A-record PP MIDDLEs define what's ALLOWED in B, not what's REQUIRED. More PP = more token survival, not stricter requirements.
 
+> **Note (2026-01-30):** This constraint validates the aggregation benefit across levels.
+> C885 establishes that A FOLIO (114 units) is the operational unit for A-B vocabulary
+> correspondence, achieving 81% coverage vs paragraph's 58%.
+
 ## Model Comparison
 
 | Model | Mechanism | PP Effect | Aggregation Effect |

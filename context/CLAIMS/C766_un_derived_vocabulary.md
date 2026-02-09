@@ -37,18 +37,24 @@ IDENTIFICATION TOKENS (line-1 HT, jar labels, illustration labels)
 
 1. **UN is not noise** - It's systematically derived from operational vocabulary
 2. **The 49-class grammar captures primitives** - Base MIDDLEs that seed derivation
-3. **Derivation serves identification** - 64.5% folio-unique rate confirms semantic function
-4. **C404-C405 (HT non-operational) explained** - Derived forms don't execute; they identify
+3. **Derivation serves dual purpose** - 64.5% folio-unique rate confirms identification; 71.6% atom-body overlap confirms operational content (C935)
+4. **C404-C405 reframed** - Derived forms are operationally redundant, not operationally empty (C935)
+
+> **Revision (2026-02-06):** Original implication #4 said "Derived forms don't execute; they identify."
+> C935 shows compound atoms on line 1 predict body simple MIDDLEs (71.6% vs 59.2% random).
+> Compound tokens are BOTH identifying (rare combinations) AND operational (same atoms as body).
+> The "don't execute" framing was incorrect. Correct framing: operationally redundant with body.
 
 ## Reconciliation
 
 | Constraint | Relationship |
 |------------|--------------|
 | C166, C610 | HT/UN population = derived vocabulary population |
-| C404-C405 | Non-operational because derived, not base grammar |
+| C404-C405 | Operationally redundant because body encodes same atoms in simple form |
 | C511 | Derivational productivity (12.67x) = this compounding mechanism |
 | C618 | 95.7% PP-atom-containing = compound structure |
-| C747-C750 | Line-1 HT enrichment = identification layer placement |
+| C747-C750 | Line-1 HT enrichment = compound specification layer placement |
+| C935 | Compound header atoms predict body content (1.21x lift) |
 
 ## Tier
 

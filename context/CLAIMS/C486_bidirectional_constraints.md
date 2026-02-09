@@ -2,26 +2,36 @@
 
 **Tier:** 3 | **Status:** CLOSED | **Scope:** CROSS_SYSTEM
 
+> **REVISION NOTES:**
+>
+> **P-text (PTEXT_FOLIO_ANALYSIS):** "P-zone" references refer to P-text
+> (paragraph text) on AZC folios, which is linguistically Currier A (C758).
+> P-text MIDDLEs have 76.7% transmission to B vs 39.9% for general A.
+>
+> **Escape terminology (2026-01-31):** "High-escape" was measured as qo_density
+> in the source test. Per C397/C398 revision, qo is the energy lane (k-rich)
+> that operates hazard-DISTANT. Replaced "escape" with "qo-density" throughout.
+
 ## Statement
 
-The A->AZC->B pipeline exhibits bidirectional constraint coherence: while information flows unidirectionally (A defines vocabulary, AZC gates legality, B executes), constraint compatibility flows bidirectionally. B execution behavior successfully constrains inference about upstream A zone preferences.
+The A->AZC->B pipeline exhibits bidirectional constraint coherence: while information flows unidirectionally (A defines vocabulary, AZC encodes position, B executes), constraint compatibility flows bidirectionally. B execution behavior successfully constrains inference about upstream A vocabulary preferences.
 
 ## Evidence
 
 ### Test 1A: B->A Back-Inference
 
-High-escape B folios preferentially use P-zone (peripheral) MIDDLEs:
+High qo-density B folios preferentially use P-text (paragraph) MIDDLEs:
 
-| B Behavior | P-zone Usage | Difference | p-value |
+| B Behavior | P-text Usage | Difference | p-value |
 |------------|--------------|------------|---------|
-| High escape (>15%) | 28.3% | +10.4% | <0.0001 |
-| Low escape (<10%) | 17.9% | baseline | - |
+| High qo-density (>15%) | 28.3% | +10.4% | <0.0001 |
+| Low qo-density (<10%) | 17.9% | baseline | - |
 
 ### Zone Differentiation by Behavior
 
-| B Metric | Zone Preference | Significance |
-|----------|-----------------|--------------|
-| High escape density | P-zone (permissive) | p < 0.0001 |
+| B Metric | Vocabulary/Zone Preference | Significance |
+|----------|---------------------------|--------------|
+| High qo-density | P-text vocabulary | p < 0.0001 |
 | High hazard density | S-zone (boundary) | p < 0.05 |
 | High link density | R-zone (restricting) | p < 0.05 |
 
@@ -34,7 +44,7 @@ Given distinctive B behavior, viable upstream zone profiles narrow by **24%** (f
 This does NOT violate C384 (no entry-level A-B coupling) because:
 
 1. **No token-level mapping** - We cannot say "token X came from zone Y"
-2. **Statistical constraint only** - High-escape programs *tend to* draw from P-zone MIDDLEs
+2. **Statistical constraint only** - High qo-density programs *tend to* draw from P-text MIDDLEs
 3. **Consistency, not reference** - The constraint is about compatibility, not identity
 
 The insight is:
@@ -48,10 +58,17 @@ This is a hallmark of coherent control system design. The layers are not indepen
 | Direction | What Flows | Type |
 |-----------|-----------|------|
 | A -> B | Vocabulary, discrimination | Reference |
-| AZC -> B | Legality, escape permission | Gating |
+| AZC -> B | Positional encoding, vocabulary character | Encoding |
 | **B -> A** | **Behavior constrains zone inference** | **Consistency** |
 
 You cannot freely choose A-layer zones and then independently design B behavior. The layers must be compatible.
+
+### QO-Density Interpretation (2026-01-31)
+
+The correlation between qo-density and P-text vocabulary suggests:
+- QO lane (k-rich, energy operations) preferentially uses P-text MIDDLEs
+- P-text is a privileged Currier A vocabulary subset with 76.7% B transmission
+- High energy-intensity programs draw from this privileged vocabulary pool
 
 ## Constraint Relationship
 

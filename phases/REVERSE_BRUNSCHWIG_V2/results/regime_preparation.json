@@ -1,0 +1,21 @@
+{
+  "test": "REGIME x Preparation Vocabulary",
+  "question": "Does REGIME affect preparation MIDDLE usage?",
+  "results": [
+    {
+      "regime": "UNKNOWN",
+      "n_folios": 82,
+      "n_tokens": 22090,
+      "early_pct": 1.4712539610683566,
+      "mid_pct": 15.667722951561794,
+      "late_pct": 2.575826165685831
+    }
+  ],
+  "prep_profiles": [],
+  "statistics": {
+    "chi_square": null,
+    "p_value": null,
+    "cramers_v": null
+  },
+  "verdict": "NOT SUPPORTED"
+}

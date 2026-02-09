@@ -1,0 +1,2089 @@
+{
+  "single_folio_results": [
+    {
+      "a_folio": "f100r",
+      "a_vocab_size": 53,
+      "filtered_b_size": 41,
+      "b_coverage": 0.030619865571321882,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f100v",
+      "a_vocab_size": 60,
+      "filtered_b_size": 47,
+      "b_coverage": 0.0351008215085885,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f101r1",
+      "a_vocab_size": 65,
+      "filtered_b_size": 55,
+      "b_coverage": 0.041075429424943986,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f101v2",
+      "a_vocab_size": 72,
+      "filtered_b_size": 58,
+      "b_coverage": 0.043315907393577296,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f102r1",
+      "a_vocab_size": 54,
+      "filtered_b_size": 46,
+      "b_coverage": 0.03435399551904406,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f102r2",
+      "a_vocab_size": 53,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f102v1",
+      "a_vocab_size": 47,
+      "filtered_b_size": 42,
+      "b_coverage": 0.03136669156086632,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f102v2",
+      "a_vocab_size": 54,
+      "filtered_b_size": 47,
+      "b_coverage": 0.0351008215085885,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f10r",
+      "a_vocab_size": 46,
+      "filtered_b_size": 41,
+      "b_coverage": 0.030619865571321882,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f10v",
+      "a_vocab_size": 27,
+      "filtered_b_size": 25,
+      "b_coverage": 0.018670649738610903,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f11r",
+      "a_vocab_size": 27,
+      "filtered_b_size": 24,
+      "b_coverage": 0.017923823749066467,
+      "kernel_retained": [],
+      "kernel_coverage": 0.0
+    },
+    {
+      "a_folio": "f11v",
+      "a_vocab_size": 31,
+      "filtered_b_size": 28,
+      "b_coverage": 0.020911127707244213,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f13r",
+      "a_vocab_size": 36,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "k"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f13v",
+      "a_vocab_size": 34,
+      "filtered_b_size": 31,
+      "b_coverage": 0.02315160567587752,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f14r",
+      "a_vocab_size": 41,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f14v",
+      "a_vocab_size": 41,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f15r",
+      "a_vocab_size": 42,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f15v",
+      "a_vocab_size": 27,
+      "filtered_b_size": 24,
+      "b_coverage": 0.017923823749066467,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f16r",
+      "a_vocab_size": 46,
+      "filtered_b_size": 38,
+      "b_coverage": 0.028379387602688575,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f16v",
+      "a_vocab_size": 37,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f17r",
+      "a_vocab_size": 43,
+      "filtered_b_size": 33,
+      "b_coverage": 0.024645257654966394,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f17v",
+      "a_vocab_size": 52,
+      "filtered_b_size": 47,
+      "b_coverage": 0.0351008215085885,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f18r",
+      "a_vocab_size": 42,
+      "filtered_b_size": 35,
+      "b_coverage": 0.026138909634055265,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f18v",
+      "a_vocab_size": 40,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "k"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f19r",
+      "a_vocab_size": 30,
+      "filtered_b_size": 24,
+      "b_coverage": 0.017923823749066467,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f19v",
+      "a_vocab_size": 32,
+      "filtered_b_size": 28,
+      "b_coverage": 0.020911127707244213,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f1r",
+      "a_vocab_size": 80,
+      "filtered_b_size": 60,
+      "b_coverage": 0.04480955937266617,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f1v",
+      "a_vocab_size": 45,
+      "filtered_b_size": 45,
+      "b_coverage": 0.033607169529499624,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f20r",
+      "a_vocab_size": 46,
+      "filtered_b_size": 42,
+      "b_coverage": 0.03136669156086632,
+      "kernel_retained": [
+        "h"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f20v",
+      "a_vocab_size": 41,
+      "filtered_b_size": 37,
+      "b_coverage": 0.027632561613144136,
+      "kernel_retained": [
+        "h"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f21r",
+      "a_vocab_size": 42,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f21v",
+      "a_vocab_size": 32,
+      "filtered_b_size": 27,
+      "b_coverage": 0.020164301717699777,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f22r",
+      "a_vocab_size": 47,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f22v",
+      "a_vocab_size": 35,
+      "filtered_b_size": 31,
+      "b_coverage": 0.02315160567587752,
+      "kernel_retained": [
+        "k"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f23r",
+      "a_vocab_size": 45,
+      "filtered_b_size": 38,
+      "b_coverage": 0.028379387602688575,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f23v",
+      "a_vocab_size": 43,
+      "filtered_b_size": 36,
+      "b_coverage": 0.0268857356235997,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f24r",
+      "a_vocab_size": 48,
+      "filtered_b_size": 41,
+      "b_coverage": 0.030619865571321882,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f24v",
+      "a_vocab_size": 50,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f25r",
+      "a_vocab_size": 33,
+      "filtered_b_size": 30,
+      "b_coverage": 0.022404779686333084,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f25v",
+      "a_vocab_size": 31,
+      "filtered_b_size": 29,
+      "b_coverage": 0.021657953696788648,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f27r",
+      "a_vocab_size": 37,
+      "filtered_b_size": 31,
+      "b_coverage": 0.02315160567587752,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f27v",
+      "a_vocab_size": 38,
+      "filtered_b_size": 30,
+      "b_coverage": 0.022404779686333084,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f28r",
+      "a_vocab_size": 33,
+      "filtered_b_size": 28,
+      "b_coverage": 0.020911127707244213,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f28v",
+      "a_vocab_size": 32,
+      "filtered_b_size": 31,
+      "b_coverage": 0.02315160567587752,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f29r",
+      "a_vocab_size": 35,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f29v",
+      "a_vocab_size": 42,
+      "filtered_b_size": 37,
+      "b_coverage": 0.027632561613144136,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f2r",
+      "a_vocab_size": 45,
+      "filtered_b_size": 38,
+      "b_coverage": 0.028379387602688575,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f2v",
+      "a_vocab_size": 31,
+      "filtered_b_size": 30,
+      "b_coverage": 0.022404779686333084,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f30r",
+      "a_vocab_size": 44,
+      "filtered_b_size": 41,
+      "b_coverage": 0.030619865571321882,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f30v",
+      "a_vocab_size": 39,
+      "filtered_b_size": 33,
+      "b_coverage": 0.024645257654966394,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f32r",
+      "a_vocab_size": 41,
+      "filtered_b_size": 36,
+      "b_coverage": 0.0268857356235997,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f32v",
+      "a_vocab_size": 37,
+      "filtered_b_size": 35,
+      "b_coverage": 0.026138909634055265,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f35r",
+      "a_vocab_size": 42,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f35v",
+      "a_vocab_size": 43,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f36r",
+      "a_vocab_size": 36,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "h"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f36v",
+      "a_vocab_size": 36,
+      "filtered_b_size": 27,
+      "b_coverage": 0.020164301717699777,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f37r",
+      "a_vocab_size": 37,
+      "filtered_b_size": 34,
+      "b_coverage": 0.02539208364451083,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f37v",
+      "a_vocab_size": 43,
+      "filtered_b_size": 33,
+      "b_coverage": 0.024645257654966394,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f38r",
+      "a_vocab_size": 25,
+      "filtered_b_size": 22,
+      "b_coverage": 0.016430171769977596,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f38v",
+      "a_vocab_size": 28,
+      "filtered_b_size": 27,
+      "b_coverage": 0.020164301717699777,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f3r",
+      "a_vocab_size": 49,
+      "filtered_b_size": 44,
+      "b_coverage": 0.03286034353995519,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f3v",
+      "a_vocab_size": 48,
+      "filtered_b_size": 45,
+      "b_coverage": 0.033607169529499624,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f42r",
+      "a_vocab_size": 55,
+      "filtered_b_size": 51,
+      "b_coverage": 0.038088125466766244,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f42v",
+      "a_vocab_size": 51,
+      "filtered_b_size": 48,
+      "b_coverage": 0.035847647498132934,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f44r",
+      "a_vocab_size": 48,
+      "filtered_b_size": 34,
+      "b_coverage": 0.02539208364451083,
+      "kernel_retained": [
+        "k"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f44v",
+      "a_vocab_size": 43,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f45r",
+      "a_vocab_size": 41,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f45v",
+      "a_vocab_size": 41,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f47r",
+      "a_vocab_size": 33,
+      "filtered_b_size": 31,
+      "b_coverage": 0.02315160567587752,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f47v",
+      "a_vocab_size": 41,
+      "filtered_b_size": 37,
+      "b_coverage": 0.027632561613144136,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f49r",
+      "a_vocab_size": 51,
+      "filtered_b_size": 46,
+      "b_coverage": 0.03435399551904406,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f49v",
+      "a_vocab_size": 71,
+      "filtered_b_size": 52,
+      "b_coverage": 0.038834951456310676,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f4r",
+      "a_vocab_size": 31,
+      "filtered_b_size": 26,
+      "b_coverage": 0.019417475728155338,
+      "kernel_retained": [
+        "h"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f4v",
+      "a_vocab_size": 43,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f51r",
+      "a_vocab_size": 49,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f51v",
+      "a_vocab_size": 40,
+      "filtered_b_size": 37,
+      "b_coverage": 0.027632561613144136,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f52r",
+      "a_vocab_size": 38,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "k"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f52v",
+      "a_vocab_size": 41,
+      "filtered_b_size": 36,
+      "b_coverage": 0.0268857356235997,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f53r",
+      "a_vocab_size": 31,
+      "filtered_b_size": 27,
+      "b_coverage": 0.020164301717699777,
+      "kernel_retained": [
+        "e"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f53v",
+      "a_vocab_size": 42,
+      "filtered_b_size": 33,
+      "b_coverage": 0.024645257654966394,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f54r",
+      "a_vocab_size": 46,
+      "filtered_b_size": 42,
+      "b_coverage": 0.03136669156086632,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f54v",
+      "a_vocab_size": 44,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f56r",
+      "a_vocab_size": 42,
+      "filtered_b_size": 34,
+      "b_coverage": 0.02539208364451083,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f56v",
+      "a_vocab_size": 36,
+      "filtered_b_size": 31,
+      "b_coverage": 0.02315160567587752,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f58r",
+      "a_vocab_size": 131,
+      "filtered_b_size": 92,
+      "b_coverage": 0.06870799103808813,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f58v",
+      "a_vocab_size": 102,
+      "filtered_b_size": 82,
+      "b_coverage": 0.061239731142643763,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f5r",
+      "a_vocab_size": 29,
+      "filtered_b_size": 26,
+      "b_coverage": 0.019417475728155338,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f5v",
+      "a_vocab_size": 28,
+      "filtered_b_size": 26,
+      "b_coverage": 0.019417475728155338,
+      "kernel_retained": [
+        "h"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f6r",
+      "a_vocab_size": 38,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f6v",
+      "a_vocab_size": 46,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f7r",
+      "a_vocab_size": 36,
+      "filtered_b_size": 30,
+      "b_coverage": 0.022404779686333084,
+      "kernel_retained": [
+        "h"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f7v",
+      "a_vocab_size": 46,
+      "filtered_b_size": 38,
+      "b_coverage": 0.028379387602688575,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f87r",
+      "a_vocab_size": 50,
+      "filtered_b_size": 37,
+      "b_coverage": 0.027632561613144136,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f87v",
+      "a_vocab_size": 55,
+      "filtered_b_size": 44,
+      "b_coverage": 0.03286034353995519,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f88r",
+      "a_vocab_size": 58,
+      "filtered_b_size": 47,
+      "b_coverage": 0.0351008215085885,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f88v",
+      "a_vocab_size": 71,
+      "filtered_b_size": 60,
+      "b_coverage": 0.04480955937266617,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f89r1",
+      "a_vocab_size": 67,
+      "filtered_b_size": 57,
+      "b_coverage": 0.04256908140403286,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f89r2",
+      "a_vocab_size": 68,
+      "filtered_b_size": 58,
+      "b_coverage": 0.043315907393577296,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f89v1",
+      "a_vocab_size": 68,
+      "filtered_b_size": 54,
+      "b_coverage": 0.040328603435399554,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f89v2",
+      "a_vocab_size": 69,
+      "filtered_b_size": 60,
+      "b_coverage": 0.04480955937266617,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f8r",
+      "a_vocab_size": 65,
+      "filtered_b_size": 51,
+      "b_coverage": 0.038088125466766244,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f8v",
+      "a_vocab_size": 42,
+      "filtered_b_size": 36,
+      "b_coverage": 0.0268857356235997,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f90r1",
+      "a_vocab_size": 47,
+      "filtered_b_size": 41,
+      "b_coverage": 0.030619865571321882,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f90r2",
+      "a_vocab_size": 28,
+      "filtered_b_size": 26,
+      "b_coverage": 0.019417475728155338,
+      "kernel_retained": [
+        "k"
+      ],
+      "kernel_coverage": 0.3333333333333333
+    },
+    {
+      "a_folio": "f90v1",
+      "a_vocab_size": 51,
+      "filtered_b_size": 40,
+      "b_coverage": 0.029873039581777446,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f90v2",
+      "a_vocab_size": 36,
+      "filtered_b_size": 32,
+      "b_coverage": 0.02389843166542196,
+      "kernel_retained": [
+        "e",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f93r",
+      "a_vocab_size": 64,
+      "filtered_b_size": 50,
+      "b_coverage": 0.037341299477221805,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f93v",
+      "a_vocab_size": 50,
+      "filtered_b_size": 39,
+      "b_coverage": 0.02912621359223301,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f96r",
+      "a_vocab_size": 51,
+      "filtered_b_size": 46,
+      "b_coverage": 0.03435399551904406,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f96v",
+      "a_vocab_size": 42,
+      "filtered_b_size": 36,
+      "b_coverage": 0.0268857356235997,
+      "kernel_retained": [
+        "e",
+        "h"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f99r",
+      "a_vocab_size": 59,
+      "filtered_b_size": 50,
+      "b_coverage": 0.037341299477221805,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f99v",
+      "a_vocab_size": 64,
+      "filtered_b_size": 56,
+      "b_coverage": 0.041822255414488425,
+      "kernel_retained": [
+        "e",
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 1.0
+    },
+    {
+      "a_folio": "f9r",
+      "a_vocab_size": 46,
+      "filtered_b_size": 37,
+      "b_coverage": 0.027632561613144136,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    },
+    {
+      "a_folio": "f9v",
+      "a_vocab_size": 43,
+      "filtered_b_size": 36,
+      "b_coverage": 0.0268857356235997,
+      "kernel_retained": [
+        "h",
+        "k"
+      ],
+      "kernel_coverage": 0.6666666666666666
+    }
+  ],
+  "cumulative_results": [
+    {
+      "folios_included": 1,
+      "cumulative_vocab": 53,
+      "filtered_b_size": 41,
+      "b_coverage": 0.030619865571321882,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 2,
+      "cumulative_vocab": 91,
+      "filtered_b_size": 66,
+      "b_coverage": 0.04929051530993279,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 3,
+      "cumulative_vocab": 124,
+      "filtered_b_size": 89,
+      "b_coverage": 0.06646751306945482,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 4,
+      "cumulative_vocab": 159,
+      "filtered_b_size": 110,
+      "b_coverage": 0.08215085884988797,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 5,
+      "cumulative_vocab": 176,
+      "filtered_b_size": 121,
+      "b_coverage": 0.09036594473487677,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 6,
+      "cumulative_vocab": 192,
+      "filtered_b_size": 125,
+      "b_coverage": 0.09335324869305452,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 7,
+      "cumulative_vocab": 201,
+      "filtered_b_size": 129,
+      "b_coverage": 0.09634055265123226,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 8,
+      "cumulative_vocab": 215,
+      "filtered_b_size": 136,
+      "b_coverage": 0.10156833457804332,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 9,
+      "cumulative_vocab": 229,
+      "filtered_b_size": 146,
+      "b_coverage": 0.10903659447348768,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 10,
+      "cumulative_vocab": 233,
+      "filtered_b_size": 148,
+      "b_coverage": 0.11053024645257654,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 11,
+      "cumulative_vocab": 238,
+      "filtered_b_size": 150,
+      "b_coverage": 0.11202389843166542,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 12,
+      "cumulative_vocab": 242,
+      "filtered_b_size": 152,
+      "b_coverage": 0.1135175504107543,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 13,
+      "cumulative_vocab": 253,
+      "filtered_b_size": 159,
+      "b_coverage": 0.11874533233756535,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 14,
+      "cumulative_vocab": 260,
+      "filtered_b_size": 164,
+      "b_coverage": 0.12247946228528753,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 15,
+      "cumulative_vocab": 267,
+      "filtered_b_size": 169,
+      "b_coverage": 0.1262135922330097,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 16,
+      "cumulative_vocab": 279,
+      "filtered_b_size": 172,
+      "b_coverage": 0.128454070201643,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 17,
+      "cumulative_vocab": 286,
+      "filtered_b_size": 178,
+      "b_coverage": 0.13293502613890965,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 18,
+      "cumulative_vocab": 289,
+      "filtered_b_size": 178,
+      "b_coverage": 0.13293502613890965,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 19,
+      "cumulative_vocab": 303,
+      "filtered_b_size": 184,
+      "b_coverage": 0.13741598207617625,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 20,
+      "cumulative_vocab": 308,
+      "filtered_b_size": 184,
+      "b_coverage": 0.13741598207617625,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 21,
+      "cumulative_vocab": 322,
+      "filtered_b_size": 188,
+      "b_coverage": 0.140403286034354,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 22,
+      "cumulative_vocab": 330,
+      "filtered_b_size": 193,
+      "b_coverage": 0.1441374159820762,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 23,
+      "cumulative_vocab": 338,
+      "filtered_b_size": 195,
+      "b_coverage": 0.14563106796116504,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 24,
+      "cumulative_vocab": 342,
+      "filtered_b_size": 199,
+      "b_coverage": 0.1486183719193428,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 25,
+      "cumulative_vocab": 349,
+      "filtered_b_size": 202,
+      "b_coverage": 0.1508588498879761,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 26,
+      "cumulative_vocab": 354,
+      "filtered_b_size": 204,
+      "b_coverage": 0.15235250186706498,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 27,
+      "cumulative_vocab": 381,
+      "filtered_b_size": 212,
+      "b_coverage": 0.15832710978342046,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 28,
+      "cumulative_vocab": 387,
+      "filtered_b_size": 218,
+      "b_coverage": 0.16280806572068707,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 29,
+      "cumulative_vocab": 395,
+      "filtered_b_size": 223,
+      "b_coverage": 0.16654219566840925,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 30,
+      "cumulative_vocab": 398,
+      "filtered_b_size": 223,
+      "b_coverage": 0.16654219566840925,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 31,
+      "cumulative_vocab": 408,
+      "filtered_b_size": 225,
+      "b_coverage": 0.16803584764749813,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 32,
+      "cumulative_vocab": 415,
+      "filtered_b_size": 228,
+      "b_coverage": 0.17027632561613143,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 33,
+      "cumulative_vocab": 425,
+      "filtered_b_size": 232,
+      "b_coverage": 0.17326362957430919,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 34,
+      "cumulative_vocab": 432,
+      "filtered_b_size": 235,
+      "b_coverage": 0.1755041075429425,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 35,
+      "cumulative_vocab": 439,
+      "filtered_b_size": 237,
+      "b_coverage": 0.17699775952203137,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 36,
+      "cumulative_vocab": 449,
+      "filtered_b_size": 241,
+      "b_coverage": 0.17998506348020912,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 37,
+      "cumulative_vocab": 459,
+      "filtered_b_size": 245,
+      "b_coverage": 0.18297236743838685,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 38,
+      "cumulative_vocab": 471,
+      "filtered_b_size": 247,
+      "b_coverage": 0.18446601941747573,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 39,
+      "cumulative_vocab": 476,
+      "filtered_b_size": 249,
+      "b_coverage": 0.1859596713965646,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 40,
+      "cumulative_vocab": 480,
+      "filtered_b_size": 251,
+      "b_coverage": 0.18745332337565349,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 41,
+      "cumulative_vocab": 484,
+      "filtered_b_size": 252,
+      "b_coverage": 0.1882001493651979,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 42,
+      "cumulative_vocab": 495,
+      "filtered_b_size": 256,
+      "b_coverage": 0.19118745332337567,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 43,
+      "cumulative_vocab": 499,
+      "filtered_b_size": 256,
+      "b_coverage": 0.19118745332337567,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 44,
+      "cumulative_vocab": 501,
+      "filtered_b_size": 257,
+      "b_coverage": 0.1919342793129201,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 45,
+      "cumulative_vocab": 507,
+      "filtered_b_size": 261,
+      "b_coverage": 0.19492158327109785,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 46,
+      "cumulative_vocab": 509,
+      "filtered_b_size": 262,
+      "b_coverage": 0.19566840926064227,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 47,
+      "cumulative_vocab": 515,
+      "filtered_b_size": 263,
+      "b_coverage": 0.1964152352501867,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 48,
+      "cumulative_vocab": 517,
+      "filtered_b_size": 264,
+      "b_coverage": 0.19716206123973115,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 49,
+      "cumulative_vocab": 527,
+      "filtered_b_size": 271,
+      "b_coverage": 0.20238984316654218,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 50,
+      "cumulative_vocab": 534,
+      "filtered_b_size": 275,
+      "b_coverage": 0.20537714712471994,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 51,
+      "cumulative_vocab": 540,
+      "filtered_b_size": 277,
+      "b_coverage": 0.20687079910380882,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 52,
+      "cumulative_vocab": 541,
+      "filtered_b_size": 278,
+      "b_coverage": 0.20761762509335324,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 53,
+      "cumulative_vocab": 544,
+      "filtered_b_size": 279,
+      "b_coverage": 0.2083644510828977,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 54,
+      "cumulative_vocab": 547,
+      "filtered_b_size": 279,
+      "b_coverage": 0.2083644510828977,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 55,
+      "cumulative_vocab": 550,
+      "filtered_b_size": 279,
+      "b_coverage": 0.2083644510828977,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 56,
+      "cumulative_vocab": 557,
+      "filtered_b_size": 279,
+      "b_coverage": 0.2083644510828977,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 57,
+      "cumulative_vocab": 558,
+      "filtered_b_size": 279,
+      "b_coverage": 0.2083644510828977,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 58,
+      "cumulative_vocab": 566,
+      "filtered_b_size": 280,
+      "b_coverage": 0.20911127707244212,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 59,
+      "cumulative_vocab": 569,
+      "filtered_b_size": 281,
+      "b_coverage": 0.20985810306198655,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 60,
+      "cumulative_vocab": 570,
+      "filtered_b_size": 281,
+      "b_coverage": 0.20985810306198655,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 61,
+      "cumulative_vocab": 579,
+      "filtered_b_size": 285,
+      "b_coverage": 0.2128454070201643,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 62,
+      "cumulative_vocab": 583,
+      "filtered_b_size": 286,
+      "b_coverage": 0.21359223300970873,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 63,
+      "cumulative_vocab": 588,
+      "filtered_b_size": 288,
+      "b_coverage": 0.2150858849887976,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 64,
+      "cumulative_vocab": 596,
+      "filtered_b_size": 293,
+      "b_coverage": 0.21882001493651979,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 65,
+      "cumulative_vocab": 608,
+      "filtered_b_size": 294,
+      "b_coverage": 0.21956684092606424,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 66,
+      "cumulative_vocab": 611,
+      "filtered_b_size": 295,
+      "b_coverage": 0.22031366691560866,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 67,
+      "cumulative_vocab": 614,
+      "filtered_b_size": 296,
+      "b_coverage": 0.2210604929051531,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 68,
+      "cumulative_vocab": 615,
+      "filtered_b_size": 297,
+      "b_coverage": 0.22180731889469754,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 69,
+      "cumulative_vocab": 616,
+      "filtered_b_size": 297,
+      "b_coverage": 0.22180731889469754,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 70,
+      "cumulative_vocab": 620,
+      "filtered_b_size": 297,
+      "b_coverage": 0.22180731889469754,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 71,
+      "cumulative_vocab": 627,
+      "filtered_b_size": 299,
+      "b_coverage": 0.22330097087378642,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 72,
+      "cumulative_vocab": 645,
+      "filtered_b_size": 301,
+      "b_coverage": 0.22479462285287527,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 73,
+      "cumulative_vocab": 649,
+      "filtered_b_size": 302,
+      "b_coverage": 0.22554144884241972,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 74,
+      "cumulative_vocab": 652,
+      "filtered_b_size": 302,
+      "b_coverage": 0.22554144884241972,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 75,
+      "cumulative_vocab": 658,
+      "filtered_b_size": 303,
+      "b_coverage": 0.22628827483196415,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 76,
+      "cumulative_vocab": 661,
+      "filtered_b_size": 304,
+      "b_coverage": 0.2270351008215086,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 77,
+      "cumulative_vocab": 666,
+      "filtered_b_size": 305,
+      "b_coverage": 0.22778192681105303,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 78,
+      "cumulative_vocab": 669,
+      "filtered_b_size": 305,
+      "b_coverage": 0.22778192681105303,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 79,
+      "cumulative_vocab": 674,
+      "filtered_b_size": 307,
+      "b_coverage": 0.2292755787901419,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 80,
+      "cumulative_vocab": 679,
+      "filtered_b_size": 307,
+      "b_coverage": 0.2292755787901419,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 81,
+      "cumulative_vocab": 684,
+      "filtered_b_size": 309,
+      "b_coverage": 0.23076923076923078,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 82,
+      "cumulative_vocab": 690,
+      "filtered_b_size": 311,
+      "b_coverage": 0.23226288274831963,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 83,
+      "cumulative_vocab": 696,
+      "filtered_b_size": 311,
+      "b_coverage": 0.23226288274831963,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 84,
+      "cumulative_vocab": 702,
+      "filtered_b_size": 313,
+      "b_coverage": 0.2337565347274085,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 85,
+      "cumulative_vocab": 759,
+      "filtered_b_size": 336,
+      "b_coverage": 0.25093353248693057,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 86,
+      "cumulative_vocab": 786,
+      "filtered_b_size": 348,
+      "b_coverage": 0.2598954443614638,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 87,
+      "cumulative_vocab": 789,
+      "filtered_b_size": 350,
+      "b_coverage": 0.26138909634055263,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 88,
+      "cumulative_vocab": 791,
+      "filtered_b_size": 350,
+      "b_coverage": 0.26138909634055263,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 89,
+      "cumulative_vocab": 797,
+      "filtered_b_size": 351,
+      "b_coverage": 0.2621359223300971,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 90,
+      "cumulative_vocab": 803,
+      "filtered_b_size": 352,
+      "b_coverage": 0.26288274831964153,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 91,
+      "cumulative_vocab": 809,
+      "filtered_b_size": 353,
+      "b_coverage": 0.26362957430918593,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 92,
+      "cumulative_vocab": 815,
+      "filtered_b_size": 353,
+      "b_coverage": 0.26362957430918593,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 93,
+      "cumulative_vocab": 823,
+      "filtered_b_size": 353,
+      "b_coverage": 0.26362957430918593,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 94,
+      "cumulative_vocab": 833,
+      "filtered_b_size": 355,
+      "b_coverage": 0.26512322628827484,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 95,
+      "cumulative_vocab": 845,
+      "filtered_b_size": 358,
+      "b_coverage": 0.26736370425690814,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 96,
+      "cumulative_vocab": 862,
+      "filtered_b_size": 365,
+      "b_coverage": 0.2725914861837192,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 97,
+      "cumulative_vocab": 875,
+      "filtered_b_size": 369,
+      "b_coverage": 0.27557879014189696,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 98,
+      "cumulative_vocab": 887,
+      "filtered_b_size": 372,
+      "b_coverage": 0.27781926811053026,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 99,
+      "cumulative_vocab": 899,
+      "filtered_b_size": 374,
+      "b_coverage": 0.2793129200896191,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 100,
+      "cumulative_vocab": 909,
+      "filtered_b_size": 378,
+      "b_coverage": 0.28230022404779687,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 101,
+      "cumulative_vocab": 923,
+      "filtered_b_size": 381,
+      "b_coverage": 0.28454070201643017,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 102,
+      "cumulative_vocab": 927,
+      "filtered_b_size": 383,
+      "b_coverage": 0.286034353995519,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 103,
+      "cumulative_vocab": 935,
+      "filtered_b_size": 385,
+      "b_coverage": 0.2875280059746079,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 104,
+      "cumulative_vocab": 936,
+      "filtered_b_size": 386,
+      "b_coverage": 0.2882748319641524,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 105,
+      "cumulative_vocab": 949,
+      "filtered_b_size": 391,
+      "b_coverage": 0.29200896191187453,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 106,
+      "cumulative_vocab": 954,
+      "filtered_b_size": 394,
+      "b_coverage": 0.29424943988050783,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 107,
+      "cumulative_vocab": 964,
+      "filtered_b_size": 396,
+      "b_coverage": 0.29574309185959674,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 108,
+      "cumulative_vocab": 973,
+      "filtered_b_size": 397,
+      "b_coverage": 0.29648991784914114,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 109,
+      "cumulative_vocab": 976,
+      "filtered_b_size": 397,
+      "b_coverage": 0.29648991784914114,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 110,
+      "cumulative_vocab": 987,
+      "filtered_b_size": 402,
+      "b_coverage": 0.30022404779686335,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 111,
+      "cumulative_vocab": 995,
+      "filtered_b_size": 403,
+      "b_coverage": 0.30097087378640774,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 112,
+      "cumulative_vocab": 1004,
+      "filtered_b_size": 404,
+      "b_coverage": 0.3017176997759522,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 113,
+      "cumulative_vocab": 1009,
+      "filtered_b_size": 404,
+      "b_coverage": 0.3017176997759522,
+      "kernel_coverage": 1.0
+    },
+    {
+      "folios_included": 114,
+      "cumulative_vocab": 1013,
+      "filtered_b_size": 404,
+      "b_coverage": 0.3017176997759522,
+      "kernel_coverage": 1.0
+    }
+  ],
+  "summary": {
+    "mean_b_coverage": 0.029034498119832816,
+    "mean_kernel_retention": 0.7368421052631579,
+    "filter_uniqueness": 1.0,
+    "viability_rate": 0.9912280701754386,
+    "pairwise_jaccard_mean": 0.29523902828029425,
+    "verdict": "CONTRADICTS"
+  }
+}

@@ -4,7 +4,13 @@
 
 ## Finding
 
-A-record filtering depletes roles **asymmetrically**. FLOW (FL) is the most depleted role (60.9% of records lose all FL classes), followed by CC (44.6%). FREQUENT (FQ) is the most resilient (only 12.5% depletion). The role hierarchy under filtering is: **FQ > EN > AX > CC > FL**.
+A-record filtering depletes roles **asymmetrically**.
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+FLOW (FL) is the most depleted role (60.9% of records lose all FL classes), followed by CC (44.6%). FREQUENT (FQ) is the most resilient (only 12.5% depletion). The role hierarchy under filtering is: **FQ > EN > AX > CC > FL**.
 
 ## Key Numbers
 

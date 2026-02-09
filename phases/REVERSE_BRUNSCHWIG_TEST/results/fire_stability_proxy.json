@@ -1,0 +1,50 @@
+{
+  "hypothesis": "Fire degree predicts LINK/FL ratio (stability proxy)",
+  "methodology_note": {
+    "FL_definition": "FQ classes {9, 13, 14, 23} - grammatical FREQUENT_OPERATOR role",
+    "LINK_definition": "Class 29 - monitoring/intervention boundary operator",
+    "NOT_the_same_as": "C494 'escape rate' which uses qo_density (morphological prefix)",
+    "terminology_resolution": "Two distinct escape concepts exist: qo_density (thermal intensity) and FQ_density (flow control). This test uses FQ_density."
+  },
+  "link_tokens_count": 17,
+  "fl_tokens_count": 33,
+  "section_link_fl_ratios": {
+    "B": 0.361,
+    "C": 0.316,
+    "H": 0.150,
+    "S": 0.290,
+    "T": 0.243
+  },
+  "regime_link_fl_ratios": {
+    "1": 0.309,
+    "2": 0.333,
+    "3": 0.263,
+    "4": 0.171
+  },
+  "fire_mapping": {
+    "R2": {"fire_degree": 1, "link_fl_ratio": 0.333, "interpretation": "gentle, most stable"},
+    "R1": {"fire_degree": 2, "link_fl_ratio": 0.309, "interpretation": "standard"},
+    "R3": {"fire_degree": 3, "link_fl_ratio": 0.263, "interpretation": "intense, less stable"},
+    "R4": {"fire_degree": 4, "link_fl_ratio": 0.171, "interpretation": "constrained/precision, least stable"}
+  },
+  "correlation_regime": {
+    "rho": -0.406,
+    "p": 0.00015
+  },
+  "correlation_fire": {
+    "rho": -0.457,
+    "p": 0.000016
+  },
+  "verdict": "SUPPORT - Higher fire -> lower LINK/FL (less stable)",
+  "interpretation": {
+    "original_hypothesis": "Fire -> inverse LINK (monitoring intensity)",
+    "revised_hypothesis": "Fire -> instability -> lower LINK/FL ratio",
+    "rationale": "LINK and FL are complementary phases (C807). Higher fire needs more escape handling (FL) relative to monitoring (LINK).",
+    "regime_4_clarification": "R4 has lowest qo_density (thermal) but highest FQ_density (flow). These are orthogonal: precision processing uses gentle heat but needs high error correction."
+  },
+  "escape_definition_comparison": {
+    "qo_density_ranking": ["R3 (0.201)", "R1 (0.199)", "R2 (0.121)", "R4 (0.116)"],
+    "FQ_density_ranking": ["R4 (0.151)", "R2 (0.132)", "R1 (0.121)", "R3 (0.112)"],
+    "note": "Nearly inverse rankings confirm these measure different phenomena"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "total_ri_tokens": 778,
+  "with_pp_base": 707,
+  "containment_rate": 0.9087403598971723,
+  "single_char_extensions": 506,
+  "multi_char_extensions": 201,
+  "mean_extension_length": 1.4328147100424329,
+  "position_distribution": {
+    "prefix": 332,
+    "suffix": 375
+  },
+  "top_single_char_extensions": {
+    "o": 85,
+    "d": 62,
+    "h": 58,
+    "s": 36,
+    "e": 36,
+    "a": 35,
+    "y": 34,
+    "l": 34,
+    "t": 31,
+    "c": 29
+  },
+  "section_totals": {
+    "T": 77,
+    "H": 475,
+    "P": 155
+  },
+  "dominant_folios": [
+    [
+      "f49v",
+      "o",
+      8,
+      16
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "n_shared_middles": 40,
+  "patterns": {
+    "linear": {
+      "r": 0.6539614709883732,
+      "p": 4.7365271442675655e-06
+    },
+    "zone_preservation_pct": 92.5,
+    "quadrant_diagonal_pct": 72.5,
+    "a_early_b_mean": 0.4206254190521916,
+    "a_late_b_mean": 0.757752722784545
+  },
+  "findings": [
+    "LINEAR POSITIVE: r=0.65, p=0.0000",
+    "ZONE PRESERVATION: 92% same zone (vs 33% chance)",
+    "QUADRANT PRESERVATION: 72% diagonal",
+    "EXTREME ORDERING PRESERVED"
+  ],
+  "verdict": "CONFIRMED"
+}

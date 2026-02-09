@@ -42,9 +42,17 @@ Kernel 'e' anchors system to stable state. 54.7% of recovery paths pass through 
 **Source:** Phase 17
 
 ### C107 - Kernel Boundary-Adjacent
-**Tier:** 2 | **Status:** CLOSED
-All kernel nodes are BOUNDARY_ADJACENT to forbidden transitions. Kernel controls hazard proximity.
+**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+All kernel nodes are BOUNDARY_ADJACENT to forbidden transitions. Classes containing kernel characters tend to be hazard-involved.
 **Source:** Phase 17
+
+**Scope Clarification (KERNEL_STATE_SEMANTICS, 2026-01):**
+This relationship is CORRELATIONAL, not causal. Classes with high k/h/e content are often in hazard-involved categories, but k/h/e character content does NOT determine forbidden transition participation. Evidence from T10:
+- Class 10 (daiin): 0% k, 0% h, 0% e - yet participates in forbidden transitions
+- Class 31 (chey): 0% k, 100% h, 65% e - yet also participates in forbidden transitions
+- Both k-free and k-containing classes serve as forbidden transition sources
+
+The forbidden transitions operate at CLASS level (which token types follow which), not CHARACTER level (which k/h/e characters are present). See C522 for layer independence.
 
 ### C521 - Kernel Primitive Directional Asymmetry
 **Tier:** 2 | **Status:** CLOSED | **Scope:** B
@@ -125,7 +133,24 @@ SYMBOL SUBSTRATE (10 primitives: s,e,t,d,l,o,h,c,k,r)
 
 **Significance:** This independence explains how the manuscript achieves complex morphology, extreme vocabulary sparsity, AND execution safety simultaneously - these are independent constraint systems, not one system doing all three jobs.
 
-**Cross-references:** C521 (construction asymmetry), C475 (compatibility), C109 (execution hazards), C085 (shared primitives)
+**Additional Evidence (KERNEL_STATE_SEMANTICS, 2026-01):**
+
+KERNEL_STATE_SEMANTICS phase tests T1-T10 provided strong confirmation:
+
+| Test | Finding | Implication |
+|------|---------|-------------|
+| T1-T6 | Between-token k/h/e transitions are UNIFORM (O/E 0.87-1.21) | No execution-level k/h/e flow |
+| T7 | Class-level transitions show STRONG structure (O/E 0.20-7.31) | Grammar is at class level |
+| T9 | Within-token k/h/e transitions confirm C521 (5/5 claims) | Construction layer real |
+| T10 | k/h/e content does NOT predict forbidden transition participation | Layers independent |
+
+Key T10 findings:
+- Class 10 (daiin): 0% k, 0% h, 0% e - participates in forbidden transitions
+- Class 31 (chey): 0% k, 100% h, 65% e - participates in forbidden transitions
+- Both k-free and k-containing classes can be forbidden sources
+- Forbidden status is determined by CLASS identity, not k/h/e content
+
+**Cross-references:** C521 (construction asymmetry), C475 (compatibility), C109 (execution hazards), C085 (shared primitives), C107 (boundary adjacency - correlational only)
 
 ---
 

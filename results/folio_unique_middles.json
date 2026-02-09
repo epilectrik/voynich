@@ -1,0 +1,4162 @@
+{
+  "total_unique_middles": 858,
+  "decomposition_types": {
+    "COMPOUND": 857,
+    "NOVEL": 1
+  },
+  "compound_extension_chars": {
+    "o": 295,
+    "e": 262,
+    "d": 184,
+    "c": 132,
+    "h": 113,
+    "s": 112,
+    "a": 110,
+    "r": 96,
+    "k": 91,
+    "y": 85,
+    "t": 82,
+    "f": 78,
+    "l": 72,
+    "p": 71,
+    "i": 71,
+    "q": 40,
+    "x": 10,
+    "m": 8,
+    "g": 3,
+    "n": 1
+  },
+  "compound_atom_freq": {
+    "ai": 49,
+    "sh": 42,
+    "al": 35,
+    "eo": 29,
+    "aii": 28,
+    "eed": 28,
+    "eeo": 25,
+    "ckh": 24,
+    "ee": 23,
+    "ol": 23,
+    "lch": 22,
+    "ch": 22,
+    "l": 21,
+    "kch": 19,
+    "pch": 18,
+    "cth": 17,
+    "eod": 16,
+    "od": 16,
+    "cph": 15,
+    "et": 15,
+    "s": 15,
+    "dy": 15,
+    "or": 15,
+    "ek": 14,
+    "opch": 14,
+    "ech": 13,
+    "eol": 13,
+    "olk": 13,
+    "eok": 12,
+    "kee": 11,
+    "ke": 11,
+    "h": 11,
+    "ar": 10,
+    "a": 10,
+    "edy": 9,
+    "c": 9,
+    "tch": 9,
+    "p": 8,
+    "eek": 8,
+    "op": 8,
+    "y": 7,
+    "ed": 7,
+    "am": 7,
+    "ok": 7,
+    "ck": 6,
+    "lo": 6,
+    "eck": 6,
+    "te": 6,
+    "ka": 6,
+    "ot": 6,
+    "iin": 5,
+    "i": 5,
+    "keeo": 5,
+    "k": 5,
+    "eey": 5,
+    "eeol": 5,
+    "e": 4,
+    "lk": 4,
+    "in": 4,
+    "aiin": 4,
+    "ain": 4,
+    "kc": 4,
+    "keed": 4,
+    "ked": 3,
+    "d": 3,
+    "o": 3,
+    "ey": 2,
+    "ct": 2,
+    "ry": 2,
+    "t": 2,
+    "ect": 1,
+    "m": 1,
+    "r": 1
+  },
+  "novel_length_dist": {
+    "2": 1
+  },
+  "per_folio": {
+    "f26r": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "odaii",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "ofseod",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        },
+        {
+          "middle": "ofochcph",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "adeeo",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "eteeda",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "apchedyf",
+          "type": "COMPOUND",
+          "atom": "edy",
+          "count": 1
+        },
+        {
+          "middle": "ge",
+          "type": "COMPOUND",
+          "atom": "e",
+          "count": 1
+        }
+      ]
+    },
+    "f26v": {
+      "unique_count": 3,
+      "compound": 3,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "yckheo",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "eoet",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "odypsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        }
+      ]
+    },
+    "f31r": {
+      "unique_count": 6,
+      "compound": 6,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "keefc",
+          "type": "COMPOUND",
+          "atom": "kee",
+          "count": 1
+        },
+        {
+          "middle": "epakeo",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "qef",
+          "type": "COMPOUND",
+          "atom": "e",
+          "count": 1
+        },
+        {
+          "middle": "eoo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "okeo",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "aiict",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        }
+      ]
+    },
+    "f31v": {
+      "unique_count": 3,
+      "compound": 3,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eeecf",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "echoked",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        },
+        {
+          "middle": "acth",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        }
+      ]
+    },
+    "f33r": {
+      "unique_count": 4,
+      "compound": 4,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "yfol",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "fockh",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "ard",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        },
+        {
+          "middle": "qak",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        }
+      ]
+    },
+    "f33v": {
+      "unique_count": 1,
+      "compound": 1,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "dysh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        }
+      ]
+    },
+    "f34r": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eoepc",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "yfo",
+          "type": "COMPOUND",
+          "atom": "y",
+          "count": 1
+        },
+        {
+          "middle": "octhede",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "chck",
+          "type": "COMPOUND",
+          "atom": "ck",
+          "count": 1
+        },
+        {
+          "middle": "efala",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "hda",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        },
+        {
+          "middle": "eolchct",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        }
+      ]
+    },
+    "f34v": {
+      "unique_count": 3,
+      "compound": 3,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "dalch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "sp",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "loee",
+          "type": "COMPOUND",
+          "atom": "lo",
+          "count": 1
+        }
+      ]
+    },
+    "f39r": {
+      "unique_count": 9,
+      "compound": 9,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "cphhof",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "cks",
+          "type": "COMPOUND",
+          "atom": "ck",
+          "count": 1
+        },
+        {
+          "middle": "ckhdc",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "alche",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "ockhc",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "dalo",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "kald",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "dld",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "ofcheef",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        }
+      ]
+    },
+    "f39v": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "fdyk",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "eykai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "aiifcho",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "orqo",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "ckhcfh",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "chef",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "iiin",
+          "type": "COMPOUND",
+          "atom": "iin",
+          "count": 1
+        }
+      ]
+    },
+    "f40r": {
+      "unique_count": 1,
+      "compound": 1,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "olc",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        }
+      ]
+    },
+    "f40v": {
+      "unique_count": 2,
+      "compound": 2,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "faim",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "ofai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        }
+      ]
+    },
+    "f41r": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eked",
+          "type": "COMPOUND",
+          "atom": "ked",
+          "count": 2
+        },
+        {
+          "middle": "opshe",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "kake",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "yek",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "dc",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "kchod",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "edp",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        }
+      ]
+    },
+    "f41v": {
+      "unique_count": 4,
+      "compound": 4,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "erod",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "fcheep",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "cfhekch",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "epchef",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        }
+      ]
+    },
+    "f43r": {
+      "unique_count": 13,
+      "compound": 13,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ckhh",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 2
+        },
+        {
+          "middle": "ofcht",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "ekalch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "oetc",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "eolkeepc",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        },
+        {
+          "middle": "dyty",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "dydy",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "keh",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "eh",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "sheckh",
+          "type": "COMPOUND",
+          "atom": "eck",
+          "count": 1
+        }
+      ]
+    },
+    "f43v": {
+      "unique_count": 8,
+      "compound": 8,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "pdsai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "lteos",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "edyo",
+          "type": "COMPOUND",
+          "atom": "edy",
+          "count": 1
+        },
+        {
+          "middle": "esck",
+          "type": "COMPOUND",
+          "atom": "ck",
+          "count": 1
+        },
+        {
+          "middle": "lor",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "oyke",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "etcheodch",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "yf",
+          "type": "COMPOUND",
+          "atom": "y",
+          "count": 1
+        }
+      ]
+    },
+    "f46r": {
+      "unique_count": 12,
+      "compound": 12,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "epchx",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "eoteo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "eksheet",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "lshedo",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "locth",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "fee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "dyfch",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "epd",
+          "type": "COMPOUND",
+          "atom": "p",
+          "count": 1
+        },
+        {
+          "middle": "oifh",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "opdarsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        }
+      ]
+    },
+    "f46v": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "oepch",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "ckhef",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "aiirch",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "eedchs",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "eted",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "aick",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "ocpheod",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        }
+      ]
+    },
+    "f48r": {
+      "unique_count": 5,
+      "compound": 5,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "chodsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "opchet",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "heet",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "lm",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "olche",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        }
+      ]
+    },
+    "f48v": {
+      "unique_count": 4,
+      "compound": 4,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "oolk",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "efee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "cphhe",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "eedl",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        }
+      ]
+    },
+    "f50r": {
+      "unique_count": 6,
+      "compound": 6,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "peeed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "sheck",
+          "type": "COMPOUND",
+          "atom": "eck",
+          "count": 1
+        },
+        {
+          "middle": "ockho",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "dalos",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "opalke",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "rio",
+          "type": "COMPOUND",
+          "atom": "i",
+          "count": 1
+        }
+      ]
+    },
+    "f50v": {
+      "unique_count": 2,
+      "compound": 2,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "edyd",
+          "type": "COMPOUND",
+          "atom": "edy",
+          "count": 1
+        },
+        {
+          "middle": "ytsheod",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        }
+      ]
+    },
+    "f55r": {
+      "unique_count": 5,
+      "compound": 5,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "fai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "dol",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "as",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        },
+        {
+          "middle": "kard",
+          "type": "COMPOUND",
+          "atom": "ka",
+          "count": 1
+        },
+        {
+          "middle": "xaloeee",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        }
+      ]
+    },
+    "f55v": {
+      "unique_count": 3,
+      "compound": 3,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "dyd",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "eyf",
+          "type": "COMPOUND",
+          "atom": "ey",
+          "count": 1
+        },
+        {
+          "middle": "archo",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        }
+      ]
+    },
+    "f57r": {
+      "unique_count": 9,
+      "compound": 9,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "yod",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "qykeeo",
+          "type": "COMPOUND",
+          "atom": "keeo",
+          "count": 1
+        },
+        {
+          "middle": "eook",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "eekeo",
+          "type": "COMPOUND",
+          "atom": "eek",
+          "count": 1
+        },
+        {
+          "middle": "ofor",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "ckhch",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "ctch",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "tcf",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "cphed",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        }
+      ]
+    },
+    "f66r": {
+      "unique_count": 17,
+      "compound": 17,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "olpchd",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "cfhe",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "oekc",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "ekeo",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "cta",
+          "type": "COMPOUND",
+          "atom": "ct",
+          "count": 1
+        },
+        {
+          "middle": "okaii",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "fc",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "ax",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        },
+        {
+          "middle": "olfosd",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "lcheeek",
+          "type": "COMPOUND",
+          "atom": "eek",
+          "count": 1
+        }
+      ]
+    },
+    "f66v": {
+      "unique_count": 12,
+      "compound": 12,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eodof",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        },
+        {
+          "middle": "oop",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "rshef",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "lde",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "okes",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "edef",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        },
+        {
+          "middle": "ckhhd",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "sop",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "ekcs",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "feed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        }
+      ]
+    },
+    "f75r": {
+      "unique_count": 5,
+      "compound": 5,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "amo",
+          "type": "COMPOUND",
+          "atom": "am",
+          "count": 1
+        },
+        {
+          "middle": "tar",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        },
+        {
+          "middle": "oqek",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "qckhs",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "lka",
+          "type": "COMPOUND",
+          "atom": "lk",
+          "count": 1
+        }
+      ]
+    },
+    "f75v": {
+      "unique_count": 8,
+      "compound": 8,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eta",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "sht",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "dyqo",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "oksh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "qok",
+          "type": "COMPOUND",
+          "atom": "ok",
+          "count": 1
+        },
+        {
+          "middle": "eolo",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        },
+        {
+          "middle": "ino",
+          "type": "COMPOUND",
+          "atom": "in",
+          "count": 1
+        },
+        {
+          "middle": "qekyted",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        }
+      ]
+    },
+    "f76r": {
+      "unique_count": 15,
+      "compound": 15,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "tchok",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "fs",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "tddy",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "tedsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "qctheed",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "ckheed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "kaloro",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "kchs",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "qal",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "llaii",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        }
+      ]
+    },
+    "f76v": {
+      "unique_count": 10,
+      "compound": 10,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "opcha",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "scs",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "cpc",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "yte",
+          "type": "COMPOUND",
+          "atom": "te",
+          "count": 1
+        },
+        {
+          "middle": "oeke",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "eeke",
+          "type": "COMPOUND",
+          "atom": "eek",
+          "count": 1
+        },
+        {
+          "middle": "oshepol",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "loii",
+          "type": "COMPOUND",
+          "atom": "lo",
+          "count": 1
+        },
+        {
+          "middle": "opalsh",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "ckhyd",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        }
+      ]
+    },
+    "f77r": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ork",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "dylche",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "qyk",
+          "type": "COMPOUND",
+          "atom": "k",
+          "count": 1
+        },
+        {
+          "middle": "sl",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "lchpsh",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "rchd",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "olaiino",
+          "type": "COMPOUND",
+          "atom": "aiin",
+          "count": 1
+        }
+      ]
+    },
+    "f77v": {
+      "unique_count": 2,
+      "compound": 2,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "sor",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "rcheed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        }
+      ]
+    },
+    "f78r": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "dolt",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "kych",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "cht",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "dr",
+          "type": "COMPOUND",
+          "atom": "d",
+          "count": 1
+        },
+        {
+          "middle": "chdldlo",
+          "type": "COMPOUND",
+          "atom": "lo",
+          "count": 1
+        },
+        {
+          "middle": "raloik",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "asodlo",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        }
+      ]
+    },
+    "f78v": {
+      "unique_count": 2,
+      "compound": 2,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "lkesh",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "kedy",
+          "type": "COMPOUND",
+          "atom": "edy",
+          "count": 1
+        }
+      ]
+    },
+    "f79r": {
+      "unique_count": 6,
+      "compound": 6,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "echy",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        },
+        {
+          "middle": "ao",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        },
+        {
+          "middle": "ecphh",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "kched",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "chot",
+          "type": "COMPOUND",
+          "atom": "ot",
+          "count": 1
+        },
+        {
+          "middle": "oa",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        }
+      ]
+    },
+    "f79v": {
+      "unique_count": 5,
+      "compound": 5,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ldsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "oiiin",
+          "type": "COMPOUND",
+          "atom": "iin",
+          "count": 1
+        },
+        {
+          "middle": "tshs",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "eepsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "yef",
+          "type": "COMPOUND",
+          "atom": "y",
+          "count": 1
+        }
+      ]
+    },
+    "f80r": {
+      "unique_count": 8,
+      "compound": 8,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "polk",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "kechck",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        },
+        {
+          "middle": "opcheek",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "hcth",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "rolshs",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "eeyt",
+          "type": "COMPOUND",
+          "atom": "eey",
+          "count": 1
+        },
+        {
+          "middle": "efaloi",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "klch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        }
+      ]
+    },
+    "f80v": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ecty",
+          "type": "COMPOUND",
+          "atom": "ect",
+          "count": 1
+        },
+        {
+          "middle": "pal",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "tlolk",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "kop",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "poik",
+          "type": "COMPOUND",
+          "atom": "k",
+          "count": 1
+        },
+        {
+          "middle": "ltesh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "alc",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        }
+      ]
+    },
+    "f81r": {
+      "unique_count": 2,
+      "compound": 2,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "oshe",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "qcthdy",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        }
+      ]
+    },
+    "f81v": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "oshyteed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "ylk",
+          "type": "COMPOUND",
+          "atom": "lk",
+          "count": 1
+        },
+        {
+          "middle": "olyd",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "ecs",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "lshcth",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "tedyt",
+          "type": "COMPOUND",
+          "atom": "edy",
+          "count": 1
+        },
+        {
+          "middle": "qekc",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        }
+      ]
+    },
+    "f82r": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "irch",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "dched",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        },
+        {
+          "middle": "eckho",
+          "type": "COMPOUND",
+          "atom": "eck",
+          "count": 1
+        },
+        {
+          "middle": "sals",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "eeer",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "loch",
+          "type": "COMPOUND",
+          "atom": "lo",
+          "count": 1
+        },
+        {
+          "middle": "ikh",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        }
+      ]
+    },
+    "f82v": {
+      "unique_count": 17,
+      "compound": 16,
+      "novel": 1,
+      "examples": [
+        {
+          "middle": "teytyqok",
+          "type": "COMPOUND",
+          "atom": "te",
+          "count": 1
+        },
+        {
+          "middle": "cthe",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "oina",
+          "type": "COMPOUND",
+          "atom": "in",
+          "count": 1
+        },
+        {
+          "middle": "check",
+          "type": "COMPOUND",
+          "atom": "eck",
+          "count": 1
+        },
+        {
+          "middle": "dyta",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "lg",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "eytch",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "ches",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "aind",
+          "type": "COMPOUND",
+          "atom": "ain",
+          "count": 1
+        },
+        {
+          "middle": "shals",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        }
+      ]
+    },
+    "f83r": {
+      "unique_count": 14,
+      "compound": 14,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "lshed",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 2
+        },
+        {
+          "middle": "opcs",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "ecthedc",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "fsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "cseckh",
+          "type": "COMPOUND",
+          "atom": "eck",
+          "count": 1
+        },
+        {
+          "middle": "qpch",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "ealr",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "eeet",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "kyld",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "iry",
+          "type": "COMPOUND",
+          "atom": "ry",
+          "count": 1
+        }
+      ]
+    },
+    "f83v": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ldak",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "ola",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "arc",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        },
+        {
+          "middle": "lld",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "kao",
+          "type": "COMPOUND",
+          "atom": "ka",
+          "count": 1
+        },
+        {
+          "middle": "oqo",
+          "type": "COMPOUND",
+          "atom": "o",
+          "count": 1
+        },
+        {
+          "middle": "oysh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        }
+      ]
+    },
+    "f84r": {
+      "unique_count": 6,
+      "compound": 6,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "lmy",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "tchs",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "oqofch",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "kolch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "qsolke",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "ckhc",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        }
+      ]
+    },
+    "f84v": {
+      "unique_count": 4,
+      "compound": 4,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "isol",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 2
+        },
+        {
+          "middle": "ysk",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 2
+        },
+        {
+          "middle": "cfhdor",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "loke",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        }
+      ]
+    },
+    "f85r1": {
+      "unique_count": 18,
+      "compound": 18,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "pdsheo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "efo",
+          "type": "COMPOUND",
+          "atom": "e",
+          "count": 1
+        },
+        {
+          "middle": "odeed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "ltsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "ldo",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "tdct",
+          "type": "COMPOUND",
+          "atom": "ct",
+          "count": 1
+        },
+        {
+          "middle": "efshoro",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "opak",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "oeesea",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "dx",
+          "type": "COMPOUND",
+          "atom": "d",
+          "count": 1
+        }
+      ]
+    },
+    "f85r2": {
+      "unique_count": 10,
+      "compound": 10,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "opoee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "pchch",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "aiino",
+          "type": "COMPOUND",
+          "atom": "aiin",
+          "count": 1
+        },
+        {
+          "middle": "ockhd",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "see",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "oeor",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "qtch",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "okcod",
+          "type": "COMPOUND",
+          "atom": "kc",
+          "count": 1
+        },
+        {
+          "middle": "ypsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "chdo",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        }
+      ]
+    },
+    "f86v4": {
+      "unique_count": 14,
+      "compound": 14,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "odsheo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "oseeed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "arorc",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "opchs",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "etc",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "tes",
+          "type": "COMPOUND",
+          "atom": "te",
+          "count": 1
+        },
+        {
+          "middle": "odeeeo",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "odarch",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "edee",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        },
+        {
+          "middle": "sco",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        }
+      ]
+    },
+    "f86v6": {
+      "unique_count": 24,
+      "compound": 24,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ik",
+          "type": "COMPOUND",
+          "atom": "k",
+          "count": 2
+        },
+        {
+          "middle": "archee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "eeal",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "airolk",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "holct",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "cpholk",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "ecf",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "qckhe",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "oif",
+          "type": "COMPOUND",
+          "atom": "i",
+          "count": 1
+        },
+        {
+          "middle": "ecfh",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        }
+      ]
+    },
+    "f86v5": {
+      "unique_count": 13,
+      "compound": 13,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "fysh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "losai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "raiiin",
+          "type": "COMPOUND",
+          "atom": "iin",
+          "count": 1
+        },
+        {
+          "middle": "pches",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "amod",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "lkalyt",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "eeytyd",
+          "type": "COMPOUND",
+          "atom": "eey",
+          "count": 1
+        },
+        {
+          "middle": "ps",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "oeee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "ytd",
+          "type": "COMPOUND",
+          "atom": "y",
+          "count": 1
+        }
+      ]
+    },
+    "f86v3": {
+      "unique_count": 7,
+      "compound": 7,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ypshe",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "iinl",
+          "type": "COMPOUND",
+          "atom": "iin",
+          "count": 1
+        },
+        {
+          "middle": "pcheeo",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "eeedc",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "cfhy",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "acheo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "eeeoc",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        }
+      ]
+    },
+    "f94r": {
+      "unique_count": 3,
+      "compound": 3,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "opaii",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "oxockh",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "dytch",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        }
+      ]
+    },
+    "f94v": {
+      "unique_count": 1,
+      "compound": 1,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "opchaik",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        }
+      ]
+    },
+    "f95r2": {
+      "unique_count": 3,
+      "compound": 3,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "lfc",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "ckhyfc",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "edyted",
+          "type": "COMPOUND",
+          "atom": "edy",
+          "count": 1
+        }
+      ]
+    },
+    "f95v2": {
+      "unique_count": 1,
+      "compound": 1,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eky",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        }
+      ]
+    },
+    "f95v1": {
+      "unique_count": 5,
+      "compound": 5,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "hoep",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "oeks",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        },
+        {
+          "middle": "oyf",
+          "type": "COMPOUND",
+          "atom": "y",
+          "count": 1
+        },
+        {
+          "middle": "fshed",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "akar",
+          "type": "COMPOUND",
+          "atom": "ka",
+          "count": 1
+        }
+      ]
+    },
+    "f103r": {
+      "unique_count": 19,
+      "compound": 19,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "echypc",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        },
+        {
+          "middle": "cphh",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "lok",
+          "type": "COMPOUND",
+          "atom": "ok",
+          "count": 1
+        },
+        {
+          "middle": "keal",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "adch",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "ofcho",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "eedar",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "ikhyk",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "efh",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "kechc",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        }
+      ]
+    },
+    "f103v": {
+      "unique_count": 8,
+      "compound": 8,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "kees",
+          "type": "COMPOUND",
+          "atom": "kee",
+          "count": 2
+        },
+        {
+          "middle": "eedak",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "ekee",
+          "type": "COMPOUND",
+          "atom": "kee",
+          "count": 1
+        },
+        {
+          "middle": "eeylch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "ary",
+          "type": "COMPOUND",
+          "atom": "ry",
+          "count": 1
+        },
+        {
+          "middle": "dpc",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "keshe",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "qcph",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        }
+      ]
+    },
+    "f104r": {
+      "unique_count": 22,
+      "compound": 22,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "osai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "edar",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        },
+        {
+          "middle": "edacp",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        },
+        {
+          "middle": "kecho",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        },
+        {
+          "middle": "eocka",
+          "type": "COMPOUND",
+          "atom": "ka",
+          "count": 1
+        },
+        {
+          "middle": "odc",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "teode",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        },
+        {
+          "middle": "ocheoith",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "ctheo",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "yteo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        }
+      ]
+    },
+    "f104v": {
+      "unique_count": 17,
+      "compound": 17,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "kam",
+          "type": "COMPOUND",
+          "atom": "ka",
+          "count": 1
+        },
+        {
+          "middle": "oeeod",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "eodal",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        },
+        {
+          "middle": "odl",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "lchec",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "eeta",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "ind",
+          "type": "COMPOUND",
+          "atom": "in",
+          "count": 1
+        },
+        {
+          "middle": "keoc",
+          "type": "COMPOUND",
+          "atom": "ke",
+          "count": 1
+        },
+        {
+          "middle": "olkc",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "olksh",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        }
+      ]
+    },
+    "f105r": {
+      "unique_count": 25,
+      "compound": 25,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "aiir",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 2
+        },
+        {
+          "middle": "rais",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "eeeod",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "aiisock",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "aiiro",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "oes",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "oeeolc",
+          "type": "COMPOUND",
+          "atom": "eeol",
+          "count": 1
+        },
+        {
+          "middle": "yaii",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "dll",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "oekeo",
+          "type": "COMPOUND",
+          "atom": "ek",
+          "count": 1
+        }
+      ]
+    },
+    "f105v": {
+      "unique_count": 32,
+      "compound": 32,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "iii",
+          "type": "COMPOUND",
+          "atom": "i",
+          "count": 1
+        },
+        {
+          "middle": "pchesd",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "opchedd",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "ook",
+          "type": "COMPOUND",
+          "atom": "ok",
+          "count": 1
+        },
+        {
+          "middle": "roee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "ckhoda",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "ckhdd",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "iish",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "ord",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "cphe",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        }
+      ]
+    },
+    "f106r": {
+      "unique_count": 21,
+      "compound": 21,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "leeo",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "kchsd",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "rarc",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        },
+        {
+          "middle": "teedo",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "tok",
+          "type": "COMPOUND",
+          "atom": "ok",
+          "count": 1
+        },
+        {
+          "middle": "eeolch",
+          "type": "COMPOUND",
+          "atom": "eeol",
+          "count": 1
+        },
+        {
+          "middle": "eopc",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "tolc",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "tchor",
+          "type": "COMPOUND",
+          "atom": "tch",
+          "count": 1
+        },
+        {
+          "middle": "ear",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        }
+      ]
+    },
+    "f106v": {
+      "unique_count": 19,
+      "compound": 19,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "opaiir",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "amc",
+          "type": "COMPOUND",
+          "atom": "am",
+          "count": 1
+        },
+        {
+          "middle": "eokc",
+          "type": "COMPOUND",
+          "atom": "eok",
+          "count": 1
+        },
+        {
+          "middle": "eoto",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "raro",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        },
+        {
+          "middle": "eolsho",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        },
+        {
+          "middle": "olkai",
+          "type": "COMPOUND",
+          "atom": "olk",
+          "count": 1
+        },
+        {
+          "middle": "qed",
+          "type": "COMPOUND",
+          "atom": "ed",
+          "count": 1
+        },
+        {
+          "middle": "odalo",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "eolchd",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        }
+      ]
+    },
+    "f107r": {
+      "unique_count": 17,
+      "compound": 17,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eesod",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "okcho",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "irolc",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "dykch",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "lchl",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "lshos",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "qeeo",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "alos",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "ilch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "aiisod",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        }
+      ]
+    },
+    "f107v": {
+      "unique_count": 17,
+      "compound": 17,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "alkc",
+          "type": "COMPOUND",
+          "atom": "kc",
+          "count": 1
+        },
+        {
+          "middle": "dck",
+          "type": "COMPOUND",
+          "atom": "ck",
+          "count": 1
+        },
+        {
+          "middle": "lcheolk",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        },
+        {
+          "middle": "pchcf",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "ockheo",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "aiira",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "akaiik",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "raikc",
+          "type": "COMPOUND",
+          "atom": "kc",
+          "count": 1
+        },
+        {
+          "middle": "lkee",
+          "type": "COMPOUND",
+          "atom": "kee",
+          "count": 1
+        },
+        {
+          "middle": "tysh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        }
+      ]
+    },
+    "f108r": {
+      "unique_count": 14,
+      "compound": 14,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "pchet",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "chdpc",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "dasihx",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        },
+        {
+          "middle": "opas",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "ockhed",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "oked",
+          "type": "COMPOUND",
+          "atom": "ked",
+          "count": 1
+        },
+        {
+          "middle": "cheef",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "okeed",
+          "type": "COMPOUND",
+          "atom": "keed",
+          "count": 1
+        },
+        {
+          "middle": "alod",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "dii",
+          "type": "COMPOUND",
+          "atom": "d",
+          "count": 1
+        }
+      ]
+    },
+    "f108v": {
+      "unique_count": 17,
+      "compound": 17,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "edalk",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "loet",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "darx",
+          "type": "COMPOUND",
+          "atom": "ar",
+          "count": 1
+        },
+        {
+          "middle": "edeed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "leed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "keeed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "opshol",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "ofaramot",
+          "type": "COMPOUND",
+          "atom": "ot",
+          "count": 1
+        },
+        {
+          "middle": "lkeed",
+          "type": "COMPOUND",
+          "atom": "keed",
+          "count": 1
+        },
+        {
+          "middle": "eykech",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        }
+      ]
+    },
+    "f111r": {
+      "unique_count": 22,
+      "compound": 22,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "olchd",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "aiip",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "etals",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "keea",
+          "type": "COMPOUND",
+          "atom": "kee",
+          "count": 1
+        },
+        {
+          "middle": "eeks",
+          "type": "COMPOUND",
+          "atom": "eek",
+          "count": 1
+        },
+        {
+          "middle": "re",
+          "type": "COMPOUND",
+          "atom": "e",
+          "count": 1
+        },
+        {
+          "middle": "eolai",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        },
+        {
+          "middle": "eodo",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        },
+        {
+          "middle": "kyde",
+          "type": "COMPOUND",
+          "atom": "k",
+          "count": 1
+        },
+        {
+          "middle": "eoty",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        }
+      ]
+    },
+    "f111v": {
+      "unique_count": 12,
+      "compound": 12,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "opcheodai",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "okedai",
+          "type": "COMPOUND",
+          "atom": "ked",
+          "count": 1
+        },
+        {
+          "middle": "olsh",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "edait",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "eea",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "amd",
+          "type": "COMPOUND",
+          "atom": "am",
+          "count": 1
+        },
+        {
+          "middle": "lan",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "eain",
+          "type": "COMPOUND",
+          "atom": "ain",
+          "count": 1
+        },
+        {
+          "middle": "arsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "pchai",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        }
+      ]
+    },
+    "f112r": {
+      "unique_count": 14,
+      "compound": 14,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ody",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "oty",
+          "type": "COMPOUND",
+          "atom": "ot",
+          "count": 1
+        },
+        {
+          "middle": "opom",
+          "type": "COMPOUND",
+          "atom": "op",
+          "count": 1
+        },
+        {
+          "middle": "amchd",
+          "type": "COMPOUND",
+          "atom": "am",
+          "count": 1
+        },
+        {
+          "middle": "ic",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "qair",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "iri",
+          "type": "COMPOUND",
+          "atom": "i",
+          "count": 1
+        },
+        {
+          "middle": "ych",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "choi",
+          "type": "COMPOUND",
+          "atom": "ch",
+          "count": 1
+        },
+        {
+          "middle": "rain",
+          "type": "COMPOUND",
+          "atom": "ain",
+          "count": 1
+        }
+      ]
+    },
+    "f112v": {
+      "unique_count": 17,
+      "compound": 17,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "alai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "eaik",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "oeeek",
+          "type": "COMPOUND",
+          "atom": "eek",
+          "count": 1
+        },
+        {
+          "middle": "oees",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "eei",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "eeedeed",
+          "type": "COMPOUND",
+          "atom": "eed",
+          "count": 1
+        },
+        {
+          "middle": "teos",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "opcheeo",
+          "type": "COMPOUND",
+          "atom": "opch",
+          "count": 1
+        },
+        {
+          "middle": "raif",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "odaro",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        }
+      ]
+    },
+    "f113r": {
+      "unique_count": 23,
+      "compound": 23,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "shs",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 2
+        },
+        {
+          "middle": "esfc",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "eeos",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "liir",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "kcheo",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "yh",
+          "type": "COMPOUND",
+          "atom": "h",
+          "count": 1
+        },
+        {
+          "middle": "rl",
+          "type": "COMPOUND",
+          "atom": "l",
+          "count": 1
+        },
+        {
+          "middle": "cphoit",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "ckhy",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "eoes",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        }
+      ]
+    },
+    "f113v": {
+      "unique_count": 19,
+      "compound": 19,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "orar",
+          "type": "COMPOUND",
+          "atom": "or",
+          "count": 1
+        },
+        {
+          "middle": "keedo",
+          "type": "COMPOUND",
+          "atom": "keed",
+          "count": 1
+        },
+        {
+          "middle": "eykeeo",
+          "type": "COMPOUND",
+          "atom": "keeo",
+          "count": 1
+        },
+        {
+          "middle": "samok",
+          "type": "COMPOUND",
+          "atom": "ok",
+          "count": 1
+        },
+        {
+          "middle": "qeeee",
+          "type": "COMPOUND",
+          "atom": "ee",
+          "count": 1
+        },
+        {
+          "middle": "eolc",
+          "type": "COMPOUND",
+          "atom": "eol",
+          "count": 1
+        },
+        {
+          "middle": "eodoiid",
+          "type": "COMPOUND",
+          "atom": "eod",
+          "count": 1
+        },
+        {
+          "middle": "eshd",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "eala",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "otai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        }
+      ]
+    },
+    "f114r": {
+      "unique_count": 34,
+      "compound": 34,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "ofchedaii",
+          "type": "COMPOUND",
+          "atom": "aii",
+          "count": 1
+        },
+        {
+          "middle": "ocp",
+          "type": "COMPOUND",
+          "atom": "c",
+          "count": 1
+        },
+        {
+          "middle": "dairod",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "dod",
+          "type": "COMPOUND",
+          "atom": "od",
+          "count": 1
+        },
+        {
+          "middle": "edalo",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "opailo",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "cheshd",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "chedai",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "lpchd",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "opdairo",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        }
+      ]
+    },
+    "f114v": {
+      "unique_count": 18,
+      "compound": 18,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "oeeo",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 2
+        },
+        {
+          "middle": "odal",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "dcheo",
+          "type": "COMPOUND",
+          "atom": "eo",
+          "count": 1
+        },
+        {
+          "middle": "qepoep",
+          "type": "COMPOUND",
+          "atom": "p",
+          "count": 1
+        },
+        {
+          "middle": "ckhed",
+          "type": "COMPOUND",
+          "atom": "ckh",
+          "count": 1
+        },
+        {
+          "middle": "epched",
+          "type": "COMPOUND",
+          "atom": "pch",
+          "count": 1
+        },
+        {
+          "middle": "rkchek",
+          "type": "COMPOUND",
+          "atom": "kch",
+          "count": 1
+        },
+        {
+          "middle": "oypsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "oshsod",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        },
+        {
+          "middle": "edck",
+          "type": "COMPOUND",
+          "atom": "ck",
+          "count": 1
+        }
+      ]
+    },
+    "f115r": {
+      "unique_count": 24,
+      "compound": 24,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "eopoltee",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "oech",
+          "type": "COMPOUND",
+          "atom": "ech",
+          "count": 1
+        },
+        {
+          "middle": "rdy",
+          "type": "COMPOUND",
+          "atom": "dy",
+          "count": 1
+        },
+        {
+          "middle": "eeeos",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "tote",
+          "type": "COMPOUND",
+          "atom": "te",
+          "count": 1
+        },
+        {
+          "middle": "oloro",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "airorlc",
+          "type": "COMPOUND",
+          "atom": "ai",
+          "count": 1
+        },
+        {
+          "middle": "cpholro",
+          "type": "COMPOUND",
+          "atom": "cph",
+          "count": 1
+        },
+        {
+          "middle": "cthed",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "tolchd",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        }
+      ]
+    },
+    "f115v": {
+      "unique_count": 22,
+      "compound": 22,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "tad",
+          "type": "COMPOUND",
+          "atom": "a",
+          "count": 1
+        },
+        {
+          "middle": "opol",
+          "type": "COMPOUND",
+          "atom": "ol",
+          "count": 1
+        },
+        {
+          "middle": "qetd",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "eeocho",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        },
+        {
+          "middle": "qt",
+          "type": "COMPOUND",
+          "atom": "t",
+          "count": 1
+        },
+        {
+          "middle": "eeok",
+          "type": "COMPOUND",
+          "atom": "eok",
+          "count": 1
+        },
+        {
+          "middle": "talch",
+          "type": "COMPOUND",
+          "atom": "lch",
+          "count": 1
+        },
+        {
+          "middle": "oto",
+          "type": "COMPOUND",
+          "atom": "ot",
+          "count": 1
+        },
+        {
+          "middle": "ros",
+          "type": "COMPOUND",
+          "atom": "s",
+          "count": 1
+        },
+        {
+          "middle": "teeotc",
+          "type": "COMPOUND",
+          "atom": "eeo",
+          "count": 1
+        }
+      ]
+    },
+    "f116r": {
+      "unique_count": 13,
+      "compound": 13,
+      "novel": 0,
+      "examples": [
+        {
+          "middle": "dp",
+          "type": "COMPOUND",
+          "atom": "p",
+          "count": 1
+        },
+        {
+          "middle": "osheek",
+          "type": "COMPOUND",
+          "atom": "eek",
+          "count": 1
+        },
+        {
+          "middle": "ala",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "oet",
+          "type": "COMPOUND",
+          "atom": "et",
+          "count": 1
+        },
+        {
+          "middle": "aral",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "rf",
+          "type": "COMPOUND",
+          "atom": "r",
+          "count": 1
+        },
+        {
+          "middle": "chcth",
+          "type": "COMPOUND",
+          "atom": "cth",
+          "count": 1
+        },
+        {
+          "middle": "tals",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "allar",
+          "type": "COMPOUND",
+          "atom": "al",
+          "count": 1
+        },
+        {
+          "middle": "yrsh",
+          "type": "COMPOUND",
+          "atom": "sh",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

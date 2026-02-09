@@ -1,0 +1,71 @@
+{
+  "n_paragraphs": 527,
+  "by_type_count": {
+    "HIGH_H": 203,
+    "BALANCED": 235,
+    "HIGH_K_MED_H": 50,
+    "HIGH_K_LOW_H": 8,
+    "HIGH_E": 31
+  },
+  "section_distribution": {
+    "H": {
+      "HIGH_H": 47,
+      "BALANCED": 33,
+      "HIGH_K_MED_H": 24,
+      "HIGH_K_LOW_H": 1
+    },
+    "T": {
+      "HIGH_H": 15,
+      "BALANCED": 6,
+      "HIGH_K_MED_H": 1
+    },
+    "B": {
+      "BALANCED": 63,
+      "HIGH_H": 29,
+      "HIGH_E": 5,
+      "HIGH_K_LOW_H": 1,
+      "HIGH_K_MED_H": 5
+    },
+    "C": {
+      "HIGH_H": 12,
+      "BALANCED": 5,
+      "HIGH_K_LOW_H": 1,
+      "HIGH_K_MED_H": 3
+    },
+    "S": {
+      "BALANCED": 128,
+      "HIGH_H": 100,
+      "HIGH_E": 26,
+      "HIGH_K_MED_H": 17,
+      "HIGH_K_LOW_H": 5
+    }
+  },
+  "HIGH_K_LOW_H_profile": {
+    "k_pct": 48.017694393633064,
+    "h_pct": 10.974380750663606,
+    "e_pct": 41.00792485570333,
+    "en_rate": 0.29126711190855925,
+    "fq_rate": 0.24872443893825472
+  },
+  "HIGH_H_profile": {
+    "k_pct": 19.402028449778825,
+    "h_pct": 43.19885047241665,
+    "e_pct": 37.39912107780453,
+    "en_rate": 0.3016057051488395,
+    "fq_rate": 0.09732769760581347
+  },
+  "HIGH_E_profile": {
+    "k_pct": 18.450901456211742,
+    "h_pct": 18.38750510839863,
+    "e_pct": 63.16159343538963,
+    "en_rate": 0.2517991230677851,
+    "fq_rate": 0.1557050284964456
+  },
+  "BALANCED_profile": {
+    "k_pct": 23.25191554605222,
+    "h_pct": 28.419931999218047,
+    "e_pct": 48.32815245472974,
+    "en_rate": 0.3085469036265702,
+    "fq_rate": 0.12618084191745638
+  }
+}

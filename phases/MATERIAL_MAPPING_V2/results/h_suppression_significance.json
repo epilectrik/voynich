@@ -1,0 +1,11 @@
+{
+  "precision_h_rate": 0.051588964031360346,
+  "baseline_h_rate": 0.09707308624870108,
+  "h_ratio": 0.5314445643480368,
+  "p_value": 0.3213,
+  "effect_size": 0.5833569963958425,
+  "significant": false,
+  "precision_ke_rate": 0.39595427613860795,
+  "baseline_ke_rate": 0.4771388985105646,
+  "kernel_test_pass": true
+}

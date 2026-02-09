@@ -1,0 +1,19 @@
+{
+  "with_ri_para_count": 239,
+  "without_ri_para_count": 44,
+  "with_ri_pp_total": 9530,
+  "without_ri_pp_total": 866,
+  "execution_prefix_test": {
+    "with_ri_exec_pct": 20.184630738522955,
+    "without_ri_exec_pct": 20.275862068965516,
+    "chi2": 0.00010599367298316446,
+    "p_value": 0.9917856659455995,
+    "result": "NEUTRAL"
+  },
+  "transitions": {
+    "ri_to_ri": 114,
+    "ri_to_non": 28,
+    "non_to_ri": 21,
+    "non_to_non": 6
+  }
+}

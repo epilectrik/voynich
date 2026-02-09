@@ -6,6 +6,10 @@
 
 ## Constraint
 
+> **Scope Note (2026-01-30):** RI structure analysis uses paragraph-level positions (INITIAL,
+> MIDDLE, FINAL). Paragraph is the A-internal record unit (C881). For A-B vocabulary
+> correspondence, folio is the operational unit (C885: 81% coverage).
+
 RI (Registry-Internal) MIDDLEs partition into three distinct population tiers based on repetition and positional behavior:
 
 | Tier | Rate | Count | Behavior |

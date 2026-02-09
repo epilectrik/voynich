@@ -1,0 +1,678 @@
+{
+  "total_paragraphs": 342,
+  "paragraphs_with_strong_matches": 52,
+  "matches_by_material": {
+    "ox blood water": [
+      {
+        "para_id": "A_030",
+        "initial_ri": [
+          "oloch",
+          "toee"
+        ],
+        "similarity": 0.9622504486493763
+      },
+      {
+        "para_id": "A_049",
+        "initial_ri": [
+          "tchyt"
+        ],
+        "similarity": 0.9622504486493763
+      },
+      {
+        "para_id": "A_085",
+        "initial_ri": [
+          "ofyc"
+        ],
+        "similarity": 0.9271726499455307
+      },
+      {
+        "para_id": "A_337",
+        "initial_ri": [
+          "deesho"
+        ],
+        "similarity": 0.8936889100726261
+      },
+      {
+        "para_id": "A_197",
+        "initial_ri": [
+          "lsheo"
+        ],
+        "similarity": 0.8846517369293828
+      },
+      {
+        "para_id": "A_015",
+        "initial_ri": [
+          "eoar"
+        ],
+        "similarity": 0.8606629658238704
+      },
+      {
+        "para_id": "A_019",
+        "initial_ri": [
+          "dalc"
+        ],
+        "similarity": 0.8432740427115677
+      },
+      {
+        "para_id": "A_269",
+        "initial_ri": [
+          "ealch"
+        ],
+        "similarity": 0.8333333333333331
+      },
+      {
+        "para_id": "A_253",
+        "initial_ri": [
+          "rech"
+        ],
+        "similarity": 0.8310520332773323
+      },
+      {
+        "para_id": "A_082",
+        "initial_ri": [
+          "faii"
+        ],
+        "similarity": 0.8268982305947229
+      }
+    ],
+    "standard herb": [
+      {
+        "para_id": "A_302",
+        "initial_ri": [
+          "hdeect"
+        ],
+        "similarity": 0.8755950357709131
+      },
+      {
+        "para_id": "A_215",
+        "initial_ri": [
+          "aiph"
+        ],
+        "similarity": 0.8542821429703302
+      },
+      {
+        "para_id": "A_031",
+        "initial_ri": [
+          "lys"
+        ],
+        "similarity": 0.8520128672302583
+      },
+      {
+        "para_id": "A_010",
+        "initial_ri": [
+          "kyd"
+        ],
+        "similarity": 0.8417937871268422
+      },
+      {
+        "para_id": "A_111",
+        "initial_ri": [
+          "fochof"
+        ],
+        "similarity": 0.7803837085516823
+      },
+      {
+        "para_id": "A_087",
+        "initial_ri": [
+          "lds"
+        ],
+        "similarity": 0.7516283835227736
+      }
+    ],
+    "earthworm water": [
+      {
+        "para_id": "A_190",
+        "initial_ri": [
+          "typch"
+        ],
+        "similarity": 0.8265190454762247
+      },
+      {
+        "para_id": "A_129",
+        "initial_ri": [
+          "hoo"
+        ],
+        "similarity": 0.778498944161523
+      },
+      {
+        "para_id": "A_160",
+        "initial_ri": [
+          "lsho"
+        ],
+        "similarity": 0.7590721152765896
+      },
+      {
+        "para_id": "A_001",
+        "initial_ri": [
+          "fachy"
+        ],
+        "similarity": 0.7349043394794004
+      }
+    ]
+  },
+  "top_matches": [
+    {
+      "para_id": "A_030",
+      "initial_ri": [
+        "oloch",
+        "toee"
+      ],
+      "final_ri": [],
+      "pp_count": 29,
+      "best_material": "ox blood water",
+      "similarity": 0.9622504486493763
+    },
+    {
+      "para_id": "A_049",
+      "initial_ri": [
+        "tchyt"
+      ],
+      "final_ri": [],
+      "pp_count": 27,
+      "best_material": "ox blood water",
+      "similarity": 0.9622504486493763
+    },
+    {
+      "para_id": "A_085",
+      "initial_ri": [
+        "ofyc"
+      ],
+      "final_ri": [],
+      "pp_count": 25,
+      "best_material": "ox blood water",
+      "similarity": 0.9271726499455307
+    },
+    {
+      "para_id": "A_337",
+      "initial_ri": [
+        "deesho"
+      ],
+      "final_ri": [],
+      "pp_count": 62,
+      "best_material": "ox blood water",
+      "similarity": 0.8936889100726261
+    },
+    {
+      "para_id": "A_197",
+      "initial_ri": [
+        "lsheo"
+      ],
+      "final_ri": [],
+      "pp_count": 46,
+      "best_material": "ox blood water",
+      "similarity": 0.8846517369293828
+    },
+    {
+      "para_id": "A_302",
+      "initial_ri": [
+        "hdeect"
+      ],
+      "final_ri": [],
+      "pp_count": 66,
+      "best_material": "standard herb",
+      "similarity": 0.8755950357709131
+    },
+    {
+      "para_id": "A_015",
+      "initial_ri": [
+        "eoar"
+      ],
+      "final_ri": [],
+      "pp_count": 20,
+      "best_material": "ox blood water",
+      "similarity": 0.8606629658238704
+    },
+    {
+      "para_id": "A_215",
+      "initial_ri": [
+        "aiph"
+      ],
+      "final_ri": [
+        "orchols"
+      ],
+      "pp_count": 37,
+      "best_material": "standard herb",
+      "similarity": 0.8542821429703302
+    },
+    {
+      "para_id": "A_031",
+      "initial_ri": [
+        "lys"
+      ],
+      "final_ri": [],
+      "pp_count": 37,
+      "best_material": "standard herb",
+      "similarity": 0.8520128672302583
+    },
+    {
+      "para_id": "A_019",
+      "initial_ri": [
+        "dalc"
+      ],
+      "final_ri": [],
+      "pp_count": 30,
+      "best_material": "ox blood water",
+      "similarity": 0.8432740427115677
+    },
+    {
+      "para_id": "A_010",
+      "initial_ri": [
+        "kyd"
+      ],
+      "final_ri": [],
+      "pp_count": 50,
+      "best_material": "standard herb",
+      "similarity": 0.8417937871268422
+    },
+    {
+      "para_id": "A_269",
+      "initial_ri": [
+        "ealch"
+      ],
+      "final_ri": [],
+      "pp_count": 47,
+      "best_material": "ox blood water",
+      "similarity": 0.8333333333333331
+    },
+    {
+      "para_id": "A_253",
+      "initial_ri": [
+        "rech"
+      ],
+      "final_ri": [],
+      "pp_count": 61,
+      "best_material": "ox blood water",
+      "similarity": 0.8310520332773323
+    },
+    {
+      "para_id": "A_082",
+      "initial_ri": [
+        "faii"
+      ],
+      "final_ri": [],
+      "pp_count": 32,
+      "best_material": "ox blood water",
+      "similarity": 0.8268982305947229
+    },
+    {
+      "para_id": "A_190",
+      "initial_ri": [
+        "typch"
+      ],
+      "final_ri": [],
+      "pp_count": 85,
+      "best_material": "earthworm water",
+      "similarity": 0.8265190454762247
+    },
+    {
+      "para_id": "A_039",
+      "initial_ri": [
+        "hod"
+      ],
+      "final_ri": [],
+      "pp_count": 69,
+      "best_material": "ox blood water",
+      "similarity": 0.8222264517930379
+    },
+    {
+      "para_id": "A_230",
+      "initial_ri": [
+        "sholda"
+      ],
+      "final_ri": [],
+      "pp_count": 45,
+      "best_material": "ox blood water",
+      "similarity": 0.8140915784106942
+    },
+    {
+      "para_id": "A_071",
+      "initial_ri": [
+        "pdrair",
+        "rodsf",
+        "yo"
+      ],
+      "final_ri": [],
+      "pp_count": 26,
+      "best_material": "ox blood water",
+      "similarity": 0.8131433980500302
+    },
+    {
+      "para_id": "A_086",
+      "initial_ri": [
+        "oks"
+      ],
+      "final_ri": [],
+      "pp_count": 37,
+      "best_material": "ox blood water",
+      "similarity": 0.808290376865476
+    },
+    {
+      "para_id": "A_208",
+      "initial_ri": [
+        "rsheo"
+      ],
+      "final_ri": [],
+      "pp_count": 42,
+      "best_material": "ox blood water",
+      "similarity": 0.808290376865476
+    },
+    {
+      "para_id": "A_132",
+      "initial_ri": [
+        "afd"
+      ],
+      "final_ri": [],
+      "pp_count": 21,
+      "best_material": "ox blood water",
+      "similarity": 0.8017837257372732
+    },
+    {
+      "para_id": "A_183",
+      "initial_ri": [
+        "rare"
+      ],
+      "final_ri": [],
+      "pp_count": 75,
+      "best_material": "ox blood water",
+      "similarity": 0.7975567974723957
+    },
+    {
+      "para_id": "A_175",
+      "initial_ri": [
+        "oldc"
+      ],
+      "final_ri": [],
+      "pp_count": 77,
+      "best_material": "ox blood water",
+      "similarity": 0.7897513782571256
+    },
+    {
+      "para_id": "A_187",
+      "initial_ri": [
+        "eat"
+      ],
+      "final_ri": [],
+      "pp_count": 30,
+      "best_material": "ox blood water",
+      "similarity": 0.7877263614433759
+    },
+    {
+      "para_id": "A_231",
+      "initial_ri": [
+        "airs"
+      ],
+      "final_ri": [],
+      "pp_count": 44,
+      "best_material": "ox blood water",
+      "similarity": 0.7856742013183861
+    },
+    {
+      "para_id": "A_111",
+      "initial_ri": [
+        "fochof"
+      ],
+      "final_ri": [
+        "choks"
+      ],
+      "pp_count": 50,
+      "best_material": "standard herb",
+      "similarity": 0.7803837085516823
+    },
+    {
+      "para_id": "A_129",
+      "initial_ri": [
+        "hoo"
+      ],
+      "final_ri": [],
+      "pp_count": 37,
+      "best_material": "earthworm water",
+      "similarity": 0.778498944161523
+    },
+    {
+      "para_id": "A_037",
+      "initial_ri": [
+        "ho"
+      ],
+      "final_ri": [],
+      "pp_count": 52,
+      "best_material": "ox blood water",
+      "similarity": 0.7784320599357746
+    },
+    {
+      "para_id": "A_095",
+      "initial_ri": [
+        "pydchd"
+      ],
+      "final_ri": [],
+      "pp_count": 25,
+      "best_material": "ox blood water",
+      "similarity": 0.7782896421160246
+    },
+    {
+      "para_id": "A_160",
+      "initial_ri": [
+        "lsho"
+      ],
+      "final_ri": [],
+      "pp_count": 19,
+      "best_material": "earthworm water",
+      "similarity": 0.7590721152765896
+    },
+    {
+      "para_id": "A_052",
+      "initial_ri": [
+        "ldcho"
+      ],
+      "final_ri": [],
+      "pp_count": 44,
+      "best_material": "ox blood water",
+      "similarity": 0.7554191132592915
+    },
+    {
+      "para_id": "A_087",
+      "initial_ri": [
+        "lds"
+      ],
+      "final_ri": [],
+      "pp_count": 51,
+      "best_material": "standard herb",
+      "similarity": 0.7516283835227736
+    },
+    {
+      "para_id": "A_275",
+      "initial_ri": [
+        "ssheo"
+      ],
+      "final_ri": [],
+      "pp_count": 74,
+      "best_material": "ox blood water",
+      "similarity": 0.7513595764104984
+    },
+    {
+      "para_id": "A_054",
+      "initial_ri": [
+        "orodo"
+      ],
+      "final_ri": [
+        "oro"
+      ],
+      "pp_count": 41,
+      "best_material": "ox blood water",
+      "similarity": 0.7481900559272087
+    },
+    {
+      "para_id": "A_009",
+      "initial_ri": [
+        "kydain"
+      ],
+      "final_ri": [],
+      "pp_count": 42,
+      "best_material": "ox blood water",
+      "similarity": 0.7470052728308755
+    },
+    {
+      "para_id": "A_143",
+      "initial_ri": [
+        "chop"
+      ],
+      "final_ri": [],
+      "pp_count": 64,
+      "best_material": "ox blood water",
+      "similarity": 0.7410586531326337
+    },
+    {
+      "para_id": "A_153",
+      "initial_ri": [
+        "odp",
+        "acp"
+      ],
+      "final_ri": [],
+      "pp_count": 18,
+      "best_material": "ox blood water",
+      "similarity": 0.7396002616336387
+    },
+    {
+      "para_id": "A_001",
+      "initial_ri": [
+        "fachy"
+      ],
+      "final_ri": [],
+      "pp_count": 40,
+      "best_material": "earthworm water",
+      "similarity": 0.7349043394794004
+    },
+    {
+      "para_id": "A_304",
+      "initial_ri": [
+        "etolcth"
+      ],
+      "final_ri": [],
+      "pp_count": 81,
+      "best_material": "ox blood water",
+      "similarity": 0.7335310615769073
+    },
+    {
+      "para_id": "A_329",
+      "initial_ri": [
+        "eso"
+      ],
+      "final_ri": [],
+      "pp_count": 41,
+      "best_material": "ox blood water",
+      "similarity": 0.7324591117359134
+    },
+    {
+      "para_id": "A_044",
+      "initial_ri": [
+        "foch",
+        "oporo"
+      ],
+      "final_ri": [],
+      "pp_count": 34,
+      "best_material": "ox blood water",
+      "similarity": 0.7302967433402214
+    },
+    {
+      "para_id": "A_199",
+      "initial_ri": [
+        "eods"
+      ],
+      "final_ri": [],
+      "pp_count": 32,
+      "best_material": "ox blood water",
+      "similarity": 0.7302967433402213
+    },
+    {
+      "para_id": "A_041",
+      "initial_ri": [
+        "tydlo"
+      ],
+      "final_ri": [],
+      "pp_count": 42,
+      "best_material": "ox blood water",
+      "similarity": 0.7212193324274245
+    },
+    {
+      "para_id": "A_177",
+      "initial_ri": [
+        "kchcf",
+        "ycphko"
+      ],
+      "final_ri": [],
+      "pp_count": 62,
+      "best_material": "ox blood water",
+      "similarity": 0.7111165791565797
+    },
+    {
+      "para_id": "A_270",
+      "initial_ri": [
+        "cphdait"
+      ],
+      "final_ri": [],
+      "pp_count": 31,
+      "best_material": "ox blood water",
+      "similarity": 0.7106690545187013
+    },
+    {
+      "para_id": "A_059",
+      "initial_ri": [
+        "pdych",
+        "yfod",
+        "ys"
+      ],
+      "final_ri": [],
+      "pp_count": 59,
+      "best_material": "ox blood water",
+      "similarity": 0.6939683276641628
+    },
+    {
+      "para_id": "A_092",
+      "initial_ri": [
+        "pysaiin"
+      ],
+      "final_ri": [],
+      "pp_count": 29,
+      "best_material": "ox blood water",
+      "similarity": 0.6923877158526646
+    },
+    {
+      "para_id": "A_124",
+      "initial_ri": [
+        "hscth"
+      ],
+      "final_ri": [],
+      "pp_count": 57,
+      "best_material": "ox blood water",
+      "similarity": 0.6912800532450314
+    },
+    {
+      "para_id": "A_133",
+      "initial_ri": [
+        "daii"
+      ],
+      "final_ri": [],
+      "pp_count": 37,
+      "best_material": "ox blood water",
+      "similarity": 0.6852482888641929
+    },
+    {
+      "para_id": "A_134",
+      "initial_ri": [
+        "aras",
+        "for"
+      ],
+      "final_ri": [],
+      "pp_count": 29,
+      "best_material": "ox blood water",
+      "similarity": 0.6826561487862891
+    }
+  ],
+  "pp_role_distribution": {
+    "FL": 287,
+    "UNKNOWN": 5316,
+    "CC": 1115,
+    "FQ": 3219,
+    "AX": 357,
+    "EN": 102
+  }
+}

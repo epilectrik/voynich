@@ -1,0 +1,282 @@
+{
+  "test": "PP_COMPOSITION_IN_FIRST_LINES",
+  "n_with_ri": 215,
+  "n_without_ri": 127,
+  "prefix_comparison": {
+    "NO_PREFIX": {
+      "with_ri_pct": 20.194805194805195,
+      "without_ri_pct": 16.363636363636363,
+      "ratio": 1.2341269841269842
+    },
+    "al": {
+      "with_ri_pct": 0.19480519480519481,
+      "without_ri_pct": 0.0,
+      "ratio": 999
+    },
+    "ar": {
+      "with_ri_pct": 0.38961038961038963,
+      "without_ri_pct": 0.0,
+      "ratio": 999
+    },
+    "ch": {
+      "with_ri_pct": 19.935064935064936,
+      "without_ri_pct": 19.636363636363637,
+      "ratio": 1.0152116402116402
+    },
+    "ct": {
+      "with_ri_pct": 1.8181818181818181,
+      "without_ri_pct": 3.1515151515151514,
+      "ratio": 0.576923076923077
+    },
+    "da": {
+      "with_ri_pct": 0.0,
+      "without_ri_pct": 0.12121212121212122,
+      "ratio": 0.0
+    },
+    "dch": {
+      "with_ri_pct": 0.5194805194805194,
+      "without_ri_pct": 1.3333333333333333,
+      "ratio": 0.3896103896103896
+    },
+    "de": {
+      "with_ri_pct": 0.2597402597402597,
+      "without_ri_pct": 0.0,
+      "ratio": 999
+    },
+    "fch": {
+      "with_ri_pct": 0.7792207792207793,
+      "without_ri_pct": 0.7272727272727273,
+      "ratio": 1.0714285714285714
+    },
+    "kch": {
+      "with_ri_pct": 1.0389610389610389,
+      "without_ri_pct": 1.3333333333333333,
+      "ratio": 0.7792207792207791
+    },
+    "ke": {
+      "with_ri_pct": 0.8441558441558441,
+      "without_ri_pct": 0.24242424242424243,
+      "ratio": 3.4821428571428568
+    },
+    "ko": {
+      "with_ri_pct": 1.3636363636363635,
+      "without_ri_pct": 1.4545454545454546,
+      "ratio": 0.9374999999999999
+    },
+    "lch": {
+      "with_ri_pct": 0.38961038961038963,
+      "without_ri_pct": 0.0,
+      "ratio": 999
+    },
+    "lk": {
+      "with_ri_pct": 0.3246753246753247,
+      "without_ri_pct": 0.0,
+      "ratio": 999
+    },
+    "ok": {
+      "with_ri_pct": 4.35064935064935,
+      "without_ri_pct": 4.606060606060606,
+      "ratio": 0.9445488721804509
+    },
+    "ol": {
+      "with_ri_pct": 3.7012987012987013,
+      "without_ri_pct": 3.0303030303030303,
+      "ratio": 1.2214285714285715
+    },
+    "or": {
+      "with_ri_pct": 1.6233766233766234,
+      "without_ri_pct": 1.5757575757575757,
+      "ratio": 1.0302197802197803
+    },
+    "ot": {
+      "with_ri_pct": 6.428571428571429,
+      "without_ri_pct": 5.9393939393939394,
+      "ratio": 1.0823615160349855
+    },
+    "pch": {
+      "with_ri_pct": 2.4675324675324677,
+      "without_ri_pct": 3.393939393939394,
+      "ratio": 0.7270408163265306
+    },
+    "po": {
+      "with_ri_pct": 0.5844155844155844,
+      "without_ri_pct": 1.696969696969697,
+      "ratio": 0.3443877551020408
+    },
+    "qo": {
+      "with_ri_pct": 11.688311688311689,
+      "without_ri_pct": 11.030303030303031,
+      "ratio": 1.0596546310832025
+    },
+    "rch": {
+      "with_ri_pct": 0.0,
+      "without_ri_pct": 0.36363636363636365,
+      "ratio": 0.0
+    },
+    "sch": {
+      "with_ri_pct": 0.06493506493506493,
+      "without_ri_pct": 0.6060606060606061,
+      "ratio": 0.10714285714285712
+    },
+    "se": {
+      "with_ri_pct": 0.0,
+      "without_ri_pct": 0.12121212121212122,
+      "ratio": 0.0
+    },
+    "sh": {
+      "with_ri_pct": 15.454545454545455,
+      "without_ri_pct": 16.727272727272727,
+      "ratio": 0.923913043478261
+    },
+    "so": {
+      "with_ri_pct": 0.12987012987012986,
+      "without_ri_pct": 0.0,
+      "ratio": 999
+    },
+    "ta": {
+      "with_ri_pct": 0.19480519480519481,
+      "without_ri_pct": 0.24242424242424243,
+      "ratio": 0.8035714285714286
+    },
+    "tch": {
+      "with_ri_pct": 1.0389610389610389,
+      "without_ri_pct": 2.4242424242424243,
+      "ratio": 0.4285714285714285
+    },
+    "te": {
+      "with_ri_pct": 1.1688311688311688,
+      "without_ri_pct": 0.24242424242424243,
+      "ratio": 4.821428571428571
+    },
+    "to": {
+      "with_ri_pct": 1.4285714285714286,
+      "without_ri_pct": 1.696969696969697,
+      "ratio": 0.8418367346938775
+    },
+    "yk": {
+      "with_ri_pct": 1.6233766233766234,
+      "without_ri_pct": 1.9393939393939394,
+      "ratio": 0.8370535714285714
+    }
+  },
+  "pp_vocabulary": {
+    "with_ri_unique": 641,
+    "without_ri_unique": 493,
+    "overlap": 160,
+    "jaccard": 0.16427104722792607
+  },
+  "first_pp_token": {
+    "with_ri": {
+      "ctheol": 4,
+      "okolyd": 4,
+      "tolchd": 4,
+      "pchor": 3,
+      "orald": 3,
+      "otaly": 3,
+      "cheocthy": 3,
+      "cpheor": 3,
+      "oldam": 3,
+      "koldal": 3,
+      "chols": 3,
+      "opchor": 3,
+      "rolsy": 3,
+      "okol": 3,
+      "otal": 3,
+      "orar": 3,
+      "olaran": 3,
+      "shey": 2,
+      "pshol": 2,
+      "pchocthy": 2
+    },
+    "without_ri": {
+      "tchor": 4,
+      "okchshy": 4,
+      "tshol": 3,
+      "oral": 3,
+      "qkol": 3,
+      "pcheol": 2,
+      "pydaiin": 2,
+      "paiin": 2,
+      "tchol": 2,
+      "pchodaiin": 2,
+      "tshor": 2,
+      "pchor": 2,
+      "ksho": 2,
+      "podaiin": 2,
+      "otoky": 2,
+      "otala": 2,
+      "ydaraishy": 1,
+      "os": 1,
+      "otol": 1,
+      "dchaiin": 1
+    }
+  },
+  "significant_differences": [
+    [
+      "al",
+      999
+    ],
+    [
+      "ar",
+      999
+    ],
+    [
+      "ct",
+      0.576923076923077
+    ],
+    [
+      "da",
+      0.0
+    ],
+    [
+      "dch",
+      0.3896103896103896
+    ],
+    [
+      "de",
+      999
+    ],
+    [
+      "ke",
+      3.4821428571428568
+    ],
+    [
+      "lch",
+      999
+    ],
+    [
+      "lk",
+      999
+    ],
+    [
+      "po",
+      0.3443877551020408
+    ],
+    [
+      "rch",
+      0.0
+    ],
+    [
+      "sch",
+      0.10714285714285712
+    ],
+    [
+      "se",
+      0.0
+    ],
+    [
+      "so",
+      999
+    ],
+    [
+      "tch",
+      0.4285714285714285
+    ],
+    [
+      "te",
+      4.821428571428571
+    ]
+  ],
+  "verdict": "TWO_OPENING_TYPES",
+  "vocab_verdict": "DISTINCT_VOCABULARIES"
+}

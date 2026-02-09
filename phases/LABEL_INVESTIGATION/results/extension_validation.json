@@ -1,0 +1,90 @@
+{
+  "test": "extension_validation",
+  "goal": "C923 promotion from Tier 3 to Tier 2",
+  "sample_sizes": {
+    "labels_total": 192,
+    "labels_ri": 57,
+    "label_extensions": 87,
+    "text_extensions": 1013
+  },
+  "label_distribution": {
+    "identification": 41,
+    "operational": 9,
+    "other": 37,
+    "id_pct": 47.12643678160919,
+    "op_pct": 10.344827586206897
+  },
+  "text_distribution": {
+    "identification": 325,
+    "operational": 254,
+    "other": 434,
+    "id_pct": 32.08292201382034,
+    "op_pct": 25.074037512339586
+  },
+  "statistics": {
+    "chi2": 11.618458828588581,
+    "p_value": 0.000653004876769641,
+    "cramers_v": 0.13590922592859422,
+    "effect_interpretation": "small"
+  },
+  "per_extension": {
+    "r": {
+      "label_count": 15,
+      "text_count": 36
+    },
+    "a": {
+      "label_count": 12,
+      "text_count": 62
+    },
+    "o": {
+      "label_count": 13,
+      "text_count": 178
+    },
+    "k": {
+      "label_count": 1,
+      "text_count": 49
+    },
+    "h": {
+      "label_count": 0,
+      "text_count": 105
+    },
+    "d": {
+      "label_count": 8,
+      "text_count": 96
+    },
+    "t": {
+      "label_count": 1,
+      "text_count": 53
+    },
+    "l": {
+      "label_count": 6,
+      "text_count": 56
+    },
+    "s": {
+      "label_count": 6,
+      "text_count": 68
+    },
+    "n": {
+      "label_count": 0,
+      "text_count": 3
+    },
+    "i": {
+      "label_count": 5,
+      "text_count": 28
+    },
+    "e": {
+      "label_count": 3,
+      "text_count": 82
+    },
+    "y": {
+      "label_count": 7,
+      "text_count": 61
+    }
+  },
+  "verdict": {
+    "p_significant": true,
+    "effect_significant": false,
+    "op_suppressed": true,
+    "promotion_supported": false
+  }
+}

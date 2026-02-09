@@ -1,0 +1,158 @@
+{
+  "k": {
+    "total_starts": 6726,
+    "immediate_successors": {
+      "k": 2535,
+      "h": 2036,
+      "e": 369,
+      "none": 1786
+    },
+    "immediate_successors_pct": {
+      "k": 0.3768956289027654,
+      "h": 0.30270591733571217,
+      "e": 0.054861730597680645,
+      "none": 0.2655367231638418
+    },
+    "distance_to_k": {
+      "mean": 2.018998614684346,
+      "median": 1.0,
+      "n": 5053
+    },
+    "distance_to_h": {
+      "mean": 1.8663414634146342,
+      "median": 1.0,
+      "n": 5125
+    },
+    "distance_to_e": {
+      "mean": 1.7361029842012874,
+      "median": 1.0,
+      "n": 5127
+    },
+    "top_trajectories": {
+      "none": 364,
+      "k": 204,
+      "h": 167,
+      "k-none": 137,
+      "none-none": 132,
+      "h-none": 103,
+      "k-k": 88,
+      "h-k": 74,
+      "k-h": 69,
+      "k-k-none": 63,
+      "none-k": 57,
+      "k-k-k-k-k": 52,
+      "k-none-none": 50,
+      "none-h": 49,
+      "h-none-none": 48,
+      "h-h": 45,
+      "none-none-none": 38,
+      "k-k-k": 35,
+      "h-k-none": 35,
+      "k-h-none": 33
+    }
+  },
+  "h": {
+    "total_starts": 8493,
+    "immediate_successors": {
+      "k": 3189,
+      "h": 2352,
+      "e": 568,
+      "none": 2384
+    },
+    "immediate_successors_pct": {
+      "k": 0.3754856941010244,
+      "h": 0.2769339456022607,
+      "e": 0.06687860591075002,
+      "none": 0.2807017543859649
+    },
+    "distance_to_k": {
+      "mean": 2.218940609951846,
+      "median": 1.0,
+      "n": 6230
+    },
+    "distance_to_h": {
+      "mean": 1.9595469255663431,
+      "median": 2.0,
+      "n": 6798
+    },
+    "distance_to_e": {
+      "mean": 1.8427389014296462,
+      "median": 1.0,
+      "n": 6645
+    },
+    "top_trajectories": {
+      "none": 403,
+      "k": 229,
+      "h": 191,
+      "k-none": 161,
+      "none-none": 154,
+      "h-none": 105,
+      "k-h": 80,
+      "k-k": 70,
+      "none-h": 66,
+      "h-k": 60,
+      "h-h": 56,
+      "k-none-none": 55,
+      "k-h-none": 54,
+      "none-none-none": 51,
+      "none-k": 51,
+      "k-k-none": 51,
+      "none-h-none": 51,
+      "k-k-k-h-k": 49,
+      "k-k-k-k-k": 47,
+      "h-h-none": 42
+    }
+  },
+  "e": {
+    "total_starts": 9645,
+    "immediate_successors": {
+      "k": 3816,
+      "h": 2449,
+      "e": 814,
+      "none": 2566
+    },
+    "immediate_successors_pct": {
+      "k": 0.39564541213063764,
+      "h": 0.2539139450492483,
+      "e": 0.08439606013478486,
+      "none": 0.2660445826853292
+    },
+    "distance_to_k": {
+      "mean": 2.146968854282536,
+      "median": 1.0,
+      "n": 7192
+    },
+    "distance_to_h": {
+      "mean": 2.0402729462135403,
+      "median": 2.0,
+      "n": 7474
+    },
+    "distance_to_e": {
+      "mean": 1.7000635727908455,
+      "median": 1.0,
+      "n": 7865
+    },
+    "top_trajectories": {
+      "none": 447,
+      "k": 274,
+      "h": 207,
+      "k-none": 185,
+      "none-none": 182,
+      "h-none": 113,
+      "k-h": 102,
+      "k-k": 90,
+      "none-h": 71,
+      "k-k-none": 71,
+      "k-k-k-k-k": 70,
+      "k-none-none": 70,
+      "h-h": 67,
+      "h-k": 64,
+      "k-h-none": 57,
+      "e-none": 55,
+      "none-none-none": 52,
+      "k-k-k": 51,
+      "none-h-none": 48,
+      "none-k": 48
+    }
+  }
+}

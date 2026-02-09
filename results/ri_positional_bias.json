@@ -1,0 +1,310 @@
+{
+  "output_biased": [
+    "daiin",
+    "chol",
+    "s",
+    "dy",
+    "dar",
+    "dain",
+    "dal",
+    "dol",
+    "cheor",
+    "dam"
+  ],
+  "input_biased": [
+    "sho",
+    "cthol",
+    "okol"
+  ],
+  "not_significant": [
+    "chor",
+    "shol",
+    "chy",
+    "ol",
+    "cthy",
+    "or",
+    "chey",
+    "aiin",
+    "cheol",
+    "shor",
+    "shy",
+    "shey",
+    "y",
+    "qotchy",
+    "dor",
+    "cho",
+    "qokol"
+  ],
+  "detailed_results": [
+    {
+      "token": "daiin",
+      "total": 511,
+      "input": 16,
+      "output": 53,
+      "chi2": 19.40473504940609,
+      "p_value": 1.0574455536094263e-05,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "chol",
+      "total": 280,
+      "input": 8,
+      "output": 23,
+      "chi2": 10.473304105543814,
+      "p_value": 0.0012111191513536346,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "chor",
+      "total": 181,
+      "input": 16,
+      "output": 12,
+      "chi2": 0.7604516392321219,
+      "p_value": 0.3831872202647759,
+      "bias": "none"
+    },
+    {
+      "token": "s",
+      "total": 162,
+      "input": 4,
+      "output": 6,
+      "chi2": 11.271553117186073,
+      "p_value": 0.0007870385399643132,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "dy",
+      "total": 123,
+      "input": 3,
+      "output": 18,
+      "chi2": 10.781521745917797,
+      "p_value": 0.0010251836456266483,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "shol",
+      "total": 117,
+      "input": 14,
+      "output": 6,
+      "chi2": 3.2248686197885625,
+      "p_value": 0.07252761627032123,
+      "bias": "none"
+    },
+    {
+      "token": "sho",
+      "total": 106,
+      "input": 7,
+      "output": 3,
+      "chi2": 4.435485719255096,
+      "p_value": 0.03519920277566502,
+      "bias": "INPUT"
+    },
+    {
+      "token": "chy",
+      "total": 103,
+      "input": 4,
+      "output": 6,
+      "chi2": 3.4276781520318726,
+      "p_value": 0.06411217693066218,
+      "bias": "none"
+    },
+    {
+      "token": "ol",
+      "total": 101,
+      "input": 8,
+      "output": 5,
+      "chi2": 1.5241346648728944,
+      "p_value": 0.21699486588416084,
+      "bias": "none"
+    },
+    {
+      "token": "cthy",
+      "total": 101,
+      "input": 5,
+      "output": 7,
+      "chi2": 1.7736020166713655,
+      "p_value": 0.18293692861267052,
+      "bias": "none"
+    },
+    {
+      "token": "or",
+      "total": 96,
+      "input": 5,
+      "output": 4,
+      "chi2": 3.323239896521132,
+      "p_value": 0.06830709240199673,
+      "bias": "none"
+    },
+    {
+      "token": "dar",
+      "total": 94,
+      "input": 0,
+      "output": 14,
+      "chi2": 12.526865434235816,
+      "p_value": 0.00040114220437525994,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "dain",
+      "total": 93,
+      "input": 0,
+      "output": 9,
+      "chi2": 8.046230994880126,
+      "p_value": 0.00455984227975037,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "dal",
+      "total": 85,
+      "input": 2,
+      "output": 5,
+      "chi2": 4.444186845122282,
+      "p_value": 0.03502026402992198,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "chey",
+      "total": 78,
+      "input": 6,
+      "output": 3,
+      "chi2": 2.0351559007565374,
+      "p_value": 0.15369842443202175,
+      "bias": "none"
+    },
+    {
+      "token": "aiin",
+      "total": 73,
+      "input": 2,
+      "output": 6,
+      "chi2": 2.845197986229914,
+      "p_value": 0.09164730368376617,
+      "bias": "none"
+    },
+    {
+      "token": "cheol",
+      "total": 71,
+      "input": 4,
+      "output": 7,
+      "chi2": 0.8380946495713562,
+      "p_value": 0.3599422711450293,
+      "bias": "none"
+    },
+    {
+      "token": "shor",
+      "total": 69,
+      "input": 9,
+      "output": 3,
+      "chi2": 3.0821365819051403,
+      "p_value": 0.07915647812150839,
+      "bias": "none"
+    },
+    {
+      "token": "shy",
+      "total": 65,
+      "input": 4,
+      "output": 6,
+      "chi2": 0.4587107352133757,
+      "p_value": 0.4982271299161125,
+      "bias": "none"
+    },
+    {
+      "token": "dol",
+      "total": 63,
+      "input": 1,
+      "output": 8,
+      "chi2": 4.850923405831613,
+      "p_value": 0.02763133617032143,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "shey",
+      "total": 60,
+      "input": 4,
+      "output": 4,
+      "chi2": 0.4671340466126279,
+      "p_value": 0.4943086041228446,
+      "bias": "none"
+    },
+    {
+      "token": "y",
+      "total": 58,
+      "input": 2,
+      "output": 7,
+      "chi2": 2.612223629186782,
+      "p_value": 0.10604297572430066,
+      "bias": "none"
+    },
+    {
+      "token": "cheor",
+      "total": 58,
+      "input": 5,
+      "output": 10,
+      "chi2": 5.244262040360942,
+      "p_value": 0.022019265793656317,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "cthol",
+      "total": 55,
+      "input": 2,
+      "output": 1,
+      "chi2": 4.403916902827121,
+      "p_value": 0.035856486988186886,
+      "bias": "INPUT"
+    },
+    {
+      "token": "qotchy",
+      "total": 51,
+      "input": 3,
+      "output": 4,
+      "chi2": 0.4315621608501541,
+      "p_value": 0.5112234136457695,
+      "bias": "none"
+    },
+    {
+      "token": "dor",
+      "total": 49,
+      "input": 1,
+      "output": 3,
+      "chi2": 2.7197948991297727,
+      "p_value": 0.0991107499563546,
+      "bias": "none"
+    },
+    {
+      "token": "cho",
+      "total": 48,
+      "input": 3,
+      "output": 3,
+      "chi2": 0.5647163793435481,
+      "p_value": 0.45236615886904386,
+      "bias": "none"
+    },
+    {
+      "token": "okol",
+      "total": 47,
+      "input": 2,
+      "output": 0,
+      "chi2": 4.978083942542093,
+      "p_value": 0.025670399012233114,
+      "bias": "INPUT"
+    },
+    {
+      "token": "dam",
+      "total": 46,
+      "input": 1,
+      "output": 7,
+      "chi2": 4.617131597623056,
+      "p_value": 0.03165412991686478,
+      "bias": "OUTPUT"
+    },
+    {
+      "token": "qokol",
+      "total": 45,
+      "input": 4,
+      "output": 2,
+      "chi2": 0.87421363856941,
+      "p_value": 0.34979143053822614,
+      "bias": "none"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "shared_output_ri_count": 124,
+  "homogeneous_count": 63,
+  "heterogeneous_count": 61,
+  "mean_homogeneity": 0.7709789282133418,
+  "random_homogeneity": 0.7689425984565721,
+  "z_score": 0.10584988189840949,
+  "p_value": 0.4578507295149483,
+  "top_shared_ri": [
+    "daiin",
+    "chol",
+    "dy",
+    "dar",
+    "chor",
+    "cheor",
+    "dain",
+    "dol",
+    "dam",
+    "cheol"
+  ]
+}

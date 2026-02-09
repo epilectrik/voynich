@@ -1,0 +1,419 @@
+{
+  "regime_profiles": {
+    "1": {
+      "e_rate": 0.43153186050757714,
+      "h_rate": 0.34389264195727587,
+      "k_rate": 0.22457549753514697,
+      "e_class": "HIGH",
+      "h_class": "MEDIUM",
+      "k_class": "MEDIUM",
+      "n_folios": 23
+    },
+    "2": {
+      "e_rate": 0.45286935286935287,
+      "h_rate": 0.33357753357753356,
+      "k_rate": 0.21355311355311354,
+      "e_class": "HIGH",
+      "h_class": "MEDIUM",
+      "k_class": "MEDIUM",
+      "n_folios": 24
+    },
+    "3": {
+      "e_rate": 0.4387243735763098,
+      "h_rate": 0.31662870159453305,
+      "k_rate": 0.24464692482915718,
+      "e_class": "HIGH",
+      "h_class": "MEDIUM",
+      "k_class": "MEDIUM",
+      "n_folios": 8
+    },
+    "4": {
+      "e_rate": 0.4664689562804936,
+      "h_rate": 0.28498995503683155,
+      "k_rate": 0.24854108868267483,
+      "e_class": "HIGH",
+      "h_class": "MEDIUM",
+      "k_class": "MEDIUM",
+      "n_folios": 27
+    }
+  },
+  "kernel_predictions": {
+    "1": {
+      "e": "HIGH",
+      "h": "LOW",
+      "k": "MEDIUM"
+    },
+    "2": {
+      "e": "MEDIUM",
+      "h": "MEDIUM",
+      "k": "MEDIUM"
+    },
+    "3": {
+      "e": "LOW",
+      "h": "MEDIUM",
+      "k": "HIGH"
+    },
+    "4": {
+      "e": "HIGH",
+      "h": "LOW",
+      "k": "HIGH"
+    }
+  },
+  "kernel_test_results": [
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58v:10",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f25v:1",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f89r2:10",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f89v1:12",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "hen (chicken)",
+      "record_id": "f88r:2",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "predicted_kernels": {
+        "e": "HIGH",
+        "h": "LOW",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f13r:7",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58v:16",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58v:31",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58v:29",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "hen (chicken)",
+      "record_id": "f102v2:4",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "predicted_kernels": {
+        "e": "HIGH",
+        "h": "LOW",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58r:38",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58v:35",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "hen (chicken)",
+      "record_id": "f89v1:15",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "predicted_kernels": {
+        "e": "HIGH",
+        "h": "LOW",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "hen (chicken)",
+      "record_id": "f58v:25",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "predicted_kernels": {
+        "e": "HIGH",
+        "h": "LOW",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f88v:8",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f99v:7",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f58v:34",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f99r:7",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "ox blood water",
+      "record_id": "f89v1:2",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "predicted_kernels": {
+        "e": "MEDIUM",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    },
+    {
+      "recipe": "hen (chicken)",
+      "record_id": "f10r:11",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "predicted_kernels": {
+        "e": "HIGH",
+        "h": "LOW",
+        "k": "MEDIUM"
+      },
+      "actual_kernels": {
+        "e": "HIGH",
+        "h": "MEDIUM",
+        "k": "MEDIUM"
+      },
+      "matches": 2
+    }
+  ],
+  "summary": {
+    "total_correct": 40,
+    "total_tests": 60,
+    "accuracy": 0.6666666666666666
+  },
+  "by_fire_degree": {
+    "2": {
+      "correct": 30,
+      "total": 45
+    },
+    "1": {
+      "correct": 10,
+      "total": 15
+    }
+  }
+}

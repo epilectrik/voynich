@@ -1,0 +1,31 @@
+{
+  "generic_tokens": [
+    "daiin",
+    "chol",
+    "dy",
+    "chor",
+    "shol"
+  ],
+  "specific_tokens": [
+    "sho",
+    "ol",
+    "cheor",
+    "cheol",
+    "shy",
+    "s",
+    "cthy",
+    "shor",
+    "dair",
+    "cthor",
+    "chy",
+    "or",
+    "sheol",
+    "chey",
+    "ar"
+  ],
+  "generic_edges": 1355,
+  "specific_edges": 429,
+  "records_via_specific": 132,
+  "specific_chains": 694,
+  "interpretation": "daiin likely a generic procedural marker; specific tokens form real procedure chains"
+}

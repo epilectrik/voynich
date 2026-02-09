@@ -1,0 +1,75 @@
+{
+  "test": "FIRST_VS_LAST_WITHOUT_RI",
+  "counts": {
+    "first": 28,
+    "middle": 44,
+    "last": 42,
+    "only": 13
+  },
+  "structural": {
+    "avg_tokens_first": 36.5,
+    "avg_tokens_last": 33.95238095238095,
+    "avg_ri_first": 1.4285714285714286,
+    "avg_ri_last": 1.0238095238095237
+  },
+  "ri_vocab_jaccard": 0.01282051282051282,
+  "significant_prefix_diffs": [
+    [
+      "al",
+      0.34782608695652173
+    ],
+    [
+      "ar",
+      Infinity
+    ],
+    [
+      "dch",
+      0.6421404682274247
+    ],
+    [
+      "ke",
+      0.6086956521739131
+    ],
+    [
+      "ko",
+      1.971014492753623
+    ],
+    [
+      "lch",
+      0.0
+    ],
+    [
+      "lk",
+      Infinity
+    ],
+    [
+      "pch",
+      2.782608695652174
+    ],
+    [
+      "rch",
+      0.0
+    ],
+    [
+      "sch",
+      0.2318840579710145
+    ],
+    [
+      "se",
+      Infinity
+    ],
+    [
+      "ta",
+      0.463768115942029
+    ],
+    [
+      "tch",
+      0.6459627329192547
+    ],
+    [
+      "to",
+      2.3850931677018634
+    ]
+  ],
+  "verdict": "DIFFERENT_SUBTYPES"
+}

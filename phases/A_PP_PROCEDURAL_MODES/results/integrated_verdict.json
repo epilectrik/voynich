@@ -1,0 +1,30 @@
+{
+  "phase": "A_PP_PROCEDURAL_MODES",
+  "date": "2026-01-30",
+  "tests_run": [
+    "cluster_validity",
+    "b_side_correlation",
+    "vocabulary_discrimination",
+    "section_generalization",
+    "material_class_compatibility"
+  ],
+  "individual_verdicts": {
+    "cluster_validity": "NOT SUPPORTED",
+    "b_side_correlation": "NOT SUPPORTED",
+    "vocabulary_discrimination": "SUPPORT",
+    "section_generalization": "PARTIAL",
+    "material_class_compatibility": "CONFIRMED"
+  },
+  "counts": {
+    "confirmed": 1,
+    "support": 2,
+    "not_supported": 2,
+    "conflict": 0
+  },
+  "overall_verdict": "WEAK",
+  "recommended_tier": "Tier 3 (interpretation only)",
+  "key_findings": [
+    "Clusters have 48 exclusive MIDDLEs (distinctive vocabulary)",
+    "Material class mixing persists across clusters (C642 compatible)"
+  ]
+}

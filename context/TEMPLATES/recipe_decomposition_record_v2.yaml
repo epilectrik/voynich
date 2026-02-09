@@ -317,21 +317,21 @@ judgment_requirements:              # OJLM-1 phase, C477
 zone_profile:                       # C443, F-BRU-008, F-BRU-009
   affinities:                       # Continuous values summing to 1.0
     C: 0.0                          # Setup/loading phase, errors fixable, escape 1.4%
-    P: 0.0                          # Active work, intervention legal, escape 11.6%
     R: 0.0                          # Progression, options narrowing, escape 2%→0%
-    S: 0.0                          # Collection/exit, locked, escape 0-3.8%
+    S: 0.0                          # Boundary/exit, locked, escape 0%
+    # Note: P (Paragraph) is NOT a diagram position - excluded from zone analysis
 
-  dominant_zone: ""                 # C | P | R | S
+  dominant_zone: ""                 # C | R | S (diagram positions only)
 
   escape_gradient:
-    description: "C→P→R→S represents decreasing intervention permission"
-    C_escape: "1.4% - setup errors fixable"
-    P_escape: "11.6% - active intervention possible"
+    description: "C→R→S represents decreasing intervention permission (diagram positions only)"
+    note: "P (Paragraph) is NOT a diagram position - it is Currier A text on AZC folios"
+    C_escape: "~1.4% - moderate flexibility"
     R_escape: "2%→0% - progressive restriction"
-    S_escape: "0-3.8% - locked, minimal escape"
+    S_escape: "0% - locked, no escape"
 
   two_stage_model:                  # F-BRU-009
-    stage_1: "Modality bias from external factors (sound→R, sight→P)"
+    stage_1: "Modality bias from external factors (diagram positions: C/R/S)"
     stage_2: "REGIME execution style concentrates into specific phase"
     interaction: "REGIME modifies zone concentration"
 

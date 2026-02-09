@@ -1,0 +1,29 @@
+{
+  "test": "T10_forbidden_transition_verification",
+  "question": "What defines forbidden transitions - k/h/e content or class identity?",
+  "total_tokens": 23096,
+  "hazard_class_tokens": 3847,
+  "total_transitions": 23014,
+  "hazard_transitions": 750,
+  "forbidden_count": 167,
+  "permitted_count": 583,
+  "forbidden_rate": 0.22266666666666668,
+  "forbidden_profile": {
+    "from_k": 0.11377245508982035,
+    "from_h": 0.19760479041916168,
+    "from_e": 0.1497005988023952,
+    "to_k": 0.1317365269461078,
+    "to_h": 0.08982035928143713,
+    "to_e": 0.15568862275449102
+  },
+  "permitted_profile": {
+    "from_k": 0.1509433962264151,
+    "from_h": 0.2933104631217839,
+    "from_e": 0.23156089193825044,
+    "to_k": 0.1097770154373928,
+    "to_h": 0.34133790737564323,
+    "to_e": 0.27958833619210977
+  },
+  "verdict": "CLASS_LEVEL_CONFIRMED",
+  "interpretation": "Forbidden transitions are CLASS-LEVEL constraints about operational sequencing, not k/h/e character content. The hazard topology operates on token roles (CC, EN, FQ), which is independent from the construction-level k/h/e grammar."
+}

@@ -6,6 +6,10 @@
 
 Within Currier A lines, the PREFIX of one PP token is correlated with the MIDDLE of another PP token on the same line. This cross-token PREFIX-MIDDLE coupling exceeds shuffled baselines.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes within-line structure.
+> Line-level patterns describe A-internal morphological structure. For A-B vocabulary
+> correspondence, the operational unit is the A FOLIO (114 units, 81% coverage per C885).
+
 | Metric | Value |
 |--------|-------|
 | Within-line MI(PREFIX; MIDDLE) | 0.1330 |

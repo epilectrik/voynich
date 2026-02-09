@@ -1,0 +1,18 @@
+{
+  "test": "BACKWARD_REFERENCE_TEST",
+  "backward_overlap": {
+    "with_ri": 0.18857690105844088,
+    "without_ri": 0.20161691736514342
+  },
+  "forward_overlap": {
+    "with_ri": 0.20689351191509395,
+    "without_ri": 0.16393390893871218
+  },
+  "by_predecessor": {
+    "without_ri_after_with_ri": 0.22782486391980433,
+    "without_ri_after_without_ri": 0.16920182557385233,
+    "with_ri_after_with_ri": 0.19752424006536648,
+    "with_ri_after_without_ri": 0.15726121453420142
+  },
+  "verdict": "BACKWARD_REFERENCE"
+}

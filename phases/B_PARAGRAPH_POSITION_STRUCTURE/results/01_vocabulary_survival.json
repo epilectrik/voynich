@@ -1,0 +1,1496 @@
+{
+  "summary": {
+    "folios_analyzed": 82,
+    "mean_survival": 0.3111956878754548,
+    "mean_jaccard_adjacent": 0.20462049393964293,
+    "mean_jaccard_nonadjacent": 0.19451952443457055,
+    "interpretation": "moderate"
+  },
+  "aggregate": {
+    "folios_analyzed": 82,
+    "mean_survival_p1_onward": 0.3111956878754548,
+    "std_survival": 0.15958686072213651,
+    "mean_jaccard_adjacent": 0.20462049393964293,
+    "std_jaccard_adjacent": 0.09769731010642874,
+    "mean_jaccard_nonadjacent": 0.19451952443457055,
+    "std_jaccard_nonadjacent": 0.09566343848619624,
+    "mean_expected_overlap": 4.391946190101787,
+    "mean_observed_overlap": 7.087292817679558,
+    "adjacent_vs_nonadjacent_ttest": {
+      "t_statistic": 2.133108952864001,
+      "p_value": 0.03300529082777459,
+      "adjacent_higher": true
+    },
+    "observed_vs_expected_ttest": {
+      "t_statistic": 56.83678158215362,
+      "p_value": 0.0,
+      "observed_higher": true
+    }
+  },
+  "folio_sample": [
+    {
+      "folio": "f103r",
+      "paragraph_count": 12,
+      "folio_vocab_size": 113,
+      "paragraphs": [
+        {
+          "number": 1,
+          "tokens": 49,
+          "unique_middles": 31
+        },
+        {
+          "number": 2,
+          "tokens": 94,
+          "unique_middles": 43
+        },
+        {
+          "number": 3,
+          "tokens": 51,
+          "unique_middles": 25
+        },
+        {
+          "number": 4,
+          "tokens": 29,
+          "unique_middles": 15
+        },
+        {
+          "number": 5,
+          "tokens": 28,
+          "unique_middles": 21
+        },
+        {
+          "number": 6,
+          "tokens": 59,
+          "unique_middles": 32
+        },
+        {
+          "number": 7,
+          "tokens": 59,
+          "unique_middles": 36
+        },
+        {
+          "number": 8,
+          "tokens": 46,
+          "unique_middles": 27
+        },
+        {
+          "number": 9,
+          "tokens": 4,
+          "unique_middles": 4
+        },
+        {
+          "number": 10,
+          "tokens": 42,
+          "unique_middles": 21
+        },
+        {
+          "number": 11,
+          "tokens": 36,
+          "unique_middles": 22
+        },
+        {
+          "number": 12,
+          "tokens": 25,
+          "unique_middles": 15
+        }
+      ],
+      "survival": {
+        "P1_to_P2": 0.6129032258064516,
+        "P1_to_P3": 0.5483870967741935,
+        "P1_to_P4": 0.3225806451612903,
+        "P1_to_P5": 0.3548387096774194,
+        "P1_to_P6": 0.4838709677419355,
+        "P1_to_P7": 0.45161290322580644,
+        "P1_to_P8": 0.3225806451612903,
+        "P1_to_P9": 0.06451612903225806,
+        "P1_to_P10": 0.3870967741935484,
+        "P1_to_P11": 0.3225806451612903,
+        "P1_to_P12": 0.2903225806451613
+      },
+      "jaccard_adjacent": [
+        {
+          "pair": "P1_P2",
+          "jaccard": 0.34545454545454546
+        },
+        {
+          "pair": "P2_P3",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P3_P4",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P4_P5",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P5_P6",
+          "jaccard": 0.20454545454545456
+        },
+        {
+          "pair": "P6_P7",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P7_P8",
+          "jaccard": 0.3125
+        },
+        {
+          "pair": "P8_P9",
+          "jaccard": 0.06896551724137931
+        },
+        {
+          "pair": "P9_P10",
+          "jaccard": 0.08695652173913043
+        },
+        {
+          "pair": "P10_P11",
+          "jaccard": 0.2647058823529412
+        },
+        {
+          "pair": "P11_P12",
+          "jaccard": 0.23333333333333334
+        }
+      ],
+      "jaccard_nonadjacent": [
+        {
+          "pair": "P1_P3",
+          "jaccard": 0.4358974358974359
+        },
+        {
+          "pair": "P1_P4",
+          "jaccard": 0.2777777777777778
+        },
+        {
+          "pair": "P1_P5",
+          "jaccard": 0.2682926829268293
+        },
+        {
+          "pair": "P1_P6",
+          "jaccard": 0.3125
+        },
+        {
+          "pair": "P1_P7",
+          "jaccard": 0.2641509433962264
+        },
+        {
+          "pair": "P1_P8",
+          "jaccard": 0.20833333333333334
+        },
+        {
+          "pair": "P1_P9",
+          "jaccard": 0.06060606060606061
+        },
+        {
+          "pair": "P1_P10",
+          "jaccard": 0.3
+        },
+        {
+          "pair": "P1_P11",
+          "jaccard": 0.23255813953488372
+        },
+        {
+          "pair": "P1_P12",
+          "jaccard": 0.24324324324324326
+        },
+        {
+          "pair": "P2_P4",
+          "jaccard": 0.23404255319148937
+        },
+        {
+          "pair": "P2_P5",
+          "jaccard": 0.23076923076923078
+        },
+        {
+          "pair": "P2_P6",
+          "jaccard": 0.36363636363636365
+        },
+        {
+          "pair": "P2_P7",
+          "jaccard": 0.3389830508474576
+        },
+        {
+          "pair": "P2_P8",
+          "jaccard": 0.2962962962962963
+        },
+        {
+          "pair": "P2_P9",
+          "jaccard": 0.06818181818181818
+        },
+        {
+          "pair": "P2_P10",
+          "jaccard": 0.23076923076923078
+        },
+        {
+          "pair": "P2_P11",
+          "jaccard": 0.25
+        },
+        {
+          "pair": "P2_P12",
+          "jaccard": 0.20833333333333334
+        },
+        {
+          "pair": "P3_P5",
+          "jaccard": 0.3142857142857143
+        },
+        {
+          "pair": "P3_P6",
+          "jaccard": 0.29545454545454547
+        },
+        {
+          "pair": "P3_P7",
+          "jaccard": 0.32608695652173914
+        },
+        {
+          "pair": "P3_P8",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P3_P9",
+          "jaccard": 0.03571428571428571
+        },
+        {
+          "pair": "P3_P10",
+          "jaccard": 0.2777777777777778
+        },
+        {
+          "pair": "P3_P11",
+          "jaccard": 0.2702702702702703
+        },
+        {
+          "pair": "P3_P12",
+          "jaccard": 0.2903225806451613
+        },
+        {
+          "pair": "P4_P6",
+          "jaccard": 0.20512820512820512
+        },
+        {
+          "pair": "P4_P7",
+          "jaccard": 0.18604651162790697
+        },
+        {
+          "pair": "P4_P8",
+          "jaccard": 0.3125
+        },
+        {
+          "pair": "P4_P9",
+          "jaccard": 0.11764705882352941
+        },
+        {
+          "pair": "P4_P10",
+          "jaccard": 0.2413793103448276
+        },
+        {
+          "pair": "P4_P11",
+          "jaccard": 0.27586206896551724
+        },
+        {
+          "pair": "P4_P12",
+          "jaccard": 0.30434782608695654
+        },
+        {
+          "pair": "P5_P7",
+          "jaccard": 0.29545454545454547
+        },
+        {
+          "pair": "P5_P8",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P5_P9",
+          "jaccard": 0.041666666666666664
+        },
+        {
+          "pair": "P5_P10",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P5_P11",
+          "jaccard": 0.22857142857142856
+        },
+        {
+          "pair": "P5_P12",
+          "jaccard": 0.125
+        },
+        {
+          "pair": "P6_P8",
+          "jaccard": 0.2553191489361702
+        },
+        {
+          "pair": "P6_P9",
+          "jaccard": 0.09090909090909091
+        },
+        {
+          "pair": "P6_P10",
+          "jaccard": 0.325
+        },
+        {
+          "pair": "P6_P11",
+          "jaccard": 0.22727272727272727
+        },
+        {
+          "pair": "P6_P12",
+          "jaccard": 0.20512820512820512
+        },
+        {
+          "pair": "P7_P9",
+          "jaccard": 0.08108108108108109
+        },
+        {
+          "pair": "P7_P10",
+          "jaccard": 0.26666666666666666
+        },
+        {
+          "pair": "P7_P11",
+          "jaccard": 0.20833333333333334
+        },
+        {
+          "pair": "P7_P12",
+          "jaccard": 0.18604651162790697
+        },
+        {
+          "pair": "P8_P10",
+          "jaccard": 0.2972972972972973
+        },
+        {
+          "pair": "P8_P11",
+          "jaccard": 0.2894736842105263
+        },
+        {
+          "pair": "P8_P12",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P9_P11",
+          "jaccard": 0.08333333333333333
+        },
+        {
+          "pair": "P9_P12",
+          "jaccard": 0.05555555555555555
+        },
+        {
+          "pair": "P10_P12",
+          "jaccard": 0.2857142857142857
+        }
+      ]
+    },
+    {
+      "folio": "f103v",
+      "paragraph_count": 11,
+      "folio_vocab_size": 89,
+      "paragraphs": [
+        {
+          "number": 1,
+          "tokens": 43,
+          "unique_middles": 21
+        },
+        {
+          "number": 2,
+          "tokens": 39,
+          "unique_middles": 22
+        },
+        {
+          "number": 3,
+          "tokens": 51,
+          "unique_middles": 26
+        },
+        {
+          "number": 4,
+          "tokens": 12,
+          "unique_middles": 10
+        },
+        {
+          "number": 5,
+          "tokens": 46,
+          "unique_middles": 28
+        },
+        {
+          "number": 6,
+          "tokens": 11,
+          "unique_middles": 8
+        },
+        {
+          "number": 7,
+          "tokens": 60,
+          "unique_middles": 29
+        },
+        {
+          "number": 8,
+          "tokens": 20,
+          "unique_middles": 17
+        },
+        {
+          "number": 9,
+          "tokens": 74,
+          "unique_middles": 34
+        },
+        {
+          "number": 10,
+          "tokens": 69,
+          "unique_middles": 30
+        },
+        {
+          "number": 11,
+          "tokens": 24,
+          "unique_middles": 16
+        }
+      ],
+      "survival": {
+        "P1_to_P2": 0.5714285714285714,
+        "P1_to_P3": 0.5238095238095238,
+        "P1_to_P4": 0.19047619047619047,
+        "P1_to_P5": 0.6666666666666666,
+        "P1_to_P6": 0.23809523809523808,
+        "P1_to_P7": 0.6190476190476191,
+        "P1_to_P8": 0.42857142857142855,
+        "P1_to_P9": 0.7142857142857143,
+        "P1_to_P10": 0.6190476190476191,
+        "P1_to_P11": 0.47619047619047616
+      },
+      "jaccard_adjacent": [
+        {
+          "pair": "P1_P2",
+          "jaccard": 0.3870967741935484
+        },
+        {
+          "pair": "P2_P3",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P3_P4",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P4_P5",
+          "jaccard": 0.1875
+        },
+        {
+          "pair": "P5_P6",
+          "jaccard": 0.2413793103448276
+        },
+        {
+          "pair": "P6_P7",
+          "jaccard": 0.23333333333333334
+        },
+        {
+          "pair": "P7_P8",
+          "jaccard": 0.3142857142857143
+        },
+        {
+          "pair": "P8_P9",
+          "jaccard": 0.34210526315789475
+        },
+        {
+          "pair": "P9_P10",
+          "jaccard": 0.30612244897959184
+        },
+        {
+          "pair": "P10_P11",
+          "jaccard": 0.21052631578947367
+        }
+      ],
+      "jaccard_nonadjacent": [
+        {
+          "pair": "P1_P3",
+          "jaccard": 0.3055555555555556
+        },
+        {
+          "pair": "P1_P4",
+          "jaccard": 0.14814814814814814
+        },
+        {
+          "pair": "P1_P5",
+          "jaccard": 0.4
+        },
+        {
+          "pair": "P1_P6",
+          "jaccard": 0.20833333333333334
+        },
+        {
+          "pair": "P1_P7",
+          "jaccard": 0.35135135135135137
+        },
+        {
+          "pair": "P1_P8",
+          "jaccard": 0.3103448275862069
+        },
+        {
+          "pair": "P1_P9",
+          "jaccard": 0.375
+        },
+        {
+          "pair": "P1_P10",
+          "jaccard": 0.34210526315789475
+        },
+        {
+          "pair": "P1_P11",
+          "jaccard": 0.37037037037037035
+        },
+        {
+          "pair": "P2_P4",
+          "jaccard": 0.23076923076923078
+        },
+        {
+          "pair": "P2_P5",
+          "jaccard": 0.28205128205128205
+        },
+        {
+          "pair": "P2_P6",
+          "jaccard": 0.15384615384615385
+        },
+        {
+          "pair": "P2_P7",
+          "jaccard": 0.34210526315789475
+        },
+        {
+          "pair": "P2_P8",
+          "jaccard": 0.25806451612903225
+        },
+        {
+          "pair": "P2_P9",
+          "jaccard": 0.3023255813953488
+        },
+        {
+          "pair": "P2_P10",
+          "jaccard": 0.23809523809523808
+        },
+        {
+          "pair": "P2_P11",
+          "jaccard": 0.26666666666666666
+        },
+        {
+          "pair": "P3_P5",
+          "jaccard": 0.38461538461538464
+        },
+        {
+          "pair": "P3_P6",
+          "jaccard": 0.25925925925925924
+        },
+        {
+          "pair": "P3_P7",
+          "jaccard": 0.41025641025641024
+        },
+        {
+          "pair": "P3_P8",
+          "jaccard": 0.22857142857142856
+        },
+        {
+          "pair": "P3_P9",
+          "jaccard": 0.30434782608695654
+        },
+        {
+          "pair": "P3_P10",
+          "jaccard": 0.24444444444444444
+        },
+        {
+          "pair": "P3_P11",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P4_P6",
+          "jaccard": 0.2857142857142857
+        },
+        {
+          "pair": "P4_P7",
+          "jaccard": 0.21875
+        },
+        {
+          "pair": "P4_P8",
+          "jaccard": 0.17391304347826086
+        },
+        {
+          "pair": "P4_P9",
+          "jaccard": 0.15789473684210525
+        },
+        {
+          "pair": "P4_P10",
+          "jaccard": 0.1111111111111111
+        },
+        {
+          "pair": "P4_P11",
+          "jaccard": 0.13043478260869565
+        },
+        {
+          "pair": "P5_P7",
+          "jaccard": 0.35714285714285715
+        },
+        {
+          "pair": "P5_P8",
+          "jaccard": 0.3235294117647059
+        },
+        {
+          "pair": "P5_P9",
+          "jaccard": 0.4418604651162791
+        },
+        {
+          "pair": "P5_P10",
+          "jaccard": 0.28888888888888886
+        },
+        {
+          "pair": "P5_P11",
+          "jaccard": 0.29411764705882354
+        },
+        {
+          "pair": "P6_P8",
+          "jaccard": 0.25
+        },
+        {
+          "pair": "P6_P9",
+          "jaccard": 0.16666666666666666
+        },
+        {
+          "pair": "P6_P10",
+          "jaccard": 0.1875
+        },
+        {
+          "pair": "P6_P11",
+          "jaccard": 0.09090909090909091
+        },
+        {
+          "pair": "P7_P9",
+          "jaccard": 0.3404255319148936
+        },
+        {
+          "pair": "P7_P10",
+          "jaccard": 0.2826086956521739
+        },
+        {
+          "pair": "P7_P11",
+          "jaccard": 0.21621621621621623
+        },
+        {
+          "pair": "P8_P10",
+          "jaccard": 0.34285714285714286
+        },
+        {
+          "pair": "P8_P11",
+          "jaccard": 0.17857142857142858
+        },
+        {
+          "pair": "P9_P11",
+          "jaccard": 0.25
+        }
+      ]
+    },
+    {
+      "folio": "f104r",
+      "paragraph_count": 11,
+      "folio_vocab_size": 133,
+      "paragraphs": [
+        {
+          "number": 1,
+          "tokens": 41,
+          "unique_middles": 30
+        },
+        {
+          "number": 2,
+          "tokens": 49,
+          "unique_middles": 29
+        },
+        {
+          "number": 3,
+          "tokens": 20,
+          "unique_middles": 18
+        },
+        {
+          "number": 4,
+          "tokens": 66,
+          "unique_middles": 42
+        },
+        {
+          "number": 5,
+          "tokens": 29,
+          "unique_middles": 19
+        },
+        {
+          "number": 6,
+          "tokens": 50,
+          "unique_middles": 31
+        },
+        {
+          "number": 7,
+          "tokens": 73,
+          "unique_middles": 46
+        },
+        {
+          "number": 8,
+          "tokens": 19,
+          "unique_middles": 15
+        },
+        {
+          "number": 9,
+          "tokens": 25,
+          "unique_middles": 17
+        },
+        {
+          "number": 10,
+          "tokens": 35,
+          "unique_middles": 25
+        },
+        {
+          "number": 11,
+          "tokens": 31,
+          "unique_middles": 19
+        }
+      ],
+      "survival": {
+        "P1_to_P2": 0.43333333333333335,
+        "P1_to_P3": 0.2,
+        "P1_to_P4": 0.4,
+        "P1_to_P5": 0.3,
+        "P1_to_P6": 0.36666666666666664,
+        "P1_to_P7": 0.5666666666666667,
+        "P1_to_P8": 0.26666666666666666,
+        "P1_to_P9": 0.23333333333333334,
+        "P1_to_P10": 0.3,
+        "P1_to_P11": 0.2
+      },
+      "jaccard_adjacent": [
+        {
+          "pair": "P1_P2",
+          "jaccard": 0.2826086956521739
+        },
+        {
+          "pair": "P2_P3",
+          "jaccard": 0.175
+        },
+        {
+          "pair": "P3_P4",
+          "jaccard": 0.1320754716981132
+        },
+        {
+          "pair": "P4_P5",
+          "jaccard": 0.17307692307692307
+        },
+        {
+          "pair": "P5_P6",
+          "jaccard": 0.25
+        },
+        {
+          "pair": "P6_P7",
+          "jaccard": 0.24193548387096775
+        },
+        {
+          "pair": "P7_P8",
+          "jaccard": 0.17307692307692307
+        },
+        {
+          "pair": "P8_P9",
+          "jaccard": 0.18518518518518517
+        },
+        {
+          "pair": "P9_P10",
+          "jaccard": 0.16666666666666666
+        },
+        {
+          "pair": "P10_P11",
+          "jaccard": 0.15789473684210525
+        }
+      ],
+      "jaccard_nonadjacent": [
+        {
+          "pair": "P1_P3",
+          "jaccard": 0.14285714285714285
+        },
+        {
+          "pair": "P1_P4",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P1_P5",
+          "jaccard": 0.225
+        },
+        {
+          "pair": "P1_P6",
+          "jaccard": 0.22
+        },
+        {
+          "pair": "P1_P7",
+          "jaccard": 0.288135593220339
+        },
+        {
+          "pair": "P1_P8",
+          "jaccard": 0.21621621621621623
+        },
+        {
+          "pair": "P1_P9",
+          "jaccard": 0.175
+        },
+        {
+          "pair": "P1_P10",
+          "jaccard": 0.1956521739130435
+        },
+        {
+          "pair": "P1_P11",
+          "jaccard": 0.13953488372093023
+        },
+        {
+          "pair": "P2_P4",
+          "jaccard": 0.26785714285714285
+        },
+        {
+          "pair": "P2_P5",
+          "jaccard": 0.23076923076923078
+        },
+        {
+          "pair": "P2_P6",
+          "jaccard": 0.30434782608695654
+        },
+        {
+          "pair": "P2_P7",
+          "jaccard": 0.25
+        },
+        {
+          "pair": "P2_P8",
+          "jaccard": 0.2571428571428571
+        },
+        {
+          "pair": "P2_P9",
+          "jaccard": 0.1794871794871795
+        },
+        {
+          "pair": "P2_P10",
+          "jaccard": 0.17391304347826086
+        },
+        {
+          "pair": "P2_P11",
+          "jaccard": 0.17073170731707318
+        },
+        {
+          "pair": "P3_P5",
+          "jaccard": 0.05714285714285714
+        },
+        {
+          "pair": "P3_P6",
+          "jaccard": 0.13953488372093023
+        },
+        {
+          "pair": "P3_P7",
+          "jaccard": 0.14285714285714285
+        },
+        {
+          "pair": "P3_P8",
+          "jaccard": 0.06451612903225806
+        },
+        {
+          "pair": "P3_P9",
+          "jaccard": 0.09375
+        },
+        {
+          "pair": "P3_P10",
+          "jaccard": 0.075
+        },
+        {
+          "pair": "P3_P11",
+          "jaccard": 0.15625
+        },
+        {
+          "pair": "P4_P6",
+          "jaccard": 0.25862068965517243
+        },
+        {
+          "pair": "P4_P7",
+          "jaccard": 0.2054794520547945
+        },
+        {
+          "pair": "P4_P8",
+          "jaccard": 0.14
+        },
+        {
+          "pair": "P4_P9",
+          "jaccard": 0.18
+        },
+        {
+          "pair": "P4_P10",
+          "jaccard": 0.15517241379310345
+        },
+        {
+          "pair": "P4_P11",
+          "jaccard": 0.1509433962264151
+        },
+        {
+          "pair": "P5_P7",
+          "jaccard": 0.18181818181818182
+        },
+        {
+          "pair": "P5_P8",
+          "jaccard": 0.1724137931034483
+        },
+        {
+          "pair": "P5_P9",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P5_P10",
+          "jaccard": 0.1891891891891892
+        },
+        {
+          "pair": "P5_P11",
+          "jaccard": 0.1875
+        },
+        {
+          "pair": "P6_P8",
+          "jaccard": 0.24324324324324326
+        },
+        {
+          "pair": "P6_P9",
+          "jaccard": 0.17073170731707318
+        },
+        {
+          "pair": "P6_P10",
+          "jaccard": 0.14285714285714285
+        },
+        {
+          "pair": "P6_P11",
+          "jaccard": 0.25
+        },
+        {
+          "pair": "P7_P9",
+          "jaccard": 0.125
+        },
+        {
+          "pair": "P7_P10",
+          "jaccard": 0.14516129032258066
+        },
+        {
+          "pair": "P7_P11",
+          "jaccard": 0.2037037037037037
+        },
+        {
+          "pair": "P8_P10",
+          "jaccard": 0.14285714285714285
+        },
+        {
+          "pair": "P8_P11",
+          "jaccard": 0.21428571428571427
+        },
+        {
+          "pair": "P9_P11",
+          "jaccard": 0.2413793103448276
+        }
+      ]
+    },
+    {
+      "folio": "f104v",
+      "paragraph_count": 12,
+      "folio_vocab_size": 129,
+      "paragraphs": [
+        {
+          "number": 1,
+          "tokens": 74,
+          "unique_middles": 48
+        },
+        {
+          "number": 2,
+          "tokens": 44,
+          "unique_middles": 29
+        },
+        {
+          "number": 3,
+          "tokens": 31,
+          "unique_middles": 21
+        },
+        {
+          "number": 4,
+          "tokens": 41,
+          "unique_middles": 30
+        },
+        {
+          "number": 5,
+          "tokens": 41,
+          "unique_middles": 29
+        },
+        {
+          "number": 6,
+          "tokens": 38,
+          "unique_middles": 28
+        },
+        {
+          "number": 7,
+          "tokens": 22,
+          "unique_middles": 16
+        },
+        {
+          "number": 8,
+          "tokens": 31,
+          "unique_middles": 25
+        },
+        {
+          "number": 9,
+          "tokens": 34,
+          "unique_middles": 29
+        },
+        {
+          "number": 10,
+          "tokens": 16,
+          "unique_middles": 13
+        },
+        {
+          "number": 11,
+          "tokens": 48,
+          "unique_middles": 29
+        },
+        {
+          "number": 12,
+          "tokens": 38,
+          "unique_middles": 22
+        }
+      ],
+      "survival": {
+        "P1_to_P2": 0.375,
+        "P1_to_P3": 0.1875,
+        "P1_to_P4": 0.2916666666666667,
+        "P1_to_P5": 0.3125,
+        "P1_to_P6": 0.3958333333333333,
+        "P1_to_P7": 0.14583333333333334,
+        "P1_to_P8": 0.2916666666666667,
+        "P1_to_P9": 0.3541666666666667,
+        "P1_to_P10": 0.16666666666666666,
+        "P1_to_P11": 0.3333333333333333,
+        "P1_to_P12": 0.1875
+      },
+      "jaccard_adjacent": [
+        {
+          "pair": "P1_P2",
+          "jaccard": 0.3050847457627119
+        },
+        {
+          "pair": "P2_P3",
+          "jaccard": 0.21951219512195122
+        },
+        {
+          "pair": "P3_P4",
+          "jaccard": 0.1590909090909091
+        },
+        {
+          "pair": "P4_P5",
+          "jaccard": 0.2553191489361702
+        },
+        {
+          "pair": "P5_P6",
+          "jaccard": 0.26666666666666666
+        },
+        {
+          "pair": "P6_P7",
+          "jaccard": 0.2222222222222222
+        },
+        {
+          "pair": "P7_P8",
+          "jaccard": 0.1388888888888889
+        },
+        {
+          "pair": "P8_P9",
+          "jaccard": 0.35
+        },
+        {
+          "pair": "P9_P10",
+          "jaccard": 0.13513513513513514
+        },
+        {
+          "pair": "P10_P11",
+          "jaccard": 0.13513513513513514
+        },
+        {
+          "pair": "P11_P12",
+          "jaccard": 0.21428571428571427
+        }
+      ],
+      "jaccard_nonadjacent": [
+        {
+          "pair": "P1_P3",
+          "jaccard": 0.15
+        },
+        {
+          "pair": "P1_P4",
+          "jaccard": 0.21875
+        },
+        {
+          "pair": "P1_P5",
+          "jaccard": 0.24193548387096775
+        },
+        {
+          "pair": "P1_P6",
+          "jaccard": 0.3333333333333333
+        },
+        {
+          "pair": "P1_P7",
+          "jaccard": 0.12280701754385964
+        },
+        {
+          "pair": "P1_P8",
+          "jaccard": 0.23728813559322035
+        },
+        {
+          "pair": "P1_P9",
+          "jaccard": 0.2833333333333333
+        },
+        {
+          "pair": "P1_P10",
+          "jaccard": 0.1509433962264151
+        },
+        {
+          "pair": "P1_P11",
+          "jaccard": 0.26229508196721313
+        },
+        {
+          "pair": "P1_P12",
+          "jaccard": 0.14754098360655737
+        },
+        {
+          "pair": "P2_P4",
+          "jaccard": 0.2553191489361702
+        },
+        {
+          "pair": "P2_P5",
+          "jaccard": 0.2608695652173913
+        },
+        {
+          "pair": "P2_P6",
+          "jaccard": 0.2127659574468085
+        },
+        {
+          "pair": "P2_P7",
+          "jaccard": 0.07142857142857142
+        },
+        {
+          "pair": "P2_P8",
+          "jaccard": 0.2558139534883721
+        },
+        {
+          "pair": "P2_P9",
+          "jaccard": 0.2608695652173913
+        },
+        {
+          "pair": "P2_P10",
+          "jaccard": 0.13513513513513514
+        },
+        {
+          "pair": "P2_P11",
+          "jaccard": 0.23404255319148937
+        },
+        {
+          "pair": "P2_P12",
+          "jaccard": 0.275
+        },
+        {
+          "pair": "P3_P5",
+          "jaccard": 0.19047619047619047
+        },
+        {
+          "pair": "P3_P6",
+          "jaccard": 0.16666666666666666
+        },
+        {
+          "pair": "P3_P7",
+          "jaccard": 0.08823529411764706
+        },
+        {
+          "pair": "P3_P8",
+          "jaccard": 0.1794871794871795
+        },
+        {
+          "pair": "P3_P9",
+          "jaccard": 0.21951219512195122
+        },
+        {
+          "pair": "P3_P10",
+          "jaccard": 0.1724137931034483
+        },
+        {
+          "pair": "P3_P11",
+          "jaccard": 0.19047619047619047
+        },
+        {
+          "pair": "P3_P12",
+          "jaccard": 0.13157894736842105
+        },
+        {
+          "pair": "P4_P6",
+          "jaccard": 0.23404255319148937
+        },
+        {
+          "pair": "P4_P7",
+          "jaccard": 0.21052631578947367
+        },
+        {
+          "pair": "P4_P8",
+          "jaccard": 0.34146341463414637
+        },
+        {
+          "pair": "P4_P9",
+          "jaccard": 0.2826086956521739
+        },
+        {
+          "pair": "P4_P10",
+          "jaccard": 0.13157894736842105
+        },
+        {
+          "pair": "P4_P11",
+          "jaccard": 0.22916666666666666
+        },
+        {
+          "pair": "P4_P12",
+          "jaccard": 0.2682926829268293
+        },
+        {
+          "pair": "P5_P7",
+          "jaccard": 0.25
+        },
+        {
+          "pair": "P5_P8",
+          "jaccard": 0.2558139534883721
+        },
+        {
+          "pair": "P5_P9",
+          "jaccard": 0.28888888888888886
+        },
+        {
+          "pair": "P5_P10",
+          "jaccard": 0.16666666666666666
+        },
+        {
+          "pair": "P5_P11",
+          "jaccard": 0.23404255319148937
+        },
+        {
+          "pair": "P5_P12",
+          "jaccard": 0.1590909090909091
+        },
+        {
+          "pair": "P6_P8",
+          "jaccard": 0.2926829268292683
+        },
+        {
+          "pair": "P6_P9",
+          "jaccard": 0.29545454545454547
+        },
+        {
+          "pair": "P6_P10",
+          "jaccard": 0.10810810810810811
+        },
+        {
+          "pair": "P6_P11",
+          "jaccard": 0.32558139534883723
+        },
+        {
+          "pair": "P6_P12",
+          "jaccard": 0.19047619047619047
+        },
+        {
+          "pair": "P7_P9",
+          "jaccard": 0.15384615384615385
+        },
+        {
+          "pair": "P7_P10",
+          "jaccard": 0.11538461538461539
+        },
+        {
+          "pair": "P7_P11",
+          "jaccard": 0.18421052631578946
+        },
+        {
+          "pair": "P7_P12",
+          "jaccard": 0.11764705882352941
+        },
+        {
+          "pair": "P8_P10",
+          "jaccard": 0.08571428571428572
+        },
+        {
+          "pair": "P8_P11",
+          "jaccard": 0.22727272727272727
+        },
+        {
+          "pair": "P8_P12",
+          "jaccard": 0.20512820512820512
+        },
+        {
+          "pair": "P9_P11",
+          "jaccard": 0.3488372093023256
+        },
+        {
+          "pair": "P9_P12",
+          "jaccard": 0.275
+        },
+        {
+          "pair": "P10_P12",
+          "jaccard": 0.16666666666666666
+        }
+      ]
+    },
+    {
+      "folio": "f105r",
+      "paragraph_count": 8,
+      "folio_vocab_size": 126,
+      "paragraphs": [
+        {
+          "number": 1,
+          "tokens": 56,
+          "unique_middles": 31
+        },
+        {
+          "number": 2,
+          "tokens": 35,
+          "unique_middles": 23
+        },
+        {
+          "number": 3,
+          "tokens": 32,
+          "unique_middles": 25
+        },
+        {
+          "number": 4,
+          "tokens": 102,
+          "unique_middles": 55
+        },
+        {
+          "number": 5,
+          "tokens": 19,
+          "unique_middles": 17
+        },
+        {
+          "number": 6,
+          "tokens": 19,
+          "unique_middles": 17
+        },
+        {
+          "number": 7,
+          "tokens": 31,
+          "unique_middles": 29
+        },
+        {
+          "number": 8,
+          "tokens": 76,
+          "unique_middles": 43
+        }
+      ],
+      "survival": {
+        "P1_to_P2": 0.41935483870967744,
+        "P1_to_P3": 0.3225806451612903,
+        "P1_to_P4": 0.5806451612903226,
+        "P1_to_P5": 0.22580645161290322,
+        "P1_to_P6": 0.22580645161290322,
+        "P1_to_P7": 0.2903225806451613,
+        "P1_to_P8": 0.4838709677419355
+      },
+      "jaccard_adjacent": [
+        {
+          "pair": "P1_P2",
+          "jaccard": 0.3170731707317073
+        },
+        {
+          "pair": "P2_P3",
+          "jaccard": 0.23076923076923078
+        },
+        {
+          "pair": "P3_P4",
+          "jaccard": 0.19402985074626866
+        },
+        {
+          "pair": "P4_P5",
+          "jaccard": 0.125
+        },
+        {
+          "pair": "P5_P6",
+          "jaccard": 0.0625
+        },
+        {
+          "pair": "P6_P7",
+          "jaccard": 0.09523809523809523
+        },
+        {
+          "pair": "P7_P8",
+          "jaccard": 0.22033898305084745
+        }
+      ],
+      "jaccard_nonadjacent": [
+        {
+          "pair": "P1_P3",
+          "jaccard": 0.21739130434782608
+        },
+        {
+          "pair": "P1_P4",
+          "jaccard": 0.2647058823529412
+        },
+        {
+          "pair": "P1_P5",
+          "jaccard": 0.17073170731707318
+        },
+        {
+          "pair": "P1_P6",
+          "jaccard": 0.17073170731707318
+        },
+        {
+          "pair": "P1_P7",
+          "jaccard": 0.17647058823529413
+        },
+        {
+          "pair": "P1_P8",
+          "jaccard": 0.2542372881355932
+        },
+        {
+          "pair": "P2_P4",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P2_P5",
+          "jaccard": 0.1111111111111111
+        },
+        {
+          "pair": "P2_P6",
+          "jaccard": 0.17647058823529413
+        },
+        {
+          "pair": "P2_P7",
+          "jaccard": 0.20930232558139536
+        },
+        {
+          "pair": "P2_P8",
+          "jaccard": 0.2
+        },
+        {
+          "pair": "P3_P5",
+          "jaccard": 0.10526315789473684
+        },
+        {
+          "pair": "P3_P6",
+          "jaccard": 0.16666666666666666
+        },
+        {
+          "pair": "P3_P7",
+          "jaccard": 0.125
+        },
+        {
+          "pair": "P3_P8",
+          "jaccard": 0.1724137931034483
+        },
+        {
+          "pair": "P4_P6",
+          "jaccard": 0.14285714285714285
+        },
+        {
+          "pair": "P4_P7",
+          "jaccard": 0.21739130434782608
+        },
+        {
+          "pair": "P4_P8",
+          "jaccard": 0.2894736842105263
+        },
+        {
+          "pair": "P5_P7",
+          "jaccard": 0.12195121951219512
+        },
+        {
+          "pair": "P5_P8",
+          "jaccard": 0.15384615384615385
+        },
+        {
+          "pair": "P6_P8",
+          "jaccard": 0.17647058823529413
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "middle_overlap": {
+    "shared": 404,
+    "a_only": 609,
+    "b_only": 935
+  },
+  "test_5_e_extension_kernel_access": {
+    "n_shared_middles": 404,
+    "a_e_vs_b_kernel": {
+      "spearman_rho": 0.42,
+      "p_value": 0.0,
+      "significant": 

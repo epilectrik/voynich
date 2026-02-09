@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "total_paragraphs": 588,
+    "folios": 82,
+    "within_bin_similarity": 0.9033158996598163,
+    "between_bin_similarity": 0.8951453477952285,
+    "cohens_d": 0.0637468771011394,
+    "t_statistic": 1.5312610899231514,
+    "p_value": 0.27648671224633337
+  },
+  "position_counts": {
+    "early": 201,
+    "middle": 186,
+    "late": 201
+  },
+  "feature_means": {
+    "early": {
+      "token_count": 46.93532338308458,
+      "gallows_rate": 0.09392744060478178,
+      "fl_initial_rate": 0.06013993426847196,
+      "fl_late_rate": 0.04870769549263895,
+      "fl_terminal_rate": 0.04311232194372109
+    },
+    "middle": {
+      "token_count": 32.935483870967744,
+      "gallows_rate": 0.11502371136657251,
+      "fl_initial_rate": 0.05414485808091341,
+      "fl_late_rate": 0.04472849168427041,
+      "fl_terminal_rate": 0.043531651993540324
+    },
+    "late": {
+      "token_count": 38.069651741293534,
+      "gallows_rate": 0.10741895174389939,
+      "fl_initial_rate": 0.058875963490601264,
+      "fl_late_rate": 0.04345388501727515,
+      "fl_terminal_rate": 0.03666484683971803
+    }
+  }
+}

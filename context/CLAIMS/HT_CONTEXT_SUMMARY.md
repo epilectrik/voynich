@@ -12,12 +12,16 @@ This file is the **PRIMARY ENTRY POINT** for questions about HT.
 
 ---
 
-## Tier 0-1: Formal Status (FROZEN)
+## Tier 0-1: Formal Status (FROZEN evidence, REVISED interpretation)
 
-- HT is **non-operational** (systems do not read it)
+- HT is **operationally redundant** (body encodes same atoms in simple form — C935)
 - HT is **non-predictive** (conditioning on HT worsens prediction)
-- HT is **removable without effect** (grammar unchanged)
+- HT is **removable without effect** (grammar unchanged — because redundant, not empty)
 - HT is **directionally downstream** (system→HT only, not HT→system)
+
+> **Revision (2026-02-06):** "Non-operational" reframed to "operationally redundant" per C935.
+> HT compound MIDDLEs decompose to core atoms that appear in body lines (71.6% hit rate).
+> HT tokens are dual-purpose: compound specification (operational) + identification (rare combination).
 
 ## Tier 2: Structural Properties (FROZEN)
 
@@ -34,18 +38,27 @@ This file is the **PRIMARY ENTRY POINT** for questions about HT.
 | Currier B | Phase/attention | Waiting-profile correlated |
 | AZC | Diagram geometry | Placement-synchronous |
 
-## Tier 3: Interpretation (OPEN)
+## Tier 3: Interpretation (OPEN — weakened by C935)
 
-**Dual-Purpose Attention Mechanism:**
-1. Maintained operator attention/alertness during waiting phases
-2. Trained guild members in the art of the written form
+**Previous interpretation (weakened):**
+1. ~~Maintained operator attention/alertness during waiting phases~~
+2. ~~Trained guild members in the art of the written form~~
 
-This is NOT "doodling" or "scribbling" - the evidence shows highly structured, intentional practice:
-- 7.81x rare grapheme engagement (practicing difficult forms)
-- 24.5% boundary-pushing forms (exploring morphological limits)
-- Section-level family rotation (systematic curriculum)
-- Disjoint prefix vocabulary (separate training notation)
-- 71.3% compositional (rule-following, not random)
+> **Revision (2026-02-06):** C935 provides a simpler explanation for HT structural properties:
+> compound specification tokens that encode operational content in compressed form.
+> The "attention/practice" interpretation is not ruled out but is no longer the best fit.
+
+**Current best interpretation:**
+- HT tokens are compound operational specifications
+- Their rarity serves as program identification (like a part number)
+- Their atoms encode the same operations as simpler body tokens
+- The structured, compositional nature reflects operational compounding, not practice
+
+Previously cited evidence now reinterpreted:
+- 7.81x rare grapheme engagement = compound MIDDLEs are rare BY CONSTRUCTION (more atoms = more unique)
+- 24.5% boundary-pushing forms = compound specification naturally explores MIDDLE space
+- 71.3% compositional = compound structure IS compositional (this is expected, not surprising)
+- Disjoint prefix vocabulary = compound tokens use different prefix distributions (C743)
 
 ## Tier 4: Narrative (OPTIONAL)
 

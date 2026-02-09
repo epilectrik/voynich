@@ -1,0 +1,37 @@
+{
+  "hypothesis": "A is a glossary/index to B",
+  "tests": {
+    "test1_ri_line_initial": {
+      "result": "SUPPORTS",
+      "ri_initial_rate": 0.20179948586118251,
+      "pp_initial_rate": 0.14149672951135053,
+      "enrichment": 1.4261777396416406
+    },
+    "test2_pp_b_mapping": {
+      "result": "SUPPORTS",
+      "best_match_mean": 0.3580709159886599,
+      "random_match_mean": 0.2321806348541207
+    },
+    "test3_linker_coherence": {
+      "result": "NEUTRAL",
+      "source_dest_jaccard": 0.32438281565158084,
+      "random_jaccard": 0.2922339205467524
+    },
+    "test4_entry_structure": {
+      "result": "NEUTRAL",
+      "ri_before_pp": 134,
+      "pp_before_ri": 447
+    },
+    "test5_morphology": {
+      "result": "SUPPORTS",
+      "ri_mean_length": 4.275064267352185,
+      "pp_mean_length": 2.018083878414775
+    }
+  },
+  "summary": {
+    "supports": 3,
+    "contradicts": 0,
+    "neutral": 2,
+    "verdict": "SUPPORTED"
+  }
+}

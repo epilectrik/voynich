@@ -1,0 +1,2747 @@
+{
+  "title": "Voynich B Folio Operational Profiles",
+  "folio_count": 82,
+  "dimensions": [
+    "prep_te",
+    "prep_pch",
+    "prep_lch",
+    "prep_tch",
+    "thermo_ke",
+    "thermo_kch",
+    "k_ratio",
+    "h_ratio",
+    "e_ratio",
+    "iteration_rate",
+    "checkpoint_rate",
+    "terminal_rate"
+  ],
+  "profiles": [
+    {
+      "folio": "f103r",
+      "token_count": 522,
+      "paragraph_count": 54,
+      "prep_te": 0.0038314176245210726,
+      "prep_pch": 0.011494252873563218,
+      "prep_lch": 0.0019157088122605363,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.03065134099616858,
+      "thermo_kch": 0.0038314176245210726,
+      "k_ratio": 0.3254,
+      "h_ratio": 0.0926,
+      "e_ratio": 0.582,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1172,
+      "terminal_rate": 0.1245,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 6,
+        "lch": 1,
+        "te": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 16,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 220,
+        "h": 35,
+        "k": 123
+      }
+    },
+    {
+      "folio": "f103v",
+      "token_count": 449,
+      "paragraph_count": 46,
+      "prep_te": 0.0066815144766146995,
+      "prep_pch": 0.008908685968819599,
+      "prep_lch": 0.0022271714922048997,
+      "prep_tch": 0.0022271714922048997,
+      "thermo_ke": 0.031180400890868598,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2872,
+      "h_ratio": 0.1003,
+      "e_ratio": 0.6125,
+      "iteration_rate": 0.0051,
+      "checkpoint_rate": 0.1269,
+      "terminal_rate": 0.1523,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 3,
+        "pch": 4,
+        "tch": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 14
+      },
+      "raw_kernel_dist": {
+        "h": 29,
+        "k": 83,
+        "e": 177
+      }
+    },
+    {
+      "folio": "f104r",
+      "token_count": 438,
+      "paragraph_count": 45,
+      "prep_te": 0.01141552511415525,
+      "prep_pch": 0.0228310502283105,
+      "prep_lch": 0.0045662100456621,
+      "prep_tch": 0.0045662100456621,
+      "thermo_ke": 0.045662100456621,
+      "thermo_kch": 0.0182648401826484,
+      "k_ratio": 0.2474,
+      "h_ratio": 0.2439,
+      "e_ratio": 0.5087,
+      "iteration_rate": 0.0119,
+      "checkpoint_rate": 0.1423,
+      "terminal_rate": 0.2055,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 10,
+        "te": 5,
+        "tch": 2,
+        "lch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 20,
+        "kch": 8
+      },
+      "raw_kernel_dist": {
+        "e": 146,
+        "h": 70,
+        "k": 71
+      }
+    },
+    {
+      "folio": "f104v",
+      "token_count": 458,
+      "paragraph_count": 44,
+      "prep_te": 0.015283842794759825,
+      "prep_pch": 0.013100436681222707,
+      "prep_lch": 0.004366812227074236,
+      "prep_tch": 0.028384279475982533,
+      "thermo_ke": 0.019650655021834062,
+      "thermo_kch": 0.024017467248908297,
+      "k_ratio": 0.2099,
+      "h_ratio": 0.2068,
+      "e_ratio": 0.5833,
+      "iteration_rate": 0.0115,
+      "checkpoint_rate": 0.1794,
+      "terminal_rate": 0.126,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 6,
+        "tch": 13,
+        "te": 7,
+        "lch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 9,
+        "kch": 11
+      },
+      "raw_kernel_dist": {
+        "h": 67,
+        "e": 189,
+        "k": 68
+      }
+    },
+    {
+      "folio": "f105r",
+      "token_count": 370,
+      "paragraph_count": 37,
+      "prep_te": 0.013513513513513514,
+      "prep_pch": 0.021621621621621623,
+      "prep_lch": 0.0,
+      "prep_tch": 0.002702702702702703,
+      "thermo_ke": 0.04054054054054054,
+      "thermo_kch": 0.005405405405405406,
+      "k_ratio": 0.214,
+      "h_ratio": 0.1302,
+      "e_ratio": 0.6558,
+      "iteration_rate": 0.0276,
+      "checkpoint_rate": 0.1198,
+      "terminal_rate": 0.235,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 8,
+        "te": 5,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 15,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "k": 46,
+        "e": 141,
+        "h": 28
+      }
+    },
+    {
+      "folio": "f105v",
+      "token_count": 390,
+      "paragraph_count": 38,
+      "prep_te": 0.005128205128205128,
+      "prep_pch": 0.046153846153846156,
+      "prep_lch": 0.002564102564102564,
+      "prep_tch": 0.002564102564102564,
+      "thermo_ke": 0.01282051282051282,
+      "thermo_kch": 0.005128205128205128,
+      "k_ratio": 0.2044,
+      "h_ratio": 0.2431,
+      "e_ratio": 0.5525,
+      "iteration_rate": 0.0197,
+      "checkpoint_rate": 0.1478,
+      "terminal_rate": 0.2167,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 18,
+        "te": 2,
+        "lch": 1,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 5,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "h": 44,
+        "e": 100,
+        "k": 37
+      }
+    },
+    {
+      "folio": "f106r",
+      "token_count": 421,
+      "paragraph_count": 46,
+      "prep_te": 0.019002375296912115,
+      "prep_pch": 0.021377672209026127,
+      "prep_lch": 0.009501187648456057,
+      "prep_tch": 0.007125890736342043,
+      "thermo_ke": 0.040380047505938245,
+      "thermo_kch": 0.009501187648456057,
+      "k_ratio": 0.265,
+      "h_ratio": 0.1767,
+      "e_ratio": 0.5583,
+      "iteration_rate": 0.0044,
+      "checkpoint_rate": 0.1644,
+      "terminal_rate": 0.1689,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 8,
+        "pch": 9,
+        "lch": 4,
+        "tch": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 17,
+        "kch": 4
+      },
+      "raw_kernel_dist": {
+        "e": 158,
+        "k": 75,
+        "h": 50
+      }
+    },
+    {
+      "folio": "f106v",
+      "token_count": 449,
+      "paragraph_count": 47,
+      "prep_te": 0.0066815144766146995,
+      "prep_pch": 0.015590200445434299,
+      "prep_lch": 0.008908685968819599,
+      "prep_tch": 0.004454342984409799,
+      "thermo_ke": 0.011135857461024499,
+      "thermo_kch": 0.013363028953229399,
+      "k_ratio": 0.2588,
+      "h_ratio": 0.1886,
+      "e_ratio": 0.5526,
+      "iteration_rate": 0.0041,
+      "checkpoint_rate": 0.2016,
+      "terminal_rate": 0.2222,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 4,
+        "pch": 7,
+        "tch": 2,
+        "te": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 5,
+        "kch": 6
+      },
+      "raw_kernel_dist": {
+        "e": 126,
+        "k": 59,
+        "h": 43
+      }
+    },
+    {
+      "folio": "f107r",
+      "token_count": 488,
+      "paragraph_count": 51,
+      "prep_te": 0.004098360655737705,
+      "prep_pch": 0.006147540983606557,
+      "prep_lch": 0.006147540983606557,
+      "prep_tch": 0.004098360655737705,
+      "thermo_ke": 0.022540983606557378,
+      "thermo_kch": 0.014344262295081968,
+      "k_ratio": 0.3347,
+      "h_ratio": 0.1714,
+      "e_ratio": 0.4939,
+      "iteration_rate": 0.0165,
+      "checkpoint_rate": 0.2181,
+      "terminal_rate": 0.1235,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 2,
+        "tch": 2,
+        "lch": 3,
+        "pch": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 11,
+        "kch": 7
+      },
+      "raw_kernel_dist": {
+        "e": 121,
+        "k": 82,
+        "h": 42
+      }
+    },
+    {
+      "folio": "f107v",
+      "token_count": 455,
+      "paragraph_count": 49,
+      "prep_te": 0.002197802197802198,
+      "prep_pch": 0.017582417582417582,
+      "prep_lch": 0.004395604395604396,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.024175824175824177,
+      "thermo_kch": 0.015384615384615385,
+      "k_ratio": 0.4774,
+      "h_ratio": 0.1241,
+      "e_ratio": 0.3985,
+      "iteration_rate": 0.0043,
+      "checkpoint_rate": 0.2251,
+      "terminal_rate": 0.1818,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 8,
+        "lch": 2,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 11,
+        "kch": 7
+      },
+      "raw_kernel_dist": {
+        "k": 127,
+        "e": 106,
+        "h": 33
+      }
+    },
+    {
+      "folio": "f108r",
+      "token_count": 491,
+      "paragraph_count": 50,
+      "prep_te": 0.004073319755600814,
+      "prep_pch": 0.016293279022403257,
+      "prep_lch": 0.006109979633401222,
+      "prep_tch": 0.002036659877800407,
+      "thermo_ke": 0.06517311608961303,
+      "thermo_kch": 0.004073319755600814,
+      "k_ratio": 0.3087,
+      "h_ratio": 0.1066,
+      "e_ratio": 0.5847,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0837,
+      "terminal_rate": 0.1753,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 8,
+        "te": 2,
+        "tch": 1,
+        "lch": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 32,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 214,
+        "h": 39,
+        "k": 113
+      }
+    },
+    {
+      "folio": "f108v",
+      "token_count": 570,
+      "paragraph_count": 53,
+      "prep_te": 0.010526315789473684,
+      "prep_pch": 0.0035087719298245615,
+      "prep_lch": 0.0035087719298245615,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.10350877192982456,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2821,
+      "h_ratio": 0.0547,
+      "e_ratio": 0.6632,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1389,
+      "terminal_rate": 0.0868,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 6,
+        "pch": 2,
+        "lch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 59
+      },
+      "raw_kernel_dist": {
+        "e": 315,
+        "k": 134,
+        "h": 26
+      }
+    },
+    {
+      "folio": "f111r",
+      "token_count": 614,
+      "paragraph_count": 54,
+      "prep_te": 0.011400651465798045,
+      "prep_pch": 0.006514657980456026,
+      "prep_lch": 0.0016286644951140066,
+      "prep_tch": 0.006514657980456026,
+      "thermo_ke": 0.07654723127035831,
+      "thermo_kch": 0.0016286644951140066,
+      "k_ratio": 0.2558,
+      "h_ratio": 0.0923,
+      "e_ratio": 0.6519,
+      "iteration_rate": 0.0033,
+      "checkpoint_rate": 0.1213,
+      "terminal_rate": 0.118,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 1,
+        "pch": 4,
+        "tch": 4,
+        "te": 7
+      },
+      "raw_thermo_counts": {
+        "ke": 47,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 48,
+        "e": 339,
+        "k": 133
+      }
+    },
+    {
+      "folio": "f111v",
+      "token_count": 561,
+      "paragraph_count": 51,
+      "prep_te": 0.0035650623885918,
+      "prep_pch": 0.0196078431372549,
+      "prep_lch": 0.0017825311942959,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0196078431372549,
+      "thermo_kch": 0.0017825311942959,
+      "k_ratio": 0.3236,
+      "h_ratio": 0.1194,
+      "e_ratio": 0.557,
+      "iteration_rate": 0.0072,
+      "checkpoint_rate": 0.2652,
+      "terminal_rate": 0.0573,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 11,
+        "te": 2,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 11,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 45,
+        "k": 122,
+        "e": 210
+      }
+    },
+    {
+      "folio": "f112r",
+      "token_count": 394,
+      "paragraph_count": 45,
+      "prep_te": 0.012690355329949238,
+      "prep_pch": 0.007614213197969543,
+      "prep_lch": 0.005076142131979695,
+      "prep_tch": 0.0025380710659898475,
+      "thermo_ke": 0.048223350253807105,
+      "thermo_kch": 0.0025380710659898475,
+      "k_ratio": 0.2716,
+      "h_ratio": 0.1336,
+      "e_ratio": 0.5948,
+      "iteration_rate": 0.0145,
+      "checkpoint_rate": 0.0628,
+      "terminal_rate": 0.1739,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 5,
+        "tch": 1,
+        "lch": 2,
+        "pch": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 19,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 31,
+        "k": 63,
+        "e": 138
+      }
+    },
+    {
+      "folio": "f112v",
+      "token_count": 415,
+      "paragraph_count": 47,
+      "prep_te": 0.00963855421686747,
+      "prep_pch": 0.01927710843373494,
+      "prep_lch": 0.004819277108433735,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.06265060240963856,
+      "thermo_kch": 0.007228915662650603,
+      "k_ratio": 0.2676,
+      "h_ratio": 0.1092,
+      "e_ratio": 0.6232,
+      "iteration_rate": 0.036,
+      "checkpoint_rate": 0.1757,
+      "terminal_rate": 0.1667,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 4,
+        "pch": 8,
+        "lch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 26,
+        "kch": 3
+      },
+      "raw_kernel_dist": {
+        "e": 177,
+        "k": 76,
+        "h": 31
+      }
+    },
+    {
+      "folio": "f113r",
+      "token_count": 518,
+      "paragraph_count": 51,
+      "prep_te": 0.003861003861003861,
+      "prep_pch": 0.021235521235521235,
+      "prep_lch": 0.003861003861003861,
+      "prep_tch": 0.003861003861003861,
+      "thermo_ke": 0.023166023166023165,
+      "thermo_kch": 0.017374517374517374,
+      "k_ratio": 0.2599,
+      "h_ratio": 0.2373,
+      "e_ratio": 0.5028,
+      "iteration_rate": 0.0201,
+      "checkpoint_rate": 0.1672,
+      "terminal_rate": 0.1773,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 11,
+        "te": 2,
+        "lch": 2,
+        "tch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 12,
+        "kch": 9
+      },
+      "raw_kernel_dist": {
+        "e": 178,
+        "h": 84,
+        "k": 92
+      }
+    },
+    {
+      "folio": "f113v",
+      "token_count": 479,
+      "paragraph_count": 49,
+      "prep_te": 0.0041753653444676405,
+      "prep_pch": 0.018789144050104383,
+      "prep_lch": 0.008350730688935281,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.025052192066805846,
+      "thermo_kch": 0.008350730688935281,
+      "k_ratio": 0.2624,
+      "h_ratio": 0.2163,
+      "e_ratio": 0.5213,
+      "iteration_rate": 0.0206,
+      "checkpoint_rate": 0.1687,
+      "terminal_rate": 0.1893,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 9,
+        "lch": 4,
+        "te": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 12,
+        "kch": 4
+      },
+      "raw_kernel_dist": {
+        "h": 61,
+        "k": 74,
+        "e": 147
+      }
+    },
+    {
+      "folio": "f114r",
+      "token_count": 447,
+      "paragraph_count": 45,
+      "prep_te": 0.006711409395973154,
+      "prep_pch": 0.013422818791946308,
+      "prep_lch": 0.0044742729306487695,
+      "prep_tch": 0.011185682326621925,
+      "thermo_ke": 0.02237136465324385,
+      "thermo_kch": 0.015659955257270694,
+      "k_ratio": 0.1694,
+      "h_ratio": 0.2137,
+      "e_ratio": 0.6169,
+      "iteration_rate": 0.0192,
+      "checkpoint_rate": 0.249,
+      "terminal_rate": 0.1571,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 3,
+        "pch": 6,
+        "lch": 2,
+        "tch": 5
+      },
+      "raw_thermo_counts": {
+        "ke": 10,
+        "kch": 7
+      },
+      "raw_kernel_dist": {
+        "e": 153,
+        "h": 53,
+        "k": 42
+      }
+    },
+    {
+      "folio": "f114v",
+      "token_count": 362,
+      "paragraph_count": 41,
+      "prep_te": 0.03038674033149171,
+      "prep_pch": 0.027624309392265192,
+      "prep_lch": 0.0055248618784530384,
+      "prep_tch": 0.03314917127071823,
+      "thermo_ke": 0.019337016574585635,
+      "thermo_kch": 0.013812154696132596,
+      "k_ratio": 0.1687,
+      "h_ratio": 0.253,
+      "e_ratio": 0.5783,
+      "iteration_rate": 0.0138,
+      "checkpoint_rate": 0.2442,
+      "terminal_rate": 0.1889,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 11,
+        "tch": 12,
+        "pch": 10,
+        "lch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 7,
+        "kch": 5
+      },
+      "raw_kernel_dist": {
+        "e": 144,
+        "h": 63,
+        "k": 42
+      }
+    },
+    {
+      "folio": "f115r",
+      "token_count": 444,
+      "paragraph_count": 45,
+      "prep_te": 0.015765765765765764,
+      "prep_pch": 0.015765765765765764,
+      "prep_lch": 0.01126126126126126,
+      "prep_tch": 0.03153153153153153,
+      "thermo_ke": 0.04504504504504504,
+      "thermo_kch": 0.033783783783783786,
+      "k_ratio": 0.2277,
+      "h_ratio": 0.2369,
+      "e_ratio": 0.5354,
+      "iteration_rate": 0.0082,
+      "checkpoint_rate": 0.1516,
+      "terminal_rate": 0.1721,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 7,
+        "te": 7,
+        "tch": 14,
+        "lch": 5
+      },
+      "raw_thermo_counts": {
+        "ke": 20,
+        "kch": 15
+      },
+      "raw_kernel_dist": {
+        "h": 77,
+        "e": 174,
+        "k": 74
+      }
+    },
+    {
+      "folio": "f115v",
+      "token_count": 399,
+      "paragraph_count": 45,
+      "prep_te": 0.010025062656641603,
+      "prep_pch": 0.020050125313283207,
+      "prep_lch": 0.015037593984962405,
+      "prep_tch": 0.015037593984962405,
+      "thermo_ke": 0.040100250626566414,
+      "thermo_kch": 0.022556390977443608,
+      "k_ratio": 0.2222,
+      "h_ratio": 0.237,
+      "e_ratio": 0.5407,
+      "iteration_rate": 0.0082,
+      "checkpoint_rate": 0.1523,
+      "terminal_rate": 0.1934,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 4,
+        "tch": 6,
+        "lch": 6,
+        "pch": 8
+      },
+      "raw_thermo_counts": {
+        "ke": 16,
+        "kch": 9
+      },
+      "raw_kernel_dist": {
+        "e": 146,
+        "h": 64,
+        "k": 60
+      }
+    },
+    {
+      "folio": "f116r",
+      "token_count": 537,
+      "paragraph_count": 50,
+      "prep_te": 0.00558659217877095,
+      "prep_pch": 0.00186219739292365,
+      "prep_lch": 0.00186219739292365,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0111731843575419,
+      "thermo_kch": 0.00186219739292365,
+      "k_ratio": 0.3087,
+      "h_ratio": 0.0805,
+      "e_ratio": 0.6107,
+      "iteration_rate": 0.004,
+      "checkpoint_rate": 0.2289,
+      "terminal_rate": 0.1566,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 3,
+        "pch": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 1,
+        "ke": 6
+      },
+      "raw_kernel_dist": {
+        "e": 182,
+        "k": 92,
+        "h": 24
+      }
+    },
+    {
+      "folio": "f26r",
+      "token_count": 85,
+      "paragraph_count": 10,
+      "prep_te": 0.023529411764705882,
+      "prep_pch": 0.023529411764705882,
+      "prep_lch": 0.011764705882352941,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.023529411764705882,
+      "thermo_kch": 0.011764705882352941,
+      "k_ratio": 0.2373,
+      "h_ratio": 0.1864,
+      "e_ratio": 0.5763,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0476,
+      "terminal_rate": 0.1905,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 2,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 2,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "k": 14,
+        "e": 34,
+        "h": 11
+      }
+    },
+    {
+      "folio": "f26v",
+      "token_count": 89,
+      "paragraph_count": 9,
+      "prep_te": 0.011235955056179775,
+      "prep_pch": 0.011235955056179775,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.02247191011235955,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2,
+      "h_ratio": 0.1167,
+      "e_ratio": 0.6833,
+      "iteration_rate": 0.0204,
+      "checkpoint_rate": 0.0204,
+      "terminal_rate": 0.3061,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 1,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 2
+      },
+      "raw_kernel_dist": {
+        "e": 41,
+        "k": 12,
+        "h": 7
+      }
+    },
+    {
+      "folio": "f31r",
+      "token_count": 100,
+      "paragraph_count": 16,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.07,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2593,
+      "h_ratio": 0.0864,
+      "e_ratio": 0.6543,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0217,
+      "terminal_rate": 0.1522,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {},
+      "raw_thermo_counts": {
+        "ke": 7
+      },
+      "raw_kernel_dist": {
+        "e": 53,
+        "h": 7,
+        "k": 21
+      }
+    },
+    {
+      "folio": "f31v",
+      "token_count": 108,
+      "paragraph_count": 11,
+      "prep_te": 0.009259259259259259,
+      "prep_pch": 0.0,
+      "prep_lch": 0.009259259259259259,
+      "prep_tch": 0.009259259259259259,
+      "thermo_ke": 0.009259259259259259,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.1392,
+      "h_ratio": 0.1519,
+      "e_ratio": 0.7089,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0192,
+      "terminal_rate": 0.1923,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 1,
+        "te": 1,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "e": 56,
+        "h": 12,
+        "k": 11
+      }
+    },
+    {
+      "folio": "f33r",
+      "token_count": 72,
+      "paragraph_count": 7,
+      "prep_te": 0.0,
+      "prep_pch": 0.013888888888888888,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.013888888888888888,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.4118,
+      "h_ratio": 0.1471,
+      "e_ratio": 0.4412,
+      "iteration_rate": 0.027,
+      "checkpoint_rate": 0.0541,
+      "terminal_rate": 0.3243,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "h": 5,
+        "e": 15,
+        "k": 14
+      }
+    },
+    {
+      "folio": "f33v",
+      "token_count": 109,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.3448,
+      "h_ratio": 0.2069,
+      "e_ratio": 0.4483,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0323,
+      "terminal_rate": 0.3871,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {},
+      "raw_thermo_counts": {},
+      "raw_kernel_dist": {
+        "h": 6,
+        "k": 10,
+        "e": 13
+      }
+    },
+    {
+      "folio": "f34r",
+      "token_count": 144,
+      "paragraph_count": 15,
+      "prep_te": 0.006944444444444444,
+      "prep_pch": 0.0,
+      "prep_lch": 0.020833333333333332,
+      "prep_tch": 0.006944444444444444,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.013888888888888888,
+      "k_ratio": 0.3067,
+      "h_ratio": 0.2267,
+      "e_ratio": 0.4667,
+      "iteration_rate": 0.0139,
+      "checkpoint_rate": 0.0278,
+      "terminal_rate": 0.3194,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "tch": 1,
+        "te": 1,
+        "lch": 3
+      },
+      "raw_thermo_counts": {
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 35,
+        "h": 17,
+        "k": 23
+      }
+    },
+    {
+      "folio": "f34v",
+      "token_count": 115,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.008695652173913044,
+      "prep_lch": 0.008695652173913044,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.017391304347826087,
+      "thermo_kch": 0.008695652173913044,
+      "k_ratio": 0.2881,
+      "h_ratio": 0.1864,
+      "e_ratio": 0.5254,
+      "iteration_rate": 0.0161,
+      "checkpoint_rate": 0.1774,
+      "terminal_rate": 0.2419,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 2,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 31,
+        "h": 11,
+        "k": 17
+      }
+    },
+    {
+      "folio": "f39r",
+      "token_count": 154,
+      "paragraph_count": 16,
+      "prep_te": 0.0,
+      "prep_pch": 0.006493506493506494,
+      "prep_lch": 0.01948051948051948,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.012987012987012988,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.3529,
+      "h_ratio": 0.2118,
+      "e_ratio": 0.4353,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.2239,
+      "terminal_rate": 0.1642,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "lch": 3,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 2
+      },
+      "raw_kernel_dist": {
+        "h": 18,
+        "e": 37,
+        "k": 30
+      }
+    },
+    {
+      "folio": "f39v",
+      "token_count": 142,
+      "paragraph_count": 14,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.007042253521126761,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.4717,
+      "h_ratio": 0.1321,
+      "e_ratio": 0.3962,
+      "iteration_rate": 0.0192,
+      "checkpoint_rate": 0.1346,
+      "terminal_rate": 0.3269,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {},
+      "raw_thermo_counts": {
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "k": 25,
+        "e": 21,
+        "h": 7
+      }
+    },
+    {
+      "folio": "f40r",
+      "token_count": 97,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.010309278350515464,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.010309278350515464,
+      "k_ratio": 0.3824,
+      "h_ratio": 0.2059,
+      "e_ratio": 0.4118,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0938,
+      "terminal_rate": 0.2812,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 14,
+        "k": 13,
+        "h": 7
+      }
+    },
+    {
+      "folio": "f40v",
+      "token_count": 106,
+      "paragraph_count": 19,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.018867924528301886,
+      "thermo_kch": 0.018867924528301886,
+      "k_ratio": 0.4375,
+      "h_ratio": 0.0833,
+      "e_ratio": 0.4792,
+      "iteration_rate": 0.0213,
+      "checkpoint_rate": 0.2128,
+      "terminal_rate": 0.1702,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {},
+      "raw_thermo_counts": {
+        "kch": 2,
+        "ke": 2
+      },
+      "raw_kernel_dist": {
+        "e": 23,
+        "k": 21,
+        "h": 4
+      }
+    },
+    {
+      "folio": "f41r",
+      "token_count": 97,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.010309278350515464,
+      "prep_tch": 0.010309278350515464,
+      "thermo_ke": 0.09278350515463918,
+      "thermo_kch": 0.030927835051546393,
+      "k_ratio": 0.3684,
+      "h_ratio": 0.1158,
+      "e_ratio": 0.5158,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0204,
+      "terminal_rate": 0.2449,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "tch": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 3,
+        "ke": 9
+      },
+      "raw_kernel_dist": {
+        "e": 49,
+        "k": 35,
+        "h": 11
+      }
+    },
+    {
+      "folio": "f41v",
+      "token_count": 68,
+      "paragraph_count": 8,
+      "prep_te": 0.0,
+      "prep_pch": 0.014705882352941176,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.058823529411764705,
+      "thermo_kch": 0.014705882352941176,
+      "k_ratio": 0.1731,
+      "h_ratio": 0.1346,
+      "e_ratio": 0.6923,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0323,
+      "terminal_rate": 0.4839,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 1,
+        "ke": 4
+      },
+      "raw_kernel_dist": {
+        "e": 36,
+        "h": 7,
+        "k": 9
+      }
+    },
+    {
+      "folio": "f43r",
+      "token_count": 150,
+      "paragraph_count": 14,
+      "prep_te": 0.006666666666666667,
+      "prep_pch": 0.013333333333333334,
+      "prep_lch": 0.006666666666666667,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.02,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2535,
+      "h_ratio": 0.2113,
+      "e_ratio": 0.5352,
+      "iteration_rate": 0.0137,
+      "checkpoint_rate": 0.0411,
+      "terminal_rate": 0.5068,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 1,
+        "pch": 2,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 3
+      },
+      "raw_kernel_dist": {
+        "h": 15,
+        "e": 38,
+        "k": 18
+      }
+    },
+    {
+      "folio": "f43v",
+      "token_count": 153,
+      "paragraph_count": 16,
+      "prep_te": 0.006535947712418301,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.006535947712418301,
+      "thermo_ke": 0.013071895424836602,
+      "thermo_kch": 0.0196078431372549,
+      "k_ratio": 0.1978,
+      "h_ratio": 0.1099,
+      "e_ratio": 0.6923,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0694,
+      "terminal_rate": 0.3194,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 1,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 3,
+        "ke": 2
+      },
+      "raw_kernel_dist": {
+        "e": 63,
+        "k": 18,
+        "h": 10
+      }
+    },
+    {
+      "folio": "f46r",
+      "token_count": 157,
+      "paragraph_count": 15,
+      "prep_te": 0.006369426751592357,
+      "prep_pch": 0.01910828025477707,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.006369426751592357,
+      "thermo_kch": 0.006369426751592357,
+      "k_ratio": 0.3469,
+      "h_ratio": 0.1735,
+      "e_ratio": 0.4796,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0789,
+      "terminal_rate": 0.3421,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 3,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 1,
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "e": 47,
+        "h": 17,
+        "k": 34
+      }
+    },
+    {
+      "folio": "f46v",
+      "token_count": 111,
+      "paragraph_count": 12,
+      "prep_te": 0.009009009009009009,
+      "prep_pch": 0.018018018018018018,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.009009009009009009,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2131,
+      "h_ratio": 0.2623,
+      "e_ratio": 0.5246,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0213,
+      "terminal_rate": 0.4043,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "e": 32,
+        "h": 16,
+        "k": 13
+      }
+    },
+    {
+      "folio": "f48r",
+      "token_count": 89,
+      "paragraph_count": 9,
+      "prep_te": 0.011235955056179775,
+      "prep_pch": 0.02247191011235955,
+      "prep_lch": 0.011235955056179775,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2075,
+      "h_ratio": 0.2264,
+      "e_ratio": 0.566,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1458,
+      "terminal_rate": 0.2917,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {},
+      "raw_kernel_dist": {
+        "h": 12,
+        "k": 11,
+        "e": 30
+      }
+    },
+    {
+      "folio": "f48v",
+      "token_count": 126,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.007936507936507936,
+      "k_ratio": 0.1719,
+      "h_ratio": 0.1875,
+      "e_ratio": 0.6406,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0444,
+      "terminal_rate": 0.3111,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {},
+      "raw_thermo_counts": {
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 41,
+        "h": 12,
+        "k": 11
+      }
+    },
+    {
+      "folio": "f50r",
+      "token_count": 89,
+      "paragraph_count": 10,
+      "prep_te": 0.0,
+      "prep_pch": 0.011235955056179775,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.011235955056179775,
+      "thermo_kch": 0.056179775280898875,
+      "k_ratio": 0.48,
+      "h_ratio": 0.24,
+      "e_ratio": 0.28,
+      "iteration_rate": 0.0435,
+      "checkpoint_rate": 0.1957,
+      "terminal_rate": 0.3043,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "OIL",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 5,
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "e": 14,
+        "k": 24,
+        "h": 12
+      }
+    },
+    {
+      "folio": "f50v",
+      "token_count": 98,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.01020408163265306,
+      "prep_lch": 0.0,
+      "prep_tch": 0.02040816326530612,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.01020408163265306,
+      "k_ratio": 0.3673,
+      "h_ratio": 0.2653,
+      "e_ratio": 0.3673,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1489,
+      "terminal_rate": 0.2553,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "tch": 2,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 13,
+        "k": 18,
+        "e": 18
+      }
+    },
+    {
+      "folio": "f55r",
+      "token_count": 124,
+      "paragraph_count": 13,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.016129032258064516,
+      "thermo_ke": 0.008064516129032258,
+      "thermo_kch": 0.016129032258064516,
+      "k_ratio": 0.5455,
+      "h_ratio": 0.1364,
+      "e_ratio": 0.3182,
+      "iteration_rate": 0.04,
+      "checkpoint_rate": 0.16,
+      "terminal_rate": 0.26,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "OIL",
+      "kernel_balance": "ENERGY_DOMINANT",
+      "raw_prep_counts": {
+        "tch": 2
+      },
+      "raw_thermo_counts": {
+        "kch": 2,
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "k": 24,
+        "e": 14,
+        "h": 6
+      }
+    },
+    {
+      "folio": "f55v",
+      "token_count": 104,
+      "paragraph_count": 12,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.019230769230769232,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.35,
+      "h_ratio": 0.125,
+      "e_ratio": 0.525,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1389,
+      "terminal_rate": 0.3889,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {},
+      "raw_thermo_counts": {
+        "ke": 2
+      },
+      "raw_kernel_dist": {
+        "h": 5,
+        "e": 21,
+        "k": 14
+      }
+    },
+    {
+      "folio": "f57r",
+      "token_count": 87,
+      "paragraph_count": 11,
+      "prep_te": 0.011494252873563218,
+      "prep_pch": 0.011494252873563218,
+      "prep_lch": 0.0,
+      "prep_tch": 0.022988505747126436,
+      "thermo_ke": 0.05747126436781609,
+      "thermo_kch": 0.022988505747126436,
+      "k_ratio": 0.2192,
+      "h_ratio": 0.2329,
+      "e_ratio": 0.5479,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0667,
+      "terminal_rate": 0.4,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "tch": 2,
+        "te": 1,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 2,
+        "ke": 5
+      },
+      "raw_kernel_dist": {
+        "e": 40,
+        "k": 16,
+        "h": 17
+      }
+    },
+    {
+      "folio": "f66r",
+      "token_count": 329,
+      "paragraph_count": 34,
+      "prep_te": 0.00911854103343465,
+      "prep_pch": 0.0060790273556231,
+      "prep_lch": 0.00911854103343465,
+      "prep_tch": 0.00303951367781155,
+      "thermo_ke": 0.0364741641337386,
+      "thermo_kch": 0.0060790273556231,
+      "k_ratio": 0.2877,
+      "h_ratio": 0.1651,
+      "e_ratio": 0.5472,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0294,
+      "terminal_rate": 0.3647,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 3,
+        "lch": 3,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 12,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 116,
+        "h": 35,
+        "k": 61
+      }
+    },
+    {
+      "folio": "f66v",
+      "token_count": 113,
+      "paragraph_count": 13,
+      "prep_te": 0.0,
+      "prep_pch": 0.008849557522123894,
+      "prep_lch": 0.0,
+      "prep_tch": 0.008849557522123894,
+      "thermo_ke": 0.035398230088495575,
+      "thermo_kch": 0.017699115044247787,
+      "k_ratio": 0.325,
+      "h_ratio": 0.15,
+      "e_ratio": 0.525,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0167,
+      "terminal_rate": 0.4667,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 1,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 4,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 42,
+        "h": 12,
+        "k": 26
+      }
+    },
+    {
+      "folio": "f75r",
+      "token_count": 412,
+      "paragraph_count": 46,
+      "prep_te": 0.0024271844660194173,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0048543689320388345,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.04611650485436893,
+      "thermo_kch": 0.007281553398058253,
+      "k_ratio": 0.4312,
+      "h_ratio": 0.0725,
+      "e_ratio": 0.4964,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1405,
+      "terminal_rate": 0.2054,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 2,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 19,
+        "kch": 3
+      },
+      "raw_kernel_dist": {
+        "e": 137,
+        "k": 119,
+        "h": 20
+      }
+    },
+    {
+      "folio": "f75v",
+      "token_count": 339,
+      "paragraph_count": 35,
+      "prep_te": 0.008849557522123894,
+      "prep_pch": 0.0058997050147492625,
+      "prep_lch": 0.008849557522123894,
+      "prep_tch": 0.0029498525073746312,
+      "thermo_ke": 0.02359882005899705,
+      "thermo_kch": 0.0058997050147492625,
+      "k_ratio": 0.4185,
+      "h_ratio": 0.1498,
+      "e_ratio": 0.4317,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.118,
+      "terminal_rate": 0.1925,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 3,
+        "lch": 3,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 2,
+        "ke": 8
+      },
+      "raw_kernel_dist": {
+        "e": 98,
+        "h": 34,
+        "k": 95
+      }
+    },
+    {
+      "folio": "f76r",
+      "token_count": 546,
+      "paragraph_count": 47,
+      "prep_te": 0.005494505494505495,
+      "prep_pch": 0.01282051282051282,
+      "prep_lch": 0.018315018315018316,
+      "prep_tch": 0.0018315018315018315,
+      "thermo_ke": 0.02564102564102564,
+      "thermo_kch": 0.005494505494505495,
+      "k_ratio": 0.2857,
+      "h_ratio": 0.1457,
+      "e_ratio": 0.5686,
+      "iteration_rate": 0.0044,
+      "checkpoint_rate": 0.1018,
+      "terminal_rate": 0.1239,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "tch": 1,
+        "pch": 7,
+        "lch": 10,
+        "te": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 14,
+        "kch": 3
+      },
+      "raw_kernel_dist": {
+        "k": 100,
+        "h": 51,
+        "e": 199
+      }
+    },
+    {
+      "folio": "f76v",
+      "token_count": 400,
+      "paragraph_count": 41,
+      "prep_te": 0.0175,
+      "prep_pch": 0.015,
+      "prep_lch": 0.0025,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.055,
+      "thermo_kch": 0.0025,
+      "k_ratio": 0.2492,
+      "h_ratio": 0.1199,
+      "e_ratio": 0.6309,
+      "iteration_rate": 0.0242,
+      "checkpoint_rate": 0.058,
+      "terminal_rate": 0.0918,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 6,
+        "te": 7,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 22,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 38,
+        "e": 200,
+        "k": 79
+      }
+    },
+    {
+      "folio": "f77r",
+      "token_count": 325,
+      "paragraph_count": 40,
+      "prep_te": 0.033846153846153845,
+      "prep_pch": 0.009230769230769232,
+      "prep_lch": 0.021538461538461538,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.06769230769230769,
+      "thermo_kch": 0.006153846153846154,
+      "k_ratio": 0.308,
+      "h_ratio": 0.1097,
+      "e_ratio": 0.5823,
+      "iteration_rate": 0.0107,
+      "checkpoint_rate": 0.2299,
+      "terminal_rate": 0.0695,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 3,
+        "lch": 7,
+        "te": 11
+      },
+      "raw_thermo_counts": {
+        "kch": 2,
+        "ke": 22
+      },
+      "raw_kernel_dist": {
+        "k": 73,
+        "h": 26,
+        "e": 138
+      }
+    },
+    {
+      "folio": "f77v",
+      "token_count": 331,
+      "paragraph_count": 37,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.006042296072507553,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.030211480362537766,
+      "thermo_kch": 0.006042296072507553,
+      "k_ratio": 0.3881,
+      "h_ratio": 0.0913,
+      "e_ratio": 0.5205,
+      "iteration_rate": 0.0121,
+      "checkpoint_rate": 0.1455,
+      "terminal_rate": 0.0909,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 10,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 114,
+        "h": 20,
+        "k": 85
+      }
+    },
+    {
+      "folio": "f78r",
+      "token_count": 294,
+      "paragraph_count": 41,
+      "prep_te": 0.006802721088435374,
+      "prep_pch": 0.006802721088435374,
+      "prep_lch": 0.0,
+      "prep_tch": 0.003401360544217687,
+      "thermo_ke": 0.03741496598639456,
+      "thermo_kch": 0.003401360544217687,
+      "k_ratio": 0.4255,
+      "h_ratio": 0.133,
+      "e_ratio": 0.4415,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1527,
+      "terminal_rate": 0.1603,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 2,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 11,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 83,
+        "h": 25,
+        "k": 80
+      }
+    },
+    {
+      "folio": "f78v",
+      "token_count": 292,
+      "paragraph_count": 32,
+      "prep_te": 0.003424657534246575,
+      "prep_pch": 0.010273972602739725,
+      "prep_lch": 0.003424657534246575,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.023972602739726026,
+      "thermo_kch": 0.003424657534246575,
+      "k_ratio": 0.3059,
+      "h_ratio": 0.1588,
+      "e_ratio": 0.5353,
+      "iteration_rate": 0.0177,
+      "checkpoint_rate": 0.0885,
+      "terminal_rate": 0.115,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 3,
+        "te": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 7,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 91,
+        "h": 27,
+        "k": 52
+      }
+    },
+    {
+      "folio": "f79r",
+      "token_count": 389,
+      "paragraph_count": 44,
+      "prep_te": 0.015424164524421594,
+      "prep_pch": 0.007712082262210797,
+      "prep_lch": 0.010282776349614395,
+      "prep_tch": 0.005141388174807198,
+      "thermo_ke": 0.012853470437017995,
+      "thermo_kch": 0.005141388174807198,
+      "k_ratio": 0.2924,
+      "h_ratio": 0.1737,
+      "e_ratio": 0.5339,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.125,
+      "terminal_rate": 0.1548,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 3,
+        "te": 6,
+        "lch": 4,
+        "tch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 5,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 126,
+        "k": 69,
+        "h": 41
+      }
+    },
+    {
+      "folio": "f79v",
+      "token_count": 354,
+      "paragraph_count": 42,
+      "prep_te": 0.00847457627118644,
+      "prep_pch": 0.005649717514124294,
+      "prep_lch": 0.002824858757062147,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.05649717514124294,
+      "thermo_kch": 0.002824858757062147,
+      "k_ratio": 0.3785,
+      "h_ratio": 0.1315,
+      "e_ratio": 0.49,
+      "iteration_rate": 0.0054,
+      "checkpoint_rate": 0.125,
+      "terminal_rate": 0.1522,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 3,
+        "lch": 1,
+        "pch": 2
+      },
+      "raw_thermo_counts": {
+        "kch": 1,
+        "ke": 20
+      },
+      "raw_kernel_dist": {
+        "h": 33,
+        "k": 95,
+        "e": 123
+      }
+    },
+    {
+      "folio": "f80r",
+      "token_count": 441,
+      "paragraph_count": 43,
+      "prep_te": 0.0022675736961451248,
+      "prep_pch": 0.013605442176870748,
+      "prep_lch": 0.011337868480725623,
+      "prep_tch": 0.0022675736961451248,
+      "thermo_ke": 0.022675736961451247,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.4583,
+      "h_ratio": 0.1007,
+      "e_ratio": 0.441,
+      "iteration_rate": 0.0077,
+      "checkpoint_rate": 0.1931,
+      "terminal_rate": 0.166,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 6,
+        "tch": 1,
+        "lch": 5,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 10
+      },
+      "raw_kernel_dist": {
+        "e": 127,
+        "k": 132,
+        "h": 29
+      }
+    },
+    {
+      "folio": "f80v",
+      "token_count": 378,
+      "paragraph_count": 44,
+      "prep_te": 0.010582010582010581,
+      "prep_pch": 0.0,
+      "prep_lch": 0.007936507936507936,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.013227513227513227,
+      "thermo_kch": 0.005291005291005291,
+      "k_ratio": 0.4348,
+      "h_ratio": 0.1256,
+      "e_ratio": 0.4396,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.2316,
+      "terminal_rate": 0.1582,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "lch": 3,
+        "te": 4
+      },
+      "raw_thermo_counts": {
+        "ke": 5,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 91,
+        "h": 26,
+        "k": 90
+      }
+    },
+    {
+      "folio": "f81r",
+      "token_count": 207,
+      "paragraph_count": 31,
+      "prep_te": 0.00966183574879227,
+      "prep_pch": 0.024154589371980676,
+      "prep_lch": 0.00966183574879227,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.01932367149758454,
+      "thermo_kch": 0.004830917874396135,
+      "k_ratio": 0.25,
+      "h_ratio": 0.1532,
+      "e_ratio": 0.5968,
+      "iteration_rate": 0.0119,
+      "checkpoint_rate": 0.0714,
+      "terminal_rate": 0.0952,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 2,
+        "pch": 5,
+        "te": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 4,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 19,
+        "k": 31,
+        "e": 74
+      }
+    },
+    {
+      "folio": "f81v",
+      "token_count": 258,
+      "paragraph_count": 27,
+      "prep_te": 0.007751937984496124,
+      "prep_pch": 0.003875968992248062,
+      "prep_lch": 0.003875968992248062,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.01937984496124031,
+      "thermo_kch": 0.007751937984496124,
+      "k_ratio": 0.3642,
+      "h_ratio": 0.1325,
+      "e_ratio": 0.5033,
+      "iteration_rate": 0.0095,
+      "checkpoint_rate": 0.0571,
+      "terminal_rate": 0.2381,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 2,
+        "pch": 1,
+        "lch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 5,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "e": 76,
+        "k": 55,
+        "h": 20
+      }
+    },
+    {
+      "folio": "f82r",
+      "token_count": 275,
+      "paragraph_count": 32,
+      "prep_te": 0.014545454545454545,
+      "prep_pch": 0.0036363636363636364,
+      "prep_lch": 0.01090909090909091,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.06181818181818182,
+      "thermo_kch": 0.0036363636363636364,
+      "k_ratio": 0.3363,
+      "h_ratio": 0.115,
+      "e_ratio": 0.5487,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1494,
+      "terminal_rate": 0.0909,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 3,
+        "te": 4,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 17,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 124,
+        "k": 76,
+        "h": 26
+      }
+    },
+    {
+      "folio": "f82v",
+      "token_count": 298,
+      "paragraph_count": 34,
+      "prep_te": 0.006711409395973154,
+      "prep_pch": 0.003355704697986577,
+      "prep_lch": 0.016778523489932886,
+      "prep_tch": 0.003355704697986577,
+      "thermo_ke": 0.040268456375838924,
+      "thermo_kch": 0.006711409395973154,
+      "k_ratio": 0.4395,
+      "h_ratio": 0.1345,
+      "e_ratio": 0.426,
+      "iteration_rate": 0.0058,
+      "checkpoint_rate": 0.1676,
+      "terminal_rate": 0.1214,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "te": 2,
+        "lch": 5,
+        "tch": 1,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 12,
+        "kch": 2
+      },
+      "raw_kernel_dist": {
+        "k": 98,
+        "h": 30,
+        "e": 95
+      }
+    },
+    {
+      "folio": "f83r",
+      "token_count": 340,
+      "paragraph_count": 44,
+      "prep_te": 0.014705882352941176,
+      "prep_pch": 0.0058823529411764705,
+      "prep_lch": 0.01764705882352941,
+      "prep_tch": 0.0058823529411764705,
+      "thermo_ke": 0.041176470588235294,
+      "thermo_kch": 0.01764705882352941,
+      "k_ratio": 0.3247,
+      "h_ratio": 0.1734,
+      "e_ratio": 0.5018,
+      "iteration_rate": 0.0106,
+      "checkpoint_rate": 0.0904,
+      "terminal_rate": 0.1915,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 5,
+        "lch": 6,
+        "tch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 14,
+        "kch": 6
+      },
+      "raw_kernel_dist": {
+        "e": 136,
+        "h": 47,
+        "k": 88
+      }
+    },
+    {
+      "folio": "f83v",
+      "token_count": 263,
+      "paragraph_count": 31,
+      "prep_te": 0.0076045627376425855,
+      "prep_pch": 0.015209125475285171,
+      "prep_lch": 0.015209125475285171,
+      "prep_tch": 0.0038022813688212928,
+      "thermo_ke": 0.06844106463878327,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.3535,
+      "h_ratio": 0.1349,
+      "e_ratio": 0.5116,
+      "iteration_rate": 0.0068,
+      "checkpoint_rate": 0.1293,
+      "terminal_rate": 0.1429,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 4,
+        "te": 2,
+        "tch": 1,
+        "lch": 4
+      },
+      "raw_thermo_counts": {
+        "ke": 18
+      },
+      "raw_kernel_dist": {
+        "k": 76,
+        "e": 110,
+        "h": 29
+      }
+    },
+    {
+      "folio": "f84r",
+      "token_count": 361,
+      "paragraph_count": 34,
+      "prep_te": 0.002770083102493075,
+      "prep_pch": 0.0,
+      "prep_lch": 0.008310249307479225,
+      "prep_tch": 0.00554016620498615,
+      "thermo_ke": 0.038781163434903045,
+      "thermo_kch": 0.002770083102493075,
+      "k_ratio": 0.3778,
+      "h_ratio": 0.1289,
+      "e_ratio": 0.4933,
+      "iteration_rate": 0.0118,
+      "checkpoint_rate": 0.0588,
+      "terminal_rate": 0.1059,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 3,
+        "tch": 2,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 14,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 111,
+        "k": 85,
+        "h": 29
+      }
+    },
+    {
+      "folio": "f84v",
+      "token_count": 347,
+      "paragraph_count": 39,
+      "prep_te": 0.002881844380403458,
+      "prep_pch": 0.002881844380403458,
+      "prep_lch": 0.008645533141210375,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.040345821325648415,
+      "thermo_kch": 0.002881844380403458,
+      "k_ratio": 0.3465,
+      "h_ratio": 0.114,
+      "e_ratio": 0.5395,
+      "iteration_rate": 0.0068,
+      "checkpoint_rate": 0.0473,
+      "terminal_rate": 0.1216,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "lch": 3,
+        "te": 1,
+        "pch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 14,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 123,
+        "h": 26,
+        "k": 79
+      }
+    },
+    {
+      "folio": "f85r1",
+      "token_count": 333,
+      "paragraph_count": 35,
+      "prep_te": 0.0,
+      "prep_pch": 0.018018018018018018,
+      "prep_lch": 0.0,
+      "prep_tch": 0.009009009009009009,
+      "thermo_ke": 0.02702702702702703,
+      "thermo_kch": 0.012012012012012012,
+      "k_ratio": 0.1979,
+      "h_ratio": 0.3102,
+      "e_ratio": 0.492,
+      "iteration_rate": 0.0109,
+      "checkpoint_rate": 0.0984,
+      "terminal_rate": 0.2951,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 6,
+        "tch": 3
+      },
+      "raw_thermo_counts": {
+        "kch": 4,
+        "ke": 9
+      },
+      "raw_kernel_dist": {
+        "h": 58,
+        "e": 92,
+        "k": 37
+      }
+    },
+    {
+      "folio": "f85r2",
+      "token_count": 155,
+      "paragraph_count": 22,
+      "prep_te": 0.012903225806451613,
+      "prep_pch": 0.012903225806451613,
+      "prep_lch": 0.0,
+      "prep_tch": 0.01935483870967742,
+      "thermo_ke": 0.0064516129032258064,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.2,
+      "h_ratio": 0.325,
+      "e_ratio": 0.475,
+      "iteration_rate": 0.0114,
+      "checkpoint_rate": 0.1705,
+      "terminal_rate": 0.1136,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2,
+        "te": 2,
+        "tch": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "h": 26,
+        "e": 38,
+        "k": 16
+      }
+    },
+    {
+      "folio": "f86v3",
+      "token_count": 277,
+      "paragraph_count": 16,
+      "prep_te": 0.0036101083032490976,
+      "prep_pch": 0.018050541516245487,
+      "prep_lch": 0.0,
+      "prep_tch": 0.010830324909747292,
+      "thermo_ke": 0.007220216606498195,
+      "thermo_kch": 0.01444043321299639,
+      "k_ratio": 0.1895,
+      "h_ratio": 0.2092,
+      "e_ratio": 0.6013,
+      "iteration_rate": 0.0074,
+      "checkpoint_rate": 0.1765,
+      "terminal_rate": 0.2206,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 5,
+        "tch": 3,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 2,
+        "kch": 4
+      },
+      "raw_kernel_dist": {
+        "e": 92,
+        "k": 29,
+        "h": 32
+      }
+    },
+    {
+      "folio": "f86v4",
+      "token_count": 188,
+      "paragraph_count": 5,
+      "prep_te": 0.010638297872340425,
+      "prep_pch": 0.026595744680851064,
+      "prep_lch": 0.0,
+      "prep_tch": 0.005319148936170213,
+      "thermo_ke": 0.015957446808510637,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.1146,
+      "h_ratio": 0.1771,
+      "e_ratio": 0.7083,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.0889,
+      "terminal_rate": 0.2,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 5,
+        "te": 2,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 3
+      },
+      "raw_kernel_dist": {
+        "e": 68,
+        "h": 17,
+        "k": 11
+      }
+    },
+    {
+      "folio": "f86v5",
+      "token_count": 381,
+      "paragraph_count": 39,
+      "prep_te": 0.007874015748031496,
+      "prep_pch": 0.013123359580052493,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.01837270341207349,
+      "thermo_kch": 0.0026246719160104987,
+      "k_ratio": 0.3359,
+      "h_ratio": 0.1562,
+      "e_ratio": 0.5078,
+      "iteration_rate": 0.0255,
+      "checkpoint_rate": 0.121,
+      "terminal_rate": 0.3185,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 5,
+        "te": 3
+      },
+      "raw_thermo_counts": {
+        "ke": 7,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "k": 43,
+        "e": 65,
+        "h": 20
+      }
+    },
+    {
+      "folio": "f86v6",
+      "token_count": 479,
+      "paragraph_count": 45,
+      "prep_te": 0.010438413361169102,
+      "prep_pch": 0.018789144050104383,
+      "prep_lch": 0.0,
+      "prep_tch": 0.006263048016701462,
+      "thermo_ke": 0.016701461377870562,
+      "thermo_kch": 0.014613778705636743,
+      "k_ratio": 0.4324,
+      "h_ratio": 0.2162,
+      "e_ratio": 0.3514,
+      "iteration_rate": 0.0388,
+      "checkpoint_rate": 0.1705,
+      "terminal_rate": 0.186,
+      "material_category": "ANIMAL",
+      "output_category": "OIL",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "tch": 3,
+        "pch": 9,
+        "te": 5
+      },
+      "raw_thermo_counts": {
+        "ke": 8,
+        "kch": 7
+      },
+      "raw_kernel_dist": {
+        "e": 78,
+        "h": 48,
+        "k": 96
+      }
+    },
+    {
+      "folio": "f94r",
+      "token_count": 82,
+      "paragraph_count": 9,
+      "prep_te": 0.0,
+      "prep_pch": 0.012195121951219513,
+      "prep_lch": 0.012195121951219513,
+      "prep_tch": 0.024390243902439025,
+      "thermo_ke": 0.024390243902439025,
+      "thermo_kch": 0.012195121951219513,
+      "k_ratio": 0.425,
+      "h_ratio": 0.175,
+      "e_ratio": 0.4,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.175,
+      "terminal_rate": 0.325,
+      "material_category": "ROOT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 1,
+        "lch": 1,
+        "tch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 2,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 16,
+        "h": 7,
+        "k": 17
+      }
+    },
+    {
+      "folio": "f94v",
+      "token_count": 101,
+      "paragraph_count": 12,
+      "prep_te": 0.0,
+      "prep_pch": 0.019801980198019802,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.009900990099009901,
+      "thermo_kch": 0.019801980198019802,
+      "k_ratio": 0.26,
+      "h_ratio": 0.22,
+      "e_ratio": 0.52,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1628,
+      "terminal_rate": 0.1395,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "pch": 2
+      },
+      "raw_thermo_counts": {
+        "kch": 2,
+        "ke": 1
+      },
+      "raw_kernel_dist": {
+        "e": 26,
+        "k": 13,
+        "h": 11
+      }
+    },
+    {
+      "folio": "f95r1",
+      "token_count": 103,
+      "paragraph_count": 11,
+      "prep_te": 0.0,
+      "prep_pch": 0.009708737864077669,
+      "prep_lch": 0.0,
+      "prep_tch": 0.019417475728155338,
+      "thermo_ke": 0.02912621359223301,
+      "thermo_kch": 0.009708737864077669,
+      "k_ratio": 0.4912,
+      "h_ratio": 0.1228,
+      "e_ratio": 0.386,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.3774,
+      "terminal_rate": 0.283,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 1,
+        "tch": 2
+      },
+      "raw_thermo_counts": {
+        "ke": 3,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "h": 7,
+        "e": 22,
+        "k": 28
+      }
+    },
+    {
+      "folio": "f95r2",
+      "token_count": 79,
+      "paragraph_count": 9,
+      "prep_te": 0.012658227848101266,
+      "prep_pch": 0.012658227848101266,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.012658227848101266,
+      "k_ratio": 0.4839,
+      "h_ratio": 0.2258,
+      "e_ratio": 0.2903,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.1429,
+      "terminal_rate": 0.2857,
+      "material_category": "ANIMAL",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "pch": 1,
+        "te": 1
+      },
+      "raw_thermo_counts": {
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 9,
+        "k": 15,
+        "h": 7
+      }
+    },
+    {
+      "folio": "f95v1",
+      "token_count": 117,
+      "paragraph_count": 13,
+      "prep_te": 0.008547008547008548,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.008547008547008548,
+      "thermo_ke": 0.008547008547008548,
+      "thermo_kch": 0.008547008547008548,
+      "k_ratio": 0.3281,
+      "h_ratio": 0.1875,
+      "e_ratio": 0.4844,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.2712,
+      "terminal_rate": 0.2203,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "raw_prep_counts": {
+        "te": 1,
+        "tch": 1
+      },
+      "raw_thermo_counts": {
+        "ke": 1,
+        "kch": 1
+      },
+      "raw_kernel_dist": {
+        "e": 31,
+        "h": 12,
+        "k": 21
+      }
+    },
+    {
+      "folio": "f95v2",
+      "token_count": 64,
+      "paragraph_count": 7,
+      "prep_te": 0.015625,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.015625,
+      "thermo_ke": 0.0,
+      "thermo_kch": 0.0,
+      "k_ratio": 0.4706,
+      "h_ratio": 0.1176,
+      "e_ratio": 0.4118,
+      "iteration_rate": 0.0,
+      "checkpoint_rate": 0.3333,
+      "terminal_rate": 0.3667,
+      "material_category": "DELICATE_PLANT",
+      "output_category": "WATER",
+      "kernel_balance": "BALANCED",
+      "raw_prep_counts": {
+        "te": 1,
+        "tch": 1
+      },
+      "raw_thermo_counts": {},
+      "raw_kernel_dist": {
+        "h": 2,
+        "e": 7,
+        "k": 8
+      }
+    }
+  ]
+}

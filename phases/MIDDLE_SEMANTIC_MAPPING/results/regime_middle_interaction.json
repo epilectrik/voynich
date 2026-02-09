@@ -1,0 +1,1513 @@
+{
+  "parameters": {
+    "min_count": 50,
+    "total_folios": 82,
+    "total_middles": 53
+  },
+  "regime_distribution": {
+    "REGIME_2": 41,
+    "REGIME_3": 13,
+    "REGIME_1": 26,
+    "REGIME_4": 2
+  },
+  "regime_tokens": {
+    "REGIME_2": 13960,
+    "REGIME_3": 3500,
+    "REGIME_1": 5342,
+    "REGIME_4": 294
+  },
+  "summary": {
+    "regime_specific_count": 12,
+    "regime_specific_pct": 66.66666666666667
+  },
+  "chi_results": [
+    {
+      "middle": "k",
+      "chi2": 187.266004795106,
+      "p": 2.377793326491019e-40,
+      "total": 2081
+    },
+    {
+      "middle": "dy",
+      "chi2": 68.38509183499647,
+      "p": 9.462452411953521e-15,
+      "total": 594
+    },
+    {
+      "middle": "eey",
+      "chi2": 53.70271128440664,
+      "p": 1.2984192272836298e-11,
+      "total": 615
+    },
+    {
+      "middle": "e",
+      "chi2": 47.35258031309714,
+      "p": 2.924333604566738e-10,
+      "total": 845
+    },
+    {
+      "middle": "l",
+      "chi2": 32.691463490010726,
+      "p": 3.7412677499692387e-07,
+      "total": 853
+    },
+    {
+      "middle": "ol",
+      "chi2": 27.131884562640437,
+      "p": 5.52419920460365e-06,
+      "total": 759
+    },
+    {
+      "middle": "y",
+      "chi2": 23.57221809111318,
+      "p": 3.0681131423967046e-05,
+      "total": 458
+    },
+    {
+      "middle": "t",
+      "chi2": 23.00327458681168,
+      "p": 4.031960227607545e-05,
+      "total": 574
+    },
+    {
+      "middle": "r",
+      "chi2": 22.599822561144503,
+      "p": 4.893074778326034e-05,
+      "total": 749
+    },
+    {
+      "middle": "iin",
+      "chi2": 16.843661140742945,
+      "p": 0.0007610385339181667,
+      "total": 560
+    },
+    {
+      "middle": "ain",
+      "chi2": 16.472805053202876,
+      "p": 0.0009069823481070511,
+      "total": 419
+    },
+    {
+      "middle": "or",
+      "chi2": 11.671027800670222,
+      "p": 0.008599393863455373,
+      "total": 436
+    },
+    {
+      "middle": "ke",
+      "chi2": 7.187657438869765,
+      "p": 0.06615102539177556,
+      "total": 421
+    },
+    {
+      "middle": "ey",
+      "chi2": 6.025078310640716,
+      "p": 0.11039646505952372,
+      "total": 769
+    },
+    {
+      "middle": "al",
+      "chi2": 4.829261783527922,
+      "p": 0.1847349451956955,
+      "total": 520
+    },
+    {
+      "middle": "edy",
+      "chi2": 4.375490118376738,
+      "p": 0.22366881126944266,
+      "total": 1763
+    },
+    {
+      "middle": "aiin",
+      "chi2": 4.31713970245573,
+      "p": 0.22919253342300516,
+      "total": 831
+    },
+    {
+      "middle": "ar",
+      "chi2": 2.448887742192194,
+      "p": 0.4845990669780986,
+      "total": 670
+    }
+  ],
+  "enrichment_matrix": [
+    {
+      "middle": "k",
+      "total": 2081,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 715,
+          "expected": 481.32585729130585,
+          "ratio": 1.4854801361051146
+        },
+        "REGIME_2": {
+          "observed": 1177,
+          "expected": 1257.8264634568757,
+          "ratio": 0.9357411647750351
+        },
+        "REGIME_3": {
+          "observed": 177,
+          "expected": 315.35763768617943,
+          "ratio": 0.561267522482323
+        },
+        "REGIME_4": {
+          "observed": 12,
+          "expected": 26.49004156563907,
+          "ratio": 0.4530004216967902
+        }
+      }
+    },
+    {
+      "middle": "edy",
+      "total": 1763,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 393,
+          "expected": 407.77390024246625,
+          "ratio": 0.9637693824109842
+        },
+        "REGIME_2": {
+          "observed": 1105,
+          "expected": 1065.6165569795635,
+          "ratio": 1.0369583625202548
+        },
+        "REGIME_3": {
+          "observed": 242,
+          "expected": 267.1674748874264,
+          "ratio": 0.9057988817761932
+        },
+        "REGIME_4": {
+          "observed": 23,
+          "expected": 22.442067890543818,
+          "ratio": 1.024860993745201
+        }
+      }
+    },
+    {
+      "middle": "l",
+      "total": 853,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 247,
+          "expected": 197.2950294423277,
+          "ratio": 1.2519321986882685
+        },
+        "REGIME_2": {
+          "observed": 519,
+          "expected": 515.5819189470038,
+          "ratio": 1.0066295595857533
+        },
+        "REGIME_3": {
+          "observed": 80,
+          "expected": 129.2648077589193,
+          "ratio": 0.6188846089432256
+        },
+        "REGIME_4": {
+          "observed": 7,
+          "expected": 10.85824385174922,
+          "ratio": 0.6446714676491934
+        }
+      }
+    },
+    {
+      "middle": "e",
+      "total": 845,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 123,
+          "expected": 195.4446657429858,
+          "ratio": 0.6293341367614904
+        },
+        "REGIME_2": {
+          "observed": 558,
+          "expected": 510.7464496016626,
+          "ratio": 1.0925186076872213
+        },
+        "REGIME_3": {
+          "observed": 162,
+          "expected": 128.05247661932802,
+          "ratio": 1.265106339814032
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 10.756408036023554,
+          "ratio": 0.18593567604556616
+        }
+      }
+    },
+    {
+      "middle": "aiin",
+      "total": 831,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 190,
+          "expected": 192.20652926913752,
+          "ratio": 0.9885200087763522
+        },
+        "REGIME_2": {
+          "observed": 487,
+          "expected": 502.28437824731554,
+          "ratio": 0.969570269534065
+        },
+        "REGIME_3": {
+          "observed": 146,
+          "expected": 125.9308971250433,
+          "ratio": 1.1593659962179816
+        },
+        "REGIME_4": {
+          "observed": 8,
+          "expected": 10.578195358503637,
+          "ratio": 0.7562726655042282
+        }
+      }
+    },
+    {
+      "middle": "ey",
+      "total": 769,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 170,
+          "expected": 177.86621059923797,
+          "ratio": 0.9557745646419497
+        },
+        "REGIME_2": {
+          "observed": 484,
+          "expected": 464.8094908209214,
+          "ratio": 1.0412868273089377
+        },
+        "REGIME_3": {
+          "observed": 112,
+          "expected": 116.53533079321095,
+          "ratio": 0.9610819245773732
+        },
+        "REGIME_4": {
+          "observed": 3,
+          "expected": 9.78896778662972,
+          "ratio": 0.3064674504392134
+        }
+      }
+    },
+    {
+      "middle": "ol",
+      "total": 759,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 219,
+          "expected": 175.5532559750606,
+          "ratio": 1.247484695078008
+        },
+        "REGIME_2": {
+          "observed": 460,
+          "expected": 458.7651541392449,
+          "ratio": 1.0026916731787792
+        },
+        "REGIME_3": {
+          "observed": 72,
+          "expected": 115.01991686872185,
+          "ratio": 0.6259785431959345
+        },
+        "REGIME_4": {
+          "observed": 8,
+          "expected": 9.661673016972635,
+          "ratio": 0.8280139460263685
+        }
+      }
+    },
+    {
+      "middle": "r",
+      "total": 749,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 223,
+          "expected": 173.24030135088327,
+          "ratio": 1.2872293471040133
+        },
+        "REGIME_2": {
+          "observed": 419,
+          "expected": 452.7208174575684,
+          "ratio": 0.9255152046090107
+        },
+        "REGIME_3": {
+          "observed": 93,
+          "expected": 113.50450294423277,
+          "ratio": 0.8193507533854664
+        },
+        "REGIME_4": {
+          "observed": 14,
+          "expected": 9.534378247315553,
+          "ratio": 1.4683705257804056
+        }
+      }
+    },
+    {
+      "middle": "ar",
+      "total": 670,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 157,
+          "expected": 154.96795981988222,
+          "ratio": 1.0131126471722258
+        },
+        "REGIME_2": {
+          "observed": 413,
+          "expected": 404.9705576723242,
+          "ratio": 1.0198272249069837
+        },
+        "REGIME_3": {
+          "observed": 89,
+          "expected": 101.53273294076897,
+          "ratio": 0.87656460554371
+        },
+        "REGIME_4": {
+          "observed": 11,
+          "expected": 8.528749567024594,
+          "ratio": 1.2897553051071173
+        }
+      }
+    },
+    {
+      "middle": "eey",
+      "total": 615,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 81,
+          "expected": 142.24670938690682,
+          "ratio": 0.5694332076229786
+        },
+        "REGIME_2": {
+          "observed": 397,
+          "expected": 371.72670592310357,
+          "ratio": 1.0679889114077388
+        },
+        "REGIME_3": {
+          "observed": 136,
+          "expected": 93.19795635607898,
+          "ratio": 1.4592594657375144
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 7.8286283339106335,
+          "ratio": 0.12773629777114098
+        }
+      }
+    },
+    {
+      "middle": "dy",
+      "total": 594,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 215,
+          "expected": 137.3895046761344,
+          "ratio": 1.5648939160732496
+        },
+        "REGIME_2": {
+          "observed": 300,
+          "expected": 359.033598891583,
+          "ratio": 0.8355763943156492
+        },
+        "REGIME_3": {
+          "observed": 64,
+          "expected": 90.0155871146519,
+          "ratio": 0.710987974987975
+        },
+        "REGIME_4": {
+          "observed": 15,
+          "expected": 7.561309317630759,
+          "ratio": 1.983783412354841
+        }
+      }
+    },
+    {
+      "middle": "t",
+      "total": 574,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 115,
+          "expected": 132.7635954277797,
+          "ratio": 0.8662013078920969
+        },
+        "REGIME_2": {
+          "observed": 392,
+          "expected": 346.94492552823,
+          "ratio": 1.1298623244112098
+        },
+        "REGIME_3": {
+          "observed": 55,
+          "expected": 86.98475926567372,
+          "ratio": 0.6322946739671478
+        },
+        "REGIME_4": {
+          "observed": 12,
+          "expected": 7.306719778316592,
+          "ratio": 1.6423238284860981
+        }
+      }
+    },
+    {
+      "middle": "iin",
+      "total": 560,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 141,
+          "expected": 129.5254589539314,
+          "ratio": 1.0885890784617853
+        },
+        "REGIME_2": {
+          "observed": 296,
+          "expected": 338.4828541738829,
+          "ratio": 0.8744903806794925
+        },
+        "REGIME_3": {
+          "observed": 114,
+          "expected": 84.86317977138899,
+          "ratio": 1.343338775510204
+        },
+        "REGIME_4": {
+          "observed": 9,
+          "expected": 7.128507100796675,
+          "ratio": 1.262536443148688
+        }
+      }
+    },
+    {
+      "middle": "al",
+      "total": 520,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 110,
+          "expected": 120.27364045722203,
+          "ratio": 0.9145811133830603
+        },
+        "REGIME_2": {
+          "observed": 323,
+          "expected": 314.305507447177,
+          "ratio": 1.0276625523473661
+        },
+        "REGIME_3": {
+          "observed": 85,
+          "expected": 78.80152407343263,
+          "ratio": 1.0786593406593405
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 6.619328022168341,
+          "ratio": 0.302145473574045
+        }
+      }
+    },
+    {
+      "middle": "y",
+      "total": 458,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 127,
+          "expected": 105.93332178732248,
+          "ratio": 1.198867342751435
+        },
+        "REGIME_2": {
+          "observed": 264,
+          "expected": 276.8306200207828,
+          "ratio": 0.9536517310844459
+        },
+        "REGIME_3": {
+          "observed": 52,
+          "expected": 69.40595774160028,
+          "ratio": 0.7492152214597629
+        },
+        "REGIME_4": {
+          "observed": 15,
+          "expected": 5.830100450294423,
+          "ratio": 2.572854469298637
+        }
+      }
+    },
+    {
+      "middle": "or",
+      "total": 436,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 130,
+          "expected": 100.84482161413231,
+          "ratio": 1.2891093257859647
+        },
+        "REGIME_2": {
+          "observed": 238,
+          "expected": 263.5330793210946,
+          "ratio": 0.9031124313240976
+        },
+        "REGIME_3": {
+          "observed": 61,
+          "expected": 66.07204710772429,
+          "ratio": 0.9232346002621231
+        },
+        "REGIME_4": {
+          "observed": 7,
+          "expected": 5.55005195704884,
+          "ratio": 1.2612494539100043
+        }
+      }
+    },
+    {
+      "middle": "ke",
+      "total": 421,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 93,
+          "expected": 97.3753896778663,
+          "ratio": 0.955066781325951
+        },
+        "REGIME_2": {
+          "observed": 254,
+          "expected": 254.46657429857984,
+          "ratio": 0.9981664613520816
+        },
+        "REGIME_3": {
+          "observed": 74,
+          "expected": 63.798926220990644,
+          "ratio": 1.1598941296233458
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 5.359109802563214,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "ain",
+      "total": 419,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 96,
+          "expected": 96.91279875303083,
+          "ratio": 0.9905812362786367
+        },
+        "REGIME_2": {
+          "observed": 283,
+          "expected": 253.25770696224455,
+          "ratio": 1.1174388467561598
+        },
+        "REGIME_3": {
+          "observed": 39,
+          "expected": 63.49584343609283,
+          "ratio": 0.6142134333446982
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 5.333650848631797,
+          "ratio": 0.18748883801730717
+        }
+      }
+    },
+    {
+      "middle": "ed",
+      "total": 377,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 33,
+          "expected": 87.19838933148597,
+          "ratio": 0.37844735726195594
+        },
+        "REGIME_2": {
+          "observed": 227,
+          "expected": 227.87149289920333,
+          "ratio": 0.9961755071329224
+        },
+        "REGIME_3": {
+          "observed": 115,
+          "expected": 57.131104953238655,
+          "ratio": 2.012913982569155
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 4.7990128160720475,
+          "ratio": 0.4167523773435103
+        }
+      }
+    },
+    {
+      "middle": "o",
+      "total": 376,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 79,
+          "expected": 86.96709386906824,
+          "ratio": 0.9083895584568693
+        },
+        "REGIME_2": {
+          "observed": 223,
+          "expected": 227.2670592310357,
+          "ratio": 0.9812244711333292
+        },
+        "REGIME_3": {
+          "observed": 67,
+          "expected": 56.97956356078975,
+          "ratio": 1.1758601823708206
+        },
+        "REGIME_4": {
+          "observed": 7,
+          "expected": 4.786283339106339,
+          "ratio": 1.4625126646403241
+        }
+      }
+    },
+    {
+      "middle": "ch",
+      "total": 351,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 63,
+          "expected": 81.18470730862487,
+          "ratio": 0.77600821741593
+        },
+        "REGIME_2": {
+          "observed": 236,
+          "expected": 212.15621752684447,
+          "ratio": 1.1123878562273979
+        },
+        "REGIME_3": {
+          "observed": 46,
+          "expected": 53.191028749567025,
+          "ratio": 0.8648074888074888
+        },
+        "REGIME_4": {
+          "observed": 6,
+          "expected": 4.46804641496363,
+          "ratio": 1.3428687714402001
+        }
+      }
+    },
+    {
+      "middle": "eo",
+      "total": 340,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 25,
+          "expected": 78.6404572220298,
+          "ratio": 0.3179025260422402
+        },
+        "REGIME_2": {
+          "observed": 227,
+          "expected": 205.50744717700036,
+          "ratio": 1.1045828417326815
+        },
+        "REGIME_3": {
+          "observed": 82,
+          "expected": 51.524073432629024,
+          "ratio": 1.5914890756302522
+        },
+        "REGIME_4": {
+          "observed": 6,
+          "expected": 4.328022168340838,
+          "ratio": 1.3863145258103242
+        }
+      }
+    },
+    {
+      "middle": "d",
+      "total": 312,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 77,
+          "expected": 72.16418427433322,
+          "ratio": 1.0670112989469036
+        },
+        "REGIME_2": {
+          "observed": 169,
+          "expected": 188.5833044683062,
+          "ratio": 0.8961556829035339
+        },
+        "REGIME_3": {
+          "observed": 56,
+          "expected": 47.280914444059576,
+          "ratio": 1.1844102564102565
+        },
+        "REGIME_4": {
+          "observed": 10,
+          "expected": 3.9715968133010047,
+          "ratio": 2.517878946450375
+        }
+      }
+    },
+    {
+      "middle": "eol",
+      "total": 281,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 49,
+          "expected": 64.99402493938344,
+          "ratio": 0.7539154567777541
+        },
+        "REGIME_2": {
+          "observed": 192,
+          "expected": 169.8458607551091,
+          "ratio": 1.1304367333204173
+        },
+        "REGIME_3": {
+          "observed": 38,
+          "expected": 42.5831312781434,
+          "ratio": 0.8923721403152008
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 3.576983027364046,
+          "ratio": 0.5591304137313288
+        }
+      }
+    },
+    {
+      "middle": "in",
+      "total": 264,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 65,
+          "expected": 61.06200207828196,
+          "ratio": 1.0644917917475012
+        },
+        "REGIME_2": {
+          "observed": 164,
+          "expected": 159.5704883962591,
+          "ratio": 1.0277589650082486
+        },
+        "REGIME_3": {
+          "observed": 34,
+          "expected": 40.00692760651195,
+          "ratio": 0.8498528138528139
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 3.3605819189470036,
+          "ratio": 0.29756751185322616
+        }
+      }
+    },
+    {
+      "middle": "ck",
+      "total": 196,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 61,
+          "expected": 45.333910633875995,
+          "ratio": 1.345571100023686
+        },
+        "REGIME_2": {
+          "observed": 117,
+          "expected": 118.46899896085903,
+          "ratio": 0.98760014034267
+        },
+        "REGIME_3": {
+          "observed": 15,
+          "expected": 29.702112919986146,
+          "ratio": 0.5050145772594752
+        },
+        "REGIME_4": {
+          "observed": 3,
+          "expected": 2.4949774852788362,
+          "ratio": 1.2024156601416076
+        }
+      }
+    },
+    {
+      "middle": "ai",
+      "total": 174,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 32,
+          "expected": 40.24541046068583,
+          "ratio": 0.7951217203079479
+        },
+        "REGIME_2": {
+          "observed": 91,
+          "expected": 105.17145826117077,
+          "ratio": 0.865253762803412
+        },
+        "REGIME_3": {
+          "observed": 49,
+          "expected": 26.368202286110147,
+          "ratio": 1.8582988505747127
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 2.2149289920332524,
+          "ratio": 0.9029634842442724
+        }
+      }
+    },
+    {
+      "middle": "od",
+      "total": 173,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 32,
+          "expected": 40.0141149982681,
+          "ratio": 0.7997177996160862
+        },
+        "REGIME_2": {
+          "observed": 96,
+          "expected": 104.56702459300311,
+          "ratio": 0.9180714510492407
+        },
+        "REGIME_3": {
+          "observed": 41,
+          "expected": 26.21666089366124,
+          "ratio": 1.5638909991742362
+        },
+        "REGIME_4": {
+          "observed": 4,
+          "expected": 2.202199515067544,
+          "ratio": 1.8163658526994615
+        }
+      }
+    },
+    {
+      "middle": "am",
+      "total": 172,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 29,
+          "expected": 39.782819535850365,
+          "ratio": 0.7289578852968577
+        },
+        "REGIME_2": {
+          "observed": 102,
+          "expected": 103.96259092483547,
+          "ratio": 0.9811221429999334
+        },
+        "REGIME_3": {
+          "observed": 37,
+          "expected": 26.06511950121233,
+          "ratio": 1.4195215946843855
+        },
+        "REGIME_4": {
+          "observed": 4,
+          "expected": 2.189470038101836,
+          "ratio": 1.826926119284923
+        }
+      }
+    },
+    {
+      "middle": "ek",
+      "total": 166,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 69,
+          "expected": 38.395046761343956,
+          "ratio": 1.7971068098676999
+        },
+        "REGIME_2": {
+          "observed": 71,
+          "expected": 100.33598891582957,
+          "ratio": 0.7076224669451445
+        },
+        "REGIME_3": {
+          "observed": 18,
+          "expected": 25.155871146518876,
+          "ratio": 0.7155387263339071
+        },
+        "REGIME_4": {
+          "observed": 8,
+          "expected": 2.1130931763075855,
+          "ratio": 3.7859191869518893
+        }
+      }
+    },
+    {
+      "middle": "kch",
+      "total": 148,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 38,
+          "expected": 34.231728437824735,
+          "ratio": 1.1100812530988493
+        },
+        "REGIME_2": {
+          "observed": 93,
+          "expected": 89.45618288881191,
+          "ratio": 1.039615116549214
+        },
+        "REGIME_3": {
+          "observed": 15,
+          "expected": 22.428126082438517,
+          "ratio": 0.6688030888030888
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 1.8839625909248354,
+          "ratio": 1.0615922044493473
+        }
+      }
+    },
+    {
+      "middle": "ee",
+      "total": 146,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 24,
+          "expected": 33.76913751298926,
+          "ratio": 0.7107081130149808
+        },
+        "REGIME_2": {
+          "observed": 87,
+          "expected": 88.24731555247662,
+          "ratio": 0.9858656827726969
+        },
+        "REGIME_3": {
+          "observed": 35,
+          "expected": 22.1250432975407,
+          "ratio": 1.581917808219178
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 1.8585036369934187,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "s",
+      "total": 142,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 42,
+          "expected": 32.843955663318326,
+          "ratio": 1.278774104755828
+        },
+        "REGIME_2": {
+          "observed": 75,
+          "expected": 85.82958087980603,
+          "ratio": 0.8738246095484079
+        },
+        "REGIME_3": {
+          "observed": 21,
+          "expected": 21.518877727745064,
+          "ratio": 0.975887323943662
+        },
+        "REGIME_4": {
+          "observed": 4,
+          "expected": 1.8075857291305855,
+          "ratio": 2.212896426176104
+        }
+      }
+    },
+    {
+      "middle": "i",
+      "total": 137,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 18,
+          "expected": 31.68747835122965,
+          "ratio": 0.5680477253659882
+        },
+        "REGIME_2": {
+          "observed": 77,
+          "expected": 82.80741253896778,
+          "ratio": 0.9298684458201745
+        },
+        "REGIME_3": {
+          "observed": 39,
+          "expected": 20.76117076550052,
+          "ratio": 1.8785067778936393
+        },
+        "REGIME_4": {
+          "observed": 3,
+          "expected": 1.7439383443020438,
+          "ratio": 1.7202443021004021
+        }
+      }
+    },
+    {
+      "middle": "eeo",
+      "total": 130,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 5,
+          "expected": 30.068410114305507,
+          "ratio": 0.1662874751605564
+        },
+        "REGIME_2": {
+          "observed": 88,
+          "expected": 78.57637686179424,
+          "ratio": 1.1199294688119903
+        },
+        "REGIME_3": {
+          "observed": 37,
+          "expected": 19.700381018358158,
+          "ratio": 1.8781362637362637
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 1.6548320055420853,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "ckh",
+      "total": 127,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 26,
+          "expected": 29.374523727052303,
+          "ratio": 0.8851207339254813
+        },
+        "REGIME_2": {
+          "observed": 82,
+          "expected": 76.76307585729131,
+          "ratio": 1.068221916386526
+        },
+        "REGIME_3": {
+          "observed": 19,
+          "expected": 19.24575684101143,
+          "ratio": 0.987230596175478
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 1.6166435746449601,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "sh",
+      "total": 109,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 23,
+          "expected": 25.21120540353308,
+          "ratio": 0.9122927536331443
+        },
+        "REGIME_2": {
+          "observed": 74,
+          "expected": 65.88326983027365,
+          "ratio": 1.1231986540837515
+        },
+        "REGIME_3": {
+          "observed": 11,
+          "expected": 16.518011776931072,
+          "ratio": 0.6659397116644823
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 1.38751298926221,
+          "ratio": 0.7207139736628596
+        }
+      }
+    },
+    {
+      "middle": "opch",
+      "total": 107,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 22,
+          "expected": 24.74861447869761,
+          "ratio": 0.8889386522601707
+        },
+        "REGIME_2": {
+          "observed": 70,
+          "expected": 64.67440249393835,
+          "ratio": 1.082344750020084
+        },
+        "REGIME_3": {
+          "observed": 13,
+          "expected": 16.214928992033254,
+          "ratio": 0.8017303070761014
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 1.3620540353307933,
+          "ratio": 1.4683705257804056
+        }
+      }
+    },
+    {
+      "middle": "ct",
+      "total": 91,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 15,
+          "expected": 21.047887080013854,
+          "ratio": 0.7126606078309561
+        },
+        "REGIME_2": {
+          "observed": 71,
+          "expected": 55.003463803255976,
+          "ratio": 1.2908277968449888
+        },
+        "REGIME_3": {
+          "observed": 4,
+          "expected": 13.79026671285071,
+          "ratio": 0.2900596546310832
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 1.1583824038794597,
+          "ratio": 0.8632727816401286
+        }
+      }
+    },
+    {
+      "middle": "eck",
+      "total": 88,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 32,
+          "expected": 20.35400069276065,
+          "ratio": 1.5721724924270788
+        },
+        "REGIME_2": {
+          "observed": 46,
+          "expected": 53.19016279875303,
+          "ratio": 0.8648215681166971
+        },
+        "REGIME_3": {
+          "observed": 8,
+          "expected": 13.335642535503982,
+          "ratio": 0.5998961038961039
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 1.1201939729823347,
+          "ratio": 1.7854050711193568
+        }
+      }
+    },
+    {
+      "middle": "te",
+      "total": 87,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 12,
+          "expected": 20.122705230342916,
+          "ratio": 0.5963412902309609
+        },
+        "REGIME_2": {
+          "observed": 63,
+          "expected": 52.585729130585385,
+          "ratio": 1.198043671573955
+        },
+        "REGIME_3": {
+          "observed": 11,
+          "expected": 13.184101143055074,
+          "ratio": 0.8343382594417078
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 1.1074644960166262,
+          "ratio": 0.9029634842442724
+        }
+      }
+    },
+    {
+      "middle": "eed",
+      "total": 84,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 5,
+          "expected": 19.42881884308971,
+          "ratio": 0.25734966393895636
+        },
+        "REGIME_2": {
+          "observed": 48,
+          "expected": 50.77242812608244,
+          "ratio": 0.9453950061399918
+        },
+        "REGIME_3": {
+          "observed": 30,
+          "expected": 12.729476965708347,
+          "ratio": 2.3567346938775513
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 1.0692760651195012,
+          "ratio": 0.9352121801101393
+        }
+      }
+    },
+    {
+      "middle": "eod",
+      "total": 80,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 5,
+          "expected": 18.503636993418773,
+          "ratio": 0.27021714713590417
+        },
+        "REGIME_2": {
+          "observed": 50,
+          "expected": 48.35469345341185,
+          "ratio": 1.034025787965616
+        },
+        "REGIME_3": {
+          "observed": 25,
+          "expected": 12.123311395912712,
+          "ratio": 2.0621428571428573
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 1.0183581572566678,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "pch",
+      "total": 79,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 10,
+          "expected": 18.27234153100104,
+          "ratio": 0.5472752347056287
+        },
+        "REGIME_2": {
+          "observed": 52,
+          "expected": 47.7502597852442,
+          "ratio": 1.0889993108701173
+        },
+        "REGIME_3": {
+          "observed": 17,
+          "expected": 11.971770003463803,
+          "ratio": 1.420007233273056
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 1.0056286802909595,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "m",
+      "total": 76,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 17,
+          "expected": 17.578455143747835,
+          "ratio": 0.9670929476442885
+        },
+        "REGIME_2": {
+          "observed": 36,
+          "expected": 45.93695878074126,
+          "ratio": 0.7836827024581511
+        },
+        "REGIME_3": {
+          "observed": 16,
+          "expected": 11.517145826117076,
+          "ratio": 1.389233082706767
+        },
+        "REGIME_4": {
+          "observed": 7,
+          "expected": 0.9674402493938344,
+          "ratio": 7.235588972431078
+        }
+      }
+    },
+    {
+      "middle": "lch",
+      "total": 74,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 18,
+          "expected": 17.115864218912368,
+          "ratio": 1.0516559239883836
+        },
+        "REGIME_2": {
+          "observed": 53,
+          "expected": 44.728091444405955,
+          "ratio": 1.18493765972276
+        },
+        "REGIME_3": {
+          "observed": 2,
+          "expected": 11.214063041219259,
+          "ratio": 0.17834749034749034
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 0.9419812954624177,
+          "ratio": 1.0615922044493473
+        }
+      }
+    },
+    {
+      "middle": "ok",
+      "total": 70,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 13,
+          "expected": 16.190682369241426,
+          "ratio": 0.8029309514895439
+        },
+        "REGIME_2": {
+          "observed": 50,
+          "expected": 42.310356771735364,
+          "ratio": 1.1817437576749898
+        },
+        "REGIME_3": {
+          "observed": 6,
+          "expected": 10.607897471423623,
+          "ratio": 0.5656163265306122
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 0.8910633875995844,
+          "ratio": 1.1222546161321671
+        }
+      }
+    },
+    {
+      "middle": "tch",
+      "total": 65,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 11,
+          "expected": 15.034205057152754,
+          "ratio": 0.7316648907064481
+        },
+        "REGIME_2": {
+          "observed": 43,
+          "expected": 39.28818843089712,
+          "ratio": 1.0944765263389906
+        },
+        "REGIME_3": {
+          "observed": 10,
+          "expected": 9.850190509179079,
+          "ratio": 1.0152087912087913
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 0.8274160027710427,
+          "ratio": 1.20858189429618
+        }
+      }
+    },
+    {
+      "middle": "a",
+      "total": 63,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 20,
+          "expected": 14.571614132317285,
+          "ratio": 1.3725315410077672
+        },
+        "REGIME_2": {
+          "observed": 35,
+          "expected": 38.07932109456183,
+          "ratio": 0.9191340337472144
+        },
+        "REGIME_3": {
+          "observed": 6,
+          "expected": 9.547107724281261,
+          "ratio": 0.6284625850340135
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 0.8019570488396259,
+          "ratio": 2.4938991469603713
+        }
+      }
+    },
+    {
+      "middle": "et",
+      "total": 58,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 12,
+          "expected": 13.41513682022861,
+          "ratio": 0.8945119353464414
+        },
+        "REGIME_2": {
+          "observed": 40,
+          "expected": 35.057152753723585,
+          "ratio": 1.1409939729275764
+        },
+        "REGIME_3": {
+          "observed": 4,
+          "expected": 8.789400762036717,
+          "ratio": 0.45509359605911326
+        },
+        "REGIME_4": {
+          "observed": 2,
+          "expected": 0.7383096640110842,
+          "ratio": 2.7088904527328173
+        }
+      }
+    },
+    {
+      "middle": "lk",
+      "total": 58,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 23,
+          "expected": 13.41513682022861,
+          "ratio": 1.7144812094140125
+        },
+        "REGIME_2": {
+          "observed": 30,
+          "expected": 35.057152753723585,
+          "ratio": 0.8557454796956824
+        },
+        "REGIME_3": {
+          "observed": 5,
+          "expected": 8.789400762036717,
+          "ratio": 0.5688669950738916
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 0.7383096640110842,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "eek",
+      "total": 54,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 19,
+          "expected": 12.489954970557672,
+          "ratio": 1.5212224579502753
+        },
+        "REGIME_2": {
+          "observed": 28,
+          "expected": 32.639418081052995,
+          "ratio": 0.8578584314974
+        },
+        "REGIME_3": {
+          "observed": 7,
+          "expected": 8.183235192241082,
+          "ratio": 0.8554074074074073
+        },
+        "REGIME_4": {
+          "observed": 0,
+          "expected": 0.6873917561482508,
+          "ratio": 0.0
+        }
+      }
+    },
+    {
+      "middle": "c",
+      "total": 52,
+      "enrichments": {
+        "REGIME_1": {
+          "observed": 9,
+          "expected": 12.027364045722203,
+          "ratio": 0.7482936382225038
+        },
+        "REGIME_2": {
+          "observed": 38,
+          "expected": 31.4305507447177,
+          "ratio": 1.2090147674674896
+        },
+        "REGIME_3": {
+          "observed": 4,
+          "expected": 7.880152407343263,
+          "ratio": 0.5076043956043956
+        },
+        "REGIME_4": {
+          "observed": 1,
+          "expected": 0.661932802216834,
+          "ratio": 1.510727367870225
+        }
+      }
+    }
+  ]
+}

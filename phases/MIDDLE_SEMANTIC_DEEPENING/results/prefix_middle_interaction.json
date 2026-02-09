@@ -1,0 +1,1027 @@
+{
+  "parameters": {
+    "min_prefix": 100,
+    "min_middle": 50,
+    "total_tokens": 23096
+  },
+  "selectivity": [
+    {
+      "prefix": "qo",
+      "chi2": 11003.199136966647,
+      "p": 0.0,
+      "n": 4069
+    },
+    {
+      "prefix": "da",
+      "chi2": 6935.111923733602,
+      "p": 0.0,
+      "n": 1083
+    },
+    {
+      "prefix": "(none)",
+      "chi2": 4929.055819514956,
+      "p": 0.0,
+      "n": 3864
+    },
+    {
+      "prefix": "ch",
+      "chi2": 3032.878115948284,
+      "p": 0.0,
+      "n": 3492
+    },
+    {
+      "prefix": "sh",
+      "chi2": 2400.207239506847,
+      "p": 0.0,
+      "n": 2329
+    },
+    {
+      "prefix": "ok",
+      "chi2": 2025.584390743483,
+      "p": 0.0,
+      "n": 1476
+    },
+    {
+      "prefix": "ol",
+      "chi2": 1802.1646182552013,
+      "p": 0.0,
+      "n": 875
+    },
+    {
+      "prefix": "ot",
+      "chi2": 1579.0232611068686,
+      "p": 2.3808332881196438e-296,
+      "n": 1448
+    },
+    {
+      "prefix": "lk",
+      "chi2": 648.0280299991311,
+      "p": 7.77503127035145e-104,
+      "n": 438
+    }
+  ],
+  "forbidden_pairs": [
+    {
+      "prefix": "qo",
+      "middle": "ey",
+      "prefix_n": 4069,
+      "middle_n": 769
+    },
+    {
+      "prefix": "(none)",
+      "middle": "edy",
+      "prefix_n": 3864,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "(none)",
+      "middle": "ey",
+      "prefix_n": 3864,
+      "middle_n": 769
+    },
+    {
+      "prefix": "(none)",
+      "middle": "iin",
+      "prefix_n": 3864,
+      "middle_n": 560
+    },
+    {
+      "prefix": "ch",
+      "middle": "iin",
+      "prefix_n": 3492,
+      "middle_n": 560
+    },
+    {
+      "prefix": "sh",
+      "middle": "iin",
+      "prefix_n": 2329,
+      "middle_n": 560
+    },
+    {
+      "prefix": "ok",
+      "middle": "k",
+      "prefix_n": 1476,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "ok",
+      "middle": "t",
+      "prefix_n": 1476,
+      "middle_n": 574
+    },
+    {
+      "prefix": "ot",
+      "middle": "k",
+      "prefix_n": 1448,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "ot",
+      "middle": "r",
+      "prefix_n": 1448,
+      "middle_n": 749
+    },
+    {
+      "prefix": "ot",
+      "middle": "t",
+      "prefix_n": 1448,
+      "middle_n": 574
+    },
+    {
+      "prefix": "ot",
+      "middle": "iin",
+      "prefix_n": 1448,
+      "middle_n": 560
+    },
+    {
+      "prefix": "da",
+      "middle": "edy",
+      "prefix_n": 1083,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "da",
+      "middle": "e",
+      "prefix_n": 1083,
+      "middle_n": 845
+    },
+    {
+      "prefix": "da",
+      "middle": "aiin",
+      "prefix_n": 1083,
+      "middle_n": 831
+    },
+    {
+      "prefix": "da",
+      "middle": "ey",
+      "prefix_n": 1083,
+      "middle_n": 769
+    },
+    {
+      "prefix": "da",
+      "middle": "ol",
+      "prefix_n": 1083,
+      "middle_n": 759
+    },
+    {
+      "prefix": "da",
+      "middle": "eey",
+      "prefix_n": 1083,
+      "middle_n": 615
+    },
+    {
+      "prefix": "da",
+      "middle": "t",
+      "prefix_n": 1083,
+      "middle_n": 574
+    },
+    {
+      "prefix": "da",
+      "middle": "al",
+      "prefix_n": 1083,
+      "middle_n": 520
+    },
+    {
+      "prefix": "ol",
+      "middle": "edy",
+      "prefix_n": 875,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "ol",
+      "middle": "ey",
+      "prefix_n": 875,
+      "middle_n": 769
+    },
+    {
+      "prefix": "ol",
+      "middle": "iin",
+      "prefix_n": 875,
+      "middle_n": 560
+    },
+    {
+      "prefix": "lk",
+      "middle": "k",
+      "prefix_n": 438,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "lk",
+      "middle": "r",
+      "prefix_n": 438,
+      "middle_n": 749
+    },
+    {
+      "prefix": "lk",
+      "middle": "dy",
+      "prefix_n": 438,
+      "middle_n": 594
+    },
+    {
+      "prefix": "lk",
+      "middle": "t",
+      "prefix_n": 438,
+      "middle_n": 574
+    },
+    {
+      "prefix": "lk",
+      "middle": "iin",
+      "prefix_n": 438,
+      "middle_n": 560
+    },
+    {
+      "prefix": "sa",
+      "middle": "edy",
+      "prefix_n": 329,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "sa",
+      "middle": "e",
+      "prefix_n": 329,
+      "middle_n": 845
+    },
+    {
+      "prefix": "sa",
+      "middle": "aiin",
+      "prefix_n": 329,
+      "middle_n": 831
+    },
+    {
+      "prefix": "sa",
+      "middle": "ey",
+      "prefix_n": 329,
+      "middle_n": 769
+    },
+    {
+      "prefix": "sa",
+      "middle": "ol",
+      "prefix_n": 329,
+      "middle_n": 759
+    },
+    {
+      "prefix": "sa",
+      "middle": "ar",
+      "prefix_n": 329,
+      "middle_n": 670
+    },
+    {
+      "prefix": "sa",
+      "middle": "eey",
+      "prefix_n": 329,
+      "middle_n": 615
+    },
+    {
+      "prefix": "sa",
+      "middle": "dy",
+      "prefix_n": 329,
+      "middle_n": 594
+    },
+    {
+      "prefix": "sa",
+      "middle": "t",
+      "prefix_n": 329,
+      "middle_n": 574
+    },
+    {
+      "prefix": "sa",
+      "middle": "al",
+      "prefix_n": 329,
+      "middle_n": 520
+    },
+    {
+      "prefix": "sa",
+      "middle": "y",
+      "prefix_n": 329,
+      "middle_n": 458
+    },
+    {
+      "prefix": "lch",
+      "middle": "k",
+      "prefix_n": 315,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "lch",
+      "middle": "aiin",
+      "prefix_n": 315,
+      "middle_n": 831
+    },
+    {
+      "prefix": "lch",
+      "middle": "t",
+      "prefix_n": 315,
+      "middle_n": 574
+    },
+    {
+      "prefix": "lch",
+      "middle": "iin",
+      "prefix_n": 315,
+      "middle_n": 560
+    },
+    {
+      "prefix": "yk",
+      "middle": "k",
+      "prefix_n": 314,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "yk",
+      "middle": "r",
+      "prefix_n": 314,
+      "middle_n": 749
+    },
+    {
+      "prefix": "yk",
+      "middle": "t",
+      "prefix_n": 314,
+      "middle_n": 574
+    },
+    {
+      "prefix": "yk",
+      "middle": "iin",
+      "prefix_n": 314,
+      "middle_n": 560
+    },
+    {
+      "prefix": "te",
+      "middle": "k",
+      "prefix_n": 289,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "te",
+      "middle": "l",
+      "prefix_n": 289,
+      "middle_n": 853
+    },
+    {
+      "prefix": "te",
+      "middle": "aiin",
+      "prefix_n": 289,
+      "middle_n": 831
+    },
+    {
+      "prefix": "te",
+      "middle": "r",
+      "prefix_n": 289,
+      "middle_n": 749
+    },
+    {
+      "prefix": "te",
+      "middle": "t",
+      "prefix_n": 289,
+      "middle_n": 574
+    },
+    {
+      "prefix": "te",
+      "middle": "iin",
+      "prefix_n": 289,
+      "middle_n": 560
+    },
+    {
+      "prefix": "te",
+      "middle": "al",
+      "prefix_n": 289,
+      "middle_n": 520
+    },
+    {
+      "prefix": "ke",
+      "middle": "k",
+      "prefix_n": 259,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "ke",
+      "middle": "l",
+      "prefix_n": 259,
+      "middle_n": 853
+    },
+    {
+      "prefix": "ke",
+      "middle": "aiin",
+      "prefix_n": 259,
+      "middle_n": 831
+    },
+    {
+      "prefix": "ke",
+      "middle": "r",
+      "prefix_n": 259,
+      "middle_n": 749
+    },
+    {
+      "prefix": "ke",
+      "middle": "ar",
+      "prefix_n": 259,
+      "middle_n": 670
+    },
+    {
+      "prefix": "ke",
+      "middle": "t",
+      "prefix_n": 259,
+      "middle_n": 574
+    },
+    {
+      "prefix": "ke",
+      "middle": "iin",
+      "prefix_n": 259,
+      "middle_n": 560
+    },
+    {
+      "prefix": "ke",
+      "middle": "al",
+      "prefix_n": 259,
+      "middle_n": 520
+    },
+    {
+      "prefix": "pch",
+      "middle": "k",
+      "prefix_n": 245,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "pch",
+      "middle": "l",
+      "prefix_n": 245,
+      "middle_n": 853
+    },
+    {
+      "prefix": "pch",
+      "middle": "aiin",
+      "prefix_n": 245,
+      "middle_n": 831
+    },
+    {
+      "prefix": "pch",
+      "middle": "r",
+      "prefix_n": 245,
+      "middle_n": 749
+    },
+    {
+      "prefix": "pch",
+      "middle": "t",
+      "prefix_n": 245,
+      "middle_n": 574
+    },
+    {
+      "prefix": "pch",
+      "middle": "iin",
+      "prefix_n": 245,
+      "middle_n": 560
+    },
+    {
+      "prefix": "ka",
+      "middle": "k",
+      "prefix_n": 238,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "ka",
+      "middle": "e",
+      "prefix_n": 238,
+      "middle_n": 845
+    },
+    {
+      "prefix": "ka",
+      "middle": "aiin",
+      "prefix_n": 238,
+      "middle_n": 831
+    },
+    {
+      "prefix": "ka",
+      "middle": "ey",
+      "prefix_n": 238,
+      "middle_n": 769
+    },
+    {
+      "prefix": "ka",
+      "middle": "ol",
+      "prefix_n": 238,
+      "middle_n": 759
+    },
+    {
+      "prefix": "ka",
+      "middle": "ar",
+      "prefix_n": 238,
+      "middle_n": 670
+    },
+    {
+      "prefix": "ka",
+      "middle": "eey",
+      "prefix_n": 238,
+      "middle_n": 615
+    },
+    {
+      "prefix": "ka",
+      "middle": "dy",
+      "prefix_n": 238,
+      "middle_n": 594
+    },
+    {
+      "prefix": "ka",
+      "middle": "t",
+      "prefix_n": 238,
+      "middle_n": 574
+    },
+    {
+      "prefix": "ka",
+      "middle": "al",
+      "prefix_n": 238,
+      "middle_n": 520
+    },
+    {
+      "prefix": "ta",
+      "middle": "k",
+      "prefix_n": 237,
+      "middle_n": 2081
+    },
+    {
+      "prefix": "ta",
+      "middle": "edy",
+      "prefix_n": 237,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "ta",
+      "middle": "e",
+      "prefix_n": 237,
+      "middle_n": 845
+    },
+    {
+      "prefix": "ta",
+      "middle": "aiin",
+      "prefix_n": 237,
+      "middle_n": 831
+    },
+    {
+      "prefix": "ta",
+      "middle": "ey",
+      "prefix_n": 237,
+      "middle_n": 769
+    },
+    {
+      "prefix": "ta",
+      "middle": "ol",
+      "prefix_n": 237,
+      "middle_n": 759
+    },
+    {
+      "prefix": "ta",
+      "middle": "ar",
+      "prefix_n": 237,
+      "middle_n": 670
+    },
+    {
+      "prefix": "ta",
+      "middle": "eey",
+      "prefix_n": 237,
+      "middle_n": 615
+    },
+    {
+      "prefix": "ta",
+      "middle": "dy",
+      "prefix_n": 237,
+      "middle_n": 594
+    },
+    {
+      "prefix": "ta",
+      "middle": "t",
+      "prefix_n": 237,
+      "middle_n": 574
+    },
+    {
+      "prefix": "ta",
+      "middle": "al",
+      "prefix_n": 237,
+      "middle_n": 520
+    },
+    {
+      "prefix": "so",
+      "middle": "edy",
+      "prefix_n": 189,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "so",
+      "middle": "ey",
+      "prefix_n": 189,
+      "middle_n": 769
+    },
+    {
+      "prefix": "so",
+      "middle": "ol",
+      "prefix_n": 189,
+      "middle_n": 759
+    },
+    {
+      "prefix": "so",
+      "middle": "eey",
+      "prefix_n": 189,
+      "middle_n": 615
+    },
+    {
+      "prefix": "al",
+      "middle": "edy",
+      "prefix_n": 173,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "al",
+      "middle": "l",
+      "prefix_n": 173,
+      "middle_n": 853
+    },
+    {
+      "prefix": "al",
+      "middle": "e",
+      "prefix_n": 173,
+      "middle_n": 845
+    },
+    {
+      "prefix": "al",
+      "middle": "ey",
+      "prefix_n": 173,
+      "middle_n": 769
+    },
+    {
+      "prefix": "al",
+      "middle": "r",
+      "prefix_n": 173,
+      "middle_n": 749
+    },
+    {
+      "prefix": "or",
+      "middle": "edy",
+      "prefix_n": 173,
+      "middle_n": 1763
+    },
+    {
+      "prefix": "or",
+      "middle": "l",
+      "prefix_n": 173,
+      "middle_n": 853
+    },
+    {
+      "prefix": "or",
+      "middle": "ey",
+      "prefix_n": 173,
+      "middle_n": 769
+    },
+    {
+      "prefix": "or",
+      "middle": "r",
+      "prefix_n": 173,
+      "middle_n": 749
+    }
+  ],
+  "enriched_pairs": [
+    {
+      "prefix": "qo",
+      "middle": "k",
+      "ratio": 4.653246160152553,
+      "observed": 1706
+    },
+    {
+      "prefix": "qo",
+      "middle": "t",
+      "ratio": 4.9542157367295685,
+      "observed": 501
+    },
+    {
+      "prefix": "(none)",
+      "middle": "aiin",
+      "ratio": 2.5462549797818985,
+      "observed": 354
+    },
+    {
+      "prefix": "(none)",
+      "middle": "ol",
+      "ratio": 3.31543084095069,
+      "observed": 421
+    },
+    {
+      "prefix": "(none)",
+      "middle": "ar",
+      "ratio": 2.212465622199561,
+      "observed": 248
+    },
+    {
+      "prefix": "(none)",
+      "middle": "al",
+      "ratio": 2.1380076445293836,
+      "observed": 186
+    },
+    {
+      "prefix": "ch",
+      "middle": "ey",
+      "ratio": 2.2275935930836526,
+      "observed": 259
+    },
+    {
+      "prefix": "sh",
+      "middle": "edy",
+      "ratio": 2.773076747912276,
+      "observed": 493
+    },
+    {
+      "prefix": "sh",
+      "middle": "e",
+      "ratio": 2.1124336574348135,
+      "observed": 180
+    },
+    {
+      "prefix": "sh",
+      "middle": "ey",
+      "ratio": 3.1207308091955284,
+      "observed": 242
+    },
+    {
+      "prefix": "ok",
+      "middle": "e",
+      "ratio": 2.5739997755007136,
+      "observed": 139
+    },
+    {
+      "prefix": "ok",
+      "middle": "aiin",
+      "ratio": 3.163433222779881,
+      "observed": 168
+    },
+    {
+      "prefix": "ok",
+      "middle": "ar",
+      "ratio": 2.662443878170125,
+      "observed": 114
+    },
+    {
+      "prefix": "ok",
+      "middle": "eey",
+      "ratio": 3.1549827042985874,
+      "observed": 124
+    },
+    {
+      "prefix": "ok",
+      "middle": "al",
+      "ratio": 3.2799979153637686,
+      "observed": 109
+    },
+    {
+      "prefix": "ot",
+      "middle": "e",
+      "ratio": 2.2840040537448103,
+      "observed": 121
+    },
+    {
+      "prefix": "ot",
+      "middle": "aiin",
+      "ratio": 2.0921541642566037,
+      "observed": 109
+    },
+    {
+      "prefix": "ot",
+      "middle": "ar",
+      "ratio": 3.0472169539045106,
+      "observed": 128
+    },
+    {
+      "prefix": "ot",
+      "middle": "eey",
+      "ratio": 2.411992992858105,
+      "observed": 93
+    },
+    {
+      "prefix": "ot",
+      "middle": "al",
+      "ratio": 3.5581385465363367,
+      "observed": 116
+    },
+    {
+      "prefix": "ot",
+      "middle": "y",
+      "ratio": 2.263685493015513,
+      "observed": 65
+    },
+    {
+      "prefix": "da",
+      "middle": "l",
+      "ratio": 4.12518307553916,
+      "observed": 165
+    },
+    {
+      "prefix": "da",
+      "middle": "r",
+      "ratio": 5.922292203701581,
+      "observed": 208
+    },
+    {
+      "prefix": "da",
+      "middle": "iin",
+      "ratio": 12.49091148924944,
+      "observed": 328
+    },
+    {
+      "prefix": "ol",
+      "middle": "k",
+      "ratio": 2.765114574037207,
+      "observed": 218
+    },
+    {
+      "prefix": "ol",
+      "middle": "y",
+      "ratio": 3.112124766063631,
+      "observed": 54
+    },
+    {
+      "prefix": "lk",
+      "middle": "e",
+      "ratio": 3.3073626759612007,
+      "observed": 53
+    },
+    {
+      "prefix": "lk",
+      "middle": "aiin",
+      "ratio": 3.236173614888812,
+      "observed": 51
+    },
+    {
+      "prefix": "lk",
+      "middle": "ar",
+      "ratio": 2.361071355551012,
+      "observed": 30
+    },
+    {
+      "prefix": "lk",
+      "middle": "eey",
+      "ratio": 3.4296321045402234,
+      "observed": 40
+    },
+    {
+      "prefix": "sa",
+      "middle": "l",
+      "ratio": 2.715850012649793,
+      "observed": 33
+    },
+    {
+      "prefix": "sa",
+      "middle": "r",
+      "ratio": 5.904724029202057,
+      "observed": 63
+    },
+    {
+      "prefix": "sa",
+      "middle": "iin",
+      "ratio": 12.786539296569691,
+      "observed": 102
+    },
+    {
+      "prefix": "lch",
+      "middle": "edy",
+      "ratio": 4.9074503236726725,
+      "observed": 118
+    },
+    {
+      "prefix": "lch",
+      "middle": "ey",
+      "ratio": 4.290544306148988,
+      "observed": 45
+    },
+    {
+      "prefix": "lch",
+      "middle": "dy",
+      "ratio": 2.2218374218374217,
+      "observed": 18
+    },
+    {
+      "prefix": "yk",
+      "middle": "e",
+      "ratio": 3.046621188708401,
+      "observed": 35
+    },
+    {
+      "prefix": "yk",
+      "middle": "aiin",
+      "ratio": 2.832409728130485,
+      "observed": 32
+    },
+    {
+      "prefix": "yk",
+      "middle": "ar",
+      "ratio": 3.073904363532655,
+      "observed": 28
+    },
+    {
+      "prefix": "yk",
+      "middle": "eey",
+      "ratio": 3.348806379783543,
+      "observed": 28
+    },
+    {
+      "prefix": "te",
+      "middle": "ey",
+      "ratio": 3.949082302545435,
+      "observed": 38
+    },
+    {
+      "prefix": "te",
+      "middle": "dy",
+      "ratio": 10.090524623396595,
+      "observed": 75
+    },
+    {
+      "prefix": "ke",
+      "middle": "edy",
+      "ratio": 2.6807762304075404,
+      "observed": 53
+    },
+    {
+      "prefix": "ke",
+      "middle": "ey",
+      "ratio": 2.783055766150695,
+      "observed": 24
+    },
+    {
+      "prefix": "ke",
+      "middle": "dy",
+      "ratio": 7.055835055835056,
+      "observed": 47
+    },
+    {
+      "prefix": "pch",
+      "middle": "edy",
+      "ratio": 2.780492435204371,
+      "observed": 52
+    },
+    {
+      "prefix": "pch",
+      "middle": "dy",
+      "ratio": 2.8566481137909707,
+      "observed": 18
+    },
+    {
+      "prefix": "ka",
+      "middle": "l",
+      "ratio": 2.7303732747495246,
+      "observed": 24
+    },
+    {
+      "prefix": "ka",
+      "middle": "r",
+      "ratio": 6.9963536816595795,
+      "observed": 54
+    },
+    {
+      "prefix": "ka",
+      "middle": "iin",
+      "ratio": 8.491176470588236,
+      "observed": 49
+    },
+    {
+      "prefix": "ta",
+      "middle": "l",
+      "ratio": 3.08463056672652,
+      "observed": 27
+    },
+    {
+      "prefix": "ta",
+      "middle": "r",
+      "ratio": 8.977505872809315,
+      "observed": 69
+    },
+    {
+      "prefix": "ta",
+      "middle": "iin",
+      "ratio": 10.093188667872212,
+      "observed": 58
+    },
+    {
+      "prefix": "so",
+      "middle": "l",
+      "ratio": 7.592797285646055,
+      "observed": 53
+    },
+    {
+      "prefix": "so",
+      "middle": "r",
+      "ratio": 6.526091225690691,
+      "observed": 40
+    },
+    {
+      "prefix": "al",
+      "middle": "k",
+      "ratio": 2.117056884056965,
+      "observed": 33
+    },
+    {
+      "prefix": "or",
+      "middle": "aiin",
+      "ratio": 4.658945625786885,
+      "observed": 29
+    },
+    {
+      "prefix": "or",
+      "middle": "ol",
+      "ratio": 2.4625039030668585,
+      "observed": 14
+    }
+  ]
+}

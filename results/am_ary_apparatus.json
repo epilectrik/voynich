@@ -1,0 +1,31 @@
+{
+  "am_ary_tokens": [
+    "am",
+    "otam",
+    "oly",
+    "oldy",
+    "daly",
+    "dam",
+    "ldy",
+    "ary"
+  ],
+  "section_distribution": {
+    "H": 57,
+    "T": 10,
+    "B": 77,
+    "C": 26,
+    "S": 83
+  },
+  "para_type_rates": {
+    "HIGH_H": 26.600985221674875,
+    "HIGH_K": 22.413793103448278
+  },
+  "predecessor_roles": {
+    "FREQUENT_OPERATOR": 46,
+    "UNKNOWN": 59,
+    "AUXILIARY": 54,
+    "ENERGY_OPERATOR": 69,
+    "FLOW_OPERATOR": 12,
+    "CORE_CONTROL": 13
+  }
+}

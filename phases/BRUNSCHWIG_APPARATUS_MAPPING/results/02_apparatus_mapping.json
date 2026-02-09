@@ -1,0 +1,192 @@
+{
+  "assignments": {
+    "S": {
+      "apparatus": "Fire methods (Degree 2-3)",
+      "evidence": [
+        "lk (fire-monitoring) 3.4% = highest of any section (1.78x)",
+        "ol (continuation) 3.2% = lowest, below B (6.7%)",
+        "qo (execution) 20.6% = standard",
+        "ch/sh ratio 2.00 = balanced testing and observation"
+      ]
+    },
+    "B": {
+      "apparatus": "Balneum mariae (Degree 1)",
+      "evidence": [
+        "ol (continuation) 6.7% = highest of any section (1.47x)",
+        "lk (fire-monitoring) 0.8% = very low (0.36x)",
+        "qo (execution) 27.5% = highest of any section (1.30x)",
+        "sh (observation) 14.8% = elevated",
+        "ch/sh ratio 0.96 = observation-dominant (not test-dominant)"
+      ]
+    },
+    "H": {
+      "apparatus": "Gentle/precision (Degree 1, REGIME_4)",
+      "evidence": [
+        "lk (fire-monitoring) 0.3% = near-zero (0.13x)",
+        "ok (gate) 10.4% = highest of any section (1.36x)",
+        "da (setup) 8.6% = highest (1.53x)",
+        "qo (execution) 11.9% = LOWEST of any section (0.56x)",
+        "ch/sh ratio 1.85 = test-dominant (precision)"
+      ]
+    },
+    "C": {
+      "apparatus": "Mixed/transitional",
+      "evidence": [
+        "ot (post-process) 11.1% = highest (1.48x)",
+        "tch (preparation) 2.1% = highest (2.33x)",
+        "te (preparation) 2.9% = highest (1.91x)",
+        "lch (completion) 0.4% = very low (0.27x)",
+        "ok (gate) 3.1% = lowest (0.41x)"
+      ]
+    },
+    "T": {
+      "apparatus": "Setup-dominant",
+      "evidence": [
+        "da (setup) 11.4% = highest (2.02x)",
+        "sh (observation) 17.2% = highest (1.42x)",
+        "ol (continuation) 2.6% = lowest (0.56x)",
+        "Small sample (n=662)"
+      ]
+    }
+  },
+  "prefix_operations": {
+    "pch": {
+      "operation": "GATHER/COLLECT",
+      "confidence": "HIGH",
+      "freq": 245,
+      "bru_freq": 162
+    },
+    "tch": {
+      "operation": "CHOP/CUT",
+      "confidence": "HIGH",
+      "freq": 172,
+      "bru_freq": 92
+    },
+    "sa": {
+      "operation": "DRY/MACERATE (pre-treatment)",
+      "confidence": "MEDIUM",
+      "freq": 329,
+      "bru_freq": 85
+    },
+    "te": {
+      "operation": "STRIP/WASH (preparation)",
+      "confidence": "MEDIUM",
+      "freq": 289,
+      "bru_freq": 36
+    },
+    "qo": {
+      "operation": "DISTILL/EXECUTE (core execution)",
+      "confidence": "HIGH",
+      "freq": 4069,
+      "bru_freq": 227
+    },
+    "sh": {
+      "operation": "MONITOR (continuous observation)",
+      "confidence": "HIGH",
+      "freq": 2329,
+      "bru_freq": 21
+    },
+    "ch": {
+      "operation": "TEST (discrete state testing)",
+      "confidence": "HIGH",
+      "freq": 3492,
+      "bru_freq": 0
+    },
+    "lk": {
+      "operation": "MONITOR_DRIPS / REGULATE_FIRE (fire-method monitoring)",
+      "confidence": "HIGH",
+      "freq": 438,
+      "bru_freq": 23
+    },
+    "ok": {
+      "operation": "SEAL/GATE (sealing + process gating)",
+      "confidence": "MEDIUM",
+      "freq": 1476,
+      "bru_freq": 31
+    },
+    "ot": {
+      "operation": "RECTIFY/FILTER/POUR (post-process)",
+      "confidence": "MEDIUM",
+      "freq": 1448,
+      "bru_freq": 67
+    },
+    "da": {
+      "operation": "SETUP/MIX/REPLENISH (setup + maintenance)",
+      "confidence": "MEDIUM",
+      "freq": 1083,
+      "bru_freq": 27
+    },
+    "ol": {
+      "operation": "STORE/CONTINUE (sustained operations, storage)",
+      "confidence": "MEDIUM",
+      "freq": 875,
+      "bru_freq": 40
+    },
+    "ke": {
+      "operation": "COOL/SETTLE (thermal equilibration)",
+      "confidence": "LOW-MEDIUM",
+      "freq": 259,
+      "bru_freq": 8
+    },
+    "lch": {
+      "operation": "POUR/STRAIN (liquid transfer)",
+      "confidence": "LOW-MEDIUM",
+      "freq": 315,
+      "bru_freq": 24
+    }
+  },
+  "phase_comparison": {
+    "PREPARATION": {
+      "bru_freq": 309,
+      "voy_freq": 706,
+      "prefixes": [
+        "pch",
+        "tch",
+        "te"
+      ]
+    },
+    "PRE-TREATMENT": {
+      "bru_freq": 108,
+      "voy_freq": 329,
+      "prefixes": [
+        "sa"
+      ]
+    },
+    "DISTILLATION": {
+      "bru_freq": 227,
+      "voy_freq": 4069,
+      "prefixes": [
+        "qo"
+      ]
+    },
+    "MONITORING": {
+      "bru_freq": 26,
+      "voy_freq": 6259,
+      "prefixes": [
+        "sh",
+        "lk",
+        "ch"
+      ]
+    },
+    "POST-PROCESS": {
+      "bru_freq": 81,
+      "voy_freq": 1707,
+      "prefixes": [
+        "ot",
+        "ke"
+      ]
+    },
+    "COMPLETION": {
+      "bru_freq": 84,
+      "voy_freq": 3749,
+      "prefixes": [
+        "ol",
+        "ok",
+        "da",
+        "lch"
+      ]
+    }
+  },
+  "phase_spearman_rho": -0.486,
+  "phase_spearman_p": 0.3287
+}

@@ -1,0 +1,28 @@
+{
+  "test": "CONTINUATION_TEST",
+  "transitions": {
+    "WITH_RI->WITHOUT_RI": 48,
+    "WITHOUT_RI->WITHOUT_RI": 38,
+    "WITHOUT_RI->WITH_RI": 34,
+    "WITH_RI->WITH_RI": 108
+  },
+  "position_distribution": {
+    "WITH_RI": {
+      "FIRST": 58,
+      "MIDDLE": 98,
+      "LAST": 44,
+      "ONLY": 15
+    },
+    "WITHOUT_RI": {
+      "MIDDLE": 44,
+      "LAST": 42,
+      "FIRST": 28,
+      "ONLY": 13
+    }
+  },
+  "vocabulary_overlap": {
+    "avg_with_ri": 0.18857690105844088,
+    "avg_without_ri": 0.20161691736514342
+  },
+  "verdict": "INDEPENDENT_RECORDS"
+}

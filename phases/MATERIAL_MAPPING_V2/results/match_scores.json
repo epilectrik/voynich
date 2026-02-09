@@ -1,0 +1,2603 @@
+{
+  "total_matches": 260435,
+  "high_score_matches": 21056,
+  "weights": {
+    "regime": 0.3,
+    "prefix_similarity": 0.4,
+    "uniqueness": 0.15,
+    "convergence": 0.15
+  },
+  "threshold": 0.7,
+  "top_50_matches": [
+    {
+      "recipe_id": 2,
+      "recipe_name": "sorrel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "apple tree mistletoe",
+      "material_class": "plant_parasite",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "dwarf elder / danewort",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 7,
+      "recipe_name": "agrimony",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 8,
+      "recipe_name": "columbine",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 9,
+      "recipe_name": "sow thistle / goose thistle / liver thistle",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 11,
+      "recipe_name": "mandrake",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 12,
+      "recipe_name": "angelica",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 13,
+      "recipe_name": "scabious",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 14,
+      "recipe_name": "magpie",
+      "material_class": "ANIMAL",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 16,
+      "recipe_name": "borage herb",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 18,
+      "recipe_name": "henbane",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 19,
+      "recipe_name": "blue iris flower",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 22,
+      "recipe_name": "birch leaf",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 23,
+      "recipe_name": "birch sap",
+      "material_class": "sap",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 24,
+      "recipe_name": "purslane",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 25,
+      "recipe_name": "burnet saxifrage",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 26,
+      "recipe_name": "dogwood/cornel leaf",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 27,
+      "recipe_name": "dogwood/cornel flower",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 28,
+      "recipe_name": "watercress",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 29,
+      "recipe_name": "water mint",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 30,
+      "recipe_name": "burnt lettuce",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 33,
+      "recipe_name": "bean pod",
+      "material_class": "pod",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 34,
+      "recipe_name": "bean herb",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 35,
+      "recipe_name": "large basil",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 37,
+      "recipe_name": "blue may flower",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 38,
+      "recipe_name": "goat blood",
+      "material_class": "ANIMAL",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 39,
+      "recipe_name": "rose hip leaf / dog rose leaf",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 40,
+      "recipe_name": "betony",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 41,
+      "recipe_name": "beech leaf",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 42,
+      "recipe_name": "goat's beard / salsify",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 43,
+      "recipe_name": "blackberry",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 44,
+      "recipe_name": "pennyroyal",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 45,
+      "recipe_name": "blue violet",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 46,
+      "recipe_name": "mugwort",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 47,
+      "recipe_name": "broadleaf plantain",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 48,
+      "recipe_name": "broadleaf plantain seed",
+      "material_class": "seed",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 49,
+      "recipe_name": "broadleaf plantain bloom",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 50,
+      "recipe_name": "herb bennet / blessed herb",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 52,
+      "recipe_name": "mallow",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 53,
+      "recipe_name": "mallow bloom",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 54,
+      "recipe_name": "self-heal / prunella",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 55,
+      "recipe_name": "mercury herb / annual mercury",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 56,
+      "recipe_name": "chamomile",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 57,
+      "recipe_name": "blessed thistle",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 58,
+      "recipe_name": "bedstraw / madder",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 59,
+      "recipe_name": "crosswort",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 60,
+      "recipe_name": "small burning nettle",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 61,
+      "recipe_name": "cabbage",
+      "material_class": "vegetable",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 62,
+      "recipe_name": "centaury / thousand gold herb",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    }
+  ],
+  "animal_matches_top_30": [
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:10",
+      "ri_tokens": [
+        "ctholy",
+        "qotalom"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "qotalom"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8280907075395602,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9718941883008725,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.926829268292683
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f25v:1",
+      "ri_tokens": [
+        "poeeaiin",
+        "qofchor",
+        "sos"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "poeeaiin",
+        "qofchor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8117356233937526,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9127137950095245,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.975609756097561
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8110308092005997,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9018054180632274,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89v1:12",
+      "ri_tokens": [
+        "okalda",
+        "dalg"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "okalda",
+        "dalg"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8087186999714989,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9371836815758414,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8902439024390244
+    },
+    {
+      "recipe_id": 100,
+      "recipe_name": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8077358400671598,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8935695796340185,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 173,
+      "recipe_name": "earthworm water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8077358400671598,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8935695796340185,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 194,
+      "recipe_name": "earth snail water / slug water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8077358400671598,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8935695796340185,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f13r:7",
+      "ri_tokens": [
+        "qokhy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "qokhy"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8070437113061095,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.932996209912368,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8902439024390244
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:16",
+      "ri_tokens": [
+        "cheockhey",
+        "taldar"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "cheockhey",
+        "taldar"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.806379200154458,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9542007856917755,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8292682926829268
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:31",
+      "ri_tokens": [
+        "psheey"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "psheey"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8050638292307253,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9189001632604928,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.9146341463414634
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:29",
+      "ri_tokens": [
+        "sheoikhy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "sheoikhy"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8034489299931388,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8828507200445753,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 100,
+      "recipe_name": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f102v2:4",
+      "ri_tokens": [
+        "oeoikhy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "oeoikhy"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8033643202145772,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.887213950734269,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.9878048780487805
+    },
+    {
+      "recipe_id": 173,
+      "recipe_name": "earthworm water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f102v2:4",
+      "ri_tokens": [
+        "oeoikhy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "oeoikhy"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8033643202145772,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.887213950734269,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.9878048780487805
+    },
+    {
+      "recipe_id": 194,
+      "recipe_name": "earth snail water / slug water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f102v2:4",
+      "ri_tokens": [
+        "oeoikhy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "oeoikhy"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8033643202145772,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.887213950734269,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.9878048780487805
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58r:38",
+      "ri_tokens": [
+        "dtshol",
+        "dytal",
+        "salol"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "dtshol",
+        "dytal",
+        "salol"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8017985389748165,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.970188157132916,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.7560975609756098
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:35",
+      "ri_tokens": [
+        "dalas"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "dalas"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.7997260939734634,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9147021665807528,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8902439024390244
+    },
+    {
+      "recipe_id": 100,
+      "recipe_name": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f89v1:15",
+      "ri_tokens": [
+        "a",
+        "cthody",
+        "olkeeycthy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "a",
+        "olkeeycthy"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.795140193359096,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8712268043272735,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.975609756097561
+    },
+    {
+      "recipe_id": 173,
+      "recipe_name": "earthworm water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f89v1:15",
+      "ri_tokens": [
+        "a",
+        "cthody",
+        "olkeeycthy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "a",
+        "olkeeycthy"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.795140193359096,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8712268043272735,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.975609756097561
+    },
+    {
+      "recipe_id": 194,
+      "recipe_name": "earth snail water / slug water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f89v1:15",
+      "ri_tokens": [
+        "a",
+        "cthody",
+        "olkeeycthy"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "a",
+        "olkeeycthy"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.795140193359096,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8712268043272735,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.975609756097561
+    },
+    {
+      "recipe_id": 100,
+      "recipe_name": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f58v:25",
+      "ri_tokens": [
+        "okalar"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "okalar"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.7944977722207299,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8604744100179438,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 173,
+      "recipe_name": "earthworm water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f58v:25",
+      "ri_tokens": [
+        "okalar"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "okalar"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.7944977722207299,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8604744100179438,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 194,
+      "recipe_name": "earth snail water / slug water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f58v:25",
+      "ri_tokens": [
+        "okalar"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "okalar"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.7944977722207299,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8604744100179438,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 1.0
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f88v:8",
+      "ri_tokens": [
+        "qokeoda"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "qokeoda"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.7940716693326808,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9051392757105035,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8780487804878049
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f99v:7",
+      "ri_tokens": [
+        "okeoldy",
+        "qokeolo",
+        "sheodol",
+        "qokeechom"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "okeoldy",
+        "qokeolo",
+        "sheodol",
+        "qokeechom"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.7905045310070561,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8962214298964416,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8780487804878049
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:34",
+      "ri_tokens": [
+        "chhy",
+        "dalychs"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "chhy",
+        "dalychs"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.7887485796506658,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8506730149201001,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.9878048780487805
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f99r:7",
+      "ri_tokens": [
+        "okoly",
+        "qokoly",
+        "okchol",
+        "qokold"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "qokoly",
+        "qokold"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.7868459944216902,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8962214298964416,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.8536585365853658
+    },
+    {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89v1:2",
+      "ri_tokens": [
+        "otoikhy",
+        "cthody"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "otoikhy"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.7863270684080463,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8537655782769661,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.9634146341463414
+    },
+    {
+      "recipe_id": 100,
+      "recipe_name": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f10r:11",
+      "ri_tokens": [
+        "rotcho"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "rotcho"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.785016092367251,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8962214298964416,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.8414634146341463
+    },
+    {
+      "recipe_id": 173,
+      "recipe_name": "earthworm water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f10r:11",
+      "ri_tokens": [
+        "rotcho"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "rotcho"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.785016092367251,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8962214298964416,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.8414634146341463
+    },
+    {
+      "recipe_id": 194,
+      "recipe_name": "earth snail water / slug water",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f10r:11",
+      "ri_tokens": [
+        "rotcho"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "rotcho"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.785016092367251,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.8962214298964416,
+      "uniqueness_score": 0.002053388090349076,
+      "convergence_score": 0.8414634146341463
+    }
+  ],
+  "material_class_best": {
+    "herb": {
+      "recipe_id": 2,
+      "recipe_name": "sorrel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "plant_parasite": {
+      "recipe_id": 3,
+      "recipe_name": "apple tree mistletoe",
+      "material_class": "plant_parasite",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "ANIMAL": {
+      "recipe_id": 14,
+      "recipe_name": "magpie",
+      "material_class": "ANIMAL",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "flower": {
+      "recipe_id": 19,
+      "recipe_name": "blue iris flower",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "leaf": {
+      "recipe_id": 22,
+      "recipe_name": "birch leaf",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "sap": {
+      "recipe_id": 23,
+      "recipe_name": "birch sap",
+      "material_class": "sap",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "pod": {
+      "recipe_id": 33,
+      "recipe_name": "bean pod",
+      "material_class": "pod",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "fruit": {
+      "recipe_id": 43,
+      "recipe_name": "blackberry",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "seed": {
+      "recipe_id": 48,
+      "recipe_name": "broadleaf plantain seed",
+      "material_class": "seed",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "vegetable": {
+      "recipe_id": 61,
+      "recipe_name": "cabbage",
+      "material_class": "vegetable",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "fern": {
+      "recipe_id": 90,
+      "recipe_name": "hart's tongue fern",
+      "material_class": "fern",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "tree/shrub": {
+      "recipe_id": 93,
+      "recipe_name": "dogwood",
+      "material_class": "tree/shrub",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "animal product": {
+      "recipe_id": 101,
+      "recipe_name": "hartshorn / deer antler",
+      "material_class": "animal product",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "berry": {
+      "recipe_id": 105,
+      "recipe_name": "rose hip / dog rose",
+      "material_class": "berry",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "plant sap": {
+      "recipe_id": 163,
+      "recipe_name": "grapevine sap water (collected)",
+      "material_class": "plant sap",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "flower_root_compound": {
+      "recipe_id": 181,
+      "recipe_name": "peony rose water",
+      "material_class": "flower_root_compound",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "root_vegetable": {
+      "recipe_id": 182,
+      "recipe_name": "turnip water",
+      "material_class": "root_vegetable",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "exotic_import": {
+      "recipe_id": 203,
+      "recipe_name": "spikenard water",
+      "material_class": "exotic_import",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "shrub": {
+      "recipe_id": 204,
+      "recipe_name": "savin water / juniper savin water",
+      "material_class": "shrub",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "parasitic plant": {
+      "recipe_id": 212,
+      "recipe_name": "dodder water / cuscuta water",
+      "material_class": "parasitic plant",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "plant byproduct": {
+      "recipe_id": 213,
+      "recipe_name": "grape marc water / wine lees water",
+      "material_class": "plant byproduct",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "tree": {
+      "recipe_id": 217,
+      "recipe_name": "willow leaf water",
+      "material_class": "tree",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8338283731470701,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.958926602970768,
+      "uniqueness_score": 0.001718213058419244,
+      "convergence_score": 1.0
+    },
+    "flower_part": {
+      "recipe_id": 21,
+      "recipe_name": "blue iris stamen/pistil",
+      "material_class": "flower_part",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "legume": {
+      "recipe_id": 32,
+      "recipe_name": "bean (whole)",
+      "material_class": "legume",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "bark": {
+      "recipe_id": 86,
+      "recipe_name": "elder bark (middle bark)",
+      "material_class": "bark",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "bulb": {
+      "recipe_id": 131,
+      "recipe_name": "leek water",
+      "material_class": "bulb",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "root": {
+      "recipe_id": 140,
+      "recipe_name": "bistort / snakeweed water",
+      "material_class": "root",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "fungus": {
+      "recipe_id": 151,
+      "recipe_name": "chanterelle / mushroom water",
+      "material_class": "fungus",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "fungal_substance": {
+      "recipe_id": 184,
+      "recipe_name": "star-shot water / star jelly water",
+      "material_class": "fungal_substance",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "aquatic_flower": {
+      "recipe_id": 189,
+      "recipe_name": "water lily water",
+      "material_class": "aquatic_flower",
+      "fire_degree": 1,
+      "expected_regime": 2,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "shekor"
+      ],
+      "profile_regime": "REGIME_2",
+      "total_score": 0.8301989846745641,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.949671470496983,
+      "uniqueness_score": 0.0022026431718061676,
+      "convergence_score": 1.0
+    },
+    "animal": {
+      "recipe_id": 150,
+      "recipe_name": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "expected_regime": 1,
+      "record_id": "f58v:10",
+      "ri_tokens": [
+        "ctholy",
+        "qotalom"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "qotalom"
+      ],
+      "profile_regime": "REGIME_1",
+      "total_score": 0.8280907075395602,
+      "regime_score": 1.0,
+      "prefix_similarity": 0.9718941883008725,
+      "uniqueness_score": 0.00205761316872428,
+      "convergence_score": 0.926829268292683
+    },
+    "succulent": {
+      "recipe_id": 92,
+      "recipe_name": "houseleek / thunder-bar",
+      "material_class": "succulent",
+      "fire_degree": 3,
+      "expected_regime": 3,
+      "record_id": "f5r:3",
+      "ri_tokens": [
+        "oteeen"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "oteeen"
+      ],
+      "profile_regime": "REGIME_4",
+      "total_score": 0.6845502875788112,
+      "regime_score": 0.5,
+      "prefix_similarity": 0.9607689228305231,
+      "uniqueness_score": 0.0016181229773462784,
+      "convergence_score": 1.0
+    },
+    "herb_fruit": {
+      "recipe_id": 197,
+      "recipe_name": "pointed burdock water / small burdock water",
+      "material_class": "herb_fruit",
+      "fire_degree": 3,
+      "expected_regime": 3,
+      "record_id": "f5r:3",
+      "ri_tokens": [
+        "oteeen"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "oteeen"
+      ],
+      "profile_regime": "REGIME_4",
+      "total_score": 0.6845502875788112,
+      "regime_score": 0.5,
+      "prefix_similarity": 0.9607689228305231,
+      "uniqueness_score": 0.0016181229773462784,
+      "convergence_score": 1.0
+    },
+    "vine": {
+      "recipe_id": 245,
+      "recipe_name": "bryony root water / wild vine root water",
+      "material_class": "vine",
+      "fire_degree": 3,
+      "expected_regime": 3,
+      "record_id": "f5r:3",
+      "ri_tokens": [
+        "oteeen"
+      ],
+      "known_animal_ri": [],
+      "folio_unique_ri": [
+        "oteeen"
+      ],
+      "profile_regime": "REGIME_4",
+      "total_score": 0.6845502875788112,
+      "regime_score": 0.5,
+      "prefix_similarity": 0.9607689228305231,
+      "uniqueness_score": 0.0016181229773462784,
+      "convergence_score": 1.0
+    }
+  }
+}
