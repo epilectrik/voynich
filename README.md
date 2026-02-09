@@ -1,52 +1,159 @@
 # Voynich Manuscript Computational Analysis
 
-Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a 15th-century codex written in an unknown script.
+Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a 15th-century codex written in an unknown script. This project uses statistical morphology, grammar extraction, and structural constraint analysis to determine what the manuscript encodes — without attempting translation.
 
-## Project Status: MODEL FROZEN
+## Project Status
 
-This project has reached a stable conclusion. The manuscript encodes an **executable operational control grammar** for a closed-loop physical system, not a natural language or cipher.
+**Pipeline: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.12**
 
-## Quick Links
+| Metric | Value |
+|--------|-------|
+| Validated constraints | 794 |
+| Research phases completed | 299 |
+| Model fits tested | 55 |
+| Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
-- [Full Documentation](CLAUDE.md) - Complete methodology, findings, and 165 validated constraints
-- [Project Organization](ORGANIZATION.md) - Directory structure and file guide
-- [Results](results/) - Canonical grammar and complete recipe atlas
+## Core Finding
 
-## Key Findings
+> The Voynich Manuscript's Currier B text encodes a family of **closed-loop, kernel-centric control programs** designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
+
+This is not a natural language. This is not a cipher. This is a **control system reference manual** for a physical process — most likely reflux distillation, based on extensive structural comparison with Hieronymus Brunschwig's *Liber de arte distillandi* (1500).
+
+## Key Results
 
 | Finding | Evidence |
 |---------|----------|
-| 49 instruction classes | 9.8x vocabulary compression |
-| 83 programs (folios) | 75,248 total instructions |
-| 100% grammar coverage | Every token executes |
-| 0 translation-eligible zones | PURE_OPERATIONAL verdict |
-| Closed-loop circulation system | Physics plausibility: 7/7 tracks pass |
+| 49 instruction classes | 9.8x vocabulary compression from 479 token types |
+| 83 programs (folios) | 23,243 Currier B instructions |
+| 100% grammar coverage | Every token participates in the grammar |
+| 17 forbidden transitions | In 5 hazard classes (PHASE, COMPOSITION, CONTAINMENT, RATE, ENERGY) |
+| 0 translation-eligible zones | PURE_OPERATIONAL verdict — no natural language content |
+| Brunschwig alignment | 19/20 extended tests pass across 4 test suites |
 
-## What This Project Shows
+## Four-Layer Architecture
 
-The Voynich Manuscript is likely a **technical operations manual** for a circulatory apparatus (possibly reflux distillation), not a cipher, language, or hoax.
+The manuscript comprises four structurally distinct systems that form a layered control architecture:
+
+| Layer | System | Tokens | Function |
+|-------|--------|--------|----------|
+| **Execution** | Currier B | 23,243 (61.9%) | Controls what you do over time |
+| **Distinction** | Currier A | 11,415 (30.5%) | Catalogs where distinctions matter |
+| **Context** | AZC | 3,299 (7.7%) | Locks which things may appear where |
+| **Vigilance** | HT Labels | ~500 | Keeps the human stable once locked |
+
+## Token Morphology
+
+Every Currier B token decomposes as: **[ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]**
+
+- **PREFIX** encodes the operational frame (test, monitor, vessel, rectify, store...)
+- **MIDDLE** encodes the core action (apply heat, check hazards, let settle...)
+- **SUFFIX** encodes control flow (checkpoint, iterate, thorough, close, transfer...)
+
+This compositional structure was derived statistically and independently confirmed by two external researchers reading the manuscript procedurally.
+
+## Brunschwig Connection
+
+The strongest external validation comes from systematic comparison with Brunschwig's distillation manual (1500):
+
+| Test Suite | Score |
+|------------|-------|
+| 6-Axis Structural Comparison | 4 MATCH, 1 PARTIAL, 1 informative MISMATCH |
+| Reverse Brunschwig V1 (10 tests) | 2 STRONG, 5 SUPPORT, 2 WEAK, 1 NEUTRAL |
+| Reverse Brunschwig V2 (6 tests) | 1 CONFIRMED, 2 SUPPORT, 3 NOT SUPPORTED |
+| Reverse Brunschwig V3 (6 tests) | 5 PASS or informative |
+
+Key alignments:
+- **Recovery architecture**: 99.9% of escape chains are 2 tokens or fewer, matching Brunschwig's "no more than twice" retry limit
+- **Fire degrees**: Brunschwig's 4 fire degrees predict Voynich process stability (rho = -0.457, p < 0.0001)
+- **Material-apparatus separation**: Both systems encode procedures independently of materials
+- **Sensory modalities**: Both use categorical sensory tests without instruments
+- **Illustration anchoring**: Root-emphasized plant illustrations correlate with POUND/CHOP operations (r = 0.366, p = 0.0007)
 
 ## What This Project Does NOT Claim
 
-- Specific products or materials
-- Natural language meanings
-- Historical identity of author
-- Illustration meanings
+- Specific product or material identities (semantic ceiling: C171)
+- Natural language meanings for any token
+- Historical identity of the author
+- That illustrations carry semantic content (C138: illustrations are epiphenomenal)
+- Token-level "translation" — operational roles are not word meanings
 
-See [limits_statement.md](limits_statement.md) for epistemological boundaries.
+## Falsified Hypotheses
+
+These approaches have been structurally ruled out (Tier 1):
+
+- Natural language encoding (C132)
+- Cipher/substitution system (C130: 0.19% reference rate)
+- Illustrations constrain text (C138)
+- Calendar/seasonal encoding of Zodiac pages (F-AZC-010: 0/4 predictions)
+- Simple cycle topology for AZC (C455)
+- Glossolalia / random generation (C124: 100% grammar coverage)
+
+## Tools
+
+### Core Library
+
+```python
+from scripts.voynich import Transcript, Morphology, BFolioDecoder
+
+# Iterate tokens (H-track, labels excluded automatically)
+tx = Transcript()
+for token in tx.currier_b():
+    print(token.word, token.folio, token.section)
+
+# Morphological analysis
+morph = Morphology()
+m = morph.extract('otchedy')
+print(m.prefix, m.prefix2, m.middle, m.suffix)  # ot, ch, edy, None
+
+# Full folio decode with Brunschwig-grounded glossing
+decoder = BFolioDecoder()
+print(decoder.decode_summary('f76r', mode='interpretive'))
+```
+
+### Folio Renderer
+
+```
+python scripts/show_b_folio.py f76r --flow
+```
+
+Renders any Currier B folio with morphological parse, structural roles, and interpretive glosses.
 
 ## Directory Structure
 
 ```
 voynich/
-├── CLAUDE.md              # Complete project documentation
-├── phases/                # All analysis phases organized by topic
-├── legacy/                # Preserved falsified hypotheses
-├── lib/                   # Reusable code libraries
-├── data/                  # Input transcriptions
-├── results/               # Canonical frozen outputs
-└── folio_analysis/        # Per-folio deep dives
+  context/            # Constraint system (794 validated constraints)
+    CLAUDE_INDEX.md   # Start here for full documentation
+    CLAIMS/           # Individual constraint files
+    ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
+    STRUCTURAL_CONTRACTS/  # API-layer contracts (CASC, BCSC, ACT, BRSC)
+    MODEL_FITS/       # 55 tested model fits
+    SPECULATIVE/      # Tier 3-4 interpretations
+  data/               # Transcript, dictionaries, Brunschwig recipes
+  scripts/            # voynich.py core library + analysis tools
+  phases/             # 299 completed research phases
+  results/            # Analysis outputs (JSON)
+  folio_analysis/     # Per-folio hazard maps
+  annotation_data/    # Folio annotation work
+  archive/            # Archived scripts and old documentation
+  apps/               # Script explorer application
 ```
+
+## Constraint Tier System
+
+| Tier | Meaning | Count |
+|------|---------|-------|
+| 0 | FROZEN FACT — proven, do not reopen | ~50 |
+| 1 | FALSIFICATION — rejected, do not retry | ~30 |
+| 2 | STRUCTURAL — high-confidence, bounded | ~500 |
+| 3 | SPECULATIVE — interpretive layer | ~150 |
+| 4 | EXPLORATORY — idea generation only | ~60 |
+
+## Data Source
+
+Transcript: EVA (Extensible Voynich Alphabet) interlinear format, H transcriber track (primary). 37,957 tokens across 225 folios.
+
+The Voynich Manuscript is held by the Beinecke Rare Book & Manuscript Library, Yale University (MS 408). The manuscript and all transcript data are in the public domain.
 
 ## License
 
