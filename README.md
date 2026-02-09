@@ -2,6 +2,8 @@
 
 Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a 15th-century codex written in an unknown script. This project uses statistical morphology, grammar extraction, and structural constraint analysis to determine what the manuscript encodes — without attempting translation.
 
+**New here?** Read **[GUIDE.md](GUIDE.md)** for a plain-English walkthrough of all four manuscript systems and what they do.
+
 ## Project Status
 
 **Pipeline: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.12**
