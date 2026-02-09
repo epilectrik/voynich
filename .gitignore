@@ -44,6 +44,9 @@ Thumbs.db
 nul
 NUL
 
+# Applications (local development tools)
+apps/
+
 # VEE application (separate project)
 vee/
 
