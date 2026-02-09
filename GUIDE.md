@@ -20,7 +20,7 @@ The manuscript is organized into four structurally distinct layers, each serving
 |-------|--------|-------------|
 | **Execution** | Currier B | The programs themselves — adaptive control procedures |
 | **Distinction** | Currier A | A catalog of fine distinctions the programs deliberately ignore |
-| **Context** | AZC | A scaffold that locks which vocabulary can appear where |
+| **Context** | AZC | A positional lookup table classifying vocabulary by operational character |
 | **Orientation** | HT (Human Track) | Keeps the human operator oriented during production |
 
 These layers never explain each other. B doesn't reference A. A doesn't mention AZC. They interact through vocabulary constraints — what tokens are available in what positions — not through explicit cross-references.
@@ -156,7 +156,7 @@ The relationship is like two machines using the same bolt specifications — the
 
 **What it is:** 3,299 tokens across 30 folios (8.7% of the manuscript). These are the Zodiac, Astronomical, and Cosmological pages — the diagram-heavy folios with circular layouts, star charts, and concentric rings.
 
-**What it does:** AZC is a **rigid positional scaffold** that controls which vocabulary can appear where. It doesn't execute procedures (that's B) or catalog distinctions (that's A). It locks context — determining what is legal in each position.
+**What it does:** AZC is a **static lookup table** — a positional encoding where each PREFIX+MIDDLE combination maps to exactly one position. It doesn't execute procedures (that's B), catalog distinctions (that's A), or actively filter anything. AZC positions **reflect** the operational character of the vocabulary placed there; they don't cause it.
 
 ### Two Families
 
@@ -168,20 +168,23 @@ AZC splits into two architecturally distinct families with no intermediates:
 
 Both families are equally rigid (98%+ self-transition rates). The difference is whether the rigidity is uniform (Zodiac) or diagram-specific (A/C).
 
-### How AZC Constrains
+### What AZC Positions Mean
 
-AZC constrains through vocabulary restriction: 95.7% of all MIDDLE pairs are illegal co-occurrences, and 77% of MIDDLEs appear in only one AZC folio. Certain MIDDLEs are simply unavailable in certain positions. The operator never "checks" AZC; the constraint is built into which tokens can physically appear.
+Each AZC position clusters vocabulary with a distinct operational character:
 
-Position determines legality, not prediction. AZC placement is only ~14% predictive of which token will appear — but it absolutely determines which tokens *cannot* appear. This is the difference between a traffic light (predicts behavior) and a wall (prevents behavior).
+| Position | Character | Key Indicators |
+|----------|-----------|----------------|
+| **S-series** | Stabilization / boundary | Highest scaffold support (35-45%), lowest energy operations (6-12%) |
+| **R-series** | Processing / interior | Balanced profile, moderate kernel contact |
+| **C** | Core / central | Balanced across all operational axes |
 
-### How AZC Propagates to B
+Critically, **position has zero independent effect on behavior**. After controlling for which MIDDLEs appear at a position, the position itself adds no predictive power for how those tokens behave in Currier B. Position reflects what the vocabulary already is — it doesn't transform it.
 
-AZC legality states propagate into Currier B execution, but B never sees the mechanism:
+### AZC and Currier B
 
-- **What B receives:** Vocabulary restrictions (which tokens are available) and intervention permission (which escape routes are open)
-- **What B does not receive:** Zone labels, position semantics, family membership, compatibility graph mechanics, or any explanation of *why* certain tokens are absent
+AZC does not modify, filter, or constrain Currier B programs. B programs are fixed — each folio is a complete, pre-written program. AZC and B share vocabulary (69.7% overlap) because they draw from the same operational domain, not because AZC feeds into B.
 
-B executes blind. It "just knows" which tokens are available — not why. This deliberate blindness keeps B's grammar simple while AZC handles positional complexity upstream.
+The relationship is classificatory, not causal: AZC organizes vocabulary by operational character in diagram form, while B deploys the same vocabulary in sequential programs. 77% of MIDDLEs appear in only one AZC folio, and each PREFIX+MIDDLE combination maps to exactly one position — making AZC an unambiguous reference system.
 
 ### What AZC Rules Out
 
@@ -221,32 +224,24 @@ Line-1 HT tokens concentrate heavily: 50.2% of first-line tokens come from the H
 - **Phase-synchronized:** Different HT prefixes correlate with early vs. late procedural phases
 - **Hazard-avoiding:** HT tokens cluster in positions where the operator would be waiting, not at forbidden transition points
 
-### Key Properties
-
-- **Unified across systems:** The same 19 HT prefixes appear in A, B, and AZC (Jaccard similarity >= 0.947)
-- **Quire-organized:** Clustering follows physical production units (quires), not content organization
-- **Phase-synchronized:** Different HT prefixes correlate with early vs. late procedural phases
-- **Hazard-avoiding:** HT tokens never appear at forbidden transition points — they cluster in positions where the operator would be waiting, not actively intervening
-
 ---
 
 ## How the Layers Interact
 
-The four layers form a stack where each layer constrains the next without explaining itself:
+The four layers are independent systems that share vocabulary but serve different functions:
 
-```
-AZC constrains vocabulary availability
-  ↓ (legality inheritance)
-Currier A provides the type vocabulary
-  ↓ (pool-based, not address-based)
-Currier B executes programs using available vocabulary
-  ↓ (phase synchronization)
-HT orients the human operator
-```
+| Layer | What It Does | How It Relates to the Others |
+|-------|-------------|------------------------------|
+| **Currier B** | Executes fixed programs | Shares vocabulary with A and AZC but operates independently |
+| **Currier A** | Catalogs fine distinctions | Shares vocabulary pool with B; no entry-level coupling |
+| **AZC** | Classifies vocabulary by position in diagrams | Reflects the same operational character that B deploys sequentially |
+| **HT** | Compound specifications + operator orientation | Redundant with B body content; concentrated on first lines |
 
-**B is blind to A and AZC.** It receives vocabulary restrictions as fait accompli — tokens are simply present or absent, with no explanation of why. This isolation is deliberate: it keeps B's grammar simple (49 classes, 17 hazards, one convergence target) while AZC handles the complexity of positional legality upstream.
+**These systems do not form a pipeline.** AZC does not feed into B. A does not look up into B. Each layer is a different view of the same underlying operational vocabulary.
 
-**A and B share types but not structure.** Both use the same morphological system (PREFIX + MIDDLE + SUFFIX) and the same intervention/monitoring dichotomy. But A has no sequential grammar, no forbidden transitions, and no line structure. They're aligned through shared vocabulary, not through functional coupling.
+**A and B share types but not structure.** Both use the same morphological system (PREFIX + MIDDLE + SUFFIX) and the same kernel-heavy/kernel-light dichotomy. But A has no sequential grammar, no forbidden transitions, and no line structure. They're aligned through shared vocabulary, not through functional coupling.
+
+**AZC and B share vocabulary but not organization.** AZC classifies tokens by operational character in positional diagrams. B deploys the same tokens in sequential control programs. The 69.7% vocabulary overlap reflects shared domain, not causal connection — AZC position has zero independent effect on B behavior after controlling for MIDDLE.
 
 **The only structural element that transfers perfectly across all systems** is the morphological type dichotomy: kernel-heavy prefixes (ch, sh, ok) make ~100% kernel character contact and avoid LINK positions; kernel-light prefixes (da, sa) make less than 5% kernel contact and cluster near LINK positions. This division reflects control-flow participation and is universal across all four systems.
 
