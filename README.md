@@ -6,7 +6,7 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Pipeline: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.12**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.12**
 
 | Metric | Value |
 |--------|-------|
@@ -40,7 +40,7 @@ The manuscript comprises four structurally distinct systems that form a layered 
 |-------|--------|--------|----------|
 | **Execution** | Currier B | 23,243 (61.9%) | Controls what you do over time |
 | **Distinction** | Currier A | 11,415 (30.5%) | Catalogs where distinctions matter |
-| **Context** | AZC | 3,299 (8.7%) | Locks which things may appear where |
+| **Context** | AZC | 3,299 (8.7%) | Static positional lookup table classifying vocabulary |
 | **Orientation** | HT (Human Track) | 7,042* | Compound specifications redundant with body lines; keeps operator oriented during production |
 
 *HT tokens are a morphological subset of Currier B — they are already counted in the B total. They use the same morphology but do not participate in the 49-class grammar.

@@ -424,7 +424,7 @@ print(mid_analyzer.get_contained_atoms('opcheodai'))  # List of core substrings
 | Class | Meaning | Source |
 |-------|---------|--------|
 | RI | Registry-Internal | MIDDLE in a_exclusive_middles |
-| PP | Pipeline-Participant | MIDDLE in a_shared_middles |
+| PP | Cross-system vocabulary (present in both A and B) | MIDDLE in a_shared_middles |
 | INFRA | Infrastructure | DA-family prefix + short MIDDLE (C407) |
 | UNKNOWN | Unclassified | MIDDLE not in either set |
 

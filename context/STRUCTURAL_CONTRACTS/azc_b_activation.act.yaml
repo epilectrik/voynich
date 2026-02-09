@@ -1,23 +1,23 @@
 # ============================================================
 
 meta:
-  name: "AZC-B Activation Contract"
+  name: "AZC-B Vocabulary Correlation Contract"
   acronym: "AZC-B-ACT"
-  version: "1.1"
-  date: "2026-01-29"
+  version: "1.2"
+  date: "2026-02-06"
   status: "LOCKED"
-  layer_type: "propagation contract"
+  layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "Reviewed against constraints through C872. No changes needed - new constraints are internal A/B structure, not pipeline boundaries."
+  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
   governance: |
     AZC-B-ACT is NOT authoritative. Constraints are authoritative.
-    AZC-B-ACT describes HOW AZC legality states propagate into B.
+    AZC-B-ACT describes HOW vocabulary classified in AZC co-varies with B behavior.
     Do not edit without updating source constraints first.
 
 # ============================================================
 scope:
   function: "How AZC legality states constrain Currier B execution"
-  direction: "AZC -> B (one-way propagation, not reverse)"
+  direction: "AZC -> B (vocabulary-mediated correlation, not reverse)"
   b_grammar_authority: false  # Does not modify B grammar
   a_visibility: false  # B does not see A entries
   azc_visibility: false  # B does not see AZC internal structure
@@ -27,7 +27,7 @@ ownership:
   azc_b_act_owns:
     - nothing
   azc_b_act_describes:
-    - legality_propagation
+    - legality_correlation
     - intervention_permission_envelope
     - vocabulary_restriction_inheritance
 
@@ -45,8 +45,8 @@ b_reception:
     - "Positional semantics (C, P, R, S zones)"
 
 guarantees:
-  - id: "LEGALITY_INHERITANCE"
-    statement: "AZC escape/constraint profiles propagate causally into B"
+  - id: "LEGALITY_CORRELATION"
+    statement: "Vocabulary classified at high-escape AZC positions produces high escape rates in B (28x difference); both determined by vocabulary properties"
     provenance: "C468"
 
   - id: "RESTRICTION_PRESERVATION"
@@ -67,12 +67,12 @@ guarantees:
 
 # ============================================================
 invariants:
-  causal_transfer:
-    statement: "AZC legality causally determines B intervention dynamics"
+  vocabulary_mediated_correlation:
+    statement: "AZC positional classification and B intervention dynamics co-vary via shared vocabulary properties"
     provenance: "C468"
 
-  restriction_inheritance:
-    statement: "Vocabulary restrictions survive pipeline transfer"
+  restriction_correlation:
+    statement: "Vocabulary restrictions correlate across AZC and B contexts"
     provenance: "C470"
 
   grammar_stability:
@@ -80,7 +80,7 @@ invariants:
     provenance: "C124"
 
   non_parametric:
-    statement: "No numeric values are transmitted through the pipeline"
+    statement: "No numeric values are encoded; all distinctions are categorical"
     provenance: "C469"
 
   no_token_transmission:
@@ -104,7 +104,7 @@ inputs:
     - "Escape rate thresholds or numeric values"
 
 # ============================================================
-propagation:
+correlation:
 
   escape_permission_transfer:
     direction: "Higher AZC escape permission yields higher B escape incidence"
@@ -161,7 +161,7 @@ b_isolation:
     - item: "AZC position structure"
       reason: "B receives effects, not positions"
     - item: "AZC folio semantics"
-      reason: "Folio identity does not propagate"
+      reason: "Folio identity does not transfer"
     - item: "Compatibility graph"
       reason: "B sees legal/illegal as absence/presence, not why"
     - item: "MIDDLE incompatibility details"
@@ -175,13 +175,13 @@ negative_guarantees:
     reason: "C384 - vocabulary-mediated only"
 
   - guarantee: "No AZC structure visibility in B"
-    reason: "Propagation is effects-only"
+    reason: "B observes effects (vocabulary availability), not AZC structure"
 
   - guarantee: "No B grammar modification by AZC"
     reason: "C121, C124 - grammar is universal"
 
   - guarantee: "No reverse inference from B to AZC"
-    reason: "Pipeline is unidirectional"
+    reason: "Correlation is vocabulary-mediated, not reverse-inferrable"
 
   - guarantee: "No parametric encoding"
     reason: "C469 - categorical resolution only"
@@ -222,7 +222,7 @@ disallowed:
     provenance: "C384"
 
   - interpretation: "B can infer AZC position"
-    reason: "Effects propagate, not structure"
+    reason: "B sees vocabulary availability, not positional structure"
     provenance: "C468"
 
   - interpretation: "AZC modifies B grammar"
@@ -277,7 +277,7 @@ annotations:
 
 # ============================================================
 provenance:
-  pipeline_causality:
+  vocabulary_correlation:
     - "C468"  # Legality inheritance
     - "C469"  # Categorical resolution
     - "C470"  # MIDDLE restriction inheritance

@@ -19,7 +19,7 @@ The manuscript is organized into four structurally distinct layers, each serving
 | Layer | System | What It Does |
 |-------|--------|-------------|
 | **Execution** | Currier B | The programs themselves — adaptive control procedures |
-| **Distinction** | Currier A | A catalog of fine distinctions the programs deliberately ignore |
+| **Distinction** | Currier A | An independent registry of fine distinctions, organized by discrimination domains |
 | **Context** | AZC | A positional lookup table classifying vocabulary by operational character |
 | **Orientation** | HT (Human Track) | Keeps the human operator oriented during production |
 
@@ -55,7 +55,7 @@ The classes fall into five functional roles:
 | Role | Classes | Share of B | Function |
 |------|---------|-----------|----------|
 | ENERGY_OPERATOR | 18 | 31.2% | Energy modulation |
-| AUXILIARY | 19 | 16.6% | Scaffold and pipeline support |
+| AUXILIARY | 19 | 16.6% | Scaffold and infrastructure support |
 | FREQUENT_OPERATOR | 4 | 12.5% | Common control instructions |
 | CORE_CONTROL | 4 | 4.4% | Execution boundaries |
 | FLOW_OPERATOR | 4 | 4.7% | Flow control and escape routes |
@@ -113,11 +113,11 @@ The grammar is purely operational. It encodes control-flow structure but not the
 
 **What it is:** 11,415 tokens across 114 folios (30.5% of the manuscript). Completely separate from Currier B — zero shared folios.
 
-**What it does:** Currier A is a **registry of fine distinctions**. It catalogs differences that the B grammar deliberately collapses. Think of it as a discrimination index: where B says "apply heat," A distinguishes between dozens of cases where "apply heat" might mean subtly different things.
+**What it does:** Currier A is an **independent registry of fine distinctions**. It catalogs differences at a resolution far beyond what any execution grammar could track. Think of it as a discrimination index: where an execution system might have one instruction for "apply heat," A distinguishes between dozens of cases where that might mean subtly different things.
 
 ### Why A Exists
 
-Currier B's 49-class grammar is powerful but deliberately coarse. It handles execution decisions (phase, energy, flow, recovery) but ignores distinctions that are decision-relevant in practice. Currier A externalizes what the grammar cannot track.
+Currier A operates at a finer resolution than any execution grammar could support. Where an execution system tracks phase, energy, flow, and recovery at the class level, A catalogs case-by-case distinctions that are decision-relevant in practice.
 
 The registry is organized around a **discrimination gradient** — operations requiring fine discrimination need far more vocabulary than stable reference operations. 95.7% of all MIDDLE pairs are illegal co-occurrences, enforcing strict boundaries between discrimination domains.
 
@@ -131,17 +131,19 @@ Each line in Currier A is an independent record — there are no inter-line depe
 
 99.4% of records are multi-token registry entries defining fine distinctions. The remaining 0.6% are single-token control operators that organize the registry itself.
 
-A uses the same morphological system as B (PREFIX + MIDDLE + SUFFIX) but with different behavior. Crucially, 60.1% of A's MIDDLEs never appear in B at all — they exist only within the registry, cataloging distinctions that the execution grammar never needs to reference directly.
+A uses the same morphological system as B (PREFIX + MIDDLE + SUFFIX) but with different behavior. 60.1% of A's MIDDLEs never appear in B at all — they exist only within the registry, cataloging distinctions at a resolution the registry alone requires.
 
 ### How A Relates to B
 
 A and B share vocabulary but not structure:
 
 - **No entry-level coupling**: A entries don't map to specific B folios through simple lookup
-- **Pool-based access**: B draws from A's vocabulary as a shared resource, not as a line-by-line reference
-- **Massive filtering**: When B selects from A vocabulary, 94.7%–99.2% of options are filtered out by morphological compatibility rules
+- **Shared vocabulary pool**: A and B draw from a common vocabulary (69.8% overlap at the type level), but neither references the other
+- **Massive filtering**: Where vocabulary overlaps, morphological compatibility rules restrict co-occurrence so heavily that 94.7%–99.2% of combinations are excluded
 
-The relationship is like two machines using the same bolt specifications — they're aligned through shared components, not through direct interaction.
+The most likely relationship is **construction-time, not runtime**: A served as a reference vocabulary when the B programs were originally written. The author consulted A's discrimination index, checked AZC's positional classification, and composed B programs from that vocabulary. Once written, B programs are fixed and self-contained — there is no active "compilation" from A data during execution. A may also have served as a lookup reference for an operator encountering an unfamiliar token while running a procedure.
+
+This explains why the vocabulary overlap is clearly deliberate (69.8%) but no runtime coupling mechanism can be found — the coupling existed at authorship time, not execution time. (Tier 3 interpretation.)
 
 ### What A Is Not
 
@@ -237,7 +239,7 @@ The four layers are independent systems that share vocabulary but serve differen
 | **AZC** | Classifies vocabulary by position in diagrams | Reflects the same operational character that B deploys sequentially |
 | **HT** | Compound specifications + operator orientation | Redundant with B body content; concentrated on first lines |
 
-**These systems do not form a pipeline.** AZC does not feed into B. A does not look up into B. Each layer is a different view of the same underlying operational vocabulary.
+**These systems do not form a runtime pipeline.** B programs are fixed — they don't get compiled or filtered from A data during execution. The vocabulary overlap reflects a construction-time relationship: A was the reference vocabulary used when writing B programs. AZC classified that vocabulary by operational character. Once the programs were written, each layer became a self-contained view of the same underlying vocabulary. (Tier 3 interpretation.)
 
 **A and B share types but not structure.** Both use the same morphological system (PREFIX + MIDDLE + SUFFIX) and the same kernel-heavy/kernel-light dichotomy. But A has no sequential grammar, no forbidden transitions, and no line structure. They're aligned through shared vocabulary, not through functional coupling.
 

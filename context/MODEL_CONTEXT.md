@@ -174,7 +174,7 @@ Prefixes encode **functional type**, not semantic category:
 MIDDLEs are the primary vocabulary layer:
 - **Currier A: 1,013 unique MIDDLEs** (609 RI + 404 PP)
 - Currier B: 1,339 unique MIDDLEs (regenerated 2026-01-24)
-- Shared (A + B): 404 MIDDLEs (PP, Pipeline-Participating)
+- Shared (A + B): 404 MIDDLEs (PP, Present in both systems)
 - A-exclusive: 609 (60.1% of A's MIDDLEs never appear in B) [RI, Registry-Internal]
 - B-exclusive: 935 (69.8% of B's MIDDLEs never appear in A)
 
@@ -216,7 +216,7 @@ MIDDLEs are the primary vocabulary layer:
 
 A-record MIDDLEs partition into **two populations** with different B-side effects:
 
-| Type | Count | Propagates to B? | Length | Function |
+| Type | Count | Appears in B? | Length | Function |
 |------|-------|------------------|--------|----------|
 | **PP** | ~90 | **Yes** | 1-2 chars | Compatibility carriers |
 | **RI** | ~1,290 | **No** | 2-6 chars | A-internal discrimination |
@@ -480,10 +480,10 @@ Same grammar everywhere (C124); profiles reflect different operational emphases,
 
 ### AUXILIARY Architecture (C563-C572)
 
-AX is not a separate vocabulary — it is a **scaffold MODE** of the shared pipeline vocabulary:
+AX is not a separate vocabulary — it is a **scaffold MODE** of the shared cross-system vocabulary:
 
 - **Same MIDDLEs** appear as AX or operational depending on PREFIX (C571)
-- **98.2%** of AX tokens use PP MIDDLEs — shared pipeline vocabulary (C567)
+- **98.2%** of AX tokens use PP MIDDLEs — shared cross-system vocabulary (C567)
 - AX tokens stratify into 3 positional sub-types: **INIT / MED / FINAL** (C563)
 - 19 classes collapse to **≤2 effective behavioral groups** (C572)
 - Position is the sole differentiator; transitions uniform, context classifier below random baseline
@@ -504,7 +504,7 @@ AX is not a separate vocabulary — it is a **scaffold MODE** of the shared pipe
 
 Each role's internal class structure has been characterized. Key findings:
 
-**ENERGY (EN):** 18 classes exhibit **distributional convergence** (C574) — grammatically identical (same positions, REGIME, context) but lexically partitioned by PREFIX family. QO-prefixed classes use 25 MIDDLEs, CHSH-prefixed use 43, with only 8 shared (Jaccard=0.133, C576). EN is 100% pipeline-derived (C575) with 30 exclusive MIDDLEs (C578). Interleaving is content-driven (BIO vs PHARMA), not positional (C577).
+**ENERGY (EN):** 18 classes exhibit **distributional convergence** (C574) — grammatically identical (same positions, REGIME, context) but lexically partitioned by PREFIX family. QO-prefixed classes use 25 MIDDLEs, CHSH-prefixed use 43, with only 8 shared (Jaccard=0.133, C576). EN is 100% shared-vocabulary-derived (C575) with 30 exclusive MIDDLEs (C578). Interleaving is content-driven (BIO vs PHARMA), not positional (C577).
 
 **FREQUENT (FQ):** 4 classes form a **3-group structure** (C593): CONNECTOR {9}, PREFIXED_PAIR {13, 14}, CLOSER {23}. Classes 13 and 14 have completely non-overlapping vocabulary (Jaccard=0.000, C594). Internal transitions follow a directed grammar (chi2=111, C595). Class 23 is a boundary specialist (29.8% final rate, C597).
 
@@ -556,19 +556,19 @@ A MIDDLEs (1,013 total)  [REGENERATED 2026-01-24 atomic-suffix parser]
 |     Only 7.0% of A token instances (778/11,174)
 |
 +-- Shared with B (404, 39.9%)
-    +-- AZC-Mediated (~214, ~21% of A vocabulary)
-    |     A->AZC->B constraint propagation
+    +-- Three-System (~214, ~21% of A vocabulary)
+    |     Vocabulary appearing in A, AZC, and B contexts
     |
-    +-- B-Native Overlap (~190, ~19% of A vocabulary)
-          Zero AZC presence, B-dominant frequency
-          Execution-layer vocabulary with incidental A appearance
+    +-- Two-System (~190, ~19% of A vocabulary)
+          Shared between A and B but absent from AZC contexts
+          Vocabulary overlap without AZC positional classification
 ```
 
 **METHODOLOGY NOTE (2026-01-24):** Regenerated with atomic-suffix parser (voynich.py). Uses atomic suffixes only, smart MIDDLE preservation, gallows-initial handling (C528). C498.a substructure estimates await re-verification with new counts.
 
-**Key insight (C498.a):** Only 214 MIDDLEs (19.8% of A vocabulary) genuinely participate in the A->AZC->B pipeline. The 198 B-Native Overlap MIDDLEs appear in both A and B but never in AZC - they are B operational vocabulary with incidental A presence, not pipeline participants.
+**Key insight (C498.a):** Only 214 MIDDLEs (19.8% of A vocabulary) appear across all three systems (A, AZC, and B). The remaining 190 shared MIDDLEs appear in both A and B but never in AZC — they are vocabulary shared between two systems only, without AZC positional classification.
 
-Registry-internal MIDDLEs encode **within-category fine distinctions** for A-registry navigation that don't propagate to B execution. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
+Registry-internal MIDDLEs encode **within-category fine distinctions** exclusive to the A registry. The morphological signature (ct-prefix, suffix-less, folio-localized) reflects their A-internal scope.
 
 **Note:** 8.9% of A-exclusive MIDDLEs also appear in AZC - this is interface noise from systems sharing the same alphabet, not a distinct vocabulary stratum. Verification testing rejected the "AZC-terminal bifurcation" hypothesis.
 
@@ -702,7 +702,7 @@ AZC constrains B grammar through a **two-tier constraint system**:
 
 **Mechanism:** AZC does not modify B's grammar; it shortens the reachable language by restricting vocabulary availability. When AZC provides a legality field, decomposable hazard classes lose membership because their MIDDLEs become unavailable. Atomic hazard classes remain fully active regardless of AZC context.
 
-This completes the A→AZC→B control-theoretic explanation with no semantics, branching, or lookup.
+This completes the vocabulary-mediated correlation model with no semantics, branching, or lookup.
 
 **Scope Protection (BCI-2026-01-18):**
 > AZC constrains discriminative vocabulary and context-sensitive hazard classes. It **must not** remove execution-infrastructure roles required for grammar connectivity, even when those roles are labeled with MIDDLE-bearing tokens. Infrastructure roles lie outside AZC's legitimate constraint scope because their removal collapses B reachability without violating any vocabulary-level rule.
@@ -927,7 +927,7 @@ See [SPECULATIVE/apparatus_centric_semantics.md](SPECULATIVE/apparatus_centric_s
 
 ---
 
-## X.C. REPRESENTATION PRINCIPLE (Pipeline Resolution)
+## X.C. REPRESENTATION PRINCIPLE (Cross-System Vocabulary Resolution)
 
 Operational conditions (temperature, pressure, material state, etc.) are NOT encoded as values or ranges. Instead, legality of vocabulary tokens presupposes suitable external conditions; illegal combinations are structurally disallowed.
 
@@ -938,7 +938,7 @@ Operational conditions (temperature, pressure, material state, etc.) are NOT enc
 | MIDDLE length inversely correlates with coverage | len=1: 18.4 folios; len=5: 1.2 folios |
 | Most MIDDLEs are single-folio | 73.5% appear in only 1 AZC folio |
 | No scalar encoding anywhere | C287-C290 (rejected ratio hypothesis) |
-| Constraint transfer is causal | 28x escape rate difference AZC->B (F-AZC-016) |
+| Vocabulary-mediated correlation | 28x escape rate difference AZC vs B (F-AZC-016) |
 
 ### Interpretation
 
@@ -948,16 +948,17 @@ The manuscript does not encode "temperature = high" or "pressure = 3 of 4". It e
 
 This resolves the apparent complexity paradox: the system seems over-specified for "just distillation" because it enumerates ~2,400 distinct vocabulary combinations, each legal only under specific (externally determined) conditions. The operator's trained judgment maps external reality to vocabulary selection; the manuscript enforces compatibility rules on those selections.
 
-### Pipeline Closure
+### Cross-System Vocabulary Architecture
 
-The A -> AZC -> B control pipeline is now **structurally and behaviorally validated**:
+The A/AZC/B shared vocabulary architecture is now **structurally characterized**:
 - F-AZC-015: AZC is ambient (70% active per window), not dynamic
-- F-AZC-016: Constraint profiles transfer causally (28x escape difference)
-- C468-C470: Structural facts locked as Tier 2
+- F-AZC-016: Vocabulary classified at high-escape AZC positions produces 28x higher escape in B (vocabulary-mediated correlation)
+- C468-C470: Statistical correlations locked as Tier 2
+- AZC_POSITION_VOCABULARY (2026-01-31): AZC is a static lookup table; position has NO independent effect beyond vocabulary composition
 
 **Do NOT reopen:** entry-level A-B mapping, dynamic AZC hypothesis, parametric encoding, semantic token meaning.
 
-### Pipeline Legality Model (Strict Interpretation)
+### Vocabulary Legality Model (Strict Interpretation)
 
 **Critical clarification (C502):** AZC does NOT expand vocabulary beyond what A specifies.
 
@@ -1136,20 +1137,20 @@ External evidence (historical documents, archaeological finds) might constrain t
 
 ### Structural Contracts (LOCKED as of 2026-01-13)
 
-The A→AZC→B control architecture is formally closed via four structural contracts:
+The cross-system vocabulary architecture is formally characterized via four structural contracts:
 
 | Contract | File | Status | Function |
 |----------|------|--------|----------|
-| CASC | `currierA.casc.yaml` | LOCKED v1.0 | Currier A registry structure |
-| AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.0 | A→AZC transformation |
-| AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.0 | AZC→B propagation |
+| CASC | `currierA.casc.yaml` | LOCKED v1.6 | Currier A registry structure |
+| AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.2 | A/AZC positional classification |
+| AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.2 | AZC/B vocabulary correlation |
 | BCSC | `currierB.bcsc.yaml` | LOCKED v1.2 | Currier B internal grammar |
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
 
-**Pipeline completion:** As of 2026-01-13, the A→AZC→B control architecture is fully reconstructed at Tier 0-2. All remaining work concerns interpretation, tooling, or external corroboration.
+**Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. All remaining work concerns interpretation, tooling, or external corroboration.
 
-**PCA-v1 CERTIFIED:** Pipeline Closure Audit passed all 6 tests (legality consistency, no back-propagation, parametric silence, semantic vacuum, A/B isolation, HT non-interference). The contracts compose cleanly without hidden coupling.
+**PCA-v1 CERTIFIED:** Cross-system audit passed all 6 tests (legality consistency, no back-propagation, parametric silence, semantic vacuum, A/B isolation, HT non-interference). The contracts compose cleanly without hidden coupling.
 
 **Scaffold vs. Mechanism:** Contracts specify mechanisms, not scaffold renderings. Zodiac ordered subscripts (R1, R2, R3) are one presentation of the INTERIOR_RESTRICTING legality zone. A/C uses the same zones without explicit ordering. Apps must not conflate scaffold presentation with structure.
 

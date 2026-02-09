@@ -4,7 +4,7 @@
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
-> **PIPELINE CLOSED** — A→AZC→B control architecture fully reconstructed and certified. PCA-v1 passed. Structural work is DONE.
+> **ANALYSIS CLOSED** — Cross-system vocabulary architecture fully characterized. PCA-v1 passed. AZC is a static lookup table (AZC_POSITION_VOCABULARY, 2026-01-31). Structural work is DONE.
 
 ---
 
@@ -73,7 +73,7 @@ In B, tokens are **instruction operators**, not semantic words:
 
 In A, tokens are **categorical entries**, not instructions:
 
-1. **MIDDLEs bifurcate into RI and PP.** Registry-Internal (609) are A-exclusive discriminators. Pipeline-Participating (404) are shared with B. (C498)
+1. **MIDDLEs bifurcate into RI and PP.** Registry-Internal (609) are A-exclusive discriminators. PP (404) are shared with B — vocabulary present in both systems. (C498)
 
 2. **Token structure: [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX].** MIDDLE is the primary identity carrier; PREFIX/SUFFIX encode structural properties. (C267, C293)
 
@@ -351,4 +351,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v3.07 | Project v1.8 FROZEN STATE | PIPELINE CLOSED | PCA-v1 CERTIFIED | 2026-01-27*
+*Context System v3.12 | Project v3.12 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-06*
