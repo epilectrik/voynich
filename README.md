@@ -17,7 +17,7 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 > The Voynich Manuscript's Currier B text encodes a family of **closed-loop, kernel-centric control programs** designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
 
-This is not a natural language. This is not a cipher. This is a **control system reference manual** for a physical process — most likely reflux distillation, based on extensive structural comparison with Hieronymus Brunschwig's *Liber de arte distillandi* (1500).
+This is not a natural language. This is not a cipher. This is a **control system reference manual** for a physical process. Structural comparison with Hieronymus Brunschwig's *Liber de arte distillandi* (1500) suggests reflux distillation as the most likely domain (Tier 3 interpretation — see Brunschwig Connection below).
 
 ## Key Results
 
@@ -28,7 +28,7 @@ This is not a natural language. This is not a cipher. This is a **control system
 | 100% grammar coverage | Every token participates in the grammar |
 | 17 forbidden transitions | In 5 hazard classes (PHASE, COMPOSITION, CONTAINMENT, RATE, ENERGY) |
 | 0 translation-eligible zones | PURE_OPERATIONAL verdict — no natural language content |
-| Brunschwig alignment | 19/20 extended tests pass across 4 test suites |
+| Brunschwig alignment | 28 tests across 4 test suites (see below) |
 
 ## Four-Layer Architecture
 
@@ -38,8 +38,10 @@ The manuscript comprises four structurally distinct systems that form a layered 
 |-------|--------|--------|----------|
 | **Execution** | Currier B | 23,243 (61.9%) | Controls what you do over time |
 | **Distinction** | Currier A | 11,415 (30.5%) | Catalogs where distinctions matter |
-| **Context** | AZC | 3,299 (7.7%) | Locks which things may appear where |
-| **Vigilance** | HT Labels | ~500 | Keeps the human stable once locked |
+| **Context** | AZC | 3,299 (8.7%) | Locks which things may appear where |
+| **Orientation** | HT (Human Track) | 7,042* | Compound specifications redundant with body lines; keeps operator oriented during production |
+
+*HT tokens are a morphological subset of Currier B — they are already counted in the B total. They use the same morphology but do not participate in the 49-class grammar.
 
 ## Token Morphology
 
@@ -63,8 +65,8 @@ The strongest external validation comes from systematic comparison with Brunschw
 | Reverse Brunschwig V3 (6 tests) | 5 PASS or informative |
 
 Key alignments:
-- **Recovery architecture**: 99.9% of escape chains are 2 tokens or fewer, matching Brunschwig's "no more than twice" retry limit
-- **Fire degrees**: Brunschwig's 4 fire degrees predict Voynich process stability (rho = -0.457, p < 0.0001)
+- **Recovery architecture**: 89% reversibility with bounded retry, matching Brunschwig's "no more than twice" reinfusion rule (mean escape chain: 1.19 tokens)
+- **Fire degrees**: Brunschwig's 4 fire degrees correlate with Voynich LINK/FL ratio as stability proxy (rho = -0.457, p < 0.0001)
 - **Material-apparatus separation**: Both systems encode procedures independently of materials
 - **Sensory modalities**: Both use categorical sensory tests without instruments
 - **Illustration anchoring**: Root-emphasized plant illustrations correlate with POUND/CHOP operations (r = 0.366, p = 0.0007)
@@ -136,7 +138,6 @@ voynich/
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
   archive/            # Archived scripts and old documentation
-  apps/               # Script explorer application
 ```
 
 ## Constraint Tier System
