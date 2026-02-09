@@ -1,0 +1,322 @@
+{
+  "test": "Rare MIDDLE Section Clustering",
+  "n_rare_middles": 380,
+  "n_testable": 128,
+  "n_significant_bonferroni": 3,
+  "pct_section_concentrated": 2.34,
+  "mean_section_concentration_rare": 0.6537,
+  "mean_section_concentration_common": 0.4383,
+  "mann_whitney_u": 25365.0,
+  "p_value": 0.0,
+  "verdict": "SUPPORTED",
+  "top_concentrated_middles": [
+    {
+      "middle": "eot",
+      "n_folios": 12,
+      "concentration": 0.8333,
+      "dominant_section": "S",
+      "chi2": 18.8999,
+      "p_value": 0.0002867451937073681,
+      "section_counts": {
+        "B": 0,
+        "C": 1,
+        "H": 1,
+        "S": 10,
+        "T": 0
+      }
+    },
+    {
+      "middle": "odai",
+      "n_folios": 8,
+      "concentration": 0.25,
+      "dominant_section": "S",
+      "chi2": 18.4924,
+      "p_value": 0.0003480800593877845,
+      "section_counts": {
+        "B": 0,
+        "C": 2,
+        "H": 2,
+        "S": 2,
+        "T": 2
+      }
+    },
+    {
+      "middle": "of",
+      "n_folios": 12,
+      "concentration": 0.4167,
+      "dominant_section": "H",
+      "chi2": 18.3821,
+      "p_value": 0.00036683062966543964,
+      "section_counts": {
+        "B": 1,
+        "C": 3,
+        "H": 5,
+        "S": 1,
+        "T": 2
+      }
+    },
+    {
+      "middle": "lsh",
+      "n_folios": 14,
+      "concentration": 0.7143,
+      "dominant_section": "B",
+      "chi2": 17.0365,
+      "p_value": 0.0006946339096744591,
+      "section_counts": {
+        "B": 10,
+        "C": 0,
+        "H": 2,
+        "S": 2,
+        "T": 0
+      }
+    },
+    {
+      "middle": "kec",
+      "n_folios": 9,
+      "concentration": 0.6667,
+      "dominant_section": "S",
+      "chi2": 16.9752,
+      "p_value": 0.0007151062521985008,
+      "section_counts": {
+        "B": 0,
+        "C": 2,
+        "H": 0,
+        "S": 6,
+        "T": 1
+      }
+    },
+    {
+      "middle": "alk",
+      "n_folios": 9,
+      "concentration": 0.6667,
+      "dominant_section": "S",
+      "chi2": 16.9752,
+      "p_value": 0.0007151062521985008,
+      "section_counts": {
+        "B": 0,
+        "C": 3,
+        "H": 0,
+        "S": 6,
+        "T": 0
+      }
+    },
+    {
+      "middle": "eee",
+      "n_folios": 11,
+      "concentration": 0.8182,
+      "dominant_section": "S",
+      "chi2": 16.5509,
+      "p_value": 0.0008741198322720992,
+      "section_counts": {
+        "B": 0,
+        "C": 1,
+        "H": 1,
+        "S": 9,
+        "T": 0
+      }
+    },
+    {
+      "middle": "pc",
+      "n_folios": 8,
+      "concentration": 0.625,
+      "dominant_section": "S",
+      "chi2": 16.3199,
+      "p_value": 0.000974972588984888,
+      "section_counts": {
+        "B": 0,
+        "C": 3,
+        "H": 0,
+        "S": 5,
+        "T": 0
+      }
+    },
+    {
+      "middle": "oct",
+      "n_folios": 12,
+      "concentration": 0.6667,
+      "dominant_section": "S",
+      "chi2": 16.0137,
+      "p_value": 0.0011266479860755785,
+      "section_counts": {
+        "B": 0,
+        "C": 3,
+        "H": 1,
+        "S": 8,
+        "T": 0
+      }
+    },
+    {
+      "middle": "ec",
+      "n_folios": 15,
+      "concentration": 0.7333,
+      "dominant_section": "S",
+      "chi2": 15.8045,
+      "p_value": 0.001243560281297628,
+      "section_counts": {
+        "B": 2,
+        "C": 1,
+        "H": 1,
+        "S": 11,
+        "T": 0
+      }
+    },
+    {
+      "middle": "air",
+      "n_folios": 6,
+      "concentration": 1.0,
+      "dominant_section": "S",
+      "chi2": 15.3913,
+      "p_value": 0.0015110240100001426,
+      "section_counts": {
+        "B": 0,
+        "C": 0,
+        "H": 0,
+        "S": 6,
+        "T": 0
+      }
+    },
+    {
+      "middle": "teo",
+      "n_folios": 14,
+      "concentration": 0.6429,
+      "dominant_section": "S",
+      "chi2": 14.8901,
+      "p_value": 0.0019130298308652352,
+      "section_counts": {
+        "B": 0,
+        "C": 2,
+        "H": 2,
+        "S": 9,
+        "T": 1
+      }
+    },
+    {
+      "middle": "keec",
+      "n_folios": 8,
+      "concentration": 0.875,
+      "dominant_section": "S",
+      "chi2": 14.1573,
+      "p_value": 0.002698713508515602,
+      "section_counts": {
+        "B": 0,
+        "C": 0,
+        "H": 1,
+        "S": 7,
+        "T": 0
+      }
+    },
+    {
+      "middle": "oee",
+      "n_folios": 8,
+      "concentration": 0.5,
+      "dominant_section": "S",
+      "chi2": 12.8215,
+      "p_value": 0.005038947538330001,
+      "section_counts": {
+        "B": 1,
+        "C": 2,
+        "H": 0,
+        "S": 4,
+        "T": 1
+      }
+    },
+    {
+      "middle": "opai",
+      "n_folios": 4,
+      "concentration": 1.0,
+      "dominant_section": "S",
+      "chi2": 10.2609,
+      "p_value": 0.005913988615224788,
+      "section_counts": {
+        "B": 0,
+        "C": 0,
+        "H": 0,
+        "S": 4,
+        "T": 0
+      }
+    },
+    {
+      "middle": "at",
+      "n_folios": 4,
+      "concentration": 1.0,
+      "dominant_section": "S",
+      "chi2": 10.2609,
+      "p_value": 0.005913988615224788,
+      "section_counts": {
+        "B": 0,
+        "C": 0,
+        "H": 0,
+        "S": 4,
+        "T": 0
+      }
+    },
+    {
+      "middle": "pair",
+      "n_folios": 4,
+      "concentration": 1.0,
+      "dominant_section": "S",
+      "chi2": 10.2609,
+      "p_value": 0.005913988615224788,
+      "section_counts": {
+        "B": 0,
+        "C": 0,
+        "H": 0,
+        "S": 4,
+        "T": 0
+      }
+    },
+    {
+      "middle": "teeo",
+      "n_folios": 7,
+      "concentration": 0.7143,
+      "dominant_section": "S",
+      "chi2": 12.4268,
+      "p_value": 0.0060553776266026715,
+      "section_counts": {
+        "B": 0,
+        "C": 2,
+        "H": 0,
+        "S": 5,
+        "T": 0
+      }
+    },
+    {
+      "middle": "lke",
+      "n_folios": 13,
+      "concentration": 0.5385,
+      "dominant_section": "B",
+      "chi2": 12.3268,
+      "p_value": 0.006343678851971458,
+      "section_counts": {
+        "B": 7,
+        "C": 0,
+        "H": 0,
+        "S": 6,
+        "T": 0
+      }
+    },
+    {
+      "middle": "olke",
+      "n_folios": 7,
+      "concentration": 0.8571,
+      "dominant_section": "S",
+      "chi2": 11.9211,
+      "p_value": 0.007658320002164431,
+      "section_counts": {
+        "B": 1,
+        "C": 0,
+        "H": 0,
+        "S": 6,
+        "T": 0
+      }
+    }
+  ],
+  "section_sizes": {
+    "B": 20,
+    "C": 5,
+    "H": 32,
+    "S": 23,
+    "T": 2
+  },
+  "notes": "Rare = 2-15 folios (380 MIDDLEs). Common = >= 16 folios (82 MIDDLEs). Chi-square requires >= 4 folios. Bonferroni alpha = 0.000391 over 128 tests. Section proportions based on folio counts."
+}

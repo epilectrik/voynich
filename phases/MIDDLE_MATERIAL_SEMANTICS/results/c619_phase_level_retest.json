@@ -1,0 +1,278 @@
+{
+  "test": "C619 Phase-Level Retest",
+  "question": "Do unique MIDDLEs show different transition profiles WITHIN phases?",
+  "n_tokens_analyzed": 21610,
+  "n_folios": 80,
+  "n_unique_middles_corpus": 780,
+  "n_shared_middles_corpus": 445,
+  "n_unique_successor_tokens": 615,
+  "n_shared_successor_tokens": 18696,
+  "strategy_a_zone_jsd": {
+    "SETUP": {
+      "n_unique": 123,
+      "n_shared": 3241,
+      "jsd": 0.008723,
+      "bootstrap_ci_95": [
+        0.001093,
+        0.032411
+      ],
+      "unique_dist": {
+        "k-class": 27,
+        "h-class": 13,
+        "e-class": 31,
+        "other": 52
+      },
+      "shared_dist": {
+        "k-class": 639,
+        "h-class": 168,
+        "e-class": 931,
+        "other": 1503
+      }
+    },
+    "PROCESS": {
+      "n_unique": 397,
+      "n_shared": 12211,
+      "jsd": 0.008266,
+      "bootstrap_ci_95": [
+        0.002902,
+        0.018595
+      ],
+      "unique_dist": {
+        "k-class": 68,
+        "h-class": 41,
+        "e-class": 105,
+        "other": 183
+      },
+      "shared_dist": {
+        "k-class": 2422,
+        "h-class": 595,
+        "e-class": 3499,
+        "other": 5695
+      }
+    },
+    "FINISH": {
+      "n_unique": 95,
+      "n_shared": 3244,
+      "jsd": 0.033339,
+      "bootstrap_ci_95": [
+        0.011115,
+        0.073873
+      ],
+      "unique_dist": {
+        "k-class": 24,
+        "h-class": 12,
+        "e-class": 19,
+        "other": 40
+      },
+      "shared_dist": {
+        "k-class": 656,
+        "h-class": 89,
+        "e-class": 892,
+        "other": 1607
+      }
+    }
+  },
+  "strategy_a_overall_jsd": 0.01022,
+  "strategy_b_per_folio": {
+    "n_folio_zone_pairs": 34,
+    "min_tokens_per_group": 5,
+    "mean_jsd": 0.0796,
+    "median_jsd": 0.0497,
+    "std_jsd": 0.0792,
+    "details": [
+      {
+        "folio": "f103r",
+        "zone": "PROCESS",
+        "n_unique": 13,
+        "n_shared": 388,
+        "jsd": 0.088845
+      },
+      {
+        "folio": "f103v",
+        "zone": "PROCESS",
+        "n_unique": 6,
+        "n_shared": 323,
+        "jsd": 0.286115
+      },
+      {
+        "folio": "f104r",
+        "zone": "PROCESS",
+        "n_unique": 16,
+        "n_shared": 312,
+        "jsd": 0.002168
+      },
+      {
+        "folio": "f104v",
+        "zone": "PROCESS",
+        "n_unique": 11,
+        "n_shared": 324,
+        "jsd": 0.022498
+      },
+      {
+        "folio": "f105r",
+        "zone": "PROCESS",
+        "n_unique": 16,
+        "n_shared": 238,
+        "jsd": 0.019316
+      },
+      {
+        "folio": "f105v",
+        "zone": "FINISH",
+        "n_unique": 5,
+        "n_shared": 59,
+        "jsd": 0.036825
+      },
+      {
+        "folio": "f105v",
+        "zone": "PROCESS",
+        "n_unique": 19,
+        "n_shared": 233,
+        "jsd": 0.011823
+      },
+      {
+        "folio": "f106r",
+        "zone": "PROCESS",
+        "n_unique": 16,
+        "n_shared": 285,
+        "jsd": 0.130847
+      },
+      {
+        "folio": "f106v",
+        "zone": "PROCESS",
+        "n_unique": 10,
+        "n_shared": 298,
+        "jsd": 0.008323
+      },
+      {
+        "folio": "f107r",
+        "zone": "PROCESS",
+        "n_unique": 12,
+        "n_shared": 357,
+        "jsd": 0.05978
+      },
+      {
+        "folio": "f107v",
+        "zone": "PROCESS",
+        "n_unique": 11,
+        "n_shared": 309,
+        "jsd": 0.066783
+      },
+      {
+        "folio": "f108r",
+        "zone": "SETUP",
+        "n_unique": 5,
+        "n_shared": 30,
+        "jsd": 0.122891
+      },
+      {
+        "folio": "f108v",
+        "zone": "PROCESS",
+        "n_unique": 10,
+        "n_shared": 272,
+        "jsd": 0.060151
+      },
+      {
+        "folio": "f111r",
+        "zone": "PROCESS",
+        "n_unique": 13,
+        "n_shared": 461,
+        "jsd": 0.025704
+      },
+      {
+        "folio": "f111r",
+        "zone": "SETUP",
+        "n_unique": 5,
+        "n_shared": 44,
+        "jsd": 0.340361
+      },
+      {
+        "folio": "f111v",
+        "zone": "SETUP",
+        "n_unique": 5,
+        "n_shared": 263,
+        "jsd": 0.203315
+      },
+      {
+        "folio": "f112v",
+        "zone": "PROCESS",
+        "n_unique": 8,
+        "n_shared": 258,
+        "jsd": 0.025921
+      },
+      {
+        "folio": "f113r",
+        "zone": "PROCESS",
+        "n_unique": 15,
+        "n_shared": 359,
+        "jsd": 0.011104
+      },
+      {
+        "folio": "f113v",
+        "zone": "PROCESS",
+        "n_unique": 17,
+        "n_shared": 355,
+        "jsd": 0.017739
+      },
+      {
+        "folio": "f114r",
+        "zone": "PROCESS",
+        "n_unique": 24,
+        "n_shared": 320,
+        "jsd": 0.013512
+      }
+    ]
+  },
+  "strategy_c_null_comparison": {
+    "SETUP": {
+      "actual_jsd": 0.008723,
+      "null_mean": 0.008857,
+      "null_p95": 0.023457,
+      "null_p99": 0.034718,
+      "exceeds_95th": false,
+      "exceeds_99th": false,
+      "empirical_p": 0.401
+    },
+    "PROCESS": {
+      "actual_jsd": 0.008266,
+      "null_mean": 0.002726,
+      "null_p95": 0.006782,
+      "null_p99": 0.009429,
+      "exceeds_95th": true,
+      "exceeds_99th": false,
+      "empirical_p": 0.021
+    },
+    "FINISH": {
+      "actual_jsd": 0.033339,
+      "null_mean": 0.012651,
+      "null_p95": 0.034904,
+      "null_p99": 0.044229,
+      "exceeds_95th": false,
+      "exceeds_99th": false,
+      "empirical_p": 0.061
+    }
+  },
+  "n_bootstrap": 1000,
+  "zones_significant_bonferroni": [],
+  "zones_significant_nominal": [
+    "PROCESS"
+  ],
+  "bonferroni_alpha": 0.0167,
+  "mean_zone_jsd": 0.016776,
+  "verdict": "NOT_SUPPORTED",
+  "verdict_detail": "Weak signal: 1 zone(s) nominally significant (PROCESS, p<0.05) but does not survive Bonferroni correction (alpha=0.0167). C619 finding (V=0.070, near-identical transitions) largely holds within phases. Unique MIDDLEs show a subtle h-class successor elevation but not enough to establish material identity.",
+  "aggregate_successor_distribution": {
+    "unique": {
+      "k-class": 19.35,
+      "h-class": 10.73,
+      "e-class": 25.2,
+      "other": 44.72
+    },
+    "shared": {
+      "k-class": 19.88,
+      "h-class": 4.56,
+      "e-class": 28.47,
+      "other": 47.1
+    }
+  },
+  "notes": "C619 found V=0.070 (near-identical transition profiles globally). This retest checks whether controlling for procedural phase (SETUP/PROCESS/FINISH) reveals higher behavioral divergence for unique MIDDLEs. Three strategies: (A) Aggregate JSD per zone with bootstrap CI, (B) Per-folio JSD within zones, (C) Null comparison via random split of shared MIDDLEs. Unique = appears on exactly 1 folio. Shared = appears on 2+ folios. Successor class: k-class (MIDDLE contains k), h-class (h), e-class (e), other. JSD = Jensen-Shannon divergence between successor class distributions."
+}

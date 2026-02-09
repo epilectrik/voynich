@@ -1,0 +1,156 @@
+{
+  "test": "Cross-Folio Material Consistency",
+  "test_number": 13,
+  "question": "Do folios with similar material profiles share more phase-exclusive tail middles?",
+  "n_folios_total": 80,
+  "n_usable_folios": 38,
+  "n_pairs": 703,
+  "n_tail_middles": 1143,
+  "n_pp_middles_loaded": 404,
+  "rarity_threshold": 15,
+  "primary_result": {
+    "spearman_rho": 0.1228,
+    "p_value": 0.0011,
+    "p_value_str": "1.10e-03"
+  },
+  "descriptive": {
+    "mean_pp_jaccard": 0.13409,
+    "mean_tail_jaccard": 0.013653,
+    "nonzero_pp_pairs": 703,
+    "nonzero_tail_pairs": 28,
+    "pct_nonzero_pp": 100.0,
+    "pct_nonzero_tail": 4.0
+  },
+  "section_breakdown": {
+    "within_section_pairs": 251,
+    "between_section_pairs": 452,
+    "within_mean_pp_jaccard": 0.161339,
+    "within_mean_tail_jaccard": 0.019571,
+    "between_mean_pp_jaccard": 0.118958,
+    "between_mean_tail_jaccard": 0.010367,
+    "within_spearman_rho": 0.1828,
+    "within_p_value": 0.00367,
+    "between_spearman_rho": 0.0129,
+    "between_p_value": 0.785
+  },
+  "alternate_vocab_proxy": {
+    "spearman_rho": 0.1011,
+    "p_value": 0.00733,
+    "p_value_str": "7.33e-03"
+  },
+  "top_sharing_pairs": [
+    {
+      "folio_1": "f112r",
+      "folio_2": "f77v",
+      "tail_jaccard": 1.0,
+      "pp_jaccard": 0.1337,
+      "same_section": false,
+      "shared_tail_middles": [
+        "q"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f79v",
+      "folio_2": "f85r1",
+      "tail_jaccard": 1.0,
+      "pp_jaccard": 0.1594,
+      "same_section": false,
+      "shared_tail_middles": [
+        "ofch"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f83r",
+      "folio_2": "f84v",
+      "tail_jaccard": 1.0,
+      "pp_jaccard": 0.1756,
+      "same_section": true,
+      "shared_tail_middles": [
+        "lke"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f107r",
+      "folio_2": "f79v",
+      "tail_jaccard": 0.5,
+      "pp_jaccard": 0.1598,
+      "same_section": false,
+      "shared_tail_middles": [
+        "ofch"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f107r",
+      "folio_2": "f85r1",
+      "tail_jaccard": 0.5,
+      "pp_jaccard": 0.1183,
+      "same_section": false,
+      "shared_tail_middles": [
+        "ofch"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f79r",
+      "folio_2": "f83r",
+      "tail_jaccard": 0.5,
+      "pp_jaccard": 0.1765,
+      "same_section": true,
+      "shared_tail_middles": [
+        "lke"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f79r",
+      "folio_2": "f84v",
+      "tail_jaccard": 0.5,
+      "pp_jaccard": 0.1785,
+      "same_section": true,
+      "shared_tail_middles": [
+        "lke"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f106v",
+      "folio_2": "f80v",
+      "tail_jaccard": 0.3333,
+      "pp_jaccard": 0.1642,
+      "same_section": false,
+      "shared_tail_middles": [
+        "lsh"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f108v",
+      "folio_2": "f26r",
+      "tail_jaccard": 0.3333,
+      "pp_jaccard": 0.0586,
+      "same_section": false,
+      "shared_tail_middles": [
+        "ecth"
+      ],
+      "n_shared": 1
+    },
+    {
+      "folio_1": "f115r",
+      "folio_2": "f115v",
+      "tail_jaccard": 0.3333,
+      "pp_jaccard": 0.1639,
+      "same_section": true,
+      "shared_tail_middles": [
+        "tc"
+      ],
+      "n_shared": 1
+    }
+  ],
+  "verdict": "WEAK",
+  "interpretation": "Statistically significant but weak correlation (rho=0.1228, p=1.10e-03). Some association between procedural similarity and tail sharing, but below the r>0.2 threshold for material-encoding support.",
+  "notes": "PP tokens defined as B tokens whose MIDDLE is in the A+B shared set (n=404 PP middles). Zone-exclusive tail middles: TAIL middles (<15 folios) appearing in exactly 1 zone per folio with 2+ occurrences. Zones: SETUP (1st paragraph), PROCESS (middle), FINISH (last paragraph). Alternate full-vocabulary proxy: rho=0.1011 (p=7.33e-03)."
+}

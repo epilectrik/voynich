@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 790 validated constraints | **Version:** 3.36 | **Date:** 2026-02-08
+**Total:** 794 validated constraints | **Version:** 3.37 | **Date:** 2026-02-09
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1543,6 +1543,28 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - HT compound MIDDLEs decompose to core atoms found in body (71.6% hit rate)
 - C404 reframed: "non-operational" → "operationally redundant"
 - Tier 3 attention/practice interpretation weakened
+
+---
+
+### MIDDLE Material Semantics (C937-C940) - Phase: MIDDLE_MATERIAL_SEMANTICS
+
+> **Summary:** Tested whether tail MIDDLEs (rare, <15 folios) encode material-specific identity. **Verdict: WEAK** — Phase-position semantics confirmed; material-level identity NOT supported. 14 tests (4 SUPPORTED, 3 PARTIAL/WEAK, 6 NOT SUPPORTED, 1 ELABORATION). Discrimination tests (10-14) decisively favor operational interpretation: C619 holds within phases, 89.4% of zone-exclusive rare MIDDLEs are distance-1 compositional elaborations, no cross-folio material consistency. FL state marking ruled out as alternative explanation. Semantic ceiling (C120) stands with refinement.
+
+| # | Constraint | Tier | Scope | Status |
+|---|------------|------|-------|--------|
+| **937** | **Rare MIDDLE Zone-Exclusivity** (55.1% vs 25.5% zone-exclusive, d=0.67, p=2.97e-15; rare MIDDLEs deploy in specific procedural phases; not hapax artifact) | 2 | B | -> [C937_rare_middle_zone_exclusivity.md](C937_rare_middle_zone_exclusivity.md) |
+| **938** | **Section-Specific Tail Vocabulary** (42-66% section-exclusive, within/between ratio=1.40, p=1.29e-06; extends C909 to rare tail; section concentration 0.654 vs 0.438) | 2 | B | -> [C938_section_tail_vocabulary.md](C938_section_tail_vocabulary.md) |
+| **939** | **Zone-Exclusive MIDDLEs Are Compositional Variants** (89.4% distance-1 from common MIDDLEs; 97.9% contain common atom; exclusive vs non-exclusive indistinguishable p=0.978; closes material-identity path) | 2 | B | -> [C939_zone_exclusive_compositional_variants.md](C939_zone_exclusive_compositional_variants.md) |
+| **940** | **FL State Marking via Rare MIDDLEs FALSIFIED** (finish-exclusive FL rate=0.513 vs baseline=0.457, p=0.224; bimodal: half kernel-bearing, half FL; rules out C777 extension) | 1 | B | -> [C940_fl_rare_middle_falsification.md](C940_fl_rare_middle_falsification.md) |
+
+**Phase findings:**
+- Phase-position exclusivity is REAL (d=0.67) — different procedural phases use different operational variants
+- Material-level identity NOT supported — discrimination tests (C619 retest, compositional distance, cross-folio sharing) all favor operational
+- Zone-exclusive rare MIDDLEs are single-character elaborations of common MIDDLEs (89.4% distance-1)
+- FL state marking ruled out as explanation for finish-zone vocabulary (bimodal, not enriched)
+- Section-specific tail vocabulary extends C909 to the rare tail distribution
+- C619 strengthened: unique MIDDLE behavioral equivalence holds within procedural phases
+- Semantic ceiling (C120) confirmed: material encoding does NOT live in MIDDLE morphology
 
 ---
 

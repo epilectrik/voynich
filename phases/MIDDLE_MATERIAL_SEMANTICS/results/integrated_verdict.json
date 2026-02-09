@@ -1,0 +1,121 @@
+{
+  "phase": "MIDDLE_MATERIAL_SEMANTICS",
+  "test_count": 14,
+  "verdict": "WEAK",
+  "verdict_level": "Phase-position semantics confirmed; material-level identity NOT supported",
+  "summary": "Rare/tail MIDDLEs show strong phase-position structuring (zone-exclusivity, section clustering, line-final rarity) but discrimination tests consistently favor operational variants over material identifiers. The semantic ceiling holds with a refinement: phase-position semantics is more structured than previously appreciated.",
+
+  "test_results": {
+    "1_phase_exclusivity":     {"verdict": "SUPPORTED",      "category": "distributional", "weight": "core"},
+    "2_section_clustering":    {"verdict": "SUPPORTED",      "category": "distributional", "weight": "core"},
+    "3_line_final_distinctiveness": {"verdict": "SUPPORTED", "category": "distributional", "weight": "core"},
+    "4_bio_sharing":           {"verdict": "NOT_SUPPORTED",  "category": "distributional", "weight": "core"},
+    "5_section_tail_vocab":    {"verdict": "SUPPORTED",      "category": "distributional", "weight": "core"},
+    "6_line_final_slot":       {"verdict": "NOT_SUPPORTED",  "category": "distributional", "weight": "core"},
+    "7_atom_sharing":          {"verdict": "NOT_SUPPORTED",  "category": "confound",       "weight": "supporting"},
+    "8_null_permutation":      {"verdict": "NOT_SUPPORTED",  "category": "confound",       "weight": "supporting"},
+    "9_material_slot_count":   {"verdict": "NOT_SUPPORTED",  "category": "confound",       "weight": "supporting"},
+    "10_c619_retest":          {"verdict": "NOT_SUPPORTED",  "category": "discrimination", "weight": "critical"},
+    "11_freq_controlled":      {"verdict": "PARTIAL",        "category": "discrimination", "weight": "critical"},
+    "12_fl_state_vs_material": {"verdict": "MATERIAL",       "category": "discrimination", "weight": "critical"},
+    "13_cross_folio":          {"verdict": "WEAK",           "category": "discrimination", "weight": "critical"},
+    "14_compositional_distance": {"verdict": "ELABORATION",  "category": "discrimination", "weight": "critical"}
+  },
+
+  "score_summary": {
+    "supported": 4,
+    "partial_or_weak": 3,
+    "not_supported": 6,
+    "elaboration": 1,
+    "total": 14
+  },
+
+  "discrimination_test_summary": {
+    "tests_10_14": "3 favor operational, 1 favors material (Test 12), 1 neutral (Test 11)",
+    "net_direction": "OPERATIONAL",
+    "detail": {
+      "test_10": "C619 holds within phases — unique MIDDLEs do NOT show different transition profiles. Strongly favors operational.",
+      "test_11": "Phase-exclusivity survives Mann-Whitney (p=0.009) but NOT permutation baseline (p=0.144). Partially favors material, partially null.",
+      "test_12": "Finish-exclusive MIDDLEs are NOT enriched for FL characters (p=0.224). Rules out FL state-marking as explanation. Favors material.",
+      "test_13": "Cross-folio tail sharing weakly correlates with PP similarity (rho=0.123). Below r>0.2 threshold. Neutral-to-operational.",
+      "test_14": "89.4% of zone-exclusive rare MIDDLEs are distance-1 from common MIDDLEs. They are compositional elaborations, not independent identifiers. Strongly favors operational."
+    }
+  },
+
+  "pre_registered_alternatives": {
+    "A_operational_phase_specificity": {
+      "status": "CONFIRMED",
+      "evidence": "Tests 10, 14 — C619 holds, 89% elaborations",
+      "interpretation": "Rare MIDDLEs are operational variants deployed in specific procedural phases, not material identifiers"
+    },
+    "B_fl_state_index": {
+      "status": "RULED_OUT",
+      "evidence": "Test 12 — finish-exclusive middles NOT FL-enriched (p=0.224)",
+      "interpretation": "FL state marking does NOT explain zone-exclusive vocabulary"
+    },
+    "C_compositional_morphology_artifact": {
+      "status": "PARTIALLY_CONFIRMED",
+      "evidence": "Test 14 — 89.4% distance-1, 97.9% contain a common atom",
+      "interpretation": "Zone-exclusive tails ARE compositional variants, but their phase-restriction is real, not artifactual"
+    },
+    "D_folio_identity_vocabulary": {
+      "status": "NOT_SUPPORTED",
+      "evidence": "Tests 4, 7 — BIO folios don't cluster, atom sharing weak",
+      "interpretation": "Folio-specific vocabulary is not organized by material identity"
+    }
+  },
+
+  "findings_for_constraint_system": [
+    {
+      "finding": "Rare MIDDLEs are significantly more zone-exclusive than common MIDDLEs",
+      "strength": "Tier 2 (STRUCTURAL)",
+      "evidence": "55.1% vs 25.5%, p=2.97e-15, d=0.67",
+      "candidate_constraint": "C9XX: Rare MIDDLE zone-exclusivity",
+      "tests": [1]
+    },
+    {
+      "finding": "Rare MIDDLEs cluster by manuscript section",
+      "strength": "Tier 2 (STRUCTURAL)",
+      "evidence": "Mean section concentration 0.654 (rare) vs 0.438 (common), p=0.0",
+      "candidate_constraint": "C9XX: Rare MIDDLE section concentration",
+      "tests": [2]
+    },
+    {
+      "finding": "Line-final position enriched for rare MIDDLEs (but explained by suffix morphology)",
+      "strength": "Tier 2 (STRUCTURAL)",
+      "evidence": "OR=1.83, p<1e-27, but suffix confound confirmed",
+      "candidate_constraint": "Not constraint-worthy (confound explains signal)",
+      "tests": [3, 6]
+    },
+    {
+      "finding": "Sections maintain distinct tail vocabulary (42-66% section-exclusive)",
+      "strength": "Tier 2 (STRUCTURAL)",
+      "evidence": "Within/between Jaccard ratio=1.40, p=1.29e-06",
+      "candidate_constraint": "C9XX: Section-specific tail vocabulary",
+      "tests": [5]
+    },
+    {
+      "finding": "Zone-exclusive rare MIDDLEs are compositional elaborations (89.4% distance-1)",
+      "strength": "Tier 2 (STRUCTURAL)",
+      "evidence": "Mean edit distance 1.11, 97.9% contain a common atom",
+      "candidate_constraint": "C9XX: Zone-exclusive MIDDLEs are compositional variants",
+      "tests": [14]
+    },
+    {
+      "finding": "C619 (unique MIDDLE behavioral equivalence) holds within procedural phases",
+      "strength": "Tier 2 (STRUCTURAL)",
+      "evidence": "JSD=0.01 overall, no zone significant after Bonferroni",
+      "candidate_constraint": "Strengthens C619 (already Tier 2)",
+      "tests": [10]
+    }
+  ],
+
+  "semantic_ceiling_impact": {
+    "original_position": "C120: PURE_OPERATIONAL — entity-level semantics irrecoverable",
+    "revised_position": "C120 STANDS with refinement: tail MIDDLEs show phase-position specificity but are compositional variants of common operational MIDDLEs, not independent material identifiers",
+    "key_nuance": "The fact that finish-exclusive vocabulary is NOT FL-state markers (Test 12) means phase-exclusivity has a procedural explanation beyond state-indexing, but the explanation remains operational (different operational variants for different procedural phases) rather than referential (different materials)",
+    "practical_implication": "Material encoding, if present, does NOT live in MIDDLE morphology. It would need to come from a source outside the compositional token structure — possibly from context (which MIDDLEs appear together), from the illustrations, or from external knowledge"
+  },
+
+  "notes": "Verdict criteria: STRONG (10+/14 significant, discrimination favors material), MODERATE (7-9/14, mixed discrimination), WEAK (4-6/14, discrimination favors operational), NULL (<4/14). Score: 4 supported + 3 partial = 4-7 depending on counting. Discrimination tests: 3 operational, 1 material, 1 neutral. Net: WEAK with important structural findings."
+}

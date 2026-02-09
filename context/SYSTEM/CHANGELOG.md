@@ -4,6 +4,45 @@
 
 ---
 
+## Version 3.37 (2026-02-09) - MIDDLE Material Semantics Phase
+
+### Summary
+
+14-test research phase tested whether tail MIDDLEs (rare, <15 folios) encode material-specific identity. **Verdict: WEAK** — phase-position semantics confirmed; material-level identity NOT supported. Semantic ceiling (C120) stands with refinement.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C937 | Rare MIDDLE Zone-Exclusivity | 2 | 55.1% vs 25.5%, d=0.67, p=2.97e-15 |
+| C938 | Section-Specific Tail Vocabulary | 2 | 42-66% exclusive, ratio=1.40, p=1.29e-06 |
+| C939 | Zone-Exclusive MIDDLEs Are Compositional Variants | 2 | 89.4% distance-1, p=0.978 indistinguishable |
+| C940 | FL State Marking via Rare MIDDLEs FALSIFIED | 1 | p=0.224, bimodal distribution |
+
+### Revision Notes
+
+- **C619:** Confirmed within procedural phases (JSD=0.01, no zone survives Bonferroni)
+
+### Key Findings
+
+- Rare MIDDLEs deploy in specific procedural phases (SETUP/PROCESS/FINISH) — genuine structural feature
+- But they are compositional elaborations (single-char edits) of common MIDDLEs, not independent identifiers
+- FL state marking ruled out as explanation for finish-zone vocabulary
+- Section-specific tail vocabulary extends C909 to the rare distribution
+- Material encoding does NOT live in MIDDLE morphology
+
+### Files Changed
+
+- `context/CLAIMS/INDEX.md` — v3.37, +4 constraints (790→794)
+- `context/CLAIMS/C937_rare_middle_zone_exclusivity.md` — NEW
+- `context/CLAIMS/C938_section_tail_vocabulary.md` — NEW
+- `context/CLAIMS/C939_zone_exclusive_compositional_variants.md` — NEW
+- `context/CLAIMS/C940_fl_rare_middle_falsification.md` — NEW
+- `context/CLAIMS/C619_unique_middle_behavioral_equivalence.md` — Revision note added
+- `phases/MIDDLE_MATERIAL_SEMANTICS/` — Full phase (14 scripts, 14 results, README)
+
+---
+
 ## Version 3.10 (2026-02-03) - B Paragraph Structure Analysis
 
 ### Summary

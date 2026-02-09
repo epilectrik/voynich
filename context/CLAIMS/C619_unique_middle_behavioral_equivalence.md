@@ -67,6 +67,10 @@ REGIME does NOT predict unique density (H=4.18, p=0.243).
 | H2: Parametric specialization | Unique = distinct transition targets | No distinct targets | REJECTED |
 | H3: Functional specialization | Unique in different positions/contexts | Weak position shift only | REJECTED |
 
+## Revision Notes
+
+**2026-02-08 (MIDDLE_MATERIAL_SEMANTICS Test 10):** C619 confirmed within procedural phases. JSD=0.01 overall, no zone survives Bonferroni correction (alpha=0.0167). Even when controlling for SETUP/PROCESS/FINISH position, unique MIDDLEs show near-identical successor distributions to shared MIDDLEs. Only PROCESS zone shows nominal significance (p=0.021) but does not survive multiple-comparison correction. One subtle signal: unique MIDDLEs show h-class successor elevation (10.73% vs 4.56%) across all zones, but the effect is too small to establish material identity. This strengthens the H1 (lexical tail) verdict — unique MIDDLEs are interchangeable operational variants regardless of procedural phase.
+
 ## Related
 
-C506.b, C531, C535, C610, C612, C618
+C506.b, C531, C535, C610, C612, C618, C937, C939

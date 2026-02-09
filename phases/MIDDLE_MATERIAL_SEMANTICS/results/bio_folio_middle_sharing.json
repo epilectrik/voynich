@@ -1,0 +1,93 @@
+{
+  "test": "BIO Section MIDDLE Sharing Network",
+  "n_bio_folios": 20,
+  "n_rare_middles_in_bio": 177,
+  "rare_middle_definition": "MIDDLEs appearing in 2-15 folios corpus-wide (Currier B)",
+  "best_k": 5,
+  "silhouette_scores": {
+    "2": 0.0226,
+    "3": 0.0278,
+    "4": 0.0343,
+    "5": 0.0347
+  },
+  "clusters": {
+    "0": {
+      "folios": [
+        "f80r",
+        "f83v"
+      ],
+      "n_folios": 2,
+      "shared_rare_middles": [
+        "alsh",
+        "eolk",
+        "epch",
+        "lc",
+        "lched",
+        "lsh",
+        "tai"
+      ],
+      "n_shared_rare_middles": 7,
+      "within_jaccard": 0.2059
+    },
+    "1": {
+      "folios": [
+        "f75r",
+        "f75v",
+        "f78v",
+        "f82r",
+        "f82v"
+      ],
+      "n_folios": 5,
+      "shared_rare_middles": [
+        "es",
+        "lsh"
+      ],
+      "n_shared_rare_middles": 2,
+      "within_jaccard": 0.1071
+    },
+    "2": {
+      "folios": [
+        "f78r",
+        "f79r",
+        "f79v",
+        "f81r",
+        "f81v",
+        "f84v"
+      ],
+      "n_folios": 6,
+      "shared_rare_middles": [],
+      "n_shared_rare_middles": 0,
+      "within_jaccard": 0.0727
+    },
+    "3": {
+      "folios": [
+        "f77r",
+        "f77v",
+        "f80v"
+      ],
+      "n_folios": 3,
+      "shared_rare_middles": [
+        "q"
+      ],
+      "n_shared_rare_middles": 1,
+      "within_jaccard": 0.1088
+    },
+    "4": {
+      "folios": [
+        "f76r",
+        "f76v",
+        "f83r",
+        "f84r"
+      ],
+      "n_folios": 4,
+      "shared_rare_middles": [],
+      "n_shared_rare_middles": 0,
+      "within_jaccard": 0.0624
+    }
+  },
+  "between_cluster_jaccard": 0.0408,
+  "jaccard_vs_kernel_similarity_r": 0.1214,
+  "jaccard_vs_kernel_similarity_p": 0.095245,
+  "verdict": "NOT_SUPPORTED",
+  "notes": "BIO folios cluster into 5 groups by rare MIDDLE sharing (silhouette=0.0347). Within-cluster sharing exceeds between-cluster sharing. Jaccard-kernel correlation r=0.1214 (p=0.0952)."
+}

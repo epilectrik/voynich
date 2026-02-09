@@ -37,8 +37,10 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Claude local settings
-.claude/
+# Claude local settings (exclude everything except agents and skills)
+.claude/*
+!.claude/agents/
+!.claude/skills/
 
 # Windows reserved names
 nul

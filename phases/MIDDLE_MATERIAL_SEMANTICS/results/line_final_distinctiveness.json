@@ -1,0 +1,44 @@
+{
+  "test": "Line-Final Vocabulary Distinctiveness",
+  "n_line_final": 2554,
+  "n_line_other": 20542,
+  "mean_folio_count_final": 57.0399,
+  "mean_folio_count_other": 63.2035,
+  "median_folio_count_final": 72.0,
+  "median_folio_count_other": 77.0,
+  "pct_rare_final": 17.776,
+  "pct_rare_other": 10.5735,
+  "pct_unique_final": 7.5959,
+  "pct_unique_other": 3.1448,
+  "mann_whitney_u": 23514283.0,
+  "p_value": 9.662451e-18,
+  "effect_size_d": -0.24,
+  "chi_square_rare": 116.2265,
+  "chi_square_p": 4.239891e-27,
+  "odds_ratio_rare": 1.8285,
+  "line_length_controlled": {
+    "short": {
+      "n_final": 222,
+      "n_other": 725,
+      "final_mean": 58.7387,
+      "other_mean": 63.051,
+      "p": 0.043611
+    },
+    "medium": {
+      "n_final": 842,
+      "n_other": 5649,
+      "final_mean": 58.1924,
+      "other_mean": 62.9421,
+      "p": 0.005656
+    },
+    "long": {
+      "n_final": 1484,
+      "n_other": 14168,
+      "final_mean": 56.219,
+      "other_mean": 63.3156,
+      "p": 9.392656e-17
+    }
+  },
+  "verdict": "SUPPORTED",
+  "notes": "Line-final MIDDLEs are rarer (mean 57.04 vs 63.20 folios); Mann-Whitney p=9.66e-18, d=-0.2400; Rare enrichment OR=1.828, chi2 p=4.24e-27; Line-length bins supporting: 3/3"
+}
